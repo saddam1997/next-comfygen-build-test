@@ -1,0 +1,447 @@
+{
+  "myList1": [
+    "Compliance with ETH",
+    "Easier learning curve",
+    "Smart contract reusability",
+    "EVM compatibility ",
+    "Lower gas fees",
+    "Improved scalability",
+    "Higher transaction speeds ",
+    "Marketing support for web3 projects"
+  ],
+  "servicesData" :[
+    {
+      "title": "Polygon Blockchain Consulting",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our team has the knowledge needed to guide you through your Polygon development project. We know how daunting it is and that’s why we want to help create an ideal strategy to achieve your goals.",
+      "features": ["Expert Help", "Customized Plan", "Easy Development" ,"Smooth Integration" , "Success Focus"]
+    },
+    {
+      "title": "Polygon Token Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Using our expertise in Polygon blockchain, you’ll be able to improve the cost benefits and security of your digital assets at a faster pace.",
+      "features": ["Cost-Effective", "Better Security", "Faster Transactions" , "Expert Guidance" , 
+      "Scalable Solutions"]
+    },
+    {
+      "title": "Smart Contracts Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Building smart contracts doesn’t have to be as hard as it sounds. Our team has mastered creating modular, scalable and secure smart contracts that will make everything simple.",
+      "features": ["Easy to Build", "Modular Design", "Scalable Solutions" , "Secure Contracts" , "Expert Team"]
+    },
+    {
+      "title": "Decentralized Application Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Finding resources for creating a high-performance dApp on the Polygon blockchain can feel like trying to find Waldo. But with our help, it’s not nearly as hard.",
+      "features": ["Expert in Polygon Blockchain", "Easy to Use", "Fast and Efficient" , "Safe and Scalable" , "Affordable" , "Custom Solutions"]
+    },
+    {
+      "title": "Polygon NFT Marketplace",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Creating your own NFT marketplace sounds like something only pros do. However, with us, it’s simple, customizable and secure — giving you more advantages than others.",
+      "features": ["Easy to Create", "Customizable", "Secure" , "User-Friendly" , "Scalable" , "Efficient"]
+    } ,
+    {
+      "title": "Smart Contracts Audit",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Earning the trust of customers typically takes a lot of time but with professional audit services from us, you’ll get there a lot quicker.",
+      "features": ["Build Trust Quickly", "Security Check", "Improve Performance" , "Follow the Rules" , "Reduce Risks" , "Clear Reports" , "Reliable and Safe"]
+    }
+    ,
+    {
+      "title": "DeFi Application Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Make your mark in the DeFi ecosystem with an intuitive DeFi application development tailored to your business goals with the assurance of scalability and affordability.",
+      "features": ["Custom Solutions", "Easy to Use", "Secure" , "Blockchain Connected" , "Ready for the Future"]
+    }
+    ,
+    {
+      "title": "Web3 Games Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our team will help in creating the next generation of immersive web3 games development with different models and flexibility for integrating Polygon Blochain NFTs marketplace development.",
+      "features": ["Create Web3 Games", "Flexible Options", "NFTs in Games" , "Better Experience" , "Custom-built"]
+    },
+    {
+      "title": "Web3 Application Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Join the web3 revolution with a seamless transition of legacy apps to web3, or create your web3 apps on Polygon blockchain powered by our expertise.",
+      "features": ["Seamless Web3 Transition", "New Web3 App Creation", "Expert Support" , "Unlock Decentralized Potential"]
+    }
+    ,
+    {
+      "title": "Polygon Wallet Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Make the most of our expertise as a trusted Polygon development company to create blockchain-based wallets as mobile apps, browser extensions or web portals.",
+      "features": ["Custom Wallet Development", "Polygon Integration", "Secure Transactions" , "User-Friendly Design" , "Scalable Solutions"]
+    }
+    ,
+    {
+      "title": "Polygon Integration Services",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Use our Polygon integration services for a seamless transition to the Polygon ecosystem with end-to-end code reconfiguration and migration to access the benefits of Polygon.",
+      "features": ["Easy Transition", "Access Polygon Benefits", "Expert Help" , "Better Performance"]
+    }
+  ],
+  "consultancyHead" :[
+    {
+      "num": "1",
+      "title": "How Do We Serve Our Clients?",
+      "desc": "We follow a straightforward approach to delivering our services to clients without any complications. You can make the most of our Polygon blockchain development services by following four simple steps."
+    }
+  ],
+  
+  "consultancyData" :[
+    {
+      "title": "First Consultation",
+      "desc": "In the beginning stages of any Polygon development project, we always start with an initial consultation. Here, we’ll learn all of your requirements and goals so that we can create what you need using Polygon. There’s no better way to make sure you get exactly what you want."
+    },
+    {
+      "title": "Brainstorming Ideas",
+      "desc": "After the consultation comes our next step in the process — brainstorming ideas. During this stage, our team of experts will put together a detailed list of potential ways to develop your projects. We also highly encourage clients to give us honest feedback on our ideas and prototypes. It allows us to make improvements early on, making it easier for us to allocate resources."
+    },
+    {
+      "title": "Budget Planning",
+      "desc": "Once the ideas are planned out and reviewed, we’ll create a budget plan that works for you. Our experts will develop a clear and accurate project proposal outlining everything we need, along with a timeline. You’ll be able to review this budget plan to see if it fits all of your desired goals while still working within your budget constraints."
+    },
+    {
+      "title": "Project Initiation",
+      "desc": "After you confirm the project proposal and budget plan, we can initiate your Polygon blockchain development project. We assemble the best experts for Polygon development projects based on their experience in catering to similar projects. You should remember that we would communicate with you frequently regarding the progress of your project. It can help us incorporate your feedback into the project to achieve better results according to your specifications."
+    }
+  ],
+  "pageData": {
+    "title": " Why Choose Comfygen for Expert Polygon Blockchain Development Services?",
+    "description": "Polygon is undoubtedly a formidable emerging force in the domain of blockchain and Web3 solutions. At Comfygen, a leading Polygon Blockchain Development Company, we strive to offer excellence in Polygon NFT marketplace development, dApp development, chain development, wallet development, and other Polygon development services. Over the years, we have refined our perspectives on blockchain technology and its potential through continuous learning and the professional development of our expert team. As a trusted Polygon Blockchain Development Agency, we stand out as a leader in Polygon development, offering additional value advantages.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Blockchain Experience",
+        "description": "Polygon is just another blockchain with new features. Your search for a reliable Polygon smart contract development agency ends at our platform, where you can find seasoned experts. Our project portfolio serves as proof of our expertise in Ethereum development and blockchain technology."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Strategic Use of Polygon",
+        "description": "We know that Polygon is a revolutionary blockchain network with a wide range of benefits. However, our responsibility as a Polygon development company is not limited to using Polygon as another blockchain to build decentralised solutions. Our experts help you understand the powers of Polygon and guide you through different options for using it to achieve your desired objectives. With the Disney accelerator program Polygon could also help you identify innovative avenues for the growth of startups and enterprises. We ensure that you can make the most of the full potential of Polygon blockchain for your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Timely Delivery",
+        "description": "We adhere to the timeline for your project specified in the project proposal. On top of that, we believe in keeping spare time from the timeline for listening to client feedback and making the necessary modifications."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Assurance of Integrity",
+        "description": "We are a trusted Polygon blockchain development company with a proven record of serving our clients with the advantages of confidentiality. Our experts ensure that your project details are under the protection of non-disclosure agreements. As a result, all our clients can have peace of mind regarding security of their Polygon project ideas."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Transparency",
+        "description": "One of the most noticeable factors which defines our capabilities as a Polygon development service provider is transparency. We offer the assurance of complete transparency throughout the entire development lifecycle. Our client-centric approach involves direct communication with clients and stakeholders to inform them about progress updates. In addition, we also maintain 100% transparency in communication of project documentation to clients."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Round-the-Clock Support",
+        "description": "You don’t have to wait for days to receive support from our trained Polygon development experts. We have created a dedicated support team to help you with issues such as debugging and troubleshooting. On top of it, our support team could also help you resolve any conflicts in compatibility, functionality and performance of your Polygon blockchain solutions. With the support team by your side, you can enjoy a seamless experience with all our Polygon blockchain-based solutions."
+      }
+    ]
+  },
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is a Polygon Blockchain Development Company?",
+      "desc": "A Polygon Blockchain Development Company specializes in building blockchain solutions using the Polygon network. These companies offer services such as dApp development, smart contract creation, NFT marketplace development, crypto wallet development, and Layer 2 scaling solutions to enhance blockchain efficiency."
+    },
+    {
+      "num": "2",
+      "title": "Why should I choose Polygon for blockchain development?",
+      "desc": "Polygon offers scalability, low transaction fees, EVM compatibility, and faster transaction speeds, making it an ideal choice for dApp development, DeFi solutions, and NFT projects. It also integrates seamlessly with Ethereum Blockchain Development, allowing businesses to leverage its vast ecosystem."
+    },
+    {
+      "num": "3",
+      "title": "What services do Polygon Blockchain Development Companies offer?",
+      "desc": "A Polygon Blockchain Development Company typically offers:",
+      "cards":[
+          {
+            "CardDec":"Polygon dApp Development"
+          },
+          {
+            "CardDec":"Smart Contract Development & Auditing"
+          },
+          {
+            "CardDec":"NFT Marketplace Development"
+          },
+          {
+            "CardDec":"Polygon Wallet Development"
+          },
+          {
+            "CardDec":"DeFi Development Services"
+          },
+          {
+            "CardDec":"Custom Blockchain Solutions"
+          }
+        ]
+    },
+    {
+      "num": "4",
+      "title": "How much does it cost to develop a Polygon blockchain project?",
+      "desc": "The cost of Polygon blockchain development depends on factors such as project complexity, features, development time, and security requirements. A simple dApp may cost $5,000–$10,000, while a complex DeFi or NFT platform may range from $30,000–$100,000+."
+    },
+    {
+      "num": "5",
+      "title": " Is Polygon better than Ethereum for blockchain development?",
+      "desc": "Polygon is a Layer 2 scaling solution that enhances Ethereum’s capabilities by reducing gas fees and improving transaction speed. While Ethereum provides strong security, Polygon offers a more scalable and cost-effective environment for blockchain development."
+    },
+    {
+      "num": "6",
+      "title": "How secure is Polygon for blockchain development?",
+      "desc": "Polygon uses Ethereum’s security model while offering additional scalability and efficiency. It employs Proof-of-Stake (PoS) consensus, cryptographic encryption, and smart contract audits to ensure high security."
+    },
+    {
+      "num": "7",
+      "title": "How long does it take to develop a project on Polygon?",
+      "desc": "The development timeline depends on the scope and complexity of the project.",
+      "cards":[
+        {
+          "CardDec":"A simple Polygon-based smart contract can take 1–2 weeks."
+        },
+        {
+          "CardDec":"A full-fledged dApp or NFT marketplace may take 3–6 months."
+        }
+      ]
+    },
+    {
+      "num": "8",
+      "title": "Can I migrate my existing blockchain project to Polygon?",
+      "desc": "Yes! Businesses can migrate Ethereum-based or other blockchain projects to Polygon to reduce transaction costs, enhance scalability, and improve performance. Polygon is fully EVM-compatible, making migrations seamless."
+    },
+    {
+      "num": "9",
+      "title": "How do I hire a Polygon Blockchain Development Company?",
+      "desc": "To hire a Polygon Blockchain Development Company, consider the following:",
+      "cards":[
+        {
+          "CardDec":"Expertise & Portfolio – Check their previous blockchain projects."
+        },
+        {
+          "CardDec":"Technology Stack – Ensure they use the latest tools and frameworks."
+        },
+        {
+          "CardDec":"Security Measures – Look for companies that conduct smart contract audits."
+        },
+        {
+          "CardDec":"Client Reviews – Check testimonials and industry recognition."
+        }
+      ]
+    },
+    {
+      "num": "10",
+      "title": "Why choose Comfygen for Polygon blockchain development?",
+      "desc": "Comfygen is a trusted Polygon Blockchain Development Company offering customized, scalable, and secure blockchain solutions. Our team specializes in dApp development, DeFi solutions, NFT platforms, and enterprise-grade blockchain applications, ensuring top-quality results."
+    }
+  ],
+  "myList": [
+    "Utilise the services of skilled and experienced developers.",
+    "Capitalise on the power of innovation with Polygon development.",
+    "Find relevant answers to your queries with 24/7 support.",
+    "A dedicated team of experts for solving your problems.",
+    "User-centric approaches for service delivery with specific objectives.",
+    "Multi-disciplinary technical expertise for Polygon development."
+  ],
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire Polygon Blockchain Developer",
+      "desc": " You can hire a team of Polygon blockchain development experts trained in the best practices and technologies for developing blockchain and web3 solutions on Polygon. We can help in creating blockchains based on Polygon alongside wallets, NFT marketplaces, DeFi solutions and dApps. Choose the ideal developer for your project with essential skills for addressing your project objectives.",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+  "Whychoose": [
+    {
+      "num": "01",
+      "title": "Why Should You Choose Comfygen for Polygon Blockchain Development Company?",
+      "decs": "Polygon is undoubtedly a formidable emerging force in the domain of blockchain and web3 solutions. At Comfygen, we strive to offer excellence in Polygon NFT marketplace development, dApp development, chain development, wallet development and other types of Polygon development services. Over the years, we have refined our perspectives on blockchain technology and its potential with continuous learning and professional development of our team of experts. We stand out as a leader in Polygon development for offering additional value advantages."
+    }
+  ],
+  "Bestchoice": [
+    {
+      "num": "01",
+      "bg": "#FEEFEB",
+      "title": "Blockchain Experience",
+      "decs": "Polygon is just another blockchain with new features. Your search for a reliable Polygon smart contract development agency ends at our platform, where you can find seasoned experts. Our project portfolio serves as proof of our expertise in Ethereum development and blockchain technology."
+    },
+    {
+      "num": "02",
+      "bg": "#F0EEFC",
+      "title": "Strategic Use of Polygon",
+      "decs": "We know that Polygon is a revolutionary blockchain network with a wide range of benefits. However, our responsibility as a Polygon development company is not limited to using Polygon as another blockchain to build decentralised solutions. Our experts help you understand the powers of Polygon and guide you through different options for using it to achieve your desired objectives. With the Disney accelerator program Polygon could also help you identify innovative avenues for the growth of startups and enterprises. We ensure that you can make the most of the full potential of Polygon blockchain for your business."
+    },
+    {
+      "num": "03",
+      "bg": "#9A4ECC1A",
+      "title": "Timely Delivery",
+      "decs": "We adhere to the timeline for your project specified in the project proposal. On top of that, we believe in keeping spare time from the timeline for listening to client feedback and making the necessary modifications. "
+    },
+    {
+      "num": "04",
+      "bg": "#FEEFEB",
+      "title": "Assurance of Integrity",
+      "decs": "We are a trusted Polygon blockchain development company with a proven record of serving our clients with the advantages of confidentiality. Our experts ensure that your project details are under the protection of non-disclosure agreements. As a result, all our clients can have peace of mind regarding security of their Polygon project ideas."
+    },
+    {
+      "num": "05",
+      "bg": "#F0EEFC",
+      "title": "Transparency",
+      "decs": "One of the most noticeable factors which defines our capabilities as a Polygon development service provider is transparency. We offer the assurance of complete transparency throughout the entire development lifecycle. Our client-centric approach involves direct communication with clients and stakeholders to inform them about progress updates. In addition, we also maintain 100% transparency in communication of project documentation to clients."
+    },
+    {
+      "num": "06",
+      "bg": "#9A4ECC1A",
+      "title": "Round-the-Clock Support",
+      "decs": "You don’t have to wait for days to receive support from our trained Polygon development experts. We have created a dedicated support team to help you with issues such as debugging and troubleshooting. On top of it, our support team could also help you resolve any conflicts in compatibility, functionality and performance of your Polygon blockchain solutions. With the support team by your side, you can enjoy a seamless experience with all our Polygon blockchain-based solutions."
+    }
+  ],
+  "Service": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/polygon-blockchain-consulting.webp",
+      "urlLink":"blockchain-consulting-services",
+      "title": "Polygon Blockchain Consulting",
+      "decs": "Our team has the knowledge needed to guide you through your Polygon development project. We know how daunting it is and that’s why we want to help create an ideal strategy to achieve your goals."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/polygon-token-development.webp",
+      "title": "Polygon Token Development",
+      "decs": "Using our expertise in Polygon blockchain, you’ll be able to improve the cost benefits and security of your digital assets at a faster pace."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/smart-contracts-development.webp",
+      "title": "Smart Contracts Development",
+      "decs": "Building smart contracts doesn’t have to be as hard as it sounds. Our team has mastered creating modular, scalable and secure smart contracts that will make everything simple."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/decentralised-application-development.webp",
+      "title": "Decentralised Application Development",
+      "decs": "Finding resources for creating a high-performance dApp on Polygon blockchain can feel like trying to find Waldo. But with our help, it’s not nearly as hard."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/polygon-nft-marketplace.webp",
+      "title": "Polygon NFT Marketplace",
+      "decs": "Creating your own NFT marketplace sounds like something only pros do. However, with us it’s simple, customisable and secure — giving you more advantages than others."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/smart-contracts-audit.webp",
+      "title": "Smart Contracts Audit",
+      "decs": "Earning the trust of customers typically takes a lot of time but with professional audit services from us, you’ll get there a lot quicker."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/deFi-application-development.webp",
+      "title": "DeFi Application Development",
+      "decs": "Make your mark in the DeFi ecosystem with an intuitive DeFi application development tailored to your business goals with the assurance of scalability and affordability."
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/web3-games-development.webp",
+      "title": "Web3 Games Development",
+      "decs": "Our team will help in creating the next generation of immersive web3 games development with different models and flexibility for integrating Polygon Blochain NFTs marketplace development."
+    },
+    {
+      "num": "9",
+      "img": "https://www.comfygen.com/img/web3-application-development.webp",
+      "title": "Web3 Application Development ",
+      "decs": "Join the web3 revolution with a seamless transition of legacy apps to web3, or create your web3 apps on Polygon blockchain powered by our expertise."
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/polygon-wallet-development.webp",
+      "title": "Polygon Wallet Development",
+      "decs": "Make the most of our expertise as a trusted Polygon development company to create blockchain-based wallets as mobile apps, browser extensions or web portals."
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/images/maintenance-and-support.webp",
+      "title": "Polygon Integration Services",
+      "decs": "Use our Polygon integration services for a seamless transition to the Polygon ecosystem with end-to-end code reconfiguration and migration to access the benefits of Polygon."
+    }
+  ],
+  "Modus": {
+    "title": "How Do We Serve Our Clients?",
+    "decs": "We follow a straightforward approach to delivering our services to clients without any complications. You can make the most of our Polygon blockchain development services by following four simple steps."
+  },
+  "Development": [
+    {
+      "num": "01",
+      "title": "First Consultation",
+      "decs": "In the beginning stages of any Polygon development project, we always start with an initial consultation. Here, we’ll learn all of your requirements and goals so that we can create what you need using Polygon. There’s no better way to make sure you get exactly what you want."
+    },
+    {
+      "num": "02",
+      "title": "Brainstorming Ideas ",
+      "decs": "After the consultation comes our next step in the process — brainstorming ideas. During this stage, our team of experts will put together a detailed list of potential ways to develop your projects. We also highly encourage clients to give us honest feedback on our ideas and prototypes. It allows us to make improvements early on, making it easier for us to allocate resources."
+    },
+    {
+      "num": "03",
+      "title": "Budget Planning",
+      "decs": "Once the ideas are planned out and reviewed, we’ll create a budget plan that works for you. Our experts will develop a clear and accurate project proposal outlining everything we need, along with a timeline. You’ll be able to review this budget plan to see if it fits all of your desired goals while still working within your budget constraints."
+    },
+    {
+      "num": "04",
+      "title": "Project Initiation",
+      "decs": "After you confirm the project proposal and budget plan, we can initiate your Polygon blockchain development project. We assemble the best experts for Polygon development projects based on their experience in catering to similar projects. You should remember that we would communicate with you frequently regarding the progress of your project. It can help us incorporate your feedback into the project to achieve better results according to your specifications."
+    }
+  ],
+  "Advantage": [
+    {
+      "num": "01",
+      "title": "Ethereum Compatibility",
+      "decs": "Polygon is a layer-2 scaling solution which utilises the features of Ethereum ecosystem with promising improvements in scalability and cost-efficiency. Polygon blockchain helps you make the most of the tech stack of Ethereum alongside delivering other value benefits."
+    },
+    {
+      "num": "02",
+      "title": "Security as a Service",
+      "decs": " You can rely on Polygon smart contract development services for the assurance of security through a dedicated validator pool. Polygon Proof of Stake chains could offer a higher level of security with limited use of resources rather than calling for developing a specialised validator pool."
+    },
+    {
+      "num": "03",
+      "title": "Interoperability Advantage",
+      "decs": "The best highlight of working with a Polygon blockchain development company like ours is the benefit of interoperability. You can move dApps from other blockchains to Polygon or integrate Polygon chains with Ethereum and EVM-compatible blockchains. Interoperability could play a crucial role in improving user experience by facilitating cross-platform functionality."
+    },
+    {
+      "num": "04",
+      "title": "Robust Architecture",
+      "decs": "Polygon also offers the advantage of a robust architecture to help you create high-performance dApps, NFT marketplaces and DeFi solutions. The modular architecture of Polygon features four layers: the Ethereum layer, Polygon network layer, security layer and execution layer. "
+    },
+    {
+      "num": "05",
+      "title": "User Experience ",
+      "decs": "Polygon has emerged as a popular choice for blockchain and web3 development projects for adopting a user-centric approach. It helps in increasing scalability with the benefit of almost instant transaction finality alongside zero-gas transactions, which can offer value to Polygon users."
+    },
+    {
+      "num": "06",
+      "title": "Adaptability",
+      "decs": "The most prominent reason to rely on a Polygon token development company like us is the assurance of adaptability. Polygon Edge can provide the flexibility for developing Ethereum-compatible blockchain networks. The Edge chains serve as application-centric blockchain networks tailored to specific use cases with reliable business logic."
+    }
+  ],
+  "TechTrends": [
+    {
+      "num": "01",
+      "title": "Project-Based Engagement Model",
+      "decs": "Our engagement model is project centric. With it you can use the services of our blockchain development experts for your projects. We choose the right experts that can help you achieve your goals and improve collaboration."
+    },
+    {
+      "num": "02",
+      "title": "Team Extension Engagement Model",
+      "decs": "The team extension model is for clients who don’t want to have a dedicated team. It allows us to help you add experts to your team, so you don't miss out on their talents. And in turn, we’ll improve management of resources for optimal performance."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Solution": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/solution-aria-coin1.webp",
+      "title": "Blockchain Implementation",
+      "decs": " The integration of blockchain technology provided the foundation for aRIA Currency's decentralized and tamper-resistant transaction processing, instilling trust and reliability among its user base."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/solution-aria-coin2.webp",
+      "title": "Intuitive User Experience",
+      "decs": "Emphasizing user experience design, aRIA Currency's interface was crafted to be intuitive and adaptable, accommodating both novice and experienced users."
+    },
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/solution-aria-coin3.webp",
+      "title": "Scalable Infrastructure",
+      "decs": "The adoption of cutting-edge infrastructure solutions allowed aRIA Currency to address growth-related challenges while remaining flexible enough to adapt to future market changes."
+    }
+  ]
+}

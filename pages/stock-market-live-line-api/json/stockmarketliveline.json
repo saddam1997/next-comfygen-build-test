@@ -1,0 +1,463 @@
+{
+  "Frequently": [
+  {
+    "num": "1",
+    "title": "Is your API compatible with both mobile and web platforms?",
+    "desc": "Yes, our Stock Market Live Line API is fully compatible with iOS, Android, and all major web platforms. Whether you're building a mobile trading app or a web-based dashboard, our API integrates smoothly with your tech stack."
+  },
+  {
+    "num": "2",
+    "title": "Do you provide a free trial for the Stock Market API?",
+    "desc": "Absolutely! We offer a limited-time free trial so you can test our API’s performance, data accuracy, and integration process before committing to a paid plan. It's a great way to evaluate our solution risk-free."
+  },
+  {
+    "num": "3",
+    "title": "How scalable is your API during high traffic or market hours?",
+    "desc": "Our API infrastructure is designed to handle large volumes of requests even during peak trading hours. With auto-scaling servers and low-latency delivery, you can expect consistent performance and uptime."
+  },
+  {
+    "num": "4",
+    "title": "Can I request a custom API tailored to my business needs?",
+    "desc": "Yes, we specialize in delivering custom Stock Market API solutions to fit your exact project requirements. Whether it’s data types, frequency, or special endpoints, we tailor the API for your use case."
+  },
+  {
+    "num": "5",
+    "title": "What kind of support do you offer for developers?",
+    "desc": "We provide dedicated developer support including integration assistance, detailed documentation, and priority troubleshooting. Our team is available to ensure a smooth setup and ongoing API management."
+  },
+  {
+    "num": "6",
+    "title": "Is your API secure for handling sensitive financial data?",
+    "desc": "Yes, security is a top priority. Our API uses HTTPS encryption, token-based authentication, and other best practices to ensure your data remains protected throughout the integration and usage process."
+  }
+],
+
+"servicesData": [
+  {
+    "title": "Real-time updates on live market prices",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Deliver instant stock data to your platform with our API. Provide users with accurate, up-to-the-second pricing that powers informed decisions and real-time market engagement.",
+    "features": [
+      "Instant stock price feed",
+      "Real-time data delivery",
+      "Live market monitoring"
+    ]
+  },
+  {
+    "title": "Enhanced trading and market analysis tools",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Upgrade your platform with advanced trading insights and analytical features. Our API provides the data backbone for powerful tools that help users analyze trends and optimize decisions.",
+    "features": [
+      "Advanced trading insights",
+      "Support market strategy tools",
+      "Analyze trends in real-time"
+    ]
+  },
+  {
+    "title": "Seamless integration with any software or app",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Our API is built for developers. With simple documentation and universal compatibility, you can integrate stock market data into any app or platform—fast and hassle-free.",
+    "features": [
+      "Works with all systems",
+      "Developer-friendly structure",
+      "Quick integration process"
+    ]
+  },
+  {
+    "title": "Reduced development time for your stock-related applications",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Speed up your project timelines with our plug-and-play stock data API. Save valuable time on backend data sourcing and focus more on building user-facing features.",
+    "features": [
+      "Saves dev team hours",
+      "Pre-built API endpoints",
+      "Reduces backend workload"
+    ]
+  },
+  {
+    "title": "Improved user engagement with instant stock data",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Keep users coming back with live, dynamic stock updates. Real-time data keeps your interface active, informative, and highly engaging for users.",
+    "features": [
+      "Engages active traders",
+      "Interactive stock updates",
+      "Boosts session duration"
+    ]
+  },
+  {
+    "title": "Cost-effective plans with reliable support",
+    "subtitle": "All Services and Solutions at One Place",
+    "description": "Enjoy enterprise-level features without the heavy costs. Our affordable pricing and dedicated support ensure your API service runs smoothly at every scale.",
+    "features": [
+      "Budget-friendly packages",
+      "Scalable pricing model",
+      "24/7 expert support"
+    ]
+  }
+],
+
+"consultancyHead" :[
+  {
+    "num": "1",
+    "title": "Key Features of Our Stock Market Live Line API",
+    "desc": "Our Stock Market API is designed to meet the needs of developers, enterprises, and financial platforms. Here are the core features:"
+  }
+],
+"consultancyData": [
+  {
+    "title": "Real-Time Data Feed",
+    "desc": "Get live stock prices updated instantly to ensure users receive the most accurate and up-to-date trading information."
+  },
+  {
+    "title": "High-Speed Performance",
+    "desc": "Minimal latency ensures accurate and timely delivery of trading data, essential for real-time decision-making."
+  },
+  {
+    "title": "Easy Integration",
+    "desc": "Developer-friendly API that works seamlessly with both web and mobile apps for smooth integration."
+  },
+  {
+    "title": "Secure & Reliable",
+    "desc": "Built with SSL encryption and dependable server uptime to guarantee safe and consistent access to financial data."
+  },
+  {
+    "title": "Scalable Solution",
+    "desc": "Designed to grow with your business, whether you're a startup or an enterprise-level trading platform."
+  },
+  {
+    "title": "Custom API Solutions",
+    "desc": "Offers tailored data streams and endpoints to match the unique needs of your financial application or platform."
+  }
+],
+
+  "pageData": {
+    "title": "Why Choose Us as Your API Provider",
+    "description": "Comfygen is a leading stock market data API provider, having delivered over 5000+ stock data integration and development solutions globally. Our Stock Market Live Line API is known for its precision, speed, and seamless accessibility across all platforms. Gain access to structured documentation, real-time stock price feeds, dynamic market updates, and historical data points with our robust API. As a top-tier Fintech app development company, hybrid mobile app expert, and web solution provider, Comfygen stands at the forefront of financial technology innovation. Our user-first design approach and intelligent analytics platform redefine how developers and traders interact with market data. With Comfygen, empower your trading or finance platform with reliable, scalable, and developer-friendly stock market data services.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+  {
+    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+    "title": "Expert Technical Support",
+    "description": "Get expert guidance from our technical team to ensure smooth integration and ongoing performance."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+    "title": "24/7 Monitoring and Uptime Assurance",
+    "description": "We monitor systems round the clock to ensure maximum uptime and uninterrupted data access."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+    "title": "Competitive Pricing with Scalable Plans",
+    "description": "Flexible pricing models designed to grow with your business and keep costs under control."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+    "title": "Custom Development for Unique Business Needs",
+    "description": "Tailored API and software solutions built specifically to match your project’s unique requirements."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+    "title": "Proven Track Record in Software Delivery",
+    "description": "Trusted by clients worldwide for consistently delivering high-quality apps and enterprise-grade software solutions."
+  }
+]
+
+  },
+  
+ "gamedev": [
+  {
+    "img": "https://www.comfygen.com/img/cricket-live-line-apiI-development.webp",
+    "title": "Trading Platform Live Line API",
+    "num": "1",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/kabaddi-live-line-api-development.webp",
+    "title": "Brokerage App Live Line API",
+    "num": "2",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/golf-live-line-api-development.webp",
+    "title": "Stock Market Dashboard API",
+    "num": "3",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/soccer-live-line-api-development.webp",
+    "title": "Financial News API ",
+    "num": "4",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/hockey-live-line-api-development.webp",
+    "title": "Fintech App API ",
+    "num": "5",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/basketball-live-line-api-development.webp",
+    "title": "Investment Portfolio API ",
+    "num": "6",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/tennis-live-line-api-development.webp",
+    "title": "Watchlist Integration API ",
+    "num": "7",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/horse-live-line-api-development.webp",
+    "title": "Real-Time Stock Widget API ",
+    "num": "8",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/baseball-live-line-api-development.webp",
+    "title": "Mutual Fund Tracker API ",
+    "num": "9",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/pool-live-line-api-development.webp",
+    "title": "Cryptocurrency Live Price API ",
+    "num": "10",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/nba-live-line-api-development.webp",
+    "title": "Forex Live Line API ",
+    "num": "11",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/rugby-live-line-api-development.webp",
+    "title": "Market Sentiment Analysis API ",
+    "num": "12",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/auto-racing-live-line-api-development.webp",
+    "title": "Financial Charting Tool API ",
+    "num": "13",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/american-football-live-line-api-development.webp",
+    "title": "IPO Tracker API ",
+    "num": "14",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/cricket-live-line-apiI-development.webp",
+    "title": "Stock Screener API ",
+    "num": "15",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/kabaddi-live-line-api-development.webp",
+    "title": "Real-Time Index Tracking API ",
+    "num": "16",
+    "url": "#"
+  },
+  {
+    "img": "https://www.comfygen.com/img/golf-live-line-api-development.webp",
+    "title": "Economic Calendar API ",
+    "num": "17",
+    "url": "#"
+  }
+],
+
+  "Shaping": [
+    {
+      "num": "01",
+      "title": "Match Schedules",
+      "decs": "This feature gives users regular updates on upcoming games, matches, tournaments, their venues, and time schedules. "
+    },
+    {
+      "num": "02",
+      "title": "Player Profiles",
+      "decs": "Users can view the statistics and career records of their favourite teams and players from this section."
+    },
+    {
+      "num": "03",
+      "title": "Multi-Language Support",
+      "decs": "Multilingual support enables scoreboard display and navigation in multiple languages so that the language won’t be a barrier."
+    },
+    {
+      "num": "04",
+      "title": "Live Polls",
+      "decs": "The live polls feature enables users to participate in live polls to give their votes and feedback about match and player predictions."
+    },
+    {
+      "num": "05",
+      "title": "Customizable settings",
+      "decs": "It offers a switch to customize the cricket live line application settings according to the user’s preference for which sports or tournaments they want to stay updated. "
+    },
+    {
+      "num": "06",
+      "title": "Push Notifications",
+      "decs": "Push notifications give important updates and instant alerts on all the all cricket match live activities like wicket, century, match results, etc."
+    }
+  ],
+  "WhyCricketLive": [
+    {
+      "num": "01",
+      "title": "Customized APi Solutions:",
+      "decs": " Custom-made cricket live score api software solutions tailored to the client’s precise requirements."
+    },
+    {
+      "num": "02",
+      "title": "Expert Team:",
+      "decs": "A devoted team of experienced specialists in sports-specific niches."
+    },
+    {
+      "num": "03",
+      "title": "Cricket Focus:",
+      "decs": "In-depth knowledge and expertise in Live Line Cricket API-related applications."
+    },
+    {
+      "num": "04",
+      "title": "User-friendly Interface:",
+      "decs": "Innovative approach to design engaging UI/UX for the users. "
+    },
+    {
+      "num": "05",
+      "title": "Intact Security:",
+      "decs": "Specializing in developing highly secure and end-to-end cricket live line solutions. "
+    },
+    {
+      "num": "06",
+      "title": "Round-the-Clock Support: ",
+      "decs": "Continuous 24/7 customer and technical support."
+    },
+    {
+      "num": "07",
+      "title": "Competitive Pricing:",
+      "decs": "Highly scalable and reliable budget-friendly products with high quality."
+    },
+    {
+      "num": "07",
+      "title": "Timely Project Delivery: ",
+      "decs": "On-time product delivery before the promised deadline"
+    }
+  ],
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire a Cricket Live Line API Developer",
+      "desc": "When it comes to developing cutting-edge cricket live line APi applications, you don’t have to look any further. Our Cricket Live Line Api Developers are not your typical coders; they are visionaries who bring your concept to life with hands-on knowledge in developing bespoke cricket live score app development solutions. Equipped with the latest technology trends, apt at seamless API integrations, and creative at mobile app creation, they go past the ordinary to deliver user-centric software development solutions that are finely tuned to meet your unique requirements. ",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+  "myList": [
+    "Specialization in mobile app development, bringing a deep understanding of the cricket enthusiast’s unique requirements.",
+    "Leveraging the latest technology and tools, our developers create leading-edge apps that outshine.",
+    "User experience is our cricket live line api developer’s top priority during the development process, ensuring a seamless and captivating app.",
+    "Our cricket live line api developers carry a passion for cricket resulting in developing a highly engaging score app that resonates with cricket enthusiasts.",
+    "The score update app developers work closely with our clients to understand their specifications and create an app that aligns perfectly with their visions."
+  ],
+  "GameCardData": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
+      "url": "/rummy-game-development",
+      "title": "Rummy Game Development"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/baccarat-game-development-via-comfygen.webp",
+      "url": "/baccarat-game-development",
+      "title": "Baccarat Game Development"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/black-jack-dovelabment-via-comfygen.webp",
+      "url": "/blackjack-game-development",
+      "title": "BlackJack Game Development"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/poker-game-development-via-comfygen.webp",
+      "url": "/poker-game-development",
+      "title": "Poker Game Development"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/ludo-game-development-via-comfygen.webp",
+      "url": "/ludo-game-development",
+      "title": "Ludo game development"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/hearts-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Hearts Game Development"
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/board-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "board game development"
+    },
+    {
+      "num": "9",
+      "img": "https://www.comfygen.com/img/card-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Card Game Development"
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/cheses-game-dovelabment-via-comfygen.webp",
+      "url": "/chess-game-development",
+      "title": "Chess Game Development"
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/img/bingo-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "Bingo Game Development"
+    },
+    {
+      "num": "12",
+      "img": "https://www.comfygen.com/img/888-poker-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "888 Poker Game Development"
+    },
+    {
+      "num": "13",
+      "img": "https://www.comfygen.com/img/omaha-game-dovelabment-via-comfygen.webp",
+      "url": "/omaha-poker-game-development",
+      "title": "Omaha poker game development"
+    },
+    {
+      "num": "14",
+      "img": "https://www.comfygen.com/img/snake-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Snake and Ladder development"
+    },
+    {
+      "num": "15",
+      "img": "https://www.comfygen.com/img/texes-game-dovelabment-via-comfyegn.webp",
+      "url": "/",
+      "title": "Texas Holdem Game Development"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/img/call-breake-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Call Break Game Development"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/img/satta-matka-game-development-via-comfygen.webp",
+      "url": "/satta-matka-game-app-development-company",
+      "title": "Satta Matka Game Development"
+    }
+  ]
+}

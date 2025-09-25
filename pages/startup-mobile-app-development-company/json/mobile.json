@@ -1,0 +1,331 @@
+{
+  "Solution": [
+    {
+      "num": "1",
+      "url": "/e-commerce-app-development",
+      "img": "https://www.comfygen.com/img/retail-and-ecommerce.webp",
+      "title": "E-Commerce Mobile App Development"
+    },
+    {
+      "num": "2",
+      "url": "/healthcare-app-development",
+      "img": "https://www.comfygen.com/img/healthcare.svg",
+      "title": "Healthcare Mobile App Development"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/logistics.svg",
+      "title": "Logistics Mobile App Development"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/eduction.svg",
+      "title": "Education Mobile App Development"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/transportation.svg",
+      "title": "Transportation Mobile App Development"
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/social-networking.svg",
+      "title": "Social Networking Mobile App Development"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/traveland-hospitality.svg",
+      "title": "Travel & Hospitality Mobile App Development"
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/construction.svg",
+      "title": "Construction Mobile App Development"
+    },
+    {
+      "num": "9",
+      "url": "/game-development-company",
+      "img": "https://www.comfygen.com/img/gaming.svg",
+      "title": "Gaming Mobile App Development"
+    },
+    {
+      "num": "10",
+      "url": "/sports-betting-app-development",
+      "img": "https://www.comfygen.com/img/sports.svg",
+      "title": "Sports Betting Mobile App Development"
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/img/entertainment.svg",
+      "title": "Entertainment Mobile App Development"
+    },
+    {
+      "num": "12",
+      "url": "/blockchain-development",
+      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
+      "title": "Blockchain Mobile App Development"
+    },
+    {
+      "num": "13",
+      "url": "/social-media-app-development",
+      "img": "https://www.comfygen.com/img/social-media-app-development-company.webp",
+      "title": "Social Media App Development Company"
+    },
+    {
+      "num": "14",
+      "url": "/finance-app-development",
+      "img": "https://www.comfygen.com/img/finance-app-development-company.webp",
+      "title": "Finance App Development Company"
+    },
+    {
+      "num": "15",
+      "url": "/dating-app-development",
+      "img": "https://www.comfygen.com/img/dating-app-development-company.webp",
+      "title": "Dating App Development Company"
+    },
+    {
+      "num": "16",
+      "url": "/food-delivery-app-development",
+      "img": "https://www.comfygen.com/img/food-delivery-app-development-company.webp",
+      "title": "Food Delivery App Development Company"
+    }
+  ],
+  "AppService": [
+    {
+      "num": "01",
+      "img": "https://www.comfygen.com/img/mobile-app-consulting-services.webp",
+      "title": "Idea Consultancy Services",
+      "decs": "We help startups refine their app ideas, offering expert guidance on feasibility, market research, and innovative features to ensure a solid foundation for their mobile applications. "
+    },
+    {
+      "num": "02",
+      "img": "https://www.comfygen.com/img/mobile-app-design-services.webp",
+      "title": "Product Discovery",
+      "decs": "Through in-depth analysis and market research, we assist startups in identifying market gaps and user needs, helping them conceptualize and shape their app ideas into viable products. "
+    },
+    {
+      "num": "03",
+      "img": "https://www.comfygen.com/img/native-app-development.webp",
+      "title": "MVP Development",
+      "decs": "We focus on creating Minimum Viable Products (MVPs) as part of our MVP development strategy. These MVPs allow for quick and cost-effective validation of business concepts, with the flexibility to make adjustments based on user input."
+    },
+    {
+      "num": "04",
+      "img": "https://www.comfygen.com/img/hybrid-aap-development.webp",
+      "title": "Prototyping and UI/UX Design",
+      "decs": "Our UI/UX design and prototyping services result in aesthetically pleasing and simple-to-use interfaces that create seamless user experiences that draw in and hold on to clients right away."
+    },
+    {
+      "num": "05",
+      "img": "https://www.comfygen.com/img/progressive-web-app-development.webp",
+      "title": "Web App Development",
+      "decs": "We provide web app development services in addition to mobile app development, helping entrepreneurs to reach people on several platforms and devices and so broadening their market reach and accessibility."
+    },
+    {
+      "num": "06",
+      "img": "https://www.comfygen.com/img/mobile-app-api-integration.webp",
+      "title": "Custom Startup App Development ",
+      "decs": "Our personalized app development services, which are tailored to the particular requirements of each startup, provide scalable, reliable solutions that support corporate goals and guarantee long-term success and expansion. "
+    }
+  ],
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire Mobile App Developer From India",
+      "desc": "Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers are knowledgeable and capable to build super-apps though. We adhere to the best and trending technical services to build robust apps, which have the caliber to beat existing market competitions. We have helped dozens of companies yet to build a great impression in the marketplace with successful mobile app development.",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+  "myList": [
+    "We build modern and future technical needs in mobile app development",
+    "Our IT Professionals are experts in working all domains industry",
+    "We work on futuristic and unique features for user’s retention",
+    "Integration of third-party APIs with latest tech involved",
+    "Agile Development Strategies and Project Methodologies",
+    "Futuristic Mobile app development solutions ",
+    "Proven records with mind-blowing mobile app development projects "
+  ],
+  "Plateform": [
+    {
+      "num": "01",
+      "url": "/ios-app-development",
+      "img": "https://www.comfygen.com/img/ios-aap-development.webp",
+      "tittle": "AI and Machine Learning",
+      "decs": "Utilize AI and machine learning algorithms to provide automation, predictive analytics, and tailored experiences for users within your app."
+    },
+    {
+      "num": "02",
+      "url": "/android-app-development",
+      "img": "https://www.comfygen.com/img/android-app-development.webp",
+      "tittle": "Blockchain Integration",
+      "decs": "Enhance decentralization, security, and transparency with blockchain technology; this is especially advantageous for applications in the healthcare, supply chain, and finance sectors."
+    },
+    {
+      "num": "03",
+      "img": "https://www.comfygen.com/img/cross-plateform-aap-development.webp",
+      "tittle": "Internet of Things (IoT) Connectivity",
+      "decs": "To enable automation, data monitoring, and remote control, connect your app to smart devices through the Internet of Things (IoT). This is ideal for health tracking, home automation, and industrial applications."
+    },
+    {
+      "num": "04",
+      "img": "https://www.comfygen.com/img/wearables-devices-app-development.webp",
+      "tittle": "Progressive Web Apps (PWAs)",
+      "decs": "Create PWAs to provide web browser users with app-like experiences like as push notifications, offline capability, and faster loading times"
+    },
+    {
+      "num": "05",
+      "url": "/ios-app-development",
+      "img": "https://www.comfygen.com/img/ios-aap-development.webp",
+      "tittle": "AR and VR Integration",
+      "decs": "Incorporate augmented reality (AR) or virtual reality (VR) features to create immersive experiences, enhance product visualization, and drive user engagement."
+    },
+    {
+      "num": "06",
+      "url": "/android-app-development",
+      "img": "https://www.comfygen.com/img/android-app-development.webp",
+      "tittle": "Voice User Interfaces (VUI)",
+      "decs": "Integrate voice recognition technology to enable hands-free interaction with your app, providing convenience and accessibility, especially for IoT devices and virtual assistants."
+    },
+    {
+      "num": "07",
+      "img": "https://www.comfygen.com/img/cross-plateform-aap-development.webp",
+      "tittle": "Edge Computing",
+      "decs": "Implement edge computing to process data closer to the source, reducing latency and improving performance, crucial for real-time applications and IoT devices."
+    },
+    {
+      "num": "08",
+      "img": "https://www.comfygen.com/img/wearables-devices-app-development.webp",
+      "tittle": "Low-Code/No-Code Development",
+      "decs": "Utilize low-code or no-code platforms to accelerate development, allowing non-technical users to build and customize apps with minimal coding knowledge."
+    },
+    {
+      "num": "09",
+      "img": "https://www.comfygen.com/img/cross-plateform-aap-development.webp",
+      "tittle": "Containerization and Microservices",
+      "decs": "Incorporate microservices design and containerization to make your app more flexible, scalable, and easier to deploy and maintain."
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/wearables-devices-app-development.webp",
+      "tittle": "Cybersecurity Measures",
+      "decs": "Make cybersecurity a top priority by implementing strong authentication, encryption, and security measures to preserve user information and fend against online attacks."
+    }
+  ],
+  "AppProcess": [
+    {
+      "num": "01",
+      "title": "Conceptualization",
+      "decs": "First we believe in knowing about our own product. Our agenda is very clear to understand and learn what clients want to build, and later jump into the marketplace to survey competitors to learn about their methods and strategies of success. Product Discovery and Product Research, these two things are significant help in knowing what we need to build."
+    },
+    {
+      "num": "02",
+      "title": "Design ",
+      "decs": "Here our expert minds will use their creative side for UI/UX. We will do wireframing, prototyping, and add engaging aspects to make the users sustain the application. The designers believe in branding for your business or product through its engaging designs, and here you have that with us."
+    },
+    {
+      "num": "03",
+      "title": "Development",
+      "decs": "Now comes the coding, programming languages, adding features, and working on its functionalities. The mobile app developers will write their codes, work on application’s front-end and back-end, and also add required & additional features to make the app work according to the current marketplace standards."
+    },
+    {
+      "num": "04",
+      "title": "Quality Assurance",
+      "decs": "When the mobile application is built completely, afterwards the testers will do quality assurance to know if there are any bugs, technical technical glitches, or any other issue occurred. This is an important stage, where the team will identify issues and resolve them for best possible app delivery. "
+    },
+    {
+      "num": "05",
+      "title": "Deployment",
+      "decs": "You must have decided on a dedicated mobile app deployment platform, either iOS AppStore or Android PlayStore to launch the app. Once the issues are resolved, then developers are supposed to launch your application on the dedicated mobile app deployment platform to market it forward."
+    },
+    {
+      "num": "05",
+      "title": "Support and Maintenance",
+      "decs": "We are responsible for the post-deployment services, which includes support and maintenance after launch. Our team of experts will alter applications based on the market standards and users needs. We will add on more features, change the algorithm, remove bugs, work on the feedback received, and serve more possible post deployment to make the app worth establishing in the marketplace. "
+    }
+  ],
+  "TechTrends": [
+    {
+      "num": "1",
+      "title": "Artificial Intelligence (AI) and Machine Learning (ML)",
+      "stack": "We integrate AI and ML in your mobile applications; which is going to automate many operations; like testing and debugging the glitches inside. Also, get ready to improve the app’s performance and gain maximum user retention with the ultimate user experience. "
+    },
+    {
+      "num": "2",
+      "title": "Augmented Reality (AR) and Virtual Reality (VR) ",
+      "stack": "AR enables the users to try the product or service virtually before finalizing the deal. Whereas, VR will transport the users into a virtual world to gain an immersive experience. This technology will make your app look futuristic, in which the users will pay attention and engage more."
+    },
+    {
+      "num": "3",
+      "title": "5G Technology",
+      "stack": "Build your mobile application enabled with 5G technology, which helps it to process quicker, provide the ultimate user experience, and establish some efficiency among users."
+    },
+    {
+      "num": "4",
+      "title": "Big Data",
+      "stack": "We utilize the new and latest modernized database; such as MongoDB, Cassandra, and Hadoop. It helps in deploying huge data on the cloud, reducing the cost and improving the performance of the application. "
+    },
+    {
+      "num": "5",
+      "title": "Blockchain Integration",
+      "stack": "We assure you that integrating blockchain into your application leads to building your app as the most competitive one in the marketplace afterward. The decentralized applications enable the users, as well as businesses to gain transparency, immutability, more security, helping every transaction to be tracked & safe, and much more."
+    },
+    {
+      "num": "6",
+      "title": "Internet of Things (IoT)",
+      "stack": "We also specialize in building connected applications with your smart devices. We embrace trending solutions, technologies, and ideations. Therefore it is our priority to create something trending to provide the best solutions and gain our own values among the clientele base. "
+    }
+  ],
+  "VariousDomains": [
+    {
+      "num": "01",
+      "title": "Fintech App Development",
+      "decs": "From making money transactions to enterprise-level financial consulting, we can build a fintech application providing all kinds of financial services to users. No matter whether you want budgeting or finance settlements, our apps can do all for you. "
+    },
+    {
+      "num": "02",
+      "title": "Retail & eCommerce App Development",
+      "decs": "We can develop a dedicated online retail store or a full-fledged eCommerce mobile app platform for the users, where they can conveniently shop everything with super smooth navigation and ultimate user experience."
+    },
+    {
+      "num": "03",
+      "title": "Education App Development",
+      "decs": "Mobile applications are not only for entertainment, but they can help for various purposes; such as studying. These can help in keeping track of assignments, educating about subjects, attending online classes, and more. We develop all kinds of education apps; you say it and we make it assured."
+    },
+    {
+      "num": "04",
+      "title": "Healthcare App Development",
+      "decs": "You might have noticed how the healthcare industry is gaining popularity in the mobile app development stream. We can build applications for you, where patients can track their health goals, set reminders for medicines, and gain possible medicinal information. We can build for you any type of healthcare application."
+    }
+  ],
+  "Why": {
+    "title": "Why Choose Comfygen for Mobile App Development Services? ",
+    "decs": "We understand that promising words are not enough to fetch clients' faith in our mobile app development services, especially in a vibrant market like Jaipur, India. Still, we have something to say that proves Comfygen will stand for clients' application standards and beat the market competitions with our agile developments. Our dedication to excellence extends to clients in Jaipur, India, as we strive to provide top-notch mobile app development solutions that meet and exceed industry standards. "
+  },
+  "Choose": [
+    {
+      "num": "01",
+      "img": "https://www.comfygen.com/img/security-is-our-key.webp",
+      "title": "Security is our Key",
+      "decs": "We work on General Data Protection Regulation (GDPR), Network Information System Regulations, 114 best practices control, and Biannual External Security Audits. It is our most important priority to secure clients somehow, so that they can uniquely establish their app."
+    },
+    {
+      "num": "02",
+      "img": "https://www.comfygen.com/img/transparency-what-makes-us-stand.webp",
+      "title": "Transparency What Makes Us Stand",
+      "decs": "We have learnt one thing from our experience, which is to be “Transparent” with clients. The clients proactively follow documentations, want to learn about productivity, high quality solution processing, and more. Our company and experts respect it, and follow the same transparency to gain their trust and more value in the market."
+    },
+    {
+      "num": "03",
+      "img": "https://www.comfygen.com/img/cost-effective-solution.webp",
+      "title": "Cost Effective Solutions",
+      "decs": "Our mobile app solutions are cost-effective. Do you want to know how? The reason is our knowledge and experience. We have the mind, who knows what is best for the app and business, what is beneficial, what is right, what is just an extra but not worth, and more. Their extensive knowledge is not a sign of extra expense, but it is a sign to have an extraordinary application in right costing.  "
+    },
+    {
+      "num": "04",
+      "img": "https://www.comfygen.com/img/always-involved-with-new-tech-trends.webp",
+      "title": "Always Involved with New Tech-Trends",
+      "decs": "You might have noticed nowadays that whoever is upgrading is leading the market. Same goes in all the domains / industries. If you want to lead, you have to upgrade to something new. We have the power, and grant the leverages to clients to meet current unique and latest tech-trends. Our super efficient minds are not only innovative, but adaptable to new things; which we imply in our projects to build great applications."
+    }
+  ]
+}

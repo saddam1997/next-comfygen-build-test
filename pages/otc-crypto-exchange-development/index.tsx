@@ -1,0 +1,608 @@
+import Image from "next/image";
+import Head from "next/head";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import dynamic from "next/dynamic";
+import { IoStarSharp } from "react-icons/io5";
+import JSON_DATA from "./json/otccryptoexchangedevelopment.json";
+import { useState } from "react";
+import LazyLoad from "react-lazy-load";
+import WhyChoose from "../components/WhyChooseUs";
+import AboutSection from "../components/AboutSection";
+import ServicesSec from "../components/ServicesSec";
+import BlogSection from "../components/BlogSection";
+import Faq from "../components/Faq";
+import CallToAction from "../components/CallToAction";
+import TechStack from "../components/TechStack";
+import HireDeveloper from "../components/HireDeveloper";
+import ProcessSec from "../components/ProcessSec";
+import InfoSectionLeft from "../components/InfoSectionLeft";
+import InfoSectionRight from "../components/InfoSectionRight";
+import ModelsSec from "../components/ModelsSec";
+import ConsultancyApproach from "../components/ConsultancyApproach";
+import CardItem from "../components/CardItem";
+import Script from "next/script";
+import PortfolioSec from "../components/PortfolioSec";
+import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
+import ClientTestimonials from "../components/ClientTestimonials";
+import ServicesSection from "../componentsnew/ServicesSection";
+import ProcessSection from "../componentsnew/ProcessSection";
+import TrendsSection from "../componentsnew/TrendsSection";
+import SolutionsFeature from "../componentsnew/SolutionsFeature";
+
+
+
+
+const Header = dynamic(() => import("../components/Header"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const NewSection = dynamic(() => import("../components/NewSection"), {
+  loading: () => <p>Loading...</p>,
+});
+const ContactFromCenter = dynamic(
+  () => import("../components/ContactFromCenter"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+const Processs = [
+  {
+    title: "Requirement Gathering & Planning",
+    description:
+      "Understanding your business needs and regulatory requirements to design a tailored OTC platform.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Developing an intuitive, responsive interface for an effortless trading experience across devices.",
+  },
+  {
+    title: "Core Software Development",
+    description:
+      "Building secure backend and frontend systems with advanced features like multi-layer security and liquidity management.",
+  },
+  {
+    title: "Integration of Compliance Tools",
+    description:
+      "Implementing KYC, AML, and audit trails to maintain regulatory standards.",
+  },
+  {
+    title: "Testing & Quality Assurance",
+    description:
+      "Conducting thorough functional and security tests to ensure reliability and performance.",
+  },
+  {
+    title: "Deployment & Integration",
+    description:
+      "Launching the OTC platform and connecting with wallets, payment gateways, and APIs.",
+  },
+  {
+    title: "Ongoing Support & Maintenance",
+    description:
+      "Providing continuous updates, monitoring, and technical support to keep your platform secure and efficient.",
+  },
+];
+
+
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+      head: "Centralized Crypto Exchange Platform Development",
+      name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/portfolio/centralized-crypto-exchange-development",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
+      head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+      name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/portfolio/p2p-crypto-exchange-development",
+    },
+  ],
+};
+
+export default function Ecommerce(props) {
+  let { initialData } = props;
+  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+  const openModal = () => {
+    setTalkToExpertModal(true);
+  };
+  const closeModal = () => {
+    setTalkToExpertModal(false);
+  };
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      "addressLocality": "Jaipur, Rajasthan",
+      "addressRegion": "India",
+      "postalCode": "302006",
+      "telephone": "+91-958-786-7258"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+      "addressLocality": "Toronto",
+      "addressRegion": "Canada",
+      "postalCode": "M1G3S7",
+      "telephone": "+1 579-977-4475"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Best OTC Crypto Exchange Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
+      "url": "https://www.comfygen.com/otc-crypto-exchange-development",
+      "mainEntityOfPage": "https://www.comfygen.com/otc-crypto-exchange-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "OTC crypto exchange development company",
+        "OTC crypto exchange development",
+        "Best OTC crypto exchange",
+        "Crypto OTC trading platform",
+        "OTC crypto exchange",
+        "OTC platform"
+      ],
+     
+      "sameAs": [
+        "https://www.facebook.com/comfygen", 
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
+    
+
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+          "addressLocality": "Jaipur",
+          "postalCode": "302006",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+          "addressLocality": "Toronto",
+          "postalCode": "M1G3S7",
+          "addressCountry": "Canada"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://www.youtube.com/@ComfygenBusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://in.pinterest.com/comfygenpvt/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
+        "email": "sales@comfygen.com",
+        "availableLanguage": ["en", "in"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://youtube.com/@comfygenbusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://in.pinterest.com/comfygenpvt/"
+      ]
+    },
+    {
+      "@context":"http://www.schema.org",
+      "@type":"Product",
+      "brand":"Comfygen Private Limited",
+      "Name":"Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform",
+      "image":"https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp",
+      "description":"Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
+      "aggregateRating":{"@type":"AggregateRating",
+      "ratingValue":"4.9",
+      "reviewCount":"1748"}
+
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is OTC crypto exchange software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OTC crypto exchange software facilitates direct, private cryptocurrency trades between buyers and sellers, especially for large-volume transactions, ensuring security and minimal market impact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose an OTC platform over a regular crypto exchange?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OTC platforms offer privacy, better liquidity, and reduced price slippage for large trades, making them ideal for institutional investors and high-net-worth individuals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What features are essential in OTC crypto exchange development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key features include secure escrow services, customizable trade matching, multi-currency support, compliance with KYC/AML regulations, and user-friendly dashboards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to develop an OTC crypto exchange platform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Development time varies based on features and complexity, but typically ranges from 8 to 16 weeks for a fully functional, secure OTC platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can OTC crypto exchange software be customized?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, OTC exchange software can be tailored to specific business needs, including custom workflows, branding, security protocols, and integration with external APIs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OTC crypto exchange software secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When developed with best security practices, including encryption, two-factor authentication, and compliance with regulatory standards, OTC platforms are highly secure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can benefit from OTC crypto exchange development services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Institutional investors, crypto brokers, hedge funds, corporate treasury teams, and OTC trading desks benefit from OTC crypto exchange platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies are used in OTC crypto exchange development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common tech stacks include blockchain integration, secure backend frameworks, APIs for liquidity providers, and front-end technologies ensuring a smooth user experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do OTC platforms handle regulatory compliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OTC platforms incorporate KYC (Know Your Customer) and AML (Anti-Money Laundering) protocols to comply with legal standards and ensure secure transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why hire a professional OTC crypto exchange development company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Professional developers ensure robust, scalable, and compliant platforms with advanced features, reducing risks and accelerating time to market for your OTC exchange."
+          }
+        }
+      ]
+    }
+    
+    
+    
+  ];
+
+  return (
+    <>
+    <Head>
+        <title>
+       OTC Crypto Exchange Development Company | Comfygen
+        </title>
+        <meta
+          name="description"
+          content="Comfygen offers secure and scalable OTC crypto exchange development services with instant trade execution, bank-grade security, transparent pricing, and custom features. Launch your OTC trading platform with confidence."
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/otc-crypto-exchange-development"
+        />
+        <meta
+          name="robots"
+          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
+        />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Comfygen" />
+        <meta name="author" content="Comfygen" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+        <meta
+          name="keywords"
+          content="OTC crypto exchange development, OTC trading platform development, custom OTC crypto exchange, OTC crypto trading software, institutional crypto trading platform, OTC crypto exchange software development company"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform"
+        />
+        <meta
+          name="twitter:description"
+          content="Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business."
+        />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
+        <meta name="twitter:site" content="@comfygentech" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/otc-crypto-exchange-development"
+        />
+        <meta
+          property="og:title"
+          content="Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform"
+        />
+        <meta
+          property="og:description"
+          content="Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business."
+        />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
+        <meta property="og:image:alt" content="OTC Crypto Exchange Development" />
+        
+        {/* Structured Data Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "OTC Crypto Exchange Development",
+              operatingSystem: "Web, Android, iOS",
+              applicationCategory: "FinanceApplication",
+              url: "https://www.comfygen.com/otc-crypto-exchange-development",
+              description:
+                "Comfygen is a top OTC crypto exchange development company offering secure and scalable OTC trading platforms. We build custom OTC solutions with high liquidity, compliance features, and institutional-grade security.",
+              author: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited"
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited",
+                url: "https://www.comfygen.com"
+              },
+              image:
+                "https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-og-image.webp"
+            })
+          }}
+        />
+
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
+
+      <LazyLoad height={80} offset={100}>
+        <Header />
+      </LazyLoad>
+      <div className="overflow-hidden">
+        
+        <HeroSectionForAllPages
+          heading="OTC Crypto Exchange Development Company"
+          ptag="Comfygen, OTC Crypto Exchange Development Service, is specially developed for enterprises and startups looking to simplify high-volume digital asset trading. Our OTC Crypto Exchange Development solutions eliminate slippage, ensure transparent pricing, and provide a seamless trading experience for both institutional investors and retail users. With advanced security measures, customizable features, and compliance-ready architecture, we help you launch and scale confidently in the global crypto market."
+          
+          li="Instant large-volume trade execution"
+          li1="Top-security and KYC/AML compliance"
+          li2="Transparent pricing & liquidity management"
+          li3="Custom features and scalability"
+        
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-hero.webp"
+        />
+
+
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+
+        <AboutSection
+          title=""
+          heading="What Makes OTC Crypto Exchange Development a Smart Choice?"
+          description1="Choosing OTC crypto exchange development is a strategic move for businesses seeking secure, scalable, and regulation-ready solutions for high-volume crypto trading. Unlike traditional exchanges, an OTC crypto trading platform enables private, direct transactions without slippage or order book exposure. This boosts user trust, reduces volatility, and enhances compliance with global standards, making your platform more reliable in the eyes of both users and search engines like Google."
+          points={[
+            "Ensures secure and confidential transactions",
+            "Supports regulatory frameworks",
+            "Handles large-volume trades",
+            "Customizable OTC platform",
+            "Appeals to institutional and enterprise clients",
+            
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+        <ContactFromCenter />
+       
+
+        <ServicesSection 
+          heading="Custom OTC Crypto Exchange Development Solutions"
+          subtitle="At Comfygen, we design and deliver highly customizable OTC crypto exchange development solutions tailored for institutional clients, crypto startups, and enterprises seeking secure, scalable, and compliant platforms. Our solutions integrate the latest technology trends such as AI-powered execution, regulatory automation, and <a class=text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases'>Private Blockchain</a> –  infrastructure to provide a cutting-edge trading experience that meets the demands of 2025 and beyond."
+          servicesData={JSON_DATA.servicesData}
+        />
+
+         <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+        <ProcessSection 
+            title="OTC Crypto Exchange Development Process" 
+            description="Creating a secure and scalable OTC crypto exchange platform requires a focused development approach. Our OTC crypto exchange development company follows a streamlined process to deliver custom solutions that ensure privacy, compliance, and seamless large-volume <a href='/crypto-trading-bot-development' class='text-blue-500 font-sembold'  >crypto trading</a>." 
+            processSlides={Processs} />
+
+        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Our Portfolio: Crypto Trading Bot Development"
+          description="At Comfygen, we take pride in delivering robust and secure OTC crypto exchange development solutions tailored to diverse client needs. Our portfolio showcases a wide range of successful projects, including custom OTC platforms, institutional-grade trading software, and scalable OTC desks."
+        />
+
+
+            <SolutionsFeature title="Benefits of Our Hybrid Exchange Development" subtitle="At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services" data={JSON_DATA.servicesData1} />
+
+        {/* <TrendsSection
+          heading="Benefits of OTC Cryptocurrency Exchange Platforms"
+          subtitle="OTC cryptocurrency exchange platforms provide a secure and efficient solution for traders and institutions handling large-volume crypto transactions. Unlike regular exchanges, OTC crypto exchanges facilitate private, high-value trades with enhanced confidentiality and liquidity, making them an ideal choice for many crypto market participants."
+          trends={JSON_DATA.Emerging}
+        /> */}
+
+        <TechStack
+          title="Our OTC Cryptocurrency Exchange Development Technology Stack"
+          description="We build secure, scalable OTC crypto exchange software using modern tech like React, Node.js, and blockchain integrations (<a href='/ethereum-token-development' class='text-white font-semibold underline ' >Ethereum</a> , Solana). Our stack ensures fast trades, strong security, and regulatory compliance."
+        />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+        <HireDeveloper
+          heading="Hire Our OTC Crypto Exchange Developer"
+          text="Looking to launch a high-performance, secure OTC trading platform? Hire expert OTC crypto exchange developers from Comfygen to build feature-rich, compliant, and scalable solutions tailored to your business needs."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Specializing in OTC <a class='text-white underline font-semibold' href='/cryptocurrency-exchange-development' >crypto exchange development</a>.",
+            "Strong grip on KYC/AML compliance and data security",
+            "Real-time trade matching & private order book setup",
+            "Scalable architecture for high-volume transactions",
+            "Proven experience in <a class='text-white underline font-semibold' href='/blockchain-developmentt' >blockchain</a> & crypto projects",
+            "Flexible engagement models (hourly/part-time/full-time).",
+            "Post-launch support and performance optimization",
+          ]}
+        />
+
+        <SolutionsFeature title="Who Needs OTC Crypto Exchange Software?" subtitle="OTC crypto exchange software plays a crucial role for a variety of market participants who require secure, private, and efficient trading solutions beyond traditional exchanges. Its design focuses on large-volume trades, confidentiality, and regulatory compliance, making it the preferred choice for specialized users." data={JSON_DATA.CryptoTrading}  />
+
+        
+        <ClientTestimonials
+          heading="What Our Clients Say"
+          testimonials={JSON_DATA.testimonials}
+        />
+        <Faq faqData={JSON_DATA.Frequently} />
+        <BlogSection initialData={initialData} />
+      </div>
+    </>
+  );
+}
+// This gets called on every request
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}

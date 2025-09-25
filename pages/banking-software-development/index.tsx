@@ -1,0 +1,645 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import JSON_DATA from "./bankingsoftwaredevelopment.json";
+import LazyLoad from "react-lazy-load";
+import WhyChoose from "../components/WhyChooseUs";
+import ConsultancyApproach from "../components/ConsultancyApproach";
+import ServicesSec from "../components/ServicesSec";
+import SolutionSec from "../components/SolutionSec";
+import ProcessSec from "../components/ProcessSec";
+import AboutSection from "../components/AboutSection";
+import HireDeveloper from "../components/HireDeveloper";
+import Features from "./components/Features";
+import Script from "next/script";
+import TechStack from "../components/TechStack";
+import ClientTestimonials from "../components/ClientTestimonials";
+import PortfolioSec from "../componentsnew/PortfolioSec";
+import {
+  IconBook,
+  IconSchool,
+  IconBrain,
+  IconAtom,
+  IconLanguage,
+  IconClipboardCheck,
+  IconBriefcase,
+  IconHeartbeat,
+  IconApps,
+} from "@tabler/icons-react";
+import ServiceSection from "../components/ServiceSection";
+import ServicesSection from "../componentsnew/ServicesSection";
+import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
+import TrendsSection from "../componentsnew/TrendsSection";
+import ProcessSection from "../componentsnew/ProcessSection";
+
+const HeroSectionForAllPages = dynamic(
+  () => import("../components/HeroSectionForAllPages"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const Faq = dynamic(() => import("../components/Faq"), {
+  loading: () => <p>Loading...</p>,
+});
+const Header = dynamic(() => import("../components/Header"), {
+  loading: () => <p>Loading...</p>,
+});
+const BlogSection = dynamic(() => import("../components/BlogSection"), {
+  loading: () => <p>Loading...</p>,
+});
+const ContactFromCenter = dynamic(
+  () => import("../components/ContactFromCenter"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+const Process = [
+  {
+    title: "Discovery & Requirement Gathering",
+    description:
+      "Our process begins with an in-depth discovery session where our qualified and talented banking software developers analyze your business model, project goals, and technical requirements. We research banking trends, compliance needs, and user behavior to define a clear product roadmap and ensure alignment with industry best practices.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Our UI/UX design experts craft intuitive, user-centric interfaces that enhance digital banking experiences. We focus on responsive design, seamless navigation, and accessibility to ensure your custom banking software development meets the expectations of both tech-savvy users and traditional banking customers.",
+  },
+  {
+    title: "Backend & Frontend Development",
+    description:
+      "Using secure and modern tech stacks, we build robust backend systems and responsive frontends tailored to your financial services. As a custom banking software development agency, we ensure every component is scalable, efficient, and ready to support complex banking operations.",
+  },
+  {
+    title: "Integration with Legacy Systems",
+    description:
+      "We integrate new solutions with your existing banking infrastructure, core systems, and third-party APIs without disrupting ongoing operations. Our banking software development services ensure secure data migration, process automation, and compliance with global banking standards during system integration.",
+  },
+  {
+    title: "QA & Security Testing",
+    description:
+      "Security and reliability are at the core of our development. Our QA experts conduct rigorous testing—covering functionality, performance, usability, and compliance—to ensure your app is resilient. We follow best practices for security to deliver fully tested custom banking software development.",
+  },
+  {
+    title: "Deployment & Launch",
+    description:
+      "After successful testing, we deploy your banking software across targeted platforms, ensuring smooth rollouts and zero downtime. As a top rated banking software development company, we manage cloud configurations, app store submissions, and final validations for a flawless launch.",
+  },
+  {
+    title: "Maintenance & Support",
+    description:
+      "Post-launch, we offer continuous support, updates, and feature enhancements. Our banking software developers monitor performance, manage patches, and scale systems to match growing user demand, ensuring long-term stability and innovation in your financial software ecosystem.",
+  },
+];
+
+
+const technologyData = [
+  {
+    img: <IconBook stroke={1.5} className="w-12 h-12" />,
+    title: "Elementary Application Development",
+    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
+  },
+  {
+    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
+    title: "Freelance Tutor Marketplace Development",
+    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
+  },
+  {
+    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
+    title: "K-12 Education App Development",
+    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
+  },
+  {
+    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
+    title: "STEM Learning Application Development",
+    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
+  },
+  {
+    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
+    title: "Language Learning Application Development",
+    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
+  },
+  {
+    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
+    title: "Test Preparation App Development Solutions",
+    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
+  },
+  {
+    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
+    title: "Corporate Training & Employee Learning App Development",
+    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
+  },
+  {
+    img: <IconApps stroke={1.5} className="w-12 h-12" />,
+    title: "Special Needs & Inclusive Education App Development",
+    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
+  },
+  {
+    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
+    title: "Fitness and Wellness Coaching App Development",
+    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
+  },
+];
+
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
+      head: "Digital Wallet App for Payment Providers",
+      name: "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      buttonLink: "#",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
+      head: "AI-Powered Loan Management Platform",
+      name: "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      buttonLink: "#",
+    },
+  ],
+};
+
+
+export default function ClinicalApp(props: any) {
+  let { initialData } = props;
+  let { Frequently } = JSON_DATA;
+
+  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
+
+  const openModal = () => {
+    setTalkToExpertModal(true);
+  };
+  const closeModal = () => {
+    setTalkToExpertModal(false);
+  };
+  const faqSchema = {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is banking software?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Banking software is a comprehensive suite of tools designed to streamline financial operations. It helps banks manage transactions, customer accounts, loans, and more. Banking & financial software development allows financial institutions to automate processes and enhance customer service, ensuring efficiency and compliance with regulatory standards.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can AI improve customer experience in banking software?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI enhances customer experience by providing personalized banking services, improving customer support with AI chatbots, and automating routine tasks. AI-based features like fraud detection and predictive analytics allow banks to offer a more efficient, tailored experience, which is critical for online banking software development.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is core banking software?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Core banking software is the backbone of banking operations, managing all financial transactions and customer information in real-time. It includes services like account management, transactions, loans, and more. It helps banks enhance their operations by providing an efficient bank management system for all banking branches.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is your solution compliant with PCI DSS or GDPR?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we ensure that all our custom banking software development solutions comply with industry standards like PCI DSS and GDPR. We implement robust security measures such as encryption and multi-factor authentication to protect sensitive data and maintain legal compliance across banking systems.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does banking software development cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost of banking software development varies based on project complexity, features, and scale. A custom banking software development company can provide an estimate after understanding your specific requirements. Typically, factors like technology stack, integration needs, and security requirements affect pricing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does development take?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The timeline for banking software development services depends on the scope of the project. On average, mobile banking software development can take 3-6 months, while more complex solutions like bank account management systems may require longer due to rigorous security, compliance, and feature requirements.",
+        },
+      },
+    ],
+  };
+  
+
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      "addressLocality": "Jaipur, Rajasthan",
+      "addressRegion": "India",
+      "postalCode": "302006",
+      "telephone": "+91-958-786-7258"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+      "addressLocality": "Toronto",
+      "addressRegion": "Canada",
+      "postalCode": "M1G3S7",
+      "telephone": "+1 579-977-4475"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Online Astrology App Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a leading astrology app development service provider in the USA, building feature-rich astrology apps with horoscope reports, love horoscopes, daily tips, and more. Get your custom astrology app today!",
+      "url": "https://www.comfygen.com/astrology-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Astrology App Development",
+        "Love Horoscope App Development Services",
+        "Develop Astrology App like Astrotalk",
+        "Horoscope App Development Services",
+        "Health & Wealth Astrology App Development Service",
+        "Astrologer Booking App Development Services",
+        "Astrology Ecommerce App Development Service",
+        "Panchang App Development Services",
+        "Numerology App Development Services",
+        "Tarot Card Reading App Development",
+        "Cosmobiology App Development",
+        "Vedic Astrology App Development",
+        "Astrology Dating App Development Services"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+          "addressLocality": "Jaipur",
+          "postalCode": "302006",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+          "addressLocality": "Toronto",
+          "postalCode": "M1G3S7",
+          "addressCountry": "Canada"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://www.youtube.com/@ComfygenBusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://www.comfygen.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "description": "Comfygen delivers custom banking software development for startups, banks, and financial organizations. Our fintech experts craft powerful digital banking apps with AI, ML, and end-to-end support.",
+      "mainEntityOfPage": "https://www.comfygen.com/banking-software-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Core Banking Solutions",
+        "Mobile Banking App Development",
+        "Digital Wallet & Payment Gateway Integration",
+        "Loan & Credit Management Software Development",
+        "Bank Management Software Development",
+        "Banking CRM Software Development",
+        "Custom ATM Software Development",
+        "Custom EMV Software Development Services",
+        "AI-powered banking software development",
+        "Blockchain Based Banking Software Development",
+        "Online banking management system"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen", 
+        "https://www.linkedin.com/company/comfygen-private-limited"  
+      ]
+    
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://youtube.com/@comfygenbusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://in.pinterest.com/comfygenpvt/"
+      ]
+    },
+    
+    
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "name": "Banking Software Development Services",
+      "image": "Hero section image",
+      "description": "Partner with Comfygen for expert banking software development services. We build secure, scalable, and cloud-native fintech solutions including AI, blockchain, and mobile banking apps for modern financial institutions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
+    }
+    
+  ];
+
+  return (
+    <>
+      <Head>
+        <title>
+       Custom Banking Software Development Company | Secure Fintech Solutions
+        </title>
+        <meta
+          name="description"
+          content="Partner with Comfygen, a leading custom banking software development company. We deliver secure fintech solutions including core banking systems, AI-driven mobile apps and blockchain for banks, credit unions, and fintech startups."
+        />
+
+        <meta name="keywords" content="Custom Core Banking Solutions, Mobile Banking App Development, Digital Wallet & Payment Gateway Integration, Loan & Credit Management Software Development, Bank Management Software Development, Banking CRM Software Development, Custom ATM Software Development, Custom EMV Software Development Services, AI-powered banking software development, Blockchain Based Banking Software Development, Online Banking Management System" />
+
+
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/banking-software-development"
+        />
+        <meta
+          name="robots"
+          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="My App" />
+        <meta name="author" content="Comfygen" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+    
+        <meta name="author" content="Company Private Limited" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Custom Banking Software Development Company | Comfygen"
+        />
+        <meta
+          name="twitter:description"
+          content="Comfygen is a leading banking software development company specializing in secure, scalable, and innovative fintech solutions. We offer custom core banking systems, AI-powered mobile banking apps, and 24/7 support to transform the operations of banks, credit unions, and fintech startups."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/svg/Logo1.svg"
+        />
+        <meta name="twitter:site" content="@comfygentech" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-og.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-og.webp"
+        />
+        <meta property="og:image:alt" content="Custom Banking Software Development Company" />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-og.webp"
+        />
+        <meta
+          property="og:title"
+          content="Custom Banking Software Development Company"
+        />
+        <meta
+          property="og:description"
+          content="Comfygen is a leading banking software development company specializing in secure, scalable, and innovative fintech solutions. We offer custom core banking systems, AI-powered mobile banking apps, and 24/7 support to transform the operations of banks, credit unions, and fintech startups."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+         {structuredData.map((data, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+        />
+      ))}
+
+      </Head>
+      <LazyLoad height={80} offset={100}>
+        <Header />
+      </LazyLoad>
+      <div className="overflow-hidden ">
+        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp')]" >
+          <HeroSectionForAllPages
+            heading="Custom Banking Software Development Company for Secure Fintech Solutions"
+            ptag="Comfygen is a top custom banking software development company that builds secure, scalable, and future-ready fintech solutions. We specialize in core banking systems, AI-powered mobile apps, blockchain integration, and cloud-native platforms. Our banking software developers empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
+            li="Custom Core Banking Software"
+            li1="Secure, Cloud-Native & Scalable Platforms"
+            li2="AI, ML & Blockchain Banking Solutions"
+            li3="24/7 Dedicated Support & Maintenance"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+          />
+        </div>
+        <AboutSection
+          title="About Company"
+          heading="Best Banking Software Development Company for Startup"
+          description1="Launching a fintech startup requires the right technology partner — one that understands the complexity of modern banking. As the best banking software development company for startups, Comfygen offers end-to-end banking software development services designed to help new financial ventures launch fast, scale confidently, and stay secure."
+          description2="We specialize in delivering robust banking & financial software development solutions that are tailored to the unique needs of emerging fintech businesses. Whether you're building a digital-only bank, a microfinance platform, or a peer-to-peer lending app, our expert developers and consultants are here to guide you through every step — from ideation to deployment."
+          description3="At Comfygen, we blend deep domain knowledge with cutting-edge tech like AI, Blockchain, and cloud computing to create agile, regulatory-compliant banking platforms. Partner with us to build a future-ready fintech product that grows with your startup."
+          imageSrc="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+       
+
+        <ServicesSection heading="We offer Banking Software Development Services" subtitle="At Comfygen, we provide comprehensive banking software development services tailored to meet the unique needs of financial institutions, fintech startups, and banks. Our skilled banking software developers leverage cutting-edge technology to build secure, scalable, and innovative banking applications that drive efficiency and enhance user experiences." servicesData={JSON_DATA.servicesData}/>
+
+        <ContactFromCenter />
+
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Take a look at some of the banking software solutions we have developed"
+          description="Comfygen delivers innovative and secure banking software solutions designed to meet the needs of financial institutions. We have designed two notable banking projects that offer seamless and feature-rich services.."
+        />
+        
+
+        <CoreFeaturesSection 
+          title="Custom AI-Powered Banking Software Development Solutions" 
+          subtitle="At Comfygen, we offer advanced <a class='text-blue-600 font-semibold' href='/ai-development'>AI-powered banking software development solutions</a> that bring intelligence, automation, and personalization to every layer of digital banking. Our custom solutions empower financial institutions to deliver smarter services, reduce risk, and optimize operations through artificial intelligence and machine learning."
+          features={JSON_DATA.AIPowered} 
+        />
+
+
+        <TrendsSection
+          heading="Latest Technologies We Use for Banking & Financial Software Development"
+          subtitle="At Comfygen, a trusted <a class='text-white underline  font-semibold' href='/banking-software-development'>mobile app development company</a>  company, we integrate cutting-edge technologies to build robust, secure, and scalable digital banking solutions. Our advanced tech stack ensures seamless user experiences, real-time data processing, and future-proof app architecture that aligns with modern financial needs."
+          trends={JSON_DATA.Emerging}
+        />
+
+        
+
+          <ProcessSection title="Our Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking solutions that align with your business goals." processSlides={Process} />
+
+        <TechStack
+          title="Tech Stack We Use for Banking Software Development"
+          description="At Comfygen, we leverage cutting-edge technologies to build scalable, secure, and high-performance banking software solutions. Our robust tech stack is tailored to meet the demands of modern financial applications, ensuring data integrity, seamless integration, and top-tier user experiences."
+          filterCategory={["crypto"]}
+        />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+        <HireDeveloper
+          heading="Hire Our Dedicated Banking Software Developers"
+          text="Looking to build robust and secure banking software? At Comfygen, we have a team of highly skilled banking software developers ready to bring your vision to life using cutting-edge technologies and seamless functionality."
+          text1="With 10+ years of experience in banking and fintech software development, our expert developers specialize in crafting custom banking solutions that are secure, scalable, and highly optimized for financial operations. Whether you need a mobile banking app, core banking system, or a secure payment gateway, our team ensures a smooth, high-performance experience for your users."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Our dedicated banking software developers are committed to:",
+            "Developing custom solutions tailored to your business needs.",
+            "Building secure, compliant applications that meet industry standards.",
+            "Integrating advanced technologies such as AI, blockchain, and cloud infrastructure for enhanced performance.",
+            "Delivering scalable apps that grow with your business and handle high transaction volumes."
+          ]}          
+        />
+        <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+        <Faq faqData={Frequently} title="" />
+        <BlogSection initialData={initialData} />
+      </div>
+    </>
+  );
+}
+// This gets called on every request
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}

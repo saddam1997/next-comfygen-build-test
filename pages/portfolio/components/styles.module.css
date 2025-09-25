@@ -1,0 +1,18 @@
+
+.testimonial {
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.testimonial::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #5556D1;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

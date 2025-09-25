@@ -1,0 +1,437 @@
+{
+
+    "NativeAll": [
+      {
+        "num": 1,
+        "category": "Taxi",
+        "head": "Tourism Taxi Service",
+        "subhead": "",
+        "para": "Our client is a leading tourism company that needed a custom tourism taxi app development solution...",
+        "img": "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
+        "url": "/portfolio/tourism-taxi-booking-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 2,
+        "category": "Fitness",
+        "head": "Fitclub App",
+        "subhead": "",
+        "para": " Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
+        "img": "https://www.comfygen.com/img/footer-fitclub-img.webp",
+        "url": "/portfolio/fitclub-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 3,
+        "category": "Blockchain",
+        "head": "Great Wallet Application",
+        "subhead": "",
+        "para": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified..",
+        "img": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+        "url": "/portfolio/great-wallet",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 4,
+        "category": "Dating",
+        "head": "Swipe-Based Dating App",
+        "subhead": "",
+        "para": "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
+        "img": "https://www.comfygen.com/image/swipe-based-dating-app.webp",
+        "url": "/portfolio/swipe-based-dating-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 5,
+        "category": "Dating",
+        "head": "Matchmaking Dating App",
+        "subhead": "",
+        "para": "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
+        "img": "https://www.comfygen.com/image/match-making-datingapp.webp",
+        "url": "/portfolio/ai-matchmaking-dating-app-development",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 6,
+        "category": "Dating",
+        "head": "LGBTQ Dating App",
+        "subhead": "",
+        "para": "Our LGBTQ dating app development offers secure matchmaking, quick hookups, and meaningful friendships through real-time chat, location-based searches, and AI suggestions.",
+        "img": "https://www.comfygen.com/image/lgbtq-dating-app.webp",
+        "url": "/portfolio/lgbtq-dating-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 7,
+        "category": "Food",
+        "head": "Food Delivery App – Food 24Hrp",
+        "subhead": "",
+        "para": "We developed a user-friendly food delivery application, 'Food 24Hr' designed to connect customers with a wide range of local restaurants and eateries. The platform features real-time order tracking, secure payment options, and an intuitive interface for seamless browsing and ordering. 'Food 24Hr' ensures fast and reliable delivery, enhancing convenience and accessibility for food lovers everywhere.",
+        "img": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
+        "url": "/portfolio/food-delivery-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 8,
+        "category": "Blockchain",
+        "head": "NASDAC Crypto Coin",
+        "subhead": "",
+        "para": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+        "img": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+        "url": "/portfolio/blockchain-based-cryptocoin-development",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 9,
+        "category": "Blockchain",
+        "head": "Croston Decentralized Blockchain-based Coin Development",
+        "subhead": "",
+        "para": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+        "img": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+        "url": "/portfolio/decentralized-blockchain-based-cryptocurrency",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 10,
+        "category": "NEWS",
+        "head": "News Application",
+        "subhead": "",
+        "para": "Discover a new era of news with our cutting-edge News Application. Stay informed with real-time updates, personalized feeds, and multimedia content at your fingertips. Never miss a beat with breaking news notifications. Download now for a seamless, immersive news experience.",
+        "img": "https://www.comfygen.com/img/news-portfolio-footer-img.webp",
+        "url": "/portfolio/power-of-one-news",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 11,
+        "category": "Education",
+        "head": "Book My Tutor",
+        "subhead": "",
+        "para": "Book My Tutor is revolutionizing education in India, connecting students with experienced tutors seamlessly. Our vision is to make quality education accessible to all, transcending location and academic levels. Join us in bridging the gap for personalized learning and transforming the way students and tutors connect. Education, simplified.",
+        "img": "https://www.comfygen.com/img/hero-book-my-tutor.webp",
+        "url": "/portfolio/book-my-tutor",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 12,
+        "category": "Ecommerce",
+        "head": "E Commerce",
+        "subhead": "",
+        "para": "Explore a world of possibilities with our E-commerce portfolio. From trendy fashion to cutting-edge electronics, find curated products that redefine convenience. Our user-friendly platform ensures a seamless shopping experience, backed by secure payment options. Elevate your lifestyle effortlessly – shop with us today!",
+        "img": "https://www.comfygen.com/img/e-commerce-portfolio-img.webp",
+        "url": "/portfolio/e-commerce",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 13,
+        "category": "Blockchain",
+        "head": "M7 Coin",
+        "subhead": "",
+        "para": "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
+        "img": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+        "url": "/portfolio/m7-coin",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 14,
+        "category": "Dating",
+        "head": "Casual Dating App",
+        "subhead": "",
+        "para": "Designed for modern dating, our casual dating app development offers instant matches, real-time chats, and location-based suggestions for users seeking fun and spontaneous connections.",
+        "img": "https://www.comfygen.com/image/casual-dating-app.webp",
+        "url": "/portfolio/casual-dating-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 15,
+        "category": "Dating",
+        "head": "Professional Dating App",
+        "subhead": "",
+        "para": "We build professional dating apps that connect like-minded professionals, integrating career-based matchmaking, private messaging, and networking features for meaningful relationships.",
+        "img": "https://www.comfygen.com/image/profestional-dating-app.webp",
+        "url": "/portfolio/professional-dating-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 16,
+        "category": "Finance",
+        "head": "A Personal Finance Management App",
+        "subhead": "",
+        "para": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently...",
+        "img": "https://www.comfygen.com/image/portfolio-fin-flow.webp",
+        "url": "/portfolio/personal-finance-management-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 17,
+        "category": "Finance",
+        "head": "PayMaster - A Mobile Payment Solution",
+        "subhead": "",
+        "para": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers...",
+        "img": "https://www.comfygen.com/image/portfolio-invest-smart.webp",
+        "url": "/portfolio/mobile-payment-app-solution",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 18,
+        "category": "Finance",
+        "head": "A Stock Trading and Investment App",
+        "subhead": "",
+        "para": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor...",
+        "img": "https://www.comfygen.com/image/portfolio-pay-master.webp",
+        "url": "/portfolio/stock-trading-finance-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 19,
+        "category": "Blockchain",
+        "subcategories": ["Blockchain", "Finance"],
+        "head": "Blockchain-Based FinTech Applications",
+        "subhead": "",
+        "para": "Our client required a secure and transparent Blockchain-based FinTech application development solution...",
+        "img": "https://www.comfygen.com/image/hero-image-blockchain-based-fintech-app.webp",
+        "url": "/portfolio/blockchain-based-fintech-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 20,
+        "category": "Blockchain",
+        "head": "YatriPay",
+        "subhead": "",
+        "para": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development...",
+        "img": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+        "url": "/portfolio/peer-to-peer-blockchain-based-payment-system",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 21,
+        "category": "Blockchain",
+        "head": "Mezovest",
+        "subhead": "",
+        "para": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T...",
+        "img": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+        "url": "/portfolio/advanced-blockchain-based-logistics-software",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 22,
+        "category": "Blockchain",
+        "head": "Blockchain-Based Real Estate Tokenization Software",
+        "subhead": "",
+        "para": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency...",
+        "img": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+        "url": "/portfolio/blockchain-based-real-estate-tokenization-software",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 23,
+        "category": "Taxi",
+        "head": "Logistics & Delivery Service",
+        "subhead": "",
+        "para": "Our client, a leading logistics company, required a custom logistics delivery taxi app development solution...",
+        "img": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
+        "url": "/portfolio/logistics-delivery-taxi-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 24,
+        "category": "Taxi",
+        "head": "Eco-Friendly EV Taxi Service",
+        "subhead": "",
+        "para": "Our client sought a custom EV taxi app development solution to promote sustainable transportation...",
+        "img": "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
+        "url": "/portfolio/ev-taxi-service",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 25,
+        "category": "Taxi",
+        "head": "Corporate Taxi Service Provider",
+        "subhead": "",
+        "para": "Our client required a Corporate Taxi Service Provider App Development solution to optimize employee...",
+        "img": "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
+        "url": "/portfolio/corporate-taxi-service-provider",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 26,
+        "category": "Taxi",
+        "head": "Emergency Healthcare Transport",
+        "subhead": "",
+        "para": "Our client, a leading healthcare provider, required a custom healthcare taxi booking app development solution...",
+        "img": "https://www.comfygen.com/image/hero-image-healthcare-transport-taxi-app.webp",
+        "url": "/portfolio/healthcare-transport-taxi-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 27,
+        "category": "Taxi",
+        "head": "Urban Ride-Hailing Startup",
+        "subhead": "",
+        "para": "Our client, a Dubai-based ride-hailing startup, wanted to enter the competitive ride-hailing market...",
+        "img": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "url": "/portfolio/ride-hailing-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 28,
+        "category": "Blockchain",
+        "head": "Aria Coin Cryptocurrency",
+        "subhead": "",
+        "para": "Welcome to ARIA Currency, where the future of transactions meets seamless empowerment. Join us as we rewrite the rules of digital currency, making security, accessibility, and efficiency our currency of trust.",
+        "img": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+        "url": "/portfolio/aria-coin-details",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 29,
+        "category": "Education",
+        "head": "On-Demand Tutor Booking App",
+        "subhead": "",
+        "para": "A real-time tutor booking app development solution that connects students with qualified tutors nearby...",
+        "img": "https://www.comfygen.com/image/hero-image-on-demand-tutor-booking-app.png",
+        "url": "/portfolio/on-demand-tutor-booking-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 30,
+        "category": "Education",
+        "head": "AI-Powered Language Learning App",
+        "subhead": "",
+        "para": "An interactive language learning app development platform with AI-driven personalized lessons...",
+        "img": "https://www.comfygen.com/image/hero-image-ai-powered-language-learning-app.png",
+        "url": "/portfolio/ai-powered-language-learning-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 31,
+        "category": "NEWS",
+        "head": "Global News Aggregator App",
+        "subhead": "",
+        "para": "Our Canada-based client sought a custom news aggregator app development solution to deliver real-time news updates...",
+        "img": "https://www.comfygen.com/image/hero-image-global-news-aggregator-app.webp",
+        "url": "/portfolio/global-news-aggregator-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 31,
+        "category": "NEWS",
+        "head": "Political News App",
+        "subhead": "",
+        "para": "Our UAE-based client, a leading media company, required a custom political news app development solution...",
+        "img": "https://www.comfygen.com/image/hero-image-political-news-app.webp",
+        "url": "/portfolio/political-news-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 32,
+        "category": "Medicine Delivery",
+        "head": "Pharmacy Chain App",
+        "subhead": "",
+        "para": "Pharmacy Chain App is a feature-rich medicine delivery app developed for a leading pharmacy chain...",
+        "img": "https://www.comfygen.com/image/hero-image-pharmacy-chain-app.webp",
+        "url": "/portfolio/pharmacy-chain-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 33,
+        "category": "Medicine Delivery",
+        "head": "AI-Powered Medicine Ordering",
+        "subhead": "",
+        "para": "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions...",
+        "img": "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
+        "url": "/portfolio/ai-powered-medicine-ordering-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 34,
+        "category": "Medicine Delivery",
+        "head": "Jaipur Pharmago– On-Demand Medicine Delivery",
+        "subhead": "",
+        "para": "Jaipur Pharmago is a user-friendly mobile app designed for a startup aiming to provide quick medicine deliveries...",
+        "img": "https://www.comfygen.com/image/hero-image-Jaipur-pharmago.webp",
+        "url": "/portfolio/Jaipur-pharmago",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 35,
+        "category": "Medicine Delivery",
+        "head": "E-PharmaPluse App – A Complete E-Pharmacy Solution",
+        "subhead": "",
+        "para": "E-PharmaPluse is a cloud-based medicine delivery app developed for an enterprise client...",
+        "img": "https://www.comfygen.com/image/e-pharmapluse-hero-image.webp",
+        "url": "/portfolio/e-pharmapluse",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 36,
+        "category": "Astrology",
+        "head": "Love Horoscope App",
+        "subhead": "",
+        "para": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions...",
+        "img": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
+        "url": "/portfolio/love-horoscope-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 37,
+        "category": "Astrology App",
+        "head": "Tarot Card Reading App",
+        "subhead": "",
+        "para": "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings...",
+        "img": "https://www.comfygen.com/image/hero-image-tarot-card-reading-app.webp",
+        "url": "/portfolio/tarot-card-reading-app",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 38,
+        "category": "Blockchain",
+        "head": "GamezVerse – NFT Gaming Marketplace Development",
+        "subhead": "",
+        "para": "Comfygen successfully developed GamezVerse, a next-generation NFT gaming marketplace that allows gamers...",
+        "img": "https://www.comfygen.com/image/hero-image-nft-gaming-marketplace-development.webp",
+        "url": "/portfolio/nft-gaming-marketplace-development",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 39,
+        "category": "Blockchain",
+        "head": "DeepEstate – NFT Real Estate Marketplace Development",
+        "subhead": "",
+        "para": "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings...",
+        "img": "https://www.comfygen.com/image/hero-image-nft-real-estate-marketplace-development.webp",
+        "url": "/portfolio/nft-real-estate-marketplace-development",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 40,
+        "category": "Blockchain",
+        "head": "Centralized Crypto Exchange Platform Development",
+        "subhead": "",
+        "para": "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange...",
+        "img": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+        "url": "/portfolio/centralized-crypto-exchange-development",
+        "btn": "Initiate Now"
+      },
+      {
+        "num": 41,
+        "category": "Blockchain",
+        "head": "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+        "subhead": "",
+        "para": "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform...",
+        "img": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
+        "url": "/portfolio/p2p-crypto-exchange-development",
+        "btn": "Initiate Now"
+      }, 
+      {
+        "num": 42,
+        "category": "Blockchain",
+        "head": "Blockchain Implementation",
+        "subhead":"",
+        "para": "The integration of blockchain technology provided the foundation for aRIA Currency's decentralized and tamper-resistant transaction processing, instilling trust and reliability among its user base.",
+        "img": "https://www.comfygen.com/img/solution-aria-coin1.webp",
+        "url": "/portfolio/aria-coin-details",
+        "btn": "Initate Now"
+      }
+    ]
+  }
+  

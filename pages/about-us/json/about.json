@@ -1,0 +1,242 @@
+{
+  "Solutions": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/illuslator/efficiency.webp",
+      "title": "Efficiency",
+      "decs": "We believe in practical perfection and realize that there is always room for improvement in everything we do."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/images/img/teamwork.webp",
+      "title": "Teamwork",
+      "decs": "Alone we can do so little; together we can do so much. – Helen Kelle. We believe in working together to make the best use of our abilities and potential to maximize the output."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/img/client-value-creation.webp",
+      "title": "Client Value Creation",
+      "decs": "Comfygen first values its customers. We focus on our clients business requirements to ensure we surpass their expectations."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/images/img/transparency.webp",
+      "title": "Transparency",
+      "decs": "Fosters trust, that is the base of great teamwork which leads to success."
+    }
+  ],
+  "team": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/jitendra-dadhich.webp",
+      "title": "Jitendra Dadhich",
+      "subtle": " SEO Analyst",
+      "decs": "Jitendra leads our SEO efforts with precision and expertise. His in-depth understanding of search engine optimization strategies and unwavering commitment to driving results make him an invaluable asset to our team."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/abishek.webp",
+      "title": "Abhishek",
+      "subtle": "Project Coordinator",
+      "decs": "Abhishek, our dedicated Project Coordinator, leads with precision and strategic planning to ensure seamless project execution and client satisfaction. His exceptional organizational skills and keen eye for detail enable him to orchestrate project timelines and resources effectively, driving successful deliverables and fostering long-term client relationships."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/julkarnen-qureshi.webp",
+      "title": "Julkarnen Qureshi",
+      "subtle": "MERN Stack Developer",
+      "decs": "Julkarnen is our go-to expert for MERN stack development. With a versatile skill set and a passion for cutting-edge technologies, he plays a pivotal role in crafting robust and dynamic web applications for our projects."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/ketan.webp",
+      "title": "Ketan",
+      "subtle": "MERN Team Lead",
+      "decs": "Ketan, our esteemed MERN Team Lead, brings a wealth of expertise in full-stack development, ensuring seamless integration and optimal functionality. With demonstrated leadership and technical prowess, he fosters a collaborative environment to drive innovation and deliver exceptional solutions, setting the benchmark for excellence in MERN stack development."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/images/rohit-kumar.webp",
+      "title": "Rohit Kumar",
+      "subtle": "React Native Developer",
+      "decs": "Rohit is our talented React Native developer, known for his expertise in building versatile and high-performance mobile applications. His innovative approach and technical proficiency drive the success of our mobile development projects."
+    }
+  ],
+  "CompanyInfo": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/svg/company-location.svg",
+      "title": "Office Location",
+      "decs": "7"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Team Members",
+      "decs": "50+"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/svg/year-of-business.svg",
+      "title": "Year in business",
+      "decs": "8+"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/svg/client.svg",
+      "title": "Clients",
+      "decs": "100+"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/svg/app-delever.svg",
+      "title": "Project Delivered ",
+      "decs": "100+"
+    }
+  ],
+  "CompanyInfo1": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/svg/company-location.svg",
+      "title": "Our Mission",
+      "decs": "To empower businesses with software that endures the test of time while driving sustainable growth and engagement. We strive to keep pace with evolving technologies, ensuring our clients receive the most proficient development services."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Our Vision",
+      "decs": "Our vision is to be every client's first choice for IT solutions. By mastering new technologies and delivering exceptional projects, we aim to transform businesses and create market-leading innovations."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Our Values",
+      "decs": "We are committed to delivering reliable and efficient solutions that meet the needs of our customers at Comfygen Private Limited. Everything we do is based on our unwavering commitment to strong ethics and beliefs."
+    }
+  ],
+  "ComfygenRightPartner": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/svg/company-location.svg",
+      "title": "Every Domain is Our Expertise",
+      "decs": "No matter whether you belong to healthcare, education, betting, fintech, or other industries; because you will find us everywhere. In the span of 5 years, we have helped multiple clients from various industries. Also, they got excellent IT services from us.  "
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Our Experience is our Strength ",
+      "decs": "You might have heard “We Melt Coals to Form Diamonds.” Our expert software developers and digital assistants; all have almost 10+ years of experience. In this long span of time, they have dealt with many projects with different complexities; which made them more skilled and creative in their job.  "
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Latest Technology Adoption is our Motto ",
+      "decs": "It does not matter how strong your product is; but you get the result if you stay tuned with the current market demands and standards. That’s what we are doing. We are leading ourselves with different latest technologies; so that we can build some super-exciting software which lasts in the market for years & years.  "
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/svg/team-member.svg",
+      "title": "Transparency with Clients",
+      "decs": "It is very good to be best at our job and serve excellent tech-enabled services to the respective clientele base; but being real and actual with clients is also required the most. Therefore, we tell everything to clients about the ongoing projects, so that they know what’s going on and stay satisfied with the services. "
+    }
+  ],
+  "IndustryWork": [
+    {
+      "num": "01",
+      "url": "/blockchain-development",
+      "img": "https://www.comfygen.com/images/icons/blockchain-dvelopment.webp",
+      "title": "Blockchain Development",
+      "decs": "At Comfygen, we are at the forefront of blockchain technology. Our expertise spans blockchain architecture, smart contract development, and decentralized application (App) development creation. Whether it's implementing secure and transparent ledger systems or revolutionizing existing processes through blockchain integration, we empower businesses to leverage the transformative potential of this cutting-edge technology."
+    },
+    {
+      "num": "02",
+      "url": "/crypto-token-development-company",
+      "img": "https://www.comfygen.com/images/icons/token-development.webp",
+      "title": "Token Development",
+      "decs": "Our proficiency in token development extends across various blockchain ecosystems. From conceptualization to deployment and management, we specialize in creating tokens that align with diverse business needs. Whether it's utility tokens, security tokens, or non-fungible tokens (NFTs), we craft bespoke development solutions that drive value and innovation."
+    },
+    {
+      "num": "03",
+      "url": "/crypto-wallet-development",
+      "img": "https://www.comfygen.com/images/icons/crypto-development.webp",
+      "title": "Crypto Development",
+      "decs": "ComfyGen is your trusted partner in navigating the dynamic landscape of cryptocurrencies. We offer end-to-end solutions, from building secure crypto wallets and crypto exchanges to implementing robust trading cryptocurrency development platforms. Our comprehensive approach ensures a seamless and user-friendly crypto experience, fostering trust and confidence among users."
+    },
+    {
+      "num": "04",
+      "url": "/game-development-company",
+      "img": "https://www.comfygen.com/images/icons/casino-development.webp",
+      "title": "Game Development",
+      "decs": "In the realm of gaming, Comfygen stands as a creative powerhouse. Our game development prowess spans from concept ideation to deployment, focusing on delivering captivating and immersive gaming experiences. Whether it's mobile game development, web game development, or console-based game development, we blend cutting-edge game development technology with imaginative storytelling to create games that resonate with audiences worldwide."
+    }
+  ],
+
+  "VisionaryLeader": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/image/mr-saddam-husen.webp",
+      "title": "Mr. Saddam Husen (CTO)",
+      "decs": "Mr. Saddam Husen, CTO at Comfygen, is a renowned Blockchain expert and IT consultant with extensive experience in blockchain development, crypto wallets, DeFi, ICOs, and smart contracts. Passionate about digital transformation, he helps businesses harness blockchain technology’s potential, driving innovation and enhancing IT infrastructure for global success."
+    }
+  ],
+
+  "TeamMember": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/image/namita-tomar-image.webp",
+      "title": "Namita Tomer",
+      "decs": "HR Manager"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/image/namita-tomar-image.webp",
+      "title": "Abhishek Singh ",
+      "decs": "(Tech Leader)"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/image/namita-tomar-image.webp",
+      "title": "Aadil Waseem",
+      "decs": "Management"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/image/namita-tomar-image.webp",
+      "title": "Shoaib Ali",
+      "decs": "Sales"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/image/namita-tomar-image.webp",
+      "title": "Naeem Hasan",
+      "decs": "Marketing Lead"
+    }
+  ],
+  "IndustriesWork": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/image/blockchain-development-about-icon.svg",
+      "title": "Blockchain Development",
+      "decs": "At Comfygen, we are at the forefront of blockchain technology. Our expertise spans blockchain architecture, smart contract development, and decentralized application (App) development creation. Whether it's implementing secure and transparent ledger systems or revolutionizing existing processes through blockchain integration, we empower businesses to leverage the transformative potential of this cutting-edge technology."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/image/token-development-about-icon.svg",
+      "title": "Token Development",
+      "decs": "Our proficiency in token development extends across various blockchain ecosystems. From conceptualization to deployment and management, we specialize in creating tokens that align with diverse business needs. Whether it's utility tokens, security tokens, or non-fungible tokens (NFTs), we craft bespoke development solutions that drive value and innovation. "
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/image/crypto-development-about-icon.svg",
+      "title": "Crypto Development",
+      "decs": "ComfyGen is your trusted partner in navigating the dynamic landscape of cryptocurrencies. We offer end-to-end solutions, from building secure crypto wallets and crypto exchanges to implementing robust trading cryptocurrency development platforms. Our comprehensive approach ensures a seamless and user-friendly crypto experience, fostering trust and confidence among users."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/image/game-development-about-icon.svg",
+      "title": "Game Development",
+      "decs": "In the realm of gaming, Comfygen stands as a creative powerhouse. Our game development prowess spans from concept ideation to deployment, focusing on delivering captivating and immersive gaming experiences. it's mobile game development, web game development, or console-based game development, we blend cutting-edge game development technology with imaginative storytelling to create games that resonate with audiences worldwide."
+    }
+  ]
+  
+}

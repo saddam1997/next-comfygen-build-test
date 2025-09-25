@@ -1,0 +1,634 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import JSON_DATA from "./home-service-app-development.json";
+import LazyLoad from "react-lazy-load";
+import WhyChoose from "../components/WhyChooseUs";
+import ConsultancyApproach from "../components/ConsultancyApproach";
+import ServicesSec from "../components/ServicesSec";
+import ProcessSec from "../components/ProcessSec";
+import AboutSection from "../components/AboutSection";
+import HireDeveloper from "../components/HireDeveloper";
+import Features from "./components/Features";
+import ClientTestimonials from "../components/ClientTestimonials";
+import PortfolioSec from "../componentsnew/PortfolioSec";
+import SolutionsFeature from "../componentsnew/SolutionsFeature";
+import NewTeckStack from "../componentsnew/NewTeckStack";
+import WhoCanStart from "../componentsnew/WhoCanStart";
+import CardItem from "../components/CardItem";
+
+const HeroSectionForAllPages = dynamic(
+  () => import("../components/HeroSectionForAllPages"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const Faq = dynamic(() => import("../components/Faq"), {
+  loading: () => <p>Loading...</p>,
+});
+const Header = dynamic(() => import("../components/Header"), {
+  loading: () => <p>Loading...</p>,
+});
+const BlogSection = dynamic(() => import("../components/BlogSection"), {
+  loading: () => <p>Loading...</p>,
+});
+const ContactFromCenter = dynamic(
+  () => import("../components/ContactFromCenter"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+const Process = [
+  {
+    title: "Requirement Analysis",
+    description:
+      "We start by understanding your business goals, target customers, and service model. This helps us create a home services app development plan that meets your needs today and supports growth in the future.",
+  },
+  {
+    title: "UI/UX Designing",
+    description:
+      "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designers</a> create clean, attractive, and mobile-friendly layouts. We focus on easy navigation and smooth booking flow so users can quickly find and book services.",
+  },
+  {
+    title: "App Development",
+    description:
+      "Our expert developers build secure, fast, and feature-rich home service booking apps using the latest technologies. We add features like real-time tracking, multi-service support, and secure payment gateways for both Android and iOS.",
+  },
+  {
+    title: "QA & Testing",
+    description:
+      "We thoroughly test your home services app for speed, security, and compatibility. Our team ensures it works perfectly on all devices without any bugs.",
+  },
+  {
+    title: "Deployment",
+    description:
+      "Once ready, we launch your app on Google Play and the App Store. We ensure a smooth rollout with full functionality across devices.",
+  },
+  {
+    title: "Post-Launch Optimization",
+    description:
+      "After launch, we track performance, gather feedback, and make improvements so your app can grow and keep users engaged.",
+  },
+  {
+    title: "Support & Maintenance",
+    description:
+      "As a reliable home services app development agency, we provide ongoing updates, bug fixes, performance checks, and security enhancements, so your business keeps running without issues.",
+  },
+];
+
+
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",
+      head: "On-Demand Home Cleaning Services App",
+      name: "Our home cleaning service app helps users book professional cleaners instantly with flexible time slots, live tracking, and online payments. Built with modern UI/UX and real-time updates, it simplifies daily home cleaning services for urban users.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "https://www.comfygen.com/contact-us",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/handyman.webp",
+      head: "Handyman & Repairs Booking App",
+      name: "This app enables users to quickly book handymen for tasks such as furniture repairs, installations, and minor fixes. With smart job scheduling, real-time technician tracking, and secure payments, the app ensures convenience and speed for both users and providers.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "https://www.comfygen.com/contact-us",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/appliance.webp",
+      head: "Appliance Repair Booking App",
+      name: "We developed a user-friendly appliance repair app that enables customers to schedule technicians for AC, refrigerator, or washing machine repairs. Features include real-time booking, service history, and technician tracking.",
+      num: "3",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "https://www.comfygen.com/contact-us",
+    },
+  ],
+};
+
+const WhoCanStartCards = [
+  {
+    heading: "Single Service Aggregator",
+    description:
+      "This model is suitable for businesses that offer a single service, such as home cleaning, beauty, or plumbing. The app lets users book, pay, and track services easily.",
+  },
+  {
+    heading: "Multi-Service Aggregator",
+    description:
+      "This is for businesses that offer many services in one home service mobile app — like electricians, AC repair, pest control, etc. Customers can choose and book any service they need.",
+  },
+  {
+    heading: "Home Services Business",
+    description:
+      "If you have your own team and run a full home service company, we provide a white-label home services App to manage your staff, bookings, payments, and locations — all from one place.",
+  },
+];
+
+export default function ClinicalApp(props: any) {
+  let { initialData } = props;
+  let { Frequently } = JSON_DATA;
+
+  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
+
+  const openModal = () => {
+    setTalkToExpertModal(true);
+  };
+  const closeModal = () => {
+    setTalkToExpertModal(false);
+  };
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      logo: "https://www.comfygen.com/svg/Logo1.svg",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        contactOption: "WhatsApp",
+        telephone: "+91 9587867258",
+        email: "sales@comfygen.com",
+        areaServed: ["IN", "US", "CA", "GB"],
+
+        availableLanguage: "en, in",
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Comfygen Technologies",
+      image: "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      telephone: "+91-958-786-7258",
+      priceRange: "$",
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress:
+            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+          addressLocality: "Jaipur",
+          postalCode: "302006",
+          addressCountry: "IN",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+          addressLocality: "Toronto",
+          postalCode: "M1G3S7",
+          addressCountry: "Canada",
+        },
+      ],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/",
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Home Services App Development Company",
+      provider: {
+        "@type": "Organization",
+        name: "Comfygen Technologies",
+        url: "https://www.comfygen.com/",
+      },
+      description:
+        "Comfygen offers scalable home services app development for startups and enterprises. Build your own app for cleaning, repair, salon, or handyman services with custom features and real-time updates.",
+      url: "https://www.comfygen.com/home-service-app-development",
+      mainEntityOfPage: "https://www.comfygen.com/home-service-app-development",
+      areaServed: "Global",
+      serviceType: [
+        "White-Label Home Service App Development",
+        "Salon and Beauty Services App Development",
+        "Uber-like App for Home Services",
+        "Handyman App Development",
+        "Electrical Service App Development",
+        "Home Services App Design and Development Services",
+        "Laundry Service App Development",
+        "Child Care Services",
+      ],
+
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
+    },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      brand: "Comfygen Technologies",
+      Name: "End-to-End Home Services App Development Solutions",
+      image: "https://www.comfygen.com/comfygen-images/home-services-app-development/about.webp",
+      description:
+        "From idea to launch, Comfygen provides complete home services app development solutions. Our home service mobile apps include booking, tracking, payments, and admin panels — built for performance and business growth.",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "245",
+      },
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.comfygen.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Home Service App Development",
+          item: "https://www.comfygen.com/home-service-app-development",
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does it cost to develop a home services app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The cost of a home services app development depends on its features, complexity, platforms (iOS/Android), and design. On average, it can range from $8,000 to $30,000 or more. Contact us for a custom quote based on your exact needs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to build a home service app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Home services app development timelines vary depending on features and requirements. A basic home service app may take 4–6 weeks, while a fully customized one with advanced modules may take 10–12 weeks. We ensure fast, on-time delivery.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is investing in home service app development is worthy?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Investing in a home services app helps automate bookings, boost customer satisfaction, and grow your business online. It offers real-time service management, improves brand visibility, and creates recurring revenue with minimal operational hassle.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I customize the features of my app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, absolutely. We offer fully customizable home services app development. You can choose the features, design, and flow to match your business model. Everything is tailored to your brand and customer needs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will you provide white-label home service app solutions?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, we offer 100% white-label home services app solutions. Your app will have your own logo, colors, and branding. It’s ready for quick launch with your identity — perfect for startups and businesses.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you offer support after the app launch?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, we provide full post-launch support. Our mobile app development team makesure your app stays updated, secure, and bug-free. We offer ongoing maintenance, feature upgrades, and technical support to help your business grow.",
+          },
+        },
+      ],
+    },
+  ];
+
+  return (
+    <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>Best Home Services App Development Company</title>
+        <meta
+          name="description"
+          content="Looking for the best home services app development company? Comfygen Technologies offers custom home services app development services, white-label home services app solutions with real-time booking and tracking features for Android & iOS."
+        />
+        <meta
+          name="keywords"
+          content="White-Label Home Service App Development, Salon and Beauty Services App Development, Uber-like App for Home Services, Handyman App Development, Electrical Service App Development, Home Services App Design and Development Services, Laundry Service App Development, Child Care Services"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/home-service-app-development"
+        />
+        {/* Robots */}
+        <meta
+          name="robots"
+          content="max-image-preview:large, max-snippet:-1, max-video-preview:-1, index, follow"
+        />
+
+        {/* Compatibility */}
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* Viewport */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Comfygen App" />
+
+        {/* Author Info */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+        {/* SEO Meta */}
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+        {/* Geo Meta */}
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+        {/* Open Graph Meta */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Technologies" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta property="fb:page_id" content="110909321596135" />
+        <meta property="og:email" content="sales@comfygen.com" />
+        <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/home-services-app-development/og.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/home-services-app-development/og.webp"
+        />
+        <meta property="og:image:alt" content="Home Service App Development" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/home-service-app-development"
+        />
+        <meta
+          property="og:title"
+          content="Top Mobile App Development Company for Home Services Industry"
+        />
+        <meta
+          property="og:description"
+          content="Looking to digitize your home service business? We develop high-performance mobile apps for all services — from plumbing to salon bookings. Scalable, secure, and easy to use."
+        />
+
+        {/* Twitter Meta */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Custom Home Services App Development Solutions | Comfygen"
+        />
+        <meta
+          name="twitter:description"
+          content="Launch your branded home services app with Comfygen Technologies. We deliver tailored solutions for single and multi-service businesses with real-time tracking, secure payments, and user-friendly design."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/home-services-app-development/og.webp"
+        />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+        {/* Structured Data Scripts */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
+
+      {/* <LazyLoad height={80} offset={100}> */}
+      <Header />
+      {/* </LazyLoad> */}
+      <div className="overflow-hidden sm:pt-16">
+        <div className="">
+          <HeroSectionForAllPages
+            heading="Home Services App Development Company"
+            ptag="Comfygen Technologies is a top home services app development company offering innovative and scalable home services app development services. We provide value-driven and future-ready home services app development solutions for startups and enterprises to launch powerful home services mobile apps to manage bookings, service providers, and payments seamlessly."
+            li="Real-Time Service Booking & Tracking"
+            li1="Customizable Multi-Vendor Support"
+            li2="Secure Payment Gateway Integration"
+            li3="Powerful Admin & Analytics Panel"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/home-services-app-development/hero.webp"
+          />
+        </div>
+        <AboutSection
+          title="About Company"
+          heading="Why Businesses Are Embracing Home Service Apps for Success"
+          description1="In today’s fast-moving world, people want quick and reliable home services through mobile apps. Businesses are turning to technology to meet this growing demand. According to research, the global home services market is projected to hit USD 1.13 trillion by 2026, driven by digital convenience, rising smartphone usage, and the popularity of on-demand home services app solutions."
+          description2="Comfygen Technologies is a top-notch home services app development agency. We are a preferred choice for startups, entrepreneurs, and SMEs that want to grow their profits."
+          imageSrc="https://www.comfygen.com/comfygen-images/home-services-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[
+            "80% of users prefer booking home services online.",
+            "Save up to 40% on admin and operational costs by automating tasks.",
+            "Real-time service tracking improves transparency and customer trust.",
+          ]}
+        />
+        {/* who cane start */}
+        <WhoCanStart
+          title="On-Demand Home Services App Solution Models We Serve"
+          description="At Comfygen Technologies, we develop smart and user-friendly on-demand home services applications for a wide range of businesses. Whether you offer one service or many, we can create the right home service booking app for you."
+          cards={WhoCanStartCards}
+        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                We Offer Home Services App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen Technologies offers advanced and scalable on-demand
+                home services app development services to startups,
+                entrepreneurs, and enterprise businesses. We create
+                feature-rich, user-friendly apps that help service providers
+                grow faster and deliver better customer experiences.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+        <ContactFromCenter />
+
+        <CardItem
+          heading="Diverse Home Services App Developent Solutions for Every Business Need"
+          subheading="We are a leading home services app development company. We create easy-to-use apps that help businesses serve their customers better. Our solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments."
+          techData={JSON_DATA.cardData2}
+        />
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Explore Our Home Services App Development Portfolio"
+          description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
+        />
+        <Features />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              Our Proven Home Services App Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+              Comfygen Technologies is a top-rated home services app development company that creates powerful, scalable, and user-friendly apps for the home services industry. With our expertise in home service app development, we help businesses connect with customers more efficiently, boost bookings, and grow revenue.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <NewTeckStack
+          title="Technology Stack We Use in Home Service Booking App Development"
+          description="At Comfygen Technologies, we use powerful and reliable technologies to develop high-performance home service booking apps. Our tech stack ensures your app is fast, secure, scalable, and future-ready — whether it's built for Android, iOS, or both."
+          filterCategory={["crypto"]}
+        />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+        <HireDeveloper
+          heading="Hire the Best Home Services App Developer"
+          text="Want to build a powerful and easy-to-use Uber-like app for home services? Hire skilled <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >home services app developers</a> from Comfygen Technologies to bring your idea to life. We build your own home services apps for cleaning, plumbing, beauty, handyman and more — with features like online booking, real-time tracking, and secure payments. We deliver next-gen home service apps that grow with your business."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Experienced in home services app development",
+            "10+ years of mobile app experience",
+            "Expert in booking, tracking, and payment features",
+            "Fast delivery with full support after launch",
+          ]}
+        />
+        <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+        <Faq faqData={Frequently} title="" />
+        <BlogSection initialData={initialData} />
+      </div>
+    </>
+  );
+}
+// This gets called on every request
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}

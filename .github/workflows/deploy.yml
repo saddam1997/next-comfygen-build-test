@@ -1,0 +1,49 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - newdesign # Trigger deployment on push to the 'newdesign' branche
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -p ${{ secrets.SERVER_PORT }} -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+    - name: Test SSH Connection
+      run: |
+        ssh -T -o StrictHostKeyChecking=no \
+               -o HostKeyAlgorithms=+ssh-rsa \
+               -o PubkeyAcceptedKeyTypes=+ssh-rsa \
+               -p ${{ secrets.SERVER_PORT }} \
+               ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo 'SSH connection successful'"
+
+    - name: Deploy Application
+      run: |
+        ssh -T -o StrictHostKeyChecking=no \
+               -o HostKeyAlgorithms=+ssh-rsa \
+               -o PubkeyAcceptedKeyTypes=+ssh-rsa \
+               -p ${{ secrets.SERVER_PORT }} \
+               ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+          # Load NVM
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+          
+          cd /var/www/production_new_port/next-comfygen-ssr-custom-express
+          git pull origin newdesign
+          npm install
+          export NODE_OPTIONS="--max-old-space-size=16384" 
+          npm run build | tee
+          pm2 restart all
+        EOF

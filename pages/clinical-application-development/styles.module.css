@@ -1,0 +1,299 @@
+.CardItem {
+  border-right: 1px solid #c2bfbf;
+  border-bottom: 1px solid #c2bfbf;
+}
+
+.CardItem:nth-child(3) {
+  border-right: unset !important;
+}
+
+.CardItem:nth-child(6) {
+  border-right: unset !important;
+}
+
+.CardItem:nth-child(7) {
+  border-bottom: unset !important;
+}
+
+.CardItem:nth-child(8) {
+  border: unset !important;
+}
+
+.TabItem {
+  border-radius: 8px 40px;
+}
+
+.TechnologyStack::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.TechnologyStack::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.TechnologyStack::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(top,
+      #e4f5fc 0%,
+      #bfe8f9 50%,
+      #9fd8ef 51%,
+      #B165C1 100%);
+}
+
+.grdotone,
+.grdottwo,
+.grdotthree {
+  background: #60A5FA;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 12px;
+  position: absolute;
+  left: -6.5px;
+  z-index: 99;
+}
+
+.grdotone {
+  top: 30%;
+}
+
+.grdottwo {
+  top: 50%;
+}
+
+.grdotthree {
+  top: 70%;
+}
+
+.foodcard::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  background-color: #B165C1;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.BenefitsCard1::after {
+  content: "";
+  width: 40%;
+  height: 15px;
+  background: #B266C1;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.BenefitsCard::after {
+  content: "";
+  height: 30%;
+  width: 13px;
+  background: #fff;
+  position: absolute;
+  left: -13px;
+  border-radius: 10px 0px 0px 10px;
+  ;
+  top: 30px;
+  margin: 0 auto;
+}
+
+.BenefitsCardItem {
+  background-color: #223547;
+  padding: 30px;
+  box-shadow: 0 6px 30px 0 #0180ff0f;
+  height: 100%;
+  transition: .5s all;
+  position: relative;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #B266C1 0%, rgba(250, 108, 66, 0) 99%);
+}
+
+.BenefitsCardItemImg {
+  position: absolute;
+  right: 30px;
+  background-color: #223547;
+  top: -30px;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #B266C1;
+  transition: .5s all;
+}
+
+.Choosingcard::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Choosingcard::-webkit-scrollbar-track {
+  background-color: #223547;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.Choosingcard::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #B165C1;
+}
+
+.Choosecard {
+  border-left: 4px solid #B165C1;
+  border-bottom: 4px solid #B165C1;
+  padding-left: 15px;
+  margin-top: 45px;
+}
+
+/* ........ roadmapp css ........  */
+
+
+.Roadmapcontainer {
+  width: 80%;
+  padding: 50px 0;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.Roadmapcontainer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #BA68C8;
+  z-index: 1
+}
+
+.timelineblock {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timelineblockright {
+  float: right;
+}
+
+.timelineblockleft {
+  float: left;
+  direction: rtl
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  background: #BA68C8;
+  margin-top: 10px;
+  z-index: 9
+}
+
+.timelinecontent {
+  width: 95%;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.timelinecontent h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: -webkit-auto;
+}
+
+.timelinecontent p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #fff;
+  text-align: -webkit-auto;
+}
+
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 270px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.letter:before,
+.letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.letter:before {
+  background: #BE5EBC;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+
+.letter:after {
+  background: #16BDFA;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+@media screen and (max-width: 768px) {
+  .Roadmapcontainer:before {
+    left: 8px;
+    width: 2px;
+  }
+
+  .timelineblock {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .timelineblockright {
+    float: none;
+  }
+
+  .timelineblockleft {
+    float: none;
+    direction: ltr;
+  }
+}
+
+.WhyChooseDatingItem {
+  background-color: #223547;
+  border: solid 3px #B266C1;
+  padding: 50px 30px;
+  border-radius: 0px 70px;
+}

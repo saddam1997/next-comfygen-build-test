@@ -1,0 +1,502 @@
+.CardItem{
+  border-right: 1px solid #c2bfbf;
+  border-bottom: 1px solid #c2bfbf;
+}
+.CardItem:nth-child(3){
+  border-right: unset !important;
+}
+.CardItem:nth-child(6){
+  border-right: unset !important;
+}
+.CardItem:nth-child(7){
+  border-bottom: unset !important;
+}
+.CardItem:nth-child(8){
+  border: unset !important;
+}
+.TabItem{
+  border-radius: 8px 40px;
+}
+
+.TechnologyStack::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.TechnologyStack::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.TechnologyStack::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(top,
+      #e4f5fc 0%,
+      #bfe8f9 50%,
+      #9fd8ef 51%,
+      #B165C1 100%);
+}
+.grdotone, .grdottwo, .grdotthree {
+  background: #60A5FA;
+  width: 20px;
+  height:  20px;
+  display: inline-block;
+  border-radius: 12px;
+  position: absolute;
+  left: -6.5px;
+  z-index: 99;
+}
+.grdotone {
+  top: 30%;
+}
+.grdottwo {
+  top: 50%;
+}
+.grdotthree {
+  top: 70%;
+}
+.foodcard::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  background-color: #B165C1;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.BenefitsCard1::after{
+  content: "";
+    width: 40%;
+    height: 15px;
+    background: #B266C1;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    right: 0;
+    margin: 0 auto;
+}
+.BenefitsCard::after{
+  content: "";
+    height: 30%;
+    width: 13px;
+    background: #3B82F6;
+    position: absolute;
+    left: -13px;
+    border-radius: 10px 0px 0px 10px;;
+    top: 30px;
+    margin: 0 auto;
+}
+.BenefitsCardItem{
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 6px 30px 0 #0180ff0f;
+    height: 100%;
+    transition: .5s all;
+    position: relative;
+    border: 3px solid ;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #3CB9F7 0%,rgba(250,108,66,0) 99%);
+}
+.BenefitsCardItemImg{
+    position: absolute;
+    right: 30px;
+    background-color: #223547;
+    top: -30px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B266C1;
+    transition: .5s all;
+}
+.Choosingcard::-webkit-scrollbar {
+  width: 10px;
+}
+.Choosingcard::-webkit-scrollbar-track {
+  background-color: #223547;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.Choosingcard::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #B165C1; 
+}
+.Choosecard{
+     border-left: 4px solid #B165C1;
+     border-bottom: 4px solid #B165C1;
+    padding-left: 15px;
+    margin-top: 45px;
+}
+
+/* ........ roadmapp css ........  */
+
+
+.Roadmapcontainer{
+  width: 80%;
+  padding: 50px 0;
+  margin:  auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.Roadmapcontainer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #BA68C8;
+  z-index: 1
+}
+
+.timelineblock {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timelineblockright {
+  float: right;
+}
+
+.timelineblockleft {
+  float: left;
+  direction: rtl
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  background: #BA68C8;
+  margin-top: 10px;
+  z-index: 9
+}
+
+/* .timelinecontent {
+  width: 95%;
+  padding: 0 15px;
+  color: #fff;
+} */
+
+.timelinecontent h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: -webkit-auto;
+}
+
+/* .timelinecontent p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #fff;
+  text-align: -webkit-auto;
+} */
+.timelinecontent h4 {
+  text-align: -webkit-auto;
+}
+.timelinecontent ul {
+  text-align: -webkit-auto;
+}
+
+@media screen and (max-width: 768px) {
+  .Roadmapcontainer:before {
+     left: 8px;
+     width: 2px;
+  }
+  .timelineblock {
+     width: 100%;
+     margin-bottom: 30px;
+  }
+  .timelineblockright {
+     float: none;
+  }
+
+  .timelineblockleft {
+     float: none;
+     direction: ltr;
+  }
+}
+
+.WhyChooseDatingItem{
+  background-color: #223547;
+  border: solid 3px #B266C1;
+  padding: 50px 30px;
+  border-radius: 0px 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New Roadmapp Design ...........  */
+
+.Yearlytimeline:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.Yearlytimeline .timeline{
+  width: calc(50% + 17px);
+  padding: 0 30px 30px 0;
+  float: left; 
+  position: relative;
+}
+.Yearlytimeline .timeline:before,
+.Yearlytimeline .timeline:after{
+  content: '';
+  height: 60px;
+  width: 2px;
+  border-left: 2px solid #70d6ff;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+.Yearlytimeline .timeline:after{
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  border: 6px solid #70d6ff;
+  border-radius: 50%;
+  right: 0;
+}   
+.Yearlytimeline .timelinecontent{
+  /* color: #555; */
+  background: #70d6ff;
+  text-align: center;
+  min-height: 170px;
+  padding: 30px 35px 35px;
+  border-radius: 15px 15px 0 15px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.Yearlytimeline .timelinecontent:before{
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  top: 13px;
+  bottom: 13px;
+  z-index: -1;
+}
+.Yearlytimeline .timelinecontent:hover{ text-decoration: none; }
+.Yearlytimeline .timeline-icon{
+  /* color: #777;
+  font-size: 35px; */
+}
+/* .Yearlytimeline .title{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+} */
+/* .Yearlytimeline .description{
+  color: #777;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  margin: 0;
+} */
+.Yearlytimeline .timeline:nth-child(even){
+  padding: 0 0 30px 30px;
+  float: right;
+}
+.Yearlytimeline .timeline:nth-child(even):before{
+  transform: rotate(45deg);
+  right: auto;
+  left: 30px;
+}
+.Yearlytimeline .timeline:nth-child(even):after{
+  right: auto;
+  left: 0;
+}
+.Yearlytimeline .timeline:nth-child(even) .timelinecontent{ border-radius: 15px 15px 15px 0; }
+.Yearlytimeline .timeline:nth-child(4n+2):before,
+.Yearlytimeline .timeline:nth-child(4n+2):after{
+  border-color: #ff70a6;
+}
+.Yearlytimeline .timeline:nth-child(4n+2) .timelinecontent{
+  background: #ff70a6;
+}
+.Yearlytimeline .timeline:nth-child(4n+3):before,
+.Yearlytimeline .timeline:nth-child(4n+3):after{
+  border-color: #ff9770;
+}
+.Yearlytimeline .timeline:nth-child(4n+3) .timelinecontent{
+  background: #ff9770;
+}
+.Yearlytimeline .timeline:nth-child(4n+4):before,
+.Yearlytimeline .timeline:nth-child(4n+4):after{
+  border-color: #ffd670;
+}
+.Yearlytimeline .timeline:nth-child(4n+4) .timelinecontent{
+  background:#ffd670;
+}
+@media screen and (max-width:767px){
+  .Yearlytimeline .timeline{
+      width: 100%;
+      padding: 30px 0 0 30px;
+      margin: 0 0 20px;
+  }   
+  .Yearlytimeline .timeline:before,
+  .Yearlytimeline .timeline:nth-child(even):before{
+      transform: rotate(-45deg);
+      bottom: auto;
+      top: 0;
+      right: auto;
+      left: 30px;
+  }
+  .Yearlytimeline .timeline:after,
+  .Yearlytimeline .timeline:nth-child(even):after{
+      bottom: auto;
+      top: 0;
+      right: auto;
+      left: 0;
+  }
+  .Yearlytimeline .timelinecontent,
+  .Yearlytimeline .timeline:nth-child(even) .timelinecontent{
+      border-radius: 0 15px 15px 15px;
+  }
+}
+
+
+
+
+
+
+
+/* ............ road mapp css check .......  */
+
+
+.ProcessSec{
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProcessSec:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #CCD1D9;
+  z-index: 1
+}
+
+
+
+
+.timelineBlock {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timelineBlockRight {
+  float: right;
+}
+
+.timelineBlockLeft {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #4fc1e9;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timelineContent {
+  width: 95%;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.timelineContent h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.timelineContent span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.timelineContent p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timelineBlock {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timelineBlockRight {
+    float: none;
+  }
+
+  .timelineBlockLeft {
+    float: none;
+    direction: ltr;
+  }
+}

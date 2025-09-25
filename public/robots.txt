@@ -1,0 +1,5 @@
+User-agent: *
+Allow:
+
+Sitemap: https://www.comfygen.com/sitemap.xml
+Sitemap: https://www.comfygen.com/blog/post-sitemap.xml

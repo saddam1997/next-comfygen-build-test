@@ -1,0 +1,168 @@
+.hireimage {
+  background-image: url('https://www.comfygen.com/img/hire-mobile-application-developer.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mobileappsolution {
+  background-image: url('https://www.comfygen.com/img/mobile-app-solution.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px #BA68C8;
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border-top: solid 1px #BA68C8;
+  border-left: solid 1px #BA68C8;
+  border-right: solid 7px #BA68C8;
+  border-bottom: solid 7px #BA68C8;
+}
+
+/* .letter:before,
+.letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.letter:before {
+  background: #BE5EBC;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+
+.letter:after {
+  background: #16BDFA;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+} */
+
+.imagescrool{
+  position: sticky !important;
+  top: 140px !important;
+}
+
+
+/* ......... design css  */
+
+.roadmap {
+  padding: 30px 50px;
+}
+.roadmap .point {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  position: relative;
+}
+.roadmap .point:first-child .pointindex {
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 2px) !important;
+}
+.roadmap .point:last-child .pointindex {
+  top: 0;
+  transform: translate(50%, -2px) !important;
+}
+.roadmap .point:not(:last-child) {
+  border-bottom: 2px solid #BA68C8;
+}
+.roadmap .point:nth-child(odd) {
+  align-items: flex-start;
+}
+.roadmap .point:nth-child(odd):not(:first-child) {
+  border-left: 2px solid #BA68C8;
+}
+.roadmap .point:nth-child(odd) .pointindex {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.roadmap .point:nth-child(even) {
+  align-items: flex-end;
+}
+.roadmap .point:nth-child(even):not(:last-child) {
+  border-right: 2px solid #BA68C8;
+}
+.roadmap .point:nth-child(even) .pointindex {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.roadmap .point .pointindex {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #BA68C8;
+  color: #fff;
+  border: 2px solid #BA68C8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+.roadmap .point .pointlabel {
+  flex: 1 0 100%;
+  /* width: 100%;
+  font-size: 14px; */
+  margin-bottom: 5px;
+}
+@media (min-width: 641px) {
+  .roadmap .point .pointlabel {
+    flex: 1 0 50%;
+    width: 50%;
+ }
+}
+.roadmap .point .pointtext {
+  flex: 1 0 100%;
+  /* width: 100%;
+  font-size: 12px; */
+  color: #000;
+}
+@media (min-width: 641px) {
+  .roadmap .point .pointtext {
+    flex: 1 0 50%;
+    width: 50%;
+ }
+}
+
+.Features-social{
+  position: fixed !important;
+  top: 100px !important;
+}
+.Technolog-tab{
+  border: solid 2px #fff;
+
+}
+
+.socialbg{
+  background: url(https://www.comfygen.com/img/social-bg.webp) no-repeat;
+  width: 100%;
+  height: 100%;
+
+}
+
+@media (max-width: 660px) {
+  .roamapConn{
+    display: block !important;
+  }
+}
+
+

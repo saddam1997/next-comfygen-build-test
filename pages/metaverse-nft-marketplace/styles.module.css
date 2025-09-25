@@ -1,0 +1,174 @@
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.letter:before,
+.letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.letter:before {
+  background: #BE5EBC;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+
+.letter:after {
+  background: #16BDFA;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+
+
+
+.cardbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cardbar::-webkit-scrollbar-track {
+  background-color: #000000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.cardbar::-webkit-scrollbar-thumb {
+  /* background: #BE5EBC, #16BDFA; */
+  background-image: linear-gradient(#BE5EBC, #16BDFA);
+}
+
+
+
+
+
+.SeamlessSec{
+  background-color: #060E41;
+  /* border-top-right-radius: 88px; */
+
+}
+.SeamlessSec1{
+  width: 100%;
+  background-color: rgb(6, 14, 65);
+}
+.SeamlessSec2{
+  width: 100%;
+  height: 64px;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 88px;
+}
+
+
+
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+}
+
+.timeline:before {
+  background-color: #B165C1;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+}
+
+.timelineevent {
+  position: relative;
+}
+
+.timelineevent:hover .timelineeventicon {
+  transform: rotate(-45deg);
+  background-color: #d53a9d;
+}
+
+.timelineevent:hover .timelineeventthumbnail {
+  box-shadow: inset 40em 0 0 0 #d53a9d;
+}
+
+.timelineeventcopy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+}
+
+.timelineeventcopy h3 {
+  font-size: 1.75em;
+}
+
+.timelineeventcopy h4 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.timelineeventcopy strong {
+  font-weight: 700;
+}
+
+.timelineeventcopy p:not(.timelineeventthumbnail) {
+  padding-bottom: 1.2em;
+}
+
+.timelineeventicon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+  background-color: #d53a9d;
+  outline: 10px solid #fff;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timelineeventthumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: #000;
+  font-size: 18px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 0em #ef795a;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 10px 20px;
+}
+.prohead h3{
+  color: #fff !important;
+}
+.WhyChooseItem{
+   border-radius: 0px 40px ;
+}
+
+.BenefitsCard1::after{
+  content: "";
+    width: 40%;
+    height: 15px;
+    background: #3B82F6;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    right: 0;
+    margin: 0 auto;
+}

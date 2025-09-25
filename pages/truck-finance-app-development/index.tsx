@@ -1,0 +1,632 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import JSON_DATA from "./ELearningApp.json";
+import LazyLoad from "react-lazy-load";
+import WhyChoose from "../components/WhyChooseUs";
+import ConsultancyApproach from "../components/ConsultancyApproach";
+import ServicesSec from "../components/ServicesSec";
+import ProcessSec from "../components/ProcessSec";
+import AboutSection from "../components/AboutSection";
+import HireDeveloper from "../components/HireDeveloper";
+import ClientTestimonials from "../components/ClientTestimonials";
+import PortfolioSec from "../componentsnew/PortfolioSec";
+import CallToAction from "../components/CallToAction";
+import NewTeckStack from "../componentsnew/NewTeckStack";
+
+const HeroSectionForAllPages = dynamic(
+  () => import("../components/HeroSectionForAllPages"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const Faq = dynamic(() => import("../components/Faq"), {
+  loading: () => <p>Loading...</p>,
+});
+const Header = dynamic(() => import("../components/Header"), {
+  loading: () => <p>Loading...</p>,
+});
+const BlogSection = dynamic(() => import("../components/BlogSection"), {
+  loading: () => <p>Loading...</p>,
+});
+const ContactFromCenter = dynamic(
+  () => import("../components/ContactFromCenter"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+const Process = [
+  {
+    title: "Requirement Gathering & Consultation",
+    description:
+      "We begin by understanding your business goals, target users, and feature needs. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/finance-app-development'>finance app development company</a> listens closely to deliver tailored truck loan app development solutions that match your vision.",
+  },
+  {
+    title: "Market & Competitor Analysis",
+    description:
+      "Our experts study your industry, competitors, and user behavior to ensure your app stands out. This helps us design user-focused features for on-demand truck finance app development.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "We create clean, intuitive, and modern app designs that are easy to use. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designs</a> are built for truck dealers, loan agents, and borrowers—focused on smooth navigation and quick access.",
+  },
+  {
+    title: "App Development",
+    description:
+      "Our skilled on-demand truck finance app developers use the latest technologies to build fast, secure, and scalable apps. As a leading truck loan app development company, we ensure your app meets top industry standards.",
+  },
+  {
+    title: "Third-Party API Integration",
+    description:
+      "We integrate KYC, credit score, payment gateways, and bank APIs to provide a complete truck finance application development solution. This allows users to apply for loans, upload documents, and make payments in real-time.",
+  },
+  {
+    title: "Testing & Quality Assurance",
+    description:
+      "Our QA team performs rigorous testing on all devices to ensure your app works perfectly. We fix bugs, improve speed, and test user flow before launching.",
+  },
+  {
+    title: "Launch & Support",
+    description:
+      "Once approved, we publish your app on Play Store, App Store, or web platforms. We also provide post-launch support, updates, and maintenance to keep your app running smoothly.",
+  },
+];
+
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p1.webp",
+      head: "FleetLoan Pro – Truck Loan Management App",
+      name: "FleetLoan Pro is a custom-built truck loan app designed for logistics companies to manage loans across their fleet of vehicles. The app includes EMI tracking, document uploads, loan status updates, and real-time notifications.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/contact-us",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p2.webp",
+      head: "TruckLeaseGo – Commercial Vehicle Finance App",
+      name: "TruckLeaseGo is a complete commercial truck finance app built for NBFCs to handle leasing and vehicle loans. It offers a seamless interface for customers to apply for loans, upload documents, and calculate EMIs.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/contact-us",
+    },
+  ],
+};
+
+export default function ClinicalApp(props: any) {
+  let { initialData } = props;
+  let { Frequently } = JSON_DATA;
+
+  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
+
+  const openModal = () => {
+    setTalkToExpertModal(true);
+  };
+  const closeModal = () => {
+    setTalkToExpertModal(false);
+  };
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      logo: "https://www.comfygen.com/svg/Logo1.svg",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        contactOption: "WhatsApp",
+        telephone: "+91 9587867258",
+        email: "sales@comfygen.com",
+        areaServed: ["IN", "US", "CA", "GB"],
+
+        availableLanguage: "en, in",
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Comfygen Technologies",
+      image: "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      telephone: "+91-958-786-7258",
+      priceRange: "$",
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress:
+            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+          addressLocality: "Jaipur",
+          postalCode: "302006",
+          addressCountry: "IN",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+          addressLocality: "Toronto",
+          postalCode: "M1G3S7",
+          addressCountry: "Canada",
+        },
+      ],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/",
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Custom Truck Finance App Development Services",
+      provider: {
+        "@type": "Organization",
+        name: "Comfygen Technologies",
+        url: "https://www.comfygen.com/",
+      },
+      description:
+        "Looking to build a custom truck finance app? Hire expert developers from Comfygen. We develop smart, scalable, and user-friendly truck loan apps for NBFCs and fleet owners.",
+      url: "https://www.comfygen.com/truck-finance-app-development",
+      mainEntityOfPage:
+        "https://www.comfygen.com/truck-finance-app-development",
+      areaServed: "Global",
+      serviceType: [
+        "Custom Truck Loan App Development",
+        "EMI Calculator App Development",
+        "Fleet Finance Management Solutions",
+        "Truck Leasing App Development",
+        "Loan Management System Integration",
+      ],
+
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
+    },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      brand: "Comfygen Technologies",
+      Name: "Fleet & Truck Finance App Development Company",
+      image: "https://www.comfygen.com/comfygen-images/truck-finance-app-development/about.webp",
+      description:
+        "We build smart fleet and truck finance apps tailored for logistics, dealers, and NBFCs. Manage vehicle loans, documents, and EMI payments with ease using our fintech app solutions.",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "100",
+      },
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.comfygen.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Truck Finance App Development",
+          item: "https://www.comfygen.com/truck-finance-app-development",
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is a truck finance app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does it cost to develop a truck finance app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to build a truck loan app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you provide custom truck finance app solutions?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you integrate third-party APIs like payment gateways or loan calculators?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance.",
+          },
+        },
+      ],
+    },
+  ];
+
+  return (
+    <>
+      <Head>
+        <title>
+          Truck Finance App Development Company | Custom Truck Loan App
+          Solutions
+        </title>
+        <meta
+          name="description"
+          content="Comfygen is a trusted truck finance app development company offering custom truck loan app solutions for fleet owners, NBFCs, and transport businesses. We build the best truck finance app with EMI tracking and real-time loan management."
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/truck-finance-app-development"
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Comfygen Truck Finance App"
+        />
+        <meta name="author" content="Comfygen Private Limited" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <meta name="coverage" content="worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+        <meta
+          name="keywords"
+          content="Custom Truck Loan App Development, EMI Calculator App Development, Fleet Finance Management Solutions, Truck Leasing App Development, Loan Management System Integration"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta
+          property="og:title"
+          content="Truck Finance App Development Company | Custom Truck Loan App Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Comfygen offers on-demand truck finance app development solutions. Build feature-rich apps for vehicle loan management, KYC, EMI tracking, and secure payments."
+        />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/truck-finance-app-development"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/truck-finance-app-development/og1.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/truck-finance-app-development/og1.webp"
+        />
+        <meta
+          property="secure_url"
+          content="https://www.comfygen.com/comfygen-images/truck-finance-app-development"
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Truck Finance App Development Services"
+        />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Trusted Truck Loan App Development Company | Comfygen"
+        />
+        <meta
+          name="twitter:description"
+          content="Get affordable and secure truck loan app development services from Comfygen. We build scalable apps with real-time EMI tracking, loan applications, and custom fintech features for transport businesses"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/truck-finance-app-development/og1.webp"
+        />
+        <meta name="twitter:site" content="@comfygentech" />
+
+        {/* Structured Data (optional) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
+
+      <LazyLoad height={80} offset={100}>
+        <Header />
+      </LazyLoad>
+      <div className="overflow-hidden ">
+        <div className="">
+          <HeroSectionForAllPages
+            heading="Truck Finance App Development Company"
+            ptag="Build a powerful and easy-to-use truck finance app with Comfygen. As a trusted truck finance app development company, we help transport businesses, fleet owners, and finance providers create secure and scalable apps for loan processing, EMI tracking, and vehicle financing. Our custom truck loan mobile app development solutions are designed to simplify operations, improve transparency, and boost customer satisfaction."
+            li="Simple & Intuitive User Interface"
+            li1="Seamless Truck Loan & EMI Management"
+            li2="Secure KYC, Bank & Document Integration"
+            li3="Scalable Architecture for Growing Businesses"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/truck-finance-app-development/hero.webp"
+          />
+        </div>
+        <AboutSection
+          title="About Company"
+          heading="Why Do You Need a Truck Finance App for Your Business?"
+          description1="A truck finance app helps your business manage loans, EMI payments, and documents in one place. It makes the loan process faster, easier, and more transparent for both you and your customers. Whether you’re a truck dealer, transport company, or finance provider, this app saves time and improves service."
+          description2="With smart features and real-time updates, you can avoid delays, reduce paperwork, and offer a better loan experience to your users."
+          points={[
+            "Easily approve and manage truck loans",
+            "Track EMI payments on time",
+            "Upload and verify KYC documents",
+            "Get alerts for payments and due dates",
+            "Keep all finance records safe and organized",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/truck-finance-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Truck Finance App Development Services We Offer
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen offers truck finance app development services tailored
+                to transport companies, vehicle dealers, and fintech startups.
+                Our commercial vehicle finance apps simplify the entire
+                financing process, whether you're managing EMIs, offering truck
+                loans, or handling fleet financing.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <ContactFromCenter />
+
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Our Portfolio – Truck Finance App Projects"
+          description="Explore how Comfygen delivers innovative, user-friendly, and scalable truck finance app development solutions for businesses across the transportation and finance sectors."
+        />
+
+        <CallToAction
+          heading="Want to launch a truck finance app?"
+          text="We build custom, secure, and user-friendly truck finance apps tailored to your business needs."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/comfygen-images/truck-finance-app-development/call2.webp"
+          imageAlt="Get in touch now."
+        />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Process for Truck Finance App Development
+              </h2>
+              <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
+                As the best truck finance app development company, we follow a
+                clear and proven process to deliver high-quality, reliable, and
+                affordable truck finance app development solutions. Whether
+                you're a startup or an established lender, our step-by-step
+                method ensures smooth project execution and on-time delivery.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+        <NewTeckStack
+          title="Technology Stack We Use for Truck Finance App Development"
+          description="We use the latest and most secure technologies to build reliable, scalable, and high-performance truck finance applications. Across all platforms, we support real-time syncing, fast performance, and secure loan transactions."
+        />
+        {/* <section className="lg:py-16 py-10 bg-[#fff]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                  Why Your Business Needs a Personal Finance App
+                </h2>
+                <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                  Personal finance apps are becoming a powerful tool for
+                  businesses. They help attract more users, build trust, and
+                  offer better money management solutions that improve customer
+                  experience and long-term loyalty.
+                </p>
+              </div>
+              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
+                {JSON_DATA.FutureDriven2.map((elem) => {
+                  const { title, desc } = elem;
+                  return (
+                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                      <h3
+                        className="text-2xl text-[#212121] font-semibold"
+                        dangerouslySetInnerHTML={{ __html: title }}
+                      />
+                      <p
+                        className=" text-base font-normal mt-2"
+                        dangerouslySetInnerHTML={{ __html: desc }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+        <HireDeveloper
+          heading="Hire Our Expert Truck Finance App Developers"
+          text="Looking to build a secure, smart, and scalable truck loan finance app? Hire our skilled Truck finance <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> to turn your vision into a feature-rich mobile solution. Our finance app development team understands both financial technology and the transportation industry, making us the perfect fit for your next project."
+          text1="Why Hire Developers from Comfygen?"
+          text2=""
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Dedicated Fintech Expertise: Our fintech app developers specialize in truck loan app development and understand complex lending workflows.",
+            "Custom & Scalable Solutions: We tailor every app to match your goals, user needs, and compliance standards.",
+            "Cost-Effective Hiring Models: Flexible hiring options—hourly, part-time, or full-time—fit your project and budget.",
+            "Agile Development Approach: Rapid development with clear timelines and milestone tracking.",
+            "Full-Cycle Support: From design to deployment and post-launch maintenance—we handle it all.",
+          ]}
+        />
+        <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+        <Faq faqData={Frequently} title="" />
+        <BlogSection initialData={initialData} />
+      </div>
+    </>
+  );
+}
+// This gets called on every request
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}

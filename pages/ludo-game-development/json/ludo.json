@@ -1,0 +1,590 @@
+{
+  "myList4": [
+    "Skilled and Knowledgeable Development Team",
+    "Team of Game App Developers with 10+ Years of Experience",
+    "Promising User-Friendly and Interactive Gaming App Development Services",
+    "Latest tech-trends implemented in sophisticated mobile applications development services to match current market standards",
+    "High-Engagement gathers from Ludo Game App Development Services and Solutions "
+  ],
+
+ "servicesData": [
+    {
+      "title": "Custom Ludo Game App Development",
+      "description": "Bring your dream Ludo game to life with our fully customized, feature-rich apps. We tailor every element—game mechanics, visuals, and functionality—to meet your specific goals and captivate your target audience.",
+      "features": [
+        "Tailored game mechanics and rules",
+        "Branded and engaging user experience",
+        "Monetization strategies for revenue generation"
+      ]
+    },
+    {
+      "title": "Real-Money Ludo Game Development",
+      "description": "Tap into the booming real-money gaming market with our secure and scalable solutions. We integrate robust payment gateways and tournament systems to ensure a seamless and safe gaming experience for your users.",
+      "features": [
+        "Real-time tournaments and leaderboards",
+        "Secure payment integrations",
+        "Compliance with global gaming standards"
+      ]
+    },
+    {
+      "title": "Ludo Game Design & UI/UX",
+      "description": "Enhance player engagement with intuitive UI/UX designs that offer smooth navigation and a visually appealing gaming experience. Our layouts are meticulously crafted for simplicity and aesthetic appeal.",
+      "features": [
+        "Engaging and Interactive Interfaces",
+        "Easy Navigation for All Age Groups"
+      ]
+    },
+    {
+      "title": "Cross-Platform Ludo Game App Development Services",
+      "description": "Maximize your audience reach with our cross-platform development services. We build games that run seamlessly across mobile and web platforms, expanding your player base and market presence.",
+      "features": [
+        "Consistent experience across devices",
+        "Enhanced performance and scalability",
+        "Broader market reach"
+      ]
+    },
+    {
+      "title": "Hybrid Ludo Game App Development Services",
+      "description": "Achieve the best of both worlds with our hybrid game development approach. We create Ludo games that deliver native-like experiences on both Android and iOS, reducing costs and speeding up delivery.",
+      "features": [
+        "Single codebase for multiple platforms",
+        "Faster time to market",
+        "Cost-effective development"
+      ]
+    },
+    {
+      "title": "2D and 3D Ludo Game Design",
+      "description": "Transform your Ludo game idea into a reality with visually stunning 2D or immersive 3D designs. Our graphics are tailored to create a captivating game environment for players.",
+      "features": [
+        "Classic 2D Designs for Nostalgic Appeal",
+        "Modern 3D Graphics for Immersive Experiences"
+      ]
+    },
+    {
+      "title": "Multi-Player Ludo Game",
+      "description": "Boost player interaction with real-time multiplayer functionality. We create platforms that connect players across the globe, fostering a competitive and fun-filled gaming community.",
+      "features": [
+        "Real-Time Multiplayer Features",
+        "Dynamic and Interactive Gameplay"
+      ]
+    },
+    {
+      "title": "Ludo Website Development Services",
+      "description": "Our expertise extends to building robust Ludo gaming websites that are secure, scalable, and visually appealing. These platforms ensure a seamless experience across devices.",
+      "features": [
+        "Secure and Scalable Websites",
+        "Cross-Device Compatibility"
+      ]
+    },
+    {
+      "title": "Secure Payment Gateways",
+      "description": "Simplify in-app transactions with secure and robust payment gateways. We use advanced encryption protocols to ensure that users can make payments seamlessly and safely.",
+      "features": [
+        "Multiple Payment Options",
+        "Advanced Encryption for Security"
+      ]
+    },
+    {
+      "title": "White Label Ludo Game Development Solutions",
+      "description": "Launch your Ludo game quickly and effectively with our customizable white-label Ludo game app development solutions. These ready-to-deploy platforms are tailored to reflect your branding, helping you stand out in the competitive market.",
+      "features": [
+        "Customizable White-Label Platforms",
+        "Quick Deployment for Fast Market Entry"
+      ]
+    },
+    {
+      "title": "AI & Bots Integration Into Ludo Game",
+      "description": "Keep the excitement alive even when live players aren’t available. We integrate smart AI and bot opponents that provide challenging and engaging gameplay for solo players.",
+      "features": [
+        "Intelligent AI for realistic play",
+        "Single-player & practice modes",
+        "Adaptive gameplay dynamics"
+      ]
+    },
+    {
+      "title": "Ludo Game Testing Development Services",
+      "description": "Quality is non-negotiable. Our meticulous testing ensures your Ludo game runs flawlessly under all conditions, providing a smooth and glitch-free gaming experience.",
+      "features": [
+        "Comprehensive functional testing",
+        "Performance and security validation",
+        "User experience optimization"
+      ]
+    },
+    {
+      "title": "Game Maintenance & Upgrades",
+      "description": "Our commitment doesn’t end with launch. We provide comprehensive post-launch support, ensuring your game remains up-to-date, bug-free, and competitive in the market.",
+      "features": [
+        "Continuous updates and upgrades",
+        "Ongoing bug fixing and enhancements",
+        "Dedicated support team for smooth operations"
+      ]
+    }
+  ],
+
+
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "Ludo King Clone App",
+      "decs": "Our Ludo King clone app recreates the classic multiplayer experience with real-time gameplay, engaging animations, and social features. Tailored to your brand, our Ludo King clone ensures a smooth and addictive gaming experience for players of all ages."
+    },
+    {
+      "num": "02",
+      "title": "Ludo Star Clone App",
+      "decs": "Inspired by the popular Ludo Star, our clone app includes engaging gameplay, rich features, and in-game tournaments. From private rooms to leaderboards, our Ludo Star clone app ensures players are hooked from the start."
+    },
+    {
+      "num": "03",
+      "title": "Zupee Clone App",
+      "decs": "Our Zupee clone app empowers real-money gaming with secure payment gateways and exciting real-time tournaments. With advanced features like fraud protection and seamless payment integrations, this clone is perfect for tapping into the lucrative real-money gaming market."
+    }
+  ],
+
+ "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ludo/classic-ludo-app.webp",
+      "title": "Classic Ludo Board App",
+      "description": "Our classic Ludo game app delivers a traditional board game experience with smooth animations, interactive gameplay, and multiplayer support for endless fun and competitive matches.",
+      "link": "/portfolio/classic-ludo-board-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ludo/real-money-ludo-tournament.webp",
+      "title": "Real-Money Ludo Tournament App",
+      "description": "This dynamic Ludo app features secure real-money gaming, live tournaments, and leaderboard rankings, offering players a thrilling and rewarding experience.",
+      "link": "/portfolio/real-money-ludo-tournament-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ludo/3d-ludo-adventure-game.webp",
+      "title": "3D Ludo Adventure Game",
+      "description": "We crafted an immersive 3D Ludo game with vibrant visuals, interactive environments, and enhanced AI opponents, ensuring a captivating adventure for every player.",
+      "link": "/portfolio/3d-ludo-adventure-game"
+    }
+  ] ,
+
+  
+
+  "Qa": [
+    {
+      "num": "1",
+      "title": "Ludo Game Modes",
+      "desc": "Our skilled game app developers can integrate multiple modes into your ludo game application development services with some attractive features implemented."
+    }
+  ],
+  "Whycomfygen": [
+    {
+      "num": "1",
+      "title": "Computer Mode",
+      "desc": "This is a mode, where the computer/bot plays like an opponent against the real-time player or the user. The user can choose to play in 2-player or 4-player mode; where the bots will take places as opponents against the user."
+    },
+    {
+      "num": "2",
+      "title": "Local Mode",
+      "desc": "In the local mode, the player can team up with his friend, or he can choose to play individually through one single device in the 2-player or 4-player game app development services option."
+    },
+    {
+      "num": "3",
+      "title": "Private Mode",
+      "desc": "Private Mode in Ludo Game App Development Services allows the players to play with their friends and family members from different devices. You can either share the same room code or connect with social media app development platform friends to play along. Any user can create their room for either 2 players or 4 players, and afterwards they can share the room code to gather other players in real-time."
+    },
+    {
+      "num": "4",
+      "title": "Online Multiplayer Mode",
+      "desc": "Online multiplayer mode enables the player to play along with 2-4 players across the globe. In this multiplayer gaming mode; the player can choose any player throughout the world."
+    }
+  ],
+  "pageData": {
+    "title": "Why Choose Comfygen for Ludo Game App Development Company?",
+    "description": "Undoubtedly there are many Ludo game app development companies in USA that exist serving leverages to clients for their businesses. We have some solid reasons to proof that, Confygen can be your right choice to hire- Ludo game app development Company ",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+  {
+    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+    "title": "Proven Expertise in Ludo Game Development",
+    "description": "We bring years of expertise in Ludo game app development, delivering feature-rich, engaging, and scalable gaming solutions that keep players hooked. Our deep industry knowledge ensures exceptional game design and performance."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+    "title": "Global Client Base with Successful Deployments",
+    "description": "We have successfully delivered Ludo game apps to clients worldwide, helping them launch competitive platforms that cater to local and global audiences, driving higher engagement and revenue."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+    "title": "360° Game Development Solutions",
+    "description": "From conceptualization to deployment and ongoing maintenance, we offer end-to-end Ludo game development services, ensuring your game remains innovative, secure, and user-focused throughout its lifecycle."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+    "title": "99% Customer Satisfaction",
+    "description": "Our belief says to satisfy the clients, no matter how dedicatedly we have to invest our hours in the project. To build a long term relation with clients, we create excellent ludo apps development with high customer satisfaction."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+    "title": "Safety and Assured Security",
+    "description": "We are having a dedicated team of mobile app developers, who ensures for safety and security assurance of applications to sustain the authority of the ludo game app development services."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+    "title": "Experienced Developers",
+    "description": "Our mobile game app development team is very experienced. Every game developer is more than 10+ years experienced, means we deliver our clients good quality and user friendly applications."
+  }
+]
+  },
+
+  "myList5": [
+    "iOS Ludo Game App Development Services",
+    "Android Ludo Game App Development Services ",
+    "Desktop Ludo Game Development Services",
+    "AR/VR Integration App Development Services",
+    "Cross-Platform Ludo Game App Development Services",
+    "Ludo Game Testing Development Services",
+    "Ludo Game UX/UI Design Development Services",
+    "Hybrid Ludo Game App Development Services",
+    "2D and 3D Ludo Applications Development Services"
+  ],
+  "FeaturesLudo": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/icons/Login.webp",
+      "title": "Register/Login"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/images/icons/private-rooms.webp",
+      "title": "Private Rooms"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/icons/online-offline-mode.webp",
+      "title": "Online/Offline Mode"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/images/icons/practice-match.webp",
+      "title": "Practice match"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/images/icons/invite.png",
+      "title": "Invite"
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/images/icons/in-app-wallets.webp",
+      "title": "In-app Wallets"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/images/icons/view-history.webp",
+      "title": "View History"
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/images/icons/loyalty-points.webp",
+      "title": "Loyalty Points"
+    },
+    
+
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/images/icons/graphics-and-sound.webp",
+      "title": "Graphics and sound"
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/images/icons/refer-and-earn.webp",
+      "title": "Refer and Earn"
+    },
+    {
+      "num": "12",
+      "img": "https://www.comfygen.com/images/icons/language-settings.webp",
+      "title": "Language Settings"
+    },
+    {
+      "num": "13",
+      "img": "https://www.comfygen.com/images/icons/admin-dashboard.webp",
+      "title": "Admin Dashboard"
+    },
+    {
+      "num": "14",
+      "img": "https://www.comfygen.com/images/icons/manage-users.webp",
+      "title": "Manage Users"
+    },
+    {
+      "num": "15",
+      "img": "https://www.comfygen.com/images/icons/referral-programs.webp",
+      "title": "Referral Programs"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/images/icons/notification-management.webp",
+      "title": "Notification Management"
+    },
+    {
+      "num": "17",
+      "img": "https://www.comfygen.com/images/icons/game-records.webp",
+      "title": "Game Records"
+    },
+    {
+      "num": "18",
+      "img": "https://www.comfygen.com/images/icons/manage-payments.webp",
+      "title": "Manage Payments"
+    }
+  ],
+
+  "WhyChoose": [
+    {
+      "num": "01",
+      "title": "99% Customer Satisfaction",
+      "decs": "Our belief says to satisfy the clients, no matter how dedicatedly we have to invest our hours in the project. To build a long term relation with clients, we create excellent ludo apps development with high customer satisfaction."
+    },
+    {
+      "num": "02",
+      "title": "Safety and Assured Security",
+      "decs": "We are having a dedicated team of mobile app developers, who ensures for safety and security assurance of applications to sustain the authority of the ludo game app development services."
+    },
+    {
+      "num": "03",
+      "title": "Experienced Developers",
+      "decs": "Our mobile game app development team is very experienced. Every Game  Developer is  more than 10+ years experienced, means we deliver our clients good quality and user friendly applications."
+    }
+  ],
+ "cardData": [
+    {
+      "title": "AR & VR Technology",
+      "desc": "Augmented Reality (AR) and Virtual Reality (VR), both will be integrated in the ludo application will change the entire user-experience of players. They will be able to enjoy the realistic views, and seamless experience. The 3D displays, realistic characters, and other factor; all seems to be much fun to play the game."
+    },
+    {
+      "title": "Blockchain Development Technology",
+      "desc": "One can ask from the mobile game app developers to integrate blockchain app development technologies for the secured and transparent transactions. It enables the users to show more interest in the gameplay with secured transaction flow."
+
+    },
+    {
+      "title": "Machine Learning",
+      "desc": "Machine Learning integration enables to understand player’s mindset and strategies to revert them back with strategic moves."
+    }
+  ],
+  
+  "Frequently": [
+    {
+      "num": "1",
+      "title": " What services does your Ludo game app development company offer?",
+      "desc": "Comfygen is a leading Ludo game app development company in India, we offer a comprehensive range of ludo game development services tailored to meet your gaming needs. Our expertise includes crafting custom Ludo game application development services for various platforms, including iOS Ludo Game App Development Services, Android Ludo Game App Development Services, and web Ludo Game Development Services. We cover every aspect of game development services, from initial concept to final deployment. Our services encompass game design, programming, quality assurance, and post-launch support."
+    },
+    {
+      "num": "2",
+      "title": "Can you customize the Ludo game rules according to our preferences?",
+      "desc": "Absolutely yes, we understand the importance of unique gameplay experiences. Our skilled game developers can customize Ludo game app development rules, ensuring they align perfectly with your vision. Whether you have specific rule variations in mind or want to introduce innovative features, we have the expertise to implement your ideas, creating a one-of-a-kind gaming experience for your users."
+    },
+    {
+      "num": "3",
+      "title": "What technologies do you use for Ludo game app development?",
+      "desc": "Our development team utilizes state-of-the-art technologies to bring your Ludo game app development services to life. We primarily work with Unity, Unreal Engine, and HTML5, harnessing their power to create immersive and visually appealing games. These platforms enable us to deliver high-quality graphics, smooth animations, and seamless gameplay, ensuring an enjoyable experience for players."
+    },
+    {
+      "num": "4",
+      "title": "Is it possible to integrate multiplayer features into the Ludo game app?",
+      "desc": "Yes, we excel in integrating robust multiplayer features into our Ludo game apps. Players can enjoy real-time gameplay with friends or other users from around the world. We implement advanced networking solutions, enabling seamless connectivity and ensuring that multiplayer matches are smooth, engaging, and free from lag."
+    },
+    {
+      "num": "5",
+      "title": "Do you provide cross-platform compatibility for Ludo game apps?",
+      "desc": "Certainly, cross-platform compatibility is a cornerstone of our development approach. Your Ludo game app will be designed to run seamlessly across a variety of devices, including smartphones, tablets, and PCs. By ensuring compatibility across platforms, we expand your game's reach, allowing a broader audience to enjoy your captivating Ludo experience."
+    },
+    {
+      "num": "6",
+      "title": "How do you handle graphics and animation in Ludo game development?",
+      "desc": "Our dedicated team of designers and animators is passionate about creating visually stunning games. We focus on intricate details, fluid animations, and captivating graphics to enhance the overall gaming experience. By combining creativity with technical expertise, we bring your game world to life, making it visually appealing and engaging for players."
+    },
+    {
+      "num": "7",
+      "title": "Can you assist with monetization strategies for the Ludo game app?",
+      "desc": " Absolutely, we understand the importance of monetization for your gaming business. Our experts can guide you through various monetization models, helping you choose the one that best fits your goals. Whether it's in-app purchases, advertisements, or premium versions, we provide valuable insights and recommendations to maximize revenue while maintaining user satisfaction. "
+    },
+    {
+      "num": "8",
+      "title": "What is the typical timeframe for developing a custom Ludo game app?",
+      "desc": "The development timeframe for a custom Ludo game app can vary based on its complexity and the features you require. Typically, our development process takes a few months from the initial concept phase to the final launch. During our initial consultation, we provide you with a detailed project timeline, ensuring transparency and keeping you informed about the progress of your game."
+    },
+    {
+      "num": "9",
+      "title": "Do you provide ongoing support and maintenance services for Ludo game apps?",
+      "desc": "Yes, our commitment to your project extends far beyond its launch. We offer comprehensive support and maintenance services to ensure your Ludo game app continues to function flawlessly. Our dedicated support team is available to address any issues, provide timely updates, and assist with enhancements, allowing you to focus on your players while we handle the technical aspects."
+    },
+    {
+      "num": "10",
+      "title": "Is it possible to integrate social media sharing features in the Ludo game app?",
+      "desc": "Absolutely, social media integration is a powerful way to enhance user engagement. We can seamlessly integrate social media sharing features into your Ludo game app, enabling players to share their achievements, scores, and game progress on platforms like Facebook, Twitter, and Instagram. This social connectivity not only boosts engagement but also promotes your game organically, reaching a wider audience. "
+    },
+    {
+      "num": "11",
+      "title": "Can you develop augmented reality (AR) or virtual reality (VR) Ludo game apps?",
+      "desc": "Yes, we are at the forefront of technology and can develop cutting-edge augmented reality (AR) and virtual reality (VR) Ludo game apps. These immersive experiences redefine traditional gameplay, offering players a unique and interactive environment. Our developers leverage advanced AR and VR technologies to create captivating games that push the boundaries of conventional gaming, providing players with an unparalleled experience."
+    },
+    {
+      "num": "12",
+      "title": " What is the process for getting started with your Ludo game app development services?",
+      "desc": "Getting started with our Ludo game app development services is a straightforward and collaborative process. Simply reach out to us through our website or contact details. We'll schedule an initial consultation to discuss your ideas, requirements, and goals in detail. During this meeting, our team will gather essential information to create a tailored proposal and development roadmap. We believe in transparency and open communication, ensuring you are actively involved throughout the development process. Once you approve the proposal, our dedicated team will begin crafting your Ludo game app development, bringing your vision to life.",
+      "decs": "At our Ludo game app development company , we are passionate about creating exceptional gaming experiences. Whether you're a startup looking to enter the game development industry or an established business aiming to expand your game portfolio, we have the expertise and creativity to turn your ideas into reality." ,
+      "dec1" :  "Contact us today to embark on the journey of developing a captivating and successful Ludo game app that will delight players and elevate your gaming brand to "
+
+    }
+  ],
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire Best Ludo Game App Developers in Jaipur for Proficient Crafting",
+      "desc": "Comfygen is the best lugo gaming app development company based in Jaipur, which is also considered to be the most chosen Mobile app development service provider. We are the #No1 mobile game app development company in Jaipur caters to all the clientele requirements efficiently and effectively. Our team consists of highly skilled and knowledgeable game app developers; who know how to implement the advancements and latest technology into the application. We are capable of building Ludo Gaming Application Development Services for multiple platforms catering the needs of users across the globe anytime and anywhere.",
+      "decs": "Comfygen believes to fulfil the interest of clients via building robust ludo gaming app development services following agile methodologies. We develop engaging and cost-effective Ludo gaming app development solutions matching the current market tech standards.",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+  "myList": [
+    "Skilled and Knowledgeable Development Team",
+    "Team of Game App Developers with 10+ Years of Experience",
+    "Promising User-Friendly and Interactive Gaming App Development Services ",
+    "Latest tech-trends implemented in sophisticated mobile applications development services to match current market standards",
+    "High-Engagement gathers from Ludo Game App Development Services and Solutions"
+  ],
+  "TechnoStack": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/unity-stack-technology.webp",
+      "title": "Unity"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/images/java-script.webp",
+      "title": "Java"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/three-js-stack-technology.webp",
+      "title": "Three.js"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/images/unreal-engine-stack-technology.webp",
+      "title": "Unreal Engine"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/images/dot-net-stack-technology.webp",
+      "title": ".Net"
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/images/c++-stack-technology.webp",
+      "title": "C++"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/images/c-sharp-stack-technology.webp",
+      "title": "C#"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/images/python-stack-technology.webp",
+      "title": "Python"
+    }
+  ],
+
+ 
+
+  "GameCardData": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
+      "url": "/rummy-game-development",
+      "title": "Rummy Game Development"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/baccarat-game-development-via-comfygen.webp",
+      "url": "/baccarat-game-development",
+      "title": "Baccarat Game Development"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/black-jack-dovelabment-via-comfygen.webp",
+      "url": "/blackjack-game-development",
+      "title": "BlackJack Game Development"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/poker-game-development-via-comfygen.webp",
+      "url": "/poker-game-development",
+      "title": "Poker Game Development"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/hearts-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Hearts Game Development"
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/board-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "board game development"
+    },
+    {
+      "num": "9",
+      "img": "https://www.comfygen.com/img/card-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Card Game Development"
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/cheses-game-dovelabment-via-comfygen.webp",
+      "url": "/chess-game-development",
+      "title": "Chess Game Development"
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/img/bingo-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "Bingo Game Development"
+    },
+    {
+      "num": "12",
+      "img": "https://www.comfygen.com/img/888-poker-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "888 Poker Game Development"
+    },
+    {
+      "num": "13",
+      "img": "https://www.comfygen.com/img/omaha-game-dovelabment-via-comfygen.webp",
+      "url": "/omaha-poker-game-development",
+      "title": "Omaha poker game development"
+    },
+    {
+      "num": "14",
+      "img": "https://www.comfygen.com/img/snake-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Snake and Ladder development"
+    },
+    {
+      "num": "15",
+      "img": "https://www.comfygen.com/img/texes-game-dovelabment-via-comfyegn.webp",
+      "url": "/",
+      "title": "Texas Holdem Game Development"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/img/call-breake-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Call Break Game Development"
+    },
+    {
+      "num": "17",
+      "img": "https://www.comfygen.com/img/ludo-game-development-via-comfygen.webp",
+      "url": "/ludo-game-development",
+      "title": "Ludo game development"
+    }
+  ]
+}

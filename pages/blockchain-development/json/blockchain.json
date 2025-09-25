@@ -1,0 +1,421 @@
+{
+  "myList": [
+    "Developers expert in all blockchain framework, tools, and programming languages. ",
+    " We follow the new blockchain trends to stay competitive in the marketplace. ",
+    "Comfygen has Full-Stack developers; who have the caliber to build robust decentralized applications.",
+    "Clients have the option to hire blockchain developers in India from us, as they can hire a developer dedicated on project, hourly basis, or full time. "
+  ],
+  "NewSections": {
+    "title": "What is Blockchain Development?",
+    "decs": "Blockchain development is the process of building decentralized digital solutions such as smart contracts, dApps, and blockchain networks that operate on secure, distributed ledgers. It empowers businesses to create transparent, tamper-proof systems without the need for intermediaries. From finance and supply chain to healthcare and gaming, blockchain development enables faster transactions, improved security, and greater trust across digital ecosystems."
+  },
+    "servicesData": [
+    {
+      "title": "Custom Blockchain Development",
+      "subtitle": "",
+      "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/custom-blockchain-development-company' >custom blockchain development</a> services deliver bespoke solutions tailored to your business objectives. From architecture design to deployment, we create secure, scalable ledgers that fit your unique use case, whether you’re building a new ecosystem or enhancing existing platforms.",
+      "features": [
+        "End-to-end blockchain design and implementation",
+        "Custom consensus mechanisms and governance models",
+        "Integration with legacy systems and cloud platforms",
+        "Full-stack support from smart contracts to front-end apps"
+      ]
+    },
+    {
+      "title": "Private Blockchain Development",
+      "subtitle": "",
+      "description": "Our private blockchain development empowers organizations with permissioned networks, offering full control over access and data privacy. Ideal for enterprises that need high performance and confidentiality without compromising transparency among trusted participants.",
+      "features": [
+        "Networks on Hyperledger Fabric, Quorum, and Corda",
+        "Role-based access and encryption for sensitive data",
+        "Optimized for regulatory compliance and enterprise workflows",
+        "Seamless integration with internal systems"
+      ]
+    },
+    {
+      "title": "Public Blockchain Development",
+      "subtitle": "",
+      "description": "With public blockchain development, you can leverage open, decentralized networks to build transparent and tamper-proof applications. We create solutions on leading public blockchains to help you drive trust and engagement.",
+      "features": [
+        "Development on Ethereum, Solana, Binance Smart Chain, and more",
+        "Token creation (ERC-20, BEP-20) and NFTs",
+        "Secure deployment of smart contracts and dApps",
+        "Scalability for high-volume transactions"
+      ]
+    },
+    {
+      "title": "Enterprise Blockchain Development",
+      "subtitle": "",
+      "description": "Our enterprise blockchain development services transform operations with secure, scalable blockchain solutions designed for enterprise-grade performance. Reimagine workflows, improve data integrity, and unlock new value streams.",
+      "features": [
+        "Custom solutions for supply chain, identity, and asset tokenization",
+        "High-throughput transaction processing and audit trails",
+        "Full compliance with enterprise regulations and standards",
+        "End-to-end implementation and support"
+      ]
+    },
+    {
+      "title": "Consortium Blockchain Development",
+      "subtitle": "",
+      "description": "With Consortium Blockchain Development, we help you create shared ledgers governed by multiple organizations. These solutions deliver secure, efficient, and transparent collaboration between trusted partners.",
+      "features": [
+        "Design and implementation of consortium frameworks",
+        "Permissioned platforms with shared validation rights",
+        "Integration with partner systems and industry protocols",
+        "Custom dashboards and APIs for all participants"
+      ]
+    },
+    {
+      "title": "Hybrid Blockchain Development",
+      "subtitle": "",
+      "description": "Our Hybrid Blockchain Development combines the transparency of public networks with the privacy of permissioned ledgers. We design systems that selectively share data while protecting sensitive business information.",
+      "features": [
+        "Interoperability between public and private chains",
+        "Custom data-sharing policies and smart contracts",
+        "Secure bridges and scalable infrastructure",
+        "Optimized performance for enterprise workloads"
+      ]
+    },
+    {
+      "title": "Blockchain Wallet Development",
+      "subtitle": "",
+      "description": "Deliver secure, user-friendly experiences with our <a class='underline font-semibold' href='https://www.comfygen.com/crypto-wallet-development' >Blockchain Wallet Development</a> services. We create branded wallets that help your users store, manage, and transfer digital assets effortlessly.",
+      "features": [
+        "Multi-currency support and user-friendly interfaces",
+        "Advanced encryption and multi-signature security",
+        "Mobile and web wallet development",
+        "Seamless integration with your platform"
+      ]
+    },
+    {
+      "title": "Layer 2 Blockchain Development",
+      "subtitle": "",
+      "description": "Our Layer 2 Blockchain Development services help you scale your platform with faster transactions and lower fees while maintaining the security of the main chain.",
+      "features": [
+        "Rollups, sidechains, and state channels",
+        "Gas optimization and increased throughput",
+        "Secure integration with existing contracts",
+        "Bridges between mainnet and Layer 2 networks"
+      ]
+    },
+    {
+      "title": "POC Blockchain Development",
+      "subtitle": "",
+      "description": "Validate your vision quickly with POC Blockchain Development that demonstrates feasibility and business value. We build prototypes that help you test ideas before full-scale implementation.",
+      "features": [
+        "Rapid design and MVP delivery",
+        "User testing and performance validation",
+        "Support for multiple blockchain platforms",
+        "Clear roadmap for production implementation"
+      ]
+    }
+  ],
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
+      "title": "Finance & Banking",
+      "description": "Revolutionizing financial transactions with blockchain-based solutions. We provide secure payment systems, <a class='text-blue-600' href='/crypto-wallet-development'> cryptocurrency wallets</a>, decentralized finance (DeFi) platforms, and blockchain-based banking systems that ensure efficient, transparent, and faster financial operations."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
+      "title": "Healthcare",
+      "description": "Our blockchain solutions empower healthcare providers with secure patient data management, medical record tracking, and enhanced transparency in medical supply chains. Blockchain improves the accuracy and accessibility of healthcare data while protecting patient privacy."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
+      "title": "Supply Chain & Logistics",
+      "description": "We optimize global supply chains with blockchain technology by enabling real-time tracking, transparent documentation, and enhanced security. With our solutions, businesses can reduce fraud, streamline operations, and increase overall efficiency."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
+      "title": "Government & Public Sector",
+      "description": "Comfygen’s blockchain solutions for the public sector enable secure, transparent processes for public administration. These include digital identity management, voting systems, and secure data management platforms that enhance accountability and trust in governmental systems."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
+      "title": "Gaming",
+      "description": "Blockchain technology brings transparency and security to the gaming industry. We build decentralized applications (dApps) and digital asset management systems that allow players to buy, sell, and trade assets securely, creating a seamless gaming experience."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
+      "title": "Real Estate",
+      "description": "Real estate transactions become faster, more secure, and more transparent with blockchain solutions. Our services include property tokenization, smart contracts, and blockchain-based property management platforms that reduce paperwork and enhance trust in real estate deals."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
+      "title": "Insurance",
+      "description": "Blockchain helps automate insurance claims, enhancing transparency, and reducing fraud. Our solutions streamline underwriting and claims processes, making them more efficient, secure, and cost-effective for insurers and customers alike."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
+      "title": "Energy & Utilities",
+      "description": "We offer blockchain solutions to optimize energy distribution, enhance grid security, and enable peer-to-peer energy trading. Our decentralized energy systems ensure transparency, improve efficiency, and help manage resources more effectively."
+    }
+  ],
+  "pageData": {
+    "title": "Why Choose Comfygen as a Blockchain Development Company?",
+    "description": "At Comfygen, we deliver more than just blockchain solutions—we create transformative digital experiences that empower your business to thrive in a decentralized world. As a trusted blockchain development company, we combine cutting-edge technology with deep industry expertise to develop custom, secure, and scalable blockchain applications. Our comprehensive approach—from <a class='text-blue-600' href='/blockchain-consulting-services'>consultation</a>  to deployment—ensures that every solution is tailored to your specific business challenges and growth goals.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Customized Blockchain Solutions",
+        "description": "We design and develop blockchain architectures that are uniquely aligned with your business objectives, ensuring seamless integration and future scalability."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Advanced Technology & Innovation",
+        "description": "By harnessing the latest trends in decentralized finance (DeFi), smart contracts, and cross-chain interoperability, we deliver next-generation blockchain applications that drive competitive advantage."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Robust Security & Compliance",
+        "description": "Our rigorous security protocols, including smart contract audits and encryption best practices, guarantee that your digital assets and data remain protected against evolving threats."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "End-to-End Blockchain Development",
+        "description": "From initial strategy and design to development, testing, and post-deployment support, our end-to-end services cover every phase of the blockchain journey, ensuring a smooth transition from concept to reality."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Agile & Transparent Process",
+        "description": "We use agile project management and maintain open communication channels throughout the development cycle, ensuring that our solutions are delivered on time and within budget."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Industry-Specific Expertise",
+        "description": "With experience across finance, healthcare, supply chain, retail, and beyond, our experts customize blockchain applications that address the distinct needs of your industry."
+      }
+    ]
+  },
+
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire Blockchain Developers for your Business Growth",
+      "desc": "Do you want to hire blockchain developers in India?",
+      "decs": "That’s not a concern anymore, till you are connected with Comfygen. We have your solutions with expertise with us. Our blockchain developers can work on all the blockchain networks; such as Ethereum, Stellar, EOS, Hyperledger, or anywhere along with the implementation of robust technologies. We process decentralized services with agile development. We can build a simple basic blockchain app to an enterprise-level decentralized system to manage the organization with security. Believe in us, and We will make people believe in YOU.",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+  "ReadymadeProduct": [
+    {
+      "num": "1",
+      "url": "/poa-blockchain-development-company",
+      "img": "https://www.comfygen.com/img/proof-of-authority-blockchain.webp",
+      "title": "Proof of Authority (PoA) Blockchain",
+      "decs": "PoA blockchain development is a consensus mechanism that prioritizes efficiency and security. In PoA blockchain development, a select group of authorized nodes, often referred to as validators, validate transactions and create new blocks based on their reputation or authority. Unlike Proof of Work (PoW blockchain development), which requires resource-intensive mining, PoA blockchain development is energy-efficient and ideal for private or consortium blockchains. It offers rapid transaction processing and robust security because validators are known and trusted entities. PoA blockchain development is well-suited for use cases like enterprise services & solutions, supply chain management, and situations where a centralized yet secure approach is acceptable."
+    },
+    {
+      "num": "2",
+      "url": "/pow-blockchain-development-company",
+      "img": "https://www.comfygen.com/img/proof-of-work-blockchain.webp",
+      "title": "Proof of Work (PoW) Blockchain",
+      "decs": "PoW blockchain development is the original consensus mechanism used in Bitcoin and many other cryptocurrencies. In PoW blockchain development, miners compete to solve complex mathematical puzzles to validate transactions and add them to the blockchain. This process requires significant computational power and energy, making it highly secure against attacks. However, PoW blockchain development is criticized for its environmental impact due to its energy-intensive nature. Despite this, it remains a decentralized and trustless way to secure blockchain development networks, with miners being rewarded for their efforts in maintaining the network's integrity."
+    },
+    {
+      "num": "3",
+      "url": "/",
+      "img": "https://www.comfygen.com/img/delegated-proof-of-stack-blockchain.webp",
+      "title": "Delegated Proof of Stake (DPoS) Blockchain",
+      "decs": "DPoS blockchain development is a consensus algorithm designed for high throughput and scalability. In a DPoS blockchain development network, token holders vote for a limited number of delegates who are responsible for validating transactions and producing new blocks. DPoS blockchain development aims to combine decentralization and efficiency by allowing users to choose trusted validators through voting. This approach minimizes the computational resources needed compared to PoW blockchain development, making DPoS blockchain development faster and more environmentally friendly. DPoS blockchain development, such as EOS and Tron, are well-suited for applications requiring rapid transaction processing, like decentralized applications (DApps blockchain development) and digital content platforms."
+    }
+  ],
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "Decentralized Application (dApp) Development",
+      "decs": "Design and launch secure, scalable <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/dapp-development-company' >dApps</a> across Ethereum, Polygon, Solana, and BNB Chain. From finance to gaming, our dApps deliver full decentralization, transparency, and unmatched user experiences."
+    },
+    {
+      "num": "02",
+      "title": "DeFi (Decentralized Finance) Solutions",
+      "decs": "Empower your users with next-gen <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/defi-development-company' >DeFi platforms</a> — including decentralized exchanges, staking, lending/borrowing, and yield farming. We deliver scalable, audited, and revenue-ready financial ecosystems."
+    },
+    {
+      "num": "03",
+      "title": "DAO Development (Decentralized Autonomous Organization)",
+      "decs": "Build trustless, community-governed platforms using DAOs. We help you set up smart contract-based decision-making systems for truly decentralized and transparent governance."
+    },
+    {
+      "num": "04",
+      "title": "Crypto Wallet Development",
+      "decs": "Create secure, multi-currency <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/crypto-wallet-development' >crypto wallets</a> with advanced features like biometric login, cold wallet integration, private key encryption, and seamless dApp connectivity."
+    },
+    {
+      "num": "05",
+      "title": "Crypto Exchange Development",
+      "decs": "Build centralized or decentralized <a class='font-semibold text-blue-500' href='/cryptocurrency-exchange-development'> crypto exchanges </a> with ultra-fast trading engines, multi-chain support, liquidity APIs, and enhanced security protocols."
+    },
+    {
+      "num": "06",
+      "title": "Custom Token Development ",
+      "decs": "BLaunch your tokens for utility, governance, or fundraising. We develop compliant and blockchain-agnostic tokens with <a class='font-semibold text-blue-500' href='https://www.comfygen.com/smart-contract-development'> smart contract deployment </a> and audit support."
+    },
+    {
+      "num": "07",
+      "title": " Cross-Chain & Layer-2 Blockchain Solutions",
+      "decs": "Boost performance and scalability with Layer-2 protocols like Arbitrum or zkSync, and enable interoperability across chains using custom bridge and cross-chain frameworks."
+    },
+    {
+      "num": "08",
+      "title": "RWA Tokenization (Real-World Assets)",
+      "decs": "Transform real-world assets like real estate, art, and commodities into tokenized assets on the blockchain. Improve liquidity, fractional ownership, and transparency."
+    },
+    {
+      "num": "09",
+      "title": "Decentralized Identity (DID) Solutions",
+      "decs": "Protect digital identities with self-sovereign identity systems. Ideal for KYC, onboarding, and secure login experiences, DID ensures privacy, security, and compliance."
+    }
+  ],
+
+  "consultancyHead": [
+    {
+      "num": "1",
+      "title": "Exclusive Features of Our Blockchain Development",
+      "desc": "At Comfygen, we integrate innovation with precision. Our blockchain solutions go beyond the ordinary — engineered for performance, adaptability, and next-gen digital success."
+    }
+  ],
+  "consultancyData": [
+    {
+      "title": "Modular Architecture",
+      "desc": "Build blockchain systems with flexible, plug-and-play modules — perfect for adapting to evolving business needs and scaling on demand."
+    },
+    {
+      "title": "Gas Optimization Techniques",
+      "desc": "We reduce on-chain transaction costs with custom algorithms and contract structuring — ideal for high-frequency blockchain applications."
+    },
+    {
+      "title": " Real-Time Transaction Visibility",
+      "desc": "Enable instant traceability and transaction auditability with blockchain explorers and integrated dashboards."
+    },
+    {
+      "title": " Layer-2 Compatibility",
+      "desc": "Enhance scalability and reduce congestion by integrating Layer-2 rollups like Optimism, zkRollups, and Arbitrum for high-speed dApps."
+    },
+    {
+      "title": "Governance & Role Management",
+      "desc": "Introduce multi-tiered permission layers and DAO-style governance for secure, decentralized control of enterprise applications"
+    },
+    {
+      "title": "Multi-Token Support",
+      "desc": "Support native cryptocurrencies, utility tokens, NFTs, and stablecoins — all under one secure, interoperable environment."
+    }
+  ],
+  "WhyChooseComfygen": [
+    {
+      "num": "1",
+      "title": "Expertise and Experience",
+      "decs": "Our expert blockchain developers in India are dedicatedly specialized in blockchain development, as well as they have years of experience in the same domain. We have a record of working in various industries with vast complexities. Therefore, our developers can face the complex challenges and figure out our business solutions promptly."
+    },
+    {
+      "num": "2",
+      "title": "Custom Solutions",
+      "decs": "We are the best blockchain development company in India, and that fame came after making infinite practices and building business-centric needs based on the industrial requirement. So we do not bind ourselves with any limits. We are the custom blockchain development services providers in the UK, US, India, and serving every corner across the globe. You name it, and we will make that happen by aligning your business goals."
+    },
+    {
+      "num": "3",
+      "title": "Transparency",
+      "decs": "When our client is investing in his product through us, he definitely has faith in our company and our team. It is our responsibility and our priority to keep his faith alive always, and for that we keep everything transparent with them. No matter whether we are progressing or there are some challenges striking us in the middle way; our clients are informed about every phase during development. "
+    },
+    {
+      "num": "2",
+      "title": "Quality, Speed, and Security Under One Rooftop",
+      "decs": "Whatever we build; say it blockchain app, smart contracts, crypto exchange, tokenization; every solution built by our blockchain developers will be scalable and highly-performing. Beside providing the reliable application and other software; our team also has speed with quality assured in them. We have the experience and expertise enabling us towards quick deployments with cutting edge technology use."
+    }
+  ],
+  "InfluencingList": [
+    "”",
+    "Do you need blockchain apps or other decentralized solutions? Well, feel free to have a  free consultation call with us. Development comes far later, but first we believe in building faith between company and client. So let’s meet over coffee to discuss your business goals with blockchain, and figure out the best approach to bet in the marketplace. "
+  ],
+  "timelineData": [
+    {
+      "step": "1",
+      "title": "Conceptualization",
+      "description": "There is no tech-enabled project, which can be initiated without conceptualization. The same goes with Blockchain development solutions; where our experts will understand clientele requirements and know their visions & objectives. We will identify the key uses, as well as make the process to achieve the business goals."
+    },
+    {
+      "step": "2",
+      "title": "Design and Architecture",
+      "description": "Here comes the prototyping and structural modeling of the blockchain solutions, where we will give a complete visual look to the product. Also the steps include developing data models, consensus mechanisms, and security protocols. Your dApps or smart contract solutions will get UI and UX for the frontend development."
+    },
+    {
+      "step": "3",
+      "title": "Development Begins Here ",
+      "description": "The developers will implement smart contracts and apply business logic in the applications using prominent blockchain platforms and programming languages. This is the stage where you will get the frontend of custom blockchain solutions with security protocols (encryption, authentication, and access control) integrated. Moreover, we will add features and APIs to complete the product as planned. "
+    },
+    {
+      "step": "4",
+      "title": "Never Forget Testing and Quality Assurance",
+      "description": "It is evident when development is done here, but are you sure of launching it? Definitely not, because we have not tested and assured with its quality. The blockchain developers and quality analysts will test the solution, which includes security audits, coding reviews, functions, performance, response rates, scalability and reliability. Once our QAs claim that the product is all set to launch, later the deployment will take place."
+    },
+    {
+      "step": "5",
+      "title": "Let’s Deploy the Blockchain Solution ",
+      "description": "Now we have our fully approved smart contracts and blockchain application in hand, so launch it on the dedicated blockchain network; let’s say Ethereum, Hyperledger, Solana, Steller, or whatever decided. While deploying, our smart blockchain developers will configure the product with external systems, existing software, and third party systems."
+    },
+    {
+      "step": "6",
+      "title": "Continue Improving with Support and Maintenance",
+      "description": "On-going monitoring and maintaining the deployed blockchain solution will help you to stay connected with the marketplace and engage a vast audience for longer. With the help of blockchain post-deployment services, our developers will keep updating and upgrading the existing solutions to enhance the scalability and scope. "
+    }
+  ],
+  "Frequently":[
+    {
+      "num": "1",
+      "title": "What isblockchain development, and how can it benefit my business?",
+      "desc": "Blockchain development involves building secure, decentralized applications using blockchain technology. It helps businesses by improving transparency, reducing fraud, enhancing data security, and streamlining operations."
+    },
+    {
+      "num": "2",
+      "title": "What types of blockchain solutions do you offer?",
+      "desc": "We provide a wide range of blockchain services, including smart contract development, NFT marketplaces, decentralized apps (dApps), DeFi platforms, private/public blockchains, and custom enterprise blockchain solutions."
+    },
+    {
+      "num": "3",
+      "title": "Which industries can benefit from blockchain technology?",
+      "desc": "Almost every industry can benefit, including finance, healthcare, logistics, real estate, gaming, supply chain, and e-commerce, by enhancing trust, traceability, and security."
+    },
+    {
+      "num": "4",
+      "title": "What blockchain platforms do you work with?",
+      "desc": "We work with Ethereum, Binance Smart Chain, Polygon, Solana, Hyperledger, Avalanche, and many more, depending on your project requirements."
+    },
+    {
+      "num": "5",
+      "title": "How long does it take to develop a blockchain solution?",
+      "desc": "Project timelines vary based on complexity and scope. A basic dApp might take 4–6 weeks, while a complex platform like a DeFi exchange or NFT marketplace could take 3–6 months."
+    },
+    {
+      "num": "6",
+      "title": "Do I need to understand blockchain technology to start a project?",
+      "desc": "Not at all! At Comfygen Technologies, our team will guide you through every step. We focus on understanding your goals and translating them into a functional, user-friendly blockchain solution."
+    },
+    {
+      "num": "7",
+      "title": "Is blockchain secure and scalable for enterprise use?",
+      "desc": "Yes. When properly developed, blockchain solutions are highly secure and scalable. We also implement best practices in performance optimization and data protection."
+    },
+    {
+      "num": "8",
+      "title": "Can you help with blockchain consulting and strategy before development?",
+      "desc": "Absolutely. We offer end-to-end services, including blockchain strategy consulting, use case identification, architecture design, development, and post-launch support."
+    },
+    {
+      "num": "9",
+      "title": "What are smart contracts, and do I need them for my project?",
+      "desc": "Smart contracts are self-executing agreements on the blockchain. If your project involves automation, trustless transactions, or token management, then yes — they’re essential."
+    },
+    {
+      "num": "10",
+      "title": "How much does it cost to develop a blockchain application?",
+      "desc": "Costs vary based on features, tech stack, and complexity. Contact us for a free consultation and detailed quote tailored to your needs and budget."
+    }
+  ]
+}

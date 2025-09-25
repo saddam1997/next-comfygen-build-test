@@ -1,0 +1,79 @@
+/* styles/Services.module.css */
+.section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hrHeader {
+  width: 50px;
+  border-top: 3px solid #3e3e3e;
+  margin: 10px auto;
+}
+
+.navPills {
+  list-style-type: none;
+  padding: 0;
+}
+
+.brandNav {
+  margin-bottom: 10px;
+}
+
+.brandNav a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.brandNav a:hover {
+  background-color: #ddd;
+}
+
+.brandNav a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tabPane {
+  display: none;
+  animation: fadeEffect 0.5s;
+}
+
+.tabPane.active {
+  display: block;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.laws {
+  margin-bottom: 20px;
+}
+
+.lawsHr {
+  width: 50px;
+  border-top: 2px solid #3e3e3e;
+  margin: 10px 0;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

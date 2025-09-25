@@ -1,0 +1,13 @@
+
+.hidescroller {
+  -webkit-overflow-scrolling: touch;
+}
+
+.hidescroller::-webkit-scrollbar {
+  width: 1px;
+
+}
+.hidescroller::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}

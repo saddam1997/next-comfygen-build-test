@@ -1,0 +1,490 @@
+{
+"Frequently": [
+  {
+    "num": "1",
+    "title": "What is an NBA Live Line API?",
+    "desc": "It’s an API that delivers real-time NBA match data including scores, stats, odds, and more for apps and platforms."
+  },
+  {
+    "num": "2",
+    "title": "Is your NBA API free to use?",
+    "desc": "We offer a free trial version for developers to test key features before upgrading to a paid plan."
+  },
+  {
+    "num": "3",
+    "title": "Does your API include NBA historical odds?",
+    "desc": "Yes, we provide access to historical odds and match results for data analysis and modeling."
+  },
+  {
+    "num": "4",
+    "title": "Can I integrate your API into mobile apps?",
+    "desc": "Absolutely. Our APIs are mobile-ready and support both Android and iOS platforms."
+  },
+  {
+    "num": "5",
+    "title": "Is developer support available?",
+    "desc": "Yes, we offer complete documentation, sandbox, and live support for smooth integration."
+  },
+  {
+    "num": "6",
+    "title": "What data formats are supported?",
+    "desc": "Our API supports JSON and XML formats for flexible integration."
+  },
+  {
+    "num": "7",
+    "title": "How frequently is the data updated?",
+    "desc": "Our APIs update in real-time — typically every second — to keep your app live and accurate."
+  },
+  {
+    "num": "8",
+    "title": "Is Comfygen's NBA API scalable?",
+    "desc": "Yes, our cloud infrastructure handles high-traffic spikes and growing user bases with ease."
+  },
+  {
+    "num": "9",
+    "title": "Do you offer white-label solutions?",
+    "desc": "Yes, white-label versions of our API can be offered for platforms needing brand consistency."
+  },
+  {
+    "num": "10",
+    "title": "How long does it take to deploy?",
+    "desc": "Typical deployments take 3–7 business days, depending on customization and data volume."
+  }
+],
+
+
+
+"servicesData": [
+  {
+    "title": "Custom NBA Live Line API",
+    "description": "Tailor your NBA data integration with custom endpoints built around your business requirements. We align the API flow with your frontend/backend setup for maximum performance.",
+    "features": [
+      "Custom endpoints based on your app logic",
+      "Scalable architecture for long-term growth",
+      "Seamless integration with any tech stack"
+    ]
+  },
+  {
+    "title": "NBA Scores API Integration",
+    "description": "Provide your users with instant, accurate score updates as they happen. Our NBA Scores API delivers real-time match events and frame-by-frame details.",
+    "features": [
+      "Ultra-low latency live score updates",
+      "Supports mobile, web, and third-party platforms",
+      "Instant notifications for key game events"
+    ]
+  },
+  {
+    "title": "NBA Odds API & Historical Odds Access",
+    "description": "Boost your platform with real-time and historical NBA odds. Ideal for betting and analytics apps aiming for data accuracy and deeper engagement.",
+    "features": [
+      "Live odds synced with game progression",
+      "Access to past odds for predictive modeling",
+      "Ideal for sportsbooks and betting tools"
+    ]
+  },
+  {
+    "title": "NBA Fantasy Data API",
+    "description": "Serve your fantasy sports users with rich player stats, game logs, and performance metrics. Our NBA Fantasy Data API fuels immersive and strategic gameplay.",
+    "features": [
+      "Real-time player stats and fantasy points",
+      "Match insights for fantasy predictions",
+      "Optimized for daily and season-long formats"
+    ]
+  },
+  {
+    "title": "Developer-Friendly NBA API for Developers",
+    "description": "Build faster with developer-focused tools. Our API features detailed documentation, sandbox access, and a dedicated support team for smooth integration.",
+    "features": [
+      "RESTful API with secure access",
+      "Comprehensive guides and SDKs",
+      "Dedicated developer onboarding support"
+    ]
+  },
+  {
+    "title": "NBA Data Feed API Solutions",
+    "description": "Streamline your app with a complete NBA data feed, covering live stats, schedules, team data, and more—delivered with accuracy and speed.",
+    "features": [
+      "Real-time and historical data sync",
+      "Full game coverage with player and team stats",
+      "Compatible with any backend system"
+    ]
+  },
+  {
+    "title": "API Maintenance & Support",
+    "description": "Enjoy uninterrupted services with 24/7 support, regular updates, and real-time monitoring. We keep your API secure, optimized, and future-ready.",
+    "features": [
+      "Continuous monitoring and performance tuning",
+      "Version control and scheduled updates",
+      "Dedicated support for bug fixes and scaling"
+    ]
+  }
+],
+
+
+
+"consultancyHead" :[
+  {
+    "num": "1",
+    "title": "Top Features of Our NBA Live Line API",
+    "desc": ""
+  }
+],
+
+"consultancyData": [
+  {
+    "title": "Real-Time Game Updates",
+    "desc": "Stay synced with live game scores, team lineups, and in-game events every second."
+  },
+  {
+    "title": "NBA Historical Odds Archive",
+    "desc": "Access previous seasons’ odds for advanced modeling and predictions."
+  },
+  {
+    "title": "Fully Customizable Endpoints",
+    "desc": "Select exactly what you need: player stats, team records, match status, and more."
+  },
+  {
+    "title": "Scalable Cloud Infrastructure",
+    "desc": "Built on cloud-native technologies to handle millions of requests per second."
+  },
+  {
+    "title": "Developer-Centric Tools",
+    "desc": "Includes REST API, sample code, test environments, and clear documentation."
+  },
+  {
+    "title": "Data Accuracy & Consistency",
+    "desc": "Validated feeds updated in real time with minimal data drop or delay."
+  }
+],
+
+
+
+
+  "pageData": {
+    "title": "Why Choose Comfygen?",
+    "description": "With more than 10 years of experience in software development, Comfygen has become a trusted name in delivering real-time, high-performance sports data APIs. Our dedicated team of developers and sports tech experts brings a deep understanding of how to integrate live match data with intuitive and responsive user interfaces, ensuring a smooth experience for both developers and end users. Whether you're launching a brand-new sports platform or enhancing an existing system, our NBA Data Solutions API is engineered to meet your needs. It guarantees instant updates, low-latency performance, and seamless integration across all devices. As a premier NBA Live Line API provider, we prioritize reliability, scalability, and developer-friendly solutions that help your app engage users in real time. We also offer flexible pricing models and ongoing technical support to ensure your platform operates at peak performance throughout its lifecycle. Partner with Comfygen to elevate your sports application with trusted, real-time NBA data APIs tailored to your goals.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+"gridData": [
+  {
+    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+    "title": "10+ Years of Experience",
+    "description": "Proven track record in delivering reliable, scalable APIs across various industries and use cases."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+    "title": "100% Customizable API Solutions",
+    "description": "Pick the exact data and features your platform needs—from live feeds to frontend-ready components."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+    "title": "24/7 Technical Support",
+    "description": "Stay confident with non-stop assistance for integration, performance, and troubleshooting needs."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+    "title": "Developer Resources Included",
+    "description": "Gain access to API docs, sandbox testing, code samples, and everything needed for smooth onboarding."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+    "title": "Affordable & Transparent Pricing",
+    "description": "No surprises—our pricing scales with your usage and business growth, keeping your costs predictable."
+  },
+  {
+    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+    "title": "Dedicated Project Managers",
+    "description": "Get end-to-end support with a personal manager guiding development, updates, and delivery milestones."
+  }
+]
+
+
+
+
+
+
+  },
+  
+  "gamedev": [
+    {
+      "img": "https://www.comfygen.com/img/cricket-live-line-apiI-development.webp",
+      "title": "Cricket Live Line API",
+      "num": "1",
+      "url": "/cricket-live-line-api"
+    },
+    {
+      "img": "https://www.comfygen.com/img/kabaddi-live-line-api-development.webp",
+      "title": "Kabaddi Live Line API",
+      "num": "2",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/golf-live-line-api-development.webp",
+      "title": "Golf Live Line API",
+      "num": "4",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/soccer-live-line-api-development.webp",
+      "title": "Soccer/Football Live Line API",
+      "num": "5",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/hockey-live-line-api-development.webp",
+      "title": "Hockey Live Line API",
+      "num": "6",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/basketball-live-line-api-development.webp",
+      "title": "Basketball Live Line API",
+      "num": "7",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/tennis-live-line-api-development.webp",
+      "title": "Tennis Live Line API",
+      "num": "8",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/horse-live-line-api-development.webp",
+      "title": "Horse Race Live Line API",
+      "num": "9",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/baseball-live-line-api-development.webp",
+      "title": "Baseball Live Line API",
+      "num": "10",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/pool-live-line-api-development.webp",
+      "title": "Pool Live Line API",
+      "num": "11",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/nba-live-line-api-development.webp",
+      "title": "NBA Live Line API",
+      "num": "12",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/rugby-live-line-api-development.webp",
+      "title": "Rugby Live Line API",
+      "num": "13",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/auto-racing-live-line-api-development.webp",
+      "title": "Auto Racing Live Line API",
+      "num": "14",
+      "url": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/img/american-football-live-line-api-development.webp",
+      "title": "American football Live Line API",
+      "num": "15",
+      "url": "#"
+    }
+  ],
+
+  "Shaping": [
+    {
+      "num": "01",
+      "title": "Match Schedules",
+      "decs": "This feature gives users regular updates on upcoming games, matches, tournaments, their venues, and time schedules. "
+    },
+    {
+      "num": "02",
+      "title": "Player Profiles",
+      "decs": "Users can view the statistics and career records of their favourite teams and players from this section."
+    },
+    {
+      "num": "03",
+      "title": "Multi-Language Support",
+      "decs": "Multilingual support enables scoreboard display and navigation in multiple languages so that the language won’t be a barrier."
+    },
+    {
+      "num": "04",
+      "title": "Live Polls",
+      "decs": "The live polls feature enables users to participate in live polls to give their votes and feedback about match and player predictions."
+    },
+    {
+      "num": "05",
+      "title": "Customizable settings",
+      "decs": "It offers a switch to customize the cricket live line application settings according to the user’s preference for which sports or tournaments they want to stay updated. "
+    },
+    {
+      "num": "06",
+      "title": "Push Notifications",
+      "decs": "Push notifications give important updates and instant alerts on all the all cricket match live activities like wicket, century, match results, etc."
+    }
+  ],
+  
+  "WhyCricketLive": [
+    {
+      "num": "01",
+      "title": "Customized APi Solutions:",
+      "decs": " Custom-made cricket live score api software solutions tailored to the client’s precise requirements."
+    },
+    {
+      "num": "02",
+      "title": "Expert Team:",
+      "decs": "A devoted team of experienced specialists in sports-specific niches."
+    },
+    {
+      "num": "03",
+      "title": "Cricket Focus:",
+      "decs": "In-depth knowledge and expertise in Live Line Cricket API-related applications."
+    },
+    {
+      "num": "04",
+      "title": "User-friendly Interface:",
+      "decs": "Innovative approach to design engaging UI/UX for the users. "
+    },
+    {
+      "num": "05",
+      "title": "Intact Security:",
+      "decs": "Specializing in developing highly secure and end-to-end cricket live line solutions. "
+    },
+    {
+      "num": "06",
+      "title": "Round-the-Clock Support: ",
+      "decs": "Continuous 24/7 customer and technical support."
+    },
+    {
+      "num": "07",
+      "title": "Competitive Pricing:",
+      "decs": "Highly scalable and reliable budget-friendly products with high quality."
+    },
+    {
+      "num": "07",
+      "title": "Timely Project Delivery: ",
+      "decs": "On-time product delivery before the promised deadline"
+    }
+  ],
+
+  "Hire": [
+    {
+      "num": "1",
+      "title": "Hire a Cricket Live Line API Developer",
+      "desc": "When it comes to developing cutting-edge cricket live line APi applications, you don’t have to look any further. Our Cricket Live Line Api Developers are not your typical coders; they are visionaries who bring your concept to life with hands-on knowledge in developing bespoke cricket live score app development solutions. Equipped with the latest technology trends, apt at seamless API integrations, and creative at mobile app creation, they go past the ordinary to deliver user-centric software development solutions that are finely tuned to meet your unique requirements. ",
+      "url": "/contact-us",
+      "btn": "Hire Developer"
+    }
+  ],
+
+  "myList": [
+    "Specialization in mobile app development, bringing a deep understanding of the cricket enthusiast’s unique requirements.",
+    "Leveraging the latest technology and tools, our developers create leading-edge apps that outshine.",
+    "User experience is our cricket live line api developer’s top priority during the development process, ensuring a seamless and captivating app.",
+    "Our cricket live line api developers carry a passion for cricket resulting in developing a highly engaging score app that resonates with cricket enthusiasts.",
+    "The score update app developers work closely with our clients to understand their specifications and create an app that aligns perfectly with their visions."
+  ],
+
+  "GameCardData": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
+      "url": "/rummy-game-development",
+      "title": "Rummy Game Development"
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/baccarat-game-development-via-comfygen.webp",
+      "url": "/baccarat-game-development",
+      "title": "Baccarat Game Development"
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/black-jack-dovelabment-via-comfygen.webp",
+      "url": "/blackjack-game-development",
+      "title": "BlackJack Game Development"
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/poker-game-development-via-comfygen.webp",
+      "url": "/poker-game-development",
+      "title": "Poker Game Development"
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/ludo-game-development-via-comfygen.webp",
+      "url": "/ludo-game-development",
+      "title": "Ludo game development"
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/hearts-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Hearts Game Development"
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/board-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "board game development"
+    },
+    {
+      "num": "9",
+      "img": "https://www.comfygen.com/img/card-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Card Game Development"
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/cheses-game-dovelabment-via-comfygen.webp",
+      "url": "/chess-game-development",
+      "title": "Chess Game Development"
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/img/bingo-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "Bingo Game Development"
+    },
+    {
+      "num": "12",
+      "img": "https://www.comfygen.com/img/888-poker-game-development-via-comfygen.webp",
+      "url": "/",
+      "title": "888 Poker Game Development"
+    },
+    {
+      "num": "13",
+      "img": "https://www.comfygen.com/img/omaha-game-dovelabment-via-comfygen.webp",
+      "url": "/omaha-poker-game-development",
+      "title": "Omaha poker game development"
+    },
+    {
+      "num": "14",
+      "img": "https://www.comfygen.com/img/snake-game-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Snake and Ladder development"
+    },
+    {
+      "num": "15",
+      "img": "https://www.comfygen.com/img/texes-game-dovelabment-via-comfyegn.webp",
+      "url": "/",
+      "title": "Texas Holdem Game Development"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/img/call-breake-dovelabment-via-comfygen.webp",
+      "url": "/",
+      "title": "Call Break Game Development"
+    },
+    {
+      "num": "16",
+      "img": "https://www.comfygen.com/img/satta-matka-game-development-via-comfygen.webp",
+      "url": "/satta-matka-game-app-development-company",
+      "title": "Satta Matka Game Development"
+    }
+  ]
+}
