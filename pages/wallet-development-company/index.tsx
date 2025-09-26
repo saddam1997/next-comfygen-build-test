@@ -505,7 +505,7 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-       
+
         <title>
           Wallet Development Company | E-Wallet & Crypto Wallet Solutions – Comfygen
         </title>
@@ -514,7 +514,7 @@ export default function Ecommerce(props) {
           content="Comfygen is a leading wallet development company delivering secure, scalable, and user-friendly e-wallets and crypto wallets. From mobile payment wallets to enterprise crypto solutions, we build custom and white-label wallets with advanced security, multi-currency support, and seamless integrations."
         />
 
-      <meta name="keywords" content="E-Wallet Development, Crypto Wallet Development, NFT Wallet Development, DeFi Wallet Development, Enterprise Wallet Solutions, Mobile Wallet App Development, White Label Wallet Development"/>
+        <meta name="keywords" content="E-Wallet Development, Crypto Wallet Development, NFT Wallet Development, DeFi Wallet Development, Enterprise Wallet Solutions, Mobile Wallet App Development, White Label Wallet Development" />
 
         <link
           rel="canonical"
@@ -524,8 +524,8 @@ export default function Ecommerce(props) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"></meta>
-       
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"></meta>
+
 
         <meta
           name="viewport"
@@ -760,7 +760,7 @@ export default function Ecommerce(props) {
           description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
         />
         <ContactFromCenter />
-        
+
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -781,7 +781,7 @@ export default function Ecommerce(props) {
           title="Tech stack we use in wallet development"
           description="At Comfygen, we use a modern, robust tech stack to build secure, scalable, and user-friendly digital and crypto wallets, ensuring smooth performance and seamless integration across mobile, web, and enterprise platforms."
         />
-      
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

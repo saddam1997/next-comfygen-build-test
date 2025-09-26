@@ -665,7 +665,7 @@ export default function ClinicalApp(props: any) {
           text="Get custom courier delivery app solutions designed for growth."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/call-courier.webp"
           imageAlt="Get in touch now."
         />
         <section>

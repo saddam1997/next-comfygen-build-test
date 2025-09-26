@@ -9,13 +9,15 @@ const DeliverySection = (props) => {
     const [visibleCount, setVisibleCount] = useState(8);
 
     const apps = [
-        // {
-        //     title: "Courier Delivery App Development",
-        //     description: "Comfygen is a top alcohol delivery app development company offering custom, white-label, and on-demand liquor app solutions with AI-powered, blockchain-based, scalable features.",
-        //     link: "https://www.comfygen.com/courier-delivery-app-development",
-        //     image: "https://www.comfygen.com/comfygen-images/delivery-app-development/cake-delivery-app-development-services.webp",
-        //     gradient: "from-emerald-500 to-green-500"
-        // },
+
+        {
+            title: "Fuel Delivery App Development",
+            description: "We develop fuel delivery apps that allow customers to order fuel anytime, anywhere. With GPS tracking, secure payments, and driver management, our solutions make fuel delivery simple and profitable.",
+            link: "https://www.comfygen.com/fuel-delivery-app-development",
+            image: "https://www.comfygen.com/comfygen-images/delivery-app-development/fuel-delivery-app-development-services.webp",
+            gradient: "from-violet-500 to-purple-500"
+        },
+
         {
             title: "Delivery App Development",
             description: "Comfygen offers custom delivery app development for startups and enterprises. From food and grocery to logistics and courier, we build secure, scalable, and feature-rich delivery apps that boost business growth and customer satisfaction.",
@@ -83,13 +85,7 @@ const DeliverySection = (props) => {
         //     image: "https://www.comfygen.com/comfygen-images/delivery-app-development/logistics-delivery-app-development-services.webp",
         //     gradient: "from-teal-500 to-cyan-500"
         // },
-        {
-            title: "Fuel Delivery App Development",
-            description: "We develop fuel delivery apps that allow customers to order fuel anytime, anywhere. With GPS tracking, secure payments, and driver management, our solutions make fuel delivery simple and profitable.",
-            link: "",
-            image: "https://www.comfygen.com/comfygen-images/delivery-app-development/fuel-delivery-app-development-services.webp",
-            gradient: "from-violet-500 to-purple-500"
-        },
+        
         // {
         //     title: "Liquor Delivery App Development",
         //     description: "Comfygen builds liquor delivery apps with age verification, secure payments, and doorstep delivery. Launch your online alcohol delivery service with our feature-rich liquor delivery app development solutions.",

@@ -1015,11 +1015,25 @@
   </url>
 
 
-    <url>
+  <url>
     <loc>https://www.comfygen.com/white-label-cryptocurrency-wallet-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
+
+  <url>
+    <loc>https://www.comfygen.com/fuel-delivery-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://www.comfygen.com/mobile-crypto-wallet-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+
 
 
 

@@ -340,10 +340,15 @@ const Blockchain = [
     name: " Astrology App Development",
     url: "/astrology-app-development",
   },
-   {
+  {
     num: "9",
     name: "Ice Cream Delivery Aapp Development",
     url: "/ice-cream-delivery-app-development",
+  },
+  {
+    num: "10",
+    name: "Fuel Delivery App Development",
+    url: "/fuel-delivery-app-development",
   },
 
 
@@ -354,59 +359,59 @@ const Blockchain = [
 
 const Blockchain1 = [
   {
-    num: "10",
+    num: "11",
     name: "Salon App Development",
     url: "/salon-app-development",
   },
   {
-    num: "11",
+    num: "12",
     name: "Business Directory App Development",
     url: "/business-directory-app-development",
   },
   {
-    num: "12",
+    num: "13",
     name: "Logistics App Development",
     url: "/logistics-app-development",
   },
   {
-    num: "13",
+    num: "14",
     name: "Home Service App Development",
     url: "/home-service-app-development",
   },
   {
-    num: "14",
+    num: "15",
     name: "Tutor App Development",
     url: "/tutor-app-development",
   },
 
 
   {
-    num: "15",
+    num: "16",
     name: "Language learnig App Development",
     url: "/language-learning-app-development",
   },
   {
-    num: "16",
+    num: "17",
     name: "Exam Preparation App Development",
     url: "/exam-preparation-app-development",
   },
   {
-    num: "17",
+    num: "18",
     name: "Meat Delivery App Development",
     url: "/meat-delivery-app-development",
   },
 
   {
-    num: "18",
+    num: "19",
     name: "Alcohol Delivery App Development",
     url: "/alcohol-delivery-app-development",
   },
-   {
-    num: "19",
+  {
+    num: "20",
     name: "Courier Delivery App Development",
     url: "/courier-delivery-app-development",
   },
- 
+
 
 
 
@@ -451,39 +456,35 @@ const Finance = [
     name: "Insurance App Development",
     url: "/insurance-app-development",
   },
+  
   {
-    num: "8",
-    name: "eWallet App Development",
-    url: "/ewallet-app-development",
-  },
-  {
-    num: "9",
+    num: "10",
     name: "Islamic Banking App Development",
     url: "/islamic-bank-app-development",
   },
   {
-    num: "10",
+    num: "11",
     name: "Stock Trading App Development",
     url: "/stock-trading-app-development",
   },
 
   {
-    num: "11",
+    num: "12",
     name: "Credit Scoring App Development",
     url: "/credit-scoring-app-development",
   },
   {
-    num: "12",
+    num: "13",
     name: "P2P Payment App Development",
     url: "/p2p-payment-app-development",
   },
   {
-    num: "13",
+    num: "14",
     name: "Car Finance App Development",
     url: "/car-finance-app-development",
   },
   {
-    num: "14",
+    num: "15",
     name: "Truck Finance App Development",
     url: "/truck-finance-app-development",
   },
@@ -957,71 +958,82 @@ const cryptoDevelopment = [
     url: "/crypto-nft-exchange-development",
   },
 
+  {
+    num: "12",
+    name: "Mobile Crypto Wallet Development",
+    url: "/mobile-crypto-wallet-development",
+  },
+
 ];
 
 const cryptoDevelopment1 = [
 
 
   {
-    num: "12",
+    num: "13",
     name: " Crypto Derivatives Exchange Development",
     url: "/crypto-derivatives-exchange-development",
   },
   {
-    num: "13",
+    num: "14",
     name: "Margin Trading Exchange Development",
     url: "/crypto-margin-trading-exchange-development",
   },
   {
-    num: "14",
+    num: "15",
     name: "Crypto Exchange Admin Panel Development ",
     url: "/crypto-exchange-admin-panel-development",
   },
   {
-    num: "15",
+    num: "16",
     name: "Ai Crypto Exchange Development",
     url: "/ai-crypto-exchange-development",
   },
   {
-    num: "16",
+    num: "17",
     name: "Crypto Payment Gateway Development",
     url: "/crypto-payment-gateway-development",
   },
   {
-    num: "17",
+    num: "18",
     name: "Decentralized wallet Development",
     url: "/decentralized-wallet-development",
   },
   {
-    num: "18",
+    num: "19",
     name: "NFT Wallet Development Company",
     url: "/nft-wallet-development",
   },
   {
-    num: "19",
+    num: "20",
     name: "White Label Cryptocurrency Wallet Development",
     url: "/white-label-cryptocurrency-wallet-development",
   },
 
   {
-    num: "20",
+    num: "21",
     name: "Multi Currency Wallet Development Company",
     url: "/multi-currency-wallet-development-company",
   },
   {
-    num: "21",
+    num: "22",
     name: "Defi Wallet Development",
     url: "/defi-wallet-development",
   },
   {
-    num: "22",
+    num: "23",
     name: "Smart Contract Wallet Development",
     url: "/smart-contract-wallet-development",
   },
-   {
-    num: "23",
+  {
+    num: "24",
     name: "Blockchain Wallet Development",
     url: "/blockchain-wallet-development",
+  },
+  {
+    num: "25",
+    name: "eWallet App Development",
+    url: "/ewallet-app-development",
   },
 
 
