@@ -302,7 +302,6 @@ export default function Blockchain(props) {
         <meta name='og:title' content='Custom Blockchain development Company' />
         <meta name='og:type' content='website' />
         <meta name='og:url' content='https://www.comfygen.com/custom-blockchain-development-company' />
-        <meta name='og:image' content='url' />
         <meta name='og:site_name' content='Comfygen Private Limited' />
         <meta name='og:description' content='As a trusted custom blockchain development company, Comfygen offers innovative custom blockchain development services such as NFT solutions, smart contracts, and token development for diverse industries.' />
         <meta name='fb:page_id' content='110909321596135' />
@@ -320,7 +319,7 @@ export default function Blockchain(props) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/custom-blockchain-development-company/custom-blockchain-development-company.webp" />
         <meta property="og:image:alt" content="Custom Blockchain development company" />
         <meta property="og:url" content="https://www.comfygen.com/custom-blockchain-development-company" />
-        <meta property="og:title" content="Custom Blockchain development Services" />
+        {/* <meta property="og:title" content="Custom Blockchain development Services" /> */}
         <meta property="og:description" content="As a trusted custom blockchain development company, Comfygen offers innovative custom blockchain development services such as NFT solutions, smart contracts, and token development for diverse industries." />
         <script
           type="application/ld+json"

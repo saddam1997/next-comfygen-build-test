@@ -563,7 +563,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden sm:pt-16">
         <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-hero.webp')]">
           <HeroSectionForAllPages
-            heading="Best Wallet development company"
+            heading="Mobile crypto wallet development company"
             ptag="Comfygen is a top-rated wallet development company. We build secure, scalable, and AI-powered mobile crypto wallets that put digital assets in the palm of your hand. As the world of cryptocurrency expands, businesses, startups, and enterprises need mobile crypto wallet development solutions that are not only safe but also intuitive and future-ready."
             ptag1="Our blockchain development expert team develops custom mobile crypto wallet apps for iOS and Android with advanced AI features like biometric security, multi-currency support, and fraud detection. Whether you’re a crypto exchange, DeFi platform, or a business adopting blockchain, our wallets are designed to grow with your needs and ensure smooth, reliable transactions."
             li="Bank-grade security with encryption, biometrics, and AI monitoring"

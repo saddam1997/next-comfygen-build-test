@@ -627,11 +627,11 @@ export default function rummy(props) {
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image"
-          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/og1.webp"
+          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/public-blockchain-development.webp"
         />
         <meta
           property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/og1.webp"
+          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/public-blockchain-development.webp"
         />
         <meta
           property="og:image:alt"
@@ -662,7 +662,7 @@ export default function rummy(props) {
         />
         <meta
           name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/og1.webp"
+          content="https://www.comfygen.com/comfygen-images/public-blockchain-development/public-blockchain-development.webp"
         />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 

@@ -871,17 +871,17 @@ export default function rummy(props) {
         />
         <meta
           name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp"
+          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/private-blockchain-development.webp"
         />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
         <meta
           property="og:image"
-          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp"
+          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/private-blockchain-development.webp"
         />
         <meta
           property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp"
+          content="https://www.comfygen.com/comfygen-images/private-blockchain-development/private-blockchain-development.webp"
         />
         <meta
           property="og:image:alt"

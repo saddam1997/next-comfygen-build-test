@@ -709,8 +709,8 @@ export default function rummy(props) {
       <meta property="og:image:type" content="image/webp" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp" />
-      <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp" />
+      <meta property="og:image" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/enterprise-blockchain-development.webp" />
+      <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/enterprise-blockchain-development.webp" />
       <meta property="og:image:alt" content="Enterprise Blockchain Development Company | Comfygen Technologies" />
       <meta property="og:url" content="https://www.comfygen.com/enterprise-blockchain-development" />
       <meta property="og:title" content="Enterprise Blockchain Development Company" />
@@ -719,7 +719,7 @@ export default function rummy(props) {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Enterprise Blockchain Development | Comfygen Technologies" />
       <meta name="twitter:description" content="Comfygen Technologies offers secure, scalable enterprise blockchain development solutions to power innovation and streamline business operations." />
-      <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp" />
+      <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/enterprise-blockchain-development.webp" />
       <meta name="twitter:site" content="@Comfygen_Tech" />
 
       <script

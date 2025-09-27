@@ -936,11 +936,11 @@ export default function Blockchain(props) {
         />
         <meta
           property="og:image"
-          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp"
+          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/blockchain-development.webp"
         />
         <meta
           property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp"
+          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/blockchain-development.webp"
         />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
@@ -966,7 +966,7 @@ export default function Blockchain(props) {
         />
         <meta
           name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp"
+          content="https://www.comfygen.com/comfygen-images/blockchain-development-new/blockchain-development.webp"
         />
 
         <script
