@@ -48,7 +48,7 @@ const featuresData: Feature[] = [
       {
         details: "Mobile Crypto Wallet Development",
         emoji: "",
-        content: "Comfygen provides top-notch mobile crypto wallet development service for iOS and Android with biometric authentication, QR-code payments, and real-time price tracking."
+        content: "Comfygen provides <a href='- https://www.comfygen.com/mobile-crypto-wallet-development' class='text-blue-600'>top-notch mobile crypto wallet development</a> service for iOS and Android with biometric authentication, QR-code payments, and real-time price tracking."
       },
       {
         details: "Web & Desktop Wallet Development",
