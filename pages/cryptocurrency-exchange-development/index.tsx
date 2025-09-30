@@ -573,7 +573,7 @@ export default function Ecommerce(props) {
               {JSON_DATA.servicesData2.map((elem, num) => {
                 const { title, description } = elem;
                 return (
-                  <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                  <div key={title} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                     <h3
                       className="text-2xl text-[#212121] font-semibold"
                       dangerouslySetInnerHTML={{ __html: title }}
@@ -601,7 +601,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.LeadingSoftware.map((elem) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                         {num}
                       </div>
@@ -668,7 +668,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.FutureDriven.map((elem) => {
                   const { title, desc } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <h3 className="text-2xl text-[#212121] font-semibold">
                         {title}
                       </h3>
@@ -751,7 +751,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.CloneSolutions.map((elem) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                         {num}
                       </div>

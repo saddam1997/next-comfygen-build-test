@@ -667,7 +667,7 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
                 {JSON_DATA.FutureDriven2.map((elem) => {
                   const { title, desc } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <h3 className="text-2xl text-[#212121] font-semibold">
                         {title}
                       </h3>
@@ -758,7 +758,7 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
                 {JSON_DATA.IndustryApplications.map((elem) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                         {num}
                       </div>

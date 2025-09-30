@@ -517,8 +517,8 @@ export default function Ecommerce(props) {
         <meta name="twitter: image" content="https://www.comfygen.com/comfygen-images/cryptocurrency-mlm-software-development/cryptocurrency-mlm-software-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
 
         <meta
@@ -720,7 +720,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.MLM.map((elem) => {
                   const { title, decs } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <h3 className="text-2xl text-[#212121] font-semibold">
                         {title}
                       </h3>
@@ -760,7 +760,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.Advantages.map((elem) => {
                   const { title, decs } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <h3 className="text-2xl text-[#212121] font-semibold">
                         {title}
                       </h3>

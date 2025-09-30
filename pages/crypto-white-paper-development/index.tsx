@@ -112,7 +112,7 @@ const Services = [
   },
 ];
 
-export default function MultiChain(props) {
+export default function MultiChain(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -459,8 +459,8 @@ export default function MultiChain(props) {
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
         {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />

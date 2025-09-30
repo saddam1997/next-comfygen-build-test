@@ -280,7 +280,7 @@ class ContactFrom extends Component<{}, any> {
                 </div>
               ) : null}
             </div>
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <label htmlFor="stdCode">Enter Number</label>
               <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7] focus:font-normal">
                 <Select
@@ -341,7 +341,73 @@ class ContactFrom extends Component<{}, any> {
                   className="p-2 w-full focus:outline-none bg-transparent focus:font-normal border-l border-[#000]/10"
                 />
               </div>
+            </div> */}
+
+            <div className="space-y-2">
+              <label htmlFor="stdCode">Enter Number</label>
+              <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7]">
+                {/* Country Code Dropdown */}
+                <Select
+                  options={JSON_DATA.Country?.map((ele) => ({
+                    name: ele.name,
+                    label: `${ele.flag} ${ele.stdCode}`,
+                    value: ele.stdCode,
+                  }))}
+                  value={
+                    this.state.stdCode
+                      ? JSON_DATA.Country?.map((ele) => ({
+                        name: ele.name,
+                        label: `${ele.flag} ${ele.stdCode}`,
+                        value: ele.stdCode,
+                      })).find((ele) => ele.value === this.state.stdCode)
+                      : null
+                  }
+                  onChange={(selectedOption) => {
+                    this.setState({ stdCode: selectedOption.value });
+                    // clear error if any
+                    this.setState((prevState) => ({
+                      errorsContactUs: { ...prevState.errorsContactUs, stdCode: "" },
+                    }));
+                  }}
+                  className="text-sm w-28 bg-transparent"
+                  getOptionValue={(option) => option.name}
+                  components={{
+                    DropdownIndicator: () => null,
+                    IndicatorSeparator: () => null,
+                  }}
+                  styles={{
+                    control: (base, state) => ({
+                      ...base,
+                      border: "none",
+                      backgroundColor: "transparent",
+                      boxShadow: state.isFocused ? "none" : base.boxShadow,
+                      cursor: "pointer",
+                    }),
+                    placeholder: (base) => ({
+                      ...base,
+                      color: "gray",
+                    }),
+                  }}
+                />
+
+                {/* Mobile Number Input */}
+                <input
+                  type="text"
+                  name="mobNo"
+                  value={this.state.fieldsContactUs["mobNo"] || ""}
+                  onChange={this.inputChange}
+                  placeholder="Enter Whatsapp number"
+                  className="p-2 w-full focus:outline-none bg-transparent border-l border-[#000]/10"
+                />
+              </div>
+              {this.state.errorsContactUs["stdCode"] && (
+                <div className="text-red-500 text-sm">{this.state.errorsContactUs["stdCode"]}</div>
+              )}
+              {this.state.errorsContactUs["mobNo"] && (
+                <div className="text-red-500 text-sm">{this.state.errorsContactUs["mobNo"]}</div>
+              )}
             </div>
+
             <div className="space-y-2 ">
               <label className="text-base">Subject</label>
               <input

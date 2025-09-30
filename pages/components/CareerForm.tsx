@@ -117,7 +117,7 @@ const Form = () => {
           <div className="grid lg:grid-cols-2 lg:gap-16 gap-8 items-start">
             <div>
               <h2 className="lg:text-4xl text-3xl text-[#fff] text-start font-semibold">
-                Contact us anytime for quick assistance
+                Contact us anytime for quick assistance 
               </h2>
               <div className="space-y-5 mt-8">
                 <a

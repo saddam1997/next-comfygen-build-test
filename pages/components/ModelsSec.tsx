@@ -45,7 +45,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
               {Whycomfygen.map((elem: any, index: any) => {
                 const { title, num, desc,desc1 } = elem;
                 return (
-                  <div className="p-4 mt-2 bg-white rounded-lg cursor-pointer w-full"
+                  <div key={num} className="p-4 mt-2 bg-white rounded-lg cursor-pointer w-full"
                     onClick={() => setCurrentCount(currentCount === index ? false : index)}>
                     <div key={num} className="flex justify-between w-full text-base font-medium text-left text-black bg-white rounded-lg md:text-lg ">
                       <span>{title}</span>

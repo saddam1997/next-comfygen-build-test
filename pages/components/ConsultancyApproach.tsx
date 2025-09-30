@@ -16,8 +16,8 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                 <div className="lg:flex items-start lg:space-x-10 lg:space-y-0 space-y-6 w-full gap-10">
 
                     <div className="w-full lg:text-left">
-                        {Head.map((elem) => (
-                            <div key={elem.num} className="w-full lg:text-left">
+                        {Head.map((elem:any) => (
+                            <div key={elem.title} className="w-full lg:text-left">
                                 <div className="space-y-6">
                                     <Image
                                         className=""
@@ -47,9 +47,9 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                     </div>
 
                     <div className="w-full space-y-4">
-                        {ItemData.map((elem, index) => (
+                        {ItemData.map((elem:any, index:any) => (
                             <div
-                            key={elem.num}
+                            key={index}
                             className={`p-4 mt-2 border border-[#5556D1]/60 rounded-lg cursor-pointer w-full ${
                                 currentCount === index ? "bg-[#5556D1]/10" : "bg-[#fff]"
                             }`}

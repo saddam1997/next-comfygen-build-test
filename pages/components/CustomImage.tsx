@@ -6,12 +6,15 @@ export default function CustomImage({ alt, ...props }) {
     <Image
       {...props}
       src={src}
-      alt={alt} 
+      alt={alt}
       onError={() => setSrc('https://www.comfygen.com/images/defaultImage.png')}
       placeholder="blur"
       blurDataURL="https://www.comfygen.com/images/defaultImage.png"
       width={1280}
       height={720}
+      unoptimized
+      priority={true}
+      quality={75}
 
     />
   );

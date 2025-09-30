@@ -172,7 +172,7 @@ const latesttech = [
 const techDataForPage1 = {
   All: [
     {
-      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-ewallet-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
       head: "Retail eWallet App",
       name: "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
       num: "1",
@@ -639,7 +639,7 @@ export default function Ecommerce(props) {
           heading="Leading eWallet App Development Company for Startups & Enterprises"
           description1="Whether you’re a startup ready to launch a cutting-edge digital wallet or an established enterprise looking to modernize your payment systems, Comfygen is your trusted partner for bespoke eWallet app development. We understand the dynamic fintech landscape and create custom eWallet solutions designed to meet your business’s unique requirements, helping you stay competitive and grow."
           description2="Our experienced team of developers and fintech specialists focuses on delivering secure, scalable, and feature-rich eWallet apps. By leveraging the latest technologies such as biometric authentication, real-time transaction tracking, and seamless payment gateway integrations, we ensure a smooth and trustworthy user experience. At Comfygen, innovation meets functionality to power your digital wallet with secure transactions, enhanced user engagement, and effortless financial management."
-          imageSrc="https:/www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-about.webp"
+          imageSrc="https:/www.comfygen.com/comfygen-images/ewallet-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />

@@ -456,7 +456,7 @@ const Finance = [
     name: "Insurance App Development",
     url: "/insurance-app-development",
   },
-  
+
   {
     num: "10",
     name: "Islamic Banking App Development",
@@ -1964,9 +1964,9 @@ export default function DesktopNav(props: any) {
                         {Game1.map((elem: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <a href={url}>
-                              <li
-                                key={num}
+                            <li key={num}>
+                              <a
+                                href={url}
                                 className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
                               >
                                 <Image
@@ -1983,8 +1983,8 @@ export default function DesktopNav(props: any) {
                                     {dec}
                                   </span>
                                 </div>
-                              </li>
-                            </a>
+                              </a>
+                            </li>
                           );
                         })}
                       </ul>
@@ -2040,26 +2040,28 @@ export default function DesktopNav(props: any) {
                             {Sports.map((elem: any) => {
                               const { name, num, img, dec, url } = elem;
                               return (
-                                <a
-                                  href={url}
-                                  key={num}
-                                  className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                >
-                                  <Image
-                                    src={img}
-                                    alt={name}
-                                    height={40}
-                                    width={40}
-                                  />
-                                  <div className="space-y-4 cursor-pointer">
-                                    <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                      {name}
-                                    </p>
-                                    <span className="text-[#212121]/80 text-sm font-normal">
-                                      {dec}
-                                    </span>
-                                  </div>
-                                </a>
+                                <li key={num}>
+                                  <a
+                                    href={url}
+
+                                    className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                  >
+                                    <Image
+                                      src={img}
+                                      alt={name}
+                                      height={40}
+                                      width={40}
+                                    />
+                                    <div className="space-y-4 cursor-pointer">
+                                      <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                        {name}
+                                      </p>
+                                      <span className="text-[#212121]/80 text-sm font-normal">
+                                        {dec}
+                                      </span>
+                                    </div>
+                                  </a>
+                                </li>
                               );
                             })}
                           </ul>
@@ -2069,26 +2071,28 @@ export default function DesktopNav(props: any) {
                         {Sports1.map((elem: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <a
-                              href={url}
-                              key={num}
-                              className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                            >
-                              <Image
-                                src={img}
-                                alt={name}
-                                height={40}
-                                width={40}
-                              />
-                              <div className="space-y-4 cursor-pointer">
-                                <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                  {name}
-                                </p>
-                                <span className="text-[#212121]/80 text-sm font-normal">
-                                  {dec}
-                                </span>
-                              </div>
-                            </a>
+                            <li key={num}>
+                              <a
+                                href={url}
+
+                                className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                              >
+                                <Image
+                                  src={img}
+                                  alt={name}
+                                  height={40}
+                                  width={40}
+                                />
+                                <div className="space-y-4 cursor-pointer">
+                                  <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                    {name}
+                                  </p>
+                                  <span className="text-[#212121]/80 text-sm font-normal">
+                                    {dec}
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
                           );
                         })}
                       </ul>
@@ -2097,26 +2101,28 @@ export default function DesktopNav(props: any) {
                         {Sports2.map((elem: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <a
-                              href={url}
-                              key={num}
-                              className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                            >
-                              <Image
-                                src={img}
-                                alt={name}
-                                height={40}
-                                width={40}
-                              />
-                              <div className="space-y-4 cursor-pointer">
-                                <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                  {name}
-                                </p>
-                                <span className="text-[#212121]/80 text-sm font-normal">
-                                  {dec}
-                                </span>
-                              </div>
-                            </a>
+                            <li key={num}>
+                              <a
+                                href={url}
+
+                                className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                              >
+                                <Image
+                                  src={img}
+                                  alt={name}
+                                  height={40}
+                                  width={40}
+                                />
+                                <div className="space-y-4 cursor-pointer">
+                                  <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                    {name}
+                                  </p>
+                                  <span className="text-[#212121]/80 text-sm font-normal">
+                                    {dec}
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
                           );
                         })}
                       </ul>
@@ -2173,26 +2179,28 @@ export default function DesktopNav(props: any) {
                           {company.map((elem: any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
-                              <a
-                                href={url}
-                                key={num}
-                                className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                              >
-                                <Image
-                                  src={img}
-                                  alt={name}
-                                  height={40}
-                                  width={40}
-                                />
-                                <div className="space-y-4 cursor-pointer">
-                                  <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                    {name}
-                                  </p>
-                                  <span className="text-[#212121]/80 text-sm font-normal">
-                                    {dec}
-                                  </span>
-                                </div>
-                              </a>
+                              <li key={num}>
+                                <a
+                                  href={url}
+
+                                  className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                >
+                                  <Image
+                                    src={img}
+                                    alt={name}
+                                    height={40}
+                                    width={40}
+                                  />
+                                  <div className="space-y-4 cursor-pointer">
+                                    <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                      {name}
+                                    </p>
+                                    <span className="text-[#212121]/80 text-sm font-normal">
+                                      {dec}
+                                    </span>
+                                  </div>
+                                </a>
+                              </li>
                             );
                           })}
                         </ul>
@@ -2202,26 +2210,28 @@ export default function DesktopNav(props: any) {
                           {company1.map((elem: any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
-                              <a
-                                href={url}
-                                key={num}
-                                className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                              >
-                                <Image
-                                  src={img}
-                                  alt={name}
-                                  height={40}
-                                  width={40}
-                                />
-                                <div className="space-y-4 cursor-pointer">
-                                  <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                    {name}
-                                  </p>
-                                  <span className="text-[#212121]/80 text-sm font-normal">
-                                    {dec}
-                                  </span>
-                                </div>
-                              </a>
+                              <li key={num}>
+                                <a
+                                  href={url}
+
+                                  className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                >
+                                  <Image
+                                    src={img}
+                                    alt={name}
+                                    height={40}
+                                    width={40}
+                                  />
+                                  <div className="space-y-4 cursor-pointer">
+                                    <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                      {name}
+                                    </p>
+                                    <span className="text-[#212121]/80 text-sm font-normal">
+                                      {dec}
+                                    </span>
+                                  </div>
+                                </a>
+                              </li>
                             );
                           })}
                         </ul>

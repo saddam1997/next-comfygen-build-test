@@ -521,8 +521,8 @@ export default function Ecommerce(props) {
           href="https://www.comfygen.com/wallet-development-company"
         />
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"></meta>
 
@@ -572,34 +572,9 @@ export default function Ecommerce(props) {
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_DE" />
         <meta property="og:locale:alternate" content="en_AE" />
-        {/* <meta
-          property="og:url"
-          content="https://www.comfygen.com/wallet-development-company"
-        /> */}
-        {/* <meta
-          property="og:title"
-          content="Wallet Development Company | E-Wallet & Crypto Wallet Solutions – Comfygen"
-        /> */}
-        {/* <meta
-          property="og:description"
-          content="Comfygen is a leading wallet development company delivering secure, scalable, and user-friendly e-wallets and crypto wallets. From mobile payment wallets to enterprise crypto solutions, we build custom and white-label wallets with advanced security, multi-currency support, and seamless integrations."
-        /> */}
-        {/* <meta
-          property="og:image"
-          content="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-company.webp"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
-        /> */}
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        {/* <meta
-          property="og:image:alt"
-          content="Wallet Development Company"
-        /> */}
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -680,11 +655,7 @@ export default function Ecommerce(props) {
           description2="Security at the Core – Multi-layer encryption, authentication, and fraud prevention."
           description3="User-Centric Design – Simple, intuitive interfaces that work for both everyday users and advanced traders."
           description4="Scalable Architecture – Flexible builds that adapt as your customer base and transaction volume grow."
-          points={[
-
-          ]}
-
-
+          points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -713,7 +684,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.Emerging.map((elem) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={title} className={` relative`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >
@@ -744,8 +715,6 @@ export default function Ecommerce(props) {
         </section>
 
         <SolutionsFeature title="Key Features We Deliver in Wallet Development" subtitle="At Comfygen, we provide wallet development solutions tailored to your business needs, whether it’s an e-wallet or a crypto wallet. Every wallet we develop is packed with features that ensure top-level security, user-friendly design, scalability, and regulatory compliance. Our goal is to deliver best wallets that are not only reliable but also flexible enough to grow with your business:" data={JSON_DATA.servicesData1} />
-
-
 
         <IndustriesServe
           heading="Industries We Serve as a Wallet Development Company"

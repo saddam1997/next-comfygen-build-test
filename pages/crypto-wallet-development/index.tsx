@@ -593,8 +593,8 @@ export default function Ecommerce(props) {
 
 
         {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -741,7 +741,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.FutureDriven2.map((elem) => {
                   const { title, desc } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <h3 className="text-2xl text-[#212121] font-semibold">
                         {title}
                       </h3>

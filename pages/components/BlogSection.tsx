@@ -25,7 +25,7 @@ export default function BlogSection(props: any) {
                 element ? (
                   <a 
                     href={element.link} 
-                    key={index}  
+                   key={element.link || element.id}
                     className="block"
                   >
                     <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">

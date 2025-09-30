@@ -73,7 +73,7 @@ export default function HeroSectionForAllPages(props: any) {
 
             <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal">
               {props.li && (
-                <li className="flex items-start gap-2">
+                <li key={props.li} className="flex items-start gap-2">
                   <div className="w-3 h-3 rounded-full border border-white mt-1.5 flex-shrink-0"></div>
                   <span dangerouslySetInnerHTML={{ __html: props.li }} />
                 </li>
