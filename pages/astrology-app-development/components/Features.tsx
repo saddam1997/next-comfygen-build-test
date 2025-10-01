@@ -77,11 +77,11 @@ const Features: React.FC = () => {
   return (
     <section className="bg-center bg-repeat bg-fixed "
     //  style={{ backgroundImage: `url("https://www.comfygen.com/img/grid-box-dark.svg")` }}
-     >
+    >
       <div className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="space-y-2">
           <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
-          We Develop Astrology Apps With Advanced Panel Features
+            We Develop Astrology Apps With Advanced Panel Features
           </h2>
           <p className="text-center text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">At Comfygen, we integrate cutting-edge features into our astrology app development services to enhance user experience, streamline management, and optimize astrology consultations. Our custom astrology app solutions include advanced panels for users, astrologers, and administrators, ensuring a seamless and feature-rich platform.</p>
         </div>
@@ -111,6 +111,9 @@ const Features: React.FC = () => {
                   width={500}
                   height={500}
                   className="w-full md:h-[300px] lg:h-[400px] pb-4 border border-[#fff]/10 rounded-lg"
+                  priority={true}
+                  quality={75}
+                  unoptimized
                 />
               </div>
             )}

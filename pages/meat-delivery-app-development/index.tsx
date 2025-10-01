@@ -515,8 +515,8 @@ export default function ClinicalApp(props: any) {
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
         {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -672,7 +672,7 @@ export default function ClinicalApp(props: any) {
                 {JSON_DATA.Emerging.map((elem) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={title} className={` relative`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >
@@ -749,42 +749,7 @@ export default function ClinicalApp(props: any) {
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
-
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
-
-
-
-
-
-
-
-
-        {/* <ContactFromCenter />
-
-        <AppCard
-          title="Take Your Business to the Next Level with our Custom Delivery App Development Solutions"
-          subtitle="Comfygen is a <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/mobile-app-development'>mobile app development company</a>  that provides custom delivery apps for a wide range of industries. Whatever your business type, we have scalable delivery apps that boost efficiency, streamline operations, and deliver a smooth user experience with real-time tracking, safe payments, and advanced features."
-          cards={CardClone}
-          openModal={openModal}
-        /> */}
-
-
-
-        {/* <NewPanel /> */}
-
-        {/* <CallToAction
-          heading="Ready to Build Your Food Delivery App?"
-          text="At Comfygen, we build simple and custom delivery apps for startups, small shops, and big businesses. From idea to launch, we take care of everything for you."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/delivery-app-development/call_to_action.webp"
-          imageAlt="Future of Technology"
-        /> */}
-
-
-
-        {/* 
-        <BlogSection initialData={initialData} /> */}
       </div>
     </>
   );

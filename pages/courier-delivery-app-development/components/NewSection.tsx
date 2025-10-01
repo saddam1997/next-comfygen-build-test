@@ -74,6 +74,7 @@ const NewSection = () => {
                                     className="object-contain bg-center "
                                     priority
                                     quality={75}
+                                    unoptimized
                                 />
                             </div>
                         </div>

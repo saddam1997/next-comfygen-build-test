@@ -683,8 +683,8 @@ export default function Ecommerce(props) {
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
       <meta name="mobile-web-app-capable" content="yes" />
@@ -825,7 +825,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.LeadingSoftware.map((elem) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                    <div key={title} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                         {num}
                       </div>
@@ -892,7 +892,7 @@ export default function Ecommerce(props) {
                 {JSON_DATA.FoodAppMaker.map((elem) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={title} className={` relative`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >

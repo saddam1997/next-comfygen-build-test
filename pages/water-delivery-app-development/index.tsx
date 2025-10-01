@@ -573,7 +573,7 @@ export default function ClinicalApp(props: any) {
           heading="Explore Our On-Demand Water Delivery App Development Portfolio"
           description="Visit our on-demand water delivery app development portfolio for user-friendly water delivery app solutions designed for startups, local vendors, and large-scale distributors. From subscription-based water delivery to real-time tracking, our apps are built to streamline operations and deliver the best customer experience."
         />
-   
+
         <NewPanel />
 
         <WhoCanStart
@@ -603,7 +603,7 @@ export default function ClinicalApp(props: any) {
                 {JSON_DATA.Emerging.map((elem) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={title} className={` relative`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >
@@ -660,7 +660,7 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
- <DeliverySection hideUrl='water-delivery-app-development'  />
+        <DeliverySection hideUrl='water-delivery-app-development' />
         <HireDeveloper
           heading="Hire Online Water Delivery App Developers"
           text="Want to launch a feature-rich water delivery app? Hire expert <a class='underline font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >water delivery mobile app developers</a> from Comfygen to transform your bottled and packaged water business into a customer-friendly, high-performance digital platform. We build customized water delivery apps with subscription models, GPS tracking, secure payment gateways, and real-time order management. Get fast delivery, post-launch support, and scalable solutions tailored to your business needs."

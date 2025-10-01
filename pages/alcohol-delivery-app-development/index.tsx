@@ -628,7 +628,7 @@ export default function ClinicalApp(props: any) {
                 {JSON_DATA.Emerging.map((elem) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={title} className={` relative`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >

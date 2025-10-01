@@ -574,8 +574,8 @@ export default function Ecommerce(props) {
 
         {/* <!-- Compatibili/ty Meta → */}
         /
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
 
         {/* <!-- Viewport and/ Mobile Optimization → */}

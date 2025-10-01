@@ -406,8 +406,8 @@ export default function ClinicalApp(props: any) {
     href="https://www.comfygen.com/language-learning-app-development"
   />
   <meta name="robots" content="INDEX, FOLLOW" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"

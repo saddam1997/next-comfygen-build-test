@@ -4,7 +4,7 @@ import JSON_DATA from "./json/country.json";
 import Image from 'next/image';
 
 class ContactFromHeader extends Component<{}, any> {
-  constructor(props) {
+  constructor(props:any) {
     super(props);
     this.state = {
       isLoading: "idle",
@@ -62,25 +62,7 @@ class ContactFromHeader extends Component<{}, any> {
         body: JSON.stringify(data),
       };
       this.setState({ submitted: true });
-      // return (
-      //   fetch(`https://www.comfygen.com/api/v1/createContactUs1111`, requestOptions)
-      //     .then((res) => res.json())
-      //     .then((data) => {
-      //       if (data && data.code == 0) {
-      //         setTimeout(() => {
-      //           router.push('/thankyou')
-      //           this.setState({ fieldsContactUs: {} });
-      //           this.setState({ submitted: false })
-      //         }, 1000);
-      //       } else {
-      //         this.setState({ submitted: false, errorMessage: data.message });
-      //         setTimeout(() => {
-      //           this.setState({ errorMessage: "" });
-      //         }, 5000);
-
-      //       }
-      //     })
-      // );
+     
 
       return (
         // fetch(`https://www.comfygen.com/api/v1/createContactUs1111`, requestOptions)
@@ -171,28 +153,10 @@ class ContactFromHeader extends Component<{}, any> {
         "Please enter a valid 10 to 15 digit Mobile No.!";
     }
 
-    // //subject
-    // if (!fieldsContactUs["subject"]) {
-    //   formIsValid = false;
-    //   errorsContactUs["subject"] = "Please enter Comment!";
-    // }
-    //msg
     if (!fieldsContactUs["msg"]) {
       formIsValid = false;
       errorsContactUs["msg"] = "Please select Message!";
     }
-    // else if ('done') {
-    //   this.setState({ submitted: true });
-    //   router.push('/thankyou')
-    //   setTimeout(() => {
-    //     this.setState({ submitted: false });
-    //   }, 3000
-    //   );
-    // }
-    console.log(
-      "errorsContactUs___________________________errorsContactUs",
-      errorsContactUs
-    );
     this.setState({ errorsContactUs: errorsContactUs });
     return formIsValid;
   };
@@ -203,10 +167,7 @@ class ContactFromHeader extends Component<{}, any> {
       this.setState({ isLoading: "success" });
     }, 2000);
   };
-  // pushHandel = () => {
-  //   this.props.window.push('/dashboard');
-  // };
-
+ 
   handleCountryChange = (event) => {
     let errorsContactUs = {};
     if (event.target.value != "SELECTED") {

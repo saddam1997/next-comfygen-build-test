@@ -91,7 +91,7 @@ const Features: React.FC = () => {
     <div className="lg:py-16 py-10 bg-[#F5F5F9]">
       <div className="space-y-2">
         <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
-         We Develop Food Delivery Apps With Advanced Panel Features
+          We Develop Food Delivery Apps With Advanced Panel Features
         </h2>
         <p className="text-center text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
           At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to ensure a smooth experience for customers, restaurants, drivers, and administrators. Our food delivery apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform.
@@ -124,6 +124,9 @@ const Features: React.FC = () => {
                 width={640}
                 height={538}
                 className="w-full h-auto object-cover rounded-lg"
+                priority={true}
+                quality={75}
+                unoptimized
               />
 
             </div>

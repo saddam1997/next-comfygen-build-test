@@ -415,8 +415,8 @@ export default function ClinicalApp(props: any) {
         <meta name="description" content="Looking for a top salon app development company? Comfygen builds custom salon and spa apps with online booking, CRM, payment integration, and real-time scheduling. Boost your beauty business with scalable, on-demand app solutions tailored for salons, spas, and wellness brands." />
         <link rel="canonical" href="https://www.comfygen.com/salon-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -70,9 +70,8 @@ function PortfolioSec({
                 return (
                   <div key={index} className="px-2">
                     <div
-                      className={`p-6 rounded-xl transition-opacity duration-300 min-h-max ${
-                        index === activeSlide ? "opacity-100" : "opacity-50"
-                      } border border-[#000]/10 ${bgColor}`}
+                      className={`p-6 rounded-xl transition-opacity duration-300 min-h-max ${index === activeSlide ? "opacity-100" : "opacity-50"
+                        } border border-[#000]/10 ${bgColor}`}
                     >
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
                         <div>
@@ -88,9 +87,11 @@ function PortfolioSec({
                             className="h-[160] md:h-[400px] object-contain"
                             src={slide.image}
                             alt={slide.title}
-                            unoptimized
                             width={500}
                             height={400}
+                            unoptimized
+                            priority={true}
+                            quality={75}
                           />
                         </div>
                         <div>

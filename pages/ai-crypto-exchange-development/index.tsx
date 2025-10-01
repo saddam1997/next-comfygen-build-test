@@ -517,7 +517,7 @@ export default function Ecommerce(props) {
           "AI-driven security protocols for robust protection",
           "Scalable solutions to support high-frequency and large-volume trading"
           ]}
-          imageSrc=""
+          imageSrc="https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-about.webp"
           link="/about-us"
           linkText="Explore More"
         />

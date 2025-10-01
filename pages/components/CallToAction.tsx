@@ -39,6 +39,9 @@ const CallToAction = ({
                                 alt={imageAlt || "Call to Action"}
                                 width={800}
                                 height={600}
+                                unoptimized
+                                priority={true}
+                                quality={75}
                             />
                         </LazyLoad>
                     </div>

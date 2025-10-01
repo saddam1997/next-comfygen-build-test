@@ -16,7 +16,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
               {Qa.map((elem: any, index: any) => {
                 const { title, btn, desc, desc1, num, url, head } = elem;
                 return (
-                  <div key={num} className="w-full space-y-6 lg:text-left">
+                  <div key={index} className="w-full space-y-6 lg:text-left">
                     <div className="space-y-3">
                       <p className="text-lg font-light text-gray-100 uppercase xl:text-xl">{head}</p>
                       <h2 className="text-2xl font-bold text-white lg:text-4xl">
@@ -45,7 +45,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
               {Whycomfygen.map((elem: any, index: any) => {
                 const { title, num, desc,desc1 } = elem;
                 return (
-                  <div key={num} className="p-4 mt-2 bg-white rounded-lg cursor-pointer w-full"
+                  <div key={index} className="p-4 mt-2 bg-white rounded-lg cursor-pointer w-full"
                     onClick={() => setCurrentCount(currentCount === index ? false : index)}>
                     <div key={num} className="flex justify-between w-full text-base font-medium text-left text-black bg-white rounded-lg md:text-lg ">
                       <span>{title}</span>

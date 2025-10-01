@@ -22,7 +22,7 @@ const DeliverySection = (props) => {
             title: "Delivery App Development",
             description: "Comfygen offers custom delivery app development for startups and enterprises. From food and grocery to logistics and courier, we build secure, scalable, and feature-rich delivery apps that boost business growth and customer satisfaction.",
             link: "https://www.comfygen.com/delivery-app-development",
-            image: "https://www.comfygen.com/comfygen-images/delivery-app-development/Deliery.webp",
+            image: "https://www.comfygen.com/comfygen-images/delivery-app-development/logistics-delivery-app-development-services.webp",
             gradient: "from-orange-500 to-red-500",
         },
         {
@@ -85,7 +85,7 @@ const DeliverySection = (props) => {
         //     image: "https://www.comfygen.com/comfygen-images/delivery-app-development/logistics-delivery-app-development-services.webp",
         //     gradient: "from-teal-500 to-cyan-500"
         // },
-        
+
         // {
         //     title: "Liquor Delivery App Development",
         //     description: "Comfygen builds liquor delivery apps with age verification, secure payments, and doorstep delivery. Launch your online alcohol delivery service with our feature-rich liquor delivery app development solutions.",
@@ -210,8 +210,12 @@ const DeliverySection = (props) => {
                                 <Image
                                     src={app.image}
                                     alt={app.title}
-                                    fill
+                                    height={740}
+                                    width={1240}
                                     className="object-contain transition-transform duration-500 group-hover:scale-110"
+                                    priority={true}
+                                    quality={75}
+                                    unoptimized
                                 />
                             </div>
 
@@ -250,8 +254,8 @@ const DeliverySection = (props) => {
     );
 };
 
-DeliverySection.defaultProps = {
-    hideUrl: ""
-};
+// DeliverySection.defaultProps = {
+//     hideUrl: ""
+// };
 
 export default DeliverySection;

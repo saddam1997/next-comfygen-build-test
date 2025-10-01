@@ -72,7 +72,7 @@ const Features: React.FC = () => {
       <div className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95 lg:py-16 py-10">
         <div className="space-y-2">
           <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold text-white">
-          We Develop Tutor Apps With Advanced Panel Features
+            We Develop Tutor Apps With Advanced Panel Features
           </h2>
           <p className="text-white lg:w-1/2 mx-auto text-center">At Comfygen, we integrate cutting-edge features into our tutor app development services to enhance user experience, streamline management, and optimize learning processes. Our on-demand tutor mobile app development services include advanced panels for students, tutors, and administrators, securing a seamless and efficient platform.</p>
         </div>
@@ -102,6 +102,9 @@ const Features: React.FC = () => {
                   width={1920}
                   height={1280}
                   className="w-full border border-[#fff]/10 rounded-lg"
+                  priority={true}
+                  quality={75}
+                  unoptimized
                 />
               </div>
             )}

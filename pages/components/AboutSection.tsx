@@ -28,11 +28,11 @@ const AboutSection = (props) => {
               alt={heading}
               width={907}
               height={762}
-              unoptimized
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 907px"
               className="rounded-2xl"
-              priority={true} 
-              quality={75} 
+              unoptimized
+              priority={true}
+              quality={75}
             />
           </div>
           <div>
@@ -149,8 +149,8 @@ export default AboutSection;
 //               unoptimized
 //               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 907px"
 //               className="rounded-2xl"
-//               priority={true} 
-//               quality={75} 
+//               priority={true}
+//               quality={75}
 //             />
 //           </div>
 //           <div>

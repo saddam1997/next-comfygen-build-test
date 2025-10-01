@@ -20,8 +20,8 @@ const ItemDataSection = ({
       <div className="items-center space-y-10 lg:flex lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="lg:flex items-start lg:space-x-10 lg:space-y-0 space-y-6 w-full gap-10">
           <div className="w-full lg:text-left">
-            {Head?.map((elem) => (
-              <div key={elem.num} className="w-full lg:text-left">
+            {Head?.map((elem: any, index: any) => (
+              <div key={index} className="w-full lg:text-left">
                 <div className="space-y-6">
                   <Image
                     className=""
@@ -30,6 +30,8 @@ const ItemDataSection = ({
                     unoptimized
                     width={754}
                     height={210}
+                    priority={true}
+                    quality={75}
                   />
                   <div className="space-y-2 ">
                     <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
@@ -54,12 +56,11 @@ const ItemDataSection = ({
           </div>
 
           <div className="w-full space-y-4">
-            {ItemData?.map((elem, index) => (
+            {ItemData?.map((elem: any, index: any) => (
               <div
-                key={elem.num}
-                className={`p-4 mt-2 border border-[#5556D1]/60 rounded-lg cursor-pointer w-full ${
-                  currentCount === index ? "bg-[#5556D1]/10" : "bg-[#fff]"
-                }`}
+                key={index}
+                className={`p-4 mt-2 border border-[#5556D1]/60 rounded-lg cursor-pointer w-full ${currentCount === index ? "bg-[#5556D1]/10" : "bg-[#fff]"
+                  }`}
                 onClick={() =>
                   setCurrentCount(currentCount === index ? null : index)
                 }
@@ -75,9 +76,8 @@ const ItemDataSection = ({
                   )}
                 </div>
                 <div
-                  className={`pt-4 text-sm text-black ${
-                    currentCount === index ? "" : "hidden"
-                  }`}
+                  className={`pt-4 text-sm text-black ${currentCount === index ? "" : "hidden"
+                    }`}
                 >
                   {elem.desc}
                 </div>

@@ -623,7 +623,7 @@ export default function Blockchain(props) {
           title="Our Blockchain Wallet Development Services"
           description="Comfyen not just develops blockchain wallets; Our Blockchain wallet development engineer secures scalable gateways to the decentralized future. Our end-to-end blockchain wallet development services are designed to transform your vision into a Solid, user-friendly, and market-ready blockchain application."
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <ProcessSec
           title="Our company's Blockchain Wallet Development Process"

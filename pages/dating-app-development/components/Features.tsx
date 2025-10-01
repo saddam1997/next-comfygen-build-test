@@ -152,9 +152,9 @@ const Features: React.FC = () => {
 
           <div className="mt-2 py-2 ">
             {openedFeature.additionalDetails.map((detail, index) => (
-              <ul className=" ">
+              <ul  key={index} className=" ">
                 <li
-                  key={index}
+                 
                   className="py-4 border-b border-[#5556D1] flex justify-start place-items-center gap-8"
                 >
                   <Image

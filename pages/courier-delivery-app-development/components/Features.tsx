@@ -57,10 +57,10 @@ const featuresData: Feature[] = [
       { details: "Multi-Branch & Franchise Support", emoji: "", content: "" },
       { details: "AI-Based Insights & Reporting", emoji: "", content: "" },
       { details: "Multi-Language & Localization Options", emoji: "", content: "" },
-       { details: "Data Security & Privacy Controls", emoji: "", content: "" },
+      { details: "Data Security & Privacy Controls", emoji: "", content: "" },
     ],
   },
-  
+
 ];
 
 const Features: React.FC = () => {
@@ -110,6 +110,9 @@ const Features: React.FC = () => {
                 width={640}
                 height={538}
                 className="w-full h-auto object-cover rounded-lg"
+                unoptimized
+                priority={true}
+                quality={75}
               />
 
             </div>
