@@ -175,7 +175,7 @@ export default function about(props) {
         <div className='overflow-hidden'>
             <Head>
                 <title>Swipe-Based Dating App Development | AI Matchmaking</title>
-                <link rel="canonical" href="https://www.comfygen.com/portfolio" />
+               
 
                 <meta name="description" content="Comfygen Technologies built a swipe-based dating app with AI matchmaking, secure chat, video calls & location-based matches. A scalable dating app development solution for modern users." />
 

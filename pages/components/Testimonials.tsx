@@ -121,7 +121,7 @@ function Responsive() {
       <div className="2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto w-11/12 py-10 lg:py-16">
         <div className="text-center space-y-4">
           <h2 className="text-4xl font-bold leading-[3rem] text-[#212121]">
-            We appreciate feedback From Our customers
+            We appreciate feedback From Our customers 
           </h2>
           <p className="lg:text-xl text-lg font-normal capitalize text-[#212121]">
             500+ Reviews Of Delighted Clients with clutch{" "}

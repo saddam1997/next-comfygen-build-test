@@ -104,7 +104,7 @@ const ClientTestimonials = ({
 
   return (
     <section className="lg:py-16 py-10 bg-white">
-      <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+      <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 h-full">
         <div className="space-y-3">
           <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
             {heading}
@@ -128,9 +128,9 @@ const ClientTestimonials = ({
               <BiChevronRight size={24} />
             </button>
           </div>
-          <Slider ref={sliderRef} {...settings} className="h-56">
+          <Slider ref={sliderRef} {...settings} className="sm:h-56 h-full">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="px-4 h-56">
+              <div key={index} className="px-4 sm:h-56 h-full">
                 <div className="p-6 space-y-4 rounded-[6px] shadow-lg border h-full">
                   <p className="text-gray-700 text-base">
                     {isExpanded && currentIndex === index

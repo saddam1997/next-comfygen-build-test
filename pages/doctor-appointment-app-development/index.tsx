@@ -22,6 +22,7 @@ import SolutionSec from "../componentsnew/SolutionSec";
 // import { IconBike, IconBolt, IconBriefcase, IconBuildingSkyscraper, IconBus, IconCar, IconPlane, IconShip, IconTruck } from "@tabler/icons-react";
 import WhyChoose from "../components/WhyChooseUs";
 import ClientTestimonials from "../components/ClientTestimonials";
+import Features from "./components/Features";
 const Tech = dynamic(() => import("./components/tech1"), {
   loading: () => <p>Loading...</p>,
 });
@@ -118,117 +119,306 @@ export default function Ecommerce(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      "addressLocality": "Jaipur, Rajasthan",
+      "addressRegion": "India",
+      "postalCode": "302006",
+      "telephone": "+91-958-786-7258"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+      "addressLocality": "Toronto",
+      "addressRegion": "Canada",
+      "postalCode": "M1G3S7",
+      "telephone": "+1 579-977-4475"
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Doctor Appointment App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Build custom doctor appointment apps with Comfygen Technologies. Feature-rich solutions include telemedicine, AI recommendations, online booking, and patient management for healthcare providers.",
+      "url": "https://www.comfygen.com/doctor-appointment-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/doctor-appointment-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "On-demand Doctor Appointment App Development",
+        "Telemedicine App Development",
+        "Hospital/Clinic Appointment App Development",
+        "Doctor Marketplace App Development",
+        "Doctor Consultation App Development",
+        "Doctor Consultation App Development",
+        "AI-Powered Doctor Appointment App Development",
+        "Blockchain Integration in Doctor Appointment App",
+        "IoT Integration in Doctor Appointment App"
+
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "UAE"],
+
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Next-Gen Doctor Appointment Apps for Healthcare | Comfygen",
+      "image": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/about-two.webp",
+      "description": "Comfygen Technologies develops next-gen doctor appointment apps with telemedicine, AI-driven features, patient notifications, and analytics tools for clinics, hospitals, and healthcare enterprises.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "800"
+      }
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Doctor Appointment App Development",
+        "item": "https://www.comfygen.com/doctor-appointment-app-development"
+
+      }]
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much does it cost to build a doctor appointment app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average doctor appointment app development cost is $15000-$40000. However, this is the basic cost, which might increase if you integrate more features, customise the app, hire a big team of developers, etc. So the cost of your project depends upon your requirements."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Does the doctor appointment app target the local market only?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not at all. It is an online consultation application, so one can also book for online consultation sitting from anywhere. In case the doctor feels like you better visit; he will suggest that you do that. Otherwise, people can choose a city, doctor, speciality, and everything to get the best online doctor consultation."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "How to build a doctor appointment app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is very clear that you are going to hire healthcare developers in the USA to build the product. But first you must have certain specific industry things; such as GDPR, HIPAA, ISO certification, support for FHIR, HL7, SMART on FHIR information exchange protocols, end-to-end connection encryption, two-factor authentication, Zero Trust or Castle and Moat information security, other Healthcare industry requirements. After having all of the above, at the last you hire a developer who is proficient in his skills and experience."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to build a doctor appointment app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The duration to build a doctor appointment app depends upon various things; such as how many features to integrate, customization on-going or not, extra designing elements or animation added or not, etc. Basic time to build a doctor appointment app is 2-3 months. If you have a large scale project to provide; that might increase the duration of development up to 5-6 months or more."
+        }
+
+
+      }]
+    }
+  ];
+
+
+
+
   return (
     <>
       <Head>
         <title>
-          Doctor on-demand appointment App Development Company In India & The
-          USA
+          Doctor Appointment App Development Company In India & The USA
         </title>
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/doctor-appointment-app-development"
-        />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Best Doctor Booking App Development Company In India & The USA"
-        />
-        <meta
-          property="og:description"
-          content="Comfygen is Top rated Doctor Appointment App Development Company In India & The USA. Enhance and update your Doctor Appointment app with our expertise. Tap into Comfygen Global Network to Hire On-Demand doctor appointment app developers Today!"
-        />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/doctor-appointment-app-development"
-        />
-        <meta property="og:site_name" content="Comfygen" />
-        <meta
-          property="article:publisher"
-          content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/"
-        />
-        <meta
-          property="article:modified_time"
-          content="2022-10-13T10:13:21+00:00"
-        />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/images/illuslator/banner_vector.webp?size=1024"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comfygentech" />
+
         <meta
           name="description"
-          content="Comfygen is Top rated On-demand Doctor Appointment App Development Company In India & The USA. Enhance and update your Doctor Appointment app with our expertise. Tap into Comfygen Global Network to Hire On-Demand doctor appointment app developers Today!"
+          content="Comfygen Technologies is a top doctor appointment app development company offering secure, scalable, AI-powered and telemedicine-enabled doctor appointment apps for clinics, hospitals, and startups."
         />
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:facebook_title"
-          content="Top Doctor Appointment App Development Company In India!"
-        />
-        <meta
-          property="og:facebook_description"
-          content="As the on-demand Doctor Appointment Development Company in India, Comfygen offers Top-Notch Online Doctor Booking Application Development Services in India for Android app development and iOS app development platform."
-        />
-        <meta
-          property="og:twitter_title"
-          content="The Best Doctor Appointment App | On-Demand Doctor App Development Company | Online Dr Booking App development Services | Doctor Scheduling App India | Comfygen"
-        />
-        <meta
-          property="og:twitter_description"
-          content="Comfygen offer top-notch Doctor Booking App Development Services in India, specializing in creating medical applications for doctors, clinics, and hospitals. We are dedicated to enhancing and updating your Doctor Appointment app. Find Top Talent Globally & Launch Your Project Today!"
-        />
-        <meta property="schema:type" content="Website" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="language" content="en-us" />
-        <meta
-          name="abstract"
-          content="Doctor Booking App Development Company | Doctor Appointment App Development Services | Comfygen"
-        />
-        <meta
-          name="summary"
-          content="We offer top-notch Doctor Booking App Development Services in India, specializing in creating medical applications for doctors, clinics, and hospitals. Our expert team is dedicated to enhancing and updating your Doctor Appointment app to meet the latest standards."
-        />
-        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+
+
+        {/* keywords */}
+        <meta name="keywords" content="On-demand Doctor Appointment App Development, Telemedicine App Development, Hospital Appointment App Development, Clinic Appointment App Development, Doctor Marketplace App Development, Doctor Consultation App Development, AI-Powered Doctor Appointment App Development, Blockchain Doctor Appointment App Development, IoT Doctor Appointment App Development" />
+
+
+        {/* <!-- Canonical Tag --> */}
+        <link rel="canonical" href="https://www.comfygen.com/doctor-appointment-app-development" />
+
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+
+        {/* <!-- Compatibility Meta → */}
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Viewport a/nd Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="My App" />
+
+        {/* <!-- New in iOS6 --> */}
+        {/* <!-- Author and Company Information --> */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta
-          name="owner"
-          content="A Founder is one of the individuals who helped establish a comprehensive Custom Doctor Appointment App Development Services & Solutions in India! startup, or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement."
-        />
-        <meta
-          name="On-Demand Doctor App Development Company in India"
-          content="Are you looking to hire the best On-Demand Doctor App Development Agency in India for your project? We provide skilled Mobile App developers and programmers for hire."
-        />
-        <meta
-          name="category"
-          content="On-Demand Doctor App Development Company In jaipur: Find Expert On-Demand App Developers for Doctor Booking Apps with Expertise in Android app development and iOS app development! We are providing you a better Doctor Booking App Development Service in India. We help to develop medical applications for doctors, clinics, hospitals. Our skilled team helps you to develop the updated version of your Doctor Appointment app."
-        />
-        <meta name="coverage" content="Worldwide" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+
+        {/* <!-- SEO Meta --> */}
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
-        <meta
-          name="subtitle"
-          content="Best hire Doctor On-Demand App Design and User Experience company in Jaipur, India - We builds unique online doctor appointment booking applications for hospitals, clinics, and individual doctors."
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+        {/* <!-- Geo Location Meta --> */}
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+        {/* <!-- Ope/n Graph (OG) Tag --> */}
+
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Doctor Appointment App Development Company | Comfygen Technologies" />
+        <meta name="twitter:description" content=" Comfygen Technologies is the best doctor appointment booking app development company that delivers the best AI-powered doctor appointment apps with telemedicine and real-time scheduling for hospitals, clinics, and healthcare startups." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/doctor-appointment-app-development.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/doctor-appointment-app-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/doctor-appointment-app-development.webp" />
+        <meta property="og:image:alt" content="Doctor Appointment App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/doctor-appointment-app-development" />
+        <meta property="og:title" content="On-Demand Doctor Appointment App Development | Comfygen" />
+        <meta property="og:description" content="Comfygen offers custom on-demand doctor appointment app development with telemedicine, AI recommendations, and real-time booking to enhance patient engagement and streamline healthcare services." />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="og:country-name"
-          content="US,CA,GB,AD,AU,AT,BS,BH,IO,KM,CU,AR,CW,CY,DK,DM,EG,FK,FI,FR,DE,GR,GL,HK,IS,IN,ID,IT,JP,JE,JO,KW,KG,KR,MX,FM,NZ,NI,OM,PE,PH,PL,PT,QA,RO,RU,SA,SG,SE,SZ,CH,TH,TR,TN,UA,UM,AE,039,155,154,151,150"
-        />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
-        <meta
-          property="og:type"
-          content="Hire Best Doctor Appointment App development Company India | offshore Doctor Appointment App developer or Programmers"
-        />
+
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -262,7 +452,7 @@ export default function Ecommerce(props) {
           description2="The global mHealth market size was valued at $62.7 billion in 2023, and the online doctor consultation market is projected to reach $158.3 billion by 2030. This proves that investing in doctor appointment app development is not only a smart move but also highly profitable."
           description3="Our healthcare appointment app development solutions make it easier for patients to book appointments, consult doctors online, receive e-prescriptions, and maintain medical records securely. This not only improves patient satisfaction but also enhances doctors’ efficiency and hospital workflow."
           description4="With features like telemedicine, real-time notifications, and secure billing, a doctor appointment app ensures convenient, fast, and personalized healthcare services at your fingertips."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/about-two.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -283,7 +473,8 @@ export default function Ecommerce(props) {
           subheading="Get instant medical attention from expert doctors with our white-label doctor appointment app development solutions. At Comfygen, we deliver personalized, secure, and scalable readymade doctor appointment app development, providing patients quick consultations while fulfilling hospitals’ and clinics’ unique operational needs efficiently."
           techData={latesttech}
         />
-        <Tech />
+        <Features/>
+        {/* <Tech /> */}
         <div className="mt-10">
           <PortfolioSec
             techData={techDataForPage1}
@@ -292,11 +483,11 @@ export default function Ecommerce(props) {
           />
         </div>
         <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
+          heading="Build Your Doctor Appointment App Today!"
+          text="Take your healthcare services to the next level with a custom doctor appointment app from Comfygen Technologies."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/cta.webp"
           imageAlt="Future of Technology"
         />
 
@@ -356,6 +547,11 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
+        <TechStack
+          title="Technology Stack for Doctor Appointment App Development"
+          description="Comfygen Technologies creates secure, scalable, and high-performing doctor appointment apps using the latest technology. Our cutting-edge technology stack make sure seamless functionality, a smooth user experience, and top-tier security."
+        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -365,18 +561,17 @@ export default function Ecommerce(props) {
 
 
         <HireDeveloper
-          heading="Hire Doctor Booking App Developer"
-          text="Hire healthcare app developers in India from Comfygen, who knows what is best, how to build best, and how to attract the market potential. We have experienced app developers and designers to create captivating designs and applications. Every developer is experienced for more than 12+ years, who has the potential to handle simpler to complex projects. Choose us and be #NO1 in the competition."
+          heading="Hire Doctor App Builder"
+          text="Looking to launch your own doctor appointment app? <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>Hire expert doctor appointment mobile app developers</a> from Comfygen to build a secure, scalable, and feature-rich mobile app tailored to your healthcare brand. Our skilled doctor app developers specialize in creating on-demand doctor appointment apps with AI features, telemedicine, and real-time consultation capabilities for hospitals, clinics, and healthcare startups."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "Experience of Years",
-            "Modern Technologies used",
-            "Customized solutions",
-            "Promising attraction and engagement",
-            "Affordability assured"
+            "Dedicated experts in custom doctor appointment app development",
+            "AI-driven doctor recommendation and smart scheduling system",
+            "Real-time appointment booking and patient consultation tracking",
+
           ]}
         />
 
@@ -476,35 +671,15 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-         <ClientTestimonials
+        <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <Faq
+          faqData={JSON_DATA.Frequently}
+          title=" "
+        />
 
 
         {/* <section className="lg:py-16 py-10 bg-[#fff]">
@@ -533,24 +708,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
-
-
-
-
-        <TechStack
-          title="Technology Stack for Doctor Appointment App Development"
-          description="At Comfygen, we leverage the latest and most robust technologies to develop secure, scalable, and high-performing doctor appointment apps. Our cutting-edge tech stack ensures seamless functionality, smooth user experience, and top-tier security for healthcare applications."
-        /> */}
-
-
-
-
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" "
-        />
+        <ContactFromCenter />*/}
         {/* <BlogSection initialData={initialData} /> */}
       </div>
     </>

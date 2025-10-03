@@ -160,7 +160,7 @@ export default function FaqSection({
             </p> */}
           </div>
           <div className="w-full py-4 space-y-4 relative">
-            {faqData.map((item, index) => {
+            {faqData.map((item:any, index:any) => {
               const {
                 title: itemTitle,
                 desc,

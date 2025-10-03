@@ -148,7 +148,7 @@ export default function Home(props: any) {
       "https://www.youtube.com/@ComfygenTechnologies",
       "https://www.linkedin.com/company/comfygen-technologies"
     ]
-  
+
   };
 
   const jsonLd = {
@@ -170,7 +170,7 @@ export default function Home(props: any) {
     <>
       <Head>
         <title>Custom Blockchain & Mobile App Development Company - Comfygen Technologies</title>
-        <meta name="title" content="Custom Blockchain & Mobile App Development Company - Comfygen Technologies"/>
+        <meta name="title" content="Custom Blockchain & Mobile App Development Company - Comfygen Technologies" />
         <meta
           name="description"
           content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
@@ -209,22 +209,22 @@ export default function Home(props: any) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
 
-        {/* Author and Company Information */}  
-        
+        {/* Author and Company Information */}
+
         <meta name="author" content="Comfygen Technologies" />
         <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" /> 
+        <meta name="reply-to" content="sales@comfygen.com" />
         <meta name="rights" content="Copyright Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
 
-         {/* Twitter Card  */}
+        {/* Twitter Card  */}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
 
-        
+
         <link
           rel="preload"
           href="/gif/blockchain-development-company.webp"
@@ -254,7 +254,7 @@ export default function Home(props: any) {
                 "telephone": "+91-9587867258",
                 "email": "sales@comfygen.com",
                 "areaServed": [
-                  "IN", "US", "CA", "GB" ],
+                  "IN", "US", "CA", "GB"],
                 "availableLanguage": ["English", "Hindi"]
               },
               "sameAs": [
@@ -267,7 +267,7 @@ export default function Home(props: any) {
 
             }),
           }}
-          
+
         />
         <script
           type="application/ld+json"
@@ -275,28 +275,29 @@ export default function Home(props: any) {
         />
       </Head>
       <div style={{ height: '80px', }}>
-          <Header />
+        <Header />
       </div>
       <div className="overflow-hidden">
         <div className="relative">
-                <HeroSectionHomePage 
-                   heading={typedText}
-                   isHome={true}
-                   Provider
-                   ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
-                   btnName="Let's Discuss"
-                   btnLink="/contact-us"
-                   imgSrc="/"
-                   Width={907}
-                   Height={762}
-                   altTag="blockchain-technology"
-                   openModal={openModal}
-                   talkToExpertModal={talkToExpertModal}
-                   setTalkToExpertModal={setTalkToExpertModal}
-                   closeModal={closeModal}
-                   bgImage="https://www.comfygen.com/herosection/landing-hero-img.webp"
-                />
+          <HeroSectionHomePage
+            heading={typedText}
+            isHome={true}
+            Provider
+            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
+            btnName="Let's Discuss"
+            btnLink="/contact-us"
+            imgSrc="/"
+            Width={907}
+            Height={762}
+            altTag="blockchain-technology"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/landing-hero-img.webp"
+          />
         </div>
+   jj
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries"

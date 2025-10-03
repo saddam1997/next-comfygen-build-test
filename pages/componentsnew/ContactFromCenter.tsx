@@ -4,14 +4,15 @@ import JSON_DATA from "./json/country.json";
 import Image from 'next/image';
 
 class ContactFromHeader extends Component<{}, any> {
-  constructor(props:any) {
+  constructor(props: any) {
     super(props);
     this.state = {
       isLoading: "idle",
       fieldsContactUs: {},
       errorsContactUs: {},
       submitted: false,
-      stdCode: "",
+      // stdCode: "",
+      stdCode: "SELECT", // set default value here
       errorMessage: "",
     };
   }
@@ -62,7 +63,7 @@ class ContactFromHeader extends Component<{}, any> {
         body: JSON.stringify(data),
       };
       this.setState({ submitted: true });
-     
+
 
       return (
         // fetch(`https://www.comfygen.com/api/v1/createContactUs1111`, requestOptions)
@@ -167,7 +168,7 @@ class ContactFromHeader extends Component<{}, any> {
       this.setState({ isLoading: "success" });
     }, 2000);
   };
- 
+
   handleCountryChange = (event) => {
     let errorsContactUs = {};
     if (event.target.value != "SELECTED") {
@@ -255,7 +256,7 @@ class ContactFromHeader extends Component<{}, any> {
                 : "focus:outline-none bg-[#F7F7F7] border w-full focus:ring-1 rounded font-light focus:font-normal"
               } flex`}
           >
-            <select
+            {/* <select
               id="stdCode"
               name="stdCode"
               value={this.state.stdCode}
@@ -270,7 +271,22 @@ class ContactFromHeader extends Component<{}, any> {
                   {country.stdCode}
                 </option>
               ))}
+            </select> */}
+            <select
+              id="stdCode"
+              name="stdCode"
+              value={this.state.stdCode} // controlled
+              onChange={this.handleCountryChange}
+              className="focus:outline-none bg-[#F7F7F7] p-2 rounded-l font-light focus:font-normal w-28"
+            >
+              <option value="SELECT">Select</option>
+              {JSON_DATA.Country?.map((country) => (
+                <option key={country.stdCode} value={country.stdCode}>
+                  {country.stdCode}
+                </option>
+              ))}
             </select>
+
             <input
               type="text"
               onChange={this.inputChange}
@@ -354,7 +370,7 @@ class ContactFromHeader extends Component<{}, any> {
             <div className="md:w-[500px] md:h-auto w-auto h-[300px] mx-auto space-y-1 2xl:space-y-3 bg-white rounded-2xl ">
               <div className="py-6 bg-[#B427A6] text-center">
                 <div className="flex items-center justify-center py-6">
-                 <Image
+                  <Image
                     className="rounded-lg"
                     src="https://www.comfygen.com/img/thank-you-envelope.webp"
                     alt="Thank you"

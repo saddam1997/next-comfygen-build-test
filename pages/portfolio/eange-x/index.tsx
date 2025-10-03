@@ -180,7 +180,6 @@ export default function about(props) {
         <div className='overflow-hidden'>
             <Head>
                 <title>Celebrities Social Media App Development | EangeX</title>
-                <link rel="canonical" href="https://www.comfygen.com/portfolio" />
                 <meta name="description" content="Discover how Comfygen built EangeX, a next-gen celebrities social media app with AI-driven feeds, secure messaging, real-time interactions & scalable architecture." />
 
                 {/* keywords */}

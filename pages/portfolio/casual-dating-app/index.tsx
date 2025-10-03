@@ -185,8 +185,6 @@ export default function about(props) {
         <div className='overflow-hidden'>
             <Head>
                 <title>Casual Dating App Development Services | AI-Powered Dating Solutions</title>
-                <link rel="canonical" href="https://www.comfygen.com/portfolio" />
-
                 <meta name="description" content="Comfygen builds innovative Casual Dating Apps with AI-driven matchmaking, swipe-based interactions and secure chat. Our custom dating app development solutions boost user engagement, retention, and revenue growth." />
 
                 <meta name="keywords" content="Casual Dating App Development, Custom Dating App Development Solutions, AI-powered Casual Dating App Development, Dating App like Tinder, Casual Dating App Development Portfolio"/>

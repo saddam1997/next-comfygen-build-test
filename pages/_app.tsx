@@ -235,7 +235,9 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           !router?.asPath?.includes("/blockchain-wallet-development") &&       
           !router?.asPath?.includes("/ai-development") &&
           !router?.asPath?.includes("/dating-app-development") ? (
-            <ClientTestimonials />
+            <>
+            {/* <ClientTestimonials /> */}
+            </>
           ) : null}
           {!router?.asPath?.includes("/de/") &&
           !router?.asPath?.includes("/ca/") &&
