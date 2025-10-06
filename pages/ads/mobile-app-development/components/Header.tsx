@@ -596,9 +596,12 @@ export default function DesktopNav(props: any) {
             <Image
               src="/svg/Logo1.svg"
               alt="comfygen-logo"
-              width={244}
+              width={51}
               height={51}
               priority
+              unoptimized
+              quality={75}
+              style={{ width: "auto", height: "51px" }}
             />
           </Link>
         </div>

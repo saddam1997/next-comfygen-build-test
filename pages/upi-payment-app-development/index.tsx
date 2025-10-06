@@ -294,11 +294,11 @@ const jsonLdData = [
       "@type": "ContactPoint",
       "contactType": "sales",
       "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-          "email": "sales@comfygen.com",
-                  
-          "availableLanguage": "en, in"
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
+
+      "availableLanguage": "en, in"
     },
     "sameAs": [
       "https://www.facebook.com/comfygen",
@@ -309,8 +309,8 @@ const jsonLdData = [
       "https://in.pinterest.com/comfygenpvt/"
     ]
   },
-  
-  
+
+
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
@@ -357,7 +357,7 @@ const jsonLdData = [
       }
     ]
   }
-  
+
 ];
 
 
@@ -380,7 +380,7 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-        Best UPI Payment App Development Company | Comfygen
+          Best UPI Payment App Development Company | Comfygen
         </title>
         <meta
           name="description"
@@ -394,7 +394,7 @@ export default function Ecommerce(props) {
         />
 
         <meta name="robots"
-           content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"/>
+          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
 
         {/* Compatibility */}
@@ -463,12 +463,12 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-og-image.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-        <meta property="og:image" content="add image URL"/>
-        <meta property="og:image:secure_url" content="Add img URL"/>
-        <meta property="og:image:alt" content="UPI App Development"/>
-        <meta property="og:url" content="https://www.comfygen.com/upi-payment-app-development"/>
-        <meta property="og:title" content="UPI Payment App Development Company"/>
-        <meta property="og:description" content="Partner with Comfygen, a top UPI payment app development company delivering secure, NPCI-compliant apps with seamless performance for fintech startups and enterprises."/>
+        <meta property="og:image" content="add image URL" />
+        <meta property="og:image:secure_url" content="Add img URL" />
+        <meta property="og:image:alt" content="UPI App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/upi-payment-app-development" />
+        <meta property="og:title" content="UPI Payment App Development Company" />
+        <meta property="og:description" content="Partner with Comfygen, a top UPI payment app development company delivering secure, NPCI-compliant apps with seamless performance for fintech startups and enterprises." />
 
 
         <script
@@ -506,22 +506,20 @@ export default function Ecommerce(props) {
         />
         <ContactFromCenter />
 
-        <ServicesSection 
+        <ServicesSection
           heading="We Offer the Best UPI App Development Services"
           subtitle="As a leading UPI payment app development company, we offer a complete range of services tailored to meet the needs of startups and enterprises looking to integrate UPI payment solutions."
           servicesData={JSON_DATA.servicesData} />
 
-        
-       
-        <CoreFeaturesSection  title="Core Features of Our UPI Payment Apps" subtitle="Our advanced UPI payment app development solutions are packed with powerful features that enhance security, convenience, and user engagement. Whether you're a startup or an enterprise, our apps are designed to deliver a seamless, secure, and fast digital payment experience."   features={JSON_DATA?.LeadingSoftware || []} />
-                
+        <CoreFeaturesSection title="Core Features of Our UPI Payment Apps" subtitle="Our advanced UPI payment app development solutions are packed with powerful features that enhance security, convenience, and user engagement. Whether you're a startup or an enterprise, our apps are designed to deliver a seamless, secure, and fast digital payment experience." features={JSON_DATA?.LeadingSoftware || []} />
+
 
         <PortfolioSecs
           techData={techDataForPage1}
           heading="Our UPI Payment Apps Portfolio"
           description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
-          />
-        
+        />
+
         <TrendsSection
           heading="The Trends in UPI App Development That Are Shaping the Future of UPI Apps"
           subtitle="The landscape of UPI app development is rapidly evolving with the integration of advanced technologies and changing user expectations. At Comfygen, we stay ahead of the curve by adopting the latest trends that ensure your UPI payment app remains competitive, secure, and future-ready."

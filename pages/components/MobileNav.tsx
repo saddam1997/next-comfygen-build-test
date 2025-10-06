@@ -161,11 +161,11 @@ const MobileApp = [
     name: "Insurance App Development",
     url: "/insurance-app-development",
   },
-  {
-    num: "32",
-    name: "Quick Commerce App Development",
-    url: "/quick-commerce-app-development",
-  },
+  // {
+  //   num: "32",
+  //   name: "Quick Commerce App Development",
+  //   url: "/quick-commerce-app-development",
+  // },
   {
     num: "32",
     name: "White Label Mobile App Development",
@@ -661,11 +661,11 @@ const EcommerceApp = [
     name: "Food Delivery App Development",
     url: "/food-delivery-app-development",
   },
-  {
-    num: "6",
-    name: "Quick Commerce App Development",
-    url: "/quick-commerce-app-development",
-  },
+  // {
+  //   num: "6",
+  //   name: "Quick Commerce App Development",
+  //   url: "/quick-commerce-app-development",
+  // },
   {
     num: "7",
     name: "Grocery App Development",
@@ -706,7 +706,9 @@ export default function MobileNav(props: any) {
               alt="comfygen-logo"
               width={180}
               height={51}
-              priority
+              unoptimized
+              priority={true}
+              quality={75}
             />
           </Link>
         </div>
@@ -782,11 +784,11 @@ export default function MobileNav(props: any) {
                       Mobile App Development
                     </p>
                     <div className="p-2 space-y-2 text-sm font-medium">
-                      {MobileApp.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
+                      {MobileApp.map((elem:any, index:any) => {
+                        const {icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -808,11 +810,11 @@ export default function MobileNav(props: any) {
                       Web Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {WebApp.map((elem: any) => {
+                      {WebApp.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -834,11 +836,11 @@ export default function MobileNav(props: any) {
                       Stack Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {Stack.map((elem: any) => {
+                      {Stack.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -885,11 +887,11 @@ export default function MobileNav(props: any) {
                     Blockchain Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Blockchain.map((elem: any) => {
+                    {Blockchain.map((elem:any, index:any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={num}
+                          key={index}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -910,11 +912,11 @@ export default function MobileNav(props: any) {
                     Token Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Token.map((elem: any) => {
+                    {Token.map((elem:any, index:any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={num}
+                          key={index}
                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -935,11 +937,11 @@ export default function MobileNav(props: any) {
                     Other Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Other.map((elem: any) => {
+                    {Other.map((elem:any, index:any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={num}
+                          key={index}
                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -985,11 +987,11 @@ export default function MobileNav(props: any) {
                     Ecommerce Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {EcommerceApp.map((elem: any) => {
+                    {EcommerceApp.map((elem:any, index:any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={num}
+                          key={index}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -1029,11 +1031,11 @@ export default function MobileNav(props: any) {
                 <ul className="grid grid-cols-1 gap-2 p-4">
 
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Ai.map((elem: any) => {
+                    {Ai.map((elem:any, index:any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={num}
+                          key={index}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -1080,11 +1082,11 @@ export default function MobileNav(props: any) {
                       Game Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Game.map((elem: any) => {
+                      {Game.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1106,11 +1108,11 @@ export default function MobileNav(props: any) {
                       Sports App Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Betting.map((elem: any) => {
+                      {Betting.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1131,11 +1133,11 @@ export default function MobileNav(props: any) {
                       Game API Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {GameApi.map((elem: any) => {
+                      {GameApi.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1185,11 +1187,11 @@ export default function MobileNav(props: any) {
                       Our Company
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium ">
-                      {Company.map((elem: any) => {
+                      {Company.map((elem:any, index:any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={num}
+                            key={index}
                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link

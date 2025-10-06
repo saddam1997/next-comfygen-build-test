@@ -1105,7 +1105,9 @@ export default function DesktopNav(props: any) {
               alt="comfygen-logo"
               width={244}
               height={51}
-              priority
+              unoptimized
+              priority={true}
+              quality={75}
             />
           </Link>
         </div>
@@ -1326,11 +1328,11 @@ export default function DesktopNav(props: any) {
                         <div>
                           {activeTab === "Tab1" && (
                             <div className="text-sm font-medium space-y-2">
-                              {MobileApp.map((elem: any) => {
+                              {MobileApp.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <Link
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 block text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
                                     onClick={() =>
                                       setShowNav(showNav === 1 ? 0 : 1)
@@ -1347,11 +1349,11 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab2" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {BlockchainSer.map((elem: any) => {
+                              {BlockchainSer.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1370,11 +1372,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab3" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {coin.map((elem: any) => {
+                              {coin.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1393,11 +1395,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab4" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Healthcare.map((elem: any) => {
+                              {Healthcare.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1417,11 +1419,11 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab5" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {FullStackDev.map((elem: any) => {
+                              {FullStackDev.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1440,11 +1442,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab6" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Hire.map((elem: any) => {
+                              {Hire.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1463,11 +1465,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab7" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Ai.map((elem: any) => {
+                              {Ai.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1687,11 +1689,11 @@ export default function DesktopNav(props: any) {
                         <div>
                           {activeTab === "Tab1" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Blockchain.map((elem: any) => {
+                              {Blockchain.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1712,11 +1714,11 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab2" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Other.map((elem: any) => {
+                              {Other.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1736,11 +1738,11 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab3" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Token.map((elem: any) => {
+                              {Token.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1759,11 +1761,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab4" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Metaverse.map((elem: any) => {
+                              {Metaverse.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1782,11 +1784,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab5" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {cryptoDevelopment.map((elem: any) => {
+                              {cryptoDevelopment.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1805,11 +1807,11 @@ export default function DesktopNav(props: any) {
                           )}
                           {activeTab === "Tab6" && (
                             <ul className="text-sm font-medium space-y-2">
-                              {Finance.map((elem: any) => {
+                              {Finance.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <li
-                                    key={num}
+                                    key={index}
                                     className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                   >
                                     <Link
@@ -1834,11 +1836,11 @@ export default function DesktopNav(props: any) {
                       <div className={`${activeTab === "Tab5" ? "" : "hidden"}`}>
                         {activeTab === "Tab5" && (
                           <ul className="text-sm font-medium space-y-2">
-                            {cryptoDevelopment1.map((elem: any) => {
+                            {cryptoDevelopment1.map((elem: any, index: any) => {
                               const { name, num, url } = elem;
                               return (
                                 <li
-                                  key={num}
+                                  key={index}
                                   className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                 >
                                   <Link
@@ -1860,11 +1862,11 @@ export default function DesktopNav(props: any) {
                       <div className={`${activeTab === "Tab1" ? "" : "hidden"}`}>
                         {activeTab === "Tab1" && (
                           <ul className="text-sm font-medium space-y-2">
-                            {Blockchain1.map((elem: any) => {
+                            {Blockchain1.map((elem: any, index: any) => {
                               const { name, num, url } = elem;
                               return (
                                 <li
-                                  key={num}
+                                  key={index}
                                   className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                                 >
                                   <Link
@@ -1932,39 +1934,40 @@ export default function DesktopNav(props: any) {
                       <div className="space-y-10">
                         <div>
                           <ul className="text-[18px] font-medium space-y-3">
-                            {Game.map((elem: any) => {
+                            {Game.map((elem: any, index: any) => {
                               const { name, num, img, dec, url } = elem;
                               return (
-                                <a
-                                  href={url}
-                                  key={num}
-                                  className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-1 rounded-md cursor-pointer"
-                                >
-                                  <Image
-                                    src={img}
-                                    alt={name}
-                                    height={40}
-                                    width={40}
-                                  />
-                                  <div className="space-y-4 cursor-pointer">
-                                    <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                      {name}
-                                    </p>
-                                    <span className="text-[#212121]/80 text-sm font-normal">
-                                      {dec}
-                                    </span>
-                                  </div>
-                                </a>
+                                <li key={index}>
+                                  <a
+                                    href={url}
+                                    className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-1 rounded-md cursor-pointer"
+                                  >
+                                    <Image
+                                      src={img}
+                                      alt={name}
+                                      height={40}
+                                      width={40}
+                                    />
+                                    <div className="space-y-4 cursor-pointer">
+                                      <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                        {name}
+                                      </p>
+                                      <span className="text-[#212121]/80 text-sm font-normal">
+                                        {dec}
+                                      </span>
+                                    </div>
+                                  </a>
+                                </li>
                               );
                             })}
                           </ul>
                         </div>
                       </div>
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Game1.map((elem: any) => {
+                        {Game1.map((elem:any, index:any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <li key={num}>
+                            <li key={index}>
                               <a
                                 href={url}
                                 className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
@@ -2037,10 +2040,10 @@ export default function DesktopNav(props: any) {
                       <div className="space-y-10">
                         <div>
                           <ul className="text-[18px] font-medium space-y-3">
-                            {Sports.map((elem: any) => {
+                            {Sports.map((elem:any, index:any) => {
                               const { name, num, img, dec, url } = elem;
                               return (
-                                <li key={num}>
+                                <li key={index}>
                                   <a
                                     href={url}
 
@@ -2068,10 +2071,10 @@ export default function DesktopNav(props: any) {
                         </div>
                       </div>
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Sports1.map((elem: any) => {
+                        {Sports1.map((elem:any, index:any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <li key={num}>
+                            <li key={index}>
                               <a
                                 href={url}
 
@@ -2098,10 +2101,10 @@ export default function DesktopNav(props: any) {
                       </ul>
 
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Sports2.map((elem: any) => {
+                        {Sports2.map((elem:any, index:any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
-                            <li key={num}>
+                            <li key={index}>
                               <a
                                 href={url}
 
@@ -2176,10 +2179,10 @@ export default function DesktopNav(props: any) {
                     <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                       <div>
                         <ul className="text-[18px] font-medium space-y-3">
-                          {company.map((elem: any) => {
+                          {company.map((elem:any, index:any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
-                              <li key={num}>
+                              <li key={index}>
                                 <a
                                   href={url}
 
@@ -2207,10 +2210,10 @@ export default function DesktopNav(props: any) {
                       </div>
                       <div>
                         <ul className="text-[18px] font-medium space-y-3">
-                          {company1.map((elem: any) => {
+                          {company1.map((elem:any, index:any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
-                              <li key={num}>
+                              <li key={index}>
                                 <a
                                   href={url}
 

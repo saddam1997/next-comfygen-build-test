@@ -47,7 +47,7 @@ export default function Tech({ techData, heading, description }) {
                       <p className="text-black py-3">{elem.name1}</p>
                       {/* Add unordered list here */}
                      <ul className="list-disc list-inside space-y-2">
-                      {elem.listItems?.map((item, listIndex) => (
+                      {elem.listItems?.map((item:any, listIndex:any) => (
                         <li key={listIndex} className="text-black text-base">
                           {item}
                         </li>

@@ -71,11 +71,11 @@ export default function Footer() {
                 <div
                   className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}
                 >
-                  {JSON_DATA.Development.map((elem) => {
+                  {JSON_DATA.Development.map((elem, index) => {
                     const { name, url, num } = elem;
                     return (
                       <div
-                        key={num}
+                        key={index}
                         className="flex transition duration-150 cursor-pointer itmes-center "
                       >
                         <Link
@@ -98,11 +98,11 @@ export default function Footer() {
                 <div
                   className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}
                 >
-                  {JSON_DATA.Blockchain.map((elem) => {
+                  {JSON_DATA.Blockchain.map((elem, index) => {
                     const { name, url, num } = elem;
                     return (
                       <div
-                        key={num}
+                        key={index}
                         className="flex transition duration-150 cursor-pointer itmes-center "
                       >
                         <Link
@@ -126,11 +126,11 @@ export default function Footer() {
                 <div
                   className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}
                 >
-                  {JSON_DATA.CryptoToken.map((elem) => {
+                  {JSON_DATA.CryptoToken.map((elem, index) => {
                     const { name, url, num } = elem;
                     return (
                       <div
-                        key={num}
+                        key={index}
                         className="flex transition duration-150 cursor-pointer itmes-center"
                       >
                         <Link
@@ -153,11 +153,11 @@ export default function Footer() {
                 <div
                   className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}
                 >
-                  {JSON_DATA.Gaming.map((elem) => {
+                  {JSON_DATA.Gaming.map((elem, index) => {
                     const { name, url, num } = elem;
                     return (
                       <div
-                        key={num}
+                        key={index}
                         className="flex transition duration-150 cursor-pointer itmes-center"
                       >
                         <Link
@@ -192,13 +192,13 @@ export default function Footer() {
             </div> */}
 
             <div className="flex items-center space-x-4">
-              {JSON_DATA.Company.map((elem) => {
+              {JSON_DATA.Company.map((elem, index) => {
                 const { name, url, num } = elem;
                 const isExternal = url.startsWith("http");
                 return isExternal ? (
                   <a
                     href={url}
-                    key={num}
+                    key={index}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="transition duration-150 cursor-pointer text-md font-medium"
@@ -206,7 +206,7 @@ export default function Footer() {
                     {name}
                   </a>
                 ) : (
-                  <Link href={url} key={num} passHref>
+                  <Link href={url} key={index} passHref>
                     <p className="transition duration-150 cursor-pointer text-md font-medium">
                       {name}
                     </p>

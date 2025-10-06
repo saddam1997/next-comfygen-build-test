@@ -66,7 +66,11 @@ export default function HeroSection(props: any) {
               alt="COMFYGEN LIMITED Logo"
               src="https://www.comfygen.com/image/hero-experience-icon.svg"
               height={60}
-              width={61}
+              width={60}
+              unoptimized
+              priority
+              quality={75}
+              style={{ width: "auto", height: "60px" }}
             />
             <p className="font-semibold text-[#000] text-base">
               6+ Year's Experience
