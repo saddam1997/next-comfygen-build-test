@@ -64,14 +64,9 @@ export default function HeroSection(props: any) {
           <div className="bg-[#FFFFFF] py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
             <Image
               alt="COMFYGEN LIMITED Logo"
-              src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
+              src="https://www.comfygen.com/image/hero-experience-icon.svg"
               height={60}
-              width={60}
-              style={{ height: "auto" }}
-            // alt="COMFYGEN LIMITED Logo"
-            // src="https://www.comfygen.com/image/hero-experience-icon.svg"
-            // height={60}
-            // width={61}
+              width={61}
             />
             <p className="font-semibold text-[#000] text-base">
               6+ Year's Experience
