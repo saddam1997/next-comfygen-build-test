@@ -1,49 +1,46 @@
-name: Deploy to Server
+name: Deploy Next.js to VM
 
 on:
   push:
     branches:
-      - newdesign # Trigger deployment on push to the 'newdesign' branche
+      - newdesign   # change if you want main or newdesign
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-    - name: Set up SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -p ${{ secrets.SERVER_PORT }} -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+      - name: Deploy to VM via SSH
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            # Create temporary swap
+            sudo fallocate -l 2G /swapfile2
+            sudo chmod 600 /swapfile2
+            sudo mkswap /swapfile2
+            sudo swapon /swapfile2
 
-    - name: Test SSH Connection
-      run: |
-        ssh -T -o StrictHostKeyChecking=no \
-               -o HostKeyAlgorithms=+ssh-rsa \
-               -o PubkeyAcceptedKeyTypes=+ssh-rsa \
-               -p ${{ secrets.SERVER_PORT }} \
-               ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo 'SSH connection successful'"
+            # Navigate to app
+            cd /var/www/production_new_port/next-comfygen-ssr-custom-express-2
 
-    - name: Deploy Application
-      run: |
-        ssh -T -o StrictHostKeyChecking=no \
-               -o HostKeyAlgorithms=+ssh-rsa \
-               -o PubkeyAcceptedKeyTypes=+ssh-rsa \
-               -p ${{ secrets.SERVER_PORT }} \
-               ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-          # Load NVM
-          export NVM_DIR="$HOME/.nvm"
-          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-          
-          cd /var/www/production_new_port/next-comfygen-ssr-custom-express
-          git pull origin newdesign
-          npm install
-          export NODE_OPTIONS="--max-old-space-size=16384" 
-          npm run build | tee
-          pm2 restart all
-        EOF
+            # Pull latest code
+            git fetch --all
+            git reset --hard origin/newdesign
+
+            # Build with extended memory
+            export NODE_OPTIONS="--max-old-space-size=3072"
+            npm ci
+            nice -n -20 npm run build
+
+            # Restart pm2
+            pm2 restart all
+
+            # Cleanup swap
+            sudo swapoff /swapfile2
+            sudo rm -f /swapfile2
