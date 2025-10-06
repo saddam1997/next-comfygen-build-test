@@ -594,14 +594,12 @@ export default function DesktopNav(props: any) {
             className="relative flex items-center flex-shrink-0 text-white"
           >
             <Image
-              src="/svg/Logo1.svg"
+              src="./logo.webp"
               alt="comfygen-logo"
               width={51}
               height={51}
               priority
-              unoptimized
-              quality={75}
-              style={{ width: "auto", height: "51px" }}
+           
             />
           </Link>
         </div>
