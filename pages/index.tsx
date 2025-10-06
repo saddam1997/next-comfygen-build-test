@@ -418,11 +418,12 @@ export default function Home(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
 
 
-        <link
+        {/* <link
           rel="preload"
           href="/gif/blockchain-development-company.webp"
           as="image"
-        />
+          type="image/webp"
+        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}

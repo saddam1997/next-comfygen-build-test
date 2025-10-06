@@ -193,10 +193,11 @@ const Form = () => (
                   aria-label="Youtube"
                 >
                   <Image
-                    src="https://www.comfygen.com/comfygen-images/contactFormIcons/youtubecontact.svg"
+                    src="https://www.comfygen.com/comfygen-images/comfygen/youtubecontact.webp"
                     alt="Youtube Logo"
                     height={51}
-                    width={50}
+                    width={51}
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </a>
               </div>
@@ -326,11 +327,12 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
                   src="https://www.comfygen.com/img/cluth-logo.webp"
                   alt="Clutch"
-                  className=" rounded-xl"
+                  className="rounded-xl"
+                  width={150}
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>
@@ -341,11 +343,12 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
                   src="https://www.comfygen.com/img/Develop-4u.webp"
                   alt="Developer4"
                   className=" rounded-xl"
+                  width={150}
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>
@@ -356,11 +359,12 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
                   src="https://www.comfygen.com/img/Glass-door.webp"
                   alt="Glassdoor"
-                  className=" rounded-xl"
+                  className="rounded-xl"
+                  width={150}
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>
@@ -371,11 +375,12 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
                   src="https://www.comfygen.com/img/Trust-pilot.webp"
                   alt="Trustpilot"
-                  className=" rounded-xl"
+                  className="rounded-xl"
+                  width={150}
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>
@@ -386,11 +391,12 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
                   src="https://www.comfygen.com/img/good-firmas.webp"
                   alt="Goodfirms"
-                  className=" rounded-xl "
+                  className="rounded-xl"
+                  width={150}
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>

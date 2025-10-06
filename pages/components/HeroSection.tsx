@@ -67,8 +67,7 @@ export default function HeroSection(props: any) {
               src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
               height={60}
               width={60}
-
-
+              style={{ height: "auto" }}
             />
             <p className="font-semibold text-[#000] text-base">
               6+ Year's Experience
@@ -79,7 +78,8 @@ export default function HeroSection(props: any) {
               alt="COMFYGEN LIMITED Logo"
               src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
               height={60}
-              width={61}
+              width={60}
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="font-semibold text-[#000] text-base">
               250+ Project Delivered
@@ -90,7 +90,8 @@ export default function HeroSection(props: any) {
               alt="COMFYGEN LIMITED Logo"
               src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
               height={60}
-              width={61}
+              width={60}
+              style={{ height: "auto" }}
             />
             <p className="font-semibold text-[#000] text-base">
               100+ Total Happy Client

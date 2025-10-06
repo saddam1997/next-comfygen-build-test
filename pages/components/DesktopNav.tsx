@@ -1101,13 +1101,11 @@ export default function DesktopNav(props: any) {
           >
             <Image
               // src="https://www.comfygen.com/media/svg/comfygen-logo.svg"
-             src="./logo.webp"
+              src="/logo.webp"
               alt="comfygen-logo"
               width={244}
               height={51}
-              unoptimized
-              priority={true}
-              quality={75}
+
             />
           </Link>
         </div>
@@ -1964,7 +1962,7 @@ export default function DesktopNav(props: any) {
                         </div>
                       </div>
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Game1.map((elem:any, index:any) => {
+                        {Game1.map((elem: any, index: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
                             <li key={index}>
@@ -2040,7 +2038,7 @@ export default function DesktopNav(props: any) {
                       <div className="space-y-10">
                         <div>
                           <ul className="text-[18px] font-medium space-y-3">
-                            {Sports.map((elem:any, index:any) => {
+                            {Sports.map((elem: any, index: any) => {
                               const { name, num, img, dec, url } = elem;
                               return (
                                 <li key={index}>
@@ -2071,7 +2069,7 @@ export default function DesktopNav(props: any) {
                         </div>
                       </div>
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Sports1.map((elem:any, index:any) => {
+                        {Sports1.map((elem: any, index: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
                             <li key={index}>
@@ -2101,7 +2099,7 @@ export default function DesktopNav(props: any) {
                       </ul>
 
                       <ul className="text-[18px] font-medium space-y-3">
-                        {Sports2.map((elem:any, index:any) => {
+                        {Sports2.map((elem: any, index: any) => {
                           const { name, num, img, dec, url } = elem;
                           return (
                             <li key={index}>
@@ -2179,7 +2177,7 @@ export default function DesktopNav(props: any) {
                     <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                       <div>
                         <ul className="text-[18px] font-medium space-y-3">
-                          {company.map((elem:any, index:any) => {
+                          {company.map((elem: any, index: any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
                               <li key={index}>
@@ -2210,7 +2208,7 @@ export default function DesktopNav(props: any) {
                       </div>
                       <div>
                         <ul className="text-[18px] font-medium space-y-3">
-                          {company1.map((elem:any, index:any) => {
+                          {company1.map((elem: any, index: any) => {
                             const { name, num, img, dec, url } = elem;
                             return (
                               <li key={index}>

@@ -292,7 +292,10 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           <EcommerceFooter /> ) : (
             !router?.asPath?.includes("/de/") &&
             !router?.asPath?.includes("/ads/mobile-app-development") && (
+              <>
+              
               <Footer />
+              </>
             )
           )}
 

@@ -35,8 +35,8 @@ const techData = {
       num: "5",
     },
     {
-      img: "https://www.comfygen.com/media/svg/tech/django-icon.svg",
-      alt: "Django",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/django-icon.webp",
+      alt: "Django mmm",
       name: "Django",
       num: "6",
     },

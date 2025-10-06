@@ -15,7 +15,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
       { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
       { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
       { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
-      { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
+      { img: "https://www.comfygen.com/comfygen-images/comfygen/django-icon.webp", alt: 'Django', name: "Django", num: "6" },
       { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
       { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
     ],
@@ -142,7 +142,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
                   className="flex items-center border bg-[#181b24] border-white/10 px-6 py-2 hover:shadow-lg transition-all cursor-pointer group"
                 >
                   <div className="h-16 w-16 flex items-center justify-center">
-                    <Image src={elem.img} alt={elem.name} width={50} height={50} loading="lazy" />
+                    <Image src={elem.img} alt={elem.name} width={50} height={50} loading="lazy" style={{ width: "auto", height: "auto"  }} />
                   </div>
                   <h3 className="text-lg font-semibold text-white ml-3">{elem.name}</h3>
                 </div>
