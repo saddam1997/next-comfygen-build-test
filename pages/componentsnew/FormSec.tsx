@@ -331,7 +331,7 @@ const Form = () => (
           <div className="">
             <div>
               <h2 className="xl:text-4xl text-3xl text-[#0E1F51] text-start font-bold">
-                Trusted by Industry Leaders
+                Trusted by Industry Leaders 
               </h2>
             </div>
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2  gap-4 pt-4">

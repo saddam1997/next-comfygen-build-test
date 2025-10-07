@@ -709,6 +709,7 @@ export default function MobileNav(props: any) {
               unoptimized
               priority={true}
               quality={75}
+              style={{ height: "auto", width: "auto" }}
             />
           </Link>
         </div>
@@ -784,8 +785,8 @@ export default function MobileNav(props: any) {
                       Mobile App Development
                     </p>
                     <div className="p-2 space-y-2 text-sm font-medium">
-                      {MobileApp.map((elem:any, index:any) => {
-                        const {icon, name, num, url } = elem;
+                      {MobileApp.map((elem: any, index: any) => {
+                        const { icon, name, num, url } = elem;
                         return (
                           <li
                             key={index}
@@ -810,7 +811,7 @@ export default function MobileNav(props: any) {
                       Web Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {WebApp.map((elem:any, index:any) => {
+                      {WebApp.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
@@ -836,7 +837,7 @@ export default function MobileNav(props: any) {
                       Stack Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {Stack.map((elem:any, index:any) => {
+                      {Stack.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
@@ -887,7 +888,7 @@ export default function MobileNav(props: any) {
                     Blockchain Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Blockchain.map((elem:any, index:any) => {
+                    {Blockchain.map((elem: any, index: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
@@ -912,7 +913,7 @@ export default function MobileNav(props: any) {
                     Token Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Token.map((elem:any, index:any) => {
+                    {Token.map((elem: any, index: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
@@ -937,7 +938,7 @@ export default function MobileNav(props: any) {
                     Other Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Other.map((elem:any, index:any) => {
+                    {Other.map((elem: any, index: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
@@ -987,7 +988,7 @@ export default function MobileNav(props: any) {
                     Ecommerce Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {EcommerceApp.map((elem:any, index:any) => {
+                    {EcommerceApp.map((elem: any, index: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
@@ -1031,7 +1032,7 @@ export default function MobileNav(props: any) {
                 <ul className="grid grid-cols-1 gap-2 p-4">
 
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Ai.map((elem:any, index:any) => {
+                    {Ai.map((elem: any, index: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
@@ -1082,7 +1083,7 @@ export default function MobileNav(props: any) {
                       Game Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Game.map((elem:any, index:any) => {
+                      {Game.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
@@ -1108,7 +1109,7 @@ export default function MobileNav(props: any) {
                       Sports App Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Betting.map((elem:any, index:any) => {
+                      {Betting.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
@@ -1133,7 +1134,7 @@ export default function MobileNav(props: any) {
                       Game API Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {GameApi.map((elem:any, index:any) => {
+                      {GameApi.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
@@ -1187,7 +1188,7 @@ export default function MobileNav(props: any) {
                       Our Company
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium ">
-                      {Company.map((elem:any, index:any) => {
+                      {Company.map((elem: any, index: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li

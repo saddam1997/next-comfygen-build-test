@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import PortfolioSec from "./components/PortfolioSec";
 import ProcessSec from "./components/ProcessSec";
-import IndustriesServe from "./components/IndustriesServe";
+// import IndustriesServe from "./components/IndustriesServe";
+import IndustriesServe from "./componentsnew/IndustriesServe";
 import TechStack from "./components/TechStack";
 import Faq from "./components/Faq";
 import FormSec from "./components/FormSec";
@@ -572,7 +573,16 @@ export default function Home(props: any) {
           heading=" Explore Our Web & App Development Portfolio"
           description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
         /> */}
-        <IndustriesServe />
+        {/* <IndustriesServe /> */}
+
+
+        <IndustriesServe
+          heading="Industries We Serve"
+          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
+          sliderData={JSON_DATA.IndustriesServe}
+        />
+
+
         <ClientTestimonials />
         <Faq
           faqData={JSON_DATA.Frequently}

@@ -57,6 +57,8 @@ export default function Footer() {
                     unoptimized={true}
                     width={500}
                     height={500}
+                    style={{ height: "auto", width: "auto" }}
+                  
                   />
                 </div>
               </Link>

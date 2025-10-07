@@ -1,4 +1,85 @@
 {
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
+      "title": "E-Commerce",
+      "description": "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
+      "link": "/e-commerce-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
+      "title": "Healthcare",
+      "description": "Empowering health services with innovative, patient-centric healthcare app development for better outcomes.",
+      "link": "/healthcare-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
+      "title": "Blockchain",
+      "description": "Transforming industries with secure, transparent, and decentralized blockchain app development solutions.",
+      "link": "/blockchain-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
+      "title": "Education",
+      "description": "Enhancing learning experiences with interactive, engaging, and scalable education apps.",
+      "link": "/ca/education-app-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
+      "title": "Logistics",
+      "description": "Streamlining logistics operations through advanced, real-time tracking and management solutions."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
+      "title": "Transportation",
+      "description": "Simplifying travel with seamless, efficient transportation app innovations."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
+      "title": "Travel & Hospitality",
+      "description": "Enhancing customer journeys with intuitive, tech-driven travel and hospitality applications."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
+      "title": "Construction",
+      "description": "Driving project efficiency with modern construction management and planning applications."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
+      "title": "Game",
+      "description": "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
+      "link": "/game-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
+      "title": "Entertainment",
+      "description": "Innovating entertainment platforms with personalized, accessible digital experiences."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/social-media-app-industries-img.webp",
+      "title": "Social Media App",
+      "description": "Connecting users worldwide through innovative, feature-rich social media app solutions.",
+      "link": "/social-media-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
+      "title": "Finance",
+      "description": "Delivering secure, user-friendly financial apps tailored to modern customer needs.",
+      "link": "/finance-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
+      "title": "Dating",
+      "description": "Crafting intuitive dating platforms to foster meaningful connections seamlessly.",
+      "link": "/dating-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
+      "title": "Restaurant industries",
+      "description": "Enhancing dining experiences with user-focused, efficient restaurant management and ordering apps.",
+      "link": "/food-delivery-app-development"
+    }
+  ],
   "Frequently": [
     {
       "title": "How much does it cost to build a mobile app?",
@@ -433,7 +514,7 @@
         "<a href='https://www.comfygen.com/ethereum-token-development' class='underline'>Ethereum Token Development</a>",
         "<a href='https://www.comfygen.com/solana-token-development' class='underline'>Solana Token Development</a>",
         "<a href='https://www.comfygen.com/nft-token-development-company' class='underline'>NFT Token Development</a>",
-         "<a href='https://www.comfygen.com/crypto-trading-bot-development' class='underline'>Crypto Trading Bot Development</a>"
+        "<a href='https://www.comfygen.com/crypto-trading-bot-development' class='underline'>Crypto Trading Bot Development</a>"
       ]
     },
     {
@@ -446,7 +527,7 @@
         "<a href='https://www.comfygen.com/data/aws-analytics-services' class='underline'>AWS Analytics Service</a>",
         "<a href='https://www.comfygen.com/data/business-intelligence' class='underline'>Business Intelligence</a>",
         "<a href='https://www.comfygen.com/data/power-bi-consulting-services' class='underline'>Power BI Consulting Services</a>",
-         "<a href='https://www.comfygen.com/data/sales-dashboard' class='underline'>Sales Performance Dashboard</a>"
+        "<a href='https://www.comfygen.com/data/sales-dashboard' class='underline'>Sales Performance Dashboard</a>"
       ]
     },
     {
@@ -457,10 +538,9 @@
         "AI-Powered Applications ",
         "Predictive Analytics",
         "AI Integration",
-        "<a href='https://www.comfygen.com/generative-ai-development' class='underline'>Generative AI Solutions</a>" 
+        "<a href='https://www.comfygen.com/generative-ai-development' class='underline'>Generative AI Solutions</a>"
       ]
     }
-
   ],
   "pageData": {
     "title": "Why Choose Us?",

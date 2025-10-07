@@ -61,7 +61,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
     //   { img: "https://www.comfygen.com/img/stackimg/polkadot.svg", alt: 'Polkadot', name: "Polkadot", num: "11" },
     //   { img: "https://www.comfygen.com/img/stackimg/metamask.svg", alt: 'Metamask', name: "Metamask", num: "12" },
     // ],
- 
+
     "Blockchain network ": [
       { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
       { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
@@ -69,7 +69,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
       { img: "/svg/tech/azure-original.svg", alt: 'Cardano', name: "Cardano", num: "4" },
       { img: "/svg/tech/azure-original.svg", alt: 'EOS', name: "EOS", num: "5" },
     ],
-       "Wallets": [
+    "Wallets": [
       { img: "/svg/tech/googlecloud-original.svg", alt: 'Binance', name: "Binance", num: "1" },
       { img: "/svg/tech/aws-logo.svg", alt: 'Coinbase', name: "Coinbase", num: "2" },
       { img: "/svg/tech/azure-original.svg", alt: 'trust wallet', name: "trust wallet", num: "3" },
@@ -142,7 +142,16 @@ export default function Tech({ title, description, filterCategory = [], customTe
                   className="flex items-center border bg-[#181b24] border-white/10 px-6 py-2 hover:shadow-lg transition-all cursor-pointer group"
                 >
                   <div className="h-16 w-16 flex items-center justify-center">
-                    <Image src={elem.img} alt={elem.name} width={50} height={50} loading="lazy" style={{ width: "auto", height: "auto"  }} />
+                    <Image
+                      src={elem.img}
+                      alt={elem.name}
+                      width={50}
+                      height={50}
+                      unoptimized
+                      priority={true}
+                      quality={75} 
+                      style={{height:"60px", width:"60px"}}
+                      />
                   </div>
                   <h3 className="text-lg font-semibold text-white ml-3">{elem.name}</h3>
                 </div>

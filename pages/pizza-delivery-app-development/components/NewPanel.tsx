@@ -30,7 +30,7 @@ const panelContent = {
     description:
       "Enable restaurants to manage pizza orders, menus, and sales efficiently.",
     points: [
-      "Smart Menu Management with Pizza Variants & Add-ons",
+      "Smart Menu Management ",
       "Instant New Order Alerts with Prep Time Control",
       "Kitchen Dashboard for Streamlined Pizza Orders",
       "Daily Sales & Revenue Insights",

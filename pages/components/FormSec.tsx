@@ -315,7 +315,7 @@ const Form = () => (
         <div className="grid lg:grid-cols-1 grid-cols-1 space-y-4">
           <div>
             <h2 className="xl:text-4xl text-3xl text-[#0E1F51] text-start font-bold">
-              Trusted by Industry Leaders
+              Trusted by Industry Leaders 
             </h2>
           </div>
 
@@ -333,6 +333,9 @@ const Form = () => (
                   width={150}
                   height={100}
                   style={{ width: "auto", height: "auto" }}
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -349,6 +352,9 @@ const Form = () => (
                   width={150}
                   height={100}
                   style={{ width: "auto", height: "auto" }}
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -365,6 +371,9 @@ const Form = () => (
                   width={150}
                   height={100}
                   style={{ width: "auto", height: "auto" }}
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -381,6 +390,9 @@ const Form = () => (
                   width={150}
                   height={100}
                   style={{ width: "auto", height: "auto" }}
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -397,6 +409,9 @@ const Form = () => (
                   width={150}
                   height={100}
                   style={{ width: "auto", height: "auto" }}
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -407,11 +422,14 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/itrate.webp"
                   alt="Goodfirms"
                   className="w-20 rounded-xl "
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -422,11 +440,14 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/topdevelopers-img.webp"
                   alt="topdevelopers"
                   className="w-20 rounded-xl "
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -437,11 +458,14 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/image/designrush-img.webp"
                   alt="DesignRush"
                   className="w-20 rounded-xl "
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -452,11 +476,14 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/selectedFirms.webp"
                   alt="Top Mobile App Development Company"
                   className="w-20 rounded-xl "
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>

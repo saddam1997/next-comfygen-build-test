@@ -16,7 +16,7 @@ const Form = () => (
         <div className="grid lg:grid-cols-2 lg:gap-16 gap-8 items-start">
           <div>
             <h2 className="lg:text-4xl text-3xl text-[#fff] text-start font-semibold">
-              Contact us anytime for quick assistance 
+              Contact us anytime for quick assistance
             </h2>
             <div className="space-y-5 mt-8">
               <a href="tel:9587867258" className="flex items-center gap-3 cursor-pointer" >
@@ -252,11 +252,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/cluth-logo.webp"
                   alt="Clutch"
                   className=" rounded-xl"
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -267,11 +271,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/Develop-4u.webp"
                   alt="Developer4"
                   className=" rounded-xl"
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -282,11 +290,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/Glass-door.webp"
                   alt="Glassdoor"
                   className=" rounded-xl"
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -297,11 +309,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/Trust-pilot.webp"
                   alt="Trustpilot"
                   className=" rounded-xl"
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -312,11 +328,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/good-firmas.webp"
                   alt="Goodfirms"
                   className=" rounded-xl "
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -327,11 +347,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/itrate.webp"
                   alt="Goodfirms"
                   className="w-20 rounded-xl "
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -342,11 +366,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/topdevelopers-img.webp"
                   alt="topdevelopers"
                   className="w-20 rounded-xl "
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -357,11 +385,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/image/designrush-img.webp"
                   alt="DesignRush"
                   className="w-20 rounded-xl "
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>
@@ -372,11 +404,15 @@ const Form = () => (
                 passHref={true}
               >
                 <Image
-                  height="100"
-                  width="150"
+                  width={150}
+                  height={100}
                   src="https://www.comfygen.com/img/selectedFirms.webp"
                   alt="Top Mobile App Development Company"
                   className="w-20 rounded-xl "
+
+                  unoptimized
+                  priority={true}
+                  quality={75}
                 />
               </Link>
             </div>

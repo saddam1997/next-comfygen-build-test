@@ -379,9 +379,9 @@ const Betting = [
     name: "Satta Matka App Development company",
     url: "/satta-matka-game-app-development-company",
   },
- 
- 
- 
+
+
+
 ];
 const Company = [
   { num: "1", name: "About us", url: "/about-us" },
@@ -413,6 +413,8 @@ export default function MobileNav(props: any) {
               alt="comfygen-logo"
               width={244}
               height={51}
+              className="h-[51px] w-[244px]"
+              style={{ height: "auto", width: "auto" }}
               priority
             />
           </Link>

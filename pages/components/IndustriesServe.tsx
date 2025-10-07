@@ -30,11 +30,11 @@ const defaultSliderData = [
     description: "Enhancing learning experiences with interactive, engaging, and scalable education apps.",
     link: "/ca/education-app-development-company"
   },
-  {
-    imgSrc: "https://www.comfygen.com/image/industries-industries-img.webp",
-    title: "Logistics",
-    description: "Streamlining logistics operations through advanced, real-time tracking and management solutions."
-  },
+  // {
+  //   imgSrc: "https://www.comfygen.com/image/industries-industries-img.webp",
+  //   title: "Logistics",
+  //   description: "Streamlining logistics operations through advanced, real-time tracking and management solutions."
+  // },
   {
     imgSrc: "https://www.comfygen.com/image/transportation-industries-img.webp",
     title: "Transportation",
@@ -129,7 +129,7 @@ function IndustriesServe({ heading = "Industries We Empower with Our Digital Sol
   };
 
   return (
-    <section className="lg:py-16 py-10">
+    <section className="lg:py-5 py-10">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
         <div className="flex items-center justify-between">
           <div className="space-y-2">
