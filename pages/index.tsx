@@ -49,52 +49,7 @@ export default function Home(props: any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/urban-ride-hailing-startup.webp",
-        head: "Urban Ride-Hailing Startup",
-        name: "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/ride-hailing-app",
-      },
 
-
-      {
-        img: "https://www.comfygen.com/image/fitclub-app-portfolio.webp",
-        head: "Fitclub Mobile App",
-        name: "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/great-wallet-portfolio.webp",
-        head: "Great Wallet Application",
-        name: "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
-    ],
-  };
 
   const portfoliodata = [
     {
@@ -140,7 +95,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/image/hero-image-on-demand-tutor-booking-app.png",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/hero-image-on-demand-tutor-booking-app.webp",
       "title": "On-Demand Tutor Booking App",
       "description": "A real-time tutor booking app development solution that connects students with qualified tutors nearby. Integrated with AI-based matching, automated scheduling, secure payments, and live video sessions.",
       "link": "/portfolio/on-demand-tutor-booking-app"
@@ -204,7 +159,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/image/telemedicine.png",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/telemedicine.webp",
       "title": "Telemedicine Platform for Virtual Consultations",
       "description": "We developed a comprehensive telemedicine platform, enabling healthcare providers to offer virtual consultations. The software is HIPAA-compliant, and secure, and ensures high-quality video and audio communication between doctors and patients, promoting better healthcare access.",
       "link": "https://www.comfygen.com/contact-us"
