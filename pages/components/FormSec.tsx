@@ -193,7 +193,7 @@ const Form = () => (
                   aria-label="Youtube"
                 >
                   <Image
-                    src="https://www.comfygen.com/comfygen-images/comfygen/youtubecontact.webp"
+                    src="https://www.comfygen.com/comfygen-images/contactFormIcons/youtubecontact.svg"
                     alt="Youtube Logo"
                     height={51}
                     width={51}
