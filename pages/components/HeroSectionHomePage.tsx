@@ -94,7 +94,8 @@ export default function HeroSection(props: any) {
           <div className="bg-[#FFFFFF] py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
             <Image
               alt="COMFYGEN LIMITED Logo"
-              src="https://www.comfygen.com/image/hero-experience-icon.svg"
+              src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
+              // src="https://www.comfygen.com/image/hero-experience-icon.svg"
               height={60}
               width={61}
             />
@@ -105,7 +106,7 @@ export default function HeroSection(props: any) {
           <div className="bg-[#FFFFFF] py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
             <Image
               alt="COMFYGEN LIMITED Logo"
-              src="https://www.comfygen.com/image/heroproject-delivered-icon.svg"
+              src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
               height={60}
               width={61}
             />
@@ -116,7 +117,7 @@ export default function HeroSection(props: any) {
           <div className="bg-[#fff] py-4 px-6 rounded-[14px] space-y-2 ">
             <Image
               alt="COMFYGEN LIMITED Logo"
-              src="https://www.comfygen.com/image/happy-client-hero-icon.svg"
+             src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
               height={60}
               width={61}
             />
