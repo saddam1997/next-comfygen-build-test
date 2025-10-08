@@ -24,7 +24,14 @@ body {
   display: block
 }
 
-.crypto {
+
+
+
+
+/* new comment */
+
+
+/* .crypto {
   background-image: radial-gradient(54.75% 54.75% at 36.93% 45.25%, #A068EF 0%, #56CCF2 0.01%, #7A56DB 100%);
 }
 
@@ -133,7 +140,9 @@ body {
 
 .pulse:hover {
   animation: none;
-}
+} */
+
+/* new comment */
 
 @-webkit-keyframes pulse {
   0% {

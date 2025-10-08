@@ -230,7 +230,7 @@ export default function Home(props: any) {
 
   const Process = [
     { title: "Requirement Gathering", description: "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction." },
-    { title: "UI/UX Design", description: "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
+    { title: "UI/UX Design", description: "Our <a href='https://www.comfygen.com/web-design' class='text-blue-500'>UI/UX designers</a> craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
     { title: "Prototype", description: "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process." },
     {
       title: "Development",
@@ -476,18 +476,25 @@ export default function Home(props: any) {
             </div>
           </div>
         </section>
-        <HireDeveloper
+        <PortfolioSlider
+          techData={portfoliodata}
+          heading="Explore Our Web & App Development Portfolio"
+          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+        />
+
+        <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-          buttonText="Hire Developer"
+          buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experienced developers for every project",
-            "Custom solutions tailored to your needs",
-            "Cutting-edge technologies to ensure success"
-          ]}
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+        <IndustriesServe
+          heading="Industries We Serve"
+          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
+          sliderData={JSON_DATA.IndustriesServe}
         />
 
         <section className="bg-white lg:py-16 py-10">
@@ -516,11 +523,18 @@ export default function Home(props: any) {
           />
         </Suspense>
 
-
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Explore Our Web & App Development Portfolio"
-          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+        <HireDeveloper
+          heading="Let’s Build the Future of Technology Together"
+          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Experienced developers for every project",
+            "Custom solutions tailored to your needs",
+            "Cutting-edge technologies to ensure success"
+          ]}
         />
 
         {/* <PortfolioSec
@@ -530,27 +544,12 @@ export default function Home(props: any) {
         /> */}
         {/* <IndustriesServe /> */}
 
-
-        <IndustriesServe
-          heading="Industries We Serve"
-          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
-
-
         <ClientTestimonials />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+
         <FormSec />
         <BlogSection initialData={initialData} />
         {false && show ? (

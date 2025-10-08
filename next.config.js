@@ -35,6 +35,22 @@ module.exports = withBundleAnalyzer({
     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
   },
   reactStrictMode: true,
+
+
+
+
+
+
+  // ✅ Modern JavaScript Output
+  swcMinify: true,
+  experimental: {
+    legacyBrowsers: false, // ⬅️ Old browser support बंद
+    browsersListForSwc: true, // ⬅️ Modern browsers को target करेगा
+  },
+
+
+
+
   images: {
     // domains: ['http://localhost:1225'],
     remotePatterns: [

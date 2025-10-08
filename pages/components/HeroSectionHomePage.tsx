@@ -59,12 +59,15 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className="lg:bg-center bg-no-repeat bg-cover bg-left"
-      style={
-        isMobile
-          ? { backgroundColor: '#5951cd' }
-          : { backgroundImage: `url(${props.bgImage})` }
-      }
+      className={`bg-no-repeat bg-cover ${isMobile ? "bg-left" : "lg:bg-center"
+        }`}
+      style={{
+        backgroundColor: isMobile ? "#5951cd" : "transparent",
+        backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: isMobile ? "left" : "center",
+      }}
     >
 
       <div className="flex flex-col-reverse  md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto" >
