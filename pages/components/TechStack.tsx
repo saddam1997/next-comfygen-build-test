@@ -12,11 +12,11 @@ export default function Tech({ title, description, filterCategory = [], customTe
     "backend": [
       { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
       { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
-      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
-      { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
+      { img: "https://www.comfygen.com/comfygen-images/comfygen/express-js.webp", alt: 'Express js', name: "Express js", num: "3" },
+      { img: "https://www.comfygen.com/comfygen-images/comfygen/sails-js-.webp", alt: 'Sails js', name: "Sails js", num: "4" },
       { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
       { img: "https://www.comfygen.com/comfygen-images/comfygen/django-icon.webp", alt: 'Django', name: "Django", num: "6" },
-      { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
+      { img: "https://www.comfygen.com/comfygen-images/comfygen/Python-icon.webp", alt: 'Python', name: "Python", num: "7" },
       { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
     ],
     "frontend": [

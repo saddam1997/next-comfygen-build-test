@@ -24,7 +24,7 @@
 
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')
-  ({        
+  ({
     enabled: false,
     openAnalyzer: false,
   })
@@ -35,9 +35,6 @@ module.exports = withBundleAnalyzer({
     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
   },
   reactStrictMode: true,
-
-
-
 
 
 
