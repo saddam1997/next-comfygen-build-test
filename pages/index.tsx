@@ -59,7 +59,7 @@ export default function Home(props: any) {
       "link": "/portfolio/ride-hailing-app"
     },
     {
-      "image": "https://www.comfygen.com/image/fitclub-app-portfolio.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio.webp",
       "title": "Fitclub Mobile App",
       "description": "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
       "link": "https://www.comfygen.com/portfolio/fitclub-app"
@@ -177,7 +177,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-custom.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-custom.webp",
       "title": "Custom Supermarket App Solution",
       "description": "A custom grocery app solution built for a supermarket chain with over 20 branches. Features barcode-based in-store scanning, loyalty rewards, click & collect scheduling, and integration with existing POS and ERP systems.",
       "link": "https://www.comfygen.com/contact-us"

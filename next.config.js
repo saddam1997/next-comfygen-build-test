@@ -37,17 +37,6 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
 
 
-
-  // ✅ Modern JavaScript Output
-  swcMinify: true,
-  experimental: {
-    legacyBrowsers: false, // ⬅️ Old browser support बंद
-    browsersListForSwc: true, // ⬅️ Modern browsers को target करेगा
-  },
-
-
-
-
   images: {
     // domains: ['http://localhost:1225'],
     remotePatterns: [
