@@ -188,7 +188,7 @@ export default function Home(props: any) {
       "description": "A robust fashion marketplace platform connecting multiple vendors and independent fashion labels. The app supports separate vendor dashboards, real-time inventory updates, commission management, and advanced filter/search tools.",
       "link": "https://www.comfygen.com/contact-us"
     }, {
-      "image": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-panel1.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/hyperlocal-grocery-delivery-app.webp",
       "title": "Hyperlocal Grocery Delivery App",
       "description": "An ultra-fast grocery delivery platform designed for metro cities. Users can browse nearby dark stores, track live delivery, and reorder essentials in just a few taps. The app includes real-time inventory sync, multi-location support, and integrated e-wallets—empowering the client to reduce delivery time to under 10 minutes.",
       "link": "https://www.comfygen.com/contact-us"

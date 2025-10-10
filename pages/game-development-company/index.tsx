@@ -114,59 +114,110 @@ export default function MultiChain(props) {
   };
 
 
-  const GameProductSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    brand: {
-      "@type": "Brand",
-      name: "Game App Development Company | Unity, Unreal, AR/VR & NFT Games",
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
     },
-    description:
-      "Comfygen offers innovative game app development services with expertise in Unity, Unreal Engine, AR/VR, blockchain, and NFT game development. Build engaging, secure, and cross-platform games that captivate users and boost ROI.",
-    image: "https://www.comfygen.com/comfygen-images/game-development/game_about.webp",
-    name: "Game Development Company | Comfygen",
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "Mr. Saddam Husen",
-        },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Game Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
       },
-      // {
-      //   "@type": "Review",
-      //   "reviewRating": {
-      //     "@type": "Rating",
-      //     "ratingValue": "4.9"
-      //   },
-      //   "author": {
-      //     "@type": "Person",
-      //     "name": "Mr. Saddam Husen"
-      //   }
-      // }
-    ],
+      "description": "Comfygen specializes in 2D & 3D game development services with engaging gameplay, rich graphics, and smooth performance. Hire mobile game developers to create innovative, cross-platform gaming solutions with AR/VR and blockchain integration.",
+      "url": "https://www.comfygen.com/game-development-company",
+      "mainEntityOfPage": "https://www.comfygen.com/game-development-company",
+      "areaServed": "Global",
+      "serviceType": [
+        "Mobile Game Development",
+        "2D & 3D Game Development",
+        "Unity & Unreal Game Development",
+        "AR/VR Game Development",
+        "Blockchain Game Development",
+        "NFT Game Development",
+        "Metaverse Game Development",
+        "Multiplayer Game Development",
+        "Educational Game Development"
 
-    // "offers": {
-    //   "@type": "Offer",
-    //   "url": "https://www.comfygen.com/game-development-company",
-    //   "priceCurrency": "USD",
-    //   "seller": {
-    //     "@type": "Organization",
-    //     "name": "Comfygen Private Limited"
-    //   }
-    // }
-  };
+      ],
 
-  const GameServiceSchema =
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Game Development Services",
-    "provider": {
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Comfygen Technologies",
       "url": "https://www.comfygen.com/",
@@ -178,241 +229,105 @@ export default function MultiChain(props) {
         "telephone": "+91 9587867258",
         "email": "sales@comfygen.com",
         "areaServed": ["IN", "US", "CA", "GB"],
-        "availableLanguage": ["en", "hi"]
+
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Game App Development Company | Unity, Unreal, AR/VR & NFT Games",
+      "image": "https://www.comfygen.com/comfygen-images/game-development/game_about.webp",
+      "description": "Comfygen offers innovative game app development services with expertise in Unity, Unreal Engine, AR/VR, blockchain, and NFT game development. Build engaging, secure, and cross-platform games that captivate users and boost ROI.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1800"
       }
     },
-    "description": "Comfygen specializes in 2D & 3D game development services with engaging gameplay, rich graphics, and smooth performance. Hire mobile game developers to create innovative, cross-platform gaming solutions with AR/VR and blockchain integration.",
-    "url": "https://www.comfygen.com/game-development-company",
-    "mainEntityOfPage": "https://www.comfygen.com/game-development-company",
-    "areaServed": "Global",
-    "serviceType": [
-      "Mobile Game Development",
-      "2D & 3D Game Development",
-      "Unity & Unreal Game Development",
-      "AR/VR Game Development",
-      "Blockchain Game Development",
-      "NFT Game Development",
-      "Metaverse Game Development",
-      "Multiplayer Game Development",
-      "Educational Game Development"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies"
-    ]
-  }
 
-  const GameOrganizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "email": "sales@comfygen.com",
-      "areaServed": ["IN", "US", "CA", "GB"],
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Game Development Company",
+        "item": "https://www.comfygen.com/game-development-company"
 
-      "availableLanguage": "en, in"
+      }]
     },
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies"
-    ]
-  }
 
-
-
-
-
-  const GameDevelopmentSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://www.comfygen.com/game-development-company/",
-        url: "https://www.comfygen.com/game-development-company/",
-        name: "Game Development Company | Comfygen",
-        isPartOf: {
-          "@id": "https://www.comfygen.com/#website",
-        },
-        primaryImageOfPage: {
-          "@id":
-            "https://www.comfygen.com/game-development-company/#primaryimage",
-        },
-        image: {
-          "@id":
-            "https://www.comfygen.com/game-development-company/#primaryimage",
-        },
-        thumbnailUrl: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-        dateModified: "2023-09-15T06:58:46+00:00",
-        description:
-          "Comfygen is a leading game development company that can offer end-to-end game design and development services. Hire our highly skilled game developers now to build a world-class Game development app & software at an affordable price.",
-        breadcrumb: {
-          "@id":
-            "https://www.comfygen.com/game-development-company/#breadcrumb",
-        },
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "ReadAction",
-            target: ["https://www.comfygen.com/game-development-company/"],
-          },
-        ],
-      },
-      {
-        "@type": "ImageObject",
-        inLanguage: "en-US",
-        "@id":
-          "https://www.comfygen.com/game-development-company/#primaryimage",
-        url: "https://www.comfygen.com/img/game-app-development-company.webp",
-        contentUrl:
-          "https://www.comfygen.com/img/game-app-development-company.webp",
-        width: 365,
-        height: 250,
-        caption: "Game Development Company In USA",
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.comfygen.com/#website",
-        url: "https://www.comfygen.com/",
-        name: "Comfygen - Blockchain and Game AI Development Company",
-        description: "Simple | Secure | Successive",
-        potentialAction: [
-          {
-            "@type": "SearchAction",
-            target: {
-              "@type": "EntryPoint",
-              urlTemplate: "https://www.comfygen.com/?s={search_term_string}",
-            },
-            "query-input": "required name=search_term_string",
-          },
-        ],
-        inLanguage: "en-US",
-      },
-    ],
-  };
-
-  const faqSchema =
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
         "@type": "Question",
         "name": "How much does it cost to develop a game app?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The cost of game app development depends on the type of game, features, design, and platform. A simple mobile game development project may start at $10,000, while advanced AR/VR, NFT, or multiplayer games can range up to $80,000 or more."
         }
-      },
-      {
+      }, {
         "@type": "Question",
         "name": "How long does it take to build a mobile game?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The timeline for mobile game development varies based on complexity. A basic 2D game may take 2–3 months, while a feature-rich 3D, AR/VR, or multiplayer game can take 6–12 months. Our team ensures timely delivery with high-quality results."
         }
-      },
-      {
+
+      }, {
         "@type": "Question",
         "name": "Which technologies do you use for game development?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "At Comfygen, we use leading technologies like Unity 3D, Unreal Engine, ARKit, ARCore, Blockchain, NFT integration, AI, and cloud gaming. Our advanced game development tech stack ensures scalable, immersive, and cross-platform gaming solutions for startups and enterprises."
         }
-      },
-      {
+
+      }, {
         "@type": "Question",
         "name": "Do you provide post-launch support and updates?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Yes, Comfygen provides complete post-launch support and game maintenance services. From bug fixes and performance optimization to adding new features, updates, and security enhancements, our team ensures your game stays competitive and delivers a seamless experience to users."
         }
-      },
-      {
+
+      }, {
         "@type": "Question",
         "name": "Can I hire dedicated game developers from Comfygen?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Absolutely! You can hire dedicated game developers from Comfygen on hourly, full-time, or project-based models. Our skilled game developers specialize in Unity, Unreal, AR/VR, blockchain, and multiplayer games, ensuring innovative, engaging, and cost-effective gaming solutions tailored to your needs."
         }
-      }
-    ]
-  }
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org/",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.comfygen.com"
-    }, {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Game Development Company",
-      "item": "https://www.comfygen.com/game-development-company"
-
-    }]
-  }
 
 
-
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen Technologies",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [{
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur",
-      "postalCode": "302006",
-      "addressCountry": "IN"
-    }, {
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-      "addressLocality": "Toronto",
-      "postalCode": "M1G3S7",
-      "addressCountry": "Canada"
+      }]
     }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies",
-      "https://www.comfygen.com/"
-    ]
-  };
+
+
+
+
+
+
+
+
+  ];
+
+
+
+
 
   let { initialData } = props;
 
@@ -585,54 +500,10 @@ export default function MultiChain(props) {
         <meta property="og:description" content="As a leading game development company, Comfygen builds custom mobile, AR/VR, metaverse, and blockchain games. Our expert developers deliver feature-rich and scalable gaming apps for global startups and enterprises." />
 
 
-
-
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(GameProductSchema),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(GameServiceSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(GameOrganizationSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(GameDevelopmentSchema),
-          }}
-        />
-  <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-
-
-
-
 
         {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} /> */}
       </Head>
