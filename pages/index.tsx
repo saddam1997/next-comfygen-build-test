@@ -460,7 +460,7 @@ export default function Home(props: any) {
             "High-Performing Solutions at Competitive Cost",
             "Strategic Development Process",
           ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/comfygen/thumbnail.webp"
           link="/about-us"
           linkText="Explore More"
         />

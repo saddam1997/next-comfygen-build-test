@@ -521,6 +521,10 @@ export default function Ecommerce(props) {
         <meta name="og:country-name" content="India, USA, UK, UAE" />
         <meta name="og:latitude" content="26.912434°" />
         <meta name="og:longitude" content="75.787271°" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
+        />
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
