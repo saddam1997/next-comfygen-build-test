@@ -318,11 +318,11 @@ export default function Home(props: any) {
   return (
     <>
       <Head>
-        <title>Custom Blockchain & Mobile App Development Company - Comfygen Technologies</title>
-        <meta name="title" content="Custom Blockchain & Mobile App Development Company - Comfygen Technologies" />
+        <title>Web & Mobile App Development Company | AI & Blockchain Solutions</title>
+        <meta name="title" content="Web & Mobile App Development Company | AI & Blockchain Solutions" />
         <meta
           name="description"
-          content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
+          content="Comfygen Technologies builds AI and blockchain-powered web and mobile apps that drive growth and engagement. Hire expert developers to build your next-gen app today!"
         />
         <meta
           name="robots"
@@ -433,7 +433,7 @@ export default function Home(props: any) {
             heading={typedText}
             isHome={true}
             Provider
-            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
+            ptag="Comfygen Technologies is a top-tier web and mobile app development company specializing in powerful AI and blockchain-based solutions. We create easy-to-use and custom apps that help businesses work smarter, connect better with users, and grow faster in the digital world."
             btnName="Let's Discuss"
             btnLink="/contact-us"
             imgSrc="/"
