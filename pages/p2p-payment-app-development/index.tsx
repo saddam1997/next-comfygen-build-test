@@ -145,7 +145,7 @@ const technologyData = [
 const techDataForPage1 = {
   All: [
     {
-      img: "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-money-transfer-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/p2p-money-transfer-app.webp",
       head: "P2P Money Transfer App for Emerging Fintech Startup",
       name: "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
       num: "1",

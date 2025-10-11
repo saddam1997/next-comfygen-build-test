@@ -720,6 +720,7 @@ export default function MobileNav(props: any) {
               width={180}
               height={51}
               priority
+              className="object-contain"
             />
           </Link>
         </div>

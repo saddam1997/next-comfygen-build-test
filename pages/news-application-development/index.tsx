@@ -113,7 +113,7 @@ const technologyData = [
 const techDataForPage1 = {
   All: [
     {
-      img: "https://www.comfygen.com/image/hero-image-global-news-aggregator-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       head: "Global News Aggregator App",
       based: "",
       name: "We developed a news aggregator app with AI-driven recommendations, multi-language support, and real-time updates. Achieved 200K+ downloads, 60% engagement growth, and higher revenue through a hybrid monetization model.",
@@ -128,7 +128,7 @@ const techDataForPage1 = {
       buttonLink: "/portfolio/global-news-aggregator-app",
     },
     {
-      img: "https://www.comfygen.com/image/hero-image-global-news-aggregator-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       head: "Political News App",
       based: "",
       name: "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",

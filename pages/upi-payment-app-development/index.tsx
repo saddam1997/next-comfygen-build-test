@@ -123,7 +123,7 @@ const techDataForPage1 = {
       buttonLink: "#"
     },
     {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/blockchain-wallet.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
       head: "Blockchain-Based Digital Wallet",
       name: "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
       num: "2",

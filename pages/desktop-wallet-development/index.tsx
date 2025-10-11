@@ -145,7 +145,7 @@ export default function Ecommerce(props) {
   const techDataForPage1 = {
     All: [
       {
-        img: "https://www.comfygen.com/image/urban-ride-hailing-startup.webp",
+        img: "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",
         head: "Urban Ride-Hailing Startup",
         name: "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
         dec1: "Solution: We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support.",

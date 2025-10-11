@@ -65,7 +65,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/portfolio/fitclub-app"
     },
     {
-      "image": "https://www.comfygen.com/image/great-wallet-portfolio.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio.webp",
       "title": "Great Wallet Application",
       "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
       "link": "#"
@@ -107,13 +107,13 @@ export default function Home(props: any) {
       "link": "/portfolio/eange-x"
     },
     {
-      "image": "https://www.comfygen.com/image/hero-image-global-news-aggregator-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       "title": "Global News Aggregator App",
       "description": "We developed a news aggregator app with AI-driven recommendations, multi-language support, and real-time updates. Achieved 200K+ downloads, 60% engagement growth, and higher revenue through a hybrid monetization model.",
       "link": "/portfolio/global-news-aggregator-app"
     },
     {
-      "image": "https://www.comfygen.com/image/hero-image-global-news-aggregator-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       "title": "Political News App",
       "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",
       "link": "/portfolio/political-news-app"
@@ -126,13 +126,13 @@ export default function Home(props: any) {
     },
 
     {
-      "image": "https://www.comfygen.com/image/portfolio-fin-flow.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
       "title": "FinFlow - A Personal Finance Management App",
       "description": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently. The app includes a multitude of features; such as expense tracking, budget creation, finance goal setting, etc. These features make the app more efficient.",
       "link": "/portfolio/personal-finance-management-app"
     },
     {
-      "image": "https://www.comfygen.com/image/portfolio-invest-smart.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
       "title": "PayMaster - A Mobile Payment Solution",
       "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
       "link": "/portfolio/mobile-payment-app-solution"
@@ -165,7 +165,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/health-tracking-app-development/portfolio1.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
       "title": "Personalized Fitness Tracker App",
       "description": "Custom health and fitness app built for an urban fitness startup. It allows users to set fitness goals, track workouts, monitor calories burned, and receive AI-based health tips. The app syncs with Apple Health and Google Fit for real-time performance updates.",
       "link": "/portfolio/personalized-fitness-tracker-app",
@@ -212,13 +212,13 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/nasdac-crypto-coin-portfolio-image.webp",
       "title": "NASDAC Crypto Coin",
       "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
       "link": "/portfolio/blockchain-based-cryptocoin-development",
     },
     {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/yatripay-portfolio-image.webp",
       "title": "YatriPay",
       "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
       "link": "/portfolio/peer-to-peer-blockchain-based-payment-system",

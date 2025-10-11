@@ -125,7 +125,7 @@ const technologyData = [
 const techDataForPage1 = {
   All: [
     {
-      img: "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-ai-stock-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/stock-trading-ai-stock-app.webp",
       head: "AI-Powered Stock Trading App",
       name: "We developed an AI-integrated trading app with real-time analytics, automated buy/sell execution, and predictive investment suggestions, empowering users with smarter and faster decision-making in volatile markets.",
       num: "1",

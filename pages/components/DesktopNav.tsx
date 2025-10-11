@@ -1101,7 +1101,7 @@ export default function DesktopNav(props: any) {
           >
             <Image
               // src="https://www.comfygen.com/media/svg/comfygen-logo.svg"
-              src="/logo.webp"
+              src="/svg/Logo1.svg"
               alt="comfygen-logo"
               width={244}
               height={51}

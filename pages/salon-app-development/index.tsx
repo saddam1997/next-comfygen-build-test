@@ -137,7 +137,7 @@ const techDataForPage1 = {
       buttonLink: "#",
     },
     {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-salon-chain-management-app.webp",
+      img: "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
       head: "Salon Chain Management App",
       name: "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
       num: "2",
