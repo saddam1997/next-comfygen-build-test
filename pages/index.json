@@ -1,7 +1,7 @@
 {
   "IndustriesServe": [
     {
-      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce.webp",
       "title": "E-Commerce",
       "description": "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
       "link": "/e-commerce-app-development"
@@ -30,28 +30,28 @@
       "description": "Streamlining logistics operations through advanced, real-time tracking and management solutions."
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/transportation-industries-img.webp",
       "title": "Transportation",
       "description": "Simplifying travel with seamless, efficient transportation app innovations."
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/travel-hospitality-industries.webp",
       "title": "Travel & Hospitality",
       "description": "Enhancing customer journeys with intuitive, tech-driven travel and hospitality applications."
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries.webp",
       "title": "Construction",
       "description": "Driving project efficiency with modern construction management and planning applications."
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries.webp",
       "title": "Game",
       "description": "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
       "link": "/game-development-company"
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/entertainment-industries-img.webp",
       "title": "Entertainment",
       "description": "Innovating entertainment platforms with personalized, accessible digital experiences."
     },
@@ -68,13 +68,13 @@
       "link": "/finance-app-development"
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/dating-industries.webp",
       "title": "Dating",
       "description": "Crafting intuitive dating platforms to foster meaningful connections seamlessly.",
       "link": "/dating-app-development"
     },
     {
-      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/restaurant-industries-img.webp",
       "title": "Restaurant industries",
       "description": "Enhancing dining experiences with user-focused, efficient restaurant management and ordering apps.",
       "link": "/food-delivery-app-development"
