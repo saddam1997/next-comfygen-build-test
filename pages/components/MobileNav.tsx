@@ -161,11 +161,11 @@ const MobileApp = [
     name: "Insurance App Development",
     url: "/insurance-app-development",
   },
-  // {
-  //   num: "32",
-  //   name: "Quick Commerce App Development",
-  //   url: "/quick-commerce-app-development",
-  // },
+  {
+    num: "32",
+    name: "Quick Commerce App Development",
+    url: "/quick-commerce-app-development",
+  },
   {
     num: "32",
     name: "White Label Mobile App Development",
@@ -622,8 +622,21 @@ const Betting = [
   //   name: "Satta Matka App Development company",
   //   url: "/satta-matka-game-app-development-company",
   // },
-
-
+  // {
+  //   num: "6",
+  //   name: "Fantasy Sports App Development",
+  //   url: "/fantasy-sports-app-development",
+  // },
+  {
+    num: "7",
+    name: "Fantasy Sports Website Development",
+    url: "/fantasy-sports-website-development",
+  },
+  // {
+  //   num: "8",
+  //   name: "Fantasy Cricket App Development",
+  //   url: "/fantasy-cricket-app-development",
+  // },
 ];
 const Company = [
   { num: "1", name: "About us", url: "/about-us" },
@@ -661,11 +674,11 @@ const EcommerceApp = [
     name: "Food Delivery App Development",
     url: "/food-delivery-app-development",
   },
-  // {
-  //   num: "6",
-  //   name: "Quick Commerce App Development",
-  //   url: "/quick-commerce-app-development",
-  // },
+  {
+    num: "6",
+    name: "Quick Commerce App Development",
+    url: "/quick-commerce-app-development",
+  },
   {
     num: "7",
     name: "Grocery App Development",
@@ -702,14 +715,11 @@ export default function MobileNav(props: any) {
         <div className="flex items-center flex-shrink-0 text-[#212121] ">
           <Link passHref={true} href="/" className="relative">
             <Image
-              src="https://www.comfygen.com/img/comfygen-logo.webp"
+              src="/svg/Logo1.svg"
               alt="comfygen-logo"
               width={180}
               height={51}
-              unoptimized
-              priority={true}
-              quality={75}
-              style={{ height: "auto", width: "auto" }}
+              priority
             />
           </Link>
         </div>
@@ -785,11 +795,11 @@ export default function MobileNav(props: any) {
                       Mobile App Development
                     </p>
                     <div className="p-2 space-y-2 text-sm font-medium">
-                      {MobileApp.map((elem: any, index: any) => {
+                      {MobileApp.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -811,11 +821,11 @@ export default function MobileNav(props: any) {
                       Web Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {WebApp.map((elem: any, index: any) => {
+                      {WebApp.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -837,11 +847,11 @@ export default function MobileNav(props: any) {
                       Stack Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {Stack.map((elem: any, index: any) => {
+                      {Stack.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -888,11 +898,11 @@ export default function MobileNav(props: any) {
                     Blockchain Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Blockchain.map((elem: any, index: any) => {
+                    {Blockchain.map((elem: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={index}
+                          key={num}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -913,11 +923,11 @@ export default function MobileNav(props: any) {
                     Token Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Token.map((elem: any, index: any) => {
+                    {Token.map((elem: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={index}
+                          key={num}
                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -938,11 +948,11 @@ export default function MobileNav(props: any) {
                     Other Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Other.map((elem: any, index: any) => {
+                    {Other.map((elem: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={index}
+                          key={num}
                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -988,11 +998,11 @@ export default function MobileNav(props: any) {
                     Ecommerce Development
                   </p>
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {EcommerceApp.map((elem: any, index: any) => {
+                    {EcommerceApp.map((elem: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={index}
+                          key={num}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -1032,11 +1042,11 @@ export default function MobileNav(props: any) {
                 <ul className="grid grid-cols-1 gap-2 p-4">
 
                   <div className="p-3 space-y-2 text-sm font-medium">
-                    {Ai.map((elem: any, index: any) => {
+                    {Ai.map((elem: any) => {
                       const { icon, name, num, url } = elem;
                       return (
                         <li
-                          key={index}
+                          key={num}
                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                         >
                           <Link
@@ -1083,11 +1093,11 @@ export default function MobileNav(props: any) {
                       Game Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Game.map((elem: any, index: any) => {
+                      {Game.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1109,11 +1119,11 @@ export default function MobileNav(props: any) {
                       Sports App Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Betting.map((elem: any, index: any) => {
+                      {Betting.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1134,11 +1144,11 @@ export default function MobileNav(props: any) {
                       Game API Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {GameApi.map((elem: any, index: any) => {
+                      {GameApi.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link
@@ -1188,11 +1198,11 @@ export default function MobileNav(props: any) {
                       Our Company
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium ">
-                      {Company.map((elem: any, index: any) => {
+                      {Company.map((elem: any) => {
                         const { icon, name, num, url } = elem;
                         return (
                           <li
-                            key={index}
+                            key={num}
                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
                           >
                             <Link

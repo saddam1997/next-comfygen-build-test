@@ -53,7 +53,7 @@ export default function Home(props: any) {
 
   const portfoliodata = [
     {
-      "image": "https://www.comfygen.com/image/urban-ride-hailing-startup.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",
       "title": "Urban Ride-Hailing Startup",
       "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
       "link": "/portfolio/ride-hailing-app"
@@ -89,7 +89,7 @@ export default function Home(props: any) {
       "link": "/portfolio/tarot-card-reading-app"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-salon-chain-management-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
       "title": "Salon Chain Management App",
       "description": "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
       "link": "https://www.comfygen.com/contact-us"
@@ -146,14 +146,14 @@ export default function Home(props: any) {
     },
 
     {
-      "image": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-ai-stock-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/stock-trading-ai-stock-app.webp",
       "title": "AI-Powered Stock Trading App",
       "description": "We developed an AI-integrated trading app with real-time analytics, automated buy/sell execution, and predictive investment suggestions, empowering users with smarter and faster decision-making in volatile markets.",
       "link": "https://www.comfygen.com/contact-us"
     },
 
     {
-      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-money-transfer-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/p2p-money-transfer-app.webp",
       "title": "P2P Money Transfer App for Emerging Fintech Startup",
       "description": "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
       "link": "https://www.comfygen.com/contact-us"
@@ -171,7 +171,7 @@ export default function Home(props: any) {
       "link": "/portfolio/personalized-fitness-tracker-app",
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-zepto.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-zepto.webp",
       "title": "Zepto-Style Quick Commerce App",
       "description": "Inspired by Zepto, this app supports ultra-fast grocery delivery in under 10 minutes. Includes dark store integration, real-time delivery tracking, push notifications, and advanced inventory management for micro-fulfillment.",
       "link": "https://www.comfygen.com/contact-us"
@@ -183,7 +183,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/fashion/fashion-slider2.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/fashion-slider.webp",
       "title": "Multi-Vendor Fashion Marketplace",
       "description": "A robust fashion marketplace platform connecting multiple vendors and independent fashion labels. The app supports separate vendor dashboards, real-time inventory updates, commission management, and advanced filter/search tools.",
       "link": "https://www.comfygen.com/contact-us"
@@ -194,7 +194,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-panel2.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/Instant-pharma-delivery-app.webp",
       "title": "Instant Pharma Delivery App",
       "description": "Developed for a healthcare startup, MediRun connects users with local pharmacies for express medicine delivery. The app allows prescription uploads, doctor chat, and same-day doorstep delivery. Features include AI-based product suggestions, secure payment gateways, and automated refill reminders, ensuring both compliance and convenience.",
       "link": "https://www.comfygen.com/contact-us"
@@ -206,7 +206,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/blockchain-wallet.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
       "title": "Blockchain-Based Digital Wallet",
       "description": "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
       "link": "https://www.comfygen.com/contact-us"
