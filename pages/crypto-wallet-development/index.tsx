@@ -679,7 +679,7 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <div className="overflow-hidden ">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-wallet-development-hero2.webp')]">
+        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp')]">
           <HeroSectionForAllPages
             heading="Best AI Cryptocurrency wallet Development Company"
             ptag="The future of digital asset management depends on intelligence, automation, and security. At Comfygen, we develop AI-powered crypto wallets that surpass basic storage capabilities. Our AI Cryptocurrency wallet Development solutions integrate blockchain technology with artificial intelligence to enable businesses and investors to secure assets, predict risks, and automate transactions with confidence. Whether you need a custom crypto wallet, white-label cryptocurrency wallet development solution, or enterprise-grade platform, we design systems that adapt to your needs and scale with your growth."
@@ -707,7 +707,7 @@ export default function Ecommerce(props) {
             "Personalized Experience",
             "Automated Management"
           ]}
-          imageSrc="https://www.comfygen.com/image/crypto-wallet-development_about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />
