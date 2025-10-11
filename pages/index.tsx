@@ -14,7 +14,7 @@ import ServicesSec from "./components/ServicesSec";
 import AboutSection from "./components/AboutSection";
 import CallToAction from "./components/CallToAction";
 import HireDeveloper from "./components/HireDeveloper";
-import HeroSectionHomePage from "./components/HeroSectionHomePage";
+// import HeroSectionHomePage from "./components/HeroSectionHomePage";
 import PortfolioSlider from "./components/PortfolioSlider";
 const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
   loading: () => <p>Loading...</p>,
@@ -24,6 +24,10 @@ const Header = dynamic(() => import("./components/Header"), {
 });
 const BlogSection = dynamic(() => import("./components/BlogSection"), {
   loading: () => <p>Loading...</p>,
+});
+
+const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), {
+  ssr: true,
 });
 
 

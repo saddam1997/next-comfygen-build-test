@@ -59,16 +59,36 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={`bg-no-repeat bg-cover ${isMobile ? "bg-left" : "lg:bg-center"
-        }`}
-      style={{
-        backgroundColor: isMobile ? "#5951cd" : "transparent",
-        backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: isMobile ? "left" : "center",
-      }}
+    className={`relative overflow-hidden `}
+      // className={` bg-no-repeat bg-cover ${isMobile ? "bg-left " : "lg:bg-center"
+      //   }`}
+    // style={{
+    //   backgroundColor: isMobile ? "#5951cd" : "transparent",
+    //   backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
+    //   backgroundSize: "cover",
+    //   backgroundRepeat: "no-repeat",
+    //   backgroundPosition: isMobile ? "left" : "center",
+    // }}
     >
+
+
+      {!isMobile && (
+        <Image
+          src={props.bgImage}
+          alt="Comfygen Hero Background"
+          fill
+          priority
+          quality={70}
+          unoptimized
+          sizes="100vw"
+          className="object-cover object-center -z-10"
+        />
+      )}
+
+        {/* ✅ Mobile Solid Background */}
+      {isMobile && (
+        <div className="absolute inset-0 bg-[#5951cd] -z-10"></div>
+      )}
 
       <div className="flex flex-col-reverse  md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto" >
         <div className="xl:w-[58%] lg:w-[65%] w-full">
