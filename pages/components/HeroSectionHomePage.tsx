@@ -79,7 +79,7 @@ export default function HeroSection(props: any) {
           fill
           priority
           quality={70}
-          unoptimized
+          // unoptimized
           sizes="100vw"
           className="object-cover object-center -z-10"
         />

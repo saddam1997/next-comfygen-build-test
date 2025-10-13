@@ -356,10 +356,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Top On-Demand Flower Delivery App Development Company</title>
+        <title>Best Flower Delivery App Development Company | Custom Floral App Solutions</title>
         <meta
           name="description"
-          content="Looking for an expert flower delivery app development company? Comfygen Technologies builds custom, white-label flower delivery apps with fast delivery, real-time tracking, payment integration & multi-store management. Launch your floral business app today!"
+          content="Looking for the best flower delivery app development company? Comfygen builds AI-powered, white-label floral apps with real-time tracking & secure payments."
         />
         <meta
           name="keywords"
@@ -473,13 +473,13 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden sm:pt-16">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Flower Delivery App Development Company"
+            heading="Top-Rated Flower Delivery App Development Company"
             ptag="Launch Your Own Flower Delivery App with Ease"
-            ptag1="Looking to grow your floral business online? Partner with a leading flower delivery app development company to build a flower delivery app that makes ordering flowers simple and fast. We provide custom flower delivery app development services using the latest technologies like blockchain and AI for personalized recommendations. Our expert flower delivery app developers build scalable, user-friendly, and AI-based flower delivery apps tailored to your business model."
-            li="Custom Flower Delivery App Development"
-            li1="Real-time Tracking & Route Optimization"
-            li2="Scalable & Secure Flower Delivery App Solutions"
-            li3="24/7 Support & Post-launch Maintenance"
+            ptag1="Want to take your floral store online? Partner with Comfygen Technologies, a trusted flower delivery app development company, to create an AI-powered app that makes flower ordering fast, personalized, and seamless. Our custom flower delivery app development services help florists manage orders, track deliveries in real time, and offer a smooth shopping experience with secure payments and modern UI."
+            li="Custom & White-Label Flower Delivery App Development"
+            li1="Real-Time Delivery Tracking & Route Optimization"
+            li2="Secure Payment Gateway & Multi-Vendor Management"
+            li3="AI-Based Recommendations & Advanced Analytics"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}

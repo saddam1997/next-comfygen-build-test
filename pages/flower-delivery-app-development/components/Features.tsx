@@ -69,7 +69,7 @@ const Features: React.FC = () => {
       <div className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95 lg:py-16 py-10">
         <div className="space-y-2">
           <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold text-white">
-          Key Features of Our Flower Delivery App
+            Key Features of Our Flower Delivery App
           </h2>
           <p className="text-white lg:w-1/2 mx-auto text-center">At Comfygen, we integrate As a leading on-demand flower delivery app development company, Comfygen Technologies delivers powerful app solutions packed with essential features for users, delivery agents, and admins. Each panel is designed to enhance performance, simplify operations, and deliver an exceptional user experience.</p>
         </div>
@@ -99,6 +99,9 @@ const Features: React.FC = () => {
                   width={500}
                   height={500}
                   className="w-full md:h-[300px] lg:h-[400px] border pb-3 sm:pb-0 border-[#fff]/10 rounded-lg"
+                  unoptimized
+                  priority={true}
+                  quality={50}
                 />
               </div>
             )}
