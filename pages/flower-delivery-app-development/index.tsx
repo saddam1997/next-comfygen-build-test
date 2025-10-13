@@ -474,7 +474,7 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Top-Rated Flower Delivery App Development Company"
-            ptag="Launch Your Own Flower Delivery App with Ease"
+            // ptag="Launch Your Own Flower Delivery App with Ease"
             ptag1="Want to take your floral store online? Partner with Comfygen Technologies, a trusted flower delivery app development company, to create an AI-powered app that makes flower ordering fast, personalized, and seamless. Our custom flower delivery app development services help florists manage orders, track deliveries in real time, and offer a smooth shopping experience with secure payments and modern UI."
             li="Custom & White-Label Flower Delivery App Development"
             li1="Real-Time Delivery Tracking & Route Optimization"
