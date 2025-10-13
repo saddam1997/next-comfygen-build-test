@@ -15,6 +15,7 @@ function PortfolioSec({
 }) {
   const sliderRef = useRef(null);
   const [activeSlide, setActiveSlide] = useState(0);
+  const [failed, setFailed] = useState(false);
 
   const settings = {
     dots: false,
@@ -89,10 +90,11 @@ function PortfolioSec({
                             alt={slide.title}
                             width={500}
                             height={400}
-                            unoptimized
-                            // priority={true}
-                            // quality={75}
-                            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            unoptimized={failed}
+                            onError={() => setFailed(true)}
+                            priority={true}
+                            quality={75}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </div>
                         <div>

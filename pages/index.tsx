@@ -75,7 +75,7 @@ export default function Home(props: any) {
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development.webp",
       "title": "Food Delivery App – Food 24Hr",
       "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
       "link": "/portfolio/food-delivery-app"
