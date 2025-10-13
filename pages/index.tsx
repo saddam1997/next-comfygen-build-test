@@ -81,31 +81,31 @@ export default function Home(props: any) {
       "link": "/portfolio/food-delivery-app"
     },
     {
-      "image": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/love-horoscope.webp",
       "title": "Love Horoscope App",
       "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
       "link": "/portfolio/love-horoscope-app"
     },
     {
-      "image": "https://www.comfygen.com/image/hero-image-tarot-card-reading-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/tarot-card-reading.webp",
       "title": "Tarot Card Reading App",
       "description": "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings. Featuring AI-powered tarot interpretations, live tarot reader consultations, customizable card decks, and in-app purchase options, this app provides a seamless and intuitive tarot reading experience.",
       "link": "/portfolio/tarot-card-reading-app"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon.webp",
       "title": "Salon Chain Management App",
       "description": "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/hero-image-on-demand-tutor-booking-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/on-demand-tutor-booking.webp",
       "title": "On-Demand Tutor Booking App",
       "description": "A real-time tutor booking app development solution that connects students with qualified tutors nearby. Integrated with AI-based matching, automated scheduling, secure payments, and live video sessions.",
       "link": "/portfolio/on-demand-tutor-booking-app"
     },
     {
-      "image": "https://www.comfygen.com/image/eangex-social-media-app-portfolio.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/eangex-social-media.webp",
       "title": "EangeX A social media platform",
       "description": "EngageX is a dynamic web application that allows users to chat, share reels, and celebrate special moments with friends and family. A platform designed for real-time interaction and seamless content sharing.",
       "link": "/portfolio/eange-x"
@@ -123,14 +123,14 @@ export default function Home(props: any) {
       "link": "/portfolio/political-news-app"
     },
     {
-      "image": "https://www.comfygen.com/img/hero-book-my-tutor.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/book-my-tutor.webp",
       "title": "Book My Tutor",
       "description": "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student, regardless of their location or academic level. The project seeks to bridge the gap between students and tutors, creating a conducive environment for personalized learning.",
       "link": "https://www.comfygen.com/contact-us"
     },
 
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance.webp",
       "title": "FinFlow - A Personal Finance Management App",
       "description": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently. The app includes a multitude of features; such as expense tracking, budget creation, finance goal setting, etc. These features make the app more efficient.",
       "link": "/portfolio/personal-finance-management-app"
@@ -181,7 +181,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-custom.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development.webp",
       "title": "Custom Supermarket App Solution",
       "description": "A custom grocery app solution built for a supermarket chain with over 20 branches. Features barcode-based in-store scanning, loyalty rewards, click & collect scheduling, and integration with existing POS and ERP systems.",
       "link": "https://www.comfygen.com/contact-us"
@@ -204,7 +204,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/ai-driven-app.webp",
       "title": "AI-Driven Mobile Banking App",
       "description": "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
       "link": "https://www.comfygen.com/contact-us"
@@ -216,7 +216,7 @@ export default function Home(props: any) {
       "link": "https://www.comfygen.com/contact-us"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/nasdac-crypto-coin-portfolio-image.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/nasdac-crypto-coin.webp",
       "title": "NASDAC Crypto Coin",
       "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
       "link": "/portfolio/blockchain-based-cryptocoin-development",
