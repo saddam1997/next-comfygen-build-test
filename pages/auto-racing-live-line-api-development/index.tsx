@@ -298,7 +298,7 @@ export default function Ecommerce(props) {
         />
         <link
           rel="canonical"
-          href="https://www.comfygen.com/auto-racing-live-line-api"
+          href="https://www.comfygen.com/auto-racing-live-line-api-development"
         />
         <meta
           name="robots"

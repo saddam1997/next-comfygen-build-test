@@ -540,32 +540,7 @@
     }
   ],
  
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/sales-dashboard/Financial.webp",
-      "title": "Financial Reporting & Forecasting with Microsoft Power BI",
-      "description": "By using a Power BI dashboard, the Finance team can report and future-proof forecasting. Microsoft Power BI solutions for financial reporting and forecasting bring together all data, like ERP, Excel, and SQL Server, to give you a consolidated, accurate, and dynamic financial view. Use predictive analytics to create accurate forecasts and inform better financial decisions.",
-      "link": "/portfolio/financial-reporting-forecasting-power-bi"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/sales-dashboard/Marketing.webp",
-      "title": "Marketing Analytics Dashboards with Microsoft Power BI",
-      "description": "Microsoft Power BI dashboards provide you with real-time insight into your campaign performance, lead sources, ROI, and audience engagement. Track key metrics like click-through rates (CTR), conversion rates, and cost-per-lead (CPL) across channels to make data-driven decisions and maximize marketing impact.",
-      "link": "/portfolio/marketing-analytics-power-bi"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/sales-dashboard/HR.webp",
-      "title": "HR & Workforce Analytics Dashboards with Microsoft Power BI",
-      "description": "Gain deep visibility into your workforce with dynamic Power BI dashboards designed for HR leaders. Monitor key metrics like hiring trends, employee performance, retention rates, diversity, and training effectiveness. Make informed decisions that improve employee engagement, reduce turnover, and align your talent strategy with business goals.",
-      "link": "/portfolio/hr-workforce-analytics-power-bi"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/sales-dashboard/Healthcare.webp",
-      "title": "Healthcare Performance & Patient Analytics with Microsoft Power BI",
-      "description": "Transform clinical and operational data into actionable insights with Power BI dashboards tailored for healthcare. Monitor patient outcomes, appointment trends, readmission rates, and resource utilization in real time. These dashboards support data-driven decisions that improve care quality, streamline operations, and enhance patient satisfaction across departments.",
-      "link": "/portfolio/healthcare-performance-patient-analytics-power-bi"
-    }
-  ],
+  "portfoliodata": [],
 
 
   "servicesData": [

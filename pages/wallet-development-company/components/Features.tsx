@@ -38,7 +38,7 @@ const featuresData: Feature[] = [
       {
         details: "NFT Wallet Development",
         emoji: "",
-        content: "Being the best <a href='NFT wallet development company' class='text-blue-500'>NFT wallet development company</a>, we develop Secure crypto wallets for storing, trading, and showcasing NFTs, with seamless NFT marketplace integration for collectors, artists, and gamers."
+        content: "Being the best <a href='https://www.comfygen.com/nft-wallet-development' class='text-blue-500'>NFT wallet development company</a>, we develop Secure crypto wallets for storing, trading, and showcasing NFTs, with seamless NFT marketplace integration for collectors, artists, and gamers."
       },
       {
         details: "Blockchain Wallet Development",

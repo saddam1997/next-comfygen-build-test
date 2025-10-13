@@ -404,13 +404,13 @@ export default function Ecommerce(props) {
           "@type": "ListItem",
           "position": 2,
           "name": "Blockchain Development",
-          "item": "https://www.comfygen.com/blockchain-development  "
+          "item": "https://www.comfygen.com/blockchain-development"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Ethereum Blockchain Development",
-          "item": "https://www.comfygen.com/ethereum-blockchain-development-company  "
+          "item": "https://www.comfygen.com/ethereum-blockchain-development-company"
         }
       ]
     },

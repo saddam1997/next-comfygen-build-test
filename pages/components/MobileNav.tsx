@@ -627,11 +627,11 @@ const Betting = [
   //   name: "Fantasy Sports App Development",
   //   url: "/fantasy-sports-app-development",
   // },
-  {
-    num: "7",
-    name: "Fantasy Sports Website Development",
-    url: "/fantasy-sports-website-development",
-  },
+  // {
+  //   num: "7",
+  //   name: "Fantasy Sports Website Development",
+  //   url: "/fantasy-sports-website-development",
+  // },
   // {
   //   num: "8",
   //   name: "Fantasy Cricket App Development",

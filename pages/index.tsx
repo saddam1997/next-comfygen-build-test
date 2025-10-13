@@ -172,7 +172,7 @@ export default function Home(props: any) {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
       "title": "Personalized Fitness Tracker App",
       "description": "Custom health and fitness app built for an urban fitness startup. It allows users to set fitness goals, track workouts, monitor calories burned, and receive AI-based health tips. The app syncs with Apple Health and Google Fit for real-time performance updates.",
-      "link": "/portfolio/personalized-fitness-tracker-app",
+      "link": "#",
     },
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-zepto.webp",

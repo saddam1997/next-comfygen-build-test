@@ -85,14 +85,14 @@ const CardClone = [
       "Our qualified team of developers has experience in creating fuel delivery apps similar to PetroApp clone. You can launch your own PetroApp-like app with features like fuel ordering, real-time tracking, and secure digital payments at an affordable cost and within a quick turnaround time.",
     buttonText: "Contact Us",
   },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/delivery-app-development/grocery1.webp",
-    title: "CAFU Clone App",
-    description:
-      "Build an <a href='https://www.comfygen.com/cost-to-develop-fule-delivery-app-like-cafu' class='text-blue-500'>on-demand fuel delivery app like CAFU</a> with doorstep fuel delivery, GPS navigation, and secure payment options. Designed for startups and enterprises, our CAFU clone app ensures your business delivers fuel to customers anytime, anywhere.",
-    buttonText: "Contact Us",
-  },
+  // {
+  //   image:
+  //     "https://www.comfygen.com/comfygen-images/delivery-app-development/grocery1.webp",
+  //   title: "CAFU Clone App",
+  //   description:
+  //     "Build an <a href='https://www.comfygen.com/cost-to-develop-fule-delivery-app-like-cafu' class='text-blue-500'>on-demand fuel delivery app like CAFU</a> with doorstep fuel delivery, GPS navigation, and secure payment options. Designed for startups and enterprises, our CAFU clone app ensures your business delivers fuel to customers anytime, anywhere.",
+  //   buttonText: "Contact Us",
+  // },
   {
     image:
       "https://www.comfygen.com/comfygen-images/delivery-app-development/medicine1.webp",

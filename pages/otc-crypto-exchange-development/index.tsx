@@ -577,7 +577,7 @@ export default function Ecommerce(props) {
             "Strong grip on KYC/AML compliance and data security",
             "Real-time trade matching & private order book setup",
             "Scalable architecture for high-volume transactions",
-            "Proven experience in <a class='text-white underline font-semibold' href='/blockchain-developmentt' >blockchain</a> & crypto projects",
+            "Proven experience in <a class='text-white underline font-semibold' href='/blockchain-development' >blockchain</a> & crypto projects",
             "Flexible engagement models (hourly/part-time/full-time).",
             "Post-launch support and performance optimization",
           ]}

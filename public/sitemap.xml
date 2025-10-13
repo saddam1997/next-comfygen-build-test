@@ -639,7 +639,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.comfygen.com/Kabaddi-live-line-api-development</loc>
+    <loc>https://www.comfygen.com/kabaddi-live-line-api-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -698,11 +698,11 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/credit-score-app-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.comfygen.com/pool-live-line-api-development</loc>
     <changefreq>daily</changefreq>
@@ -788,11 +788,11 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-   <url>
-    <loc>https://www.comfygen.com/live-line-api-development</loc>
+  <url>
+    <loc>https://www.comfygen.com/sports-live-line-api</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> 
    <url>
     <loc>https://www.comfygen.com/white-label-mobile-app-development</loc>
     <changefreq>daily</changefreq>
@@ -919,7 +919,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.comfygen.com/data/logistics-app-development</loc>
+    <loc>https://www.comfygen.com/logistics-app-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
@@ -1027,11 +1027,24 @@
     <priority>0.80</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://www.comfygen.com/mobile-crypto-wallet-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
+
+  <url>
+    <loc>https://www.comfygen.com/nft-wallet-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.comfygen.com/ethereum-blockchain-development-company</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 
 
 

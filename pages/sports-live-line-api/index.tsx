@@ -116,7 +116,7 @@ const ServiceData = {
   },
   description:
     "Comfygen is a top Live Line API provider offering fast, real-time APIs for cricket, football, NBA & more. Hire expert developers today.",
-  url: "https://www.comfygen.com/live-line-api-development",
+  url: "https://www.comfygen.com/sports-live-line-api",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.comfygen.com/sports-live-line-api",
@@ -318,7 +318,7 @@ export default function Ecommerce(props) {
         />
         <meta
           property="og:url"
-          content="https://www.comfygen.com/live-line-api-development"
+          content="https://www.comfygen.com/sports-live-line-api"
         />
         <meta property="og:type" content="website" />
         <meta

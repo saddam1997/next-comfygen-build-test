@@ -89,7 +89,7 @@ const techDataForPage1 = {
         "https://www.comfygen.com/image/figma-portfolio-icon.png",
         "https://www.comfygen.com/image/html-portfolio-icon.svg",
       ],
-      buttonLink: "/portfolio/personalized-fitness-tracker-app",
+      buttonLink: "#",
     },
     {
       img: "https://www.comfygen.com/comfygen-images/health-tracking-app-development/portfolio2.webp",
@@ -103,7 +103,7 @@ const techDataForPage1 = {
         "https://www.comfygen.com/image/figma-portfolio-icon.png",
         "https://www.comfygen.com/image/html-portfolio-icon.svg",
       ],
-      buttonLink: "/portfolio/remote-health-monitoring-app",
+      buttonLink: "#",
     },
   ],
 };

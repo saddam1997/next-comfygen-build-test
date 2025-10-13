@@ -299,7 +299,7 @@ export default function Ecommerce(props) {
         />
         <link
           rel="canonical"
-          href="https://www.comfygen.com/pool-live-line-api"
+          href="https://www.comfygen.com/pool-live-line-api-development"
         />
         <meta
           name="robots"
