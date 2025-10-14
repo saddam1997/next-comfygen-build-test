@@ -4,8 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import PortfolioSec from "./components/PortfolioSec";
 import ProcessSec from "./components/ProcessSec";
-// import IndustriesServe from "./components/IndustriesServe";
-import IndustriesServe from "./componentsnew/IndustriesServe";
+import IndustriesServe from "./components/IndustriesServe";
 import TechStack from "./components/TechStack";
 import Faq from "./components/Faq";
 import FormSec from "./components/FormSec";
@@ -14,8 +13,14 @@ import ServicesSec from "./components/ServicesSec";
 import AboutSection from "./components/AboutSection";
 import CallToAction from "./components/CallToAction";
 import HireDeveloper from "./components/HireDeveloper";
-// import HeroSectionHomePage from "./components/HeroSectionHomePage";
-import PortfolioSlider from "./components/PortfolioSlider";
+import HeroSectionHomePage from "./components/HeroSectionHomePage";
+
+
+// import PortfolioSlider from "./components/PortfolioSlider";
+const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
   loading: () => <p>Loading...</p>,
 });
@@ -24,10 +29,6 @@ const Header = dynamic(() => import("./components/Header"), {
 });
 const BlogSection = dynamic(() => import("./components/BlogSection"), {
   loading: () => <p>Loading...</p>,
-});
-
-const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), {
-  ssr: true,
 });
 
 
@@ -52,6 +53,36 @@ export default function Home(props: any) {
   };
   const closeModal = () => {
     setTalkToExpertModal(false);
+  };
+  const techDataForPage1 = {
+    All: [
+      {
+        img: "https://www.comfygen.com/image/fitclub-app-portfolio.webp",
+        head: "Fitclub Mobile App",
+        name: "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
+        num: "1",
+        icons: [
+          "https://www.comfygen.com/image/react-portfolio-icon.svg",
+          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+          "https://www.comfygen.com/image/figma-portfolio-icon.png",
+          "https://www.comfygen.com/image/html-portfolio-icon.svg"
+        ],
+      },
+      {
+        img: "https://www.comfygen.com/image/great-wallet-portfolio.webp",
+        head: "Great Wallet Application",
+        name: "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
+        num: "2",
+        icons: [
+          "https://www.comfygen.com/image/react-portfolio-icon.svg",
+          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+          "https://www.comfygen.com/image/figma-portfolio-icon.png",
+          "https://www.comfygen.com/image/html-portfolio-icon.svg"
+        ],
+      }
+    ],
   };
 
 
@@ -119,13 +150,13 @@ export default function Home(props: any) {
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       "title": "Political News App",
-      "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",
+      "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds",
       "link": "/portfolio/political-news-app"
     },
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/book-my-tutor.webp",
       "title": "Book My Tutor",
-      "description": "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student, regardless of their location or academic level. The project seeks to bridge the gap between students and tutors, creating a conducive environment for personalized learning.",
+      "description": "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student.",
       "link": "https://www.comfygen.com/contact-us"
     },
 
@@ -138,7 +169,7 @@ export default function Home(props: any) {
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
       "title": "PayMaster - A Mobile Payment Solution",
-      "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
+      "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps.",
       "link": "/portfolio/mobile-payment-app-solution"
     },
 
@@ -194,13 +225,13 @@ export default function Home(props: any) {
     }, {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/hyperlocal-grocery-delivery-app.webp",
       "title": "Hyperlocal Grocery Delivery App",
-      "description": "An ultra-fast grocery delivery platform designed for metro cities. Users can browse nearby dark stores, track live delivery, and reorder essentials in just a few taps. The app includes real-time inventory sync, multi-location support, and integrated e-wallets—empowering the client to reduce delivery time to under 10 minutes.",
+      "description": "An ultra-fast grocery delivery platform designed for metro cities. Users can browse nearby dark stores, track live delivery, and reorder essentials in just a few taps.",
       "link": "https://www.comfygen.com/contact-us"
     },
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/Instant-pharma-delivery-app.webp",
       "title": "Instant Pharma Delivery App",
-      "description": "Developed for a healthcare startup, MediRun connects users with local pharmacies for express medicine delivery. The app allows prescription uploads, doctor chat, and same-day doorstep delivery. Features include AI-based product suggestions, secure payment gateways, and automated refill reminders, ensuring both compliance and convenience.",
+      "description": "Developed for a healthcare startup, MediRun connects users with local pharmacies for express medicine delivery. The app allows prescription uploads, doctor chat, and same-day doorstep delivery.",
       "link": "https://www.comfygen.com/contact-us"
     },
     {
@@ -218,23 +249,20 @@ export default function Home(props: any) {
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/nasdac-crypto-coin.webp",
       "title": "NASDAC Crypto Coin",
-      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability.",
       "link": "/portfolio/blockchain-based-cryptocoin-development",
     },
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/yatripay-portfolio-image.webp",
       "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments.",
       "link": "/portfolio/peer-to-peer-blockchain-based-payment-system",
     },
   ]
 
-
-
-
   const Process = [
     { title: "Requirement Gathering", description: "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction." },
-    { title: "UI/UX Design", description: "Our <a href='https://www.comfygen.com/web-design' class='text-blue-500'>UI/UX designers</a> craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
+    { title: "UI/UX Design", description: "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
     { title: "Prototype", description: "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process." },
     {
       title: "Development",
@@ -322,11 +350,11 @@ export default function Home(props: any) {
   return (
     <>
       <Head>
-        <title>Web & Mobile App Development Company | AI & Blockchain Solutions</title>
-        <meta name="title" content="Web & Mobile App Development Company | AI & Blockchain Solutions" />
+        <title>Custom Blockchain & Mobile App Development Company - Comfygen Technologies</title>
+        <meta name="title" content="Custom Blockchain & Mobile App Development Company - Comfygen Technologies" />
         <meta
           name="description"
-          content="Comfygen Technologies builds AI and blockchain-powered web and mobile apps that drive growth and engagement. Hire expert developers to build your next-gen app today!"
+          content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
         />
         <meta
           name="robots"
@@ -378,12 +406,11 @@ export default function Home(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
 
 
-        {/* <link
+        <link
           rel="preload"
           href="/gif/blockchain-development-company.webp"
           as="image"
-          type="image/webp"
-        /> */}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
@@ -451,7 +478,6 @@ export default function Home(props: any) {
             bgImage="https://www.comfygen.com/herosection/landing-hero-img.webp"
           />
         </div>
-
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries"
@@ -464,7 +490,7 @@ export default function Home(props: any) {
             "High-Performing Solutions at Competitive Cost",
             "Strategic Development Process",
           ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/comfygen/thumbnail.webp"
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -480,12 +506,12 @@ export default function Home(props: any) {
             </div>
           </div>
         </section>
+
         <PortfolioSlider
           techData={portfoliodata}
           heading="Explore Our Web & App Development Portfolio"
           description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
         />
-
         <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
@@ -541,13 +567,6 @@ export default function Home(props: any) {
           ]}
         />
 
-        {/* <PortfolioSec
-          techData={techDataForPage1}
-          heading=" Explore Our Web & App Development Portfolio"
-          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
-        /> */}
-        {/* <IndustriesServe /> */}
-
         <ClientTestimonials />
         <Faq
           faqData={JSON_DATA.Frequently}
@@ -556,6 +575,7 @@ export default function Home(props: any) {
 
         <FormSec />
         <BlogSection initialData={initialData} />
+
         {false && show ? (
           <div className="fixed flex items-center justify-center w-10/12 p-4 bottom-8 left-10">
             <div className="z-10 p-2 space-y-2 bg-white border border-gray-800 rounded-md shadow-md shadow-black/50 md:flex lg:p-4 md:space-y-0">
@@ -589,6 +609,7 @@ export default function Home(props: any) {
             </div>
           </div>
         ) : null}
+
       </div>
     </>
   );

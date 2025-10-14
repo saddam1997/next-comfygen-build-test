@@ -89,10 +89,11 @@ function PortfolioSec({
                             alt={slide.title}
                             width={500}
                             height={400}
+                            priority
                             unoptimized
-                            // priority={true}
-                            // quality={75}
-                            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          // priority={true}
+                          // quality={75}
+                          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </div>
                         <div>

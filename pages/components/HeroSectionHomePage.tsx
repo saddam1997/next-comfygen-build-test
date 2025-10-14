@@ -63,12 +63,26 @@ export default function HeroSection(props: any) {
         }`}
       style={{
         backgroundColor: isMobile ? "#5951cd" : "transparent",
-        backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: isMobile ? "left" : "center",
+        // backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
+        // backgroundSize: "cover",
+        // backgroundRepeat: "no-repeat",
+        // backgroundPosition: isMobile ? "left" : "center",
       }}
     >
+
+
+      {!isMobile && (
+        <Image
+          src={props.bgImage}
+          alt="Comfygen Hero Background"
+          fill
+          priority
+          fetchPriority="high"
+          quality={75}
+          sizes="100vw"
+          className="object-cover object-center -z-10"
+        />
+      )}
 
       <div className="flex flex-col-reverse  md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto" >
         <div className="xl:w-[58%] lg:w-[65%] w-full">
