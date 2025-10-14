@@ -264,7 +264,7 @@ const Form = () => (
                 />
               </Link>
             </div>
-            <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
+            {/* <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
               <Link
                 target="_blank"
                 href="https://develop4u.co/company/comfygen"
@@ -282,7 +282,7 @@ const Form = () => (
                   quality={75}
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
               <Link
                 target="_blank"

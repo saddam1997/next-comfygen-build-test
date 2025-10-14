@@ -204,7 +204,7 @@ export default function Ecommerce(props) {
         head: "Decentralized MLM",
         name: "Join Decentralized MLM Web – Where Blockchain Ensures Transparency, Rewards Drive Growth, and Community Powers Success. Experience the Future of Network Marketing, Reinvented.",
         num: "1",
-        buttonLink: "/portfolio/decrypted-mlm",
+        buttonLink: "https://www.comfygen.com/contact-us",
         icons: [
           "https://www.comfygen.com/image/react-portfolio-icon.svg",
           "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
@@ -216,7 +216,7 @@ export default function Ecommerce(props) {
       {
         img: "https://www.comfygen.com/img/footer-image-great-wallet.webp",
         head: " Great Wallet Application",
-        name: "Great Wallet is a cutting-edge iOS wallet engineered for seamless integration with the Great Crypto Network (GREAT Blockchain). As a key component of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain framework is designed to revolutionize global economic governance and operations in the era of the fourth industrial revolution. By leveraging machine learning and artificial intelligence, Great Wallet aims to establish a large-scale economic blockchain ecosystem that applies macroeconomic principles to foster sustainable, transparent, and equitable financial growth worldwide.",
+        name: "Great Wallet is a cutting-edge iOS wallet engineered for seamless integration with the Great Crypto Network (GREAT Blockchain). As a key component of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain framework is designed to revolutionize global economic governance and operations in the era of the fourth industrial revolution.",
         num: "2",
         buttonLink: "/portfolio/great-wallet",
 

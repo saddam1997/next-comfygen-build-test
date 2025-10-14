@@ -59,7 +59,7 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={` bg-no-repeat bg-cover ${isMobile ? "bg-left " : "lg:bg-center"
+      className={`relative bg-no-repeat bg-cover ${isMobile ? "bg-left " : "lg:bg-center"
         }`}
       style={{
         backgroundColor: isMobile ? "#5951cd" : "transparent",
@@ -109,42 +109,46 @@ export default function HeroSection(props: any) {
 
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-              <Image
-                alt="COMFYGEN LIMITED Logo"
-                src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
-                // src="https://www.comfygen.com/image/hero-experience-icon.svg"
-                height={60}
-                width={60}
-                unoptimized
-                priority={true}
-                quality={75}
-                className=""
-                style={{ height: "60px", width: "60px" }}
+              <div className="h-8 w-8">
+                <Image
+                  alt="COMFYGEN LIMITED Logo"
+                  src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
+                  // src="https://www.comfygen.com/image/hero-experience-icon.svg"
+                  height={60}
+                  width={60}
+                  unoptimized
+                  priority={true}
+                  quality={75}
+                  className="h-auto w-auto"
 
-              />
+
+                />
+              </div>
               <p className="font-semibold text-[#000] text-base">
                 6+ Year's Experience
               </p>
             </div>
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-              <Image
-                alt="COMFYGEN LIMITED Logo"
-                src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
-                height={60}
-                width={60}
-                unoptimized
-                priority={true}
-                quality={75}
-                className=""
-                style={{ height: "60px", width: "60px" }}
+             <div className="h-8 w-8">
+                <Image
+                  alt="COMFYGEN LIMITED Logo"
+                  src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
+                  height={60}
+                  width={60}
+                  unoptimized
+                  priority={true}
+                  quality={75}
+                className="h-auto w-auto"
 
-              />
+                />
+              </div>
               <p className="font-semibold text-[#000] text-base">
                 250+ Project Delivered
               </p>
             </div>
             <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2 ">
-              <Image
+            <div className="lg:h-4 w-12">
+               <Image
                 alt="COMFYGEN LIMITED Logo"
                 src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
                 height={60}
@@ -152,9 +156,9 @@ export default function HeroSection(props: any) {
                 unoptimized
                 priority={true}
                 quality={75}
-                className=""
-                style={{ height: "auto", width: "60px" }}
+                className="h-auto w-auto"
               />
+             </div>
               <p className="font-semibold text-[#000] text-base">
                 100+ Total Happy Client
               </p>

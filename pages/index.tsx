@@ -464,7 +464,7 @@ export default function Home(props: any) {
             heading={typedText}
             isHome={true}
             Provider
-            ptag="Comfygen Technologies is a top-tier web and mobile app development company specializing in powerful AI and blockchain-based solutions. We create easy-to-use and custom apps that help businesses work smarter, connect better with users, and grow faster in the digital world."
+            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
             btnName="Let's Discuss"
             btnLink="/contact-us"
             imgSrc="/"

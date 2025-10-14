@@ -74,7 +74,7 @@ function PortfolioSec({
                         } border border-[#000]/10 ${bgColor}`}
                     >
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
-                        <div>
+                        <div className="h-[160] md:h-[400px] object-contain">
                           {/* <Image
                             className=""
                             src={slide.image}
@@ -84,13 +84,14 @@ function PortfolioSec({
                             layout="responsive"
                           /> */}
                           <Image
-                            className="h-[160] md:h-[400px] object-contain"
+                            className="h-auto w-full object-contain"
                             src={slide.image}
                             alt={slide.title}
-                            width={500}
-                            height={400}
+                            width={200}
+                            height={100}
                             priority
                             unoptimized
+                            
                           // priority={true}
                           // quality={75}
                           // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

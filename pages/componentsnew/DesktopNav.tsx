@@ -1766,6 +1766,7 @@ export default function DesktopNav(props: any) {
                             alt="Game Development Company"
                             height={486}
                             width={511}
+                            unoptimized
                           />
                           <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block flex justify-end items-center rounded-tl-[50px]">
                             <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">

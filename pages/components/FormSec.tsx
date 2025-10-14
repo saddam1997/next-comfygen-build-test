@@ -315,7 +315,7 @@ const Form = () => (
         <div className="grid lg:grid-cols-1 grid-cols-1 space-y-4">
           <div>
             <h2 className="xl:text-4xl text-3xl text-[#0E1F51] text-start font-bold">
-              Trusted by Industry Leaders 
+              Trusted by Industry Leaders
             </h2>
           </div>
 
@@ -339,7 +339,7 @@ const Form = () => (
                 />
               </Link>
             </div>
-            <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
+            {/* <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
               <Link
                 target="_blank"
                 href="https://develop4u.co/company/comfygen"
@@ -357,7 +357,7 @@ const Form = () => (
                   quality={75}
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
               <Link
                 target="_blank"

@@ -32,7 +32,7 @@ const AboutSection = (props) => {
               className="rounded-2xl"
               unoptimized
               priority={true}
-              quality={50}
+              quality={70}
             />
           </div>
           <div>
