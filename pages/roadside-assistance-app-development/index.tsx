@@ -15,6 +15,10 @@ import PortfolioSec from "../componentsnew/PortfolioSec";
 import CardItem from "../components/CardItem";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -75,38 +79,36 @@ const Process = [
   },
 ];
 
+
+
 const techDataForPage1 = {
   All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/AI.webp",
-      head: "AI-Powered Towing & Assistance App",
-      name: "Smart app with instant SOS, predictive service requests, and real-time tracking—offering unmatched towing and vehicle help with a user-first experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/nodejs-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/emergency.webp",
-      head: "Emergency Fuel & Battery Help App",
-      name: "A smart roadside support app offering fuel delivery, battery jumpstart, and tire help with offline mode, AI suggestions, loyalty rewards, and multilingual support for users.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/firebase-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
+    ,
+
   ],
 };
+
+
+
+const portfoliodata = [
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/AI.webp",
+    "title": "AI-Powered Towing & Assistance App",
+    "description": "Smart app with instant SOS, predictive service requests, and real-time tracking—offering unmatched towing and vehicle help with a user-first experience.",
+    "link": "/portfolio/ride-hailing-app"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/emergency.webp",
+    "title": "Emergency Fuel & Battery Help App",
+    "description": "A smart roadside support app offering fuel delivery, battery jumpstart, and tire help with offline mode, AI suggestions, loyalty rewards, and multilingual support for users.",
+    "link": "/portfolio/ride-hailing-app"
+  },
+
+
+]
+
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -490,7 +492,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        
+
         <ContactFromCenter />
         <CardItem
           heading="Advanced Features of Our Roadside Assistance App"
@@ -498,11 +500,12 @@ export default function ClinicalApp(props: any) {
           techData={JSON_DATA.cardData2}
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="Our Roadside Assistance App Development Portfolio"
           description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
         />
+
         <Features />
 
         <section className="bg-white lg:py-16 py-10">

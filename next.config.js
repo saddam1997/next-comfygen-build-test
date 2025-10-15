@@ -44,7 +44,7 @@ module.exports = withBundleAnalyzer({
         protocol: 'https',
         hostname: 'www.comfygen.com',
         port: '', // Leave empty if no specific port is needed
-        pathname: '/**/**', // Match all paths under this domain
+        pathname: '/**', // Match all paths under this domain
       },
       {
         protocol: "http",
