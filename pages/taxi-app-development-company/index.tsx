@@ -702,8 +702,10 @@ export default function Ecommerce(props) {
           heading="Our Taxi Booking App Success Stories"
           description=""
         />
+        <section className="mt-10">
+          <Features />
+        </section>
 
-        <Features />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <SolutionSec

@@ -81,12 +81,7 @@ const Process = [
 
 
 
-const techDataForPage1 = {
-  All: [
-    ,
 
-  ],
-};
 
 
 

@@ -46,6 +46,12 @@ import LatestTechnology from "../componentsnew/LatestTechnology";
 import Tab from "../components/Tab";
 import TabsPanel from "../components/Tab";
 
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -258,78 +264,53 @@ const latesttech = [
 ];
 const techDataForPage1 = {
   All: [
-    {
-      img: "https://www.comfygen.com/image/swipe-based-dating-app.webp",
-      head: "Swipe-Based Dating App",
-      name: "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/swipe-based-dating-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/match-making-datingapp.webp",
-      head: "Matchmaking Dating App",
-      name: "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/ai-matchmaking-dating-app-development",
-    },
-    {
-      img: "https://www.comfygen.com/image/lgbtq-dating-app.webp",
-      head: "LGBTQ Dating App",
-      name: "Our LGBTQ dating app development offers secure matchmaking, quick hookups, and meaningful friendships through real-time chat, location-based searches, and AI suggestions.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/lgbtq-dating-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/casual-dating-app.webp",
-      head: "Casual Dating App",
-      name: "Designed for modern dating, our casual dating app development offers instant matches, real-time chats, and location-based suggestions for users seeking fun and spontaneous connections.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/casual-dating-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/profestional-dating-app.webp",
-      head: "Professional Dating App",
-      name: "We build professional dating apps that connect like-minded professionals, integrating career-based matchmaking, private messaging, and networking features for meaningful relationships.",
-      num: "5",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/professional-dating-app",
-    },
+
+
+
+
+
   ],
 };
+
+
+const portfoliodata = [
+
+  {
+    "image": "https://www.comfygen.com/image/swipe-based-dating-app.webp",
+    "title": "Swipe-Based Dating App",
+    "description": "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
+
+    "link": "/portfolio/swipe-based-dating-app",
+  },
+  {
+    "image": "https://www.comfygen.com/image/match-making-datingapp.webp",
+    "title": "Matchmaking Dating App",
+    "description": "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
+    "link": "/portfolio/ai-matchmaking-dating-app-development",
+  },
+  {
+    "image": "https://www.comfygen.com/image/lgbtq-dating-app.webp",
+    "title": "LGBTQ Dating App",
+    "description": "Our LGBTQ dating app development offers secure matchmaking, quick hookups, and meaningful friendships through real-time chat, location-based searches, and AI suggestions.",
+    "link": "/portfolio/lgbtq-dating-app",
+  },
+  {
+    "image": "https://www.comfygen.com/image/casual-dating-app.webp",
+    "title": "Casual Dating App",
+    "description": "Designed for modern dating, our casual dating app development offers instant matches, real-time chats, and location-based suggestions for users seeking fun and spontaneous connections.",
+    "link": "/portfolio/casual-dating-app",
+  },
+  {
+    "image": "https://www.comfygen.com/image/profestional-dating-app.webp",
+    "title": "Professional Dating App",
+    "description": "We build professional dating apps that connect like-minded professionals, integrating career-based matchmaking, private messaging, and networking features for meaningful relationships.",
+    "link": "/portfolio/professional-dating-app",
+  },
+
+
+
+]
+
 
 
 
@@ -389,7 +370,7 @@ const jsonLdData = [
     "postalCode": "302006",
     "telephone": "+91-958-786-7258"
   },
-  
+
   {
     "@context": "https://schema.org",
     "@type": "PostalAddress",
@@ -410,9 +391,9 @@ const jsonLdData = [
       "@type": "ContactPoint",
       "contactType": "sales",
       "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",          
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
       "availableLanguage": "en, in"
     },
     "sameAs": [
@@ -423,7 +404,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-private-limited",
       "https://in.pinterest.com/comfygenpvt/"
     ]
-  
+
   },
 
   {
@@ -497,29 +478,31 @@ const jsonLdData = [
       "AI-Based Matchmaking",
       "AI-based Dating App Development",
       "Blockchain-based Dating App Development"
-  
+
     ],
-   
+
     "sameAs": [
       "https://www.facebook.com/comfygen.technologies",
       "https://x.com/Comfygen_Tech",
       "https://www.instagram.com/comfygen_technologies",
       "https://www.linkedin.com/company/comfygen-technologies"
-      
+
     ]
-  
+
   },
 
   {
-    "@context":"http://www.schema.org",
-    "@type":"Product",
-    "brand":"Comfygen Technologies",
-    "Name":"Dating Mobile App Development Services",
-    "image":"https://www.comfygen.com/comfygen-images/dating-app-development/about.webp",
-    "description":"Comfygen offers expert dating mobile app development services for startups & enterprises. Build feature-rich, scalable dating apps with AI matchmaking and modern UI/UX.",
-    "aggregateRating":{"@type":"AggregateRating",
-    "ratingValue":"4.9",
-    "reviewCount":"894"}
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": "Comfygen Technologies",
+    "Name": "Dating Mobile App Development Services",
+    "image": "https://www.comfygen.com/comfygen-images/dating-app-development/about.webp",
+    "description": "Comfygen offers expert dating mobile app development services for startups & enterprises. Build feature-rich, scalable dating apps with AI matchmaking and modern UI/UX.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "894"
+    }
 
   },
 
@@ -533,11 +516,11 @@ const jsonLdData = [
       "@type": "ContactPoint",
       "contactType": "sales",
       "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-          "email": "sales@comfygen.com",
-                  
-          "availableLanguage": "en, in"
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
+
+      "availableLanguage": "en, in"
     },
     "sameAs": [
       "https://www.facebook.com/comfygen",
@@ -548,112 +531,112 @@ const jsonLdData = [
       "https://in.pinterest.com/comfygenpvt/"
     ]
   },
-  
+
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does it cost to develop a dating app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost to develop a dating app typically ranges from $20,000 to $150,000 or more, depending on whether it’s a basic app or one with advanced features. The development process involves key stages such as research and planning, UI/UX design, app development, testing, and deployment. Each stage contributes to the overall cost based on its complexity and requirements. For instance, research and planning may cost $1,000–$5,000, while UI/UX design can range from $3,000–$15,000. App development, which includes frontend and backend coding, is the most significant expense, costing $15,000–$100,000 or more. Although the initial cost might seem high, the potential revenue from subscriptions, ads, and premium features makes it a worthwhile investment. Comfygen’s expert team ensures a well-managed process, delivering scalable and secure apps tailored to your needs."
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop a dating app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost to develop a dating app typically ranges from $20,000 to $150,000 or more, depending on whether it’s a basic app or one with advanced features. The development process involves key stages such as research and planning, UI/UX design, app development, testing, and deployment. Each stage contributes to the overall cost based on its complexity and requirements. For instance, research and planning may cost $1,000–$5,000, while UI/UX design can range from $3,000–$15,000. App development, which includes frontend and backend coding, is the most significant expense, costing $15,000–$100,000 or more. Although the initial cost might seem high, the potential revenue from subscriptions, ads, and premium features makes it a worthwhile investment. Comfygen’s expert team ensures a well-managed process, delivering scalable and secure apps tailored to your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to create an MVP for a dating app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Creating a Minimum Viable Product (MVP) for a dating app is an exciting first step toward transforming your idea into reality. An MVP focuses on the core features necessary to deliver value to your initial users while keeping costs and complexity manageable. Here’s how to craft a dating app MVP that hits the essentials: Understand your target audience, define core features like user profiles, messaging, and matching, design a clean UI, choose scalable technologies like React Native and Node.js, implement basic matching algorithms, and prioritize security. After development, launch a beta version to gather feedback and iterate based on user behavior."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How secure are dating sites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The security of dating sites depends on the platform’s technology, policies, and how users interact with it. Secure platforms use encryption (SSL/TLS), strong authentication methods like 2FA, transparent privacy policies, and content moderation tools. Additional safety measures include secure payment gateways, location privacy controls, anti-scam filters, and user education. Choosing apps with proven security frameworks enhances safety while dating online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the strategies for deploying dating applications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deploying a dating app involves strategies like detailed market research, scalable architecture, attractive UI/UX, strong data security, localization features, beta testing, strategic marketing, ongoing monitoring, and user feedback collection. Community building and monetization planning are also vital to ensure long-term success and user retention."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can dating apps be monetized?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dating apps can be monetized through freemium models with premium subscriptions, in-app purchases, ads, affiliate marketing, event hosting, selling data insights, in-app currency systems, or licensing/white-labeling the platform. Each method can boost revenue while enhancing the user experience if implemented effectively."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the key challenges in dating app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Challenges in dating app development include ensuring data privacy, building accurate and fair matching algorithms, managing app scalability, designing user-friendly UI/UX, content moderation, balancing free vs. premium features, legal compliance, and continuously innovating to stay ahead of competition and user expectations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you have to adhere to some legal compliance frameworks when creating a dating app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, legal compliance is critical in dating app development. This includes adhering to GDPR and CCPA for data protection, COPPA for age restrictions, content moderation policies, IP law compliance, payment security standards, and accurate advertising guidelines. Following these ensures your app is safe, legal, and trustworthy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the latest technologies in dating apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Modern dating apps use technologies like AI and machine learning for better matching, AR/VR for interactive dating, geolocation, blockchain for privacy and secure payments, gamification for engagement, and advanced biometrics like facial and voice recognition. These innovations improve user experience and safety."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the UX designed for a dating application?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UX design for dating apps emphasizes simplicity, personalization, and safety. Key elements include easy onboarding, profile customization, seamless navigation, smart match filters, engaging messaging options, gamification, and robust safety features like verification and reporting. Continuous testing and feedback improve UX over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What features should a dating app have for different age groups?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dating apps for young adults should focus on fast interaction, gamification, and social media integration. Professionals need advanced filters, privacy, and scheduling tools. Older adults prefer simple navigation, community features, and strong security. Tailoring features to each group boosts engagement and satisfaction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do businesses want to invest in dating application development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Businesses invest in dating apps due to the high market demand, consistent growth, wide user base, and strong engagement levels. Dating apps offer revenue from subscriptions, ads, and events, while enabling businesses to leverage tech innovations and stay relevant with evolving social trends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who Can Take Advantage of our Dating App Development Solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Startups, mid-size businesses, and established enterprises looking to enter the online dating market can benefit from our dating app development services. Our flexible solutions are tailored to different business models, enabling clients to create scalable, engaging, and secure dating apps with high ROI potential."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "How to create an MVP for a dating app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Creating a Minimum Viable Product (MVP) for a dating app is an exciting first step toward transforming your idea into reality. An MVP focuses on the core features necessary to deliver value to your initial users while keeping costs and complexity manageable. Here’s how to craft a dating app MVP that hits the essentials: Understand your target audience, define core features like user profiles, messaging, and matching, design a clean UI, choose scalable technologies like React Native and Node.js, implement basic matching algorithms, and prioritize security. After development, launch a beta version to gather feedback and iterate based on user behavior."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How secure are dating sites?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The security of dating sites depends on the platform’s technology, policies, and how users interact with it. Secure platforms use encryption (SSL/TLS), strong authentication methods like 2FA, transparent privacy policies, and content moderation tools. Additional safety measures include secure payment gateways, location privacy controls, anti-scam filters, and user education. Choosing apps with proven security frameworks enhances safety while dating online."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the strategies for deploying dating applications?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Deploying a dating app involves strategies like detailed market research, scalable architecture, attractive UI/UX, strong data security, localization features, beta testing, strategic marketing, ongoing monitoring, and user feedback collection. Community building and monetization planning are also vital to ensure long-term success and user retention."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can dating apps be monetized?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dating apps can be monetized through freemium models with premium subscriptions, in-app purchases, ads, affiliate marketing, event hosting, selling data insights, in-app currency systems, or licensing/white-labeling the platform. Each method can boost revenue while enhancing the user experience if implemented effectively."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the key challenges in dating app development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Challenges in dating app development include ensuring data privacy, building accurate and fair matching algorithms, managing app scalability, designing user-friendly UI/UX, content moderation, balancing free vs. premium features, legal compliance, and continuously innovating to stay ahead of competition and user expectations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you have to adhere to some legal compliance frameworks when creating a dating app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, legal compliance is critical in dating app development. This includes adhering to GDPR and CCPA for data protection, COPPA for age restrictions, content moderation policies, IP law compliance, payment security standards, and accurate advertising guidelines. Following these ensures your app is safe, legal, and trustworthy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the latest technologies in dating apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Modern dating apps use technologies like AI and machine learning for better matching, AR/VR for interactive dating, geolocation, blockchain for privacy and secure payments, gamification for engagement, and advanced biometrics like facial and voice recognition. These innovations improve user experience and safety."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is the UX designed for a dating application?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "UX design for dating apps emphasizes simplicity, personalization, and safety. Key elements include easy onboarding, profile customization, seamless navigation, smart match filters, engaging messaging options, gamification, and robust safety features like verification and reporting. Continuous testing and feedback improve UX over time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What features should a dating app have for different age groups?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dating apps for young adults should focus on fast interaction, gamification, and social media integration. Professionals need advanced filters, privacy, and scheduling tools. Older adults prefer simple navigation, community features, and strong security. Tailoring features to each group boosts engagement and satisfaction."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do businesses want to invest in dating application development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Businesses invest in dating apps due to the high market demand, consistent growth, wide user base, and strong engagement levels. Dating apps offer revenue from subscriptions, ads, and events, while enabling businesses to leverage tech innovations and stay relevant with evolving social trends."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who Can Take Advantage of our Dating App Development Solutions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Startups, mid-size businesses, and established enterprises looking to enter the online dating market can benefit from our dating app development services. Our flexible solutions are tailored to different business models, enabling clients to create scalable, engaging, and secure dating apps with high ROI potential."
-      }
-    }
-  ]
+    ]
   }
-  
-  
-  
+
+
+
 ];
 
 
@@ -673,86 +656,86 @@ export default function Ecommerce(props) {
   };
   return (
     <>
-     <Head>
-      <title>Best Custom Dating App Development Services in India | Comfygen</title>
-      <meta name="description" content="Looking for the best custom dating app development company in India? Get custom, secure, and feature-rich dating app solutions & services with 24/7 support. Build your perfect dating app today!" />
-      <link rel="canonical" href="https://www.comfygen.com/dating-app-development" />
+      <Head>
+        <title>Best Custom Dating App Development Services in India | Comfygen</title>
+        <meta name="description" content="Looking for the best custom dating app development company in India? Get custom, secure, and feature-rich dating app solutions & services with 24/7 support. Build your perfect dating app today!" />
+        <link rel="canonical" href="https://www.comfygen.com/dating-app-development" />
 
-      <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development"></meta>
-      
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development"></meta>
 
-    
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="MobileOptimized" content="320" />
-      <meta name="HandheldFriendly" content="true" />
-      <meta name="viewport-fit" content="cover" />
-      <meta name="apple-touch-fullscreen" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-      <meta name="apple-mobile-web-app-title" content="Comfygen App" />
 
-      
-      <meta name="author" content="Comfygen Technologies" />
-      <meta name="web-author" content="Comfygen Technologies" />
-      <meta name="reply-to" content="sales@comfygen.com" />
-      <meta name="rights" content="Copyright Comfygen Technologies" />
-      <meta name="copyright" content="Comfygen Technologies" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
-      
-      <meta name="googlebot" content="all" />
-      <meta name="revisit-after" content="3 days" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="General" />
-      <meta name="coverage" content="Worldwide" />
-      <meta name="language" content="English" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Comfygen App" />
 
-      
-      <meta name="geo.region" content="IN" />
-      <meta name="geo.region" content="US" />
-      <meta name="geo.region" content="CA" />
-      <meta name="geo.region" content="GB" />
-      <meta name="geo.region" content="AE" />
-      <meta name="geo.region" content="DE" />
 
-      
-      <meta property="og:type" content="article" />
-      <meta property="og:site_name" content="Comfygen" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:locale:alternate" content="en_CA" />
-      <meta property="og:locale:alternate" content="en_GB" />
-      <meta property="og:locale:alternate" content="en_DE" />
-      <meta property="og:locale:alternate" content="en_AE" />
-      <meta property="og:url" content="https://www.comfygen.com/dating-app-development" />
-      <meta property="og:title" content="Build a Custom Dating App with Comfygen | Trusted App Development Company" />
-      <meta property="og:description" content="Comfygen is a trusted dating app development company offering scalable, user-friendly dating app solutions. Leverage our 10+ years of experience and AI/ML expertise." />
-      <meta property="og:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
-      <meta property="og:image:secure_url" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
-      <meta property="og:image:alt" content="Dating App Development" />
-      <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="article:publisher" content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/" />
-      <meta property="article:modified_time" content="2022-10-13T10:13:21+00:00" />
-      <meta property="og:email" content="sales@comfygen.com" />
-      <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
 
-      
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Best Dating App Development Company | AI-Powered Dating App Solutions" />
-      <meta name="twitter:description" content="Looking for the best dating app development company? Comfygen builds advanced dating apps with AI matchmaking, rich UI/UX, and real-time features tailored to your business." />
-      <meta name="twitter:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
-      <meta name="twitter:site" content="@Comfygen_Tech" />
 
-      <script
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-      />
-    </Head>
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Comfygen" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta property="og:url" content="https://www.comfygen.com/dating-app-development" />
+        <meta property="og:title" content="Build a Custom Dating App with Comfygen | Trusted App Development Company" />
+        <meta property="og:description" content="Comfygen is a trusted dating app development company offering scalable, user-friendly dating app solutions. Leverage our 10+ years of experience and AI/ML expertise." />
+        <meta property="og:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
+        <meta property="og:image:alt" content="Dating App Development" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="article:publisher" content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/" />
+        <meta property="article:modified_time" content="2022-10-13T10:13:21+00:00" />
+        <meta property="og:email" content="sales@comfygen.com" />
+        <meta property="og:phone_number" content="+91-958-786-7258" />
+
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Dating App Development Company | AI-Powered Dating App Solutions" />
+        <meta name="twitter:description" content="Looking for the best dating app development company? Comfygen builds advanced dating apps with AI matchmaking, rich UI/UX, and real-time features tailored to your business." />
+        <meta name="twitter:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
 
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -841,14 +824,21 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <section>
+        <section className="mt-10">
           <Features />
         </section>
-        <PortfolioSecs
-          techData={techDataForPage1}
-          heading="Our Dating Apps Portfolio"
-          description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
-        />
+
+
+        <section className="mt-10">
+          <PortfolioSlider
+            techData={portfoliodata}
+            heading="Our Dating Apps Portfolio"
+            description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
+          />
+        </section>
+
+
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">

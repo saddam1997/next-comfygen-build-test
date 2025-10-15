@@ -33,6 +33,11 @@ import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -143,38 +148,26 @@ const technologyData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/language-learning-app/ai-powered-language-tutor.webp",
-      head: "AI-Powered Language Tutor App for Beginners",
-      name: "We developed an intuitive language learning app designed specifically for beginners. The app features interactive lessons, voice recognition for pronunciation feedback, and AI-based chatbots for real-time practice.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/language-learning-app/multilingual-language.webp",
-      head: "Multilingual Language Learning App for Schools",
-      name: "Built for educational institutions, this app supports multiple languages and allows schools to assign, manage, and monitor language courses from a central dashboard. Integrated with an LMS and designed with child-friendly UI, the platform supports individual and classroom-based learning with performance insights for teachers.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
+
+
+const portfoliodata = [
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/ai-powered-language-tutor.webp",
+    "title": "AI-Powered Language Tutor App for Beginners",
+    "description": "We developed an intuitive language learning app designed specifically for beginners. The app features interactive lessons, voice recognition for pronunciation feedback, and AI-based chatbots for real-time practice.",
+    "link": "#",
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/multilingual-language.webp",
+    "title": "Multilingual Language Learning App for Schools",
+    "description": "Built for educational institutions, this app supports multiple languages and allows schools to assign, manage, and monitor language courses from a central dashboard. Integrated with an LMS and designed with child-friendly UI, the platform supports individual and classroom-based learning with performance insights for teachers.",
+    "link": "#",
+  },
+
+
+]
+
 
 
 export default function ClinicalApp(props: any) {
@@ -194,42 +187,42 @@ export default function ClinicalApp(props: any) {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     "mainEntity": [
-  {
-    "@type": "Question",
-    "name": "How much does it cost to develop a language learning app like Duolingo?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost to develop a language learning app like Duolingo varies based on features, complexity, and platform choice. Basic apps start around $20,000, while advanced AI-powered, gamified apps can cost upwards of $80,000. At Comfygen, we offer tailored solutions that fit your budget without compromising quality or performance."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Can you build an app like Duolingo?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, at Comfygen, we specialize in building custom language learning apps with features similar to Duolingo, including gamification, AI-based personalized lessons, speech recognition, and real-time progress tracking. Our expert developers tailor solutions to meet your unique educational goals and deliver engaging user experiences."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How long does it take to build a language learning app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Development timelines depend on app complexity and features. A basic language learning app typically takes 3 to 6 months, while advanced apps with AI and gamification may require 8 to 12 months. Comfygen follows an agile process to deliver quality apps within realistic and transparent timelines."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Do you offer post-launch support?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, Comfygen provides comprehensive post-launch support for language learning apps, including performance monitoring, bug fixes, security updates, and feature enhancements. Our dedicated team ensures your app remains up-to-date, secure, and scalable to meet evolving user needs and market trends."
-    }
-  }
-]
-,
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop a language learning app like Duolingo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost to develop a language learning app like Duolingo varies based on features, complexity, and platform choice. Basic apps start around $20,000, while advanced AI-powered, gamified apps can cost upwards of $80,000. At Comfygen, we offer tailored solutions that fit your budget without compromising quality or performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build an app like Duolingo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, at Comfygen, we specialize in building custom language learning apps with features similar to Duolingo, including gamification, AI-based personalized lessons, speech recognition, and real-time progress tracking. Our expert developers tailor solutions to meet your unique educational goals and deliver engaging user experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a language learning app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Development timelines depend on app complexity and features. A basic language learning app typically takes 3 to 6 months, while advanced apps with AI and gamification may require 8 to 12 months. Comfygen follows an agile process to deliver quality apps within realistic and transparent timelines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer post-launch support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Comfygen provides comprehensive post-launch support for language learning apps, including performance monitoring, bug fixes, security updates, and feature enhancements. Our dedicated team ensures your app remains up-to-date, secure, and scalable to meet evolving user needs and market trends."
+        }
+      }
+    ]
+    ,
   };
-  
+
 
   const structuredData = [
     {
@@ -252,32 +245,32 @@ export default function ClinicalApp(props: any) {
     },
     {
       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Custom Language Learning App Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Looking to build a language learning app like Duolingo? Comfygen develops interactive, feature-rich apps with speech recognition, quizzes, and real-time analytics. Hire expert edtech developers today.",
-  "url": "https://www.comfygen.com/language-learning-app-development",
-  "mainEntityOfPage": "https://www.comfygen.com/language-learning-app-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "AI-based language learning app development",
-    "eLearning language app development",
-    "Custom Language Learning App Development"
+      "@type": "Service",
+      "name": "Custom Language Learning App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Looking to build a language learning app like Duolingo? Comfygen develops interactive, feature-rich apps with speech recognition, quizzes, and real-time analytics. Hire expert edtech developers today.",
+      "url": "https://www.comfygen.com/language-learning-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/language-learning-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "AI-based language learning app development",
+        "eLearning language app development",
+        "Custom Language Learning App Development"
 
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies"
-    
-  ]
-},
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
+    },
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -334,16 +327,16 @@ export default function ClinicalApp(props: any) {
       "mainEntityOfPage": "https://www.comfygen.com/language-learning-app-development",
       "areaServed": "Global",
       "serviceType": [
-         "AI-based language learning app development",
-    "eLearning language app development",
-    "Custom Language Learning App Development"
+        "AI-based language learning app development",
+        "eLearning language app development",
+        "Custom Language Learning App Development"
 
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
-        "https://www.linkedin.com/company/comfygen-private-limited"  
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-    
+
     },
     {
       "@context": "https://schema.org",
@@ -369,140 +362,142 @@ export default function ClinicalApp(props: any) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    
-    
-    {
-      "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Custom Language Learning App Development Services",
-"image":"Hero section image",
-"description":"Comfygen builds custom language learning apps with AI, gamification, and real-time tracking. Launch scalable, interactive learning solutions for mobile and web. Get started with a free quote.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"63"}
 
-      
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Custom Language Learning App Development Services",
+      "image": "Hero section image",
+      "description": "Comfygen builds custom language learning apps with AI, gamification, and real-time tracking. Launch scalable, interactive learning solutions for mobile and web. Get started with a free quote.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "63"
+      }
+
+
     }
-    
+
   ];
 
   return (
     <>
-     <Head>
-  <title>
-    Language Learning App Development Company | Custom Language App Solutions
-  </title>
-  <meta
-    name="description"
-    content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
-  />
-  <meta
-    name="keywords"
-    content="language learning app development, custom language apps, edtech solutions, AI language app, gamified learning, scalable education apps, Comfygen"
-  />
-  <link
-    rel="canonical"
-    href="https://www.comfygen.com/language-learning-app-development"
-  />
-  <meta name="robots" content="INDEX, FOLLOW" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-  />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport-fit" content="cover" />
-  <meta name="apple-touch-fullscreen" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-  <meta name="apple-mobile-web-app-title" content="Language App" />
-  <meta name="author" content="Comfygen" />
-  <meta name="web-author" content="Comfygen" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta name="rights" content="Copyright Comfygen Private Limited" />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="googlebot" content="all" />
-  <meta name="revisit-after" content="3 days" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="language" content="English" />
-  <meta name="geo.region" content="IN" />
-  <meta name="geo.region" content="US" />
-  <meta name="geo.region" content="CA" />
-  <meta name="geo.region" content="GB" />
-  <meta name="geo.region" content="AE" />
-  <meta name="geo.region" content="DE" />
+      <Head>
+        <title>
+          Language Learning App Development Company | Custom Language App Solutions
+        </title>
+        <meta
+          name="description"
+          content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
+        />
+        <meta
+          name="keywords"
+          content="language learning app development, custom language apps, edtech solutions, AI language app, gamified learning, scalable education apps, Comfygen"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/language-learning-app-development"
+        />
+        <meta name="robots" content="INDEX, FOLLOW" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Language App" />
+        <meta name="author" content="Comfygen" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Comfygen Private Limited" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="en_CA" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:locale:alternate" content="en_DE" />
-  <meta property="og:locale:alternate" content="en_AE" />
-  <meta name="fb:page_id" content="110909321596135" />
-  <meta name="og:email" content="sales@comfygen.com" />
-  <meta name="og:phone_number" content="+91-958-786-7258" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta
-    property="og:title"
-    content="Language Learning App Development Company | Custom Language App Solutions"
-  />
-  <meta
-    property="og:description"
-    content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
-  />
-  <meta
-    property="og:image"
-    content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
-  />
-  <meta
-    property="og:image:secure_url"
-    content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
-  />
-  <meta
-    property="og:image:alt"
-    content="Language Learning App Development Company"
-  />
-  <meta
-    property="og:url"
-    content="https://www.comfygen.com/language-learning-app-development"
-  />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:title"
+          content="Language Learning App Development Company | Custom Language App Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
+        />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
+        />
+        <meta
+          property="og:image:alt"
+          content="Language Learning App Development Company"
+        />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/language-learning-app-development"
+        />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Language Learning App Development Company | Custom Language App Solutions"
-  />
-  <meta
-    name="twitter:description"
-    content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
-  />
-  <meta
-    name="twitter:image"
-    content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
-  />
-  <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Language Learning App Development Company | Custom Language App Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-og.webp"
+        />
+        <meta name="twitter:site" content="@comfygentech" />
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-  />
-  {structuredData.map((data, index) => (
-    <script
-      key={index}
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  ))}
-</Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        {structuredData.map((data, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+          />
+        ))}
+      </Head>
 
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -534,9 +529,9 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection heading="Our Language Learning App Development Services" subtitle="At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a class='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences." servicesData={JSON_DATA.servicesData}/>
+
+        <ServicesSection heading="Our Language Learning App Development Services" subtitle="At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a class='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences." servicesData={JSON_DATA.servicesData} />
 
         <ContactFromCenter />
 
@@ -547,28 +542,35 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Projects That Speak Volumes – Explore Our Portfolio"
-          description="We create innovative, engaging, scalable, and effective language learning apps. We have built two outstanding educational platforms that showcase our expertise in developing feature-rich, user-focused educational tools."
-        />
 
-         <TechStack
-          title="Technology Stack We Use"
-          description="At Comfygen, we harness the latest technologies to develop powerful, scalable, and user-friendly language learning apps. Our carefully selected tech stack ensures smooth performance, seamless integration, and engaging learning experiences across all platforms and devices."
-          filterCategory={["crypto"]}
-        />
-        
+        <section className="py-10">
+          <PortfolioSlider
+            techData={portfoliodata}
+            heading="Projects That Speak Volumes – Explore Our Portfolio"
+            description="We create innovative, engaging, scalable, and effective language learning apps. We have built two outstanding educational platforms that showcase our expertise in developing feature-rich, user-focused educational tools."
+          />
+        </section>
 
-        <CoreFeaturesSection 
-          title="Key Features of Our Language Learning Apps" 
-          subtitle="At Comfygen, we design feature-rich language learning app development solutions that combine education, engagement, and innovation. Our language learning  apps are built to offer personalized, interactive learning experiences backed by smart technology and user-friendly design. Explore the key features that drive results and elevate the learning journey."
-          features={JSON_DATA.AIPowered} 
-        />
+        <section className="py-5">
+          <TechStack
+            title="Technology Stack We Use"
+            description="At Comfygen, we harness the latest technologies to develop powerful, scalable, and user-friendly language learning apps. Our carefully selected tech stack ensures smooth performance, seamless integration, and engaging learning experiences across all platforms and devices."
+            filterCategory={["crypto"]}
+          />
+        </section>
 
+        <section className="py-5">
+          <CoreFeaturesSection
+            title="Key Features of Our Language Learning Apps"
+            subtitle="At Comfygen, we design feature-rich language learning app development solutions that combine education, engagement, and innovation. Our language learning  apps are built to offer personalized, interactive learning experiences backed by smart technology and user-friendly design. Explore the key features that drive results and elevate the learning journey."
+            features={JSON_DATA.AIPowered}
+          />
+        </section>
+
+        <section className="py-5">
           <ProcessSection title="Our Language Learning App Development Process" description="At Comfygen, we follow a strategic, agile, and user-centric approach to language learning app development. From initial planning to post-launch optimization, our process ensures every app we deliver is engaging, scalable, and tailored to meet the diverse needs of learners and educators worldwide." processSlides={Process} />
+        </section>
 
-       
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -587,8 +589,8 @@ export default function ClinicalApp(props: any) {
             "AI-Powered Personalized Learning Paths",
             "Real-Time Progress Tracking & Analytics",
             "Interactive & Responsive UI/UX Design",
-            "Secure User Data Management & Privacy Compliance"    
-          ]}          
+            "Secure User Data Management & Privacy Compliance"
+          ]}
         />
         <ClientTestimonials
           heading="Testimonials from Our Clients"

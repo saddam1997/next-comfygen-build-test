@@ -18,6 +18,11 @@ import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "../componentsnew/WhoCanStart";
 import DeliverySection from "../components/DeliverySection";
 
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -80,50 +85,36 @@ const Process = [
 
 const techDataForPage1 = {
   All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-      head: "Subscription-Based Milk Delivery App",
-      name: "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-      head: "White-Label Dairy Delivery App",
-      name: "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
-      head: "Milk Ordering App",
-      name: "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
+
+
+
   ],
 };
+
+
+const portfoliodata = [
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
+    "title": "Subscription-Based Milk Delivery App",
+    "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
+    "title": "White-Label Dairy Delivery App",
+    "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
+    "title": "Milk Ordering App",
+    "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+]
 
 const WhoCanStartCards = [
   {
@@ -581,6 +572,12 @@ export default function ClinicalApp(props: any) {
           techData={techDataForPage1}
           heading="Our Portfolio – Milk Delivery App Development Projects"
           description="Explore how Comfygen empowers dairy businesses and startups with powerful, scalable milk delivery app development solutions. Our custom online milk delivery apps help streamline daily deliveries, manage subscriptions, and improve customer satisfaction with real-time features and user-friendly design."
+        />
+
+        <PortfolioSlider
+          techData={portfoliodata}
+          heading="Our Roadside Assistance App Development Portfolio"
+          description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
         />
         <Features />
 

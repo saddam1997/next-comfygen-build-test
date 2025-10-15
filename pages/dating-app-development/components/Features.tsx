@@ -115,7 +115,7 @@ const Features: React.FC = () => {
   };
   
   return (
-    <div className="lg:py-16 py-10 bg-[#fff]">
+    <div className="lg:py-16 py-10 bg-[#F5F5F9]">
       <div className="space-y-2">
         <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold  lg:w-2/3 mx-auto">
         The Features of dating apps Like Bumble ensure success in the Dating Business.

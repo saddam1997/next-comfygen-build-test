@@ -33,6 +33,11 @@ import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -143,38 +148,26 @@ const technologyData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/exam-prep-app/all-in-one-competitive-exam-prep-app.webp",
-      head: "All-in-One Competitive Exam Prep App",
-      name: "A powerful test preparation app designed for students preparing for exams like NEET, JEE, SSC, and UPSC. This app includes customizable mock tests, AI-driven performance tracking, a dynamic question bank, and live class integration.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
+
+
+const portfoliodata = [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/all-in-one-competitive-exam-prep-app.webp",
+    "title": "All-in-One Competitive Exam Prep App",
+    "description": "A powerful test preparation app designed for students preparing for exams like NEET, JEE, SSC, and UPSC. This app includes customizable mock tests, AI-driven performance tracking, a dynamic question bank, and live class integration.",
+    "link": "#",
+  },
+
+      {
+      "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/ai-based-school -exam -practice-app.webp",
+      "title": "AI-Based School Exam Practice App",
+      "description": "A smart learning app developed for K–12 students to practice school-level exams through interactive quizzes, subject-wise test series, and instant feedback. The platform features gamified progress tracking, adaptive difficulty levels, and parent-teacher dashboards.",
+      "link": "#",
     },
-    {
-      img: "https://www.comfygen.com/comfygen-images/exam-prep-app/ai-based-school -exam -practice-app.webp",
-      head: "AI-Based School Exam Practice App",
-      name: "A smart learning app developed for K–12 students to practice school-level exams through interactive quizzes, subject-wise test series, and instant feedback. The platform features gamified progress tracking, adaptive difficulty levels, and parent-teacher dashboards.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
+
+
+
+]
 
 
 export default function ClinicalApp(props: any) {
@@ -194,42 +187,42 @@ export default function ClinicalApp(props: any) {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     mainEntity: [
-  {
-    "@type": "Question",
-    "name": "How long does it take to develop an exam preparation app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The development timeline varies depending on your app’s complexity and features. Typically, a basic exam preparation app can take 3 to 6 months, while more advanced solutions with AI personalization, live classes, and analytics might take 6 to 9 months. We work closely with you to ensure timely delivery without compromising quality."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Can I integrate live classes and mock tests?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Absolutely! Our exam preparation apps support seamless integration of live classes and online mock tests. These features help create an interactive learning environment where students can attend real-time lessons and practice effectively, boosting their preparation and confidence before exams."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What is the estimated cost of development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost depends on the app’s features, platform choice (iOS, Android, Web), and complexity. A basic app starts at a moderate budget, while advanced apps with AI, live streaming, and analytics may require higher investment. We provide a detailed, transparent quote tailored to your specific requirements and budget."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Will the app support multiple languages?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, multilingual support is one of our key offerings. We use advanced localization and translation tools to ensure your app delivers content in multiple languages, making it accessible to a diverse user base and enhancing learning for students from different linguistic backgrounds."
-    }
-  }
-]
-,
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop an exam preparation app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The development timeline varies depending on your app’s complexity and features. Typically, a basic exam preparation app can take 3 to 6 months, while more advanced solutions with AI personalization, live classes, and analytics might take 6 to 9 months. We work closely with you to ensure timely delivery without compromising quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I integrate live classes and mock tests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our exam preparation apps support seamless integration of live classes and online mock tests. These features help create an interactive learning environment where students can attend real-time lessons and practice effectively, boosting their preparation and confidence before exams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the estimated cost of development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost depends on the app’s features, platform choice (iOS, Android, Web), and complexity. A basic app starts at a moderate budget, while advanced apps with AI, live streaming, and analytics may require higher investment. We provide a detailed, transparent quote tailored to your specific requirements and budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the app support multiple languages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, multilingual support is one of our key offerings. We use advanced localization and translation tools to ensure your app delivers content in multiple languages, making it accessible to a diverse user base and enhancing learning for students from different linguistic backgrounds."
+        }
+      }
+    ]
+    ,
   };
-  
+
 
   const structuredData = [
     {
@@ -252,42 +245,42 @@ export default function ClinicalApp(props: any) {
     },
     {
       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Custom Exam Preparation App Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Build smarter learning solutions with our Exam Preparation App Development services. From NEET/JEE to UPSC apps, we offer mock tests, AI-based features, and live class integration.",
-  "url": "https://www.comfygen.com/exam-preparation-app-development",
-  "mainEntityOfPage": "https://www.comfygen.com/exam-preparation-app-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "Custom Exam Prep App Development",
-    "Competitive Exam App Development",
-    "Online Mock Test App Development",
-    "Educational App Development",
-    "Test Prep App Development",
-    "Study App Development Services",
-    "NEET/JEE Exam App Development",
-    "Coaching App Development",
-    "Quiz App Development",
-    "Online Test Series App Development",
-    "AI-Based Exam Preparation App",
-    "Live Class Exam App Development"
+      "@type": "Service",
+      "name": "Custom Exam Preparation App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Build smarter learning solutions with our Exam Preparation App Development services. From NEET/JEE to UPSC apps, we offer mock tests, AI-based features, and live class integration.",
+      "url": "https://www.comfygen.com/exam-preparation-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/exam-preparation-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Exam Prep App Development",
+        "Competitive Exam App Development",
+        "Online Mock Test App Development",
+        "Educational App Development",
+        "Test Prep App Development",
+        "Study App Development Services",
+        "NEET/JEE Exam App Development",
+        "Coaching App Development",
+        "Quiz App Development",
+        "Online Test Series App Development",
+        "AI-Based Exam Preparation App",
+        "Live Class Exam App Development"
 
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies"
-    
-  ]
-}
-,
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
+    }
+    ,
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -336,7 +329,7 @@ export default function ClinicalApp(props: any) {
         "https://www.comfygen.com/"
       ]
     },
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -361,19 +354,22 @@ export default function ClinicalApp(props: any) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    
-    
-    {"@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Online Exam App Development Company",
-"image":"Hero section image",
-"description":"Comfygen delivers next-gen Online Exam App Development services with AI-driven personalization, adaptive learning, and multilingual support. Build engaging apps for students & coaching centers.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"45"}
+
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Online Exam App Development Company",
+      "image": "Hero section image",
+      "description": "Comfygen delivers next-gen Online Exam App Development services with AI-driven personalization, adaptive learning, and multilingual support. Build engaging apps for students & coaching centers.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "45"
+      }
     }
-    
+
   ];
 
   return (
@@ -497,9 +493,9 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection heading="Comprehensive Exam Preparation App Development Services to Boost Learning Success" subtitle="" servicesData={JSON_DATA.servicesData}/>
+
+        <ServicesSection heading="Comprehensive Exam Preparation App Development Services to Boost Learning Success" subtitle="" servicesData={JSON_DATA.servicesData} />
 
         <ContactFromCenter />
 
@@ -510,20 +506,21 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
+
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="Explore Our Test Preparation App Development Portfolio"
           description="Comfygen creates intuitive and results-driven test preparation applications that help students, coaching institutes, and edtech platforms deliver effective learning experiences. Here are two standout projects we’ve developed to empower exam aspirants through innovative digital solutions."
-        /> 
-        
-
-        <CoreFeaturesSection 
-          title="Advanced Functionalities We Use in Test Preparation App Development" 
-          subtitle="Comfygen builds highly engaging and results-oriented test preparation apps using advanced technologies and smart learning mechanisms."
-          features={JSON_DATA.AIPowered} 
         />
-        
-          <ProcessSection title="Our Online Exam App Development Process" description="At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance." processSlides={Process} />
+
+
+        <CoreFeaturesSection
+          title="Advanced Functionalities We Use in Test Preparation App Development"
+          subtitle="Comfygen builds highly engaging and results-oriented test preparation apps using advanced technologies and smart learning mechanisms."
+          features={JSON_DATA.AIPowered}
+        />
+
+        <ProcessSection title="Our Online Exam App Development Process" description="At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance." processSlides={Process} />
 
         <TechStack
           title="Tech Stack We Use"
@@ -544,11 +541,11 @@ export default function ClinicalApp(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-              "AI-Powered Personalized Learning Paths",
-              "Real-Time Progress Tracking",
-              "Intuitive & Responsive UI/UX",
-              "Secure Data Handling & Privacy Compliance"
-          ]}          
+            "AI-Powered Personalized Learning Paths",
+            "Real-Time Progress Tracking",
+            "Intuitive & Responsive UI/UX",
+            "Secure Data Handling & Privacy Compliance"
+          ]}
         />
         <ClientTestimonials
           heading="What Our Clients Say"
