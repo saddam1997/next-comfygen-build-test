@@ -28,11 +28,18 @@ const AboutSection = (props) => {
               alt={heading}
               width={907}
               height={762}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 907px"
-              className="rounded-2xl"
-              unoptimized
-              priority={true}
-              quality={70}
+              quality={85}
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+              placeholder="blur"
+              blurDataURL="/blur-placeholder.webp"
+
+
+              // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 907px"
+              // className="rounded-2xl"
+              // unoptimized
+              // priority={true}
+              // quality={70}
             />
           </div>
           <div>
@@ -75,7 +82,7 @@ const AboutSection = (props) => {
                 )}
                 {points && points.length > 0 && (
                   <ul className="space-y-2">
-                    {points.map((point:any, index:any) => (
+                    {points.map((point: any, index: any) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
                         <span dangerouslySetInnerHTML={{ __html: point }} />

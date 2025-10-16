@@ -21,19 +21,14 @@ import Features from "./components/Features";
 import DeliverySection from "../components/DeliverySection";
 
 
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import Header from "../components/Header";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });

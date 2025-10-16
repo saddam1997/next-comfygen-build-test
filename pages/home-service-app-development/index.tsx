@@ -3,33 +3,45 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./home-service-app-development.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import NewTeckStack from "../componentsnew/NewTeckStack";
+import Header from "../components/Header";
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+// import AboutSection from "../components/AboutSection";
+const AboutSection = dynamic(() => import("../components/AboutSection"), {
+  loading: () => <p>Loading...</p>,
+});
 import WhoCanStart from "../componentsnew/WhoCanStart";
+import ServicesSec from "../components/ServicesSec";
 import CardItem from "../components/CardItem";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
+
+// import Features from "./components/Features";
+const Features = dynamic(() => import("./components/Features"), {
   loading: () => <p>Loading...</p>,
 });
+
+import ProcessSec from "../components/ProcessSec";
+
+// import NewTeckStack from "../componentsnew/NewTeckStack";
+const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import WhyChoose from "../components/WhyChooseUs";
+const WhyChoose = dynamic(() => import("../components/WhyChooseUs"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import HireDeveloper from "../components/HireDeveloper";
+const HireDeveloper = dynamic(() => import("../components/HireDeveloper"), {
+  loading: () => <p>Loading...</p>,
+});
+import ClientTestimonials from "../components/ClientTestimonials";
+import Faq from "../components/Faq";
+
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -79,52 +91,27 @@ const Process = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",
-      head: "On-Demand Home Cleaning Services App",
-      name: "Our home cleaning service app helps users book professional cleaners instantly with flexible time slots, live tracking, and online payments. Built with modern UI/UX and real-time updates, it simplifies daily home cleaning services for urban users.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
+const portfoliodata = [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",
+    "title": "On-Demand Home Cleaning Services App",
+    "description": "Our home cleaning service app helps users book professional cleaners instantly with flexible time slots, live tracking, and online payments. Built with modern UI/UX and real-time updates, it simplifies daily home cleaning services for urban users.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/handyman.webp",
+    "title": "Handyman & Repairs Booking App",
+    "description": "This app enables users to quickly book handymen for tasks such as furniture repairs, installations, and minor fixes. With smart job scheduling, real-time technician tracking, and secure payments, the app ensures convenience and speed for both users and providers.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+  {
+      "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/appliance.webp",
+      "title": "Appliance Repair Booking App",
+      "description": "We developed a user-friendly appliance repair app that enables customers to schedule technicians for AC, refrigerator, or washing machine repairs. Features include real-time booking, service history, and technician tracking.",
+      "link": "https://www.comfygen.com/contact-us",
     },
-    {
-      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/handyman.webp",
-      head: "Handyman & Repairs Booking App",
-      name: "This app enables users to quickly book handymen for tasks such as furniture repairs, installations, and minor fixes. With smart job scheduling, real-time technician tracking, and secure payments, the app ensures convenience and speed for both users and providers.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/home-services-app-development/appliance.webp",
-      head: "Appliance Repair Booking App",
-      name: "We developed a user-friendly appliance repair app that enables customers to schedule technicians for AC, refrigerator, or washing machine repairs. Features include real-time booking, service history, and technician tracking.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-  ],
-};
+
+]
 
 const WhoCanStartCards = [
   {
@@ -565,21 +552,23 @@ export default function ClinicalApp(props: any) {
           subheading="We are a leading home services app development company. We create easy-to-use apps that help businesses serve their customers better. Our solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments."
           techData={JSON_DATA.cardData2}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
+
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="Explore Our Home Services App Development Portfolio"
           description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
         />
+
         <Features />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Our Proven Home Services App Development Process
+                Our Proven Home Services App Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-              Comfygen Technologies is a top-rated home services app development company that creates powerful, scalable, and user-friendly apps for the home services industry. With our expertise in home service app development, we help businesses connect with customers more efficiently, boost bookings, and grow revenue.
+                Comfygen Technologies is a top-rated home services app development company that creates powerful, scalable, and user-friendly apps for the home services industry. With our expertise in home service app development, we help businesses connect with customers more efficiently, boost bookings, and grow revenue.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

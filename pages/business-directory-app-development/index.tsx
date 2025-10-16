@@ -4,30 +4,50 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import NewTeckStack from "../componentsnew/NewTeckStack";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
+import Header from "../components/Header";
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+// import AboutSection from "../components/AboutSection";
+const AboutSection = dynamic(() => import("../components/AboutSection"), {
+  loading: () => <p>Loading...</p>,
+});
+import ServicesSec from "../components/ServicesSec";
+import ConsultancyApproach from "../components/ConsultancyApproach";
+// import PortfolioSlider from "../components/PortfolioSlider";
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
+// import Features from "./components/Features";
+const Features = dynamic(() => import("./components/Features"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+import ProcessSec from "../components/ProcessSec";
+// import NewTeckStack from "../componentsnew/NewTeckStack";
+const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+import WhyChoose from "../components/WhyChooseUs";
+// import HireDeveloper from "../components/HireDeveloper";
+const HireDeveloper = dynamic(() => import("../components/HireDeveloper"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+import ClientTestimonials from "../components/ClientTestimonials";
+
+
+
+
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -76,66 +96,7 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio1.webp",
-      head: "Local Business Directory App",
-      name: "A feature-rich business directory app built for a metro city startup to list local vendors and service providers. It supports map-based discovery, customer reviews, and direct contact through calls or chat.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio2.webp",
-      head: "Niche Industry Services Directory",
-      name: "Developed for a healthcare startup to connect patients with verified doctors, clinics, and labs. Includes multi-level search filters, ratings, and online appointment booking with real-time availability.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio3.webp",
-      head: "Franchise Directory App",
-      name: "Built for a multi-brand business franchise to showcase outlets and manage operations across cities. The app allows users to find nearby locations, view services, and contact individual branches.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio4.webp",
-      head: "B2B Business Listing Web Portal",
-      name: "An enterprise-grade B2B platform designed to list suppliers, distributors, and manufacturers in one place. It includes profile verification, lead generation, product showcase, and inquiry management.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-  ],
-};
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -544,11 +505,14 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
+     
+        <PortfolioSlider
+          techData={JSON_DATA.portfoliodata}
           heading="Our Portfolio – Enterprise Directory App and Website Development Projects"
-          description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals. "
+          description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals."
         />
+
+
         <Features />
 
         <section className="bg-white lg:py-16 py-10">

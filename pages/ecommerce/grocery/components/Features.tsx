@@ -84,57 +84,63 @@ const Features: React.FC = () => {
   };
 
   return (
-    <section className="bg-center bg-repeat bg-fixed " style={{ backgroundImage: `url("https://www.comfygen.com/img/grid-box-dark.svg")` }}>
-      <div className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95 lg:py-16 py-10">
-        <div className="space-y-2">
-          <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold text-white">
+    <div className="lg:py-16 lg:mt-10 py-10 bg-[#F5F5F9]">
+      <div className="space-y-2">
+        <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
           We Develop Walmart-Like Grocery Apps With Excellent Panel Features
-          </h2>
-          <p className="text-white lg:w-1/2 mx-auto text-center">Our on-demand grocery delivery apps are designed with high-performance, user-friendly features to make sure a seamless shopping experience. The grocery shopping app development of intuitive panels for customers, vendors, and admins is integral to our supermarket app development for Walmart clones and next-generation hyperlocal grocery platforms.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto  2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
-          {featuresData.map((feature) => (
-             <div
-             key={feature.id}
-             onClick={() => handleButtonClick(feature)}
-             className={`rounded-full flex justify-center border text-lg p-2 font-medium focus:outline-none border-gray-300 cursor-pointer ${openedFeature?.id === feature.id
-               ? "bg-[#5556D1] text-white border-[#5556D1]"
-               : "bg-white hover:bg-gray-100"
-               }`}>
-             
-               {feature.title}
-            
-           </div>
-          ))}
-        </div>
-        {openedFeature && (
-          <div className="mt-6 p-4 grid grid-cols-1 md:grid-cols-2 mx-auto  2xl:w-10/12 w-10/12 lg:w-11/12">
-            {openedFeature.img && (
-              <div className="mb-4 flex mx-auto ">
-                <Image
-                  src={openedFeature.img}
-                  alt={openedFeature.title}
-                  width={1920}
-                  height={1280}
-                  className="w-full border border-[#fff]/10 rounded-lg"
-                />
-              </div>
-            )}
-            <div className="mt-2 py-2 mx-4">
-              {openedFeature.additionalDetails.map((detail, index) => (
-                <ul className="max-w-xl" key={index}>
-                  <li className="py-4 border-b border-[#fff] flex justify-start place-items-center gap-8">
-                    <div>
-                      <h3 className="text-white">{detail?.details}</h3>
-                    </div>
-                  </li>
-                </ul>
-              ))}
-            </div>
-          </div>
-        )}
+        </h2>
+        <p className="text-center text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
+          high-performance, user-friendly features to make sure a seamless shopping experience. The grocery shopping app development of intuitive panels for customers, vendors, and admins is integral to our supermarket app development for Walmart clones and next-generation hyperlocal grocery platforms.
+
+        </p>
       </div>
-    </section>
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto border-2 rounded-full border-[#f1f1f1] 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
+        {featuresData.map((feature) => (
+          <div
+            key={feature.id}
+            className={`rounded-full flex justify-center border border-gray-300 cursor-pointer ${openedFeature?.id === feature.id
+              ? "bg-[#5556D1] text-white border-[#5556D1]"
+              : "bg-white hover:bg-gray-100"
+              }`}>
+            <button
+              className="text-lg font-medium p-2 focus:outline-none"
+              onMouseEnter={() => handleButtonClick(feature)}>
+              {feature.title}
+            </button>
+          </div>
+        ))}
+      </div>
+      {openedFeature && (
+        <div className="mt-6 w-full mx-auto p-4 grid grid-cols-1 md:grid-cols-2">
+          {openedFeature.img && (
+            <div className="mb-4 flex mx-auto w-[60%]">
+              <Image
+                src={openedFeature.img}
+                alt={openedFeature.title}
+                width={640}
+                height={538}
+                className="w-full h-auto object-cover rounded-lg"
+                unoptimized
+                priority={true}
+                quality={75}
+              />
+
+            </div>
+          )}
+          <div className="mt-2 py-2 mx-4">
+            {openedFeature.additionalDetails.map((detail, index) => (
+              <ul className="max-w-xl" key={index}>
+                <li className="py-4 border-b border-[#5556D1] flex justify-start place-items-center gap-8">
+                  <div>
+                    <h3>{detail?.details}</h3>
+                  </div>
+                </li>
+              </ul>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

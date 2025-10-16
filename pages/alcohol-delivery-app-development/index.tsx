@@ -19,18 +19,15 @@ import CallToAction from "../components/CallToAction";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import Features from "./components/Features";
 import DeliverySection from "../components/DeliverySection";
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+
+import Header from "../components/Header";
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -79,54 +76,7 @@ const Process = [
   ,
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/on-demand-alcohol-delivery-app-portfolio.webp",
-      head: "On-Demand Alcohol Delivery App",
-      name: "A seamless mobile app built for a local liquor retailer, enabling customers to browse a wide range of beer, wine, and spirits. Key features included real-time delivery tracking, secure age verification, digital payments, and personalized recommendations.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    
 
-    {
-      img: "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/liquor-store-chain-management-app-portfolio.webp",
-      head: "Liquor Store Chain Management App",
-      name: "Developed for a multi-location liquor store brand, this liquor delivery app allowed centralized product management, multi-store order tracking, promotions, and inventory optimization. It helped the business scale operations and improve customer convenience.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/wine-spirits-subscription-app-portfolio.webp",
-      head: "Wine & Spirits Subscription App",
-      name: "A subscription-based alcohol delivery app designed for a premium wine distributor. Customers can choose personalized plans, schedule recurring deliveries, and receive curated recommendations. The app also featured CRM integration and loyalty rewards to boost retention.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    }
-  ],
-};
 
 
 const CardClone = [
@@ -593,11 +543,17 @@ export default function ClinicalApp(props: any) {
           openModal={openModal}
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
+        <PortfolioSlider
+          techData={JSON_DATA.portfoliodata}
           heading="Explore Our On-Demand Liquor Delivery App Development Portfolio"
           description="At Comfygen Technologies, we’re proud to showcase some of our successful alcohol delivery app development projects that help liquor businesses digitize sales, streamline operations, and expand customer reach. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are built to make a real business impact."
         />
+
+        {/* <PortfolioSec
+          techData={techDataForPage1}
+          heading="Explore Our On-Demand Liquor Delivery App Development Portfolio"
+          description="At Comfygen Technologies, we’re proud to showcase some of our successful alcohol delivery app development projects that help liquor businesses digitize sales, streamline operations, and expand customer reach. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are built to make a real business impact."
+        /> */}
 
         <section>
           <Features />

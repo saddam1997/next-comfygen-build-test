@@ -95,88 +95,23 @@
   ],
   "portfoliodata": [
     {
-      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
-      "title": "Food Delivery App – Food 24Hr",
-      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-      "link": "https://www.comfygen.com/portfolio/food-delivery-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
-      "title": "Online Food Ordering App",
-      "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
-      "link": "https://www.comfygen.com/portfolio/online-food-ordering-app"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-on-demand.webp",
-      "title": "On-Demand Grocery Delivery App",
-      "description": "A lightning-fast on-demand grocery delivery app built for a local startup targeting 15-minute deliveries. Integrated with real-time GPS tracking, smart order batching, multi-store listings, and wallet-based payments for smooth checkouts.",
+      "image": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/on-demand-alcohol-delivery-app-portfolio.webp",
+      "title": "On-Demand Alcohol Delivery App",
+      "description": "A seamless mobile app built for a local liquor retailer, enabling customers to browse a wide range of beer, wine, and spirits. Key features included real-time delivery tracking, secure age verification, digital payments, and personalized recommendations.",
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-multi.webp",
-      "title": "Multi-Vendor Grocery Marketplace App",
-      "description": "A robust multi-vendor grocery marketplace like Instacart, enabling users to shop from multiple stores in one app. Features include live inventory sync, store-based filtering, AI-based product suggestions, and a unified order dashboard.",
+      "image": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/liquor-store-chain-management-app-portfolio.webp",
+      "title": "Liquor Store Chain Management App",
+      "description": "Developed for a multi-location liquor store brand, this liquor delivery app allowed centralized product management, multi-store order tracking, promotions, and inventory optimization. It helped the business scale operations and improve customer convenience.",
       "link": "#"
     },
+
     {
-      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p1.webp",
-      "title": "Subscription-Based Water Delivery App",
-      "description": "Our subscription-based water delivery app development allows customers to set up daily, weekly, or monthly deliveries with flexible plans. It includes automated order scheduling, secure payments, and push notifications for order reminders and status updates.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p2.webp",
-      "title": "Bottled & Packaged Water Delivery App",
-      "description": "We design bottled and packaged water delivery apps for suppliers and distributors to manage bulk orders and streamline logistics. With inventory management and delivery route optimization, businesses can handle high demand while ensuring timely deliveries.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-      "title": "Subscription-Based Milk Delivery App",
-      "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-      "title": "White-Label Dairy Delivery App",
-      "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p1.webp",
-      "title": "Single Outlet Pizza Delivery App",
-      "description": "A custom-built pizza delivery app tailored for individual restaurants to manage online orders and deliveries seamlessly. It enables customers to browse menus, place instant orders, and track deliveries in real-time.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p2.webp",
-      "title": "Multi-restaurant Pizza Ordering App",
-      "description": "A powerful pizza delivery marketplace app where multiple restaurants can list their menus, manage orders, and deliver pizzas to customers through a unified platform.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio1.webp",
-      "title": "Same-Day Flower Delivery App for Local Florists",
-      "description": "The app allows customers to browse bouquets, select delivery time slots, and track orders in real-time. It helped the client increase online orders by 70% in just 3 months.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio2.webp",
-      "title": "Flower Subscription App for a Gifting Brand",
-      "description": "This Florist app was built for a gifting startup offering flower subscription services. With smart scheduling, recurring billing, and push reminders, it now processes over 500 automated deliveries monthly.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-pharmacy-chain-app.webp",
-      "title": "Pharmacy Chain App",
-      "description": "Pharmacy Chain App is a feature-rich medicine delivery app developed for a leading pharmacy chain. It allows users to upload prescriptions, order medicines, and track deliveries in real-time. The app integrates secure payment gateways and AI-powered medicine recommendations, ensuring a smooth user experience.",
-      "link": "https://www.comfygen.com/portfolio/pharmacy-chain-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
-      "title": "AI-Powered Medicine Ordering",
-      "description": "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions. With a simple UI, seamless payment integration, and multi-vendor support, this app has helped thousands of users conveniently access medicines.",
-      "link": "https://www.comfygen.com/portfolio/ai-powered-medicine-ordering-app"
+      "image": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/wine-spirits-subscription-app-portfolio.webp",
+      "title": "Wine & Spirits Subscription App",
+      "description": "A subscription-based alcohol delivery app designed for a premium wine distributor. Customers can choose personalized plans, schedule recurring deliveries, and receive curated recommendations. The app also featured CRM integration and loyalty rewards to boost retention.",
+      "link": "#"
     }
   ],
   "servicesData1": [
@@ -244,7 +179,7 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-       {
+      {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
         "title": "Expertise in Delivery App",
         "description": "With years of experience in delivery app development, our mobile app development team builds delivery apps that handle real-time orders, route optimization, and secure payments. We understand the complexities of wine on-demand app development and tailor solutions for maximum efficiency."

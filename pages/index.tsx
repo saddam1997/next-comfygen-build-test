@@ -205,12 +205,12 @@ export default function Home(props: any) {
       "description": "Custom health and fitness app built for an urban fitness startup. It allows users to set fitness goals, track workouts, monitor calories burned, and receive AI-based health tips. The app syncs with Apple Health and Google Fit for real-time performance updates.",
       "link": "#",
     },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-zepto.webp",
-      "title": "Zepto-Style Quick Commerce App",
-      "description": "Inspired by Zepto, this app supports ultra-fast grocery delivery in under 10 minutes. Includes dark store integration, real-time delivery tracking, push notifications, and advanced inventory management for micro-fulfillment.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
+    // {
+    //   "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development-zepto.webp",
+    //   "title": "Zepto-Style Quick Commerce App",
+    //   "description": "Inspired by Zepto, this app supports ultra-fast grocery delivery in under 10 minutes. Includes dark store integration, real-time delivery tracking, push notifications, and advanced inventory management for micro-fulfillment.",
+    //   "link": "https://www.comfygen.com/contact-us"
+    // },
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/grocery-app-development.webp",
       "title": "Custom Supermarket App Solution",

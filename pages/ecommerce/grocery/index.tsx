@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -6,28 +5,13 @@ import JSON_DATA from "./grocery-app-development.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/WhyChooseUs";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ServicesSec from "../../components/ServicesSec";
-import SolutionSec from "../../components/SolutionSec";
-import ProcessSec from "../../components/ProcessSec";
 import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
 import Features from "./components/Features";
-import Script from "next/script";
+
 import TechStack from "../../components/TechStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSec from "../../componentsnew/PortfolioSec";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import ServiceSection from "../../components/ServiceSection";
+
 import ServicesSection from "../../componentsnew/ServicesSection";
 import CallToAction from "../../components/CallToAction";
 import TrendsSection from "../../componentsnew/TrendsSection";

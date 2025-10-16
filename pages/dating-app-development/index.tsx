@@ -713,8 +713,8 @@ export default function Ecommerce(props) {
         <meta property="og:url" content="https://www.comfygen.com/dating-app-development" />
         <meta property="og:title" content="Build a Custom Dating App with Comfygen | Trusted App Development Company" />
         <meta property="og:description" content="Comfygen is a trusted dating app development company offering scalable, user-friendly dating app solutions. Leverage our 10+ years of experience and AI/ML expertise." />
-        <meta property="og:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-development.webp" />
         <meta property="og:image:alt" content="Dating App Development" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
@@ -728,7 +728,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Dating App Development Company | AI-Powered Dating App Solutions" />
         <meta name="twitter:description" content="Looking for the best dating app development company? Comfygen builds advanced dating apps with AI matchmaking, rich UI/UX, and real-time features tailored to your business." />
-        <meta name="twitter:image" content="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp" />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
         <script

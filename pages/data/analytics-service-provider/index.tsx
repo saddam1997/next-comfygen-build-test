@@ -16,10 +16,15 @@ import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
 import IndustriesServe from "./components/IndustriesServe";
-const Header = dynamic(() => import("../../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
+import Header from "../../components/Header";
+
+
+
+// const Header = dynamic(() => import("../../components/Header"), {
+//   ssr: false,
+//   loading: () => <p>Loading...</p>,
+// });
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {

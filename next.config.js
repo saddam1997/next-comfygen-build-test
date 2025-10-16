@@ -53,8 +53,9 @@ module.exports = withBundleAnalyzer({
         pathname: "/**",
       },
     ],
-
-     qualities: [50, 70, 75, 80, 90, 100],
+    formats: ["image/avif", "image/webp"], // enables automatic WebP/AVIF conversion
+    minimumCacheTTL: 86400, // cache for 1 day
+    qualities: [50, 70, 75, 80, 85, 90, 100],
   },
   compress: true,
 })

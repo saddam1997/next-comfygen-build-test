@@ -76,11 +76,12 @@ export default function HeroSection(props: any) {
           src={props.bgImage}
           alt="Comfygen Hero Background"
           fill
-          priority
-          fetchPriority="high"
-          quality={75}
-          sizes="100vw"
           className="object-cover object-center -z-10"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+          placeholder="blur"
+          blurDataURL="/blur-placeholder.webp"
+
         />
       )}
 
@@ -129,7 +130,7 @@ export default function HeroSection(props: any) {
               </p>
             </div>
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-             <div className="h-8 w-8">
+              <div className="h-8 w-8">
                 <Image
                   alt="COMFYGEN LIMITED Logo"
                   src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
@@ -138,7 +139,7 @@ export default function HeroSection(props: any) {
                   unoptimized
                   priority={true}
                   quality={75}
-                className="h-auto w-auto"
+                  className="h-auto w-auto"
 
                 />
               </div>
@@ -147,18 +148,18 @@ export default function HeroSection(props: any) {
               </p>
             </div>
             <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2 ">
-            <div className="lg:h-4 w-12">
-               <Image
-                alt="COMFYGEN LIMITED Logo"
-                src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
-                height={60}
-                width={60}
-                unoptimized
-                priority={true}
-                quality={75}
-                className="h-auto w-auto"
-              />
-             </div>
+              <div className="lg:h-4 w-12">
+                <Image
+                  alt="COMFYGEN LIMITED Logo"
+                  src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
+                  height={60}
+                  width={60}
+                  unoptimized
+                  priority={true}
+                  quality={75}
+                  className="h-auto w-auto"
+                />
+              </div>
               <p className="font-semibold text-[#000] text-base">
                 100+ Total Happy Client
               </p>

@@ -25,6 +25,36 @@
     "title": "Is the business listing app available for both Android and iOS?",
     "desc": "Yes, we build business directory apps for both Android and iOS using Flutter, React Native, and native technologies. You get a consistent and optimized experience across all devices, increasing your reach and user engagement."
   }
+],
+
+
+"portfoliodata": [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio1.webp",
+    "title": "Local Business Directory App",
+    "description": "A feature-rich business directory app built for a metro city startup to list local vendors and service providers. It supports map-based discovery, customer reviews, and direct contact through calls or chat.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio2.webp",
+    "title": "Niche Industry Services Directory",
+    "description": "Developed for a healthcare startup to connect patients with verified doctors, clinics, and labs. Includes multi-level search filters, ratings, and online appointment booking with real-time availability.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio3.webp",
+    "title": "Franchise Directory App",
+    "description": "Built for a multi-brand business franchise to showcase outlets and manage operations across cities. The app allows users to find nearby locations, view services, and contact individual branches.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio4.webp",
+    "title": "B2B Business Listing Web Portal",
+    "description": "An enterprise-grade B2B platform designed to list suppliers, distributors, and manufacturers in one place. It includes profile verification, lead generation, product showcase, and inquiry management.",
+    "link": "https://www.comfygen.com/contact-us"
+  }
+  
 ]
 ,
 "servicesData": [

@@ -34,15 +34,19 @@ import TrendsSection from "../componentsnew/TrendsSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
+
+import Header from "../components/Header";
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
   loading: () => <p>Loading...</p>,
 });
+
+
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -92,7 +96,7 @@ const technologyData = [
     desc: "Launch your own salon booking app like StyleSeat. Enable users to book haircuts, flawless makeup, or trendy nail services with ease. Our beauty salon mobile app development solution empowers beauty professionals and clients alike."
   },
   {
-    img:null,
+    img: null,
     title: "Booksy App Clone",
     desc: "Get a custom salon booking app clone inspired by Booksy, designed to let your clients book self-care appointments anytime, anywhere. Deliver smooth scheduling, real-time availability updates, and authentic customer reviews—all within a single, easy-to-use platform."
   },
@@ -102,7 +106,7 @@ const technologyData = [
     desc: "Build your own beauty and wellness platform with a Fresha clone. Let users effortlessly book salon, hair, and spa appointments anytime. Our salon booking application development company crafts intuitive, feature-packed apps customized to reflect your brand’s unique style and deliver a seamless user experience."
   },
   {
-    img:null,
+    img: null,
     title: "Yes Madam App Clone",
     desc: "Develop India’s next top on-demand beauty services app platform with a Yes Madam clone. Offer at-home salon, spa, and wellness services with secure payments and real-time tracking."
   },
@@ -120,66 +124,35 @@ const technologyData = [
 
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
-      head: "On-Demand Beauty Booking App",
-      name: "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
-      head: "Salon Chain Management App",
-      name: "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
-      head: "Freelance Stylist Appointment App",
-      name: "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
-      head: "Beauty & Wellness Aggregator Platform",
-      name: "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    }
-  ],
-};
+const portfoliodata = [
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
+    "title": "On-Demand Beauty Booking App",
+    "description": "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
+    "title": "Salon Chain Management App",
+    "description": "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
+    "title": "Freelance Stylist Appointment App",
+    "description": "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
+    "link": "https://www.comfygen.com/contact-us",
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
+    "title": "Beauty & Wellness Aggregator Platform",
+    "description": "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
+   "link": "https://www.comfygen.com/contact-us",
+  }
+
+]
 
 
 
@@ -221,36 +194,36 @@ export default function ClinicalApp(props: any) {
     },
     {
       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Custom Salon App Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/"
-  },
-    "description": "Get custom salon app development from Comfygen – a trusted beauty salon app development company. We build scalable, feature-rich mobile apps for salons   and spas with appointment booking, CRM, payments, and real-time scheduling to elevate your beauty business.",
-    "url": "https://www.comfygen.com/salon-app-development",
-    "mainEntityOfPage": "https://www.comfygen.com/salon-app-development",
-    "areaServed": "Global",
-    "serviceType": [
-      "Custom Salon App Development",
-      "Hair Salon Booking App Development",
-      "Nail Salon App Development",
-      "Spa Booking App Development",
-      "On-Demand Beauty App Development",
-      "Salon Management Software Development",
-      "White Label Salon App Development",
-      "iOS Salon Booking App Development",
-      "Android Salon App Development",
-      "AI-based Salon App Development",
-      "Beauty & Salon Aggregator"
+      "@type": "Service",
+      "name": "Custom Salon App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get custom salon app development from Comfygen – a trusted beauty salon app development company. We build scalable, feature-rich mobile apps for salons   and spas with appointment booking, CRM, payments, and real-time scheduling to elevate your beauty business.",
+      "url": "https://www.comfygen.com/salon-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/salon-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Salon App Development",
+        "Hair Salon Booking App Development",
+        "Nail Salon App Development",
+        "Spa Booking App Development",
+        "On-Demand Beauty App Development",
+        "Salon Management Software Development",
+        "White Label Salon App Development",
+        "iOS Salon Booking App Development",
+        "Android Salon App Development",
+        "AI-based Salon App Development",
+        "Beauty & Salon Aggregator"
 
-    ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen", 
-    "https://www.linkedin.com/company/comfygen-private-limited"
-  ]
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
 
     },
     {
@@ -268,7 +241,7 @@ export default function ClinicalApp(props: any) {
         "addressLocality": "Jaipur",
         "postalCode": "302006",
         "addressCountry": "IN"
-      },{
+      }, {
         "@type": "PostalAddress",
         "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
         "addressLocality": "Toronto",
@@ -329,17 +302,19 @@ export default function ClinicalApp(props: any) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    
+
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Salon App Development Services",
-      "image":"https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-about.webp",
-      "description":"Boost your beauty business with our salon app development services. Comfygen builds feature-rich, user-friendly mobile apps for salon and spa businesses. Bookings, payments, and real-time scheduling — all in one seamless solution.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"829"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Salon App Development Services",
+      "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-about.webp",
+      "description": "Boost your beauty business with our salon app development services. Comfygen builds feature-rich, user-friendly mobile apps for salon and spa businesses. Bookings, payments, and real-time scheduling — all in one seamless solution.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "829"
+      }
     },
     {
       "@context": "https://schema.org/",
@@ -403,7 +378,7 @@ export default function ClinicalApp(props: any) {
         }
       ]
     }
-    
+
   ];
 
 
@@ -506,12 +481,12 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection 
+
+        <ServicesSection
           heading="Affordable Salon Booking App Development Services"
           subtitle="Our best salon app development services for multi-branch beauty centers at Comfygen are designed to help salons and spas digitize their operations, improve customer engagement, and simplify appointment scheduling. With deep domain expertise and innovative features, we craft smart, scalable, and visually stunning mobile solutions tailored for the beauty and wellness industry."
-          servicesData={JSON_DATA.servicesData}    /> 
+          servicesData={JSON_DATA.servicesData} />
 
         <ContactFromCenter />
         <SolutionSec
@@ -519,12 +494,21 @@ export default function ClinicalApp(props: any) {
           subheading="Comfygen delivers powerful, feature-rich salon app clone development solutions inspired by the world's leading beauty and salon platforms. Our beauty clone apps are designed to match their functionality while offering full customization, secure performance, and scalable infrastructure to help you launch your salon tech business faster and smarter."
           techData={technologyData}
         />
-        <Features />
-        <PortfolioSec
-          techData={techDataForPage1}
+        <section className="py-10">
+          <Features />
+        </section>
+
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="We Have Developed Salon Apps That You Can Check Out"
           description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
         />
+
+        {/* <PortfolioSec
+          techData={techDataForPage1}
+          heading="We Have Developed Salon Apps That You Can Check Out"
+          description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
+        /> */}
 
         <CallToAction
           heading="Ready to Build Your Custom Salon App with Experts?"
@@ -535,9 +519,9 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-       
 
-        
+
+
 
         <TrendsSection
           heading="The Emerging Technologies We Use for Salon App Development"
@@ -545,15 +529,15 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        <CoreFeaturesSection 
-          title="AI-Powered Salon App Development Solutions" 
+        <CoreFeaturesSection
+          title="AI-Powered Salon App Development Solutions"
           subtitle="At Comfygen, we deliver AI-powered salon app development solutions that help beauty businesses automate operations, enhance user experience, and offer personalized services at scale. From intelligent scheduling to behavior-based service suggestions, our custom salon app development integrates the power of AI to create smarter, data-driven salon platforms."
-          features={JSON_DATA.AIPowered} 
+          features={JSON_DATA.AIPowered}
         />
 
-        <ProcessSection 
-          title="Our Salon App Development Process" 
-          description="As a top-notch salon app development company, Comfygen follows a strategic and transparent process to deliver tailor-made and high-performing salon apps. From concept to launch, our approach ensures quality, scalability, and a seamless user experience. Here's how we build the best salon app for beauty professionals and businesses." 
+        <ProcessSection
+          title="Our Salon App Development Process"
+          description="As a top-notch salon app development company, Comfygen follows a strategic and transparent process to deliver tailor-made and high-performing salon apps. From concept to launch, our approach ensures quality, scalability, and a seamless user experience. Here's how we build the best salon app for beauty professionals and businesses."
           processSlides={Process} />
 
         <TechStack
@@ -574,7 +558,7 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems = {[
+          listItems={[
             "Expertise in Cutting-Edge Technologies – AI, AR/VR, Cloud, Blockchain & IoT",
             "Customizable & Scalable Development – Apps tailored to your brand vision",
             "Engaging UI/UX – Designed for seamless beauty service booking and customer interaction"

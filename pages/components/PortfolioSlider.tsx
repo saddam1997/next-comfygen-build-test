@@ -87,14 +87,13 @@ function PortfolioSec({
                             className="h-auto w-full object-contain"
                             src={slide.image}
                             alt={slide.title}
-                            width={200}
-                            height={100}
+                            width={907}
+                            height={762}
+                            quality={85}
                             priority
-                            unoptimized
-                            
-                          // priority={true}
-                          // quality={75}
-                          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                            placeholder="blur"
+                            blurDataURL="/blur-placeholder.webp"
                           />
                         </div>
                         <div>

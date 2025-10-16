@@ -56,11 +56,18 @@ const HireDeveloper = ({
                                 className="w-full"
                                 src={imageSrc}
                                 alt={imageAlt}
-                                width={700}
-                                height={549}
-                                unoptimized
-                                priority={true}
-                                quality={75}
+                                width={907}
+                                height={762}
+                                quality={85}
+                                priority
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                                placeholder="blur"
+                                blurDataURL="/blur-placeholder.webp"
+                            // width={700}
+                            // height={549}
+                            // unoptimized
+                            // priority={true}
+                            // quality={75}
                             />
                         </LazyLoad>
                     </div>

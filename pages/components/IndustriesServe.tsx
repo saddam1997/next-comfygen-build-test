@@ -88,7 +88,7 @@ const defaultSliderData = [
   }
 ];
 
-function IndustriesServe({ heading = "Industries We Empower with Our Digital Solutions", description = "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.",  sliderData = defaultSliderData }) {
+function IndustriesServe({ heading = "Industries We Empower with Our Digital Solutions", description = "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.", sliderData = defaultSliderData }) {
   const settings = {
     dots: false,
     arrows: false,
@@ -133,8 +133,8 @@ function IndustriesServe({ heading = "Industries We Empower with Our Digital Sol
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
         <div className="flex items-center justify-between">
           <div className="space-y-2">
-          <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">{heading}</h2>
-          <p className="xl:text-lg text-base text-[#212121] font-normal">{description}</p>
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">{heading}</h2>
+            <p className="xl:text-lg text-base text-[#212121] font-normal">{description}</p>
           </div>
           <div className="md:flex hidden items-center gap-4 px-4">
             <button
@@ -164,16 +164,23 @@ function IndustriesServe({ heading = "Industries We Empower with Our Digital Sol
                 <a href={item.link} className="block">
                   <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[360px]">
                     <Image
-                      src={item.imgSrc} 
+                      src={item.imgSrc}
                       alt={item.title}
-                      unoptimized
-                      height={416}
-                      width={269}
-                      className="w-full"
+                      width={907}
+                      height={762}
+                      quality={85}
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                      placeholder="blur"
+                      blurDataURL="/blur-placeholder.webp"
+                    // unoptimized
+                    // height={416}
+                    // width={269}
+                    // className="w-full"
                     />
                     <div>
                       <h3 className="text-[#212121] text-lg font-semibold">{item.title}</h3>
-                      <p className="text-[#212121] text-sm" dangerouslySetInnerHTML={{ __html: item.description}}/>
+                      <p className="text-[#212121] text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
                     </div>
                   </div>
                 </a>

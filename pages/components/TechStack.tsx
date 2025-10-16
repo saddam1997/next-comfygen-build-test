@@ -145,13 +145,20 @@ export default function Tech({ title, description, filterCategory = [], customTe
                     <Image
                       src={elem.img}
                       alt={elem.name}
-                      width={50}
-                      height={50}
-                      unoptimized
-                      priority={true}
-                      quality={75} 
-                      style={{height:"60px", width:"60px"}}
-                      />
+                      width={907}
+                      height={762}
+                      quality={85}
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                      placeholder="blur"
+                      blurDataURL="/blur-placeholder.webp"
+                    // width={50}
+                    // height={50}
+                    // unoptimized
+                    // priority={true}
+                    // quality={75} 
+                    // style={{height:"60px", width:"60px"}}
+                    />
                   </div>
                   <h3 className="text-lg font-semibold text-white ml-3">{elem.name}</h3>
                 </div>

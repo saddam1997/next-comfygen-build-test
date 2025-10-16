@@ -1,21 +1,12 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./languagelearningappdevelopment.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
+// import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import Script from "next/script";
-import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import {
   IconBook,
   IconSchool,
@@ -27,29 +18,53 @@ import {
   IconHeartbeat,
   IconApps,
 } from "@tabler/icons-react";
-import ServiceSection from "../components/ServiceSection";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
+import Header from "../componentsnew/Header";
+import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
+const AboutSection = dynamic(
+  () => import("../components/AboutSection"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
 
+// import ServicesSection from "../componentsnew/ServicesSection";
+const ServicesSection = dynamic(() => import("../componentsnew/ServicesSection"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import ConsultancyApproach from "../components/ConsultancyApproach";
+const ConsultancyApproach = dynamic(() => import("../components/ConsultancyApproach"), {
+  loading: () => <p>Loading...</p>,
+});
 
 const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
   loading: () => <p>Loading...</p>,
 });
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+// import TechStack from "../components/TechStack";
+const TechStack = dynamic(() => import("../components/TechStack"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
+const CoreFeaturesSection = dynamic(() => import("../componentsnew/CoreFeaturesSection"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import ProcessSection from "../componentsnew/ProcessSection";
+const ProcessSection = dynamic(() => import("../componentsnew/ProcessSection"), {
+  loading: () => <p>Loading...</p>,
+});
+
+// import WhyChoose from "../components/WhyChooseUs";
+const WhyChoose = dynamic(() => import("../components/WhyChooseUs"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });

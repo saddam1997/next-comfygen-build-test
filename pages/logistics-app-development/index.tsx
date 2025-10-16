@@ -4,30 +4,59 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./logistics-app-development.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
+import Header from "../components/Header";
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+// import AboutSection from "../components/AboutSection";
+const AboutSection = dynamic(() => import("../components/AboutSection"),
+  { loading: () => <p>Loading...</p>, }
+);
 import WhoCanStart from "./components/WhoCanStart";
-import AppCard from "../componentsnew/AppCard";
-import PortfolioSlider from "../components/PortfolioSlider";
-import NewPanel from "./components/NewPanel";
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
+import ServicesSec from "../components/ServicesSec";
+// import AppCard from "../componentsnew/AppCard";
+const AppCard = dynamic(() => import("../componentsnew/AppCard"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
+// import PortfolioSlider from "../components/PortfolioSlider";
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+// import NewPanel from "./components/NewPanel";
+const NewPanel = dynamic(() => import("./components/NewPanel"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+import ProcessSec from "../components/ProcessSec";
+// import NewTeckStack from "../componentsnew/NewTeckStack";
+const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
+// import WhyChoose from "../components/WhyChooseUs";
+const WhyChoose = dynamic(() => import("../components/WhyChooseUs"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+// import HireDeveloper from "../components/HireDeveloper";
+const HireDeveloper = dynamic(() => import("../components/HireDeveloper"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
