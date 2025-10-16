@@ -445,12 +445,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Best Astrology App Development Company | AI Horoscope Apps
-
+        Best Astrology App Development Company | AI Horoscope & Kundli App Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a top-rated astrology app development company in India that builds AI-powered astrology apps. Get custom horoscope, Kundli & zodiac apps with Blockchain & AR/VR for startups and astrologers worldwide."
+          content="Comfygen is a top astrology app development company offering custom horoscope, kundli, and numerology app solutions. Build your AI-powered astrology app with live chat, e-commerce, and accurate predictions today."
         />
         <link
           rel="canonical"
@@ -540,13 +539,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/image/hero-imageastrology-app-development.webp')]">
           <HeroSectionForAllPages
-            heading="Top Custom Astrology App Development Company in India"
-            ptag="Comfygen is a top astrology app development company in India. We provide AI-powered horoscope, Kundli, and zodiac app development solutions for startups, astrologers, and enterprises. Our custom astrology app development services combine Vedic astrology, AI/ML, Blockchain, and AR/VR technologies to create world-class astrology apps that provide accurate predictions, real-time consultations, and an engaging user experience on Android and iOS."
-            li="Custom Astrology App Development"
-            li1="Artificial Intelligence (AI) Integration"
-            li2="Blockchain & AR/VR Features"
-            li3="Horoscope, Kundli & Zodiac Apps "
-            li4='24/7 Support & Maintenance '
+            heading="Best Astrology App Development Company"
+            ptag="Launch your own powerful astrology app with Comfygen Technologies, a top-notch astrology app development company. We build next-gen AI-powered horoscope, kundli, and numerology apps that offer exact predictions, real-time consultations, and personalized reports. Boost your business with our custom astrology app development services for Android and iOS."
+            li="AI-based Astrology App Solution"
+            li1="Integrating Blockchain & AR/VR Features"
+            li2="Horoscope, Kundli & Zodiac Apps"
+            li3="E-Commerce integration for selling astrology products"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -557,10 +555,11 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="AI-Powered Astrology App Development for Future Predictions"
-          description1="The global astrology market is witnessing tremendous growth as millions of users turn to mobile apps for personalized guidance, horoscopes, and future predictions. With rising demand for digital spiritual solutions, astrology app development has become a profitable business opportunity for startups and enterprises alike."
-          description2="Investing in an astrology app allows businesses to deliver daily horoscopes, kundli readings, numerology insights, tarot consultations, and palmistry predictions—all within an engaging mobile platform. These apps not only enhance user experience with instant access to astrologers but also unlock monetization opportunities through premium features, live sessions, and personalized reports."
-          description3="At Comfygen, our expert team of kundli app developers and digital innovators specialize in building modern, feature-rich astrology solutions. Whether you need horoscope app development, tarot app solutions, or custom astrology platforms, we combine ancient wisdom with next-gen technologies like AI/ML, Blockchain, and AR/VR. The result is a secure, scalable, and interactive astrology app tailored to your business needs."
+          heading="Top Reasons Your Business Needs an Astrology App"
+          description1="The global astrology market is expected to reach $22.8 billion by 2031, showing huge growth potential. A top-notch astrology app helps your astrology business reach users worldwide, offer personalized predictions, and generate fast earnings through the subscriptions and in-app purchases."
+
+          description2="With more than 70% of users choosing the best mobile astrology services, having your own astrology app builds trust, boosts engagement, and grows your customer base. Partner with Comfygen Technologies, a top AI astrology app development company, to turn your spiritual vision into a moneymaking astrology mobile platform."
+   
           imageSrc="https://www.comfygen.com/comfygen-images/astrology-app-development/about1.webp"
           link="/about-us"
           linkText="Explore More"

@@ -81,7 +81,7 @@ export default function HeroSection(props: any) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
           placeholder="blur"
           blurDataURL="/blur-placeholder.webp"
-
+       
         />
       )}
 

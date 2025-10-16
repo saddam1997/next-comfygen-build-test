@@ -468,8 +468,8 @@ export default function Home(props: any) {
             btnName="Let's Discuss"
             btnLink="/contact-us"
             imgSrc="/"
-            Width={907}
-            Height={762}
+            Width={740}
+            Height={340}
             altTag="blockchain-technology"
             openModal={openModal}
             talkToExpertModal={talkToExpertModal}
