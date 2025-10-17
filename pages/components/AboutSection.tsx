@@ -28,12 +28,12 @@ const AboutSection = (props: any) => {
               alt={heading}
               width={907}
               height={762}
-              quality={80}
-              priority
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
-              placeholder="blur"
-              blurDataURL="/blur-placeholder.webp"
-              className="rounded-2xl"
+            // quality={80}
+            // priority
+            // placeholder="blur"
+            // blurDataURL="/blur-placeholder.webp"
+            // className="rounded-2xl"
             />
           </div>
           <div>
@@ -79,9 +79,9 @@ const AboutSection = (props: any) => {
                     {points.map((point: any, index: any) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
-                        <span 
+                        <span
                           className="xl:text-base text-sm text-black"
-                          dangerouslySetInnerHTML={{ __html: point }} 
+                          dangerouslySetInnerHTML={{ __html: point }}
                         />
                       </li>
                     ))}
