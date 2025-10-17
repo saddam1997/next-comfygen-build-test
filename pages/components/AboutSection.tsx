@@ -22,18 +22,22 @@ const AboutSection = (props: any) => {
     <section className="bg-white lg:py-16 py-10">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
-          <div>
+          <div className="relative">
             <Image
               src={imageSrc}
               alt={heading}
-              width={907}
-              height={762}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
-            // quality={80}
-            // priority
-            // placeholder="blur"
-            // blurDataURL="/blur-placeholder.webp"
-            // className="rounded-2xl"
+              width={600} // Reduced from 907
+              height={504} // Reduced from 762 (maintaining 600:504 ≈ 907:762 ratio)
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
+              quality={75}
+              priority={true} // Since it's above the fold
+              placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
+              className="rounded-2xl w-full h-auto object-cover"
+              style={{
+                maxWidth: '100%',
+                height: 'auto'
+              }}
             />
           </div>
           <div>
@@ -97,7 +101,7 @@ const AboutSection = (props: any) => {
             </div>
             {link && linkText && (
               <div className="mt-7">
-                <Link href={link} passHref>
+                <Link href={link} passHref legacyBehavior>
                   <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition-colors duration-200">
                     {linkText} <MdOutlineArrowOutward />
                   </button>
