@@ -59,18 +59,11 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={`relative bg-no-repeat bg-cover ${isMobile ? "bg-left " : "lg:bg-center"
-        }`}
+      className={`relative bg-no-repeat bg-cover ${isMobile ? "bg-left" : "lg:bg-center"}`}
       style={{
         backgroundColor: isMobile ? "#5951cd" : "transparent",
-        // backgroundImage: !isMobile ? `url(${props.bgImage})` : "none",
-        // backgroundSize: "cover",
-        // backgroundRepeat: "no-repeat",
-        // backgroundPosition: isMobile ? "left" : "center",
       }}
     >
-
-
       {!isMobile && (
         <Image
           src={props.bgImage}
@@ -78,19 +71,20 @@ export default function HeroSection(props: any) {
           fill
           className="object-cover object-center -z-10"
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+          sizes="100vw"
           placeholder="blur"
           blurDataURL="/blur-placeholder.webp"
-       
+          quality={75}
+          loading="eager"
         />
       )}
 
-      <div className="flex flex-col-reverse  md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto" >
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
-          <div className="space-y-4  ">
+          <div className="space-y-4">
             {props.isHome ? (
-              <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem] ">
-                <span className="xl:text-4xl md:text-2xl text-2xl  overflow-auto font-medium">
+              <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
+                <span className="xl:text-4xl md:text-2xl text-2xl overflow-auto font-medium">
                   {typedText}
                 </span>
                 <br />
@@ -99,30 +93,27 @@ export default function HeroSection(props: any) {
                 </b>
               </h1>
             ) : (
-              <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]  ">
+              <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
                 {props.heading}
               </h1>
             )}
-            <p className="w-full mx-auto  text-sm  2xl:text-lg lg:text-base font-normal text-white">
+            <p className="w-full mx-auto text-sm 2xl:text-lg lg:text-base font-normal text-white">
               {props.ptag}
             </p>
           </div>
 
+          {/* Optimized stat cards with preloaded icons */}
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
               <div className="h-8 w-8">
                 <Image
-                  alt="COMFYGEN LIMITED Logo"
+                  alt="Experience Icon"
                   src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
-                  // src="https://www.comfygen.com/image/hero-experience-icon.svg"
-                  height={60}
-                  width={60}
-                  unoptimized
-                  priority={true}
-                  quality={75}
-                  className="h-auto w-auto"
-
-
+                  height={32}
+                  width={32}
+                  quality={70}
+                  loading="eager"
+                  className="h-8 w-8"
                 />
               </div>
               <p className="font-semibold text-[#000] text-base">
@@ -132,38 +123,35 @@ export default function HeroSection(props: any) {
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
               <div className="h-8 w-8">
                 <Image
-                  alt="COMFYGEN LIMITED Logo"
+                  alt="Projects Delivered Icon"
                   src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
-                  height={60}
-                  width={60}
-                  unoptimized
-                  priority={true}
-                  quality={75}
-                  className="h-auto w-auto"
-
+                  height={32}
+                  width={32}
+                  quality={70}
+                  loading="eager"
+                  className="h-8 w-8"
                 />
               </div>
               <p className="font-semibold text-[#000] text-base">
                 250+ Project Delivered
               </p>
             </div>
-            <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2 ">
-              <div className="lg:h-4 w-12">
-                <Image
-                  alt="COMFYGEN LIMITED Logo"
-                  src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
-                  height={60}
-                  width={60}
-                  unoptimized
-                  priority={true}
-                  quality={75}
-                  className="h-auto w-auto"
-                />
-              </div>
-              <p className="font-semibold text-[#000] text-base">
-                100+ Total Happy Client
-              </p>
-            </div>
+           <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2">
+       <div className="lg:h-auto w-auto">
+            <Image
+              alt="Happy Clients Icon"
+              src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
+              height={32}
+              width={32}
+              quality={70}
+              loading="eager"
+              className="w-12"
+            />
+          </div>
+          <p className="font-semibold text-[#000] text-base">
+            100+ Total Happy Client
+          </p>
+        </div>
           </div>
 
           <div className="mt-2">
@@ -179,24 +167,25 @@ export default function HeroSection(props: any) {
                   height="11.738"
                   viewBox="0 0 24.231 11.738"
                 >
-                  {" "}
                   <path
                     id="Path_1487529"
                     data-name="Path 1487529"
                     d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
                     transform="translate(-521.511 -1346.214)"
                     fill="#fff"
-                  ></path>{" "}
-                </svg>{" "}
+                  />
+                </svg>
               </button>
             </Link>
           </div>
         </div>
+        {/* Modal code remains the same */}
+
         <div>
           {props.talkToExpertModal && (
             <>
               <div
-                className={`fixed inset-0 z-50 overflow-y-auto max-w-[1600px] mx-auto mx-4 ${props.talkToExpertModal ? "block" : "hidden"}`}
+                className={`fixed inset-0 z-50 overflow-y-auto max-w-[1600px] mx-auto ${props.talkToExpertModal ? "block" : "hidden"}`}
                 role="dialog"
                 aria-modal="true"
               >

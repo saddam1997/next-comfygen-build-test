@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 
-const AboutSection = (props) => {
+const AboutSection = (props: any) => {
   const {
     heading = "",
     description1 = "",
@@ -28,18 +28,12 @@ const AboutSection = (props) => {
               alt={heading}
               width={907}
               height={762}
-              quality={85}
+              quality={80}
               priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
               placeholder="blur"
               blurDataURL="/blur-placeholder.webp"
-
-
-              // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 907px"
-              // className="rounded-2xl"
-              // unoptimized
-              // priority={true}
-              // quality={70}
+              className="rounded-2xl"
             />
           </div>
           <div>
@@ -49,7 +43,7 @@ const AboutSection = (props) => {
                   {heading}
                 </h2>
               </div>
-              <div className="space-y-4 ">
+              <div className="space-y-4">
                 {description1 && (
                   <p
                     className="xl:text-base text-sm text-black"
@@ -85,7 +79,10 @@ const AboutSection = (props) => {
                     {points.map((point: any, index: any) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
-                        <span dangerouslySetInnerHTML={{ __html: point }} />
+                        <span 
+                          className="xl:text-base text-sm text-black"
+                          dangerouslySetInnerHTML={{ __html: point }} 
+                        />
                       </li>
                     ))}
                   </ul>
@@ -99,9 +96,9 @@ const AboutSection = (props) => {
               </div>
             </div>
             {link && linkText && (
-              <div className=" mt-7">
+              <div className="mt-7">
                 <Link href={link} passHref>
-                  <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                  <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition-colors duration-200">
                     {linkText} <MdOutlineArrowOutward />
                   </button>
                 </Link>

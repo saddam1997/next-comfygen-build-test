@@ -16,17 +16,20 @@ import HireDeveloper from "./components/HireDeveloper";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
 
 
-// import PortfolioSlider from "./components/PortfolioSlider";
-const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import PortfolioSlider from "./components/PortfolioSlider";
+// const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
+//   loading: () => <p>Loading...</p>,
+// });
+import WhyChoose from "./components/WhyChooseUs";
+// const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
+//   loading: () => <p>Loading...</p>,
+// });
 
-const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("./components/Header"), {
-  ssr: true,
-});
+
+import Header from "./components/Header";
+// const Header = dynamic(() => import("./components/Header"), {
+//   ssr: true,
+// });
 const BlogSection = dynamic(() => import("./components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
