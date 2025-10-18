@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ELearningApp.json";
+import JSON_DATA from "./web3-wallet-development.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
@@ -17,6 +17,9 @@ import SolutionsFeature from "../componentsnew/SolutionsFeature";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "../componentsnew/WhoCanStart";
 import DeliverySection from "../components/DeliverySection";
+import CallToAction from "../componentsnew/CallToAction";
+import SolutionSec from "../componentsnew/SolutionSec";
+import IndustriesServe from "../componentsnew/IndustriesServe";
 
 
 const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
@@ -47,39 +50,39 @@ const ContactFromCenter = dynamic(
 
 const Process = [
   {
-    title: "Discovery & Requirement Gathering",
+    title: " Consultation & Requirement Analysis ",
     description:
-      "We begin by understanding your goals, delivery model, and customer needs. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development</a> team collects all technical, design, and functional requirements to shape your ideal on-demand milk delivery app development solution.",
+      "We understand your goals, business model, and target users to craft a tailored wallet solution.",
+  },
+  {
+    title: "Blockchain Selection & Architecture Design",
+    description:
+      "Choose the right blockchain framework and define a secure, scalable wallet architecture.",
+  },
+  {
+    title: "Smart Contract Development",
+    description:
+      " Develop and audit smart contracts for DeFi, NFT, or custom token functionalities.",
   },
   {
     title: "UI/UX Design",
     description:
-      "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designers</a> create user-friendly layouts with seamless navigation for both Android and iOS users. We ensure that your app’s UI reflects the branding and delivers a great user experience across devices.",
+      "Create intuitive, engaging, and responsive interfaces for an enhanced user experience.",
   },
   {
-    title: "App Development",
+    title: "Wallet Integration & Security Audits",
     description:
-      "Using robust technologies like Flutter and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/react-native-development' >React Native</a>, our mobile app developers build high-performing milk delivery apps with real-time tracking, subscription plans, and multi-payment integration for smooth operations.",
+      "Implement robust APIs, conduct penetration testing, and ensure full data protection.",
   },
   {
-    title: "Testing & QA",
+    title: "Testing & Deployment",
     description:
-      "We test the app thoroughly for performance, security, and functionality across all devices. From subscription flows to payment and GPS tracking — every feature is tested for a flawless experience.",
+      "Perform multi-stage testing for performance, compatibility, and security before going live.",
   },
   {
-    title: "Deployment",
+    title: "Post-launch Maintenance & Support",
     description:
-      "Once approved, we deploy your milk delivery app to the Google Play Store and Apple App Store. Our milk delivery mobile app development team ensures a smooth go-live process with proper app store optimization (ASO).",
-  },
-  {
-    title: "Support & Maintenance",
-    description:
-      "We offer continuous support, performance monitoring, and updates post-launch. Our mobile application development team ensures your milk delivery apps stay relevant, secure, and bug-free as your business grows.",
-  },
-  {
-    title: "Marketing & App Store Optimization (ASO)",
-    description:
-      "We also help you reach more users by optimizing your app title, description, keywords, and visuals. This increases visibility and downloads for your online milk delivery app.",
+      "Continuous monitoring, updates, and scalability enhancements to keep your Web3 wallet future-ready.",
   },
 ];
 
@@ -125,6 +128,44 @@ const WhoCanStartCards = [
       "Expand your <a class=' underline text-black font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> offerings by adding milk delivery as a recurring service. Our milk delivery mobile app development solutions help streamline inventory, track customer orders, and boost sales through automated scheduling and doorstep delivery.",
   },
 ];
+
+const technologyData = [
+
+  {
+    img: null,
+    title: "Non-Custodial Wallets ",
+    desc: "Empower users with full ownership of their private keys and complete decentralization without third-party interference.",
+  },
+  {
+    img: null,
+    title: "DeFi Wallets",
+    desc: "Enable seamless participation in decentralized finance activities like staking, lending, yield farming, and token swaps.",
+  },
+  {
+    img: null,
+    title: "NFT Wallets",
+    desc: "Manage, trade, and showcase NFTs across leading marketplaces and chains.",
+  },
+  {
+    img: null,
+    title: "Smart Contract Wallets",
+    desc: "Execute automated, secure, and transparent blockchain transactions using smart contracts.",
+  },
+  {
+    img: null,
+    title: "Hardware & Cold Wallet Integrations",
+    desc: "Combine online convenience with offline security for advanced crypto asset protection.",
+  },
+  {
+    img: null,
+    title: "Multi-Currency Wallets",
+    desc: "Support for multiple cryptocurrencies, stablecoins, and tokens under one unified dashboard.",
+  }
+
+
+
+];
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -495,12 +536,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden sm:pt-16">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Milk Delivery App Development Company"
-            ptag="Comfygen is a best milk delivery app development company, delivers top-notch milk delivery app development services, offering custom, white-label, and on-demand dairy delivery solutions. Our expert milk delivery app developers create feature-rich apps with subscription models, real-time tracking, and secure payments—perfect for dairies, milk distributors, and startups."
-            li="User-Friendly Milk Ordering App"
-            li1="Real-Time Tracking & Route Optimization"
-            li2="Smart Subscription & Inventory Management"
-            li3="Custom & White-label Milk Delivery App Solutions"
+            heading="Web3 wallet development company"
+            ptag="Comfygen trusted wallet development company, unlocks the full potential of decentralized finance through secure, scalable, and intelligent Web3 wallet development solutions. We develop feature-rich web3 wallets that allow users to manage digital assets, NFTs, and DeFi portfolios with multiple blockchains. Comfygen blockchain Development experts combine advanced encryption, intuitive design, and interoperability to deliver next-gen crypto wallet experiences tailored to your business."
+            li="Multi-chain and cross-platform wallet integration."
+            li1="Advanced AI-powered security and private key protection."
+            li2="DeFi, NFT, and token swap functionality."
+            li3="End-to-end Web3 wallet development with 24/7 support."
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -512,28 +553,169 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Why Your Dairy Business Needs a Milk Delivery App"
-          description1="In today’s fast-paced world, convenience is key — and a milk delivery app is the perfect solution to meet daily dairy demands with ease. Whether you're a dairy startup, a local milk vendor, or a large-scale distributor, investing in a milk delivery app can help streamline operations, automate deliveries, and build lasting customer loyalty."
-          description2="With Comfygen’s tech-driven approach, we help you create a future-ready milk delivery platform that ensures smooth logistics, real-time updates, and enhanced customer experience — all while boosting revenue."
+          heading="Our Web3 Wallet Development Services"
+          description1="As a trusted Web3 wallet development company, Comfygen delivers next-generation <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'>blockchain wallet development</a> solutions especially designed for the decentralized world. Our Web3 wallets go beyond traditional crypto wallets by offering complete control, transparency, and interoperability across multiple blockchains. Our <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallet development</a> solutions empower users with self-custody, eliminating third-party risks while enabling secure management of cryptocurrencies."
+          description2="Businesses worldwide are rapidly adopting Web3 wallet development services that provide users with greater privacy, faster transactions, and seamless multi-chain access. At Comfygen, we specialize in creating secure, scalable, and user-friendly crypto wallets that are designed according to business need, and helping you stay ahead in the evolving decentralized ecosystem."
           imageSrc="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
-          points={[
-            "Automates Subscription & Daily Delivery Scheduling",
-            "Increases Customer Convenience & Retention",
-            "Enhances Inventory & Route Management",
-            "Offers Real-Time Order Tracking & Notifications",
-            "Supports Digital Payments & Invoice Generation",
-          ]}
-        />
-        {/* who cane start */}
-        <WhoCanStart
-          title="Who Can Start a Milk Delivery App Business?"
-          description="Comfygen’s milk delivery app development solutions are ideal for a wide range of businesses. Whether you're just starting out or already established, our scalable and customizable apps help you grow fast in the digital dairy market."
-          cards={WhoCanStartCards}
+          points={[]}
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+        <CallToAction
+          heading="Ready To Launch Your Web3 Wallet Today?"
+          text="Comfygen’s Web3 wallet development services deliver secure, scalable, and feature-rich decentralized wallets for multi-chain crypto, NFTs, and DeFi assets."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+        <section className="py-10 mt-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Core Features of Our Web3 Wallet Development Solutions
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  Comfygen’s Web3 wallet development services build crypto wallets to empower users with seamless, secure, and scalable digital asset management. Our <a href='https://www.comfygen.com/custom-blockchain-development-company' className='underline'>custom blockchain development solutions</a> integrate next-gen technologies that ensure interoperability, decentralization, and user control. Designed for startups and enterprises, our wallets combine AI-powered security, multi-chain compatibility, and intuitive UI/UX design to deliver an exceptional decentralized experience.
+                </p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                  src={img}
+                                  className="object-cover"
+                                  width={35}
+                                  height={50}
+                                  alt={title}
+                                /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our End-to-End Web3 Wallet Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+                Comfygen trusted <a href='https://www.comfygen.com/wallet-development-company' className='text-blue-500'>wallet development company</a>, follows a proven and transparent Web3 wallet app development process that ensures speed, security, and scalability. Our development process blends deep blockchain expertise with agile methodologies to deliver high-performance decentralized wallets for every business use case. From planning to post-launch support, every stage focuses on innovation, reliability, and user satisfaction.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <section className="py-10">
+          <PortfolioSlider
+            techData={portfoliodata}
+            heading="Portfolio of Wallet Development Services"
+            description="Comfygen is a top-rated wallet development company that develops secure, scalable, and high-performance Web3 wallets that cater to various industries. Our portfolio highlights a custom crypto wallet development solution."
+          />
+        </section>
+
+        <SolutionSec
+          heading="Types of Web3 Wallets We Develop"
+          subheading="Comfygen offers a diverse range of Web3 wallet development solutions designed to meet the unique needs of modern decentralized ecosystems. Our Web3 wallets are built with advanced security protocols, seamless UI/UX, and interoperability across multiple blockchains. Whether you’re a startup, enterprise, or DeFi platform, our wallets ensure flexibility, scalability, and complete control over digital assets."
+          techData={technologyData}
+        />
+        <NewTeckStack
+          title="Tech Stack We Use for Web3 Wallet Development"
+          description="Comfygen top a top-rated Web3 wallet development company, we leverage an advanced Web3 technology stack to build secure, scalable, and high-performing decentralized wallet solutions. Our development process integrates the latest tools and frameworks to ensure interoperability, speed, and user-centric design. Each layer of our tech stack is optimized for blockchain efficiency, data integrity, and next-gen digital asset management."
+        />
+
+        <IndustriesServe
+          heading="Industries We Serve with Web3 Wallet Development"
+          description="Comfygen’s Web3 wallet development services allow businesses across multiple industries to adopt decentralized technologies and improve digital asset management, transparency, and user engagement. Our expertise in blockchain and Web3 integration helps enterprises build customized wallet solutions tailored to their industry-specific needs."
+          sliderData={JSON_DATA.IndustriesServe}
+        />
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+        <HireDeveloper
+          heading="Hire Expert Web3 Wallet Developers"
+          text="Boost your business with Comfygen’s Web3 wallet development services. Our blockchain specialists build secure, scalable, and feature-rich wallets with multi-chain support, DeFi and NFT integration, and smart contract functionality."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Developed 50+ Web3 wallet solutions across industries",
+            "Assigned Project Consultant & Blockchain Architect",
+            "Strict NDA policies for data protection",
+            "Customized wallets aligned with your business goals",
+          ]}
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* who cane start */}
+
+
+        {/* <section className="py-5">
+          <WhoCanStart
+            title="Who Can Start a Milk Delivery App Business?"
+            description="Comfygen’s milk delivery app development solutions are ideal for a wide range of businesses. Whether you're just starting out or already established, our scalable and customizable apps help you grow fast in the digital dairy market."
+            cards={WhoCanStartCards}
+          />
+        </section> */}
+
+
+        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -552,70 +734,14 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
         <ContactFromCenter />
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-      
-
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Portfolio – Milk Delivery App Development Projects"
-          description="Explore how Comfygen empowers dairy businesses and startups with powerful, scalable milk delivery app development solutions. Our custom online milk delivery apps help streamline daily deliveries, manage subscriptions, and improve customer satisfaction with real-time features and user-friendly design."
-        />
         <Features />
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Milk Delivery App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Our company is one of the top milk delivery app development
-                companies, with a structured and result-driven development
-                process. The process we use ensures your milk delivery mobile
-                app development project is efficient, scalable, and ready for
-                market. From concept to launch and beyond, we deliver custom
-                milk delivery app solutions built for success.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
 
-        <NewTeckStack
-          title="Tech Stack We Use to Build Scalable Milk Delivery Apps"
-          description="The Comfygen team leverages the most cutting-edge and reliable technologies for building scalable, secure, and high-performing milk delivery applications. With our tech stack, you can create white-label milk delivery apps, custom solutions, or milk ordering apps for startups."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <DeliverySection hideUrl="milk-delivery-app-development" />
+        <DeliverySection hideUrl="milk-delivery-app-development" /> */}
 
-        <HireDeveloper
-          heading="Hire Online Milk Delivery App Builder"
-          text="Want to launch an AI-based milk delivery app? Hire expert <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >milk delivery mobile app builder</a> from Comfygen to turn your dairy business idea into a high-performance, customer-friendly app. We build customized milk ordering platforms with subscription features, GPS tracking, payment integration, and more. Get fast delivery, post-launch support, and solutions tailored to your business."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experienced in dairy and milk delivery app development",
-            "10+ years of mobile app expertise across food & delivery",
-            "Strong grip on subscription, tracking & payment modules",
-            "Fast project delivery with full-time technical support",
-          ]}
-        />
+
         <ClientTestimonials
-          heading="What Our Clients Say"
+          heading="What Our Clients Say About Comfygen Web3 Wallet Development"
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />

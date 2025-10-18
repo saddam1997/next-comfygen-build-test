@@ -85,10 +85,10 @@ const defaultSliderData = [
 // Optimized blur data URL for better loading
 const blurDataURL = "data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA=";
 
-function IndustriesServe({ 
-  heading = "Industries We Empower with Our Digital Solutions", 
-  description = "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.", 
-  sliderData = defaultSliderData 
+function IndustriesServe({
+  heading = "Industries We Empower with Our Digital Solutions",
+  description = "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.",
+  sliderData = defaultSliderData
 }) {
   const settings = {
     dots: false,
@@ -162,15 +162,40 @@ function IndustriesServe({
           <Slider {...settings} ref={sliderRef}>
             {sliderData.map((item, index) => (
               <div key={index} className="md:px-3">
-                <a href={item.link} className="block">
+                {item.link ? (
+                  <a href={item.link} key={item.link} className="block">
+                    <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[360px]">
+                      <div className="relative w-full h-48">
+                        <Image
+                          src={item.imgSrc}
+                          alt={item.title}
+                          fill
+                          quality={75}
+                          priority={index < 4}
+                          sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
+                          placeholder="blur"
+                          blurDataURL={blurDataURL}
+                          className="object-cover rounded-lg"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="text-[#212121] text-lg font-semibold">{item.title}</h3>
+                        <p
+                          className="text-[#212121] text-sm"
+                          dangerouslySetInnerHTML={{ __html: item.description }}
+                        />
+                      </div>
+                    </div>
+                  </a>
+                ) : (
                   <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[360px]">
-                    <div className="relative w-full h-48"> {/* Fixed container for consistent sizing */}
+                    <div className="relative w-full h-48">
                       <Image
                         src={item.imgSrc}
                         alt={item.title}
-                        fill // Use fill instead of fixed dimensions
-                        quality={75} // Reduced from 85
-                        priority={index < 4} // Only prioritize first 4 images
+                        fill
+                        quality={75}
+                        priority={index < 4}
                         sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                         placeholder="blur"
                         blurDataURL={blurDataURL}
@@ -179,10 +204,14 @@ function IndustriesServe({
                     </div>
                     <div>
                       <h3 className="text-[#212121] text-lg font-semibold">{item.title}</h3>
-                      <p className="text-[#212121] text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
+                      <p
+                        className="text-[#212121] text-sm"
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      />
                     </div>
                   </div>
-                </a>
+                )}
+
               </div>
             ))}
           </Slider>

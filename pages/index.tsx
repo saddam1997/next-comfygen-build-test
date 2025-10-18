@@ -431,7 +431,7 @@ export default function Home(props: any) {
         </Suspense>
 
         {/* Cookie Banner */}
-        {showCookieBanner && (
+        {/* {showCookieBanner && (
           <div className="fixed bottom-4 left-4 right-4 md:left-8 md:right-auto md:w-96 z-50">
             <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-4">
               <div className="mb-3">
@@ -458,7 +458,7 @@ export default function Home(props: any) {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
