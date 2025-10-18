@@ -401,8 +401,8 @@ export default function ClinicalApp(props: any) {
         {/* <!-- Robots → */}
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -458,12 +458,12 @@ export default function ClinicalApp(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Custom Web3 Wallet Development Services | Multi-Chain Crypto Wallets" />
         <meta name="twitter:description" content="Launch your secure and feature-rich Web3 wallet with Comfygen. Benefit from multi-chain support, DeFi and NFT integration, and seamless digital asset management." />
-        <meta name="twitter:image" content="https://www.yourwebsite.com/path-to-image.jpg" />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/web3-wallet-development/web3-wallet-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
         {/* <!-- Faceb/ook Meta --> */}
-        <meta property="og:image" content="Add Image URL" />
-        <meta property="og:image:secure_url" content="Add Image URL" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/web3-wallet-development/web3-wallet-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/web3-wallet-development/web3-wallet-development.webp" />
         <meta property="og:image:alt" content="Web3 Wallet Development Company" />
         <meta property="og:url" content="https://www.comfygen.com/web3-wallet-development " />
         <meta property="og:title" content="Comfygen Web3 Wallet Solutions | Secure, Scalable & User-Friendly" />

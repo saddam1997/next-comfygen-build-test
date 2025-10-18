@@ -411,6 +411,11 @@ const Blockchain1 = [
     name: "Courier Delivery App Development",
     url: "/courier-delivery-app-development",
   },
+  {
+    num: "21",
+    name: "Web3 Wallet Development",
+    url: "/web3-wallet-development",
+  },
 
 
 
