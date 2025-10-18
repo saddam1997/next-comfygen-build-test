@@ -88,27 +88,24 @@ const Process = [
 
 
 const portfoliodata = [
-
   {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-    "title": "Subscription-Based Milk Delivery App",
-    "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-    "link": "https://www.comfygen.com/contact-us"
+    "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+    "title": "Aria Coin Cryptocurrency",
+    "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
+    "link": "/portfolio/aria-coin-details"
   },
-
   {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-    "title": "White-Label Dairy Delivery App",
-    "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-    "link": "https://www.comfygen.com/contact-us",
+    "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+    "title": "Great Wallet Application",
+    "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
+    "link": "/portfolio/great-wallet"
   },
-
   {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
-    "title": "Milk Ordering App",
-    "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
+    "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+    "title": "M7Coin Web Wallet",
+    "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
+    "link": "/portfolio/m7-coin"
+  }
 ]
 
 const WhoCanStartCards = [
@@ -204,241 +201,211 @@ export default function ClinicalApp(props: any) {
 
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
+      "@type": "Service",
+      "name": "Web3 Wallet Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
       },
-      sameAs: [
+      "description": "Comfygen provides secure, scalable, and feature-rich Web3 wallet development solutions with multi-chain support, DeFi and NFT integration, and custom blockchain wallet solutions for startups and enterprises.",
+      "url": "https://www.comfygen.com/web3-wallet-development ",
+      "mainEntityOfPage": "https://www.comfygen.com/web3-wallet-development ",
+      "areaServed": "Global",
+      "serviceType": [
+        "Web3 Wallet Development",
+        "Multi-Chain Crypto Wallet Solutions",
+        "Custom Blockchain Wallets",
+        "DeFi Wallet Integration",
+        "NFT Wallet Development"
+      ],
+      "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
 
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
       "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
       ],
-      openingHoursSpecification: {
+      "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
+        "dayOfWeek": [
           "Monday",
           "Tuesday",
           "Wednesday",
           "Thursday",
           "Friday",
           "Saturday",
-          "Sunday",
+          "Sunday"
         ],
-        opens: "00:00",
-        closes: "23:59",
+        "opens": "00:00",
+        "closes": "23:59"
       },
-      sameAs: [
+      "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
+        "https://www.comfygen.com/"
+      ]
     },
 
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      name: "On-Demand Milk Delivery App Development Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Hire expert milk delivery app developers from Comfygen. We create on-demand dairy delivery apps with custom features like subscriptions, delivery tracking, and admin dashboards to ensure efficient operations.",
-      url: "https://www.comfygen.com/milk-delivery-app-development",
-      mainEntityOfPage:
-        "https://www.comfygen.com/milk-delivery-app-development",
-      areaServed: "Global",
-      serviceType: [
-        "Dairy Delivery App Development",
-        "White-label Milk Delivery App Development",
-        "Milk Ordering App Development",
-        "Custom Milk Delivery App Solutions",
-        "Milk Subscription App Development",
-      ],
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB"],
 
-      sameAs: [
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
 
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Custom Milk Delivery App Development Solutions",
-      image: "Hero section image",
-      description:
-        "Build your own custom milk delivery app with Comfygen. We deliver user-friendly, scalable, and secure dairy delivery app solutions for startups, businesses, and enterprises. Launch your app with subscription models and real-time tracking.",
-      aggregateRating: {
+      "brand": "Comfygen Technologies",
+      "name": "Web3 Wallet Development | Secure & Scalable Blockchain Wallets",
+      "image": "Image About section",
+      "description": "Comfygen is a leading Web3 wallet development company that builds secure, scalable, and feature-rich decentralized wallets with multi-chain support, DeFi and NFT integration, and custom solutions for startups and enterprises.",
+      "aggregateRating": {
         "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "190",
-      },
-    },
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Milk Delivery App Development",
-          item: "https://www.comfygen.com/milk-delivery-app-development",
-        },
-      ],
+        "ratingValue": "4.8",
+        "reviewCount": "595"
+      }
     },
 
     {
       "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/ "
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wallet Development Company",
+          "item": "https://www.comfygen.com/wallet-development-company "
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NFT Wallet Development",
+          "item": "https://www.comfygen.com/web3-wallet-development "
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
+      "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does it cost to develop a milk delivery app?",
+          "name": "What is Web3 wallet development?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The cost of milk delivery app development depends on features, platform, design, and tech stack. A basic app may start from $5,000, while feature-rich custom solutions can cost $15,000 or more. We offer tailored quotes based on your specific business needs."
+            "text": "Web3 wallet development involves creating decentralized wallets that allow users to store, manage, and trade cryptocurrencies, NFTs, and digital assets securely without relying on intermediaries. These wallets interact directly with blockchain networks using smart contracts."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does it take to build a milk delivery app?",
+          "name": "How long does it take to build a Web3 wallet?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Development time varies based on complexity. A standard milk delivery app takes 4–6 weeks, while advanced solutions with subscriptions, GPS tracking, and analytics may take 10–12 weeks. We ensure timely delivery without compromising on quality."
+            "text": "The development timeline depends on the features, blockchain integrations, and customization level. On average, a custom Web3 wallet takes 6 to 12 weeks from design to deployment."
           }
         },
         {
           "@type": "Question",
-          "name": "What key features should a milk delivery app include?",
+          "name": "Which blockchains are supported?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Core features include user registration, product catalog, subscription management, payment gateway, delivery tracking, order scheduling, and push notifications. We can also add features like route optimization, inventory alerts, and customer support chat as per your business requirements."
+            "text": "Comfygen supports major blockchains, including Ethereum, Binance Smart Chain (BSC), Polygon, Solana, Avalanche, and Tron, ensuring seamless multi-chain wallet experiences."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer support and maintenance after launch?",
+          "name": "How do you ensure wallet security?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide complete post-launch support, including bug fixes, updates, server maintenance, and app enhancements. Our dedicated support ensures your milk delivery app remains secure, updated, and efficient as your business grows."
+            "text": "We implement AES and SHA-256 encryption, multi-signature authentication, private key encryption, and AI-powered security audits to ensure complete data protection."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you build the app for both Android and iOS?",
+          "name": "Can you integrate DeFi and NFTs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely. We develop native and cross-platform apps for both Android and iOS using modern frameworks. This ensures wider reach, faster performance, and a consistent user experience across all devices."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer white-label milk delivery app solutions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we offer customizable white-label milk delivery app solutions. These are ready-to-launch and fully branded for your business, helping you save time and go live faster without building everything from scratch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I integrate subscription and recurring billing options?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we specialize in building milk subscription apps. You can offer daily, weekly, or monthly delivery plans with recurring billing, auto-renewals, and flexible scheduling, improving convenience for your customers and stability for your business."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will the app support multi-location or multi-dairy operations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Definitely. We can develop the app to manage multiple delivery zones, branches, or dairy partners. You can monitor sales, deliveries, and customer engagement across all locations from a centralized admin panel."
+            "text": "Yes. Our wallets support DeFi staking, token swaps, liquidity pools, and NFT minting, trading, and marketplace integration, enabling a complete decentralized finance and digital asset experience."
           }
         }
-      ],
-    },
+      ]
+    }
   ];
 
   return (
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Milk Delivery App Development Company</title>
+        <title>Web3 Wallet Development Company | Decentralized Wallet Solutions by Comfygen</title>
         <meta
           name="description"
-          content="Comfygen is a leading milk delivery app development company offering custom, white-label, and on-demand milk delivery app solutions for dairies & startups."
+          content="Build secure, scalable, and feature-rich Web3 wallets with Comfygen — a trusted Web3 wallet development company offering multi-chain, DeFi, and NFT integrations."
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/milk-delivery-app-development"
-        />
-        <meta
-          name="keywords"
-          content="Dairy Delivery App Development, White-label Milk Delivery App Development, Milk Ordering App Development, Custom Milk Delivery App Solutions, Milk Subscription App Development"
-        />
-        <meta
-          name="robots"
-          content="max-image-preview:large, max-snippet:-1, max-video-preview:-1, index, follow"
-        />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
+
+        <meta name="keywords" content="Web3 Wallet Development, Multi-Chain Crypto Wallet Solutions, Custom Blockchain Wallets, DeFi Wallet Integration, NFT Wallet Development, Crypto Wallet App Development, Blockchain Wallet Company, Secure Wallet Solutions, Web3 App Development, Cryptocurrency Wallet Integration" />
+
+        {/* <!-- Canonical Tag --> */}
+        <link rel="canonical" href="https://www.comfygen.com/web3-wallet-development" />
+
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
@@ -446,16 +413,17 @@ export default function ClinicalApp(props: any) {
         <meta name="viewport-fit" content="cover" />
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
+        <meta name="apple-mobile-web-app-title" content="Web3 Wallet Development" />
 
-        {/* Author & Rights */}
+        {/* <!-- New in iOS6 --> */}
+        {/* <!-- Author and Company Information --> */}
         <meta name="author" content="Comfygen Technologies" />
         <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
         <meta name="rights" content="Copyright Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
 
-        {/* SEO */}
+        {/* <!-- SEO Meta --> */}
         <meta name="googlebot" content="all" />
         <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
@@ -463,7 +431,7 @@ export default function ClinicalApp(props: any) {
         <meta name="coverage" content="Worldwide" />
         <meta name="language" content="English" />
 
-        {/* Geo Tags */}
+        {/* <!-- Geo Location Meta --> */}
         <meta name="geo.region" content="IN" />
         <meta name="geo.region" content="US" />
         <meta name="geo.region" content="CA" />
@@ -471,58 +439,35 @@ export default function ClinicalApp(props: any) {
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
 
-        {/* Open Graph (Facebook) */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
+        {/* <!-- Open Graph (OG) Tag --> */}
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_CA" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_DE" />
         <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/og1.webp"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/og1.webp"
-        />
-        <meta property="og:image:alt" content="Milk Delivery App Development" />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/milk-delivery-app-development"
-        />
-        <meta
-          property="og:title"
-          content="White-Label Milk Delivery App Development Company"
-        />
-        <meta
-          property="og:description"
-          content="Comfygen offers white-label milk delivery app development services with advanced features like route optimization, payment gateways, and delivery scheduling. Launch your dairy app quickly and grow your business digitally."
-        />
 
-        {/* Twitter Card */}
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Online Milk Delivery App Builder | Dairy App Development Company"
-        />
-        <meta
-          name="twitter:description"
-          content="Build a smart and efficient milk delivery app with our online milk delivery app builder. We offer affordable, custom solutions with subscription, GPS, and multi-payment options."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/og1.webp"
-        />
+        <meta name="twitter:title" content="Custom Web3 Wallet Development Services | Multi-Chain Crypto Wallets" />
+        <meta name="twitter:description" content="Launch your secure and feature-rich Web3 wallet with Comfygen. Benefit from multi-chain support, DeFi and NFT integration, and seamless digital asset management." />
+        <meta name="twitter:image" content="https://www.yourwebsite.com/path-to-image.jpg" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
+        {/* <!-- Faceb/ook Meta --> */}
+        <meta property="og:image" content="Add Image URL" />
+        <meta property="og:image:secure_url" content="Add Image URL" />
+        <meta property="og:image:alt" content="Web3 Wallet Development Company" />
+        <meta property="og:url" content="https://www.comfygen.com/web3-wallet-development " />
+        <meta property="og:title" content="Comfygen Web3 Wallet Solutions | Secure, Scalable & User-Friendly" />
+        <meta property="og:description" content="Develop secure Web3 wallets with Comfygen. Our solutions include multi-chain support, DeFi and NFT integration, intuitive digital asset management, and custom blockchain wallet development." />
         {/* Structured Data Scripts */}
         <script
           type="application/ld+json"
@@ -548,7 +493,7 @@ export default function ClinicalApp(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/hero.webp"
+            bgImage="https://www.comfygen.com/comfygen-images/web3-wallet-development/web3-wallet-development-hero.webp"
           />
         </div>
         <AboutSection
@@ -556,7 +501,7 @@ export default function ClinicalApp(props: any) {
           heading="Our Web3 Wallet Development Services"
           description1="As a trusted Web3 wallet development company, Comfygen delivers next-generation <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'>blockchain wallet development</a> solutions especially designed for the decentralized world. Our Web3 wallets go beyond traditional crypto wallets by offering complete control, transparency, and interoperability across multiple blockchains. Our <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallet development</a> solutions empower users with self-custody, eliminating third-party risks while enabling secure management of cryptocurrencies."
           description2="Businesses worldwide are rapidly adopting Web3 wallet development services that provide users with greater privacy, faster transactions, and seamless multi-chain access. At Comfygen, we specialize in creating secure, scalable, and user-friendly crypto wallets that are designed according to business need, and helping you stay ahead in the evolving decentralized ecosystem."
-          imageSrc="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/web3-wallet-development/about.webp"
           link="/about-us"
           linkText="Explore More"
           points={[]}
@@ -575,7 +520,7 @@ export default function ClinicalApp(props: any) {
           text="Comfygen’s Web3 wallet development services deliver secure, scalable, and feature-rich decentralized wallets for multi-chain crypto, NFTs, and DeFi assets."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/web3-wallet-development/cta.webp"
           imageAlt="Future of Technology"
         />
 

@@ -2,44 +2,30 @@
   "Frequently": [
     {
       "num": "1",
-      "title": "How much does it cost to develop a milk delivery app?",
-      "desc": "The cost of milk delivery app development depends on features, platform, design, and tech stack. A basic app may start from $5,000, while feature-rich custom solutions can cost $15,000 or more. We offer tailored quotes based on your specific business needs."
+      "title": "What is Web3 wallet development?",
+      "desc": "Web3 wallet development involves creating decentralized wallets that allow users to store, manage, and trade cryptocurrencies, NFTs, and digital assets securely without relying on intermediaries. These wallets interact directly with blockchain networks using smart contracts."
     },
     {
       "num": "2",
-      "title": "How long does it take to build a milk delivery app?",
-      "desc": "Development time varies based on complexity. A standard milk delivery app takes 4–6 weeks, while advanced solutions with subscriptions, GPS tracking, and analytics may take 10–12 weeks. We ensure timely delivery without compromising on quality."
+      "title": "How long does it take to build a Web3 wallet?",
+      "desc": "The development timeline depends on the features, blockchain integrations, and customization level. On average, a custom Web3 wallet takes 6 to 12 weeks from design to deployment."
     },
     {
       "num": "3",
-      "title": "What key features should a milk delivery app include?",
-      "desc": "Core features include user registration, product catalog, subscription management, payment gateway, delivery tracking, order scheduling, and push notifications. We can also add features like route optimization, inventory alerts, and customer support chat as per your business requirements."
+      "title": "Which blockchains are supported?",
+      "desc": " Comfygen supports major blockchains, including Ethereum, Binance Smart Chain (BSC), Polygon, Solana, Avalanche, and Tron, ensuring seamless multi-chain wallet experiences."
     },
     {
       "num": "4",
-      "title": "Do you offer support and maintenance after launch?",
-      "desc": "Yes, we provide complete post-launch support, including bug fixes, updates, server maintenance, and app enhancements. Our dedicated support ensures your milk delivery app remains secure, updated, and efficient as your business grows."
+      "title": "How do you ensure wallet security?",
+      "desc": "We implement AES and SHA-256 encryption, multi-signature authentication, private key encryption, and AI-powered security audits to ensure complete data protection."
     },
     {
       "num": "5",
-      "title": "Can you build the app for both Android and iOS?",
-      "desc": "Absolutely. We develop native and cross-platform apps for both Android and iOS using modern frameworks. This ensures wider reach, faster performance, and a consistent user experience across all devices."
-    },
-    {
-      "num": "6",
-      "title": "Do you offer white-label milk delivery app solutions?",
-      "desc": "Yes, we offer customizable white-label milk delivery app solutions. These are ready-to-launch and fully branded for your business, helping you save time and go live faster without building everything from scratch."
-    },
-    {
-      "num": "7",
-      "title": "Can I integrate subscription and recurring billing options?",
-      "desc": "Yes, we specialize in building milk subscription apps. You can offer daily, weekly, or monthly delivery plans with recurring billing, auto-renewals, and flexible scheduling, improving convenience for your customers and stability for your business."
-    },
-    {
-      "num": "8",
-      "title": "Will the app support multi-location or multi-dairy operations?",
-      "desc": "Definitely. We can develop the app to manage multiple delivery zones, branches, or dairy partners. You can monitor sales, deliveries, and customer engagement across all locations from a centralized admin panel."
+      "title": "Can you integrate DeFi and NFTs?",
+      "desc": "Yes. Our wallets support DeFi staking, token swaps, liquidity pools, and NFT minting, trading, and marketplace integration, enabling a complete decentralized finance and digital asset experience."
     }
+    
   ],
   "servicesData": [
     {
