@@ -90,7 +90,9 @@ function PortfolioSec({
                             width={907}
                             height={762}
                             quality={85}
-                            priority
+                            // priority
+                            loading="lazy"
+                            decoding="async"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
                             placeholder="blur"
                             blurDataURL="/blur-placeholder.webp"
@@ -145,14 +147,14 @@ function PortfolioSec({
           {techData.length > 0 && (
             <div className="flex justify-center gap-5 mt-6">
               <button
-               aria-label="Prev Slide"
+                aria-label="Prev Slide"
                 onClick={() => sliderRef.current.slickPrev()}
                 className="text-xl border border-[#000] rounded-full p-2.5 text-black hover:text-white hover:bg-[#5556D1]"
               >
                 <MdArrowBack />
               </button>
               <button
-               aria-label="Next Slide"
+                aria-label="Next Slide"
                 onClick={() => sliderRef.current.slickNext()}
                 className="text-xl border border-[#000] rounded-full p-2.5 text-black hover:text-white hover:bg-[#5556D1]"
               >

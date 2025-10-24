@@ -26,12 +26,13 @@ const AboutSection = (props: any) => {
             <Image
               src={imageSrc}
               alt={heading}
-              width={600} // Reduced from 907
-              height={504} // Reduced from 762 (maintaining 600:504 ≈ 907:762 ratio)
+              width={600} 
+              height={504} 
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
               quality={75}
-              priority={true} // Since it's above the fold
               placeholder="blur"
+              loading="lazy"
+              decoding="async"
               blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
               className="rounded-2xl w-full h-auto object-cover"
               style={{

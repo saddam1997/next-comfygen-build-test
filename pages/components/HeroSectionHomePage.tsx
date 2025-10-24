@@ -71,6 +71,7 @@ export default function HeroSection(props: any) {
           fill
           className="object-cover object-center -z-10"
           priority
+          fetchPriority="high"
           sizes="100vw"
           placeholder="blur"
           blurDataURL="/blur-placeholder.webp"
@@ -136,22 +137,22 @@ export default function HeroSection(props: any) {
                 250+ Project Delivered
               </p>
             </div>
-           <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2">
-       <div className="lg:h-auto w-auto">
-            <Image
-              alt="Happy Clients Icon"
-              src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
-              height={32}
-              width={32}
-              quality={70}
-              loading="eager"
-              className="w-12"
-            />
-          </div>
-          <p className="font-semibold text-[#000] text-base">
-            100+ Total Happy Client
-          </p>
-        </div>
+            <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2">
+              <div className="lg:h-auto w-auto">
+                <Image
+                  alt="Happy Clients Icon"
+                  src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
+                  height={32}
+                  width={32}
+                  quality={70}
+                  loading="eager"
+                  className="w-12"
+                />
+              </div>
+              <p className="font-semibold text-[#000] text-base">
+                100+ Total Happy Client
+              </p>
+            </div>
           </div>
 
           <div className="mt-2">

@@ -411,11 +411,7 @@ const Blockchain1 = [
     name: "Courier Delivery App Development",
     url: "/courier-delivery-app-development",
   },
-  {
-    num: "21",
-    name: "Web3 Wallet Development",
-    url: "/web3-wallet-development",
-  },
+
 
 
 
@@ -968,6 +964,12 @@ const cryptoDevelopment = [
     name: "Mobile Crypto Wallet Development",
     url: "/mobile-crypto-wallet-development",
   },
+  {
+    num: "13",
+    name: "Web3 Wallet Development",
+    url: "/web3-wallet-development",
+  },
+
 
 ];
 
@@ -975,74 +977,71 @@ const cryptoDevelopment1 = [
 
 
   {
-    num: "13",
+    num: "14",
     name: " Crypto Derivatives Exchange Development",
     url: "/crypto-derivatives-exchange-development",
   },
   {
-    num: "14",
+    num: "15",
     name: "Margin Trading Exchange Development",
     url: "/crypto-margin-trading-exchange-development",
   },
   {
-    num: "15",
+    num: "16",
     name: "Crypto Exchange Admin Panel Development ",
     url: "/crypto-exchange-admin-panel-development",
   },
   {
-    num: "16",
+    num: "17",
     name: "Ai Crypto Exchange Development",
     url: "/ai-crypto-exchange-development",
   },
   {
-    num: "17",
+    num: "18",
     name: "Crypto Payment Gateway Development",
     url: "/crypto-payment-gateway-development",
   },
   {
-    num: "18",
+    num: "19",
     name: "Decentralized wallet Development",
     url: "/decentralized-wallet-development",
   },
   {
-    num: "19",
+    num: "20",
     name: "NFT Wallet Development Company",
     url: "/nft-wallet-development",
   },
   {
-    num: "20",
+    num: "21",
     name: "White Label Cryptocurrency Wallet Development",
     url: "/white-label-cryptocurrency-wallet-development",
   },
 
   {
-    num: "21",
+    num: "22",
     name: "Multi Currency Wallet Development Company",
     url: "/multi-currency-wallet-development-company",
   },
   {
-    num: "22",
+    num: "23",
     name: "Defi Wallet Development",
     url: "/defi-wallet-development",
   },
   {
-    num: "23",
+    num: "24",
     name: "Smart Contract Wallet Development",
     url: "/smart-contract-wallet-development",
   },
   {
-    num: "24",
+    num: "25",
     name: "Blockchain Wallet Development",
     url: "/blockchain-wallet-development",
   },
   {
-    num: "25",
+    num: "26",
     name: "eWallet App Development",
     url: "/ewallet-app-development",
   },
-
-
-
 
 
 ];
