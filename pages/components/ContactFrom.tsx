@@ -344,7 +344,7 @@ class ContactFrom extends Component<{}, any> {
             </div> */}
 
             <div className="space-y-2">
-              <label htmlFor="stdCode">Enter Number</label>
+              <label htmlFor="mobNo">Enter Number</label>
               <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7]">
                 {/* Country Code Dropdown */}
                 <Select
@@ -394,6 +394,7 @@ class ContactFrom extends Component<{}, any> {
                 <input
                   type="text"
                   name="mobNo"
+                  id="mobNo"
                   value={this.state.fieldsContactUs["mobNo"] || ""}
                   onChange={this.inputChange}
                   placeholder="Enter Whatsapp number"
@@ -409,10 +410,11 @@ class ContactFrom extends Component<{}, any> {
             </div>
 
             <div className="space-y-2 ">
-              <label className="text-base">Subject</label>
+              <label htmlFor="subject" className="text-base">Subject</label>
               <input
                 onChange={this.inputChange}
                 name="subject"
+                id="subject"
                 value={
                   this.state.fieldsContactUs["subject"]
                     ? this.state.fieldsContactUs["subject"]
@@ -427,10 +429,11 @@ class ContactFrom extends Component<{}, any> {
               ></input>
             </div>
             <div className="md:col-span-2 space-y-2">
-              <label className="text-lg">Message</label>
+              <label htmlFor="msg" className="text-lg">Message</label>
               <textarea
                 onChange={this.inputChange}
                 name="msg"
+                id="msg"
                 value={
                   this.state.fieldsContactUs["msg"]
                     ? this.state.fieldsContactUs["msg"]
