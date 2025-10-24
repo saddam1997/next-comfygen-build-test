@@ -20,6 +20,11 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 import BlockChainTech from "../enterprise-blockchain-development/components/BlockChainTech";
 import SolutionSec from "../components/SolutionSec";
+import CallToAction from "../components/CallToAction";
+
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+});
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers, IconWallet } from "@tabler/icons-react";
 
 const Process = [
@@ -60,88 +65,43 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
+const portfoliodata = [
+  {
+    "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+    "title": "NASDAC Crypto Coin",
+    "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+    "link": "/portfolio/blockchain-based-cryptocoin-development",
+  },
+  {
+    "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+    "title": "Croston ",
+    "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+    "link": "/portfolio/decentralized-blockchain-based-cryptocurrency",
+  },
+  {
+    "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+    "title": "YatriPay",
+    "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+    "link": "/portfolio/peer-to-peer-blockchain-based-payment-system",
+  },
+  {
+    "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+    "title": "Mezovest",
+    "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+   
+    "link": "/portfolio/advanced-blockchain-based-logistics-software",
+  },
     {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/decentralized-blockchain-based-cryptocurrency",
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/peer-to-peer-blockchain-based-payment-system",
-    },
+      "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+      "title": "Blockchain-Based Real Estate Tokenization Software",
+      "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
+      "link":"/portfolio/blockchain-based-real-estate-tokenization-software",
+    }
 
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/advanced-blockchain-based-logistics-software",
-    },
+]
 
-    {
-      img: "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
-      head: "Blockchain-Based Real Estate Tokenization Software",
-      based: "",
-      name: "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink:
-        "/portfolio/blockchain-based-real-estate-tokenization-software",
-    },
-  ],
-};
+
+
 
 const testimonialData = [
   {
@@ -174,34 +134,49 @@ const testimonialData = [
 const technologyData = [
   {
     img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development</a> services provide secure, scalable, and custom-built solutions that put you at the forefront of the Web3 revolution. From intuitive mobile apps to powerful browser extensions, we Develop Crypto Wallets that offer unmatched security, seamless multi-chain access, and a superior user experience—turning your vision into a trusted gateway for the decentralized economy.",
+    title: "Multi-Currency Support",
+    desc: "Manage multiple cryptocurrencies and fiat currencies in a single wallet, enabling global transactions and easy portfolio management.",
   },
   {
     img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Blockchain Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/blockchain-wallet-development'>Blockchain Wallet Development</a> Services develops secure, non-custodial wallets that give users full control of their digital assets. Supporting multiple blockchain technologies like Bitcoin, Ethereum, Solana, and Polygon, our wallets include token swaps, staking, NFT management, and dApp connectivity, delivering a secure, scalable, and user-friendly gateway to the Web3 ecosystem.",
+    title: "Advanced Security",
+    desc: "Protect assets with two-factor authentication (2FA), biometric verification, end-to-end encryption, and multi-signature wallets, ensuring complete data and asset safety.",
   },
   {
     img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Wallet Development Services",
-    desc: "Comfygen Decentralized Wallet Development Services builds secure, non-custodial  Crypto wallets with full user control, multi-chain support, dApp integration, token swaps, staking, and NFT management. Scalable and secure, they provide a user-friendly gateway into DeFi, Web3, and the broader blockchain ecosystem.",
+    title: "Cross-Platform Compatibility",
+    desc: "Access your wallet from Android, iOS, and web platforms, providing a consistent, responsive, and seamless user experience across devices.",
   },
   {
     img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "cryptocurrency wallet development services",
-    desc: "Comfygen Cryptocurrency Wallet Development Services create secure, custom multi-chain wallets that give users full control of their digital assets. Featuring token swaps, staking, NFT management, and dApp integration, they combine security, scalability, and ease of use to provide a reliable gateway into the decentralized economy and Web3 ecosystem.",
+    title: "Seamless API & Blockchain Integration",
+    desc: "Easily connect with payment gateways, DeFi protocols, smart contracts, and third-party applications, enabling smooth financial operations and real-time interactions.",
   },
   {
     img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Crypto Wallet Development Services",
-    desc: "We deliver Multi-Currency Crypto Wallet Development solutions designed for businesses seeking secure, scalable, and feature-rich platforms. From multi-chain support to token swaps, staking, NFT management, and dApp integration, our wallets open the door to Web3 and decentralized finance.",
+    title: "Real-Time Analytics & Transaction Tracking",
+    desc: "Monitor wallet activity, transaction history, and balances instantly for better decision-making and transparent asset management.",
   },
   {
     img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Cryptocurrency Wallet Development Services",
-    desc: "Comfygen Enterprise Cryptocurrency Wallet Development Services offer non-custodial wallets with multi-chain and multi-currency support, integrated token swaps, staking, NFT management, and dApp connectivity, designed for robust security, compliance, and seamless scalability.",
+    title: "Custom UI/UX Design",
+    desc: "Intuitive interfaces with responsive and engaging designs ensure users enjoy a friendly and interactive experience.",
   },
+  {
+    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
+    title: "Cold & Hot Wallet Configuration",
+    desc: "Flexible storage options with offline cold wallets for maximum security and hot wallets for fast, on-demand access",
+  },
+  {
+    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
+    title: "Smart Contract Support",
+    desc: "Flexible storage options with offline cold wallets for maximum security and hot wallets for fast, on-demand accessExecute automated transactions and programmable workflows via smart contracts, enhancing efficiency and trust in decentralized environments.",
+  },
+  {
+    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
+    title: "DeFi & NFT Ready",
+    desc: "Built to integrate with DeFi protocols, NFT marketplaces, and token ecosystems, enabling innovative financial services directly from the wallet.",
+  }
 
 ];
 
@@ -454,10 +429,10 @@ export default function Blockchain(props) {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>Comfygen Blockchain Wallet Development Company</title>
+        <title>Blockchain Wallet Development Company| Blockchain Wallet Development Service.</title>
         <meta
           name="description"
-          content="Comfygen is a blockchain wallet development company delivering secure, scalable, and customizable wallets with multi-chain support for startups, enterprises, and DeFi."
+          content="Comfygen is a blockchain wallet development company delivering secure, scalable, and customizable Blockchain wallets with multi-chain support for startups, enterprises, and DeFi."
         />
         <link
           rel="canonical"
@@ -585,12 +560,12 @@ export default function Blockchain(props) {
       <BlockchainNav />
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
-          heading="Blockchain Wallet Development Company"
-          ptag="Comfygen Blockchain wallet development company that drives secure. A scalable and fully customizable blockchain wallet solution that is compatible with mobile and desktop platforms. Our blockchain wallet development team builds high-performance wallets with multi-chain support, advanced security protocols, and unbeatable user experiences, perfect for startups, enterprises, and DeFi ecosystems."
-          li="Multi-Chain Integration"
-          li1="Bank-Grade Security"
-          li2="Custom Features"
-          li3="Cross-Platform Access"
+          heading="Blockchain Wallet development Company"
+          ptag="As a top-tier blockchain wallet development company renowned for delivering secure, intuitive, and scalable wallet solutions tailored to meet the diverse needs of individual users, startups, fintech innovators, and large enterprises."
+          li="Unmatched Security & Privacy"
+          li1="Cross-Platform Compatibility"
+          li2="Advanced Technology Integration"
+          li3="Custom & White-Label Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -602,17 +577,13 @@ export default function Blockchain(props) {
 
         <AboutSection
           title=""
-          heading="Why Use a Blockchain Wallet for Business?"
-          description1="A blockchain wallet is not just a tool for holding cryptocurrency. Blockchain Wallet Development for Forward-Thinking Businesses is a strategic infrastructure component that opens doors to new operational models, revenue streams, and helps to stay ahead of the competition. Blockchain wallet development services serve as the essential gateway for any business interacting with the decentralized web (Web3)."
-          description2="Here are the key reasons your business should integrate a blockchain wallet :"
-          points={[
-            "Tap into a Global, Borderless Economy",
-            "Unlock New Revenue Models and Business Lines",
-            "Revolutionize Transparency and Build Unshakable Trust",
-            "Drive Customer Engagement and Loyalty",
-            "Enhanced Security and Control",
-            "Operational Efficiency and Automation",
-          ]}
+          heading="How Blockchain Wallets Help Businesses Grow"
+          description1="Blockchain wallets are more than just crypto storage, they empower businesses to grow, innovate, and operate efficiently in the digital economy. By leveraging secure, <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallets</a>, companies can enhance financial transparency, improve operational efficiency, and tap into new revenue streams."
+          description2="<b>Build Trust</b> : Secure and transparent transactions boost customer confidence and loyalty."
+          description3="<b>Expand Globally</b> : Accept multiple currencies, including crypto, for international reach."
+          description4="<b>Streamline Operations</b> : Automated transactions and smart contracts reduce errors and save time."
+          description5="<b>Unlock Revenue</b> : Enable DeFi, NFT trading, and token ecosystems to create new income streams."
+          points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/blockchain-wallet-development/about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -621,13 +592,27 @@ export default function Blockchain(props) {
         <ServicesSec
           servicesData={JSON_DATA.servicesData}
           title="Our Blockchain Wallet Development Services"
-          description="Comfyen not just develops blockchain wallets; Our Blockchain wallet development engineer secures scalable gateways to the decentralized future. Our end-to-end blockchain wallet development services are designed to transform your vision into a Solid, user-friendly, and market-ready blockchain application."
+          description="At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready."
         />
         {/* <ContactFromCenter /> */}
 
+        <SolutionSec
+          heading="Core Features of Our Blockchain Wallet Development Solution"
+          subheading="At Comfygen, our blockchain wallets are designed to provide maximum security, seamless usability, and robust performance. Each wallet comes packed with features that meet the needs of businesses, fintech startups, and individual users alike, enabling efficient digital asset management and smooth financial operations."
+          techData={technologyData}
+        />
+        <CallToAction
+          heading="Ready to Launch Your Own Blockchain Wallet?"
+          text="TEmpower your business with Comfygen’s secure, scalable blockchain wallet solutions — multi-currency, DeFi-ready, and NFT-compatible."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
         <ProcessSec
-          title="Our company's Blockchain Wallet Development Process"
-          description="We believe that a secure and successful blockchain wallet is built on a foundation of clear communication, grime process, and technical excellence. Blockchain wallet development lifecycle is designed to be transparent, collaborative, and efficient, ensuring your project is delivered on time and to the highest standard."
+          title="Our Blockchain Wallet Development Process"
+          description="At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience."
           processSlides={Process}
         />
 
@@ -645,8 +630,11 @@ export default function Blockchain(props) {
           sliderData={JSON_DATA.IndustriesServe}
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
+
+
+
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="Our Blockchain Based Portfolio"
           description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
         />
@@ -663,11 +651,7 @@ export default function Blockchain(props) {
           description="We leverage a cutting-edge, battle-tested technology stack to build secure, scalable, and feature-rich blockchain wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project."
         />
 
-        <SolutionSec
-          heading="Our end-to-end Crypto Wallet Development Services"
-          subheading="We offer end-to-end crypto wallet development services developed for startups, enterprises, DeFi platforms, and exchanges. Our expertise spans across all types of wallets to meet diverse business and user needs."
-          techData={technologyData}
-        />
+
 
         <ClientTestimonials
           testimonials={testimonialData}

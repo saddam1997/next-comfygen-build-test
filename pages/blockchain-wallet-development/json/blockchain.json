@@ -13,11 +13,12 @@
   {
     "title": "Custom Crypto Wallet Development Services",
     "subtitle": "",
-    "description": "From concept to launch, our Custom Crypto Wallet Development Services craft bespoke wallet solutions designed to your specific business needs and target audience.",
+    "description": "From concept to launch, our Custom <a class='underline' href='https://www.comfygen.com/crypto-wallet-development'>Crypto Wallet Development</a> Services craft bespoke wallet solutions designed to your specific business needs and target audience.",
+    
     "features": [
-      "Tailored Feature Sets: We build exactly what you need, whether it's simple asset storage, complex DeFi integrations, or NFT management.",
-      "Brand-Aligned UI/UX: Your wallet will be a seamless extension of your brand, with an intuitive interface that delights users.",
-      "Cross-Platform Development: Native applications for a flawless experience on any device."
+      "Tailored Feature Sets",
+      "Brand-Aligned UI/UX",
+      "Cross-Platform Development"
     ]
   },
   {
@@ -25,16 +26,15 @@
     "subtitle": "",
     "description": "DeFi Wallets & Web3 Integration ensure that your users interact seamlessly with the entire decentralized finance ecosystem.",
     "features": [
-      "DEX Integration: Direct trading and swapping via integrated decentralized exchanges (Uniswap, PancakeSwap, etc.).",
-      "Staking & Yield Farming: Built-in interfaces for users to easily stake assets and earn rewards.",
-      "dApp Browsers: A secure in-wallet browser for connecting to any decentralized application (dApp) on supported blockchains.",
-      "Multi-Chain Support: Connect to Ethereum, BSC, Solana, Polygon, and other leading networks."
+      "DEX Integration",
+      "dApp Browsers",
+      "Multi-Chain Support"
     ]
   },
   {
     "title": "NFT Wallet Development",
     "subtitle": "",
-    "description": "Create specialized wallets for the booming NFT market, designed for creators and collectors.",
+    "description": "Comfygen specializes in developing <a class='underline' href='https://www.comfygen.com/nft-wallet-development'>NFT wallets</a> according to the NFT market, designed for creators and collectors.",
     "features": [
       "NFT Minting: Allow users to create (mint) their NFTs directly from the wallet.",
       "Visual Galleries: Beautifully display NFT collections in easy-to-browse galleries.",
@@ -170,6 +170,8 @@
 
   },
 
+  
+
   "Hire": [
     {
       "num": "1",
@@ -203,6 +205,9 @@
       "decs": "DPoS blockchain development is a consensus algorithm designed for high throughput and scalability. In a DPoS blockchain development network, token holders vote for a limited number of delegates who are responsible for validating transactions and producing new blocks. DPoS blockchain development aims to combine decentralization and efficiency by allowing users to choose trusted validators through voting. This approach minimizes the computational resources needed compared to PoW blockchain development, making DPoS blockchain development faster and more environmentally friendly. DPoS blockchain development, such as EOS and Tron, are well-suited for applications requiring rapid transaction processing, like decentralized applications (DApps blockchain development) and digital content platforms."
     }
   ],
+
+
+  
   "LeadingSoftware": [
     {
       "num": "01",
@@ -254,8 +259,8 @@
   "consultancyHead": [
     {
       "num": "1",
-      "title": "Benefits of Partnering with a Blockchain Wallet Development Company",
-      "desc": "Investing in a custom <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/crypto-wallet-development' >crypto wallet development company</a> is a powerful strategic move. However, the success of your project depends on the expertise of your blockchain wallet development company. Here are the key benefits of using a professional blockchain wallet development company and its end-to-end blockchain wallet development service."
+      "title": "Benefits of Blockchain Wallet Development",
+      "desc": "Blockchain wallets are transforming the way businesses and individuals manage digital assets. Developing a secure and feature-rich crypto wallet offers numerous advantages that enhance operations, improve security, and unlock new opportunities"
     }
   ],
   "consultancyData": [

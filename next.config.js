@@ -54,7 +54,7 @@ module.exports = withBundleAnalyzer({
       },
     ],
     formats: ["image/avif", "image/webp"], // enables automatic WebP/AVIF conversion
-    minimumCacheTTL: 86400, // cache for 1 day
+    minimumCacheTTL: 3600, // cache images for 1 hour
     qualities: [50, 70, 75, 80, 85, 90, 100],
   },
   compress: true,

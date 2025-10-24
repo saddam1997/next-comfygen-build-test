@@ -29,14 +29,19 @@ const AboutSection = (props: any) => {
               alt={heading}
               width={600}
               height={360}
-              sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
-              priority
-              // quality={70}
-              // priority // ✅ Load early for LCP
-              // placeholder="blur"
-              // blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
-              // className="rounded-2xl w-full h-auto object-cover"
-              // style={{ maxWidth: "100%", height: "auto" }}
+              priority // important for LCP
+              quality={70} // compress further (default is 75)
+              sizes="(max-width: 640px) 90vw,
+                 (max-width: 768px) 85vw,
+                 (max-width: 1024px) 45vw,
+                 600px"
+              style={{ width: "100%", height: "auto" }}
+            // quality={70}
+            // priority // ✅ Load early for LCP
+            // placeholder="blur"
+            // blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
+            // className="rounded-2xl w-full h-auto object-cover"
+            // style={{ maxWidth: "100%", height: "auto" }}
             />
           </div>
           <div>
