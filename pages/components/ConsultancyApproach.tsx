@@ -16,17 +16,29 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                 <div className="lg:flex items-start lg:space-x-10 lg:space-y-0 space-y-6 w-full gap-10">
 
                     <div className="w-full lg:text-left">
-                        {Head.map((elem:any) => (
+                        {Head.map((elem: any) => (
                             <div key={elem.title} className="w-full lg:text-left">
                                 <div className="space-y-6">
                                     <Image
+                                        src={imageSrc}
+                                        alt={elem.title || "Comfygen project image"}
+                                        width={754}
+                                        height={210}
+                                        quality={70}
+                                        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 754px"
+                                        placeholder="blur"
+                                        blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
+                                        className="rounded-md w-full h-auto object-contain"
+                                        priority={elem.isHeroImage} // only if above the fold
+                                    />
+                                    {/* <Image
                                         className=""
                                         src={imageSrc}
                                         alt={elem.title}
                                         unoptimized
                                         width={754}
                                         height={210}
-                                    />
+                                    /> */}
                                     <div className="space-y-2 ">
                                         <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
                                             {elem.title}
@@ -47,33 +59,31 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                     </div>
 
                     <div className="w-full space-y-4">
-                        {ItemData.map((elem:any, index:any) => (
+                        {ItemData.map((elem: any, index: any) => (
                             <div
-                            key={index}
-                            className={`p-4 mt-2 border border-[#5556D1]/60 rounded-lg cursor-pointer w-full ${
-                                currentCount === index ? "bg-[#5556D1]/10" : "bg-[#fff]"
-                            }`}
-                            onClick={() => setCurrentCount(currentCount === index ? null : index)}
+                                key={index}
+                                className={`p-4 mt-2 border border-[#5556D1]/60 rounded-lg cursor-pointer w-full ${currentCount === index ? "bg-[#5556D1]/10" : "bg-[#fff]"
+                                    }`}
+                                onClick={() => setCurrentCount(currentCount === index ? null : index)}
                             >
-                            <div className="flex justify-between w-full text-base font-medium text-left text-black rounded-lg md:text-lg">
-                                <span className="font-semibold lg:text-lg text-base text-[#000000]">
-                                {elem.title}
-                                </span>
-                                {currentCount === index ? (
-                                <MdRemove size={26} />
-                                ) : (
-                                <MdAdd size={26} />
-                                )}
-                            </div>
-                            <div
-                                className={`pt-4 text-medium text-black ${
-                                currentCount === index ? "" : "hidden"
-                                }`}
-                                dangerouslySetInnerHTML={{ __html: elem.desc }}
-                            />
+                                <div className="flex justify-between w-full text-base font-medium text-left text-black rounded-lg md:text-lg">
+                                    <span className="font-semibold lg:text-lg text-base text-[#000000]">
+                                        {elem.title}
+                                    </span>
+                                    {currentCount === index ? (
+                                        <MdRemove size={26} />
+                                    ) : (
+                                        <MdAdd size={26} />
+                                    )}
+                                </div>
+                                <div
+                                    className={`pt-4 text-medium text-black ${currentCount === index ? "" : "hidden"
+                                        }`}
+                                    dangerouslySetInnerHTML={{ __html: elem.desc }}
+                                />
                             </div>
                         ))}
-                        </div>
+                    </div>
 
                 </div>
             </div>

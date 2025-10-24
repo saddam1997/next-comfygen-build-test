@@ -23,7 +23,22 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
+
             <Image
+              src={imageSrc}
+              alt={heading}
+              width={600}
+              height={504}
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
+              quality={70}
+              priority // ✅ Load early for LCP
+              placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
+              className="rounded-2xl w-full h-auto object-cover"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+
+            {/* <Image
               src={imageSrc}
               alt={heading}
               width={600} 
@@ -39,7 +54,7 @@ const AboutSection = (props: any) => {
                 maxWidth: '100%',
                 height: 'auto'
               }}
-            />
+            /> */}
           </div>
           <div>
             <div className="space-y-4">

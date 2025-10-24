@@ -17,13 +17,16 @@ import Industries from "../../board-game-development/components/Industries";
 import IndustriesServe from "./components/IndustriesServe";
 import ProcessSec from "../../components/ProcessSec";
 import NewTeckStack from "../../componentsnew/NewTeckStack";
+import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+// const HeroSectionForAllPages = dynamic(
+//   () => import("../../components/HeroSectionForAllPages"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
 const Faq = dynamic(() => import("../../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
@@ -537,7 +540,7 @@ export default function ClinicalApp(props: any) {
           description2="Microsoft Power BI Consulting Services solves this challenge by unifying scattered data sources, cleaning and modeling them into actionable dashboards. Businesses gain real-time visibility into performance, discover cost inefficiencies, forecast trends, and make accurate, data-backed decisions across departments from finance to operations."
           description3="The demand for precise implementation and domain-aligned customization is higher than ever, with industry leaders turning to <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/business-intelligence' >Business intelligence</a> for strategic clarity, agility, and competitive edge."
           description4="This is where <a href='https://www.comfygen.com' class='text-blue-500 font-semibold'>Comfygen</a> steps in, helping businesses design, implement, and optimize their Power BI ecosystem to extract true business value from their data."
-          imageSrc="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/power-bi-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
