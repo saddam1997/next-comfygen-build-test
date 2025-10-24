@@ -439,10 +439,10 @@ export default function Ecommerce(props) {
                 As a DPOS blockchain development firm, we always prioritize our clients and engage with them flexibly so that there is a factor of mutual benefit in the development process. We consult with our clients and help them choose the best engagement model for their business.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.FutureDriven.map((elem) => {
+                {JSON_DATA.FutureDriven.map((elem, index) => {
                   const { title, desc } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
+                    <div key={index} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
                       <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
                       <p className=" text-base font-normal mt-2">
                         {desc}

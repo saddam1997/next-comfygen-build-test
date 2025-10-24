@@ -548,7 +548,7 @@ export default function ClinicalApp(props: any) {
         <ContactFromCenter />
 
         <CardItem
-          heading="Diverse Home Services App Developent Solutions for Every Business Need"
+          heading="Diverse Home Services App Development Solutions for Every Business Need"
           subheading="We are a leading home services app development company. We create easy-to-use apps that help businesses serve their customers better. Our solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments."
           techData={JSON_DATA.cardData2}
         />

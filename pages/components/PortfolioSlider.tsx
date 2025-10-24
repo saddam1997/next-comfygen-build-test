@@ -92,10 +92,10 @@ function PortfolioSec({
                             quality={85}
                             // priority
                             loading="lazy"
-                            decoding="async"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
-                            placeholder="blur"
-                            blurDataURL="/blur-placeholder.webp"
+                            // decoding="async"
+                            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                            // placeholder="blur"
+                            // blurDataURL="/blur-placeholder.webp"
                           />
                         </div>
                         <div>
