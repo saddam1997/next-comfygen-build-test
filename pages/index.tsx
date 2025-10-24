@@ -2,7 +2,6 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import PortfolioSec from "./components/PortfolioSec";
 // import ProcessSec from "./components/ProcessSec";
 // import IndustriesServe from "./components/IndustriesServe";
 // import TechStack from "./components/TechStack";
@@ -99,38 +98,6 @@ export default function Home(props: any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/fitclub-app-portfolio.webp",
-        head: "Fitclub Mobile App",
-        name: "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/great-wallet-portfolio.webp",
-        head: "Great Wallet Application",
-        name: "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
-    ],
-  };
-
-
   const portfoliodata = [
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",

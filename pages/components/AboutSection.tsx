@@ -28,8 +28,9 @@ const AboutSection = (props: any) => {
               src={imageSrc}
               alt={heading}
               width={600}
-              height={504}
+              height={360}
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 45vw, 40vw"
+              priority
               // quality={70}
               // priority // ✅ Load early for LCP
               // placeholder="blur"

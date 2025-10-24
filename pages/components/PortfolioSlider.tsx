@@ -46,7 +46,7 @@ function PortfolioSec({
   return (
     <section className="lg:py-16 py-10 bg-[#F5F5F9]">
       <div className="slider-container">
-        <div className="mx-auto max-w-[1600px] px-6 lg:px-8 w-full">
+        <div className="mx-auto max-w-[1600px]  px-6 lg:px-8 w-full">
           <div className="text-center mb-10">
             <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
               {heading}
@@ -57,7 +57,8 @@ function PortfolioSec({
             ></p>
           </div>
 
-          {techData.length > 0 ? (
+       
+           {techData.length > 0 ? (
             <Slider ref={sliderRef} {...settings}>
               {techData.map((slide, index) => {
                 const bgColor =
@@ -68,30 +69,23 @@ function PortfolioSec({
                       : "bg-[#fffbe6]";
 
                 return (
-                  <div key={index} className="px-2">
+                  <div key={index} className="px-2 overflow-hidden lg:w-[1256px]">
                     <div
                       className={`p-6 rounded-xl transition-opacity duration-300 min-h-max ${index === activeSlide ? "opacity-100" : "opacity-50"
                         } border border-[#000]/10 ${bgColor}`}
                     >
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
                         <div className="h-[160] md:h-[400px] object-contain">
-                          {/* <Image
-                            className=""
-                            src={slide.image}
-                            alt={slide.title}
-                            width={500}
-                            height={300}
-                            layout="responsive"
-                          /> */}
+                          
                           <Image
                             className="h-auto w-full object-contain"
                             src={slide.image}
                             alt={slide.title}
-                            width={907}
-                            height={762}
+                            width={640}
+                            height={360}
                             quality={85}
-                            // priority
-                            loading="lazy"
+                            priority
+                            // loading="lazy"
                             // decoding="async"
                             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
                             // placeholder="blur"
@@ -143,6 +137,7 @@ function PortfolioSec({
               No portfolio items available.
             </p>
           )}
+        
 
           {techData.length > 0 && (
             <div className="flex justify-center gap-5 mt-6">

@@ -94,32 +94,7 @@
       "desc": "We are the leading custom mobile app development company; that ensures for app’s post-deployment support and maintenance. The service includes issue management and response, automated backups, regular performance, security enhancement, comprehensive support post-deployment, etc. Our team takes full responsibility for the ongoing performance maintenance of the application. "
     }
   ],
-  "Game": [
-    {
-      "img": "https://www.comfygen.com/img/baccarat-game.webp",
-      "url": "/baccarat-game-development",
-      "title": "Baccarat Game Development Company",
-      "desc": "The game of baccarat is played in casinos. Players and bankers bet on which hand out of two will be dealt in this high-level guessing game. For websites, mobile devices, and personal computers, we develop baccarat games with rich features. Are you interested in developing your own Baccarat Game in 2D and 3D design?"
-    },
-    {
-      "img": "https://www.comfygen.com/img/cricket-live-line-game-development.webp",
-      "url": "/cricket-live-line-api",
-      "title": "Cricket Live Line API Development Company",
-      "desc": "Cricket live line api or cricket live score api provides immense information on various amounts of cricket data. Get accurate and fastest cricket data in various programming languages for matches, partnerships, players, scorecards, commentary, and much more."
-    },
-    {
-      "img": "https://www.comfygen.com/img/ludo-game-devlopmenty-devlopment.webp",
-      "url": "/ludo-game-development",
-      "title": "Ludo Game Development company",
-      "desc": "Our company is the best Ludo game development company that designs, develops, and markets native and hybrid Ludo game apps. Find out how a leading Ludo app development company can help you with your project and get satisfactory results. Are you interested in developing your own Ludo game in 2D and 3D design?"
-    },
-    {
-      "img": "https://www.comfygen.com/img/pokar-game-development-company.webp",
-      "url": "/poker-game-development",
-      "title": "Poker Game Development company",
-      "desc": "Our company is the best Poker Game development company that designs, develops, and markets native and hybrid Poker Game apps. Find out how a leading Poker Game development company can help you with your project and get satisfactory results. Are you interested in developing your own Poker Game in 2D and 3D design?"
-    }
-  ],
+
   "CryptoAltcoin": [
     {
       "img": "https://www.comfygen.com/img/crypto-token=-development.webp",
