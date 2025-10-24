@@ -88,15 +88,15 @@ const portfoliodata = [
     "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
     "title": "Mezovest",
     "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-   
+
     "link": "/portfolio/advanced-blockchain-based-logistics-software",
   },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
-      "title": "Blockchain-Based Real Estate Tokenization Software",
-      "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
-      "link":"/portfolio/blockchain-based-real-estate-tokenization-software",
-    }
+  {
+    "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+    "title": "Blockchain-Based Real Estate Tokenization Software",
+    "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
+    "link": "/portfolio/blockchain-based-real-estate-tokenization-software",
+  }
 
 ]
 
@@ -610,12 +610,6 @@ export default function Blockchain(props) {
           imageAlt="Future of Technology"
         />
 
-        <ProcessSec
-          title="Our Blockchain Wallet Development Process"
-          description="At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience."
-          processSlides={Process}
-        />
-
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -623,6 +617,14 @@ export default function Blockchain(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
+
+        <ProcessSec
+          title="Our Blockchain Wallet Development Process"
+          description="At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience."
+          processSlides={Process}
+        />
+
+
 
         <IndustriesServe
           heading="Industries we serve: Blockchain Wallet Development Services"
