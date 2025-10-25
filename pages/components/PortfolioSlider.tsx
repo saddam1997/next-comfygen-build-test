@@ -81,13 +81,13 @@ function PortfolioSec({
                             className="h-auto w-full object-contain"
                             src={slide.image}
                             alt={slide.title}
-                            width={640}
-                            height={360}
-                            quality={85}
+                            width={297}
+                            height={192}
+                            quality={50}
                             priority
                             // loading="lazy"
                             // decoding="async"
-                            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
                             // placeholder="blur"
                             // blurDataURL="/blur-placeholder.webp"
                           />

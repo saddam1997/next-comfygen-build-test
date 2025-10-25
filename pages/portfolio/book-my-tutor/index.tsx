@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AOS from 'aos';
 import Link from 'next/link';
 import styles from './styles.module.css'
@@ -11,12 +11,18 @@ import dynamic from 'next/dynamic';
 import JSON_DATA from "./book-my-tutor.json"
 import { BsArrowRight } from 'react-icons/bs';
 import TechnologyStack from '../technology-stack/TechnologyStack';
+import LazyLoad from 'react-lazy-load';
+import CompanyHeroSection from '../../components/CompanyHeroSection';
+import Features from '../components/Features';
 
 const Header = dynamic(() => import('../../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
 
-export default function about(props) {
+export default function about(props: any) {
+  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+  const openModal = () => setTalkToExpertModal(true);
+  const closeModal = () => setTalkToExpertModal(false);
   let { initialData } = props;
   return (
     <div className='overflow-hidden'>
@@ -42,61 +48,47 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
 
+      <div className="">
+        <LazyLoad height={80} offset={100}>
+          <Header />
+        </LazyLoad>
+      </div>
+
       <div className="overflow-hidden" >
-
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
-            <div className=" bg-[#0a0e11a6]">
-              <Header />
-              <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
-                <div className="w-full">
-                  <div className="space-y-6 text-start">
-                    <h1 className="text-[#fff] xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]  ">
-                    Book My Tutor - A Smart Tutor Booking App
-                    </h1>
-                    <p className="text-white text-base">Book My Tutor is an innovative tutor booking platform designed to connect students with experienced tutors for personalized learning. As a product of a leading tutor app development company, this app simplifies the process of finding, booking, and managing tutoring sessions. With AI-powered recommendations, real-time communication, and secure payment integration, it enhances the learning experience while providing growth opportunities for educators.</p>
-                    <div className="py-4">
-                      <Link href="/contact-us" passHref={true}>
-                        <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center shadow-xl cursor-pointer bg-[#fff] text-slate-800 overflow-hidden">
-                          <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-[#D0FFDA] rounded-full group-hover:w-60 group-hover:h-60 "></span>
-                          <span className="relative"> Let's Discuss</span>
-                          <BsArrowRight className="ml-2 transition-all duration-200 ease-out z-10" />
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full flex justify-center md:py-0 ">
-                  <Image className="object-cover " src="https://www.comfygen.com/img/hero-book-my-tutor.webp" width={600} height={300} alt=' hero great wallet' loading="eager" priority />
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="lg:py-[7rem] py-[5rem]  bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
+          <CompanyHeroSection
+            heading=" Book My Tutor - A Smart Tutor Booking App"
+            subhead=""
+            ptag="designed to connect students with experienced tutors for personalized learning. As a product of a leading tutor app development company, this app simplifies the process of finding, booking, and managing tutoring sessions. With AI-powered recommendations, real-time communication, and secure payment integration, it enhances the learning experience while providing growth opportunities for educators."
+            imageSrc="https://www.comfygen.com/img/hero-book-my-tutor.webp"
+            buttonText="Talk To Consultant"
+            openModal={openModal}
+            closeModal={closeModal}
+            talkToExpertModal={talkToExpertModal}
+            buttonLink="/portfolio"
+            imageHeight={360}
+            imageWidth={640}
+          />
         </div>
 
-        <div className="py-20">
-          <section className=" h-full w-11/12 mx-auto space-y-0 2xl:w-4/6 xl:w-5/6 lg:space-y-10">
-            <div className="items-center space-y-10 md:flex md:space-y-0 md:space-x-10 w-full">
-              <div className="w-full space-y-6 text-center md:text-left">
-                <h2 className=" text-slate-900 xl:text-4xl text-3xl font-bold xl:leading-[3rem]">Business Benefits</h2>
-                <p>Book My Tutor is a powerful online learning platform designed to connect students with qualified tutors seamlessly. Developed by a leading tutor app development company, this innovative solution enhances the learning experience by making tutor booking simple, flexible, and efficient. Key business benefits include: </p>
-                <p><span className='text-lg	 font-bold'>Seamless Tutor-Student Matching:</span> AI-driven recommendations help students find the best tutors based on their preferences and learning goals.
-                </p>
-                <p><span className='text-lg	 font-bold'>Improved Learning Experience: </span>  Enables real-time interaction between students and tutors for personalized education.</p>
-                <p><span className='text-lg	 font-bold'>Revenue Generation:</span> Offers multiple monetization opportunities, such as subscription plans and pay-per-session models.</p>
-                <p><span className='text-lg	 font-bold'>Scalability:</span>  It is designed to support a growing user base, making it an ideal solution for institutions and individual tutors alike.</p>
-                <p><span className='text-lg	 font-bold'>Convenience & Accessibility:</span>  Students can book sessions anytime, anywhere, ensuring learning without limitations.</p>
 
-              </div>
-              <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-book-my-tutor.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={456} height={635} alt="Business Benefits great wallet" />
-              </div>
-            </div>
-          </section>
-        </div>
+        <Features
+          heading="Features"
+          points={[
+            "Book My Tutor is a powerful online learning platform designed to connect students with qualified tutors seamlessly. Developed by a leading tutor app development company, this innovative solution enhances the learning experience by making tutor booking simple, flexible, and efficient. Key business benefits include",
+            "<b>Seamless Tutor-Student Matching :</b> AI-driven recommendations help students find the best tutors based on their preferences and learning goals.",
+            "<b>Improved Learning Experience :</b> Enables real-time interaction between students and tutors for personalized education.",
+            "<b>Revenue Generation :</b>Offers multiple monetization opportunities, such as subscription plans and pay-per-session models.",
+            "<b>Scalability :</b> It is designed to support a growing user base, making it an ideal solution for institutions and individual tutors alike.",
+            "<b>Convenience & Accessibility :</b> Students can book sessions anytime, anywhere, ensuring learning without limitations"
+
+          ]}
+          imageSrc="https://www.comfygen.com/img/business-benefits-book-my-tutor.webp"
+        />
+
 
         <div className={`${styles.featuresbg} `}>
-          <div className='bg-[#121212bd] md:py-10 py-6 '>
+          <div className=' md:py-10 py-6 '>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
               <div className="w-full space-y-4 text-center md:text-left">
                 <h2 className="py-2 text-[#fff] xl:text-3xl text-2xl font-bold xl:leading-[3rem]">Features</h2>
@@ -130,8 +122,11 @@ export default function about(props) {
               src="https://www.comfygen.com/img/solution-book-my-tutor.webp"
               alt="Experts to Build and Manage Decentralised Solutions"
               className="rounded-lg"
-              width={456}
-              height={651}
+              width={640}
+              height={360}
+              priority
+              quality={70}
+              sizes="(max-width: 640px) 100vw, (max-width: 1200px) 75vw, 920px"
             />
           </div>
           <div className="w-full space-y-4 text-center md:text-left">
@@ -147,7 +142,7 @@ export default function about(props) {
         </section>
 
         <div className={`${styles.herobg} `}>
-          <div className='bg-[#0A0E11] py-20'>
+          <div className=' py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>
                 <h3 className='text-4xl font-bold text-white' >Tools & Technologies</h3>

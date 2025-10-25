@@ -169,11 +169,11 @@ function IndustriesServe({
                         <Image
                           src={item.imgSrc}
                           alt={item.title}
-                          fill
-                          quality={75}
-                          priority={index < 4}
-                          
-                          // sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
+                          width={297}
+                          height={192}
+                          quality={50}
+                          priority
+                          sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                           placeholder="blur"
                           blurDataURL={blurDataURL}
                           className="object-cover rounded-lg"
@@ -194,11 +194,12 @@ function IndustriesServe({
                       <Image
                         src={item.imgSrc}
                         alt={item.title}
-                        fill
-                        quality={75}
-                        priority={index < 4}
+                        width={297}
+                        height={192}
+                        quality={50}
+                        priority
                         // unoptimized
-                        // sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
+                        sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                         placeholder="blur"
                         blurDataURL={blurDataURL}
                         className="object-cover rounded-lg"
