@@ -30,37 +30,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
       { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
       { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
     ],
-    // "mobile": [
-    //   { img: "https://www.comfygen.com/media/svg/tech/android-plain.svg", alt: 'Android Plan', name: "Android", num: "1" },
-    //   { img: "https://www.comfygen.com/image/ios-apple.svg", alt: 'Apple', name: "IOS Apple", num: "2" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React Native", num: "3" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/flutter-plain.svg", alt: 'Flutter', name: "Flutter", num: "4" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/dart-original.svg", alt: 'Dart', name: "Dart", num: "5" },
-    //   { img: "https://www.comfygen.com/image/unity-stack-icon.svg", alt: 'Unity', name: "Unity", num: "6" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "7" },
-    // ],
-    // "design": [
-    //   { img: "https://www.comfygen.com/media/svg/tech/figma.svg", alt: 'Figma', name: "Figma", num: "1" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/photoshop.svg", alt: 'Photoshop', name: "Photoshop", num: "2" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/abdobe-illustrator.svg", alt: 'Abdobe Illustrator', name: " Illustrator", num: "3" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/abdobe-xd.svg", alt: 'Abdobe Xd', name: "Abdobe xd", num: "4" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/skech.svg", alt: 'Skech', name: "skech", num: "5" },
-    //   { img: "https://www.comfygen.com/media/svg/tech/after-effect.svg", alt: 'After Effect', name: "After Effect", num: "6" },
-    // ],
-    // "crypto": [
-    //   { img: "https://www.comfygen.com/img/stackimg/binance.svg", alt: 'Binance', name: "Binance", num: "1" },
-    //   { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano ", num: "2" },
-    //   { img: "https://www.comfygen.com/img/stackimg/coinbase.svg", alt: 'Coinbase', name: "Coinbase", num: "3" },
-    //   { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "4" },
-    //   { img: "https://www.comfygen.com/image/ethereum-stack-icon.svg", alt: 'Ethereum', name: "Ethereum", num: "5" },
-    //   { img: "https://www.comfygen.com/img/stackimg/ethers-js.svg", alt: 'Ethersjs', name: "Ethers JS", num: "6" },
-    //   { img: "https://www.comfygen.com/img/stackimg/walletconnect.svg", alt: 'Walletconnect', name: "Walletconnect", num: "7", },
-    //   { img: "https://www.comfygen.com/img/stackimg/trust-wallet.svg", alt: 'Trust Wallet', name: "Trust wallet ", num: "8" },
-    //   { img: "https://www.comfygen.com/image/solana-stack-icon.svg", alt: 'Solona', name: "Solana", num: "9" },
-    //   { img: "https://www.comfygen.com/img/stackimg/polygon.svg", alt: 'Polygon', name: "Polygon", num: "10" },
-    //   { img: "https://www.comfygen.com/img/stackimg/polkadot.svg", alt: 'Polkadot', name: "Polkadot", num: "11" },
-    //   { img: "https://www.comfygen.com/img/stackimg/metamask.svg", alt: 'Metamask', name: "Metamask", num: "12" },
-    // ],
+
 
     "Blockchain network ": [
       { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
@@ -145,19 +115,15 @@ export default function Tech({ title, description, filterCategory = [], customTe
                     <Image
                       src={elem.img}
                       alt={elem.name}
-                      width={907}
-                      height={762}
-                      quality={85}
+                      width={297}
+                      height={192}
+                      quality={50}
                       priority
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                      unoptimized
+                      sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 297px"
+                      style={{ width: "100%", height: "auto" }}
                       placeholder="blur"
                       blurDataURL="/blur-placeholder.webp"
-                    // width={50}
-                    // height={50}
-                    // unoptimized
-                    // priority={true}
-                    // quality={75} 
-                    // style={{height:"60px", width:"60px"}}
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-white ml-3">{elem.name}</h3>
