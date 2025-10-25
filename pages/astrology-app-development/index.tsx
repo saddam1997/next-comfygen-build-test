@@ -445,7 +445,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-        Best Astrology App Development Company | AI Horoscope & Kundli App Solutions
+          Best Astrology App Development Company | AI Horoscope & Kundli App Solutions
         </title>
         <meta
           name="description"
@@ -558,8 +558,8 @@ export default function ClinicalApp(props: any) {
           heading="Top Reasons Your Business Needs an Astrology App"
           description1="The global astrology market is expected to reach $22.8 billion by 2031, showing huge growth potential. A top-notch astrology app helps your astrology business reach users worldwide, offer personalized predictions, and generate fast earnings through the subscriptions and in-app purchases."
 
-          description2="With more than 70% of users choosing the best mobile astrology services, having your own astrology app builds trust, boosts engagement, and grows your customer base. Partner with Comfygen Technologies, a top AI astrology app development company, to turn your spiritual vision into a moneymaking astrology mobile platform."
-   
+          description2="With more than 70% of users choosing the best mobile astrology services, having your own astrology app builds trust, boosts engagement, and grows your customer base. Partner with Comfygen Technologies, a AI-powered astrology mobile app development agency, to turn your spiritual vision into a moneymaking astrology mobile platform."
+
           imageSrc="https://www.comfygen.com/comfygen-images/astrology-app-development/about1.webp"
           link="/about-us"
           linkText="Explore More"
@@ -571,11 +571,7 @@ export default function ClinicalApp(props: any) {
                 We Provide Result-Oriented Astrology App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                At Comfygen, we offer custom astrology app development services
-                designed to enhance user engagement and deliver accurate
-                astrological insights. Our expertise ensures real-time
-                predictions, seamless consultations, and scalable solutions that
-                meet your business needs.
+                Comfygen Technologies offers custom astrology app development services to enhance user engagement and deliver accurate astrological insights. We provide real-time predictions, seamless consultations, and scalable solutions that meet your business requirements.
               </p>
             </div>
             <div className="">
@@ -588,15 +584,11 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  AI-Powered Astrology App Development Solutions for Next-Gen Experiences
-                </h2>
+                  Developing AI-powered astrology apps for the future                </h2>
                 <p>
-                  At Comfygen, we specialize in AI-powered astrology app
-                  development. We transform traditional astrology services into
-                  smart, interactive, and highly personalized experiences. Our
-                  custom astrology app development solutions leverage AI, and
-                  machine learning to enhance engagement, accuracy, and user
-                  satisfaction.
+                  Comfygen Technologies offers AI-powered astrology app development solutions to bring innovation to astrology. Using machine learning and artificial intelligence, we improve prediction accuracy, engagement, and user satisfaction with our astrological apps.
+Explore our next-gen AI features designed to revolutionize your astrology business:
+ 
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
@@ -689,10 +681,10 @@ export default function ClinicalApp(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Astrology App Development Process
+               End-to-End Astrology App Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
-                As a leading astrology app development company, Comfygen Technologies follows a strategic and transparent process to build AI-powered horoscope apps, custom Kundli apps, and astrology solutions that are scalable, secure, and user-friendly. From idea to launch, we provide quality, innovation, and a seamless experience for the astrologer app.
+                We follow a structured and transparent astrology app development process to ensure your app is feature-rich, scalable, and ready for success. We deliver seamless performance and next-generation user experiences from concept to launch.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

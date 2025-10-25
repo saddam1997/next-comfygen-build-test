@@ -365,8 +365,8 @@ export default function Home(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            // bgImage="/landing-hero-img.webp"
-          bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img-new.webp"
+            bgImage="/landing-hero-img.webp"
+          // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
           />
         </div>
         <AboutSection
