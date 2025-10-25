@@ -100,25 +100,25 @@ export default function Home(props: any) {
   };
   const portfoliodata = [
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup-new.webp",
       "title": "Urban Ride-Hailing Startup",
       "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
       "link": "/portfolio/ride-hailing-app"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio-new.webp",
       "title": "Fitclub Mobile App",
       "description": "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
       "link": "https://www.comfygen.com/portfolio/fitclub-app"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
       "title": "Great Wallet Application",
       "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development.webp",
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development-new.webp",
       "title": "Food Delivery App – Food 24Hr",
       "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
       "link": "/portfolio/food-delivery-app"
@@ -366,7 +366,7 @@ export default function Home(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             // bgImage="/landing-hero-img.webp"
-          bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img-new.webp"
           />
         </div>
         <AboutSection
