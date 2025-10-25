@@ -1,7 +1,7 @@
 {
   "IndustriesServe": [
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-1.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
       "title": "E-Commerce",
       "description": "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
       "link": "/e-commerce-app-development"
@@ -29,15 +29,13 @@
       "title": "Logistics",
       "description": "Streamlining logistics operations through advanced, real-time tracking and management solutions."
     },
-    
-  
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-1.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-new.webp",
       "title": "Construction",
       "description": "Driving project efficiency with modern construction management and planning applications."
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-1.webp",
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-new.webp",
       "title": "Game",
       "description": "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
       "link": "/game-development-company"
