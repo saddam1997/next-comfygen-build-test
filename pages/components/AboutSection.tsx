@@ -36,12 +36,6 @@ const AboutSection = (props: any) => {
                  (max-width: 1024px) 45vw,
                  600px"
               style={{ width: "100%", height: "auto" }}
-            // quality={70}
-            // priority // ✅ Load early for LCP
-            // placeholder="blur"
-            // blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
-            // className="rounded-2xl w-full h-auto object-cover"
-            // style={{ maxWidth: "100%", height: "auto" }}
             />
           </div>
           <div>
