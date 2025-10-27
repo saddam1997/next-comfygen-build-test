@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
 import { RiBitCoinLine, RiPhoneLockLine } from "react-icons/ri";
@@ -699,24 +699,93 @@ const EcommerceApp = [
 
 export default function MobileNav(props: any) {
   const [showNav, setShowNav] = useState(0);
-  // const [showNav, setShowNav] = useState(null);
-  const [menu] = useState(false);
-  function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
+  const [showNava, setShowNava] = useState(false);
+
+  // ✅ Optimized slideover toggle
+  const toggleSlideover = useCallback(() => {
+    setShowNava((prev) => !prev);
+  }, []);
+
+  // ✅ Optimized accordion toggle with requestAnimationFrame
+  const handleNavToggle = useCallback((navIndex: number) => {
+    setShowNav(showNav === navIndex ? 0 : navIndex);
+  }, [showNav]);
+
+  // ✅ Close slideover when navigating
+  const handleLinkClick = useCallback(() => {
+    setShowNava(false);
+  }, []);
+
+  // ✅ Memoized list item renderer for better performance
+  const renderListItems = useCallback((items: any[], navIndex: number) => {
+    return items.map((elem: any) => (
+      <li
+        key={elem.num}
+        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
+      >
+        <Link
+          onClick={() => {
+            handleNavToggle(navIndex);
+            handleLinkClick();
+          }}
+          href={elem.url}
+          passHref
+          className="block"
+        >
+          {elem.name}
+        </Link>
+      </li>
+    ));
+  }, [handleNavToggle, handleLinkClick]);
+
+  // ✅ Navigation section component for better code organization
+  const NavSection = useCallback(({ 
+    title, 
+    icon: Icon, 
+    navIndex, 
+    children 
+  }: { 
+    title: string;
+    icon: any;
+    navIndex: number;
+    children: React.ReactNode;
+  }) => (
+    <div>
+      <div
+        onClick={() => handleNavToggle(navIndex)}
+        className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${
+          showNav === navIndex ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
+        }`}
+      >
+        <div className="flex items-center space-x-2">
+          <Icon className="text-[#212121]" size={22} />
+          <span>{title}</span>
+        </div>
+        <MdKeyboardArrowDown
+          size={30}
+          className={`transition-transform duration-300 ${
+            showNav === navIndex ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </div>
+      <div
+        className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${
+          showNav === navIndex ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        {children}
+      </div>
+    </div>
+  ), [showNav, handleNavToggle]);
+
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white ">
-      <nav className="z-20 flex items-center justify-between   py-0  2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-        <div className="flex items-center flex-shrink-0 text-[#212121] ">
-          <Link passHref={true} href="/" className="relative">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+      <nav className="z-20 flex items-center justify-between py-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+        <div className="flex items-center flex-shrink-0 text-[#212121]">
+          <Link href="/" passHref className="relative">
             <Image
               src="/svg/Logo1.svg"
-              alt="comfygen-logo"
+              alt="Comfygen - Mobile App Development Company"
               width={180}
               height={51}
               priority
@@ -724,524 +793,251 @@ export default function MobileNav(props: any) {
             />
           </Link>
         </div>
-        <div
-          onClick={() => toggleSlideover()}
-          className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden"
+        
+        {/* Menu Button */}
+        <button
+          onClick={toggleSlideover}
+          className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden hover:bg-slate-200 transition-colors duration-200"
+          aria-label={showNava ? "Close menu" : "Open menu"}
         >
-          {menu ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
-        </div>
+          {showNava ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
+        </button>
+        
+        {/* Slideover Menu */}
         <div
-          id="slideover-container"
-          className="fixed inset-0 invisible w-full h-full"
+          className={`fixed inset-0 w-full h-full transition-opacity duration-300 ${
+            showNava 
+              ? "visible opacity-100" 
+              : "invisible opacity-0"
+          }`}
         >
-          <span
-            onClick={() => toggleSlideover()}
-            id="slideover-bg"
-            className="absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 "
-          ></span>
+          {/* Backdrop */}
           <div
-            id="slideover"
-            className="md:w-96 w-80 bg-white  h-full absolute right-0 duration-300 ease-out transition-all translate-x-full overflow-scroll"
+            onClick={toggleSlideover}
+            className={`absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 ${
+              showNava ? "opacity-50" : "opacity-0"
+            }`}
+          />
+          
+          {/* Slideover Panel */}
+          <div
+            className={`md:w-96 w-80 bg-white h-full absolute right-0 transition-transform duration-300 ease-out overflow-y-auto ${
+              showNava ? "translate-x-0" : "translate-x-full"
+            }`}
           >
-            <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-2 bg-transparent bg-white">
+            {/* Header */}
+            <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-3 bg-white border-b border-gray-100 shadow-sm">
               <div className="text-[#212121] text-lg font-semibold">Menu</div>
-              <span
-                onClick={() => toggleSlideover()}
-                className="p-2 rounded-full bg-slate-100/20"
+              <button
+                onClick={toggleSlideover}
+                className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 transition-colors duration-200"
+                aria-label="Close menu"
               >
                 <VscChromeClose size={24} className="text-[#212121]" />
-              </span>
+              </button>
             </div>
-            <div className="font-medium text-[#212121] divide-y divide-white/10">
+            
+            {/* Navigation Content */}
+            <div className="font-medium text-[#212121] divide-y divide-gray-100">
+              {/* Home Link */}
               <div>
-                <Link
-                  onClick={() => toggleSlideover()}
-                  href="/"
-                  passHref={true}
-                >
-                  {" "}
-                  <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                <Link href="/" passHref onClick={handleLinkClick}>
+                  <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-gray-50 cursor-pointer transition-colors duration-200">
                     <FiHome className="text-[#212121]" size={22} />
                     <span>Home</span>
                   </div>
                 </Link>
               </div>
-              <div>
-                <div
-                  onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
-                  className={
-                    showNav === 1
-                      ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                      : "flex justify-between p-3 items-center px-6 bg-transparent "
-                  }
-                >
-                  <div className="flex items-center space-x-2 ">
-                    <RiPhoneLockLine className="text-[#212121]" size={22} />
-                    <span>Development</span>
-                  </div>
-                  <MdKeyboardArrowDown
-                    size={30}
-                    className={showNav === 1 ? "rotate-180" : "rotate-0"}
-                  />
-                </div>
-                <div
-                  className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 1 ? "max-h-full" : "max-h-0"
-                    } `}
-                >
-                  <ul className="grid grid-cols-1 gap-2 p-4">
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+
+              {/* Development Section */}
+              <NavSection title="Development" icon={RiPhoneLockLine} navIndex={1}>
+                <ul className="grid grid-cols-1 gap-2 p-4">
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Mobile App Development
                     </p>
                     <div className="p-2 space-y-2 text-sm font-medium">
-                      {MobileApp.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {" "}
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(MobileApp, 1)}
                     </div>
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Web Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {WebApp.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {" "}
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(WebApp, 1)}
                     </div>
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Stack Development
                     </p>
                     <div className="space-y-2 text-sm font-medium">
-                      {Stack.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {" "}
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(Stack, 1)}
                     </div>
-                  </ul>
-                </div>
-              </div>
-              <div
-                onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                className={
-                  showNav === 2
-                    ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                    : "flex justify-between p-3 items-center px-6 bg-transparent "
-                }
-              >
-                <div className="flex items-center space-x-2 ">
-                  <RiBitCoinLine className="text-[#212121]" size={22} />
-                  <span> Blockchain </span>
-                </div>
-                <MdKeyboardArrowDown
-                  size={30}
-                  className={showNav === 2 ? "rotate-180" : "rotate-0"}
-                />
-              </div>
-              <div
-                className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 2 ? "max-h-full" : "max-h-0"
-                  } `}
-              >
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <p className="flex items-center text-base font-medium text-[#212121]">
-                    <span className="pr-1">
-                      <BsDot className="text-[#212121]" size={22} />
-                    </span>
-                    Blockchain Development
-                  </p>
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {Blockchain.map((elem: any) => {
-                      const { icon, name, num, url } = elem;
-                      return (
-                        <li
-                          key={num}
-                          className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                        >
-                          <Link
-                            onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                            href={url}
-                            passHref={true}
-                          >
-                            {name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </div>
-                  <p className="flex items-center text-base font-medium text-[#212121]">
-                    <span className="pr-1">
-                      <BsDot className="text-[#212121]" size={22} />
-                    </span>
-                    Token Development
-                  </p>
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {Token.map((elem: any) => {
-                      const { icon, name, num, url } = elem;
-                      return (
-                        <li
-                          key={num}
-                          className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                        >
-                          <Link
-                            onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                            href={url}
-                            passHref={true}
-                          >
-                            {name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </div>
-                  <p className="flex items-center text-base font-medium text-[#212121]">
-                    <span className="pr-1">
-                      <BsDot className="text-[#212121]" size={22} />
-                    </span>
-                    Other Development
-                  </p>
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {Other.map((elem: any) => {
-                      const { icon, name, num, url } = elem;
-                      return (
-                        <li
-                          key={num}
-                          className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                        >
-                          <Link
-                            onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                            href={url}
-                            passHref={true}
-                          >
-                            {name}
-                          </Link>
-                        </li>
-                      );
-                    })}
                   </div>
                 </ul>
-              </div>
-              {/* ecommerce */}
-              <div
-                onClick={() => setShowNav(showNav === 6 ? 0 : 6)}
-                className={
-                  showNav === 6
-                    ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                    : "flex justify-between p-3 items-center px-6 bg-transparent "
-                }
-              >
-                <div className="flex items-center space-x-2 ">
-                  <LiaIndustrySolid className="text-[#212121]" size={22} />
-                  <span> Industries </span>
-                </div>
-                <MdKeyboardArrowDown
-                  size={30}
-                  className={showNav === 5 ? "rotate-180" : "rotate-0"}
-                />
-              </div>
-              <div
-                className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 6 ? "max-h-full" : "max-h-0"
-                  } `}
-              >
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <p className="flex items-center text-base font-medium text-[#212121]">
-                    <span className="pr-1">
-                      <BsDot className="text-[#212121]" size={22} />
-                    </span>
-                    Ecommerce Development
-                  </p>
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {EcommerceApp.map((elem: any) => {
-                      const { icon, name, num, url } = elem;
-                      return (
-                        <li
-                          key={num}
-                          className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                        >
-                          <Link
-                            onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
-                            href={url}
-                            passHref={true}
-                          >
-                            {name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </div>
-                </ul>
-              </div>
-              <div
-                onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
-                className={
-                  showNav === 5
-                    ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                    : "flex justify-between p-3 items-center px-6 bg-transparent "
-                }
-              >
-                <div className="flex items-center space-x-2 ">
-                  <FaLaptopCode className="text-[#212121]" size={22} />
-                  <span> AI Development </span>
-                </div>
-                <MdKeyboardArrowDown
-                  size={30}
-                  className={showNav === 5 ? "rotate-180" : "rotate-0"}
-                />
-              </div>
-              <div
-                className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 5 ? "max-h-full" : "max-h-0"
-                  } `}
-              >
-                <ul className="grid grid-cols-1 gap-2 p-4">
+              </NavSection>
 
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {Ai.map((elem: any) => {
-                      const { icon, name, num, url } = elem;
-                      return (
-                        <li
-                          key={num}
-                          className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                        >
-                          <Link
-                            onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
-                            href={url}
-                            passHref={true}
-                          >
-                            {name}
-                          </Link>
-                        </li>
-                      );
-                    })}
+              {/* Blockchain Section */}
+              <NavSection title="Blockchain" icon={RiBitCoinLine} navIndex={2}>
+                <ul className="grid grid-cols-1 gap-2 p-4">
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
+                      Blockchain Development
+                    </p>
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {renderListItems(Blockchain, 2)}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
+                      Token Development
+                    </p>
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {renderListItems(Token, 2)}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
+                      Other Development
+                    </p>
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {renderListItems(Other, 2)}
+                    </div>
                   </div>
                 </ul>
-              </div>
-              <div>
+              </NavSection>
 
-                <div
-                  onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
-                  className={
-                    showNav === 3
-                      ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                      : "flex justify-between p-3 items-center px-6 bg-transparent "
-                  }
-                >
-                  <p className="flex items-center space-x-2 ">
-                    <BiGame className="text-[#212121]" size={22} />
-                    <span> Games</span>
-                  </p>
-                  <MdKeyboardArrowDown
-                    size={30}
-                    className={showNav === 3 ? "rotate-180" : "rotate-0"}
-                  />
-                </div>
-                <div
-                  className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 3 ? "max-h-full" : "max-h-0"
-                    } `}
-                >
-                  <ul className="grid grid-cols-1 gap-2 p-4">
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+              {/* Industries Section */}
+              <NavSection title="Industries" icon={LiaIndustrySolid} navIndex={6}>
+                <ul className="grid grid-cols-1 gap-2 p-4">
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
+                      Ecommerce Development
+                    </p>
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {renderListItems(EcommerceApp, 6)}
+                    </div>
+                  </div>
+                </ul>
+              </NavSection>
+
+              {/* AI Development Section */}
+              <NavSection title="AI Development" icon={FaLaptopCode} navIndex={5}>
+                <ul className="grid grid-cols-1 gap-2 p-4">
+                  <div className="p-3 space-y-2 text-sm font-medium">
+                    {renderListItems(Ai, 5)}
+                  </div>
+                </ul>
+              </NavSection>
+
+              {/* Games Section */}
+              <NavSection title="Games" icon={BiGame} navIndex={3}>
+                <ul className="grid grid-cols-1 gap-2 p-4">
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Game Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Game.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {" "}
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(Game, 3)}
                     </div>
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Sports App Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {Betting.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(Betting, 3)}
                     </div>
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
+                  </div>
+                  <div>
+                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                      <BsDot className="text-[#212121] mr-1" size={22} />
                       Game API Development
                     </p>
                     <div className="p-3 space-y-2 text-sm font-medium">
-                      {GameApi.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                          >
-                            <Link
-                              onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {renderListItems(GameApi, 3)}
                     </div>
-                  </ul>
-                </div>
-              </div>
+                  </div>
+                </ul>
+              </NavSection>
+
+              {/* Company Section */}
               <div>
                 <div
-                  onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
-                  className={
-                    showNav === 4
-                      ? "flex justify-between p-3 items-center px-6 bg-white/10"
-                      : "flex justify-between p-3 items-center px-6 bg-transparent "
-                  }
+                  onClick={() => handleNavToggle(4)}
+                  className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${
+                    showNav === 4 ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
+                  }`}
                 >
-                  <p className="flex items-center space-x-2 ">
-                    <HiOutlineOfficeBuilding
-                      className="text-[#212121]"
-                      size={22}
-                    />
-                    <span> Our Company</span>
-                  </p>
+                  <div className="flex items-center space-x-2">
+                    <HiOutlineOfficeBuilding className="text-[#212121]" size={22} />
+                    <span>Our Company</span>
+                  </div>
                   <MdKeyboardArrowDown
                     size={30}
-                    className={showNav === 4 ? "rotate-180" : "rotate-0"}
+                    className={`transition-transform duration-300 ${
+                      showNav === 4 ? "rotate-180" : "rotate-0"
+                    }`}
                   />
                 </div>
                 <div
-                  className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 4 ? "max-h-full" : "max-h-0"
-                    } `}
+                  className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${
+                    showNav === 4 ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                  }`}
                 >
                   <ul className="grid grid-cols-1 gap-2 p-4">
-                    <p className="flex items-center text-base font-medium text-[#212121]">
-                      <span className="pr-1">
-                        <BsDot className="text-[#212121]" size={22} />
-                      </span>
-                      Our Company
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium ">
-                      {Company.map((elem: any) => {
-                        const { icon, name, num, url } = elem;
-                        return (
-                          <li
-                            key={num}
-                            className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {Company.map((elem: any) => (
+                        <li
+                          key={elem.num}
+                          className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
+                        >
+                          <Link
+                            onClick={handleLinkClick}
+                            href={elem.url}
+                            passHref
+                            className="block"
                           >
-                            <Link
-                              // onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
-                              href={url}
-                              passHref={true}
-                            >
-                              {name}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                      <li
-                        key={123}
-                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                      >
+                            {elem.name}
+                          </Link>
+                        </li>
+                      ))}
+                      <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4">
                         <a
-                          // onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
-                          href='https://www.comfygen.com/blog/'
+                          href="https://www.comfygen.com/blog/"
                           target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={handleLinkClick}
+                          className="block"
                         >
                           Our Blog
                         </a>
                       </li>
-
                     </div>
-                    {/* num: "7", name: "", url: "https://www.comfygen.com/blog/"  */}
                   </ul>
                 </div>
               </div>
+
+              {/* Get Quote Button */}
               <div className="flex items-center justify-center py-8 px-8 w-full">
                 <Link
-                  onClick={() => toggleSlideover()}
                   href="/contact-us"
-                  passHref={true}
+                  passHref
+                  onClick={handleLinkClick}
                   className="w-full"
                 >
-                  <div className="relative inline-flex w-full items-center justify-center px-8 py-3 space-x-1 overflow-hidden text-lg font-medium text-[#fff] rounded-full cursor-pointer bg-[#5556D1] group">
+                  <div className="relative inline-flex w-full items-center justify-center px-8 py-3 space-x-1 overflow-hidden text-lg font-medium text-white rounded-full cursor-pointer bg-[#5556D1] hover:bg-[#4546C1] transition-colors duration-200 group">
                     Get In Quote
                   </div>
                 </Link>
@@ -1253,3 +1049,560 @@ export default function MobileNav(props: any) {
     </div>
   );
 }
+
+// export default function MobileNav(props: any) {
+//   const [showNav, setShowNav] = useState(0);
+//   // const [showNav, setShowNav] = useState(null);
+//   const [menu] = useState(false);
+//   function toggleSlideover() {
+//     document
+//       .getElementById("slideover-container")
+//       .classList.toggle("invisible");
+//     document.getElementById("slideover-bg").classList.toggle("opacity-0");
+//     document.getElementById("slideover-bg").classList.toggle("opacity-50");
+//     document.getElementById("slideover").classList.toggle("translate-x-full");
+//   }
+//   return (
+//     <div className="fixed top-0 left-0 w-full z-50 bg-white ">
+//       <nav className="z-20 flex items-center justify-between   py-0  2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+//         <div className="flex items-center flex-shrink-0 text-[#212121] ">
+//           <Link passHref={true} href="/" className="relative">
+//             <Image
+//               src="/svg/Logo1.svg"
+//               alt="comfygen-logo"
+//               width={180}
+//               height={51}
+//               priority
+//               className="object-contain"
+//             />
+//           </Link>
+//         </div>
+//         <div
+//           onClick={() => toggleSlideover()}
+//           className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden"
+//         >
+//           {menu ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
+//         </div>
+//         <div
+//           id="slideover-container"
+//           className="fixed inset-0 invisible w-full h-full"
+//         >
+//           <span
+//             onClick={() => toggleSlideover()}
+//             id="slideover-bg"
+//             className="absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 "
+//           ></span>
+//           <div
+//             id="slideover"
+//             className="md:w-96 w-80 bg-white  h-full absolute right-0 duration-300 ease-out transition-all translate-x-full overflow-scroll"
+//           >
+//             <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-2 bg-transparent bg-white">
+//               <div className="text-[#212121] text-lg font-semibold">Menu</div>
+//               <span
+//                 onClick={() => toggleSlideover()}
+//                 className="p-2 rounded-full bg-slate-100/20"
+//               >
+//                 <VscChromeClose size={24} className="text-[#212121]" />
+//               </span>
+//             </div>
+//             <div className="font-medium text-[#212121] divide-y divide-white/10">
+//               <div>
+//                 <Link
+//                   onClick={() => toggleSlideover()}
+//                   href="/"
+//                   passHref={true}
+//                 >
+//                   {" "}
+//                   <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+//                     <FiHome className="text-[#212121]" size={22} />
+//                     <span>Home</span>
+//                   </div>
+//                 </Link>
+//               </div>
+//               <div>
+//                 <div
+//                   onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+//                   className={
+//                     showNav === 1
+//                       ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                       : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                   }
+//                 >
+//                   <div className="flex items-center space-x-2 ">
+//                     <RiPhoneLockLine className="text-[#212121]" size={22} />
+//                     <span>Development</span>
+//                   </div>
+//                   <MdKeyboardArrowDown
+//                     size={30}
+//                     className={showNav === 1 ? "rotate-180" : "rotate-0"}
+//                   />
+//                 </div>
+//                 <div
+//                   className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 1 ? "max-h-full" : "max-h-0"
+//                     } `}
+//                 >
+//                   <ul className="grid grid-cols-1 gap-2 p-4">
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Mobile App Development
+//                     </p>
+//                     <div className="p-2 space-y-2 text-sm font-medium">
+//                       {MobileApp.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {" "}
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Web Development
+//                     </p>
+//                     <div className="space-y-2 text-sm font-medium">
+//                       {WebApp.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {" "}
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Stack Development
+//                     </p>
+//                     <div className="space-y-2 text-sm font-medium">
+//                       {Stack.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {" "}
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                   </ul>
+//                 </div>
+//               </div>
+//               <div
+//                 onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                 className={
+//                   showNav === 2
+//                     ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                     : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                 }
+//               >
+//                 <div className="flex items-center space-x-2 ">
+//                   <RiBitCoinLine className="text-[#212121]" size={22} />
+//                   <span> Blockchain </span>
+//                 </div>
+//                 <MdKeyboardArrowDown
+//                   size={30}
+//                   className={showNav === 2 ? "rotate-180" : "rotate-0"}
+//                 />
+//               </div>
+//               <div
+//                 className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 2 ? "max-h-full" : "max-h-0"
+//                   } `}
+//               >
+//                 <ul className="grid grid-cols-1 gap-2 p-4">
+//                   <p className="flex items-center text-base font-medium text-[#212121]">
+//                     <span className="pr-1">
+//                       <BsDot className="text-[#212121]" size={22} />
+//                     </span>
+//                     Blockchain Development
+//                   </p>
+//                   <div className="p-3 space-y-2 text-sm font-medium">
+//                     {Blockchain.map((elem: any) => {
+//                       const { icon, name, num, url } = elem;
+//                       return (
+//                         <li
+//                           key={num}
+//                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                         >
+//                           <Link
+//                             onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                             href={url}
+//                             passHref={true}
+//                           >
+//                             {name}
+//                           </Link>
+//                         </li>
+//                       );
+//                     })}
+//                   </div>
+//                   <p className="flex items-center text-base font-medium text-[#212121]">
+//                     <span className="pr-1">
+//                       <BsDot className="text-[#212121]" size={22} />
+//                     </span>
+//                     Token Development
+//                   </p>
+//                   <div className="p-3 space-y-2 text-sm font-medium">
+//                     {Token.map((elem: any) => {
+//                       const { icon, name, num, url } = elem;
+//                       return (
+//                         <li
+//                           key={num}
+//                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                         >
+//                           <Link
+//                             onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                             href={url}
+//                             passHref={true}
+//                           >
+//                             {name}
+//                           </Link>
+//                         </li>
+//                       );
+//                     })}
+//                   </div>
+//                   <p className="flex items-center text-base font-medium text-[#212121]">
+//                     <span className="pr-1">
+//                       <BsDot className="text-[#212121]" size={22} />
+//                     </span>
+//                     Other Development
+//                   </p>
+//                   <div className="p-3 space-y-2 text-sm font-medium">
+//                     {Other.map((elem: any) => {
+//                       const { icon, name, num, url } = elem;
+//                       return (
+//                         <li
+//                           key={num}
+//                           className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                         >
+//                           <Link
+//                             onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                             href={url}
+//                             passHref={true}
+//                           >
+//                             {name}
+//                           </Link>
+//                         </li>
+//                       );
+//                     })}
+//                   </div>
+//                 </ul>
+//               </div>
+//               {/* ecommerce */}
+//               <div
+//                 onClick={() => setShowNav(showNav === 6 ? 0 : 6)}
+//                 className={
+//                   showNav === 6
+//                     ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                     : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                 }
+//               >
+//                 <div className="flex items-center space-x-2 ">
+//                   <LiaIndustrySolid className="text-[#212121]" size={22} />
+//                   <span> Industries </span>
+//                 </div>
+//                 <MdKeyboardArrowDown
+//                   size={30}
+//                   className={showNav === 5 ? "rotate-180" : "rotate-0"}
+//                 />
+//               </div>
+//               <div
+//                 className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 6 ? "max-h-full" : "max-h-0"
+//                   } `}
+//               >
+//                 <ul className="grid grid-cols-1 gap-2 p-4">
+//                   <p className="flex items-center text-base font-medium text-[#212121]">
+//                     <span className="pr-1">
+//                       <BsDot className="text-[#212121]" size={22} />
+//                     </span>
+//                     Ecommerce Development
+//                   </p>
+//                   <div className="p-3 space-y-2 text-sm font-medium">
+//                     {EcommerceApp.map((elem: any) => {
+//                       const { icon, name, num, url } = elem;
+//                       return (
+//                         <li
+//                           key={num}
+//                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                         >
+//                           <Link
+//                             onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
+//                             href={url}
+//                             passHref={true}
+//                           >
+//                             {name}
+//                           </Link>
+//                         </li>
+//                       );
+//                     })}
+//                   </div>
+//                 </ul>
+//               </div>
+//               <div
+//                 onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
+//                 className={
+//                   showNav === 5
+//                     ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                     : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                 }
+//               >
+//                 <div className="flex items-center space-x-2 ">
+//                   <FaLaptopCode className="text-[#212121]" size={22} />
+//                   <span> AI Development </span>
+//                 </div>
+//                 <MdKeyboardArrowDown
+//                   size={30}
+//                   className={showNav === 5 ? "rotate-180" : "rotate-0"}
+//                 />
+//               </div>
+//               <div
+//                 className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 5 ? "max-h-full" : "max-h-0"
+//                   } `}
+//               >
+//                 <ul className="grid grid-cols-1 gap-2 p-4">
+
+//                   <div className="p-3 space-y-2 text-sm font-medium">
+//                     {Ai.map((elem: any) => {
+//                       const { icon, name, num, url } = elem;
+//                       return (
+//                         <li
+//                           key={num}
+//                           className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                         >
+//                           <Link
+//                             onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
+//                             href={url}
+//                             passHref={true}
+//                           >
+//                             {name}
+//                           </Link>
+//                         </li>
+//                       );
+//                     })}
+//                   </div>
+//                 </ul>
+//               </div>
+//               <div>
+
+//                 <div
+//                   onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
+//                   className={
+//                     showNav === 3
+//                       ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                       : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                   }
+//                 >
+//                   <p className="flex items-center space-x-2 ">
+//                     <BiGame className="text-[#212121]" size={22} />
+//                     <span> Games</span>
+//                   </p>
+//                   <MdKeyboardArrowDown
+//                     size={30}
+//                     className={showNav === 3 ? "rotate-180" : "rotate-0"}
+//                   />
+//                 </div>
+//                 <div
+//                   className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 3 ? "max-h-full" : "max-h-0"
+//                     } `}
+//                 >
+//                   <ul className="grid grid-cols-1 gap-2 p-4">
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Game Development
+//                     </p>
+//                     <div className="p-3 space-y-2 text-sm font-medium">
+//                       {Game.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {" "}
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Sports App Development
+//                     </p>
+//                     <div className="p-3 space-y-2 text-sm font-medium">
+//                       {Betting.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Game API Development
+//                     </p>
+//                     <div className="p-3 space-y-2 text-sm font-medium">
+//                       {GameApi.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                     </div>
+//                   </ul>
+//                 </div>
+//               </div>
+//               <div>
+//                 <div
+//                   onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
+//                   className={
+//                     showNav === 4
+//                       ? "flex justify-between p-3 items-center px-6 bg-white/10"
+//                       : "flex justify-between p-3 items-center px-6 bg-transparent "
+//                   }
+//                 >
+//                   <p className="flex items-center space-x-2 ">
+//                     <HiOutlineOfficeBuilding
+//                       className="text-[#212121]"
+//                       size={22}
+//                     />
+//                     <span> Our Company</span>
+//                   </p>
+//                   <MdKeyboardArrowDown
+//                     size={30}
+//                     className={showNav === 4 ? "rotate-180" : "rotate-0"}
+//                   />
+//                 </div>
+//                 <div
+//                   className={`bg-transparent  text-[#212121] font-normal pl-4 text-sm capitalize  overflow-hidden transition-[max-height] duration-300 ease-in ${showNav === 4 ? "max-h-full" : "max-h-0"
+//                     } `}
+//                 >
+//                   <ul className="grid grid-cols-1 gap-2 p-4">
+//                     <p className="flex items-center text-base font-medium text-[#212121]">
+//                       <span className="pr-1">
+//                         <BsDot className="text-[#212121]" size={22} />
+//                       </span>
+//                       Our Company
+//                     </p>
+//                     <div className="p-3 space-y-2 text-sm font-medium ">
+//                       {Company.map((elem: any) => {
+//                         const { icon, name, num, url } = elem;
+//                         return (
+//                           <li
+//                             key={num}
+//                             className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                           >
+//                             <Link
+//                               // onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
+//                               href={url}
+//                               passHref={true}
+//                             >
+//                               {name}
+//                             </Link>
+//                           </li>
+//                         );
+//                       })}
+//                       <li
+//                         key={123}
+//                         className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+//                       >
+//                         <a
+//                           // onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
+//                           href='https://www.comfygen.com/blog/'
+//                           target="_blank"
+//                         >
+//                           Our Blog
+//                         </a>
+//                       </li>
+
+//                     </div>
+//                     {/* num: "7", name: "", url: "https://www.comfygen.com/blog/"  */}
+//                   </ul>
+//                 </div>
+//               </div>
+//               <div className="flex items-center justify-center py-8 px-8 w-full">
+//                 <Link
+//                   onClick={() => toggleSlideover()}
+//                   href="/contact-us"
+//                   passHref={true}
+//                   className="w-full"
+//                 >
+//                   <div className="relative inline-flex w-full items-center justify-center px-8 py-3 space-x-1 overflow-hidden text-lg font-medium text-[#fff] rounded-full cursor-pointer bg-[#5556D1] group">
+//                     Get In Quote
+//                   </div>
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// }

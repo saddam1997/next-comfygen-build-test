@@ -1,4 +1,26 @@
 {
+  "customTestimonials": [
+    {
+      "text": "We hired Comfygen to build our eCommerce app. The design, performance, and support exceeded expectations. They’re a reliable partner for any serious brand looking to scale digitally.",
+      "name": "Jessica Moore",
+      "title": "Texas, USA"
+    },
+    {
+      "text": "Comfygen delivered a top-notch UPI payment app with seamless integration and exceptional security. Their developers ensured that every detail was handled professionally, making our app ready for the market. Highly recommended for anyone looking to build a secure and reliable UPI app!",
+      "name": "Rajesh Kumar",
+      "title": "India"
+    },
+    {
+      "text": "We hired Comfygen to build a fleet management app, and they delivered beyond expectations. The UI was smooth, the backend was powerful, and the team was highly professional throughout the project.",
+      "name": "Jessica Turner",
+      "title": "USA"
+    },
+    {
+    "text": "We hired Comfygen to develop a crypto wallet, and they truly delivered. The wallet is secure, easy to use, and integrates perfectly with our existing systems. It’s a reliable solution, and we’ve seen an increase in user adoption.",
+    "name": "Sophia Zhang",
+    "title": "China"
+    }
+  ],
   "IndustriesServe": [
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
@@ -92,7 +114,6 @@
       "desc": "We are the leading custom mobile app development company; that ensures for app’s post-deployment support and maintenance. The service includes issue management and response, automated backups, regular performance, security enhancement, comprehensive support post-deployment, etc. Our team takes full responsibility for the ongoing performance maintenance of the application. "
     }
   ],
-
   "CryptoAltcoin": [
     {
       "img": "https://www.comfygen.com/img/crypto-token=-development.webp",
@@ -373,7 +394,6 @@
         "<a href='https://www.comfygen.com/generative-ai-development' class='underline'>Generative AI Development Solutions</a>"
       ]
     },
-
     {
       "title": "Mobile App Development",
       "subtitle": "",
@@ -409,7 +429,6 @@
         "<a href='https://www.comfygen.com/nft-wallet-development' class='underline'>NFTs Development</a>",
         "<a href='https://www.comfygen.com/defi-wallet-development' class='underline'>Defi Development</a>",
         "<a href='https://www.comfygen.com/wallet-development-company' class='underline'>Wallet Development</a>"
-     
       ]
     },
     {
@@ -507,7 +526,6 @@
         "<a href='https://www.comfygen.com/data/sales-dashboard' class='underline'>Sales Performance Dashboard</a>"
       ]
     }
-    
   ],
   "pageData": {
     "title": "Why Choose Us?",

@@ -5,6 +5,7 @@ import { TbX } from "react-icons/tb";
 // import ContactFrom from "./ContactFrom";
 import dynamic from "next/dynamic";
 const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
+import { Target, Award, Users, Zap } from 'lucide-react';
 
 export default function HeroSection(props: any) {
   // const [isMobile, setIsMobile] = useState(false);
@@ -57,6 +58,30 @@ export default function HeroSection(props: any) {
     return () => clearTimeout(timeout);
   }, [currentWordIndex, typedText, words]);
 
+
+
+  const stats = [
+    {
+      img: "/expreinces.webp",
+      value: '700+',
+      label: 'Projects Delivered',
+      color: 'text-orange-500'
+    },
+    {
+      img: "/project-home.webp",
+      value: '6+',
+      label: 'Years Experience',
+      color: 'text-orange-500'
+    },
+    {
+      img: "/motivation.png",
+      value: '95%',
+      label: 'Client Happy',
+      color: 'text-orange-500'
+    },
+ 
+  ];
+
   return (
     <section
       className={`relative bg-no-repeat bg-cover ${isMobile ? "bg-left" : "lg:bg-center"}`}
@@ -104,7 +129,7 @@ export default function HeroSection(props: any) {
           </div>
 
           {/* Optimized stat cards with preloaded icons */}
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">
+          <div className="hidden sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
               <div className="h-8 w-8">
                 <Image
@@ -152,6 +177,45 @@ export default function HeroSection(props: any) {
               <p className="font-semibold text-[#000] text-base">
                 100+ Total Happy Client
               </p>
+            </div>
+          </div>
+
+
+
+          <div className="py-2 sm:hidden flex items-center justify-center ">
+            <div className="max-w-full w-full">
+              <div className="grid grid-cols-3 gap-4 items-center">
+                {stats.map((stat, index) => {
+                  const Icon = stat.img;
+                  return (
+                    <div
+                      key={index}
+                      className="text-white  rounded-2xl p-2 "
+                    >
+                      <div className="flex rounded-md border p-4 bg-white  flex-col items-center text-center space-y-1">
+                        <div className={` rounded-full`}>
+                          {/* <Icon size={32} strokeWidth={2} /> */}
+                          <Image
+                            alt="Happy Clients Icon"
+                            src={Icon}
+                            height={32}
+                            width={32}
+                            quality={70}
+                            loading="eager"
+                            className="w-12 h-12 rounded-full object-contain "
+                          />
+                        </div>
+                        <h3 className="text-sm font-bold text-black">
+                          {stat.value}
+                        </h3>
+                        <p className="text-black font-medium text-xs">
+                          {stat.label}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 

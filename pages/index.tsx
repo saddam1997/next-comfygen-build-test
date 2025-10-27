@@ -450,8 +450,12 @@ export default function Home(props: any) {
             "Cutting-edge technologies to ensure success"
           ]}
         />
+        <ClientTestimonials
+          heading="Client Testimonial"
+          testimonials={JSON_DATA.customTestimonials}
+        />
 
-        <ClientTestimonials />
+        {/* <ClientTestimonials /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"

@@ -4,6 +4,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import LazyLoad from "react-lazy-load";
 import Image from 'next/image';
 
+
 const HireDeveloper = ({
     heading = "",
     text = "",
@@ -53,7 +54,7 @@ const HireDeveloper = ({
                     <div className="lg:w-[40%] w-full mx-auto flex justify-center items-end lg:mt-0 mt-5">
                         <LazyLoad>
                             <Image
-                                className="w-full"
+                                className="w-full hidden sm:block"
                                 src={imageSrc}
                                 alt={imageAlt}
                                 width={907}

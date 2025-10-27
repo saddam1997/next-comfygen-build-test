@@ -34,7 +34,7 @@ const CallToAction = ({
                     <div className="lg:w-[30%] w-full mx-auto flex justify-center lg:mt-0 mt-5">
                         <LazyLoad>
                             <Image
-                                className="action-img"
+                                className="action-img hidden sm:block"
                                 src={imageSrc}
                                 alt={imageAlt || "Call to Action"}
                                 width={800}
