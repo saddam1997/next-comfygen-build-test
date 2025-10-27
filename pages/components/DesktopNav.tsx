@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import {
   MdKeyboardArrowDown,
@@ -1051,20 +1051,32 @@ const cryptoDevelopment1 = [
 export default function DesktopNav(props: any) {
   const [activeTab, setActiveTab] = useState("Tab1");
   // Function to handle tab click
-  const handleTabClick = (tab) => {
+  const handleTabClick = useCallback((tab: any) => {
     setActiveTab(tab);
-  };
+  }, []);
 
   const [showNav, setShowNav] = useState(0);
   const [menu] = useState(false);
-  function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
+  const toggleSlideover = useCallback(() => {
+    const container = document.getElementById("slideover-container");
+    const bg = document.getElementById("slideover-bg");
+    const panel = document.getElementById("slideover");
+
+    if (!container || !bg || !panel) return;
+
+    container.classList.toggle("invisible");
+    bg.classList.toggle("opacity-0");
+    bg.classList.toggle("opacity-50");
+    panel.classList.toggle("translate-x-full");
+  }, []);
+  // function toggleSlideover() {
+  //   document
+  //     .getElementById("slideover-container")
+  //     .classList.toggle("invisible");
+  //   document.getElementById("slideover-bg").classList.toggle("opacity-0");
+  //   document.getElementById("slideover-bg").classList.toggle("opacity-50");
+  //   document.getElementById("slideover").classList.toggle("translate-x-full");
+  // }
 
   useEffect(() => {
     $(window).on("scroll", function () {
