@@ -2,26 +2,19 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-// import ProcessSec from "./components/ProcessSec";
-// import IndustriesServe from "./components/IndustriesServe";
-// import TechStack from "./components/TechStack";
-// import Faq from "./components/Faq";
-// import FormSec from "./components/FormSec";
-// import ClientTestimonials from "./components/ClientTestimonials";
-// import ServicesSec from "./components/ServicesSec";
-// import CallToAction from "./components/CallToAction";
-// import HireDeveloper from "./components/HireDeveloper";
-
-
 // Lazy load all major components
-const Header = dynamic(() => import("./components/Header"), {
-  loading: () => <div className="h-20 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+import Header from "./components/Header";
+import HeroSectionHomePage from "./components/HeroSectionHomePage";
 
-const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), {
-  loading: () => <div className="h-screen bg-gray-200 animate-pulse" />,
-});
+
+// const Header = dynamic(() => import("./components/Header"), {
+//   loading: () => <div className="h-20 bg-gray-100 animate-pulse" />,
+//   ssr: true,
+// });
+
+// const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), {
+//   loading: () => <div className="h-screen bg-gray-200 animate-pulse" />,
+// });
 
 const AboutSection = dynamic(() => import("./components/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -513,7 +506,8 @@ export async function getStaticProps() {
 
   return {
     props: { initialData: data },
-    revalidate: 10, // Revalidate data every 10 seconds
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
   };
 }
 

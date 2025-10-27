@@ -156,7 +156,7 @@ export default function HeroSection(props: any) {
           </div>
 
           <div className="mt-2">
-            <Link href="" passHref={true}>
+            <Link href="#" passHref={true}>
               <button
                 className="btn btn-fix lazyloaded"
                 onClick={props.openModal}

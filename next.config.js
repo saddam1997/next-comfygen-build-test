@@ -36,7 +36,6 @@ module.exports = withBundleAnalyzer({
   },
   reactStrictMode: true,
 
-
   images: {
     // domains: ['http://localhost:1225'],
     remotePatterns: [
