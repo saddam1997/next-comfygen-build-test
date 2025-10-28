@@ -104,7 +104,7 @@ const Features: React.FC = () => {
         {openedFeature && (
           <div className="mt-6 p-4 grid grid-cols-1 md:grid-cols-2 mx-auto  2xl:w-10/12 w-10/12 lg:w-11/12 items-center">
             {openedFeature.img && (
-              <div className="mb-4 flex mx-auto ">
+              <div className="hidden mb-4 lg:flex mx-auto">
                 <Image
                   src={openedFeature.img}
                   alt={openedFeature.title}

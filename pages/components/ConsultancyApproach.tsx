@@ -28,7 +28,7 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                                         sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 754px"
                                         placeholder="blur"
                                         blurDataURL="data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA="
-                                        className="rounded-md w-full h-auto object-contain"
+                                        className="hidden sm:block rounded-md w-full h-auto object-contain"
                                         priority={elem.isHeroImage} // only if above the fold
                                     />
                                     {/* <Image

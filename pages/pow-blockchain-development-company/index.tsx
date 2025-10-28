@@ -1,24 +1,18 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/pow.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import LinkTagButton from "../components/button/LinkTagButton";
-import BlueButton from "../components/button/BlueButton";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import InfoSectionRight from "../components/InfoSectionRight";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconApps, IconBrain, IconBriefcase, IconChisel, IconCloud, IconCode, IconCurrencyBitcoin, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode, IconFirstAidKit, IconMessage, IconNews, IconReportSearch, IconSettings, IconSignal5g } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode,  IconSettings, } from '@tabler/icons-react';
+
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
@@ -674,7 +668,7 @@ export default function Ecommerce(props) {
           description1="The foremost advantage of the POW blockchain development solution revolves around creating blockchain solutions that could manage significantly confidential information."
           description2="Proof of Work blockchains prioritize the elements of privacy, security, and scalability. With a trusted Proof of Work blockchain development company at your side, you can develop web3 solutions and apps for your business."
           description3="On top of it, the fast pace of changes in the blockchain industry requires precision, scalability, and efficiency to support the growth of your business."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/pow-blockchain-development-company/pow-blockchain-development-companyabout.webp"
           link="/about-us"
           linkText="Explore More"
         />
