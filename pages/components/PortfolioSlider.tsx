@@ -44,7 +44,7 @@ function PortfolioSec({
   };
 
   return (
-    <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+    <section className="lg:py-16 py-10 bg-[#F5F5F9] mt-8">
       <div className="slider-container">
         <div className="mx-auto max-w-[1600px]  px-6 lg:px-8 w-full">
           <div className="text-center mb-10">

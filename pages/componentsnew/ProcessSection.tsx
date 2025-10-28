@@ -18,7 +18,7 @@ const ProcessSection: React.FC<ICODetailsSectionProps> = ({
   processSlides
 }) => {
   return (
-    <section className="bg-[#F5F5F9] lg:py-16 py-10">
+    <section className="bg-[#F5F5F9] lg:py-16 py-10 mt-8">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
         <div className="text-center space-y-1">
           <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">

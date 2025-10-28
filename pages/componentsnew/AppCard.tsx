@@ -18,10 +18,10 @@ const AppCard = ({ title, cards, subtitle, openModal }) => {
       ></h2>
 
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 m-6 lg:m-0">
-        {cards?.slice(0, visibleCount).map((card, index) => (
+        {cards?.slice(0, visibleCount).map((card:any, index:any) => (
           <div
             key={index}
-            className="flex flex-col max-w-8xl 2xl:flex-row bg-white rounded-3xl border-2 border-gray-300 overflow-hidden min-h-[360px]"
+            className="flex flex-col items-center max-w-8xl 2xl:flex-row bg-white rounded-3xl border-2 border-gray-300 overflow-hidden min-h-[360px]"
           >
             {/* Image Section */}
             <div className="w-full 2xl:w-1/2 p-4 flex justify-center">

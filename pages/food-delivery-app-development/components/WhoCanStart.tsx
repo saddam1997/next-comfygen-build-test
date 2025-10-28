@@ -15,18 +15,18 @@ interface Props {
 
 const WhoCanStart: React.FC<Props> = ({ title, description, cards }) => {
   return (
-    <div className="bg-gray-200 max-w-9xl">
+    <div className="bg-[#5556D1] max-w-9xl mt-8">
       <div className="py-10 px-4 max-w-6xl mx-auto ">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-bold mb-4">{title}</h1>
-          <p className="">{description}</p>
+          <h1 className="text-3xl font-bold mb-4 text-white">{title}</h1>
+          <p className="text-white">{description}</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-[1px] bg-white">
           {cards?.map((card, index) => (
             <div
               key={index}
-              className="p-6 border rounded-lg transition-all duration-300 hover:bg-[#5556D1] hover:text-white cursor-pointer shadow-xl"
+              className="bg-[#5556D1] text-white cursor-pointer p-8  flex flex-col justify-start transition-all duration-300 hover:bg-[#0f0f0f]"
             >
               <h2 className="text-xl font-semibold mb-2">{card.heading}</h2>
               <p

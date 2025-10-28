@@ -341,7 +341,7 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-technologies",
         "https://www.comfygen.com/"
       ]
-    } ,
+    },
 
 
 
@@ -543,7 +543,7 @@ export default function Ecommerce(props) {
         <meta property="og:locale:alternate" content="en_AE" />
         <meta
           property="og:url"
-         content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet-development.webp"
+          content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet.webp"
         />
         <meta
           property="og:title"
@@ -553,21 +553,10 @@ export default function Ecommerce(props) {
           property="og:description"
           content="Comfygen’s white label cryptocurrency wallet development services. Multi-currency support, NFT integration, DeFi features, and fast deployment for startups, fintechs, exchanges, and enterprises."
         />
-        {/* <meta
-          property="og:image"
-          content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet-development.webp"
-        /> */}
-        {/* <meta
-          property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet-development.webp"
-        /> */}
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        {/* <meta
-          property="og:image:alt"
-          content="White Label Cryptocurrency Wallet Development | Comfygen"
-        /> */}
+
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -590,7 +579,7 @@ export default function Ecommerce(props) {
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/white-label-cryptocurrency-wallet.webp" />
         <meta property="og:image:alt" content="White Label Cryptocurrency Wallet Development" />
-    
+
         <meta property="og:title" content="White Label Cryptocurrency Wallet Development | Comfygen" />
         <meta property="og:description" content="Comfygen’s white label cryptocurrency wallet development services. Multi-currency support, NFT integration, DeFi features, and fast deployment for startups, fintechs, exchanges, and enterprises." />
 

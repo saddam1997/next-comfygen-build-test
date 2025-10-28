@@ -12,6 +12,9 @@ import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import IndustriesServe from "../components/IndustriesServe";
+// import AppcardSlider from "../components/AppcardSlider";
+
+
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
@@ -30,9 +33,13 @@ import WhoCanStart from "./components/WhoCanStart";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
+
+
+const AppcardSlider = dynamic(() => import("../components/AppcardSlider"), {
+  loading: () => <p>Loading...</p>,
+});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -40,94 +47,98 @@ const ContactFromCenter = dynamic(
   }
 );
 
+const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+});
+
 
 const Process = [
   {
     title: " Discovery and Ideation",
     description:
-      "We start with comprehensive market research and close collaboration with stakeholders to define business goals, target audience, and essential features. This stage allows us to create a clear roadmap for your on-demand food delivery app development project, ensuring it meets your specific business needs.",
+      "We begin with detailed research and brainstorming to define goals, target audience, and features—ensuring your food delivery app development aligns perfectly with your business vision.",
   },
   {
     title: "Design and Prototyping",
     description:
-      "Our creative <a class='text-blue-600' href='https://www.comfygen.com/web-design'>UI/UX designers</a> craft interactive prototypes and intuitive wireframes that reflect your brand identity. By focusing on engagement and usability, we ensure your food delivery app development services deliver a visually appealing and seamless user experience.",
+      "Our expert <a href='https://www.comfygen.com/web-design' class='text-blue-500'>UI/UX designers</a> create engaging prototypes and user-friendly interfaces for a seamless experience. Every design enhances brand identity and boosts user satisfaction.",
   },
   {
     title: "Development",
     description:
-      "Using the latest technology stack, we build scalable food delivery apps, from single-restaurant solutions to complex multi-restaurant platforms. Features include real-time order tracking, secure payment gateways, and a robust backend to support smooth operations.",
+      "We build scalable food delivery mobile apps using the latest technology stack, integrating features like real-time tracking, multiple restaurant support, and secure payment systems.",
   },
   {
     title: "Testing and Quality Assurance",
     description:
-      "Our QA team conducts rigorous testing to ensure your food delivery mobile app development services is bug-free and high-performing. Functional, security, and performance testing guarantee reliability and a flawless experience for users.",
+      "Our QA experts conduct end-to-end testing to ensure your food delivery app development services are error-free, secure, and optimized for top-notch performance.",
   },
   {
     title: "Deployment",
     description:
-      "We manage the full deployment across iOS and Android, ensuring compliance with app store guidelines. With our food delivery app development services, your app launches smoothly and is optimized for maximum visibility and downloads.",
+      "We handle app store submissions and ensure smooth deployment on iOS and Android platforms for a flawless food delivery app launch experience.",
   },
   {
     title: "Analytics and Performance Optimization",
     description:
-      "After launch, we provide detailed analytics to monitor performance, user behavior, and engagement. This data-driven approach allows us to optimize your on-demand food delivery app development for growth and long-term success.",
+      "After launch, we use analytics to measure app performance and user engagement, continuously optimizing your on-demand food delivery app development for better ROI.",
   },
   {
     title: "Post-Launch Support",
     description:
-      "We offer dedicated post-launch support, including regular updates, bug fixes, and new feature integration. Our food delivery mobile app development company make sure your app remains competitive and relevant in the dynamic food tech industry.",
+      "As a trusted food delivery app development organization, we provide continuous maintenance, updates, and feature enhancements to keep your app competitive and user-focused.",
   },
 ];
-const CardClone = [
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
-    title: "UberEats Clone App",
-    description:
-      "Our UberEats clone app development helps you launch a robust food delivery platform quickly. Designed with modern features, it supports multiple restaurants and efficient delivery management.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
-    title: "Zomato Clone App",
-    description:
-      "With our Zomato clone app, you can create a food delivery and restaurant discovery platform that connects customers with multiple eateries. Perfect for startups aiming to replicate Zomato’s success.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
-    title: "Swiggy Clone App",
-    description:
-      "Our Swiggy clone app development offers a ready-to-launch solution with advanced features for food ordering and delivery. Scalable and customizable, it ensures high performance for businesses of all sizes.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
-    title: "DoorDash Clone App",
-    description:
-      "Build a powerful delivery platform with our DoorDash clone app, designed for businesses seeking to efficiently manage food delivery across multiple regions.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
-    title: "Delhivery Clone App",
-    description:
-      "With our Delhivery clone app, you can create a powerful logistics platform that handles hyperlocal deliveries, reverse logistics, and warehouse automation. It’s ideal for companies looking to scale delivery operations through logistics app development services tailored to the Indian market dynamics.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
-    title: "BlackBuck Clone App",
-    description:
-      "Our BlackBuck-like logistics mobile app solution is built for large-scale freight movement and B2B trucking. We develop logistics platforms similar to BlackBuck, offering digital tools for long-haul transport, fleet coordination, and driver management.",
-    buttonText: "View Demo",
-  },
-];
+// const CardClone = [
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
+//     title: "UberEats Clone App",
+//     description:
+//       "Our UberEats clone app development helps you launch a robust food delivery platform quickly. Designed with modern features, it supports multiple restaurants and efficient delivery management.",
+//     buttonText: "View Demo",
+//   },
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
+//     title: "Zomato Clone App",
+//     description:
+//       "With our Zomato clone app, you can create a food delivery and restaurant discovery platform that connects customers with multiple eateries. Perfect for startups aiming to replicate Zomato’s success.",
+//     buttonText: "View Demo",
+//   },
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
+//     title: "Swiggy Clone App",
+//     description:
+//       "Our Swiggy clone app development offers a ready-to-launch solution with advanced features for food ordering and delivery. Scalable and customizable, it ensures high performance for businesses of all sizes.",
+//     buttonText: "View Demo",
+//   },
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
+//     title: "DoorDash Clone App",
+//     description:
+//       "Build a powerful delivery platform with our DoorDash clone app, designed for businesses seeking to efficiently manage food delivery across multiple regions.",
+//     buttonText: "View Demo",
+//   },
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
+//     title: "Delhivery Clone App",
+//     description:
+//       "With our Delhivery clone app, you can create a powerful logistics platform that handles hyperlocal deliveries, reverse logistics, and warehouse automation. It’s ideal for companies looking to scale delivery operations through logistics app development services tailored to the Indian market dynamics.",
+//     buttonText: "View Demo",
+//   },
+//   {
+//     image:
+//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
+//     title: "BlackBuck Clone App",
+//     description:
+//       "Our BlackBuck-like logistics mobile app solution is built for large-scale freight movement and B2B trucking. We develop logistics platforms similar to BlackBuck, offering digital tools for long-haul transport, fleet coordination, and driver management.",
+//     buttonText: "View Demo",
+//   },
+// ];
 
 const WhoCanStartCards = [
   {
@@ -158,39 +169,23 @@ const WhoCanStartCards = [
 ];
 
 
+const portfoliodata = [
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
-      head: "Food Delivery App – Food 24Hr",
-      name: "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/food-delivery-app"
-    },
-    {
-      img: "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
-      head: "Online Food Ordering App",
-      name: "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/online-food-ordering-app"
-    }
-  ]
-};
+  {
+    "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
+    "title": "Food Delivery App – Food 24Hr",
+    "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
+    "link": "/portfolio/food-delivery-app"
+  },
+
+  {
+    "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
+    "title": "Online Food Ordering App",
+    "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
+    "link": "/portfolio/online-food-ordering-app"
+  },
+  
+]
 
 
 let { AppService } = NEW_JSON_DATA;
@@ -565,22 +560,15 @@ export default function Ecommerce(props) {
           servicesData={JSON_DATA.servicesData}
         />
 
-        <AppCard
-          title="Food Delivery App Clone Solutions We Provide"
-          subtitle="Looking to build a successful food delivery app like the industry leaders? At Comfygen, we provide ready-made food delivery app development solutions that are fully customizable and ready to launch. Our food ordering clone apps replicate the functionality of popular platforms, incorporating advanced features that help startups and enterprises save time and reduce costs as they enter the competitive food delivery market."
-          cards={CardClone}
+        <AppcardSlider
+          heading="Food Delivery App Clone Solutions We Provide"
+          description="Looking to build a successful food delivery app like the industry leaders? At Comfygen, we provide ready-made food delivery app development solutions that are fully customizable and ready to launch. Our food ordering clone apps replicate the functionality of popular platforms, incorporating advanced features that help startups and enterprises save time and reduce costs as they enter the competitive food delivery market."
+          sliderData={JSON_DATA.IndustriesServe}
           openModal={openModal}
         />
 
-
-        {/* <CardItem
-          heading="Food Ordering App Clone Solutions We Provide"
-          subheading="We offer ready-made, fully customizable food ordering app clone solutions that replicate the success of popular platforms like UberEats, Zomato, Swiggy, and DoorDash. Launch your own branded app faster with robust features, scalable architecture, and seamless user experience."
-          techData={JSON_DATA.cardData}
-        /> */}
-
-        <PortfolioSec
-          techData={techDataForPage1}
+        <PortfolioSlider
+          techData={portfoliodata}
           heading="Our Food Ordering Apps Portfolio"
           description="Explore our diverse portfolio of food delivery app development projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations. Partner with us to build a food delivery app that’s fast, reliable, and scalable."
         />
@@ -598,16 +586,11 @@ export default function Ecommerce(props) {
           <Features />
         </section>
 
-        {/* <CoreFeaturesSection
-          title="Advanced Tech We Integrate in Food Delivery App Development"
-          subtitle="At Comfygen, we integrate cutting-edge technologies to build high-performance, scalable, and feature-rich food delivery apps. Our advanced tech makes sure seamless user experience, high-speed performance, and top-notch security for your restaurant app application."
-          features={JSON_DATA.LeadingSoftware}
-        /> */}
 
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <section className="py-10 lg:py-20 bg-[#5556D1] mt-8">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
+              <div className="flex flex-col justify-center text-center  mx-auto py-8">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
                   Advanced Tech We Integrate in Food Delivery App Development
                 </h2>
@@ -615,11 +598,11 @@ export default function Ecommerce(props) {
                   At Comfygen, we integrate cutting-edge technologies to build high-performance, scalable, and feature-rich food delivery apps. Our advanced tech makes sure seamless user experience, high-speed performance, and top-notch security for your restaurant app application.
                 </p>
               </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+              <div className="grid gap-[1px]  text-left lg:grid-cols-2 md:grid-cols-2  bg-white">
                 {JSON_DATA.LeadingSoftware.map((elem) => {
                   const { title, decs } = elem;
                   return (
-                    <div key={title} className={` relative`}>
+                    <div key={title} className={`bg-[#5556D1] transition-all cursor-pointer duration-300 hover:bg-[#0f0f0f] relative p-8`}>
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >

@@ -225,33 +225,33 @@ export default function Ecommerce(props) {
     },
     {
       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Telemedicine App Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Get custom telemedicine app development services with Comfygen. From consultation to development, we deliver secure, innovative solutions tailored to your healthcare needs.",
-  "url": "https://www.comfygen.com/telemedicine-app-development",
-  "mainEntityOfPage": "https://www.comfygen.com/telemedicine-app-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "White label telemedicine app development",
-    "HIPAA-compliant telemedicine app development",
-    "Virtual Doctor App Development",
-    "Custom Telemedicine App Development",
-    "EHR/EMR Systems Integration",
-    "Telemedicine App Development Solutions"
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies"
-    
-  ],
+      "@type": "Service",
+      "name": "Telemedicine App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get custom telemedicine app development services with Comfygen. From consultation to development, we deliver secure, innovative solutions tailored to your healthcare needs.",
+      "url": "https://www.comfygen.com/telemedicine-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/telemedicine-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "White label telemedicine app development",
+        "HIPAA-compliant telemedicine app development",
+        "Virtual Doctor App Development",
+        "Custom Telemedicine App Development",
+        "EHR/EMR Systems Integration",
+        "Telemedicine App Development Solutions"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ],
     },
     {
       "@context": "https://schema.org",
@@ -293,236 +293,238 @@ export default function Ecommerce(props) {
       },
     },
     {
-      "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Telemedicine App Development Services",
-"image":"Hero section image",
-"description":"Looking for reliable telemedicine app development services? Comfygen delivers intuitive, secure, and seamless telehealth solutions for healthcare professionals worldwide.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"498"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Telemedicine App Development Services",
+      "image": "Hero section image",
+      "description": "Looking for reliable telemedicine app development services? Comfygen delivers intuitive, secure, and seamless telehealth solutions for healthcare professionals worldwide.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "498"
+      }
     },
 
-   {
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Home",
-    "item": "https://www.comfygen.com/"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Healthcare App Development",
-    "item": "https://www.comfygen.com/telemedicine-app-development"   
-  }]
-}
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Healthcare App Development",
+        "item": "https://www.comfygen.com/telemedicine-app-development"
+      }]
+    }
   ];
 
   const faqSchema = {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     "mainEntity": [
-  {
-    "@type": "Question",
-    "name": "Can you offer customization for telemedicine apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we offer customization for telemedicine apps according to client preferences and business goals. We account for different factors such as desired functionalities, UI, branding, and add-ons for the customization of telehealth apps."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "I have a legacy telemedicine app. Do you offer app modernization services?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, our telehealth app development company also specializes in telehealth app modernization services. We can help you reinvent your legacy apps and introduce new advantages such as interoperability, enhanced security, and advanced features."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What is the cost of developing a telemedicine app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost of telemedicine app development can vary from $150,000 to $250,000 for a full-fledged app. Other important factors that influence the development cost include the type of telemedicine app, number of user roles, scale and complexity of features, data storage capacity, and scalability goals."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How can I begin developing a telemedicine app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "You can begin a project to develop telemedicine apps by submitting your requirements to us and telling us about your goals. Once you finalize the project scope and requirements, we can start working on your project after completing the formalities."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Who should choose telemedicine solutions?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Our telemedicine app development solutions are tailored for doctors, trainers, physicians, and healthcare businesses. We offer robust telemedicine apps that can help reach more users and effectively manage clinical administration tasks."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Can users upload prescriptions on telemedicine apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, patients and doctors can use our telemedicine apps to upload prescriptions, which can help in easier allocation of pharmacy services. In addition, the flexibility to upload online prescriptions also helps during the consultation process."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Do you design appointment-scheduling apps for doctors and clinics?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Doctors and clinics can leverage our app development expertise to create telemedicine solutions for efficient appointment scheduling. Our telemedicine software apps can also help in easier appointment management and availability marking."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How much time do you take to develop telemedicine apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The time required to develop a telemedicine app can vary between 3 and 6 months, depending on different factors. For example, the number of features and the platforms for developing telemedicine apps can affect the time required for development."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Is it safe to make payments through telemedicine apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Telemedicine apps are the most flexible solutions for efficient and faster medical transactions. We offer the assurance of comprehensive security testing of our apps to ensure safe payment options for patients."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Do you safeguard sensitive patient data?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Our telemedicine app developer team prioritizes safeguards for patient data through app security testing before deployment. At the same time, we also follow the essential guidelines for data protection in the field of healthcare to protect the sensitive information of patients."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Who Should Use Our Telemedicine App Development Solutions?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The key factor that differentiates our telemedicine app development solutions is the assurance of effective experiences for all users. We specialize in telemedicine application software development and pay special attention to the preferences of our different target audiences. Furthermore, our expertise in healthcare app development empowers us to create telemedicine apps that improve value for doctors, patients, support staff, and healthcare organizations or clinics."
-    }
-  }
-],
+      {
+        "@type": "Question",
+        "name": "Can you offer customization for telemedicine apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer customization for telemedicine apps according to client preferences and business goals. We account for different factors such as desired functionalities, UI, branding, and add-ons for the customization of telehealth apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I have a legacy telemedicine app. Do you offer app modernization services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our telehealth app development company also specializes in telehealth app modernization services. We can help you reinvent your legacy apps and introduce new advantages such as interoperability, enhanced security, and advanced features."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the cost of developing a telemedicine app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of telemedicine app development can vary from $150,000 to $250,000 for a full-fledged app. Other important factors that influence the development cost include the type of telemedicine app, number of user roles, scale and complexity of features, data storage capacity, and scalability goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I begin developing a telemedicine app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can begin a project to develop telemedicine apps by submitting your requirements to us and telling us about your goals. Once you finalize the project scope and requirements, we can start working on your project after completing the formalities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should choose telemedicine solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our telemedicine app development solutions are tailored for doctors, trainers, physicians, and healthcare businesses. We offer robust telemedicine apps that can help reach more users and effectively manage clinical administration tasks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can users upload prescriptions on telemedicine apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, patients and doctors can use our telemedicine apps to upload prescriptions, which can help in easier allocation of pharmacy services. In addition, the flexibility to upload online prescriptions also helps during the consultation process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you design appointment-scheduling apps for doctors and clinics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Doctors and clinics can leverage our app development expertise to create telemedicine solutions for efficient appointment scheduling. Our telemedicine software apps can also help in easier appointment management and availability marking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much time do you take to develop telemedicine apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The time required to develop a telemedicine app can vary between 3 and 6 months, depending on different factors. For example, the number of features and the platforms for developing telemedicine apps can affect the time required for development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to make payments through telemedicine apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Telemedicine apps are the most flexible solutions for efficient and faster medical transactions. We offer the assurance of comprehensive security testing of our apps to ensure safe payment options for patients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you safeguard sensitive patient data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our telemedicine app developer team prioritizes safeguards for patient data through app security testing before deployment. At the same time, we also follow the essential guidelines for data protection in the field of healthcare to protect the sensitive information of patients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who Should Use Our Telemedicine App Development Solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The key factor that differentiates our telemedicine app development solutions is the assurance of effective experiences for all users. We specialize in telemedicine application software development and pay special attention to the preferences of our different target audiences. Furthermore, our expertise in healthcare app development empowers us to create telemedicine apps that improve value for doctors, patients, support staff, and healthcare organizations or clinics."
+        }
+      }
+    ],
   };
   return (
     <>
       <Head>
-  <title>Telemedicine App Development Company</title>
-  <meta
-    name="description"
-    content="Comfygen is a trusted telemedicine app development company, building secure and innovative telemedicine apps. Get tailored solutions for your healthcare business with our expert developers."
-  />
-  <link
-    rel="canonical"
-    href="https://www.comfygen.com/telemedicine-app-development"
-  />
-  <meta name="robots" content="INDEX, FOLLOW, MAX-SNIPPET:-1, MAX-IMAGE-PREVIEW:LARGE, MAX-VIDEO-PREVIEW:-1" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport-fit" content="cover" />
-  <meta name="apple-touch-fullscreen" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-  <meta name="apple-mobile-web-app-title" content="Telemedicine App" />
-  <meta name="author" content="Comfygen" />
-  <meta name="web-author" content="Comfygen" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta name="rights" content="Copyright Comfygen Private Limited" />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="googlebot" content="all" />
-  <meta name="revisit-after" content="3 days" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="language" content="English" />
-  <meta name="geo.region" content="IN" />
-  <meta name="geo.region" content="US" />
-  <meta name="geo.region" content="CA" />
-  <meta name="geo.region" content="GB" />
-  <meta name="geo.region" content="AE" />
-  <meta name="geo.region" content="DE" />
-  <meta
-    name="keywords"
-    content="Telemedicine App Development, Healthcare App Solutions, Virtual Doctor App, Remote Patient Monitoring, Online Consultation App, HIPAA Compliant Telemedicine App, On-Demand Telehealth App, Custom Telemedicine Software, Telemedicine Platform Development"
-  />
-  <meta name="og:type" content="website" />
-  <meta name="og:site_name" content="Comfygen Private Limited" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="en_CA" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:locale:alternate" content="en_DE" />
-  <meta property="og:locale:alternate" content="en_AE" />
-  <meta name="fb:page_id" content="110909321596135" />
-  <meta name="og:email" content="sales@comfygen.com" />
-  <meta name="og:phone_number" content="+91-958-786-7258" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Telemedicine App Development Company | Virtual Healthcare App Solutions"
-  />
-  <meta
-    name="twitter:description"
-    content="Comfygen is a leading telemedicine app development company, offering secure, feature-rich, and scalable telehealth software tailored to your needs."
-  />
-  <meta
-    name="twitter:image"
-    content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
-  />
-  <meta name="twitter:site" content="@comfygentech" />
-  <meta
-    property="og:image"
-    content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
-  />
-  <meta
-    property="og:image:secure_url"
-    content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
-  />
-  <meta
-    property="og:image:alt"
-    content="Telemedicine App Development"
-  />
-  <meta
-    property="og:url"
-    content="https://www.comfygen.com/telemedicine-app-development"
-  />
-  <meta
-    property="og:title"
-    content="Telemedicine App Development Company | Custom Telehealth Software Solutions"
-  />
-  <meta
-    property="og:description"
-    content="Comfygen is a top telemedicine app development company. Launch HIPAA-compliant, scalable, and secure telehealth solutions tailored to your business."
-  />
+        <title>Telemedicine App Development Company</title>
+        <meta
+          name="description"
+          content="Comfygen is a trusted telemedicine app development company, building secure and innovative telemedicine apps. Get tailored solutions for your healthcare business with our expert developers."
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/telemedicine-app-development"
+        />
+        <meta name="robots" content="INDEX, FOLLOW, MAX-SNIPPET:-1, MAX-IMAGE-PREVIEW:LARGE, MAX-VIDEO-PREVIEW:-1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Telemedicine App" />
+        <meta name="author" content="Comfygen" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+        <meta
+          name="keywords"
+          content="Telemedicine App Development, Healthcare App Solutions, Virtual Doctor App, Remote Patient Monitoring, Online Consultation App, HIPAA Compliant Telemedicine App, On-Demand Telehealth App, Custom Telemedicine Software, Telemedicine Platform Development"
+        />
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Telemedicine App Development Company | Virtual Healthcare App Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Comfygen is a leading telemedicine app development company, offering secure, feature-rich, and scalable telehealth software tailored to your needs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
+        />
+        <meta name="twitter:site" content="@comfygentech" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-og-image.webp"
+        />
+        <meta
+          property="og:image:alt"
+          content="Telemedicine App Development"
+        />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/telemedicine-app-development"
+        />
+        <meta
+          property="og:title"
+          content="Telemedicine App Development Company | Custom Telehealth Software Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Comfygen is a top telemedicine app development company. Launch HIPAA-compliant, scalable, and secure telehealth solutions tailored to your business."
+        />
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-  />
-  <script type="application/ld+json">
-    {JSON.stringify(structuredData)}
-  </script>
-</Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
 
       {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
+      <Header />
       {/* </LazyLoad> */}
       <div className="overflow-hidden">
         <div className="">
@@ -549,7 +551,7 @@ export default function Ecommerce(props) {
           heading="Most Trusted Telemedicine App Development Company"
           description1="Comfygen has always strived to serve as a valuable companion on your journey to achieve digital transformation. With our experience in telehealth app development, we are prepared to take on any new challenge that comes our way. We have strengthened our reputation as a trusted app development company with more than 300 successfully completed projects and over 250+ happy clients. Our expertise in telemedicine software development revolves around the 15+ years of professional experience of our app developers."
           description2="We stand out as the first choice to create a telemedicine app and embrace the benefits of technology in healthcare at cost-effective prices with the assurance of distinctive advantages over your competitors."
-         
+
           imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -570,14 +572,14 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        
-         <CryptoTradingList
+
+        <CryptoTradingList
           heading="Best-in-Class Custom Telemedicine App Development Solutions"
           subheading="Comfygen has been the beacon of excellence as one of the top telemedicine app development solution providers with proven experience in this domain. We want to reinvent the wheel in the field of telemedicine with our innovative apps tailored to perfection according to your requirements. Our collection of custom telehealth app development solutions can establish the foundations for new experiences for all users in healthcare."
           tradingData={JSON_DATA.LeadingSoftware}
         />
 
-           <AdvancedPanel />
+        <AdvancedPanel />
 
         <PortfolioSlider
           techData={JSON_DATA.portfoliodata}
@@ -607,52 +609,52 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-         <section className="lg:py-16 py-10 bg-[#fff]">
-                   <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-                     <div className="space-y-4 text-center">
-                       <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                         <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                           Choose Your Desired Engagement Models for Our Services
-                         </h2>
-                         <p>
-                           Comfygen offers the flexibility to choose any engagement model that fits your needs and taps into the potential of our telehealth development services. You can pick any engagement model for telemedicine app development with us by your side.
-                         </p>
-                       </div>
-                       <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                         {JSON_DATA.IndustryApplications.map((elem) => {
-                           const { title, decs, num } = elem;
-                           return (
-                             <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                               <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                                 {num}
-                               </div>
-                               <h3 className="text-2xl text-[#212121] font-semibold">
-                                 {title}
-                               </h3>
-                               <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                             </div>
-                           );
-                         })}
-                       </div>
-                     </div>
-                   </div>
-                 </section>
+        <section className="lg:py-16 py-10 bg-[#fff]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                  Choose Your Desired Engagement Models for Our Services
+                </h2>
+                <p>
+                  Comfygen offers the flexibility to choose any engagement model that fits your needs and taps into the potential of our telehealth development services. You can pick any engagement model for telemedicine app development with us by your side.
+                </p>
+              </div>
+              <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
+                {JSON_DATA.IndustryApplications.map((elem) => {
+                  const { title, decs, num } = elem;
+                  return (
+                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
+                        {num}
+                      </div>
+                      <h3 className="text-2xl text-[#212121] font-semibold">
+                        {title}
+                      </h3>
+                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Methodology for Telemedicine App Development
+                Our Methodology for Telemedicine App Development
               </h2>
               <p className="text-base font-normal mt-2">
-               We follow a strategic approach in our methodology to create telemedicine applications that cater to the needs of our clients. Our telemedicine app development services have always contributed to the success of our customers with new advantages. The trusted methodology allows us to fulfill every client requirement while creating an efficient, productive, and feature-rich telemedicine app
+                We follow a strategic approach in our methodology to create telemedicine applications that cater to the needs of our clients. Our telemedicine app development services have always contributed to the success of our customers with new advantages. The trusted methodology allows us to fulfill every client requirement while creating an efficient, productive, and feature-rich telemedicine app
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
-        
+
         <SolutionSec
           heading="Emerging Technologies We Leverage for Telemedicine Application Development"
           subheading="We harness the power of emerging technologies to create innovative and secure telemedicine apps. Our telemedicine app development company integrates cutting-edge solutions like:"
@@ -664,7 +666,7 @@ export default function Ecommerce(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-         <CryptoTradingList
+        <CryptoTradingList
           heading="Why Invest in a Telemedicine App?"
           subheading="In today’s digital age, investing in a telemedicine app is one of the smartest ways to grow your healthcare business. These apps not only help you reach more patients but also provide fast and convenient healthcare services. If you want to expand your practice and confidently meet the demands of modern healthcare, investing in a telemedicine app is essential."
           tradingData={JSON_DATA.LeadingSoftware2}
@@ -679,10 +681,10 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-          "Proven expertise in telemedicine app development",
-          "Compliance with healthcare standards (HIPAA, GDPR)",
-          "User-friendly and innovative app design",
-          "Ongoing support and collaboration"
+            "Proven expertise in telemedicine app development",
+            "Compliance with healthcare standards (HIPAA, GDPR)",
+            "User-friendly and innovative app design",
+            "Ongoing support and collaboration"
           ]}
         />
 

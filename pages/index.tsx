@@ -5,17 +5,6 @@ import JSON_DATA from "./index.json";
 // Lazy load all major components
 import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
-
-
-// const Header = dynamic(() => import("./components/Header"), {
-//   loading: () => <div className="h-20 bg-gray-100 animate-pulse" />,
-//   ssr: true,
-// });
-
-// const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), {
-//   loading: () => <div className="h-screen bg-gray-200 animate-pulse" />,
-// });
-
 const AboutSection = dynamic(() => import("./components/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
 });

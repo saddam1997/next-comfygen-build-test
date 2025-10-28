@@ -15,7 +15,7 @@ interface CoreFeaturesSectionProps {
 
 const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ title, subtitle, features }) => {
   return (
-    <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+    <section className="lg:py-16 py-10 bg-[#F5F5F9] mt-8">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="space-y-4 text-center">
           <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">

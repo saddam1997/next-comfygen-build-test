@@ -91,6 +91,44 @@
       "title": "Food Delivery App Development Company"
     }
   ],
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
+      "title": "UberEats Clone App",
+      "description": "Launch your UberEats clone app with advanced features, multi-restaurant support, and real-time tracking—perfect for startups entering the competitive food delivery app development market.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
+      "title": "Zomato Clone App",
+      "description": "Our Zomato clone app development enables startups to build a restaurant discovery and food delivery platform with intuitive design, review systems, and real-time order tracking.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
+      "title": "Swiggy Clone App",
+      "description": "Build your Swiggy clone app to offer smooth food ordering, fast delivery, and secure payments—ideal for businesses seeking scalable on-demand food delivery app solutions.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
+      "title": "DoorDash Clone App",
+      "description": "<a href='https://www.comfygen.com/blog/build-an-app-like-doordash-uber-eats-gopuff' class='text-blue-600'>Develop a robust DoorDash clone app</a> to manage multiple deliveries efficiently. It ensures seamless user experience and quick scalability for your food delivery business.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
+      "title": "Delhivery Clone App",
+      "description": "Create a Gopuff clone app for instant grocery and food delivery with real-time tracking, optimized routes, and inventory management—boosting user convenience and retention.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
+      "title": "BlackBuck Clone App",
+      "description": "Our Talabat clone app development provides an all-in-one delivery solution with advanced order management, live tracking, and seamless UI for on-demand delivery startups.",
+      "buttonText": "View Demo"
+    }
+  ],
   "servicesData": [
     {
       "title": "Custom Food Delivery App Development",
@@ -191,7 +229,6 @@
     }
   ],
   "LeadingSoftware": [
-
     {
       "num": "01",
       "title": "Custom AI Development",
@@ -202,66 +239,59 @@
       "title": "Blockchain Integration",
       "decs": "By implementing <a href='/blockchain-development' class='underline'>blockchain technology</a>, we ensure transparent transactions, secure user authentication, and tamper-proof order tracking, enhancing trust and security for both customers and restaurant owners."
     },
-      {
+    {
       "num": "03",
       "title": "AI Chatbot",
       "decs": "Our AI-powered chatbots enhance customer support by handling order inquiries, tracking updates, and personalized recommendations, ensuring instant responses and improved user engagement for food delivery apps."
     },
-    
-  
     {
       "num": "04",
       "title": "IoT Integration",
       "decs": "Our <a href='/iot-development-company' class='underline'>IoT-powered food delivery app development</a>   solutions enable real-time order tracking, smart kitchen automation, and temperature monitoring, ensuring fresh food delivery, operational efficiency, and enhanced customer experience for restaurants and food businesses. "
     },
-    
     {
       "num": "05",
       "title": "Crypto Wallet",
       "decs": "Our apps support <a href='/crypto-wallet-development' class='underline'>crypto wallet integration</a> , enabling secure and decentralized transactions, offering customers alternative payment options like Bitcoin, Ethereum, and other cryptocurrencies for seamless food ordering experiences."
     },
-    
-    
     {
       "num": "06",
       "title": "Cloud Computing",
       "decs": "We leverage cloud computing solutions to provide scalable and secure infrastructure, enabling real-time order management, seamless data synchronization, and optimized app performance for food businesses of all sizes."
     }
   ],
-
-    "AIPowered": [
-  {
-    "num": "01",
-    "title": "Personalized Recommendations",
-    "decs": "As a top food delivery app development firm in India. Using intelligent algorithms, our apps analyze customer preferences and order history to provide personalized meal suggestions, increasing engagement and repeat orders."
-  },
-  {
-    "num": "02",
-    "title": "Smart Delivery Management",
-    "decs": "AI helps optimize delivery routes, predict preparation times, and manage driver assignments efficiently. This ensures faster deliveries and higher customer satisfaction."
-  },
-  {
-    "num": "03",
-    "title": "Demand Forecasting",
-    "decs": "Our AI food ordering app development solutions can predict peak ordering times and menu demand trends. Restaurants and food businesses can plan inventory, reduce waste, and improve operational efficiency."
-  },
-  {
-    "num": "04",
-    "title": "Enhanced Customer Support",
-    "decs": "AI-driven chatbots and virtual assistants provide instant responses to user queries, order tracking updates, and issue resolution, creating a seamless support experience."
-  },
-  {
-    "num": "05",
-    "title": "Data-Driven Insights",
-    "decs": "AI analyzes user behavior and operational data to generate actionable insights. Businesses can make informed decisions to refine menus, promotions, and marketing strategies."
-  },
-  {
-    "num": "06",
-    "title": "Predictive Sales & Growth Optimization",
-    "decs": "Our AI tools can forecast sales trends and identify opportunities for business growth. Restaurants can proactively launch promotions, expand services, and maximize revenue potential."
-  }
-],
-
+  "AIPowered": [
+    {
+      "num": "01",
+      "title": "Personalized Recommendations",
+      "decs": "As a top food delivery app development firm in India. Using intelligent algorithms, our apps analyze customer preferences and order history to provide personalized meal suggestions, increasing engagement and repeat orders."
+    },
+    {
+      "num": "02",
+      "title": "Smart Delivery Management",
+      "decs": "AI helps optimize delivery routes, predict preparation times, and manage driver assignments efficiently. This ensures faster deliveries and higher customer satisfaction."
+    },
+    {
+      "num": "03",
+      "title": "Demand Forecasting",
+      "decs": "Our AI food ordering app development solutions can predict peak ordering times and menu demand trends. Restaurants and food businesses can plan inventory, reduce waste, and improve operational efficiency."
+    },
+    {
+      "num": "04",
+      "title": "Enhanced Customer Support",
+      "decs": "AI-driven chatbots and virtual assistants provide instant responses to user queries, order tracking updates, and issue resolution, creating a seamless support experience."
+    },
+    {
+      "num": "05",
+      "title": "Data-Driven Insights",
+      "decs": "AI analyzes user behavior and operational data to generate actionable insights. Businesses can make informed decisions to refine menus, promotions, and marketing strategies."
+    },
+    {
+      "num": "06",
+      "title": "Predictive Sales & Growth Optimization",
+      "decs": "Our AI tools can forecast sales trends and identify opportunities for business growth. Restaurants can proactively launch promotions, expand services, and maximize revenue potential."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for On-Demand Food Delivery App Development",
     "description": "Comfygen Technologies is a trusted food delivery app development company in India dedicated to creating the best food delivery apps that are intuitive, scalable, and reliable. We help restaurants, startups, and multi-restaurant platforms deliver a seamless ordering experience that delights customers and drives business growth.",

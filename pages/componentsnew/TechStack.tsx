@@ -76,7 +76,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
   const techCategories = Object.keys(filteredTechData);
 
   return (
-    <section className="lg:py-16 py-10 bg-[#F3F4F6]">
+    <section className="lg:py-16 py-10 bg-[#F3F4F6] mt-8">
       <div className="bg-[#0C0F18] mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 md:py-14 py-8 md:px-10 px-6 rounded-3xl">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
 
