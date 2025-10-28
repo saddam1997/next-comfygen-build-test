@@ -653,13 +653,13 @@ Explore our next-gen AI features designed to revolutionize your astrology busine
                           height={50}
                           alt={title}
                         /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                        <h3 className="sm:text-2xl text-xl font-bold text-[#fff] text-start">
                           {title}
                         </h3>
                       </div>
 
                       <div className="mt-3">
-                        <p className="break-all text-white text-start " dangerouslySetInnerHTML={{ __html: decs }}>
+                        <p className="break-all text-white text-sm sm:text-base" dangerouslySetInnerHTML={{ __html: decs }}>
 
                         </p>
                       </div>
