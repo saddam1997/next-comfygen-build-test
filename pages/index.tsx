@@ -5,25 +5,31 @@ import JSON_DATA from "./index.json";
 // Lazy load all major components
 import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
-const AboutSection = dynamic(() => import("./components/AboutSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
+import AboutSection from "./components/AboutSection";
+// const AboutSection = dynamic(() => import("./components/AboutSection"), {
+//   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+// });
 
-const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-});
+// const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
+//   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+// });
+const ServicesSec = dynamic(() => import('./components/ServicesSec'), { ssr: false });
 
-const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
+// const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
+//   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+// });
+const PortfolioSlider = dynamic(() => import('./components/PortfolioSlider'), { ssr: false });
 
-const CallToAction = dynamic(() => import("./components/CallToAction"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-});
+// const CallToAction = dynamic(() => import("./components/CallToAction"), {
+//   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+// });
+const CallToAction = dynamic(() => import('./components/CallToAction'), { ssr: false });
 
-const IndustriesServe = dynamic(() => import("./components/IndustriesServe"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
+// const IndustriesServe = dynamic(() => import("./components/IndustriesServe"), {
+//   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+// });
+
+const IndustriesServe = dynamic(() => import('./components/IndustriesServe'), { ssr: false });
 
 const ProcessSec = dynamic(() => import("./components/ProcessSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
