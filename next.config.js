@@ -36,9 +36,6 @@ module.exports = withBundleAnalyzer({
   },
   reactStrictMode: true,
 
-  swcMinify: true, // ✅ ensures modern SWC compilation (no Babel fallback)
-  compress: true,
-
   images: {
     // domains: ['http://localhost:1225'],
     remotePatterns: [
@@ -61,20 +58,8 @@ module.exports = withBundleAnalyzer({
     deviceSizes: [320, 480, 768, 1024, 1280], // responsive breakpoints
     imageSizes: [16, 32, 64, 128, 256, 384],
   },
-
-
-  // ✅ Remove unnecessary Node.js polyfills
-  webpack: (config, { isServer }) => {
-    config.resolve.fallback = {
-      fs: false,
-      path: false,
-      os: false,
-    };
-    return config;
-  },
- 
+  compress: true,
 })
-
 
 
 

@@ -110,16 +110,16 @@ export default function Tech({ title, description, filterCategory = [], customTe
               ))}
             </div>
 
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 max-h-[275px] overflow-y-auto  overflow-hidden  head-scroll">
-              {filteredTechData[techCategories[tech]]?.map((elem) => (
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-3 mt-6 max-h-[275px] overflow-y-auto  overflow-hidden  head-scroll">
+              {filteredTechData[techCategories[tech]]?.map((elem:any) => (
                 <div
                   key={elem.num}
-                  className="flex items-center border bg-[#181b24] border-white/10 px-6 py-2 hover:shadow-lg transition-all cursor-pointer group"
+                  className="flex items-center border bg-[#181b24] border-white/10 sm:px-6 px-2 py-2 hover:shadow-lg transition-all cursor-pointer group"
                 >
-                  <div className="h-16 w-16 flex items-center justify-center">
+                  <div className="hidden h-16 w-16 sm:flex sm:items-center sm:justify-center">
                     <Image src={elem.img} alt={elem.name} width={50} height={50} loading="lazy" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white ml-3">{elem.name}</h3>
+                  <h3 className="sm:text-lg text-sm font-semibold text-white sm:ml-3">{elem.name}</h3>
                 </div>
               ))}
             </div>

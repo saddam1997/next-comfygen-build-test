@@ -7,6 +7,7 @@ interface Feature {
   img: string;
   additionalDetails: { emoji: string; details: string; content: string }[];
 }
+import { ImArrowRight } from "react-icons/im";
 
 const featuresData: Feature[] = [
   {
@@ -140,12 +141,12 @@ const Features: React.FC = () => {
         </div>
 
         {/* Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10 border border-[#5556D1]">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6  mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10 border border-[#5556D1]">
           {featuresData.map((feature: any) => (
             <div key={feature.id} className="flex flex-col">
               {/* Button */}
               <div
-                className={`rounded-full flex justify-center border border-gray-300 cursor-pointer transition-all duration-200 ${openedFeature?.id === feature.id
+                className={` flex justify-center border border-gray-300 sm:border-none cursor-pointer transition-all duration-200 ${openedFeature?.id === feature.id
                     ? "bg-[#5556D1] text-white border-[#5556D1]"
                     : "bg-white hover:bg-gray-100"
                   }`}
@@ -177,7 +178,7 @@ const Features: React.FC = () => {
                   {feature.additionalDetails.map((detail: any, index: number) => (
                     <ul className="max-w-xl mx-auto" key={index}>
                       <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-gray-700">
-                        {detail.details}
+                       {detail.details}
                       </li>
                     </ul>
                   ))}
@@ -207,8 +208,8 @@ const Features: React.FC = () => {
               {openedFeature.additionalDetails.map(
                 (detail: any, index: number) => (
                   <ul className="max-w-xl" key={index}>
-                    <li className="py-3 border-b border-[#5556D1]/40 flex gap-3">
-                      <h3 className="text-gray-800">{detail.details}</h3>
+                    <li className="py-3 flex items-center gap-3">
+                      <ImArrowRight className="text-[#5556D1]"/><h3 className="text-gray-800">{detail.details}</h3>
                     </li>
                   </ul>
                 )

@@ -103,7 +103,7 @@ function AppcardSlider({
                           sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                           placeholder="blur"
                           blurDataURL={blurDataURL}
-                          className="object-cover rounded-lg"
+                          className=" rounded-lg object-contain"
                         />
                       </div>
                       <div className="text-center">
@@ -125,19 +125,16 @@ function AppcardSlider({
                   </a>
                 ) : (
                   <div className="border border-[#5556D1] rounded-lg p-4 space-y-4 ">
-                    <div className="relative w-full flex justify-center">
+                    <div className="w-full">
                       <Image
                         src={item.imgSrc}
                         alt={item.title}
-                        width={297}
-                        height={192}
-                        quality={50}
+                        width={640}
+                        height={360}
+                        quality={70}
                         priority
-                        // unoptimized
                         sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
-                        placeholder="blur"
-                        blurDataURL={blurDataURL}
-                        className="object-cover rounded-lg"
+                        className="rounded-lg object-contain w-full h-full"
                       />
                     </div>
                     <div className="text-center">

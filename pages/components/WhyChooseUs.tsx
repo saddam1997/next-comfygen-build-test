@@ -9,8 +9,8 @@ const WhyChoose = ({
   gridData = [] 
 }) => (
   <section
-    className="bg-cover bg-no-repeat lg:py-16 py-10 w-full"
-    style={{ backgroundImage: `url('https://www.comfygen.com/image/why-choose-bg-img.webp')` }}
+    className="bg-cover bg-no-repeat mt-8 lg:py-16 py-10 w-full bg-gradient-to-br from-[#FEEBC8]/30 via-[#C4B5FD]/20 to-[#A5B4FC]/20"
+    // style={{ backgroundImage: `url('https://www.comfygen.com/image/why-choose-bg-img.webp')` }}
   >
     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
       <div className="lg:flex space-y-3 items-center justify-between gap-10">
