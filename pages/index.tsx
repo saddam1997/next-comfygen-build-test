@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
+import Script from "next/script";
 // Lazy load all major components
 import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
