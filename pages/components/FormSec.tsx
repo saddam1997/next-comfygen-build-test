@@ -7,17 +7,17 @@ const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
 const Form = () => (
   <section>
     <div
-      className="bg-cover relative bg-fixed "
-      style={{
-        backgroundImage:
-          'url("https://www.comfygen.com/image/form-bg-img.webp")',
-      }}
+      className="bg-cover relative bg-fixed bg-black"
+      // style={{
+      //   backgroundImage:
+      //     'url("https://www.comfygen.com/image/form-bg-img.webp")',
+      // }}
     >
       <div className=" lg:py-16 py-10 relative z-40 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
         <div className="grid lg:grid-cols-2 lg:gap-16 gap-8 items-start">
           <div>
             <h2 className="lg:text-4xl text-3xl text-[#fff] text-start font-semibold">
-              Contact us anytime for quick assistance
+              Contact us anytime for quick assistance 
             </h2>
             <div className="space-y-5 mt-8">
               <a

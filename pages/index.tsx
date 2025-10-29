@@ -34,6 +34,7 @@ const IndustriesServe = dynamic(() => import('./components/IndustriesServe'), { 
 
 const ProcessSec = dynamic(() => import("./components/ProcessSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  
 });
 
 const TechStack = dynamic(() => import("./components/TechStack"), {
