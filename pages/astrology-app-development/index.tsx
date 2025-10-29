@@ -623,10 +623,7 @@ Explore our next-gen AI features designed to revolutionize your astrology busine
 
         <Features />
         <ContactFromCenter />
-
-
-
-
+        
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">

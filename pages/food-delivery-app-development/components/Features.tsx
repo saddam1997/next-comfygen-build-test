@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 interface Feature {
   id: number;
@@ -78,73 +78,146 @@ const featuresData: Feature[] = [
 ];
 
 const Features: React.FC = () => {
-  const [openedFeature, setOpenedFeature] = useState<Feature | null>(
-    featuresData[0]
-  );
-  const handleButtonClick = (feature: Feature) => {
-    if (openedFeature?.id !== feature.id) {
+  // const [openedFeature, setOpenedFeature] = useState<Feature | null>(
+  //   featuresData[0]
+  // );
+  // const handleButtonClick = (feature: Feature) => {
+  //   if (openedFeature?.id !== feature.id) {
+  //     setOpenedFeature(feature);
+  //   }
+  // };
+
+  const [openedFeature, setOpenedFeature] = useState<any>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detect mobile view
+    const checkMobile = () => {
+      const mobile = window.innerWidth < 1024;
+      setIsMobile(mobile);
+
+
+      if (featuresData?.length > 0) {
+        setOpenedFeature(featuresData[0]);
+      }
+
+      // If desktop, open first feature by default
+      if (!mobile && featuresData?.length > 0) {
+        setOpenedFeature(featuresData[0]);
+      }
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, [featuresData]);
+
+  const handleButtonClick = (feature: any) => {
+    // On mobile: toggle accordion
+    if (isMobile) {
+      setOpenedFeature((prev: any) =>
+        prev?.id === feature.id ? null : feature
+      );
+    } else {
+      // On desktop: change the opened feature
       setOpenedFeature(feature);
     }
   };
 
   return (
-    <div className="lg:py-16 py-10 bg-[#F5F5F9]">
-      <div className="space-y-2">
-        <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
-          We Develop Food Delivery Apps With Advanced Panel Features
-        </h2>
-        <p className="text-center text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
-          At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to ensure a smooth experience for customers, restaurants, drivers, and administrators. Our food delivery apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform.
-
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto border-2 rounded-full border-[#f1f1f1] 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
-        {featuresData.map((feature) => (
-          <div
-            key={feature.id}
-            className={`rounded-full flex justify-center border border-gray-300 cursor-pointer ${openedFeature?.id === feature.id
-              ? "bg-[#5556D1] text-white border-[#5556D1]"
-              : "bg-white hover:bg-gray-100"
-              }`}>
-            <button
-              className="text-lg font-medium p-2 focus:outline-none"
-              onClick={() => handleButtonClick(feature)}>
-              {feature.title}
-            </button>
-          </div>
-        ))}
-      </div>
-      {openedFeature && (
-        <div className="mt-6 w-full mx-auto p-4 grid grid-cols-1 md:grid-cols-2">
-          {openedFeature.img && (
-            <div className="mb-4 flex mx-auto w-[60%]">
-              <Image
-                src={openedFeature.img}
-                alt={openedFeature.title}
-                width={640}
-                height={538}
-                className="w-full h-auto object-cover rounded-lg"
-                priority={true}
-                quality={75}
-                unoptimized
-              />
-
-            </div>
-          )}
-          <div className="mt-2 py-2 mx-4">
-            {openedFeature.additionalDetails.map((detail, index) => (
-              <ul className="max-w-xl" key={index}>
-                <li className="py-4 border-b border-[#5556D1] flex justify-start place-items-center gap-8">
-                  <div>
-                    <h3>{detail?.details}</h3>
-                  </div>
-                </li>
-              </ul>
-            ))}
-          </div>
+    <section className="bg-center bg-repeat bg-fixed">
+      <div className="lg:py-16 py-10 bg-[#F5F5F9]">
+        {/* Header */}
+        <div className="space-y-2 text-center">
+          <h2 className="xl:text-4xl text-3xl font-bold">
+            We Develop Astrology Apps With Advanced Panel Features
+          </h2>
+          <p className="text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
+            At Comfygen, we integrate cutting-edge features into our astrology
+            app development services to enhance user experience, streamline
+            management, and optimize astrology consultations.
+          </p>
         </div>
-      )}
-    </div>
+
+        {/* Buttons */}
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10 border border-[#5556D1]">
+          {featuresData.map((feature: any) => (
+            <div key={feature.id} className="flex flex-col">
+              {/* Button */}
+              <div
+                className={`rounded-full flex justify-center border border-gray-300 cursor-pointer transition-all duration-200 ${openedFeature?.id === feature.id
+                    ? "bg-[#5556D1] text-white border-[#5556D1]"
+                    : "bg-white hover:bg-gray-100"
+                  }`}
+              >
+                <button
+                  className="text-lg font-medium p-2 focus:outline-none w-full"
+                  onClick={() => handleButtonClick(feature)}
+                >
+                  {feature.title}
+                </button>
+              </div>
+
+              {/* Mobile detail view (accordion style) */}
+              {isMobile && openedFeature?.id === feature.id && (
+                <div className="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 transition-all duration-300">
+                  {feature.img && (
+                    <div className="hidden mb-4 lg:flex justify-center">
+                      <Image
+                        src={feature.img}
+                        alt={feature.title}
+                        width={400}
+                        height={300}
+                        className="rounded-md w-full h-auto"
+                        quality={75}
+                        priority={true}
+                      />
+                    </div>
+                  )}
+                  {feature.additionalDetails.map((detail: any, index: number) => (
+                    <ul className="max-w-xl mx-auto" key={index}>
+                      <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-gray-700">
+                        {detail.details}
+                      </li>
+                    </ul>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop detail view (below all buttons) */}
+        {!isMobile && openedFeature && (
+          <div className="mt-10 p-4 grid grid-cols-1 md:grid-cols-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 items-center">
+            {openedFeature.img && (
+              <div className="hidden lg:flex justify-center">
+                <Image
+                  src={openedFeature.img}
+                  alt={openedFeature.title}
+                  width={500}
+                  height={400}
+                  className="rounded-lg border border-gray-200"
+                  quality={75}
+                  priority={true}
+                />
+              </div>
+            )}
+            <div className="mt-2 py-2 mx-4">
+              {openedFeature.additionalDetails.map(
+                (detail: any, index: number) => (
+                  <ul className="max-w-xl" key={index}>
+                    <li className="py-3 border-b border-[#5556D1]/40 flex gap-3">
+                      <h3 className="text-gray-800">{detail.details}</h3>
+                    </li>
+                  </ul>
+                )
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
   );
 };
 

@@ -60,7 +60,7 @@ function AppcardSlider({
     <section className="lg:py-16 py-10 bg-[#F5F5F9] mt-8 lg:p-0 p-4">
       <div className="container mb-8 mx-auto bg-[#F5F5F9] ">
         <div className="flex items-center justify-between">
-          <div className="space-y-2">
+          <div className="space-y-2 p-2">
             <h2 className="xl:text-4xl text-2xl text-[#212121] font-bold">{heading}</h2>
             <p className=" text-[#212121] font-normal text-sm">{description}</p>
           </div>

@@ -75,6 +75,10 @@ const Features: React.FC = () => {
       const mobile = window.innerWidth < 1024;
       setIsMobile(mobile);
 
+      if (featuresData?.length > 0) {
+        setOpenedFeature(featuresData[0]);
+      }
+
       // If desktop, open first feature by default
       if (!mobile && featuresData?.length > 0) {
         setOpenedFeature(featuresData[0]);
@@ -120,11 +124,10 @@ const Features: React.FC = () => {
             <div key={feature.id} className="flex flex-col">
               {/* Button */}
               <div
-                className={`rounded-full flex justify-center border border-gray-300 cursor-pointer transition-all duration-200 ${
-                  openedFeature?.id === feature.id
+                className={`rounded-full flex justify-center border border-gray-300 cursor-pointer transition-all duration-200 ${openedFeature?.id === feature.id
                     ? "bg-[#5556D1] text-white border-[#5556D1]"
                     : "bg-white hover:bg-gray-100"
-                }`}
+                  }`}
               >
                 <button
                   className="text-lg font-medium p-2 focus:outline-none w-full"

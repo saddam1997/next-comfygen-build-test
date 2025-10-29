@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
@@ -8,37 +7,25 @@ import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
-import IndustriesServe from "../components/IndustriesServe";
 // import AppcardSlider from "../components/AppcardSlider";
-
-
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import CardItem from "../components/CardItem";
 import Features from "./components/Features";
-import PortfolioSec from "../components/PortfolioSec";
 import ServicesSection from "../componentsnew/ServicesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ClientTestimonials from "../components/ClientTestimonials";
-import TechnologyStack from "../portfolio/technology-stack/TechnologyStack";
 import TechStack from "../componentsnew/TechStack";
 import DeliverySection from "../components/DeliverySection";
-import AppCard from "../componentsnew/AppCard";
 import WhoCanStart from "./components/WhoCanStart";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-
 const AppcardSlider = dynamic(() => import("../components/AppcardSlider"), {
   loading: () => <p>Loading...</p>,
 });
-
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -50,7 +37,6 @@ const ContactFromCenter = dynamic(
 const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
 });
-
 
 const Process = [
   {
@@ -89,56 +75,7 @@ const Process = [
       "As a trusted food delivery app development organization, we provide continuous maintenance, updates, and feature enhancements to keep your app competitive and user-focused.",
   },
 ];
-// const CardClone = [
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
-//     title: "UberEats Clone App",
-//     description:
-//       "Our UberEats clone app development helps you launch a robust food delivery platform quickly. Designed with modern features, it supports multiple restaurants and efficient delivery management.",
-//     buttonText: "View Demo",
-//   },
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
-//     title: "Zomato Clone App",
-//     description:
-//       "With our Zomato clone app, you can create a food delivery and restaurant discovery platform that connects customers with multiple eateries. Perfect for startups aiming to replicate Zomato’s success.",
-//     buttonText: "View Demo",
-//   },
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
-//     title: "Swiggy Clone App",
-//     description:
-//       "Our Swiggy clone app development offers a ready-to-launch solution with advanced features for food ordering and delivery. Scalable and customizable, it ensures high performance for businesses of all sizes.",
-//     buttonText: "View Demo",
-//   },
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
-//     title: "DoorDash Clone App",
-//     description:
-//       "Build a powerful delivery platform with our DoorDash clone app, designed for businesses seeking to efficiently manage food delivery across multiple regions.",
-//     buttonText: "View Demo",
-//   },
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
-//     title: "Delhivery Clone App",
-//     description:
-//       "With our Delhivery clone app, you can create a powerful logistics platform that handles hyperlocal deliveries, reverse logistics, and warehouse automation. It’s ideal for companies looking to scale delivery operations through logistics app development services tailored to the Indian market dynamics.",
-//     buttonText: "View Demo",
-//   },
-//   {
-//     image:
-//       "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
-//     title: "BlackBuck Clone App",
-//     description:
-//       "Our BlackBuck-like logistics mobile app solution is built for large-scale freight movement and B2B trucking. We develop logistics platforms similar to BlackBuck, offering digital tools for long-haul transport, fleet coordination, and driver management.",
-//     buttonText: "View Demo",
-//   },
-// ];
+
 
 const WhoCanStartCards = [
   {
@@ -588,9 +525,9 @@ export default function Ecommerce(props) {
 
 
         <section className="py-10 lg:py-20 bg-[#5556D1] mt-8">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="2xl:w-10/12 w-full lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto py-8">
+              <div className="flex flex-col justify-center text-center  mx-auto sm:py-8 p-2">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
                   Advanced Tech We Integrate in Food Delivery App Development
                 </h2>
@@ -602,9 +539,9 @@ export default function Ecommerce(props) {
                 {JSON_DATA.LeadingSoftware.map((elem) => {
                   const { title, decs } = elem;
                   return (
-                    <div key={title} className={`bg-[#5556D1] transition-all cursor-pointer duration-300 hover:bg-[#0f0f0f] relative p-8`}>
+                    <div key={title} className={`bg-[#5556D1] transition-all cursor-pointer duration-300 hover:bg-[#0f0f0f] relative p-4`}>
                       <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
+                        className={`flex sm:justify-start justify-center text-center gap-2 place-items-center relative`}
                       >
                         {/* <Image
                                   src={img}
@@ -613,7 +550,7 @@ export default function Ecommerce(props) {
                                   height={50}
                                   alt={title}
                                 /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                        <h3 className="text-2xl font-bold text-[#fff] sm:text-start text-center">
                           {title}
                         </h3>
                       </div>
