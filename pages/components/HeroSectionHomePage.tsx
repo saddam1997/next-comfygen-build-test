@@ -84,7 +84,7 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent`}
+      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent sm:h-full max-h-screen`}
     // style={{
     //   backgroundColor: isMobile ? "#5951cd" : "transparent",
     // }}

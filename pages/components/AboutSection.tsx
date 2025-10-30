@@ -31,11 +31,11 @@ const AboutSection = (props: any) => {
               height={360}
               priority // important for LCP
               quality={70} // compress further (default is 75)
-              sizes="(max-width: 640px) 90vw,
-                 (max-width: 768px) 85vw,
-                 (max-width: 1024px) 45vw,
-                 600px"
-              style={{ width: "100%", height: "auto" }}
+              // sizes="(max-width: 640px) 90vw,
+              //    (max-width: 768px) 85vw,
+              //    (max-width: 1024px) 45vw,
+              //    600px"
+              // style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div>
