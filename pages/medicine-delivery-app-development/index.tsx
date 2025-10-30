@@ -206,7 +206,7 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  const structuredData = [
+  const jsonLdData = [
     {
       "@context": "https://schema.org",
       "@type": "PostalAddress",
@@ -216,6 +216,7 @@ export default function Ecommerce(props) {
       postalCode: "302006",
       telephone: "+91-958-786-7258",
     },
+
     {
       "@context": "https://schema.org",
       "@type": "PostalAddress",
@@ -225,185 +226,289 @@ export default function Ecommerce(props) {
       postalCode: "M1G3S7",
       telephone: "+1 579-977-4475",
     },
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: "Online Medicine Delivery App Development Company",
-      provider: {
+      "name": "Medicine Delivery App Development for Startups",
+      "provider": {
         "@type": "Organization",
-        name: "Comfygen",
-        url: "https://www.comfygen.com/",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
       },
-      description:
-        "Comfygen is a leading online medicine delivery app development company...",
-      url: "https://www.comfygen.com/medicine-delivery-app-development",
-      areaServed: "Global",
-      serviceType: [
-        "On Demand Medicine Delivery App Development",
-        "Medicine Doorstep Delivery App Development",
-        "Develop Medicine Delivery App like TATA 1MG",
+      "description": "Kickstart your online pharmacy business with Comfygen’s medicine delivery app development services. Build cost-effective, scalable, and feature-rich apps to deliver medicines anytime, anywhere.",
+      "url": "https://www.comfygen.com/medicine-delivery-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/medicine-delivery-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "On-Demand Medicine Delivery App Development",
+        "AI-Powered Medicine Delivery App Development",
+        "Custom Medicine Delivery App Development",
+        "White-Label Medicine Delivery App Development",
+        "Online Medicine Delivery App Development",
+        "Medicine Delivery App Development Services"
+
       ],
-      sameAs: [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
     },
+
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "Comfygen",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
       ],
-      openingHoursSpecification: {
+      "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
+        "dayOfWeek": [
           "Monday",
           "Tuesday",
           "Wednesday",
           "Thursday",
           "Friday",
           "Saturday",
-          "Sunday",
+          "Sunday"
         ],
-        opens: "00:00",
-        closes: "23:59",
+        "opens": "00:00",
+        "closes": "23:59"
       },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
     },
+
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      brand: "Comfygen Private Limited",
-      name: "On-Demand Medicine Delivery App Development Services",
-      description:
-        "Get top-notch on-demand medicine delivery app development services...",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "1313",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "UAE"],
+
+        "availableLanguage": "en, in"
       },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Pharmacy Chain Medicine Delivery App Development",
+      "image": "https://www.comfygen.com/image/about-us-image.webp",
+      "description": "Streamline your pharmacy operations with Comfygen’s custom medicine delivery apps. Manage multiple branches, real-time deliveries, and secure payments under one digital platform.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1500"
+      }
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Medicine Delivery App Development",
+        "item": "https://www.comfygen.com/medicine-delivery-app-development"
+
+      }]
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do you Build an MVP for Healthcare medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we build MVP for medicine delivery apps. You can come to our medicine delivery app development company which is located in India and USA, and get the best results with an effective MVP UI design. The MVP helps us find out how your medicine delivery app would be perceived by your target audience. It shows us the features that would have the maximum impact on the success of your app."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How much time do you need to build medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The time required to develop medicine delivery apps depends on the scale of the project and the complexity of the features. These factors influence the time required for prototyping, development, testing, and security of the delivery app for medicine before deployment."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Which technologies would influence the future of medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The technologies that are likely to influence the future of medicine delivery apps include blockchain development services, and AI development services. For example, Gen. AI can offer personalized recommendations for ordering medications, and IoT Development Services , can enable real-time health monitoring to order medications at the right time."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "What is the cost of developing pharmacy delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of developing pharmacy delivery apps depends on different factors, such as the complexity of features, UI/UX design, app platform, technology stack, and third-party integrations."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you offer quality assurance services for medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our medicine delivery app developer team also offers quality assurance or QA services for medicine delivery apps. Our QA services involve comprehensive functionality and security testing on the apps before deploying them on different platforms."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "What are the benefits of creating medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Medicine delivery apps provide a wide range of benefits for pharmacy business owners and patients. Convenience, security, and privacy are the top benefits of medicine delivery apps. Most important of all, medicine delivery apps have the potential to transform the healthcare sector with unique value advantages."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Is an MVP important before starting the development process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, an MVP is important before the development process as it helps find the features that would offer the best results according to your goals. The MVP is an ideal tool to measure customer sentiment and make adjustments before the development process."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can you work on cross-platform app development projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we work on cross-platform app development projects as our medicine delivery app development company gives you the assurance of specialization in a powerful technology stack. Our experts can create apps for Android and iOS to ensure that it reaches more users."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you provide continuous improvements in the medicine delivery apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our experts offer continuous support and maintenance that helps you enjoy peace of mind as we implement new improvements. Based on the feedback of clients, we identify potential areas for improvement in the app and make the necessary adjustments."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "How can you choose the engagement model for your development project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can choose the engagement model for your on-demand medicine delivery app development project by considering your requirements. It is important to understand why you need the pharmacy delivery app and the scale of the project to choose the ideal engagement model."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Boost Your Business With Our Whitelabel App For Instant Medicine Delivery",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Get your Pharmacy business to the next level and provide an outstanding customer experience by taking advantage of this opportunity. At Comfygen, we specialize in providing cutting-edge medicine delivery app development services & solutions that empower pharmacies to elevate their medicine delivery app development services and reach a wider customer base. The mobile apps for healthcare that we provide to pharmacies - prescription delivery apps enable them to offer seamless access to quality apps for instant medicine delivery and enhance patient safety, thereby revolutionizing how pharmacies serve their patients. To get started on your online medicine order app development project, contact the medicine delivery app development company today.  We offer a white label medicine delivery app that includes the following:  User-Friendly Interface Real-Time Prescription Fulfillment Secure Payment Gateway Inventory Management Customizable Branding Multi-Platform Compatibility"
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Why Who Should Go for Our Medicine Delivery App Development Solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using the strong tech stacks, we deliver high-performing and engaging online pharmacy app development services. Our experience and expertise in the domain make us India’s #No1 healthcare app development company.  Industry Expertise: With years of experience in developing healthcare and medicine delivery apps, we understand the regulatory landscape, user needs, and technological trends that are critical for your app’s success.  Custom Solutions Tailored to Your Business Whether you're a startup or an established enterprise, we design apps that are our Business"
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Who Should Go for Our Medicine Delivery App Development Solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We Develop Medicine Delivery Apps for a Variety of Clients. We have become a top medicine delivery app development company in India and the USA with our development skills and capabilities to offer different medical mobile app and web solutions.  Our medical app developers build many healthcare applications for mobile and web to become experts to make us a powerful and quick medicine delivery app development with the resources required to stand out in the continuously evolving Healthcare industry. We have adapted our Pharmacy delivery app development services to fit within the scope of requirements for different types of clients.  At Comfygen, you can find the finest mobile app development company for different types of Industry, including standalone pharmacy stores, pharmacy marketplaces, pharmacy store chains, and e-pharmacy startups. Our mobile app development for healthcare services aim to create innovative medicine delivery apps that can address your business goals alongside delivering seamless services to users.  Solutions for Standalone Pharmacy Stores Owners of standalone pharmacy stores can explore new ways to gain more customers with our productive medicine delivery app development services through the mobile app for healthcare apps. You can come to us to build mobile apps for medicine delivery app development services and get a custom pharmacy store application. With the help of a wide range of accessible apps to order medicine features, your customers will get their desired medications at their doorstep with help of medicine doorstep delivery app development services. Your pharmacy store could become more popular among your target audience and offer new opportunities for growth with user-friendly medicine delivery mobile app development solutions.  Pharmacy Marketplace Delivery Apps Do you know that Uber does not own any of the vehicles that you can rent through the taxi application ? You should try the same business model to create your own pharmacy marketplace or aggregator application. Our medicine delivery app developer team can help you come up with a simple and powerful pharmacy marketplace app. We have the resources and skills required to build an effective pharmacy delivery app with the assurance of seamless performance. Stay ahead of the competition and achieve exponential growth for your pharmacy app development marketplace with our experts.  E-Pharmacy Startup Delivery Apps The journey of an e-pharmacy startup is always challenging, especially for the ones beginning from scratch. It is completely different to get your pharmacy business running without prior experience in the healthcare industry. Our medicine delivery app development services and solutions can have a huge impact on the ways you build your own e-pharmacy startup applications. We ensure that you get your own pharmacy delivery app customized to your business goals to set up strong foundations for the growth of your startup.  Pharmacy Store Chain Apps Through innovative apps, we also assist pharmacy store chains in expanding their services. To turn your pharmacy store chain into a readily accessible destination for medicines, our app developers can develop unique ideas. You can manage your pharmacies directly from your smartphones, whether they are Android or iOS. Our solutions for pharmacy store chains include POS software and delivery apps that can redefine the accessibility of medicines and user experiences with pharmacy store chains."
+        }
+
+
+      }]
+    }
+
+
+
+
+
+
+
+
+
   ];
 
-  const faqSchema = {
-    "@context": "https://schema.org/",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Do you Build an MVP for Healthcare medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, we build MVP for medicine delivery apps. You can come to our medicine delivery app development company which is located in India and USA, and get the best results with an effective MVP UI design. The MVP helps us find out how your medicine delivery app would be perceived by your target audience. It shows us the features that would have the maximum impact on the success of your app.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much time do you need to build medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The time required to develop medicine delivery apps depends on the scale of the project and the complexity of the features. These factors influence the time required for prototyping, development, testing, and security of the delivery app for medicine before deployment.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Which technologies would influence the future of medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The technologies that are likely to influence the future of medicine delivery apps include blockchain development services, and AI development services. For example, Gen. AI can offer personalized recommendations for ordering medications, and IoT Development Services , can enable real-time health monitoring to order medications at the right time.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the cost of developing pharmacy delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost of developing pharmacy delivery apps depends on different factors, such as the complexity of features, UI/UX design, app platform, technology stack, and third-party integrations.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do you offer quality assurance services for medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, our medicine delivery app developer team also offers quality assurance or QA services for medicine delivery apps. Our QA services involve comprehensive functionality and security testing on the apps before deploying them on different platforms.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What are the benefits of creating medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Medicine delivery apps provide a wide range of benefits for pharmacy business owners and patients. Convenience, security, and privacy are the top benefits of medicine delivery apps. Most important of all, medicine delivery apps have the potential to transform the healthcare sector with unique value advantages.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is an MVP important before starting the development process?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, an MVP is important before the development process as it helps find the features that would offer the best results according to your goals. The MVP is an ideal tool to measure customer sentiment and make adjustments before the development process.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can you work on cross-platform app development projects?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, we work on cross-platform app development projects as our medicine delivery app development company gives you the assurance of specialization in a powerful technology stack. Our experts can create apps for Android and iOS to ensure that it reaches more users.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do you provide continuous improvements in the medicine delivery apps?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, our experts offer continuous support and maintenance that helps you enjoy peace of mind as we implement new improvements. Based on the feedback of clients, we identify potential areas for improvement in the app and make the necessary adjustments.",
-        },
-      },
-    ],
-  };
+
   return (
     <>
       <Head>
         <title>
-          Best Medicine Delivery App Development Company 
+          Medicine Delivery App Development Company | Custom Pharmacy App Solutions
         </title>
         <meta
           name="description"
-          content="Looking for a medicine delivery app development company? Comfygen builds AI-powered, HIPAA-compliant apps with real-time tracking, secure payments, and seamless ordering. Empower your pharmacy business with cutting-edge solutions today!"
+          content="Comfygen Technologies is a leading medicine delivery app development company offering AI-powered and HIPAA-compliant pharmacy apps for your startup business."
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/medicine-delivery-app-development"
-        />
+
         <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
+          name="keywords"
+          content="Medicine Delivery App Consulting Service, Medicine Delivery App Designing Service, Medicine Delivery App Development Service, Supply Chain Management Solutions, Pharmacy Chain Solutions, On-Demand Medicine Ordering App Development, On Demand Medicine Delivery App Development, Medicine Doorstep Delivery App Development, Develop Medicine Delivery App like TATA 1MG"
         />
+
+        {/* <!-- Canonical Tag --> */}
+        <link rel="canonical" href="https://www.comfygen.com/medicine-delivery-app-development" />
+
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+
+        {/* <!-- Compatibility Meta → */}
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
+
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
@@ -412,88 +517,70 @@ export default function Ecommerce(props) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
+
+
+        {/* <!-- New in iOS6 -->
+<!-- Author and Company Information --> */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+        {/* <!-- SEO Meta --> */}
         <meta name="googlebot" content="all" />
         <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="coverage" content="Worldwide" />
         <meta name="language" content="English" />
+
+        {/* <!-- Geo Location Meta --> */}
         <meta name="geo.region" content="IN" />
         <meta name="geo.region" content="US" />
         <meta name="geo.region" content="CA" />
         <meta name="geo.region" content="GB" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
-        <meta
-          name="keywords"
-          content="Medicine Delivery App Consulting Service, Medicine Delivery App Designing Service, Medicine Delivery App Development Service, Supply Chain Management Solutions, Pharmacy Chain Solutions, On-Demand Medicine Ordering App Development, On Demand Medicine Delivery App Development, Medicine Doorstep Delivery App Development, Develop Medicine Delivery App like TATA 1MG"
-        />
-        <meta name="author" content="Company Private Limited" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:type" content="website" />
-        <meta name="og:site_name" content="Comfygen Private Limited" />
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_CA" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_DE" />
         <meta property="og:locale:alternate" content="en_AE" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="og:email" content="sales@comfygen.com" />
-        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Online Medicine Delivery App Development Company | Pharmacy App Solutions"
-        />
-        <meta
-          name="twitter:description"
-          content=" Comfygen is a trusted online medicine delivery app development company, offering feature-rich pharmacy app solutions with real-time tracking, secure payments, and AI-powered features. Build your custom medicine delivery app today!"
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.yourwebsite.com/path-to-image.jpg"
-        />
-        <meta name="twitter:site" content="@comfygentech" />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
-        />
-        <meta
-          property="og:image:alt"
-          content="Medicine Delivery App Development"
-        />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/medicine-delivery-app-development"
-        />
-        <meta
-          property="og:title"
-          content="On-Demand Medicine Delivery App Development Company "
-        />
-        <meta
-          property="og:description"
-          content="Comfygen is among the top Medicine Delivery App Development Company. Launch your Medicine Delivery app like 1MG, PharmEasy, Netmeds, or Truemeds."
-        />
+        <meta name="twitter:title" content="Medicine Delivery App Development Services | Comfygen" />
+        <meta name="twitter:description" content=" Comfygen develops robust on-demand medicine delivery apps designed for pharmacies, hospitals, and startups. Ensure fast deliveries, real-time order tracking, and secure digital payments." />
+        <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+        <meta property="og:image:alt" content="Medicine Delivery App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/medicine-delivery-app-development" />
+        <meta property="og:title" content="On-Demand Medicine Delivery App Development | HIPAA-Compliant Solutions" />
+        <meta property="og:description" content="Comfygen develops robust on-demand medicine delivery apps designed for pharmacies, hospitals, and startups. Ensure fast deliveries, real-time order tracking, and secure digital payments." />
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -679,7 +766,7 @@ export default function Ecommerce(props) {
 
         <AdvancedPanel />
 
-        
+
         {/* <Tab /> */}
         <CallToAction
           heading="Launch Your Medicine Delivery App with Cutting-Edge Features Today!"
@@ -689,7 +776,7 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/medicine-delivery-app-call-to-action-image.webp"
           imageAlt="Future of Technology"
         />
-        
+
         {/* <Providers /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -747,8 +834,8 @@ export default function Ecommerce(props) {
                 End to End Medicine Delivery App Development Process
               </h2>
               <p className="text-base font-normal mt-2">
-                We have been working on enhancing our capabilities as a 
-                  <a href="https://www.comfygen.com/healthcare-app-development" className="text-blue-500 font-semibold" > healthcare app development company </a>
+                We have been working on enhancing our capabilities as a
+                <a href="https://www.comfygen.com/healthcare-app-development" className="text-blue-500 font-semibold" > healthcare app development company </a>
                 with different types of apps. Our proven methodology for
                 medicine delivery app development gives us a competitive edge in
                 crafting customized, high-performing solutions designed for

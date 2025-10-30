@@ -1066,21 +1066,21 @@ export default function DesktopNav(props: any) {
     document.getElementById("slideover").classList.toggle("translate-x-full");
   }
 
-   useEffect(() => {
-      const handleScroll = () => {
-        const header = document.querySelector(".headered");
-        if (!header) return;
+  //  useEffect(() => {
+  //     const handleScroll = () => {
+  //       const header = document.querySelector(".headered");
+  //       if (!header) return;
   
-        if (window.scrollY > 50) {
-          header.classList.add("active");
-        } else {
-          header.classList.remove("active");
-        }
-      };
+  //       if (window.scrollY > 50) {
+  //         header.classList.add("active");
+  //       } else {
+  //         header.classList.remove("active");
+  //       }
+  //     };
   
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  //   }, []);
 
   // useEffect(() => {
   //   $(window).on("scroll", function () {

@@ -32,7 +32,7 @@ const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
   loading: () => <p>Loading...</p>,
 });
 const Header = dynamic(() => import("../components/Header"), {
-  
+
 });
 const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
   ssr: false,
@@ -80,185 +80,17 @@ const Process = [
 
 
 
-const structuredData = {
-  "@context": "https://schema.org/",         
-  "@type": "WebPage",         
-  "@id": "#WebPage",         
-  "url": "https://www.comfygen.com/handball-live-line-api-development",          
-  "name": "Handball Live Line API Provider"
-
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org/",         
-  "@type": "Organization",         
-  "@id": "#Organization",         
-  "url": "https://www.comfygen.com/",         
-  "legalName": "Comfygen Technologies",         
-  "name": "Comfygen",         
-  "description": "Comfygen is a premier provider of Handball Live Line API services, delivering real-time handball scores, stats, and Live Api data integration for sports platforms and apps.",         
-  "image": "https://www.comfygen.com/svg/Logo1.svg",         
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",         
-  "telephone": "9587867258",         
-  "email": "sales@comfygen.com",         
-  "address": {             
-    "@type": "PostalAddress",             
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",             
-    "addressLocality": "Ajmer Rd",             
-    "addressRegion": "Jaipur, Rajasthan",             
-    "addressCountry": "India",             
-    "postalCode": "302006"        
-  },         
-  "sameAs": [             
-    "https://www.facebook.com/comfygen",          
-    "https://www.youtube.com/@ComfygenBusiness",             
-    "https://www.instagram.com/comfygen_",             
-    "https://www.linkedin.com/company/comfygen-private-limited/",           
-    "https://x.com/comfygentech"       
-  ]
-};
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Handball Live Line API Provider – Real-Time Scores, Stats & Odds Data",
-  "image": "https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-live-line-api-hero.webp",
-  "description": "Integrate real-time handball scores, player stats, match events, and Live Line Api with Comfygen’s Handball Live Line API. Perfect for gamming platforms.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
 
 
 
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Handball Live Line API",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Comfygen offers expert Handball Live Line API services, providing real-time handball data, livescore widgets, and Live Line API integration for your platform.",
-  "url": "https://www.comfygen.com/handball-live-line-api-development",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/handball-live-line-api-development"
-  },
-  "areaServed": "Global",
-  "serviceType": [
-    "Handball Live Scores",
-    "Handball Match Commentary",
-    "Handball Match Analysis & Statistics",
-    "Handball Live Match Tracking",
-    "Multiple Leagues & Tournaments",
-    "Fantasy Handball Integration",
-    "Handball Betting Odds API"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies"
-  ]
-};
 
 
 
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Handball Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Handball Live Line API is a data service that provides real-time updates on handball matches, including live scores, player stats, match commentary, and odds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I use a Handball Live Line API for my app or platform?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Using a Handball API ensures accurate, fast, and automated match data delivery, enhancing user experience and engagement across apps, websites, and fantasy platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide Handball Live Score API integration services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Comfygen offers full support for Handball Live Score API integration, including custom implementation for sports, fantasy, and gamming platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which data can I get from your Handball API services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Handball API services provide live scores, match stats, team/player data, odds, schedules, and coverage of national and international handball leagues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is your Handball Data Feed API suitable for gamming apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. We offer a live line handball data API with accurate pre-match and in-play odds suitable for sportsbooks and gamming apps."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I buy a Handball API for my fantasy platform?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can buy Handball API access from us for use in fantasy sports applications, live score widgets, and fan engagement tools."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you cover all major handball leagues with your API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our Handball League API includes coverage of top national and international leagues, tournaments, and events."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is included in your Handball Match API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Handball Match API delivers match schedules, team line-ups, in-game events, player stats, live scores, and post-match summaries."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I customize the Handball Live Stats API as per my needs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We offer fully customizable Handball Live Stats API services tailored to your unique business or app requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What makes Comfygen a reliable Handball API service provider?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Comfygen offers years of experience, accurate data, 24/7 support, and scalable API, making us a trusted Handball API service provider."
-      }
-    }
-  ]
-};
+
+
+
+
 
 
 
@@ -277,154 +109,362 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Handball Live Score API Integration | Sports Data API Provider",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get live handball data and score updates with Comfygen’s Handball Live Line API. Our integration delivers accurate, fast, and scalable data solutions for sports apps and websites.",
+      "url": "https://www.comfygen.com/handball-live-line-api-development",
+      "mainEntityOfPage": "https://www.comfygen.com/handball-live-line-api-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Handball Live Scores",
+        "Handball Match Commentary",
+        "Live Match Tracking",
+        "handball odds API",
+        "live line handball data API",
+        "Handball data feed API",
+        "Handball API service"
+
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB"],
+
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Best Handball Live Line API Integration Services",
+      "image": "Hero section image",
+      "description": "Comfygen offers top-tier Handball Live Line API solutions with real-time scores, live match data, and seamless integration. Power your sports or betting platform with accurate handball insights.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "369"
+      }
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Handball Live Line API",
+        "item": "https://www.comfygen.com/handball-live-line-api-development"
+
+      }]
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is a Handball Live Line API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Handball Live Line API is a data service that provides real-time updates on handball matches, including live scores, player stats, match commentary, and odds."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why should I use a Handball Live Line API for my app or platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using a Handball API ensures accurate, fast, and automated match data delivery, enhancing user experience and engagement across apps, websites, and fantasy platforms."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you provide Handball Live Score API integration services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Comfygen offers full support for Handball Live Score API integration, including custom implementation for sports, fantasy, and gaming platforms."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Which data can I get from your Handball API services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Handball API services provide live scores, match stats, team/player data, odds, schedules, and coverage of national and international handball leagues."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Is your Handball Data Feed API suitable for gaming apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We offer a live handball data API with accurate pre-match and in-play odds suitable for sportsbooks and gaming apps."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can I buy a Handball API for my fantasy platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can buy Handball API access from us for use in fantasy sports applications, live score widgets, and fan engagement tools."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you cover all major handball leagues with your API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our Handball League API includes coverage of top national and international leagues, tournaments, and events."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "What is included in your Handball Match API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Handball Match API delivers match schedules, team line-ups, in-game events, player stats, live scores, and post-match summaries."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can I customize the Handball Live Stats API as per my needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer fully customizable Handball Live Stats API services tailored to your unique business or app requirements."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "What makes Comfygen a reliable Handball API service provider?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Comfygen offers years of experience, accurate data, 24/7 support, and scalable API, making us a trusted Handball API service provider."
+        }
+
+
+      }]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ];
+
+
   return (
     <>
-  <Head>
-    <title>Handball Live Line API | Comfygen Technologies</title>
-    <meta
-      name="description"
-      content="Comfygen offers expert Handball Live Line API Integration services, providing real-time handball data, livescore widgets, and Live Line API integration for your platform."
-    />
-    <meta
-      name="keywords"
-      content="handball live line API, handball live line API, Handball API, live handball data, handball livescore widgets, handball odds API, live line handball data API, handball API livescore, Handball API services, Handball data feed API, live handball, live score handball API, handball data coverage API, Handball match API, Handball data API provider, Handball live score API integration, Handball live stats API, Handball API service"
-    />
-    <link
-      rel="canonical"
-      href="https://www.comfygen.com/handball-live-line-api-development"
-    />
-    <meta
-      name="robots"
-      content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-    />
-    <meta charSet="UTF-8" />
-    <meta
-      property="og:title"
-      content="Handball Live Line API | Real-Time Handball Data & Betting API Solutions"
-    />
-    <meta
-      property="og:description"
-      content="Get custom Handball Live Line API, live scores, stats, and gamming  integration services from Comfygen. Trusted Handball API provider for apps, websites"
-    />
-    <meta property="schema:type" content="LocalBusiness" />
-    <meta name="copyright" content="Comfygen Private Limited" />
-    <meta name="language" content="en-us" />
-    <meta
-      name="abstract"
-      content="Top Handball Live Line API Provider Company"
-    />
-    <meta
-      name="summary"
-      content="Comfygen provides scalable Handball Live Line API services with real-time scoring, stats, and global handball league coverage."
-    />
-    <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
-    <meta name="reply-to" content="sales@comfygen.com" />
-    <meta
-      name="owner"
-      content="Founder of Handball Live Line API services for startups and enterprises. Specializing in real-time handball scores, stats, and odds integration."
-    />
-    <meta
-      name="Best Handball Live Line API service Provider"
-      content="Comfygen is a trusted Handball API provider worldwide."
-    />
-    <meta name="category" content="Handball Live Line API" />
-    <meta name="coverage" content="Worldwide" />
-    <meta name="distribution" content="Global" />
-    <meta name="rating" content="General" />
-    <meta name="subtitle" content="Best Handball Live Line API" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="fb:page_id" content="110909321596135" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:country-name" content="India, USA, UK, UAE" />
-    <meta name="og:latitude" content="26.912434°" />
-    <meta name="og:longitude" content="75.787271°" />
-    <meta
-      property="og:type"
-      content="Handball Live Line API Services Provider"
-    />
+      <Head>
+        <title>Handball Live Line API | Comfygen Technologies</title>
+        <meta
+          name="description"
+          content="Comfygen offers expert Handball Live Line API Integration services, providing real-time handball data, livescore widgets, and Live Line API integration for your platform."
+        />
+        <meta
+          name="keywords"
+          content="Handball Live Scores,Handball Match Commentary,Live Match Tracking, handball odds API, live line handball data API, Handball data feed API,Handball API service"
+        />
 
-    {/* Open Graph */}
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Comfygen Technologies" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="en_CA" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:locale:alternate" content="en_DE" />
-    <meta property="og:locale:alternate" content="en_AE" />
-    <meta property="fb:page_id" content="110909321596135" />
-    <meta property="og:email" content="sales@comfygen.com" />
-    <meta property="og:phone_number" content="+91-958-786-7258" />
-    <meta property="og:image" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
-    <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Handball Live Line API" />
-    <meta property="og:url" content="https://www.comfygen.com/handball-live-line-api-development" />
-    <meta property="og:title" content="Handball Live Line API | Real-Time Handball Data & Betting API Solutions" />
-    <meta property="og:description" content="Get custom Handball Live Line API, live scores, stats, and integration services from Comfygen. Trusted Handball API provider for apps, websites." />
+        {/* <!-- Canonical Tag --> */}
+        <link rel="canonical" href="https://www.comfygen.com/handball-live-line-api-development" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Handball Live Line API | Real-Time Handball Data & Betting API Solutions" />
-    <meta name="twitter:description" content="Get expert Handball Live Line API services for real-time match data, stats. Custom APIs for apps, websites & fantasy sports platforms." />
-    <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
-    <meta name="twitter:site" content="@comfygentech" />
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
-    {/* Updated JSON-LD schema for SoftwareApplication */}
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: "Handball Live Line API",
-        operatingSystem: "Web, Android, iOS",
-        applicationCategory: "SportsApplication",
-        offers: {
-          "@type": "Offer",
-          price: "Contact Us - 9587867258",
-          priceCurrency: "INR",
-          availability: "https://schema.org/InStock"
-        },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "300"
-        },
-        publisher: {
-          "@type": "Organization",
-          name: "Comfygen"
-        }
-      })}
-    </script>
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    {/* Structured data scripts */}
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-    />
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-    />
-  </Head>
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="My App" />
+
+        {/* <!-- New in iOS6 --> */}
+        {/* <!-- Author and Company Information --> */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+        {/* <!-- SEO Meta --> */}
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+        {/* <!-- Geo Location Meta --> */}
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Handball Live Line API Integration | Real-Time Handball Data Solutions" />
+        <meta name="twitter:description" content=" Comfygen provides expert Handball Live Line API integration services with real-time scores, live match updates, and data widgets. Enhance your sports platform with accurate handball insights." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-api-og-image.webp" />
+        <meta property="og:image:alt" content="Handball Live Line API Provider" />
+        <meta property="og:url" content="https://www.comfygen.com/handball-live-line-api-development" />
+        <meta property="og:title" content="Real-Time Handball Live Line API Provider | Comfygen Sports API Solutions" />
+        <meta property="og:description" content="Integrate Comfygen’s Handball Live Line API to access real-time match stats, scores, and event data. Build powerful handball apps and platforms with reliable live data feeds." />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+
+      </Head>
 
 
       <Header />
-    
+
       <div className="overflow-hidden ">
-        
+
         <HeroSectionForAllPages
           heading="Handball Live Line API"
           subhead="Elevate Your Sports Platform with Our Handball Live Line API"
@@ -438,29 +478,29 @@ export default function Ecommerce(props) {
           bgImage="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-live-line-api-hero1.webp"
         />
 
-        
+
         <AboutSection
           title="About Company"
           heading="Step up with a Trusted Handball Live Line API Provider Company"
-          description1="At Comfygen, we provide reliable and accurate Handball Live Line API services for businesses looking to offer live sports data on their platforms. Our APIs are designed to deliver real-time handball scores, match statistics."   
-          description2="With years of experience in software development and API integration, we understand what clients need—fast, flexible, and dependable solutions. Whether you're building a sports website, mobile app, fantasy handball platform, or a live gaming dashboard, we offer full support and easy integration of our handball data feed APIs."   
-          description3="We cover everything from international handball leagues, team data, and player stats to live score updates, handball odds, and detailed match coverage. Our team ensures your platform receives timely updates and high-quality data every step of the way."   
-          description4="Choosing Comfygen means working with professionals who value accuracy, transparency, and long-term collaboration. We focus on meeting your specific requirements while delivering a smooth and efficient development process."   
-          description5="If you are looking for a reliable handball API service provider, we are here to help. Let’s work together to build a solution that keeps your users informed and engaged throughout every match."   
-           
+          description1="At Comfygen, we provide reliable and accurate Handball Live Line API services for businesses looking to offer live sports data on their platforms. Our APIs are designed to deliver real-time handball scores, match statistics."
+          description2="With years of experience in software development and API integration, we understand what clients need—fast, flexible, and dependable solutions. Whether you're building a sports website, mobile app, fantasy handball platform, or a live gaming dashboard, we offer full support and easy integration of our handball data feed APIs."
+          description3="We cover everything from international handball leagues, team data, and player stats to live score updates, handball odds, and detailed match coverage. Our team ensures your platform receives timely updates and high-quality data every step of the way."
+          description4="Choosing Comfygen means working with professionals who value accuracy, transparency, and long-term collaboration. We focus on meeting your specific requirements while delivering a smooth and efficient development process."
+          description5="If you are looking for a reliable handball API service provider, we are here to help. Let’s work together to build a solution that keeps your users informed and engaged throughout every match."
+
           imageSrc="https://www.comfygen.com/comfygen-images/handball-live-line-api-development/handball-live-line-api-about.webp"
           link="/about-us"
           linkText="Explore More"
-          
+
         />
 
         <ContactFromCenter />
 
-        <ServicesSection 
+        <ServicesSection
           heading="Turbocharged Live Line API Solutions for Every Auto Racing Use Case"
           subtitle=""
           servicesData={JSON_DATA.servicesData} />
-          
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -477,7 +517,7 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
+
         <ProcessSection
           title="Step-by-Step Handball Live Line API Integration Process"
           description="We follow a structured and client-focused approach to deliver reliable and scalable Handball Live Line API solutions. Each step is executed with precision to ensure functionality, efficiency, and seamless integration."
@@ -505,7 +545,7 @@ export default function Ecommerce(props) {
             "Trusted Handball data API provider for global sport brands"
           ]}
         />
-         {/* <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  /> */}
+        {/* <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  /> */}
 
 
         <Faq
