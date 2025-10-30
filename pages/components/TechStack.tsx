@@ -12,11 +12,11 @@ export default function Tech({ title, description, filterCategory = [], customTe
     "backend": [
       { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
       { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
-      { img: "https://www.comfygen.com/comfygen-images/comfygen/express-js.webp", alt: 'Express js', name: "Express js", num: "3" },
-      { img: "https://www.comfygen.com/comfygen-images/comfygen/sails-js-.webp", alt: 'Sails js', name: "Sails js", num: "4" },
+      { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
+      { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
       { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
-      { img: "https://www.comfygen.com/comfygen-images/comfygen/django-icon.webp", alt: 'Django', name: "Django", num: "6" },
-      { img: "https://www.comfygen.com/comfygen-images/comfygen/Python-icon.webp", alt: 'Python', name: "Python", num: "7" },
+      { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
+      { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
       { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
     ],
     "frontend": [
@@ -35,14 +35,14 @@ export default function Tech({ title, description, filterCategory = [], customTe
     "Blockchain network ": [
       { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
       { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
-      { img: "/svg/tech/azure-original.svg", alt: 'Solana', name: "Solana", num: "3" },
-      { img: "/svg/tech/azure-original.svg", alt: 'Cardano', name: "Cardano", num: "4" },
-      { img: "/svg/tech/azure-original.svg", alt: 'EOS', name: "EOS", num: "5" },
+      { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
+      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
+      { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
     ],
     "Wallets": [
-      { img: "/svg/tech/googlecloud-original.svg", alt: 'Binance', name: "Binance", num: "1" },
+      { img: "https://www.comfygen.com/img/stackimg/binance.svg", alt: 'Binance', name: "Binance", num: "1" },
       { img: "/svg/tech/aws-logo.svg", alt: 'Coinbase', name: "Coinbase", num: "2" },
-      { img: "/svg/tech/azure-original.svg", alt: 'trust wallet', name: "trust wallet", num: "3" },
+      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'trust wallet', name: "trust wallet", num: "3" },
       { img: "/svg/tech/azure-original.svg", alt: 'Walletconnwect', name: "Walletconnwect", num: "4" },
     ],
   };
@@ -105,8 +105,8 @@ export default function Tech({ title, description, filterCategory = [], customTe
               ))}
             </div>
 
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 mt-6 max-h-[275px] overflow-y-auto  overflow-hidden  head-scroll">
-              {filteredTechData[techCategories[tech]]?.map((elem:any) => (
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 divide-x-1  relative pt-6 capitalize">
+              {filteredTechData[techCategories[tech]]?.map((elem: any) => (
                 <div
                   key={elem.num}
                   className="flex items-center border bg-[#181b24] border-white/10 sm:px-6 px-2 py-2 hover:shadow-lg transition-all cursor-pointer group"
@@ -115,15 +115,11 @@ export default function Tech({ title, description, filterCategory = [], customTe
                     <Image
                       src={elem.img}
                       alt={elem.name}
-                      width={297}
-                      height={192}
+                      width={50}
+                      height={50}
                       quality={50}
                       priority
-                      unoptimized
-                      sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 297px"
-                      style={{ width: "100%", height: "auto" }}
-                      placeholder="blur"
-                      blurDataURL="/blur-placeholder.webp"
+
                     />
                   </div>
                   <h3 className="sm:text-lg text-sm sm:font-semibold font-medium text-white sm:ml-3">{elem.name}</h3>

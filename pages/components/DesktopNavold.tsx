@@ -391,31 +391,31 @@ const Company = [
 
 ];
 export default function DesktopNav(props: any) {
-  const [showNav, setShowNav] = useState(0);
-  const [menu] = useState(false);
-  function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
+//   const [showNav, setShowNav] = useState(0);
+//   const [menu] = useState(false);
+//   function toggleSlideover() {
+//     document
+//       .getElementById("slideover-container")
+//       .classList.toggle("invisible");
+//     document.getElementById("slideover-bg").classList.toggle("opacity-0");
+//     document.getElementById("slideover-bg").classList.toggle("opacity-50");
+//     document.getElementById("slideover").classList.toggle("translate-x-full");
+//   }
 
-  useEffect(() => {
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 50) {
-        $('.headered').addClass('active');
-      } else {
-        $('.headered').removeClass('active');
-      }
-    });
-  }, []);
+//   useEffect(() => {
+//     $(window).on('scroll', function () {
+//       if ($(window).scrollTop() > 50) {
+//         $('.headered').addClass('active');
+//       } else {
+//         $('.headered').removeClass('active');
+//       }
+//     });
+//   }, []);
 
 
   return (
     <div className="headered w-full">
-    <nav className="z-20 flex items-center justify-between w-full px-4 py-0 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 md:px-0 ">
+    {/* <nav className="z-20 flex items-center justify-between w-full px-4 py-0 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 md:px-0 ">
       <Link
         passHref={true}
         href="/"
@@ -805,7 +805,7 @@ export default function DesktopNav(props: any) {
           </Link>
         </div>
       </div>
-    </nav>
+    </nav> */}
   </div>
   );
 }

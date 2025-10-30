@@ -37,6 +37,12 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+
+
+        <Script
+          src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+          strategy="lazyOnload"
+        />
       </body>
     </Html>
   );

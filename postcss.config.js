@@ -2,8 +2,9 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+    cssnano: { preset: 'default' },
   },
-}
+};
 
 // postcss.config.js
 // const purgecss = require('@fullhuman/postcss-purgecss')({
