@@ -15,21 +15,21 @@ export default function HeroSection(props: any) {
   //   }
   // }, []);
 
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    // Function to check screen width
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 640); // Tailwind's `sm` breakpoint
-    };
+  // useEffect(() => {
+  //   // Function to check screen width
+  //   const checkScreenSize = () => {
+  //     setIsMobile(window.innerWidth < 640); // Tailwind's `sm` breakpoint
+  //   };
 
-    // Initial check
-    checkScreenSize();
+  //   // Initial check
+  //   checkScreenSize();
 
-    // Add resize event listener
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+  //   // Add resize event listener
+  //   window.addEventListener('resize', checkScreenSize);
+  //   return () => window.removeEventListener('resize', checkScreenSize);
+  // }, []);
 
   const data = props.btnLink;
   if (!data) {
@@ -79,31 +79,31 @@ export default function HeroSection(props: any) {
       label: 'Client Happy',
       color: 'text-orange-500'
     },
- 
+
   ];
 
   return (
     <section
-      className={`relative bg-no-repeat bg-cover ${isMobile ? "bg-left" : "lg:bg-center"}`}
-      style={{
-        backgroundColor: isMobile ? "#5951cd" : "transparent",
-      }}
+      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent`}
+    // style={{
+    //   backgroundColor: isMobile ? "#5951cd" : "transparent",
+    // }}
     >
-      {!isMobile && (
-        <Image
-          src={props.bgImage}
-          alt="Comfygen Hero Background"
-          fill
-          className="object-cover object-center -z-10"
-          priority
-          fetchPriority="high"
-          sizes="100vw"
-          placeholder="blur"
-          blurDataURL="/blur-placeholder.webp"
-          quality={75}
-          loading="eager"
-        />
-      )}
+
+      <Image
+        src={props.bgImage}
+        alt="Comfygen Hero Background"
+        fill
+        className="object-cover object-center -z-10 hidden sm:block"
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        placeholder="blur"
+        blurDataURL="/blur-placeholder.webp"
+        quality={75}
+        loading="eager"
+      />
+
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">

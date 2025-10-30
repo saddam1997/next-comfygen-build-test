@@ -1051,7 +1051,7 @@ const cryptoDevelopment1 = [
 export default function DesktopNav(props: any) {
   const [activeTab, setActiveTab] = useState("Tab1");
   // Function to handle tab click
-  const handleTabClick = (tab:string) => {
+  const handleTabClick = (tab:any) => {
     setActiveTab(tab);
   };
 
