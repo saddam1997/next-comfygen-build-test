@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import {
   MdKeyboardArrowDown,
@@ -1051,36 +1051,38 @@ const cryptoDevelopment1 = [
 export default function DesktopNav(props: any) {
   const [activeTab, setActiveTab] = useState("Tab1");
   // Function to handle tab click
-  const handleTabClick = (tab:any) => {
+  const handleTabClick = (tab: any) => {
     setActiveTab(tab);
   };
 
   const [showNav, setShowNav] = useState(0);
   const [menu] = useState(false);
+
+
   function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
+    // document
+    //   .getElementById("slideover-container")
+    //   .classList.toggle("invisible");
+    // document.getElementById("slideover-bg").classList.toggle("opacity-0");
+    // document.getElementById("slideover-bg").classList.toggle("opacity-50");
+    // document.getElementById("slideover").classList.toggle("translate-x-full");
   }
 
-  //  useEffect(() => {
-  //     const handleScroll = () => {
-  //       const header = document.querySelector(".headered");
-  //       if (!header) return;
-  
-  //       if (window.scrollY > 50) {
-  //         header.classList.add("active");
-  //       } else {
-  //         header.classList.remove("active");
-  //       }
-  //     };
-  
-  //     window.addEventListener("scroll", handleScroll);
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(".headered");
+      if (!header) return;
+
+      if (window.scrollY > 50) {
+        header.classList.add("active");
+      } else {
+        header.classList.remove("active");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // useEffect(() => {
   //   $(window).on("scroll", function () {

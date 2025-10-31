@@ -477,7 +477,7 @@ export default function Ecommerce(props) {
           description1="The global food delivery market is expanding rapidly as customers prefer faster, smarter, and contactless ways to order meals. By 2030, the industry is expected to surpass hundreds of billions in revenue, making a food delivery app an essential tool for restaurants, startups, and cloud kitchens to remain competitive."
           description2="Whether you manage a single outlet or operate multiple chains, a custom food delivery app ensures smooth operations with real-time order tracking, secure payments, and loyalty programs that keep customers coming back."
           description3="With Comfygen’s food delivery app development services, we help you scale your business, enhance customer satisfaction, and increase revenue growth."
-          imageSrc="https://www.comfygen.com/comfygen-images/food-delivery-app-development/food-delivery-app-development-new-about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/food-delivery-app-development/invest-food-delivery-app-development.webp"
           link="/about-us"
           linkText="Explore More"
           points={[

@@ -130,11 +130,11 @@ const Features: React.FC = () => {
       <div className="lg:py-16 py-10 bg-[#F5F5F9]">
         {/* Header */}
         <div className="space-y-2 text-center">
-          <h2 className="xl:text-4xl text-3xl font-bold">
-           We Develop Food Delivery Apps With Advanced Panel Features
+          <h2 className="xl:text-4xl text-black text-3xl font-bold">
+            We Develop Food Delivery Apps With Advanced Panel Features
           </h2>
-          <p className="text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
-            At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to ensure a smooth experience for customers, restaurants, drivers, and administrators. Our food delivery apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform.
+          <p className="text-black max-w-6xl mx-auto lg:px-8 px-4">
+            At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform.
           </p>
         </div>
 
@@ -145,8 +145,8 @@ const Features: React.FC = () => {
               {/* Button */}
               <div
                 className={` flex justify-center border border-gray-300 sm:border-none cursor-pointer transition-all duration-200 ${openedFeature?.id === feature.id
-                    ? "bg-[#5556D1] text-white border-[#5556D1]"
-                    : "bg-white hover:bg-gray-100"
+                  ? "bg-[#5556D1] text-white border-[#5556D1]"
+                  : "bg-white hover:bg-gray-100"
                   }`}
               >
                 <button
@@ -174,8 +174,8 @@ const Features: React.FC = () => {
                   )}
                   {feature.additionalDetails.map((detail: any, index: number) => (
                     <ul className="max-w-xl mx-auto" key={index}>
-                      <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-gray-700">
-                       {detail.details}
+                      <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-black">
+                        {detail.details}
                       </li>
                     </ul>
                   ))}
@@ -205,7 +205,7 @@ const Features: React.FC = () => {
                 (detail: any, index: number) => (
                   <ul className="max-w-xl" key={index}>
                     <li className="py-3 flex items-center gap-3">
-                      <ImArrowRight className="text-[#5556D1]"/><h3 className="text-gray-800">{detail.details}</h3>
+                      <ImArrowRight className="text-[#5556D1]" /><h3 className="text-black">{detail.details}</h3>
                     </li>
                   </ul>
                 )

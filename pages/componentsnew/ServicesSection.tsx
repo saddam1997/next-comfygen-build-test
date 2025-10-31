@@ -23,7 +23,7 @@ const ServiceSection: React.FC<FootballApiSectionProps> = ({ heading, subtitle, 
             {heading}
           </h2>
           {subtitle && (
-            <p className="text-md text-center text-gray-600" dangerouslySetInnerHTML={{__html: subtitle}} />
+            <p className="text-md text-center text-black" dangerouslySetInnerHTML={{__html: subtitle}} />
           )}
         </div>
         <div>

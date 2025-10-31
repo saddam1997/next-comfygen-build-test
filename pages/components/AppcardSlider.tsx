@@ -61,8 +61,8 @@ function AppcardSlider({
       <div className="container mb-8 mx-auto bg-[#F5F5F9] ">
         <div className="flex items-center justify-between">
           <div className="space-y-2 p-2">
-            <h2 className="xl:text-4xl text-2xl text-[#212121] font-bold">{heading}</h2>
-            <p className=" text-[#212121] font-normal text-sm">{description}</p>
+            <h2 className="xl:text-4xl text-2xl text-black font-bold">{heading}</h2>
+            <p className=" text-black font-normal text-sm">{description}</p>
           </div>
           <div className="md:flex hidden items-center gap-4 px-4">
             <button
@@ -107,9 +107,9 @@ function AppcardSlider({
                         />
                       </div>
                       <div className="text-center">
-                        <h3 className="text-[#212121] text-lg font-semibold">{item.title}</h3>
+                        <h3 className="text-black text-lg font-semibold">{item.title}</h3>
                         <p
-                          className="text-[#212121] text-sm"
+                          className="text-black text-sm"
                           dangerouslySetInnerHTML={{ __html: item.description }}
                         />
 
