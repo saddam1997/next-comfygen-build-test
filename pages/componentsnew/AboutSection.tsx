@@ -34,9 +34,9 @@ const AboutSection = ({
                 <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
                     <div>
                         <Image
-                            width={907}
-                            height={762}
-                            unoptimized
+                            width={640}
+                            height={360}
+                            priority
                             className="rounded-2xl"
                             src={imageSrc}
                             alt="About Us"

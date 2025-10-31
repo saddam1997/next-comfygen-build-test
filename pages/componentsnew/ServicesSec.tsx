@@ -72,7 +72,7 @@ const ServiceContent = ({ service }) => (
       {service.features && service.features.length > 0 && (
         <div className="flex items-center justify-start">
           <ul className="space-y-2 text-white">
-            {service.features?.map((feature, index) => (
+            {service.features?.map((feature:any, index:any) => (
               <li
                 key={index}
                 className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links"

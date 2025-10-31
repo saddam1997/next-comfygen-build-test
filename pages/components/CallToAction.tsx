@@ -37,11 +37,9 @@ const CallToAction = ({
                                 className="action-img hidden sm:block"
                                 src={imageSrc}
                                 alt={imageAlt || "Call to Action"}
-                                width={800}
-                                height={600}
-                                unoptimized
-                                priority={true}
-                                quality={75}
+                                width={640}
+                                height={360}
+                                priority
                             />
                         </LazyLoad>
                     </div>

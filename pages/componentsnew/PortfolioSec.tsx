@@ -28,12 +28,10 @@ export default function Tech({ techData, heading, description, description1 = ""
                   <Image
                     src={elem.img}
                     alt={elem.head}
-                    unoptimized
                     width={500}
                     height={300}
                     className="w-full rounded-xl"
                     priority
-                    quality={75}
                   />
                 </div>
                 <div className="flex items-center">

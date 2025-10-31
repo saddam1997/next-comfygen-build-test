@@ -9,7 +9,7 @@ import { IconBrain, IconBroadcast, IconDiamond, IconServer, IconShieldCheck, Ico
 import Header from "../componentsnew/Header";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
+// import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import IndustriesServe from "../componentsnew/IndustriesServe";
 import HireDeveloper from "../componentsnew/HireDeveloper";
@@ -156,9 +156,7 @@ const technologyData = [
 ];
 
 
-
-
-export default function Blockchain(props) {
+export default function Blockchain(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -498,7 +496,7 @@ export default function Blockchain(props) {
         imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
         imageAlt="Future of Technology"
       />
-      <ContactFromCenter />
+      {/* <ContactFromCenter /> */}
       <ProcessSec
         title="Our Custom Blockchain Development Process"
         description="Comfygen, a leading custom blockchain development company, follows a strategic and agile process to deliver innovative custom blockchain development solutions tailored to your business needs. Here’s how we do it"
