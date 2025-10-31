@@ -156,92 +156,6 @@ const technologyData = [
 ];
 
 
-const faqData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Custom Blockchain Development Company?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A custom blockchain development company specializes in creating tailored blockchain solutions for businesses. These companies design and develop private or public blockchain networks, decentralized applications (dApps), smart contracts, and more, to meet specific business requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why Should I Choose a Custom Blockchain Development Company?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Choosing a custom blockchain development company ensures your project is built to address your unique business needs. You get secure, scalable, and efficient blockchain solutions customized for industries like finance, healthcare, supply chain, gaming, and more."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How Much Does Custom Blockchain Development Cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost of custom blockchain development varies depending on the complexity, features, and technology stack of the project. Typically, factors such as network type (private or public), dApp functionalities, smart contracts, and integration with existing systems influence pricing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which Platforms Do You Use for Custom Blockchain Development Services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We develop blockchain solutions on popular platforms like Ethereum, Hyperledger, Polygon, Solana, Binance Smart Chain, and more. Our team ensures the right platform is selected based on your business goals and project requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can You Provide Custom Blockchain Development Services on the Polygon Network?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer custom blockchain development services on the Polygon network. Polygon provides faster and more affordable transactions, making it an excellent choice for scalable and efficient blockchain applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How Long Does It Take to Develop a Custom Blockchain Solution?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The development timeline depends on the project scope and requirements. On average, a basic custom blockchain solution may take 3-6 months, while complex projects with multiple integrations can take longer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do You Offer Support and Maintenance After Blockchain Development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, as a reliable custom blockchain development company, we offer continuous support and maintenance services. This includes regular updates, security audits, performance optimization, and feature enhancements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Types of Custom Blockchain Solutions Do You Develop?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We develop a wide range of custom blockchain solutions including cryptocurrency exchanges, NFT marketplaces, decentralized finance (DeFi) platforms, supply chain management systems, and enterprise blockchain networks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between private and public blockchain development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Private blockchain development creates permissioned networks accessible only to selected users, offering more control, privacy, and faster transactions. Public blockchain development builds open, decentralized networks where anyone can participate, ensuring transparency and trust."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which should I choose: private or public blockchain development services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If your business requires strict access control, enhanced privacy, and efficiency, private blockchain development is ideal. For decentralized applications requiring transparency and broader user participation, public blockchain development is the better choice."
-      }
-    }
-  ]
-};
 
 
 export default function Blockchain(props) {
@@ -255,24 +169,213 @@ export default function Blockchain(props) {
     setTalkToExpertModal(false);
   };
 
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Custom Blockchain Development Service",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a leading custom blockchain development company offering secure, scalable, and enterprise-grade blockchain solutions. We specialize in private, public, and hybrid blockchain networks, smart contract development, DeFi platforms, and decentralized applications for startups and enterprises.",
+      "url": "https://www.comfygen.com/custom-blockchain-development",
+      "mainEntityOfPage": "https://www.comfygen.com/custom-blockchain-development-company ",
+      "areaServed": "Global",
+      "serviceType":
+        [
+          "Custom Blockchain Development",
+          "Custom Blockchain Development company",
+          "Enterprise Blockchain Solutions",
+          "DeFi and NFT Blockchain Solutions",
+          "Private and Public Blockchain Development",
+          "Hybrid Blockchain Network Development",
+          "Blockchain Consulting Services",
+          "Blockchain Security Auditing",
+          "Supply Chain Blockchain Solutions",
+          "Blockchain for Finance and Banking",
+          "Blockchain Integration Services",
+          "Crypto Exchange and Wallet Development",
+          "Blockchain-Based Identity Management Systems",
+        ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Rhederstraße 34",
+        "addressLocality": "Euskirchen",
+        "postalCode": "53881",
+        "addressCountry": "Germany"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "GER"],
+
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "name": "Custom Blockchain Development Company | Secure & Scalable Blockchain Solutions",
+      "image": "https://www.comfygen.com/gallery/about-images/blockchain-development-about-image.webp",
+      "description": "Comfygen is a leading custom blockchain development company delivering secure, scalable, and enterprise-grade blockchain solutions. We specialize in private and public blockchain networks, smart contract development, DeFi platforms, token creation, and decentralized application (DApp) development for startups and enterprises.",
+      "url": "https://www.comfygen.com/custom-blockchain-development-company ",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "442"
+      }
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/ "
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": " Blockchain Development Company",
+          "item": "https://www.comfygen.com/blockchain-development   "
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Blockchain Development Company",
+          "item": "https://www.comfygen.com/custom-blockchain-development-company  "
+        }
+      ]
+    }
+  ];
+
+
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>
-          Custom Blockchain Development Company | Blockchain Solutions – Comfygen
-
-        </title>
+        <title> Custom Blockchain Development Company | Enterprise Blockchain Solutions </title>
         <meta
           name="description"
-          content="Comfygen is a custom blockchain development company delivering secure, scalable, and future-ready solutions. From DeFi platforms and NFT marketplaces to crypto wallets and enterprise apps."
+          content="Comfygen custom blockchain development company offering secure, scalable, and enterprise-level blockchain solutions. Build private, public, and hybrid blockchain networks."
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/custom-blockchain-development-company"
+
+        <meta
+          name="keywords"
+          content="Custom Blockchain Development, Custom Blockchain Development company, Enterprise Blockchain Solutions, DeFi and NFT Blockchain Solutions, Private and Public Blockchain Development, Hybrid Blockchain Network Development, Blockchain Consulting Services, Blockchain Security Auditing, Supply Chain Blockchain Solutions, Blockchain for Finance and Banking, Blockchain Integration Services, Crypto Exchange and Wallet Development, Blockchain-Based Identity Management Systems"
         />
+
+        {/* <!-- Canonical Tag --> */}
+        <link rel="canonical" href="https://www.comfygen.com/custom-blockchain-development-company " />
+
+        {/* <!-- Robots → */}
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+        {/* <!-- Compatibility Meta → */}
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -281,49 +384,69 @@ export default function Blockchain(props) {
         <meta name="viewport-fit" content="cover" />
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
+        <meta name="apple-mobile-web-app-title" content="Custom Blockchain development company" />
+
+
+        {/* <!-- New in iOS6 --> */}
+        {/* <!-- Author and Company Information --> */}
+
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+        {/* <!-- SEO Meta --> */}
         <meta name="googlebot" content="all" />
         <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="coverage" content="Worldwide" />
         <meta name="language" content="English" />
+
+
+        {/* <!-- Geo Location Meta --> */}
         <meta name="geo.region" content="IN" />
         <meta name="geo.region" content="US" />
         <meta name="geo.region" content="CA" />
         <meta name="geo.region" content="GB" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
-        <meta name='og:title' content='Custom Blockchain development Company' />
+        <meta name="geo.region" content="GER" />
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+
         <meta name='og:type' content='website' />
-        <meta name='og:url' content='https://www.comfygen.com/custom-blockchain-development-company' />
-        <meta name='og:site_name' content='Comfygen Private Limited' />
-        <meta name='og:description' content='As a trusted custom blockchain development company, Comfygen offers innovative custom blockchain development services such as NFT solutions, smart contracts, and token development for diverse industries.' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
         <meta name='fb:page_id' content='110909321596135' />
         <meta name='og:email' content='sales@comfygen.com' />
         <meta name='og:phone_number' content='+91-958-786-7258' />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Custom Blockchain development Company" />
-        <meta name="twitter:description" content=" As a trusted custom blockchain development company, Comfygen offers innovative custom blockchain development services such as NFT solutions, smart contracts, and token development for diverse industries." />
+        <meta name="twitter:title" content="Custom Blockchain Development Company | Enterprise Blockchain Solutions by Comfygen" />
+        <meta name=" twitter: description" content="Build secure, scalable, and customized blockchain solutions with Comfygen. Our blockchain development experts design private, public, and hybrid networks for businesses worldwide." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/custom-blockchain-development-company/custom-blockchain-development-company.webp" />
-        <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/custom-blockchain-development-company/custom-blockchain-development-company.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/custom-blockchain-development-company/custom-blockchain-development-company.webp" />
-        <meta property="og:image:alt" content="Custom Blockchain development company" />
+        <meta property="og:image:alt" content="Custom Blockchain Development Company" />
         <meta property="og:url" content="https://www.comfygen.com/custom-blockchain-development-company" />
-        {/* <meta property="og:title" content="Custom Blockchain development Services" /> */}
-        <meta property="og:description" content="As a trusted custom blockchain development company, Comfygen offers innovative custom blockchain development services such as NFT solutions, smart contracts, and token development for diverse industries." />
+        <meta property="og:title" content="Comfygen Custom Blockchain Development Company | Secure & Scalable Solutions" />
+        <meta property="og: description" content="Build secure, scalable, and enterprise-grade blockchain solutions with Comfygen. We specialize in private, public, and hybrid blockchain networks, smart contract development, and decentralized application design." />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
       <div className="">
@@ -334,11 +457,11 @@ export default function Blockchain(props) {
       <BlockchainNav />
       <HeroSectionForAllPages
         heading="Custom Blockchain Development Company"
-        ptag="Comfygen, the custom blockchain development company, creates tailored blockchain solutions that drive innovation and business growth. From DeFi platforms and NFT marketplaces to crypto wallets and enterprise-level applications, our blockchain expert team delivers secure, scalable, and future-ready blockchain solutions customized to your business needs."
-        li="Tailored Blockchain Solutions "
-        li1="Expert Developers"
-        li2="SEnhanced Security"
-        li3="End-to-End Support"
+        ptag="As a leading custom blockchain development company, Confygen delivers specially designed, scalable, and transparent blockchain ecosystems that empower businesses to innovate with confidence. Our custom blockchain solutions are designed to meet diverse business goals—whether it’s building enterprise blockchain applications for financial transparency or developing decentralized apps (DApps) for secure digital transactions."
+        li="Custom Blockchain Solutions"
+        li1="Enterprise Blockchain Development"
+        li2="Smart Contract Integration"
+        li3="Blockchain Software Development Services"
         btnName="Talk With Expert"
         btnLink="/contact-us"
         openModal={openModal}
