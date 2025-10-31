@@ -455,7 +455,7 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <div className="overflow-hidden ">
         <div className=" ">
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/food-delivery-app-dev-hero-img.webp')]">
+          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/flower-delivery-app-development/food-delivery-app-development.webp')]">
             <HeroSectionForAllPages
               heading="Custom Food Delivery App Development Company in India"
               ptag="Comfygen Technologies is a leading food delivery app development company offering AI-based food delivery app development services. We build user-friendly food delivery apps with AI-powered food recommendation and blockchain-based security. Whether you’re a startup, restaurant, or enterprise, our online food ordering app development experts help you launch a high-performance food delivery app that drives growth."
@@ -477,7 +477,7 @@ export default function Ecommerce(props) {
           description1="The global food delivery market is expanding rapidly as customers prefer faster, smarter, and contactless ways to order meals. By 2030, the industry is expected to surpass hundreds of billions in revenue, making a food delivery app an essential tool for restaurants, startups, and cloud kitchens to remain competitive."
           description2="Whether you manage a single outlet or operate multiple chains, a custom food delivery app ensures smooth operations with real-time order tracking, secure payments, and loyalty programs that keep customers coming back."
           description3="With Comfygen’s food delivery app development services, we help you scale your business, enhance customer satisfaction, and increase revenue growth."
-          imageSrc="https://www.comfygen.com/image/food-delivery-app-development-about-img.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/food-delivery-app-development/food-delivery-app-development-new-about.webp"
           link="/about-us"
           linkText="Explore More"
           points={[

@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     id: 1,
     title: "Customer Panel",
     icon: <i className="fas fa-shopping-bag text-4xl"></i>,
-    img: "https://www.comfygen.com/image/customer-panel-food-delivery-app-development.webp",
+    img: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/customer-panel.webp",
     additionalDetails: [
       { details: "Easy Sign-Up & Social Login", emoji: "", content: "" },
       { details: "Browse Restaurants & Menus", emoji: "", content: "" },
@@ -30,7 +30,7 @@ const featuresData: Feature[] = [
     id: 2,
     title: "Restaurant Panel",
     icon: <i className="fas fa-mobile-alt text-4xl"></i>,
-    img: "https://www.comfygen.com/image/restaurant-panel-food-delivery-app-development.webp",
+    img: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
     additionalDetails: [
       { details: "Manage Menus & Pricing", emoji: "", content: "" },
       { details: "Accept/Reject Orders Instantly", emoji: "", content: "" },
@@ -45,7 +45,7 @@ const featuresData: Feature[] = [
   {
     id: 3,
     title: "Driver Panel",
-    img: "https://www.comfygen.com/image/admin-panel-food-delivery-app-development.webp",
+    img: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
     icon: <i className="fas fa-wallet text-4xl"></i>,
     additionalDetails: [
       { details: "Easy Registration & Profile Setup", emoji: "", content: "" },
@@ -61,7 +61,7 @@ const featuresData: Feature[] = [
   {
     id: 4,
     title: "Admin Panel",
-    img: "https://www.comfygen.com/image/driver-panel-food-delivery-app-development.webp",
+    img: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/admin-panel.webp",
     icon: <i className="fas fa-wallet text-4xl"></i>,
     additionalDetails: [
       { details: "Centralized Dashboard with Key Metrics", emoji: "", content: "" },
@@ -131,12 +131,10 @@ const Features: React.FC = () => {
         {/* Header */}
         <div className="space-y-2 text-center">
           <h2 className="xl:text-4xl text-3xl font-bold">
-            We Develop Astrology Apps With Advanced Panel Features
+           We Develop Food Delivery Apps With Advanced Panel Features
           </h2>
           <p className="text-gray-600 max-w-6xl mx-auto lg:px-8 px-4">
-            At Comfygen, we integrate cutting-edge features into our astrology
-            app development services to enhance user experience, streamline
-            management, and optimize astrology consultations.
+            At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to ensure a smooth experience for customers, restaurants, drivers, and administrators. Our food delivery apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform.
           </p>
         </div>
 
@@ -167,11 +165,10 @@ const Features: React.FC = () => {
                       <Image
                         src={feature.img}
                         alt={feature.title}
-                        width={400}
-                        height={300}
+                        width={640}
+                        height={360}
                         className="rounded-md w-full h-auto"
-                        quality={75}
-                        priority={true}
+                        priority
                       />
                     </div>
                   )}
@@ -196,11 +193,10 @@ const Features: React.FC = () => {
                 <Image
                   src={openedFeature.img}
                   alt={openedFeature.title}
-                  width={500}
-                  height={400}
+                  width={640}
+                  height={360}
                   className="rounded-lg border border-gray-200"
-                  quality={75}
-                  priority={true}
+                  priority
                 />
               </div>
             )}
