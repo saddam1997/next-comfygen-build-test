@@ -11,6 +11,14 @@ import ClientTestimonials from "./components/ClientTestimonials";
 import BlockchainFooter from "./componentsnew/blockchain-Footer";
 import EcommerceFooter from "./componentsnew/ecommerce-Footer";
 
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
+
 // import ProtectedLayoutWrapper from "./super-admin/layout";
 const blogPostSchema = {
   "@context": "https://schema.org",
@@ -155,7 +163,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
         </>
       ) : (
      
-        <main className="overflow-y-auto max-w-[1600px] mx-auto">
+        <main className={`${poppins.className} overflow-y-auto max-w-[1600px] mx-auto`}>
+          
           {/* <PagesTopLoader /> */}
           <Component {...pageProps} />
           {!router?.asPath?.includes("/crypto-trading-bot-development") &&

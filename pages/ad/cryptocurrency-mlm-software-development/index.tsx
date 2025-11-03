@@ -194,15 +194,26 @@ const ldJsonData = {
 export default function Ecommerce(props) {
 
   let { initialData } = props;
+  // useEffect(() => {
+  //   $(window).on('scroll', function () {
+  //     if ($(window).scrollTop() > 50) {
+  //       $('.headered').addClass('active');
+  //     } else {
+  //       $('.headered').removeClass('active');
+  //     }
+  //   });
+  // }, []);
+
+
   useEffect(() => {
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 50) {
-        $('.headered').addClass('active');
-      } else {
-        $('.headered').removeClass('active');
-      }
-    });
+    const handleScroll = () => {
+      const y = window.scrollY;
+      document.querySelector(".headered")?.classList.toggle("active", y > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   return (
     <>

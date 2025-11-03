@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { MdKeyboardArrowDown, MdMenuOpen, MdMenu ,MdAddCall} from "react-icons/md";
+import { MdKeyboardArrowDown, MdMenuOpen, MdMenu, MdAddCall } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
-import $ from "jquery";
+// import $ from "jquery";
 
 // const MobileApp = [
 //     { num: "1", name: "Mobile App Development", url: "/mobile-app-development" },
@@ -151,28 +151,28 @@ const Ecommerce = [
     num: "1",
     name: "Grocery App Development",
     url: "/ecommerce/grocery",
-},
-{
-  num: "2",
-  name: "FMCG App Development",
-  url: "/ecommerce/fmcg",
-},
-{
-  num: "3",
-  name: "Fashion App Development",
-  url: "/ecommerce/fashion",
-},
-{
-  num: "4",
-  name: "Water Delivery App Development",
-  url: "/water-delivery-app-development",
-},
-{
-  num: "5",
-  name: "Pizza Delivery App Development",
-  url: "/pizza-delivery-app-development",
-},
-  
+  },
+  {
+    num: "2",
+    name: "FMCG App Development",
+    url: "/ecommerce/fmcg",
+  },
+  {
+    num: "3",
+    name: "Fashion App Development",
+    url: "/ecommerce/fashion",
+  },
+  {
+    num: "4",
+    name: "Water Delivery App Development",
+    url: "/water-delivery-app-development",
+  },
+  {
+    num: "5",
+    name: "Pizza Delivery App Development",
+    url: "/pizza-delivery-app-development",
+  },
+
 ];
 
 const company = [
@@ -313,7 +313,7 @@ const cryptoDevelopment = [
   },
 ];
 
-export default function EcommerceNav (props: any) {
+export default function EcommerceNav(props: any) {
   const [activeTab, setActiveTab] = useState("Tab1");
   // Function to handle tab click
   const handleTabClick = (tab) => {
@@ -332,34 +332,50 @@ export default function EcommerceNav (props: any) {
   }
 
   useEffect(() => {
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 50) {
-        $(".headered").addClass("active");
+    const handleScroll = () => {
+      const header = document.querySelector(".headered");
+      if (!header) return;
+
+      if (window.scrollY > 50) {
+        header.classList.add("active");
       } else {
-        $(".headered").removeClass("active");
+        header.classList.remove("active");
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // useEffect(() => {
+  //   $(window).on("scroll", function () {
+  //     if ($(window).scrollTop() > 50) {
+  //       $(".headered").addClass("active");
+  //     } else {
+  //       $(".headered").removeClass("active");
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto">
       <div className="  flex gap-6 justify-end mx-10">
-              <p className="hidden lg:block">
-                <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
-                  <IoMdMail className=" mt-1" /> sales@comfygen.com
-                </a>
-              </p>
-      
-              <p className="hidden lg:block">
-                <a
-                  className="flex pt-1 gap-1"
-                  href="https://api.whatsapp.com/send?phone=919587867258"
-                >
-                  <MdAddCall className=" mt-1" />
-                  +91 9587867258
-                </a>
-              </p>
-            </div>
+        <p className="hidden lg:block">
+          <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
+            <IoMdMail className=" mt-1" /> sales@comfygen.com
+          </a>
+        </p>
+
+        <p className="hidden lg:block">
+          <a
+            className="flex pt-1 gap-1"
+            href="https://api.whatsapp.com/send?phone=919587867258"
+          >
+            <MdAddCall className=" mt-1" />
+            +91 9587867258
+          </a>
+        </p>
+      </div>
       <nav className="flex items-center justify-between px-4 py-0  md:px-0 relative 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto ">
         <div>
           <Link
@@ -437,15 +453,15 @@ export default function EcommerceNav (props: any) {
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                              Ecommerce Development
+                                Ecommerce Development
                               </p>
                               <span className="text-[#212121]/80 text-sm font-normal">
-                              Empowering Seamless Online Shopping
+                                Empowering Seamless Online Shopping
                               </span>
                             </div>
                           </div>
-                                                   
-                                                    
+
+
                         </ul>
                       </div>
 
@@ -472,7 +488,7 @@ export default function EcommerceNav (props: any) {
                             </div>
                           )}
 
-                           {/* {activeTab === "Tab2" && (
+                          {/* {activeTab === "Tab2" && (
                                 <ul className="text-sm font-medium space-y-2">
                                   {BlockchainSer.map((elem: any) => {
                                     const { name, num, url } = elem;
@@ -496,7 +512,7 @@ export default function EcommerceNav (props: any) {
                                 </ul>
                               )} */}
 
-                         
+
                         </div>
                       </div>
                       <div>
@@ -563,18 +579,18 @@ export default function EcommerceNav (props: any) {
                               src="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-solution.svg"
                               alt="Blockchain Solution"
                               height={40}
-                              width={40}  
+                              width={40}
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                              Ecommerce Solution
+                                Ecommerce Solution
                               </p>
                               <span className="text-[#212121]/80 text-sm font-normal">
-                              Future-Ready Ecommerce Solutions
+                                Future-Ready Ecommerce Solutions
                               </span>
                             </div>
                           </li>
-                           {/* <li
+                          {/* <li
                                 onClick={() => handleTabClick("Tab3")}
                                 className={
                                   activeTab === "Tab3"
@@ -597,7 +613,7 @@ export default function EcommerceNav (props: any) {
                                   </span>
                                 </div>
                               </li> */}
-                       
+
                         </ul>
                       </div>
                       <div className="space-y-10">
@@ -625,7 +641,7 @@ export default function EcommerceNav (props: any) {
                               })}
                             </ul>
                           )}
-                         
+
 
                           {activeTab === "Tab3" && (
                             <ul className="text-sm font-medium space-y-2">
@@ -735,7 +751,7 @@ export default function EcommerceNav (props: any) {
                       showNav === 3 ? "  font-medium " : " font-medium "
                     }
                   >
-                   <Link href="/portfolio?category=blockchain">Portfolio</Link>
+                    <Link href="/portfolio?category=blockchain">Portfolio</Link>
                   </span>
                   <MdKeyboardArrowDown
                     className="hover:text-black/100 text-black/80"
@@ -743,7 +759,7 @@ export default function EcommerceNav (props: any) {
                   />
                 </button>
               </div>
-              
+
               {/* company  */}
               <div className="group z-40 ">
                 <button

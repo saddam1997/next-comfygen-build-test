@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { MdKeyboardArrowDown, MdMenuOpen, MdMenu ,MdAddCall} from "react-icons/md";
+import { MdKeyboardArrowDown, MdMenuOpen, MdMenu, MdAddCall } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
-import $ from "jquery";
+// import $ from "jquery";
 
 // const MobileApp = [
 //     { num: "1", name: "Mobile App Development", url: "/mobile-app-development" },
@@ -69,9 +69,9 @@ import $ from "jquery";
 
 const BlockchainSer = [
   {
-      num: "1",
-      name: "Blockchain Development",
-      url: "/blockchain-development",
+    num: "1",
+    name: "Blockchain Development",
+    url: "/blockchain-development",
   },
   {
     num: "2",
@@ -354,9 +354,9 @@ const Game1 = [
 ];
 
 const Sports = [
- 
- 
- 
+
+
+
   {
     num: "4",
     img: "https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-app-dev-hero-icon.svg",
@@ -650,35 +650,51 @@ export default function BlockchainNav(props: any) {
     document.getElementById("slideover").classList.toggle("translate-x-full");
   }
 
+
   useEffect(() => {
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 50) {
-        $(".headered").addClass("active");
+    const handleScroll = () => {
+      const header = document.querySelector(".headered");
+      if (!header) return;
+
+      if (window.scrollY > 50) {
+        header.classList.add("active");
       } else {
-        $(".headered").removeClass("active");
+        header.classList.remove("active");
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  // useEffect(() => {
+  //   $(window).on("scroll", function () {
+  //     if ($(window).scrollTop() > 50) {
+  //       $(".headered").addClass("active");
+  //     } else {
+  //       $(".headered").removeClass("active");
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto">
       <div className="  flex gap-6 justify-end mx-10">
-              <p className="hidden lg:block">
-                <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
-                  <IoMdMail className=" mt-1" /> sales@comfygen.com
-                </a>
-              </p>
-      
-              <p className="hidden lg:block">
-                <a
-                  className="flex pt-1 gap-1"
-                  href="https://api.whatsapp.com/send?phone=919587867258"
-                >
-                  <MdAddCall className=" mt-1" />
-                  +91 9587867258
-                </a>
-              </p>
-            </div>
+        <p className="hidden lg:block">
+          <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
+            <IoMdMail className=" mt-1" /> sales@comfygen.com
+          </a>
+        </p>
+
+        <p className="hidden lg:block">
+          <a
+            className="flex pt-1 gap-1"
+            href="https://api.whatsapp.com/send?phone=919587867258"
+          >
+            <MdAddCall className=" mt-1" />
+            +91 9587867258
+          </a>
+        </p>
+      </div>
       <nav className="flex items-center justify-between px-4 py-0  md:px-0 relative 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto ">
         <div>
           <Link
@@ -786,8 +802,8 @@ export default function BlockchainNav(props: any) {
                                                             </span>
                                                         </div>
                                                     </li> */}
-                                                   
-                                                    
+
+
                         </ul>
                       </div>
 
@@ -1285,7 +1301,7 @@ export default function BlockchainNav(props: any) {
                       showNav === 3 ? "  font-medium " : " font-medium "
                     }
                   >
-                   <Link href="/portfolio?category=Blockchain">Portfolio</Link>
+                    <Link href="/portfolio?category=Blockchain">Portfolio</Link>
                   </span>
                   <MdKeyboardArrowDown
                     className="hover:text-black/100 text-black/80"
@@ -1379,7 +1395,7 @@ export default function BlockchainNav(props: any) {
                   </div>
                 </div> */}
               </div>
-              
+
               {/* sports  */}
               {/* <div className="group z-40 ">
                 <button
@@ -1485,7 +1501,7 @@ export default function BlockchainNav(props: any) {
                   </div>
                 </div>
               </div>  */}
-              
+
               {/* company  */}
               <div className="group z-40 ">
                 <button

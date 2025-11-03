@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
-import $ from 'jquery';
+// import $ from 'jquery';
 const MobileApp = [
   { num: "1", name: "Mobile App Development", url: "/mobile-app-development" },
   { num: "2", name: "Hybrid Mobile App Development", url: "/hybrid-mobile-app-development" },
@@ -429,15 +429,31 @@ export default function DesktopNav(props: any) {
     document.getElementById("slideover").classList.toggle("translate-x-full");
   }
 
-  useEffect(() => {
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 50) {
-        $('.headered').addClass('active');
-      } else {
-        $('.headered').removeClass('active');
-      }
-    });
-  }, []);
+     useEffect(() => {
+        const handleScroll = () => {
+          const header = document.querySelector(".headered");
+          if (!header) return;
+    
+          if (window.scrollY > 50) {
+            header.classList.add("active");
+          } else {
+            header.classList.remove("active");
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+
+  // useEffect(() => {
+  //   $(window).on('scroll', function () {
+  //     if ($(window).scrollTop() > 50) {
+  //       $('.headered').addClass('active');
+  //     } else {
+  //       $('.headered').removeClass('active');
+  //     }
+  //   });
+  // }, []);
 
 
   return (
