@@ -12,7 +12,9 @@ const locations = [
   {
     country: 'INDIA',
     phone: '+91 9587867258',
-    address: 'F-152, Dayanand Marg, Nemi Nagar, Vaishali Nagar, Near D A V Centenary Public School, Jaipur, Rajasthan 302021',
+    number: "tel:9587867258",
+    loction: "https://maps.app.goo.gl/ZioMz8iAfPoLJGRz5",
+    address: 'A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar, Nirmohi Nagar, Jaipur, Rajasthan 302019',
     img: "https://www.comfygen.com/comfygen-images/comfygen/india-loction.svg"
   },
 
@@ -20,6 +22,8 @@ const locations = [
   {
     country: 'CANADA',
     phone: '+1 579-977-4475',
+    number: "tel:579-977-4475",
+    loction: "https://maps.app.goo.gl/hTU69XuusSfVET116",
     address: '40 Tuxedo Ct, Toronto, ON M1G 3S7, Canada',
     img: "https://www.comfygen.com/comfygen-images/comfygen/hq-canada.svg"
   },
@@ -27,6 +31,8 @@ const locations = [
   {
     country: 'GERMANY',
     phone: '+49 1515 1402200',
+    number: "tel:1515 1402200",
+    loction: "https://maps.app.goo.gl/nzzVJvVWSJ3xeeaGA",
     address: 'Rhederstraße 34, 53881 Euskirchen, Germany',
     img: "https://www.comfygen.com/comfygen-images/comfygen/india-loction.svg"
   }
@@ -206,12 +212,12 @@ const Form = () => (
                       <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
                       <div>
                         <p className="text-[10px] ">Phone Number</p>
-                        <p className="text-[10px]">{location.phone}</p>
+                        <p className="text-[10px]"><a href={location.number}>{location.phone}</a></p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+                      <a href={location.loction}><MapPin className="w-5 h-5 mt-1 flex-shrink-0" /></a>
                       <div>
                         <p className="text-[14px] opacity-80">Office Location</p>
                         <p className="text-[14px]">{location.address}</p>
@@ -475,7 +481,17 @@ const Form = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+
+
+
+
+
+
+
+
+
+
 
     <div className="bg-[#fff] lg:py-16 py-10">
       <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
@@ -506,7 +522,7 @@ const Form = () => (
                 />
               </Link>
             </div>
-           
+
             <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
               <Link
                 target="_blank"
@@ -639,7 +655,7 @@ const Form = () => (
           </div>
         </div>
       </div>
-    </div> */}
+    </div>
   </section>
 );
 
