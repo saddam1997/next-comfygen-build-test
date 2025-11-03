@@ -39,10 +39,10 @@ export default function Document() {
         <NextScript />
 
 
-        <Script
+        {/* <Script
           src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
           strategy="lazyOnload"
-        />
+        /> */}
       </body>
     </Html>
   );

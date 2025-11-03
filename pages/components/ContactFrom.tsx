@@ -212,7 +212,7 @@ class ContactFrom extends Component<{}, any> {
       <div className="">
         <form
           onSubmit={this.handleValidationContactUs}
-          className="bg-white rounded-xl  lg:px-8 md:px-6 md:pb-10 py-6 px-4  space-y-8 text-left   w-full"
+          className="bg-white rounded-xl  lg:px-8 md:px-6 p-2 h-full px-4 space-y-4 text-left   w-full"
         >
           <div className=" ">
             <div className="space-y-2">
@@ -456,7 +456,7 @@ class ContactFrom extends Component<{}, any> {
             </div>
           ) : null}
 
-          <div className="flex justify-start pt-2">
+          <div className="flex justify-start ">
             {submitted ? (
               <button
                 type="button"
