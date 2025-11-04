@@ -209,10 +209,10 @@ class ContactFrom extends Component<{}, any> {
   render() {
     const { submitted } = this.state;
     return (
-      <div className="">
+      <div className="h-full">
         <form
           onSubmit={this.handleValidationContactUs}
-          className="bg-white rounded-xl  lg:px-8 md:px-6 p-2 h-full px-4 space-y-4 text-left   w-full"
+          className="bg-white rounded-xl  lg:px-8 md:px-6 p-2  px-4 space-y-4 text-left w-full"
         >
           <div className=" ">
             <div className="space-y-2">
