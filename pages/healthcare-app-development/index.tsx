@@ -537,7 +537,7 @@ export default function Mobile(props) {
       </LazyLoad>
       <div className="overflow-hidden">
         <div>
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/healthcare-software-development-company-hero-img.webp')]">
+          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/healthcare-app-development/hero.webp')]">
             <HeroSectionForAllPages
               heading="Best Healthcare App Development Company"
               ptag="Comfygen Technologies is a top-rated healthcare app development company dedicated to delivering secure, scalable, and HIPAA-compliant healthcare solutions. We help hospitals, clinics, and startups build intelligent mobile apps that enhance patient engagement, streamline medical workflows, and ensure seamless digital healthcare experiences."
@@ -569,7 +569,7 @@ export default function Mobile(props) {
             "Improved patient engagement",
             "Automated workflows & analytics",
           ]}
-          imageSrc="https://www.comfygen.com/image/why-comfygen-for-healthcare-software-development-services.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/healthcare-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />

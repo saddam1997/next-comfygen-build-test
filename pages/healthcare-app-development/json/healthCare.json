@@ -199,7 +199,7 @@
         "id": 1,
         "title": "Patient Panel",
         "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-        "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/customer-panel.webp",
+        "img": "https://www.comfygen.com/comfygen-images/healthcare-app-development/patient-Panel.webp",
         "additionalDetails": [
           {
             "details": "Easy appointment booking & cancellation",
@@ -247,7 +247,7 @@
         "id": 2,
         "title": "Doctor Panel",
         "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-        "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
+        "img": "https://www.comfygen.com/comfygen-images/healthcare-app-development/doctor-panel.webp",
         "additionalDetails": [
           {
             "details": "Manage patient profiles & medical history",
@@ -294,7 +294,7 @@
       {
         "id": 3,
         "title": "Admin Panel Features",
-        "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
+        "img": "https://www.comfygen.com/comfygen-images/healthcare-app-development/admin-panel.webp",
         "icon": "<i className='fas fa-wallet text-4xl'></i>",
         "additionalDetails": [
           {

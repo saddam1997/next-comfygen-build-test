@@ -229,7 +229,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        <FormSec />
+        {/* <FormSec /> */}
         <BlogSection initialData={initialData} />
       </div>
     </>
