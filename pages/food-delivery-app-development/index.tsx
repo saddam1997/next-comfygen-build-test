@@ -19,6 +19,7 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import TechStack from "../componentsnew/TechStack";
 import DeliverySection from "../components/DeliverySection";
 import WhoCanStart from "./components/WhoCanStart";
+import Milestones from "../components/Milestones";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -471,6 +472,10 @@ export default function Ecommerce(props) {
               closeModal={closeModal}
             />
           </div>
+        </div>
+
+        <div>
+          <Milestones/>
         </div>
         <AboutSection
           heading="Why Invest in Food Delivery App Development for Your Business Growth?"
