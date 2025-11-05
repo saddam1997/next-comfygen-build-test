@@ -493,7 +493,7 @@ const Form = () => (
 
 
 
-    <div className="bg-[#fff] lg:py-16 py-10">
+    {/* <div className="bg-[#fff] lg:py-16 py-10">
       <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
         <div className="grid lg:grid-cols-1 grid-cols-1 space-y-4">
           <div>
@@ -655,7 +655,7 @@ const Form = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </section>
 );
 

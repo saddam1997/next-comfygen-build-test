@@ -625,14 +625,36 @@ export default function Ecommerce(props) {
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
+
+export async function getStaticProps() {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }
+
+
+
+
+
+
+
+
+
+
+
+// This gets called on every request
+// export async function getServerSideProps({ res }) {
+//   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+//   const data = await resData.json();
+//   res.setHeader(
+//     "Cache-Control",
+//     "public, s-maxage=10, stale-while-revalidate=59"
+//   );
+//   return { props: { initialData: data } };
+// }
 

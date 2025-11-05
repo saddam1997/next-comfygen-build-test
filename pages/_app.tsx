@@ -135,27 +135,6 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
   const isSuperAdminLogin = router.asPath.includes("/super-admin/login");
   return (
     <React.Fragment>
-    
-      {/* <NextSeo
-        title="Custom Blockchain & Mobile App Development Company"
-        openGraph={{
-          url: "https://www.comfygen.com/",
-          type: "Website",
-          images: [{ url: "https://www.comfygen.com/media/svg/comfygen-logo.svg" }],
-        }}
-        additionalMetaTags={[
-          { property: "schema:type", content: "LocalBusiness" },
-          {
-            property: "schema:mainEntityOfPage",
-            content: "https://www.comfygen.com/",
-          },
-          { property: "schema:telephone", content: "+91 9587867258" },
-          {
-            property: "schema:LocalBusiness",
-            content: JSON.stringify(blogPostSchema),
-          },
-        ]}
-      /> */}
       {isSuperAdminLogin ? (
         <Component {...pageProps} />
       ) : isSuperAdminPage ? (
