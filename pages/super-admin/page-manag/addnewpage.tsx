@@ -107,7 +107,7 @@ const ObjectField: React.FC<{
     <>
       <style>{customScrollbarStyles}</style>
       <div className="space-y-2 overflow-hidden overflow-y-auto h-64 custom-scrollbar">
-        {properties.map((prop, index) => (
+        {Array.isArray(properties) && properties.length > 0 && properties.map((prop, index) => (
           <div key={index} className="space-y-2">
             <div className="flex items-center space-x-2">
               <input
@@ -215,7 +215,7 @@ const AddNewPage: React.FC<{
     name: "",
     siteTitle: "",
     metaDesc: "",
-    metsKeyValues: metaKeys.map((e) => {
+    metsKeyValues: Array.isArray(metaKeys) && metaKeys.length > 0 && metaKeys?.map((e) => {
       return { key: e.key, value: e.value, type: e.type };
     }),
     linkKeyValues: []

@@ -102,7 +102,7 @@ const ObjectField: React.FC<{
     <>
       <style>{customScrollbarStyles}</style>
       <div className="space-y-2 overflow-hidden overflow-y-auto h-64 custom-scrollbar">
-        {properties.map((prop, index) => (
+        {Array.isArray(properties) && properties.length > 0 && properties?.map((prop, index) => (
           <div key={index} className="space-y-2">
             <div className="flex items-center space-x-2">
               <input
@@ -195,7 +195,7 @@ const AddNewPage: React.FC<{
     metaDesc: "",
     metaImgUrl: "",
     metaTitle: "",
-    metsKeyValues: metaKeys.map(e => { return { key: e.key, value: e.value, type: e.type } })
+    metsKeyValues: metaKeys?.map(e => { return { key: e.key, value: e.value, type: e.type } })
   });
   const [errors, setErrors] = useState<{ [key in keyof PageFormData]?: string }>({});
   const [isUploading, setIsUploading] = useState(false);
