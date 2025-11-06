@@ -491,6 +491,8 @@ export default function Home(props: any) {
 
 
 export async function getStaticProps() {
+
+  console.log("process.env.URL", process.env.URL)
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
 

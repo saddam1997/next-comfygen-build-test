@@ -250,7 +250,7 @@ export default function Mobile(props) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context:any) {
   try {
     const { params, res } = context;
     const { id } = params; // Get the dynamic id from the URL

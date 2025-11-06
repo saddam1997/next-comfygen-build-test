@@ -19,6 +19,8 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import TechStack from "../componentsnew/TechStack";
 import DeliverySection from "../components/DeliverySection";
 import WhoCanStart from "./components/WhoCanStart";
+import Milestones from "../components/Milestones";
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -472,6 +474,10 @@ export default function Ecommerce(props) {
             />
           </div>
         </div>
+
+        <div>
+          <Milestones/>
+        </div>
         <AboutSection
           heading="Why Invest in Food Delivery App Development for Your Business Growth?"
           description1="The global food delivery market is expanding rapidly as customers prefer faster, smarter, and contactless ways to order meals. By 2030, the industry is expected to surpass hundreds of billions in revenue, making a food delivery app an essential tool for restaurants, startups, and cloud kitchens to remain competitive."
@@ -625,7 +631,10 @@ export default function Ecommerce(props) {
     </>
   );
 }
-// This gets called on every request
+
+
+
+
 export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
@@ -635,4 +644,3 @@ export async function getServerSideProps({ res }) {
   );
   return { props: { initialData: data } };
 }
-
