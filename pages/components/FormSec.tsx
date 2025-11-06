@@ -69,7 +69,7 @@ const Form = () => (
                 />
                 <div>
                   <span className="text-white text-base flex justify-start">Phone Number</span>
-                  <p className="text-white text-lg font-semibold">
+                  <p className="text-white lg:text-lg text-base font-semibold">
                     +91 9587867258
                   </p>
                 </div>
@@ -211,17 +211,17 @@ const Form = () => (
                     <div className="flex items-start gap-3">
                       <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="text-[10px] ">Phone Number</p>
-                        <p className="text-[10px]"><a href={location.number}>{location.phone}</a></p>
+                        <p className="text-white lg:text-lg text-base font-semibold">Phone Number</p>
+                        <p className="text-white lg:text-lg text-base font-semibold"><a href={location.number}>{location.phone}</a></p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <a href={location.loction}><MapPin className="w-5 h-5 mt-1 flex-shrink-0" /></a>
-                      <div>
-                        <p className="text-[14px] opacity-80">Office Location</p>
-                        <p className="text-[14px]">{location.address}</p>
-                      </div>
+                     <MapPin className="w-8 h-8 mt-1 flex-shrink-0" />
+                       <a href={location.loction}>
+                        <p className="text-white lg:text-lg text-base font-semibold opacity-80">Office Location</p>
+                        <p className="text-[16px]">{location.address}</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -230,8 +230,8 @@ const Form = () => (
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="">
-            <div className="bg-white rounded-2xl shadow-2xl">
+          <div className="h-full bg-white rounded-2xl shadow-2xl ">
+            <div className=" ">
               <ContactFrom />
             </div>
           </div>
@@ -483,17 +483,7 @@ const Form = () => (
       </div>
     </div> */}
 
-
-
-
-
-
-
-
-
-
-
-    <div className="bg-[#fff] lg:py-16 py-10">
+    {/* <div className="bg-[#fff] lg:py-16 py-10">
       <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
         <div className="grid lg:grid-cols-1 grid-cols-1 space-y-4">
           <div>
@@ -655,7 +645,7 @@ const Form = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div>  */}
   </section>
 );
 

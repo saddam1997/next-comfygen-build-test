@@ -15,10 +15,10 @@ const WhyChoose = ({
     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
       <div className="lg:flex space-y-3 items-center justify-between gap-10">
         <div>
-          <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">{title}</h2>
+          <h2 className="xl:text-4xl text-3xl text-black font-bold">{title}</h2>
           {description && (
             <p 
-              className="text-base text-[#212121] font-normal mt-2 w-full" 
+              className="text-base text-black font-normal mt-2 w-full" 
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}

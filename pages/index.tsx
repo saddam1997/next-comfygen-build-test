@@ -447,7 +447,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-        <FormSec />
+        {/* <FormSec /> */}
         <BlogSection initialData={initialData} />
 
         {false && show ? (

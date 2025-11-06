@@ -20,7 +20,10 @@ import TechStack from "../componentsnew/TechStack";
 import DeliverySection from "../components/DeliverySection";
 import WhoCanStart from "./components/WhoCanStart";
 import Milestones from "../components/Milestones";
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/newdesign
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
