@@ -1,0 +1,47 @@
+{
+  "blockchain": [
+    "/blockchain-development",
+    "/blockchain-consulting-services",
+    "/custom-blockchain-development-company",
+    "/substrate-development-company",
+    "/polygon-blockchain-development",
+    "/hyperledger-blockchain-development",
+    "/multichain-blockchain-development",
+    "/solana-blockchain-development-company",
+    "/stellar-blockchain-development-company",
+    "/ethereum-blockchain-development-company",
+    "/metaverse-development",
+    "/pow-blockchain-development-company",
+    "/poa-blockchain-development-company",
+    "/dpos-blockchain-development-company",
+    "/dapp-development-company",
+    "/defi-development-company",
+    "/defi-smart-contract-development",
+    "/smart-contract-development",
+    "/smart-contract-mlm-software",
+    "/ico-development",
+    "/cardano-blockchain-development-company",
+    "/hire-blockchain-developer",
+    "/enterprise-blockchain-development",
+    "/private-blockchain-development",
+    "/public-blockchain-development",
+    "/blockchain-wallet-development",
+    "/crypto-wallet-development"
+  ],
+  "ecommerce": [
+    "/ecommerce",
+    "/quick-commerce-app-development",
+    "/grocery-app-development",
+    "/e-commerce-app-development",
+    "/fmcg"
+  ],
+  "excluded": [
+    "/de/",
+    "/ca/",
+    "/thank-you",
+    "/portfolio",
+    "/contact-us",
+    "/career",
+    "/ads/mobile-app-development"
+  ]
+}

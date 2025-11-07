@@ -64,7 +64,7 @@ export default function FolderPage() {
     const { folder } = router.query;
     // const folder = folders?.[0];
     // const sub_folder = folders?.[1]
-    console.log("1111111111111111", folder);
+
 
     // Fetch categories
     const fetchCategories = async () => {

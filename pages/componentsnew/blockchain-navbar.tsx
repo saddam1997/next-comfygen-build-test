@@ -67,7 +67,9 @@ import { IoMdMail } from "react-icons/io";
 //     },
 // ];
 
-const BlockchainSer = [
+
+
+const BlockchainSer1 = [
   {
     num: "1",
     name: "Blockchain Development",
@@ -97,7 +99,11 @@ const BlockchainSer = [
     num: "6",
     name: "Hyperledger Blockchain Development",
     url: "/hyperledger-blockchain-development",
-  },
+  }
+  
+];
+
+const BlockchainSer2 = [
   {
     num: "7",
     name: "Multichain Blockchain Development",
@@ -126,6 +132,10 @@ const BlockchainSer = [
     url: "/ethereum-blockchain-development-company",
   },
 ];
+
+
+
+
 
 const Metaverse = [
   {
@@ -755,7 +765,30 @@ export default function BlockchainNav(props: any) {
                   <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                     <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                       <div className="">
-                        <ul className="">
+
+                        {activeTab === "Tab1" && (
+                          <div className="text-sm font-medium space-y-2">
+                            {BlockchainSer1.map((elem: any) => {
+                              const { name, num, url } = elem;
+                              return (
+                                <Link
+                                  key={num}
+                                  className="py-1.5 block text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
+                                  onClick={() =>
+                                    setShowNav(showNav === 1 ? 0 : 1)
+                                  }
+                                  href={url}
+                                  passHref={true}
+                                >
+                                  {name}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+
+
+                        {/* <ul className="">
                           <div
                             onClick={() => handleTabClick("Tab1")}
                             className={
@@ -772,46 +805,21 @@ export default function BlockchainNav(props: any) {
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                Blockchain App Development
+                                Blockchain App Development mmm
                               </p>
                               <span className="text-[#212121]/80 text-sm font-normal">
                                 Secure Blockchain-Based App Solutions
                               </span>
                             </div>
                           </div>
-                          {/* <li
-                                                        onClick={() => handleTabClick("Tab7")}
-                                                        className={
-                                                            activeTab === "Tab7"
-                                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                        }
-                                                    >
-                                                        <Image
-                                                            src="https://www.comfygen.com/image/ai-development-icon.svg"
-                                                            alt="AI Development"
-                                                            height={40}
-                                                            width={40}
-                                                        />
-                                                        <div className="space-y-4 cursor-pointer">
-                                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                                AI Development
-                                                            </p>
-                                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                                Best AI Development Service
-                                                            </span>
-                                                        </div>
-                                                    </li> */}
-
-
-                        </ul>
+                        </ul> */}
                       </div>
 
                       <div className="space-y-10">
                         <div>
                           {activeTab === "Tab1" && (
                             <div className="text-sm font-medium space-y-2">
-                              {BlockchainSer.map((elem: any) => {
+                              {BlockchainSer2.map((elem: any) => {
                                 const { name, num, url } = elem;
                                 return (
                                   <Link

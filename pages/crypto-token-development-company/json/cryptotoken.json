@@ -3,253 +3,539 @@
     "title": "What Are Crypto Tokens?",
     "decs": "Launching your own crypto token isn’t just a trend — it’s a strategic move to unlock new opportunities in DeFi, fundraising, gaming, and beyond. At Comfygen, we help businesses, startups, and entrepreneurs bring their token ideas to life with secure, scalable, and custom crypto token development services."
   },
- "pageData": {
-  "title": "Why Choose Comfygen for Cryptocurrency Exchange Development?",
-  "description": "Comfygen stands out as a leading crypto exchange development company trusted for its secure, scalable, and custom-built <a class='text-blue-500 font-semibold'  href='/blockchain-development'>blockchain solutions</a> tailored to your business goals.",
-  "mainCardData": {
-    "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-    "title": "Proven Expertise in Token Development",
-    "description": "With years of experience, our team of seasoned crypto token developers specializes in creating secure and scalable tokens for businesses across various industries."
-  },
-  "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "8+ Years of Token Development Expertise",
-    "description": "We bring nearly a decade of experience in delivering high-performing crypto tokens and exchange solutions with cutting-edge blockchain technology."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Dedicated Team of Token Developers",
-    "description": "Our <a href='https://www.comfygen.com/hire-blockchain-developer' class='text-blue-500 font-semibold' >expert blockchain developers</a> craft secure and scalable tokens with precision, ensuring seamless integration into your exchange platform."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "305+ Token Projects Successfully Deployed",
-    "description": "Over 305 successful token projects delivered across various industries, showcasing our ability to deliver reliable, customized crypto solutions."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Full Expertise in Crypto Token Development",
-    "description": "From tokenomics to smart contracts and exchange listing, we provide end-to-end crypto token development services under one roof."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Advanced Trading Engine",
-    "description": "Our platforms are powered by high-speed trading engines supporting real-time order matching, live charts, and a smooth user experience."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Bank-Grade Security",
-    "description": "We follow the highest security standards with encryption, multi-layer protection, and audits to keep your exchange secure and regulation-ready."
-  }
-]
-
-},
-
- "servicesData": [
-  {
-    "title": "Ethereum Token Development",
-    "subtitle": "",
-    "description": "<a class='text-white underline font-semibold' href='/ethereum-token-development'>Ethereum tokens</a> are the backbone of the blockchain ecosystem, supporting standards like ERC-20 for fungible tokens and ERC-721/ERC-1155 for NFTs. Ideal for DeFi apps, ICOs, and NFT marketplaces, Ethereum tokens provide broad compatibility and community support.",
-    "features": [
-      "Compatible with ERC-20, ERC-721, ERC-1155 standards",
-      "Supports DeFi, NFT, and fundraising applications",
-      "High liquidity and market adoption",
-      "Robust developer tools and ecosystem support"
+  "pageData": {
+    "title": "Why Choose Comfygen For The Token Development Project?",
+    "description": "Comfygen’s blockchain expertise, proven frameworks, and commitment to quality. We don’t just build tokens, we build reliable digital assets that help you grow faster in the crypto economy. Our token developers focus on security, scalability, and performance to ensure your token works flawlessly across networks.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Proven Expertise in Token Development",
+      "description": "With years of experience, our team of seasoned crypto token developers specializes in creating secure and scalable tokens for businesses across various industries."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "8+ Years of Token Development Expertise",
+        "description": "We bring nearly a decade of experience in delivering high-performing crypto tokens and exchange solutions with cutting-edge blockchain technology."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Dedicated Team of Token Developers",
+        "description": "Our <a href='https://www.comfygen.com/hire-blockchain-developer' class='text-blue-500 font-semibold' >expert blockchain developers</a> craft secure and scalable tokens with precision, ensuring seamless integration into your exchange platform."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "305+ Token Projects Successfully Deployed",
+        "description": "Over 305 successful token projects delivered across various industries, showcasing our ability to deliver reliable, customized crypto solutions."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Full Expertise in Crypto Token Development",
+        "description": "From tokenomics to smart contracts and exchange listing, we provide end-to-end crypto token development services under one roof."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Advanced Trading Engine",
+        "description": "Our platforms are powered by high-speed trading engines supporting real-time order matching, live charts, and a smooth user experience."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Bank-Grade Security",
+        "description": "We follow the highest security standards with encryption, multi-layer protection, and audits to keep your exchange secure and regulation-ready."
+      }
     ]
   },
-  {
-    "title": "Tron Token Development",
-    "subtitle": "",
-    "description": "Our <a href='https://www.comfygen.com/tron-token-development' style=' text-decoration:underline; font-weight:600;'>tron token development services</a> offers high-speed, low-cost token creation with TRC-10 and TRC-20 standards. Perfect for gaming, content sharing, and dApps requiring fast transaction times and minimal fees.",
-    "features": [
-      "Low transaction fees and high throughput",
-      "TRC-10 for basic tokens, TRC-20 for advanced smart contract tokens",
-      "Ideal for gaming and entertainment platforms",
-      "Strong developer and community support"
-    ]
-  },
-  {
-    "title": "Altcoin Token Development",
-    "subtitle": "",
-    "description": "<a href='https://www.comfygen.com/altcoin-development-services' style=' text-decoration:underline; font-weight:600;'>Altcoins</a> are independent cryptocurrencies with custom protocols and unique tokenomics. They allow businesses to create their own brand and blockchain network distinct from Bitcoin or Ethereum.",
-    "features": [
-      "Fully customizable blockchain and token features",
-      "Independent of major blockchain platforms",
-      "Supports unique consensus mechanisms",
-      "Suitable for innovative crypto projects"
-    ]
-  },
-  {
-    "title": "Asset Token Development",
-    "subtitle": "",
-    "description": "<a href='https://www.comfygen.com/blog/real-world-asset-tokenization-on-blockchain-development/' style=' text-decoration:underline; font-weight:600;'>Asset tokens</a> digitize real-world assets such as real estate, commodities, or artwork. This enables fractional ownership, better liquidity, and transparent asset management.",
-    "features": [
-      "Tokenizes physical assets on blockchain",
-      "Enables fractional ownership and easy transferability",
-      "Increases the liquidity of traditionally illiquid assets",
-      "Supports regulatory compliance and transparency"
-    ]
-  },
-  {
-    "title": "Solana Token Development",
-    "subtitle": "",
-    "description": "<a class='text-white underline font-semibold' href='/solana-token-development'> Solana tokens</a> utilize the Solana blockchain’s fast and affordable network, perfect for high-performance DeFi applications and NFT projects.",
-    "features": [
-      "Fast transaction speeds and low fees",
-      "SPL token standard support",
-      "Suitable for scalable DeFi and NFT platforms",
-      "Growing ecosystem with developer-friendly tools"
-    ]
-  },
-  {
-    "title": "Polygon Token Development",
-    "subtitle": "",
-    "description": "Polygon tokens are built on a Layer-2 scaling solution for Ethereum, offering fast and cost-effective transactions while retaining Ethereum compatibility.",
-    "features": [
-      "Layer-2 scaling for Ethereum tokens",
-      "Fast and low-cost transactions",
-      "Supports DeFi, NFT, and gaming applications",
-      "Seamless Ethereum wallet integration"
-    ]
-  },
-  {
-    "title": "Metaverse Token Development",
-    "subtitle": "",
-    "description": "Metaverse tokens power virtual worlds, enabling digital ownership, trading, and interactions within 3D immersive environments.",
-    "features": [
-      "Enables virtual asset ownership and transfer",
-      "Supports digital identity and governance",
-      "Facilitates trading within metaverse ecosystems",
-      "Designed for gaming, social, and virtual real estate use cases"
-    ]
-  },
-  {
-    "title": "ERC-20 Token Development",
-    "subtitle": "",
-    "description": "<a class='text-white underline font-semibold' href='/erc20-token-development'>ERC-20</a> is the most widely used Ethereum token standard for creating fungible tokens that serve as digital currencies or utility tokens.",
-    "features": [
-      "Standard for fungible Ethereum tokens",
-      "High adoption in ICOs and DeFi platforms",
-      "Easy integration with Ethereum wallets and <a class='text-white underline font-semibold' href='/cryptocurrency-exchange-development'>exchanges</a>",
-      "Flexible and secure smart contract templates"
-    ]
-  },
-  {
-    "title": "NFT Token Development",
-    "subtitle": "",
-    "description": "<a class='text-white underline font-semibold' href='/nft-token-development-company'>NFT tokens</a>  are unique digital assets representing collectibles, art, and in-game items, usually created on ERC-721 or ERC-1155 standards.",
-    "features": [
-      "Creates unique and non-fungible digital assets",
-      "Supports digital art, collectibles, and gaming assets",
-      "Enables proof of ownership and provenance",
-      "Growing market with strong user demand"
-    ]
-  }
-],
-
-
+  "servicesData": [
+    {
+      "title": "Custom Token Development",
+      "subtitle": "",
+      "description": "We create blockchain-based tokens that match your business model and ecosystem goals. From utility, governance, and security tokens to DeFi and payment tokens, we build scalable and future-ready digital assets.",
+      "features": [
+        "Tailor-made tokens designed for your use case and industry.",
+        "Built on trusted blockchain standards like ERC-20, BEP-20, and TRC-20.",
+        "Optimized for scalability, interoperability, and speed.",
+        "Full integration with wallets, exchanges, and DeFi platforms."
+      ]
+    },
+    {
+      "title": "Crypto Token Development for Fundraising (ICO, IDO, STO)",
+      "subtitle": "",
+      "description": "Launch your fundraising campaign with confidence. Our ICO, IDO, and STO token development services include everything from architecture and smart contracts to dashboards and investor engagement tools.",
+      "features": [
+        "Smart contracts to manage token sale and distribution automatically.",
+        "Investor-friendly dashboards and wallets for seamless participation.",
+        "Integration with leading launchpads and exchanges.",
+        "Compliance with KYC/AML and fundraising regulations."
+      ]
+    },
+    {
+      "title": "Smart Contract Development & Integration",
+      "subtitle": "",
+      "description": "We build secure, transparent, and fully automated <a href='https://www.comfygen.com/smart-contract-development' class='underline'>smart contracts</a> that power your token lifecycle — from minting and transfers to staking and governance.",
+      "features": [
+        "100% audited smart contracts for maximum reliability.",
+        "Automated token functions like minting, burning, and staking.",
+        "Compatibility with Ethereum, Polygon, and Solana ecosystems.",
+        "Built-in governance and multi-signature functionalities."
+      ]
+    },
+    {
+      "title": "Token Audit & Security Testing",
+      "subtitle": "",
+      "description": "Security is non-negotiable in blockchain. Every crypto token we develop is audited to detect vulnerabilities, secure your code, and ensure your project is ready for large-scale adoption.",
+      "features": [
+        "Manual and automated smart contract audits.",
+        "Penetration and vulnerability testing for token safety.",
+        "Compliance verification with blockchain security standards.",
+        "Continuous monitoring and post-deployment support."
+      ]
+    },
+    {
+      "title": "Whitepaper & Tokenomics Consulting",
+      "subtitle": "",
+      "description": "A strong token needs more than good code — it needs a solid economy. Our experts design tokenomics and create detailed whitepapers that define your token’s purpose, supply model, and growth strategy",
+      "features": [
+        "Professional whitepaper creation and design.",
+        "Tokenomics modeling for balanced circulation and rewards.",
+        "Strategy development for long-term token sustainability.",
+        "Market positioning and investor-focused documentation."
+      ]
+    },
+    {
+      "title": "Cross-Chain Token Deployment",
+      "subtitle": "",
+      "description": "Expand your reach by deploying your token across multiple blockchain networks. We make your token interoperable, accessible, and liquid across top ecosystems.",
+      "features": [
+        "Multi-chain token deployment on Ethereum, BSC, <a href='https://www.comfygen.com/polygon-blockchain-development' class='underline'>Polygon</a>, and more.",
+        "Support for ERC-20, BEP-20, and custom token standards.",
+        "Cross-chain bridge integration for seamless asset movement.",
+        "Optimized transaction speed and gas fee efficiency."
+      ]
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
-      "title": "Key Features of Our Token Development Solutions",
-      "desc": "Our token development solutions combine smart contract automation, custom standards, and top-tier security to help you launch scalable, cross-chain compatible, and future-ready crypto tokens."
+      "title": "The Multifaceted Benefits of Token Development",
+      "desc": "In the digital world, tokens are more popular than cryptocurrencies. They are versatile digital assets built on existing blockchains like Ethereum, <a href='https://www.comfygen.com/solana-token-development' class='text-blue-500 font-mediume'>Solana</a>, or BNB Chain that represent value, ownership, or access rights."
     }
   ],
- "consultancyData": [
-  {
-    "title": "Custom Token Standards",
-    "desc": "We develop tokens using standards like ERC-20, BEP-20, TRC-20, and more, customized for your platform's specific use case."
-  },
-  {
-    "title": "Smart Contract Automation",
-    "desc": "Tokens are powered by audited smart contracts to ensure automation, transparency, and tamper-proof execution."
-  },
-  {
-    "title": "Cross-Chain Compatibility",
-    "desc": "Our solutions support multiple blockchains, including Ethereum, BNB Chain, Polygon, and Solana, enabling broader ecosystem access."
-  },
-  {
-    "title": "Integrated Tokenomics",
-    "desc": "We embed strategic minting, burning, staking, and utility mechanisms to maximize adoption and ecosystem value."
-  },
-  {
-    "title": "Robust Security Protocols",
-    "desc": "Advanced features like anti-whale logic, DDoS protection, and role-based access control secure your token from threats."
-  },
-  {
-    "title": "Upgradeable Smart Contracts",
-    "desc": "Our use of proxy patterns allows future smart contract upgrades without disrupting existing token operations."
-  }
-],
-
+  "consultancyData": [
+    {
+      "title": "Democratized Fundraising and Capital Formation",
+      "desc": "Perhaps the most well-known benefit is the ability to raise capital through Initial Coin Offerings (ICOs), Security Token Offerings (STOs), and Initial DEX Offerings (IDOs)."
+    },
+    {
+      "title": "Enhanced Liquidity and Market Creation",
+      "desc": "Tokens are inherently designed to be traded on decentralized (DEXs) and centralized exchanges (CEXs)."
+    },
+    {
+      "title": "Robust Community Building and Governance",
+      "desc": "Tokens can transform passive users into active stakeholders. They align community incentives and enable decentralized participation in decision-making."
+    },
+    {
+      "title": "Streamlined and Transparent Processes",
+      "desc": "Every token transaction is recorded on an immutable ledger, providing transparency and accountability across every layer of operation."
+    },
+    {
+      "title": "New Economic Models and Utility",
+      "desc": "Tokens create new digital economies by representing value, ownership, or access. They let users earn, trade, and build value within decentralized ecosystems beyond traditional finance."
+    },
+    {
+      "title": "Increased Brand Visibility and Innovation",
+      "desc": "Launching a token positions a company at the forefront of technological innovation."
+    },
+    {
+      "title": "Programmability and Interoperability",
+      "desc": "Modern tokens are built using smart contracts, making them highly programmable and interoperable with other applications in the Web3 space."
+    }
+  ],
   "cardData": [
-  {
-    "num": "1",
-    "title": "AI-Powered Smart Contract Audits",
-    "desc": "Advanced AI tools are now being used for automated vulnerability detection in token contracts, enabling faster and more accurate audits than traditional manual methods."
-  },
-  {
-    "num": "2",
-    "title": "Real-Time Transaction Monitoring",
-    "desc": "With live behavioral analytics, token systems can now detect and respond to abnormal activity in real time."
-  },
-  {
-    "num": "3",
-    "title": "Zero Trust Architecture",
-    "desc": "The “never trust, always verify” model is applied across the development cycle, with multi-layered authentication and access control built into token management systems."
-  },
-  {
-    "num": "4",
-    "title": "Flash Loan Attack Protection",
-    "desc": "Especially critical for DeFi tokens, mechanisms are now built to detect and neutralize flash loan exploit patterns, a major threat in smart contract ecosystems."
-  },
-  {
-    "num": "5",
-    "title": "Quantum-Resistant Cryptography",
-    "desc": "As post-quantum security becomes a concern, many projects are exploring quantum-resistant algorithms to future-proof their tokens."
-  },
-  {
-    "num": "6",
-    "title": "Decentralized Identity (DID) Integration",
-    "desc": "DID systems enhance token ecosystems by verifying user identities without compromising privacy, ideal for regulatory-compliant or community-driven projects."
-  }
-],
+    {
+      "num": "1",
+      "title": "AI-Powered Smart Contract Audits",
+      "desc": "Advanced AI tools are now being used for automated vulnerability detection in token contracts, enabling faster and more accurate audits than traditional manual methods."
+    },
+    {
+      "num": "2",
+      "title": "Real-Time Transaction Monitoring",
+      "desc": "With live behavioral analytics, token systems can now detect and respond to abnormal activity in real time."
+    },
+    {
+      "num": "3",
+      "title": "Zero Trust Architecture",
+      "desc": "The “never trust, always verify” model is applied across the development cycle, with multi-layered authentication and access control built into token management systems."
+    },
+    {
+      "num": "4",
+      "title": "Flash Loan Attack Protection",
+      "desc": "Especially critical for DeFi tokens, mechanisms are now built to detect and neutralize flash loan exploit patterns, a major threat in smart contract ecosystems."
+    },
+    {
+      "num": "5",
+      "title": "Quantum-Resistant Cryptography",
+      "desc": "As post-quantum security becomes a concern, many projects are exploring quantum-resistant algorithms to future-proof their tokens."
+    },
+    {
+      "num": "6",
+      "title": "Decentralized Identity (DID) Integration",
+      "desc": "DID systems enhance token ecosystems by verifying user identities without compromising privacy, ideal for regulatory-compliant or community-driven projects."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+      "title": "Great Wallet Application",
+      "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified..",
+      "link": "/portfolio/great-wallet"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7 Coin",
+      "description": "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
+      "link": "/portfolio/m7-coin"
+    },
 
-"cardData2": [
-  {
-    "num": "1",
-    "title": "DeFi Token Development",
-    "desc": "Build decentralized finance tokens that support staking, liquidity mining, yield farming, and governance for innovative financial products."
-  },
-  {
-    "num": "2",
-    "title": "BEP-20 Token Development",
-    "desc": "Create BEP-20 tokens on Binance Smart Chain with fast transaction speeds, low fees, and wide compatibility across the BSC ecosystem."
-  },
-  {
-    "num": "3",
-    "title": "Cryptocurrency Development",
-    "desc": "Develop custom cryptocurrencies with tailored features, secure consensus mechanisms, and flexible tokenomics to suit your project goals."
-  },
-  {
-    "num": "4",
-    "title": "Stablecoin Development",
-    "desc": "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/stablecoin-development-a-comprehensive-guide-to-the-future-of-digital-finance/'>Build stablecoins</a> pegged to fiat currencies or assets to provide price stability for payments and DeFi platforms."
-  },
-  {
-    "num": "5",
-    "title": "Security Token Development",
-    "desc": "Issue compliant security tokens representing real-world assets like equity, debt, or property with regulatory adherence."
-  },
-  {
-    "num": "6",
-    "title": "Utility Token Development",
-    "desc": "Utility tokens provide users access to specific services or features within a blockchain platform. These tokens drive user engagement and are crucial for ecosystem growth."
-  }
-],
-
-
+     {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "Blockchain-Based FinTech Applications",
+      "description": "Our client required a secure and transparent Blockchain-based FinTech application development solution...",
+      "link": "/portfolio/blockchain-based-fintech-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T...",
+      "link": "/portfolio/advanced-blockchain-based-logistics-software"
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "ERC-20 Token Development",
+      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/crypto-token-development-company/eRC-20-token-development.webp",
+      "additionalDetails": [
+        {
+          "details": "<a href='https://www.comfygen.com/erc20-token-development' class='text-blue-500 font-semibold'>ERC-20</a> defines how tokens behave on the<a href='https://www.comfygen.com/ethereum-blockchain-development-company' class='text-blue-500 font-semibold'> Ethereum blockchain</a>.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ensures compatibility across wallets, apps, and exchanges.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Supports easy token transfers and balance tracking.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Used to launch utility and governance tokens.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Simplifies <a href='https://www.comfygen.com/smart-contract-development' class='text-blue-500 font-semibold'>smart contract development</a>  and deployment.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ideal for crowdfunding through ICOs and STOs.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Backbone of many DeFi projects and dApps.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Provides liquidity and interoperability across the Ethereum ecosystem.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ERC-721 Token Development",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/crypto-token-development-company/erc-721-token-development.webp",
+      "additionalDetails": [
+        {
+          "details": "ERC-721 defines non-fungible tokens (NFTs) on the Ethereum blockchain.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Each token is unique and cannot be replaced or divided.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Commonly used to represent digital art, collectibles, and in-game assets.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Enables true ownership and traceability of digital items.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ideal for tokenizing real estate, luxury goods, or metaverse assets.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Supports verifiable proof of authenticity and scarcity.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Used by major NFT platforms like OpenSea and Rarible.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Allows creators to earn royalties on secondary sales.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ERC-1155 Token Development",
+      "img": "https://www.comfygen.com/comfygen-images/crypto-token-development-company/erc-1155-token-development.webp",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "ERC-1155 is a multi-token standard on the Ethereum blockchain.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Supports both fungible and non-fungible tokens in one smart contract.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Reduces gas fees by bundling multiple token transfers into one transaction.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ideal for gaming ecosystems where items, currencies, and collectibles coexist.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Commonly used in <a href='https://www.comfygen.com/metaverse-development' class='text-blue-500 font-semibold'>metaverse</a> projects and digital asset marketplaces.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Enhances scalability and efficiency compared to ERC-20 and ERC-721.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Enables batch transfers and improved asset management.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Simplifies development for projects needing mixed asset types.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "ERC-777 Token Development",
+      "img": "https://www.comfygen.com/comfygen-images/crypto-token-development-company/erc-777-token-development.webp",
+      "icon": " <i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "ERC-777 is an advanced token standard building on ERC-20.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Introduces enhanced security features for token transfers.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Supports hooks for custom logic during transactions.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Allows operators to manage tokens on behalf of users.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ideal for DeFi platforms, staking protocols, and automated contracts.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Enables smoother integration with complex smart contracts.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Reduces the risk of lost tokens in failed transactions.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Improves flexibility and functionality for tokenized ecosystems.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "trendingData": [
+    {
+      "name": "valanche",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/avalanche.svg",
+      "bg": "bg-blue-100",
+      "alt": "valanche Blockchain Development"
+    },
+    {
+      "name": "Binance",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/binance-smart-chain.svg",
+      "bg": "bg-indigo-100",
+      "alt": "Binance Blockchain Development"
+    },
+    {
+      "name": "Cardano",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/cardano.svg",
+      "bg": "bg-sky-100",
+      "alt": "Cardano Blockchain Development"
+    },
+    {
+      "name": "Ethereum",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/ethereum.svg",
+      "bg": "bg-pink-100",
+      "alt": "Ethereum Blockchain Development"
+    },
+    {
+      "name": "Hyperledger",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/hyperledger-fabric.svg",
+      "bg": "bg-blue-100",
+      "alt": "Hyperledger Blockchain Development"
+    },
+    {
+      "name": "Polkadot",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/polkadot.svg",
+      "bg": "bg-purple-100",
+      "alt": "Polkadot Blockchain Development"
+    },
+    {
+      "name": "Polygon",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/polygon.svg",
+      "bg": "bg-cyan-100",
+      "alt": "Polygon Blockchain Development"
+    },
+    {
+      "name": "Solana",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/solana.svg",
+      "bg": "bg-emerald-100",
+      "alt": "Solana Blockchain Development"
+    },
+    {
+      "name": "Tezos",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/tezos.svg",
+      "bg": "bg-teal-100",
+      "alt": "Tezos Blockchain Development"
+    },
+    {
+      "name": "Tron",
+      "icon": "https://www.comfygen.com/comfygen-images/trending/tron.svg",
+      "bg": "bg-blue-100",
+      "alt": "Tron Blockchain Development"
+    }
+  ],
+  "Processs": [
+    {
+      "title": "Discovery & Planning",
+      "description": "We analyze your business goals, target audience and choose the right blockchain for your token."
+    },
+    {
+      "title": "Concept Design",
+      "description": "Our team defines your token type, features, and ecosystem fit to ensure practical utility and long-term value."
+    },
+    {
+      "title": "Architecture Setup",
+      "description": "We design the core structure, including supply, distribution, and integrations with wallets or DApps."
+    },
+    {
+      "title": "Smart Contract Development",
+      "description": "Secure, transparent, and audited smart contracts are created to automate every token function."
+    },
+    {
+      "title": "Testing & Auditing",
+      "description": "Each token undergoes deep testing and code audits to ensure flawless performance and security."
+    },
+    {
+      "title": " Deployment & Integration",
+      "description": "We launch your token on the chosen blockchain and integrate it with wallets and exchanges."
+    },
+    {
+      "title": " Post-Launch Support",
+      "description": "After deployment, we assist with listings, liquidity setup, and long-term technical support."
+    }
+  ],
+  "cardData2": [
+    {
+      "num": "1",
+      "title": "Crypto Token Development",
+      "desc": "Launch your own cryptocurrency token with a strong blockchain foundation. Our crypto token development solutions are especially for businesses aiming to create utility, payment, or governance tokens backed by transparency and high-end smart contracts"
+    },
+    {
+      "num": "2",
+      "title": "NFT Token Development",
+      "desc": "Turn your digital assets into verifiable NFTs with unique identity and ownership. Whether for art, music, gaming, or metaverse assets, our <a href='https://www.comfygen.com/nft-token-development-company' class='text-blue-500 font-semibold '>NFT token development solution</a> combines creativity with blockchain precision."
+    },
+    {
+      "num": "3",
+      "title": "Security Token Development",
+      "desc": "Tokenize real-world assets while meeting regulatory standards. Our security token development solution enables fractional ownership of real estate, equities, or commodities, backed by legal compliance and robust investor protection."
+    },
+    {
+      "num": "4",
+      "title": "Ethereum Token Development",
+      "desc": "Build your token on the world’s most trusted blockchain. Our <a href='https://www.comfygen.com/ethereum-token-development' class='font-semibold text-blue-500'>Ethereum token development</a> solution uses advanced smart contracts to power decentralized applications, fundraising models, and utility ecosystems."
+    },
+    {
+      "num": "5",
+      "title": "Token Generator Platform Development",
+      "desc": "Empower users to create and manage tokens effortlessly. We build intuitive, white-label token generator platforms that simplify the token creation process for businesses and crypto enthusiasts."
+    },
+    {
+      "num": "6",
+      "title": "Token Bridging & Cross-Chain Integration",
+      "desc": "Enable seamless token transfer between multiple blockchain ecosystems. Our bridging solutions connect networks like Ethereum, Polygon, Solana, Avalanche, and Binance Smart Chain for unrestricted interoperability."
+    },
+    {
+      "num": "7",
+      "title": "White Paper Creation & Tokenomics Strategy",
+      "desc": "Articulate your blockchain vision with precision. Our <a href='https://www.comfygen.com/crypto-white-paper-development' class='text-blue-500 font-semibold'>white paper writing</a> experts craft compelling content that clearly explains your token’s value proposition, technology, and market potential — designed to win investor confidence."
+    },
+    {
+      "num": "8",
+      "title": " Stablecoin Development Solution",
+      "desc": "Build price-stable crypto tokens pegged to fiat, crypto, or commodities. We develop fully collateralized and algorithmic <a href='https://www.comfygen.com/crypto-white-paper-development' class='text-blue-500 font-semibold'>stablecoins</a> with transparency, liquidity, and real-time auditing features."
+    }
+  ],
   "myList1": [
     "A centralized exchange is an exchange run by a company that offers fiat-to-crypto or crypto-to-crypto trading pairs. Consider Binance and Coinbase.",
     " A decentralized exchange is a cryptocurrency exchange based on smart contracts that offers crypto-to-crypto trading pairs. The Uniswap protocol, the 0x protocol, and Kybernet come to mind",
@@ -398,45 +684,44 @@
       "desc": "Elon Musk has publicly endorsed and reportedly owns Bitcoin (BTC), Dogecoin (DOGE), and Ethereum (ETH). His tweets and public statements often influence crypto market trends."
     }
   ],
-"Develop": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/images/multi-token-development.svg",
-    "title": "Multi-Token Development",
-    "decs": "We specialize in developing a wide range of tokens, including ERC-20, BEP-20, SPL, TRC-20, and custom Crypto token standards. Whether it's for DeFi, NFTs, gaming, or utility use cases, our tokens are built for interoperability, scalability, and performance."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/images/assurance-of-quality.svg",
-    "title": "Assurance of Quality",
-    "decs": "Every token goes through rigorous audits, testing, and validation to ensure it’s secure, bug-free, and ready for live environments. We deliver tokens that meet industry-grade standards from day one."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/images/token-developers-with-experience.svg",
-    "title": "Token Developers With Experience",
-    "decs": "Our blockchain developers bring years of hands-on experience in smart contract and Crypto token development across diverse sectors, from fintech and real estate to Web3 gaming and DeFi."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/images/availability-of-round-clocks.svg",
-    "title": "Availability Around the Clock",
-    "decs": "Our support team works 24/7 across time zones, ensuring you get timely updates, assistance, and clear communication at every stage of development."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/images/unshakeable-experience-in-the-field.svg",
-    "title": "Unshakeable Experience in the Field",
-    "decs": "With a proven track record in delivering successful token projects, Comfygen brings unmatched technical depth and domain expertise to every build."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/images/transparency-in-the-development-process.svg",
-    "title": "Transparency in the Development Process",
-    "decs": "We maintain full transparency throughout the token development lifecycle, from planning and coding to auditing and deployment, keeping you informed and in control every step of the way."
-  }
-],
-
+  "Develop": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/multi-token-development.svg",
+      "title": "Multi-Token Development",
+      "decs": "We specialize in developing a wide range of tokens, including ERC-20, BEP-20, SPL, TRC-20, and custom Crypto token standards. Whether it's for DeFi, NFTs, gaming, or utility use cases, our tokens are built for interoperability, scalability, and performance."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/images/assurance-of-quality.svg",
+      "title": "Assurance of Quality",
+      "decs": "Every token goes through rigorous audits, testing, and validation to ensure it’s secure, bug-free, and ready for live environments. We deliver tokens that meet industry-grade standards from day one."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/token-developers-with-experience.svg",
+      "title": "Token Developers With Experience",
+      "decs": "Our blockchain developers bring years of hands-on experience in smart contract and Crypto token development across diverse sectors, from fintech and real estate to Web3 gaming and DeFi."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/images/availability-of-round-clocks.svg",
+      "title": "Availability Around the Clock",
+      "decs": "Our support team works 24/7 across time zones, ensuring you get timely updates, assistance, and clear communication at every stage of development."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/images/unshakeable-experience-in-the-field.svg",
+      "title": "Unshakeable Experience in the Field",
+      "decs": "With a proven track record in delivering successful token projects, Comfygen brings unmatched technical depth and domain expertise to every build."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/images/transparency-in-the-development-process.svg",
+      "title": "Transparency in the Development Process",
+      "decs": "We maintain full transparency throughout the token development lifecycle, from planning and coding to auditing and deployment, keeping you informed and in control every step of the way."
+    }
+  ],
   "Sliderdata": [
     {
       "num": "01",
@@ -483,36 +768,36 @@
       "desc": "Choosing Comfygen as your crypto token development company means unlocking a wide range of advantages that go beyond just coding. Our token development services are designed to help you launch, scale, and succeed in the evolving crypto economy."
     }
   ],
- "Whycomfygen": [
-  {
-    "num": "1",
-    "title": "Faster Time-to-Market",
-    "desc": "We streamline the entire token development process from concept to deployment, helping you launch your token quickly and ahead of the competition."
-  },
-  {
-    "num": "2",
-    "title": "Custom Token Architecture",
-    "desc": "Every token is tailored to your unique business goals, whether you're building for DeFi, gaming, real estate, fundraising, or asset management."
-  },
-  {
-    "num": "3",
-    "title": "High-End Security Standards",
-    "desc": "With smart contract audits, anti-fraud mechanisms, and best-in-class security protocols, we deliver secure token development with zero compromise."
-  },
-  {
-    "num": "4",
-    "title": "Multi-Blockchain Support",
-    "desc": "Develop tokens on Ethereum, Binance Smart Chain (BSC), Solana, Polygon, Tron, and other leading networks all under one roof."
-  },
-  {
-    "num": "5",
-    "title": "Scalability & Interoperability",
-    "desc": "Our tokens are built for scalability and cross-chain compatibility, making your project adaptable to future expansion and ecosystem integrations."
-  },
-  {
-    "num": "6",
-    "title": "Regulatory Compliance Readiness",
-    "desc": "From KYC/AML integration to STO-ready architecture, we help you meet regulatory demands without limiting innovation."
-  }
-]
+  "Whycomfygen": [
+    {
+      "num": "1",
+      "title": "Faster Time-to-Market",
+      "desc": "We streamline the entire token development process from concept to deployment, helping you launch your token quickly and ahead of the competition."
+    },
+    {
+      "num": "2",
+      "title": "Custom Token Architecture",
+      "desc": "Every token is tailored to your unique business goals, whether you're building for DeFi, gaming, real estate, fundraising, or asset management."
+    },
+    {
+      "num": "3",
+      "title": "High-End Security Standards",
+      "desc": "With smart contract audits, anti-fraud mechanisms, and best-in-class security protocols, we deliver secure token development with zero compromise."
+    },
+    {
+      "num": "4",
+      "title": "Multi-Blockchain Support",
+      "desc": "Develop tokens on Ethereum, Binance Smart Chain (BSC), Solana, Polygon, Tron, and other leading networks all under one roof."
+    },
+    {
+      "num": "5",
+      "title": "Scalability & Interoperability",
+      "desc": "Our tokens are built for scalability and cross-chain compatibility, making your project adaptable to future expansion and ecosystem integrations."
+    },
+    {
+      "num": "6",
+      "title": "Regulatory Compliance Readiness",
+      "desc": "From KYC/AML integration to STO-ready architecture, we help you meet regulatory demands without limiting innovation."
+    }
+  ]
 }

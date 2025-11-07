@@ -79,7 +79,16 @@ export default function BlogSection(props: any) {
   );
 }
 
+export async function getStaticProps() {
+  console.log("Running getStaticProps...");
+  const res = await fetch(`${process.env.URL}/api/v1/posts?per_page=3`);
+  const data = await res.json();
 
+  return {
+    props: { initialData: data },
+    revalidate: 86400,
+  };
+}
 
 
 

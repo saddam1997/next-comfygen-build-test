@@ -105,9 +105,7 @@ const Features = ({ featuresData, grid, heading, description }) => {
                   )}
                   {Array.isArray(feature?.additionalDetails) && feature?.additionalDetails.length > 0 && feature?.additionalDetails?.map((detail: any, index: number) => (
                     <ul className="max-w-xl mx-auto" key={index}>
-                      <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-black">
-                        {detail.details}
-                      </li>
+                      <li className="py-2 sm:text-base text-sm border-b border-[#5556D1]/40 text-black" dangerouslySetInnerHTML={{ __html: detail.details }}></li>
                     </ul>
                   ))}
                 </div>
@@ -118,7 +116,7 @@ const Features = ({ featuresData, grid, heading, description }) => {
 
         {/* Desktop detail view (below all buttons) */}
         {!isMobile && openedFeature && (
-          <div className="mt-10 p-4 grid grid-cols-1 md:grid-cols-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 items-center">
+          <div className="mt-10 p-4 grid grid-cols-1 md:grid-cols-2 mx-auto 2xl:w-full w-full lg:w-full items-center">
             {openedFeature?.img && (
               <div className="hidden lg:flex justify-center">
                 <Image
@@ -131,13 +129,11 @@ const Features = ({ featuresData, grid, heading, description }) => {
                 />
               </div>
             )}
-            <div className="mt-2 py-2 mx-4">
+            <div className="mt-2 py-2 ">
               {Array.isArray(openedFeature?.additionalDetails) && openedFeature?.additionalDetails.length > 0 && openedFeature?.additionalDetails?.map(
                 (detail: any, index: number) => (
-                  <ul className="max-w-xl" key={index}>
-                    <li className="py-3 flex items-center gap-3">
-                      <ImArrowRight className="text-[#5556D1]" /><h3 className="text-black">{detail.details}</h3>
-                    </li>
+                  <ul className="flex items-center gap-4" key={index}>
+                   <ImArrowRight className="text-[#5556D1]"/><li className="py-3 gap-1 flex items-center text-black"dangerouslySetInnerHTML={{ __html: detail.details }}></li>
                   </ul>
                 )
               )}

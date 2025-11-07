@@ -28,6 +28,9 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import ProcessSection from "../componentsnew/ProcessSection";
 import ServicesSection from "../componentsnew/ServicesSection";
 import WhyInvestSection from "../componentsnew/WhyInvestSection";
+import Slider from "../components/Slider";
+import Features from "../components/Features";
+import Trending from "../components/Trending";
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -79,36 +82,7 @@ const defaultTestimonials = [
 ];
 
 
-const Processs = [
-  {
-    title: "Ideation & Token Conceptualization",
-    description: "We begin by understanding your business goals, target audience, and use case to define the core purpose and functionality of your token."
-  },
-  {
-    title: "Tokenomics Design",
-    description: "Next, we craft the tokenomics model, including supply, distribution, staking, and incentives to ensure your token aligns with your project's objectives and market needs."
-  },
-  {
-    title: "Blockchain Selection",
-    description: "Based on your goals, we help you choose the right blockchain (Ethereum, Binance Smart Chain, Solana, etc.) that supports your token's performance, scalability, and cost-effectiveness."
-  },
-  {
-    title: "Smart Contract Development",
-    description: "Our expert team develops secure, audited smart contracts to govern token transactions, ensuring automation and transparency."
-  },
-  {
-    title: "Security & Auditing",
-    description: "We implement extensive security measures, including smart contract audits, penetration testing, and vulnerability assessments, to prevent potential exploits."
-  },
-  {
-    title: "Token Minting & Deployment",
-    description: "Once the token is ready, we deploy it on the chosen blockchain, ensuring it follows industry standards and is ready for use in your ecosystem."
-  },
-  {
-    title: "Integration & Launch",
-    description: "Finally, we integrate the token into your platform, wallet, and other blockchain applications, ensuring seamless functionality for users. We then assist with the launch to ensure maximum exposure and adoption."
-  }
-];
+
 
 const Arena = [
   {
@@ -292,7 +266,7 @@ export default function Ecommerce(props) {
       "postalCode": "302006",
       "telephone": "+91-958-786-7258"
     },
-    
+
     {
       "@context": "https://schema.org",
       "@type": "PostalAddress",
@@ -302,106 +276,36 @@ export default function Ecommerce(props) {
       "postalCode": "M1G3S7",
       "telephone": "+1 579-977-4475"
     },
-  
+
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-            "telephone": "+91 9587867258",
-            "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-        "email": "sales@comfygen.com",          
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    
+      "@type": "PostalAddress",
+      "streetAddress": "Rhederstraße 34",
+      "addressLocality": "Euskirchen",
+      "postalCode": "53881",
+      "addressCountry": "Germany"
     },
-  
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-  
+
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Crypto Token Development Company",
+      "name": "Token Development Service",
       "provider": {
         "@type": "Organization",
         "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description": "Custom crypto token development services on top blockchain platforms like Ethereum, Binance Smart Chain, Solana, Polygon, and more. We create tokens such as ERC20, BEP20, TRC20, and SPL with secure, scalable, and fully compliant solutions.",
-      "url": "https://www.comfygen.com/crypto-token-development-company",
-      "mainEntityOfPage": "https://www.comfygen.com/crypto-token-development-company",
+      "description": "Comfygen offers secure, scalable, and customizable crypto token development services on Ethereum, BNB Chain, Polygon, Solana, and more. We create utility, security, and DeFi tokens with smart contract integration and audit-ready architecture.",
+      "url": "https://www.comfygen.com/crypto-token-development-company ",
+      "mainEntityOfPage": "https://www.comfygen.com/crypto-token-development-company ",
       "areaServed": "Global",
       "serviceType": [
-        "Crypto Token Development Service",
-        "Custom Crypto Token Development",
         "Crypto Token Development",
-       "Crypto Token",
-        "ERC20 Token Development",
-        "BEP20 Token Development",
-        "TRC20 Token Development",
-        "SPL Token Development",
-        "Custom Blockchain Token Creation",
-        "Best Token Development Company",
-        "Cryptocurrency Development",
-        "Altcoin Development",
-        "Stable Coin Development",
-        "Ethereum Token Development",
-        "TRON Token Development",
-    
+        "Utility Token Development",
+        "Security Token Development",
+        "DeFi Token Development",
+        "Custom Blockchain Token Solutions"
       ],
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
@@ -409,110 +313,150 @@ export default function Ecommerce(props) {
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
-    }
-    ,
-  
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "name": "Trusted Token Development Company | Crypto Token Services",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-about.webp",
-      "description": "Custom crypto token development services on top blockchain platforms like Ethereum, Binance Smart Chain, Solana, Polygon, and more. We create tokens such as ERC20, BEP20, TRC20, and SPL with secure, scalable, and fully compliant solutions.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
     },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Rhederstraße 34",
+        "addressLocality": "Euskirchen",
+        "postalCode": "53881",
+        "addressCountry": "Germany"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+
+    },
+
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Comfygen",
+      "name": "Comfygen Technologies",
       "url": "https://www.comfygen.com/",
       "logo": "https://www.comfygen.com/svg/Logo1.svg",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
         "contactOption": "WhatsApp",
-            "telephone": "+91 9587867258",
-            "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-            "email": "sales@comfygen.com",
-                    
-            "availableLanguage": "en, in"
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "GER"],
+
+        "availableLanguage": "en, in"
       },
       "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    
-    
+
     {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "name": "Crypto Token Development Company | Custom Blockchain Token Solutions",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-about.webp",
+      "description": "Comfygen is a leading crypto token development company specializing in secure, scalable, and customizable blockchain token solutions. We develop utility tokens, security tokens, DeFi tokens, and NFT tokens on Ethereum, BNB Chain, Polygon, Solana, and more for startups and enterprises.",
+      "url": "https://www.comfygen.com/crypto-token-development-company ",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "557"
+      }
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "Question",
-          "name": "How much does it cost to develop a NeoBank app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The cost of NeoBank app development depends on features, tech stack, platform, and compliance requirements. A basic MVP may start from $25,000, while a full-featured online banking app can exceed $100,000. We provide customized quotes based on your business goals and functionality."
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/"
         },
         {
-          "@type": "Question",
-          "name": "How long does it take to build a NeoBank app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The timeline for NeoBank software development varies by complexity. A simple NeoBank MVP can take 10–14 weeks, while advanced apps with full banking features may require 6+ months. We follow agile development for faster iteration and delivery without compromising on security or compliance."
-          }
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blockchain Development",
+          "item": "https://www.comfygen.com/blockchain-development "
         },
         {
-          "@type": "Question",
-          "name": "What compliance standards are followed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We ensure your NeoBank app meets all key financial regulations including PCI DSS, GDPR, and KYC/AML requirements. Our mobile banking app development experts stay updated with global compliance standards to deliver secure, legally compliant mobile banking app development solutions for both startups and financial institutions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer post-launch support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we offer complete post-launch support and maintenance for all our NeoBank app development services. From bug fixes and updates to performance monitoring, our team ensures your app runs smoothly, stays secure, and evolves with user needs and fintech regulations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you integrate third-party APIs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Our team has deep expertise in integrating third-party APIs such as Plaid, Mambu, Yodlee, and Stripe. These integrations enhance your NeoBank software with features like account aggregation, digital payments, and real-time data, all while maintaining security and a seamless user experience."
-          }
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Crypto Token Development",
+          "item": "https://www.comfygen.com/crypto-token-development-company "
         }
       ]
     }
-    
-    
+
   ];
   return (
     <>
-   <Head>
-        <title>Trusted Crypto Token Development Company | Crypto Token Services</title>
+      <Head>
+        <title>Token Development Company | Custom Crypto Token Creation Service</title>
         <meta
           name="description"
-          content="Comfygen Best crypto token development company, offers custom Crypto token development services on top blockchain platforms like Ethereum, Solana, Polygon, and more."
+          content="Comfygen offers professional token development services for startups and enterprises. Create ERC20, BEP20, or custom blockchain tokens with full security, scalability, and exchange-ready integration."
         />
+
+        <meta name="keywords" content="Crypto Token Development, Utility Token Development, Security Token Development, DeFi Token Development, Custom Blockchain Token Solutions, Blockchain Token Development Company, Token Creation Services, Cryptocurrency Token Development, Tokenomics Development, Smart Contract Token Development, ERC20 Token Development, BEP20 Token Development" />
+
+
+        {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/crypto-token-development-company" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -521,18 +465,26 @@ export default function Ecommerce(props) {
         <meta name="viewport-fit" content="cover" />
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
+        <meta name="apple-mobile-web-app-title" content="Token Development" />
+
+        {/* <!-- New in iOS6 -->
+<!-- Author and Company Information --> */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+
+        {/* <!-- SEO Meta --> */}
         <meta name="googlebot" content="all" />
         <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="coverage" content="Worldwide" />
         <meta name="language" content="English" />
+
+        {/* <!-- Geo Location Meta --> */}
         <meta name="geo.region" content="IN" />
         <meta name="geo.region" content="US" />
         <meta name="geo.region" content="CA" />
@@ -540,27 +492,37 @@ export default function Ecommerce(props) {
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
 
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Trusted Token Development Company | Crypto Token Services" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.comfygen.com/crypto-token-development-company" />
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-og.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-og.webp" />
+        {/* <!-- Open Graph (OG) Tag --> */}
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Crypto Token Development Company | Custom Crypto Token Development Service" />
-        <meta property="og:site_name" content="Comfygen Private Limited" />
-        <meta property="og:description" content="Comfygen Best crypto token development company, offers custom Crypto token development services on top blockchain platforms like Ethereum, Solana, Polygon, and more." />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
 
-        {/* Twitter Meta Tags */}
+
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Trusted Token Development Company | Crypto Token Services" />
-        <meta name="twitter:description" content="Comfygen Best crypto token development company, offers custom Crypto token development services on top blockchain platforms like Ethereum, Solana, Polygon, and more." />
+        <meta name="twitter:title" content="Crypto Token Development Company | Custom Token Creation Services" />
+        <meta name="twitter:description" content=" Launch your own crypto token with Comfygen. We build secure, scalable, and audited tokens on Ethereum, BNB, Polygon, and more. Get full blockchain integration and expert support." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-og.webp" />
-        <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+
+        {/* <!-- Facebook Meta --> */}
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-og.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-og.webp" />
+        <meta property="og:image:alt" content="Crypto Token Development Company" />
+        <meta property="og:url" content="https://www.comfygen.com/crypto-token-development-company" />
+        <meta property="og:title" content="Crypto Token Development | Secure, Scalable & Custom Solutions" />
+        <meta property="og: description" content=" Launch your own crypto token with Comfygen. We offer secure, scalable, and audit-ready token development on Ethereum, BNB Chain, Polygon, and other leading blockchains." />
 
         {/* Schema */}
         <script
@@ -572,19 +534,19 @@ export default function Ecommerce(props) {
 
 
       {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
+      <Header />
       {/* </LazyLoad> */}
       <div className="overflow-hidden pt-20">
 
-        
+
         <HeroSectionForAllPages
           heading="Crypto Token Development Company"
-          ptag="Looking to create a secure, scalable, and future-ready crypto token? As a leading crypto token development company, we offer custom token creation on popular blockchain platforms like Ethereum, Binance Smart Chain, Solana, Polygon, and more. Whether it’s ERC20, BEP20, TRC20, or SPL tokens, we help you build, launch, and manage your token successfully."
-          li1="Custom token development (ERC20, BEP20, TRC20, SPL, etc.)"
-          li2="Smart contract creation and auditings"
-          li3="Tokenomics design and consulting"
-          li4="Wallet and listing integration"
-          li5="Launchpad and ICO/IDO support"
+          ptag="Are you searching top-notch crypto token development company to develop your own token for businesses and startups? Our expert blockchain developers help you design, deploy, and scale your token on top blockchain networks like Ethereum, Binance Smart Chain, Polygon, and more."
+          li1="Custom Token Solutions"
+          li2="Multi-Blockchain Expertise"
+          li3="Security & Compliance"
+          li4="End-to-End Support"
+          li5="  Global Delivery (India | USA | UAE)"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -593,22 +555,14 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-hero.webp"
         />
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+
         <AboutSection
           title="About Company"
-          heading="Why Choose Crypto Token Development for Your Business?"
-          description1="Launching a crypto token can transform your business by unlocking new revenue streams, enhancing user engagement, and creating transparent, <a class='text-blue-500 font-semibold' href='/decentralized-exchange-development'>decentralized</a> ecosystems. Here’s why investing in professional token development is essential for modern businesses:"
-          points = {
-            [
-              "Enhanced Fundraising Opportunities",
-              "Improved Customer Loyalty and Engagement",
-              "Increased Transparency and Security",
-              "Access to Decentralized Finance (DeFi) Ecosystems",
-              "Customizable Tokenomics for Your Business Model",
-              "Cross-Chain and Scalable Solutions"
-            ]
-          }
+          heading="Why Businesses Are Investing in Token Development"
+          description1="Businesses all over the world want to develop their own crypto token and are looking for best token development company because a token development solution opens new revenue streams, improves customer engagement, and decentralized innovation. Tokens can represent ownership, access, or rewards, allowing companies to create ecosystems that incentivize participation and loyalty."
+          description2=" well-developed and designed token can power crowdfunding through ICOs, IDOs, or STOs, streamline transactions within a platform, and also enable governance through voting mechanisms. By taking advantage of blockchain’s transparency and security, businesses reduce reliance on old intermediaries while increasing trust with users."
+          points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -616,32 +570,20 @@ export default function Ecommerce(props) {
         <ContactFromCenter />
         <ServicesSection
           servicesData={JSON_DATA.servicesData}
-          heading="Types of Token Development Services We Offer"
-          subtitle="At Comfygen, we offer a wide range of crypto token development services tailored to meet diverse business needs across multiple blockchain platforms. Our solutions are designed for security, scalability, and seamless integration into your project ecosystem."
-        />
-                                 
-          <CardItem
-          heading="Advanced Features of Our Roadside Assistance App"
-          subheading="Our custom-built Roadside Assistance App includes powerful features to ensure drivers get quick help during emergencies. From car towing to fuel delivery, every service is just a tap away. Here’s what makes our app reliable, fast, and user-friendly:"
-          techData={JSON_DATA.cardData2}
-
-        />
-       
-        
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CardItem
-          heading="Top Security Features for Secure Token Development Mechanisms"
-          subheading="Security is non-negotiable when it comes to crypto token development. At Comfygen, we integrate advanced security features and best practices into every stage of the token development process to protect your assets, users, and platform integrity."
-          techData={JSON_DATA.cardData}
-
+          heading="Our Token Development Services"
+          subtitle="Exploring the token development service for businesses & startups. Comfygen, a top-rated token development service provider, provides its services to cryptocurrency investors worldwide.  Whether you’re launching a new cryptocurrency, powering a DeFi ecosystem, or creating NFT-based assets."
         />
 
-        <WhyInvestSection
-          heading="Why Should You Invest in Crypto Token Development?"
-          subheading="Investing in crypto token development is rapidly becoming a strategic move for businesses and entrepreneurs aiming to leverage blockchain technology’s transformative potential. Here’s why crypto token development stands out as a lucrative and forward-thinking investment:"
-          data={Arena}
+        <CallToAction
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          heading="Boost Your Crypto Development By Launching Quality Tokens!"
+          text="Create tokens on the Trending Blockchain Platforms to increase your business reach in the crypto market."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+
+          imageAlt="Get in touch now."
         />
-        
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -649,21 +591,50 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
+        <CardItem
+          heading="Our Exclusive Token Development Solutions"
+          subheading="Next-generation crypto token development Solution designed for startups, enterprises, and blockchain innovators. From NFT creation to tokenized assets, we build secure, scalable, and regulation-ready tokens that empower digital economies. Our end-to-end Token Development Solutions ensure every token is verifiable, traceable, and easy to integrate into your ecosystem."
+          techData={JSON_DATA.cardData2}
 
-         <ProcessSection  
-           title="Step-by-Step Crypto Token Development Process" 
-           description="At Comfygen, we follow a comprehensive, structured process to ensure your crypto token is developed with precision, security, and scalability. Here’s how we do it:"   
-           processSlides={Processs} />
-  
-        <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        />
+        <Slider
+          projects={JSON_DATA.portfoliodata}
+          heading="Our Token Development Portfolio"
+          description="Our portfolio showcases a diverse range of successful token projects built across major blockchain networks. From <a href='https://www.comfygen.com/defi-development-company' class='text-blue-500 font-semibold'>DeFi</a> and NFT tokens to security and governance tokens, we’ve helped startups and enterprises launch secure, high-performing crypto assets that drive real value."
+        />
+
+        <section className="py-8">
+          <Features
+            featuresData={JSON_DATA.featuresData}
+            grid={4}
+            heading="Various ERC Utility Token Development"
+            description="Our ERC Utility Token Development Services include everything from fungible to non-fungible and multi-token development systems. Each token is built with secure smart contracts, low gas fees, and full compatibility with leading wallets, exchanges, and <a href='https://www.comfygen.com/dapp-development-company' class='text-blue-500 font-semibold'>dApps</a>. Whether you’re launching a DeFi app, <a href='https://www.comfygen.com/nft-marketplace-development-company' class='text-blue-500 font-semibold'>NFT marketplace</a>, or gaming platform, we create scalable token architectures that run flawlessly on Ethereum and other EVM-compatible networks."
+
+          />
+        </section>
+
+        <section className="py-8">
+          <Trending
+            trendingData={JSON_DATA.trendingData}
+            heading="Leading Blockchain Networks for Token Development"
+          />
+        </section>
+
+        <ProcessSection
+          title="Our End-to-End Token Development Process"
+          description="Comfygen top-rated token development company that turns your token development idea into a fully functional blockchain asset. Each step is handled by Blockchain development experts who focus on precision, scalability, and long-term sustainability, so your token doesn’t just launch, it lasts."
+          processSlides={JSON_DATA.Processs} />
+
+
+        <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1] mt-8 rounded-sm">
           <section className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4">
               <div className="flex flex-col justify-center text-center ">
                 <h2 className=" py-4 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                Why Global Brands Trust Comfygen for Crypto Token Development
+                  Why Global Brands Trust Comfygen for Crypto Token Development
                 </h2>
                 <p className="text-base text-white">
-                In a fast-evolving digital economy, trust and technical excellence are non-negotiable. At Comfygen, we’ve earned the confidence of global brands by delivering future-ready token development solutions backed by innovation, security, and scalability. Here’s why industry leaders consistently choose us:
+                  In a fast-evolving digital economy, trust and technical excellence are non-negotiable. At Comfygen, we’ve earned the confidence of global brands by delivering future-ready token development.
                 </p>
               </div>
               <div className="grid gap-10 py-10 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-10">
@@ -694,26 +665,13 @@ export default function Ecommerce(props) {
           </section>
         </div>
 
-        <HireDeveloper
-          heading="Hire Our Crypto Token Developer"
-          text="Looking to create your custom crypto token? Comfygen offers expert crypto token developers with vast experience in delivering secure, scalable, and high-performance tokens across multiple blockchains. Our team of developers specializes in:"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Expertise in Token Development",
-            "Experience with Blockchain Technology",
-            "Strong Programming Skills",
-            "Understanding of Security Measures",
-            "Attention to Detail",
-            "Ability to Meet Deadlines"
-          ]}
-        />
-        <TechStack
-          title="Our Crypto Token Development Technology Stack"
-          description="At Comfygen, we harness a robust and future-ready tech stack to deliver high-performance crypto tokens that align with your blockchain vision. From core blockchain protocols to advanced token standards, we use only the best-in-class tools to power your token economy."
-        />
+        <section className="mt-8">
+          <TechStack
+            title="Our Crypto Token Development Technology Stack"
+            description="We use advanced blockchain tools and platforms to build secure, scalable crypto tokens. Our tech stack supports everything from simple utility tokens to complex DeFi ecosystems with speed, flexibility, and reliability."
+          />
+        </section>
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -721,7 +679,41 @@ export default function Ecommerce(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <InfoSectionLeft
+        {/* <section className="mt-8">
+          <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        </section> */}
+        {/* <CardItem
+          heading="Top Security Features for Secure Token Development Mechanisms"
+          subheading="Security is non-negotiable when it comes to crypto token development. At Comfygen, we integrate advanced security features and best practices into every stage of the token development process to protect your assets, users, and platform integrity."
+          techData={JSON_DATA.cardData}
+
+        /> */}
+
+        {/* <WhyInvestSection
+          heading="Why Should You Invest in Crypto Token Development?"
+          subheading="Investing in crypto token development is rapidly becoming a strategic move for businesses and entrepreneurs aiming to leverage blockchain technology’s transformative potential. Here’s why crypto token development stands out as a lucrative and forward-thinking investment:"
+          data={Arena}
+        /> */}
+
+
+        <HireDeveloper
+          heading="Hire Token Developers"
+          text="Work with skilled blockchain experts to build and launch your crypto token. From smart contracts to deployment, our team handles everything with precision and speed."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "<a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain development experts</a>",
+            "Fast, secure development",
+            "Multi-chain experience",
+            "Full project support"
+          ]}
+        />
+
+
+
+        {/* <InfoSectionLeft
           heading="Have More Questions About Crypto Token Development Services?"
           description1="We’re here to assist you! Whether you want to know more about development timelines, security measures, customization options, or integration with blockchain ecosystems, our skilled team is ready to provide clear and personalized answers. Contact us anytime or visit our FAQ section for detailed information."
           description2="Common Questions We Answer:"
@@ -732,21 +724,14 @@ export default function Ecommerce(props) {
             "How do your token solutions integrate with popular blockchain platforms?",
             "What post-launch support and maintenance services can we expect?"
           ]}
-          
+
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-question.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
-        />
+        /> */}
 
         <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

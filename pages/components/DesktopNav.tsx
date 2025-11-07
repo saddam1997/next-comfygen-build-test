@@ -1221,6 +1221,7 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
+
                           <li
                             onClick={() => handleTabClick("Tab2")}
                             className={
@@ -1238,7 +1239,7 @@ export default function DesktopNav(props: any) {
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
                                 <Link
-                                  href="#"
+                                  href="/blockchain-development"
                                   className="flex items-start gap-2"
                                 >
                                   Blockchain App Development
@@ -1249,6 +1250,8 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
+
+
                           <li
                             onClick={() => handleTabClick("Tab3")}
                             className={
@@ -1343,6 +1346,9 @@ export default function DesktopNav(props: any) {
                             </div>
                           </li>
                         </ul>
+
+
+
                       </div>
                       <div className="space-y-10">
                         <div>
@@ -1368,7 +1374,7 @@ export default function DesktopNav(props: any) {
                           )}
 
                           {activeTab === "Tab2" && (
-                            <ul className="text-sm font-medium space-y-2">
+                            <ul className="text-sm font-medium space-y-2 hidden">
                               {BlockchainSer.map((elem: any, index: any) => {
                                 const { name, num, url } = elem;
                                 return (
@@ -1383,7 +1389,7 @@ export default function DesktopNav(props: any) {
                                       href={url}
                                       passHref={true}
                                     >
-                                      {name}
+                                      {name}mm
                                     </Link>
                                   </li>
                                 );
