@@ -23,8 +23,21 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
-
             <Image
+              src={imageSrc}
+              alt={heading}
+              width={600}
+              height={360}
+              loading="lazy"          // 👈 Lazy load
+              decoding="async"        // 👈 Decode asynchronously
+              quality={70}            // 👈 Slight compression for smaller size
+              sizes="(max-width: 768px) 100vw, 600px" // 👈 Responsive optimization
+              style={{ width: "100%", height: "auto" }}
+              unoptimized={false}     // 👈 Keep Next.js optimization (unless using external CDN)
+              priority={false}        // 👈 Don’t preload
+            />
+
+            {/* <Image
               src={imageSrc}
               alt={heading}
               width={600}
@@ -36,7 +49,7 @@ const AboutSection = (props: any) => {
               //    (max-width: 1024px) 45vw,
               //    600px"
               // style={{ width: "100%", height: "auto" }}
-            />
+            /> */}
           </div>
           <div>
             <div className="space-y-4">

@@ -46,19 +46,8 @@ const Faq = dynamic(() => import("./components/Faq"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
 });
 
-const FormSec = dynamic(() => import("./components/FormSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
-
-const BlogSection = dynamic(() => import("./components/BlogSection"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-});
-
-
 export default function Home(props: any) {
-  let { initialData } = props;
   const [typedText] = useState("");
-  const [show, setshow] = useState(true);
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const websiteJsonLd = {
     "@context": "https://schema.org/",
@@ -453,18 +442,6 @@ export default function Home(props: any) {
 }
 
 
-export async function getStaticProps() {
-
-  console.log("process.env.URL", process.env.URL)
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-
-  return {
-    props: { initialData: data },
-    // revalidate: 10, // Revalidate data every 10 seconds
-    revalidate: 86400, // 24 hours
-  };
-}
 
 
 
