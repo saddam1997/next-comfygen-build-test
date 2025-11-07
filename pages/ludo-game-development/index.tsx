@@ -775,7 +775,7 @@ export default function LudoGame(props) {
         faqData={JSON_DATA.Frequently}
         title="Ludo Game Development Technology"
       />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </div>
   );
 }

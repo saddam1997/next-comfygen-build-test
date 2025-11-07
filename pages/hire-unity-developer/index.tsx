@@ -249,7 +249,7 @@ export default function Unity(props) {
           faqData={JSON_DATA.Frequently}
           title="  Metaverse Game Development "
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

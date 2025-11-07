@@ -58,7 +58,7 @@ export default function Contact(props) {
           </section>
         </div> */}
         <GetinTouch />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   )

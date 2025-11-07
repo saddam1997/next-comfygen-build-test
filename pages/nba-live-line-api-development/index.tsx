@@ -511,7 +511,7 @@ export default function Ecommerce(props) {
           title="NBA Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

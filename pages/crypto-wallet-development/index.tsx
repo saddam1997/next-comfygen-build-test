@@ -785,7 +785,7 @@ export default function Ecommerce(props) {
         />
 
         
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
 
       </div>
     </>

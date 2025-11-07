@@ -1165,7 +1165,7 @@ export default function Blockchain(props) {
           title=" About Blockchain Technology"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </div>
   );

@@ -686,7 +686,7 @@ export default function MultiChain(props) {
           title=" Game Development Company"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

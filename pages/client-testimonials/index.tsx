@@ -99,7 +99,7 @@ export default function Altcoin(props) {
 
         </div>
         <Testimonial />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

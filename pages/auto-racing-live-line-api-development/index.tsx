@@ -499,7 +499,7 @@ export default function Ecommerce(props) {
           title="Auto Racing Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

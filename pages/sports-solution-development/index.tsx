@@ -451,7 +451,7 @@ export default function Ecommerce(props) {
           title=" Cricket Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

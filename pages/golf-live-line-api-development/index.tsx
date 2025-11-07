@@ -505,7 +505,7 @@ export default function Ecommerce(props) {
           title=" Golf Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

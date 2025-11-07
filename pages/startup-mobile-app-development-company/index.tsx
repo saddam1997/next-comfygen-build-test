@@ -398,7 +398,7 @@ export default function Mobile(props) {
           </section>
         </div>
         <FaqMobile />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

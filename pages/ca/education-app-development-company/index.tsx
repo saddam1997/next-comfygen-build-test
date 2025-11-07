@@ -877,7 +877,7 @@ export default function Mobile(props) {
         /> */}
         <Faq faqData={JSON_DATA.Frequently} title="" />
         <GetinTouch />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
         {/* </>} */}
       </div>
     </>

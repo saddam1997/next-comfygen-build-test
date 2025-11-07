@@ -784,7 +784,7 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
 
         <Faq faqData={JSON_DATA.Frequently} title="White Paper Development" />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

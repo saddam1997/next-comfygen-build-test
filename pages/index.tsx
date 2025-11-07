@@ -440,50 +440,13 @@ export default function Home(props: any) {
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}
         />
-
-        {/* <ClientTestimonials /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
 
-        {/* <FormSec /> */}
-        <BlogSection initialData={initialData} />
 
-        {false && show ? (
-          <div className="fixed flex items-center justify-center w-10/12 p-4 bottom-8 left-10">
-            <div className="z-10 p-2 space-y-2 bg-white border border-gray-800 rounded-md shadow-md shadow-black/50 md:flex lg:p-4 md:space-y-0">
-              <div>
-                <h5 className="mb-2 text-sm font-medium leading-tight text-gray-900 md:text-base">
-                  This website uses cookies.
-                </h5>
-                <p className="pr-5 text-xs text-gray-900 lg:text-sm">
-                  {
-                    "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data"
-                  }
-                </p>
-              </div>
-              <div className="flex items-center justify-center space-x-4">
-                <button
-                  onClick={() => setshow(!show)}
-                  type="button"
-                  className="w-full inline-block px-3 md:px-6 md:py-2.5 py-2 bg-[#161616]/50 text-white font-medium text-xs leading-tight capitalize transition duration-150 ease-in-out rounded-md"
-                >
-                  Decline
-                </button>
-                <button
-                  onClick={() => setshow(!show)}
-                  type="button"
-                  className="w-full inline-block px-3 md:px-6 md:py-2.5 py-2 bg-[#161616]/50 text-white font-medium text-xs leading-tight capitalize transition duration-150 ease-in-ou rounded-md"
-                >
-                  {" "}
-                  Accept
-                </button>
-              </div>
-            </div>
-          </div>
-        ) : null}
-
+       
       </div>
     </>
   );

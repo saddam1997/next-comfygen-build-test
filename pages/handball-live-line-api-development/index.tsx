@@ -553,7 +553,7 @@ export default function Ecommerce(props) {
           title="Handball Live Line Api Technology"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

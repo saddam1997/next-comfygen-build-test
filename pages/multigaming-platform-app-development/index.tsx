@@ -1025,7 +1025,7 @@ export default function rummy(props) {
           </div>
         </section>
         {/* faq sectio  */}
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

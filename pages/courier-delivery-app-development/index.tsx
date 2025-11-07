@@ -769,7 +769,6 @@ export default function ClinicalApp(props: any) {
         /> */}
 
 
-        {/* <BlogSection initialData={initialData} /> */}
       </div>
     </>
   );

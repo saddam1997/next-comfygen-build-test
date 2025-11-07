@@ -691,14 +691,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="" />
         <ContactFromCenter />
-        {/* <Features /> */}
-        {/* <DeliverySection hideUrl="milk-delivery-app-development" /> */}
-        {/* <ClientTestimonials
-          heading="What Our Clients Say"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-      
-        <BlogSection initialData={initialData} /> */}
+       
       </div>
     </>
   );

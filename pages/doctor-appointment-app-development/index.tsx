@@ -709,7 +709,6 @@ export default function Ecommerce(props) {
           </div>
         </section>
         <ContactFromCenter />*/}
-        {/* <BlogSection initialData={initialData} /> */}
       </div>
     </>
   );

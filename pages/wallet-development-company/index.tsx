@@ -798,17 +798,6 @@ export default function Ecommerce(props) {
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
-
-        {/* <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <BlogSection initialData={initialData} /> */}
-
       </div>
     </>
   );

@@ -617,7 +617,7 @@ export default function Ecommerce(props) {
           ]}
         />
         <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

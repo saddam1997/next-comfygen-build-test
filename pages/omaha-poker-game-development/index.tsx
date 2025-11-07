@@ -1084,7 +1084,7 @@ export default function Altcoin(props) {
           faqData={Frequently}
           title="Omaha Poker Gaming App Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

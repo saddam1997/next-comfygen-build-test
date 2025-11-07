@@ -806,7 +806,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Crypto MLM Software Development Services"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"

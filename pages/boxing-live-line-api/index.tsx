@@ -489,7 +489,7 @@ export default function Ecommerce(props) {
           title="Boxing Live Line Api "
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

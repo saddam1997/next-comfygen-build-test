@@ -565,7 +565,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="ReactJS Development Technology"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

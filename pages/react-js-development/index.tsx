@@ -253,7 +253,7 @@ export default function ReactJS(props) {
         <Faq
           faqData={JSON_DATA.Frequently}
           title="" />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

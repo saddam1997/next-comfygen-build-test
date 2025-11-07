@@ -139,7 +139,7 @@ export default function Mobile(props) {
         imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
         imageAlt="Future of Technology"
       />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
 }

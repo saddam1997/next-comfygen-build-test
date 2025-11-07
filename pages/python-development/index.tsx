@@ -228,7 +228,7 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title=" Node.JS Development Solutions"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   )

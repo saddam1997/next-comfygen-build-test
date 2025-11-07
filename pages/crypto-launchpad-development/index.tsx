@@ -653,7 +653,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="  Crypto Launchpad Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

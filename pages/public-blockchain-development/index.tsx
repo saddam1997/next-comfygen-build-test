@@ -801,7 +801,7 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

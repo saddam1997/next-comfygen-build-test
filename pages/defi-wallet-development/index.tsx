@@ -1,75 +1,29 @@
-import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Cryptocurrency from "../components/Cryptocurrency";
-import { VscCircleFilled, VscServerProcess } from "react-icons/vsc";
 import Head from "next/head";
 import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineRight, AiOutlineTranslation } from "react-icons/ai";
-import { BsCurrencyBitcoin } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import dynamic from "next/dynamic";
-import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
-import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import {
-  IconAddressBook,
-  IconApps,
-  IconBorderAll,
   IconBrain,
   IconCloud,
-  IconCode,
-  IconCoin,
-  IconCurrencyBitcoin,
-  IconEyeClosed,
-  IconFirstAidKit,
-  IconGraph,
-  IconMessage,
-  IconNews,
-  IconPasswordFingerprint,
   IconReportSearch,
   IconSignal5g,
-  IconSquaresSelected,
   IconWallet,
-} from "@tabler/icons-react";
-import {
-  IconCashBanknote,
-  IconShoppingCart,
-  IconTools,
-  IconTicket,
-  IconChartBar,
-  IconHeart,
-  IconShield,
 } from "@tabler/icons-react";
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import PortfolioSlider from "../components/PortfolioSlider";
-import Testimonial from "../ca/components/Testimonials";
-import ClientTestimonials from "../components/ClientTestimonials";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import IndustriesServe from "../componentsnew/IndustriesServe";
 import { IconCash, IconDeviceMobile, IconHeadphones, IconHierarchy3, IconLayoutDashboard, IconMessageCircle, IconShieldCheck, IconUsers } from "@tabler/icons-react";
-import AboutSectionTwo from "./components/AboutSectionTwo";
-import Features from "./components/Features";
-import NewPanel from "./components/NewPanel";
-import Wallets from "./components/Wallets";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
 
 
 const FaqSection = dynamic(() => import("../components/FaqSection"), {

@@ -831,7 +831,7 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

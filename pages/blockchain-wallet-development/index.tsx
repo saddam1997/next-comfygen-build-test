@@ -665,7 +665,7 @@ export default function Blockchain(props) {
           title="Frequently Asked Questions (FAQs)"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </div>
   );

@@ -719,7 +719,7 @@ export default function MultiChain(props:any) {
           faqData={JSON_DATA.Frequently}
           title="White Paper Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

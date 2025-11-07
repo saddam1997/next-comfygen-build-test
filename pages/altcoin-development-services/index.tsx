@@ -501,7 +501,7 @@ export default function Altcoin(props) {
         <Faq
           faqData={JSON_DATA.Frequently}
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

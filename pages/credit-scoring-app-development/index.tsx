@@ -687,7 +687,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title="Credin Score App Develoment"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

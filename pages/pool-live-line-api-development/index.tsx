@@ -499,7 +499,7 @@ export default function Ecommerce(props) {
           title="Pool Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

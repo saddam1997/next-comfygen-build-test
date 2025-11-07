@@ -246,7 +246,7 @@ export default function career(props) {
           </div>
         </section>
         <CareerForm/>
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div >
     </>
   );

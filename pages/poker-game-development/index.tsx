@@ -648,7 +648,7 @@ export default function PokerGame(props) {
           faqData={JSON_DATA.Frequently}
           title="Poker Game Development Technology"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

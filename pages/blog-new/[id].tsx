@@ -77,7 +77,6 @@ const Post = (props: any) => {
 
     </div>
 
-    {/* <BlogSection /> */}
 
   </>
 }

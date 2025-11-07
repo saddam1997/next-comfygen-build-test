@@ -744,7 +744,7 @@ export default function Altcoin(props) {
 
         
         <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

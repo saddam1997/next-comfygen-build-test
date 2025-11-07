@@ -735,7 +735,7 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

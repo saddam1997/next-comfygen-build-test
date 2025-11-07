@@ -483,7 +483,7 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
         <Faq faqData={Frequently}  />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

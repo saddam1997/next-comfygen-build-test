@@ -723,7 +723,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="eWallet App Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

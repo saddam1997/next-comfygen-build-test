@@ -419,7 +419,7 @@ export default function Polygon(props) {
           faqData={JSON_DATA.Frequently}
           title=" Polygon Blockchain Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

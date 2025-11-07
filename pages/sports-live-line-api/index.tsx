@@ -565,7 +565,7 @@ export default function Ecommerce(props) {
 
         <Faq faqData={JSON_DATA.Frequently} title=" Cricket Live Line Api" />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

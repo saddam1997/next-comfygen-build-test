@@ -679,7 +679,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Smart Contract Based MLM Software"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

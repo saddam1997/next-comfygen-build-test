@@ -554,7 +554,7 @@ export default function ClinicalApp(props) {
         />
         {/* <FaqSection faqData={JSON_DATA.Frequently} title="" />
         <TalkExpert /> */}
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

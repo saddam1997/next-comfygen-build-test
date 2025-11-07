@@ -534,7 +534,7 @@ export default function Ecommerce(props) {
           title=" Football Live Line Api "
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

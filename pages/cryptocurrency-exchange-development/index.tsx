@@ -770,7 +770,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="  Cryptocurrency Exchange Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

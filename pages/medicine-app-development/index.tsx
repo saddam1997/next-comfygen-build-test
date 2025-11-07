@@ -753,7 +753,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           description="Find answers to common queries about medicine app development. Get insights to make informed decisions for your pharmacy business."
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

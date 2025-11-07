@@ -377,7 +377,7 @@ export default function Ecommerce(props) {
         faqData={JSON_DATA.Frequently}
         title=" NFT Game Development"
       />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
 }

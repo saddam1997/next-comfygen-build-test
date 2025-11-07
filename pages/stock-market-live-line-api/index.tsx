@@ -409,7 +409,7 @@ export default function Ecommerce(props) {
           title=" Stock Market Live Line Api Development Technology"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

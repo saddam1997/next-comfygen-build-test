@@ -722,7 +722,7 @@ export default function Ecommerce(props) {
         linkText="LET'S CONNECT "
       />
       <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
 }

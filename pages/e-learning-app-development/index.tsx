@@ -538,7 +538,7 @@ export default function ClinicalApp(props: any) {
           heading="Some Words From Our Clients"
           testimonials={JSON_DATA.customTestimonials} />
         <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

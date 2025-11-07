@@ -581,7 +581,7 @@ export default function Mobile(props: any) {
         />
 
         <Faq faqData={JSON_DATA.Frequently} title=" " />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

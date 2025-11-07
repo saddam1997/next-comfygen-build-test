@@ -300,7 +300,7 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title=" Rummy Game Development Technology"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

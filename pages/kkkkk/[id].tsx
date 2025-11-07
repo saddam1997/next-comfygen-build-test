@@ -53,7 +53,7 @@ export default function Mobile(props) {
                         return Component ? <Component key={index} {...component.propValues} /> : null;
                     }
                 })}
-                <BlogSection initialData={initialData} />
+                {/*<BlogSection initialData={initialData} />*/}
             </div >
         </>
     );

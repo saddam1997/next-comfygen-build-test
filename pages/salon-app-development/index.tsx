@@ -570,7 +570,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Salon App Development" />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

@@ -526,7 +526,7 @@ export default function Ecommerce(props) {
           title="Rugby Live Line Api "
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

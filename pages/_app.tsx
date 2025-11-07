@@ -42,6 +42,9 @@ const ContactLinks = dynamic(() => import("./components/ContactLinks"), {
 const GoogleAnalytics = dynamic(() => import("./GoogleAnalytics"), {
   loading: () => <p>Loading...</p>,
 });
+const BlogSection = dynamic(() => import("./components/BlogSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+});
 
 const GetinTouch = dynamic(() => import("./components/FormSec"), { ssr: false });
 
@@ -51,6 +54,7 @@ export const config = {
 export default function MyApp({ Component, pageProps }: AppProps, props: any) {
 
   // let { initialData } = props;
+  const { initialData } = pageProps; // 👈 now available here
 
   const router = useRouter();
 
@@ -96,6 +100,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
     <React.Fragment>
       <main className={`${poppins.className} overflow-y-auto max-w-[1600px] mx-auto`}>
         <Component {...pageProps} />
+        {/* {JSON.stringify(initialData)} */}
+         <BlogSection initialData={initialData} />
         <GetinTouch />
         {showBlockchainFooter ? (
           <BlockchainFooter />
@@ -134,4 +140,19 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
 
     </React.Fragment>
   );
+}
+
+
+
+export async function getStaticProps() {
+
+  console.log("process.env.URL", process.env.URL)
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }

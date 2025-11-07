@@ -539,7 +539,7 @@ export default function Ecommerce(props) {
         faqData={JSON_DATA.Frequently}
         title="Video Game Development"
       />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
 }

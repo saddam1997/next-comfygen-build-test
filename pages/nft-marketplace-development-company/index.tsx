@@ -474,7 +474,7 @@ export default function Ecommerce(props) {
         />
         <Guidance />
         <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

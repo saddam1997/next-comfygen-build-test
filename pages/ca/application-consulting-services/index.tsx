@@ -230,7 +230,7 @@ export default function Mobile(props) {
           title=" About Blockchain Technology"
         />
         {/* <FormSec /> */}
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

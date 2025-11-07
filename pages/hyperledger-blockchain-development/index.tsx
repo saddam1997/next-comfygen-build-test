@@ -768,7 +768,7 @@ export default function Blockchain(props) {
         faqData={JSON_DATA.Frequently}
         title="Hyperledger Blockchain Development"
       />
-      <BlogSection initialData={initialData} />
+      {/*<BlogSection initialData={initialData} />*/}
     </div>
   );
 }

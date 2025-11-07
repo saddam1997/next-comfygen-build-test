@@ -367,7 +367,7 @@ export default function MultiChain(props) {
           faqData={JSON_DATA.Frequently}
           title=" DeFi Development"
         />
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

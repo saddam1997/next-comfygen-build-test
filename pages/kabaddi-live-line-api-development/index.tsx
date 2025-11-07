@@ -471,7 +471,7 @@ export default function Ecommerce(props) {
           title=" Kabaddi  Live Line Api"
         />
 
-        <BlogSection initialData={initialData} />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

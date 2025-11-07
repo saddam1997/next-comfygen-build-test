@@ -229,7 +229,6 @@ export default function about(props) {
         </section>
         <IndustriesServe />
       </div>
-      <BlogSection initialData={initialData} />
     </div>
   )
 }
