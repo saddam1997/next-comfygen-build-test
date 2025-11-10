@@ -1,20 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/Decentralized.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import WhyChoose from "../components/WhyChooseUs";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
@@ -39,42 +35,17 @@ import {
   IconShieldLock
 } from "@tabler/icons-react";
 
-
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("./components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const testimonialData = [
   {
     text: "“Working with Comfygen on our decentralized exchange project was a game-changer. Their team understood our vision from day one and delivered a secure, high-speed trading platform that users love. Highly recommended!”",
@@ -169,24 +140,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -784,18 +738,8 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
 
         <Faq faqData={JSON_DATA.Frequently} title="White Paper Development" />
 
-        {/*<BlogSection initialData={initialData} />*/}
+     
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

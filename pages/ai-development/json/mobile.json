@@ -45,6 +45,48 @@
         "title": "CEO"
       }
     ],
+
+ "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-retail-solutions.webp",
+      "title": "AI-Powered Retail Solutions",
+      "description": "A retail client aimed to enhance customer engagement and drive sales. We developed an AI-powered recommendation engine that analyzed customer behavior and preferences, delivering personalized shopping experiences. As a result, the client achieved a 20% increase in sales and significantly improved customer satisfaction.",
+      "link": "#"
+    },
+
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-healthcare-solutions.webp",
+      "title": "AI-Powered Healthcare Solutions",
+      "description": "We developed an AI-driven system utilizing computer vision and machine learning to enhance diagnostic accuracy and speed. This AI software development solution enabled the healthcare provider to deliver faster, more precise diagnoses, improving patient outcomes and operational efficiency.",
+      "link": "#"
+    },
+
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-finance-solutions.webp",
+      "title": "AI-Powered Finance Solutions",
+      "description": "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
+      "link": "#"
+    },
+
+    
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
+      "title": "AI-Powered Manufacturing Solutions",
+      "description": "A manufacturing company faced challenges with unplanned downtime and high maintenance costs. We implemented a predictive maintenance system leveraging IoT and AI to monitor equipment health, reducing downtime, cutting costs, and improving overall operational efficiency.",
+      "link": "#"
+    },
+    
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-e-commerce-solutions.webp",
+      "title": "AI-Powered E-commerce Solutions",
+      "description": "An e-commerce platform aimed to boost customer retention and engagement. We developed a personalized recommendation system powered by natural language processing and machine learning, delivering tailored shopping experiences that increased customer satisfaction and loyalty.",
+      "link": "#"
+    }
+    
+  ],
+
+
+    
     "customSliderData": [
       {
         "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",

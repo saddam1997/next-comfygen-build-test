@@ -5,7 +5,6 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mernstack.json";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
@@ -187,13 +186,3 @@ export default function Stack(props) {
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

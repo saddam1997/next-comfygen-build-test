@@ -11,33 +11,16 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from '../componentsnew/ServicesSection'
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -492,24 +475,11 @@ export default function Ecommerce(props) {
         
         />
          <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
-
-
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Pool Live Line Api"
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

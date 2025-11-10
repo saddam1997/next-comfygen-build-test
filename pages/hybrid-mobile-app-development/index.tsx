@@ -11,7 +11,6 @@ import InfoSection from '../componentsnew/InfoSectionLeft';
 import WhyChooseUs from '../componentsnew/WhyChooseUs';
 import IndustriesServe from '../componentsnew/IndustriesServe';
 import CallToAction from '../componentsnew/CallToAction';
-import BlogSection from '../componentsnew/BlogSection';
 import HeroSectionForAllPages from '../componentsnew/HeroSectionForAllPages';
 import AboutSection from '../componentsnew/AboutSection';
 import ContactFromCenter from '../componentsnew/ContactFromCenter';
@@ -139,17 +138,6 @@ export default function Mobile(props) {
         imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
         imageAlt="Future of Technology"
       />
-      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

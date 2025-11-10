@@ -12,34 +12,16 @@ import InfoSectionRight from "../components/InfoSectionRight";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
 import {IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode,  IconSettings, } from '@tabler/icons-react';
-
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
-
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -790,14 +772,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

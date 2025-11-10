@@ -6,14 +6,13 @@ import JSON_DATA from "./index.json";
 import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
 import AboutSection from "./components/AboutSection";
+import BlogSection from "./components/BlogSection";
+import Slider from "./components/Slider";
 const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
 });
 
-const PortfolioSlider = dynamic(() => import("./components/PortfolioSlider"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
 
 const CallToAction = dynamic(() => import("./components/CallToAction"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
@@ -47,6 +46,8 @@ const Faq = dynamic(() => import("./components/Faq"), {
 });
 
 export default function Home(props: any) {
+
+  let { initialData } = props;
   const [typedText] = useState("");
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const websiteJsonLd = {
@@ -249,7 +250,6 @@ export default function Home(props: any) {
         />
 
         {/* Author and Company Information */}
-
         <meta name="author" content="Comfygen Technologies" />
         <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
@@ -257,13 +257,10 @@ export default function Home(props: any) {
         <meta name="copyright" content="Comfygen Technologies" />
 
         {/* Twitter Card  */}
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
-
-
         <link
           rel="preload"
           href="/gif/blockchain-development-company.webp"
@@ -366,11 +363,15 @@ export default function Home(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Explore Our Web & App Development Portfolio"
-          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
-        />
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={portfoliodata}
+            heading="Explore Our Web & App Development Portfolio"
+            description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+          />
+        </section>
+
         <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
@@ -433,14 +434,10 @@ export default function Home(props: any) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-
-
-       
       </div>
     </>
   );
 }
-
 
 
 

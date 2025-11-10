@@ -2,23 +2,15 @@ import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Ourgames from "../../components/ourgames";
-import { BsFillStarFill } from "react-icons/bs";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import JSON_DATA from "./json/game.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
 import ProcessSec from "../components/ProcessSec";
-import TechStack from "../components/TechStack";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import PortfolioSlider from "../components/PortfolioSlider";
 import { IconApi, IconDeviceGamepad2, IconDice, IconStar } from "@tabler/icons-react";
 import NewTeckStack from "../componentsnew/NewTeckStack";
@@ -29,14 +21,7 @@ import ClientTestimonials from "../components/ClientTestimonials";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
 
-
-const GuidSection = dynamic(() => import("./components/GuidSection"), {
-  loading: () => <p>Loading...</p>,
-});
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -75,28 +60,7 @@ const Process = [
   }
 ]
 
-const technologyData = [
-  {
-    img: <IconDeviceGamepad2 stroke={1.5} className="w-12 h-12" />,
-    title: "Game Development",
-    desc: "As a pioneering force in game app development, we have an expertise in developing engaging experiences that span the spectrum from classic favorites like poker, ludo, bingo, and blackjack to a myriad of other captivating games."
-  },
-  {
-    img: <IconApi stroke={1.5} className="w-12 h-12" />,
-    title: "Game Development API",
-    desc: "We extend our expertise through our comprehensive Game Development API, designed to empower developers to elevate their creations. Our API like Cricket Live Line API, Live Casino API opens up a world of possibilities, granting seamless access.From integrating immersive graphics and real-time multiplayer capabilities to enabling in-game transactions, our API is a gateway to crafting exceptional gaming experiences."
-  },
-  {
-    img: <IconDice stroke={1.5} className="w-12 h-12" />,
-    title: "Betting Game Development",
-    desc: "Whenever you decide to invest a good amount of capital on an all-inclusive web or app interface on sports betting you need to think twice whenever opting the right firm. We offer our global clients all kinds of sports betting apps including casino game development, cricket betting apps, matka game development and many more. You just name it and our expert professionals can develop a highly profitable betting app with the latest AI technology and tools for users worldwide that too on different platforms."
-  },
-  {
-    img: <IconStar stroke={1.5} className="w-12 h-12" />,
-    title: "Fantasy Game Development",
-    desc: "Being experts in the Fantasy Sports industry, we feel proud to own a team of fantasy game developers who have developed 30+ fantasy websites and apps. We have created an advanced level of white label fantasy apps with unique features and customizations according to the client’s desire and requirements to make a profitable business model."
-  }
-];
+
 
 
 export default function MultiChain(props) {
@@ -116,25 +80,7 @@ export default function MultiChain(props) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
+   
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -628,45 +574,7 @@ export default function MultiChain(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        {/* <section className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 space-y-10 py-10">
-          <div className="flex flex-col justify-center text-center mx-auto">
-            <h2 className=" py-4 text-[#0E1F51] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-              Comgygen’s Game Development Stack:{" "}
-              <span className="text-blue-600">Tools & Technologies </span> We
-              Ace In
-            </h2>
-            <p className="text-base text-slate-800">
-              In the world of game development, a wide array of technologies
-              comes into play to create immersive, engaging experiences. These
-              technologies, among others, form the foundation of modern game
-              development, enabling us to stay up-to-date with the latest tech
-              trend among Gaming Industry. Here are some of the key game
-              development technologies:
-            </p>
-          </div>
-          <div className="grid lg:grid-cols-4 grid-cols-2 border  divide-x-2 divide-y-2">
-            {JSON_DATA.TechnoStack.map((elem) => {
-              const { title, num, img } = elem;
-              return (
-                <div
-                  key={num}
-                  className="p-4 text-center space-y-2 hover:bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] transition-all duration-300 ease-in-out group"
-                >
-                  <Image
-                    src={img}
-                    alt={title}
-                    className="mx-auto"
-                    width={80}
-                    height={60}
-                  />
-                  <p className="bg-clip-text text-transparent bg-gradient-to-t from-[#16BDFA] to-[#BE5EBC] font-bold text-lg group-hover:text-white">
-                    {title}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section> */}
+
         <HireDeveloper
           heading="Hire Game Developers"
           text="Looking to build a powerful, engaging, and scalable game? Hire game developers from Comfygen and bring your idea to life with expert skills and advanced technologies. We offer flexible hiring models—hourly, full-time, or project-based—to suit your budget and requirements. Our skilled team specializes in mobile game development, Unity/Unreal Engine, AR/VR, blockchain, and multiplayer games, ensuring world-class quality. Whether you are a startup, enterprise, or gaming studio, Comfygen provides dedicated developers to deliver innovative, feature-rich, and profitable gaming solutions."
@@ -690,13 +598,4 @@ export default function MultiChain(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

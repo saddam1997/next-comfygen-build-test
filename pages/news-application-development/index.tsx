@@ -1,53 +1,32 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
-import styles from "./styles.module.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";
 import Providers from "./components/Providers";
-import ModusSection from "./components/ModusSection";
-import HireSection from "../components/HireSection";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import HireDeveloper from "../components/HireDeveloper";
 import InfoSectionRight from "../components/InfoSectionRight";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import WhyChoose from "../components/WhyChooseUs";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import { IconAugmentedReality, IconBarrel, IconBrain, IconBrandStorj, IconBrowser, IconCloud, IconDeviceMobile, IconDevices, IconLock, } from '@tabler/icons-react';
-import { IconChartBar, IconShield, } from '@tabler/icons-react';
+import { IconAugmentedReality, IconBrowser, IconDeviceMobile, IconDevices,} from '@tabler/icons-react';
 import TechStack from "../components/TechStack";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ClientTestimonials from "../components/ClientTestimonials";
 import PortfolioSec from "../componentsnew/PortfolioSec";
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const Advice = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -87,28 +66,7 @@ const Process = [
   }
 ];
 
-const technologyData = [
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />, // Mobile-focused icon
-    title: "Mobile News App Development",
-    desc: "AI/ML-based features can provide personalization based on user priorities and purchase history, automatic medicine reminders, and an AI-powered chatbot for customer help."
-  },
-  {
-    img: <IconBrowser stroke={1.5} className="w-12 h-12" />, // Web-focused icon
-    title: "Web-Based News App Development",
-    desc: "Blockchain technology can be used to secure patient data, ensure transparency in medicine supply problems, and to prevent counterfeit medicines."
-  },
-  {
-    img: <IconDevices stroke={1.5} className="w-12 h-12" />, // Cross-platform icon
-    title: "Cross Platform News App Development",
-    desc: "Data science can be used to predict ideas and optimize inventory management, customer segmentation to optimize marketing efforts, and for predictive analysis to detect fraud to prevent fraudulent activities."
-  },
-  {
-    img: <IconAugmentedReality stroke={1.5} className="w-12 h-12" />, // AR/VR-focused icon
-    title: "Custom News App Development",
-    desc: "AR/VR can be used to create interactive product presentations, rich content, and immersive experiences to enhance patient engagement."
-  }
-];
+
 
 const techDataForPage1 = {
   All: [
@@ -276,11 +234,7 @@ export default function News(props) {
           </div>
         </section>
         <ContactFromCenter />
-        {/* <SolutionSec
-          heading="Our Top Notch News App Development Solutions"
-          subheading="Our News App and platform development services are aligned towards multiple solutions, and we can customize these solutions for multiple platforms. As people use multiple devices in their day-to-day lives, multi-platform support is important for the amazing news app development solutions we extend. Here are some of the top-notch solutions that our News App development team has created."
-          techData={technologyData}
-        /> */}
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -511,14 +465,4 @@ export default function News(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

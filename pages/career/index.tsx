@@ -119,11 +119,6 @@ export default function career(props) {
   const [currentCount, setCurrentCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalOpenData, setModalOpenData] = useState<any>({});
-
-
-  console.log("RENDER____________modalOpenData", modalOpenData);
-
-
   const [errorsContactUs, setErrorsContactUs] = useState({});
 
   const handleCountryChange = (event) => {
@@ -246,17 +241,8 @@ export default function career(props) {
           </div>
         </section>
         <CareerForm/>
-        {/*<BlogSection initialData={initialData} />*/}
+        
       </div >
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

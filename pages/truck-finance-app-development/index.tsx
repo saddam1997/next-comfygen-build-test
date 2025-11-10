@@ -27,9 +27,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -551,40 +549,7 @@ export default function ClinicalApp(props: any) {
           title="Technology Stack We Use for Truck Finance App Development"
           description="We use the latest and most secure technologies to build reliable, scalable, and high-performance truck finance applications. Across all platforms, we support real-time syncing, fast performance, and secure loan transactions."
         />
-        {/* <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Why Your Business Needs a Personal Finance App
-                </h2>
-                <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                  Personal finance apps are becoming a powerful tool for
-                  businesses. They help attract more users, build trust, and
-                  offer better money management solutions that improve customer
-                  experience and long-term loyalty.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
-                {JSON_DATA.FutureDriven2.map((elem) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
-                      <h3
-                        className="text-2xl text-[#212121] font-semibold"
-                        dangerouslySetInnerHTML={{ __html: title }}
-                      />
-                      <p
-                        className=" text-base font-normal mt-2"
-                        dangerouslySetInnerHTML={{ __html: desc }}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section> */}
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -619,14 +584,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

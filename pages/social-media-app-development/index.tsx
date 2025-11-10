@@ -9,12 +9,10 @@ import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
 import HireDeveloper from "../components/HireDeveloper";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import ProcessSec from "../components/ProcessSec";
 import IndustriesServe from "../components/IndustriesServe";
 import TechStack from "../components/TechStack";
@@ -22,7 +20,7 @@ import ConsultancyApproach from "../components/ConsultancyApproach";
 import ModelsSec from "../components/ModelsSec";
 import PortfolioSec from "../components/PortfolioSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconBell, IconBook, IconBrain, IconChartLine, IconCoin, IconDeviceGamepad2, IconDevices, IconHeart, IconLock, IconMessageCircle, IconNetwork, IconSettings, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
+import {IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
 import Features from "./components/Features";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -414,23 +412,6 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-
-        {/* <InfoSectionRight
-          heading="Comfygen - where your social media app vision is brought to life with precision, passion, and unparalleled proficiency"
-          description1=" The most noticeable value advantage of working with Comfygen
-                  for custom social media app development is personalization.
-                  Our experts listen to all your requirements and prepare
-                  personalized solutions tailored to your expectations. On top
-                  of that, we specialize in Android social networking app
-                  development and creation of social apps for other operating
-                  systems. The commitment of our experts to deliver social
-                  networking apps that not only meet your requirements but also
-                  align with the latest trends serves as a promising advantage
-                  of working with us."
-          imageSrc="https://www.comfygen.com/img/comfygen-where-your-social-media-app-vision-is-brought-to-life-with-precision-passion-and-unparalleled-proficiency.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        /> */}
         <IndustriesServe />
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -500,18 +481,8 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

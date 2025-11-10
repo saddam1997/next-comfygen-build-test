@@ -3,20 +3,13 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./web3-wallet-development.json";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "../componentsnew/WhoCanStart";
-import DeliverySection from "../components/DeliverySection";
 import CallToAction from "../componentsnew/CallToAction";
 import SolutionSec from "../componentsnew/SolutionSec";
 import IndustriesServe from "../componentsnew/IndustriesServe";
@@ -38,15 +31,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const Process = [
   {
@@ -630,61 +615,6 @@ export default function ClinicalApp(props: any) {
           ]}
         />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* who cane start */}
-
-
-        {/* <section className="py-5">
-          <WhoCanStart
-            title="Who Can Start a Milk Delivery App Business?"
-            description="Comfygen’s milk delivery app development solutions are ideal for a wide range of businesses. Whether you're just starting out or already established, our scalable and customizable apps help you grow fast in the digital dairy market."
-            cards={WhoCanStartCards}
-          />
-        </section> */}
-
-
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Milk Delivery App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen provides top-notch milk delivery app development
-                services to dairy companies, milk distributors, and startups.
-                Real-time features enhance customer satisfaction with our
-                advanced milk delivery app development services.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <ContactFromCenter />
-        <Features />
-
-
-        <DeliverySection hideUrl="milk-delivery-app-development" /> */}
-
-
         <ClientTestimonials
           heading="What Our Clients Say About Comfygen Web3 Wallet Development"
           testimonials={JSON_DATA.customTestimonials}
@@ -694,14 +624,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

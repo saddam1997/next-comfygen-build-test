@@ -1,15 +1,11 @@
 import Image from "next/image";
-import Cryptocurrency from "../components/Cryptocurrency";
 import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
-import { ImWhatsapp } from "react-icons/im";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import JSON_DATA from "./json/smartcontractdev.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import TechStack from "../components/TechStack";
 import InfoSectionLeft from "../components/InfoSectionLeft";
@@ -20,34 +16,16 @@ import ProcessSec from "../components/ProcessSec";
 import CardItem from "../components/CardItem";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconActivity, IconApps, IconBrain, IconCalendarEvent, IconCloud, IconCode, IconCurrencyBitcoin, IconFirstAidKit, IconLayersIntersect, IconMessage, IconMessageCircle, IconNews, IconReportSearch, IconSettings, IconShieldCheck, IconShoppingBag, IconSignal5g } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import { IconActivity,IconCalendarEvent, IconLayersIntersect, IconMessageCircle, IconNews, IconSettings, IconShieldCheck, IconShoppingBag} from '@tabler/icons-react';
 import CallToAction from "../components/CallToAction";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -725,18 +703,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" DeFi Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

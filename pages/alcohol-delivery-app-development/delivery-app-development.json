@@ -31,6 +31,77 @@
       "desc": "Absolutely. As an experienced alcohol delivery app development company, we ensure compliance with liquor laws, licensing rules, and age verification checks. Our wine on-demand app development solutions integrate ID scanning, OTP verification, and geolocation restrictions to ensure legal, safe, and responsible alcohol delivery operations across regions."
     }
   ],
+  "Process": [
+    {
+      "title": "Requirement Analysis & Market Research",
+      "description": "We start by analyzing your business goals, target audience, and market trends. Whether it’s wine on-demand app development, drink delivery app development, or liquor store app development, we tailor strategies to fit your business needs."
+    },
+    {
+      "title": "UI/UX Design & Prototyping",
+      "description": "Our experts design intuitive interfaces for alcohol delivery mobile app development with seamless navigation, engaging product catalogs, and secure checkout flows. The aim is to deliver an engaging experience, much like Uber for alcohol delivery app development."
+    },
+    {
+      "title": "Custom Development & Feature Integration",
+      "description": "As a leading alcohol delivery app development company in India, we build feature-rich solutions with real-time order tracking, age verification, multiple payment gateways, and loyalty programs. For businesses seeking quicker launches, we also provide ready-made liquor delivery app development for faster deployment."
+    },
+    {
+      "title": "Advanced Tech Implementation",
+      "description": "We integrate AI, ML, blockchain, GPS, and cloud technologies into our on-demand alcohol delivery app development solutions. These innovations enhance security, optimize delivery routes, ensure compliance, and provide a seamless experience in online liquor delivery app development."
+    },
+    {
+      "title": "Compliance & Age Verification",
+      "description": "Legal compliance is crucial in liquor delivery app development. Our solutions include AI-powered ID verification and secure age checks, ensuring every delivery adheres to regulations. This makes us one of the most reliable and trusted liquor delivery app development companies."
+    },
+    {
+      "title": "Testing & Quality Assurance",
+      "description": "We conduct comprehensive end-to-end testing on every alcohol delivery app to guarantee seamless performance. Whether it’s a SaaS-based liquor delivery platform or a custom alcohol delivery solution, our priority is to deliver stability, reliability, and an exceptional user experience."
+    },
+    {
+      "title": "Deployment & Post-launch Support",
+      "description": "Once your app is launched, our alcohol delivery app developers provide ongoing updates, maintenance, and scalability options. Whether you need alcohol distribution software development or aim for global expansion, we ensure long-term growth and success."
+    }
+  ],
+
+  "CardClone":[
+  {
+    "image":
+      "https://www.comfygen.com/comfygen-images/delivery-app-development/food1.webp",
+    "title": "Drizly Clone App",
+    "description":
+      "Create an app like Drizly with a vast liquor catalog, age verification, and real-time delivery tracking. Deliver a seamless experience that connects liquor stores with customers instantly.",
+    "buttonText": "Contact Us"
+  },
+  {
+    "image":
+      "https://www.comfygen.com/comfygen-images/delivery-app-development/grocery1.webp",
+    "title": "Saucey Clone App",
+    "description":
+      "Build an app like Saucey offering on-demand alcohol delivery with fast checkout, location-based services, and instant delivery options. Perfect for startups targeting urban markets.",
+    "buttonText": "Contact Us"
+  },
+  {
+    "image":
+      "https://www.comfygen.com/comfygen-images/delivery-app-development/medicine1.webp",
+    "title": "Minibar Delivery Clone App",
+    "description":
+      "Develop a Minibar Delivery-like app with advanced features such as scheduled deliveries, gift orders, and multi-store management to cater to a broad customer base.",
+    "buttonText": "Contact Us"
+  },
+  {
+    "image":
+      "https://www.comfygen.com/comfygen-images/delivery-app-development/courier3.webp",
+    "title": "Thirstie Clone App",
+    "description":
+      "Launch an app like Thirstie that combines alcohol delivery with eCommerce integrations, loyalty rewards, and digital marketing tools to enhance brand visibility and sales.",
+    "buttonText": "Contact Us"
+  }
+],
+
+
+
+
+
+
   "servicesData": [
     {
       "title": "Custom Alcohol Delivery App Development Solutions",
@@ -106,7 +177,6 @@
       "description": "Developed for a multi-location liquor store brand, this liquor delivery app allowed centralized product management, multi-store order tracking, promotions, and inventory optimization. It helped the business scale operations and improve customer convenience.",
       "link": "#"
     },
-
     {
       "image": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/wine-spirits-subscription-app-portfolio.webp",
       "title": "Wine & Spirits Subscription App",

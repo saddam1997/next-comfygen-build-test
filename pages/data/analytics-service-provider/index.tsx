@@ -7,7 +7,6 @@ import LazyLoad from "react-lazy-load";
 import HireDeveloper from "../../components/HireDeveloper";
 import WhyChoose from "../../components/WhyChooseUs";
 import Faq from "../../components/Faq";
-import BlogSection from "../../components/BlogSection";
 import ProcessSec from "../../components/ProcessSec";
 import TechStack from "./components/TeckStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
@@ -19,12 +18,6 @@ import IndustriesServe from "./components/IndustriesServe";
 
 import Header from "../../components/Header";
 
-
-
-// const Header = dynamic(() => import("../../components/Header"), {
-//   ssr: false,
-//   loading: () => <p>Loading...</p>,
-// });
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {
@@ -210,54 +203,6 @@ export default function Mobile(props) {
           rel="canonical"
           href="https://www.comfygen.com/data/analytics-service-provider"
         />
-        <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
-        />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-        <meta name="og:type" content="website" />
-        <meta name="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="og:email" content="sales@comfygen.com" />
-        <meta name="og:phone_number" content="+91-958-786-7258" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -684,18 +629,8 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title="FAQs for Our Data Analytics Services "
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

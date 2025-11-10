@@ -29,12 +29,7 @@ const FaqSection = dynamic(() => import("../components/FaqSection"), {
 const AdviceSection = dynamic(() => import("../components/Advice"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -93,15 +88,7 @@ const imageStyle = {
   height: "400px",
   width: "300px",
 };
-// const imageStyle1 = {
-//   backgroundImage: `url("https://www.comfygen.com/img/welcome-to-our-online-omaha-poker-game-development-solution.webp")`,
-// };
-// const imageHire = {
-//   backgroundImage: `url("https://www.comfygen.com/img/hire-baccrate-game.webp")`,
-// };
-// const imageStyle2 = {
-//   backgroundImage: `url("https://www.comfygen.com/images/glance-for-top-class-bg.webp")`,
-// };
+
 
 export default function Altcoin(props) {
   const [currentCount, setCurrentCount] = useState("");
@@ -109,8 +96,7 @@ export default function Altcoin(props) {
 
   let { initialData } = props;
   let {
-    LeadingOmaha,
-    LeadingOmaha1,
+  
     myList,
     myList4,
     Shaping,
@@ -1012,31 +998,7 @@ export default function Altcoin(props) {
             </section>
           </div>
         </section>
-        {/* <div className="w-11/12 mx-auto space-y-14 2xl:w-9/12 xl:w-5/6 lg:py-16 py-4">
-          <div className="flex flex-col justify-center mx-auto">
-            <h2 className="py-4 text-3xl lg:text-4xl md:text-center text-left font-bold leading-[2rem] lg:leading-[3rem] text-[#0E1F51]">
-              {LeadingOmaha1?.head}
-            </h2>
-            <p className="text-base text-slate-800  md:text-center text-left">
-              {LeadingOmaha1?.para}
-            </p>
-          </div>
-          <div className="grid  gap-10 lg:grid-cols-2 md:grid-cols-2">
-            {LeadingOmaha.map((omaha) => {
-              return (
-                <div
-                  key={omaha.num}
-                  className="border p-3 space-y-2 shadow border-l-[16px] rounded-l-2xl border-[#16BDFA]"
-                >
-                  <h3 className="bg-clip-text text-transparent bg-gradient-to-t from-[#16BDFA] to-[#BE5EBC] text-xl font-semibold">
-                    {omaha.title}
-                  </h3>
-                  <p className="text-base text-slate-800">{omaha.decs}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div> */}
+
 
         <WhyChoosee
           title={JSON_DATA.pageData.title}
@@ -1088,13 +1050,4 @@ export default function Altcoin(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -7,26 +7,14 @@ import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
 import PortfolioSec from "../componentsnew/PortfolioSec";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
+
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
 
 const HeroSectionForAllPages = dynamic(
@@ -41,9 +29,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -51,124 +37,11 @@ const ContactFromCenter = dynamic(
   }
 );
 
-const Process = [
-  {
-    title: "Requirement Analysis & Research",
-    description:
-      "We begin by analyzing your business goals, target audience, and competitors. Our astrology app developers define clear objectives and workflows to build a strong foundation for your custom astrology app development project.",
-  },
-  {
-    title: "Marketing & Growth Strategy",
-    description:
-      "Our team creates a growth-focused strategy to position your astrology app in the market. From user acquisition plans to engagement tactics, we ensure your app attracts astrologers, startups, and global users.",
-  },
-  {
-    title: "Wireframing & UI/UX Design",
-    description:
-      "We design engaging, user-friendly interfaces with intuitive navigation. Our astrology app development services focus on elegant visuals, smooth booking of consultations, horoscope readings, and personalized astrology experiences.",
-  },
-  {
-    title: "Development & Integration",
-    description:
-      "Our expert astrology app developers build robust, scalable apps with AI, Machine Learning, Blockchain, and AR/VR integration. Whether it’s horoscope, zodiac, Kundli, or astrology consultation apps, we integrate all key features for a seamless user journey.",
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description:
-      "We conduct rigorous testing for performance, usability, and security. Our QA team ensures your astrology app runs flawlessly across Android, iOS, and web platforms, delivering accurate predictions and smooth functionality.",
-  },
-  {
-    title: "Deployment & Launch",
-    description:
-      "Once approved, we deploy your astrology app on app stores with complete backend configuration. As a trusted custom astrology mobile app development company, we make sure a seamless launch and integration with your business operations.",
-  },
-  {
-    title: "Maintenance & Support",
-    description:
-      "Post-launch, we provide 24/7 support, regular updates, and feature enhancements. Our custom astrology and horoscope app development company ensures your app stays secure, scalable, and aligned with the latest astrology trends.",
-  },
-];
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Elementary Application Development",
-    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Freelance Tutor Marketplace Development",
-    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "K-12 Education App Development",
-    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "STEM Learning Application Development",
-    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Language Learning Application Development",
-    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Test Preparation App Development Solutions",
-    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Corporate Training & Employee Learning App Development",
-    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Special Needs & Inclusive Education App Development",
-    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness and Wellness Coaching App Development",
-    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
-  },
-];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
-      head: "Love Horoscope App",
-      name: "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/love-horoscope-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/hero-image-tarot-card-reading-app.webp",
-      head: "Tarot Card Reading App",
-      name: "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings. Featuring AI-powered tarot interpretations, live tarot reader consultations, customizable card decks, and in-app purchase options, this app provides a seamless and intuitive tarot reading experience.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/tarot-card-reading-app",
-    },
-  ],
-};
+
+
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -185,26 +58,6 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
-
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -455,32 +308,7 @@ export default function ClinicalApp(props: any) {
           rel="canonical"
           href="https://www.comfygen.com/astrology-app-development"
         />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen Astrology App" />
-        <meta name="author" content="Comfygen Private Limited" />
-        <meta name="web-author" content="Comfygen" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="global" />
-        <meta name="rating" content="general" />
-        <meta name="coverage" content="worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+        
         <meta
           name="keywords"
           content="Astrology App Development, Horoscope App Development, Kundli App Development, Panchang App Development, Numerology App Development, AI Astrology App, AR Horoscope App, Develop Astrology App like Astrotalk"
@@ -669,7 +497,7 @@ Explore our next-gen AI features designed to revolutionize your astrology busine
         </section>
 
         <PortfolioSec
-          techData={techDataForPage1}
+          techData={JSON_DATA.techDataForPage1}
           heading="We Have Developed Astrology Apps That You Can Check Out"
           description="We at Comfygen are proud to provide high-quality astrology apps that let users experience astrology in a completely new way. As a reputable astrology app development firm in India and USA, we offer feature-rich, scalable, and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/ai-astrology-apps-features-types-cost-to-develop-in-2025/'>AI-powered astrology applications</a>."
         />
@@ -684,7 +512,7 @@ Explore our next-gen AI features designed to revolutionize your astrology busine
                 We follow a structured and transparent astrology app development process to ensure your app is feature-rich, scalable, and ready for success. We deliver seamless performance and next-generation user experiences from concept to launch.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
         <TechStack
@@ -722,18 +550,7 @@ Explore our next-gen AI features designed to revolutionize your astrology busine
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

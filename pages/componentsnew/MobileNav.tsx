@@ -396,7 +396,7 @@ const Blockchain = [
   {
     num: "14",
     name: "DPOS Blockchain Development",
-    url: "ca/dpos-blockchain-development-company",
+    url: "/ca/dpos-blockchain-development-company",
   },
   {
     num: "15",

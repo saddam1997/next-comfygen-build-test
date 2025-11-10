@@ -3,19 +3,15 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import LazyLoad from "react-lazy-load";
 import HireDeveloper from "../../components/HireDeveloper";
 import WhyChoose from "../../components/WhyChooseUs";
 import Faq from "../../components/Faq";
-import BlogSection from "../../components/BlogSection";
 import ProcessSec from "../../components/ProcessSec";
 import TechStack from "./components/TeckStack";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
-import Features from "./components/NewFeatures";
 const Header = dynamic(() => import("../../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -66,40 +62,7 @@ const Process = [
   },
 ];
 
-const portfolioData = [
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/hire-data-scientist/p1.webp",
-    title: "Hospital Operations",
-    description:
-      "Built predictive models to forecast patient inflow and optimize staff allocation, resulting in 30% faster patient processing and significantly reduced wait times.",
-    link: "/contact-us",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/hire-data-scientist/p2.webp",
-    title: "Financial Forecasting",
-    description:
-      "Developed machine learning models for cash flow prediction and expense trend analysis, improving budgeting accuracy by 45% and enhancing financial decision-making.",
-    link: "/contact-us",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/hire-data-scientist/p3.webp",
-    title: "E-Commerce Analytics",
-    description:
-      "Analyzed customer purchase patterns using segmentation and propensity scoring, leading to targeted campaigns and a 28% increase in order conversion rates.",
-    link: "/contact-us",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/hire-data-scientist/p4.webp",
-    title: "Retail Inventory Optimization",
-    description:
-      "Used demand forecasting and expiry risk modeling to reduce grocery stock waste by 30% while ensuring high availability of top-selling products.",
-    link: "/contact-us",
-  },
-];
+
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -123,48 +86,8 @@ export default function Mobile(props) {
 
         <link rel="canonical" href="https://www.comfygen.com/data/aws-analytics-services" />
 
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="AWS Analytics Services" />
-
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
         <meta property="og:url" content="https://www.comfygen.com/data/aws-analytics-services" />
         <meta property="og:title" content="AWS Analytics Services | Real-Time Data Insights" />
         <meta property="og:description" content="Comfygen helps businesses unlock the full potential of AWS Analytics Services — including Redshift, Glue, QuickSight, and more. Scalable. Secure. Built for action." />
@@ -495,14 +418,4 @@ export default function Mobile(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

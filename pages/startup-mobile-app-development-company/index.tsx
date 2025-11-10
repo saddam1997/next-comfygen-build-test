@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-import { ImArrowUpRight2 } from 'react-icons/im';
 import dynamic from 'next/dynamic';
 import styles from './styles.module.css'
 import JSON_DATA from "./json/mobile.json"
@@ -22,9 +21,7 @@ const TalkExpert = dynamic(() => import('../components/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
-const BlogSection = dynamic(() => import('../components/BlogSection1'), {
-  loading: () => <p>Loading...</p>,
-})
+
 const FaqMobile = dynamic(() => import('./components/FaqMobile'), {
   loading: () => <p>Loading...</p>,
 })
@@ -398,18 +395,7 @@ export default function Mobile(props) {
           </section>
         </div>
         <FaqMobile />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

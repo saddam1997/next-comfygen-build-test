@@ -1,28 +1,17 @@
 import React, { useRef, useState } from "react";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
-import { RiGameFill, RiHistoryFill, RiTableAltLine } from "react-icons/ri";
-import { CgOptions } from "react-icons/cg";
-import { FiAirplay } from "react-icons/fi";
 import dynamic from "next/dynamic";
-import FaqSection from "../components/FaqSection";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import JSON_DATA from "./json/video.json";
-import WhiteNavButton from "../components/button/WhiteNavButton";
-import GradientNavButton from "../components/GradientNavButton";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import AboutSection from "../components/AboutSection";
 import CardItem from "../components/CardItem";
-import InfoSectionLeft from "../components/InfoSectionLeft";
 import ProcessSec from "../components/ProcessSec";
-import InfoSectionRight from "../components/InfoSectionRight";
 import WhyChoose from "../components/WhyChooseUs";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
@@ -30,22 +19,12 @@ import { IconBolt, IconBook, IconGhost, IconMap, IconPhotoVideo, IconPlayFootbal
 import { IconHeart, } from '@tabler/icons-react';
 import PortfolioSec from "../components/PortfolioSec";
 import ModelsSec from "../components/ModelsSec";
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -373,17 +352,9 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title="Video Game Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        
       </div>
     </>
   );
 }
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

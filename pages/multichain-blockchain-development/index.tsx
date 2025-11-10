@@ -1,16 +1,10 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { useRouter } from "next/router";
-import { RiRecordMailLine } from "react-icons/ri";
-import { TbBoxMultiple } from "react-icons/tb";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaMoneyCheck } from "react-icons/fa";
-import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
-import { VscPreview } from "react-icons/vsc";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multichainblockchain.json";
 import LazyLoad from "react-lazy-load";
@@ -18,9 +12,6 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import TechStack from "../components/TechStack";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import SolutionSec from "../components/SolutionSec";
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
 import CallToAction from "../components/CallToAction";
@@ -212,25 +203,7 @@ export default function MultiChain(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
 
     {
       "@context": "https://schema.org",
@@ -728,14 +701,4 @@ export default function MultiChain(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

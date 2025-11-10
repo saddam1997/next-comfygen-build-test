@@ -6,30 +6,18 @@ import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import ClientTestimonials from "../components/ClientTestimonials";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import TechStack from "../components/TechStack";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
 import PortfolioSecs from "../components/PortfolioSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardGrid from "../components/CardGrid";
 import ServicesSection from '../componentsnew/ServicesSection'
 import ProcessSection from "../componentsnew/ProcessSection";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import Tab from "../components/Tab";
-import TabsPanel from "../components/Tab";
 import TrendsSection from "../componentsnew/TrendsSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const Features = dynamic(() => import("./components/Features"), {
   loading: () => <p>Loading...</p>,
 });
 
@@ -76,10 +64,6 @@ const Process = [
       "Post-launch, we offer 24/7 support, system monitoring, and regular updates. Our services keep your NeoBank app optimized, secure, and aligned with evolving user and compliance requirements.",
   }
 ];
-
-
-
-
 
 const techDataForPage1 = {
   All: [
@@ -129,25 +113,7 @@ const techDataForPage1 = {
 };
 
 const jsonLdData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-    "addressLocality": "Jaipur, Rajasthan",
-    "addressRegion": "India",
-    "postalCode": "302006",
-    "telephone": "+91-958-786-7258"
-  },
-  
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-    "addressLocality": "Toronto",
-    "addressRegion": "Canada",
-    "postalCode": "M1G3S7",
-    "telephone": "+1 579-977-4475"
-  },
+ 
 
   {
     "@context": "https://schema.org",
@@ -568,18 +534,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="ReactJS Development Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

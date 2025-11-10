@@ -1,16 +1,12 @@
 import React, { useRef, useState } from "react";
-import Image from "next/image";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
@@ -272,24 +268,6 @@ export default function rummy(props) {
   ];
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
     {
       "@type": "WebSite",
       "@id": "https://www.comfygen.com/#website",
@@ -801,17 +779,7 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

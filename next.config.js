@@ -21,45 +21,117 @@
 //   },
 //   compress: true,
 // })
+const redirects = require('./redirects'); 
 
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')
-  ({
-    enabled: false,
-    openAnalyzer: false,
-  })
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: false, // set to true only when analyzing bundles
+  openAnalyzer: false,
+});
 
-module.exports = withBundleAnalyzer({
-  "env": {
-    "URL": "https://www.comfygen.com",
-    "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  env: {
+    URL: "https://www.comfygen.com",
+    NEXT_PUBLIC_MEASUREMENT_ID: "UA-228613134-1",
   },
+
   reactStrictMode: true,
 
   images: {
-    // domains: ['http://localhost:1225'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'www.comfygen.com',
-        port: '', // Leave empty if no specific port is needed
-        pathname: '/**', // Match all paths under this domain
+        port: '',
+        pathname: '/**',
       },
       {
-        protocol: "http",
-        hostname: "localhost",
-        port: "1225", // Ensure this matches your local server port
-        pathname: "/**",
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '1225',
+        pathname: '/**',
       },
     ],
-    formats: ["image/avif", "image/webp"], // enables automatic WebP/AVIF conversion
-    minimumCacheTTL: 31536000, // ✅ cache for 1 year (in seconds)
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000, // cache 1 year
+    deviceSizes: [320, 480, 768, 1024, 1280],
     qualities: [50, 70, 75, 80, 85, 90, 100],
-    deviceSizes: [320, 480, 768, 1024, 1280], // responsive breakpoints
     imageSizes: [16, 32, 64, 128, 256, 384],
   },
+
   compress: true,
-})
+
+  // ✅ Add your redirects here
+
+
+   async redirects() {
+    return redirects; // 👈 clean and maintainable
+  },
+  
+};
+
+module.exports = withBundleAnalyzer(nextConfig);
+
+// const withBundleAnalyzer = require('@next/bundle-analyzer')
+//   ({
+//     enabled: false,
+//     openAnalyzer: false,
+//   })
+
+// module.exports = withBundleAnalyzer({
+//   "env": {
+//     "URL": "https://www.comfygen.com",
+//     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
+//   },
+//   reactStrictMode: true,
+
+//   images: {
+//     // domains: ['http://localhost:1225'],
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'www.comfygen.com',
+//         port: '', // Leave empty if no specific port is needed
+//         pathname: '/**', // Match all paths under this domain
+//       },
+//       {
+//         protocol: "http",
+//         hostname: "localhost",
+//         port: "1225", // Ensure this matches your local server port
+//         pathname: "/**",
+//       },
+//     ],
+//     formats: ["image/avif", "image/webp"], // enables automatic WebP/AVIF conversion
+//     minimumCacheTTL: 31536000, // ✅ cache for 1 year (in seconds)
+//     qualities: [50, 70, 75, 80, 85, 90, 100],
+//     deviceSizes: [320, 480, 768, 1024, 1280], // responsive breakpoints
+//     imageSizes: [16, 32, 64, 128, 256, 384],
+//   },
+//   compress: true,
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

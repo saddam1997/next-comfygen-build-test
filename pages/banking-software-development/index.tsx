@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -6,13 +6,8 @@ import JSON_DATA from "./bankingsoftwaredevelopment.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
 import PortfolioSec from "../componentsnew/PortfolioSec";
@@ -27,7 +22,6 @@ import {
   IconHeartbeat,
   IconApps,
 } from "@tabler/icons-react";
-import ServiceSection from "../components/ServiceSection";
 import ServicesSection from "../componentsnew/ServicesSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
@@ -45,9 +39,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -55,125 +47,12 @@ const ContactFromCenter = dynamic(
   }
 );
 
-const Process = [
-  {
-    title: "Discovery & Requirement Gathering",
-    description:
-      "Our process begins with an in-depth discovery session where our qualified and talented banking software developers analyze your business model, project goals, and technical requirements. We research banking trends, compliance needs, and user behavior to define a clear product roadmap and ensure alignment with industry best practices.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Our UI/UX design experts craft intuitive, user-centric interfaces that enhance digital banking experiences. We focus on responsive design, seamless navigation, and accessibility to ensure your custom banking software development meets the expectations of both tech-savvy users and traditional banking customers.",
-  },
-  {
-    title: "Backend & Frontend Development",
-    description:
-      "Using secure and modern tech stacks, we build robust backend systems and responsive frontends tailored to your financial services. As a custom banking software development agency, we ensure every component is scalable, efficient, and ready to support complex banking operations.",
-  },
-  {
-    title: "Integration with Legacy Systems",
-    description:
-      "We integrate new solutions with your existing banking infrastructure, core systems, and third-party APIs without disrupting ongoing operations. Our banking software development services ensure secure data migration, process automation, and compliance with global banking standards during system integration.",
-  },
-  {
-    title: "QA & Security Testing",
-    description:
-      "Security and reliability are at the core of our development. Our QA experts conduct rigorous testing—covering functionality, performance, usability, and compliance—to ensure your app is resilient. We follow best practices for security to deliver fully tested custom banking software development.",
-  },
-  {
-    title: "Deployment & Launch",
-    description:
-      "After successful testing, we deploy your banking software across targeted platforms, ensuring smooth rollouts and zero downtime. As a top rated banking software development company, we manage cloud configurations, app store submissions, and final validations for a flawless launch.",
-  },
-  {
-    title: "Maintenance & Support",
-    description:
-      "Post-launch, we offer continuous support, updates, and feature enhancements. Our banking software developers monitor performance, manage patches, and scale systems to match growing user demand, ensuring long-term stability and innovation in your financial software ecosystem.",
-  },
-];
 
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Elementary Application Development",
-    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Freelance Tutor Marketplace Development",
-    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "K-12 Education App Development",
-    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "STEM Learning Application Development",
-    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Language Learning Application Development",
-    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Test Preparation App Development Solutions",
-    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Corporate Training & Employee Learning App Development",
-    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Special Needs & Inclusive Education App Development",
-    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness and Wellness Coaching App Development",
-    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
-  },
-];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
-      head: "Digital Wallet App for Payment Providers",
-      name: "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
-      head: "AI-Powered Loan Management Platform",
-      name: "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
+
+
+
 
 
 export default function ClinicalApp(props: any) {
@@ -573,7 +452,7 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
         <PortfolioSec
-          techData={techDataForPage1}
+          techData={JSON_DATA.techDataForPage1}
           heading="Take a look at some of the banking software solutions we have developed"
           description="Comfygen delivers innovative and secure banking software solutions designed to meet the needs of financial institutions. We have designed two notable banking projects that offer seamless and feature-rich services.."
         />
@@ -594,7 +473,7 @@ export default function ClinicalApp(props: any) {
 
         
 
-          <ProcessSection title="Our Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking solutions that align with your business goals." processSlides={Process} />
+          <ProcessSection title="Our Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking solutions that align with your business goals." processSlides={JSON_DATA.Process} />
 
         <TechStack
           title="Tech Stack We Use for Banking Software Development"

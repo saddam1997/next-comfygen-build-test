@@ -5,13 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptomlmsoftware.json";
-import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
@@ -31,45 +28,22 @@ import {
   IconChartBar,
   IconHierarchy3,
   IconShoppingCart,
-  IconLockOpen,
-  IconGlobe,
-  IconClock,
   IconCurrencyBitcoin,
   IconNetwork,
 } from "@tabler/icons-react";
-import ModelsSec from "../components/ModelsSec";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import ClientTestimonials from "../components/ClientTestimonials";
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const Cryptocurrency = dynamic(() => import("./components/Cryptocurrency"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const testimonialData = [
   {
     text: "Partnering with Comfygen for our MLM platform was the best decision we made. Their blockchain-based solution is scalable, intuitive, and secure. It has helped us expand our network and improve transparency across all levels.",
@@ -250,25 +224,6 @@ export default function Ecommerce(props) {
 
   const jsonLdData = [
 
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
 
     {
       "@context": "http://www.schema.org",
@@ -477,12 +432,7 @@ export default function Ecommerce(props) {
 
         <meta name="keywords" content="Cryptocurrency MLM Software Development, Binary MLM Software Development, Matrix MLM Software Development, Hybrid MLM Software Development, Monoline MLM Software Development, Crypto Wallet Integration, Smart Contract Development, Blockchain-Based MLM Solutions" />
 
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
+
 
         <meta
           property="og:title"
@@ -554,12 +504,7 @@ export default function Ecommerce(props) {
           name="summary"
           content="Comfygen is the Leading World-class Cryptocurrency MLM Software Development Company in India, USA."
         />
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
+
         <meta
           name="owner"
           content="A Founder is one of the individuals who helped establish a Cryptocurrency MLM Software Development Company, startup, or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement."
@@ -579,24 +524,6 @@ export default function Ecommerce(props) {
           name="subtitle"
           content="Cryptocurrency MLM Software Development Firm in India"
         />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Crypto MLM Software" />
-
-        <meta name="og:country-name" content="India, USA, UK, UAE" />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
-
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
 
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
@@ -606,26 +533,6 @@ export default function Ecommerce(props) {
           property="og:type"
           content="Cryptocurrency MLM Software Development Services Provider"
         />
-
-
-        {/* SEO Meta */}
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* Geo Location Meta */}
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
 
         <script
           type="application/ld+json"
@@ -806,7 +713,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Crypto MLM Software Development Services"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+       
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"
@@ -814,14 +721,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

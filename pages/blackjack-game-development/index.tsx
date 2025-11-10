@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import JSON_DATA from "./json/blackjack.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
@@ -14,7 +12,6 @@ import HireDeveloper from "../components/HireDeveloper";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import SolutionSec from "../components/SolutionSec";
 import { IconDevices, IconLayoutDashboard, IconLayoutGridAdd, IconLivePhoto, IconMessageCircle, IconShieldCheck, IconUsers } from '@tabler/icons-react';
 import { IconShoppingCart, } from '@tabler/icons-react';
@@ -239,94 +236,7 @@ export default function Altcoin(props) {
           techData={technologyData}
         />
 
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="space-y-4 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="flex flex-col justify-center text-center">
-              <h2 className="py-4 text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                Mark Your Presence in Web/App-based Top Cards Games Development via Comfygen
-              </h2>
-            </div>
-            <div className="grid gap-4 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-6 ">
-              {JSON_DATA.GameCardData.slice(0, 6).map((elem) => {
-                const { title, url, img } = elem;
-                return (
-                  <div className="w-full ">
-                    <Link href={url} passHref={true}>
-                      <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-                        <Image
-                          className="w-full"
-                          src={img}
-                          alt={title}
-                          width={730}
-                          height={419}
-                        />
-                        <div className=" p-4 bg-[#5556D1]/90 flex flex-col">
-                          <div>
-                            <h5 className="text-white text-2xl font-bold leading-none capitalize text-center">
-                              {title}
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                );
-              })}
-
-              {showContent ? (
-                <>
-                  {JSON_DATA.GameCardData.slice(6, 17).map((elem) => {
-                    const { title, url, img } = elem;
-                    return (
-                      <div className="w-full ">
-                        <Link href={url} passHref={true}>
-                          <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-                            <Image
-                              className="w-full"
-                              src={img}
-                              alt={title}
-                              width={730}
-                              height={419}
-                            />
-                            <div className=" p-4 bg-[#5556D1]/90 flex flex-col">
-                              <div>
-                                <h5 className="text-white text-2xl font-bold leading-none capitalize text-center">
-                                  {title}
-                                </h5>
-                              </div>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                    );
-                  })}
-                </>
-              ) : null}
-            </div>
-
-            {showContent ? (
-              <div className="flex justify-center items-center mt-6">
-                <button
-                  className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative"
-                  onClick={() => setShowContent(!showContent)}
-                >
-                  Load Less <MdOutlineArrowOutward />
-                </button>
-              </div>
-            ) : (
-              <div className="flex justify-center items-center mt-6">
-                <button
-                  className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative "
-                  onClick={() => setShowContent(!showContent)}
-                >
-                  Load More <MdOutlineArrowOutward />
-                </button>
-
-
-              </div>
-            )}
-          </div>
-        </section> */}
+        
         <InfoSectionLeft
           heading="ONLINE Blackjack Game Development Solution"
           description1="An online blackjack game is a digital version of the well known card game blackjack that is played over the internet. It allows players to enjoy blackjack from the comfort of their own homes or on their phone devices, without going anywhere .Comfygen as a leading Blackjack game development solutions are custom-made to provide you with an inclusive and innovative approach to develop hypnotic and engaging gaming experiences for the users. With our expertise in mobile game development and a deep knowledge of Blackjack, we offer high-end solutions that include every stage of the development process."
@@ -367,17 +277,7 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title="Video Game Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

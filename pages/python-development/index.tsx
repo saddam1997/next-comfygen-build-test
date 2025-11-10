@@ -3,14 +3,12 @@ import { MdOutlineEngineering } from 'react-icons/md';
 import Image from 'next/image';
 import 'aos/dist/aos.css';
 import { FaNetworkWired } from "react-icons/fa";
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Head from "next/head";
 import { RiCustomerService2Fill, RiTodoLine } from "react-icons/ri";
 import { AiOutlineDeploymentUnit, AiOutlineMobile } from "react-icons/ai";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/python.json"
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
 import InfoSectionLeft from "../components/InfoSectionLeft";
@@ -18,30 +16,11 @@ import HireDeveloper from "../components/HireDeveloper";
 import AboutSection from "../components/AboutSection";
 import InfoSectionRight from "../components/InfoSectionRight";
 import ServicesSec from "../components/ServicesSec";
-
-const FaqSection = dynamic(() => import('../components/FaqSection'), {
-  loading: () => <p>Loading...</p>,
-})
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
-// const BlogSection = dynamic(() => import('../components/BlogSection1'), {
-//   loading: () => <p>Loading...</p>,
-// })
-const TalkExpert = dynamic(() => import('../components/TalkExpert'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-})
+
 const HeroSectionForAllPages = dynamic(() => import('../components/HeroSectionForAllPages'), {
-  loading: () => <p>Loading...</p>,
-})
-const ServiceSection = dynamic(() => import('../components/ServiceSection'), {
-  loading: () => <p>Loading...</p>,
-})
-const HireSection = dynamic(() => import('../components/HireSection'), {
-  loading: () => <p>Loading...</p>,
-})
-const AdviceSection = dynamic(() => import('../components/Advice'), {
   loading: () => <p>Loading...</p>,
 })
 const NewSection = dynamic(() => import('../components/NewSection'), {
@@ -228,19 +207,7 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title=" Node.JS Development Solutions"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   )
-}
-
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

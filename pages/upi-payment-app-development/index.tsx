@@ -6,47 +6,14 @@ import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import ClientTestimonials from "../components/ClientTestimonials";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import TechStack from "../components/TechStack";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
 import PortfolioSecs from "../components/PortfolioSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardGrid from "../components/CardGrid";
 import ServicesSection from '../componentsnew/ServicesSection'
 import ProcessSection from "../componentsnew/ProcessSection";
-import {
-  IconBrain,
-  IconBrandAndroid,
-  IconBrandApple,
-  IconBrush,
-  IconBulb,
-  IconCalendarHeart,
-  IconCheck,
-  IconCloud,
-  IconCode,
-  IconCpu,
-  IconDatabase,
-  IconDeviceGamepad2,
-  IconDevices,
-  IconGlobe,
-  IconLock,
-  IconMessageChatbot,
-  IconMicrophone,
-  IconPalette,
-  IconRocket,
-  IconShieldCheck,
-  IconUserSearch,
-  IconUsersGroup,
-  IconVideo,
-} from "@tabler/icons-react";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import Tab from "../components/Tab";
-import TabsPanel from "../components/Tab";
 import TrendsSection from "../componentsnew/TrendsSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 
@@ -54,9 +21,6 @@ const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -569,14 +533,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

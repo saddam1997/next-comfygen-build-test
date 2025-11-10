@@ -29,8 +29,7 @@ import {
   IconShieldCheck,
   IconUsers,
 } from "@tabler/icons-react";
-import AppCard from "../componentsnew/AppCard";
-import CardItem from "../components/CardItem";
+
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -136,12 +135,12 @@ const Organization = {
     "@type": "ContactPoint",
     "contactType": "sales",
     "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
+    "telephone": "+91 9587867258",
     // "areaServed": "US, IN",
-"email": "sales@comfygen.com",
-               "areaServed": ["IN","US","CA","GB"],
-        
-        "availableLanguage": "en, in"
+    "email": "sales@comfygen.com",
+    "areaServed": ["IN", "US", "CA", "GB"],
+
+    "availableLanguage": "en, in"
   },
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies",
@@ -166,7 +165,7 @@ const LocalBusiness = {
     "addressLocality": "Jaipur",
     "postalCode": "302006",
     "addressCountry": "IN"
-  },{
+  }, {
     "@type": "PostalAddress",
     "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
     "addressLocality": "Toronto",
@@ -217,82 +216,84 @@ const serviceSchema = {
     "Turnkey Poker Game Solutions"
 
   ],
- 
+
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies",
     "https://x.com/Comfygen_Tech",
     "https://www.instagram.com/comfygen_technologies",
     "https://www.linkedin.com/company/comfygen-technologies"
-    
+
   ]
 }
 
 const schema = {
-  "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Best Real Cash Poker App Development Services",
-"image":"Hero section image",
-"description":"Develop real cash poker games with Comfygen – a top poker game development company in India and the USA. Our poker game development solutions are scalable, legal-compliant, and revenue-ready. Connect with us now!",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"354"}
+  "@context": "http://www.schema.org",
+  "@type": "Product",
+  "brand": "Comfygen Technologies",
+  "Name": "Best Real Cash Poker App Development Services",
+  "image": "Hero section image",
+  "description": "Develop real cash poker games with Comfygen – a top poker game development company in India and the USA. Our poker game development solutions are scalable, legal-compliant, and revenue-ready. Connect with us now!",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "354"
+  }
 };
 
 const breadCrum = {
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
   "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
+    "@type": "ListItem",
+    "position": 1,
     "name": "Home",
-    "item": "https://www.comfygen.com"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
+    "item": "https://www.comfygen.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
     "name": "Game Development",
-    "item": "https://www.comfygen.com/poker-game-development"  
+    "item": "https://www.comfygen.com/poker-game-development"
   }]
 }
 
 const faqSchema = {
-    "@context": "https://schema.org/",
-    "@type": "FAQPage",
-   "mainEntity": [
-  {
-    "@type": "Question", 
-    "name": "What Is Poker Game App Development?",
-    "acceptedAnswer": { 
-      "@type": "Answer",
-      "text": "Poker game app development is a process of developing game app interfaces for various mobile devices such as iOS and Android."
-    } 
-  },
-  {
-    "@type": "Question", 
-    "name": "What Technologies Do You Use To Develop Poker Games?",
-    "acceptedAnswer": { 
-      "@type": "Answer",
-      "text": "For the backend, we use Java, and for the database, we rely on MySQL and PostgreSQL. The front end, we use technologies like Vue, Flutter, React Native, JavaScript, Angular, etc."
-    }  
-  },
-  {
-    "@type": "Question",
-    "name": "Have You Ever Worked In Game Development Before?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We have developed 1000+ games for a number of clients. YES, we do have specialized in poker game development as per requirements."
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What Is Poker Game App Development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Poker game app development is a process of developing game app interfaces for various mobile devices such as iOS and Android."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Technologies Do You Use To Develop Poker Games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the backend, we use Java, and for the database, we rely on MySQL and PostgreSQL. The front end, we use technologies like Vue, Flutter, React Native, JavaScript, Angular, etc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Have You Ever Worked In Game Development Before?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We have developed 1000+ games for a number of clients. YES, we do have specialized in poker game development as per requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How Much Does Poker Game App Development Cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Connect with our expert to know ballpark estimation. Besides, we provide poker game development services at pocket-friendly rates."
+      }
     }
-  },
-  {
-    "@type": "Question",
-    "name": "How Much Does Poker Game App Development Cost?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Connect with our expert to know ballpark estimation. Besides, we provide poker game development services at pocket-friendly rates."
-    }
-  }
-]
-  };
+  ]
+};
 
 export default function PokerGame(props) {
   const [showContent, setShowContent] = useState(false);
@@ -419,7 +420,7 @@ export default function PokerGame(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
@@ -431,14 +432,14 @@ export default function PokerGame(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }}
         />
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrum) }}
         />
         <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-  />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
       </Head>
 
       <LazyLoad height={80} offset={100}>
@@ -459,7 +460,7 @@ export default function PokerGame(props) {
           />
         </div>
 
-        
+
 
         <AboutSection
           title="About Company"
@@ -648,17 +649,7 @@ export default function PokerGame(props) {
           faqData={JSON_DATA.Frequently}
           title="Poker Game Development Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

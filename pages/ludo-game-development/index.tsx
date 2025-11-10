@@ -1,61 +1,33 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
-import FaqSection from "../components/FaqSection";
 import JSON_DATA from "./json/ludo.json";
 import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import WhyChoosee from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
 import ModelsSec from "../components/ModelsSec";
 import ProcessSec from "../components/ProcessSec";
-import CardItem from "../components/CardItem";
 import TechStack from "../components/TechStack";
 import CallToAction from "../components/CallToAction";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import ServicesSec from "../components/ServicesSec";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CardGrid from "../components/CardGrid";
 import {
   Icon3dCubeSphere,
   IconBrain,
   IconCpu,
-  IconDevices,
-  IconGlobe,
   IconLock,
 } from "@tabler/icons-react";
-import ClientTestimonials from "../client-testimonials";
-const WhyChoose = dynamic(() => import("../components/WhyChoose"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
@@ -775,16 +747,6 @@ export default function LudoGame(props) {
         faqData={JSON_DATA.Frequently}
         title="Ludo Game Development Technology"
       />
-      {/*<BlogSection initialData={initialData} />*/}
     </div>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

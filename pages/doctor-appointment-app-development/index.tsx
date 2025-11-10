@@ -14,12 +14,9 @@ import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import SolutionSec from "../componentsnew/SolutionSec";
-
-// import { IconBike, IconBolt, IconBriefcase, IconBuildingSkyscraper, IconBus, IconCar, IconPlane, IconShip, IconTruck } from "@tabler/icons-react";
 import WhyChoose from "../components/WhyChooseUs";
 import ClientTestimonials from "../components/ClientTestimonials";
 import Features from "./components/Features";
@@ -34,12 +31,7 @@ const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 
 const techDataForPage1 = {
@@ -122,25 +114,7 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
-
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -340,12 +314,7 @@ export default function Ecommerce(props) {
         {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/doctor-appointment-app-development" />
 
-        {/* <!-- Robots → */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-
-        {/* <!-- Compatibility Meta → */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+   
 
         {/* <!-- Viewport a/nd Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -357,47 +326,6 @@ export default function Ecommerce(props) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="My App" />
-
-        {/* <!-- New in iOS6 --> */}
-        {/* <!-- Author and Company Information --> */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-
-        {/* <!-- SEO Meta --> */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* <!-- Ope/n Graph (OG) Tag --> */}
-
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -681,45 +609,7 @@ export default function Ecommerce(props) {
           title=" "
         />
 
-
-        {/* <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto ">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Streamline Healthcare Management with Doctor Appointment Mobile Apps For Patients, Clinics, Hospitals, And Doctors
-                </h2>
-                <p>
-                  Our doctor appointment mobile app development is not only the saviour of patients, but enables the hospitals and clinics to streamline patient management as well. It is an incredible solution, which can work at both ends providing solidifying leverages</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.Streamline.map((elem) => {
-                  const { title, decs } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-xl">
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p className=" text-base font-normal mt-2">
-                        {decs}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-        <ContactFromCenter />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

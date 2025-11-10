@@ -45,6 +45,7 @@
   }
 ]
 
+
   },
   "servicesData":  [
   {
@@ -119,6 +120,69 @@
     ]
   }
 ],
+
+
+
+ "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/image/cloud-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "Cloud-Based Crypto Trading Bot",
+      "description": "We develop an advanced, cloud-based crypto trading bot designed to automate trading strategies for beginners and experienced traders. It integrates seamlessly with major cryptocurrency exchanges, providing users with powerful trading tools to maximize their profits with minimal effort. Our development team at Comfygen built this platform with a focus on automation, real-time analytics, and user-friendly functionality.",
+      "link": "/portfolio/cloud-based-crypto-trading-bot"
+    },
+
+    {
+      "image": "https://www.comfygen.com/image/ai-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "AI-Based Crypto Trading Bot Development",
+      "description": "At Comfygen, we developed an advanced crypto trading bot solution designed to automate trading strategies, optimize market execution, and maximize profits. Our cutting-edge platform seamlessly integrates with multiple exchanges, providing traders with AI-driven insights and powerful automation tools.",
+      "link": "/portfolio/crypto-trading-bot-development"
+    }
+    
+  ],
+
+
+
+
+
+ "Processs": [
+  {
+    "title": "Requirement Analysis & Planning",
+    "description":
+      "We gather your business goals, compliance needs, and AI functionalities to define the project scope and technology stack."
+  },
+  {
+    "title": "UI/UX Design",
+    "description":
+      "Crafting intuitive, responsive interfaces that enhance user experience across all devices."
+  },
+  {
+    "title": "Core Platform Development",
+    "description":
+      "Building the exchange’s foundation, including <a class='text-blue-500 font-semibold ' href='https://www.comfygen.com/blog/how-ai-and-blockchain-are-shaping-the-future-of-cryptocurrency-trading/' >blockchain</a> integration, order matching, wallets, and user management."
+  },
+  {
+    "title": "AI Integration",
+    "description":
+      "Incorporating AI modules like predictive analytics, automated trading, fraud detection, and NLP chatbots to boost performance and security."
+  },
+  {
+    "title": "Security Implementation",
+    "description":
+      "Embedding multi-layered security with biometric authentication, encryption, anomaly detection, and KYC/AML compliance."
+  },
+  {
+    "title": "Testing & Quality Assurance",
+    "description":
+      "Rigorous testing to ensure functionality, security, and performance under various conditions."
+  },
+  {
+    "title": "Deployment & Support",
+    "description":
+      "Launching on scalable infrastructure with continuous monitoring and ongoing maintenance for smooth operation and upgrades."
+  }
+],
+
+
 
 "LeadingSoftware": [
   {

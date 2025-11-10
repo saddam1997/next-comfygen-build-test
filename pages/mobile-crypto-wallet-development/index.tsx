@@ -10,13 +10,8 @@ import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
+
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "../componentsnew/WhoCanStart";
-import DeliverySection from "../components/DeliverySection";
 import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
 import LatestTechnology from "../componentsnew/LatestTechnology";
@@ -27,24 +22,9 @@ import { LiaCheckSquareSolid } from "react-icons/lia";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { MdOutlineSpatialTracking } from "react-icons/md";
 import {
-  IconAddressBook,
-  IconApps,
-  IconBorderAll,
   IconBrain,
-  IconCloud,
-  IconCode,
-  IconCoin,
-  IconCurrencyBitcoin,
-  IconEyeClosed,
-  IconFirstAidKit,
-  IconGraph,
-  IconMessage,
-  IconNews,
-  IconPasswordFingerprint,
   IconReportSearch,
   IconSignal5g,
-  IconSquaresSelected,
-  IconWallet,
 } from "@tabler/icons-react";
 
 const HeroSectionForAllPages = dynamic(
@@ -695,14 +675,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

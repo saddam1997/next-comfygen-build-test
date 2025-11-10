@@ -2,9 +2,7 @@ import Image from "next/image";
 import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import dynamic from "next/dynamic";
-import styles from "./styles.module.css";
 import JSON_DATA from "./json/hireBlockchain.json";
 import OurGames from "./components/OurGames";
 import LazyLoad from "react-lazy-load";
@@ -12,13 +10,12 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import ModelsSec from "../components/ModelsSec";
 import IndustriesServe from "../components/IndustriesServe";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconApps, IconBrain, IconCloud, IconCode, IconCurrencyBitcoin, IconCurrencyDollar, IconEye, IconFirstAidKit, IconHeadset, IconMessage, IconNews, IconRefresh, IconReportSearch, IconSettingsAutomation, IconShieldCheck, IconShieldLock, IconSignal5g, IconTrendingUp } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
+import {  IconChartBar} from '@tabler/icons-react';
 import PortfolioSec from "../components/PortfolioSec";
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
   loading: () => <p>Loading...</p>,
@@ -27,23 +24,7 @@ const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
-const WhycomfygenSection = dynamic(
-  () => import("./components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -411,18 +392,8 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

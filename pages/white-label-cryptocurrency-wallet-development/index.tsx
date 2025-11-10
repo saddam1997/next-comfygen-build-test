@@ -1,27 +1,14 @@
-import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Cryptocurrency from "../components/Cryptocurrency";
-import { VscCircleFilled, VscServerProcess } from "react-icons/vsc";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineRight, AiOutlineTranslation } from "react-icons/ai";
-import { BsCurrencyBitcoin } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
-import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import {IconWallet,} from "@tabler/icons-react";
-
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
@@ -54,18 +41,6 @@ const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {

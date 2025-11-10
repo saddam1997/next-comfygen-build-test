@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./fuel-delivery-app-development.json";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
@@ -11,10 +10,8 @@ import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "./components/WhoCanStart";
 import AppCard from "../componentsnew/AppCard";
 import PortfolioSlider from "../components/PortfolioSlider";
-import NewPanel from "./components/NewPanel";
 import CallToAction from "../components/CallToAction";
 import NewSection from "./components/NewSection";
 import Features from "./components/Features";
@@ -34,9 +31,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -152,25 +147,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -633,14 +610,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

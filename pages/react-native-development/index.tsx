@@ -16,7 +16,7 @@ import ConsultingSec from "../componentsnew/ConsultingSec";
 import Header from "../componentsnew/Header";
 
 
-export default function Altcoin(props) {
+export default function Altcoin(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -161,19 +161,8 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title="React Native App Development Services"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

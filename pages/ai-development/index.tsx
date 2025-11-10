@@ -19,6 +19,7 @@ import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
 import NumberCard from "../componentsnew/NumberCard";
+import Slider from "../components/Slider";
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -93,80 +94,7 @@ const Process = [
       "As your business grows, we help scale and enhance your AI solution with new features and improvements, ensuring it remains competitive and aligned with future industry trends.",
   },
 ];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/ai-powered-retail-solutions.webp",
-      head: "AI-Powered Retail Solutions",
-      based: "Boosting Sales with AI-Powered Recommendations",
-      name: "A retail client aimed to enhance customer engagement and drive sales. We developed an AI-powered recommendation engine that analyzed customer behavior and preferences, delivering personalized shopping experiences. As a result, the client achieved a 20% increase in sales and significantly improved customer satisfaction.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-healthcare-solutions.webp",
-      head: "AI-Powered Healthcare Solutions",
-      based: "Streamlining Diagnostics with AI",
-      name: "We developed an AI-driven system utilizing computer vision and machine learning to enhance diagnostic accuracy and speed. This AI software development solution enabled the healthcare provider to deliver faster, more precise diagnoses, improving patient outcomes and operational efficiency.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-finance-solutions.webp",
-      head: "AI-Powered Finance Solutions",
-      based: "Enhancing Fraud Detection with Machine Learning",
-      name: "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
-      head: "AI-Powered Manufacturing Solutions",
-      based: "Optimizing Operations with Predictive Maintenance",
-      name: "A manufacturing company faced challenges with unplanned downtime and high maintenance costs. We implemented a predictive maintenance system leveraging IoT and AI to monitor equipment health, reducing downtime, cutting costs, and improving overall operational efficiency.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-e-commerce-solutions.webp",
-      head: "AI-Powered E-commerce Solutions",
-      based: "AI E-commerce App Development Solution",
-      name: "An e-commerce platform aimed to boost customer retention and engagement. We developed a personalized recommendation system powered by natural language processing and machine learning, delivering tailored shopping experiences that increased customer satisfaction and loyalty.",
-      num: "5",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-  ],
-};
+
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -196,52 +124,17 @@ export default function Mobile(props) {
           content="Looking for AI-based Enterprise to SME mobile app development company to boost your business. Comfygen custom AI ML development services in Jaipur, India help you to achieve your goal."
         />
         <meta
+          name="keywords"
+          content="Artificial Intelligence Development Services, AI Software Development Company, AI Software Development Services, AI Product Development, AI Chatbot Development, AI Engineer "
+        />
+        <meta
           name="og:description"
           content="Looking for AI-based Enterprise to SME mobile app development company to boost your business. Comfygen custom AI ML development services in Jaipur, India help you to achieve your goal."
         />
         <link rel="canonical" href="https://www.comfygen.com/ai-development" />
-        <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
-        />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#E03A3C" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-        <meta
-          name="keywords"
-          content="Artificial Intelligence Development Services, AI Software Development Company, AI Software Development Services, AI Product Development, AI Chatbot Development, AI Engineer "
-        />
-        <meta name="author" content="Company Private Limited" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:type" content="website" />
+
+
+
         <meta name="og:url" content="https://www.comfygen.com/ai-development" />
         <meta
           name="og:image"
@@ -543,11 +436,19 @@ export default function Mobile(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Artificial Intelligence Success Stories"
-          description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Artificial Intelligence Success Stories"
+            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+          />
+        </section>
+
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

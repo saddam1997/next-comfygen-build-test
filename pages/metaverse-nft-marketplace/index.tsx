@@ -16,9 +16,7 @@ const TechnoStack = dynamic(() => import('./components/TechnoStack'), {
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })
-const BlogSection = dynamic(() => import('../components/BlogSection1'), {
-  loading: () => <p>Loading...</p>,
-})
+
 const AdviceSection = dynamic(() => import('../components/Advice'), {
   loading: () => <p>Loading...</p>,
 })
@@ -675,18 +673,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

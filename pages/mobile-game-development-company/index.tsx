@@ -2,9 +2,7 @@ import Image from "next/image";
 import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import dynamic from "next/dynamic";
-import styles from "./styles.module.css";
 import JSON_DATA from "./json/mobile.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
@@ -12,7 +10,6 @@ import AboutSection from "../components/AboutSection";
 import InfoSectionRight from "../components/InfoSectionRight";
 import ServicesSec from "../components/ServicesSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import TechStack from "../components/TechStack";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
@@ -26,24 +23,12 @@ const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
-const TechnoStack = dynamic(() => import("./components/TechnoStack"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ServiceSection = dynamic(() => import("./components/ServiceSection"), {
   loading: () => <p>Loading...</p>,
 });
-const FinaceSection = dynamic(() => import("./components/FinanceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -335,14 +320,4 @@ export default function Mobile(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

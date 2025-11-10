@@ -4,30 +4,19 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import ProcessSec from "../components/ProcessSec";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import CardItem from "../components/CardItem";
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
@@ -36,12 +25,7 @@ const ContactFromCenter = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const Process = [
   {
@@ -572,14 +556,4 @@ export default function Ecommerce(props) {
       {/*<BlogSection initialData={initialData} />*/}
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

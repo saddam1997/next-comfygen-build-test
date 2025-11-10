@@ -5,14 +5,10 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./insuranceappdevelopment.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
 import PortfolioSec from "../componentsnew/PortfolioSec";
@@ -30,9 +26,7 @@ import {
   IconTruckDelivery,
   IconUsersGroup
 } from "@tabler/icons-react";
-import ServiceSection from "../components/ServiceSection";
 import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import AdminUserPanel from "../astrology-app-development/components/AdminUserPanel";
@@ -49,9 +43,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -662,18 +654,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Insurance App Development" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

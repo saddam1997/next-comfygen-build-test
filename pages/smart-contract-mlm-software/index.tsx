@@ -36,36 +36,14 @@ import {
   IconDeviceMobile,
   IconLanguage,
 } from "@tabler/icons-react";
-import BlogSection from "../components/BlogSection";
-import Script from "next/script";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const Advice = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -679,18 +657,8 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Smart Contract Based MLM Software"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

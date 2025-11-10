@@ -5,42 +5,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/doctor.json";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import ProcessSec from "../components/ProcessSec";
 import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import Script from "next/script";
 import AdvancedPanel from "./components/AdvancedPanel";
 import TechStack from "../components/TechStack";
 import LatestTechnology from "../components/SolutionSec";
 import {
-  IconBrain,
-  IconBroadcast,
   IconCapsule,
-  IconDiamond,
   IconHeartbeat,
   IconPill,
-  IconServer,
-  IconShieldCheck,
   IconShoppingCart,
   IconStethoscope,
-  IconWorld,
 } from "@tabler/icons-react";
 import PortfolioSlider from "../components/PortfolioSlider";
 import ClientTestimonials from "../components/ClientTestimonials";
 
-const Tech = dynamic(() => import("./components/tech"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -652,70 +640,7 @@ export default function Ecommerce(props) {
           description="We use cutting-edge technologies and frameworks to build high-performance, scalable, and secure medicine ordering apps. We ensure seamless user experiences, fast performance, and compliance with healthcare industry standards."
         />
 
-        {/* <section className=" bg-gradient-to-r from-[#272868] to-[#5556D1] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="space-y-6">
-              <div className="flex flex-col justify-center text-center">
-                <h2 className=" py-4 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem] ">
-                  Top Suggestions for White Label Pharmacy Delivery App
-                  Development
-                </h2>
-                <p className="text-base text-white">
-                  Our versatile teams have experience building all types of
-                  medical apps. Below, we highlight popular examples and key
-                  features we can recreate or even improve upon:
-                </p>
-              </div>
-              <div className="grid gap-16 lg:grid-cols-3 py-10 md:grid-cols-2 xl:gap-12">
-                {Services.map((elem) => {
-                  const { num, img, title, decs, decs1, features } = elem;
-                  return (
-                    <div
-                      key={num}
-                      className="p-6 space-y-4 bg-gradient-to-br from-blue-500/10 to-purple-500/20 border rounded-[40px] transition-all duration-300 hover:translate-y-2 group group "
-                    >
-                      <div className="flex items-center justify-center w-16 h-16 p-2 text-xl font-semibold ">
-                        <Image
-                          width={110}
-                          height={110}
-                          src={img}
-                          alt={title}
-                          title={title}
-                          className="w-16"
-                        />
-                      </div>
-                      <h3 className="text-lg font-extrabold text-[#fff] transition-all duration-200 text-left">
-                        {title}
-                      </h3>
-                      <p className="font-medium text-left text-white  ">
-                        {decs}
-                      </p>
-                      <ul className="list-disc text-white">
-                        {features.map((feature, index) => (
-                          <li key={index} className="flex gap-1">
-                            {" "}
-                            <VscDebugBreakpointLog /> {feature}
-                          </li>
-                        ))}
-                      </ul>
-                      <p className="font-medium text-left text-white l transition duration-200 ease-in-out">
-                        {decs1}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
 
-              <div className="flex justify-center items-center mt-5">
-                <a href="/contact-us " className="mt-5">
-                  <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#ffff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                    Get A Free Consultation <MdOutlineArrowOutward />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -753,18 +678,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           description="Find answers to common queries about medicine app development. Get insights to make informed decisions for your pharmacy business."
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

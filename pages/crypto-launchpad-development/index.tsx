@@ -9,17 +9,11 @@ import JSON_DATA from "./json/cryptolaunchpaddevelopment.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
 import Faq from "../components/Faq";
-
-import BlogSection from "../components/BlogSection";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
+
 import {
   IconAdjustmentsAlt,
   IconCreditCard,
@@ -30,11 +24,8 @@ import {
 } from "@tabler/icons-react";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../components/IndustriesServe";
 import ClientTestimonials from "../components/ClientTestimonials";
 import ServicesSection from "../componentsnew/ServicesSection";
-import CardItem from "../components/ServiceSec";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
 import ProcessSection from "../componentsnew/ProcessSection";
 
@@ -432,35 +423,7 @@ export default function Ecommerce(props) {
         rel="canonical"
         href="https://www.comfygen.com/crypto-launchpad-development"
       />
-      <meta name="robots" content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="MobileOptimized" content="320" />
-      <meta name="HandheldFriendly" content="true" />
-      <meta name="viewport-fit" content="cover" />
-      <meta name="apple-touch-fullscreen" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-      <meta name="apple-mobile-web-app-title" content="Comfygen" />
-      <meta name="author" content="Comfygen" />
-      <meta name="web-author" content="Comfygen" />
-      <meta name="reply-to" content="sales@comfygen.com" />
-      <meta name="rights" content="Copyright Comfygen Private Limited" />
-      <meta name="copyright" content="Comfygen Private Limited" />
-      <meta name="googlebot" content="all" />
-      <meta name="revisit-after" content="3 days" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="General" />
-      <meta name="coverage" content="Worldwide" />
-      <meta name="language" content="English" />
-      <meta name="geo.region" content="IN" />
-      <meta name="geo.region" content="US" />
-      <meta name="geo.region" content="CA" />
-      <meta name="geo.region" content="GB" />
-      <meta name="geo.region" content="AE" />
-      <meta name="geo.region" content="DE" />
+
 
       {/* Open Graph Tags */}
       <meta
@@ -653,18 +616,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="  Crypto Launchpad Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

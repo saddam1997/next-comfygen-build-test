@@ -3,39 +3,27 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/WhyChooseUs";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
 import ServicesSec from "../../components/ServicesSec";
 import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
-import TechStack from "./components/TeckStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
 import WhoCanStart from "../../componentsnew/WhoCanStart";
 import PortfolioSlider from "../../components/PortfolioSlider";
-import Industries from "../../board-game-development/components/Industries";
 import IndustriesServe from "./components/IndustriesServe";
 import ProcessSec from "../../components/ProcessSec";
 import NewTeckStack from "../../componentsnew/NewTeckStack";
 import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
 
 
-
-// const HeroSectionForAllPages = dynamic(
-//   () => import("../../components/HeroSectionForAllPages"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
 const Faq = dynamic(() => import("../../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
 const Header = dynamic(() => import("../../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {
@@ -160,25 +148,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -413,58 +383,7 @@ export default function ClinicalApp(props: any) {
           name="keywords"
           content="Microsoft Power BI Consulting Services, Microsoft Power BI Dashboard Development, Microsoft Power BI Custom Dashboard Development, Power BI Report Customization, Power BI Data Modeling, Power BI Embedded Analytics, Power BI for Financial Reporting, Power BI for Sales Analytics, Hire Power BI Developer, Hire Power BI Consultant, Power BI Implementation Services, Power BI for Enterprise BI Solutions"
         />
-        <meta
-          name="robots"
-          content="max-image-preview:large, max-snippet:-1, max-video-preview:-1, index, follow"
-        />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen BI" />
 
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/og.webp"
@@ -630,18 +549,8 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

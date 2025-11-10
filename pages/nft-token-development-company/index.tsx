@@ -5,14 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nfttoken.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { SiNike } from "react-icons/si";
+
 import { BsFillStarFill } from "react-icons/bs";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import AboutSection from "../components/AboutSection";
@@ -23,19 +19,11 @@ import ConsultancyApproach from "../components/ConsultancyApproach";
 import ModelsSec from "../components/ModelsSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ServicesSec from "../componentsnew/ServicesSec";
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -354,37 +342,6 @@ export default function Ecommerce(props) {
                 revenue streams."
         />
 
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our NFT Token Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen,  we offer comprehensive NFT token development services tailored
-                to meet the unique needs of businesses, creators, and
-                entrepreneurs. Our solutions cover the entire lifecycle of NFT
-                token development, from conceptualization and design to
-                deployment and post-launch support. Whether you’re looking to
-                create digital collectibles, tokenize assets, or launch a custom
-                NFT marketplace, our team of expert blockchain developers delivers secure, scalable, and innovative NFT solutions.
-              </p>
-              <p className="text-base text-center font-normal">
-                We leverage popular blockchain networks like Ethereum, Polygon,
-                Solana, and Binance Smart Chain to ensure your NFT tokens are
-                interoperable, high-performing, and compliant with the latest
-                industry standards. Our goal is to help businesses across
-                industries—art, gaming, real estate, music, and more—tap into
-                the potential of non-fungible tokens (NFTs) and unlock new
-                revenue streams.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section> */}
-
         <InfoSectionLeft
           heading="What are NFTs?"
           description1="NFTs, or Non-Fungible Tokens, are unique digital assets secured by blockchain technology. Unlike cryptocurrencies that are interchangeable, NFTs represent ownership of one-of-a-kind digital or physical assets—such as digital artwork, music files, virtual real estate, and gaming collectibles. Each NFT contains distinct metadata and proof of ownership, making it impossible to duplicate or forge. This uniqueness has made NFTs popular in industries like art, gaming, real estate, and entertainment."
@@ -409,20 +366,6 @@ export default function Ecommerce(props) {
           linkText="LET'S CONNECT "
         />
 
-        {/* <InfoSectionLeft
-          heading="Benefits of NFT Tokens"
-          description1="Benefits of NFT Tokens state how much the assets are valued, which comes from its collectibility and potential future scope. We would like to provide glimpse to let you know its worth"
-          points={[
-            "It adds value to your exclusive and authentic assets.",
-            "It has an Anti-Fraud protected environment; and the mechanism will handle your collectibles",
-            "It has very clarified and transparent blockchain characteristics, which allow the users to track every transaction evolved in the community.",
-            "In the NFT Token Development Services or during the token generation, NFTs are similar with its individual dedicated protocol.",
-            "Blockchain allows for token recovery through distributed ledger technology, in which each node records transaction details. No modifications can be made to the transaction details.",
-          ]}
-          imageSrc="https://www.comfygen.com/img/benefits-of-nft-tokens.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        /> */}
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -617,18 +560,7 @@ export default function Ecommerce(props) {
           ]}
         />
         <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

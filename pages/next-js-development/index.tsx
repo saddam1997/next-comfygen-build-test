@@ -1,27 +1,17 @@
 import React, { useRef, useState } from "react";
-import { MdDevicesOther } from "react-icons/md";
-import Image from "next/image";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { RiTeamLine } from "react-icons/ri";
-import { BiChevronLeft, BiChevronRight, BiSupport } from "react-icons/bi";
-import { IoLogoNodejs } from "react-icons/io5";
-import { AiOutlineUngroup } from "react-icons/ai";
-import { CgPlug } from "react-icons/cg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nextjs.json";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import WhyChoosee from "../components/WhyChooseUs";
 import HireDeveloper from "../components/HireDeveloper";
 import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
@@ -29,40 +19,21 @@ import {
   IconDeviceMobile, 
   IconShieldCheck, 
   IconRocket, 
-  IconTruckDelivery, 
   IconSpeedboat, 
   IconHeadset, 
   IconDirectionArrows
 } from "@tabler/icons-react";
 import ModelsSec from "../components/ModelsSec";
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
+
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
   loading: () => <p>Loading...</p>,
 });
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const Advice = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhyChoose = dynamic(() => import("../components/WhyChoose"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -320,13 +291,3 @@ export default function Altcoin(props) {
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

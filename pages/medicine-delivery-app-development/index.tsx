@@ -5,16 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
-import Providers from "./components/Providers";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ServicesSec from "../components/ServicesSec";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import InfoSectionRight from "../components/InfoSectionRight";
-import PortfolioSec from "../components/PortfolioSec";
 import SolutionSec from "../components/SolutionSec";
 import {
   IconCode,
@@ -29,7 +26,6 @@ import AboutSection from "../components/AboutSection";
 import AdvancedPanel from "./components/AdvancedPanel";
 import ClientTestimonials from "../components/ClientTestimonials";
 import PortfolioSlider from "../components/PortfolioSlider";
-import Tab from "../components/Tab";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -207,26 +203,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
+   
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -895,22 +872,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  try {
-    const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-    if (!resData.ok) {
-      throw new Error(`Failed to fetch: ${resData.statusText}`);
-    }
-    const data = await resData.json();
-    res.setHeader(
-      "Cache-Control",
-      "public, s-maxage=10, stale-while-revalidate=59"
-    );
-    return { props: { initialData: data } };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return { props: { initialData: [] } }; // Handle error case
-  }
 }

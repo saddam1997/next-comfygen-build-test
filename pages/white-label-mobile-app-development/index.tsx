@@ -1,9 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/whitelabelmobileappdevelopment.json";
 import LazyLoad from "react-lazy-load";
 import {
@@ -14,16 +11,13 @@ import {
   IconReportSearch,
   IconSignal5g,
 } from "@tabler/icons-react";
-
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ServicesSec from "../componentsnew/ServicesSec";
-import SolutionSec from "../componentsnew/SolutionSec";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import ProcessSec from "../componentsnew/ProcessSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import Faq from "../components/Faq";
-import BlogSection from "../componentsnew/BlogSection";
 import IndustriesServe from "./components/IndustriesServe";
 import AboutSection from "../componentsnew/AboutSection";
 import Header from "../componentsnew/Header";
@@ -585,14 +579,4 @@ export default function Mobile(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

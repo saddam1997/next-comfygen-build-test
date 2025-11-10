@@ -36,7 +36,36 @@
       "desc": "Yes, our courier app development services include secure payment gateway integration, supporting multiple options like credit/debit cards, e-wallets, and online banking, ensuring smooth, safe, and convenient transactions for customers and businesses."
     }
   ],
-
+  "Process": [
+    {
+      "title": "Requirement Analysis & Research",
+      "description": "We start with in-depth research to understand your courier business model, target users, and delivery needs. Our courier delivery app developers define project scope, key features, and technology stack for a strong foundation."
+    },
+    {
+      "title": "Wireframing & UI/UX Design",
+      "description": "Our creative <a href='https://www.comfygen.com/web-design' class='underline text-blue-500'>UI/UX designer</a> team an engaging and user-friendly courier delivery app interface. With intuitive navigation, real-time tracking screens, and seamless workflows, we provide an excellent user experience for customers, drivers, and admins."
+    },
+    {
+      "title": "MVP Development",
+      "description": "We build a Minimum Viable Product (MVP) with essential courier delivery app features like order placement, tracking, and payment integration. This enables an early market launch and allows for user feedback to refine the final app."
+    },
+    {
+      "title": "Full-Scale App Development & Integration",
+      "description": "Using cutting-edge technologies, our courier mobile app development company delivers scalable apps with advanced modules, including real-time dispatch, AI-based route optimization, courier chain management, and white-label courier delivery app solutions for businesses."
+    },
+    {
+      "title": "API & Payment Gateway Integration",
+      "description": "We integrate secure payment gateways, third-party APIs, and logistics tools to enhance app performance. From multi-payment options to real-time courier APIs, we ensure smooth financial and operational workflows."
+    },
+    {
+      "title": "Testing & Quality Assurance",
+      "description": "Our QA team conducts rigorous testing for performance, usability, and security. We make sure your courier delivery app runs seamlessly across Android, iOS, and web platforms without glitches or downtime."
+    },
+    {
+      "title": "Deployment & Ongoing Support",
+      "description": "After successful testing, we launch your courier delivery app on major app stores. Post-deployment, we provide continuous monitoring, bug fixing, updates, and feature upgrades to keep your app future-ready."
+    }
+  ],
   "servicesData": [
     {
       "title": "On-Demand Courier Delivery App Development",
@@ -293,10 +322,6 @@
       "name": "David Miller",
       "title": "USA"
     }
-    
-
-
-    
   ],
   "Solution": [
     {
@@ -504,7 +529,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
   "AIPowered": [
     {
       "num": "01",
@@ -547,7 +571,6 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
@@ -565,7 +588,7 @@
       "num": "3",
       "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
       "title": "IoT Integration",
-      "decs":  "<a href='https://www.comfygen.com/iot-development-company' class='underline'>IoT-powered</a> courier delivery apps provide real-time tracking and parcel monitoring through smart devices, ensuring transparency, customer trust, and efficient management for courier companies, delivery chains, and logistics startups worldwide."
+      "decs": "<a href='https://www.comfygen.com/iot-development-company' class='underline'>IoT-powered</a> courier delivery apps provide real-time tracking and parcel monitoring through smart devices, ensuring transparency, customer trust, and efficient management for courier companies, delivery chains, and logistics startups worldwide."
     },
     {
       "num": "4",
@@ -573,8 +596,5 @@
       "title": "Cloud Integration",
       "decs": "<a href='https://www.comfygen.com/' class='underline'>Comfygen Technologies</a> leverages cloud technology in courier delivery solutions to make sure scalability, flexible storage, and secure data access, empowering courier companies to handle high delivery volumes with efficiency and reliability."
     }
-    
-    
-  
   ]
 }

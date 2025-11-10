@@ -7,14 +7,12 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
-
 import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKey, } from '@tabler/icons-react';
 import SolutionSec from "../components/SolutionSec";
 import InfoSectionRight from "../components/InfoSectionRight";
@@ -292,35 +290,8 @@ export default function Ecommerce(props) {
           rel="canonical"
           href="https://www.comfygen.com/erc20-token-development"
         />
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+   
+
         <meta name='og:title' content='ERC20 Token Development Company | ERC20 Token Development Services' />
         <meta name='og:type' content='website' />
         <meta name='og:url' content='https://www.comfygen.com/erc20-token-development' />
@@ -532,18 +503,9 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
 }
 // This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

@@ -1,20 +1,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import TechStack from "../components/TechStack";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
@@ -23,17 +19,10 @@ import IndustriesServe from "../components/IndustriesServe";
 import SolutionSec from "../components/SolutionSec";
 import {
   IconUsers,
-  IconDeviceMobile,
-  IconCash,
   IconLayoutDashboard,
   IconWallet,
-  IconMessageCircle,
   IconShieldCheck,
-  IconCode,
-  IconHeadphones,
   IconChartBar,
-  IconHierarchy3,
-  IconShoppingCart,
   IconExchange,
   IconHierarchy,
   IconGift,
@@ -44,37 +33,19 @@ import {
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const technologyData = [
   {
     img: <IconUsers stroke={1.5} className="w-12 h-12" />,
@@ -133,7 +104,7 @@ const technologyData = [
   },
 ];
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -145,26 +116,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
+    
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -457,35 +409,8 @@ export default function Ecommerce(props) {
         {/* Canonical Tag */}
 
         <link rel="canonical" href="https://www.comfygen.com/dapp-development-company "></link>
-
-        {/* Robots */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-        <meta name="googlebot" content="all" />
-
-        {/* Compatibility */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-        <meta charSet="UTF-8" />
-
         {/* Viewport + Mobile */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="dApp Development Company" />
-
-
-        {/* Author & Company */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
         <meta
           name="owner"
           content="A Founder is one of the individuals who helped establish a dApp Development Company in India, the USA, startup, or organization."
@@ -524,42 +449,8 @@ export default function Ecommerce(props) {
           href="https://www.comfygen.com/dapp-development-company"
         />
 
-        {/* SEO Meta */}
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-
-        {/* Geo Meta */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-        <meta name="og:country-name" content="India, USA, UK, UAE" />
-        <meta name="og:latitude" content="26.912434" />
-        <meta name="og:longitude" content="75.787271" />
-
-        {/* Open Graph */}
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+    
+      
 
 
         {/* Extra OG for Facebook */}
@@ -831,18 +722,8 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

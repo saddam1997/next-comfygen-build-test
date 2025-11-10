@@ -1,25 +1,13 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import { MdOutlineGeneratingTokens } from "react-icons/md";
-import Cryptocurrency from "../components/Cryptocurrency";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { RiRemixiconLine, RiTerminalBoxLine } from "react-icons/ri";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsSearch } from "react-icons/bs";
-import { BiSupport } from "react-icons/bi";
-import { CiWallet } from "react-icons/ci";
 import dynamic from "next/dynamic";
-import { FiPhoneForwarded } from "react-icons/fi";
-import { TbMicroscope } from "react-icons/tb";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import JSON_DATA from "./data.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
@@ -352,29 +340,6 @@ export default function Tron(props) {
         <Header />
       </LazyLoad>
       <div className="overflow-hidden">
-        {/* <Header /> */}
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/tron-token-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Trusted Tron Token Development Services"
-                ptag="Looking to launch a powerful token on the Tron blockchain? Our Tron Token Development Services are tailored to meet the unique needs of startups and enterprises, helping you create custom TRC-10 and TRC-20 tokens with seamless integration, high security, and scalability."
-                ptag1="At Comfygen, we combine blockchain expertise, innovative solutions, and industry best practices to deliver robust token development on the Tron network. Whether you aim to create utility tokens, security tokens, or NFT assets, our Tron blockchain developers ensure fast deployment, low transaction fees, and full compliance with industry standards."
-                li="Custom TRC-10 & TRC-20 Token Creation"
-                li1="Scalable Token Architecture for High TPS"
-                li2="End-to-End Smart Contract Development & Auditing"
-                li3="Seamless Integration with dApps and Wallet"
-                li4="Launch-Ready Tokens for ICOs, STOs, and NFT Projects"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
 
         <HeroSectionForAllPages
           heading="Trusted Tron Token Development Services"
@@ -413,34 +378,7 @@ export default function Tron(props) {
           linkText="Explore More"
         />
         <ContactFromCenter />
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Tron Token Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At <a href=""></a> Comfygen, we deliver end-to-end Tron token development
-                services tailored for startups, enterprises, and crypto
-                entrepreneurs looking to enter the decentralized economy. As a
-                leading Tron token development company, we specialize in
-                creating custom TRC-10 and TRC-20 tokens, ensuring fast
-                transactions, high scalability, and seamless integration with
-                Tron-based applications. Our expert Tron token developers
-                leverage advanced blockchain protocols to deliver secure,
-                scalable, and efficient token solutions that support
-                fundraising, tokenization of assets, and decentralized app
-                (dApp) ecosystems. Whether you're launching an ICO or building a
-                Web3 platform, our Tron token development solutions are designed
-                to accelerate your blockchain journey with reliability and
-                compliance.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section> */}
+
 
         <ServicesSec
           servicesData={JSON_DATA.servicesData}
@@ -561,13 +499,7 @@ export default function Tron(props) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        {/* <InfoSectionLeft
-          heading="Create your own Tron Token ( Hire Tron Token Developer)"
-          description1="Developing a TRON token could offer your business a seamless way to interact with the blockchain ecosystem. Trading gets easier with no transaction fees involved though TRON blockchain network. We can help you get your first Tron token as per your choice. We offer custom tron token development services for your business. Talk to our expert for a briefing and more."
-          imageSrc="https://www.comfygen.com/img/tron-trc10-token-development.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        /> */}
+
         <HireDeveloper
           heading="Hire Tron Token Developer"
           text="Accelerate your blockchain journey with our expert Tron token developers, skilled in building secure, scalable, and high-performance TRC10 and TRC20 tokens. Whether you're launching a DeFi platform, an NFT marketplace, or a fundraising campaign through ICO/STO, our Tron token development services ensure seamless token creation and integration on the TRON blockchain."
@@ -633,14 +565,4 @@ export default function Tron(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ req, res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

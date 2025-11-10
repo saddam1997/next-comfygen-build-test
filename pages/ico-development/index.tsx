@@ -9,23 +9,16 @@ import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-// import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import ModelsSec from "../components/ModelsSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import CardItem from "../components/CardItem";
-import Script from "next/script";
 import ServicesSec from "../componentsnew/ServicesSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
-import ICODetailsSection from "../componentsnew/ProcessSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
@@ -115,16 +108,17 @@ const Processs = [
 
 const jsonLdData = [
   {
-    "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Private Limited",
-"Name":"ICO development Services",
-"image":"Hero section image",
-"description":"Launch your ICO with Comfygen, a leading ICO development company. We offer comprehensive ICO development services, including token creation, smart contracts, blockchain integration, and post-ICO support. Secure, scalable, and compliant solutions.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"1748"
-}
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": "Comfygen Private Limited",
+    "Name": "ICO development Services",
+    "image": "Hero section image",
+    "description": "Launch your ICO with Comfygen, a leading ICO development company. We offer comprehensive ICO development services, including token creation, smart contracts, blockchain integration, and post-ICO support. Secure, scalable, and compliant solutions.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1748"
+    }
   },
   {
     "@context": "https://schema.org",
@@ -212,120 +206,121 @@ const jsonLdData = [
     ]
   },
   {
-   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "contactOption": "Voice",
-    "telephone": "+91 9587867258",
-    "areaServed": [
-      "IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU",
-      "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL",
-      "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM",
-      "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG",
-      "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"
-    ],
-    "availableLanguage": ["en", "in"]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Comfygen",
+    "url": "https://www.comfygen.com/",
+    "logo": "https://www.comfygen.com/svg/Logo1.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "contactOption": "Voice",
+      "telephone": "+91 9587867258",
+      "areaServed": [
+        "IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU",
+        "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL",
+        "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM",
+        "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG",
+        "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"
+      ],
+      "availableLanguage": ["en", "in"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/comfygen",
+      "https://twitter.com/comfygentech",
+      "https://www.instagram.com/comfygen_/?hl=en",
+      "https://youtube.com/@comfygenbusiness",
+      "https://www.linkedin.com/company/comfygen-private-limited",
+      "https://in.pinterest.com/comfygenpvt/"
+    ]
   },
-  "sameAs": [
-    "https://www.facebook.com/comfygen",
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://youtube.com/@comfygenbusiness",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://in.pinterest.com/comfygenpvt/"
-  ]
-  },
-  
- { "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is an Initial Coin Offering (ICO)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An ICO is a fundraising method where a project sells its own cryptocurrency or tokens in exchange for capital. It’s typically used to raise funds for new cryptocurrency or blockchain ventures."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why should I choose Comfygen for ICO development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Comfygen offers end-to-end ICO development services, from token creation to post-ICO support. With a strong focus on security, scalability, and compliance, we ensure that your ICO is successful and aligns with global standards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to develop an ICO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The timeline for developing an ICO can vary based on the complexity of the project. Generally, it takes anywhere from 4 to 6 months to launch a fully functional ICO, including token creation, smart contract development, and platform integration."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What blockchain platforms do you use for ICO development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We specialize in multiple blockchain platforms including Ethereum, Binance Smart Chain, Polkadot, and Solana, ensuring that your ICO benefits from the best blockchain for your specific needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does Comfygen ensure the security of my ICO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We employ the latest security protocols, including multi-signature wallets, smart contract audits, and KYC/AML integration to protect your ICO from potential security breaches and fraud."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is tokenomics, and why is it important for my ICO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tokenomics refers to the economic model behind your token, including its distribution, value, and utility. A well-designed tokenomics strategy is essential for attracting investors and ensuring long-term project success."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Comfygen help with ICO marketing and promotion?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! We provide comprehensive ICO marketing services, including PR campaigns, social media strategies, influencer marketing, and targeted advertising to ensure your ICO gets the attention it deserves."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the role of a smart contract in ICO development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Smart contracts automate the ICO process by ensuring transparent, secure, and efficient transactions. They’re essential for handling token sales, investor funds, and distribution without the need for intermediaries."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you ensure my ICO complies with regulations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Comfygen follows global ICO regulations, including KYC/AML compliance, ensuring that your ICO meets the legal requirements of different regions, reducing the risk of legal challenges post-launch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What support do you offer after the ICO launch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer comprehensive post-ICO support, including token distribution, wallet integration, security monitoring, and ongoing platform updates to ensure that your project continues to thrive long after the ICO ends."
-          }
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an Initial Coin Offering (ICO)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An ICO is a fundraising method where a project sells its own cryptocurrency or tokens in exchange for capital. It’s typically used to raise funds for new cryptocurrency or blockchain ventures."
         }
-      ]
-    }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I choose Comfygen for ICO development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Comfygen offers end-to-end ICO development services, from token creation to post-ICO support. With a strong focus on security, scalability, and compliance, we ensure that your ICO is successful and aligns with global standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop an ICO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The timeline for developing an ICO can vary based on the complexity of the project. Generally, it takes anywhere from 4 to 6 months to launch a fully functional ICO, including token creation, smart contract development, and platform integration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What blockchain platforms do you use for ICO development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in multiple blockchain platforms including Ethereum, Binance Smart Chain, Polkadot, and Solana, ensuring that your ICO benefits from the best blockchain for your specific needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Comfygen ensure the security of my ICO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We employ the latest security protocols, including multi-signature wallets, smart contract audits, and KYC/AML integration to protect your ICO from potential security breaches and fraud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is tokenomics, and why is it important for my ICO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tokenomics refers to the economic model behind your token, including its distribution, value, and utility. A well-designed tokenomics strategy is essential for attracting investors and ensuring long-term project success."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Comfygen help with ICO marketing and promotion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We provide comprehensive ICO marketing services, including PR campaigns, social media strategies, influencer marketing, and targeted advertising to ensure your ICO gets the attention it deserves."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the role of a smart contract in ICO development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Smart contracts automate the ICO process by ensuring transparent, secure, and efficient transactions. They’re essential for handling token sales, investor funds, and distribution without the need for intermediaries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you ensure my ICO complies with regulations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Comfygen follows global ICO regulations, including KYC/AML compliance, ensuring that your ICO meets the legal requirements of different regions, reducing the risk of legal challenges post-launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What support do you offer after the ICO launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer comprehensive post-ICO support, including token distribution, wallet integration, security monitoring, and ongoing platform updates to ensure that your project continues to thrive long after the ICO ends."
+        }
+      }
+    ]
+  }
 ];
 
 
@@ -341,14 +336,14 @@ export default function Ecommerce(props) {
   };
 
   const faqSchema = {
-    
-      
-    
+
+
+
   };
 
   return (
     <>
-     <Head>
+      <Head>
         <title>ICO Development Company | End-to-End ICO Services | Comfygen</title>
         <meta
           name="description"
@@ -425,24 +420,24 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/ico-development/ico-development-og.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-     
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        
 
-        
+
+
       </Head>
 
 
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden">
 
-        
+
         <HeroSectionForAllPages
           heading="ICO Development Company"
           ptag="Comfygen is a leading ICO development company offering secure, scalable, and fully customized ICO solutions. From token creation to smart contracts and investor dashboards, we help you launch your fundraising campaign with confidence."
@@ -459,7 +454,7 @@ export default function Ecommerce(props) {
           bgImage="https://www.comfygen.com/comfygen-images/ico-development/ico-development-hero1.webp"
         />
         <NewSection NewSection={JSON_DATA.NewSections} />
-        
+
         <AboutSection
           title="About Company"
           heading="Empower Your Vision with Professional ICO Development"
@@ -472,7 +467,7 @@ export default function Ecommerce(props) {
               "Dedicated post-launch support and platform scaling services"
             ]
           }
-         
+
           imageSrc="https://www.comfygen.com/comfygen-images/ico-development/ico-development-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -483,15 +478,15 @@ export default function Ecommerce(props) {
           title="Over End-to-End ICO Development Services"
           description="At <a class='text-blue-500' href='/'>comfygen</a> , we specialize in delivering end-to-end ICO development services to help startups and enterprises launch successful ICO campaigns. Our services cover every step of the process, from initial planning to post-ICO support, ensuring that your ICO is secure, compliant, and primed for success. Here's a breakdown of the services we offer:"
         />
-                                 
-          <CardItem
+
+        <CardItem
           heading="Our ICO Development Solutions"
           subheading="At Comfygen, we provide ICO development solutions designed to meet the unique needs of startups and enterprises. Our solutions are custom-tailored to ensure your ICO is secure, efficient, and investor-friendly. We provide:"
           techData={JSON_DATA.cardData2}
 
         />
-       
-        
+
+
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <CardItem
           heading="Top Security Features for Secure ICO Development Mechanisms"
@@ -499,7 +494,7 @@ export default function Ecommerce(props) {
           techData={JSON_DATA.cardData}
 
         />
-        
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -507,19 +502,19 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-          <ProcessSection
-            title="Our Step-by-Step ICO Development Process"
-            description="Our ICO development process is meticulously structured to ensure a smooth and successful token launch. We follow a comprehensive, step-by-step approach to deliver a secure, compliant, and high-performance ICO platform tailored to your business needs."
-            processSlides={Processs}
-          />
+        <ProcessSection
+          title="Our Step-by-Step ICO Development Process"
+          description="Our ICO development process is meticulously structured to ensure a smooth and successful token launch. We follow a comprehensive, step-by-step approach to deliver a secure, compliant, and high-performance ICO platform tailored to your business needs."
+          processSlides={Processs}
+        />
 
 
         <TechStack
           title="Our ICO Development Technology Stack"
           description="We use the latest technologies to build secure, scalable, and high-performance ICO platforms:"
         />
-       
-       <WhyChoose
+
+        <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
@@ -539,11 +534,11 @@ export default function Ecommerce(props) {
             "Full Spectrum of Services",
             "Security and Compliance Focused",
             "Proven Track Record",
-            
+
           ]}
         />
 
-     
+
         <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
         <CallToAction
           heading="Let’s hear what you have to say?"
@@ -557,18 +552,8 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

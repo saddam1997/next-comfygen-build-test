@@ -5,31 +5,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import InfoSectionLeft from "../components/InfoSectionLeft";
-import BlogSection from "../components/BlogSection";
+
 import Faq from "../components/Faq";
 import CardItem from "../components/CardItem";
 import ModelsSec from "../components/ModelsSec";
 import ProcessSec from "../components/ProcessSec";
 import SolutionSec from "../components/SolutionSec";
 import {
-  IconBell,
-  IconCreditCard,
-  IconCurrencyBitcoin,
   IconCurrencyDollar,
   IconFileCode,
-  IconFileSearch,
-  IconGavel,
   IconLock,
   IconNetwork,
-  IconShare,
   IconShieldCheck,
   IconWallet,
 } from "@tabler/icons-react";
@@ -38,9 +30,7 @@ import Guidance from "../components/Guidance";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -474,18 +464,7 @@ export default function Ecommerce(props) {
         />
         <Guidance />
         <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

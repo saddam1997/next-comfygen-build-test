@@ -4,8 +4,6 @@ import dynamic from "next/dynamic";
 import LazyLoad from "react-lazy-load";
 import "aos/dist/aos.css";
 import JSON_DATA from "./json/creditscoringappdevelopment1.json";
-
-import BlogSection from "../components/BlogSection";
 import ContactFromCenter from "../components/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../componentsnew/AboutSection";
@@ -14,28 +12,21 @@ import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import ProcessSec from "../componentsnew/ProcessSec";
-import IndustriesServe from "../componentsnew/IndustriesServe";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import CallToAction from "../componentsnew/CallToAction";
 import Faq from "../componentsnew/Faq";
 
 import {
-  IconBox,
-  IconCloud,
   IconCloudComputing,
-  IconCode,
-  IconDeviceImacPause,
   IconLock,
   IconRecordMail,
   IconRobot,
   IconSettings,
   IconShield,
-  IconWifi,
   IconWorldWww,
 } from "@tabler/icons-react";
 import TechStack from "../componentsnew/TechStack";
 import WhyChoose from "../componentsnew/WhyChooseUs";
-import WhyChooseUs from "../componentsnew/WhyChooseUs";
 import ClientTestimonials from "../components/ClientTestimonials";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -43,59 +34,7 @@ const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const BreadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Books",
-      item: "https://example.com/books",
-    },
-  ],
-};
-const ldJson = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Top Mobile App Development Company In India | Comfygen",
-  url: "https://www.comfygen.com/",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "{search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
-const ProductSchema = {
-  "@context": "http://www.schema.org",
-  "@type": "product",
-  brand: "Comfygen",
-  name: "Mobile App Development Agency - Mobile Application Development Company",
-  image:
-    "https://comfygen.com/img/explore-success-with-our-mobile-app-development-agency.webp",
-  description:
-    "Comfygen is a top mobile application development company. We provide the best Mobile application development services and custom mobile app development services to enterprises & startups worldwide.",
-  aggregateRating: {
-    "@type": "aggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1124",
-  },
-};
-
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
 
@@ -464,50 +403,16 @@ export default function Mobile(props) {
           name="description"
           content="Comfygen is a top credit scoring app development company delivering secure, AI-powered fintech solutions. We build scalable credit scoring apps with real-time analytics, data security, and 10+ years of expertise."
         />
-        <meta
-          name="keywords"
+        <meta  name="keywords"
           content="Credit Scoring App Development Services, Credit Analysis App Development, Credit Management App Development, Blockchain-Based Credit Scoring App Development, AI & Machine Learning Integration"
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/credit-scoring-app-development"
-        />
-        <meta name="robots" content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+        <link rel="canonical" href="https://www.comfygen.com/credit-scoring-app-development" />
+       
 
         {/* Open Graph Tags */}
-        <meta
-          property="og:title"
-          content="Credit Scoring App Development Company | AI-Driven Fintech Solutions"
+        <meta property="og:title" content="Credit Scoring App Development Company | AI-Driven Fintech Solutions"
         />
-        <meta property="og:type" content="website" />
+    
         <meta
           property="og:url"
           content="https://www.comfygen.com/credit-scoring-app-development"
@@ -687,18 +592,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title="Credin Score App Develoment"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

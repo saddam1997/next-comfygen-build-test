@@ -70,62 +70,7 @@ const Process = [
 
 ];
 
-const technologyData = [
-  {
-    num: "1",
-    title: "Interoperability",
-    desc: "Cardano supports the use of multiple currencies, side by side, and allows them to move across diverse chains simultaneously. It allows the addition of metadata to the transaction for defining it.",
-    img: <IconExchange stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "2",
-    title: "Sustainable",
-    desc: "Cardano comes with a special wallet, which is referred to as the treasury, and receives a small part for every transaction that is being processed within the network. There is no single entity that controls this treasure, but a fair voting system executed by smart contracts is used for allocating funds to all the developers.",
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "3",
-    title: "Scalability",
-    desc: "Cardano runs on the PoS consensus algorithm for improving the transactions per second proficiency. Moreover, it also uses techniques such as compression, partitioning, or pruning to solve data storage problems.",
-    img: <IconLoadBalancer stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "4",
-    title: "Smart Contract Programmability",
-    desc: "The Cardano network tends to function similarly to that of the Ethereum platform by combining the blockchain idea with the tokenized smart contracts. This will improve security across distributed networks and further enhance automated operations in blockchain.",
-    img: <IconCode stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "5",
-    title: "Business Process Optimization",
-    desc: "By availing of Cardano blockchain app development services, you will be able to avail all of its use cases, which promote security, interoperability, and scalability, which are attractive elements for businesses, ensuring seamless process optimization.",
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "6",
-    title: "Data Monetization",
-    desc: "With Cardano blockchain app development, you can expect to improve the efficiency of numerous innovative projects, especially for monetization and user data sharing. This technology hands out the data-controlling power back to the users.",
-    img: <IconDatabase stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "7",
-    title: "High-level Security",
-    desc: "Cardano brings you a secure and stable architecture, enabling the developers and users to avail immense safety and protection in the use of this ecosystem. We ensure the highest level of security by keeping up with security measures and practices.",
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "8",
-    title: "Better Connectivity",
-    desc: "Cardano blockchain is considered to be mathematically sound, which helps us lift all the compatibility or interoperability barriers for ensuring universal connectivity among all the blockchains. Our experts will check the connectivity while implementing this technology.",
-    img: <IconLink stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "9",
-    title: "Data-centric Smart Contracts",
-    desc: "For every blockchain project, you will need Cardano smart contracts that are perfectly made within this network. Except for the exchange of native tokens, the Cardano smart contracts will be used in almost all on-chain activities.",
-    img: <IconFileText stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-];
+
 
 const techDataForPage1 = {
   All: [
@@ -414,61 +359,6 @@ export default function Ecommerce(props) {
         {/* keywords */}
         <meta name="keywords" content="Cardano Blockchain Development, Smart Contract Development on Cardano, Cardano dApps Development, Token Creation on Cardano, NFT Integration on Cardano, Decentralized Finance (DeFi) Solutions, Enterprise Blockchain Solutions, Cardano Wallet Development, Staking and Governance Solutions, Cardano Blockchain Consulting"/>
 
-
-        {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-        {/* <!-- Viewport and Mobile Optimization → */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="NFT Wallet Development" />
-
-        {/* <!-- New in iOS6 --> */}
-        {/* <!-- Author and Company Information --> */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* <!-- SEO Meta --> */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cardano Blockchain Development Services | Comfygen" />
@@ -499,27 +389,7 @@ export default function Ecommerce(props) {
       <BlockchainNav />
       <div className="overflow-hidden">
 
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/cardano-blockchain-development-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Cardano Blockchain Development Services"
-                ptag="A Cardano blockchain app can unlock new potential for your business, placing you ahead in the blockchain landscape. With Comfygen’s expert team of developers, testers, and project managers, you’ll receive professional support for top-tier Cardano solutions."
-                li="Specialized Cardano Development Team"
-                li1="Tailored Blockchain Solutions"
-                li2="Comprehensive Project Support"
-                li3="Blueprint for Optimal Cardano Solutions"
-                ptag3="Connect with us to bring your Cardano project to life."
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
+
 
         <HeroSectionForAllPages
           heading="Best Cardano Blockchain Development Company"
@@ -618,18 +488,9 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

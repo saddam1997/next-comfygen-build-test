@@ -10,7 +10,7 @@ import BlockchainFooter from "./componentsnew/blockchain-Footer";
 import EcommerceFooter from "./componentsnew/ecommerce-Footer";
 import footerConfig from "../pageRoute/pagedataroute.json"
 import { Poppins } from 'next/font/google';
-
+import Head from "next/head";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -96,12 +96,120 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
   const showEcommerceFooter = matchesAny(footerConfig.ecommerce);
   const isExcluded = matchesAny(footerConfig.excluded);
 
+
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      addressLocality: "Jaipur, Rajasthan",
+      addressRegion: "India",
+      postalCode: "302006",
+      telephone: "+91-958-786-7258",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      streetAddress: "40 Tuxedo Ct, Toronto, ON",
+      addressLocality: "Toronto",
+      addressRegion: "Canada",
+      postalCode: "M1G3S7",
+      telephone: "+1 579-977-4475",
+    },
+        {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      logo: "https://www.comfygen.com/svg/Logo1.svg",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        contactOption: "WhatsApp",
+        telephone: "+91 9587867258",
+        email: "sales@comfygen.com",
+        areaServed: ["IN", "US", "CA", "GB"],
+
+        availableLanguage: "en, in",
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
+    },
+  ];
+
   return (
     <React.Fragment>
-      <main className={`${poppins.className} overflow-y-auto max-w-[1600px] mx-auto`}>
+
+      <Head>
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* Viewport & Mobile Meta */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Comfygen Technologies" />
+
+        {/* Author & Ownership Meta */}
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+        {/* SEO Meta */}
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+        {/* Geo Meta */}
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+        {/* Open Graph Meta */}
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Comfygen Technologies" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* ✅ JSON-LD structured data for all pages */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
+      <main className={`${poppins.className}overflow-y-auto max-w-[1600px] mx-auto`}>
         <Component {...pageProps} />
         {/* {JSON.stringify(initialData)} */}
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
         <GetinTouch />
         {showBlockchainFooter ? (
           <BlockchainFooter />

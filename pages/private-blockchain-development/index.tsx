@@ -1,16 +1,13 @@
 import React, { useRef, useState } from "react";
-import Image from "next/image";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
@@ -1029,12 +1026,4 @@ export default function rummy(props) {
     </>
   );
 }
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

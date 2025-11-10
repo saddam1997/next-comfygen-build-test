@@ -3,25 +3,16 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/cryptotoken.json";
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import ProcessSec from "../components/ProcessSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardItem from "../components/CardItem";
-import Script from "next/script";
 import PortfolioSec from "../components/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
@@ -45,7 +36,6 @@ import {
 
 import SolutionSec from "../componentsnew/SolutionSec";
 import ConsultancyApproachBlue from "../componentsnew/ConsultancyApproachBlue";
-import CryptoTradingSection from "./components/CryptoTradingSection";
 import CryptoTradingList from "./components/CryptoTradingSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 
@@ -748,18 +738,8 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

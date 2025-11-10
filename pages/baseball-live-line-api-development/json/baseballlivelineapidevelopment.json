@@ -54,6 +54,46 @@
 
 
 
+"Process": [
+  {
+    "title": "Step 1 – Requirement Gathering",
+    "description":
+      "Understand your platform's vision, user needs, and data requirements. We work closely with you to define your goals, whether it's real-time sports tracking, or analytics delivery."
+  },
+  {
+    "title": "Step 2 – API Roadmap & Endpoint Planning",
+    "description":
+      "Plan the API scope by defining essential endpoints such as live scores, player stats, odds, and game events. We create a clear development timeline aligned with your priorities and scalability needs."
+  },
+  {
+    "title": "Step 3 – System Design & Documentation",
+    "description":
+      "Design a clean and scalable API architecture with well-structured responses, secure authentication, and usage limits. We also deliver developer-first documentation for smooth integration."
+  },
+  {
+    "title": "Step 4 – Custom Development & Integration",
+    "description":
+      "Develop custom modules tailored to your sport, logic. Our integration process ensures compatibility with your existing web, mobile, or backend systems."
+  },
+  {
+    "title": "Step 5 – Testing & Validation",
+    "description":
+      "Simulate live games, high user traffic, and stress conditions to ensure the API performs under load. Functional, load, and regression testing are all part of our validation process."
+  },
+  {
+    "title": "Step 6 – Deployment & Hosting",
+    "description":
+      "Deploy the API on cloud or on-premise infrastructure based on your scaling and performance needs. We configure environments for optimal speed, security, and accessibility."
+  },
+  {
+    "title": "Step 7 – Post-launch Support & Optimization",
+    "description":
+      "Monitor API health with real-time metrics, uptime tracking, and log diagnostics. Our team ensures continuous improvement with performance tuning and proactive issue resolution."
+  }
+],
+
+
+
 "servicesData": [
   {
     "title": "Real-Time Game Updates",

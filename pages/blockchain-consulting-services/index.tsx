@@ -467,124 +467,37 @@ export default function rummy(props) {
     <>
       <Head>
         <title>
-     Blockchain Consulting Services | Comfygen Blockchain Experts
+          Blockchain Consulting Services | Comfygen Blockchain Experts
         </title>
         <meta
           name="description"
           content="Comfygen delivers end-to-end blockchain consulting—strategy, smart contracts, DeFi, NFT, and Web3 solutions. Scalable for startups, SMEs, and enterprises."
         />
-        <meta
-          name="keywords"
-          content="Blockchain Consultancy Company, Blockchain Consultancy Services, Blockchain Strategy Consulting, Enterprise Blockchain Solutions, Custom Blockchain Development, DeFi Consulting, NFT Project Consulting, Smart Contract Consulting, Ethereum Consulting, Polygon Consulting, Solana Consulting, Hyperledger Consulting, Blockchain Architecture Design, Blockchain Implementation Support"
+        <meta name="keywords" content="Blockchain Consultancy Company, Blockchain Consultancy Services, Blockchain Strategy Consulting, Enterprise Blockchain Solutions, Custom Blockchain Development, DeFi Consulting, NFT Project Consulting, Smart Contract Consulting, Ethereum Consulting, Polygon Consulting, Solana Consulting, Hyperledger Consulting, Blockchain Architecture Design, Blockchain Implementation Support"
         />
 
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/blockchain-consulting-services "
-        />
+        <link rel="canonical" href="https://www.comfygen.com/blockchain-consulting-services " />
 
-        {/* Robots */}
-        <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
-        />
-
-        {/* Compatibility Meta */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-        {/* Viewport and Mobile Optimization */}
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta
-          name="apple-mobile-web-app-title"
-          content="Blockchain Consulting Services"
-        />
-
-        {/* Author */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* SEO Meta */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta
-          name="keywords"
-          content="Blockchain Consulting Company, Blockchain Consulting Services, Blockchain Solutions"
-        />
-
-        {/* Geo Location Meta */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* Open Graph (OG) Tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="og:email" content="sales@comfygen.com" />
-        <meta name="og:phone_number" content="+91-958-786-7258" />
-
+        <meta name="apple-mobile-web-app-title" content="Blockchain Consulting Services" />
+        <meta name="keywords" content="Blockchain Consulting Company, Blockchain Consulting Services, Blockchain Solutions" />
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/og.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/og.webp" />
-        <meta
-          property="og:image:alt"
-          content="Blockchain Consulting Company - Comfygen"
-        />
+        <meta property="og:image:alt" content="Blockchain Consulting Company - Comfygen" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/blockchain-consulting-services "
-        />
-        <meta
-          property="og:title"
-          content="Blockchain Consulting Company | Expert Blockchain Consulting Services"
-        />
-        <meta
-          property="og:description"
-          content="Partner with Comfygen, a trusted Blockchain Consulting Company. We help enterprises, startups, and innovators design, develop, and implement blockchain solutions—covering dApps, DeFi, NFTs, smart contracts, and more."
-        />
+        <meta property="og:url" content="https://www.comfygen.com/blockchain-consulting-services " />
+        <meta property="og:title" content="Blockchain Consulting Company | Expert Blockchain Consulting Services" />
+        <meta property="og:description" content="Partner with Comfygen, a trusted Blockchain Consulting Company. We help enterprises, startups, and innovators design, develop, and implement blockchain solutions—covering dApps, DeFi, NFTs, smart contracts, and more." />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Blockchain Consulting Company | Expert Blockchain Consulting Services"
-        />
-        <meta
-          name="twitter:description"
-          content="Comfygen offers blockchain consulting services for enterprises and startups. Build secure, scalable, and future-ready blockchain solutions tailored to your business."
-        />
+        <meta name="twitter:title" content="Blockchain Consulting Company | Expert Blockchain Consulting Services" />
+        <meta name="twitter:description" content="Comfygen offers blockchain consulting services for enterprises and startups. Build secure, scalable, and future-ready blockchain solutions tailored to your business." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
-        <script
-          type="application/ld+json"
+
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
         <script
@@ -639,7 +552,7 @@ export default function rummy(props) {
                 Our Blockchain Consulting Services
               </h2>
               <p className="text-base text-center font-normal">
-               Comfygen, Best Blockchain Consulting provides a full spectrum of blockchain consulting services developed to help you innovate, optimize, and scale. Our experienced Blockchain consultants assist you throughout the entire blockchain technology adoption journey—from defining strategy to deploying secure and scalable solutions. As a trusted blockchain development company, we focus on delivering Blockchain Consulting solutions that are not only technically strong but also aligned with your long-term business goals.
+                Comfygen, Best Blockchain Consulting provides a full spectrum of blockchain consulting services developed to help you innovate, optimize, and scale. Our experienced Blockchain consultants assist you throughout the entire blockchain technology adoption journey—from defining strategy to deploying secure and scalable solutions. As a trusted blockchain development company, we focus on delivering Blockchain Consulting solutions that are not only technically strong but also aligned with your long-term business goals.
 
               </p>
             </div>
@@ -693,10 +606,10 @@ export default function rummy(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our End-to-End Blockchain Consulting Services Process
+                Our End-to-End Blockchain Consulting Services Process
               </h2>
               <p className="text-base font-normal mt-2">
-               Our blockchain consultation journey follows a structured roadmap—from discovery to deployment—designed to deliver measurable business impact. With a focus on innovation, scalability, and technical precision, we guide you through every stage of blockchain adoption, ensuring a seamless transformation from concept to execution. At Comfygen, success isn’t just about building solutions—it’s about creating long-term value through strategic blockchain integration.
+                Our blockchain consultation journey follows a structured roadmap—from discovery to deployment—designed to deliver measurable business impact. With a focus on innovation, scalability, and technical precision, we guide you through every stage of blockchain adoption, ensuring a seamless transformation from concept to execution. At Comfygen, success isn’t just about building solutions—it’s about creating long-term value through strategic blockchain integration.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -830,13 +743,4 @@ export default function rummy(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

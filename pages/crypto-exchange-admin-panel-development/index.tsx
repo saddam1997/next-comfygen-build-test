@@ -3,30 +3,18 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/cryptoexchangeadminpaneldevelopment.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardItem from "../components/CardItem";
-import Script from "next/script";
 import PortfolioSec from "../components/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
-import CardListMinimal from "../componentsnew/CardListMinimal";
-import CardGrid from "../components/CardGrid";
 import {
   IconArrowsLeftRight,
   IconChartBar,
@@ -42,17 +30,10 @@ import {
   IconShieldCheck,
   IconArrowsExchange2
 } from '@tabler/icons-react';
-
-import SolutionSec from "../componentsnew/SolutionSec";
-import ConsultancyApproachBlue from "../componentsnew/ConsultancyApproachBlue";
-import CryptoTradingSection from "./components/CryptoTradingSection";
 import CryptoTradingList from "./components/CryptoTradingSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ServicesSection from "../componentsnew/ServicesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
-
-
-
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -652,68 +633,15 @@ export default function Ecommerce(props) {
             "Commitment to quality and customer satisfaction",
           ]}
         />
-      
-
-        {/* <ConsultancyApproachBlue
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/crypto-trading-bot-clone-scripts-for-automated-trading.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
-        {/* <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Use Cases & Industry Applications of Crypto Trading Bots
-                </h2>
-                <p>
-                  Explore how Comfygen’s custom crypto trading bot development services cater to various user segments in the crypto trading ecosystem. Our solutions are built to serve individual traders, exchanges, fintech startups, and institutional clients with tailored automation strategies.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.IndustryApplications.map((elem) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* <CardListMinimal
-         heading="Types of Exchanges Supported by Our Developed Trading Bots"
-          subheading="Our trading bots support a wide array of both <a class='text-blue-500 font-semibold' href='/centralized-crypto-exchange-development'>centralized</a> and <a class='text-blue-500 font-semibold' href='/decentralized-exchange-development'>decentralized cryptocurrency exchanges</a>, ensuring seamless integration and performance across platforms."
-           techData={JSON_DATA.cardData} /> */}
 
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-        {/*<BlogSection initialData={initialData} />*/}
+      
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

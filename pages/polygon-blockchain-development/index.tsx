@@ -8,7 +8,6 @@ import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import TechStack from "../components/TechStack";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import InfoSectionRight from "../components/InfoSectionRight";
 import ConsultancyApproach from "../components/ConsultancyApproach";
@@ -423,15 +422,4 @@ export default function Polygon(props) {
       </div>
     </>
   );
-}
-
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

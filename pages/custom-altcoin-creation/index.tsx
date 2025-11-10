@@ -20,20 +20,7 @@ export default function TermsAndConditions() {
         <Head>
           <title> Custom Altcoin Creation - comfygen.com </title>
           <link rel="canonical" href="https://www.comfygen.com/custom-altcoin-creation" />
-          {/* <meta name="description" content=" Read our ComfyGen terms and conditions carefully before using our website. Learn about our policies on privacy, intellectual property, and user-generated content. By accessing and using our website." />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="article" />
-          <meta property="og:title" content=" Terms and Conditions - comfygen.com " />
-          <meta property="og:description" content=" Read our ComfyGen terms and conditions carefully before using our website. Learn about our policies on privacy, intellectual property, and user-generated content. By accessing and using our website." />
-          <meta property="og:url" content="https://www.comfygen.com/custom-altcoin-creation" />
-          <meta property="og:site_name" content="Comfygen" />
-          <meta property="article:publisher" content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/" />
-          <meta property="article:modified_time" content="2022-09-10T07:43:51+00:00" />
-          <meta property="og:image" content="https://www.comfygen.com/images/illuslator/Aboutus.svg?size=1024" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@comfygentech" />
-          <meta name="twitter:label1" content="Est. reading time" />
-          <meta name="twitter:data1" content="8 minutes" /> */}
+        
         </Head>
         {/* hero section */}
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>

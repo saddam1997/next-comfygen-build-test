@@ -3,31 +3,21 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/hybridcryptoexchangedevelopment.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ModelsSec from "../components/ModelsSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import Script from "next/script";
 import PortfolioSec from "../components/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
 import ServicesSection from "../componentsnew/ServicesSection";
 import CardItem from "../components/ServiceSec";
 import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
 
 
@@ -37,9 +27,6 @@ const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -129,24 +116,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -607,18 +577,8 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-        {/*<BlogSection initialData={initialData} />*/}
+        
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

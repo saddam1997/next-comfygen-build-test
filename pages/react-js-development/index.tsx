@@ -9,13 +9,10 @@ import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconBriefcase, IconChartBar, IconCode, IconDeviceMobile, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconSchool, IconShoppingCart, IconUsers, IconVideo, } from '@tabler/icons-react';
-import ModelsSec from "../components/ModelsSec";
+import {IconCode, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconUsers, } from '@tabler/icons-react';
 import ProcessSec from "../components/ProcessSec";
 import IndustriesServe from "../components/IndustriesServe";
 const Header = dynamic(() => import("../components/Header"), {
@@ -257,15 +254,4 @@ export default function ReactJS(props) {
       </div>
     </>
   );
-}
-
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

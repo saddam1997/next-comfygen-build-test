@@ -134,25 +134,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
 
     {
       "@context": "https://schema.org",
@@ -394,54 +376,11 @@ export default function Ecommerce(props) {
         href="https://www.comfygen.com/defi-development-company"
       />
 
-      {/* Viewport and Mobile Optimization */}
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-      />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="MobileOptimized" content="320" />
-      <meta name="HandheldFriendly" content="true" />
-      <meta name="viewport-fit" content="cover" />
-      <meta name="apple-touch-fullscreen" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#1E1E1E" />
+    
       <meta
         name="apple-mobile-web-app-title"
         content="DeFi Development Company"
       />
-
-      {/* Author and Company Information */}
-      <meta name="author" content="Comfygen Technologies" />
-      <meta name="web-author" content="Comfygen Technologies" />
-      <meta name="reply-to" content="sales@comfygen.com" />
-      <meta name="rights" content="Copyright Comfygen Technologies" />
-      <meta name="copyright" content="Comfygen Technologies" />
-
-      {/* SEO Meta */}
-      <meta name="googlebot" content="all" />
-      <meta name="revisit-after" content="3 days" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="General" />
-      <meta name="coverage" content="Worldwide" />
-      <meta name="language" content="English" />
-
-      {/* Geo Location Meta */}
-      <meta name="geo.region" content="IN" />
-      <meta name="geo.region" content="US" />
-      <meta name="geo.region" content="CA" />
-      <meta name="geo.region" content="GB" />
-      <meta name="geo.region" content="AE" />
-      <meta name="geo.region" content="SG" />
-
-      {/* Open Graph Tags */}
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Comfygen Technologies" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:locale:alternate" content="en_CA" />
-      <meta property="og:locale:alternate" content="en_GB" />
-      <meta property="og:locale:alternate" content="en_SG" />
-      <meta property="og:locale:alternate" content="en_AE" />
       <meta
         property="og:url"
         content="https://www.comfygen.com/defi-development-company"
@@ -739,14 +678,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

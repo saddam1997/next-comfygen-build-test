@@ -7,14 +7,9 @@ import Testimonial from "../components/Testimonials";
 import dynamic from "next/dynamic";
 import HeroSectionForCompany from "../components/HeroSectionForCompany";
 import LazyLoad from "react-lazy-load";
-export default function Altcoin(props) {
+export default function Altcoin(props:any) {
   let { initialData } = props;
-  const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-    loading: () => <p>Loading...</p>,
-  });
-  const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-    loading: () => <p>Loading...</p>,
-  });
+
   const Header = dynamic(() => import("../components/Header"), {
     loading: () => <p>Loading...</p>,
   });
@@ -99,17 +94,9 @@ export default function Altcoin(props) {
 
         </div>
         <Testimonial />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
 }
-export async function getServerSideProps({ req, res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

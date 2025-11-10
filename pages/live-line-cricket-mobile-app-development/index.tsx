@@ -1,59 +1,27 @@
-import Image from "next/image";
 import React, { useRef, useState } from "react";
-import { MdLiveTv, MdOutlineScore, MdOutlinePoll } from "react-icons/md";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { RiCustomerServiceLine } from "react-icons/ri";
-import { BsDot } from "react-icons/bs";
-import { CiMobile2 } from "react-icons/ci";
-import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
-import { BiSupport } from "react-icons/bi";
-import { VscMultipleWindows } from "react-icons/vsc";
-import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/livelinecricketmobile.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import InfoSectionRight from "../components/InfoSectionRight";
 import SolutionSec from "../components/SolutionSec";
-import { IconAdjustments, IconBell, IconBook, IconBookmark, IconBulb, IconCalendarEvent, IconCamera, IconClipboardCheck, IconClock, IconCoin, IconFileSpreadsheet, IconFileText, IconGlobe, IconHistory, IconLivePhoto, IconMessageCircle, IconNews, IconNotification, IconTrendingUp, IconUsers, } from '@tabler/icons-react';
-import { IconChartBar, } from '@tabler/icons-react';
+import {IconBell, IconBulb, IconCalendarEvent, IconClock, IconCoin, IconFileSpreadsheet, IconGlobe, IconHistory, IconLivePhoto,  IconNews,  IconTrendingUp, } from '@tabler/icons-react';
 import PortfolioSec from "../components/PortfolioSec";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 
-const CricketCom = dynamic(() => import("../components/CricketCom"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -323,50 +291,6 @@ export default function Ecommerce(props) {
 
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
         <ContactFromCenter />
-
-
-        {/* <div className="py-10 bg-gray-100">
-          <section className="items-center w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 lg:flex lg:space-x-10 md:space-y-0">
-            <div className="flex justify-center w-full">
-              <Image
-                src="https://www.comfygen.com/img/mobile-cricket-app.webp"
-                alt=" Develop the most downloaded mobile cricket app"
-                className="rounded-md pb-10 lg:pb-0"
-                width={300}
-                height={300}
-                loader={uploadcareLoader}
-                unoptimized={true}
-              />
-            </div>
-            <div className="w-full space-y-6 text-left">
-              <div className="space-y-4">
-                <h2 className="xl:text-4xl text-3xl font-bold text-[#0E1F51] ">
-                  Develop the most downloaded mobile cricket app
-                </h2>
-              </div>
-              <p className="text-base text-black ">
-                {`The three keys to success in cricket are performance, precision, and perseverance. A live line cricket mobile app would be appreciated by countless cricket fans around the world. With features such as real-time live line updates, live commentary, multiple sport live lines, expert polls, public polls, and live chat, cricket enthusiasts can experience the same thrill they would get sitting in the stands of a cricket stadium.`}
-              </p>
-              <div className="flex items-center justify-start p-4 space-x-6 bg-white rounded-lg">
-                <div className="p-2 bg-blue-100 rounded-lg">
-                  <RiCustomerServiceLine className="text-[3.5rem] text-blue-500 " />
-                </div>
-                <div>
-                  <h3 className="text-[#0E1F51] text-lg font-extrabold ">
-                    Get Instant Professional Advice
-                  </h3>
-                  <p className="text-sm">
-                    Ready to Help :
-                    <span className="font-bold text-blue-600">
-                      <a href="tel:9587867258"> +91 9587867258</a>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div> */}
-
     
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -417,18 +341,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

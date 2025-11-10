@@ -1,25 +1,19 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import IndustriesServe from "../components/IndustriesServe";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconBrandSpeedtest, IconClock, IconCloudSearch, IconCode, IconDatabase, IconExchange, IconFileText, IconJewishStar, IconLink, IconLoadBalancer, IconLock, IconLockOpen, IconSettings, IconShield, IconShieldCheck, IconWallet, } from '@tabler/icons-react';
+import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ServicesSec from "../componentsnew/ServicesSec";
@@ -28,35 +22,20 @@ import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const technologyData = [
   {
@@ -255,25 +234,7 @@ export default function Ecommerce(props) {
     ],
   };
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+    
 
     {
       "@context": "https://schema.org",
@@ -662,18 +623,9 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

@@ -295,29 +295,14 @@ export default function Ecommerce(props) {
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="subtitle" content="Best Basketball Live Line API" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:country-name" content="India, USA, UK, UAE" />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
+       
         <meta
           property="og:type"
           content="Basketball Live Line API Services Provider"
         />
 
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Private Limited" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
+        
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
         <meta property="og:image:type" content="image/webp" />
@@ -473,13 +458,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

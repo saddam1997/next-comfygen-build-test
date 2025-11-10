@@ -4,7 +4,43 @@
     "decs": "Comfygen specializes in offering unique e-commerce development services as an android ecommerce app development and mobile ecommerce app development . We are aware of how crucial it is to create scalable, highly reliable solutions in order to improve consumer interaction and spur growth for your e-commerce company. In order to understand your unique requirements and develop solutions that suit your business goals, our team of professionals will collaborate directly with you. We have the knowledge and experience to produce outstanding outcomes whether you require an e-commerce mobile app, a web-based e-commerce platform, or both. So what’s holding you bak hire us today we are the best ecommerce app and web development company in india. "
   },
 
-
+"Process":[
+  {
+    "title": "Branded Career Page Development",
+    "description":
+      "We create custom branded career pages that reflect your company’s identity and values. These pages are optimized for SEO, mobile responsiveness, and conversion, helping attract top talent and improve employer branding."
+  },
+  {
+    "title": "Text Recruiting & QR Code-Based Applications",
+    "description":
+      "Enable mobile-first recruitment with text-based application systems and QR code job access. Our solutions simplify job applications for candidates and expand your outreach via offline channels and print ads."
+  },
+  {
+    "title": "Conversational AI Chatbot for Initial Screening",
+    "description":
+      "Our AI-driven chatbots conduct real-time pre-screening interviews, answer FAQs, and collect candidate data—all while engaging applicants in a conversational, human-like manner. Save recruiter time and enhance user experience."
+  },
+  {
+    "title": "Talent Community and Referral Program Integration",
+    "description":
+      "We integrate talent community platforms and employee referral systems to help you build a proactive hiring pipeline. These tools nurture passive candidates and encourage internal engagement in your recruitment efforts."
+  },
+  {
+    "title": "Onboarding, Training, and Compliance Tools",
+    "description":
+      "Simplify new hire integration with automated onboarding systems that include document management, training modules, and I-9 compliance tools. Reduce manual errors while ensuring legal and HR policy alignment."
+  },
+  {
+    "title": "Applicant Tracking System (ATS) Integration",
+    "description":
+      "We ensure seamless ATS integration with platforms like Greenhouse, Workable, and Bullhorn, streamlining your workflow and enabling centralized candidate tracking and data management."
+  },
+  {
+    "title": "Campaign-Based Hiring & Analytics",
+    "description":
+      "Run targeted hiring campaigns across job boards, social media, and your website, and track performance with real-time hiring analytics dashboards to make informed, data-driven recruitment decisions."
+  }
+],
 
   
   "Frequently": [
@@ -48,8 +84,110 @@
       "title": "How long does it take to build an AI Interview Scheduling App?",
       "desc": "Development timelines usually range between 10 to 24 weeks, based on the project scope, platform (web/mobile), AI functionality, and integrations. Simple versions may take less time, while enterprise-grade solutions with ATS/HRMS integrations and custom AI features require longer development and testing cycles for best performance and security."
     }
+  ],
+
+"CardGridData" :[
+  {
+    "img": "<IconRobot stroke={1.5} className='w-12 h-12'/>",
+    "title": "AI-Based Smart Scheduling",
+    "desc": "Our AI-powered interview scheduling software uses intelligent algorithms to automatically match interviewers and candidates based on availability, priority, and role fit. This eliminates manual coordination and reduces time-to-hire. Ensure faster and smarter scheduling with AI that adapts to real-time changes and ensures maximum efficiency across your hiring process.",
+    "listItems": []
+  },
+  {
+    "img":" <IconRefresh stroke={1.5} className='w-12 h-12'/>",
+    "title": "Self-Rescheduling Options for Candidates",
+    "desc": "Give candidates the flexibility they expect with self-rescheduling interview software features. Our platform allows applicants to independently modify their interview slots based on real-time availability, reducing back-and-forth communication. This seamless, automated rescheduling improves candidate experience while freeing up recruiters to focus on evaluating talent, not managing calendars.",
+    "listItems": []
+  },
+  {
+    "img": "<IconBrain stroke={1.5} className='w-12 h-12'/>",
+    "title": "Smart Job Recommendations",
+    "desc": "Enhance your recruitment strategy with AI-driven smart job recommendation systems built into the scheduling app. By analyzing candidate skills, past roles, and job descriptions, our platform automatically suggests the most relevant positions, increasing the likelihood of successful matches and improving both candidate engagement and recruiter efficiency.",
+    "listItems": []
+  },
+  {
+    "img": "<IconMail stroke={1.5} className='w-12 h-12'/>",
+    "title": "Automated Email & SMS Notifications",
+    "desc": "Keep your interview process on track with automated email and SMS notifications. Our AI interview scheduling software sends branded, personalized reminders to candidates and interviewers, reducing no-shows and improving communication. Stay consistent, timely, and professional with every interaction through automation that enhances engagement and trust.",
+    "listItems": []
+  },
+  {
+    "img": "<IconTools stroke={1.5} className='w-12 h-12'/>",
+    "title": "Interview Kits & Task Automation",
+    "desc": "Empower hiring teams with customizable interview kits and task automation tools. Interviewers receive role-specific documents, questions, and evaluation criteria automatically, ensuring a consistent and structured interview experience. Combine this with automated post-interview tasks like feedback collection to streamline every step of the recruitment process.",
+    "listItems": []
+  },
+  {
+    "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>",
+    "title": "Support for All Interview Types",
+    "desc": "Our platform supports various interview types including virtual, in-person, hybrid, round-robin, and panel interviews. Easily schedule and manage complex formats with built-in tools that adapt to your organization's unique needs. Whether you're scaling remote hiring or managing on-site interviews, we provide the flexibility modern teams demand.",
+    "listItems": []
+  }
+],
+
+
+ "latesttech":[
+  {
+    "img": "<IconVideo stroke={1.5} className='w-12 h-12' />",
+    "title": "Live and Recorded Video Interviews",
+    "desc": "Our AI Interview Scheduling App Development includes built-in live and asynchronous video interview capabilities, allowing recruiters to screen candidates efficiently. Recorded interviews help teams review answers on their own time, improving collaboration and decision-making."
+  },
+  {
+    "img": "<IconUsersGroup stroke={1.5} className='w-12 h-12'/>",
+    "title": "Collaborative Review and Feedback Tools",
+    "desc": "Enable real-time evaluation and annotation of candidate responses with shared scoring rubrics, comments, and approval workflows. Your hiring team can work together seamlessly, ensuring faster and more accurate hiring decisions."
+  },
+  {
+    "img": "<IconDeviceGamepad2 stroke={1.5} className='-12 h-12'/>",
+    "title": "Kanban-Style Pipeline Management",
+    "desc": "Visualize and manage your hiring process with Kanban-style candidate tracking boards. Easily drag and drop applicants across stages, set reminders, and assign tasks—making your hiring pipeline smart and intuitive."
+  },
+  {
+    "img": "<IconLanguage stroke={1.5} className='-12 h-12'/>",
+    "title": "Multilingual Support",
+    "desc": "Our Automated Interview Scheduling App Development includes multilingual capabilities, delivering a localized and inclusive experience for global candidates and remote teams."
+  },
+  {
+    "img": "<IconBrain stroke={1.5} className='-12 h-12'/>",
+    "title": "Candidate Response Tracking (Text, MCQs, Video)",
+    "desc": "Track and assess diverse response formats, including text answers, multiple-choice questionnaires, and video responses, to evaluate candidates more holistically with AI-assisted insights and smart scoring."
+  }
+],
+
+"techDataForPage1" : {
+  "All": [
+    {
+      "img": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio1.webp",
+      "head": "Smart Interview Scheduler for Enterprises",
+      "name": "This enterprise-grade AI interview scheduling platform was developed for a Fortune 500 company to manage high-volume recruitment. It features AI-generated questions from resumes, smart job matching, calendar sync, and self-scheduling—all within a secure, GDPR-compliant environment.",
+      "num": "1",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "#"
+    },
+    {
+      "img": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio2.webp",
+      "head": "AI-Powered Interview Coordination Tool for Startups",
+      "name": "Designed for growing teams, this startup-focused interview coordination app enables recruiters to automate scheduling, send branded invites, and identify workflow bottlenecks. Its mobile-first design ensures accessibility for both candidates and recruiters on the go.",
+      "num": "2",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "#"
+    }
   ]
-,
+},
+
+
   
   "myList1": [
     "Super-easy onboarding",

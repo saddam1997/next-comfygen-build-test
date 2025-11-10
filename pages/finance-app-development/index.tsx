@@ -4,10 +4,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
 import WildSolution from "../components/WildSolution";
 import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import ProcessSec from "../components/ProcessSec";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../componentsnew/AboutSection";
@@ -508,18 +506,8 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

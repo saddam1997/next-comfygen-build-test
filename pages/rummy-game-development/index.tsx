@@ -2,33 +2,22 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { BsFillStarFill } from "react-icons/bs";
-import { ImArrowUpRight2 } from "react-icons/im";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rummy.json";
-import Link from "next/link";
-import ContactUsButton from "../components/ContactUsButton";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import InfoSectionRight from "../components/InfoSectionRight";
 import CallToAction from "../components/CallToAction";
 import CardItem from "../components/CardItem";
 import ProcessSec from "../components/ProcessSec";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import ModelsSec from "../components/ModelsSec";
 import SolutionSec from "../components/SolutionSec";
 import { IconAdjustmentsStar, IconBubbleText, IconClock, IconDeviceGamepad2, IconLock, IconMoneybag, IconShare, IconShieldCheck, IconTrophy, IconUserCircle } from '@tabler/icons-react';
-
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -723,17 +712,7 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title=" Rummy Game Development Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

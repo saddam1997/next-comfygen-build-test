@@ -11,7 +11,6 @@ import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import LatestTechnology from "../components/LatestTechnology";
@@ -376,22 +375,7 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <BlockchainNav/>
       <div className="overflow-hidden ">
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/substrate-development-company.webp')]">
-              <HeroSectionForAllPages
-                heading="Power Your Blockchain Vision with Expert Substrate Development Services"
-                ptag="No matter how complex your Substrate blockchain requirements are, our Substrate Blockchain Development Company is ready to deliver seamless solutions tailored to your needs. We leverage the Substrate SDK framework's flexibility, modularity, and interoperability, powered by Rust, to build scalable, customized, and future-ready decentralized apps and blockchains. With a proven track record of over 200 digital solutions and 50 blockchain projects, our Expert brings the expertise you need to succeed in the blockchain space & Blockchain Consulting."
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
+    
         <HeroSectionForAllPages
             heading=" Substrate Blockchain Development Services to Power Your Next-Gen Projects"
             ptag="No matter how complex your Substrate blockchain requirements are, our Substrate Blockchain Development Company is ready to deliver seamless solutions tailored to your needs. We leverage the Substrate SDK framework's flexibility, modularity, and interoperability, powered by Rust, to build scalable, customized, and future-ready decentralized apps and blockchains. With a proven track record of over 200 digital solutions and 50 blockchain projects, our Expert brings the expertise you need to succeed in the blockchain space & Blockchain Consulting."
@@ -501,18 +485,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

@@ -17,7 +17,6 @@ import IndustriesServe from '../componentsnew/IndustriesServe';
 import WhyChoose from '../componentsnew/WhyChooseUs';
 import HireDeveloper from '../componentsnew/HireDeveloper';
 import Faq from '../componentsnew/Faq';
-import BlogSection from '../componentsnew/BlogSection';
 import LazyLoad from 'react-lazy-load';
 
 const schema = {
@@ -303,19 +302,9 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
 
 
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

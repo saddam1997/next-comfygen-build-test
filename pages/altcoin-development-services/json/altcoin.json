@@ -34,6 +34,62 @@
       "description": "Post-launch, we provide ongoing support and maintenance, monitoring performance, updating features, and keeping your app aligned with market trends."
     }
   ],
+
+"techDataForPage1" : {
+  "All": [
+    {
+      "img": "https://www.comfygen.com/img/altcoin-coin-development-company.webp",
+      "head": "Altcoin & coin creation Company",
+      "name": "Do you have a passion for crypto? Let's get started! Integrate cutting-edge blockchain technologies with superior security to increase the value and tradeability of your altcoin. Providing",
+      "num": "1",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "/portfolio/aria-coin-details"
+    },
+    {
+      "img": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "head": "NASDAC Crypto Coin",
+      "based": "Blockchain-based Cryptocoin Development",
+      "name": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "num": "1",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "/portfolio/blockchain-based-cryptocoin-development"
+    },
+    {
+      "img": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "head": "M7 Coin",
+      "based": "Blockchain-based Cryptocoin Development",
+      "name": "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
+      "num": "1",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "/portfolio/m7-coin"
+    }
+
+  ]
+},
+
+
+
+
+
+
   "pageData": {
     "title": "Why Should You Choose Comfygen for Altcoin Creation?",
     "description": "At Comfygen, we don’t just develop altcoins—we build future-ready digital assets tailored to your business vision. Our approach combines deep blockchain expertise with a client-centric focus to deliver scalable, secure, and high-performance altcoin solutions. Whether you're a startup exploring the crypto space or an enterprise looking to expand your blockchain ecosystem, we help you create a token that stands out in a competitive market.",

@@ -1,24 +1,17 @@
 import React, { useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { BsSearch } from "react-icons/bs";
 import Head from "next/head";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { TbMicroscope } from "react-icons/tb";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { BiSupport } from "react-icons/bi";
-import { GiContract } from "react-icons/gi";
-import { CgSmartHomeCooker, CgSmartphoneChip } from "react-icons/cg";
+
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/defismart.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import WhyChoosee from "../components/WhyChooseUs";
@@ -26,28 +19,11 @@ import ProcessSec from "../components/ProcessSec";
 import ModelsSec from "../components/ModelsSec";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhyChoose = dynamic(() => import("../components/WhyChoose"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -367,18 +343,7 @@ export default function MultiChain(props) {
           faqData={JSON_DATA.Frequently}
           title=" DeFi Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

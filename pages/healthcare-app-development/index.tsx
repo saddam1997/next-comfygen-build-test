@@ -422,8 +422,6 @@ const jsonLdData = [
     }]
   }
 
-
-
 ];
 
 

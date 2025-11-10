@@ -1,15 +1,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stellar.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import ConnectWithExpertButton from "../components/button/ConnectWithExpertButton";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
@@ -19,40 +14,24 @@ import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
 import ModelsSec from "../components/ModelsSec";
-import BlogSection from "../components/BlogSection";
 import LatestTechnology from "../components/LatestTechnology";
-import { IconArrowsShuffle2, IconCode, IconGlobe, IconPercentage10, IconShieldCheck, IconTax, } from '@tabler/icons-react';
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ServicesSec from "../componentsnew/ServicesSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const Process = [
   {
@@ -567,23 +546,6 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <BlockchainNav />
       <div className="overflow-hidden">
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/stellar-blockchain-development-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Stellar Blockchain Development Company in India"
-                ptag="We are helping clients adopt the efficacies of Stellar blockchain and scale their capacities in terms of security, privacy, operational efficiency, and scalability."
-                ptag1="Comfygen, the best Stellar blockchain development company, offers you the utmost expertise in developing projects. With us at your back, you will be able to build dedicated DeFi development solutions. Stellar blockchain is considered a decentralized concept that facilitates the transaction and creation of money in its digital representations. we help you create a secured financial workflow and dedicated FinTech apps alongside custom payment applications."
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
         <HeroSectionForAllPages
           heading="Stellar Blockchain Development Company"
           ptag="Comfygen, a leading Stellar Blockchain Development Company, helps enterprises build AI-powered decentralized applications, tokenized assets, and secure financial ecosystems. Stellar’s fast, low-cost network is ideal for cross-border payments, stablecoin development, and enterprise-level blockchain integration. Our Stellar Blockchain Development expert specializes in  AI Stellar wallet development, DApp creation, and smart contract development solutions that drive transparency and efficiency. By combining Stellar blockchain with AI and automation, we deliver scalable, future-ready applications tailored to fintech, banking, and global business needs."
@@ -618,18 +580,6 @@ export default function Ecommerce(props) {
           title="Our Stellar Blockchain Development Services"
           description="Comfygen, Best Ai stellet blockchain development company, we deliver end-to-end Stellar Blockchain Development Services enhanced with AI, Generative AI, and Agentic AI solutions to build next-generation decentralized applications. From Stellar wallet development to token creation, stablecoin integration, and DeFi platforms, we craft secure, scalable, and intelligent solutions tailored for fintech, banking, and global enterprises. "
         />
-
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Stellar Blockchain Development Services</h2>
-              <p className="text-base text-center font-normal">Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and <a className="text-blue-600" href="/mobile-app-development">mobile app development</a>  services. As a leading Stellar Blockchain Development Company, we provide innovative Stellar Blockchain Development Solutions to help businesses leverage blockchain technology for secure and efficient operations.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section> */}
         <LatestTechnology
           heading="AI Solutions in Stellar Blockchain Development"
           techData={technologyData}
@@ -697,19 +647,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

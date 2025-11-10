@@ -3,11 +3,9 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import LazyLoad from "react-lazy-load";
 import HireDeveloper from "../../components/HireDeveloper";
 import WhyChoose from "../../components/WhyChooseUs";
 import Faq from "../../components/Faq";
-import BlogSection from "../../components/BlogSection";
 import ProcessSec from "../../components/ProcessSec";
 import ClientTestimonials from "../../components/ClientTestimonials";
 import PortfolioSlider from "../../components/PortfolioSlider";
@@ -17,10 +15,6 @@ import ServicesSec from "../../componentsnew/ServicesSec";
 import IndustriesServe from "./components/IndustriesServe";
 
 import Header from "../../components/Header";
-// const Header = dynamic(() => import("../../components/Header"), {
-//   ssr: false,
-//   loading: () => <p>Loading...</p>,
-// });
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {
@@ -173,15 +167,7 @@ export default function Mobile(props) {
           content="https://www.comfygen.com/comfygen-images/tableau-consulting-services/og.webp"
         />
         <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Data Analytics Services" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
+     
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -575,14 +561,4 @@ export default function Mobile(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

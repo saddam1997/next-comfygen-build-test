@@ -5,16 +5,13 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
 import { IconBallpen, IconBook, IconBrain, IconLock, IconSchool, IconUsers, } from '@tabler/icons-react';
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
 import Script from "next/script";
-import PortfolioSecs from "../components/PortfolioSec";
 import AdminUserPanel from "./components/AdminUserPanel";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
@@ -28,9 +25,6 @@ const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
@@ -107,49 +101,6 @@ const technologyData = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/swipe-based-dating-app.webp",
-      head: "Corporate Training App",
-      name: "We developed an intuitive eLearning platform for corporate training, featuring interactive lessons, real-time progress tracking, and assessment tools. The app enabled employees to complete training modules at their own pace, fostering skill development and certification. It streamlined internal training, improving employee engagement and overall productivity.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/match-making-datingapp.webp",
-      head: "Language Learning App",
-      name: "Our team created a dynamic language learning app that combines voice recognition, interactive exercises, and gamified challenges. The app offers real-time feedback, making learning fun and effective. It empowers users to learn multiple languages at their own pace, offering personalized lessons and learning progress tracking.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/lgbtq-dating-app.webp",
-      head: "Online Course Marketplace",
-      name: "We designed a powerful online course marketplace that connects educators with students. The platform supports live classes, video lectures, and certification. Features like content management, payment processing, and instructor dashboards make it easy to offer and manage courses. The app provides a comprehensive learning experience for all users.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -542,14 +493,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

@@ -175,6 +175,12 @@ const BlockchainSer = [
     url: "/ethereum-blockchain-development-company",
   },
 ];
+
+
+
+
+
+
 const coin = [
   {
     num: "1",
@@ -330,94 +336,66 @@ const Blockchain = [
     name: "Taxi App Development",
     url: "/taxi-app-development-company",
   },
+  // {
+  //   num: "7",
+  //   name: "Dating App Development",
+  //   url: "/dating-app-development",
+  // },
   {
     num: "7",
-    name: "Dating App Development",
-    url: "/dating-app-development",
-  },
-  {
-    num: "8",
     name: " Astrology App Development",
     url: "/astrology-app-development",
   },
   {
-    num: "9",
+    num: "8",
     name: "Ice Cream Delivery Aapp Development",
     url: "/ice-cream-delivery-app-development",
   },
   {
-    num: "10",
+    num: "9",
     name: "Fuel Delivery App Development",
     url: "/fuel-delivery-app-development",
   },
-
-
-
-
-
 ];
 
 const Blockchain1 = [
   {
-    num: "11",
+    num: "10",
     name: "Salon App Development",
     url: "/salon-app-development",
   },
   {
-    num: "12",
+    num: "11",
     name: "Business Directory App Development",
     url: "/business-directory-app-development",
   },
   {
-    num: "13",
+    num: "12",
     name: "Logistics App Development",
     url: "/logistics-app-development",
   },
   {
-    num: "14",
+    num: "13",
     name: "Home Service App Development",
     url: "/home-service-app-development",
   },
-  {
-    num: "15",
-    name: "Tutor App Development",
-    url: "/tutor-app-development",
-  },
-
 
   {
-    num: "16",
-    name: "Language learnig App Development",
-    url: "/language-learning-app-development",
-  },
-  {
-    num: "17",
-    name: "Exam Preparation App Development",
-    url: "/exam-preparation-app-development",
-  },
-  {
-    num: "18",
+    num: "14",
     name: "Meat Delivery App Development",
     url: "/meat-delivery-app-development",
   },
 
   {
-    num: "19",
+    num: "15",
     name: "Alcohol Delivery App Development",
     url: "/alcohol-delivery-app-development",
   },
   {
-    num: "20",
+    num: "16",
     name: "Courier Delivery App Development",
     url: "/courier-delivery-app-development",
   },
-
-
-
-
-
-
-
 ]
 
 const Finance = [
@@ -459,37 +437,39 @@ const Finance = [
   },
 
   {
-    num: "10",
+    num: "8",
     name: "Islamic Banking App Development",
     url: "/islamic-bank-app-development",
   },
-  {
-    num: "11",
-    name: "Stock Trading App Development",
-    url: "/stock-trading-app-development",
-  },
+
+
+]
+
+
+const Finance1 = [
 
   {
-    num: "12",
+    num: "8",
     name: "Credit Scoring App Development",
     url: "/credit-scoring-app-development",
   },
   {
-    num: "13",
+    num: "9",
     name: "P2P Payment App Development",
     url: "/p2p-payment-app-development",
   },
   {
-    num: "14",
+    num: "10",
     name: "Car Finance App Development",
     url: "/car-finance-app-development",
   },
   {
-    num: "15",
+    num: "11",
     name: "Truck Finance App Development",
     url: "/truck-finance-app-development",
   },
 ]
+
 
 const Metaverse = [
   {
@@ -546,6 +526,52 @@ const Token = [
   },
 
 ];
+
+// add new array navitem my madhusudan
+const EcommerceApp = [
+  {
+    num: "1",
+    name: "Ecommerce App Development",
+    url: "/e-commerce-app-development",
+  },
+  {
+    num: "2",
+    name: "Fashion App Development",
+    url: "/ecommerce/fashion",
+  },
+
+]
+
+
+const EducationApp = [
+  {
+    num: "1",
+    name: "Education App Development",
+    url: "/ca/education-app-development-company",
+  },
+
+  {
+    num: "2",
+    name: "E-Learning App Development",
+    url: "/e-learning-app-development",
+  },
+  {
+    num: "3",
+    name: "Tutor App Development",
+    url: "/tutor-app-development",
+  },
+  {
+    num: "4",
+    name: "Language learnig App Development",
+    url: "/language-learning-app-development",
+  },
+
+  {
+    num: "5",
+    name: "Exam Preparation App Development",
+    url: "/exam-preparation-app-development",
+  },
+]
 
 const Other = [
   {
@@ -1151,6 +1177,8 @@ export default function DesktopNav(props: any) {
                   </span>
                 </Link>
               </div>
+
+              {/* Services */}
               <div
                 className=" group "
                 onMouseEnter={() => setActiveTab("Tab1")}
@@ -1251,7 +1279,6 @@ export default function DesktopNav(props: any) {
                             </div>
                           </li>
 
-
                           <li
                             onClick={() => handleTabClick("Tab3")}
                             className={
@@ -1276,7 +1303,8 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
-                          <li
+
+                          {/* <li
                             onClick={() => handleTabClick("Tab4")}
                             className={
                               activeTab === "Tab4"
@@ -1298,7 +1326,8 @@ export default function DesktopNav(props: any) {
                                 Transforming Healthcare with Smart Apps{" "}
                               </span>
                             </div>
-                          </li>
+                          </li> */}
+
                           <li
                             onClick={() => handleTabClick("Tab5")}
                             className={
@@ -1322,6 +1351,7 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
+
                           <li
                             onClick={() => handleTabClick("Tab6")}
                             className={
@@ -1540,8 +1570,10 @@ export default function DesktopNav(props: any) {
                   </div>
                 </div>
               </div>
+
+              {/* Solutions */}
               <div
-                className=" group  "
+                className="group"
                 onMouseEnter={() => setActiveTab("Tab1")}
               >
                 <button
@@ -1606,7 +1638,7 @@ export default function DesktopNav(props: any) {
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
                                 <Link
-                                  href="/#"
+                                  href="/blockchain-development"
                                   className="flex items-start gap-2"
                                 >
                                   Blockchain Solution
@@ -1686,7 +1718,8 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
-                          <li
+
+                          {/* <li
                             onClick={() => handleTabClick("Tab6")}
                             className={
                               activeTab === "Tab6"
@@ -1708,7 +1741,7 @@ export default function DesktopNav(props: any) {
                                 Transforming Financial Ideas into Apps
                               </span>
                             </div>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                       <div className="space-y-10">
@@ -1737,7 +1770,7 @@ export default function DesktopNav(props: any) {
                             </ul>
                           )}
 
-
+11111111111111111111111111111
                           {activeTab === "Tab2" && (
                             <ul className="text-sm font-medium space-y-2">
                               {Other.map((elem: any, index: any) => {
@@ -1754,7 +1787,7 @@ export default function DesktopNav(props: any) {
                                       href={url}
                                       passHref={true}
                                     >
-                                      {name}
+                                    {url}  {name}
                                     </Link>
                                   </li>
                                 );
@@ -1831,29 +1864,7 @@ export default function DesktopNav(props: any) {
                               })}
                             </ul>
                           )}
-                          {activeTab === "Tab6" && (
-                            <ul className="text-sm font-medium space-y-2">
-                              {Finance.map((elem: any, index: any) => {
-                                const { name, num, url } = elem;
-                                return (
-                                  <li
-                                    key={index}
-                                    className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                  >
-                                    <Link
-                                      onClick={() =>
-                                        setShowNav(showNav === 1 ? 0 : 1)
-                                      }
-                                      href={url}
-                                      passHref={true}
-                                    >
-                                      {name}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          )}
+                          
                         </div>
                       </div>
 
@@ -1937,10 +1948,318 @@ export default function DesktopNav(props: any) {
                   </div>
                 </div>
               </div>
-              <div className="group z-40 ">
+
+              {/* add new section industries by madhusudan 12-11-2025*/}
+              <div
+                className=" group  "
+                onMouseEnter={() => setActiveTab("Tab1")}
+              >
+                <button
+                  onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
+                  className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
+                >
+                  <span
+                    className={
+                      showNav === 2 ? "  font-medium " : " font-medium "
+                    }
+                  >
+                    Industries
+                  </span>
+                  <MdKeyboardArrowDown
+                    className="hover:text-black/100 text-black/80"
+                    size={18}
+                  />
+                </button>
+                <div className="z-40 lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl bg-transparent capitalize    text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap relative left-0 transform hidden group-hover:block   transition duration-200 ease-in-out origin-top  w-full ">
+                  {/* <div className="absolute -top-2 2xl:inset-x-[29rem] xl:inset-x-[29rem]   bg-white rotate-45   w-4 h-4"></div> */}
+                  <div className="2xl:p-10 p-5 mx-auto text-sm">
+                    <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+                      <div className="">
+                        <ul className="space-y-2">
+                          <li
+                            onClick={() => handleTabClick("Tab1")}
+                            className={
+                              activeTab === "Tab1"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/image/healthcare-app-dev-header-icon.svg"
+                              alt="Healthcare App Development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-3 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Healthcare App Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Transforming Healthcare with Smart Apps
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            onClick={() => handleTabClick("Tab2")}
+                            className={
+                              activeTab === "Tab2"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/astrology-app-development/finance.svg"
+                              alt="Web3 Development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-4 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Finance App Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Transforming Financial Ideas into Apps
+                              </span>
+                            </div>
+                          </li>
+
+
+                          <li
+                            onClick={() => handleTabClick("Tab3")}
+                            className={
+                              activeTab === "Tab3"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/navbar/education-app-development.svg"
+                              alt="education-app-development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-4 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Education App Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Customized Applications for Every Industry
+                              </span>
+                            </div>
+                          </li>
+
+                          <li
+                            onClick={() => handleTabClick("Tab4")}
+                            className={
+                              activeTab === "Tab4"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/navbar/ecommerce-development.svg"
+                              alt="ecommerce-development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-4 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Ecommerce Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Empowering Seamless Online Shopping
+                              </span>
+                            </div>
+                          </li>
+
+                          <Link
+                            onClick={() => handleTabClick("Tab5")}
+
+                            href="/dating-app-development"
+                            className={
+                              activeTab === "Tab5"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/navbar/dating-app-development.svg"
+                              alt="dating-app-development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-4 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Dating App Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Smart Solutions for Digital Romance
+                              </span>
+                            </div>
+                          </Link>
+
+                        </ul>
+                      </div>
+                      <div className="space-y-10">
+                        <div>
+                          {activeTab === "Tab1" && (
+                            <ul className="text-sm font-medium space-y-2">
+                              {Healthcare.map((elem: any, index: any) => {
+                                const { name, num, url } = elem;
+                                return (
+                                  <li
+                                    key={index}
+                                    className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                                  >
+                                    <Link
+                                      onClick={() =>
+                                        setShowNav(showNav === 2 ? 0 : 2)
+                                      }
+                                      href={url}
+                                      passHref={true}
+                                    >
+                                      {name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+
+
+                          {activeTab === "Tab2" && (
+                            <ul className="text-sm font-medium space-y-2">
+                              {Finance.map((elem: any, index: any) => {
+                                const { name, num, url } = elem;
+                                return (
+                                  <li
+                                    key={index}
+                                    className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                                  >
+                                    <Link
+                                      onClick={() =>
+                                        setShowNav(showNav === 2 ? 0 : 2)
+                                      }
+                                      href={url}
+                                      passHref={true}
+                                    >
+                                      {name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+
+                          {activeTab === "Tab3" && (
+                            <ul className="text-sm font-medium space-y-2">
+                              {EducationApp?.map((elem: any, index: any) => {
+                                const { name, num, url } = elem;
+                                return (
+                                  <li
+                                    key={index}
+                                    className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                                  >
+                                    <Link
+                                      onClick={() =>
+                                        setShowNav(showNav === 2 ? 0 : 2)
+                                      }
+                                      href={url}
+                                      passHref={true}
+                                    >
+                                      {name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                          {activeTab === "Tab4" && (
+                            <ul className="text-sm font-medium space-y-2">
+                              {EcommerceApp.map((elem: any, index: any) => {
+                                const { name, num, url } = elem;
+                                return (
+                                  <li
+                                    key={index}
+                                    className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                                  >
+                                    <Link
+                                      onClick={() =>
+                                        setShowNav(showNav === 2 ? 0 : 2)
+                                      }
+                                      href={url}
+                                      passHref={true}
+                                    >
+                                      {name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+
+
+                        </div>
+                      </div>
+
+
+
+                       <div className={`${activeTab === "Tab2" ? "" : "hidden"}`}>
+                        {activeTab === "Tab2" && (
+                          <ul className="text-sm font-medium space-y-2">
+                            {Finance1.map((elem: any, index: any) => {
+                              const { name, num, url } = elem;
+                              return (
+                                <li
+                                  key={index}
+                                  className="py-1.5 text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
+                                >
+                                  <Link
+                                    onClick={() =>
+                                      setShowNav(showNav === 2 ? 0 : 2)
+                                    }
+                                    href={url}
+                                    passHref={true}
+                                  >
+                                    {name}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )}
+                      </div> 
+                      <div className={`${activeTab === "Tab5" || activeTab === "Tab2" ? "hidden" : ""}`}>
+                        <a href="/contact-us" className="relative">
+                          <Image
+                            src="https://www.comfygen.com/image/solutions-header-img.webp"
+                            alt=""
+                            height={486}
+                            width={511}
+                          />
+                          <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
+                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
+                              Connect to expert
+                              <Image
+                                src="https://www.comfygen.com/image/button-arrow.svg"
+                                alt=""
+                                height={22}
+                                width={22}
+                              />
+                            </button>
+                          </span>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
-                  className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
+                  className="hidden  items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
                 >
                   <span
                     className={
@@ -2042,7 +2361,9 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+
               <div className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 4 ? 0 : 4)}

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Cryptocurrency from "../components/Cryptocurrency";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { IoStarSharp } from "react-icons/io5";
 import { FaPaperPlane } from "react-icons/fa";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
@@ -13,7 +12,6 @@ import JSON_DATA from "./json/cryptowhitepaper.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import TechStack from "../components/TechStack";
 import CallToAction from "../components/CallToAction";
@@ -25,42 +23,8 @@ import ServicesSec from "../components/ServicesSec";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import InfoSectionRight from "../components/InfoSectionRight";
 import PortfolioSec from "../componentsnew/PortfolioSec";
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const WhyChoose = dynamic(() => import("../components/WhyChoose"), {
-  loading: () => <p>Loading...</p>,
-});
-const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
@@ -112,7 +76,7 @@ const Services = [
   },
 ];
 
-export default function MultiChain(props:any) {
+export default function MultiChain(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -122,65 +86,6 @@ export default function MultiChain(props:any) {
     setTalkToExpertModal(false);
   };
 
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What makes a well-written white paper essential for a successful project?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A well-written white paper is essential because it acts as a comprehensive guide to your project, explaining complex concepts clearly. It builds trust with investors by demonstrating transparency, credibility, and a clear vision. A strong white paper sets the foundation for successful fundraising and investor interest in your project."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does Comfygen’s approach to white paper development stand out from others?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Comfygen’s approach to white paper development focuses on a deep understanding of your project’s goals, combining technical expertise with clear, engaging writing. We ensure every document is tailored to your audience, whether they are investors, developers, or the general public, offering both technical accuracy and readability."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Comfygen assist with the visual design of my white paper?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! Comfygen not only handles the writing but also offers white paper design services to ensure that the document is visually appealing. Our team focuses on creating a professional, polished document that enhances readability, draws attention to key sections, and aligns with your branding."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I ensure my white paper appeals to potential investors?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "To appeal to investors, your white paper must combine technical details with clear, concise language that highlights the unique value proposition of your project. At Comfygen, we focus on addressing investor concerns, such as potential returns, project scalability, and the problem-solving aspects of your offering."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries benefit the most from having a white paper?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Industries such as blockchain, cryptocurrency, fintech, healthcare, and technology benefit greatly from white papers. These sectors require clear, well-researched documents that explain complex technical details and help stakeholders understand the value of your innovation. Comfygen specializes in crafting white papers for these cutting-edge industries."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Comfygen help with revisions or updates to an existing white paper?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! Comfygen provides revision and updating services for existing white papers. Whether you need to incorporate new research, refine your messaging, or adapt to industry changes, our team will ensure your white paper remains relevant, effective, and aligned with your current project goals."
-        }
-      }
-    ],
-
-
-
-
-  };
 
   const techDataForPage1 = {
     All: [
@@ -229,25 +134,6 @@ export default function MultiChain(props:any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
 
     {
       "@context": "https://schema.org",
@@ -452,68 +338,7 @@ export default function MultiChain(props:any) {
           href="https://www.comfygen.com/crypto-white-paper-development"
         />
 
-        <meta name="keywords" content="Crypto Whitepaper Writing, Blockchain Whitepaper Development, ICO Whitepaper Writing, DeFi Whitepaper Services, NFT Whitepaper Creation, Tokenomics Documentation, Web3 Project Whitepaper"/>
-
-
-        {/* <!-- Robots → */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-
-        {/* <!-- Compatibility Meta → */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-        {/* <!-- Viewport and Mobile Optimization → */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Whitepaper Writing Solution" />
-
-        {/* <!-- New in iOS6 -->
-    <!-- Author and Company Information --> */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* <!-- SEO Meta --> */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
+        <meta name="keywords" content="Crypto Whitepaper Writing, Blockchain Whitepaper Development, ICO Whitepaper Writing, DeFi Whitepaper Services, NFT Whitepaper Creation, Tokenomics Documentation, Web3 Project Whitepaper" />
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -523,54 +348,12 @@ export default function MultiChain(props:any) {
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
         {/* <!-- Facebook Meta --> */}
-
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-white-paper-development/crypto-whitepaper-writing-services.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-white-paper-development/crypto-whitepaper-writing-services.webp" />
-
-
         <meta property="og:image:alt" content="crypto whitepaper writing services" />
         <meta property="og:url" content="https://www.comfygen.com/crypto-whitepaper-writing-services" />
         <meta property="og:title" content="Expert Crypto Whitepaper Writing Services | Comfygen" />
-        <meta property="og:description" content="Get professionally written crypto whitepapers with Comfygen. Our blockchain experts craft clear, engaging, and investor-ready documents covering tokenomics, technology, and business vision to attract funding and credibility.
-
-"/>
-
-
-        {/* <meta property="og:locale" content="en_US" />
-        <meta name="language" content="en-us" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="Crypto White Paper Development Company | Expert White Paper Services"
-        />
-        <meta
-          property="og:description"
-          content="Looking for Top White Paper Development Services? Comfygen, a Leading White Paper Development Company, Helps You Build Credibility, Attract Investors, and Showcase Your Business Effectively."
-        />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/crypto-white-paper-development"
-        />
-        <meta property="og:site_name" content="Comfygen" />
-        <meta
-          property="article:publisher"
-          content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/"
-        />
-        <meta
-          property="article:modified_time"
-          content="2022-10-13T10:04:03+00:00"
-        />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/comfygen-images/crypto-white-paper-development/crypto-whitepaper-writing-services.webp"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comfygentech" /> */}
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        /> */}
-
+        <meta property="og:description" content="Get professionally written crypto whitepapers with Comfygen. Our blockchain experts craft clear, engaging, and investor-ready documents covering tokenomics, technology, and business vision to attract funding and credibility."/>
 
         <script
           type="application/ld+json"
@@ -719,18 +502,8 @@ export default function MultiChain(props:any) {
           faqData={JSON_DATA.Frequently}
           title="White Paper Development"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

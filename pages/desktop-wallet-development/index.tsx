@@ -2,20 +2,16 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./desktop-wallet-development/taxi.json";
-import styles from "./styles.module.css";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import Features from "./components/Features";
 import ProcessSec from "../components/ProcessSec";
 import PortfolioSlider from "../components/PortfolioSlider";
 import IndustriesServe from "../componentsnew/IndustriesServe";
@@ -26,12 +22,8 @@ import {
   IconBuildingSkyscraper,
   IconBus,
   IconCar,
-  IconHelicopter,
-  IconPackage,
   IconPlane,
   IconShip,
-  IconTruck,
-  IconUsers,
 } from "@tabler/icons-react";
 import SolutionSec from "../componentsnew/SolutionSec";
 // import PortfolioSec from "../componentsnew/PortfolioSec";
@@ -142,143 +134,8 @@ export default function Ecommerce(props) {
 
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",
-        head: "Urban Ride-Hailing Startup",
-        name: "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
-        dec1: "Solution: We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support.",
-        dec2: "Result: The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/ride-hailing-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
-        head: "Corporate Taxi Service Provider",
-        name: "Challenge: A corporate taxi service needed a streamlined solution for employee transportation.",
-        dec1: "Solution: We built a corporate taxi app with features like automated billing, expense tracking, and scheduled rides.",
-        dec2: "Result: Improved efficiency by 40%, with 90% employee satisfaction in ride management.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/corporate-taxi-service-provider",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
-        head: "Eco-Friendly EV Taxi Service",
-        name: "Challenge: A client wanted to launch an EV-based taxi service to promote sustainability.",
-        dec1: "Solution: We created an EV taxi booking app with charging station locators, eco-friendly ride options, and carbon footprint tracking.",
-        dec2: "Result: 20% increase in eco-conscious riders and a 15% reduction in operational costs.",
-        num: "3",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/ev-taxi-service",
-      },
-
-      {
-        img: "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
-        head: "Tourism Taxi Service",
-        name: "Challenge: A tourism company needed a platform for seamless sightseeing and intercity travel.",
-        dec1: "Solution: We developed a tourism taxi app with multi-city booking, tour packages, and multilingual support.",
-        dec2: "Result: 35% increase in tourist bookings and a 25% boost in customer retention.",
-        num: "4",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/tourism-taxi-booking-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
-        head: "Logistics & Delivery Service",
-        name: "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
-        dec1: "Solution: We designed a delivery and logistics app with real-time tracking, route optimization, and driver performance analytics.",
-        dec2: "Result: Delivery efficiency improved by 50%, with a 20% reduction in fuel costs.",
-        num: "5",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/logistics-delivery-taxi-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/emergency-healthcare-transport.webp",
-        head: "Emergency Healthcare Transport",
-        name: "Challenge: A healthcare provider needed a reliable app for patient and emergency transport.",
-        dec1: "Solution: We built a healthcare taxi app with priority booking, SOS alerts, and real-time ambulance tracking.",
-        dec2: "Result: Reduced response time by 40%, saving lives and improving service reliability.",
-        num: "6",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/healthcare-transport-taxi-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/ride-sharing-platform.webp",
-        head: "Ride-Sharing Platform",
-        name: "Challenge: A client wanted to launch a cost-effective carpooling service.",
-        dec1: "Solution: We developed a ride-sharing app with features like route matching, fare splitting, and user ratings.",
-        dec2: "Result: 60% increase in daily commuters, with a 25% reduction in traffic congestion in target areas.",
-        num: "7",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
-
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -526,12 +383,7 @@ export default function Ecommerce(props) {
 
         <meta name="keywords" content="Crypto Desktop Wallet Development, Web & Desktop Wallet Solutions, Multi-Currency Wallet Development, DeFi & NFT Wallet Integration, White-Label Crypto Wallet Development, crypto wallet solutions, desktop wallet software, multi-currency crypto wallets, DeFi wallet development, NFT wallet development, white-label blockchain wallet, secure crypto wallet development" />
 
-        {/* <!-- Robots → */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
-        {/* <!-- Compatibility Meta → */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
 
         {/* <!-- Viewport and Mobile Optimization → */}
@@ -544,45 +396,6 @@ export default function Ecommerce(props) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Crypto Desktop Wallet Development" />
-
-        {/* <!-- New in iOS6 --> */}
-        {/* <!-- Author and Company Information --> */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* <!-- SEO Meta --> */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -598,14 +411,6 @@ export default function Ecommerce(props) {
         <meta property="og:url" content="https://www.comfygen.com/desktop-wallet-development" />
         <meta property="og:title" content="Launch Your Secure Web & Desktop Crypto Wallet Today | Comfygen" />
         <meta property="og:description" content="Partner with Comfygen to develop a high-performance Web & Desktop Crypto Wallet. Benefit from multi-currency support, DeFi & NFT features, enterprise security, and ongoing support. Get started now." />
-
-
-
-
-
-
-
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}

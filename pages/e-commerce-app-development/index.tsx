@@ -9,11 +9,9 @@ import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import ServicesSec from "../componentsnew/ServicesSec";
 import TechStack from "../componentsnew/TechStack";
 import ProcessSec from "../componentsnew/ProcessSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import Header from "../componentsnew/Header";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import Faq from "../componentsnew/Faq";
-import BlogSection from "../componentsnew/BlogSection";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import FeaturesTabs from "../componentsnew/FeaturesTabs";
 import IconCard from "../componentsnew/IconCard";
@@ -120,23 +118,7 @@ const featuresData = [
   }
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/e-commerce-portfolio-img.webp",
-      head: "E-Commerce",
-      name: "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products. The primary goal is to establish a user-friendly platform that simplifies the process of browsing, selecting, and purchasing items, while also providing a secure and efficient transaction system.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+
 const Process = [
   {
     title: "Discovery and Planning",
@@ -284,18 +266,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

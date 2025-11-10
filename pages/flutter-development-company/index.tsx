@@ -3,11 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import { RiFlutterFill, RiFlutterLine } from "react-icons/ri";
-import { AiOutlineDeploymentUnit } from "react-icons/ai";
-import { SiAntdesign } from "react-icons/si";
-import { CgIfDesign } from "react-icons/cg";
-import { TfiSupport } from "react-icons/tfi";
+
 import JSON_DATA from "./json/flutter.json";
 import LazyLoad from "react-lazy-load";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
@@ -178,17 +174,9 @@ export default function MultiChain(props) {
           faqData={JSON_DATA.Frequently}
           title="Flutter App Development Services"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
 }
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

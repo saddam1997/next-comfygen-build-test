@@ -1,151 +1,48 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Cryptocurrency from "../components/Cryptocurrency";
-import { VscCircleFilled, VscServerProcess } from "react-icons/vsc";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineRight, AiOutlineTranslation } from "react-icons/ai";
-import { BsCurrencyBitcoin } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
-import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import {
-  IconAddressBook,
-  IconApps,
-  IconBorderAll,
   IconBrain,
   IconCloud,
-  IconCode,
-  IconCoin,
-  IconCurrencyBitcoin,
-  IconEyeClosed,
-  IconFirstAidKit,
-  IconGraph,
-  IconMessage,
-  IconNews,
-  IconPasswordFingerprint,
   IconReportSearch,
   IconSignal5g,
-  IconSquaresSelected,
   IconWallet,
 } from "@tabler/icons-react";
-import {
-  IconCashBanknote,
-  IconShoppingCart,
-  IconTools,
-  IconTicket,
-  IconChartBar,
-  IconHeart,
-  IconShield,
-} from "@tabler/icons-react";
+
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
 import PortfolioSlider from "../components/PortfolioSlider";
-import Testimonial from "../ca/components/Testimonials";
-import ClientTestimonials from "../components/ClientTestimonials";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile, IconHeadphones, IconHierarchy3, IconLayoutDashboard, IconMessageCircle, IconShieldCheck, IconUsers } from "@tabler/icons-react";
-import AboutSectionTwo from "./components/AboutSectionTwo";
-import Features from "./components/Features";
-import NewPanel from "./components/NewPanel";
-import Wallets from "./components/Wallets";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const technologyData = [
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development</a> services provide secure, scalable, and custom-built solutions that put you at the forefront of the Web3 revolution. From intuitive mobile apps to powerful browser extensions, we Develop Crypto Wallets that offer unmatched security, seamless multi-chain access, and a superior user experience—turning your vision into a trusted gateway for the decentralized economy.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Blockchain Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/blockchain-wallet-development'>Blockchain Wallet Development</a> Services develops secure, non-custodial wallets that give users full control of their digital assets. Supporting multiple blockchain technologies like Bitcoin, Ethereum, Solana, and Polygon, our wallets include token swaps, staking, NFT management, and dApp connectivity, delivering a secure, scalable, and user-friendly gateway to the Web3 ecosystem.",
-  },
-  {
-    img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Wallet Development Services",
-    desc: "Comfygen Decentralized Wallet Development Services builds secure, non-custodial  Crypto wallets with full user control, multi-chain support, dApp integration, token swaps, staking, and NFT management. Scalable and secure, they provide a user-friendly gateway into DeFi, Web3, and the broader blockchain ecosystem.",
-  },
-  {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "cryptocurrency wallet development services",
-    desc: "Comfygen Cryptocurrency Wallet Development Services create secure, custom multi-chain wallets that give users full control of their digital assets. Featuring token swaps, staking, NFT management, and dApp integration, they combine security, scalability, and ease of use to provide a reliable gateway into the decentralized economy and Web3 ecosystem.",
-  },
-  {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Crypto Wallet Development Services",
-    desc: "We deliver Multi-Currency Crypto Wallet Development solutions designed for businesses seeking secure, scalable, and feature-rich platforms. From multi-chain support to token swaps, staking, NFT management, and dApp integration, our wallets open the door to Web3 and decentralized finance.",
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Cryptocurrency Wallet Development Services",
-    desc: "Comfygen Enterprise Cryptocurrency Wallet Development Services offer non-custodial wallets with multi-chain and multi-currency support, integrated token swaps, staking, NFT management, and dApp connectivity, designed for robust security, compliance, and seamless scalability.",
-  },
 
-];
 
 const latesttech = [
   {
@@ -213,30 +110,8 @@ const Process = [
   }
 ]
 
-const testimonialData = [
-  {
-    text: "Comfygen helped us launch our branded crypto wallet in just six weeks. Their team was professional, responsive, and delivered a product that exceeded our expectations.",
-    name: "James Anderson, CEO, FinTech Startup,",
-    title: "USA",
 
-  },
-  {
-    text: "The white label wallet from Comfygen gave us a head start in the crypto market. Secure, scalable, and fully customizable—our users love it.",
-    name: "Olivia Bennett, Product Head, NFT Marketplace",
-    title: "UK",
-  },
-  {
-    text: "From design to deployment, Comfygen’s team handled everything. Their expertise in blockchain and wallet development is unmatched.",
-    name: " Liam Carter, CTO, Crypto Exchange",
-    title: "USA",
-  },
-  {
-    text: "Working with Comfygen was seamless. They integrated advanced security and DeFi features while keeping our branding front and center.",
-    name: "Emma Wilson, Founder, Digital Assets Platform",
-    title: "UK",
-  },
-];
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   const slider: any = useRef();
   const next = () => {
@@ -822,32 +697,11 @@ export default function Ecommerce(props) {
         />
 
 
-
-
-        {/* <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        /> */}
-
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"
         />
-
-
-
-
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

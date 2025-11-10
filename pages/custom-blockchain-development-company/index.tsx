@@ -9,28 +9,18 @@ import { IconBrain, IconBroadcast, IconDiamond, IconServer, IconShieldCheck, Ico
 import Header from "../componentsnew/Header";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
-// import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import IndustriesServe from "../componentsnew/IndustriesServe";
 import HireDeveloper from "../componentsnew/HireDeveloper";
-import LatestTechnology from "../componentsnew/LatestTechnology";
 import ProcessSec from "../componentsnew/ProcessSec";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import TechStack from "../componentsnew/TechStack";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import Faq from "../componentsnew/Faq";
-import BlogSection from "../componentsnew/BlogSection";
-import Craditem from "../componentsnew/Fullcards";
 import CallToAction from "../components/CallToAction";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
 
-const GuidSectionBlockchain = dynamic(
-  () => import("./components/GuidSectionBlockchain"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Process = [
   {
     title: "Discovery & Consulting",
@@ -122,38 +112,6 @@ const techDataForPage1 = {
     }
   ],
 };
-const technologyData = [
-  {
-    title: "NFT at Boom",
-    desc: "It is the time when you eliminate the need of intermediaries and take the use of Non-Fungible tokens. We can facilitate businesses to turn their assets into efficient NFTs, and help them to attain a new revenue generation stream; especially for the content creators, artists, and influencers. They can transform their digital content into tokens, and sell them; which will add authenticity and value in their business.",
-    img: <IconDiamond stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Internet of Things (IoT) with Blockchain",
-    desc: "Blockchain is becoming a vital asset for third-generation security. Internet of Things (IoT) and Blockchain; both the technologies are surpassing the next-gen tech solutions. Integrating these both will make the digital transactional solutions more secure and quicker. However, we will carefully integrate and build blockchain solutions with IOT to simplify the centralized IT infrastructure at affordable cost.",
-    img: <IconBroadcast stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "The Meet of Cyber-Security with Blockchain",
-    desc: "Integrating blockchain with cyber security systems will help prevent ransom attacks, and even decentralization will enable us to identify the attack’s nature for further security. We have the best blockchain developers in India, who can create such dApps, which enable them to protect the cyber systems and eliminate the errors before they impact any system or data.",
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Metaverse Blockchain Solutions",
-    desc: "Metaverse, also known as the virtual reality space for people to build realistic interactions. Metaverse has taken itself far beyond expected; still blockchain is playing a role in providing more security. The decentralized applications have the potential to make more secured transactions and prevent data breaches by any means. Blockchain has immutability and security purposes for any tech segment.",
-    img: <IconWorld stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Blockchain with Artificial Intelligence (AI)",
-    desc: "AI has become the blockbuster for tech-savvies, because it has automated the functions in organizations. AI does things with the help of its humongous database. Catching up with AI and blockchain in one solution altogether can be the most dynamic change; where the functions will be seamlessly performed without risking any data. Also that leads to more security and brings positivity in the growth of technology.",
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Blockchain-as-a-Service (BaaS)",
-    desc: "Blockchain-as-a-Service (BaaS) simplifies blockchain application development by cloud providers offering infrastructure and tools. Users can create, deploy, and manage blockchain apps without setting up networks. BaaS provides pre-configured networks and tools, removing the need for deep blockchain understanding. It ensures scalability and supports various protocols, offering flexibility to businesses and developers.",
-    img: <IconServer stroke={1.5} className="w-12 h-12" />,
-  },
-];
 
 
 export default function Blockchain(props:any) {
@@ -169,25 +127,7 @@ export default function Blockchain(props:any) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -364,70 +304,6 @@ export default function Blockchain(props:any) {
 
         {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/custom-blockchain-development-company " />
-
-        {/* <!-- Robots → */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-
-
-        {/* <!-- Compatibility Meta → */}
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-        {/* <!-- Viewport and Mobile Optimization → */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Custom Blockchain development company" />
-
-
-        {/* <!-- New in iOS6 --> */}
-        {/* <!-- Author and Company Information --> */}
-
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* <!-- SEO Meta --> */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-        <meta name="geo.region" content="GER" />
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Custom Blockchain Development Company | Enterprise Blockchain Solutions by Comfygen" />
@@ -544,14 +420,4 @@ export default function Blockchain(props:any) {
       {/*<BlogSection initialData={initialData} />*/}
     </div>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

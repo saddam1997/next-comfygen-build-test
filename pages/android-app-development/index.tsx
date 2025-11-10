@@ -59,37 +59,7 @@ export default function Mobile(props) {
     AOS.init();
   }, [])
 
-  const Process = [
-    {
-      title: "Ideation and Conceptualization",
-      description: "The development process begins with understanding the client's requirements and business objectives. We develop custom Android apps using the latest tools and technologies, including cloud-based solutions and scalable frameworks."
-    },
-    {
-      title: "App Design",
-      description: "Then our skilled UI/UX designers create interactive prototypes and MVPs with essential and advanced features to ensure user-friendly designs that align with user business vision. We focus on simplicity, functionality, and user engagement."
-    },
-    {
-      title: "Development",
-      description: "As an Android app development company in India, we utilize cutting-edge technologies and frameworks to develop high-performance, secure, and scalable apps that meet our clients' business needs. "
-    },
-    {
-      title: "Testing and Quality Assurance",
-      description: "After the Android app development process is complete. We start testing and Quality Assurance processes To ensure the app’s quality and performance. We conduct complete manual and automated testing. "
-    },
-    {
-      title: "Deployment to Google Play Store",
-      description: "As a final step, the Android app is deployed to the Google Play Store.  Through end-to-end deployment and compliance with Play Store guidelines, our development team ensures your app's successful launch. To maximize the app's visibility and downloads, we also employ data-driven marketing strategies."
-    },
-    {
-      title: "Post-Launch Support",
-      description: "With our post-launch app maintenance and support services, we provide regular updates, performance monitoring, and real-time issue resolution. It ensures that Android apps remain competitive in the fast-evolving Android app market."
-    },
-    {
-      title: "Scalability and Future-Proofing",
-      description: "We design Android apps with scalability and flexibility in mind, ensuring they meet growing user demands and integrate perfectly with the best technologies. Our custom Android app development solutions in India guarantee that apps stay relevant and ready for future advancements."
-    },
 
-  ];
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
     setTalkToExpertModal(true);
@@ -172,7 +142,7 @@ export default function Mobile(props) {
         <ProcessSec
           title="Step-by-Step Android App Development Process"
           description="As a trusted Android app development company in Jaipur, India, we create secure, scalable, and future-proof Android apps."
-          processSlides={Process}
+          processSlides={JSON_DATA.Process}
         />
         <ContactFromCenter />
         <IndustriesServe />
@@ -200,19 +170,8 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div >
     </>
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

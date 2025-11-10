@@ -5,18 +5,11 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./salonappdevelopment.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import DeliverySection from "../components/DeliverySection";
-
-import Script from "next/script";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import {
   IconBook,
   IconSchool,
@@ -24,15 +17,9 @@ import {
   IconAtom,
   IconLanguage,
   IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps
 } from "@tabler/icons-react";
-import ServiceSection from "../components/ServiceSection";
 import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
 import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import Features from "./components/Features";
 
@@ -50,9 +37,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -92,46 +77,8 @@ const Process = [
   }
 ];
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "StyleSeat App Clone",
-    desc: "Launch your own salon booking app like StyleSeat. Enable users to book haircuts, flawless makeup, or trendy nail services with ease. Our beauty salon mobile app development solution empowers beauty professionals and clients alike."
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Booksy App Clone",
-    desc: "Get a custom salon booking app clone inspired by Booksy, designed to let your clients book self-care appointments anytime, anywhere. Deliver smooth scheduling, real-time availability updates, and authentic customer reviews—all within a single, easy-to-use platform."
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Fresha App Clone",
-    desc: "Build your own beauty and wellness platform with a Fresha clone. Let users effortlessly book salon, hair, and spa appointments anytime. Our salon booking application development company crafts intuitive, feature-packed apps customized to reflect your brand’s unique style and deliver a seamless user experience."
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "Yes Madam App Clone",
-    desc: "Develop India’s next top on-demand beauty services app platform with a Yes Madam clone. Offer at-home salon, spa, and wellness services with secure payments and real-time tracking."
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "GlossGenius App Clone",
-    desc: "Deliver a sleek, all-in-one experience for beauty professionals with an on-demand beauty app development company that builds GlossGenius clones. Manage bookings, payments, and client communication in one powerful app. Create your GlossGenius-inspired salon app today with Comfygen!"
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "MindBody App Clone",
-    desc: "Combine beauty, wellness, and fitness into one powerful platform. Our MindBody clone includes class booking, meditation sessions, and salon services. Ideal for beauty and salon booking app development projects looking to merge wellness with beauty. Build a MindBody-style beauty salon."
-  }
-];
-
-const techDataForPage1 = {
-  All: [
 
 
-
-  ],
-};
 
 const portfoliodata = [
   {
@@ -172,24 +119,7 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -607,14 +537,4 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

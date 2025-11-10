@@ -4,7 +4,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 
-export default function BlogSection(props: any) {
+export default function BlogSection(props:any) {
   
   return (
     <div className="bg-[#F3F4F6] lg:py-16 py-10">

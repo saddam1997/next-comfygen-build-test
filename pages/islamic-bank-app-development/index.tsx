@@ -20,22 +20,14 @@ import CallToAction from "../componentsnew/CallToAction";
 import Faq from "../componentsnew/Faq";
 
 import {
-  IconBox,
-  IconCloud,
   IconCloudComputing,
-  IconCode,
-  IconDeviceImacPause,
   IconLock,
-  IconRecordMail,
   IconRobot,
   IconSettings,
   IconShield,
-  IconWifi,
-  IconWorldWww,
 } from "@tabler/icons-react";
 import TechStack from "../componentsnew/TechStack";
 import WhyChoose from "../componentsnew/WhyChooseUs";
-import WhyChooseUs from "../componentsnew/WhyChooseUs";
 import ClientTestimonials from "../components/ClientTestimonials";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -235,24 +227,7 @@ export default function Mobile(props) {
   ];
   
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -646,14 +621,4 @@ export default function Mobile(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

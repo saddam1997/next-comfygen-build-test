@@ -304,7 +304,7 @@ export default function Ecommerce(props) {
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
-        <meta charSet="UTF-8" />
+       
         <meta
           property="og:title"
           content="Auto Racing Live Line API | Real-Time Racing Score & Data API Solutions"
@@ -503,13 +503,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

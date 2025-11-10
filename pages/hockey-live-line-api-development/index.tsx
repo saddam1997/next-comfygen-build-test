@@ -11,33 +11,16 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from '../componentsnew/ServicesSection'
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -82,108 +65,6 @@ const Process = [
       "Maintenance, updates, and custom add-ons."
   }
 ];
-
-
-
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Hockey Live Line API Provider – NHL & Global Stats",
-  "url": "https://www.comfygen.com/hockey-live-line-api",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen - Best Hockey Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "sameAs": [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen"
-  ]
-};
-
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Hockey Live Line API Provider – NHL & Global Stats",
-  "image": "https://www.comfygen.com/_next/image?url=%2Fimg%2Fskyrocket-your-exprience-with-football-live-line-api-development-company.webp&w=640&q=75",
-  "description": "Get fast, reliable Hockey Live Line APIs with NHL & global match coverage, 6000+ integrations, expert developers & 99.9% uptime. Start your integration today.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What data can I access using your Hockey Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can access real-time scores, match events, player stats, lineups, commentary, and more from NHL and other major leagues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the API suitable for mobile and web platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our Hockey Live Line API works with iOS, Android, and web applications seamlessly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide custom API Integration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. We tailor hockey data feeds according to your platform’s design and technical needs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How secure and scalable is your solution?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our APIs are built on a secure infrastructure with high scalability to handle enterprise-level traffic."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you cover live matches outside of the NHL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We support Hockey Pro League Live Score API, international matches, and other regional leagues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I try the API before buying?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer a free trial so you can evaluate the integration and data quality."
-      }
-    }
-  ]
-};
 
 
 
@@ -365,12 +246,4 @@ export default function Ecommerce(props) {
     </>
   );
 }
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+

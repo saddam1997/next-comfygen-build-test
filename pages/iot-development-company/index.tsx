@@ -9,15 +9,13 @@ import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
 import WhyChoose from "../components/WhyChooseUs";
 import ProcessSec from "../components/ProcessSec";
 import PortfolioSec from "../components/PortfolioSec";
-import IndustriesServe from "../components/IndustriesServe";
 import TechStack from "../components/TechStack";
-import InfoSectionLeft from "../components/InfoSectionLeft";
+
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -422,19 +420,8 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}

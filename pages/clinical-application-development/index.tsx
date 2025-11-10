@@ -5,10 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/clicnicalApp.json";
-import styles from "./styles.module.css";
-import { ImRedo2 } from "react-icons/im";
-import Link from "next/link";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Providers from "./components/Providers";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
@@ -17,10 +13,9 @@ import ServicesSec from "../components/ServicesSec";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import SolutionSec from "../components/SolutionSec";
-import { IconApps, IconBrain, IconBrowser, IconCalendar, IconClipboard, IconCloud, IconCode, IconCurrencyBitcoin, IconDatabase, IconDeviceWatch, IconFirstAidKit, IconHeartbeat, IconMessage, IconNews, IconReportSearch, IconSettings, IconSignal5g, IconVideo } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {IconBrowser, IconCalendar, IconClipboard, IconDatabase, IconDeviceWatch, IconHeartbeat, IconSettings, IconVideo } from '@tabler/icons-react';
+import { IconTools, IconHeart} from '@tabler/icons-react';
 import TechStack from "../components/TechStack";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ProcessSec from "../components/ProcessSec";
@@ -28,38 +23,20 @@ import HireDeveloperSec from "../components/HireDeveloperSec";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import InfoSectionRight from "../components/InfoSectionRight";
 
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("./components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
   loading: () => <p>Loading...</p>,
 });
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
+
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const technologyData = [
   {
@@ -317,93 +294,6 @@ export default function ClinicalApp(props) {
         />
         <ContactFromCenter />
         <Providers />
-
-        {/* <section
-          className="bg-center bg-no-repeat bg-cover bg-fixed"
-          style={{
-            backgroundImage: `url("https://www.comfygen.com/img/features-in-clinical-apps-you-should-look-for.webp")`,
-          }}
-        >
-          <div className="py-10 bg-[#000000]/80 ">
-            <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
-              <div className="space-y-4">
-                <div className="flex flex-col justify-center text-center ">
-                  <h2 className="py-2 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-[#fff]">
-                    Features in{" "}
-                    <span className="text-[#BA68C8]"> Clinical Apps </span> you
-                    should look for!{" "}
-                  </h2>
-                  <p className="text-base text-[#fff]">
-                    Comfygen is your trusted partner for developing clinical
-                    apps with a wide range of features. Our Clinical application
-                    development services and solutions can help in creating
-                    enhanced workflow management in clinics with remote access
-                    to the best clinical application development services. The
-                    features in clinical app development can vary from the
-                    perspective of users, such as patients and healthcare
-                    development providers.
-                  </p>
-                </div>
-                {JSON_DATA.CryptoUser.map((elem, index) => (
-                  <div
-                    key={elem.num}
-                    className={`lg:space-y-0 space-y-10 border p-6 bg-[#DBEAFE] rounded-xl lg:flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                      }`}
-                  >
-                    <div className="w-full">
-                      <h3 className="text-2xl font-bold">{elem.title}</h3>
-                      <p className="text-base text-black">{elem.decs}</p>
-                      <ul className="space-y-2">
-                        {[
-                          elem.item,
-                          elem.item1,
-                          elem.item2,
-                          elem.item3,
-                          elem.item4,
-                          elem.item5,
-                          elem.item6,
-                          elem.item7,
-                        ]
-                          .filter(Boolean)
-                          .map((item, index) => (
-                            <li
-                              key={index}
-                              className="flex text-base text-black/80"
-                            >
-                              <span className="pr-2 mt-1.5 text-[#4f4f50]">
-                                <ImRedo2 className="w-4 h-4 text-[#BA68C8]" />
-                              </span>
-                              {item}
-                            </li>
-                          ))}
-                      </ul>
-                    </div>
-                    <div className="w-full">
-                      <Image
-                        className="rounded-md"
-                        title="Custom Sports Betting App Development"
-                        alt=""
-                        src={elem.img}
-                        height={500}
-                        width={500}
-                        loader={uploadcareLoader}
-                        unoptimized={true}
-                      />
-                    </div>
-                  </div>
-                ))}
-                <div className="flex justify-center items-center">
-                  <a href="/contact-us">
-                    <button className="shadow-2xl inline-flex items-center justify-center px-8 py-3 space-x-1 overflow-hidden text-lg font-semibold bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC]  rounded cursor-pointer text-white w-fit group">
-                      SCHEDULE A CALL
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -552,20 +442,8 @@ export default function ClinicalApp(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/* <FaqSection faqData={JSON_DATA.Frequently} title="" />
-        <TalkExpert /> */}
-        {/*<BlogSection initialData={initialData} />*/}
+
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

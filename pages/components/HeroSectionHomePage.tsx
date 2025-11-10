@@ -94,7 +94,7 @@ export default function HeroSection(props: any) {
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
-        className="object-cover object-center -z-10 hidden sm:block"
+        className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
         priority
         fetchPriority="high"
         sizes="100vw"

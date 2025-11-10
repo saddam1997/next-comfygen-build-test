@@ -1,116 +1,39 @@
-import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Cryptocurrency from "../components/Cryptocurrency";
-import { VscCircleFilled, VscServerProcess } from "react-icons/vsc";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineRight, AiOutlineTranslation } from "react-icons/ai";
-import { BsCurrencyBitcoin } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
-import Link from "next/link";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
-import {
-  IconAddressBook,
-  IconApps,
-  IconBorderAll,
-  IconBrain,
-  IconCloud,
-  IconCode,
-  IconCoin,
-  IconCurrencyBitcoin,
-  IconEyeClosed,
-  IconFirstAidKit,
-  IconGraph,
-  IconMessage,
-  IconNews,
-  IconPasswordFingerprint,
-  IconReportSearch,
-  IconSignal5g,
-  IconSquaresSelected,
-  IconWallet,
-} from "@tabler/icons-react";
-import {
-  IconCashBanknote,
-  IconShoppingCart,
-  IconTools,
-  IconTicket,
-  IconChartBar,
-  IconHeart,
-  IconShield,
-} from "@tabler/icons-react";
+import { IconWallet} from "@tabler/icons-react";
+
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
 import PortfolioSlider from "../components/PortfolioSlider";
-import Testimonial from "../ca/components/Testimonials";
 import ClientTestimonials from "../components/ClientTestimonials";
-import ConsultancyApproach from "../components/ConsultancyApproach";
 import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile, IconHeadphones, IconHierarchy3, IconLayoutDashboard, IconMessageCircle, IconShieldCheck, IconUsers } from "@tabler/icons-react";
+import { IconCash, IconDeviceMobile,IconLayoutDashboard, IconMessageCircle,IconUsers } from "@tabler/icons-react";
 import AboutSectionTwo from "./components/AboutSectionTwo";
 import Features from "./components/Features";
-import NewPanel from "./components/NewPanel";
 import Wallets from "./components/Wallets";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
 
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const technologyData = [
   {
@@ -253,49 +176,7 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
 
     {
       "@context": "https://schema.org",
@@ -509,90 +390,21 @@ export default function Ecommerce(props) {
         <title>
           Wallet Development Company | E-Wallet & Crypto Wallet Solutions – Comfygen
         </title>
-        <meta
-          name="description"
-          content="Comfygen is a leading wallet development company delivering secure, scalable, and user-friendly e-wallets and crypto wallets. From mobile payment wallets to enterprise crypto solutions, we build custom and white-label wallets with advanced security, multi-currency support, and seamless integrations."
-        />
+        <meta name="description" content="Comfygen is a leading wallet development company delivering secure, scalable, and user-friendly e-wallets and crypto wallets. From mobile payment wallets to enterprise crypto solutions, we build custom and white-label wallets with advanced security, multi-currency support, and seamless integrations." />
 
         <meta name="keywords" content="E-Wallet Development, Crypto Wallet Development, NFT Wallet Development, DeFi Wallet Development, Enterprise Wallet Solutions, Mobile Wallet App Development, White Label Wallet Development" />
 
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/wallet-development-company"
-        />
-
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"></meta>
+        {/* canonical */}
+        <link rel="canonical" href="https://www.comfygen.com/wallet-development-company" />
 
 
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta
-          name="apple-mobile-web-app-title"
-          content="Wallet Development"
-        />
-
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Wallet Development Company"
-
-        />
-        <meta
-          name="twitter:description"
-          content=" Build powerful e-wallets and crypto wallets with Comfygen. From mobile payments to enterprise-grade crypto storage, our wallet development services ensure security, scalability, and seamless user experience."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-wallet-development-og.webp"
-        />
+        <meta name="twitter:title" content="Wallet Development Company" />
+        <meta name="twitter:description" content=" Build powerful e-wallets and crypto wallets with Comfygen. From mobile payments to enterprise-grade crypto storage, our wallet development services ensure security, scalability, and seamless user experience." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-wallet-development-og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
         {/* <!-- Facebook Meta --> */}
-
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-company.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-company.webp" />
         <meta property="og:image:alt" content="wallet development company" />
@@ -600,11 +412,6 @@ export default function Ecommerce(props) {
         <meta property="og:title" content="Secure & Scalable Wallet Development Solutions | Comfygen" />
         <meta property="og:description" content="Build powerful e-wallets and crypto wallets with Comfygen. From mobile payments to enterprise-grade crypto storage, our wallet development services ensure security, scalability, and seamless user experience." />
 
-
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
-        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
@@ -721,16 +528,12 @@ export default function Ecommerce(props) {
           description="Comfygen, a wallet development company, we provide fully customized crypto, DeFi, and NFT wallet solutions designed for different industries, ensuring secure transactions and digital transformation."
           sliderData={JSON_DATA.IndustriesServe}
         />
-
-
         <PortfolioSlider
           techData={JSON_DATA.portfoliodata}
           heading="Portfolio of  Wallet Development Services"
           description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
         />
         <ContactFromCenter />
-
-
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -750,16 +553,12 @@ export default function Ecommerce(props) {
           title="Tech stack we use in wallet development"
           description="At Comfygen, we use a modern, robust tech stack to build secure, scalable, and user-friendly digital and crypto wallets, ensuring smooth performance and seamless integration across mobile, web, and enterprise platforms."
         />
-
-
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-
-
 
         <Faq
           faqData={JSON_DATA.Frequently}
@@ -782,18 +581,6 @@ export default function Ecommerce(props) {
           ]}
         />
 
-
-
-        {/* 
-          <SolutionSec
-          heading="Our end-to-end Crypto Wallet Development Services"
-          subheading="We offer end-to-end crypto wallet development services developed for startups, enterprises, DeFi platforms, and exchanges. Our expertise spans across all types of wallets to meet diverse business and user needs."
-          techData={technologyData}
-        /> */}
-
-
-
-
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"
@@ -801,14 +588,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

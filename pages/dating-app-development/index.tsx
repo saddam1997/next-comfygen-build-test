@@ -35,16 +35,14 @@ import {
   IconLock,
   IconMessageChatbot,
   IconMicrophone,
-  IconPalette,
-  IconRocket,
+
   IconShieldCheck,
   IconUserSearch,
   IconUsersGroup,
   IconVideo,
 } from "@tabler/icons-react";
 import LatestTechnology from "../componentsnew/LatestTechnology";
-import Tab from "../components/Tab";
-import TabsPanel from "../components/Tab";
+
 
 
 const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
@@ -262,15 +260,7 @@ const latesttech = [
     desc: "We give priority to data security features to protect user data with strong encryption algorithms. Secure logins, two-factor authentication, and encrypted messaging make sure users personal data remains confidential.",
   },
 ];
-const techDataForPage1 = {
-  All: [
 
-
-
-
-
-  ],
-};
 
 
 const portfoliodata = [
@@ -313,73 +303,8 @@ const portfoliodata = [
 
 
 
-
-
-const tabsData = [
-  {
-    id: "account",
-    label: "Account",
-    title: "User App Panel",
-    description: "Creating a successful dating application requires a blend of innovative features...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Make changes to your account here.",
-      "Customize profile settings.",
-      "Privacy and security settings.",
-      "Manage subscriptions.",
-      "View match suggestions.",
-    ],
-  },
-  {
-    id: "admin",
-    label: "Admin",
-    title: "Admin Panel",
-    description: "Manage user activities and system settings from the admin panel...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "User management dashboard.",
-      "Monitor app performance.",
-      "Control premium features.",
-      "Review user reports.",
-      "Analytics and insights.",
-    ],
-  },
-  {
-    id: "vendor",
-    label: "Vendor",
-    title: "Vendor Panel",
-    description: "Vendors can manage advertisements, services, and payments...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Advertise on the platform.",
-      "Manage service bookings.",
-      "Track payments.",
-      "Analyze revenue reports.",
-      "Engage with users.",
-    ],
-  },
-];
-
 const jsonLdData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-    "addressLocality": "Jaipur, Rajasthan",
-    "addressRegion": "India",
-    "postalCode": "302006",
-    "telephone": "+91-958-786-7258"
-  },
-
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-    "addressLocality": "Toronto",
-    "addressRegion": "Canada",
-    "postalCode": "M1G3S7",
-    "telephone": "+1 579-977-4475"
-  },
+  
 
   {
     "@context": "https://schema.org",
@@ -663,46 +588,6 @@ export default function Ecommerce(props) {
 
         <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development"></meta>
 
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen App" />
-
-
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Comfygen" />
         <meta property="og:locale" content="en_US" />
@@ -947,14 +832,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

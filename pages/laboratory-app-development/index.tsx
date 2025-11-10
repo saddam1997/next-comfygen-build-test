@@ -13,12 +13,11 @@ import ServicesSec from "../components/ServicesSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import PortfolioSec from "../components/PortfolioSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconApps, IconBrain, IconCloud, IconDeviceCctv, IconDeviceMobile, IconSettings, IconShieldLock, } from '@tabler/icons-react';
+import {IconBrain, IconCloud, IconDeviceCctv, IconDeviceMobile, IconSettings, IconShieldLock, } from '@tabler/icons-react';
 import { IconTicket, IconChartBar, IconHeart, } from '@tabler/icons-react';
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -477,18 +476,7 @@ export default function ClinicalApp(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

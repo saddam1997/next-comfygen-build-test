@@ -23,83 +23,13 @@ import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile, IconHeadphones, IconHierarchy3, IconLayoutDashboard, IconMessageCircle, IconShieldCheck, IconUsers } from "@tabler/icons-react";
+import { IconCash, IconDeviceMobile,  IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
 
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const technologyData = [
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development</a> services provide secure, scalable, and custom-built solutions that put you at the forefront of the Web3 revolution. From intuitive mobile apps to powerful browser extensions, we Develop Crypto Wallets that offer unmatched security, seamless multi-chain access, and a superior user experience—turning your vision into a trusted gateway for the decentralized economy.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Blockchain Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/blockchain-wallet-development'>Blockchain Wallet Development</a> Services develops secure, non-custodial wallets that give users full control of their digital assets. Supporting multiple blockchain technologies like Bitcoin, Ethereum, Solana, and Polygon, our wallets include token swaps, staking, NFT management, and dApp connectivity, delivering a secure, scalable, and user-friendly gateway to the Web3 ecosystem.",
-  },
-  {
-    img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Wallet Development Services",
-    desc: "Comfygen Decentralized Wallet Development Services builds secure, non-custodial  Crypto wallets with full user control, multi-chain support, dApp integration, token swaps, staking, and NFT management. Scalable and secure, they provide a user-friendly gateway into DeFi, Web3, and the broader blockchain ecosystem.",
-  },
-  {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "cryptocurrency wallet development services",
-    desc: "Comfygen Cryptocurrency Wallet Development Services create secure, custom multi-chain wallets that give users full control of their digital assets. Featuring token swaps, staking, NFT management, and dApp integration, they combine security, scalability, and ease of use to provide a reliable gateway into the decentralized economy and Web3 ecosystem.",
-  },
-  {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Crypto Wallet Development Services",
-    desc: "We deliver Multi-Currency Crypto Wallet Development solutions designed for businesses seeking secure, scalable, and feature-rich platforms. From multi-chain support to token swaps, staking, NFT management, and dApp integration, our wallets open the door to Web3 and decentralized finance.",
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Cryptocurrency Wallet Development Services",
-    desc: "Comfygen Enterprise Cryptocurrency Wallet Development Services offer non-custodial wallets with multi-chain and multi-currency support, integrated token swaps, staking, NFT management, and dApp connectivity, designed for robust security, compliance, and seamless scalability.",
-  },
-
-];
 
 const latesttech = [
   {
@@ -156,29 +86,7 @@ const Process = [
   }
 ]
 
-const testimonialData = [
-  {
-    text: "Comfygen helped us launch our branded crypto wallet in just six weeks. Their team was professional, responsive, and delivered a product that exceeded our expectations.",
-    name: "James Anderson, CEO, FinTech Startup,",
-    title: "USA",
 
-  },
-  {
-    text: "The white label wallet from Comfygen gave us a head start in the crypto market. Secure, scalable, and fully customizable—our users love it.",
-    name: "Olivia Bennett, Product Head, NFT Marketplace",
-    title: "UK",
-  },
-  {
-    text: "From design to deployment, Comfygen’s team handled everything. Their expertise in blockchain and wallet development is unmatched.",
-    name: " Liam Carter, CTO, Crypto Exchange",
-    title: "USA",
-  },
-  {
-    text: "Working with Comfygen was seamless. They integrated advanced security and DeFi features while keeping our branding front and center.",
-    name: "Emma Wilson, Founder, Digital Assets Platform",
-    title: "UK",
-  },
-];
 export default function Ecommerce(props) {
   let { initialData } = props;
   const slider: any = useRef();
@@ -230,80 +138,10 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  // const faqData = {
-  //   "@context": "https://schema.org",
-  //   "@type": "FAQPage",
-  //   mainEntity: [
-  //     {
-  //       "@type": "Question",
-  //       name: "What is cryptocurrency wallet development, and why is it important?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "Cryptocurrency wallet development involves creating secure digital wallets that allow users to store, send, and receive cryptocurrencies. It is essential because it ensures safe transactions, private key management, and seamless interaction with blockchain networks.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "What are the benefits of hiring a cryptocurrency wallet development company?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "A professional cryptocurrency wallet development company provides expert security features, multi-currency support, customized UI/UX, and compliance with industry standards. This ensures that businesses get reliable, scalable, and secure wallet solutions.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "What types of cryptocurrency wallets can be developed?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "You can develop different types of cryptocurrency wallets, including web wallets, mobile wallets, desktop wallets, hardware wallets, and multi-signature wallets. Each type offers varying levels of security and accessibility.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "How long does it take to develop a cryptocurrency wallet?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "The development timeline depends on the complexity. A basic crypto wallet can take 2-3 months, while a feature-rich wallet with advanced security and blockchain integrations can take 6 months or longer.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "Can I get a customized cryptocurrency wallet for my business?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "Yes, businesses can get a custom cryptocurrency wallet tailored to their needs. Features like white-label branding, multi-currency support, DeFi integration, and biometric authentication can be customized as per requirements.",
-  //       },
-  //     },
-  //     {
-  //       "@type": "Question",
-  //       name: "How much does it cost to develop a cryptocurrency wallet?",
-  //       acceptedAnswer: {
-  //         "@type": "Answer",
-  //         text: "The cost varies depending on features, security measures, platform compatibility, and additional integrations. A simple wallet may cost around $20,000-$30,000, while an advanced wallet can exceed $100,000.",
-  //       },
-  //     },
-  //   ],
-  // };
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
+  
 
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+  const jsonLdData = [
+    
 
     {
       "@context": "https://schema.org",
@@ -523,16 +361,6 @@ export default function Ecommerce(props) {
 
         <meta name="keywords" content="DeFi Wallet Development, Custom Crypto Wallet Development, White Label DeFi Wallet Solutions, NFT Wallet Integration, Multicurrency Wallet Development, Crypto Payment Gateway Integration, Enterprise Blockchain Wallet Solutions" />
 
-        {/* <!-- Robots → */}
-        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-
-
-        {/* <!-- Compatibili/ty Meta → */}
-        /
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-
 
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -544,56 +372,6 @@ export default function Ecommerce(props) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="DeFi Wallet Development" />
-
-
-
-
-        {/* <!-- New in iOS6 -->
-<!-- Author and Company Information --> */}
-
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-
-        {/* <!-- SEO Meta --> */}
-
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-
-        {/* <!-- Geo Location Meta --> */}
-
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-
-
-        {/* <!-- Open Graph (OG) Tag --> */}
-
-        <meta name='og:type' content='website' />
-        <meta name='og:site_name' content='Comfygen Technologies' />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta name='fb:page_id' content='110909321596135' />
-        <meta name='og:email' content='sales@comfygen.com' />
-        <meta name='og:phone_number' content='+91-958-786-7258' />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
 
 
         {/* <!-- Twitter Card Tags -->  */}
@@ -747,63 +525,12 @@ export default function Ecommerce(props) {
         />
 
 
-
-        {/* <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio: Multicurrency Wallet Projects"
-          description="At comfygen, we deliver secure, scalable, and feature-rich multicurrency wallets for a variety of clients across fintech, crypto exchanges, and enterprises."
-        />
-
-        <CallToAction
-          heading="Ready to Launch Your Multicurrency Wallet?"
-          text="Comfygen’s multicurrency wallet development services deliver secure, scalable, and customizable wallets supporting multiple cryptocurrencies for global users."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-
-
-        <ContactFromCenter /> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        /> */}
-
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"
         />
 
-
-
-
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

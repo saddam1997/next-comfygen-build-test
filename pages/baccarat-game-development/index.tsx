@@ -4,22 +4,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
-import { RiAnticlockwiseFill, RiTeamLine } from "react-icons/ri";
-import { FaPlaystation } from "react-icons/fa";
-import { IoIosMan } from "react-icons/io";
-import { CgAwards, CgController, CgGames } from "react-icons/cg";
-import { TbTournament } from "react-icons/tb";
-import { AiOutlineSolution, AiOutlineControl } from "react-icons/ai";
-import { SiNintendogamecube } from "react-icons/si";
-import { BiSupport } from "react-icons/bi";
-import { CiDeliveryTruck } from "react-icons/ci";
 import dynamic from "next/dynamic";
 import FaqSection from "../components/FaqSection";
 import JSON_DATA from "./json/baccarat.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import AboutSection from "../components/AboutSection";
@@ -29,7 +19,7 @@ import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import CardItem from "../components/CardItem";
 import SolutionSec from "../components/SolutionSec";
-import { IconAdjustments, IconBook, IconBookmark, IconCamera, IconCertificate, IconClipboardCheck, IconDeviceGamepad2, IconFileText, IconGift, IconMessageCircle, IconNotification, IconShieldCheck, IconTrophy, IconUserOff, IconUsers, } from '@tabler/icons-react';
+import {  IconCertificate, IconDeviceGamepad2,IconGift, IconShieldCheck, IconTrophy, IconUserOff} from '@tabler/icons-react';
 import { IconChartBar, } from '@tabler/icons-react';
 const ModusSection = dynamic(() => import("../components/ModusSectionNew"), {
   loading: () => <p>Loading...</p>,
@@ -304,13 +294,4 @@ export default function Altcoin(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

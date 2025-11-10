@@ -11,76 +11,22 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../componentsnew/ServicesSection";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const Process = [
-  {
-    title: "Step 1 – Requirement Gathering",
-    description:
-      "Understand your platform's vision, user needs, and data requirements. We work closely with you to define your goals, whether it's real-time sports tracking, or analytics delivery.",
-  },
-  {
-    title: "Step 2 – API Roadmap & Endpoint Planning",
-    description:
-      "Plan the API scope by defining essential endpoints such as live scores, player stats, odds, and game events. We create a clear development timeline aligned with your priorities and scalability needs.",
-  },
-  {
-    title: "Step 3 – System Design & Documentation",
-    description:
-      "Design a clean and scalable API architecture with well-structured responses, secure authentication, and usage limits. We also deliver developer-first documentation for smooth integration.",
-  },
-  {
-    title: "Step 4 – Custom Development & Integration",
-    description:
-      "Develop custom modules tailored to your sport, logic. Our integration process ensures compatibility with your existing web, mobile, or backend systems.",
-  },
-  {
-    title: "Step 5 – Testing & Validation",
-    description:
-      "Simulate live games, high user traffic, and stress conditions to ensure the API performs under load. Functional, load, and regression testing are all part of our validation process.",
-  },
-  {
-    title: "Step 6 – Deployment & Hosting",
-    description:
-      "Deploy the API on cloud or on-premise infrastructure based on your scaling and performance needs. We configure environments for optimal speed, security, and accessibility.",
-  },
-  {
-    title: "Step 7 – Post-launch Support & Optimization",
-    description:
-      "Monitor API health with real-time metrics, uptime tracking, and log diagnostics. Our team ensures continuous improvement with performance tuning and proactive issue resolution.",
-  },
-];
+
 
 const structuredData = {
   "@context": "https://schema.org/",
@@ -277,7 +223,7 @@ export default function Ecommerce(props) {
         />
         <link
           rel="canonical"
-          href="https://www.comfygen.com/baseball-live-line-api"
+          href="https://www.comfygen.com/baseball-live-line-api-development"
         />
         <meta
           name="robots"
@@ -324,29 +270,13 @@ export default function Ecommerce(props) {
           name="subtitle"
           content="Best Baseball Live Line API"
         />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:country-name" content="India, USA, UK, UAE" />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
+  
         <meta
           property="og:type"
           content="Baseball Live Line API Services Provider"
         />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Private Limited" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
+        
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-og-image.webp"
@@ -475,7 +405,7 @@ export default function Ecommerce(props) {
         <ProcessSection
           title="Step-by-Step Integration Process Of Our Baseball Live Line API"
           description=""
-          processSlides={Process}
+          processSlides={JSON_DATA.Process}
         />
 
         <WhyChoose
@@ -514,13 +444,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

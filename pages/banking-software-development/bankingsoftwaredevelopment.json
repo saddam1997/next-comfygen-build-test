@@ -32,6 +32,79 @@
   }
 ],
 
+"Process":[
+  {
+    "title": "Discovery & Requirement Gathering",
+    "description":
+      "Our process begins with an in-depth discovery session where our qualified and talented banking software developers analyze your business model, project goals, and technical requirements. We research banking trends, compliance needs, and user behavior to define a clear product roadmap and ensure alignment with industry best practices."
+  },
+  {
+    "title": "UI/UX Design",
+    "description":
+      "Our UI/UX design experts craft intuitive, user-centric interfaces that enhance digital banking experiences. We focus on responsive design, seamless navigation, and accessibility to ensure your custom banking software development meets the expectations of both tech-savvy users and traditional banking customers."
+  },
+  {
+    "title": "Backend & Frontend Development",
+    "description":
+      "Using secure and modern tech stacks, we build robust backend systems and responsive frontends tailored to your financial services. As a custom banking software development agency, we ensure every component is scalable, efficient, and ready to support complex banking operations."
+  },
+  {
+    "title": "Integration with Legacy Systems",
+    "description":
+      "We integrate new solutions with your existing banking infrastructure, core systems, and third-party APIs without disrupting ongoing operations. Our banking software development services ensure secure data migration, process automation, and compliance with global banking standards during system integration."
+  },
+  {
+    "title": "QA & Security Testing",
+    "description":
+      "Security and reliability are at the core of our development. Our QA experts conduct rigorous testing—covering functionality, performance, usability, and compliance—to ensure your app is resilient. We follow best practices for security to deliver fully tested custom banking software development."
+  },
+  {
+    "title": "Deployment & Launch",
+    "description":
+      "After successful testing, we deploy your banking software across targeted platforms, ensuring smooth rollouts and zero downtime. As a top rated banking software development company, we manage cloud configurations, app store submissions, and final validations for a flawless launch."
+  },
+  {
+    "title": "Maintenance & Support",
+    "description":
+      "Post-launch, we offer continuous support, updates, and feature enhancements. Our banking software developers monitor performance, manage patches, and scale systems to match growing user demand, ensuring long-term stability and innovation in your financial software ecosystem."
+  }
+],
+
+"techDataForPage1":{
+  "All": [
+    {
+      "img": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
+      "head": "Digital Wallet App for Payment Providers",
+      "name": "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
+      "num": "1",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "#"
+    },
+
+    {
+      "img": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
+      "head": "AI-Powered Loan Management Platform",
+      "name": "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
+      "num": "2",
+      "icons": [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg"
+      ],
+      "buttonLink": "#"
+    }
+  ]
+},
+
+
   "servicesData": [
   {
     "title": "Custom Core Banking Solutions",

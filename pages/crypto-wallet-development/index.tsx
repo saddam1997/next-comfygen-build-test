@@ -13,7 +13,6 @@ import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import BlogSection from "../components/BlogSection";
 import PortfolioSlider from "../components/PortfolioSlider";
 import ClientTestimonials from "../components/ClientTestimonials";
 import IndustriesServe from "../componentsnew/IndustriesServe";
@@ -21,37 +20,9 @@ import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, Ico
 import SolutionSec from "../components/SolutionSec";
 
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -256,25 +227,6 @@ export default function Ecommerce(props) {
     ],
   };
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
 
     {
       "@context": "https://schema.org",
@@ -783,21 +735,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" Cryptocurrency Wallet Development"
         />
-
-        
-        {/*<BlogSection initialData={initialData} />*/}
-
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

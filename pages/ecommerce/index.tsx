@@ -6,16 +6,11 @@ import JSON_DATA from "./ecommerce.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import {
   IconBook,
   IconSchool,
@@ -23,21 +18,14 @@ import {
   IconAtom,
   IconLanguage,
   IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
 } from "@tabler/icons-react";
-import ServiceSection from "../components/ServiceSection";
 import ServicesSection from "../componentsnew/ServicesSection";
 import CallToAction from "../components/CallToAction";
 import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
-import AppCard from "../componentsnew/AppCard";
 import PortfolioSlider from "../components/PortfolioSlider";
 import EcommerceNav from "../componentsnew/ecommerce-navbar";
 import ProductCard from "./components/ProductCard";
-import EcommerceFooter from "../componentsnew/ecommerce-Footer";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -51,9 +39,7 @@ const Faq = dynamic(() => import("../components/Faq"), {
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -61,104 +47,6 @@ const ContactFromCenter = dynamic(
   }
 );
 
-const CardClone = [
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c1.webp",
-    title: "Zepto Clone App",
-    description:
-      "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zepto/' >Build a grocery delivery app like Zepto</a> with ultra-fast order fulfillment, real-time tracking, and dark store integration. We offer clone app development for businesses aiming to replicate Zepto's 10-minute delivery success in the Q-commerce space.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c2.webp",
-    title: "GoPuff Clone App",
-    description:
-      "Launch a Qcommerce app like GoPuff with a micro-fulfillment model. Our developers create a GoPuff-style platform that streamlines inventory, delivery, and checkout, making it a perfect alternative for the instant FMCG delivery market.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c3.webp",
-    title: "JioMart Express Clone App",
-    description:
-      "Build a grocery delivery app similar to JioMart Express with multilingual support, inventory sync, and location-based delivery. We provide a clone app similar to JioMart to help you compete in India's growing quick commerce sector.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c4.webp",
-    title: "Zomato Clone App",
-    description:
-      "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zomato/' >Develop a food delivery platform like Zomato </a> with real-time tracking, contactless delivery, and personalized recommendations. Our Zomato clone app development replicates Zomato’s powerful ordering and restaurant aggregator features with a custom Qcommerce twist.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c5.webp",
-    title: "Swiggy Clone App",
-    description:
-      "Get a food & beverage Qcommerce app like Swiggy Instamart to deliver snacks, meals, and groceries in minutes. We develop clone apps that offer fast checkouts, route optimization, and seamless order management.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c6.webp",
-    title: "PillPack Clone App",
-    description:
-      "Create a medicine delivery app like PillPack with automatic prescription refills, secure packaging, and seamless logistics. Our clone app development ensures compliance, privacy, and rapid delivery across your healthcare supply chain.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c7.webp",
-    title: "1mg Clone App",
-    description:
-      "Build a Qcommerce healthcare solution with a Tata 1mg clone app. We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/build-medicine-delivery-app-like-1mg/' >develop medicine delivery apps similar to 1mg</a> with features like online prescriptions, doctor consultations, and same-day pharma delivery.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c8.webp",
-    title: "ZocDoc Clone App",
-    description:
-      "Launch a healthcare appointment and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-of-building-a-doctor-appointment-app-like-zocdoc/' >delivery app like ZocDoc</a> with telehealth support, doctor bookings, and nearby pharmacy integration. A perfect quick commerce app for on-demand medical consultations and service bookings.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c9.webp",
-    title: "XpressBees Clone App",
-    description:
-      "Develop a logistics Qcommerce app like XpressBees with smart shipment tracking, multi-location delivery, and real-time status updates. A reliable solution for last-mile logistics and express courier needs.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c10.webp",
-    title: "Lalamove Clone App",
-    description:
-      "Start a courier & delivery service with a clone app similar to Lalamove. Offer real-time driver tracking, instant quotes, and package scheduling with a custom-built Qcommerce platform for local and intercity logistics.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c11.webp",
-    title: "Nykaa Clone App",
-    description:
-      "Launch a beauty e-commerce platform with a clone app like Nykaa. Enable ultra-fast delivery of skincare, cosmetics, and grooming items through a robust and stylish Qcommerce solution tailored to your brand.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c12.webp",
-    title: "Purplle Clone App",
-    description:
-      "Build a beauty product delivery website like Purplle with AI-powered suggestions, fast cart checkout, and hyperlocal delivery. We provide quick commerce app development that delivers beauty products with speed and convenience.",
-    buttonText: "View Demo",
-  },
-];
 
 const Process = [
   {
@@ -370,24 +258,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -609,34 +480,9 @@ export default function ClinicalApp(props: any) {
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="My App" />
 
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
 
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
 
-        <meta name="geo.region" content="IN" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+  
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-og.webp"
@@ -829,18 +675,8 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-        {/*<BlogSection initialData={initialData} />*/}
+       
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

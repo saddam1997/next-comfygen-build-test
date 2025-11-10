@@ -3,43 +3,26 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/otccryptoexchangedevelopment.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import ModelsSec from "../components/ModelsSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardItem from "../components/CardItem";
-import Script from "next/script";
 import PortfolioSec from "../components/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
 import ServicesSection from "../componentsnew/ServicesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
-
-
-
-
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -169,12 +152,12 @@ export default function Ecommerce(props) {
         "OTC crypto exchange",
         "OTC platform"
       ],
-     
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-    
+
 
     },
     {
@@ -244,15 +227,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform",
-      "image":"https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp",
-      "description":"Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform",
+      "image": "https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp",
+      "description": "Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
     },
     {
@@ -341,16 +326,16 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
-    
-    
+
+
+
   ];
 
   return (
     <>
-    <Head>
+      <Head>
         <title>
-       OTC Crypto Exchange Development Company | Comfygen
+          OTC Crypto Exchange Development Company | Comfygen
         </title>
         <meta
           name="description"
@@ -438,7 +423,7 @@ export default function Ecommerce(props) {
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
         <meta property="og:image:alt" content="OTC Crypto Exchange Development" />
-        
+
         {/* Structured Data Schema */}
         <script
           type="application/ld+json"
@@ -467,7 +452,7 @@ export default function Ecommerce(props) {
           }}
         />
 
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
@@ -478,16 +463,16 @@ export default function Ecommerce(props) {
         <Header />
       </LazyLoad>
       <div className="overflow-hidden">
-        
+
         <HeroSectionForAllPages
           heading="OTC Crypto Exchange Development Company"
           ptag="Comfygen, OTC Crypto Exchange Development Service, is specially developed for enterprises and startups looking to simplify high-volume digital asset trading. Our OTC Crypto Exchange Development solutions eliminate slippage, ensure transparent pricing, and provide a seamless trading experience for both institutional investors and retail users. With advanced security measures, customizable features, and compliance-ready architecture, we help you launch and scale confidently in the global crypto market."
-          
+
           li="Instant large-volume trade execution"
           li1="Top-security and KYC/AML compliance"
           li2="Transparent pricing & liquidity management"
           li3="Custom features and scalability"
-        
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -510,7 +495,7 @@ export default function Ecommerce(props) {
             "Handles large-volume trades",
             "Customizable OTC platform",
             "Appeals to institutional and enterprise clients",
-            
+
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp"
           link="/about-us"
@@ -518,15 +503,15 @@ export default function Ecommerce(props) {
         />
 
         <ContactFromCenter />
-       
 
-        <ServicesSection 
+
+        <ServicesSection
           heading="Custom OTC Crypto Exchange Development Solutions"
           subtitle="At Comfygen, we design and deliver highly customizable OTC crypto exchange development solutions tailored for institutional clients, crypto startups, and enterprises seeking secure, scalable, and compliant platforms. Our solutions integrate the latest technology trends such as AI-powered execution, regulatory automation, and <a class=text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases'>Private Blockchain</a> –  infrastructure to provide a cutting-edge trading experience that meets the demands of 2025 and beyond."
           servicesData={JSON_DATA.servicesData}
         />
 
-         <ConsultancyApproach
+        <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
@@ -534,10 +519,10 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSection 
-            title="OTC Crypto Exchange Development Process" 
-            description="Creating a secure and scalable OTC crypto exchange platform requires a focused development approach. Our OTC crypto exchange development company follows a streamlined process to deliver custom solutions that ensure privacy, compliance, and seamless large-volume <a href='/crypto-trading-bot-development' class='text-blue-500 font-sembold'  >crypto trading</a>." 
-            processSlides={Processs} />
+        <ProcessSection
+          title="OTC Crypto Exchange Development Process"
+          description="Creating a secure and scalable OTC crypto exchange platform requires a focused development approach. Our OTC crypto exchange development company follows a streamlined process to deliver custom solutions that ensure privacy, compliance, and seamless large-volume <a href='/crypto-trading-bot-development' class='text-blue-500 font-sembold'  >crypto trading</a>."
+          processSlides={Processs} />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <PortfolioSec
@@ -547,14 +532,7 @@ export default function Ecommerce(props) {
         />
 
 
-            <SolutionsFeature title="Benefits of Our Hybrid Exchange Development" subtitle="At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services" data={JSON_DATA.servicesData1} />
-
-        {/* <TrendsSection
-          heading="Benefits of OTC Cryptocurrency Exchange Platforms"
-          subtitle="OTC cryptocurrency exchange platforms provide a secure and efficient solution for traders and institutions handling large-volume crypto transactions. Unlike regular exchanges, OTC crypto exchanges facilitate private, high-value trades with enhanced confidentiality and liquidity, making them an ideal choice for many crypto market participants."
-          trends={JSON_DATA.Emerging}
-        /> */}
-
+        <SolutionsFeature title="Benefits of Our Hybrid Exchange Development" subtitle="At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services" data={JSON_DATA.servicesData1} />
         <TechStack
           title="Our OTC Cryptocurrency Exchange Development Technology Stack"
           description="We build secure, scalable OTC crypto exchange software using modern tech like React, Node.js, and blockchain integrations (<a href='/ethereum-token-development' class='text-white font-semibold underline ' >Ethereum</a> , Solana). Our stack ensures fast trades, strong security, and regulatory compliance."
@@ -583,9 +561,9 @@ export default function Ecommerce(props) {
           ]}
         />
 
-        <SolutionsFeature title="Who Needs OTC Crypto Exchange Software?" subtitle="OTC crypto exchange software plays a crucial role for a variety of market participants who require secure, private, and efficient trading solutions beyond traditional exchanges. Its design focuses on large-volume trades, confidentiality, and regulatory compliance, making it the preferred choice for specialized users." data={JSON_DATA.CryptoTrading}  />
+        <SolutionsFeature title="Who Needs OTC Crypto Exchange Software?" subtitle="OTC crypto exchange software plays a crucial role for a variety of market participants who require secure, private, and efficient trading solutions beyond traditional exchanges. Its design focuses on large-volume trades, confidentiality, and regulatory compliance, making it the preferred choice for specialized users." data={JSON_DATA.CryptoTrading} />
 
-        
+
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.testimonials}
@@ -595,14 +573,4 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

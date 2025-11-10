@@ -1,25 +1,13 @@
 import React, { useState } from "react";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import Head from "next/head";
 import Image from "next/image";
-import {
-  RiCoinLine,
-  RiExchangeDollarFill,
-  RiWallet3Line,
-} from "react-icons/ri";
-import { IoContractSharp } from "react-icons/io5";
 import dynamic from "next/dynamic";
-import FaqSection from "../components/FaqSection";
-import AltcoinCom from "../components/AltcoinCom";
 import JSON_DATA from "./json/altcoin.json";
 import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
-
 import InfoSectionRight from "../components/InfoSectionRight";
 import PortfolioSec from "../components/PortfolioSec";
 import WhyChoose from "../components/WhyChooseUs";
@@ -31,16 +19,7 @@ import ServicesSec from "../componentsnew/ServicesSec";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -50,57 +29,9 @@ const ContactFromCenter = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/altcoin-coin-development-company.webp",
-      head: "Altcoin & coin creation Company",
-      name: "Do you have a passion for crypto? Let's get started! Integrate cutting-edge blockchain technologies with superior security to increase the value and tradeability of your altcoin. Providing",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/aria-coin-details",
-    },
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-    },
-    {
-      img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-      head: "M7 Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/m7-coin",
-    },
 
-  ],
-};
 
-export default function Altcoin(props) {
+export default function Altcoin(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -212,41 +143,8 @@ export default function Altcoin(props) {
           rel="canonical"
           href="https://www.comfygen.com/altcoin-development-services"
         />
-        <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
-        />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="My App" />
-        <meta name="author" content="Comfygen" />
-        <meta name="web-author" content="Comfygen" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Private Limited" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+
+
         <meta
           name="og:title"
           content="Altcoin Creation | Altcoin Development Services  | Altcoin Development Company"
@@ -308,42 +206,19 @@ export default function Altcoin(props) {
         </LazyLoad>
       </div>
       <div className="overflow-hidden">
-        {/* hero section */}
-        {/* <Header /> */}
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/best-altcoin-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Best Altcoin Development Company"
-                ptag="Our altcoin creation services are designed to enhance the value and trading efficiency of your virtual currency. If you're passionate about cryptocurrencies, we specialize in integrating advanced blockchain technologies with robust security measures to provide a seamless and secure trading experience."
-                li="Custom Altcoin Creation Solutions"
-                li1="Enhanced Trading Efficiency"
-                li2="Cutting-Edge Blockchain Integration"
-                li3="Robust Security Measures"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
-
         <HeroSectionForAllPages
-           heading="Best Altcoin Development Company"
-           ptag="Our altcoin creation services are designed to enhance the value and trading efficiency of your virtual currency. If you're passionate about cryptocurrencies, we specialize in integrating advanced blockchain technologies with robust security measures to provide a seamless and secure trading experience."
-           li="Custom Altcoin Creation Solutions"
-           li1="Enhanced Trading Efficiency"
-           li2="Cutting-Edge Blockchain Integration"
-           li3="Robust Security Measures"
-           btnName="Talk With Expert"
-           btnLink="/contact-us"
-           openModal={openModal}
-           talkToExpertModal={talkToExpertModal}
-           setTalkToExpertModal={setTalkToExpertModal}
-           closeModal={closeModal}
+          heading="Best Altcoin Development Company"
+          ptag="Our altcoin creation services are designed to enhance the value and trading efficiency of your virtual currency. If you're passionate about cryptocurrencies, we specialize in integrating advanced blockchain technologies with robust security measures to provide a seamless and secure trading experience."
+          li="Custom Altcoin Creation Solutions"
+          li1="Enhanced Trading Efficiency"
+          li2="Cutting-Edge Blockchain Integration"
+          li3="Robust Security Measures"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/best-altcoin-development-company-hero-img.webp"
         />
 
@@ -368,24 +243,6 @@ export default function Altcoin(props) {
                 your business needs."
         />
 
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Top Altcoin Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Get the best altcoin developed through the best altcoin
-                development company with major assistance and complete support
-                till deployment. We provide various altcoin design services for
-                your business needs.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section> */}
 
         <InfoSectionRight
           heading="What is Altcoin"
@@ -419,10 +276,10 @@ export default function Altcoin(props) {
                 With Comfygen unwavering
                 commitment to providing innovative and secured solutions in
                 Altcoin development, we are the leading
-                  Custom Altcoin Development Company
+                Custom Altcoin Development Company
                 . We offer more than just Altcoin creation. To meet our clients’
                 business needs, we offer disproportionate Altcoin Development Services
-                
+
               </p>
               <div className=" text-left">
                 <ul className="space-y-2">
@@ -443,7 +300,7 @@ export default function Altcoin(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Altcoin Development Process We Follow
+                Altcoin Development Process We Follow
               </h2>
               <p className="text-base font-normal mt-2">
                 At Comfygen, we follow a streamlined and transparent altcoin
@@ -463,7 +320,7 @@ export default function Altcoin(props) {
           </div>
         </section>
         <PortfolioSec
-          techData={techDataForPage1}
+          techData={JSON_DATA.techDataForPage1}
           heading="Explore Our Altcoin Development Portfolio"
           description=""
         />
@@ -473,14 +330,6 @@ export default function Altcoin(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        {/* <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        /> */}
         <HireDeveloper
           heading="Hire Our Altcoin Developers"
           text="Need expert blockchain talent to bring your altcoin vision to life? At Comfygen, we offer a dedicated team of altcoin developers with proven expertise in building secure, scalable, and innovative digital assets. Whether you're launching a new cryptocurrency, integrating altcoins into your ecosystem, or expanding your blockchain offerings, our developers provide end-to-end support tailored to your project's needs."
@@ -501,18 +350,7 @@ export default function Altcoin(props) {
         <Faq
           faqData={JSON_DATA.Frequently}
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }

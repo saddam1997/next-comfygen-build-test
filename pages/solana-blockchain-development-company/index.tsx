@@ -6,22 +6,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
-import Link from "next/link";
-import styles from "./styles.module.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ProcessSec from "../components/ProcessSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import IndustriesServe from "../components/IndustriesServe";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
 import SolutionSec from "../components/SolutionSec";
-import LatestTechnology from "../components/LatestTechnology";
-import { IconApps, IconBooks, IconBrain, IconChartPie, IconCloud, IconCode, IconCurrencyBitcoin, IconDatabase, IconFirstAidKit, IconMessage, IconMessage2Code, IconNews, IconReportSearch, IconSettings, IconShieldCheck, IconSignal5g, IconTool } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
+import { IconCashBanknote, IconTools, IconChartBar} from '@tabler/icons-react';
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ServicesSec from "../componentsnew/ServicesSec";
@@ -32,25 +27,14 @@ import TechStack from "../components/TechStack";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 
 const Arena = [
@@ -750,26 +734,7 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <BlockchainNav />
       <div className="overflow-hidden">
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/solana-blockchain-development-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Solana Blockchain Development Company"
-                ptag="Discover the potential of the Solana blockchain with Comfygen, a trusted Solana Blockchain Development Company in India. Our experienced developers provide custom blockchain solutions and Solana development services tailored to your business needs. We focus on building scalable, high-performance applications to help you succeed in the decentralized world."
-                ptag1="Why Choose Comfygen?"
-                li="Skilled Solana blockchain developers"
-                li1="Cost-effective solutions "
-                li2="Reliable and scalable blockchain development services"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
+        
         <HeroSectionForAllPages
           heading="Best Solana Blockchain Development Company "
           ptag="Comfygen is a trusted Solana blockchain development company, delivering cutting-edge Solana Blockchain Development solutions for businesses and startups worldwide. Harness the power of Solana’s high-speed, low-cost blockchain to develop decentralized applications (DApps), NFT marketplaces, DeFi platforms, and crypto wallets with unmatched scalability and security."
@@ -806,18 +771,6 @@ export default function Ecommerce(props) {
           title="Our Solana Blockchain Development Services"
           description="We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries."
         />
-
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Solana Blockchain Development Services</h2>
-              <p className="text-base text-center font-normal">We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section> */}
         <ContactFromCenter />
 
         <SolutionSec
@@ -916,19 +869,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
-}
-// This gets called on every request
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
 }
