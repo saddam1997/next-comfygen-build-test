@@ -1787,7 +1787,7 @@ export default function DesktopNav(props: any) {
                                       href={url}
                                       passHref={true}
                                     >
-                                    {url}  {name}
+                                     {name}
                                     </Link>
                                   </li>
                                 );
