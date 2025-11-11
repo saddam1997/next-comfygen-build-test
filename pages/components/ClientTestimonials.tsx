@@ -165,6 +165,7 @@ export default function ClientTestimonials({
                         : testimonial.text}
                       {testimonial.text.length > 200 && (
                         <button
+                          aria-label="is Expanded"
                           onClick={() => toggleReadMore(i)}
                           className="text-blue-700 hover:text-blue-900 font-semibold ml-1"
                         >
@@ -199,7 +200,7 @@ export default function ClientTestimonials({
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex ? "bg-purple-600 w-8" : "bg-gray-300 hover:bg-gray-400"
                 }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`Go to slide`}
               />
             ))}
           </div>

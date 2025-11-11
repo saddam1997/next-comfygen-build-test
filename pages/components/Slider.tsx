@@ -40,7 +40,7 @@ function Slider({ projects, heading, description }) {
               className="flex transition-transform duration-500 ease-in-out will-change-transform"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {projects?.map((project:any, index:any) => (
+              {projects?.map((project: any, index: any) => (
                 <div key={index} className="w-full flex-shrink-0 py-5">
                   <div className="border rounded-3xl shadow-xl md:p-12 mx-4">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -74,7 +74,7 @@ function Slider({ projects, heading, description }) {
                         />
                         <div>
                           <Link href={project?.link} passHref>
-                            <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-3 sm:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                            <button aria-label="Explore Now" className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-3 sm:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
                               Explore Now <MdOutlineArrowOutward />
                             </button>
                           </Link>
@@ -103,14 +103,13 @@ function Slider({ projects, heading, description }) {
 
           {/* Dots */}
           <div className="flex justify-center gap-2 mt-6">
-            {projects?.map((_:any, index:any) => (
+            {projects?.map((_: any, index: any) => (
               <button
-              aria-label="Current Slide"
+                aria-label="Current Slide"
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? 'bg-indigo-600 w-8' : 'bg-gray-300 hover:bg-gray-400'
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index ? 'bg-indigo-600 w-8' : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
               />
             ))}
           </div>

@@ -123,7 +123,7 @@ export default function PortfolioSec({
                             ></p>
 
                             <Link href={slide.link} passHref>
-                              <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-3 sm:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                              <button  aria-label="Explore Now" className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-3 sm:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
                                 Explore Now <MdOutlineArrowOutward />
                               </button>
                             </Link>
