@@ -6,7 +6,6 @@ import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 import ClientTestimonials from "../components/ClientTestimonials";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import TechStack from "../components/TechStack";
@@ -14,7 +13,6 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
-import PortfolioSecs from "../components/PortfolioSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import CardGrid from "../components/CardGrid";
 import {
@@ -42,12 +40,7 @@ import {
   IconVideo,
 } from "@tabler/icons-react";
 import LatestTechnology from "../componentsnew/LatestTechnology";
-
-
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import Slider from "../components/Slider";
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -714,13 +707,14 @@ export default function Ecommerce(props) {
         </section>
 
 
-        <section className="mt-10">
-          <PortfolioSlider
-            techData={portfoliodata}
+        <section className="py-8">
+          <Slider
+            projects={portfoliodata}
             heading="Our Dating Apps Portfolio"
             description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
           />
         </section>
+
 
 
 

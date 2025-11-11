@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
 import WhyChoose from "../components/WhyChooseUs";
@@ -22,10 +20,10 @@ import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import AdvancedPanel from "./components/AdvancedPanel";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSlider from "../components/PortfolioSlider";
 import Tab from "../components/Tab";
 import CryptoTradingList from "./components/CryptoTradingSection";
 import PointsCardBg from "../componentsnew/PointsCardBg";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("./components/HeroSection"),
@@ -600,11 +598,16 @@ export default function Ecommerce(props) {
 
         <AdvancedPanel />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our Telemedicine App Work"
-          description="Explore our advanced telemedicine app development portfolio, featuring secure and user-friendly solutions for healthcare providers and patients. Partner with us to launch digital health solutions that deliver exceptional care and efficiency."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Telemedicine App Work"
+            description="Explore our advanced telemedicine app development portfolio, featuring secure and user-friendly solutions for healthcare providers and patients. Partner with us to launch digital health solutions that deliver exceptional care and efficiency."
+          />
+        </section>
+
+
 
         <TechStack
           title="Technology Stack We Use for Telemedicine App Development"

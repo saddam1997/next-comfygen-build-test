@@ -1,10 +1,6 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
@@ -27,10 +23,10 @@ import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import PortfolioSlider from "../components/PortfolioSlider";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
+
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -624,11 +620,17 @@ export default function Ecommerce(props:any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio of Smart Contract Wallet Development Projects"
-          description="Comfygen’s portfolio of smart contract wallet development projects. Each <a class='text-blue-500 underline' href='https://www.comfygen.com/wallet-development-company'>crypto wallet</a> is built for security, automation, and multi-chain support, delivering seamless digital asset management for enterprises, startups, and DeFi platforms."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio of Smart Contract Wallet Development Projects"
+            description="Comfygen’s portfolio of smart contract wallet development projects. Each <a class='text-blue-500 underline' href='https://www.comfygen.com/wallet-development-company'>crypto wallet</a> is built for security, automation, and multi-chain support, delivering seamless digital asset management for enterprises, startups, and DeFi platforms."
+          />
+        </section>
+
+
 
         <CallToAction
           heading="Ready to Launch Your Smart Contract Wallet?"

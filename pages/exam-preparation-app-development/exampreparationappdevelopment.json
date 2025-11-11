@@ -22,6 +22,25 @@
     }
   ],
 
+ "portfoliodata" :[
+  {
+    "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/all-in-one-competitive-exam-prep-app.webp",
+    "title": "All-in-One Competitive Exam Prep App",
+    "description": "A powerful test preparation app designed for students preparing for exams like NEET, JEE, SSC, and UPSC. This app includes customizable mock tests, AI-driven performance tracking, a dynamic question bank, and live class integration.",
+    "link": "#"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/ai-based-school -exam -practice-app.webp",
+    "title": "AI-Based School Exam Practice App",
+    "description": "A smart learning app developed for K–12 students to practice school-level exams through interactive quizzes, subject-wise test series, and instant feedback. The platform features gamified progress tracking, adaptive difficulty levels, and parent-teacher dashboards.",
+    "link": "#"
+  }
+],
+
+
+
+
 "servicesData": [
   {
     "title": "Custom Exam Prep App Development",

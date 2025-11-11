@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
@@ -14,7 +12,6 @@ import {
   IconCloud,
   IconReportSearch,
   IconSignal5g,
-  IconWallet,
 } from "@tabler/icons-react";
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
@@ -22,8 +19,8 @@ import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile,  IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
+import IndustriesServe from "../components/IndustriesServe";
+
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -53,7 +50,6 @@ const latesttech = [
     desc: "Comfygen’s DeFi wallets allow you to develop features, interface, and integrations for your business or users, creating a personalized, intuitive, and fully branded wallet experience.",
   }
 ];
-
 
 const Process = [
   {

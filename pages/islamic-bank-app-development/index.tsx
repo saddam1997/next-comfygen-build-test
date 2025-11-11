@@ -4,8 +4,6 @@ import dynamic from "next/dynamic";
 import LazyLoad from "react-lazy-load";
 import "aos/dist/aos.css";
 import JSON_DATA from "./json/islamicbankappdevelopment.json";
-
-import BlogSection from "../components/BlogSection";
 import ContactFromCenter from "../components/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../componentsnew/AboutSection";
@@ -14,7 +12,6 @@ import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import ProcessSec from "../componentsnew/ProcessSec";
-import IndustriesServe from "../componentsnew/IndustriesServe";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import CallToAction from "../componentsnew/CallToAction";
 import Faq from "../componentsnew/Faq";

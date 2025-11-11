@@ -31,6 +31,22 @@
       "desc": "The development time depends on your app’s complexity. A simple app may take 4–6 weeks, while a feature-rich app with AI and blockchain integration can take 3–6 months. We provide a clear timeline after analyzing your requirements."
     }
   ],
+
+ "portfoliodata" :[
+  {
+    "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/On-Demand Ice Cream Delivery App.webp",
+    "title": "On-Demand Ice Cream Delivery App",
+    "description": "A US-based startup partnered with Comfygen to launch Ice-creamGo, an on-demand app with AI-powered flavor suggestions, real-time GPS tracking, and blockchain-secured payments. Result: 40% increase in online orders within 3 months.",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Subscription-Based Ice Cream App.webp",
+    "title": "Subscription-Based Ice Cream App",
+    "description": "For a European ice cream chain, we built Cream Mart, a subscription-based delivery app offering flexible plans, automated billing, and AI-driven inventory forecasting. Result: 25% reduction in wastage and 60% repeat customer rate.",
+    "link": "#"
+  }
+],
+
   "servicesData": [
     {
       "title": "Custom Ice Cream App Development",

@@ -9,11 +9,12 @@ import HireDeveloper from '../componentsnew/HireDeveloper';
 import ConsultancyApproach from '../componentsnew/ConsultancyApproach';
 import InfoSection from '../componentsnew/InfoSectionLeft';
 import WhyChooseUs from '../componentsnew/WhyChooseUs';
-import IndustriesServe from '../componentsnew/IndustriesServe';
+
 import CallToAction from '../componentsnew/CallToAction';
 import HeroSectionForAllPages from '../componentsnew/HeroSectionForAllPages';
 import AboutSection from '../componentsnew/AboutSection';
 import ContactFromCenter from '../componentsnew/ContactFromCenter';
+import IndustriesServe from '../components/IndustriesServe';
 export default function Mobile(props) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);

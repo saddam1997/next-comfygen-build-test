@@ -32,6 +32,30 @@
     }
   ],
 
+
+  "portfoliodata":[
+  {
+    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",
+    "title": "On-Demand Home Cleaning Services App",
+    "description": "Our home cleaning service app helps users book professional cleaners instantly with flexible time slots, live tracking, and online payments. Built with modern UI/UX and real-time updates, it simplifies daily home cleaning services for urban users.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/handyman.webp",
+    "title": "Handyman & Repairs Booking App",
+    "description": "This app enables users to quickly book handymen for tasks such as furniture repairs, installations, and minor fixes. With smart job scheduling, real-time technician tracking, and secure payments, the app ensures convenience and speed for both users and providers.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/appliance.webp",
+    "title": "Appliance Repair Booking App",
+    "description": "We developed a user-friendly appliance repair app that enables customers to schedule technicians for AC, refrigerator, or washing machine repairs. Features include real-time booking, service history, and technician tracking.",
+    "link": "https://www.comfygen.com/contact-us"
+  }
+
+],
+
+
 "cardData2": [
   {
     "num": "1",

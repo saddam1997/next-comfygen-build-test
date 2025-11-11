@@ -393,11 +393,7 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        {/* <PortfolioSlider
-          techData={portfolioData}
-          heading="Our Data Science Consulting Portfolio"
-          description=" At Comfygen, our data scientists bring clarity to complex business challenges through AI, machine learning, and predictive modeling."
-        /> */}
+
 
         <HireDeveloper
           heading="Hire AWS Data Analytics Experts"

@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/reactjs.json";
 import LazyLoad from "react-lazy-load";

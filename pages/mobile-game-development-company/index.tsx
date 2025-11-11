@@ -16,9 +16,7 @@ import ConsultancyApproach from "../components/ConsultancyApproach";
 import ProcessSec from "../components/ProcessSec";
 import ModelsSec from "../components/ModelsSec";
 
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,

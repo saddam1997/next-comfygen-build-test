@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
 import LazyLoad from "react-lazy-load";
@@ -25,7 +23,7 @@ import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import AdvancedPanel from "./components/AdvancedPanel";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSlider from "../components/PortfolioSlider";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -735,11 +733,16 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Medicine Delivery App Development Success Stories"
-          description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Medicine Delivery App Development Success Stories"
+            description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
+          />
+        </section>
+
+
 
         <AdvancedPanel />
 

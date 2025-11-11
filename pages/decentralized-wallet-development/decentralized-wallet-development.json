@@ -30,7 +30,7 @@
       "title": "What security measures do you implement?",
       "desc": "Hierarchical Deterministic (HD) Wallets for secure key derivation. Local Encryption of private keys and seed phrases on the user's device. Biometric Authentication (Touch ID, Face ID) integration. Rigorous Code Audits, including third-party security reviews.Secure transaction signing and validation."
     },
-     {
+    {
       "num": "7",
       "title": "Can you integrate features like token swaps and staking?",
       "desc": "Absolutely. We regularly integrate advanced DeFi features wap Aggregators to find the best rates across multiple DEXs.Staking and Yield Farming interfaces for various protocols. dApp Browsers for seamless Web3 connectivity.NFT Management for viewing and transferring digital collectibles."
@@ -144,88 +144,34 @@
   ],
   "portfoliodata": [
     {
-      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
-      "title": "Food Delivery App – Food 24Hr",
-      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-      "link": "https://www.comfygen.com/portfolio/food-delivery-app"
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "/portfolio/blockchain-based-cryptocoin-development"
     },
     {
-      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
-      "title": "Online Food Ordering App",
-      "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
-      "link": "https://www.comfygen.com/portfolio/online-food-ordering-app"
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-on-demand.webp",
-      "title": "On-Demand Grocery Delivery App",
-      "description": "A lightning-fast on-demand grocery delivery app built for a local startup targeting 15-minute deliveries. Integrated with real-time GPS tracking, smart order batching, multi-store listings, and wallet-based payments for smooth checkouts.",
-      "link": "#"
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-multi.webp",
-      "title": "Multi-Vendor Grocery Marketplace App",
-      "description": "A robust multi-vendor grocery marketplace like Instacart, enabling users to shop from multiple stores in one app. Features include live inventory sync, store-based filtering, AI-based product suggestions, and a unified order dashboard.",
-      "link": "#"
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "/portfolio/advanced-blockchain-based-logistics-software"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p1.webp",
-      "title": "Subscription-Based Water Delivery App",
-      "description": "Our subscription-based water delivery app development allows customers to set up daily, weekly, or monthly deliveries with flexible plans. It includes automated order scheduling, secure payments, and push notifications for order reminders and status updates.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p2.webp",
-      "title": "Bottled & Packaged Water Delivery App",
-      "description": "We design bottled and packaged water delivery apps for suppliers and distributors to manage bulk orders and streamline logistics. With inventory management and delivery route optimization, businesses can handle high demand while ensuring timely deliveries.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-      "title": "Subscription-Based Milk Delivery App",
-      "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-      "title": "White-Label Dairy Delivery App",
-      "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p1.webp",
-      "title": "Single Outlet Pizza Delivery App",
-      "description": "A custom-built pizza delivery app tailored for individual restaurants to manage online orders and deliveries seamlessly. It enables customers to browse menus, place instant orders, and track deliveries in real-time.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p2.webp",
-      "title": "Multi-restaurant Pizza Ordering App",
-      "description": "A powerful pizza delivery marketplace app where multiple restaurants can list their menus, manage orders, and deliver pizzas to customers through a unified platform.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio1.webp",
-      "title": "Same-Day Flower Delivery App for Local Florists",
-      "description": "The app allows customers to browse bouquets, select delivery time slots, and track orders in real-time. It helped the client increase online orders by 70% in just 3 months.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio2.webp",
-      "title": "Flower Subscription App for a Gifting Brand",
-      "description": "This Florist app was built for a gifting startup offering flower subscription services. With smart scheduling, recurring billing, and push reminders, it now processes over 500 automated deliveries monthly.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-pharmacy-chain-app.webp",
-      "title": "Pharmacy Chain App",
-      "description": "Pharmacy Chain App is a feature-rich medicine delivery app developed for a leading pharmacy chain. It allows users to upload prescriptions, order medicines, and track deliveries in real-time. The app integrates secure payment gateways and AI-powered medicine recommendations, ensuring a smooth user experience.",
-      "link": "https://www.comfygen.com/portfolio/pharmacy-chain-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
-      "title": "AI-Powered Medicine Ordering",
-      "description": "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions. With a simple UI, seamless payment integration, and multi-vendor support, this app has helped thousands of users conveniently access medicines.",
-      "link": "https://www.comfygen.com/portfolio/ai-powered-medicine-ordering-app"
+      "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+      "title": "Blockchain-Based Real Estate Tokenization Software",
+      "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
+      "link": "/portfolio/blockchain-based-real-estate-tokenization-software"
     }
   ],
   "servicesData1": [

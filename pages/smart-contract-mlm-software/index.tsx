@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

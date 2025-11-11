@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import "slick-carousel/slick/slick.css";
 import styles from "./styles.module.css";
-import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Head from "next/head";

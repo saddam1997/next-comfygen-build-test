@@ -3,19 +3,16 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
-
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
 import LatestTechnology from "../componentsnew/LatestTechnology";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import { GrOptimize } from "react-icons/gr";
 import { MdOutlineVoiceOverOff } from "react-icons/md";
 import { LiaCheckSquareSolid } from "react-icons/lia";
@@ -26,6 +23,8 @@ import {
   IconReportSearch,
   IconSignal5g,
 } from "@tabler/icons-react";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -598,11 +597,19 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Portfolio of Mobile Crypto Wallet Development Services"
-          description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Portfolio of Mobile Crypto Wallet Development Services"
+            description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
+          />
+        </section>
+
+
+
+
 
         <CallToAction
           heading="Ready to launch your AI-Powered Mobile crypto wallet?"

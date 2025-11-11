@@ -24,11 +24,7 @@ import {
 import ServicesSection from "../componentsnew/ServicesSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
-
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -142,24 +138,6 @@ const technologyData = [
 
 
 
-const portfoliodata = [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/all-in-one-competitive-exam-prep-app.webp",
-    "title": "All-in-One Competitive Exam Prep App",
-    "description": "A powerful test preparation app designed for students preparing for exams like NEET, JEE, SSC, and UPSC. This app includes customizable mock tests, AI-driven performance tracking, a dynamic question bank, and live class integration.",
-    "link": "#",
-  },
-
-      {
-      "image": "https://www.comfygen.com/comfygen-images/exam-prep-app/ai-based-school -exam -practice-app.webp",
-      "title": "AI-Based School Exam Practice App",
-      "description": "A smart learning app developed for K–12 students to practice school-level exams through interactive quizzes, subject-wise test series, and instant feedback. The platform features gamified progress tracking, adaptive difficulty levels, and parent-teacher dashboards.",
-      "link": "#",
-    },
-
-
-
-]
 
 
 export default function ClinicalApp(props: any) {
@@ -217,7 +195,7 @@ export default function ClinicalApp(props: any) {
 
 
   const structuredData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -482,11 +460,16 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Explore Our Test Preparation App Development Portfolio"
-          description="Comfygen creates intuitive and results-driven test preparation applications that help students, coaching institutes, and edtech platforms deliver effective learning experiences. Here are two standout projects we’ve developed to empower exam aspirants through innovative digital solutions."
-        />
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Test Preparation App Development Portfolio"
+            description="Comfygen creates intuitive and results-driven test preparation applications that help students, coaching institutes, and edtech platforms deliver effective learning experiences. Here are two standout projects we’ve developed to empower exam aspirants through innovative digital solutions"
+          />
+        </section>
+
 
 
         <CoreFeaturesSection

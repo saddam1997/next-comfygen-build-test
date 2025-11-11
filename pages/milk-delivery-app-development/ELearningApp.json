@@ -42,6 +42,31 @@
   }
 ],
 
+
+"portfoliodata":[
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
+    "title": "Subscription-Based Milk Delivery App",
+    "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
+    "title": "White-Label Dairy Delivery App",
+    "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
+    "title": "Milk Ordering App",
+    "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
+    "link": "https://www.comfygen.com/contact-us"
+  }
+],
+
 "servicesData": [
   {
     "title": "Custom Milk Delivery App Development",

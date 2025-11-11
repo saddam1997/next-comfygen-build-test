@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
@@ -14,14 +13,15 @@ import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
-import PortfolioSlider from "../components/PortfolioSlider";
 import ClientTestimonials from "../components/ClientTestimonials";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import { IconCash, IconDeviceMobile,IconLayoutDashboard, IconMessageCircle,IconUsers } from "@tabler/icons-react";
 import AboutSectionTwo from "./components/AboutSectionTwo";
 import Features from "./components/Features";
 import Wallets from "./components/Wallets";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -528,11 +528,17 @@ export default function Ecommerce(props) {
           description="Comfygen, a wallet development company, we provide fully customized crypto, DeFi, and NFT wallet solutions designed for different industries, ensuring secure transactions and digital transformation."
           sliderData={JSON_DATA.IndustriesServe}
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Portfolio of  Wallet Development Services"
-          description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Portfolio of  Wallet Development Services"
+            description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
+          />
+        </section>
+
+
         <ContactFromCenter />
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

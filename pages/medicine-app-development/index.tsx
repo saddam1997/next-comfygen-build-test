@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/doctor.json";
 import LazyLoad from "react-lazy-load";
@@ -25,8 +23,8 @@ import {
   IconShoppingCart,
   IconStethoscope,
 } from "@tabler/icons-react";
-import PortfolioSlider from "../components/PortfolioSlider";
 import ClientTestimonials from "../components/ClientTestimonials";
+import Slider from "../components/Slider";
 
 
 const HeroSectionForAllPages = dynamic(
@@ -622,11 +620,20 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Medicine Ordering App Development Portfolio"
-          description="We have developed and launched several medicine ordering and healthcare apps that have transformed how users access medicines and healthcare services. The following are some of our most notable medicine ordering app development projects."
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Medicine Ordering App Development Portfolio"
+            description="We have developed and launched several medicine ordering and healthcare apps that have transformed how users access medicines and healthcare services. The following are some of our most notable medicine ordering app development projects."
+          />
+        </section>
+
+
+
+
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
         {/* <PortfolioSec

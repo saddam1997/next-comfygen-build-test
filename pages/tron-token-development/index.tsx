@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./data.json";
 import LazyLoad from "react-lazy-load";

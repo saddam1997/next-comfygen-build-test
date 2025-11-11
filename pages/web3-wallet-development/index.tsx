@@ -12,12 +12,10 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import CallToAction from "../componentsnew/CallToAction";
 import SolutionSec from "../componentsnew/SolutionSec";
-import IndustriesServe from "../componentsnew/IndustriesServe";
 
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -569,13 +567,16 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <section className="py-10">
-          <PortfolioSlider
-            techData={portfoliodata}
+
+
+        <section className="py-8">
+          <Slider
+            projects={portfoliodata}
             heading="Portfolio of Wallet Development Services"
             description="Comfygen is a top-rated wallet development company that develops secure, scalable, and high-performance Web3 wallets that cater to various industries. Our portfolio highlights a custom crypto wallet development solution."
           />
         </section>
+
 
         <SolutionSec
           heading="Types of Web3 Wallets We Develop"

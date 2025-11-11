@@ -11,7 +11,6 @@ import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import AppCard from "../componentsnew/AppCard";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
 import Features from "./components/Features";
 import DeliverySection from "../components/DeliverySection";
@@ -371,11 +370,7 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
-        {/* <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our On-Demand Liquor Delivery App Development Portfolio"
-          description="At Comfygen Technologies, we’re proud to showcase some of our successful alcohol delivery app development projects that help liquor businesses digitize sales, streamline operations, and expand customer reach. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are built to make a real business impact."
-        /> */}
+   
 
         <section>
           <Features />

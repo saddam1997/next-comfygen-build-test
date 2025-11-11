@@ -112,10 +112,6 @@ export default function career(props) {
   }, []);
 
 
-
-  console.log("apiData::::", apiData)
-  console.log("apiDataJobType::::", apiDataJobType)
-
   const [currentCount, setCurrentCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalOpenData, setModalOpenData] = useState<any>({});

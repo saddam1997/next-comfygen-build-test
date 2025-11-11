@@ -91,6 +91,20 @@
       "title": "Food Delivery App Development Company"
     }
   ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
+      "title": "Food Delivery App – Food 24Hr",
+      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
+      "link": "/portfolio/food-delivery-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
+      "title": "Online Food Ordering App",
+      "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
+      "link": "/portfolio/online-food-ordering-app"
+    }
+  ],
   "IndustriesServe": [
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/ubereats-clone-app.webp",

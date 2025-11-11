@@ -11,10 +11,11 @@ import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "./components/WhoCanStart";
-import PortfolioSlider from "../components/PortfolioSlider";
+
 import NewPanel from "./components/NewPanel";
 import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -500,11 +501,17 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our On-Demand Water Delivery App Development Portfolio"
-          description="Visit our on-demand water delivery app development portfolio for user-friendly water delivery app solutions designed for startups, local vendors, and large-scale distributors. From subscription-based water delivery to real-time tracking, our apps are built to streamline operations and deliver the best customer experience."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our On-Demand Water Delivery App Development Portfolio"
+            description="Visit our on-demand water delivery app development portfolio for user-friendly water delivery app solutions designed for startups, local vendors, and large-scale distributors. From subscription-based water delivery to real-time tracking, our apps are built to streamline operations and deliver the best customer experience."
+          />
+        </section>
+
+  
 
         <NewPanel />
 

@@ -18,16 +18,17 @@ import ProcessSec from "../componentsnew/ProcessSec";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import Faq from "../components/Faq";
-import IndustriesServe from "./components/IndustriesServe";
+
 import AboutSection from "../componentsnew/AboutSection";
 import Header from "../componentsnew/Header";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import IndustriesForm from "../mobile-app-development/components/Industries";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../componentsnew/CallToAction";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import ClientTestimonials from "../components/ClientTestimonials";
 import ConsultancyApproach from "../components/ConsultancyApproach";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -509,11 +510,17 @@ export default function Mobile(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our Portfolio of Successful Mobile App Projects"
-          description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Portfolio of Successful Mobile App Projects"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
+
 
         <CallToAction
           heading="Ready to Launch Your Own Branded Mobile App?"

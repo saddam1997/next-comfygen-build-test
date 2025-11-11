@@ -11,12 +11,10 @@ import HireDeveloper from "../components/HireDeveloper";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import PortfolioSlider from "../components/PortfolioSlider";
-import { IconApi, IconDeviceGamepad2, IconDice, IconStar } from "@tabler/icons-react";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhyChoose from "../components/WhyChooseUs";
 import ClientTestimonials from "../components/ClientTestimonials";
-
+import Slider from "../components/Slider";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -498,12 +496,14 @@ export default function MultiChain(props) {
         </section>
 
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Game Development Portfolio"
-          description="Explore our game development portfolio, showcasing advanced, feature-rich, and engaging gaming solutions built for diverse audiences. From casual mobile games to blockchain-based play-to-earn platforms, Comfygen ensures smooth gameplay, rich graphics, and immersive user experiences—partner with us to create next-gen games that stand out in the competitive market.
-"
-        />
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Game Development Portfolio"
+            description="Explore our game development portfolio, showcasing advanced, feature-rich, and engaging gaming solutions built for diverse audiences. From casual mobile games to blockchain-based play-to-earn platforms, Comfygen ensures smooth gameplay, rich graphics, and immersive user experiences—partner with us to create next-gen games that stand out in the competitive market."
+          />
+        </section>
 
 
         <section className="py-10 mb-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">

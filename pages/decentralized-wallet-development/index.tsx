@@ -8,12 +8,14 @@ import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import ServicesSec from "../components/ServicesSec";
 import WhyChoose from "../components/WhyChooseUs";
 import PortfolioSec from "../components/PortfolioSec";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle,IconUsers, IconWallet } from "@tabler/icons-react";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 
 const HeroSectionForAllPages = dynamic(
@@ -68,88 +70,6 @@ const Process = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/decentralized-blockchain-based-cryptocurrency",
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/peer-to-peer-blockchain-based-payment-system",
-    },
-
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/advanced-blockchain-based-logistics-software",
-    },
-
-    {
-      img: "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
-      head: "Blockchain-Based Real Estate Tokenization Software",
-      based: "",
-      name: "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink:
-        "/portfolio/blockchain-based-real-estate-tokenization-software",
-    },
-  ],
-};
 
 
 
@@ -525,9 +445,6 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
         <ContactFromCenter />
-
-
-
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
@@ -556,19 +473,19 @@ export default function ClinicalApp(props: any) {
           sliderData={JSON_DATA.IndustriesServe}
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Decentralized Wallet Development Portfolio"
-          description="Our work speaks for itself. We have a proven track record of delivering secure, innovative, and user-centric decentralized wallet solutions for a diverse range of clients and blockchains. Below are highlights of our expertise and the types of projects we have successfully launched."
-        />
-
-
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Artificial Intelligence Success Stories"
+            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+          />
+        </section>
 
         <NewTeckStack
           title="Technology Stack Used by Decentralized Wallet Development Company"
           description="We leverage a cutting-edge, battle-tested technology stack to build secure, scalable, and feature-rich blockchain wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project."
         />
-
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

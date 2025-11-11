@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -15,7 +14,6 @@ import HireDeveloper from "../componentsnew/HireDeveloper";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import CallToAction from "../componentsnew/CallToAction";
 import Faq from "../componentsnew/Faq";
-import BlogSection from "../componentsnew/BlogSection";
 import InfoSectionLeft from "../componentsnew/InfoSectionLeft";
 import InfoSectionRight from "../componentsnew/InfoSectionRight";
 import HeadingSec from "../componentsnew/headingSec";

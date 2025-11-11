@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ludo.json";
 import Link from "next/link";
@@ -488,11 +486,7 @@ export default function LudoGame(props) {
       <ContactFromCenter />
       <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
-      {/* <PortfolioSlider
-        techData={JSON_DATA.portfoliodata}
-        heading="Our Ludo Games Portfolio"
-        description="Explore our advanced Ludo game development portfolio, featuring engaging, feature-rich, and innovative gaming experiences tailored to captivate players worldwide. Partner with us to bring your Ludo game vision to life and dominate the market."
-      /> */}
+
 
       <section className="bg-[#F5F5F9] lg:py-16 py-10">
         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

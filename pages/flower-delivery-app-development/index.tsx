@@ -13,12 +13,7 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "./components/WhoCanStart";
 import DeliverySection from "../components/DeliverySection";
-
-
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -108,23 +103,7 @@ const techDataForPage1 = {
   ],
 };
 
-const portfoliodata = [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio1.webp",
-    "title": "Same-Day Flower Delivery App for Local Florists",
-    "description": "The app allows customers to browse bouquets, select delivery time slots, and track orders in real-time. It helped the client increase online orders by 70% in just 3 months.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
 
-  {
-    "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio2.webp",
-    "title": "Flower Subscription App for a Gifting Brand",
-    "description": "This Florist app was built for a gifting startup offering flower subscription services. With smart scheduling, recurring billing, and push reminders, it now processes over 500 automated deliveries monthly.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-
-
-]
 
 
 export default function ClinicalApp(props: any) {
@@ -529,13 +508,18 @@ export default function ClinicalApp(props: any) {
           cards={WhoCanStartCards}
         />
 
-        <section className="mt-10">
-          <PortfolioSlider
-            techData={portfoliodata}
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
             heading="Explore Our Flower Delivery App Development Portfolio"
             description="Explore how Comfygen Technologies empowers flower businesses with scalable and user-friendly flower delivery apps. From local florists to gift delivery startups, our custom-built apps ensure smooth order processing, real-time tracking, and delightful customer experiences."
           />
         </section>
+
+   
 
 
         <Features />

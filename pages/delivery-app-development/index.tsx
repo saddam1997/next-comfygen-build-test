@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -10,11 +9,11 @@ import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "./components/WhoCanStart";
 import AppCard from "../componentsnew/AppCard";
-import PortfolioSlider from "../components/PortfolioSlider";
+
 import CallToAction from "../components/CallToAction";
 import NewSection from "./components/NewSection";
+import Slider from "../components/Slider";
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
   {
@@ -247,8 +246,6 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
-
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -645,11 +642,16 @@ export default function ClinicalApp(props: any) {
           openModal={openModal}
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Delivery Apps Portfolio"
-          description="Explore our delivery app development portfolio, showcasing innovative, scalable, and feature-rich solutions tailored for multiple industries. From real-time logistics to on-demand food delivery apps, our delivery solutions simplify operations, engage customers, and boost revenue. Comfygen helps businesses build top-tier delivery platforms that thrive in today's competitive world."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Delivery Apps Portfolio"
+            description="Explore our delivery app development portfolio, showcasing innovative, scalable, and feature-rich solutions tailored for multiple industries. From real-time logistics to on-demand food delivery apps, our delivery solutions simplify operations, engage customers, and boost revenue. Comfygen helps businesses build top-tier delivery platforms that thrive in today's competitive world."
+          />
+        </section>
+
+
 
         {/* <NewPanel /> */}
 

@@ -4,7 +4,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./languagelearningappdevelopment.json";
 import LazyLoad from "react-lazy-load";
-// import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import {
@@ -20,6 +19,7 @@ import {
 } from "@tabler/icons-react";
 import Header from "../componentsnew/Header";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
+import Slider from "../components/Slider";
 const AboutSection = dynamic(
   () => import("../components/AboutSection"),
   {
@@ -37,9 +37,7 @@ const ConsultancyApproach = dynamic(() => import("../components/ConsultancyAppro
   loading: () => <p>Loading...</p>,
 });
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 // import TechStack from "../components/TechStack";
 const TechStack = dynamic(() => import("../components/TechStack"), {
@@ -163,23 +161,6 @@ const technologyData = [
 
 
 
-const portfoliodata = [
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/ai-powered-language-tutor.webp",
-    "title": "AI-Powered Language Tutor App for Beginners",
-    "description": "We developed an intuitive language learning app designed specifically for beginners. The app features interactive lessons, voice recognition for pronunciation feedback, and AI-based chatbots for real-time practice.",
-    "link": "#",
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/multilingual-language.webp",
-    "title": "Multilingual Language Learning App for Schools",
-    "description": "Built for educational institutions, this app supports multiple languages and allows schools to assign, manage, and monitor language courses from a central dashboard. Integrated with an LMS and designed with child-friendly UI, the platform supports individual and classroom-based learning with performance insights for teachers.",
-    "link": "#",
-  },
-
-
-]
 
 
 
@@ -556,13 +537,16 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <section className="py-10">
-          <PortfolioSlider
-            techData={portfoliodata}
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
             heading="Projects That Speak Volumes – Explore Our Portfolio"
             description="We create innovative, engaging, scalable, and effective language learning apps. We have built two outstanding educational platforms that showcase our expertise in developing feature-rich, user-focused educational tools."
           />
         </section>
+
 
         <section className="py-5">
           <TechStack

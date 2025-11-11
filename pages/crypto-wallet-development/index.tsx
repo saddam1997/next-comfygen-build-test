@@ -6,18 +6,19 @@ import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import {IconWallet,} from "@tabler/icons-react";
+import { IconWallet, } from "@tabler/icons-react";
 import TechStack from "../components/TechStack";
 import ProcessSec from "../components/ProcessSec";
 import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import PortfolioSlider from "../components/PortfolioSlider";
 import ClientTestimonials from "../components/ClientTestimonials";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
 import SolutionSec from "../components/SolutionSec";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -477,7 +478,7 @@ export default function Ecommerce(props) {
       <Head>
 
         <title>
-        Cryptocurrency Wallet Development Company | Crypto wallet development solution 
+          Cryptocurrency Wallet Development Company | Crypto wallet development solution
         </title>
 
         <meta
@@ -493,7 +494,7 @@ export default function Ecommerce(props) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         {/* canonical */}
-        <link rel="canonical" href="https://www.comfygen.com/crypto-wallet-development"/>
+        <link rel="canonical" href="https://www.comfygen.com/crypto-wallet-development" />
 
 
 
@@ -641,7 +642,7 @@ export default function Ecommerce(props) {
         />
 
 
-        
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -669,11 +670,17 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Crypto Wallet Development Portfolio "
-          description="Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
-        />
+
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Crypto Wallet Development Portfolio"
+            description="Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
+          />
+        </section>
+
         <ContactFromCenter />
 
 

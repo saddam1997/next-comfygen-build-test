@@ -631,9 +631,6 @@ export default function Ecommerce(props) {
           subheading="At Comfygen, we build high-performance digital wallet solutions that enhance convenience, security, and functionality. As a trusted eWallet app development company, we integrate top features to provide seamless financial services for your users."
           techData={CardGridData}
         />
-
-  
-
         <SolutionsFeature title="eWallet App Clone Solutions We Provide" subtitle="Our expert eWallet app developers specialize in creating powerful, feature-rich wallet clones of today’s most successful digital payment apps. Whether you want a clone of Google Pay, Amazon Pay, or Cash App, we deliver scalable and secure solutions tailored to your business model." data={JSON_DATA.LeadingSoftware}  />
 
         <section>

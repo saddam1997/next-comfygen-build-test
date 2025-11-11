@@ -13,11 +13,12 @@ import ContactFromCenter from '../componentsnew/ContactFromCenter';
 import LatestTechnology from '../componentsnew/LatestTechnology';
 import TechStack from '../componentsnew/TechStack';
 import ProcessSec from '../componentsnew/ProcessSec';
-import IndustriesServe from '../componentsnew/IndustriesServe';
+
 import WhyChoose from '../componentsnew/WhyChooseUs';
 import HireDeveloper from '../componentsnew/HireDeveloper';
 import Faq from '../componentsnew/Faq';
 import LazyLoad from 'react-lazy-load';
+import IndustriesServe from '../components/IndustriesServe';
 
 const schema = {
   "@context": "https://schema.org/",

@@ -29,10 +29,11 @@ import ConsultancyApproach from "../../componentsnew/ConsultancyApproach";
 import PortfolioSec from "../../componentsnew/PortfolioSec";
 import LatestTechnology from "../../componentsnew/LatestTechnology";
 import ProcessSec from "../../componentsnew/ProcessSec";
-import IndustriesServe from "../../componentsnew/IndustriesServe";
+
 import HireDeveloper from "../../componentsnew/HireDeveloper";
 import CallToAction from "../../componentsnew/CallToAction";
 import Faq from "../../componentsnew/Faq";
+import IndustriesServe from "../../components/IndustriesServe";
 const Header = dynamic(() => import("../../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,

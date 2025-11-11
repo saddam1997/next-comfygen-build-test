@@ -8,13 +8,14 @@ import WhyChoose from "../../components/WhyChooseUs";
 import Faq from "../../components/Faq";
 import ProcessSec from "../../components/ProcessSec";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
-import IndustriesServe from "./components/IndustriesServe";
+
 
 import Header from "../../components/Header";
+import Slider from "../../components/Slider";
+import IndustriesServe from "../../components/IndustriesServe";
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {
@@ -535,11 +536,15 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <PortfolioSlider
-          techData={portfolioData}
-          heading="Portfolio of Our Tableau Consulting Projects"
-          description="At Comfygen Technologies, we specialize in crafting Tableau dashboards that deliver real-time visibility, actionable insights, and measurable impact. Our Tableau services portfolio showcases our experience across multiple industries, helping businesses harness the power of data visualization for smarter decision-making."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={portfolioData}
+            heading="Portfolio of Our Tableau Consulting Projects"
+            description="At Comfygen Technologies, we specialize in crafting Tableau dashboards that deliver real-time visibility, actionable insights, and measurable impact. Our Tableau services portfolio showcases our experience across multiple industries, helping businesses harness the power of data visualization for smarter decision-making."
+          />
+        </section>
 
         <HireDeveloper
           heading="Unlock the Power of Data with Comfygen's Tableau Consulting Services"

@@ -10,7 +10,7 @@ import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
 import TechStack from "./components/TeckStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSlider from "../../components/PortfolioSlider";
+import Slider from "../../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../../components/HeroSectionForAllPages"),
@@ -90,7 +90,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -425,11 +425,15 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={portfolioData}
-          heading="Portfolio of Our Data Analytics Projects"
-          description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets: "
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={portfolioData}
+            heading="Portfolio of Our Data Analytics Projects"
+            description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
+          />
+        </section>
+
 
         <TechStack
           title="Our Technology Stack Use to Develop Best AI Services"

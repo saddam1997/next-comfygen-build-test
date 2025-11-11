@@ -4,8 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import Link from "next/link";

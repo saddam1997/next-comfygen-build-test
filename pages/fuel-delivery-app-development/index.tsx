@@ -11,11 +11,11 @@ import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import AppCard from "../componentsnew/AppCard";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
 import NewSection from "./components/NewSection";
 import Features from "./components/Features";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 
 
@@ -147,7 +147,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -496,13 +496,18 @@ export default function ClinicalApp(props: any) {
         />
         <Features />
 
-        <div className="mt-10">
-          <PortfolioSlider
-            techData={JSON_DATA.portfoliodata}
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
             heading="Our Fuel Delivery Apps Portfolio"
             description="At Comfygen, we have delivered custom AI fuel delivery app solutions. Each project is designed to streamline fuel ordering, delivery, and management while ensuring a seamless experience for users, drivers, and vendors. Here are some of our successful custom fuel delivery app development projects."
           />
-        </div>
+        </section>
+
+    
 
         {/* <NewPanel /> */}
         <CallToAction

@@ -13,9 +13,7 @@ import WhoCanStart from "../componentsnew/WhoCanStart";
 import ServicesSec from "../components/ServicesSec";
 import CardItem from "../components/CardItem";
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 // import Features from "./components/Features";
 const Features = dynamic(() => import("./components/Features"), {
@@ -40,6 +38,8 @@ const HireDeveloper = dynamic(() => import("../components/HireDeveloper"), {
 });
 import ClientTestimonials from "../components/ClientTestimonials";
 import Faq from "../components/Faq";
+import Slider from "../components/Slider";
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -87,27 +87,6 @@ const Process = [
 ];
 
 
-const portfoliodata = [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",
-    "title": "On-Demand Home Cleaning Services App",
-    "description": "Our home cleaning service app helps users book professional cleaners instantly with flexible time slots, live tracking, and online payments. Built with modern UI/UX and real-time updates, it simplifies daily home cleaning services for urban users.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/handyman.webp",
-    "title": "Handyman & Repairs Booking App",
-    "description": "This app enables users to quickly book handymen for tasks such as furniture repairs, installations, and minor fixes. With smart job scheduling, real-time technician tracking, and secure payments, the app ensures convenience and speed for both users and providers.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-  {
-      "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/appliance.webp",
-      "title": "Appliance Repair Booking App",
-      "description": "We developed a user-friendly appliance repair app that enables customers to schedule technicians for AC, refrigerator, or washing machine repairs. Features include real-time booking, service history, and technician tracking.",
-      "link": "https://www.comfygen.com/contact-us",
-    },
-
-]
 
 const WhoCanStartCards = [
   {
@@ -142,7 +121,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -531,11 +510,16 @@ export default function ClinicalApp(props: any) {
           techData={JSON_DATA.cardData2}
         />
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Explore Our Home Services App Development Portfolio"
-          description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
-        />
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Home Services App Development Portfolio"
+            description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
+          />
+        </section>
+
 
         <Features />
 

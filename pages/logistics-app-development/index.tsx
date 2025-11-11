@@ -6,20 +6,12 @@ import JSON_DATA from "./logistics-app-development.json";
 import ClientTestimonials from "../components/ClientTestimonials";
 import Header from "../components/Header";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-// import AboutSection from "../components/AboutSection";
 const AboutSection = dynamic(() => import("../components/AboutSection"),
   { loading: () => <p>Loading...</p>, }
 );
 import WhoCanStart from "./components/WhoCanStart";
 import ServicesSec from "../components/ServicesSec";
-// import AppCard from "../componentsnew/AppCard";
 const AppCard = dynamic(() => import("../componentsnew/AppCard"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-// import PortfolioSlider from "../components/PortfolioSlider";
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"),
   {
     loading: () => <p>Loading...</p>,
   }
@@ -32,6 +24,7 @@ const NewPanel = dynamic(() => import("./components/NewPanel"),
   }
 );
 import ProcessSec from "../components/ProcessSec";
+import Slider from "../components/Slider";
 // import NewTeckStack from "../componentsnew/NewTeckStack";
 const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"),
   {
@@ -578,11 +571,16 @@ export default function ClinicalApp(props: any) {
           openModal={openModal}
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio – Logistics and Transportation App Development Projects"
-          description="Explore how Comfygen helps logistics companies, transport aggregators, and freight startups with intelligent, scalable logistics app development services. From real-time shipment tracking to automated fleet management, our logistics mobile apps deliver seamless user experiences and operational efficiency."
-        />
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Logistics and Transportation App Development Projects"
+            description="Explore how Comfygen helps logistics companies, transport aggregators, and freight startups with intelligent, scalable logistics app development services. From real-time shipment tracking to automated fleet management, our logistics mobile apps deliver seamless user experiences and operational efficiency."
+          />
+        </section>
+
 
         <NewPanel />
 

@@ -1,17 +1,7 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Cryptocurrency from "../components/Cryptocurrency";
-import { VscCircleFilled, VscServerProcess } from "react-icons/vsc";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineRight, AiOutlineTranslation } from "react-icons/ai";
-import { BsCurrencyBitcoin } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
-import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
@@ -25,7 +15,6 @@ import {
   IconCurrencyBitcoin,
   IconReportSearch,
   IconSignal5g,
-  IconWallet,
 } from "@tabler/icons-react";
 
 import TechStack from "../components/TechStack";
@@ -34,10 +23,10 @@ import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import PortfolioSlider from "../components/PortfolioSlider";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../componentsnew/IndustriesServe";
-import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
+
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -542,11 +531,17 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio: Multicurrency Wallet Projects"
-          description="At comfygen, we deliver secure, scalable, and feature-rich multicurrency wallets for a variety of clients across fintech, crypto exchanges, and enterprises."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio Multicurrency Wallet Projects"
+            description="At comfygen, we deliver secure, scalable, and feature-rich multicurrency wallets for a variety of clients across fintech, crypto exchanges, and enterprises."
+          />
+        </section>
+
+
+     
 
         <CallToAction
           heading="Ready to Launch Your Multicurrency Wallet?"

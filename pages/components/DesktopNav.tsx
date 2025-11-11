@@ -1621,7 +1621,8 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
-                          <li
+                          <Link
+                            href="/blockchain-development"
                             onClick={() => handleTabClick("Tab2")}
                             className={
                               activeTab === "Tab2"
@@ -1637,18 +1638,19 @@ export default function DesktopNav(props: any) {
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                <Link
+                                {/* <Link
                                   href="/blockchain-development"
                                   className="flex items-start gap-2"
                                 >
                                   Blockchain Solution
-                                </Link>
+                                </Link> */}
+                                Blockchain Solution
                               </p>
                               <span className="text-[#212121]/80 text-sm font-normal">
                                 Secure Your Digital Future
                               </span>
                             </div>
-                          </li>
+                          </Link>
                           <li
                             onClick={() => handleTabClick("Tab3")}
                             className={
@@ -1787,7 +1789,7 @@ export default function DesktopNav(props: any) {
                                       href={url}
                                       passHref={true}
                                     >
-                                     {name}
+                                      {name}
                                     </Link>
                                   </li>
                                 );
@@ -1864,7 +1866,7 @@ export default function DesktopNav(props: any) {
                               })}
                             </ul>
                           )}
-                          
+
                         </div>
                       </div>
 
@@ -2204,7 +2206,7 @@ export default function DesktopNav(props: any) {
 
 
 
-                       <div className={`${activeTab === "Tab2" ? "" : "hidden"}`}>
+                      <div className={`${activeTab === "Tab2" ? "" : "hidden"}`}>
                         {activeTab === "Tab2" && (
                           <ul className="text-sm font-medium space-y-2">
                             {Finance1.map((elem: any, index: any) => {
@@ -2228,7 +2230,7 @@ export default function DesktopNav(props: any) {
                             })}
                           </ul>
                         )}
-                      </div> 
+                      </div>
                       <div className={`${activeTab === "Tab5" || activeTab === "Tab2" ? "hidden" : ""}`}>
                         <a href="/contact-us" className="relative">
                           <Image

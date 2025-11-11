@@ -6,16 +6,12 @@ import JSON_DATA from "./fashion.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/WhyChooseUs";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ServicesSec from "../../components/ServicesSec";
-import SolutionSec from "../../components/SolutionSec";
-import ProcessSec from "../../components/ProcessSec";
 import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
 import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "./components/TeckStackFashion";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSec from "../../componentsnew/PortfolioSec";
+
 import {
   IconBook,
   IconSchool,
@@ -23,20 +19,15 @@ import {
   IconAtom,
   IconLanguage,
   IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
+
 } from "@tabler/icons-react";
-import ServiceSection from "../../components/ServiceSection";
+
 import ServicesSection from "../../componentsnew/ServicesSection";
 import CallToAction from "../../components/CallToAction";
 import TrendsSection from "../../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../../componentsnew/ProcessSection";
-import AppCard from "../../componentsnew/AppCard";
-import PortfolioSlider from "../../components/PortfolioSlider";
-import HireDeveloperSec from "../../components/HireDeveloperSec";
 import EcommerceNav from "../../componentsnew/ecommerce-navbar";
+import Slider from "../../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../../components/HeroSectionForAllPages"),
@@ -311,15 +302,15 @@ export default function ClinicalApp(props: any) {
         "Fashion Retail Mobile App Development",
         "Apparel Ecommerce App Development",
         "Fashion Marketplace App Development"
-    
+
       ],
-     
+
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-        
+
       ]
     },
     {
@@ -395,37 +386,40 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Ecommerce Fashion Web & Mobile App Development Solutions",
-      "image":"https://www.comfygen.com/comfygen-images/fashion/fashion-about.webp",
-      "description":"Get end-to-end ecommerce fashion web & mobile app development solutions from Comfygen. We build scalable, stylish, and feature-rich fashion apps with AR, AI, and cross-platform support to boost your online store’s growth.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"95"}
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Ecommerce Fashion Web & Mobile App Development Solutions",
+      "image": "https://www.comfygen.com/comfygen-images/fashion/fashion-about.webp",
+      "description": "Get end-to-end ecommerce fashion web & mobile app development solutions from Comfygen. We build scalable, stylish, and feature-rich fashion apps with AR, AI, and cross-platform support to boost your online store’s growth.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "95"
+      }
     },
     {
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
       "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
+        "@type": "ListItem",
+        "position": 1,
         "name": "Home",
-        "item": "https://www.comfygen.com"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
         "name": "Ecommerce Development",
-        "item": "https://www.comfygen.com/ecommerce"  
-      },{
-        "@type": "ListItem", 
-        "position": 3, 
+        "item": "https://www.comfygen.com/ecommerce"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
         "name": "Fashion App Development Company",
-        "item": "https://www.comfygen.com/ecommerce/fashion"  
+        "item": "https://www.comfygen.com/ecommerce/fashion"
       }]
-    },    
-    
+    },
+
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -648,11 +642,15 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our Ecommerce Fashion Web & Mobile App Development Portfolio Work"
-          description="At Comfygen, we’ve built top-performing fashion ecommerce apps that deliver style, speed, and seamless shopping experiences. Our fashion app development solutions are trusted by clothing brands, fashion startups, and online retailers for their performance, design, and innovation. Check out some of our latest work:"
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Ecommerce Fashion Web & Mobile App Development Portfolio Work"
+            description="At Comfygen, we’ve built top-performing fashion ecommerce apps that deliver style, speed, and seamless shopping experiences. Our fashion app development solutions are trusted by clothing brands, fashion startups, and online retailers for their performance, design, and innovation. Check out some of our latest work"
+          />
+        </section>
+
 
         <CallToAction
           heading="Build a Luxury Fashion Shopping App"
@@ -673,7 +671,7 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        
+
 
         <ProcessSection
           title="Our Fashion Ecommerce App Development Process"

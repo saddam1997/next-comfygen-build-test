@@ -2,8 +2,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import { BsDot, BsFillStarFill } from "react-icons/bs";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
 import LazyLoad from "react-lazy-load";

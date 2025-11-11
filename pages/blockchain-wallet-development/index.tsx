@@ -2,19 +2,15 @@ import { useState } from "react";
 import "aos/dist/aos.css";
 import React from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
 import Header from "../componentsnew/Header";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import ProcessSec from "../componentsnew/ProcessSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import Faq from "../componentsnew/Faq";
-import BlogSection from "../componentsnew/BlogSection";
 import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
@@ -22,11 +18,10 @@ import BlockChainTech from "../enterprise-blockchain-development/components/Bloc
 import SolutionSec from "../components/SolutionSec";
 import CallToAction from "../components/CallToAction";
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
+
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers, IconWallet } from "@tabler/icons-react";
 import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const Process = [
   {

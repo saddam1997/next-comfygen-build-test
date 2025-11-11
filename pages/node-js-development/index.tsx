@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nodejs.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
-import BlogSection from "../components/BlogSection";
 import Faq from "../components/Faq";
 import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";

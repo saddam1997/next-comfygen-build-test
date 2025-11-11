@@ -8,13 +8,13 @@ import WhyChoose from "../../components/WhyChooseUs";
 import Faq from "../../components/Faq";
 import ProcessSec from "../../components/ProcessSec";
 import TechStack from "./components/TeckStack";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
 import Features from "./components/NewFeatures";
 import ClientTestimonials from "../../components/ClientTestimonials";
+import Slider from "../../components/Slider";
 const Header = dynamic(() => import("../../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -434,7 +434,7 @@ export default function Mobile(props) {
         />
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
+      <Header />
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages
@@ -476,7 +476,7 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <Features/>
+        <Features />
 
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -501,11 +501,16 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <PortfolioSlider
-          techData={portfolioData}
-          heading="Our Data Science Consulting Portfolio"
-          description=" At Comfygen, our data scientists bring clarity to complex business challenges through AI, machine learning, and predictive modeling."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={portfolioData}
+            heading="Our Data Science Consulting Portfolio"
+            description=" At Comfygen, our data scientists bring clarity to complex business challenges through AI, machine learning, and predictive modeling."
+          />
+        </section>
+
 
         <HireDeveloper
           heading="Hire Data Scientist to Transform Data into Business Decisions"
@@ -522,7 +527,7 @@ export default function Mobile(props) {
           description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
         />
 
-        <ClientTestimonials/>
+        <ClientTestimonials />
 
         <Faq
           faqData={JSON_DATA.Frequently}

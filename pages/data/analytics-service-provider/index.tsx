@@ -10,13 +10,14 @@ import Faq from "../../components/Faq";
 import ProcessSec from "../../components/ProcessSec";
 import TechStack from "./components/TeckStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
-import IndustriesServe from "./components/IndustriesServe";
+
 
 import Header from "../../components/Header";
+import Slider from "../../components/Slider";
+import IndustriesServe from "../../components/IndustriesServe";
 
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
@@ -574,11 +575,17 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={portfolioData}
-          heading="Portfolio of Our Data Analytics Projects"
-          description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets: "
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={portfolioData}
+            heading="Portfolio of Our Data Analytics Projects"
+            description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
+          />
+        </section>
+
+
 
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -629,7 +636,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title="FAQs for Our Data Analytics Services "
         />
-        
+
       </div>
     </>
   );

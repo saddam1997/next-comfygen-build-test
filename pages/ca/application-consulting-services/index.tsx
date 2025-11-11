@@ -13,7 +13,7 @@ import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ContactFromCenter from "../../componentsnew/ContactFromCenter";
 import ServicesSec from "../../componentsnew/ServicesSec";
-import IndustriesServe from "../../componentsnew/IndustriesServe";
+
 import ConsultancyApproach from "../../componentsnew/ConsultancyApproach";
 import HireDeveloperSec from "../../componentsnew/HireDeveloperSec";
 import LatestTechnology from "../../componentsnew/LatestTechnology";
@@ -22,6 +22,7 @@ import Faq from "../../componentsnew/Faq";
 import BlogSection from "../../componentsnew/BlogSection";
 import FormSec from "../../componentsnew/FormSec";
 import Header from "../../componentsnew/Header";
+import IndustriesServe from "../../components/IndustriesServe";
 
 
 export default function Mobile(props) {

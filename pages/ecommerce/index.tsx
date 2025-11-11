@@ -23,9 +23,9 @@ import ServicesSection from "../componentsnew/ServicesSection";
 import CallToAction from "../components/CallToAction";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
-import PortfolioSlider from "../components/PortfolioSlider";
 import EcommerceNav from "../componentsnew/ecommerce-navbar";
 import ProductCard from "./components/ProductCard";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -258,7 +258,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -482,7 +482,7 @@ export default function ClinicalApp(props: any) {
 
 
 
-  
+
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-og.webp"
@@ -600,11 +600,16 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Discover the expertise we have in e-commerce development by exploring our recent work"
-          description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Discover the expertise we have in e-commerce development by exploring our recent work"
+            description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
+          />
+        </section>
+
+
 
         <Features />
 
@@ -675,7 +680,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-       
+
       </div>
     </>
   );

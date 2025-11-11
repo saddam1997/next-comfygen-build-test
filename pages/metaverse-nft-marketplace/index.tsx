@@ -6,7 +6,6 @@ import JSON_DATA from "./json/metaverse.json"
 import Link from "next/link";
 import styles from './styles.module.css'
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { BsFillStarFill } from "react-icons/bs";
 const HeroSectionForm = dynamic(() => import('../components/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })

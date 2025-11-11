@@ -20,10 +20,7 @@ import ProcessSection from "../componentsnew/ProcessSection";
 
 import Header from "../components/Header";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import Slider from "../components/Slider";
 
 
 const Faq = dynamic(() => import("../components/Faq"), {
@@ -461,17 +458,17 @@ export default function ClinicalApp(props: any) {
           <Features />
         </section>
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="We Have Developed Salon Apps That You Can Check Out"
-          description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
-        />
 
-        {/* <PortfolioSec
-          techData={techDataForPage1}
-          heading="We Have Developed Salon Apps That You Can Check Out"
-          description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
-        /> */}
+
+        <section className="py-8">
+          <Slider
+            projects={portfoliodata}
+            heading="We Have Developed Salon Apps That You Can Check Out"
+            description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
+          />
+        </section>
+
+    
 
         <CallToAction
           heading="Ready to Build Your Custom Salon App with Experts?"

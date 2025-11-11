@@ -13,12 +13,7 @@ const AboutSection = dynamic(() => import("../components/AboutSection"), {
 });
 import ServicesSec from "../components/ServicesSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-// import PortfolioSlider from "../components/PortfolioSlider";
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 // import Features from "./components/Features";
 const Features = dynamic(() => import("./components/Features"),
   {
@@ -40,6 +35,7 @@ const HireDeveloper = dynamic(() => import("../components/HireDeveloper"),
   }
 );
 import ClientTestimonials from "../components/ClientTestimonials";
+import Slider from "../components/Slider";
 
 
 
@@ -442,12 +438,16 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Enterprise Directory App and Website Development Projects"
+            description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals."
+          />
+        </section>
+
      
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio – Enterprise Directory App and Website Development Projects"
-          description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals."
-        />
 
 
         <Features />

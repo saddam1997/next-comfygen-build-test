@@ -1,19 +1,10 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Head from "next/head";
-import { RiCoinLine, RiCoinsLine } from "react-icons/ri";
-import { AiOutlineTranslation } from "react-icons/ai";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { BiBitcoin, BiShapePolygon } from "react-icons/bi";
-import { HiOutlineCurrencyDollar } from "react-icons/hi";
-import { VscServerProcess } from "react-icons/vsc";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptomlmsoftware.json"
-import { TbCurrencySolana } from "react-icons/tb";
 import { BsArrowRight } from "react-icons/bs";
 import { RiCustomerServiceLine } from "react-icons/ri";
-import $ from 'jquery';
 
 import Link from "next/link";
 const FaqSection = dynamic(() => import('../../components/FaqSection'), {

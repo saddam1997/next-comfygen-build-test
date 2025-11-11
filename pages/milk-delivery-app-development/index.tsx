@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -15,11 +14,10 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "../componentsnew/WhoCanStart";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -80,29 +78,7 @@ const Process = [
 ];
 
 
-const portfoliodata = [
 
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-    "title": "Subscription-Based Milk Delivery App",
-    "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-    "title": "White-Label Dairy Delivery App",
-    "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
-    "title": "Milk Ordering App",
-    "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-]
 
 const WhoCanStartCards = [
   {
@@ -557,12 +533,14 @@ export default function ClinicalApp(props: any) {
         />
 
       
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Milk Delivery App Development Projects"
+            description="Explore how Comfygen empowers dairy businesses and startups with powerful, scalable milk delivery app development solutions. Our custom online milk delivery apps help streamline daily deliveries, manage subscriptions, and improve customer satisfaction with real-time features and user-friendly design."
+          />
+        </section>
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Portfolio – Milk Delivery App Development Projects"
-          description="Explore how Comfygen empowers dairy businesses and startups with powerful, scalable milk delivery app development solutions. Our custom online milk delivery apps help streamline daily deliveries, manage subscriptions, and improve customer satisfaction with real-time features and user-friendly design."
-        />
         <Features />
 
         <section className="bg-white lg:py-16 py-10">

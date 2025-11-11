@@ -14,8 +14,8 @@ import AboutSection from "../componentsnew/AboutSection";
 import Header from "../componentsnew/Header";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import MobileHero from "./components/MobileHero";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
+import Slider from "../components/Slider";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/", 
@@ -407,11 +407,16 @@ export default function Mobile(props: any) {
           description="Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly."
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio – Websites That Speak for Themselves"
-          description="At Comfygen, we take pride in crafting high-performing and visually appealing websites for various industries. As a trusted UI/UX  web design and development company, we have delivered custom, responsive, and SEO-optimized websites that help brands grow faster and engage better. Take a look at some of our latest work:"
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Websites That Speak for Themselves"
+            description="At Comfygen, we take pride in crafting high-performing and visually appealing websites for various industries. As a trusted UI/UX  web design and development company, we have delivered custom, responsive, and SEO-optimized websites that help brands grow faster and engage better. Take a look at some of our latest work."
+          />
+        </section>
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

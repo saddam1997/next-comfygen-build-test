@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
-import Testimonial from "../components/Testimonials";
+// import Testimonial from "../components/Testimonials";
 import dynamic from "next/dynamic";
 import HeroSectionForCompany from "../components/HeroSectionForCompany";
 import LazyLoad from "react-lazy-load";
@@ -93,7 +93,7 @@ export default function Altcoin(props:any) {
           />
 
         </div>
-        <Testimonial />
+        {/* <Testimonial /> */}
        
       </div>
     </>

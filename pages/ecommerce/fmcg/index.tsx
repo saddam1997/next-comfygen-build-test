@@ -6,39 +6,19 @@ import JSON_DATA from "./fmcg.json";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/WhyChooseUs";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ServicesSec from "../../components/ServicesSec";
-import SolutionSec from "../../components/SolutionSec";
-import ProcessSec from "../../components/ProcessSec";
 import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
-import Features from "./components/Features";
-import Script from "next/script";
 import TechStack from "../../components/TechStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSec from "../../componentsnew/PortfolioSec";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import ServiceSection from "../../components/ServiceSection";
 import ServicesSection from "../../componentsnew/ServicesSection";
 import CallToAction from "../../components/CallToAction";
 import TrendsSection from "../../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../../componentsnew/ProcessSection";
-import AppCard from "../../componentsnew/AppCard";
-import PortfolioSlider from "../../components/PortfolioSlider";
-import HireDeveloperSec from "../../components/HireDeveloperSec";
-import IndustriesServe from "./components/IndustriesServe";
+
 import EcommerceNav from "../../componentsnew/ecommerce-navbar";
 import DeliverySection from "../../components/DeliverySection";
+import Slider from "../../components/Slider";
+import IndustriesServe from "../../components/IndustriesServe";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../../components/HeroSectionForAllPages"),
@@ -52,9 +32,7 @@ const Faq = dynamic(() => import("../../components/Faq"), {
 const Header = dynamic(() => import("../../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../../components/ContactFromCenter"),
   {
@@ -152,15 +130,15 @@ export default function ClinicalApp(props: any) {
         "Custom FMCG Delivery App Development Services",
         "AI-Based FMCG App Development",
         "Pharmaceutical FMCG App Development"
-    
+
       ],
-     
+
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-        
+
       ]
     }
     ,
@@ -236,100 +214,103 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies",
       ],
     },
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"FMCG Delivery App Development Solution",
-      "image":"https://www.comfygen.com/comfygen-images/fmcg/fmcg-about.webp",
-      "description":"Get a complete FMCG delivery app development solution tailored to your business. We create the best AI-powered FMCG apps for grocery, personal care, and packaged food delivery.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"194"}
-    }
-      ,
-      {
-        "@context": "https://schema.org/", 
-        "@type": "BreadcrumbList", 
-        "itemListElement": [{
-          "@type": "ListItem", 
-          "position": 1, 
-          "name": "Home",
-          "item": "https://www.comfygen.com"  
-        },{
-          "@type": "ListItem", 
-          "position": 2, 
-          "name": "Ecommerce Development",
-          "item": "https://www.comfygen.com/ecommerce"  
-        },{
-          "@type": "ListItem", 
-          "position": 3, 
-          "name": "FMCG Delivery App Development Company",
-          "item": "https://www.comfygen.com/ecommerce/fmcg"  
-        }]
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "FMCG Delivery App Development Solution",
+      "image": "https://www.comfygen.com/comfygen-images/fmcg/fmcg-about.webp",
+      "description": "Get a complete FMCG delivery app development solution tailored to your business. We create the best AI-powered FMCG apps for grocery, personal care, and packaged food delivery.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "194"
       }
-      ,
+    }
+    ,
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ecommerce Development",
+        "item": "https://www.comfygen.com/ecommerce"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "FMCG Delivery App Development Company",
+        "item": "https://www.comfygen.com/ecommerce/fmcg"
+      }]
+    }
+    ,
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
-     "mainEntity": [
-  {
-    "@type": "Question",
-    "name": "How much does it cost to develop an FMCG delivery app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost of developing an FMCG delivery app typically ranges from $12,000 to $70,000, depending on the features, platforms (iOS, Android, or Web), design complexity, and integrations like AI or real-time tracking. Comfygen offers affordable and scalable FMCG app development packages tailored to both startups and enterprises."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How long does it take to build an FMCG mobile app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "An FMCG mobile app can take 5 to 14 weeks to develop, depending on the number of modules, design revisions, and complexity. At Comfygen, our agile approach ensures fast delivery with regular updates and sprint-based releases for consistent progress."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Do you offer white-label FMCG app solutions?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we provide fully customizable white-label FMCG app development services. These ready-to-launch solutions come with your branding and are equipped with advanced features like order tracking, smart reordering, multi-vendor support, and secure payment integration."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What key features should an FMCG delivery app include?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Must-have features in an FMCG delivery app include user registration, product catalog, real-time delivery tracking, smart search, order scheduling, repeat ordering, secure payment gateway, and analytics dashboard. At Comfygen, we tailor these features to match your business goals and audience."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Can I integrate AI or IoT in my FMCG delivery application?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Absolutely. We integrate AI for personalized recommendations, demand forecasting, and dynamic pricing, while IoT helps with real-time inventory tracking and delivery logistics. These technologies enhance the efficiency and intelligence of your FMCG delivery operations."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Do you provide post-launch support for FMCG mobile apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, Comfygen offers complete post-launch support including bug fixes, performance optimization, version upgrades, and feature enhancements. We ensure your FMCG app remains updated, secure, and aligned with user needs and market trends."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Why choose Comfygen for FMCG app development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Comfygen is a leading FMCG app development company with 10+ years of experience, offering scalable, secure, and user-centric mobile solutions. Our expertise in AI, real-time tracking, and agile delivery makes us a reliable tech partner for FMCG startups and enterprises globally."
-    }
-  }
-]
-,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to develop an FMCG delivery app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of developing an FMCG delivery app typically ranges from $12,000 to $70,000, depending on the features, platforms (iOS, Android, or Web), design complexity, and integrations like AI or real-time tracking. Comfygen offers affordable and scalable FMCG app development packages tailored to both startups and enterprises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build an FMCG mobile app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An FMCG mobile app can take 5 to 14 weeks to develop, depending on the number of modules, design revisions, and complexity. At Comfygen, our agile approach ensures fast delivery with regular updates and sprint-based releases for consistent progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer white-label FMCG app solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide fully customizable white-label FMCG app development services. These ready-to-launch solutions come with your branding and are equipped with advanced features like order tracking, smart reordering, multi-vendor support, and secure payment integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What key features should an FMCG delivery app include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Must-have features in an FMCG delivery app include user registration, product catalog, real-time delivery tracking, smart search, order scheduling, repeat ordering, secure payment gateway, and analytics dashboard. At Comfygen, we tailor these features to match your business goals and audience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I integrate AI or IoT in my FMCG delivery application?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We integrate AI for personalized recommendations, demand forecasting, and dynamic pricing, while IoT helps with real-time inventory tracking and delivery logistics. These technologies enhance the efficiency and intelligence of your FMCG delivery operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide post-launch support for FMCG mobile apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Comfygen offers complete post-launch support including bug fixes, performance optimization, version upgrades, and feature enhancements. We ensure your FMCG app remains updated, secure, and aligned with user needs and market trends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose Comfygen for FMCG app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen is a leading FMCG app development company with 10+ years of experience, offering scalable, secure, and user-centric mobile solutions. Our expertise in AI, real-time tracking, and agile delivery makes us a reliable tech partner for FMCG startups and enterprises globally."
+          }
+        }
+      ]
+      ,
     },
   ];
 
@@ -462,7 +443,7 @@ export default function ClinicalApp(props: any) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <EcommerceNav/>
+      <EcommerceNav />
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/fmcg/fmcg-hero.webp')]">
           <HeroSectionForAllPages
@@ -533,11 +514,14 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our FMCG Apps Portfolio"
-          description="View our FMCG app development portfolio, which demonstrates innovative, scalable, and user-centric solutions. Our FMCG apps integrate real-time tracking and AI-powered automation to streamline logistics and enhance the user experience. We build future-ready FMCG delivery platforms tailored to your business needs."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our FMCG Apps Portfolio"
+            description="View our FMCG app development portfolio, which demonstrates innovative, scalable, and user-centric solutions. Our FMCG apps integrate real-time tracking and AI-powered automation to streamline logistics and enhance the user experience. We build future-ready FMCG delivery platforms tailored to your business needs."
+          />
+        </section>
 
         <TrendsSection
           heading="Advanced Technologies We Integrate to Make Future-Ready FMCG Apps"
@@ -580,7 +564,7 @@ export default function ClinicalApp(props: any) {
           description="At Comfygen, we use modern and powerful technology to build fast, secure, and easy-to-use FMCG delivery apps. Whether you need a mobile app or a website, our tech makes sure everything runs smoothly and works well on all devices."
         />
 
-    
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

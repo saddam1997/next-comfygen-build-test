@@ -9,7 +9,7 @@ import WhyChoose from "../components/WhyChooseUs";
 import Faq from "../components/Faq";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
-// import AppcardSlider from "../components/AppcardSlider";
+import AppcardSlider from "../components/AppcardSlider";
 import AboutSection from "../components/AboutSection";
 import Features from "./components/Features";
 import ServicesSection from "../componentsnew/ServicesSection";
@@ -20,13 +20,14 @@ import TechStack from "../componentsnew/TechStack";
 import DeliverySection from "../components/DeliverySection";
 import WhoCanStart from "./components/WhoCanStart";
 import Milestones from "../components/Milestones";
+import Slider from "../components/Slider";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-const AppcardSlider = dynamic(() => import("../components/AppcardSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+// const AppcardSlider = dynamic(() => import("../components/AppcardSlider"), {
+//   loading: () => <p>Loading...</p>,
+// });
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -35,9 +36,6 @@ const ContactFromCenter = dynamic(
   }
 );
 
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-});
 
 const Process = [
   {
@@ -107,23 +105,6 @@ const WhoCanStartCards = [
 ];
 
 
-const portfoliodata = [
-
-  {
-    "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
-    "title": "Food Delivery App – Food 24Hr",
-    "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-    "link": "/portfolio/food-delivery-app"
-  },
-
-  {
-    "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
-    "title": "Online Food Ordering App",
-    "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
-    "link": "/portfolio/online-food-ordering-app"
-  },
-  
-]
 
 
 let { AppService } = NEW_JSON_DATA;
@@ -491,11 +472,17 @@ export default function Ecommerce(props) {
           openModal={openModal}
         />
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Food Ordering Apps Portfolio"
-          description="Explore our diverse portfolio of food delivery app development projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations. Partner with us to build a food delivery app that’s fast, reliable, and scalable."
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Food Ordering Apps Portfolio"
+            description="Explore our diverse portfolio of food delivery app development projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations. Partner with us to build a food delivery app that’s fast, reliable, and scalable."
+          />
+        </section>
+
 
         <CallToAction
           heading="Ready to Build Your Food Delivery App?"

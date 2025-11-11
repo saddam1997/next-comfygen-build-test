@@ -10,9 +10,9 @@ import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import PortfolioSlider from "../components/PortfolioSlider";
 import NewPanel from "./components/NewPanel";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -308,7 +308,7 @@ export default function ClinicalApp(props: any) {
           href="https://www.comfygen.com/meat-delivery-app-development"
         />
 
-        <meta name="keywords" content="On-demand Meat Delivery App Development, Meat Subscription App Development, Butcher Shop App Development, White-label Meat Delivery App Solutions, Meat & Seafood Delivery App Development"/>
+        <meta name="keywords" content="On-demand Meat Delivery App Development, Meat Subscription App Development, Butcher Shop App Development, White-label Meat Delivery App Solutions, Meat & Seafood Delivery App Development" />
 
 
         {/* <!-- Robots → */}
@@ -451,11 +451,17 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Meat Delivery App Portfolio"
-          description="As a on-demand meat delivery app development company, Comfygen Technologies is proud to provide custom solutions for butcher shops, startups, and businesses. Explore our portfolio of successful meat ordering app development projects that showcase our expertise in building on-demand meat delivery apps with advanced features and smooth performance."
-        />
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Meat Delivery App Portfolio"
+            description="As a on-demand meat delivery app development company, Comfygen Technologies is proud to provide custom solutions for butcher shops, startups, and businesses. Explore our portfolio of successful meat ordering app development projects that showcase our expertise in building on-demand meat delivery apps with advanced features and smooth performance."
+          />
+        </section>
+
+
 
         <NewPanel />
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">

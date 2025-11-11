@@ -28,12 +28,13 @@ import CallToAction from "../components/CallToAction";
 import HireDeveloper from "../components/HireDeveloper";
 import InfoSectionLeft from "../components/InfoSectionLeft";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
+import IndustriesServe from "../components/IndustriesServe";
 // import BlockchainNav from "../blockchain/blockchain-navbar";
 
 const Header = dynamic(() => import("../components/Header"), {

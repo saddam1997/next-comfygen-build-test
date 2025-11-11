@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/whitelabelcryptoexchangedevelopmen.json";

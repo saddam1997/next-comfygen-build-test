@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./desktop-wallet-development/taxi.json";
@@ -13,8 +12,7 @@ import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ProcessSec from "../components/ProcessSec";
-import PortfolioSlider from "../components/PortfolioSlider";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import {
   IconBike,
   IconBolt,
@@ -28,6 +26,8 @@ import {
 import SolutionSec from "../componentsnew/SolutionSec";
 // import PortfolioSec from "../componentsnew/PortfolioSec";
 import NewTeckStack from "../componentsnew/NewTeckStack";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -39,7 +39,7 @@ const ContactFromCenter = dynamic(
   }
 );
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -382,10 +382,6 @@ export default function Ecommerce(props) {
         <link rel="canonical" href="https://www.comfygen.com/desktop-wallet-development" />
 
         <meta name="keywords" content="Crypto Desktop Wallet Development, Web & Desktop Wallet Solutions, Multi-Currency Wallet Development, DeFi & NFT Wallet Integration, White-Label Crypto Wallet Development, crypto wallet solutions, desktop wallet software, multi-currency crypto wallets, DeFi wallet development, NFT wallet development, white-label blockchain wallet, secure crypto wallet development" />
-
-
-
-
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -477,11 +473,18 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Portfolio of Mobile Crypto Wallet Development Services"
-          description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Portfolio of Mobile Crypto Wallet Development Services"
+            description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
+          />
+        </section>
+
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

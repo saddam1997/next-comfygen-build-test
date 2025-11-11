@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -17,7 +15,6 @@ import WhyChoose from "../components/WhyChooseUs";
 import ProcessSec from "../components/ProcessSec";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import { IconAugmentedReality, IconBrowser, IconDeviceMobile, IconDevices,} from '@tabler/icons-react';
 import TechStack from "../components/TechStack";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ClientTestimonials from "../components/ClientTestimonials";

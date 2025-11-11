@@ -1,5 +1,4 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
@@ -16,7 +15,8 @@ import HireDeveloper from "../componentsnew/HireDeveloper";
 import FeaturesTabs from "../componentsnew/FeaturesTabs";
 import IconCard from "../componentsnew/IconCard";
 import EcommerceNav from "../componentsnew/ecommerce-navbar";
-import PortfolioSlider from "../components/PortfolioSlider";
+
+import Slider from "../components/Slider";
 
 const Advanced = [
   {
@@ -237,11 +237,18 @@ export default function Ecommerce(props) {
           description="Discover how our streamlined process transforms your vision into a high-performing eCommerce app, As a trusted eCommerce development Company in Jaipur, India"
           processSlides={Process}
         />
-       <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Discover the expertise we have in e-commerce development by exploring our recent work"
-          description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Discover the expertise we have in e-commerce development by exploring our recent work"
+            description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
+          />
+        </section>
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
@@ -15,10 +13,12 @@ import HireDeveloper from "../components/HireDeveloper";
 import Faq from "../components/Faq";
 import WhyChoose from "../components/WhyChooseUs";
 import CallToAction from "../components/CallToAction";
-import PortfolioSlider from "../components/PortfolioSlider";
+
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 
 
@@ -595,11 +595,17 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our White Label Crypto Wallet Development Portfolio"
-          description="At Comfygen, we specialize in delivering secure, customizable, and market-ready white label cryptocurrency wallet solutions. Our portfolio showcases a diverse range of projects, each tailored to meet the unique needs of our clients while ensuring scalability and user engagement."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our White Label Crypto Wallet Development Portfolio"
+            description="At Comfygen, we specialize in delivering secure, customizable, and market-ready white label cryptocurrency wallet solutions. Our portfolio showcases a diverse range of projects, each tailored to meet the unique needs of our clients while ensuring scalability and user engagement."
+          />
+        </section>
+
+
 
         <CallToAction
           heading="Ready to Launch Your White Label Crypto Wallet?"

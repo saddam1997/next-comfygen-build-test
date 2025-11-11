@@ -10,23 +10,12 @@ import HireDeveloper from "../components/HireDeveloper";
 import DeliverySection from "../components/DeliverySection";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-} from "@tabler/icons-react";
 import ServicesSection from "../componentsnew/ServicesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import Features from "./components/Features";
+import Slider from "../components/Slider";
 
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
   loading: () => <p>Loading...</p>,
@@ -80,23 +69,7 @@ const Process = [
 
 
 
-const portfoliodata = [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/On-Demand Ice Cream Delivery App.webp",
-    "title": "On-Demand Ice Cream Delivery App",
-    "description": "A US-based startup partnered with Comfygen to launch Ice-creamGo, an on-demand app with AI-powered flavor suggestions, real-time GPS tracking, and blockchain-secured payments. Result: 40% increase in online orders within 3 months.",
-    "link": "#",
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Subscription-Based Ice Cream App.webp",
-    "title": "Subscription-Based Ice Cream App",
-    "description": "For a European ice cream chain, we built Cream Mart, a subscription-based delivery app offering flexible plans, automated billing, and AI-driven inventory forecasting. Result: 25% reduction in wastage and 60% repeat customer rate.",
-    "link": "#",
-  }
 
-
-
-]
 
 
 
@@ -119,7 +92,7 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -478,11 +451,18 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Ice Cream Delivery App Portfolio"
-          description="At Comfygen, we have successfully delivered innovative Ice Cream Delivery App Development projects for global clients. Our portfolio showcases feature-rich, scalable, and AI-powered mobile solutions that help brands deliver frozen treats at the tap of a button."
-        />
+
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Ice Cream Delivery App Portfolio"
+            description="At Comfygen, we have successfully delivered innovative Ice Cream Delivery App Development projects for global clients. Our portfolio showcases feature-rich, scalable, and AI-powered mobile solutions that help brands deliver frozen treats at the tap of a button."
+          />
+        </section>
+
+
         <section className=" lg:py-10 py-10">
           <Features />
         </section>

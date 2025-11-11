@@ -18,7 +18,7 @@ import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import ProcessSec from "../componentsnew/ProcessSec";
@@ -31,6 +31,7 @@ import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 import BlockchainIcon from "../componentsnew/BlockchainIcon";
+import IndustriesServe from "../components/IndustriesServe";
 
 const GuidSectionBlockchain = dynamic(
   () => import("./components/GuidSectionBlockchain"),

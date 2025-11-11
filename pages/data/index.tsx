@@ -11,8 +11,8 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import ServicesSection from "../componentsnew/ServicesSection";
 import CallToAction from "../components/CallToAction";
 import ProcessSection from "../componentsnew/ProcessSection";
-import PortfolioSlider from "../components/PortfolioSlider";
 import TeckStack from "./components/TeckStack";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -89,7 +89,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-   
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -114,15 +114,15 @@ export default function ClinicalApp(props: any) {
         "AI & Machine Learning Solutions",
         "MS Excell",
         "predictive models"
-    
+
       ],
-     
+
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-        
+
       ]
     },
     {
@@ -198,15 +198,18 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Top Data Services Provider | AI, BI & Big Data Solutions",
-      "image":"https://www.comfygen.com/comfygen-images/data/data-about.webp",
-      "description":"Comfygen Technologies is a leading data services provider offering analytics, AI, BI dashboards, and big data solutions to help businesses make smarter, faster decisions.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"115"}
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Top Data Services Provider | AI, BI & Big Data Solutions",
+      "image": "https://www.comfygen.com/comfygen-images/data/data-about.webp",
+      "description": "Comfygen Technologies is a leading data services provider offering analytics, AI, BI dashboards, and big data solutions to help businesses make smarter, faster decisions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "115"
+      }
     },
     {
       "@context": "https://schema.org/",
@@ -244,7 +247,7 @@ export default function ClinicalApp(props: any) {
             "text": "Absolutely. Our AI and ML experts can build and integrate predictive models, recommendation systems, or automation tools into your existing infrastructure. Whether you're using cloud platforms or legacy systems, we ensure seamless deployment and real-time model performance for business optimization."
           }
         }
-      ],      
+      ],
     },
   ];
 
@@ -376,11 +379,16 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Portfolio of Data-Driven Success"
-          description="We’ve empowered businesses across industries with custom data solutions that deliver measurable results. Here are a few real-world examples of how our data services transformed client operations, improved decisions, and fueled growth."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio of Data-Driven Success"
+            description="We’ve empowered businesses across industries with custom data solutions that deliver measurable results. Here are a few real-world examples of how our data services transformed client operations, improved decisions, and fueled growth."
+          />
+        </section>
+
 
         <CallToAction
           heading="Let’s Make Your Data Work Smarter"

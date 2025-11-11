@@ -26,6 +26,29 @@
     "desc": "Yes, we offer complete post-launch support including app maintenance, feature updates, bug fixing, and technical support. Our team ensures your flower delivery app runs smoothly and stays up to date with the latest trends and platform updates."
   }
 ],
+
+
+"portfoliodata":[
+  {
+    "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio1.webp",
+    "title": "Same-Day Flower Delivery App for Local Florists",
+    "description": "The app allows customers to browse bouquets, select delivery time slots, and track orders in real-time. It helped the client increase online orders by 70% in just 3 months.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/portfolio2.webp",
+    "title": "Flower Subscription App for a Gifting Brand",
+    "description": "This Florist app was built for a gifting startup offering flower subscription services. With smart scheduling, recurring billing, and push reminders, it now processes over 500 automated deliveries monthly.",
+    "link": "https://www.comfygen.com/contact-us"
+  }
+
+],
+
+
+
+
+
 "servicesData": [
     {
       "title": "On-Demand Flower Delivery App Development",

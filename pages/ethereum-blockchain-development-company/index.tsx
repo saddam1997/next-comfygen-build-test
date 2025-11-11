@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
 import LazyLoad from "react-lazy-load";
@@ -113,7 +110,7 @@ const Process = [
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -233,9 +230,9 @@ export default function Ecommerce(props) {
 
     ],
   };
-  const jsonLdData = [
-    
 
+
+  const jsonLdData = [
     {
       "@context": "https://schema.org",
       "@type": "Service",

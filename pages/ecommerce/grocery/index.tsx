@@ -11,17 +11,16 @@ import Features from "./components/Features";
 
 import TechStack from "../../components/TechStack";
 import ClientTestimonials from "../../components/ClientTestimonials";
-
 import ServicesSection from "../../componentsnew/ServicesSection";
 import CallToAction from "../../components/CallToAction";
 import TrendsSection from "../../componentsnew/TrendsSection";
 import CoreFeaturesSection from "../../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../../componentsnew/ProcessSection";
 import AppCard from "../../componentsnew/AppCard";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import HireDeveloperSec from "../../components/HireDeveloperSec";
 import EcommerceNav from "../../componentsnew/ecommerce-navbar";
 import DeliverySection from "../../components/DeliverySection";
+import Slider from "../../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../../components/HeroSectionForAllPages"),
@@ -567,11 +566,16 @@ export default function ClinicalApp(props: any) {
           openModal={openModal}
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Grocery App Development Portfolio"
-          description="Comfygen provides the best <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >e-commerce grocery app development solutions</a>, whether you are a hyperlocal retailer or a global delivery chain. Take a look at some of our standout grocery delivery apps designed to simplify and speed up grocery shopping."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Grocery App Development Portfolio"
+            description="Comfygen provides the best <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >e-commerce grocery app development solutions</a>, whether you are a hyperlocal retailer or a global delivery chain. Take a look at some of our standout grocery delivery apps designed to simplify and speed up grocery shopping."
+          />
+        </section>
+
 
         <CallToAction
           heading="Do You Wish To Build An App Like Walmart?"

@@ -20,8 +20,26 @@
     "title": "Do you offer post-launch support?",
     "desc": "Yes, Comfygen provides comprehensive post-launch support for language learning apps, including performance monitoring, bug fixes, security updates, and feature enhancements. Our dedicated team ensures your app remains up-to-date, secure, and scalable to meet evolving user needs and market trends."
   }
-]
-,
+],
+
+
+"portfoliodata":[
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/ai-powered-language-tutor.webp",
+    "title": "AI-Powered Language Tutor App for Beginners",
+    "description": "We developed an intuitive language learning app designed specifically for beginners. The app features interactive lessons, voice recognition for pronunciation feedback, and AI-based chatbots for real-time practice.",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/language-learning-app/multilingual-language.webp",
+    "title": "Multilingual Language Learning App for Schools",
+    "description": "Built for educational institutions, this app supports multiple languages and allows schools to assign, manage, and monitor language courses from a central dashboard. Integrated with an LMS and designed with child-friendly UI, the platform supports individual and classroom-based learning with performance insights for teachers.",
+    "link": "#"
+  }
+],
+
+
 
  "servicesData": [
   {

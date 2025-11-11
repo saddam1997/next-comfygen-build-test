@@ -9,7 +9,6 @@ import AboutSection from "../components/AboutSection";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-import PortfolioSlider from "../components/PortfolioSlider";
 import CallToAction from "../components/CallToAction";
 import NewSection from "./components/NewSection";
 import Features from "./components/Features";

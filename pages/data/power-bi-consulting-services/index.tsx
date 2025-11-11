@@ -10,11 +10,12 @@ import AboutSection from "../../components/AboutSection";
 import HireDeveloper from "../../components/HireDeveloper";
 import ClientTestimonials from "../../components/ClientTestimonials";
 import WhoCanStart from "../../componentsnew/WhoCanStart";
-import PortfolioSlider from "../../components/PortfolioSlider";
-import IndustriesServe from "./components/IndustriesServe";
+
 import ProcessSec from "../../components/ProcessSec";
 import NewTeckStack from "../../componentsnew/NewTeckStack";
 import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
+import Slider from "../../components/Slider";
+import IndustriesServe from "../../components/IndustriesServe";
 
 
 const Faq = dynamic(() => import("../../components/Faq"), {
@@ -502,11 +503,15 @@ export default function ClinicalApp(props: any) {
           cards={WhoCanStartCards}
         />
 
-        <PortfolioSlider
-          techData={portfolioData}
-          heading="Portfolio of Our Microsoft Power BI consulting services"
-          description="At Comfygen, we deliver Microsoft Power BI consulting services that solve real problems and unlock real value. Our portfolio covers a wide range of industries and use cases—each project designed to meet specific business goals, streamline reporting, and turn data into a strategic advantage."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={portfolioData}
+            heading="Portfolio of Our Microsoft Power BI consulting services"
+            description="At Comfygen, we deliver Microsoft Power BI consulting services that solve real problems and unlock real value. Our portfolio covers a wide range of industries and use cases—each project designed to meet specific business goals, streamline reporting, and turn data into a strategic advantage."
+          />
+        </section>
 
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

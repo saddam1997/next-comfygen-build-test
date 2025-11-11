@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
 import LazyLoad from "react-lazy-load";
@@ -103,7 +102,7 @@ const technologyData = [
 ];
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [currentCount, setCurrentCount] = useState(0);
   const sliderRef = useRef(null);

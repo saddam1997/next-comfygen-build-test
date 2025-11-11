@@ -10,7 +10,7 @@ import Header from "../componentsnew/Header";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import ProcessSec from "../componentsnew/ProcessSec";
 import PortfolioSec from "../componentsnew/PortfolioSec";
@@ -19,6 +19,7 @@ import WhyChoose from "../componentsnew/WhyChooseUs";
 import Faq from "../componentsnew/Faq";
 import CallToAction from "../components/CallToAction";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
+import IndustriesServe from "../components/IndustriesServe";
 
 
 const Process = [

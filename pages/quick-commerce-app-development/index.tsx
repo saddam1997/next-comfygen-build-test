@@ -24,8 +24,8 @@ import TrendsSection from "../componentsnew/TrendsSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import AppCard from "../componentsnew/AppCard";
-import PortfolioSlider from "../components/PortfolioSlider";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
   loading: () => <p>Loading...</p>,
@@ -573,11 +573,17 @@ export default function ClinicalApp(props: any) {
           subtitle="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
           cards={CardClone} openModal={openModal} />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Quick Commerce App Development Portfolio"
-          description="At Comfygen Technologies, we’ve delivered high-performance quick commerce apps tailored to diverse industries—from groceries to healthcare. Each project is built with speed, scalability, and seamless UX at its core, helping our clients lead in the 10-minute delivery market."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Quick Commerce App Development Portfolio"
+            description="At Comfygen Technologies, we’ve delivered high-performance quick commerce apps tailored to diverse industries—from groceries to healthcare. Each project is built with speed, scalability, and seamless UX at its core, helping our clients lead in the 10-minute delivery market."
+          />
+        </section>
+
+ 
 
         <CallToAction
           heading="Ready to Launch Your Own 10-Minute Delivery App?"
@@ -626,7 +632,7 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <DeliverySection  />
+        <DeliverySection />
         <HireDeveloper
           heading="Hire Our Dedicated Q-Commerce App Developers"
           text="Looking to build a high-speed, real-time delivery app? Hire expert Q-commerce app developers from Comfygen Technologies to bring your quick commerce vision to life. We specialize in developing custom, scalable, and performance-driven apps designed for instant deliveries and seamless user experiences."

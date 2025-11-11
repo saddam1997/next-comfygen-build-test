@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
@@ -35,14 +33,15 @@ import TechStack from "../componentsnew/TechStack";
 import LatestTechnology from "../componentsnew/LatestTechnology";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import Faq from "../components/Faq";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import AboutSection from "../componentsnew/AboutSection";
 import Header from "../componentsnew/Header";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import MobileHero from "./components/MobileHero";
 import IndustriesForm from "./components/Industries";
 import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSlider from "../components/PortfolioSlider";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -579,11 +578,16 @@ export default function Mobile(props: any) {
           subheading="The applications we develop are powerful and user-friendly, tailored to the needs of your industry. Whether you're a startup or an established brand, our custom mobile app development solutions help you attract more users, boost engagement, and grow your business."
           techData={technologyData}
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore Our Portfolio of Successful Mobile App Projects"
-          description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Portfolio of Successful Mobile App Projects"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
+
 
         <LatestTechnology
           heading="Emerging Technologies We Leverage For Mobile Application Development"

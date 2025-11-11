@@ -11,12 +11,13 @@ import AboutSection from '../componentsnew/AboutSection';
 import ServicesSec from '../componentsnew/ServicesSec';
 import TechStack from '../componentsnew/TechStack';
 import ProcessSec from '../componentsnew/ProcessSec';
-import IndustriesServe from '../componentsnew/IndustriesServe';
+
 import WhyChoose from '../componentsnew/WhyChooseUs';
 import HireDeveloper from '../componentsnew/HireDeveloper';
 import Faq from '../componentsnew/Faq';
 import Header from '../componentsnew/Header';
 import ContactFromCenter from '../componentsnew/ContactFromCenter';
+import IndustriesServe from '../components/IndustriesServe';
 
 
 

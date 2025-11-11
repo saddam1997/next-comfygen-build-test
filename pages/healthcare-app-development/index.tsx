@@ -5,14 +5,13 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/healthCare.json";
 import LazyLoad from "react-lazy-load";
-import ServiceBenefit from "./components/ServiceBenifit";
 import { FaDotCircle } from "react-icons/fa";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import { IconApps, IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {  IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
+import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar} from '@tabler/icons-react';
 import PortfolioSec from "../components/PortfolioSec";
 import ProcessSec from "../components/ProcessSec";
 import Features from "../components/Features";
@@ -21,8 +20,7 @@ import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import Milestones from "../components/Milestones";
-import Slider from "../components/Slider";
-import axios from "axios";
+
 
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), { loading: () => <p>Loading...</p>, });
 const FaQ = dynamic(() => import("../components/Faq"), {
@@ -32,9 +30,7 @@ const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -425,7 +421,7 @@ const jsonLdData = [
 ];
 
 
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   let {
     Frequently,
@@ -745,21 +741,11 @@ export default function Mobile(props) {
         />
 
         <FaQ faqData={Frequently} title="Frequently Asked Questions" />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
 
-export async function getServerSideProps({res}) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
 
 
 

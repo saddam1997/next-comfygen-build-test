@@ -12,9 +12,9 @@ import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import NewTeckStack from "../componentsnew/NewTeckStack";
 import WhoCanStart from "./components/WhoCanStart";
-import PortfolioSlider from "../components/PortfolioSlider";
 import NewPanel from "./components/NewPanel";
 import DeliverySection from "../components/DeliverySection";
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -513,11 +513,16 @@ export default function ClinicalApp(props: any) {
           cards={WhoCanStartCards}
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Our Pizza Delivery App Development Portfolio"
-          description="Comfygen creates high-quality pizza delivery apps that help restaurants, franchises, and startups enhance their online ordering experience. We develop feature-rich, scalable, and user-friendly pizza delivery apps."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Pizza Delivery App Development Portfolio"
+            description="Comfygen creates high-quality pizza delivery apps that help restaurants, franchises, and startups enhance their online ordering experience. We develop feature-rich, scalable, and user-friendly pizza delivery apps."
+          />
+        </section>
+
 
         <NewPanel />
 

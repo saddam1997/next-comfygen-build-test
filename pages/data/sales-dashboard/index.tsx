@@ -21,11 +21,11 @@ import Header from "../../componentsnew/Header";
 import ContactFromCenter from "../../componentsnew/ContactFromCenter";
 import MobileHero from "./components/MobileHero";
 import ClientTestimonials from "../../components/ClientTestimonials";
-import PortfolioSlider from "../../components/PortfolioSlider";
 import CallToAction from "../../components/CallToAction";
+import Slider from "../../components/Slider";
 
 const jsonLdData = [
-  
+
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -182,7 +182,7 @@ const jsonLdData = [
 ];
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -442,11 +442,15 @@ export default function Mobile(props: any) {
           description1="Key Features of Power BI Sales Dashboards:"
         />
 
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Explore our Portfolio of Power BI Services "
-          description=""
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore our Portfolio of Power BI Services "
+            description=""
+          />
+        </section>
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

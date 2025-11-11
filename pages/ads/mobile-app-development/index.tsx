@@ -18,8 +18,8 @@ import ContactFromCenter from "../../components/ContactFromCenter";
 import ProcessSec from "./components/ProcessSec";
 import HeroSectionForAllPages from "./components/HeroSectionForAllPages";
 import Header from "./components/Header";
-import PortfolioSlider from "./components/PortfolioSlider";
-import ClientTestimonials from "../../components/ClientTestimonials";
+// import ClientTestimonials from "../../components/ClientTestimonials";
+import Slider from "../../components/Slider";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org",
@@ -406,11 +406,19 @@ export default function Mobile(props: any) {
           description="As a reliable mobile application development company . Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs."
           processSlides={Process}
         />
-        <PortfolioSlider
-          techData={JSON_DATA.portfoliodata}
-          heading="Medicine Delivery App Development Success Stories"
-          description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
-        />
+
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Medicine Delivery App Development Success Stories"
+            description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
+          />
+        </section>
+
+   
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -437,10 +445,10 @@ export default function Mobile(props: any) {
           ]}
         />
 
-        <ClientTestimonials
+        {/* <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
       </div>
     </>
   );

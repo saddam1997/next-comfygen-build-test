@@ -9,11 +9,12 @@ import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../componentsnew/AboutSection";
-import IndustriesServe from "../componentsnew/IndustriesServe";
+
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import Features from "./components/Features";
-import PortfolioSlider from "../components/PortfolioSlider";
+import Slider from "../components/Slider";
+import IndustriesServe from "../components/IndustriesServe";
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -66,33 +67,8 @@ const Process = [
 ];
 
 
-const portfoliodata = [
-  {
-    image: "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
-    title: "FinFlow - A Personal Finance Management App",
-    description: "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently. The app includes a multitude of features; such as expense tracking, budget creation, finance goal setting, etc. These features make the app more efficient.",
-    link: "/portfolio/personal-finance-management-app"
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
-    title: "PayMaster - A Mobile Payment Solution",
-    description: "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
-    link: "/portfolio/mobile-payment-app-solution"
-  },
-  {
-    image: "https://www.comfygen.com/image/portfolio-pay-master.webp",
-    title: "InvestSmart - A Stock Trading and Investment App",
-    description: "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference. The interface is user-friendly and suited for both beginners and seasoned investors. Secure logins, data encryption, and instant alerts ensure users' investments are protected. It has become a central platform for all who wish to manage personal investments with minimal effort.",
-    link: "/portfolio/stock-trading-finance-app"
-  },
-  {
-    image: "https://www.comfygen.com/image/hero-image-blockchain-based-fintech-app.webp",
-    title: "Blockchain-Based FinTech Applications",
-    description: "Our client required a secure and transparent Blockchain-based FinTech application development solution to enhance financial transactions, ensure data integrity, and improve transaction efficiency. As a top-rated custom FinTech mobile app development company, we built a decentralized and tamper-proof platform that integrates smart contracts, digital asset management, and real-time transaction processing.",
-    link: "/portfolio/blockchain-based-fintech-app"
-  }
-];
-;
+
+
 
 
 export default function Mobile(props) {
@@ -238,21 +214,21 @@ export default function Mobile(props) {
           "reviewCount": "765"
         }
       },
-     {
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Home",
-    "item": "https://www.comfygen.com"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Mobile App Development",
-    "item": "https://www.comfygen.com/finance-app-development"  
-  }]
-},
+      {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mobile App Development",
+          "item": "https://www.comfygen.com/finance-app-development"
+        }]
+      },
       {
         "@type": "FAQPage",
         "mainEntity": [
@@ -368,7 +344,7 @@ export default function Mobile(props) {
         />
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
+      <Header />
       {/* </LazyLoad> */}
       <div className="pt-16">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp')]">
@@ -422,13 +398,20 @@ export default function Mobile(props) {
           <WildSolution faqData={JSON_DATA.Solutions} title={""} />
         </div>
 
-          <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Fintech Apps Portfolio"
-          description="Our team is brilliant at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
-        />
 
-         <section>
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Fintech Apps Portfolio"
+            description="Our team is brilliant at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
+          />
+        </section>
+
+
+
+        <section>
           <Features />
         </section>
         <section className="py-10 lg:py-16  bg-gradient-to-r from-[#272868] to-[#5556D1]">
@@ -506,7 +489,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        
+
       </div>
     </>
   );

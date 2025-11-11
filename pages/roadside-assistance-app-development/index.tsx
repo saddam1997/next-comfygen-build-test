@@ -12,10 +12,7 @@ import Features from "./components/Features";
 import ClientTestimonials from "../components/ClientTestimonials";
 import CardItem from "../components/CardItem";
 import NewTeckStack from "../componentsnew/NewTeckStack";
-
-const PortfolioSlider = dynamic(() => import("../components/PortfolioSlider"), {
-  loading: () => <p>Loading...</p>,
-});
+import Slider from "../components/Slider";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -116,7 +113,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -472,11 +469,15 @@ export default function ClinicalApp(props: any) {
           techData={JSON_DATA.cardData2}
         />
 
-        <PortfolioSlider
-          techData={portfoliodata}
-          heading="Our Roadside Assistance App Development Portfolio"
-          description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={portfoliodata}
+            heading="Our Roadside Assistance App Development Portfolio"
+            description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
+          />
+        </section>
+
 
         <Features />
 
