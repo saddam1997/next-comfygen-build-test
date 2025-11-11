@@ -89,12 +89,12 @@ function Slider({ projects, heading, description }) {
 
           {/* Navigation */}
           <div className="flex justify-center gap-4 mt-10">
-            <button onClick={prevSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
+            <button aria-label="prev Slide" onClick={prevSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <button onClick={nextSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
+            <button aria-label="next Slide" onClick={nextSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -105,6 +105,7 @@ function Slider({ projects, heading, description }) {
           <div className="flex justify-center gap-2 mt-6">
             {projects?.map((_:any, index:any) => (
               <button
+              aria-label="Current Slide"
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
