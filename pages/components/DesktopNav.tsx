@@ -1770,7 +1770,7 @@ export default function DesktopNav(props: any) {
                             </ul>
                           )}
 
-11111111111111111111111111111
+
                           {activeTab === "Tab2" && (
                             <ul className="text-sm font-medium space-y-2">
                               {Other.map((elem: any, index: any) => {
