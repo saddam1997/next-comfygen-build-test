@@ -56,6 +56,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
   // let { initialData } = props;
   const { initialData } = pageProps; // 👈 now available here
 
+  // console.log(initialData, "initialData")
+
   const router = useRouter();
 
   const [loaded, setLoaded] = useState(false);

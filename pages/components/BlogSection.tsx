@@ -47,7 +47,7 @@ export default function BlogSection(props:any) {
                           <button className="text-[#000] text-base rounded-full border border-[#000] py-1.5 px-5">Categories</button>
                         </div>
                         <div>
-                          <button className="text-[#000] text-base flex items-center gap-2 "><FaCalendarAlt /> 4 Aug 2024</button>
+                          {/* <button className="text-[#000] text-base flex items-center gap-2 "><FaCalendarAlt /> 4 Aug 2024</button> */}
                         </div>
                       </div>
                       <div className="flex flex-col justify-between space-y-3">
