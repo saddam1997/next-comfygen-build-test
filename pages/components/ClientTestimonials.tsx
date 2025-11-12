@@ -97,22 +97,22 @@ export default function ClientTestimonials({
   const goToNext = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    setCurrentIndex((prev) => (prev + 1) % testimonials?.length);
     animationFrame.current = requestAnimationFrame(() => setIsTransitioning(false));
   };
 
   const goToPrev = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex((prev) => (prev - 1 + testimonials?.length) % testimonials?.length);
     animationFrame.current = requestAnimationFrame(() => setIsTransitioning(false));
   };
 
   // Generate visible slides only
   const visibleSlides = [];
   for (let i = 0; i < slidesToShow + 1; i++) {
-    const index = (currentIndex + i) % testimonials.length;
-    visibleSlides.push(testimonials[index]);
+    const index = (currentIndex + i) % testimonials?.length;
+    visibleSlides?.push(testimonials[index]);
   }
 
   return (
@@ -154,16 +154,16 @@ export default function ClientTestimonials({
                 transform: `translate3d(-${currentIndex * (100 / slidesToShow)}%, 0, 0)`,
               }}
             >
-              {visibleSlides.map((testimonial, i) => (
+              {visibleSlides?.map((testimonial, i) => (
                 <div key={i} className="px-4 flex-shrink-0" style={{ width: `${100 / slidesToShow}%` }}>
                   <div className="p-6 space-y-4 rounded-md shadow-lg border border-gray-200 h-full flex flex-col bg-white hover:shadow-xl transition-shadow duration-300">
                     <p className="text-gray-700 text-base flex-grow">
                       {isExpanded && expandedIndex === i
-                        ? testimonial.text
-                        : testimonial.text.length > 200
-                        ? `${testimonial.text.slice(0, 200)}...`
-                        : testimonial.text}
-                      {testimonial.text.length > 200 && (
+                        ? testimonial?.text
+                        : testimonial?.text?.length > 200
+                        ? `${testimonial?.text?.slice(0, 200)}...`
+                        : testimonial?.text}
+                      {testimonial?.text?.length > 200 && (
                         <button
                           aria-label="is Expanded"
                           onClick={() => toggleReadMore(i)}
@@ -174,8 +174,8 @@ export default function ClientTestimonials({
                       )}
                     </p>
                     <div>
-                      <p className="text-gray-900 font-semibold">{testimonial.name}</p>
-                      <p className="text-blue-600">({testimonial.title})</p>
+                      <p className="text-gray-900 font-semibold">{testimonial?.name}</p>
+                      <p className="text-blue-600">({testimonial?.title})</p>
                     </div>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export default function ClientTestimonials({
 
           {/* Dots */}
           <div className="flex justify-center gap-2 mt-4">
-            {testimonials.map((_, index) => (
+            {testimonials?.map((_, index) => (
               <button
                 key={index}
                 onClick={() => {

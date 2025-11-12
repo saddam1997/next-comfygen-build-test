@@ -103,16 +103,23 @@ function Slider({ projects, heading, description }) {
 
           {/* Dots */}
           <div className="flex justify-center gap-2 mt-6">
-            {projects?.map((_: any, index: any) => (
+            {projects?.map((_: any, index: number) => (
               <button
-                aria-label="Current Slide"
                 key={index}
+                aria-label={`Go to slide ${index + 1}`}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index ? 'bg-indigo-600 w-8' : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-              />
+                className="flex items-center justify-center w-8 h-8" // <-- larger tap area (32×32 px)
+              >
+                <span
+                  className={`block w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                      ? 'bg-indigo-600 w-6' // active indicator larger
+                      : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                />
+              </button>
             ))}
           </div>
+
         </div>
       </div>
     </div>
