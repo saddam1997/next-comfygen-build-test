@@ -1,4 +1,3 @@
-
 import "../styles/globals.css";
 import React, { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
@@ -266,3 +265,5 @@ export async function getStaticProps() {
     revalidate: 86400, // 24 hours
   };
 }
+
+
