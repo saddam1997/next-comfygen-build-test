@@ -14,7 +14,7 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                     </p>
                 </div>
                 <div className="grid py-10 text-left lg:grid-cols-3 md:grid-cols-2 2xl:gap-8 gap-4">
-                    {techData && techData.map((techItem, index) => (
+                    {techData && techData.map((techItem:any, index:any) => (
                         <div
                             key={index}
                             className="bg-[#FAFAFA] p-6 border border-[#5556D1]/10 group rounded-md space-y-4 hover:bg-[#5556D1]/10 hover:border-[#5556D1] cursor-pointer transition-all duration-200"

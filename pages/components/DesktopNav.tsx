@@ -1250,7 +1250,8 @@ export default function DesktopNav(props: any) {
                             </div>
                           </li>
 
-                          <li
+                          <Link
+                            href="/blockchain-development"
                             onClick={() => handleTabClick("Tab2")}
                             className={
                               activeTab === "Tab2"
@@ -1266,18 +1267,19 @@ export default function DesktopNav(props: any) {
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                <Link
+                                {/* <Link
                                   href="/blockchain-development"
                                   className="flex items-start gap-2"
                                 >
                                   Blockchain App Development
-                                </Link>
+                                </Link> */}
+                                Blockchain App Development
                               </p>
                               <span className="text-[#212121]/80 text-sm font-normal">
                                 Secure Blockchain-Based App Solutions
                               </span>
                             </div>
-                          </li>
+                          </Link>
 
                           <li
                             onClick={() => handleTabClick("Tab3")}

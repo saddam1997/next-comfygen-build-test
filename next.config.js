@@ -21,7 +21,7 @@
 //   },
 //   compress: true,
 // })
-const redirects = require('./redirects'); 
+const redirects = require('./redirects');
 
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -37,7 +37,7 @@ const nextConfig = {
   },
 
   reactStrictMode: true,
-
+  compress: true,
   images: {
     remotePatterns: [
       {
@@ -65,10 +65,10 @@ const nextConfig = {
   // ✅ Add your redirects here
 
 
-   async redirects() {
+  async redirects() {
     return redirects; // 👈 clean and maintainable
   },
-  
+
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
