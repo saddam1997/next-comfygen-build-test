@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import FaqSection from "../components/FaqSection";
 import JSON_DATA from "./json/baccarat.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
@@ -20,31 +18,11 @@ import HireDeveloper from "../components/HireDeveloper";
 import CardItem from "../components/CardItem";
 import SolutionSec from "../components/SolutionSec";
 import {  IconCertificate, IconDeviceGamepad2,IconGift, IconShieldCheck, IconTrophy, IconUserOff} from '@tabler/icons-react';
-import { IconChartBar, } from '@tabler/icons-react';
-const ModusSection = dynamic(() => import("../components/ModusSectionNew"), {
-  loading: () => <p>Loading...</p>,
-});
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
 });

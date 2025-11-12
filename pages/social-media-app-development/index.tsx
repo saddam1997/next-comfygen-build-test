@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
@@ -28,9 +26,6 @@ const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),

@@ -19,23 +19,7 @@ import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(

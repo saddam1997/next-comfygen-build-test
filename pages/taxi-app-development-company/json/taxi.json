@@ -31,15 +31,52 @@
       "description": "Transform your car rental business with a smart booking system that offers flexible rental options, automated billing, and real-time vehicle tracking for both short-term and long-term leasing services."
     }
   ],
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Our Dedicated Taxi App Developer Specializing in Clones of Popular Taxi Apps",
       "desc": "Looking to launch a high-performing taxi booking app that can compete with industry leaders? At Comfygen, we specialize in developing cutting-edge Taxi App Clones inspired by the most successful ride-hailing platforms. Our ready-made yet fully customizable solutions help you enter the market quickly while offering a seamless user experience."
     }
   ],
-  
-  "consultancyData" :[
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+      "title": "Urban Ride-Hailing Startup",
+      "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
+      "link": "/portfolio/ride-hailing-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
+      "title": "Corporate Taxi Service Provider",
+      "description": "Challenge: A corporate taxi service needed a streamlined solution for employee transportation.",
+      "link": "/portfolio/corporate-taxi-service-provider"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
+      "title": "Eco-Friendly EV Taxi Service",
+      "description": "Challenge: A client wanted to launch an EV-based taxi service to promote sustainability.",
+      "link": "/portfolio/ev-taxi-service"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
+      "title": "Tourism Taxi Service",
+      "description": "Challenge: A tourism company needed a platform for seamless sightseeing and intercity travel.",
+      "link": "/portfolio/tourism-taxi-booking-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
+      "title": "Logistics & Delivery Service",
+      "description": "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
+      "link": "/portfolio/logistics-delivery-taxi-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/emergency-healthcare-transport.webp",
+      "title": "Emergency Healthcare Transport",
+      "description": "Challenge: A healthcare provider needed a reliable app for patient and emergency transport.",
+      "link": "/portfolio/healthcare-transport-taxi-app"
+    }
+  ],
+  "consultancyData": [
     {
       "title": "Careem-Like Taxi App Clone",
       "desc": "Build a feature-rich ride-hailing app similar to Careem with advanced booking, real-time tracking, and multiple payment integrations. Customize the app to match your brand’s identity while delivering a smooth experience for riders and drivers."
@@ -56,11 +93,7 @@
       "title": "Ola & Uber-Like Taxi App Clone",
       "desc": "Step into the ride-hailing industry with our advanced Ola/Uber Clone App. Enjoy features like dynamic pricing, multiple vehicle options, surge pricing, and an intuitive interface to keep your users engaged."
     }
-  
   ],
-
-
-
   "pageData": {
     "title": "Why Choose Comfygen for your custom Taxi Booking App Development project?",
     "description": "Comfygen stands out as the No.1 Taxi App Development Company in India. We specialize in offering custom, and reliable taxi app development services customized for small businesses, startups, and enterprises. Our mission is to provide apps that are designed to meet your specific needs while adhering to the highest standards of quality and performance.",
@@ -102,7 +135,7 @@
       }
     ]
   },
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Custom Taxi Booking App Development",
       "subtitle": "",
@@ -141,7 +174,7 @@
     },
     {
       "title": "Car Rental App Development",
-     "subtitle": "",
+      "subtitle": "",
       "description": "We create custom car rental app development solutions where users can book cars based on rental duration and price. Offering affordable taxi app development services, we customize the features to fit your business needs.",
       "features": [
         "Browse detailed car listings with reviews.",
@@ -153,7 +186,7 @@
     },
     {
       "title": "VIP Corporate Taxi Booking App Development",
-     "subtitle": "",
+      "subtitle": "",
       "description": "As a top mobile app development company in India, our custom taxi app development solutions are modified for corporate clients by providing the best taxi app development services for employees. We streamline transportation management for businesses.",
       "features": [
         "Manage corporate accounts with detailed ride reports.",
@@ -177,7 +210,7 @@
     },
     {
       "title": "App Development Maintenance & Updates",
-     "subtitle": "",
+      "subtitle": "",
       "description": "We offer comprehensive maintenance and updates as part of our best taxi app development services, ensuring that the user taxi app runs smoothly and stays updated with the latest features.",
       "features": [
         "Seamless app performance with regular maintenance.",
@@ -188,7 +221,7 @@
     },
     {
       "title": "White-Label Solutions",
-     "subtitle": "",
+      "subtitle": "",
       "description": "We are a white-label taxi app development company, that delivers fully customizable solutions for businesses across industries. Our white-label taxi app solutions allow businesses to easily brand and customize pre-built platforms.",
       "features": [
         "Fully customizable solutions for branding and deployment.",
@@ -197,7 +230,7 @@
         "Scalable solutions to match growing business needs."
       ]
     }
-  ],  
+  ],
   "Whycomfygen": [
     {
       "num": "1",

@@ -23,9 +23,7 @@ const TalkExpert = dynamic(() => import('../../components/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
-const BlogSection = dynamic(() => import('../../components/BlogSection1'), {
-  loading: () => <p>Loading...</p>,
-})
+
 const WhyChoose = dynamic(() => import('../../components/WhyChoose'), {
   loading: () => <p>Loading...</p>,
 })

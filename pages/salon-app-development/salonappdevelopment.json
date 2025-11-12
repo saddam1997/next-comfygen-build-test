@@ -163,6 +163,34 @@
       "desc": "Our iSpring clone app provides an advanced LMS platform for creating e-learning content, administering assessments, and tracking progress. It makes corporate training and online education more interactive and efficient."
     }
   ],
+
+
+
+ "portfoliodata":[
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
+    "title": "On-Demand Beauty Booking App",
+    "description": "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
+    "title": "Freelance Stylist Appointment App",
+    "description": "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
+    "link": "https://www.comfygen.com/contact-us"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
+    "title": "Beauty & Wellness Aggregator Platform",
+    "description": "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
+   "link": "https://www.comfygen.com/contact-us"
+  }
+
+],
+
+
+
   "pageData": {
     "title": "Why is Comfygen Your Ideal Salon App Development Partner?",
     "description": "Comfygen is a top-rated beauty and salon app development agency delivering powerful, scalable, and beautifully crafted beauty service applications. From startups to established salon chains, our best custom salon app development services help businesses streamline operations, boost customer engagement, and grow revenue with next-gen features and seamless UI.",

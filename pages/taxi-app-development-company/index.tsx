@@ -30,8 +30,8 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import SolutionSec from "../componentsnew/SolutionSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import NewTeckStack from "../componentsnew/NewTeckStack";
+import Slider from "../components/Slider";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -155,122 +155,7 @@ export default function Ecommerce(props) {
     },
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup.webp",
-        head: "Urban Ride-Hailing Startup",
-        name: "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
-        dec1: "Solution: We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support.",
-        dec2: "Result: The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/ride-hailing-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
-        head: "Corporate Taxi Service Provider",
-        name: "Challenge: A corporate taxi service needed a streamlined solution for employee transportation.",
-        dec1: "Solution: We built a corporate taxi app with features like automated billing, expense tracking, and scheduled rides.",
-        dec2: "Result: Improved efficiency by 40%, with 90% employee satisfaction in ride management.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/corporate-taxi-service-provider",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
-        head: "Eco-Friendly EV Taxi Service",
-        name: "Challenge: A client wanted to launch an EV-based taxi service to promote sustainability.",
-        dec1: "Solution: We created an EV taxi booking app with charging station locators, eco-friendly ride options, and carbon footprint tracking.",
-        dec2: "Result: 20% increase in eco-conscious riders and a 15% reduction in operational costs.",
-        num: "3",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/ev-taxi-service",
-      },
 
-      {
-        img: "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
-        head: "Tourism Taxi Service",
-        name: "Challenge: A tourism company needed a platform for seamless sightseeing and intercity travel.",
-        dec1: "Solution: We developed a tourism taxi app with multi-city booking, tour packages, and multilingual support.",
-        dec2: "Result: 35% increase in tourist bookings and a 25% boost in customer retention.",
-        num: "4",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/tourism-taxi-booking-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
-        head: "Logistics & Delivery Service",
-        name: "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
-        dec1: "Solution: We designed a delivery and logistics app with real-time tracking, route optimization, and driver performance analytics.",
-        dec2: "Result: Delivery efficiency improved by 50%, with a 20% reduction in fuel costs.",
-        num: "5",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/logistics-delivery-taxi-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/emergency-healthcare-transport.webp",
-        head: "Emergency Healthcare Transport",
-        name: "Challenge: A healthcare provider needed a reliable app for patient and emergency transport.",
-        dec1: "Solution: We built a healthcare taxi app with priority booking, SOS alerts, and real-time ambulance tracking.",
-        dec2: "Result: Reduced response time by 40%, saving lives and improving service reliability.",
-        num: "6",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/healthcare-transport-taxi-app",
-      },
-      {
-        img: "https://www.comfygen.com/image/ride-sharing-platform.webp",
-        head: "Ride-Sharing Platform",
-        name: "Challenge: A client wanted to launch a cost-effective carpooling service.",
-        dec1: "Solution: We developed a ride-sharing app with features like route matching, fare splitting, and user ratings.",
-        dec2: "Result: 60% increase in daily commuters, with a 25% reduction in traffic congestion in target areas.",
-        num: "7",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
 
   const jsonLdData = [
     {
@@ -695,11 +580,18 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Taxi Booking App Success Stories"
-          description=""
-        />
+
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Taxi Booking App Success Stories"
+            description=""
+          />
+        </section>
+
+
+
+
         <section className="mt-10">
           <Features />
         </section>

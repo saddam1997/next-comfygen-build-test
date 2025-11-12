@@ -11,11 +11,9 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from '../componentsnew/ServicesSection'
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import HireDeveloper from "../components/HireDeveloper";
 import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
-import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
@@ -25,9 +23,7 @@ const FaqSection = dynamic(() => import("../components/FaqSection"), {
 const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
   loading: () => <p>Loading...</p>,
 });
-// const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-//   loading: () => <p>Loading...</p>,
-// });
+
 const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
   loading: () => <p>Loading...</p>,
 });

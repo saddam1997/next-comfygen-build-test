@@ -2,12 +2,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React from 'react'
 import GetinTouch from '../components/Getintouch';
-import Image from 'next/image';
-import Link from 'next/link';
 import LazyLoad from 'react-lazy-load';
-const BlogSection = dynamic(() => import('../components/BlogSection1'), {
-  loading: () => <p>Loading...</p>,
-})
 const Header = dynamic(() => import('../components/Header'), {
   loading: () => <p>Loading...</p>,
 })

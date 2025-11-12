@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import RecentPost from '../components/RecentPost';
-import BlogSection from '../components/BlogSection1';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import useSWR from "swr";

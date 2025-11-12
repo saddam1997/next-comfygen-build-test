@@ -101,35 +101,6 @@ const technologyData = [
 
 
 
-const portfoliodata = [
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
-    "title": "On-Demand Beauty Booking App",
-    "description": "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
-    "title": "Salon Chain Management App",
-    "description": "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
-    "title": "Freelance Stylist Appointment App",
-    "description": "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
-    "link": "https://www.comfygen.com/contact-us",
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
-    "title": "Beauty & Wellness Aggregator Platform",
-    "description": "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
-   "link": "https://www.comfygen.com/contact-us",
-  }
-
-]
 
 
 
@@ -462,7 +433,7 @@ export default function ClinicalApp(props: any) {
 
         <section className="py-8">
           <Slider
-            projects={portfoliodata}
+            projects={JSON_DATA.portfoliodata}
             heading="We Have Developed Salon Apps That You Can Check Out"
             description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
           />
@@ -475,7 +446,7 @@ export default function ClinicalApp(props: any) {
           text="Partner with Comfygen to launch a high-performance salon app that transforms your beauty business. Let’s bring your vision to life—starting today!"
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/salon-app-development/future-of-technology.webp"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
 

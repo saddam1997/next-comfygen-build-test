@@ -9,10 +9,6 @@ import HeroSectionForCompany from "../components/HeroSectionForCompany";
 import PositionSec from "./components/PositionSec";
 import CareerForm from "../components/CareerForm";
 
-
-const BlogSection = dynamic(() => import("../components/BlogSection1"), {
-  loading: () => <p>Loading...</p>,
-});
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
