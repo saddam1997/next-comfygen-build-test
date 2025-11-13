@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -575,34 +574,6 @@ export default function Ecommerce(props) {
         </section>
         <ContactFromCenter />
         <AdvancedPanel />
-        {/* <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <section className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4">
-              <div className="flex flex-col justify-center text-center">
-                <h2 className=" py-4 text-white xl:text-4xl text-3xl font-bold xl:leading-[3rem]  ">
-                  Core Healthcare Mobile App Development for Medicine Ordering
-                  Features
-                </h2>
-                <p className="text-base text-white">
-                  A medicine mobile app becomes valuable when it solves real
-                  problems for patients and providers. Our apps pack the
-                  must-have tools to simplify healthcare tasks, improve access,
-                  and enable better outcomes.
-                </p>
-              </div>
-              <div>
-                <Tech />
-              </div>
-              <div className="flex justify-center items-center mt-5">
-                <a href="/contact-us " className="mt-5">
-                  <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#ffff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                    Get A Free Consultation <MdOutlineArrowOutward />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </section>
-        </div> */}
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -630,17 +601,7 @@ export default function Ecommerce(props) {
             description="We have developed and launched several medicine ordering and healthcare apps that have transformed how users access medicines and healthcare services. The following are some of our most notable medicine ordering app development projects."
           />
         </section>
-
-
-
-
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-
-        {/* <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Medicine Ordering App Development Portfolio"
-          description="We have developed and launched several medicine ordering and healthcare apps that have transformed how users access medicines and healthcare services. The following are some of our most notable medicine ordering app development projects."
-        /> */}
 
         <TechStack
           title="Technologies We Use for Medicine Ordering App Development "
@@ -688,4 +649,15 @@ export default function Ecommerce(props) {
       </div>
     </>
   );
+}
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

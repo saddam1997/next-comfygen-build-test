@@ -6,7 +6,6 @@ import JSON_DATA from "./index.json";
 import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
 import AboutSection from "./components/AboutSection";
-import BlogSection from "./components/BlogSection";
 import Slider from "./components/Slider";
 const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,

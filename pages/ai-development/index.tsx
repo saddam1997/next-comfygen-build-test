@@ -12,9 +12,6 @@ import ProcessSec from "../components/ProcessSec";
 import IndustriesServe from "../components/IndustriesServe";
 import TechStack from "../components/TechStack";
 import ClientTestimonials from "../components/ClientTestimonials";
-
-
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";

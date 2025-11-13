@@ -3,41 +3,75 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Default slider data
 const defaultSliderData = [
-  {
-    imgSrc: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400",
-    title: "Technology & Software",
-    description: "Innovative solutions for modern tech companies",
-    link: "/industries/technology"
-  },
-  {
-    imgSrc: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400",
-    title: "Finance & Banking",
-    description: "Secure digital transformation for financial services",
-    link: "/industries/finance"
-  },
-  {
-    imgSrc: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400",
-    title: "Healthcare",
-    description: "Patient-centric healthcare technology solutions",
-    link: "/industries/healthcare"
-  },
-  {
-    imgSrc: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400",
-    title: "Retail & E-commerce",
-    description: "Seamless shopping experiences across all channels",
-    link: "/industries/retail"
-  },
-  {
-    imgSrc: "https://images.unsplash.com/photo-1427751840561-9852520f8ce8?w=400",
-    title: "Education",
-    description: "Digital learning platforms for modern education",
-    link: "/industries/education"
-  },
-  {
-    imgSrc: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400",
-    title: "Real Estate",
-    description: "Smart property management and sales solutions"
-  }
+   {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
+      "title": "E-Commerce",
+      "description": "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
+      "link": "/e-commerce-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-healthcare.webp",
+      "title": "Healthcare",
+      "description": "Empowering health services with innovative, patient-centric healthcare app development for better outcomes.",
+      "link": "/healthcare-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-blockchain.webp",
+      "title": "Blockchain",
+      "description": "Transforming industries with secure, transparent, and decentralized blockchain app development solutions.",
+      "link": "/blockchain-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-education.webp",
+      "title": "Education",
+      "description": "Enhancing learning experiences with interactive, engaging, and scalable education apps.",
+      "link": "/ca/education-app-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-logestic.webp",
+      "title": "Logistics",
+      "description": "Streamlining logistics operations through advanced, real-time tracking and management solutions."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-new.webp",
+      "title": "Construction",
+      "description": "Driving project efficiency with modern construction management and planning applications."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-new.webp",
+      "title": "Game",
+      "description": "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
+      "link": "/game-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/entertainment-industries.webp",
+      "title": "Entertainment",
+      "description": "Innovating entertainment platforms with personalized, accessible digital experiences."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/social-media-app-industries.webp",
+      "title": "Social Media App",
+      "description": "Connecting users worldwide through innovative, feature-rich social media app solutions.",
+      "link": "/social-media-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/finance-industries-img.webp",
+      "title": "Finance",
+      "description": "Delivering secure, user-friendly financial apps tailored to modern customer needs.",
+      "link": "/finance-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/dating-industries-img.webp",
+      "title": "Dating",
+      "description": "Crafting intuitive dating platforms to foster meaningful connections seamlessly.",
+      "link": "/dating-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/restaurant-industries.webp",
+      "title": "Restaurant industries",
+      "description": "Enhancing dining experiences with user-focused, efficient restaurant management and ordering apps.",
+      "link": "/food-delivery-app-development"
+    }
 ];
 
 function IndustriesServe({

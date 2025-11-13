@@ -5,7 +5,6 @@ import { TbX } from "react-icons/tb";
 // import ContactFrom from "./ContactFrom";
 import dynamic from "next/dynamic";
 const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
-import { Target, Award, Users, Zap } from 'lucide-react';
 
 export default function HeroSection(props: any) {
   // const [isMobile, setIsMobile] = useState(false);

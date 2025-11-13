@@ -5,11 +5,13 @@
     "Comfygen has Full-Stack developers; who have the caliber to build robust decentralized applications.",
     "Clients have the option to hire blockchain developers in India from us, as they can hire a developer dedicated on project, hourly basis, or full time. "
   ],
+
   "NewSections": {
     "title": "What is Blockchain Development?",
     "decs": "Blockchain development is the process of building decentralized digital solutions such as smart contracts, dApps, and blockchain networks that operate on secure, distributed ledgers. It empowers businesses to create transparent, tamper-proof systems without the need for intermediaries. From finance and supply chain to healthcare and gaming, blockchain development enables faster transactions, improved security, and greater trust across digital ecosystems."
   },
-    "servicesData": [
+
+  "servicesData": [
     {
       "title": "Custom Blockchain Development",
       "subtitle": "",
@@ -110,6 +112,7 @@
       ]
     }
   ],
+
   "IndustriesServe": [
     {
       "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
@@ -152,6 +155,7 @@
       "description": "We offer blockchain solutions to optimize energy distribution, enhance grid security, and enable peer-to-peer energy trading. Our decentralized energy systems ensure transparency, improve efficiency, and help manage resources more effectively."
     }
   ],
+
   "pageData": {
     "title": "Why Choose Comfygen as a Blockchain Development Company?",
     "description": "At Comfygen, we deliver more than just blockchain solutions—we create transformative digital experiences that empower your business to thrive in a decentralized world. As a trusted blockchain development company, we combine cutting-edge technology with deep industry expertise to develop custom, secure, and scalable blockchain applications. Our comprehensive approach—from <a class='text-blue-600' href='/blockchain-consulting-services'>consultation</a>  to deployment—ensures that every solution is tailored to your specific business challenges and growth goals.",
@@ -194,6 +198,39 @@
     ]
   },
 
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "/portfolio/blockchain-based-cryptocoin-development"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "/portfolio/advanced-blockchain-based-logistics-software"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+      "title": "Blockchain-Based Real Estate Tokenization Software",
+      "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
+      "link": "/portfolio/blockchain-based-real-estate-tokenization-software"
+    }
+  ],
+
   "Hire": [
     {
       "num": "1",
@@ -204,6 +241,7 @@
       "btn": "Hire Developer"
     }
   ],
+
   "ReadymadeProduct": [
     {
       "num": "1",
@@ -227,6 +265,7 @@
       "decs": "DPoS blockchain development is a consensus algorithm designed for high throughput and scalability. In a DPoS blockchain development network, token holders vote for a limited number of delegates who are responsible for validating transactions and producing new blocks. DPoS blockchain development aims to combine decentralization and efficiency by allowing users to choose trusted validators through voting. This approach minimizes the computational resources needed compared to PoW blockchain development, making DPoS blockchain development faster and more environmentally friendly. DPoS blockchain development, such as EOS and Tron, are well-suited for applications requiring rapid transaction processing, like decentralized applications (DApps blockchain development) and digital content platforms."
     }
   ],
+
   "LeadingSoftware": [
     {
       "num": "01",
@@ -282,6 +321,7 @@
       "desc": "At Comfygen, we integrate innovation with precision. Our blockchain solutions go beyond the ordinary — engineered for performance, adaptability, and next-gen digital success."
     }
   ],
+
   "consultancyData": [
     {
       "title": "Modular Architecture",
@@ -308,6 +348,7 @@
       "desc": "Support native cryptocurrencies, utility tokens, NFTs, and stablecoins — all under one secure, interoperable environment."
     }
   ],
+
   "WhyChooseComfygen": [
     {
       "num": "1",
@@ -330,10 +371,12 @@
       "decs": "Whatever we build; say it blockchain app, smart contracts, crypto exchange, tokenization; every solution built by our blockchain developers will be scalable and highly-performing. Beside providing the reliable application and other software; our team also has speed with quality assured in them. We have the experience and expertise enabling us towards quick deployments with cutting edge technology use."
     }
   ],
+
   "InfluencingList": [
     "”",
     "Do you need blockchain apps or other decentralized solutions? Well, feel free to have a  free consultation call with us. Development comes far later, but first we believe in building faith between company and client. So let’s meet over coffee to discuss your business goals with blockchain, and figure out the best approach to bet in the marketplace. "
   ],
+
   "timelineData": [
     {
       "step": "1",
@@ -366,7 +409,8 @@
       "description": "On-going monitoring and maintaining the deployed blockchain solution will help you to stay connected with the marketplace and engage a vast audience for longer. With the help of blockchain post-deployment services, our developers will keep updating and upgrading the existing solutions to enhance the scalability and scope. "
     }
   ],
-  "Frequently":[
+  
+  "Frequently": [
     {
       "num": "1",
       "title": "What isblockchain development, and how can it benefit my business?",

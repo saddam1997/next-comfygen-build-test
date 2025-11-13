@@ -194,6 +194,56 @@
         ]
       }
     ],
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/image/telemedicine.png",
+        "title": "Telemedicine Platform for Virtual Consultations",
+        "description": "We developed a comprehensive telemedicine platform, enabling healthcare providers to offer virtual consultations. The software is HIPAA-compliant, and secure, and ensures high-quality video and audio communication between doctors and patients, promoting better healthcare access.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/Portfolio.png",
+        "title": "Hospital Management System (HMS) for Streamlined Operations",
+        "description": "Our Hospital Management System (HMS) is designed to digitize and automate hospital workflows. From patient registration to discharge, the software provides a centralized platform for hospitals to efficiently manage operations and enhance patient care.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/EHRM.png",
+        "title": "EHR System for Improved Patient Data Management",
+        "description": "We created a robust Electronic Health Records (EHR) system that allows healthcare professionals to securely store, retrieve, and update patient information. The system supports compliance with industry standards and helps reduce paperwork, improving clinical efficiency.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/Portfolio (1).png",
+        "title": "Mobile Health App for Remote Patient Monitoring",
+        "description": "Our mobile health app allows patients with chronic conditions to track their health metrics and share data with healthcare providers. The app improves patient engagement and enables real-time monitoring for timely interventions.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/Group 10964.png",
+        "title": "Medical Billing Software for Accurate Claims Processing",
+        "description": "We developed a specialized medical billing software that simplifies the claims processing workflow for healthcare providers. The software minimizes errors, accelerates reimbursements, and ensures compliance with insurance policies.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-pharmacy-chain-app.webp",
+        "title": "Pharmacy Chain App",
+        "description": "Pharmacy Chain App is a feature-rich medicine delivery app developed for a leading pharmacy chain. It allows users to upload prescriptions, order medicines, and track deliveries in real-time. The app integrates secure payment gateways and AI-powered medicine recommendations, ensuring a smooth user experience.",
+        "link": "/portfolio/pharmacy-chain-app"
+      },
+      {
+        "image": "https://www.comfygen.com/image/e-pharmapluse-hero-image.webp",
+        "title": "E-PharmaPluse App – A Complete E-Pharmacy Solution",
+        "description": "E-PharmaPluse is a cloud-based medicine delivery app developed for an enterprise client. The app features real-time GPS tracking, multi-language support, and a subscription model for monthly medicine deliveries, ensuring enhanced accessibility and efficiency.",
+        "link": "/portfolio/e-pharmapluse"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
+        "title": "AI-Powered Medicine Ordering",
+        "description": "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions. With a simple UI, seamless payment integration, and multi-vendor support, this app has helped thousands of users conveniently access medicines.",
+        "link": "/portfolio/ai-powered-medicine-ordering-app"
+      }
+    ],
     "featuresData": [
       {
         "id": 1,
@@ -347,7 +397,7 @@
       },
       {
         "title": " UI/UX Design",
-        "description": "Our UI/UX design experts craft intuitive and <a href='https://www.comfygen.com/blog/features-crafting-a-user-friendly-healthcare-app/' class='text-blue-500 font-semibold'>user-friendly healthcare interfaces</a> that focus on patient engagement and accessibility. We ensure the app design simplifies complex medical workflows while delivering a seamless experience for patients and doctors."
+        "description": "Our UI/UX design experts craft intuitive and <a href='https://www.comfygen.com/blog/features-crafting-a-user-friendly-healthcare-app' class='text-blue-500 font-semibold'>user-friendly healthcare interfaces</a> that focus on patient engagement and accessibility. We ensure the app design simplifies complex medical workflows while delivering a seamless experience for patients and doctors."
       },
       {
         "title": " MVP Development",
@@ -401,8 +451,6 @@
         "name": "Michael Lee",
         "title": "Australia"
       }
-      
-      
     ],
     "pageData": {
       "title": "Why Choose Comfygen for Healthcare App Development?",

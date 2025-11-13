@@ -10,9 +10,8 @@ import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import {  IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar} from '@tabler/icons-react';
-import PortfolioSec from "../components/PortfolioSec";
+import { IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
+import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar } from '@tabler/icons-react';
 import ProcessSec from "../components/ProcessSec";
 import Features from "../components/Features";
 import CallToAction from "../components/CallToAction";
@@ -20,6 +19,7 @@ import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
 import Milestones from "../components/Milestones";
+import Slider from "../components/Slider";
 
 
 const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), { loading: () => <p>Loading...</p>, });
@@ -70,7 +70,7 @@ const technologyData = [
   {
     img: <IconShoppingCart stroke={1.5} className="w-12 h-12" />,
     title: "Laboratory App Development",
-    desc: "Our <a href=https://www.comfygen.com/laboratory-app-development' class='text-blue-500 font-semibold'>laboratory app development solutions</a> streamline lab operations by managing test bookings, tracking samples, and delivering reports digitally, thereby ensuring faster turnaround times and an enhanced patient experience."
+    desc: "Our <a href='https://www.comfygen.com/laboratory-app-development' class='text-blue-500 font-semibold'>laboratory app development solutions</a> streamline lab operations by managing test bookings, tracking samples, and delivering reports digitally, thereby ensuring faster turnaround times and an enhanced patient experience."
   },
   {
     img: <IconTools stroke={1.5} className="w-12 h-12" />,
@@ -89,120 +89,7 @@ const technologyData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/telemedicine.png",
-      head: "Telemedicine Platform for Virtual Consultations",
-      name: "We developed a comprehensive telemedicine platform, enabling healthcare providers to offer virtual consultations. The software is HIPAA-compliant, and secure, and ensures high-quality video and audio communication between doctors and patients, promoting better healthcare access.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/Portfolio.png",
-      head: "Hospital Management System (HMS) for Streamlined Operations",
-      name: "Our Hospital Management System (HMS) is designed to digitize and automate hospital workflows. From patient registration to discharge, the software provides a centralized platform for hospitals to efficiently manage operations and enhance patient care.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/EHRM.png",
-      head: "EHR System for Improved Patient Data Management",
-      name: "We created a robust Electronic Health Records (EHR) system that allows healthcare professionals to securely store, retrieve, and update patient information. The system supports compliance with industry standards and helps reduce paperwork, improving clinical efficiency.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/Portfolio (1).png",
-      head: "Mobile Health App for Remote Patient Monitoring",
-      name: "Our mobile health app allows patients with chronic conditions to track their health metrics and share data with healthcare providers. The app improves patient engagement and enables real-time monitoring for timely interventions.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-    ,
-    {
-      img: "https://www.comfygen.com/image/Group 10964.png",
-      head: "Medical Billing Software for Accurate Claims Processing",
-      name: "We developed a specialized medical billing software that simplifies the claims processing workflow for healthcare providers. The software minimizes errors, accelerates reimbursements, and ensures compliance with insurance policies.",
-      num: "5",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/hero-image-pharmacy-chain-app.webp",
-      head: "Pharmacy Chain App",
-      name: "Pharmacy Chain App is a feature-rich medicine delivery app developed for a leading pharmacy chain. It allows users to upload prescriptions, order medicines, and track deliveries in real-time. The app integrates secure payment gateways and AI-powered medicine recommendations, ensuring a smooth user experience.",
-      num: "6",
-      buttonLink: "https://www.comfygen.com/medicine-delivery-app-development",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
 
-    {
-      img: "https://www.comfygen.com/image/e-pharmapluse-hero-image.webp",
-      head: "E-PharmaPluse App – A Complete E-Pharmacy Solution",
-      name: "E-PharmaPluse is a cloud-based medicine delivery app developed for an enterprise client. The app features real-time GPS tracking, multi-language support, and a subscription model for monthly medicine deliveries, ensuring enhanced accessibility and efficiency.",
-      num: "7",
-      buttonLink: "https://www.comfygen.com/medicine-delivery-app-development",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-
-    {
-      img: "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
-      head: "AI-Powered Medicine Ordering",
-      name: "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions. With a simple UI, seamless payment integration, and multi-vendor support, this app has helped thousands of users conveniently access medicines.",
-      num: "8",
-      buttonLink: "https://www.comfygen.com/medicine-delivery-app-development",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
 
 
 const jsonLdData = [
@@ -283,14 +170,14 @@ const jsonLdData = [
       "postalCode": "302006",
       "addressCountry": "IN"
     },
-     {
+    {
       "@type": "PostalAddress",
       "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
       "addressLocality": "Toronto",
       "postalCode": "M1G3S7",
       "addressCountry": "Canada"
     }
-    , {
+      , {
       "@type": "PostalAddress",
       "streetAddress": "Rhederstraße 34, 53881 Euskirchen ",
       "addressLocality": "Euskirchen",
@@ -421,7 +308,7 @@ const jsonLdData = [
 ];
 
 
-export default function Mobile(props:any) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   let {
     Frequently,
@@ -446,7 +333,7 @@ export default function Mobile(props:any) {
         <title>Top Healthcare App Development Company | Comfygen Technologies</title>
         <meta name="description" content="Transform your healthcare business with Comfygen’s custom healthcare app development services. HIPAA-compliant, AI-powered, and scalable medical app solutions for clinics, hospitals, and startups." />
 
-        <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development"/>
+        <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development" />
 
 
         {/* <!-- Canonical Tag --> */}
@@ -520,7 +407,7 @@ export default function Mobile(props:any) {
 
 
         {/* <!-- Facebook Meta --> */}
-        
+
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/healthcare-app-development/healthcare-app-development.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/healthcare-app-development/healthcare-app-development.webp" />
         <meta property="og:image:alt" content="Healthcare App Development" />
@@ -579,7 +466,7 @@ export default function Mobile(props:any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable Custom Healthcare App Development Services for Your Startup</h2>
-              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='HIPAA-compliant mobile app development solutions' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
+              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -595,27 +482,14 @@ export default function Mobile(props:any) {
         />
 
 
+        <section className="py-8">
+          <Slider
+            projects={JSON_DATA.portfoliodata}
+            heading="EOur Portfolio"
+            description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+          />
+        </section>
 
-        {/* 
-        <section className="benefit mb-2">
-          <section className=" text-white lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-            <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
-              <div className="titleRow mb-10">
-                <div className="menus-block my-auto">
-                  <h2 className="xl:text-4xl text-3xl  text-center font-bold">Services Benefitted with Our Healthcare Software Development </h2>
-                  <p className="text-lg text-center font-normal pt-4">Industries and businesses are leveraging streamlined operations and personalized patient experiences. Know the diverse segments where our solutions doing wonders in management.</p>
-                </div>
-              </div>
-              <ServiceBenefit />
-            </div>
-          </section>
-        </section> */}
-
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio"
-          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
-        />
 
         <div className="py-8">
           <Features
@@ -747,5 +621,14 @@ export default function Mobile(props:any) {
 }
 
 
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
 
 

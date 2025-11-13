@@ -108,11 +108,11 @@ function Slider({ projects, heading, description }) {
                 key={index}
                 aria-label={`Go to slide ${index + 1}`}
                 onClick={() => setCurrentSlide(index)}
-                className="flex items-center justify-center w-8 h-8" // <-- larger tap area (32×32 px)
+                className="flex items-center justify-center w-4 h-4" // <-- larger tap area (32×32 px)
               >
                 <span
                   className={`block w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
-                      ? 'bg-indigo-600 w-6' // active indicator larger
+                      ? 'bg-indigo-600 w-8' // active indicator larger
                       : 'bg-gray-300 hover:bg-gray-400'
                     }`}
                 />
