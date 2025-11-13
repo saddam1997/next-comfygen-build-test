@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import ContactFrom from "./ContactFrom";
@@ -28,13 +28,32 @@ export default function HeroSectionForAllPages(props: any) {
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
+
+    const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   const data = props.btnLink;
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
-    <section className="lg:bg-center bg-no-repeat bg-cover bg-left " style={
+    <section ref={ref} className="lg:bg-center bg-no-repeat bg-cover bg-left " style={
       isMobile
         ? { backgroundColor: '#5951cd' }
         : { backgroundImage: `url(${props.bgImage})` }
