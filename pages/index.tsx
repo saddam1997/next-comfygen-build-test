@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import HeroSectionHomePage from "./components/HeroSectionHomePage";
 import AboutSection from "./components/AboutSection";
 import Slider from "./components/Slider";
+
 const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
@@ -379,6 +380,8 @@ export default function Home(props:any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
+
+    
 
         <IndustriesServe
           heading="Industries We Serve"

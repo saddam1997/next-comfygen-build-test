@@ -1,77 +1,79 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 // Default slider data
 const defaultSliderData = [
-   {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
-      "title": "E-Commerce",
-      "description": "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
-      "link": "/e-commerce-app-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-healthcare.webp",
-      "title": "Healthcare",
-      "description": "Empowering health services with innovative, patient-centric healthcare app development for better outcomes.",
-      "link": "/healthcare-app-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-blockchain.webp",
-      "title": "Blockchain",
-      "description": "Transforming industries with secure, transparent, and decentralized blockchain app development solutions.",
-      "link": "/blockchain-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-education.webp",
-      "title": "Education",
-      "description": "Enhancing learning experiences with interactive, engaging, and scalable education apps.",
-      "link": "/ca/education-app-development-company"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-logestic.webp",
-      "title": "Logistics",
-      "description": "Streamlining logistics operations through advanced, real-time tracking and management solutions."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-new.webp",
-      "title": "Construction",
-      "description": "Driving project efficiency with modern construction management and planning applications."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-new.webp",
-      "title": "Game",
-      "description": "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
-      "link": "/game-development-company"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/entertainment-industries.webp",
-      "title": "Entertainment",
-      "description": "Innovating entertainment platforms with personalized, accessible digital experiences."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/social-media-app-industries.webp",
-      "title": "Social Media App",
-      "description": "Connecting users worldwide through innovative, feature-rich social media app solutions.",
-      "link": "/social-media-app-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/finance-industries-img.webp",
-      "title": "Finance",
-      "description": "Delivering secure, user-friendly financial apps tailored to modern customer needs.",
-      "link": "/finance-app-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/dating-industries-img.webp",
-      "title": "Dating",
-      "description": "Crafting intuitive dating platforms to foster meaningful connections seamlessly.",
-      "link": "/dating-app-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/restaurant-industries.webp",
-      "title": "Restaurant industries",
-      "description": "Enhancing dining experiences with user-focused, efficient restaurant management and ordering apps.",
-      "link": "/food-delivery-app-development"
-    }
+  {
+    imgSrc: "https://www.comfygen.com/image/industries-ecommerce-img.webp",
+    title: "E-Commerce",
+    description: "Revolutionizing online shopping with feature-rich, secure, and user-friendly mobile app solutions.",
+    link: "/e-commerce-app-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/industries-healthcare-img.webp",
+    title: "Healthcare",
+    description: "Empowering health services with innovative, patient-centric healthcare app development for better outcomes.",
+    link: "/healthcare-app-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/industries-blockchain-img.webp",
+    title: "Blockchain",
+    description: "Transforming industries with secure, transparent, and decentralized blockchain app development solutions.",
+    link: "/blockchain-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/industries-education-img.webp",
+    title: "Education",
+    description: "Enhancing learning experiences with interactive, engaging, and scalable education apps.",
+    link: "/ca/education-app-development-company"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/transportation-industries-img.webp",
+    title: "Transportation",
+    description: "Simplifying travel with seamless, efficient transportation app innovations."
+  },
+
+  {
+    imgSrc: "https://www.comfygen.com/image/construction-industries-img.webp",
+    title: "Construction",
+    description: "Driving project efficiency with modern construction management and planning applications."
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/game-industries-img.webp",
+    title: "Game",
+    description: "Creating immersive, engaging gaming experiences with cutting-edge app development technologies.",
+    link: "/game-development-company"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/entertainment-industries-img.webp",
+    title: "Entertainment",
+    description: "Innovating entertainment platforms with personalized, accessible digital experiences."
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/social-media-app-industries-img.webp",
+    title: "Social Media App",
+    description: "Connecting users worldwide through innovative, feature-rich social media app solutions.",
+    link: "/social-media-app-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/finance-industries-img.webp",
+    title: "Finance",
+    description: "Delivering secure, user-friendly financial apps tailored to modern customer needs.",
+    link: "/finance-app-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/dating-industries-img.webp",
+    title: "Dating",
+    description: "Crafting intuitive dating platforms to foster meaningful connections seamlessly.",
+    link: "/dating-app-development"
+  },
+  {
+    imgSrc: "https://www.comfygen.com/image/restaurant-industries-img.webp",
+    title: "Restaurant industries",
+    description: "Enhancing dining experiences with user-focused, efficient restaurant management and ordering apps.",
+    link: "/food-delivery-app-development"
+  }
 ];
 
 function IndustriesServe({
@@ -161,7 +163,7 @@ function IndustriesServe({
           </div>
         </div>
 
-        <div 
+        <div
           className="overflow-hidden"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -175,17 +177,20 @@ function IndustriesServe({
             {sliderData.map((item, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 px-3"
+                className="flex-shrink-0 px-3 p-2 "
                 style={{ width: `${100 / slidesToShow}%` }}
               >
                 {item.link ? (
-                  <a href={item.link} className="block h-full">
-                    <div className="bg-white border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow duration-300">
+                  <a href={item.link} className="block h-full cursor-pointer">
+                    <div className="bg-white border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
                       <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                        <img
+                        <Image
                           src={item.imgSrc}
                           alt={item.title}
-                          className="w-full h-full object-cover"
+                          width={640}
+                          height={360}
+                          loading="lazy"
+                          className="w-full h-full object-cover "
                         />
                       </div>
                       <div>
@@ -198,12 +203,15 @@ function IndustriesServe({
                     </div>
                   </a>
                 ) : (
-                  <div className="bg-white border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px]">
+                  <div className="bg-white cursor-pointer border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
                     <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                      <img
+                      <Image
                         src={item.imgSrc}
                         alt={item.title}
-                        className="w-full h-full object-cover"
+                        width={640}
+                        height={360}
+                        loading="lazy"
+                        className="w-full h-full object-cover  "
                       />
                     </div>
                     <div>
@@ -221,14 +229,13 @@ function IndustriesServe({
         </div>
 
         {/* Mobile Navigation Dots */}
-        <div className="flex md:hidden justify-center gap-2 mt-6">
-          {Array.from({ length: Math.ceil(sliderData.length / slidesToShow) }).map((_, index) => (
+        <div className="flex  justify-center gap-2 mt-6">
+          {Array.from({ length: Math.ceil(sliderData.length) }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                currentIndex === index ? 'bg-[#5556D1] w-6' : 'bg-gray-300'
-              }`}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index ? 'bg-[#5556D1] w-6' : 'bg-gray-300'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
