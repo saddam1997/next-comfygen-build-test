@@ -3,60 +3,56 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 // Lazy load all major components
+import Header from "./components/Header";
+import HeroSectionHomePage from "./components/HeroSectionHomePage";
+import AboutSection from "./components/AboutSection";
 
-
-
-
-const Header = dynamic(() => import("./components/Header"), { ssr: true });
-const HeroSectionHomePage = dynamic(() => import("./components/HeroSectionHomePage"), { ssr: true });
-const AboutSection = dynamic(() => import("./components/AboutSection"), { ssr: false });
-const Slider = dynamic(() => import("./components/Slider"), { ssr: false });
+import Slider from "./components/Slider";
 const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: false
+  ssr: true, // keep SSR for SEO
 });
 
 
 const CallToAction = dynamic(() => import("./components/CallToAction"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: false
 });
 const IndustriesServe = dynamic(() => import("./components/IndustriesServe"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const ProcessSec = dynamic(() => import("./components/ProcessSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const TechStack = dynamic(() => import("./components/TechStack"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const HireDeveloper = dynamic(() => import("./components/HireDeveloper"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const ClientTestimonials = dynamic(() => import("./components/ClientTestimonials"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
 const Faq = dynamic(() => import("./components/Faq"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-    ssr: false 
+  ssr: true, 
 });
 
-export default function Home(props: any) {
+export default function Home(props:any) {
 
   let { initialData } = props;
   const [typedText] = useState("");
@@ -391,8 +387,6 @@ export default function Home(props: any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-
-
 
         <IndustriesServe
           heading="Industries We Serve"
