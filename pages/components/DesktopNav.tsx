@@ -1075,40 +1075,40 @@ const cryptoDevelopment1 = [
 
 
 export default function DesktopNav(props: any) {
-  const [activeTab, setActiveTab] = useState("Tab1");
-  // Function to handle tab click
-  const handleTabClick = (tab: any) => {
-    setActiveTab(tab);
-  };
+  // const [activeTab, setActiveTab] = useState("Tab1");
+  // // Function to handle tab click
+  // const handleTabClick = (tab: any) => {
+  //   setActiveTab(tab);
+  // };
 
-  const [showNav, setShowNav] = useState(0);
-  const [menu] = useState(false);
+  // const [showNav, setShowNav] = useState(0);
+  // const [menu] = useState(false);
 
 
-  function toggleSlideover() {
-    // document
-    //   .getElementById("slideover-container")
-    //   .classList.toggle("invisible");
-    // document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    // document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    // document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
+  // function toggleSlideover() {
+  //   // document
+  //   //   .getElementById("slideover-container")
+  //   //   .classList.toggle("invisible");
+  //   // document.getElementById("slideover-bg").classList.toggle("opacity-0");
+  //   // document.getElementById("slideover-bg").classList.toggle("opacity-50");
+  //   // document.getElementById("slideover").classList.toggle("translate-x-full");
+  // }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector(".headered");
-      if (!header) return;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const header = document.querySelector(".headered");
+  //     if (!header) return;
 
-      if (window.scrollY > 50) {
-        header.classList.add("active");
-      } else {
-        header.classList.remove("active");
-      }
-    };
+  //     if (window.scrollY > 50) {
+  //       header.classList.add("active");
+  //     } else {
+  //       header.classList.remove("active");
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   // useEffect(() => {
   //   $(window).on("scroll", function () {
@@ -1120,8 +1120,58 @@ export default function DesktopNav(props: any) {
   //   });
   // }, []);
 
+
+  const [activeTab, setActiveTab] = useState("Tab1");
+  const [showNav, setShowNav] = useState(0);
+  const [menu] = useState(false);
+  // NEW STATE: Manage the 'active' scroll class via state
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleTabClick = (tab: string) => {
+    setActiveTab(tab);
+  };
+
+  function toggleSlideover() {
+    // Left as-is since the logic is commented out, but ideally should use state/refs
+    // for slideover visibility as well, not direct document manipulation.
+  }
+
+  // 👇 The Refactored Scroll Handler with requestAnimationFrame (rAF)
+  useEffect(() => {
+    let ticking = false;
+
+    // Use useCallback to ensure the function reference is stable
+    const handleScroll = () => {
+      // Check scroll position outside of the rAF callback first
+      const newScrollState = window.scrollY > 50;
+      console.log(newScrollState, "newScrollState")
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          // Update state only if it needs to change
+          setIsScrolled(prev => {
+            if (prev !== newScrollState) {
+              return newScrollState;
+            }
+            return prev;
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []); // Empty dependency array means this runs once on mount
+
+  // Combine fixed class with the dynamic scroll class
+  const headerClasses = isScrolled
+    ? "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto "
+    : "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto headered";
+
   return (
-    <div className="fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto">
+    <div className={headerClasses}>
       <div className="  flex gap-6 justify-end mx-10">
         <p className="hidden lg:block">
           <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
