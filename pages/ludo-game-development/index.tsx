@@ -405,7 +405,7 @@ export default function LudoGame(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/ludo-game-development-hero-img.webp')]">
+      <div className="overflow-hidden relative">
         <HeroSectionForAllPages
           heading="Best Ludo Game Development Company"
           ptag="Make your ludo gaming application more interesting with the assistance from Comfygen Technologies. We are one leading ludo game app development company In India & The USA, embark with the latest feature and tech trends integration. Our top-notch Ludo game app developers can bring exciting and innovative alterations in the applications for crafting unforgettable user’s experience. Our ultimate goal is to make Ludo game development services and solutions more appealing to gather a global audience. Our belief is to create applications with fun and challenging elements ensuring reliability, user-friendliness, security and vast engagement."
@@ -416,6 +416,7 @@ export default function LudoGame(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+           bgImage="https://www.comfygen.com/herosection/ludo-game-development-hero-img.webp"
         />
       </div>
       <AboutSection
@@ -506,10 +507,10 @@ export default function LudoGame(props) {
       </section>
 
       <section
-        className="w-full bg-end bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: `url("https://www.comfygen.com/img/hire-ludo.webp")`,
-        }}
+        className="w-full bg-gradient-to-r from-[#272868] to-[#5556D1] "
+        // style={{
+        //   backgroundImage: `url("https://www.comfygen.com/img/hire-ludo.webp")`,
+        // }}
       >
         <div className="w-full lg:py-16 py-10 bg-gradient-to-r from-[#272868]/90 to-[#5556D1]/90 ">
           <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
