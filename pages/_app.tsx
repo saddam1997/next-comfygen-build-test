@@ -207,7 +207,7 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <main className={`${poppins.className}overflow-y-auto max-w-[1600px] mx-auto`}>
+      <main className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto`}>
         <Component {...pageProps} />
         {/* {JSON.stringify(initialData)} */}
         <BlogSection initialData={initialData} />
