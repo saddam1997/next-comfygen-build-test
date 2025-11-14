@@ -516,7 +516,7 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden sm:pt-16">
+      <div className="overflow-hidden">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/health-tracking-app-development/hero1.webp')]">
           <HeroSectionForAllPages
             heading="Best Health Tracking App Development Company"
