@@ -1,14 +1,12 @@
 import Head from "next/head";
 import JSON_DATA from "./json/ecommerceapp.json";
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../componentsnew/AboutSection";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";
 import ServicesSec from "../componentsnew/ServicesSec";
 import TechStack from "../componentsnew/TechStack";
 import ProcessSec from "../componentsnew/ProcessSec";
-import Header from "../componentsnew/Header";
 import WhyChoose from "../componentsnew/WhyChooseUs";
 import Faq from "../componentsnew/Faq";
 import HireDeveloper from "../componentsnew/HireDeveloper";
@@ -181,9 +179,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
       <EcommerceNav/>
       <div className="overflow-hidden">
         <HeroSectionForAllPages

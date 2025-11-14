@@ -2,11 +2,8 @@ import { useState } from "react";
 import "aos/dist/aos.css";
 import React from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
-import LazyLoad from "react-lazy-load";
-import { IconBrain, IconBroadcast, IconDiamond, IconServer, IconShieldCheck, IconWorld, } from '@tabler/icons-react';
-import Header from "../componentsnew/Header";
+
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
@@ -324,11 +321,7 @@ export default function Blockchain(props:any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
-      </div>
+
       <BlockchainNav />
       <HeroSectionForAllPages
         heading="Custom Blockchain Development Company"

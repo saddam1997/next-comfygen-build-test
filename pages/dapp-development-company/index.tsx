@@ -5,7 +5,6 @@ import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import TechStack from "../components/TechStack";
@@ -32,9 +31,7 @@ import ConsultancyApproach from "../components/ConsultancyApproach";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 
 const ContactFromCenter = dynamic(
@@ -490,9 +487,7 @@ export default function Ecommerce(props:any) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
       <BlockchainNav />
       <div className="overflow-hidden">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp')]">

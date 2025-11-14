@@ -336,11 +336,11 @@ export default function Ecommerce(props) {
         <meta name="og:latitude" content="26.912434°" />
         <meta name="og:longitude" content="75.787271°" />
       </Head>
-      <div className="">
+      {/* <div className="">
         <LazyLoad height={80} offset={100}>
           <Header />
         </LazyLoad>
-      </div>
+      </div> */}
       <BlockchainNav/>
       <div className="overflow-hidden ">
         {/* hero section */}

@@ -263,9 +263,7 @@ export default function Polygon(props) {
           content="Polygon Blockchain Development Services Provider"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
       <BlockchainNav/>
       <div className="overflow-hidden">
         {/* <div className="">

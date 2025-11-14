@@ -532,9 +532,6 @@ export default function MultiChain(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
       <BlockchainNav />
       <div className="overflow-hidden">
         {/* <div className=" ">

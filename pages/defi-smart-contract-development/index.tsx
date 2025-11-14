@@ -5,7 +5,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/defismart.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import Faq from "../components/Faq";
@@ -15,10 +14,6 @@ import ProcessSec from "../components/ProcessSec";
 import ModelsSec from "../components/ModelsSec";
 import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
 const NewSection = dynamic(() => import("../components/NewSection"), {
   loading: () => <p>Loading...</p>,
@@ -231,9 +226,7 @@ export default function MultiChain(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
       <BlockchainNav/>
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/defi-smart-contract-dev-hero-img.webp')]">

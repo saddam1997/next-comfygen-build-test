@@ -254,9 +254,9 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      {/* <LazyLoad height={80} offset={100}>
         <Header />
-      </LazyLoad>
+      </LazyLoad> */}
       <BlockchainNav/>
       <div className="overflow-hidden ">
         {/* hero section */}

@@ -616,9 +616,6 @@ export default function Blockchain(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
       <BlockchainNav />
       {/* <div className=" ">
         <div>

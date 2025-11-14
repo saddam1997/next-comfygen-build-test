@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/WhyChooseUs";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
 import AboutSection from "../../components/AboutSection";
@@ -29,9 +28,6 @@ const HeroSectionForAllPages = dynamic(
   }
 );
 const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
@@ -513,10 +509,6 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
       <EcommerceNav />
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp')]">

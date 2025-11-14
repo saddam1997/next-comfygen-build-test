@@ -374,11 +374,11 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <div className="">
+      {/* <div className="">
         <LazyLoad height={80} offset={100}>
           <Header />
         </LazyLoad>
-      </div>
+      </div> */}
       <BlockchainNav />
       <div className="overflow-hidden">
 

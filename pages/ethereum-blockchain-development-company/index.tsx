@@ -480,9 +480,7 @@ export default function Ecommerce(props:any) {
 
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
       <BlockchainNav />
       <div className="overflow-hidden">
         {/* <div className="">

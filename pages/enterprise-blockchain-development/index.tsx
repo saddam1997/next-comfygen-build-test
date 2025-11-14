@@ -707,9 +707,7 @@ export default function rummy(props) {
           __html: JSON.stringify(jsonLdData),
         }} />
     </Head><div className="">
-        {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-        {/* </LazyLoad> */}
+
       </div><BlockchainNav /><div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
           heading="Enterprise Blockchain Development Company"

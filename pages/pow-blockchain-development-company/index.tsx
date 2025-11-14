@@ -621,9 +621,9 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-      <LazyLoad height={80} offset={100}>
+      {/* <LazyLoad height={80} offset={100}>
         <Header />
-      </LazyLoad>
+      </LazyLoad> */}
       <BlockchainNav />
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp')]">
