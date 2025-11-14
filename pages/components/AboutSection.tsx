@@ -2,6 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const ImageAboutSection = dynamic(() => import("./ImageAboutSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true, 
+});
 
 const AboutSection = (props: any) => {
   const {
@@ -23,7 +29,11 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
-            <Image
+
+             <div className="relative">
+            <ImageAboutSection src={imageSrc} alt={heading} />
+          </div>
+            {/* <Image
               src={imageSrc}
               alt={heading}
               width={600}
@@ -35,7 +45,7 @@ const AboutSection = (props: any) => {
               style={{ width: "100%", height: "auto" }}
               unoptimized={false}     // 👈 Keep Next.js optimization (unless using external CDN)
               priority={false}        // 👈 Don’t preload
-            />
+            /> */}
 
             {/* <Image
               src={imageSrc}

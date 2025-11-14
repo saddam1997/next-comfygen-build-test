@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
 // import ContactFrom from "./ContactFrom";
 import dynamic from "next/dynamic";
+
+const ImageSection = dynamic(() => import("./ImageSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true, 
+});
 const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
 
 export default function HeroSectionForAllPages(props: any) {
@@ -45,7 +50,14 @@ export default function HeroSectionForAllPages(props: any) {
     // }}
     >
 
-      <Image
+      <ImageSection
+       src={props.bgImage}
+       alt="Comfygen Hero Background"
+       fill
+       className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
+      />
+
+      {/* <Image
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
@@ -57,7 +69,7 @@ export default function HeroSectionForAllPages(props: any) {
         blurDataURL="/blur-placeholder.webp"
         quality={75}
         
-      />
+      /> */}
 
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
