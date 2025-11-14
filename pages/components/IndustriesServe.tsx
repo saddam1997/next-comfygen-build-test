@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import CommonImage from './CommonImage';
 
 // Default slider data
 const defaultSliderData = [
@@ -184,14 +185,23 @@ function IndustriesServe({
                   <a href={item.link} className="block h-full cursor-pointer">
                     <div className="bg-white border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
                       <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                        <Image
+                        <CommonImage
+                          src={item.imgSrc}
+                          alt={item.title}
+                          width={640}
+                          height={360}
+                          priorityLoad={false}
+                          blurDataURL="/blur-placeholder.webp"
+                          className="w-full h-full object-cover "
+                        />
+                        {/* <Image
                           src={item.imgSrc}
                           alt={item.title}
                           width={640}
                           height={360}
                           loading="lazy"
                           className="w-full h-full object-cover "
-                        />
+                        /> */}
                       </div>
                       <div>
                         <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>
@@ -205,14 +215,23 @@ function IndustriesServe({
                 ) : (
                   <div className="bg-white cursor-pointer border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
                     <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                      <Image
+                      <CommonImage
+                        src={item.imgSrc}
+                        alt={item.title}
+                        width={640}
+                        height={360}
+                        priorityLoad={false}
+                        blurDataURL="/blur-placeholder.webp"
+                        className="w-full h-full object-cover "
+                      />
+                      {/* <Image
                         src={item.imgSrc}
                         alt={item.title}
                         width={640}
                         height={360}
                         loading="lazy"
                         className="w-full h-full object-cover  "
-                      />
+                      /> */}
                     </div>
                     <div>
                       <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>

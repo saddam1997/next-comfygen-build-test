@@ -4,9 +4,9 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const ImageAboutSection = dynamic(() => import("./ImageAboutSection"), {
+const CommonImage = dynamic(() => import("./CommonImage"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
 const AboutSection = (props: any) => {
@@ -30,9 +30,17 @@ const AboutSection = (props: any) => {
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
 
-             <div className="relative">
-            <ImageAboutSection src={imageSrc} alt={heading} />
-          </div>
+
+              <CommonImage
+                src={imageSrc}
+                alt={heading}
+                width={600}
+                height={340}
+                priorityLoad={false}
+                blurDataURL="/blur-placeholder.webp"
+                className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
+              />
+
             {/* <Image
               src={imageSrc}
               alt={heading}

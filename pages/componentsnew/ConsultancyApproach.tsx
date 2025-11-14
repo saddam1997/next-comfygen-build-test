@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { MdAdd, MdArrowOutward, MdRemove } from "react-icons/md";
 import Image from "next/image";
+import CommonImage from "../components/CommonImage";
 
 const ItemDataSection = ({
   Head,
@@ -23,16 +24,16 @@ const ItemDataSection = ({
             {Head?.map((elem: any, index: any) => (
               <div key={index} className="w-full lg:text-left">
                 <div className="space-y-6">
-                  <Image
-                    className=""
+                  <CommonImage
                     src={imageSrc}
                     alt={elem.title}
-                    unoptimized
-                    width={754}
-                    height={210}
-                    priority={true}
-                    quality={75}
+                    width={600}
+                    height={340}
+                    priorityLoad={false}
+                    blurDataURL="/blur-placeholder.webp"
+                    className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
                   />
+
                   <div className="space-y-2 ">
                     <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
                       {elem.title}
