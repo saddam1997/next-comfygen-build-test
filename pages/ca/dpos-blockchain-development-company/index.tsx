@@ -342,7 +342,7 @@ export default function Ecommerce(props) {
         </LazyLoad>
       </div> */}
       <BlockchainNav/>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
 
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dpos-blockchain-dev-hero-img.webp')]">

@@ -507,7 +507,7 @@ export default function Ecommerce(props) {
       </Head>
 
       <BlockchainNav/>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/smart-contract-dev-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Smart Contract Development Services"

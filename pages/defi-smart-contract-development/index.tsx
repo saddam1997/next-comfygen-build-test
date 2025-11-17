@@ -228,7 +228,7 @@ export default function MultiChain(props) {
       </Head>
 
       <BlockchainNav/>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[115px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/defi-smart-contract-dev-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="DeFi Smart Contract Development services"

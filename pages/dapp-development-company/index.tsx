@@ -489,7 +489,7 @@ export default function Ecommerce(props:any) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Best DApp Development company"

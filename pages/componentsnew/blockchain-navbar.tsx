@@ -349,47 +349,49 @@ const cryptoDevelopment = [
 
 
 export default function BlockchainNav(props: any) {
-  const [activeTab, setActiveTab] = useState("Tab1");
+
+const [activeTab, setActiveTab] = useState("Tab1");
   const [showNav, setShowNav] = useState(0);
   const [menu] = useState(false);
-  // 1. New state to track scroll status
-  const [isScrolled, setIsScrolled] = useState(false); 
 
-  const handleTabClick = (tab: any) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleTabClick = (tab: string) => {
     setActiveTab(tab);
   };
 
-  function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
+  function toggleSlideover() { }
 
-  // 2. Updated useEffect to use React state
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      // Read scroll position and update state
-      const scrolled = window.scrollY > 50;
-      // Only update state if it changes to avoid unnecessary re-renders
-      setIsScrolled(scrolled);
+      const newScrollState = window.scrollY > 50;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(prev => {
+            if (prev !== newScrollState) {
+              return newScrollState;
+            }
+            return prev;
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Empty dependency array runs only on mount/unmount
+  }, []);
 
-  // 3. Define dynamic header classes
-  // The element that has the scroll state applied needs to be the root fixed element.
+  // Combine fixed class with the dynamic scroll class
   const headerClasses = isScrolled
-    ? "fixed top-0 w-full bg-white z-50 headered active shadow-md"
-    : "fixed top-0 w-full bg-white z-50 headered";
+    ? "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto "
+    : "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto";
 
 
   return (
-    <div className={headerClasses}> 
+    <div className={headerClasses} > 
       <div className="max-w-[1600px] mx-auto"> 
         {/* Top Contact Bar */}
         <div className="flex gap-6 justify-end mx-10">

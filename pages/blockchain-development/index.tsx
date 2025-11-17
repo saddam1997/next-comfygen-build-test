@@ -886,13 +886,9 @@ export default function Blockchain(props) {
           }}
         />
       </Head>
-      <div className="">
-        {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-        {/* </LazyLoad> */}
-      </div>
+
       <BlockchainNav />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[50px]">
         <HeroSectionForAllPages
           heading="Blockchain Development Company"
           ptag="Comfygen Technologies is a leading blockchain development company offering custom, secure, and scalable solutions for startups and enterprises. With proven expertise in DeFi, NFTs, smart contracts, and enterprise blockchain app development, we help businesses unlock the full potential of decentralized technologies. Our blockchain experts follow best practices in security, compliance, and agile development to deliver innovative, future-ready solutions. Whether you need a dApp, cross-chain integration, or end-to-end blockchain consulting, Comfygen is your trusted partner for success in the Web3 ecosystem."

@@ -1075,80 +1075,24 @@ const cryptoDevelopment1 = [
 
 
 export default function DesktopNav(props: any) {
-  // const [activeTab, setActiveTab] = useState("Tab1");
-  // // Function to handle tab click
-  // const handleTabClick = (tab: any) => {
-  //   setActiveTab(tab);
-  // };
-
-  // const [showNav, setShowNav] = useState(0);
-  // const [menu] = useState(false);
-
-
-  // function toggleSlideover() {
-  //   // document
-  //   //   .getElementById("slideover-container")
-  //   //   .classList.toggle("invisible");
-  //   // document.getElementById("slideover-bg").classList.toggle("opacity-0");
-  //   // document.getElementById("slideover-bg").classList.toggle("opacity-50");
-  //   // document.getElementById("slideover").classList.toggle("translate-x-full");
-  // }
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const header = document.querySelector(".headered");
-  //     if (!header) return;
-
-  //     if (window.scrollY > 50) {
-  //       header.classList.add("active");
-  //     } else {
-  //       header.classList.remove("active");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
-  // useEffect(() => {
-  //   $(window).on("scroll", function () {
-  //     if ($(window).scrollTop() > 50) {
-  //       $(".headered").addClass("active");
-  //     } else {
-  //       $(".headered").removeClass("active");
-  //     }
-  //   });
-  // }, []);
-
-
   const [activeTab, setActiveTab] = useState("Tab1");
   const [showNav, setShowNav] = useState(0);
   const [menu] = useState(false);
-  // NEW STATE: Manage the 'active' scroll class via state
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
   };
 
-  function toggleSlideover() {
-    // Left as-is since the logic is commented out, but ideally should use state/refs
-    // for slideover visibility as well, not direct document manipulation.
-  }
+  function toggleSlideover() { }
 
-  // 👇 The Refactored Scroll Handler with requestAnimationFrame (rAF)
   useEffect(() => {
     let ticking = false;
-
-    // Use useCallback to ensure the function reference is stable
     const handleScroll = () => {
-      // Check scroll position outside of the rAF callback first
       const newScrollState = window.scrollY > 50;
-      console.log(newScrollState, "newScrollState")
-
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          // Update state only if it needs to change
           setIsScrolled(prev => {
             if (prev !== newScrollState) {
               return newScrollState;
@@ -1163,16 +1107,16 @@ export default function DesktopNav(props: any) {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Empty dependency array means this runs once on mount
+  }, []);
 
   // Combine fixed class with the dynamic scroll class
   const headerClasses = isScrolled
     ? "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto "
-    : "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto headered";
+    : "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto ";
 
   return (
     <div className={headerClasses}>
-      <div className="  flex gap-6 justify-end mx-10">
+      <div className="flex gap-6 justify-end mx-10">
         <p className="hidden lg:block">
           <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
             <IoMdMail className=" mt-1" /> sales@comfygen.com
@@ -1355,30 +1299,6 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
-
-                          {/* <li
-                            onClick={() => handleTabClick("Tab4")}
-                            className={
-                              activeTab === "Tab4"
-                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                            }
-                          >
-                            <Image
-                              src="https://www.comfygen.com/image/healthcare-app-dev-header-icon.svg"
-                              alt="Healthcare App Development"
-                              height={40}
-                              width={40}
-                            />
-                            <div className="space-y-4 cursor-pointer">
-                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                Healthcare App Development
-                              </p>
-                              <span className=" text-[#212121]/80 text-sm font-normal">
-                                Transforming Healthcare with Smart Apps{" "}
-                              </span>
-                            </div>
-                          </li> */}
 
                           <li
                             onClick={() => handleTabClick("Tab5")}
@@ -1772,30 +1692,6 @@ export default function DesktopNav(props: any) {
                               </span>
                             </div>
                           </li>
-
-                          {/* <li
-                            onClick={() => handleTabClick("Tab6")}
-                            className={
-                              activeTab === "Tab6"
-                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                            }
-                          >
-                            <Image
-                              src="https://www.comfygen.com/comfygen-images/astrology-app-development/finance.svg"
-                              alt="Web3 Development"
-                              height={40}
-                              width={40}
-                            />
-                            <div className="space-y-4 cursor-pointer">
-                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                Finance App Development
-                              </p>
-                              <span className="text-[#212121]/80 text-sm font-normal">
-                                Transforming Financial Ideas into Apps
-                              </span>
-                            </div>
-                          </li> */}
                         </ul>
                       </div>
                       <div className="space-y-10">
@@ -2310,113 +2206,6 @@ export default function DesktopNav(props: any) {
                 </div>
               </div>
 
-              {/* <div className="group z-40 ">
-                <button
-                  onClick={() => setShowNav(showNav === 3 ? 0 : 3)}
-                  className="hidden  items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
-                >
-                  <span
-                    className={
-                      showNav === 3 ? "  font-medium " : " font-medium "
-                    }
-                  >
-                    Games
-                  </span>
-                  <MdKeyboardArrowDown
-                    className="hover:text-black/100 text-black/80"
-                    size={18}
-                  />
-                </button>
-                <div className="z-40 lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl bg-transparent capitalize   text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap relative left-0 transform hidden group-hover:block   transition duration-200 ease-in-out origin-top  w-full ">
-                  <div className="2xl:p-10 p-5 mx-auto text-sm">
-                    <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
-                      <div className="space-y-10">
-                        <div>
-                          <ul className="text-[18px] font-medium space-y-3">
-                            {Game.map((elem: any, index: any) => {
-                              const { name, num, img, dec, url } = elem;
-                              return (
-                                <li key={index}>
-                                  <a
-                                    href={url}
-                                    className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-1 rounded-md cursor-pointer"
-                                  >
-                                    <Image
-                                      src={img}
-                                      alt={name}
-                                      height={40}
-                                      width={40}
-                                    />
-                                    <div className="space-y-4 cursor-pointer">
-                                      <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                        {name}
-                                      </p>
-                                      <span className="text-[#212121]/80 text-sm font-normal">
-                                        {dec}
-                                      </span>
-                                    </div>
-                                  </a>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      </div>
-                      <ul className="text-[18px] font-medium space-y-3">
-                        {Game1.map((elem: any, index: any) => {
-                          const { name, num, img, dec, url } = elem;
-                          return (
-                            <li key={index}>
-                              <a
-                                href={url}
-                                className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                              >
-                                <Image
-                                  src={img}
-                                  alt={name}
-                                  height={40}
-                                  width={40}
-                                />
-                                <div className="space-y-4 cursor-pointer">
-                                  <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                    {name}
-                                  </p>
-                                  <span className="text-[#212121]/80 text-sm font-normal">
-                                    {dec}
-                                  </span>
-                                </div>
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                      <div>
-                        <a href="/contact-us" className="relative">
-                          <Image
-                            src="https://www.comfygen.com/image/games-header-img.webp"
-                            alt="Game Development Company"
-                            height={486}
-                            width={511}
-                            unoptimized
-                          />
-                          <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block flex justify-end items-center rounded-tl-[50px]">
-                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
-                              Connect to expert
-                              <Image
-                                src="https://www.comfygen.com/image/button-arrow.svg"
-                                alt="Game Development Company"
-                                height={22}
-                                width={22}
-                              />
-                            </button>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-
 
               <div className="group z-40 ">
                 <button
@@ -2531,27 +2320,6 @@ export default function DesktopNav(props: any) {
                           );
                         })}
                       </ul>
-                      {/* <div>
-                        <a href="/contact-us" className="relative">
-                          <Image
-                            src="https://www.comfygen.com/image/sports-hero-img.webp"
-                            alt=""
-                            height={486}
-                            width={511}
-                          />
-                          <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
-                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
-                              Connect to expert
-                              <Image
-                                src="https://www.comfygen.com/image/button-arrow.svg"
-                                alt=""
-                                height={22}
-                                width={22}
-                              />
-                            </button>
-                          </span>
-                        </a>
-                      </div> */}
                     </div>
                   </div>
                 </div>

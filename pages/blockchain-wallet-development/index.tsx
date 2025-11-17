@@ -485,7 +485,7 @@ export default function Blockchain(props) {
         {/* </LazyLoad> */}
       </div>
       <BlockchainNav />
-      <div className="overflow-hidden pt-16">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Blockchain Wallet development Company"
           ptag="As a top-tier blockchain wallet development company renowned for delivering secure, intuitive, and scalable wallet solutions tailored to meet the diverse needs of individual users, startups, fintech innovators, and large enterprises."

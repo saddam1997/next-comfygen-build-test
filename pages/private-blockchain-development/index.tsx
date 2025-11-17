@@ -910,7 +910,7 @@ export default function rummy(props) {
         {/* </LazyLoad> */}
       </div>
       <BlockchainNav />
-      <div className="overflow-hidden pt-16">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Private Blockchain Development Company"
           ptag="ComfyGen Technologies is a trusted private blockchain development company delivering secure, scalable, and customized blockchain solutions. Our expert private blockchain developers for hire specialize in creating permissioned networks for industries like finance, logistics, and healthcare. From smart contract development to enterprise-grade app deployment, we offer full-cycle private blockchain application development using Hyperledger, Quorum, and Corda. Partner with ComfyGen to build robust, compliant, and future-ready private blockchain development solutions that empower your business."

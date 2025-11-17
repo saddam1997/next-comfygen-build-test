@@ -53,10 +53,10 @@ export default function HeroSectionForAllPages(props: any) {
   }
 
   return (
-    <section ref={ref} className="lg:bg-center bg-no-repeat bg-cover bg-left " style={
+    <section ref={ref} className="lg:bg-center bg-no-repeat bg-cover bg-left min-h-full" style={
       isMobile
         ? { backgroundColor: '#5951cd' }
-        : { backgroundImage: `url(${props.bgImage})` }
+        : { backgroundImage: `url(${props.bgImage})`, }
     }>
     {/* {isMobile ? "TRUE ":"FALSE"} */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto pt-10">

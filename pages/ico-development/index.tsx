@@ -429,7 +429,7 @@ export default function Ecommerce(props) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[115px]">
 
 
         <HeroSectionForAllPages

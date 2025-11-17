@@ -9,7 +9,7 @@ import AboutSection from "../components/AboutSection";
 import InfoSectionRight from "../components/InfoSectionRight";
 import ServicesSec from "../components/ServicesSec";
 import SolutionSec from "../components/SolutionSec";
-import {IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode,  IconSettings, } from '@tabler/icons-react';
+import { IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode, IconSettings, } from '@tabler/icons-react';
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
@@ -621,12 +621,10 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-      {/* <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad> */}
+
       <BlockchainNav />
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
+        <div className="lg:bg-center h-full  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="POW Blockchain Development Company"
             ptag="Comfygen offers expert POW Blockchain development services, helping businesses leverage the power of decentralized technology. Our solutions support web3 applications like dApps, NFTs, DeFi, DAOs, and web3 games, ensuring immutability, cryptographic security, and transparency. By eliminating intermediaries, our POW blockchain technology ensures efficiency and scalability. Trust us to create secure, interoperable blockchain solutions that help you stay ahead in the rapidly evolving web3 landscape."
