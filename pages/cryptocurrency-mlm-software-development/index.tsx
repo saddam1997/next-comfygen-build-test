@@ -542,7 +542,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[50px]">
         {/* hero section */}
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/cryptocurrency-mlm-software-dev-hero-img.webp')]">
           <HeroSectionForAllPages

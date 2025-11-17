@@ -314,51 +314,50 @@ const cryptoDevelopment = [
 ];
 
 export default function EcommerceNav(props: any) {
+
   const [activeTab, setActiveTab] = useState("Tab1");
-  // Function to handle tab click
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
-
-  const [showNav, setShowNav] = useState(0);
-  const [menu] = useState(false);
-  function toggleSlideover() {
-    document
-      .getElementById("slideover-container")
-      .classList.toggle("invisible");
-    document.getElementById("slideover-bg").classList.toggle("opacity-0");
-    document.getElementById("slideover-bg").classList.toggle("opacity-50");
-    document.getElementById("slideover").classList.toggle("translate-x-full");
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector(".headered");
-      if (!header) return;
-
-      if (window.scrollY > 50) {
-        header.classList.add("active");
-      } else {
-        header.classList.remove("active");
-      }
+    const [showNav, setShowNav] = useState(0);
+    const [menu] = useState(false);
+  
+    const [isScrolled, setIsScrolled] = useState(false);
+  
+    const handleTabClick = (tab: string) => {
+      setActiveTab(tab);
     };
+  
+    function toggleSlideover() { }
+  
+    useEffect(() => {
+      let ticking = false;
+      const handleScroll = () => {
+        const newScrollState = window.scrollY > 50;
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            setIsScrolled(prev => {
+              if (prev !== newScrollState) {
+                return newScrollState;
+              }
+              return prev;
+            });
+            ticking = false;
+          });
+          ticking = true;
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    // Combine fixed class with the dynamic scroll class
+    const headerClasses = isScrolled
+      ? "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto "
+      : "fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto ";
+  
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // useEffect(() => {
-  //   $(window).on("scroll", function () {
-  //     if ($(window).scrollTop() > 50) {
-  //       $(".headered").addClass("active");
-  //     } else {
-  //       $(".headered").removeClass("active");
-  //     }
-  //   });
-  // }, []);
 
   return (
-    <div className="fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto">
+    <div className={headerClasses}>
       <div className="  flex gap-6 justify-end mx-10">
         <p className="hidden lg:block">
           <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">

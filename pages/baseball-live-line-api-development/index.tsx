@@ -346,7 +346,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[40px]">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp')]">
           <HeroSectionForAllPages
             heading="Baseball Live Line API"

@@ -536,9 +536,7 @@ export default function Mobile(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="">
-        <div className="">
-          <div>
+      <div className="overflow-hidden">
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/hire-mobile-app-developers-hero-img.webp')]">
               <HeroSectionForAllPages
                 heading="Hire Top Mobile App Developers In India"
@@ -557,8 +555,7 @@ export default function Mobile(props) {
                 closeModal={closeModal}
               />
             </div>
-          </div>
-        </div>
+
         <AboutSection
           title="About Us"
           heading="App Developers to Build Interactive Mobile Apps"

@@ -342,7 +342,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-hero.webp')]">
         <HeroSectionForAllPages
           heading="Horse Racing Live Line"

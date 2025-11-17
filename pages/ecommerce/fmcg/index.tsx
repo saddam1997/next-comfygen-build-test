@@ -435,7 +435,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
       <EcommerceNav />
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/fmcg/fmcg-hero.webp')]">
           <HeroSectionForAllPages
             heading="FMCG Delivery App Development Company"

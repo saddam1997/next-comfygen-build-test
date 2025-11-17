@@ -166,7 +166,7 @@ export default function Mobile(props) {
           <Header />
         </LazyLoad>
       </div>
-      <div className="">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Application Consulting Services"
           ptag="Comfygen helps clients acknowledge different business plans, possible exposures, and promising mobile application development consulting services to grow and level up among impeccable and settled market competitors. We are a proficient mobile app development company with many years of experienced developers and market researchers to provide mobile app development consultancy services to learn what’s best for the specific niche-oriented business."

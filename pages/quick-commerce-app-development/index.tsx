@@ -531,7 +531,7 @@ export default function ClinicalApp(props: any) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hiddenlg:pt-[90px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-hero.webp')]">
           <HeroSectionForAllPages
             heading="Quick Commerce App Development Services for Ultra-Fast Delivery Brands"

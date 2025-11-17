@@ -539,7 +539,7 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[40px]">
         <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-hero.webp')]">
           <HeroSectionForAllPages
             heading="Mobile crypto wallet development company"

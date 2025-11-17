@@ -462,9 +462,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden">
-
-        
+      <div className="overflow-hidden lg:pt-[20px]">
         <HeroSectionForAllPages
           heading="Best White Label Crypto Exchange Development Company"
           ptag="Comfygen Top-notch White Label Crypto Exchange Development Services provide scalable, feature-rich platforms that support multi-currency trading, advanced security protocols, and seamless user experiences. Whether you’re a startup or an enterprise, our customizable exchange software helps you enter the market faster and stay ahead of the competition."

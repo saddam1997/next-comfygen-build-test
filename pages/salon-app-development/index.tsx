@@ -385,7 +385,7 @@ export default function ClinicalApp(props: any) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-hero.webp')]">
           <HeroSectionForAllPages
             heading="Custom Salon App Development Services for Beauty & Wellness Brands"

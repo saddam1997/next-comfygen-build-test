@@ -510,7 +510,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
       <EcommerceNav />
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp')]">
           <HeroSectionForAllPages
             heading="Custom Grocery Delivery App Development Company for Startups to Enterprise"

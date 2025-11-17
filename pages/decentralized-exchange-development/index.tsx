@@ -523,7 +523,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[40px]">
         {/* hero section */}
 
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/decentralized-exchange-development/decentralized-exchange-dev-hero-img.webp')]">

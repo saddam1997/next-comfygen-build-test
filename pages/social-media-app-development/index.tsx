@@ -294,7 +294,7 @@ export default function Mobile(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="">
+      <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/social-media-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Best Custom Social Media App Development Company in India"

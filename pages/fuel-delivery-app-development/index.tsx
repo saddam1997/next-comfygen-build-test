@@ -437,7 +437,7 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Top Fuel Delivery App Development Company"

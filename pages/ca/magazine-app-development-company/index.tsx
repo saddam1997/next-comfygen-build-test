@@ -279,7 +279,7 @@ export default function News(props) {
           <Header />
         </LazyLoad>
       </div>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[30px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/magazine-app-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Top Magazine App Development Company in India and USA"

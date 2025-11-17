@@ -410,7 +410,7 @@ export default function Ecommerce(props) {
 
         <Header />
       
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
           heading="Margin Trading Exchange Development"
