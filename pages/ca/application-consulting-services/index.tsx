@@ -1,10 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
-import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import styles from "./styles.module.css";
 import JSON_DATA from "./json/applicationConsulting.json";
 import LazyLoad from "react-lazy-load";
 import { IconApps, IconBrain, IconCloud, IconCurrencyBitcoin, } from '@tabler/icons-react';
@@ -19,8 +14,6 @@ import HireDeveloperSec from "../../componentsnew/HireDeveloperSec";
 import LatestTechnology from "../../componentsnew/LatestTechnology";
 import WhyChoose from "../../componentsnew/WhyChooseUs";
 import Faq from "../../componentsnew/Faq";
-import BlogSection from "../../componentsnew/BlogSection";
-import FormSec from "../../componentsnew/FormSec";
 import Header from "../../componentsnew/Header";
 import IndustriesServe from "../../components/IndustriesServe";
 
@@ -45,6 +38,11 @@ export default function Mobile(props) {
     setTalkToExpertModal(false);
   };
 
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init();
+    });
+  }, []);
 
   const technologyData = [
     {
@@ -183,7 +181,7 @@ export default function Mobile(props) {
           closeModal={closeModal}
         />
         <AboutSection
-          title="About Company"
+          title=""
           heading="Leading Mobile App Consultancy for a Futuristic Market"
           description1="Comfygen is an 8+ years experienced IT firm that has acquired the talents of 10 to 15+ years of experienced developers, researchers, and analysts. This company is more focused on delivering quality over quantity. We cater mobile app consulting services to clients with optimum innovative approaches to development, deployment, and even post-deployment support & maintenance. Our mobile app developers are attentive to cutting-edge technologies and trending techs to build robust mobile applications that carry the potential to engage users in the long run."
           description2="Not only the expertise we have, but our team of IT engineers also understands every domain, niche, and industrial type. Every industry is revolutionized by technological advancements and unique ideations. Our app development consultants are well-versed in the current revolutions and possible futuristic changes. Therefore, they can comment better on the clientele’s app development idea and suggest bright application consultancy to build a potent mobile application that fulfills every need with vast engagement."

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 // import Testimonial from "../components/Testimonials";
@@ -13,9 +13,9 @@ export default function Altcoin(props:any) {
   const Header = dynamic(() => import("../components/Header"), {
     loading: () => <p>Loading...</p>,
   });
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);

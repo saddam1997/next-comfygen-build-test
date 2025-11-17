@@ -1,20 +1,14 @@
-import Link from "next/link";
-import Image from "next/image";
-import "aos/dist/aos.css";
+
+// import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-
-import Faq from "../../components/Faq";
-import BlogSection from "../../components/BlogSection";
 import HireDeveloper from "../../components/HireDeveloper";
 import IndustriesServe from "../../components/IndustriesServe";
 import TechStack from "../../components/TechStack";
 import WhyChoose from "../../components/WhyChooseUs";
 import ServicesSec from "../../components/ServicesSec";
-import ContactFromCenter from "../../components/ContactFromCenter";
 import ProcessSec from "./components/ProcessSec";
 import HeroSectionForAllPages from "./components/HeroSectionForAllPages";
 import Header from "./components/Header";
@@ -94,6 +88,13 @@ export default function Mobile(props: any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
+
+    useEffect(() => {
+      import("aos").then((AOS) => {
+        AOS.init();
+      });
+    }, []);
 
   const Process = [
     {

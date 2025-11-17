@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -10,7 +10,6 @@ import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
 import SolutionSec from "../components/SolutionSec";
 
 import {

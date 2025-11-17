@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import React from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/blockchain.json";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -12,7 +12,6 @@ import {
   IconNetwork,
   IconTrendingUp,
 } from "@tabler/icons-react";
-import Header from "../componentsnew/Header";
 import AboutSection from "../componentsnew/AboutSection";
 import ServicesSec from "../componentsnew/ServicesSec";
 import ContactFromCenter from "../componentsnew/ContactFromCenter";

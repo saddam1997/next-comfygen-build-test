@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import React from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { MdOutlineClose } from 'react-icons/md';
 import ContactFrom from '../../components/ContactFrom';
 
 export default function Contact() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>

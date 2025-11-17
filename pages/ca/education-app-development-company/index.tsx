@@ -1,32 +1,28 @@
-import Link from "next/link";
+
 import Image from "next/image";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { ImArrowUpRight2 } from "react-icons/im";
 import dynamic from "next/dynamic";
-import styles from "./styles.module.css";
 import JSON_DATA from "./json/applicationConsulting.json";
 import LazyLoad from "react-lazy-load";
 import { MdControlPointDuplicate } from "react-icons/md";
 import Providers from "./components/Providers";
-import HireSection from "./components/HireSection";
 import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
 import Faq from "../../components/Faq";
 import CallToAction from "../../components/CallToAction";
 import AboutSection from "../../components/AboutSection";
 import ServicesSec from "../../components/ServicesSec";
 import SolutionSec from "../../components/SolutionSec";
-import { IconApps, IconBadgeVr, IconBook, IconBookUpload, IconBrain, IconBrandAsana, IconBriefcase, IconBrowser, IconCalendar, IconCalendarEvent, IconClipboard, IconClipboardList, IconCloud, IconCode, IconCrop11, IconCurrencyBitcoin, IconDatabase, IconDevices, IconDevicesQuestion, IconDeviceWatch, IconFirstAidKit, IconHeartbeat, IconLanguage, IconMath, IconMessage, IconMoodKid, IconNews, IconPackage, IconReportSearch, IconSchool, IconSettings, IconSignal5g, IconUserCheck, IconVideo, IconWorldDollar, IconWorldWww } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar, IconHeart, IconShield, } from '@tabler/icons-react';
+import {IconBadgeVr, IconBook, IconBookUpload, IconBrandAsana, IconBriefcase, IconCalendarEvent,IconCode, IconCrop11, IconDevices, IconDevicesQuestion, IconFirstAidKit, IconLanguage, IconMath, IconMoodKid,IconSchool,IconVideo, IconWorldDollar, IconWorldWww } from '@tabler/icons-react';
+import { IconTools } from '@tabler/icons-react';
 import TechStack from "../../components/TechStack";
 import HireDeveloper from "../../components/HireDeveloper";
 import WhyChoose from "../../components/WhyChooseUs";
 import ProcessSec from "../../components/ProcessSec";
 import PortfolioSec from "../../components/PortfolioSec";
 import ConsultancyApproach from "../../components/ConsultancyApproach";
-import BlogSection from "../../components/BlogSection";
 import ContactFromCenter from "../../components/ContactFromCenter";
 
 

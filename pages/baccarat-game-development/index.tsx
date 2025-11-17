@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -101,9 +101,9 @@ const technologyData = [
 
 export default function Altcoin(props) {
   let { initialData } = props;
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);

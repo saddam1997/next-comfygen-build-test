@@ -1,14 +1,11 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import styles from "./styles.module.css";
-import "aos/dist/aos.css";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+// import styles from "./styles.module.css";
+// import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";
 import Providers from "./components/Providers";
-import ModusSection from "./components/ModusSection";
-import HireSection from "../components/HireSection";
 import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import AboutSection from "../../components/AboutSection";

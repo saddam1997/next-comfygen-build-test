@@ -1,20 +1,15 @@
 import Link from "next/link";
-import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import useSWR from "swr";
 import { useEffect, useState } from "react";
 import React from "react";
 import moment from "moment";
-import useSwr from "swr";
 import { useRouter } from "next/router";
-import { BiChevronDown, BiTime } from "react-icons/bi";
 import Head from "next/head";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import CustomImage from "../components/CustomImage";
-import useSWRInfinite from "swr/infinite";
 import dynamic from 'next/dynamic';
-import Pagination from '../components/Pagination';
  
 
 const Header = dynamic(() => import('../components/Header'), {
@@ -50,9 +45,9 @@ export default function blog(posts) {
 
   // Generate an array of page numbers for pagination links
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1)
-  useEffect(() => {
-    AOS.init();
-  });
+  // useEffect(() => {
+  //   AOS.init();
+  // });
   return (
     // <>
     <div className="overflow-hidden">

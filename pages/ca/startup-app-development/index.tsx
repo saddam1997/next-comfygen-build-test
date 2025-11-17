@@ -1,12 +1,9 @@
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import styles from "./styles.module.css";
 import JSON_DATA from "./json/startApp.json";
 import LazyLoad from "react-lazy-load";
-
-import BlogSection from "../../components/BlogSection";
 import {
   IconBox,
   IconCloud,

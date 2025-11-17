@@ -56,9 +56,9 @@ const ldJson = {
 export default function Mobile(props) {
   let { initialData } = props;
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
+  // useEffect(() => {
+  //   AOS.init();
+  // }, [])
 
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -121,7 +121,7 @@ export default function Mobile(props) {
           bgImage="https://www.comfygen.com/herosection/android-app-dev-hero-img.webp"
         />
         <AboutSection
-          title="About Company"
+          title=""
           heading="Why Comfygen is Your Trusted Android App Development Partner in India"
           description1="As a Trusted Android application development company, We provide custom Android app solutions, we are committed to building innovative, high-performance Android mobile apps that perfectly align with your mobile app development business goals. "
           description2="As expert Android app developers providing custom Android app solutions for startups and small businesses. We specialize in creating custom mobile apps for B2B, and B2C models, including domains like gaming, AR/VR, IoT, news, entertainment, multimedia, utility, chat, shopping, ticket booking, and more. "

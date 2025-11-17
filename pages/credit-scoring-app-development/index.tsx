@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import LazyLoad from "react-lazy-load";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import JSON_DATA from "./json/creditscoringappdevelopment1.json";
 import ContactFromCenter from "../components/ContactFromCenter";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";

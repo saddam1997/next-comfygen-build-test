@@ -1,13 +1,13 @@
-import Link from 'next/link';
+
 import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect, useState } from "react";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import { useState } from "react";
 import React from 'react'
 import moment from 'moment';
 import useSwr from 'swr';
 import { useRouter } from "next/router";
-import { BiChevronDown, BiTime } from 'react-icons/bi';
+import { BiChevronDown } from 'react-icons/bi';
 import Head from 'next/head';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import CustomImage from '../../components/CustomImage';
