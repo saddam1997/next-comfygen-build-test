@@ -640,10 +640,6 @@ export default function Ecommerce(props) {
         />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-      
-
-      
-
         <CardGrid
           heading="Types of Crypto Trading Bots We Develop"
           subheading="At Comfygen, we offer a comprehensive range of <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/how-to-build-a-crypto-trading-bot/'>crypto trading bots</a> tailored to different trading strategies and user goals. Whether you're a day trader, institutional investor, or beginner, our bots are designed for maximum efficiency, speed, and profitability."

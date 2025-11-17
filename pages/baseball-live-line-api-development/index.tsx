@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baseballlivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionHomePage from "./components/HeroSectionHomePage"
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
@@ -270,13 +270,13 @@ export default function Ecommerce(props) {
           name="subtitle"
           content="Best Baseball Live Line API"
         />
-  
+
         <meta
           property="og:type"
           content="Baseball Live Line API Services Provider"
         />
 
-        
+
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-og-image.webp"
@@ -343,11 +343,33 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
+      {/* <LazyLoad height={80} offset={100}>
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[40px]">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp')]">
+      </LazyLoad> */}
+      <div className="w-fulll">
+
+        <div className=" w-full">
+          <HeroSectionHomePage
+            heading="Baseball Live Line API"
+            isHome={false}
+            Provider
+            ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
+            ptag1="From live game updates to historical MLB odds, our service empowers developers and businesses alike to create data-rich sports experiences. Need a customized Baseball data API? We’ve got you covered."
+            btnName="Let's Discuss"
+            btnLink="/contact-us"
+            imgSrc="/"
+            Width={740}
+            Height={340}
+            altTag="blockchain-technology"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
+          // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
+          />
+        </div>
+        {/* <div className="lg:bg-center relative bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp')]">
           <HeroSectionForAllPages
             heading="Baseball Live Line API"
             subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
@@ -360,7 +382,7 @@ export default function Ecommerce(props) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
           />
-        </div>
+        </div> */}
         <AboutSection
           title="About Company"
           heading="What is Baseball Live Line API?"

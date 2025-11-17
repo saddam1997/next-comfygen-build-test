@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
 // import ContactFrom from "./ContactFrom";
 import dynamic from "next/dynamic";
-const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
+import ContactFrom from "../../components/ContactFrom";
+
 
 export default function HeroSection(props: any) {
 
@@ -62,7 +63,7 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent sm:h-full max-h-screen`}
+      className={` bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent min-h-screen w-full items-center`}
     // style={{
     //   backgroundColor: isMobile ? "#5951cd" : "transparent",
     // }}
@@ -72,7 +73,7 @@ export default function HeroSection(props: any) {
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
-        className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
+        className="object-cover object-center -z-10 h-screen hidden sm:block bg-no-repeat bg-fixed"
         priority
         fetchPriority="high"
         sizes="100vw"
@@ -83,7 +84,7 @@ export default function HeroSection(props: any) {
       />
 
 
-      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto h-screen">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
           <div className="space-y-4">
             {props.isHome ? (
@@ -106,58 +107,7 @@ export default function HeroSection(props: any) {
             </p>
           </div>
 
-          {/* Optimized stat cards with preloaded icons */}
-          <div className="hidden sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">
-            <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-              <div className="h-8 w-8">
-                <Image
-                  alt="Experience Icon"
-                  src="https://www.comfygen.com/comfygen-images/comfygen/hero-experience-icon.webp"
-                  height={32}
-                  width={32}
-                  quality={70}
-                  loading="eager"
-                  className="h-8 w-8"
-                />
-              </div>
-              <p className="font-semibold text-[#000] text-base">
-                6+ Year's Experience
-              </p>
-            </div>
-            <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-              <div className="h-8 w-8">
-                <Image
-                  alt="Projects Delivered Icon"
-                  src="https://www.comfygen.com/comfygen-images/comfygen/heroproject-delivered-icon.webp"
-                  height={32}
-                  width={32}
-                  quality={70}
-                  loading="eager"
-                  className="h-8 w-8"
-                />
-              </div>
-              <p className="font-semibold text-[#000] text-base">
-                250+ Project Delivered
-              </p>
-            </div>
-            <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] space-y-2">
-              <div className="lg:h-auto w-auto">
-                <Image
-                  alt="Happy Clients Icon"
-                  src="https://www.comfygen.com/comfygen-images/comfygen/happy-client-hero-icon.webp"
-                  height={32}
-                  width={32}
-                  quality={70}
-                  loading="eager"
-                  className="w-12"
-                />
-              </div>
-              <p className="font-semibold text-[#000] text-base">
-                100+ Total Happy Client
-              </p>
-            </div>
-          </div>
-
+ 
 
 
           <div className="py-2 sm:hidden flex items-center justify-center ">

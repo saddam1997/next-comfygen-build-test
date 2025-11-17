@@ -53,7 +53,7 @@ export default function HeroSectionForAllPages(props: any) {
   }
 
   return (
-    <section ref={ref} className="lg:bg-center bg-no-repeat bg-cover bg-left min-h-full" style={
+    <section ref={ref} className="lg:bg-center bg-no-repeat bg-cover bg-left min-h-full w-full" style={
       isMobile
         ? { backgroundColor: '#5951cd' }
         : { backgroundImage: `url(${props.bgImage})`, }
