@@ -11,7 +11,7 @@ const CommonImage = dynamic(() => import("./CommonImage"), {
 
 const AboutSection = (props: any) => {
   const {
-    heading = "",
+    heading = "image",
     description1 = "",
     description2 = "",
     description3 = "",
@@ -29,8 +29,6 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
-
-
               <CommonImage
                 src={imageSrc}
                 alt={heading}
@@ -55,19 +53,7 @@ const AboutSection = (props: any) => {
               priority={false}        // 👈 Don’t preload
             /> */}
 
-            {/* <Image
-              src={imageSrc}
-              alt={heading}
-              width={600}
-              height={360}
-              priority // important for LCP
-               // compress further (default is 75)
-              // sizes="(max-width: 640px) 90vw,
-              //    (max-width: 768px) 85vw,
-              //    (max-width: 1024px) 45vw,
-              //    600px"
-              // style={{ width: "100%", height: "auto" }}
-            /> */}
+
           </div>
           <div>
             <div className="space-y-4">

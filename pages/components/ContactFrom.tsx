@@ -227,7 +227,7 @@ class ContactFrom extends Component<{}, any> {
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4  ">
             <div className="space-y-2">
-              <label htmlFor="" className="text-base">
+              <label htmlFor="name" className="text-base">
                 Full Name
               </label>
               <input
@@ -253,7 +253,7 @@ class ContactFrom extends Component<{}, any> {
               ) : null}
             </div>
             <div className="space-y-2">
-              <label htmlFor="" className="text-base">
+              <label htmlFor="email" className="text-base">
                 Enter Email
               </label>
               <input
@@ -280,74 +280,15 @@ class ContactFrom extends Component<{}, any> {
                 </div>
               ) : null}
             </div>
-            {/* <div className="space-y-2">
-              <label htmlFor="stdCode">Enter Number</label>
-              <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7] focus:font-normal">
-                <Select
-                  options={JSON_DATA.Country?.map((ele) => ({
-                    name: ele.name,
-                    label: `${ele?.flag} ${ele?.stdCode}`,
-                    value: ele?.stdCode,
-                  }))}
-                  value={
-                    this.state.stdCode
-                      ? JSON_DATA.Country?.map((ele) => ({
-                        name: ele.name,
-                        label: `${ele?.flag} ${ele?.stdCode}`,
-                        value: ele?.stdCode,
-                      })).find((ele) => ele.value === this.state.stdCode)
-                      : JSON_DATA.Country?.map((ele) => ({
-                        name: ele.name,
-                        label: `${ele?.flag} ${ele?.stdCode}`,
-                        value: ele?.stdCode,
-                      }))[0]
-                  }
-                  onChange={(e) => {
-                    this.handleCountryChange({
-                      target: { name: "stdCode", value: e.value },
-                    });
-                  }}
-                  className="text-sm w-28 bg-transparent"
-                  getOptionValue={(e) => e.name}
-                  components={{
-                    DropdownIndicator: () => null,
-                    IndicatorSeparator: () => null,
-                  }}
-                  styles={{
-                    control: (base, state) => ({
-                      ...base,
-                      border: "none",
-                      backgroundColor: "transparent",
-                      boxShadow: state.isFocused ? "none" : base.boxShadow,
-                      cursor: "pointer",
-                    }),
-                    placeholder: (base) => ({
-                      ...base,
-                      color: "gray",
-                    }),
-                  }}
-                />
 
-                <input
-                  type="text"
-                  onChange={this.inputChange}
-                  name="mobNo"
-                  value={
-                    this.state.fieldsContactUs["mobNo"]
-                      ? this.state.fieldsContactUs["mobNo"]
-                      : ""
-                  }
-                  placeholder="Enter Whatsapp number"
-                  className="p-2 w-full focus:outline-none bg-transparent focus:font-normal border-l border-[#000]/10"
-                />
-              </div>
-            </div> */}
 
             <div className="space-y-2">
               <label htmlFor="mobNo">Enter Number</label>
               <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7]">
                 {/* Country Code Dropdown */}
                 <Select
+                  inputId="mobNo"
+                  aria-label="Country Code"
                   options={JSON_DATA.Country?.map((ele) => ({
                     name: ele.name,
                     label: `${ele.flag} ${ele.stdCode}`,

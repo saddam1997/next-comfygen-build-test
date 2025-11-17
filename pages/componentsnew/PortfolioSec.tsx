@@ -17,7 +17,7 @@ export default function Tech({ techData, heading, description, description1 = ""
         </div>
 
         <div className="space-y-10">
-          {techData?.All?.map((elem, index) => (
+          {techData?.All?.map((elem:any, index:any) => (
             <div
               key={elem.num}
               className={`rounded-[40px] ${index % 2 === 0 ? "bg-[#F5F5F9] border border-[#000000]/10" : "bg-[#fff] border border-[#000000]/10"

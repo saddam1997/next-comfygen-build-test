@@ -167,9 +167,9 @@ export default function HeroSectionForAllPages(props: any) {
                 role="dialog"
                 aria-modal="true"
               >
-                <div className="flex items-center justify-center min-h-screen">
+                <div className="flex items-center justify-center h-full">
                   <div className="modal-overlay fixed inset-0 bg-black opacity-50"></div>
-                  <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
+                  <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-[50%] xl:w-5/6 lg:w-11/12">
                     <div className="modal-content">
                       <div className="flex justify-center ">
                         <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/image/modal-form-img.webp')]">

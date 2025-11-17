@@ -319,7 +319,7 @@ class ContactFromHeader extends Component<{}, any> {
               className="focus:outline-none bg-[#F7F7F7] p-2 rounded-l font-light focus:font-normal w-28"
             >
               <option value="SELECT">Select</option> {/* removed selected */}
-              {JSON_DATA.Country.map((country) => (
+              {JSON_DATA?.Country.map((country) => (
                 <option key={country.stdCode} value={country.stdCode}>
                   {country.stdCode}
                 </option>

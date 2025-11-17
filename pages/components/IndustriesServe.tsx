@@ -194,14 +194,7 @@ function IndustriesServe({
                           blurDataURL="/blur-placeholder.webp"
                           className="w-full h-full object-cover "
                         />
-                        {/* <Image
-                          src={item.imgSrc}
-                          alt={item.title}
-                          width={640}
-                          height={360}
-                          loading="lazy"
-                          className="w-full h-full object-cover "
-                        /> */}
+
                       </div>
                       <div>
                         <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>
@@ -224,14 +217,7 @@ function IndustriesServe({
                         blurDataURL="/blur-placeholder.webp"
                         className="w-full h-full object-cover "
                       />
-                      {/* <Image
-                        src={item.imgSrc}
-                        alt={item.title}
-                        width={640}
-                        height={360}
-                        loading="lazy"
-                        className="w-full h-full object-cover  "
-                      /> */}
+
                     </div>
                     <div>
                       <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>

@@ -474,11 +474,11 @@ export default function Ecommerce(props) {
         <AboutSection
           title="About Company"
           heading="Future of Digital Trading with Advanced Cryptocurrency Exchange Development"
-          description1="At Comfygen, we redefine how businesses and investors interact with digital assets. As a leading cryptocurrency exchange development company, we specialize in building high-performance <a href='https://www.comfygen.com/blog/top-crypto-trading-platforms/' class='text-blue-500'>crypto trading platforms</a> that support everything from spot and derivatives trading to DeFi staking, NFTs, and tokenized real-world assets (RWA)."
+          description1="At Comfygen, we redefine how businesses and investors interact with digital assets. As a leading cryptocurrency exchange development company, we specialize in building high-performance <a href='https://www.comfygen.com/blog/top-crypto-trading-platforms/' class='text-blue-800'>crypto trading platforms</a> that support everything from spot and derivatives trading to DeFi staking, NFTs, and tokenized real-world assets (RWA)."
           description2="In today’s competitive market, we help enterprises, startups, and fintech innovators launch their own AI-powered, liquidity-rich, and fully compliant crypto exchanges tailored for global operations. Our expertise extends across multi-chain integration, KYC/AML automation, and institutional-level wallet infrastructure, ensuring security and scalability at every layer."
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
 
-          description3="From CEX and DEX platforms to hybrid and <a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='text-blue-500'>white-label exchange development solutions</a>, Comfygen empowers businesses to capitalize on blockchain innovation and deliver <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-500'>next-gen trading bot</a> experiences that drive adoption, trust, and growth in the evolving Web3 economy."
+          description3="From CEX and DEX platforms to hybrid and <a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='text-blue-800'>white-label exchange development solutions</a>, Comfygen empowers businesses to capitalize on blockchain innovation and deliver <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-800'>next-gen trading bot</a> experiences that drive adoption, trust, and growth in the evolving Web3 economy."
           link="/about-us"
           linkText="Explore More"
           points={[]}
@@ -506,7 +506,7 @@ export default function Ecommerce(props) {
               Cryptocurrency Exchange Development Solutions to Drive Your Business Growth
               </h2>
               <p className="text-base text-center font-normal">
-              As a top-rated cryptocurrency exchange development company, we are designed to solve critical business challenges and empower you to launch a secure and scalable crypto exchange platform with ease. Whether you are a startup or an established enterprise, our <a href='https://www.comfygen.com/ai-crypto-exchange-development' className='text-blue-500'>AI-powered Cryptocurrency Exchange Development solutions focus on:</a>
+              As a top-rated cryptocurrency exchange development company, we are designed to solve critical business challenges and empower you to launch a secure and scalable crypto exchange platform with ease. Whether you are a startup or an established enterprise, our <a href='https://www.comfygen.com/ai-crypto-exchange-development' className='text-blue-800'>AI-powered Cryptocurrency Exchange Development solutions focus on:</a>
               </p>
             </div>
             
@@ -535,7 +535,7 @@ export default function Ecommerce(props) {
                 Blockchain Networks We Use to Develop Secure & Scalable Cryptocurrency Exchange
                 </h2>
                 <p>
-                At Comfygen, we understand that the backbone of every strong cryptocurrency exchange development is the blockchain network it runs on. Our <a href='https://www.comfygen.com/blockchain-development' className='text-blue-500'>blockchain development</a> expert team works with a wide range of blockchain technologies to build secure, scalable, and high-performance crypto exchange platforms tailored to your business needs.
+                At Comfygen, we understand that the backbone of every strong cryptocurrency exchange development is the blockchain network it runs on. Our <a href='https://www.comfygen.com/blockchain-development' className='text-blue-800'>blockchain development</a> expert team works with a wide range of blockchain technologies to build secure, scalable, and high-performance crypto exchange platforms tailored to your business needs.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-3 grid-cols-1">
@@ -557,7 +557,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -569,7 +569,7 @@ export default function Ecommerce(props) {
 
         <InfoSectionLeft
           heading="Why White Label Crypto Exchanges Are Ideal for Startups and Enterprises"
-          description1="<a class='text-blue-500 font-semibold' href='/white-label-crypto-exchange-development'>White label crypto exchanges</a> provide an efficient and strategic way for both startups and established enterprises to enter the booming cryptocurrency market without the need for extensive technical resources or long development timelines."
+          description1="<a class='text-blue-800 font-semibold' href='/white-label-crypto-exchange-development'>White label crypto exchanges</a> provide an efficient and strategic way for both startups and established enterprises to enter the booming cryptocurrency market without the need for extensive technical resources or long development timelines."
           points = {[
             "Fast Launch: Get your exchange live quickly.",
             "Cost Savings: Avoid the high costs of building.",
@@ -586,10 +586,9 @@ export default function Ecommerce(props) {
         />
         <SolutionSec
           heading="Key Features of Crypto Exchange Platform"
-          subheading="Building a successful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' >cryptocurrency exchange</a> requires integrating powerful and user-friendly features that enhance security, performance, and trading experience. Here are the essential features every crypto exchange platform should have:"
+          subheading="Building a successful <a class='text-blue-800 font-semibold' href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' >cryptocurrency exchange</a> requires integrating powerful and user-friendly features that enhance security, performance, and trading experience. Here are the essential features every crypto exchange platform should have:"
           techData={technologyData}
         />
-
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
@@ -601,7 +600,7 @@ export default function Ecommerce(props) {
                 <p>
                 Security is the backbone of any successful.
                 {" "}
-                <a className="text-blue-500 font-semibold" href="https://www.comfygen.com/blog/2025s-most-secure-crypto-exchanges-safety-features-reviews/">cryptocurrency exchange</a> 
+                <a className="text-blue-800 font-semibold" href="https://www.comfygen.com/blog/2025s-most-secure-crypto-exchanges-safety-features-reviews/">cryptocurrency exchange</a> 
                 {" "}Protecting users’ funds and data builds trust and ensures compliance with regulations. Here are the vital security features your crypto exchange must have:
                 </p>
               </div>
@@ -621,6 +620,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -682,9 +682,9 @@ export default function Ecommerce(props) {
                 </h2>
                 <p>
                 Want to enter the {" "}
-                <a className="text-blue-500 font-semibold" href="/crypto-trading-bot-development">crypto trading</a>
+                <a className="text-blue-800 font-semibold" href="/crypto-trading-bot-development">crypto trading</a>
                 {" "} market with a proven model? At Comfygen, we help you replicate the success of top-tier platforms like Binance, Coinbase, and Kraken using our ready-to-deploy{" "}
-                <a className="text-blue-500 font-semibold" href="https://www.comfygen.com/blog/binance-clone-development-process-cost-analysis-features-tech-stack/">cryptocurrency exchange clone scripts</a>
+                <a className="text-blue-800 font-semibold" href="https://www.comfygen.com/blog/binance-clone-development-process-cost-analysis-features-tech-stack/">cryptocurrency exchange clone scripts</a>
                 {" "}. These solutions are cost-effective, customizable, and built for high performance, ideal for startups and enterprises aiming to go live fast without sacrificing quality.
                 </p>
               </div>

@@ -63,41 +63,7 @@ export default function BlockchainFooter() {
             </div>
 
             <div className="grid grid-cols-1  gap-8  pt-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* web & app */}
-              {/* <div className="space-y-6 ">
-                <p className="text-sm font-normal uppercase  text-[#ffffff]/70">Web & App</p>
-                <div className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}>
-                  {JSON_DATA.Development.map((elem) => {
-                    const { name, url, num } = elem;
-                    return (
-                      <div key={num} className="flex transition duration-150 cursor-pointer itmes-center ">
-                        <Link className="text-white text-md font-meduim" href={url} passHref={true}>
-                          {name}
-                        </Link>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div> */}
-
-                {/* blockchain */}
-              {/* <div className="space-y-6">
-                <p className="text-sm font-normal uppercase  text-[#ffffff]/70">Blockchain</p>
-                <div className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}>
-                  {JSON_DATA.Blockchain.map((elem) => {
-                    const { name, url, num } = elem;
-                    return (
-                      <div key={num} className="flex transition duration-150 cursor-pointer itmes-center ">
-                        <Link className="text-white text-md font-meduim" href={url} passHref={true}>
-                          {name}
-                        </Link>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div> */}
-
-                {/* blockchain service  */}
+              {/* blockchain service  */}
               <div className="space-y-6 ">
                 <p className="text-sm font-normal uppercase  text-[#ffffff]/70">Blockchain Service</p>
                 <div className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}>
@@ -114,10 +80,10 @@ export default function BlockchainFooter() {
                 </div>
               </div>
 
-                  {/* blockchain solution */}
+              {/* blockchain solution */}
               <div className="space-y-6">
                 <p className="text-sm font-normal uppercase  text-[#ffffff]/70">Blockchain Solution</p>
-                
+
                 <div className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}>
                   {JSON_DATA.BlockchainSolutioin.map((elem) => {
                     const { name, url, num } = elem;
@@ -148,24 +114,6 @@ export default function BlockchainFooter() {
                   })}
                 </div>
               </div>
-
-                  {/* gaming */}
-              {/* <div className="space-y-6">
-                <p className="text-sm font-normal uppercase  text-[#ffffff]/70">Gaming</p>
-                
-                <div className={`${styles.TechnologyStack} space-y-3 text-sm capitalize h-[500px] overflow-y-auto`}>
-                  {JSON_DATA.Gaming.map((elem) => {
-                    const { name, url, num } = elem;
-                    return (
-                      <div key={num} className="flex transition duration-150 cursor-pointer itmes-center">
-                        <Link className="text-white text-md font-meduim" href={url} passHref={true}>
-                          {name}
-                        </Link>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div> */}
             </div>
           </div>
           {/* <CompanyLink /> */}
