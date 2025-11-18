@@ -2,14 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
-// import ContactFrom from "./ContactFrom";
-import dynamic from "next/dynamic";
 import ContactFrom from "../../components/ContactFrom";
 
 
 export default function HeroSection(props: any) {
-
-
   const data = props.btnLink;
   if (!data) {
     return <div>Loading...</div>;
@@ -74,6 +70,7 @@ export default function HeroSection(props: any) {
         loop
         muted
         playsInline
+        preload="auto"
         className="hidden lg:block absolute inset-0 w-full h-full object-cover"
       >
         <source src={props.bgImage} type="video/mp4" />

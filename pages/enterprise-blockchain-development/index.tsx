@@ -526,19 +526,25 @@ export default function rummy(props) {
       "@graph": [
         {
           "@type": "BreadcrumbList",
-          "@id": "https://www.comfygen.com/enterprise-blockchain-development/#breadcrumb",
+          "@id": "https://www.comfygen.com/enterprise-blockchain-development/#breadcrumb ",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.comfygen.com/"
+              "item": "https://www.comfygen.com/ "
             },
             {
               "@type": "ListItem",
               "position": 2,
+              "name": "Blockchain Development",
+              "item": "https://www.comfygen.com/blockchain-development/ "
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
               "name": "Enterprise Blockchain Development",
-              "item": "https://www.comfygen.com/enterprise-blockchain-development/"
+              "item": "https://www.comfygen.com/enterprise-blockchain-development/ "
             }
           ]
         }
