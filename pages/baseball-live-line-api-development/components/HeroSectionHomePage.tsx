@@ -72,8 +72,8 @@ export default function HeroSection(props: any) {
       <Image
         src={props.bgImage}
         alt="Comfygen Hero Background"
-        fill
-        className="hidden object-cover object-center relative h-screen lg:block bg-no-repeat bg-fixed"
+        layout="fill"
+        className="hidden object-cover object-center lg:block"
         priority
         fetchPriority="high"
         sizes="100vw"
@@ -85,7 +85,7 @@ export default function HeroSection(props: any) {
 
 
       {/* FIXED OVERLAY */}
-      <div className="hidden lg:block absolute inset-0 lg:bg-black/60 z-[1]"></div>
+      {/* <div className="hidden lg:block absolute inset-0 lg:bg-black/10 z-[1]"></div> */}
       <div className="flex lg:absolute z-50 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 lg:h-full">
         <div className="xl:w-[58%] lg:w-[65%] w-full ">
           <div className="space-y-4">
@@ -104,9 +104,9 @@ export default function HeroSection(props: any) {
                 {props.heading}
               </h1>
             )}
-            <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
+            {/* <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
               {props.heading}
-            </h1>
+            </h1> */}
 
             <p className="w-full mx-auto text-sm 2xl:text-lg lg:text-base font-normal text-white">
               {props.ptag}

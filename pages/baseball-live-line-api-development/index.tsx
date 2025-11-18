@@ -354,7 +354,7 @@ export default function Ecommerce(props) {
           <div className=" overflow-hidden">
             <HeroSectionHomePage
               heading="Baseball Live Line API"
-              isHome={true}
+              isHome={false}
               Provider
               ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
               btnName="Let's Discuss"
@@ -367,7 +367,7 @@ export default function Ecommerce(props) {
               talkToExpertModal={talkToExpertModal}
               setTalkToExpertModal={setTalkToExpertModal}
               closeModal={closeModal}
-              bgImage="/Rectanglehero.png"
+              bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
             // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
             />
           </div>
