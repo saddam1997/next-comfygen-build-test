@@ -5,7 +5,8 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baseballlivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+// import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionHomePage from "./components/HeroSectionHomePage"
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
@@ -16,9 +17,10 @@ import CallToAction from "../components/CallToAction";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ProcessSection from "../componentsnew/ProcessSection";
 import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "./components/Header";
+// const Header = dynamic(() => import("../components/Header"), {
+//   loading: () => <p>Loading...</p>,
+// });
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -270,13 +272,13 @@ export default function Ecommerce(props) {
           name="subtitle"
           content="Best Baseball Live Line API"
         />
-  
+
         <meta
           property="og:type"
           content="Baseball Live Line API Services Provider"
         />
 
-        
+
         <meta
           property="og:image"
           content="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-og-image.webp"
@@ -344,11 +346,34 @@ export default function Ecommerce(props) {
       </Head>
 
       <LazyLoad height={80} offset={100}>
-        <Header />
+        {/* <Header /> */}
+        <Header/>
       </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp')]">
-          <HeroSectionForAllPages
+      
+      <div className="overflow-hidden w-full">
+          <div className=" overflow-hidden">
+            <HeroSectionHomePage
+              heading="Baseball Live Line API"
+              isHome={true}
+              Provider
+              ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
+              btnName="Let's Discuss"
+              btnLink="/contact-us"
+              imgSrc="/"
+              Width={740}
+              Height={340}
+              altTag="blockchain-technology"
+              openModal={openModal}
+              talkToExpertModal={talkToExpertModal}
+              setTalkToExpertModal={setTalkToExpertModal}
+              closeModal={closeModal}
+              bgImage="/Rectanglehero.png"
+            // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
+            />
+          </div>
+
+
+          {/* <HeroSectionForAllPages
             heading="Baseball Live Line API"
             subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
             ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
@@ -359,8 +384,8 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-          />
-        </div>
+          /> */}
+
         <AboutSection
           title="About Company"
           heading="What is Baseball Live Line API?"

@@ -63,7 +63,7 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={` bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent min-h-screen w-full items-center`}
+      className={`lg:min-h-screen h-screen w-fit  items-center bg-[#5951cd] lg:bg-transparent lg:p-0 p-4`}
     // style={{
     //   backgroundColor: isMobile ? "#5951cd" : "transparent",
     // }}
@@ -73,7 +73,7 @@ export default function HeroSection(props: any) {
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
-        className="object-cover object-center -z-10 h-screen hidden sm:block bg-no-repeat bg-fixed"
+        className="hidden object-cover object-center relative h-screen lg:block bg-no-repeat bg-fixed"
         priority
         fetchPriority="high"
         sizes="100vw"
@@ -84,8 +84,10 @@ export default function HeroSection(props: any) {
       />
 
 
-      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto h-screen">
-        <div className="xl:w-[58%] lg:w-[65%] w-full">
+      {/* FIXED OVERLAY */}
+      <div className="hidden lg:block absolute inset-0 lg:bg-black/60 z-[1]"></div>
+      <div className="flex lg:absolute z-50 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 lg:h-full">
+        <div className="xl:w-[58%] lg:w-[65%] w-full ">
           <div className="space-y-4">
             {props.isHome ? (
               <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
@@ -93,21 +95,25 @@ export default function HeroSection(props: any) {
                   {typedText}
                 </span>
                 <br />
-                <b className="font-bold text-white">
+                {/* <b className="font-bold text-white">
                   Solution & Service Provider
-                </b>
+                </b> */}
               </h1>
             ) : (
               <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
                 {props.heading}
               </h1>
             )}
+            <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
+              {props.heading}
+            </h1>
+
             <p className="w-full mx-auto text-sm 2xl:text-lg lg:text-base font-normal text-white">
               {props.ptag}
             </p>
           </div>
 
- 
+
 
 
           <div className="py-2 sm:hidden flex items-center justify-center ">
@@ -147,7 +153,7 @@ export default function HeroSection(props: any) {
             </div>
           </div>
 
-          <div className="mt-2">
+          <div className="lg:mt-6 mt-2">
             <Link href="#" passHref={true}>
               <button
                 className="btn btn-fix lazyloaded"

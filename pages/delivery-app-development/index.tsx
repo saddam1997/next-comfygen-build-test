@@ -575,7 +575,7 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[110pxmilk-delivery-app-development]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Custom Delivery App Development Company in India"
