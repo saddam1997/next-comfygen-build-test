@@ -69,7 +69,17 @@ export default function HeroSection(props: any) {
     // }}
     >
 
-      <Image
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hidden lg:block absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={props.bgImage} type="video/mp4" />
+      </video>
+
+      {/* <Image
         src={props.bgImage}
         alt="Comfygen Hero Background"
         layout="fill"
@@ -81,13 +91,13 @@ export default function HeroSection(props: any) {
         blurDataURL="/blur-placeholder.webp"
         quality={75}
         loading="eager"
-      />
+      /> */}
 
 
       {/* FIXED OVERLAY */}
-      {/* <div className="hidden lg:block absolute inset-0 lg:bg-black/10 z-[1]"></div> */}
-      <div className="flex lg:absolute z-50 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 lg:h-full">
-        <div className="xl:w-[58%] lg:w-[65%] w-full ">
+      <div className="hidden lg:block absolute inset-0 lg:bg-black/40 z-[1]"></div>
+      <div className="flex lg:absolute z-50 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-2 lg:h-full">
+        <div className=" w-full ">
           <div className="space-y-4">
             {props.isHome ? (
               <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
@@ -100,7 +110,7 @@ export default function HeroSection(props: any) {
                 </b> */}
               </h1>
             ) : (
-              <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]">
+              <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem] text-center">
                 {props.heading}
               </h1>
             )}
@@ -108,7 +118,7 @@ export default function HeroSection(props: any) {
               {props.heading}
             </h1> */}
 
-            <p className="w-full mx-auto text-sm 2xl:text-lg lg:text-base font-normal text-white">
+            <p className="w-full mx-auto text-sm 2xl:text-lg lg:text-base font-normal text-white text-center flex justify-center">
               {props.ptag}
             </p>
           </div>
@@ -153,7 +163,7 @@ export default function HeroSection(props: any) {
             </div>
           </div>
 
-          <div className="lg:mt-6 mt-2">
+          <div className="lg:mt-6 mt-2 flex justify-center">
             <Link href="#" passHref={true}>
               <button
                 className="btn btn-fix lazyloaded"

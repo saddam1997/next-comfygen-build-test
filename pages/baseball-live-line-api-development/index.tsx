@@ -367,8 +367,8 @@ export default function Ecommerce(props) {
               talkToExpertModal={talkToExpertModal}
               setTalkToExpertModal={setTalkToExpertModal}
               closeModal={closeModal}
-              bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
-            // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
+              // bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
+            bgImage="/hero2.mp4"
             />
           </div>
 

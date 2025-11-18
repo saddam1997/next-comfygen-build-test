@@ -2442,7 +2442,7 @@ export default function DesktopNav(props: any) {
         </div>
         <div className="xl:block hidden">
           <Link href="/contact-us" passHref={true}>
-            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white   cursor-pointer transition duration-300 relative flex gap-3 items-center ">
+            <span className="text-base font-medium text-white bg-[#5556D1] rounded-full px-8 py-3.5 text-center hover:text-white   cursor-pointer transition duration-300 relative flex gap-3 items-center ">
               Get a Quote
               <Image
                 src="https://www.comfygen.com/image/button-arrow.svg"
