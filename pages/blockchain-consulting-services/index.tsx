@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-// import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";

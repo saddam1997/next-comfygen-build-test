@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -145,13 +143,8 @@ const techDataForPage1 = {
 export default function rummy(props) {
   let { initialData } = props;
 
-  let {
+  let {} = JSON_DATA;
 
-
-  } = JSON_DATA;
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/handballlivelineapidevelopment.json";
@@ -65,9 +62,9 @@ const Process = [
 export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [showContent, setShowContent] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

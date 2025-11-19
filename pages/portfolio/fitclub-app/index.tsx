@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-import { useEffect, useRef } from 'react';
-import AOS from 'aos';
 import Link from 'next/link';
 import styles from './styles.module.css'
-import 'aos/dist/aos.css';
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';

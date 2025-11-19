@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nbalivelineapidevelopment.json";
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from '../componentsnew/ServicesSection'
@@ -237,9 +234,6 @@ const faqPageSchema = {
 export default function Ecommerce(props) {
   let { initialData } = props;
   const [showContent, setShowContent] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
 import React from 'react'
 import moment from 'moment';

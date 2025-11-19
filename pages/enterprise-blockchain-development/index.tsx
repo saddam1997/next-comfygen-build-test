@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
@@ -15,7 +14,6 @@ import BlockChainTech from "./components/BlockChainTech";
 import CoreFeatureBlockchain from "./components/CoreFeatureBlockchain";
 import BenifitBlockchain from "./components/BenifitBlockchain";
 import IndustriesBlockchain from "../componentsnew/IndustriesBlockchain";
-// import BlockchainNav from "../blockchain/blockchain-navbar";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -27,7 +25,7 @@ const ContactFromCenter = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
-export default function rummy(props) {
+export default function rummy(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

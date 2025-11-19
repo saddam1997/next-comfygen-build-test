@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Head from "next/head";
-import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractmlm.json";
 import Image from "next/image";
-import styles from "./styles.module.css";
-import Link from "next/link";
+
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 // import BlogSection from "../components/BlogSection";
@@ -159,9 +154,6 @@ export default function Ecommerce(props) {
   let { initialData } = props;
   let { SmartContractFeatures } = JSON_DATA;
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

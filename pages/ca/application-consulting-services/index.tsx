@@ -38,11 +38,7 @@ export default function Mobile(props) {
     setTalkToExpertModal(false);
   };
 
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init();
-    });
-  }, []);
+  
 
   const technologyData = [
     {

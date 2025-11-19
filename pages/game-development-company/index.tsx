@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Ourgames from "../../components/ourgames";

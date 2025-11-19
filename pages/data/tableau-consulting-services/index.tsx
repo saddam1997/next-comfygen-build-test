@@ -1,4 +1,3 @@
-import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -11,8 +10,6 @@ import ClientTestimonials from "../../components/ClientTestimonials";
 import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
 import AboutSection from "../../componentsnew/AboutSection";
 import ServicesSec from "../../componentsnew/ServicesSec";
-
-
 import Header from "../../components/Header";
 import Slider from "../../components/Slider";
 import IndustriesServe from "../../components/IndustriesServe";
@@ -120,7 +117,7 @@ const portfolioData = [
   },
 ];
 
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   let { LeadingSoftware } = JSON_DATA;
 

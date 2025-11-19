@@ -1,6 +1,4 @@
 import Link from "next/link";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import useSWR from "swr";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -45,9 +43,6 @@ export default function blog(posts) {
 
   // Generate an array of page numbers for pagination links
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1)
-  // useEffect(() => {
-  //   AOS.init();
-  // });
   return (
     // <>
     <div className="overflow-hidden">

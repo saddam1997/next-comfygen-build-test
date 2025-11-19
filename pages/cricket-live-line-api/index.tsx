@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import Head from "next/head";
 
 import dynamic from "next/dynamic";
@@ -174,9 +172,6 @@ const faqPageSchema = {
 export default function Ecommerce(props) {
   let { initialData } = props;
   const [showContent, setShowContent] = useState(false);
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

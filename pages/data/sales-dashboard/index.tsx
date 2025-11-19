@@ -1,5 +1,3 @@
-
-import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
@@ -10,8 +8,6 @@ import {
   IconPresentationAnalytics,
   IconShare,
 } from "@tabler/icons-react";
-
-
 import ServicesSec from "../../componentsnew/ServicesSec";
 import WhyChoose from "../../componentsnew/WhyChooseUs";
 import LatestTechnology from "./components/LatestTechnology";

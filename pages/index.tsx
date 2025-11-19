@@ -452,9 +452,7 @@ export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   if (!resData.ok) {
     // console.error("API Request failed:", await resData);
-    return {
-      props: { posts: [] },
-    };
+      return { props: { initialData: [] } };
   }
   // console.log(resData)
   const data = await resData.json();

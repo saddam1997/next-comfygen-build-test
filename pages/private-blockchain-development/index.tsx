@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";

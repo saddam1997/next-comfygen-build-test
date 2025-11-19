@@ -1,5 +1,4 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { useEffect, useState } from "react";
 import Head from "next/head";
 
@@ -22,9 +21,6 @@ import HeadingSec from "../componentsnew/headingSec";
 
 export default function MultiChain(props) {
   let { initialData } = props;
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

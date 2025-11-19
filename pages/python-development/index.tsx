@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { MdOutlineEngineering } from 'react-icons/md';
-import Image from 'next/image';
-import 'aos/dist/aos.css';
 import { FaNetworkWired } from "react-icons/fa";
 import Head from "next/head";
 import { RiCustomerService2Fill, RiTodoLine } from "react-icons/ri";

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";

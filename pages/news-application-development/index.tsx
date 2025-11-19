@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";

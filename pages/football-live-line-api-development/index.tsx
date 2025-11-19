@@ -1,9 +1,4 @@
-import Image from "next/image";
 import React, { useState } from "react";
-import { MdOutlineArrowOutward, MdSportsCricket, MdWeb } from "react-icons/md";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/footballliveline.json";
@@ -250,9 +245,9 @@ const faqPageSchema = {
 export default function Ecommerce(props) {
   let { initialData } = props;
   const [showContent, setShowContent] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -415,7 +410,7 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[40px]">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/football-live-line-api/football-live-line-api-hero.webp')]">
         <HeroSectionForAllPages
           heading="Football Live Line API "

@@ -1,11 +1,8 @@
-// import ContactFrom from "./ContactFrom";
-import Link from "next/link";
+
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { FaFacebook } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { LiaLinkedin } from "react-icons/lia";
-import { Mail, MapPin, Phone } from "lucide-react";
+
+import { MapPin, Phone } from "lucide-react";
 const ContactFrom = dynamic(() => import("./ContactFrom"), { ssr: false });
 
 const locations = [

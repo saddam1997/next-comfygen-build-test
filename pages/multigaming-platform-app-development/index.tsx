@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
@@ -38,10 +36,6 @@ const ContactFromCenter = dynamic(
 
 export default function rummy(props) {
   let { initialData } = props;
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   const [showContent, setShowContent] = useState(false);
   const [showContentGametype, setShowContentGametype] = useState(false);
   const [currentCount, setCurrentCount] = useState("");

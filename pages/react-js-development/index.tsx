@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/reactjs.json";

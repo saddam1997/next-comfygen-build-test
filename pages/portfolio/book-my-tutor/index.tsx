@@ -1,15 +1,11 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-import { useEffect, useRef, useState } from 'react';
-import AOS from 'aos';
-import Link from 'next/link';
+import { useState } from 'react';
 import styles from './styles.module.css'
-import 'aos/dist/aos.css';
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./book-my-tutor.json"
-import { BsArrowRight } from 'react-icons/bs';
 import TechnologyStack from '../technology-stack/TechnologyStack';
 import LazyLoad from 'react-lazy-load';
 import CompanyHeroSection from '../../components/CompanyHeroSection';

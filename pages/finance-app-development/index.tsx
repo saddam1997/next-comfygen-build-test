@@ -1,4 +1,3 @@
-import "aos/dist/aos.css";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -9,7 +8,6 @@ import ServicesSec from "../components/ServicesSec";
 import ProcessSec from "../components/ProcessSec";
 import WhyChoose from "../components/WhyChooseUs";
 import AboutSection from "../componentsnew/AboutSection";
-
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../componentsnew/HireDeveloper";
 import Features from "./components/Features";

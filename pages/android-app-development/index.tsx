@@ -1,5 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
 import React from 'react'
 import Head from 'next/head';
@@ -55,12 +53,6 @@ const ldJson = {
 
 export default function Mobile(props) {
   let { initialData } = props;
-
-  // useEffect(() => {
-  //   AOS.init();
-  // }, [])
-
-
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
     setTalkToExpertModal(true);

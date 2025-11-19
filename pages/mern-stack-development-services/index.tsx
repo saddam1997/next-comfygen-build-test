@@ -1,4 +1,3 @@
-import "aos/dist/aos.css";
 import React from "react";
 import Head from "next/head";
 import { useState } from "react";

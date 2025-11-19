@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import "aos/dist/aos.css";
 import Image from "next/image";
 import { useEffect } from "react";
 import Head from "next/head";

@@ -1,4 +1,3 @@
-import 'aos/dist/aos.css';
 import React, { useState } from 'react'
 import Head from 'next/head';
 import JSON_DATA from "./json/hybrid.json"
