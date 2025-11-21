@@ -1,32 +1,23 @@
-
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import Script from "next/script";
-import ServicesSec from "../componentsnew/ServicesSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../componentsnew/AboutSection";
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
 
 const Process = [
   {
@@ -66,80 +57,7 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/ai-powered-retail-solutions.webp",
-      head: "AI-Powered Retail Solutions",
-      based: "Boosting Sales with AI-Powered Recommendations",
-      name: "A retail client aimed to enhance customer engagement and drive sales. We developed an AI-powered recommendation engine that analyzed customer behavior and preferences, delivering personalized shopping experiences. As a result, the client achieved a 20% increase in sales and significantly improved customer satisfaction.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-healthcare-solutions.webp",
-      head: "AI-Powered Healthcare Solutions",
-      based: "Streamlining Diagnostics with AI",
-      name: "We developed an AI-driven system utilizing computer vision and machine learning to enhance diagnostic accuracy and speed. This AI software development solution enabled the healthcare provider to deliver faster, more precise diagnoses, improving patient outcomes and operational efficiency.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-finance-solutions.webp",
-      head: "AI-Powered Finance Solutions",
-      based: "Enhancing Fraud Detection with Machine Learning",
-      name: "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
-      head: "AI-Powered Manufacturing Solutions",
-      based: "Optimizing Operations with Predictive Maintenance",
-      name: "A manufacturing company faced challenges with unplanned downtime and high maintenance costs. We implemented a predictive maintenance system leveraging IoT and AI to monitor equipment health, reducing downtime, cutting costs, and improving overall operational efficiency.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-powered-e-commerce-solutions.webp",
-      head: "AI-Powered E-commerce Solutions",
-      based: "AI E-commerce App Development Solution",
-      name: "An e-commerce platform aimed to boost customer retention and engagement. We developed a personalized recommendation system powered by natural language processing and machine learning, delivering tailored shopping experiences that increased customer satisfaction and loyalty.",
-      num: "5",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-  ],
-};
+
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -421,20 +339,28 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="We Offer The Best Artificial Intelligence Software Development
-                Services For Startups"
-          description="Data is used to drive business results through custom AI and
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Offer The Best Artificial Intelligence Software Development
+                Services For Startups
+              </h2>
+              <p className="text-base text-center font-normal">Data is used to drive business results through custom AI and
                 machine learning software development solutions. As one of the
                 leading custom AI mobile app development solution companies, we
                 transform raw data into actionable insights, facilitating
                 operational efficiency and enhanced decision-making. We offer
                 reliable AI enterprise software development services that can
-                make your vision a reality."
-        />
+                make your vision a reality.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -478,6 +404,8 @@ export default function Mobile(props) {
           description=""
           customTechData={JSON_DATA.customTechData}
         />
+
+
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -493,11 +421,15 @@ export default function Mobile(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
           heading="Our Artificial Intelligence Success Stories"
           description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
-        />
+          />
+        </section>
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -532,7 +464,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-      
+
       </div>
     </>
   );

@@ -2,33 +2,21 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cardano.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import ModelsSec from "../components/ModelsSec";
-import HireDeveloper from "../components/HireDeveloper";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import TechStack from "../components/TechStack";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 
 const Process = [
@@ -65,69 +53,6 @@ const Process = [
 
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a next-generation cryptocurrency built on its own dedicated blockchain, setting it apart from standard tokens. Designed with a powerful ‘Four Square’ architecture, it optimizes speed, mining efficiency, seamless integration, and predictable scalability. Outpacing Bitcoin in performance, security, and adaptability, NASDAC Coin is engineered for business, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay revolutionizes global digital payments with its instant, zero-fee transactions powered by a decentralized P2P blockchain and the YatriPay Virtual Machine (YVM). Designed for seamless and secure peer-to-peer transfers, it eliminates intermediaries, ensuring efficiency and reliability. The intuitive YatriPay Mobile App simplifies onboarding, making borderless financial transactions accessible to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the first decentralized cryptocurrency backed by gold at a 1:1 ratio, offering unmatched stability and value appreciation. Unlike fiat currency, it utilizes blockchain technology to ensure security, transparency, and decentralized governance. Croston facilitates secure transactions and controlled coin issuance while providing convenient purchasing options via credit card, exchanges, or crypto. As a gold-backed digital asset, Croston is transforming secure investments and driving a decentralized marketplace with cutting-edge blockchain solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes supply chain and distribution, ensuring seamless energy delivery. Powered by blockchain technology, Mezovest guarantees transparency, security, and operational efficiency, setting new benchmarks in the energy sector.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-
-
-  ],
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -350,7 +275,7 @@ export default function Ecommerce(props) {
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
         {/* keywords */}
-        <meta name="keywords" content="Cardano Blockchain Development, Smart Contract Development on Cardano, Cardano dApps Development, Token Creation on Cardano, NFT Integration on Cardano, Decentralized Finance (DeFi) Solutions, Enterprise Blockchain Solutions, Cardano Wallet Development, Staking and Governance Solutions, Cardano Blockchain Consulting"/>
+        <meta name="keywords" content="Cardano Blockchain Development, Smart Contract Development on Cardano, Cardano dApps Development, Token Creation on Cardano, NFT Integration on Cardano, Decentralized Finance (DeFi) Solutions, Enterprise Blockchain Solutions, Cardano Wallet Development, Staking and Governance Solutions, Cardano Blockchain Consulting" />
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -374,16 +299,9 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      {/* <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
-      </div> */}
+
       <BlockchainNav />
-      <div className="overflow-hidden">
-
-
-
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Best Cardano Blockchain Development Company"
           ptag="Comfygen, Cardano Blockchain Development Company, delivers secure, scalable, and customized Cardano blockchain development solutions for enterprises and startups worldwide. Our blockchain development expert specializes in building Cardano DApps, smart contracts, DeFi platforms, and NFT marketplaces, ensuring high performance, seamless integration, and future-ready applications. Partner with a trusted Cardano Blockchain Development Company to leverage advanced blockchain technology, accelerate your digital transformation, and enhance transparency, security, and efficiency in your business operations."
@@ -415,12 +333,21 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Cardano Blockchain Development Services"
-          description="Comfygen, a Leading Cardano Blockchain Development Company, provides end-to-end blockchain solutions specially designed for startups and enterprises. Our expert developers leverage Cardano’s proof-of-stake (PoS) protocol to deliver secure, scalable, and high-performance applications that drive business innovation."
-        />
-        <ContactFromCenter />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Cardano Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">{`AComfygen, a Leading Cardano Blockchain Development Company, provides end-to-end blockchain solutions specially designed for startups and enterprises. Our expert developers leverage Cardano’s proof-of-stake (PoS) protocol to deliver secure, scalable, and high-performance applications that drive business innovation.`}</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -450,12 +377,17 @@ export default function Ecommerce(props) {
           description="At Comfygen, our Cardano Blockchain Development Company leverages a powerful and cutting-edge tech stack to deliver secure, scalable, and high-performance blockchain solutions."
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Discover Our Cardano Blockchain Projects & Success Stories"
-          description="Explore our portfolio of successful projects built on the Cardano Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-        />
-        <IndustriesServe />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Discover Our Cardano Blockchain Projects & Success Stories"
+            description="Explore our portfolio of successful projects built on the Cardano Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
+          />
+        </section>
+
+
+        <IndustriesServe heading="" description=""/>
         <ModelsSec Qa={JSON_DATA.ModelHead} Whycomfygen={JSON_DATA.ModelCon} />
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -481,7 +413,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-       
+
       </div>
     </>
   );

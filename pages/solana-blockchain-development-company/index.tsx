@@ -1,37 +1,25 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 import IndustriesServe from "../components/IndustriesServe";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import SolutionSec from "../components/SolutionSec";
-import {IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
-import { IconCashBanknote, IconTools, IconChartBar} from '@tabler/icons-react';
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import TechStack from "../components/TechStack";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import { IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
+import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 
 
@@ -306,71 +294,7 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  const techDataForPage1 = {
-    All: [
-
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-
-
-    ],
-  };
-
+ 
   const jsonLdData = [
     {
       "@context": "https://schema.org",
@@ -729,8 +653,8 @@ export default function Ecommerce(props) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden">
-        
+      <div className="overflow-hidden lg:pt-[110px]">
+
         <HeroSectionForAllPages
           heading="Best Solana Blockchain Development Company "
           ptag="Comfygen is a trusted Solana blockchain development company, delivering cutting-edge Solana Blockchain Development solutions for businesses and startups worldwide. Harness the power of Solana’s high-speed, low-cost blockchain to develop decentralized applications (DApps), NFT marketplaces, DeFi platforms, and crypto wallets with unmatched scalability and security."
@@ -762,12 +686,20 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Solana Blockchain Development Services"
-          description="We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries."
-        />
-        <ContactFromCenter />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Solana Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
         <SolutionSec
           heading="Why Are Businesses Adopting Solana Blockchain Development Solutions?"
@@ -784,9 +716,6 @@ export default function Ecommerce(props) {
           imageAlt="Future of Technology"
         />
 
-
-
-
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -796,11 +725,15 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Solana Blockchain Based Portfolio"
-          description="Explore our portfolio of successful projects built on the Solana Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Portfolio of Successful Mobile App Projects"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
         <IndustriesServe
           heading="Industries We Serve As an AI-Powered Solana Blockchain Development Company"
           description="We provide innovative and tailored Solana blockchain development solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
@@ -833,7 +766,7 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        
+
 
         <TechStack
           title="Technology Stack We Use for Solana Blockchain Development"
@@ -869,3 +802,20 @@ export default function Ecommerce(props) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

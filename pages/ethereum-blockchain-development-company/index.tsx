@@ -3,36 +3,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import SolutionSec from "../components/SolutionSec";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-
 
 const technologyData = [
   {
@@ -167,69 +151,6 @@ export default function Ecommerce(props:any) {
     ]
   };
 
-
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation digital currency built on its own dedicated blockchain, going beyond traditional tokens. Designed with a powerful ‘Four Square’ architecture, it optimizes speed, mining efficiency, seamless integration, and predictable scalability. With superior performance, security, and adaptability compared to Bitcoin, NASDAC Coin is built for real-world business applications, making it the first true SUPER COIN in the blockchain ecosystem.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the world’s first decentralized cryptocurrency backed by gold at a 1:1 ratio, delivering unmatched stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized governance. Croston enables secure transactions and controlled coin issuance while offering convenient purchasing options via credit cards, exchanges, and cryptocurrencies. As a gold-backed digital asset, Croston is redefining secure investments and fueling a decentralized marketplace with advanced blockchain-driven solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay revolutionizes global digital payments with instant, zero-fee transactions, leveraging its decentralized P2P blockchain and the powerful YatriPay Virtual Machine (YVM). Designed for seamless and secure peer-to-peer transfers, it eliminates intermediaries, ensuring efficiency, transparency, and reliability. The user-friendly YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its cutting-edge F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics division, Spatch, optimizes supply chain and distribution, ensuring seamless energy delivery. With blockchain-powered solutions, Mezovest guarantees transparency, security, and operational efficiency, setting new standards in the energy sector.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-
-
-    ],
-  };
 
 
   const jsonLdData = [
@@ -400,8 +321,8 @@ export default function Ecommerce(props:any) {
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
         {/* <!-- Compatibility Meta → */}
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 
         {/* <!-- Viewport and Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -482,28 +403,8 @@ export default function Ecommerce(props:any) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden">
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/ethereum-blockchain-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Ethereum Blockchain Development Company"
-                ptag="Stay ahead in blockchain and Web3 with our Ethereum Blockchain Development Services. As a Top Ethereum Blockchain Development Company, we specialize in delivering scalable, secure solutions within the Ethereum ecosystem to make you a trendsetter in decentralized tech."
-                li="Experienced Ethereum Development Team"
-                li1="Scalable & Secure Solutions"
-                li2="Cutting-Edge Decentralized Applications"
-                li3="Be a Leader in Web3 Trends"
-                ptag3="Transform your vision with our Ethereum expertise."
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
+      <div className="overflow-hidden lg:pt-[100px]">
+      
         <HeroSectionForAllPages
           heading="Top Ethereum Blockchain Development Company "
           ptag="Comfygen, the Best Ethereum Blockchain Development Company, specializes in powerful, secure, and scalable Ethereum blockchain Development solutions for modern businesses. From smart contracts to enterprise-level dApps, our Ethereum blockchain development expert delivers future-ready blockchain applications that drive innovation, transparency, and growth. Partner with us to transform your business with decentralized technology and unlock new opportunities in the digital economy."
@@ -534,23 +435,22 @@ export default function Ecommerce(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Comprehensive Ethereum for Blockchain Development Services We Offer"
-          description="Comfygen Ethereum for Blockchain Development Company delivered secure and scalable Ethereum blockchain services. From DeFi platforms and NFT marketplaces to ERC-20 tokens and custom dApps, our experts harness Ethereum’s smart contract capabilities to build future-ready decentralized solutions."
-        />
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" ></h2>
-              <p className="text-base text-center font-normal">We have always sought excellence in delivering Ethereum blockchain solutions for different verticals worldwide according to your custom requirements. You can trust our certified Ethereum developers to access a broad range of Ethereum blockchain development services according to your desired specifications.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Ethereum for Blockchain Development Services We Offer
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen Ethereum for Blockchain Development Company delivered secure and scalable Ethereum blockchain services. From DeFi platforms and NFT marketplaces to ERC-20 tokens and custom dApps, our experts harness Ethereum’s smart contract capabilities to build future-ready decentralized solutions.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
-        </section> */}
-        <ContactFromCenter />
+        </section>
+
+
         <SolutionSec
           heading="Our Ethereum Blockchain Development Solutions"
           subheading="Businesses choose a Custom Ethereum Blockchain Development Company for its ability to deliver secure, scalable, and future-ready solutions. With Ethereum’s smart contracts and decentralized infrastructure, companies can streamline operations, enhance transparency, and drive innovation in the evolving blockchain landscape."
@@ -594,11 +494,15 @@ export default function Ecommerce(props:any) {
         />
 
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Ethereum Blockchain Based Portfolio"
-          description="Explore our portfolio of successful projects built on the Ethereum Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Ethereum Blockchain Based Portfolio"
+            description="Explore our portfolio of successful projects built on the Ethereum Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
+          />
+        </section>
+
+
         <CallToAction
           heading=" Need More Information on Ethereum Blockchain Development?"
           text=" Our excellence in delivering Ethereum blockchain development services continues to grow with every new project. As one of the leading blockchain networks, Ethereum provides unlimited possibilities for revolutionizing digital transformation of your business. If you want to learn more about our Ethereum development services, then you can connect with us through your preferred channels right now."

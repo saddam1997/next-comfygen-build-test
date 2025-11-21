@@ -145,6 +145,37 @@
       ]
     }
   ],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    }
+
+  ],
+
+
   "Qa": [
     {
       "num": "1",

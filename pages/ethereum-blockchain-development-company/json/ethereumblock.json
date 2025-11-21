@@ -1,5 +1,4 @@
 {
-
   "consultancyHead": [
     {
       "num": "1",
@@ -20,10 +19,7 @@
       "title": "Dedicated Ethereum Blockchain Developers",
       "desc": "We also offer the facility to hire an Ethereum blockchain developer from India to work with you on a full-time basis. With an in-house team of dedicated Ethereum blockchain developers, you can create your own custom Ethereum solutions from scratch."
     }
-    
-   
   ],
-
   "ModusOperandi": [
     {
       "num": "01",
@@ -62,80 +58,152 @@
       "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
     }
   ],
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Ethereum Blockchain Consulting",
       "subtitle": "",
       "description": "You might have many queries about your Ethereum development project before taking the first step. Our Ethereum <a class='underline' href='https://www.comfygen.com/blockchain-consulting-services'>blockchain consulting services</a> could help you connect with experts and find relevant answers to your doubts without delays.",
-      "features": ["Expert support", "Consulting Services", "No Delays"]
+      "features": [
+        "Expert support",
+        "Consulting Services",
+        "No Delays"
+      ]
     },
     {
       "title": "Ethereum dApps Development",
       "subtitle": "",
       "description": "Decentralized applications are the most important component for transforming business applications with blockchain. Our Ethereum <a class='underline' href='https://www.comfygen.com/dapp-development-company'>dApp development services</a> could help you create a fully functional dApp for your business with zero downtime.",
-      "features": ["dApp Creation", "Zero Downtime", "Fully Functional"]
+      "features": [
+        "dApp Creation",
+        "Zero Downtime",
+        "Fully Functional"
+      ]
     },
     {
       "title": "Ethereum Token Development",
       "subtitle": "",
       "description": "If you want to create ERC-20, ERC-777, ERC-865, or ERC-224 tokens, then our Ethereum developers could help you. We create Ethereum-based tokens with powerful in-built security measures and safeguards against prominent security risks.",
-      "features": ["Token Creation", "Security", "Risk Protection"]
+      "features": [
+        "Token Creation",
+        "Security",
+        "Risk Protection"
+      ]
     },
     {
       "title": "Ethereum Network Launch",
       "subtitle": "",
       "description": "Our Ethereum <a class='underline' href='https://www.comfygen.com/blockchain-development'>blockchain development agency</a> also specializes in launching private networks on Ethereum. You can rely on our experts to launch a private, scalable, and secure network on the Ethereum blockchain with exclusive benefits.",
-      "features": ["Private Network Launch", "Scalable & Secure", "Exclusive Benefits"]
+      "features": [
+        "Private Network Launch",
+        "Scalable & Secure",
+        "Exclusive Benefits"
+      ]
     },
     {
       "title": "Ethereum Smart Contract Development",
       "subtitle": "",
       "description": "With expertise in developing multiple customized smart contracts for different projects, our Ethereum <a class='underline' href='https://www.comfygen.com/smart-contract-development'>smart contract Development</a>  ensures that you get secure and cost-effective smart contracts according to your needs.",
-      "features": ["Customized Smart Contracts", "Solidity Expertise", "Cost-Effective"]
+      "features": [
+        "Customized Smart Contracts",
+        "Solidity Expertise",
+        "Cost-Effective"
+      ]
     },
     {
       "title": "Ethereum NFT Marketplace Development",
       "subtitle": "",
       "description": "We also specialize in decentralized and customizable <a class='underline' href='https://www.comfygen.com/nft-marketplace-development-company'>NFT marketplace Development</a> with easy-to-use interfaces. Set a new milestone with your own NFT marketplace and attract your audience to capitalize on an emerging web3 trend.",
-      "features": ["Decentralized Marketplaces", "Customizable Features", "User-Friendly Interface", "Capitalize on Web3"]
+      "features": [
+        "Decentralized Marketplaces",
+        "Customizable Features",
+        "User-Friendly Interface",
+        "Capitalize on Web3"
+      ]
     },
     {
       "title": "Ethereum DeFi Development",
       "subtitle": "",
       "description": "Our Ethereum development services also include DeFi development services that can help you create a new generation of Ethereum-based financial apps. We can help you incorporate appealing features such as bridges, swaps, yield farming, and staking for your DeFi apps.",
-      "features": ["DeFi App Creation", "Key Features", "Custom Solutions", "Blockchain Advantages"]
+      "features": [
+        "DeFi App Creation",
+        "Key Features",
+        "Custom Solutions",
+        "Blockchain Advantages"
+      ]
     },
     {
       "title": "Ethereum Game Development",
       "subtitle": "",
       "description": "Step into the web3 revolution with the support of our Ethereum blockchain development firm for designing and launching Ethereum-based decentralized games. We help you incorporate popular models such as play-to-earn and play-to-own in your web3 games.",
-      "features": ["Web3 Gaming", "Play-to-earn/Play-to-Own", "Custom Game Solutions", "Blockchain Security"]
+      "features": [
+        "Web3 Gaming",
+        "Play-to-earn/Play-to-Own",
+        "Custom Game Solutions",
+        "Blockchain Security"
+      ]
     },
     {
       "title": "Ethereum Mobile App Development Porting",
       "subtitle": "",
       "description": "Our Ethereum blockchain development service list also includes app porting to help you with faster and more secure porting of your applications to the Ethereum blockchain. Revolutionize your business infrastructure with Ethereum by using our app porting services.",
-      "features": ["App Porting Services", "Faster & Secure", "Blockchain Integration", "Business Transformation"]
+      "features": [
+        "App Porting Services",
+        "Faster & Secure",
+        "Blockchain Integration",
+        "Business Transformation"
+      ]
     }
-  ],  
-  "ModelHead":[
+  ],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    }
+
+  ],
+
+
+
+  "ModelHead": [
     {
       "num": "1",
       "title": " Choose the Right Engagement Model for Your Ethereum Blockchain Project",
-      "desc" : "We offer an exclusive advantage to hire Ethereum blockchain developer expertise for your projects according to your needs. We offer three different customer-centric engagement models to deliver the best results for your Ethereum development project."
+      "desc": "We offer an exclusive advantage to hire Ethereum blockchain developer expertise for your projects according to your needs. We offer three different customer-centric engagement models to deliver the best results for your Ethereum development project."
     }
   ],
-  "ModelCon" : [
+  "ModelCon": [
     {
-     "title": "Project-Based Model",
+      "title": "Project-Based Model",
       "desc": "You can choose the project-based model for hiring a dedicated team of experts from our Ethereum blockchain development company in India for your project. The project-based model offers the flexibility to capitalize on our Ethereum development expertise for specific projects."
     },
     {
-     "title": "Team Extension",
+      "title": "Team Extension",
       "desc": "The team extension model offered by our Ethereum blockchain development firm helps you improve your existing teams by adding our experts. Our experts can work in collaboration with your in-house teams to deliver promising efficiency in Ethereum development projects."
     },
     {
-     "title": "Dedicated Ethereum Blockchain Developers",
+      "title": "Dedicated Ethereum Blockchain Developers",
       "desc": "We also offer the facility to hire an Ethereum blockchain developer from India to work with you on a full-time basis. With an in-house team of dedicated Ethereum blockchain developers, you can create your own custom Ethereum solutions from scratch."
     }
   ],
@@ -322,7 +390,6 @@
       "title": "What industries can benefit from Ethereum blockchain development?",
       "desc": "Industries such as finance, healthcare, real estate, gaming, supply chain, and more can leverage Ethereum to improve transparency, security, and operational efficiency through smart contracts and decentralized applications."
     }
-    
   ],
   "Hire": [
     {

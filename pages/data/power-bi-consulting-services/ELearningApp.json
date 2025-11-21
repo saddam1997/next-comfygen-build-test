@@ -1,5 +1,5 @@
 {
-"Frequently": [
+  "Frequently": [
     {
       "num": "1",
       "title": "What's the difference between Power BI Pro, Premium, and Embedded?",
@@ -36,51 +36,49 @@
       "desc": "Selecting the right license depends on your user count, data volume, sharing needs, and performance requirements. Consultants can help assess your situation and recommend the optimal mix of Pro, Premium, or Embedded capacity."
     }
   ],
-
-"servicesData": [
-  {
-    "title": "Power BI Implementation Consulting",
-    "description": "Our Power BI implementation consultancy empowers organizations to assess their existing infrastructure and design and implement a custom Power BI dashboard that supports their business objectives. We can assess your existing infrastructure, define your KPIs and goals, and create a strategic roadmap that enables secure, scalable, and high-performing analytics implementation.",
-    "features": []
-  },
-  {
-    "title": "Data Modeling & ETL Development",
-    "description": "We construct robust data models that accurately present your business logic. Our talented Power BI developers create ETL pipelines using Power Query, SQL, and dataflows to ingest, transform, and prepare high-quality data for your business, while ensuring accurate, consistent, and fast reporting with optimal performance on complex datasets.",
-    "features": []
-  },
-  {
-    "title": "Power BI Data Visualization Services",
-    "description": "Microsoft Power BI consulting services focus on developing interactive dashboards and reports that visualize KPIs, identify trends, and simplify the decision-making process. We design visuals that help the user prioritize what is most important for each specific role, whether for executives, analysts, or operational roles.",
-    "features": []
-  },
-  {
-    "title": "Power BI Dashboard Design",
-    "description": "Our Power BI Consulting service delivers custom Power BI dashboards to meet your functional and industry requirements. Simply stated, sales and marketing, finance, supply chain, etc., our dashboards deliver clear and actionable insights with responsive layouts, DAX metrics, and UX/UI experiences.",
-    "features": []
-  },
-  {
-    "title": "Power BI Dashboard Development",
-    "description": "Our Power BI consultant expert in designing BI dashboards with interactivity and integrated data sources to stay together with the dashboards. We use complex DAX functions (and bookmarks, tooltips, slicers, and formatting rules) to create a very good user experience for your users during a drill-down, exploration, and reporting of the underlying data.",
-    "features": []
-  },
-  {
-    "title": "Power BI Integration Services",
-    "description": "Our Power BI consulting services include seamless integration with your already existing digital ecosystem, Microsoft Dynamics, Azure, SharePoint, SQL Server, Salesforce, or other enterprise tools to ensure that your analytical layer provides you with real-time, cross-functional insights as well as evidence of any unique data layer or previous instance. Our custom connectors and gateway configurations will ensure secure, automated data flows.",
-    "features": []
-  },
-  {
-    "title": "Power BI Reporting Services",
-    "description": "Our Power BI Consultant creates reports that support your strategic, operational, and compliance views. Our reports are dynamic, drill-down enabled, and mobile optimized to aid teams in monitoring KPIs, compliance metrics, and business performance across geography and roles.",
-    "features": []
-  },
-  {
-    "title": "Power BI Optimization & Support",
-    "description": "Our Microsoft Power BI Consulting team provides continuous optimization to improve report performance, refresh speeds, and user adoption. We conduct audits, implement best practices, and resolve performance bottlenecks. Ongoing support includes report enhancements, security updates, governance maintenance, and training programs.",
-    "features": []
-  }
-]
-,
-"servicesData1": [
+  "servicesData": [
+    {
+      "title": "Power BI Implementation Consulting",
+      "description": "Our Power BI implementation consultancy empowers organizations to assess their existing infrastructure and design and implement a custom Power BI dashboard that supports their business objectives. We can assess your existing infrastructure, define your KPIs and goals, and create a strategic roadmap that enables secure, scalable, and high-performing analytics implementation.",
+      "features": []
+    },
+    {
+      "title": "Data Modeling & ETL Development",
+      "description": "We construct robust data models that accurately present your business logic. Our talented Power BI developers create ETL pipelines using Power Query, SQL, and dataflows to ingest, transform, and prepare high-quality data for your business, while ensuring accurate, consistent, and fast reporting with optimal performance on complex datasets.",
+      "features": []
+    },
+    {
+      "title": "Power BI Data Visualization Services",
+      "description": "Microsoft Power BI consulting services focus on developing interactive dashboards and reports that visualize KPIs, identify trends, and simplify the decision-making process. We design visuals that help the user prioritize what is most important for each specific role, whether for executives, analysts, or operational roles.",
+      "features": []
+    },
+    {
+      "title": "Power BI Dashboard Design",
+      "description": "Our Power BI Consulting service delivers custom Power BI dashboards to meet your functional and industry requirements. Simply stated, sales and marketing, finance, supply chain, etc., our dashboards deliver clear and actionable insights with responsive layouts, DAX metrics, and UX/UI experiences.",
+      "features": []
+    },
+    {
+      "title": "Power BI Dashboard Development",
+      "description": "Our Power BI consultant expert in designing BI dashboards with interactivity and integrated data sources to stay together with the dashboards. We use complex DAX functions (and bookmarks, tooltips, slicers, and formatting rules) to create a very good user experience for your users during a drill-down, exploration, and reporting of the underlying data.",
+      "features": []
+    },
+    {
+      "title": "Power BI Integration Services",
+      "description": "Our Power BI consulting services include seamless integration with your already existing digital ecosystem, Microsoft Dynamics, Azure, SharePoint, SQL Server, Salesforce, or other enterprise tools to ensure that your analytical layer provides you with real-time, cross-functional insights as well as evidence of any unique data layer or previous instance. Our custom connectors and gateway configurations will ensure secure, automated data flows.",
+      "features": []
+    },
+    {
+      "title": "Power BI Reporting Services",
+      "description": "Our Power BI Consultant creates reports that support your strategic, operational, and compliance views. Our reports are dynamic, drill-down enabled, and mobile optimized to aid teams in monitoring KPIs, compliance metrics, and business performance across geography and roles.",
+      "features": []
+    },
+    {
+      "title": "Power BI Optimization & Support",
+      "description": "Our Microsoft Power BI Consulting team provides continuous optimization to improve report performance, refresh speeds, and user adoption. We conduct audits, implement best practices, and resolve performance bottlenecks. Ongoing support includes report enhancements, security updates, governance maintenance, and training programs.",
+      "features": []
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -106,8 +104,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -115,30 +112,117 @@
       "desc": "Microsoft Power BI Consulting services enhance every aspect of your business by providing real-time insights, data consolidation, and interactive analytics, giving your team the tools to make smarter decisions faster and adapt to change intelligently."
     }
   ],
-"consultancyData": [
-  {
-    "title": "Unified Analytics Across Your Data",
-    "desc": "Connect to Excel, SQL, Azure, SaaS, and on-premise systems easily—then unify into amazing dashboards that provide a single source of truth, eliminating data silos and manual effort."
-  },
-  {
-    "title": "Self-Service Intelligence for Teams",
-    "desc": "Enable everyone from analysts to executives to independently discover insights through drag-and-drop visuals and natural language Q&A."
-  },
-  {
-    "title": "Real-Time Alerts & Insights",
-    "desc": "Utilize live dashboards and proactively engage alerts to recognize trends that enable your team to make immediate changes to performance shifts, bottlenecks, or new opportunities."
-  },
-  {
-    "title": "Interactive, Clear Reporting",
-    "desc": "Make visual stories with <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data' >data Services</a> that are easy to understand—charts, maps, scorecards that promote clarity and engagement when sharing insights or in decision-making."
-  },
-  {
-    "title": "Secure, Enterprise-Grade Governance",
-    "desc": "Establish robust role-based access, encryption, and compliance across your analytics ecosystem to safeguard sensitive data at scale."
-  }
-]
 
-,
+"WhoCanStartCards" :[
+  {
+    "title": "Establish a Single Source of Truth",
+    "desc":
+      "Unify all disparate and scattered data systems across your organization into one centralized, governed environment, enabling reliable, real-time data access and consistent business reporting."
+  },
+  {
+    "title": "Scale Enterprise BI with Self-Service Agility",
+    "desc":
+      "Empower departments to generate insights independently while maintaining control at scale. Combine enterprise governance with self-service BI to foster innovation without compromising data integrity."
+  },
+  {
+    "title": "Infuse Insights into Daily Business Tools",
+    "desc":
+      "Seamlessly integrate Power BI with business-critical apps (e.g., Microsoft 365, Teams, Dynamics) to enable real-time analytics across daily workflows and enhance decision-making agility."
+  },
+  {
+    "title": "Democratize Data Across Your Organization",
+    "desc":
+      "Enable everyone from business analysts to frontline teams to access and explore insights using intuitive dashboards, built-in accessibility features, and a minimal learning curve."
+  },
+  {
+    "title": "Accelerate Time-to-Insight",
+    "desc":
+      "Leverage <a class='text-black font-semibold' href='https://www.comfygen.com/ai-development' >Artificial Intelligence</a>-powered templates and an easy-to-navigate interface to get started instantly. Gain immediate value from prebuilt analytics models, reducing report development cycles."
+  },
+  {
+    "title": "Embed Interactive BI into Customer-Facing Apps",
+    "desc":
+      "Deliver rich, visually engaging dashboards directly within your applications to increase customer engagement and product usability with Power BI Embedded solutions."
+  }
+],
+
+
+
+  "TechData":{
+    "Data Storage": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg", "alt": "Hadoop", "name": "Hadoop", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg", "alt": "Amazon S3", "name": "Amazon S3 ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg", "alt": "Microsoft Azure Data Lake", "name": "Microsoft Azure Data Lake ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "4" }
+    ],
+    "Data Processing": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg", "alt": "Apache Spark", "name": "Apache Spark ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg", "alt": "Talend", "name": "Talend ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg", "alt": "Informatica PowerCenter", "name": "Informatica PowerCenter ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg", "alt": "Apache NiFi", "name": " Apache NiFi", "num": "4" }
+    ],
+    "Machine Learning/AI": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg", "alt": "TenserFlow", "name": "TenserFlow ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg", "alt": "Scikit-Learn", "name": "Scikit-Learn ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg", "alt": "PyTorch", "name": "PyTorch ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg", "alt": "Microsoft Azure Machine Learning", "name": "Microsoft Azure Machine Learning", "num": "4" }
+    ],
+    "Visualization Tools ": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg", "alt": "Tableau", "name": "Tableau", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg", "alt": "Power BI ", "name": "Power BI", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg", "alt": "Looker", "name": "Looker ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg", "alt": "QlikView", "name": "QlikView", "num": "4" }
+    ],
+    "Database Management":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg", "alt": "MySQL", "name": "MySQL", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg", "alt": "PostgreSQL", "name": "PostgreSQL", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg", "alt": "MongoDB", "name": "MongoDB", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg", "alt": "Oracle Database", "name": "Oracle Database", "num": "4" }
+    ],
+    "Data Warehousing":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg", "alt": "Amazon Redshift", "name": "Amazon Redshift", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg", "alt": "Snowflake", "name": "Snowflake", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg", "alt": "Microsoft Azure Synapse Analytics", "name": "Microsoft Azure Synapse Analytics", "num": "4" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg", "alt": "SAS", "name": "SAS", "num": "5" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg", "alt": "MATLAB", "name": "MATLAB", "num": "6" }
+    ],
+    "Cloud Platforms":[
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg", "alt": "Amazon Web Services (AWS)", "name": "Amazon Web Services (AWS)", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg", "alt": "Microsoft Azure", "name": "Microsoft Azure", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg", "alt": "Google Cloud Platform (GCP)", "name": "Google Cloud Platform (GCP)", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg", "alt": "IBM Cloud", "name": "IBM Cloud ", "num": "4" }
+    ]
+  },
+ 
+
+
+
+
+
+
+  "consultancyData": [
+    {
+      "title": "Unified Analytics Across Your Data",
+      "desc": "Connect to Excel, SQL, Azure, SaaS, and on-premise systems easily—then unify into amazing dashboards that provide a single source of truth, eliminating data silos and manual effort."
+    },
+    {
+      "title": "Self-Service Intelligence for Teams",
+      "desc": "Enable everyone from analysts to executives to independently discover insights through drag-and-drop visuals and natural language Q&A."
+    },
+    {
+      "title": "Real-Time Alerts & Insights",
+      "desc": "Utilize live dashboards and proactively engage alerts to recognize trends that enable your team to make immediate changes to performance shifts, bottlenecks, or new opportunities."
+    },
+    {
+      "title": "Interactive, Clear Reporting",
+      "desc": "Make visual stories with <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data' >data Services</a> that are easy to understand—charts, maps, scorecards that promote clarity and engagement when sharing insights or in decision-making."
+    },
+    {
+      "title": "Secure, Enterprise-Grade Governance",
+      "desc": "Establish robust role-based access, encryption, and compliance across your analytics ecosystem to safeguard sensitive data at scale."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Microsoft Power BI Consulting Service?",
     "description": "Comfygen is one of Microsoft Power BI Consultancy Services providers that delivers strategic, measurable value, backed by certified expertise and tailored execution. ",
@@ -147,46 +231,45 @@
       "title": "Focused on Results",
       "description": "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/hire-data-scientist' >data scientists</a> and Power BI consultants build solutions that go beyond function—delivering clarity, speed, and real business impact."
     },
-"gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Industry-Specific Intelligence",
-    "description": "We tailor dashboards to your sector’s unique KPIs and workflows, helping you unlock insights faster."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Industry-Specific Intelligence",
+        "description": "We tailor dashboards to your sector’s unique KPIs and workflows, helping you unlock insights faster."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Speed to Insight",
+        "description": "Our proven processes deliver working BI dashboards in weeks—not months—getting you real-time insights quickly."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Seamless Data Integration",
+        "description": "We unite data from across your systems, CRM, ERP, and spreadsheets, creating a single source of truth."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Enhanced Analytics & AI",
+        "description": "We embed predictive modeling, anomaly detection, and “what-if” analysis directly into your Power BI environment."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Governance at Scale",
+        "description": "We build secure, governed BI platforms with role-based access, auditing, and automated refreshes for enterprise readiness."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Empowerment Through Training",
+        "description": "Our workshops and documentation reduce reliance on consultants and foster lasting self-service BI capabilities."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Flexible Engagement Models",
+        "description": "Choose from fixed projects, time-and-materials support, or dedicated teams—scaling with your business needs."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Speed to Insight",
-    "description": "Our proven processes deliver working BI dashboards in weeks—not months—getting you real-time insights quickly."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Seamless Data Integration",
-    "description": "We unite data from across your systems, CRM, ERP, and spreadsheets, creating a single source of truth."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Enhanced Analytics & AI",
-    "description": "We embed predictive modeling, anomaly detection, and “what-if” analysis directly into your Power BI environment."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Governance at Scale",
-    "description": "We build secure, governed BI platforms with role-based access, auditing, and automated refreshes for enterprise readiness."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Empowerment Through Training",
-    "description": "Our workshops and documentation reduce reliance on consultants and foster lasting self-service BI capabilities."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Flexible Engagement Models",
-    "description": "Choose from fixed projects, time-and-materials support, or dedicated teams—scaling with your business needs."
-  }
-]
-
-  },
-"customTestimonials": [
+  "customTestimonials": [
     {
       "text": "Comfygen helped us connect all our data—Google Ads, Meta, HubSpot, everything. Now we have a single dashboard that shows what's actually working. No more guessing where our budget goes. We've cut wasted spend by 27% in three months.",
       "name": "Priya Mehta",
@@ -414,8 +497,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -436,8 +517,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -459,7 +539,6 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
@@ -510,6 +589,4 @@
       "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
     }
   ]
-
-  
 }

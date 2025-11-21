@@ -9,80 +9,129 @@
       "btn": "Hire Developer"
     }
   ],
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Solana Blockchain Consulting",
       "subtitle": "",
       "description": "Our Solana <a class='underline' href='https://www.comfygen.com/blockchain-consulting-services' > blockchain consulting services </a> would help you understand why you might need Solana blockchain app development services and how it can benefit you!",
-      "features": ["Expert Support", "App Development Insights", "Maximize Efficiency" ,"Custom Solutions"]
+      "features": [
+        "Expert Support",
+        "App Development Insights",
+        "Maximize Efficiency",
+        "Custom Solutions"
+      ]
     },
     {
       "title": "Solana Blockchain dApp Development",
       "subtitle": "",
       "description": "We have a team of proficient experts to help you build & launch high-performance dApps over the Solana blockchain development related to payments, stablecoins, etc.",
-      "features": ["dApp Development Expertise", "Wide Use Cases", "Fast & Scalable Solutions" , "Expert Team Support"]
+      "features": [
+        "dApp Development Expertise",
+        "Wide Use Cases",
+        "Fast & Scalable Solutions",
+        "Expert Team Support"
+      ]
     },
     {
       "title": "Solana Blockchain NFT Marketplace Development",
       "subtitle": "",
       "description": "If you ever dreamt of having a dedicated Solana Blockchain <a class='underline ' href='https://www.comfygen.com/nft-marketplace-development-company' > NFT marketplace</a> , we will help you create one with our Solana blockchain development services.",
-      "features": ["Custom NFT Marketplace", "Fast and Low-Cost", "Expert Development" , "Scalable Solution" , "Seamless Integration"]
+      "features": [
+        "Custom NFT Marketplace",
+        "Fast and Low-Cost",
+        "Expert Development",
+        "Scalable Solution",
+        "Seamless Integration"
+      ]
     },
     {
       "title": "Solana Blockchain SPL Token Development",
       "subtitle": "",
       "description": "Our experts will help the clients tokenize their current assets with the help of Solana blockchain Solana Program Library tokens. It can be further seamlessly exchanged in any white-label DEX platform which improves security and high throughput.",
-      "features": ["Tokenize Assets", "Easy Trading", "Fast and Secure" , "Custom Tokens" , "Scalable Solution"]
+      "features": [
+        "Tokenize Assets",
+        "Easy Trading",
+        "Fast and Secure",
+        "Custom Tokens",
+        "Scalable Solution"
+      ]
     },
     {
       "title": "Solana Blockchain Wallet Development",
       "subtitle": "",
       "description": "One of the biggest USPs of Comfygen is to provide you with your preferred blockchain mobile application development or web wallet development services for handling the Solana dApps or other associated blockchain development projects. This development will make your transaction much more secure and encrypted.",
-      "features": ["Mobile and Web Wallets", "Secure Transactions", "Customized Solutions" , "Easy Access" , "Seamless Integration"]
-    } ,
+      "features": [
+        "Mobile and Web Wallets",
+        "Secure Transactions",
+        "Customized Solutions",
+        "Easy Access",
+        "Seamless Integration"
+      ]
+    },
     {
       "title": "Solana Blockchain Smart Contract Development",
       "subtitle": "",
       "description": "Our experts craft powerful and highly efficient smart contracts using Solana blockchain development. In case you have any project related to NFT Development Services, Web3 Development Services, and DeFi Development services, we provide you with the best auditing and Solana <a class='underline' href='https://www.comfygen.com/smart-contract-development' > smart contract development solutions.</a> ",
-      "features": ["Efficient Smart Contracts", "NFT, Web3, and DeFi Solutions", "Expert Auditing" , "Custom Development" ,"Secure and Scalable"]
-    }
-    ,
+      "features": [
+        "Efficient Smart Contracts",
+        "NFT, Web3, and DeFi Solutions",
+        "Expert Auditing",
+        "Custom Development",
+        "Secure and Scalable"
+      ]
+    },
     {
       "title": "Solana Blockchain Defi Development",
       "subtitle": "",
       "description": "For you to leverage the benefits of DeFi development technology or to enthrall lenders and borrowers, we will be helping you build a diverse range of DeFi loan app development platforms or other such systems over the Solana blockchain development Services provider will help you out.",
-      "features": ["CDefi Loan Apps", "Lender and Borrower Solutions", "Solana Blockchain Integration" , "Custom DeFi Platforms" , "Secure and Scalable"]
-    }
-    ,
+      "features": [
+        "CDefi Loan Apps",
+        "Lender and Borrower Solutions",
+        "Solana Blockchain Integration",
+        "Custom DeFi Platforms",
+        "Secure and Scalable"
+      ]
+    },
     {
       "title": "Solana Blockchain Node Development",
       "subtitle": "",
       "description": "We can assist you in connecting with the Solana blockchain development network to create various blockchain development services or secure the network using our solana blockchain node development services. With this, we will offer security configurations to restrict unauthorized access to the nodes.",
-      "features": ["Solana Node Setup", "Secure the Network", "Custom Blockchain Solutions" , "Node Security Configurations"]
+      "features": [
+        "Solana Node Setup",
+        "Secure the Network",
+        "Custom Blockchain Solutions",
+        "Node Security Configurations"
+      ]
     },
     {
       "title": "Solana Blockchain Game Development",
       "subtitle": "",
       "description": "We have the proficiency to help you launch <a class='underline' href='https://www.comfygen.com/nft-game-development-company' >NFT-based game development</a>  to promote an ecosystem of interactive gaming. This development solution brings both transparency and immutability to gaming assets.",
-      "features": ["NFT Games", "Interactive Games", "Secure Game Assets"]
-    }
-    ,
+      "features": [
+        "NFT Games",
+        "Interactive Games",
+        "Secure Game Assets"
+      ]
+    },
     {
       "title": "Solana Blockchain Infrastructure & Utility Development",
       "subtitle": "",
       "description": "By implementing the Solana blockchain development solutions, we can help you develop Web3 development solution infrastructure and utility as well. We have a multidisciplinary team of Solana developers who are experts in enterprise-grade development to offer a delightful user experience",
-      "features": ["Web3 Infrastructure", "Quality Development", "Great User Experience"]
+      "features": [
+        "Web3 Infrastructure",
+        "Quality Development",
+        "Great User Experience"
+      ]
     },
     {
       "title": "AI-Driven Blockchain Solutions",
       "subtitle": "",
       "description": "Comfygen Technologies integrates AI with Solana blockchain development to deliver smarter, faster, and more secure digital solutions. By leveraging <a class='underline' href='https://www.comfygen.com/ai-development' >artificial intelligence</a> , our blockchain development team enhances smart contract execution, predictive analytics, and automation across your decentralized applications (DApps), NFT marketplaces, and DeFi platforms.",
       "features": [
-        "AI-Powered Smart Contracts", 
-        "Predictive Analytics for DeFi & NFTs", 
+        "AI-Powered Smart Contracts",
+        "Predictive Analytics for DeFi & NFTs",
         "Automated Workflow & Transaction Monitoring",
-          "Enhanced Security & Fraud Detection"
-
+        "Enhanced Security & Fraud Detection"
       ]
     }
   ],
@@ -112,10 +161,8 @@
       "title": "Supply Chain",
       "description": "We enhance supply chain management with Solana blockchain solutions, ensuring transparent tracking, secure transactions, and real-time data visibility for improved efficiency and trust."
     }
-
-
   ],
-"Frequently" : [
+  "Frequently": [
     {
       "num": "1",
       "title": "How does Solana compare to Ethereum for dApp development?",
@@ -133,45 +180,72 @@
       "li5": ""
     },
     {
-     "num": "3",
+      "num": "3",
       "title": "How secure is Solana for blockchain applications?",
       "desc": "Solana ensures security through cryptographic encryption, decentralized validator nodes, and its PoH consensus, safeguarding data integrity and protecting applications from cyber threats."
     },
     {
       "num": "4",
-     "title": " Can Solana support large-scale enterprise blockchain solutions?",
+      "title": " Can Solana support large-scale enterprise blockchain solutions?",
       "desc": "Yes, Solana’s scalability and efficiency make it suitable for enterprise-grade blockchain projects, including DeFi platforms, supply chain tracking, and tokenized assets."
     },
     {
       "num": "5",
-     "title": "How much does it cost to develop a blockchain solution on Solana?",
+      "title": "How much does it cost to develop a blockchain solution on Solana?",
       "desc": "Development costs vary depending on project complexity, required features, and development time. Factors like smart contract creation, dApp integration, and security protocols influence pricing. Consulting a Solana blockchain development company can provide a detailed estimate."
     },
     {
       "num": "6",
-       "title": "How can AI enhance Solana blockchain solutions?",
-       "desc": "AI can optimize smart contracts, automate workflows, detect fraud, and provide predictive analytics, making Solana-based DApps, DeFi platforms, and NFT marketplaces smarter, faster, and more secure."
-     },
-     {
-       "num": "7",
+      "title": "How can AI enhance Solana blockchain solutions?",
+      "desc": "AI can optimize smart contracts, automate workflows, detect fraud, and provide predictive analytics, making Solana-based DApps, DeFi platforms, and NFT marketplaces smarter, faster, and more secure."
+    },
+    {
+      "num": "7",
       "title": "Can AI improve transaction efficiency on Solana?",
-       "desc": "Yes, AI algorithms can predict network congestion, optimize transaction routing, and manage resources, ensuring faster and cost-effective transaction processing on Solana."
-     },
-     {
-       "num": "8",
+      "desc": "Yes, AI algorithms can predict network congestion, optimize transaction routing, and manage resources, ensuring faster and cost-effective transaction processing on Solana."
+    },
+    {
+      "num": "8",
       "title": "How is AI integrated into Solana smart contracts?",
-       "desc": "AI is used to automate contract execution, validate data inputs, and detect anomalies, enhancing reliability, efficiency, and decision-making within Solana smart contracts."
-     },
-     {
+      "desc": "AI is used to automate contract execution, validate data inputs, and detect anomalies, enhancing reliability, efficiency, and decision-making within Solana smart contracts."
+    },
+    {
       "num": "9",
-       "title": "Are AI-powered Solana blockchain solutions suitable for enterprises?",
-       "desc": "Absolutely. AI integration enables enterprise-grade Solana blockchain solutions to handle large-scale transactions, provide predictive insights, enhance security, and optimize business operations."
-     },
-     {
-       "num": "10",
+      "title": "Are AI-powered Solana blockchain solutions suitable for enterprises?",
+      "desc": "Absolutely. AI integration enables enterprise-grade Solana blockchain solutions to handle large-scale transactions, provide predictive insights, enhance security, and optimize business operations."
+    },
+    {
+      "num": "10",
       "title": "What are the benefits of AI in Solana NFT marketplaces?",
-       "desc": "AI helps automate NFT pricing, forecast market trends, and recommend optimal trading strategies, making NFT marketplaces more dynamic, secure, and user-friendly."
-     }
+      "desc": "AI helps automate NFT pricing, forecast market trends, and recommend optimal trading strategies, making NFT marketplaces more dynamic, secure, and user-friendly."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    }
+
   ],
   "pageData": {
     "title": "Why Choose Comfygen as Your AI-Powered Solana Blockchain Development Project?",
@@ -192,7 +266,6 @@
         "title": "Custom Solutions",
         "description": " Tailored Solana blockchain development to match unique project requirements and business goals."
       },
-  
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
         "title": "High-Quality Delivery",

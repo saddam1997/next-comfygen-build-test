@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import React, { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import Footer from "./components/Footer";
+import Footer from "./Newcomponet/layout/Footer";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { FaChevronUp } from "react-icons/fa6";
-import BlockchainFooter from "./componentsnew/blockchain-Footer";
-import EcommerceFooter from "./componentsnew/ecommerce-Footer";
+import BlockchainFooter from "./Newcomponet/layout/BlockchainFooter/blockchain-Footer";
+import EcommerceFooter from "./Newcomponet/layout/EcommerceFooter/ecommerce-Footer";
 import footerConfig from "../pageRoute/pagedataroute.json"
 import { Poppins } from 'next/font/google';
 import Head from "next/head";
@@ -15,37 +15,37 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   display: 'swap',
 });
-const Talkchat = dynamic(() => import("./components/Talkchat"), {
+const Talkchat = dynamic(() => import("./Newcomponet/layout/Talkchat"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
 const GoogleTagManagerScript = dynamic(
-  () => import("./components/GoogleTagManagerScript"),
+  () => import("./Newcomponet/GoogleComponent/GoogleTagManagerScript"),
   {
     ssr: false,
     loading: () => <p>Loading...</p>,
   }
 );
 const GoogleTagManagerNoScript = dynamic(
-  () => import("./components/GoogleTagManagerNoScript"),
+  () => import("./Newcomponet/GoogleComponent/GoogleTagManagerNoScript"),
   {
     ssr: false,
     loading: () => <p>Loading...</p>,
   }
 );
 
-const ContactLinks = dynamic(() => import("./components/ContactLinks"), {
+const ContactLinks = dynamic(() => import("./Newcomponet/comman/ContactLinks"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
-const GoogleAnalytics = dynamic(() => import("./GoogleAnalytics"), {
+const GoogleAnalytics = dynamic(() => import("./Newcomponet/GoogleComponent/GoogleAnalytics"), {
   loading: () => <p>Loading...</p>,
 });
-const BlogSection = dynamic(() => import("./components/BlogSection"), {
+const BlogSection = dynamic(() => import("./Newcomponet/SectionCompoent/BlogSection"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
 });
 
-const GetinTouch = dynamic(() => import("./components/FormSec"), { ssr: false });
+const GetinTouch = dynamic(() => import("./Newcomponet/SectionCompoent/GetinTouch"), { ssr: false });
 
 export const config = {
   unstable_runtimeJS: false,
@@ -216,11 +216,11 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           <BlockchainFooter />
         ) : showEcommerceFooter ? (
           <EcommerceFooter />
-        ) : !isExcluded ? (
+        ) : isExcluded ? (
           <>
             <Footer />
           </>
-        ) : null}
+        ) : <Footer />}
         {loaded && (
           <>
             <div></div>

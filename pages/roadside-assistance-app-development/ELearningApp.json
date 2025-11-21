@@ -176,6 +176,23 @@
     "title": "Live ETA & Service Status",
     "desc": "The app provides live updates on service status and estimated arrival time, enhancing user transparency and trust."
   }
+],
+
+
+"portfoliodata" : [
+
+  {
+    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/AI.webp",
+    "title": "AI-Powered Towing & Assistance App",
+    "description": "Smart app with instant SOS, predictive service requests, and real-time tracking—offering unmatched towing and vehicle help with a user-first experience.",
+    "link": "/portfolio/ride-hailing-app"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/emergency.webp",
+    "title": "Emergency Fuel & Battery Help App",
+    "description": "A smart roadside support app offering fuel delivery, battery jumpstart, and tire help with offline mode, AI suggestions, loyalty rewards, and multilingual support for users.",
+    "link": "/portfolio/ride-hailing-app"
+  }
 ]
 ,
   "servicesData1": [
@@ -209,8 +226,60 @@
     "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
     "features": []
   }
-]
-,
+],
+
+"Feature":[
+  {
+    "id": 1,
+    "title": "Customer App",
+    "icon": "<i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/p4.webp",
+    "additionalDetails": [
+      { "details": "Profile Management", "emoji": "", "content": "" },
+      { "details": "One-Tap SOS Request", "emoji": "", "content": "" },
+      { "details": "Real-Time GPS Tracking", "emoji": "", "content": "" },
+      { "details": "Request Car Towing, Fuel, Jumpstart, Flat Tire Help", "emoji": "", "content": "" },
+      { "details": "In-App Calling & Chat", "emoji": "", "content": "" },
+      { "details": "Payment Wallet & History", "emoji": "", "content": "" },
+      { "details": "Rate & Review Services", "emoji": "", "content": "" },
+      { "details": "Track Technician’s ETA", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Service Provider App",
+    "icon":" <i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/p2.webp",
+    "additionalDetails": [
+      { "details": "Request Notifications & Accept/Reject Options", "emoji": "", "content": "" },
+      { "details": "Route Optimization & Navigation", "emoji": "", "content": "" },
+      { "details": "Service Status Update (Arrived, In Progress, Completed)", "emoji": "", "content": "" },
+      { "details": "Earnings Dashboard", "emoji": "", "content": "" },
+      { "details": "Availability Settings", "emoji": "", "content": "" },
+      { "details": "Live Chat with Customers", "emoji": "", "content": "" },
+      { "details": "Job History Log", "emoji": "", "content": "" },
+      { "details": "Ratings & Feedback", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Dashboard",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/p1.webp",
+    "additionalDetails": [
+      { "details": "User & Service Provider Management", "emoji": "", "content": "" },
+      { "details": "Request Tracking & Reports", "emoji": "", "content": "" },
+      { "details": "Secure Payment Gateway Management", "emoji": "", "content": "" },
+      { "details": "Analytics & Revenue Insights", "emoji": "", "content": "" },
+      { "details": "Promo Code & Subscription Control", "emoji": "", "content": "" },
+      { "details": "Content & Notification Management", "emoji": "", "content": "" },
+      { "details": "Multilingual Support", "emoji": "", "content": "" },
+      { "details": "GDPR-Compliant Security Controls", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
   "consultancyHead": [
     {
       "num": "1",

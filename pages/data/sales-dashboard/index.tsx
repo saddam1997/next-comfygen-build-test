@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
-import LazyLoad from "react-lazy-load";
 import {
   IconAdjustments,
   IconDatabase,
   IconPresentationAnalytics,
   IconShare,
 } from "@tabler/icons-react";
-import ServicesSec from "../../componentsnew/ServicesSec";
-import WhyChoose from "../../componentsnew/WhyChooseUs";
-import LatestTechnology from "./components/LatestTechnology";
-import Faq from "../../components/Faq";
-import AboutSection from "../../componentsnew/AboutSection";
-import Header from "../../componentsnew/Header";
-import ContactFromCenter from "../../componentsnew/ContactFromCenter";
-import MobileHero from "./components/MobileHero";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import CallToAction from "../../components/CallToAction";
-import Slider from "../../components/Slider";
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../../Newcomponet/SectionCompoent/CallToAction";
+import LatestTechnology from "../../Newcomponet/SectionCompoent/LatestTechnology";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
+
 
 const jsonLdData = [
 
@@ -357,13 +356,11 @@ export default function Mobile(props: any) {
       </Head>
 
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+        <Header />
       </div>
 
-      <div className="">
-        <MobileHero
+      <div className="overflow-hidden lg:pt-[120px]">
+        <HeroSectionForAllPages
           heading="Sales Performance Dashboards"
           ptag="Microsoft Power BI Sales Dashboards authorize teams to monitor every stage of the sales funnel, from lead generation to revenue conversion. Get instant access to sales performance analytics, spot trends, track KPIs, and make data-driven decisions that accelerate growth."
           bgImage="https://www.comfygen.com/comfygen-images/sales-dashboard/hero-img.webp"
@@ -374,8 +371,7 @@ export default function Mobile(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
         />
-        <ContactFromCenter />
-
+        {/* <ContactFromCenter /> */}
         <AboutSection
           title=""
           heading="Powering Smarter Sales Decisions with Power BI Sales Dashboards"
@@ -431,17 +427,23 @@ export default function Mobile(props: any) {
           </div>
         </section>
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="What Makes a Power BI Sales Dashboard Powerful?"
-          description="Microsoft Power BI Sales Dashboards are designed to go beyond basic reporting, giving you deep, actionable insights through visually compelling, real-time analytics. From high-level summaries to granular drill-downs, every element is crafted to help sales teams make faster, smarter decisions."
-          description1="Key Features of Power BI Sales Dashboards:"
-        />
 
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">What Makes a Power BI Sales Dashboard Powerful?
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end white label mobile app development services that cover everything from app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application solutions are tailored to meet your business goals quickly and affordably.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore our Portfolio of Power BI Services "
             description=""
@@ -481,4 +483,21 @@ export default function Mobile(props: any) {
       </div>
     </>
   );
+}
+
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

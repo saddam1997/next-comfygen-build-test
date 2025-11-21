@@ -1,35 +1,39 @@
-import Image from "next/image";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/whitelabelcryptoexchangedevelopmen.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardItem from "../components/CardItem";
-import ServicesSec from "../componentsnew/ServicesSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ProcessSection from "../componentsnew/ProcessSection";
-import PortfolioSec from "../componentsnew/PortfolioSec";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Solution from "../Newcomponet/SectionCompoent/Solution";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+
+
+
+
+
+
+
+// const ContactFromCenter = dynamic(
+//   () => import("../components/ContactFromCenter"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
 
 const defaultTestimonials = [
   {
@@ -96,38 +100,23 @@ const Processs = [
   }
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-      head: "Centralized Crypto Exchange Platform Development",
-      name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/centralized-crypto-exchange-development",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/p2p-crypto-exchange-development.webp",
-      head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-      name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/p2p-crypto-exchange-development",
-    },
-  ],
-};
+
+const portfoliodata = [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+    "title": "Centralized Crypto Exchange Platform Development",
+    "description": "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
+    "link": "/portfolio/centralized-crypto-exchange-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/p2p-crypto-exchange-development.webp",
+    "title": "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+    "description": "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
+    "link": "/portfolio/p2p-crypto-exchange-development"
+  },
+
+]
+
 
 
 
@@ -182,14 +171,14 @@ export default function Ecommerce(props) {
         "crypto exchange software development",
         "launch your own crypto exchange",
         "white label crypto exchange app development"
-    
+
       ],
-     
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
-        "https://www.linkedin.com/company/comfygen-private-limited" 
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-    
+
     },
     {
       "@context": "https://schema.org",
@@ -243,10 +232,10 @@ export default function Ecommerce(props) {
         "@type": "ContactPoint",
         "contactType": "sales",
         "contactOption": "WhatsApp",
-            "telephone": "+91 9587867258",
-    "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-    "email": "sales@comfygen.com",            
-            "availableLanguage": "en, in"
+        "telephone": "+91 9587867258",
+        "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+        "email": "sales@comfygen.com",
+        "availableLanguage": "en, in"
       },
       "sameAs": [
         "https://www.facebook.com/comfygen",
@@ -256,18 +245,20 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-private-limited",
         "https://in.pinterest.com/comfygenpvt/"
       ]
-    
+
     },
     {
       "@context": "http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"white label crypto exchange development company",
-      "image":"https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/white-label-crypto-exchange-development-about.webp",
-      "description":"Launch your own customizable, secure, and scalable crypto exchange with our white label solutions. Fast deployment and enterprise-grade security. Contact us today!",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "white label crypto exchange development company",
+      "image": "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/white-label-crypto-exchange-development-about.webp",
+      "description": "Launch your own customizable, secure, and scalable crypto exchange with our white label solutions. Fast deployment and enterprise-grade security. Contact us today!",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
     },
     {
@@ -356,14 +347,14 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
+
   ];
 
   return (
     <>
-   <Head>
+      <Head>
         <title> White Label Crypto Exchange Development Company | Comfygen
-</title>
+        </title>
         <meta
           name="description"
           content="Comfygen, top-notch white label Crypto Exchange Development Company. Provide customizable software with multi-currency & multi-chain support, bank-grade security, and fast deployment."
@@ -455,7 +446,7 @@ export default function Ecommerce(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-     
+
       </Head>
 
 
@@ -478,8 +469,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/white-label-crypto-exchange-development-hero.webp"
         />
-        
-        
+
         <AboutSection
           title="About Company"
           heading="Why Choose White Label Crypto Exchange Development?"
@@ -497,24 +487,20 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our White Label Crypto Exchange Development Services"
-          description="At Comfygen, we provide a comprehensive suite of White Label Crypto Exchange Development Services that enable businesses to quickly enter the rapidly evolving cryptocurrency market with a fully branded, secure, and highly customizable platform. Whether you're looking to build a centralized crypto exchange, a decentralized exchange (DEX), or a hybrid platform, our experienced team delivers future-ready solutions designed to meet your unique business needs."
-        />
-                                 
-        <CardItem
-          heading="White Label Crypto Exchange Development Company Solution "
-          subheading="At Comfygen, we offer an elite suite of white label crypto exchange solutions designed for fast deployment, deep customization, and market readiness. Whether you're targeting niche user segments or aiming to replicate the success of industry giants, our clone-based and market-specific crypto exchange solutions come pre-packed with top-tier features, robust architecture, and cross-platform compatibility. Leverage our white-label solutions to enter the market quickly while maintaining a strong brand identity and customized features that set you apart from the competition."
-          techData={JSON_DATA.cardData2}
 
-        />
-       
-        
-        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />/ */}
-       
-        
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >OOur White Label Crypto Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide a comprehensive suite of White Label Crypto Exchange Development Services that enable businesses to quickly enter the rapidly evolving cryptocurrency market with a fully branded, secure, and highly customizable platform. Whether you're looking to build a centralized crypto exchange, a decentralized exchange (DEX), or a hybrid platform, our experienced team delivers future-ready solutions designed to meet your unique business needs.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -523,18 +509,55 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        
-
-         <ProcessSection  
-           title="White Label Crypto Exchange Development Process" 
-           description="At Comfygen, we follow a streamlined, agile, and secure development lifecycle to deliver a future-ready white label crypto exchange tailored to your business goals. Here’s how we bring your crypto trading platform to life:"   
-           processSlides={Processs} />
-  
-        <PortfolioSec
-           techData={techDataForPage1}
-           heading="Explore Our White Label Crypto Exchange Portfolio"
-           description="At Comfygen, we are proud to have delivered high-performance, secure, and fully customizable white label crypto exchanges to clients across the globe. Our portfolio is a testament to our expertise in building scalable and future-proof platforms for diverse business needs. Here’s a look at some of our successful projects:"
+        <CallToAction
+          heading="Let’s hear what you have to say?"
+          text="Get in touch with us and discuss your needs and requirements with our experts."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
         />
+
+        <Solution
+          heading="White Label Crypto Exchange Development Company Solution "
+          subheading="At Comfygen, we offer an elite suite of white label crypto exchange solutions designed for fast deployment, deep customization, and market readiness. Whether you're targeting niche user segments or aiming to replicate the success of industry giants, our clone-based and market-specific crypto exchange solutions come pre-packed with top-tier features, robust architecture, and cross-platform compatibility. Leverage our white-label solutions to enter the market quickly while maintaining a strong brand identity and customized features that set you apart from the competition."
+          techData={JSON_DATA.cardData2}
+        />
+
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">White Label Crypto Exchange Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a streamlined, agile, and secure development lifecycle to deliver a future-ready white label crypto exchange tailored to your business goals. Here’s how we bring your crypto trading platform to life.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+        <section className="py-8">
+          <Portfolio
+            projects={portfoliodata}
+            heading="Explore Our White Label Crypto Exchange Portfolio"
+            description="At Comfygen, we are proud to have delivered high-performance, secure, and fully customizable white label crypto exchanges to clients across the globe. Our portfolio is a testament to our expertise in building scalable and future-proof platforms for diverse business needs. Here’s a look at some of our successful projects"
+          />
+        </section>
+
+        <TechStack
+          customTechData={null}
+          title="Our White Label Crypto Exchange Tech Stack We Use"
+          description="We use the latest technologies to build secure, scalable, and high-performance White Label Crypto Exchange platforms:"
+        />
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
 
         <HireDeveloper
           heading="Hire Our White Label Crypto Exchange Developers"
@@ -549,28 +572,13 @@ export default function Ecommerce(props) {
             "End-to-End Technical Proficiency",
             "Dedicated Project Teams",
             "Post-Launch Support & Upgrades",
-            
+
           ]}
         />
-        <TechStack
-          title="Our White Label Crypto Exchange Tech Stack We Use"
-          description="We use the latest technologies to build secure, scalable, and high-performance White Label Crypto Exchange platforms:"
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
+
+
         <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title="White Label Crypto Exchange"

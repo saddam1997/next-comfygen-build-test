@@ -5,12 +5,11 @@
     "Comfygen has Full-Stack developers; who have the caliber to build robust decentralized applications.",
     "Clients have the option to hire blockchain developers in India from us, as they can hire a developer dedicated on project, hourly basis, or full time. "
   ],
-
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Custom Blockchain Application Development",
       "description": "At Comfygen, we specialize in custom blockchain application development, delivering secure, scalable, and enterprise-level blockchain development solutions tailored to your business. Our expert developers build decentralized applications (dApps), enterprise blockchain platforms, and industry-specific blockchain solutions that drive efficiency and innovation.",
-       "features": [
+      "features": [
         "Tailored Blockchain Solutions",
         "Enhanced Security",
         "Scalable & High-Performance",
@@ -20,46 +19,43 @@
     {
       "title": "DeFi Platform Development",
       "description": "Comfygen specializes in <a class='underline' href='https://www.comfygen.com/defi-development-company'>DeFi development</a>, helping businesses create safe, secure, scalable, and feature-rich decentralized finance solutions. Our DeFi development experts design platforms that enable lending, staking, yield farming, and liquidity management, empowering users to manage digital assets seamlessly while maintaining transparency and security on networks like Ethereum, Binance Smart Chain, and Polygon.",
-       "features": [
+      "features": [
         "Lending & Borrowing Solutions",
         "Staking & Yield Farming ",
         "Enhanced Security",
         "Cross-Chain Integration"
       ]
-      
     },
     {
       "title": "NFT Marketplace Development",
       "description": "Comfygen builds a feature-rich NFT marketplace that enables businesses to tokenize, trade, and monetize digital assets securely and efficiently. Our <a class='underline' href='https://www.comfygen.com/nft-marketplace-development-company'>NFT Marketplace Development</a> team builds scalable platforms for art, gaming, music, and real estate on top networks like Ethereum, Polygon, and Solana, helping you leverage the power of blockchain technology.",
-        "features": [
+      "features": [
         "Minting & Listing ",
         "Trading & Auctions",
         "Secure Smart Contract Integration",
         "Cross-Chain Support"
       ]
-      
     },
     {
       "title": "Crypto Wallet Development",
       "description": "At Comfygen, we provide custom <a class='underline href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development services</>designed to offer secure, scalable, and user-friendly solutions for managing digital assets. Whether you need hot wallets, cold wallets, or NFT wallets, our blockchain developers create feature-rich applications that ensure seamless transactions, advanced encryption, and multi-platform support. From startups to enterprises, we deliver crypto wallet solutions that empower users with complete control over their digital assets.",
-       "features": [
+      "features": [
         "Multi-Currency Support ",
         "Enterprise-Grade Security",
         "Seamless Transactions",
         "Cross-Platform Wallets"
       ]
-      
     },
     {
       "title": "Smart Contract Development & Auditing",
       "description": "Comfygen offers <a class='underline' href='https://www.comfygen.com/smart-contract-development'>smart contract development</a> and auditing services to help businesses build secure, automated, and tamper-proof blockchain applications. Our expert developers create custom smart contracts that execute transactions seamlessly on networks like Ethereum, Binance Smart Chain, and Polygon.",
-        "features": [
+      "features": [
         "Custom Smart Contract Development",
         "Comprehensive Auditing",
         "High-Performance Execution",
         "Cross-Chain Integration"
       ]
-    } ,
+    },
     {
       "title": "Custom Enterprise Blockchain Solutions",
       "description": "Comfygen delivers custom <a>enterprise blockchain Development solutions</a> that empower businesses across finance, healthcare, supply chain, logistics, and real estate to achieve transparency, efficiency, and security. Our blockchain experts design and implement enterprise-level blockchain applications that streamline operations, automate workflows, and ensure data integrity.",
@@ -70,8 +66,298 @@
         "Enterprise-Grade Security"
       ]
     }
-   
-   
+  ],
+  "TechData": {
+    "backend": [
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+        "alt": "Nodejs",
+        "name": "nodejs",
+        "num": "1"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+        "alt": "Javascript",
+        "name": "javascript",
+        "num": "2"
+      },
+      {
+        "img": "https://www.comfygen.com/image/next-js-icon.svg",
+        "alt": "Express js",
+        "name": "Express js",
+        "num": "3"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg",
+        "alt": "Sails js",
+        "name": "Sails js",
+        "num": "4"
+      },
+      {
+        "img": "https://www.comfygen.com/image/next-js-icon.svg",
+        "alt": "Next js",
+        "name": "Next js",
+        "num": "5"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+        "alt": "Django",
+        "name": "Django",
+        "num": "6"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+        "alt": "Python",
+        "name": "Python",
+        "num": "7"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/php-icon.svg",
+        "alt": "PHP",
+        "name": "PHP",
+        "num": "8"
+      }
+    ],
+    "frontend": [
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+        "alt": "Html5",
+        "name": "html5",
+        "num": "1"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+        "alt": "Css3",
+        "name": "css3",
+        "num": "2"
+      },
+      {
+        "img": "https://www.comfygen.com/image/next-js-icon.svg",
+        "alt": "Nextjs",
+        "name": "nextjs",
+        "num": "3"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+        "alt": "React",
+        "name": "react js",
+        "num": "4"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
+        "alt": "Tailwindcss",
+        "name": "tailwindcss",
+        "num": "5"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+        "alt": "Angularjs",
+        "name": "angular js",
+        "num": "6"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+        "alt": "Javascript",
+        "name": "javascript",
+        "num": "7"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+        "alt": "Typescript",
+        "name": "typescript",
+        "num": "8"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg",
+        "alt": "Bootstrap",
+        "name": "bootstrap",
+        "num": "9"
+      }
+    ],
+    "mobile": [
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/android-plain.svg",
+        "alt": "Android Plan",
+        "name": "android",
+        "num": "1"
+      },
+      {
+        "img": "https://www.comfygen.com/image/ios-apple.svg",
+        "alt": "Apple",
+        "name": "IOS Apple",
+        "num": "2"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+        "alt": "React",
+        "name": "react native",
+        "num": "3"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/flutter-plain.svg",
+        "alt": "Flutter",
+        "name": "flutter",
+        "num": "4"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/dart-original.svg",
+        "alt": "Dart",
+        "name": "dart",
+        "num": "5"
+      },
+      {
+        "img": "https://www.comfygen.com/image/unity-stack-icon.svg",
+        "alt": "Unity",
+        "name": "unity",
+        "num": "6"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+        "alt": "Typescript",
+        "name": "typescript",
+        "num": "7"
+      }
+    ],
+    "design": [
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/figma.svg",
+        "alt": "Figma",
+        "name": "figma",
+        "num": "1"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/photoshop.svg",
+        "alt": "Photoshop",
+        "name": "photoshop",
+        "num": "2"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/abdobe-illustrator.svg",
+        "alt": "Abdobe Illustrator",
+        "name": " illustrator",
+        "num": "3"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/abdobe-xd.svg",
+        "alt": "Abdobe Xd",
+        "name": "abdobe xd",
+        "num": "4"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/skech.svg",
+        "alt": "Skech",
+        "name": "skech",
+        "num": "5"
+      },
+      {
+        "img": "https://www.comfygen.com/media/svg/tech/after-effect.svg",
+        "alt": "After Effect",
+        "name": "after effect",
+        "num": "6"
+      }
+    ],
+    "crypto": [
+      {
+        "img": "https://www.comfygen.com/img/stackimg/binance.svg",
+        "alt": "Binance",
+        "name": "Binance",
+        "num": "1"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/cardano.svg",
+        "alt": "Cardano",
+        "name": "Cardano ",
+        "num": "2"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/coinbase.svg",
+        "alt": "Coinbase",
+        "name": "coinbase",
+        "num": "3"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/eos.svg",
+        "alt": "EOS",
+        "name": "EOS",
+        "num": "4"
+      },
+      {
+        "img": "https://www.comfygen.com/image/ethereum-stack-icon.svg",
+        "alt": "Ethereum",
+        "name": "Ethereum",
+        "num": "5"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/ethers-js.svg",
+        "alt": "Ethersjs",
+        "name": "Ethers JS",
+        "num": "6"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/walletconnect.svg",
+        "alt": "Walletconnect",
+        "name": "walletconnect",
+        "num": "7"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/trust-wallet.svg",
+        "alt": "Trust Wallet",
+        "name": "trust wallet ",
+        "num": "8"
+      },
+      {
+        "img": "https://www.comfygen.com/image/solana-stack-icon.svg",
+        "alt": "Solona",
+        "name": "Solana",
+        "num": "9"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/polygon.svg",
+        "alt": "Polygon",
+        "name": "Polygon",
+        "num": "10"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/polkadot.svg",
+        "alt": "Polkadot",
+        "name": "polkadot",
+        "num": "11"
+      },
+      {
+        "img": "https://www.comfygen.com/img/stackimg/metamask.svg",
+        "alt": "Metamask",
+        "name": "metamask",
+        "num": "12"
+      }
+    ]
+  },
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide",
+      "link": "#"
+    },
+     {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "#"
+    }
     
   ],
   "IndustriesServe": [
@@ -90,7 +376,6 @@
       "title": "Supply Chain & Logistics",
       "description": "Boost transparency and traceability in your supply chain with our advanced blockchain development technology. We create decentralized systems that track goods in real time and ensure authenticity at every stage."
     },
-
     {
       "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
       "title": "Real Estate",
@@ -146,10 +431,8 @@
         "title": "Proven Reliability and Trustworthiness",
         "description": "As a trusted custom blockchain development company, Comfygen consistently delivers reliable blockchain applications. We meet deadlines, maintain transparency, and ensure your blockchain projects exceed expectations."
       }
-
     ]
   },
-
   "Hire": [
     {
       "num": "1",

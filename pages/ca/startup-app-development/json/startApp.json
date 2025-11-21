@@ -90,55 +90,103 @@
       "title": "Food Delivery App Development Company"
     }
   ],
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Idea Consultancy Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We help startups refine their app ideas, offering expert guidance on feasibility, market research, and innovative features to ensure a solid foundation for their mobile applications",
-      "features": ["Improving Ideas", "Expert Advice", "Market Research" ,"Creative Features" , "Solid Foundation"]
+      "features": [
+        "Improving Ideas",
+        "Expert Advice",
+        "Market Research",
+        "Creative Features",
+        "Solid Foundation"
+      ]
     },
     {
       "title": "Product Discovery",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Through in-depth analysis and market research, we assist startups in identifying market gaps and user needs, helping them conceptualize and shape their app ideas into viable products.",
-      "features": ["Market Research", "Identify Needs", "Idea Shaping" , "In-Depth Analysis" , "Viable Solutions"]
+      "features": [
+        "Market Research",
+        "Identify Needs",
+        "Idea Shaping",
+        "In-Depth Analysis",
+        "Viable Solutions"
+      ]
     },
     {
       "title": "MVP Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We focus on creating Minimum Viable Products (MVPs) as part of our MVP development strategy. These MVPs allow for quick and cost-effective validation of business concepts, with the flexibility to make adjustments based on user input.",
-      "features": ["Quick Launch", "Cost-Effective", "User Feedback" , "Flexible Development" , "Validating Ideas"]
+      "features": [
+        "Quick Launch",
+        "Cost-Effective",
+        "User Feedback",
+        "Flexible Development",
+        "Validating Ideas"
+      ]
     },
     {
       "title": "Prototyping and UI/UX Design",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our UI/UX design and prototyping services result in aesthetically pleasing and simple-to-use interfaces that create seamless user experiences that draw in and hold onto clients right away.",
-      "features": ["Attractive Designs", "Smooth User Experience", "Engaging Interfaces" , "Prototyping" , "User-Centered Design"]
+      "features": [
+        "Attractive Designs",
+        "Smooth User Experience",
+        "Engaging Interfaces",
+        "Prototyping",
+        "User-Centered Design"
+      ]
     },
     {
       "title": "Web App Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We provide web app development services in addition to mobile app development, helping entrepreneurs to reach people on several platforms and devices and so broadening their market reach and accessibility.",
-      "features": ["Reach More People", "Works on All Devices", "Web & Mobile Integration" , "Expand Your Market"]
-    } ,
+      "features": [
+        "Reach More People",
+        "Works on All Devices",
+        "Web & Mobile Integration",
+        "Expand Your Market"
+      ]
+    },
     {
       "title": "Custom Startup App Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our personalized app development services, which are tailored to the particular requirements of each startup, provide scalable, reliable solutions that support corporate goals and guarantee long-term success and expansion.",
-      "features": ["Custom Solutions", "Grow with Your Business", "Reliable Performance" , "Supports Your Goals"]
+      "features": [
+        "Custom Solutions",
+        "Grow with Your Business",
+        "Reliable Performance",
+        "Supports Your Goals"
+      ]
     }
-
   ],
-
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "How Comfygen Is Your Ideal Choice for Startup App Development?",
       "desc": "Comfygen specializes in helping startups bring their mobile app ideas to life. With our expertise in mobile app development, we guide startups through every stage of the process, from ideation to deployment, ensuring a seamless and successful journey to market."
     }
   ],
-  
-  "consultancyData" :[
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/footer-fitclub-img.webp",
+      "title": "Fitclub",
+      "description": "Our team developed Fitclub, a revolutionary fitness app that integrates personalized workout plans with real-time health tracking. Users can set fitness goals, track progress, and receive custom workout recommendations based on their fitness level and preferences. Fitclub has garnered over 100,000 downloads within its first year, receiving rave reviews for its user-friendly interface and effective fitness algorithms.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/ichef-portfolio.webp",
+      "title": "iChef",
+      "description": "iChef is a cutting-edge culinary app designed to simplify meal planning and cooking for busy professionals. Our developers crafted iChef to include intuitive recipe browsing, automated grocery list generation, and personalized meal recommendations based on dietary preferences. Since its launch, iChef has been featured in top tech publications and has gained a loyal user base of food enthusiasts worldwide.",
+      "link": "#"
+    }
+   
+    
+  ],
+  "consultancyData": [
     {
       "title": "Expert Guidance from Idea to Launch",
       "desc": "Our team provides expert guidance to startups, validating app ideas, defining objectives, and creating a solid project plan to ensure successful app development and launch."
@@ -428,7 +476,7 @@
     {
       "num": "01",
       "img": "https://www.comfygen.com/img/idea-consultancy-services.webp",
-      "urlLink":"application-consulting-services",
+      "urlLink": "application-consulting-services",
       "title": "Idea Consultancy Services",
       "decs": "We help startups refine their app ideas, offering expert guidance on feasibility, market research, and innovative features to ensure a solid foundation for their mobile applications. "
     },
@@ -527,8 +575,7 @@
       "img": "https://www.comfygen.com/img/low-code-no-code-development.webp",
       "tittle": "Low-Code/No-Code Development",
       "decs": "Utilize low-code or no-code platforms to accelerate development, allowing non-technical users to build and customize apps with minimal coding knowledge."
-    }
-    ,
+    },
     {
       "num": "09",
       "img": "https://www.comfygen.com/img/containerization-and-microservices.webp",
@@ -541,67 +588,65 @@
       "tittle": "Cybersecurity Measures",
       "decs": "Make cybersecurity a top priority by implementing strong authentication, encryption, and security measures to preserve user information and fend against online attacks."
     }
-
   ],
   "AppProcess": [
     {
       "num": "01",
       "title": "Healthcare",
-      "url": "/healthcare-app-development" ,
+      "url": "/healthcare-app-development",
       "decs": "Comfygen develops innovative healthcare applications that streamline patient care, facilitate telemedicine, manage medical records securely, and improve overall healthcare delivery through technology."
     },
     {
       "num": "02",
-      "url": "/finance-app-development" ,
+      "url": "/finance-app-development",
       "title": "Finance",
       "decs": "In the finance sector, Comfygen creates secure and user-friendly applications for banking, investment, budgeting, and digital payments, empowering startups to revolutionize financial services."
     },
     {
       "num": "03",
-      "url": "/e-commerce-app-development" ,
+      "url": "/e-commerce-app-development",
       "title": "E-commerce",
       "decs": "Comfygen helps startups in the e-commerce industry build scalable and feature-rich platforms, enabling seamless online shopping experiences, personalized recommendations, and efficient order management."
     },
     {
-
       "num": "04",
-      "url": "/ca/education-app-development-company" ,
+      "url": "/ca/education-app-development-company",
       "title": "Education",
       "decs": "Comfygen supports educational startups by building interactive learning platforms, educational games, student management systems, and online course delivery apps to enhance the learning experience."
     },
     {
       "num": "05",
-      "url": "/" ,
+      "url": "/",
       "title": "Travel and Hospitality",
       "decs": "Comfygen develops travel and hospitality apps that simplify booking processes, provide personalized recommendations, offer virtual tours, and enhance customer engagement for startups in this industry."
     },
     {
       "num": "06",
-      "url": "/" ,
+      "url": "/",
       "title": "Real Estate",
       "decs": "For real estate startups, Comfygen creates applications for property listings, virtual property tours, rental management, and mortgage calculators, helping to streamline transactions and improve customer satisfaction."
     },
-{
+    {
       "num": "07",
-      "url": "/" ,
+      "url": "/",
       "title": "Food and Beverage",
       "decs": "Comfygen assists startups in the food and beverage industry with apps for online food delivery, table reservations, recipe sharing, and loyalty programs, enhancing customer convenience and loyalty."
     },
     {
       "num": "08",
-      "url": "/" ,
+      "url": "/",
       "title": "Transportation and Logistics",
       "decs": "Comfygen builds apps for transportation and logistics startups, including ride-hailing, delivery tracking, fleet management, and supply chain optimization, to improve efficiency and customer service."
     },
     {
       "num": "09",
-      "url": "/" ,
+      "url": "/",
       "title": "Fitness and Wellness",
       "decs": "Comfygen develops fitness and wellness apps for startups, offering workout tracking, nutrition planning, meditation guides, and virtual coaching to help users achieve their health goals."
     },
     {
       "num": "10",
-      "url": "/" ,
+      "url": "/",
       "title": "Media and Entertainment",
       "decs": "Comfygen creates engaging media and entertainment apps for startups, including streaming platforms, gaming apps, social networks, and content sharing platforms, to entertain and connect users worldwide."
     }

@@ -2,29 +2,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import Faq from "../../components/Faq";
-import ProcessSec from "../../components/ProcessSec";
-import TechStack from "./components/TeckStack";
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ServicesSec from "../../componentsnew/ServicesSec";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 import Features from "./components/NewFeatures";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import Slider from "../../components/Slider";
-const Header = dynamic(() => import("../../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const Process = [
   {
@@ -95,7 +86,7 @@ const portfolioData = [
   },
 ];
 
-export default function Mobile(props) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   let { LeadingSoftware } = JSON_DATA;
 
@@ -461,12 +452,29 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Services Offered by Our Data Scientist."
-          description="Our Data Scientist turns raw data into structured intelligence through advanced analytics, modelling, and engineering. Explore our services to see how we help businesses harness data for smarter, faster decisions."
-        />
+        {/* <ContactFromCenter /> */}
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Offered by Our Data Scientist.
+              </h2>
+              <p className="text-base text-center font-normal">Our Data Scientist turns raw data into structured intelligence through advanced analytics, modelling, and engineering. Explore our services to see how we help businesses harness data for smarter, faster decisions.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-8">
+          <Portfolio
+            projects={portfolioData}
+            heading="Our Data Science Consulting Portfolio"
+            description=" At Comfygen, our data scientists bring clarity to complex business challenges through AI, machine learning, and predictive modeling."
+          />
+        </section>
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -475,6 +483,8 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
+
+
         <Features />
 
         <section className="bg-[#fff] lg:py-16 py-10">
@@ -493,22 +503,18 @@ export default function Mobile(props) {
           </div>
         </section>
 
+        <TechStack
+          title="Our Technology Stack Use to Develop Best AI Services"
+          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          customTechData={JSON_DATA.TechData}
+        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-
-
-
-        <section className="py-8">
-          <Slider
-            projects={portfolioData}
-            heading="Our Data Science Consulting Portfolio"
-            description=" At Comfygen, our data scientists bring clarity to complex business challenges through AI, machine learning, and predictive modeling."
-          />
-        </section>
 
 
         <HireDeveloper
@@ -521,10 +527,7 @@ export default function Mobile(props) {
           imageAlt="hire-developer"
         />
 
-        <TechStack
-          title="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
-        />
+
 
         <ClientTestimonials />
 
@@ -536,4 +539,8 @@ export default function Mobile(props) {
     </>
   );
 }
+
+
+
+
 

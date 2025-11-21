@@ -4,7 +4,6 @@
     "decs": "Leading Multichain Blockchain Development business Comfygen provides comprehensive services in the industry. We deliver solid solutions crafted to meet your unique company needs and are experts in multichain blockchain development. With the help of our experience, we provide a wide range of features and functionalities in our secure and scalable Multichain Blockchain Development services. Our team of professionals is exceptional at providing Multichain Application Development services, empowering businesses to utilize blockchain technology for their particular requirements."
   },
   "servicesData": [
-  
     {
       "title": "Custom Blockchain Development",
       "subtitle": "",
@@ -16,7 +15,7 @@
         "Seamless Integration"
       ]
     },
-      {
+    {
       "title": "Secure & Fast Transactions",
       "subtitle": "",
       "description": "Ensure high-speed, reliable, and secure transaction processing with our MultiChain Blockchain Development Services. By integrating AI-powered monitoring, we provide real-time threat detection, fraud prevention, and uninterrupted operations, making your enterprise blockchain both robust and efficient.",
@@ -27,8 +26,7 @@
         "Uninterrupted Operations"
       ]
     },
-
-  {
+    {
       "title": "Enterprise Integration ",
       "subtitle": "",
       "description": "Integrate MultiChain blockchain networks with your existing ERP, CRM, or legacy systems. Our AI-enhanced approach ensures real-time insights, automated reporting, and smarter decision-making, empowering enterprises to operate efficiently and securely.",
@@ -39,8 +37,6 @@
         "Improved Decision-Making"
       ]
     },
-
-
     {
       "title": "Systems for simple financial management",
       "subtitle": "",
@@ -85,6 +81,32 @@
         "Combining Data",
         "Joint Record Management"
       ]
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and consistent value growth. Unlike fiat currency, it utilizes blockchain technology to provide enhanced security, transparency, and decentralized control. Croston enables secure transactions and regulated coin issuance while offering convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and drives a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, setting it apart from traditional tokens. Built on a powerful 'Four Square' architecture, it focuses on speed, mining benefits, seamless integration, and predictable growth. Designed for business, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes supply chain and distribution, ensuring a smooth and efficient flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and seamless operations, redefining the energy sector.",
+      "link": "#"
     }
   ],
   "consultancyHead": [

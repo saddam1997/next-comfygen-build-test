@@ -2,32 +2,33 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-import ServicesSec from "../componentsnew/ServicesSec";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import ProcessSec from "../componentsnew/ProcessSec";
-import TechStack from "../componentsnew/TechStack";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import Faq from "../components/Faq";
-import AboutSection from "../componentsnew/AboutSection";
-import Header from "../componentsnew/Header";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import MobileHero from "./components/MobileHero";
-import CallToAction from "../components/CallToAction";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
 
 const BreadcrumbSchema = {
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
   "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
+    "@type": "ListItem",
+    "position": 1,
     "name": "Home",
-    "item": "https://www.comfygen.com"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
+    "item": "https://www.comfygen.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
     "name": "Web Design Company",
-    "item": "https://www.comfygen.com/web-design"  
+    "item": "https://www.comfygen.com/web-design"
   }]
 };
 const ServiceSchema = {
@@ -55,13 +56,13 @@ const ServiceSchema = {
     "B2B Web Design Services"
 
   ],
- 
+
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies",
     "https://x.com/Comfygen_Tech",
     "https://www.instagram.com/comfygen_technologies",
     "https://www.linkedin.com/company/comfygen-technologies"
-    
+
   ]
 };
 const ldJson = {
@@ -89,74 +90,76 @@ const structuredData = {
   ],
 };
 const ProductSchema = {
-  "@context":"http://www.schema.org",
-  "@type":"Product",
-  "brand":"Comfygen Technologies",
-  "Name":"Affordable Custom Web Design Services",
-  "image":"https://www.comfygen.com/comfygen-images/website/website-about.webp",
-  "description":"Looking for an affordable web design company? Comfygen builds responsive, SEO-friendly websites tailored for businesses across industries. Get a quote today!",
-  "aggregateRating":{"@type":"AggregateRating",
-  "ratingValue":"4.9",
-  "reviewCount":"476"}
+  "@context": "http://www.schema.org",
+  "@type": "Product",
+  "brand": "Comfygen Technologies",
+  "Name": "Affordable Custom Web Design Services",
+  "image": "https://www.comfygen.com/comfygen-images/website/website-about.webp",
+  "description": "Looking for an affordable web design company? Comfygen builds responsive, SEO-friendly websites tailored for businesses across industries. Get a quote today!",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "476"
+  }
 };
 
 const faqSchema = {
   "@context": "https://schema.org/",
   "@type": "FAQPage",
   "mainEntity": [
-  {
-    "@type": "Question",
-    "name": "Can you redesign my existing website?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we specialize in redesigning websites to improve user experience, design aesthetics, and performance. Whether you need a complete overhaul or just a few updates, our team can help refresh your website to meet modern standards and enhance its functionality."
+    {
+      "@type": "Question",
+      "name": "Can you redesign my existing website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we specialize in redesigning websites to improve user experience, design aesthetics, and performance. Whether you need a complete overhaul or just a few updates, our team can help refresh your website to meet modern standards and enhance its functionality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to design a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The timeline for website design depends on the complexity and requirements of your project. On average, a custom website design can take anywhere from 2 to 5 weeks, from research and planning to launch. We give priority to providing high-quality work while accepting project deadlines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate e-commerce features into my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! We can integrate e-commerce functionality like product catalogs, shopping carts, secure payment gateways, and order management systems. Whether you need a full-fledged online store or just basic e-commerce features, we’ve got you covered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my website be optimized for speed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, website speed is a top priority. We optimize images, use efficient coding practices, and implement caching techniques to ensure your website loads quickly. A fast website improves user experience and contributes to better SEO rankings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of businesses do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We work with businesses of all sizes across various industries, including startups, small businesses, e-commerce stores, educational institutions, healthcare providers, and more. Our team customizes each website design to the unique needs and goals of your business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with my website design project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To get started, simply reach out to us through our contact form or give us a call. We’ll schedule a consultation to discuss your project needs, goals, and vision, and then provide you with a customized plan to bring your website to life."
+      }
     }
-  },
-  {
-    "@type": "Question",
-    "name": "How long does it take to design a website?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The timeline for website design depends on the complexity and requirements of your project. On average, a custom website design can take anywhere from 2 to 5 weeks, from research and planning to launch. We give priority to providing high-quality work while accepting project deadlines."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Can you integrate e-commerce features into my website?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Absolutely! We can integrate e-commerce functionality like product catalogs, shopping carts, secure payment gateways, and order management systems. Whether you need a full-fledged online store or just basic e-commerce features, we’ve got you covered."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "Will my website be optimized for speed?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, website speed is a top priority. We optimize images, use efficient coding practices, and implement caching techniques to ensure your website loads quickly. A fast website improves user experience and contributes to better SEO rankings."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What kind of businesses do you work with?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We work with businesses of all sizes across various industries, including startups, small businesses, e-commerce stores, educational institutions, healthcare providers, and more. Our team customizes each website design to the unique needs and goals of your business."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How do I get started with my website design project?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "To get started, simply reach out to us through our contact form or give us a call. We’ll schedule a consultation to discuss your project needs, goals, and vision, and then provide you with a customized plan to bring your website to life."
-    }
-  }
-],
+  ],
 };
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -246,7 +249,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-        Best Web Design Company in Jaipur, India | Custom Website Design Services
+          Best Web Design Company in Jaipur, India | Custom Website Design Services
         </title>
 
         <meta
@@ -374,19 +377,26 @@ export default function Mobile(props: any) {
         </LazyLoad>
       </div>
 
-      <div className="">
-        <MobileHero
-          heading="Best Web Design Company in Jaipur, India"
-          ptag="Comfygen is a leading web design company in Jaipur, India, crafting visually stunning, responsive, and user-friendly websites for startups, brands, and enterprises. Our creative web designers blend innovation with strategy to deliver designs that engage users and drive results. From idea to execution, we transform your vision into an impactful digital experience."
-          bgImage="https://www.comfygen.com/comfygen-images/website/website-hero1.webp"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-        />
-        <ContactFromCenter />
+      <div className="overflow-hidden lg:pt-[20px]">
+
+        <div className="">
+          <HeroSectionForAllPages
+            heading="Best Web Design Company in Jaipur, India"
+            ptag="Comfygen is a leading web design company in Jaipur, India, crafting visually stunning, responsive, and user-friendly websites for startups, brands, and enterprises. Our creative web designers blend innovation with strategy to deliver designs that engage users and drive results. From idea to execution, we transform your vision into an impactful digital experience."
+            li=""
+            li1=""
+            li2=""
+            li3=""
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/website/website-hero1.webp"
+          />
+        </div>
+        {/* <ContactFromCenter /> */}
 
         <AboutSection
           title=""
@@ -399,16 +409,22 @@ export default function Mobile(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="We Offer Affordable Website Design Services In Jaipur`"
-          description="Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly."
-        />
 
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer Affordable Website Design Services In Jaipur</h2>
+              <p className="text-base text-center font-normal">Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio – Websites That Speak for Themselves"
             description="At Comfygen, we take pride in crafting high-performing and visually appealing websites for various industries. As a trusted UI/UX  web design and development company, we have delivered custom, responsive, and SEO-optimized websites that help brands grow faster and engage better. Take a look at some of our latest work."
@@ -458,15 +474,27 @@ export default function Mobile(props: any) {
           imageAlt="Future of Technology"
         />
 
-        <ProcessSec
-          title="How We Approach the Web Design Process"
-          description="As a top website design companies in Jaipur, India, experts in providing cutting-edge web design services in Jaipur, India. We follow a systematic design process to ensure every website we create is not only visually stunning but also highly functional and aligned with the user’s business goals. Here’s how we approach every project"
-          processSlides={Process}
-        />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Approach the Web Design Process
+              </h2>
+              <p className="text-base font-normal mt-2">
+                As a top website design companies in Jaipur, India, experts in providing cutting-edge web design services in Jaipur, India. We follow a systematic design process to ensure every website we create is not only visually stunning but also highly functional and aligned with the user’s business goals. Here’s how we approach every project
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
         <TechStack
+          customTechData={null}
           title="Technologies We Use for Website Design"
           description="Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use"
         />
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -495,4 +523,19 @@ export default function Mobile(props: any) {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

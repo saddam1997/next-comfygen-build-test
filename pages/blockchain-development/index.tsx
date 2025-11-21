@@ -11,22 +11,22 @@ import {
   IconNetwork,
   IconTrendingUp,
 } from "@tabler/icons-react";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import ProcessSec from "../componentsnew/ProcessSec";
-import TechStack from "../componentsnew/TechStack";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import Faq from "../componentsnew/Faq";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import ClientTestimonials from "../components/ClientTestimonials";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import BlockchainIcon from "../componentsnew/BlockchainIcon";
-import IndustriesServe from "../components/IndustriesServe";
-import Slider from "../components/Slider";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import BlockchainIcon from "../Newcomponet/SectionCompoent/BlockchainIcon";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 const GuidSectionBlockchain = dynamic(
   () => import("./components/GuidSectionBlockchain"),
@@ -793,8 +793,8 @@ export default function Blockchain(props) {
           name="keywords"
           content="blockchain development company, blockchain development services, blockchain app development services, blockchain development solutions, blockchain development service, blockchain software development company, blockchain software development services, custom blockchain development company, blockchain development services company"
         />
-     
-       
+
+
 
         <meta
           property="og:title"
@@ -915,11 +915,18 @@ export default function Blockchain(props) {
           linkText="Explore More"
         />
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Blockchain Development Services"
-          description="At Comfygen, we specialize in delivering next-generation blockchain development services that empower startups, enterprises, and institutions to build secure, transparent, and scalable digital ecosystems. Our team combines deep technical expertise with a future-focused mindset to create decentralized solutions that align with your business objectives and drive growth."
-        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we specialize in delivering next-generation blockchain development services that empower startups, enterprises, and institutions to build secure, transparent, and scalable digital ecosystems. Our team combines deep technical expertise with a future-focused mindset to create decentralized solutions that align with your business objectives and drive growth.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -956,7 +963,7 @@ export default function Blockchain(props) {
           </div>
         </section>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <BlockchainIcon
           heading="Explore Our Leading Blockchain Development Platforms"
@@ -972,28 +979,26 @@ export default function Blockchain(props) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSec
-          title="Our Step-by-Step Blockchain Development Process"
-          description="Our blockchain development process is thoughtfully crafted to guide businesses from ideation to full-scale deployment. At Comfygen, we follow a strategic, agile, and customized approach to deliver secure, scalable, and future-ready blockchain applications tailored to your business goals."
-          processSlides={Process}
-        />
-
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Blockchain Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               Our blockchain development process is thoughtfully crafted to guide businesses from ideation to full-scale deployment. At Comfygen, we follow a strategic, agile, and customized approach to deliver secure, scalable, and future-ready blockchain applications tailored to your business goals.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Artificial Intelligence Success Stories"
             description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
           />
         </section>
-
-
-        {/* <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Blockchain Based Portfolio"
-          description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
-        /> */}
 
         <LatestTechnology
           heading="Blockchain Development Trends We Follow"

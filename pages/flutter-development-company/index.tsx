@@ -4,22 +4,26 @@ import Head from "next/head";
 
 import JSON_DATA from "./json/flutter.json";
 import LazyLoad from "react-lazy-load";
+import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import Header from "../componentsnew/Header";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import CallToAction from "../componentsnew/CallToAction";
-import Faq from "../componentsnew/Faq";
-import InfoSectionLeft from "../componentsnew/InfoSectionLeft";
-import InfoSectionRight from "../componentsnew/InfoSectionRight";
-import HeadingSec from "../componentsnew/headingSec";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import HeadingSec from "../Newcomponet/SectionCompoent/headingSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 
-export default function MultiChain(props) {
+
+// import ContactFromCenter from "../componentsnew/ContactFromCenter";
+
+
+
+
+export default function MultiChain(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -99,44 +103,66 @@ export default function MultiChain(props) {
           bgImage="https://www.comfygen.com/herosection/flutter-app-dev-hero-img.webp"
         />
         <AboutSection
-          title="About Company"
+          title=""
           heading="Unlock New Business Potential with Cutting-Edge Flutter Solutions"
           description1="We Provide end-to-end Flutter app development services, including business idea generation, development, deployment, and support. Also we provide complete UI/UX design, programming, testing, and maintenance services for Flutter apps. Our team of skilled Flutter developers has experience building cross-platform digital experiences that work flawlessly on a variety of devices. Whether you require a Flutter online application or a Flutter mobile application, our developers can provide custom solutions to satisfy your needs. Hire one of our talented Flutter programmers to realize your vision for a digital product and deliver top-notch user experiences."
           imageSrc="https://www.comfygen.com/gallery/about-images/flutter-development-company-about-us-img.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Flutter Development Service"
-          description="We Provide end-to-end Flutter app development services, including business idea generation, development, deployment, and support."
-        />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Flutter Development Service
+              </h2>
+              <p className="text-base text-center font-normal">We Provide end-to-end Flutter app development services, including business idea generation, development, deployment, and support.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <HeadingSec
           title="Why We're India's Premier Flutter App Development Company"
           description="With our Flutter mobile app development services, you can create a multi-platform presence. From discovering the best product-market fit to smoothly deploying your application across multiple platforms, our Flutter developers can help you design, develop, test, and launch full-featured Flutter applications."
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Cost of Flutter App Development"
           description1="We develop Flutter apps with native performance and flexible UI designs that are highly interactive and functional. With our Flutter app development expertise, we can turn your idea into a profitable and fully-fledged app. Our team has vast Flutter architecture experience and builds apps with interactive UI, high performance, and agile deployment."
+          description2=""
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/cost-of-flutter-app-development-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="left"
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Flutter App Migration Services"
           description1="You can migrate your Android and iOS app development to Flutter with our help. Taking your existing application across platforms and operating systems is one of our specialties. Our team of Flutter Android app development and deployment experts can help you. For platform-agnostic apps, we are the Flutter app development company the world trusts."
+          description2=""
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
+          imagePosition="right"
           link="/contact-us"
           linkText="Lets Discuss"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Flutter Consulting Services"
           description1="In terms of framework maturity and use cases, Flutter app development has come a long way since its inception. Providing you with assistance in validating your Flutter app idea and ensuring that the framework is the best technical solution for your product idea is our goal."
+          description2=""
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <HireDeveloper
           heading="Benefits of hire Flutter developer"
           text="The Flutter iOS app development services we provide are built on the framework's best features.With the SDK, we provide a native end-user experience, expressiveness, flexible UI, and lightning-fast load speed of 60ms Make your application the symbol of excellence across all platforms with FPS."
@@ -168,7 +194,7 @@ export default function MultiChain(props) {
           faqData={JSON_DATA.Frequently}
           title="Flutter App Development Services"
         />
-       
+
       </div>
     </>
   );

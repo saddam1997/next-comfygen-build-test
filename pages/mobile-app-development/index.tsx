@@ -24,23 +24,22 @@ import {
   IconShield,
 } from "@tabler/icons-react";
 
-import ServicesSec from "../componentsnew/ServicesSec";
-import SolutionSec from "../componentsnew/SolutionSec";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import ProcessSec from "../componentsnew/ProcessSec";
-import TechStack from "../componentsnew/TechStack";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import Faq from "../components/Faq";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Sponser from "../Newcomponet/comman/Sponser";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Solution from "../Newcomponet/SectionCompoent/Solution";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-import AboutSection from "../componentsnew/AboutSection";
-import Header from "../componentsnew/Header";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import MobileHero from "./components/MobileHero";
-import IndustriesForm from "./components/Industries";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -178,7 +177,7 @@ const faqSchema = {
 };
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -541,21 +540,25 @@ export default function Mobile(props: any) {
         </LazyLoad>
       </div>
 
-      <div className="">
-        <MobileHero
-          heading="Top Mobile App Development Company in Jaipur, India"
-          ptag="Comfygen is a trusted mobile app development company in Jaipur, India, delivering custom Android, iOS, and cross-platform apps for startups and enterprises. Our expert mobile app developers build scalable, secure, and user-friendly mobile applications that boost engagement and business growth. We turn your ideas into high-performing digital products from start to finish."
-          bgImage="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-hero.webp"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-        />
-        <ContactFromCenter />
-
-        <IndustriesForm />
+      <div className="overflow-hidden lg:pt-[10px]">
+        <div className="">
+          <HeroSectionForAllPages
+            heading="Top Mobile App Development Company in Jaipur, India"
+            ptag="Comfygen is a trusted mobile app development company in Jaipur, India, delivering custom Android, iOS, and cross-platform apps for startups and enterprises. Our expert mobile app developers build scalable, secure, and user-friendly mobile applications that boost engagement and business growth. We turn your ideas into high-performing digital products from start to finish."
+            li=""
+            li1=""
+            li2=""
+            li3=""
+            bgImage="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-hero.webp"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+          />
+        </div>
+        <Sponser />
 
         <AboutSection
           title=""
@@ -567,26 +570,33 @@ export default function Mobile(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Take your Business to the next level with Our Cutting-Edge Custom Mobile App Development Services"
-          description="We offer a full suite of custom mobile app development services tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality mobile application development solutions for every platform."
-        />
-        <SolutionSec
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Take your Business to the next level with Our Cutting-Edge Custom Mobile App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We offer a full suite of custom mobile app development services tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality mobile application development solutions for every platform.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <Solution
           heading="Get More Customers With Comfygen’s Custom Mobile App Development"
           subheading="The applications we develop are powerful and user-friendly, tailored to the needs of your industry. Whether you're a startup or an established brand, our custom mobile app development solutions help you attract more users, boost engagement, and grow your business."
           techData={technologyData}
         />
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Portfolio of Successful Mobile App Projects"
             description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
           />
         </section>
-
-
 
         <LatestTechnology
           heading="Emerging Technologies We Leverage For Mobile Application Development"
@@ -594,17 +604,29 @@ export default function Mobile(props: any) {
           techData={latesttech}
         />
 
-        <ProcessSec
-          title=" End-to-End Mobile App Development Process"
-          description="  As a reliable mobile application development company in Jaipur. Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs."
-          processSlides={Process}
-        />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End Mobile App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                As a reliable mobile application development company in Jaipur. Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
         <TechStack
+          customTechData={null}
           title="Full Stack Technology for Agile Mobile App Development"
           description="The full-stack technology we use encompasses the front end, back end, database, DevOps, and quality assurance to develop agile, high-performance mobile apps. Your business needs will be met by seamless, scalable, and reliable app solutions."
         />
 
-        <IndustriesServe />
+        <IndustriesServe
+          heading={null}
+          description={null}
+        />
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

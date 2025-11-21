@@ -3,33 +3,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stellar.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import LatestTechnology from "../components/LatestTechnology";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Process = [
   {
@@ -96,80 +83,12 @@ const technologyData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a cutting-edge cryptocurrency built on its own dedicated blockchain, setting a new standard beyond traditional tokens. Engineered with a powerful ‘Four Square’ architecture, it excels in speed, mining efficiency, seamless integration, and predictable scalability. Designed for real-world applications, NASDAC Coin surpasses Bitcoin in performance, security, and adaptability, making it the first true SUPER COIN built for the future of blockchain commerce.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is revolutionizing energy commerce by redefining LPG and CNG distribution through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders, enhancing both safety and efficiency. Its logistics arm, Spatch, optimizes the supply chain and distribution network, ensuring seamless energy delivery. Powered by blockchain technology, Mezovest guarantees transparency, security, and operational efficiency, setting new standards in the energy sector.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay redefines global transactions with its instant, zero-fee decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). Designed for seamless and secure peer-to-peer transfers, it delivers efficient digital payments without intermediaries. The intuitive YatriPay Mobile App simplifies onboarding, enabling users worldwide to experience borderless, frictionless transactions anytime, anywhere.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the world’s first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, delivering unmatched stability and value growth. Unlike fiat currency, it harnesses blockchain technology to ensure security, transparency, and decentralized governance. Croston facilitates secure transactions and controlled coin issuance while offering convenient purchasing options via credit card, exchanges, or crypto. As a gold-backed digital asset, Croston is reshaping secure investments and powering a decentralized marketplace with cutting-edge blockchain solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-  ],
-};
 
 
 export default function Ecommerce(props) {
   let { initialData } = props;
-  let {
-    LaunchSteps,
-    Hire,
-    myList,
-    LatestTechno,
-    myList3,
-    Major,
-    Service,
-    TecnologisStack,
-  } = JSON_DATA;
+
+
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
     setTalkToExpertModal(true);
@@ -571,11 +490,21 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Stellar Blockchain Development Services"
-          description="Comfygen, Best Ai stellet blockchain development company, we deliver end-to-end Stellar Blockchain Development Services enhanced with AI, Generative AI, and Agentic AI solutions to build next-generation decentralized applications. From Stellar wallet development to token creation, stablecoin integration, and DeFi platforms, we craft secure, scalable, and intelligent solutions tailored for fintech, banking, and global enterprises. "
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Stellar Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen, Best Ai stellet blockchain development company, we deliver end-to-end Stellar Blockchain Development Services enhanced with AI, Generative AI, and Agentic AI solutions to build next-generation decentralized applications. From Stellar wallet development to token creation, stablecoin integration, and DeFi platforms, we craft secure, scalable, and intelligent solutions tailored for fintech, banking, and global enterprises. </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <LatestTechnology
           heading="AI Solutions in Stellar Blockchain Development"
           techData={technologyData}
@@ -587,7 +516,7 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <ContactFromCenter />
+
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -600,11 +529,16 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Stellar Blockchain Based Portfolio"
-          description="Explore our portfolio of successful projects built on the Stellar Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Stellar Blockchain Based Portfolio"
+            description="Explore our portfolio of successful projects built on the Stellar Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
+          />
+        </section>
+
+
+
         <IndustriesServe
           heading="Industries we serve as a Stellar Blockchain development company "
           description="As a leading Stellar Blockchain Development Company, we provide innovative and tailored solutions across diverse industries, helping businesses thrive with Stellar Blockchain Development Services in India that ensure cutting-edge technology and seamless integrations."

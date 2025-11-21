@@ -3,20 +3,19 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multichainblockchain.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import TechStack from "../components/TechStack";
-import Faq from "../components/Faq";
-import SolutionSec from "../components/SolutionSec";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import HireDeveloper from "../components/HireDeveloper";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -136,71 +135,9 @@ export default function MultiChain(props) {
 
 
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, setting it apart from traditional tokens. Built on a powerful 'Four Square' architecture, it focuses on speed, mining benefits, seamless integration, and predictable growth. Designed for business, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and consistent value growth. Unlike fiat currency, it utilizes blockchain technology to provide enhanced security, transparency, and decentralized control. Croston enables secure transactions and regulated coin issuance while offering convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and drives a decentralized marketplace with standardized blockchain development solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes supply chain and distribution, ensuring a smooth and efficient flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and seamless operations, redefining the energy sector.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
 
-    ],
-  };
 
   const jsonLdData = [
-    
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -533,28 +470,7 @@ export default function MultiChain(props) {
 
       </Head>
       <BlockchainNav />
-      <div className="overflow-hidden">
-        {/* <div className=" ">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/multichain-blockchain-bevelopment-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="MultiChain Blockchain Development Company"
-                ptag="Comfygen is a trusted MultiChain Blockchain Development Company, delivering reliable applications with advanced features like permissions, data streams, and ready-to-deploy options. Our MultiChain solutions enable organizations to build and launch blockchain applications quickly and efficiently."
-                li="Robust Permissioned Access"
-                li1="Real-Time Data Streams"
-                li2="Rapid Deployment Options"
-                li3="Fast, Efficient Blockchain Solutions"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
-
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Best MultiChain Blockchain Development Company"
           ptag="Comfygen is the leading MultiChain Blockchain Development Company delivering AI-driven blockchain solutions for enterprises. We specialize in developing safe, secure, scalable, and high-performance MultiChain networks, smart contracts, tokenization, and automated workflows. Our AI-powered analytics enable predictive insights, intelligent transaction monitoring, and data-driven decision-making on the blockchain."
@@ -585,14 +501,23 @@ export default function MultiChain(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our MultiChain & AI Blockchain Development Services"
-          description="Comfygen offers top-tier MultiChain Blockchain Development Services, combining the power of MultiChain and AI to deliver secure, scalable, and high-performance blockchain solutions. We specialize in building private and permissioned blockchain development solutions tailored for enterprises, enabling seamless integration, real-time transaction processing, and intelligent automation. Our AI-enhanced approach ensures predictive analytics, smart contract optimization, and data-driven decision-making to help businesses innovate and stay ahead in the competitive market."
-          description1=""
-        />
 
-        <ContactFromCenter />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our MultiChain & AI Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen offers top-tier MultiChain Blockchain Development Services, combining the power of MultiChain and AI to deliver secure, scalable, and high-performance blockchain solutions. We specialize in building private and permissioned blockchain development solutions tailored for enterprises, enabling seamless integration, real-time transaction processing, and intelligent automation. Our AI-enhanced approach ensures predictive analytics, smart contract optimization, and data-driven decision-making to help businesses innovate and stay ahead in the competitive market.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -606,11 +531,16 @@ export default function MultiChain(props) {
           subheading="Comfygen, a leading <a class='text-blue-500 underline' href='https://www.comfygen.com/crypto-token-development-company' > token Development company</a> , helps create tokens with a recognized framework of Tron, Ethereum, and Ripple for participants to effectively manage their digital assets."
           techData={technologyData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our MultiChain Blockchain Based Portfolio"
-          description="Explore our portfolio of successful projects built on the MultiChain Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Portfolio of Successful Mobile App Projects"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
+
         <CallToAction
           heading="Ready to Launch Your MultiChain Blockchain Development Solution?"
           text="Comfygen, the leading MultiChain Blockchain Development Company, to build secure, scalable, and AI-powered blockchain solutions tailored for your business. "

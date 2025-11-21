@@ -108,6 +108,38 @@
       "desc": "After you confirm the project proposal and budget plan, we can initiate your Polygon blockchain development project. We assemble the best experts for Polygon development projects based on their experience in catering to similar projects. You should remember that we would communicate with you frequently regarding the progress of your project. It can help us incorporate your feedback into the project to achieve better results according to your specifications."
     }
   ],
+
+  "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a cutting-edge cryptocurrency built on its dedicated Polygon Blockchain, which sets it apart from traditional tokens. Powered by a robust 'Four Square' architecture, it delivers exceptional speed, enhanced mining benefits, seamless integration, and predictable growth. Designed for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin—positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring long-term stability and value appreciation. Unlike fiat currency, it harnesses the power of blockchain technology for enhanced security, transparency, and decentralized governance. Croston enables secure transactions and controlled coin issuance while offering seamless purchasing options via credit card, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and fuels a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "#"
+    },
+     {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is revolutionizing commerce in the energy sector, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Operating under Mezo Energy Trading Limited (METL), it enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes supply and distribution, ensuring a seamless flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and efficiency, redefining energy trade and logistics.",
+      "link": "#"
+    }
+    
+    
+  ],
+
+
+
   "pageData": {
     "title": " Why Choose Comfygen for Expert Polygon Blockchain Development Services?",
     "description": "Polygon is undoubtedly a formidable emerging force in the domain of blockchain and Web3 solutions. At Comfygen, a leading Polygon Blockchain Development Company, we strive to offer excellence in Polygon NFT marketplace development, dApp development, chain development, wallet development, and other Polygon development services. Over the years, we have refined our perspectives on blockchain technology and its potential through continuous learning and the professional development of our expert team. As a trusted Polygon Blockchain Development Agency, we stand out as a leader in Polygon development, offering additional value advantages.",

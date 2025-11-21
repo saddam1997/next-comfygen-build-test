@@ -3,56 +3,56 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 // Lazy load all major components
-import Header from "./components/Header";
-import HeroSectionHomePage from "./components/HeroSectionHomePage";
-import AboutSection from "./components/AboutSection";
+import Header from "./Newcomponet/layout/Header";
+import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
+import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
-import Slider from "./components/Slider";
-const ServicesSec = dynamic(() => import("./components/ServicesSec"), {
+import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
+const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
 });
 
 
-const CallToAction = dynamic(() => import("./components/CallToAction"), {
+const CallToAction = dynamic(() => import("./Newcomponet/SectionCompoent/CallToAction"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
 });
-const IndustriesServe = dynamic(() => import("./components/IndustriesServe"), {
+const IndustriesServe = dynamic(() => import("./Newcomponet/SectionCompoent/IndustriesServe"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const ProcessSec = dynamic(() => import("./components/ProcessSec"), {
+const ProcessSec = dynamic(() => import("./Newcomponet/SectionCompoent/ProcessSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const TechStack = dynamic(() => import("./components/TechStack"), {
+const TechStack = dynamic(() => import("./Newcomponet/SectionCompoent/TechStack"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const WhyChoose = dynamic(() => import("./components/WhyChooseUs"), {
+const WhyChoose = dynamic(() => import("./Newcomponet/SectionCompoent/WhyChooseUs"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const HireDeveloper = dynamic(() => import("./components/HireDeveloper"), {
+const HireDeveloper = dynamic(() => import("./Newcomponet/SectionCompoent/HireDeveloper"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const ClientTestimonials = dynamic(() => import("./components/ClientTestimonials"), {
+const ClientTestimonials = dynamic(() => import("./Newcomponet/SectionCompoent/ClientTestimonials"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-const Faq = dynamic(() => import("./components/Faq"), {
+const Faq = dynamic(() => import("./Newcomponet/SectionCompoent/Faq"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, 
+  ssr: true,
 });
 
-export default function Home(props:any) {
+export default function Home(props: any) {
 
   let { initialData } = props;
   const [typedText] = useState("");
@@ -357,6 +357,7 @@ export default function Home(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -372,7 +373,7 @@ export default function Home(props:any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfoliodata}
             heading="Explore Our Web & App Development Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
@@ -407,6 +408,7 @@ export default function Home(props:any) {
         </section>
 
         <TechStack
+          customTechData={null}
           title="Our Edgy Tech-Stacks Use for Development"
           description="The only focus is not the engagement, but building a highly-secured and robust web or application. For strong development, some edgy tech stacks are being used."
         />
@@ -452,7 +454,7 @@ export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   if (!resData.ok) {
     // console.error("API Request failed:", await resData);
-      return { props: { initialData: [] } };
+    return { props: { initialData: [] } };
   }
   // console.log(resData)
   const data = await resData.json();

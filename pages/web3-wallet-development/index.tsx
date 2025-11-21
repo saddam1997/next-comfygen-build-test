@@ -1,34 +1,20 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./web3-wallet-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import CallToAction from "../componentsnew/CallToAction";
-import SolutionSec from "../componentsnew/SolutionSec";
-
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 const Process = [
@@ -146,6 +132,271 @@ const technologyData = [
 
 ];
 
+
+const defaultTechData = {
+  "backend": [
+    {
+      img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+      alt: "Nodejs",
+      name: "Nodejs",
+      num: "1",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+      alt: "Javascript",
+      name: "javascript",
+      num: "2",
+    },
+    {
+      img: "https://www.comfygen.com/image/next-js-icon.svg",
+      alt: "Express js",
+      name: "Express js",
+      num: "3",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg",
+      alt: "Sails js",
+      name: "Sails js",
+      num: "4",
+    },
+    {
+      img: "https://www.comfygen.com/image/next-js-icon.svg",
+      alt: "Next js",
+      name: "Next js",
+      num: "5",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+      alt: "Django",
+      name: "Django",
+      num: "6",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+      alt: "Python",
+      name: "Python",
+      num: "7",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/php-icon.svg",
+      alt: "PHP",
+      name: "PHP",
+      num: "8",
+    },
+  ],
+  "frontend": [
+    {
+      img: "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+      alt: "Html5",
+      name: "html5",
+      num: "1",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+      alt: "Css3",
+      name: "css3",
+      num: "2",
+    },
+    {
+      img: "https://www.comfygen.com/image/next-js-icon.svg",
+      alt: "Nextjs",
+      name: "nextjs",
+      num: "3",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/react-original.svg",
+      alt: "React",
+      name: "react js",
+      num: "4",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
+      alt: "Tailwindcss",
+      name: "tailwindcss",
+      num: "5",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+      alt: "Angularjs",
+      name: "angular js",
+      num: "6",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+      alt: "Javascript",
+      name: "javascript",
+      num: "7",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+      alt: "Typescript",
+      name: "typescript",
+      num: "8",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg",
+      alt: "Bootstrap",
+      name: "bootstrap",
+      num: "9",
+    },
+  ],
+  "mobile": [
+    {
+      img: "https://www.comfygen.com/media/svg/tech/android-plain.svg",
+      alt: "Android Plan",
+      name: "android",
+      num: "1",
+    },
+    {
+      img: "https://www.comfygen.com/image/ios-apple.svg",
+      alt: "Apple",
+      name: "IOS Apple",
+      num: "2",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/react-original.svg",
+      alt: "React",
+      name: "react native",
+      num: "3",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/flutter-plain.svg",
+      alt: "Flutter",
+      name: "flutter",
+      num: "4",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/dart-original.svg",
+      alt: "Dart",
+      name: "dart",
+      num: "5",
+    },
+    {
+      img: "https://www.comfygen.com/image/unity-stack-icon.svg",
+      alt: "Unity",
+      name: "unity",
+      num: "6",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+      alt: "Typescript",
+      name: "typescript",
+      num: "7",
+    },
+  ],
+  "design": [
+    {
+      img: "https://www.comfygen.com/media/svg/tech/figma.svg",
+      alt: "Figma",
+      name: "figma",
+      num: "1",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/photoshop.svg",
+      alt: "Photoshop",
+      name: "photoshop",
+      num: "2",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/abdobe-illustrator.svg",
+      alt: "Abdobe Illustrator",
+      name: " illustrator",
+      num: "3",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/abdobe-xd.svg",
+      alt: "Abdobe Xd",
+      name: "abdobe xd",
+      num: "4",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/skech.svg",
+      alt: "Skech",
+      name: "skech",
+      num: "5",
+    },
+    {
+      img: "https://www.comfygen.com/media/svg/tech/after-effect.svg",
+      alt: "After Effect",
+      name: "after effect",
+      num: "6",
+    },
+  ],
+  "crypto": [
+    {
+      img: "https://www.comfygen.com/img/stackimg/binance.svg",
+      alt: "Binance",
+      name: "Binance",
+      num: "1",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/cardano.svg",
+      alt: "Cardano",
+      name: "Cardano ",
+      num: "2",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/coinbase.svg",
+      alt: "Coinbase",
+      name: "coinbase",
+      num: "3",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/eos.svg",
+      alt: "EOS",
+      name: "EOS",
+      num: "4",
+    },
+    {
+      img: "https://www.comfygen.com/image/ethereum-stack-icon.svg",
+      alt: "Ethereum",
+      name: "Ethereum",
+      num: "5",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/ethers-js.svg",
+      alt: "Ethersjs",
+      name: "Ethers JS",
+      num: "6",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/walletconnect.svg",
+      alt: "Walletconnect",
+      name: "walletconnect",
+      num: "7",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/trust-wallet.svg",
+      alt: "Trust Wallet",
+      name: "trust wallet ",
+      num: "8",
+    },
+    {
+      img: "https://www.comfygen.com/image/solana-stack-icon.svg",
+      alt: "Solona",
+      name: "Solana",
+      num: "9",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/polygon.svg",
+      alt: "Polygon",
+      name: "Polygon",
+      num: "10",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/polkadot.svg",
+      alt: "Polkadot",
+      name: "polkadot",
+      num: "11",
+    },
+    {
+      img: "https://www.comfygen.com/img/stackimg/metamask.svg",
+      alt: "Metamask",
+      name: "metamask",
+      num: "12",
+    },
+  ],
+};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -366,6 +617,8 @@ export default function ClinicalApp(props: any) {
     }
   ];
 
+
+
   return (
     <>
       <Head>
@@ -570,7 +823,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfoliodata}
             heading="Portfolio of Wallet Development Services"
             description="Comfygen is a top-rated wallet development company that develops secure, scalable, and high-performance Web3 wallets that cater to various industries. Our portfolio highlights a custom crypto wallet development solution."
@@ -583,7 +836,9 @@ export default function ClinicalApp(props: any) {
           subheading="Comfygen offers a diverse range of Web3 wallet development solutions designed to meet the unique needs of modern decentralized ecosystems. Our Web3 wallets are built with advanced security protocols, seamless UI/UX, and interoperability across multiple blockchains. Whether you’re a startup, enterprise, or DeFi platform, our wallets ensure flexibility, scalability, and complete control over digital assets."
           techData={technologyData}
         />
-        <NewTeckStack
+
+        <TechStack
+          customTechData={defaultTechData}
           title="Tech Stack We Use for Web3 Wallet Development"
           description="Comfygen top a top-rated Web3 wallet development company, we leverage an advanced Web3 technology stack to build secure, scalable, and high-performing decentralized wallet solutions. Our development process integrates the latest tools and frameworks to ensure interoperability, speed, and user-centric design. Each layer of our tech stack is optimized for blockchain efficiency, data integrity, and next-gen digital asset management."
         />

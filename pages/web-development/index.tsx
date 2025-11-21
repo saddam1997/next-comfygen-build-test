@@ -5,30 +5,27 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/webdevelopment.json";
 import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import ProcessSec from "../components/ProcessSec";
-import TechStack from "../components/TechStack";
-import IndustriesServe from "../components/IndustriesServe";
-import ServicesSec from "../components/ServicesSec";
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../components/PortfolioSec";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import Script from "next/script";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+// const ContactFromCenter = dynamic(
+//   () => import("../components/ContactFromCenter"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
 
 
 const Processs = [
@@ -61,49 +58,32 @@ const Processs = [
     description: "Our commitment to your success doesn’t end with the launch. We offer ongoing support and maintenance to keep your website running smoothly. From regular updates and backups to performance monitoring and issue resolution, we ensure your website remains secure, up-to-date, and fully functional."
   },
 ];
-const techDataForPage1 = {
-  All: [
+
+  const portfoliodata = [
     {
-      img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-      head: "Aria Coin Cryptocurrency",
-      name: "Welcome to ARIA Currency, where the future of transactions meets seamless empowerment. Join us as we rewrite the rules of digital currency, making security, accessibility, and efficiency our currency of trust.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
+      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+      "title": "Aria Coin Cryptocurrency",
+      "description": "Welcome to ARIA Currency, where the future of transactions meets seamless empowerment. Join us as we rewrite the rules of digital currency, making security, accessibility, and efficiency our currency of trust.",
+      "link": "#"
     },
     {
-      img: "https://www.comfygen.com/img/token-development.webp",
-      head: "Bitlearn Web",
-      name: "Join Bit Learn Web - Where Blockchain Fuels Fairness, Rewards Fuel Ambition, and Community Fuels Success. Embrace the Future of Network Marketing, Redefined.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
+      "image": "https://www.comfygen.com/img/token-development.webp",
+      "title": "Bitlearn Web",
+      "description": "Join Bit Learn Web - Where Blockchain Fuels Fairness, Rewards Fuel Ambition, and Community Fuels Success. Embrace the Future of Network Marketing, Redefined.",
+      "link": "#"
     },
-    {
-      img: "https://www.comfygen.com/img/news-portfolio-footer-img.webp",
-      head: "News Application",
-      name: "Discover a new era of news with our cutting-edge News Application. Stay informed with real-time updates, personalized feeds, and multimedia content at your fingertips. Never miss a beat with breaking news notifications. Download now for a seamless, immersive news experience.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+     {
+      "image": "https://www.comfygen.com/img/news-portfolio-footer-img.webp",
+      "title": "News Application",
+      "description": "Discover a new era of news with our cutting-edge News Application. Stay informed with real-time updates, personalized feeds, and multimedia content at your fingertips. Never miss a beat with breaking news notifications. Download now for a seamless, immersive news experience.",
+      "link": "#"
+    },
+   
+  ]
+
+
+
+
 export default function Webdevelopment(props) {
   let { initialData } = props;
   let {
@@ -237,26 +217,24 @@ export default function Webdevelopment(props) {
       </LazyLoad>
       <div className="overflow-hidden">
         <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/website-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Web Development Services in Jaipur"
-                ptag="Our web design and development services will empower your business in the digital world by creating professional, visually appealing websites. As a trusted website development company in Jaipur India, we combine innovation with expertise to deliver customized web solutions tailored to your business needs."
-                ptag1="Our team leverages the latest technologies and modern trends to craft websites that engage your audience and drive measurable results. Whether you want to expand your reach, enhance customer engagement, or strengthen your online presence, Comfygen is your partner in digital growth."
-                li="Custom Website Solutions"
-                li1="Tech-Driven, Trend-Focused Designs"
-                li2="Affordable and Transparent Pricing"
-                li3="Dedicated to Your Business Success"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
+          <HeroSectionForAllPages
+            heading="Web Development Services in Jaipur"
+            ptag="Our web design and development services will empower your business in the digital world by creating professional, visually appealing websites. As a trusted website development company in Jaipur India, we combine innovation with expertise to deliver customized web solutions tailored to your business needs."
+            ptag1="Our team leverages the latest technologies and modern trends to craft websites that engage your audience and drive measurable results. Whether you want to expand your reach, enhance customer engagement, or strengthen your online presence, Comfygen is your partner in digital growth."
+            li="Custom Website Solutions"
+            li1="Tech-Driven, Trend-Focused Designs"
+            li2="Affordable and Transparent Pricing"
+            li3="Dedicated to Your Business Success"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage={'https://www.comfygen.com/herosection/website-development-company-hero-img.webp'}
+          />
         </div>
+
         <AboutSection
           title="About Company"
           heading="Affordable Website Development Company in Jaipur, India"
@@ -272,7 +250,7 @@ export default function Webdevelopment(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -284,6 +262,7 @@ export default function Webdevelopment(props) {
             </div>
           </div>
         </section>
+
         <TechStack
           title="Technologies We Use for Website Development"
           description="Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use"
@@ -298,9 +277,10 @@ export default function Webdevelopment(props) {
         />
         <IndustriesServe
           heading="Web Development Services in Jaipur For Various Industries"
+          description=""
           sliderData={JSON_DATA.customSliderData}
         />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
         <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
@@ -321,11 +301,15 @@ export default function Webdevelopment(props) {
             <ProcessSec processSlides={Processs} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Website Development Portfolio"
-          description="Explore our collection of successfully delivered website development projects that showcase our expertise in crafting dynamic, responsive, and user-friendly websites. Each project highlights our commitment to innovation, technical excellence, and client satisfaction."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={portfoliodata}
+            heading="Website Development Portfolio"
+            description="Explore our collection of successfully delivered website development projects that showcase our expertise in crafting dynamic, responsive, and user-friendly websites. Each project highlights our commitment to innovation, technical excellence, and client satisfaction."
+          />
+        </section>
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -347,4 +331,19 @@ export default function Webdevelopment(props) {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

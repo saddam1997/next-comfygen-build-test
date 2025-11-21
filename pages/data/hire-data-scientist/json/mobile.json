@@ -189,6 +189,62 @@
         "desc": "Our social media app developer team also pays attention to integration of privacy controls in your social apps. The privacy controls involve stronger authentication mechanisms and additional layers of security to ensure safety of users. We understand the importance of privacy and security for enhancing the popularity of social media apps and follow the best practices for safeguarding users."
       }
     ],
+
+
+ "TechData" :{
+    "Data Storage": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg", "alt": "Hadoop", "name": "Hadoop", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg", "alt": "Amazon S3 ", "name": "Amazon S3 ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg", "alt": "Microsoft Azure Data Lake", "name": "Microsoft Azure Data Lake ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "4" }
+    ],
+    "Data Processing": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg", "alt": "Apache Spark", "name": "Apache Spark ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg", "alt": "Talend", "name": "Talend ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg", "alt": "Informatica PowerCenter", "name": "Informatica PowerCenter ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg", "alt": "Apache NiFi", "name": " Apache NiFi", "num": "4" }
+    ],
+    "Machine Learning/AI": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg", "alt": "TenserFlow", "name": "TenserFlow ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg", "alt": "Scikit-Learn", "name": "Scikit-Learn ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg", "alt": "PyTorch", "name": "PyTorch ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg", "alt": "Microsoft Azure Machine Learning", "name": "Microsoft Azure Machine Learning", "num": "4" }
+    ],
+    "Visualization Tools ": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg", "alt": "Tableau", "name": "Tableau", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg", "alt": "Power BI", "name": "Power BI", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg", "alt": "Looker", "name": "Looker ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg", "alt": "QlikView", "name": "QlikView", "num": "4" }
+    ],
+    "Database Management":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg", "alt": "MySQL", "name": "MySQL", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg", "alt": "PostgreSQL", "name": "PostgreSQL", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg", "alt": "MongoDB", "name": "MongoDB", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg", "alt": "Oracle Database", "name": "Oracle Database", "num": "4" }
+    ],
+    "Data Warehousing":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg", "alt": "Amazon Redshift", "name": "Amazon Redshift", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg", "alt": "Snowflake", "name": "Snowflake", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg", "alt": "Microsoft Azure Synapse Analytics", "name": "Microsoft Azure Synapse Analytics", "num": "4" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg", "alt": "SAS", "name": "SAS", "num": "5" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg", "alt": "MATLAB", "name": "MATLAB", "num": "6" }
+    ],
+    "Cloud Platforms":[
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg", "alt": "Amazon Web Services (AWS)", "name": "Amazon Web Services (AWS)", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg", "alt": "Microsoft Azure", "name": "Microsoft Azure", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg", "alt": "Google Cloud Platform (GCP)", "name": "Google Cloud Platform (GCP)", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg", "alt": "IBM Cloud", "name": "IBM Cloud ", "num": "4" }
+    ]
+  },
+ 
+
+
+
+
+
+
+
     "Frequently": [
       {
         "num": "1",

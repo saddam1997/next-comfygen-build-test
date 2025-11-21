@@ -3,28 +3,18 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import Faq from "../../components/Faq";
-import ProcessSec from "../../components/ProcessSec";
-import TechStack from "./components/TeckStack";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ServicesSec from "../../componentsnew/ServicesSec";
-
-
-import Header from "../../components/Header";
-import Slider from "../../components/Slider";
-import IndustriesServe from "../../components/IndustriesServe";
-
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
+import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const FutureDriven2 = [
   {
@@ -530,12 +520,22 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Data Analytics Services to Better Management of Every Business"
-          description="As a leading data analytics service company in India & USA, we deliver end-to-end data analytics services that help businesses unlock real value from their data. From strategic consulting to building scalable infrastructure, we serve as your trusted enterprises data analytics services provider for long-term growth and efficiency. Explore our professional data analytics services:"
-        />
+        {/* <ContactFromCenter /> */}
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Data Analytics Services to Better Management of Every Business
+              </h2>
+              <p className="text-base text-center font-normal">As a leading data analytics service company in India & USA, we deliver end-to-end data analytics services that help businesses unlock real value from their data. From strategic consulting to building scalable infrastructure, we serve as your trusted enterprises data analytics services provider for long-term growth and efficiency. Explore our professional data analytics services</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -574,16 +574,13 @@ export default function Mobile(props) {
           </div>
         </section>
 
-
-
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfolioData}
             heading="Portfolio of Our Data Analytics Projects"
             description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
           />
         </section>
-
 
 
         <section className="bg-[#fff] lg:py-16 py-10">
@@ -640,3 +637,19 @@ export default function Mobile(props) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

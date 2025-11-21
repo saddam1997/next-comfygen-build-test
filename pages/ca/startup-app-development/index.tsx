@@ -17,23 +17,19 @@ import {
   IconWifi,
   IconWorldWww,
 } from "@tabler/icons-react";
-import ContactFromCenter from "../../components/ContactFromCenter";
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ServicesSec from "../../componentsnew/ServicesSec";
-import ConsultancyApproach from "../../componentsnew/ConsultancyApproach";
-import PortfolioSec from "../../componentsnew/PortfolioSec";
-import LatestTechnology from "../../componentsnew/LatestTechnology";
-import ProcessSec from "../../componentsnew/ProcessSec";
 
-import HireDeveloper from "../../componentsnew/HireDeveloper";
-import CallToAction from "../../componentsnew/CallToAction";
-import Faq from "../../componentsnew/Faq";
-import IndustriesServe from "../../components/IndustriesServe";
-const Header = dynamic(() => import("../../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import LatestTechnology from "../../Newcomponet/SectionCompoent/LatestTechnology";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import CallToAction from "../../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org",
@@ -106,36 +102,7 @@ export default function Mobile(props) {
     setTalkToExpertModal(false);
   };
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/footer-fitclub-img.webp",
-        head: "Fitclub",
-        name: "Our team developed Fitclub, a revolutionary fitness app that integrates personalized workout plans with real-time health tracking. Users can set fitness goals, track progress, and receive custom workout recommendations based on their fitness level and preferences. Fitclub has garnered over 100,000 downloads within its first year, receiving rave reviews for its user-friendly interface and effective fitness algorithms.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/ichef-portfolio.webp",
-        head: "iChef",
-        name: "iChef is a cutting-edge culinary app designed to simplify meal planning and cooking for busy professionals. Our developers crafted iChef to include intuitive recipe browsing, automated grocery list generation, and personalized meal recommendations based on dietary preferences. Since its launch, iChef has been featured in top tech publications and has gained a loyal user base of food enthusiasts worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
+
   const Process = [
     {
       title: "Discovery and Planning",
@@ -466,28 +433,7 @@ export default function Mobile(props) {
           <Header />
         </LazyLoad>
       </div>
-      <div className="">
-        {/* <section>
-          <div>
-            <div className=" lg:bg-center bg-no-repeat bg-cover bg-left  bg-[url('https://www.comfygen.com/herosection/startup-mobile-app-dev-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Leading Startup Mobile App Development Company: Innovative & Scalable Solutions"
-                ptag="Comfygen is a leading startup mobile app development company in India, creating scalable, revenue-generating apps with cutting-edge technologies like AR/VR, Blockchain, and Metaverse. Our expert developers deliver innovative, high-performing mobile apps designed to target audiences, drive traction, and outpace competitors. Partner with us to transform your startup ideas into successful digital solutions."
-                li="Transforming Ideas into Scalable Apps"
-                li1="Boosting Startups with Smart App Solutions"
-                li2="10+ Yr Expert developers"
-                li3="Secure your Idea and data"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </section> */}
-
+      <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
           heading="Leading Startup Mobile App Development Company: Innovative & Scalable Solutions"
           ptag="Comfygen is a leading startup mobile app development company in India, creating scalable, revenue-generating apps with cutting-edge technologies like AR/VR, Blockchain, and Metaverse. Our expert developers deliver innovative, high-performing mobile apps designed to target audiences, drive traction, and outpace competitors. Partner with us to transform your startup ideas into successful digital solutions."
@@ -512,36 +458,25 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title=" Our Startup App Development Services"
-          description="We are a renowned mobile app development company for startups to
-                convert your ideology concepts into realistic revenue-generating
-                app solutions. Be it the application to resolve any problem,
-                serve end-users with services, create innovative apps for
-                engagement - We won’t fail delivering end-to-end impeccable app
-                solutions."
-        />
-
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        {/* <ContactFromCenter /> */}
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold"></h2>
-              <p className="text-base text-center font-normal">
-                We are a renowned mobile app development company for startups to
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Startup App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We are a renowned mobile app development company for startups to
                 convert your ideology concepts into realistic revenue-generating
                 app solutions. Be it the application to resolve any problem,
                 serve end-users with services, create innovative apps for
                 engagement - We won’t fail delivering end-to-end impeccable app
-                solutions.
-              </p>
+                solutions.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
-        </section> */}
+        </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -549,41 +484,36 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our StartUp Mobile App Development Portfolio"
-          description="Explore our innovative mobile app projects tailored for startups, showcasing our expertise in delivering cutting-edge solutions. Each project reflects our commitment to creativity, excellence, and helping startups achieve their business goals with impactful app development."
-        />
-        <ContactFromCenter />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our StartUp Mobile App Development Portfolio"
+            description="Explore our innovative mobile app projects tailored for startups, showcasing our expertise in delivering cutting-edge solutions. Each project reflects our commitment to creativity, excellence, and helping startups achieve their business goals with impactful app development."
+          />
+        </section>
+
         <LatestTechnology
           heading="Technologies We Use for Startup App Development Modern Tech Trends We Use"
           subheading="First and foremost, our team of professionals creates excellent apps for startups and makes sure they run incredibly effectively. We ensure perfection at every stage by utilizing the newest tools and techniques."
           techData={technologyData}
         />
-        <ProcessSec
-          title=" Mobile App Development For StartUp Process"
-          description="  Our startup-focused mobile app development process is
-                streamlined to deliver custom solutions that meet unique
-                business needs. From ideation to deployment, we ensure every
-                step is aligned with your goals, offering a seamless experience
-                and impactful results."
-          processSlides={Process}
-        />
 
-        {/* <section className="bg-white lg:py-16 py-10">
+        <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               
-              </h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Mobile App Development For StartUp Process</h2>
               <p className="text-base font-normal mt-2">
-              
+               Our startup-focused mobile app development process is treamlined to deliver custom solutions that meet unique business needs. From ideation to deployment, we ensure every step is aligned with your goals, offering a seamless experience and impactful results.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
-        </section> */}
-        <IndustriesServe />
+        </section>
+
+        <IndustriesServe heading='' description=''/>
+
         <HireDeveloper
           heading="Hire Startup Mobile App Developers"
           text="Building a startup mobile application needs brainstorming and a well-strategic planning to step ahead for the development. Comfygen has the talents to do that. We have got the most innovative and sharp developers of different industries, who have the ideas and experience with cutting-edge technologies to build some flexible and scalable applications. You can trust us being a reliable startup mobile app development company, because our experts have worked on innovative and creative solutions to engage the end-users exceptionally."

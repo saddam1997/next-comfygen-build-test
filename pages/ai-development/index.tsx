@@ -3,30 +3,19 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import NumberCard from "../componentsnew/NumberCard";
-import Slider from "../components/Slider";
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import NumberCard from "../Newcomponet/SectionCompoent/NumberCard";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 const data = [
   {
     num: "01",
@@ -92,7 +81,7 @@ const Process = [
 ];
 
 
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   let { LeadingSoftware } = JSON_DATA;
 
@@ -371,8 +360,6 @@ export default function Mobile(props) {
         <Header />
       </LazyLoad>
       <div className="">
-
-
         <HeroSectionForAllPages
           heading="Enterprise to SEM AI ML Mobile App Development Services In India"
           ptag="Next-Gen AI Solutions for Next-Level Success."
@@ -393,19 +380,28 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="We Offer The Best Artificial Intelligence Software Development
-                Services For Startups"
-          description="Data is used to drive business results through custom AI and
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer The Best Artificial Intelligence Software Development
+                Services For Startups
+              </h2>
+              <p className="text-base text-center font-normal">Data is used to drive business results through custom AI and
                 machine learning software development solutions. As one of the
                 leading custom AI mobile app development solution companies, we
                 transform raw data into actionable insights, facilitating
                 operational efficiency and enhanced decision-making. We offer
                 reliable AI enterprise software development services that can
-                make your vision a reality."
-        />
+                make your vision a reality.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <NumberCard
           heading="Our Technology Stack Use to Develop Best AI Services"
           description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
@@ -436,14 +432,12 @@ export default function Mobile(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Artificial Intelligence Success Stories"
             description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
           />
         </section>
-
-
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

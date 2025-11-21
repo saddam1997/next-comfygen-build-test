@@ -3,15 +3,19 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/substrate.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoosee from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import LatestTechnology from "../components/LatestTechnology";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import {
   IconBriefcase,
   IconCode,
@@ -22,24 +26,7 @@ import {
   IconStar,
   IconUsers,
 } from "@tabler/icons-react";
-import IndustriesServe from "../components/IndustriesServe";
-import HireDeveloper from "../components/HireDeveloper";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
 
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Process = [
   {
     title: "Comprehend the Requirements",
@@ -127,19 +114,9 @@ const SubstrateModel = [
   },
 ];
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  let {
-    Modus,
-    ModusOperandi,
-    LaunchSteps,
-    Hire,
-    myList,
-    LatestTechno,
-    WhyChoose,
-    myList3,
-    TecnologisStack,
-  } = JSON_DATA;
+
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -196,66 +173,7 @@ export default function Ecommerce(props) {
     ],
   };
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is revolutionizing the energy sector, specializing in LPG and CNG through its F.I.T (Finance, Infrastructure, and Technology) model. Via Mezo Energy Trading Limited (METL), it enhances safety with non-corrosive composite gas cylinders, while its logistics arm, Spatch, optimizes supply and distribution. Leveraging blockchain technology, Mezovest ensures transparency, security, and efficiency in energy commerce.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With secure and seamless peer-to-peer transfers, it ensures efficient digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and value growth. Leveraging blockchain technology, it offers transparent, decentralized control and secure transactions. With easy purchasing via credit card, exchange, or crypto, Croston redefines secure investments and powers a decentralized marketplace with advanced blockchain solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Built on a powerful ‘Four Square’ architecture, it ensures speed, mining benefits, seamless integration, and predictable growth. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is designed for businesses, positioning itself as the first true SUPER COIN in the blockchain space.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
+
 
   return (
     <>
@@ -369,18 +287,18 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <BlockchainNav/>
-      <div className="overflow-hidden ">
-    
+      <BlockchainNav />
+      <div className="overflow-hidden lg:pt-[100px]">
+
         <HeroSectionForAllPages
-            heading=" Substrate Blockchain Development Services to Power Your Next-Gen Projects"
-            ptag="No matter how complex your Substrate blockchain requirements are, our Substrate Blockchain Development Company is ready to deliver seamless solutions tailored to your needs. We leverage the Substrate SDK framework's flexibility, modularity, and interoperability, powered by Rust, to build scalable, customized, and future-ready decentralized apps and blockchains. With a proven track record of over 200 digital solutions and 50 blockchain projects, our Expert brings the expertise you need to succeed in the blockchain space & Blockchain Consulting."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
+          heading=" Substrate Blockchain Development Services to Power Your Next-Gen Projects"
+          ptag="No matter how complex your Substrate blockchain requirements are, our Substrate Blockchain Development Company is ready to deliver seamless solutions tailored to your needs. We leverage the Substrate SDK framework's flexibility, modularity, and interoperability, powered by Rust, to build scalable, customized, and future-ready decentralized apps and blockchains. With a proven track record of over 200 digital solutions and 50 blockchain projects, our Expert brings the expertise you need to succeed in the blockchain space & Blockchain Consulting."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/substrate-development-company.webp"
         />
         <AboutSection
@@ -391,7 +309,7 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -404,6 +322,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -420,7 +339,7 @@ export default function Ecommerce(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Our Substrate Blockchain Development Process
+                Our Substrate Blockchain Development Process
               </h2>
               <p className="text-base font-normal mt-2">
                 At Comfygen, we follow a well-defined process to execute
@@ -435,11 +354,15 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Substrate Blockchain Portfolio & Success Stories"
-          description="Explore our accomplished projects in Substrate Development, showcasing our expertise in building scalable, interoperable, and secure blockchain solutions. Each project reflects our commitment to innovation, excellence, and client satisfaction, demonstrating our ability to leverage Substrate for advanced blockchain development."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Substrate Blockchain Portfolio & Success Stories"
+            description="Explore our accomplished projects in Substrate Development, showcasing our expertise in building scalable, interoperable, and secure blockchain solutions. Each project reflects our commitment to innovation, excellence, and client satisfaction, demonstrating our ability to leverage Substrate for advanced blockchain development."
+          />
+        </section>
+
         <IndustriesServe
           heading="Industries We Serve"
           description=""

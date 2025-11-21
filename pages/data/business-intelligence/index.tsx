@@ -1,36 +1,21 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ServicesSec from "../../components/ServicesSec";
-import AboutSection from "../../components/AboutSection";
-import HireDeveloper from "../../components/HireDeveloper";
-import TechStack from "./components/TeckStack";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import Slider from "../../components/Slider";
+import Header from "../../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq"
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const portfolioData = [
   {
@@ -365,7 +350,7 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[120px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Business Intelligence and Business Analytics Services"
@@ -416,7 +401,8 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -427,7 +413,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfolioData}
             heading="Portfolio of Our Data Analytics Projects"
             description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
@@ -438,6 +424,7 @@ export default function ClinicalApp(props: any) {
         <TechStack
           title="Our Technology Stack Use to Develop Best AI Services"
           description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          customTechData={JSON_DATA.TechData}
         />
 
         <WhyChoose
@@ -472,3 +459,21 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

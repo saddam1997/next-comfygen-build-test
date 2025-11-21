@@ -3,19 +3,22 @@ import Head from "next/head";
 import JSON_DATA from "./json/applicationConsulting.json";
 import LazyLoad from "react-lazy-load";
 import { IconApps, IconBrain, IconCloud, IconCurrencyBitcoin, } from '@tabler/icons-react';
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import LatestTechnology from "../../Newcomponet/SectionCompoent/LatestTechnology";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ContactFromCenter from "../../componentsnew/ContactFromCenter";
-import ServicesSec from "../../componentsnew/ServicesSec";
 
-import ConsultancyApproach from "../../componentsnew/ConsultancyApproach";
-import HireDeveloperSec from "../../componentsnew/HireDeveloperSec";
-import LatestTechnology from "../../componentsnew/LatestTechnology";
-import WhyChoose from "../../componentsnew/WhyChooseUs";
-import Faq from "../../componentsnew/Faq";
-import Header from "../../componentsnew/Header";
-import IndustriesServe from "../../components/IndustriesServe";
+
+
+
+
 
 
 export default function Mobile(props) {
@@ -38,7 +41,7 @@ export default function Mobile(props) {
     setTalkToExpertModal(false);
   };
 
-  
+
 
   const technologyData = [
     {
@@ -186,13 +189,24 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Mobile App Development Consultancy Services"
-          description="The mobile app development idea and application integration services need to be evaluated in certain ways. Here are the top-notch strategic mobile application development consulting services we provide to assess the app development requirements."
-        />
-        <IndustriesServe />
+        {/* <ContactFromCenter /> */}
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Mobile App Development Consultancy Services
+              </h2>
+              <p className="text-base text-center font-normal">The mobile app development idea and application integration services need to be evaluated in certain ways. Here are the top-notch strategic mobile application development consulting services we provide to assess the app development requirements.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <IndustriesServe heading="" description=""/>
+
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -200,10 +214,10 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <HireDeveloperSec
+        <HireDeveloper
           heading="Hire App Development Consulting to success"
-          dec="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
-          dec1="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
+          text="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
+          text1="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-consulting-img.webp"

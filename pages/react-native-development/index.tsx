@@ -2,21 +2,18 @@ import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/reactnative.json";
 import LazyLoad from "react-lazy-load";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import InfoSectionLeft from "../componentsnew/InfoSectionLeft";
-import InfoSectionRight from "../componentsnew/InfoSectionRight";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import CallToAction from "../componentsnew/CallToAction";
-import Faq from "../componentsnew/Faq";
-import BlogSection from "../componentsnew/BlogSection";
-import ConsultingSec from "../componentsnew/ConsultingSec";
-import Header from "../componentsnew/Header";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ConsultingSec from "../Newcomponet/SectionCompoent/ConsultingSec";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
-export default function Altcoin(props:any) {
+export default function Altcoin(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -101,33 +98,58 @@ export default function Altcoin(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our React Native Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We can help you build a high-performing application utilizing cutting-edge technologies, from designing an intuitive user interface to building multi-platform applications for iOS and Android.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        {/* <ServicesSec
           servicesData={JSON_DATA.servicesData}
           title="Our React Native Development Services"
           description="We can help you build a high-performing application utilizing cutting-edge technologies, from designing an intuitive user interface to building multi-platform applications for iOS and Android."
-        />
-        <InfoSectionLeft
+        /> */}
+        <InfoSection
           heading="React Native Development"
           description1="The greatest React Native app development firm, Comfygen, stands out for providing top-notch services. When it comes to providing seamless solutions for your mobile app demands, our skilled team excels. We offer thorough consulting and migration services along with React Native app development. You can engage our skilled React Native app developers to ensure the success of your projects."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/images/react-native-dev.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <InfoSectionRight
+        <InfoSection
           heading="We Provide React Native App Migration Services"
           description1="As Businesses need to keep up with the technological landscape as it evolves. For modernizing legacy apps, React Native is the best solution. With powerful legacy app modernization services, we can help you re-configure your legacy apps or convert them completely to React Native for better UI and UX. Businesses have benefited from React Native in a number of ways, including"
+          description2=""
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Cost of React Native App Development"
           description1="The React Native framework, being free and open-source, provides a versatile platform for developing your idea, whether by assembling your own team or outsourcing the project. However, implementing features will require an investment based on the hourly rates of skilled software developers. The cost of building and developing with React Native often aligns with general software development expenses, making it a practical choice for creating robust and feature-rich applications."
+          description2=""
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <HireDeveloper
           heading="Hire React Native App Developer India"
           text="With your thoughtfulness, we'll create the best native React Native based mobile apps using the React Native language for reasonable charges."

@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./polygonblockchain.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import Faq from "../components/Faq";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import LatestTechnology from "../components/LatestTechnology";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent//ConsultancyApproach";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+
 import {
   IconAdjustments,
   IconBuildingBridge,
@@ -22,24 +26,7 @@ import {
   IconUsers,
   IconUsersGroup,
 } from "@tabler/icons-react";
-import HireDeveloper from "../components/HireDeveloper";
-import CardGrid from "../components/CardGrid";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
 
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const technologyData = [
   {
@@ -87,66 +74,7 @@ const CardGridData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a cutting-edge cryptocurrency built on its dedicated Polygon Blockchain, which sets it apart from traditional tokens. Powered by a robust 'Four Square' architecture, it delivers exceptional speed, enhanced mining benefits, seamless integration, and predictable growth. Designed for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin—positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring long-term stability and value appreciation. Unlike fiat currency, it harnesses the power of blockchain technology for enhanced security, transparency, and decentralized governance. Croston enables secure transactions and controlled coin issuance while offering seamless purchasing options via credit card, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and fuels a decentralized marketplace with standardized blockchain development solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is revolutionizing commerce in the energy sector, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Operating under Mezo Energy Trading Limited (METL), it enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes supply and distribution, ensuring a seamless flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and efficiency, redefining energy trade and logistics.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-  ],
-};
+
 
 export default function Polygon(props) {
   let { initialData } = props;
@@ -266,27 +194,6 @@ export default function Polygon(props) {
 
       <BlockchainNav/>
       <div className="overflow-hidden">
-        {/* <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/polygon-blockchain-development-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Polygon Blockchain Development Company"
-                ptag="Polygon Blockchain is a powerful force in Web3 and decentralized technology. As a leading Polygon Blockchain development company in India & USA, we help businesses unlock the full potential of scalable and best Polygon blockchain solutions. Whether your goal is to launch an NFT marketplace or utilize Polygon Blockchain for branding, our expertise ensures you benefit from enhanced scalability, interoperability, and cross-chain compatibility. With Polygon, you can achieve these advantages while staying eco-friendly and future-ready."
-                li="Eco-Friendly Polygon Blockchain Development "
-                li1="Custom Polygon Blockchain Services"
-                li2="NFT Marketplace Expertise"
-                li3="Cross-Chain Compatibility"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
-
         <HeroSectionForAllPages
           heading="Polygon Blockchain Development Company"
           ptag="Polygon Blockchain is a powerful force in Web3 and decentralized technology. As a leading Polygon Blockchain development company in India & USA, we help businesses unlock the full potential of scalable and best Polygon blockchain solutions. Whether your goal is to launch an NFT marketplace or utilize Polygon Blockchain for branding, our expertise ensures you benefit from enhanced scalability, interoperability, and cross-chain compatibility. With Polygon, you can achieve these advantages while staying eco-friendly and future-ready."
@@ -312,7 +219,7 @@ export default function Polygon(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -345,7 +252,7 @@ export default function Polygon(props) {
             "A dedicated team of Polygon blockchain developers to solve your problems.",
           ]}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="How Polygon Blockchain Development Can Boost Your Business Efficiency"
           description1="Your concerns are valid. Before choosing any Polygon Blockchain Development Company, it’s essential to understand what you’re investing in. Polygon blockchain stands out by processing over 3 million transactions daily on average. Additionally, the Polygon blockchain development industry hosts over 10,000 dApps, providing immense opportunities for businesses."
           description2="At Comfygen, a trusted Polygon Blockchain Development Company, we help you leverage this impressive transaction speed, enabling up to 7,000 transactions per second."
@@ -361,14 +268,18 @@ export default function Polygon(props) {
           imageSrc="https://www.comfygen.com/img/how-can-your-bussiness-benefit-from-polygon.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Leverage the Full Potential of Polygon Blockchain"
           description1="We provide a collection of Polygon development services for startups and corporations to help them capitalise on the value-based benefits of Polygon. With years of experience and a team of competent professionals, we can help you integrate your existing applications with Polygon or create new solutions."
           description2="As a professional Polygon development company, we aim to help you with a seamless transition to web3 alongside ensuring your success. We help you create scalable and robust web3 solutions at considerably lower costs with Polygon blockchain alongside leveraging the security of Ethereum blockchain."
           imageSrc="https://www.comfygen.com/images/leverage-the-full-potential-of-polygon-blockchain.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          description3= ""
+          points={[]}
+          dec=""
         />
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -382,12 +293,17 @@ export default function Polygon(props) {
           subheading="Polygon is an ideal blockchain development solution to capitalize on the potential of blockchain and web3 in a competitive market landscape. The Polygon Disney accelerator program is one of the prominent highlights that prove the capability of Polygon to support the growth of innovative businesses. On top of it, Polygon offers a collection of impressive features that can elevate your competitive advantage in blockchain and web3 projects."
           techData={technologyData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Successful Polygon Blockchain Projects Portfolio"
-          description="Discover our portfolio of successful projects, showcasing our expertise in Polygon Blockchain solutions and app development. Each project reflects our dedication to innovation, high-quality execution, and client satisfaction."
-        />
-        <InfoSectionLeft
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Successful Polygon Blockchain Projects Portfolio"
+            description="Discover our portfolio of successful projects, showcasing our expertise in Polygon Blockchain solutions and app development. Each project reflects our dedication to innovation, high-quality execution, and client satisfaction."
+          />
+        </section>
+
+
+        <InfoSection
           heading="How Can the Disney Accelerator Polygon Collaboration Help You?"
           description1="The Disney Accelerator Program Polygon collaboration could provide a wide range of opportunities for developing innovative businesses. The Disney accelerator program is a specialised entrepreneurial program which has embraced the layer-2 scaling solution of Ethereum for innovation. Polygon would receive access to investment capital, mentorship and co-working space at the creative campus of Disney."
           description2="Participants in the accelerator program would also have the opportunity to learn from top executives at Disney. Apart from the Polygon Disney accelerator invitation, Polygon Blockchain has entered into collaboration with different companies such as Stripe, Meta and Reddit."
@@ -395,6 +311,8 @@ export default function Polygon(props) {
           imageSrc="https://www.comfygen.com/img/how-can-the-disney-accelertor-polygon-collaboration-help-you.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          points={[]}
+          dec=""
         />
         <CardGrid
           heading="Our Proven Process for Serving Clients with Polygon Blockchain Development

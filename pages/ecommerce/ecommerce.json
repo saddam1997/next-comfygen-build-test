@@ -20,8 +20,102 @@
     "title": "Will I get support after the launch?",
     "desc": "Yes, absolutely. We provide end-to-end support after the launch, including regular updates, bug fixes, performance optimization, and technical maintenance. Our top rated ecommerce development team ensures your eCommerce platform stays secure, fast, and aligned with evolving business needs."
   }
-]
-,
+],
+
+ "Feature": [
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon":" <i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-customer.webp",
+    "additionalDetails": [
+      {
+        "details": "Easy Login/Signup with OTP or Social",
+        "emoji": "",
+        "content": ""
+      },
+      {
+        "details": "Advanced Product Search & Smart Filters",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Wishlist & Save for Later", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking", "emoji": "", "content": "" },
+      { "details": "Secure Multiple Payment Gateways", "emoji": "", "content": "" },
+      { "details": "Personalized Recommendations", "emoji": "", "content": "" },
+      { "details": "Ratings, Reviews & Order History", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Store/Vendor Panel",
+    "icon": "<i className='fas fa-scissors text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-store.webp",
+    "additionalDetails": [
+      {
+        "details": "Seller Registration & Profile Management",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Product Listing & Bulk Upload", "emoji": "", "content": "" },
+      { "details": "Order Alerts & Fulfillment Tools", "emoji": "", "content": "" },
+      { "details": "Offer/Coupon Creation", "emoji": "", "content": "" },
+      { "details": "Sales Analytics & Earnings Reports", "emoji": "", "content": "" },
+      { "details": "Inventory Updates & Stock Alerts", "emoji": "", "content": "" },
+      { "details": "Chat Support Integration", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-admin.webp",
+    "additionalDetails": [
+      { "details": "Complete User & Seller Management", "emoji": "", "content": "" },
+      { "details": "Order, Refund & Payment Oversight", "emoji": "", "content": "" },
+      { "details": "Commission Setup & Tax Management", "emoji": "", "content": "" },
+      {
+        "details": "CMS for Banners, Blogs & Promotions",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Real-Time Performance Dashboards", "emoji": "", "content": "" },
+      {
+        "details": "Security Controls & Role Management",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Multi-Store Management Support", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Delivery Agent Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-delivery.webp",
+    "additionalDetails": [
+      {
+        "details": "Agent Registration & Task Assignment",
+        "emoji": "",
+        "content": ""
+      },
+      {
+        "details": "Real-Time Delivery Route Optimization",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Order Pickup & Drop Confirmation", "emoji": "", "content": "" },
+      { "details": "GPS Navigation & Live Tracking", "emoji": "", "content": "" },
+      { "details": "Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "In-App Calling & Messaging", "emoji": "", "content": "" },
+      { "details": "Earnings & Delivery History", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
 "servicesData": [
   {
   "title": "Shopify eCommerce Development Services",

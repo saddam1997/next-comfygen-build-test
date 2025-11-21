@@ -1,38 +1,20 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import CardItem from "../components/CardItem";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import Slider from "../components/Slider";
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Process = [
   {
@@ -71,30 +53,6 @@ const Process = [
       "We don’t stop at launch. Our roadside app development team offers full-cycle app maintenance, upgrades, and performance tuning. We keep your app updated with new features, platform compatibility, and ensure continuous user satisfaction.",
   },
 ];
-
-
-
-
-
-
-
-const portfoliodata = [
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/AI.webp",
-    "title": "AI-Powered Towing & Assistance App",
-    "description": "Smart app with instant SOS, predictive service requests, and real-time tracking—offering unmatched towing and vehicle help with a user-first experience.",
-    "link": "/portfolio/ride-hailing-app"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/emergency.webp",
-    "title": "Emergency Fuel & Battery Help App",
-    "description": "A smart roadside support app offering fuel delivery, battery jumpstart, and tire help with offline mode, AI suggestions, loyalty rewards, and multilingual support for users.",
-    "link": "/portfolio/ride-hailing-app"
-  },
-
-
-]
 
 
 
@@ -462,24 +420,29 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <CardItem
           heading="Advanced Features of Our Roadside Assistance App"
           subheading="Our custom-built Roadside Assistance App includes powerful features to ensure drivers get quick help during emergencies. From car towing to fuel delivery, every service is just a tap away. Here’s what makes our app reliable, fast, and user-friendly:"
           techData={JSON_DATA.cardData2}
         />
 
-
         <section className="py-8">
-          <Slider
-            projects={portfoliodata}
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
             heading="Our Roadside Assistance App Development Portfolio"
             description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
           />
         </section>
 
+        <div className="py-8">
+          <Features
+            heading=" Roadside Assistance App Panels We Develop"
+            description="Comfygen creates on-demand roadside assistance apps for customers, service providers, and administrators. These panels help ensure fast service delivery, smooth communication, real-time tracking, and efficient business operations."
+            featuresData={JSON_DATA.Feature}
+            grid={3} />
+        </div>
 
-        <Features />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -499,7 +462,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TechStack
           title="Technology Stack We Use for Roadside Assistance App Development"
           description="At Comfygen, we utilize the latest and most reliable technologies to build powerful, scalable, and high-performance roadside assistance apps. Our comprehensive tech stack guarantees seamless GPS integration, real-time tracking, secure payments, and fast emergency support—ensuring every rescue is just a tap away."
         />

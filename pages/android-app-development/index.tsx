@@ -3,19 +3,23 @@ import React from 'react'
 import Head from 'next/head';
 import JSON_DATA from "./json/ios.json"
 import LazyLoad from 'react-lazy-load';
-import BlogSection from '../componentsnew/BlogSection';
-import HeroSectionForAllPages from '../componentsnew/HeroSectionForAllPages';
-import AboutSection from '../componentsnew/AboutSection';
-import ServicesSec from '../componentsnew/ServicesSec';
-import TechStack from '../componentsnew/TechStack';
-import ProcessSec from '../componentsnew/ProcessSec';
+import HeroSectionForAllPages from '../Newcomponet/SectionCompoent/HeroSectionForAllPages';
+import Header from '../Newcomponet/layout/Header';
+import AboutSection from '../Newcomponet/SectionCompoent/AboutSection';
+import ServicesSec from '../Newcomponet/SectionCompoent/ServicesSec';
+import TechStack from '../Newcomponet/SectionCompoent/TechStack';
+import ProcessSec from '../Newcomponet/SectionCompoent/ProcessSec';
+import IndustriesServe from '../Newcomponet/SectionCompoent/IndustriesServe';
+import WhyChoose from '../Newcomponet/SectionCompoent/WhyChooseUs';
+import HireDeveloper from '../Newcomponet/SectionCompoent/HireDeveloper';
+import Faq from '../Newcomponet/SectionCompoent/Faq';
 
-import WhyChoose from '../componentsnew/WhyChooseUs';
-import HireDeveloper from '../componentsnew/HireDeveloper';
-import Faq from '../componentsnew/Faq';
-import Header from '../componentsnew/Header';
-import ContactFromCenter from '../componentsnew/ContactFromCenter';
-import IndustriesServe from '../components/IndustriesServe';
+
+
+
+
+
+// import ContactFromCenter from '../componentsnew/ContactFromCenter';
 
 
 
@@ -96,7 +100,7 @@ export default function Mobile(props) {
           <Header />
         </LazyLoad>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[40px]">
         <HeroSectionForAllPages
           heading="Top-Rated Custom Android App Development Company"
           ptag="Comfygen is a Leading Android App Development Company in Jaipur, India with a team of highly experienced developers. We provide customized, scalable, high-performance Android app development solutions for startups and small businesses. Our cutting-edge mobile apps are designed to boost business growth, enhance user engagement, and ensure long-term success from concept to launch."
@@ -123,22 +127,40 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Comprehensive Android App Development Services"
-          description="As the best Android app development company in Jaipur, India, We provide the top Android app development services for entrepreneurs and startups in India. What services, We offer"
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Comprehensive Android App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">As the best Android app development company in Jaipur, India, We provide the top Android app development services for entrepreneurs and startups in India. What services, We offer</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         <TechStack
           title=" Our Cutting-Edge Technology Stack for Android App Development"
           description="You can hire Android developers from our team with the assurance of expertise in the modern technology stack to create Android apps."
         />
-        <ProcessSec
-          title="Step-by-Step Android App Development Process"
-          description="As a trusted Android app development company in Jaipur, India, we create secure, scalable, and future-proof Android apps."
-          processSlides={JSON_DATA.Process}
-        />
-        <ContactFromCenter />
-        <IndustriesServe />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Android App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                As a trusted Android app development company in Jaipur, India, we create secure, scalable, and future-proof Android apps.
+              </p>
+            </div>
+            <ProcessSec processSlides={JSON_DATA.Process} />
+          </div>
+        </section>
+
+        {/* <ContactFromCenter /> */}
+        <IndustriesServe heading='' description=''/>
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

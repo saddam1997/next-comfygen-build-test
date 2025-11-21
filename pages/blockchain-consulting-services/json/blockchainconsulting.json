@@ -112,6 +112,34 @@
  
   ],
 
+
+
+
+  "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency built on its dedicated blockchain, not just another token. Designed with a powerful 'Four Square' architecture, it ensures high-speed transactions, enhanced mining rewards, seamless ecosystem integration, and predictable growth. With superior security, scalability, and efficiency, NASDAC Coin outperforms Bitcoin, making it an ideal choice for businesses and enterprises. Engineered for the future, NASDAC Coin stands as the first true SUPER COIN, redefining the blockchain crypto space.",
+      "link": "/portfolio/blockchain-based-cryptocoin-development"
+    },
+
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and transparency. It enables secure transactions, controlled issuance, and easy purchases via credit cards, exchanges, or crypto. Bridging traditional assets with blockchain, Croston powers a decentralized marketplace and redefines secure digital investments",
+      "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "/portfolio/advanced-blockchain-based-logistics-software"
+    }
+    
+  ],
+
+
+
   "servicesData" :[
     {
       "title": "Blockchain Strategy Consulting",

@@ -2,19 +2,18 @@ import React, { useState } from 'react'
 import Head from 'next/head';
 import JSON_DATA from "./json/hybrid.json"
 import LazyLoad from 'react-lazy-load';
-import Header from '../componentsnew/Header';
-import ServicesSec from '../componentsnew/ServicesSec';
-import HireDeveloper from '../componentsnew/HireDeveloper';
-import ConsultancyApproach from '../componentsnew/ConsultancyApproach';
-import InfoSection from '../componentsnew/InfoSectionLeft';
-import WhyChooseUs from '../componentsnew/WhyChooseUs';
+import Header from '../Newcomponet/layout/Header';
+import HeroSectionForAllPages from '../Newcomponet/SectionCompoent/HeroSectionForAllPages';
+import AboutSection from '../Newcomponet/SectionCompoent/AboutSection';
+import ServicesSec from '../Newcomponet/SectionCompoent/ServicesSec';
+import HireDeveloper from '../Newcomponet/SectionCompoent/HireDeveloper';
+import ConsultancyApproach from '../Newcomponet/SectionCompoent/ConsultancyApproach';
+import InfoSection from '../Newcomponet/SectionCompoent/InfoSection';
+import WhyChooseUs from '../Newcomponet/SectionCompoent/WhyChooseUs';
+import IndustriesServe from '../Newcomponet/SectionCompoent/IndustriesServe';
+import CallToAction from '../Newcomponet/SectionCompoent/CallToAction';
 
-import CallToAction from '../componentsnew/CallToAction';
-import HeroSectionForAllPages from '../componentsnew/HeroSectionForAllPages';
-import AboutSection from '../componentsnew/AboutSection';
-import ContactFromCenter from '../componentsnew/ContactFromCenter';
-import IndustriesServe from '../components/IndustriesServe';
-export default function Mobile(props) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -88,11 +87,20 @@ export default function Mobile(props) {
         link="/about-us"
         linkText="Explore More"
       />
-      <ServicesSec
-        servicesData={JSON_DATA.servicesData}
-        title=" Our Hybrid App Development Services"
-        description="Accelerate your digital transformation with our cutting-edge hybrid app development services. Harnessing the power of cross-platform compatibility, cost-effectiveness, and seamless user experiences, our team delivers high-performing, feature-rich apps that cater to diverse business needs. Partner with us to unlock the full potential of hybrid app development companies in Jaipur and elevate your business to new heights"
-      />
+
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Hybrid App Development Services
+            </h2>
+            <p className="text-base text-center font-normal">Accelerate your digital transformation with our cutting-edge hybrid app development services. Harnessing the power of cross-platform compatibility, cost-effectiveness, and seamless user experiences, our team delivers high-performing, feature-rich apps that cater to diverse business needs. Partner with us to unlock the full potential of hybrid app development companies in Jaipur and elevate your business to new heights</p>
+          </div>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
+          </div>
+        </div>
+      </section>
+
       <HireDeveloper
         heading="Hire Hybrid App Developers"
         text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Hybrid Mobile App Developers. They can focus on your project entirely and deliver you faster results."
@@ -107,7 +115,7 @@ export default function Mobile(props) {
           "Consider communication skills ."
         ]}
       />
-      <ContactFromCenter />
+      {/* <ContactFromCenter /> */}
       <ConsultancyApproach
         Head={JSON_DATA.consultancyHead}
         ItemData={JSON_DATA.consultancyData}
@@ -119,6 +127,8 @@ export default function Mobile(props) {
         heading="Leading Hybrid Web Application Development Company in India"
         description1="At Comfygen Softwares' Hybrid app developers create apps that not only deliver utility but also deliver EXPERIENCE! Being able to deliver a lasting experience is a real challenge. Our team has delivered hundreds of Hybrid applicationss for hundreds of businesses across a wide range of industries over more than a decade."
         description2="The apps developed by our company feature powerful performance, next-generation features, research-based UX/UI, and support for current technologies such as machine learning app development, IoT app development, augmented reality app development, and 3D modeling. It is our goal to put your enterprise, small business, or startup way ahead of the competition. We are known for our uncompromised work ethics and world-class quality of work. When it comes to turning your idea into a profitable business, we leave no stone unturned."
+        description3=""
+        dec=""
         imageSrc="https://www.comfygen.com/image/hybrid-web-application-development-img.webp"
         link="/about-us"
         linkText="Explore More"
@@ -129,7 +139,7 @@ export default function Mobile(props) {
         mainCardData={JSON_DATA.pageData.mainCardData}
         gridData={JSON_DATA.pageData.gridData}
       />
-      <IndustriesServe />
+      <IndustriesServe heading="" description="" />
       <CallToAction
         heading="Let’s Build the Future of Technology Together"
         text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."

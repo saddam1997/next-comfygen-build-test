@@ -4,13 +4,6 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
-import SolutionSec from "../components/SolutionSec";
-
 import {
   IconBulb,
   IconPigMoney,
@@ -22,29 +15,22 @@ import {
   IconTrendingUp,
   IconChartBar,
 } from "@tabler/icons-react";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import InfoSectionLeft from "../components/InfoSectionLeft";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
-import PortfolioSec from "../componentsnew/PortfolioSec";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import IndustriesServe from "../components/IndustriesServe";
-// import BlockchainNav from "../blockchain/blockchain-navbar";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 export default function rummy(props) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -168,70 +154,6 @@ export default function rummy(props) {
     },
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation cryptocurrency built on its dedicated blockchain, not just another token. Designed with a powerful 'Four Square' architecture, it ensures high-speed transactions, enhanced mining rewards, seamless ecosystem integration, and predictable growth. With superior security, scalability, and efficiency, NASDAC Coin outperforms Bitcoin, making it an ideal choice for businesses and enterprises. Engineered for the future, NASDAC Coin stands as the first true SUPER COIN, redefining the blockchain crypto space.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and transparency. It enables secure transactions, controlled issuance, and easy purchases via credit cards, exchanges, or crypto. Bridging traditional assets with blockchain, Croston powers a decentralized marketplace and redefines secure digital investments",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/decentralized-blockchain-based-cryptocurrency",
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With secure and seamless peer-to-peer transfers, it revolutionizes digital payments. The YatriPay Mobile App ensures easy onboarding, bringing borderless transactions to users worldwide",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/peer-to-peer-blockchain-based-payment-system",
-      },
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/advanced-blockchain-based-logistics-software",
-      },
-    ],
-  };
 
   const jsonLdData = [
     {
@@ -505,12 +427,10 @@ export default function rummy(props) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+        <BlockchainNav />
       </div>
-      <BlockchainNav />
-      <div className="overflow-hidden">
+
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Blockchain Consulting Service"
           ptag="Comfygen is a trusted blockchain consulting company helping startups, enterprises, and SMEs harness the full potential of blockchain technology consulting services. Our blockchain experts provide custom blockchain strategy, smart contract consulting, and enterprise blockchain solutions designed to optimize operations, reduce costs, and unlock new revenue streams. "
@@ -543,7 +463,7 @@ export default function rummy(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -614,11 +534,13 @@ export default function rummy(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
+
         <SolutionSec
           heading="Why Blockchain Consulting Is a Game Changer for Your Business"
           subheading="Blockchain consulting isn’t just about technology implementation—it's about revolutionizing your business for the digital future. Here’s how our blockchain consulting services can add unparalleled value to your organization:"
           techData={technologyData}
         />
+
         <CallToAction
           heading="Let’s hear what you have to say?"
           text="Get in touch with us and discuss your needs and requirements with our experts."
@@ -627,11 +549,16 @@ export default function rummy(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Blockchain Consulting Portfolio: Proven Success Across Industries"
-          description="At Comfygen, we take pride in our successful blockchain consulting projects that have helped businesses across various industries achieve remarkable outcomes. From custom blockchain solutions to tokenization and DeFi integrations, our portfolio showcases the diverse applications of blockchain technology that drive innovation and deliver measurable value. Each project reflects our commitment to excellence, client satisfaction, and transformational impact."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Blockchain Consulting Portfolio: Proven Success Across Industries"
+            description="At Comfygen, we take pride in our successful blockchain consulting projects that have helped businesses across various industries achieve remarkable outcomes. From custom blockchain solutions to tokenization and DeFi integrations, our portfolio showcases the diverse applications of blockchain technology that drive innovation and deliver measurable value. Each project reflects our commitment to excellence, client satisfaction, and transformational impact."
+          />
+        </section>
+
+
         <section
           className="bg-center bg-cover  bg-fixed "
           style={{
@@ -721,13 +648,16 @@ export default function rummy(props) {
             "Scalable Solutions",
           ]}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="How Comfygen Can Help with Blockchain Consulting?"
           description1="Blockchain and crypto app development bring unmatched security and transparency to businesses. However, leveraging this technology requires professional expertise due to its complexity. At Comfygen, a leading Blockchain Consulting Company in India, our experienced Blockchain Consultants and Developers combine technical knowledge with innovative thinking to deliver extraordinary Blockchain Consulting Services."
           description2="Whether you're an SME or a large-scale enterprise, our tailored strategies elevate your business to the next level. We take time to understand your unique requirements and goals, crafting customized blockchain Consulting solutions that meet your needs. Trust Comfygen to ensure secure, efficient, and results-driven outcomes."
+          description3=""
+          dec=""
           imageSrc="https://www.comfygen.com/media/images/how-comfygen-can-help-in-blockchain-consulting.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          points={[]}
         />
         <GuidSectionBlockchain />
         <Faq
@@ -742,4 +672,19 @@ export default function rummy(props) {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

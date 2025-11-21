@@ -1,80 +1,79 @@
 {
- "Frequently": [
-  {
-    "num": "1",
-    "title": "What is Business Intelligence (BI) and Business Analytics (BA)?",
-    "desc": "Business Intelligence focuses on collecting and visualizing historical performance—think dashboards, reports, and KPIs. Business Analytics goes further, using statistical models and predictive forecasting to answer not only what happened—but what might happen next and why."
-  },
-  {
-    "num": "2",
-    "title": "What business problems can BI & Analytics actually solve?",
-    "desc": "BI helps answer questions like, “Where are your sales outperforming or lagging?” or “Which marketing campaign is actually driving revenue?” Business Analytics tackles deeper questions like, “Why has customer retention changed year over year?” or “Which product segment will grow next quarter?” Answers lead to action."
-  },
-  {
-    "num": "3",
-    "title": "How do I know if my business really needs BI and Analytics?",
-    "desc": "If your data lives in silos across multiple tools, if your spreadsheets take too long to compile, or if decisions are based on guesses—we’ll call it: you need BI & Analytics. These services bring clarity, boost efficiency, and enable real-time decisions from accurate data."
-  },
-  {
-    "num": "4",
-    "title": "How do businesses get started with BI & Analytics?",
-    "desc": "Begin with a data discovery workshop: map where data lives, what problems you want to solve, and define your key business questions. Then we build targeted dashboards, integrations, and models aligned to those goals."
-  },
-  {
-    "num": "5",
-    "title": "Is BI & Analytics secure and compliant?",
-    "desc": "Modern BI platforms enforce enterprise-grade security like SOC 2 Type II, ISO 27001, GDPR compliance, role-based access, and encryption. Your data stays safe while relevant stakeholders get just the insight they need."
-  },
-  {
-    "num": "6",
-    "title": "What challenges should I expect in BI & Analytics projects?",
-    "desc": "Common issues include: poor data quality, lack of leadership buy-in, integration bottlenecks, and not defining business goals clearly. Overcoming these requires strategy, collaboration, and expert execution."
-  }
-],
-
-"servicesData": [
-  {
-    "title": "Increased Efficiency",
-    "description": "Automate repetitive reporting tasks, centralize data sources, and reduce manual effort—freeing your team to focus on strategy, not spreadsheets.",
-    "features": []
-  },
-  {
-    "title": "Enhanced Decision-Making",
-    "description": "Get accurate, real-time insights so you can make confident, data-backed decisions instead of relying on gut feeling or outdated reports.",
-    "features": []
-  },
-  {
-    "title": "Improved Customer Understanding",
-    "description": "Dig into customer behavior, preferences, and buying patterns to personalize experiences, improve engagement, and boost loyalty.",
-    "features": []
-  },
-  {
-    "title": "Competitive Advantage",
-    "description": "Identify market trends, benchmark against competitors, and spot opportunities early—so you’re not reacting, you’re leading.",
-    "features": []
-  },
-  {
-    "title": "Reduced Costs",
-    "description": "Pinpoint inefficiencies, eliminate wasteful spend, and optimize budget allocation across departments and campaigns.",
-    "features": []
-  },
-  {
-    "title": "Enhanced Risk Management",
-    "description": "Proactively detect anomalies, forecast challenges, and manage compliance with real-time alerts and predictive modeling.",
-    "features": []
-  },
-  {
-    "title": "Faster Time-to-Insight",
-    "description": "Replace slow, fragmented reporting processes with instant access to insights that drive faster, smarter actions.",
-    "features": []
-  },
-  {
-    "title": "Better ROI Tracking",
-    "description": "Understand exactly which channels, campaigns, or touchpoints deliver results—so you can double down where it counts.",
-    "features": []
-  }
-],
-"servicesData1": [
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is Business Intelligence (BI) and Business Analytics (BA)?",
+      "desc": "Business Intelligence focuses on collecting and visualizing historical performance—think dashboards, reports, and KPIs. Business Analytics goes further, using statistical models and predictive forecasting to answer not only what happened—but what might happen next and why."
+    },
+    {
+      "num": "2",
+      "title": "What business problems can BI & Analytics actually solve?",
+      "desc": "BI helps answer questions like, “Where are your sales outperforming or lagging?” or “Which marketing campaign is actually driving revenue?” Business Analytics tackles deeper questions like, “Why has customer retention changed year over year?” or “Which product segment will grow next quarter?” Answers lead to action."
+    },
+    {
+      "num": "3",
+      "title": "How do I know if my business really needs BI and Analytics?",
+      "desc": "If your data lives in silos across multiple tools, if your spreadsheets take too long to compile, or if decisions are based on guesses—we’ll call it: you need BI & Analytics. These services bring clarity, boost efficiency, and enable real-time decisions from accurate data."
+    },
+    {
+      "num": "4",
+      "title": "How do businesses get started with BI & Analytics?",
+      "desc": "Begin with a data discovery workshop: map where data lives, what problems you want to solve, and define your key business questions. Then we build targeted dashboards, integrations, and models aligned to those goals."
+    },
+    {
+      "num": "5",
+      "title": "Is BI & Analytics secure and compliant?",
+      "desc": "Modern BI platforms enforce enterprise-grade security like SOC 2 Type II, ISO 27001, GDPR compliance, role-based access, and encryption. Your data stays safe while relevant stakeholders get just the insight they need."
+    },
+    {
+      "num": "6",
+      "title": "What challenges should I expect in BI & Analytics projects?",
+      "desc": "Common issues include: poor data quality, lack of leadership buy-in, integration bottlenecks, and not defining business goals clearly. Overcoming these requires strategy, collaboration, and expert execution."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Increased Efficiency",
+      "description": "Automate repetitive reporting tasks, centralize data sources, and reduce manual effort—freeing your team to focus on strategy, not spreadsheets.",
+      "features": []
+    },
+    {
+      "title": "Enhanced Decision-Making",
+      "description": "Get accurate, real-time insights so you can make confident, data-backed decisions instead of relying on gut feeling or outdated reports.",
+      "features": []
+    },
+    {
+      "title": "Improved Customer Understanding",
+      "description": "Dig into customer behavior, preferences, and buying patterns to personalize experiences, improve engagement, and boost loyalty.",
+      "features": []
+    },
+    {
+      "title": "Competitive Advantage",
+      "description": "Identify market trends, benchmark against competitors, and spot opportunities early—so you’re not reacting, you’re leading.",
+      "features": []
+    },
+    {
+      "title": "Reduced Costs",
+      "description": "Pinpoint inefficiencies, eliminate wasteful spend, and optimize budget allocation across departments and campaigns.",
+      "features": []
+    },
+    {
+      "title": "Enhanced Risk Management",
+      "description": "Proactively detect anomalies, forecast challenges, and manage compliance with real-time alerts and predictive modeling.",
+      "features": []
+    },
+    {
+      "title": "Faster Time-to-Insight",
+      "description": "Replace slow, fragmented reporting processes with instant access to insights that drive faster, smarter actions.",
+      "features": []
+    },
+    {
+      "title": "Better ROI Tracking",
+      "description": "Understand exactly which channels, campaigns, or touchpoints deliver results—so you can double down where it counts.",
+      "features": []
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -100,8 +99,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -109,41 +107,91 @@
       "desc": "Business Intelligence and Business Analytics solutions transform complex data into clear, actionable insights that help in business growth. Here are the key industry-leading features that give you the competitive advantage:"
     }
   ],
-"consultancyData": [
-  {
-    "title": "Seamless Data Collection & Integration",
-    "desc": "Connect and unify data from CRMs, marketing platforms, sales tools, ERPs, and third-party APIs—no more siloed insights."
+
+  "TechData": {
+    "Data Storage": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg", "alt": "Hadoop", "name": "Hadoop", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg", "alt": "Amazon S3", "name": "Amazon S3 ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg", "alt": "Microsoft Azure Data Lake", "name": "Microsoft Azure Data Lake ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "4" }
+    ],
+    "Data Processing": [
+      { "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg", "alt": "Apache Spark", "name": "Apache Spark ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg", "alt": "Talend", "name": "Talend ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg", "alt": "Informatica PowerCenter", "name": "Informatica PowerCenter ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg", "alt": "Apache NiFi", "name": " Apache NiFi", "num": "4" }
+    ],
+    "Machine Learning/AI": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg", "alt": "TenserFlow", "name": "TenserFlow ", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg", "alt": "Scikit-Learn", "name": "Scikit-Learn ", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg", "alt": "PyTorch", "name": "PyTorch ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg", "alt": "Microsoft Azure Machine Learning", "name": "Microsoft Azure Machine Learning", "num": "4" }
+    ],
+    "Visualization Tools ": [
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg", "alt": "Tableau", "name": "Tableau", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg", "alt": "Power BI", "name": "Power BI", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg", "alt": "Looker", "name": "Looker ", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg", "alt": "QlikView", "name": "QlikView", "num": "4" }
+    ],
+    "Database Management":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg", "alt": "MySQL", "name": "MySQL", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg", "alt": "PostgreSQL", "name": "PostgreSQL", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg", "alt": "MongoDB", "name": "MongoDB", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg", "alt": "Oracle Database ", "name": "Oracle Database", "num": "4" }
+    ],
+    "Data Warehousing":[
+      { "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg", "alt": "Amazon Redshift", "name": "Amazon Redshift", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg", "alt": "Snowflake", "name": "Snowflake", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg", "alt": "Microsoft Azure Synapse Analytics", "name": "Microsoft Azure Synapse Analytics", "num": "4" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg", "alt": "SAS", "name": "SAS", "num": "5" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg", "alt": "MATLAB", "name": "MATLAB", "num": "6" }
+    ],
+    "Cloud Platforms":[
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg", "alt": "Amazon Web Services (AWS)", "name": "Amazon Web Services (AWS)", "num": "1" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg", "alt": "Microsoft Azure", "name": "Microsoft Azure", "num": "2" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg", "alt": "Google Cloud Platform (GCP)", "name": "Google Cloud Platform (GCP)", "num": "3" },
+      { "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg", "alt": "IBM Cloud", "name": "IBM Cloud ", "num": "4" }
+    ]
   },
-  {
-    "title": "Enterprise-Grade Data Warehousing & Cleansing",
-    "desc": "Store, clean, and manage high volumes of structured and unstructured data to ensure accuracy, consistency, and usability."
-  },
-  {
-    "title": "Advanced Data Analysis",
-    "desc": "Use statistical modeling, machine learning, and predictive analytics to uncover patterns, trends, and forecasts you can trust."
-  },
-  {
-    "title": "Interactive Dashboards & Data Visualization",
-    "desc": "Build custom dashboards that are not just pretty—they're intuitive, drillable, and tailored for every team, from C-suite to marketing."
-  },
-  {
-    "title": "Real-Time Reporting",
-    "desc": "Monitor KPIs and campaign performance live. No delays, no waiting—just instant insight when it matters most."
-  },
-  {
-    "title": "Scalable & Flexible Solutions",
-    "desc": "Whether you're a startup or an enterprise, scale your analytics infrastructure as your data grows—with cloud-ready, secure systems."
-  },
-  {
-    "title": "Automated Alerts & Notifications",
-    "desc": "Stay ahead of issues with smart alerts for key metrics, anomalies, or thresholds—so you catch problems before they escalate."
-  },
-  {
-    "title": "Role-Based Access & Security",
-    "desc": "Control who sees what. Protect sensitive data while empowering teams with the information they actually need."
-  }
-]
-,
+ 
+
+
+
+  "consultancyData": [
+    {
+      "title": "Seamless Data Collection & Integration",
+      "desc": "Connect and unify data from CRMs, marketing platforms, sales tools, ERPs, and third-party APIs—no more siloed insights."
+    },
+    {
+      "title": "Enterprise-Grade Data Warehousing & Cleansing",
+      "desc": "Store, clean, and manage high volumes of structured and unstructured data to ensure accuracy, consistency, and usability."
+    },
+    {
+      "title": "Advanced Data Analysis",
+      "desc": "Use statistical modeling, machine learning, and predictive analytics to uncover patterns, trends, and forecasts you can trust."
+    },
+    {
+      "title": "Interactive Dashboards & Data Visualization",
+      "desc": "Build custom dashboards that are not just pretty—they're intuitive, drillable, and tailored for every team, from C-suite to marketing."
+    },
+    {
+      "title": "Real-Time Reporting",
+      "desc": "Monitor KPIs and campaign performance live. No delays, no waiting—just instant insight when it matters most."
+    },
+    {
+      "title": "Scalable & Flexible Solutions",
+      "desc": "Whether you're a startup or an enterprise, scale your analytics infrastructure as your data grows—with cloud-ready, secure systems."
+    },
+    {
+      "title": "Automated Alerts & Notifications",
+      "desc": "Stay ahead of issues with smart alerts for key metrics, anomalies, or thresholds—so you catch problems before they escalate."
+    },
+    {
+      "title": "Role-Based Access & Security",
+      "desc": "Control who sees what. Protect sensitive data while empowering teams with the information they actually need."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Business Intelligence & Analytics Services?",
     "description": "Choosing the right BI consultant and Analytics consultant service is critical if you want more than only dashboards. At Comfygen, we create data solutions that give your business full visibility, real-time control, and insights that drive action. From marketing attribution to predictive modeling—we help you turn data into decisions.",
@@ -152,41 +200,40 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-"gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Skilled Data Experts",
-      "description": "Our team brings deep experience across BI platforms like Power BI, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/tableau-consulting-services' >Tableau</a>, and Looker. We don’t just build dashboards—we solve business problems with scalable data infrastructure, custom analytics, and clean, reliable reporting."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Tailored Systems for Your Business",
-      "description": "No cookie-cutter templates. We design BI and Analytics systems around your actual operations—whether you’re running a fast-scaling startup, a multi-channel retail operation, or a B2B enterprise. Every metric tracked, every report generated, fits your specific goals."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Secure, Scalable Architecture",
-      "description": "We build BI solutions using secure cloud-native tools that scale with your data. From real-time dashboards to user access control and encryption—we make sure your insights are safe, fast, and future-ready."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Fast Setup, Real Results",
-      "description": "With agile execution and pre-built integrations, we launch quickly—without sacrificing quality. You don’t wait months to see impact. We build fast, iterate often, and deliver actionable insights from day one."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Ongoing Support & Optimization",
-      "description": "After deployment, we don’t disappear. You get continuous support for performance tuning, report upgrades, dashboard changes, and scaling as your data grows. Our team is here to keep your BI systems sharp and your insights flowing."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Smart Analytics & Business Intelligence",
-      "description": "From campaign performance to sales forecasting, we equip your team with the tools to understand what’s happening now—and what’s coming next. Built-in analytics and KPI dashboards help you stay ahead, not just keep up."
-    }
-  ]
-
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Skilled Data Experts",
+        "description": "Our team brings deep experience across BI platforms like Power BI, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/tableau-consulting-services' >Tableau</a>, and Looker. We don’t just build dashboards—we solve business problems with scalable data infrastructure, custom analytics, and clean, reliable reporting."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Tailored Systems for Your Business",
+        "description": "No cookie-cutter templates. We design BI and Analytics systems around your actual operations—whether you’re running a fast-scaling startup, a multi-channel retail operation, or a B2B enterprise. Every metric tracked, every report generated, fits your specific goals."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Secure, Scalable Architecture",
+        "description": "We build BI solutions using secure cloud-native tools that scale with your data. From real-time dashboards to user access control and encryption—we make sure your insights are safe, fast, and future-ready."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Fast Setup, Real Results",
+        "description": "With agile execution and pre-built integrations, we launch quickly—without sacrificing quality. You don’t wait months to see impact. We build fast, iterate often, and deliver actionable insights from day one."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Ongoing Support & Optimization",
+        "description": "After deployment, we don’t disappear. You get continuous support for performance tuning, report upgrades, dashboard changes, and scaling as your data grows. Our team is here to keep your BI systems sharp and your insights flowing."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Smart Analytics & Business Intelligence",
+        "description": "From campaign performance to sales forecasting, we equip your team with the tools to understand what’s happening now—and what’s coming next. Built-in analytics and KPI dashboards help you stay ahead, not just keep up."
+      }
+    ]
   },
-"customTestimonials": [
+  "customTestimonials": [
     {
       "text": "Comfygen helped us connect all our data—Google Ads, Meta, HubSpot, everything. Now we have a single dashboard that shows what's actually working. No more guessing where our budget goes. We've cut wasted spend by 27% in three months.",
       "name": "Priya Mehta",
@@ -414,8 +461,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -436,8 +481,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -459,7 +503,6 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
@@ -510,6 +553,4 @@
       "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
     }
   ]
-
-  
 }

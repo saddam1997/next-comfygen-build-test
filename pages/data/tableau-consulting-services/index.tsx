@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import Faq from "../../components/Faq";
-import ProcessSec from "../../components/ProcessSec";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ServicesSec from "../../componentsnew/ServicesSec";
-import Header from "../../components/Header";
-import Slider from "../../components/Slider";
-import IndustriesServe from "../../components/IndustriesServe";
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const FutureDriven2 = [
   {
@@ -117,7 +110,7 @@ const portfolioData = [
   },
 ];
 
-export default function Mobile(props:any) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   let { LeadingSoftware } = JSON_DATA;
 
@@ -165,7 +158,7 @@ export default function Mobile(props:any) {
           content="https://www.comfygen.com/comfygen-images/tableau-consulting-services/og.webp"
         />
         <meta property="og:image:type" content="image/webp" />
-     
+
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -452,17 +445,27 @@ export default function Mobile(props:any) {
           link="/about-us"
           linkText="Talk to our expert"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Tableau Consulting Services"
-          description="We simplify your data journey with tailored Tableau solutions built for speed, clarity, and impact. From integration to visualisation, our Tableau experts turn complex data into business intelligence. Explore our tableau consulting services:"
-        />
+        {/* <ContactFromCenter /> */}
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Tableau Consulting Services
+              </h2>
+              <p className="text-base text-center font-normal">We simplify your data journey with tailored Tableau solutions built for speed, clarity, and impact. From integration to visualisation, our Tableau experts turn complex data into business intelligence. Explore our tableau consulting services</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
         <IndustriesServe
           heading="Industries We Serve"
           description="Comfygen's tableau consulting services are designed to bring clarity, efficiency, and insight to data-heavy industries. We recognize the unique challenges of your industry and develop customized tableau solutions that redefine the way your business analyzes and leverages data."
         />
+
 
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -536,7 +539,7 @@ export default function Mobile(props:any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfolioData}
             heading="Portfolio of Our Tableau Consulting Projects"
             description="At Comfygen Technologies, we specialize in crafting Tableau dashboards that deliver real-time visibility, actionable insights, and measurable impact. Our Tableau services portfolio showcases our experience across multiple industries, helping businesses harness the power of data visualization for smarter decision-making."
@@ -559,8 +562,25 @@ export default function Mobile(props:any) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
+}
+
+
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

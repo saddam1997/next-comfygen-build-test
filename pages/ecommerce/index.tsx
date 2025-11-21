@@ -2,14 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ecommerce.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
+
 import {
   IconBook,
   IconSchool,
@@ -18,31 +11,24 @@ import {
   IconLanguage,
   IconClipboardCheck,
 } from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import EcommerceNav from "../componentsnew/ecommerce-navbar";
-import ProductCard from "./components/ProductCard";
-import Slider from "../components/Slider";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-
+import JSON_DATA from "./ecommerce.json";
+import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
+import ProductCard from "../Newcomponet/SectionCompoent/ProductCard";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Process = [
   {
@@ -81,100 +67,6 @@ const Process = [
       "Post-launch, we offer continuous monitoring, updates, and feature enhancements. Our eCommerce maintenance services keep your platform secure, up to date, and optimized for performance and user engagement.",
   },
 ];
-
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "StyleSeat App Clone",
-    desc: "Launch your own salon booking app like StyleSeat. Enable users to book haircuts, flawless makeup, or trendy nail services with ease. Our beauty salon mobile app development solution empowers beauty professionals and clients alike.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Booksy App Clone",
-    desc: "Get a custom salon booking app clone inspired by Booksy, designed to let your clients book self-care appointments anytime, anywhere. Deliver smooth scheduling, real-time availability updates, and authentic customer reviews—all within a single, easy-to-use platform.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Fresha App Clone",
-    desc: "Build your own beauty and wellness platform with a Fresha clone. Let users effortlessly book salon, hair, and spa appointments anytime. Our salon booking application development company crafts intuitive, feature-packed apps customized to reflect your brand’s unique style and deliver a seamless user experience.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "Yes Madam App Clone",
-    desc: "Develop India’s next top on-demand beauty services app platform with a Yes Madam clone. Offer at-home salon, spa, and wellness services with secure payments and real-time tracking.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "GlossGenius App Clone",
-    desc: "Deliver a sleek, all-in-one experience for beauty professionals with an on-demand beauty app development company that builds GlossGenius clones. Manage bookings, payments, and client communication in one powerful app. Create your GlossGenius-inspired salon app today with Comfygen!",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "MindBody App Clone",
-    desc: "Combine beauty, wellness, and fitness into one powerful platform. Our MindBody clone includes class booking, meditation sessions, and salon services. Ideal for beauty and salon booking app development projects looking to merge wellness with beauty. Build a MindBody-style beauty salon.",
-  },
-];
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
-      head: "On-Demand Beauty Booking App",
-      name: "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
-      head: "Salon Chain Management App",
-      name: "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
-      head: "Freelance Stylist Appointment App",
-      name: "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
-      head: "Beauty & Wellness Aggregator Platform",
-      name: "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
 
 const productCard = [
   {
@@ -523,10 +415,8 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-
       <EcommerceNav />
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
             heading="eCommerce Development Company"
             ptag="Partner with a top eCommerce development company to launch powerful and scalable online shopping solutions. We build high-performance e-commerce apps, websites, and web applications tailored to your brand, utilizing the latest technologies for seamless customer experiences."
@@ -539,8 +429,9 @@ export default function ClinicalApp(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-hero.webp"
           />
-        </div>
+      
         <AboutSection
           title="About Company"
           heading="Why eCommerce Development is a Global Game-Changer"
@@ -554,11 +445,18 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="Revolutionizing the e-commerce Industry with Our Cutting-Edge eCommerce Development Services"
-          subtitle="At Comfygen, we deliver powerful and professional eCommerce development services for SMBs and Enterprises to help you create seamless online shopping experiences. Whether you're launching a startup, scaling an existing online store, or upgrading to a next-gen platform, we offer fully customized eCommerce development solutions aligned with your goals."
-          servicesData={JSON_DATA.servicesData}
-        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Revolutionizing the e-commerce Industry with Our Cutting-Edge eCommerce Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we deliver powerful and professional eCommerce development services for SMBs and Enterprises to help you create seamless online shopping experiences. Whether you're launching a startup, scaling an existing online store, or upgrading to a next-gen platform, we offer fully customized eCommerce development solutions aligned with your goals.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -593,18 +491,25 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Discover the expertise we have in e-commerce development by exploring our recent work"
             description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
           />
         </section>
 
-
-
-        <Features />
+        <div className="py-8">
+          <Features
+            heading="Essential Features for Your E-commerce Development"
+            description="Comfygen develops eCommerce apps and websites to ensure seamless
+            business operations and an outstanding user experience. We offer
+            affordable custom eCommerce development with dynamic panels for
+            customers, vendors, admins, delivery agents, inventory managers, and
+            marketing teams."
+            featuresData={JSON_DATA.Feature}
+            grid={4} />
+        </div>
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -623,7 +528,6 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-        <ContactFromCenter />
 
         <TrendsSection
           heading="The Emerging Technologies We Use for Enterprise eCommerce Development"
@@ -637,11 +541,18 @@ export default function ClinicalApp(props: any) {
           cards={productCard}
         />
 
-        <ProcessSection
-          title="Our Enterprise eCommerce Development Process"
-          description="At Comfygen, we follow a transparent and agile development process to ensure smooth collaboration and successful project delivery. From strategy to support, we build enterprise-grade eCommerce app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website solutions</a> that are scalable, secure, and user-focused."
-          processSlides={Process}
-        />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Enterprise eCommerce Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a transparent and agile development process to ensure smooth collaboration and successful project delivery. From strategy to support, we build enterprise-grade eCommerce app and <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website solutions</a> that are scalable, secure, and user-focused.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
         <TechStack
           title="Technology Stack We Use in eCommerce Solutions"

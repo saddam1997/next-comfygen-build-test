@@ -3,34 +3,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ServicesSec from "../../components/ServicesSec";
-import AboutSection from "../../components/AboutSection";
-import HireDeveloper from "../../components/HireDeveloper";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import WhoCanStart from "../../componentsnew/WhoCanStart";
-
-import ProcessSec from "../../components/ProcessSec";
-import NewTeckStack from "../../componentsnew/NewTeckStack";
-import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
-import Slider from "../../components/Slider";
-import IndustriesServe from "../../components/IndustriesServe";
-
-
-const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
+import SolutionSec from "../../Newcomponet/SectionCompoent/Solution";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../../Newcomponet/SectionCompoent/Faq"
 
 const Process = [
   {
@@ -101,39 +87,6 @@ const portfolioData = [
   },
 ];
 
-const WhoCanStartCards = [
-  {
-    heading: "Establish a Single Source of Truth",
-    description:
-      "Unify all disparate and scattered data systems across your organization into one centralized, governed environment, enabling reliable, real-time data access and consistent business reporting.",
-  },
-  {
-    heading: "Scale Enterprise BI with Self-Service Agility",
-    description:
-      "Empower departments to generate insights independently while maintaining control at scale. Combine enterprise governance with self-service BI to foster innovation without compromising data integrity.",
-  },
-  {
-    heading: "Infuse Insights into Daily Business Tools",
-    description:
-      "Seamlessly integrate Power BI with business-critical apps (e.g., Microsoft 365, Teams, Dynamics) to enable real-time analytics across daily workflows and enhance decision-making agility.",
-  },
-  {
-    heading: "Democratize Data Across Your Organization",
-    description:
-      "Enable everyone from business analysts to frontline teams to access and explore insights using intuitive dashboards, built-in accessibility features, and a minimal learning curve.",
-  },
-  {
-    heading: "Accelerate Time-to-Insight",
-    description:
-      "Leverage <a class='text-black font-semibold' href='https://www.comfygen.com/ai-development' >Artificial Intelligence</a>-powered templates and an easy-to-navigate interface to get started instantly. Gain immediate value from prebuilt analytics models, reducing report development cycles.",
-  },
-  {
-    heading: "Embed Interactive BI into Customer-Facing Apps",
-    description:
-      "Deliver rich, visually engaging dashboards directly within your applications to increase customer engagement and product usability with Power BI Embedded solutions.",
-  },
-];
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
@@ -149,7 +102,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -484,7 +437,8 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -497,16 +451,15 @@ export default function ClinicalApp(props: any) {
           description="Microsoft Power BI adapts to the unique demands of industries, helping businesses make faster, smarter decisions across every sector."
         />
 
-        <WhoCanStart
-          title="Use Cases: What You Can Achieve with our Microsoft Power BI Consulting Services"
-          description="Power BI Consulting services help businesses to transform raw data into real-time, decision-ready insights. Whether you aim to unify systems, enable data self-service, or embed analytics into apps, Power BI adapts to your needs, enhancing agility, visibility, and operational intelligence."
-          cards={WhoCanStartCards}
+        <SolutionSec
+          heading="Use Cases: What You Can Achieve with our Microsoft Power BI Consulting Services"
+          subheading="Power BI Consulting services help businesses to transform raw data into real-time, decision-ready insights. Whether you aim to unify systems, enable data self-service, or embed analytics into apps, Power BI adapts to your needs, enhancing agility, visibility, and operational intelligence."
+          techData={JSON_DATA.WhoCanStartCards}
         />
 
 
-
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfolioData}
             heading="Portfolio of Our Microsoft Power BI consulting services"
             description="At Comfygen, we deliver Microsoft Power BI consulting services that solve real problems and unlock real value. Our portfolio covers a wide range of industries and use cases—each project designed to meet specific business goals, streamline reporting, and turn data into a strategic advantage."
@@ -529,9 +482,10 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TechStack
           title="Tech Stack We Use for Microsoft Power BI Consulting Services"
           description="At Comfygen, we use a modern, enterprise-grade tech stack to deliver reliable and scalable Microsoft Power BI consulting services. From data integration to visualization and deployment, we work with technologies that ensure your dashboards are fast, secure, and built for scale."
+          customTechData={JSON_DATA.TechData}
         />
 
         <WhyChoose
@@ -558,4 +512,21 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+
 

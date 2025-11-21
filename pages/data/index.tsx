@@ -4,37 +4,26 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ecommerce.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TeckStack from "./components/TeckStack";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+// const ContactFromCenter = dynamic(
+//   () => import("../components/ContactFromCenter"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
 
 const Process = [
   {
@@ -308,23 +297,22 @@ export default function ClinicalApp(props: any) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/data/data-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Comprehensive Data Services Tailored to Your Business Needs"
-            ptag="Unlock the true value of your business data with Comfygen Technologies. We are a trusted data services company offering end-to-end solutions in data analytics, engineering, visualization, AI/ML, and big data. Whether you’re a startup, enterprise, or government body, we deliver future-ready data solutions tailored to your unique needs"
-            li="Custom Data Analytics & Engineering Solutions"
-            li1="Expertise in AI & Machine Learning Integration"
-            li2="Secure, Scalable, and Cloud-Based Data Infrastructure"
-            li3="Real-Time Dashboards & Business Intelligence Reporting"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <div className="overflow-hidden lg:pt-[30px]">
+        <HeroSectionForAllPages
+          heading="Comprehensive Data Services Tailored to Your Business Needs"
+          ptag="Unlock the true value of your business data with Comfygen Technologies. We are a trusted data services company offering end-to-end solutions in data analytics, engineering, visualization, AI/ML, and big data. Whether you’re a startup, enterprise, or government body, we deliver future-ready data solutions tailored to your unique needs"
+          li="Custom Data Analytics & Engineering Solutions"
+          li1="Expertise in AI & Machine Learning Integration"
+          li2="Secure, Scalable, and Cloud-Based Data Infrastructure"
+          li3="Real-Time Dashboards & Business Intelligence Reporting"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/data/data-hero.webp"
+        />
 
         <AboutSection
           title=""
@@ -339,11 +327,18 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="Our Complete Suite of Data Services Provides"
-          subtitle="We offer a full spectrum of data services tailored to help businesses turn raw data into measurable business outcomes. From data analytics and engineering to AI/ML and big data solutions, we build future-ready systems for growth, innovation, and operational intelligence."
-          servicesData={JSON_DATA.servicesData}
-        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Complete Suite of Data Services Provides
+              </h2>
+              <p className="text-base text-center font-normal">We offer a full spectrum of data services tailored to help businesses turn raw data into measurable business outcomes. From data analytics and engineering to AI/ML and big data solutions, we build future-ready systems for growth, innovation, and operational intelligence.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -380,15 +375,13 @@ export default function ClinicalApp(props: any) {
         </section>
 
 
-
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio of Data-Driven Success"
             description="We’ve empowered businesses across industries with custom data solutions that deliver measurable results. Here are a few real-world examples of how our data services transformed client operations, improved decisions, and fueled growth."
           />
         </section>
-
 
         <CallToAction
           heading="Let’s Make Your Data Work Smarter"
@@ -399,13 +392,19 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
-        <ProcessSection
-          title="Our Data Services Process"
-          description="We follow a structured, transparent, and result-driven approach to deliver intelligent data solutions. From planning to deployment, every step is designed to align with your business goals and provide measurable outcomes."
-          processSlides={Process}
-        />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Data Services Process</h2>
+              <p className="text-base font-normal mt-2">
+               We follow a structured, transparent, and result-driven approach to deliver intelligent data solutions. From planning to deployment, every step is designed to align with your business goals and provide measurable outcomes.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
         <TeckStack
           title="Tech Stack We Use in Data Services Development"

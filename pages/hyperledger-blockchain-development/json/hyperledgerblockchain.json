@@ -6,15 +6,15 @@
     "Use of Advanced and Latest Tech Trends",
     "Customized Decentralized Services As Per Business Needs"
   ],
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "AI-Powered Hyperledger",
       "subtitle": "",
       "description": "Comfygen combines the strength of Hyperledger <a class='underline' href='https://www.comfygen.com/blockchain-development' >blockchain development</a>  with the intelligence of <a class='underline' href='https://www.comfygen.com/ai-development' > artificial intelligence</a> (AI) to deliver smarter, future-ready enterprise AI-Powered Hyperledger Blockchain Development solutions. By integrating AI with Hyperledger, businesses gain real-time insights, automated processes, and enhanced security. ",
       "features": [
-        "Predictive Analytics", 
-        "Automated Smart Contracts", 
-        "Fraud Detection & Security " ,
+        "Predictive Analytics",
+        "Automated Smart Contracts",
+        "Fraud Detection & Security ",
         "Data-Driven Insights "
       ]
     },
@@ -22,78 +22,119 @@
       "title": "Hyperledger Blockchain Consultation",
       "subtitle": "",
       "description": "Our Hyperledger development services include the facility of consultation for your Hyperledger blockchain project. We identify the Hyperledger development framework that would align with your business use cases alongside offering promising value improvements.",
-      "features": ["Hyperledger Consultation", "Tailored Framework", "Improved Value" ,"Expert Guidance"]
+      "features": [
+        "Hyperledger Consultation",
+        "Tailored Framework",
+        "Improved Value",
+        "Expert Guidance"
+      ]
     },
     {
       "title": "UX and Technical Design",
       "subtitle": "",
       "description": "We deliver Hyperledger application development solutions complemented with competent UI/UX design services. Our team of Hyperledger developers offers high-fidelity designs with a clear outline of technical components, database design and user stories.",
-      "features": ["UI/UX Design", "Clear Technical Plan", "High-Quality Designs"]
+      "features": [
+        "UI/UX Design",
+        "Clear Technical Plan",
+        "High-Quality Designs"
+      ]
     },
     {
       "title": "Hyperledger App Development",
       "subtitle": "",
       "description": "Our Hyperledger application development services help you leverage different Hyperledger frameworks for creating intuitive dApps. We follow an agile software development methodology to ensure that your Hyperledger dApp serves the expected results.",
-      "features": ["Using Hyperledger Tools", "Flexible Development", "Easy-to-Use Apps"]
+      "features": [
+        "Using Hyperledger Tools",
+        "Flexible Development",
+        "Easy-to-Use Apps"
+      ]
     },
     {
       "title": "Hyperledger Smart Contract Development",
       "subtitle": "",
       "description": "Our Hyperledger smart contract development services help you create custom chain codes on Hyperledger Fabric. We emphasize comprehensive security and resilience of smart contract code for different use cases including business contracts and asset definitions.",
-      "features": ["Custom Chaincodes", "Security First", "Different Use Cases" ]
+      "features": [
+        "Custom Chaincodes",
+        "Security First",
+        "Different Use Cases"
+      ]
     },
     {
       "title": "Support & Maintenance",
       "subtitle": "",
       "description": "As a trusted Hyperledger blockchain development firm, we offer the assurance of post-development services such as continuous maintenance and support. Our support and maintenance services ensure the optimal performance of Hyperledger solutions with minimal downtime.",
-      "features": ["Ongoing Support", "Regular Maintenance", "Less Downtime" ]
-    } ,
+      "features": [
+        "Ongoing Support",
+        "Regular Maintenance",
+        "Less Downtime"
+      ]
+    },
     {
       "title": "Migration & Upgrades",
       "subtitle": "",
       "description": "You can rely on us for assistance in the processes for migrating or integrating legacy solutions into Hyperledger frameworks. We also help you incorporate any modifications to your new Hyperledger dApps.",
-      "features": ["Migration Support", "Upgrades"]
-    }
-    ,
+      "features": [
+        "Migration Support",
+        "Upgrades"
+      ]
+    },
     {
       "title": "Proof of Concept Development (POC)",
       "subtitle": "",
       "description": "We simplify the process of blockchain development with Hyperledger by providing a working Proof of Concept for your ideas. Our team visualizes the feasibility of a Hyperledger-based blockchain solution with Proof of Concept development services.",
-      "features": ["POC Creation", "Feasibility Testing", "Simplified Process" , "Real-World Visualization" ]
-    }
-    ,
+      "features": [
+        "POC Creation",
+        "Feasibility Testing",
+        "Simplified Process",
+        "Real-World Visualization"
+      ]
+    },
     {
       "title": "Hyperledger Private Blockchain Development",
       "subtitle": "",
       "description": "Hyperledger is a popular enterprise blockchain framework for building permissioned blockchains. We help you create a permissioned blockchain customized to your business requirements alongside incorporating essential access and control privileges.",
-      "features": ["Private Blockchain Creation", "Custom Solutions", "Access Control" , "Enterprise-Ready"]
-    }
-
-
-    ,
+      "features": [
+        "Private Blockchain Creation",
+        "Custom Solutions",
+        "Access Control",
+        "Enterprise-Ready"
+      ]
+    },
     {
       "title": "Hyperledger Cryptocurrency Development",
       "subtitle": "",
       "description": "Our Hyperledger development experts also specialize in cryptocurrency development to support your transition to the domain of crypto. Capitalize on our cryptocurrency development services to create unique native tokens for your permissioned blockchains.",
-      "features": ["Expertise in Crypto Solutions", "Native Token Creation" , "Support for Permissioned Blockchain"]
-    }
-    ,
+      "features": [
+        "Expertise in Crypto Solutions",
+        "Native Token Creation",
+        "Support for Permissioned Blockchain"
+      ]
+    },
     {
       "title": "Hyperledger & Multichain Development",
       "subtitle": "",
       "description": "Multichain development services help you leverage the benefits of interoperability. We can help you with Hyperledger and Multichain development services for creating private blockchains customized for managing the financial transactions of your business.",
-      "features": ["Private blockchain solutions", "Interoperability between blockchains", "Secure financial transaction management"]
-    }
-    ,
+      "features": [
+        "Private blockchain solutions",
+        "Interoperability between blockchains",
+        "Secure financial transaction management"
+      ]
+    },
     {
       "title": "Hyperledger Wallets Development",
       "subtitle": "",
       "description": "Our Hyperledger blockchain development solutions also include services for wallet development based on the Hyperledger framework. We help our clients make the most of Hyperledger for developing secure wallets that allow seamless access to digital assets.",
-      "features": ["Custom Wallets", "Strong Security", "Easy Integration" , "Works Everywhere" , "Easy Transactions" , "Scalable Solutions"]
+      "features": [
+        "Custom Wallets",
+        "Strong Security",
+        "Easy Integration",
+        "Works Everywhere",
+        "Easy Transactions",
+        "Scalable Solutions"
+      ]
     }
   ],
-
-    "servicesData1": [
+  "servicesData1": [
     {
       "title": "Enhanced Privacy and Confidentiality",
       "description": "OTC trading enables discreet transactions without publicly revealing trade details, protecting sensitive information and minimizing market impact. This ensures a more private trading environment than typical crypto exchange platforms.",
@@ -127,49 +168,77 @@
   ],
 
 
-    "CryptoTrading":[
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond the limitations of a standard token. Built on a powerful 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Designed for business, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
+      "link": "#"
+    },
+
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay facilitates instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). Designed for seamless peer-to-peer transfers, it guarantees secure and efficient digital payments. With the YatriPay Mobile App, users can easily onboard and access borderless transactions anytime, anywhere.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Operating under Mezo Energy Trading Limited (METL), it enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and efficiency, redefining energy trade and logistics.",
+      "link": "#"
+    },
+
+     {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, providing stability and value appreciation. Unlike fiat currency, it harnesses blockchain technology for enhanced security, transparency, and decentralized control. Croston enables secure transactions and regulated coin issuance while offering convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and drives a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    }
+  ],
+
+
+
+  "CryptoTrading": [
     {
       "num": "01",
       "title": "Predictive Supply Chain Optimization ",
-      "subtitle": "AI and Hyperledger enable enterprises to forecast demand accurately, minimize delays, reduce costs, and enhance efficiency, ensuring a smarter, transparent, and resilient logistics network."
+      "desc": "AI and Hyperledger enable enterprises to forecast demand accurately, minimize delays, reduce costs, and enhance efficiency, ensuring a smarter, transparent, and resilient logistics network."
     },
     {
       "num": "02",
       "title": "Intelligent Smart Contracts ",
-      "subtitle": "AI with Hyperledger to automate contract execution, reduce errors, ensure transparency, and enforce conditions accurately, enabling faster, secure, and reliable business transactions."
+      "desc": "AI with Hyperledger to automate contract execution, reduce errors, ensure transparency, and enforce conditions accurately, enabling faster, secure, and reliable business transactions."
     },
     {
       "num": "03",
       "title": "AI-Driven Compliance Monitoring",
-      "subtitle": "AI integrated with Hyperledger monitors transactions in real time, ensuring regulatory compliance, automating reporting, reducing manual errors, and minimizing risk for secure and reliable enterprise operations."
+      "desc": "AI integrated with Hyperledger monitors transactions in real time, ensuring regulatory compliance, automating reporting, reducing manual errors, and minimizing risk for secure and reliable enterprise operations."
     },
     {
       "num": "04",
       "title": "Fraud Detection & Anomaly Alerts",
-      "subtitle": "Hyperledger combined with AI identifies suspicious activities and anomalies instantly, preventing fraud, securing sensitive data, and maintaining trust across enterprise blockchain networks."
+      "desc": "Hyperledger combined with AI identifies suspicious activities and anomalies instantly, preventing fraud, securing sensitive data, and maintaining trust across enterprise blockchain networks."
     },
     {
       "num": "05",
       "title": "Real-Time Data Analytics",
-      "subtitle": "AI-powered Hyperledger solutions analyze blockchain data in real time, providing actionable insights, supporting informed decisions, and optimizing business processes for scalability and efficiency."
+      "desc": "AI-powered Hyperledger solutions analyze blockchain data in real time, providing actionable insights, supporting informed decisions, and optimizing business processes for scalability and efficiency."
     },
     {
       "num": "06",
       "title": "Customer Experience Personalization",
-      "subtitle": "AI with Hyperledger enables tailored services by analyzing user behavior and preferences, improving engagement, satisfaction, and loyalty while delivering smarter, personalized enterprise blockchain experiences."
+      "desc": "AI with Hyperledger enables tailored services by analyzing user behavior and preferences, improving engagement, satisfaction, and loyalty while delivering smarter, personalized enterprise blockchain experiences."
     }
   ],
-  
- 
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Benefits of Hyperledger Blockchain Development",
       "desc": "Choosing Hyperledger blockchain development with Comfygen empowers enterprises to develop secure, scalable, and intelligent blockchain systems. Our AI-integrated Hyperledger Blockchain Development solutions deliver measurable advantages across industries such as finance, healthcare, supply chain, and retail."
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Enhanced Data Security ",
       "desc": "Hyperledger’s permissioned networks provide controlled access, protect sensitive enterprise data, prevent unauthorized transactions, and ensure compliance with industry regulations."
@@ -195,14 +264,13 @@
       "desc": "Businesses can also capitalize on the security benefits of Hyperledger for ensuring safeguards for private data such as digital keys, thereby facilitating privacy according to the context."
     }
   ],
-
- "Qa":[
+  "Qa": [
     {
       "num": "1",
       "title": " Flexible Client Engagement Models for Hyperledger Blockchain Development"
     }
   ],
-  "Whycomfygen" : [
+  "Whycomfygen": [
     {
       "num": "1",
       "title": "Providing Dedicated Team of Hyperledger Developers",
@@ -219,8 +287,6 @@
       "desc": "The project-based approach among our engagement models helps you make the most of our specialized expertise for projects in specific industries. We can help you choose proficient experts for addressing the unique requirements of your Hyperledger projects."
     }
   ],
-
-
   "pageData": {
     "title": "Why Choose Comfygen for Your Hyperledger Blockchain Development?",
     "description": "At Comfygen, we work continuously to ensure that our Hyperledger application development services deliver effective value advantages to our clients. As one of the emerging leaders in Hyperledger development, we offer the following reasons to choose us for your next Hyperledger project.",
@@ -254,8 +320,7 @@
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
         "title": "24/7 Client Support",
         "description": "Our team of Hyperledger development experts could cater to the diverse needs of clients from different industries. With years of experience in working on Hyperledger projects, our experts can adapt to emerging changes in the blockchain and web3 landscape."
-      }
-      ,
+      },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
         "title": "Flexible Pricing",
@@ -263,7 +328,6 @@
       }
     ]
   },
-  
   "Hire": [
     {
       "num": "1",

@@ -3,36 +3,35 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hyperledgerblockchain.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import LatestTechnology from "../components/LatestTechnology";
-import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters, IconLayout, IconRobot, IconRocket, IconWindmill, IconWiper, } from '@tabler/icons-react';
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import Solutions from "../Newcomponet/SectionCompoent/Solution";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
 
 
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+
+
+
+
+
+
+
 
 const Process = [
   {
@@ -149,7 +148,7 @@ const technologyData = [
 ];
 
 
-export default function Blockchain(props) {
+export default function Blockchain(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -245,66 +244,7 @@ export default function Blockchain(props) {
     ]
   };
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond the limitations of a standard token. Built on a powerful 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Designed for business, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay facilitates instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). Designed for seamless peer-to-peer transfers, it guarantees secure and efficient digital payments. With the YatriPay Mobile App, users can easily onboard and access borderless transactions anytime, anywhere.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is revolutionizing energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Operating under Mezo Energy Trading Limited (METL), it enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless flow of resources. Powered by blockchain technology, Mezovest delivers transparency, security, and efficiency, redefining energy trade and logistics.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, providing stability and value appreciation. Unlike fiat currency, it harnesses blockchain technology for enhanced security, transparency, and decentralized control. Croston enables secure transactions and regulated coin issuance while offering convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and drives a decentralized marketplace with standardized blockchain development solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-    ],
-  };
+
 
   const jsonLdData = [
     {
@@ -515,7 +455,7 @@ export default function Blockchain(props) {
 
 
   return (
-    <div className="overflow-hidden">
+    <>
       <Head>
         <title>Hyperledger Blockchain Development Services | AI-Powered Enterprise Solutions – Comfygen
         </title>
@@ -616,150 +556,131 @@ export default function Blockchain(props) {
 
       </Head>
       <BlockchainNav />
-      {/* <div className=" ">
-        <div>
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/hyperledger-blockchain-development-hero-img.webp')]">
-            <HeroSectionForAllPages
-              heading="Leading Hyperledger Blockchain Development Service Provider Company"
-              ptag="Unlock new possibilities with our Hyperledger blockchain development services, designed to simplify blockchain adoption for businesses. Our expert team provides secure, scalable, and modular Hyperledger solutions, empowering businesses for transformation."
-              li="Secure, Trusted Framework"
-              li1="Custom Solutions for Capital Markets"
-              li2="Scalable & Modular Development"
-              li3="Empowering Global Blockchain Adoption"
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-            />
+      <div className="overflow-hidden">
+        <HeroSectionForAllPages
+          heading="Hyperledger Blockchain Development Service "
+          ptag="Comfygen specializes in delivering secure, scalable, and AI-powered Hyperledger blockchain development services designed for enterprises across industries. Our Blockchain Development team takes advantage of frameworks like Hyperledger Fabric, Sawtooth, and Indy to design permissioned networks that ensure privacy, transparency, and trust. By integrating artificial intelligence (AI), we enhance automation, predictive analytics, and fraud detection for smarter decision-making."
+          li="Secure, Trusted FrameworkSecure, permissioned Hyperledger frameworks for enterprise use."
+          li1="AI integration for predictive analytics and intelligent automation."
+          li2="End-to-end blockchain consulting, development, and deployment."
+          li3="Scalable solutions tailored for finance, healthcare, supply chain, and more."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/hyperledger-blockchain-development-hero-img.webp"
+        />
+
+        <AboutSection
+          title="About Company"
+          heading="Why Hyperledger Blockchain Development for Enterprises?"
+          description1="Hyperledger is a leading open-source, permissioned blockchain framework specifically designed for enterprises that need high security, scalability, and interoperability. Unlike public blockchains, Hyperledger Blockchain make sure of privacy and trust in data exchange, making it the right choice for industries such as finance, healthcare, supply chain, and government."
+          description2="With the integration of artificial intelligence (AI), Hyperledger unlocks advanced features like predictive analytics, automated compliance, and fraud detection, enabling enterprises to operate smarter and faster."
+          points={[
+            "Secure, permissioned networks ensure controlled access and data privacy.",
+            "AI-driven automation improves decision-making and reduces operational risks.",
+            "Scalable frameworks like Fabric, Indy, and Sawtooth support enterprise growth.",
+            "Real-time analytics and transparency boost trust across ecosystems."
+          ]}
+
+          imageSrc="https://www.comfygen.com/gallery/about-images/hyperledger-blockchain-development-about-img.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Hyperledger Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide end-to-end Hyperledger blockchain development services developed for enterprises' needs, secure, scalable, and AI-powered solutions. Our expertise spans multiple Hyperledger frameworks, ensuring that your business gets the right blockchain architecture for maximum efficiency.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
           </div>
-        </div>
-      </div> */}
+        </section>
 
-      <HeroSectionForAllPages
-        heading="Hyperledger Blockchain Development Service "
-        ptag="Comfygen specializes in delivering secure, scalable, and AI-powered Hyperledger blockchain development services designed for enterprises across industries. Our Blockchain Development team takes advantage of frameworks like Hyperledger Fabric, Sawtooth, and Indy to design permissioned networks that ensure privacy, transparency, and trust. By integrating artificial intelligence (AI), we enhance automation, predictive analytics, and fraud detection for smarter decision-making."
-        li="Secure, Trusted FrameworkSecure, permissioned Hyperledger frameworks for enterprise use."
-        li1="AI integration for predictive analytics and intelligent automation."
-        li2="End-to-end blockchain consulting, development, and deployment."
-        li3="Scalable solutions tailored for finance, healthcare, supply chain, and more."
-        btnName="Talk With Expert"
-        btnLink="/contact-us"
-        openModal={openModal}
-        talkToExpertModal={talkToExpertModal}
-        setTalkToExpertModal={setTalkToExpertModal}
-        closeModal={closeModal}
-        bgImage="https://www.comfygen.com/herosection/hyperledger-blockchain-development-hero-img.webp"
-      />
 
-      <AboutSection
-        title="About Company"
-        heading="Why Hyperledger Blockchain Development for Enterprises?"
-        description1="Hyperledger is a leading open-source, permissioned blockchain framework specifically designed for enterprises that need high security, scalability, and interoperability. Unlike public blockchains, Hyperledger Blockchain make sure of privacy and trust in data exchange, making it the right choice for industries such as finance, healthcare, supply chain, and government."
-        description2="With the integration of artificial intelligence (AI), Hyperledger unlocks advanced features like predictive analytics, automated compliance, and fraud detection, enabling enterprises to operate smarter and faster."
-        points={[
-          "Secure, permissioned networks ensure controlled access and data privacy.",
-          "AI-driven automation improves decision-making and reduces operational risks.",
-          "Scalable frameworks like Fabric, Indy, and Sawtooth support enterprise growth.",
-          "Real-time analytics and transparency boost trust across ecosystems."
-        ]}
 
-        imageSrc="https://www.comfygen.com/gallery/about-images/hyperledger-blockchain-development-about-img.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-      <ContactFromCenter />
-      {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Gain Insight into Our All-Round Hyperledger Blockchain Development Services</h2>
+        <LatestTechnology
+          heading="Tools & Technologies We Utilize for Hyperledger Blockchain Development Solutions "
+          subheading="Our team at Comfygen believes in empowering businesses in almost every sector to capitalize on the benefits of Hyperledger Blockchain Development. We can help you create custom blockchain solutions based on the following Hyperledger Blockchain Application Development Services frameworks."
+          techData={technologyData}
+        />
+
+        <Solutions heading="AI in Hyperledger Blockchain Development" subheading="The fusion of AI and Hyperledger blockchain development is transforming how enterprises manage data, automate processes, and ensure compliance. Hyperledger provides a secure, permissioned framework, while AI adds intelligence through automation and predictive insights. Together, they create powerful enterprise-grade solutions that improve efficiency and trust." techData={JSON_DATA.CryptoTrading} />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Hyperledger Blockchain Based Portfolio"
+            description="Explore our portfolio of successful projects built on the Hyperledger Blockchain development, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
+          />
+        </section>
+
+
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/media/images/how-do-we-serve-our-clients.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+        <CallToAction
+          heading="Is there Anything Else You Need Help With?"
+          text="If you have any doubts regarding our Hyperledger blockchain development services, you can always reach us through multiple channels. Get ready for your consultation with our Hyperledger development experts before taking the first step for developing blockchain applications with Hyperledger."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Hyperledger Blockchain Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a structured Hyperledger blockchain development process to deliver secure, scalable, and AI-powered blockchain development enterprise solutions. Each step ensures efficiency, transparency, and reliability across your blockchain projects.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
           </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section> */}
+        </section>
+        {/* <IndustriesServe /> */}
+        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
 
-      <ServicesSec
-        servicesData={JSON_DATA.servicesData}
-        title="Comprehensive Hyperledger Blockchain Development Services"
-        description="At Comfygen, we provide end-to-end Hyperledger blockchain development services developed for enterprises' needs, secure, scalable, and AI-powered solutions. Our expertise spans multiple Hyperledger frameworks, ensuring that your business gets the right blockchain architecture for maximum efficiency.
-"
-      />
-
-
-      <LatestTechnology
-        heading="Tools & Technologies We Utilize for Hyperledger Blockchain Development Solutions "
-        subheading="Our team at Comfygen believes in empowering businesses in almost every sector to capitalize on the benefits of Hyperledger Blockchain Development. We can help you create custom blockchain solutions based on the following Hyperledger Blockchain Application Development Services frameworks."
-        techData={technologyData}
-      />
-
-      <SolutionsFeature title="AI in Hyperledger Blockchain Development" subtitle="The fusion of AI and Hyperledger blockchain development is transforming how enterprises manage data, automate processes, and ensure compliance. Hyperledger provides a secure, permissioned framework, while AI adds intelligence through automation and predictive insights. Together, they create powerful enterprise-grade solutions that improve efficiency and trust." data={JSON_DATA.CryptoTrading} />
-
-      <PortfolioSec
-        techData={techDataForPage1}
-        heading=" Explore Our Hyperledger Blockchain Based Portfolio"
-        description="Explore our portfolio of successful projects built on the Hyperledger Blockchain development, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-      />
+        <HireDeveloper
+          heading="Hire Hyperledger Blockchain Developers"
+          text="Leverage the expertise of our professionals for designing a <a class='text-blue-600' href='/smart-contract-development'> Smart Contract Development </a>  or creating your permissioned Hyperledger Blockchain Development network. Our top-notch Hyperledger Blockchain Developers have been enhancing their expertise with years of continuous efforts in working on Hyperledger Blockchain Development Services. You can hire Hyperledger Blockchain Developers with the flexibility of choosing the engagement model, according to the desired use case."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Team of Qualified and Skilled Developers",
+            "Blockchain Programmers with Years of Experience",
+            "Customer Support and Chatbots for 24*7 Assistance",
+            "Use of Advanced and Latest Tech Trends"
+          ]}
+        />
 
 
-      <ConsultancyApproach
-        Head={JSON_DATA.consultancyHead}
-        ItemData={JSON_DATA.consultancyData}
-        imageSrc="https://www.comfygen.com/media/images/how-do-we-serve-our-clients.webp"
-        buttonText="Let’s Discuss"
-        buttonLink="/contact-us"
-      />
+        <Faq
+          faqData={JSON_DATA.Frequently}
+          title="Hyperledger Blockchain Development"
+        />
+      </div>
 
-      <CallToAction
-        heading="Is there Anything Else You Need Help With?"
-        text="If you have any doubts regarding our Hyperledger blockchain development services, you can always reach us through multiple channels. Get ready for your consultation with our Hyperledger development experts before taking the first step for developing blockchain applications with Hyperledger."
-        buttonText="Get Started"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Future of Technology"
-      />
-      <section className="bg-[#F5F5F9] lg:py-16 py-10">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <div className="text-center">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Hyperledger Blockchain Development Process</h2>
-            <p className="text-base font-normal mt-2">
-              At Comfygen, we follow a structured Hyperledger blockchain development process to deliver secure, scalable, and AI-powered blockchain development enterprise solutions. Each step ensures efficiency, transparency, and reliability across your blockchain projects.
-            </p>
-          </div>
-          <ProcessSec processSlides={Process} />
-        </div>
-      </section>
-      {/* <IndustriesServe /> */}
-      <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-
-      <HireDeveloper
-        heading="Hire Hyperledger Blockchain Developers"
-        text="Leverage the expertise of our professionals for designing a <a class='text-blue-600' href='/smart-contract-development'> Smart Contract Development </a>  or creating your permissioned Hyperledger Blockchain Development network. Our top-notch Hyperledger Blockchain Developers have been enhancing their expertise with years of continuous efforts in working on Hyperledger Blockchain Development Services. You can hire Hyperledger Blockchain Developers with the flexibility of choosing the engagement model, according to the desired use case."
-        buttonText="Hire Developer"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Team of Qualified and Skilled Developers",
-          "Blockchain Programmers with Years of Experience",
-          "Customer Support and Chatbots for 24*7 Assistance",
-          "Use of Advanced and Latest Tech Trends"
-        ]}
-      />
-
-
-      <Faq
-        faqData={JSON_DATA.Frequently}
-        title="Hyperledger Blockchain Development"
-      />
-    </div>
+    </>
   );
 }

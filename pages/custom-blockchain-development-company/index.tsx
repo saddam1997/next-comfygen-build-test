@@ -2,20 +2,18 @@ import { useState } from "react";
 import React from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/blockchain.json";
-
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import ProcessSec from "../componentsnew/ProcessSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import TechStack from "../componentsnew/TechStack";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import Faq from "../componentsnew/Faq";
-import CallToAction from "../components/CallToAction";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import IndustriesServe from "../components/IndustriesServe";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 const Process = [
@@ -49,69 +47,10 @@ const Process = [
   },
 
 ];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      based: "Blockchain-based Cryptocoin Development",
-      name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      head: "Croston ",
-      based: "Decentralized Blockchain-based Coin Development",
-      name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      based: "Peer-to-Peer Blockchain Development",
-      name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      head: "Mezovest",
-      based: "Blockchain Logistics Software Development Solutions",
-      name: "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
 
 
-export default function Blockchain(props:any) {
+
+export default function Blockchain(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -124,8 +63,6 @@ export default function Blockchain(props:any) {
 
 
   const jsonLdData = [
-   
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -286,7 +223,7 @@ export default function Blockchain(props:any) {
 
 
   return (
-    <div className="overflow-hidden">
+    <>
       <Head>
         <title> Custom Blockchain Development Company | Enterprise Blockchain Solutions </title>
         <meta
@@ -321,96 +258,139 @@ export default function Blockchain(props:any) {
         />
       </Head>
 
-      <BlockchainNav />
-      <HeroSectionForAllPages
-        heading="Custom Blockchain Development Company"
-        ptag="As a leading custom blockchain development company, Confygen delivers specially designed, scalable, and transparent blockchain ecosystems that empower businesses to innovate with confidence. Our custom blockchain solutions are designed to meet diverse business goals—whether it’s building enterprise blockchain applications for financial transparency or developing decentralized apps (DApps) for secure digital transactions."
-        li="Custom Blockchain Solutions"
-        li1="Enterprise Blockchain Development"
-        li2="Smart Contract Integration"
-        li3="Blockchain Software Development Services"
-        btnName="Talk With Expert"
-        btnLink="/contact-us"
-        openModal={openModal}
-        talkToExpertModal={talkToExpertModal}
-        setTalkToExpertModal={setTalkToExpertModal}
-        closeModal={closeModal}
-        bgImage="https://www.comfygen.com/herosection/blockchain-development-hero-img.webp"
-      />
-      <AboutSection
-        title=""
-        heading="Why Businesses Choose Custom Blockchain Solutions"
-        description1="In the digital world, companies are increasingly adopting custom blockchain development solutions to enhance efficiency, security, and transparency. Unlike off-the-shelf software, custom blockchain development provides tailored architectures according to business needs while ensuring scalability, reliability, and regulatory compliance. All the industries like finance, healthcare, supply chain, logistics, gaming, and real estate are leveraging blockchain technology."
-        description2="<b>Enhanced Security & Data Protection</b> – secure transactions and sensitive information with tamper-proof, encrypted blockchain networks"
-        description3="<b>High Performance & Scalability</b>– enterprise-grade blockchain applications capable of handling millions of transactions efficiently"
-        description4="<b>Transparency & Auditability</b> – immutable ledgers and smart contract automation boost accountability and trust among clients and partners"
-        description5="<b>Tailored Industry-Specific Solutions</b> – fully customized blockchain apps, dApps, and DeFi platforms built for your business vertical"
-        points={
-          []
-        }
-        imageSrc="https://www.comfygen.com/gallery/about-images/blockchain-development-about-image.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-      <ServicesSec
-        servicesData={JSON_DATA.servicesData}
-        title="Our Custom Blockchain Development Services"
-        description="Comfygen, a <a class='underline text-blue-500' href='https://www.comfygen.com/blockchain-development'>Blockchain development company</a>, specializes in providing custom blockchain development services that empower businesses to harness the full potential of decentralized technology. Our blockchain developer team builds secure, scalable, and tailored blockchain applications for startups, enterprises, and global brands."
-      />
-      <CallToAction
-        heading="Ready to Launch Your Custom Blockchain Project?"
-        text="Build Your Custom Blockchain Solution with Comfygen Today and stay ahead in the digital economy."
-        buttonText="Get Started"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Future of Technology"
-      />
-      {/* <ContactFromCenter /> */}
-      <ProcessSec
-        title="Our Custom Blockchain Development Process"
-        description="Comfygen, a leading custom blockchain development company, follows a strategic and agile process to deliver innovative custom blockchain development solutions tailored to your business needs. Here’s how we do it"
-        processSlides={Process}
-      />
-      <TechStack
-        title="Our Custom Blockchain Development Technology Stack"
-        description="As a leading custom blockchain app development company, we use cutting-edge technologies and platforms to build secure and scalable blockchain solutions tailored to your business needs."
-      />
-      <PortfolioSec
-        techData={techDataForPage1}
-        heading="Case Studies: Successful Custom Blockchain Projects"
-        description="Explore Comfygen’s diverse portfolio of successful projects powered by our custom blockchain development services. As a trusted custom blockchain development company, we have delivered secure, scalable, and innovative blockchain solutions across industries, including <a class='text-blue-700 font-semibold' href='/defi-development-company'>DeFi development</a> , NFT marketplaces,  <a class='text-blue-700 font-semibold' href='/crypto-wallet-development'>cryptocurrency wallet development</a> , and supply chain management. Our team of expert custom blockchain developers leverages advanced blockchain development technology to build tailored solutions on leading platforms like Polygon, Ethereum, and Hyperledger."
-      />
+      <div className="">
+        <BlockchainNav />
+      </div>
 
-      <IndustriesServe
-        heading="Industries We Serve with Custom Blockchain Solutions"
-        description="At Comfygen, we deliver blockchain solutions that drive innovation across various industries. Our experience spans sectors like finance, healthcare, supply chain, real estate, gaming, and more. Whether you're looking to enhance security, improve transparency, or streamline operations, our custom blockchain application development services are tailored to meet the unique needs of each industry. We help businesses harness the power of blockchain technology to stay competitive and future-ready."
-        sliderData={JSON_DATA.IndustriesServe}
-      />
-      <HireDeveloper
-        heading="Hire Expert Custom Blockchain Developers"
-        text="Hire certified blockchain developers from Comfygen to build secure, scalable, and custom blockchain development solutions. Our team brings proven expertise in multiple blockchain platforms and industries."
-        buttonText="Hire Developer"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Custom Solutions",
-          "Secure Coding",
-          "Flexible Hiring Models",
-          "Faster Time-to-Market"
-        ]}
-      />
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-      <Faq
-        faqData={JSON_DATA.Frequently}
-        title=" About Blockchain Technology"
-      />
-      {/*<BlogSection initialData={initialData} />*/}
-    </div>
+      <div className="overflow-hidden lg:pt-[100px]">
+        <HeroSectionForAllPages
+          heading="Custom Blockchain Development Company"
+          ptag="As a leading custom blockchain development company, Confygen delivers specially designed, scalable, and transparent blockchain ecosystems that empower businesses to innovate with confidence. Our custom blockchain solutions are designed to meet diverse business goals—whether it’s building enterprise blockchain applications for financial transparency or developing decentralized apps (DApps) for secure digital transactions."
+          li="Custom Blockchain Solutions"
+          li1="Enterprise Blockchain Development"
+          li2="Smart Contract Integration"
+          li3="Blockchain Software Development Services"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/blockchain-development-hero-img.webp"
+        />
+        <AboutSection
+          title=""
+          heading="Why Businesses Choose Custom Blockchain Solutions"
+          description1="In the digital world, companies are increasingly adopting custom blockchain development solutions to enhance efficiency, security, and transparency. Unlike off-the-shelf software, custom blockchain development provides tailored architectures according to business needs while ensuring scalability, reliability, and regulatory compliance. All the industries like finance, healthcare, supply chain, logistics, gaming, and real estate are leveraging blockchain technology."
+          description2="<b>Enhanced Security & Data Protection</b> – secure transactions and sensitive information with tamper-proof, encrypted blockchain networks"
+          description3="<b>High Performance & Scalability</b>– enterprise-grade blockchain applications capable of handling millions of transactions efficiently"
+          description4="<b>Transparency & Auditability</b> – immutable ledgers and smart contract automation boost accountability and trust among clients and partners"
+          description5="<b>Tailored Industry-Specific Solutions</b> – fully customized blockchain apps, dApps, and DeFi platforms built for your business vertical"
+          points={
+            []
+          }
+          imageSrc="https://www.comfygen.com/gallery/about-images/blockchain-development-about-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Custom Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen, a <a className=' text-blue-500' href='https://www.comfygen.com/blockchain-development'>Blockchain development company</a>  specializes in providing custom blockchain development services that empower businesses to harness the full potential of decentralized technology. Our blockchain developer team builds secure, scalable, and tailored blockchain applications for startups, enterprises, and global brands.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <CallToAction
+          heading="Ready to Launch Your Custom Blockchain Project?"
+          text="Build Your Custom Blockchain Solution with Comfygen Today and stay ahead in the digital economy."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+        {/* <ContactFromCenter /> */}
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Custom Blockchain Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               Comfygen, a leading custom blockchain development company, follows a strategic and agile process to deliver innovative custom blockchain development solutions tailored to your business needs. Here’s how we do it
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <TechStack
+          title="Our Custom Blockchain Development Technology Stack"
+          description="As a leading custom blockchain app development company, we use cutting-edge technologies and platforms to build secure and scalable blockchain solutions tailored to your business needs."
+          customTechData={JSON_DATA.TechData}
+        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Case Studies: Successful Custom Blockchain Projects"
+            description="Explore Comfygen’s diverse portfolio of successful projects powered by our custom blockchain development services. As a trusted custom blockchain development company, we have delivered secure, scalable, and innovative blockchain solutions across industries, including <a class='text-blue-700 font-semibold' href='/defi-development-company'>DeFi development</a> , NFT marketplaces,  <a class='text-blue-700 font-semibold' href='/crypto-wallet-development'>cryptocurrency wallet development</a> , and supply chain management. Our team of expert custom blockchain developers leverages advanced blockchain development technology to build tailored solutions on leading platforms like Polygon, Ethereum, and Hyperledger."
+          />
+        </section>
+
+
+        <IndustriesServe
+          heading="Industries We Serve with Custom Blockchain Solutions"
+          description="At Comfygen, we deliver blockchain solutions that drive innovation across various industries. Our experience spans sectors like finance, healthcare, supply chain, real estate, gaming, and more. Whether you're looking to enhance security, improve transparency, or streamline operations, our custom blockchain application development services are tailored to meet the unique needs of each industry. We help businesses harness the power of blockchain technology to stay competitive and future-ready."
+          sliderData={JSON_DATA.IndustriesServe}
+        />
+        <HireDeveloper
+          heading="Hire Expert Custom Blockchain Developers"
+          text="Hire certified blockchain developers from Comfygen to build secure, scalable, and custom blockchain development solutions. Our team brings proven expertise in multiple blockchain platforms and industries."
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Custom Solutions",
+            "Secure Coding",
+            "Flexible Hiring Models",
+            "Faster Time-to-Market"
+          ]}
+        />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+        <Faq
+          faqData={JSON_DATA.Frequently}
+          title=" About Blockchain Technology"
+        />
+        {/*<BlogSection initialData={initialData} />*/}
+      </div>
+    </>
   );
+}
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

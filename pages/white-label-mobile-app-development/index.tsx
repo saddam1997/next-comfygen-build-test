@@ -10,24 +10,22 @@ import {
   IconReportSearch,
   IconSignal5g,
 } from "@tabler/icons-react";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import ProcessSec from "../componentsnew/ProcessSec";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import Faq from "../components/Faq";
-
-import AboutSection from "../componentsnew/AboutSection";
-import Header from "../componentsnew/Header";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import IndustriesForm from "../mobile-app-development/components/Industries";
-import CallToAction from "../componentsnew/CallToAction";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import Sponser from "../Newcomponet/comman/Sponser";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -167,7 +165,7 @@ const faqPageSchema = {
 };
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -481,7 +479,7 @@ export default function Mobile(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <AboutSection
           title=""
           heading="White Label App Development Company for Agencies, Startups & Enterprises"
@@ -492,14 +490,20 @@ export default function Mobile(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
+        <Sponser />
 
-        <IndustriesForm />
-
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="End-to-End White Label Mobile App Development Services Tailored for Your Brand"
-          description="At Comfygen, we offer end-to-end white label mobile app development services that cover everything from app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application solutions are tailored to meet your business goals quickly and affordably."
-        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >End-to-End White Label Mobile App Development Services Tailored for Your Brand
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end white label mobile app development services that cover everything from app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application solutions are tailored to meet your business goals quickly and affordably.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -509,17 +513,13 @@ export default function Mobile(props: any) {
           buttonLink="/contact-us"
         />
 
-
-
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Portfolio of Successful Mobile App Projects"
             description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
           />
         </section>
-
-
 
         <CallToAction
           heading="Ready to Launch Your Own Branded Mobile App?"
@@ -530,16 +530,24 @@ export default function Mobile(props: any) {
           imageAlt="Future of Technology"
         />
 
-        <ProcessSec
-          title="Our White Label App Development Process"
-          description="At Comfygen, we follow a structured process to deliver top-notch white-label mobile app solutions that are scalable, secure, and ready to launch. As an affordable white-label mobile app development agency, we help you build fully branded apps quickly with our proven and flexible approach."
-          processSlides={Process}
-        />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our White Label App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a structured process to deliver top-notch white-label mobile app solutions that are scalable, secure, and ready to launch. As an affordable white-label mobile app development agency, we help you build fully branded apps quickly with our proven and flexible approach.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
-        <NewTeckStack
+        <TechStack
+          customTechData={null}
           title="Full Stack Technology for Scalable White Label App Development"
           description="We follow a full-stack development approach to build flexible, scalable white label mobile apps. From UI to backend, DevOps to QA, we deliver rebrandable, high-performance apps tailored to your industry and business goals. Our solutions are secure, fast, and built to meet today’s and tomorrow’s digital demands."
         />
+
 
         <LatestTechnology
           heading="Adopting the Latest Tech Trends in White Label App Development"
@@ -585,4 +593,19 @@ export default function Mobile(props: any) {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

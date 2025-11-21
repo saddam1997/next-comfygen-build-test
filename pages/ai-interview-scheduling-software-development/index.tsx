@@ -4,96 +4,24 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/aiinterviewschedulingsoftwaredevelopment.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import PortfolioSecs from "../components/PortfolioSec";
-import CardGrid from "../components/CardGrid";
-import {
-  IconBrain,
-  IconDeviceGamepad2,
 
-  IconUsersGroup,
-  IconVideo,
-  IconRobot,
-  IconRefresh,
-  IconMail,
-  IconTools,
-  IconUsers,
-  IconLanguage,
-} from "@tabler/icons-react";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-
-
-
-
-
-
-
-const tabsData = [
-  {
-    id: "account",
-    label: "Account",
-    title: "User App Panel",
-    description: "Creating a successful dating application requires a blend of innovative features...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Make changes to your account here.",
-      "Customize profile settings.",
-      "Privacy and security settings.",
-      "Manage subscriptions.",
-      "View match suggestions.",
-    ],
-  },
-  {
-    id: "admin",
-    label: "Admin",
-    title: "Admin Panel",
-    description: "Manage user activities and system settings from the admin panel...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "User management dashboard.",
-      "Monitor app performance.",
-      "Control premium features.",
-      "Review user reports.",
-      "Analytics and insights.",
-    ],
-  },
-  {
-    id: "vendor",
-    label: "Vendor",
-    title: "Vendor Panel",
-    description: "Vendors can manage advertisements, services, and payments...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Advertise on the platform.",
-      "Manage service bookings.",
-      "Track payments.",
-      "Analyze revenue reports.",
-      "Engage with users.",
-    ],
-  },
-];
 
 const jsonLdData = [
   {
@@ -428,23 +356,27 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="AI Interview Scheduler Software Development Company"
-            ptag="Partner with industry's leading AI interview scheduling software development company that has delivered top-notch AI interview scheduling software. We create intelligent, scalable, and fully customized automated interview scheduling software designed to optimize your recruitment workflow. Whether you're a growing startup or an enterprise, our AI-powered solutions bring innovation, speed, and accuracy to your talent acquisition process."
-            li="Modern UI/UX for Seamless Scheduling"
-            li1="10+ Years of Custom Software Development"
-            li2="Timely Delivery with Agile Execution"
-            li3="AI-Driven Automation & Smart Job Recommendations"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+
+
+      <div className="overflow-hidden lg:pt-[10px]">
+
+        <HeroSectionForAllPages
+          heading="AI Interview Scheduler Software Development Company"
+          ptag="Partner with industry's leading AI interview scheduling software development company that has delivered top-notch AI interview scheduling software. We create intelligent, scalable, and fully customized automated interview scheduling software designed to optimize your recruitment workflow. Whether you're a growing startup or an enterprise, our AI-powered solutions bring innovation, speed, and accuracy to your talent acquisition process."
+          li="Modern UI/UX for Seamless Scheduling"
+          li1="10+ Years of Custom Software Development"
+          li2="Timely Delivery with Agile Execution"
+          li3="AI-Driven Automation & Smart Job Recommendations"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-hero.webp"
+        />
+
         <AboutSection
           heading="AI Interview Scheduler Software Development Tailored to Your Hiring Needs"
           description1="At Comfygen, we specialize in AI-powered interview scheduler software development that transforms the way enterprises manage interviews. Our intelligent platforms eliminate manual coordination, enabling HR teams to focus on what truly matters—finding the right talent."
@@ -454,13 +386,23 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSection
-          heading="All-in-One AI Interview Scheduling Software Development Services by Comfygen"
-          subtitle="Our AI-powered interview scheduling software development services are tailored to meet the unique needs of startups, staffing agencies, and large enterprises, helping you transform how you hire."
-          servicesData={JSON_DATA.servicesData} />
+        {/* <ContactFromCenter /> */}
 
-        <CardGrid
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >All-in-One AI Interview Scheduling Software Development Services by Comfygen
+              </h2>
+              <p className="text-base text-center font-normal">Our AI-powered interview scheduling software development services are tailored to meet the unique needs of startups, staffing agencies, and large enterprises, helping you transform how you hire.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+        <CardItem
           heading="Unlock Seamless Hiring with Our AI Interview Scheduling Software Features"
           subheading="Empower your recruitment process with Comfygen’s feature-rich AI interview scheduler software development services. Our AI interview scheduling app development solutions are designed to automate, optimize, and scale your hiring workflow using intelligent features tailored for modern HR teams and enterprises."
           techData={JSON_DATA.CardGridData}
@@ -477,15 +419,30 @@ export default function Ecommerce(props) {
         <CoreFeaturesSection
           title="Advanced AI Capabilities That Redefine Recruitment"
           subtitle="Our AI interview scheduler software development services come packed with next-level intelligence to help you hire faster, smarter, and bias-free. Explore the powerful features our platform delivers right out of the box:"
-          features={JSON_DATA.LeadingSoftware} />
-        <PortfolioSecs
-          techData={JSON_DATA.techDataForPage1}
-          heading="Our AI-Powered Interview Scheduling Software Portfolio"
-          description="EExplore our portfolio of advanced AI interview scheduler software development solutions, built for modern enterprises and hiring teams. Platforms are designed to be user-centric, automated, and seamlessly integrated."
+          features={JSON_DATA.LeadingSoftware}
         />
 
-        <ProcessSection title="End-to-End Recruitment Suite Integration"
-          description="Our AI-powered recruitment software development process delivers a fully integrated, feature-rich hiring ecosystem tailored to streamline your entire talent acquisition journey—from attraction to onboarding. We combine automation, AI, and user-centric design to ensure hiring efficiency, brand consistency, and candidate engagement." processSlides={JSON_DATA.Process} />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our AI-Powered Interview Scheduling Software Portfolio"
+            description="Explore our portfolio of advanced AI interview scheduler software development solutions, built for modern enterprises and hiring teams. Platforms are designed to be user-centric, automated, and seamlessly integrated."
+          />
+        </section>
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End Recruitment Suite Integration</h2>
+              <p className="text-base font-normal mt-2">
+               Our AI-powered recruitment software development process delivers a fully integrated, feature-rich hiring ecosystem tailored to streamline your entire talent acquisition journey—from attraction to onboarding. We combine automation, AI, and user-centric design to ensure hiring efficiency, brand consistency, and candidate engagement.
+              </p>
+            </div>
+            <ProcessSec processSlides={JSON_DATA.Process} />
+          </div>
+        </section>
+
+
 
 
 

@@ -1,90 +1,22 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import {IconWallet,} from "@tabler/icons-react";
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-
-import ConsultancyApproach from "../components/ConsultancyApproach";
-
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import { IconWallet, } from "@tabler/icons-react";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-
-
-
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const technologyData = [
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development</a> services provide secure, scalable, and custom-built solutions that put you at the forefront of the Web3 revolution. From intuitive mobile apps to powerful browser extensions, we Develop Crypto Wallets that offer unmatched security, seamless multi-chain access, and a superior user experience—turning your vision into a trusted gateway for the decentralized economy.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Blockchain Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/blockchain-wallet-development'>Blockchain Wallet Development</a> Services develops secure, non-custodial wallets that give users full control of their digital assets. Supporting multiple blockchain technologies like Bitcoin, Ethereum, Solana, and Polygon, our wallets include token swaps, staking, NFT management, and dApp connectivity, delivering a secure, scalable, and user-friendly gateway to the Web3 ecosystem.",
-  },
-  {
-    img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Wallet Development Services",
-    desc: "Comfygen Decentralized Wallet Development Services builds secure, non-custodial  Crypto wallets with full user control, multi-chain support, dApp integration, token swaps, staking, and NFT management. Scalable and secure, they provide a user-friendly gateway into DeFi, Web3, and the broader blockchain ecosystem.",
-  },
-  {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "cryptocurrency wallet development services",
-    desc: "Comfygen Cryptocurrency Wallet Development Services create secure, custom multi-chain wallets that give users full control of their digital assets. Featuring token swaps, staking, NFT management, and dApp integration, they combine security, scalability, and ease of use to provide a reliable gateway into the decentralized economy and Web3 ecosystem.",
-  },
-  {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Crypto Wallet Development Services",
-    desc: "We deliver Multi-Currency Crypto Wallet Development solutions designed for businesses seeking secure, scalable, and feature-rich platforms. From multi-chain support to token swaps, staking, NFT management, and dApp integration, our wallets open the door to Web3 and decentralized finance.",
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Cryptocurrency Wallet Development Services",
-    desc: "Comfygen Enterprise Cryptocurrency Wallet Development Services offer non-custodial wallets with multi-chain and multi-currency support, integrated token swaps, staking, NFT management, and dApp connectivity, designed for robust security, compliance, and seamless scalability.",
-  },
-
-];
-
 
 const Process = [
   {
@@ -117,29 +49,7 @@ const Process = [
   }
 ]
 
-const testimonialData = [
-  {
-    text: "Comfygen helped us launch our branded crypto wallet in just six weeks. Their team was professional, responsive, and delivered a product that exceeded our expectations.",
-    name: "James Anderson, CEO, FinTech Startup,",
-    title: "USA",
 
-  },
-  {
-    text: "The white label wallet from Comfygen gave us a head start in the crypto market. Secure, scalable, and fully customizable—our users love it.",
-    name: "Olivia Bennett, Product Head, NFT Marketplace",
-    title: "UK",
-  },
-  {
-    text: "From design to deployment, Comfygen’s team handled everything. Their expertise in blockchain and wallet development is unmatched.",
-    name: " Liam Carter, CTO, Crypto Exchange",
-    title: "USA",
-  },
-  {
-    text: "Working with Comfygen was seamless. They integrated advanced security and DeFi features while keeping our branding front and center.",
-    name: "Emma Wilson, Founder, Digital Assets Platform",
-    title: "UK",
-  },
-];
 export default function Ecommerce(props) {
   let { initialData } = props;
   const slider: any = useRef();
@@ -535,9 +445,9 @@ export default function Ecommerce(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[20px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/White_Label_Cryptocurrenc_herotow.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="White Label Cryptocurrency Wallet Development Services"
             ptag="Comfygen, a top-rated White Label Cryptocurrency Wallet Development Company, delivers end-to-end wallet White Label Crypto Wallet Development solutions tailored to your business. With our ready-to-deploy, customizable crypto wallet, you can launch a safe, secure, fully branded platform without the complexity of building from zero. Our White Label Cryptocurrency Wallet Development services combine speed, flexibility, and enterprise-level security that help to expand your business while we handle the technology."
@@ -552,6 +462,7 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage={"https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/White_Label_Cryptocurrenc_herotow.webp"}
           />
         </div>
         <AboutSection
@@ -565,8 +476,6 @@ export default function Ecommerce(props) {
             "Bank-grade security with encryption, 2FA, and multi-signature support",
             "Scalable architecture designed for future crypto and DeFi integrations",
           ]}
-
-
           imageSrc="https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/White_Label_about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -588,6 +497,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -598,14 +508,12 @@ export default function Ecommerce(props) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our White Label Crypto Wallet Development Portfolio"
             description="At Comfygen, we specialize in delivering secure, customizable, and market-ready white label cryptocurrency wallet solutions. Our portfolio showcases a diverse range of projects, each tailored to meet the unique needs of our clients while ensuring scalability and user engagement."
           />
         </section>
-
-
 
         <CallToAction
           heading="Ready to Launch Your White Label Crypto Wallet?"
@@ -615,9 +523,6 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-
-        <ContactFromCenter />
-
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -635,6 +540,7 @@ export default function Ecommerce(props) {
         </section>
 
         <TechStack
+          customTechData={null}
           title="Technology Stack We Use in White Label Crypto Development"
           description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
         />
@@ -668,11 +574,6 @@ export default function Ecommerce(props) {
             "Ongoing Support & Maintenance",
           ]}
         />
-
-        {/* <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        /> */}
 
         <Faq
           faqData={JSON_DATA.Frequently}
