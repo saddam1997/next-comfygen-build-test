@@ -27,38 +27,79 @@
     }
   ],
 
-"techDataForPage1":{
-  "All": [
+  "portfoliodata":[
     {
-      "img": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
-      "head": "Love Horoscope App",
-      "name": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
-      "num": "1",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "/portfolio/love-horoscope-app"
+      "image": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
+      "title": "Love Horoscope App",
+      "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
+      "link": "/portfolio/love-horoscope-app"
     },
     {
-      "img": "https://www.comfygen.com/image/hero-image-tarot-card-reading-app.webp",
-      "head": "Tarot Card Reading App",
-      "name": "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings. Featuring AI-powered tarot interpretations, live tarot reader consultations, customizable card decks, and in-app purchase options, this app provides a seamless and intuitive tarot reading experience.",
-      "num": "2",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "/portfolio/tarot-card-reading-app"
+      "image": "https://www.comfygen.com/image/hero-image-tarot-card-reading-app.webp",
+      "title": "Tarot Card Reading App",
+      "description": "A virtual tarot reading app development platform designed to offer accurate and insightful tarot card readings. Featuring AI-powered tarot interpretations, live tarot reader consultations, customizable card decks, and in-app purchase options, this app provides a seamless and intuitive tarot reading experience.",
+      "link": "/portfolio/tarot-card-reading-app"
     }
-  ]
-},
+   
+    
+  ],
+
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/astrology-app-development/p5.webp",
+    "additionalDetails": [
+      { "details": "Profile Management", "emoji": "", "content": "" },
+      { "details": "Daily Horoscopes", "emoji": "", "content": "" },
+      { "details": "Zodiac Details", "emoji": "", "content": "" },
+      { "details": "Personalized Readings", "emoji": "", "content": "" },
+      { "details": "Compatibility Analysis", "emoji": "", "content": "" },
+      { "details": "Prediction Tracking", "emoji": "", "content": "" },
+      { "details": "Booking Consultations", "emoji": "", "content": "" },
+      { "details": "Health & Wealth Forecast View", "emoji": "", "content": "" },
+      { "details": "Favorite Astrologers", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Astrologer Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/astrology-app-development/p3.webp",
+    "additionalDetails": [
+      { "details": "Profile Setup & Management", "emoji": "", "content": "" },
+      { "details": "Consultation Scheduling", "emoji": "", "content": "" },
+      { "details": "Real-Time Chat & Video Calls", "emoji": "", "content": "" },
+      { "details": "Earnings Dashboard", "emoji": "", "content": "" },
+      { "details": "Horoscope & Kundli Analysis Tools", "emoji": "", "content": "" },
+      { "details": "Customer Management", "emoji": "", "content": "" },
+      { "details": "Availability Settings", "emoji": "", "content": "" },
+      { "details": "Review & Rating Management", "emoji": "", "content": "" },
+      { "details": "Astrology Content Publishing", "emoji": "", "content": "" },
+      { "details": "Notification & Alert System", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/astrology-app-development/p4.webp",
+    "additionalDetails": [
+      { "details": "User & Astrologer Management", "emoji": "", "content": "" },
+      { "details": "Consultation Booking & Tracking", "emoji": "", "content": "" },
+      { "details": "Secure Payment Management", "emoji": "", "content": "" },
+      { "details": "Subscription & Revenue Analytics", "emoji": "", "content": "" },
+      { "details": "AI-Based Insights & Reports", "emoji": "", "content": "" },
+      { "details": "Content & Horoscope Management", "emoji": "", "content": "" },
+      { "details": "Multi-Language & Localization Settings", "emoji": "", "content": "" },
+      { "details": "Security & Data Privacy Controls", "emoji": "", "content": "" },
+      { "details": "Advanced Dashboard & Analytics", "emoji": "", "content": "" }
+    ]
+  }
+],
 
 
 

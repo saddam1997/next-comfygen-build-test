@@ -3,56 +3,19 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-
-import Header from "../components/Header";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-// import AboutSection from "../components/AboutSection";
-const AboutSection = dynamic(() => import("../components/AboutSection"), {
-  loading: () => <p>Loading...</p>,
-});
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-
-// import Features from "./components/Features";
-const Features = dynamic(() => import("./components/Features"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-import ProcessSec from "../components/ProcessSec";
-// import NewTeckStack from "../componentsnew/NewTeckStack";
-const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-import WhyChoose from "../components/WhyChooseUs";
-// import HireDeveloper from "../components/HireDeveloper";
-const HireDeveloper = dynamic(() => import("../components/HireDeveloper"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-import ClientTestimonials from "../components/ClientTestimonials";
-import Slider from "../components/Slider";
-
-
-
-
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 
 const Process = [
   {
@@ -109,7 +72,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -203,47 +166,51 @@ export default function ClinicalApp(props: any) {
         "B2B/B2C Business Listing App Development",
         "Franchise & Multi-location Directory App Development",
         "White-label Business Directory App Development"
-    
+
       ],
-     
+
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-        
+
       ]
     }
     ,
 
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Business Listing App Development Company",
-      "image":"https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp",
-      "description":"Comfygen Technologies builds scalable multi-location and niche business directory apps. From UI design to deployment, we deliver complete business directory software development with admin panel and real-time updates.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"400"}}
-      ,
-
-      {
-        "@context": "https://schema.org/", 
-        "@type": "BreadcrumbList", 
-        "itemListElement": [{
-          "@type": "ListItem", 
-          "position": 1, 
-          "name": "Home",
-          "item": "https://www.comfygen.com"  
-        },{
-          "@type": "ListItem", 
-          "position": 2, 
-          "name": "Business Directory App Development",
-          "item": "https://www.comfygen.com/business-directory-app-development"  
-      
-        }]
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Business Listing App Development Company",
+      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp",
+      "description": "Comfygen Technologies builds scalable multi-location and niche business directory apps. From UI design to deployment, we deliver complete business directory software development with admin panel and real-time updates.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "400"
       }
-      ,
+    }
+    ,
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Business Directory App Development",
+        "item": "https://www.comfygen.com/business-directory-app-development"
+
+      }]
+    }
+    ,
 
     {
       "@context": "https://schema.org",
@@ -313,12 +280,12 @@ export default function ClinicalApp(props: any) {
           href="https://www.comfygen.com/business-directory-app-development"
         />
 
-   
-
-       
 
 
-      
+
+
+
+
         <meta
           property="og:url"
           content="https://www.comfygen.com/business-directory-app-development"
@@ -370,9 +337,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -429,7 +394,9 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
+        
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -440,17 +407,27 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio – Enterprise Directory App and Website Development Projects"
             description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals."
           />
         </section>
 
-     
+        <div className="py-8">
+          <Features
+            heading=" Key Panels of Our Business Directory App"
+            description="At Comfygen, we integrate At Comfygen, we develop business directory
+            apps with distinct user roles to streamline operations and enhance
+            usability. Whether you're an app visitor, a listed business, or an
+            admin managing the platform, each panel is equipped with intuitive
+            features for seamless performance and better engagement."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
 
-        <Features />
+
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -470,10 +447,10 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TechStack
           title="Our Technology Stack for Business Directory App Development"
           description="We build business listing directory apps using modern technologies trusted by global enterprises at <a class='underline font-semibold' href='https://www.comfygen.com' >Comfygen Technologies</a>. Any successful business finder app development project requires high performance, easy maintenance, cross-platform compatibility, and future scalability."
-          filterCategory={["crypto"]}
+
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -506,4 +483,21 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+
 

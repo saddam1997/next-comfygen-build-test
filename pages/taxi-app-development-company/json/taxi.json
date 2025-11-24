@@ -94,6 +94,57 @@
       "desc": "Step into the ride-hailing industry with our advanced Ola/Uber Clone App. Enjoy features like dynamic pricing, multiple vehicle options, surge pricing, and an intuitive interface to keep your users engaged."
     }
   ],
+
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Customer’s or Passenger’s App",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/taxi-app-development-customer-or-passenger-app.webp",
+    "additionalDetails": [
+      { "details": "Instant Booking", "emoji": "", "content": "" },
+      { "details": "Ride Details", "emoji": "", "content": "" },
+      { "details": "Scheduled Booking", "emoji": "", "content": "" },
+      { "details": "Multiple Payment Gateways", "emoji": "", "content": "" },
+      { "details": "Real-Time Tracking", "emoji": "", "content": "" },
+      { "details": "Push Notifications", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Driver Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/taxi-app-development-driver-panel-image.webp",
+    "additionalDetails": [
+      { "details": "Registration and Profile Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Location Tracking", "emoji": "", "content": "" },
+      { "details": "Booking Management", "emoji": "", "content": "" },
+      { "details": "Earnings and Payment", "emoji": "", "content": "" },
+      { "details": "Communication Tools", "emoji": "", "content": "" },
+      { "details": "Feedback and Ratings", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/image/taxi-app-development-admin-panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Dashboard and Analytics", "emoji": "", "content": "" },
+      { "details": "User and Driver Management", "emoji": "", "content": "" },
+      { "details": "Trip Management", "emoji": "", "content": "" },
+      { "details": "Fare and Pricing Management", "emoji": "", "content": "" },
+      { "details": "Promotions and Discounts", "emoji": "", "content": "" },
+      { "details": "Safety and Compliance", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
   "pageData": {
     "title": "Why Choose Comfygen for your custom Taxi Booking App Development project?",
     "description": "Comfygen stands out as the No.1 Taxi App Development Company in India. We specialize in offering custom, and reliable taxi app development services customized for small businesses, startups, and enterprises. Our mission is to provide apps that are designed to meet your specific needs while adhering to the highest standards of quality and performance.",

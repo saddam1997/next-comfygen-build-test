@@ -259,6 +259,64 @@
     "title": "India"
   }
 ],
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "Customer App",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p1.webp",
+    "additionalDetails": [
+      { "details": "Quick Sign-Up & Location Detection", "emoji": "", "content": "" },
+      { "details": "Easy Product Browsing & Ordering", "emoji": "", "content": "" },
+      { "details": "Daily/Weekly/Monthly Subscriptions", "emoji": "", "content": "" },
+      { "details": "Real-Time Delivery Tracking", "emoji": "", "content": "" },
+      { "details": "Multiple Secure Payment Options", "emoji": "", "content": "" },
+      { "details": "Order History & Reorder Option", "emoji": "", "content": "" },
+      { "details": "In-App Notifications & Alerts", "emoji": "", "content": "" },
+      { "details": "Delivery Time Slot Selection", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Delivery Agent App",
+    "icon": "<i className='fas fa-truck text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p2.webp",
+    "additionalDetails": [
+      { "details": "Agent Profile & Login Access", "emoji": "", "content": "" },
+      { "details": "Optimized Delivery Routes", "emoji": "", "content": "" },
+      { "details": "Assigned Orders Management", "emoji": "", "content": "" },
+      { "details": "Live Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "Earnings & Payout Summary", "emoji": "", "content": "" },
+      { "details": "Proof of Delivery Capture", "emoji": "", "content": "" },
+      { "details": "In-App Chat with Admin/Support", "emoji": "", "content": "" },
+      { "details": "Availability Toggle (Online/Offline)", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p3.webp",
+    "additionalDetails": [
+      { "details": "Customer & Order Management", "emoji": "", "content": "" },
+      { "details": "Inventory & Product Management", "emoji": "", "content": "" },
+      { "details": "Delivery Agent Allocation & Monitoring", "emoji": "", "content": "" },
+      { "details": "Subscription Plan Builder", "emoji": "", "content": "" },
+      { "details": "Analytics & Reports Dashboard", "emoji": "", "content": "" },
+      { "details": "Push Notification Management", "emoji": "", "content": "" },
+      { "details": "Multi-Store & Zone Management", "emoji": "", "content": "" },
+      { "details": "Payment & Transaction Logs", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
+
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",

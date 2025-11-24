@@ -392,32 +392,32 @@
     ],
     "Process": [
       {
-        "title": "Discovery & Research",
-        "description": "We start by understanding your business goals, target audience, and healthcare compliance requirements (HIPAA, HL7, GDPR). Our team conducts deep market research to identify opportunities and define a strong roadmap for your custom healthcare app development project."
+        "title": "Discovery & Requirements",
+        "description": "We analyze business goals and requirements to create a strategy for custom healthcare app development with HIPAA compliance and advanced digital healthcare features."
       },
       {
         "title": " UI/UX Design",
-        "description": "Our UI/UX design experts craft intuitive and <a href='https://www.comfygen.com/blog/features-crafting-a-user-friendly-healthcare-app' class='text-blue-500 font-semibold'>user-friendly healthcare interfaces</a> that focus on patient engagement and accessibility. We ensure the app design simplifies complex medical workflows while delivering a seamless experience for patients and doctors."
+        "description": "Our designers craft intuitive, <a href='https://www.comfygen.com/blog/features-crafting-a-user-friendly-healthcare-app' class='text-blue-600 font-semibold'>user-friendly UI/UX</a> for a seamless app experience, improving patient engagement and accessibility across mobile and web platforms."
       },
       {
-        "title": " MVP Development",
-        "description": "To bring your idea to life quickly, we develop a Minimum Viable Product (MVP) with core features. This allows early testing, feedback collection, and faster time-to-market for your healthcare mobile app development."
+        "title": "App Development",
+        "description": "We build secure healthcare apps using the latest technology, ensuring scalability, performance, integrations, and custom features tailored for hospitals and healthcare providers."
       },
       {
-        "title": "Full-Scale Development & Integration",
-        "description": "Once the MVP is validated, our medical app developers build a robust, scalable, and secure solution. We integrate essential modules such as EHR/EMR systems, IoT devices, payment gateways, and telemedicine APIs to enhance functionality and connectivity."
+        "title": "API & Third-Party Integrations",
+        "description": "We integrate EHR/EMR, payment gateways, telemedicine tools, wearable devices, and pharmacy systems to enhance healthcare app performance and automation."
       },
       {
         "title": " Testing & Quality Assurance",
-        "description": "Our QA experts perform extensive manual and automated testing to ensure your app meets the highest standards of quality and security. We verify data accuracy, performance, and compliance across Android, iOS, and web platforms."
+        "description": "We perform rigorous QA to ensure security, data privacy, performance, and HIPAA compliance for flawless healthcare mobile app functionality."
       },
       {
-        "title": "Deployment & App Store Launch",
-        "description": "After successful testing, we deploy your healthcare app on major app stores (Google Play, Apple Store) and configure all backend systems. Our healthcare app developers ensure a smooth launch aligned with your operational workflows."
+        "title": "Deployment & Launch",
+        "description": "We deploy the healthcare app on Google Play, iOS App Store, or web servers with complete support to ensure smooth launch and onboarding."
       },
       {
-        "title": "Post-Launch Support & Maintenance",
-        "description": "We provide continuous maintenance, updates, and performance monitoring post-launch. Our team ensures your healthcare app remains secure, up-to-date, and ready to meet evolving user needs and industry standards."
+        "title": "Support & Maintenance",
+        "description": "We provide continuous technical support, upgrades, monitoring, and feature enhancements to keep healthcare apps secure and optimized for long-term success."
       }
     ],
     "customTestimonials": [

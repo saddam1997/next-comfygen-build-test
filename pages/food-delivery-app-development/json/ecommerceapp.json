@@ -143,87 +143,196 @@
       "buttonText": "View Demo"
     }
   ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Customer Panel",
+      "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/customer-panel.webp",
+      "additionalDetails": [
+        { "details": "Easy Sign-Up & Social Login", "emoji": "", "content": ""
+        },
+        { "details": "Browse Restaurants & Menus", "emoji": "", "content": ""
+        },
+        { "details": "Real-Time Order Tracking", "emoji": "", "content": ""
+        },
+        { "details": "Ratings & Reviews for Restaurants", "emoji": "", "content": ""
+        },
+        { "details": "Multiple Payment Options (Cards, UPI, Wallets, COD)", "emoji": "", "content": ""
+        },
+        { "details": "Reorder & Subscription Plans", "emoji": "", "content": ""
+        },
+        { "details": "GPS-Based Restaurant Discovery", "emoji": "", "content": ""
+        },
+        { "details": "Push Notifications for Offers & Updates", "emoji": "", "content": ""
+        }
+      ]
+    },
+    {
+    "id": 2,
+    "title": "Restaurant Panel",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
+      "additionalDetails": [
+        { "details": "Manage Menus & Pricing", "emoji": "", "content": ""
+        },
+        { "details": "Accept/Reject Orders Instantly", "emoji": "", "content": ""
+        },
+        { "details": "Real-Time Order Alerts & Updates", "emoji": "", "content": ""
+        },
+        { "details": "Track Deliveries & Assign Drivers", "emoji": "", "content": ""
+        },
+        { "details": "Revenue & Commission Tracking", "emoji": "", "content": ""
+        },
+        { "details": "Customer Feedback Management", "emoji": "", "content": ""
+        },
+        { "details": "Analytics Dashboard for Sales Insights", "emoji": "", "content": ""
+        },
+        { "details": "Promotions & Discount Management", "emoji": "", "content": ""
+        }
+      ]
+    },
+    {
+    "id": 3,
+    "title": "Driver Panel",
+    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        { "details": "Easy Registration & Profile Setup", "emoji": "", "content": ""
+        },
+        { "details": "Accept/Reject Delivery Requests", "emoji": "", "content": ""
+        },
+        { "details": "Optimized GPS Routes & Navigation", "emoji": "", "content": ""
+        },
+        { "details": "Real-Time Order Pick-Up & Drop Alerts", "emoji": "", "content": ""
+        },
+        { "details": "Delivery History & Earnings Reports", "emoji": "", "content": ""
+        },
+        { "details": "In-App Chat/Call with Customers", "emoji": "", "content": ""
+        },
+        { "details": "Wallet Integration for Payments", "emoji": "", "content": ""
+        },
+        { "details": "Push Notifications for New Orders", "emoji": "", "content": ""
+        }
+      ]
+    },
+    {
+    "id": 4,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/admin-panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        { "details": "Centralized Dashboard with Key Metrics", "emoji": "", "content": ""
+        },
+        { "details": "Manage Customers, Restaurants & Drivers", "emoji": "", "content": ""
+        },
+        { "details": "Order & Delivery Tracking System", "emoji": "", "content": ""
+        },
+        { "details": "Revenue & Commission Settings", "emoji": "", "content": ""
+        },
+        { "details": "Approve/Reject Vendor Registrations", "emoji": "", "content": ""
+        },
+        { "details": "CMS for Content, Offers & Promotions", "emoji": "", "content": ""
+        },
+        { "details": "Advanced Analytics & Reporting", "emoji": "", "content": ""
+        },
+        { "details": "Multi-Region & Multi-Branch Control", "emoji": "", "content": ""
+        }
+      ]
+    }
+  ],
   "servicesData": [
     {
       "title": "Custom Food Delivery App Development",
-      "description": "Our custom food delivery app development service focuses on building tailored apps that reflect your brand identity and business model. With advanced features and scalability, we help you stand out in the digital food delivery space.",
+      "description": "Our custom food delivery app development services in India allow you to build a tailor-made online food ordering app aligned with your brand and business model. We create robust, scalable, and customer-centric food apps that increase online orders and retention rates.",
       "features": [
-        "Personalized UI/UX design",
-        "Multiple payment gateway integration",
-        "Real-time order tracking",
-        "Scalable backend for growth"
+        "Personalized UI/UX for branding",
+        "Multiple payment gateway integrations",
+        "Real-time order tracking & delivery updates",
+        "Scalable backend & cloud infrastructure"
       ]
     },
     {
       "title": "White-label Food Delivery App Development",
-      "description": "Launch faster with our <a class='underline' href='https://www.comfygen.com/white-label-mobile-app-development'>white-label food delivery mobile app development</a>  solutions that are pre-built yet fully customizable. Designed for startups and restaurants, these apps help you save time and cost while offering robust functionality.",
+      "description": "Launch your food delivery business quickly with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label food delivery app development solutions</a>, designed to reduce time-to-market and cost while maintaining full customization options.",
       "features": [
-        "Ready-to-launch app models",
-        "Easy branding & customization",
-        "Multi-language & currency support",
-        "Affordable and time-saving solution"
+        "Ready-to-launch app templates & admin panels",
+        "Easy branding & theme customization",
+        "Multi-language & multi-currency support",
+        "Affordable & time-efficient deployment"
       ]
     },
     {
       "title": "On-Demand Food Delivery App Development",
-      "description": "We develop on-demand food delivery apps that connect customers with restaurants instantly. Packed with real-time order tracking and delivery management, these apps are perfect for today’s fast-paced digital economy.",
+      "description": "We develop on-demand mobile food delivery apps that connect customers with restaurants instantly. Packed with real-time order tracking and delivery management, these apps are perfect for today’s fast-paced digital economy.",
       "features": [
-        "Instant ordering system",
-        "GPS-enabled tracking",
-        "Push notifications for updates",
-        "Efficient delivery management"
+        "One-tap ordering system",
+        "GPS-enabled live delivery tracking",
+        "Push notifications for updates & offers",
+        "Delivery personnel & fleet management"
       ]
     },
     {
       "title": "Multi-Restaurant Food Ordering App Development",
-      "description": "Our multi-restaurant food ordering apps bring several restaurants together on one platform, ideal for food aggregators like Zomato and UberEats. These apps make managing multiple outlets seamless and efficient.",
+      "description": "Ideal for aggregators like Zomato, UberEats, and Swiggy, our multi-restaurant food ordering app development allows multiple restaurants to manage menus, orders, and commissions under a single platform.",
       "features": [
-        "Restaurant registration & dashboard",
-        "Menu & inventory management",
-        "Order allocation to delivery agents",
-        "Commission management system"
+        "Restaurant onboarding & dashboard",
+        "Menu, pricing & inventory management",
+        "Order assignment & delivery logistics",
+        "Commission & payout management"
       ]
     },
     {
       "title": "Online Food Ordering App Development for Startups",
-      "description": "Designed to empower startups, our online food ordering app development ensures affordable yet scalable apps. We equip startups with growth-ready technology to quickly capture market attention.",
+      "description": "We develop scalable and cost-efficient online food ordering mobile apps tailored for startups wanting to enter the competitive delivery market quickly and affordably.",
       "features": [
-        "Affordable development costs",
-        "Quick deployment process",
-        "Marketing & loyalty integrations",
-        "Future-ready app architecture"
+        "Budget-friendly development packages",
+        "Fast deployment & launch",
+        "Loyalty programs, marketing tools & referrals",
+        "Future-ready architecture with easy upgrades"
       ]
     },
     {
       "title": "Cloud Kitchen App Development",
-      "description": "We build cloud kitchen app development solutions tailored for virtual restaurants and delivery-only kitchens. These apps enable seamless online ordering, delivery management, and customer engagement.",
+      "description": "We provide cloud kitchen app development solutions tailored for virtual restaurants and delivery-only kitchens. These apps enable seamless online ordering, delivery management, and customer engagement.",
       "features": [
-        "Manage multiple brands in one platform",
-        "Real-time kitchen & delivery tracking",
-        "Easy menu updates & promotions",
-        "Integrated analytics dashboard"
+        "Multiple brands in one backend platform",
+        "Real-time kitchen & delivery coordination",
+        "Menu management & promo tools",
+        "Business analytics & reporting dashboard"
       ]
     },
     {
       "title": "Grocery Delivery App Development",
-      "description": "Comfygen Technologies offers top-rated grocery delivery app development services that help supermarkets and startups provide fast, reliable delivery of groceries and essentials. Designed for efficiency, these apps simplify customer shopping experiences.",
+      "description": "We also offer <a href='https://www.comfygen.com/ecommerce/grocery' class='underline font-semibold'>grocery delivery app development services</a> for supermarkets, hyperlocal delivery stores, and startups looking to <a href='https://www.comfygen.com/blog/build-quick-commerce-app-like-blinkit-zepto-instamart/' class='underline fornt-semibold'>build an instant delivery app like Blinkit</a> or BigBasket. Designed for efficiency, these apps simplify customer shopping experiences.",
       "features": [
-        "Quick product search & filters",
+        "Product search, filters & smart recommendations",
         "Subscription & repeat order options",
-        "Multi-payment integrations",
-        "Real-time delivery tracking"
+        "Multi-payment integration & wallet support",
+        "Real-time delivery tracking & scheduling"
+      ]
+    },
+    {
+      "title": "Food Delivery Website Development",
+      "description": "Comfygen offers professional <a href='https://www.comfygen.com/web-development' class='underline font-semibold'>food delivery website development services</a> to help businesses build a powerful online presence and manage food orders through a web-based platform. We develop responsive and SEO-friendly food ordering websites integrated with secure payments, real-time tracking, and user-friendly navigation to improve customer ordering experience and business efficiency.",
+      "features": [
+        "Custom & responsive website design",
+        "Online ordering & order status tracking",
+        "Secure payment gateway integration",
+        "SEO-friendly architecture & fast performance"
       ]
     },
     {
       "title": "Food Delivery App Maintenance & Support",
-      "description": "We provide 24/7 food delivery app maintenance & support services to ensure your app runs smoothly after launch. From bug fixing to regular updates, we keep your app reliable and secure.",
+      "description": "Our dedicated support team provides food delivery app maintenance services, ensuring your app stays fast, secure, and fully updated after launch.",
       "features": [
         "Regular performance monitoring",
-        "Security updates & patches",
-        "Feature upgrades & scalability",
-        "24/7 technical support"
+        "Security patches & version upgrades",
+        "Feature enhancement & scalability support",
+        "24/7 technical assistance"
       ]
     }
+    
   ],
   "cardData": [
     {

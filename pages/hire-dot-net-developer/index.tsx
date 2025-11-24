@@ -1,31 +1,17 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireDotNet.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import CardItem from "../components/CardItem";
-import ModelsSec from "../components/ModelsSec";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+import dynamic from "next/dynamic";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 export default function Mobile(props) {
@@ -120,32 +106,27 @@ export default function Mobile(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="">
 
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Hire Best .Net Developer India"
-                ptag="Secure your business by integrating blockchain technology into your existing digital solutions. Hire skilled blockchain developers at Comfygen to build effective decentralized applications for protocols like Ethereum, Polkadot, Tezos, Hyperledger, Stellar, Neo, and more. Our full-stack blockchain developers specialize in creating smart contracts tailored to your organization's needs."
-                ptag1="Comfygen is here to help you secure your business and streamline transactional flows. Let’s consult and find the perfect solution for you."
-                li="Expert Blockchain Developers"
-                li1="Full-Stack Blockchain Solutions"
-                li2="Smart Contract Development"
-                li3="Secure & Scalable Solutions"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Hire Best .Net Developer India"
+          ptag="Secure your business by integrating blockchain technology into your existing digital solutions. Hire skilled blockchain developers at Comfygen to build effective decentralized applications for protocols like Ethereum, Polkadot, Tezos, Hyperledger, Stellar, Neo, and more. Our full-stack blockchain developers specialize in creating smart contracts tailored to your organization's needs."
+          ptag1="Comfygen is here to help you secure your business and streamline transactional flows. Let’s consult and find the perfect solution for you."
+          li="Expert Blockchain Developers"
+          li1="Full-Stack Blockchain Solutions"
+          li2="Smart Contract Development"
+          li3="Secure & Scalable Solutions"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp'
+        />
+
         <AboutSection
           title="About Us"
           heading="Comfygen - Your Leading Partner to Hire ASP Dot Net Developer"
@@ -155,7 +136,7 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

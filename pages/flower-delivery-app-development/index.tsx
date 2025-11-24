@@ -3,30 +3,22 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "./components/WhoCanStart";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -441,9 +433,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -500,7 +491,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <WhoCanStart
           title="Flower Delivery App Solution for Every Flower Business Model"
@@ -512,17 +503,22 @@ export default function ClinicalApp(props: any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Flower Delivery App Development Portfolio"
             description="Explore how Comfygen Technologies empowers flower businesses with scalable and user-friendly flower delivery apps. From local florists to gift delivery startups, our custom-built apps ensure smooth order processing, real-time tracking, and delightful customer experiences."
           />
         </section>
 
-   
 
 
-        <Features />
+
+        <Features
+          heading="Key Features of Our Flower Delivery App"
+          description="delivery app development company, Comfygen Technologies delivers powerful app solutions packed with essential features for users, delivery agents, and admins. Each panel is designed to enhance performance, simplify operations, and deliver an exceptional user experience."
+          grid="3"
+          featuresData={JSON_DATA.featuresData}
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -542,7 +538,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use in Flower Delivery App Development"
           description="At Comfygen, we use a robust and modern technology stack to build scalable and reliable flower delivery apps. Whether you want to create a custom bouquet delivery platform or a florist marketplace, our tech ensures smooth performance, real-time tracking, and a delightful user experience."
         />
@@ -580,4 +576,21 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
+}
+
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

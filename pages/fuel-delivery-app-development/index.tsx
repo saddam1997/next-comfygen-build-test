@@ -1,43 +1,24 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./fuel-delivery-app-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import AppCard from "../componentsnew/AppCard";
-import CallToAction from "../components/CallToAction";
-import NewSection from "./components/NewSection";
-import Features from "./components/Features";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
+import dynamic from "next/dynamic";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import BusinessSolustion from "../Newcomponet/SectionCompoent/BusinessSolustion";
+import AppCard from "../Newcomponet/comman/AppCard";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -434,9 +415,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -486,28 +466,39 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <NewSection />
-        <ContactFromCenter />
+
+
+        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
+
+
+        {/* <ContactFromCenter /> */}
         <AppCard
           title="We Have Already Developed Clones of Popular Fuel Delivery Apps"
           subtitle="Looking to build a fuel delivery app like the industry’s leading platforms? At Comfygen, we develop feature-rich fuel delivery app solutions inspired by popular apps, customized to match your business goals, customer needs, and market requirements."
           cards={CardClone}
           openModal={openModal}
         />
-        <Features />
+
+
+        <Features
+          heading='Comprehensive Fuel Delivery App Features for Seamless Management'
+          description='At Comfygen, we build feature-rich fuel delivery apps designed to make fuel ordering, delivery, and management easy for users, drivers, vendors, and business administrators. Our apps include smart panel integrations that simplify operations, improve engagement, and support end-to-end fuel delivery management.'
+          featuresData={JSON_DATA.featuresData}
+          grid='4'
+        />
 
 
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Fuel Delivery Apps Portfolio"
             description="At Comfygen, we have delivered custom AI fuel delivery app solutions. Each project is designed to streamline fuel ordering, delivery, and management while ensuring a seamless experience for users, drivers, and vendors. Here are some of our successful custom fuel delivery app development projects."
           />
         </section>
 
-    
+
 
         {/* <NewPanel /> */}
         <CallToAction
@@ -578,7 +569,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use in Custom Fuel Delivery App Development"
           description="At Comfygen, we use cutting-edge technologies to build high-performance, scalable, and secure fuel delivery mobile apps. Our tech stack ensures smooth app performance, real-time fuel tracking, seamless payments, and a reliable experience for users, drivers, and vendors."
         />
@@ -616,3 +607,19 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

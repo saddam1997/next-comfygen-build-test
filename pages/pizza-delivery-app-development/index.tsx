@@ -3,38 +3,22 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./pizza-delivery-app-development.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "./components/WhoCanStart";
-import NewPanel from "./components/NewPanel";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -505,7 +489,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <WhoCanStart
           title="Business Models We Support in Pizza Delivery App Development"
@@ -516,7 +500,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Pizza Delivery App Development Portfolio"
             description="Comfygen creates high-quality pizza delivery apps that help restaurants, franchises, and startups enhance their online ordering experience. We develop feature-rich, scalable, and user-friendly pizza delivery apps."
@@ -524,7 +508,14 @@ export default function ClinicalApp(props: any) {
         </section>
 
 
-        <NewPanel />
+        <div className="py-8">
+          <Features
+            heading="We Build Healthcare Apps with Powerful Patient, Doctor & Admin Panels"
+            description="Comfygen Technologies delivers next-gen healthcare app development solutions equipped with powerful admin, doctor, and patient panels. Our advanced panels ensure smooth communication, secure data access, and efficient management for a seamless healthcare experience."
+            featuresData={JSON_DATA.featuresData}
+            grid={4} />
+        </div>
+        {/* <NewPanel /> */}
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -590,7 +581,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use in Pizza Delivery App Development"
           description="Our pizza delivery applications are high-performing, secure, scalable, and backed by cutting-edge technology. Whether you're creating a pizza ordering platform, a restaurant marketplace, or a custom pizza delivery app, our technology stack ensures smooth performance, real-time tracking, and exceptional customer service."
         />
@@ -627,3 +618,19 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

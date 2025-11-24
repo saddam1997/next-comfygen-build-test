@@ -44,175 +44,198 @@
       }
     ]
   },
- "servicesData": [
-  {
-    "title": "White-Label P2P Crypto Exchange Development",
-    "description": "Our white-label solutions enable you to launch your P2P exchange platform quickly and cost-effectively. With full customization options, you can personalize branding, features, and UI/UX to align with your business goals.",
-    "features": [
-      "Fast-track market entry with pre-built architecture",
-      "Customize everything from the interface to the logic",
-      "Saves time and development resources"
-    ]
-  },
-  {
-    "title": "Escrow System Integration",
-    "description": "We build smart contract-based escrow systems to secure trades between buyers and sellers without needing intermediaries. This ensures funds are only released once both parties meet the agreement.",
-    "features": [
-      "Increases user trust and transaction transparency",
-      "Automatically handles fund releases and disputes",
-      "Supports crypto and fiat escrow options"
-    ]
-  },
-  {
-    "title": "Multi-Currency Wallet Development",
-    "description": "Our wallets allow users to store, send, and receive a wide range of cryptocurrencies safely. We use advanced encryption and integrate private key security for complete asset protection.",
-    "features": [
-      "Supports major coins like BTC, ETH, USDT & more",
-      "<a class='font-semibold underline' href='https://www.comfygen.com/crypto-wallet-development' >Multi-sig wallets</a> and cold storage options",
-      "Secure transaction tracking & backup features"
-    ]
-  },
-  {
-    "title": "KYC/AML Compliance Module",
-    "description": "Ensure global regulatory compliance with integrated KYC and AML verification processes. Our system allows real-time document verification and user identity validation to reduce fraudulent activities.",
-    "features": [
-      "API integration with top KYC/AML providers",
-      "Biometric checks, document scan & identity proof",
-      "Automates compliance checks across jurisdictions"
-    ]
-  },
-  {
-    "title": "Trading Engine Development",
-    "description": "A high-performance, low-latency trading engine is vital for efficient crypto exchanges. Our trading engine supports instant order matching, real-time price updates, and complex trade execution.",
-    "features": [
-      "Real-time data processing and analytics",
-      "Supports various trade types",
-      "Auto-scaling for handling high transaction loads"
-    ]
-  },
-  {
-    "title": "Admin & User Dashboard",
-    "description": "We provide custom admin and user dashboards for complete control and visibility. Users can manage trades, wallets, and settings, while admins monitor platform performance, users, and revenue.",
-    "features": [
-      "Role-based access for multiple user levels",
-      "Analytics and reporting for business growth",
-      "Intuitive and mobile-responsive UI"
-    ]
-  },
-  {
-    "title": "Dispute Management System",
-    "description": "We develop built-in systems that allow users to raise disputes and admins to resolve them efficiently. This helps build trust and reduces conflicts during P2P trading.",
-    "features": [
-      "Ticket-based dispute handling with history tracking",
-      "Manual or auto-escalation to moderators",
-      "Helps retain users and reduce negative feedback"
-    ]
-  },
-  {
-    "title": "Chat & Notification System",
-    "description": "Enable secure, real-time communication between buyers and sellers with encrypted chat. We also integrate SMS, email, and push notifications for trade alerts and updates.",
-    "features": [
-      "In-app messaging with file sharing options",
-      "Real-time trade confirmations and updates",
-      "Improves user engagement and response time"
-    ]
-  },
-  {
-    "title": "Fiat-to-Crypto Payment Gateway",
-    "description": "Allow users to buy or sell crypto using their local currency with seamless fiat integrations. We offer secure APIs that support multiple payment modes like cards, bank transfers, and UPI.",
-    "features": [
-      "PCI-DSS compliant payment flows",
-      "Integration with third-party payment processors",
-      "Reduces user onboarding friction"
-    ]
-  },
-  {
-    "title": "Liquidity Management System",
-    "description": "Our liquidity tools ensure that your platform remains fluid and functional under any market condition. You can connect to external exchanges or use internal algorithms to stabilize orders.",
-    "features": [
-      "Real-time liquidity aggregation and monitoring",
-      "Prevents slippage and order book imbalance",
-      "Integrates with APIs of major global exchanges"
-    ]
-  },
-  {
-    "title": "AI-Powered Trading Bots",
-    "description": "We integrate <a class='font-semibold underline' href='https://www.comfygen.com/crypto-trading-bot-development' >AI-driven bots</a> that automate trading strategies based on market trends and user-defined rules. Bots help users execute trades 24/7 without manual effort.",
-    "features": [
-      "Machine learning-based algorithm tuning",
-      "Supports DCA, arbitrage, grid trading & more",
-      "Enhances platform stickiness and engagement"
-    ]
-  },
-  {
-    "title": "Multilingual & Multi-Currency Support",
-    "description": "Attract a global user base with multiple language interfaces and support for both fiat and cryptocurrencies. Easily switch between currency types and language preferences.",
-    "features": [
-      "Dynamic translation for all platform elements",
-      "Integrated FX rate updates for conversions",
-      "Localized UX for better user retention"
-    ]
-  },
-  {
-    "title": "Affiliate & Referral Module",
-    "description": "Encourage word-of-mouth marketing and grow your user base with built-in affiliate and referral features. Users earn rewards for inviting others.",
-    "features": [
-      "Multi-level referral program support",
-      "Real-time tracking and analytics",
-      "Custom commission structures"
-    ]
-  },
-  {
-    "title": "Cold Wallet Integration",
-    "description": "Protect user assets with robust cold wallet solutions that minimize online vulnerabilities. We integrate offline wallets for long-term asset security.",
-    "features": [
-      "Multi-signature authorization",
-      "Offline transaction signing",
-      "Reduces risks of hacking and fund loss"
-    ]
-  },
-  {
-    "title": "NFT Integration (Optional Add-On)",
-    "description": "Add NFT marketplace capabilities or allow NFT-based transactions within your exchange. It’s perfect for platforms looking to tap into the Web3 ecosystem.",
-    "features": [
-      "NFT wallet integration for storage",
-      "Supports ERC-721, ERC-1155, and SPL standards",
-      "Smart contract-based NFT auctions and sales"
-    ]
-  }
-],
- "LeadingSoftware": [
-  {
-    "num": "01",
-    "title": "Decentralized Control & Security",
-    "decs": "Users maintain full control over their funds, reducing risks associated with centralized exchanges."
-  },
-  {
-    "num": "02",
-    "title": "Lower Transaction Fees",
-    "decs": "Eliminates middlemen, leading to significantly reduced trading and operational costs."
-  },
-  {
-    "num": "03",
-    "title": "Global Accessibility",
-    "decs": "Facilitates cross-border trading, expanding your business reach to international crypto users."
-  },
-  {
-    "num": "04",
-    "title": "Faster Settlements",
-    "decs": "Peer-to-peer trades settle instantly, improving liquidity and user satisfaction."
-  },
-  {
-    "num": "05",
-    "title": "Customizable White-Label Solutions",
-    "decs": "Tailored P2P exchange platforms designed to match your unique business needs and branding."
-  },
-  {
-    "num": "06",
-    "title": "Robust Security & Compliance",
-    "decs": "Integrated KYC/AML protocols and decentralized architecture enhance security and regulatory compliance."
-  }
-],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
+    },
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "/portfolio/blockchain-based-cryptocoin-development"
+    },
+    {
+      "image": "https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-hero--portfolio-image.webp",
+      "title": "decentralized blockchain-based cryptocurrency",
+      "description": "Successfully developed and deployed Croston, a fully decentralized blockchain-based cryptocurrency designed for secure, scalable, and high-speed transactions. Croston provides a trustless, transparent, and efficient digital asset solution for both businesses and individual users. Featuring advanced smart contract capabilities and an innovative consensus mechanism, it ensures seamless transactions and governance within a next-generation financial ecosystem.",
+      "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
+    }
+    
+  ],
+  "servicesData": [
+    {
+      "title": "White-Label P2P Crypto Exchange Development",
+      "description": "Our white-label solutions enable you to launch your P2P exchange platform quickly and cost-effectively. With full customization options, you can personalize branding, features, and UI/UX to align with your business goals.",
+      "features": [
+        "Fast-track market entry with pre-built architecture",
+        "Customize everything from the interface to the logic",
+        "Saves time and development resources"
+      ]
+    },
+    {
+      "title": "Escrow System Integration",
+      "description": "We build smart contract-based escrow systems to secure trades between buyers and sellers without needing intermediaries. This ensures funds are only released once both parties meet the agreement.",
+      "features": [
+        "Increases user trust and transaction transparency",
+        "Automatically handles fund releases and disputes",
+        "Supports crypto and fiat escrow options"
+      ]
+    },
+    {
+      "title": "Multi-Currency Wallet Development",
+      "description": "Our wallets allow users to store, send, and receive a wide range of cryptocurrencies safely. We use advanced encryption and integrate private key security for complete asset protection.",
+      "features": [
+        "Supports major coins like BTC, ETH, USDT & more",
+        "<a class='font-semibold underline' href='https://www.comfygen.com/crypto-wallet-development' >Multi-sig wallets</a> and cold storage options",
+        "Secure transaction tracking & backup features"
+      ]
+    },
+    {
+      "title": "KYC/AML Compliance Module",
+      "description": "Ensure global regulatory compliance with integrated KYC and AML verification processes. Our system allows real-time document verification and user identity validation to reduce fraudulent activities.",
+      "features": [
+        "API integration with top KYC/AML providers",
+        "Biometric checks, document scan & identity proof",
+        "Automates compliance checks across jurisdictions"
+      ]
+    },
+    {
+      "title": "Trading Engine Development",
+      "description": "A high-performance, low-latency trading engine is vital for efficient crypto exchanges. Our trading engine supports instant order matching, real-time price updates, and complex trade execution.",
+      "features": [
+        "Real-time data processing and analytics",
+        "Supports various trade types",
+        "Auto-scaling for handling high transaction loads"
+      ]
+    },
+    {
+      "title": "Admin & User Dashboard",
+      "description": "We provide custom admin and user dashboards for complete control and visibility. Users can manage trades, wallets, and settings, while admins monitor platform performance, users, and revenue.",
+      "features": [
+        "Role-based access for multiple user levels",
+        "Analytics and reporting for business growth",
+        "Intuitive and mobile-responsive UI"
+      ]
+    },
+    {
+      "title": "Dispute Management System",
+      "description": "We develop built-in systems that allow users to raise disputes and admins to resolve them efficiently. This helps build trust and reduces conflicts during P2P trading.",
+      "features": [
+        "Ticket-based dispute handling with history tracking",
+        "Manual or auto-escalation to moderators",
+        "Helps retain users and reduce negative feedback"
+      ]
+    },
+    {
+      "title": "Chat & Notification System",
+      "description": "Enable secure, real-time communication between buyers and sellers with encrypted chat. We also integrate SMS, email, and push notifications for trade alerts and updates.",
+      "features": [
+        "In-app messaging with file sharing options",
+        "Real-time trade confirmations and updates",
+        "Improves user engagement and response time"
+      ]
+    },
+    {
+      "title": "Fiat-to-Crypto Payment Gateway",
+      "description": "Allow users to buy or sell crypto using their local currency with seamless fiat integrations. We offer secure APIs that support multiple payment modes like cards, bank transfers, and UPI.",
+      "features": [
+        "PCI-DSS compliant payment flows",
+        "Integration with third-party payment processors",
+        "Reduces user onboarding friction"
+      ]
+    },
+    {
+      "title": "Liquidity Management System",
+      "description": "Our liquidity tools ensure that your platform remains fluid and functional under any market condition. You can connect to external exchanges or use internal algorithms to stabilize orders.",
+      "features": [
+        "Real-time liquidity aggregation and monitoring",
+        "Prevents slippage and order book imbalance",
+        "Integrates with APIs of major global exchanges"
+      ]
+    },
+    {
+      "title": "AI-Powered Trading Bots",
+      "description": "We integrate <a class='font-semibold underline' href='https://www.comfygen.com/crypto-trading-bot-development' >AI-driven bots</a> that automate trading strategies based on market trends and user-defined rules. Bots help users execute trades 24/7 without manual effort.",
+      "features": [
+        "Machine learning-based algorithm tuning",
+        "Supports DCA, arbitrage, grid trading & more",
+        "Enhances platform stickiness and engagement"
+      ]
+    },
+    {
+      "title": "Multilingual & Multi-Currency Support",
+      "description": "Attract a global user base with multiple language interfaces and support for both fiat and cryptocurrencies. Easily switch between currency types and language preferences.",
+      "features": [
+        "Dynamic translation for all platform elements",
+        "Integrated FX rate updates for conversions",
+        "Localized UX for better user retention"
+      ]
+    },
+    {
+      "title": "Affiliate & Referral Module",
+      "description": "Encourage word-of-mouth marketing and grow your user base with built-in affiliate and referral features. Users earn rewards for inviting others.",
+      "features": [
+        "Multi-level referral program support",
+        "Real-time tracking and analytics",
+        "Custom commission structures"
+      ]
+    },
+    {
+      "title": "Cold Wallet Integration",
+      "description": "Protect user assets with robust cold wallet solutions that minimize online vulnerabilities. We integrate offline wallets for long-term asset security.",
+      "features": [
+        "Multi-signature authorization",
+        "Offline transaction signing",
+        "Reduces risks of hacking and fund loss"
+      ]
+    },
+    {
+      "title": "NFT Integration (Optional Add-On)",
+      "description": "Add NFT marketplace capabilities or allow NFT-based transactions within your exchange. It’s perfect for platforms looking to tap into the Web3 ecosystem.",
+      "features": [
+        "NFT wallet integration for storage",
+        "Supports ERC-721, ERC-1155, and SPL standards",
+        "Smart contract-based NFT auctions and sales"
+      ]
+    }
+  ],
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "Decentralized Control & Security",
+      "decs": "Users maintain full control over their funds, reducing risks associated with centralized exchanges."
+    },
+    {
+      "num": "02",
+      "title": "Lower Transaction Fees",
+      "decs": "Eliminates middlemen, leading to significantly reduced trading and operational costs."
+    },
+    {
+      "num": "03",
+      "title": "Global Accessibility",
+      "decs": "Facilitates cross-border trading, expanding your business reach to international crypto users."
+    },
+    {
+      "num": "04",
+      "title": "Faster Settlements",
+      "decs": "Peer-to-peer trades settle instantly, improving liquidity and user satisfaction."
+    },
+    {
+      "num": "05",
+      "title": "Customizable White-Label Solutions",
+      "decs": "Tailored P2P exchange platforms designed to match your unique business needs and branding."
+    },
+    {
+      "num": "06",
+      "title": "Robust Security & Compliance",
+      "decs": "Integrated KYC/AML protocols and decentralized architecture enhance security and regulatory compliance."
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -415,7 +438,6 @@
       "li2": "Security Measures: Implementing robust security protocols such as two-factor authentication (2FA) and encryption adds to expenses.",
       "li3": "Regulatory Compliance: Ensuring adherence to regulations like KYC/AML requires additional resources.",
       "li4": "Development Approach: Custom-built solutions are typically more expensive than white-label options."
- 
     },
     {
       "num": "4",
@@ -513,64 +535,60 @@
       "decs": "Business, relationships are dependent on transparency in the development process. Our services are useful to real-world users."
     }
   ],
-
   "CryptoTrading": [
-  {
-    "num": "01",
-    "title": "Exponential Market Growth",
-    "decs": "With global cryptocurrency adoption on the rise, the demand for decentralized, user-first trading platforms is skyrocketing. Peer-to-peer exchanges empower users with direct transactions, bypassing centralized control. This market trend shows no sign of slowing, making now the ideal time to launch your own P2P platform."
-  },
-  {
-    "num": "02",
-    "title": "Trust-Built, Non-Custodial Transactions",
-    "decs": "Modern crypto users demand autonomy and security. Unlike centralized platforms, P2P exchanges integrate non-custodial wallets and escrow-based smart contracts, ensuring that trades are completed without the need for intermediaries. This fosters a trust-rich environment, essential for attracting and retaining users."
-  },
-  {
-    "num": "03",
-    "title": "Lower Operational Costs, Higher ROI",
-    "decs": "By cutting out middlemen, P2P platforms dramatically reduce infrastructure and compliance costs. The result? Greater profitability. With revenue streams like transaction fees, ad placements, premium account features, and token launchpads, P2P exchanges offer a high-ROI model with scalable monetization."
-  },
-  {
-    "num": "04",
-    "title": "Flexible Compliance & Regulatory Adaptability",
-    "decs": "P2P exchanges can be tailored to meet jurisdictional requirements without sacrificing decentralization. Through optional KYC/AML modules, geo-fencing features, and smart contract-based transaction control, these platforms strike a balance between regulatory needs and user privacy. This makes them adaptable and legally resilient in global markets."
-  }
-]
-,
-
+    {
+      "num": "01",
+      "title": "Exponential Market Growth",
+      "decs": "With global cryptocurrency adoption on the rise, the demand for decentralized, user-first trading platforms is skyrocketing. Peer-to-peer exchanges empower users with direct transactions, bypassing centralized control. This market trend shows no sign of slowing, making now the ideal time to launch your own P2P platform."
+    },
+    {
+      "num": "02",
+      "title": "Trust-Built, Non-Custodial Transactions",
+      "decs": "Modern crypto users demand autonomy and security. Unlike centralized platforms, P2P exchanges integrate non-custodial wallets and escrow-based smart contracts, ensuring that trades are completed without the need for intermediaries. This fosters a trust-rich environment, essential for attracting and retaining users."
+    },
+    {
+      "num": "03",
+      "title": "Lower Operational Costs, Higher ROI",
+      "decs": "By cutting out middlemen, P2P platforms dramatically reduce infrastructure and compliance costs. The result? Greater profitability. With revenue streams like transaction fees, ad placements, premium account features, and token launchpads, P2P exchanges offer a high-ROI model with scalable monetization."
+    },
+    {
+      "num": "04",
+      "title": "Flexible Compliance & Regulatory Adaptability",
+      "decs": "P2P exchanges can be tailored to meet jurisdictional requirements without sacrificing decentralization. Through optional KYC/AML modules, geo-fencing features, and smart contract-based transaction control, these platforms strike a balance between regulatory needs and user privacy. This makes them adaptable and legally resilient in global markets."
+    }
+  ],
   "IndustryApplications": [
-  {
-    "num": "01",
-    "title": "Crypto Startups & Entrepreneurs",
-    "decs": "P2P exchanges empower startups to launch <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/decentralized-exchange-development' >decentralized</a> trading platforms with minimal costs and maximum scalability. They enable peer-to-peer crypto transactions without intermediaries, opening up multiple revenue opportunities."
-  },
-  {
-    "num": "02",
-    "title": "Freelancer & Gig Economy Platforms",
-    "decs": "Freelancers and remote workers can receive crypto payments directly through P2P systems. These platforms offer secure, fast, and borderless transactions without relying on banks or centralized gateways."
-  },
-  {
-    "num": "03",
-    "title": "Developing Markets & Financial Inclusion",
-    "decs": "In regions with limited banking access, P2P exchanges act as financial bridges. They allow users to trade or transfer digital assets easily, helping promote economic access and inclusion."
-  },
-  {
-    "num": "04",
-    "title": "Blockchain-Based B2B Platforms",
-    "decs": "Businesses can use P2P models for cross-border crypto payments and settlements. Smart contracts automate transactions and reduce delays in global B2B marketplaces."
-  },
-  {
-    "num": "05",
-    "title": "E-Commerce & Crypto Marketplaces",
-    "decs": "Online stores and marketplaces can integrate P2P payments to accept crypto securely. Escrow protection ensures buyer-seller trust without central payment processors."
-  },
-  {
-    "num": "06",
-    "title": "NGOs & International Aid Organizations",
-    "decs": "NGOs can leverage P2P crypto exchanges to send aid transparently and quickly. Funds reach recipients directly, reducing costs and improving traceability."
-  }
-],
-
+    {
+      "num": "01",
+      "title": "Crypto Startups & Entrepreneurs",
+      "decs": "P2P exchanges empower startups to launch <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/decentralized-exchange-development' >decentralized</a> trading platforms with minimal costs and maximum scalability. They enable peer-to-peer crypto transactions without intermediaries, opening up multiple revenue opportunities."
+    },
+    {
+      "num": "02",
+      "title": "Freelancer & Gig Economy Platforms",
+      "decs": "Freelancers and remote workers can receive crypto payments directly through P2P systems. These platforms offer secure, fast, and borderless transactions without relying on banks or centralized gateways."
+    },
+    {
+      "num": "03",
+      "title": "Developing Markets & Financial Inclusion",
+      "decs": "In regions with limited banking access, P2P exchanges act as financial bridges. They allow users to trade or transfer digital assets easily, helping promote economic access and inclusion."
+    },
+    {
+      "num": "04",
+      "title": "Blockchain-Based B2B Platforms",
+      "decs": "Businesses can use P2P models for cross-border crypto payments and settlements. Smart contracts automate transactions and reduce delays in global B2B marketplaces."
+    },
+    {
+      "num": "05",
+      "title": "E-Commerce & Crypto Marketplaces",
+      "decs": "Online stores and marketplaces can integrate P2P payments to accept crypto securely. Escrow protection ensures buyer-seller trust without central payment processors."
+    },
+    {
+      "num": "06",
+      "title": "NGOs & International Aid Organizations",
+      "decs": "NGOs can leverage P2P crypto exchanges to send aid transparently and quickly. Funds reach recipients directly, reducing costs and improving traceability."
+    }
+  ],
   "Sliderdata": [
     {
       "num": "01",
@@ -618,35 +636,35 @@
     }
   ],
   "Whycomfygen": [
-  {
-    "num": "1",
-    "title": "End-to-End Encryption",
-    "desc": "All data transfers and transactions are secured with advanced encryption protocols, safeguarding sensitive user information from unauthorized access."
-  },
-  {
-    "num": "2",
-    "title": "Cold Storage Wallet Integration",
-    "desc": "Store the majority of user funds offline in highly secure cold wallets to minimize exposure to hacking attempts and cyber theft."
-  },
-  {
-    "num": "3",
-    "title": "DDoS Protection & Firewall Systems",
-    "desc": "Deploy cutting-edge firewalls and distributed denial-of-service protection to keep your platform online and resilient against traffic-based attacks."
-  },
-  {
-    "num": "4",
-    "title": "Regular Smart Contract Audits",
-    "desc": "Ensure your escrow and trading smart contracts are rigorously tested by security experts to eliminate vulnerabilities before deployment."
-  },
-  {
-    "num": "5",
-    "title": "Role-Based Access Control (RBAC)",
-    "desc": "Limit platform access to authorized personnel only, with customizable permissions that reduce insider threats and operational risks."
-  },
-  {
-    "num": "6",
-    "title": "Secure API Management",
-    "desc": "Protect data integrity and prevent unauthorized access through stringent API security practices and token-based authentication."
-  }
-]
+    {
+      "num": "1",
+      "title": "End-to-End Encryption",
+      "desc": "All data transfers and transactions are secured with advanced encryption protocols, safeguarding sensitive user information from unauthorized access."
+    },
+    {
+      "num": "2",
+      "title": "Cold Storage Wallet Integration",
+      "desc": "Store the majority of user funds offline in highly secure cold wallets to minimize exposure to hacking attempts and cyber theft."
+    },
+    {
+      "num": "3",
+      "title": "DDoS Protection & Firewall Systems",
+      "desc": "Deploy cutting-edge firewalls and distributed denial-of-service protection to keep your platform online and resilient against traffic-based attacks."
+    },
+    {
+      "num": "4",
+      "title": "Regular Smart Contract Audits",
+      "desc": "Ensure your escrow and trading smart contracts are rigorously tested by security experts to eliminate vulnerabilities before deployment."
+    },
+    {
+      "num": "5",
+      "title": "Role-Based Access Control (RBAC)",
+      "desc": "Limit platform access to authorized personnel only, with customizable permissions that reduce insider threats and operational risks."
+    },
+    {
+      "num": "6",
+      "title": "Secure API Management",
+      "desc": "Protect data integrity and prevent unauthorized access through stringent API security practices and token-based authentication."
+    }
+  ]
 }

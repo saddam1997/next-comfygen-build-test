@@ -3,29 +3,23 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./meat-delivery-app-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import NewPanel from "./components/NewPanel";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
+import Features from "../Newcomponet/SectionCompoent/Features";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
+
 const Process = [
   {
     title: "Idea & Requirement Analysis",
@@ -397,9 +391,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -454,16 +447,23 @@ export default function ClinicalApp(props: any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Meat Delivery App Portfolio"
             description="As a on-demand meat delivery app development company, Comfygen Technologies is proud to provide custom solutions for butcher shops, startups, and businesses. Explore our portfolio of successful meat ordering app development projects that showcase our expertise in building on-demand meat delivery apps with advanced features and smooth performance."
           />
         </section>
 
+        <section className=" lg:py-10 py-10">
+          <Features
+            heading='We Develop Ice Cream Delivery Apps With Advanced Panel Features'
+            description='Comfygen is among the best ice cream delivery mobile app development firm. We craft feature-rich Ice Cream Delivery Apps that deliver a seamless experience for customers, ice cream shop owners, delivery agents, and administrators. With AI-powered personalization, blockchain-secured payments, and real-time tracking, our apps are designed to transform the ice cream delivery experience.'
+            grid='4'
+            featuresData={JSON_DATA.featuresData}
+          />
+        </section>
 
-
-        <NewPanel />
+        {/* <NewPanel /> */}
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -522,7 +522,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use in Online Meat Delivery App Development"
           description="At Comfygen, we use a modern and powerful tech stack for meat delivery app development to create secure, scalable, and feature-rich butcher shop app development solutions. Our tools ensure high performance, seamless user experience, and smooth operations across mobile and web platforms for customers, butchers, and administrators."
         />

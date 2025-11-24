@@ -329,8 +329,8 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Top Healthcare App Development Company | Comfygen Technologies</title>
-        <meta name="description" content="Transform your healthcare business with Comfygen’s custom healthcare app development services. HIPAA-compliant, AI-powered, and scalable medical app solutions for clinics, hospitals, and startups." />
+        <title> Healthcare Mobile App Development Company in India </title>
+        <meta name="description" content="Comfygen is a leading healthcare mobile app development company in India delivering secure, scalable, HIPAA-compliant telemedicine, ePharmacy & hospital management app solutions." />
 
         <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development" />
 
@@ -427,8 +427,8 @@ export default function Mobile(props: any) {
         <div>
           <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/healthcare-app-development/hero.webp')]">
             <HeroSectionForAllPages
-              heading="Best Healthcare App Development Company"
-              ptag="Comfygen Technologies is a top-rated healthcare app development company dedicated to delivering secure, scalable, and HIPAA-compliant healthcare solutions. We help hospitals, clinics, and startups build intelligent mobile apps that enhance patient engagement, streamline medical workflows, and ensure seamless digital healthcare experiences."
+              heading="Healthcare Mobile App Development Company in India"
+              ptag="Comfygen is a leading healthcare app development company in India specializing in telemedicine, ePharmacy, EHR/EMR, AI-based diagnosis, and wearable-integrated healthcare mobile apps. We deliver end-to-end digital healthcare solutions with advanced features, secure data management, and seamless user experience for hospitals, clinics, and healthcare startups."
               li="6+ years of experience"
               li1="70+ Medical apps launched"
               li2="Next-Gen AI-Based Solutions"
@@ -573,9 +573,10 @@ export default function Mobile(props: any) {
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Proven Healthcare App Development Process for Scalable Digital Health Solutions</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Healthcare App Development Process We Follow</h2>
               <p className="text-base font-normal mt-2">
-                Comfygen Technologies is a top healthcare app development agency with a transparent, outcome-driven, and agile development approach to deliver secure, compliant, and high-performing healthcare apps. From strategy to post-launch support, we ensure every step enhances user experience and business efficiency.
+               Comfygen Technologies is a trusted healthcare mobile app development company in India that builds custom, secure, and high-performance healthcare apps. We follow a clear and flexible development process focused on real results. From planning to launch and ongoing support, we ensure smooth user experience and better business efficiency.
+
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
@@ -622,6 +623,11 @@ export default function Mobile(props: any) {
 
 export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
   const data = await resData.json();
   res.setHeader(
     "Cache-Control",
@@ -629,5 +635,3 @@ export async function getServerSideProps({ res }) {
   );
   return { props: { initialData: data } };
 }
-
-

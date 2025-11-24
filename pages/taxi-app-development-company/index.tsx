@@ -1,20 +1,6 @@
-import Image from "next/image";
-import Head from "next/head";
-import dynamic from "next/dynamic";
-import JSON_DATA from "./json/taxi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import Features from "./components/Features";
-import ProcessSec from "../components/ProcessSec";
+import Head from "next/head";
+import JSON_DATA from "./json/taxi.json";
 import {
   IconBike,
   IconBolt,
@@ -29,19 +15,27 @@ import {
   IconTruck,
   IconUsers,
 } from "@tabler/icons-react";
-import SolutionSec from "../componentsnew/SolutionSec";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import Slider from "../components/Slider";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+
+
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -519,30 +513,25 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Best Taxi Booking App Development Company in India"
+          ptag="Comfygen is a leading Taxi Booking App Development Company in India, delivering AI-powered, white-label, and custom ride-hailing solutions for startups, enterprises, and taxi service providers. We create scalable, secure, and feature-rich taxi booking apps like Uber, Ola, and Lyft that ensure smooth ride management, safe payments, and a great user experience—helping your business grow faster."
+          li="White-Label Taxi App Solutions"
+          li1="AI & Blockchain Features"
+          li2="Custom Features for Every Business"
+          li3="Cross-Platform Expertise"
+          li4="On-Time Delivery"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp"
+        />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="">
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp')]">
-            <HeroSectionForAllPages
-              heading="Best Taxi Booking App Development Company in India"
-              ptag="Comfygen is a leading Taxi Booking App Development Company in India, delivering AI-powered, white-label, and custom ride-hailing solutions for startups, enterprises, and taxi service providers. We create scalable, secure, and feature-rich taxi booking apps like Uber, Ola, and Lyft that ensure smooth ride management, safe payments, and a great user experience—helping your business grow faster."
-              li="White-Label Taxi App Solutions"
-              li1="AI & Blockchain Features"
-              li2="Custom Features for Every Business"
-              li3="Cross-Platform Expertise"
-              li4="On-Time Delivery"
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-            />
-          </div>
-        </div>
         <AboutSection
           heading="Revolutionizing Rides: How AI and Blockchain Are Redefining the Future of Taxi Booking Apps"
           description1="In today’s fast-paced world, integrating AI and Blockchain into taxi booking app development is a game-changer. AI enhances user experience by offering personalized recommendations, optimizing routes in real time, and predicting demand to ensure quicker rides. "
@@ -553,7 +542,7 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -582,19 +571,21 @@ export default function Ecommerce(props) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Taxi Booking App Success Stories"
             description=""
           />
         </section>
 
+        <div className="py-8">
+          <Features
+            heading="Features of a Taxi Booking App"
+            description="As a leading on-demand taxi app development company in India, we integrate advanced functionalities to make your taxi app competitive and user-friendly."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
-
-
-        <section className="mt-10">
-          <Features />
-        </section>
 
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
@@ -634,7 +625,7 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Technologies Used for Taxi Booking App Development"
           description="We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses"
         />
@@ -672,3 +663,20 @@ export default function Ecommerce(props) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

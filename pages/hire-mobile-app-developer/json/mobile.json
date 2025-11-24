@@ -141,6 +141,24 @@
       "para": " It doesn’t matter under which niche your project falls, from startups to enterprises we have experience in delivering robust mobile application solutions for a wide range of clients across  multiple industries."
     }
   ],
+
+
+  "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/img/footer-fitclub-img.webp",
+      "title": "Fitclub App",
+      "description": "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
+      "link": "#"
+    }
+   
+    
+    
+  ],
+
+
+
+
+
   "TechnoStack": [
     {
       "num": "1",

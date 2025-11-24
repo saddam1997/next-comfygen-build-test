@@ -3,34 +3,21 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
-import OurGames from "./components/OurGames";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import ModelsSec from "../components/ModelsSec";
-import IndustriesServe from "../components/IndustriesServe";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import {IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
-import {  IconChartBar} from '@tabler/icons-react';
-import PortfolioSec from "../components/PortfolioSec";
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import OurGames from "../Newcomponet/SectionCompoent/OurGames";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import { IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
+import { IconChartBar } from '@tabler/icons-react';
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const technologyData = [
   {
@@ -44,7 +31,7 @@ const technologyData = [
     desc: "With custom app development, you can automate manual tasks and workflows. Our apps help improve business efficiency, saving time and reducing errors in everyday operations."
   },
   {
-    img:  <IconTrendingUp stroke={1.5} className="w-12 h-12" />,
+    img: <IconTrendingUp stroke={1.5} className="w-12 h-12" />,
     title: "Scalable Solutions for Growth",
     desc: "We design scalable apps that grow as your business expands, ensuring your technology adapts to your evolving needs."
   },
@@ -75,67 +62,7 @@ export default function Mobile(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-  
-      {
-        img: "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-        head: "Mezovest",
-        based: "Blockchain Logistics Software Development Solutions",
-        name: "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
-    ],
-  };
+
 
   const faqData = {
     "@context": "https://schema.org",
@@ -270,30 +197,26 @@ export default function Mobile(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
 
+      <Header />
+
+      <div className="overflow-hidden">
         <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left  bg-[url('https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Hire Blockchain Developers in india"
-                ptag="Looking to develop a cutting-edge blockchain solution? Hire blockchain developers in India from Comfygen and get expert assistance in smart contract development, dApps, DeFi, and enterprise blockchain solutions. Our skilled developers deliver secure, scalable, and customized solutions tailored to your business needs. With deep expertise in Ethereum, Hyperledger, and Polygon, we ensure seamless integration and high performance. Hire blockchain developers from India today and take your blockchain project to the next level!"
-                li="Expert Blockchain Developers"
-                li1="Full-Stack Blockchain Solutions"
-                li2="Smart Contract Development"
-                li3="Secure & Scalable Solutions"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
+          <HeroSectionForAllPages
+            heading="Hire Blockchain Developers in india"
+            ptag="Looking to develop a cutting-edge blockchain solution? Hire blockchain developers in India from Comfygen and get expert assistance in smart contract development, dApps, DeFi, and enterprise blockchain solutions. Our skilled developers deliver secure, scalable, and customized solutions tailored to your business needs. With deep expertise in Ethereum, Hyperledger, and Polygon, we ensure seamless integration and high performance. Hire blockchain developers from India today and take your blockchain project to the next level!"
+            li="Expert Blockchain Developers"
+            li1="Full-Stack Blockchain Solutions"
+            li2="Smart Contract Development"
+            li3="Secure & Scalable Solutions"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage='https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp'
+          />
         </div>
         <AboutSection
           title="About Us"
@@ -313,7 +236,7 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -362,12 +285,18 @@ export default function Mobile(props) {
           description="Blockchain technology is transforming industries across the globe, offering innovative solutions to enhance transparency, security, and efficiency. At Comfygen, we provide industry-specific blockchain development services tailored to meet the unique needs of each sector. Whether you're in finance, healthcare, supply chain, or another industry, our blockchain solutions help streamline your processes and secure transactions."
           sliderData={JSON_DATA.customSliderData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Successful Blockchain-Based Portfolio"
-          description="Explore our selection of accomplished blockchain development projects that highlight our proficiency in online solutions and app development. Whether you’re looking to hire blockchain developers in India or need custom blockchain solutions, our portfolio showcases our expertise in smart contracts, DeFi platforms, NFT marketplaces, and <a class=' text-blue-600' href='/decentralized-exchange-development'>decentralized exchange development</a>  (dApps). Each project reflects our dedication to excellence, innovation, and client satisfaction, ensuring scalable and secure blockchain solutions."
-        />
-        
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Successful Blockchain-Based Portfolio"
+            description="Explore our selection of accomplished blockchain development projects that highlight our proficiency in online solutions and app development. Whether you’re looking to hire blockchain developers in India or need custom blockchain solutions, our portfolio showcases our expertise in smart contracts, DeFi platforms, NFT marketplaces, and <a class=' text-blue-600' href='/decentralized-exchange-development'>decentralized exchange development</a>  (dApps). Each project reflects our dedication to excellence, innovation, and client satisfaction, ensuring scalable and secure blockchain solutions."
+          />
+        </section>
+
+
+
         <SolutionSec
           heading="Unlock Business Efficiency with Custom App Development"
           subheading="Custom app development helps businesses streamline operations, automate tasks, and improve efficiency. At Comfygen, we specialize in creating custom apps that drive business growth with the latest blockchain technology."
@@ -395,4 +324,20 @@ export default function Mobile(props) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+
 

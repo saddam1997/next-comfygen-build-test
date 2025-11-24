@@ -308,6 +308,41 @@
       "para": "Comfygen does not stop when it comes to progress. We believe in integrating blockchain solutions into every industry:"
     }
   ],
+
+  "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "#"
+    }
+    
+   
+    
+  ],
+
+
+
+
+
   "TechnoStack": [
     {
       "num": "1",

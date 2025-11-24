@@ -2,42 +2,23 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "../componentsnew/WhoCanStart";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
-
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -461,9 +442,9 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
+  
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -523,7 +504,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -534,14 +515,19 @@ export default function ClinicalApp(props: any) {
 
       
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio – Milk Delivery App Development Projects"
             description="Explore how Comfygen empowers dairy businesses and startups with powerful, scalable milk delivery app development solutions. Our custom online milk delivery apps help streamline daily deliveries, manage subscriptions, and improve customer satisfaction with real-time features and user-friendly design."
           />
         </section>
 
-        <Features />
+        <Features 
+        heading="Key Features of Our Milk Delivery App"
+        description=" At Comfygen, we integrate Using Comfygen Technologies, a top-rated dairy milk delivery app development company, you will get robust milk delivery apps for customers, delivery agents, and admins. The panels are thoughtfully designed to ensure a smooth ordering, delivery, and management process."
+        featuresData={JSON_DATA.featuresData}
+        grid="3"
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -562,7 +548,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use to Build Scalable Milk Delivery Apps"
           description="The Comfygen team leverages the most cutting-edge and reliable technologies for building scalable, secure, and high-performing milk delivery applications. With our tech stack, you can create white-label milk delivery apps, custom solutions, or milk ordering apps for startups."
         />

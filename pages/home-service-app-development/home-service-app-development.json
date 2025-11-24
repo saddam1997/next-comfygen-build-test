@@ -33,6 +33,75 @@
   ],
 
 
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon":" <i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/home-services-app-development/customer2.webp",
+    "additionalDetails": [
+      { "details": "Easy service booking", "emoji": "", "content": "" },
+      { "details": "Real-time service tracking", "emoji": "", "content": "" },
+      { "details": "In-app chat with providers", "emoji": "", "content": "" },
+      { "details": "Secure online payments", "emoji": "", "content": "" },
+      { "details": "Ratings and reviews", "emoji": "", "content": "" },
+      { "details": "Order history & rebooking", "emoji": "", "content": "" },
+      { "details": "Notifications & alerts", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Service Provider Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/home-services-app-development/service2.webp",
+    "additionalDetails": [
+      { "details": "Accept/reject service requests", "emoji": "", "content": "" },
+      { "details": "View daily job schedule", "emoji": "", "content": "" },
+      { "details": "In-app navigation & route details", "emoji": "", "content": "" },
+      { "details": "Service history & earnings", "emoji": "", "content": "" },
+      { "details": "Real-time status updates", "emoji": "", "content": "" },
+      { "details": "Chat with users", "emoji": "", "content": "" },
+      { "details": "Availability toggle (on/off duty)", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vendor Panel",
+    "icon": "<i className='fas fa-briefcase text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/home-services-app-development/vendor2.webp",
+    "additionalDetails": [
+      { "details": "Manage team & service listings", "emoji": "", "content": "" },
+      { "details": "Assign tasks to providers", "emoji": "", "content": "" },
+      { "details": "Track earnings and payouts", "emoji": "", "content": "" },
+      { "details": "View customer feedback", "emoji": "", "content": "" },
+      { "details": "Inventory & availability tracking", "emoji": "", "content": "" },
+      { "details": "Performance insights", "emoji": "", "content": "" },
+      { "details": "Subscription or commission setup", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Admin Dashboard",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/home-services-app-development/admin2.webp",
+    "additionalDetails": [
+      { "details": "Manage users & service providers", "emoji": "", "content": "" },
+      { "details": "Add/edit/delete services", "emoji": "", "content": "" },
+      { "details": "Track bookings & revenue", "emoji": "", "content": "" },
+      { "details": "Approve/verify service providers", "emoji": "", "content": "" },
+      { "details": "Offer coupons & discounts", "emoji": "", "content": "" },
+      { "details": "Analytics & performance reports", "emoji": "", "content": "" },
+      { "details": "App settings & configurations", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
+
   "portfoliodata":[
   {
     "image": "https://www.comfygen.com/comfygen-images/home-services-app-development/cleaning.webp",

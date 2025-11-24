@@ -13,9 +13,9 @@
 
   "servicesData": [
     {
-      "title": "Custom Blockchain Development",
+      "title": "Custom Blockchain App Development",
       "subtitle": "",
-      "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/custom-blockchain-development-company' >custom blockchain development</a> services deliver bespoke solutions tailored to your business objectives. From architecture design to deployment, we create secure, scalable ledgers that fit your unique use case, whether you’re building a new ecosystem or enhancing existing platforms.",
+      "description": "We design and develop <a href='https://www.comfygen.com/custom-blockchain-development-company' class='font-semibold underline' >Custom blockchain applications</a> that match your unique business needs. Our Blockchain developers leverage top blockchain networks like Ethereum, Polygon, Solana, and Hyperledger to build high-performing and cost-efficient blockchain development solutions. ",
       "features": [
         "End-to-end blockchain design and implementation",
         "Custom consensus mechanisms and governance models",
@@ -24,93 +24,72 @@
       ]
     },
     {
-      "title": "Private Blockchain Development",
+      "title": "Smart Contract Development & Auditing ",
       "subtitle": "",
-      "description": "Our private blockchain development empowers organizations with permissioned networks, offering full control over access and data privacy. Ideal for enterprises that need high performance and confidentiality without compromising transparency among trusted participants.",
+      "description": "Automate business logic with self-executing <a href='https://www.comfygen.com/smart-contract-wallet-development' class='underline font-semibold'>smart contracts development services</a> that ensure transparency, accuracy, and reliability. We also provide smart contract audits to identify vulnerabilities and enhance security. ",
       "features": [
-        "Networks on Hyperledger Fabric, Quorum, and Corda",
-        "Role-based access and encryption for sensitive data",
-        "Optimized for regulatory compliance and enterprise workflows",
-        "Seamless integration with internal systems"
+        "Clean, gas-efficient code ",
+        "Rigorous manual and automated testing",
+        "Compliance-ready architecture",
+        " Detailed audit reports you can act on"
       ]
     },
     {
-      "title": "Public Blockchain Development",
+      "title": "DApp (Decentralized App) Development ",
       "subtitle": "",
-      "description": "With public blockchain development, you can leverage open, decentralized networks to build transparent and tamper-proof applications. We create solutions on leading public blockchains to help you drive trust and engagement.",
+      "description": "Our DApp developers develop user-centric <a href='https://www.comfygen.com/dapp-development-company' class='underline front-semibold'>decentralized applications</a> with intuitive UI/UX, robust backend logic, and seamless performance across web and mobile platforms. ",
       "features": [
-        "Development on Ethereum, Solana, Binance Smart Chain, and more",
-        "Token creation (ERC-20, BEP-20) and NFTs",
-        "Secure deployment of smart contracts and dApps",
-        "Scalability for high-volume transactions"
+        "Multi-chain development support",
+        "Scalable architecture from day one",
+        "Secure wallet integrations",
+        "On-chain and off-chain data handling"
       ]
     },
     {
-      "title": "Enterprise Blockchain Development",
+      "title": "Blockchain Consulting & Architecture Design ",
       "subtitle": "",
-      "description": "Our enterprise blockchain development services transform operations with secure, scalable blockchain solutions designed for enterprise-grade performance. Reimagine workflows, improve data integrity, and unlock new value streams.",
+      "description": "Unsure where blockchain fits into your business model? <a href='https://www.comfygen.com/blockchain-consulting-services' class='underline font-semibold'>Our blockchain consultants Service</a> analyze your requirements, assess feasibility, and design the ideal architecture for your project’s success",
       "features": [
-        "Custom solutions for supply chain, identity, and asset tokenization",
-        "High-throughput transaction processing and audit trails",
-        "Full compliance with enterprise regulations and standards",
-        "End-to-end implementation and support"
+        "Deep technical and business analysis",
+        "Platform selection made simple",
+        "Roadmaps with real timelines and costs",
+        "Architecture built for security and scale"
       ]
     },
     {
-      "title": "Consortium Blockchain Development",
+      "title": "Tokenization & NFT Development ",
       "subtitle": "",
-      "description": "With Consortium Blockchain Development, we help you create shared ledgers governed by multiple organizations. These solutions deliver secure, efficient, and transparent collaboration between trusted partners.",
+      "description": "Unlock new revenue models with tokenization and <a href='https://www.comfygen.com/nft-marketplace-development-company' class='underline font-semibold'>NFT marketplace development</a>. We create custom tokens and NFT platforms that support smooth trading, minting, and ownership tracking. ",
       "features": [
-        "Design and implementation of consortium frameworks",
-        "Permissioned platforms with shared validation rights",
-        "Integration with partner systems and industry protocols",
-        "Custom dashboards and APIs for all participants"
+        "Support for multiple token standards",
+        "Built-in royalty and revenue logic ",
+        "Secure storage and metadata management ",
+        "Marketplace features that drive engagement"
       ]
     },
     {
-      "title": "Hybrid Blockchain Development",
+      "title": "Crypto Wallet & Exchange Development",
       "subtitle": "",
-      "description": "Our Hybrid Blockchain Development combines the transparency of public networks with the privacy of permissioned ledgers. We design systems that selectively share data while protecting sensitive business information.",
+      "description": "Build highly secure <a href='https://www.comfygen.com/multi-currency-wallet-development-company' class='underline font-semibold'>multi-currency crypto wallets</a> and exchanges equipped with KYC/AML features, transaction monitoring, and cold wallet integration for safe crypto management.",
       "features": [
-        "Interoperability between public and private chains",
-        "Custom data-sharing policies and smart contracts",
-        "Secure bridges and scalable infrastructure",
-        "Optimized performance for enterprise workloads"
+        "Multi-layer security architecture",
+        " Support for spot, P2P, and futures trading",
+        "Liquidity engine and market-making integration",
+        "Admin dashboards with real-time insights "
       ]
     },
     {
-      "title": "Blockchain Wallet Development",
+      "title": "Blockchain Integration & Maintenance ",
       "subtitle": "",
-      "description": "Deliver secure, user-friendly experiences with our <a class='underline font-semibold' href='https://www.comfygen.com/crypto-wallet-development' >Blockchain Wallet Development</a> services. We create branded wallets that help your users store, manage, and transfer digital assets effortlessly.",
+      "description": "We provide seamless integration of blockchain into existing business systems and offer 24/7 maintenance, upgrades, and technical support to ensure your application runs flawlessly.",
       "features": [
-        "Multi-currency support and user-friendly interfaces",
-        "Advanced encryption and multi-signature security",
-        "Mobile and web wallet development",
-        "Seamless integration with your platform"
-      ]
-    },
-    {
-      "title": "Layer 2 Blockchain Development",
-      "subtitle": "",
-      "description": "Our Layer 2 Blockchain Development services help you scale your platform with faster transactions and lower fees while maintaining the security of the main chain.",
-      "features": [
-        "Rollups, sidechains, and state channels",
-        "Gas optimization and increased throughput",
-        "Secure integration with existing contracts",
-        "Bridges between mainnet and Layer 2 networks"
-      ]
-    },
-    {
-      "title": "POC Blockchain Development",
-      "subtitle": "",
-      "description": "Validate your vision quickly with POC Blockchain Development that demonstrates feasibility and business value. We build prototypes that help you test ideas before full-scale implementation.",
-      "features": [
-        "Rapid design and MVP delivery",
-        "User testing and performance validation",
-        "Support for multiple blockchain platforms",
-        "Clear roadmap for production implementation"
+        "Smooth migration of legacy data ",
+        "Performance monitoring and optimization",
+        "Regular security updates ",
+        "Feature enhancements based on user feedback"
       ]
     }
+    
   ],
 
   "IndustriesServe": [
@@ -296,21 +275,6 @@
       "num": "06",
       "title": "Custom Token Development ",
       "decs": "BLaunch your tokens for utility, governance, or fundraising. We develop compliant and blockchain-agnostic tokens with <a class='font-semibold text-blue-500' href='https://www.comfygen.com/smart-contract-development'> smart contract deployment </a> and audit support."
-    },
-    {
-      "num": "07",
-      "title": " Cross-Chain & Layer-2 Blockchain Solutions",
-      "decs": "Boost performance and scalability with Layer-2 protocols like Arbitrum or zkSync, and enable interoperability across chains using custom bridge and cross-chain frameworks."
-    },
-    {
-      "num": "08",
-      "title": "RWA Tokenization (Real-World Assets)",
-      "decs": "Transform real-world assets like real estate, art, and commodities into tokenized assets on the blockchain. Improve liquidity, fractional ownership, and transparency."
-    },
-    {
-      "num": "09",
-      "title": "Decentralized Identity (DID) Solutions",
-      "decs": "Protect digital identities with self-sovereign identity systems. Ideal for KYC, onboarding, and secure login experiences, DID ensures privacy, security, and compliance."
     }
   ],
 

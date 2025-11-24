@@ -1,43 +1,24 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./water-delivery-app-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhoCanStart from "./components/WhoCanStart";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-import NewPanel from "./components/NewPanel";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -117,7 +98,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -433,9 +414,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -491,7 +471,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -504,16 +484,25 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our On-Demand Water Delivery App Development Portfolio"
             description="Visit our on-demand water delivery app development portfolio for user-friendly water delivery app solutions designed for startups, local vendors, and large-scale distributors. From subscription-based water delivery to real-time tracking, our apps are built to streamline operations and deliver the best customer experience."
           />
         </section>
 
-  
+        <div className="py-8">
+          <Features
+            heading=" We Develop Water Delivery Apps With Advanced Panel Features"
+            description="At Comfygen Technologies, we integrate advanced features into our
+          water delivery app development services to ensure a smooth experience
+          for customers, delivery agents, and admins. Our scalable and
+          user-friendly app panels help businesses manage daily operations,
+          streamline deliveries, and enhance customer satisfaction."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
-        <NewPanel />
 
         <WhoCanStart
           title="Types of Water Delivery Apps We Develop"
@@ -589,7 +578,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use to Create a Water Delivery App"
           description="At Comfygen Technologies, we use the latest and most reliable technologies to build secure, scalable, and high-performing water delivery mobile apps. Our carefully chosen tech stack ensures seamless operations, smooth performance, and future-ready water ordering app development solutions for startups, SMEs, and enterprises."
         />
@@ -624,3 +613,19 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

@@ -3,15 +3,20 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumtoken.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import NewSection from "../Newcomponet/comman/NewSection"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ModelsSec from '../Newcomponet/SectionCompoent/ModelsSec'
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
 import {
   IconArrowsExchange,
   IconCoin,
@@ -20,24 +25,9 @@ import {
   IconTrophy,
   IconBuildingBridge2,
 } from '@tabler/icons-react';
-import ModelsSec from "../components/ModelsSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const technologyData = [
   {
@@ -71,7 +61,7 @@ const technologyData = [
     desc: "Contributes to the effective trade-off base assets along with enhanced rewards on returns."
   }
 ];
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const [currentCount, setCurrentCount] = useState(0);
   const sliderRef = useRef(null);
@@ -258,49 +248,30 @@ export default function Ecommerce(props:any) {
         <meta property="og:image" content="https://www.comfygen.com/image/ethereum-token-development-og-image.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/image/ethereum-token-development-og-image.webp" />
         <meta property="og:image:alt" content="Ethereum Token Development Company" />
-        
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        {/* <div className=" ">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/ethereum-token-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Ethereum Token Development Services"
-                ptag="Comfygen is a trusted Ethereum token development company in India, specializing in creating secure, scalable, and custom tokens on the Ethereum blockchain. We offer complete <a class='font-semibold' href='/crypto-token-development-company'>crypto token development services </a>, including ERC20, ERC721, and ERC1155 tokens for DeFi, NFT platforms, ICOs, and more. Our blockchain experts ensure smart contract integration, token security, and seamless deployment. Whether you need a utility token, NFT, or a multi-token solution, we deliver future-ready assets designed for high performance and compliance."
-                li="ERC20, ERC721, ERC1155 Token Development"
-                li1="Smart Contract Development & Auditing"
-                li2="ICO & DeFi Token Launch"
-                li3="Wallet Integration and Support"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
+
         <HeroSectionForAllPages
-            heading="Ethereum Token Development Services"
-            ptag="Comfygen is a trusted Ethereum token development company in India, specializing in creating secure, scalable, and custom tokens on the Ethereum blockchain. We offer complete <a class='font-semibold' href='/crypto-token-development-company'>crypto token development services </a>, including ERC20, ERC721, and ERC1155 tokens for DeFi, NFT platforms, ICOs, and more. Our blockchain experts ensure smart contract integration, token security, and seamless deployment. Whether you need a utility token, NFT, or a multi-token solution, we deliver future-ready assets designed for high performance and compliance."
-            li="ERC20, ERC721, ERC1155 Token Development"
-            li1="Smart Contract Development & Auditing"
-            li2="ICO & DeFi Token Launch"
-            li3="Wallet Integration and Support"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
+          heading="Ethereum Token Development Services"
+          ptag="Comfygen is a trusted Ethereum token development company in India, specializing in creating secure, scalable, and custom tokens on the Ethereum blockchain. We offer complete <a class='font-semibold' href='/crypto-token-development-company'>crypto token development services </a>, including ERC20, ERC721, and ERC1155 tokens for DeFi, NFT platforms, ICOs, and more. Our blockchain experts ensure smart contract integration, token security, and seamless deployment. Whether you need a utility token, NFT, or a multi-token solution, we deliver future-ready assets designed for high performance and compliance."
+          li="ERC20, ERC721, ERC1155 Token Development"
+          li1="Smart Contract Development & Auditing"
+          li2="ICO & DeFi Token Launch"
+          li3="Wallet Integration and Support"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/ethereum-token-development-company-hero-img.webp"
         />
-        
+
         <NewSection NewSection={JSON_DATA.NewSections} />
         <AboutSection
           title="About Company"
@@ -311,28 +282,27 @@ export default function Ecommerce(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Ethereum Token Development Services"
-          description="At Comfygen, we deliver end-to-end Ethereum token development services for startups, enterprises, and businesses. As a trusted Ethereum token development company in India, we create secure, scalable ERC20, ERC721, and ERC1155 tokens. Our services include smart contract development, wallet integration, and DeFi, NFT, and ICO/STO token solutions, helping businesses grow in the blockchain ecosystem. With expert developers and a focus on security and compliance, we ensure fast and efficient token deployment."
-        />
+        {/* <ContactFromCenter /> */}
 
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Ethereum Token Development Services</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Ethereum Token Development Services
+              </h2>
               <p className="text-base text-center font-normal">At Comfygen, we deliver end-to-end Ethereum token development services for startups, enterprises, and businesses. As a trusted Ethereum token development company in India, we create secure, scalable ERC20, ERC721, and ERC1155 tokens. Our services include smart contract development, wallet integration, and DeFi, NFT, and ICO/STO token solutions, helping businesses grow in the blockchain ecosystem. With expert developers and a focus on security and compliance, we ensure fast and efficient token deployment.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
-        </section> */}
+        </section>
 
-        <InfoSectionLeft
+        <InfoSection
           heading="Ethereum – An Overview"
           description1="Ethereum is one of the most widely used blockchain platforms for token development, offering a secure and decentralized ecosystem for creating digital assets and <a href='/smart-contract-development' class='text-blue-600'> smart contracts development </a>. Launched in 2015, Ethereum powers thousands of decentralized applications (dApps) and is the backbone for ERC token standards, including ERC20, ERC721, and ERC1155. As a leading blockchain network for Ethereum token development, it provides developers and businesses with the tools to create custom crypto tokens, including utility tokens, security tokens, and NFTs. Ethereum's smart contract functionality ensures that token transactions are secure, automated, and transparent."
+          description2=''
+          description3=''
           points={
             [
               "Supports <a href='/erc20-token-development' class='text-blue-600'> ERC20 token development </a> for DeFi platforms",
@@ -345,11 +315,14 @@ export default function Ecommerce(props:any) {
           imageSrc="https://www.comfygen.com/images/ethereum-overview.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          dec=''
         />
-        <InfoSectionRight
+        <InfoSection
           heading="What Is an Ethereum Token?"
           description1="An Ethereum token is a digital asset or cryptocurrency token built on the Ethereum blockchain. Unlike Ether (ETH), which is Ethereum’s native currency, these tokens are created through smart contracts and follow specific token standards like ERC20, ERC721, and ERC1155. These tokens represent a wide range of assets and utilities—from cryptocurrency tokens used in DeFi applications to NFTs for digital art and gaming. Ethereum token development allows businesses to create custom tokens for fundraising (ICOs and STOs), decentralized exchanges (DEXs), loyalty programs, and blockchain-based ecosystems."
           description2="As a trusted Ethereum token development company in India, Comfygen specializes in building secure, scalable, and compliant Ethereum tokens that are compatible with popular wallets and exchanges."
+          description3=''
+          dec=''
           points={
             [
               "Fast and Secure Transactions",
@@ -361,10 +334,14 @@ export default function Ecommerce(props:any) {
           imageSrc="https://www.comfygen.com/images/what-is-ethereum-token.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="What Is Ethereum Token Development?"
           description1="Ethereum token development is the process of creating digital tokens on the Ethereum blockchain using standards like ERC20, ERC721, and ERC1155. These tokens power DeFi platforms, NFTs, and blockchain ecosystems, enabling businesses to launch crypto assets, run ICOs, or develop tokenized solutions. At Comfygen, a leading Ethereum token development company in India, we deliver secure, scalable, and custom token solutions tailored for startups and enterprises. Our services cover custom token creation, smart contract development, wallet integration, and exchange listing, ensuring your tokens are compliant, efficient, and ready for the Web3 economy."
+          description2=''
+          description3=''
+          dec=''
           points={
             [
               "Custom Token Creation (ERC20, ERC721, ERC1155)",
@@ -379,9 +356,12 @@ export default function Ecommerce(props:any) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Ethereum Token Creation Services"
           description1="At Comfygen, we deliver reliable and secure Ethereum token creation services for businesses looking to launch their custom tokens on the Ethereum blockchain. Whether you need ERC20 utility tokens, ERC721 NFTs, or ERC1155 multi-tokens, our team ensures seamless development and deployment aligned with Web3 and DeFi standards."
+          description2=''
+          description3=''
+          dec=''
           points={
             [
               "Custom ERC20 Token Development",
@@ -396,6 +376,7 @@ export default function Ecommerce(props:any) {
           imageSrc="https://www.comfygen.com/img/erc-20-token-wallet-development.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <SolutionSec
@@ -408,7 +389,7 @@ export default function Ecommerce(props:any) {
             <div className="space-y-4">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-2xl lg:text-4xl font-bold leading-[2rem] lg:leading-[3rem] text-white  ">
-                Ethereum Token Development Across Multiple ERC Standards
+                  Ethereum Token Development Across Multiple ERC Standards
                 </h2>
                 <p className="text-center text-white">At Comfygen, we specialize in Ethereum token development across multiple ERC standards, designed to suit diverse business needs in DeFi, NFT marketplaces, and blockchain ecosystems. Our expert developers create secure, scalable, and compliant tokens that adhere to Ethereum’s widely adopted ERC protocols, ensuring seamless integration with wallets, dApps, and exchanges.</p>
               </div>
@@ -469,20 +450,29 @@ export default function Ecommerce(props:any) {
             "Support for ICO/STO token launches and fundraising campaigns",
           ]}
         />
-        {/* <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        /> */}
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        
+
       </div>
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

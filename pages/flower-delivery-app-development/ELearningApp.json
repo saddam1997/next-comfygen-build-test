@@ -47,6 +47,54 @@
 
 
 
+"featuresData":[
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon":" <i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/p1.webp",
+    "additionalDetails": [
+      { "details": "Easy Product Browsing", "emoji": "", "content": "" },
+      { "details": "Quick & Secure Checkout", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking", "emoji": "", "content": "" },
+      { "details": "Delivery Scheduling Options", "emoji": "", "content": "" },
+      { "details": "Flexible Subscriptions", "emoji": "", "content": "" },
+      { "details": "Discounts & Loyalty Rewards", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Delivery Partner Panel",
+    "icon": "<i className='fas fa-motorcycle text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/p2.webp",
+    "additionalDetails": [
+      { "details": "Route Optimization with GPS", "emoji": "", "content": "" },
+      { "details": "Status Updates in Real Time", "emoji": "", "content": "" },
+      { "details": "Earnings & Order History", "emoji": "", "content": "" },
+      { "details": "Proof of Delivery", "emoji": "", "content": "" },
+      { "details": "Auto Order Assignment", "emoji": "", "content": "" },
+      { "details": "Instant Alerts & Messaging", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/flower-delivery-app-development/p3.webp",
+    "additionalDetails": [
+      { "details": "Complete Order & Inventory Control", "emoji": "", "content": "" },
+      { "details": "Vendor, Driver & Customer Management", "emoji": "", "content": "" },
+      { "details": "Sales Reports & Business Insights", "emoji": "", "content": "" },
+      { "details": "Promotions, Pricing & Plans Setup", "emoji": "", "content": "" },
+      { "details": "Multi-location Vendor Management", "emoji": "", "content": "" },
+      { "details": "Ratings, Feedback & Support Tools", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
 
 
 "servicesData": [

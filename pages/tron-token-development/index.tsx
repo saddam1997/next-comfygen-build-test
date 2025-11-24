@@ -4,17 +4,21 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./data.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import SolutionSec from "../components/SolutionSec";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import NewSection from '../Newcomponet/comman/NewSection'
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 import {
   IconArrowsExchange,
   IconCode,
@@ -23,25 +27,9 @@ import {
   IconShieldCheck,
   IconTools,
 } from "@tabler/icons-react";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-const ModusSection = dynamic(() => import("../components/ModusSection"), {
-  loading: () => <p>Loading...</p>,
-});
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const Process = [
   {
@@ -334,11 +322,10 @@ export default function Tron(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqsSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
 
+      <Header />
+
+      <div className="overflow-hidden">
         <HeroSectionForAllPages
           heading="Trusted Tron Token Development Services"
           ptag="Looking to launch a powerful token on the Tron blockchain? Our Tron Token Development Services are tailored to meet the unique needs of startups and enterprises, helping you create custom TRC-10 and TRC-20 tokens with seamless integration, high security, and scalability."
@@ -375,13 +362,14 @@ export default function Tron(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title=" Our Tron Token Development Services"
-          description=" At Comfygen, we deliver end-to-end Tron token development
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Tron Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we deliver end-to-end Tron token development
                 services tailored for startups, enterprises, and crypto
                 entrepreneurs looking to enter the decentralized economy. As a
                 leading Tron token development company, we specialize in
@@ -394,12 +382,21 @@ export default function Tron(props) {
                 (dApp) ecosystems. Whether you're launching an ICO or building a
                 Web3 platform, our Tron token development solutions are designed
                 to accelerate your blockchain journey with reliability and
-                compliance."
-        />
-        <InfoSectionRight
+                compliance.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+        <InfoSection
           heading="What is TRON?"
           description1="TRON is a high-performance, decentralized blockchain platform designed to enable the seamless creation and deployment of digital assets and decentralized applications (dApps). Launched to build a truly decentralized internet, TRON offers an efficient and scalable infrastructure for businesses and developers looking to leverage blockchain technology."
           description2="At its core, TRON provides a robust foundation for Tron token development, allowing startups and enterprises to create custom tokens that power decentralized finance (DeFi) ecosystems, gaming platforms, NFT marketplaces, and more. With high throughput, low transaction fees, and energy efficiency, TRON has become a go-to choice for businesses seeking a Tron token development company to deliver secure and scalable solutions."
+          description3=''
+          dec=''
           points={[
             "Lightning-Fast Transactions",
             "Minimal Gas Fees",
@@ -411,10 +408,14 @@ export default function Tron(props) {
           imageSrc="https://www.comfygen.com/images/tron-development.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="What is TRC10 and TRC20?"
           description1="TRC10 and TRC20 are the two primary token standards on the TRON blockchain. These standards define how tokens are created, issued, and managed within the TRON ecosystem. Understanding their differences is crucial for businesses and developers planning TRON token development projects."
+          description2=''
+          description3=''
+          dec=''
           points={[
             "TRC10 is a native token standard integrated directly into the TRON blockchain protocol.",
             "It doesn't require a TRON Virtual Machine (TVM), making it simpler and more affordable to deploy.",
@@ -426,9 +427,12 @@ export default function Tron(props) {
           linkText="LET'S CONNECT "
         />
 
-        <InfoSectionRight
+        <InfoSection
           heading="What Makes TRON Token So Popular?"
           description1="The TRON token (TRX) has gained massive popularity in the blockchain and crypto space, especially for businesses exploring TRON token development. Its rise is attributed to its high scalability, low transaction fees, and developer-friendly ecosystem that promotes seamless <a class='text-blue-500' href='/dapp-development-company'>dApp development</a>  and token creation. TRON’s mission to decentralize the web and support Web3 innovations makes it a top choice for startups and enterprises."
+          description2=''
+          description3=''
+          dec=''
           points={[
             "High Transactions Per Second (TPS) for fast and scalable solutions.",
             "Low Gas Fees, making transactions cost-effective.",
@@ -442,11 +446,14 @@ export default function Tron(props) {
           imageSrc="https://www.comfygen.com/images/what-makes-tron-token-so-popular.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Tron Token Development Cost"
           description1="The cost of developing a TRON token depends on several factors, including the token standards (TRC10 or TRC20), the complexity of features, and the level of customization required. Businesses and startups looking for TRON token development services often inquire about the investment needed to launch a scalable, secure, and compliant token on the TRON blockchain network."
           description2="On average, the TRON token development cost ranges from $1,500 to $10,000+, based on project scope and technical requirements. Custom functionalities like governance mechanisms, staking, DeFi integration, and NFT compatibility can influence the overall budget."
+          description3=''
+          dec=''
           points={[
             "Token Standard Selection (TRC10, TRC20, or TRC721)",
             "Smart Contract Complexity and Security Audits",
@@ -465,9 +472,12 @@ export default function Tron(props) {
           subheading="At Comfygen, a leading Tron Token Development Company, we craft customized Tron token development solutions that empower startups and enterprises to leverage the TRON blockchain efficiently. Whether you're launching TRC10, TRC20, or TRC721 tokens, our Tron token developers ensure secure, scalable, and high-performance assets designed for the evolving Web3 ecosystem."
           techData={technologyData}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Tron TRC10 Token Development"
           description1="Leverage the power of TRC10 token standards to create secure, scalable, and cost-efficient tokens on the Tron blockchain. TRC10 tokens are ideal for startups and enterprises looking for simple, decentralized solutions without the need for complex smart contracts. Our Tron TRC10 token development services enable you to launch customizable tokens with high transaction speed, low fees, and seamless integration into Tron wallets and exchanges."
+          description3=''
+          description2=''
+          dec=''
           points={[
             "Easy-to-deploy token structure",
             "Minimal transaction costs",
@@ -481,10 +491,12 @@ export default function Tron(props) {
           linkText="LET'S CONNECT "
         />
 
-        <InfoSectionRight
+        <InfoSection
           heading="Tron TRC20 Token Development"
           description1="Looking to launch highly secure, scalable, and customizable tokens on the TRON blockchain? Our TRC20 Token Development services are designed to help startups, enterprises, and crypto enthusiasts create next-gen tokens that power decentralized applications (dApps), DeFi protocols, and more. As a leading Tron token development company, we provide robust TRC20 token development solutions that ensure faster transactions, lower fees, and seamless interoperability within the TRON ecosystem."
           description2="Our TRC20 tokens are fully compliant with the TRON blockchain standards, making them ideal for <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchanges</a> , wallet integration, and smart contract deployment. Whether you need a utility token, security token, or a token for your DeFi platform, our expert TRON developers ensure secure, scalable, and efficient token creation tailored to your project requirements."
+          description3=''
+          dec=''
           points={[
             "Smart Contract Powered Tokens",
             "Seamless Wallet Integration",
@@ -496,6 +508,7 @@ export default function Tron(props) {
           imageSrc="https://www.comfygen.com/img/tron-trc20-token-development.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
 
         <HireDeveloper
@@ -563,4 +576,18 @@ export default function Tron(props) {
       </div>
     </>
   );
+}
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

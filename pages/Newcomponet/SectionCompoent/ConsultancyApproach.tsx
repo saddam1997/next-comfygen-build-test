@@ -67,9 +67,9 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                                 onClick={() => setCurrentCount(currentCount === index ? null : index)}
                             >
                                 <div className="flex justify-between w-full text-base font-medium text-left text-black rounded-lg md:text-lg">
-                                    <span className="font-semibold lg:text-lg text-base text-[#000000]">
+                                    <h3 className="font-semibold lg:text-lg text-base text-[#000000]">
                                         {elem.title}
-                                    </span>
+                                    </h3>
                                     {currentCount === index ? (
                                         <MdRemove size={26} />
                                     ) : (

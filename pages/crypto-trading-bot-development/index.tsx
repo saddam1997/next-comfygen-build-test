@@ -1,21 +1,26 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptotoken.json";
-import { useState } from "react";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import CardListMinimal from "../componentsnew/CardListMinimal";
-import CardGrid from "../components/CardGrid";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import NewSection from "../Newcomponet/comman/NewSection"
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import CryptoTradingList from "../Newcomponet/SectionCompoent/CryptoTradingSection";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CardListMinimal from "../Newcomponet/SectionCompoent/CardListMinimal";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import {
   IconArrowsLeftRight,
   IconChartBar,
@@ -32,24 +37,8 @@ import {
   IconArrowsExchange2,
 } from "@tabler/icons-react";
 
-import SolutionSec from "../componentsnew/SolutionSec";
-import ConsultancyApproachBlue from "../componentsnew/ConsultancyApproachBlue";
-import CryptoTradingList from "./components/CryptoTradingSection";
-import TrendsSection from "../componentsnew/TrendsSection";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Processs = [
   {
     title: "Requirement Analysis & Strategy Planning",
@@ -88,38 +77,7 @@ const Processs = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/cloud-based-crypto-trading-bot-crypto-trading-bot-development.webp",
-      head: "Cloud-Based Crypto Trading Bot",
-      name: "We develop an advanced, cloud-based crypto trading bot designed to automate trading strategies for beginners and experienced traders. It integrates seamlessly with major cryptocurrency exchanges, providing users with powerful trading tools to maximize their profits with minimal effort. Our development team at Comfygen built this platform with a focus on automation, real-time analytics, and user-friendly functionality.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/cloud-based-crypto-trading-bot",
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-based-crypto-trading-bot-crypto-trading-bot-development.webp",
-      head: "AI-Based Crypto Trading Bot Development",
-      name: "At Comfygen, we developed an advanced crypto trading bot solution designed to automate trading strategies, optimize market execution, and maximize profits. Our cutting-edge platform seamlessly integrates with multiple exchanges, providing traders with AI-driven insights and powerful automation tools.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/crypto-trading-bot-development",
-    },
-  ],
-};
+
 
 const CardGridData = [
   {
@@ -192,7 +150,7 @@ const technologyData = [
   },
 ];
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -549,9 +507,8 @@ export default function Ecommerce(props) {
           }}
         />
       </Head>
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden xl:pt-16">
         <HeroSectionForAllPages
           heading="AI-Based Crypto Trading Bot Development Company"
@@ -582,13 +539,13 @@ export default function Ecommerce(props) {
             "Custom Crypto Trading Bot Development",
             "AI-Driven Market Analysis",
             "Portfolio Optimization & Performance Tracking",
-            
+
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -628,16 +585,22 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={Processs} />
           </div>
         </section>
-          <TrendsSection
+        <TrendsSection
           heading="Benefits of Choosing Our AI-Based Crypto Trading Bot Development Services"
           subtitle="At Comfygen, we provide cutting-edge crypto trading bot development services tailored to enhance your trading efficiency, minimize risks, and maximize profitability. Here’s why partnering with us is the best choice for your automated trading solutions:"
           trends={JSON_DATA.Emerging}
         />
-          <PortfolioSec
-          techData={techDataForPage1}
-          heading="Portfolio of Crypto Trading Bot Development Solution"
-          description="At Comfygen, we developed a high-performance AI-powered crypto trading bot designed to automate trading strategies, optimize market opportunities, and enhance profitability. Our solution seamlessly integrates with top cryptocurrency exchanges like Binance, Kraken, and Coinbase, ensuring real-time trade execution with minimal latency. Built with advanced AI algorithms and risk management tools, our bot enables traders to make data-driven decisions, automate orders, and maximize trading efficiency."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Portfolio of Crypto Trading Bot Development Solution"
+            description="At Comfygen, we developed a high-performance AI-powered crypto trading bot designed to automate trading strategies, optimize market opportunities, and enhance profitability. Our solution seamlessly integrates with top cryptocurrency exchanges like Binance, Kraken, and Coinbase, ensuring real-time trade execution with minimal latency. Built with advanced AI algorithms and risk management tools, our bot enables traders to make data-driven decisions, automate orders, and maximize trading efficiency."
+          />
+        </section>
+
+
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <CardGrid
@@ -679,7 +642,7 @@ export default function Ecommerce(props) {
           tradingData={JSON_DATA.CryptoTrading}
         />
 
-        <ConsultancyApproachBlue
+        <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-feature.webp"
@@ -702,10 +665,10 @@ export default function Ecommerce(props) {
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.IndustryApplications.map((elem) => {
+                {JSON_DATA.IndustryApplications.map((elem, index:any) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                    <div key={index} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                         {num}
                       </div>
@@ -732,7 +695,7 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-       
+
       </div>
     </>
   );

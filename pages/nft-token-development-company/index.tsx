@@ -3,31 +3,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nfttoken.json";
-
+import Header from '../Newcomponet/layout/Header'
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { BsFillStarFill } from "react-icons/bs";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ProcessSec from "../components/ProcessSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ModelsSec from "../components/ModelsSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Processs = [
   {
     title: "Conceptualization",
@@ -280,26 +269,26 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-    
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
+
         <HeroSectionForAllPages
-           heading="NFT Token Development Company"
-           ptag="As a premier NFT Token Development Company, we specialize in building secure, scalable, and feature-rich non-fungible tokens (NFTs) that empower businesses, creators, and entrepreneurs worldwide. Whether you aim to tokenize digital art, virtual real estate, collectibles, or in-game assets, our customized NFT token development services provide the perfect solution. Comfygen leverages cutting-edge blockchain technologies to create unique, verifiable, and easily transferable NFT tokens. Our NFT development company in India and the USA delivers world-class solutions for the gaming, art, music, fashion, and real estate industries."
-           ptag1="We offer NFT token development services that focus on transparency, security, and seamless functionality. Our skilled blockchain developers craft NFT tokens that align with your business model and meet global standards. "
-           li="Custom NFT Token Development"
-           li1="NFT Smart Contract Development"
-           li2="NFT Marketplace Development"
-           li3="NFT Wallet Integration"
-           li4="Cross-Chain NFT Development (Ethereum, Polygon, Solana, BSC)"
-           btnName="Talk With Expert"
-           btnLink="/contact-us"
-           openModal={openModal}
-           talkToExpertModal={talkToExpertModal}
-           setTalkToExpertModal={setTalkToExpertModal}
-           closeModal={closeModal}
+          heading="NFT Token Development Company"
+          ptag="As a premier NFT Token Development Company, we specialize in building secure, scalable, and feature-rich non-fungible tokens (NFTs) that empower businesses, creators, and entrepreneurs worldwide. Whether you aim to tokenize digital art, virtual real estate, collectibles, or in-game assets, our customized NFT token development services provide the perfect solution. Comfygen leverages cutting-edge blockchain technologies to create unique, verifiable, and easily transferable NFT tokens. Our NFT development company in India and the USA delivers world-class solutions for the gaming, art, music, fashion, and real estate industries."
+          ptag1="We offer NFT token development services that focus on transparency, security, and seamless functionality. Our skilled blockchain developers craft NFT tokens that align with your business model and meet global standards. "
+          li="Custom NFT Token Development"
+          li1="NFT Smart Contract Development"
+          li2="NFT Marketplace Development"
+          li3="NFT Wallet Integration"
+          li4="Cross-Chain NFT Development (Ethereum, Polygon, Solana, BSC)"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/nft-token-development-company-hero-img.webp"
         />
         <AboutSection
@@ -319,31 +308,42 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title=" Our NFT Token Development Services"
-          description="At Comfygen,  we offer comprehensive NFT token development services tailored
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold"> Our NFT Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">{`At Comfygen,  we offer comprehensive NFT token development services tailored
                 to meet the unique needs of businesses, creators, and
                 entrepreneurs. Our solutions cover the entire lifecycle of NFT
                 token development, from conceptualization and design to
                 deployment and post-launch support. Whether you’re looking to
                 create digital collectibles, tokenize assets, or launch a custom
-                NFT marketplace, our team of expert blockchain developers delivers secure, scalable, and innovative NFT solutions."
-                description1="We leverage popular blockchain networks like Ethereum, Polygon,
+                NFT marketplace, our team of expert blockchain developers delivers secure, scalable, and innovative NFT solutions.`}</p>
+              <p className="text-base text-center font-normal">{`We leverage popular blockchain networks like Ethereum, Polygon,
                 Solana, and Binance Smart Chain to ensure your NFT tokens are
                 interoperable, high-performing, and compliant with the latest
                 industry standards. Our goal is to help businesses across
                 industries—art, gaming, real estate, music, and more—tap into
                 the potential of non-fungible tokens (NFTs) and unlock new
-                revenue streams."
-        />
+                revenue streams.`}</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <InfoSectionLeft
+
+
+        <InfoSection
           heading="What are NFTs?"
           description1="NFTs, or Non-Fungible Tokens, are unique digital assets secured by blockchain technology. Unlike cryptocurrencies that are interchangeable, NFTs represent ownership of one-of-a-kind digital or physical assets—such as digital artwork, music files, virtual real estate, and gaming collectibles. Each NFT contains distinct metadata and proof of ownership, making it impossible to duplicate or forge. This uniqueness has made NFTs popular in industries like art, gaming, real estate, and entertainment."
           description2="Businesses and creators are turning to NFT token development services to mint, manage, and trade these assets across secure, scalable blockchain platforms like Ethereum, Polygon, and Solana.."
+          description3=''
+          dec=''
           points={[
             "<span class='font-semibold'>Unique Ownership:</span> Every NFT represents a distinct asset with verifiable ownership.",
             "<span class='font-semibold'>Secure and Transparent: </span> Stored on decentralized blockchain networks, ensuring authenticity.",
@@ -355,13 +355,17 @@ export default function Ecommerce(props) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Why NFTs Matter in 2025"
           description1="As blockchain technology evolves, NFT token development plays a key role in digital ownership and asset tokenization. In 2025, businesses across India, the USA, Europe, and the UAE are adopting NFTs for new revenue streams and user engagement strategies."
           description2="Whether you're launching an NFT marketplace or tokenizing assets, partnering with an experienced NFT token development company ensures security, scalability, and success."
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/benefits-of-nft-tokens.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
 
 
@@ -401,26 +405,39 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <InfoSectionLeft
+        <InfoSection
           heading="How NFT Tokens Are Different from Crypto?"
           description1="As blockchain technology continues to evolve, understanding the distinction between NFT tokens and cryptocurrencies is crucial for businesses and creators looking to enter the digital asset ecosystem. While both assets are powered by decentralized networks, they serve different purposes and offer unique benefits. Our NFT token development company helps clients leverage these differences to maximize value and achieve strategic goals."
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/image/nft-tokens-are-different-from-crypto.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
 
-        <InfoSectionRight
+        <InfoSection
           heading="What Are NFT Token Development ?"
           description1="Non-fungible tokens (NFTs) are unique digital assets representing ownership of distinct items such as digital art, music, in-game assets, virtual real estate, and more. Each NFT token is one-of-a-kind, with specific metadata and ownership records secured on the blockchain. With our NFT token development services, we create fully customized NFTs tailored to various industries, ensuring uniqueness, transparency, and security."
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/image/what-are-nft-tokens.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <InfoSectionLeft
+        <InfoSection
           heading="What Are Cryptocurrencies?"
           description1="Cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH) are fungible digital currencies used as a medium of exchange or store of value. Every unit of a cryptocurrency is identical and interchangeable, which makes them ideal for financial transactions and investments."
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/image/what-are-cryptocurrencies.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
@@ -562,3 +579,20 @@ export default function Ecommerce(props) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

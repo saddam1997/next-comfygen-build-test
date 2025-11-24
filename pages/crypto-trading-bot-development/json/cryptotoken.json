@@ -193,6 +193,23 @@
     }
   ],
 
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/cloud-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "Cloud-Based Crypto Trading Bot",
+      "description": "We develop an advanced, cloud-based crypto trading bot designed to automate trading strategies for beginners and experienced traders. It integrates seamlessly with major cryptocurrency exchanges, providing users with powerful trading tools to maximize their profits with minimal effort. Our development team at Comfygen built this platform with a focus on automation, real-time analytics, and user-friendly functionality.",
+      "link": "/portfolio/cloud-based-crypto-trading-bot"
+    },
+    {
+      "image": "https://www.comfygen.com/image/ai-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "AI-Based Crypto Trading Bot Development",
+      "description": "At Comfygen, we developed an advanced crypto trading bot solution designed to automate trading strategies, optimize market execution, and maximize profits. Our cutting-edge platform seamlessly integrates with multiple exchanges, providing traders with AI-driven insights and powerful automation tools.",
+      "link": "/portfolio/crypto-trading-bot-development"
+    }
+    
+    
+  ],
   "IndustryApplications": [
     {
       "num": "01",
@@ -214,8 +231,6 @@
       "title": " Hedge Funds & Institutional Traders",
       "decs": "Institutional clients and hedge funds rely on our AI-powered crypto trading bots to implement high-frequency trading (HFT), arbitrage, and predictive algorithms. These bots are capable of executing thousands of trades per second, optimizing for speed, accuracy, and maximum ROI."
     }
-
-
   ],
   "CryptoTrading": [
     {
@@ -296,16 +311,14 @@
     {
       "title": "Decentralized Exchanges",
       "listItems": [
-      "Uniswap",
-      "<a class='text-blue-500' href='https://www.comfygen.com/blog/ultimate-pancakeswap-clone-script-guide-in-2025-features-benefits-how-to-launch/'>PancakeSwap</a>",
-      "SushiSwap",
-      "1inch",
-      "Curve Finance",
-      "QuickSwap"
-    ]
-
+        "Uniswap",
+        "<a class='text-blue-500' href='https://www.comfygen.com/blog/ultimate-pancakeswap-clone-script-guide-in-2025-features-benefits-how-to-launch/'>PancakeSwap</a>",
+        "SushiSwap",
+        "1inch",
+        "Curve Finance",
+        "QuickSwap"
+      ]
     }
-    
   ],
   "myList1": [
     "A centralized exchange is an exchange run by a company that offers fiat-to-crypto or crypto-to-crypto trading pairs. Consider Binance and Coinbase.",
@@ -465,7 +478,6 @@
       "li4": "Customization: Zignaly and TradeSanta allow for a more tailored trading experience. Ultimately, choose a bot based on the platform, ease of use, support, and features that match your trading style."
     }
   ],
-
   "testimonials": [
     {
       "text": "“Comfygen transformed our trading operations with a custom-built crypto arbitrage bot. Their team was knowledgeable, responsive, and delivered exactly what we needed. Great experience overall”",
@@ -481,15 +493,13 @@
       "text": "“I’m impressed with the crypto trading bot developed by Comfygen. It uses AI to analyze market trends in real-time and automate trades 24/7. The support team was always available and super helpful.”",
       "name": "James Carter",
       "title": "CEO"
-    }
-    ,
+    },
     {
       "text": "“Comfygen delivered a top-notch crypto grid trading bot for our fintech startup. It’s incredibly efficient and customizable. Their developers understood our business logic and implemented everything on time.”",
       "name": "Sneha Verma",
       "title": "India"
     }
   ],
-
   "Develop": [
     {
       "num": "1",

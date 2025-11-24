@@ -28,6 +28,59 @@
 ],
 
 
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Customer App",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/customer.webp",
+    "additionalDetails": [
+      { "details": "Easy Sign-up & Location-Based Search", "emoji": "", "content": "" },
+      { "details": "Advanced Category & Filter Options", "emoji": "", "content": "" },
+      { "details": "Business Profile Viewing with Ratings/Reviews", "emoji": "", "content": "" },
+      { "details": "Map Integration for Nearby Results", "emoji": "", "content": "" },
+      { "details": "Direct Call, Chat, or Inquiry Options", "emoji": "", "content": "" },
+      { "details": "Bookmarking & Favorite Listings", "emoji": "", "content": "" },
+      { "details": "Instant Push Notifications", "emoji": "", "content": "" },
+      { "details": "Review & Feedback Submission", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Business/Vendor Panel",
+    "icon":" <i className='fas fa-store text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/vendor.webp",
+    "additionalDetails": [
+      { "details": "Easy Profile Setup & Service Listing", "emoji": "", "content": "" },
+      { "details": "Add Photos, Descriptions & Contact Details", "emoji": "", "content": "" },
+      { "details": "Real-time Inquiry Management", "emoji": "", "content": "" },
+      { "details": "View Customer Ratings & Feedback", "emoji": "", "content": "" },
+      { "details": "Business Performance Dashboard", "emoji": "", "content": "" },
+      { "details": "Premium Listing & Ad Promotion Options", "emoji": "", "content": "" },
+      { "details": "Update Availability & Location Info", "emoji": "", "content": "" },
+      { "details": "Notification & Alert Center", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon":" <i className='fas fa-user-shield text-4xl'></i>,",
+    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/admin.webp",
+    "additionalDetails": [
+      { "details": "User & Vendor Management Console", "emoji": "", "content": "" },
+      { "details": "Listing Approval & Moderation", "emoji": "", "content": "" },
+      { "details": "Manage Categories, Tags & Filters", "emoji": "", "content": "" },
+      { "details": "Analytics Dashboard & Reporting Tools", "emoji": "", "content": "" },
+      { "details": "Advertisement & Monetization Control", "emoji": "", "content": "" },
+      { "details": "CMS Integration for Content Updates", "emoji": "", "content": "" },
+      { "details": "Spam Control & Review Monitoring", "emoji": "", "content": "" },
+      { "details": "Multi-role Access Permissions", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
 "portfoliodata": [
   {
     "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio1.webp",

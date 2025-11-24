@@ -1,18 +1,7 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/p2pcryptoexchangedevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../components/PortfolioSec";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconScaleOutline,
   IconExchange,
@@ -29,24 +18,24 @@ import {
   IconPhone,
   IconArrowsDownUp,
 } from "@tabler/icons-react";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import CardGrid from "../components/CardGrid";
-import CryptoTradingList from "../crypto-exchange-admin-panel-development/components/CryptoTradingSection";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import NewSection from "../Newcomponet/comman/NewSection"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import CryptoTradingList from "../Newcomponet/SectionCompoent/CryptoTradingSection";
+import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 const Processs = [
   {
     title: "Conceptualization",
@@ -129,53 +118,7 @@ const CardGridData = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      head: "YatriPay",
-      name: "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/peer-to-peer-blockchain-based-payment-system",
-    },
-    {
-      img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      head: "NASDAC Crypto Coin",
-      name: "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-    },
 
-    {
-      img: "https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-hero--portfolio-image.webp",
-      head: "decentralized blockchain-based cryptocurrency",
-      name: "Successfully developed and deployed Croston, a fully decentralized blockchain-based cryptocurrency designed for secure, scalable, and high-speed transactions. Croston provides a trustless, transparent, and efficient digital asset solution for both businesses and individual users. Featuring advanced smart contract capabilities and an innovative consensus mechanism, it ensures seamless transactions and governance within a next-generation financial ecosystem.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/decentralized-blockchain-based-cryptocurrency",
-    },
-  ],
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -419,10 +362,10 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="P2P Crypto Exchange Development Company"
           ptag="Comfygen is a trusted P2P crypto exchange development company offering cutting-edge, decentralized solutions tailored to modern trading needs. Our experts empower startups, enterprises, and crypto businesses to launch robust platforms where users can trade cryptocurrencies directly, without intermediaries."
@@ -448,26 +391,35 @@ export default function Ecommerce(props) {
           description1="A <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/what-is-a-p2p-crypto-exchange-how-peer-to-peer-trading-works/' >custom P2P crypto exchange</a> is a secure, scalable platform designed to meet your unique business needs. It enables direct peer-to-peer cryptocurrency trading with lower fees by removing middlemen. Features like crypto escrow services, flexible payment options, and blockchain-based security build user trust and simplify transactions."
           description2="This tailored platform supports business growth with a scalable infrastructure that handles increasing trading volumes effortlessly. Strong security features and full regulatory compliance protect users and assets, ensuring a trustworthy environment."
           points={[
-          "Tailored platform built around your business goals",
-          "Enhanced security with escrow and smart contracts",
-          "Fast, low-cost peer-to-peer trading experience",
-          "Scalable system ready for growth and expansion",
-          "Compliance with industry regulations and risk management",
+            "Tailored platform built around your business goals",
+            "Enhanced security with escrow and smart contracts",
+            "Fast, low-cost peer-to-peer trading experience",
+            "Scalable system ready for growth and expansion",
+            "Compliance with industry regulations and risk management",
           ]}
           imageSrc="https://www.comfygen.com/image/about-image-p2p-crypto-exchange-development.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Core P2P Crypto Exchange Development Services"
-          description="At Comfygen, we offer a suite of advanced P2P crypto exchange development services tailored to meet the needs of modern businesses. From building secure architectures to deploying scalable solutions, we bring innovation to every layer of your exchange."
-        />
 
-        <CoreFeaturesSection title="Benefits of P2P Crypto Exchange Development" 
-        subtitle="Investing in P2P crypto exchange development empowers businesses to grow in the DeFi space. P2P platforms provide enhanced security, transparency, and cost savings compared to traditional exchanges, key advantages in today’s digital economy."
-        features={JSON_DATA.LeadingSoftware}
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Core P2P Crypto Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer a suite of advanced P2P crypto exchange development services tailored to meet the needs of modern businesses. From building secure architectures to deploying scalable solutions, we bring innovation to every layer of your exchange.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+
+        <CoreFeaturesSection title="Benefits of P2P Crypto Exchange Development"
+          subtitle="Investing in P2P crypto exchange development empowers businesses to grow in the DeFi space. P2P platforms provide enhanced security, transparency, and cost savings compared to traditional exchanges, key advantages in today’s digital economy."
+          features={JSON_DATA.LeadingSoftware}
         />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
@@ -549,42 +501,47 @@ export default function Ecommerce(props) {
           ]}
         />
 
-         <section className="lg:py-16 py-10 bg-[#fff]">
-                  <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-                    <div className="space-y-4 text-center">
-                      <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                        <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                          Use Cases & Industry Applications of P2P Crypto Exchange Development
-                        </h2>
-                        <p>
-                          P2P crypto exchanges are revolutionizing how users interact with digital assets by removing intermediaries and empowering secure, direct trading. These platforms have real-world applications across various industries and business models:
-                        </p>
+        <section className="lg:py-16 py-10 bg-[#fff]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                  Use Cases & Industry Applications of P2P Crypto Exchange Development
+                </h2>
+                <p>
+                  P2P crypto exchanges are revolutionizing how users interact with digital assets by removing intermediaries and empowering secure, direct trading. These platforms have real-world applications across various industries and business models:
+                </p>
+              </div>
+              <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
+                {JSON_DATA.IndustryApplications.map((elem) => {
+                  const { title, decs, num } = elem;
+                  return (
+                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
+                        {num}
                       </div>
-                      <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                        {JSON_DATA.IndustryApplications.map((elem) => {
-                          const { title, decs, num } = elem;
-                          return (
-                            <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                              <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                                {num}
-                              </div>
-                              <h3 className="text-2xl text-[#212121] font-semibold">
-                                {title}
-                              </h3>
-                              <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                            </div>
-                          );
-                        })}
-                      </div>
+                      <h3 className="text-2xl text-[#212121] font-semibold">
+                        {title}
+                      </h3>
+                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
                     </div>
-                  </div>
-                </section>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our P2P Crypto Exchange development Based Portfolio"
-          description="At Comfygen, we take pride in delivering cutting-edge P2P crypto exchange development solutions that empower businesses worldwide. Our portfolio showcases a diverse range of decentralized platforms designed for seamless and secure crypto trading. From feature-rich peer-to-peer exchanges to scalable crypto trading platforms, we have successfully launched numerous projects tailored to our client's unique requirements."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our P2P Crypto Exchange development Based Portfolio"
+            description="At Comfygen, we take pride in delivering cutting-edge P2P crypto exchange development solutions that empower businesses worldwide. Our portfolio showcases a diverse range of decentralized platforms designed for seamless and secure crypto trading. From feature-rich peer-to-peer exchanges to scalable crypto trading platforms, we have successfully launched numerous projects tailored to our client's unique requirements."
+          />
+        </section>
+
+
         <TechStack
           title="Our Cryptocurrency Development Technology Stack"
           description=""
@@ -596,7 +553,7 @@ export default function Ecommerce(props) {
           tradingData={JSON_DATA.CryptoTrading}
         />
 
-         <CardGrid
+        <CardGrid
           heading="Our Revenue Models of P2P Cryptocurrency Exchange Software"
           subheading="At Comfygen, we integrate flexible and scalable revenue models into your P2P cryptocurrency exchange software, enabling you to monetize effectively while delivering real value to your users. These monetization strategies are tailored to support long-term growth and maximize profitability for exchange owners."
           techData={CardGridData}
@@ -611,3 +568,19 @@ export default function Ecommerce(props) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

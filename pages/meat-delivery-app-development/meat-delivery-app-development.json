@@ -109,6 +109,79 @@
       "link": "#"
     }
   ],
+
+
+  "featuresData":[
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Customer Panel.webp",
+    "additionalDetails": [
+      { "details": "Easy order booking and shipment scheduling", "emoji": "", "content": "" },
+      { "details": "Browse Ice Cream Flavors & Combos", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking with ETA", "emoji": "", "content": "" },
+      { "details": "AI-Powered Flavor Recommendations", "emoji": "", "content": "" },
+      { "details": "In-App Payments & Digital Wallets", "emoji": "", "content": "" },
+      { "details": "Subscription & Pre-Scheduling Options", "emoji": "", "content": "" },
+      { "details": "Push Notifications for Offers & Discounts", "emoji": "", "content": "" },
+      { "details": "Ratings & Reviews for Shops & Flavors", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Vendor Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Parlors).webp",
+    "additionalDetails": [
+      { "details": "Add/Manage Flavors & Pricing", "emoji": "", "content": "" },
+      { "details": "Inventory & Stock Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Management", "emoji": "", "content": "" },
+      { "details": "Offer & Discount Creation", "emoji": "", "content": "" },
+      { "details": "Delivery Partner Assignment", "emoji": "", "content": "" },
+      { "details": "Earnings & Sales Reports", "emoji": "", "content": "" },
+      { "details": "Customer Feedback Management", "emoji": "", "content": "" },
+      { "details": "Multi-Outlet Support", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Driver Panel",
+    "img": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Delivery Panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Quick Registration & Verification", "emoji": "", "content": "" },
+      { "details": "Accept/Reject Delivery Requests", "emoji": "", "content": "" },
+      { "details": "Optimized GPS Routes & Navigation", "emoji": "", "content": "" },
+      { "details": "Real-Time Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "Earnings & Commission Tracking", "emoji": "", "content": "" },
+      { "details": "Order History & Reports", "emoji": "", "content": "" },
+      { "details": "In-App Chat with Customers/Vendors", "emoji": "", "content": "" },
+      { "details": "Availability Toggle (Online/Offline)", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/Admin Panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Centralized Dashboard with Analytics", "emoji": "", "content": "" },
+      { "details": "Manage Users, Vendors & Delivery Partners", "emoji": "", "content": "" },
+      { "details": "Revenue & Commission Management", "emoji": "", "content": "" },
+      { "details": "Approve/Reject Vendor Listings", "emoji": "", "content": "" },
+      { "details": "Content & Promotion Management (CMS)", "emoji": "", "content": "" },
+      { "details": "Offers, Discounts & Coupon Control", "emoji": "", "content": "" },
+      { "details": "Multi-Branch & Franchise Support", "emoji": "", "content": "" },
+      { "details": "Blockchain-Powered Transaction Security", "emoji": "", "content": "" }
+
+
+    ]
+  }
+],
+
+
+
   "servicesData1": [
     {
       "title": "Simplifies the Loan Process",

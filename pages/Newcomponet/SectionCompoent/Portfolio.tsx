@@ -57,9 +57,9 @@ function Portfolio({ projects, heading, description }) {
                         />
                       </div>
                       <div className="p-2 sm:p-0">
-                        <h2 className="sm:text-4xl text-center sm:text-start text-sm font-bold text-gray-900">
+                        <h3 className="sm:text-4xl text-center sm:text-start text-sm font-bold text-gray-900">
                           {project?.title}
-                        </h2>
+                        </h3>
                         <p
                           className="text-black py-3 text-base block md:hidden sm:text-4xl text-center"
                           dangerouslySetInnerHTML={{

@@ -166,6 +166,60 @@
 
 
 
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon": "<i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/salon-app-development/customer-panel-beauty-app-development.webp",
+    "additionalDetails": [
+      { "details": "Easy Sign-Up & Login", "emoji": "", "content": "" },
+      { "details": "Browse & Book Services", "emoji": "", "content": "" },
+      { "details": "Real-Time Appointment Scheduling", "emoji": "", "content": "" },
+      { "details": "Service Ratings & Reviews", "emoji": "", "content": "" },
+      { "details": "Stylist Profile Viewing", "emoji": "", "content": "" },
+      { "details": "In-App Payments & Invoices", "emoji": "", "content": "" },
+      { "details": "GPS-Based Salon Discovery", "emoji": "", "content": "" },
+      { "details": "Push Notifications & Reminders", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Salon Professional Panel",
+    "icon": "<i className='fas fa-scissors text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-panel-beauty-app-development.webp",
+    "additionalDetails": [
+      { "details": "Manage Availability & Bookings", "emoji": "", "content": "" },
+      { "details": "Portfolio Upload & Service Listing", "emoji": "", "content": "" },
+      { "details": "Real-Time Chat with Clients", "emoji": "", "content": "" },
+      { "details": "Earnings & Commission Tracking", "emoji": "", "content": "" },
+      { "details": "Review Management", "emoji": "", "content": "" },
+      { "details": "Daily/Weekly Schedule View", "emoji": "", "content": "" },
+      { "details": "Automated Reminders", "emoji": "", "content": "" },
+      { "details": "Service History & Analytics", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon":" <i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/salon-app-development/admin-panel-beauty-app-development.webp",
+    "additionalDetails": [
+      { "details": "Dashboard with Key Metrics", "emoji": "", "content": "" },
+      { "details": "Manage Users & Professionals", "emoji": "", "content": "" },
+      { "details": "Approve/Reject Vendor Listings", "emoji": "", "content": "" },
+      { "details": "Revenue & Commission Settings", "emoji": "", "content": "" },
+      { "details": "Track Appointments & Cancellations", "emoji": "", "content": "" },
+      { "details": "CMS for Content & Promotions", "emoji": "", "content": "" },
+      { "details": "Offer & Discount Management", "emoji": "", "content": "" },
+      { "details": "Multi-Branch Salon Control", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
  "portfoliodata":[
 
   {

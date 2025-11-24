@@ -2,29 +2,16 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nodejs.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   { title: "Requirement Gathering and Analysis", 
@@ -52,7 +39,7 @@ const Process = [
 
 ];
 
-export default function Altcoin(props) {
+export default function Altcoin(props:any) {
   let { initialData } = props;
 
 
@@ -110,10 +97,10 @@ export default function Altcoin(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+
+      <div className="overflow-hidden lg:pt-[110px]">
 
         <div className="">
           <div>
@@ -143,7 +130,7 @@ export default function Altcoin(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -204,3 +191,19 @@ export default function Altcoin(props) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

@@ -6,27 +6,16 @@ import { RiCustomerService2Fill, RiTodoLine } from "react-icons/ri";
 import { AiOutlineDeploymentUnit, AiOutlineMobile } from "react-icons/ai";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/python.json"
-import LazyLoad from "react-lazy-load";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ServicesSec from "../components/ServicesSec";
-const Header = dynamic(() => import('../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection"
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import NewSection from "../Newcomponet/comman/NewSection"
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const HeroSectionForAllPages = dynamic(() => import('../components/HeroSectionForAllPages'), {
-  loading: () => <p>Loading...</p>,
-})
-const NewSection = dynamic(() => import('../components/NewSection'), {
-  loading: () => <p>Loading...</p>,
-})
-const ContactFromCenter = dynamic(() => import('../components/ContactFromCenter'), {
-  loading: () => <p>Loading...</p>,
-});
 
 const Services = [
   {
@@ -66,7 +55,7 @@ const Services = [
     decs: 'High-quality Django-based web development in Python includes scientific computation, statistical analysis, and data science capabilities.  '
   },
 ]
-export default function Altcoin(props) {
+export default function Altcoin(props:any) {
 
   let { initialData } = props;
   let { NewSections, Hire, myList, Frequently } = JSON_DATA
@@ -103,10 +92,10 @@ export default function Altcoin(props) {
         <meta name="twitter:data1" content="14 minutes" />
         <meta name='language' content='en-us' />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className='overflow-hidden'>
+
+      <div className='overflow-hidden lg:pt-[20px]'>
         <div className="">
           <div>
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/python-development-company-hero-img.webp')]">
@@ -136,7 +125,7 @@ export default function Altcoin(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -148,27 +137,41 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
-        <InfoSectionRight
+        <InfoSection
           heading="Python App Development company"
           description1="With over a decade of experience delivering Python solutions, Comfygen has delivered everything from dynamic websites to sophisticated, avant-garde web apps. You can get your dream web or app development project done with Python, an open-source, clear, and powerful object-oriented programming language.By leveraging advanced Python development frameworks, programming languages, and front-end tools, Comfygen delivers high-quality websites, web apps, and mobile applications. We have developers who are proficient in Python web development frameworks such as Django. There are similar frameworks for Python web apps such as Flask, Zope, and Pyramid, among others."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/python app.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
-     
-        <InfoSectionLeft
+
+        <InfoSection
           heading="python development firm"
           description1="With decades of experience working across domains, we specialize in Python development services. With end-to-end Python development capabilities, we help clients unlock value and gain efficiencies. Offering Python development solutions and best-in-class consulting services, we partner with clients to achieve business objectives. The latest features and functionality of your web applications can be included with our expertise in Python frameworks such as Django & Flask. Building web apps quickly, efficiently, and with less coding requires the use of several Python frameworks."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/python-development.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Leading Python Development Company In India"
           description1="Comfygen uses Django Python and Angular 2 for frontend technologies to enable entrepreneurs to build successful start-up businesses.Through the integrated platform, entrepreneurs could confirm start-up ideas through discussion, meet investors to get seed funding, and find competent talent via an integrated recruitment portal. Multi-funding sources are integrated into the platform, all based on cryptocurrencies and blockchain technology. As a result, all three profiles of a creator, a backer, and an employee are seamlessly combined. To nurture ideas and turn them into profitable businesses, the solution brings entrepreneurs, investors, and employees together."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/python-develop.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
         <HireDeveloper
           heading="Hire Python Developers In India"
@@ -185,9 +188,13 @@ export default function Altcoin(props) {
             "Conduct technical interviews"
           ]}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Why Choose Us As Your Python Development Company?"
           description1="Comfygen offers our clients the latest and most futuristic Python Development by incorporating it into their projects. Object-oriented programming languages, such as Python, are high-level languages with dynamic semantics. Comfygen is a prominent Python development company with top-of-the-line Python developers who can develop complex Python-driven web applications with in-depth knowledge and experience. As a Python Django web development company, we have experience delivering large-scale projects. We strive to build Python desktop and web applications with state-of-the-art industry practices. If you choose Comfygen as your Python development partner, you will get out-of-the-box web solutions based on Python 3.7.0, Django, Web2py, and Flask frameworks. Our Python web development expertise can help you build a Python web development project. Moreover, we can help identify bottlenecks and optimize your Python application's performance."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/why-choose-us python-developer.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
@@ -208,4 +215,20 @@ export default function Altcoin(props) {
       </div>
     </>
   )
+}
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }

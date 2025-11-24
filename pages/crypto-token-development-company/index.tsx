@@ -431,10 +431,10 @@ export default function Ecommerce(props) {
                 </p>
               </div>
               <div className="grid gap-10 py-10 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-10">
-                {JSON_DATA.Develop.map((elem) => {
+                {JSON_DATA.Develop.map((elem, index) => {
                   const { title, img, decs } = elem;
                   return (
-                    <div className="p-8 space-y-2 bg-[#fff] cursor-pointer rounded-2xl">
+                    <div key={index} className="p-8 space-y-2 bg-[#fff] cursor-pointer rounded-2xl">
                       <div className="flex items-center justify-center bg-[#5556D1]/20 w-16 h-16 p-3 rounded-lg">
                         <Image
                           className="object-cover"

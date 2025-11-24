@@ -23,9 +23,9 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                                 {techItem.img} 
                             </div>
                             <div className="space-y-2">
-                                <h2 className="2xl:text-2xl text-xl text-[#212121] font-semibold" dangerouslySetInnerHTML={{ __html: techItem.title }}>
+                                <h3 className="2xl:text-2xl text-xl text-[#212121] font-semibold" dangerouslySetInnerHTML={{ __html: techItem.title }}>
                                    
-                                </h2>
+                                </h3>
                                 <p className="text-base text-[#212121]"  dangerouslySetInnerHTML={{ __html: techItem.desc }}>
                                   
                                 </p>

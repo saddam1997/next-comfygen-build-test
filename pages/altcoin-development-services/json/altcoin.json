@@ -3,7 +3,6 @@
     "title": "Choose Top Altcoin Development Services",
     "decs": "We are an Indian-based startup that specializes in developing and improving altcoins. We can assist your altcoin's value and trade efficiency be optimized thanks to our knowledge of blockchain technologies. No matter if you need to create a brand-new altcoin or enhance an existing one, our team of professionals is prepared to produce excellent outcomes. We provide all-inclusive cryptocurrency development services with an emphasis on safety and creativity. We are your reliable partner if you're searching for engaging expertise in altcoin development. Decide to work with us as your cryptocurrency development firm, and we'll help you launch a profitable altcoin project."
   },
-
   "Processs": [
     {
       "title": "Whitepaper creation and ideation",
@@ -35,60 +34,26 @@
     }
   ],
 
-"techDataForPage1" : {
-  "All": [
+  "portfoliodata": [
     {
-      "img": "https://www.comfygen.com/img/altcoin-coin-development-company.webp",
-      "head": "Altcoin & coin creation Company",
-      "name": "Do you have a passion for crypto? Let's get started! Integrate cutting-edge blockchain technologies with superior security to increase the value and tradeability of your altcoin. Providing",
-      "num": "1",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "/portfolio/aria-coin-details"
+      "image": "https://www.comfygen.com/img/altcoin-coin-development-company.webp",
+      "title": "Altcoin & coin creation Company",
+      "description": "Do you have a passion for crypto? Let's get started! Integrate cutting-edge blockchain technologies with superior security to increase the value and tradeability of your altcoin. Providing",
+      "link": "/portfolio/aria-coin-details"
     },
     {
-      "img": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      "head": "NASDAC Crypto Coin",
-      "based": "Blockchain-based Cryptocoin Development",
-      "name": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      "num": "1",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "/portfolio/blockchain-based-cryptocoin-development"
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+       "link": "/portfolio/blockchain-based-cryptocoin-development"
     },
     {
-      "img": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-      "head": "M7 Coin",
-      "based": "Blockchain-based Cryptocoin Development",
-      "name": "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
-      "num": "1",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "/portfolio/m7-coin"
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7 Coin",
+      "description": "M7Coin Web Wallet: Redefining crypto management. Seamlessly store, send, and receive M7Coins with ease. Your user-friendly gateway to the dynamic world of digital assets.",
+      "link": "/portfolio/m7-coin"
     }
-
-  ]
-},
-
-
-
-
-
+  ],
 
   "pageData": {
     "title": "Why Should You Choose Comfygen for Altcoin Creation?",
@@ -131,40 +96,68 @@
       }
     ]
   },
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Development of Altcoins",
       "subtitle": "All Service And Solutions At One Place",
       "description": "As cryptocurrency exchanges grow in popularity, the need for diverse altcoins continues to rise. Our altcoin development services provide businesses with customized cryptocurrency solutions that are secure, scalable, and tailored to meet your specific needs. From the creation of unique altcoins to integration with decentralized exchanges, we ensure your altcoin is built with robust security features to facilitate seamless trading and growth in the crypto ecosystem.",
-      "features": ["Custom Altcoin Creation & Development", "Blockchain Integration & Tokenomics Design" , "Secure & Scalable Altcoin Solutions" , "Integration with Cryptocurrency Exchanges" , "Enhanced Security Features for Safe Trading"]
+      "features": [
+        "Custom Altcoin Creation & Development",
+        "Blockchain Integration & Tokenomics Design",
+        "Secure & Scalable Altcoin Solutions",
+        "Integration with Cryptocurrency Exchanges",
+        "Enhanced Security Features for Safe Trading"
+      ]
     },
     {
       "title": "Cryptocurrency Wallet Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "A crypto wallet facilitates faster and more manageable payments by securely storing private keys and processing transactions. If you wish to create your own crypto wallet, we provide a highly secure and reliable solution tailored to your specific needs. Our team ensures that the wallet is user-friendly, offers robust security features, and supports seamless transactions, making it easy for users to manage their digital assets effectively.",
-      "features": ["Custom Crypto Wallet Design & Development", "Private Key Storage & Transaction Processing" , "Highly Secure & Reliable Solutions" , "Cross-Platform Compatibility" , "User-Friendly Interface & Seamless Experience"]
+      "features": [
+        "Custom Crypto Wallet Design & Development",
+        "Private Key Storage & Transaction Processing",
+        "Highly Secure & Reliable Solutions",
+        "Cross-Platform Compatibility",
+        "User-Friendly Interface & Seamless Experience"
+      ]
     },
     {
       "title": "Mining Services for Cryptocurrencies",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Crypto coin mining requires a sophisticated blend of hardware and software tools to create and validate digital currencies. Our cryptocurrency mining services provide cutting-edge tools and technologies for efficient and secure mining. Whether you're looking to mine popular coins or new digital assets, we offer tailored solutions that maximize your mining performance and profitability",
-      "features": ["Advanced Mining Hardware & Software Tools" , "Custom Mining Solutions for Popular & New Coins", "Optimized Mining Performance & Efficiency" , "Secure and Scalable Mining Operations" , "Expert Support & Maintenance for Mining Equipment"]
+      "features": [
+        "Advanced Mining Hardware & Software Tools",
+        "Custom Mining Solutions for Popular & New Coins",
+        "Optimized Mining Performance & Efficiency",
+        "Secure and Scalable Mining Operations",
+        "Expert Support & Maintenance for Mining Equipment"
+      ]
     },
     {
       "title": "Software Development for Cryptocurrency Exchanges",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our software development services for cryptocurrency exchanges provide robust and secure platforms where multiple cryptocurrencies can be traded seamlessly. We offer white-label cryptocurrency software built using the latest technology stacks, ensuring high security, scalability, and performance. Our solutions are customizable to fit your business needs, enabling smooth transactions and an enhanced trading experience for your users.",
-      "features": ["White-Label Crypto Exchange Software", "Secure Multi-Currency Trading Platforms" , "Latest Technology Stacks for Scalability & Performance" , "Customizable Exchange Features & Branding" , "Robust Security Features for Safe Trading"]
+      "features": [
+        "White-Label Crypto Exchange Software",
+        "Secure Multi-Currency Trading Platforms",
+        "Latest Technology Stacks for Scalability & Performance",
+        "Customizable Exchange Features & Branding",
+        "Robust Security Features for Safe Trading"
+      ]
     },
     {
       "title": "Smart Contract Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Transactions between two parties are entirely governed by smart contracts that run on blockchain technology, ensuring transparency and automation. At Comfygen, we specialize in developing secure, efficient, and customizable smart contracts without compromising on security. Our smart contracts can be deployed on various platforms, including Ethereum, Ethereum Classic, Neo, and other leading blockchain networks, providing a seamless and trusted environment for decentralized transactions.",
-      "features": ["Secure & Efficient Smart Contract Development", "Deployment on Multiple Blockchain Platforms (Ethereum, Neo, etc.)" , "Customizable Smart Contracts for Various Use Cases" , "Enhanced Security & Transparency" , "Automated and Trustworthy Transactions"]
+      "features": [
+        "Secure & Efficient Smart Contract Development",
+        "Deployment on Multiple Blockchain Platforms (Ethereum, Neo, etc.)",
+        "Customizable Smart Contracts for Various Use Cases",
+        "Enhanced Security & Transparency",
+        "Automated and Trustworthy Transactions"
+      ]
     }
   ],
-
-
   "Process": [
     {
       "num": "1",
@@ -207,17 +200,16 @@
       "num": "1",
       "title": "What are the top 4 altcoins?",
       "desc": "As of 2025, some of the top altcoins by market cap and adoption include:",
-       "li1": "Ethereum (ETH) – Known for its smart contract functionality and DeFi ecosystem.",
-       "li2": "Solana (SOL) – Popular for high-speed transactions and low fees.",
-       "li3": "Cardano (ADA) – Focused on scalability, sustainability, and peer-reviewed research.",
-       "li4": "Polygon (MATIC) – An Ethereum Layer-2 scaling solution with growing developer adoption.",
-       "li5": "These altcoins are widely used in decentralized applications, NFT marketplaces, and DeFi protocols."
+      "li1": "Ethereum (ETH) – Known for its smart contract functionality and DeFi ecosystem.",
+      "li2": "Solana (SOL) – Popular for high-speed transactions and low fees.",
+      "li3": "Cardano (ADA) – Focused on scalability, sustainability, and peer-reviewed research.",
+      "li4": "Polygon (MATIC) – An Ethereum Layer-2 scaling solution with growing developer adoption.",
+      "li5": "These altcoins are widely used in decentralized applications, NFT marketplaces, and DeFi protocols."
     },
     {
       "num": "2",
       "title": "What is the future of altcoin in 2025?",
       "desc": "The future of altcoins in 2025 looks promising, driven by innovation in blockchain technology and increasing adoption of decentralized finance (DeFi), NFTs, and Web3 applications. Many businesses are exploring custom token creation and launching their altcoins to power decentralized platforms. Partnering with a trusted altcoin development company can help you leverage these opportunities and launch future-ready digital assets."
-
     },
     {
       "num": "3",

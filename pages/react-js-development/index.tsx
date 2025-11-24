@@ -1,29 +1,20 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/reactjs.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import {IconCode, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconUsers, } from '@tabler/icons-react';
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import { IconCode, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconUsers, } from '@tabler/icons-react';
+
+
 const technologyData = [
   {
     img: <IconCode stroke={1.5} className="w-12 h-12" />,
@@ -31,7 +22,7 @@ const technologyData = [
     desc: "React Native empowers developers to build complex advanced mobile applications with ease. Its modular architecture and robust framework ensure scalability and performance, allowing apps to handle intricate functionalities effortlessly. Whether for startups or enterprises, React Native delivers advanced features and user experiences across multiple platforms efficiently."
   },
   {
-    img: <IconFolderOpen  stroke={1.5} className="w-12 h-12" />, 
+    img: <IconFolderOpen stroke={1.5} className="w-12 h-12" />,
     title: "React Native is Open Source",
     desc: "Being open-source, React Native fosters innovation and collaboration. Mobile App developers worldwide contribute to its extensive library, ensuring constant improvement and support. This open ecosystem accelerates development, reduces costs, and provides access to reliable tools and pre-built components for crafting high-quality applications that meet diverse business needs."
   },
@@ -41,17 +32,17 @@ const technologyData = [
     desc: "With React Native, developers can use reusable code across platforms, significantly speeding up development and reducing effort. A single codebase eliminates redundancy, simplifies maintenance, and ensures consistent performance on both iOS and Android, making it an ideal choice for efficient and scalable app development."
   },
   {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />, 
+    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
     title: "Powerful User Interface",
     desc: "React Native delivers a powerful user interface with smooth interactions and a native-like experience. Its pre-built components and flexibility in customization ensure apps are visually appealing and highly functional, offering users an intuitive and engaging experience that enhances satisfaction and retention."
   },
   {
-    img: <IconRosetteDiscountCheck stroke={1.5} className="w-12 h-12" />, 
+    img: <IconRosetteDiscountCheck stroke={1.5} className="w-12 h-12" />,
     title: "Cost-Efficiency",
     desc: "React Native’s cross-platform development approach boosts cost efficiency by reducing the need for separate iOS and Android teams. Businesses can save time and resources while delivering high-quality apps, making it a perfect solution for startups and enterprises aiming to optimize their budget without compromising on performance."
   },
   {
-    img: <IconFileText stroke={1.5} className="w-12 h-12" />, 
+    img: <IconFileText stroke={1.5} className="w-12 h-12" />,
     title: "Combine it with Native Code",
     desc: "React Native allows seamless integration with native code, enabling developers to combine its flexibility with the robustness of native features. This hybrid approach ensures access to device-specific functionalities, enhances performance, and enables the development of sophisticated, high-performance apps tailored to unique business requirements."
   },
@@ -162,13 +153,12 @@ export default function ReactJS(props) {
         <meta name="twitter:data1" content="14 minutes" />
         <meta name="language" content="en-us" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/react-js-development-company-hero-img.webp')]">
+            <div className="">
               <HeroSectionForAllPages
                 heading="Top React Native App Development Company in Jaipur, India"
                 ptag="Searching for top-notch React Native developers? You've come to the right place! Comfygen, the leading React Native development company in Jaipur, India, specializes in creating cutting-edge mobile apps for iOS and Android. Our skilled developers expertly utilize mobile app’s JavaScript framework, React Native, to deliver innovative and high-performing solutions tailored to your needs."
@@ -182,6 +172,7 @@ export default function ReactJS(props) {
                 talkToExpertModal={talkToExpertModal}
                 setTalkToExpertModal={setTalkToExpertModal}
                 closeModal={closeModal}
+                bgImage="https://www.comfygen.com/herosection/react-js-development-company-hero-img.webp"
               />
             </div>
           </div>
@@ -195,7 +186,7 @@ export default function ReactJS(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -217,13 +208,13 @@ export default function ReactJS(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our React Native Development Process</h2>
               <p className="text-base font-normal mt-2">
-              We follow a streamlined React Native development process to craft high-quality mobile applications tailored to your unique needs. Every stage is designed to ensure seamless performance, innovative features, and a user-centric approach.
+                We follow a streamlined React Native development process to craft high-quality mobile applications tailored to your unique needs. Every stage is designed to ensure seamless performance, innovative features, and a user-centric approach.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <IndustriesServe />
+        <IndustriesServe heading="" description=""/>
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -252,3 +243,19 @@ export default function ReactJS(props) {
     </>
   );
 }
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

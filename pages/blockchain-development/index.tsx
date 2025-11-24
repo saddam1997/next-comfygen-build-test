@@ -26,6 +26,7 @@ import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 import Faq from "../Newcomponet/SectionCompoent/Faq";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
 
 const GuidSectionBlockchain = dynamic(
@@ -36,39 +37,39 @@ const GuidSectionBlockchain = dynamic(
 );
 const Process = [
   {
-    title: "Discovery & Conceptualization",
+    title: "Requirement Gathering & Consultation",
     description:
-      "We begin by understanding your business objectives, challenges, and target outcomes. During this phase, our blockchain experts analyze the feasibility of blockchain integration, choose the most suitable platform, and design a tailored roadmap that aligns with your vision.",
+      "We analyze your goals, users, and blockchain needs to create a clear project roadmap.",
   },
   {
-    title: "System Design & Architecture Planning",
+    title: "Blockchain Architecture Design",
     description:
-      "Once the vision is clear, we move on to architecting the solution. Our team builds a solid technical foundation with robust data flows, smart contract logic, and intuitive user experience designs. Everything is meticulously structured for long-term scalability and maximum efficiency.",
+      "We design a scalable, secure blockchain framework with the right network, consensus, and smart contract logic. ",
   },
   {
-    title: "Custom Blockchain ",
+    title: "UI/UX Design",
     description:
-      "This is where the core development begins. Our skilled developers code smart contracts, build decentralized applications, and integrate front-end and back-end systems. We ensure your blockchain solution is secure, interoperable, and optimized for high performance across devices and networks.",
+      "Our designers create intuitive, user-friendly interfaces that ensure seamless experience and compliance. ",
   },
   {
-    title: " Rigorous Testing & Quality Assurance",
+    title: "Development & Integration",
     description:
-      "Every blockchain solution we build undergoes comprehensive testing. From unit and integration testing to performance and security audits, we leave no stone unturned in ensuring your application is error-free, fully functional, and future-proof.",
+      "Using Ethereum, Polygon, Solana, and Hyperledger, we build smart contracts and APIs for a fully functional app",
   },
   {
-    title: "Deployment & Go-Live",
+    title: "Testing & Quality Assurance",
     description:
-      "After thorough testing, your blockchain solution is deployed either on a public mainnet or a private blockchain network. Our team ensures a seamless launch with node configurations, contract deployment, and system monitoring for optimal performance.",
+      "Rigorous security, performance, and functionality testing ensure a stable, hack-proof app",
   },
   {
-    title: "Integration with Emerging Technologies",
+    title: "Deployment & Launch",
     description:
-      "To give your solution a competitive edge, we integrate it with emerging technologies like AI, IoT, and big data. These integrations open doors to smarter automation, real-time analytics, and enhanced user engagement across platforms.",
+      "We manage smooth deployment on main net or enterprise environments with version control.",
   },
   {
-    title: "Maintenance & Upgrades",
+    title: "Support & Maintenance",
     description:
-      "Our support doesn’t end with deployment. We offer regular maintenance, timely upgrades, and performance tuning to keep your blockchain system secure, scalable, and in sync with the latest trends and technologies.",
+      "Ongoing monitoring, support, and upgrades keep your blockchain app performing at its best.",
   },
 ];
 
@@ -155,67 +156,7 @@ const Blockchaincards = [
     desc: "An ecosystem that connects multiple blockchains to share data securely. Polkadot enables scalable, interoperable networks with shared security and cross-chain compatibility.",
     url: "/",
   },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b5.svg",
-    name: "Algorand Blockchain Development",
-    desc: "Designed for speed and simplicity, Algorand combines fast transaction finality with low fees. It’s a great choice for payments, tokenization, and decentralized financial products.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b6.svg",
-    name: "Tezos Blockchain Development",
-    desc: "A self-amending platform known for formal verification and strong governance. Tezos makes it easy to create secure smart contracts and upgrade protocols without hard forks.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b7.svg",
-    name: "Fantom Blockchain Development",
-    desc: "A high-performance platform built for fast, low-cost applications. Fantom uses a DAG-based consensus to deliver near-instant transaction finality for DeFi and enterprise solutions.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b8.svg",
-    name: "Ripple Blockchain Development",
-    desc: "Focused on cross-border payments, Ripple enables fast, low-fee transactions between financial institutions. It’s trusted by banks and payment providers worldwide.",
-  },
 
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b10.svg",
-    name: "Binance Smart Chain Development",
-    desc: "A fast, low-cost platform compatible with Ethereum tools and assets. Binance Smart Chain is ideal for launching DeFi products, tokens, and decentralized apps with high performance.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b13.svg",
-    name: "Corda Blockchain Development",
-    desc: "An open-source platform designed for secure, permissioned applications. Corda is well-suited for businesses needing confidentiality, real-time data sharing, and compliance.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b14.svg",
-    name: "Hedera Hashgraph Blockchain Development",
-    desc: "A fast, energy-efficient distributed ledger with predictable fees and high throughput. Hedera is great for enterprise applications and tokenized assets requiring trusted governance.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b15.svg",
-    name: "EOS Blockchain Development",
-    desc: "A platform optimized for scalability and low-latency transactions. EOS enables developers to build high-performance dApps with minimal costs and flexible governance.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b17.svg",
-    name: "Tron Blockchain Development",
-    desc: "A platform designed for high-speed decentralized applications and content sharing. Tron supports scalable dApps and digital asset creation with low transaction fees.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b18.svg",
-    name: "Cosmos Blockchain Development",
-    desc: "An ecosystem of interoperable blockchains connected by the Cosmos Hub. Cosmos simplifies building custom networks that communicate securely and efficiently.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b19.svg",
-    name: "VeChain Blockchain Development",
-    desc: "Tailored for supply chain management and enterprise use cases, VeChain offers tools for tracking, verifying, and automating processes with transparency and trust.",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b20.svg",
-    name: "Quorum Blockchain Development",
-    desc: "An enterprise-focused version of Ethereum built for privacy and performance. Quorum is ideal for financial institutions and organizations needing secure, permissioned networks.",
-  },
 ];
 
 const website = {
@@ -779,7 +720,7 @@ export default function Blockchain(props) {
     <div className="overflow-hidden">
       <Head>
         <title>
-          Blockchain Development Company | Blockchain App Development
+          Blockchain App Development Company | Blockchain App Development
         </title>
         <meta
           name="description"
@@ -888,8 +829,8 @@ export default function Blockchain(props) {
       <BlockchainNav />
       <div className="overflow-hidden lg:pt-[50px]">
         <HeroSectionForAllPages
-          heading="Blockchain Development Company"
-          ptag="Comfygen Technologies is a leading blockchain development company offering custom, secure, and scalable solutions for startups and enterprises. With proven expertise in DeFi, NFTs, smart contracts, and enterprise blockchain app development, we help businesses unlock the full potential of decentralized technologies. Our blockchain experts follow best practices in security, compliance, and agile development to deliver innovative, future-ready solutions. Whether you need a dApp, cross-chain integration, or end-to-end blockchain consulting, Comfygen is your trusted partner for success in the Web3 ecosystem."
+          heading="Blockchain App Development Company"
+          ptag="Comfygen is a leading blockchain app development company specializing in creating secure, scalable, and enterprise-grade decentralized applications (dApps). Our team of expert blockchain developers delivers custom blockchain software solutions for startups, SMEs, and large enterprises, helping them leverage distributed ledger technology to enhance transparency, automation, and data security. Whether you need blockchain wallet development, smart contract development, NFT marketplace solutions, or DeFi platform development, Comfygen provides end-to-end blockchain development services according to your business goals. "
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -901,15 +842,10 @@ export default function Blockchain(props) {
 
         <AboutSection
           title=""
-          heading="Empower Your Business with Next-Gen Blockchain App Development"
-          description1="Unlock the power of decentralization with Comfygen’s advanced blockchain app development services. We design and build secure, scalable, and high-performance decentralized applications (dApps) tailored to your business goals. Our expert blockchain developers specialize in delivering reliable blockchain solutions that streamline operations, boost transparency, and drive digital transformation."
-          points={[
-            "Build custom dApps on Ethereum, Polygon, Solana, and more",
-            "Scalable blockchain architecture for long-term growth",
-            "Secure <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/smart-contract-development' >smart contract development</a> and audit-ready code",
-            "Seamless cross-chain integration and platform interoperability",
-            "Clean, intuitive UI/UX for better adoption and usability",
-          ]}
+          heading="About Our Blockchain App Development Expertise"
+          description1="At Comfygen, we are more than a blockchain development agency, as a leading blockchain app development company, we deliver custom blockchain development solutions, blockchain consulting services, and end-to-end dApp development designed to help businesses harness the power of decentralization, transparency, and data security."
+          description2="Our certified <a href='https://www.comfygen.com/hire-blockchain-developer' class='text-blue-600'>blockchain developers</a> and experienced solution architects specialize in building secure, scalable, and tailored blockchain applications that perfectly align with your business objectives. We offer smart contract development, tokenization platforms, DeFi solutions, NFT marketplace services, and <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-600'>blockchain wallet development</a> for startups and enterprises worldwide.  "
+
           imageSrc="https://www.comfygen.com/gallery/about-images/blockchain-development-about-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -918,15 +854,26 @@ export default function Blockchain(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Blockchain Development Services
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Blockchain App Development Services
               </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we specialize in delivering next-generation blockchain development services that empower startups, enterprises, and institutions to build secure, transparent, and scalable digital ecosystems. Our team combines deep technical expertise with a future-focused mindset to create decentralized solutions that align with your business objectives and drive growth.</p>
+              <p className="text-base text-center font-normal">At Comfygen, we provide end-to-end blockchain development services designed to help startups, enterprises, and innovators build secure, scalable, and decentralized digital ecosystems.
+                Our blockchain development expertise covers every layer of blockchain technology from architecture design to <a href='https://www.comfygen.com/smart-contract-wallet-development' className="text-blue-600">smart contract deployment</a>, ensuring that your business gains a powerful competitive edge in the digital economy. </p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
         </section>
+
+
+        <CallToAction
+          heading="Build a Future-Ready Blockchain Application"
+          text="Take your business to the next level with secure, scalable, and high-performance blockchain app development solutions."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -982,9 +929,9 @@ export default function Blockchain(props) {
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Blockchain Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Blockchain App Development Process</h2>
               <p className="text-base font-normal mt-2">
-               Our blockchain development process is thoughtfully crafted to guide businesses from ideation to full-scale deployment. At Comfygen, we follow a strategic, agile, and customized approach to deliver secure, scalable, and future-ready blockchain applications tailored to your business goals.
+                At Comfygen, we follow an agile, strategic approach to turn your vision into a high-performance, decentralized solution with transparency and innovation at every step. 
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -1000,11 +947,11 @@ export default function Blockchain(props) {
           />
         </section>
 
-        <LatestTechnology
+        {/* <LatestTechnology
           heading="Blockchain Development Trends We Follow"
           subheading="At Comfygen, we integrate cutting-edge blockchain trends to deliver future-ready digital solutions. As a top blockchain development company, we combine innovation with strategy to build decentralized, secure, and scalable ecosystems for businesses worldwide."
           techData={technologyData}
-        />
+        /> */}
 
         <IndustriesServe
           heading="Our Blockchain Development Services for Diverse Industries"

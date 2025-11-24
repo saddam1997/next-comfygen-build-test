@@ -3,30 +3,26 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import IndustriesServe from "../components/IndustriesServe";
-import ModelsSec from "../components/ModelsSec";
-import CardItem from "../components/CardItem";
-import HireDeveloper from "../components/HireDeveloper";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
-import ProcessSec from "../components/ProcessSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
-import { IconAdjustments, IconAutomation, IconDatabase, IconExchange,  IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import Script from "next/script";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-import PointsCardBg from "../componentsnew/PointsCardBg";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import PointsCardBg from "../Newcomponet/SectionCompoent/PointsCardBg";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import { IconAdjustments, IconAutomation, IconDatabase, IconExchange, IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
+import Script from "next/script";
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -312,9 +308,9 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+      <Header />
+
       <div className="overflow-hidden">
         <HeroSectionForAllPages
           heading="Solana Token Development Company"
@@ -341,10 +337,13 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <InfoSectionRight
+        {/* <ContactFromCenter /> */}
+        <InfoSection
           heading="Step-by-Step Guide to Creating a Token on the Solana Blockchain"
           description1="Creating a token on the Solana Blockchain is a streamlined process for businesses and developers aiming to enter the Web3 ecosystem. As a leading Solana Token Development Company, we simplify the process of launching secure, scalable, and interoperable tokens. Whether you’re building DeFi platforms, NFT marketplaces, or custom decentralized applications, Solana token development services offer high-speed transactions and minimal gas fees—perfect for startups and enterprises alike."
+          description2=''
+          description3=''
+          dec=''
           points={[
             "Set up a Solana-compatible wallet (Phantom, Sollet, etc.)",
             "Install Solana Command Line Interface (CLI)",
@@ -360,12 +359,23 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/img/how-to-create-a-token-on-solana-blockchain.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Solana Token Development Services"
-          description="As a leading Solana Token Development Company, we offer comprehensive and custom-tailored Solana token development services to help businesses and startups launch secure, scalable, and high-performance tokens. Whether you aim to power your DeFi platforms, NFT marketplaces, or Web3 projects, our expert Solana blockchain developers deliver cutting-edge solutions optimized for speed, security, and interoperability."
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Solana Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">s a leading Solana Token Development Company, we offer comprehensive and custom-tailored Solana token development services to help businesses and startups launch secure, scalable, and high-performance tokens. Whether you aim to power your DeFi platforms, NFT marketplaces, or Web3 projects, our expert Solana blockchain developers deliver cutting-edge solutions optimized for speed, security, and interoperability.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <SolutionSec
           heading="Features of Solana Development"
           subheading="Solana, known for its high-speed, low-cost transactions, and scalability, has emerged as a leading blockchain solution for enterprises and developers seeking to build next-generation decentralized applications (dApps). The Solana blockchain provides several features that make it one of the most robust and efficient blockchain platforms, ideal for token creation, DeFi applications, NFTs, and other decentralized solutions. With its unique consensus mechanism, Proof of History (PoH), Solana ensures that transactions are processed in real-time, without compromising on security or decentralization."
@@ -378,9 +388,12 @@ export default function Ecommerce(props) {
           buttonText="Explore More"
           buttonLink="/contact-us"
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Strategies for Successful Solana Token Development"
           description1="Building a successful token on Solana requires more than just technical execution — it demands a well-structured strategy that aligns with blockchain best practices, market demands, and long-term scalability. From tokenomics design to deployment and post-launch support, each step plays a critical role in ensuring your Solana token's success."
+          description2=''
+          description3=''
+          dec=''
           points={
             [
               "Define Clear Use Cases and Utility",
@@ -395,11 +408,14 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/img/strategies-for-solana-token-development-projects.webp"
           link="/contact-us"
           linkText="LET'S CONNECT"
+          imagePosition='right'
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Solana Token Development Solutions"
           description1="Comfygen offers comprehensive Solana token development solutions tailored to your project’s unique goals. From creating custom SPL tokens to integrating them with DeFi platforms, NFT marketplaces, and dApps, we ensure high-performance, secure, and scalable solutions powered by Solana’s ultra-fast and low-cost blockchain infrastructure."
           description2="Accelerate your blockchain journey with our full-suite Solana token development services. Whether you're building a new decentralized finance (DeFi) protocol, launching a utility or governance token, or developing a cross-chain asset, our Solana experts deliver robust, future-ready solutions with seamless smart contract deployment and ecosystem compatibility."
+          description3=''
+          dec=''
           points={
             [
               "Custom SPL Token Development",
@@ -416,10 +432,12 @@ export default function Ecommerce(props) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Best-in-Class Whitelabel Solana Token Services for Web3"
           description1="Accelerate your Web3 journey with our Whitelabel Solana token development services, designed for rapid deployment and seamless scalability. Whether you aim to launch SPL tokens, NFTs, or DeFi tokens, our ready-to-launch solutions help you go live faster without compromising on quality, security, or customization."
           description2="As a trusted Solana token development company, we provide robust Solana development solutions tailored to your branding and business goals. Our Whitelabel token services support enterprises and startups in launching scalable, secure, and efficient Web3 products on the Solana blockchain."
+          description3=''
+          dec=''
           points={
             [
               "Fully customizable SPL token development",
@@ -434,6 +452,7 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/img/best-in-class-whitelabel-solana-token-solutions-for-web3.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
 
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
@@ -441,11 +460,11 @@ export default function Ecommerce(props) {
             <div className="space-y-4">
               <div className="flex flex-col justify-center text-center ">
                 <h2 className="py-4 lg:text-4xl text-3xl font-bold leading-[3rem] text-[#fff]">
-                Why Should You Invest in Solana Token Development?
+                  Why Should You Invest in Solana Token Development?
                 </h2>
-               <p className="xl:text-base text-sm text-[#fff]">
-                Solana token development offers a strategic advantage for businesses and blockchain startups looking to launch scalable, efficient, and future-ready crypto tokens. With lightning-fast transactions, minimal fees, and growing adoption in the DeFi and NFT sectors, Solana is an ideal choice for secure and high-performing token creation.
-               </p>
+                <p className="xl:text-base text-sm text-[#fff]">
+                  Solana token development offers a strategic advantage for businesses and blockchain startups looking to launch scalable, efficient, and future-ready crypto tokens. With lightning-fast transactions, minimal fees, and growing adoption in the DeFi and NFT sectors, Solana is an ideal choice for secure and high-performing token creation.
+                </p>
               </div>
               <div className="grid gap-10 py-10 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-10">
                 {Arena.map((elem) => {
@@ -480,7 +499,7 @@ export default function Ecommerce(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Process for Solana Token Development Projects</h2>
               <p className="text-base font-normal mt-2">
-               At our Solana token development company, we follow a streamlined and transparent process to deliver secure, scalable, and customized Solana token development solutions. From ideation to deployment, our expert team ensures your project aligns with your Web3 goals.
+                At our Solana token development company, we follow a streamlined and transparent process to deliver secure, scalable, and customized Solana token development solutions. From ideation to deployment, our expert team ensures your project aligns with your Web3 goals.
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Processs} />
@@ -518,10 +537,12 @@ export default function Ecommerce(props) {
             "Rapid project delivery and agile practices to ensure quick time-to-market"
           ]}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Do You Have More Questions on Solana Token Development Services?"
           description1="Have additional questions about our Solana token development services? We're here to help! Whether you're curious about our project timelines, security protocols, flexible engagement models, or integration with DeFi and NFT platforms, our experts are ready to provide answers tailored to your needs. Reach out to us or explore our FAQ section for more details."
           description2="Common Questions We Answer:"
+          description3=''
+          dec=''
           points={
             [
               "What is the typical timeline for a Solana token development project?",

@@ -1,39 +1,25 @@
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-
+import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Header from "../Newcomponet/layout/Header"
+import NewSection from "../Newcomponet/comman/NewSection"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKey, } from '@tabler/icons-react';
-import SolutionSec from "../components/SolutionSec";
-import InfoSectionRight from "../components/InfoSectionRight";
 import Script from "next/script";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
 
 
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Processs = [
 
@@ -102,7 +88,7 @@ const technologyData = [
 ];
 
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const [currentCount, setCurrentCount] = useState(0);
   const sliderRef = useRef(null);
@@ -289,7 +275,7 @@ export default function Ecommerce(props:any) {
           rel="canonical"
           href="https://www.comfygen.com/erc20-token-development"
         />
-   
+
 
         <meta name='og:title' content='ERC20 Token Development Company | ERC20 Token Development Services' />
         <meta name='og:type' content='website' />
@@ -319,29 +305,6 @@ export default function Ecommerce(props:any) {
       </LazyLoad>
       <div className="overflow-hidden">
         {/* <Header /> */}
-        {/* <div className=" ">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/erc-20-token-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="ERC20 Token Development Company"
-                ptag="At Comfygen, a leading ERC20 Token Development Company, we deliver secure and scalable ERC20 token development services tailored to your business needs. Our expert developers in India and the USA design high-performance tokens on the Ethereum network, ensuring seamless smart contract functionality and compliance with the ERC-20 standard. Whether you’re planning an ICO, a DeFi project, or a custom blockchain solution, our team provides end-to-end support for ERC20 token creation, deployment, and smart contract integration. Launch your Ethereum-based token with our trusted and cost-effective ERC20 token development services."
-                ptag1="Why Choose Comfygen?"
-                li="Industry-leading ERC20 Token Development Company"
-                li1="Secure Smart Contract Integration on Ethereum"
-                li2="Customizable Token Solutions for ICOs and DeFi Projects"
-                li3="Dedicated Teams in India & USA"
-                li4="Fast Deployment with Proven Security Standards"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div> */}
-
         <HeroSectionForAllPages
           HeroSectionForAllPages
           heading="ERC20 Token Development Company"
@@ -369,52 +332,61 @@ export default function Ecommerce(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our ERC20 Token Development Services"
-          description="As a leading ERC20 token development company, Comfygen specializes in creating secure, scalable, and custom Ethereum-based tokens tailored to your business needs. Our skilled blockchain developers leverage Solidity smart contract programming to deliver compliant ERC20 token solutions for ICO launches, DeFi platforms, and DApp integration. We ensure seamless token creation, transfer, and wallet compatibility to support your blockchain project’s success."
-        />
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        {/* <ContactFromCenter /> */}
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our ERC20 Token Development Services</h2>
-              <p className="text-base text-center font-normal">As a leading ERC20 token development company, Comfygen specializes in creating secure, scalable, and custom Ethereum-based tokens tailored to your business needs. Our skilled blockchain developers leverage Solidity smart contract programming to deliver compliant ERC20 token solutions for ICO launches, DeFi platforms, and DApp integration. We ensure seamless token creation, transfer, and wallet compatibility to support your blockchain project’s success.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our ERC20 Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">{`As a leading ERC20 token development company, Comfygen specializes in creating secure, scalable, and custom Ethereum-based tokens tailored to your business needs. Our skilled blockchain developers leverage Solidity smart contract programming to deliver compliant ERC20 token solutions for ICO launches, DeFi platforms, and DApp integration. We ensure seamless token creation, transfer, and wallet compatibility to support your blockchain project’s success.`}</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
-        </section> */}
+        </section>
+
+
         <SolutionSec
           heading="Key Features of ERC20 Token Development"
           subheading=""
           techData={technologyData}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="What Is ERC20 Token?"
           description1="ERC20 stands for Ethereum Request for Comment 20, where '20' represents the unique proposal ID. It’s one of the most widely adopted token standards on the Ethereum blockchain. ERC20 defines a specific set of rules and protocols that a token must follow to be recognized and function seamlessly across the Ethereum network."
           description2="An ERC20 token is a fungible digital asset, meaning each token is identical in value and functionality to every other token within the same system. This interchangeability makes ERC20 tokens ideal for a wide range of applications, including cryptocurrency exchanges, DeFi platforms, ICOs (Initial Coin Offerings), and token-based crowdfunding."
           description3="By following the ERC20 standard, developers can ensure their tokens are compatible with various wallets, exchanges, and DApps (decentralized applications), promoting interoperability and liquidity within the Ethereum ecosystem."
+          points={[]}
           imageSrc="https://www.comfygen.com/img/what-is-erc-20-token.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          dec=''
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Ethereum Token Creation Services"
           description1="Comfygen offers custom Ethereum token creation services designed to develop secure, scalable, and highly versatile tokens on the Ethereum blockchain. Our expert team leverages the latest Ethereum technologies and frameworks to build ERC20, ERC721, and ERC1400 tokens tailored to your business objectives."
           description2="With a robust Ethereum technology stack and deep expertise in smart contract development, we ensure seamless token deployment that aligns with your specific use cases, whether for DeFi platforms, NFTs, crypto crowdfunding, or utility tokens. Our solutions focus on security, compliance, and efficiency, enabling you to launch reliable tokens that integrate effortlessly with wallets, exchanges, and decentralized applications (DApps)."
+          description3=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/ethereum-token-creation-service9.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          dec=''
+          imagePosition='right'
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="ERC20 Token Wallet Development"
           description1="At Comfygen, we offer secure and scalable ERC20 token wallet development services to help you seamlessly store, manage, and transfer your ERC20 tokens. As a trusted ERC20 token wallet development company, we design intuitive, user-friendly digital wallets with advanced security features, multi-currency support, and smooth integration with the Ethereum blockchain."
           description2="Our wallets support key functionalities, including token storage, real-time balance tracking, multi-layer encryption, and private key management, ensuring complete control and security over your crypto assets. Whether you're launching a DeFi platform, an ICO, or building a dApp, our custom wallet solutions are tailored to meet your business needs."
+          description3
+          points={[]}
           imageSrc="https://www.comfygen.com/img/erc-20-token-wallet-development.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          dec=''
         />
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -424,10 +396,10 @@ export default function Ecommerce(props:any) {
               </h2>
             </div>
             <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 xl:gap-10 mt-8">
-              {JSON_DATA.MLM.map((elem) => {
+              {JSON_DATA.MLM.map((elem, index) => {
                 const { title, img, decs } = elem;
                 return (
-                  <div className="p-8 space-y-4 bg-[#fff] cursor-pointer rounded-xl">
+                  <div key={index} className="p-8 space-y-4 bg-[#fff] cursor-pointer rounded-xl">
                     <div className="flex items-center justify-start ">
                       <Image
                         className="items-center object-cover"
@@ -455,10 +427,11 @@ export default function Ecommerce(props:any) {
           title="Our Cryptocurrency Development Technology Stack"
           description=""
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Hire ERC20 Token Developer"
           description1="Launch your own ERC20 token and empower your business with seamless interaction within the Ethereum blockchain ecosystem. Our ERC20 token development services provide you with customized token solutions, whether for DeFi platforms, crowdfunding, ICOs, or crypto asset management. "
           description2="At Comfygen, our skilled ERC20 token developers specialize in creating secure, scalable, and fully compliant tokens that meet your specific business objectives. From smart contract development to token deployment, we ensure a smooth and efficient process."
+          description3=''
           points={
             [
               "Custom ERC20 Token Creation",
@@ -471,6 +444,7 @@ export default function Ecommerce(props:any) {
           imageSrc="https://www.comfygen.com/img/create-your-own-erc-20-token.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          dec=''
         />
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -502,9 +476,25 @@ export default function Ecommerce(props:any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-       
+
       </div>
     </>
   );
 }
-// This gets called on every request
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

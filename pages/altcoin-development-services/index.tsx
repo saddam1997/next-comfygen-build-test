@@ -4,31 +4,17 @@ import Head from "next/head";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/altcoin.json";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
-import PortfolioSec from "../components/PortfolioSec";
-import WhyChoose from "../components/WhyChooseUs";
-import HireDeveloper from "../components/HireDeveloper";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ServicesSec from "../componentsnew/ServicesSec";
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from '../Newcomponet/layout/Header'
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import NewSection from "../Newcomponet/comman/NewSection"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 export default function Altcoin(props: any) {
@@ -201,11 +187,9 @@ export default function Altcoin(props: any) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+        <Header />
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Best Altcoin Development Company"
           ptag="Our altcoin creation services are designed to enhance the value and trading efficiency of your virtual currency. If you're passionate about cryptocurrencies, we specialize in integrating advanced blockchain technologies with robust security measures to provide a seamless and secure trading experience."
@@ -232,26 +216,36 @@ export default function Altcoin(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Top Altcoin Development Services"
-          description="Get the best altcoin developed through the best altcoin
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Top Altcoin Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Get the best altcoin developed through the best altcoin
                 development company with major assistance and complete support
                 till deployment. We provide various altcoin design services for
-                your business needs."
-        />
+                your business needs.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
 
-        <InfoSectionRight
+
+        <InfoSection
           heading="What is Altcoin"
           description1="In the crypto world, Altcoin is a term that refers to all cryptocurrencies and tokens that are not Bitcoin. These coins belong to blockchains that were explicitly designed for them. Many altcoins are forks from Bitcoin and Ethereum, which often happen for multiple reasons."
           description2="Altcoin generally refers to any cryptocurrency other than Bitcoin (BTC). Most cryptocurrencies are forked from either Bitcoin or Ethereum (ETH), so some people consider altcoins to be all cryptocurrencies other than these two. In addition to validating transactions and opening blocks, some altcoins provide new or additional features or purposes to distinguish themselves from Bitcoin and Ethereum."
           description3="In most cases, altcoins or tokens are designed and released by developers with different visions or purposes. Discover how altcoins differ from Bitcoin."
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/what-is-altcoin.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition='right'
         />
 
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
@@ -319,11 +313,17 @@ export default function Altcoin(props: any) {
             <ProcessSec processSlides={JSON_DATA.Processs} />
           </div>
         </section>
-        <PortfolioSec
-          techData={JSON_DATA.techDataForPage1}
-          heading="Explore Our Altcoin Development Portfolio"
-          description=""
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Altcoin Development Portfolio"
+            description=""
+          />
+        </section>
+
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -354,3 +354,20 @@ export default function Altcoin(props: any) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

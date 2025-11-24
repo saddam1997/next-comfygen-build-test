@@ -1,38 +1,22 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./salonappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import SolutionSec from "../components/SolutionSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
-import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-
-
-import Header from "../components/Header";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Slider from "../components/Slider";
-
-
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
+import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 const Process = [
@@ -122,7 +106,7 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -382,26 +366,27 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Custom Salon App Development Services for Beauty & Wellness Brands"
-            ptag="Take your beauty business to the next level with Comfygen’s expert salon app development services. We create customized salon and spa apps designed to simplify bookings, manage appointments effortlessly, and boost customer engagement. Whether you operate a single salon or a multi-location beauty chain, our on-demand beauty app development solutions offer smooth performance, elegant UI/UX, and powerful features like real-time scheduling, CRM integration, and secure payment gateways."
-            li="Seamless & Intuitive UI/UX Design"
-            li1="Expertise in On-demand & Appointment-based Solutions"
-            li2="Timely Delivery with Post-launch Support"
-            li3="Integrated Payments, CRM & Real-Time Scheduling"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Custom Salon App Development Services for Beauty & Wellness Brands"
+          ptag="Take your beauty business to the next level with Comfygen’s expert salon app development services. We create customized salon and spa apps designed to simplify bookings, manage appointments effortlessly, and boost customer engagement. Whether you operate a single salon or a multi-location beauty chain, our on-demand beauty app development solutions offer smooth performance, elegant UI/UX, and powerful features like real-time scheduling, CRM integration, and secure payment gateways."
+          li="Seamless & Intuitive UI/UX Design"
+          li1="Expertise in On-demand & Appointment-based Solutions"
+          li2="Timely Delivery with Post-launch Support"
+          li3="Integrated Payments, CRM & Real-Time Scheduling"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-hero.webp"
+
+        />
+
         <AboutSection
           title="About Company"
           heading="Trusted Salon App Development Company for Beauty Businesses"
@@ -414,32 +399,47 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <ServicesSection
-          heading="Affordable Salon Booking App Development Services"
-          subtitle="Our best salon app development services for multi-branch beauty centers at Comfygen are designed to help salons and spas digitize their operations, improve customer engagement, and simplify appointment scheduling. With deep domain expertise and innovative features, we craft smart, scalable, and visually stunning mobile solutions tailored for the beauty and wellness industry."
-          servicesData={JSON_DATA.servicesData} />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Affordable Salon Booking App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Our best salon app development services for multi-branch beauty centers at Comfygen are designed to help salons and spas digitize their operations, improve customer engagement, and simplify appointment scheduling. With deep domain expertise and innovative features, we craft smart, scalable, and visually stunning mobile solutions tailored for the beauty and wellness industry.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ContactFromCenter />
+
+
+        {/* <ContactFromCenter /> */}
         <SolutionSec
           heading="Salon App Clone Solutions"
           subheading="Comfygen delivers powerful, feature-rich salon app clone development solutions inspired by the world's leading beauty and salon platforms. Our beauty clone apps are designed to match their functionality while offering full customization, secure performance, and scalable infrastructure to help you launch your salon tech business faster and smarter."
           techData={technologyData}
         />
         <section className="py-10">
-          <Features />
+          <Features
+            heading='We Develop Salon Apps With Advanced Panel Features'
+            description='to offer a seamless experience for users, salon professionals, and business administrators. Our salon booking mobile app development solutions include smart panel integrations that simplify operations, improve engagement, and support end-to-end salon management — all in one powerful app.'
+            featuresData={JSON_DATA.featuresData}
+            grid='3'
+          />
         </section>
 
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="We Have Developed Salon Apps That You Can Check Out"
             description="At Comfygen, we’re proud to showcase a range of salon and beauty app projects designed to streamline operations, improve client engagement, and boost revenue. From independent professionals to large franchises, our mobile app solutions are built for real-world business impact."
           />
         </section>
 
-    
+
 
         <CallToAction
           heading="Ready to Build Your Custom Salon App with Experts?"
@@ -466,10 +466,22 @@ export default function ClinicalApp(props: any) {
           features={JSON_DATA.AIPowered}
         />
 
-        <ProcessSection
-          title="Our Salon App Development Process"
-          description="As a top-notch salon app development company, Comfygen follows a strategic and transparent process to deliver tailor-made and high-performing salon apps. From concept to launch, our approach ensures quality, scalability, and a seamless user experience. Here's how we build the best salon app for beauty professionals and businesses."
-          processSlides={Process} />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Salon App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                As a top-notch salon app development company, Comfygen follows a strategic and transparent process to deliver tailor-made and high-performing salon apps. From concept to launch, our approach ensures quality, scalability, and a seamless user experience. Here's how we build the best salon app for beauty professionals and businesses.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
+
+
 
         <TechStack
           title="Technology Stack We Use"

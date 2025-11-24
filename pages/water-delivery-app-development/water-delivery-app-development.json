@@ -1,114 +1,108 @@
 {
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a water delivery app?",
-    "desc": "The cost of water delivery app development depends on features, technology stack, and platforms. A basic water delivery app can start at a low cost of around $5,000–$8,000, while advanced apps with real-time tracking, subscription plans, and secure payments may range from $10,000–$25,000. At Comfygen, we provide affordable and low-cost water delivery app development services tailored to your business needs."
-  },
-  {
-    "num": "2",
-    "title": "Can you build a custom water delivery app like Bisleri?",
-    "desc": "Yes, we specialize in custom water delivery app development like Bisleri and other leading brands. Our expert developers build feature-rich bottled and mineral water delivery apps with real-time tracking, subscription management, secure payments, and customer engagement tools. We ensure your app is scalable, user-friendly, and aligned with your business model for seamless water distribution."
-  },
-  {
-    "num": "3",
-    "title": "Do you provide white-label water delivery app solutions?",
-    "desc": "Absolutely! Comfygen Technologies offers white-label water delivery app solutions that allow you to launch your business quickly under your own brand name. Our white-label apps are customizable, ready-to-deploy, and come with essential features such as ordering, tracking, subscription, and secure payment gateways. This helps startups and enterprises streamline bottled and packaged water delivery services without long development timelines."
-  },
-  {
-    "num": "4",
-    "title": "How long does it take to develop a water delivery app?",
-    "desc": "The timeline to develop a water delivery app varies depending on features, UI/UX design, and level of customization. A basic water delivery mobile app may take 4–6 weeks, while advanced apps with subscription, AI-based analytics, and real-time GPS tracking could take 10–12 weeks. Our agile development process ensures faster delivery with high-quality results."
-  },
-  {
-    "num": "5",
-    "title": "Do you offer post-launch maintenance & support?",
-    "desc": "Yes, Comfygen provides complete post-launch app maintenance and support for your water delivery app. Our water monitoring app development services include bug fixing, regular updates, feature enhancements, security patches, and performance optimization. We ensure your water delivery app remains stable, secure, and up-to-date with the latest technology to provide the best experience for your customers and delivery team."
-  }
-],
-
-"servicesData": [
-  {
-    "title": "Custom Water Delivery App Development",
-    "description": "We provide custom water delivery app development tailored to your business model and branding. From design to deployment, our team builds apps that deliver a smooth customer experience while streamlining delivery operations. With smart features, your business can stand out and provide convenience to users.",
-    "features": [
-      "Branded UI/UX design",
-      "Customized features for your business needs",
-      "Seamless order & delivery workflow",
-      "Multi-platform compatibility (iOS & Android)"
-    ]
-  },
-  {
-    "title": "White-label Water Delivery App Solutions",
-    "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label water delivery mobile app development solutions</a> let you launch your business quickly with a ready-to-use, customizable platform. Scalable and affordable, these solutions allow startups and enterprises to expand fast without heavy investments in development.",
-    "features": [
-      "Fast time-to-market",
-      "Complete rebranding options",
-      "Scalable architecture for growth",
-      "Easy third-party API integrations"
-    ]
-  },
-  {
-    "title": "Bottled & Mineral Water Delivery App Development",
-    "description": "Our team specializes in bottled and mineral water delivery app development for suppliers and distributors. These apps help manage bulk orders, track inventory, and ensure timely deliveries for both individual and corporate customers.",
-    "features": [
-      "Bulk order management",
-      "Smart inventory tracking",
-      "Customer & vendor dashboards",
-      "Automated billing & invoicing"
-    ]
-  },
-  {
-    "title": "Subscription & Water Ordering App Development",
-    "description": "We create subscription-based water ordering apps that allow users to schedule daily, weekly, or monthly deliveries with ease. This ensures customer retention while generating steady business revenue for suppliers.",
-    "features": [
-      "Flexible subscription plans",
-      "Automated recurring orders",
-      "Easy order rescheduling & pausing",
-      "Integrated payment management"
-    ]
-  },
-  {
-    "title": "Water Delivery App for Startups",
-    "description": "Comfygen offers <a class='underline font-semibold' href='https://www.comfygen.com/ca/startup-app-development' >startup app development solutions</a> to build cost-effective water delivery apps that help new businesses enter the market with ease. With essential features, scalability, and modern design, our solutions empower startups with a strong digital presence.",
-    "features": [
-      "Affordable development solutions",
-      "Scalable for future growth",
-      "User-friendly customer interface",
-      "Multi-role access for admin, vendor & customer"
-    ]
-  },
-  {
-    "title": "Water Delivery App Maintenance and Support Services",
-    "description": "We provide complete app maintenance and support services to ensure your water delivery app runs smoothly post-launch. From fixing bugs to adding new features, our support helps your business stay competitive.",
-    "features": [
-      "Regular performance monitoring",
-      "Bug fixes & security updates",
-      "Feature enhancements & upgrades",
-      "24/7 technical support"
-    ]
-  }
-]
-,
-
-"portfoliodata": [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p1.webp",
-    "title": "Subscription-Based Water Delivery App",
-    "description": "Our subscription-based water delivery app development allows customers to set up daily, weekly, or monthly deliveries with flexible plans. It includes automated order scheduling, secure payments, and push notifications for order reminders and status updates.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p2.webp",
-    "title": "Bottled & Packaged Water Delivery App",
-    "description": "We design bottled and packaged water delivery apps for suppliers and distributors to manage bulk orders and streamline logistics. With inventory management and delivery route optimization, businesses can handle high demand while ensuring timely deliveries.",
-    "link": "https://www.comfygen.com/contact-us"
-  }
-]
-
-,
-
-"servicesData1": [
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a water delivery app?",
+      "desc": "The cost of water delivery app development depends on features, technology stack, and platforms. A basic water delivery app can start at a low cost of around $5,000–$8,000, while advanced apps with real-time tracking, subscription plans, and secure payments may range from $10,000–$25,000. At Comfygen, we provide affordable and low-cost water delivery app development services tailored to your business needs."
+    },
+    {
+      "num": "2",
+      "title": "Can you build a custom water delivery app like Bisleri?",
+      "desc": "Yes, we specialize in custom water delivery app development like Bisleri and other leading brands. Our expert developers build feature-rich bottled and mineral water delivery apps with real-time tracking, subscription management, secure payments, and customer engagement tools. We ensure your app is scalable, user-friendly, and aligned with your business model for seamless water distribution."
+    },
+    {
+      "num": "3",
+      "title": "Do you provide white-label water delivery app solutions?",
+      "desc": "Absolutely! Comfygen Technologies offers white-label water delivery app solutions that allow you to launch your business quickly under your own brand name. Our white-label apps are customizable, ready-to-deploy, and come with essential features such as ordering, tracking, subscription, and secure payment gateways. This helps startups and enterprises streamline bottled and packaged water delivery services without long development timelines."
+    },
+    {
+      "num": "4",
+      "title": "How long does it take to develop a water delivery app?",
+      "desc": "The timeline to develop a water delivery app varies depending on features, UI/UX design, and level of customization. A basic water delivery mobile app may take 4–6 weeks, while advanced apps with subscription, AI-based analytics, and real-time GPS tracking could take 10–12 weeks. Our agile development process ensures faster delivery with high-quality results."
+    },
+    {
+      "num": "5",
+      "title": "Do you offer post-launch maintenance & support?",
+      "desc": "Yes, Comfygen provides complete post-launch app maintenance and support for your water delivery app. Our water monitoring app development services include bug fixing, regular updates, feature enhancements, security patches, and performance optimization. We ensure your water delivery app remains stable, secure, and up-to-date with the latest technology to provide the best experience for your customers and delivery team."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Water Delivery App Development",
+      "description": "We provide custom water delivery app development tailored to your business model and branding. From design to deployment, our team builds apps that deliver a smooth customer experience while streamlining delivery operations. With smart features, your business can stand out and provide convenience to users.",
+      "features": [
+        "Branded UI/UX design",
+        "Customized features for your business needs",
+        "Seamless order & delivery workflow",
+        "Multi-platform compatibility (iOS & Android)"
+      ]
+    },
+    {
+      "title": "White-label Water Delivery App Solutions",
+      "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label water delivery mobile app development solutions</a> let you launch your business quickly with a ready-to-use, customizable platform. Scalable and affordable, these solutions allow startups and enterprises to expand fast without heavy investments in development.",
+      "features": [
+        "Fast time-to-market",
+        "Complete rebranding options",
+        "Scalable architecture for growth",
+        "Easy third-party API integrations"
+      ]
+    },
+    {
+      "title": "Bottled & Mineral Water Delivery App Development",
+      "description": "Our team specializes in bottled and mineral water delivery app development for suppliers and distributors. These apps help manage bulk orders, track inventory, and ensure timely deliveries for both individual and corporate customers.",
+      "features": [
+        "Bulk order management",
+        "Smart inventory tracking",
+        "Customer & vendor dashboards",
+        "Automated billing & invoicing"
+      ]
+    },
+    {
+      "title": "Subscription & Water Ordering App Development",
+      "description": "We create subscription-based water ordering apps that allow users to schedule daily, weekly, or monthly deliveries with ease. This ensures customer retention while generating steady business revenue for suppliers.",
+      "features": [
+        "Flexible subscription plans",
+        "Automated recurring orders",
+        "Easy order rescheduling & pausing",
+        "Integrated payment management"
+      ]
+    },
+    {
+      "title": "Water Delivery App for Startups",
+      "description": "Comfygen offers <a class='underline font-semibold' href='https://www.comfygen.com/ca/startup-app-development' >startup app development solutions</a> to build cost-effective water delivery apps that help new businesses enter the market with ease. With essential features, scalability, and modern design, our solutions empower startups with a strong digital presence.",
+      "features": [
+        "Affordable development solutions",
+        "Scalable for future growth",
+        "User-friendly customer interface",
+        "Multi-role access for admin, vendor & customer"
+      ]
+    },
+    {
+      "title": "Water Delivery App Maintenance and Support Services",
+      "description": "We provide complete app maintenance and support services to ensure your water delivery app runs smoothly post-launch. From fixing bugs to adding new features, our support helps your business stay competitive.",
+      "features": [
+        "Regular performance monitoring",
+        "Bug fixes & security updates",
+        "Feature enhancements & upgrades",
+        "24/7 technical support"
+      ]
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p1.webp",
+      "title": "Subscription-Based Water Delivery App",
+      "description": "Our subscription-based water delivery app development allows customers to set up daily, weekly, or monthly deliveries with flexible plans. It includes automated order scheduling, secure payments, and push notifications for order reminders and status updates.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/p2.webp",
+      "title": "Bottled & Packaged Water Delivery App",
+      "description": "We design bottled and packaged water delivery apps for suppliers and distributors to manage bulk orders and streamline logistics. With inventory management and delivery route optimization, businesses can handle high demand while ensuring timely deliveries.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -134,38 +128,170 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
-"consultancyHead": [
-  {
-    "num": "1",
-    "title": "Key Features of Our Water Delivery Apps",
-    "desc": "At Comfygen Technologies, we design apps with advanced features that make ordering and managing water deliveries simple for customers and efficient for businesses. Our water ordering app development focuses on creating smooth user experiences while supporting daily, weekly, and monthly delivery needs."
-  }
-],
-"consultancyData": [
-  {
-    "title": "Easy Ordering & Scheduling",
-    "desc": "Customers can place quick orders or schedule deliveries in advance, ensuring they never run out of water."
-  },
-  {
-    "title": "Real-time Delivery Tracking",
-    "desc": "With GPS-enabled tracking, users can see their delivery status live and stay updated at every step."
-  },
-  {
-    "title": "Secure Online Payments",
-    "desc": "Integrated multiple payment gateways allow fast, safe, and hassle-free transactions."
-  },
-  {
-    "title": "Flexible Subscription Plans (Daily/Weekly/Monthly)",
-    "desc": "Users can set up recurring orders through convenient subscription models for regular water delivery."
-  },
-  {
-    "title": "Push Notifications & Alerts",
-    "desc": "Keep customers updated with instant notifications about order status, promotions, and reminders."
-  }
-]
-,
+  ],
+
+
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Customer Panel",
+      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/customer.webp",
+      "additionalDetails": [
+        {
+          "details": "Easy Registration & Profile Setup",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Browse & Order Bottled/Mineral Water",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-time Delivery Tracking",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Manage Subscriptions (Daily/Weekly/Monthly)",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Secure Online Payment Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Order History & Reorder Feature",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Push Notifications & Alerts",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Delivery Agent Panel",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/delivery.webp",
+      "additionalDetails": [
+        {
+          "details": "Simple Login & Profile Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Accept/Reject Delivery Requests",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-time Navigation & Route Optimization",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Order Pickup & Delivery Updates",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Track Daily Earnings & Delivery History",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "In-app Chat/Call with Customers",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Availability Toggle (Online/Offline Mode)",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Admin Panel",
+      "img": "https://www.comfygen.com/comfygen-images/water-delivery-app-development/admin.webp",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "Manage Customers & Delivery Agents",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Order & Subscription Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Inventory & Water Stock Tracking",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Delivery Route & Logistics Optimization",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Payment & Revenue Dashboard",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Offers, Discounts & Notification Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Data Security & Performance Analytics",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+    
+  ],
+  "consultancyHead": [
+    {
+      "num": "1",
+      "title": "Key Features of Our Water Delivery Apps",
+      "desc": "At Comfygen Technologies, we design apps with advanced features that make ordering and managing water deliveries simple for customers and efficient for businesses. Our water ordering app development focuses on creating smooth user experiences while supporting daily, weekly, and monthly delivery needs."
+    }
+  ],
+  "consultancyData": [
+    {
+      "title": "Easy Ordering & Scheduling",
+      "desc": "Customers can place quick orders or schedule deliveries in advance, ensuring they never run out of water."
+    },
+    {
+      "title": "Real-time Delivery Tracking",
+      "desc": "With GPS-enabled tracking, users can see their delivery status live and stay updated at every step."
+    },
+    {
+      "title": "Secure Online Payments",
+      "desc": "Integrated multiple payment gateways allow fast, safe, and hassle-free transactions."
+    },
+    {
+      "title": "Flexible Subscription Plans (Daily/Weekly/Monthly)",
+      "desc": "Users can set up recurring orders through convenient subscription models for regular water delivery."
+    },
+    {
+      "title": "Push Notifications & Alerts",
+      "desc": "Keep customers updated with instant notifications about order status, promotions, and reminders."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Water Delivery App Development?",
     "description": "At Comfygen Technologies, we specialize in delivering custom water monitoring app development services tailored for startups, SMEs, and enterprises. Our expert water delivery app developers build scalable, secure, and feature-rich solutions that streamline bottled, mineral, and packaged water distribution.",
@@ -174,61 +300,56 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-"gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Experienced Water Delivery App Developers",
-    "description": "Our skilled water delivery app developers have years of expertise in creating high-performance apps with modern features like real-time tracking, subscription models, and secure payments."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Experienced Water Delivery App Developers",
+        "description": "Our skilled water delivery app developers have years of expertise in creating high-performance apps with modern features like real-time tracking, subscription models, and secure payments."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Custom & White-label Solutions",
+        "description": "We offer custom water delivery app solutions and white-label water delivery mobile app development services, allowing businesses to launch their apps quickly with personalized features and branding."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Cost-effective Development Process",
+        "description": "Comfygen ensures a cost-effective water delivery app development process that doesn't compromise quality, delivering robust solutions tailored to your budget and business needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable & Secure Applications",
+        "description": "We design apps that are scalable, secure, and future-ready, ensuring your water delivery business grows without limitations while protecting sensitive customer data."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "End-to-End App Development Services",
+        "description": "From idea validation to app design, development, testing, and maintenance, we provide end-to-end water delivery app development services to keep your business running smoothly."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Cutting-edge Technology Integration",
+        "description": "We use the latest technologies like AI, IoT, and cloud solutions to build next-gen water delivery mobile apps, offering seamless performance, real-time insights, and smart automation."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Custom & White-label Solutions",
-    "description": "We offer custom water delivery app solutions and white-label water delivery mobile app development services, allowing businesses to launch their apps quickly with personalized features and branding."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Cost-effective Development Process",
-    "description": "Comfygen ensures a cost-effective water delivery app development process that doesn't compromise quality, delivering robust solutions tailored to your budget and business needs."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Scalable & Secure Applications",
-    "description": "We design apps that are scalable, secure, and future-ready, ensuring your water delivery business grows without limitations while protecting sensitive customer data."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "End-to-End App Development Services",
-    "description": "From idea validation to app design, development, testing, and maintenance, we provide end-to-end water delivery app development services to keep your business running smoothly."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Cutting-edge Technology Integration",
-    "description": "We use the latest technologies like AI, IoT, and cloud solutions to build next-gen water delivery mobile apps, offering seamless performance, real-time insights, and smart automation."
-  }
-]
-
-
-
-  },
-"customTestimonials": [
-  {
-    "text": "Comfygen built a custom water delivery app for our bottled water business, and it completely streamlined our operations. From online orders to GPS tracking, everything works smoothly. The team is professional and always available for support.",
-    "name": "Rajesh Mehta",
-    "title": "India"
-  },
-  {
-    "text": "We wanted a scalable water delivery app for our startup, and Comfygen delivered exactly what we needed. The subscription feature and secure payment integration helped us grow quickly. Highly recommended!",
-    "name": "Sarah Johnson",
-    "title": "USA"
-  },
-  {
-    "text": "Thanks to Comfygen’s expert water delivery app developers, we now manage all our packaged water deliveries in real time. The app is user-friendly, fast, and reliable. Great experience working with them!",
-    "name": "Ahmed Khan",
-    "title": "UAE"
-  }
-]
-
-,
+  "customTestimonials": [
+    {
+      "text": "Comfygen built a custom water delivery app for our bottled water business, and it completely streamlined our operations. From online orders to GPS tracking, everything works smoothly. The team is professional and always available for support.",
+      "name": "Rajesh Mehta",
+      "title": "India"
+    },
+    {
+      "text": "We wanted a scalable water delivery app for our startup, and Comfygen delivered exactly what we needed. The subscription feature and secure payment integration helped us grow quickly. Highly recommended!",
+      "name": "Sarah Johnson",
+      "title": "USA"
+    },
+    {
+      "text": "Thanks to Comfygen’s expert water delivery app developers, we now manage all our packaged water deliveries in real time. The app is user-friendly, fast, and reliable. Great experience working with them!",
+      "name": "Ahmed Khan",
+      "title": "UAE"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -435,8 +556,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -457,8 +576,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -480,44 +598,42 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
-"Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "Artificial Intelligence (AI) & Machine Learning",
-    "decs": "We offer <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI/ML development services</a> for personalized recommendations, customer behavior analysis, and demand forecasting, making your water delivery app development services more engaging and business-efficient."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "IoT (Internet of Things)",
-    "decs": "We provide <a class='underline font-semibold' href='https://www.comfygen.com/iot-development-company' >IoT development solutions</a> to track water inventory, monitor delivery routes, and manage connected devices, ensuring automation, accuracy, and efficiency in on-demand water delivery app development."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain Technology",
-    "decs": "Our <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >blockchain development</a> guarantees secure digital payments, transparent transactions, and robust data protection, enhancing trust and safety in custom water delivery app development services."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/cloud-icon.webp",
-    "title": "Cloud Computing",
-    "decs": "Cloud-based infrastructure powers real-time data storage, subscription handling, and app scalability, making our water delivery mobile app development reliable and performance-driven."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/5g-technology.webp",
-    "title": "GPS & Geolocation Technology",
-    "decs": "With advanced GPS and geolocation, customers can track deliveries live, while businesses optimize routes, minimize delays, and enhance overall logistics through water delivery app development solutions."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-    "title": "Big Data & Analytics",
-    "decs": "We implement big  <a class='underline font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >data analytics</a> to offer reporting dashboards, track performance, and deliver insights that empower growth-focused decisions in your water ordering app development company."
-  }
-]
-
+  "Emerging": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "Artificial Intelligence (AI) & Machine Learning",
+      "decs": "We offer <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI/ML development services</a> for personalized recommendations, customer behavior analysis, and demand forecasting, making your water delivery app development services more engaging and business-efficient."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "IoT (Internet of Things)",
+      "decs": "We provide <a class='underline font-semibold' href='https://www.comfygen.com/iot-development-company' >IoT development solutions</a> to track water inventory, monitor delivery routes, and manage connected devices, ensuring automation, accuracy, and efficiency in on-demand water delivery app development."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Technology",
+      "decs": "Our <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >blockchain development</a> guarantees secure digital payments, transparent transactions, and robust data protection, enhancing trust and safety in custom water delivery app development services."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/cloud-icon.webp",
+      "title": "Cloud Computing",
+      "decs": "Cloud-based infrastructure powers real-time data storage, subscription handling, and app scalability, making our water delivery mobile app development reliable and performance-driven."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "title": "GPS & Geolocation Technology",
+      "decs": "With advanced GPS and geolocation, customers can track deliveries live, while businesses optimize routes, minimize delays, and enhance overall logistics through water delivery app development solutions."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "title": "Big Data & Analytics",
+      "decs": "We implement big  <a class='underline font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >data analytics</a> to offer reporting dashboards, track performance, and deliver insights that empower growth-focused decisions in your water ordering app development company."
+    }
+  ]
 }

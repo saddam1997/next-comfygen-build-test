@@ -1,41 +1,29 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import PortfolioSec from "../components/PortfolioSec";
-import ProcessSec from "../components/ProcessSec";
-import SolutionSec from "../components/SolutionSec";
-import { 
-  IconUserHeart, 
-  IconWallet, 
-  IconGlobe, 
-  IconArticle, 
-  IconMessageCircle, 
-  IconShoppingCartDiscount 
-} from '@tabler/icons-react';
-import ModelsSec from "../components/ModelsSec";
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+import {
+  IconUserHeart,
+  IconWallet,
+  IconGlobe,
+  IconArticle,
+  IconMessageCircle,
+  IconShoppingCartDiscount
+} from '@tabler/icons-react';
+
+
 const Process = [
   {
     title: "Idea Generation and Planning",
@@ -208,27 +196,27 @@ const Whycomfygen = [
 ];
 const technologyData = [
   {
-    img: <IconUserHeart stroke={1.5} className="w-12 h-12" />, 
+    img: <IconUserHeart stroke={1.5} className="w-12 h-12" />,
     title: "Enhanced Customer Engagement",
     desc: "Mobile application development service provider a direct and personalized channel for businesses to engage with their customers. Through push notifications and in-app messages, companies can deliver targeted promotions, updates, and personalized content, fostering a stronger connection with users. This continuous interaction helps in building brand loyalty and keeping the brand at the forefront of the customer's mind."
   },
   {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />, 
+    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
     title: "Increased Accessibility and Convenience",
     desc: "Mobile apps offer unparalleled accessibility, allowing customers to access products or services anytime, anywhere. This level of convenience enhances the overall customer experience, as users can browse, shop, or interact with the business on their mobile devices without the constraints of time or location. This accessibility contributes significantly to customer satisfaction and retention."
   },
   {
-    img: <IconGlobe stroke={1.5} className="w-12 h-12" />, 
+    img: <IconGlobe stroke={1.5} className="w-12 h-12" />,
     title: "Wider Market Reach",
     desc: "With the increasing penetration of smartphones globally, mobile apps provide businesses with an opportunity to tap into a broader market. By making products and services available on the best mobile app development platform, companies can reach a larger audience, including demographics that predominantly use mobile devices for online activities. This expanded market reach opens up new growth avenues for businesses."
   },
   {
-    img: <IconArticle stroke={1.5} className="w-12 h-12" />, 
+    img: <IconArticle stroke={1.5} className="w-12 h-12" />,
     title: "Competitive Edge",
     desc: "Having a mobile app has become a standard expectation for customers. Businesses that invest in mobile applications gain a competitive edge by showcasing a commitment to innovation and staying technologically relevant. A well-designed and functional app can set a mobile app development company apart from competitors, attracting tech-savvy consumers who prioritize seamless mobile experiences."
   },
   {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />, 
+    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
     title: "Data Collection and Analytics",
     desc: "Mobile apps allow businesses to gather valuable data on user behavior, preferences, and interactions. This data can be analyzed to gain insights into customer trends, helping companies tailor their products, services, and marketing strategies. The ability to make informed decisions based on analytics contributes to more effective business strategies and improved customer satisfaction."
   },
@@ -239,24 +227,6 @@ const technologyData = [
   }
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/footer-fitclub-img.webp",
-      head: "Fitclub App",
-      name: "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-
-  ],
-};
 
 const schema = {
   "@context": "https://schema.org/",
@@ -415,7 +385,7 @@ const WebsiteSchema = {
   },
 };
 
-export default function Mobile(props) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -531,28 +501,28 @@ export default function Mobile(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(WebsiteSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/hire-mobile-app-developers-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Hire Top Mobile App Developers In India"
-                ptag="Comfygen’s top-tier mobile app development engineers In India bring 15+ years of experience to create futuristic applications with advanced technologies. Our mission is clear: to deliver robust apps that satisfy clients and retain users with exceptional experiences."
-                ptag1="Hire our creative, knowledgeable developers and experience mobile app development that meets all your tailored business needs."
-                li="15+ Years of Expertise"
-                li1="Futuristic, Client-Centric Solutions"
-                li2="Robust & User-Retaining Apps"
-                li3="Tailored to Your Business Needs"
-                ptag3="Discuss your project with us today!"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Hire Top Mobile App Developers In India"
+          ptag="Comfygen’s top-tier mobile app development engineers In India bring 15+ years of experience to create futuristic applications with advanced technologies. Our mission is clear: to deliver robust apps that satisfy clients and retain users with exceptional experiences."
+          ptag1="Hire our creative, knowledgeable developers and experience mobile app development that meets all your tailored business needs."
+          li="15+ Years of Expertise"
+          li1="Futuristic, Client-Centric Solutions"
+          li2="Robust & User-Retaining Apps"
+          li3="Tailored to Your Business Needs"
+          ptag3="Discuss your project with us today!"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/hire-mobile-app-developers-hero-img.webp'
+        />
+
 
         <AboutSection
           title="About Us"
@@ -563,7 +533,7 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -599,11 +569,16 @@ export default function Mobile(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio"
-          description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
-        />
+
+
+       <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
         {/* <TalkExpert /> */}
         <CallToAction
           heading="Let’s hear what you have to say?"

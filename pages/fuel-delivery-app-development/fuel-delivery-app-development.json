@@ -109,6 +109,48 @@
       ]
     }
   ],
+  "BusinessSolustion": {
+    "title": "Next-Gen Fuel Delivery App Development with AI Innovation",
+    "subtitle": "We are a leading AI-powered fuel delivery app development company at Comfygen Technologies. Our advanced AI-driven features make your app smarter, more cost-efficient, and customer-centric, empowering startups and enterprises to stay ahead in the competitive fuel delivery industry.",
+    "features": [
+      {
+        "id": 1,
+        "icon": "'heart'",
+        "title": "Smart Route Planning",
+        "description": "AI finds the fastest and most fuel-efficient routes for deliveries by checking traffic, road conditions, and weather. This helps drivers deliver fuel quickly while saving time and fuel."
+      },
+      {
+        "id": 2,
+        "icon": "'message'",
+        "title": "Smart Fuel Demand Predictions",
+        "description": "AI looks at past orders and local trends to predict fuel demand. Businesses can keep the right stock, avoid running out of fuel, and plan deliveries better."
+      },
+      {
+        "id": 3,
+        "icon": "'users'",
+        "title": "Real-Time Transaction Protection",
+        "description": "AI checks all online payments for unusual activity. It helps prevent fraud and keeps your customers’ transactions safe and secure."
+      },
+      {
+        "id": 4,
+        "icon": "'brain'",
+        "title": "Track Driver Performance",
+        "description": "AI tracks driver speed, idle time, and routes. Managers get insights to improve efficiency, reward good drivers, and make sure deliveries are safe."
+      },
+      {
+        "id": 5,
+        "icon": "'shield'",
+        "title": "Instant Customer Support",
+        "description": "AI chatbots answer customer questions, update delivery status, and handle requests immediately. Any complicated issues are quickly sent to support staff."
+      },
+      {
+        "id": 6,
+        "icon": "'trending-up'",
+        "title": "Grow Your Business with Insights",
+        "description": "AI gives clear data on high-demand areas, customer habits, and delivery performance. Businesses can make smart decisions, improve services, and grow faster."
+      }
+    ]
+  },
   "portfoliodata": [
     {
       "image": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/quick-fuel–delivery-app.webp",
@@ -123,6 +165,81 @@
       "link": "https://www.comfygen.com/contact-us"
     }
   ],
+
+
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/User-Panel.webp",
+    "additionalDetails": [
+      { "details": "Easy Sign-Up & Login", "emoji": "", "content": "" },
+      { "details": "Book Fuel Delivery Instantly", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking", "emoji": "", "content": "" },
+      { "details": "View Fuel Prices & Promotions", "emoji": "", "content": "" },
+      { "details": "Rate & Review Delivery Experience", "emoji": "", "content": "" },
+      { "details": "In-App Secure Payments", "emoji": "", "content": "" },
+      { "details": "GPS-Based Fuel Station Finder", "emoji": "", "content": "" },
+      { "details": "Push Notifications & Alerts", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Driver Panel",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Driver-Panel.webp",
+    "additionalDetails": [
+      { "details": "Accept & Schedule Orders", "emoji": "", "content": "" },
+      { "details": "Live Route Navigation", "emoji": "", "content": "" },
+      { "details": "Update Delivery Status in Real-Time", "emoji": "", "content": "" },
+      { "details": "Track Earnings & Commissions", "emoji": "", "content": "" },
+      { "details": "View Delivery History", "emoji": "", "content": "" },
+      { "details": "Push Notifications for New Orders", "emoji": "", "content": "" },
+      { "details": "Safety & Compliance Alerts", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vendor Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Vendor-Panel.webp",
+    "additionalDetails": [
+      { "details": "Manage Fuel Stock & Pricing", "emoji": "", "content": "" },
+      { "details": "Receive & Confirm Orders", "emoji": "", "content": "" },
+      { "details": "Track Deliveries & Driver Assignments", "emoji": "", "content": "" },
+      { "details": "View Sales Reports & Analytics", "emoji": "", "content": "" },
+      { "details": "Manage Multiple Fuel Types (Petrol, Diesel, Gas)", "emoji": "", "content": "" },
+      { "details": "Push Notifications for Incoming Orders", "emoji": "", "content": "" },
+      { "details": "Customer Feedback & Ratings", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Admin-Panel.webp",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Manage Users, Drivers & Vendors", "emoji": "", "content": "" },
+      { "details": "Real-Time Delivery & Order Monitoring", "emoji": "", "content": "" },
+      { "details": "Analytics & Revenue Reports", "emoji": "", "content": "" },
+      { "details": "Manage Offers, Promotions & Pricing", "emoji": "", "content": "" },
+      { "details": "Assign Orders & Optimize Routes", "emoji": "", "content": "" },
+      { "details": "Track Payment & Transaction History", "emoji": "", "content": "" },
+      { "details": "Support & Complaint Management", "emoji": "", "content": "" }
+    ]
+  }
+  
+],
+
+
+
+
+
+
+
+
   "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
@@ -235,7 +352,7 @@
       "text": "“Working with Comfygen was seamless. They delivered our on-demand fuel delivery app on time and customized it perfectly to our brand. Post-launch support has also been excellent.”",
       "name": "James Carter",
       "title": "UK"
-    }  
+    }
   ],
   "Solution": [
     {
@@ -516,6 +633,5 @@
       "title": "Data Analytics",
       "decs": "Our on-demand gas delivery apps use <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline'>data analytics</a> to analyze customer behavior, delivery trends, and sales patterns. These insights help businesses make smarter decisions, optimize operations, and increase revenue."
     }
-    
   ]
 }

@@ -2,37 +2,22 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./delivery-app-development.json";
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import BusinessSolustion from "../Newcomponet/SectionCompoent/BusinessSolustion";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import AppCard from "../Newcomponet/comman/AppCard";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
 import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import AppCard from "../componentsnew/AppCard";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-import CallToAction from "../components/CallToAction";
-import NewSection from "./components/NewSection";
-import Slider from "../components/Slider";
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -455,7 +440,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Custom Delivery App Development Company in India 
+        <title>Custom Delivery App Development Company in India
         </title>
         <meta
           name="description"
@@ -572,9 +557,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -630,10 +614,10 @@ export default function ClinicalApp(props: any) {
         </section>
 
 
-        <NewSection />
+        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
 
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <AppCard
           title="Take Your Business to the Next Level with our Custom Delivery App Development Solutions"
@@ -644,7 +628,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Delivery Apps Portfolio"
             description="Explore our delivery app development portfolio, showcasing innovative, scalable, and feature-rich solutions tailored for multiple industries. From real-time logistics to on-demand food delivery apps, our delivery solutions simplify operations, engage customers, and boost revenue. Comfygen helps businesses build top-tier delivery platforms that thrive in today's competitive world."
@@ -728,7 +712,7 @@ export default function ClinicalApp(props: any) {
 
 
 
-        <NewTeckStack
+        <TeckStack
           title="Tech Stack We Use for Delivery App Development"
           description="The Comfygen team uses a modern and scalable technology stack to deliver high-performance delivery applications. If you're looking for on-demand delivery app development, our tech ensures smooth functionality, real-time tracking, and a great user experience."
         />
@@ -760,7 +744,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
-       
+
       </div>
     </>
   );

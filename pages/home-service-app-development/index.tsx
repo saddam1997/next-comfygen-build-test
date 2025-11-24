@@ -1,52 +1,22 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./home-service-app-development.json";
-import Header from "../components/Header";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-// import AboutSection from "../components/AboutSection";
-const AboutSection = dynamic(() => import("../components/AboutSection"), {
-  loading: () => <p>Loading...</p>,
-});
-import WhoCanStart from "../componentsnew/WhoCanStart";
-import ServicesSec from "../components/ServicesSec";
-import CardItem from "../components/CardItem";
 
-
-
-// import Features from "./components/Features";
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
-
-import ProcessSec from "../components/ProcessSec";
-
-// import NewTeckStack from "../componentsnew/NewTeckStack";
-const NewTeckStack = dynamic(() => import("../componentsnew/NewTeckStack"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import WhyChoose from "../components/WhyChooseUs";
-const WhyChoose = dynamic(() => import("../components/WhyChooseUs"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import HireDeveloper from "../components/HireDeveloper";
-const HireDeveloper = dynamic(() => import("../components/HireDeveloper"), {
-  loading: () => <p>Loading...</p>,
-});
-import ClientTestimonials from "../components/ClientTestimonials";
-import Faq from "../components/Faq";
-import Slider from "../components/Slider";
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Process = [
   {
@@ -441,9 +411,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
@@ -502,7 +471,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <CardItem
           heading="Diverse Home Services App Development Solutions for Every Business Need"
@@ -513,15 +482,20 @@ export default function ClinicalApp(props: any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Home Services App Development Portfolio"
             description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
           />
         </section>
 
+        <Features
+          heading=' Fully Functional App Panels Tailored for Home Service Businesses'
+          description='At Comfygen Technologies, we develop powerful, easy-to-use home service app panels tailored to all user types. Whether you’re a customer, service provider, admin, or vendor, we create feature-rich panels to manage and grow your business smoothly.'
+          featuresData={JSON_DATA.featuresData}
+          grid='4'
+        />
 
-        <Features />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -537,7 +511,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TeckStack
           title="Technology Stack We Use in Home Service Booking App Development"
           description="At Comfygen Technologies, we use powerful and reliable technologies to develop high-performance home service booking apps. Our tech stack ensures your app is fast, secure, scalable, and future-ready — whether it's built for Android, iOS, or both."
           filterCategory={["crypto"]}

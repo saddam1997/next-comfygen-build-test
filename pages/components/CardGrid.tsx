@@ -23,15 +23,15 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                                     {techItem.img}
                                 </div>
                                 <div className="space-y-2">
-                                    <h2 className="2xl:text-2xl text-xl text-[#212121] font-semibold">
+                                    <h3 className="2xl:text-2xl text-xl text-[#212121] font-semibold">
                                         {techItem.title}
-                                    </h2>
+                                    </h3>
                                     <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: techItem.desc }}>
                                     </p>
                                 </div>
                                 {techItem.listItems && (
                                     <ul className="mt-4 space-y-2">
-                                        {techItem.listItems.map((item, idx) => (
+                                        {techItem.listItems.map((item:any, idx:any) => (
                                             <li
                                                 key={idx}
                                                 className="text-base font-normal flex items-center gap-1"

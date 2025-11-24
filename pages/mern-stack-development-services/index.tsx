@@ -1,28 +1,19 @@
 import React from "react";
 import Head from "next/head";
 import { useState } from "react";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mernstack.json";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import HireDeveloper from "../components/HireDeveloper";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+import dynamic from "next/dynamic";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-export default function Stack(props) {
+
+
+export default function Stack(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -79,10 +70,10 @@ export default function Stack(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+
+      <div className="overflow-hidden lg:pt-[110px]">
 
         <div className="">
           <div>
@@ -113,7 +104,7 @@ export default function Stack(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -125,6 +116,8 @@ export default function Stack(props) {
             </div>
           </div>
         </section>
+
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -135,10 +128,10 @@ export default function Stack(props) {
                 <p>As a leading MERN Stack development company in India, we leverage the power of cutting-edge technologies to create dynamic, scalable web applications. The core technologies we use include:</p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2">
-                {JSON_DATA.EngagementModels.map((elem) => {
+                {JSON_DATA.EngagementModels.map((elem, index) => {
                   const { title, decs, num } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <div key={index} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
                       <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px]  flex justify-center items-center text-[40px] font-bold text-[#5556D1]">
                         {num}
                       </div>
@@ -179,7 +172,7 @@ export default function Stack(props) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        {/*<BlogSection initialData={initialData} />*/}
+
       </div>
     </>
   );

@@ -1,122 +1,270 @@
 {
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a pizza delivery app?",
-    "desc": "The cost of pizza delivery app development typically ranges from $5,000 to $15,000, depending on features, design complexity, and technology stack. As a trusted pizza delivery app development company, Comfygen offers cost-effective and scalable solutions tailored to startups and enterprises, ensuring your pizza delivery app is feature-rich, secure, and user-friendly."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to build a pizza delivery app?",
-    "desc": "The timeline for pizza delivery app development varies based on custom features and integrations. On average, it may take 4–6 weeks for a full-fledged app. At Comfygen, we ensure quick delivery without compromising quality, using agile methods for faster pizza delivery mobile app development."
-  },
-  {
-    "num": "3",
-    "title": "Can you build a custom white-label pizza delivery app?",
-    "desc": "Yes! We specialize in white-label pizza delivery app development solutions that allow businesses to launch quickly with their own branding. Comfygen’s white-label apps come with core features like GPS tracking, secure payments, loyalty programs, and scalability to match your pizza business needs."
-  },
-  {
-    "num": "4",
-    "title": "What features should be included in a pizza delivery app?",
-    "desc": "A high-performance pizza delivery app should include real-time GPS tracking, AI-powered recommendations, a secure payment gateway, push notifications, discounts, loyalty programs, and an easy-to-use interface. Comfygen integrates advanced technologies to ensure your pizza delivery mobile app stands out with a smooth and engaging user experience."
-  },
-  {
-    "num": "5",
-    "title": "Do you provide post-launch support & maintenance?",
-    "desc": "Yes, as a trusted pizza delivery app development company, Comfygen provides complete post-launch support, regular updates, and technical maintenance. Our mobile app developers provide bug fixing, feature upgrades, and app monitoring so your pizza delivery business runs smoothly and continues to scale successfully after launch."
-  }
-]
-,
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a pizza delivery app?",
+      "desc": "The cost of pizza delivery app development typically ranges from $5,000 to $15,000, depending on features, design complexity, and technology stack. As a trusted pizza delivery app development company, Comfygen offers cost-effective and scalable solutions tailored to startups and enterprises, ensuring your pizza delivery app is feature-rich, secure, and user-friendly."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a pizza delivery app?",
+      "desc": "The timeline for pizza delivery app development varies based on custom features and integrations. On average, it may take 4–6 weeks for a full-fledged app. At Comfygen, we ensure quick delivery without compromising quality, using agile methods for faster pizza delivery mobile app development."
+    },
+    {
+      "num": "3",
+      "title": "Can you build a custom white-label pizza delivery app?",
+      "desc": "Yes! We specialize in white-label pizza delivery app development solutions that allow businesses to launch quickly with their own branding. Comfygen’s white-label apps come with core features like GPS tracking, secure payments, loyalty programs, and scalability to match your pizza business needs."
+    },
+    {
+      "num": "4",
+      "title": "What features should be included in a pizza delivery app?",
+      "desc": "A high-performance pizza delivery app should include real-time GPS tracking, AI-powered recommendations, a secure payment gateway, push notifications, discounts, loyalty programs, and an easy-to-use interface. Comfygen integrates advanced technologies to ensure your pizza delivery mobile app stands out with a smooth and engaging user experience."
+    },
+    {
+      "num": "5",
+      "title": "Do you provide post-launch support & maintenance?",
+      "desc": "Yes, as a trusted pizza delivery app development company, Comfygen provides complete post-launch support, regular updates, and technical maintenance. Our mobile app developers provide bug fixing, feature upgrades, and app monitoring so your pizza delivery business runs smoothly and continues to scale successfully after launch."
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Customer Panel",
+      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/customer.webp",
+      "additionalDetails": [
+        {
+          "details": "Browse & Customize Pizza with Toppings",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Track Orders with Live Pizza-making Status",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multiple & Secure Payment Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Save Favorite Orders for Quick Reorder",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-Time Delivery Tracking on Map",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Exclusive Deals, Coupons & Rewards",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Restaurant Panel",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/restaurant.webp",
+      "additionalDetails": [
+        {
+          "details": "Smart Menu Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Instant New Order Alerts with Prep Time Control",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Kitchen Dashboard for Streamlined Pizza Orders",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Daily Sales & Revenue Insights",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Inventory Tracking for Ingredients & Dough",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Manage Offers, Combos & Discounts",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Delivery Agent Panel",
+      "img": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/delivery.webp",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "Optimized Routes for Fastest Pizza Delivery",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-Time Order Pickup & Drop Updates",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Earnings Tracker with Daily/Weekly Reports",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Proof of Delivery via OTP or Photo",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Automatic Order Assignment for Nearby Drivers",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "In-app Chat with Customers & Restaurants",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Admin Panel",
+      "img": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/delivery.webp",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "Centralized Dashboard for Complete Control",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Manage Users, Restaurants & Drivers Seamlessly",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-Time Analytics on Orders & Revenue",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Commission Management & Payment Settlements",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Marketing & Promotional Campaign Tools",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multi-level Access for Staff & Managers",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+  ],
 
-"servicesData": [
-  {
-    "title": "Custom Pizza Delivery App Development",
-    "description": "We design and build custom pizza delivery apps tailored to your startup business goals and branding. From menu browsing to delivery workflows, our apps deliver a smooth customer experience with advanced features that help restaurants, franchises, and cloud kitchens grow digitally.",
-    "features": [
-      "Fully branded UI/UX",
-      "Personalized features & workflows",
-      "Complete control over menu & delivery",
-      "Multi-role access (Admin, Vendor, Customer)"
-    ]
-  },
-  {
-    "title": "White-label Pizza Delivery App Solutions",
-    "description": "Launch your pizza delivery business faster with our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label pizza delivery app development solutions</a>. Ready-to-deploy, fully customizable, and scalable apps that can be rebranded as your own to serve customers seamlessly across Android and iOS platforms.",
-    "features": [
-      "Quick deployment & customization",
-      "Cost-effective development",
-      "Full branding flexibility",
-      "Scalable for startups & enterprises"
-    ]
-  },
-  {
-    "title": "On-Demand Pizza Ordering App Development",
-    "description": "Our on-demand pizza ordering app development services empower customers to browse menus, place instant orders, and get real-time delivery updates. With secure payments and seamless ordering, your business can boost sales and offer an engaging digital experience.",
-    "features": [
-      "Fast & easy ordering system",
-      "Real-time delivery tracking",
-      "Secure multi-payment options",
-      "User-friendly interface"
-    ]
-  },
-  {
-    "title": "Multi-platform App Development",
-    "description": "Comfygen is a top-notch pizza delivery app development company that provides expert app developers for Android and iOS platforms. Our cross-platform app development ensures a consistent design, smooth performance, and scalability to support your business growth.",
-    "features": [
-      "iOS, Android & web solutions",
-      "Consistent performance & design",
-      "Scalable & future-ready",
-      "Unified admin dashboard"
-    ]
-  },
-  {
-    "title": "Third-party Integrations",
-    "description": "Enhance your pizza ordering app with powerful third-party integrations like GPS, payment gateways, CRM, loyalty programs, and chatbots. We ensure secure, fast, and seamless connections that improve business efficiency and user engagement.",
-    "features": [
-      "GPS & real-time navigation",
-      "Secure payment gateways",
-      "Loyalty & reward programs",
-      "CRM & chatbot integrations"
-    ]
-  },
-  {
-    "title": "Maintenance & Support",
-    "description": "Our work doesn’t stop at launch—we offer pizza delivery app maintenance and support services to keep your app updated, secure, and running smoothly. From bug fixes to feature upgrades, we ensure long-term app performance and customer satisfaction.",
-    "features": [
-      "Regular updates & improvements",
-      "Bug fixing & troubleshooting",
-      "Security patches",
-      "24/7 technical support"
-    ]
-  }
-]
-
-,
-
-"portfoliodata": [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p1.webp",
-    "title": "Single Outlet Pizza Delivery App",
-    "description": "A custom-built pizza delivery app tailored for individual restaurants to manage online orders and deliveries seamlessly. It enables customers to browse menus, place instant orders, and track deliveries in real-time.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p2.webp",
-    "title": "Multi-restaurant Pizza Ordering App",
-    "description": "A powerful pizza delivery marketplace app where multiple restaurants can list their menus, manage orders, and deliver pizzas to customers through a unified platform.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p3.webp",
-    "title": "Franchise Pizza Chain App",
-    "description": "Designed for large pizza chains and franchises, this app provides centralized management of multiple outlets. Customers can order from the nearest branch while businesses track sales, deliveries, and customer loyalty across multiple locations.",
-    "link": "https://www.comfygen.com/contact-us"
-  }
-]
-
-,
-
-"servicesData1": [
+  
+  "servicesData": [
+    {
+      "title": "Custom Pizza Delivery App Development",
+      "description": "We design and build custom pizza delivery apps tailored to your startup business goals and branding. From menu browsing to delivery workflows, our apps deliver a smooth customer experience with advanced features that help restaurants, franchises, and cloud kitchens grow digitally.",
+      "features": [
+        "Fully branded UI/UX",
+        "Personalized features & workflows",
+        "Complete control over menu & delivery",
+        "Multi-role access (Admin, Vendor, Customer)"
+      ]
+    },
+    {
+      "title": "White-label Pizza Delivery App Solutions",
+      "description": "Launch your pizza delivery business faster with our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label pizza delivery app development solutions</a>. Ready-to-deploy, fully customizable, and scalable apps that can be rebranded as your own to serve customers seamlessly across Android and iOS platforms.",
+      "features": [
+        "Quick deployment & customization",
+        "Cost-effective development",
+        "Full branding flexibility",
+        "Scalable for startups & enterprises"
+      ]
+    },
+    {
+      "title": "On-Demand Pizza Ordering App Development",
+      "description": "Our on-demand pizza ordering app development services empower customers to browse menus, place instant orders, and get real-time delivery updates. With secure payments and seamless ordering, your business can boost sales and offer an engaging digital experience.",
+      "features": [
+        "Fast & easy ordering system",
+        "Real-time delivery tracking",
+        "Secure multi-payment options",
+        "User-friendly interface"
+      ]
+    },
+    {
+      "title": "Multi-platform App Development",
+      "description": "Comfygen is a top-notch pizza delivery app development company that provides expert app developers for Android and iOS platforms. Our cross-platform app development ensures a consistent design, smooth performance, and scalability to support your business growth.",
+      "features": [
+        "iOS, Android & web solutions",
+        "Consistent performance & design",
+        "Scalable & future-ready",
+        "Unified admin dashboard"
+      ]
+    },
+    {
+      "title": "Third-party Integrations",
+      "description": "Enhance your pizza ordering app with powerful third-party integrations like GPS, payment gateways, CRM, loyalty programs, and chatbots. We ensure secure, fast, and seamless connections that improve business efficiency and user engagement.",
+      "features": [
+        "GPS & real-time navigation",
+        "Secure payment gateways",
+        "Loyalty & reward programs",
+        "CRM & chatbot integrations"
+      ]
+    },
+    {
+      "title": "Maintenance & Support",
+      "description": "Our work doesn’t stop at launch—we offer pizza delivery app maintenance and support services to keep your app updated, secure, and running smoothly. From bug fixes to feature upgrades, we ensure long-term app performance and customer satisfaction.",
+      "features": [
+        "Regular updates & improvements",
+        "Bug fixing & troubleshooting",
+        "Security patches",
+        "24/7 technical support"
+      ]
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p1.webp",
+      "title": "Single Outlet Pizza Delivery App",
+      "description": "A custom-built pizza delivery app tailored for individual restaurants to manage online orders and deliveries seamlessly. It enables customers to browse menus, place instant orders, and track deliveries in real-time.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p2.webp",
+      "title": "Multi-restaurant Pizza Ordering App",
+      "description": "A powerful pizza delivery marketplace app where multiple restaurants can list their menus, manage orders, and deliver pizzas to customers through a unified platform.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/p3.webp",
+      "title": "Franchise Pizza Chain App",
+      "description": "Designed for large pizza chains and franchises, this app provides centralized management of multiple outlets. Customers can order from the nearest branch while businesses track sales, deliveries, and customer loyalty across multiple locations.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -142,8 +290,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -151,28 +298,28 @@
       "desc": "Investing in a milk delivery app development solution brings unmatched advantages to modern dairy businesses. From streamlining operations to enhancing customer loyalty, our milk delivery apps help you grow faster, serve better, and manage smarter — all in one place."
     }
   ],
-"consultancyData": [
-  {
-    "title": "Improved Operational Efficiency",
-    "desc": "A milk delivery app automates routine tasks, such as order processing, delivery scheduling, and inventory updates. This reduces manual errors, saves time, and ensures smoother daily operations—helping your dairy business run more efficiently with fewer resources and better productivity."
-  },
-  {
-    "title": "Real-Time Order Management",
-    "desc": "With real-time order tracking, you can monitor customer orders and deliveries from start to finish. This ensures transparency, improves delivery accuracy, and helps you respond quickly to any issues, resulting in better service and higher customer satisfaction."
-  },
-  {
-    "title": "Better Customer Engagement",
-    "desc": "Give your customers the convenience of mobile ordering, flexible subscriptions, and timely updates. A milk delivery app enhances customer experience, builds brand loyalty, and keeps users engaged with offers, reminders, and personalized communication."
-  },
-  {
-    "title": "Contactless Payments",
-    "desc": "Integrated digital payment gateways offer secure and easy payment options like <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/upi-payment-app-development'>UPI</a>, wallets, debit/credit cards, and net banking. This enables smooth, contactless transactions and builds customer trust while reducing dependency on cash handling."
-  },
-  {
-    "title": "Data-Driven Business Insights",
-    "desc": "Track orders, user behavior, revenue, and inventory with powerful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> dashboards. These insights help you make smarter business decisions, optimize delivery operations, and plan offers or product launches based on real-time data and trends."
-  }
-],
+  "consultancyData": [
+    {
+      "title": "Improved Operational Efficiency",
+      "desc": "A milk delivery app automates routine tasks, such as order processing, delivery scheduling, and inventory updates. This reduces manual errors, saves time, and ensures smoother daily operations—helping your dairy business run more efficiently with fewer resources and better productivity."
+    },
+    {
+      "title": "Real-Time Order Management",
+      "desc": "With real-time order tracking, you can monitor customer orders and deliveries from start to finish. This ensures transparency, improves delivery accuracy, and helps you respond quickly to any issues, resulting in better service and higher customer satisfaction."
+    },
+    {
+      "title": "Better Customer Engagement",
+      "desc": "Give your customers the convenience of mobile ordering, flexible subscriptions, and timely updates. A milk delivery app enhances customer experience, builds brand loyalty, and keeps users engaged with offers, reminders, and personalized communication."
+    },
+    {
+      "title": "Contactless Payments",
+      "desc": "Integrated digital payment gateways offer secure and easy payment options like <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/upi-payment-app-development'>UPI</a>, wallets, debit/credit cards, and net banking. This enables smooth, contactless transactions and builds customer trust while reducing dependency on cash handling."
+    },
+    {
+      "title": "Data-Driven Business Insights",
+      "desc": "Track orders, user behavior, revenue, and inventory with powerful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> dashboards. These insights help you make smarter business decisions, optimize delivery operations, and plan offers or product launches based on real-time data and trends."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Pizza Delivery App Development?",
     "description": "Choosing the right food delivery app development company can make all the difference in building a successful pizza delivery app. At Comfygen, we blend innovation with experience to craft feature-rich, user-friendly, and scalable pizza delivery applications. Here’s why we are trusted as the best pizza delivery app development agency:",
@@ -181,61 +328,56 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-"gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Proven Expertise in Food Delivery Apps",
-    "description": "Comfygen Technologies is a top <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >food delivery app development company</a>. We specialize in building tailored food delivery apps that help restaurants, startups, and enterprises boost orders, streamline deliveries, and engage customers effectively."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Proven Expertise in Food Delivery Apps",
+        "description": "Comfygen Technologies is a top <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >food delivery app development company</a>. We specialize in building tailored food delivery apps that help restaurants, startups, and enterprises boost orders, streamline deliveries, and engage customers effectively."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "End-to-End Development Services",
+        "description": "Our team handles everything from UI/UX design, backend coding, testing, to app store launch, ensuring a seamless, reliable, and customer-focused pizza delivery mobile app solution for your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Scalable & Cost-Effective Apps",
+        "description": "We deliver custom pizza delivery app development solutions that grow with your business—designed to be scalable, feature-rich, and cost-efficient, whether you’re a local pizza shop or a franchise chain."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Advanced Technology Stack",
+        "description": "Using AI, GPS tracking, payment integration, and blockchain, we craft smart pizza delivery apps with smooth performance, real-time updates, and features that enhance both restaurant efficiency and customer satisfaction."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Dedicated Support & Maintenance",
+        "description": "Our responsibility doesn’t end at launch. We provide continuous app support, updates, and maintenance to keep your pizza delivery app running smoothly, secure, and aligned with evolving business needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Customer-Centric Approach",
+        "description": "Every feature we build—from real-time order tracking to loyalty programs—is designed to create a delightful, engaging, and personalized pizza delivery experience for your customers, ensuring long-term loyalty and satisfaction."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "End-to-End Development Services",
-    "description": "Our team handles everything from UI/UX design, backend coding, testing, to app store launch, ensuring a seamless, reliable, and customer-focused pizza delivery mobile app solution for your business."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Scalable & Cost-Effective Apps",
-    "description": "We deliver custom pizza delivery app development solutions that grow with your business—designed to be scalable, feature-rich, and cost-efficient, whether you’re a local pizza shop or a franchise chain."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Advanced Technology Stack",
-    "description": "Using AI, GPS tracking, payment integration, and blockchain, we craft smart pizza delivery apps with smooth performance, real-time updates, and features that enhance both restaurant efficiency and customer satisfaction."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Dedicated Support & Maintenance",
-    "description": "Our responsibility doesn’t end at launch. We provide continuous app support, updates, and maintenance to keep your pizza delivery app running smoothly, secure, and aligned with evolving business needs."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Customer-Centric Approach",
-    "description": "Every feature we build—from real-time order tracking to loyalty programs—is designed to create a delightful, engaging, and personalized pizza delivery experience for your customers, ensuring long-term loyalty and satisfaction."
-  }
-]
-
-
-
-  },
-"customTestimonials": [
-  {
-    "text": "Comfygen developed a custom pizza delivery app for my restaurant, and the results were amazing! The GPS tracking and real-time order updates made deliveries faster and customers happier.",
-    "name": "Rahul Mehta",
-    "title": "Mumbai, India"
-  },
-  {
-    "text": "We hired Comfygen as our pizza delivery app development company, and they exceeded expectations. The app is smooth, user-friendly, and loaded with features like loyalty rewards and secure payments.",
-    "name": "Sophia Carter",
-    "title": "London, UK"
-  },
-  {
-    "text": "Thanks to Comfygen’s expert pizza delivery app developers, we scaled our food delivery business seamlessly. The AI-based recommendations helped boost orders, and the support team was outstanding.",
-    "name": "Daniel Rodriguez",
-    "title": "New York, USA"
-  }
-]
-
-,
+  "customTestimonials": [
+    {
+      "text": "Comfygen developed a custom pizza delivery app for my restaurant, and the results were amazing! The GPS tracking and real-time order updates made deliveries faster and customers happier.",
+      "name": "Rahul Mehta",
+      "title": "Mumbai, India"
+    },
+    {
+      "text": "We hired Comfygen as our pizza delivery app development company, and they exceeded expectations. The app is smooth, user-friendly, and loaded with features like loyalty rewards and secure payments.",
+      "name": "Sophia Carter",
+      "title": "London, UK"
+    },
+    {
+      "text": "Thanks to Comfygen’s expert pizza delivery app developers, we scaled our food delivery business seamlessly. The AI-based recommendations helped boost orders, and the support team was outstanding.",
+      "name": "Daniel Rodriguez",
+      "title": "New York, USA"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -442,8 +584,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -464,8 +604,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -487,38 +626,36 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
-"Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "AI-based Recommendation Engine",
-    "decs": "We integrate <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI-based recommendation</a> engines into our pizza delivery apps to personalize user experiences. Customers get smart pizza suggestions based on order history, preferences, and trending choices—boosting engagement, repeat orders, and customer satisfaction."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain Integration",
-    "decs": "We integrate <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >blockchain technology</a> into pizza delivery app development for secure transactions, transparent order records, and efficient supply chain management. Blockchain ensures data integrity, eliminates fraud risks, and strengthens trust between restaurants, delivery agents, and customers."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/5g-technology.webp",
-    "title": "GPS & Geolocation Tracking",
-    "decs": "Our pizza delivery app development services come with advanced GPS and geolocation tracking, ensuring customers can monitor their delivery in real time. This technology also helps drivers optimize routes for faster, efficient, and accurate pizza deliveries."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/cloud-icon.webp",
-    "title": "Secure Payment Gateway Integration",
-    "decs": "We provide secure payment gateway integration in your pizza delivery app, supporting multiple payment methods like cards, wallets, and UPI. Encrypted transactions, quick checkouts, and refund management enhance trust, convenience, and user satisfaction."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/emotional-ai.webp",
-    "title": "Push Notifications & Loyalty Programs",
-    "decs": "Our pizza ordering application development services include push notifications and loyalty program features to improve customer retention. Engage users with personalized offers, delivery alerts, reward points, and timely promotions that drive more repeat orders."
-  }
-]
-
+  "Emerging": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "AI-based Recommendation Engine",
+      "decs": "We integrate <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI-based recommendation</a> engines into our pizza delivery apps to personalize user experiences. Customers get smart pizza suggestions based on order history, preferences, and trending choices—boosting engagement, repeat orders, and customer satisfaction."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Integration",
+      "decs": "We integrate <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >blockchain technology</a> into pizza delivery app development for secure transactions, transparent order records, and efficient supply chain management. Blockchain ensures data integrity, eliminates fraud risks, and strengthens trust between restaurants, delivery agents, and customers."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "title": "GPS & Geolocation Tracking",
+      "decs": "Our pizza delivery app development services come with advanced GPS and geolocation tracking, ensuring customers can monitor their delivery in real time. This technology also helps drivers optimize routes for faster, efficient, and accurate pizza deliveries."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/cloud-icon.webp",
+      "title": "Secure Payment Gateway Integration",
+      "decs": "We provide secure payment gateway integration in your pizza delivery app, supporting multiple payment methods like cards, wallets, and UPI. Encrypted transactions, quick checkouts, and refund management enhance trust, convenience, and user satisfaction."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/emotional-ai.webp",
+      "title": "Push Notifications & Loyalty Programs",
+      "decs": "Our pizza ordering application development services include push notifications and loyalty program features to improve customer retention. Engage users with personalized offers, delivery alerts, reward points, and timely promotions that drive more repeat orders."
+    }
+  ]
 }
