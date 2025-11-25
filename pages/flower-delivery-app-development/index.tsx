@@ -69,7 +69,7 @@ const WhoCanStartCards = [
   {
     heading: "Startups & Entrepreneurs",
     description:
-      "Looking to enter the flower delivery market? Our <a class='text-black font-semibold underline' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label flower delivery mobile app development solutions</a> are perfect for a quick launch. Get a fully branded app with essential features and scalability to help you grow fast without high upfront costs.",
+      "Looking to enter the flower delivery market? Our <a class=' font-semibold underline' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label flower delivery mobile app development solutions</a> are perfect for a quick launch. Get a fully branded app with essential features and scalability to help you grow fast without high upfront costs.",
   },
   {
     heading: "Flower Shops & Local Florists",

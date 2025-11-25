@@ -18,6 +18,8 @@ import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import Faq from "../Newcomponet/SectionCompoent/Faq";
 import Script from "next/script";
+import Milestones from "../Newcomponet/comman/Milestones";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 
 
 // const ContactFromCenter = dynamic(
@@ -30,56 +32,56 @@ import Script from "next/script";
 
 const Processs = [
   {
-    title: "Discovery and Planning",
-    description: "Our journey begins with understanding your business goals, target audience, and specific requirements. We conduct thorough research and hold detailed discussions to gather all necessary information. This phase helps us create a comprehensive project plan, outlining the scope, timeline, and deliverables."
+    title: "Requirement Gathering & Analysis",
+    description: "We start by understanding your business goals and website requirements. Our team analyzes your needs to create a clear roadmap for custom web development in Jaipur that aligns with your objectives."
   },
   {
-    title: "Design and Prototyping",
-    description: "In the design phase, our creative team brings your vision to life. We develop wireframes and prototypes to illustrate the website’s layout and user interface. Our focus is on creating intuitive, aesthetically pleasing designs that provide an excellent user experience. We ensure that the design aligns with your brand identity and resonates with your audience."
+    title: "Research & Strategy",
+    description: "We conduct market research, competitor analysis, and user research to create a strong web strategy. This ensures your website stands out and achieves your business objectives."
   },
   {
-    title: "Development",
-    description: "Once the design is approved, our skilled developers start building the website. We use the latest technologies and coding standards to ensure a high-quality, responsive, and secure website. Front-end and back-end development are carried out in parallel, ensuring seamless integration of all components."
+    title: " UI/UX Design",
+    description: "Our designers craft intuitive and visually appealing interfaces. We focus on user experience, responsive design, and modern layouts to make your website engaging and easy to navigate."
   },
   {
-    title: "Testing and Quality Assurance",
-    description: "Before launching, we rigorously test the website to ensure it functions flawlessly across different devices and browsers. Our quality assurance team checks for bugs, performance issues, and security vulnerabilities. We conduct usability testing to make sure the site is easy to navigate and provides a positive user experience."
+    title: "Development & Coding",
+    description: "Using the latest technologies, our Jaipur web development team builds fast, secure, and scalable websites. We code cleanly to ensure optimal performance across all devices and platforms."
   },
   {
-    title: "Deployment",
-    description: "After successful testing, we deploy the website to the live server. Our team handles all the technical aspects of the launch, ensuring a smooth transition without any downtime. We work closely with you during this phase to ensure everything is set up correctly and meets your expectations."
+    title: "Testing & Quality Assurance",
+    description: "Before launch, every website goes through rigorous testing. We check functionality, responsiveness, security, and speed to ensure your web application meets the highest quality standards."
   },
   {
-    title: "SEO and Analytics Integration",
-    description: "To maximize the website’s visibility and performance, we integrate advanced SEO strategies and analytics tools. This ensures your website is optimized for search engines and provides valuable insights into user behavior, helping you make informed decisions for continuous improvement."
+    title: "Deployment & Launch",
+    description: "After approval, we deploy your website on a secure server. Our team ensures a smooth launch and proper setup for SEO, performance, and accessibility, so your business is ready online."
   },
   {
-    title: "Support and Maintenance",
-    description: "Our commitment to your success doesn’t end with the launch. We offer ongoing support and maintenance to keep your website running smoothly. From regular updates and backups to performance monitoring and issue resolution, we ensure your website remains secure, up-to-date, and fully functional."
+    title: "Support & Maintenance",
+    description: "We provide ongoing support and maintenance to keep your website running smoothly. From updates to troubleshooting, our team ensures your web solutions remain secure, functional, and up-to-date."
   },
 ];
 
-  const portfoliodata = [
-    {
-      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-      "title": "Aria Coin Cryptocurrency",
-      "description": "Welcome to ARIA Currency, where the future of transactions meets seamless empowerment. Join us as we rewrite the rules of digital currency, making security, accessibility, and efficiency our currency of trust.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/img/token-development.webp",
-      "title": "Bitlearn Web",
-      "description": "Join Bit Learn Web - Where Blockchain Fuels Fairness, Rewards Fuel Ambition, and Community Fuels Success. Embrace the Future of Network Marketing, Redefined.",
-      "link": "#"
-    },
-     {
-      "image": "https://www.comfygen.com/img/news-portfolio-footer-img.webp",
-      "title": "News Application",
-      "description": "Discover a new era of news with our cutting-edge News Application. Stay informed with real-time updates, personalized feeds, and multimedia content at your fingertips. Never miss a beat with breaking news notifications. Download now for a seamless, immersive news experience.",
-      "link": "#"
-    },
-   
-  ]
+const portfoliodata = [
+  {
+    "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+    "title": "Aria Coin Cryptocurrency",
+    "description": "Welcome to ARIA Currency, where the future of transactions meets seamless empowerment. Join us as we rewrite the rules of digital currency, making security, accessibility, and efficiency our currency of trust.",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/img/token-development.webp",
+    "title": "Bitlearn Web",
+    "description": "Join Bit Learn Web - Where Blockchain Fuels Fairness, Rewards Fuel Ambition, and Community Fuels Success. Embrace the Future of Network Marketing, Redefined.",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/img/news-portfolio-footer-img.webp",
+    "title": "News Application",
+    "description": "Discover a new era of news with our cutting-edge News Application. Stay informed with real-time updates, personalized feeds, and multimedia content at your fingertips. Never miss a beat with breaking news notifications. Download now for a seamless, immersive news experience.",
+    "link": "#"
+  },
+
+]
 
 
 
@@ -99,11 +101,11 @@ export default function Webdevelopment(props) {
     <>
       <Head>
         <title>
-          Best Web Development Companies in Jaipur | Expert Services
+          Web Development Company in Jaipur | Custom Website App Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading web development company in Jaipur with experience of 7 years offering custom web solutions, E-commerce platforms, and responsive design."
+          content="Comfygen is a top web development company in Jaipur offering custom website and web application development. Hire expert web developers for responsive and SEO-friendly web solutions that grow your business."
         />
         <link rel="canonical" href="https://www.comfygen.com/web-development" />
         <meta property="og:locale" content="en_US" />
@@ -218,9 +220,9 @@ export default function Webdevelopment(props) {
       <div className="overflow-hidden">
         <div className="">
           <HeroSectionForAllPages
-            heading="Web Development Services in Jaipur"
-            ptag="Our web design and development services will empower your business in the digital world by creating professional, visually appealing websites. As a trusted website development company in Jaipur India, we combine innovation with expertise to deliver customized web solutions tailored to your business needs."
-            ptag1="Our team leverages the latest technologies and modern trends to craft websites that engage your audience and drive measurable results. Whether you want to expand your reach, enhance customer engagement, or strengthen your online presence, Comfygen is your partner in digital growth."
+            heading="Web Development Company in Jaipur"
+            ptag="Comfygen is a top web development company in Jaipur. We create easy-to-use, responsive, and SEO-friendly websites that help your business reach more customers and increase sales. Whether you need a small business site or a large web application, we deliver solutions that work."
+            ptag1=""
             li="Custom Website Solutions"
             li1="Tech-Driven, Trend-Focused Designs"
             li2="Affordable and Transparent Pricing"
@@ -234,18 +236,20 @@ export default function Webdevelopment(props) {
             bgImage={'https://www.comfygen.com/herosection/website-development-company-hero-img.webp'}
           />
         </div>
+        <Milestones />
 
         <AboutSection
           title="About Company"
           heading="Affordable Website Development Company in Jaipur, India"
-          description1="Comfygen is a trusted website development company in Jaipur that delivers top-notch website solutions for small businesses, startups, and enterprises. With expertise in advanced technologies, we specialize in creating custom web solutions tailored to meet the unique requirements of businesses and their audiences."
-          description2="Our professional website developers in Jaipur India craft intuitive, user-friendly websites designed to establish a robust brand identity and foster reliability in the competitive digital market. Whether you’re looking to boost conversion rates, enhance customer relationships, or build trust among users, our web development solutions are designed to deliver exceptional results."
+          description1="Comfygen is a trusted Full-stack website development company in Jaipur that delivers top-notch website solutions for small businesses, startups, and enterprises. With expertise in advanced technologies, we specialize in creating custom web solutions tailored to meet the unique requirements of businesses and their audiences."
+          description2="Our professional website developers in Jaipur, India craft intuitive, user-friendly websites designed to establish a robust brand identity and foster reliability in the competitive digital market. Whether you’re looking to boost conversion rates, enhance customer relationships, or build trust among users, our web development solutions are designed to deliver exceptional results."
+          description3="You can achieve sustainable growth and thrive in the ever-evolving digital landscape with Comfygen's web development services. We can help you stand out and succeed in your business."
           points={[
             "Custom Web Solutions for Every Business Size",
             "Intuitive, User-Friendly Designs",
             "Focus on Scalability and Market Expansion"
           ]}
-          description3="You can achieve sustainable growth and thrive in the ever-evolving digital landscape with Comfygen's web development services. We can help you stand out and succeed in your business."
+
           imageSrc="https://www.comfygen.com/image/web-development-company-about-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -254,7 +258,7 @@ export default function Webdevelopment(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide the Best Website Development Services in Jaipur</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Professional Website Development Services in Jaipur</h2>
               <p className="text-base text-center font-normal">Comfygen gives the best website development services and solutions that leave an indelible mark on site visitors. Our custom web development solutions are designed to provide an engaging user experience while also promoting corporate growth and profitability. With a focus on creativity and functionality, we ensure that our web development services are in line with your objectives and industry trends.</p>
             </div>
             <div className="">
@@ -268,6 +272,8 @@ export default function Webdevelopment(props) {
           description="Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use"
           filterCategory={["mobile"]}
         />
+
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -276,14 +282,14 @@ export default function Webdevelopment(props) {
           buttonLink="/contact-us"
         />
         <IndustriesServe
-          heading="Web Development Services in Jaipur For Various Industries"
-          description=""
+          heading="Industries We Serve with Expert Web Development in Jaipur"
+          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
           sliderData={JSON_DATA.customSliderData}
         />
         {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
         <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+          heading="Ready to Build Your Website?"
+          text="Partner with Comfygen Technologies, the most trusted Web Development Company in Jaipur."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
@@ -316,14 +322,32 @@ export default function Webdevelopment(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <CallToAction
+
+        <HireDeveloper
+          heading="Hire DeFi Developers"
+          text="Looking to build a custom website or web application? Hire expert web developers from Comfygen in Jaipur to create secure, scalable, and high-performing web solutions tailored to your business needs. Our skilled web developers specialize in building responsive websites, web apps, and enterprise solutions that drive growth and enhance user experience."
+          
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Dedicated experts in custom web development for startups, SMEs, and enterprises",
+            "SEO-friendly, mobile-responsive, and fast-loading websites",
+            "Scalable architecture with secure coding practices",
+
+          ]}
+        />
+
+
+        {/* <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
-        />
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

@@ -9,6 +9,79 @@
     }
   ],
 
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/for-blockchain-developers.svg",
+      "title": "For Blockchain Developers",
+      "description": "We also create apps and frameworks for developers who want to specialize in blockchain development and use the technology in applications.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/dpos-apps-for-block-producers.svg",
+      "title": "DPOS apps for Block producers",
+      "description": "DPOS blockchain apps that help manage nodes and blockchain use are created for block producers.",
+      "link": "#"
+    },
+     {
+      "image": "https://www.comfygen.com/img/for-token-holders.svg",
+      "title": "For token holders",
+      "description": "For token holders who want to use blockchain apps for different purposes, we also create apps that help utilize the blockchain algorithms.",
+      "link": "#"
+    }
+  ],
+
+
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "For block producers",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/img/for-block-producers.svg",
+    "additionalDetails": [
+      { "details": "Node monitoring", "emoji": "", "content": "" },
+      { "details":  "Stake management", "emoji": "", "content": "" },
+      { "details":  "Rewards Tracking", "emoji": "", "content": "" },
+      { "details": "Governance Participation", "emoji": "", "content": "" }
+
+    ]
+  },
+  {
+    "id": 2,
+    "title": "For token holders",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/img/for-token-holders-img.svg",
+    "additionalDetails": [
+      { "details":  "Staking dashboard", "emoji": "", "content": "" },
+      { "details": "Validator ratings", "emoji": "", "content": "" },
+      { "details":  "Rewards Distribution", "emoji": "", "content": "" },
+      { "details": "Track Earnings & Commissions", "emoji": "", "content": "" },
+      { "details": "Governance Voting", "emoji": "", "content": "" }
+
+    ]
+  },
+  {
+    "id": 3,
+    "title": "For Blockchain Developers",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/img/blockchain-developers.svg",
+    "additionalDetails": [
+      { "details":  "Development toolkit ", "emoji": "", "content": "" },
+      { "details":  "Testing environment", "emoji": "", "content": "" },
+      { "details":  "Documentation", "emoji": "", "content": "" },
+      { "details": "Deployment tools", "emoji": "", "content": "" }
+     
+    ]
+  }
+],
+
+
+
+
+
+
   "servicesData" :[
     {
       "title": "Consulting and Advisory Services",

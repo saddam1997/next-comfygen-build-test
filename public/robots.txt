@@ -7,44 +7,6 @@ Sitemap: https://www.comfygen.com/blog/post-sitemap.xml
 
 
 
-# AI / AEO bots (explicitly allowed for visibility)
-# ---------------------------------------
-User-agent: Google-Extended
-Allow: /
- 
-User-agent: GoogleOther
-Allow: /
- 
-User-agent: GoogleOther-Image
-Allow: /
- 
-User-agent: Gemini
-Allow: /
- 
-User-agent: Google-Extended-Gemini
-Allow: /
- 
-User-agent: ChatGPT-User
-Allow: /
- 
-User-agent: ChatGPTBot
-Allow: /
- 
-User-agent: GPTBot
-Allow: /
- 
-User-agent: PerplexityBot
-Allow: /
- 
-User-agent: ClaudeBot
-Allow: /
- 
-User-agent: anthropic-ai
-Allow: /
- 
-User-agent: Applebot
-Allow: /
-
 
 # ---------------------------------------
 # Block low-value query/utility URLs

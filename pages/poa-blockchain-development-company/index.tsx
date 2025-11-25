@@ -1,35 +1,18 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import { BsDot, BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./poa.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import ServicesSec from "../components/ServicesSec";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import CallToAction from "../components/CallToAction";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-
-
-
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Ser = [
   {
@@ -142,39 +125,7 @@ export default function Ecommerce(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a cutting-edge cryptocurrency built on its dedicated blockchain—not just another token. Featuring a powerful ‘Four Square’ architecture, it excels in speed, mining efficiency, seamless integration, and predictable growth. It is designed to surpass Bitcoin in strength, speed, and security. Hence, NASDAC Coin is purpose-built for businesses, establishing itself as the first true SUPER COIN in the blockchain industry.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay revolutionizes global transactions with instant, zero-fee transfers through its decentralized P2P blockchain technology, powered by the advanced YatriPay Virtual Machine (YVM). Offering seamless peer-to-peer payments guarantees security, efficiency, and accessibility. With the YatriPay Mobile App, users can onboard effortlessly, enabling truly borderless digital transactions worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
 
-    ],
-  };
   return (
     <>
       <Head>
@@ -254,25 +205,24 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
         />
       </Head>
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/poa-blockchain-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="POA Blockchain Development Company"
-            ptag="Unlock unmatched security, transparency, and efficiency with Comfygen's blockchain development solutions. We specialize in creating customized, secure, and scalable blockchain systems for various needs, including NFT gaming, DeFi, and metaverse projects. Our solutions ensure end-to-end traceability and tamper-proof transactions, leveraging smart contract compatibility for maximum reliability. With a focus on cutting-edge innovation, Comfygen empowers your business with cost-effective, future-ready blockchain technology."
-            li="Enhanced Data Security"
-            li1="Transparent Transaction Tracking"
-            li2="Scalable Blockchain Solutions"
-            li3="Future-Ready Innovation"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="POA Blockchain Development Company"
+          ptag="Unlock unmatched security, transparency, and efficiency with Comfygen's blockchain development solutions. We specialize in creating customized, secure, and scalable blockchain systems for various needs, including NFT gaming, DeFi, and metaverse projects. Our solutions ensure end-to-end traceability and tamper-proof transactions, leveraging smart contract compatibility for maximum reliability. With a focus on cutting-edge innovation, Comfygen empowers your business with cost-effective, future-ready blockchain technology."
+          li="Enhanced Data Security"
+          li1="Transparent Transaction Tracking"
+          li2="Scalable Blockchain Solutions"
+          li3="Future-Ready Innovation"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/poa-blockchain-dev-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="What Advantages Does Blockchain Technology Have to Offer?"
@@ -283,25 +233,30 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <InfoSectionRight
+        <InfoSection
           heading="What is the Significance of POA Blockchain Development?"
           description1="Proof of Authority, or PoA Blockchain development, is a popular algorithm or consensus mechanism that is used with blockchains for delivering faster transactions."
           description2="Proof of Authority, or PoA Blockchain development, is a popular algorithm or consensus mechanism that is used with blockchains for delivering faster transactions."
           description3="The utilization of PoA in blockchain development services, solutions doesn’t depend solely on the nodes for solving complex mathematical problems. Instead, it uses a diverse set of authorities, with explicit permission, to create new blocks and then secure the linked blockchain development services."
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/what-is-the-Significance-of-poa-blockchain-development.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Why is PoA Considered the Digital Revolution in the Blockchain Development Sector?"
           description1="PoA Blockchain development makes use of pre-approved validators with access to specific blockchain development software for organizing various transactions into specific blocks."
           description2="The introduction to PoA blockchain development is the ideology to meet business needs using blockchain app development services, solutions and with the ability to handle confidential data without any security hassle."
           description3="Comfygen, being the best Proof of Authority blockchain development company , provides you with quality solutions with all features and functionalities guaranteed."
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company2.webp"
           link="/contact-us"
           linkText="Lets Discuss"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -389,11 +344,21 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our POA Blockchain Based Portfolio"
-          description="Discover our portfolio of innovative projects that showcase our expertise in POA Blockchain solutions, online development, and app creation. Each project reflects our commitment to excellence, creativity, and client satisfaction."
-        />
+
+
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our POA Blockchain Based Portfolio"
+            description="Discover our portfolio of innovative projects that showcase our expertise in POA Blockchain solutions, online development, and app creation. Each project reflects our commitment to excellence, creativity, and client satisfaction."
+          />
+        </section>
+
+
+
+
         <CallToAction
           heading="Let’s hear what you have to say?"
           text="Get in touch with us and discuss your needs and requirements with our experts."
@@ -413,9 +378,25 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+
+

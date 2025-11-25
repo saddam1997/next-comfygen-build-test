@@ -231,6 +231,103 @@
       "features": []
     }
   ],
+
+
+  "BusinessSolustion": {
+    "title": "Transform Your Business with AI Courier Delivery App Development Solutions",
+    "subtitle": "At Comfygen, we specialize in AI-powered courier delivery app development solutions that optimize operations, cut costs, and enhance customer experience. Our artificial intelligence courier apps empower businesses with automation, real-time tracking, and advanced analytics for sustainable growth.",
+    "features": [
+      {
+        "id": 1,
+        "title": "AI-Powered Dispatching",
+        "description": "Automate courier assignment with AI-based algorithms that match drivers, optimize routes, and minimize delays, ensuring timely parcel deliveries every time."
+      },
+      {
+        "id": 2,
+        "title": "Predictive Delivery Analytics",
+        "description": "Leverage AI insights to forecast delivery times, identify patterns, and improve efficiency, helping your courier business meet customer expectations seamlessly."
+      },
+      {
+        "id": 3,
+        "title": "Smart Route Optimization",
+        "description": "AI-driven route optimization reduces fuel costs, avoids traffic delays, and ensures faster last-mile delivery, maximizing operational efficiency and customer satisfaction."
+      },
+      {
+        "id": 4,
+        "title": "Intelligent Customer Support",
+        "description": "Integrate AI chatbots for instant customer assistance, automated queries, and proactive notifications, ensuring a smooth and engaging user experience 24/7."
+      },
+      {
+        "id": 5,
+        "title": "Fraud Detection & Secure Payments",
+        "description": "Our best AI parcel delivery app provides safe courier transactions with fraud detection, real-time alerts, and blockchain-based secure payment gateways for a trustworthy courier app ecosystem."
+      },
+      {
+        "id": 6,
+        "title": "Data-Driven Business Insights",
+        "description": "AI-powered analytics track performance, customer preferences, and delivery trends, enabling smarter business decisions and growth-focused strategies for courier companies."
+      }
+    ]
+  },
+
+
+ "featuresData":  [
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/courier-delivery-app-development/user-panel.webp",
+    "additionalDetails": [
+      { "details": "Easy Profile Setup & Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Parcel Tracking", "emoji": "", "content": "" },
+      { "details": "Schedule Pickups & Deliveries", "emoji": "", "content": "" },
+      { "details": "Multiple Secure Payment Options", "emoji": "", "content": "" },
+      { "details": "Delivery History & Status Updates", "emoji": "", "content": "" },
+      { "details": "Push Notifications & Alerts", "emoji": "", "content": "" },
+      { "details": "Rate & Review Courier Services", "emoji": "", "content": "" },
+      { "details": "In-App Customer Support", "emoji": "", "content": "" },
+      { "details": "Loyalty Rewards & Discounts", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Driver Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/courier-delivery-app-development/driver-panel.webp",
+    "additionalDetails": [
+      { "details": "Profile Verification & Management", "emoji": "", "content": "" },
+      { "details": "Smart Route Optimization with GPS", "emoji": "", "content": "" },
+      { "details": "Accept/Reject Delivery Requests", "emoji": "", "content": "" },
+      { "details": "Earnings Dashboard & Reports", "emoji": "", "content": "" },
+      { "details": "Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "Proof of Delivery (Photo/Signature)", "emoji": "", "content": "" },
+      { "details": "Instant Notifications & Alerts", "emoji": "", "content": "" },
+      { "details": "Availability Toggle (Online/Offline)", "emoji": "", "content": "" },
+      { "details": "Customer Communication Tools", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/comfygen-images/courier-delivery-app-development/admin-panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "User & Driver Management System", "emoji": "", "content": "" },
+      { "details": "Real-Time Delivery Monitoring", "emoji": "", "content": "" },
+      { "details": "Automated Dispatch & Scheduling", "emoji": "", "content": "" },
+      { "details": "Secure Payment & Invoice Management", "emoji": "", "content": "" },
+      { "details": "Revenue & Analytics Dashboard", "emoji": "", "content": "" },
+      { "details": "Multi-Branch & Franchise Support", "emoji": "", "content": "" },
+      { "details": "AI-Based Insights & Reporting", "emoji": "", "content": "" },
+      { "details": "Multi-Language & Localization Options", "emoji": "", "content": "" },
+      { "details": "Data Security & Privacy Controls", "emoji": "", "content": "" }
+    ]
+  }
+
+],
+
+
+
   "consultancyHead": [
     {
       "num": "1",

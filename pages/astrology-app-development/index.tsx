@@ -16,6 +16,7 @@ import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 import Faq from "../Newcomponet/SectionCompoent/Faq"
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -392,7 +393,7 @@ export default function ClinicalApp(props: any) {
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
                   Custom AI-Powered Astrology App Development Solutions</h2>
                 <p>
-                  Comfygen specializes in building AI astrology apps to enhance prediction accuracy and user engagement. We offer intelligent, smart, interactive, and highly personalized astrology services. AI and machine learning are used in our custom astrology app development solutions to enhance user engagement, accuracy, and satisfaction.
+                 Comfygen specializes in building AI astrology apps to enhance prediction accuracy and user engagement. We offer intelligent, smart, interactive, and highly personalized astrology services. <a href='https://www.comfygen.com/ai-development' className="text-blue-600 font-semibold">AI and machine learning </a> are used in our custom <a href="https://www.comfygen.com/white-label-mobile-app-development" className="text-blue-600 font-semibold">astrology white label app development solutions</a> to enhance user engagement, accuracy, and satisfaction.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
@@ -417,6 +418,18 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+
+        <CallToAction
+          heading="Build an Astrology App That Shines Like the Stars!"
+          text="Get in touch with our expert astrology app development team. We specialize in crafting scalable, engaging, and prediction-driven apps tailored to your business goals."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}

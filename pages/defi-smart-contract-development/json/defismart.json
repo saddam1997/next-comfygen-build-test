@@ -63,6 +63,30 @@
       ]
     }
   ],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+      "title": "Great Wallet Application",
+      "description": "Great Wallet Application – the ultimate tool for secure and effortless financial management. Streamline payments, track expenses, and enjoy seamless transactions with advanced security and intuitive design. Empower your cashless lifestyle with confidence and control.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7Coin Web Wallet",
+      "description": "The M7Coin Web Wallet project is designed to revolutionize cryptocurrency management with a seamless and secure platform. Our expertise in blockchain development and intuitive UI/UX design ensures effortless storage, sending, and receiving of M7Coins. Built for a user-friendly experience, this wallet empowers individuals to navigate the dynamic world of digital currencies with confidence.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+      "title": "Aria Coin Cryptocurrency",
+      "description": "ARIA Currency redefines digital transactions with a secure, decentralized, and user-centric approach. Our expertise in blockchain development has helped create a platform that prioritizes security, accessibility, and efficiency. As pioneers in the space, we are shaping the future of global digital finance with trust and innovation.",
+      "link": "#"
+    }
+  ],
+
+
   "pageData": {
     "title": "Why Choose Comfygen as a DeFi Smart Contract Development Company?",
     "description": "Choose Comfygen as your trusted DeFi smart contract development company and experience secure, scalable, and customized services. Our expert team specializes in DeFi smart contract development services, delivering reliable contracts that streamline decentralized finance operations and provide a competitive edge. We ensure your contracts meet the highest standards of security and performance, setting your business up for long-term success in the DeFi ecosystem.",

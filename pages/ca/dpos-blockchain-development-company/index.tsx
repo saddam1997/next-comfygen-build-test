@@ -1,45 +1,24 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { IconCode, IconCoin, IconEscalator, IconEye, IconHierarchy, IconLink, IconPlug, IconSettings, IconShieldCheck, } from '@tabler/icons-react';
+import { IconHeart, } from '@tabler/icons-react';
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dpos.json";
-import Providers from "./components/Providers";
-import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../../components/AboutSection";
-import ServicesSec from "../../components/ServicesSec";
-import { IconCode, IconCoin,  IconEscalator, IconEye, IconHierarchy, IconLink, IconPlug, IconSettings, IconShieldCheck, } from '@tabler/icons-react';
-import {  IconHeart, } from '@tabler/icons-react';
-import SolutionSec from "../../components/SolutionSec";
-import InfoSectionRight from "../../components/InfoSectionRight";
-import PortfolioSec from "../../components/PortfolioSec";
-import TechStack from "../../components/TechStack";
-import Faq from "../../components/Faq";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import ProcessSec from "../../components/ProcessSec";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ContactFromCenter from "../../components/ContactFromCenter";
-import BlockchainNav from "../../componentsnew/blockchain-navbar";
+import BlockchainNav from "../../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../../Newcomponet/SectionCompoent/Solution";
+import InfoSection from "../../Newcomponet/SectionCompoent/InfoSection";
+import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../../Newcomponet/SectionCompoent/Features";
+import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
+import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
+import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
+import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
-
-const Header = dynamic(() => import("../../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// const ContactFromCenter = dynamic(
-//   () => import("../components/ContactFromCenter"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
 const Arena = [
   {
     num: "01",
@@ -204,52 +183,9 @@ const technologyData = [
   }
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/for-blockchain-developers.svg",
-      head: "For Blockchain Developers",
-      name: "We also create apps and frameworks for developers who want to specialize in blockchain development and use the technology in applications.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/img/dpos-apps-for-block-producers.svg",
-      head: "DPOS apps for Block producers",
-      name: "DPOS blockchain apps that help manage nodes and blockchain use are created for block producers.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/img/for-token-holders.svg",
-      head: "For token holders",
-      name: "For token holders who want to use blockchain apps for different purposes, we also create apps that help utilize the blockchain algorithms.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -336,31 +272,26 @@ export default function Ecommerce(props) {
         <meta name="og:latitude" content="26.912434°" />
         <meta name="og:longitude" content="75.787271°" />
       </Head>
-      {/* <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
-      </div> */}
-      <BlockchainNav/>
+
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
+        <HeroSectionForAllPages
+          heading="DPOS Blockchain Development Service"
+          ptag="Enhance data security and efficiency with Comfygen’s Delegated Proof of Stake (DPoS) blockchain development services. Designed to meet the needs of fast-growing businesses, our DPoS solutions provide robust scalability, precision, and security. Our expert team delivers seamless blockchain solutions for enterprise applications, ensuring optimal performance in a distributed environment. Trust Comfygen to safeguard sensitive data with cutting-edge DPoS technology."
+          li="Robust Data Security"
+          li1="Scalable Enterprise Solutions"
+          li2="Efficient Consensus Mechanism"
+          li3="Expert DPoS Development"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/dpos-blockchain-dev-hero-img.webp'
+        />
 
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dpos-blockchain-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="DPOS Blockchain Development Service"
-            ptag="Enhance data security and efficiency with Comfygen’s Delegated Proof of Stake (DPoS) blockchain development services. Designed to meet the needs of fast-growing businesses, our DPoS solutions provide robust scalability, precision, and security. Our expert team delivers seamless blockchain solutions for enterprise applications, ensuring optimal performance in a distributed environment. Trust Comfygen to safeguard sensitive data with cutting-edge DPoS technology."
-            li="Robust Data Security"
-            li1="Scalable Enterprise Solutions"
-            li2="Efficient Consensus Mechanism"
-            li3="Expert DPoS Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
         <AboutSection
           title="About Company"
           heading="Best DPoS Blockchain Development Company"
@@ -381,28 +312,45 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <SolutionSec
           heading="Our Proven Custom DPOS Blockchain Development Solutions"
           subheading="We understand that creating a custom Delegated Proof of Stake (DPOS) blockchain requires a careful approach and deep expertise. We prioritize scalability, security, and functionality with our custom approach. We follow proven solutions in DPOS blockchain development tailored to meet the diverse needs of business sectors."
           techData={technologyData}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Who will Benefit From our DPOS Blockchain Development Solutions?"
           description1="Our DPOS (Delegated Proof of Stake) blockchain development solutions are highly advantageous for various business entities within the enterprise and fintech sectors. Cryptocurrency exchanges can leverage DPOS for faster transaction processing and enhanced security, benefiting from its efficient consensus mechanism. In addition, blockchain startups seeking scalable and robust infrastructure can find our DPOS solution ideal for building decentralized applications (DApps) cost-effectively and quickly."
           description2="Enterprises exploring blockchain for supply chain management benefit from our DPOS's consensus solutions in tracking and verifying transactions across distributed networks. Furthermore, organizations looking to integrate blockchain into governance or voting systems need DPOS for its transparency and to prevent fraud. Overall, our DPOS blockchain solutions cater to a diverse range of businesses seeking advanced blockchain technology for improved efficiency and security in their operations."
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/what-advantages-does-blockchain-technology-have-to-offer.webp"
           link="/contact-us"
           linkText="Lets Discuss"
-        />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="DPOS Blockchain Development Solutions for Blockchain Service Providers"
-          description="We specialize in DPOS Blockchain Development and create DPOS blockchain apps for multiple purposes. Our development experts can help you create the following variations in DPOS apps."
+          imagePosition="right"
         />
 
-        <Providers />
-        
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="DPOS Blockchain Development Solutions for Blockchain Service Providers"
+            description="We specialize in DPOS Blockchain Development and create DPOS blockchain apps for multiple purposes. Our development experts can help you create the following variations in DPOS apps."
+          />
+        </section>
+
+        <Features
+          heading='Features in DPOS blockchain apps you should look for!'
+          description='Comfygen is a DPOS blockchain development company in the USA that specializes in Blockchain DPOS development for its clients. The development company can act as a trusted partner in the most advanced development project for DPOS blockchain apps. We suggest the best features for some advanced functions in a blockchain-enabled application.'
+          featuresData={JSON_DATA.featuresData}
+          grid='3'
+        />
+
+
+
+
+
         <TechStack
           title="Our Technology Stack for Developing DPOS Blockchain Application"
           description="Our delegated proof of stake blockchain development firm meets all the expectations put on it for the development of the new DPOS blockchain app. With different and advanced software development technologies and languages, we create DPOS blockchain apps that are used by professionals and industry stakeholders. We rediscover software development for DPOS blockchain applications with an updated technology stack that integrates the most important features into the DPOS blockchain app."
@@ -413,7 +361,7 @@ export default function Ecommerce(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Working Methodology for Implementing DPOS Blockchain Application Development Solutions</h2>
               <p className="text-base font-normal mt-2">
-              Our DPOS blockchain development services are offered by trained professionals, and we offer them through a streamlined and reliable methodology. Our methodology has definite steps and is well-managed by our professionals to create the best DPOS blockchain application for your company.
+                Our DPOS blockchain development services are offered by trained professionals, and we offer them through a streamlined and reliable methodology. Our methodology has definite steps and is well-managed by our professionals to create the best DPOS blockchain application for your company.
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
@@ -431,10 +379,10 @@ export default function Ecommerce(props) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                Make the most of our Flexible Engagement Models
+                  Make the most of our Flexible Engagement Models
                 </h2>
                 <p>
-                As a DPOS blockchain development firm, we always prioritize our clients and engage with them flexibly so that there is a factor of mutual benefit in the development process. We consult with our clients and help them choose the best engagement model for their business.</p>
+                  As a DPOS blockchain development firm, we always prioritize our clients and engage with them flexibly so that there is a factor of mutual benefit in the development process. We consult with our clients and help them choose the best engagement model for their business.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
                 {JSON_DATA.FutureDriven.map((elem, index) => {
@@ -454,11 +402,11 @@ export default function Ecommerce(props) {
         </section>
 
         <WhyChoose
-            title={JSON_DATA.pageData.title}
-            description={JSON_DATA.pageData.description}
-            mainCardData={JSON_DATA.pageData.mainCardData}
-            gridData={JSON_DATA.pageData.gridData}
-          />
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
         <HireDeveloper
           heading="Hire Our DPOS blockchain developers for your DPOS Blockchain projects"
           text="As a DPOS blockchain development company in India, we offer effective solutions for the development of DPOS systems for mobile devices and desktops. DPOS is a complex and advanced technology that has multiple aspects of functionality and security. To leverage the technology positively for your company, you need to hire a team that is well-versed in the current scenario around blockchain usage and can create the most useful and feature-rich DPOS Blockchain app to help achieve your desired objectives. Comfygen has a dedicated team for DPOS blockchain development, and we are ready to help you create an app that manages secure transactions and your company's internal workflow."
@@ -474,12 +422,17 @@ export default function Ecommerce(props) {
             "We are a passionate team of developers who follow development trends and deliver on the most notable technology improvements."
           ]}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Is there any other information you need about our DPOS blockchain app development services?"
           description1="We are here to address your queries and quench your curiosity related to the DPOS blockchain development field. Consult with our experts and discuss your queries today to learn about our processes and approach in detail. Hire our team now and maximize the potential blockchain technology has for your company with the latest developments."
           imageSrc="https://www.comfygen.com/img/what-advantages-does-blockchain-technology-have-to-offer.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
+          imagePosition="right"
         />
         <Faq
           faqData={JSON_DATA.Frequently}

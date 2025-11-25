@@ -1,35 +1,23 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./delivery-app-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import AppCard from "../componentsnew/AppCard";
-import CallToAction from "../components/CallToAction";
-import Features from "./components/Features";
-import DeliverySection from "../components/DeliverySection";
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import AppCard from "../Newcomponet/comman/AppCard";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-
-
-import Header from "../components/Header";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Slider from "../components/Slider";
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 
 export default function ClinicalApp(props: any) {
@@ -292,10 +280,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
       <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
           <HeroSectionForAllPages
@@ -331,8 +316,6 @@ export default function ClinicalApp(props: any) {
           ]}
         />
 
-
-
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -349,7 +332,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <AppCard
           title="Popular Alcohol Delivery Apps We Take Inspiration From"
@@ -358,23 +341,24 @@ export default function ClinicalApp(props: any) {
           openModal={openModal}
         />
 
-
-
-
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our On-Demand Liquor Delivery App Development Portfolio"
             description="At Comfygen Technologies, we’re proud to showcase some of our successful alcohol delivery app development projects that help liquor businesses digitize sales, streamline operations, and expand customer reach. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are built to make a real business impact."
           />
         </section>
 
-   
+        <div className="py-8">
+          <Features
+            heading="We Develop Alcohol Delivery Apps With Advanced Panel Features"
+            description=" As a leading on demand liquor delivery app development company, Comfygen builds feature-rich alcohol delivery apps that deliver seamless experiences for customers, liquor store owners, delivery partners, and administrators."
+            featuresData={JSON_DATA.featuresData}
+            grid={4} />
+        </div>
 
-        <section>
-          <Features />
-        </section>
+
 
         <CallToAction
           heading="Ready to Launch Your Alcohol Delivery App?"
@@ -445,7 +429,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-        <NewTeckStack
+        <TeckStack
           title="Technology Stack We Use in Wine on-Demand App Development"
           description="As a top alcohol delivery mobile app development company, we use advanced technologies to build result-oriented alcohol delivery app development solutions. Our tech stack make sure faster performance, seamless integration, and long-term growth for your liquor business."
         />
@@ -485,5 +469,20 @@ export default function ClinicalApp(props: any) {
       </div>
     </>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
 }
 

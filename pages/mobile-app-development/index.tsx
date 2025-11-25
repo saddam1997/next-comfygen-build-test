@@ -39,6 +39,7 @@ import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 import Faq from "../Newcomponet/SectionCompoent/Faq";
+import Milestones from "../Newcomponet/comman/Milestones";
 
 
 const BreadcrumbSchema = {
@@ -303,23 +304,23 @@ export default function Mobile(props: any) {
   const technologyData = [
     {
       img: <IconCode stroke={1.5} className="w-12 h-12" />,
-      title: "Patient and Hospital Apps",
-      desc: "As an affordable custom mobile app development company in India. We provide <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/healthcare-app-development' >healthcare app development services</a> for medical, including doctor appointment scheduling, access to patient records, and increased telemedicine app development services.",
+      title: "Healthcare Mobile App Development",
+      desc: "As an affordable custom mobile app development company in India. We provide <a href='https://www.comfygen.com/healthcare-app-development' class='text-blue-600 font-semibold'>healthcare app development services</a> for medical, including doctor appointment scheduling, access to patient records, and increased telemedicine app development services.",
     },
     {
       img: <IconCashBanknote stroke={1.5} className="w-12 h-12" />,
-      title: "Mobile Banking, Billing Apps, Wallets",
-      desc: "We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-banking-app-development' >develop a mobile banking app</a> to provide secure and efficient financial transactions. Also, simplify payment processing, enhance the user experience, and provide real-time transaction tracking, making financial management hassle-free for users.",
+      title: "Mobile Banking App Development",
+      desc: "We <a href='https://www.comfygen.com/mobile-banking-app-development' class='text-blue-600 font-semibold'>develop a mobile banking app</a> to provide secure and efficient financial transactions. Also, simplify payment processing, enhance the user experience, and provide real-time transaction tracking, making financial management hassle-free for users.",
     },
     {
       img: <IconBurger stroke={1.5} className="w-12 h-12" />,
-      title: "Food Ordering & Delivery Apps",
-      desc: "As a top mobile application development firm in Jaipur, India. We provide  <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >food delivery app development solutions</a>. Develop a food delivery app with us like Swiggy, Zomato, or Uber Eats and boost your mobile app business.",
+      title: "Food Delivery App Development",
+      desc: "As a top mobile application development firm in Jaipur, India. We provide <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery app development solutions</a>. Develop a food delivery app with us like Swiggy, Zomato, or Uber Eats and boost your mobile app business.",
     },
     {
       img: <IconNews stroke={1.5} className="w-12 h-12" />,
       title: "News & Media Streaming Apps",
-      desc: "Stay informed with <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >custom news application development</a> that provides real-time updates, articles, and multimedia content. News applications provide a personalized news experience that makes sure users receive relevant information at their fingertips.",
+      desc: "Stay informed with <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>custom news application development</a> that provides real-time updates, articles, and multimedia content. News applications provide a personalized news experience that makes sure users receive relevant information at their fingertips.",
     },
     {
       img: <IconMessage stroke={1.5} className="w-12 h-12" />,
@@ -329,12 +330,12 @@ export default function Mobile(props: any) {
     {
       img: <IconBook stroke={1.5} className="w-12 h-12" />,
       title: "E-learning & Educational Apps",
-      desc: "Our mobile application development company specializes in <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-learning-app-development' >e-learning app development</a> for mobile devices. Smarter and more connected learning is possible with education apps. Mobile applications will play a greater role in the education sector as remote learning and personalized learning become more prevalent.",
+      desc: "Our mobile application development company provides interactive <a href='https://www.comfygen.com/e-learning-app-development' class='text-blue-600 font-semibold'>e-learning app development</a> with video classes, live sessions, assessments, and progress tracking to support modern digital education and remote learning.",
     },
     {
       img: <IconShoppingBag stroke={1.5} className="w-12 h-12" />,
       title: "eCommerce & Shopping Apps",
-      desc: "We are a top-rated mobile app development company in Jaipur, India. Transforms user market experience with custom eCommerce development that provides a user-friendly interface, secure payment gateways, and advanced inventory management.",
+      desc: "We are a top-rated mobile app development company in Jaipur, India. Transforms user market experience with <a href='https://www.comfygen.com/ecommerce' class='text-blue-600 font-semibold'>custom eCommerce development</a> that provides a user-friendly interface, secure payment gateways, and advanced inventory management.",
     },
     {
       img: <IconTicket stroke={1.5} className="w-12 h-12" />,
@@ -344,18 +345,38 @@ export default function Mobile(props: any) {
     {
       img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
       title: "Investment & Trading Apps",
-      desc: "We are experts in developing custom investment mobile applications. It helps users manage their portfolios, track market trends, and make informed decisions.",
+      desc: "We <a href='https://www.comfygen.com/stock-trading-app-development' class='text-blue-600 font-semibold'>build advanced trading apps</a> that offer portfolio management, live market insights, analytics, and secure transactions to support smart financial decision-making.",
     },
     {
       img: <IconHeart stroke={1.5} className="w-12 h-12" />,
       title: "Dating & Social Networking Apps",
-      desc: "Develop a custom dating app and social apps with Comfygen, the best dating mobile application development company in Jaipur, India. We provide custom <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/how-to-build-a-dating-app-like-tinder/' >dating apps like Tinder</a>, Bumble, and Matchmaking apps that facilitate meaningful connections.",
+      desc: "Develop a custom dating app and social apps with Comfygen, the best dating mobile application development company in Jaipur, India. We provide custom <a href='https://www.comfygen.com/blog/how-to-build-a-dating-app-like-tinder/' class='text-blue-600 font-semibold'>dating apps like Tinder</a>, Bumble, and Matchmaking apps that facilitate meaningful connections",
     },
     {
       img: <IconShield stroke={1.5} className="w-12 h-12" />,
       title: "Insurance & Claims Apps",
-      desc: "As an affordable mobile app development company in India. We provide <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/insurance-app-development' >Insurance app development solutions</a>. Build Insurance applications to streamline policy management, claim processing, and customer service.",
+      desc: "We provide <a href='https://www.comfygen.com/insurance-app-development' class='text-blue-600 font-semibold'>insurance app development solutions</a> to simplify policy management, claim submissions, tracking, and customer support for improved digital service delivery.",
     },
+     {
+      img: <IconShield stroke={1.5} className="w-12 h-12" />,
+      title: "Instant Delivery App Development",
+      desc: "We <a href='https://www.comfygen.com/blog/build-quick-commerce-app-like-blinkit-zepto-instamart/' class='text-blue-600 font-semibold'>build instant delivery apps like Blinkit</a> with live GPS tracking, automated dispatch, quick checkout, and real-time order updates to deliver items faster and improve customer satisfaction for hyperlocal delivery businesses.",
+    },
+     {
+      img: <IconShield stroke={1.5} className="w-12 h-12" />,
+      title: "Alcohol Delivery App Solutions",
+      desc: "Develop legal and secure alcohol delivery apps with age verification, digital catalog, in-app offers, and real-time tracking. Our on-demand app development company in Jaipur enables smooth doorstep delivery experiences.",
+    },
+    {
+      img: <IconShield stroke={1.5} className="w-12 h-12" />,
+      title: "Home Services App Solution",
+      desc: "We provide a <a href='https://www.comfygen.com/home-service-app-development' class='text-blue-600 font-semibold'>home services app development</a> with scheduling, service provider profiles, secure payments, reviews, and real-time booking management to simplify home services for users and service professionals.",
+    },
+    {
+      img: <IconShield stroke={1.5} className="w-12 h-12" />,
+      title: "Taxi Booking Mobile App",
+      desc: "Build a ride-hailing <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking app</a> like Uber and Ola with GPS navigation, fare calculation, driver tracking, wallet payments, and instant ride booking for reliable on-demand transportation services.",
+    }
   ];
 
   return (
@@ -540,11 +561,11 @@ export default function Mobile(props: any) {
         </LazyLoad>
       </div>
 
-      <div className="overflow-hidden lg:pt-[10px]">
+      <div className="overflow-hidden lg:pt-[50px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top Mobile App Development Company in Jaipur, India"
-            ptag="Comfygen is a trusted mobile app development company in Jaipur, India, delivering custom Android, iOS, and cross-platform apps for startups and enterprises. Our expert mobile app developers build scalable, secure, and user-friendly mobile applications that boost engagement and business growth. We turn your ideas into high-performing digital products from start to finish."
+            heading="Leading Mobile App Development Company in Jaipur"
+            ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app solutions that enhance customer experience and drive business success. We turn your ideas into high-quality apps with seamless functionality and beautiful design."
             li=""
             li1=""
             li2=""
@@ -558,14 +579,15 @@ export default function Mobile(props: any) {
             closeModal={closeModal}
           />
         </div>
-        <Sponser />
+        {/* <Sponser /> */}
+        <Milestones/>
 
         <AboutSection
           title=""
-          heading="We Develop Mobile Applications for Every Platform"
-          description1="Comfygen Technologies is a top-notch custom mobile app development company based in Jaipur, India, specializing in delivering secure, scalable, and impactful mobile app solutions across various industries, including Healthcare, Blockchain, Education, On-Demand mobile application development services, Gaming, and Entertainment."
-          description2="With a dedicated team of mobile app developers in Jaipur, we provide end-to-end app development services, utilizing the latest technologies to build innovative, intuitive, and high-performing mobile apps. As a cost-effective mobile app development company in India, we offer unmatched quality with timely delivery through a streamlined process."
-          description3="With over 250+ successful projects delivered, we partner with startups, small businesses, and enterprise mobile app development companies. Whether you're looking for AI-based mobile app development services, a top-tier user interface design, or a gaming app, our team has the expertise to transform your mobile app vision into reality."
+          heading="Future Ready Mobile App Development Solutions for Global Businesses"
+          description1="Comfygen Technologies is a trusted mobile app development company in Jaipur, India, delivering high-performing mobile apps for startups and enterprises. Based in Jaipur, we build feature-rich Android, iOS, and cross-platform apps for Healthcare, Fintech, Blockchain, Education, Gaming, On-Demand, and Entertainment industries."
+          description2="With a skilled team of mobile app developers in Jaipur and 250+ successful projects, we offer end-to-end app development services using the latest technologies. Whether you need AI-powered apps, intuitive UI UX design, or high-quality gaming app development, we bring your idea to life with innovation and excellence."
+          description3=""
           imageSrc="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -574,9 +596,10 @@ export default function Mobile(props: any) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Take your Business to the next level with Our Cutting-Edge Custom Mobile App Development Services
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Professional Mobile App Development Services in Jaipur, India
+
               </h2>
-              <p className="text-base text-center font-normal">We offer a full suite of custom mobile app development services tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality mobile application development solutions for every platform.</p>
+              <p className="text-base text-center font-normal">We offer a full suite of custom mobile app development services in Jaipur tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality mobile application solutions for every platform.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -585,8 +608,8 @@ export default function Mobile(props: any) {
         </section>
 
         <Solution
-          heading="Get More Customers With Comfygen’s Custom Mobile App Development"
-          subheading="The applications we develop are powerful and user-friendly, tailored to the needs of your industry. Whether you're a startup or an established brand, our custom mobile app development solutions help you attract more users, boost engagement, and grow your business."
+          heading="Grow Your Business with Comfygen’s Custom Mobile App Development Solutions"
+          subheading="We offer a full suite of custom mobile app development services in Jaipur tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality application development solutions for every platform."
           techData={technologyData}
         />
 

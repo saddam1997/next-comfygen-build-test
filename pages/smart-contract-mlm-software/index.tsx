@@ -3,21 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractmlm.json";
 import Image from "next/image";
-
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-// import BlogSection from "../components/BlogSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import CardItem from "../components/CardItem";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconNetwork,
   IconCash,
@@ -29,20 +14,65 @@ import {
   IconDeviceMobile,
   IconLanguage,
 } from "@tabler/icons-react";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const InfoSection = dynamic(() => import("../Newcomponet/SectionCompoent/InfoSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CardItem = dynamic(() => import("../Newcomponet/SectionCompoent/CardItem"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
 });
 
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
 const Arena = [
   {
     num: "1",
@@ -164,49 +194,7 @@ export default function Ecommerce(props) {
   };
 
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/decentralised-mlm.webp",
-        head: "Decentralized MLM",
-        name: "Decentralized MLM Web: Revolutionizing network marketing with blockchain-powered transparency, fairness, and rewards. Empowering communities and redefining success in the digital age.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-        head: "M7Coin Web Wallet",
-        name: "user-friendly platform. Easily store, send, and receive M7Coins, ensuring seamless transactions in the evolving digital economy.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-        head: "Aria Coin Cryptocurrency",
-        name: "ARIA Currency: Pioneering the future of digital transactions with security, accessibility, and efficiency. Empowering users with a decentralized and seamless financial experience.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
+
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -394,10 +382,10 @@ export default function Ecommerce(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-      
+
       </Head>
 
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
 
@@ -454,7 +442,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4">
@@ -508,9 +496,12 @@ export default function Ecommerce(props) {
           techData={technologyData}
         />
 
-        <InfoSectionRight
+        <InfoSection
           heading="Key Benefits of a Smart Contract MLM Software Development"
           description1="Smart Contract MLM Software offers a decentralized, secure, and automated solution that transforms how MLM platforms operate. By leveraging blockchain, it eliminates third-party control, increases trust, and ensures faster, tamper-proof transactions."
+          description2=''
+          description3=''
+          dec=''
           points={[
             "A decentralized structure eliminates the need for admin control",
             "Transparent operations with publicly verifiable blockchain records",
@@ -525,6 +516,7 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/key-benefits-of-a-smart-contract.png"
           link="/contact-us"
           linkText="LET'S CONNECT "
+          imagePosition="right"
         />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -565,9 +557,12 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <InfoSectionLeft
+        <InfoSection
           heading="White Label Smart Contract MLM Software"
           description1="Looking to launch your own MLM platform instantly without building from scratch? Our White Label Smart Contract MLM Software offers a ready-made, customizable solution designed to help businesses enter the crypto MLM space faster and more efficiently. Built on decentralized blockchain architecture, it ensures transparency, automation, and security — tailored under your brand name."
+          description2=''
+          description3=''
+          dec=''
           points={[
             "Faster Time to Market - Get your platform up and running in days, not months.",
             "Custom Branding Options - Fully rebrand the platform with your logo, domain, colors, and UI elements.",
@@ -604,11 +599,16 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={JSON_DATA.Processs} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Smart Contract MLM Based Portfolio"
-          description="Showcasing our expertise through innovative design and development projects. A testament to our commitment to creativity, excellence, and impactful solutions."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Smart Contract MLM Based Portfolio"
+            description="Showcasing our expertise through innovative design and development projects. A testament to our commitment to creativity, excellence, and impactful solutions."
+          />
+        </section>
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

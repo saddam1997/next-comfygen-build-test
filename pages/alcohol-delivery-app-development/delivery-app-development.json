@@ -99,6 +99,75 @@
 
 
 
+"featuresData":[
+  {
+    "id": 1,
+    "title": "User App Features",
+    "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/User-App-Features-Panel.webp",
+    "additionalDetails": [
+      { "details": "Quick Sign-Up & Login", "emoji": "", "content": "" },
+      { "details": "Browse Liquor Catalog", "emoji": "", "content": "" },
+      { "details": "Secure Online Payments", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking", "emoji": "", "content": "" },
+      { "details": "Personalized Offers & Deals", "emoji": "", "content": "" },
+      { "details": "Age & ID Verification", "emoji": "", "content": "" },
+      { "details": "Easy Reorders & Subscriptions", "emoji": "", "content": "" },
+      { "details": "Push Notifications", "emoji": "", "content": "" }
+    ]
+
+  },
+  {
+    "id": 2,
+    "title": "Store/Partner App Features",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/Partner-App-Features-Panel.webp",
+    "additionalDetails": [
+      { "details": "Inventory Management", "emoji": "", "content": "" },
+      { "details": "Product Listing & Pricing", "emoji": "", "content": "" },
+      { "details": "Order & Delivery Control", "emoji": "", "content": "" },
+      { "details": "Promotions & Discounts", "emoji": "", "content": "" },
+      { "details": "Sales & Revenue Reports", "emoji": "", "content": "" },
+      { "details": "Customer Review Management", "emoji": "", "content": "" },
+      { "details": "Multi-Store Control", "emoji": "", "content": "" },
+      { "details": "Performance Analytics", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Driver App Features",
+    "img": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/Driver-App-Features-Panel.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Easy Registration", "emoji": "", "content": "" },
+      { "details": "GPS Route Optimization", "emoji": "", "content": "" },
+      { "details": "Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "In-App Chat & Call", "emoji": "", "content": "" },
+      { "details": "Earnings Dashboard", "emoji": "", "content": "" },
+      { "details": "Delivery History Records", "emoji": "", "content": "" },
+      { "details": "Instant Payouts", "emoji": "", "content": "" },
+      { "details": "New Order Alerts", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Admin Panel Features",
+    "img": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/Admin-Panel-Features-Panel.webp",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Centralized Dashboard", "emoji": "", "content": "" },
+      { "details": "Manage Users & Stores", "emoji": "", "content": "" },
+      { "details": "Track Orders & Status", "emoji": "", "content": "" },
+      { "details": "Revenue & Commission Control", "emoji": "", "content": "" },
+      { "details": "Age Verification Tools", "emoji": "", "content": "" },
+      { "details": "Promotions & CMS Management", "emoji": "", "content": "" },
+      { "details": "Multi-Region Store Control", "emoji": "", "content": "" },
+      { "details": "Advanced Reports & Analytics", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
 
 
 

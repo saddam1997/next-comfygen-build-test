@@ -1,31 +1,29 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import JSON_DATA from "./json/pow.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
 import { IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode, IconSettings, } from '@tabler/icons-react';
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import JSON_DATA from "./json/pow.json";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
+
+
+
+
+
+
+
 
 const Arena = [
   {
@@ -217,53 +215,7 @@ export default function Ecommerce(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-        head: "NASDAC Crypto Coin",
-        based: "Blockchain-based Cryptocoin Development",
-        name: "NASDAC Crypto Coin is a next-generation cryptocurrency built on its dedicated blockchain—far beyond just a token. Engineered with an advanced ‘Four Square’ architecture, it optimizes speed, mining efficiency, seamless integration, and predictable growth. Designed for business, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain ecosystem.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/croston-portfolio-image.webp",
-        head: "Croston ",
-        based: "Decentralized Blockchain-based Coin Development",
-        name: "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring long-term stability and value appreciation. Unlike fiat currencies, it harnesses blockchain technology to provide security, transparency, and decentralized control. Croston facilitates secure transactions and controlled coin issuance while offering seamless purchasing options via credit card, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and fuels a decentralized marketplace with standardized blockchain development solutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        head: "YatriPay",
-        based: "Peer-to-Peer Blockchain Development",
-        name: "YatriPay revolutionizes digital transactions with instant, zero-fee global payments through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). Offering seamless peer-to-peer transfers, YatriPay ensures security, efficiency, and accessibility. With the YatriPay Mobile App, onboarding is effortless, bringing borderless financial transactions to users worldwide.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
 
-    ],
-  };
 
 
   const jsonLdData = [
@@ -621,25 +573,24 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-
       <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center h-full  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="POW Blockchain Development Company"
-            ptag="Comfygen offers expert POW Blockchain development services, helping businesses leverage the power of decentralized technology. Our solutions support web3 applications like dApps, NFTs, DeFi, DAOs, and web3 games, ensuring immutability, cryptographic security, and transparency. By eliminating intermediaries, our POW blockchain technology ensures efficiency and scalability. Trust us to create secure, interoperable blockchain solutions that help you stay ahead in the rapidly evolving web3 landscape."
-            li="Decentralized Blockchain Solutions"
-            li1="Secure, Scalable Web3 Apps"
-            li2="Immutability and Transparency"
-            li3="Efficient Blockchain Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="POW Blockchain Development Company"
+          ptag="Comfygen offers expert POW Blockchain development services, helping businesses leverage the power of decentralized technology. Our solutions support web3 applications like dApps, NFTs, DeFi, DAOs, and web3 games, ensuring immutability, cryptographic security, and transparency. By eliminating intermediaries, our POW blockchain technology ensures efficiency and scalability. Trust us to create secure, interoperable blockchain solutions that help you stay ahead in the rapidly evolving web3 landscape."
+          li="Decentralized Blockchain Solutions"
+          li1="Secure, Scalable Web3 Apps"
+          li2="Immutability and Transparency"
+          li3="Efficient Blockchain Development"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="How Do POW Blockchain Platforms Empower Digital Trust Solutions?"
@@ -650,13 +601,22 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <InfoSectionRight
+
+
+        <InfoSection
           heading="What is POW Blockchain?"
           description1="Before you make the most of our POW blockchain development service, you must clear your doubts regarding POW blockchains. POW is the abbreviation for Proof of Work consensus mechanism, which is an essential trait of every blockchain network. As the name implies, POW blockchain features a group of miners who are responsible for adding valid blocks of transactions to the chain. The concept of POW or Proof of Work gained attention as the preferred consensus mechanism for Bitcoin. Miners have to generate the hash which matches the goal hash of the current block. While the process of finding the hash is challenging due to the need for an extensive amount of computing resources and efforts of miners, it offers a straightforward approach for verifying transactions. Most important of all, the mining process poses formidable challenges to manipulation of the system."
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/what-is-pow-blockchain.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
+
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -668,7 +628,9 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
+
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1] ">
           <div className="w-11/12 mx-auto space-y-10 2xl:w-9/12 xl:w-5/6">
             <div className="w-full flex flex-col justify-center items-center text-center space-y-2">
@@ -708,18 +670,21 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
         <SolutionSec
           heading="Why Should You Develop POW Blockchains?"
           subheading="POW or Proof of Work blockchains are often associated with criticisms due to transaction speed and lack of interoperability. However, times have changed, and new trends empower POW blockchains with multiple value advantages."
           techData={technologyData}
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our POW Blockchain Based Portfolio"
-          description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
-        />
 
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our POW Blockchain Based Portfolio"
+            description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
+          />
+        </section>
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -727,6 +692,7 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
+
         <CallToAction
           heading="Let’s hear what you have to say?"
           text="Get in touch with us and discuss your needs and requirements with our experts."
@@ -745,10 +711,10 @@ export default function Ecommerce(props) {
                 <p>We at Comfygen strive for excellence in POW blockchain development services with the additional benefit of some crucial traits.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-2">
-                {JSON_DATA.FutureDriven.map((elem) => {
+                {JSON_DATA.FutureDriven.map((elem, index) => {
                   const { title, desc } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
+                    <div key={index} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
                       <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
                       <p className=" text-base font-normal mt-2">
                         {desc}
@@ -764,8 +730,22 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );
 }
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+

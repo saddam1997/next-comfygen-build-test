@@ -2,26 +2,18 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/defismart.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import WhyChoosee from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import NewSection from "../Newcomponet/comman/NewSection"
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Process = [
   {
     title: " Requirements Analysis",
@@ -124,53 +116,7 @@ export default function MultiChain(props) {
       }
     ]
   };
-  const techDataForPage1 = {
-    All: [
 
-
-      {
-        img: "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-        head: "Great Wallet Application",
-        name: "Great Wallet Application – the ultimate tool for secure and effortless financial management. Streamline payments, track expenses, and enjoy seamless transactions with advanced security and intuitive design. Empower your cashless lifestyle with confidence and control.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-        head: "M7Coin Web Wallet",
-        name: "The M7Coin Web Wallet project is designed to revolutionize cryptocurrency management with a seamless and secure platform. Our expertise in blockchain development and intuitive UI/UX design ensures effortless storage, sending, and receiving of M7Coins. Built for a user-friendly experience, this wallet empowers individuals to navigate the dynamic world of digital currencies with confidence.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-        head: "Aria Coin Cryptocurrency",
-        name: "ARIA Currency redefines digital transactions with a secure, decentralized, and user-centric approach. Our expertise in blockchain development has helped create a platform that prioritizes security, accessibility, and efficiency. As pioneers in the space, we are shaping the future of global digital finance with trust and innovation.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-  
-    
-    ],
-  };
   return (
     <>
       <Head>
@@ -225,24 +171,24 @@ export default function MultiChain(props) {
         />
       </Head>
 
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[115px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/defi-smart-contract-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="DeFi Smart Contract Development services"
-            ptag="Comfygen is a leading DeFi Smart Contract Development company in India & USA, offering cutting-edge solutions that revolutionize traditional business processes. Our expert team helps you eliminate cumbersome paperwork by adopting faster, more transparent, and more secure methods of conducting business. Transform your operations with our innovative DeFi smart contract development services and trusted DeFi smart contract auditing services."
-            li="Cutting-Edge Smart Contracts"
-            li1="Faster, Transparent Solutions"
-            li2="Secure, Efficient Transactions"
-            li3="Expertise in DeFi Innovation"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="DeFi Smart Contract Development services"
+          ptag="Comfygen is a leading DeFi Smart Contract Development company in India & USA, offering cutting-edge solutions that revolutionize traditional business processes. Our expert team helps you eliminate cumbersome paperwork by adopting faster, more transparent, and more secure methods of conducting business. Transform your operations with our innovative DeFi smart contract development services and trusted DeFi smart contract auditing services."
+          li="Cutting-Edge Smart Contracts"
+          li1="Faster, Transparent Solutions"
+          li2="Secure, Efficient Transactions"
+          li3="Expertise in DeFi Innovation"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/defi-smart-contract-dev-hero-img.webp'
+        />
+
         <NewSection NewSection={JSON_DATA.NewSections} />
 
         <AboutSection
@@ -254,7 +200,8 @@ export default function MultiChain(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -303,11 +250,20 @@ export default function MultiChain(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our DeFi Smart Contract Based Portfolio"
-          description="Fueling innovation and excellence through visionary design and development. A reflection of our dedication to creativity and craftsmanship."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our DeFi Smart Contract Based Portfolio"
+            description="Fueling innovation and excellence through visionary design and development. A reflection of our dedication to creativity and craftsmanship."
+          />
+        </section>
+
+
+
+
+
         <WhyChoosee
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

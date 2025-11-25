@@ -662,10 +662,16 @@
   ] ,
 
   "servicesData": [
+    {
+    "title": "Custom Mobile App Development",
+    "subtitle": "",
+    "description": "Comfygen Technologies is a trusted application development agency in Jaipur offering custom app solutions designed to match your unique business goals. Our expert team builds secure and scalable mobile applications that deliver top performance and exceptional user experiences.",
+    "features": []
+  },
   {
     "title": "Android App Development",
     "subtitle": "",
-    "description": "As a Top Android mobile app development company in Jaipur. We offer the best <a class='font-semibold underline' href='https://www.comfygen.com/android-app-development' >Android app development services</a> to create responsive and secure mobile apps customized to smartphones, and wearable devices.",
+    "description": "As a leading <a href='https://www.comfygen.com/android-app-development' class='underline font-semibold'>Android app development company</a> in Jaipur, we create high-performing, user-friendly, and feature-rich Android apps for startups and enterprises. Our experienced app developers in Jaipur use the latest technologies to build apps that boost engagement and business growth.",
     "features": [
       "Custom Android apps for smartphones, and wearables.",
       "Fast, secure apps that work on any Android device.",
@@ -675,7 +681,7 @@
   {
     "title": "iOS App Development",
     "subtitle": "",
-    "description": "We are an affordable iOS application development company in Jaipur, India. We specialize in creating high-performance custom iOS apps that seamlessly integrate with Apple’s ecosystem. From concept to deployment, our professional <a class='font-semibold underline' href='https://www.comfygen.com/ios-app-development' >iOS app development services</a> focus on building user-friendly, scalable, and feature-rich apps customized to your business needs.",
+    "description": "We design premium iPhone and iPad apps with smooth functionality and stunning UI. As a professional <a href='https://www.comfygen.com/ios-app-development' class='underline font-semibold'>iOS mobile app development company</a> in Jaipur, we focus on building secure and high-quality iOS applications for global businesses.",
     "features": [
       "Custom-built apps for iPhone, iPad, and Apple Watch",
       "Intuitive user interface and smooth navigation",
@@ -686,7 +692,7 @@
   {
     "title": "Cross-Platform App Development",
     "subtitle": "",
-    "description": "Our cross-platform app development services empower businesses to launch apps on multiple platforms using a unified codebase. We deliver apps with seamless functionality, consistent UI, and reduced development time.",
+    "description": "We develop efficient cross-platform apps using Flutter and React Native that run perfectly on Android and iOS. Our cost-effective app development firm ensures faster delivery and a seamless user experience across devices.",
     "features": [
       "One app for Android, iOS, and web",
       "Consistent experience across platforms",
@@ -697,7 +703,7 @@
   {
     "title": "React Native App Development",
     "subtitle": "",
-    "description": "As a leading <a class='font-semibold underline' href='https://www.comfygen.com/react-native-development' >React Native app development</a> company in Jaipur, we build high-quality mobile apps using a single codebase for both Android and iOS. Our React Native solutions offer native performance, faster development, and lower costs.",
+    "description": "As a leading <a href='https://www.comfygen.com/react-native-development' class='underline font-semibold'>React Native app development company</a> in Jaipur, we build high-quality mobile apps using a single codebase for both Android and iOS. Our React Native solutions offer native performance, faster development, and lower costs.",
     "features": [
       "Native-like experience on Android & iOS",
       "Single codebase, faster time-to-market",
@@ -708,7 +714,7 @@
   {
     "title": "Flutter App Development",
     "subtitle": "",
-    "description": "We offer top-rated <a class='font-semibold underline' href='https://www.comfygen.com/flutter-development-company' >Flutter app development services</a> in Jaipur to create expressive, flexible, and high-performance apps. As a Flutter app development company in Jaipur, we build apps with beautiful UI and smooth UX across all platforms.",
+    "description": "We offer top-rated Flutter app development services in Jaipur to create expressive, flexible, and high-performance apps. As a Flutter app development company in Jaipur, we build apps with beautiful UI and smooth UX across all platforms.",
     "features": [
       "Pixel-perfect UI with Material Design",
       "Fast development with hot reload",
@@ -730,7 +736,7 @@
   {
     "title": "On-Demand Mobile App Development",
     "subtitle": "",
-    "description": "Whether it's for food delivery, ride-hailing, or healthcare, our team builds feature-packed on-demand apps with real-time tracking, secure payment gateways, and seamless user interfaces. Partner with us, a top on-demand mobile app development company in Jaipur to revolutionize your business with convenience-driven mobile app solutions.",
+    "description": "We build high-impact on-demand apps for industries like food delivery, healthcare, logistics, travel, and more. As a top app development company in Jaipur, we transform business ideas into scalable digital platforms.",
     "features": [
       "Real-Time Features",
       "Secure Payment Gateways",
@@ -741,12 +747,34 @@
   {
     "title": "Hybrid Mobile App Development",
     "subtitle": "",
-    "description": "We develop lightweight and responsive <a class='font-semibold underline' href='https://www.comfygen.com/hybrid-mobile-app-development' >hybrid</a> mobile apps using technologies like Ionic and PhoneGap. These apps run smoothly across devices and platforms, reducing cost and increasing reach.",
+    "description": "We deliver high-performance <a href='https://www.comfygen.com/hybrid-mobile-app-development' class='underline font-semibold'>hybrid mobile app development solutions<a/> using Flutter and React Native to run smoothly on both Android and iOS platforms. As a leading mobile app development company in Jaipur, we build hybrid apps that offer a native-like experience and faster time to market for startups and enterprises.",
     "features": [
       "Unified app for Android & iOS",
       "Web + mobile integration",
       "Easy maintenance and updates",
       "Budget-friendly and scalable"
+    ]
+  },
+  {
+    "title": "Enterprise App Development",
+    "subtitle": "",
+    "description": "Comfygen delivers powerful enterprise mobility solutions to optimize operations and enhance productivity. Our mobile app development services in India support businesses of all sizes with secure architectures and advanced features.",
+    "features": [
+      "Powerful and secure enterprise-grade mobility solutions",
+      "Integrates easily with existing systems",
+      "Enhances productivity and workflow automation",
+      "Built for scalability and real-time data access"
+    ]
+  },
+  {
+    "title": "App Maintenance and Support",
+    "subtitle": "",
+    "description": "We offer reliable app maintenance and performance optimization to keep your mobile application updated, secure, and running smoothly. Our dedicated support ensures long-term success and continuous improvement.",
+    "features": [
+      "Regular updates, bug fixing, and optimization",
+      "24×7 post-launch technical support",
+      "Performance monitoring and security improvement",
+      "Ensures stability and long-term app success"
     ]
   }
 ],

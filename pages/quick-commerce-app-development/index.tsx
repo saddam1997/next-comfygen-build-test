@@ -462,8 +462,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Quick Commerce App Development Company | Build 10-Min Delivery App</title>
-        <meta name="description" content="Launch your on-demand delivery business with Comfygen’s quick commerce app development services. We build custom Q-commerce apps like Zepto, Blinkit, and Swiggy Instamart with real-time tracking, geo-routing, and 10-min delivery features." />
+        <title>Quick Commerce App Development Company | 10 Minute Delivery App Solutions</title>
+        <meta name="description" content="Build your 10-minute delivery app with Comfygen, a leading quick commerce app development company. We create instant delivery apps like Zepto, Blinkit and Instamart with real-time tracking, smart routing and reliable performance." />
         <link rel="canonical" href="https://www.comfygen.com/quick-commerce-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -534,8 +534,9 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hiddenlg:pt-[90px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-hero.webp')]">
           <HeroSectionForAllPages
-            heading="Quick Commerce App Development Services for Ultra-Fast Delivery Brands"
-            ptag="Take your delivery business to the next level with Comfygen Technologies’ expert quick commerce app development services. Comfygen Technologies is a top quick commerce app development company. We build lightning-fast, on-demand Q-commerce app solutions designed to streamline orders, optimize deliveries, and enhance customer satisfaction. Whether you’re launching a grocery app like Zepto or a pharmacy delivery platform like Tata 1mg, our customized apps deliver speed, scalability, and seamless user experiences."
+            heading="Quick Commerce App Development Company for 10-Min Delivery Services"
+            ptag="Give your delivery business the power of speed and convenience with Comfygen Technologies. We are a trusted quick commerce app development company helping brands deliver groceries, medicines, food, and daily essentials within minutes. Our expert team builds high-performance Q-commerce apps that enable real-time order tracking, smart delivery routing, and smooth user experiences."
+            ptag1='Whether you want to launch an app like Zepto, Blinkit, Instamart or create your own ultra-fast delivery service, we design solutions that grow with your business and delight your customers.'
             // li="Real-Time Order Tracking & Route Optimization"
             // li1="Seamless UI/UX for Instant Checkout & Engagement"
             // li2="Advanced Inventory, Delivery & Fleet Management"

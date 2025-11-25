@@ -1,23 +1,3 @@
-import Image from "next/image";
-import React, { useState } from "react";
-import Head from "next/head";
-
-import dynamic from "next/dynamic";
-import JSON_DATA from "./json/defidevelopment.json";
-import PortfolioSecs from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import BlogSection from "../components/BlogSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import SolutionSec from "../components/SolutionSec";
-
 import {
   IconSettingsAutomation,
   IconCurrencyDollar,
@@ -29,18 +9,23 @@ import {
   IconFingerprint,
   IconPigMoney,
 } from "@tabler/icons-react";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import Image from "next/image";
+import React, { useState } from "react";
+import Head from "next/head";
+import JSON_DATA from "./json/defidevelopment.json";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const technologyData = [
   {
@@ -89,36 +74,7 @@ const technologyData = [
     desc: "DeFi reduces infrastructure and compliance costs, offering scalable and affordable financial solutions. Businesses can reach a global audience without the overhead of traditional financial systems.",
   },
 ];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/secure-and-scalable-defi-wallet-solutions.webp",
-      head: "Secure & Scalable DeFi Wallet Solutions",
-      name: "Enhance financial freedom with our secure and user-friendly DeFi wallet solutions. We develop non-custodial wallets with multi-currency support, private key control, and seamless transactions. Our wallets ensure top-tier security, cross-chain compatibility, and an intuitive interface for effortless asset management.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/innovative-and-secure-defi-token-development.webp",
-      head: "Innovative & Secure DeFi Token Development",
-      name: "Unlock the potential of decentralized finance with our DeFi token development services. We create secure, scalable, and customizable tokens for various DeFi applications, including staking, governance, and liquidity pools. Our solutions ensure seamless integration, compliance, and smart contract security for a robust DeFi ecosystem",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-  ],
-};
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -132,7 +88,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -230,7 +186,7 @@ export default function Ecommerce(props) {
       "areaServed": "Global",
       "url": "https://www.comfygen.com/defi-development-company"
     }
-    
+
     ,
     {
       "@context": "https://schema.org",
@@ -356,60 +312,60 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-      <title>
-        Top DeFi Development Company | Decentralized Finance Services
-      </title>
+        <title>
+          Top DeFi Development Company | Decentralized Finance Services
+        </title>
 
-      {/* Primary SEO */}
-      <meta
-        name="description"
-        content="Comfygen is a leading DeFi Development Company delivering secure, scalable, and custom DeFi solutions including lending platforms, staking, yield farming, and DEX development."
-      />
-      <meta
-        name="keywords"
-        content="DeFi development company, decentralized finance solutions, DeFi smart contracts, DeFi staking platform, yield farming, DEX development, DeFi consulting services"
-      />
-      <link
-        rel="canonical"
-        href="https://www.comfygen.com/defi-development-company"
-      />
+        {/* Primary SEO */}
+        <meta
+          name="description"
+          content="Comfygen is a leading DeFi Development Company delivering secure, scalable, and custom DeFi solutions including lending platforms, staking, yield farming, and DEX development."
+        />
+        <meta
+          name="keywords"
+          content="DeFi development company, decentralized finance solutions, DeFi smart contracts, DeFi staking platform, yield farming, DEX development, DeFi consulting services"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/defi-development-company"
+        />
 
-    
-      <meta
-        name="apple-mobile-web-app-title"
-        content="DeFi Development Company"
-      />
-      <meta
-        property="og:url"
-        content="https://www.comfygen.com/defi-development-company"
-      />
-      <meta
-        property="og:title"
-        content="DeFi Development Company | Custom Decentralized Finance Solutions"
-      />
-      <meta
-        property="og:description"
-        content="Build scalable DeFi platforms with Comfygen — from DEX and liquidity pools to yield farming, lending, staking, and DAO development. Secure. Reliable. Future-ready."
-      />
-      <meta property="og:image" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
-      <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
-      <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="DeFi Development Company" />
 
-      {/* Twitter Card Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="DeFi Development Company | Custom Decentralized Finance Solutions"
-      />
-      <meta
-        name="twitter:description"
-        content="Partner with Comfygen to launch secure and scalable DeFi platforms. From DEXs to staking, lending, and yield farming, we build finance for the future."
-      />
-      <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
-      <meta name="twitter:site" content="@Comfygen_Tech" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="DeFi Development Company"
+        />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/defi-development-company"
+        />
+        <meta
+          property="og:title"
+          content="DeFi Development Company | Custom Decentralized Finance Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Build scalable DeFi platforms with Comfygen — from DEX and liquidity pools to yield farming, lending, staking, and DAO development. Secure. Reliable. Future-ready."
+        />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="DeFi Development Company" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="DeFi Development Company | Custom Decentralized Finance Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Partner with Comfygen to launch secure and scalable DeFi platforms. From DEXs to staking, lending, and yield farming, we build finance for the future."
+        />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/defi-development-company/og.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -420,27 +376,26 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/defi-development-company-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Defi Development Company"
-            ptag="Comfygen DeFi development company delivering innovative, secure, and scalable decentralized finance solutions. We are experts in building decentralized exchanges, DeFi tokens, and borrowing platform solutions. Our DeFi developer expert team ensures robust smart contract security, seamless blockchain integration, and future-ready architecture. Whether for startups or enterprises, we provide end-to-end DeFi development services that eliminate intermediaries, lower transaction costs, and empower users with full control over their assets, driving sustainable growth in the DeFi ecosystem."
-            li="Defi Token Development"
-            li1="Defi Lending & Borrowing Platform"
-            li2=" <a class='font-semibold' href='/decentralized-exchange-development'>Decentralized Exchange (DEX) Development</a> "
-            li3="Yield Farming & Staking Development"
-            li4="Defi Wallet Development"
-            li5="Smart Contract Development & Auditing"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Defi Development Company"
+          ptag="Comfygen DeFi development company delivering innovative, secure, and scalable decentralized finance solutions. We are experts in building decentralized exchanges, DeFi tokens, and borrowing platform solutions. Our DeFi developer expert team ensures robust smart contract security, seamless blockchain integration, and future-ready architecture. Whether for startups or enterprises, we provide end-to-end DeFi development services that eliminate intermediaries, lower transaction costs, and empower users with full control over their assets, driving sustainable growth in the DeFi ecosystem."
+          li="Defi Token Development"
+          li1="Defi Lending & Borrowing Platform"
+          li2=" <a class='font-semibold' href='/decentralized-exchange-development'>Decentralized Exchange (DEX) Development</a> "
+          li3="Yield Farming & Staking Development"
+          li4="Defi Wallet Development"
+          li5="Smart Contract Development & Auditing"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/defi-development-company-hero-img.webp'
+        />
+
         <AboutSection
           title="About Company"
           heading="Defi Development Expertise at Comfygen"
@@ -458,7 +413,7 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -519,7 +474,7 @@ export default function Ecommerce(props) {
                       <h3 className="text-xl font-semibold text-[#fff]">
                         {title}
                       </h3>
-                      <p className="break-all text-white"  dangerouslySetInnerHTML={{ __html: desc}} ></p>
+                      <p className="break-all text-white" dangerouslySetInnerHTML={{ __html: desc }} ></p>
                     </div>
                   </div>
                 );
@@ -528,7 +483,7 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <InfoSectionLeft
+        <InfoSection
           heading="DeFi Development Global Market Size"
           description1="The global DeFi (Decentralized Finance) market has experienced exponential growth over the past few years, driven by the increasing adoption of blockchain technology and the need for transparent, permissionless financial systems. According to industry reports, the DeFi market is projected to surpass $232 billion by 2030, growing at a CAGR of over 40% between 2024 and 2030."
           description2="This surge is fueled by the demand for decentralized applications (dApps), automated smart contracts, and alternatives to traditional banking systems. From lending protocols and DEXs to yield farming platforms and synthetic assets, DeFi continues to disrupt conventional financial ecosystems globally."
@@ -540,6 +495,7 @@ export default function Ecommerce(props) {
             "Expansion of DeFi beyond Ethereum to Polygon, Solana, BNB Chain, and more",
             "Enhanced accessibility for users across borders with no KYC constraints",
           ]}
+          dec=''
           imageSrc="https://www.comfygen.com/img/what-are-the-real-world-uses-of-defi-for-your-business.webp"
           link="/contact-us"
           linkText="Lets Discuss"
@@ -575,6 +531,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="">
@@ -619,14 +576,17 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <InfoSectionRight
+        <InfoSection
           heading="An Introduction to DeFi: The Backbone of Decentralized Financial Services"
           description1="Decentralized Finance (DeFi) is revolutionizing the traditional financial ecosystem by offering open, transparent, and permissionless alternatives to conventional banking and financial services. Powered by blockchain technology and smart contracts, DeFi removes the need for intermediaries, enabling users to directly access services like lending, borrowing, staking, trading, and asset management."
           description2="As a leading DeFi development company, Comfygen specializes in building scalable, secure, and feature-rich DeFi solutions tailored to specific business needs. From DeFi token development to decentralized exchanges and lending protocols, our custom-built platforms run on top blockchain networks such as Ethereum, Polygon, BNB Chain, and Solana."
           description3="By leveraging our DeFi development services, you gain access to automated, borderless financial solutions that operate 24/7. Whether you're looking to launch a DeFi startup or integrate decentralized features into your existing platform, our experts help you capitalize on the true potential of DeFi."
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/defi-trading.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -652,11 +612,20 @@ export default function Ecommerce(props) {
             "Cost-effective DeFi developer hiring services in India",
           ]}
         />
-        <PortfolioSecs
-          techData={techDataForPage1}
-          heading="Explore Our DeFi Development Portfolio"
-          description="Explore our cutting-edge DeFi development portfolio, showcasing innovative decentralized finance solutions. From secure lending platforms to automated yield farming and DEX solutions, our expertise in DeFi development empowers businesses with transparent, efficient, and scalable blockchain-based financial applications."
-        />
+
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our DeFi Development Portfolio"
+            description="Explore our cutting-edge DeFi development portfolio, showcasing innovative decentralized finance solutions. From secure lending platforms to automated yield farming and DEX solutions, our expertise in DeFi development empowers businesses with transparent, efficient, and scalable blockchain-based financial applications."
+          />
+        </section>
+
+
+
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
@@ -669,8 +638,6 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

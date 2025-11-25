@@ -2,23 +2,23 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import CallToAction from "../components/CallToAction";
-import NewSection from "./components/NewSection";
-import Features from "./components/Features";
-import DeliverySection from "../components/DeliverySection";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Header from "../components/Header";
-import Slider from "../components/Slider";
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
+import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import DeliverySection from "../Newcomponet/comman/DeliverySection";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import BusinessSolustion from "../Newcomponet/SectionCompoent/BusinessSolustion";
+import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -263,13 +263,13 @@ export default function ClinicalApp(props: any) {
           content="Comfygen Technologies is a leading courier delivery app development company. We provide parcel delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
         />
 
-        <meta name="keywords" content="On-demand Courier Delivery App Development, Parcel Delivery App Development, Last-mile Delivery App Development, Courier Dispatch & Tracking App Development, White-label Courier App Development Solutions, Courier App Development for Carriers, Haulage Courier App Development, Freight Forwarding Courier App Development, Courier Marketplace App Development, Courier App Development for Delivery Chains"/>
+        <meta name="keywords" content="On-demand Courier Delivery App Development, Parcel Delivery App Development, Last-mile Delivery App Development, Courier Dispatch & Tracking App Development, White-label Courier App Development Solutions, Courier App Development for Carriers, Haulage Courier App Development, Freight Forwarding Courier App Development, Courier Marketplace App Development, Courier App Development for Delivery Chains" />
 
 
         {/* canonical */}
-        <link rel="canonical"  href="https://www.comfygen.com/courier-delivery-app-development" />
+        <link rel="canonical" href="https://www.comfygen.com/courier-delivery-app-development" />
 
-    
+
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reliable Courier Delivery App Development | Comfygen Technologies" />
@@ -347,13 +347,12 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewSection />
 
-
+        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Courier Delivery App Portfolio"
             description="Comfygen Technologies delivers innovative courier delivery app development solutions tailored to the unique needs of diverse businesses. Here’s a glimpse of our successful on demand courier app development projects"
@@ -369,9 +368,18 @@ export default function ClinicalApp(props: any) {
           imageSrc="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/call-courier.webp"
           imageAlt="Get in touch now."
         />
-        <section>
-          <Features />
-        </section>
+
+
+
+        <div className="py-8">
+          <Features
+            heading="Key Features of Our Courier Delivery App"
+            description=" Comfygen Technologies develops advanced feature-rich courier delivery apps to improve customer experience, streamline logistics, and optimize courier management. Our top-rated courier service delivery apps include advanced panels for users, drivers, and administrators, ensuring a smooth and efficient delivery process."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
+
         <section className="py-10 mt-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -430,7 +438,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-        <NewTeckStack
+        <TeckStack
           title="Technology Stack We Use for On-Demand Courier App Development"
           description="At Comfygen, we utilize the latest and most reliable technologies to build on-demand courier delivery apps that are fast, scalable, and highly secure. Our advanced courier app development tech stack ensures smooth performance, real-time tracking, seamless payments, and exceptional user experience across Android, iOS, and web platforms."
         />
@@ -470,3 +478,21 @@ export default function ClinicalApp(props: any) {
     </>
   );
 }
+
+
+export async function getServerSideProps({ res }) {
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  if (!resData.ok) {
+    // console.error("API Request failed:", await resData);
+    return { props: { initialData: [] } };
+  }
+  // console.log(resData)
+  const data = await resData.json();
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return { props: { initialData: data } };
+}
+
+

@@ -31,6 +31,41 @@
       "description": "Transform your car rental business with a smart booking system that offers flexible rental options, automated billing, and real-time vehicle tracking for both short-term and long-term leasing services."
     }
   ],
+
+ "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/ubereats-clone-app.webp",
+      "title": "Uber Clone App",
+      "description": "Launch an Uber-like taxi booking app with advanced features including ride scheduling, real-time GPS tracking, instant driver allocation, and multiple payment options. Deliver a smooth, convenient, and reliable ride experience for your customers.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/zomato-clone-app.webp",
+      "title": "Ola Clone App",
+      "description": "Build a taxi booking platform like Ola that supports multiple ride categories, including mini, prime, auto, and rental. Give users flexible travel choices with fast booking, live route tracking, and affordable pricing options.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/swiggy-clone-app.webp",
+      "title": "Rapido Clone App",
+      "description": "Develop a bike taxi platform like Rapido with quick ride booking, real-time navigation, and secure digital payments. Perfect for cities with high traffic, offering fast, economical, and hassle-free travel solutions.",
+      "buttonText": "Careem Clone App"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/doordash-clone-app.webp",
+      "title": "Careem Clone App",
+      "description": "Create a Careem-like app featuring multi-service options including taxi booking, car rentals, and corporate rides. Includes in-app chatting, trip scheduling, and wallet payment integration for a premium ride experience.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/gopuff-clone-app.webp",
+      "title": "Lyft Clone App",
+      "description": "Build a Lyft-style ride-sharing app with driver rating systems, instant ride matching, and real-time trip tracking. Enhance rider safety with emergency alerts and secure payment gateways to deliver trustworthy and smooth rides.",
+      "buttonText": "View Demo"
+    }
+  ],
+
+
   "consultancyHead": [
     {
       "num": "1",

@@ -8,7 +8,7 @@
       "btn": "Hire Developer"
     }
   ],
-"Frequently" : [
+  "Frequently": [
     {
       "num": "1",
       "title": "What is the literal definition of smart contract development?",
@@ -141,79 +141,137 @@
     }
   ],
 
-"servicesData" :[
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+      "title": "Great Wallet Application",
+      "description": "Great Wallet is a cutting-edge iOS wallet designed for seamless integration with the Great Crypto Network (GREAT Blockchain). As part of a decentralized ecosystem, it drives the digital transformation of global economic governance. Powered by AI and machine learning, Great Wallet fosters transparency, efficiency, and sustainable economic growth in the era of the fourth industrial revolution.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7Coin Web Wallet",
+      "description": "M7Coin Web Wallet revolutionizes crypto management with a seamless, secure, and intuitive platform. Effortlessly store, send, and receive M7Coins, ensuring a smooth experience in the fast-evolving world of digital assets.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+      "title": "Aria Coin Cryptocurrency",
+      "description": "Welcome to ARIA Currency – the future of seamless and secure transactions. Redefining digital currency with a commitment to security, accessibility, and efficiency, we empower individuals and businesses to transact with trust and confidence.",
+      "link": "#"
+    }
+  ],
+
+
+
+  "servicesData": [
     {
       "title": "Smart Contract Consultation Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our experts provide comprehensive consultation services to guide you through the complexities of smart contract development. From concept to deployment, we help you understand the best blockchain platforms and design optimal solutions to meet your business needs.",
-      "features": ["Blockchain Technology Guidance", "Smart Contract Design Advice" , "Feasibility Studies & Protocol Selection"]
+      "features": [
+        "Blockchain Technology Guidance",
+        "Smart Contract Design Advice",
+        "Feasibility Studies & Protocol Selection"
+      ]
     },
     {
       "title": "Design & Development Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We specialize in designing and developing custom smart contracts tailored to your specific requirements. Our team builds secure, scalable, and efficient contracts for a variety of use cases, including DeFi, NFT platforms, and more.",
-      "features": ["Custom Smart Contract Development", "Automated Contract Execution" , "Integration with Blockchain Platforms"]
+      "features": [
+        "Custom Smart Contract Development",
+        "Automated Contract Execution",
+        "Integration with Blockchain Platforms"
+      ]
     },
     {
       "title": "Smart Contract Auditing Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "To ensure the security and reliability of your smart contracts, we conduct thorough audits that identify potential vulnerabilities and provide actionable insights for improvement.",
-      "features": ["Code Review & Vulnerability Assessment" , "Security Testing & Penetration Testing", "Compliance and Best Practices Review"]
+      "features": [
+        "Code Review & Vulnerability Assessment",
+        "Security Testing & Penetration Testing",
+        "Compliance and Best Practices Review"
+      ]
     },
     {
       "title": "Smart Contract Optimisation Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We optimize smart contracts to enhance performance, reduce gas fees, and improve the overall efficiency of the contract execution process. Our goal is to ensure that your contracts run smoothly while minimizing costs.",
-      "features": ["Gas Fee Optimization", "Efficiency Enhancement" , "Scalability and Performance Boost"]
+      "features": [
+        "Gas Fee Optimization",
+        "Efficiency Enhancement",
+        "Scalability and Performance Boost"
+      ]
     },
     {
       "title": "dApp Implementation",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We help you integrate smart contracts into decentralized applications (dApps), enabling seamless functionality and decentralized control. Our team ensures that your dApp delivers an excellent user experience while maintaining security and scalability.",
-      "features": ["Decentralized Application Development", "Smart Contract Integration" , "User-Friendly Interfaces"]
-    } ,
+      "features": [
+        "Decentralized Application Development",
+        "Smart Contract Integration",
+        "User-Friendly Interfaces"
+      ]
+    },
     {
       "title": "DEXs Implementation",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Comfygen specializes in developing decentralized exchange (DEX) platforms where users can trade assets directly, without intermediaries. Our DEX implementations are built with robust security features and optimized for speed and efficiency.",
-      "features": ["Smart Contract-Based DEX Development" , "Peer-to-Peer Trading" , "Security & Liquidity Solutions"]
-    }, 
+      "features": [
+        "Smart Contract-Based DEX Development",
+        "Peer-to-Peer Trading",
+        "Security & Liquidity Solutions"
+      ]
+    },
     {
       "title": "Digital Wallet Development Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We develop secure, easy-to-use digital wallets for storing, sending, and receiving cryptocurrencies. Our wallets are integrated with smart contracts to facilitate seamless transactions on the blockchain.",
-      "features": ["Multi-Currency Wallet Development", "Smart Contract Integration" , "Security Features like Multi-Signature & 2FA"]
-    } ,
+      "features": [
+        "Multi-Currency Wallet Development",
+        "Smart Contract Integration",
+        "Security Features like Multi-Signature & 2FA"
+      ]
+    },
     {
       "title": "NFT Smart Contracts Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Comfygen excels in creating smart contracts for NFTs (Non-Fungible Tokens), enabling the creation, transfer, and trade of unique digital assets. Our contracts are designed for seamless integration with marketplaces and platforms.",
-      "features": ["NFT Minting & Tokenization" , "Smart Contracts for NFT Marketplaces" , "Custom NFT Features"]
+      "features": [
+        "NFT Minting & Tokenization",
+        "Smart Contracts for NFT Marketplaces",
+        "Custom NFT Features"
+      ]
     },
     {
       "title": "Token Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We offer token development services to create utility tokens, security tokens, or stablecoins, tailored to your project’s needs. Our team ensures that the tokenomics and smart contract functionality align with your goals.",
-      "features": ["Custom Token Creation" , "ERC-20, ERC-721, and ERC-1155 Tokens" , "Tokenomics Design & Deployment"]
+      "features": [
+        "Custom Token Creation",
+        "ERC-20, ERC-721, and ERC-1155 Tokens",
+        "Tokenomics Design & Deployment"
+      ]
     }
-    
   ],
-
-"cardData" :[
-    { 
-      "title": "Dedicated Team of Smart Contract Developers", 
+  "cardData": [
+    {
+      "title": "Dedicated Team of Smart Contract Developers",
       "desc": "We assign you dedicated smart contract development programmers based on the type of blockchain development you choose to base it on. With our core members, your business will acquire enough help through innovative smart contract development solutions that would benefit you from leveraging the various benefits of decentralisation techniques. When we allot a dedicated team of smart contract developers for your project, they shall exclusively work just for your project without taking up other responsibilities."
-     },
-     { 
-      "title": "Extending The Team", 
+    },
+    {
+      "title": "Extending The Team",
       "desc": "At Comfygen, we have the liberty of allowing the clients to seek team extension solutions from us. Here, we help businesses expand their current development capabilities for scaling smart contract development projects. All our experienced smart contract developers will seamlessly integrate with your current in-house team to assist your business in acquiring high-quality smart contracts development company."
-     },
-     { 
-      "title": "Project-Based Model", 
+    },
+    {
+      "title": "Project-Based Model",
       "desc": "In our smart contract development service execution models, we have a project-based engagement approach as well, which shall help the business launch modern smart contract development services or products efficiently and quickly. At Comfygen, our project-based smart contract development service execution enables us to understand your requirements better. As a result of which, we deliver more premium outcomes associated with smart contracts development company."
-     }
-],
-
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Smart Contract Development Services?",
     "description": "Comfygen, the best smart contract development company in India, is confident enough to offer you a custom smart contract development service. But, to help you feel more convinced about hiring our services, here are some reasons why you should consider us as a priority for your respective projects",
@@ -250,15 +308,12 @@
       }
     ]
   },
-
   "myList": [
     "Outstanding team of developers, testers, and project managers.",
     "Every individual working at Comfygen is a certified professional.",
     "Actively available for support needs raised by the clients. ",
     "Makes use of the latest technology solutions to tailor your business-specific smart contract development."
   ],
-
-
   "myList3": [
     "See no fraudulent activities being conducted across your business operations, as smart contracts are highly secured under the blockchain network. ",
     "The transactions being executed within the business operations are faster and more secure.",

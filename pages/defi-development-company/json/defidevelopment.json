@@ -114,6 +114,32 @@
       "desc": "We also offer a broad assortment of white-label DeFi fintech apps to help you participate in a connected economy. Our experts have created white-label fintech apps with comprehensive end-to-end technology services."
     }
   ],
+
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/secure-and-scalable-defi-wallet-solutions.webp",
+      "title": "Secure & Scalable DeFi Wallet Solutions",
+      "description": "Enhance financial freedom with our secure and user-friendly DeFi wallet solutions. We develop non-custodial wallets with multi-currency support, private key control, and seamless transactions. Our wallets ensure top-tier security, cross-chain compatibility, and an intuitive interface for effortless asset management.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/innovative-and-secure-defi-token-development.webp",
+      "title": "Innovative & Secure DeFi Token Development",
+      "description": "Unlock the potential of decentralized finance with our DeFi token development services. We create secure, scalable, and customizable tokens for various DeFi applications, including staking, governance, and liquidity pools. Our solutions ensure seamless integration, compliance, and smart contract security for a robust DeFi ecosystem",
+      "link": "#"
+    }
+  ],
+
+
+
+
+
+
+
+
+
   "servicesData": [
     {
       "title": "DeFi dApp Development",

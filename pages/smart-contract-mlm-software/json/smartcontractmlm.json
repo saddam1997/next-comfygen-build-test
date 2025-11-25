@@ -55,65 +55,98 @@
       }
     ]
   },
-
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Cryptocurrency-Based MLM Software Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We build fully decentralized MLM software that leverages the power of cryptocurrency. This allows seamless wallet-to-wallet transactions without the need for any central authority. The platform supports multiple compensation models such as binary, matrix, and unilevel, offering users a secure and transparent experience.",
-      "features": ["Supports major cryptocurrencies like BTC, ETH, TRX", "Transparent transactions and audit-ready code" , "Real-time commission distribution"]
+      "features": [
+        "Supports major cryptocurrencies like BTC, ETH, TRX",
+        "Transparent transactions and audit-ready code",
+        "Real-time commission distribution"
+      ]
     },
     {
       "title": "Ethereum Smart Contract MLM Software",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our Ethereum-based MLM software is built using Solidity smart contracts. It ensures decentralized governance, high-end security, and zero downtime. With Ethereum’s vast ecosystem, our platform integrates easily with popular wallets and DeFi protocols.",
-      "features": ["Solidity-based smart contract logic", "Compatible with MetaMask, Trust Wallet" , "Gas-efficient deployment"]
+      "features": [
+        "Solidity-based smart contract logic",
+        "Compatible with MetaMask, Trust Wallet",
+        "Gas-efficient deployment"
+      ]
     },
     {
       "title": "Tron Smart Contract MLM Software",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We develop MLM software on the Tron blockchain for clients seeking faster transaction speeds and minimal fees. Tron’s high TPS allows real-time rewards and seamless user experiences, ideal for high-volume MLM ecosystems.",
-      "features": ["High TPS (Transactions Per Second)" , "TRX wallet integration", "Easy deployment and customization"]
+      "features": [
+        "High TPS (Transactions Per Second)",
+        "TRX wallet integration",
+        "Easy deployment and customization"
+      ]
     },
     {
       "title": "Defi Smart Contract MLM Software Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our DeFi-enabled MLM platforms combine staking, yield farming, and governance models to build a next-gen decentralized MLM network. Users can earn passively while engaging in network growth.",
-      "features": ["Staking pools and farming rewards", "DAO governance integration" , "Liquidity mining modules"]
+      "features": [
+        "Staking pools and farming rewards",
+        "DAO governance integration",
+        "Liquidity mining modules"
+      ]
     },
     {
       "title": "NFT Smart Contract MLM Software",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We introduce NFTs to MLM systems for added uniqueness, gamification, and value. NFTs can be used to define user tiers, memberships, and exclusive rewards. Perfect for creators and Web3 communities.",
-      "features": ["NFT-based levels and rewards", "Marketplace integration" , "Supports ERC-721 and ERC-1155 standards"]
-    } ,
+      "features": [
+        "NFT-based levels and rewards",
+        "Marketplace integration",
+        "Supports ERC-721 and ERC-1155 standards"
+      ]
+    },
     {
       "title": "Bitcoin Smart Contract MLM Software",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our Bitcoin-integrated MLM platforms allow for seamless BTC transactions within decentralized network structures. Although Bitcoin doesn’t support native smart contracts, we integrate sidechains and compatible layers for automation.",
-      "features": ["Bitcoin-based payments" , "Multi-signature wallet integration" , "Secure transaction architecture"]
-    }, 
+      "features": [
+        "Bitcoin-based payments",
+        "Multi-signature wallet integration",
+        "Secure transaction architecture"
+      ]
+    },
     {
       "title": "Blockchain-Based MLM Software Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We build end-to-end blockchain MLM software on networks like Ethereum, Polygon, Solana, and BNB Chain. These platforms are secure, scalable, and completely transparent, with no room for manipulation.",
-      "features": ["Cross-chain support", "Immutable transaction ledger" , "Fully automated payout system"]
-    } ,
+      "features": [
+        "Cross-chain support",
+        "Immutable transaction ledger",
+        "Fully automated payout system"
+      ]
+    },
     {
       "title": "Binance Smart Chain MLM Software Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our MLM solutions built on BSC offer low-cost, fast, and scalable infrastructure. BSC is perfect for startups wanting Ethereum compatibility without high gas fees.",
-      "features": ["BEP-20 token compatibility" , "PancakeSwap & BSC wallet integration" , "Low gas fees"]
+      "features": [
+        "BEP-20 token compatibility",
+        "PancakeSwap & BSC wallet integration",
+        "Low gas fees"
+      ]
     },
     {
       "title": "Solana Smart Contract MLM Software",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We offer high-performance MLM development on Solana, supporting thousands of transactions per second at low costs. Ideal for enterprise-grade platforms with heavy user traffic.",
-      "features": ["Ultra-fast processing" , "Phantom Wallet integration" , "High scalability for large networks"]
+      "features": [
+        "Ultra-fast processing",
+        "Phantom Wallet integration",
+        "High scalability for large networks"
+      ]
     }
-    
   ],
-
   "cardData": [
     {
       "title": "Tokenization",
@@ -126,13 +159,37 @@
       "desc": "AI and ML can help smart contract MLM software in a number of ways, including:",
       "desc1": "Automating tasks: AI and ML can automate time-consuming and repetitive tasks such as commission calculation and payout distribution, freeing up business owners to focus on more strategic initiatives.",
       "desc2": "Personalizing rewards: AI can be used to develop sophisticated compensation plans that reward participants based on their individual performance and contributions. Improving security: AI and ML can be used to detect and prevent fraud, such as multiple payouts to the same address or suspicious trading patterns."
-
     },
     {
       "title": "Decentralized Finance (DeFi) Integration",
       "desc": "Decentralized Finance (DeFi) is the blockchain technology, which is completely transparent and immutable. Integrating DeFi will help in tracking all the transactions and every amount movement, which can be seen by anyone to build trust among the users. Also, there are several MLM Business tasks that can be automated through DeFi; such as calculating the commission, distributing the payments, etc."
     }
   ],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/decentralised-mlm.webp",
+      "title": "Decentralized MLM",
+      "description": "Decentralized MLM Web: Revolutionizing network marketing with blockchain-powered transparency, fairness, and rewards. Empowering communities and redefining success in the digital age.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7Coin Web Wallet",
+      "description": "user-friendly platform. Easily store, send, and receive M7Coins, ensuring seamless transactions in the evolving digital economy.",
+      "link": "#"
+    },
+     {
+      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+      "title":  "Aria Coin Cryptocurrency",
+      "description": "ARIA Currency: Pioneering the future of digital transactions with security, accessibility, and efficiency. Empowering users with a decentralized and seamless financial experience.",
+      "link": "#"
+    }
+  ],
+
+
+
   "LeadingSoftware": [
     {
       "num": "01",
@@ -175,8 +232,6 @@
       "decs": "MyEtherWallet is an open-source, client-side Ethereum wallet that provides full control over funds and private keys. Known for advanced features like hardware wallet integration and offline storage, it’s a reliable option for Ethereum-based Metaverse and smart contract casino platforms."
     }
   ],
-
-
   "Processs": [
     {
       "title": "Know Own Requirements",
@@ -314,7 +369,6 @@
       "desc": "The MLM business launch timeline varies based on factors such as business model complexity, regulatory compliance, software development, and marketing. A detailed business plan and timeline are essential as the launch process can take anywhere from a few months to over a year."
     }
   ],
-
   "SmartContractFeatures": [
     {
       "num": "01",

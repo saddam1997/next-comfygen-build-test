@@ -5,7 +5,7 @@
   },
   "pageData": {
     "title": "Why Choose Comfygen for Website Development?",
-    "description": "Choosing the right partner for your website development is crucial for your business success. We stand out by offering comprehensive and tailored solutions that meet your unique needs and provide the best website development services in Jaipur, India. If you want to develop a website in India .",
+    "description": "Choosing the right partner for your website development is crucial for your business success. We stand out by offering comprehensive and tailored solutions that meet your unique needs and provide the best website development services in Jaipur, India.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -14,102 +14,98 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Best at Business Analysis",
-        "description": "Understanding your business is our top priority. Our professional website developer in Jaipur conducts thorough business analysis to grasp your goals, target audience, and market dynamics. This ensures that the websites we develop are perfectly aligned with your business objectives and geared for success. We don’t just build websites; we build strategic digital solutions that drive growth."
+        "title": "Expert Team",
+        "description": "Our skilled web developers in Jaipur have years of experience building custom websites and web applications. They combine creativity with technical expertise to deliver high-quality, scalable, and performance-driven solutions."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Appealing UX/UI Designs",
-        "description": "We create visually stunning and user-friendly designs that captivate your audience. Our talented UX/UI designers in Jaipur, India focus on crafting intuitive interfaces that provide a seamless user experience. With Comfygen, your website will not only look great but also function flawlessly, ensuring visitors stay engaged and convert into loyal customers."
+        "title": "Affordable & Transparent Pricing",
+        "description": "We offer competitive pricing for web development services in Jaipur without hidden costs. Our transparent approach ensures you get the best value for your investment, no surprises, just results."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Best Architecture",
-        "description": "Our website development process prioritises building strong, scalable, and future-ready architectures. We create safe, high-performance websites that can manage future growth effortlessly. With rigorous attention to detail and architecture, we ensure that your site remains fast, dependable, and adaptable to changing technologies and business needs, resulting in a robust, flexible platform that supports long-term success while providing great performance and security."
+        "title": "Custom & Scalable Solutions",
+        "description": "We provide 100% custom web development services tailored to your business needs. Our websites are scalable, so your online presence grows seamlessly as your business expands."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Cost Efficiency",
-        "description": "We provide high-quality websites without exceeding your budget. Our cost-effective development procedures ensure that you get the highest return on your investment. We reduce costs while increasing quality and performance by employing cutting-edge technology, new tactics, and optimised workflows. Our solutions are intended to assist you reach your objectives at a low cost while maintaining functionality, design, and user experience."
+        "title": "Secure & SEO-Friendly Websites",
+        "description": "All websites we build follow the latest security standards and SEO practices. This ensures your site is safe from threats and ranks well on search engines to attract more visitors."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Customers and Security Management",
-        "description": "We prioritize your customers’ experience and data security. Our websites include advanced features for customer management and robust security measures to protect sensitive information. From secure payment gateways to data encryption, we ensure your site is safe for users and compliant with industry standards."
+        "title": "Timely Delivery",
+        "description": "We respect deadlines and ensure all web development projects in Jaipur are delivered on time. Our efficient workflow guarantees quality work without delays."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Use Latest Technologies",
-        "description": "Staying ahead of the curve, we utilize the latest technologies to build cutting-edge websites. Whether it’s leveraging AI for personalized experiences, implementing PWAs for improved performance, or using modern frameworks for faster development, our tech-savvy approach ensures your website is future-ready and competitive."
+        "title": "Ongoing Support & Maintenance",
+        "description": "Our commitment doesn’t end at launch. We offer ongoing support and maintenance, ensuring your website remains updated, secure, and fully functional at all times."
       }
     ]
   },
-
-"customSliderData" :[
-  {
-    "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
-    "title": "E-commerce Website",
-    "description": "Launch your online store with feature-rich, scalable, and secure e-commerce websites tailored to your business needs."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
-    "title": "Education Website",
-    "description": "Create interactive and user-friendly websites for schools, colleges, and online learning platforms at competitive prices."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-    "title": "Healthcare Website",
-    "description": "Build a website for your clinic, hospital, or medical practice at affordable prices."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
-    "title": "Transportation Website",
-    "description": "Develop modern, responsive websites for transportation companies to showcase services and manage bookings. "
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
-    "title": "Social Website",
-    "description": "Empower communities with engaging and user-friendly social networking websites designed for connection and collaboration."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-    "title": "Construction Website",
-    "description": "Showcase your construction projects and services with professional, visually appealing websites."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
-    "title": "Sports Website",
-    "description": "Create dynamic sports websites for teams, clubs, and organizations with features like live scores and event updates."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-    "title": "Entertainment Website",
-    "description": "Engage audiences with interactive and visually stunning entertainment websites for movies, music, or events."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
-    "title": "Dating Website",
-    "description": "Design intuitive and secure dating websites with modern features for seamless user experiences."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
-    "title": "Restaurant Industries",
-    "description": "Boost your restaurant's online presence with websites offering menu display, online ordering, and table booking."
-  },
-  {
-    "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
-    "title": "Travel and Tourism Website",
-    "description": "Create visually captivating travel and tourism websites with features like booking systems and travel guides."
-  },
-  
-  {
-    "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-    "title": "Banking and Finance Website",
-    "description": "Develop secure and user-centric banking and finance websites to provide seamless online banking solutions."
-  }
-
+  "customSliderData": [
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
+      "title": "E-commerce Website",
+      "description": "Launch your online store with feature-rich, scalable, and secure e-commerce websites tailored to your business needs."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
+      "title": "Education Website",
+      "description": "Create interactive and user-friendly websites for schools, colleges, and online learning platforms at competitive prices."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
+      "title": "Healthcare Website",
+      "description": "Build a website for your clinic, hospital, or medical practice at affordable prices."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
+      "title": "Transportation Website",
+      "description": "Develop modern, responsive websites for transportation companies to showcase services and manage bookings. "
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
+      "title": "Social Website",
+      "description": "Empower communities with engaging and user-friendly social networking websites designed for connection and collaboration."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
+      "title": "Construction Website",
+      "description": "Showcase your construction projects and services with professional, visually appealing websites."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
+      "title": "Sports Website",
+      "description": "Create dynamic sports websites for teams, clubs, and organizations with features like live scores and event updates."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
+      "title": "Entertainment Website",
+      "description": "Engage audiences with interactive and visually stunning entertainment websites for movies, music, or events."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
+      "title": "Dating Website",
+      "description": "Design intuitive and secure dating websites with modern features for seamless user experiences."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
+      "title": "Restaurant Industries",
+      "description": "Boost your restaurant's online presence with websites offering menu display, online ordering, and table booking."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
+      "title": "Travel and Tourism Website",
+      "description": "Create visually captivating travel and tourism websites with features like booking systems and travel guides."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
+      "title": "Banking and Finance Website",
+      "description": "Develop secure and user-centric banking and finance websites to provide seamless online banking solutions."
+    }
   ],
-
   "consultancyHead": [
     {
       "num": "1",
@@ -186,7 +182,7 @@
     {
       "title": "Custom Website Development",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Once the plans are discussed, here comes the custom website development services in Jaipur to offer. We understand the business needs and offer solutions tailored to specific requirements. Our agenda is to create solutions based on purpose-oriented needs and gain attention from targeted audiences. We implement unique engaging features & functions that hook to the visitor’s demands.",
+      "description": "Comfygen builds custom websites in Jaipur tailored to your business needs. Our websites are fast, mobile-friendly, and SEO-optimized to attract more visitors and convert them into customers. We focus on creating unique designs and functionalities that perfectly match your brand identity and business goals.",
       "features": [
         "Tailored Solutions for Specific Business Needs",
         "Purpose-Oriented Development",
@@ -215,14 +211,24 @@
       ]
     },
     {
-      "title": "E-Commerce Website Development Solutions",
+      "title": "E-Commerce Website Development ",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Our E-Commerce website development solutions are designed to help you create a robust, scalable online store that delivers a seamless shopping experience for your customers. From custom product catalogs and secure payment gateways to inventory management and user-friendly interfaces, we provide end-to-end services that drive online sales and enhance customer satisfaction.",
+      "description": "Our <a href='https://www.comfygen.com/ecommerce' class='text-blue-600 font-semibold'>E-Commerce website development solutions</a> are designed to help you create a robust, scalable online store that delivers a seamless shopping experience for your customers. From custom product catalogs and secure payment gateways to inventory management and user-friendly interfaces, we provide end-to-end services that drive online sales and enhance customer satisfaction.",
       "features": [
         "Secure Payment Gateway Integration",
         "Mobile-Optimized E-Commerce Solutions",
         "User-Friendly Interfaces & Enhanced UX",
         "SEO & Marketing Features for Increased Visibility"
+      ]
+    },
+    {
+      "title": "CMS & WordPress Website Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Empower your business with CMS platforms like WordPress, Drupal, and Joomla, offering a flexible and scalable approach to website management. Easily update content, streamline workflows, and maintain a robust backend that supports your business's growing needs with seamless, efficient management tools.",
+      "features": [
+        "Flexible and Scalable Designs",
+        "Simplified Content Updates",
+        "Robust Backend Support"
       ]
     },
     {
@@ -238,7 +244,7 @@
     {
       "title": "Web Application Development",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Our web application development services in Jaipur focus on creating high-performance, scalable, and secure applications that provide seamless user experiences. Whether you're building a custom tool, enterprise solution, or an interactive platform, we utilize the latest technologies to develop web applications tailored to your specific business needs.",
+      "description": "We provide responsive web application development services in Jaipur that streamline business processes and enhance user experience. Our scalable and secure solutions help you automate tasks, manage data efficiently, and provide interactive, user-friendly interfaces that support long-term business growth.",
       "features": [
         "Custom Web App Development for Specific Needs",
         "Scalable and Secure Web Applications",
@@ -250,7 +256,7 @@
     {
       "title": "SEO-Friendly Website Development",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Our SEO-friendly web development services in Jaipur are designed to optimize your website for search engines from the ground up. We implement best practices in website structure, coding, and content to enhance your site's visibility and ranking on search engines like Google. By focusing on on-page SEO, responsive design, and fast load times, we ensure your website attracts more organic traffic and provides a better user experience.",
+      "description": "Our SEO-friendly web development services in Jaipur are designed to optimize your website for search engines from the ground up. We implement best practices in website structure, coding, and content to enhance your site's visibility and ranking on search engines like Google. ",
       "features": [
         "SEO-Optimized Website Structure & Code",
         "Mobile-Responsive Design for Better Rankings",
@@ -283,12 +289,23 @@
     {
       "title": "Magento Web Development",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Our Magento development services are designed for businesses that need powerful and scalable eCommerce platforms. From custom theme development to extension and integration services, we provide end-to-end Magento solutions that enhance the online shopping experience and support business growth.",
+      "description": "Our Magento development services in India are designed for businesses that need powerful and scalable eCommerce platforms. From custom theme development to extension and integration services, we provide end-to-end Magento solutions that enhance the online shopping experience and support business growth.",
       "features": [
         "End-to-End Magento Development",
         "Tailored Themes & Extensions",
         "Seamless Integration with Third-Party Systems",
         "Optimized for Business Growth & Scalability"
+      ]
+    },
+    {
+      "title": "UI/UX & Website Redesign",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "We transform websites with modern UI/UX designs that enhance usability and engagement. Our Jaipur team ensures your site is visually appealing, mobile-optimized, fast, and designed to maximize conversions while giving visitors an enjoyable browsing experience.",
+      "features": [
+        "Modern UI design",
+        "Enhanced user experience",
+        "Mobile optimization",
+        "Faster page load"
       ]
     },
     {
@@ -338,12 +355,23 @@
     {
       "title": "Corporate website development",
       "subtitle": "All Service And Solutions At One Place",
-      "description": "Our web developer specializes in designing and developing professional corporate websites that reflect your brand's identity and values. Our team focuses on creating a polished, user-friendly site that enhances your online presence, builds credibility, and facilitates business growth.",
+      "description": "Our web developer in India specializes in designing and developing professional corporate websites that reflect your brand's identity and values. Our team focuses on creating a polished, user-friendly site that enhances your online presence, builds credibility, and facilitates business growth.",
       "features": [
         "Tailored Designs to Reflect Corporate Identity",
         "User-Friendly Interfaces & Seamless Navigation",
         "Responsive and Mobile-Friendly Design",
         "Scalable Solutions for Business Expansion"
+      ]
+    },
+    {
+      "title": "API Integration & Maintenance",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Comfygen offers API integration and website maintenance services to ensure smooth operation. We connect your website with third-party tools, provide regular updates, monitor performance, and quickly fix issues to keep your online presence efficient and reliable.",
+      "features": [
+        "API & third-party integration",
+        "Regular website maintenance",
+        "Performance monitoring",
+        "Quick bug fixes"
       ]
     }
   ],

@@ -1,38 +1,26 @@
+import { useState } from "react";
 import Image from "next/image";
+import { IconActivity, IconCalendarEvent, IconLayersIntersect, IconMessageCircle, IconNews, IconSettings, IconShieldCheck, IconShoppingBag } from '@tabler/icons-react';
 import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractdev.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoosee from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ProcessSec from "../components/ProcessSec";
-import CardItem from "../components/CardItem";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import { IconActivity,IconCalendarEvent, IconLayersIntersect, IconMessageCircle, IconNews, IconSettings, IconShieldCheck, IconShoppingBag} from '@tabler/icons-react';
-import CallToAction from "../components/CallToAction";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
+import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const Process = [
   {
     num: "1",
@@ -348,53 +336,6 @@ export default function Ecommerce(props) {
   };
 
 
-  const techDataForPage1 = {
-    All: [
-
-
-      {
-        img: "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-        head: "Great Wallet Application",
-        name: "Great Wallet is a cutting-edge iOS wallet designed for seamless integration with the Great Crypto Network (GREAT Blockchain). As part of a decentralized ecosystem, it drives the digital transformation of global economic governance. Powered by AI and machine learning, Great Wallet fosters transparency, efficiency, and sustainable economic growth in the era of the fourth industrial revolution.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-        head: "M7Coin Web Wallet",
-        name: "M7Coin Web Wallet revolutionizes crypto management with a seamless, secure, and intuitive platform. Effortlessly store, send, and receive M7Coins, ensuring a smooth experience in the fast-evolving world of digital assets.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-        head: "Aria Coin Cryptocurrency",
-        name: "Welcome to ARIA Currency – the future of seamless and secure transactions. Redefining digital currency with a commitment to security, accessibility, and efficiency, we empower individuals and businesses to transact with trust and confidence.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-
-
-    ],
-  };
 
   return (
     <>
@@ -506,24 +447,25 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <BlockchainNav/>
+      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/smart-contract-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Smart Contract Development Services"
-            ptag="Comfygen is dedicated to helping enterprises across India & the USA implement top-tier smart contract development services. As the Best smart contract development company in India, our highly skilled team of blockchain developers has expertise in delivering tailored smart contract solutions, bridging the expertise gap. We work tirelessly to provide secure, efficient, and innovative solutions that align with your business goals."
-            li="Expert Blockchain Developers"
-            li1="Tailored Smart Contract Solutions"
-            li2="Round-the-Clock Support"
-            li3="Secure, Efficient Transactions"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+        <HeroSectionForAllPages
+          heading="Smart Contract Development Services"
+          ptag="Comfygen is dedicated to helping enterprises across India & the USA implement top-tier smart contract development services. As the Best smart contract development company in India, our highly skilled team of blockchain developers has expertise in delivering tailored smart contract solutions, bridging the expertise gap. We work tirelessly to provide secure, efficient, and innovative solutions that align with your business goals."
+          li="Expert Blockchain Developers"
+          li1="Tailored Smart Contract Solutions"
+          li2="Round-the-Clock Support"
+          li3="Secure, Efficient Transactions"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/smart-contract-dev-hero-img.webp'
+        />
+
         <AboutSection
           title="About Company"
           heading="Smart Contract Development – Unlock Blockchain Expertise with Comfygen"
@@ -543,7 +485,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1] ">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -590,11 +532,17 @@ export default function Ecommerce(props) {
           subheading="Unlock the benefits of automation, security, and efficiency with our smart contract development solutions. Our expert team delivers secure, scalable contracts tailored to your business, streamlining processes and enhancing operational efficiency across various industries."
           techData={technologyData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Smart Contract Based Portfolio"
-          description="Empowering businesses with cutting-edge design and development. Our work reflects innovation, creativity, and a relentless pursuit of excellence."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Smart Contract Based Portfolio"
+            description="Empowering businesses with cutting-edge design and development. Our work reflects innovation, creativity, and a relentless pursuit of excellence."
+          />
+        </section>
+
+
+
         <CallToAction
           heading="Let’s hear what you have to say?"
           text="Get in touch with us and discuss your needs and requirements with our experts."
@@ -641,10 +589,13 @@ export default function Ecommerce(props) {
         </div>
 
 
-        <InfoSectionLeft
+        <InfoSection
           heading="Proven Experience in Complex Smart Contract Development Projects"
           description1="At Comfygen, we have been serious about maintaining quality and preciseness with every smart contract development project we take up. We have been handling clients from diverse smart contract development industries with different sets of requirements but have fulfilled them all with utmost priority. The best thing about our smart contract development services is that we try to meet the deadlines on priority without losing our pace on meeting quality expectations."
           description2="We have a team of dedicated smart contract developers who make use of the latest technologies not just to deliver great products but also to make them efficient and secure. Irrespective of how complex a smart contract development project might be, we make a tailored approach to meet the unique necessities of businesses from various domains. So, we await your smart contract development service request for a highly functional smart contract development company, despite the industry you belong to."
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/we-have-been-handling-smart-contract-development-project-of-varying-complexities.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
@@ -686,9 +637,13 @@ export default function Ecommerce(props) {
             "Makes use of the latest technology solutions to tailor your business-specific smart contract development."
           ]}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Do You Still Want to Know Anything About Us?"
           description1="In case you still have some queries associated with our smart contract development services, you can always connect with us in an instant. When you are ready, we can go ahead and discuss your requirements and needs to move ahead with the project."
+          description2=''
+          description3=''
+          dec=''
+          points={[]}
           imageSrc="https://www.comfygen.com/img/your-smart.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "

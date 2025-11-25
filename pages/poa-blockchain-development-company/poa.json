@@ -129,6 +129,24 @@
     ]
   },
 
+
+ "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a cutting-edge cryptocurrency built on its dedicated blockchain—not just another token. Featuring a powerful ‘Four Square’ architecture, it excels in speed, mining efficiency, seamless integration, and predictable growth. It is designed to surpass Bitcoin in strength, speed, and security. Hence, NASDAC Coin is purpose-built for businesses, establishing itself as the first true SUPER COIN in the blockchain industry.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay revolutionizes global transactions with instant, zero-fee transfers through its decentralized P2P blockchain technology, powered by the advanced YatriPay Virtual Machine (YVM). Offering seamless peer-to-peer payments guarantees security, efficiency, and accessibility. With the YatriPay Mobile App, users can onboard effortlessly, enabling truly borderless digital transactions worldwide.",
+            "link": "#"
+    }
+  ],
+
+
+
 "Frequently" :[
     {
       "num": "1",

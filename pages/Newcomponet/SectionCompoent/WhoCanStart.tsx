@@ -26,7 +26,7 @@ const WhoCanStart: React.FC<Props> = ({ title, description, cards }) => {
           {cards?.map((card, index) => (
             <div
               key={index}
-              className="bg-[#5556D1] text-white cursor-pointer p-8  flex flex-col justify-start transition-all duration-300 hover:bg-[#0f0f0f]"
+              className="bg-[#5556D1] text-white cursor-pointer p-8  flex flex-col justify-start transition-all duration-300 "
             >
               <h3 className="text-xl font-semibold mb-2">{card.heading}</h3>
               <p

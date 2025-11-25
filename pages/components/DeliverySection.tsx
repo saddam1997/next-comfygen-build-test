@@ -195,7 +195,7 @@ const DeliverySection = (props) => {
             <div className="relative z-10 2xl:w-10/12 w-11/12 lg:w-11/12 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
-                        We Provide Custom Delivery App Development Services in Diverse Sectors
+                       On-Demand Delivery App Development for Every Business Sector
                     </h2>
 
                     <p className="text-base font-normal mt-2 lg:w-2/3 mx-auto w-full">
