@@ -17,6 +17,7 @@ import ServicesSection from "../componentsnew/ServicesSection";
 import CardItem from "../components/ServiceSec";
 import ProcessSection from "../componentsnew/ProcessSection";
 import SolutionsFeature from "../componentsnew/SolutionsFeature";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
 
 
@@ -114,7 +115,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -461,11 +462,12 @@ export default function Ecommerce(props) {
 
         <HeroSectionForAllPages
           heading="Hybrid Crypto Exchange Development Company"
-          ptag="Comfygen, The Best Hybrid Crypto Exchange Development Company. Launch your future-ready trading platform with our hybrid crypto exchange development services. We provide the liquidity and speed of centralized exchanges with the security and privacy of decentralized models, giving your users the best of both worlds. Our hybrid crypto exchange development solutions are developed to handle high-volume trading, multiple cryptocurrencies, and scalable growth."
-          li="Lightning-fast trade execution"
-          li1="Bank-grade security protocols"
-          li2="Multi-currency & cross-chain support"
-          li3="Customizable UI/UX for brand identity"
+          ptag="Comfygen, The Best Hybrid Crypto Exchange Development Company. Launch your future-ready crypto trading platform with our hybrid crypto exchange development services. We provide the liquidity and speed of centralized crypto exchanges with the security and privacy of decentralized models, giving your users the best of both worlds. Our hybrid crypto exchange development solutions are developed to handle high-volume trading, multiple cryptocurrencies, and scalable growth."
+          li="AI-enhanced matching for quicker trades"
+          li1="Security that stays on-chain without slowing anything down"
+          li2="Intelligent monitoring that spots issues before they escalate"
+          li3="Liquidity tuned with machine-learning models"
+          li4="A future-proof architecture you can scale without headaches"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -495,18 +497,27 @@ export default function Ecommerce(props) {
 
         <ServicesSection
           heading="Our Hybrid Crypto Exchange Development Services"
-          subtitle="As a leading hybrid crypto exchange development company, Comfygen offers end-to-end services to build scalable, secure, and future-ready platforms. From core architecture to trending tech integrations, we provide everything you need to launch a high-performance hybrid cryptocurrency exchange that combines the benefits of centralized and decentralized trading models."
+          subtitle="As the best cryptocurrency exchange development company, Comfygen offers end-to-end hybrid crypto exchange development services. Developing a hybrid exchange isn’t just about mixing a CEX and a DEX. It’s about creating a platform that feels fast, safe, and effortless for the user while giving you the flexibility to scale. Comfygen handles every layer of that process for you."
           servicesData={JSON_DATA.servicesData} />
 
         <CardItem
           heading="Hybrid Crypto Exchange Development Solutions"
-          subheading="At Comfygen, we deliver cutting-edge hybrid cryptocurrency <a class='text-blue-500 font-semibold' href='/centralized-crypto-exchange-development'>centralized exchanges</a> solutions tailored for scalability, decentralization, and compliance, all while ensuring the fast, user-centric performance that today’s traders expect."
+          subheading="At Comfygen, we deliver cutting-edge hybrid cryptocurrency centralized exchanges solutions tailored for scalability, decentralization, and compliance, all while ensuring the fast, user-centric performance that today’s traders expect."
           techData={JSON_DATA.LeadingSoftware}
         />
 
+        <CallToAction
+          heading="Ready to Build Your Own Hybrid Crypto Exchange?"
+          text="Take your <a href='https://www.comfygen.com/crypto-trading-bot-development' class='underline font-semibold'>Crypto trading platform</a> to new heights with our advanced hybrid crypto exchange development services."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
+
         <ProcessSection
-          title="Hybrid Crypto Exchange Development Process"
-          description="At Comfygen, we follow a strategic, agile, and secure development process to deliver high-performance hybrid crypto exchanges. Our process combines deep industry expertise, cutting-edge tools, and compliance-first development to ensure your platform is scalable, reliable, and market-ready."
+          title="Our End-to-End Hybrid Crypto Exchange Development Process"
+          description="At Comfygen, we follow a strategic, agile, and secure hybrid crypto exchange development process to deliver high-performance hybrid crypto exchanges. Our process combines deep industry expertise, cutting-edge tools, and compliance-first development to ensure your platform is scalable, reliable, and market-ready."
           processSlides={Process} />
 
         {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
@@ -527,7 +538,16 @@ export default function Ecommerce(props) {
 
 
 
-        <SolutionsFeature title="Benefits of Our Hybrid Exchange Development" subtitle="At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services" data={JSON_DATA.servicesData1} />
+        <ConsultancyApproach
+          imageSrc="https://www.comfygen.com/image/crypto-trading-bot-clone-scripts-for-automated-trading.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+          Head={JSON_DATA.servicesDataHeading}
+          ItemData={JSON_DATA.servicesDataDetails}
+
+        />
+
+
 
 
         {/* <TrendsSection
@@ -561,21 +581,21 @@ export default function Ecommerce(props) {
             "Post-Launch Support",
           ]}
         />
-
+{/* 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/image/crypto-trading-bot-clone-scripts-for-automated-trading.webp"
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
-        />
+        /> */}
 
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-        
+
       </div>
     </>
   );

@@ -55,37 +55,37 @@ const Process = [
   {
     title: "Requirement Analysis & Strategy Planning",
     description:
-      "We start by conducting a thorough requirement analysis to understand your insurance business, customer needs, and regulatory requirements. Our qualified and talented insurance app developers work closely with stakeholders to define app objectives, technical specifications, and a clear roadmap for your digital insurance solution. This step ensures we align our development with your business vision and user demands.",
+      "We start by understanding your insurance business, user needs, and compliance rules. Our team sets clear goals, technical specs, and a roadmap that matches your vision.",
   },
   {
     title: "UI/UX Design & Wireframing",
     description:
-      "Our insurance application development prioritizes user experience with intuitive, user-friendly designs. We create engaging wireframes and prototypes that outline the user journey, focusing on easy navigation, modern aesthetics, and responsiveness. This ensures the final app design is both functional and visually appealing, enhancing user satisfaction and retention.",
+      "We design simple, intuitive screens and wireframes that map the full user journey. The focus stays on easy navigation, modern visuals, and a smooth experience.",
   },
   {
     title: "App Development & Feature Implementation",
     description:
-      "Our brilliant insurance app developers build robust, secure, and scalable insurance applications for both iOS and Android platforms. We focus on incorporating essential features like policy management, claim tracking, premium payments, and real-time notifications. By leveraging the latest tools and technologies, we ensure that your app delivers seamless performance and an optimal user experience.",
+      "Our App developers build secure, scalable insurance apps for Android and iOS. Key features include policy management, claims, payments, and real-time alerts.",
   },
   {
     title: "Testing & QA",
     description:
-      "To guarantee flawless performance, we conduct comprehensive testing, including functional, usability, performance, and security testing. Our Digital insurance app development agency ensures that every feature is rigorously tested, ensuring the app is fully compliant with industry regulations, such as GDPR and PCI-DSS, protecting user data and enhancing trust.",
+      "Every feature goes through strict functional, performance, and security testing. We ensure the app meets industry regulations and handles data safely.",
   },
   {
     title: "Compliance & Security Checks",
     description:
-      "Compliance with regulatory standards is a cornerstone of our development process. We perform thorough compliance checks to ensure your insurance app adheres to global standards, including data protection regulations. Our security protocols, such as encryption and multi-factor authentication, keep your app safe from potential threats, building user confidence.",
+      "We verify that your app follows major data protection standards and add strong security layers like encryption and multi-factor authentication.",
   },
   {
     title: "Deployment & Launch",
     description:
-      "Once the app has passed all testing phases, we proceed with the deployment. We launch your app on both app stores and cloud infrastructures, ensuring maximum reach and scalability. Our team works closely with you to monitor the app’s performance, ensuring a smooth and efficient launch.",
+      "After testing, we publish your app to both app stores and set up cloud hosting for stability and scale.",
   },
   {
     title: "Post-launch Support & Maintenance",
     description:
-      "Our commitment doesn’t end with deployment. We provide ongoing post-launch support and maintenance to ensure the continuous performance, security, and compliance of your insurance app. Regular updates, bug fixes, and monitoring services help keep the app up-to-date and fully optimized for long-term success.",
+      "We stay with you after launch, handling updates, bug fixes, monitoring, and security improvements to keep your app running smoothly.",
   },
 ];
 
@@ -269,8 +269,8 @@ export default function ClinicalApp(props: any) {
       }
     ]
   };
-  
-  
+
+
 
   const structuredData = [
     {
@@ -318,9 +318,9 @@ export default function ClinicalApp(props: any) {
         "Blockchain-based Insurance App Development"
 
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
 
@@ -374,28 +374,28 @@ export default function ClinicalApp(props: any) {
       ]
     },
     {
-     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-      "areaServed": "US, IN",
-      "email": "sales@comfygen.com",
-          "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]    
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "areaServed": "US, IN",
+        "email": "sales@comfygen.com",
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://youtube.com/@comfygenbusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://in.pinterest.com/comfygenpvt/"
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -407,11 +407,11 @@ export default function ClinicalApp(props: any) {
         "@type": "ContactPoint",
         "contactType": "sales",
         "contactOption": "WhatsApp",
-            "telephone": "+91 9587867258",
-    "areaServed": ["IN","US","CA","GB","AD","AU","AT","BS","BH","IO","KM","CU","AR","CW","CY","DK","DM","EG","FK","FI","FR","DE","GR","GL","HK","IS","IN","ID","IT","JP","JE","JO","KW","KG","KR","MX","FM","NZ","NI","OM","PE","PH","PL","PT","QA","RO","RU","SA","SG","SE","SZ","CH","TH","TR","TN","UA","UM","AE","039","155","154","151","150"],
-    "email": "sales@comfygen.com",
-            
-            "availableLanguage": "en, in"
+        "telephone": "+91 9587867258",
+        "areaServed": ["IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+        "email": "sales@comfygen.com",
+
+        "availableLanguage": "en, in"
       },
       "sameAs": [
         "https://www.facebook.com/comfygen",
@@ -421,45 +421,47 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-private-limited",
         "https://in.pinterest.com/comfygenpvt/"
       ]
-    
+
     },
-    
-    
+
+
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Insurance App Development Services",
-      "image":"Hero section image",
-      "description":"Comfygen offers top-tier insurance app development services for health, auto, life, and business sectors. Build secure, scalable, and AI-integrated mobile insurance apps tailored to your business needs.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"829"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Insurance App Development Services",
+      "image": "Hero section image",
+      "description": "Comfygen offers top-tier insurance app development services for health, auto, life, and business sectors. Build secure, scalable, and AI-integrated mobile insurance apps tailored to your business needs.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "829"
+      }
 
     },
     {
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
       "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
+        "@type": "ListItem",
+        "position": 1,
         "name": "Home",
-        "item": "https://www.comfygen.com/"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
+        "item": "https://www.comfygen.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
         "name": "Insurance App Development Company",
-        "item": "https://www.comfygen.com/insurance-app-development"  
+        "item": "https://www.comfygen.com/insurance-app-development"
       }]
     }
-    
 
-    
+
+
   ];
 
   return (
     <>
-     <Head>
+      <Head>
         <title>Best Insurance App Development Company | Custom Solutions</title>
 
         <meta
@@ -562,12 +564,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-hero.webp')]" >
           <HeroSectionForAllPages
-            heading="Custom Insurance Mobile App Development Company for Brokers, Startups, and Enterprises"
-            ptag="Our cutting-edge insurance app development solutions help you bring your insurance ideas to life. Whether it's a startup, broker, or enterprise, we build secure, user-friendly, and fully compliant insurance apps. Our apps are designed to meet your exact business needs, whether you need them for claims management, policy tracking, or customer engagement."
-            li="Intuitive & Modern Insurance App Design"
-            li1="10+ Years of Expertise in Fintech & InsurTech"
-            li2="On-Time Delivery with Ongoing Support"
-            li3="AI, Blockchain, and Cloud Integration"
+            heading="Insurance Mobile App Development Company"
+            ptag="Comfygen’s insurance Mobile app development solutions help you bring your insurance ideas to life. Whether it's a startup, broker, or enterprise, we provide secure, user-friendly, and fully compliant insurance app development services. Our insurance app development solutions are designed to meet your exact business needs, whether you need them for claims management, policy tracking, or customer engagement."
+            li="Custom Insurance App Development for Startups, Brokers & Enterprises"
+            li1="Secure, Compliant & Scalable Architecture"
+            li2="Advanced Features for Claims, Policy & Customer Management"
+            li3="AI-Powered Automation for Better Efficiency & User Experience"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -579,26 +581,26 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title="About Company"
           heading="Leading Insurance App Development Company for Modern Insurers"
-          description1="In today’s digital age, insurance businesses need modern and intuitive mobile app solutions to stay ahead. At Comfygen, we specialize in insurance app development services that cater to insurers, brokers, and agencies of all sizes. From policy management and claims processing to AI-driven risk analysis and customer engagement, our team builds secure, scalable, and user-friendly apps that transform traditional insurance services into seamless digital experiences."
-          description2="Backed by over 10 years of expertise in <a href='/finance-app-development' class='text-blue-500 font-semibold'>FinTech app development</a> and InsurTech, we leverage advanced technologies such as AI/ML, blockchain, and cloud computing to deliver feature-rich, regulation-compliant insurance mobile apps. Our dedicated insurance app developers work closely with you to ensure your digital insurance solution aligns with your unique needs and future goals."
-          description3="Whether you’re starting from scratch or upgrading existing systems, Comfygen is your go-to partner for building on-demand insurance apps that drive performance, security, and customer satisfaction."
-         
+          description1="In today’s digital world, insurance businesses need modern and intuitive insurance mobile app development solutions to stay ahead. At Comfygen, we specialise in insurance app development services that cater to insurers, brokers, and agencies of all sizes. From policy management and claims processing to AI-driven risk analysis and customer engagement, our App development team builds secure, scalable, and user-friendly mobile app development solutions that transform traditional insurance services into seamless digital experiences."
+          description2="10 years back, FinTech app development and InsurTech, we leveraged advanced technologies such as AI/ML, blockchain, and cloud computing to deliver a feature-rich, regulation-compliant insurance mobile app development solution. Our dedicated insurance app developers work closely with you to ensure your digital insurance solution aligns with your unique needs and future goals."
+          description3=""
+
           imageSrc="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection 
-          heading="Explore Our End-to-End Insurance Mobile App Development Services Tailored for Your Business" 
-          subtitle="Comfygen delivers scalable, secure, and innovative insurance mobile app development services tailored to modern InsurTech needs." 
-          servicesData={JSON_DATA.servicesData}/>
 
-          <Features />
+        <ServicesSection
+          heading="Our Insurance Mobile App Development Services"
+          subtitle="Building a reliable insurance mobile app takes more than forms and payment screens. You need a smooth, trustworthy experience that makes life easier for customers and keeps your internal team in control. That’s exactly where Comfygen delivers with its end-to-end insurance mobile app development services."
+          servicesData={JSON_DATA.servicesData} />
+
+        <Features />
 
         <ContactFromCenter />
 
-        
+
         <PortfolioSec
           techData={techDataForPage1}
           heading="Our Insurance App Development Portfolio"
@@ -608,9 +610,9 @@ export default function ClinicalApp(props: any) {
         <AdminUserPanel />
 
         <SolutionSec
-          heading="A Variety of Insurance Application Solutions for Every Industry"
-          subheading="The insurance apps we create at Comfygen are customized to meet the requirements of every industry and customer. We can help you better serve your clients in the following ways:"
-          techData={technologyData}/>
+          heading="A Variety of Insurance Application Development Solutions for Every Industry"
+          subheading="The insurance mobile application we create at Comfygen is customised to meet the requirements of every industry and customer. We can help you better serve your clients in the following ways:"
+          techData={technologyData} />
 
         <TrendsSection
           heading="The Emerging Technologies We Use For Insurance Mobile App Development"
@@ -618,10 +620,10 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-          <ProcessSection 
-            title="How We Develop Our Insurance Apps"
-            description="Our insurance app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards." 
-            processSlides={Process} />
+        <ProcessSection
+          title="Our End-to-End insurance mobile App development process"
+          description="Our insurance mobile app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards."
+          processSlides={Process} />
 
         <TechStack
           title="Technologies We Use in Insurance Application Development"
@@ -636,7 +638,7 @@ export default function ClinicalApp(props: any) {
         />
         <HireDeveloper
           heading="Hire Our Dedicated Insurance App Developers"
-          text="At Comfygen, we stand as a leading mobile app development company, offering expert services that cater to your specific insurance app needs. With our deep industry expertise, we craft insurance apps that are secure, compliant, and optimized for a seamless user experience across iOS, Android, and web platforms. We take pride in building advanced, scalable solutions that drive business growth and meet evolving customer demands."
+          text="At Comfygen, we stand as a leading <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development company</a>, offering expert services that cater to your specific insurance app needs. With our deep industry expertise, we craft insurance apps that are secure, compliant, and optimized for a seamless user experience across iOS, Android, and web platforms. We take pride in building advanced, scalable solutions that drive business growth and meet evolving customer demands."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
@@ -647,7 +649,7 @@ export default function ClinicalApp(props: any) {
             "Custom Solutions Aligned with Your Business Goals",
             "Cutting-Edge Technologies Integration",
             "End-to-End Development and Support"
-          ]}          
+          ]}
         />
         <ClientTestimonials
           heading="Testimonials from Our Clients"

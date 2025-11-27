@@ -329,11 +329,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Exam Preparation App Development Company | Custom Test Prep App Solutions
+          Exam Preparation App Development Company 
         </title>
         <meta
           name="description"
-          content="Looking for expert Exam Preparation App Development? Comfygen builds custom test prep, NEET/JEE, UPSC, and AI-based exam apps with mock tests, live classes, performance tracking & more. Hire top edtech developers today!"
+          content="Comfygen is a leading exam preparation app development company, delivering custom test prep apps for NEET, JEE, UPSC, and competitive exams. Get AI-powered learning, mock tests, live classes & analytics. "
         />
 
         <meta name="keywords" content="Exam Preparation App Development, Custom Test Prep App, NEET App Development, JEE Coaching App, UPSC Exam App, AI Learning App, Mock Test App, EdTech App Development, Live Class App, Student Performance Tracking App" />
@@ -423,12 +423,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-hero.webp')]" >
           <HeroSectionForAllPages
-            heading="Exam Preparation App Development Services That Empower Learners"
-            ptag="Build powerful exam preparation apps designed to boost student success. Our custom exam preparation app development solutions offer intuitive interfaces, AI-driven personalized learning, real-time analytics, and seamless integration with live classes. Empower learners with engaging, scalable, and secure exam prep apps tailored to your needs."
-            li="AI-powered personalized learning paths"
-            li1="Real-time performance analytics"
-            li2="Interactive mock tests & quizzes"
-            li3="Seamless live class integration"
+            heading="Top-Notch Exam Preparation App Development Company"
+            ptag="Transform learning outcomes with Comfygen’s advanced exam preparation app development services. We build AI-driven test prep apps that enhance productivity, boost exam success, and deliver an engaging digital learning experience. Our scalable and secure solutions support multi-exam goals including NEET, JEE, UPSC, Government exams, and more."
+            li="AI-powered adaptive learning"
+            li1="Smart analytics & progress tracking"
+            li2="Interactive mock tests and quizzes"
+            li3="Live classes, doubt-solving & content management"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}

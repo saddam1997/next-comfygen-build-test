@@ -86,9 +86,9 @@ const Features: React.FC = () => {
     <div className="lg:py-16 py-10 bg-[#fff]">
       <div className="space-y-2">
         <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
-        We Develop Medicine Delivery Apps With Advanced Panel Features
+       Advanced Features of Developing Medicine Delivery Apps
         </h2>
-        <p className="text-base text-center font-normal lg:w-1/2 w-full mx-auto">The Comfygen team specializes in developing feature-rich medicine delivery apps with advanced control panels for seamless operations. Medicine doorstep delivery app development enhances user convenience, streamlines pharmacy management, and ensures efficient deliveries.        </p>
+        <p className="text-base text-center font-normal lg:w-1/2 w-full mx-auto">Comfygen specializes in developing feature-rich medicine delivery app solutions with advanced control panels for seamless operations. Medicine doorstep delivery app development enhances user convenience, streamlines pharmacy management, and ensures efficient deliveries.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto border-2 rounded-full border-[#f1f1f1] 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
         {featuresData.map((feature) => (

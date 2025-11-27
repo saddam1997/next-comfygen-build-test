@@ -267,10 +267,11 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Token Development Company | Custom Crypto Token Creation Service</title>
+        <title>Token Development Company | Crypto Token Development India, USA, UAE
+</title>
         <meta
           name="description"
-          content="Comfygen offers professional token development services for startups and enterprises. Create ERC20, BEP20, or custom blockchain tokens with full security, scalability, and exchange-ready integration."
+          content="Comfygen offers professional token development services in India, the USA, and the UAE for startups and enterprises. Create custom blockchain tokens with full security, scalability, and exchange-ready integration."
         />
 
         <meta name="keywords" content="Crypto Token Development, Utility Token Development, Security Token Development, DeFi Token Development, Custom Blockchain Token Solutions, Blockchain Token Development Company, Token Creation Services, Cryptocurrency Token Development, Tokenomics Development, Smart Contract Token Development, ERC20 Token Development, BEP20 Token Development" />
@@ -311,7 +312,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-20">
         <HeroSectionForAllPages
           heading="Crypto Token Development Company"
-          ptag="Are you searching top-notch crypto token development company to develop your own token for businesses and startups? Our expert blockchain developers help you design, deploy, and scale your token on top blockchain networks like Ethereum, Binance Smart Chain, Polygon, and more."
+          ptag="Looking for a Crypto token development Service? and searching top-notch crypto token development company to develop your own token for your businesses and startups? Our expert blockchain developers help you design, deploy, and scale your token on top blockchain networks like Ethereum, Binance Smart Chain, Polygon, and more."
           li1="Custom Token Solutions"
           li2="Multi-Blockchain Expertise"
           li3="Security & Compliance"

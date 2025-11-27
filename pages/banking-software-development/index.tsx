@@ -26,6 +26,7 @@ import ServicesSection from "../componentsnew/ServicesSection";
 import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import ProcessSection from "../componentsnew/ProcessSection";
+import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
 
 const HeroSectionForAllPages = dynamic(
   () => import("../components/HeroSectionForAllPages"),
@@ -415,7 +416,7 @@ export default function ClinicalApp(props: any) {
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp')]" >
           <HeroSectionForAllPages
             heading="Custom Banking Software Development Company for Secure Fintech Solutions"
-            ptag="Comfygen is a top custom banking software development company that builds secure, scalable, and future-ready fintech solutions. We specialize in core banking systems, AI-powered mobile apps, blockchain integration, and cloud-native platforms. Our banking software developers empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
+            ptag="Comfygen is a top software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
             li="Custom Core Banking Software"
             li1="Secure, Cloud-Native & Scalable Platforms"
             li2="AI, ML & Blockchain Banking Solutions"
@@ -431,8 +432,8 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title="About Company"
           heading="Best Banking Software Development Company for Startup"
-          description1="Launching a fintech startup requires the right technology partner — one that understands the complexity of modern banking. As the best banking software development company for startups, Comfygen offers end-to-end banking software development services designed to help new financial ventures launch fast, scale confidently, and stay secure."
-          description2="We specialize in delivering robust banking & financial software development solutions that are tailored to the unique needs of emerging fintech businesses. Whether you're building a digital-only bank, a microfinance platform, or a peer-to-peer lending app, our expert developers and consultants are here to guide you through every step — from ideation to deployment."
+          description1="Launching a fintech startup requires the right Bank Software Development partner, one that understands the complexity of modern banking systems. As the best banking software development company for startups, Comfygen offers end-to-end bank software development services designed to help new financial ventures launch fast, scale confidently, and stay secure."
+          description2="We specialize in delivering strong banking & financial software development solutions that are tailored to the unique needs of emerging fintech businesses. Whether you're building a digital-only bank, a microfinance platform, or a <a href='https://www.comfygen.com/p2p-payment-app-development' class='text-blue-600 font-semibold'>peer-to-peer payment app</a>, our expert blockchain developers and <a href='https://www.comfygen.com/blockchain-consulting-services' class='text-blue-600 font-semibold'>blockchain consulting service</a> guide you through every step from ideation to BankSoftware Development."
           description3="At Comfygen, we blend deep domain knowledge with cutting-edge tech like AI, Blockchain, and cloud computing to create agile, regulatory-compliant banking platforms. Partner with us to build a future-ready fintech product that grows with your startup."
           imageSrc="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-about.webp"
           link="/about-us"
@@ -440,17 +441,24 @@ export default function ClinicalApp(props: any) {
         />
        
 
-        <ServicesSection heading="We offer Banking Software Development Services" subtitle="At Comfygen, we provide comprehensive banking software development services tailored to meet the unique needs of financial institutions, fintech startups, and banks. Our skilled banking software developers leverage cutting-edge technology to build secure, scalable, and innovative banking applications that drive efficiency and enhance user experiences." servicesData={JSON_DATA.servicesData}/>
+        <ServicesSection heading="Our Banking Software Development Services" subtitle="At Comfygen, we provide comprehensive banking software development services tailored to meet the unique needs of financial institutions, fintech startups, and banks. Our skilled banking software developers leverage cutting-edge technology to build secure, scalable, and innovative banking applications that drive efficiency and enhance user experiences." servicesData={JSON_DATA.servicesData}/>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
-        <ConsultancyApproach
+        <IndustriesServe
+          heading="Industries We Serve: Tailored Banking Software Solutions for Every Sector"
+          description="At Comfygen, we specialize in providing cutting-edge banking software development services for a wide range of industries in the financial sector. Our tailored online banking software development solutions help institutions of all types streamline their operations, enhance customer experiences, and stay competitive in an ever-evolving digital landscape."
+        />
+
+
+
+        {/* <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
-        />
+        /> */}
         <PortfolioSec
           techData={JSON_DATA.techDataForPage1}
           heading="Take a look at some of the banking software solutions we have developed"
@@ -467,13 +475,13 @@ export default function ClinicalApp(props: any) {
 
         <TrendsSection
           heading="Latest Technologies We Use for Banking & Financial Software Development"
-          subtitle="At Comfygen, a trusted <a class='text-white underline  font-semibold' href='/banking-software-development'>mobile app development company</a>  company, we integrate cutting-edge technologies to build robust, secure, and scalable digital banking solutions. Our advanced tech stack ensures seamless user experiences, real-time data processing, and future-proof app architecture that aligns with modern financial needs."
+          subtitle="At Comfygen, a trusted mobile app development company company, we integrate cutting-edge technologies to build robust, secure, and scalable digital banking solutions. Our advanced tech stack ensures seamless user experiences, real-time data processing, and future-proof app architecture that aligns with modern financial needs."
           trends={JSON_DATA.Emerging}
         />
 
         
 
-          <ProcessSection title="Our Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking solutions that align with your business goals." processSlides={JSON_DATA.Process} />
+          <ProcessSection title="Our End-to-End Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile banking software development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking software development solutions that align with your business goals." processSlides={JSON_DATA.Process} />
 
         <TechStack
           title="Tech Stack We Use for Banking Software Development"
@@ -487,19 +495,18 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
         <HireDeveloper
-          heading="Hire Our Dedicated Banking Software Developers"
-          text="Looking to build robust and secure banking software? At Comfygen, we have a team of highly skilled banking software developers ready to bring your vision to life using cutting-edge technologies and seamless functionality."
-          text1="With 10+ years of experience in banking and fintech software development, our expert developers specialize in crafting custom banking solutions that are secure, scalable, and highly optimized for financial operations. Whether you need a mobile banking app, core banking system, or a secure payment gateway, our team ensures a smooth, high-performance experience for your users."
+          heading="Hire Our Banking Software Developers"
+          text="Comfygen’s skilled banking software developers to build secure, scalable, and high-performance bank software development solutions. With years of fintech experience, our team delivers custom apps, core banking systems, and secure payment platforms built to industry standards."
+          text1=""
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "Our dedicated banking software developers are committed to:",
-            "Developing custom solutions tailored to your business needs.",
-            "Building secure, compliant applications that meet industry standards.",
-            "Integrating advanced technologies such as AI, blockchain, and cloud infrastructure for enhanced performance.",
-            "Delivering scalable apps that grow with your business and handle high transaction volumes."
+            "Custom banking solutions",
+            "Strong security and compliance",
+            " AI, blockchain, and cloud integration",
+            "Scalable systems for high transaction volumes"
           ]}          
         />
         <ClientTestimonials

@@ -45,7 +45,7 @@ const Milestones = () => {
             name: "U",
             rating: 5.0,
             logo: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/u.svg",
-            link: " https://www.designrush.com/agency/profile/comfygen"
+            link: "https://www.designrush.com/agency/profile/comfygen"
         },
         {
             name: "G",

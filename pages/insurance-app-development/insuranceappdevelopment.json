@@ -155,32 +155,32 @@
   {
     "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
     "title": "Experience in Fintech & InsurTech",
-    "description": "With deep expertise in both fintech and insurtech, Comfygen offers unparalleled knowledge in developing innovative insurance applications. Our team understands the unique challenges and demands of the insurance industry, ensuring we build solutions that are intuitive, secure, and perfectly aligned with your business goals."
+    "description": "We’ve spent years building <a href='https://www.comfygen.com/finance-app-development' class='text-blue-600 font-semibold'>fintech</a> and insurtech products, so we understand how claims, underwriting, policies, and compliance all connect. That lets us build insurance apps that feel simple for users and powerful for your operations."
   },
   {
     "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Compliance with Industry Regulations (HIPAA, GDPR, etc.)",
-    "description": "We prioritize compliance with industry regulations such as HIPAA, GDPR, and PCI-DSS in all our insurance app development services. Our insurance apps are built with the highest security standards, ensuring sensitive customer data is protected and that you meet the legal and regulatory requirements for operating in the insurance industry."
+    "title": "Compliance with Industry Regulations",
+    "description": "Your app is built to meet strict standards like <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>HIPAA</a>, GDPR, and PCI-DSS. We handle the technical and regulatory details so you can operate confidently without worrying about data risks."
   },
   {
     "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Agile Development and End-to-End Services",
-    "description": "Our agile development approach enables us to provide flexible and responsive insurance app development services that can adapt to your evolving needs. From initial concept to deployment and ongoing support, we offer end-to-end digital insurance app development services that ensure timely delivery and seamless user experiences."
+    "title": "Agile, End-to-End Development",
+    "description": "Our agile approach helps you move fast. From strategy and design to development, launch, and support, we stay aligned with your goals and adapt quickly as requirements evolve."
   },
   {
     "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Dedicated Team of Expert App Developers",
-    "description": "We take pride in our dedicated team of qualified and talented insurance app developers, each specializing in creating custom insurance applications. Our team is committed to building high-performance, secure, and scalable apps that meet the unique demands of the insurance industry."
+    "title": "Dedicated Expert Developers",
+    "description": "You work with a focused team that understands the insurance domain, user behavior, and security expectations. They build apps that run smoothly under pressure and scale as your audience grows."
   },
   {
     "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
     "title": "Advanced Security Features",
-    "description": "We implement state-of-the-art security measures in every insurance app we develop, including end-to-end encryption, biometric authentication, and secure transaction protocols. These features protect user data and ensure the integrity and security of all transactions, earning the trust of both insurers and policyholders."
+    "description": "We bake in security from day one, including encryption, biometrics, fraud prevention tools, and secure transaction layers to protect sensitive information and strengthen user trust."
   },
   {
     "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
     "title": "Scalable Architecture",
-    "description": "We design insurance apps with a scalable architecture that allows your platform to grow alongside your business. Whether you’re expanding services, adding new features, or increasing your user base, our apps are built to support future growth without compromising performance."
+    "description": "Your insurance app is built on a flexible foundation that supports growth. Whether you expand into new regions, add digital products, or onboard more users, performance stays steady and reliable."
   }
 ]
 

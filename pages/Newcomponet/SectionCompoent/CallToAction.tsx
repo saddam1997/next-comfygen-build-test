@@ -20,8 +20,7 @@ const CallToAction = ({
                         <h2 className="xl:text-4xl text-3xl text-[#fff] mt-3 font-semibold">
                             {heading}
                         </h2>
-                        <p className="text-base text-white">
-                            {text}
+                        <p className="text-base text-white" dangerouslySetInnerHTML={{__html: text}}>
                         </p>
                         <div className="mt-7 z-10 relative">
                             <Link href={buttonLink || "#"} passHref>

@@ -102,10 +102,11 @@ const Features: React.FC = () => {
       <div className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95 lg:py-16 py-10">
         <div className="space-y-2">
           <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold text-white">
-          AI and Blockchain-Based Insurance Application Development Solutions
+         Advanced Features of Insurance Mobile App Development
           </h2>
           <p className="text-white lg:w-1/2 mx-auto text-center">
-          Comfygen offers cutting-edge AI and blockchain-based insurance app development solutions that modernize claims, underwriting, and policy management. Providers and policyholders alike benefit from our secure, transparent, and automated insurance systems.
+         At Comfygen, we specialise in providing feature-rich insurance app development services with powerful, intuitive panels for both users and administrators. Our user panels focus on convenience and transparency, while admin panels deliver total control, analytics, and automation to streamline insurance operations.
+
           </p>
         </div>
 

@@ -286,6 +286,48 @@
       "features": []
     }
   ],
+
+
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/astrotalk-app-clone.webp",
+      "title": "Astrotalk App Clone",
+      "description": "Build an Astrotalk-like astrology app with real-time astrologer consultations, AI-powered horoscope predictions, and secure chat/video calling features. Deliver a seamless, engaging experience for users seeking instant spiritual guidance.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/nebula-app-clone.webp",
+      "title": "Nebula App Clone",
+      "description": "Create a Nebula-style astrology app offering personalized horoscopes, zodiac insights, and compatibility analysis. Designed for high engagement, smooth navigation, and accurate celestial predictions.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/cHANI-app-clone.webp",
+      "title": "CHANI App Clone",
+      "description": "Develop a CHANI-like astrology app enriched with deep astrological insights, self-care rituals, and guided teachings. Ideal for users seeking a mindful, spiritually connected astrology experience.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/co-star-app-clone.webp",
+      "title": "Co-Star App Clone",
+      "description": "Launch a Co-Star-inspired astrology app with hyper-personalized birth charts, real-time planet tracking, and AI-powered astrological reports. Perfect for users who want science-backed astrology delivered with modern design.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/life-palmistry-app-clone.webp",
+      "title": "Life Palmistry App Clone",
+      "description": "Build a Life Palmistry-style app with AI-based palm scanning, detailed hand line analysis, and accurate life predictions. Offer users an interactive and personalized palm reading journey.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/astrology-app-development/astrology-zone-app-clone.webp",
+      "title": "Astrology Zone App Clone",
+      "description": "Develop an Astrology Zone-like app with daily, weekly, and monthly horoscopes, zodiac guidance, and push notifications. Provide users with reliable, expert-level astrology insights anytime.",
+      "buttonText": "View Demo"
+    }
+  ],
+
+
   "consultancyHead": [
     {
       "num": "1",

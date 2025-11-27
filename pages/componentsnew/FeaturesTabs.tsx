@@ -29,6 +29,7 @@ const Features: React.FC<FeaturesProps> = ({ featuresData, heading = "Essential 
         <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
           {heading}
         </h2>
+        
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 p-2 mx-auto border-2 rounded-full border-[#f1f1f1] 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
         {featuresData && featuresData.length > 0 ? featuresData?.map((feature) => (

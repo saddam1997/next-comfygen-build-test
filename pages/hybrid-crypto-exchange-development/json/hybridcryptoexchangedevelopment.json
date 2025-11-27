@@ -279,8 +279,8 @@
   "consultancyHead": [
     {
       "num": "1",
-      "title": "We’ve Built Hybrid Exchange Clones of Leading Hybrid Crypto Platforms",
-      "desc": "At Comfygen, we specialize in developing powerful hybrid crypto exchange clones modeled after the industry's most advanced platforms. These exchanges blend centralized performance with decentralized security and transparency, offering the best of both worlds. From secure user custody to high-speed trading engines, our clones are built to empower next-gen digital asset trading platforms tailored to your business goals."
+      "title": "Hybrid Exchange Clone script of Leading Hybrid Crypto Platforms",
+      "desc": "At Comfygen, we specialize in developing powerful hybrid crypto exchange clone scripts modeled after the industry's most advanced platforms. These exchanges blend centralized performance with decentralized security and transparency, offering the best of both worlds. From secure user custody to high-speed trading engines, our Hybrid Exchange Clone script is built to empower next-gen digital asset crypto trading platforms tailored to your business goals."
     }
   ],
   "consultancyData": [
@@ -309,6 +309,11 @@
       "desc": "Unizen is a CeDeFi (Centralized + DeFi) hybrid platform that supports smart trading, staking, and ecosystem dApps. We develop a fully modular Unizen clone with staking, liquidity pools, and real-time trading powered by both DeFi and CeFi infrastructure."
     }
   ],
+
+
+
+
+
   "cardData": [
     {
       "num": "1",
@@ -574,39 +579,39 @@
     }
   ],
 
- "servicesData1": [
+  "servicesDataHeading": [
     {
-      "title": "Best of Both Worlds: Centralized and Decentralized Models",
-      "description": "Our hybrid exchange software merges the strengths of centralized and decentralized models. Centralized systems offer fast trade execution and liquidity, while decentralized systems enhance transparency, security, and user control over funds. This combination allows users to enjoy quick trades with the assurance of safety and autonomy.",
-      "features": []
+      "num": "1",
+      "title": "Benefits of Our Hybrid Exchange Development",
+      "desc": "At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services"
+    }
+  ],
+  "servicesDataDetails": [
+    {
+      "title": "Centralized and Decentralized Models",
+      "desc": "Our hybrid exchange software merges the strengths of centralized and decentralized models. Centralized systems offer fast trade execution and liquidity, while decentralized systems enhance transparency, security, and user control over funds. This combination allows users to enjoy quick trades with the assurance of safety and autonomy."
     },
     {
       "title": "Enhanced Security Features",
-      "description": "Security is a top priority. We integrate multi-signature wallets, two-factor authentication (2FA), and end-to-end encryption to safeguard users' funds and personal information. Additionally, with decentralized architecture, users retain full control over their private keys, minimizing the risks of hacking and unauthorized access.",
-      "features": []
+      "desc": "Security is a top priority. We integrate multi-signature wallets, two-factor authentication (2FA), and end-to-end encryption to safeguard users' funds and personal information. Additionally, with decentralized architecture, users retain full control over their private keys, minimizing the risks of hacking and unauthorized access."
     },
     {
       "title": "Scalability for High Traffic",
-      "description": "Our hybrid exchange software is designed for high scalability. Whether you're handling thousands or millions of transactions daily, our platform can handle high traffic without compromising performance. With efficient load balancing and optimized infrastructure, your exchange can grow seamlessly as your user base expands.",
-      "features": []
+      "desc": "Our hybrid exchange software is designed for high scalability. Whether you're handling thousands or millions of transactions daily, our platform can handle high traffic without compromising performance. With efficient load balancing and optimized infrastructure, your exchange can grow seamlessly as your user base expands."
     },
     {
       "title": "Liquidity Aggregation",
-      "description": "Liquidity is crucial for smooth trading. Our hybrid exchange platform integrates liquidity aggregation from multiple sources, ensuring deep market liquidity even during high volatility. This leads to better price execution and reduces slippage for users, creating a more efficient trading environment.",
-      "features": []
+      "desc": "Liquidity is crucial for smooth trading. Our hybrid exchange platform integrates liquidity aggregation from multiple sources, ensuring deep market liquidity even during high volatility. This leads to better price execution and reduces slippage for users, creating a more efficient trading environment."
     },
     {
       "title": "Cross-Chain Support",
-      "description": "The hybrid exchange platform supports cross-chain trading, allowing users to trade assets across different blockchain networks. This feature increases market access and liquidity, enabling users to seamlessly swap tokens from one blockchain to another without relying on centralized intermediaries.",
-      "features": []
+      "desc": "The hybrid exchange platform supports cross-chain trading, allowing users to trade assets across different blockchain networks. This feature increases market access and liquidity, enabling users to seamlessly swap tokens from one blockchain to another without relying on centralized intermediaries."
     },
     {
       "title": "Fast and Reliable Trading Engine",
-      "description": "Our high-performance trading engine ensures low-latency execution, even during periods of high demand. With real-time order matching and minimal downtime, your users can enjoy a seamless and responsive trading experience. The engine can also handle high-frequency trading (HFT) for professional traders looking for speed and precision.",
-      "features": []
+      "desc": "Our high-performance trading engine ensures low-latency execution, even during periods of high demand. With real-time order matching and minimal downtime, your users can enjoy a seamless and responsive trading experience. The engine can also handle high-frequency trading (HFT) for professional traders looking for speed and precision."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",

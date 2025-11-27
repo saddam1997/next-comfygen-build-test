@@ -116,7 +116,9 @@ export default function AppcardSlider({
                     <h3 className="text-[#212121] text-lg font-semibold">{item.title}</h3>
                     <p
                       className="text-[#212121] text-sm"
-                      dangerouslySetInnerHTML={{ __html: item.description }}
+                       dangerouslySetInnerHTML={{
+    __html: item.description?.length > 200 ? item.description.slice(0, 200) + "..."  : item.description
+  }}
                     />
                     <a
                       href={item.buttonLink}

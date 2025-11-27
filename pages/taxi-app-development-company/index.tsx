@@ -19,7 +19,6 @@ import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
 import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
 import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 import Features from "../Newcomponet/SectionCompoent/Features";
 import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
@@ -523,7 +522,8 @@ export default function Ecommerce(props) {
           li1="AI & Blockchain Features"
           li2="Custom Features for Every Business"
           li3="Cross-Platform Expertise"
-          li4="On-Time Delivery"
+          li4="Cross-Platform Apps (iOS & Android)"
+          li5="On-Time Delivery"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -535,9 +535,9 @@ export default function Ecommerce(props) {
 
         <AboutSection
           heading="Revolutionizing Taxi Booking Services with AI and Blockchain Technology"
-          description1="AI and Blockchain are transforming the future of taxi booking app development, making ride-hailing faster, smarter, and more secure. AI-powered taxi apps improve user experience with real-time route optimization, demand prediction, and personalized ride suggestions. It also enhances safety using driver behavior analysis and fraud detection. "
+          description1="AI and Blockchain are transforming the future of taxi booking app development, making ride-hailing faster, smarter, and more secure. AI-powered taxi apps improve user experience with real-time route optimization, demand prediction, and personalized ride suggestions. It also enhances safety using driver behavior analysis and fraud detection."
           description2="Blockchain taxi booking solutions ensure transparent and tamper-proof transactions, secure digital payments, and strong data privacy. These advanced technologies help taxi businesses minimize operational costs, prevent payment issues, and build customer trust."
-          description3="For users, it means quicker pickups, fair pricing, and smooth ride experience. For companies, it boosts efficiency and customer satisfaction. Today, integrating AI and Blockchain is essential for any taxi booking app development company to stay competitive and future-ready. "
+          description3="For users, it means quicker pickups, fair pricing, and smooth ride experience. For companies, it boosts efficiency and customer satisfaction. Today, integrating AI and Blockchain is essential for any taxi booking app development company to stay competitive and future-ready."
           description4=""
           imageSrc="https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp"
           link="/about-us"
@@ -548,7 +548,7 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide World-Class Taxi Booking App Development Services for Startups & Enterprises
+               We Provide World-Class Taxi Booking App Development Services for Startups & Enterprises
               </h2>
               <p className="text-base text-center font-normal">
                 As a leading taxi booking app development agency in India, we deliver top-class and scalable solutions for businesses of all sizes. Our expert team offers on-demand taxi app development services designed to improve ride management, boost customer satisfaction, and grow revenue.
@@ -570,13 +570,6 @@ export default function Ecommerce(props) {
 
 
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
 
 
         <section className="py-8">
@@ -641,7 +634,7 @@ export default function Ecommerce(props) {
 
         <HireDeveloper
           heading="Hire On-Demand Taxi App Developers"
-          text="Looking to build your own taxi booking app like Uber or Ola? Hire expert on-demand taxi app developers from Comfygen to create secure, scalable, and feature-rich taxi apps tailored to your business needs. Our skilled developers specialise in custom taxi booking solutions with real-time GPS tracking, AI-powered auto-dispatch, multiple payment options, and white-label taxi app development for startups and enterprises."
+          text="Looking to build your own taxi booking app like Uber or Ola? Hire expert <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>on-demand taxi app developers</a> from Comfygen to create secure, scalable, and feature-rich taxi apps tailored to your business needs. Our skilled developers specialise in custom taxi booking solutions with real-time GPS tracking, AI-powered auto-dispatch, multiple payment options, and white-label taxi app development for startups and enterprises."
           text1=""
           buttonText="Hire Developer"
           buttonLink="/contact-us"

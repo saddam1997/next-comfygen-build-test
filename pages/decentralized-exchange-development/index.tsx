@@ -32,6 +32,7 @@ import {
   IconShield,
   IconShieldLock
 } from "@tabler/icons-react";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -138,7 +139,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -529,12 +530,11 @@ export default function Ecommerce(props) {
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/decentralized-exchange-development/decentralized-exchange-dev-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Decentralized Exchange Development Company"
-            ptag="Comfygen is a decentralized exchange development company, specializing in developing secure, scalable, and high-performance DEX platforms to provide full control over their assets, enhancing privacy and transparency.
-Our full-stack blockchain development experts enable us to create custom DEX solutions according to your business needs. Whether you're building a new exchange or enhancing an existing one, our team ensures your platform is optimized for both security and seamless user experience."
-            li="State-of-the-art Security"
-            li1="Seamless User Experience"
-            li2="Scalable Solutions"
-            li3="Comprehensive Blockchain Expertise"
+            ptag="Take your crypto trading platform to the next level with Comfygen, a leading decentralized exchange development company in India. Our decentralized exchange development services deliver strong blockchain security, lightning-fast transactions, and complete transparency. Empower your users with peer-to-peer crypto trading, cross-chain crypto token swaps, and automated liquidity management, while enjoying a scalable platform designed for future growth and seamless integration with crypto wallets and smart contracts."
+            li="Secure & Transparent Trading"
+            li1="Cross-Chain Token Swaps"
+            li2="Automated Liquidity Management"
+            li3="Scalable Platform Architecture"
 
             btnName="Talk With Expert"
             btnLink="/contact-us"
@@ -587,6 +587,15 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
             </div>
           </div>
         </section>
+
+        <CallToAction
+          heading="Launch Your Decentralized Exchange Today"
+          text="Take the first step toward building a secure, scalable DEX with Comfygen."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
         <ContactFromCenter />
         {/* services */}
         <ConsultancyApproach
@@ -736,7 +745,7 @@ Our full-stack blockchain development experts enable us to create custom DEX sol
 
         <Faq faqData={JSON_DATA.Frequently} title="White Paper Development" />
 
-     
+
       </div>
     </>
   );

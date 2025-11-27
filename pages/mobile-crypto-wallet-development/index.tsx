@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
+import Header  from "../components/Header"
+import HeroSectionForAllPages  from "../components/HeroSectionForAllPages"
+
+
+
+
+
+
 import WhyChoose from "../components/WhyChooseUs";
 import ConsultancyApproach from "../components/ConsultancyApproach";
 import ServicesSec from "../components/ServicesSec";
@@ -26,18 +34,18 @@ import {
 import Slider from "../components/Slider";
 import IndustriesServe from "../components/IndustriesServe";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+// const HeroSectionForAllPages = dynamic(
+//   () => import("../components/HeroSectionForAllPages"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
 const Faq = dynamic(() => import("../components/Faq"), {
   loading: () => <p>Loading...</p>,
 });
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+// const Header = dynamic(() => import("../components/Header"), {
+//   loading: () => <p>Loading...</p>,
+// });
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
   loading: () => <p>Loading...</p>,
 });
@@ -439,10 +447,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Mobile Crypto Wallet Development | AI-Based Wallet Development Solutions</title>
+        <title> Mobile Wallet Development Service Provider Comfygen</title>
         <meta
           name="description"
-          content="Comfygen delivers secure, scalable, and AI-powered mobile crypto wallet development solutions for iOS and Android. Build custom AI-based multi-currency wallets with DeFi and NFT support."
+          content="Comfygen delivers secure, scalable mobile wallet development solutions for iOS and Android. Build a custom AI-based Mobile Crypto wallet with DeFi and NFT support."
         />
 
         <meta name="keywords" content="Mobile Crypto Wallet Development, Custom iOS Wallet Solutions, Custom Android Wallet Solutions, Multi-Currency Wallets, DeFi Wallet Integration, NFT Wallet Development, AI-Powered Wallet Features, Cross-Chain Wallet Solutions, Enterprise Crypto Wallets, Mobile Crypto Wallet, Best Mobile Crypto Wallet, Most Secure Mobile Crypto Wallet, Crypto Wallet App Development, Secure Blockchain Wallets, Cryptocurrency Wallet Solutions" />
@@ -543,12 +551,13 @@ export default function ClinicalApp(props: any) {
         <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-hero.webp')]">
           <HeroSectionForAllPages
             heading="Mobile crypto wallet development company"
-            ptag="Comfygen is a top-rated wallet development company. We build secure, scalable, and AI-powered mobile crypto wallets that put digital assets in the palm of your hand. As the world of cryptocurrency expands, businesses, startups, and enterprises need mobile crypto wallet development solutions that are not only safe but also intuitive and future-ready."
-            ptag1="Our blockchain development expert team develops custom mobile crypto wallet apps for iOS and Android with advanced AI features like biometric security, multi-currency support, and fraud detection. Whether you’re a crypto exchange, DeFi platform, or a business adopting blockchain, our wallets are designed to grow with your needs and ensure smooth, reliable transactions."
-            li="Bank-grade security with encryption, biometrics, and AI monitoring"
-            li1="Multi-currency and cross-chain support for BTC, ETH, and altcoins"
-            li2="Built-in DeFi and NFT features for modern crypto use cases"
-            li3="Scalable solutions tailored for startups and enterprises alike"
+            ptag="Secure, User-Friendly, and Scalable Mobile Wallet Development Solutions for Cryptocurrency Management"
+            ptag1="Experience advanced wallet development service according to your needs. Our mobile crypto wallet development service offers strong security with multi-factor authentication, seamless multi-currency support, and an intuitive interface that simplifies cryptocurrency management for users of all levels. Whether you’re launching a DeFi app or need enterprise-grade wallet development solutions, our expert developers build scalable apps optimized for performance and privacy."
+            li="Military-grade encryption & multi-factor authentication"
+            li1="Biometric security & AI threat detection"
+            li2="Multi-currency & cross-chain support (BTC, ETH, altcoins)"
+            li3="Integrated DeFi functionalities & NFT support"
+            li4="Global Delivery India | USA | UAE"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -562,9 +571,9 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title="About Company"
           heading="Why Mobile Crypto Wallets are needed for your business"
-          description1="The demand for AI-based crypto wallet development is at an all-time high as millions of users adopt digital assets for payments, trading, and DeFi activities. In 2025, the shift to mobile-first transactions makes most secure mobile crypto wallet apps essential for both individuals and businesses."
-          description2="Best mobile crypto wallet apps development service ensures safe storage of Bitcoin, Ethereum, and altcoins while offering anytime and anywhere transactions. With cyber threats on the rise, advanced security like biometrics, encryption, and AI-driven fraud detection has become non-negotiable."
-          description3="For startups, fintech companies, and enterprises, investing in professional AI-powered mobile crypto wallet development is no longer optional; it’s the foundation for growth in the digital economy."
+          description1="Millions of users depend on mobile crypto wallet apps to store and manage digital assets, and businesses that offer secure, non-custodial crypto wallet development solutions gain a clear competitive edge. The rise of Web3, DeFi, staking, and NFT trading has pushed exchanges, fintech startups, and enterprises to deliver wallets that are safe, intuitive, and built for modern crypto activity."
+          description2="In 2025, the demand for AI-powered Mobile wallet development is higher than ever. People want fast mobile transactions, strong security, and support for Bitcoin, Ethereum, and major altcoins. Features like biometrics, encryption, and AI-driven fraud detection have become essential, not optional."
+          description3="With the global mobile wallet market expected to exceed USD 4.18 billion in 2025 and grow at roughly 30% CAGR through 2035, wallet development companies need scalable, secure, and future-ready wallet apps. This is why businesses are investing in mobile crypto wallets that combine bank-grade security, cross-chain compatibility, DeFi and NFT support, and intelligent AI monitoring."
 
           imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-about.webp"
           link="/about-us"

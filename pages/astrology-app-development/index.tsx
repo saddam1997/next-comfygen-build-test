@@ -17,6 +17,7 @@ import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 import Faq from "../Newcomponet/SectionCompoent/Faq"
 import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -393,7 +394,7 @@ export default function ClinicalApp(props: any) {
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
                   Custom AI-Powered Astrology App Development Solutions</h2>
                 <p>
-                 Comfygen specializes in building AI astrology apps to enhance prediction accuracy and user engagement. We offer intelligent, smart, interactive, and highly personalized astrology services. <a href='https://www.comfygen.com/ai-development' className="text-blue-600 font-semibold">AI and machine learning </a> are used in our custom <a href="https://www.comfygen.com/white-label-mobile-app-development" className="text-blue-600 font-semibold">astrology white label app development solutions</a> to enhance user engagement, accuracy, and satisfaction.
+                  Comfygen specializes in building AI astrology apps to enhance prediction accuracy and user engagement. We offer intelligent, smart, interactive, and highly personalized astrology services. <a href='https://www.comfygen.com/ai-development' className="text-blue-600 font-semibold">AI and machine learning </a> are used in our custom <a href="https://www.comfygen.com/white-label-mobile-app-development" className="text-blue-600 font-semibold">astrology white label app development solutions</a> to enhance user engagement, accuracy, and satisfaction.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
@@ -429,14 +430,21 @@ export default function ClinicalApp(props: any) {
           imageAlt="Future of Technology"
         />
 
+        <AppcardSlider
+          heading="Astrology App Clone Solutions We Provide"
+          description="Comfygen Technologies is a top-notch horoscope app development company in India. We build feature-rich, high-performing clones of the world’s leading astrology apps"
+          sliderData={JSON_DATA.IndustriesServe}
+          openModal={openModal}
+        />
 
-        <ConsultancyApproach
+
+        {/* <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
-        />
+        /> */}
 
         <div className="py-8">
           <Features

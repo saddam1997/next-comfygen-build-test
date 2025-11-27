@@ -17,7 +17,7 @@ import CallToAction from "../components/CallToAction";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import ClientTestimonials from "../components/ClientTestimonials";
-import Milestones from "../components/Milestones";
+import Milestones from "../Newcomponet/comman/Milestones";
 import Slider from "../components/Slider";
 
 
@@ -484,7 +484,7 @@ export default function Mobile(props: any) {
         <section className="py-8">
           <Slider
             projects={JSON_DATA.portfoliodata}
-            heading="EOur Portfolio"
+            heading="Our Heathcare Mobile Application Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
           />
         </section>
@@ -575,18 +575,20 @@ export default function Mobile(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Healthcare App Development Process We Follow</h2>
               <p className="text-base font-normal mt-2">
-               Comfygen Technologies is a trusted healthcare mobile app development company in India that builds custom, secure, and high-performance healthcare apps. We follow a clear and flexible development process focused on real results. From planning to launch and ongoing support, we ensure smooth user experience and better business efficiency.
+                Comfygen Technologies is a trusted healthcare mobile app development company in India that builds custom, secure, and high-performance healthcare apps. We follow a clear and flexible development process focused on real results. From planning to launch and ongoing support, we ensure smooth user experience and better business efficiency.
 
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-
-        <TechStack
-          title="Technology Stack We Use in White Label Crypto Development"
-          description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
-        />
+        
+        <section className="py-8">
+          <TechStack
+            title="Technology Stack We Use in White Label Crypto Development"
+            description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
+          />
+        </section>
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

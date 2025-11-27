@@ -266,14 +266,6 @@ export default function Webdevelopment(props) {
             </div>
           </div>
         </section>
-
-        <TechStack
-          title="Technologies We Use for Website Development"
-          description="Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use"
-          filterCategory={["mobile"]}
-        />
-
-
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -281,12 +273,17 @@ export default function Webdevelopment(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <IndustriesServe
-          heading="Industries We Serve with Expert Web Development in Jaipur"
-          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
-          sliderData={JSON_DATA.customSliderData}
-        />
-        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
+
+        <section className="py-8">
+
+          <Portfolio
+            projects={portfoliodata}
+            heading="Our Website Development Portfolio"
+            description="Explore our collection of successfully delivered website development projects that showcase our expertise in crafting dynamic, responsive, and user-friendly websites. Each project highlights our commitment to innovation, technical excellence, and client satisfaction."
+          />
+        </section>
+
+
         <CallToAction
           heading="Ready to Build Your Website?"
           text="Partner with Comfygen Technologies, the most trusted Web Development Company in Jaipur."
@@ -308,13 +305,24 @@ export default function Webdevelopment(props) {
           </div>
         </section>
 
-        <section className="py-8">
-          <Portfolio
-            projects={portfoliodata}
-            heading="Website Development Portfolio"
-            description="Explore our collection of successfully delivered website development projects that showcase our expertise in crafting dynamic, responsive, and user-friendly websites. Each project highlights our commitment to innovation, technical excellence, and client satisfaction."
-          />
-        </section>
+
+        <TechStack
+          title="Technologies We Use for Website Development"
+          description="Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use"
+          filterCategory={["mobile"]}
+        />
+
+
+
+        <IndustriesServe
+          heading="Industries We Serve with Expert Web Development in Jaipur"
+          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
+          sliderData={JSON_DATA.customSliderData}
+        />
+        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
+
+
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -326,7 +334,7 @@ export default function Webdevelopment(props) {
         <HireDeveloper
           heading="Hire DeFi Developers"
           text="Looking to build a custom website or web application? Hire expert web developers from Comfygen in Jaipur to create secure, scalable, and high-performing web solutions tailored to your business needs. Our skilled web developers specialize in building responsive websites, web apps, and enterprise solutions that drive growth and enhance user experience."
-          
+
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"

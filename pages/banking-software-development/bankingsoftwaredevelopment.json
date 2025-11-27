@@ -36,37 +36,37 @@
   {
     "title": "Discovery & Requirement Gathering",
     "description":
-      "Our process begins with an in-depth discovery session where our qualified and talented banking software developers analyze your business model, project goals, and technical requirements. We research banking trends, compliance needs, and user behavior to define a clear product roadmap and ensure alignment with industry best practices."
+      "We start by understanding your business model, goals, compliance needs, and user expectations. This helps us shape a clear roadmap backed by industry research."
   },
   {
     "title": "UI/UX Design",
     "description":
-      "Our UI/UX design experts craft intuitive, user-centric interfaces that enhance digital banking experiences. We focus on responsive design, seamless navigation, and accessibility to ensure your custom banking software development meets the expectations of both tech-savvy users and traditional banking customers."
+      "Our designers create simple, intuitive interfaces with smooth navigation and responsive layouts to deliver a modern digital banking experience."
   },
   {
     "title": "Backend & Frontend Development",
     "description":
-      "Using secure and modern tech stacks, we build robust backend systems and responsive frontends tailored to your financial services. As a custom banking software development agency, we ensure every component is scalable, efficient, and ready to support complex banking operations."
+      "We build secure, scalable systems using modern tech stacks. Both backend and frontend components are optimized to handle complex financial workflows."
   },
   {
     "title": "Integration with Legacy Systems",
     "description":
-      "We integrate new solutions with your existing banking infrastructure, core systems, and third-party APIs without disrupting ongoing operations. Our banking software development services ensure secure data migration, process automation, and compliance with global banking standards during system integration."
+      "We connect your new solution with existing core banking systems and third-party APIs while keeping operations stable and compliant."
   },
   {
     "title": "QA & Security Testing",
     "description":
-      "Security and reliability are at the core of our development. Our QA experts conduct rigorous testing—covering functionality, performance, usability, and compliance—to ensure your app is resilient. We follow best practices for security to deliver fully tested custom banking software development."
+      "Every feature goes through strict testing for performance, usability, and security. We follow banking-grade standards to keep data and transactions safe."
   },
   {
     "title": "Deployment & Launch",
     "description":
-      "After successful testing, we deploy your banking software across targeted platforms, ensuring smooth rollouts and zero downtime. As a top rated banking software development company, we manage cloud configurations, app store submissions, and final validations for a flawless launch."
+      "After testing, we deploy your software with careful configuration and smooth rollout across platforms."
   },
   {
     "title": "Maintenance & Support",
     "description":
-      "Post-launch, we offer continuous support, updates, and feature enhancements. Our banking software developers monitor performance, manage patches, and scale systems to match growing user demand, ensuring long-term stability and innovation in your financial software ecosystem."
+      "We stay involved post-launch with updates, monitoring, optimizations, and new feature enhancements to keep your system strong as your user base grows."
   }
 ],
 
@@ -490,38 +490,34 @@
   {
     "num": "01",
     "title": "Predictive Analytics",
-    "decs": "Our AI-based predictive analytics systems use historical data and behavioral patterns to forecast customer actions, credit risks, and market shifts. This helps banks make data-driven decisions, reduce defaults, and offer tailored financial products proactively to their customers."
+    "decs": "We use AI-driven predictive models to forecast customer behavior, credit risks, and market trends. Banks get clearer insights, fewer defaults, and the ability to offer personalized financial products at the right time."
   },
   {
     "num": "02",
     "title": "AI Chatbots & Virtual Assistants",
-    "decs": "Our intelligent AI chatbots and virtual banking assistants provide real-time customer support, manage FAQs, and guide users through banking operations. These bots improve engagement, reduce operational costs, and deliver 24/7 automated service across web and mobile platforms."
+    "decs": "Our smart chatbots handle queries, guide users, and support banking tasks around the clock. They cut support costs, boost engagement, and deliver fast responses across mobile and web."
   },
   {
     "num": "03",
     "title": "AI Fraud Detection",
-    "decs": "We implement AI algorithms that monitor transactions in real time to detect and prevent fraudulent activities. By analyzing unusual behavior patterns and transaction anomalies, our AI systems ensure enhanced security and protect against financial losses."
+    "decs": "Real-time AI monitoring spots unusual patterns and suspicious transactions before they cause damage. This strengthens security and reduces financial losses."
   },
   {
     "num": "04",
     "title": "AI-Based Risk Management",
-    "decs": "Our AI-based risk management systems identify and evaluate financial risks across credit, market, and operations. These tools enable banks to take preventive actions by analyzing trends, assessing threats, and adapting dynamically to changing market and regulatory conditions."
+    "decs": "We build systems that analyze credit, market, and operational risks. They help banks take preventive actions and adapt quickly to changing conditions."
   },
   {
     "num": "05",
     "title": "Personalized Financial Insights",
-    "decs": "With machine learning models, we deliver personalized financial insights to users, including savings suggestions, budget planning, and investment tips. This boosts user satisfaction and retention by offering data-driven financial advice tailored to each customer’s behavior and goals."
+    "decs": "Machine learning helps users understand their spending, plan budgets, and get tailored financial advice. It improves satisfaction and keeps customers more engaged.."
   },
   {
     "num": "06",
     "title": "AI-Powered Credit Scoring",
-    "decs": "Our AI-powered credit scoring engines analyze a wider set of data beyond traditional metrics—such as behavior, transaction history, and alternate data—to provide faster and more accurate credit evaluations, especially for underbanked or new-to-credit individuals."
-  },
-  {
-    "num": "07",
-    "title": "Document Processing Automation",
-    "decs": "We use AI and OCR technology to automate document verification and data extraction processes. This significantly reduces manual efforts in KYC, loan processing, and compliance, increasing efficiency while minimizing errors in high-volume document handling."
+    "decs": "Our advanced scoring engines evaluate wider datasets—behavior, history, and alternative data—to deliver quicker and more accurate credit decisions, especially for thin-file customers."
   }
+  
 ],
 
 

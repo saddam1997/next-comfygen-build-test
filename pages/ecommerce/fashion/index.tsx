@@ -458,11 +458,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Fashion Ecommerce App Development Company | Comfygen Technologies
+        Fashion App Development Company | Custom Fashion Ecommerce App Solutions
         </title>
         <meta
           name="description"
-          content="Looking to build a stylish fashion ecommerce shopping app? Comfygen is a leading fashion ecommerce app development company offering custom fashion app solutions with AI recommendations and blockchain."
+          content="Build your own fashion ecommerce app with advanced features! Comfygen is a top fashion app development company offering custom fashion shopping app solutions with AR try-on, AI recommendations, and secure payments."
         />
 
         <meta
@@ -592,9 +592,9 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/fashion/fashion-hero2.webp')]">
           <HeroSectionForAllPages
-            heading="Fashion Ecommerce App Development Company"
+            heading="Best Fashion App Development Company"
             subhead=""
-            ptag="Comfygen is a leading fashion ecommerce app development company offering custom mobile and web app solutions for fashion brands, clothing retailers, and D2C startups. We design feature-rich fashion shopping apps that combine elegant UI/UX, smart product filters, AR try-on, and secure payments to deliver seamless customer experiences. Whether you’re launching a new fashion store or upgrading your existing platform, our fashion app development services help you boost engagement, increase sales, and grow your online presence."
+            ptag="Comfygen is a leading fashion app development company offering custom mobile and web app solutions for fashion brands, clothing retailers, and D2C startups. We design feature-rich fashion shopping apps that combine elegant UI/UX, smart product filters, AR try-on, and secure payments to deliver seamless customer experiences. Whether you’re launching a new fashion store or upgrading your existing platform, our fashion app development services help you boost engagement, increase sales, and grow your online presence."
             li="Custom Fashion Ecommerce App Development"
             li1="AI-Powered Recommendations & AR Integration"
             li2="Cross-Platform Apps for Android, iOS & Web"

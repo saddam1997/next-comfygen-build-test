@@ -48,7 +48,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                   <div key={index} className="p-4 mt-2 bg-white rounded-lg cursor-pointer w-full"
                     onClick={() => setCurrentCount(currentCount === index ? false : index)}>
                     <div key={num} className="flex justify-between w-full text-base font-medium text-left text-black bg-white rounded-lg md:text-lg ">
-                      <span>{title}</span>
+                      <h3>{title}</h3>
                       {currentCount === index ?
                         <MdRemove size={26} />
                         :

@@ -296,12 +296,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Doctor Appointment App Development Company In India & The USA
+       Doctor Appointment App Development Company In India & The USA
         </title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is a top doctor appointment app development company offering secure, scalable, AI-powered and telemedicine-enabled doctor appointment apps for clinics, hospitals, and startups."
+          content="Comfygen Technologies is a top doctor appointment app development company in India offering AI-powered telemedicine and online doctor booking app solutions for hospitals, clinics, and startups"
         />
 
 
@@ -354,8 +354,8 @@ export default function Ecommerce(props) {
           <div>
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/doctor-appointment-development-app-hero-imfg.webp')]">
               <HeroSectionForAllPages
-                heading="Doctor Appointment App Development Company"
-                ptag="Digitally manage patient information with Comfygen’s advanced doctor appointment app development solutions. As the leading doctor appointment app development company in India and the USA, we offer AI-powered, super-efficient mobile applications for healthcare providers and investors looking to thrive in the marketplace. Our experienced mHealth app developers are skilled in building custom doctor appointment apps for hospitals, clinics, and startups with features like online booking, telemedicine, e-prescriptions, and real-time consultation."
+                heading="Doctor Appointment App Development Company in India & USA"
+                ptag="Make healthcare simple and accessible with a smart doctor appointment booking app built by Comfygen. We are a leading Doctor Appointment App Development Company in India and the USA, creating easy-to-use telemedicine and online doctor consultation apps for hospitals, clinics, and medical startups."
                 ptag1="Discover how we can elevate your brand and create impactful digital solutions for your business."
                 btnName="Talk With Expert"
                 li="AI-Powered Doctor Recommendations"

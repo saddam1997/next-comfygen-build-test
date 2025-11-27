@@ -231,7 +231,7 @@
     "servicesData" :[
       {
         "title": "AI-Powered Social Media App Development",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "Enhance user engagement with AI-powered social media apps that offer personalized recommendations, automated moderation, and smart analytics. Our AI-driven social networking app development solutions improve content discovery, boosting retention and growth.",
         "features": [
           "AI-Driven Recommendations",
@@ -242,7 +242,7 @@
       },
       {
         "title": "Live Streaming App Development",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "Build video-centric social apps with features like live streaming, short videos, interactive comments, and monetization options. We ensure high-quality streaming with low latency for smooth performance.",
         "features": [
           "HD Video Streaming",
@@ -253,7 +253,7 @@
       },
       {
         "title": "Community & Forum App Development",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "Create thriving online communities and forums with user-friendly interfaces, discussion boards, and real-time interactions. Our developed social media apps boost engagement through group discussions, gamification, and social sharing.",
         "features": [
           "Customizable User Groups",
@@ -264,7 +264,7 @@
       },
       {
         "title": "Social Commerce App Development",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "We develop social commerce apps that combine shopping with social interactions. Enable users to buy, sell, and promote products seamlessly within the platform, enhancing conversions and engagement.",
         "features": [
           "In-App Shopping & Payments",
@@ -275,7 +275,7 @@
       },
       {
        "title": "Dating & Friendship App Development",
-       "subtitle": "All Service And Solutions At One Place",
+       "subtitle": "",
         "description": "Launch engaging dating and friendship apps with AI matchmaking, real-time chat, video calls, and privacy features. Our secure social media app development solutions ensure a smooth and enjoyable user experience.",
         "features": [
           "AI-Powered Matchmaking",
@@ -297,7 +297,7 @@
       ,
       {
         "title": "Enterprise Social Networking Apps",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "Boost workplace collaboration with enterprise social networking apps designed for team communication, knowledge sharing, and productivity. Secure cloud-based solutions for seamless business networking.",
         "features": [
           "Private & Secure Networks",
@@ -308,7 +308,7 @@
       },
       {
         "title": "Blockchain-Based Social Media App Development",
-        "subtitle": "All Service And Solutions At One Place",
+        "subtitle": "",
         "description": "Leverage blockchain technology for decentralized social media application platforms that offer data security, user control, and content ownership. Empower users with privacy-focused and transparent social experiences.",
         "features": [
           "Decentralized & Secure Platforms",
@@ -319,7 +319,7 @@
       },
       {
        "title": "Maintenance and Support",
-       "subtitle": "All Service And Solutions At One Place",
+       "subtitle": "",
         "description": "We provide ongoing maintenance and support to ensure your social media app remains up-to-date and performs optimally. Our best social network app development services include regular updates, bug fixes, and scaling to accommodate growing user bases. We are here to help you manage your app’s lifecycle and enhance its features over time.",
         "features": [
           "Regular Updates",

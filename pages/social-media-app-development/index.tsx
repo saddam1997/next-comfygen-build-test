@@ -17,7 +17,7 @@ import ConsultancyApproach from "../components/ConsultancyApproach";
 import ModelsSec from "../components/ModelsSec";
 import PortfolioSec from "../components/PortfolioSec";
 import SolutionSec from "../components/SolutionSec";
-import {IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
+import { IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
 import Features from "./components/Features";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -218,7 +218,7 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Top custom Social Media App Development Company in India
+          Social Media App Development Company in India
         </title>
         <meta
           property="og:title"
@@ -226,7 +226,7 @@ export default function Mobile(props) {
         />
         <meta
           name="description"
-          content="Looking for a best custom social media app development company in India? Comfygen specializes in custom social media mobile app development with AI-powered features and cutting-edge technology."
+          content="Looking for the best custom social media app development company in India? Comfygen specialises in custom social media mobile app development with AI-powered features and cutting-edge technology."
         />
         <meta
           name="og:description"
@@ -296,12 +296,12 @@ export default function Mobile(props) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/social-media-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Best Custom Social Media App Development Company in India"
-            ptag="Boost your mobile app business with Comfygen, a leading custom social media app development company in India. We provide custom social media mobile app development services, and cutting-edge social networking apps customized to enhance user engagement and reflect your brand identity."
+            heading="Custom Social Media App Development Company in India"
+            ptag="Build a unique and engaging social media app with Comfygen. We are a trusted custom social media app development company creating modern, secure, and high-performance social networking apps for startups, brands, and enterprises. Our expert developers turn your idea into a smooth, user-friendly platform with real-time chat, live streaming, media sharing, and smart AI-based features that users love."
             li="Custom Social Media Solutions"
             li1="Engaging User Experience"
             li2="Cutting-Edge Technology Integration"
-            li3="Our team comprises 6+ top-rated social media app developers"
+
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -313,10 +313,10 @@ export default function Mobile(props) {
 
         <AboutSection
           title="About Company"
-          heading="Top-Rated Social Media App Development Company in India"
+          heading="India’s Most Trusted Custom Social Media App Development Company"
           description1="A top-rated social media application development company in India, Comfygen offers custom social network app development to enhance your brand's recognition. We develop scalable and engaging social media apps tailored to your business needs. We provide innovative solutions for immersive social media experiences with video-based social media app development."
           description2="Whether you’re a business seeking expansion or a startup targeting new customers, our apps help establish a strong social media presence. Social media is essential for modern businesses, and professional mobile app development ensures you leverage its benefits effectively."
-          description3="As a leading social media app development company in India. we provide high-quality apps personalized to clients' needs across mobile app development industries. Ready to transform your business? Expert social media app developers at Comfygen build engaging and scalable apps. Contact us for a free consultation!"
+          description3="As a leading social media network app development company. We provide high-quality apps personalized to clients' needs across the mobile app development industry. Ready to transform your business? Expert social media app developers at Comfygen build engaging and scalable apps. Contact us for a free consultation!"
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -325,14 +325,23 @@ export default function Mobile(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >End-to-End Social Media App Development Services for Startups & Enterprises</h2>
-              <p className="text-base text-center font-normal">Comfygen is a top-notch social media app development company based in India, that offers comprehensive services to bring your social media app vision to life. Our top-notch social networking app development team of experts ensures that your social media app stands out and performs seamlessly across all platforms, from custom app development to ongoing maintenance.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Best Social Media App Development Services for Startups & Enterprises</h2>
+              <p className="text-base text-center font-normal">Comfygen is a top-notch social media mobile app development company in India that offers comprehensive services to bring your social media app vision to life. Our top-notch social networking app development team of experts ensures that your social media app stands out and performs seamlessly across all platforms, from custom app development to ongoing maintenance.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
         </section>
+        <section className="py-8">
+          <PortfolioSec
+            techData={techDataForPage1}
+            heading="Our Social Media Apps Portfolio"
+            description="Discover our portfolio of innovative social media app development projects that emphasize user engagement, seamless connectivity, and modern features. Each project reflects our dedication to creating interactive, scalable, and impactful solutions tailored to meet diverse social networking needs."
+          />
+        </section>
+        <Features />
+
         <SolutionSec
           heading="Tailor-Made Social Media App Development Solutions for Unique Digital Experiences"
           subheading="At Comfygen, we specialize in delivering custom social media app development solutions tailored to your unique business needs. Our expert social media mobile app development team ensures seamless integration of advanced features, creating a platform that enhances user engagement and drives business growth."
@@ -359,7 +368,15 @@ export default function Mobile(props) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         /> */}
-        <Features />
+        <CallToAction
+          heading="Do You Have Any Other Questions About Our Social Media App Development Expertise?"
+          text="As one of the leading destinations for social network app development services, we have proven our capabilities for delivering effective results for different types of apps. If you have any questions about our capability in social media app development, then you must consult with our experts right now."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -389,16 +406,10 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+
         <ModelsSec Qa={JSON_DATA.Head} Whycomfygen={JSON_DATA.Leveragedata} />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Social Media Apps Portfolio"
-          description="Discover our portfolio of innovative social media app development projects that emphasize user engagement, seamless connectivity, and modern features. Each project reflects our dedication to creating interactive, scalable, and impactful solutions tailored to meet diverse social networking needs."
-        />
-        <TechStack
-          title="Technology Stack We Use for Social Media App Development Services"
-          description="We are a trusted social media app development company in India for our proven track record in using a powerful technology stack. Our media mobile application development experts utilize the latest technologies that provide a distinctive identity to your social media apps in terms of quality, visual appeal, user experience, and performance."
-        />
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -419,14 +430,13 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <CallToAction
-          heading="Do You Have Any Other Questions About Our Social Media App Development Expertise?"
-          text="As one of the leading destinations for social network app development services, we have proven our capabilities for delivering effective results for different types of apps. If you have any questions about our capability in social media app development, then you must consult with our experts right now."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
+
+        <TechStack
+          title="Technology Stack We Use for Social Media App Development Services"
+          description="We are a trusted social media app development company in India for our proven track record in using a powerful technology stack. Our media mobile application development experts utilize the latest technologies that provide a distinctive identity to your social media apps in terms of quality, visual appeal, user experience, and performance."
         />
+
+
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">

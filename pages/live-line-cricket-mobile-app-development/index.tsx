@@ -10,11 +10,11 @@ import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
 import InfoSectionRight from "../components/InfoSectionRight";
 import SolutionSec from "../components/SolutionSec";
-import {IconBell, IconBulb, IconCalendarEvent, IconClock, IconCoin, IconFileSpreadsheet, IconGlobe, IconHistory, IconLivePhoto,  IconNews,  IconTrendingUp, } from '@tabler/icons-react';
+import { IconBulb, IconCalendarEvent, IconHistory, IconLivePhoto, IconNews, IconTrendingUp, } from '@tabler/icons-react';
 import PortfolioSec from "../components/PortfolioSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-
-
+import Features from "../Newcomponet/SectionCompoent/Features";
+import ProcessSec from "../componentsnew/ProcessSec";
+import TechStack from "../componentsnew/TechStack";
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -32,67 +32,39 @@ const technologyData = [
   {
     img: <IconLivePhoto stroke={1.5} className="w-12 h-12" />, // Represents live events
 
-    title: "The cricket live line.",
-    desc: "ODIs, T20s, and Tests are all covered, along with domestic and women's matches."
+    title: "AI-Powered Win Predictor",
+    desc: "Analyse real-time stats to show match probabilities and predictive insights."
   },
   {
     img: <IconCalendarEvent stroke={1.5} className="w-12 h-12" />, // Represents event scheduling
 
-    title: "Upcoming Events",
-    desc: "Cricket Fast Line gives you all the information you need about upcoming cricket matches.As well as domestic and women's matches, it covers all ODI, T20, and Test international matches"
+    title: "Live Match Streaming",
+    desc: " Deliver seamless, high-quality video streams for domestic, international, and league matches."
   },
   {
     img: <IconHistory stroke={1.5} className="w-12 h-12" />, // Represents historical data
-    title: "Result",
-    desc: "There is coverage of all ODI matches, T20 matches, Test matches, domestic matches, and women's matches. There is a list of all recent matches for all teams"
+    title: "Fantasy Sports Integration",
+    desc: " Let users create teams, join contests, and compete based on live match data."
   },
   {
     img: <IconBulb stroke={1.5} className="w-12 h-12" />, // Represents predictions and insights
-    title: "Prediction",
-    desc: "Utilizing our app's prediction feature, you can find out which team will win or lose a game."
+    title: "Betting Odds Display",
+    desc: " Show live odds and predictions where legal, giving fans another way to interact with matches."
   },
   {
     img: <IconNews stroke={1.5} className="w-12 h-12" />, // Represents news updates
 
-    title: "  Latest News and Status",
-    desc: "Admins can create a new match from their dashboard."
+    title: "Video Highlights",
+    desc: "Quick access to key moments, boundaries, wickets, and post-match highlights."
   },
   {
     img: <IconTrendingUp stroke={1.5} className="w-12 h-12" />, // Represents trends and stats
 
-    title: "Updates & News on Cricket",
-    desc: "Records, rankings, and statistics. Find out who the cricket players are and their details."
-  },
-  {
-    img: <IconFileSpreadsheet stroke={1.5} className="w-12 h-12" />, // Represents scorecards
-
-    title: "Score Card",
-    desc: "The Score Card feature provides ball-by-ball commentary of the match scorecard."
-  },
-  {
-    img: <IconCoin stroke={1.5} className="w-12 h-12" />, // Represents odds and betting
-
-    title: "  Match Odds",
-    desc: "Information about match odds and sessions is accurate."
-  },
-  {
-    img: <IconBell stroke={1.5} className="w-12 h-12" />, // Represents notifications
-
-    title: "  Alerts and Notifications",
-    desc: "The best feature of this app is that you will receive live notifications from ongoing cricket matches. ODIs, T20s, IPLs, and other matches."
-  },
-  {
-    img: <IconClock stroke={1.5} className="w-12 h-12" />, // Represents real-time updates
-
-    title: " Cricket Live Updates",
-    desc: "On the app, you can view live cricket scores at a fast pace. The latest cricket scores and ball-by-ball updates."
-  },
-  {
-    img: <IconGlobe stroke={1.5} className="w-12 h-12" />,
-    title: " Cricket Live Line",
-    desc: "All the information you need can be found with this cricket live line feature."
+    title: "Social Sharing & Fan Engagement",
+    desc: "Enable sharing of scores, highlights, and polls while fostering community discussion within the app."
   }
-  
+
+
 ];
 
 const Portfolio = {
@@ -102,7 +74,7 @@ const Portfolio = {
       head: "Cricket Live Line App & Web Development",
       name: "Live lines, public polls, live commentary, and many other features enhance the thrill of the match. Performance, precision, and perseverance are the keys to success in cricket.",
       name1: "With features such as",
-      listItems: ["Real-time live line updates,", "Live commentary,", "Multiple sports live lines," , "Expert polls, public polls, and live chat,"],
+      listItems: ["Real-time live line updates,", "Live commentary,", "Multiple sports live lines,", "Expert polls, public polls, and live chat,"],
       num: "1",
       icons: [
         "https://www.comfygen.com/image/react-portfolio-icon.svg",
@@ -112,9 +84,41 @@ const Portfolio = {
         "https://www.comfygen.com/image/html-portfolio-icon.svg"
       ],
     },
-  
+
   ],
 };
+
+const Process = [
+  {
+    title: "Requirement Discovery",
+    description: "Understand your business goals, target audience, and feature requirements to craft a tailored solution."
+  },
+  {
+    title: "UI/UX Design",
+    description: "Create intuitive and engaging interfaces that make it easy for fans to follow matches and access features."
+  },
+  {
+    title: "Real-Time Data Feed Setup",
+    description: " Integrate live score APIs, commentary feeds, and match statistics for accurate, instant updates."
+  },
+  {
+    title: "Backend Development",
+    description: "Build a scalable and secure server architecture capable of handling high traffic during major tournaments."
+  },
+  {
+    title: "Testing",
+    description: " Conduct thorough load, security, and real-time performance testing to ensure a smooth experience under peak usage."
+  },
+  {
+    title: "Deployment & Support",
+    description: "Launch the app across platforms and provide ongoing maintenance, updates, and technical support."
+  },
+  {
+    title: "Marketing & User Engagement",
+    description: " Implement app store optimisation, push notification strategies, and in-app engagement tools to maximise downloads and retain users."
+  },
+
+];
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -187,52 +191,210 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
+
+  const jsonLdData = [
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Cricket Live Line & Live Streaming Mobile App Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen offers custom Cricket Live Line and Live Streaming mobile app development solutions, including real-time scores, cricket live streaming, player stats, fantasy sports integration, and interactive features for fans worldwide.",
+      "url": "https://www.comfygen.com/live-line-cricket-mobile-app-development ",
+      "mainEntityOfPage": "https://www.comfygen.com/live-line-cricket-mobile-app-development ",
+      "areaServed": "Global",
+      "serviceType": [
+        "Cricket Live Line App Development",
+        "Cricket Live Streaming App Development",
+        "Live Cricket Score App Development",
+        "Fantasy Cricket App Development",
+        "Interactive Cricket Mobile App Development",
+        "White-Label Cricket App Development"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB"],
+
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": {
+        "@type": "Brand",
+        "name": "Comfygen Technologies"
+      },
+      "name": "Cricket Live Line & Live Streaming Mobile App Development",
+      "image": "About section Image URL",
+      "description": "Comfygen provides end-to-end Cricket Live Line and Live Streaming mobile app development, including real-time scores, live streaming, player stats, fantasy cricket integration, and interactive features for cricket fans worldwide.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "450"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much time does it take to develop a custom Live Line Cricket mobile app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The development time depends on features and complexity. A minimum viable product (MVP) for a live line cricket mobile app typically takes between 3 to 5 months to develop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you sign an NDA before starting a mobile app development project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Comfygen always signs a Non-Disclosure Agreement (NDA) to ensure that all intellectual property and project details are fully protected before starting development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to develop a custom Live Line Cricket mobile app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost varies depending on app features, complexity, and platforms. Typically, developing a live line cricket mobile app may range from USD 30,000 to USD 60,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Comfygen the best app development company for Live Line Cricket apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen delivers custom mobile apps that maximize ROI and fan engagement. Key advantages include advanced features, upcoming match lists, detailed sports data, expert teams, polls, and sports insights and news."
+          }
+        }
+      ]
+    }
+
+
+
+
+
+
+
+  ];
+
+
+
   return (
     <>
       <Head>
         <title>
-          Cricket Fast Line Mobile App Development Company in India & USA
+          Live Line Cricket Mobile App Development Comfygen
         </title>
         <meta
           name="description"
-          content="Looking to develop a Cricket Fast Live Line Mobile App? Our team of expert Mobile app developers can create a top-rated Cricket Fastline APi and applications that provides real-time scores, news, player stats, and more. Contact us today for a app consultation."
+          content="Experience the best Live Line cricket mobile app development with rich features like real-time score, live chat, match stats, live commentary."
         />
         <link
           rel="canonical"
           href="https://www.comfygen.com/live-line-cricket-mobile-app-development"
         />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="Cricket Fast Line Mobile App Development Company in India & USA"
+
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/live-line-cricket-mobile-app-development.webp" />
+        <meta name="twitter:title" content="Cricket Live Line Mobile App Development Company" />
+        <meta name=" twitter: description" content="Build high-speed Cricket Live Line mobile apps with Comfygen. Deliver real-time scores, live streaming, player stats, and interactive features for cricket fans worldwide." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/live-line-cricket-mobile-app-development.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/live-line-cricket-mobile-app-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/live-line-cricket-mobile-app-development.webp" />
+        <meta property="og:image:alt" content="Cricket Live Line Mobile App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/live-line-cricket-mobile-app-development" />
+        <meta property="og:title" content="Cricket Live Line Mobile App Development Company | Comfygen" />
+        <meta property="og:description" content="Build high-speed Cricket Live Line mobile apps with Comfygen. Deliver real-time scores, live streaming, player stats, and interactive features for cricket fans worldwide." />
+        <meta property="og:type" content="website" />
+
+        {/* Structured Data Scripts */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        <meta
-          property="og:description"
-          content="Looking to develop a Cricket Fast Live Line Mobile App? Our team of expert Mobile app developers can create a top-rated Cricket Fastline APi and applications that provides real-time scores, news, player stats, and more. Contact us today for a app consultation."
-        />
-        <meta name="language" content="en-us" />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/live-line-cricket-mobile-app-development"
-        />
-        <meta property="og:site_name" content="Comfygen" />
-        <meta
-          property="article:publisher"
-          content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/"
-        />
-        <meta
-          property="article:modified_time"
-          content="2022-10-13T11:48:00+00:00"
-        />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/images/cricket.png?size=1024"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comfygentech" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="11 minutes" />
+
+
+
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -242,7 +404,7 @@ export default function Ecommerce(props) {
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/live-line-cricket-mobile-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Cricket Fast Live Line Mobile App Development Company"
-            ptag="To meet the demands of cricket fans, we provide services for Fast Live Line Cricket Mobile Application Development. Our team specializes in developing engaging mobile applications for cricket fans that include real-time information, live scores, match schedules, player statistics, and other features."
+            ptag="If you want to build a cricket live line app that delivers real-time scores faster than TV, you’re in the right place. We are the best live cricket score app development company. We create high-speed cricket live line mobile apps with every minute-by-minute updates, instant alerts, and an interface that fans can follow without missing a moment. Our Mobile app development team has deep experience in cricket score mobile app development, real-time data APIs, and scalable sports platforms built for massive match-day traffic."
             li="Real-Time Cricket Updates"
             li1="Engaging Cricket App Solutions"
             li2="Live Scores & Stats"
@@ -257,8 +419,10 @@ export default function Ecommerce(props) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Cricket Live Line Mobile App Development Company"
-          description1="With features like live lines, public votes, live commentary, and more, we specialize in Live Cricket Line Android App Development that improve the experience of watching matches. Our staff is focused on Live Cricket Mobile App Development that give consumers real-time updates and fun features because we comprehend the excitement of cricket matches. Whether you require real-time score updates, match analysis, player data, or interactive features like user polls, we can create a Cricket Live Line software that piques the interest of cricket fans and enhances their experience of watching matches. We can realize your vision for a Cricket fast Live Line app development with a user-friendly layout and fluid performance thanks to our expertise in Live cricket mobile app development. Choosing us for your company would be teh best decision you don’t have to regret we are the most reliable Cricket live line app development Company"
+          heading="Why Businesses Are Investing in Cricket Score Mobile App Development"
+          description1="Cricket has shifted heavily toward mobile-first viewing, and fans want updates the moment a ball is bowled. That’s why cricket fast live line apps have become essential for platforms trying to keep users engaged. Real-time scoring, instant match alerts, and ball-by-ball insights keep fans hooked longer than traditional score portals."
+          description2="The demand peaks during major tournaments like the IPL, World Cup, Big Bash, and PSL, where millions of cricket fans depend on cricket live score apps to track matches on the go. For businesses, this creates a strong opportunity to boost user retention, increase daily active users, and build new revenue streams through ads, premium access, and fan engagement tools."
+          description3="Sports platforms, broadcasters, and sports analytics companies are adopting the Live Line Cricket Mobile App Development Service because they deliver what fans expect: fast scores, accurate data feeds, live match stats, and clean UI."
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -266,8 +430,8 @@ export default function Ecommerce(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Make the most popular mobile app for cricket live line</h2>
-              <p>You can develop a Live Line Cricket app just in time for the upcoming sports season!</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Make the most popular Live Line Cricket Mobile App Development</h2>
+              <p>Launch your cricket live line application before the season begins and capture the audience early. As the Best Live Line Cricket Mobile App Development Company, we will provide features in the app like real-time scores, instant alerts, match odds, player stats, and fast updates to boost downloads, retention, and engagement as major cricket tournaments pick up pace.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -275,50 +439,19 @@ export default function Ecommerce(props) {
           </div>
         </section>
         <InfoSectionRight
-          heading="Develop the most downloaded mobile cricket app"
-          description1="The three keys to success in cricket are performance, precision, and perseverance. A live line cricket mobile app would be appreciated by countless cricket fans around the world. With features such as real-time live line updates, live commentary, multiple sport live lines, expert polls, public polls, and live chat, cricket enthusiasts can experience the same thrill they would get sitting in the stands of a cricket stadium."
+          heading="Develop the Most Downloaded Mobile Cricket score app"
+          description1="If you want your cricket score app to rise to the top, focus on what fans care about most: speed, accuracy, and excitement. Our IPL live line mobile app development service gives users the same rush they feel inside a stadium, but right on their phones."
+          description2="With real-time score updates, ball-by-ball commentary, multiple sport live lines, expert opinions, public polls, and live chat, fans stay connected to every moment. These features keep users coming back, boost engagement during big tournaments, and help your app become one of the most downloaded cricket platforms worldwide."
           imageSrc="https://www.comfygen.com/image/develop-the-most-mobile-cricket-app.webp"
           link="/contact-us"
           linkText="Lets Discuss"
         />
-        <SolutionSec
-          heading="Features of Live Cricket Score Mobile Apps"
-          subheading="All features are designed to help the business grow exponentially while keeping the thrill of the game alive on the go."
-          techData={technologyData}
-        />
+
 
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
         <ContactFromCenter />
-    
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-         
-            <InfoSectionLeft
-              heading="What makes Comfygen the best app development company for Live Line Cricket?"
-              description1="You can maximize your business's ROI and thrill your fans with custom mobile apps from Comfygen."
-              points={["Astonishing Features" , "A list of upcoming matches" , "Data related to sports" , "Team of Experts & Innovators" , "The polls" , "Insights and news about sports"]}
-              imageSrc="https://www.comfygen.com/images/what-is-cricket-data-api.webp"
-              link="/contact-us"
-              linkText="LET'S CONNECT "
-            />
-            <InfoSectionRight
-              heading="Multiple sports support"
-              description1="How important is it to you that your live Cricket score mobile app also covers T10 Leagues? No worries, we've got you covered! For almost all major sports, Comfygen offers custom live line mobile app development."
-              description2="For almost all major sports, Comfygen offers custom live line mobile app development."
-              points={["Cricket" , "Tennis" , "News app for Android" , "Football" , "Basketball"]}
-              imageSrc="https://www.comfygen.com/images/multiple-sports-support.webp"
-              link="/contact-us"
-              linkText="Lets Discuss"
-            />
-             <InfoSectionLeft
-              heading="In order to develop Fast Line Cricket apps, we follow a specific process"
-              points={["Requirements Analysis" , "Insights & Strategy" , "Plan & Wireframe" , "Development based on sprints" , "Quality Assurance or Testing" , " Deployment"]}
-              imageSrc="https://www.comfygen.com/images/cricket-fast-live-line-api-development.webp"
-              link="/contact-us"
-              linkText="LET'S CONNECT "
-            />
-          </div>
-        </section>
+
+
         {/* <CricketCom /> */}
         <PortfolioSec
           techData={Portfolio}
@@ -327,12 +460,37 @@ export default function Ecommerce(props) {
         />
 
         <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
+          heading="Catch Every Local Cricket Match Live!"
+          text="Don’t miss a single run, wicket, or boundary—watch local tournaments, club matches, and regional leagues in real time on your mobile. Start Streaming Now!"
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
+        />
+
+
+        <div className="py-8">
+          <Features
+            heading="Key Features of Our E-commerce App Solutions"
+            description=" We build custom <a href='https://www.comfygen.com/blog/what-is-e-commerce-and-its-applications/' class='text-blue-600 font-semibold'>E-commerce applications</a> that ensure smooth business operations and excellent shopping experiences. We offer dynamic panels and tools for customers, vendors, admins, and delivery teams as part of our custom mobile eCommerce app development services."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
+        <SolutionSec
+          heading="Advanced Features for Modern Live Line Cricket Mobile App"
+          subheading="Take your cricket app to the next level with features designed to keep fans engaged and coming back for every match."
+          techData={technologyData}
+        />
+
+        <ProcessSec
+          title="Our End-to-End Live Line Cricket Mobile App Process"
+          description="At Comfygen, we follow a structured process to build cricket live line and live streaming apps that are fast, reliable, and feature-rich. Every step is designed to ensure high performance, user engagement, and scalability."
+          processSlides={Process}
+        />
+        <TechStack
+          title="Tech Stack We use to develop a cricket live line App"
+          description="We use a modern, robust technology stack to build cricket live line App and live streaming apps that are fast, scalable, and reliable. Our App Development team selects the right tools to ensure seamless performance and smooth user experiences across all devices."
         />
 
         <Faq

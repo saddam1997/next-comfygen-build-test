@@ -73,8 +73,10 @@ const Features: React.FC = () => {
     <div className="lg:py-16 py-10 bg-[#F5F5F9]">
       <div className="space-y-2">
         <h2 className="xl:text-4xl text-3xl text-center mt-3 font-bold">
-          Top Features for Your Social Media App
+         Powerful Features to Build a Successful Social Media App
         </h2>
+
+          <p className="text-black max-w-6xl mx-auto lg:px-8 px-4">Comfygen builds smart social media apps that are interactive and packed with advanced features. Our social networking apps provide real-time communication, content sharing, engagement tools, and complete admin control.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10">
         {featuresData.map((feature) => (

@@ -40,6 +40,7 @@ import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 import Faq from "../Newcomponet/SectionCompoent/Faq";
 import Milestones from "../Newcomponet/comman/Milestones";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
 
 const BreadcrumbSchema = {
@@ -357,12 +358,12 @@ export default function Mobile(props: any) {
       title: "Insurance & Claims Apps",
       desc: "We provide <a href='https://www.comfygen.com/insurance-app-development' class='text-blue-600 font-semibold'>insurance app development solutions</a> to simplify policy management, claim submissions, tracking, and customer support for improved digital service delivery.",
     },
-     {
+    {
       img: <IconShield stroke={1.5} className="w-12 h-12" />,
       title: "Instant Delivery App Development",
       desc: "We <a href='https://www.comfygen.com/blog/build-quick-commerce-app-like-blinkit-zepto-instamart/' class='text-blue-600 font-semibold'>build instant delivery apps like Blinkit</a> with live GPS tracking, automated dispatch, quick checkout, and real-time order updates to deliver items faster and improve customer satisfaction for hyperlocal delivery businesses.",
     },
-     {
+    {
       img: <IconShield stroke={1.5} className="w-12 h-12" />,
       title: "Alcohol Delivery App Solutions",
       desc: "Develop legal and secure alcohol delivery apps with age verification, digital catalog, in-app offers, and real-time tracking. Our on-demand app development company in Jaipur enables smooth doorstep delivery experiences.",
@@ -383,9 +384,14 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Custom Mobile App Development Company in Jaipur, India | Custom App
-          Solutions
+          Best Mobile App Development Company in Jaipur, India
         </title>
+
+        <meta
+          name="description"
+          content="Comfygen Technologies is a leading mobile app development company in Jaipur, India. We provide custom mobile app development services for Android, iOS platforms to startups and enterprise-level companies."
+        />
+
         <meta
           name="keywords"
           content="Android App Development, iOS App Development, Cross-Platform App Development, React Native App Development, Flutter App Development, On-Demand Mobile App Development, Hybrid Mobile App Development"
@@ -580,7 +586,7 @@ export default function Mobile(props: any) {
           />
         </div>
         {/* <Sponser /> */}
-        <Milestones/>
+        <Milestones />
 
         <AboutSection
           title=""
@@ -607,11 +613,6 @@ export default function Mobile(props: any) {
           </div>
         </section>
 
-        <Solution
-          heading="Grow Your Business with Comfygen’s Custom Mobile App Development Solutions"
-          subheading="We offer a full suite of custom mobile app development services in Jaipur tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality application development solutions for every platform."
-          techData={technologyData}
-        />
 
         <section className="py-8">
           <Portfolio
@@ -620,6 +621,24 @@ export default function Mobile(props: any) {
             description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
           />
         </section>
+
+
+        <CallToAction
+          heading="Have an App Idea in Mind?"
+          text="Our expert developers are here to make it happen. From concept to launch, we’ll build your app with precision and innovation."
+          buttonText="Start Your Project"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
+
+        <Solution
+          heading="Grow Your Business with Comfygen’s Custom Mobile App Development Solutions"
+          subheading="We offer a full suite of custom mobile app development services in Jaipur tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality application development solutions for every platform."
+          techData={technologyData}
+        />
+
+
 
         <LatestTechnology
           heading="Emerging Technologies We Leverage For Mobile Application Development"

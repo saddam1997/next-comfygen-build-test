@@ -109,7 +109,7 @@
   "consultancyHead": [
     {
       "num": "1",
-      "title": "Latest Tech-Trends in Website Development We Imply",
+      "title": "Latest Tech-Trends in Website Development",
       "desc": "Integrating latest tech-trends in website development will boost its performance, improve visibility, increase conversion rates; and build competitive web solutions. Hereby, Comfygen never fails to satisfy clients with tech-trends. We have"
     }
   ],
@@ -181,7 +181,7 @@
   "servicesData": [
     {
       "title": "Custom Website Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Comfygen builds custom websites in Jaipur tailored to your business needs. Our websites are fast, mobile-friendly, and SEO-optimized to attract more visitors and convert them into customers. We focus on creating unique designs and functionalities that perfectly match your brand identity and business goals.",
       "features": [
         "Tailored Solutions for Specific Business Needs",
@@ -191,29 +191,9 @@
       ]
     },
     {
-      "title": "Website UX/UI Designs",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Craft visually appealing and intuitive designs that enhance user interaction and leave a lasting impression on your visitors. Our web design process includes preparing essential elements, adding custom UX/UI designs, and ensuring the website's aesthetics align with your brand. Our skilled team of professional web designers in Jaipur, India works to create attractive and functional websites that resonate with your targeted audience, ensuring a seamless and engaging experience",
-      "features": [
-        "Intuitive User Interfaces",
-        "Aesthetic and Functional Designs",
-        "Enhanced User Experiences"
-      ]
-    },
-    {
-      "title": "Animation & Graphics Web Design Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Bring your website to life with dynamic animations and captivating graphic designs that engage users and boost interactivity.",
-      "features": [
-        "Eye-Catching Animations",
-        "Modern Graphic Design Trends",
-        "Interactive User Engagement"
-      ]
-    },
-    {
       "title": "E-Commerce Website Development ",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our <a href='https://www.comfygen.com/ecommerce' class='text-blue-600 font-semibold'>E-Commerce website development solutions</a> are designed to help you create a robust, scalable online store that delivers a seamless shopping experience for your customers. From custom product catalogs and secure payment gateways to inventory management and user-friendly interfaces, we provide end-to-end services that drive online sales and enhance customer satisfaction.",
+      "subtitle": "",
+      "description": "Our <a href='https://www.comfygen.com/ecommerce' class='underline font-semibold'>E-Commerce website development solutions</a> are designed to help you create a robust, scalable online store that delivers a seamless shopping experience for your customers. From custom product catalogs and secure payment gateways to inventory management and user-friendly interfaces, we provide end-to-end services that drive online sales and enhance customer satisfaction.",
       "features": [
         "Secure Payment Gateway Integration",
         "Mobile-Optimized E-Commerce Solutions",
@@ -223,17 +203,7 @@
     },
     {
       "title": "CMS & WordPress Website Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Empower your business with CMS platforms like WordPress, Drupal, and Joomla, offering a flexible and scalable approach to website management. Easily update content, streamline workflows, and maintain a robust backend that supports your business's growing needs with seamless, efficient management tools.",
-      "features": [
-        "Flexible and Scalable Designs",
-        "Simplified Content Updates",
-        "Robust Backend Support"
-      ]
-    },
-    {
-      "title": "Content Management Systems (CMS) Web Design Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Empower your business with CMS platforms like WordPress, Drupal, and Joomla, offering a flexible and scalable approach to website management. Easily update content, streamline workflows, and maintain a robust backend that supports your business's growing needs with seamless, efficient management tools.",
       "features": [
         "Flexible and Scalable Designs",
@@ -243,7 +213,7 @@
     },
     {
       "title": "Web Application Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We provide responsive web application development services in Jaipur that streamline business processes and enhance user experience. Our scalable and secure solutions help you automate tasks, manage data efficiently, and provide interactive, user-friendly interfaces that support long-term business growth.",
       "features": [
         "Custom Web App Development for Specific Needs",
@@ -255,7 +225,7 @@
     },
     {
       "title": "SEO-Friendly Website Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our SEO-friendly web development services in Jaipur are designed to optimize your website for search engines from the ground up. We implement best practices in website structure, coding, and content to enhance your site's visibility and ranking on search engines like Google. ",
       "features": [
         "SEO-Optimized Website Structure & Code",
@@ -265,19 +235,8 @@
       ]
     },
     {
-      "title": "Website Support and Maintenance",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We offer comprehensive website support and maintenance services to ensure your site runs smoothly post-deployment. Our team continuously monitors website performance, identifies any glitches or issues, and addresses them promptly. Whether it's integrating new features or updating existing ones, our goal is to keep your website fully functional, secure, and aligned with your business goals.",
-      "features": [
-        "Regular Performance Monitoring & Optimization",
-        "Bug Fixing & Issue Resolution",
-        "Feature Upgrades & Enhancements",
-        "Security Patches & Updates"
-      ]
-    },
-    {
       "title": "Web Portals",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our team specializes in developing dynamic and interactive web portals that serve as a central hub for your business operations. Whether you need a portal for employees, customers, or partners, we ensure it’s intuitive, secure, and scalable. With our web portals, you can streamline processes, improve communication, and enhance user engagement.",
       "features": [
         "Customizable User Interface",
@@ -288,7 +247,7 @@
     },
     {
       "title": "Magento Web Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our Magento development services in India are designed for businesses that need powerful and scalable eCommerce platforms. From custom theme development to extension and integration services, we provide end-to-end Magento solutions that enhance the online shopping experience and support business growth.",
       "features": [
         "End-to-End Magento Development",
@@ -299,7 +258,7 @@
     },
     {
       "title": "UI/UX & Website Redesign",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We transform websites with modern UI/UX designs that enhance usability and engagement. Our Jaipur team ensures your site is visually appealing, mobile-optimized, fast, and designed to maximize conversions while giving visitors an enjoyable browsing experience.",
       "features": [
         "Modern UI design",
@@ -309,30 +268,8 @@
       ]
     },
     {
-      "title": "Website Security Audits",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Ensure your website’s safety with our comprehensive security audits. We identify vulnerabilities and implement robust security measures to protect your website from threats. Our security audits cover everything from code review to penetration testing, ensuring your website remains secure and trustworthy for your users.",
-      "features": [
-        "Thorough Vulnerability Identification",
-        "Code Review & Penetration Testing",
-        "Robust Security Implementation",
-        "Ensuring Trust & User Confidence"
-      ]
-    },
-    {
-      "title": "Website Designing & Redesigning",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Whether you’re starting from scratch or looking to revamp your existing website, our design services will help you create a visually stunning and user-friendly site. Our designers focus on creating intuitive interfaces and engaging visuals that reflect your brand’s identity. We ensure that your website not only looks great but also delivers an excellent user experience.",
-      "features": [
-        "Custom Website Designs & Redesigns",
-        "Brand-Centric Visuals & Intuitive Interfaces",
-        "Engaging & User-Friendly Experiences",
-        "Responsive Design Across All Devices"
-      ]
-    },
-    {
       "title": "Responsive website development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We create responsive websites that adapt seamlessly to any device, providing a consistent and engaging experience across desktops, tablets, and smartphones. Our responsive designs ensure your site looks great and functions perfectly on all screen sizes, improving user experience and accessibility.",
       "features": [
         "Mobile-First Design Approach",
@@ -343,7 +280,7 @@
     },
     {
       "title": "Dynamic website design Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We specialize in creating dynamic websites that offer interactive features and real-time content updates. Our team builds websites that are not only visually appealing but also highly functional, incorporating custom functionalities to meet your business needs and engage your users effectively.",
       "features": [
         "Custom Functionalities & Interactive Features",
@@ -354,7 +291,7 @@
     },
     {
       "title": "Corporate website development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our web developer in India specializes in designing and developing professional corporate websites that reflect your brand's identity and values. Our team focuses on creating a polished, user-friendly site that enhances your online presence, builds credibility, and facilitates business growth.",
       "features": [
         "Tailored Designs to Reflect Corporate Identity",
@@ -363,9 +300,9 @@
         "Scalable Solutions for Business Expansion"
       ]
     },
-    {
+     {
       "title": "API Integration & Maintenance",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Comfygen offers API integration and website maintenance services to ensure smooth operation. We connect your website with third-party tools, provide regular updates, monitor performance, and quickly fix issues to keep your online presence efficient and reliable.",
       "features": [
         "API & third-party integration",
@@ -374,6 +311,8 @@
         "Quick bug fixes"
       ]
     }
+    
+   
   ],
   "Process": [
     {

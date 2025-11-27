@@ -300,8 +300,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title> Best Custom eLearning App Development Company in India & USA </title>
-        <meta name="description" content="Looking for a custom eLearning app development company in India & the USA? Comfygen delivers custom edtech solutions with AI, AR/VR, and blockchain integration to enhance learning experiences. Build future-proof eLearning apps today!" />
+        <title> Custom eLearning App Development Company India & USA </title>
+        <meta name="description" content=" Looking for the best eLearning app development company in India & USA? Comfygen builds custom online learning apps with AI, AR/VR, live classes, and secure features. Hire expert eLearning app developers today!" />
         <link rel="canonical" href="https://www.comfygen.com/e-learning-app-development" />
 
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
@@ -371,14 +371,13 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Best Custom eLearning App Development Company in India and the USA"
-            ptag="Transform the way of educating and learning with our custom eLearning app development solutions. Comfygen is the best eLearning app development company in India and the USA delivering edtech app development solutions catering to millions of teaching professionals and students with personalized experiences. "
-            ptag1="The highly advanced education applications, such as tutor app development promote remote education systems with emerging technologies. Our expert eLearning app developers build student-centric tech infrastructure with the desired varieties of courses for more engagement."
-            li="AI/ML, IoT, AR/VR, Blockchain Integration into eLearning apps"
-            li1="Edtech development experience"
-            li2="Drive Revenue with Innovative App Solutions"
-            li3="Future-Proof Apps, Built for Profit"
-            li4="Custom E-Learning App Development"
+            heading="Custom eLearning App Development Company in India & USA"
+            ptag="Comfygen Technologies is a top eLearning app development company in India & USA offering custom EdTech solutions with AI, AR/VR, Blockchain & analytics features. Build secure, scalable online learning apps for schools, coaching, and corporate training. Hire expert eLearning app developers today!"
+            ptag1=""
+            li="Custom eLearning App Development"
+            li1="AI-powered learning & smart analytics"
+            li2="AR/VR classroom & interactive content"
+            li3="Secure & scalable online learning platforms"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -399,7 +398,7 @@ export default function ClinicalApp(props: any) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Comprehensive E-Learning App Development Services</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Comprehensive E-Learning App Development Services in India</h2>
               <p className="text-base text-center font-normal">We're a leading eLearning app development company in India dedicated to providing the best eLearning app development services.</p>
             </div>
             <div className="">

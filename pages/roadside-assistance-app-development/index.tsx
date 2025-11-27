@@ -263,11 +263,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Top Roadside Assistance App Development Company | Towing App Solutions
+       Roadside Assistance App Development Company | Towing App Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading roadside assistance app development company offering custom towing app solutions with real-time GPS tracking, SOS, AI dispatch, and secure payment. Hire expert developers for fast, scalable, and reliable roadside app development services."
+          content="Comfygen is a top roadside assistance app development company offering custom towing and roadside service apps with GPS tracking, AI features, and 24/7 support."
         />
         <link
           rel="canonical"
@@ -376,14 +376,14 @@ export default function ClinicalApp(props: any) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Roadside Assistance App Development Company"
-            ptag="Comfygen is a leading roadside assistance app development company, building secure, scalable, and high-performing towing and emergency service apps for startups, fleets, insurers, and auto businesses. Our roadside app development services provide real-time GPS tracking, instant service requests, seamless UI/UX, and lightning-fast response times. Empower your customers with reliable 24/7 roadside help through tech-driven solutions built by our towing app development expert team."
-            li="On-Demand Towing & Emergency Support Apps"
-            li1="Custom Roadside Solutions for Any Vehicle Type"
-            li2="10+ Years of Trusted App Development Experience"
+            ptag="Launch a powerful towing vehicle service app with Comfygen. We provide secure, real-time tracking-enabled, on-demand roadside assistance app development services for towing businesses, auto service providers, and startups. Boost your customer experience with fast emergency response features, GPS tracking, digital payments, and 24/7 support."
+            li="100% Custom & Scalable Solutions"
+            li1="AI & GPS Powered Roadside Assistance Apps"
+           
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -395,9 +395,9 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Transform Vehicle Emergency Services with Roadside Assistance App Development"
-          description1="Getting roadside help is now faster and easier with roadside assistance app development. These mobile apps let users call for help anytime, anywhere. With real-time GPS tracking, SOS buttons, and instant alerts, drivers can quickly connect with the nearest towing or repair service. Whether it’s a flat tire, battery issue, or engine problem, the app sends help without delay."
-          description2="Comfygen Technologies is a leading <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development company</a>, building custom roadside assistance apps that are simple to use and work smoothly. Our towing/roadside assistance mobile app solutions help businesses give 24/7 support, track services live, take secure payments, and grow faster. With our cutting-edge roadside assistance app development services, you can drive digital transformation in the vehicle emergency services industry."
+          heading="Next-Gen Roadside Assistance App Development for Quick Vehicle Help"
+          description1="Getting roadside help has never been easier. With roadside assistance app development, users can request help anytime, anywhere. Real-time GPS tracking, SOS buttons, and instant alerts connect drivers to the nearest towing or repair service quickly. Whether it’s a flat tire, battery issue, or engine problem, help arrives fast."
+          description2="Comfygen Technologies is a top <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>towing mobile app development company</a>, builds custom, user-friendly mobile apps for towing and roadside services. Our solutions enable businesses to provide 24/7 support, track services live, process secure payments, and grow efficiently. Drive digital transformation in the vehicle emergency services industry with our cutting-edge roadside assistance app development services."
           imageSrc="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"

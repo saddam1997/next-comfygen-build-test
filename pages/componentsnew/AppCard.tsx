@@ -12,10 +12,10 @@ const AppCard = ({ title, cards, subtitle, openModal }) => {
       <h2 className="text-3xl px-1 mt-6 text-center font-bold mb-6 max-w-8xl">
         {title}
       </h2>
-      <h2
+      <p
         className="text-md text-center px-1 mx-auto mb-6 max-w-5xl"
         dangerouslySetInnerHTML={{ __html: subtitle }}
-      ></h2>
+      ></p>
 
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 m-6 lg:m-0">
         {cards?.slice(0, visibleCount).map((card:any, index:any) => (
