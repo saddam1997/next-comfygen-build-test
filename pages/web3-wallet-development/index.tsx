@@ -623,13 +623,13 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Web3 Wallet Development Company | Decentralized Wallet Solutions by Comfygen</title>
+        <title>Best Web3 Wallet Development Company | Crypto Wallets by Comfygen</title>
         <meta
           name="description"
           content="Build secure, scalable, and feature-rich Web3 wallets with Comfygen — a trusted Web3 wallet development company offering multi-chain, DeFi, and NFT integrations."
         />
 
-        <meta name="keywords" content="Web3 Wallet Development, Multi-Chain Crypto Wallet Solutions, Custom Blockchain Wallets, DeFi Wallet Integration, NFT Wallet Development, Crypto Wallet App Development, Blockchain Wallet Company, Secure Wallet Solutions, Web3 App Development, Cryptocurrency Wallet Integration" />
+        <meta name="keywords" content="As a leading Web3 wallet development company, we provide customized wallet development solutions that offer multi-chain, DeFi, and NFT integrations" />
 
         {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/web3-wallet-development" />
@@ -718,11 +718,11 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Web3 wallet development company"
-            ptag="Comfygen trusted wallet development company, unlocks the full potential of decentralized finance through secure, scalable, and intelligent Web3 wallet development solutions. We develop feature-rich web3 wallets that allow users to manage digital assets, NFTs, and DeFi portfolios with multiple blockchains. Comfygen blockchain Development experts combine advanced encryption, intuitive design, and interoperability to deliver next-gen crypto wallet experiences tailored to your business."
+            ptag="Comfygen, the best web3 wallet development company, unlocks decentralized finance's potential with secure, scalable Web3 wallet Development solutions. Experts build non-custodial or multi-chain wallets for seamless digital asset, NFT, and DeFi management across blockchains, featuring advanced encryption, intuitive design, and interoperability. Comfygen crafts fast, effortless wallets with smooth onboarding, token swaps, NFT support, fiat on-ramps, and major blockchain integration."
             li="Multi-chain and cross-platform wallet integration."
-            li1="Advanced AI-powered security and private key protection."
-            li2="DeFi, NFT, and token swap functionality."
-            li3="End-to-end Web3 wallet development with 24/7 support."
+            li1="Advanced AI-powered security."
+            li2="DeFi, NFT, and token swap functionality"
+            li3="End-to-end Web3 wallet development."
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -734,7 +734,7 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Our Web3 Wallet Development Services"
+          heading="Benefits of Partnering with Comfygen for Web3 Wallet Development"
           description1="As a trusted Web3 wallet development company, Comfygen delivers next-generation <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'>blockchain wallet development</a> solutions especially designed for the decentralized world. Our Web3 wallets go beyond traditional crypto wallets by offering complete control, transparency, and interoperability across multiple blockchains. Our <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallet development</a> solutions empower users with self-custody, eliminating third-party risks while enabling secure management of cryptocurrencies."
           description2="Businesses worldwide are rapidly adopting Web3 wallet development services that provide users with greater privacy, faster transactions, and seamless multi-chain access. At Comfygen, we specialize in creating secure, scalable, and user-friendly crypto wallets that are designed according to business need, and helping you stay ahead in the evolving decentralized ecosystem."
           imageSrc="https://www.comfygen.com/comfygen-images/web3-wallet-development/about.webp"

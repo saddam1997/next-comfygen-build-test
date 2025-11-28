@@ -201,7 +201,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-   
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -460,11 +460,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-        Medicine Delivery App Development Company | Pharmacy delivery App development
+          Medicine Delivery App Development Company | Pharmacy delivery App development
         </title>
         <meta
           name="description"
-          content="Comfygen Medicine Delivery App Development Company. Custom Pharmacy Delivery Apps for efficient deliveries with AI-powered and HIPAA-compliant for your startup business"
+          content=" Comfygen Medicine Delivery App Development Company. Custom Pharmacy Delivery Apps for efficient deliveries with AI-powered and HIPAA-compliant for your startup business"
         />
 
         <meta
@@ -564,7 +564,7 @@ export default function Ecommerce(props) {
         <div className="">
           <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/your-partner-in-medicine-ordering-app-development-hero-img.webp')]">
             <HeroSectionForAllPages
-              heading="medicine-delivery-app-development"
+              heading="Medicine Delivery App Development Company"
               ptag="Grow your pharmacy business with Best Delivery app development Company Comfygen Technologies, which builds cutting-edge medicine delivery app development solutions for seamless medicine online ordering, real-time tracking, and secure payments. At Comfygen, we specialize in developing HIPAA-compliant, AI-powered medicine delivery apps that enhance user experience, streamline pharmacy operations, and ensure faster, more efficient medicine delivery."
               li="Custom Medicine Delivery App Development"
               li1="24/7 Support & Maintenance"
@@ -594,10 +594,10 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Medicine Delivery App Development Services
+                Our Medicine Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-               We have gained the trust of our clients by offering medicine delivery app development services according to business goals. The following list of different medicine delivery app development services.
+                We have gained the trust of our clients by offering medicine delivery app development services according to business goals. The following list of different medicine delivery app development services.
               </p>
             </div>
             <div className="">
@@ -605,12 +605,22 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <CallToAction
+          heading="Launch Your Medicine Delivery App with Cutting-Edge Features Today!"
+          text="Transform your business with our expert medicine delivery app development services and stay ahead in the healthcare industry"
+          buttonText="Get Started Project"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                 Our Medicine Delivery App Development Solutions 
+                  Our Medicine Delivery App Development Solutions
                 </h2>
                 <p>
                   We are a leading online medicine delivery mobile app development agency in India with a specialization in developing medicine delivery apps to transform medicine deliveries. Our mission revolves around transforming one of the most crucial areas of the healthcare sector by creating custom medicine delivery applications. In addition, we also offer different types of proven and tested delivery app development solutions to help you manage the operations of your custom medicine delivery apps.
@@ -737,14 +747,7 @@ export default function Ecommerce(props) {
 
 
         {/* <Tab /> */}
-        <CallToAction
-          heading="Launch Your Medicine Delivery App with Cutting-Edge Features Today!"
-          text="Transform your business with our expert medicine delivery app development services and stay ahead in the healthcare industry"
-          buttonText="Get Started Project"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/medicine-delivery-app-call-to-action-image.webp"
-          imageAlt="Future of Technology"
-        />
+
 
         {/* <Providers /> */}
         <ConsultancyApproach

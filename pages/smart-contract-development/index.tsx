@@ -20,6 +20,8 @@ import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import TechStack from "../Newcomponet/SectionCompoent/TechStack";
 import Faq from "../Newcomponet/SectionCompoent/Faq";
 
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
+
 
 const Process = [
   {
@@ -33,7 +35,7 @@ const Process = [
       />
     ),
     title: "Ethereum Smart Contract Development",
-    decs: "Using Ethereum for smart contract development is our prime USP, and Comfygen has always taken a stronger leap with it to help your projects turn out to be immensely successful. As Ethereum Smart Contract Development is one of the most well-known blockchain development networks for smart contract development company, we are offering a full-fledged core team to look after the ideal utilisation of this technology for getting your project ready.",
+    decs: "Ethereum is a leading blockchain network for smart contract development. At Comfygen, our expert team leverages <a href='https://www.comfygen.com/blog/how-to-build-and-ethereum-smart-contract-in-easy-steps/' class='underline font-semibold'>Ethereum smart contract development</a> to build secure, scalable, and efficient solutions, ensuring your project’s success from coding to deployment.",
   },
   {
     num: "2",
@@ -41,7 +43,7 @@ const Process = [
       <Image src="https://www.comfygen.com/images/icons/tron.webp" alt="TRON" width={60} height={60} />
     ),
     title: "TRON Smart Contract Development",
-    decs: "We are providing you with the feasibility of choosing TRON Smart Contract Development as your blockchain technology for developing smart contracts. Our team has dedicated TRON smart contract development experts who will take up your project, break it down into understandable segments, and help you with coding, compiling, testing, and deploying your smart contract.",
+    decs: "Comfygen offers <a href='https://www.comfygen.com/tron-token-development' class='underline font-semibold'>TRON smart contract development</a> with dedicated experts who handle coding, testing, and deployment, delivering reliable and high-performance smart contracts for your business.",
   },
   {
     num: "3",
@@ -54,7 +56,7 @@ const Process = [
       />
     ),
     title: "Binance Smart Contract Development",
-    decs: "Binance is one of the easiest technologies or networks over a blockchain development company that can be used for making Binance Smart Contract Development. Comfygen is quite proficient with handling the technicalities associated with Binance Smart Chain for developing high-performance smart contracts",
+    decs: "Our team is proficient in Binance Smart Contract Development, using Binance Smart Chain to create fast, secure, and scalable smart contracts tailored to your project needs.",
   },
   {
     num: "4",
@@ -67,38 +69,38 @@ const Process = [
       />
     ),
     title: "Polygon Smart Contract Development",
-    decs: "Polygon, being backed by the security layers of Ethereum Smart Contract Development, can be your next big pick for getting your smart contracts developed. Our experts are skilled in leveraging the potential of Polygon Smart Contract Development and its interoperability functionalities to help you create a smart contract over this blockchain development network where the traffic is moderate and well-managed.",
+    decs: "With <a href='https://www.comfygen.com/polygon-blockchain-development' class='underline font-semibold'>Polygon smart contract development</a>, we harness Ethereum’s security layers and Polygon’s interoperability to build efficient smart contracts on a network optimized for moderate, manageable traffic.",
   },
 ];
 
 const Processs = [
   {
-    title: "Collecting the Requirements",
-    description: "The first thing our experts are trained to do upon receiving a smart contract development firm request is gather all possible requirements about the project and the client’s business. In this step, we will be planning out the business logic and will then be curating a perfect smart contract development roadmap to walk on. This would help us deliver the best digital contract development company to meet your business purpose."
+    title: "Requirement Gathering",
+    description: "We analyze your business goals, project scope, and industry needs to create a tailored smart contract development roadmap that ensures every function aligns with your objectives."
   },
   {
-    title: "Designing the Architecture",
-    description: "In our method of execution, this is the most crucial step where our smart contract developers prepare the architecture of your smart contract development company. Here, we create a blueprint of how your smart contract development would be. In the smart contract development process, we take note of the security & compliance regulations and design the overall architecture, which helps us outline the overall smart contract development approach."
+    title: "Architecture Design",
+    description: " Our smart contract development team crafts secure and scalable blueprints, incorporating compliance, security, and performance considerations to form a solid foundation for development."
   },
   {
-    title: "Smart Contract Development Initiative",
-    description: "At Comfygen, we have the best smart contract development coders in the smart contract development industry, and they shall take charge of programming the smart contracts based on your approval of the prior designs and architecture that our team worked on. We have divided our development phase into three stages, which is referred to as the Alpha, Beta, and Release stage."
+    title: "Development",
+    description: " Programming is executed in phases—Alpha, Beta, and Release—allowing for iterative feedback, feature testing, and precise execution by our expert developers."
   },
   {
-    title: "Testing Approach",
-    description: "Following that, we move ahead with our validation process for carrying out the QA testing cycle. For every release of the smart contract development organization, our team will run data-derived validations and test its performance proficiency. This is to ensure that the smart contract you develop is ready for deployment."
+    title: "Testing & QA",
+    description: "Each smart contract undergoes rigorous validation, including functional, performance, and security checks, to guarantee reliability before deployment."
   },
   {
-    title: "Deployment of the Smart Contract",
-    description: "The final smart contract development services will then be provisioned and deployed into production, following your consent. Following that, we shall also provide consistent monitoring efforts for your smart contract development utilisation and recommend maintenance or upgrade necessities when needed."
+    title: "Deployment",
+    description: "After approval, your smart contract is deployed on the blockchain, with continuous monitoring and guidance for maintenance or upgrades."
   },
   {
     title: "Integration and Optimization",
-    description: "Once the smart contract is deployed, we focus on seamless integration with your existing systems or blockchain platforms. Our team ensures the smart contract operates optimally by fine-tuning its functions and resolving any discrepancies in real-time. This ensures flawless interoperability and maximum efficiency."
+    description: "We integrate the smart contract with your existing systems or dApps, fine-tuning functions for smooth operation, interoperability, and maximum efficiency."
   },
   {
-    title: "24/7 Customer Suppor",
-    description: "Our smart contract development team is always available and ready to address almost all queries or questions that you have related to your smart contract development company project. In case you are stuck at any point while using your dedicated decentralised apps embedded with smart contracts, get in touch with us right away!"
+    title: "24/7 Support",
+    description: "Our Blockchain development team is always available to assist with any queries, troubleshooting, or optimization needs to ensure uninterrupted performance."
   },
 
 ];
@@ -148,7 +150,7 @@ const technologyData = [
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   let {
 
@@ -451,8 +453,8 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Smart Contract Development Services"
-          ptag="Comfygen is dedicated to helping enterprises across India & the USA implement top-tier smart contract development services. As the Best smart contract development company in India, our highly skilled team of blockchain developers has expertise in delivering tailored smart contract solutions, bridging the expertise gap. We work tirelessly to provide secure, efficient, and innovative solutions that align with your business goals."
+          heading="smart-contract-development"
+          ptag="Comfygen helps enterprises in India and the USA develop secure, reliable, and business-ready smart contracts. As a leading smart contract development company in India, we bring a skilled team of blockchain developers who understand how to turn complex logic into efficient, automated workflows on the blockchain. We focus on blockchain smart contract development services, filling the technical gap for businesses that need precision, security, and scalability. Every smart contract development solution is built to support your goals, whether you’re launching a DeFi platform, minting NFTs, or automating enterprise operations."
           li="Expert Blockchain Developers"
           li1="Tailored Smart Contract Solutions"
           li2="Round-the-Clock Support"
@@ -468,17 +470,20 @@ export default function Ecommerce(props) {
 
         <AboutSection
           title="About Company"
-          heading="Smart Contract Development – Unlock Blockchain Expertise with Comfygen"
-          description1="We at Comfygen, help to create smart contracts by implementing blockchain technology. Whether you are looking to boost your enterprise workflows or bring in some innovative smart contract solutions to market, our experienced developers can help automate the process. With our custom smart contract development services, our team of developers has the experience and skills to deliver smart contract development solutions that help your business scale seamlessly."
+          heading="Why Businesses Are Building Blockchain Smart Contracts?"
+          description1="Many companies are adopting blockchain smart contract development services because these contracts solve problems that traditional systems can’t handle. By partnering with a trusted smart contract development company, businesses can implement secure, automated workflows that execute exactly as intended."
+          description2="Blockchain smart contracts run automatically as soon as predefined conditions are met—no middlemen, no delays, and no human errors at critical moments. This automation reduces operational costs and speeds up processes across finance, supply chain, gaming, real estate, healthcare, and any industry that relies on trust and verification."
+          description3="The benefits for businesses are clear: transparent workflows, tamper-proof records, and predictable outcomes. Payments settle instantly, agreements execute precisely as coded, and disputes decrease because every action is verifiable."
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          description4="Whether a company is launching a DeFi platform, managing digital assets, running NFT operations, or automating enterprise approvals, blockchain smart contract development services from an experienced smart contract development company provide unmatched security, accuracy, and efficiency compared to legacy systems"
           link="/about-us"
           linkText="Explore More"
         />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Smart Contract Development Services</h2>
-              <p className="text-base text-center font-normal">Comfygen offers a wide array of custom smart contract development services for businesses looking to integrate smart contracts into their operations. As a trusted smart contract development company, our team is skilled in creating, optimizing, and auditing smart contracts for a variety of applications, including DeFi, NFTs, and decentralized exchanges (DEXs). Here’s a look at our core services:</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Blockchain Smart Contract Development Services</h2>
+              <p className="text-base text-center font-normal">Comfygen offers the best custom blockchain smart contract development services for businesses looking to integrate smart contracts into their operations. As a leading smart contract development company, our expert team specializes in creating, optimizing, and auditing smart contracts for diverse applications, including DeFi platforms, NFTs, and decentralized exchanges (DEXs). Here’s a look at our core smart contract development services:</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -487,19 +492,19 @@ export default function Ecommerce(props) {
         </section>
         {/* <ContactFromCenter /> */}
 
+
+
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1] ">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4">
               <div className="flex flex-col justify-center text-center">
                 <h2 className="py-4 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem]  ">
-                  Smart Contract Development Across Leading Blockchain Platforms
+                  Blockchain Platforms Using Smart Contract Development
                 </h2>
                 <p className="text-base text-white">
-                  Comfygen understands the core need for automation across diverse blockchain-based smart contract development industries or business domains. Whether it's financing smart contract development, real estate smart contract development, healthcare smart contract development, or any other industry, we, as a leading smart contract development agency, offer our core expertise in providing robust smart contract development solutions to improve operations and help businesses benefit from decentralization and digitalization. If you want to get started with introducing proficient automation to your business sector, you can hire smart contract developer from our team to decide on the blockchain technology for your smart contracts.
+                  Comfygen provides comprehensive blockchain smart contract development services for businesses across finance, real estate, healthcare, and more. As a trusted smart contract development company, we deliver secure, efficient, and scalable solutions that streamline operations and harness the power of decentralization.
                 </p>
-                <p className="text-base text-white">
-                  Here are some of the blockchain technologies that we support for our smart contract development services:
-                </p>
+
               </div>
               <div className="grid gap-10 py-10 text-left lg:grid-cols-2 md:grid-cols-2 xl:gap-10">
                 {Process.map((elem) => {
@@ -515,8 +520,7 @@ export default function Ecommerce(props) {
                       <h3 className="text-lg font-extrabold text-[#fff] transition-all duration-200">
                         {title}
                       </h3>
-                      <p className="text-white transition duration-200 ease-in-out">
-                        {decs}
+                      <p className="text-white transition duration-200 ease-in-out" dangerouslySetInnerHTML={{ __html: decs }}>
                       </p>
                     </div>
                   );
@@ -527,11 +531,20 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <SolutionSec
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+
+        {/* <SolutionSec
           heading="Key Features of Our Smart Contract Development Solutions"
           subheading="Unlock the benefits of automation, security, and efficiency with our smart contract development solutions. Our expert team delivers secure, scalable contracts tailored to your business, streamlining processes and enhancing operational efficiency across various industries."
           techData={technologyData}
-        />
+        /> */}
 
         <section className="py-8">
           <Portfolio
@@ -544,73 +557,21 @@ export default function Ecommerce(props) {
 
 
         <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
+          heading="Ready to Transform Your Business with Blockchain Smart Contracts?"
+          text="Unlock automation, security, and efficiency with Comfygen’s blockchain smart contract development services. Our experts deliver tailored smart contracts that align with your business goals."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <section className="items-center  space-y-6 flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="w-full space-y-4 text-center md:text-left">
-              <h2 className="py-2 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                Benefits of Choosing Our Smart Contract Development Services
-              </h2>
-              <div className="space-y-2">
-                <p className="text-base text-white text-justify">
-                  If you are still in a dilemma of whether or not you should get
-                  in touch with us to commence with your smart contract
-                  development project, here are a few benefits that might just
-                  convince you to get started with it:
-                </p>
-                <ul className="space-y-2 text-left">
-                  {myList3.map((item, index) => (
-                    <li className="flex text-base text-white" key={index}>
-                      <span className="pr-2 mt-1.5 text-[#fff]">
-                        <BsFillStarFill className="w-4 h-4" />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="flex justify-center w-full lg:justify-end pt-10 lg:pt-0">
-              <Image
-                src="https://www.comfygen.com/img/what-are-the-Perks-of-seekng-contract-development-servide.webp"
-                alt="What are the Perks of Seeking Smart Contract Development Services?"
-                className="rounded-lg"
-                width={600}
-                height={600}
-              />
-            </div>
-          </section>
-        </div>
 
 
-        <InfoSection
-          heading="Proven Experience in Complex Smart Contract Development Projects"
-          description1="At Comfygen, we have been serious about maintaining quality and preciseness with every smart contract development project we take up. We have been handling clients from diverse smart contract development industries with different sets of requirements but have fulfilled them all with utmost priority. The best thing about our smart contract development services is that we try to meet the deadlines on priority without losing our pace on meeting quality expectations."
-          description2="We have a team of dedicated smart contract developers who make use of the latest technologies not just to deliver great products but also to make them efficient and secure. Irrespective of how complex a smart contract development project might be, we make a tailored approach to meet the unique necessities of businesses from various domains. So, we await your smart contract development service request for a highly functional smart contract development company, despite the industry you belong to."
-          description3=''
-          dec=''
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/we-have-been-handling-smart-contract-development-project-of-varying-complexities.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <CardItem
-          heading="Get an Insight into Our Diverse Engagement Models for Your Smart Contract Project!"
-          subheading=""
-          techData={JSON_DATA.cardData}
-        />
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">The Smart Contract Development Process We Follow</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Smart Contract Development Process</h2>
               <p className="text-base font-normal mt-2">
-                To help you with added clarity on our proficiency in the field of the Best smart contract development company in India, look at the sophisticated smart contract development process that we tend to implement for every new project.
+                As a best <a href='https://www.comfygen.com/blockchain-development' className="text-blue-600 font-semibold">blockchain development company</a> provide smart contract development services in India. Look at the sophisticated smart contract development process that we tend to implement for every new project.
               </p>
             </div>
             <ProcessSec processSlides={Processs} />
@@ -637,20 +598,10 @@ export default function Ecommerce(props) {
             "Makes use of the latest technology solutions to tailor your business-specific smart contract development."
           ]}
         />
-        <InfoSection
-          heading="Do You Still Want to Know Anything About Us?"
-          description1="In case you still have some queries associated with our smart contract development services, you can always connect with us in an instant. When you are ready, we can go ahead and discuss your requirements and needs to move ahead with the project."
-          description2=''
-          description3=''
-          dec=''
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/your-smart.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
+
         <TechStack
-          title="Our Cryptocurrency Development Technology Stack"
-          description=""
+          title="Technologies & Platforms We Work On"
+          description="At Comfygen, our smart contract development services cover a wide range of blockchain networks to meet diverse business needs. Our team of multi-chain smart contract developers is skilled in building, deploying, and optimizing smart contracts."
         />
         <Faq
           faqData={JSON_DATA.Frequently}

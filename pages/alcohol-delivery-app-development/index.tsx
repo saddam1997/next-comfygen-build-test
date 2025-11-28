@@ -1,22 +1,78 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
 import JSON_DATA from "./delivery-app-development.json";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import AppCard from "../Newcomponet/comman/AppCard";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import DeliverySection from "../Newcomponet/comman/DeliverySection";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const AppCard = dynamic(() => import("../Newcomponet/comman/AppCard"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Features = dynamic(() => import("../Newcomponet/SectionCompoent/Features"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TeckStack = dynamic(() => import("../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const DeliverySection = dynamic(() => import("../Newcomponet/comman/DeliverySection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/ClientTestimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
 
 
 
@@ -218,11 +274,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Alcohol Delivery App Development Company | Comfygen
+        <title> Best Alcohol Delivery App Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content=" Comfygen is a on-demand alcohol delivery app development company offering custom, white-label, and wine app development solutions with AI-powered, blockchain-based, scalable features."
+          content="Comfygen is a on-demand alcohol delivery app development company offering custom, white-label, and wine app development solutions with AI-powered, blockchain-based, scalable features."
         />
         <link
           rel="canonical"
@@ -332,6 +388,14 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
         {/* <ContactFromCenter /> */}
+                <CallToAction
+          heading="Ready to Launch Your Alcohol Delivery App?"
+          text="Partner with Comfygen Technologies, a trusted custom liquor delivery app development agency, to build an AI-powered and custom alcohol delivery solution."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
         <AppCard
           title="Clone script of a popular Alcohol Delivery app"
@@ -356,17 +420,6 @@ export default function ClinicalApp(props: any) {
             featuresData={JSON_DATA.featuresData}
             grid={4} />
         </div>
-
-
-
-        <CallToAction
-          heading="Ready to Launch Your Alcohol Delivery App?"
-          text="Partner with Comfygen Technologies, a trusted custom liquor delivery app development agency, to build an AI-powered and custom alcohol delivery solution."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -443,18 +496,16 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Alcohol Delivery App Developer"
-          text="Looking to launch your own liquor delivery business? At Comfygen, you can <a href='https://www.comfygen.com/hire-blockchain-developer' class='underline font-semibold'>hire an expert blockchain developer</a> for a secure liquor delivery app development who specializes in creating secure, scalable, and feature-packed apps for breweries, wine stores, and liquor delivery startups. Our saas based liquor delivery app development team ensures smooth ordering, real-time tracking, and compliance with liquor regulations, helping you grow faster in the competitive market."
+          text="Looking to launch your own liquor delivery business? At Comfygen, you can <a href='https://www.comfygen.com/hire-blockchain-developer' class='underline font-semibold'>hire an expert blockchain developer</a> for a secure liquor delivery app development who specializes in creating secure, scalable, and feature-packed apps for breweries, wine stores, and liquor delivery startups."
           buttonText="Why Hire Our Delivery App Builder?"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "On-Demand Expertise – Skilled in alcohol & liquor delivery app development.",
-            "Custom & White-Label – Tailored or ready-made solutions for quick launch.",
-            "Smart Integrations – Payments, age verification, GPS, and tracking APIs.",
-            "Scalable Apps – Cloud-based, secure, and future-ready architectures.",
-            "Dedicated Support – End-to-end assistance with 24/7 availability.",
-
+            "OSkilled in alcohol & liquor delivery app development.",
+            "Ready-made wine delivery app solutions for quick launch.",
+            "Payments, age verification, GPS, and tracking APIs.",
+            "Cloud-based, secure, and future-ready architectures.",
           ]}
         />
 

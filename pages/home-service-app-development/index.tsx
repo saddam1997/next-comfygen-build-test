@@ -5,18 +5,69 @@ import JSON_DATA from "./home-service-app-development.json";
 
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhoCanStart = dynamic(() => import("../Newcomponet/SectionCompoent/WhoCanStart"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CardItem = dynamic(() => import("../Newcomponet/SectionCompoent/CardItem"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Features = dynamic(() => import("../Newcomponet/SectionCompoent/Features"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TeckStack = dynamic(() => import("../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/ClientTestimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
 
 const Process = [
   {
@@ -73,6 +124,11 @@ const WhoCanStartCards = [
     heading: "Home Services Business",
     description:
       "If you have your own team and run a full home service company, we provide a white-label home services App to manage your staff, bookings, payments, and locations — all from one place.",
+  },
+  {
+    heading: "Hyperlocal Marketplace Model",
+    description:
+      " This model connects users with nearby service professionals based on location. It helps customers find the closest available expert while giving local providers more visibility and faster job requests.",
   },
 ];
 
@@ -293,10 +349,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Home Services App Development Company</title>
+        <title>Best Home Services App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Looking for the best home services app development company? Comfygen Technologies offers custom home services app development services, white-label home services app solutions with real-time booking and tracking features for Android & iOS."
+          content="The best home services app development company, Comfygen Technologies, offers On-demand home services app development services, white-label home services app solutions with real-time booking and tracking features for Android & iOS."
         />
         <meta
           name="keywords"
@@ -417,7 +473,7 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Home Services App Development Company"
-            ptag="Comfygen Technologies is a top home services app development company offering innovative and scalable home services app development services. We provide value-driven and future-ready home services app development solutions for startups and enterprises to launch powerful home services mobile apps to manage bookings, service providers, and payments seamlessly."
+            ptag="Comfygen Technologies is an on-demand home services app development company offering innovative and scalable home services app development services. We provide value-driven and future-ready home services app development solutions for startups and enterprises to launch powerful home services mobile apps to manage bookings, service providers, and payments seamlessly."
             li="Real-Time Service Booking & Tracking"
             li1="Customizable Multi-Vendor Support"
             li2="Secure Payment Gateway Integration"
@@ -433,9 +489,9 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Why Businesses Are Embracing Home Service Apps for Success"
-          description1="In today’s fast-moving world, people want quick and reliable home services through mobile apps. Businesses are turning to technology to meet this growing demand. According to research, the global home services market is projected to hit USD 1.13 trillion by 2026, driven by digital convenience, rising smartphone usage, and the popularity of on-demand home services app solutions."
-          description2="Comfygen Technologies is a top-notch home services app development agency. We are a preferred choice for startups, entrepreneurs, and SMEs that want to grow their profits."
+          heading="Why Businesses Are Embracing on demand Home Service Apps for Success"
+          description1="In today’s fast-growing world, people want quick and reliable home service at their fingertips via an app. Businesses are taking advantage of the growing demand for home services. And develop an on-demand home service app. According to research, the global home services market is projected to hit USD 1.13 trillion by 2026, driven by digital convenience, rising smartphone usage, and the popularity of on-demand home services app solutions."
+          description2="Comfygen Technologies is a top-notch home service app development agency. We are a preferred choice for startups, entrepreneurs, and SMEs that want to grow their profits."
           imageSrc="https://www.comfygen.com/comfygen-images/home-services-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -448,7 +504,7 @@ export default function ClinicalApp(props: any) {
         {/* who cane start */}
         <WhoCanStart
           title="On-Demand Home Services App Solution Models We Serve"
-          description="At Comfygen Technologies, we develop smart and user-friendly on-demand home services applications for a wide range of businesses. Whether you offer one service or many, we can create the right home service booking app for you."
+          description="At Comfygen Technologies, we build smooth, reliable home service apps for any kind of service business. Whether you focus on one niche or manage a full network of service providers, we shape the app around your workflow."
           cards={WhoCanStartCards}
         />
 
@@ -456,14 +512,10 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Offer Home Services App Development Services
+             We offer on-demand Home Services App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen Technologies offers advanced and scalable on-demand
-                home services app development services to startups,
-                entrepreneurs, and enterprise businesses. We create
-                feature-rich, user-friendly apps that help service providers
-                grow faster and deliver better customer experiences.
+               Comfygen Technologies offers advanced and scalable on-demand home services app development services to startups, entrepreneurs, and enterprise businesses. We create feature-rich, user-friendly apps that help service providers grow faster and deliver better customer experiences.
               </p>
             </div>
             <div className="">
@@ -474,8 +526,8 @@ export default function ClinicalApp(props: any) {
         {/* <ContactFromCenter /> */}
 
         <CardItem
-          heading="Diverse Home Services App Development Solutions for Every Business Need"
-          subheading="We are a leading home services app development company. We create easy-to-use apps that help businesses serve their customers better. Our solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments."
+          heading="Complete Home Services App Development Solutions for Every Business Need"
+          subheading="We are a leading custom home services app development company. We create easy-to-use home service apps that help businesses serve their customers better. Our on-demand home services app development solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments."
           techData={JSON_DATA.cardData2}
         />
 
@@ -485,12 +537,12 @@ export default function ClinicalApp(props: any) {
           <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Home Services App Development Portfolio"
-            description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
+            description="Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our home services apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions."
           />
         </section>
 
         <Features
-          heading=' Fully Functional App Panels Tailored for Home Service Businesses'
+          heading='Our User-Friendly Key Features of the On-Demand Home Services App Development '
           description='At Comfygen Technologies, we develop powerful, easy-to-use home service app panels tailored to all user types. Whether you’re a customer, service provider, admin, or vendor, we create feature-rich panels to manage and grow your business smoothly.'
           featuresData={JSON_DATA.featuresData}
           grid='4'

@@ -1,23 +1,90 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import SolutionsFeature from "../Newcomponet/SectionCompoent/astrology/SolutionsFeature";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
+
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const Features = dynamic(() => import("../Newcomponet/SectionCompoent/Features"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import( "../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TechStack = dynamic(() => import("../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const SolutionsFeature = dynamic(() => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/ClientTestimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const Faq = dynamic(() => import( "../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const AppcardSlider = dynamic(() => import("../Newcomponet/SectionCompoent/AppcardSlider"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
+
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -448,8 +515,8 @@ export default function ClinicalApp(props: any) {
 
         <div className="py-8">
           <Features
-            heading="We Develop Food Delivery Apps With Advanced Panel Features"
-            description=" At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform."
+            heading="Essential Features for Your Astrology App"
+            description="At Comfygen, we integrate cutting-edge features into our astrology app development services to enhance user experience, streamline management, and optimize astrology consultations. Our custom astrology app solutions include advanced panels for users, astrologers, and administrators, ensuring a seamless and feature-rich platform."
             featuresData={JSON_DATA.featuresData}
             grid={3} />
         </div>

@@ -330,16 +330,6 @@ export default function Mobile(props) {
         }
       ]
     }
-
-
-
-
-
-
-
-
-
-
   ];
 
 

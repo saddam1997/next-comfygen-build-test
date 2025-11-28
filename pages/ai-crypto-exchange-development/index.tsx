@@ -9,7 +9,6 @@ import Faq from "../components/Faq";
 import TechStack from "../components/TechStack";
 import HireDeveloper from "../components/HireDeveloper";
 import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
 import ClientTestimonials from "../components/ClientTestimonials";
 import ServicesSection from "../componentsnew/ServicesSection";
@@ -18,14 +17,13 @@ import ProcessSection from "../componentsnew/ProcessSection";
 import TrendsSection from "../componentsnew/TrendsSection";
 import UseCaseSection from "../componentsnew/UseCaseSection";
 import Slider from "../components/Slider";
+import CallToAction from "../components/CallToAction";
 
 const Header = dynamic(() => import("../components/Header"), {
   // loading: () => <p>Loading...</p>,
 });
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
   {
@@ -397,13 +395,14 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
-          heading="AI-Powered Crypto Exchange Development"
-          ptag="Comfygen delivers AI-powered crypto exchange development solutions that combine intelligent automation, predictive analytics, and real-time trading insights. Our platforms offer high-speed order matching, multi-asset support, advanced security, and risk management tools, enabling smarter trading decisions and seamless user experiences. Fully customizable and scalable, our AI-driven exchanges help startups and enterprises optimize liquidity, enhance performance, and stay ahead of market trends. With fast deployment and 24/7 technical support, Comfygen empowers you to launch a next-generation, intelligent crypto trading platform."
+          heading="Why choose AI-Powered Crypto Exchange Development?"
+          ptag="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-600 font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
 
-          li="AI-driven trading insights & predictive analytics"
-          li1="High-speed order matching & multi-asset support"
-          li2="Advanced security & risk management"
-          li3="Scalable, customizable architecture with 24/7 support"
+          li="Automated, precise trading algorithms that optimize profits"
+          li1="Real-time fraud detection and threat mitigation"
+          li2="Personalized portfolio insights for enhanced user engagement"
+          li3="AI-driven security protocols for robust protection"
+          li4="Scalable solutions to support high-frequency and large-volume trading"
 
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -414,12 +413,10 @@ export default function Ecommerce(props) {
           bgImage="https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-hero.webp"
         />
 
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
         <AboutSection
           title=""
           heading="Why choose AI-Powered Crypto Exchange Development?"
-          description1="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. AI-powered platforms reduce human errors, detect fraud in real time, and provide personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
+          description1="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-600 font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
           points={[
             "Automated, precise trading algorithms that optimize profits",
             "Real-time fraud detection and threat mitigation",
@@ -435,21 +432,29 @@ export default function Ecommerce(props) {
 
 
         <ServicesSection
-          heading="Custom AI-Powered Crypto Exchange Development"
-          subtitle="At Comfygen, we deliver sophisticated <a class='text-blue-500 underline' href='https://www.comfygen.com/blog/top-crypto-exchanges-in-usa/' >AI-powered crypto exchange development solutions</a> designed to enhance trading accuracy, operational efficiency, and platform security. By integrating cutting-edge AI technologies, including machine learning, natural language processing (NLP), and advanced analytics, we build customized platforms that provide seamless user experiences and robust protection against evolving cyber threats. Our expert team ensures your crypto exchange remains agile, scalable, and competitive in the fast-paced digital asset market."
+          heading="AI-Powered Crypto Exchange Development Service "
+          subtitle="Comfygen AI-powered crypto exchange development service designed to enhance trading accuracy, operational efficiency, and platform security. By integrating advanced AI technologies, including machine learning, natural language processing (NLP), and <a href='https://www.comfygen.com/data/analytics-service-provider' class='text-blue-600 font-semibold'>advanced analytics</a>, we build customized crypto exchange platforms that provide seamless user experiences and robust protection against evolving cyber threats. Our <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>Blockchain Development</a> team ensures your crypto exchange remains agile, scalable, and competitive in the fast-paced digital asset market."
           servicesData={JSON_DATA.servicesData}
         />
 
 
+        <CallToAction
+          heading="Ready to Launch Your AI-Powered Crypto Exchange Development?"
+          text="Launch your AI-powered crypto exchange with Comfygen. Smart security, fast performance, automated insights, and full scalability to grow your trading platform effortlessly."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
 
         <SolutionsFeature
-          title="Used cases of AI-Powered Crypto Exchange Development"
-          subtitle="AI technologies are revolutionizing crypto exchanges by boosting trading efficiency, enhancing security, and automating complex processes. Here are the six most impactful AI use cases powering next-gen crypto platforms:"
+          title="Used cases of our AI-Powered Crypto Exchange Development Solution"
+          subtitle="AI-powered crypto exchange development opens up multiple high-impact use cases for businesses, traders, and institutions looking to build smarter, safer, and more profitable trading systems. By combining machine learning, predictive analytics, and automation with a strong exchange core, the AI-Powered Crypto Exchange Development solution helps you deliver differentiated value across the entire trading lifecycle."
           data={JSON_DATA.LeadingSoftware}
 
         />
 
-        <ProcessSection title="Our End-to-End AI Crypto Exchange Development Process" description="Our structured development process ensures a secure, scalable, and user-friendly AI-powered <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' >crypto exchange</a> tailored to your business needs:" processSlides={JSON_DATA.Processs} />
+        <ProcessSection title="Our End-to-End AI Crypto Exchange Development Process" description="Developing an AI-powered crypto exchange isn’t just about adding algorithms. It’s a full lifecycle approach, and we treat every stage with the care it deserves. Here’s how Comfygen brings your AI-driven trading platform to life from start to finish." processSlides={JSON_DATA.Processs} />
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 

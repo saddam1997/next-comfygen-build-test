@@ -513,8 +513,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp')]">
           <HeroSectionForAllPages
-            heading="Grocery Delivery App Development Company for Startups to Enterprise"
-            subhead="Build a Seamless and Scalable Grocery Delivery App with Comfygen"
+            heading="Grocery Delivery App Development Company in India"
+            subhead=""
             ptag="Comfygen Technologies is a leading custom grocery delivery app development company that helps startups, retailers, and enterprises build scalable and feature-rich grocery apps. Our tailored grocery delivery app development solutions include real-time order tracking, AI-powered personalization, secure payments, and multi-platform support for iOS, Android, and Web. We deliver next-gen grocery delivery apps like Instacart, Walmart, and Zepto with advanced technology to boost user convenience, streamline operations, and maximize business growth."
             li="AI-Powered Grocery delivery App Development for Smart Shopping"
             li1="Real-Time Delivery Tracking & Route Optimization"
@@ -532,7 +532,7 @@ export default function ClinicalApp(props: any) {
           title=""
           heading="Build Future-Ready Grocery Delivery Apps with Comfygen"
           description1="The grocery delivery app market is booming—driven by changing consumer habits and the rise of on-demand convenience. According to recent industry reports, the online grocery market is expected to reach $1,384 billion globally by 2027, growing at a CAGR of 10.5% from 2025. This surge presents an incredible opportunity for businesses to go digital with powerful, feature-rich grocery apps."
-          description2="At Comfygen, we build scalable and secure grocery delivery app development solutions specially designed according to your business model—whether you're a startup, local supermarket, or enterprise. Our grocery app development service combine advance technology, intuitive design, and AI-powered features to help you stay ahead of the competition and deliver seamless experiences to your customers."
+          description2="At Comfygen, we build scalable and secure <a href= 'https://www.comfygen.com/blog/grocery-delivery-app-development-guide/'class='text-blue-600 font-semibold'>grocery delivery app development solutions</a> specially designed according to your business model—whether you're a startup, local supermarket, or enterprise. Our grocery app development service combine advance technology, intuitive design, and AI-powered features to help you stay ahead of the competition and deliver seamless experiences to your customers."
           points={[
             "Deep Expertise in Grocery & Retail App Development",
             "Seamless Integration with Inventory & Logistics Systems",
@@ -552,7 +552,7 @@ export default function ClinicalApp(props: any) {
         />
 
         <AppCard
-          title="The Grocery App Development Solution we offer is Fully-Featured and Customizable"
+          title="We Offer Fully-Featured and Customizable Grocery App Development Solution "
           subtitle="Comfygen Technologies builds robust and scalable grocery apps inspired by industry leaders. We offer ready-to-customize grocery delivery app solutions that help you launch faster and smarter than Walmart, Instacart, or Zepto. We offer modern features, real-time integrations, and customized user experiences."
           cards={CardClone}
           openModal={openModal}

@@ -1,149 +1,141 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a milk delivery app?",
-    "desc": "The cost of milk delivery app development depends on features, platform, design, and tech stack. A basic app may start from $5,000, while feature-rich custom solutions can cost $15,000 or more. We offer tailored quotes based on your specific business needs."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to build a milk delivery app?",
-    "desc": "Development time varies based on complexity. A standard milk delivery app takes 4–6 weeks, while advanced solutions with subscriptions, GPS tracking, and analytics may take 10–12 weeks. We ensure timely delivery without compromising on quality."
-  },
-  {
-    "num": "3",
-    "title": "What key features should a milk delivery app include?",
-    "desc": "Core features include user registration, product catalog, subscription management, payment gateway, delivery tracking, order scheduling, and push notifications. We can also add features like route optimization, inventory alerts, and customer support chat as per your business requirements."
-  },
-  {
-    "num": "4",
-    "title": "Do you offer support and maintenance after launch?",
-    "desc": "Yes, we provide complete post-launch support, including bug fixes, updates, server maintenance, and app enhancements. Our dedicated support ensures your milk delivery app remains secure, updated, and efficient as your business grows."
-  },
-  {
-    "num": "5",
-    "title": "Can you build the app for both Android and iOS?",
-    "desc": "Absolutely. We develop native and cross-platform apps for both Android and iOS using modern frameworks. This ensures wider reach, faster performance, and a consistent user experience across all devices."
-  },
-  {
-    "num": "6",
-    "title": "Do you offer white-label milk delivery app solutions?",
-    "desc": "Yes, we offer customizable white-label milk delivery app solutions. These are ready-to-launch and fully branded for your business, helping you save time and go live faster without building everything from scratch."
-  },
-  {
-    "num": "7",
-    "title": "Can I integrate subscription and recurring billing options?",
-    "desc": "Yes, we specialize in building milk subscription apps. You can offer daily, weekly, or monthly delivery plans with recurring billing, auto-renewals, and flexible scheduling, improving convenience for your customers and stability for your business."
-  },
-  {
-    "num": "8",
-    "title": "Will the app support multi-location or multi-dairy operations?",
-    "desc": "Definitely. We can develop the app to manage multiple delivery zones, branches, or dairy partners. You can monitor sales, deliveries, and customer engagement across all locations from a centralized admin panel."
-  }
-],
-
-
-"portfoliodata":[
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-    "title": "Subscription-Based Milk Delivery App",
-    "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-    "title": "White-Label Dairy Delivery App",
-    "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
-    "title": "Milk Ordering App",
-    "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
-    "link": "https://www.comfygen.com/contact-us"
-  }
-],
-
-"servicesData": [
-  {
-    "title": "Custom Milk Delivery App Development",
-    "description": "We offer end-to-end custom milk delivery app development tailored to your business model—whether you run a local dairy farm, a large-scale distribution service, or an on-demand milk delivery startup. From product management to delivery scheduling, our solutions are built for efficiency and growth.",
-    "features": [
-      "Personalized features for vendors, admins & users",
-      "Route-optimized delivery tracking & GPS mapping",
-      "Fully branded & white-label solutions for quick deployment"
-    ]
-  },
-  {
-    "title": "Milk Delivery Mobile App Development for Android & iOS",
-    "description": "We develop a milk delivery app similar to Country Delight or Milkbasket, designed for seamless performance on both Android and iOS devices. Leveraging modern cross-platform technologies like Flutter and React Native, we build a single, efficient app that ensures a consistent look and feel across all devices.",
-    "features": [
-      "Apps for both Android and iOS",
-      "Faster development with a single codebase",
-      "Mobile-friendly and responsive design"
-    ]
-  },
-  {
-    "title": "Subscription-Based Milk Delivery App Development",
-    "description": "Our milk delivery app supports daily, weekly, and monthly subscriptions with smart reminders and auto-payment features. This allows users to automate their milk orders while you ensure recurring revenue.",
-    "features": [
-      "Easy subscription management & custom plans",
-      "Recurring billing system with payment auto-deduction",
-      "Calendar-based delivery schedule"
-    ]
-  },
-  {
-    "title": "White-Label Milk Delivery App Solution",
-    "description": "Accelerate your market entry with our ready-to-launch white-label milk delivery app. Built on a robust, pre-configured framework, our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label mobile app solutions</a> are fully customizable to match your brand identity, offering speed, scalability, and cost efficiency without compromising on functionality.",
-    "features": [
-      "Fully branded app with your logo, colors & content",
-      "Quick deployment with minimal development time",
-      "Perfect for dairy startups, local vendors, and franchises"
-    ]
-  },
-  {
-    "title": "Real-Time Order Tracking & Route Optimization",
-    "description": "Deliver a seamless experience with live order tracking. Our on-demand milk delivery app development utilizes GPS technology to enable customers and administrators to track orders and deliveries in real-time.",
-    "features": [
-      "Track delivery personnel on live maps",
-      "Intelligent route optimization for delivery agents",
-      "Instant notifications and delivery status"
-    ]
-  },
-  {
-    "title": "Multiple Payment Gateway Integration",
-    "description": "Our online dairy milk mobile apps support multiple secure payment methods, ensuring a smooth checkout experience for customers. This includes cards, wallets, UPI, and net banking options.",
-    "features": [
-      "UPI, debit/credit cards, wallet integrations",
-      "PCI-compliant payment systems",
-      "Invoicing and transaction history"
-    ]
-  },
-  {
-    "title": "Inventory & Product Management System",
-    "description": "Our dairy delivery app development includes a powerful backend to help you manage inventory, product categories, pricing, and availability.",
-    "features": [
-      "Track milk stock levels in real-time",
-      "Update product info, prices & offers instantly",
-      "Automated low-stock alerts"
-    ]
-  },
-  {
-    "title": "Admin Dashboard & Advanced Analytics",
-    "description": "Gain complete control of your delivery operations with an intelligent admin dashboard. Get insights into customer behavior, order trends, and sales with our advanced analytics system.",
-    "features": [
-      "Customer & order management",
-      "Business performance reports",
-      "Real-time data insights & custom filters"
-    ]
-  }
-]
-
-,
-"servicesData1": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a milk delivery app?",
+      "desc": "The cost of milk delivery app development depends on features, platform, design, and tech stack. A basic app may start from $5,000, while feature-rich custom solutions can cost $15,000 or more. We offer tailored quotes based on your specific business needs."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a milk delivery app?",
+      "desc": "Development time varies based on complexity. A standard milk delivery app takes 4–6 weeks, while advanced solutions with subscriptions, GPS tracking, and analytics may take 10–12 weeks. We ensure timely delivery without compromising on quality."
+    },
+    {
+      "num": "3",
+      "title": "What key features should a milk delivery app include?",
+      "desc": "Core features include user registration, product catalog, subscription management, payment gateway, delivery tracking, order scheduling, and push notifications. We can also add features like route optimization, inventory alerts, and customer support chat as per your business requirements."
+    },
+    {
+      "num": "4",
+      "title": "Do you offer support and maintenance after launch?",
+      "desc": "Yes, we provide complete post-launch support, including bug fixes, updates, server maintenance, and app enhancements. Our dedicated support ensures your milk delivery app remains secure, updated, and efficient as your business grows."
+    },
+    {
+      "num": "5",
+      "title": "Can you build the app for both Android and iOS?",
+      "desc": "Absolutely. We develop native and cross-platform apps for both Android and iOS using modern frameworks. This ensures wider reach, faster performance, and a consistent user experience across all devices."
+    },
+    {
+      "num": "6",
+      "title": "Do you offer white-label milk delivery app solutions?",
+      "desc": "Yes, we offer customizable white-label milk delivery app solutions. These are ready-to-launch and fully branded for your business, helping you save time and go live faster without building everything from scratch."
+    },
+    {
+      "num": "7",
+      "title": "Can I integrate subscription and recurring billing options?",
+      "desc": "Yes, we specialize in building milk subscription apps. You can offer daily, weekly, or monthly delivery plans with recurring billing, auto-renewals, and flexible scheduling, improving convenience for your customers and stability for your business."
+    },
+    {
+      "num": "8",
+      "title": "Will the app support multi-location or multi-dairy operations?",
+      "desc": "Definitely. We can develop the app to manage multiple delivery zones, branches, or dairy partners. You can monitor sales, deliveries, and customer engagement across all locations from a centralized admin panel."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
+      "title": "Subscription-Based Milk Delivery App",
+      "description": "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
+      "title": "White-Label Dairy Delivery App",
+      "description": "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
+      "title": "Milk Ordering App",
+      "description": "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Milk Delivery App Development",
+      "description": "We offer end-to-end custom milk delivery app development tailored to your business model—whether you run a local dairy farm, a large-scale distribution service, or an on-demand milk delivery startup. From product management to delivery scheduling, our solutions are built for efficiency and growth.",
+      "features": [
+        "Personalized features for vendors, admins & users",
+        "Route-optimized delivery tracking & GPS mapping",
+        "Fully branded & white-label solutions for quick deployment"
+      ]
+    },
+    {
+      "title": "Milk Delivery Mobile App Development for Android & iOS",
+      "description": "We develop a milk delivery app similar to Country Delight or Milkbasket, designed for seamless performance on both Android and iOS devices. Leveraging modern cross-platform technologies like Flutter and React Native, we build a single, efficient app that ensures a consistent look and feel across all devices.",
+      "features": [
+        "Apps for both Android and iOS",
+        "Faster development with a single codebase",
+        "Mobile-friendly and responsive design"
+      ]
+    },
+    {
+      "title": "Subscription-Based Milk Delivery App Development",
+      "description": "Our milk delivery app supports daily, weekly, and monthly subscriptions with smart reminders and auto-payment features. This allows users to automate their milk orders while you ensure recurring revenue.",
+      "features": [
+        "Easy subscription management & custom plans",
+        "Recurring billing system with payment auto-deduction",
+        "Calendar-based delivery schedule"
+      ]
+    },
+    {
+      "title": "White-Label Milk Delivery App Solution",
+      "description": "Accelerate your market entry with our ready-to-launch white-label milk delivery app. Built on a robust, pre-configured framework, our <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label mobile app solutions</a> are fully customizable to match your brand identity, offering speed, scalability, and cost efficiency without compromising on functionality.",
+      "features": [
+        "Fully branded app with your logo, colors & content",
+        "Quick deployment with minimal development time",
+        "Perfect for dairy startups, local vendors, and franchises"
+      ]
+    },
+    {
+      "title": "Real-Time Order Tracking & Route Optimization",
+      "description": "Deliver a seamless experience with live order tracking. Our on-demand milk delivery app development utilizes GPS technology to enable customers and administrators to track orders and deliveries in real-time.",
+      "features": [
+        "Track delivery personnel on live maps",
+        "Intelligent route optimization for delivery agents",
+        "Instant notifications and delivery status"
+      ]
+    },
+    {
+      "title": "Multiple Payment Gateway Integration",
+      "description": "Our online dairy milk mobile apps support multiple secure payment methods, ensuring a smooth checkout experience for customers. This includes cards, wallets, UPI, and net banking options.",
+      "features": [
+        "UPI, debit/credit cards, wallet integrations",
+        "PCI-compliant payment systems",
+        "Invoicing and transaction history"
+      ]
+    },
+    {
+      "title": "Inventory & Product Management System",
+      "description": "Our dairy delivery app development includes a powerful backend to help you manage inventory, product categories, pricing, and availability.",
+      "features": [
+        "Track milk stock levels in real-time",
+        "Update product info, prices & offers instantly",
+        "Automated low-stock alerts"
+      ]
+    },
+    {
+      "title": "Admin Dashboard & Advanced Analytics",
+      "description": "Gain complete control of your delivery operations with an intelligent admin dashboard. Get insights into customer behavior, order trends, and sales with our advanced analytics system.",
+      "features": [
+        "Customer & order management",
+        "Business performance reports",
+        "Real-time data insights & custom filters"
+      ]
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -169,8 +161,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -178,28 +169,28 @@
       "desc": "Investing in a milk delivery app development solution brings unmatched advantages to modern dairy businesses. From streamlining operations to enhancing customer loyalty, our milk delivery apps help you grow faster, serve better, and manage smarter — all in one place."
     }
   ],
-"consultancyData": [
-  {
-    "title": "Improved Operational Efficiency",
-    "desc": "A milk delivery app automates routine tasks, such as order processing, delivery scheduling, and inventory updates. This reduces manual errors, saves time, and ensures smoother daily operations—helping your dairy business run more efficiently with fewer resources and better productivity."
-  },
-  {
-    "title": "Real-Time Order Management",
-    "desc": "With real-time order tracking, you can monitor customer orders and deliveries from start to finish. This ensures transparency, improves delivery accuracy, and helps you respond quickly to any issues, resulting in better service and higher customer satisfaction."
-  },
-  {
-    "title": "Better Customer Engagement",
-    "desc": "Give your customers the convenience of mobile ordering, flexible subscriptions, and timely updates. A milk delivery app enhances customer experience, builds brand loyalty, and keeps users engaged with offers, reminders, and personalized communication."
-  },
-  {
-    "title": "Contactless Payments",
-    "desc": "Integrated digital payment gateways offer secure and easy payment options like <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/upi-payment-app-development'>UPI</a>, wallets, debit/credit cards, and net banking. This enables smooth, contactless transactions and builds customer trust while reducing dependency on cash handling."
-  },
-  {
-    "title": "Data-Driven Business Insights",
-    "desc": "Track orders, user behavior, revenue, and inventory with powerful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> dashboards. These insights help you make smarter business decisions, optimize delivery operations, and plan offers or product launches based on real-time data and trends."
-  }
-],
+  "consultancyData": [
+    {
+      "title": "Improved Operational Efficiency",
+      "desc": "A milk delivery app automates routine tasks, such as order processing, delivery scheduling, and inventory updates. This reduces manual errors, saves time, and ensures smoother daily operations—helping your dairy business run more efficiently with fewer resources and better productivity."
+    },
+    {
+      "title": "Real-Time Order Management",
+      "desc": "With real-time order tracking, you can monitor customer orders and deliveries from start to finish. This ensures transparency, improves delivery accuracy, and helps you respond quickly to any issues, resulting in better service and higher customer satisfaction."
+    },
+    {
+      "title": "Better Customer Engagement",
+      "desc": "Give your customers the convenience of mobile ordering, flexible subscriptions, and timely updates. A milk delivery app enhances customer experience, builds brand loyalty, and keeps users engaged with offers, reminders, and personalized communication."
+    },
+    {
+      "title": "Contactless Payments",
+      "desc": "Integrated digital payment gateways offer secure and easy payment options like <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/upi-payment-app-development'>UPI</a>, wallets, debit/credit cards, and net banking. This enables smooth, contactless transactions and builds customer trust while reducing dependency on cash handling."
+    },
+    {
+      "title": "Data-Driven Business Insights",
+      "desc": "Track orders, user behavior, revenue, and inventory with powerful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> dashboards. These insights help you make smarter business decisions, optimize delivery operations, and plan offers or product launches based on real-time data and trends."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Milk Delivery App Development?",
     "description": "Choosing the right milk delivery mobile app development agency is key to building a feature-rich, scalable, and reliable solution. At Comfygen, we deliver top-rated online dairy delivery app development services that simplify operations, enhance customer experience, and grow your dairy business.",
@@ -208,115 +199,202 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-  "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Expert App Developers",
-    "description": "Our skilled milk delivery app developers have deep expertise in building custom, on-demand dairy delivery platforms. We follow industry best practices to ensure your app is performance-optimized, secure, and easy to manage."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Customized Features for Your Business",
-    "description": "We don’t use pre-built templates. Every custom milk delivery app solution we build is tailored to your unique business model—whether you run a local dairy, subscription-based milk delivery, or operate across multiple regions."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Scalable & Secure Architecture",
-    "description": "Built with the latest technologies, our milk delivery app development services are scalable for future growth. From data encryption to secure payments, every feature is integrated with top-grade safety measures."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Fast Development & Timely Delivery",
-    "description": "With agile methodology and pre-tested components, our team ensures fast deployment of your app. We prioritize quick go-to-market time while maintaining development quality and consistency."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Post-launch Support & Maintenance",
-    "description": "After launch, we provide continuous support—from version updates and bug fixes to feature enhancements. Our goal is to keep your milk ordering app running smoothly 24/7."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Smart Analytics & Customer Insights",
-    "description": "Track delivery trends, analyze customer preferences, and optimize inventory with built-in dashboards. Our on-demand milk delivery app development solution includes advanced analytics to help you make informed decisions."
-  }
-]
-
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expert App Developers",
+        "description": "Our skilled milk delivery app developers have deep expertise in building custom, on-demand dairy delivery platforms. We follow industry best practices to ensure your app is performance-optimized, secure, and easy to manage."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Customized Features for Your Business",
+        "description": "We don’t use pre-built templates. Every custom milk delivery app solution we build is tailored to your unique business model—whether you run a local dairy, subscription-based milk delivery, or operate across multiple regions."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Scalable & Secure Architecture",
+        "description": "Built with the latest technologies, our milk delivery app development services are scalable for future growth. From data encryption to secure payments, every feature is integrated with top-grade safety measures."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Fast Development & Timely Delivery",
+        "description": "With agile methodology and pre-tested components, our team ensures fast deployment of your app. We prioritize quick go-to-market time while maintaining development quality and consistency."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Post-launch Support & Maintenance",
+        "description": "After launch, we provide continuous support—from version updates and bug fixes to feature enhancements. Our goal is to keep your milk ordering app running smoothly 24/7."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Smart Analytics & Customer Insights",
+        "description": "Track delivery trends, analyze customer preferences, and optimize inventory with built-in dashboards. Our on-demand milk delivery app development solution includes advanced analytics to help you make informed decisions."
+      }
+    ]
   },
   "customTestimonials": [
-  {
-    "text": "Working with Comfygen was a game-changer for my dairy startup. Their team delivered a highly functional milk delivery app with subscription and payment features. Support is excellent too – always responsive!",
-    "name": "Rahul Mehta",
-    "title": "India"
-  },
-  {
-    "text": "We wanted a white-label milk ordering app to manage our growing customer base. Comfygen built it just as we imagined. Smooth design, fast delivery, and great UI/UX. Highly recommended!",
-    "name": "Jessica Fernandes",
-    "title": "Canada"
-  },
-  {
-    "text": "From app planning to launch, Comfygen handled everything with great professionalism. Their milk delivery app solution helped us digitize our operations efficiently. Great experience!",
-    "name": "Amanpreet Singh",
-    "title": "India"
-  }
-],
-
-
-"featuresData":[
-  {
-    "id": 1,
-    "title": "Customer App",
-    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p1.webp",
-    "additionalDetails": [
-      { "details": "Quick Sign-Up & Location Detection", "emoji": "", "content": "" },
-      { "details": "Easy Product Browsing & Ordering", "emoji": "", "content": "" },
-      { "details": "Daily/Weekly/Monthly Subscriptions", "emoji": "", "content": "" },
-      { "details": "Real-Time Delivery Tracking", "emoji": "", "content": "" },
-      { "details": "Multiple Secure Payment Options", "emoji": "", "content": "" },
-      { "details": "Order History & Reorder Option", "emoji": "", "content": "" },
-      { "details": "In-App Notifications & Alerts", "emoji": "", "content": "" },
-      { "details": "Delivery Time Slot Selection", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Delivery Agent App",
-    "icon": "<i className='fas fa-truck text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p2.webp",
-    "additionalDetails": [
-      { "details": "Agent Profile & Login Access", "emoji": "", "content": "" },
-      { "details": "Optimized Delivery Routes", "emoji": "", "content": "" },
-      { "details": "Assigned Orders Management", "emoji": "", "content": "" },
-      { "details": "Live Delivery Status Updates", "emoji": "", "content": "" },
-      { "details": "Earnings & Payout Summary", "emoji": "", "content": "" },
-      { "details": "Proof of Delivery Capture", "emoji": "", "content": "" },
-      { "details": "In-App Chat with Admin/Support", "emoji": "", "content": "" },
-      { "details": "Availability Toggle (Online/Offline)", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Admin Panel",
-    "icon": "<i className='fas fa-cogs text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p3.webp",
-    "additionalDetails": [
-      { "details": "Customer & Order Management", "emoji": "", "content": "" },
-      { "details": "Inventory & Product Management", "emoji": "", "content": "" },
-      { "details": "Delivery Agent Allocation & Monitoring", "emoji": "", "content": "" },
-      { "details": "Subscription Plan Builder", "emoji": "", "content": "" },
-      { "details": "Analytics & Reports Dashboard", "emoji": "", "content": "" },
-      { "details": "Push Notification Management", "emoji": "", "content": "" },
-      { "details": "Multi-Store & Zone Management", "emoji": "", "content": "" },
-      { "details": "Payment & Transaction Logs", "emoji": "", "content": "" }
-    ]
-  }
-],
-
-
-
-
-
-
+    {
+      "text": "Working with Comfygen was a game-changer for my dairy startup. Their team delivered a highly functional milk delivery app with subscription and payment features. Support is excellent too – always responsive!",
+      "name": "Rahul Mehta",
+      "title": "India"
+    },
+    {
+      "text": "We wanted a white-label milk ordering app to manage our growing customer base. Comfygen built it just as we imagined. Smooth design, fast delivery, and great UI/UX. Highly recommended!",
+      "name": "Jessica Fernandes",
+      "title": "Canada"
+    },
+    {
+      "text": "From app planning to launch, Comfygen handled everything with great professionalism. Their milk delivery app solution helped us digitize our operations efficiently. Great experience!",
+      "name": "Amanpreet Singh",
+      "title": "India"
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Customer App",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p1.webp",
+      "additionalDetails": [
+        {
+          "details": "Quick Sign-Up & Location Detection",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Easy Product Browsing & Ordering",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Daily/Weekly/Monthly Subscriptions",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-Time Delivery Tracking",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multiple Secure Payment Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Order History & Reorder Option",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "In-App Notifications & Alerts",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Delivery Time Slot Selection",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Delivery Agent App",
+      "icon": "<i className='fas fa-truck text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p2.webp",
+      "additionalDetails": [
+        {
+          "details": "Agent Profile & Login Access",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Optimized Delivery Routes",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Assigned Orders Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Live Delivery Status Updates",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Earnings & Payout Summary",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Proof of Delivery Capture",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "In-App Chat with Admin/Support",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Availability Toggle (Online/Offline)",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Admin Panel",
+      "icon": "<i className='fas fa-cogs text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p3.webp",
+      "additionalDetails": [
+        {
+          "details": "Customer & Order Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Inventory & Product Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Delivery Agent Allocation & Monitoring",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Subscription Plan Builder",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Analytics & Reports Dashboard",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Push Notification Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multi-Store & Zone Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Payment & Transaction Logs",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -523,8 +601,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -545,8 +621,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -568,7 +643,6 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
@@ -619,6 +693,4 @@
       "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
     }
   ]
-
-  
 }

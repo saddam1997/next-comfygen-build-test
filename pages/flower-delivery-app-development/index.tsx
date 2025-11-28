@@ -5,18 +5,69 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import DeliverySection from "../Newcomponet/comman/DeliverySection";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhoCanStart = dynamic(() => import("../Newcomponet/SectionCompoent/WhoCanStart"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const Features = dynamic(() => import("../Newcomponet/SectionCompoent/Features"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TeckStack = dynamic(() => import("../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const DeliverySection = dynamic(() => import("../Newcomponet/comman/DeliverySection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import( "../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/ClientTestimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+const Faq = dynamic(() => import( "../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
 
 
 
@@ -322,10 +373,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Flower Delivery App Development Company | Custom Floral App Solutions</title>
+        <title>Flower Delivery App Development Company | Floral App development Solutions</title>
         <meta
           name="description"
-          content="Looking for the best flower delivery app development company? Comfygen builds AI-powered, white-label floral apps with real-time tracking & secure payments."
+          content="Want to take your flower delivery business online? Comfygen’s flower delivery app development service  builds AI-powered, white-label floral apps with real-time tracking & secure payments. "
         />
         <meta
           name="keywords"
@@ -438,9 +489,9 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top-Rated Flower Delivery App Development Company"
+            heading="Best Flower Delivery App Development Company"
             // ptag="Launch Your Own Flower Delivery App with Ease"
-            ptag1="Want to take your floral store online? Partner with Comfygen Technologies, a trusted flower delivery app development company, to create an AI-powered app that makes flower ordering fast, personalized, and seamless. Our custom flower delivery app development services help florists manage orders, track deliveries in real time, and offer a smooth shopping experience with secure payments and modern UI."
+            ptag1="Want to take your floral store online? Partner with the best delivery app development company, Comfygen Technologies, and provide flower delivery app development services to create an AI-powered flower delivery app that makes flower ordering fast, personalised, and seamless. Our custom flower delivery app development services help florists manage orders, track deliveries in real time, and offer a smooth shopping experience with secure payments and modern UI."
             li="Custom & White-Label Flower Delivery App Development"
             li1="Real-Time Delivery Tracking & Route Optimization"
             li2="Secure Payment Gateway & Multi-Vendor Management"
@@ -457,14 +508,11 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title="About Company"
           heading="The Blooming Demand: Why Your Flower Business Needs a Delivery App"
-          description1="The global online flower delivery market is projected to reach $57.4 billion by 2031, growing at a CAGR of 5.7% from 2022 to 2031. With more customers preferring mobile-based ordering and doorstep delivery, having a flower delivery app is no longer optional — it's essential for scaling and staying competitive."
-          description2="Whether you're a florist shop, event flower vendor, startup, entrepreneur, or a bouquet subscription service, a mobile app can transform your business with automation, real-time tracking, and personalized user experiences."
-          description3="With Comfygen’s advanced flower delivery app development services, we help you digitize your business, boost operational efficiency, and enhance customer loyalty."
+          description1="The global online flower delivery market is projected to reach $57.4 billion by 2031, growing at a CAGR of 5.7% from 2022 to 2031. With more customers preferring mobile-based flower/bukey ordering and doorstep delivery, having a flower delivery app is no longer optional — it's essential for scaling and staying competitive."
+          description2="Whether you're a florist shop, event flower vendor, startup, entrepreneur, or a bouquet subscription service, a flower delivery app development solution can transform your business with automation, real-time tracking, and personalised user experiences."
+          description3="With Comfygen’s advanced flower delivery app development services, we help you digitise your business, boost operational efficiency, and enhance customer loyalty."
           points={[
-            "Automates Online Flower Orders & Delivery Scheduling",
-            "Increases Customer Convenience & Repeat Business",
-            "Optimizes Inventory, Routes & Delivery Logistics",
-            "Real-Time Notifications, Delivery Tracking & Order Updates",
+           
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/flower-delivery-app-development/about.webp"
           link="/about-us"
@@ -474,16 +522,10 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide Top-notch Flower Delivery App Development Services
-                for Startups
+               Our Top-notch Flower Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen Technologies offers top-notch flower delivery app
-                development services for florists, flower shops, startups, and
-                bouquet subscription businesses. Our custom flower delivery
-                mobile app solutions help you streamline deliveries, increase
-                customer engagement, and grow your business with real-time
-                technology and seamless user experiences.
+                Comfygen Technologies offers top-notch flower delivery app development services for florists, flower shops, startups, and bouquet subscription businesses. Our custom flower delivery mobile app development solutions help you streamline deliveries, increase customer engagement, and grow your business.
               </p>
             </div>
             <div className="">
@@ -514,8 +556,8 @@ export default function ClinicalApp(props: any) {
 
 
         <Features
-          heading="Key Features of Our Flower Delivery App"
-          description="delivery app development company, Comfygen Technologies delivers powerful app solutions packed with essential features for users, delivery agents, and admins. Each panel is designed to enhance performance, simplify operations, and deliver an exceptional user experience."
+          heading="Key Features We Provide in Our Flower Delivery App Development "
+          description="Trusted delivery app development company, Comfygen Technologies, delivers powerful app solutions packed with essential features for users, delivery agents, and admins. Each panel is designed to enhance performance, simplify operations, and deliver an exceptional user experience."
           grid="3"
           featuresData={JSON_DATA.featuresData}
         />

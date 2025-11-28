@@ -16,13 +16,13 @@ import Faq from "../components/Faq";
 import TechStack from "../components/TechStack";
 import CallToAction from "../components/CallToAction";
 import WhyChoosee from "../components/WhyChooseUs";
-import ModelsSec from "../components/ModelsSec";
 import HireDeveloper from "../components/HireDeveloper";
 import AboutSection from "../components/AboutSection";
 import ServicesSec from "../components/ServicesSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
 import PortfolioSec from "../componentsnew/PortfolioSec";
+import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec"
+
+import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
 
 const Header = dynamic(() => import("../components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -327,11 +327,11 @@ export default function MultiChain(props: any) {
 
 
         <title>
-          Crypto Whitepaper Writing Services | ICO, STO, DeFi, NFT Whitepapers
+          Crypto White Paper Writing Services | Web3 White paper Writers
         </title>
         <meta
           name="description"
-          content="Meta description:- Comfygen offers expert crypto whitepaper writing services for blockchain projects. Our professional writers craft investor-ready whitepapers with tokenomics, roadmap, and technical documentation."
+          content="crypto white paper writing services for blockchain, DeFi, NFT, and Web3 projects. Our expert white paper writers craft clear, credible, and research-backed documents that build trust, attract investors."
         />
         <link
           rel="canonical"
@@ -353,7 +353,7 @@ export default function MultiChain(props: any) {
         <meta property="og:image:alt" content="crypto whitepaper writing services" />
         <meta property="og:url" content="https://www.comfygen.com/crypto-whitepaper-writing-services" />
         <meta property="og:title" content="Expert Crypto Whitepaper Writing Services | Comfygen" />
-        <meta property="og:description" content="Get professionally written crypto whitepapers with Comfygen. Our blockchain experts craft clear, engaging, and investor-ready documents covering tokenomics, technology, and business vision to attract funding and credibility."/>
+        <meta property="og:description" content="Get professionally written crypto whitepapers with Comfygen. Our blockchain experts craft clear, engaging, and investor-ready documents covering tokenomics, technology, and business vision to attract funding and credibility." />
 
         <script
           type="application/ld+json"
@@ -366,8 +366,8 @@ export default function MultiChain(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Crypto Whitepaper Writing Services"
-            ptag="At Comfygen, we provide the best crypto whitepaper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain projects. Our Blockchain development expert writers craft clear, persuasive, and investor-ready whitepapers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
+            heading="Crypto White Paper Writing Services"
+            ptag="Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
             li="Investor-Ready Whitepaper Creation"
             li1="Tokenomics & Market Research"
             li2="Technical Documentation & Compliance"
@@ -386,6 +386,12 @@ export default function MultiChain(props: any) {
           heading="Your Trusted Crypto White Paper Development Company"
           description1="A strong white paper does more than explain tech details—it tells your project’s story and wins investor trust. That takes research, domain knowledge, and clear writing."
           description2="At Comfygen India, we create impactful Crypto, ICO, and IDO White Papers that simplify complex blockchain ideas, highlight your vision, and make your project stand out. From DeFi to NFTs, we turn concepts into persuasive documents that attract serious investors."
+          points={[
+            "In-depth research and analysis tailored to your project",
+            "Clear, engaging writing that makes complex ideas simple",
+            "Strategic structure designed to appeal to investors",
+            "Experience across crypto, DeFi, NFT, and blockchain projects"
+          ]}
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -402,65 +408,49 @@ export default function MultiChain(props: any) {
             </div>
           </div>
         </section>
-        <InfoSectionRight
-          heading="Your Trusted Crypto White Paper Development Company for Strategic Growth"
-          description1="Writing a white paper requires a lot of research, time, and knowledge of the domain you are writing about. Moreover, it requires proficiency in writing, which can be demonstrated by choosing the right format or structuring the content in a particular way. It's the job of professionals who know what they're doing and are skilled at making technical aspects of any line of work understandable and intriguing to their readers."
-          description3="To accomplish this task perfectly, you need to work with the best Crypto Whitepaper Development Company or ICO/IDO white paper writing services. An example of a company that consistently illustrates its projects in the best possible way is Comfygen India."
-          imageSrc="https://www.comfygen.com/img/white-paper-development.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-        />
-        <InfoSectionLeft
-          heading="Leading White Paper Writing Services India"
-          description1="Writing a white paper requires a lot of research, time, and knowledge of the domain you are writing about. Moreover, it requires proficiency in writing, which can be demonstrated by choosing the right format or structuring the content in a particular way. It's the job of professionals who know what they're doing and are skilled at making technical aspects of any line of work understandable and intriguing to their readers. At White Paper Writing Services India, we specialize in crafting Crypto White Paper Development that ensures your project is communicated clearly and effectively."
-          description2="We can assist you with writing cryptocurrency white papers that will ensure the success of your project. We present your idea most vividly in our white paper to convert the reader into an investor."
-          imageSrc="https://www.comfygen.com/images/white-paper-writting-service.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-        />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Crypto Whitepaper Based Portfolio"
-          description="Propelling innovation and achievement through visionary design and development. A reflection of our unwavering passion for creativity and excellence."
-        />
-        <section className=" lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="space-y-10  mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12 ">
-            <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto ">
-              <h2 className=" py-4 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                How We Create Your Crypto White Paper – Step-by-Step Process
-              </h2>
-              <p className="text-base text-white">
-                There should be technical details in a white paper, but it should also be easy to understand by the general public. Using authoritative information, we create crypto white papers that are equally accessible to investors with less knowledge.
+
+
+
+
+        <section className="py-10">
+          <PortfolioSec
+            techData={techDataForPage1}
+            heading="Explore Our Crypto Whitepaper Based Portfolio"
+            description="Propelling innovation and achievement through visionary design and development. A reflection of our unwavering passion for creativity and excellence."
+          />
+        </section>
+
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Create Your Crypto Whitepaper Writing Process</h2>
+              <p className="text-base font-normal mt-2">
+               A successful Crypto Whitepaper Writing services combine technical depth with simplicity, so even non-technical investors can understand and trust your project. Here’s how we do it:
               </p>
             </div>
-            <section className="items-center space-y-10  lg:flex lg:space-x-28 lg:space-y-4">
-              <div className="flex justify-center w-full lg:justify-start">
-                <Image
-                  className="rounded-md"
-                  title=" Our Crypto White Paper Creation Process"
-                  alt=" Our Crypto White Paper Creation Process"
-                  src="https://www.comfygen.com/img/our-crypto-white-paper-creation-process.webp"
-                  height={600}
-                  width={600}
-                  loader={uploadcareLoader}
-                  unoptimized={true}
-                />
-              </div>
-              <div>
-                <ul className="space-y-5">
-                  {JSON_DATA.myList1.map((item, index) => (
-                    <li className="flex text-white" key={index}>
-                      <span className="pr-2 mt-1.5 text-[#fff]">
-                        <IoStarSharp className="w-4 h-4" />
-                      </span>
-                      {item}{" "}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </section>
+            <ProcessSec processSlides={JSON_DATA.Processs} />
           </div>
         </section>
+
+
+        <ConsultancyApproach
+         imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+         
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+        <CallToAction
+          heading="Launch Your Crypto White Paper Today"
+          text="Ready to present your <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain Development</a> project with clarity and impact? Connect with us for a free consultation, and let’s craft a professional white paper that attracts investors and builds trust."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
+
 
         <HireDeveloper
           heading="Hire Cryptocurrency White Paper Writers"
@@ -477,15 +467,8 @@ export default function MultiChain(props: any) {
             "More than 600 white papers have been completed"
           ]}
         />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <ModelsSec Qa={JSON_DATA.TechHead} Whycomfygen={JSON_DATA.TechData} />
+
+    
         <WhyChoosee
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

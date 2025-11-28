@@ -422,7 +422,8 @@ export default function Ecommerce(props) {
           heading="Why Businesses Are Investing in Cricket Score Mobile App Development"
           description1="Cricket has shifted heavily toward mobile-first viewing, and fans want updates the moment a ball is bowled. That’s why cricket fast live line apps have become essential for platforms trying to keep users engaged. Real-time scoring, instant match alerts, and ball-by-ball insights keep fans hooked longer than traditional score portals."
           description2="The demand peaks during major tournaments like the IPL, World Cup, Big Bash, and PSL, where millions of cricket fans depend on cricket live score apps to track matches on the go. For businesses, this creates a strong opportunity to boost user retention, increase daily active users, and build new revenue streams through ads, premium access, and fan engagement tools."
-          description3="Sports platforms, broadcasters, and sports analytics companies are adopting the Live Line Cricket Mobile App Development Service because they deliver what fans expect: fast scores, accurate data feeds, live match stats, and clean UI."
+          description3="Sports platforms, broadcasters, and sports analytics companies are adopting the 
+Live Line Cricket Mobile App Development Service because they deliver what fans expect: fast scores, accurate data feeds, live match stats, and clean UI"
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -471,8 +472,8 @@ export default function Ecommerce(props) {
 
         <div className="py-8">
           <Features
-            heading="Key Features of Our E-commerce App Solutions"
-            description=" We build custom <a href='https://www.comfygen.com/blog/what-is-e-commerce-and-its-applications/' class='text-blue-600 font-semibold'>E-commerce applications</a> that ensure smooth business operations and excellent shopping experiences. We offer dynamic panels and tools for customers, vendors, admins, and delivery teams as part of our custom mobile eCommerce app development services."
+            heading="Supported Cricket Formats & Leagues for Live Streaming"
+            description="Our cricket live streaming app development covers every major format and tournament, ensuring fans can follow matches in real time from anywhere in the world. Whether it’s high-profile international contests, domestic leagues, or women’s cricket, users get seamless access to live cricket matches, ball-by-ball commentary, player statistics, and real-time score updates."
             featuresData={JSON_DATA.featuresData}
             grid={3} />
         </div>
@@ -490,7 +491,7 @@ export default function Ecommerce(props) {
         />
         <TechStack
           title="Tech Stack We use to develop a cricket live line App"
-          description="We use a modern, robust technology stack to build cricket live line App and live streaming apps that are fast, scalable, and reliable. Our App Development team selects the right tools to ensure seamless performance and smooth user experiences across all devices."
+          description="We use a modern, robust technology stack to build cricket live line App and live streaming apps that are fast, scalable, and reliable. Our <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>App Development</a> team selects the right tools to ensure seamless performance and smooth user experiences across all devices."
         />
 
         <Faq

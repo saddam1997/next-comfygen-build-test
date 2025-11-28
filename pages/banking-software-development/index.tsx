@@ -415,7 +415,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden ">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp')]" >
           <HeroSectionForAllPages
-            heading="Custom Banking Software Development Company for Secure Fintech Solutions"
+            heading="Banking Software Development Company"
             ptag="Comfygen is a top software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
             li="Custom Core Banking Software"
             li1="Secure, Cloud-Native & Scalable Platforms"

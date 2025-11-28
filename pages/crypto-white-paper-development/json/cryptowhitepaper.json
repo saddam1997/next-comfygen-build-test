@@ -20,72 +20,119 @@
       "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
     }
   ],
-
-  "servicesData" :[
+  "Processs": [
     {
-      "title": "Cryptocurrency White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our expert writers provide clear and concise explanations of cryptocurrency use cases. With a focus on functionality and real-world applications, our whitepapers help position your project as a viable and innovative solution.",
-      "features": ["Detailed Use Case Explanation", "Professional and Persuasive Content", "Tailored to Your Project Goals" ]
+      "title": "Project Understanding",
+      "description": "We begin by learning about your project in detail—the problem you’re solving, your solution, technical framework, and business model."
     },
     {
-      "title": "ICO White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Raise funds effectively with our ICO white paper writing services. We create engaging and elegant whitepapers that highlight your ICO platform’s value, encouraging investor participation.",
-      "features": ["Fundraising Optimization", "Strategic and Concise Messaging", "Comprehensive Project Overview"]
+      "title": "Research & Data Collection",
+      "description": "Our team conducts in-depth research to validate your concept, gathering authoritative data, market insights, and competitor analysis to strengthen your white paper."
     },
     {
-      "title": "Crypto Exchange White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our crypto exchange white paper writing services rejuvenate your crypto exchange platform by showcasing its features, benefits, and growth potential to investors and stakeholders.",
-      "features": ["Feature-Focused Content", "Investor-Centric Messaging", "Market Competitiveness Highlight"]
+      "title": "Structuring the Content",
+      "description": "We design a clear outline that organises technical details, business strategy, tokenomics, and roadmap into a logical flow that investors can easily follow."
     },
     {
-      "title": "NFT White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Promote your NFT project with confidence through our NFT white paper writing services. We provide clear explanations of your project’s uniqueness, value proposition, and market potential to attract interest.",
-      "features": ["Unique Value Proposition", "Hassle-Free Execution", "Tailored to the NFT Market"]
+      "title": "Technical Writing",
+      "description": "With the structure in place, we craft crisp, accurate, and easy-to-read content that explains complex blockchain ideas in a way that resonates with both experts and beginners."
     },
     {
-      "title": "DeFi White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Convince investors why your DeFi platform is the right choice with our DeFi white paper writing services. We deliver stunning, well-articulated documents that emphasize your platform’s advantages and investment potential.",
-      "features": ["Compelling Investment Narrative", "Focus on Innovation and Security", "Comprehensive Value Proposition"]
+      "title": " Visual Design & Branding",
+      "description": "Our creative designers balance text with visuals—charts, infographics, and illustrations—while aligning the document with your brand identity through colors, typography, and style."
     },
     {
-      "title": "STO White Paper Writing",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Achieve your business goals efficiently with our STO white paper writing services. We provide detailed, professional whitepapers designed to attract attention and inspire confidence in your Security Token Offering.",
-      "features": ["Timely and Targeted Content", "Compliance and Security Emphasis", "Business Growth Alignment"]
+      "title": "Review & Refinement",
+      "description": "Every draft goes through multiple reviews to ensure accuracy, clarity, and persuasive tone. We refine until your white paper is both authoritative and engaging."
+    },
+    {
+      "title": " Final Delivery",
+      "description": "You receive a polished, investor-ready white paper that communicates your vision, validates your project, and inspires confidence."
     }
   ],
-
-  "TechHead": [
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Benefits of Crypto White Paper Writing Services",
       "desc": "Your whitepaper should include certain important points clearly and explicitly. You won't be able to submit your paper if any of these items are missing."
     }
   ],
-  "TechData": [
+  "consultancyData": [
     {
-      "num": "1",
       "title": "The fundamentals",
       "desc": "From the imagination phase to completion at a certain point, this explains how you plan to accomplish your project. Your whitepaper design will be based on this, and you'll need the best minds for it."
     },
     {
-      "num": "2",
       "title": "Analyses of the market",
-      "desc": "To convince investors that your project is viable, you should include a market analysis in your whitepaper. Your project's market analysis is a comprehensive assessment of the ma"
+      "desc": "To convince investors that your project is viable, you should include a market analysis in your whitepaper. Your project's market analysis is a comprehensive assessment"
     },
     {
-      "num": "3",
       "title": "Structure of white papers",
       "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
     }
-  
   ],
-
+  "servicesData": [
+    {
+      "title": "Cryptocurrency White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our expert writers provide clear and concise explanations of cryptocurrency use cases. With a focus on functionality and real-world applications, our whitepapers help position your project as a viable and innovative solution.",
+      "features": [
+        "Detailed Use Case Explanation",
+        "Professional and Persuasive Content",
+        "Tailored to Your Project Goals"
+      ]
+    },
+    {
+      "title": "ICO White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Raise funds effectively with our ICO white paper writing services. We create engaging and elegant whitepapers that highlight your ICO platform’s value, encouraging investor participation.",
+      "features": [
+        "Fundraising Optimization",
+        "Strategic and Concise Messaging",
+        "Comprehensive Project Overview"
+      ]
+    },
+    {
+      "title": "Crypto Exchange White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our crypto exchange white paper writing services rejuvenate your crypto exchange platform by showcasing its features, benefits, and growth potential to investors and stakeholders.",
+      "features": [
+        "Feature-Focused Content",
+        "Investor-Centric Messaging",
+        "Market Competitiveness Highlight"
+      ]
+    },
+    {
+      "title": "NFT White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Promote your NFT project with confidence through our NFT white paper writing services. We provide clear explanations of your project’s uniqueness, value proposition, and market potential to attract interest.",
+      "features": [
+        "Unique Value Proposition",
+        "Hassle-Free Execution",
+        "Tailored to the NFT Market"
+      ]
+    },
+    {
+      "title": "DeFi White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Convince investors why your DeFi platform is the right choice with our DeFi white paper writing services. We deliver stunning, well-articulated documents that emphasize your platform’s advantages and investment potential.",
+      "features": [
+        "Compelling Investment Narrative",
+        "Focus on Innovation and Security",
+        "Comprehensive Value Proposition"
+      ]
+    },
+    {
+      "title": "STO White Paper Writing",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Achieve your business goals efficiently with our STO white paper writing services. We provide detailed, professional whitepapers designed to attract attention and inspire confidence in your Security Token Offering.",
+      "features": [
+        "Timely and Targeted Content",
+        "Compliance and Security Emphasis",
+        "Business Growth Alignment"
+      ]
+    }
+  ],
   "pageData": {
     "title": "Why Choose Us As a White Paper Writing Services Provider",
     "description": "With the most advanced technologies, Comfygen strives to provide innovative and better results. Count on us for dependability, trust, and reliability. Keeping up with the latest trends and anticipating changes, we ensure that crypto white paper development is enforced in a way that empowers you digitally.",
@@ -115,10 +162,8 @@
         "title": "Delivered on time",
         "description": "Delivering drafts, outline, and final documents on time."
       }
-    
     ]
   },
-
   "Qa": [
     {
       "num": "1",
@@ -148,8 +193,6 @@
     "Having worked in the Whitepaper Writing field for 14 years, Comfygen writers have a lot of experience",
     "More than 600 white papers have been completed"
   ],
- 
-
   "Frequently": [
     {
       "num": "1",
