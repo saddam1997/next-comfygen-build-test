@@ -5,16 +5,73 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multichainblockchain.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
 
 

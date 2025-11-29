@@ -5,11 +5,40 @@ import JSON_DATA from "./json/mernstack.json";
 import dynamic from "next/dynamic";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 

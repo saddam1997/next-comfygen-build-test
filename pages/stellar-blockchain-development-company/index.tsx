@@ -5,18 +5,83 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stellar.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Process = [
   {
@@ -460,7 +525,7 @@ export default function Ecommerce(props) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Stellar Blockchain Development Company"
           ptag="Comfygen, a leading Stellar Blockchain Development Company, helps enterprises build AI-powered decentralized applications, tokenized assets, and secure financial ecosystems. Stellar’s fast, low-cost network is ideal for cross-border payments, stablecoin development, and enterprise-level blockchain integration. Our Stellar Blockchain Development expert specializes in  AI Stellar wallet development, DApp creation, and smart contract development solutions that drive transparency and efficiency. By combining Stellar blockchain with AI and automation, we deliver scalable, future-ready applications tailored to fintech, banking, and global business needs."

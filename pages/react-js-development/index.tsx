@@ -4,14 +4,63 @@ import JSON_DATA from "./json/reactjs.json";
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+
+import dynamic from "next/dynamic";
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+
+
+
+
 import { IconCode, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconUsers, } from '@tabler/icons-react';
 
 

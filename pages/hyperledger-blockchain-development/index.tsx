@@ -5,28 +5,86 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hyperledgerblockchain.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-import Solutions from "../Newcomponet/SectionCompoent/Solution";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Solutions = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+// import Solutions from "../Newcomponet/SectionCompoent/Solution";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
-
-
-
-
-
-
-
-
-
 
 
 
@@ -556,7 +614,7 @@ export default function Blockchain(props: any) {
 
       </Head>
       <BlockchainNav />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Hyperledger Blockchain Development Service "
           ptag="Comfygen specializes in delivering secure, scalable, and AI-powered Hyperledger blockchain development services designed for enterprises across industries. Our Blockchain Development team takes advantage of frameworks like Hyperledger Fabric, Sawtooth, and Indy to design permissioned networks that ensure privacy, transparency, and trust. By integrating artificial intelligence (AI), we enhance automation, predictive analytics, and fraud detection for smarter decision-making."

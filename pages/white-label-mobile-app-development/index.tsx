@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/whitelabelmobileappdevelopment.json";
 import LazyLoad from "react-lazy-load";
+import dynamic from "next/dynamic";
 import {
   IconApps,
   IconBrain,
@@ -12,21 +13,78 @@ import {
 } from "@tabler/icons-react";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import Sponser from "../Newcomponet/comman/Sponser";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
-import Milestones from "../Newcomponet/comman/Milestones";
+
+const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TechStack = dynamic(() => import("../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import("../Newcomponet/SectionCompoent/LatestTechnology"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const IndustriesServe = dynamic(() => import("../Newcomponet/SectionCompoent/IndustriesServe"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/ClientTestimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Milestones = dynamic(() => import("../Newcomponet/comman/Milestones"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -285,7 +343,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-         White Label Mobile App Development Company | Ready-to-Use App Solutions
+          White Label Mobile App Development Company | Ready-to-Use App Solutions
         </title>
 
         <meta
@@ -459,9 +517,9 @@ export default function Mobile(props: any) {
       </Head>
 
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+
+        <Header />
+
       </div>
 
       <div className="">
@@ -480,6 +538,9 @@ export default function Mobile(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
         />
+        <section className="py-8">
+          <Milestones />
+        </section>
         {/* <ContactFromCenter /> */}
         <AboutSection
           title=""
@@ -492,9 +553,7 @@ export default function Mobile(props: any) {
           linkText="Explore More"
         />
         {/* <Sponser /> */}
-      <section className="py-8">
-          <Milestones/>
-      </section>
+
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

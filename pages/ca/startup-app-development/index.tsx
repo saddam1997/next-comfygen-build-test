@@ -20,16 +20,57 @@ import {
 
 import Header from "../../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
-import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-import LatestTechnology from "../../Newcomponet/SectionCompoent/LatestTechnology";
-import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
-import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-import CallToAction from "../../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../../Newcomponet/SectionCompoent/Faq";
+
+const AboutSection = dynamic(() => import("../../Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ConsultancyApproach = dynamic(() => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("../../Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import("../../Newcomponet/SectionCompoent/LatestTechnology"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import("../../Newcomponet/SectionCompoent/ProcessSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const IndustriesServe = dynamic(() => import("../../Newcomponet/SectionCompoent/IndustriesServe"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import("../../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org",

@@ -6,18 +6,89 @@ import JSON_DATA from "./data.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import NewSection from '../Newcomponet/comman/NewSection'
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+const NewSection = dynamic(
+  () => import('../Newcomponet/comman/NewSection'),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+
+
+
+
+
+// import NewSection from '../Newcomponet/comman/NewSection'
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 import {
   IconArrowsExchange,
@@ -325,7 +396,7 @@ export default function Tron(props) {
 
       <Header />
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Trusted Tron Token Development Services"
           ptag="Looking to launch a powerful token on the Tron blockchain? Our Tron Token Development Services are tailored to meet the unique needs of startups and enterprises, helping you create custom TRC-10 and TRC-20 tokens with seamless integration, high security, and scalability."

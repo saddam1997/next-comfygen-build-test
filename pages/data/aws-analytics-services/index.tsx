@@ -2,15 +2,66 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import Faq from "../../components/Faq";
-import ProcessSec from "../../components/ProcessSec";
-import TechStack from "./components/TeckStack";
-import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../../componentsnew/AboutSection";
-import ServicesSec from "../../componentsnew/ServicesSec";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
+
+
+const HireDeveloper = dynamic(
+  () => import("../../components/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../components/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../components/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("./components/TeckStack"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HeroSectionForAllPages = dynamic(
+  () => import("../../componentsnew/HeroSectionForAllPages"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../../componentsnew/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../../componentsnew/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../../components/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+// import HireDeveloper from "../../components/HireDeveloper";
+// import WhyChoose from "../../components/WhyChooseUs";
+// import Faq from "../../components/Faq";
+// import ProcessSec from "../../components/ProcessSec";
+// import TechStack from "./components/TeckStack";
+// import HeroSectionForAllPages from "../../componentsnew/HeroSectionForAllPages";
+// import AboutSection from "../../componentsnew/AboutSection";
+// import ServicesSec from "../../componentsnew/ServicesSec";
+// import ConsultancyApproach from "../../components/ConsultancyApproach";
+
+
+
 const Header = dynamic(() => import("../../components/Header"), {
   ssr: false,
   loading: () => <p>Loading...</p>,

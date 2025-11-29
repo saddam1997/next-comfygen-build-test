@@ -13,16 +13,70 @@ import {
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import NewSection from "../Newcomponet/comman/NewSection"
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoosee = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import NewSection from "../Newcomponet/comman/NewSection"
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 

@@ -4,17 +4,78 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./polygonblockchain.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent//ConsultancyApproach";
-import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CardGrid = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardGrid"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent//ConsultancyApproach";
+// import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
+// import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 
 import {
   IconAdjustments,
@@ -193,7 +254,7 @@ export default function Polygon(props) {
       </Head>
 
       <BlockchainNav/>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Polygon Blockchain Development Company"
           ptag="Polygon Blockchain is a powerful force in Web3 and decentralized technology. As a leading Polygon Blockchain development company in India & USA, we help businesses unlock the full potential of scalable and best Polygon blockchain solutions. Whether your goal is to launch an NFT marketplace or utilize Polygon Blockchain for branding, our expertise ensures you benefit from enhanced scalability, interoperability, and cross-chain compatibility. With Polygon, you can achieve these advantages while staying eco-friendly and future-ready."

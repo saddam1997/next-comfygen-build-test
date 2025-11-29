@@ -2,15 +2,48 @@ import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/reactnative.json";
 import LazyLoad from "react-lazy-load";
+import dynamic from "next/dynamic";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import ConsultingSec from "../Newcomponet/SectionCompoent/ConsultingSec";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const InfoSection = dynamic(() => import("../Newcomponet/SectionCompoent/InfoSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ConsultingSec = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultingSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
+
 
 
 export default function Altcoin(props: any) {
@@ -134,6 +167,7 @@ export default function Altcoin(props: any) {
           description2=""
           description3=""
           dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
           link="/contact-us"
           linkText="Lets Discuss"
@@ -145,6 +179,7 @@ export default function Altcoin(props: any) {
           description2=""
           description3=""
           dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "

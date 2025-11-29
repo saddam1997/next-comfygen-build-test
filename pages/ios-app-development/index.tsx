@@ -1,28 +1,79 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import React from 'react'
 import Head from 'next/head';
+import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ios.json"
 import { IconBook, IconClock, IconGlobe, IconHeartbeat, IconMusic, IconShoppingCart, IconUsers, IconWallet } from '@tabler/icons-react';
 import Header from '../Newcomponet/layout/Header';
 import HeroSectionForAllPages from '../Newcomponet/SectionCompoent/HeroSectionForAllPages';
-import AboutSection from '../Newcomponet/SectionCompoent/AboutSection';
-import ServicesSec from '../Newcomponet/SectionCompoent/ServicesSec';
-import LatestTechnology from '../Newcomponet/SectionCompoent/LatestTechnology';
-import TechStack from '../Newcomponet/SectionCompoent/TechStack';
-import ProcessSec from '../Newcomponet/SectionCompoent/ProcessSec';
-import IndustriesServe from '../Newcomponet/SectionCompoent/IndustriesServe';
-import WhyChoose from '../Newcomponet/SectionCompoent/WhyChooseUs';
-import HireDeveloper from '../Newcomponet/SectionCompoent/HireDeveloper';
-import Faq from '../Newcomponet/SectionCompoent/Faq';
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+
+const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import('../Newcomponet/SectionCompoent/ServicesSec'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import('../Newcomponet/SectionCompoent/LatestTechnology'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const TechStack = dynamic(() => import('../Newcomponet/SectionCompoent/TechStack'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ProcessSec = dynamic(() => import('../Newcomponet/SectionCompoent/ProcessSec'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const IndustriesServe = dynamic(() => import('../Newcomponet/SectionCompoent/IndustriesServe'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import('../Newcomponet/SectionCompoent/WhyChooseUs'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import('../Newcomponet/SectionCompoent/HireDeveloper'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import('../Newcomponet/SectionCompoent/Faq'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const InfoSection = dynamic(() => import("../Newcomponet/SectionCompoent/InfoSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ContactFromCenter = dynamic(() => import('../componentsnew/ContactFromCenter'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
 
 
+const Milestones = dynamic(() => import("../Newcomponet/comman/Milestones"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
 
-import ContactFromCenter from '../componentsnew/ContactFromCenter';
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
 
-import LazyLoad from 'react-lazy-load';
-import Milestones from "../Newcomponet/comman/Milestones";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+
 
 const schema = {
   "@context": "https://schema.org/",
@@ -365,9 +416,9 @@ export default function Mobile(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
+
       <div className="overflow-hidden">
         <HeroSectionForAllPages
           heading="IOS App Development Company"

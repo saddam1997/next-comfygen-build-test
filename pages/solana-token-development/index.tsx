@@ -5,20 +5,97 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import PointsCardBg from "../Newcomponet/SectionCompoent/PointsCardBg";
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const PointsCardBg = dynamic(
+  () => import("../Newcomponet/SectionCompoent/PointsCardBg"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import PointsCardBg from "../Newcomponet/SectionCompoent/PointsCardBg";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 import { IconAdjustments, IconAutomation, IconDatabase, IconExchange, IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
 import Script from "next/script";
@@ -311,7 +388,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Solana Token Development Company"
           ptag="At Comfygen, we offer top-tier Solana token development services that help you create secure, scalable, and high-performance tokens on the Solana blockchain. As an industry leader in Solana token creation, we enable businesses to leverage the speed, low-cost transactions, and scalability of Solana for a variety of applications including DeFi, NFTs, and decentralized platforms. Our team of expert developers delivers tailored solutions to meet the specific needs of your token project while ensuring seamless integration across decentralized applications (dApps)."

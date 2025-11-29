@@ -1,17 +1,55 @@
 import React, { useState } from 'react'
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import JSON_DATA from "./json/hybrid.json"
 import LazyLoad from 'react-lazy-load';
 import Header from '../Newcomponet/layout/Header';
 import HeroSectionForAllPages from '../Newcomponet/SectionCompoent/HeroSectionForAllPages';
-import AboutSection from '../Newcomponet/SectionCompoent/AboutSection';
-import ServicesSec from '../Newcomponet/SectionCompoent/ServicesSec';
-import HireDeveloper from '../Newcomponet/SectionCompoent/HireDeveloper';
-import ConsultancyApproach from '../Newcomponet/SectionCompoent/ConsultancyApproach';
-import InfoSection from '../Newcomponet/SectionCompoent/InfoSection';
-import WhyChooseUs from '../Newcomponet/SectionCompoent/WhyChooseUs';
-import IndustriesServe from '../Newcomponet/SectionCompoent/IndustriesServe';
-import CallToAction from '../Newcomponet/SectionCompoent/CallToAction';
+
+
+const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import('../Newcomponet/SectionCompoent/ServicesSec'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import('../Newcomponet/SectionCompoent/HireDeveloper'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ConsultancyApproach = dynamic(() => import('../Newcomponet/SectionCompoent/ConsultancyApproach'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const InfoSection = dynamic(() => import('../Newcomponet/SectionCompoent/InfoSection'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+const WhyChooseUs = dynamic(() => import('../Newcomponet/SectionCompoent/WhyChooseUs'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const IndustriesServe = dynamic(() => import('../Newcomponet/SectionCompoent/IndustriesServe'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import('../Newcomponet/SectionCompoent/CallToAction'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
 
 export default function Mobile(props: any) {
   let { initialData } = props;
@@ -129,6 +167,7 @@ export default function Mobile(props: any) {
         description2="The apps developed by our company feature powerful performance, next-generation features, research-based UX/UI, and support for current technologies such as machine learning app development, IoT app development, augmented reality app development, and 3D modeling. It is our goal to put your enterprise, small business, or startup way ahead of the competition. We are known for our uncompromised work ethics and world-class quality of work. When it comes to turning your idea into a profitable business, we leave no stone unturned."
         description3=""
         dec=""
+        points={[]}
         imageSrc="https://www.comfygen.com/image/hybrid-web-application-development-img.webp"
         link="/about-us"
         linkText="Explore More"

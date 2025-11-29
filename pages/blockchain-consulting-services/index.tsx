@@ -18,18 +18,81 @@ import {
 import { MdOutlineArrowOutward } from "react-icons/md";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
-import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const GuidSectionBlockchain = dynamic(
+  () => import("./components/GuidSectionBlockchain"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+// import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
+// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
 
 export default function rummy(props) {
   let { initialData } = props;

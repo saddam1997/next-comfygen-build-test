@@ -1,19 +1,53 @@
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import JSON_DATA from "./json/flutter.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import HeadingSec from "../Newcomponet/SectionCompoent/headingSec";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HeadingSec = dynamic(() => import("../Newcomponet/SectionCompoent/headingSec"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const InfoSection = dynamic(() => import("../Newcomponet/SectionCompoent/InfoSection"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const HireDeveloper = dynamic(() => import("../Newcomponet/SectionCompoent/HireDeveloper"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const WhyChoose = dynamic(() => import("../Newcomponet/SectionCompoent/WhyChooseUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
 
 
 
@@ -136,6 +170,7 @@ export default function MultiChain(props: any) {
           description2=""
           description3=""
           dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/cost-of-flutter-app-development-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "
@@ -147,6 +182,7 @@ export default function MultiChain(props: any) {
           description2=""
           description3=""
           dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
           imagePosition="right"
           link="/contact-us"
@@ -158,6 +194,7 @@ export default function MultiChain(props: any) {
           description2=""
           description3=""
           dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "

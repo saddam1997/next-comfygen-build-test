@@ -6,16 +6,73 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Header from "../Newcomponet/layout/Header"
-import NewSection from "../Newcomponet/comman/NewSection"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+
+
+
+
+// import NewSection from "../Newcomponet/comman/NewSection"
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
 import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKey, } from '@tabler/icons-react';
 import Script from "next/script";
 
