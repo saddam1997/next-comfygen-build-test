@@ -47,16 +47,6 @@ const Faq = dynamic(
 
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection"
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import NewSection from "../Newcomponet/comman/NewSection"
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
 const Services = [
   {
     num: '1',
