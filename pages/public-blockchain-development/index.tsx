@@ -2,30 +2,80 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import WhyChoose from "../components/WhyChooseUs";
-import BlockChainTech from "./components/BlockChainTech";
-import IndustriesBlockchain from "../componentsnew/IndustriesBlockchain";
-import WhoCanStart from "../componentsnew/WhoCanStart";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-// import BlockchainNav from "../blockchain/blockchain-navbar";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhoCanStart = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhoCanStart"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import IndustriesBlockchain from "../Newcomponet/SectionCompoent/IndustriesBlockchain";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
 export default function rummy(props) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -651,11 +701,11 @@ export default function rummy(props) {
         />
       </Head>
       <div className="">
-        {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-        {/* </LazyLoad> */}
+
+        <BlockchainNav />
+
       </div>
-      <BlockchainNav />
+
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
           heading="Public blockchain development company"
@@ -688,7 +738,7 @@ export default function rummy(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -754,10 +804,14 @@ export default function rummy(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <BlockChainTech
+        <TechStack
+          customTechData={JSON_DATA.defaultTechData}
           title="Technology Stack & Platforms We Use for Public Blockchain Development"
           description="Public blockchains demand transparency, speed, and rock-solid security. We build on the most battle-tested platforms and tools in the ecosystem—choosing each one based on what your project needs, not what's trendy."
         />
+
+
+
 
         <HireDeveloper
           heading="Hire Public Blockchain Developers"

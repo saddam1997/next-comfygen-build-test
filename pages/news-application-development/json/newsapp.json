@@ -158,6 +158,140 @@
   },
 
 
+  "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
+      "title": "Global News Aggregator App",
+      "description": "We developed a news aggregator app with AI-driven recommendations, multi-language support, and real-time updates. Achieved 200K+ downloads, 60% engagement growth, and higher revenue through a hybrid monetization model.",
+      "link": "/portfolio/global-news-aggregator-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
+      "title": "Political News App",
+      "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",
+      "link":  "/portfolio/political-news-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-e-paper-app.webp",
+      "title": "E-Paper App Development",
+      "description": "Our India-based client, a leading media and publishing house, needed a custom E-Paper app development solution to digitize their newspaper and provide a seamless online reading experience. As a top-rated E-Paper app development company, we built a feature-rich, scalable platform that delivers high-quality digital newspapers, interactive content, and AI-powered recommendations for an enhanced reader experience.",
+      "link":  "/portfolio/e-paper-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/live-streaming-and-video-news-platform.webp",
+      "title": "All Sports News App",
+      "description": "Our USA-based client, a leading sports media company, required a custom sports news app development solution to provide real-time sports updates, match analysis, and AI-driven content recommendations. As a top-rated news app development company, we built a feature-rich, scalable platform that delivers live scores, breaking news, player stats, and personalized sports content for fans worldwide",
+      "link": "/portfolio/sports-news-app"
+    }
+  ],
+
+    "featuresData": [
+    {
+      "id": 1,
+      "title": "For general public",
+      "icon": " <i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/img/for-general-public.webp",
+      "additionalDetails": [
+        {
+          "details": "User profile and customization options ",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Personalized news feed powered by AI",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Push notifications for breaking news",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-time news updates",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details":"Embedded video and audio player",
+          "emoji": "",
+          "content": ""
+        }
+        
+      ]
+    },
+    {
+      "id": 2,
+      "title": "For Media Professionals ",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/img/for-media-professionals.webp",
+      "additionalDetails": [
+        {
+          "details": "Social media sharing buttons",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "In-app discussion and comments ",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Moderation tools for discussion management ",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-time polling and results display",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Content performance metrics for publishers ",
+          "emoji": "",
+          "content": ""
+        }
+        
+      ]
+    },
+    {
+      "id": 3,
+      "title": "For students",
+      "img": "https://www.comfygen.com/img/for-students.webp",
+      "icon": " <i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "Dynamic adaptation of news feed",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Topic-based notifications and alerts",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Offline reading capabilities for any-time reading",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details":  "Interactive charts and photo gallery ",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Voice-activated search functions",
+          "emoji": "",
+          "content": ""
+        }
+        
+      ]
+    }
+
+  ],
+
+
   "Streamline": [
     {
       "num": "1",

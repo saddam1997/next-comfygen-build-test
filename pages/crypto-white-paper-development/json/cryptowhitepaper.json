@@ -20,6 +20,29 @@
       "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
     }
   ],
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+      "title": "Aria Coin Cryptocurrency",
+      "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
+      "link": "/portfolio/aria-coin-details"
+    },
+    {
+      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+      "title": "Great Wallet Application",
+      "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
+      "link": "/portfolio/great-wallet"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7Coin Web Wallet",
+      "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
+      "link": "/portfolio/m7-coin"
+    }
+  ],
+
+
   "Processs": [
     {
       "title": "Project Understanding",

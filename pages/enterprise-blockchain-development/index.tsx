@@ -2,30 +2,93 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import WhyChoose from "../components/WhyChooseUs";
-import BlockChainTech from "./components/BlockChainTech";
-import CoreFeatureBlockchain from "./components/CoreFeatureBlockchain";
-import BenifitBlockchain from "./components/BenifitBlockchain";
-import IndustriesBlockchain from "../componentsnew/IndustriesBlockchain";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-export default function rummy(props:any) {
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeatureBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeatureBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const BenifitBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/BenifitBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import CoreFeatureBlockchain from "../Newcomponet/SectionCompoent/CoreFeatureBlockchain";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import BenifitBlockchain from "../Newcomponet/SectionCompoent/BenifitBlockchain";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import IndustriesBlockchain from "../Newcomponet/SectionCompoent/IndustriesBlockchain";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default function rummy(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -743,7 +806,7 @@ export default function rummy(props:any) {
             imageSrc="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/about.webp"
             link="/about-us"
             linkText="Explore More" />
-          <ContactFromCenter />
+          {/* <ContactFromCenter /> */}
           <section className="lg:py-16 py-10 bg-[#F5F5F9]">
             <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
               <div className="space-y-2">
@@ -779,10 +842,16 @@ export default function rummy(props:any) {
           <BenifitBlockchain
             heading="Explore the Key Benefits of Our Enterprise Blockchain Development Solutions for Smarter, Safer Business"
             description="Enterprise blockchain solutions help businesses work more smoothly, keep data safe, and build trust between teams and partners. The main benefits of enterprise blockchain include better security, faster processes, and solving business problems with smart, reliable technology:"
-            cards={benefitCards} />
-          <BlockChainTech
+            cards={benefitCards}
+          />
+
+          <TechStack
+            customTechData={JSON_DATA.defaultTechData}
             title="Technology Stack and Platforms Our Blockchain Developers Use for Enterprise Blockchain Development"
-            description="As a top enterprise blockchain development company, our developers leverage modern tools, frameworks, and blockchain platforms to build secure, scalable, and customized enterprise blockchain solutions. We ensure the technology stack aligns with your business goals, industry requirements, and long-term performance expectations." />
+            description="As a top enterprise blockchain development company, our developers leverage modern tools, frameworks, and blockchain platforms to build secure, scalable, and customized enterprise blockchain solutions. We ensure the technology stack aligns with your business goals, industry requirements, and long-term performance expectations."
+          />
+
+
 
           <IndustriesBlockchain
             heading="Industries We Serve with Enterprise Blockchain Solutions"

@@ -2,37 +2,75 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import { IconWallet, } from "@tabler/icons-react";
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-import ClientTestimonials from "../components/ClientTestimonials";
-
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
-import SolutionSec from "../components/SolutionSec";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
+import { IconWallet, } from "@tabler/icons-react";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 const technologyData = [
   {
@@ -122,7 +160,7 @@ const testimonialData = [
     title: "Spain",
   },
 ];
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const slider: any = useRef();
   const next = () => {
@@ -131,39 +169,7 @@ export default function Ecommerce(props) {
   const previous = () => {
     slider.current.slickPrev();
   };
-  const settingstwo = {
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -173,60 +179,6 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  const faqData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is cryptocurrency wallet development, and why is it important?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Cryptocurrency wallet development involves creating secure digital wallets that allow users to store, send, and receive cryptocurrencies. It is essential because it ensures safe transactions, private key management, and seamless interaction with blockchain networks.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What are the benefits of hiring a cryptocurrency wallet development company?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "A professional cryptocurrency wallet development company provides expert security features, multi-currency support, customized UI/UX, and compliance with industry standards. This ensures that businesses get reliable, scalable, and secure wallet solutions.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What types of cryptocurrency wallets can be developed?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "You can develop different types of cryptocurrency wallets, including web wallets, mobile wallets, desktop wallets, hardware wallets, and multi-signature wallets. Each type offers varying levels of security and accessibility.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How long does it take to develop a cryptocurrency wallet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The development timeline depends on the complexity. A basic crypto wallet can take 2-3 months, while a feature-rich wallet with advanced security and blockchain integrations can take 6 months or longer.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I get a customized cryptocurrency wallet for my business?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, businesses can get a custom cryptocurrency wallet tailored to their needs. Features like white-label branding, multi-currency support, DeFi integration, and biometric authentication can be customized as per requirements.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does it cost to develop a cryptocurrency wallet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost varies depending on features, security measures, platform compatibility, and additional integrations. A simple wallet may cost around $20,000-$30,000, while an advanced wallet can exceed $100,000.",
-        },
-      },
-    ],
-  };
   const jsonLdData = [
 
     {
@@ -573,28 +525,28 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp')]">
-          <HeroSectionForAllPages
-            heading="AI-Powered Cryptocurrency Wallet Development Company"
-            ptag="Build secure, intelligent, and scalable crypto wallets with Comfygen. Comfygen’s crypto wallet development experts integrate AI, Blockchain, and Web3 technology to create crypto wallets that analyze trends, detect fraud, and enhance user experience in real time."
-            ptag1=""
-            li="AI-Powered Security"
-            li1="Multi-Chain Compatibility"
-            li2="Smart Analytics"
-            li3="Seamless User Experience"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="AI-Powered Cryptocurrency Wallet Development Company"
+          ptag="Build secure, intelligent, and scalable crypto wallets with Comfygen. Comfygen’s crypto wallet development experts integrate AI, Blockchain, and Web3 technology to create crypto wallets that analyze trends, detect fraud, and enhance user experience in real time."
+          ptag1=""
+          li="AI-Powered Security"
+          li1="Multi-Chain Compatibility"
+          li2="Smart Analytics"
+          li3="Seamless User Experience"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp"
+        />
+
         <AboutSection
           heading="Global Growth of the Crypto Wallet Market"
           description1="The global crypto wallet market is growing rapidly, expected to exceed USD 45 billion by 2030 with a CAGR of over 25%. This growth is fueled by the rising adoption of cryptocurrencies, DeFi, NFTs, and Web3 applications. Modern crypto wallets now go beyond asset storage, offering multi-currency management, DeFi integration, and advanced security features — meeting the global demand for secure, scalable, and user-friendly digital asset solutions."
@@ -674,14 +626,14 @@ export default function Ecommerce(props) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Crypto Wallet Development Portfolio"
             description="Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
           />
         </section>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
 
         <section className="bg-white lg:py-16 py-10">
@@ -716,12 +668,6 @@ export default function Ecommerce(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        />
-
-
         <HireDeveloper
           heading="Hire AI-Powered Cryptocurrency Wallet Developers"
           text="Looking to build a next-generation cryptocurrency wallet powered by artificial intelligence? Hire AI crypto wallet developers from Comfygen and bring intelligence, automation, and security into your digital asset solutions. "
@@ -737,7 +683,10 @@ export default function Ecommerce(props) {
             "Direct Developer Access",
           ]}
         />
-
+        <ClientTestimonials
+          testimonials={testimonialData}
+          heading="What Our Clients Say"
+        />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" Cryptocurrency Wallet Development"

@@ -4,24 +4,90 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaverse.json";
 
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import HireDeveloper from "../components/HireDeveloper";
-import IndustriesServe from "../components/IndustriesServe";
-import AboutSection from "../components/AboutSection";
-import ProcessSec from "../components/ProcessSec";
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import WhyChoose from "../components/WhyChooseUs";
-import CardItem from "../components/CardItem";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -441,10 +507,9 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/metaverse-development-hero-img.webp')]">
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Metaverse Development Company"
           ptag="The metaverse is revolutionizing the way businesses interact with users, creating immersive, AI-powered, and blockchain-secured virtual experiences. As a leading metaverse development company, we provide tailored solutions for businesses looking to establish their presence in the digital realm. Our expertise spans across various industries, including gaming, real estate, education, healthcare, and e-commerce, ensuring scalable and future-ready metaverse platforms."
@@ -462,263 +527,273 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/metaverse-development-hero-img.webp"
         />
+
+        <AboutSection
+          title="About Company"
+          heading="Metaverse Development"
+          description1="Metaverse development is reshaping digital interactions by creating immersive, AI-powered, and decentralized virtual environments. With the integration of blockchain, AI, AR/VR, and Web3 technologies, businesses can establish their presence in the metaverse, offering interactive and engaging experiences to users worldwide. From virtual gaming and NFT marketplaces to real estate and social platforms, metaverse development opens new opportunities for digital transformation and monetization."
+          points={[
+            "AI-Driven Virtual Worlds",
+            "Blockchain-Based Metaverse Solutions",
+            "NFT-Powered Ecosystems",
+            "Play-to-Earn and Move-to-Earn Gaming Platforms",
+            "Decentralized Social & Business Platforms",
+            "AR/VR-Integrated Virtual Spaces",
+            "Metaverse Real Estate & Asset Tokenization",
+            "Web3-Powered Metaverse Applications",
+          ]}
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Metaverse Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we specialize in developing cutting-edge metaverse
+                ecosystems that bring businesses, brands, and users into the next
+                era of digital interaction. Our expertise in Web3, AI, blockchain,
+                AR/VR, and NFT development allows us to build highly immersive,
+                scalable, and interactive metaverse solutions tailored to various
+                industries.
+              </p>
+              <p className="text-base text-center font-normal">
+                Whether you need a metaverse game, virtual mall, real estate
+                platform, or a decentralized social media network, we provide
+                customized, feature-rich, and future-ready solutions. Our
+                development approach focuses on user engagement, security, and
+                seamless cross-platform integration to ensure that your metaverse
+                platform stands out in the digital landscape.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <section className="lg:py-16 py-10 bg-[#fff]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                  Our Metaverse Development Solutions
+                </h2>
+                <p>
+                  At Comfygen, we provide next-gen metaverse solutions designed to
+                  empower businesses, brands, and entrepreneurs in the digital
+                  revolution. From customized virtual environments to AI-powered
+                  smart ecosystems, our metaverse solutions offer scalability,
+                  security, and immersive experiences.
+                </p>
+                <p>
+                  Whether you're in gaming, real estate, social media, eCommerce,
+                  education, or enterprise solutions, our end-to-end metaverse
+                  software development solutions ensure seamless integration with
+                  blockchain, Web3, AR/VR, AI, and NFTs.
+                </p>
+              </div>
+              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                {JSON_DATA.LeadingSoftware.map((elem) => {
+                  const { title, decs, num } = elem;
+                  return (
+                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
+                        {num}
+                      </div>
+                      <h3 className="text-2xl text-[#212121] font-semibold">
+                        {title}
+                      </h3>
+                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="">
+              {JSON_DATA.ImmersiveMetaverse.map((elem: any) => {
+                const { title, num, decs } = elem;
+                return (
+                  <div
+                    key={num}
+                    className="w-full flex flex-col justify-center items-center text-center space-y-2"
+                  >
+                    <h2 className=" font-bold 2xl:text-4xl xl:text-3xl text-2xl text-[#fff] text-center">
+                      {title}
+                    </h2>
+                    <p className="text-base text-white">{decs}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="grid  gap-10 lg:grid-cols-3 md:grid-cols-2">
+              {JSON_DATA.Experience.map((elem: any) => {
+                const { title, decs, num, img, url } = elem;
+                return (
+                  <div
+                    key={num}
+                    className="p-4 rounded-lg border-2 bg-[#fff]/80 space-y-2"
+                  >
+                    <div className="flex items-center  space-x-2">
+                      <div className="flex items-center justify-center ">
+                        <Image src={img} alt={title} width="60" height="60" />
+                      </div>
+                      <h3 className="text-base font-bold text-black">{title}</h3>
+                    </div>
+                    <div>
+                      <p>{decs}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+        <section className="bg-white lg:py-16 py-10 ">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Metaverse Blockchain Development: Process & Execution Strategy
+              </h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a structured Metaverse Blockchain
+                Development process to build secure, scalable, and immersive
+                digital ecosystems. Our approach begins with concept validation
+                and requirement analysis, followed by blockchain framework
+                selection, smart contract integration, and 3D environment
+                development to ensure a seamless and future-ready metaverse
+                experience.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <IndustriesServe
+          heading="Industries We Serve"
+          description="At Comfygen, we specialize in delivering custom Metaverse Blockchain solutions across various industries, enabling businesses to harness Web3, AI, AR/VR, and decentralized ecosystems for enhanced digital transformation. Our expertise empowers enterprises to build immersive, scalable, and secure virtual experiences tailored to their specific needs."
+          sliderData={JSON_DATA.customSliderData}
+        />
+
+        {/* <IndustriesServe /> */}
+
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Check Out Our Portfolio: Metaverse Development"
+            description="Discover how we are shaping the future of digital interaction through our Metaverse development solutions. Our portfolio showcases a range of immersive virtual experiences, from interactive environments to virtual assets, all designed to push the boundaries of what's possible. Explore our work and see how we bring innovative Metaverse projects to life, blending cutting-edge technology with creative design."
+          />
+        </section>
+
+
+        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        <CardItem
+          heading="Features of Our Metaverse Development"
+          subheading="At Comfygen, we develop cutting-edge Metaverse ecosystems that blend AI, blockchain, AR/VR, and Web3 technologies to deliver secure, immersive, and scalable virtual experiences. Our solutions empower businesses across gaming, real estate, social networking, education, and eCommerce by providing decentralized and interactive virtual spaces."
+          techData={JSON_DATA.cardData}
+        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                  Top Advantages of Our Metaverse Development Solutions
+                </h2>
+                <p>
+                  The Metaverse is revolutionizing digital interactions, offering
+                  businesses limitless opportunities for engagement, monetization,
+                  and innovation. At Comfygen, we specialize in developing
+                  immersive, AI-driven, and blockchain-powered Metaverse solutions
+                  that empower businesses across industries. Our solutions ensure
+                  seamless interoperability, high security, and next-level user
+                  experiences, making us a trusted Metaverse Software development
+                  company in the industry.
+                </p>
+              </div>
+              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                {JSON_DATA.Benefits.map((elem) => {
+                  const { title, decs, num } = elem;
+                  return (
+                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
+                        {num}
+                      </div>
+                      <h3 className="text-2xl text-[#212121] font-semibold">
+                        {title}
+                      </h3>
+                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+        <HireDeveloper
+          heading="Hire Our Expert Metaverse Developers"
+          text="At Comfygen, we provide skilled and experienced Metaverse developers who specialize in building immersive, secure, and scalable virtual ecosystems. Our experts leverage cutting-edge technologies like Web3, AI, AR/VR, and blockchain to create futuristic metaverse platforms tailored to your business needs. Whether you're looking to develop a decentralized metaverse, NFT marketplace, virtual workspace, or gaming ecosystem, our developers ensure seamless execution, top-notch security, and high-end performance."
+          text1="Why Hire Metaverse Developers from Comfygen?"
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Expertise in Blockchain & Web3 – Smart contract development, decentralized applications, and tokenized economies.",
+            "Immersive AR/VR Solutions – High-quality 3D environments for metaverse platforms and virtual experiences.",
+            "AI-Powered Metaverse Development – Machine learning-driven personalization and automation.",
+            "Cross-Platform Integration – Seamless metaverse experiences across mobile, desktop, and VR devices.",
+            "End-to-End Development – From ideation to deployment with post-launch support.",
+          ]}
+        />
+
+        <InfoSection
+          heading="Looking for More Details on Metaverse Development?"
+          description1="At Comfygen, we are committed to delivering next-generation Metaverse solutions tailored to your business needs. Whether you are looking for custom Metaverse development, AI-driven virtual experiences, NFT integration, or Web3-powered ecosystems, our team of experts is here to assist you at every stage of development."
+          description2="We understand that every business has unique requirements, and we are happy to provide personalized consultations to address any queries you may have. Our specialists ensure that your Metaverse project is secure, scalable, and feature-rich, leveraging blockchain, AR/VR, AI, and decentralized technologies to create truly immersive digital environments."
+          description3=""
+          dec=""
+          points={
+            [
+              "Have questions about Metaverse app development cost, features, or implementation?",
+              "Need a customized Metaverse platform that aligns with your business goals?",
+              "Want to explore how blockchain, AI, and NFTs can enhance your Metaverse project?",
+              "Looking for end-to-end Metaverse development services with expert guidance?"
+            ]
+          }
+          imageSrc="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp"
+          link="/contact-us"
+          linkText="LET'S CONNECT "
+        />
+        <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
-      <AboutSection
-        title="About Company"
-        heading="Metaverse Development"
-        description1="Metaverse development is reshaping digital interactions by creating immersive, AI-powered, and decentralized virtual environments. With the integration of blockchain, AI, AR/VR, and Web3 technologies, businesses can establish their presence in the metaverse, offering interactive and engaging experiences to users worldwide. From virtual gaming and NFT marketplaces to real estate and social platforms, metaverse development opens new opportunities for digital transformation and monetization."
-        points={[
-          "AI-Driven Virtual Worlds",
-          "Blockchain-Based Metaverse Solutions",
-          "NFT-Powered Ecosystems",
-          "Play-to-Earn and Move-to-Earn Gaming Platforms",
-          "Decentralized Social & Business Platforms",
-          "AR/VR-Integrated Virtual Spaces",
-          "Metaverse Real Estate & Asset Tokenization",
-          "Web3-Powered Metaverse Applications",
-        ]}
-        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-      <ContactFromCenter />
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our Metaverse Development Services
-            </h2>
-            <p className="text-base text-center font-normal">
-              At Comfygen, we specialize in developing cutting-edge metaverse
-              ecosystems that bring businesses, brands, and users into the next
-              era of digital interaction. Our expertise in Web3, AI, blockchain,
-              AR/VR, and NFT development allows us to build highly immersive,
-              scalable, and interactive metaverse solutions tailored to various
-              industries.
-            </p>
-            <p className="text-base text-center font-normal">
-              Whether you need a metaverse game, virtual mall, real estate
-              platform, or a decentralized social media network, we provide
-              customized, feature-rich, and future-ready solutions. Our
-              development approach focuses on user engagement, security, and
-              seamless cross-platform integration to ensure that your metaverse
-              platform stands out in the digital landscape.
-            </p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
-
-      <section className="lg:py-16 py-10 bg-[#fff]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-4 text-center">
-            <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-              <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                Our Metaverse Development Solutions
-              </h2>
-              <p>
-                At Comfygen, we provide next-gen metaverse solutions designed to
-                empower businesses, brands, and entrepreneurs in the digital
-                revolution. From customized virtual environments to AI-powered
-                smart ecosystems, our metaverse solutions offer scalability,
-                security, and immersive experiences.
-              </p>
-              <p>
-                Whether you're in gaming, real estate, social media, eCommerce,
-                education, or enterprise solutions, our end-to-end metaverse
-                software development solutions ensure seamless integration with
-                blockchain, Web3, AR/VR, AI, and NFTs.
-              </p>
-            </div>
-            <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-              {JSON_DATA.LeadingSoftware.map((elem) => {
-                const { title, decs, num } = elem;
-                return (
-                  <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                    <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                      {num}
-                    </div>
-                    <h3 className="text-2xl text-[#212121] font-semibold">
-                      {title}
-                    </h3>
-                    <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-        <div className="space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="">
-            {JSON_DATA.ImmersiveMetaverse.map((elem: any) => {
-              const { title, num, decs } = elem;
-              return (
-                <div
-                  key={num}
-                  className="w-full flex flex-col justify-center items-center text-center space-y-2"
-                >
-                  <h2 className=" font-bold 2xl:text-4xl xl:text-3xl text-2xl text-[#fff] text-center">
-                    {title}
-                  </h2>
-                  <p className="text-base text-white">{decs}</p>
-                </div>
-              );
-            })}
-          </div>
-          <div className="grid  gap-10 lg:grid-cols-3 md:grid-cols-2">
-            {JSON_DATA.Experience.map((elem: any) => {
-              const { title, decs, num, img, url } = elem;
-              return (
-                <div
-                  key={num}
-                  className="p-4 rounded-lg border-2 bg-[#fff]/80 space-y-2"
-                >
-                  <div className="flex items-center  space-x-2">
-                    <div className="flex items-center justify-center ">
-                      <Image src={img} alt={title} width="60" height="60" />
-                    </div>
-                    <h3 className="text-base font-bold text-black">{title}</h3>
-                  </div>
-                  <div>
-                    <p>{decs}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      <ConsultancyApproach
-        Head={JSON_DATA.consultancyHead}
-        ItemData={JSON_DATA.consultancyData}
-        imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-        buttonText="Let’s Discuss"
-        buttonLink="/contact-us"
-      />
-
-      <section className="bg-white lg:py-16 py-10 ">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <div className="text-center">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Metaverse Blockchain Development: Process & Execution Strategy
-            </h2>
-            <p className="text-base font-normal mt-2">
-              At Comfygen, we follow a structured Metaverse Blockchain
-              Development process to build secure, scalable, and immersive
-              digital ecosystems. Our approach begins with concept validation
-              and requirement analysis, followed by blockchain framework
-              selection, smart contract integration, and 3D environment
-              development to ensure a seamless and future-ready metaverse
-              experience.
-            </p>
-          </div>
-          <ProcessSec processSlides={Process} />
-        </div>
-      </section>
-
-      <IndustriesServe
-        heading="Industries We Serve"
-        description="At Comfygen, we specialize in delivering custom Metaverse Blockchain solutions across various industries, enabling businesses to harness Web3, AI, AR/VR, and decentralized ecosystems for enhanced digital transformation. Our expertise empowers enterprises to build immersive, scalable, and secure virtual experiences tailored to their specific needs."
-        sliderData={JSON_DATA.customSliderData}
-      />
-
-      {/* <IndustriesServe /> */}
-
-      <PortfolioSec
-        techData={techDataForPage1}
-        heading="Check Out Our Portfolio: Metaverse Development"
-        description="Discover how we are shaping the future of digital interaction through our Metaverse development solutions. Our portfolio showcases a range of immersive virtual experiences, from interactive environments to virtual assets, all designed to push the boundaries of what's possible. Explore our work and see how we bring innovative Metaverse projects to life, blending cutting-edge technology with creative design."
-      />
-      <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-      <CardItem
-        heading="Features of Our Metaverse Development"
-        subheading="At Comfygen, we develop cutting-edge Metaverse ecosystems that blend AI, blockchain, AR/VR, and Web3 technologies to deliver secure, immersive, and scalable virtual experiences. Our solutions empower businesses across gaming, real estate, social networking, education, and eCommerce by providing decentralized and interactive virtual spaces."
-        techData={JSON_DATA.cardData}
-      />
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-4 text-center">
-            <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-              <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-              Top Advantages of Our Metaverse Development Solutions
-              </h2>
-              <p>
-                The Metaverse is revolutionizing digital interactions, offering
-                businesses limitless opportunities for engagement, monetization,
-                and innovation. At Comfygen, we specialize in developing
-                immersive, AI-driven, and blockchain-powered Metaverse solutions
-                that empower businesses across industries. Our solutions ensure
-                seamless interoperability, high security, and next-level user
-                experiences, making us a trusted Metaverse Software development
-                company in the industry.
-              </p>
-            </div>
-            <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-              {JSON_DATA.Benefits.map((elem) => {
-                const { title, decs, num } = elem;
-                return (
-                  <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                    <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                      {num}
-                    </div>
-                    <h3 className="text-2xl text-[#212121] font-semibold">
-                      {title}
-                    </h3>
-                    <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-      <HireDeveloper
-        heading="Hire Our Expert Metaverse Developers"
-        text="At Comfygen, we provide skilled and experienced Metaverse developers who specialize in building immersive, secure, and scalable virtual ecosystems. Our experts leverage cutting-edge technologies like Web3, AI, AR/VR, and blockchain to create futuristic metaverse platforms tailored to your business needs. Whether you're looking to develop a decentralized metaverse, NFT marketplace, virtual workspace, or gaming ecosystem, our developers ensure seamless execution, top-notch security, and high-end performance."
-        text1="Why Hire Metaverse Developers from Comfygen?"
-        buttonText="Hire Developer"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Expertise in Blockchain & Web3 – Smart contract development, decentralized applications, and tokenized economies.",
-          "Immersive AR/VR Solutions – High-quality 3D environments for metaverse platforms and virtual experiences.",
-          "AI-Powered Metaverse Development – Machine learning-driven personalization and automation.",
-          "Cross-Platform Integration – Seamless metaverse experiences across mobile, desktop, and VR devices.",
-          "End-to-End Development – From ideation to deployment with post-launch support.",
-        ]}
-      />
-
-      <InfoSectionLeft
-        heading="Looking for More Details on Metaverse Development?"
-        description1="At Comfygen, we are committed to delivering next-generation Metaverse solutions tailored to your business needs. Whether you are looking for custom Metaverse development, AI-driven virtual experiences, NFT integration, or Web3-powered ecosystems, our team of experts is here to assist you at every stage of development."
-        description2="We understand that every business has unique requirements, and we are happy to provide personalized consultations to address any queries you may have. Our specialists ensure that your Metaverse project is secure, scalable, and feature-rich, leveraging blockchain, AR/VR, AI, and decentralized technologies to create truly immersive digital environments."
-        points={
-          [
-            "Have questions about Metaverse app development cost, features, or implementation?",
-            "Need a customized Metaverse platform that aligns with your business goals?",
-            "Want to explore how blockchain, AI, and NFTs can enhance your Metaverse project?",
-            "Looking for end-to-end Metaverse development services with expert guidance?"
-          ]
-        }
-        imageSrc="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp"
-        link="/contact-us"
-        linkText="LET'S CONNECT "
-      />
-      <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
-      {/*<BlogSection initialData={initialData} />*/}
     </>
   );
 }

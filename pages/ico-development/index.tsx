@@ -1,40 +1,94 @@
-import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { IoStarSharp } from "react-icons/io5";
 import JSON_DATA from "./json/icodevelopment.json";
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardItem from "../components/CardItem";
-import ServicesSec from "../componentsnew/ServicesSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ProcessSection from "../componentsnew/ProcessSection";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
 
 const defaultTestimonials = [
   {
@@ -323,7 +377,7 @@ const jsonLdData = [
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -447,7 +501,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/ico-development/ico-development-hero1.webp"
         />
-        <NewSection NewSection={JSON_DATA.NewSections} />
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
 
         <AboutSection
           title="About Company"
@@ -466,12 +520,22 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Over End-to-End ICO Development Services"
-          description="At <a class='text-blue-500' href='/'>comfygen</a> , we specialize in delivering end-to-end ICO development services to help startups and enterprises launch successful ICO campaigns. Our services cover every step of the process, from initial planning to post-ICO support, ensuring that your ICO is secure, compliant, and primed for success. Here's a breakdown of the services we offer:"
-        />
+        {/* <ContactFromCenter /> */}
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Over End-to-End ICO Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At <a className='text-blue-500' href='/'>comfygen</a> , we specialize in delivering end-to-end ICO development services to help startups and enterprises launch successful ICO campaigns. Our services cover every step of the process, from initial planning to post-ICO support, ensuring that your ICO is secure, compliant, and primed for success. Here's a breakdown of the services we offer</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <CardItem
           heading="Our ICO Development Solutions"
@@ -496,11 +560,23 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <ProcessSection
-          title="Our Step-by-Step ICO Development Process"
-          description="Our ICO development process is meticulously structured to ensure a smooth and successful token launch. We follow a comprehensive, step-by-step approach to deliver a secure, compliant, and high-performance ICO platform tailored to your business needs."
-          processSlides={Processs}
-        />
+
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step ICO Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               Our ICO development process is meticulously structured to ensure a smooth and successful token launch. We follow a comprehensive, step-by-step approach to deliver a secure, compliant, and high-performance ICO platform tailored to your business needs.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+
+
+
 
 
         <TechStack

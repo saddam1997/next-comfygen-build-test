@@ -118,6 +118,28 @@
     ]
   },
 
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/decentralised-mlm.webp",
+      "title": "Decentralized MLM",
+      "description": "Join Decentralized MLM Web – Where Blockchain Ensures Transparency, Rewards Drive Growth, and Community Powers Success. Experience the Future of Network Marketing, Reinvented.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+      "title": " Great Wallet Application",
+      "description": "Great Wallet is a cutting-edge iOS wallet engineered for seamless integration with the Great Crypto Network (GREAT Blockchain). As a key component of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain framework is designed to revolutionize global economic governance and operations in the era of the fourth industrial revolution.",
+      "link": "/portfolio/great-wallet"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+      "title": "M7Coin Web Wallet",
+      "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
+      "link": "/portfolio/m7-coin"
+    }
+  ],
+
+
   "servicesData": [
     {
       "title": "TRON-Based MLM Software",

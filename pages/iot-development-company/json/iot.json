@@ -12,31 +12,50 @@
       "btn": "Hire Developer"
     }
   ],
-  "Process" : [
-      { "title": "Analysis of Requirements", 
-        "description": "First, our experts understand the business objectives, technical requirements, and user needs in detail. We conduct demos, workshops, and interviews to gather insights and define clear goals for the client’s IoT development solutions. Further, we will identify the device types, data needed, desired functionalities, scalability needs, and security requirements to proceed ahead." },
-      { "title": "IoT Architecture Design", 
-        "description": "Our IoT developers will design the architecture of the IoT solution based on the requirements analyzed. We check out the essential components such as edge devices, cloud services, gateways, and user interfaces. Our team will choose appropriate communication protocols, data storage solutions, and analytics tools for the IoT app. We also consider factors such as data security, privacy, and compliance with industry standards and regulations." },
-      { "title": "Hardware & Software Integration", 
-        "description": "In this phase, we integrate custom IoT hardware and software solutions to create a seamless IoT ecosystem. Our IoT software development team connects sensors, embedded systems, and edge computing devices with cloud platforms and IoT applications. We ensure real-time data transmission, interoperability, and security while optimizing hardware efficiency for various industries." },
-      {
-        "title": "Full-Scale Development",
-        "description": "We will proceed with full-scale IoT app development solutions once the prototype is validated. Our developers finalize the architecture and design. We proceed to develop device firmware, backend services, APIs, and user interfaces. We also Integrate security measures, such as encryption and authentication, at every step of the development process. Further, the team conducts thorough testing and ensures reliability, interoperability, and scalability."
-      },
-      {
-        "title": "Data Processing & Cloud Integration",
-        "description": "Efficient IoT data processing and cloud integration are key to real-time decision-making. Our experts implement AI-driven data analytics, cloud-based storage solutions, and edge computing to manage massive data streams securely. We integrate IoT platforms like AWS IoT, Google Cloud IoT, and Microsoft Azure IoT for optimized data processing, analytics, and automation."
-      },
-      {
-        "title": "Continuous Updates and Scaling",
-        "description": "To keep up with evolving business needs and technological advancements, we provide regular updates for IoT applications. Our Internet of Things development solutions are designed to scale efficiently, ensuring businesses can add new devices or features without compromising the system's stability or performance."
-      },
-      {
-        "title": "Deployment and Maintenance",
-        "description": "Finally, we deploy the IoT solution in the production environment and monitor its performance closely. Our experts will provide the necessary training to users and administrators. We have established procedures for ongoing maintenance, monitoring, and support, which we share with the clients. Our web application development for IoT prioritizes continuously gathering feedback from users to identify areas for improvement and iterate on the IoT solution accordingly."
-      }
-    ],
-
+  "Process": [
+    {
+      "title": "Analysis of Requirements",
+      "description": "First, our experts understand the business objectives, technical requirements, and user needs in detail. We conduct demos, workshops, and interviews to gather insights and define clear goals for the client’s IoT development solutions. Further, we will identify the device types, data needed, desired functionalities, scalability needs, and security requirements to proceed ahead."
+    },
+    {
+      "title": "IoT Architecture Design",
+      "description": "Our IoT developers will design the architecture of the IoT solution based on the requirements analyzed. We check out the essential components such as edge devices, cloud services, gateways, and user interfaces. Our team will choose appropriate communication protocols, data storage solutions, and analytics tools for the IoT app. We also consider factors such as data security, privacy, and compliance with industry standards and regulations."
+    },
+    {
+      "title": "Hardware & Software Integration",
+      "description": "In this phase, we integrate custom IoT hardware and software solutions to create a seamless IoT ecosystem. Our IoT software development team connects sensors, embedded systems, and edge computing devices with cloud platforms and IoT applications. We ensure real-time data transmission, interoperability, and security while optimizing hardware efficiency for various industries."
+    },
+    {
+      "title": "Full-Scale Development",
+      "description": "We will proceed with full-scale IoT app development solutions once the prototype is validated. Our developers finalize the architecture and design. We proceed to develop device firmware, backend services, APIs, and user interfaces. We also Integrate security measures, such as encryption and authentication, at every step of the development process. Further, the team conducts thorough testing and ensures reliability, interoperability, and scalability."
+    },
+    {
+      "title": "Data Processing & Cloud Integration",
+      "description": "Efficient IoT data processing and cloud integration are key to real-time decision-making. Our experts implement AI-driven data analytics, cloud-based storage solutions, and edge computing to manage massive data streams securely. We integrate IoT platforms like AWS IoT, Google Cloud IoT, and Microsoft Azure IoT for optimized data processing, analytics, and automation."
+    },
+    {
+      "title": "Continuous Updates and Scaling",
+      "description": "To keep up with evolving business needs and technological advancements, we provide regular updates for IoT applications. Our Internet of Things development solutions are designed to scale efficiently, ensuring businesses can add new devices or features without compromising the system's stability or performance."
+    },
+    {
+      "title": "Deployment and Maintenance",
+      "description": "Finally, we deploy the IoT solution in the production environment and monitor its performance closely. Our experts will provide the necessary training to users and administrators. We have established procedures for ongoing maintenance, monitoring, and support, which we share with the clients. Our web application development for IoT prioritizes continuously gathering feedback from users to identify areas for improvement and iterate on the IoT solution accordingly."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/iot-portfolio-img.webp",
+      "title": "Innovative IoT Integration",
+      "description": "Comfygen proudly presents its collaboration with Solaris Robots on an innovative IoT project. Tasked with enhancing disinfection processes, our team engineered a cutting-edge IoT solution that integrates seamlessly with Solaris Robots' robotic technologies. This advancement revolutionized disinfection methods, ensuring heightened efficiency, safety, and data monitoring capabilities. With features like real-time monitoring, remote control, predictive maintenance, and data analytics, our solution empowers Solaris Robots to set new standards in the industry. Leveraging IoT sensors, cloud computing, data analytics, and stringent cybersecurity measures, this project signifies our commitment to driving technological innovation. Contact Comfygen today to explore how we can elevate your project with similar transformative IoT solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/iot-portfolio-img2.webp",
+      "title": "Imaginative IoT Integration",
+      "description": "Comfygen proudly presents its collaboration with jetbrain on an innovative IoT project. Tasked with enhancing disinfection processes, our team engineered a cutting-edge IoT solution that integrates seamlessly with jetbrain' robotic technologies. This advancement revolutionized disinfection methods, ensuring heightened efficiency, safety, and data monitoring capabilities. With features like real-time monitoring, remote control, predictive maintenance, and data analytics, our solution empowers jetbrain to set new standards in the industry. Leveraging IoT sensors, cloud computing, data analytics, and stringent cybersecurity measures, this project signifies our commitment to driving technological innovation. Contact Comfygen today to explore how we can elevate your project with similar transformative IoT solutions.",
+      "link": "#"
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen as Your IoT App Development?",
     "description": "We are now the top IoT app development company in India because of our innovative and flexible solutions. Businesses can make the most of our comprehensive IoT software development solutions. Choosing Comfygen for IoT app development comes with several advantages:",
@@ -78,7 +97,6 @@
       }
     ]
   },
-
   "myList": [
     "Expertise and specialization",
     "Proficient in IoT development cycles",
@@ -200,68 +218,98 @@
       "desc": "A well-designed IoT solution will bring in the potential to increase your business's profit margins. This is achieved by optimizing maintenance costs, creating an exceptional customer experience, generating additional revenue streams (by offering additional services), and reducing machine breakdowns. Hiring industrial IoT development services that adopt the IoT framework in the right spirit has demonstrated improvements in operational efficiency and ROI."
     }
   ],
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "IoT Consulting Service",
       "description": "Our IoT development services go beyond technical expertise. We provide end-to-end IoT development consulting for businesses looking to implement IoT app development solutions starting from scratch. Whether it’s <a href='/android-app-development' class='font-bold border-b'>Android app development</a> for IoT or streamlining your operations, our experts transform ideas into reality with innovative, high-quality IoT Development solutions. By understanding your requirements, we help automate and optimize business processes, driving efficiency and growth.",
-      "features": ["Help integrate IoT solutions into your business.", "Turn your IoT ideas into reality with expert guidance.", "Optimize business processes with IoT technology." , "Assist in automating existing systems using IoT."]
+      "features": [
+        "Help integrate IoT solutions into your business.",
+        "Turn your IoT ideas into reality with expert guidance.",
+        "Optimize business processes with IoT technology.",
+        "Assist in automating existing systems using IoT."
+      ]
     },
     {
       "title": "Custom IoT Application Development",
       "description": "Our IoT development services go beyond just coding; we create custom IoT applications tailored to your business needs. Whether it’s a smart home solution, industrial automation, or real-time monitoring, our expert team delivers scalable and user-friendly IoT applications. With a focus on seamless connectivity, cloud integration, and AI-driven insights, we transform your IoT vision into reality.",
-      "features": ["Develop custom IoT apps for various industries.",
-     " Enable real-time monitoring and automation.",
-      "Ensure seamless device communication and data exchange.",
-      "Enhance user experience with smart IoT solutions.  "    
-     ]
+      "features": [
+        "Develop custom IoT apps for various industries.",
+        " Enable real-time monitoring and automation.",
+        "Ensure seamless device communication and data exchange.",
+        "Enhance user experience with smart IoT solutions.  "
+      ]
     },
     {
       "title": "IoT Hardware Development",
       "description": "As a leading IoT hardware development company in India, we design and prototype smart, efficient, and connected devices to enhance automation and data collection. From custom sensors and edge devices to embedded systems, our IoT app development team provides the hardware that meets industry standards with optimized performance and security.",
-      "features": ["Develop custom IoT devices with advanced sensors.", "Ensure high-performance, scalable, and secure hardware.", "Optimize energy-efficient and wireless connectivity solutions." , "Seamlessly integrate hardware with IoT ecosystems."]
+      "features": [
+        "Develop custom IoT devices with advanced sensors.",
+        "Ensure high-performance, scalable, and secure hardware.",
+        "Optimize energy-efficient and wireless connectivity solutions.",
+        "Seamlessly integrate hardware with IoT ecosystems."
+      ]
     },
     {
       "title": "IoT Software Development",
       "description": "Our IoT software development services provide secure and scalable software solutions that power smart devices and applications. Whether you need custom IoT firmware, cloud-based dashboards, or AI-powered automation, we develop end-to-end IoT software solutions that connect and manage IoT ecosystems efficiently.",
-      "features": ["Scalable and secure IoT software development solutions.", "Develop custom IoT firmware for smart devices.", "Enable cloud-based IoT platforms for remote monitoring." ,"Integrate AI-driven automation and analytics." ]
+      "features": [
+        "Scalable and secure IoT software development solutions.",
+        "Develop custom IoT firmware for smart devices.",
+        "Enable cloud-based IoT platforms for remote monitoring.",
+        "Integrate AI-driven automation and analytics."
+      ]
     },
     {
       "title": "IoT Integration",
       "description": "We specialize in IoT integration services to seamlessly connect IoT devices, cloud platforms, and enterprise systems. Whether you want to integrate IoT with your existing ERP, CRM, or industrial machinery, our solutions enhance operational efficiency and automation, driving business growth.",
-      "features": ["Seamlessly integrate IoT devices with enterprise systems.", "Ensure smooth data exchange and automation.", "Optimize workflow with real-time IoT connectivity.", "Enhance business efficiency with smart integrations." ]
-    } ,
+      "features": [
+        "Seamlessly integrate IoT devices with enterprise systems.",
+        "Ensure smooth data exchange and automation.",
+        "Optimize workflow with real-time IoT connectivity.",
+        "Enhance business efficiency with smart integrations."
+      ]
+    },
     {
       "title": "IoT Data Analytics & AI",
       "description": "Unlock the power of IoT data analytics and AI to make smarter business decisions. Our solutions collect, process, and analyze real-time data from IoT devices, providing predictive insights, anomaly detection, and automation to enhance operational efficiency and customer experience.",
-      "features": ["Implement AI-driven IoT analytics for better insights.", "Monitor and predict trends with smart data processing.", "Enhance business intelligence with real-time data visualization.", "Improve efficiency with automated decision-making." ]
-    } ,
+      "features": [
+        "Implement AI-driven IoT analytics for better insights.",
+        "Monitor and predict trends with smart data processing.",
+        "Enhance business intelligence with real-time data visualization.",
+        "Improve efficiency with automated decision-making."
+      ]
+    },
     {
       "title": "IoT Security Solutions",
       "description": "Security is a top priority in IoT development. Our IoT security solutions protect devices, networks, and data from cyber threats. We implement encryption, authentication, and access controls to ensure secure communication and compliance with global security standards.",
-      "features": ["Implement robust IoT encryption and security protocols.", "Protect IoT devices from cyber threats and attacks.", "Ensure secure data transmission and storage.", "Comply with industry security standards and regulations." ]
-    } ,
+      "features": [
+        "Implement robust IoT encryption and security protocols.",
+        "Protect IoT devices from cyber threats and attacks.",
+        "Ensure secure data transmission and storage.",
+        "Comply with industry security standards and regulations."
+      ]
+    },
     {
       "title": "Cloud & Edge Computing Solutions",
       "description": "Our cloud and edge computing solutions enable businesses to process and analyze IoT data in real-time, ensuring low latency and high efficiency. Whether it’s AWS IoT, Google Cloud IoT, or Microsoft Azure, we develop custom cloud-based IoT solutions to optimize performance and cost.",
-      "features": ["Develop scalable IoT cloud architectures.",
-      "Implement edge computing for real-time data processing.",
-     " Optimize latency and efficiency for IoT operations.",
-     " Ensure secure and reliable cloud integration."
-       ]
-    } ,
+      "features": [
+        "Develop scalable IoT cloud architectures.",
+        "Implement edge computing for real-time data processing.",
+        " Optimize latency and efficiency for IoT operations.",
+        " Ensure secure and reliable cloud integration."
+      ]
+    },
     {
       "title": "IoT Testing & Maintenance",
       "description": "We offer comprehensive IoT testing and maintenance services to ensure the reliability and security of your IoT solutions. From device testing and network validation to firmware updates and security patches, our custom IoT application development team provides your IoT ecosystem functions perfectly.",
-      "features": ["Conduct rigorous IoT device and software testing.",
-      "Ensure seamless performance with real-time monitoring.",
-      "Provide ongoing IoT maintenance and updates.",
-      "Enhance system security with continuous improvements."
+      "features": [
+        "Conduct rigorous IoT device and software testing.",
+        "Ensure seamless performance with real-time monitoring.",
+        "Provide ongoing IoT maintenance and updates.",
+        "Enhance system security with continuous improvements."
       ]
-    } 
-  
+    }
   ],
-
-
   "Solutions": [
     {
       "num": "1",
@@ -426,9 +474,6 @@
       "decs": "Comfygen offers cost-effective IoT app development services, providing businesses with high-quality solutions that deliver tangible value and return on investment."
     }
   ],
-
-
-
   "LeadingSoftware": [
     {
       "num": "01",

@@ -4,18 +4,87 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./salonappdevelopment.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import DeliverySection from "../Newcomponet/comman/DeliverySection";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const DeliverySection = dynamic(
+  () => import("../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import Features from "../Newcomponet/SectionCompoent/Features";
+// import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import DeliverySection from "../Newcomponet/comman/DeliverySection";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+// import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 const Process = [
@@ -353,7 +422,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Best Ice Cream Delivery App Development Company"
           ptag="Comfygen is a leading Ice Cream Delivery App Development Company delivering AI-powered Ice Cream Delivery App Development solutions for startups, ice cream shops, and enterprises. Our expert developers integrate AI-based features like smart flavor recommendations, real-time delivery tracking, and personalized offers. With blockchain-powered security and scalable architecture, we build custom ice cream delivery apps that ensure reliability, growth, and customer satisfaction."

@@ -37,78 +37,119 @@
       "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
     }
   ],
-
-  "servicesData" :[
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/gaming-based-dapp.webp",
+      "title": "Gaming-based dApp Development",
+      "description": "Unlock the potential of blockchain gaming with our cutting-edge gaming-based dApp development services. We create decentralized gaming applications that offer secure transactions, true asset ownership, and immersive gameplay experiences. From NFT integration to play-to-earn mechanics, our expert developers build innovative gaming dApps tailored to your vision.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/finance-based-dApp-development.webp",
+      "title": "Finance-based dApp Development",
+      "description": "Revolutionize financial transactions with our finance-based dApp development services. We build secure, transparent, and decentralized applications that enhance financial operations, enabling seamless transactions, smart contract automation, and DeFi solutions. Whether it's lending, staking, or asset management, our dApps empower businesses with blockchain-driven financial innovations.",
+      "link": "#"
+    }
+  ],
+  "servicesData": [
     {
       "title": "MVP Consulting",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We stand out from the crowd in offering exceptional MVP consulting services to our clients for dApp development projects. Our dApp development experts use their knowledge of new market trends to analyse the probabilities of success with your ideas. We can also help you in the identification of potential stakeholders, the definition of technical components, and the selection of an ideal blockchain platform according to client requirements.",
       "features": [
-        "Identifying potential stakeholders", 
-        "Defining technical components" ,
+        "Identifying potential stakeholders",
+        "Defining technical components",
         "Selecting the ideal blockchain platform based on business needs"
-    ]
+      ]
     },
     {
       "title": "UI Design",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our approach to build a dApp gives the additional advantage of a systematic and structured process for designing the user interface of the dApps. We aim to create user interfaces that are simple and easy to understand. You can onboard users to your dApps effectively with flexible options for navigating different features through the user interface. We focus on the target audience and implement the design approaches accordingly.",
-      "features": ["Simple, accessible, and clean UI designs", "Seamless onboarding experience for users", "Flexible navigation options for enhanced usability"]
+      "features": [
+        "Simple, accessible, and clean UI designs",
+        "Seamless onboarding experience for users",
+        "Flexible navigation options for enhanced usability"
+      ]
     },
     {
       "title": "DEX Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our team has great expertise and extensive knowledge of the DEX development process. We can help you create customised and scalable decentralized exchanges or DEX platforms with support for peer-to-peer transactions. Our custom dApp development expertise helps us create DEX platforms that can adapt to different business use cases. Our DEX platforms could support connectivity with external exchanges through APIs and shared order books.",
-      "features": ["Integration with external exchanges via APIs", "Shared order books for liquidity", "Adaptive to various business use cases"]
+      "features": [
+        "Integration with external exchanges via APIs",
+        "Shared order books for liquidity",
+        "Adaptive to various business use cases"
+      ]
     },
     {
       "title": "dApp Consultation",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our dApp consultation services could help you create a dApp with the efficient use of resources. You can talk to our experts about your idea for a decentralized app to find the chances of success. We guide you through the technical and business aspects of the project, alongside helping you identify the ideal blockchain platform for developing dApps.",
-      "features": ["Technical and business guidance", "Selection of the ideal blockchain platform", "Expert advice on efficient resource use and project success"]
+      "features": [
+        "Technical and business guidance",
+        "Selection of the ideal blockchain platform",
+        "Expert advice on efficient resource use and project success"
+      ]
     },
     {
       "title": "Smart Contract Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Decentralized application development projects rely on smart contracts, and we specialise in custom smart contract development tasks. Our developers specialise in writing the code, developing, integrating, testing and deploying smart contracts on different blockchain networks. You can also rely on us for optimization of existing smart contracts to achieve specific features. We will also handle the launch and after-maintenance of the development.",
-      "features": ["Smart contract writing, testing, and deployment", "Optimization of existing contracts", "Post-launch maintenance and updates"]
-    }
-    ,
+      "features": [
+        "Smart contract writing, testing, and deployment",
+        "Optimization of existing contracts",
+        "Post-launch maintenance and updates"
+      ]
+    },
     {
       "title": "Gaming App Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We help you leverage our dApp game development expertise to step into the domain of web3 gaming. Our gaming app development services include the use of AR and VR alongside spatial computing technologies for creating immersive games. We also utilise 3D creation tools and techniques for creating engaging and interactive gaming apps with support for play-to-earn and play-to-own models.",
-      "features": ["Augmented Reality (AR) and Virtual Reality (VR) integration", "3D creation tools and play-to-earn models", "Customizable gaming mechanics and engaging visuals"]
+      "features": [
+        "Augmented Reality (AR) and Virtual Reality (VR) integration",
+        "3D creation tools and play-to-earn models",
+        "Customizable gaming mechanics and engaging visuals"
+      ]
     },
     {
       "title": "dApp Maintenance",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our relationship with clients does not end with the delivery of dApp development solutions according to their requirements. We also support our clients after product delivery with end-to-end maintenance services. You can capitalise on our dApp maintenance services to ensure that your dApp works seamlessly in all scenarios without any complications. We will be available 24/7 to offer maintenance support.",
-      "features": ["24/7 support and troubleshooting", "Seamless updates and bug fixes", "Ensuring uninterrupted operation in various scenarios"]
+      "features": [
+        "24/7 support and troubleshooting",
+        "Seamless updates and bug fixes",
+        "Ensuring uninterrupted operation in various scenarios"
+      ]
     },
     {
       "title": "dApp Upgrade Services",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We also provide dApp upgrade services that have been tailored to help you ensure that your dApps are up-to-date with the latest features. Our seamless upgrades are essential for ensuring minimal downtime for your dApps alongside extracting maximum performance from the dApp. We will conduct timely upgrades to ensure that your dApp stays on top in a rapidly evolving market.",
-      "features": ["Implement the latest features and functionalities", "Ensure minimal downtime during upgrades", "Optimize performance and user experience"]
+      "features": [
+        "Implement the latest features and functionalities",
+        "Ensure minimal downtime during upgrades",
+        "Optimize performance and user experience"
+      ]
     },
-
     {
       "title": "dApp Porting",
       "subtitle": "All Service And Solutions At One Place",
       "description": "You can rely on our decentralized application development services for porting your existing dApps into different blockchains. It helps you in exploring new markets and reaching new audiences. Our team of dApp development experts can use their experience working with different blockchain platforms and advanced tools for porting dApps to new environments.",
-      "features": ["Explore new markets", "Reach a broader audience", "Leverage advanced tools for seamless porting"]
+      "features": [
+        "Explore new markets",
+        "Reach a broader audience",
+        "Leverage advanced tools for seamless porting"
+      ]
     }
-  
   ],
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Tools & Technologies We Use for Scalable dApp Solutions"
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Ethereum Geth",
       "desc": "Our blockchain dApp development services utilise Geth for launching Ethereum nodes, transferring funds between addresses and exploring block history. It also helps in mining Ether and creating contracts."
@@ -166,7 +207,7 @@
       "description": "At Comfygen, we create innovative dApps that enhance the entertainment sector by offering secure digital rights management, content monetization, and real-time fan engagement. By integrating blockchain, we help reshape the way content is consumed and creators are rewarded."
     }
   ],
-  "FutureDriven" :[
+  "FutureDriven": [
     {
       "title": "Dedicated Team of Experts",
       "desc": "You can rely on a dedicated team of experts completely devoted to your dApp development project for high-quality and customised solutions."
@@ -179,9 +220,7 @@
       "title": "Project-based Model",
       "desc": "You could choose our project-based model for achieving specific objectives of the dApp development project with advantages of seamless collaboration."
     }
-   
   ],
-
   "pageData": {
     "title": "Reasons to Choose Comfygen as Your Leading dApp Development Company",
     "description": "Comfygen is a leading dApp development company, offering innovative, secure, and scalable decentralized applications tailored to your business needs. Our expert team combines blockchain expertise with a customer-first approach to bring your ideas to life. With a proven track record across various industries, we ensure efficient and transparent development, helping your business succeed in the decentralized world.",
@@ -221,11 +260,8 @@
         "title": "Consistent Support",
         "description": "We are a reliable partner for accessing custom dApp development services with the assurance of responsive support mechanisms. Our support team is always available to answer your questions alongside serving technical assistance for your dApps."
       }
-    
-    
     ]
   },
-
   "Modus": {
     "title": "We Build a Varying Range of Applications Using Substrate Blockchain Technology!",
     "decs": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it:"

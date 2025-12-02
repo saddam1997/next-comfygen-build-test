@@ -7,20 +7,76 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractdev.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
 
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoosee = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
 
 
 const Process = [

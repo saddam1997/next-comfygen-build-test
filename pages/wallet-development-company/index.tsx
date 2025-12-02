@@ -1,38 +1,88 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
+import { IconWallet } from "@tabler/icons-react";
+import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
+
+
+import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import { IconWallet} from "@tabler/icons-react";
 
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import ClientTestimonials from "../components/ClientTestimonials";
-
-import { IconCash, IconDeviceMobile,IconLayoutDashboard, IconMessageCircle,IconUsers } from "@tabler/icons-react";
-import AboutSectionTwo from "./components/AboutSectionTwo";
-import Features from "./components/Features";
-import Wallets from "./components/Wallets";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const CardFeatures = dynamic(
+  () => import("../Newcomponet/comman/CardFeatures"),
+  { loading: loader, ssr: true }
+);
+
+const CardWallets = dynamic(
+  () => import("../Newcomponet/comman/CardWallets"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 
 
 const technologyData = [
@@ -123,7 +173,7 @@ const testimonialData = [
     title: "Spain",
   },
 ];
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const slider: any = useRef();
   const next = () => {
@@ -417,28 +467,28 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Best Wallet development company"
-            ptag="Comfygen is the best wallet development company that develops safe,  secure, scalable, and user-friendly e-wallets and crypto wallets. Our wallet development solution helps businesses and their customers manage digital transactions. Whether you want to develop a mobile e-wallet for everyday payments, a crypto wallet for secure asset storage and trading, or an enterprise-level wallet for large-scale financial transactions, our wallets are designed based on your business goal. From startups to global brands, we deliver wallet development services that keep you ahead in the digital economy."
-            ptag1=""
-            li="Multi-layer authentication with advanced encryption"
-            li1="Wallet development for mobile, web, and enterprise systems"
-            li2="Customized wallet development solutions aligned with business goals"
-            li3="Scalable architecture designed to grow with your business"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Best Wallet development company"
+          ptag="Comfygen is the best wallet development company that develops safe,  secure, scalable, and user-friendly e-wallets and crypto wallets. Our wallet development solution helps businesses and their customers manage digital transactions. Whether you want to develop a mobile e-wallet for everyday payments, a crypto wallet for secure asset storage and trading, or an enterprise-level wallet for large-scale financial transactions, our wallets are designed based on your business goal. From startups to global brands, we deliver wallet development services that keep you ahead in the digital economy."
+          ptag1=""
+          li="Multi-layer authentication with advanced encryption"
+          li1="Wallet development for mobile, web, and enterprise systems"
+          li2="Customized wallet development solutions aligned with business goals"
+          li3="Scalable architecture designed to grow with your business"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
+        />
+
         <AboutSection
           heading="What is Wallet Development?"
           description1="Wallet development is the process of creating digital wallets that allow users to securely store, send, receive, and manage money, loyalty points, or digital assets. An e-wallet can be a simple mobile app for peer-to-peer payments and everyday purchases, while a crypto wallet can be built for holding, trading, and safeguarding digital currencies. On the enterprise side, wallets can be designed to process millions of transactions daily with advanced compliance and security features."
@@ -456,24 +506,35 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <AboutSectionTwo
+        <InfoSection
           heading="How Comfygen Defines Wallet Development"
           description1="At Comfygen, wallet development is not limited only on coding. We focus on developing the best e-wallets and crypto wallets that help businesses to gain customer trust by providing top features. Every wallet we deliver is built on three key principles:"
           description2="Security at the Core – Multi-layer encryption, authentication, and fraud prevention."
           description3="User-Centric Design – Simple, intuitive interfaces that work for both everyday users and advanced traders."
-          description4="Scalable Architecture – Flexible builds that adapt as your customer base and transaction volume grow."
+          dec="Scalable Architecture – Flexible builds that adapt as your customer base and transaction volume grow."
           points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-about.webp"
           link="/about-us"
           linkText="Explore More"
+          imagePosition="right"
         />
 
-        <Features />
+
+        <CardFeatures
+          heading="Our End-to-End Wallet Development Services"
+          description="Comfygen specializes in providing end-to-end wallet development solutions that cover both crypto wallets and e-wallets. From startups and enterprises to banks, fintechs, and cryptocurrency exchanges, we design, develop, and deploy wallets tailored to your business needs, industry requirements, and future growth. Whether you need a custom-built wallet or a ready-to-launch <a href='https://www.comfygen.com/white-label-cryptocurrency-wallet-development' class='underline font-semibold'>white-label wallet development</a> solution, we ensure top-notch security, scalability, and user experience."
+          featuresData={JSON_DATA.featuresData}
+          grid="2"
+        />
 
 
-        <Wallets />
+        <CardWallets
+          heading="Types of Wallets We Develop"
+          description="Comfygen, Best wallet development company, specializes in creating digital, crypto, and next-generation wallets to cater to businesses, enterprises, and individual users. Our wallet development solutions combine security, usability, and advanced features to help you manage digital assets efficiently and safely."
+          featuresData={JSON_DATA.featuresData2}
+          grid="4"
+        />
 
-        {/* <NewPanel /> */}
 
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
@@ -531,15 +592,13 @@ export default function Ecommerce(props) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Portfolio of  Wallet Development Services"
             description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
           />
         </section>
 
-
-        <ContactFromCenter />
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -566,10 +625,6 @@ export default function Ecommerce(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Cryptocurrency Wallet Development"
-        />
 
         <HireDeveloper
           heading="Hire Wallet Developers"
@@ -591,6 +646,11 @@ export default function Ecommerce(props) {
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
+                <Faq
+          faqData={JSON_DATA.Frequently}
+          title=" Cryptocurrency Wallet Development"
+        />
+
       </div>
     </>
   );

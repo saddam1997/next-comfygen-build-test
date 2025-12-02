@@ -1,46 +1,105 @@
 import React, { useState } from "react";
-
 import Head from "next/head";
-
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptolaunchpaddevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
 
-import {
-  IconAdjustmentsAlt,
-  IconCreditCard,
-  IconDashboard,
-  IconFingerprint,
-  IconNavigation,
-  IconNetwork,
-} from "@tabler/icons-react";
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionsFeature = dynamic(() => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+);
+
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+import LazyLoad from "react-lazy-load";
 import PortfolioSec from "../componentsnew/PortfolioSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ClientTestimonials from "../components/ClientTestimonials";
+
+
 import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
 import ProcessSection from "../componentsnew/ProcessSection";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -81,38 +140,6 @@ const Process = [
 ];
 
 
-const technologyData = [
-  {
-    img: <IconFingerprint stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Layer Security Architecture",
-    desc: "Our advanced security protocols include multi-signature wallets, two-factor authentication (2FA), and encrypted data storage, ensuring a robust defense against hacking attempts and data breaches.",
-  },
-  {
-    img: <IconAdjustmentsAlt stroke={1.5} className="w-12 h-12" />,
-    title: "Advanced Trading Tools",
-    desc: "Integrate advanced tools like stop loss orders and automated trading bots, empowering users to manage their trades efficiently and reduce risks.",
-  },
-  {
-    img: <IconCreditCard stroke={1.5} className="w-12 h-12" />,
-    title: "Over-the-Counter (OTC) Trading",
-    desc: "Offer users the ability to trade large quantities of cryptocurrency securely and privately, outside of public exchange order books, providing greater control over large transactions.",
-  },
-  {
-    img: <IconDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "Powerful Trading Engine",
-    desc: "Our high-performance trade engine ensures smooth, fast, and secure execution of trades, even during peak traffic times, allowing users to trade without interruptions.",
-  },
-  {
-    img: <IconNetwork stroke={1.5} className="w-12 h-12" />,
-    title: "Staking and Yield Farming",
-    desc: "Enable users to stake their assets and participate in yield farming opportunities, adding additional investment options and incentives for platform engagement.",
-  },
-  {
-    img: <IconNavigation stroke={1.5} className="w-12 h-12" />,
-    title: "Seamless Payment Gateway Integration",
-    desc: "Smoothly integrate multiple payment methods, from credit cards to bank transfers and cryptocurrencies, ensuring seamless deposits and withdrawals.",
-  },
-];
 const testimonialData = [
   {
     text: "Comfygen’s crypto launchpad development services helped us create a secure, reliable, and user-friendly platform. Their team’s expertise and commitment to delivering a tailored solution were vital to our success. Highly recommended!",
@@ -156,39 +183,7 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-        head: "Centralized Crypto Exchange Platform Development",
-        name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/centralized-crypto-exchange-development",
-      },
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-        head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-        name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/p2p-crypto-exchange-development",
-      },
-    ],
-  };
+
 
   const jsonLdData = [
     {
@@ -211,30 +206,30 @@ export default function Ecommerce(props) {
     },
     {
       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Top Crypto Launchpad Development Company | Custom & White-Label Solutions",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today.!",
-  "url": "https://www.comfygen.com/crypto-launchpad-development",
-  "mainEntityOfPage": "https://www.comfygen.com/crypto-launchpad-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "Crypto Launchpad Development Company",
-    "Crypto Launchpad Development",
-    "Launchpad Development Services",
-    "Crypto Launchpad Solutions",
-    "White Label Crypto Launchpad",
-    "Custom Launchpad Development"
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen", 
-    "https://www.linkedin.com/company/comfygen-private-limited" 
-  ]
+      "@type": "Service",
+      "name": "Top Crypto Launchpad Development Company | Custom & White-Label Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today.!",
+      "url": "https://www.comfygen.com/crypto-launchpad-development",
+      "mainEntityOfPage": "https://www.comfygen.com/crypto-launchpad-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Crypto Launchpad Development Company",
+        "Crypto Launchpad Development",
+        "Launchpad Development Services",
+        "Crypto Launchpad Solutions",
+        "White Label Crypto Launchpad",
+        "Custom Launchpad Development"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
 
     },
     {
@@ -303,15 +298,18 @@ export default function Ecommerce(props) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Top Crypto Launchpad Development Company | Custom & White-Label Solutions",
-      "image":"https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development-company-about.webp",
-      "description":"Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today.!",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Top Crypto Launchpad Development Company | Custom & White-Label Solutions",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development-company-about.webp",
+      "description": "Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today.!",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
 
     },
@@ -407,121 +405,118 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-      <title>
-       Crypto Launchpad Development Company | Comfygen
-      </title>
-      <meta
-        name="description"
-        content="Comfygen provides crypto launchpad development services with token sale management, smart contract integration, KYC/AML compliance, and investor dashboards."
-      />
+        <title>
+          Crypto Launchpad Development Company | Comfygen
+        </title>
+        <meta
+          name="description"
+          content="Comfygen provides crypto launchpad development services with token sale management, smart contract integration, KYC/AML compliance, and investor dashboards."
+        />
 
-      <meta name="keywords" content="Crypto Launchpad Development Company, Crypto Launchpad Development, Launchpad Development Services, Crypto Launchpad Solutions, White Label Crypto Launchpad, Custom Launchpad Development"/>
+        <meta name="keywords" content="Crypto Launchpad Development Company, Crypto Launchpad Development, Launchpad Development Services, Crypto Launchpad Solutions, White Label Crypto Launchpad, Custom Launchpad Development" />
 
-      <link
-        rel="canonical"
-        href="https://www.comfygen.com/crypto-launchpad-development"
-      />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/crypto-launchpad-development"
+        />
 
 
-      {/* Open Graph Tags */}
-      <meta
-        property="og:title"
-        content="Top Crypto Launchpad Development Company"
-      />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content="https://www.comfygen.com/crypto-launchpad-development"
-      />
-      <meta
-        property="og:image"
-        content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp"
-      />
-      <meta property="og:site_name" content="Comfygen Private Limited" />
-      <meta
-        property="og:description"
-        content="Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today."
-      />
-      <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp" />
-      <meta property="og:image:alt" content="Top Crypto Launchpad Development Company" />
-      <meta name="fb:page_id" content="110909321596135" />
-      <meta name="og:email" content="sales@comfygen.com" />
-      <meta name="og:phone_number" content="+91-958-786-7258" />
+        {/* Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="Top Crypto Launchpad Development Company"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/crypto-launchpad-development"
+        />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp"
+        />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta
+          property="og:description"
+          content="Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today."
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp" />
+        <meta property="og:image:alt" content="Top Crypto Launchpad Development Company" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="og:email" content="sales@comfygen.com" />
+        <meta name="og:phone_number" content="+91-958-786-7258" />
 
-      {/* Twitter Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Top Crypto Launchpad Development Company | Custom & White-Label Solutions"
-      />
-      <meta
-        name="twitter:description"
-        content="Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today."
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp"
-      />
-      <meta name="twitter:site" content="@comfygentech" />
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Top Crypto Launchpad Development Company | Custom & White-Label Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML. Build your secure, scalable launchpad today."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development.webp"
+        />
+        <meta name="twitter:site" content="@comfygentech" />
 
-      {/* Structured Data Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Crypto Launchpad Development",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "FinanceApplication",
-            url: "https://www.comfygen.com/crypto-launchpad-development",
-            description:
-              "Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML.",
-            author: {
-              "@type": "Organization",
-              name: "Comfygen Private Limited",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen Private Limited",
-              url: "https://www.comfygen.com",
-            },
-            image:
-              "https://www.comfygen.com/comfygen-images/crypto-launchpad-development/og-crypto-launchpad-development-company.webp",
-          }),
-        }}
-      />
+        {/* Structured Data Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Crypto Launchpad Development",
+              operatingSystem: "Web, Android, iOS",
+              applicationCategory: "FinanceApplication",
+              url: "https://www.comfygen.com/crypto-launchpad-development",
+              description:
+                "Comfygen offers expert Crypto Launchpad development services, including custom & white-label solutions, multi-chain support, smart contract integration, token creation, and KYC/AML.",
+              author: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited",
+                url: "https://www.comfygen.com",
+              },
+              image:
+                "https://www.comfygen.com/comfygen-images/crypto-launchpad-development/og-crypto-launchpad-development-company.webp",
+            }),
+          }}
+        />
 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-    </Head>
+      </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[10px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development-company-hero1.webp')]">
-          <HeroSectionForAllPages
-            heading="Crypto Launchpad Development Company"
-            ptag="Comfygen is a top crypto launchpad development company, helping startups and enterprises bring new blockchain projects to market with speed and security. Our Crypto Launchpad Development solutions provide token sale management, smart contract integration, investor dashboards, and KYC/AML compliance. Fully customizable and scalable, our platforms enable seamless fundraising, staking, and community engagement. "
-            li="Token sale management & smart contract integration"
-            li1="KYC/AML compliance for secure fundraising"
-            li2="Investor dashboards & community engagement tools"
-            li3="Scalable, customizable platforms with 24/7 support"
-           
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <Header />
+      <div className="overflow-hidden lg:pt-[100px]">
+        <HeroSectionForAllPages
+          heading="Crypto Launchpad Development Company"
+          ptag="Comfygen is a top crypto launchpad development company, helping startups and enterprises bring new blockchain projects to market with speed and security. Our Crypto Launchpad Development solutions provide token sale management, smart contract integration, investor dashboards, and KYC/AML compliance. Fully customizable and scalable, our platforms enable seamless fundraising, staking, and community engagement. "
+          li="Token sale management & smart contract integration"
+          li1="KYC/AML compliance for secure fundraising"
+          li2="Investor dashboards & community engagement tools"
+          li3="Scalable, customizable platforms with 24/7 support"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/crypto-launchpad-development/crypto-launchpad-development-company-hero1.webp"
+        />
+
         <NewSection NewSection={JSON_DATA.NewSections} />
         <AboutSection
           title="About Company"
@@ -540,19 +535,30 @@ export default function Ecommerce(props) {
           ]}
         />
 
-         <ServicesSection 
-          heading="Our Crypto Launchpad Development Services" 
-          subtitle="At Comfygen, we offer a range of top-tier services to develop a robust and secure crypto launchpad for your project. These services are designed to meet the needs of blockchain startups and enterprises looking to raise funds and create a seamless platform for their community. Here's a breakdown of our most relevant services:" 
-          servicesData={JSON_DATA.servicesData}   />
 
-          <SolutionsFeature title="Top Features of Our Crypto Launchpad development Solutions" 
-          subtitle="Our Crypto Launchpad Solutions offer secure, scalable, and seamless fundraising with key features like multi-chain compatibility, real-time analytics, and smart contract automation. Built-in KYC/AML compliance ensures regulatory adherence, providing a trustworthy platform for successful crypto projects." data={JSON_DATA.servicesData2}  />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+               Our Crypto Launchpad Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we offer a range of top-tier services to develop a robust and secure crypto launchpad for your project. These services are designed to meet the needs of blockchain startups and enterprises looking to raise funds and create a seamless platform for their community. Here's a breakdown of our most relevant services
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
 
-          <SolutionsFeature title="Types of Crypto Launchpads development" subtitle="We specialize in developing a wide range of crypto launchpads, each tailored to suit the unique fundraising needs of your project. Our expertise spans various launchpad models, ensuring that your crypto venture receives the right platform for a successful token launch. Here's an overview of the types of launchpads we develop:" data={JSON_DATA.LeadingSoftware}  />
+        <SolutionsFeature title="Top Features of Our Crypto Launchpad development Solutions"
+          subtitle="Our Crypto Launchpad Solutions offer secure, scalable, and seamless fundraising with key features like multi-chain compatibility, real-time analytics, and smart contract automation. Built-in KYC/AML compliance ensures regulatory adherence, providing a trustworthy platform for successful crypto projects." data={JSON_DATA.servicesData2} />
 
 
-        <ContactFromCenter />
+        <SolutionsFeature title="Types of Crypto Launchpads development" subtitle="We specialize in developing a wide range of crypto launchpads, each tailored to suit the unique fundraising needs of your project. Our expertise spans various launchpad models, ensuring that your crypto venture receives the right platform for a successful token launch. Here's an overview of the types of launchpads we develop:" data={JSON_DATA.LeadingSoftware} />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -562,32 +568,42 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Crypto Launchpad Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Our crypto launchpad development process is designed to deliver a scalable, secure, and feature-rich platform tailored to your fundraising goals. Here's how we do it
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Crypto Launchpad Development Portfolio"
+            description="Take a look at our diverse portfolio of custom crypto launchpad solutions built for startups, DeFi platforms, and blockchain enterprises worldwide. From multi-chain launchpads to white-label IDO platforms, we’ve successfully delivered scalable, secure, and user-centric launchpads tailored to unique project goals."
+          />
+        </section>
 
 
-        <ProcessSection 
-          title="Crypto Launchpad Development Process" 
-          description="Our crypto launchpad development process is designed to deliver a scalable, secure, and feature-rich platform tailored to your fundraising goals. Here's how we do it:" 
-          processSlides={Process} />
-
-
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Crypto Launchpad Development Portfolio"
-          description="Take a look at our diverse portfolio of custom crypto launchpad solutions built for startups, DeFi platforms, and blockchain enterprises worldwide. From multi-chain launchpads to white-label IDO platforms, we’ve successfully delivered scalable, secure, and user-centric launchpads tailored to unique project goals."
-        />
         <TechStack
           title="Our Crypto launchpad Development Technology Stack"
           description=""
         />
 
-          <WhyChoose
-            title={JSON_DATA.pageData.title}
-            description={JSON_DATA.pageData.description}
-            mainCardData={JSON_DATA.pageData.mainCardData}
-            gridData={JSON_DATA.pageData.gridData}
-          />
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
 
-        
+
         <HireDeveloper
           heading="Hire Dedicated Crypto Launchpad Developers"
           text="Our team of expert crypto launchpad developers is dedicated to creating custom, secure, and scalable blockchain solutions. We bring deep industry knowledge and technical proficiency to help you launch your project successfully, with continuous support throughout the process."
@@ -604,12 +620,12 @@ export default function Ecommerce(props) {
             "Smart Contract Development",
           ]}
         />
-       <ClientTestimonials
+        <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
 
-       
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title="  Crypto Launchpad Development"

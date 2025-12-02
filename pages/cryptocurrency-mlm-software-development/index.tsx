@@ -3,16 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptomlmsoftware.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconUsers,
   IconDeviceMobile,
@@ -29,18 +19,71 @@ import {
   IconCurrencyBitcoin,
   IconNetwork,
 } from "@tabler/icons-react";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import ClientTestimonials from "../components/ClientTestimonials";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 
 const testimonialData = [
   {
@@ -169,54 +212,7 @@ export default function Ecommerce(props) {
 
 
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/decentralised-mlm.webp",
-        head: "Decentralized MLM",
-        name: "Join Decentralized MLM Web – Where Blockchain Ensures Transparency, Rewards Drive Growth, and Community Powers Success. Experience the Future of Network Marketing, Reinvented.",
-        num: "1",
-        buttonLink: "https://www.comfygen.com/contact-us",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-        head: " Great Wallet Application",
-        name: "Great Wallet is a cutting-edge iOS wallet engineered for seamless integration with the Great Crypto Network (GREAT Blockchain). As a key component of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain framework is designed to revolutionize global economic governance and operations in the era of the fourth industrial revolution.",
-        num: "2",
-        buttonLink: "/portfolio/great-wallet",
 
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-        head: "M7Coin Web Wallet",
-        name: "M7Coin Web Wallet: Revolutionizing cryptocurrency management with a seamless, secure, and intuitive platform. Effortlessly store, send, and receive M7Coins while navigating the ever-evolving digital asset landscape with confidence and ease.",
-        num: "2",
-        buttonLink: "/portfolio/m7-coin",
-
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
 
 
 
@@ -539,27 +535,27 @@ export default function Ecommerce(props) {
           }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[50px]">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/cryptocurrency-mlm-software-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="CryptoCurrency MLM software development Company"
-            ptag="Comfygen is a premier CryptoCurrency MLM software development company, delivering scalable, secure, and fully customizable CryptoCurrency multi-level marketing solutions powered by blockchain technology. Our Blockchain development expert team develops software for token-based MLM platforms, smart contract integration, and automated commission management to help businesses maximize ROI. Whether you’re a startup or an established enterprise, our CryptoCurrency MLM software development solutions ensure transparency, security, and efficiency in crypto MLM operations."
-            li="Custom Crypto MLM Software Development"
-            li1="Blockchain-Powered Smart Contract Integration"
-            li2="Automated Multi-Level Commission Tracking"
-            li3="Secure, Scalable & Transparent Platform"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="CryptoCurrency MLM software development Company"
+          ptag="Comfygen is a premier CryptoCurrency MLM software development company, delivering scalable, secure, and fully customizable CryptoCurrency multi-level marketing solutions powered by blockchain technology. Our Blockchain development expert team develops software for token-based MLM platforms, smart contract integration, and automated commission management to help businesses maximize ROI. Whether you’re a startup or an established enterprise, our CryptoCurrency MLM software development solutions ensure transparency, security, and efficiency in crypto MLM operations."
+          li="Custom Crypto MLM Software Development"
+          li1="Blockchain-Powered Smart Contract Integration"
+          li2="Automated Multi-Level Commission Tracking"
+          li3="Secure, Scalable & Transparent Platform"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/cryptocurrency-mlm-software-dev-hero-img.webp"
+        />
+
 
         <AboutSection
           title="About Company"
@@ -571,7 +567,6 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -599,11 +594,17 @@ export default function Ecommerce(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Cryptocurrency MLM Based Portfolio"
-          description="Powering innovation and achievement through inspired design and development. A reflection of our dedication to creativity and excellence."
-        />
+
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Cryptocurrency MLM Based Portfolio"
+            description="Powering innovation and achievement through inspired design and development. A reflection of our dedication to creativity and excellence."
+          />
+        </section>
+
         <SolutionSec
           heading="Benefits of Partnering with a Cryptocurrency MLM Software Development Company"
           subheading="CryptoCurrency MLM software development Company ensures secure, scalable, and blockchain-optimized platforms. Key benefits include automated commission tracking, transparent transactions with smart contracts, fast deployment, and expert support for continuous updates. This approach helps startups and enterprises build reliable, feature-rich MLM platforms while maximizing ROI and maintaining competitiveness in the evolving digital currency ecosystem."
@@ -683,15 +684,6 @@ export default function Ecommerce(props) {
           description="To build secure, scalable, and high-performing crypto MLM platforms, we combine blockchain frameworks, programming languages, and modern databases."
         />
 
-        {/* <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        /> */}
-
         <HireDeveloper
           heading="Hire Crypto MLM software developers for your business."
           text="Partnering with Comfygen to develop Cryptocurrency-based MLM Software. Our team of specialized developers focused on building advanced, secure, and scalable Crypto-based MLM software. We provide the best Cryptocurrency MLM software development services."
@@ -711,7 +703,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Crypto MLM Software Development Services"
         />
-       
+
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"

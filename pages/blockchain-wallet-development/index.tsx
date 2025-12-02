@@ -13,7 +13,7 @@ import Faq from "../componentsnew/Faq";
 import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
-import BlockChainTech from "../enterprise-blockchain-development/components/BlockChainTech";
+import BlockChainTech from "../enterprise-blockchain-development/11111components/BlockChainTech";
 import SolutionSec from "../components/SolutionSec";
 import CallToAction from "../components/CallToAction";
 

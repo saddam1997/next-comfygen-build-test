@@ -2,30 +2,82 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/livelinecricketmobile.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
-import { IconBulb, IconCalendarEvent, IconHistory, IconLivePhoto, IconNews, IconTrendingUp, } from '@tabler/icons-react';
-import PortfolioSec from "../components/PortfolioSec";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import ProcessSec from "../componentsnew/ProcessSec";
-import TechStack from "../componentsnew/TechStack";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Features from "../Newcomponet/SectionCompoent/Features";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+import { IconBulb, IconCalendarEvent, IconHistory, IconLivePhoto, IconNews, IconTrendingUp, } from '@tabler/icons-react';
+
 
 const technologyData = [
 
@@ -67,26 +119,7 @@ const technologyData = [
 
 ];
 
-const Portfolio = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/cricket-live-line-app-web-development.webp",
-      head: "Cricket Live Line App & Web Development",
-      name: "Live lines, public polls, live commentary, and many other features enhance the thrill of the match. Performance, precision, and perseverance are the keys to success in cricket.",
-      name1: "With features such as",
-      listItems: ["Real-time live line updates,", "Live commentary,", "Multiple sports live lines,", "Expert polls, public polls, and live chat,"],
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
 
-  ],
-};
 
 const Process = [
   {
@@ -396,10 +429,10 @@ export default function Ecommerce(props) {
 
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[30px]">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
         {/* hero section */}
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/live-line-cricket-mobile-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
@@ -439,26 +472,32 @@ Live Line Cricket Mobile App Development Service because they deliver what fans 
             </div>
           </div>
         </section>
-        <InfoSectionRight
+        <InfoSection
           heading="Develop the Most Downloaded Mobile Cricket score app"
           description1="If you want your cricket score app to rise to the top, focus on what fans care about most: speed, accuracy, and excitement. Our IPL live line mobile app development service gives users the same rush they feel inside a stadium, but right on their phones."
           description2="With real-time score updates, ball-by-ball commentary, multiple sport live lines, expert opinions, public polls, and live chat, fans stay connected to every moment. These features keep users coming back, boost engagement during big tournaments, and help your app become one of the most downloaded cricket platforms worldwide."
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/image/develop-the-most-mobile-cricket-app.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
 
 
-        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
-        <ContactFromCenter />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio"
+            description=""
+          />
+        </section>
 
 
-        {/* <CricketCom /> */}
-        <PortfolioSec
-          techData={Portfolio}
-          heading="Our Portfolio"
-          description=""
-        />
+
+
 
         <CallToAction
           heading="Catch Every Local Cricket Match Live!"
@@ -484,11 +523,20 @@ Live Line Cricket Mobile App Development Service because they deliver what fans 
           techData={technologyData}
         />
 
-        <ProcessSec
-          title="Our End-to-End Live Line Cricket Mobile App Process"
-          description="At Comfygen, we follow a structured process to build cricket live line and live streaming apps that are fast, reliable, and feature-rich. Every step is designed to ensure high performance, user engagement, and scalability."
-          processSlides={Process}
-        />
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Live Line Cricket Mobile App Process</h2>
+              <p className="text-base font-normal mt-2">
+               At Comfygen, we follow a structured process to build cricket live line and live streaming apps that are fast, reliable, and feature-rich. Every step is designed to ensure high performance, user engagement, and scalability.
+              </p>
+            </div>
+
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
         <TechStack
           title="Tech Stack We use to develop a cricket live line App"
           description="We use a modern, robust technology stack to build cricket live line App and live streaming apps that are fast, scalable, and reliable. Our <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>App Development</a> team selects the right tools to ensure seamless performance and smooth user experiences across all devices."

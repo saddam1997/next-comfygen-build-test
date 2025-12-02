@@ -2,33 +2,80 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";
-import Providers from "./components/Providers";
-import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../../components/AboutSection";
-import ServicesSec from "../../components/ServicesSec";
 import { IconAdjustments, IconBook, IconBookmark, IconCamera, IconClipboardCheck, IconFileText, IconMessageCircle, IconNotification, IconUsers, } from '@tabler/icons-react';
 import { IconChartBar, } from '@tabler/icons-react';
-import SolutionSec from "../../components/SolutionSec";
-import TechStack from "../../components/TechStack";
-import HireDeveloper from "../../components/HireDeveloper";
-import InfoSectionRight from "../../components/InfoSectionRight";
-import Faq from "../../components/Faq";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import HireDeveloperSec from "../../components/HireDeveloperSec";
-import ProcessSec from "../../components/ProcessSec";
-import ModelsSec from "../../components/ModelsSec";
-import CallToAction from "../../components/CallToAction";
-import ContactFromCenter from "../../components/ContactFromCenter";
 
-const Header = dynamic(() => import("../../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
 
 
 
@@ -118,7 +165,7 @@ const Process = [
 ];
 
 
-export default function News(props) {
+export default function News(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -269,27 +316,25 @@ export default function News(props) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+        <Header />
       </div>
-      <div className="overflow-hidden lg:pt-[30px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/magazine-app-development-company-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Top Magazine App Development Company in India and USA"
-            subhead="Transform Your Magazine into a Digital Powerhouse"
-            ptag="Enhance reader engagement with custom magazine app development services from Comfygen. As the best magazine app development company in India and the USA, we deliver feature-rich, interactive, and scalable solutions tailored for publishers. Our expert app developer magazine crafts innovative apps that ensure a seamless reading experience, boost global reach, and maximize content accessibility across digital platforms."
-            li="Engaging & Interactive Magazine Apps"
-            li1="Global Reader Reach & Monetization Solutions"
-            li2="Custom, Scalable, and Trend-Driven Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <div className="overflow-hidden lg:pt-[100px]">
+        <HeroSectionForAllPages
+          heading="Top Magazine App Development Company in India and USA"
+          subhead="Transform Your Magazine into a Digital Powerhouse"
+          ptag="Enhance reader engagement with custom magazine app development services from Comfygen. As the best magazine app development company in India and the USA, we deliver feature-rich, interactive, and scalable solutions tailored for publishers. Our expert app developer magazine crafts innovative apps that ensure a seamless reading experience, boost global reach, and maximize content accessibility across digital platforms."
+          li="Engaging & Interactive Magazine Apps"
+          li1="Global Reader Reach & Monetization Solutions"
+          li2="Custom, Scalable, and Trend-Driven Development"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/magazine-app-development-company-hero-img.webp"
+        />
+
         <AboutSection
           heading="Reputed Custom Magazine App Development Company In India & USA"
           description1="At Comfygen, our reputable magazine app development team offers quality and state-of-the-art digital solutions to meet the changing needs of publishers and readers. Our magazine app developers are skilled in transforming traditional print magazines into engaging digital experiences with our comprehensive app development approach. Our magazine app development service focuses on user-centric design and cutting-edge technology to create magazine apps. Moreover, we collaborate closely with our clients in order to understand their unique requirements. Our app developer magazine team excels in integrating interactive features such as multimedia content, social sharing capabilities, and personalized reader experiences to maximize user engagement and retention."
@@ -321,17 +366,17 @@ export default function News(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <HireDeveloperSec
+        <HireDeveloper
           heading="Business Sector We Serve Our Magazine App Development Solutions!"
-          dec="We serve a diverse range of business sectors with our magazine app development solutions. It is valuable across various industrial sectors where content distribution, engagement, and audience reach are crucial. Industries that publish online content and media benefit from digital platforms. We serve the education sector, which needs magazine apps for academic journals and research publications. Our service is also crucial for healthcare sectors who need apps for medical journals and patient education materials."
-          dec1="We even serve corporate sectors that want to publish internal newsletters, training materials, and industry insights. The magazine app is also beneficial for travel and lifestyle sectors, as it allows them to use apps for destination guides and lifestyle magazines. Overall, we aim to enhance communication, knowledge sharing, and audience engagement from our magazine app development service in order to boost reach and engagement."
+          text="We serve a diverse range of business sectors with our magazine app development solutions. It is valuable across various industrial sectors where content distribution, engagement, and audience reach are crucial. Industries that publish online content and media benefit from digital platforms. We serve the education sector, which needs magazine apps for academic journals and research publications. Our service is also crucial for healthcare sectors who need apps for medical journals and patient education materials."
+          text1="We even serve corporate sectors that want to publish internal newsletters, training materials, and industry insights. The magazine app is also beneficial for travel and lifestyle sectors, as it allows them to use apps for destination guides and lifestyle magazines. Overall, we aim to enhance communication, knowledge sharing, and audience engagement from our magazine app development service in order to boost reach and engagement."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
 
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className=" lg:py-16 py-10  bg-gradient-to-r from-[#272868] to-[#5556D1] space-y-6 ">
           <div className=" mx-auto 2xl:w-10/12 lg:w-11/12 lg:px-0 px-6 w-full">
             <div className="flex flex-col justify-center text-center ">
@@ -411,9 +456,18 @@ export default function News(props) {
               </div>
             </div>
           </div>
-
         </section>
-        <Providers />
+
+
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='3'
+            heading='Features You Should Look For in Magazine Apps!'
+            description='When developing Magazine Mobile App Development, we prioritize features such as interactive content for engagement, seamless navigation, offline access for convenience, personalization options to tailor content, social sharing for connectivity, and robust search functionality. Our service supports frequent updates, multimedia integration, subscription management, and analytics for a comprehensive reading and user experience.'
+            featuresData={JSON_DATA.featuresData}
+          />
+        </section>
+
         <TechStack
           title="Our Technology Stack for Magazine App Development"
           description="We use advanced technology stacks in order to build a robust magazine application that supports scalability, user engagement, and seamless content delivery. Here is an overview of the technology stack our developers are specialized in:"
@@ -481,12 +535,17 @@ export default function News(props) {
             "Trained in programming languages and advanced technologies."
           ]}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Contact Us and Get Other Information about our Magazine App Development Services"
           description1="Contact our Magazine App Development Company in India today to learn more about our development services. Get an idea about our customized solutions and the cutting-edge technologies we implement. We are here to help you develop your desired magazine app to meet your target viewer needs."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/magazine-app-development-services.svg"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
 
 

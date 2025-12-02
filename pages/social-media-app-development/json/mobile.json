@@ -101,15 +101,13 @@
         "desc": "You should choose our social media app development experts for the assurance of exceptional service quality in creating a social media app. We select every developer in our team after a comprehensive vetting process that involves evaluation of candidates on different parameters. On top of it, we also encourage continuous development of our social media app developers to help them deliver the best results for our clients."
       }
     ],
-    "consultancyHead" :[
+    "consultancyHead": [
       {
         "num": "1",
         "title": "Why Should You Invest in Social Media App Development Services?",
         "desc": "You should rely on social network app development services to achieve a strong online presence. Social media networks can help in learning about customers and analyzing their behavior and patterns for making better decisions. Learn about some of the top benefits of social media app development services for businesses."
       }
     ],
-    
-
     "Head": [
       {
         "num": "1",
@@ -154,9 +152,7 @@
         "desc": "We leverage 5G technology to enhance app performance, enabling faster loading times, smoother streaming, and a more responsive user experience"
       }
     ],
-
-
-    "consultancyData" :[
+    "consultancyData": [
       {
         "title": "Social engagement",
         "desc": "A social network app development company could help you achieve better social engagement with the target audience. Social network app development can help in refining the quality of interactions with customers and business stakeholders. Your business could use social media as a distinct platform for familiarizing with customers as an independent business."
@@ -176,59 +172,125 @@
       {
         "title": "New revenue streams",
         "desc": "The services of social application development experts can help in generating new revenue streams through social media. You can empower your social app with powerful features that offer innovative solutions to generate revenue. Social apps are no longer limited to communication between users and you can integrate new functionalities that can appeal to a larger user base."
-      }
-      ,
+      },
       {
         "title": "Customer retention",
         "desc": "One of the most notable highlights of social media app development is the value advantage of customer retention. When you offer exactly what the customers want, they are more likely to stay with your brand. For example, you can serve targeted ads, new offers, or personalized messages that contribute value to customers. The right social network development agency could help you hold the attention of your target audience and ensure that you can sustain your source of revenue."
       }
     ],
-
-
     "pageData": {
-    "title": "Why Choose Comfygen Services For Social Media App Development",
-    "description": "Comfygen stands out as a top-notch social media app development company, specializing in social messaging app development and various types of social networking apps. Choose Comfygen for top-rated social media app development services in India that drive success.",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Optimum Outcome Focused",
-      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+      "title": "Why Choose Comfygen Services For Social Media App Development",
+      "description": "Comfygen stands out as a top-notch social media app development company, specializing in social messaging app development and various types of social networking apps. Choose Comfygen for top-rated social media app development services in India that drive success.",
+      "mainCardData": {
+        "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+        "title": "Optimum Outcome Focused",
+        "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+      },
+      "gridData": [
+        {
+          "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+          "title": "Efficient Workflow",
+          "description": "We follow a streamlined workflow, ensuring efficient social media app development that tackles business challenges with minimal complexity, delivering results that matter."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+          "title": "Expert Team of Professionals",
+          "description": "Our team of skilled social media app developers in India brings expertise and dedication to provide innovative, high-quality social networking solutions. We are committed to helping clients thrive on digital platforms."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+          "title": "Cutting-Edge Tools & Technologies",
+          "description": "We utilize the latest tools and technologies to build social media apps that enhance user experience, using advanced technologies for immersive and engaging social media app features."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+          "title": "Comprehensive Quality Assurance",
+          "description": "We prioritize comprehensive quality assurance to ensure your social media apps are free from errors and function flawlessly, providing a secure and seamless user experience."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+          "title": "Robust Security Infrastructure",
+          "description": "Comfygen adheres to the highest security standards, ensuring your social apps are built with secure infrastructure, following necessary security compliance for reliable and safe applications."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
+          "title": "Cost-Effective Engagement Models",
+          "description": "We offer flexible and cost-effective engagement models tailored to your needs and budget, delivering optimal results in social media app development without compromising quality."
+        }
+      ]
     },
-    "gridData": [
+
+
+    "portfoliodata": [
       {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Efficient Workflow",
-        "description": "We follow a streamlined workflow, ensuring efficient social media app development that tackles business challenges with minimal complexity, delivering results that matter."
+        "image": "https://www.comfygen.com/image/eangex-social-media-app-portfolio.webp",
+        "title": "EangeX A social media platform",
+        "description": "EngageX is a dynamic web application that allows users to chat, share reels, and celebrate special moments with friends and family. A platform designed for real-time interaction and seamless content sharing.",
+        "link": "/portfolio/eange-x"
       },
       {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Expert Team of Professionals",
-        "description": "Our team of skilled social media app developers in India brings expertise and dedication to provide innovative, high-quality social networking solutions. We are committed to helping clients thrive on digital platforms."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Cutting-Edge Tools & Technologies",
-        "description": "We utilize the latest tools and technologies to build social media apps that enhance user experience, using advanced technologies for immersive and engaging social media app features."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Comprehensive Quality Assurance",
-        "description": "We prioritize comprehensive quality assurance to ensure your social media apps are free from errors and function flawlessly, providing a secure and seamless user experience."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Robust Security Infrastructure",
-        "description": "Comfygen adheres to the highest security standards, ensuring your social apps are built with secure infrastructure, following necessary security compliance for reliable and safe applications."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
-        "title": "Cost-Effective Engagement Models",
-        "description": "We offer flexible and cost-effective engagement models tailored to your needs and budget, delivering optimal results in social media app development without compromising quality."
+        "image": "https://www.comfygen.com/image/fankeyz-portfolio.webp",
+        "title": "Fankeyz",
+        "description": "Fankeyz is a dynamic social media mobile app designed to foster authentic connections. Share moments, join vibrant communities, and make meaningful friendships—all in one seamless platform.",
+        "link": "#"
       }
+      
+     
+    ],
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/user-panel-social-media-app.webp",
+    "additionalDetails": [
+      { "details": "User Registration and Profile Creation", "emoji": "", "content": "" },
+      { "details": "Advanced Search & Filters", "emoji": "", "content": "" },
+      { "details": "Real-Time Chat & Messaging", "emoji": "", "content": "" },
+      { "details": "Newsfeed Updates with Like, Comment & Share Options", "emoji": "", "content": "" },
+      { "details": "Privacy Settings and Content Bookmarking", "emoji": "", "content": "" },
+      { "details": "Media Sharing (photos, videos, and files)", "emoji": "", "content": "" },
+      { "details": "Group Creation and Community Interaction", "emoji": "", "content": "" },
+      { "details": "Video & Audio Calling Features", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/social-media-app-admin-panel.webp",
+    "additionalDetails": [
+      { "details": "User Management & Role Assignments", "emoji": "", "content": "" },
+      { "details": "Content Moderation Tools", "emoji": "", "content": "" },
+      { "details": "Analytics Dashboard for Insights", "emoji": "", "content": "" },
+      { "details": "Push Notification Management", "emoji": "", "content": "" },
+      { "details": "Revenue Tracking & Subscription Handling", "emoji": "", "content": "" },
+      { "details": "Ad Campaign Management", "emoji": "", "content": "" },
+      { "details": "CMS Integration for Content Updates", "emoji": "", "content": "" },
+      { "details": "Security and Performance Monitoring", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Advanced Features",
+    "img": "https://www.comfygen.com/image/advanced-features-social-media-app.webp",
+    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "AI-Powered Personalization & Recommendations", "emoji": "", "content": "" },
+      { "details": "AR/VR Integration for Immersive Experiences", "emoji": "", "content": "" },
+      { "details": "Real-Time Updates & Notifications", "emoji": "", "content": "" },
+      { "details": "Geolocation Services for Tagging & Discovery", "emoji": "", "content": "" },
+      { "details": "Live Streaming with Interactive Features", "emoji": "", "content": "" },
+      { "details": "End-to-end encryption for Secure Messaging", "emoji": "", "content": "" },
+      { "details": "Social Media & Third-Party API Integration", "emoji": "", "content": "" },
+      { "details": "Gamification Elements for Enhanced Engagement", "emoji": "", "content": "" }
     ]
   }
+],
 
-  ,
-    "servicesData" :[
+
+    "servicesData": [
       {
         "title": "AI-Powered Social Media App Development",
         "subtitle": "",
@@ -274,8 +336,8 @@
         ]
       },
       {
-       "title": "Dating & Friendship App Development",
-       "subtitle": "",
+        "title": "Dating & Friendship App Development",
+        "subtitle": "",
         "description": "Launch engaging dating and friendship apps with AI matchmaking, real-time chat, video calls, and privacy features. Our secure social media app development solutions ensure a smooth and enjoyable user experience.",
         "features": [
           "AI-Powered Matchmaking",
@@ -283,18 +345,7 @@
           "Swipe & Like Features",
           "Profile Verification & Privacy"
         ]
-      }
-
-
-
-
-
-
-
-
-
-
-      ,
+      },
       {
         "title": "Enterprise Social Networking Apps",
         "subtitle": "",
@@ -318,8 +369,8 @@
         ]
       },
       {
-       "title": "Maintenance and Support",
-       "subtitle": "",
+        "title": "Maintenance and Support",
+        "subtitle": "",
         "description": "We provide ongoing maintenance and support to ensure your social media app remains up-to-date and performs optimally. Our best social network app development services include regular updates, bug fixes, and scaling to accommodate growing user bases. We are here to help you manage your app’s lifecycle and enhance its features over time.",
         "features": [
           "Regular Updates",
@@ -364,14 +415,14 @@
         "num": "06",
         "img": "https://www.comfygen.com/img/dating-and-matrimony-apps.webp",
         "title": "Dating and Matrimony Apps ",
-        "urlLink":"/dating-app-development",
+        "urlLink": "/dating-app-development",
         "decs": "As the demand for dating and matrimony apps gains momentum, we can help you leverage the power of social network app development to create your own dating app. We can incorporate powerful geolocation abilities and a comprehensive verification algorithm for creating a secure platform that helps in building new relationships with few clicks. Our experts can incorporate exclusive features such as intelligent algorithms and multimedia-sharing facilities. "
       },
       {
         "num": "07",
         "img": "https://www.comfygen.com/img/Educational-Social-Media-Apps.webp",
         "title": "Educational Social Media Apps ",
-        "urlLink":"/ca/education-app-development-company",
+        "urlLink": "/ca/education-app-development-company",
         "decs": "Educational social networks are another prominent use case of social media apps. Our Android social networking app development expertise helps us create informal social networks that can work for broadcasting news. We also help in incorporating consumer review options in educational social media apps to ensure that the platforms gain recognition and elevate their brand value.  "
       },
       {
@@ -538,7 +589,6 @@
         "decs": "One of the most important advantages of working with our social media app development agency points to seamless and transparent communication. Starting from the first consultation to the support services, our experts rely on effective communication to deliver desired results for clients.      "
       }
     ],
-
     "EngagementModels": [
       {
         "num": "01",

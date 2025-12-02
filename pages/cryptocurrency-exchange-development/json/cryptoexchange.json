@@ -42,214 +42,220 @@
         "title": "Rapid Deployment & Ongoing Support",
         "description": "Accelerate your go-to-market with pre-tested modules, plus benefit from full post-launch maintenance and technical assistance."
       }
-    ]    
+    ]
   },
-"FutureDriven": [
-  {
-    "title": "Two-Factor Authentication",
-    "desc": "Adds an extra verification layer during login or transactions, significantly reducing unauthorized access risks."
-  },
-  {
-    "title": "Cold Wallet Storage",
-    "desc": "Stores the majority of users’ cryptocurrencies offline, safeguarding funds from online hacking attempts."
-  },
-  {
-    "title": "Multi-Signature Wallets",
-    "desc": "Requires multiple private keys to authorize transactions, enhancing control and preventing single-point failures."
-  },
-  {
-    "title": "SSL Encryption",
-    "desc": "Secures all data transmitted between users and the platform, preventing interception or tampering."
-  },
-  {
-    "title": "DDoS Protection",
-    "desc": "Defends the exchange against distributed denial-of-service attacks that can disrupt trading or crash the platform."
-  },
-  {
-    "title": "Regular Security Audits",
-    "desc": "Continuous vulnerability assessments and penetration testing to identify and fix security loopholes proactively."
-  }
-],
-
-"servicesData2": [
-  {
-    "title": "Accelerated Time-to-Market",
-    "description": "Utilizing modular architecture and ready-made blockchain integrations, we help you deploy your crypto exchange faster than traditional development cycles."
-  },
-  {
-    "title": "Advanced Security Protocols",
-    "description": "We integrate multi-factor authentication, encryption, and real-time threat monitoring to safeguard user data and transactions on your cryptocurrency exchange."
-  },
-  {
-    "title": "Intuitive & User-Friendly Interface",
-    "description": "Offering seamless navigation and responsive design to enhance user engagement and retention on your platform."
-  },
-  {
-    "title": "Built-in Regulatory Compliance",
-    "description": "Ensuring your exchange complies with global standards through automated KYC/AML verification and GDPR-ready features."
-  },
-  {
-    "title": "Scalable Infrastructure",
-    "description": "Cloud-based and optimized for high-volume, real-time transactions, our solutions adapt to growing user bases without performance drops."
-  },
-  {
-    "title": "Customizable Features & Design",
-    "description": "Tailor your <a class='text-blue-800 font-semibold' href='https://www.comfygen.com/blog/10-most-cost-effective-ways-to-convert-crypto-to-cash-in-2025-a-step-by-step-guide/'>crypto exchange</a> platform with flexible options to meet your business goals and market demands."
-  }
-],
-
-
-    "servicesData": [
-      {
-        "title": "Centralized Exchange (CEX)",
-        "description": "Our <a class='text-white underline font-semibold' href='/centralized-crypto-exchange-development'>CEX platforms</a> come loaded with advanced features, offering real-time trading capabilities, deep liquidity pools, and full administrative control to ensure smooth and efficient operations.",
-        "features": [
-          "Real-time order matching and trade execution",
-          "Comprehensive admin dashboard and user management",
-          "High liquidity for fast transactions",
-          "Robust security with KYC/AML compliance"
-        ]
-      },
-      {
-        "title": "Decentralized Exchange (DEX)",
-        "description": "We build a <a class='text-white underline font-semibold' href='/decentralized-exchange-development'>trusted decentralized exchange</a>, a peer-to-peer exchange, that eliminates intermediaries, promoting complete transparency, privacy, and security through blockchain-based smart contracts.",
-        "features": [
-          "Smart contract automation for secure trades",
-          "User-controlled private keys",
-          "Transparent transaction history on blockchain",
-          "No central authority, reducing single points of failure"
-        ]
-      },
-      {
-        "title": "Hybrid Crypto Exchange",
-        "description": "Our <a class='text-white underline font-semibold' href='/hybrid-crypto-exchange-development'>hybrid exchanges</a> combine the speed and liquidity of centralized exchanges with the privacy and security benefits of decentralized platforms to deliver an optimized trading experience.",
-        "features": [
-          "Enhanced scalability and uptime",
-          "Balance of control and decentralization",
-          "Advanced order types and trading pairs",
-          "Secure, user-friendly interfaces"
-        ]
-      },
-      {
-        "title": "P2P Crypto Exchange",
-        "description": "We empower users to trade directly with each other via secure escrow systems, integrated dispute resolution, and smart contract automation for trust and safety.",
-        "features": [
-          "Peer-to-peer trading with escrow protection",
-          "Automated dispute management system",
-          "Flexible payment options and gateways",
-          "User reputation and rating systems"
-        ]
-      },
-      {
-        "title": "White Label Crypto Exchange",
-        "description": "Our ready-made <a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='underline'>White Label Crypto Exchange Development solutions</a> provide customizable, plug-and-play exchanges that reduce development time and costs, allowing you to enter the market quickly.",
-        "features": [
-          "Fully customizable branding and UI/UX",
-          "Rapid deployment and integration",
-          "Pre-built compliance and security features",
-          "Scalable architecture for future growth"
-        ]
-      },
-
-      {
-        "title": "Crypto Trading Mobile App Development",
-        "description": "At Comfygen, we specialize in <a href='https://www.comfygen.com/stock-trading-app-development' class='underline'>crypto trading mobile app development</a> that combines speed, security, and user-centric design to deliver seamless trading experiences across Android and iOS. Our mobile exchange apps are crafted for startups, brokers, and enterprises aiming to reach global traders with real-time data insights and unmatched reliability.",
-        "features": [
-          "Cross-Platform Compatibility",
-          "Advanced Trading Features",
-          "Enterprise-Grade Security",
-          "Custom Branding & Scalability"
-        ]
-      },
-      {
-        "title": "Liquidity Integration & Wallet Development",
-        "description": "At Comfygen, we provide robust liquidity integration and <a href='https://www.comfygen.com/crypto-wallet-development' class='underline'>crypto wallet development solutions</a> that enhance trading efficiency and ensure secure digital asset management. Our goal is to help businesses maintain seamless trading operations with deep liquidity pools and advanced wallet infrastructure built for reliability and scalability.",
-        "features": [
-          "Seamless Liquidity Integration",
-          "Advanced Wallet Architecture",
-          "Institutional-Grade Security",
-          "Multi-Asset & Multi-Chain Support"
-        ]
-      },
-      {
-        "title": "Smart Contract Development & Auditing",
-        "description": "At Comfygen, we offer <a href='https://www.comfygen.com/smart-contract-development' class='underline'>smart contract development</a> and auditing services that ensure complete transparency, automation, and security across your blockchain ecosystem. Whether you’re building a DeFi protocol, <a href='https://www.comfygen.com/nft-marketplace-development-company' class='underline'>NFT marketplace</a>, tokenized asset platform, or crypto exchange, our blockchain experts create and verify smart contracts that execute flawlessly and protect your users’ assets.",
-        "features": [
-          "Custom Smart Contract Development",
-          "Comprehensive Security Auditing",
-          "Regulatory-Ready Solutions",
-          "Multi-Chain Deployment"
-        ]
-      }
-    ],
-  
-  
+  "FutureDriven": [
+    {
+      "title": "Two-Factor Authentication",
+      "desc": "Adds an extra verification layer during login or transactions, significantly reducing unauthorized access risks."
+    },
+    {
+      "title": "Cold Wallet Storage",
+      "desc": "Stores the majority of users’ cryptocurrencies offline, safeguarding funds from online hacking attempts."
+    },
+    {
+      "title": "Multi-Signature Wallets",
+      "desc": "Requires multiple private keys to authorize transactions, enhancing control and preventing single-point failures."
+    },
+    {
+      "title": "SSL Encryption",
+      "desc": "Secures all data transmitted between users and the platform, preventing interception or tampering."
+    },
+    {
+      "title": "DDoS Protection",
+      "desc": "Defends the exchange against distributed denial-of-service attacks that can disrupt trading or crash the platform."
+    },
+    {
+      "title": "Regular Security Audits",
+      "desc": "Continuous vulnerability assessments and penetration testing to identify and fix security loopholes proactively."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+      "title": "Centralized Crypto Exchange Platform Development",
+      "description": "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
+      "link": "/portfolio/centralized-crypto-exchange-development"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
+      "title": "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+      "description": "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
+      "link": "/portfolio/p2p-crypto-exchange-development"
+    }
+  ],
+  "servicesData2": [
+    {
+      "title": "Accelerated Time-to-Market",
+      "description": "Utilizing modular architecture and ready-made blockchain integrations, we help you deploy your crypto exchange faster than traditional development cycles."
+    },
+    {
+      "title": "Advanced Security Protocols",
+      "description": "We integrate multi-factor authentication, encryption, and real-time threat monitoring to safeguard user data and transactions on your cryptocurrency exchange."
+    },
+    {
+      "title": "Intuitive & User-Friendly Interface",
+      "description": "Offering seamless navigation and responsive design to enhance user engagement and retention on your platform."
+    },
+    {
+      "title": "Built-in Regulatory Compliance",
+      "description": "Ensuring your exchange complies with global standards through automated KYC/AML verification and GDPR-ready features."
+    },
+    {
+      "title": "Scalable Infrastructure",
+      "description": "Cloud-based and optimized for high-volume, real-time transactions, our solutions adapt to growing user bases without performance drops."
+    },
+    {
+      "title": "Customizable Features & Design",
+      "description": "Tailor your <a class='text-blue-800 font-semibold' href='https://www.comfygen.com/blog/10-most-cost-effective-ways-to-convert-crypto-to-cash-in-2025-a-step-by-step-guide/'>crypto exchange</a> platform with flexible options to meet your business goals and market demands."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Centralized Exchange (CEX)",
+      "description": "Our <a class='text-white underline font-semibold' href='/centralized-crypto-exchange-development'>CEX platforms</a> come loaded with advanced features, offering real-time trading capabilities, deep liquidity pools, and full administrative control to ensure smooth and efficient operations.",
+      "features": [
+        "Real-time order matching and trade execution",
+        "Comprehensive admin dashboard and user management",
+        "High liquidity for fast transactions",
+        "Robust security with KYC/AML compliance"
+      ]
+    },
+    {
+      "title": "Decentralized Exchange (DEX)",
+      "description": "We build a <a class='text-white underline font-semibold' href='/decentralized-exchange-development'>trusted decentralized exchange</a>, a peer-to-peer exchange, that eliminates intermediaries, promoting complete transparency, privacy, and security through blockchain-based smart contracts.",
+      "features": [
+        "Smart contract automation for secure trades",
+        "User-controlled private keys",
+        "Transparent transaction history on blockchain",
+        "No central authority, reducing single points of failure"
+      ]
+    },
+    {
+      "title": "Hybrid Crypto Exchange",
+      "description": "Our <a class='text-white underline font-semibold' href='/hybrid-crypto-exchange-development'>hybrid exchanges</a> combine the speed and liquidity of centralized exchanges with the privacy and security benefits of decentralized platforms to deliver an optimized trading experience.",
+      "features": [
+        "Enhanced scalability and uptime",
+        "Balance of control and decentralization",
+        "Advanced order types and trading pairs",
+        "Secure, user-friendly interfaces"
+      ]
+    },
+    {
+      "title": "P2P Crypto Exchange",
+      "description": "We empower users to trade directly with each other via secure escrow systems, integrated dispute resolution, and smart contract automation for trust and safety.",
+      "features": [
+        "Peer-to-peer trading with escrow protection",
+        "Automated dispute management system",
+        "Flexible payment options and gateways",
+        "User reputation and rating systems"
+      ]
+    },
+    {
+      "title": "White Label Crypto Exchange",
+      "description": "Our ready-made <a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='underline'>White Label Crypto Exchange Development solutions</a> provide customizable, plug-and-play exchanges that reduce development time and costs, allowing you to enter the market quickly.",
+      "features": [
+        "Fully customizable branding and UI/UX",
+        "Rapid deployment and integration",
+        "Pre-built compliance and security features",
+        "Scalable architecture for future growth"
+      ]
+    },
+    {
+      "title": "Crypto Trading Mobile App Development",
+      "description": "At Comfygen, we specialize in <a href='https://www.comfygen.com/stock-trading-app-development' class='underline'>crypto trading mobile app development</a> that combines speed, security, and user-centric design to deliver seamless trading experiences across Android and iOS. Our mobile exchange apps are crafted for startups, brokers, and enterprises aiming to reach global traders with real-time data insights and unmatched reliability.",
+      "features": [
+        "Cross-Platform Compatibility",
+        "Advanced Trading Features",
+        "Enterprise-Grade Security",
+        "Custom Branding & Scalability"
+      ]
+    },
+    {
+      "title": "Liquidity Integration & Wallet Development",
+      "description": "At Comfygen, we provide robust liquidity integration and <a href='https://www.comfygen.com/crypto-wallet-development' class='underline'>crypto wallet development solutions</a> that enhance trading efficiency and ensure secure digital asset management. Our goal is to help businesses maintain seamless trading operations with deep liquidity pools and advanced wallet infrastructure built for reliability and scalability.",
+      "features": [
+        "Seamless Liquidity Integration",
+        "Advanced Wallet Architecture",
+        "Institutional-Grade Security",
+        "Multi-Asset & Multi-Chain Support"
+      ]
+    },
+    {
+      "title": "Smart Contract Development & Auditing",
+      "description": "At Comfygen, we offer <a href='https://www.comfygen.com/smart-contract-development' class='underline'>smart contract development</a> and auditing services that ensure complete transparency, automation, and security across your blockchain ecosystem. Whether you’re building a DeFi protocol, <a href='https://www.comfygen.com/nft-marketplace-development-company' class='underline'>NFT marketplace</a>, tokenized asset platform, or crypto exchange, our blockchain experts create and verify smart contracts that execute flawlessly and protect your users’ assets.",
+      "features": [
+        "Custom Smart Contract Development",
+        "Comprehensive Security Auditing",
+        "Regulatory-Ready Solutions",
+        "Multi-Chain Deployment"
+      ]
+    }
+  ],
   "LeadingSoftware": [
-  {
-    "num": "01",
-    "title": "Ethereum",
-    "decs": "The most popular smart contract platform, <a class='text-blue-800 font-semibold' href='/ethereum-token-development'>Ethereum</a>, powers many decentralized finance (DeFi) applications. We leverage Ethereum’s robust ecosystem for building decentralized exchanges (DEX) and hybrid platforms with smart contract automation."
-  },
-  {
-    "num": "02",
-    "title": "Binance Smart Chain",
-    "decs": "Known for its low transaction fees and high throughput, BSC is ideal for launching scalable exchanges that can handle large trading volumes efficiently."
-  },
-  {
-    "num": "03",
-    "title": "Solana",
-    "decs": "Famous for ultra-fast transaction speeds and minimal fees, <a class='text-blue-800 font-semibold' href='/solana-token-development'>Solana</a>  is perfect for high-frequency trading platforms requiring scalability without compromising security."
-  },
-  {
-    "num": "04",
-    "title": "Polkadot",
-    "decs": "Polkadot enables interoperability between multiple blockchains. We develop exchanges on Polkadot to allow seamless asset transfers and cross-chain trading with top-notch security."
-  },
-  {
-    "num": "05",
-    "title": "Polygon",
-    "decs": "As a layer 2 solution for Ethereum, <a class='text-blue-800 font-semibold' href='/polygon-blockchain-development'>Polygon</a> offers faster transactions and lower costs, making it suitable for exchanges that need speed and affordability."
-  },
-  {
-    "num": "06",
-    "title": "Cardano",
-    "decs": "With a research-driven approach,<a class='text-blue-800 font-semibold' href='/cardano-blockchain-development-company'>Cardano</a> offers a secure and scalable infrastructure, ideal for exchanges focusing on formal verification and long-term sustainability."
-  }
-],
-
-"CloneSolutions": [
-  {
-    "num": "01",
-    "title": "Binance Clone Script",
-    "decs": "Scalable platform supporting high-frequency trading, diverse crypto pairs, and a multi-layered security protocol to ensure safe transactions."
-  },
-  {
-    "num": "02",
-    "title": "Coinbase Clone Script",
-    "decs": "Intuitive UI/UX for beginners, integrated fiat gateways, secure KYC/AML compliance, and seamless wallet management."
-  },
-  {
-    "num": "03",
-    "title": "WazirX Clone Script",
-    "decs": "Local currency (INR) support, P2P escrow service, automated token listing, and real-time order matching."
-  },
-  {
-    "num": "04",
-    "title": "Kraken Clone Script",
-    "decs": "Supports margin trading and futures, institutional-grade security features, and comprehensive API access for advanced trading."
-  },
-  {
-    "num": "05",
-    "title": "KuCoin Clone Script",
-    "decs": "Multi-asset staking, spot trading, customizable rewards with native tokens, and a multi-language interface for global users."
-  },
-  {
-    "num": "06",
-    "title": "Bitfinex Clone Script",
-    "decs": "Advanced order types, liquidity management, multi-signature wallets, and highly configurable admin controls for regulatory compliance."
-  }
-],
-
+    {
+      "num": "01",
+      "title": "Ethereum",
+      "decs": "The most popular smart contract platform, <a class='text-blue-800 font-semibold' href='/ethereum-token-development'>Ethereum</a>, powers many decentralized finance (DeFi) applications. We leverage Ethereum’s robust ecosystem for building decentralized exchanges (DEX) and hybrid platforms with smart contract automation."
+    },
+    {
+      "num": "02",
+      "title": "Binance Smart Chain",
+      "decs": "Known for its low transaction fees and high throughput, BSC is ideal for launching scalable exchanges that can handle large trading volumes efficiently."
+    },
+    {
+      "num": "03",
+      "title": "Solana",
+      "decs": "Famous for ultra-fast transaction speeds and minimal fees, <a class='text-blue-800 font-semibold' href='/solana-token-development'>Solana</a>  is perfect for high-frequency trading platforms requiring scalability without compromising security."
+    },
+    {
+      "num": "04",
+      "title": "Polkadot",
+      "decs": "Polkadot enables interoperability between multiple blockchains. We develop exchanges on Polkadot to allow seamless asset transfers and cross-chain trading with top-notch security."
+    },
+    {
+      "num": "05",
+      "title": "Polygon",
+      "decs": "As a layer 2 solution for Ethereum, <a class='text-blue-800 font-semibold' href='/polygon-blockchain-development'>Polygon</a> offers faster transactions and lower costs, making it suitable for exchanges that need speed and affordability."
+    },
+    {
+      "num": "06",
+      "title": "Cardano",
+      "decs": "With a research-driven approach,<a class='text-blue-800 font-semibold' href='/cardano-blockchain-development-company'>Cardano</a> offers a secure and scalable infrastructure, ideal for exchanges focusing on formal verification and long-term sustainability."
+    }
+  ],
+  "CloneSolutions": [
+    {
+      "num": "01",
+      "title": "Binance Clone Script",
+      "decs": "Scalable platform supporting high-frequency trading, diverse crypto pairs, and a multi-layered security protocol to ensure safe transactions."
+    },
+    {
+      "num": "02",
+      "title": "Coinbase Clone Script",
+      "decs": "Intuitive UI/UX for beginners, integrated fiat gateways, secure KYC/AML compliance, and seamless wallet management."
+    },
+    {
+      "num": "03",
+      "title": "WazirX Clone Script",
+      "decs": "Local currency (INR) support, P2P escrow service, automated token listing, and real-time order matching."
+    },
+    {
+      "num": "04",
+      "title": "Kraken Clone Script",
+      "decs": "Supports margin trading and futures, institutional-grade security features, and comprehensive API access for advanced trading."
+    },
+    {
+      "num": "05",
+      "title": "KuCoin Clone Script",
+      "decs": "Multi-asset staking, spot trading, customizable rewards with native tokens, and a multi-language interface for global users."
+    },
+    {
+      "num": "06",
+      "title": "Bitfinex Clone Script",
+      "decs": "Advanced order types, liquidity management, multi-signature wallets, and highly configurable admin controls for regulatory compliance."
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -258,40 +264,39 @@
     }
   ],
   "consultancyData": [
-  {
-    "title": "AI-Based Price Prediction Models",
-    "desc": "Leverage machine learning algorithms to analyze historical data, market trends, and news sentiment to predict crypto price movements with greater accuracy. These models empower users to make informed trading decisions and reduce the risk of losses."
-  },
-  {
-    "title": "AI-Powered Fraud Detection & Risk Management",
-    "desc": "AI detects unusual activities, prevents malicious transactions, and flags suspicious behavior in real-time. This ensures robust risk management, minimizes fraud, and builds trust among users."
-  },
-  {
-    "title": "Smart Trading Bots",
-    "desc": "<a href='https://www.comfygen.com/blog/ai-crypto-trading-bots-automate-profit-with-ai/' class='text-blue-500 font-semibold'>Automated AI trading bots</a> execute trades based on predefined strategies and real-time market data. These bots can analyze thousands of indicators simultaneously, enabling round-the-clock trading with minimal human intervention."
-  },
-  {
-    "title": "Sentiment Analysis Engine",
-    "desc": "AI analyzes news articles, social media platforms, and public forums to gauge market sentiment. This helps users and the platform identify bullish or bearish trends before they manifest in the charts."
-  },
-  {
-    "title": "Personalized User Insights & Recommendations",
-    "desc": "Using AI-driven behavioral analysis, crypto exchanges can offer tailored suggestions, portfolio tips, and alerts to enhance user engagement and satisfaction."
-  },
-  {
-    "title": "AI-Enhanced KYC/AML Verification",
-    "desc": "Speed up and secure the onboarding process with AI-powered identity verification tools. These systems can validate documents, recognize facial features, and detect anomalies to ensure compliance with KYC/AML regulations."
-  },
-  {
-    "title": "Predictive Analytics for Market Trends",
-    "desc": "Anticipate market movements, liquidity shifts, and trading volume changes through AI-powered predictive analytics. This aids users and admins in developing effective trading strategies and improving platform performance."
-  },
-  {
-    "title": "AI-Driven Customer Support",
-    "desc": "Offer 24/7 customer support with intelligent chatbots that understand user queries, provide instant resolutions, and escalate complex issues to human agents seamlessly."
-  }
-],
-
+    {
+      "title": "AI-Based Price Prediction Models",
+      "desc": "Leverage machine learning algorithms to analyze historical data, market trends, and news sentiment to predict crypto price movements with greater accuracy. These models empower users to make informed trading decisions and reduce the risk of losses."
+    },
+    {
+      "title": "AI-Powered Fraud Detection & Risk Management",
+      "desc": "AI detects unusual activities, prevents malicious transactions, and flags suspicious behavior in real-time. This ensures robust risk management, minimizes fraud, and builds trust among users."
+    },
+    {
+      "title": "Smart Trading Bots",
+      "desc": "<a href='https://www.comfygen.com/blog/ai-crypto-trading-bots-automate-profit-with-ai/' class='text-blue-500 font-semibold'>Automated AI trading bots</a> execute trades based on predefined strategies and real-time market data. These bots can analyze thousands of indicators simultaneously, enabling round-the-clock trading with minimal human intervention."
+    },
+    {
+      "title": "Sentiment Analysis Engine",
+      "desc": "AI analyzes news articles, social media platforms, and public forums to gauge market sentiment. This helps users and the platform identify bullish or bearish trends before they manifest in the charts."
+    },
+    {
+      "title": "Personalized User Insights & Recommendations",
+      "desc": "Using AI-driven behavioral analysis, crypto exchanges can offer tailored suggestions, portfolio tips, and alerts to enhance user engagement and satisfaction."
+    },
+    {
+      "title": "AI-Enhanced KYC/AML Verification",
+      "desc": "Speed up and secure the onboarding process with AI-powered identity verification tools. These systems can validate documents, recognize facial features, and detect anomalies to ensure compliance with KYC/AML regulations."
+    },
+    {
+      "title": "Predictive Analytics for Market Trends",
+      "desc": "Anticipate market movements, liquidity shifts, and trading volume changes through AI-powered predictive analytics. This aids users and admins in developing effective trading strategies and improving platform performance."
+    },
+    {
+      "title": "AI-Driven Customer Support",
+      "desc": "Offer 24/7 customer support with intelligent chatbots that understand user queries, provide instant resolutions, and escalate complex issues to human agents seamlessly."
+    }
+  ],
   "customSliderData": [
     {
       "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",

@@ -3,20 +3,100 @@ import Head from "next/head";
 import JSON_DATA from "./salonappdevelopment.json";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
-import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+import dynamic from "next/dynamic";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import Features from "../Newcomponet/SectionCompoent/Features";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
+// import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+// import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 const Process = [

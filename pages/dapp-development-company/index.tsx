@@ -4,16 +4,82 @@ import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import IndustriesServe from "../components/IndustriesServe";
-import SolutionSec from "../components/SolutionSec";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
 import {
   IconUsers,
   IconLayoutDashboard,
@@ -27,9 +93,7 @@ import {
   IconSettings,
   IconBell,
 } from "@tabler/icons-react";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+
 
 
 
@@ -354,36 +418,7 @@ export default function Ecommerce(props:any) {
     },
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/gaming-based-dapp.webp",
-        head: "Gaming-based dApp Development",
-        name: "Unlock the potential of blockchain gaming with our cutting-edge gaming-based dApp development services. We create decentralized gaming applications that offer secure transactions, true asset ownership, and immersive gameplay experiences. From NFT integration to play-to-earn mechanics, our expert developers build innovative gaming dApps tailored to your vision.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/finance-based-dApp-development.webp",
-        head: "Finance-based dApp Development",
-        name: "Revolutionize financial transactions with our finance-based dApp development services. We build secure, transparent, and decentralized applications that enhance financial operations, enabling seamless transactions, smart contract automation, and DeFi solutions. Whether it's lending, staking, or asset management, our dApps empower businesses with blockchain-driven financial innovations.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-    ],
-  };
+
 
   return (
     <>
@@ -595,11 +630,17 @@ export default function Ecommerce(props:any) {
         />
         <TechStack title="Technology Stack" description="" />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our dApp Development Portfolio"
-          description="At Comfygen, we specialize in creating secure, scalable, and innovative dApps that drive business growth. Our projects span various industries, from finance to gaming, delivering tailored solutions that enhance performance and transparency. Explore our portfolio to see how our expertise in blockchain technology helps businesses succeed in the decentralized world."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Artificial Intelligence Success Stories"
+            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+          />
+        </section>
+
+
 
         <section className="bg-gradient-to-r from-[#272868] to-[#5556D1] lg:py-16 py-10">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

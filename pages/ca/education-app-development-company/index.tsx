@@ -3,191 +3,91 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import dynamic from "next/dynamic";
-import JSON_DATA from "./json/applicationConsulting.json";
-import LazyLoad from "react-lazy-load";
-import { MdControlPointDuplicate } from "react-icons/md";
-import Providers from "./components/Providers";
-import HeroSectionForAllPages from "../../components/HeroSectionForAllPages";
-import Faq from "../../components/Faq";
-import CallToAction from "../../components/CallToAction";
-import AboutSection from "../../components/AboutSection";
-import ServicesSec from "../../components/ServicesSec";
-import SolutionSec from "../../components/SolutionSec";
 import {IconBadgeVr, IconBook, IconBookUpload, IconBrandAsana, IconBriefcase, IconCalendarEvent,IconCode, IconCrop11, IconDevices, IconDevicesQuestion, IconFirstAidKit, IconLanguage, IconMath, IconMoodKid,IconSchool,IconVideo, IconWorldDollar, IconWorldWww } from '@tabler/icons-react';
+
+import JSON_DATA from "./json/applicationConsulting.json";
 import { IconTools } from '@tabler/icons-react';
-import TechStack from "../../components/TechStack";
-import HireDeveloper from "../../components/HireDeveloper";
-import WhyChoose from "../../components/WhyChooseUs";
-import ProcessSec from "../../components/ProcessSec";
-import PortfolioSec from "../../components/PortfolioSec";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import ContactFromCenter from "../../components/ContactFromCenter";
+
+import { MdControlPointDuplicate } from "react-icons/md";
+
+import Header from "../../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-// const BlogSection = dynamic(() => import("../components/BlogSection"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../components/Advice"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const GetinTouch = dynamic(() => import("../components/Getintouch"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import dynamic from "next/dynamic";
 
-const Demand = [
-  {
-    img: "https://www.comfygen.com/img/educational-mobile-app-development.webp",
-    head: "Educational Mobile App Development",
-    dec: "Educational mobile apps make learning opportunities available to students of all ages. These are apps that make it possible for students to learn through their phones. An educational mobile app can be installed on a smartphone or a tablet and used to access the internet and learn resources. Our team at Comfygen takes up customized approaches for educational mobile app development that create highly successful educational apps. ",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-wearable-apps-development.webp",
-    head: "Educational Wearable Apps Development ",
-    dec: "Our team of professional software developers and testers also specializes in creating educational apps that can be installed on wearable devices and mobile gadgets like smartwatches and tags. We help you create wearable apps that will send the students and teachers reminders related to the classes, practice sessions, and other aspects of studies, such as tests. These also help monitor student activity inside a classroom.  ",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-web-app-development.webp",
-    head: "Educational Web App Development",
-    dec: "Our team of professionals also recognizes how important it is to create apps that can be accessed from any device. With the development of web educational apps, we ensure that students can easily access your services and study material through just a browser. Apart from full-fledged mobile apps, we also specialize in making web apps that are easy to use and accessible for students from anywhere.",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-app-development.webp",
-    head: "Educational App Development ",
-    dec: "Through educational app development solutions, our team aims to create solutions that will connect teachers with students and help expand the knowledge ecosystem. Our software development team takes a fresh approach to new ideas and creates software that can be used on multiple devices to help students study and improve their knowledge levels.",
-  },
-  {
-    img: "https://www.comfygen.com/img/remote-learning-apps.webp",
-    head: "Remote Learning Apps",
-    dec: "Our team uses its skills and technical knowledge to create applications that come with remotely enabled systems for learning and teaching. We create apps that have remote learning access so students can learn from anywhere and teachers can manage their classrooms from anywhere in the world. We bring teachers and students closer with our advanced remote learning systems.",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-product-development.webp",
-    head: "Educational Product Development",
-    dec: "Apart from software development and the creation of digital products in the educational ecosystem, our team also specializes in creating physical products and new tools that can be coupled with educational apps and classroom environments for better learning opportunities. Our team conducts product research and creates products that are relevant to your educational institution and ecosystem.",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-crm-solution-development.webp",
-    head: "Educational CRM Solution Development",
-    dec: "When we create educational mobile apps, we also integrate CRM solutions into them so that teachers can manage their peer relationships, internal workflows, and communication with the parents easily. The CRM solutions ensure that teachers, students, and parents are well connected through the application and can share feedback about the learning processes. We have great CRM solutions that can easily integrate into a new or existing educational application.",
-  },
-  {
-    img: "https://www.comfygen.com/img/educational-management-app-development.webp",
-    head: "Educational Management App Development ",
-    dec: "Comfygen offers development services for educational management applications. We create educational management applications for large-scale school and college chains so that the internal administration and processes can be streamlined and fully managed through an accessible app. We also create office management apps that are specifically designed for the educational sector so that payroll, attendance, and administration of the school staff can be easily managed.",
-  },
-  {
-    img: "https://www.comfygen.com/img/classroom-management-application-development.webp",
-    head: "Classroom Management Application Development",
-    dec: "We create classroom management applications that help teachers manage their students and also create a learning environment in which everything goes on smoothly and without any disturbance. The teacher can keep an eye on the students, track their progress, and manage all the tasks related to individual students through a good classroom management app created by Comfygen.",
-  },
-  {
-    img: "https://www.comfygen.com/img/custom-edtech-software-development.webp",
-    head: "Custom Edtech Software Development",
-    dec: "Customized edtech software development is a process that creates an edtech and edutainment application according to the specific needs and ideas of the innovator. If you want to create an app that is highly specific to your school environment or to your edtech idea, then you should hire our custom edtech development services for the project. We also create customized features for existing educational applications.",
-  },
-];
-const Why = [
-  {
-    img: "https://www.comfygen.com/img/experts-in-edtech-app-development.webp",
-    head: "Experts in Edtech App Development",
-    dec: "Our team of software developers and designers are experts and experienced professionals specializing in edtech app development. Our professionals know what they need to do to deliver the perfect educational app to your company. If you want to hire a highly professional software development team that handles the project expertly, then you need to choose Comfygen.",
-  },
-  {
-    img: "https://www.comfygen.com/img/custom-app-development-icon.webp",
-    head: "Custom App Development ",
-    dec: "If you want to stand ahead of the crowd in the edtech industry, you will need custom app development instead of just generic educational apps. Comfygen and its team can help your company develop highly specific and customized applications that will be path-breaking in the educational industry. ",
-  },
-  {
-    img: "https://www.comfygen.com/img/latest-technology.webp",
-    head: "Latest Technology",
-    dec: "Comfygen uses the most updated and latest technology stack for app development and complete educational app testing. To create the most advanced and useful application for your user base with the latest features, hire our team of professionals who have a deep understanding of the latest trends and tech.",
-  },
-  {
-    img: "https://www.comfygen.com/img/long-standing-partnerships.webp",
-    head: "Long-standing Partnerships",
-    dec: "Our team not only meets your requirements and deadlines but also sticks with you when you need ongoing support and maintenance services. We are a trustworthy educational app development company that is able to create long-term business partnerships with a long list of clientele.",
-  },
-  {
-    img: "https://www.comfygen.com/img/top-notch-services.webp",
-    head: "Top-notch Services",
-    dec: "The software development and testing services we offer in the edtech sector are all top-notch and very efficient. We use our services and professional capabilities to create the best possible digital application that brings in an audience and creates revenue for you. Our clients always claim the best customer satisfaction and high-quality work from our team.",
-  },
-  {
-    img: "https://www.comfygen.com/img/amazing-track-record.webp",
-    head: "Amazing Track Record",
-    dec: "Our track record as an educational mobile app development company is amazing and very successful. We have real success stories from our clients, and our body of work speaks for itself. When working with us, your company will be teaming up with the best professionals in the industry.",
-  },
-];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/hero-book-my-tutor.webp",
-      head: "Book My Tutor",
-      name: "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student, regardless of their location or academic level. The project seeks to bridge the gap between students and tutors, creating a conducive environment for personalized learning.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-    ,
-    {
-      img: "https://www.comfygen.com/image/ai-powered-e-learning-app.webp",
-      head: "AI-Powered E-Learning App",
-      name: "E-learning app is an innovative AI-driven education app designed for personalized learning experiences. It features interactive video lessons, real-time quizzes, and AI-based recommendations tailored to each student’s learning pace. With seamless Learning Management System (LMS) integration, it is widely used by schools and online educators for engaging and adaptive learning solutions.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/language-learning-app.webp",
-      head: "Language Learning App",
-      name: "Language app is a feature-rich language learning app that supports multiple languages with AI-powered voice recognition, real-time translations, and gamified lessons. As a custom education app development company, we integrated chat-based learning, progress tracking, and AI tutors to make language acquisition fun and efficient for learners of all ages.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/image/school-and-college-management-system.webp",
-      head: "School & College Management System",
-      name: "Management app is an advanced school and college management app designed to streamline administrative operations. It offers features like attendance tracking, timetable scheduling, fee management, and student performance analytics. Built for educational institutions, this custom education app development solution enhances communication between teachers, students, and parents for a more organized learning environment.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
 const Process = [
   {
     title: "Requirement Analysis",
@@ -446,8 +346,8 @@ export default function Mobile(props) {
           href="https://www.comfygen.com/ca/education-app-development-company"
         />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -504,11 +404,11 @@ export default function Mobile(props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+
           <Header />
-        </LazyLoad>
+
       </div>
-      <div className="">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/education-app-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Top-Notch Education App Development Company in India & USA"
@@ -551,8 +451,16 @@ export default function Mobile(props) {
           subheading="Comfygen is one of the most renowned educational app development companies in India, and it also specializes in custom educational app development. Our team of education app developers, designers, and testers together make sure that you get the best possible customized educational app for your audience and your target market. Here are some of the top-notch custom educational applications that we create and offer to our client companies."
           techData={technologyData}
         />
-        <ContactFromCenter />
-        <Providers />
+        {/* <ContactFromCenter /> */}
+        <div className="py-8">
+          <Features
+            heading="Supported Cricket Formats & Leagues for Live Streaming"
+            description="Our cricket live streaming app development covers every major format and tournament, ensuring fans can follow matches in real time from anywhere in the world. Whether it’s high-profile international contests, domestic leagues, or women’s cricket, users get seamless access to live cricket matches, ball-by-ball commentary, player statistics, and real-time score updates."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
+
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868]/90 to-[#5556D1]/90 ">
           <div className="flex flex-col justify-center 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <h2 className="py-4 text-3xl lg:text-4xl md:text-center text-left font-bold leading-[2rem] lg:leading-[3rem] text-[#fff]">
@@ -839,11 +747,19 @@ export default function Mobile(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Education Apps Portfolio"
-          description="As a leading Education App Development Company, we have successfully delivered a wide range of custom education app development solutions tailored for diverse learning needs. Here are some of our top projects that showcase our expertise in Education App Development services"
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Education Apps Portfolio"
+            description="As a leading Education App Development Company, we have successfully delivered a wide range of custom education app development solutions tailored for diverse learning needs. Here are some of our top projects that showcase our expertise in Education App Development services"
+          />
+        </section>
+
+
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -871,9 +787,7 @@ export default function Mobile(props) {
           title="Application Consulting Services"
         /> */}
         <Faq faqData={JSON_DATA.Frequently} title="" />
-        <GetinTouch />
-        {/*<BlogSection initialData={initialData} />*/}
-        {/* </>} */}
+  
       </div>
     </>
   );

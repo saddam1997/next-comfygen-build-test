@@ -4,7 +4,6 @@
     "decs": "With features like live lines, public votes, live commentary, and more, we specialize in Live Cricket Line Android App Development that improve the experience of watching matches. Our staff is focused on Live Cricket Mobile App Development that give consumers real-time updates and fun features because we comprehend the excitement of cricket matches. Whether you require real-time score updates, match analysis, player data, or interactive features like user polls, we can create a Cricket Live Line software that piques the interest of cricket fans and enhances their experience of watching matches. We can realize your vision for a Cricket fast  Live Line app development with a user-friendly layout and fluid performance thanks to our expertise in Live cricket mobile app development. Choosing us for your company would be teh best decision you don’t have to regret we are the most reliable Cricket live line app development Company"
   },
   "Frequently": [
-
     {
       "num": "1",
       "title": "What makes Comfygen the best app development company for Live Line Cricket?",
@@ -26,63 +25,128 @@
       "desc": "The cost of developing an app depends on a variety of factors, just like the development duration. As an example, the cost of developing a live line Cricket mobile app may range from USD 30,000 to USD 60,000."
     }
   ],
-
-
- "featuresData": [
-  {
-    "id": 1,
-    "title": "Men’s Cricket Live Streaming:",
-    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/ICC-nen-t20-world-cup.png",
-    "additionalDetails": [
-      { "details": "Test Matches Live Streaming", "emoji": "", "content": "" },
-      { "details": "One Day Internationals (ODIs) Live Streaming", "emoji": "", "content": "" },
-      { "details": "Twenty20 Internationals (T20Is) Live Streaming", "emoji": "", "content": "" },
-      { "details": "Domestic T20 Matches Live Streaming", "emoji": "", "content": "" },
-      { "details": "Indian Premier League (IPL) Live Streaming", "emoji": "", "content": "" },
-      { "details": "UAE International League T20 (ILT20) Live Streaming", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Women’s Cricket Live Streaming:",
-    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/iCC-woman-t20-World-cup.png",
-    "additionalDetails": [
-      { "details": "Women’s Test Matches Live Streaming", "emoji": "", "content": "" },
-      { "details": "Women’s ODIs Live Streaming", "emoji": "", "content": "" },
-      { "details": "Women’s T20 Internationals Live Streaming", "emoji": "", "content": "" },
-      { "details": "Women’s Premier League (WPL – India) Live Streaming", "emoji": "", "content": "" },
-      { "details": "Domestic Women’s One-Day Matches Live Streaming", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "ICC Tournaments Live Streaming:",
-    "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/iCC-tournaments-live-streaming.png",
-    "icon": "<i className='fas fa-wallet text-4xl'></i>",
-    "additionalDetails": [
-      { "details": "ICC Cricket World Cup (ODI) Live Streaming", "emoji": "", "content": "" },
-      { "details": "ICC T20 World Cup Live Streaming", "emoji": "", "content": "" },
-      { "details": "ICC Champions Trophy Live Streaming", "emoji": "", "content": "" },
-      { "details": "ICC World Test Championship Matches Live Streaming", "emoji": "", "content": "" },
-      { "details": "Asia Cup (ODI & T20) Live Streaming", "emoji": "", "content": "" }
-    ]
-  }
-  
-],
-
-
-  "servicesData" :[ 
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/cricket-live-line-app-web-development.webp",
+      "title": "Cricket Live Line App & Web Development",
+      "description": "Live lines, public polls, live commentary, and many other features enhance the thrill of the match. Performance, precision, and perseverance are the keys to success in cricket.",
+      "link": "/portfolio/global-news-aggregator-app"
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Men’s Cricket Live Streaming:",
+      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/ICC-nen-t20-world-cup.png",
+      "additionalDetails": [
+        {
+          "details": "Test Matches Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "One Day Internationals (ODIs) Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Twenty20 Internationals (T20Is) Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Domestic T20 Matches Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Indian Premier League (IPL) Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "UAE International League T20 (ILT20) Live Streaming",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Women’s Cricket Live Streaming:",
+      "icon": " <i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/iCC-woman-t20-World-cup.png",
+      "additionalDetails": [
+        {
+          "details": "Women’s Test Matches Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Women’s ODIs Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Women’s T20 Internationals Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Women’s Premier League (WPL – India) Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Domestic Women’s One-Day Matches Live Streaming",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ICC Tournaments Live Streaming:",
+      "img": "https://www.comfygen.com/comfygen-images/live-line-cricket-mobile-app-development/iCC-tournaments-live-streaming.png",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "ICC Cricket World Cup (ODI) Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "ICC T20 World Cup Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "ICC Champions Trophy Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "ICC World Test Championship Matches Live Streaming",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Asia Cup (ODI & T20) Live Streaming",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "servicesData": [
     {
       "title": "Mobile App Features That Make Live Line Cricket Viral.",
       "description": "There is no point in developing cricket mobile apps unless they provide real-time excitement and engagement."
-     
     },
     {
       "title": "Real-Time Score",
       "description": "Our API integration allows you to integrate our modern-tech into your app and provide users with live line cricket in real-time. We believe that your cricket fans shouldn't miss anything during a live match."
-     
     },
     {
       "title": "Match Statistics",
@@ -105,7 +169,6 @@
       "description": "It is possible for cricket fans to enjoy football as well. With this feature, sports fans can follow scores across multiple sports and leagues directly from their smartphones."
     }
   ],
-
   "Planning": [
     {
       "num": "01",

@@ -1,36 +1,82 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-
 import JSON_DATA from "./json/cryptoderivativesexchangedevelopment.json";
-import { useState } from "react";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import Features from "./components/Features";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionsFeature = dynamic(() => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 const Processs = [
   {
     title: "Requirement Analysis and Market Research",
@@ -71,38 +117,6 @@ const Processs = [
 
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-      head: "Centralized Crypto Exchange Platform Development",
-      name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/centralized-crypto-exchange-development",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-      head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-      name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/p2p-crypto-exchange-development",
-    },
-  ],
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -153,9 +167,9 @@ export default function Ecommerce(props) {
         "blockchain derivatives trading",
         "Cryptocurrency trading platform development"
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
 
@@ -227,15 +241,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions",
-      "image":"https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-about.webp",
-      "description":"Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance.!",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-about.webp",
+      "description": "Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance.!",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
     },
     {
       "@context": "https://schema.org/",
@@ -307,99 +323,98 @@ export default function Ecommerce(props) {
         }
       ]
     }
-  
+
   ];
 
   return (
     <>
-       <Head>
-          <title>
-        Crypto Derivatives Exchange Development | Futures Trading Platform
+      <Head>
+        <title>
+          Crypto Derivatives Exchange Development | Futures Trading Platform
 
 
-          </title>
-          <meta
-            name="description"
-            content="Develops secure and scalable crypto derivatives exchanges, supporting futures, options, swaps, and margin trading. Launch your high-performance derivatives trading platform with advanced risk management infrastructure."
-          />
-          <link
-            rel="canonical"
-            href="https://www.comfygen.com/crypto-derivatives-exchange-development"
-          />
-        
-     
-          <meta
-            name="keywords"
-            content="Crypto Derivatives Exchange Development, derivatives trading software, derivatives software, blockchain derivatives trading, Cryptocurrency trading platform development"
-          />
+        </title>
+        <meta
+          name="description"
+          content="Develops secure and scalable crypto derivatives exchanges, supporting futures, options, swaps, and margin trading. Launch your high-performance derivatives trading platform with advanced risk management infrastructure."
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/crypto-derivatives-exchange-development"
+        />
 
-          {/* Twitter Card */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:title"
-            content="Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions"
-          />
-          <meta
-            name="twitter:description"
-            content="Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance."
-          />
-          <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
-          <meta name="twitter:site" content="@comfygentech" />
 
-          {/* Open Graph */}
-          <meta
-            property="og:url"
-            content="https://www.comfygen.com/crypto-derivatives-exchange-development"
-          />
-          <meta
-            property="og:title"
-            content="Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions"
-          />
-          <meta
-            property="og:description"
-            content="Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance."
-          />
-          <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
-          <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
-          <meta property="og:image:alt" content="Crypto Derivatives Exchange Development" />
+        <meta
+          name="keywords"
+          content="Crypto Derivatives Exchange Development, derivatives trading software, derivatives software, blockchain derivatives trading, Cryptocurrency trading platform development"
+        />
 
-          {/* Structured Data Schema */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Crypto Derivatives Exchange Development",
-                operatingSystem: "Web, Android, iOS",
-                applicationCategory: "FinanceApplication",
-                url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
-                description:
-                  "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
-                author: {
-                  "@type": "Organization",
-                  name: "Comfygen Private Limited"
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "Comfygen Private Limited",
-                  url: "https://www.comfygen.com"
-                },
-                image: "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-og.webp"
-              })
-            }}
-          />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance."
+        />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
+        <meta name="twitter:site" content="@comfygentech" />
 
-          <script
+        {/* Open Graph */}
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/crypto-derivatives-exchange-development"
+        />
+        <meta
+          property="og:title"
+          content="Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance."
+        />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
+        <meta property="og:image:alt" content="Crypto Derivatives Exchange Development" />
+
+        {/* Structured Data Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Crypto Derivatives Exchange Development",
+              operatingSystem: "Web, Android, iOS",
+              applicationCategory: "FinanceApplication",
+              url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
+              description:
+                "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
+              author: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited"
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited",
+                url: "https://www.comfygen.com"
+              },
+              image: "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-og.webp"
+            })
+          }}
+        />
+
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        </Head>
+      </Head>
 
 
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
+      <Header />
+
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
@@ -410,7 +425,6 @@ export default function Ecommerce(props) {
           li1='Liquidity integration & advanced risk management'
           li2='Bank-grade security & regulatory compliance'
           li3='Scalable architecture with 24/7 expert support'
-          
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -436,38 +450,75 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-       
 
-        <ServicesSection 
-          heading="Our Crypto Derivatives Exchange Development Services"
-          subtitle="At comfygen, we specialize in developing cutting-edge crypto derivatives exchanges that empower traders to access complex financial instruments securely and efficiently. Our comprehensive suite of services covers every aspect of derivatives <a class='text-blue-500 font-semibold'  href='/cryptocurrency-exchange-development'>exchange development</a>, from designing custom trading platforms and integrating smart contracts to implementing advanced risk management and ensuring strict compliance with global regulations. Whether you want to support multiple asset classes or enable cross-chain trading, our expert team delivers scalable, secure, and feature-rich solutions tailored to your business needs."
-          servicesData={JSON_DATA.servicesData}
-         />
 
-        
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Crypto Derivatives Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At comfygen, we specialize in developing cutting-edge crypto derivatives exchanges that empower traders to access complex financial instruments securely and efficiently. Our comprehensive suite of services covers every aspect of derivatives <a className='text-blue-500 font-semibold' href='/cryptocurrency-exchange-development'>exchange development</a>, from designing custom trading platforms and integrating smart contracts to implementing advanced risk management and ensuring strict compliance with global regulations. Whether you want to support multiple asset classes or enable cross-chain trading, our expert team delivers scalable, secure, and feature-rich solutions tailored to your business needs.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-          <SolutionsFeature 
-            title="Types of Crypto Derivatives Exchange Development We Support"
-            subtitle="At Comfygen, we empower exchanges to support a wide range of crypto derivative instruments, enabling diverse trading strategies for retail and institutional traders alike. Our solutions are built to handle high volumes, ensure precision, and deliver advanced features for each derivative type. Below are the key types of crypto derivatives we enable on your trading platform:"
-            data={JSON_DATA.LeadingSoftware}
 
-          />
+        <SolutionsFeature
+          title="Types of Crypto Derivatives Exchange Development We Support"
+          subtitle="At Comfygen, we empower exchanges to support a wide range of crypto derivative instruments, enabling diverse trading strategies for retail and institutional traders alike. Our solutions are built to handle high volumes, ensure precision, and deliver advanced features for each derivative type. Below are the key types of crypto derivatives we enable on your trading platform:"
+          data={JSON_DATA.LeadingSoftware}
 
-        <ProcessSection title="Crypto Derivatives Exchange Development Process" description="Developing a high-performance crypto derivatives exchange requires a well-structured and secure development process. Our approach ensures a scalable, compliant, and user-friendly platform tailored to your business needs." processSlides={Processs} />
+        />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Crypto Derivatives Exchange Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Developing a high-performance crypto derivatives exchange requires a well-structured and secure development process. Our approach ensures a scalable, compliant, and user-friendly platform tailored to your business needs.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Crypto Derivatives Exchange Development"
-          description="At Comfygen, we take pride in delivering cutting-edge crypto derivatives exchange solutions tailored to diverse client needs. Our portfolio showcases a range of successful projects demonstrating our expertise in building secure, scalable, and feature-rich trading platforms that empower users worldwide."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Crypto Derivatives Exchange Development"
+            description="At Comfygen, we take pride in delivering cutting-edge crypto derivatives exchange solutions tailored to diverse client needs. Our portfolio showcases a range of successful projects demonstrating our expertise in building secure, scalable, and feature-rich trading platforms that empower users worldwide."
+          />
+        </section>
+
 
         <TrendsSection heading="Benefits of Crypto Derivatives Exchange Development Services"
           subtitle="Partnering with us for your <a class='text-white font-semibold underline' href='/crypto-derivatives-exchange-development'>crypto derivatives exchange development</a> ensures you gain a competitive edge through advanced technology, robust security, and expert support. Here’s why clients trust us to bring their trading platforms to life:"
           trends={JSON_DATA.Emerging} />
 
-        <Features />
+
+
+        <div className="py-8">
+          <Features
+            heading="We Develop Food Delivery Apps With Advanced Panel Features"
+            description=" At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+     
 
         <TechStack
           title="Our Crypto Derivatives Exchange Development Tech Stack"
@@ -494,7 +545,7 @@ export default function Ecommerce(props) {
             "Ongoing maintenance and timely feature upgrades",
             "Dedicated teams for development, QA, and support"
           ]}
-          
+
         />
 
         <ClientTestimonials

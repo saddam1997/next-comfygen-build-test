@@ -1,37 +1,80 @@
+import { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hybridcryptoexchangedevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CardItem from "../components/ServiceSec";
-import ProcessSection from "../componentsnew/ProcessSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  { loading: loader, ssr: true }
+)
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 const Process = [
   {
     title: "Discovery & Consultation",
@@ -71,38 +114,7 @@ const Process = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-      head: "Centralized Crypto Exchange Platform Development",
-      name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/centralized-crypto-exchange-development",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-      head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-      name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/p2p-crypto-exchange-development",
-    },
-  ],
-};
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -455,11 +467,9 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
 
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Hybrid Crypto Exchange Development Company"
           ptag="Comfygen, The Best Hybrid Crypto Exchange Development Company. Launch your future-ready crypto trading platform with our hybrid crypto exchange development services. We provide the liquidity and speed of centralized crypto exchanges with the security and privacy of decentralized models, giving your users the best of both worlds. Our hybrid crypto exchange development solutions are developed to handle high-volume trading, multiple cryptocurrencies, and scalable growth."
@@ -493,12 +503,26 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
-        <ServicesSection
-          heading="Our Hybrid Crypto Exchange Development Services"
-          subtitle="As the best cryptocurrency exchange development company, Comfygen offers end-to-end hybrid crypto exchange development services. Developing a hybrid exchange isn’t just about mixing a CEX and a DEX. It’s about creating a platform that feels fast, safe, and effortless for the user while giving you the flexibility to scale. Comfygen handles every layer of that process for you."
-          servicesData={JSON_DATA.servicesData} />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Hybrid Crypto Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                As the best cryptocurrency exchange development company, Comfygen offers end-to-end hybrid crypto exchange development services. Developing a hybrid exchange isn’t just about mixing a CEX and a DEX. It’s about creating a platform that feels fast, safe, and effortless for the user while giving you the flexibility to scale. Comfygen handles every layer of that process for you.
+              </p>
+
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
         <CardItem
           heading="Hybrid Crypto Exchange Development Solutions"
@@ -515,10 +539,23 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <ProcessSection
-          title="Our End-to-End Hybrid Crypto Exchange Development Process"
-          description="At Comfygen, we follow a strategic, agile, and secure hybrid crypto exchange development process to deliver high-performance hybrid crypto exchanges. Our process combines deep industry expertise, cutting-edge tools, and compliance-first development to ensure your platform is scalable, reliable, and market-ready."
-          processSlides={Process} />
+
+
+        <section className="bg-white lg:py-16 py-10 ">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our End-to-End Hybrid Crypto Exchange Development Process
+              </h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a strategic, agile, and secure hybrid crypto exchange development process to deliver high-performance hybrid crypto exchanges. Our process combines deep industry expertise, cutting-edge tools, and compliance-first development to ensure your platform is scalable, reliable, and market-ready.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
         <ConsultancyApproach
@@ -530,11 +567,13 @@ export default function Ecommerce(props) {
 
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Hybrid cryptocurrency exchange development"
-          description="At Comfygen, we take pride in delivering cutting-edge Hybrid Cryptocurrency Exchange Development solutions that seamlessly integrate the benefits of centralized and decentralized platforms. Our portfolio showcases a variety of successful hybrid crypto exchanges that have transformed the way businesses and traders engage in digital asset trading. Here's a look at some of our notable projects:"
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Hybrid cryptocurrency exchange development"
+            description="At Comfygen, we take pride in delivering cutting-edge Hybrid Cryptocurrency Exchange Development solutions that seamlessly integrate the benefits of centralized and decentralized platforms. Our portfolio showcases a variety of successful hybrid crypto exchanges that have transformed the way businesses and traders engage in digital asset trading. Here's a look at some of our notable projects:"
+          />
+        </section>
 
 
 
@@ -547,14 +586,6 @@ export default function Ecommerce(props) {
 
         />
 
-
-
-
-        {/* <TrendsSection
-          heading="Benefits of Our Hybrid Exchange Development"
-          subtitle="At Comfygen, we provide innovative Hybrid Exchange Development solutions that combine the benefits of both centralized and decentralized systems. Our hybrid crypto exchanges offer superior functionality, enhanced security, and scalability, making them ideal for businesses aiming to provide a seamless trading experience for their users. Here are some key benefits of choosing our Hybrid Exchange Development services:"
-          trends={JSON_DATA.Emerging}
-        /> */}
 
         <TechStack
           title="Our Hybrid Exchange Development Tech Stack"
@@ -581,14 +612,7 @@ export default function Ecommerce(props) {
             "Post-Launch Support",
           ]}
         />
-{/* 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/crypto-trading-bot-clone-scripts-for-automated-trading.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
+
 
         <ClientTestimonials
           heading="What Our Clients Say"

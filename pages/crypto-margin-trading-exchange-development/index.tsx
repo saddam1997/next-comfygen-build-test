@@ -1,42 +1,87 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
-
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptomargintradingexchangedevelopment.json";
-import { useState } from "react";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
 
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import Features from "./components/Features"
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const NewSection = dynamic(() => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+)
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+
 const Processs = [
   {
     title: "Requirement Analysis & Planning",
@@ -76,40 +121,6 @@ const Processs = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/cloud-based-crypto-trading-bot-crypto-trading-bot-development.webp",
-      head: "Cloud-Based Crypto Trading Bot",
-      name: "We develop an advanced, cloud-based crypto trading bot designed to automate trading strategies for beginners and experienced traders. It integrates seamlessly with major cryptocurrency exchanges, providing users with powerful trading tools to maximize their profits with minimal effort. Our development team at Comfygen built this platform with a focus on automation, real-time analytics, and user-friendly functionality.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/cloud-based-crypto-trading-bot",
-    },
-    {
-      img: "https://www.comfygen.com/image/ai-based-crypto-trading-bot-crypto-trading-bot-development.webp",
-      head: "AI-Based Crypto Trading Bot Development",
-      name: "At Comfygen, we developed an advanced crypto trading bot solution designed to automate trading strategies, optimize market execution, and maximize profits. Our cutting-edge platform seamlessly integrates with multiple exchanges, providing traders with AI-driven insights and powerful automation tools.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/crypto-trading-bot-development",
-    },
-
-
-  ],
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -142,28 +153,28 @@ export default function Ecommerce(props) {
     },
     {
       "@type": "Service",
-  "name": "Margin Trading Exchange Development Company",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Launch your crypto margin trading exchange with 7+ years of expertise. We build secure, scalable, and compliant platforms for the USA with advanced features like leverage, auto-liquidation, and real-time analytics.",
-  "url": "https://www.comfygen.com/crypto-margin-trading-exchange-development",
-  "mainEntityOfPage": "https://www.comfygen.com/crypto-margin-trading-exchange-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "Margin Trading Exchange Development Company",
-    "Crypto Margin Trading Platform Development",
-    "Margin Trading Software Development",
-    "Margin trading exchanges",
-    "Margin trading crypto USA"
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen", 
-    "https://www.linkedin.com/company/comfygen-private-limited"
-  ]
+      "name": "Margin Trading Exchange Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Launch your crypto margin trading exchange with 7+ years of expertise. We build secure, scalable, and compliant platforms for the USA with advanced features like leverage, auto-liquidation, and real-time analytics.",
+      "url": "https://www.comfygen.com/crypto-margin-trading-exchange-development",
+      "mainEntityOfPage": "https://www.comfygen.com/crypto-margin-trading-exchange-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Margin Trading Exchange Development Company",
+        "Crypto Margin Trading Platform Development",
+        "Margin Trading Software Development",
+        "Margin trading exchanges",
+        "Margin trading crypto USA"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -232,15 +243,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-    "@context":"http://www.schema.org",
-    "@type":"Product",
-    "brand":"Comfygen Private Limited",
-    "Name":"Margin Trading Exchange Development Company | Crypto Margin Trading Solutions USA",
-    "image":"https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp",
-    "description":"Launch your crypto margin trading exchange with 7+ years of expertise. We build secure, scalable, and compliant platforms for the USA with advanced features like leverage, auto-liquidation, and real-time analytics.",
-    "aggregateRating":{"@type":"AggregateRating",
-    "ratingValue":"4.9",
-    "reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Margin Trading Exchange Development Company | Crypto Margin Trading Solutions USA",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp",
+      "description": "Launch your crypto margin trading exchange with 7+ years of expertise. We build secure, scalable, and compliant platforms for the USA with advanced features like leverage, auto-liquidation, and real-time analytics.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
     },
     {
@@ -313,14 +326,14 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
+
   ];
 
   return (
     <>
       <Head>
         <title>
-         Margin Trading Exchange Development Company | Comfygen
+          Margin Trading Exchange Development Company | Comfygen
         </title>
         <meta
           name="description"
@@ -330,7 +343,7 @@ export default function Ecommerce(props) {
           rel="canonical"
           href="https://www.comfygen.com/crypto-margin-trading-exchange-development"
         />
-    
+
 
         <meta
           name="keywords"
@@ -408,19 +421,19 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-        <Header />
-      
+      <Header />
+
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
           heading="Margin Trading Exchange Development"
           ptag="Comfygen specializes in margin trading exchange development, creating secure, high-performance platforms for leveraged trading. Our solutions provide real-time order matching, multi-asset support, advanced risk management, and regulatory compliance. Fully customizable and scalable, our software enables fast deployment with seamless user experiences for both retail and institutional traders."
-          
+
           li="Leveraged trading for multiple crypto assets"
           li1="Advanced risk management & compliance"
           li2="High-speed order matching & liquidity integration"
           li3="Scalable, customizable architecture with 24/7 support"
-         
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -444,39 +457,71 @@ export default function Ecommerce(props) {
             "Compliant crypto margin exchange development for the USA",
             "Trusted white label crypto margin trading provider",
           ]}
-          
+
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-       
 
-        <ServicesSection 
-          heading="Our Margin Trading Exchange Development Services"
-          subtitle="As a trusted margin trading exchange development company, we offer comprehensive, scalable, and secure solutions tailored to your business needs. Our expert team leverages advanced technology and industry best practices to help you launch and grow a competitive margin trading platform."
-          servicesData={JSON_DATA.servicesData}
-         />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Margin Trading Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                As a trusted margin trading exchange development company, we offer comprehensive, scalable, and secure solutions tailored to your business needs. Our expert team leverages advanced technology and industry best practices to help you launch and grow a competitive margin trading platform.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        
 
-          <SolutionsFeature 
-            title="Use Cases & Industry Applications of Crypto Margin Trading Exchange Development"
-            subtitle="Crypto margin trading exchanges have revolutionized the digital asset trading landscape by enabling traders to amplify their positions using leverage. This innovation opens a variety of opportunities across multiple industries and use cases:"
-            data={JSON_DATA.LeadingSoftware}
 
-          />
+        <SolutionsFeature
+          title="Use Cases & Industry Applications of Crypto Margin Trading Exchange Development"
+          subtitle="Crypto margin trading exchanges have revolutionized the digital asset trading landscape by enabling traders to amplify their positions using leverage. This innovation opens a variety of opportunities across multiple industries and use cases:"
+          data={JSON_DATA.LeadingSoftware}
 
-        <ProcessSection title="Our End-to-End Process of Crypto Margin Trading Exchanges Development" description="Building a robust and secure crypto margin trading exchange requires a well-structured, step-by-step development process. At Comfygen, we follow industry best practices and agile methodologies to deliver scalable, high-performance margin trading platforms tailored to your business needs." processSlides={Processs} />
-
-        <Features />
-
-        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Crypto Margin Trading Exchange Development"
-          description="We pride ourselves on delivering robust and innovative crypto margin trading exchanges tailored to meet diverse client needs. Our portfolio showcases a variety of successful projects, from startups launching their first margin trading platforms to enterprises upgrading existing systems with advanced features."
         />
+
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our End-to-End Process of Crypto Margin Trading Exchanges Development
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+               Building a robust and secure crypto margin trading exchange requires a well-structured, step-by-step development process. At Comfygen, we follow industry best practices and agile methodologies to deliver scalable, 
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+        <div className="py-8">
+          <Features
+            heading="We Develop Food Delivery Apps With Advanced Panel Features"
+            description=" At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Crypto Margin Trading Exchange Development"
+            description="We pride ourselves on delivering robust and innovative crypto margin trading exchanges tailored to meet diverse client needs. Our portfolio showcases a variety of successful projects, from startups launching their first margin trading platforms to enterprises upgrading existing systems with advanced features."
+          />
+        </section>
+
+ 
 
         <TrendsSection heading="Benefits of Choosing Our Crypto Margin Trading Exchange Development Services "
           subtitle="Partnering with Comfygen for your crypto margin trading exchange development ensures you gain a competitive edge with future-ready technology, expert developers, and robust security protocols. From custom leverage management to post-launch support, our end-to-end services are designed to help you launch faster, scale efficiently, and trade with confidence."
@@ -507,16 +552,16 @@ export default function Ecommerce(props) {
             "Clear communication with agile project management",
             "Reliable post-launch support for ongoing improvements"
           ]}
-          
+
         />
 
-          <ConsultancyApproach
-            Head={JSON_DATA.consultancyHead}
-            ItemData={JSON_DATA.consultancyData}
-            imageSrc="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-ConsultancyApproach-key-feature.webp"
-            buttonText="Let’s Discuss"
-            buttonLink="/contact-us"
-                />
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-ConsultancyApproach-key-feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
 
 
         <ClientTestimonials

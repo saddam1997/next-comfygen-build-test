@@ -204,9 +204,24 @@
       "li3": " Magic Eden – Leading Solana-based NFT marketplace",
       "li4": "LooksRare – Community-driven marketplace with rewards"
     }
-   
   ],
 
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/hero-image-nft-gaming-marketplace-development.webp",
+      "title": "GamezVerse – NFT Gaming Marketplace Development",
+      "description": "Comfygen successfully developed GamezVerse, a next-generation NFT gaming marketplace that allows gamers, developers, and creators to securely trade in-game assets, characters, skins, and virtual land. As a top NFT gaming marketplace development company, we created a scalable and high-performance P2E marketplace that supports cross-chain compatibility and Play-to-Earn (P2E) integration.",
+      "link": "/portfolio/nft-gaming-marketplace-development"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-nft-real-estate-marketplace-development.webp",
+      "title": "DeepEstate – NFT Real Estate Marketplace Development",
+      "description": "Comfygen successfully developed DeepEstate, a cutting-edge NFT real estate marketplace that allows users to buy, sell, and trade tokenized real estate assets securely. As a leading NFT real estate marketplace development company, we designed a fully decentralized platform to tokenize properties, enabling fractional ownership, metaverse land trading, and real-world real estate investments via blockchain technology.",
+      "link": "/portfolio/nft-gaming-marketplace-development"
+    }
+   
+  ],
   "cardData": [
     {
       "title": "Experience",
@@ -215,7 +230,6 @@
     {
       "title": "Expertise",
       "desc": "Our team of highly skilled NFT marketplace developers is proficient in blockchain architecture, smart contract programming, AI-powered automation, and DeFi-enabled solutions. We implement cutting-edge technologies such as gas fee optimization, multi-chain interoperability, KYC integration, and AI-based NFT recommendations, ensuring a seamless user experience."
-
     },
     {
       "title": "Commitment to Quality",
@@ -228,14 +242,12 @@
     {
       "title": "Ongoing Support & Innovation",
       "desc": "Our commitment doesn’t end with deployment. We offer 24/7 technical support, regular software updates, and cutting-edge enhancements to keep your NFT marketplace ahead of the competition. Whether it's integrating new blockchain protocols, AI-driven analytics, or Metaverse compatibility, we ensure that your platform remains future-proof and high-performing."
-
     },
     {
       "title": "Customization & White-Label Solutions",
       "desc": "Every business has unique needs, and we deliver tailor-made NFT marketplace solutions that align with your vision. Whether you need a custom-built NFT marketplace from scratch or a ready-to-deploy white-label NFT marketplace, we ensure seamless branding, robust security, and advanced functionality to help you gain a competitive edge."
     }
   ],
-
   "Modus": {
     "title": "We Build a Varying Range of Applications Using Substrate Blockchain Technology!",
     "decs": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it:"
@@ -366,7 +378,6 @@
     "Our professionals are actively available to address our client's concerns or queries at any time of the day. ",
     "Our Substrate developers will make use of the latest technology Substrate blockchain development services to help curate the perfect Substrate blockchain application development services for you."
   ],
-
   "WhyChoose": [
     {
       "num": "01",

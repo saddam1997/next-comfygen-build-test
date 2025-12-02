@@ -5,18 +5,80 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import OurGames from "../Newcomponet/SectionCompoent/OurGames";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const OurGames = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OurGames"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
 import { IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
 import { IconChartBar } from '@tabler/icons-react';
+
+
+
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import OurGames from "../Newcomponet/SectionCompoent/OurGames";
+// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
+// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+
 
 
 const technologyData = [
@@ -53,7 +115,7 @@ const technologyData = [
 
 
 ];
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -200,7 +262,7 @@ export default function Mobile(props) {
 
       <Header />
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Hire Blockchain Developers in india"

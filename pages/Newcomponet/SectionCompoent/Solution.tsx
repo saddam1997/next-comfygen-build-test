@@ -27,8 +27,8 @@ const Solution = ({ heading, subheading, techData = [] }) => {
                   key={index}
                   className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/40 rounded-2xl"
                 >
-                  <h3 className="text-2xl text-[#212121] font-semibold">
-                    {title}
+                  <h3 className="text-2xl text-[#212121] font-semibold" dangerouslySetInnerHTML={{ __html: title }}>
+              
                   </h3>
                   <p
                     className="text-base font-normal mt-2"

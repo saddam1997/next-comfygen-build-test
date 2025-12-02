@@ -2,31 +2,79 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import WhyChoose from "../components/WhyChooseUs";
-import BlockChainTech from "./components/BlockChainTech";
-import CoreFeatureBlockchain from "./components/CoreFeatureBlockchain";
-import BenifitBlockchain from "./components/BenifitBlockchain";
-import IndustriesBlockchain from "../componentsnew/IndustriesBlockchain";
-// import BlockchainNav from "../blockchain/blockchain-navbar";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-export default function rummy(props) {
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeatureBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeatureBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const BenifitBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/BenifitBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesBlockchain = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesBlockchain"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import CoreFeatureBlockchain from "../Newcomponet/SectionCompoent/CoreFeatureBlockchain";
+// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+// import BenifitBlockchain from "../Newcomponet/SectionCompoent/BenifitBlockchain";
+// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
+// import IndustriesBlockchain from "../Newcomponet/SectionCompoent/IndustriesBlockchain";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+export default function rummy(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -359,7 +407,7 @@ export default function rummy(props) {
       image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/travel.svg",
       alt: "Blockchain in Travel",
     },
-  ];  
+  ];
 
   const jsonLdData = [
     {
@@ -903,11 +951,8 @@ export default function rummy(props) {
         />
       </Head>
       <div className="">
-        {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-        {/* </LazyLoad> */}
+        <BlockchainNav />
       </div>
-      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Private Blockchain Development Company"
@@ -937,7 +982,7 @@ export default function rummy(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -977,12 +1022,16 @@ export default function rummy(props) {
         </section>
         <BenifitBlockchain
           heading="Key Benefits of Private Blockchain Development for Enterprises"
+          description=""
           cards={benefitCards}
         />
-        <BlockChainTech
+
+        <TechStack
+          customTechData={JSON_DATA.defaultTechData}
           title="Technology Stack and Platforms We Use for Private Blockchain Development"
           description="As a trusted private blockchain development company, we leverage advanced frameworks, protocols, and tools to build secure, permissioned, and enterprise-grade blockchain solutions. Our technology stack is designed to deliver high performance, scalability, and data integrity—customized to match your unique business goals."
         />
+
 
         <IndustriesBlockchain
           heading="Industries We Serve with Private Blockchain Solutions"

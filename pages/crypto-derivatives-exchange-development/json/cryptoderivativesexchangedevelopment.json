@@ -108,6 +108,121 @@
       ]
     }
   ],
+
+    "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+      "title": "Centralized Crypto Exchange Platform Development",
+      "description": "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
+      "link": "/portfolio/centralized-crypto-exchange-development"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
+      "title": "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+      "description": "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
+      "link": "/portfolio/p2p-crypto-exchange-development"
+    }
+  ],
+
+ "featuresData": [
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon":" <i className='fas fa-user-circle text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/derivatives-user-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Live Profit & Loss (P&L) Tracking",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "Open Orders & Order History",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Real-Time Liquidation Alerts",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Portfolio Overview & Leverage Management",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "Multi-Asset Support",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Secure Authentication & User Settings",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+        "details": "Trade Execution & Order Types",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+        "details": "Deposit and Withdrawal Management",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/derivatives-admin-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "User Management and Role Control",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+        "details": "Trading Pair and Fee Configuration",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Real-Time Transaction Monitoring",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "KYC/AML Compliance Dashboard",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Risk Management and Liquidation Controls",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+        "details": "Liquidity and Volume Analytics",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Security and Access Controls",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "Automated Reporting and Insights",
+        "content": ""
+      }
+    ]
+  }
+],
+
   
  "LeadingSoftware": [
   {

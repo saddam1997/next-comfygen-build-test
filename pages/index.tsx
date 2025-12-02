@@ -8,6 +8,7 @@ import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePa
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
 import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
+import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
 const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
@@ -435,6 +436,8 @@ export default function Home(props: any) {
             "Cutting-edge technologies to ensure success"
           ]}
         />
+
+                {/* <ClientStories/> */}
         <ClientTestimonials
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}
@@ -443,6 +446,7 @@ export default function Home(props: any) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
+
       </div>
     </>
   );

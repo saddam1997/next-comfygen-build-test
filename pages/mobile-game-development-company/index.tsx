@@ -2,36 +2,65 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import InfoSectionRight from "../components/InfoSectionRight";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-
-const ServiceSection = dynamic(() => import("./components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ServiceSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/mobile-game-development-company/ServiceSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
 const Process = [
   {
     title: "Overview of the Game Development Lifecycle",
@@ -144,9 +173,9 @@ export default function Mobile(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
+
       <div className="">
 
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mobile-game-development-company-hero-img.webp')]">
@@ -174,24 +203,18 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        {/* 
-        <AdviceSection
-          heading="Overview of Comfygen: Your Mobile Game Development Partner"
-          ptag="Comfygen is a pioneering mobile game development company in India with a team of dedicated experts striving to create custom mobile games tailored to the needs of clients. We have been riding the wave of innovative changes in the domain of mobile game development with a consistent focus on improvement. "
-          ptag1="Our team of mobile game developers seeks the best results for clients by employing the latest technologies for designing and creating mobile games. We can serve as your mobile game development partner, beginning from the first consultation. You can rely on our guidance for successful execution and management of all stages of game development, alongside ensuring effective deployment of mobile games.    "
-          imgSrc="https://www.comfygen.com/images/overview-of-comfygen-your-mobile-game-development-partner.webp"
-          imgW={700}
-          imgH={700}
-          altTag="Overview of Comfygen: Your Mobile Game Development Partner"
-        /> */}
-        <ContactFromCenter />
-        <InfoSectionRight
+
+        <InfoSection
           heading="The Mobile Game Development Landscape"
           description1="The search for a reliable partner to help you create mobile games must have been driven by some reason. If you take a look at the existing mobile gaming app development landscape, you will find multiple mobile game design trends and preferences. For example, new technologies such as blockchain, AR, and VR provide new prospects for creating improved gameplay experiences in mobile games."
           description2="On top of it, mobile games also serve as additional streams of revenue for businesses, alongside offering the benefits of targeted marketing. The growing demand for a mobile game development company validates the fact that businesses need mobile gaming apps now more than ever. The services of a mobile gaming app development studio can help not only create engaging mobile games but also adapt to emerging trends."
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/images/the-mobile-game-development-landscape.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -204,10 +227,14 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
         <TechStack
+          customTechData={null}
           title="Technology Stack"
           description="As the world steps into a new era of technological advancements, it is reasonable to believe that mobile game developers must adopt the latest technologies. We have been successful in fulfilling our client's expectations by utilizing the latest technologies in mobile development."
         />
+
+
         {/* <WhycomfygenSection Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
         {/* <TechnoStack /> */}
         <section className="py-10 lg:py-16 bg-gradient-to-r from-[#272868] to-[#5556D1] " >
@@ -299,20 +326,24 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
       
-        <InfoSectionRight
+        <InfoSection
           heading="Additional Information"
           description1="If you have any additional queries about our services, then you can talk to our experts to learn more about our expertise in mobile gaming app development."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/images/additional-information.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
 
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        {/* <FaqSection faqData={JSON_DATA.Frequently} title="" /> */}
-        {/*<BlogSection initialData={initialData} />*/}
+
       </div>
     </>
   );

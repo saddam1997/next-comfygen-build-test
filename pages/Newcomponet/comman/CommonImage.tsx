@@ -27,7 +27,7 @@ export default function CommonImage({
       width={width}
       height={height}
       priority={priorityLoad}
-      loading={priorityLoad ? undefined : "lazy"}
+      // loading={priorityLoad ? undefined : "lazy"}
       decoding={priorityLoad ? "sync" : "async"}
       placeholder={placeholder}
       blurDataURL={blurDataURL}

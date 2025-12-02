@@ -6,13 +6,57 @@ import JSON_DATA from "./poa.json";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import BlockchainNav from "../componentsnew/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
+// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
+// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
+// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
+// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Ser = [
   {

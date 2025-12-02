@@ -3,44 +3,89 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptoexchange.json";
+
+import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import SolutionSec from "../components/SolutionSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../components/IndustriesServe";
-import ClientTestimonials from "../components/ClientTestimonials";
-import {
-  IconLayoutDashboard,
-  IconRefreshAlert,
-  IconCurrencyDollar,
-  IconShieldLock,
-  IconUserCheck,
-  IconDropletDollar,
-} from "@tabler/icons-react";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
 
 const Process = [
   {
@@ -80,38 +125,7 @@ const Process = [
   },
 ];
 
-const technologyData = [
-  {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "User-Friendly Interface",
-    desc: "An intuitive and responsive design is critical to attract and retain traders. A clean layout, easy navigation, and quick access to trading tools help both beginners and experienced users trade efficiently.",
-  },
-  {
-    img: <IconRefreshAlert stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Trading Engine",
-    desc: "A high-performance trading engine processes buy and sell orders instantly with minimal latency. This ensures seamless matching of orders, reduces slippage, and provides users with accurate market prices at all times.",
-  },
-  {
-    img: <IconCurrencyDollar stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Support",
-    desc: "Supporting a broad variety of cryptocurrencies and tokens allows your exchange to cater to diverse trader preferences. This includes popular coins like Bitcoin and Ethereum, as well as emerging altcoins and stablecoins.",
-  },
-  {
-    img: <IconShieldLock stroke={1.5} className="w-12 h-12" />,
-    title: "Robust Security Measures",
-    desc: "Security is paramount in crypto exchanges. Features like two-factor authentication (2FA), multi-signature wallets, cold storage for funds, and encryption protocols protect user assets and data from cyber threats.",
-  },
-  {
-    img: <IconUserCheck stroke={1.5} className="w-12 h-12" />,
-    title: "KYC/AML Compliance",
-    desc: "Integrating Know Your Customer (KYC) and Anti-Money Laundering (AML) protocols helps your platform comply with regulatory requirements, build user trust, and prevent fraudulent activities on your exchange.",
-  },
-  {
-    img: <IconDropletDollar stroke={1.5} className="w-12 h-12" />,
-    title: "Liquidity Management",
-    desc: "Effective liquidity management mechanisms, such as liquidity pools and market-making strategies, ensure users can execute trades smoothly without significant price fluctuations or delays.",
-  },
-];
+
 const testimonialData = [
   {
     text: "“We chose Comfygen for our crypto exchange project, and they exceeded our expectations. The platform they built for us is fast, reliable, and highly secure, offering features we didn’t even think of. It has become the backbone of our trading operations.”",
@@ -145,38 +159,7 @@ export default function Ecommerce(props) {
   };
 
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-        head: "Centralized Crypto Exchange Platform Development",
-        name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/centralized-crypto-exchange-development",
-      },
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-        head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-        name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/p2p-crypto-exchange-development",
-      },
-    ],
-  };
+
 
   const jsonLdData = [
 
@@ -449,29 +432,27 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[40px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/cryptocurrency-exchange-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Cryptocurrency Exchange Development Company"
-            ptag="Build Your Own Secure and Scalable Cryptocurrency Exchange with Comfygen"
-            ptag1="If you’re planning to launch a crypto trading platform that can actually handle real users, high-volume transactions, and strict security demands, you need more than basic software. You need a Best Cryptocurrency Exchange Development Company that understands blockchain Networks. Comfygen Technologies helps businesses create powerful cryptocurrency exchanges from centralized and decentralized platforms to hybrid and multi-chain trading systems. And built the Cryptocurrency Exchange software is for long-term growth."
-            li="Bank-grade security and multi-layer protection"
-            li1="Ultra-fast matching engine and real-time trading features"
-            li2="Scalable architecture for spot, futures, and margin trading"
-            li3="Fully customizable modules, wallets, and liquidity options"
-            li4="Compliance-ready infrastructure with KYC, AML, and audit support"
+      <Header />
+      <div className="overflow-hidden lg:pt-[100px]">
+        <HeroSectionForAllPages
+          heading="Cryptocurrency Exchange Development Company"
+          ptag="Build Your Own Secure and Scalable Cryptocurrency Exchange with Comfygen"
+          ptag1="If you’re planning to launch a crypto trading platform that can actually handle real users, high-volume transactions, and strict security demands, you need more than basic software. You need a Best Cryptocurrency Exchange Development Company that understands blockchain Networks. Comfygen Technologies helps businesses create powerful cryptocurrency exchanges from centralized and decentralized platforms to hybrid and multi-chain trading systems. And built the Cryptocurrency Exchange software is for long-term growth."
+          li="Bank-grade security and multi-layer protection"
+          li1="Ultra-fast matching engine and real-time trading features"
+          li2="Scalable architecture for spot, futures, and margin trading"
+          li3="Fully customizable modules, wallets, and liquidity options"
+          li4="Compliance-ready infrastructure with KYC, AML, and audit support"
 
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/cryptocurrency-exchange-dev-hero-img.webp"
+        />
+
 
         <AboutSection
           title="About Company"
@@ -584,9 +565,12 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <InfoSectionLeft
+        <InfoSection
           heading="Why White Label Crypto Exchanges Are Ideal for Startups and Enterprises"
           description1="<a class='text-blue-800 font-semibold' href='/white-label-crypto-exchange-development'>White label crypto exchanges</a> provide an efficient and strategic way for both startups and established enterprises to enter the booming cryptocurrency market without the need for extensive technical resources or long development timelines."
+          description2=""
+          description3=""
+          dec=""
           points={[
             "Fast Launch: Get your exchange live quickly.",
             "Cost Savings: Avoid the high costs of building.",
@@ -601,42 +585,6 @@ export default function Ecommerce(props) {
           link="/contact-us"
           linkText="Lets Discuss"
         />
-        {/* <SolutionSec
-          heading="Key Features of Crypto Exchange Platform"
-          subheading="Building a successful <a class='text-blue-800 font-semibold' href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' >cryptocurrency exchange</a> requires integrating powerful and user-friendly features that enhance security, performance, and trading experience. Here are the essential features every crypto exchange platform should have:"
-          techData={technologyData}
-        /> */}
-
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                Security Features of Cryptocurrency Exchange Platform
-                </h2>
-                <p>
-                Security is the backbone of any successful.
-                {" "}
-                <a className="text-blue-800 font-semibold" href="https://www.comfygen.com/blog/2025s-most-secure-crypto-exchanges-safety-features-reviews/">cryptocurrency exchange</a> 
-                {" "}Protecting users’ funds and data builds trust and ensures compliance with regulations. Here are the vital security features your crypto exchange must have:
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.FutureDriven.map((elem) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p className=" text-base font-normal mt-2">{desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -651,19 +599,22 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Cryptocurrency Exchange Development Portfolio"
-          description="At Comfygen, we take pride in our extensive portfolio of cryptocurrency exchange solutions that showcase our ability to deliver secure, scalable, and feature-rich platforms. Our Crypto Exchange Development portfolio includes a wide range of crypto exchange development projects, including both centralized and decentralized exchanges, that have successfully met the unique needs of our clients."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Cryptocurrency Exchange Development Portfolio"
+            description="At Comfygen, we take pride in our extensive portfolio of cryptocurrency exchange solutions that showcase our ability to deliver secure, scalable, and feature-rich platforms. Our Crypto Exchange Development portfolio includes a wide range of crypto exchange development projects, including both centralized and decentralized exchanges, that have successfully met the unique needs of our clients."
+          />
+        </section>
+
+
         <TechStack
           title="Our Cryptocurrency Development Technology Stack"
           description=""
         />
-        <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -722,6 +673,11 @@ export default function Ecommerce(props) {
           heading="Industries We Serve – Powering Crypto Exchange Solutions Across Sectors"
           description="At Comfygen, we provide custom crypto exchange development solutions tailored to the unique needs of various industries. Our robust and scalable cryptocurrency exchange platforms are designed to cater to a diverse range of sectors, ensuring seamless integration and operational efficiency for businesses across the globe."
           sliderData={JSON_DATA.customSliderData}
+        />
+
+        <ClientTestimonials
+          testimonials={testimonialData}
+          heading="What Our Clients Say"
         />
         <Faq
           faqData={JSON_DATA.Frequently}

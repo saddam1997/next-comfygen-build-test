@@ -3,65 +3,65 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/iot.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import PortfolioSec from "../components/PortfolioSec";
-import TechStack from "../components/TechStack";
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+// Dynamic imports
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
 );
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/iot-portfolio-img.webp",
-      head: "Innovative IoT Integration",
-      name: "Comfygen proudly presents its collaboration with Solaris Robots on an innovative IoT project. Tasked with enhancing disinfection processes, our team engineered a cutting-edge IoT solution that integrates seamlessly with Solaris Robots' robotic technologies. This advancement revolutionized disinfection methods, ensuring heightened efficiency, safety, and data monitoring capabilities. With features like real-time monitoring, remote control, predictive maintenance, and data analytics, our solution empowers Solaris Robots to set new standards in the industry. Leveraging IoT sensors, cloud computing, data analytics, and stringent cybersecurity measures, this project signifies our commitment to driving technological innovation. Contact Comfygen today to explore how we can elevate your project with similar transformative IoT solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    },
-    {
-      img: "https://www.comfygen.com/img/iot-portfolio-img2.webp",
-      head: "Imaginative IoT Integration",
-      name: "Comfygen proudly presents its collaboration with jetbrain on an innovative IoT project. Tasked with enhancing disinfection processes, our team engineered a cutting-edge IoT solution that integrates seamlessly with jetbrain' robotic technologies. This advancement revolutionized disinfection methods, ensuring heightened efficiency, safety, and data monitoring capabilities. With features like real-time monitoring, remote control, predictive maintenance, and data analytics, our solution empowers jetbrain to set new standards in the industry. Leveraging IoT sensors, cloud computing, data analytics, and stringent cybersecurity measures, this project signifies our commitment to driving technological innovation. Contact Comfygen today to explore how we can elevate your project with similar transformative IoT solutions.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
 
 
-  ],
-};
-
-export default function Altcoin(props) {
+export default function Altcoin(props:any) {
   let { initialData } = props;
 
   let { Modus } = JSON_DATA;
@@ -268,10 +268,9 @@ export default function Altcoin(props) {
         />
          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+        <Header/>
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/iot-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Best Custom IoT App Development Company in India"
@@ -308,7 +307,7 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -337,11 +336,16 @@ export default function Altcoin(props) {
           </div>
         </section> 
         
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Iot Development Portfolio"
-          description="Showcasing our expertise in custom IoT development, here are some of the innovative solutions we've delivered:"
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Iot Development Portfolio"
+            description="Showcasing our expertise in custom IoT development, here are some of the innovative solutions we've delivered"
+          />
+        </section>
+
+
         <TechStack
           title="Discover Our Exclusive Technology Stack For IoT App Development"
           description="At Comfygen, we use the latest technology stack for IoT app development. We keep up with the ongoing trends and developing technologies to create scalable, secure, and efficient IoT apps. Here is the essential technology stack we focus on"

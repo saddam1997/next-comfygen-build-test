@@ -1,40 +1,97 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptopaymentgatewaydevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+)
+
+const UseCaseSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/UseCaseSection"),
+  { loading: loader, ssr: true }
+)
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 const Processs = [
   {
     title: "Requirement Analysis & Planning",
@@ -74,38 +131,7 @@ const Processs = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-      head: "Centralized Crypto Exchange Platform Development",
-      name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/centralized-crypto-exchange-development",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-      head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-      name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/p2p-crypto-exchange-development",
-    },
-  ],
-};
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -136,7 +162,8 @@ export default function Ecommerce(props) {
       "postalCode": "M1G3S7",
       "telephone": "+1 579-977-4475"
     },
-    {"@context": "https://schema.org",
+    {
+      "@context": "https://schema.org",
       "@type": "Service",
       "name": "Top Crypto Payment Gateway Development Company in India & USA",
       "provider": {
@@ -155,13 +182,13 @@ export default function Ecommerce(props) {
         "Crypto payment gateway development India",
         "Crypto payment gateway development USA"
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
-      
-        
-        
+
+
+
       ]
 
     },
@@ -232,15 +259,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Top Crypto Payment Gateway Development Company in India & USA",
-      "image":"https://www.comfygen.com/comfygen-images/crypto-payment-gateway-development/crypto-payment-gateway-about.webp",
-      "description":"Leading crypto payment gateway development company in India & USA offering secure blockchain-based solutions to accept Bitcoin, Ethereum & altcoins globally.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Top Crypto Payment Gateway Development Company in India & USA",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-payment-gateway-development/crypto-payment-gateway-about.webp",
+      "description": "Leading crypto payment gateway development company in India & USA offering secure blockchain-based solutions to accept Bitcoin, Ethereum & altcoins globally.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
 
     },
@@ -306,17 +335,17 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
   ];
 
   return (
     <>
-    <Head>
+      <Head>
         <title>
           Crypto Payment Gateway Development Company | Comfygen
         </title>
@@ -456,19 +485,19 @@ export default function Ecommerce(props) {
 
 
       {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
+      <Header />
       {/* </LazyLoad> */}
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
           heading="Top Crypto Payment Gateway Development Company"
           ptag="Comfygen is the best crypto payment gateway development company, delivering secure, fast, and scalable Crypto Payment Gateway Development solutions for businesses and enterprises. Our Crypto Payment Gateway Development solution supports multiple cryptocurrencies, multi-chain integration, real-time transaction processing, and advanced fraud protection. Fully customizable and compliant, our Crypto Payment Gateway platforms enable seamless payments, easy wallet integration, and smooth checkout experiences for customers worldwide."
-          
+
           li="Multi-cryptocurrency & multi-chain support"
           li1="Real-time transaction processing"
           li2="Advanced security & fraud protection"
           li3="Customizable, scalable architecture with 24/7 support"
-         
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -492,39 +521,66 @@ export default function Ecommerce(props) {
             "Seamless Integration",
             "Transparency & Traceability"
           ]}
-          
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-payment-gateway-development/crypto-payment-gateway-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-       
 
-        <ServicesSection 
-          heading="Our Crypto Payment Gateway Development Services"
-          subtitle="We offer end-to-end crypto payment gateway development services tailored for businesses ranging from startups to global fintech enterprises. Our offerings are built for high performance, unmatched security, scalability, and real-time processing, empowering you to seamlessly accept, manage, and scale crypto transactions across borders."
-          servicesData={JSON_DATA.servicesData}
-         />
 
-        
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Crypto Payment Gateway Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                We offer end-to-end crypto payment gateway development services tailored for businesses ranging from startups to global fintech enterprises. Our offerings are built for high performance, unmatched security, scalability, and real-time processing, empowering you to seamlessly accept, manage, and scale crypto transactions across borders.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-          <SolutionsFeature 
-            title="Use Cases of Crypto Payment Gateway Development"
-            subtitle="Crypto payment gateways are transforming the way businesses process digital transactions by enabling secure, fast, and cost-effective cryptocurrency payments. Below are some of the most impactful use cases driving adoption across industries:"
-            data={JSON_DATA.LeadingSoftware}
 
-          />
 
-        <ProcessSection title="Crypto Payment Gateway Development Process" description="Our crypto payment gateway development process ensures a secure, scalable, and efficient system tailored to your business needs. We follow a step-by-step approach to deliver seamless blockchain payment solutions with full regulatory compliance." processSlides={Processs} />
 
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Crypto Payment Gateway Development"
-          description="At Comfygen, we take pride in delivering cutting-edge crypto payment gateway solutions tailored to diverse industries worldwide. Our portfolio showcases a range of successful projects where we have integrated secure, scalable, and compliant blockchain payment systems for e-commerce, fintech, and service platforms."
+        <SolutionsFeature
+          title="Use Cases of Crypto Payment Gateway Development"
+          subtitle="Crypto payment gateways are transforming the way businesses process digital transactions by enabling secure, fast, and cost-effective cryptocurrency payments. Below are some of the most impactful use cases driving adoption across industries:"
+          data={JSON_DATA.LeadingSoftware}
+
         />
 
-        
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Crypto Payment Gateway Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Our crypto payment gateway development process ensures a secure, scalable, and efficient system tailored to your business needs. We follow a step-by-step approach to deliver seamless blockchain payment solutions with full regulatory compliance.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+
+        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Crypto Payment Gateway Development"
+            description="t Comfygen, we take pride in delivering cutting-edge crypto payment gateway solutions tailored to diverse industries worldwide. Our portfolio showcases a range of successful projects where we have integrated secure, scalable, and compliant blockchain payment systems for e-commerce, fintech, and service platforms."
+          />
+        </section>
+
+
+
         <TechStack
           title="Crypto Payment Gateway Development Technology Stack"
           description="We build secure crypto gateways using:"
@@ -557,7 +613,7 @@ export default function Ecommerce(props) {
             "Custom & Scalable Architecture",
             "Ongoing Maintenance & Support"
           ]}
-          
+
         />
 
         <ClientTestimonials

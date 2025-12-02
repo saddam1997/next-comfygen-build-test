@@ -176,8 +176,7 @@ const ClientTestimonials = ({
                         )}
                       </p>
                       <div>
-                        <p className="text-gray-900 font-semibold">
-                          {testimonial.name}
+                        <p className="text-gray-900 font-semibold"  dangerouslySetInnerHTML={{ __html: testimonial.name }}>
                         </p>
                         <p className="text-blue-600">({testimonial.title})</p>
                       </div>

@@ -3,18 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
-
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-
-import Faq from "../components/Faq";
-import CardItem from "../components/CardItem";
-import ModelsSec from "../components/ModelsSec";
-import ProcessSec from "../components/ProcessSec";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconCurrencyDollar,
   IconFileCode,
@@ -23,19 +11,71 @@ import {
   IconShieldCheck,
   IconWallet,
 } from "@tabler/icons-react";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import Guidance from "../components/Guidance";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  { loading: loader, ssr: true }
+);
+
+const Guidance = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Guidance"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
 export default function Ecommerce(props) {
   let { initialData } = props;
 
@@ -118,37 +158,7 @@ export default function Ecommerce(props) {
     },
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/hero-image-nft-gaming-marketplace-development.webp",
-        head: "GamezVerse – NFT Gaming Marketplace Development",
-        name: "Comfygen successfully developed GamezVerse, a next-generation NFT gaming marketplace that allows gamers, developers, and creators to securely trade in-game assets, characters, skins, and virtual land. As a top NFT gaming marketplace development company, we created a scalable and high-performance P2E marketplace that supports cross-chain compatibility and Play-to-Earn (P2E) integration.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-image-nft-real-estate-marketplace-development.webp",
-        head: "DeepEstate – NFT Real Estate Marketplace Development",
-        name: "Comfygen successfully developed DeepEstate, a cutting-edge NFT real estate marketplace that allows users to buy, sell, and trade tokenized real estate assets securely. As a leading NFT real estate marketplace development company, we designed a fully decentralized platform to tokenize properties, enabling fractional ownership, metaverse land trading, and real-world real estate investments via blockchain technology.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-      },
 
-    ],
-  };
 
 
   const faqSchema = {
@@ -244,7 +254,7 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-        NFT Marketplace Development Company | NFT Software Development Services
+          NFT Marketplace Development Company | NFT Software Development Services
         </title>
         <meta
           name="description"
@@ -340,30 +350,30 @@ export default function Ecommerce(props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+      <Header />
+
       <div className="overflow-hidden pt-[40px]">
         {/* hero section */}
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/nft-marketplace-development-company-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="NFT Marketplace Development Company"
-            ptag1="Unlock the potential of NFTs with Comfygen, a leading NFT marketplace development company. We provide custom NFT marketplace development services, including white-label solutions, multi-chain support, and secure smart contracts to help you launch a scalable and profitable NFT platform."
-            li="Custom & White-Label Solutions – Launch from scratch or use a ready-made NFT marketplace platform."
-            li1="Multi-Chain Support – Ethereum, Polygon, Solana, Binance Smart Chain & more."
-            li2="Smart Contract Integration – Secure, automated, and trustless transactions."
-            li3="Multi-Wallet Integration – Supports MetaMask, Trust Wallet, Coinbase Wallet, and others."
-            li4="Auction & Bidding System – Enable fixed-price sales, auctions, and bidding."
-            li5="Gas Fee Optimization – Reduce transaction costs for seamless NFT trading."
-            li6="User-Friendly Dashboard – Intuitive interface for buyers, sellers, and admins."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="NFT Marketplace Development Company"
+          ptag1="Unlock the potential of NFTs with Comfygen, a leading NFT marketplace development company. We provide custom NFT marketplace development services, including white-label solutions, multi-chain support, and secure smart contracts to help you launch a scalable and profitable NFT platform."
+          li="Custom & White-Label Solutions – Launch from scratch or use a ready-made NFT marketplace platform."
+          li1="Multi-Chain Support – Ethereum, Polygon, Solana, Binance Smart Chain & more."
+          li2="Smart Contract Integration – Secure, automated, and trustless transactions."
+          li3="Multi-Wallet Integration – Supports MetaMask, Trust Wallet, Coinbase Wallet, and others."
+          li4="Auction & Bidding System – Enable fixed-price sales, auctions, and bidding."
+          li5="Gas Fee Optimization – Reduce transaction costs for seamless NFT trading."
+          li6="User-Friendly Dashboard – Intuitive interface for buyers, sellers, and admins."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/nft-marketplace-development-company-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="NFT Marketplace Development"
@@ -382,12 +392,12 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our NFT Marketplace Development Services
+                Our NFT Marketplace Development Services
               </h2>
               <p className="text-base text-center font-normal">
                 At Comfygen, we offer a comprehensive range of NFT marketplace
@@ -402,9 +412,12 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <InfoSectionLeft
+        <InfoSection
           heading="White Label NFT Marketplace Development"
           description1="At Comfygen, we offer white-label NFT marketplace development solutions that enable businesses to launch a fully functional, customizable, and scalable NFT marketplace in no time. Whether you want to create an NFT platform for art, gaming, real estate, or collectibles, our pre-built solution is tailored to meet your needs."
+          description2=""
+          description3=""
+          dec=""
           points={[
             "Fully Customizable UI/UX ",
             "Multi-Blockchain Support ",
@@ -419,12 +432,17 @@ export default function Ecommerce(props) {
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our NFT marketplace development Portfolio"
-          description="At Comfygen, we have successfully developed custom NFT marketplace solutions that empower businesses to tokenize digital assets seamlessly. Our expertise spans secure smart contract integration, multi-chain compatibility, and advanced trading features, ensuring a scalable and high-performance NFT marketplace. With a focus on user-friendly design, high-speed transactions, and enhanced security, we have delivered NFT marketplaces for real estate, gaming, art, collectibles, and more. Whether you're looking for a custom-built solution or a white-label NFT marketplace, our team ensures a seamless development process from ideation to deployment."
-          description1="Explore our NFT marketplace development portfolio to see how we bring blockchain innovation to life!"
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our NFT marketplace development Portfolio"
+            description="At Comfygen, we have successfully developed custom NFT marketplace solutions that empower businesses to tokenize digital assets seamlessly. Our expertise spans secure smart contract integration, multi-chain compatibility, and advanced trading features, ensuring a scalable and high-performance NFT marketplace. With a focus on user-friendly design, high-speed transactions, and enhanced security, we have delivered NFT marketplaces for real estate, gaming, art, collectibles, and more. Whether you're looking for a custom-built solution or a white-label NFT marketplace, our team ensures a seamless development process from ideation to deployment."
+          />
+        </section>
+
+
 
         <SolutionSec
           heading="Features of Our NFT Marketplace Development"
@@ -453,9 +471,13 @@ export default function Ecommerce(props) {
           subheading="At Comfygen, we specialize in developing secure, feature-rich, and scalable NFT marketplace solutions that cater to various industries, including art, gaming, real estate, music, and collectibles. Our expertise in blockchain technology, smart contract development, and cross-chain integration allows us to deliver custom and white-label NFT marketplace solutions that align with the latest industry trends."
           techData={JSON_DATA.cardData}
         />
-        <InfoSectionLeft
+        <InfoSection
           heading="Create Your Own NFT Marketplace with Comfygen"
           description1="Comfygen is a team of knowledgeable developers that specializes in NFT marketplaces a nd provides excellent services at a reasonable cost. Custom design, smart contract development, payment gateway integration, security testing, and maintenance are among the services they offer. For reputable and high-quality NFT marketplaces, trust Comfygen. Select Comfygen for the development of your own NFT marketplace because they possess the know-how, dedication, and experience necessary to build a successful platform that suits your particular requirements."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp"
           link="/contact-us"
           linkText="LET'S CONNECT "

@@ -1,35 +1,88 @@
-
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/aicryptoexchangedevelopment.json";
-import { useState } from "react";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import UseCaseSection from "../componentsnew/UseCaseSection";
-import Slider from "../components/Slider";
-import CallToAction from "../components/CallToAction";
 
-const Header = dynamic(() => import("../components/Header"), {
-  // loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+)
+
+const UseCaseSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/UseCaseSection"),
+  { loading: loader, ssr: true }
+)
 
 
 
@@ -388,10 +441,8 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
+
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
@@ -428,14 +479,24 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+               AI-Powered Crypto Exchange Development Service 
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen AI-powered crypto exchange development service designed to enhance trading accuracy, operational efficiency, and platform security. By integrating advanced AI technologies, including machine learning, natural language processing (NLP), and <a href='https://www.comfygen.com/data/analytics-service-provider' className='text-blue-600 font-semibold'>advanced analytics</a>, we build customized crypto exchange platforms that provide seamless user experiences and robust protection against evolving cyber threats. Our <a href='https://www.comfygen.com/blockchain-development' className='text-blue-600 font-semibold'>Blockchain Development</a> team ensures your crypto exchange remains agile, scalable, and competitive in the fast-paced digital asset market.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
 
-        <ServicesSection
-          heading="AI-Powered Crypto Exchange Development Service "
-          subtitle="Comfygen AI-powered crypto exchange development service designed to enhance trading accuracy, operational efficiency, and platform security. By integrating advanced AI technologies, including machine learning, natural language processing (NLP), and <a href='https://www.comfygen.com/data/analytics-service-provider' class='text-blue-600 font-semibold'>advanced analytics</a>, we build customized crypto exchange platforms that provide seamless user experiences and robust protection against evolving cyber threats. Our <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>Blockchain Development</a> team ensures your crypto exchange remains agile, scalable, and competitive in the fast-paced digital asset market."
-          servicesData={JSON_DATA.servicesData}
-        />
 
 
         <CallToAction
@@ -454,13 +515,30 @@ export default function Ecommerce(props) {
 
         />
 
-        <ProcessSection title="Our End-to-End AI Crypto Exchange Development Process" description="Developing an AI-powered crypto exchange isn’t just about adding algorithms. It’s a full lifecycle approach, and we treat every stage with the care it deserves. Here’s how Comfygen brings your AI-driven trading platform to life from start to finish." processSlides={JSON_DATA.Processs} />
+
+        
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              Our End-to-End AI Crypto Exchange Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Developing an AI-powered crypto exchange isn’t just about adding algorithms. It’s a full lifecycle approach, and we treat every stage with the care it deserves. Here’s how Comfygen brings your AI-driven trading platform to life from start to finish.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={JSON_DATA.Processs} />
+          </div>
+        </section>
+
+        
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Web & App Development Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."

@@ -1,23 +1,7 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/Decentralized.json";
-
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import ClientTestimonials from "../components/ClientTestimonials";
-import NewSection from "../components/NewSection";
-import TechStack from "../componentsnew/TechStack";
-import SolutionSec from "../componentsnew/SolutionSec";
 import {
   IconLayersSubtract,
   IconUserShield,
@@ -32,18 +16,73 @@ import {
   IconShield,
   IconShieldLock
 } from "@tabler/icons-react";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
 
 const testimonialData = [
   {
@@ -373,53 +412,7 @@ export default function Ecommerce(props) {
 
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/decentralised-mlm.webp",
-        head: "Decentralized MLM",
-        name: "Join Decentralised MLM Web - Where Blockchain Fuels Fairness, Rewards Fuel Ambition, and Community Fuels Success. Embrace the Future of Network Marketing, Redefined.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/decentralized-blockchain-based-cryptocurrency",
-      },
-      {
-        img: "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-        head: "M7Coin Web Wallet",
-        name: "The M7Coin Web Wallet is designed to transform cryptocurrency management, offering a secure and intuitive platform for seamless transactions. With a focus on user experience, it enables effortless storage, sending, and receiving of M7Coins, ensuring accessibility in the ever-evolving digital currency landscape.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/m7-coin",
-      },
 
-      {
-        img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-        head: "Aria Coin Cryptocurrency",
-        name: "Welcome to ARIA Currency – the future of digital transactions. Built for security, accessibility, and efficiency, ARIA empowers users with seamless, decentralized financial solutions. Join us in redefining trust in the digital economy.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/blockchain-based-cryptocoin-development",
-      },
-    ],
-  };
   return (
     <>
       <Head>
@@ -521,29 +514,26 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[40px]">
+      <Header />
+      <div className="overflow-hidden lg:pt-[100px]">
         {/* hero section */}
+        <HeroSectionForAllPages
+          heading="Decentralized Exchange Development Company"
+          ptag="Take your crypto trading platform to the next level with Comfygen, a leading decentralized exchange development company in India. Our decentralized exchange development services deliver strong blockchain security, lightning-fast transactions, and complete transparency. Empower your users with peer-to-peer crypto trading, cross-chain crypto token swaps, and automated liquidity management, while enjoying a scalable platform designed for future growth and seamless integration with crypto wallets and smart contracts."
+          li="Secure & Transparent Trading"
+          li1="Cross-Chain Token Swaps"
+          li2="Automated Liquidity Management"
+          li3="Scalable Platform Architecture"
 
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/decentralized-exchange-development/decentralized-exchange-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Decentralized Exchange Development Company"
-            ptag="Take your crypto trading platform to the next level with Comfygen, a leading decentralized exchange development company in India. Our decentralized exchange development services deliver strong blockchain security, lightning-fast transactions, and complete transparency. Empower your users with peer-to-peer crypto trading, cross-chain crypto token swaps, and automated liquidity management, while enjoying a scalable platform designed for future growth and seamless integration with crypto wallets and smart contracts."
-            li="Secure & Transparent Trading"
-            li1="Cross-Chain Token Swaps"
-            li2="Automated Liquidity Management"
-            li3="Scalable Platform Architecture"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/decentralized-exchange-development/decentralized-exchange-dev-hero-img.webp"
+        />
 
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
 
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
 
@@ -596,7 +586,7 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        <ContactFromCenter />
+
         {/* services */}
         <ConsultancyApproach
           Head={JSON_DATA.keyfeatureHead}
@@ -665,11 +655,17 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Decentralized Crypto Exchange Portfolio"
-          description="Over the years, Comfygen has successfully designed and delivered high-performance decentralized exchange (DEX) platforms for startups, SMEs, and enterprises across the globe. Our decentralized crypto exchange portfolio demonstrates our deep technical expertise, innovative features, and client-centric approach in the blockchain space."
-        />
+
+
+
+       <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Decentralized Crypto Exchange Portfolio"
+            description="Over the years, Comfygen has successfully designed and delivered high-performance decentralized exchange (DEX) platforms for startups, SMEs, and enterprises across the globe. Our decentralized crypto exchange portfolio demonstrates our deep technical expertise, innovative features, and client-centric approach in the blockchain space."
+          />
+        </section>
+
 
         <SolutionSec
           heading="Latest Technologies Implemented in Decentralized Exchange Development"

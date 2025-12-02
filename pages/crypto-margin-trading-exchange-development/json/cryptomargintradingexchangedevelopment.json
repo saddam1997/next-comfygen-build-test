@@ -130,6 +130,122 @@
   }
 ],
 
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Trader Panel",
+    "icon": "<i className='fas fa-exchange-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-trader-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Leverage Selection",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+        "details": "Long/Short Trading",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Margin Call Alerts",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Auto Liquidation",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Real-Time Portfolio Analytics",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "Multiple Order Types",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Cross & Isolated Margin Support",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+        "details": "Multi-Device Compatibility",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-admin-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+        "details": "Risk Control Dashboard",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Leverage Management Settings",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "User Verification & Compliance",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "Fee Customization",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Reporting & Analytics",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Role-Based Access Control",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Real-Time Trade Monitoring",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Automated Withdrawal Management",
+        "content": ""
+      }
+    ]
+  }
+],
+
+ "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/cloud-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "Cloud-Based Crypto Trading Bot",
+      "description": "We develop an advanced, cloud-based crypto trading bot designed to automate trading strategies for beginners and experienced traders. It integrates seamlessly with major cryptocurrency exchanges, providing users with powerful trading tools to maximize their profits with minimal effort. Our development team at Comfygen built this platform with a focus on automation, real-time analytics, and user-friendly functionality.",
+      "link": "/portfolio/cloud-based-crypto-trading-bot"
+    },
+    {
+      "image": "https://www.comfygen.com/image/ai-based-crypto-trading-bot-crypto-trading-bot-development.webp",
+      "title": "AI-Based Crypto Trading Bot Development",
+      "description": "At Comfygen, we developed an advanced crypto trading bot solution designed to automate trading strategies, optimize market execution, and maximize profits. Our cutting-edge platform seamlessly integrates with multiple exchanges, providing traders with AI-driven insights and powerful automation tools.",
+      "link": "/portfolio/crypto-trading-bot-development"
+    }
+    
+  ],
+
+
  "LeadingSoftware": [
   {
     "num": "01",

@@ -71,6 +71,151 @@
       "desc": "Cater to the tech-savvy audience with a tech & science magazine app developed by a top app developer magazine. Our magazine app development solutions include AI-driven content discovery, immersive AR/VR experiences, and real-time tech news updates to keep readers informed and engaged."
     }
   ],
+
+
+    "featuresData": [
+    {
+      "id": 1,
+      "title": "For Readers",
+      "icon": " <i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/img/for-readers.svg",
+      "additionalDetails": [
+        {
+          "details": "Content diversity with a wide range of genres. ",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Tailored recommendations based on reading habits.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Offline access by downloading content.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Interactive elements such as videos and quizzes.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Intuitive navigation and seamless reading experience.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Convenient management of subscriptions and payments.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Easy sharing of articles and content on social media.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "For News Publishers",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/img/for-media-professionals.webp",
+      "additionalDetails": [
+        {
+          "details": "24/7 connectivity with readers.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Enhancement of app quality with recent updates.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Social media integration.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Access to valuable insights.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multiple publishing modes.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Analytics to understand reader behavior.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details":  "Customizable notifications.",
+          "emoji": "",
+          "content": ""
+        }
+
+      ]
+    },
+    {
+      "id": 3,
+      "title":  "For Other Industrial Publishers",
+      "img": "https://www.comfygen.com/img/for-other-industrial-publishers.svg",
+      "icon": " <i className='fas fa-wallet text-4xl'></i>",
+      "additionalDetails": [
+        {
+          "details": "Real-time content update feature of industry news.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multimedia integration of industry-specific videos and images.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Personalization based on reader preferences.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Metrics to get insights for content optimization.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Easy subscription options and management.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Ability to download content for offline reading.",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Targeted advertising placements for industry-specific services." ,
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Industry-specific articles, reports, and insights.",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+
+  ],
+
+
+
+
+
   "pageData": {
     "title": "Why Choose Comfygen for Magazine Application Development?",
     "description": "At Comfygen, we will witness great experience in magazine application development. We let our clients focus on the core competencies of their business and leave their app development in our expert's hands. Here are the compelling reasons to hire us:",

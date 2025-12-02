@@ -2,28 +2,91 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import HireDeveloper from "../components/HireDeveloper";
-import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import ProcessSec from "../components/ProcessSec";
-import IndustriesServe from "../components/IndustriesServe";
-import TechStack from "../components/TechStack";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
-import SolutionSec from "../components/SolutionSec";
-import { IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
-import Features from "./components/Features";
 
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+
+
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+import { IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
+
 
 
 const ContactFromCenter = dynamic(
@@ -167,37 +230,7 @@ const technologyData = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/eangex-social-media-app-portfolio.webp",
-      head: "EangeX A social media platform",
-      name: "EngageX is a dynamic web application that allows users to chat, share reels, and celebrate special moments with friends and family. A platform designed for real-time interaction and seamless content sharing.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/eange-x",
-    },
-    {
-      img: "https://www.comfygen.com/image/fankeyz-portfolio.webp",
-      head: "Fankeyz",
-      name: "Fankeyz is a dynamic social media mobile app designed to foster authentic connections. Share moments, join vibrant communities, and make meaningful friendships—all in one seamless platform.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -290,10 +323,10 @@ export default function Mobile(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/social-media-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Custom Social Media App Development Company in India"
@@ -333,41 +366,37 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+
+
+
         <section className="py-8">
-          <PortfolioSec
-            techData={techDataForPage1}
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
             heading="Our Social Media Apps Portfolio"
             description="Discover our portfolio of innovative social media app development projects that emphasize user engagement, seamless connectivity, and modern features. Each project reflects our dedication to creating interactive, scalable, and impactful solutions tailored to meet diverse social networking needs."
           />
         </section>
-        <Features />
+
+
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='3'
+            heading='Powerful Features to Build a Successful Social Media App'
+            description='Comfygen builds smart social media apps that are interactive and packed with advanced features. Our social networking apps provide real-time communication, content sharing, engagement tools, and complete admin control.'
+            featuresData={JSON_DATA.featuresData}
+          />,
+        </section>
+
+
+
 
         <SolutionSec
           heading="Tailor-Made Social Media App Development Solutions for Unique Digital Experiences"
           subheading="At Comfygen, we specialize in delivering custom social media app development solutions tailored to your unique business needs. Our expert social media mobile app development team ensures seamless integration of advanced features, creating a platform that enhances user engagement and drives business growth."
           techData={technologyData}
         />
-        {/* <InfoSectionRight
-          heading="Discover the Features that Power Engaging Social Experiences"
-          description1="As a top social media app development company in Jaipur, we integrate essential features and advanced functionalities to build standout social networking apps"
-          points={[
-            "Newsfeed",
-            "Story Sharing",
-            "Filters and Emojis",
-            "Hashtags",
-            "Voice Recording",
-            "Profile Linking",
-            "Live Streaming",
-            "Google Maps",
-            "Push Notifications",
-            "Chatbot Integration",
-            "Real-time Messaging",
-            "Privacy Controls"
-          ]}
-          imageSrc="https://www.comfygen.com/img/features-for-empowering-your-social-media-apps.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        /> */}
+
         <CallToAction
           heading="Do You Have Any Other Questions About Our Social Media App Development Expertise?"
           text="As one of the leading destinations for social network app development services, we have proven our capabilities for delivering effective results for different types of apps. If you have any questions about our capability in social media app development, then you must consult with our experts right now."
@@ -417,7 +446,7 @@ export default function Mobile(props) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <IndustriesServe />
+        <IndustriesServe heading="" description=""/>
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">

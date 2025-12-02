@@ -3,32 +3,81 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";
-import Providers from "./components/Providers";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../components/HireDeveloper";
-import InfoSectionRight from "../components/InfoSectionRight";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
 
 const Process = [
   {
@@ -64,75 +113,10 @@ const Process = [
 
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
-      head: "Global News Aggregator App",
-      based: "",
-      name: "We developed a news aggregator app with AI-driven recommendations, multi-language support, and real-time updates. Achieved 200K+ downloads, 60% engagement growth, and higher revenue through a hybrid monetization model.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/global-news-aggregator-app",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
-      head: "Political News App",
-      based: "",
-      name: "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/political-news-app",
-    },
-
-    {
-      img: "https://www.comfygen.com/image/hero-image-e-paper-app.webp",
-      head: "E-Paper App Development",
-      based: "",
-      name: "Our India-based client, a leading media and publishing house, needed a custom E-Paper app development solution to digitize their newspaper and provide a seamless online reading experience. As a top-rated E-Paper app development company, we built a feature-rich, scalable platform that delivers high-quality digital newspapers, interactive content, and AI-powered recommendations for an enhanced reader experience.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/e-paper-app",
-    },
-
-    {
-      img: "https://www.comfygen.com/image/live-streaming-and-video-news-platform.webp",
-      head: "All Sports News App",
-      based: "",
-      name: "Our USA-based client, a leading sports media company, required a custom sports news app development solution to provide real-time sports updates, match analysis, and AI-driven content recommendations. As a top-rated news app development company, we built a feature-rich, scalable platform that delivers live scores, breaking news, player stats, and personalized sports content for fans worldwide",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/sports-news-app",
-    }
-  ],
-};
 
 
-export default function News(props:any) {
+
+export default function News(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -189,10 +173,10 @@ export default function News(props:any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/news-application-development-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Top-rated News App Development Company in India & USA"
@@ -229,7 +213,7 @@ export default function News(props:any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
@@ -352,12 +336,26 @@ export default function News(props:any) {
             </div>
           </div>
         </section>
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our News Apps Portfolio"
-          description="Our portfolio showcases a diverse range of custom news applications that enhance reader engagement and deliver real-time updates seamlessly."
-        />
-        <Providers />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our News Apps Portfolio"
+            description="Our portfolio showcases a diverse range of custom news applications that enhance reader engagement and deliver real-time updates seamlessly."
+          />
+        </section>
+
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='3'
+            heading=' Best-in-class features integrated into new media and news applications!'
+            description='At Comfygen, we focus on including the most diverse and updated features in the application that is developed with our News App development services. Here are the most trendy and on-demand features of news applications that we include in our digital product. livery application performance. Check out the collection of interesting features for different participants who use our pharmacy delivery apps.'
+            featuresData={JSON_DATA.featuresData}
+          />
+        </section>
+
+
         <TechStack
           title="Our Technology Stack for News App development"
           description="The news app development process needs a technology stack that
@@ -379,7 +377,7 @@ export default function News(props:any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End News Application Development Process</h2>
               <p className="text-base font-normal mt-2">
-              Here is a lowdown on our news app development approach, which is divided into defined steps for a streamlined workflow and timely completion of projects.
+                Here is a lowdown on our news app development approach, which is divided into defined steps for a streamlined workflow and timely completion of projects.
               </p>
             </div>
 
@@ -434,22 +432,19 @@ export default function News(props:any) {
 
           ]}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Do you want any more information about our news app development services?"
           description1="Talk to our news app development team today and learn more about our news app development services and how we can help you. We are the best team to create the best news application according to your project brief. Reach out to us now to hire us today."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/img/do-you-want-any-more-information-about-our-news-app-development-services.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
-        {/* <TalkExpert /> */}
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
+
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials} />

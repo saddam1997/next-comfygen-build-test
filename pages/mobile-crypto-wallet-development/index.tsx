@@ -3,58 +3,87 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import Header  from "../components/Header"
-import HeroSectionForAllPages  from "../components/HeroSectionForAllPages"
-
-
-
-
-
-
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import CallToAction from "../components/CallToAction";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-
 import { GrOptimize } from "react-icons/gr";
 import { MdOutlineVoiceOverOff } from "react-icons/md";
 import { LiaCheckSquareSolid } from "react-icons/lia";
 import { AiOutlineTransaction } from "react-icons/ai";
-import { MdOutlineSpatialTracking } from "react-icons/md";
 import {
   IconBrain,
   IconReportSearch,
   IconSignal5g,
 } from "@tabler/icons-react";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
 
-// const HeroSectionForAllPages = dynamic(
-//   () => import("../components/HeroSectionForAllPages"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-// const Header = dynamic(() => import("../components/Header"), {
-//   loading: () => <p>Loading...</p>,
-// });
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import { MdOutlineSpatialTracking } from "react-icons/md";
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+)
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 
 const Process = [
   {
@@ -94,52 +123,6 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/p4.webp",
-      head: "Subscription-Based Milk Delivery App",
-      name: "Custom milk delivery mobile app built for a city-based dairy startup. It allows users to subscribe to daily or weekly milk deliveries with flexible quantity selection and auto-renewal.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio5.webp",
-      head: "White-Label Dairy Delivery App",
-      name: "White-label online milk delivery app solution for a rural dairy distributor. Designed for quick launch and full customization, it offers product catalog browsing, instant order placement, and admin-side inventory control.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/milk-delivery-app-development/portfolio6.webp",
-      head: "Milk Ordering App",
-      name: "Milko is an on-demand milk ordering app for local vendors and individual customers. Built for speed and ease, users can place one-time orders, set delivery preferences, and track delivery status live.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-  ],
-};
 
 
 const latesttech = [
@@ -186,23 +169,7 @@ const latesttech = [
 ];
 
 
-const WhoCanStartCards = [
-  {
-    heading: "Milk Delivery Startups",
-    description:
-      "Quickly enter the dairy delivery market with our white-label milk delivery app built for startups. Launch your own branded platform with subscription, tracking, and payment features to scale operations and reach customers faster.",
-  },
-  {
-    heading: "Enterprises & Dairy Franchises",
-    description:
-      "Simplify operations with our custom milk delivery app solutions for enterprises and franchises. Manage multiple branches, delivery agents, customer data, and orders through one centralized admin panel with real-time analytics and smart automation tools.",
-  },
-  {
-    heading: "FMCG Businesses",
-    description:
-      "Expand your <a class=' underline text-black font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> offerings by adding milk delivery as a recurring service. Our milk delivery mobile app development solutions help streamline inventory, track customer orders, and boost sales through automated scheduling and doorstep delivery.",
-  },
-];
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -544,30 +511,28 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
       <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[40px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Mobile crypto wallet development company"
-            ptag="Secure, User-Friendly, and Scalable Mobile Wallet Development Solutions for Cryptocurrency Management"
-            ptag1="Experience advanced wallet development service according to your needs. Our mobile crypto wallet development service offers strong security with multi-factor authentication, seamless multi-currency support, and an intuitive interface that simplifies cryptocurrency management for users of all levels. Whether you’re launching a DeFi app or need enterprise-grade wallet development solutions, our expert developers build scalable apps optimized for performance and privacy."
-            li="Military-grade encryption & multi-factor authentication"
-            li1="Biometric security & AI threat detection"
-            li2="Multi-currency & cross-chain support (BTC, ETH, altcoins)"
-            li3="Integrated DeFi functionalities & NFT support"
-            li4="Global Delivery India | USA | UAE"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <div className="overflow-hidden lg:pt-[100px]">
+        <HeroSectionForAllPages
+          heading="Mobile crypto wallet development company"
+          ptag="Secure, User-Friendly, and Scalable Mobile Wallet Development Solutions for Cryptocurrency Management"
+          ptag1="Experience advanced wallet development service according to your needs. Our mobile crypto wallet development service offers strong security with multi-factor authentication, seamless multi-currency support, and an intuitive interface that simplifies cryptocurrency management for users of all levels. Whether you’re launching a DeFi app or need enterprise-grade wallet development solutions, our expert developers build scalable apps optimized for performance and privacy."
+          li="Military-grade encryption & multi-factor authentication"
+          li1="Biometric security & AI threat detection"
+          li2="Multi-currency & cross-chain support (BTC, ETH, altcoins)"
+          li3="Integrated DeFi functionalities & NFT support"
+          li4="Global Delivery India | USA | UAE"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-hero.webp"
+        />
 
-       
+
+
         <AboutSection
           title="About Company"
           heading="Why Mobile Crypto Wallets are needed for your business"
@@ -598,10 +563,10 @@ export default function ClinicalApp(props: any) {
         </section>
 
         <ConsultancyApproach
-         imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
-         
+
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
@@ -609,7 +574,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Portfolio of Mobile Crypto Wallet Development Services"
             description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
@@ -625,7 +590,7 @@ export default function ClinicalApp(props: any) {
           text="Comfygen’s mobile crypto wallet development service helps you launch the most secure mobile crypto wallet development"
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-cta.webp"
+            imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
 
@@ -649,7 +614,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TechStack
           title="Tech Stack We Use in Mobile Crypto Wallet Development "
           description="At Comfygen, we use an advanced technology stack to build AI-based mobile crypto wallets that are secure, scalable, and AI-enabled. Our focus is on combining robust blockchain platforms with advanced AI, secure backend systems, and industry-standard security protocols to deliver next-generation wallet solutions."
         />
@@ -686,8 +651,8 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="" />
-        <ContactFromCenter />
-       
+
+
       </div>
     </>
   );

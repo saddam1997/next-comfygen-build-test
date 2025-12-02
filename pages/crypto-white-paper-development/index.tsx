@@ -1,80 +1,77 @@
-import Image from "next/image";
-import Cryptocurrency from "../components/Cryptocurrency";
+import { useState } from "react";
 import Head from "next/head";
-import { IoStarSharp } from "react-icons/io5";
-import { FaPaperPlane } from "react-icons/fa";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-import { RiCrop2Fill, RiDeviceLine, RiExchangeFill } from "react-icons/ri";
-import { ImCircleLeft } from "react-icons/im";
-import { TiStopwatch } from "react-icons/ti";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowhitepaper.json";
+
+import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import CallToAction from "../components/CallToAction";
-import WhyChoosee from "../components/WhyChooseUs";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
 
 import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Services = [
-  {
-    num: "01",
-    url: "/cryptocurrency-mlm-software-development",
-    icon: <RiCrop2Fill size={50} className="text-blue-500" />,
-    title: "Cryptocurrency",
-    decs: "The adroit whitepaper writers at our company provide us with a clear explanation of cryptocurrency's use cases in a whitepaper.",
-  },
-  {
-    num: "02",
-    icon: <ImCircleLeft size={50} className="text-blue-500" />,
-    title: "ICO",
-    decs: "With our ICO white paper writing services, you can raise funds with your ICO platform in the most elegant way.",
-  },
-  {
-    num: "03",
-    url: "/cryptocurrency-exchange-development",
-    icon: <RiExchangeFill size={50} className="text-blue-500" />,
-    title: "Crypto Exchange   ",
-    decs: "Crypto exchange white paper writing services from our dedicated whitepaper writers revitalize your crypto exchange platform.",
-  },
-  {
-    num: "04",
-    url: "/nft-marketplace-development-company",
-    icon: <FaPaperPlane size={50} className="text-blue-500" />,
-    title: "NFT",
-    decs: "By utilizing our well-written NFT whitepaper writing services, we assure you that you will experience success in your NFT project without any hassles. ",
-  },
-  {
-    num: "05",
-    url: "/defi-development-company",
-    icon: <RiDeviceLine size={50} className="text-blue-500" />,
-    title: "DeFI ",
-    decs: "We can offer you the stunning DeFi white paper writing services that will clearly explain why your platform is the right investment for your investors.",
-  },
-  {
-    num: "6",
-    icon: <TiStopwatch size={50} className="text-blue-500" />,
-    title: "STO",
-    decs: "STO whitepaper writing services from us will help you meet your business goals in a timely manner.",
-  },
-];
+
 
 export default function MultiChain(props: any) {
   let { initialData } = props;
@@ -87,51 +84,6 @@ export default function MultiChain(props: any) {
   };
 
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-        head: "Aria Coin Cryptocurrency",
-        name: "aRIA Currency is revolutionizing the digital financial landscape with a secure, decentralized, and user-focused platform for global transactions. Built on the principles of accessibility, transparency, and efficiency, aRIA empowers individuals and businesses to transact seamlessly and with complete trust in a borderless digital economy.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-        head: " Great Wallet Application",
-        name: "Great Wallet is a cutting-edge iOS wallet designed for seamless integration with the Great Crypto Network (GREAT Blockchain). As a key component of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain solution drives the digital evolution of global economic governance and operations in the Fourth Industrial Revolution. With a vision to establish a large-scale economic blockchain ecosystem, Great Wallet leverages machine learning and artificial intelligence, applying macroeconomic principles to foster sustainable, equitable, and transparent economic growth worldwide.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/img/decentralised-mlm.webp",
-        head: "Decentralized MLM",
-        name: "Join Decentralized MLM Web – Where blockchain ensures fairness, rewards drive ambition, and community powers success. Step into the future of network marketing, reimagined for transparency and growth.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-
-
-    ],
-  };
 
   const jsonLdData = [
 
@@ -360,11 +312,11 @@ export default function MultiChain(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp')]">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        
           <HeroSectionForAllPages
             heading="Crypto White Paper Writing Services"
             ptag="Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
@@ -378,9 +330,9 @@ export default function MultiChain(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp"
           />
-        </div>
-        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+
         <AboutSection
           title="About Company"
           heading="Your Trusted Crypto White Paper Development Company"
@@ -396,7 +348,6 @@ export default function MultiChain(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -409,12 +360,9 @@ export default function MultiChain(props: any) {
           </div>
         </section>
 
-
-
-
-        <section className="py-10">
-          <PortfolioSec
-            techData={techDataForPage1}
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
             heading="Explore Our Crypto Whitepaper Based Portfolio"
             description="Propelling innovation and achievement through visionary design and development. A reflection of our unwavering passion for creativity and excellence."
           />
@@ -426,7 +374,7 @@ export default function MultiChain(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Create Your Crypto Whitepaper Writing Process</h2>
               <p className="text-base font-normal mt-2">
-               A successful Crypto Whitepaper Writing services combine technical depth with simplicity, so even non-technical investors can understand and trust your project. Here’s how we do it:
+                A successful Crypto Whitepaper Writing services combine technical depth with simplicity, so even non-technical investors can understand and trust your project. Here’s how we do it:
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Processs} />
@@ -435,10 +383,10 @@ export default function MultiChain(props: any) {
 
 
         <ConsultancyApproach
-         imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
-         
+
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
@@ -468,8 +416,8 @@ export default function MultiChain(props: any) {
           ]}
         />
 
-    
-        <WhyChoosee
+
+        <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}

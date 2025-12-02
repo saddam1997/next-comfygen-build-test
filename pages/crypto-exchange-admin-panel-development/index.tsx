@@ -1,51 +1,90 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptoexchangeadminpaneldevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ModelsSec from "../components/ModelsSec";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import {
-  IconArrowsLeftRight,
-  IconChartBar,
-  IconRobot,
-  IconAdjustmentsAlt,
-  IconChartInfographic,
-  IconReportAnalytics,
-  IconCloudComputing,
-  IconRocket,
-  IconBuildingBank,
-  IconSettings,
-  IconBriefcase,
-  IconShieldCheck,
-  IconArrowsExchange2
-} from '@tabler/icons-react';
-import CryptoTradingList from "./components/CryptoTradingSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ServicesSection from "../componentsnew/ServicesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const CryptoTradingList = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CryptoTradingSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
+
 const Processs = [
   {
     title: "Requirement Gathering & Analysis",
@@ -85,111 +124,10 @@ const Processs = [
 ];
 
 
-const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
-        head: "Centralized Crypto Exchange Platform Development",
-        name: "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/centralized-crypto-exchange-development",
-      },
-      {
-        img: "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
-        head: "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
-        name: "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/p2p-crypto-exchange-development",
-      },
-    ],
-  };
-
-const CardGridData = [
-  {
-    title: 'Market-Making Bots',
-    desc: 'Place simultaneous buy and sell orders to profit from the spread while maintaining liquidity on the exchange.',
-    img: <IconArrowsLeftRight stroke={1.5} className='w-12 h-12' />,
-  },
-  {
-    title: 'Technical Analysis Bots',
-    desc: 'Use indicators like MACD, RSI, and Bollinger Bands to make decisions based on technical chart patterns.',
-    img: <IconChartBar stroke={1.5} className='w-12 h-12' />,
-  },
-  {
-    title: 'AI & Machine Learning Bots',
-    desc: 'Analyze historical data, market sentiment, and real-time patterns to make predictive, automated trades.',
-    img: <IconRobot stroke={1.5} className='w-12 h-12' />,
-  },
-  {
-    title: 'Portfolio Rebalancing Bots',
-    desc: 'Automatically adjust your asset allocation to maintain your desired investment strategy and risk levels.',
-    img: <IconAdjustmentsAlt stroke={1.5} className='w-12 h-12' />,
-  }
-];
 
 
 
-const technologyData = [
-  {
-    img: <IconChartInfographic stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Market Data Integration",
-    desc: "Our bots are equipped with real-time data feeds, ensuring that traders get instant price updates, liquidity insights, and market trends from multiple exchanges. This helps in making informed trading decisions and reducing slippage risks.",
-  },
-  {
-    img: <IconReportAnalytics stroke={1.5} className="w-12 h-12" />,
-    title: "Performance Monitoring & Reporting",
-    desc: "We integrate advanced analytics and reporting tools that provide a detailed breakdown of trading performance, profit-loss tracking, and strategy efficiency. This enables traders to optimize strategies and improve profitability over time.",
-  },
-  {
-    img: <IconCloudComputing stroke={1.5} className="w-12 h-12" />,
-    title: "Bot as a Service (BaaS)",
-    desc: "For businesses and traders looking for a hassle-free trading solution, our Bot as a Service (BaaS) offers cloud-based trading bots that run 24/7 without requiring extensive infrastructure. These bots are scalable, customizable, and require minimal maintenance.",
-  },
-  {
-    img: <IconRocket stroke={1.5} className="w-12 h-12" />,
-    title: "Seamless Order Execution",
-    desc: "Our bots ensure instant trade execution with minimal latency, reducing the risk of market fluctuations affecting trade profits. By optimizing order placement and execution speeds, traders can secure the best possible prices on their transactions.",
-  },
-  {
-    img: <IconBuildingBank stroke={1.5} className="w-12 h-12" />,
-    title: "Integration with Crypto Exchanges",
-    desc: "We provide multi-exchange support, allowing seamless integration with leading platforms like Binance, Coinbase, Kraken, KuCoin, and more. This enables traders to operate on multiple exchanges simultaneously and enhance liquidity management.",
-  },
-  {
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    title: "Customizable Trading Strategies",
-    desc: "Our development team specializes in creating tailor-made trading strategies, including scalping, arbitrage, grid trading, AI-powered trading, and more. Traders can customize these bots based on risk appetite, market trends, and trading goals.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Comprehensive Portfolio Management",
-    desc: "We integrate portfolio management features that allow traders to automate asset tracking, diversify investments, and rebalance portfolios efficiently. This ensures an optimized allocation of assets for better risk management and profitability.",
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Advanced Risk Management",
-    desc: "Security is our priority. Our bots include stop-loss, take-profit, AI-driven risk analysis, and automated capital protection features to minimize risks and safeguard trader investments.",
-  },
-  {
-    img: <IconArrowsExchange2 stroke={1.5} className="w-12 h-12" />,
-    title: "Market-Making Bot Development",
-    desc: "For businesses and exchanges looking to enhance liquidity, we provide custom-built market-making bots that ensure optimal spreads, volume control, and liquidity management to create a stable trading environment.",
-  }
-];
+
 
 
 export default function Ecommerce(props) {
@@ -202,9 +140,9 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  
 
-  
+
+
   const jsonLdData = [
     {
       "@context": "https://schema.org",
@@ -225,34 +163,34 @@ export default function Ecommerce(props) {
       "telephone": "+1 579-977-4475"
     },
     {
-       "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Private Limited",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
-  "url": "https://www.comfygen.com/crypto-exchange-admin-panel-development",
-  "mainEntityOfPage": " https://www.comfygen.com/crypto-exchange-admin-panel-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "Crypto Exchange Admin Panel Development",
-    "Crypto Exchange Admin Panel",
-    "Crypto Admin Panel Development Services",
-    "Custom Crypto Exchange Admin Panel",
-    "Crypto Exchange Backend Development"
-  ],
- 
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/", 
-    "https://www.linkedin.com/company/comfygen-technologies"
-   
-    
-    
-  ]
-},
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Private Limited",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
+      "url": "https://www.comfygen.com/crypto-exchange-admin-panel-development",
+      "mainEntityOfPage": " https://www.comfygen.com/crypto-exchange-admin-panel-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Crypto Exchange Admin Panel Development",
+        "Crypto Exchange Admin Panel",
+        "Crypto Admin Panel Development Services",
+        "Custom Crypto Exchange Admin Panel",
+        "Crypto Exchange Backend Development"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies/",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+
+
+      ]
+    },
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -320,15 +258,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Private Limited",
-"Name":"Crypto Exchange Admin Panel Development",
-"image":"https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development-about.webp",
-"description":"Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Crypto Exchange Admin Panel Development",
+      "image": "https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development-about.webp",
+      "description": "Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
     },
     {
@@ -401,95 +341,93 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
+
   ];
 
   return (
     <>
-     <Head>
-  <title>Crypto Exchange Admin Panel Development Service | Comfygen
-</title>
-  <meta
-    name="description"
-    content="Comfygen provides crypto exchange admin panel development services with real-time monitoring, user management, advanced security, and analytics dashboards."
-  />
-  <link
-    rel="canonical"
-    href="https://www.comfygen.com/crypto-exchange-admin-panel-development"
-  />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport-fit" content="cover" />
-  <meta name="apple-touch-fullscreen" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-  <meta name="apple-mobile-web-app-title" content="Comfygen" />
-  <meta name="author" content="Comfygen" />
-  <meta name="web-author" content="Comfygen" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta name="rights" content="Copyright Comfygen Private Limited" />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="googlebot" content="all" />
-  <meta name="revisit-after" content="3 days" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="language" content="English" />
-  <meta name="geo.region" content="IN" />
-  <meta name="geo.region" content="US" />
-  <meta name="geo.region" content="CA" />
-  <meta name="geo.region" content="GB" />
-  <meta name="geo.region" content="AE" />
-  <meta name="geo.region" content="DE" />
-  <meta
-    name="keywords"
-    content="crypto exchange admin panel, crypto backend development, cryptocurrency exchange admin dashboard, custom exchange admin panel, secure crypto exchange backend, multi-currency admin solution, AI crypto exchange management"
-  />
+      <Head>
+        <title>Crypto Exchange Admin Panel Development Service | Comfygen
+        </title>
+        <meta
+          name="description"
+          content="Comfygen provides crypto exchange admin panel development services with real-time monitoring, user management, advanced security, and analytics dashboards."
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/crypto-exchange-admin-panel-development"
+        />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Comfygen" />
+        <meta name="author" content="Comfygen" />
+        <meta name="web-author" content="Comfygen" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="rights" content="Copyright Comfygen Private Limited" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+        <meta
+          name="keywords"
+          content="crypto exchange admin panel, crypto backend development, cryptocurrency exchange admin dashboard, custom exchange admin panel, secure crypto exchange backend, multi-currency admin solution, AI crypto exchange management"
+        />
 
-  {/* Open Graph Tags */}
-  <meta property="og:title" content="Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.comfygen.com/crypto-exchange-admin-panel-development" />
-  <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development.webp" />
-  <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development.webp" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:alt" content="Crypto Exchange Admin Panel Development by Comfygen" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Comfygen Private Limited" />
-  <meta property="og:description" content="Get secure and scalable crypto exchange admin panel development services by Comfygen. Featuring advanced security, AI, multi-currency support, and real-time analytics." />
-  <meta property="fb:page_id" content="110909321596135" />
-  <meta property="og:email" content="sales@comfygen.com" />
-  <meta property="og:phone_number" content="+91-958-786-7258" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="en_CA" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:locale:alternate" content="en_DE" />
-  <meta property="og:locale:alternate" content="en_AE" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.comfygen.com/crypto-exchange-admin-panel-development" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:alt" content="Crypto Exchange Admin Panel Development by Comfygen" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:description" content="Get secure and scalable crypto exchange admin panel development services by Comfygen. Featuring advanced security, AI, multi-currency support, and real-time analytics." />
+        <meta property="fb:page_id" content="110909321596135" />
+        <meta property="og:email" content="sales@comfygen.com" />
+        <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
 
-  {/* Twitter Tags */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions" />
-  <meta name="twitter:description" content="Build your crypto exchange admin panel with Comfygen. Get advanced security, AI integration, multi-language support, and real-time monitoring tools." />
-  <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/og-cryptocurrency-exchange-development-company.webp" />
-  <meta name="twitter:site" content="@comfygentech" />
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions" />
+        <meta name="twitter:description" content="Build your crypto exchange admin panel with Comfygen. Get advanced security, AI integration, multi-language support, and real-time monitoring tools." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/og-cryptocurrency-exchange-development-company.webp" />
+        <meta name="twitter:site" content="@comfygentech" />
 
-  {/* Structured Data Script Placeholder */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-  />
-</Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        
+        {/* Structured Data Script Placeholder */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </Head>
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Crypto Exchange Admin Panel Development Service"
           ptag="Comfygen provides crypto exchange admin panel development services to give you complete control over your trading platform. Our Crypto Exchange Admin Panel Development solutions provide real-time monitoring, user and transaction management, advanced security, and analytics dashboards for efficient decision-making. Fully customizable and scalable, our Crypto Exchange admin panels are designed for centralized or decentralized exchanges, ensuring smooth operations, regulatory compliance, and enhanced user experience."
@@ -497,7 +435,7 @@ export default function Ecommerce(props) {
           li1="User & transaction management"
           li2="Advanced security & compliance features"
           li3="Scalable, customizable architecture with 24/7 support"
-         
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -525,30 +463,24 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        {/* <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Crypto Trading Bot Development Services
+                Types of Crypto Exchange Admin Panel Development Services We Provide
               </h2>
               <p className="text-base text-center font-normal">
-                At Comfygen we offer custom crypto trading bot development services designed to enhance trading efficiency, minimize risks, and maximize profits. Our solutions cater to individual traders, crypto startups, and exchanges, providing AI-powered automation and high-frequency trading capabilities.
-              </p>
-              <p className="text-base text-center font-normal">
-                Whether you need an arbitrage bot, grid trading bot, or AI-driven signal bot, our expert developers craft secure, scalable, and high-performance bots that operate seamlessly across multiple exchanges. Each bot is tailored to execute specific trading strategies, ensuring optimal results in volatile markets.
+                At Comfygen, we specialize in delivering custom crypto exchange admin panel development services tailored to the unique demands of modern cryptocurrency trading platforms. Our solutions empower exchange operators with full control, real-time monitoring, and advanced security features, ensuring smooth and compliant platform management.
               </p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
-        </section> */}
+        </section>
 
-        <ServicesSection 
-        heading="Types of Crypto Exchange Admin Panel Development Services We Provide"
-        subtitle="At Comfygen, we specialize in delivering custom crypto exchange admin panel development services tailored to the unique demands of modern cryptocurrency trading platforms. Our solutions empower exchange operators with full control, real-time monitoring, and advanced security features, ensuring smooth and compliant platform management."
-        servicesData={JSON_DATA.servicesData} />
+
 
         <CryptoTradingList
           heading="AI & Analytics Integration for Admin Panels"
@@ -558,51 +490,44 @@ export default function Ecommerce(props) {
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
-        {/* <SolutionSec
-          heading="Cryptocurrency Trading Bot Development Solutions"
-          subheading="At Comfygen, we offer cutting-edge cryptocurrency trading bot development solutions designed to optimize trading efficiency, enhance profitability, and minimize risks. Our advanced bots integrate AI-driven algorithms, real-time market analysis, and automated trading strategies to give traders a competitive edge."
-          techData={technologyData}/> */}
-          
-        {/* <section className="bg-[#F5F5F9] lg:py-16 py-10">
+
+
+        <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-1">
+            <div className="text-center space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Crypto Trading Bot Development Process
+                Crypto Exchange Admin Panel Development Process
               </h2>
-              <p className="text-center">
-                At Comfygen, we follow a structured and efficient crypto trading bot development process to ensure seamless automation, high performance, and robust security. Our approach is designed to meet the unique trading needs of businesses and individual traders, ensuring precision, scalability, and profitability.
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Developing a robust crypto exchange admin panel requires a systematic approach to ensure security, scalability, and seamless management. At Comfygen, we follow a meticulous development process tailored to your unique business needs:
               </p>
             </div>
             <ProcessSec processSlides={Processs} />
           </div>
-        </section> */}
+        </section>
 
-        <ProcessSection title="Crypto Exchange Admin Panel Development Process" 
-        description="Developing a robust crypto exchange admin panel requires a systematic approach to ensure security, scalability, and seamless management. At Comfygen, we follow a meticulous development process tailored to your unique business needs:" 
-        processSlides={Processs}/>
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Crypto Admin Panel Development"
+            description="At Comfygen, we pride ourselves on delivering top-tier crypto admin panel development solutions that empower cryptocurrency exchanges worldwide. Our portfolio showcases a diverse range of successful projects reflecting our technical expertise, innovative approach, and commitment to security and usability."
+          />
+        </section>
 
-        
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Crypto Admin Panel Development"
-          description="At Comfygen, we pride ourselves on delivering top-tier crypto admin panel development solutions that empower cryptocurrency exchanges worldwide. Our portfolio showcases a diverse range of successful projects reflecting our technical expertise, innovative approach, and commitment to security and usability."
-        />
-        
-          <CryptoTradingList
+
+
+        <CryptoTradingList
           heading="Robust Security Features Integrated in Our Crypto Exchange Admin Panels"
           subheading="Security is paramount in <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/cryptocurrency-exchange-development'>cryptocurrency exchange management</a>. At Comfygen, we integrate advanced security features into our crypto exchange admin panels to protect your platform from threats and ensure compliance with industry standards. Our security implementations include:"
           tradingData={JSON_DATA.CryptoTrading}
         />
-        <TrendsSection 
+        <TrendsSection
           heading="Benefits of Choosing Our Crypto Exchange Admin Panel Development Services"
           subtitle="Partnering with Comfygen for your crypto exchange admin panel development brings numerous advantages designed to empower your trading platform:"
-          trends={JSON_DATA.Emerging} />
-      
-        {/* <CardGrid
-          heading="Types of Crypto Trading Bots We Developt"
-          subheading="At Comfygen, we offer a comprehensive range of <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/how-to-build-a-crypto-trading-bot/'>crypto trading bots</a> tailored to different trading strategies and user goals. Whether you're a day trader, institutional investor, or beginner, our bots are designed for maximum efficiency, speed, and profitability."
-          techData={CardGridData}
-        /> */}
+          trends={JSON_DATA.Emerging}
+        />
+
+
 
         <TechStack
           title="Our Crypto Exchange Admin Panel Development Technology Stack"
@@ -637,7 +562,7 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-      
+
       </div>
     </>
   );
