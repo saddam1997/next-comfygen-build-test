@@ -61,7 +61,7 @@ export default function AppcardSlider({
         <div className="flex items-center justify-between">
           <div className="space-y-2 p-2">
             <h2 className="xl:text-4xl text-2xl text-black font-bold">{heading}</h2>
-            <p className="text-black font-normal text-sm">{description}</p>
+            <p className="text-black font-normal text-sm" dangerouslySetInnerHTML={{ __html: description }}></p>
           </div>
 
           {/* Controls */}

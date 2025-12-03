@@ -1,56 +1,81 @@
+import { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/ecommerceapp.json";
-import { useState } from "react";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../componentsnew/AboutSection";
-import ContactFromCenter from "../componentsnew/ContactFromCenter";
-import ServicesSec from "../componentsnew/ServicesSec";
-import TechStack from "../componentsnew/TechStack";
-import ProcessSec from "../componentsnew/ProcessSec";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import Faq from "../componentsnew/Faq";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import FeaturesTabs from "../componentsnew/FeaturesTabs";
-import IconCard from "../componentsnew/IconCard";
-import EcommerceNav from "../componentsnew/ecommerce-navbar";
-import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
-import Slider from "../components/Slider";
-import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Features from "../Newcomponet/SectionCompoent/Features";
+import dynamic from "next/dynamic";
 
-const Advanced = [
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-shopify.svg",
-    head: "E-Commerce Apps Like Shopify",
-    decs: "Want to create an eCommerce app like Shopify? We offer advanced eCommerce app development services for building multi-vendor platforms with seamless customization, secure payment gateways, and analytics features. Drive business growth with a scalable and engaging platform.",
-  },
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-ebay.svg",
-    head: "E-Commerce Apps Like eBay",
-    decs: "Develop an eCommerce app like eBay. We specialize in creating feature-rich auction-based platforms with intuitive designs, secure payment systems, and advanced search capabilities, ensuring a seamless marketplace experience.",
-  },
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-amazon.svg",
-    head: "E-Commerce Apps Like Amazon",
-    decs: "Build an eCommerce app like Amazon. Our eCommerce app development solutions focus on providing a custom eCommerce app development experience, complete with personalized recommendations, dynamic inventory management, and seamless navigation for an Amazon-like experience.",
-  },
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-flipkart.svg",
-    head: "E-Commerce Apps Like Flipkart",
-    decs: "Want to develop a cutting-edge eCommerce app like Flipkart? We provide custom eCommerce app development services with a mobile-first approach, incorporating features like gamification, real-time order tracking, and an intuitive interface to enhance user engagement.",
-  },
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-shopClues.svg",
-    head: "E-Commerce Apps Like ShopClues",
-    decs: "We develop custom eCommerce apps like ShopClues that are customized to offer a localized shopping experience. Perfect for businesses targeting niche markets, our on-demand eCommerce app development solutions ensure affordability, efficiency, and customer satisfaction.",
-  },
-  {
-    img: "https://www.comfygen.com/image/e-commerce-apps-like-snapdeal.svg",
-    head: "E-Commerce Apps Like Snapdeal",
-    decs: "Do you want to build a white-label eCommerce app like Snapdeal? Our expert mobile app development team provides feature-rich eCommerce app development services that focus on affordability, accessibility, and superior performance, ensuring customer satisfaction.",
-  },
-];
+
+
+import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const AppcardSlider = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 
 
 
@@ -329,12 +354,21 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="We Offer On-Demand eCommerce App Development Services for Retail Businesses"
-          description="At Comfygen, we provide top-notch eCommerce app development services in India designed to help businesses grow, engage customers, and streamline online shopping experiences. Our expert developers craft custom, scalable, and visually appealing mobile solutions for startups, retailers, and enterprises."
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Offer On-Demand eCommerce App Development Services for Retail Businesses</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide top-notch eCommerce app development services in India designed to help businesses grow, engage customers, and streamline online shopping experiences. Our expert developers craft custom, scalable, and visually appealing mobile solutions for startups, retailers, and enterprises.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+
 
 
         <AppcardSlider
@@ -347,7 +381,7 @@ export default function Ecommerce(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Discover the expertise we have in e-commerce development by exploring our recent work"
             description="At Comfygen, we specialize in building robust, scalable, and <a  class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >custom eCommerce app development solutions</a> tailored for various industries. Explore some of our standout projects to see how we’re helping global brands elevate their digital commerce experiences."
@@ -377,11 +411,20 @@ export default function Ecommerce(props) {
           trends={JSON_DATA.Emerging}
         />
 
-        <ProcessSec
-          title="eCommerce App Development Process We Follow"
-          description="We follow a smart and structured development process to deliver high-quality e-commerce apps that perform flawlessly. We are one of the best decentralized mobile eCommerce app development agency in India. The Comfygen delivery system ensures transparency, quality, and speed."
-          processSlides={Process}
-        />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">eCommerce App Development Process We Follow</h2>
+              <p className="text-base font-normal mt-2">
+               We follow a smart and structured development process to deliver high-quality e-commerce apps that perform flawlessly. We are one of the best decentralized mobile eCommerce app development agency in India. The Comfygen delivery system ensures transparency, quality, and speed.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <TechStack
@@ -396,11 +439,6 @@ export default function Ecommerce(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        {/* <IconCard
-          title="Our eCommerce Development Solutions"
-          description='Transform your mobile app business to develop a custom eCommerce app. As a Custom e-commerce app development company in Jaipur, India specializes in providing innovative on-demand E-commerce app development solutions, customized to replicate the success of top <a class="text-blue-700" href="/mobile-app-development">mobile app development</a> platforms.'
-          data={Advanced}
-        /> */}
 
         <HireDeveloper
           heading="Hire eCommerce App Developers"
