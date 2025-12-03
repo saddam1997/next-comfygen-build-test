@@ -1,29 +1,27 @@
 {
- "Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to build a P2P payment app?",
-    "desc": "The cost to create a money transfer app depends on features, platform, security needs, and integrations. Basic apps start lower, but advanced P2P payment apps with real-time transfers, KYC, and fraud detection require more investment. At Comfygen, we tailor solutions to your budget while ensuring scalable, secure mobile payment app development."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to develop a mobile payment app?",
-    "desc": "The timeline to create a money transfer app varies based on complexity and features. Typically, development takes 3 to 6 months, including design, backend, security, and testing. Comfygen’s experienced team follows agile processes to deliver efficient, high-quality mobile payment app development that meets your business goals on schedule."
-  },
-  {
-    "num": "3",
-    "title": "What’s the difference between a mobile wallet and a P2P app?",
-    "desc": "A mobile wallet stores payment methods digitally for purchases, while a P2P app focuses on person-to-person money transfers. To develop a money transfer app, features like instant fund transfers and request payments are essential. Many apps now combine both for a seamless user experience, and Comfygen specializes in developing secure, multifunctional payment solutions."
-  },
-  {
-    "num": "4",
-    "title": "Can I integrate crypto payments?",
-    "desc": "Yes, you can create a money transfer app with integrated cryptocurrency payments. Comfygen offers crypto integration services that enable users to send, receive, and store digital currencies securely within your p2p payment app. Adding crypto support enhances your app’s flexibility and attracts a broader user base, aligning with modern fintech trends."
-  }
-],
-
-
- "servicesData": [
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to build a P2P payment app?",
+      "desc": "The cost to create a money transfer app depends on features, platform, security needs, and integrations. Basic apps start lower, but advanced P2P payment apps with real-time transfers, KYC, and fraud detection require more investment. At Comfygen, we tailor solutions to your budget while ensuring scalable, secure mobile payment app development."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to develop a mobile payment app?",
+      "desc": "The timeline to create a money transfer app varies based on complexity and features. Typically, development takes 3 to 6 months, including design, backend, security, and testing. Comfygen’s experienced team follows agile processes to deliver efficient, high-quality mobile payment app development that meets your business goals on schedule."
+    },
+    {
+      "num": "3",
+      "title": "What’s the difference between a mobile wallet and a P2P app?",
+      "desc": "A mobile wallet stores payment methods digitally for purchases, while a P2P app focuses on person-to-person money transfers. To develop a money transfer app, features like instant fund transfers and request payments are essential. Many apps now combine both for a seamless user experience, and Comfygen specializes in developing secure, multifunctional payment solutions."
+    },
+    {
+      "num": "4",
+      "title": "Can I integrate crypto payments?",
+      "desc": "Yes, you can create a money transfer app with integrated cryptocurrency payments. Comfygen offers crypto integration services that enable users to send, receive, and store digital currencies securely within your p2p payment app. Adding crypto support enhances your app’s flexibility and attracts a broader user base, aligning with modern fintech trends."
+    }
+  ],
+  "servicesData": [
     {
       "title": "Custom P2P Payment App Development",
       "description": "We build tailored peer-to-peer payment applications that support instant money transfers, bank integrations, and robust transaction history — ensuring a smooth and secure user experience. Whether you're building for consumers, enterprises, or niche markets, our custom solutions scale with your business.",
@@ -70,8 +68,6 @@
       ]
     }
   ],
-
-
   "consultancyHead": [
     {
       "num": "1",
@@ -79,7 +75,7 @@
       "desc": "Our expert P2P mobile app development team at Comfygen has delivered scalable, secure, and fully customizable clones of the most popular peer-to-peer payment apps on the market. These p2p payment clone apps are built with high-end security features, intuitive UIs, and the flexibility to integrate advanced technologies to suit your business goals."
     }
   ],
- "consultancyData": [
+  "consultancyData": [
     {
       "title": "Venmo Clone App Development",
       "desc": "Looking to launch an app like Venmo? Our Venmo clone app replicates real-time peer-to-peer money transfers, social payment feeds, and in-app messaging. It supports seamless bank linking, instant transfers, and a modern, social-media-inspired UI to boost user engagement."
@@ -101,6 +97,26 @@
       "desc": "Our Samsung Pay clone app lets users make secure, contactless payments using their smartphones via NFC or MST technology. The app also supports loyalty cards, coupons, and biometric security for a seamless and protected user experience."
     }
   ],
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/p2p-money-transfer-app.webp",
+      "title": "P2P Money Transfer App for Emerging Fintech Startup",
+      "description": "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-mobile-wallet-crypto-integration.webp",
+      "title": "P2P Mobile Wallet with Crypto Integration",
+      "description": "This project involved building a cross-platform mobile wallet app that supports both fiat and cryptocurrencies. Designed for global users, the app includes features like QR code payments, crypto-to-fiat conversion, multi-language support, and blockchain-based transaction security.",
+      "link": "#"
+    }
+  ],
+
+
+
+
 
   "pageData": {
     "title": "Why Choose the No. 1 Peer-to-Peer Payment App Development Company for Your Fintech Project",
@@ -147,23 +163,19 @@
         "description": "We offer long-term maintenance, feature upgrades, and compliance monitoring to ensure your app stays secure, functional, and up to date with changing regulations and user expectations."
       }
     ]
-    
-
   },
-"customTestimonials": [
-  {
-    "text": "Comfygen developed a secure and user-friendly P2P payment app for our startup. Their team was professional, communicative, and delivered the project on time. Highly recommend for fintech businesses looking for reliable app developers.",
-    "name": "Shivam Patel",
-    "title": "Bangalore, India"
-  },
-  {
-    "text": "We hired Comfygen to build a custom mobile wallet app, and the results exceeded our expectations. Their expertise in payment integrations and security features made the process smooth and stress-free. A trusted partner for any payment app development.",
-    "name": "Emily Thompson",
-    "title": "New York, USA"
-  }
-],
-
-
+  "customTestimonials": [
+    {
+      "text": "Comfygen developed a secure and user-friendly P2P payment app for our startup. Their team was professional, communicative, and delivered the project on time. Highly recommend for fintech businesses looking for reliable app developers.",
+      "name": "Shivam Patel",
+      "title": "Bangalore, India"
+    },
+    {
+      "text": "We hired Comfygen to build a custom mobile wallet app, and the results exceeded our expectations. Their expertise in payment integrations and security features made the process smooth and stress-free. A trusted partner for any payment app development.",
+      "name": "Emily Thompson",
+      "title": "New York, USA"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -370,43 +382,38 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
- "AIPowered":[
-  {
-    "num": "01",
-    "title": "Instant Money Transfers",
-    "decs": "Enable users to send and receive money instantly with real-time processing, low latency, and bank-grade security. Our money transfer apps ensure smooth transactions with immediate confirmations, enhancing convenience for both personal payments and business transfers."
-  },
-  {
-    "num": "02",
-    "title": "Transaction History & Analytics",
-    "decs": "Offer users a detailed view of their financial activity with a complete transaction history, interactive charts, and smart spending insights. Built-in analytics help track expenses, monitor patterns, and make informed financial decisions directly within the app."
-  },
-  {
-    "num": "03",
-    "title": "Bank Account Linking & Verification",
-    "decs": "Support secure linking to multiple bank accounts and cards with instant verification. We implement encrypted APIs, two-factor authentication, and compliance-ready KYC/AML checks to protect user data and maintain high standards of trust and security."
-  },
-  {
-    "num": "04",
-    "title": "In-App Chat & Notifications",
-    "decs": "Add real-time messaging and transaction-based notifications to keep users engaged and informed. The in-app chat allows communication between senders and recipients, while instant alerts improve transparency and reduce disputes during transfers or payment requests."
-  },
-  {
-    "num": "05",
-    "title": "Currency Conversion & Multi-language Support",
-    "decs": "Make your app globally accessible with automatic currency conversion and multilingual interfaces. Users can transact in their local currency, switch languages effortlessly, and enjoy a personalized experience no matter their location or preferred language."
-  },
-  {
-    "num": "06",
-    "title": "Biometric Authentication & App Security",
-    "decs": "Enhance user trust with advanced security features like fingerprint and facial recognition. Our apps include biometric login, encrypted data storage, and fraud detection systems to protect sensitive financial information and prevent unauthorized access in real time."
-  }
-],
-
-
-
+  "AIPowered": [
+    {
+      "num": "01",
+      "title": "Instant Money Transfers",
+      "decs": "Enable users to send and receive money instantly with real-time processing, low latency, and bank-grade security. Our money transfer apps ensure smooth transactions with immediate confirmations, enhancing convenience for both personal payments and business transfers."
+    },
+    {
+      "num": "02",
+      "title": "Transaction History & Analytics",
+      "decs": "Offer users a detailed view of their financial activity with a complete transaction history, interactive charts, and smart spending insights. Built-in analytics help track expenses, monitor patterns, and make informed financial decisions directly within the app."
+    },
+    {
+      "num": "03",
+      "title": "Bank Account Linking & Verification",
+      "decs": "Support secure linking to multiple bank accounts and cards with instant verification. We implement encrypted APIs, two-factor authentication, and compliance-ready KYC/AML checks to protect user data and maintain high standards of trust and security."
+    },
+    {
+      "num": "04",
+      "title": "In-App Chat & Notifications",
+      "decs": "Add real-time messaging and transaction-based notifications to keep users engaged and informed. The in-app chat allows communication between senders and recipients, while instant alerts improve transparency and reduce disputes during transfers or payment requests."
+    },
+    {
+      "num": "05",
+      "title": "Currency Conversion & Multi-language Support",
+      "decs": "Make your app globally accessible with automatic currency conversion and multilingual interfaces. Users can transact in their local currency, switch languages effortlessly, and enjoy a personalized experience no matter their location or preferred language."
+    },
+    {
+      "num": "06",
+      "title": "Biometric Authentication & App Security",
+      "decs": "Enhance user trust with advanced security features like fingerprint and facial recognition. Our apps include biometric login, encrypted data storage, and fraud detection systems to protect sensitive financial information and prevent unauthorized access in real time."
+    }
+  ],
   "Emerging": [
     {
       "num": "1",
@@ -457,5 +464,4 @@
       "decs": "We follow agile DevOps practices and use CI/CD pipelines to ensure frequent, stable, and reliable mobile app updates. This process minimizes downtime, accelerates delivery cycles, and allows rapid feature rollout with continuous performance improvements."
     }
   ]
-  
 }

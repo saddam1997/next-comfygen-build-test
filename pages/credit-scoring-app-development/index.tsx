@@ -3,18 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import LazyLoad from "react-lazy-load";
 import JSON_DATA from "./json/creditscoringappdevelopment1.json";
-import ContactFromCenter from "../components/ContactFromCenter";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import ProcessSec from "../componentsnew/ProcessSec";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import CallToAction from "../componentsnew/CallToAction";
-import Faq from "../componentsnew/Faq";
-
 import {
   IconCloudComputing,
   IconLock,
@@ -24,16 +12,88 @@ import {
   IconShield,
   IconWorldWww,
 } from "@tabler/icons-react";
-import TechStack from "../componentsnew/TechStack";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import ClientTestimonials from "../components/ClientTestimonials";
 
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
 
-export default function Mobile(props:any) {
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
 
@@ -104,36 +164,7 @@ export default function Mobile(props:any) {
     },
   };
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-score-ai-credit-score-app.webp",
-        head: "AI-Powered Credit Score App",
-        name: "An intelligent app that uses AI and machine learning to calculate real-time credit scores, offer improvement tips, and deliver predictive credit analysis for both individuals and institutions.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/node-portfolio-icon.svg",
-          "https://www.comfygen.com/image/python-portfolio-icon.svg",
-          "https://www.comfygen.com/image/aws-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png"
-        ]
-      },
-      {
-        img: "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-score-secure-credit-monitoring-app.webp",
-        head: "Secure Credit Monitoring App",
-        name: "A user-centric app featuring encrypted data storage, real-time alerts, and seamless integration with financial institutions to monitor, track, and enhance user credit health efficiently.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/flutter-portfolio-icon.svg",
-          "https://www.comfygen.com/image/firebase-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ]
-      }
-    ]
-  };
+
 
   const testimonialData = [
     {
@@ -149,8 +180,8 @@ export default function Mobile(props:any) {
       rating: 5,
     }
   ];
-  
-  
+
+
   const Process = [
     {
       title: "Consultation & Requirement Gathering",
@@ -188,7 +219,7 @@ export default function Mobile(props:any) {
         "After successful testing, we deploy your credit scoring app across platforms and cloud environments. Post-launch, we offer regular maintenance, updates, monitoring, and technical support to ensure stability and performance.",
     },
   ];
-  
+
 
   const technologyData = [
     {
@@ -267,9 +298,9 @@ export default function Mobile(props:any) {
         "Blockchain-Based Credit Scoring App Development",
         "AI & Machine Learning Integration"
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
 
@@ -341,15 +372,17 @@ export default function Mobile(props:any) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Credit Scoring App Development Services",
-      "image":"https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-about.webp",
-      "description":"Explore Comfygen’s expert credit scoring app development services designed for fintech startups and enterprises. We deliver secure, AI-powered apps with real-time analytics, credit monitoring, and scalable architecture.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-    "reviewCount":"26"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Credit Scoring App Development Services",
+      "image": "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-about.webp",
+      "description": "Explore Comfygen’s expert credit scoring app development services designed for fintech startups and enterprises. We deliver secure, AI-powered apps with real-time analytics, credit monitoring, and scalable architecture.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "26"
+      }
     },
     {
       "@context": "https://schema.org/",
@@ -389,12 +422,12 @@ export default function Mobile(props:any) {
         }
       ]
     }
-    
+
   ];
-  
+
   return (
     <>
-       <Head>
+      <Head>
         <title>
           Credit Scoring App Development Company | AI-Driven Fintech Solutions
         </title>
@@ -402,16 +435,16 @@ export default function Mobile(props:any) {
           name="description"
           content="Comfygen is a top credit scoring app development company delivering secure, AI-powered fintech solutions. We build scalable credit scoring apps with real-time analytics, data security, and 10+ years of expertise."
         />
-        <meta  name="keywords"
+        <meta name="keywords"
           content="Credit Scoring App Development Services, Credit Analysis App Development, Credit Management App Development, Blockchain-Based Credit Scoring App Development, AI & Machine Learning Integration"
         />
         <link rel="canonical" href="https://www.comfygen.com/credit-scoring-app-development" />
-       
+
 
         {/* Open Graph Tags */}
         <meta property="og:title" content="Credit Scoring App Development Company | AI-Driven Fintech Solutions"
         />
-    
+
         <meta
           property="og:url"
           content="https://www.comfygen.com/credit-scoring-app-development"
@@ -485,11 +518,11 @@ export default function Mobile(props:any) {
       </Head>
 
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+
+        <Header />
+
       </div>
-      <div className="">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Credit Scoring App Development"
           ptag="Comfygen is a leading credit scoring app development company, offering innovative and secure solutions tailored to your business needs. Our expert finance app developers use advanced AI, data analytics, and cutting-edge technologies to build scalable apps that deliver accurate credit assessments."
@@ -514,13 +547,20 @@ export default function Mobile(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title=" Our Credit Scoring App Development Services"
-          description="Comfygen is a trusted credit scoring app development company, delivering secure, scalable, and intelligent solutions for modern financial institutions and fintech startups. We offer end-to-end credit management app development services that cover every aspect of credit analysis, from user onboarding to real-time monitoring and AI-powered predictions."
-        />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" > Our Credit Scoring App Development Services</h2>
+              <p className="text-base text-center font-normal">Comfygen is a trusted credit scoring app development company, delivering secure, scalable, and intelligent solutions for modern financial institutions and fintech startups. We offer end-to-end credit management app development services that cover every aspect of credit analysis, from user onboarding to real-time monitoring and AI-powered predictions.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -529,36 +569,48 @@ export default function Mobile(props:any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Credit Scoring Apps Portfolio"
-          description="Explore our portfolio of advanced credit scoring app development projects, designed for accuracy, security, and scalability. From AI-based scoring engines to real-time monitoring tools, our solutions empower smarter financial decisions."
-        />
-        <ContactFromCenter />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Credit Scoring Apps Portfolio"
+            description="Explore our portfolio of advanced credit scoring app development projects, designed for accuracy, security, and scalability. From AI-based scoring engines to real-time monitoring tools, our solutions empower smarter financial decisions."
+          />
+        </section>
+
 
         <LatestTechnology
           heading="Technologies We Use for Credit Scoring App Development"
           subheading="At Comfygen, a leading credit management app development company, we leverage emerging technologies to create intelligent, secure, and scalable credit scoring solutions. Our advanced tech stack ensures accurate credit analysis, seamless user experience, and robust data protection tailored to fintech innovation."
           techData={technologyData}
         />
-        <ProcessSec
-          title="Our Credit Scoring Mobile App Development Process"
-          description="As a leading credit scoring app development company, Comfygen follows a transparent, agile, and end-to-end development approach to deliver intelligent and compliant credit scoring applications. See how we develop credit scoring apps."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Credit Scoring Mobile App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                As a leading credit scoring app development company, Comfygen follows a transparent, agile, and end-to-end development approach to deliver intelligent and compliant credit scoring applications. See how we develop credit scoring apps.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
         <TechStack
           title="Tech Stack We Use in Credit Analysis App Development"
-           description="The Comfygen credit analysis platform is built using a powerful and modern technology stack. Using industry-leading frameworks, tools, and technologies, we build apps that deliver accurate credit scoring, insightful analytics, and seamless user experiences."
+          description="The Comfygen credit analysis platform is built using a powerful and modern technology stack. Using industry-leading frameworks, tools, and technologies, we build apps that deliver accurate credit scoring, insightful analytics, and seamless user experiences."
         />
-        
+
         <WhyChoose
-      title={whychooesdata.pageData.title}
-      description={whychooesdata.pageData.description}
-      mainCardData={whychooesdata.pageData.mainCardData}
-      gridData={whychooesdata.pageData.gridData}
-    />
-      
+          title={whychooesdata.pageData.title}
+          description={whychooesdata.pageData.description}
+          mainCardData={whychooesdata.pageData.mainCardData}
+          gridData={whychooesdata.pageData.gridData}
+        />
+
         <HireDeveloper
           heading="Hire Our Dedicated Credit Score App Developers"
           text="Looking for expert Credit Score App Developers? At Comfygen, our credit score app developers specialize in creating accurate, scalable, and secure credit scoring applications. With years of experience in fintech, we deliver custom credit management app development solutions that align with your business needs and comply with industry regulations."

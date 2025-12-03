@@ -1,38 +1,76 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import CallToAction from "../components/CallToAction";
-import NewTeckStack from "../componentsnew/NewTeckStack";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+
+)
+
 
 const Process = [
   {
@@ -71,39 +109,6 @@ const Process = [
       "After launch, we offer regular updates, bug fixes, and new feature integration to keep your personal finance app running smoothly and up to date.",
   },
 ];
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/personal-finance-app-development/p1.webp",
-      head: "Budget & Expense Tracker App",
-      name: "A modern personal finance app built for easy budget tracking and daily expense management. Users can set monthly limits, track spending in real time, and get smart alerts. We integrated AI-based insights and bank-level security to ensure a smooth and safe user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/personal-finance-app-development/p2.webp",
-      head: "Smart Personal Finance Manager",
-      name: "Money Wallet app is a cross-platform finance app that helps users plan savings, manage bills, and monitor income with ease. We added features like goal tracking, bill reminders, and multi-bank integration. The app was designed with a clean UI and personalized dashboard for better financial control.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/contact-us",
-    },
-  ],
-};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -277,42 +282,45 @@ export default function ClinicalApp(props: any) {
         "Custom personal finance app",
         "Personal finance software development",
         "Expense tracker app development"
-    
+
       ],
-     
+
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-        
+
       ]
     },
 
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Personal Finance App Development Company",
-      "image":"https://www.comfygen.com/comfygen-images/personal-finance-app-development/about.webp",
-      "description":"Looking to build a finance app? We offer personal finance app development in India with secure architecture, rich UI/UX, and advanced financial planning tools for users.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"160"}
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Personal Finance App Development Company",
+      "image": "https://www.comfygen.com/comfygen-images/personal-finance-app-development/about.webp",
+      "description": "Looking to build a finance app? We offer personal finance app development in India with secure architecture, rich UI/UX, and advanced financial planning tools for users.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "160"
+      }
     },
 
     {
-      "@context": "https://schema.org/", 
-      "@type": "BreadcrumbList", 
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
       "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
+        "@type": "ListItem",
+        "position": 1,
         "name": "Home",
-        "item": "https://www.comfygen.com"  
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
         "name": "Personal Finance App Development",
-        "item": "https://www.comfygen.com/personal-finance-app-development"  
+        "item": "https://www.comfygen.com/personal-finance-app-development"
       }]
     },
 
@@ -527,26 +535,25 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
+      <Header />
+
       <div className="overflow-hidden pt-16">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/personal-finance-app-development/hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Personal Finance App Development Company"
-            ptag="Build a smart and user-friendly personal finance app with Comfygen. We are a trusted personal finance app development company that helps businesses create apps for budgeting, expense tracking, and money management. Whether you're a startup or a financial company, we deliver secure, scalable, and custom personal finance apps that meet your goals."
-            li="Simple and Attractive UI/UX Design"
-            li1="Secure Bank & Wallet Integrations"
-            li2="Real-Time Expense Tracking & Budgeting"
-            li3="Smart Reports with AI-Powered Insights"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Personal Finance App Development Company"
+          ptag="Build a smart and user-friendly personal finance app with Comfygen. We are a trusted personal finance app development company that helps businesses create apps for budgeting, expense tracking, and money management. Whether you're a startup or a financial company, we deliver secure, scalable, and custom personal finance apps that meet your goals."
+          li="Simple and Attractive UI/UX Design"
+          li1="Secure Bank & Wallet Integrations"
+          li2="Real-Time Expense Tracking & Budgeting"
+          li3="Smart Reports with AI-Powered Insights"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/personal-finance-app-development/hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="What is the Purpose of a Personal Finance App for Users?"
@@ -584,7 +591,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -593,11 +600,16 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Personal  Finance Apps We’ve Built"
-          description="We have delivered powerful and secure personal finance apps for startups and businesses around the world. Explore some of our top personal finance app development projects that helped users manage money smartly and grow financially."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Personal  Finance Apps We’ve Built"
+            description="We have delivered powerful and secure personal finance apps for startups and businesses around the world. Explore some of our top personal finance app development projects that helped users manage money smartly and grow financially."
+          />
+        </section>
+
+
 
         <CallToAction
           heading="Ready to Build Your Personal Finance App?"
@@ -674,7 +686,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <NewTeckStack
+        <TechStack
           title="Technology Stack We Use for Personal Finance App Development"
           description="We use the latest and most reliable technologies to build secure, scalable, and high-performance personal finance apps. Our advanced tech stack supports real-time syncing, smooth performance, and secure financial operations for users across platforms."
         />

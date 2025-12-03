@@ -3,37 +3,33 @@
     "title": "E-Commerce App and Web Development Company",
     "decs": "Comfygen specializes in offering unique e-commerce development services as an android ecommerce app development and mobile ecommerce app development . We are aware of how crucial it is to create scalable, highly reliable solutions in order to improve consumer interaction and spur growth for your e-commerce company. In order to understand your unique requirements and develop solutions that suit your business goals, our team of professionals will collaborate directly with you. We have the knowledge and experience to produce outstanding outcomes whether you require an e-commerce mobile app, a web-based e-commerce platform, or both. So what’s holding you bak hire us today we are the best ecommerce app and web development company in india. "
   },
-
-  
-    "Frequently": [
-      {
-        "num": "1",
-        "title": "How much does it cost to develop a UPI payment app?",
-        "desc": "The cost to develop a UPI payment app depends on various factors such as the complexity of features, platform (Android/iOS), and integrations with NPCI and banks. On average, the development cost ranges from $12,000 to $60,000, depending on your specific requirements and customization."
-      },
-      {
-        "num": "2",
-        "title": "How long does it take to develop a UPI app?",
-        "desc": "The development timeline for a UPI payment app typically ranges from 3 to 6 months. Factors such as the complexity of features, integrations (like NPCI APIs), and security measures can impact the timeline. A thorough project planning phase can help ensure a smooth and timely delivery."
-      },
-      {
-        "num": "3",
-        "title": "Is NPCI approval required for UPI integration?",
-        "desc": "Yes, NPCI approval is necessary for UPI integration. The National Payments Corporation of India (NPCI) oversees UPI and ensures that all payment apps adhere to security standards and guidelines. Developers must obtain NPCI certification to integrate UPI functionality and ensure the app’s compliance with regulatory requirements."
-      },
-      {
-        "num": "4",
-        "title": "Can I monetize a UPI app?",
-        "desc": "Yes, you can monetize a UPI payment app in various ways, such as charging transaction fees, offering premium services, or providing value-added features like bill payments, cashback offers, and in-app ads. However, any monetization model must align with NPCI guidelines and financial regulations."
-      },
-      {
-        "num": "5",
-        "title": "What are the security measures in place?",
-        "desc": "We implement robust security measures for UPI payment apps, including AES encryption, SSL certificates, and biometric authentication to safeguard user data. Additionally, our apps adhere to PCI-DSS compliance and follow industry best practices to ensure secure transactions and protect sensitive information."
-      }
-    ],
-  
-  
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a UPI payment app?",
+      "desc": "The cost to develop a UPI payment app depends on various factors such as the complexity of features, platform (Android/iOS), and integrations with NPCI and banks. On average, the development cost ranges from $12,000 to $60,000, depending on your specific requirements and customization."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to develop a UPI app?",
+      "desc": "The development timeline for a UPI payment app typically ranges from 3 to 6 months. Factors such as the complexity of features, integrations (like NPCI APIs), and security measures can impact the timeline. A thorough project planning phase can help ensure a smooth and timely delivery."
+    },
+    {
+      "num": "3",
+      "title": "Is NPCI approval required for UPI integration?",
+      "desc": "Yes, NPCI approval is necessary for UPI integration. The National Payments Corporation of India (NPCI) oversees UPI and ensures that all payment apps adhere to security standards and guidelines. Developers must obtain NPCI certification to integrate UPI functionality and ensure the app’s compliance with regulatory requirements."
+    },
+    {
+      "num": "4",
+      "title": "Can I monetize a UPI app?",
+      "desc": "Yes, you can monetize a UPI payment app in various ways, such as charging transaction fees, offering premium services, or providing value-added features like bill payments, cashback offers, and in-app ads. However, any monetization model must align with NPCI guidelines and financial regulations."
+    },
+    {
+      "num": "5",
+      "title": "What are the security measures in place?",
+      "desc": "We implement robust security measures for UPI payment apps, including AES encryption, SSL certificates, and biometric authentication to safeguard user data. Additionally, our apps adhere to PCI-DSS compliance and follow industry best practices to ensure secure transactions and protect sensitive information."
+    }
+  ],
   "myList1": [
     "Super-easy onboarding",
     "Native app",
@@ -89,6 +85,26 @@
       "btn": "Meet Now"
     }
   ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
+      "title": "AI-Driven Mobile Banking App",
+      "description": "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
+      "title": "Blockchain-Based Digital Wallet",
+      "description": "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
+      "title": "Core Banking System App",
+      "description": "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
+      "link": "#"
+    }
+  ],
   "Whycomfygen": [
     {
       "num": "1",
@@ -119,167 +135,151 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-    
-      "gridData": [
-        {
-          "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-          "title": "Certified UPI Developers",
-          "description": "Our team includes certified developers with in-depth knowledge of UPI protocols, NPCI compliance, and payment system architecture, ensuring your app is reliable and fully compliant with industry standards."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-          "title": "Experience with NPCI Integration",
-          "description": "We’ve successfully integrated NPCI UPI APIs and bank SDKs in multiple fintech projects, offering seamless interoperability and real-time transaction processing with high security and zero downtime."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-          "title": "End-to-End Compliance Support",
-          "description": "From PCI-DSS and KYC compliance to data encryption and privacy protocols, we provide comprehensive legal and technical support to ensure your UPI app development meets all government and banking regulations."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-          "title": "Agile Development Approach",
-          "description": "Using Agile methodology, we deliver faster iterations, constant updates, and collaborative workflows. This approach ensures efficient UPI app development that stays aligned with your evolving business goals."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-          "title": "24/7 Support & Maintenance",
-          "description": "We offer round-the-clock technical support and maintenance to monitor your UPI app’s performance, ensure security patches, and resolve issues in real time — keeping your app always running."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-          "title": "Proven Track Record in Fintech Solutions",
-          "description": "With 400+ apps delivered and 300+ satisfied clients, Comfygen has deep expertise in fintech and UPI app development, ensuring your solution is both innovative and market-ready from day one."
-        }
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Certified UPI Developers",
+        "description": "Our team includes certified developers with in-depth knowledge of UPI protocols, NPCI compliance, and payment system architecture, ensuring your app is reliable and fully compliant with industry standards."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Experience with NPCI Integration",
+        "description": "We’ve successfully integrated NPCI UPI APIs and bank SDKs in multiple fintech projects, offering seamless interoperability and real-time transaction processing with high security and zero downtime."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "End-to-End Compliance Support",
+        "description": "From PCI-DSS and KYC compliance to data encryption and privacy protocols, we provide comprehensive legal and technical support to ensure your UPI app development meets all government and banking regulations."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Agile Development Approach",
+        "description": "Using Agile methodology, we deliver faster iterations, constant updates, and collaborative workflows. This approach ensures efficient UPI app development that stays aligned with your evolving business goals."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "24/7 Support & Maintenance",
+        "description": "We offer round-the-clock technical support and maintenance to monitor your UPI app’s performance, ensure security patches, and resolve issues in real time — keeping your app always running."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Proven Track Record in Fintech Solutions",
+        "description": "With 400+ apps delivered and 300+ satisfied clients, Comfygen has deep expertise in fintech and UPI app development, ensuring your solution is both innovative and market-ready from day one."
+      }
+    ]
+  },
+  "servicesData": [
+    {
+      "title": "Custom UPI App Development",
+      "description": "We offer custom UPI app development solutions, creating apps tailored to your business needs. Whether you’re building a new platform or enhancing an existing one, our expert developers design intuitive, secure UPI apps for both Android and iOS platforms.",
+      "features": [
+        "Fully customizable for your business requirements",
+        "Seamless integration with multiple banks and payment networks",
+        "High-level security features with NPCI compliance"
       ]
     },
-    
-  
-
-
-"servicesData": [
-  {
-    "title": "Custom UPI App Development",
-    
-    "description": "We offer custom UPI app development solutions, creating apps tailored to your business needs. Whether you’re building a new platform or enhancing an existing one, our expert developers design intuitive, secure UPI apps for both Android and iOS platforms.",
-    "features": [
-      "Fully customizable for your business requirements",
-      "Seamless integration with multiple banks and payment networks",
-      "High-level security features with NPCI compliance"
-    ]
-  },
-  {
-    "title": "UPI Payment Gateway Integration",
-    
-    "description": "We provide seamless UPI payment gateway integration that allows your users to make real-time payments directly within your app. Our integration ensures a smooth transaction experience, offering users the convenience of UPI without compromising on security.",
-    "features": [
-      "Fast and secure transaction flow",
-      "Support for multiple payment methods",
-      "Easy UPI QR code scanning and payments"
-    ]
-  },
-  {
-    "title": "White Label UPI Payment Solutions",
-   
-    "description": "Our white-label UPI payment solutions allow businesses to quickly launch their own branded UPI payment platform. With a customizable interface and seamless user experience, you can offer UPI-based payments to your customers with minimal effort and investment.",
-    "features": [
-      "Ready-to-use solution with minimal customization",
-      "Easy brand integration with your unique identity",
-      "Secure, scalable, and ready for growth"
-    ]
-  },
-  {
-    "title": "Android & iOS UPI App Development",
-   
-    "description": "Our team specializes in Android & iOS UPI app development, creating apps that work flawlessly across devices and platforms. We design intuitive, secure, and feature-rich mobile apps that provide a seamless UPI experience for your users, with fast payment processing.",
-    "features": [
-      "Native app development for both platforms",
-      "Multi-device and OS compatibility",
-      "Real-time updates and notifications"
-    ]
-  },
-  {
-    "title": "QR Code and Scan & Pay Integration",
-    
-    "description": "We offer QR code and Scan & Pay integration, empowering your app users to complete payments quickly and easily. With the ability to scan UPI QR codes, users can make instant payments with just a few taps, driving user engagement and satisfaction.",
-    "features": [
-      "Quick, hassle-free payments via QR scanning",
-      "Real-time transaction updates",
-      "Secure and user-friendly interface"
-    ]
-  },
-  {
-    "title": "Backend Admin Dashboard Development",
-  
-    "description": "Our backend admin dashboard development ensures that you can manage your UPI payment app efficiently. From transaction monitoring to user management, we provide an easy-to-use interface for administrators to track all operations and ensure smooth business functioning.",
-    "features": [
-      "Real-time analytics and reporting tools",
-      "Transaction history and dispute management",
-      "Multi-user access with role-based permissions"
-    ]
-  },
-  {
-    "title": "NPCI and Bank API Integration",
-    
-    "description": "We specialize in NPCI and bank API integration, ensuring that your UPI app is fully compliant with national and bank standards. Our team integrates your platform with bank APIs to offer secure and smooth UPI transactions, enhancing the reliability of your app.",
-    "features": [
-      "Seamless integration with bank systems",
-      "NPCI-certified compliance",
-      "Real-time payment settlement and validation"
-    ]
-  }
-],
-
-
- "LeadingSoftware": [
-  {
-    "num": "01",
-    "title": "User Registration & KYC",
-    "decs": "Enable smooth onboarding with easy user registration and secure KYC verification. Our system ensures regulatory compliance while providing a frictionless sign-up process to verify identity and prevent fraud in real-time."
-  },
-  {
-    "num": "02",
-    "title": "Multi-Bank Account Linking",
-    "decs": "Allow users to link and manage multiple bank accounts within the app. Our system supports seamless integration with various banks, giving users flexibility and control over their financial transactions and account preferences."
-  },
-  {
-    "num": "03",
-    "title": "Send/Receive Money",
-    "decs": "Users can send and receive money instantly using UPI IDs, phone numbers, or QR codes. The process is secure, real-time, and supports peer-to-peer as well as merchant transactions with complete reliability."
-  },
-  {
-    "num": "04",
-    "title": "UPI ID & QR Code Generation",
-    "decs": "Our app generates unique UPI IDs and QR codes for every user. These features make payments quick and hassle-free, enabling users to receive or request money instantly with high-level security and convenience."
-  },
-  {
-    "num": "05",
-    "title": "Bill Payments & Recharge",
-    "decs": "Offer integrated bill payments and mobile/DTH recharges within the app. Users can easily pay utility bills, EMI dues, or recharge services directly through their UPI-linked accounts with just a few taps."
-  },
-  {
-    "num": "06",
-    "title": "Transaction History",
-    "decs": "Provide detailed transaction history with real-time updates. Users can view, filter, and download their UPI transaction logs, ensuring full transparency and tracking of payments made or received via the app."
-  },
-  {
-    "num": "07",
-    "title": "Push Notifications",
-    "decs": "Keep users informed with instant push notifications for transactions, offers, bill reminders, and security alerts. These timely updates help build trust and keep users engaged with the app consistently."
-  },
-  {
-    "num": "08",
-    "title": "Bank-Level Encryption & Security",
-    "decs": "Ensure top-tier protection with end-to-end encryption, SSL, and tokenization. Our UPI apps follow industry best practices and comply with security standards to safeguard user data and financial information."
-  },
-  {
-    "num": "09",
-    "title": "Biometric Authentication",
-    "decs": "Enhance security with biometric authentication, including fingerprint or facial recognition. This feature adds an extra layer of protection, ensuring only authorized users can access or complete sensitive transactions within the app."
-  }
-],
-
-
+    {
+      "title": "UPI Payment Gateway Integration",
+      "description": "We provide seamless UPI payment gateway integration that allows your users to make real-time payments directly within your app. Our integration ensures a smooth transaction experience, offering users the convenience of UPI without compromising on security.",
+      "features": [
+        "Fast and secure transaction flow",
+        "Support for multiple payment methods",
+        "Easy UPI QR code scanning and payments"
+      ]
+    },
+    {
+      "title": "White Label UPI Payment Solutions",
+      "description": "Our white-label UPI payment solutions allow businesses to quickly launch their own branded UPI payment platform. With a customizable interface and seamless user experience, you can offer UPI-based payments to your customers with minimal effort and investment.",
+      "features": [
+        "Ready-to-use solution with minimal customization",
+        "Easy brand integration with your unique identity",
+        "Secure, scalable, and ready for growth"
+      ]
+    },
+    {
+      "title": "Android & iOS UPI App Development",
+      "description": "Our team specializes in Android & iOS UPI app development, creating apps that work flawlessly across devices and platforms. We design intuitive, secure, and feature-rich mobile apps that provide a seamless UPI experience for your users, with fast payment processing.",
+      "features": [
+        "Native app development for both platforms",
+        "Multi-device and OS compatibility",
+        "Real-time updates and notifications"
+      ]
+    },
+    {
+      "title": "QR Code and Scan & Pay Integration",
+      "description": "We offer QR code and Scan & Pay integration, empowering your app users to complete payments quickly and easily. With the ability to scan UPI QR codes, users can make instant payments with just a few taps, driving user engagement and satisfaction.",
+      "features": [
+        "Quick, hassle-free payments via QR scanning",
+        "Real-time transaction updates",
+        "Secure and user-friendly interface"
+      ]
+    },
+    {
+      "title": "Backend Admin Dashboard Development",
+      "description": "Our backend admin dashboard development ensures that you can manage your UPI payment app efficiently. From transaction monitoring to user management, we provide an easy-to-use interface for administrators to track all operations and ensure smooth business functioning.",
+      "features": [
+        "Real-time analytics and reporting tools",
+        "Transaction history and dispute management",
+        "Multi-user access with role-based permissions"
+      ]
+    },
+    {
+      "title": "NPCI and Bank API Integration",
+      "description": "We specialize in NPCI and bank API integration, ensuring that your UPI app is fully compliant with national and bank standards. Our team integrates your platform with bank APIs to offer secure and smooth UPI transactions, enhancing the reliability of your app.",
+      "features": [
+        "Seamless integration with bank systems",
+        "NPCI-certified compliance",
+        "Real-time payment settlement and validation"
+      ]
+    }
+  ],
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "User Registration & KYC",
+      "decs": "Enable smooth onboarding with easy user registration and secure KYC verification. Our system ensures regulatory compliance while providing a frictionless sign-up process to verify identity and prevent fraud in real-time."
+    },
+    {
+      "num": "02",
+      "title": "Multi-Bank Account Linking",
+      "decs": "Allow users to link and manage multiple bank accounts within the app. Our system supports seamless integration with various banks, giving users flexibility and control over their financial transactions and account preferences."
+    },
+    {
+      "num": "03",
+      "title": "Send/Receive Money",
+      "decs": "Users can send and receive money instantly using UPI IDs, phone numbers, or QR codes. The process is secure, real-time, and supports peer-to-peer as well as merchant transactions with complete reliability."
+    },
+    {
+      "num": "04",
+      "title": "UPI ID & QR Code Generation",
+      "decs": "Our app generates unique UPI IDs and QR codes for every user. These features make payments quick and hassle-free, enabling users to receive or request money instantly with high-level security and convenience."
+    },
+    {
+      "num": "05",
+      "title": "Bill Payments & Recharge",
+      "decs": "Offer integrated bill payments and mobile/DTH recharges within the app. Users can easily pay utility bills, EMI dues, or recharge services directly through their UPI-linked accounts with just a few taps."
+    },
+    {
+      "num": "06",
+      "title": "Transaction History",
+      "decs": "Provide detailed transaction history with real-time updates. Users can view, filter, and download their UPI transaction logs, ensuring full transparency and tracking of payments made or received via the app."
+    },
+    {
+      "num": "07",
+      "title": "Push Notifications",
+      "decs": "Keep users informed with instant push notifications for transactions, offers, bill reminders, and security alerts. These timely updates help build trust and keep users engaged with the app consistently."
+    },
+    {
+      "num": "08",
+      "title": "Bank-Level Encryption & Security",
+      "decs": "Ensure top-tier protection with end-to-end encryption, SSL, and tokenization. Our UPI apps follow industry best practices and comply with security standards to safeguard user data and financial information."
+    },
+    {
+      "num": "09",
+      "title": "Biometric Authentication",
+      "decs": "Enhance security with biometric authentication, including fingerprint or facial recognition. This feature adds an extra layer of protection, ensuring only authorized users can access or complete sensitive transactions within the app."
+    }
+  ],
   "myList4": [
     "One-Stop Destination",
     "Reliable E-Commerce Development Partners",
@@ -289,16 +289,14 @@
     "On Time Delivery",
     "Professionals Who Have Worked With All Industry Verticals"
   ],
-
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Unique Features of a Blockchain-Based Dating App",
       "desc": "We offer <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain-based dating app development</a>  to ensure security, privacy, and a scam-free dating experience."
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Decentralized Identity & Profile Verification",
       "desc": "Blockchain verifies user identities securely, preventing fake profiles and bots. This ensures only real people can join the platform, making dating safer."
@@ -320,8 +318,6 @@
       "desc": "Blockchain’s fraud detection and smart contract security help prevent scams, catfishing, and identity theft, making dating safer for everyone."
     }
   ],
-
-
   "WhyChoosed": [
     {
       "num": "1",
@@ -570,7 +566,6 @@
       "desc": "Our marketing efforts increase customers' dating app's clarity and downloads. We use social media, paid advertising, and other channels to effectively attract and keep users to operate growth and engagement."
     }
   ],
-
   "WhyChooseDating": [
     {
       "num": "1",
@@ -665,72 +660,67 @@
       "decs": "Comfygen has used Web3 tech to create augmented 3D graphics that help create a more humane and real life experience for users, giving the dating app an advantage over other apps in the virtual communication ecosystem.  "
     }
   ],
-  
-    "FoodAppMaker": [
-      {
-        "num": "1",
-        "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-        "title": "AI & Machine Learning for Fraud Detection",
-        "decs": "AI and ML are revolutionizing UPI app development by detecting fraud in real-time. These technologies analyze transaction patterns to flag suspicious activity, ensuring user trust and security. Developers are integrating intelligent systems to make UPI payments safer and more predictive for end-users."
-      },
-      {
-        "num": "2",
-        "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/voice-command-icon1.svg",
-        "title": "Voice-Activated UPI Payments",
-        "decs": "Voice-enabled features are the next big step in UPI app development. Users can now initiate payments using voice commands, making transactions more accessible. This innovation improves usability, especially for elderly and visually impaired users, promoting inclusive digital payment adoption through UPI apps."
-      },
-      {
-        "num": "3",
-        "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/international-transaction-icon1.svg",
-        "title": "UPI for International Transactions",
-        "decs": "With cross-border functionality expanding, UPI app development is adapting to support global transactions. This trend enables Indian users to pay internationally using UPI, fostering financial inclusion and offering businesses an opportunity to cater to a broader audience with seamless cross-currency payment capabilities."
-      },
-      {
-        "num": "4",
-        "img": "https://www.comfygen.com/img/iot-integration.webp",
-        "title": "UPI Integration with Wearable Devices",
-        "decs": "Integrating UPI apps with wearable devices like smartwatches enhances convenience. This UPI app development trend allows contactless, real-time transactions on the go, making it ideal for tech-savvy users seeking fast, touchless payment methods. It reflects the future of frictionless payment commerce."
-      },
-      {
-        "num": "5",
-        "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/ai-predictive-icons1.svg",
-        "title": "Personalized User Experience with Predictive Analytics",
-        "decs": "Predictive analytics is shaping UPI app development by offering personalized experiences. UPI apps now recommend payments, track spending, and remind users of bills based on behavior. This trend improves user retention and satisfaction through intelligent financial suggestions tailored to individual usage patterns."
-      },
-      {
-        "num": "6",
-        "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/bnpl-upi-icon1.svg",
-        "title": "BNPL (Buy Now, Pay Later) Integration with UPI",
-        "decs": "UPI app development is embracing BNPL models to offer users instant payments with deferred billing. This hybrid feature enhances customer convenience and boosts user engagement, especially for e-commerce, by combining the flexibility of credit with the simplicity of UPI-based payment methods."
-      },
-      {
-        "num": "7",
-        "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-        "title": "Blockchain Integration for Transaction Transparency",
-        "decs": "Blockchain is redefining trust in UPI app development. UPI apps built with blockchain ensure transparency and security by enabling decentralized and immutable transaction records. This is particularly useful for enterprise-grade applications and fintech platforms requiring high trust and regulatory compliance."
-      }
-    ] ,
-  
-    
-      "customTestimonials": [
-        {
-          "text": "Comfygen delivered a top-notch UPI payment app with seamless integration and exceptional security. Their developers ensured that every detail was handled professionally, making our app ready for the market. Highly recommended for anyone looking to build a secure and reliable UPI app!",
-          "name": "Rajesh Kumar",
-          "title": "India"
-        },
-        {
-          "text": "We partnered with Comfygen for our UPI payment gateway integration, and the result was outstanding. The team understood our requirements and delivered exactly what we needed. Their knowledge of NPCI APIs and quick turnaround was a game-changer for us.",
-          "name": "Mike John",
-          "title": "UK"
-        },
-        {
-          "text": "Comfygen’s team provided excellent UPI app development services. Their transparency, communication, and fintech expertise were crucial for our app's success. We’re extremely happy with the outcome and look forward to future collaborations.",
-          "name": "AL Sameer",
-          "title": "UAE"
-        }
-      ],
-    
-    
+  "FoodAppMaker": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "AI & Machine Learning for Fraud Detection",
+      "decs": "AI and ML are revolutionizing UPI app development by detecting fraud in real-time. These technologies analyze transaction patterns to flag suspicious activity, ensuring user trust and security. Developers are integrating intelligent systems to make UPI payments safer and more predictive for end-users."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/voice-command-icon1.svg",
+      "title": "Voice-Activated UPI Payments",
+      "decs": "Voice-enabled features are the next big step in UPI app development. Users can now initiate payments using voice commands, making transactions more accessible. This innovation improves usability, especially for elderly and visually impaired users, promoting inclusive digital payment adoption through UPI apps."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/international-transaction-icon1.svg",
+      "title": "UPI for International Transactions",
+      "decs": "With cross-border functionality expanding, UPI app development is adapting to support global transactions. This trend enables Indian users to pay internationally using UPI, fostering financial inclusion and offering businesses an opportunity to cater to a broader audience with seamless cross-currency payment capabilities."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "UPI Integration with Wearable Devices",
+      "decs": "Integrating UPI apps with wearable devices like smartwatches enhances convenience. This UPI app development trend allows contactless, real-time transactions on the go, making it ideal for tech-savvy users seeking fast, touchless payment methods. It reflects the future of frictionless payment commerce."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/ai-predictive-icons1.svg",
+      "title": "Personalized User Experience with Predictive Analytics",
+      "decs": "Predictive analytics is shaping UPI app development by offering personalized experiences. UPI apps now recommend payments, track spending, and remind users of bills based on behavior. This trend improves user retention and satisfaction through intelligent financial suggestions tailored to individual usage patterns."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/comfygen-images/upi-payment-app-development/bnpl-upi-icon1.svg",
+      "title": "BNPL (Buy Now, Pay Later) Integration with UPI",
+      "decs": "UPI app development is embracing BNPL models to offer users instant payments with deferred billing. This hybrid feature enhances customer convenience and boosts user engagement, especially for e-commerce, by combining the flexibility of credit with the simplicity of UPI-based payment methods."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Integration for Transaction Transparency",
+      "decs": "Blockchain is redefining trust in UPI app development. UPI apps built with blockchain ensure transparency and security by enabling decentralized and immutable transaction records. This is particularly useful for enterprise-grade applications and fintech platforms requiring high trust and regulatory compliance."
+    }
+  ],
+  "customTestimonials": [
+    {
+      "text": "Comfygen delivered a top-notch UPI payment app with seamless integration and exceptional security. Their developers ensured that every detail was handled professionally, making our app ready for the market. Highly recommended for anyone looking to build a secure and reliable UPI app!",
+      "name": "Rajesh Kumar",
+      "title": "India"
+    },
+    {
+      "text": "We partnered with Comfygen for our UPI payment gateway integration, and the result was outstanding. The team understood our requirements and delivered exactly what we needed. Their knowledge of NPCI APIs and quick turnaround was a game-changer for us.",
+      "name": "Mike John",
+      "title": "UK"
+    },
+    {
+      "text": "Comfygen’s team provided excellent UPI app development services. Their transparency, communication, and fintech expertise were crucial for our app's success. We’re extremely happy with the outcome and look forward to future collaborations.",
+      "name": "AL Sameer",
+      "title": "UAE"
+    }
+  ],
   "Chartacterstics": [
     {
       "num": "1",
@@ -793,8 +783,4 @@
       "decs": "As a mobile dating app development company, we are experts at creating different types of dating apps, including event-based dating apps. You can easily opt to create an event-based dating app that can help people meet in real life at social events and group events that are very social and fun for the audience."
     }
   ]
-
- 
-   
- }
-  
+}

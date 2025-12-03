@@ -2,33 +2,70 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import WildSolution from "../components/WildSolution";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../componentsnew/AboutSection";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../componentsnew/HireDeveloper";
-import Features from "./components/Features";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
 
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const WildSolution = dynamic(() => import("../Newcomponet/SectionCompoent/WildSolution"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
 
 
 const Process = [
@@ -63,9 +100,6 @@ const Process = [
   },
 
 ];
-
-
-
 
 
 
@@ -345,23 +379,24 @@ export default function Mobile(props) {
       <Header />
       {/* </LazyLoad> */}
       <div className="pt-16">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Best Custom Finance App Development Company in India"
-            subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
-            ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
-            li="15+ Trusted Fintech Developers"
-            li1="Customized Fintech Solutions Delivered"
-            li2="06+ years of experience in Development"
-            li3="Cutting-edge technologies used"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+        <HeroSectionForAllPages
+          heading="Best Custom Finance App Development Company in India"
+          subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
+          ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
+          li="15+ Trusted Fintech Developers"
+          li1="Customized Fintech Solutions Delivered"
+          li2="06+ years of experience in Development"
+          li3="Cutting-edge technologies used"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp"
+        />
+
 
         <AboutSection
           title=""
@@ -384,8 +419,6 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <ContactFromCenter />
-
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py10">
           <div className="flex flex-col justify-center text-center  mx-auto">
             <h2 className=" text-2xl lg:text-4xl font-bold leading-[2rem] lg:leading-[3rem] text-[#212121]">
@@ -400,18 +433,27 @@ export default function Mobile(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Fintech Apps Portfolio"
             description="Our team is brilliant at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
           />
         </section>
 
+        <div className="py-8">
+          <Features
+            heading=" We Develop FinTech Apps With Advanced Panel Features"
+            description="At Comfygen, we specialize in Custom Finance App Development,
+          integrating advanced panel features to enhance user experience,
+          security, and operational efficiency. Our Fintech App Development
+          Services are tailored for banks, financial institutions, and startups,
+          ensuring seamless transactions, AI-driven insights, and high-end
+          security protocols."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
 
-        <section>
-          <Features />
-        </section>
         <section className="py-10 lg:py-16  bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="space-y-4 text-center 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="flex flex-col justify-center text-center  mx-auto">
@@ -421,10 +463,10 @@ export default function Mobile(props) {
               <p className="text-base text-white text-center">Comfygen is a next-level finance app development company in India that has delivered top-notch financial apps. We make sure seamless functionality, top-tier security, and a great user experience for your finance app with our expert team of <a className="font-semibold" href="/hire-mobile-app-developer">FinTech mobile app developers</a> .</p>
             </div>
             <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-              {JSON_DATA.FoodAppMaker.map((elem) => {
+              {JSON_DATA.FoodAppMaker.map((elem, index) => {
                 const { img, title, decs } = elem;
                 return (
-                  <div className={` relative`}>
+                  <div key={index} className={` relative`}>
                     <div className={` flex justify-start gap-2 place-items-center relative`}>
                       <h3 className="text-2xl font-bold text-[#fff] text-start">
                         {title}

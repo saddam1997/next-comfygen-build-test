@@ -26,8 +26,14 @@
       "desc": "We provide extensive post-development support and maintenance services to guarantee that your laboratory app continues to function properly. This includes regular updates for software compatibility issues, bug fixes, and security patches. Our skilled support team is here to assist you with any questions or issues you may have, ensuring that your app remains stable and up to date throughout its lifecycle. With our continuing support, you can concentrate on your research while we manage the technical parts of app maintenance."
     }
   ],
-
-
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/bioLab-tracker-portfolio.webp",
+      "title": "BioLab Tracker",
+      "description": "BioLab Tracker is an innovative application tailored for biomedical research laboratories. This app offers comprehensive functionalities for tracking experiments, managing biological samples, and monitoring lab equipment. With BioLab Tracker, researchers can document experimental procedures, schedule equipment usage, and access data analytics to improve research outcomes. The app supports collaboration by allowing team members to share data and insights in real-time. Enhanced with cloud storage and encrypted data protection, BioLab Tracker ensures that sensitive information remains secure. Its intuitive design and responsive support make it an essential tool for advancing biomedical research.",
+      "link": "#"
+    }
+  ],
   "servicesData": [
     {
       "title": "Laboratory App Development Consultancy",
@@ -77,7 +83,6 @@
         "Reliable Support for Seamless Operation"
       ]
     }
-    
   ],
   "pageData": {
     "title": "Why Comfygen Should Be Your Choice for Laboratory App Development?",
@@ -155,79 +160,69 @@
       "img": "https://www.comfygen.com/img/analyzing-and-interpreting-test-results.webp",
       "title": "Analyzing and interpreting test results",
       "decs": "Self-learning algorithms enable the analysis and interpretation of test data, eliminating human error and streamlining problem solving."
-    }
-    ,
+    },
     {
       "num": "4",
       "img": "https://www.comfygen.com/img/electron-js-for-desktop-app.webp",
       "title": "Compatibility with LIMS or LIS system",
       "decs": "Cooperation inside and between teams is enhanced and duplicate data entry is prevented when a system is compatible with a LIMS or LIS."
-    }
-    ,
+    },
     {
       "num": "5",
       "img": "https://www.comfygen.com/img/ease-of-use.webp",
       "title": "Ease of use:",
       "decs": "Creating an intuitive yet sophisticated user interface that streamlines intricate lab procedures and improves user satisfaction is the key to making a system easy to use."
-    }
-    ,
+    },
     {
       "num": "6",
       "img": "https://www.comfygen.com/img/managing-the-trouble-shooting.webp",
       "title": "Managing the Trouble-Shooting",
       "decs": "With built-in troubleshooting, users may easily find and resolve test-related issues."
-    }
-    ,
+    },
     {
       "num": "7",
       "img": "https://www.comfygen.com/img/follow-the-compliances-factor.webp",
       "title": "Follow the Compliances Factor",
       "decs": "FDA, HIPAA, and ETL infrastructure compliance for efficient and safe processing and storing of healthcare data."
-    }
-    ,
+    },
     {
       "num": "8",
       "img": "https://www.comfygen.com/img/inventory-management.webp",
       "title": "Inventory Management",
       "decs": "Keep track of lab supplies with ease, using capabilities to control stock levels, track usage, and receive notifications for low inventory, guaranteeing smooth operations."
-    }
-    ,
+    },
     {
       "num": "9",
       "img": "https://www.comfygen.com/img/sample-tracking.webp",
       "title": "Sample Tracking",
       "decs": " Easily track the path of samples from collection to analysis, with real-time updates on status, position, and any linked data, boosting efficiency and lowering errors."
-    }
-    ,
+    },
     {
       "num": "10",
       "img": "https://www.comfygen.com/img/data-visualization.webp",
       "title": "Data Visualization",
       "decs": "Simple graphs and charts that facilitate rapid examination and interpretation of lab data can help staff and researchers make decisions more quickly."
-    }
-    ,
+    },
     {
       "num": "11",
       "img": "https://www.comfygen.com/img/collaboration-tools.webp",
       "title": "Collaboration Tools",
       "decs": "Encourage teamwork and information sharing among lab participants by giving them the ability to share data, notes, and work together on projects within the app."
-    }
-    ,
+    },
     {
       "num": "12",
       "img": "https://www.comfygen.com/img/quality-control-checks.webp",
       "title": "Quality Control Checks",
       "decs": "Use quality control measures in the laboratory app development to guarantee results are accurate and consistent. It has built-in validation criteria and notifications for any deviations, so it can maintain high performance standards."
     }
-
   ],
   "myList": [
     "Developers are experienced with 10+ years ",
     "Use cutting edge technologies to create solutions",
     "Aware of trending technologies to bring engagement in market for the app",
     "AThey cost what’s right and competitive to market.",
-    "Available for the customer support anytime." ,
-    "Available to work dedicatedly on your project" ,
+    "Available for the customer support anytime.",
+    "Available to work dedicatedly on your project",
     "Our developers are workable in different time zones."
   ],
   "Hire": [
@@ -235,7 +230,7 @@
       "num": "1",
       "title": "Hire Laboratory App Developers",
       "desc": "Comfygen has always tried keeping touch with the cutting edge technologies and latest tech trends. The belief is always to provide the best app solutions. Therefore, we have hired experts from different domains. ",
-      "decs": "Our company has the best healthcare app developers; who understand the needs, learn about requirements, know current market tech trends, build robust solutions capable of competing in the market. The app developers working here can do perfect  laboratory app development with engaging features and functionalities. " ,
+      "decs": "Our company has the best healthcare app developers; who understand the needs, learn about requirements, know current market tech trends, build robust solutions capable of competing in the market. The app developers working here can do perfect  laboratory app development with engaging features and functionalities. ",
       "url": "/contact-us",
       "btn": "Hire Developer"
     }
@@ -356,7 +351,7 @@
     {
       "num": "1",
       "title": "Laboratory App Development Consultancy",
-      "urlLink":"ca/application-consulting-services",
+      "urlLink": "ca/application-consulting-services",
       "stack": "Our team of experienced developers is ready to provide professional support and recommendations for creating customized laboratory applications. Through our consulting service, we guarantee that your app will meet all the specific needs of your laboratory, utilizing innovative technologies and industry standards to ensure top-notch performance."
     },
     {
@@ -443,6 +438,5 @@
       "title": "Customer Support Accessibility",
       "decs": "Our dedication to customer satisfaction doesn't end with the app launch. We provide ongoing support and maintenance, listening to feedback and making continuous improvements to ensure that our clients' needs are always met and exceeded."
     }
-
   ]
 }

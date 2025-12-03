@@ -90,96 +90,108 @@
       "title": "Food Delivery App Development Company"
     }
   ],
-  
   "servicesData": [
-      {
-        "title": "Custom Credit Scoring App Development",
-        "description": "We specialize in credit scoring app development tailored to your business goals. Our custom-built apps use secure architecture and intuitive designs to provide accurate credit assessments while ensuring compliance and data protection across all financial processes.",
-        "features": [
-          "Tailored to Business Goals",
-          "Secure and Scalable Infrastructure",
-          "Real-Time Financial Data Sync"
-        ]
-      },
-      {
-        "title": "AI & Machine Learning Integration",
-        "description": "Take your solution to the next level with credit management app development powered by AI and ML. We implement intelligent credit scoring models that adapt to user behavior and improve scoring accuracy over time.",
-        "features": [
-          "Predictive Risk Analysis",
-          "Dynamic Scoring Algorithms",
-          "Continuous Learning Capabilities"
-        ]
-      },
-      {
-        "title": "User-Friendly Interface",
-        "description": "As a leading provider of credit scoring app development services, we prioritize user experience with intuitive interfaces designed for both consumers and financial institutions. Our apps are easy to navigate and offer clear visualizations of credit performance.",
-        "features": [
-          "Streamlined User Journey",
-          "Custom Dashboards",
-          "Accessible Across Devices"
-        ]
-      },
-      {
-        "title": "Multi-Platform Development",
-        "description": "We ensure seamless performance with cross-platform and native app solutions for both Android and iOS. Our team excels at implementing intelligent credit scoring across devices, ensuring broad user reach and functionality.",
-        "features": [
-          "Cross-Platform Compatibility",
-          "Fast, Secure App Deployment",
-          "Native Mobile Experience"
-        ]
-      },
-      {
-        "title": "Real-Time Credit Monitoring",
-        "description": "As a top credit management app development company, we develop credit scoring apps that deliver real-time credit monitoring features, enabling users to track changes and receive instant updates that affect their credit status.",
-        "features": [
-          "Push Notifications",
-          "Real-Time Alerts",
-          "Credit Behavior Tracking"
-        ]
-      }
-    ],
-  
+    {
+      "title": "Custom Credit Scoring App Development",
+      "description": "We specialize in credit scoring app development tailored to your business goals. Our custom-built apps use secure architecture and intuitive designs to provide accurate credit assessments while ensuring compliance and data protection across all financial processes.",
+      "features": [
+        "Tailored to Business Goals",
+        "Secure and Scalable Infrastructure",
+        "Real-Time Financial Data Sync"
+      ]
+    },
+    {
+      "title": "AI & Machine Learning Integration",
+      "description": "Take your solution to the next level with credit management app development powered by AI and ML. We implement intelligent credit scoring models that adapt to user behavior and improve scoring accuracy over time.",
+      "features": [
+        "Predictive Risk Analysis",
+        "Dynamic Scoring Algorithms",
+        "Continuous Learning Capabilities"
+      ]
+    },
+    {
+      "title": "User-Friendly Interface",
+      "description": "As a leading provider of credit scoring app development services, we prioritize user experience with intuitive interfaces designed for both consumers and financial institutions. Our apps are easy to navigate and offer clear visualizations of credit performance.",
+      "features": [
+        "Streamlined User Journey",
+        "Custom Dashboards",
+        "Accessible Across Devices"
+      ]
+    },
+    {
+      "title": "Multi-Platform Development",
+      "description": "We ensure seamless performance with cross-platform and native app solutions for both Android and iOS. Our team excels at implementing intelligent credit scoring across devices, ensuring broad user reach and functionality.",
+      "features": [
+        "Cross-Platform Compatibility",
+        "Fast, Secure App Deployment",
+        "Native Mobile Experience"
+      ]
+    },
+    {
+      "title": "Real-Time Credit Monitoring",
+      "description": "As a top credit management app development company, we develop credit scoring apps that deliver real-time credit monitoring features, enabling users to track changes and receive instant updates that affect their credit status.",
+      "features": [
+        "Push Notifications",
+        "Real-Time Alerts",
+        "Credit Behavior Tracking"
+      ]
+    }
+  ],
 
-  "consultancyHead" :[
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-score-ai-credit-score-app.webp",
+      "title": "AI-Powered Credit Score App",
+      "description": "An intelligent app that uses AI and machine learning to calculate real-time credit scores, offer improvement tips, and deliver predictive credit analysis for both individuals and institutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-score-secure-credit-monitoring-app.webp",
+      "title": "Secure Credit Monitoring App",
+      "description": "A user-centric app featuring encrypted data storage, real-time alerts, and seamless integration with financial institutions to monitor, track, and enhance user credit health efficiently.",
+      "link": "#"
+    }
+  ],
+
+
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Key Features of Our Credit Scoring App Development",
       "desc": "At Comfygen, we build intelligent and secure credit scoring apps with essential features that empower users and financial institutions. As a trusted credit scoring app development company, we ensure each feature is designed to enhance accuracy, transparency, and user experience."
     }
   ],
-  
-
-    "consultancyData": [
-      {
-        "title": "Credit Score Calculation",
-        "desc": "Our app uses advanced algorithms and data models to calculate accurate credit scores based on user financial behavior, repayment history, and risk factors, ensuring precise creditworthiness assessment."
-      },
-      {
-        "title": "Secure Data Encryption",
-        "desc": "We implement bank-grade encryption protocols to protect sensitive user data, ensuring complete privacy, data security, and regulatory compliance across all credit scoring and financial transactions."
-      },
-      {
-        "title": "Data Analytics & Insights",
-        "desc": "Our app provides deep financial insights through intelligent data analytics, helping users and businesses identify patterns, track financial health, and make better credit and lending decisions."
-      },
-      {
-        "title": "Third-Party Integrations",
-        "desc": "We enable seamless integration with banks, credit bureaus, and financial platforms, allowing users to access consolidated credit data for a more comprehensive scoring process and financial overview."
-      },
-      {
-        "title": "Real-Time Alerts & Notifications",
-        "desc": "Users receive instant alerts on score changes, credit activity, or financial risks. Real-time notifications help users stay informed and make timely decisions to maintain good credit health."
-      },
-      {
-        "title": "Personalized Financial Recommendations",
-        "desc": "Based on user behavior and financial patterns, the app delivers tailored tips and strategies to improve credit scores, reduce debt, and enhance overall financial wellbeing."
-      },
-      {
-        "title": "User Authentication & Verification",
-        "desc": "Our app ensures secure access through multi-factor authentication, biometric login, and KYC verification, offering a safe environment for managing and viewing sensitive credit information."
-      }
-    ],
-  
+  "consultancyData": [
+    {
+      "title": "Credit Score Calculation",
+      "desc": "Our app uses advanced algorithms and data models to calculate accurate credit scores based on user financial behavior, repayment history, and risk factors, ensuring precise creditworthiness assessment."
+    },
+    {
+      "title": "Secure Data Encryption",
+      "desc": "We implement bank-grade encryption protocols to protect sensitive user data, ensuring complete privacy, data security, and regulatory compliance across all credit scoring and financial transactions."
+    },
+    {
+      "title": "Data Analytics & Insights",
+      "desc": "Our app provides deep financial insights through intelligent data analytics, helping users and businesses identify patterns, track financial health, and make better credit and lending decisions."
+    },
+    {
+      "title": "Third-Party Integrations",
+      "desc": "We enable seamless integration with banks, credit bureaus, and financial platforms, allowing users to access consolidated credit data for a more comprehensive scoring process and financial overview."
+    },
+    {
+      "title": "Real-Time Alerts & Notifications",
+      "desc": "Users receive instant alerts on score changes, credit activity, or financial risks. Real-time notifications help users stay informed and make timely decisions to maintain good credit health."
+    },
+    {
+      "title": "Personalized Financial Recommendations",
+      "desc": "Based on user behavior and financial patterns, the app delivers tailored tips and strategies to improve credit scores, reduce debt, and enhance overall financial wellbeing."
+    },
+    {
+      "title": "User Authentication & Verification",
+      "desc": "Our app ensures secure access through multi-factor authentication, biometric login, and KYC verification, offering a safe environment for managing and viewing sensitive credit information."
+    }
+  ],
   "MobileSolution": [
     {
       "num": "1",
@@ -393,33 +405,32 @@
     }
   ],
   "Frequently": [
-  {
-    "num": "1",
-    "title": "What is credit scoring?",
-    "desc": "Credit scoring is a method used to evaluate an individual’s creditworthiness based on their financial history and behavior. It involves analyzing data such as repayment history, credit utilization, and outstanding debts to assign a score that reflects the risk of lending. Businesses use credit scores to make informed decisions about loans, credit approvals, and financial services."
-  },
-  {
-    "num": "2",
-    "title": "How does the credit scoring app work?",
-    "desc": "A credit scoring app collects and analyzes user financial data using AI and data analytics. It accesses credit reports, transaction history, and financial behavior to generate a real-time credit score. These apps provide users with personalized financial insights, track score changes, and help lenders assess risk accurately. Advanced apps also offer credit recommendations and alerts for better financial decision-making."
-  },
-  {
-    "num": "3",
-    "title": "How long does it take to develop a credit scoring app?",
-    "desc": "The development timeline for a credit scoring app depends on its complexity, features, and platform requirements. On average, a basic app takes 2–4 months, while a feature-rich, AI-integrated solution can take 4–6 months or more. This includes planning, UI/UX design, development, testing, and deployment. Custom integrations and compliance requirements may also extend the development time."
-  },
-  {
-    "num": "4",
-    "title": "What’s the cost of developing a credit scoring app?",
-    "desc": "The cost of credit scoring app development varies based on app complexity, design, features, technology stack, and development hours. A simple app may cost around $15,000–$30,000, while a custom enterprise-grade app with AI, real-time analytics, and security compliance can range from $40,000–$100,000 or more. We provide a tailored quote after analyzing your project requirements."
-  }
-],
-
+    {
+      "num": "1",
+      "title": "What is credit scoring?",
+      "desc": "Credit scoring is a method used to evaluate an individual’s creditworthiness based on their financial history and behavior. It involves analyzing data such as repayment history, credit utilization, and outstanding debts to assign a score that reflects the risk of lending. Businesses use credit scores to make informed decisions about loans, credit approvals, and financial services."
+    },
+    {
+      "num": "2",
+      "title": "How does the credit scoring app work?",
+      "desc": "A credit scoring app collects and analyzes user financial data using AI and data analytics. It accesses credit reports, transaction history, and financial behavior to generate a real-time credit score. These apps provide users with personalized financial insights, track score changes, and help lenders assess risk accurately. Advanced apps also offer credit recommendations and alerts for better financial decision-making."
+    },
+    {
+      "num": "3",
+      "title": "How long does it take to develop a credit scoring app?",
+      "desc": "The development timeline for a credit scoring app depends on its complexity, features, and platform requirements. On average, a basic app takes 2–4 months, while a feature-rich, AI-integrated solution can take 4–6 months or more. This includes planning, UI/UX design, development, testing, and deployment. Custom integrations and compliance requirements may also extend the development time."
+    },
+    {
+      "num": "4",
+      "title": "What’s the cost of developing a credit scoring app?",
+      "desc": "The cost of credit scoring app development varies based on app complexity, design, features, technology stack, and development hours. A simple app may cost around $15,000–$30,000, while a custom enterprise-grade app with AI, real-time analytics, and security compliance can range from $40,000–$100,000 or more. We provide a tailored quote after analyzing your project requirements."
+    }
+  ],
   "AppService": [
     {
       "num": "01",
       "img": "https://www.comfygen.com/img/idea-consultancy-services.webp",
-      "urlLink":"application-consulting-services",
+      "urlLink": "application-consulting-services",
       "title": "Idea Consultancy Services",
       "decs": "We help startups refine their app ideas, offering expert guidance on feasibility, market research, and innovative features to ensure a solid foundation for their mobile applications. "
     },
@@ -518,8 +529,7 @@
       "img": "https://www.comfygen.com/img/low-code-no-code-development.webp",
       "tittle": "Low-Code/No-Code Development",
       "decs": "Utilize low-code or no-code platforms to accelerate development, allowing non-technical users to build and customize apps with minimal coding knowledge."
-    }
-    ,
+    },
     {
       "num": "09",
       "img": "https://www.comfygen.com/img/containerization-and-microservices.webp",
@@ -532,67 +542,65 @@
       "tittle": "Cybersecurity Measures",
       "decs": "Make cybersecurity a top priority by implementing strong authentication, encryption, and security measures to preserve user information and fend against online attacks."
     }
-
   ],
   "AppProcess": [
     {
       "num": "01",
       "title": "Healthcare",
-      "url": "/healthcare-app-development" ,
+      "url": "/healthcare-app-development",
       "decs": "Comfygen develops innovative healthcare applications that streamline patient care, facilitate telemedicine, manage medical records securely, and improve overall healthcare delivery through technology."
     },
     {
       "num": "02",
-      "url": "/finance-app-development" ,
+      "url": "/finance-app-development",
       "title": "Finance",
       "decs": "In the finance sector, Comfygen creates secure and user-friendly applications for banking, investment, budgeting, and digital payments, empowering startups to revolutionize financial services."
     },
     {
       "num": "03",
-      "url": "/e-commerce-app-development" ,
+      "url": "/e-commerce-app-development",
       "title": "E-commerce",
       "decs": "Comfygen helps startups in the e-commerce industry build scalable and feature-rich platforms, enabling seamless online shopping experiences, personalized recommendations, and efficient order management."
     },
     {
-
       "num": "04",
-      "url": "/ca/education-app-development-company" ,
+      "url": "/ca/education-app-development-company",
       "title": "Education",
       "decs": "Comfygen supports educational startups by building interactive learning platforms, educational games, student management systems, and online course delivery apps to enhance the learning experience."
     },
     {
       "num": "05",
-      "url": "/" ,
+      "url": "/",
       "title": "Travel and Hospitality",
       "decs": "Comfygen develops travel and hospitality apps that simplify booking processes, provide personalized recommendations, offer virtual tours, and enhance customer engagement for startups in this industry."
     },
     {
       "num": "06",
-      "url": "/" ,
+      "url": "/",
       "title": "Real Estate",
       "decs": "For real estate startups, Comfygen creates applications for property listings, virtual property tours, rental management, and mortgage calculators, helping to streamline transactions and improve customer satisfaction."
     },
-{
+    {
       "num": "07",
-      "url": "/" ,
+      "url": "/",
       "title": "Food and Beverage",
       "decs": "Comfygen assists startups in the food and beverage industry with apps for online food delivery, table reservations, recipe sharing, and loyalty programs, enhancing customer convenience and loyalty."
     },
     {
       "num": "08",
-      "url": "/" ,
+      "url": "/",
       "title": "Transportation and Logistics",
       "decs": "Comfygen builds apps for transportation and logistics startups, including ride-hailing, delivery tracking, fleet management, and supply chain optimization, to improve efficiency and customer service."
     },
     {
       "num": "09",
-      "url": "/" ,
+      "url": "/",
       "title": "Fitness and Wellness",
       "decs": "Comfygen develops fitness and wellness apps for startups, offering workout tracking, nutrition planning, meditation guides, and virtual coaching to help users achieve their health goals."
     },
     {
       "num": "10",
-      "url": "/" ,
+      "url": "/",
       "title": "Media and Entertainment",
       "decs": "Comfygen creates engaging media and entertainment apps for startups, including streaming platforms, gaming apps, social networks, and content sharing platforms, to entertain and connect users worldwide."
     }
@@ -679,45 +687,40 @@
       "decs": "You might have noticed nowadays that whoever is upgrading is leading the market. Same goes in all the domains / industries. If you want to lead, you have to upgrade to something new. We have the power, and grant the leverages to clients to meet current unique and latest tech-trends. Our super efficient minds are not only innovative, but adaptable to new things; which we imply in our projects to build great applications."
     }
   ],
-
-"pageData": {
+  "pageData": {
     "title": "Why Choose Comfygen for Crypto Launchpad Development?",
     "description": "Comfygen is a leading Crypto Launchpad Development Company known for its expertise in creating secure, scalable, and high-performance crypto launchpad platforms. With over a decade of experience in <a class='text-blue-500' href='/blockchain-development'>blockchain development</a>, we specialize in offering both custom and white-label launchpad solutions that are tailored to meet the needs of various blockchain projects, startups, and enterprises."
-
-},
-
-
-"gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/fintech-expertise-icon.svg",
-    "title": "Expertise in Fintech Development",
-    "description": "With years of experience in building custom fintech applications, we understand the intricacies of financial technology. We specialize in creating innovative, robust, and scalable credit scoring solutions tailored to your business needs."
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/security-first-icon.svg",
-    "title": "Security First",
-    "description": "We prioritize security with industry-leading encryption and data protection protocols. Your users’ financial data is safeguarded with the highest levels of security, ensuring trust and compliance with financial regulations like GDPR and PCI-DSS."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/ai-powered-icon.svg",
-    "title": "AI-Powered Solutions",
-    "description": "Our credit scoring apps utilize cutting-edge AI algorithms and machine learning models to provide highly accurate and predictive credit assessments. We transform raw data into actionable insights for smarter, data-driven decision-making."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/proven-track-record-icon.svg",
-    "title": "Proven Track Record",
-    "description": "We have a proven track record of delivering successful credit scoring solutions. Our case studies and testimonials from satisfied clients highlight our commitment to quality and our ability to meet clients’ business objectives effectively."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/ongoing-support-icon.svg",
-    "title": "Ongoing Support",
-    "description": "We provide continuous post-launch support, ensuring that your app remains secure, functional, and up to date. Our dedicated support team is always available to handle any technical issues or feature enhancements as your business evolves."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/customizable-solutions-icon.svg",
-    "title": "Customizable Solutions for Growth",
-    "description": "Our solutions are highly adaptable, allowing for customization as your business grows. We ensure that the credit scoring app can scale with your expanding user base, incorporating new features and data sources as needed."
-  }
-]
-
+  "gridData": [
+    {
+      "iconUrl": "https://www.comfygen.com/image/fintech-expertise-icon.svg",
+      "title": "Expertise in Fintech Development",
+      "description": "With years of experience in building custom fintech applications, we understand the intricacies of financial technology. We specialize in creating innovative, robust, and scalable credit scoring solutions tailored to your business needs."
+    },
+    {
+      "iconUrl": "https://www.comfygen.com/image/security-first-icon.svg",
+      "title": "Security First",
+      "description": "We prioritize security with industry-leading encryption and data protection protocols. Your users’ financial data is safeguarded with the highest levels of security, ensuring trust and compliance with financial regulations like GDPR and PCI-DSS."
+    },
+    {
+      "iconUrl": "https://www.comfygen.com/image/ai-powered-icon.svg",
+      "title": "AI-Powered Solutions",
+      "description": "Our credit scoring apps utilize cutting-edge AI algorithms and machine learning models to provide highly accurate and predictive credit assessments. We transform raw data into actionable insights for smarter, data-driven decision-making."
+    },
+    {
+      "iconUrl": "https://www.comfygen.com/image/proven-track-record-icon.svg",
+      "title": "Proven Track Record",
+      "description": "We have a proven track record of delivering successful credit scoring solutions. Our case studies and testimonials from satisfied clients highlight our commitment to quality and our ability to meet clients’ business objectives effectively."
+    },
+    {
+      "iconUrl": "https://www.comfygen.com/image/ongoing-support-icon.svg",
+      "title": "Ongoing Support",
+      "description": "We provide continuous post-launch support, ensuring that your app remains secure, functional, and up to date. Our dedicated support team is always available to handle any technical issues or feature enhancements as your business evolves."
+    },
+    {
+      "iconUrl": "https://www.comfygen.com/image/customizable-solutions-icon.svg",
+      "title": "Customizable Solutions for Growth",
+      "description": "Our solutions are highly adaptable, allowing for customization as your business grows. We ensure that the credit scoring app can scale with your expanding user base, incorporating new features and data sources as needed."
+    }
+  ]
 }

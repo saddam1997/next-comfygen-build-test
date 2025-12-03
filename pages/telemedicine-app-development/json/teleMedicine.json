@@ -51,99 +51,98 @@
       "desc": "Our telemedicine app developer team prioritizes safeguards for patient data through app security testing before deployment. At the same time, we also follow the essential guidelines for data protection in the field of healthcare to protect the sensitive information of patients."
     },
     {
-      "num" : "10",
-       "title": "Who Should Use Our Telemedicine App Development Solutions?",
-       "desc": "The key factor that differentiates our telemedicine app development solutions is the assurance of effective experiences for all users. We specialize in telemedicine application software development and pay special attention to the preferences of our different target audiences. Furthermore, our expertise in healthcare app development empowers us to create telemedicine apps that improve value for doctors, patients, support staff, and healthcare organizations or clinics."
+      "num": "10",
+      "title": "Who Should Use Our Telemedicine App Development Solutions?",
+      "desc": "The key factor that differentiates our telemedicine app development solutions is the assurance of effective experiences for all users. We specialize in telemedicine application software development and pay special attention to the preferences of our different target audiences. Furthermore, our expertise in healthcare app development empowers us to create telemedicine apps that improve value for doctors, patients, support staff, and healthcare organizations or clinics."
     }
   ],
   "servicesData": [
-  {
-    "title": "Consultancy for Telemedicine Apps",
-    "description": "We specialize in telemedicine software development services with the strength of our consultancy services. Our consultants' teams serve as an important part of our workflow by listening to and understanding your requirements to create effective project plans for your telemedicine app.",
-    "features": [
-      "Requirement Analysis & Strategy Development",
-      "Project Planning & Roadmap Creation",
-      "Technology Selection & Platform Recommendations",
-      "Regulatory Compliance Consultation (HIPAA, GDPR)",
-      "Ongoing Consultation & Support"
-    ]
-  },
-  {
-    "title": "Custom Telemedicine App Development",
-    "description": "We create secure and scalable telemedicine apps customized to your specific needs. Our telemedicine application development team combines the latest technology trends with healthcare expertise to deliver the best telemedicine apps that support seamless care delivery.",
-    "features": [
-      "Custom Telemedicine App Development for iOS & Android",
-      "Cross-Platform Development for Wider Reach",
-      "<a class='font-semibold underline' href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' >HIPAA-compliant Telemedicine App Development</a>",
-      "Scalable Apps for Growing Healthcare Practices"
-    ]
-  },
-  {
-    "title": "UI/UX Design Tailored for Telehealth",
-    "description": "Our <a class='font-semibold underline' href='https://www.comfygen.com/web-design' >UI/UX design</a>  team specializes in building user-friendly and intuitive interfaces for telemedicine apps. We focus on delivering the best user experience for healthcare providers and patients.",
-    "features": [
-      "Custom Prototypes & Wireframes",
-      "User-Centered Design for Easy Navigation",
-      "Interactive UI/UX for Telehealth Consultations",
-      "Design Improvements Based on Your Feedback"
-    ]
-  },
-  {
-    "title": "EHR/EMR Systems Integration",
-    "description": "We make sure your telemedicine app can easily connect with electronic health records (EHR/EMR), making it easier for healthcare professionals to access patient information and deliver efficient care.",
-    "features": [
-      "Seamless Integration with EHR/EMR Systems",
-      "Secure Data Sharing & Storage",
-      "Support for Popular Healthcare Platforms"
-    ]
-  },
-  {
-    "title": "Video/Audio Consultation Features",
-    "description": "Our telemedicine app development services include secure and high-quality video/audio call functionality. This enables real-time consultations and improves patient satisfaction.",
-    "features": [
-      "HD Video & Audio Calling for Better Care",
-      "Secure & Private Communication",
-      "Reliable Connection Across Devices"
-    ]
-  },
-  {
-    "title": "Appointment Booking & Scheduling",
-    "description": "We  <a class='underline font-semibold' href='https://www.comfygen.com/doctor-appointment-app-development' >build flexible doctor scheduling systems</a> that help patients easily book appointments and healthcare providers manage their time efficiently.",
-    "features": [
-      "Easy-to-Use Booking System",
-      "Automated Reminders & Notifications",
-      "Flexible Scheduling Options"
-    ]
-  },
-  {
-    "title": "Secure Messaging & File Sharing",
-    "description": "Our telemedicine app development solutions include secure messaging and file-sharing capabilities for real-time communication between patients and healthcare providers.",
-    "features": [
-      "Encrypted Messaging for Data Safety",
-      "File Sharing for Medical Reports & Documents",
-      "Smooth Communication Flow"
-    ]
-  },
-  {
-    "title": "Payment Gateway Integration",
-    "description": "We make telemedicine app it easy for patients to pay for telehealth services with secure and convenient payment options integrated directly into your telemedicine app.",
-    "features": [
-      "Multiple Payment Methods",
-      "Secure Transactions & Compliance",
-      "Seamless Payment Experience"
-    ]
-  },
-  {
-    "title": "Analytics & Reporting Dashboard",
-    "description": "We build a telemedicine app with powerful analytics and reporting tools to help healthcare providers monitor their telemedicine services and make data-driven decisions.",
-    "features": [
-      "Customizable Dashboards",
-      "Patient & Provider Activity Reports",
-      "Data-Driven Insights for Better Care"
-    ]
-  }
-]
-,
+    {
+      "title": "Consultancy for Telemedicine Apps",
+      "description": "We specialize in telemedicine software development services with the strength of our consultancy services. Our consultants' teams serve as an important part of our workflow by listening to and understanding your requirements to create effective project plans for your telemedicine app.",
+      "features": [
+        "Requirement Analysis & Strategy Development",
+        "Project Planning & Roadmap Creation",
+        "Technology Selection & Platform Recommendations",
+        "Regulatory Compliance Consultation (HIPAA, GDPR)",
+        "Ongoing Consultation & Support"
+      ]
+    },
+    {
+      "title": "Custom Telemedicine App Development",
+      "description": "We create secure and scalable telemedicine apps customized to your specific needs. Our telemedicine application development team combines the latest technology trends with healthcare expertise to deliver the best telemedicine apps that support seamless care delivery.",
+      "features": [
+        "Custom Telemedicine App Development for iOS & Android",
+        "Cross-Platform Development for Wider Reach",
+        "<a class='font-semibold underline' href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' >HIPAA-compliant Telemedicine App Development</a>",
+        "Scalable Apps for Growing Healthcare Practices"
+      ]
+    },
+    {
+      "title": "UI/UX Design Tailored for Telehealth",
+      "description": "Our <a class='font-semibold underline' href='https://www.comfygen.com/web-design' >UI/UX design</a>  team specializes in building user-friendly and intuitive interfaces for telemedicine apps. We focus on delivering the best user experience for healthcare providers and patients.",
+      "features": [
+        "Custom Prototypes & Wireframes",
+        "User-Centered Design for Easy Navigation",
+        "Interactive UI/UX for Telehealth Consultations",
+        "Design Improvements Based on Your Feedback"
+      ]
+    },
+    {
+      "title": "EHR/EMR Systems Integration",
+      "description": "We make sure your telemedicine app can easily connect with electronic health records (EHR/EMR), making it easier for healthcare professionals to access patient information and deliver efficient care.",
+      "features": [
+        "Seamless Integration with EHR/EMR Systems",
+        "Secure Data Sharing & Storage",
+        "Support for Popular Healthcare Platforms"
+      ]
+    },
+    {
+      "title": "Video/Audio Consultation Features",
+      "description": "Our telemedicine app development services include secure and high-quality video/audio call functionality. This enables real-time consultations and improves patient satisfaction.",
+      "features": [
+        "HD Video & Audio Calling for Better Care",
+        "Secure & Private Communication",
+        "Reliable Connection Across Devices"
+      ]
+    },
+    {
+      "title": "Appointment Booking & Scheduling",
+      "description": "We  <a class='underline font-semibold' href='https://www.comfygen.com/doctor-appointment-app-development' >build flexible doctor scheduling systems</a> that help patients easily book appointments and healthcare providers manage their time efficiently.",
+      "features": [
+        "Easy-to-Use Booking System",
+        "Automated Reminders & Notifications",
+        "Flexible Scheduling Options"
+      ]
+    },
+    {
+      "title": "Secure Messaging & File Sharing",
+      "description": "Our telemedicine app development solutions include secure messaging and file-sharing capabilities for real-time communication between patients and healthcare providers.",
+      "features": [
+        "Encrypted Messaging for Data Safety",
+        "File Sharing for Medical Reports & Documents",
+        "Smooth Communication Flow"
+      ]
+    },
+    {
+      "title": "Payment Gateway Integration",
+      "description": "We make telemedicine app it easy for patients to pay for telehealth services with secure and convenient payment options integrated directly into your telemedicine app.",
+      "features": [
+        "Multiple Payment Methods",
+        "Secure Transactions & Compliance",
+        "Seamless Payment Experience"
+      ]
+    },
+    {
+      "title": "Analytics & Reporting Dashboard",
+      "description": "We build a telemedicine app with powerful analytics and reporting tools to help healthcare providers monitor their telemedicine services and make data-driven decisions.",
+      "features": [
+        "Customizable Dashboards",
+        "Patient & Provider Activity Reports",
+        "Data-Driven Insights for Better Care"
+      ]
+    }
+  ],
   "FoodAppMaker": [
     {
       "num": "1",
@@ -202,115 +201,167 @@
     }
   ],
   "LeadingSoftware": [
-  {
-    "num": "01",
-    "title": "Telemedicine App for Nursing Care",
-    "decs": "We specialize in creation of intuitive telemedicine apps to streamline different processes in nursing care. Our telemedicine platform development expertise can help you design apps that help nurses track the vitals of patients through connected devices or guide patients in surgery preparation. Telemedicine nursing apps also support patients with chronic disease management or monitoring pregnancy and infant care. Most important of all, telemedicine nursing apps can also encourage healthy coping mechanisms and adherence to medications for mental health."
-  },
-  {
-    "num": "02",
-    "title": "Telemedicine App for Neurology",
-    "decs": "You can leverage our expertise to develop a telemedicine app for neurology with advanced features. Neurology telemedicine apps can facilitate easier scheduling of video appointments, online social support groups, and therapeutic sessions. Medical staff can capitalize on easier access to patient medical records for better patient assessment and monitoring. We can create user-friendly telemedicine apps for critical care through emergency teleconsultations with remote healthcare teams. Our experience in creating custom telemedicine apps also involves integrating functionalities for processing personal insurance information, eligibility checks, and in-app payment gateways."
-  },
-  {
-    "num": "03",
-    "title": "Telemedicine App for Primary Care",
-    "decs": "Our solutions also cater to the needs of primary care. With our innovative approach towards telemedicine, we offer solutions with basic features such as AI chatbots for initial patient surveys, appointment booking, and video or audio consultation. Our primary care telemedicine apps can also facilitate easier communication between doctors. Patients can use primary care telemedicine apps to maintain a manual log of symptoms, track medications, and receive notifications for scheduled tests or appointments."
-  },
-  {
-    "num": "04",
-    "title": "Telemedicine App for Physical Therapy",
-    "decs": "Physical therapy is also a promising domain of healthcare we have explored with successful telemedicine solutions. You can use our expertise in creating a telemedicine app to offer new and seamless user experiences for physical therapy. Therapists can use our apps to manage physical therapy programs comprehensively. Our telemedicine apps can offer features such as recording video instructions, customization of therapy programs to patient requirements, and conducting physiotherapy sessions. We integrate features such as patient exercise logs, automated patient surveys, and collection of data about patient vitals."
-  },
-  {
-    "num": "05",
-    "title": "Telemedicine App for Pediatrics",
-    "decs": "We also excel in the design of telemedicine apps for pediatric care with a diverse range of features. Our experience as a telemedicine app development company has helped us develop interactive apps that facilitate synchronous communication between patients and doctors. We have the skills to create telemedicine apps with features such as maintaining a nutrition journal of the child, child’s symptoms, and lifestyle logs. Telemedicine app solutions for pediatric care can also include self-learning videos and easier access to online learning resources and support groups for caregivers."
-  },
-  {
-    "num": "06",
-    "title": "Telemedicine App for Mental Health",
-    "decs": "Our custom telehealth app development solutions have the potential to break boundaries for treatment of mental health disorders. Our telemedicine apps for mental health can help you choose the ideal mental healthcare professional according to the patient's symptoms and preferences. Productive features such as mental health questionnaires and audio/video conferencing with mental healthcare professionals enhance accessibility to mental healthcare support. Patients can take charge of their mental health through features for self-care, focused on personal therapy goals, trackers for medicine intake, and personalized educational modules."
-  },
     {
-    "num": "07",
-    "title": "Telemedicine App for Rural Areas",
-    "decs": "Healthcare organizations and doctors can use our telemedicine apps to reach out to rural areas. As a matter of fact, our telemedicine mobile app development experience empowers us to create telemedicine apps for rural areas. With the help of features, such as in-app ambulance call service, patient GPS location in emergencies, and effective communication between medical staff and rural patients, telemedicine apps can transform rural healthcare. You can find advanced features in telemedicine apps for rural areas, such as online rehabilitation sessions and continuous health monitoring logs."
+      "num": "01",
+      "title": "Telemedicine App for Nursing Care",
+      "decs": "We specialize in creation of intuitive telemedicine apps to streamline different processes in nursing care. Our telemedicine platform development expertise can help you design apps that help nurses track the vitals of patients through connected devices or guide patients in surgery preparation. Telemedicine nursing apps also support patients with chronic disease management or monitoring pregnancy and infant care. Most important of all, telemedicine nursing apps can also encourage healthy coping mechanisms and adherence to medications for mental health."
+    },
+    {
+      "num": "02",
+      "title": "Telemedicine App for Neurology",
+      "decs": "You can leverage our expertise to develop a telemedicine app for neurology with advanced features. Neurology telemedicine apps can facilitate easier scheduling of video appointments, online social support groups, and therapeutic sessions. Medical staff can capitalize on easier access to patient medical records for better patient assessment and monitoring. We can create user-friendly telemedicine apps for critical care through emergency teleconsultations with remote healthcare teams. Our experience in creating custom telemedicine apps also involves integrating functionalities for processing personal insurance information, eligibility checks, and in-app payment gateways."
+    },
+    {
+      "num": "03",
+      "title": "Telemedicine App for Primary Care",
+      "decs": "Our solutions also cater to the needs of primary care. With our innovative approach towards telemedicine, we offer solutions with basic features such as AI chatbots for initial patient surveys, appointment booking, and video or audio consultation. Our primary care telemedicine apps can also facilitate easier communication between doctors. Patients can use primary care telemedicine apps to maintain a manual log of symptoms, track medications, and receive notifications for scheduled tests or appointments."
+    },
+    {
+      "num": "04",
+      "title": "Telemedicine App for Physical Therapy",
+      "decs": "Physical therapy is also a promising domain of healthcare we have explored with successful telemedicine solutions. You can use our expertise in creating a telemedicine app to offer new and seamless user experiences for physical therapy. Therapists can use our apps to manage physical therapy programs comprehensively. Our telemedicine apps can offer features such as recording video instructions, customization of therapy programs to patient requirements, and conducting physiotherapy sessions. We integrate features such as patient exercise logs, automated patient surveys, and collection of data about patient vitals."
+    },
+    {
+      "num": "05",
+      "title": "Telemedicine App for Pediatrics",
+      "decs": "We also excel in the design of telemedicine apps for pediatric care with a diverse range of features. Our experience as a telemedicine app development company has helped us develop interactive apps that facilitate synchronous communication between patients and doctors. We have the skills to create telemedicine apps with features such as maintaining a nutrition journal of the child, child’s symptoms, and lifestyle logs. Telemedicine app solutions for pediatric care can also include self-learning videos and easier access to online learning resources and support groups for caregivers."
+    },
+    {
+      "num": "06",
+      "title": "Telemedicine App for Mental Health",
+      "decs": "Our custom telehealth app development solutions have the potential to break boundaries for treatment of mental health disorders. Our telemedicine apps for mental health can help you choose the ideal mental healthcare professional according to the patient's symptoms and preferences. Productive features such as mental health questionnaires and audio/video conferencing with mental healthcare professionals enhance accessibility to mental healthcare support. Patients can take charge of their mental health through features for self-care, focused on personal therapy goals, trackers for medicine intake, and personalized educational modules."
+    },
+    {
+      "num": "07",
+      "title": "Telemedicine App for Rural Areas",
+      "decs": "Healthcare organizations and doctors can use our telemedicine apps to reach out to rural areas. As a matter of fact, our telemedicine mobile app development experience empowers us to create telemedicine apps for rural areas. With the help of features, such as in-app ambulance call service, patient GPS location in emergencies, and effective communication between medical staff and rural patients, telemedicine apps can transform rural healthcare. You can find advanced features in telemedicine apps for rural areas, such as online rehabilitation sessions and continuous health monitoring logs."
+    },
+    {
+      "num": "08",
+      "title": "Telemedicine App for Stroke Care",
+      "decs": "Our experts can also help you develop telemedicine apps with a unique feature set to offer emergency care in the case of a stroke. We think like a futuristic telemedicine app development company to create solutions that can reduce the risks of cardiovascular or neurological stroke. Telemedicine apps can offer round-the-clock accessibility to neurologist consultations in an emergency, along with advanced features for in-app stroke diagnosis. Emergency care staff can utilize telemedicine app features for remote supervision and stroke care training to enhance care delivery."
+    },
+    {
+      "num": "09",
+      "title": "Telemedicine App for Acute Care",
+      "decs": "Make the most of our experience in app development to come up with user-friendly solutions and discover new perspectives on acute care. Our telemedicine app developer team can integrate features for real-time acute care coordination, custom patient treatment plans, and alerts for remote acute care specialists. Doctors can monitor patients in ICU from anywhere with access to real-time information on patient health parameters and alerts for abnormal parameters. Our experts also specialize in integration of features for training of emergency care teams, including remote supervision of less experienced doctors."
+    },
+    {
+      "num": "10",
+      "title": "Telemedicine App for Clinical Management",
+      "decs": "One of the most prominent concerns of healthcare organizations and doctors running their own clinics is the administrative burden. Our telemedicine solutions can help you create accessible and user-friendly telemedicine software apps for clinical management. Starting from the automation of billing process to appointment scheduling and patient care planning, our telemedicine apps can help you manage everything at your fingertips. We strive to offer diverse functionalities for clinical management apps to ensure business growth alongside enhanced patient service."
+    }
+  ],
+  "LeadingSoftware2": [
+    {
+      "num": "01",
+      "title": "Improve Patient Access & Satisfaction",
+      "decs": "With a telemedicine app, patients can easily connect with their doctors from the comfort of their homes using their smartphones or computers. This saves them time and money, making healthcare more accessible and convenient. When patients have a better experience, their trust and satisfaction increase—helping you build a stronger reputation."
+    },
+    {
+      "num": "02",
+      "title": "Streamline Workflows & Reduce Costs",
+      "decs": "Reducing in-person visits and manual paperwork helps your clinic or hospital become more organized and efficient. A telemedicine app lets you manage appointments, consultations, and payments smoothly. This makes your staff’s work easier and lowers operational costs, which is great for your business."
+    },
+    {
+      "num": "03",
+      "title": "Enhance Healthcare Outcomes",
+      "decs": "When patients have easy access to doctors, they are more likely to follow treatment plans and attend regular check-ups. Continuous monitoring helps catch health issues early, making treatments more effective. This leads to better patient health and adds value to your healthcare services."
+    }
+  ],
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "Patient Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/customer-panel-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Simple Registration & Profile Management", "emoji": "", "content": "" },
+      { "details": "Search & Connect with Doctors", "emoji": "", "content": "" },
+      { "details": "Easy Appointment Booking & Rescheduling", "emoji": "", "content": "" },
+      { "details": "Secure Video & Audio Consultations", "emoji": "", "content": "" },
+      { "details": "Chat & Secure Messaging", "emoji": "", "content": "" },
+      { "details": "Prescription Management", "emoji": "", "content": "" },
+      { "details": "Payment & Billing Options", "emoji": "", "content": "" },
+      { "details": "Notifications & Reminders", "emoji": "", "content": "" }
+    ]
   },
   {
-    "num": "08",
-    "title": "Telemedicine App for Stroke Care",
-    "decs": "Our experts can also help you develop telemedicine apps with a unique feature set to offer emergency care in the case of a stroke. We think like a futuristic telemedicine app development company to create solutions that can reduce the risks of cardiovascular or neurological stroke. Telemedicine apps can offer round-the-clock accessibility to neurologist consultations in an emergency, along with advanced features for in-app stroke diagnosis. Emergency care staff can utilize telemedicine app features for remote supervision and stroke care training to enhance care delivery."
+    "id": 2,
+    "title": "Doctor Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/pharmacy-panel-image-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Doctor Registration & Profile Setup ", "emoji": "", "content": "" },
+      { "details": "Manage Appointments & Availability", "emoji": "", "content": "" },
+      { "details": "Access Patient Medical History", "emoji": "", "content": "" },
+      { "details": "Secure Video & Audio Calls", "emoji": "", "content": "" },
+      { "details": "E-Prescription Management", "emoji": "", "content": "" },
+      { "details": "Chat & File Sharing with Patients", "emoji": "", "content": "" },
+      { "details": "Billing & Payment Tracking", "emoji": "", "content": "" },
+      { "details": "Data-Driven Analytics & Reports", "emoji": "", "content": "" }
+    ]
   },
   {
-    "num": "09",
-    "title": "Telemedicine App for Acute Care",
-    "decs": "Make the most of our experience in app development to come up with user-friendly solutions and discover new perspectives on acute care. Our telemedicine app developer team can integrate features for real-time acute care coordination, custom patient treatment plans, and alerts for remote acute care specialists. Doctors can monitor patients in ICU from anywhere with access to real-time information on patient health parameters and alerts for abnormal parameters. Our experts also specialize in integration of features for training of emergency care teams, including remote supervision of less experienced doctors."
-  },
-  {
-    "num": "10",
-    "title": "Telemedicine App for Clinical Management",
-    "decs": "One of the most prominent concerns of healthcare organizations and doctors running their own clinics is the administrative burden. Our telemedicine solutions can help you create accessible and user-friendly telemedicine software apps for clinical management. Starting from the automation of billing process to appointment scheduling and patient care planning, our telemedicine apps can help you manage everything at your fingertips. We strive to offer diverse functionalities for clinical management apps to ensure business growth alongside enhanced patient service."
+    "id": 3,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/image/admin-panel-medicine-delivery-app-development.png",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "User & Doctor Management", "emoji": "", "content": "" },
+      { "details": "Appointment Scheduling Oversight", "emoji": "", "content": "" },
+      { "details": "Financial Reports & Payment Management", "emoji": "", "content": "" },
+      { "details": "Content Management for App Updates ", "emoji": "", "content": "" },
+      { "details": "Advanced Analytics & Performance Tracking", "emoji": "", "content": "" },
+      { "details": "Push Notifications & Alerts", "emoji": "", "content": "" },
+      { "details": "Regulatory Compliance & Data Security Controls", "emoji": "", "content": "" }
+    ]
   }
+ 
 ],
 
- "LeadingSoftware2": [
-  {
-    "num": "01",
-    "title": "Improve Patient Access & Satisfaction",
-    "decs": "With a telemedicine app, patients can easily connect with their doctors from the comfort of their homes using their smartphones or computers. This saves them time and money, making healthcare more accessible and convenient. When patients have a better experience, their trust and satisfaction increase—helping you build a stronger reputation."
-  },
-  {
-    "num": "02",
-    "title": "Streamline Workflows & Reduce Costs",
-    "decs": "Reducing in-person visits and manual paperwork helps your clinic or hospital become more organized and efficient. A telemedicine app lets you manage appointments, consultations, and payments smoothly. This makes your staff’s work easier and lowers operational costs, which is great for your business."
-  },
-  {
-    "num": "03",
-    "title": "Enhance Healthcare Outcomes",
-    "decs": "When patients have easy access to doctors, they are more likely to follow treatment plans and attend regular check-ups. Continuous monitoring helps catch health issues early, making treatments more effective. This leads to better patient health and adds value to your healthcare services."
-  }
-]
-,
+
+
 
   "WhyChooseUs": [
-  {
-    "num": "1",
-    "title": "Telemedicine Apps for Clinical Administration",
-    "decs": "Our telemedicine application development solutions for clinical administration can help you capitalize on the benefits of diverse features. We are your best pick for creating clinical administration telemedicine apps with the following features.",
-    "points": [
-      "Automated billing.",
-      "EHR system integration.",
-      "Timetable scheduling.",
-      "Drug inventory tracking.",
-      "Medical device data collection."
-    ]
-  },
-  {
-    "num": "2",
-    "title": "Telemedicine Apps for Healthcare Professionals",
-    "decs": "As your best pick to create a telemedicine app for healthcare professionals, we strive to achieve excellence in our solutions. The following feature set in our telemedicine apps for healthcare professionals simplifies their job.",
-    "points": [
-      "Real-time access to patient information.",
-      "Medical research and training.",
-      "Remote real-time consultations.",
-      "Emergency patient care."
-    ]
-  },
-  {
-    "num": "3",
-    "title": "Telemedicine Apps for Patients",
-    "decs": "We use our experience in telemedicine app development to elevate the quality of treatment for patients. Our telemedicine apps can deliver usability and accessibility with an intuitive interface and innovative capabilities, including seamless medicine delivery.",
-    "points": [
-      "Mental health monitoring.",
-      "Physical exercise logs.",
-      "Medication intake tracker.",
-      "Symptom checker and management.",
-      "Flexible appointment schedules."
-    ]
-  }
-],
-
+    {
+      "num": "1",
+      "title": "Telemedicine Apps for Clinical Administration",
+      "decs": "Our telemedicine application development solutions for clinical administration can help you capitalize on the benefits of diverse features. We are your best pick for creating clinical administration telemedicine apps with the following features.",
+      "points": [
+        "Automated billing.",
+        "EHR system integration.",
+        "Timetable scheduling.",
+        "Drug inventory tracking.",
+        "Medical device data collection."
+      ]
+    },
+    {
+      "num": "2",
+      "title": "Telemedicine Apps for Healthcare Professionals",
+      "decs": "As your best pick to create a telemedicine app for healthcare professionals, we strive to achieve excellence in our solutions. The following feature set in our telemedicine apps for healthcare professionals simplifies their job.",
+      "points": [
+        "Real-time access to patient information.",
+        "Medical research and training.",
+        "Remote real-time consultations.",
+        "Emergency patient care."
+      ]
+    },
+    {
+      "num": "3",
+      "title": "Telemedicine Apps for Patients",
+      "decs": "We use our experience in telemedicine app development to elevate the quality of treatment for patients. Our telemedicine apps can deliver usability and accessibility with an intuitive interface and innovative capabilities, including seamless medicine delivery.",
+      "points": [
+        "Mental health monitoring.",
+        "Physical exercise logs.",
+        "Medication intake tracker.",
+        "Symptom checker and management.",
+        "Flexible appointment schedules."
+      ]
+    }
+  ],
   "consultancyData": [
     {
       "title": "Accessibility for More Patients",
@@ -333,8 +384,7 @@
       "desc": "Information is an important factor in driving the effectiveness of healthcare businesses in service delivery and administration of operations. Telemedicine apps with EHR/EMR system integration and workflow management features can help businesses obtain access to information that can make their work easier"
     }
   ],
-
-   "IndustryApplications": [
+  "IndustryApplications": [
     {
       "num": "01",
       "title": "Project-based Model",
@@ -351,25 +401,23 @@
       "decs": "Our most cost-effective engagement model is the team extension model that helps businesses expand their custom telemedicine app development teams. Businesses can choose any of our experts as valuable additions to their team to access better benefits."
     }
   ],
-
   "customTestimonials": [
-  {
-    "text": "“Comfygen truly exceeded our expectations. Their team built a smooth, user-friendly telemedicine platform that our patients love. The communication and support throughout the project were outstanding.”",
-    "name": "Dr. Priya Sharma",
-    "title": "India"
-  },
-  {
-    "text": "“We hired Comfygen to develop a telehealth app for our clinic, and the results were impressive. It’s secure, scalable, and easy to use for both doctors and patients.”",
-    "name": "Michael Bennett",
-    "title": "Canada"
-  },
-  {
-    "text": "“From planning to launch, Comfygen delivered with professionalism and technical expertise. Their telemedicine app has helped us streamline our patient consultations and improve service delivery.”",
-    "name": "Dr. Ayesha Khan",
-    "title": "UAE"
-  }
-]
-,
+    {
+      "text": "“Comfygen truly exceeded our expectations. Their team built a smooth, user-friendly telemedicine platform that our patients love. The communication and support throughout the project were outstanding.”",
+      "name": "Dr. Priya Sharma",
+      "title": "India"
+    },
+    {
+      "text": "“We hired Comfygen to develop a telehealth app for our clinic, and the results were impressive. It’s secure, scalable, and easy to use for both doctors and patients.”",
+      "name": "Michael Bennett",
+      "title": "Canada"
+    },
+    {
+      "text": "“From planning to launch, Comfygen delivered with professionalism and technical expertise. Their telemedicine app has helped us streamline our patient consultations and improve service delivery.”",
+      "name": "Dr. Ayesha Khan",
+      "title": "UAE"
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen to Create Telemedicine Apps?",
     "description": "We simplify the journey of developing telemedicine apps for our clients with unique value-based advantages. Our valuable customers recommend us for developing telemedicine solutions owing to the following reasons.",
@@ -379,39 +427,39 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Broader Expertise",
-      "description": "We bring the perfect blend of technical expertise and knowledge of the healthcare domain to deliver efficient and productive solutions. Our clients trust us for our wide-ranging expertise in all elements of technology stack required to create telemedicine apps."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "In-depth Testing",
-      "description": "At Comfygen, you have the assurance of comprehensive testing when you develop a telemedicine app to avoid unwanted issues with the app. Our experts prioritize compliance, security, and usability in the testing process alongside functional testing to ensure proven quality assurance for telemedicine apps."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Faster Development",
-      "description": "Our app development experts give you the advantage of faster time-to-market for telemedicine apps. With the help of a strategic approach to our development workflow, we can deliver your telemedicine apps exactly when you need them."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Enhanced Service Quality",
-      "description": "We always prioritize the satisfaction of our clients and aim to deliver telemedicine solutions according to their preferences. Our client-centric approach helps us adapt to the requirements of clients at any stage of the app development project to guide them toward their goals."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-      "title": "Healthcare Experience",
-      "description": "We are a trusted telemedicine app development company for our experience in healthcare app development projects. Our experts have worked on different projects to create clinical apps, pharmacy apps, and other healthcare solutions. Our healthcare expertise gives us an additional edge in creating telemedicine apps."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-      "title": "Pursuit of Excellence",
-      "description": "Another unique factor that makes us the first choice for telemedicine application software development is our pursuit of excellence. We emphasize continuous improvement of telemedicine apps according to emerging trends and utilize the latest technologies to enhance the functionality and user experiences of the apps."
-    }
-  ]
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Broader Expertise",
+        "description": "We bring the perfect blend of technical expertise and knowledge of the healthcare domain to deliver efficient and productive solutions. Our clients trust us for our wide-ranging expertise in all elements of technology stack required to create telemedicine apps."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "In-depth Testing",
+        "description": "At Comfygen, you have the assurance of comprehensive testing when you develop a telemedicine app to avoid unwanted issues with the app. Our experts prioritize compliance, security, and usability in the testing process alongside functional testing to ensure proven quality assurance for telemedicine apps."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Faster Development",
+        "description": "Our app development experts give you the advantage of faster time-to-market for telemedicine apps. With the help of a strategic approach to our development workflow, we can deliver your telemedicine apps exactly when you need them."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Enhanced Service Quality",
+        "description": "We always prioritize the satisfaction of our clients and aim to deliver telemedicine solutions according to their preferences. Our client-centric approach helps us adapt to the requirements of clients at any stage of the app development project to guide them toward their goals."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Healthcare Experience",
+        "description": "We are a trusted telemedicine app development company for our experience in healthcare app development projects. Our experts have worked on different projects to create clinical apps, pharmacy apps, and other healthcare solutions. Our healthcare expertise gives us an additional edge in creating telemedicine apps."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Pursuit of Excellence",
+        "description": "Another unique factor that makes us the first choice for telemedicine application software development is our pursuit of excellence. We emphasize continuous improvement of telemedicine apps according to emerging trends and utilize the latest technologies to enhance the functionality and user experiences of the apps."
+      }
+    ]
   },
-  "portfoliodata":[
+  "portfoliodata": [
     {
       "image": "https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-portfolio.webp",
       "title": "Virtual Clinic Consultation App",
@@ -424,8 +472,7 @@
       "description": "An AI-powered telemedicine app integrates wearable devices, real-time health tracking, and EMR syncing, enabling doctors to monitor patients remotely and improve care with smart alerts and automated reporting.",
       "link": "/portfolio/ai-powered-medicine-ordering-app"
     }
-    
-  ] ,
+  ],
   "GetDoctor": [
     {
       "num": "01",

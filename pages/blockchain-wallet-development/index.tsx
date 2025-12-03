@@ -2,25 +2,102 @@ import { useState } from "react";
 import React from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/blockchain.json";
-import Header from "../componentsnew/Header";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSec from "../componentsnew/ServicesSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-
-import ProcessSec from "../componentsnew/ProcessSec";
-import WhyChoose from "../componentsnew/WhyChooseUs";
-import Faq from "../componentsnew/Faq";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import ClientTestimonials from "../components/ClientTestimonials";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
-import BlockChainTech from "../enterprise-blockchain-development/11111components/BlockChainTech";
-import SolutionSec from "../components/SolutionSec";
-import CallToAction from "../components/CallToAction";
-
-
+import dynamic from "next/dynamic";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers, IconWallet } from "@tabler/icons-react";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
+import BlockchainNav from "../Newcomponet/layout/blockchain-navbar"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+
 
 const Process = [
   {
@@ -173,8 +250,6 @@ const technologyData = [
 ];
 
 const jsonLdData = [
-
-
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -476,11 +551,8 @@ export default function Blockchain(props) {
       </Head>
 
       <div className="">
-        {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-        {/* </LazyLoad> */}
+        <BlockchainNav />
       </div>
-      <BlockchainNav />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Blockchain Wallet development Company"
@@ -512,11 +584,24 @@ export default function Blockchain(props) {
           linkText="Explore More"
         />
 
-        <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our Blockchain Wallet Development Services"
-          description="At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready."
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Blockchain Wallet Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         {/* <ContactFromCenter /> */}
 
         <SolutionSec
@@ -541,11 +626,22 @@ export default function Blockchain(props) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSec
-          title="Our End-to-End Blockchain Wallet Development Process"
-          description="At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience."
-          processSlides={Process}
-        />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our End-to-End Blockchain Wallet Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
 
@@ -558,7 +654,7 @@ export default function Blockchain(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfoliodata}
             heading="Our Blockchain Based Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
@@ -573,9 +669,10 @@ export default function Blockchain(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <BlockChainTech
+        <TechStack
           title="Technology Stack Used by Blockchain Development Company"
           description="We leverage a cutting-edge, battle-tested technology stack to build secure, scalable, and feature-rich blockchain wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project."
+          customTechData={JSON_DATA.defaultTechData}
         />
 
 

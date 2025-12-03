@@ -1,39 +1,89 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 const Process = [
   {
@@ -73,38 +123,7 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
-      head: "Personalized Fitness Tracker App",
-      name: "Custom health and fitness app built for an urban fitness startup. It allows users to set fitness goals, track workouts, monitor calories burned, and receive AI-based health tips. The app syncs with Apple Health and Google Fit for real-time performance updates.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/health-tracking-app-development/portfolio2.webp",
-      head: "White-Label Remote Health Monitoring App",
-      name: "White-label health tracking app solution developed for a telehealth company. Built for quick deployment, it supports remote patient monitoring, medication tracking, and doctor dashboards—all integrated with secure, HIPAA-compliant cloud storage.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -307,34 +326,38 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Health Tracking App Development Solution",
-      "image":"https://www.comfygen.com/comfygen-images/health-tracking-app-development/about.webp",
-      "description":"Get reliable and scalable health tracking app development solutions from Comfygen. We build custom mHealth apps with real-time monitoring, wearable integration, AI features, and HIPAA compliance. Perfect for fitness, wellness, and healthcare businesses.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"165"}}
-      ,
-
-      {
-        "@context": "https://schema.org/", 
-        "@type": "BreadcrumbList", 
-        "itemListElement": [{
-          "@type": "ListItem", 
-          "position": 1, 
-          "name": "Home",
-          "item": "https://www.comfygen.com"  
-        },{
-          "@type": "ListItem", 
-          "position": 2, 
-          "name": "Health Tracking App Development",
-          "item": "https://www.comfygen.com/health-tracking-app-development"  
-        
-        }]
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Health Tracking App Development Solution",
+      "image": "https://www.comfygen.com/comfygen-images/health-tracking-app-development/about.webp",
+      "description": "Get reliable and scalable health tracking app development solutions from Comfygen. We build custom mHealth apps with real-time monitoring, wearable integration, AI features, and HIPAA compliance. Perfect for fitness, wellness, and healthcare businesses.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "165"
       }
-      ,
+    }
+    ,
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Health Tracking App Development",
+        "item": "https://www.comfygen.com/health-tracking-app-development"
+
+      }]
+    }
+    ,
 
     {
       "@context": "https://schema.org",
@@ -404,7 +427,7 @@ export default function ClinicalApp(props: any) {
           name="description"
           content="Comfygen is a top-rated health tracking app development company offering custom health tracking app development services with wearable integration, real-time monitoring, and HIPAA compliance. Hire expert developers to build AI-based health tracking app solutions for fitness, wellness, and healthcare businesses."
         />
-        <meta name="keywords" content="Custom Health Tracker App Development, Fitness & Activity Tracking App Development, Nutrition & Calorie Counter App Development, Mental Wellness App Solutions, Wearable Device Integration"/>
+        <meta name="keywords" content="Custom Health Tracker App Development, Fitness & Activity Tracking App Development, Nutrition & Calorie Counter App Development, Mental Wellness App Solutions, Wearable Device Integration" />
         <link
           rel="canonical"
           href="https://www.comfygen.com/health-tracking-app-development"
@@ -513,25 +536,26 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
+
       <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/health-tracking-app-development/hero1.webp')]">
-          <HeroSectionForAllPages
-            heading="Best Health Tracking App Development Company"
-            ptag="Comfygen is a top-rated health tracking app development company offering innovative and custom-built mobile health solutions for fitness brands, wellness startups, and healthcare organizations. Our expert health tracking app developers specialize in building feature-rich apps that track vital signs, physical activity, sleep, nutrition, and more—empowering users to manage their health in real time. From wearable integration to secure data storage and HIPAA compliance, we deliver scalable health tracking app development services tailored to your goals."
-            li="Empowering Digital Health with Smart Tracking Solutions"
-            li1="Transforming Wellness with Custom Health Apps"
-            li2="10+ Years of Expertise in mHealth App Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Best Health Tracking App Development Company"
+          ptag="Comfygen is a top-rated health tracking app development company offering innovative and custom-built mobile health solutions for fitness brands, wellness startups, and healthcare organizations. Our expert health tracking app developers specialize in building feature-rich apps that track vital signs, physical activity, sleep, nutrition, and more—empowering users to manage their health in real time. From wearable integration to secure data storage and HIPAA compliance, we deliver scalable health tracking app development services tailored to your goals."
+          li="Empowering Digital Health with Smart Tracking Solutions"
+          li1="Transforming Wellness with Custom Health Apps"
+          li2="10+ Years of Expertise in mHealth App Development"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/health-tracking-app-development/hero1.webp"
+        />
+
         <AboutSection
           title=""
           heading="Why Should You Invest in Health Tracking App Development?"
@@ -567,7 +591,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -576,11 +600,16 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio – Fitness and Health Tracking App Development Projects"
-          description="Explore how Comfygen empowers fitness startups, healthcare providers, and wellness brands with robust, scalable fitness tracker app development solutions. Our custom fitness and health apps help users monitor daily activity, manage health goals, and sync with wearables through real-time features and a user-friendly design."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Fitness and Health Tracking App Development Projects"
+            description="Explore how Comfygen empowers fitness startups, healthcare providers, and wellness brands with robust, scalable fitness tracker app development solutions. Our custom fitness and health apps help users monitor daily activity, manage health goals, and sync with wearables through real-time features and a user-friendly design."
+          />
+        </section>
+
+
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

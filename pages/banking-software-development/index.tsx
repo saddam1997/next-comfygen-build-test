@@ -3,54 +3,71 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./bankingsoftwaredevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(() => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
 );
 
 
+const CoreFeaturesSection = dynamic(() => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
 
 
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
 
 
 
@@ -123,7 +140,7 @@ export default function ClinicalApp(props: any) {
       },
     ],
   };
-  
+
 
   const structuredData = [
     {
@@ -245,10 +262,10 @@ export default function ClinicalApp(props: any) {
         "Online banking management system"
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
-        "https://www.linkedin.com/company/comfygen-private-limited"  
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-    
+
     },
     {
       "@context": "https://schema.org",
@@ -274,8 +291,8 @@ export default function ClinicalApp(props: any) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    
-    
+
+
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -289,14 +306,14 @@ export default function ClinicalApp(props: any) {
         "reviewCount": "1748"
       }
     }
-    
+
   ];
 
   return (
     <>
       <Head>
         <title>
-       Custom Banking Software Development Company | Secure Fintech Solutions
+          Custom Banking Software Development Company | Secure Fintech Solutions
         </title>
         <meta
           name="description"
@@ -345,7 +362,7 @@ export default function ClinicalApp(props: any) {
         <meta name="geo.region" content="GB" />
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
-    
+
         <meta name="author" content="Company Private Limited" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="og:type" content="website" />
@@ -400,35 +417,35 @@ export default function ClinicalApp(props: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-         {structuredData.map((data, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-        />
-      ))}
+        {structuredData.map((data, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+          />
+        ))}
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp')]" >
-          <HeroSectionForAllPages
-            heading="Banking Software Development Company"
-            ptag="Comfygen is a top software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
-            li="Custom Core Banking Software"
-            li1="Secure, Cloud-Native & Scalable Platforms"
-            li2="AI, ML & Blockchain Banking Solutions"
-            li3="24/7 Dedicated Support & Maintenance"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Banking Software Development Company"
+          ptag="Comfygen is a top software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
+          li="Custom Core Banking Software"
+          li1="Secure, Cloud-Native & Scalable Platforms"
+          li2="AI, ML & Blockchain Banking Solutions"
+          li3="24/7 Dedicated Support & Maintenance"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Best Banking Software Development Company for Startup"
@@ -439,9 +456,19 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection heading="Our Banking Software Development Services" subtitle="At Comfygen, we provide comprehensive banking software development services tailored to meet the unique needs of financial institutions, fintech startups, and banks. Our skilled banking software developers leverage cutting-edge technology to build secure, scalable, and innovative banking applications that drive efficiency and enhance user experiences." servicesData={JSON_DATA.servicesData}/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Banking Software Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide comprehensive banking software development services tailored to meet the unique needs of financial institutions, fintech startups, and banks. Our skilled banking software developers leverage cutting-edge technology to build secure, scalable, and innovative banking applications that drive efficiency and enhance user experiences.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         {/* <ContactFromCenter /> */}
 
@@ -450,26 +477,21 @@ export default function ClinicalApp(props: any) {
           description="At Comfygen, we specialize in providing cutting-edge banking software development services for a wide range of industries in the financial sector. Our tailored online banking software development solutions help institutions of all types streamline their operations, enhance customer experiences, and stay competitive in an ever-evolving digital landscape."
         />
 
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Take a look at some of the banking software solutions we have developed"
+            description="Comfygen delivers innovative and secure banking software solutions designed to meet the needs of financial institutions. We have designed two notable banking projects that offer seamless and feature-rich services."
+          />
+        </section>
 
 
-        {/* <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
-        <PortfolioSec
-          techData={JSON_DATA.techDataForPage1}
-          heading="Take a look at some of the banking software solutions we have developed"
-          description="Comfygen delivers innovative and secure banking software solutions designed to meet the needs of financial institutions. We have designed two notable banking projects that offer seamless and feature-rich services.."
-        />
-        
 
-        <CoreFeaturesSection 
-          title="Custom AI-Powered Banking Software Development Solutions" 
+
+        <CoreFeaturesSection
+          title="Custom AI-Powered Banking Software Development Solutions"
           subtitle="At Comfygen, we offer advanced <a class='text-blue-600 font-semibold' href='/ai-development'>AI-powered banking software development solutions</a> that bring intelligence, automation, and personalization to every layer of digital banking. Our custom solutions empower financial institutions to deliver smarter services, reduce risk, and optimize operations through artificial intelligence and machine learning."
-          features={JSON_DATA.AIPowered} 
+          features={JSON_DATA.AIPowered}
         />
 
 
@@ -479,9 +501,18 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Banking Software Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               At Comfygen, a top-rated banking software development company, we follow a transparent and agile banking software development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking software development solutions that align with your business goals.
+              </p>
+            </div>
+            <ProcessSec processSlides={JSON_DATA.Process} />
+          </div>
+        </section>
 
-          <ProcessSection title="Our End-to-End Banking Software Development Process" description="At Comfygen, a top-rated banking software development company, we follow a transparent and agile banking software development process that ensures high-quality delivery, compliance with financial regulations, and seamless collaboration. From ideation to deployment, our focus is on building secure, scalable, and innovative banking software development solutions that align with your business goals." processSlides={JSON_DATA.Process} />
 
         <TechStack
           title="Tech Stack We Use for Banking Software Development"
@@ -507,7 +538,7 @@ export default function ClinicalApp(props: any) {
             "Strong security and compliance",
             " AI, blockchain, and cloud integration",
             "Scalable systems for high transaction volumes"
-          ]}          
+          ]}
         />
         <ClientTestimonials
           heading="Testimonials from Our Clients"

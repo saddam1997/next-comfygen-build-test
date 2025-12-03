@@ -1,18 +1,7 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ewalletappdevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import PortfolioSecs from "../components/PortfolioSec";
-import CardGrid from "../components/CardGrid";
 import {
   IconCurrencyDollar,
   IconShieldLock,
@@ -26,28 +15,101 @@ import {
   IconPhoto,
   IconCoin,
   IconServer,
-} from  "@tabler/icons-react";
+} from "@tabler/icons-react";
 
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+)
+
+const CardGrid = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CardGrid"),
+  { loading: loader, ssr: true }
+)
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+)
+
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 const Process = [
   {
     title: "Discovery & Planning",
@@ -92,19 +154,19 @@ const CardGridData = [
     img: <IconCurrencyDollar stroke={1.5} className="w-12 h-12" />,
     title: "Multi-Currency Support",
     desc: "Our eWallet apps allow users to manage and transact in multiple currencies effortlessly. This feature is ideal for international users and global businesses, enabling currency conversion and cross-border payments in real-time. Whether it's USD, EUR, INR, or crypto, we make multi-currency management easy, fast, and secure.",
-  
+
   },
   {
     img: <IconShieldLock stroke={1.5} className="w-12 h-12" />,
     title: "Biometric & PIN Security",
     desc: "We prioritize data protection with advanced authentication methods like fingerprint scanning, Face ID, and secure PINs. These security features safeguard user information and prevent unauthorized access. With multi-layer security protocols, our apps ensure safe login and secure transactions, helping you meet high fintech security standards.",
-  
+
   },
   {
     img: <IconBell stroke={1.5} className="w-12 h-12" />,
     title: "In-App Notifications",
     desc: "Keep your users engaged and informed with real-time in-app notifications. From payment confirmations to promotional alerts, our push notification system ensures users stay updated on every transaction or feature update. This boosts app engagement, improves trust, and creates a responsive user experience across mobile platforms.",
-    
+
   },
   {
     img: <IconClipboardList stroke={1.5} className="w-12 h-12" />,
@@ -116,7 +178,7 @@ const CardGridData = [
     img: <IconCreditCard stroke={1.5} className="w-12 h-12" />,
     title: "Bank & Card Linking",
     desc: "Enable seamless integration of bank accounts and credit/debit cards within the app. Users can add multiple cards, link accounts, and manage payment sources efficiently. This feature simplifies wallet top-ups and fund transfers, offering a frictionless and secure payment experience from a single digital wallet platform.",
-   
+
   },
   {
     img: <IconReceipt2 stroke={1.5} className="w-12 h-12" />,
@@ -127,7 +189,7 @@ const CardGridData = [
     img: <IconIdBadge stroke={1.5} className="w-12 h-12" />,
     title: "KYC & AML Compliance",
     desc: "Ensure full legal compliance with integrated KYC (Know Your Customer) and AML (Anti-Money Laundering) verification systems. Our apps automate identity checks, document uploads, and verification workflows to meet financial regulations. This helps you build a secure, trustworthy, and government-compliant wallet ecosystem for your users.",
-    
+
   },
 ];
 const latesttech = [
@@ -162,101 +224,8 @@ const latesttech = [
     desc: "For fintech startups and enterprises, we offer centralized wallet development that ensures high performance, admin control, and fast transaction speeds—ideal for businesses handling large volumes of user transactions.",
   },
 ];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
-      head: "Retail eWallet App",
-      name: "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
-      head: "Crypto Wallet App",
-      name: "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
-      head: "P2P Money Transfer App",
-      name: "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
 
 
-
-
-
-const tabsData = [
-  {
-    id: "account",
-    label: "Account",
-    title: "User App Panel",
-    description: "Creating a successful dating application requires a blend of innovative features...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Make changes to your account here.",
-      "Customize profile settings.",
-      "Privacy and security settings.",
-      "Manage subscriptions.",
-      "View match suggestions.",
-    ],
-  },
-  {
-    id: "admin",
-    label: "Admin",
-    title: "Admin Panel",
-    description: "Manage user activities and system settings from the admin panel...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "User management dashboard.",
-      "Monitor app performance.",
-      "Control premium features.",
-      "Review user reports.",
-      "Analytics and insights.",
-    ],
-  },
-  {
-    id: "vendor",
-    label: "Vendor",
-    title: "Vendor Panel",
-    description: "Vendors can manage advertisements, services, and payments...",
-    image: "https://www.comfygen.com/image/dating-user-panel.webp",
-    listItems: [
-      "Advertise on the platform.",
-      "Manage service bookings.",
-      "Track payments.",
-      "Analyze revenue reports.",
-      "Engage with users.",
-    ],
-  },
-];
 
 
 export default function Ecommerce(props) {
@@ -309,11 +278,11 @@ export default function Ecommerce(props) {
         "Coin Specific Wallet Development",
         "Centralized Wallet Development"
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
+        "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
-      
+
       ]
 
     },
@@ -383,15 +352,18 @@ export default function Ecommerce(props) {
         "https://in.pinterest.com/comfygenpvt/"
       ]
     },
-    {"@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Technologies",
-      "Name":"Custom eWallet App Development Services",
-      "image":"Hero section image",
-      "description":"Build your custom eWallet app with Comfygen — trusted fintech app developers delivering secure, compliant, and scalable digital wallet solutions for startups and enterprises worldwide.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"140"}
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Custom eWallet App Development Services",
+      "image": "Hero section image",
+      "description": "Build your custom eWallet app with Comfygen — trusted fintech app developers delivering secure, compliant, and scalable digital wallet solutions for startups and enterprises worldwide.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "140"
+      }
     },
     {
       "@context": "https://schema.org/",
@@ -441,17 +413,17 @@ export default function Ecommerce(props) {
     },
     {
       "@context": "https://schema.org/",
-      "@type": "BreadcrumbList", 
+      "@type": "BreadcrumbList",
       "itemListElement": [{
-        "@type": "ListItem", 
-        "position": 1, 
+        "@type": "ListItem",
+        "position": 1,
         "name": "Home",
-        "item": "https://www.comfygen.com/" 
-      },{
-        "@type": "ListItem", 
-        "position": 2, 
+        "item": "https://www.comfygen.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
         "name": "eWallet App Development",
-        "item": "https://www.comfygen.com/ewallet-app-development" 
+        "item": "https://www.comfygen.com/ewallet-app-development"
       }]
     }
   ];
@@ -460,9 +432,9 @@ export default function Ecommerce(props) {
 
   return (
     <>
-     <Head>
+      <Head>
         <title>
-         eWallet App Development Company | Secure Digital Wallet Solutions
+          eWallet App Development Company | Secure Digital Wallet Solutions
         </title>
         <meta
           name="description"
@@ -588,12 +560,9 @@ export default function Ecommerce(props) {
         />
       </Head>
 
+      <Header />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
             heading="Custom eWallet App Development Company for Startups & Enterprises"
             ptag="Comfygen is a trusted eWallet app development company delivering secure, scalable, and future-ready digital wallet solutions. From mobile wallets and UPI apps to contactless payment solutions, we help startups, banks, and enterprises launch user-friendly eWallet apps with PCI-DSS compliance, AI-driven security, and seamless payment integrations."
@@ -608,8 +577,8 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-hero.webp"
           />
-        </div>
         <AboutSection
           heading="Leading eWallet App Development Company for Startups & Enterprises"
           description1="Whether you’re a startup ready to launch a cutting-edge digital wallet or an established enterprise looking to modernize your payment systems, Comfygen is your trusted partner for bespoke eWallet app development. We understand the dynamic fintech landscape and create custom eWallet solutions designed to meet your business’s unique requirements, helping you stay competitive and grow."
@@ -618,37 +587,69 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-       
-        <ServicesSection 
-          heading="Cutting-Edge eWallet App Development Services By Comfygen"
-          subtitle="Looking to build a secure, feature-rich, and scalable digital wallet? As a trusted eWallet app development company, Comfygen delivers tailor-made wallet solutions built for seamless transactions, advanced security, and user convenience. Explore our range of expert services below:"
-          servicesData={JSON_DATA.servicesData}
-        />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+              Cutting-Edge eWallet App Development Services By Comfygen
+              </h2>
+              <p className="text-base text-center font-normal">
+                Looking to build a secure, feature-rich, and scalable digital wallet? As a trusted eWallet app development company, Comfygen delivers tailor-made wallet solutions built for seamless transactions, advanced security, and user convenience. Explore our range of expert services below:
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <CardGrid
           heading="Key Features of Our eWallet Apps"
           subheading="At Comfygen, we build high-performance digital wallet solutions that enhance convenience, security, and functionality. As a trusted eWallet app development company, we integrate top features to provide seamless financial services for your users."
           techData={CardGridData}
         />
-        <SolutionsFeature title="eWallet App Clone Solutions We Provide" subtitle="Our expert eWallet app developers specialize in creating powerful, feature-rich wallet clones of today’s most successful digital payment apps. Whether you want a clone of Google Pay, Amazon Pay, or Cash App, we deliver scalable and secure solutions tailored to your business model." data={JSON_DATA.LeadingSoftware}  />
 
-        <section>
-          <Features />
+        <SolutionsFeature title="eWallet App Clone Solutions We Provide" subtitle="Our expert eWallet app developers specialize in creating powerful, feature-rich wallet clones of today’s most successful digital payment apps. Whether you want a clone of Google Pay, Amazon Pay, or Cash App, we deliver scalable and secure solutions tailored to your business model." data={JSON_DATA.LeadingSoftware} />
+
+
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='3'
+            heading=' Essential Features for Your Digital Wallet App Panel'
+            description='Creating a successful digital wallet app requires a robust set of features tailored for every user type—users, admins, and merchants. At Comfygen, we design each panel with functionality, security, and performance in mind to ensure the smooth operation and growth of your eWallet app development business.' 
+            featuresData={JSON_DATA.featuresData}
+            />
         </section>
 
 
-        <PortfolioSecs
-          techData={techDataForPage1}
-          heading="Explore Our eWallet App Work"
-          description="Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
-        />
-       
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our eWallet App Work"
+            description="Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
+          />
+        </section>
 
-        <ProcessSection 
-          title="Our Complete Mobile Wallet Development Process" 
-          description="Our mobile wallet app development process is built on innovation, precision, and performance, ensuring you receive a secure and user-centric eWallet app tailored to your business goals." 
-          processSlides={Process} />  
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+             Our Complete Mobile Wallet Development Process
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                Our mobile wallet app development process is built on innovation, precision, and performance, ensuring you receive a secure and user-centric eWallet app tailored to your business goals.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
+
+
 
         <LatestTechnology
           heading="We Develop Many Types of Mobile Wallet Apps for Your Business Needs"
@@ -684,7 +685,7 @@ export default function Ecommerce(props) {
             "Flexible Hiring Models",
             "NDA & Source Code Ownership",
             "Agile Development Approach",
-            
+
           ]}
         />
         <ClientTestimonials

@@ -22,6 +22,199 @@
   }
 ],
 
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/image/telemedicine.png",
+        "title": "AI-Enabled Life Insurance App",
+        "description": "We built a smart life insurance app with AI-driven underwriting, predictive risk modeling, and personalized policy suggestions. Users receive tailored life plans while insurers gain instant eligibility assessments and fraud detection automation.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-health-claim-app.webp",
+        "title": "On-Demand Health Claim App",
+        "description": "This app revolutionized health insurance claims with real-time AI verification, instant e-document uploads, and chatbot-guided filing. It reduces claim processing time from days to minutes—designed for both speed and compliance.",
+        "link": "#"
+      },
+       {
+        "image": "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-auto-insurance-blockchain.webp",
+        "title": "Blockchain-Based Auto Insurance App",
+        "description": "A decentralized insurance app that uses blockchain to auto-validate accident claims through GPS and image data. Features include a secure driver record vault, dynamic premium calculations, and immutable accident logs.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-travel-insurance-superapp.webp",
+        "title": "All-in-One Travel Insurance SuperApp",
+        "description": "We crafted a multi-policy travel insurance app with flight delay compensation automation, live geolocation coverage activation, and multilingual AI support. Users manage everything from trip claims to emergency contacts in one place.",
+        "link": "#"
+      }
+      
+      
+    ],
+
+
+ "featuresData1": [
+  {
+    "id": 1,
+    "title": "AI-Based Insurance App Development",
+    "icon": "<i className='fas fa-robot text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/ai-banking-app.webp",
+    "additionalDetails": [
+      {
+        "details": "AI-Powered Virtual Assistants & Chatbots",
+        "emoji": "",
+        "content": "Intelligent bots handle policy inquiries, file claims, and offer instant support. Our AI-based insurance app development features streamline customer service while reducing operational overhead for insurance providers."
+      },
+      {
+        "details": "Predictive Risk Assessment",
+        "emoji": "",
+        "content": "AI analyzes user data, behavior, and patterns to predict insurance risks more accurately. This enhances underwriting accuracy and supports smart policy pricing models for various insurance products."
+      },
+      {
+        "details": "Smart Claims Processing",
+        "emoji": "",
+        "content": "Our <a class='text-blue-500 font-semibold ' href='https://www.comfygen.com/ai-development'>AI-based insurance app development</a> includes automation tools that validate claims through image recognition, historical data, and NLP, drastically reducing processing times and minimizing fraud risks."
+      },
+      {
+        "details": "Fraud Detection & Prevention",
+        "emoji": "",
+        "content": "AI monitors real-time user activity to flag suspicious behavior and prevent fraudulent claims. This ensures a more secure and trustworthy experience for both insurers and users."
+      },
+      {
+        "details": "Personalized Policy Recommendations",
+        "emoji": "",
+        "content": "AI delivers personalized coverage options based on user behavior, location, and preferences. Improve customer satisfaction with tailored insurance plans and proactive renewal suggestions."
+      },
+      {
+        "details": "Voice & Biometric Verification",
+        "emoji": "",
+        "content": "Enhance user security with AI-powered voice recognition and biometric login systems. Our insurance app development services ensure compliant, secure, and hands-free authentication methods."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Blockchain-Based Insurance App Development",
+    "icon": "<i className='fas fa-link text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/blockchain-banking-app.webp",
+    "additionalDetails": [
+      {
+        "details": "Secure and Transparent Transactions",
+        "emoji": "",
+        "content": "Our <a class='text-blue-500 font-semibold underline' href='https://www.comfygen.com/blockchain-development'>blockchain-based insurance app development</a> enhances trust between insurers, agents, and policyholders through encrypted and tamper-resistant transaction records."
+      },
+      {
+        "details": "Smart Contract-Based Claims",
+        "emoji": "",
+        "content": "Automate insurance claims using <a class='text-blue-500 font-semibold underline' href='https://www.comfygen.com/smart-contract-development'>smart contracts</a> that self-execute when conditions are met. This drastically improves speed and reduces disputes in insurance settlements."
+      },
+      {
+        "details": "Decentralized Policy Management",
+        "emoji": "",
+        "content": "Blockchain enables decentralized data storage for policy and claim information, eliminating data silos and increasing accessibility across devices and platforms."
+      },
+      {
+        "details": "Immutable Audit Trails",
+        "emoji": "",
+        "content": "Every action and update on the policy is recorded immutably on the blockchain, helping insurers stay compliant and offering customers full traceability of their data."
+      },
+      {
+        "details": "Cost-Effective Settlements",
+        "emoji": "",
+        "content": "Blockchain reduces third-party involvement, cutting administrative costs and expediting policy issuance and claims—hallmarks of the best insurance app development company."
+      },
+      {
+        "details": "Cross-Border Insurance Solutions",
+        "emoji": "",
+        "content": "Our blockchain-powered apps support global, multi-jurisdictional operations. Insurers can offer borderless policies and claim settlements faster, backed by secure distributed ledgers."
+      }
+    ]
+  }
+],
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "User Panel Features",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-user-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Quick Policy Search & Comparison",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+        "details": "Smart Claim Submission",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "In-App Chat & Virtual Assistant",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+        "details": "Premium Payment & Auto-Renewal",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Policy Document Vault",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Real-Time Claim Status Tracking",
+        "content": ""
+      }
+    ]
+    
+  },
+  
+  {
+    "id": 2,
+    "title": "Admin Panel Features",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-admin-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Policy & User Management",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "AI-Driven Risk & Claim Analytics",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+        "details": "Agent/Broker Management Tools",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "Claims Processing Workflow Automation",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+        "details": "Reports & Compliance Dashboard",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Blockchain-Based Activity Logs",
+        "content": ""
+      }
+    ]
+    
+  }
+  
+],
+
 
 "servicesData": [
   {

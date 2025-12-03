@@ -32,7 +32,79 @@
 ],
 
 
+"featuresData":[
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-user-panel.webp",
+    "additionalDetails": [
+      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "User Registration & KYC", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Balance & Transaction History", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png", "details": "Fund Transfer & Requests", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "Bill Payments & Recharges", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "Bank Account Linking", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Push Notifications", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Multi-Language Support", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "Two-Factor Authentication", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-admin-panel.webp",
+    "additionalDetails": [
+      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "User Management", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Transaction Monitoring", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "KYC & Compliance Controls", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png", "details": "Commission & Revenue Reports", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Push Notification Management", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png", "details": "Payment Gateway Integration", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "Dispute Management", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "CMS & Content Controls", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Merchant Panel",
+    "icon": "<i className='fas fa-store text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-merchant-panel.webp",
+    "additionalDetails": [
+      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "Merchant Registration & KYC", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Customer Transaction Management", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "QR Code Generator", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png", "details": "Offers & Cashback Setup", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "Settlement Reports", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "Product & Service Listings", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Customer Support Tools", "content": "" },
+      { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Multi-Device Access", "content": "" }
+    ]
+  }
+],
 
+ "portfoliodata":[
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
+      "title": "Retail eWallet App",
+      "description": "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
+      "link": "#"
+    },
+
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
+      "title": "Crypto Wallet App",
+      "description": "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
+      "title": "P2P Money Transfer App",
+      "description": "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
+      "link": "#"
+    }
+    
+  ],
 
   
   "myList1": [

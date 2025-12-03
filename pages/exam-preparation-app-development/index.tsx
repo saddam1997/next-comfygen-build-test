@@ -3,50 +3,71 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./exampreparationappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import Slider from "../components/Slider";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
 );
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -83,56 +104,6 @@ const Process = [
     title: "Ongoing Support & Updates",
     description:
       "Post-launch, we offer continuous support, regular updates, and performance monitoring. Whether it’s fixing bugs, adding new features, or scaling the app, we’re with you at every step.",
-  },
-];
-;
-
-
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Elementary Application Development",
-    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Freelance Tutor Marketplace Development",
-    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "K-12 Education App Development",
-    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "STEM Learning Application Development",
-    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Language Learning Application Development",
-    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Test Preparation App Development Solutions",
-    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Corporate Training & Employee Learning App Development",
-    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Special Needs & Inclusive Education App Development",
-    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness and Wellness Coaching App Development",
-    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
   },
 ];
 
@@ -329,7 +300,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Exam Preparation App Development Company 
+          Exam Preparation App Development Company
         </title>
         <meta
           name="description"
@@ -417,26 +388,26 @@ export default function ClinicalApp(props: any) {
         ))}
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-hero.webp')]" >
-          <HeroSectionForAllPages
-            heading="Top-Notch Exam Preparation App Development Company"
-            ptag="Transform learning outcomes with Comfygen’s advanced exam preparation app development services. We build AI-driven test prep apps that enhance productivity, boost exam success, and deliver an engaging digital learning experience. Our scalable and secure solutions support multi-exam goals including NEET, JEE, UPSC, Government exams, and more."
-            li="AI-powered adaptive learning"
-            li1="Smart analytics & progress tracking"
-            li2="Interactive mock tests and quizzes"
-            li3="Live classes, doubt-solving & content management"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Top-Notch Exam Preparation App Development Company"
+          ptag="Transform learning outcomes with Comfygen’s advanced exam preparation app development services. We build AI-driven test prep apps that enhance productivity, boost exam success, and deliver an engaging digital learning experience. Our scalable and secure solutions support multi-exam goals including NEET, JEE, UPSC, Government exams, and more."
+          li="AI-powered adaptive learning"
+          li1="Smart analytics & progress tracking"
+          li2="Interactive mock tests and quizzes"
+          li3="Live classes, doubt-solving & content management"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Exam Preparation App Development to Empower Modern Learning"
@@ -447,10 +418,18 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Comprehensive Exam Preparation App Development Services to Boost Learning Success</h2>
+              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection heading="Comprehensive Exam Preparation App Development Services to Boost Learning Success" subtitle="" servicesData={JSON_DATA.servicesData} />
-
-        <ContactFromCenter />
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -463,7 +442,7 @@ export default function ClinicalApp(props: any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Test Preparation App Development Portfolio"
             description="Comfygen creates intuitive and results-driven test preparation applications that help students, coaching institutes, and edtech platforms deliver effective learning experiences. Here are two standout projects we’ve developed to empower exam aspirants through innovative digital solutions"
@@ -478,7 +457,19 @@ export default function ClinicalApp(props: any) {
           features={JSON_DATA.AIPowered}
         />
 
-        <ProcessSection title="Our Online Exam App Development Process" description="At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance." processSlides={Process} />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Online Exam App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+              At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
         <TechStack
           title="Tech Stack We Use"

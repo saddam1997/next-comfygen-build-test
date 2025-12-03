@@ -118,8 +118,27 @@
     "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
     "features": []
   }
-]
-,
+],
+
+
+
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
+        "title":  "Personalized Fitness Tracker App",
+        "description":"Custom health and fitness app built for an urban fitness startup. It allows users to set fitness goals, track workouts, monitor calories burned, and receive AI-based health tips. The app syncs with Apple Health and Google Fit for real-time performance updates.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/health-tracking-app-development/portfolio2.webp",
+        "title": "White-Label Remote Health Monitoring App",
+        "description": "White-label health tracking app solution developed for a telehealth company. Built for quick deployment, it supports remote patient monitoring, medication tracking, and doctor dashboards—all integrated with secure, HIPAA-compliant cloud storage.",
+        "link": "#"
+      }
+      
+    ],
+
+
   "consultancyHead": [
     {
       "num": "1",

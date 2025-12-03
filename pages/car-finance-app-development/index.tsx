@@ -3,40 +3,89 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import SolutionsFeature from "../componentsnew/SolutionsFeature";
-import NewTeckStack from "../componentsnew/NewTeckStack";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const SolutionsFeature = dynamic(
+  () => import("../Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 
 const Process = [
   {
@@ -76,38 +125,6 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/car-finance-app-development/potfolio1.webp",
-      head: "Instant Car Loan App for Dealerships",
-      name: "Car loan app is a custom car finance app developed for a large dealership network, offering real-time loan approvals directly from the showroom floor. It includes a smart EMI calculator, automated credit check API, and loan comparison tools.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/car-finance-app-development/potfolio2.webp",
-      head: "Car Loan Management App for Fintech Startups",
-      name: "Car Loan Management App is a full-featured auto loan app for a fintech startup offering car loan services to Tier 2 & 3 cities. The car finance app includes digital onboarding, EMI planner, multi-lender loan comparison, and a repayment tracker.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "https://www.comfygen.com/contact-us",
-    },
-  ],
-};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -124,7 +141,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -369,27 +386,24 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
 
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Car Finance App Development Company"
-            ptag="Comfygen is a leading car finance app development company, delivering secure, scalable, and user-centric auto loan solutions for fintech startups, car dealerships, and financial institutions. Our expert car finance app developers create high-performing car finance apps with intuitive UI/UX, real-time loan processing, and credit integrations to streamline financing and enhance user experience. Partner with us to build future-ready car finance apps that simplify lending and accelerate digital growth."
-            li="Empowering Car Finance with Smart Digital Solutions"
-            li1="Driving Auto Lending with Custom Finance Apps"
-            li2="10+ Year Expert Fintech App Developers"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/car-finance-app-development/hero1.webp"
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Car Finance App Development Company"
+          ptag="Comfygen is a leading car finance app development company, delivering secure, scalable, and user-centric auto loan solutions for fintech startups, car dealerships, and financial institutions. Our expert car finance app developers create high-performing car finance apps with intuitive UI/UX, real-time loan processing, and credit integrations to streamline financing and enhance user experience. Partner with us to build future-ready car finance apps that simplify lending and accelerate digital growth."
+          li="Empowering Car Finance with Smart Digital Solutions"
+          li1="Driving Auto Lending with Custom Finance Apps"
+          li2="10+ Year Expert Fintech App Developers"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/car-finance-app-development/hero1.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Building Smart Car Finance Apps That Simplify Auto Lending"
@@ -419,7 +433,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -428,12 +442,23 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio – Car Finance App Development Projects"
-          description="Explore how Comfygen empowers businesses with innovative and scalable car finance app development solutions. Our custom-built auto loan apps are tailored for fintech startups, banks, and dealerships to streamline digital lending, boost engagement, and deliver real results."
-        />
-        <Features />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Car Finance App Development Projects"
+            description="Explore how Comfygen empowers businesses with innovative and scalable car finance app development solutions. Our custom-built auto loan apps are tailored for fintech startups, banks, and dealerships to streamline digital lending, boost engagement, and deliver real results."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading="We Develop Car Finance Apps with Advanced Panel Features"
+            description="At Comfygen, we integrate Comfygen builds powerful car finance apps with smart AI features for users and administrators. Each panel of our car loan app development company supports fast, secure, and simplified auto loan processes. Car finance app development solutions offer seamless experiences for all stakeholders, from applying for a loan to managing repayments."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -452,7 +477,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <NewTeckStack
+        <TechStack
           title="Technology Stack We Use for Car Finance App Development"
           description="Comfygen develops top-notch car finance apps using the latest and most trusted technologies. Our tech stack ensures your app works smoothly and is easy to scale for future growth."
         />
@@ -488,7 +513,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
-      
+
       </div>
     </>
   );

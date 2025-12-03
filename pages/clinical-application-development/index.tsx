@@ -3,38 +3,95 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/clicnicalApp.json";
-import Providers from "./components/Providers";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import SolutionSec from "../components/SolutionSec";
-import {IconBrowser, IconCalendar, IconClipboard, IconDatabase, IconDeviceWatch, IconHeartbeat, IconSettings, IconVideo } from '@tabler/icons-react';
-import { IconTools, IconHeart} from '@tabler/icons-react';
-import TechStack from "../components/TechStack";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloperSec from "../components/HireDeveloperSec";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import InfoSectionRight from "../components/InfoSectionRight";
-
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import { IconBrowser, IconCalendar, IconClipboard, IconDatabase, IconDeviceWatch, IconHeartbeat, IconSettings, IconVideo } from '@tabler/icons-react';
+import { IconTools, IconHeart } from '@tabler/icons-react';
 
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const technologyData = [
   {
@@ -230,32 +287,27 @@ export default function ClinicalApp(props) {
           content="Hire Best Clinical Application Development Company In India & The USA| offshore Clinical Application developer or Programmers"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
 
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/clinical-application-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Clinical Application Development Company"
-                ptag="If you're a doctor looking to digitize your clinic, Comfygen is the ideal partner. We specialize in creating innovative, secure, and user-friendly clinical apps that improve patient outcomes, automate workflows, and ensure data security. With over 15 years of experience, our team delivers top-notch clinical software solutions that enhance the experience for patients, doctors, and healthcare providers, helping you grow your business 10x."
-                li="Innovative & Secure Clinical Apps"
-                li1="Automated Workflows for Efficiency"
-                li2="Enhanced User Experience"
-                li3="Expert Team with 15+ Years of Experience"
-                li4="Business Growth-Focused Solutions"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Clinical Application Development Company"
+          ptag="If you're a doctor looking to digitize your clinic, Comfygen is the ideal partner. We specialize in creating innovative, secure, and user-friendly clinical apps that improve patient outcomes, automate workflows, and ensure data security. With over 15 years of experience, our team delivers top-notch clinical software solutions that enhance the experience for patients, doctors, and healthcare providers, helping you grow your business 10x."
+          li="Innovative & Secure Clinical Apps"
+          li1="Automated Workflows for Efficiency"
+          li2="Enhanced User Experience"
+          li3="Expert Team with 15+ Years of Experience"
+          li4="Business Growth-Focused Solutions"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/clinical-application-development-company-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Best Clinical Application Development Company"
@@ -276,31 +328,42 @@ export default function ClinicalApp(props) {
             </div>
           </div>
         </section>
+
         <SolutionSec
           heading="Our Top-Notch Custom Clinical Application Development Solutions"
           subheading="Comfygen is one of the credible clinical app development agency in the USA with years of experience in crafting different types of healthcare app development services. We have a vision to transform all aspects of the best healthcare app development industry with our clinical app development services. The assortment of features in our clinical mobile app development enhances the quality of experiences for everyone in the healthcare sector."
           techData={technologyData}
         />
-        <HireDeveloperSec
+        <HireDeveloper
           heading="Who Can Take Our Clinical Apps Development Solutions?"
-          dec="Our reputation as one of the most reliable clinical application development firms in India revolves around our capabilities to offer diverse solutions. We aim to offer clinical application development services solutions that can become an integral aspect of the broader healthcare ecosystem. Our team has gained expertise by working with different clients, including doctors booking app development , pharmacies app development and patients app development."
-          dec1="We have also helped transform pharmacies, prescription systems, EHR mechanisms, and medical delivery app development systems with the value of customisation. Our clinical mobile app development services and solutions can help you create the following types of clinical application development services."
+          text="Our reputation as one of the most reliable clinical application development firms in India revolves around our capabilities to offer diverse solutions. We aim to offer clinical application development services solutions that can become an integral aspect of the broader healthcare ecosystem. Our team has gained expertise by working with different clients, including doctors booking app development , pharmacies app development and patients app development."
+          text1="We have also helped transform pharmacies, prescription systems, EHR mechanisms, and medical delivery app development systems with the value of customisation. Our clinical mobile app development services and solutions can help you create the following types of clinical application development services."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/img/who-can-take-our-clinical-apps-developement-solution.webp"
           imageAlt="hire-developer"
         />
-        <ContactFromCenter />
-        <Providers />
+
+        <div className="py-8">
+          <Features
+            heading=" Clinical Apps for Healthcare App Development Service Providers"
+            description="We specialise in creating clinical apps for healthcare providers to address different types of functionalities. Our experts specialise in clinical software development and help you create the following variants of clinical apps."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Features in Clinical Apps you should look for!</h2>
               <p className="text-base text-center font-normal">Comfygen is your trusted partner for developing clinical apps with a wide range of features. Our Clinical application development services and solutions can help in creating enhanced workflow management in clinics with remote access to the best clinical application development services. The features in clinical app development can vary from the perspective of users, such as patients and healthcare development providers.</p>
             </div>
-            <InfoSectionLeft
+            <InfoSection
               heading="For Patients"
               description1="You can develop powerful clinical application development for patients with our mobile app experts. Our clinical application development services can help to upload and make medical records easier to access. You can use our clinical apps to help patients connect with doctors directly through their smartphones. Our clinical apps can serve different features, such as"
+              description2=""
+              description3=""
+              dec=""
               points={[
                 "Collecting and analysing health records in real time.",
                 "Scheduling and management of patient appointments.",
@@ -314,9 +377,12 @@ export default function ClinicalApp(props) {
               link="/contact-us"
               linkText="LET'S CONNECT "
             />
-            <InfoSectionRight
+            <InfoSection
               heading="For Medical Staff"
               description1="Our clinical application development company can offer an innovative solution for doctors and healthcare app development service providers to offer quality healthcare. An effective healthcare app can offer multiple features that can help medical staff alongside improving patient experiences."
+              description2=""
+              description3=""
+              dec=""
               points={[
                 "Remote accessibility of medical records.",
                 "Facility of online prescriptions.",
@@ -329,10 +395,14 @@ export default function ClinicalApp(props) {
               imageSrc="https://www.comfygen.com/img/for-medical-staff.webp"
               link="/contact-us"
               linkText="Lets Discuss"
+              imagePosition="right"
             />
-            <InfoSectionLeft
+            <InfoSection
               heading="For Clinics"
               description1="The features of clinical apps would also differ significantly from the perspective of clinics. Clinics can utilise clinical apps to collect data from patients, staff, and visitors to improve their experiences while streamlining the work of doctors."
+              description2=""
+              description3=""
+              dec=""
               points={[
                 "Automation of medical instrument inventory control.",
                 "Scheduling of doctor and staff shifts.",
@@ -371,7 +441,7 @@ export default function ClinicalApp(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-       
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -434,7 +504,7 @@ export default function ClinicalApp(props) {
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."/>
+          imageAlt="Get in touch now." />
 
         <Faq
           faqData={JSON_DATA.Frequently}

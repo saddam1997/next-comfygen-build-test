@@ -1,32 +1,31 @@
 {
- "Frequently": [
-  {
-    "num": "1",
-    "title": "What is a truck finance app?",
-    "desc": "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place."
-  },
-  {
-    "num": "2",
-    "title": "How much does it cost to develop a truck finance app?",
-    "desc": "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs."
-  },
-  {
-    "num": "3",
-    "title": "How long does it take to build a truck loan app?",
-    "desc": "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support."
-  },
-  {
-    "num": "4",
-    "title": "Do you provide custom truck finance app solutions?",
-    "desc": "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features."
-  },
-  {
-    "num": "5",
-    "title": "Can you integrate third-party APIs like payment gateways or loan calculators?",
-    "desc": "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance."
-  }
-]
-,
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is a truck finance app?",
+      "desc": "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place."
+    },
+    {
+      "num": "2",
+      "title": "How much does it cost to develop a truck finance app?",
+      "desc": "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs."
+    },
+    {
+      "num": "3",
+      "title": "How long does it take to build a truck loan app?",
+      "desc": "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support."
+    },
+    {
+      "num": "4",
+      "title": "Do you provide custom truck finance app solutions?",
+      "desc": "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features."
+    },
+    {
+      "num": "5",
+      "title": "Can you integrate third-party APIs like payment gateways or loan calculators?",
+      "desc": "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance."
+    }
+  ],
   "servicesData": [
     {
       "title": "Custom Truck Loan App Development",
@@ -88,60 +87,71 @@
         "GST, PAN & compliance tools for NBFCs"
       ]
     }
-  ]  
-,
+  ],
   "servicesData1": [
-  {
-    "title": "Enhanced User Engagement",
-    "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
-    "features": []
-  },
-  {
-    "title": "Scalable and Personalized Services",
-    "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
-    "features": []
-  },
-  {
-    "title": "Real-Time Astrological Insights",
-    "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
-    "features": []
-  },
-  {
-    "title": "Global Reach and Accessibility",
-    "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
-    "features": []
-  },
-  {
-    "title": "Increased Revenue Opportunities",
-    "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
-    "features": []
-  },
-  {
-    "title": "Data-Driven Decision Making",
-    "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
-    "features": []
-  }
-]
-,
-"FutureDriven2": [
-  {
-    "title": "Rising Demand for Digital Money Management",
-    "desc": "More people now prefer mobile apps to manage their money. A personal finance app helps your business meet this demand by offering users simple tools to track expenses, budgets, and savings digitally."
-  },
-  {
-    "title": "User Engagement Through Data Visualization",
-    "desc": "Finance apps use charts and graphs to show users how they spend and save money. This visual experience keeps users engaged and helps them understand their finances more clearly and easily."
-  },
-  {
-    "title": "Increased Customer Retention with Automation",
-    "desc": "Features like automatic bill reminders, expense tracking, and budget alerts keep users coming back. Automation makes money management easier, which improves customer satisfaction and boosts app retention rates."
-  },
-  {
-    "title": "Brand Loyalty with Intuitive Financial Tools",
-    "desc": "Offering a smart, easy-to-use personal finance app builds trust. Users stick with brands that help them manage money better, increasing brand loyalty and long-term business growth."
-  }
-],
-
+    {
+      "title": "Enhanced User Engagement",
+      "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
+      "features": []
+    },
+    {
+      "title": "Scalable and Personalized Services",
+      "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
+      "features": []
+    },
+    {
+      "title": "Real-Time Astrological Insights",
+      "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
+      "features": []
+    },
+    {
+      "title": "Global Reach and Accessibility",
+      "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
+      "features": []
+    },
+    {
+      "title": "Increased Revenue Opportunities",
+      "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
+      "features": []
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
+      "features": []
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p1.webp",
+      "title": "FleetLoan Pro – Truck Loan Management App",
+      "description": "FleetLoan Pro is a custom-built truck loan app designed for logistics companies to manage loans across their fleet of vehicles. The app includes EMI tracking, document uploads, loan status updates, and real-time notifications.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p2.webp",
+      "title": "TruckLeaseGo – Commercial Vehicle Finance App",
+      "description": "TruckLeaseGo is a complete commercial truck finance app built for NBFCs to handle leasing and vehicle loans. It offers a seamless interface for customers to apply for loans, upload documents, and calculate EMIs.",
+      "link": "#"
+    }
+  ],
+  "FutureDriven2": [
+    {
+      "title": "Rising Demand for Digital Money Management",
+      "desc": "More people now prefer mobile apps to manage their money. A personal finance app helps your business meet this demand by offering users simple tools to track expenses, budgets, and savings digitally."
+    },
+    {
+      "title": "User Engagement Through Data Visualization",
+      "desc": "Finance apps use charts and graphs to show users how they spend and save money. This visual experience keeps users engaged and helps them understand their finances more clearly and easily."
+    },
+    {
+      "title": "Increased Customer Retention with Automation",
+      "desc": "Features like automatic bill reminders, expense tracking, and budget alerts keep users coming back. Automation makes money management easier, which improves customer satisfaction and boosts app retention rates."
+    },
+    {
+      "title": "Brand Loyalty with Intuitive Financial Tools",
+      "desc": "Offering a smart, easy-to-use personal finance app builds trust. Users stick with brands that help them manage money better, increasing brand loyalty and long-term business growth."
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -186,8 +196,7 @@
       "title": "Data Analytics & Reports",
       "desc": "Access detailed reports and insights related to loans, payments, user activity, and overall app performance."
     }
-  ]
-  ,
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Truck Finance App Development?",
     "description": "Comfygen is a leading <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/personal-finance-app-development' >personal finance app development company</a> trusted by transport businesses, lenders, and fintech startups. We build custom, secure, and user-friendly truck loan apps that simplify financial operations and enhance user satisfaction.",
@@ -197,56 +206,55 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Expert Team with Fintech & Transport Experience",
-    "description": "Our truck loan mobile app developers have extensive experience in both the fintech and logistics sectors. We build powerful truck loan apps with smart features like EMI tracking, loan application processing, and real-time document verification."
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expert Team with Fintech & Transport Experience",
+        "description": "Our truck loan mobile app developers have extensive experience in both the fintech and logistics sectors. We build powerful truck loan apps with smart features like EMI tracking, loan application processing, and real-time document verification."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Custom Truck Loan App Solutions",
+        "description": "We offer 100% custom truck finance app development services tailored to your business. Whether you're an NBFC, fleet operator, or commercial lender, we build apps that align with your goals and user needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "User-Friendly Interface",
+        "description": "We design clean, intuitive app interfaces that are easy to use for drivers, agents, and admin staff. Our goal is to deliver a truck loan app that’s simple, fast, and functional—even for non-tech-savvy users."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Secure and Scalable Architecture",
+        "description": "Security is our priority. We use the latest encryption standards, secure login methods, and scalable cloud solutions to ensure your app grows safely with your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "AI-Powered Financial Insights",
+        "description": "We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >integrate AI</a> features that offer smart financial insights—like payment trends, missed EMI alerts, and credit suggestions—making your truck finance app more intelligent and engaging."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "On-Time Delivery & Complete Support",
+        "description": "As the best truck loan app development agency, we deliver every project on schedule with post-launch support. From updates to technical fixes, we ensure smooth app performance long after deployment."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Custom Truck Loan App Solutions",
-    "description": "We offer 100% custom truck finance app development services tailored to your business. Whether you're an NBFC, fleet operator, or commercial lender, we build apps that align with your goals and user needs."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "User-Friendly Interface",
-    "description": "We design clean, intuitive app interfaces that are easy to use for drivers, agents, and admin staff. Our goal is to deliver a truck loan app that’s simple, fast, and functional—even for non-tech-savvy users."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Secure and Scalable Architecture",
-    "description": "Security is our priority. We use the latest encryption standards, secure login methods, and scalable cloud solutions to ensure your app grows safely with your business."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "AI-Powered Financial Insights",
-    "description": "We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >integrate AI</a> features that offer smart financial insights—like payment trends, missed EMI alerts, and credit suggestions—making your truck finance app more intelligent and engaging."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "On-Time Delivery & Complete Support",
-    "description": "As the best truck loan app development agency, we deliver every project on schedule with post-launch support. From updates to technical fixes, we ensure smooth app performance long after deployment."
-  }
-]
-  },
-"customTestimonials": [
-  {
-    "text": "Comfygen delivered a powerful and secure truck finance app for our logistics business. The team was professional, quick to respond, and exceeded our expectations.",
-    "name": "Michael D'Souza",
-    "title": "USA"
-  },
-  {
-    "text": "Their developers understood our truck loan workflow perfectly. The app they built helped us streamline financing and reduce processing time by 40%.",
-    "name": "Ravi Sharma",
-    "title": "India"
-  },
-  {
-    "text": "We wanted an easy-to-use truck loan application system, and Comfygen nailed it. Their support team is excellent too.",
-    "name": "James",
-    "title": "Canada"
-  }
-]
-,
+  "customTestimonials": [
+    {
+      "text": "Comfygen delivered a powerful and secure truck finance app for our logistics business. The team was professional, quick to respond, and exceeded our expectations.",
+      "name": "Michael D'Souza",
+      "title": "USA"
+    },
+    {
+      "text": "Their developers understood our truck loan workflow perfectly. The app they built helped us streamline financing and reduce processing time by 40%.",
+      "name": "Ravi Sharma",
+      "title": "India"
+    },
+    {
+      "text": "We wanted an easy-to-use truck loan application system, and Comfygen nailed it. Their support team is excellent too.",
+      "name": "James",
+      "title": "Canada"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -453,8 +461,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -475,8 +481,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -498,44 +503,42 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/budgeting-app-development.webp",
-    "title": "Budgeting Apps",
-    "decs": "We develop custom budgeting apps that help users plan and manage their monthly income and expenses. These personal budgeting app solutions offer budget alerts, visual spending charts, and financial goals to improve money habits and promote smarter financial planning."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/expense-tracker-app.webp",
-    "title": "Expense Tracker Apps",
-    "decs": "Our expense tracker app development service allows users to record and categorize daily spending in real-time. These apps provide detailed reports and analytics that help users control their finances and avoid overspending."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/investment-management-app.webp",
-    "title": "Investment Management Apps",
-    "decs": "We create investment management apps that allow users to monitor their portfolio, track market trends, and make informed decisions. These apps support stock, mutual fund, and crypto tracking with real-time updates and alerts."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/bill-payment-app.webp",
-    "title": "Bill Payment Apps",
-    "decs": "Our bill payment app solutions enable users to schedule and pay bills on time. With features like auto-reminders, payment history, and secure gateways, users never miss due dates or fall behind on their financial obligations."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/credit-score-monitoring-app.webp",
-    "title": "Credit Score Monitoring Apps",
-    "decs": "We build credit monitoring apps that allow users to check and track their credit scores securely. These apps offer score improvement tips, credit history tracking, and alerts for any changes in credit reports."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/wealth-management-platform.webp",
-    "title": "Wealth Management Platforms",
-    "decs": "Our wealth management apps help users manage all aspects of personal finance—budgeting, investing, saving, and debt tracking—within a single platform. These solutions are ideal for individuals, families, and financial advisors."
-  }
-]
-  
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/budgeting-app-development.webp",
+      "title": "Budgeting Apps",
+      "decs": "We develop custom budgeting apps that help users plan and manage their monthly income and expenses. These personal budgeting app solutions offer budget alerts, visual spending charts, and financial goals to improve money habits and promote smarter financial planning."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/expense-tracker-app.webp",
+      "title": "Expense Tracker Apps",
+      "decs": "Our expense tracker app development service allows users to record and categorize daily spending in real-time. These apps provide detailed reports and analytics that help users control their finances and avoid overspending."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/investment-management-app.webp",
+      "title": "Investment Management Apps",
+      "decs": "We create investment management apps that allow users to monitor their portfolio, track market trends, and make informed decisions. These apps support stock, mutual fund, and crypto tracking with real-time updates and alerts."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/bill-payment-app.webp",
+      "title": "Bill Payment Apps",
+      "decs": "Our bill payment app solutions enable users to schedule and pay bills on time. With features like auto-reminders, payment history, and secure gateways, users never miss due dates or fall behind on their financial obligations."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/credit-score-monitoring-app.webp",
+      "title": "Credit Score Monitoring Apps",
+      "decs": "We build credit monitoring apps that allow users to check and track their credit scores securely. These apps offer score improvement tips, credit history tracking, and alerts for any changes in credit reports."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/wealth-management-platform.webp",
+      "title": "Wealth Management Platforms",
+      "decs": "Our wealth management apps help users manage all aspects of personal finance—budgeting, investing, saving, and debt tracking—within a single platform. These solutions are ideal for individuals, families, and financial advisors."
+    }
+  ]
 }

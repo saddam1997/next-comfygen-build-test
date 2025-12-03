@@ -4,7 +4,6 @@
       "num": "1",
       "title": "How to develop a tutor app?",
       "desc": "Developing a tutor app involves several stages, including market research, UI/UX design, development, testing, and deployment. At Comfygen, we take care of everything—from concept to launch—integrating AI-powered tutor matching, real-time video classes, and secure payment systems to create a seamless learning experience."
-     
     },
     {
       "num": "2",
@@ -170,6 +169,74 @@
       "desc": "Our iSpring clone app provides an advanced LMS platform for creating e-learning content, administering assessments, and tracking progress. It makes corporate training and online education more interactive and efficient."
     }
   ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/image/hero-image-on-demand-tutor-booking-app.png",
+      "title": "On-Demand Tutor Booking App",
+      "description": "A real-time tutor booking app development solution that connects students with qualified tutors nearby. Integrated with AI-based matching, automated scheduling, secure payments, and live video sessions.",
+      "link": "/portfolio/on-demand-tutor-booking-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-ai-powered-language-learning-app.png",
+      "title": "AI-Powered Language Learning App",
+      "description": "An interactive language learning app development platform with AI-driven personalized lessons, gamified exercises, speech recognition, and real-time progress tracking to help users master new languages effectively.",
+      "link": "/portfolio/ai-powered-language-learning-app"
+    }
+  ],
+
+ "featuresData":[
+  {
+    "id": 1,
+    "title": "Students Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/student-panel-tutor-app-development.webp",
+    "additionalDetails": [
+      { "details": "Easy Registration", "emoji": "", "content": "" },
+      { "details": "Profile Management", "emoji": "", "content": "" },
+      { "details": "Search and Filter Tutors", "emoji": "", "content": "" },
+      { "details": "Live Video/Audio Classes", "emoji": "", "content": "" },
+      { "details": "Instant Chat with Teachar", "emoji": "", "content": "" },
+      { "details": "Discussion Forums", "emoji": "", "content": "" },
+      { "details": "Video Consultation with Teachers", "emoji": "", "content": "" },
+      { "details": "Secure Payment Gateways", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Tutors Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/tutor-panel-tutor-app-development.webp",
+    "additionalDetails": [
+      { "details": "Profile Creation", "emoji": "", "content": "" },
+      { "details": "Course Listing", "emoji": "", "content": "" },
+      { "details": "Class Scheduling & Calendar Integration", "emoji": "", "content": "" },
+      { "details": "Virtual Whiteboard for Interactive Teaching", "emoji": "", "content": "" },
+      { "details": "Enable Tests", "emoji": "", "content": "" },
+      { "details": "Performance Analytics & Feedback", "emoji": "", "content": "" },
+      { "details": "Payment Tracking & Earnings Dashboard", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admins Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/admin-panel-tutor-app-development.webp",
+    "additionalDetails": [
+      { "details": "User & Content Management", "emoji": "", "content": "" },
+      { "details": "Subscription & Monetization Control", "emoji": "", "content": "" },
+      { "details": "AI-powered Recommendations System", "emoji": "", "content": "" },
+      { "details": "Driver and Delivery Management", "emoji": "", "content": "" },
+      { "details": "Controlling the Content", "emoji": "", "content": "" },
+      { "details": "Security & Data Protection", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
+
   "pageData": {
     "title": "Why is Comfygen Your Perfect Tutor App Development Partner?",
     "description": "Comfygen is a leading tutor app development company, offering custom tutor app development services that empower educational businesses, startups, and enterprises with advanced, scalable, and AI-driven solutions. Our expertise in education mobile app development ensures a seamless, engaging, and feature-rich learning experience.",
@@ -439,8 +506,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -461,8 +526,7 @@
       "num": "04",
       "title": "Personalized Learning Paths",
       "decs": "Comfygen’s education mobile app development solutions incorporate AI-driven personalized learning paths that adapt to each student's progress, strengths, and weaknesses. This feature ensures a tailored approach to education, offering customized course suggestions and adaptive difficulty levels to maximize learning efficiency."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "Smart Performance Analytics",
@@ -489,7 +553,6 @@
       "decs": "Our on-demand tutor app development solutions use deep learning algorithms to provide advanced skill assessment tools that evaluate students' strengths, weaknesses, and learning capabilities. This AI-driven feature helps personalize learning plans and prepares students for real-world challenges."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",

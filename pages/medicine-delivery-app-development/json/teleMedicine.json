@@ -211,6 +211,68 @@
     }
   ],
 
+  "featuresData": [
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/customer-panel-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Easy registration & login", "emoji": "", "content": "" },
+      { "details": "Medicine search & order", "emoji": "", "content": "" },
+      { "details": "Prescription Upload", "emoji": "", "content": "" },
+      { "details": "Real-time Order Tracking", "emoji": "", "content": "" },
+      { "details": "Multiple Payment Options", "emoji": "", "content": "" },
+      { "details": "Medicine Reminders", "emoji": "", "content": "" },
+      { "details": "Order History", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pharmacy Panel",
+    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/pharmacy-panel-image-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Order Management ", "emoji": "", "content": "" },
+      { "details": "Manage medicine inventory", "emoji": "", "content": "" },
+      { "details": "Upload Prescriptions & Verify Medicines ", "emoji": "", "content": "" },
+      { "details": "Payment Settlement ", "emoji": "", "content": "" },
+      { "details": "Notifications", "emoji": "", "content": "" },
+      { "details": "Sales tracking & analytics", "emoji": "", "content": "" },
+      { "details": "Customer Interaction & Support ", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/image/admin-panel-medicine-delivery-app-development.png",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "User & Pharmacy Management", "emoji": "", "content": "" },
+      { "details": "Order tracking & Management", "emoji": "", "content": "" },
+      { "details": "Offers & Discounts Control", "emoji": "", "content": "" },
+      { "details": "Payment Management ", "emoji": "", "content": "" },
+      { "details": "Reports & Analytics Dashboard", "emoji": "", "content": "" },
+      { "details": "Inventory Control", "emoji": "", "content": "" },
+      { "details": "Secure Data Management", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Delivery Panel",
+    "img": "https://www.comfygen.com/image/delivery-panel-medicine-delivery-app-development.png",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Real-time Delivery Requests", "emoji": "", "content": "" },
+      { "details": "Order Assignment ", "emoji": "", "content": "" },
+      { "details": "GPS Navigation", "emoji": "", "content": "" },
+      { "details": "Delivery Status Updates", "emoji": "", "content": "" },
+      { "details": "Earnings Tracking", "emoji": "", "content": "" },
+      { "details": "Delivery Confirmation", "emoji": "", "content": "" },
+      { "details": "Delivery History", "emoji": "", "content": "" }
+    ]
+  }
+],
   
 
   "consultancyHead": [

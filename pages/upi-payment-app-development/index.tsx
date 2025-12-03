@@ -1,33 +1,76 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/upipaymentappdevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import PortfolioSecs from "../components/PortfolioSec";
-import ServicesSection from '../componentsnew/ServicesSection'
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 const Process = [
   {
     title: "Discovery & Requirements Gathering",
@@ -65,57 +108,6 @@ const Process = [
       "We help future-proof your app by building scalable infrastructure capable of handling millions of transactions. Whether you expand to new markets or integrate more banks, our architecture grows with your business.",
   }
 ];
-
-
-
-
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
-      head: "AI-Driven Mobile Banking App",
-      name: "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
-      head: "Blockchain-Based Digital Wallet",
-      name: "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
-      head: "Core Banking System App",
-      name: "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    }
-  ]
-};
 
 const jsonLdData = [
   {
@@ -441,25 +433,25 @@ export default function Ecommerce(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="UPI Payment App Development Company"
-            ptag="Comfygen is a trusted UPI payment app development company, delivering secure, scalable, and NPCI-compliant payment solutions tailored for fintech startups, banks, and enterprises. Our expert developers build high-performing UPI payment apps with seamless UI/UX, bank-level security, and lightning-fast transactions to enhance user trust and drive digital transformation. Partner with us to build next-gen UPI apps that set new standards in fintech innovation."
-            li="Transforming Payments into Seamless UPI Solutions"
-            li1="Boosting Fintech with Custom UPI Apps"
-            li2="10+ Yr Expert Fintech Developers"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="UPI Payment App Development Company"
+          ptag="Comfygen is a trusted UPI payment app development company, delivering secure, scalable, and NPCI-compliant payment solutions tailored for fintech startups, banks, and enterprises. Our expert developers build high-performing UPI payment apps with seamless UI/UX, bank-level security, and lightning-fast transactions to enhance user trust and drive digital transformation. Partner with us to build next-gen UPI apps that set new standards in fintech innovation."
+          li="Transforming Payments into Seamless UPI Solutions"
+          li1="Boosting Fintech with Custom UPI Apps"
+          li2="10+ Yr Expert Fintech Developers"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-hero.webp"
+        />
+
         <AboutSection
           heading="Best UPI payment app development company for Startups & Enterprises"
           description1="With the rising demand for secure, real-time digital payments, UPI payment app development has become essential for businesses aiming to lead in fintech. As a top-tier custom UPI payment app development company, Comfygen specializes in building scalable, user-centric solutions for startups and enterprises. "
@@ -468,21 +460,32 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
-        <ServicesSection
-          heading="We Offer the Best UPI App Development Services"
-          subtitle="As a leading UPI payment app development company, we offer a complete range of services tailored to meet the needs of startups and enterprises looking to integrate UPI payment solutions."
-          servicesData={JSON_DATA.servicesData} />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer the Best UPI App Development Services</h2>
+              <p className="text-base text-center font-normal">As a leading UPI payment app development company, we offer a complete range of services tailored to meet the needs of startups and enterprises looking to integrate UPI payment solutions.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <CoreFeaturesSection title="Core Features of Our UPI Payment Apps" subtitle="Our advanced UPI payment app development solutions are packed with powerful features that enhance security, convenience, and user engagement. Whether you're a startup or an enterprise, our apps are designed to deliver a seamless, secure, and fast digital payment experience." features={JSON_DATA?.LeadingSoftware || []} />
 
 
-        <PortfolioSecs
-          techData={techDataForPage1}
-          heading="Our UPI Payment Apps Portfolio"
-          description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our UPI Payment Apps Portfolio"
+            description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
+          />
+        </section>
+
+
 
         <TrendsSection
           heading="The Trends in UPI App Development That Are Shaping the Future of UPI Apps"
@@ -490,11 +493,21 @@ export default function Ecommerce(props) {
           trends={JSON_DATA.FoodAppMaker}
         />
 
-        <ProcessSection
-          title="Our UPI Payment App Development Process"
-          description="Our UPI payment app development process follows a strategic, step-by-step approach to deliver secure, high-performing, and NPCI-compliant solutions tailored to your business goals and user needs."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our UPI Payment App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                Our UPI payment app development process follows a strategic, step-by-step approach to deliver secure, high-performing, and NPCI-compliant solutions tailored to your business goals and user needs.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         <TechStack
           title="Our Advanced Tech Stack for UPI Payment App Development"

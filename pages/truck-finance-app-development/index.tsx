@@ -3,37 +3,75 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import CallToAction from "../components/CallToAction";
-import NewTeckStack from "../componentsnew/NewTeckStack";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -73,38 +111,7 @@ const Process = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p1.webp",
-      head: "FleetLoan Pro – Truck Loan Management App",
-      name: "FleetLoan Pro is a custom-built truck loan app designed for logistics companies to manage loans across their fleet of vehicles. The app includes EMI tracking, document uploads, loan status updates, and real-time notifications.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/contact-us",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p2.webp",
-      head: "TruckLeaseGo – Commercial Vehicle Finance App",
-      name: "TruckLeaseGo is a complete commercial truck finance app built for NBFCs to handle leasing and vehicle loans. It offers a seamless interface for customers to apply for loans, upload documents, and calculate EMIs.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/contact-us",
-    },
-  ],
-};
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -446,10 +453,8 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Truck Finance App Development Company"
@@ -503,7 +508,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <ContactFromCenter />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -513,11 +518,14 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio – Truck Finance App Projects"
-          description="Explore how Comfygen delivers innovative, user-friendly, and scalable truck finance app development solutions for businesses across the transportation and finance sectors."
-        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio – Truck Finance App Projects"
+            description="Explore how Comfygen delivers innovative, user-friendly, and scalable truck finance app development solutions for businesses across the transportation and finance sectors."
+          />
+        </section>
 
         <CallToAction
           heading="Want to launch a truck finance app?"
@@ -545,7 +553,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <NewTeckStack
+        <TechStack
           title="Technology Stack We Use for Truck Finance App Development"
           description="We use the latest and most secure technologies to build reliable, scalable, and high-performance truck finance applications. Across all platforms, we support real-time syncing, fast performance, and secure loan transactions."
         />

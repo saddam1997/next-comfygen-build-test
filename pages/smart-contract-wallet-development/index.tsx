@@ -2,13 +2,7 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { HiOutlineChevronLeft } from "react-icons/hi";
 import JSON_DATA from "./json/cryptowallet.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import LatestTechnology from "../componentsnew/LatestTechnology";
 import {
   IconBrain,
   IconCloud,
@@ -17,26 +11,77 @@ import {
   IconWallet,
 } from "@tabler/icons-react";
 
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
 
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+)
+
 
 
 
@@ -107,7 +152,7 @@ const Process = [
 ]
 
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const slider: any = useRef();
   const next = () => {
@@ -115,39 +160,6 @@ export default function Ecommerce(props:any) {
   };
   const previous = () => {
     slider.current.slickPrev();
-  };
-  const settingstwo = {
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -558,12 +570,11 @@ export default function Ecommerce(props:any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/smart-contract-wallet-development/smart_contract_wallet_development_hero.webp')]">
+
           <HeroSectionForAllPages
             heading="Smart Contract Wallet Development Services"
             ptag="Smart contract wallets are redefining how digital assets are managed by combining automation, transparency, and security. At Comfygen, we specialize in Smart Contract Wallet Development that helps businesses and individuals to control their crypto holdings without depending on third parties. Our smart contract wallet development solutions support Ethereum smart contract wallets, multi-chain integration, and DeFi wallet development, making them ideal for enterprises, startups, NFT platforms, and exchanges."
@@ -578,8 +589,9 @@ export default function Ecommerce(props:any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+              bgImage="https://www.comfygen.com/comfygen-images/smart-contract-wallet-development/smart_contract_wallet_development_hero.webp"
           />
-        </div>
+
         <AboutSection
           heading="What is Smart Contract Wallet Development?"
           description1="Smart contract wallet development means creating <a class='text-blue-500 underline' href='https://www.comfygen.com/blockchain-wallet-development'>blockchain-based wallets</a> powered by self-executing smart contracts that automate, secure, and simplify crypto asset management. Unlike regular wallets, these solutions provide advanced features that improve security, usability, and transparency while reducing reliance on intermediaries. At Comfygen, we deliver <a class='text-blue-500 underline' href='https://www.comfygen.com/smart-contract-development'>custom smart contract </a>wallets with multi-chain support, enterprise-grade security, and DeFi integration for businesses, startups, and crypto platforms."
@@ -623,7 +635,7 @@ export default function Ecommerce(props:any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio of Smart Contract Wallet Development Projects"
             description="Comfygen’s portfolio of smart contract wallet development projects. Each <a class='text-blue-500 underline' href='https://www.comfygen.com/wallet-development-company'>crypto wallet</a> is built for security, automation, and multi-chain support, delivering seamless digital asset management for enterprises, startups, and DeFi platforms."
@@ -647,7 +659,6 @@ export default function Ecommerce(props:any) {
           techData={latesttech}
         />
 
-        <ContactFromCenter />
 
 
         <section className="bg-white lg:py-16 py-10">

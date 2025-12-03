@@ -150,6 +150,22 @@
       ]
     }
   ],
+
+      "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/islamic-banking-app-development/shariah-compliant-mobile-banking-app.webp",
+        "title": "Shariah-Compliant Mobile Banking App",
+        "description": "A fully custom mobile app designed for a leading Islamic bank, featuring interest-free loan processing, halal investment tracking, and integrated zakat calculation. The app supports multi-language and RTL layouts, delivering a seamless, compliant banking experience across devices.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-finance-digital-wallet.webp",
+        "title": "Islamic Finance Digital Wallet",
+        "description": "This secure digital wallet app enables users to make halal payments, manage Murabaha and Ijarah contracts, and donate to verified charities with built-in zakat modules. It includes AI-driven support and real-time transaction notifications to enhance transparency and user engagement.",
+        "link": "#"
+      }
+      
+    ],
   
 
   "consultancyHead" :[

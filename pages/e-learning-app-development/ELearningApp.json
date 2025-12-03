@@ -130,7 +130,7 @@
         "Role-based access for users"
       ]
     },
-     {
+    {
       "title": "White-label EdTech App Solutions",
       "description": "Start your online education business faster with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label eLearning mobile app development solutions</a>. Completely customizable to match your brand and business needs—saving time and development cost.",
       "features": [
@@ -140,7 +140,7 @@
         "Fast deployment"
       ]
     },
-     {
+    {
       "title": "Exam Preparation App Development",
       "description": "We build exam preparation apps that help students practice, learn, and perform better in competitive exams. Our <a href='https://www.comfygen.com/exam-preparation-app-development' class='underline font-semibold'>exam preparation app development solutions</a> include smart learning tools designed to boost confidence and success rates for learners of all levels.",
       "features": [
@@ -150,7 +150,7 @@
         "Personalized study plans"
       ]
     },
-     {
+    {
       "title": "Kids Educational App Development",
       "description": "We develop kids learning apps with fun and engaging activities that support early education. Our apps help children learn the alphabet, numbers, shapes, rhymes, and more through interactive games and animations.",
       "features": [
@@ -169,7 +169,6 @@
         "Performance Optimization"
       ]
     }
-    
   ],
   "consultancyHead": [
     {
@@ -202,6 +201,124 @@
     {
       "title": "Natural Language Processing (NLP)",
       "desc": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/img/hero-book-my-tutor.webp",
+      "title": "Book My Tutor",
+      "description": "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student, regardless of their location or academic level. The project seeks to bridge the gap between students and tutors, creating a conducive environment for personalized learning.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/ai-powered-e-learning-app.webp",
+      "title": "AI-Powered E-Learning App",
+      "description": "E-learning app is an innovative AI-driven education app designed for personalized learning experiences. It features interactive video lessons, real-time quizzes, and AI-based recommendations tailored to each student’s learning pace. With seamless Learning Management System (LMS) integration, it is widely used by schools and online educators for engaging and adaptive learning solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/language-learning-app.webp",
+      "title": "Language Learning App",
+      "description": "Language app is a feature-rich language learning app that supports multiple languages with AI-powered voice recognition, real-time translations, and gamified lessons. As a custom education app development company, we integrated chat-based learning, progress tracking, and AI tutors to make language acquisition fun and efficient for learners of all ages.",
+      "link": "#"
+    }
+  ],
+
+
+"featuresData": [
+    {
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/e-learning-user-panel.webp",
+    "additionalDetails": [
+        {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Personalized Dashboard",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+        "details": "AI-Based Course Recommendations",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "Live Classes & Video Lectures",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+        "details": "Performance Tracking & Reports",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Gamification & Rewards",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Offline Learning Mode",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Discussion Forums & Chat Support",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Secure Payment & Subscription Management",
+        "content": ""
+        }
+      ]
+    },
+    {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/e-learning-admin-panel.webp",
+
+    "additionalDetails": [
+        {
+        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "Dashboard & Analytics",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "Course Management",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+        "details": "User Role Management",
+        "content": ""
+        },
+        { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Live Class Scheduling & Notifications ", "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+        "details": "AI-Powered Performance Insights",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Monetization & Payment Processing",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Content Moderation & Compliance",
+        "content": ""
+        },
+        {
+        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Multi-Language & Accessibility Support",
+        "content": ""
+        }
+      ]
     }
   ],
   "pageData": {

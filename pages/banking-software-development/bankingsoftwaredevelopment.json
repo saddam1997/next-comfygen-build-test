@@ -70,39 +70,21 @@
   }
 ],
 
-"techDataForPage1":{
-  "All": [
-    {
-      "img": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
-      "head": "Digital Wallet App for Payment Providers",
-      "name": "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
-      "num": "1",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "#"
-    },
-
-    {
-      "img": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
-      "head": "AI-Powered Loan Management Platform",
-      "name": "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
-      "num": "2",
-      "icons": [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      "buttonLink": "#"
-    }
-  ]
-},
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
+        "title": "Digital Wallet App for Payment Providers",
+        "description": "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
+        "title": "AI-Powered Loan Management Platform",
+        "description": "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
+        "link": "#"
+      }
+      
+    ],
 
 
   "servicesData": [

@@ -35,8 +35,6 @@ const TechStack = dynamic(
   { loading: loader, ssr: true }
 )
 
-
-
 const WhyChoose = dynamic(
   () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }

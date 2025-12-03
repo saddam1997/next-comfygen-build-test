@@ -1,37 +1,75 @@
+import styles from "./styles.module.css";
 import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/pharmacyApp.json";
-import styles from "./styles.module.css";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import PortfolioSec from "../components/PortfolioSec";
-import SolutionSec from "../components/SolutionSec";
-import {IconBrain, IconCloud, IconDeviceCctv, IconDeviceMobile, IconSettings, IconShieldLock, } from '@tabler/icons-react';
+import { IconBrain, IconCloud, IconDeviceCctv, IconDeviceMobile, IconSettings, IconShieldLock, } from '@tabler/icons-react';
 import { IconTicket, IconChartBar, IconHeart, } from '@tabler/icons-react';
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 
 const Process = [
   {
@@ -64,23 +102,7 @@ const Process = [
   },
 
 ];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/bioLab-tracker-portfolio.webp",
-      head: "BioLab Tracker",
-      name: "BioLab Tracker is an innovative application tailored for biomedical research laboratories. This app offers comprehensive functionalities for tracking experiments, managing biological samples, and monitoring lab equipment. With BioLab Tracker, researchers can document experimental procedures, schedule equipment usage, and access data analytics to improve research outcomes. The app supports collaboration by allowing team members to share data and insights in real-time. Enhanced with cloud storage and encrypted data protection, BioLab Tracker ensures that sensitive information remains secure. Its intuitive design and responsive support make it an essential tool for advancing biomedical research.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+
 const technologyData = [
   {
     img: <IconDeviceCctv stroke={1.5} className="w-12 h-12" />, // IoT devices often connect like surveillance or monitoring systems
@@ -224,30 +246,26 @@ export default function ClinicalApp(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/laboratory-app-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Laboratory App Development Company "
-                ptag="Comfygen offers impeccable, cost-efficient laboratory app software for seamless management of business and patient operations. Using cutting-edge technologies and industry compliance, we create user-friendly Laboratory Information Management Software (LIMS) solutions with exceptional user experiences. As a trusted laboratory app development company, we’ve helped many labs build interactive LIMS solutions."
-                li="Cost-Effective LIMS Solutions"
-                li1="Advanced Tech & Compliance Standards"
-                li2="Exceptional User Experience"
-                ptag3="Contact us for laboratory app development consultancy."
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Laboratory App Development Company "
+          ptag="Comfygen offers impeccable, cost-efficient laboratory app software for seamless management of business and patient operations. Using cutting-edge technologies and industry compliance, we create user-friendly Laboratory Information Management Software (LIMS) solutions with exceptional user experiences. As a trusted laboratory app development company, we’ve helped many labs build interactive LIMS solutions."
+          li="Cost-Effective LIMS Solutions"
+          li1="Advanced Tech & Compliance Standards"
+          li2="Exceptional User Experience"
+          ptag3="Contact us for laboratory app development consultancy."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/laboratory-app-development-company-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Build Laboratory Apps for Scalable Businesses and Management"
@@ -298,7 +316,7 @@ export default function ClinicalApp(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <section className="bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="lg:py-16 py-10 space-y-6 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="flex flex-col justify-center text-center">
@@ -357,11 +375,17 @@ export default function ClinicalApp(props) {
           subheading="Modern technologies are changing the way of digitization. These tech-trends are evolving laboratory industries via easing the operations and automating the processes"
           techData={technologyData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio"
-          description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
-        />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio"
+            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+          />
+        </section>
+
+
 
         <div
           className="bg-center bg-repeat bg-fixed  "

@@ -1,20 +1,8 @@
+import Script from "next/script";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/doctor.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import Script from "next/script";
-import AdvancedPanel from "./components/AdvancedPanel";
-import TechStack from "../components/TechStack";
-import LatestTechnology from "../components/SolutionSec";
 import {
   IconCapsule,
   IconHeartbeat,
@@ -22,120 +10,81 @@ import {
   IconShoppingCart,
   IconStethoscope,
 } from "@tabler/icons-react";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Slider from "../components/Slider";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
-const Services = [
-  {
-    num: "1",
-    img: "https://www.comfygen.com/img/pharmeasy.webp",
-    title: "PharmEasy",
-    decs: "We can develop medicine ordering and pharmacy delivery apps similar to PharmEasy. Users could upload prescriptions for home delivery by linking to over 20,000 pharmacy partners. Custom features we can add:",
-    features: [
-      "Prescription scanner simplifies onboarding",
-      "Gamified rewards boost engagement",
-      "Predictive auto-refills for chronic medications",
-    ],
-    decs1:
-      "Strong logistics integrations would enable transparent order tracking with courier and inventory syncing. Advanced machine learning algorithms could also suggest products matching past purchases.",
-  },
-  {
-    num: "2",
-    img: "https://www.comfygen.com/img/netmeds.webp",
-    title: "Netmeds",
-    decs: (
-      <p>
-        We can create full-service medicine{" "}
-        <a className="text-blue-500" href="/e-commerce-app-development">
-          e-commerce app development
-        </a>{" "}
-        platforms like Netmeds, allowing online consultations and purchases.
-        Unique highlights may include:
-      </p>
-    ),
-    features: [
-      "Personal health profiles guide product suggestions",
-      "Automated prescription transfers to Netmeds pharmacy",
-      "Symptom checker for over-the-counter recommendations",
-    ],
-    decs1:
-      "Drawing on vast medicine catalogs, we can implement machine learning models to serve context-aware recommendations, mimicking in-pharmacy app development guidance. This boosts order values and buyer confidence.",
-  },
-  {
-    num: "3",
-    img: "https://www.comfygen.com/img/apollo-pharmacy.webp",
-    title: "Apollo Pharmacy is available 24/7.",
-    decs: "Our expert team can develop integrated healthcare app development platforms for Android & iOS encompassing telehealth, diagnostics, prescriptions, and medicine deliveries - a robust ecosystem like Apollo 24/7. One-stop features we can enable:",
 
-    features: [
-      "Lab test scheduling with 1000+ diagnostic partners",
-      "Integrated video consultations with prescription routing",
-      "Post-visit care plan access through the patient portal",
-    ],
-    decs1:
-      "Standing up end-to-end workflows requires extensive infrastructure integration into both digital systems and physical supply chains. Our dedicated engineering teams specialize in enabling these connections.",
-  },
-  {
-    num: "4",
-    img: "https://www.comfygen.com/img/apps-like-1MG.webp",
-    title: "1mg",
-    decs: "We can build robust medicine application development platforms like 1mg, enabling telehealth consultations, diagnostic test bookings, and reliable medication deliveries app development. Useful custom additions may include:",
-    features: [
-      "Chronic care programs with medication adherence tracking",
-      "Tools help validate medicine's authenticity and prevent counterfeits",
-      "Automated prescription transfers to 1mg's licensed pharmacy",
-    ],
-    decs1:
-      "A key aspect is developing extensive supply chain integrations to ensure consistent availability for all medication types. Our teams can architect the required links into pharmaceutical hubs across geographies.",
-  },
-  {
-    num: "5",
-    img: "https://www.comfygen.com/img/apps-like-practo.webp",
-    title: "Practo",
-    decs: "At Confygen, we can create physician marketplace app development like Practo that allow appointment bookings across specialities, fees, locations, etc. Unique differentiators could encompass:",
-    features: [
-      "ML-assisted provider finder matching symptoms",
-      "Custom intake forms for faster consultations",
-      "Post-visit care plan access via web development and mobile app development",
-    ],
-    decs1:
-      "A seamless patient and doctor experience requires enabling intricate coordination workflows under the hood. Our full-stack engineering strengths unlock these capabilities through judicious API development and system integration.",
-  },
-];
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/portfolio-for-medicine-delivery-app.webp",
-      head: "medicine Ordering app",
-      name: "At Comfygen Private Limited, we take pride in our strong portfolio of innovative medicine distribution apps. Our solutions are designed to bring revolution in health service by ensuring timely delivery of medicines at your doorstep. With a user-friendly interface, secure payment gateway, real-time tracking, and seamless integration with health service providers, our app fulfils all your medicine-related needs. Trusted by leading pharmacies and health service organizations, we combine modern technology with unmatched customer service to improve patient care. Know how Comfygen can change your health service experience along with our modern medicine and vitamin solutions. Contact us today!",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-    },
-  ],
-};
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -481,30 +430,23 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/medicine-ordering-app-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Medicine Ordering App Development Company"
-                ptag="Looking for a medicine ordering app development company that delivers secure, scalable, and user-friendly solutions? Comfygen specializes in building feature-rich medicine delivery apps that enhance patient care and streamline pharmacy operations. Our expert team ensures seamless integration, regulatory compliance, and a superior user experience—partner with us to create a cutting-edge app that revolutionizes online medicine ordering."
-                li="Prescription Upload & Verification"
-                li1="Real-time Order Tracking"
-                li2="AI-driven Medicine Recommendations"
-                li3="Multi-vendor & Pharmacy Management"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Medicine Ordering App Development Company"
+          ptag="Looking for a medicine ordering app development company that delivers secure, scalable, and user-friendly solutions? Comfygen specializes in building feature-rich medicine delivery apps that enhance patient care and streamline pharmacy operations. Our expert team ensures seamless integration, regulatory compliance, and a superior user experience—partner with us to create a cutting-edge app that revolutionizes online medicine ordering."
+          li="Prescription Upload & Verification"
+          li1="Real-time Order Tracking"
+          li2="AI-driven Medicine Recommendations"
+          li3="Multi-vendor & Pharmacy Management"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/medicine-ordering-app-development-company-hero-img.webp"
+        />
         <AboutSection
           title="About Company"
           heading="Your Trusted Medicine Ordering App Development Company"
@@ -572,8 +514,16 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
-        <AdvancedPanel />
+
+
+        <div className="py-8">
+          <Features
+            heading="Features We Implement in Your Medicine Ordering App to Make it Stand Out"
+            description="At Comfygen, we develop user-friendly and scalable medicine ordering apps with advanced features that cater to both customers and pharmacy administrators. Our app ensures a seamless medicine ordering experience, streamlined management, and compliance with industry regulations."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -595,7 +545,7 @@ export default function Ecommerce(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Medicine Ordering App Development Portfolio"
             description="We have developed and launched several medicine ordering and healthcare apps that have transformed how users access medicines and healthcare services. The following are some of our most notable medicine ordering app development projects."

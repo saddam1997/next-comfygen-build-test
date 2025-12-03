@@ -3,38 +3,60 @@
     "title": "E-Commerce App and Web Development Company",
     "decs": "Comfygen specializes in offering unique e-commerce development services as an android ecommerce app development and mobile ecommerce app development . We are aware of how crucial it is to create scalable, highly reliable solutions in order to improve consumer interaction and spur growth for your e-commerce company. In order to understand your unique requirements and develop solutions that suit your business goals, our team of professionals will collaborate directly with you. We have the knowledge and experience to produce outstanding outcomes whether you require an e-commerce mobile app, a web-based e-commerce platform, or both. So what’s holding you bak hire us today we are the best ecommerce app and web development company in india. "
   },
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a NeoBank app?",
+      "desc": "The cost of NeoBank app development depends on features, tech stack, platform, and compliance requirements. A basic MVP may start from $25,000, while a full-featured online banking app can exceed $100,000. We provide customized quotes based on your business goals and functionality."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a NeoBank app?",
+      "desc": "The timeline for NeoBank software development varies by complexity. A simple NeoBank MVP can take 10–14 weeks, while advanced apps with full banking features may require 6+ months. We follow agile development for faster iteration and delivery without compromising on security or compliance."
+    },
+    {
+      "num": "3",
+      "title": "What compliance standards are followed?",
+      "desc": "We ensure your NeoBank app meets all key financial regulations including PCI DSS, GDPR, and KYC/AML requirements. Our mobile banking app development experts stay updated with global compliance standards to deliver secure, legally compliant mobile banking app development solutions for both startups and financial institutions."
+    },
+    {
+      "num": "4",
+      "title": "Do you offer post-launch support?",
+      "desc": "Yes, we offer complete post-launch support and maintenance for all our NeoBank app development services. From bug fixes and updates to performance monitoring, our team ensures your app runs smoothly, stays secure, and evolves with user needs and fintech regulations."
+    },
+    {
+      "num": "5",
+      "title": "Can you integrate third-party APIs?",
+      "desc": "Absolutely. Our team has deep expertise in integrating third-party APIs such as Plaid, Mambu, Yodlee, and Stripe. These integrations enhance your NeoBank software with features like account aggregation, digital payments, and real-time data, all while maintaining security and a seamless user experience."
+    }
+  ],
 
-  
-    "Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a NeoBank app?",
-    "desc": "The cost of NeoBank app development depends on features, tech stack, platform, and compliance requirements. A basic MVP may start from $25,000, while a full-featured online banking app can exceed $100,000. We provide customized quotes based on your business goals and functionality."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to build a NeoBank app?",
-    "desc": "The timeline for NeoBank software development varies by complexity. A simple NeoBank MVP can take 10–14 weeks, while advanced apps with full banking features may require 6+ months. We follow agile development for faster iteration and delivery without compromising on security or compliance."
-  },
-  {
-    "num": "3",
-    "title": "What compliance standards are followed?",
-    "desc": "We ensure your NeoBank app meets all key financial regulations including PCI DSS, GDPR, and KYC/AML requirements. Our mobile banking app development experts stay updated with global compliance standards to deliver secure, legally compliant mobile banking app development solutions for both startups and financial institutions."
-  },
-  {
-    "num": "4",
-    "title": "Do you offer post-launch support?",
-    "desc": "Yes, we offer complete post-launch support and maintenance for all our NeoBank app development services. From bug fixes and updates to performance monitoring, our team ensures your app runs smoothly, stays secure, and evolves with user needs and fintech regulations."
-  },
-  {
-    "num": "5",
-    "title": "Can you integrate third-party APIs?",
-    "desc": "Absolutely. Our team has deep expertise in integrating third-party APIs such as Plaid, Mambu, Yodlee, and Stripe. These integrations enhance your NeoBank software with features like account aggregation, digital payments, and real-time data, all while maintaining security and a seamless user experience."
-  }
-],
 
-  
-  
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
+      "title": "AI-Driven Mobile Banking App",
+      "description": "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
+      "link": "#"
+    },
+    {
+      "image":"https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
+      "title": "Blockchain-Based Digital Wallet",
+      "description": "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
+      "title": "Core Banking System App",
+      "description": "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
+      "link": "#"
+    }
+  ],
+
+
+
   "myList1": [
     "Super-easy onboarding",
     "Native app",
@@ -120,163 +142,153 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-    
-  "gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Fintech Domain Expertise",
-      "description": "With deep experience in NeoBank software development and financial regulations, we deliver apps that are fully compliant, secure, and optimized for real-time banking."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Proven Portfolio in Banking Apps",
-      "description": "Our extensive track record in mobile banking app development speaks for itself—trusted by fintech startups and enterprises worldwide to build robust digital banking platforms."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Agile & Scalable Development",
-      "description": "Our agile methodology supports iterative progress and scalable solutions, ideal for startups building a NeoBank MVP or enterprises expanding their online banking app development capabilities."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Dedicated Fintech Developers",
-      "description": "Hire experienced fintech app developers who specialize in NeoBank software development, bringing industry insights and deep technical skills to every project."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-      "title": "Transparent Pricing & NDA Protection",
-      "description": "We value your trust. Get clear project estimates, zero hidden costs, and full intellectual property protection with our NDA-backed engagement models."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-      "title": "24/7 Support & Maintenance",
-      "description": "Ensure your mobile banking app runs smoothly with our round-the-clock support, bug fixes, and feature upgrades tailored to evolving user demands and regulations."
-    }
-  ] 
-    },
-    
-
-    
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Fintech Domain Expertise",
+        "description": "With deep experience in NeoBank software development and financial regulations, we deliver apps that are fully compliant, secure, and optimized for real-time banking."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Proven Portfolio in Banking Apps",
+        "description": "Our extensive track record in mobile banking app development speaks for itself—trusted by fintech startups and enterprises worldwide to build robust digital banking platforms."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Agile & Scalable Development",
+        "description": "Our agile methodology supports iterative progress and scalable solutions, ideal for startups building a NeoBank MVP or enterprises expanding their online banking app development capabilities."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Dedicated Fintech Developers",
+        "description": "Hire experienced fintech app developers who specialize in NeoBank software development, bringing industry insights and deep technical skills to every project."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Transparent Pricing & NDA Protection",
+        "description": "We value your trust. Get clear project estimates, zero hidden costs, and full intellectual property protection with our NDA-backed engagement models."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "24/7 Support & Maintenance",
+        "description": "Ensure your mobile banking app runs smoothly with our round-the-clock support, bug fixes, and feature upgrades tailored to evolving user demands and regulations."
+      }
+    ]
+  },
   "servicesData": [
-        {
-          "title": "Custom NeoBank App Development",
-          "subtitle": "Tailor-made digital banking solutions for your business",
-          "description": "We create tailor-made NeoBank apps that align with your business goals and vision. From intuitive interfaces to advanced financial features, we design apps that engage users and provide a seamless digital banking experience, making it easier for customers to manage their finances on the go.",
-          "features": [
-            "Tailored to your unique business needs",
-            "Cross-platform development for Android and iOS",
-            "Cutting-edge security and compliance with industry standards"
-          ]
-        },
-        {
-          "title": "UI/UX Design for Banking Apps",
-          "subtitle": "Crafting seamless and engaging user experiences",
-          "description": "Our expert NeoBank app development team focuses on crafting user-friendly, intuitive, and aesthetically pleasing banking interfaces. We ensure your NeoBank app not only looks great but also provides a seamless, easy-to-navigate experience, enhancing user satisfaction.",
-          "features": [
-            "Intuitive, engaging, and secure UI/UX",
-            "Optimized design for mobile and tablet platforms",
-            "Enhanced user journey with smooth navigation"
-          ]
-        },
-        {
-          "title": "API Integrations (KYC, Payments, etc.)",
-          "subtitle": "Seamless third-party services integration",
-          "description": "We seamlessly integrate essential third-party services like KYC, payment gateways, and AML systems into your NeoBank app. These integrations streamline your app’s functionalities, providing users with fast, secure, and compliant banking solutions.",
-          "features": [
-            "Fast and secure KYC integration",
-            "Payment processing with global gateways",
-            "Seamless third-party service connectivity"
-          ]
-        },
-        {
-          "title": "BaaS (Banking-as-a-Service) Integration",
-          "subtitle": "Enable full-scale banking with minimal overhead",
-          "description": "Our team integrates BaaS solutions, allowing you to offer a full range of banking services with minimal overhead. You can leverage established infrastructure and frameworks to provide customers with everything from savings accounts to loan management systems.",
-          "features": [
-            "Faster time-to-market with BaaS integration",
-            "Compliant with industry regulations",
-            "Scalable infrastructure for growth"
-          ]
-        },
-        {
-          "title": "Regulatory Compliance (PCI DSS, GDPR, etc.)",
-          "subtitle": "Ensure global compliance for your NeoBank app",
-          "description": "We ensure that your NeoBank app complies with global regulations such as PCI DSS, GDPR, and other financial standards, guaranteeing the protection of sensitive customer data and building trust with users.",
-          "features": [
-            "Compliance with PCI DSS, GDPR, and more",
-            "Robust data protection and encryption",
-            "Secure infrastructure for sensitive financial information"
-          ]
-        },
-        {
-          "title": "Security & Fraud Detection",
-          "subtitle": "Protect users with advanced security features",
-          "description": "Your users’ security is our top priority. Our NeoBank apps feature robust security measures, including two-factor authentication, fraud detection systems, and encryption technologies to protect against financial fraud and cyber threats.",
-          "features": [
-            "Advanced fraud detection & risk management",
-            "End-to-end encryption and secure data storage",
-            "User identity verification & anti-fraud measures"
-          ]
-        },
-        {
-          "title": "Maintenance and Support",
-          "subtitle": "Keep your app updated and running flawlessly",
-          "description": "We provide ongoing support and maintenance services to ensure your NeoBank app runs smoothly and stays up-to-date with the latest features and regulatory changes. From bug fixes to feature updates, we offer continuous improvements to keep your app at the forefront of digital banking.",
-          "features": [
-            "24/7 support and monitoring",
-            "Regular updates and maintenance",
-            "Bug fixes and system optimization"
-          ]
-        }
+    {
+      "title": "Custom NeoBank App Development",
+      "subtitle": "Tailor-made digital banking solutions for your business",
+      "description": "We create tailor-made NeoBank apps that align with your business goals and vision. From intuitive interfaces to advanced financial features, we design apps that engage users and provide a seamless digital banking experience, making it easier for customers to manage their finances on the go.",
+      "features": [
+        "Tailored to your unique business needs",
+        "Cross-platform development for Android and iOS",
+        "Cutting-edge security and compliance with industry standards"
+      ]
+    },
+    {
+      "title": "UI/UX Design for Banking Apps",
+      "subtitle": "Crafting seamless and engaging user experiences",
+      "description": "Our expert NeoBank app development team focuses on crafting user-friendly, intuitive, and aesthetically pleasing banking interfaces. We ensure your NeoBank app not only looks great but also provides a seamless, easy-to-navigate experience, enhancing user satisfaction.",
+      "features": [
+        "Intuitive, engaging, and secure UI/UX",
+        "Optimized design for mobile and tablet platforms",
+        "Enhanced user journey with smooth navigation"
+      ]
+    },
+    {
+      "title": "API Integrations (KYC, Payments, etc.)",
+      "subtitle": "Seamless third-party services integration",
+      "description": "We seamlessly integrate essential third-party services like KYC, payment gateways, and AML systems into your NeoBank app. These integrations streamline your app’s functionalities, providing users with fast, secure, and compliant banking solutions.",
+      "features": [
+        "Fast and secure KYC integration",
+        "Payment processing with global gateways",
+        "Seamless third-party service connectivity"
+      ]
+    },
+    {
+      "title": "BaaS (Banking-as-a-Service) Integration",
+      "subtitle": "Enable full-scale banking with minimal overhead",
+      "description": "Our team integrates BaaS solutions, allowing you to offer a full range of banking services with minimal overhead. You can leverage established infrastructure and frameworks to provide customers with everything from savings accounts to loan management systems.",
+      "features": [
+        "Faster time-to-market with BaaS integration",
+        "Compliant with industry regulations",
+        "Scalable infrastructure for growth"
+      ]
+    },
+    {
+      "title": "Regulatory Compliance (PCI DSS, GDPR, etc.)",
+      "subtitle": "Ensure global compliance for your NeoBank app",
+      "description": "We ensure that your NeoBank app complies with global regulations such as PCI DSS, GDPR, and other financial standards, guaranteeing the protection of sensitive customer data and building trust with users.",
+      "features": [
+        "Compliance with PCI DSS, GDPR, and more",
+        "Robust data protection and encryption",
+        "Secure infrastructure for sensitive financial information"
+      ]
+    },
+    {
+      "title": "Security & Fraud Detection",
+      "subtitle": "Protect users with advanced security features",
+      "description": "Your users’ security is our top priority. Our NeoBank apps feature robust security measures, including two-factor authentication, fraud detection systems, and encryption technologies to protect against financial fraud and cyber threats.",
+      "features": [
+        "Advanced fraud detection & risk management",
+        "End-to-end encryption and secure data storage",
+        "User identity verification & anti-fraud measures"
+      ]
+    },
+    {
+      "title": "Maintenance and Support",
+      "subtitle": "Keep your app updated and running flawlessly",
+      "description": "We provide ongoing support and maintenance services to ensure your NeoBank app runs smoothly and stays up-to-date with the latest features and regulatory changes. From bug fixes to feature updates, we offer continuous improvements to keep your app at the forefront of digital banking.",
+      "features": [
+        "24/7 support and monitoring",
+        "Regular updates and maintenance",
+        "Bug fixes and system optimization"
+      ]
+    }
   ],
-  
-  
   "LeadingSoftware": [
-        {
-          "num": "01",
-          "title": "User Onboarding & eKYC",
-          "decs": "Our NeoBank app development solutions offer secure, automated user onboarding with integrated eKYC, enabling customers to verify their identity within minutes. This ensures compliance while delivering a smooth, user-friendly entry point into digital banking."
-        },
-        {
-          "num": "02",
-          "title": "Smart Budgeting Tools",
-          "decs": "We develop NeoBank apps with AI-driven budgeting features that help users track expenses, set savings goals, and manage finances. These tools increase user engagement and promote better financial habits through personalized insights and recommendations."
-        },
-        {
-          "num": "03",
-          "title": "Digital Wallet Integration",
-          "decs": "With our NeoBank app development services, users gain access to built-in digital wallets that support fund storage, bill payments, and contactless transactions—creating a seamless, all-in-one financial solution inside your mobile banking platform."
-        },
-        {
-          "num": "04",
-          "title": "Peer-to-Peer Transfers",
-          "decs": "Enable fast, secure P2P money transfers directly within your NeoBank app. Users can send or receive funds using mobile numbers or account IDs, enhancing convenience and reducing reliance on third-party payment platforms."
-        },
-        {
-          "num": "05",
-          "title": "Virtual Debit Cards",
-          "decs": "Our NeoBank applications support instant virtual debit card issuance, allowing users to make online purchases securely. These cards can be managed in-app, with adjustable limits and real-time transaction control for enhanced security."
-        },
-        {
-          "num": "06",
-          "title": "Real-Time Transaction Tracking",
-          "decs": "Keep users informed with real-time transaction tracking, ensuring every debit, credit, or transfer is instantly visible. This core feature of our NeoBank app development boosts trust and transparency for digital banking users."
-        },
-        {
-          "num": "07",
-          "title": "Push Notifications & Alerts",
-          "decs": "Our NeoBank apps deliver smart push notifications for transactions, suspicious activity, account updates, and personalized offers—keeping users engaged and informed while strengthening app interaction and security."
-        },
-        {
-          "num": "08",
-          "title": "Admin Dashboard and Analytics",
-          "decs": "We build advanced admin dashboards into every NeoBank app, offering powerful analytics tools. Monitor transactions, user behavior, and system performance in real time to make informed decisions and ensure smooth operations."
-        }
-   ],
-    
-    
-
-
+    {
+      "num": "01",
+      "title": "User Onboarding & eKYC",
+      "decs": "Our NeoBank app development solutions offer secure, automated user onboarding with integrated eKYC, enabling customers to verify their identity within minutes. This ensures compliance while delivering a smooth, user-friendly entry point into digital banking."
+    },
+    {
+      "num": "02",
+      "title": "Smart Budgeting Tools",
+      "decs": "We develop NeoBank apps with AI-driven budgeting features that help users track expenses, set savings goals, and manage finances. These tools increase user engagement and promote better financial habits through personalized insights and recommendations."
+    },
+    {
+      "num": "03",
+      "title": "Digital Wallet Integration",
+      "decs": "With our NeoBank app development services, users gain access to built-in digital wallets that support fund storage, bill payments, and contactless transactions—creating a seamless, all-in-one financial solution inside your mobile banking platform."
+    },
+    {
+      "num": "04",
+      "title": "Peer-to-Peer Transfers",
+      "decs": "Enable fast, secure P2P money transfers directly within your NeoBank app. Users can send or receive funds using mobile numbers or account IDs, enhancing convenience and reducing reliance on third-party payment platforms."
+    },
+    {
+      "num": "05",
+      "title": "Virtual Debit Cards",
+      "decs": "Our NeoBank applications support instant virtual debit card issuance, allowing users to make online purchases securely. These cards can be managed in-app, with adjustable limits and real-time transaction control for enhanced security."
+    },
+    {
+      "num": "06",
+      "title": "Real-Time Transaction Tracking",
+      "decs": "Keep users informed with real-time transaction tracking, ensuring every debit, credit, or transfer is instantly visible. This core feature of our NeoBank app development boosts trust and transparency for digital banking users."
+    },
+    {
+      "num": "07",
+      "title": "Push Notifications & Alerts",
+      "decs": "Our NeoBank apps deliver smart push notifications for transactions, suspicious activity, account updates, and personalized offers—keeping users engaged and informed while strengthening app interaction and security."
+    },
+    {
+      "num": "08",
+      "title": "Admin Dashboard and Analytics",
+      "decs": "We build advanced admin dashboards into every NeoBank app, offering powerful analytics tools. Monitor transactions, user behavior, and system performance in real time to make informed decisions and ensure smooth operations."
+    }
+  ],
   "myList4": [
     "One-Stop Destination",
     "Reliable E-Commerce Development Partners",
@@ -286,16 +298,14 @@
     "On Time Delivery",
     "Professionals Who Have Worked With All Industry Verticals"
   ],
-
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Unique Features of a Blockchain-Based Dating App",
       "desc": "We offer <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain-based dating app development</a>  to ensure security, privacy, and a scam-free dating experience."
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Decentralized Identity & Profile Verification",
       "desc": "Blockchain verifies user identities securely, preventing fake profiles and bots. This ensures only real people can join the platform, making dating safer."
@@ -317,8 +327,6 @@
       "desc": "Blockchain’s fraud detection and smart contract security help prevent scams, catfishing, and identity theft, making dating safer for everyone."
     }
   ],
-
-
   "WhyChoosed": [
     {
       "num": "1",
@@ -567,7 +575,6 @@
       "desc": "Our marketing efforts increase customers' dating app's clarity and downloads. We use social media, paid advertising, and other channels to effectively attract and keep users to operate growth and engagement."
     }
   ],
-
   "WhyChooseDating": [
     {
       "num": "1",
@@ -662,49 +669,44 @@
       "decs": "Comfygen has used Web3 tech to create augmented 3D graphics that help create a more humane and real life experience for users, giving the dating app an advantage over other apps in the virtual communication ecosystem.  "
     }
   ],
-  
-  
-    "FoodAppMaker": [
-      {
-        "num": "1",
-        "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-        "title": "AI & Machine Learning",
-        "decs": "We integrate AI and ML into your NeoBank app to enable smart financial insights, automated budgeting, intelligent chatbots, and fraud detection. These technologies enhance personalization, streamline user experience, and make sure smarter banking with real-time decision-making capabilities for both users and administrators."
-      },
-      {
-        "num": "2",
-        "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-        "title": "Blockchain Development",
-        "decs": "Our NeoBank app solutions leverage blockchain to secure financial data, verify transactions, and eliminate fraud. Blockchain development ensures transparent, tamper-proof records and builds trust with users by providing a decentralized, immutable ledger for all banking operations, including payments, loans, and identity management."
-      },
-      {
-        "num": "3",
-        "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-        "title": "Biometric Authentication",
-        "decs": "Enhance your NeoBank app with biometric security like fingerprint and facial recognition. These features boost user trust by enabling fast, secure access to digital banking services without the need for passwords, offering both convenience and advanced protection against unauthorized access and data breaches."
-      },
-      {
-        "num": "4",
-        "img": "https://www.comfygen.com/img/iot-integration.webp",
-        "title": "Open Banking APIs",
-        "decs": "We integrate open banking APIs into your NeoBank app to enable seamless connectivity with third-party services, banks, and financial platforms. This boosts functionality, supports faster transactions, and opens up new revenue streams by expanding your app's ecosystem through secure, flexible integrations."
-      },
-      {
-        "num": "5",
-        "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-        "title": "Cloud Infrastructure",
-        "decs": "Your NeoBank app is hosted on scalable, reliable cloud infrastructure that ensures high performance, fast deployment, and continuous availability. Cloud integration also simplifies maintenance, supports growth, and provides robust backup and disaster recovery to keep your banking services running 24/7."
-      },
-      {
-        "num": "6",
-        "img": "https://www.comfygen.com/img/emotional-ai.webp",
-        "title": "Data Encryption & Cybersecurity Tools",
-        "decs": "We secure your NeoBank app with enterprise-grade encryption, SSL protocols, and real-time cyber threat detection. Our layered security approach protects sensitive data, prevents breaches, and complies with global financial regulations like PCI DSS and GDPR, ensuring maximum trust and safety."
-      }
-    ],
-  
-  
-  
+  "FoodAppMaker": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "AI & Machine Learning",
+      "decs": "We integrate AI and ML into your NeoBank app to enable smart financial insights, automated budgeting, intelligent chatbots, and fraud detection. These technologies enhance personalization, streamline user experience, and make sure smarter banking with real-time decision-making capabilities for both users and administrators."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Development",
+      "decs": "Our NeoBank app solutions leverage blockchain to secure financial data, verify transactions, and eliminate fraud. Blockchain development ensures transparent, tamper-proof records and builds trust with users by providing a decentralized, immutable ledger for all banking operations, including payments, loans, and identity management."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "title": "Biometric Authentication",
+      "decs": "Enhance your NeoBank app with biometric security like fingerprint and facial recognition. These features boost user trust by enabling fast, secure access to digital banking services without the need for passwords, offering both convenience and advanced protection against unauthorized access and data breaches."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Open Banking APIs",
+      "decs": "We integrate open banking APIs into your NeoBank app to enable seamless connectivity with third-party services, banks, and financial platforms. This boosts functionality, supports faster transactions, and opens up new revenue streams by expanding your app's ecosystem through secure, flexible integrations."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      "title": "Cloud Infrastructure",
+      "decs": "Your NeoBank app is hosted on scalable, reliable cloud infrastructure that ensures high performance, fast deployment, and continuous availability. Cloud integration also simplifies maintenance, supports growth, and provides robust backup and disaster recovery to keep your banking services running 24/7."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/emotional-ai.webp",
+      "title": "Data Encryption & Cybersecurity Tools",
+      "decs": "We secure your NeoBank app with enterprise-grade encryption, SSL protocols, and real-time cyber threat detection. Our layered security approach protects sensitive data, prevents breaches, and complies with global financial regulations like PCI DSS and GDPR, ensuring maximum trust and safety."
+    }
+  ],
   "customTestimonials": [
     {
       "text": "Comfygen helped us launch our NeoBank MVP in record time. Their team understood the fintech landscape deeply and delivered a sleek, compliant solution.",
@@ -727,9 +729,6 @@
       "title": "Sydney, Australia"
     }
   ],
-
-    
-    
   "Chartacterstics": [
     {
       "num": "1",
@@ -792,8 +791,4 @@
       "decs": "As a mobile dating app development company, we are experts at creating different types of dating apps, including event-based dating apps. You can easily opt to create an event-based dating app that can help people meet in real life at social events and group events that are very social and fun for the audience."
     }
   ]
-
- 
-   
- }
-  
+}

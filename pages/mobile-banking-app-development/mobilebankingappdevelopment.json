@@ -1,99 +1,97 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "How to develop a mobile banking app?",
-    "desc": "To develop a mobile banking app, start by identifying key features like secure login, transaction tracking, account management, and integration with core banking systems. Choose a development approach (native or cross-platform) and ensure compliance with industry regulations. Partnering with an experienced mobile banking app development firm like Comfygen ensures the app is built with advanced security features and user-friendly design."
-  },
-  {
-    "num": "2",
-    "title": "How much does it cost to develop a mobile banking app?",
-    "desc": "The cost to build a mobile banking app depends on factors such as features, platform (iOS/Android), security requirements, and integrations with third-party services. A basic digital banking app may cost less, while complex apps with advanced features like AI, biometric authentication, and blockchain integration can be more expensive. To get an accurate quote, it’s best to discuss your requirements with a professional mobile banking app development company."
-  },
-  {
-    "num": "3",
-    "title": "What security features are included in the mobile banking software?",
-    "desc": "Our mobile banking software development solutions prioritize user security. Features include two-factor authentication (2FA), biometric authentication, encryption protocols like AES, secure payment gateways, and real-time fraud detection. We also ensure compliance with PCI-DSS and other regulatory standards to protect your users’ sensitive financial data from threats, providing peace of mind for both businesses and customers."
-  },
-  {
-    "num": "4",
-    "title": "How long does it take to develop a mobile banking app?",
-    "desc": "The timeline for mobile banking app development depends on the complexity of the features and integrations. On average, it takes around 3 to 6 months to develop a fully functional mobile banking app. Simple apps can be completed faster, while more complex apps with features like AI-driven insights and blockchain integration may take longer. We provide a customized timeline after analyzing your specific requirements."
-  },
-  {
-    "num": "5",
-    "title": "What features should I include in a mobile banking app?",
-    "desc": "Key features in a mobile banking app include secure user authentication, transaction history, fund transfers, bill payments, real-time alerts, biometric login, and AI-powered insights. Advanced apps may also include voice banking, chatbots, QR-based payments, and blockchain-backed transactions. We help you prioritize and build the right features based on your target audience."
-  },
-  {
-    "num": "6",
-    "title": "Can you integrate AI and Blockchain into mobile banking apps?",
-    "desc": "Yes, we specialize in AI and Blockchain-based mobile banking app development. AI enhances your app with features like smart chatbots, personalized financial insights, and fraud detection. Blockchain ensures data transparency, secure transactions, and immutability. These technologies make your mobile banking application secure, scalable, and future-ready."
-  },
-  {
-    "num": "7",
-    "title": "What platforms do you support for mobile banking app development?",
-    "desc": "At Comfygen, we provide mobile banking app development for both iOS and Android platforms, ensuring a seamless experience across devices. We use technologies like React Native, Flutter, Swift, and Kotlin for cross-platform and native app development. Whether you're targeting a specific platform or need a universal solution, we tailor the app to match your banking business requirements."
-  }
-],
-
- "servicesData": [
-  {
-    "title": "Custom Mobile Banking App Development",
-    "description": "Comfygen is a trusted mobile banking app development company offering fully customized development tailored to your business model. We build secure, intuitive apps that deliver seamless digital banking experiences across platforms. Our team ensures that every banking app development project meets your operational needs with advanced technologies like AI, blockchain, and real-time analytics.",
-    "features": [
-      "Tailored to Business Goals",
-      "Secure and Scalable Architecture",
-      "Future-Ready Fintech Features"
-    ]
-  },
-  {
-    "title": "Digital Wallet Integration",
-    "description": "We integrate robust and compliant digital wallet functionality into your mobile banking application development project. From P2P transfers to NFC and QR code payments, our wallets provide convenience, speed, and security. As a reliable mobile banking app development company, we ensure seamless digital wallet experiences with encrypted data and transaction history.",
-    "features": [
-      "Contactless Payment Options",
-      "Multi-Currency Support",
-      "PCI-DSS Compliant"
-    ]
-  },
-  {
-    "title": "Core Banking System Integration",
-    "description": "Our best mobile banking software development services include deep integration with your core banking systems (CBS) to synchronize real-time data across your channels. We make sure high-performance APIs and secure middleware connections, enabling unified operations and better customer experiences through seamless digital access.",
-    "features": [
-      "Real-Time Transaction Sync",
-      "Seamless Backend Connectivity",
-      "Improved Operational Efficiency"
-    ]
-  },
-  {
-    "title": "iOS and Android Mobile Banking App Development",
-    "description": "As a top-rated mobile banking application development company, we build high-performance banking apps for both iOS and Android platforms. Whether native or cross-platform, our apps feature intuitive navigation, real-time services, and optimized performance. We deliver scalable mobile banking software development solutions that meet your customers' needs across devices.",
-    "features": [
-      "Native & Cross-Platform Support",
-      "Optimized UI/UX for Mobile Banking",
-      "Fast & Responsive Performance"
-    ]
-  },
-  {
-    "title": "Regulatory Compliance",
-    "description": "Our mobile banking app development approach ensures full compliance with global financial regulations like PCI-DSS, GDPR, RBI, and more. We implement end-to-end encryption, role-based access, and multi-factor authentication to make sure your mobile banking app meets all security and legal standards.",
-    "features": [
-      "Data Privacy & Encryption",
-      "Secure Authentication Systems",
-      "Global & Regional Compliance"
-    ]
-  },
-  {
-    "title": "Maintenance & Support",
-    "description": "Beyond delivery, we offer 24/7 post-launch maintenance and updates for your mobile banking application. Our team provides consistent support to ensure your digital banking app development stays up-to-date with the latest technology and security patches. You can rely on Comfygen for performance monitoring, feature upgrades, and issue resolution.",
-    "features": [
-      "Continuous Monitoring",
-      "Feature Enhancement Support",
-      "Reliable Technical Assistance"
-    ]
-  }
-],
-
+    {
+      "num": "1",
+      "title": "How to develop a mobile banking app?",
+      "desc": "To develop a mobile banking app, start by identifying key features like secure login, transaction tracking, account management, and integration with core banking systems. Choose a development approach (native or cross-platform) and ensure compliance with industry regulations. Partnering with an experienced mobile banking app development firm like Comfygen ensures the app is built with advanced security features and user-friendly design."
+    },
+    {
+      "num": "2",
+      "title": "How much does it cost to develop a mobile banking app?",
+      "desc": "The cost to build a mobile banking app depends on factors such as features, platform (iOS/Android), security requirements, and integrations with third-party services. A basic digital banking app may cost less, while complex apps with advanced features like AI, biometric authentication, and blockchain integration can be more expensive. To get an accurate quote, it’s best to discuss your requirements with a professional mobile banking app development company."
+    },
+    {
+      "num": "3",
+      "title": "What security features are included in the mobile banking software?",
+      "desc": "Our mobile banking software development solutions prioritize user security. Features include two-factor authentication (2FA), biometric authentication, encryption protocols like AES, secure payment gateways, and real-time fraud detection. We also ensure compliance with PCI-DSS and other regulatory standards to protect your users’ sensitive financial data from threats, providing peace of mind for both businesses and customers."
+    },
+    {
+      "num": "4",
+      "title": "How long does it take to develop a mobile banking app?",
+      "desc": "The timeline for mobile banking app development depends on the complexity of the features and integrations. On average, it takes around 3 to 6 months to develop a fully functional mobile banking app. Simple apps can be completed faster, while more complex apps with features like AI-driven insights and blockchain integration may take longer. We provide a customized timeline after analyzing your specific requirements."
+    },
+    {
+      "num": "5",
+      "title": "What features should I include in a mobile banking app?",
+      "desc": "Key features in a mobile banking app include secure user authentication, transaction history, fund transfers, bill payments, real-time alerts, biometric login, and AI-powered insights. Advanced apps may also include voice banking, chatbots, QR-based payments, and blockchain-backed transactions. We help you prioritize and build the right features based on your target audience."
+    },
+    {
+      "num": "6",
+      "title": "Can you integrate AI and Blockchain into mobile banking apps?",
+      "desc": "Yes, we specialize in AI and Blockchain-based mobile banking app development. AI enhances your app with features like smart chatbots, personalized financial insights, and fraud detection. Blockchain ensures data transparency, secure transactions, and immutability. These technologies make your mobile banking application secure, scalable, and future-ready."
+    },
+    {
+      "num": "7",
+      "title": "What platforms do you support for mobile banking app development?",
+      "desc": "At Comfygen, we provide mobile banking app development for both iOS and Android platforms, ensuring a seamless experience across devices. We use technologies like React Native, Flutter, Swift, and Kotlin for cross-platform and native app development. Whether you're targeting a specific platform or need a universal solution, we tailor the app to match your banking business requirements."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Mobile Banking App Development",
+      "description": "Comfygen is a trusted mobile banking app development company offering fully customized development tailored to your business model. We build secure, intuitive apps that deliver seamless digital banking experiences across platforms. Our team ensures that every banking app development project meets your operational needs with advanced technologies like AI, blockchain, and real-time analytics.",
+      "features": [
+        "Tailored to Business Goals",
+        "Secure and Scalable Architecture",
+        "Future-Ready Fintech Features"
+      ]
+    },
+    {
+      "title": "Digital Wallet Integration",
+      "description": "We integrate robust and compliant digital wallet functionality into your mobile banking application development project. From P2P transfers to NFC and QR code payments, our wallets provide convenience, speed, and security. As a reliable mobile banking app development company, we ensure seamless digital wallet experiences with encrypted data and transaction history.",
+      "features": [
+        "Contactless Payment Options",
+        "Multi-Currency Support",
+        "PCI-DSS Compliant"
+      ]
+    },
+    {
+      "title": "Core Banking System Integration",
+      "description": "Our best mobile banking software development services include deep integration with your core banking systems (CBS) to synchronize real-time data across your channels. We make sure high-performance APIs and secure middleware connections, enabling unified operations and better customer experiences through seamless digital access.",
+      "features": [
+        "Real-Time Transaction Sync",
+        "Seamless Backend Connectivity",
+        "Improved Operational Efficiency"
+      ]
+    },
+    {
+      "title": "iOS and Android Mobile Banking App Development",
+      "description": "As a top-rated mobile banking application development company, we build high-performance banking apps for both iOS and Android platforms. Whether native or cross-platform, our apps feature intuitive navigation, real-time services, and optimized performance. We deliver scalable mobile banking software development solutions that meet your customers' needs across devices.",
+      "features": [
+        "Native & Cross-Platform Support",
+        "Optimized UI/UX for Mobile Banking",
+        "Fast & Responsive Performance"
+      ]
+    },
+    {
+      "title": "Regulatory Compliance",
+      "description": "Our mobile banking app development approach ensures full compliance with global financial regulations like PCI-DSS, GDPR, RBI, and more. We implement end-to-end encryption, role-based access, and multi-factor authentication to make sure your mobile banking app meets all security and legal standards.",
+      "features": [
+        "Data Privacy & Encryption",
+        "Secure Authentication Systems",
+        "Global & Regional Compliance"
+      ]
+    },
+    {
+      "title": "Maintenance & Support",
+      "description": "Beyond delivery, we offer 24/7 post-launch maintenance and updates for your mobile banking application. Our team provides consistent support to ensure your digital banking app development stays up-to-date with the latest technology and security patches. You can rely on Comfygen for performance monitoring, feature upgrades, and issue resolution.",
+      "features": [
+        "Continuous Monitoring",
+        "Feature Enhancement Support",
+        "Reliable Technical Assistance"
+      ]
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -123,7 +121,140 @@
       "desc": "Get a fully-featured Paytm Payments Bank clone app integrated with mobile recharges, bill payments, QR code scanning, and digital wallet services. Our experienced team builds apps with scalable microservices architecture, making your mobile banking app development flexible and future-ready while complying with all regulatory standards."
     }
   ],
-  
+  "featuresData1": [
+    {
+      "id": 1,
+      "title": "AI-Based Mobile Banking Application",
+      "icon": "<i className='fas fa-robot text-4xl'></i>",
+      "img": "https://www.comfygen.com/image/ai-banking-app.webp",
+      "additionalDetails": [
+        {
+          "details": "AI-Powered Chatbots and Virtual Assistance",
+          "emoji": "",
+          "content": "Intelligent bots offer 24/7 support, handle queries, and reduce support costs with human-like interactions."
+        },
+        {
+          "details": "Personalized Financial Insights",
+          "emoji": "",
+          "content": "AI analyzes user behavior to offer budget tips, saving goals, and personalized financial planning."
+        },
+        {
+          "details": "Smart Fraud Detection",
+          "emoji": "",
+          "content": "Real-time monitoring of transactions using AI helps prevent unauthorized activity and enhances security."
+        },
+        {
+          "details": "Automated Credit Scoring & Loan Underwriting",
+          "emoji": "",
+          "content": "AI evaluates creditworthiness with broader data, improving loan approval accuracy and speed."
+        },
+        {
+          "details": "Voice and Biometric Banking Interfaces",
+          "emoji": "",
+          "content": "Secure and hands-free access using face, fingerprint, iris, and voice command authentication."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Blockchain-Based Mobile Banking Features",
+      "icon": "<i className='fas fa-link text-4xl'></i>",
+      "img": "https://www.comfygen.com/image/blockchain-banking-app.webp",
+      "additionalDetails": [
+        {
+          "details": "Enhanced Security and Transparency",
+          "emoji": "",
+          "content": "End-to-end encryption with blockchain ensures secure, tamper-proof transactions and boosts customer trust."
+        },
+        {
+          "details": "Faster and Cheaper Transactions",
+          "emoji": "",
+          "content": "Near-instant, low-cost transfers by eliminating intermediaries—ideal for global and DeFi payments."
+        },
+        {
+          "details": "Immutable Record Keeping",
+          "emoji": "",
+          "content": "Once recorded on the blockchain, transaction data can't be altered, ensuring compliance and trust."
+        },
+        {
+          "details": "Decentralization and Trust",
+          "emoji": "",
+          "content": "No central authority means more transparency and fair access for users, disrupting traditional banking."
+        },
+        {
+          "details": "Smart Contracts and Automation",
+          "emoji": "",
+          "content": "Self-executing contracts for loans, payments, and claims reduce delays and manual effort."
+        }
+      ]
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
+      "title": "AI-Driven Mobile Banking App",
+      "description": "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
+      "title": "Blockchain-Based Digital Wallet",
+      "description": "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
+      "title": "Core Banking System App",
+      "description": "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
+      "link": "#"
+    }
+  ],
+
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-user-shield text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/banking-user-panel.webp",
+    "additionalDetails": [
+      { "details": "Easy Registration & Secure Login", "emoji": "", "content": "" },
+      { "details": "Balance & Transaction Overview", "emoji": "", "content": "" },
+      { "details": "Quick Fund Transfers", "emoji": "", "content": "" },
+      { "details": "Bill Payment & Recharges", "emoji": "", "content": "" },
+      { "details": "Card Management", "emoji": "", "content": "" },
+      { "details": "Transaction Alerts", "emoji": "", "content": "" },
+      { "details": "Personalized Finance Tools", "emoji": "", "content": "" },
+      { "details": "24/7 Support", "emoji": "", "content": "" },
+      { "details": "Top-Level Security", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-user-cog text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/banking-admin-panel.webp",
+    "additionalDetails": [
+      { "details": "User Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Transaction Monitoring", "emoji": "", "content": "" },
+      { "details": "Fund Transfer Approvals", "emoji": "", "content": "" },
+      { "details": "Interactive Dashboards", "emoji": "", "content": "" },
+      { "details": "Comprehensive Reporting", "emoji": "", "content": "" },
+      { "details": "Automated Notifications", "emoji": "", "content": "" },
+      { "details": "Regulatory Compliance", "emoji": "", "content": "" },
+      { "details": "Role-Based Permissions", "emoji": "", "content": "" },
+      { "details": "Support Management", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
+
+
+
   "pageData": {
     "title": "Why Choose Comfygen for Mobile Banking App Development",
     "description": "Comfygen is your trusted partner in mobile banking application development, offering secure, scalable, and regulation-compliant solutions tailored to the fintech space. From startups to banks, we build future-ready apps with unmatched technical precision and innovation.",
@@ -133,63 +264,60 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "100% Custom Development",
-    "description": "We specialize in building custom mobile banking applications that are fully tailored to your financial institution’s specific needs. Whether you're launching a neobank or a payment platform, our solutions align perfectly with your brand, goals, and users."
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "100% Custom Development",
+        "description": "We specialize in building custom mobile banking applications that are fully tailored to your financial institution’s specific needs. Whether you're launching a neobank or a payment platform, our solutions align perfectly with your brand, goals, and users."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "PCI-DSS & GDPR Compliance",
+        "description": "At Comfygen, we develop mobile banking apps that strictly comply with global financial regulations like PCI-DSS, GDPR, and RBI guidelines, ensuring secure data handling, fraud prevention, and legal reliability."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Fintech-Specialized Team",
+        "description": "Our expert mobile banking app developers have deep experience in fintech, enabling us to deliver intelligent, feature-rich solutions. From digital wallets to loan management systems, we understand the nuances of financial product development."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Advanced Security Features",
+        "description": "We implement top-tier security protocols such as AES encryption, 2FA, biometric authentication, and SSL to ensure your banking app remains protected from cyber threats, building trust with every user interaction."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable Architecture",
+        "description": "Built for future growth, our banking applications utilize scalable cloud architecture and microservices, allowing you to seamlessly expand services, user base, and functionalities without performance issues."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "24/7 Technical Support",
+        "description": "Our dedicated support team ensures your app performs flawlessly at all times. From post-launch monitoring to emergency patches, we’re here around the clock to keep your mobile banking solution secure and reliable."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "PCI-DSS & GDPR Compliance",
-    "description": "At Comfygen, we develop mobile banking apps that strictly comply with global financial regulations like PCI-DSS, GDPR, and RBI guidelines, ensuring secure data handling, fraud prevention, and legal reliability."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Fintech-Specialized Team",
-    "description": "Our expert mobile banking app developers have deep experience in fintech, enabling us to deliver intelligent, feature-rich solutions. From digital wallets to loan management systems, we understand the nuances of financial product development."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Advanced Security Features",
-    "description": "We implement top-tier security protocols such as AES encryption, 2FA, biometric authentication, and SSL to ensure your banking app remains protected from cyber threats, building trust with every user interaction."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Scalable Architecture",
-    "description": "Built for future growth, our banking applications utilize scalable cloud architecture and microservices, allowing you to seamlessly expand services, user base, and functionalities without performance issues."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "24/7 Technical Support",
-    "description": "Our dedicated support team ensures your app performs flawlessly at all times. From post-launch monitoring to emergency patches, we’re here around the clock to keep your mobile banking solution secure and reliable."
-  }
-]
-
-  },
-
- "customTestimonials": [
-  {
-    "text": "I had a fantastic experience working with Comfygen! They developed a secure and user-friendly mobile banking app for my business. The team was responsive, professional, and always delivered on time. I would highly recommend them for anyone in need of mobile banking solutions!",
-    "name": "Priya Sharma",
-    "title": "India"
-  },
-  {
-    "text": "Comfygen provided excellent service and expertise in developing our mobile banking application. The app is seamless, secure, and perfectly tailored to our needs. Their team was always available to answer questions and offered great support throughout the process. Truly a remarkable team to work with!",
-    "name": "Rajesh Verma",
-    "title": "United States"
-  },
-  {
-    "text": "Working with Comfygen has been a game-changer for our business. They built a robust digital banking app with cutting-edge security features and a seamless user interface. Their professionalism and timely delivery were exceptional. I couldn’t be happier with the results!",
-    "name": "Lina Patel",
-    "title": "UK"
-  },
-  {
-    "text": "Our experience with Comfygen was outstanding. They developed a highly efficient and secure mobile banking platform that met all of our requirements. The team’s attention to detail, commitment to quality, and prompt delivery make them a top choice for banking app development.",
-    "name": "Omar Khan",
-    "title": "UAE"
-  }
-],
-
+  "customTestimonials": [
+    {
+      "text": "I had a fantastic experience working with Comfygen! They developed a secure and user-friendly mobile banking app for my business. The team was responsive, professional, and always delivered on time. I would highly recommend them for anyone in need of mobile banking solutions!",
+      "name": "Priya Sharma",
+      "title": "India"
+    },
+    {
+      "text": "Comfygen provided excellent service and expertise in developing our mobile banking application. The app is seamless, secure, and perfectly tailored to our needs. Their team was always available to answer questions and offered great support throughout the process. Truly a remarkable team to work with!",
+      "name": "Rajesh Verma",
+      "title": "United States"
+    },
+    {
+      "text": "Working with Comfygen has been a game-changer for our business. They built a robust digital banking app with cutting-edge security features and a seamless user interface. Their professionalism and timely delivery were exceptional. I couldn’t be happier with the results!",
+      "name": "Lina Patel",
+      "title": "UK"
+    },
+    {
+      "text": "Our experience with Comfygen was outstanding. They developed a highly efficient and secure mobile banking platform that met all of our requirements. The team’s attention to detail, commitment to quality, and prompt delivery make them a top choice for banking app development.",
+      "name": "Omar Khan",
+      "title": "UAE"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -396,8 +524,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -418,8 +544,7 @@
       "num": "04",
       "title": "Personalized Learning Paths",
       "decs": "Comfygen’s education mobile app development solutions incorporate AI-driven personalized learning paths that adapt to each student's progress, strengths, and weaknesses. This feature ensures a tailored approach to education, offering customized course suggestions and adaptive difficulty levels to maximize learning efficiency."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "Smart Performance Analytics",
@@ -446,50 +571,48 @@
       "decs": "Our on-demand tutor app development solutions use deep learning algorithms to provide advanced skill assessment tools that evaluate students' strengths, weaknesses, and learning capabilities. This AI-driven feature helps personalize learning plans and prepares students for real-world challenges."
     }
   ],
-
   "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain Technology in Banking App Development",
-    "decs": "We use blockchain to enhance security, transparency, and trust within your mobile banking application development. From immutable ledgers to smart contract execution, blockchain prevents fraud, streamlines transactions, and ensures decentralized data integrity, critical for building secure and trusted banking ecosystems."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "Artificial Intelligence & Machine Learning (AI/ML)",
-    "decs": "AI and ML power intelligent features in your mobile banking app development such as predictive analytics, smart fraud detection, virtual assistants, and personalized financial recommendations. These technologies elevate customer satisfaction, streamline operations, and offer data-driven insights for both users and banks."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-    "title": "Cloud Computing for Mobile Banking",
-    "decs": "Our digital banking app development integrates cloud computing to enable secure, scalable, and accessible banking services. Cloud-based infrastructure reduces operational costs, supports real-time updates, and allows for seamless user access across devices—ideal for modern fintech applications."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-    "title": "Biometric Authentication",
-    "decs": "As a part of secure mobile banking development, we implement biometric login methods such as facial recognition, fingerprint scanning, and iris detection. This ensures high-level security while improving user convenience with password-free authentication options."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "Internet of Things (IoT) in Mobile Banking",
-    "decs": "We enable smart banking with IoT integration in our mobile banking apps. From smart ATM connectivity to wearable banking, IoT ensures real-time updates, proximity-based service alerts, and enhanced user control over their finances and devices."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/emotional-ai.webp",
-    "title": "Big Data & Predictive Analytics",
-    "decs": "Our mobile banking app development services utilize big data to analyze customer behavior and transaction patterns. Predictive analytics help financial institutions offer targeted products, detect anomalies, and improve user engagement by anticipating user needs."
-  },
-  {
-    "num": "7",
-    "img": "https://www.comfygen.com/images/kids-educational-game-app.webp",
-    "title": "Cybersecurity Technologies",
-    "decs": "Cybersecurity is at the core of our mobile banking app development strategy. We use the latest technologies such as multi-factor authentication, tokenization, intrusion detection systems (IDS), and real-time threat monitoring to protect user data and maintain regulatory compliance."
-  }
-]
-
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Technology in Banking App Development",
+      "decs": "We use blockchain to enhance security, transparency, and trust within your mobile banking application development. From immutable ledgers to smart contract execution, blockchain prevents fraud, streamlines transactions, and ensures decentralized data integrity, critical for building secure and trusted banking ecosystems."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "Artificial Intelligence & Machine Learning (AI/ML)",
+      "decs": "AI and ML power intelligent features in your mobile banking app development such as predictive analytics, smart fraud detection, virtual assistants, and personalized financial recommendations. These technologies elevate customer satisfaction, streamline operations, and offer data-driven insights for both users and banks."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      "title": "Cloud Computing for Mobile Banking",
+      "decs": "Our digital banking app development integrates cloud computing to enable secure, scalable, and accessible banking services. Cloud-based infrastructure reduces operational costs, supports real-time updates, and allows for seamless user access across devices—ideal for modern fintech applications."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "title": "Biometric Authentication",
+      "decs": "As a part of secure mobile banking development, we implement biometric login methods such as facial recognition, fingerprint scanning, and iris detection. This ensures high-level security while improving user convenience with password-free authentication options."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Internet of Things (IoT) in Mobile Banking",
+      "decs": "We enable smart banking with IoT integration in our mobile banking apps. From smart ATM connectivity to wearable banking, IoT ensures real-time updates, proximity-based service alerts, and enhanced user control over their finances and devices."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/emotional-ai.webp",
+      "title": "Big Data & Predictive Analytics",
+      "decs": "Our mobile banking app development services utilize big data to analyze customer behavior and transaction patterns. Predictive analytics help financial institutions offer targeted products, detect anomalies, and improve user engagement by anticipating user needs."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/images/kids-educational-game-app.webp",
+      "title": "Cybersecurity Technologies",
+      "decs": "Cybersecurity is at the core of our mobile banking app development strategy. We use the latest technologies such as multi-factor authentication, tokenization, intrusion detection systems (IDS), and real-time threat monitoring to protect user data and maintain regulatory compliance."
+    }
+  ]
 }

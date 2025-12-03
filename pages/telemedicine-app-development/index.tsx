@@ -3,118 +3,90 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconCode,
   IconFirstAidKit,
   IconMessage,
   IconNews,
 } from "@tabler/icons-react";
-import { IconCashBanknote, IconShoppingCart } from "@tabler/icons-react";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import AdvancedPanel from "./components/AdvancedPanel";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Tab from "../components/Tab";
-import CryptoTradingList from "./components/CryptoTradingSection";
-import PointsCardBg from "../componentsnew/PointsCardBg";
-import Slider from "../components/Slider";
+import { IconCashBanknote, } from "@tabler/icons-react";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("./components/HeroSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const FaQ = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
-const jsonLd = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  brand: {
-    "@type": "Brand",
-    name: "Medicine Delivery App Development Company | Fastest App For Pharmacy Delivery App Development",
-  },
-  description:
-    "Comfygen stands out as a leading partner in medicine delivery app development, offering extensive expertise in creating innovative healthcare solutions. Our focus is on user-centric design, ensuring that our applications simplify the buying process for both over-the-counter and prescription medications, providing a seamless experience for customers of all ages. We understand that every business has unique requirements, which is why our team offers tailored development services suitable for local pharmacies and large healthcare providers alike. By leveraging advanced technologies such as AI, real-time tracking, and secure payment gateways, we enhance functionality while prioritizing regulatory compliance and implementing stringent security measures to protect user data. Our robust apps are designed for scalability and flexibility, allowing your business to grow and adapt to changing market needs. With continuous support and maintenance, we ensure that your app operates smoothly, freeing you to focus on expansion. Our proven track record features successful projects that have increased accessibility and convenience in the pharmacy sector, helping clients boost revenue and explore new market opportunities. Comfygen is committed to innovation, continuously integrating the latest features to enhance user satisfaction and engagement in medicine delivery, making us the ideal partner to transform your vision into reality in the evolving healthcare landscape.",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  name: "On-Demand Medicine delivery App Development Company | Comfygen",
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-      },
-      author: {
-        "@type": "Person",
-        name: "Mr. Saddam Husen",
-      },
-    },
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "4.9",
-      },
-      author: {
-        "@type": "Person",
-        name: "Mr. Saddam Husen",
-      },
-    },
-  ],
-};
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
 
-const LocalBusinessStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  priceRange: "$20-$55",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "@id": "https://www.comfygen.com/medicine-delivery-app-development",
-  name: "On demand Medicine Delivery App Development Company in India",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-    addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-    addressRegion: "Jaipur, Rajasthan",
-    postalCode: "302021",
-    addressCountry: "IN",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.9",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-  },
-  url: "https://www.comfygen.com/medicine-delivery-app-development",
-  telephone: "+91 9587867258, +1 5145659471",
-};
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const CryptoTradingList = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+
+// import PointsCardBg from "../componentsnew/PointsCardBg";
+
+
+
 
 const technologyData = [
   {
@@ -447,14 +419,10 @@ export default function Ecommerce(props) {
           name="description"
           content="Comfygen is a leading telemedicine app development company offering secure, HIPAA-compliant telehealth solutions for hospitals, clinics, and startups. Build your custom healthcare app today! "
         />
-
-
-
         <meta
           name="keywords"
           content="Consultancy for Telemedicine App, Custom Telemedicine App Development,Telemedicine Software Development Services,Telehealth App Development in India"
         />
-
 
         {/* <!-- Canonical Tag -->  */}
         <link rel="canonical" href=" https://www.comfygen.com/telemedicine-app-development" />
@@ -540,30 +508,27 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
+
       <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden">
-        <div className="">
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-hero1.webp')]">
-            <HeroSectionForAllPages
-              heading="Telemedicine App Development Company "
-              ptag="Comfygen helps doctors, clinics, and hospitals build easy-to-use telemedicine apps that connect them to patients anywhere. Our telemedicine app development company creates custom solutions that are safe, simple, and feature modern functionalities such as video calls, appointment booking, and online prescription management. We offer world-class telemedicine mobile app development services that are compliant with healthcare laws, including HIPAA, helping providers and patients work more efficiently."
-              li="AI-Powered Features for Better Care"
-              li1="Safe & HIPAA-Compliant"
-              li2="Easy-to-Use Design for Everyone"
-              li3="Cloud Integration for Smooth Workflows"
-              li4="Connect to Your Existing Systems"
-              ptag3=""
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-            />
-          </div>
-        </div>
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Telemedicine App Development Company "
+          ptag="Comfygen helps doctors, clinics, and hospitals build easy-to-use telemedicine apps that connect them to patients anywhere. Our telemedicine app development company creates custom solutions that are safe, simple, and feature modern functionalities such as video calls, appointment booking, and online prescription management. We offer world-class telemedicine mobile app development services that are compliant with healthcare laws, including HIPAA, helping providers and patients work more efficiently."
+          li="AI-Powered Features for Better Care"
+          li1="Safe & HIPAA-Compliant"
+          li2="Easy-to-Use Design for Everyone"
+          li3="Cloud Integration for Smooth Workflows"
+          li4="Connect to Your Existing Systems"
+          ptag3=""
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-hero1.webp"
+        />
+
         <AboutSection
           heading="Most Trusted Telemedicine App Development Company"
           description1="Comfygen has always strived to serve as a valuable companion on your journey to achieve digital transformation. With our experience in telehealth app development, we are prepared to take on any new challenge that comes our way. We have strengthened our reputation as a trusted app development company with more than 300 successfully completed projects and over 250+ happy clients. Our expertise in telemedicine software development revolves around the 15+ years of professional experience of our app developers."
@@ -592,22 +557,25 @@ export default function Ecommerce(props) {
 
         <CryptoTradingList
           heading="Best-in-Class Custom Telemedicine App Development Solutions"
-          subheading="Comfygen has been the beacon of excellence as one of the top telemedicine app development solution providers with proven experience in this domain. We want to reinvent the wheel in the field of telemedicine with our innovative apps tailored to perfection according to your requirements. Our collection of custom telehealth app development solutions can establish the foundations for new experiences for all users in healthcare."
-          tradingData={JSON_DATA.LeadingSoftware}
+          subtitle="Comfygen has been the beacon of excellence as one of the top telemedicine app development solution providers with proven experience in this domain. We want to reinvent the wheel in the field of telemedicine with our innovative apps tailored to perfection according to your requirements. Our collection of custom telehealth app development solutions can establish the foundations for new experiences for all users in healthcare."
+          trends={JSON_DATA.LeadingSoftware}
         />
 
-        <AdvancedPanel />
-
+        <div className="py-8">
+          <Features
+            heading="Features We Implement in Your Telemedicine Mobile App to Make it Stand Out"
+            description="Our telemedicine app development company focuses on creating apps that deliver seamless experiences for patients, doctors, and administrators. Here’s a look at the key features we include in your telemedicine app development solutions to ensure they stand out:"
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Telemedicine App Work"
             description="Explore our advanced telemedicine app development portfolio, featuring secure and user-friendly solutions for healthcare providers and patients. Partner with us to launch digital health solutions that deliver exceptional care and efficiency."
           />
         </section>
-
-
 
         <TechStack
           title="Technology Stack We Use for Telemedicine App Development"
@@ -623,13 +591,13 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <PointsCardBg
+        {/* <PointsCardBg
           heading="Diverse Functionalities in Telemedicine Apps for Everyone"
           description=""
           items={JSON_DATA.WhyChooseUs}
           buttonText="Explore More"
           buttonLink="/contact-us"
-        />
+        /> */}
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -690,10 +658,10 @@ export default function Ecommerce(props) {
         />
         <CryptoTradingList
           heading="Why Invest in a Telemedicine App?"
-          subheading="In today’s digital age, investing in a telemedicine app is one of the smartest ways to grow your healthcare business. These apps not only help you reach more patients but also provide fast and convenient healthcare services. If you want to expand your practice and confidently meet the demands of modern healthcare, investing in a telemedicine app is essential."
-          tradingData={JSON_DATA.LeadingSoftware2}
+          subtitle="In today’s digital age, investing in a telemedicine app is one of the smartest ways to grow your healthcare business. These apps not only help you reach more patients but also provide fast and convenient healthcare services. If you want to expand your practice and confidently meet the demands of modern healthcare, investing in a telemedicine app is essential."
+          trends={JSON_DATA.LeadingSoftware2}
         />
-        <ContactFromCenter />
+
         <HireDeveloper
           heading="Hire Telemedicine App Developers"
           text="Looking to build a cutting-edge telemedicine app for your business? Our experienced telemedicine <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> are here to bring your vision to life! At Comfygen, we offer flexible hiring models so you can easily hire dedicated telemedicine app developers who understand healthcare technology and patient-centric design."
@@ -714,7 +682,7 @@ export default function Ecommerce(props) {
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}
         />
-        <FaQ
+        <Faq
           faqData={JSON_DATA.Frequently}
         />
         {/*<BlogSection initialData={initialData} />*/}

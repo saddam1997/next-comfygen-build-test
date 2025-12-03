@@ -20,10 +20,10 @@ export default function HeroSectionForAllPages(props: any) {
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
-  const data = props.btnLink;
-  if (!data) {
-    return <div>Loading....</div>;
-  }
+  // const data = props?.btnLink;
+  // if (!data) {
+  //   return <div>Loading....</div>;
+  // }
 
   return (
     <section
@@ -31,7 +31,7 @@ export default function HeroSectionForAllPages(props: any) {
       <div className="absolute inset-0 -z-10 hidden sm:block">
         <div className="w-full h-full relative">
           <CommonImage
-            src={props.bgImage}
+            src={props?.bgImage}
             alt="Comfygen Hero Background"
             width={600}
             height={400}

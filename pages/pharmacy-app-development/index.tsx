@@ -1,106 +1,89 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./pharmacyApp.json";
-import styles from "./styles.module.css";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import { IconBarrel, IconBrain, IconBrandStorj, IconCloud, IconLock, } from '@tabler/icons-react';
-import { IconChartBar, IconShield, } from '@tabler/icons-react';
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import HireDeveloper from "../components/HireDeveloper";
-import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Features from "../Newcomponet/SectionCompoent/Features";
-import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection"
-import TechStack from "../Newcomponet/SectionCompoent/TechStack"
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials"
 
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdvanceFunction = dynamic(() => import("./components/AdvanceFunction"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
-  loading: () => <p>Loading...</p>,
-});
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const AppcardSlider = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently, WhyChoosed, Hire, myList, TecnologisStack, } = JSON_DATA;
+  let { Frequently } = JSON_DATA;
 
-  const portfolioData = {
-    title: "Our Pharmacy App Development Portfolio",
-    subtitle: "My Meds Pharma Care",
-    description:
-      "A cutting-edge application that offers users seamless and efficient pharmacy delivery, My Meds Pharma Care offers a seamless and efficient pharmacy delivery experience. Using blockchain technology, this iOS and Android app, developed with extensive experience in both native and hybrid development, enhances its capabilities. As a result of difficulties leaving their homes or accessing traditional pharmacies, the app is thoughtfully designed to meet the needs of those patients who may have difficulty obtaining essential medications.",
-    buttonText: "Contact Us",
-    buttonLink: "/contact-us",
-    imageUrl: "https://www.comfygen.com/img/my-meds-pharma-care.svg",
-    imageAlt: "pharmacy app development services",
-  };
-  const technologyData = [
-    {
-      img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-      title: "AI / ML",
-      desc: "AI/ML-based features can provide personalization based on user priorities and purchase history, automatic medicine reminders, and an AI-powered chatbot for customer help."
-    },
-    {
-      img: <IconBrandStorj stroke={1.5} className="w-12 h-12" />,
-      title: "Blockchain",
-      desc: "Blockchain technology can be used to secure patient data, ensure transparency in medicine supply problems, and to prevent counterfeit medicines"
-    },
-    {
-      img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-      title: "Data Science",
-      desc: "Data science can be used to predict ideas and optimize inventory management, customer segmentation to optimize marketing efforts, and for predictive analysis to detect fraud to prevent fraudulent activities."
-    },
-    {
-      img: <IconBarrel stroke={1.5} className="w-12 h-12" />,
-      title: "AR/VR",
-      desc: "AR/VR can be used to create interactive product presentations, rich content, and immersive experiences to enhance patient engagement."
-    },
-    {
-      img: <IconCloud stroke={1.5} className="w-12 h-12" />,
-      title: "Cloud",
-      desc: "Cloud-based pharmacy app development solutions provide scalability to accommodate growing user demands, access from anywhere with an internet connection, and data backup and recovery for increased security and reliability."
-    },
-    {
-      img: <IconShield stroke={1.5} className="w-12 h-12" />,
-      title: "HIPAA",
-      desc: "HIPAA or the Health Insurance Portability and Accountability Act is one of the core laws for pharmacy delivery app development. The regulation safeguards sensitive information of patients such as their names, medicine prescriptions and other important details."
-    },
-    {
-      img: <IconLock stroke={1.5} className="w-12 h-12" />,
-      title: "GDPR",
-      desc: "GDPR or General Data Protection Regulation also applies to the domain of pharmacy app development for European users. The law presents guidelines for the secure management of personal data and focuses on information encryption, user consent and rights."
-    }
-  ];
 
   const Process = [
     {
@@ -298,8 +281,6 @@ export default function ClinicalApp(props: any) {
   ];
 
 
-
-
   return (
     <>
       <Head>
@@ -344,33 +325,28 @@ export default function ClinicalApp(props: any) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
 
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/pharmacy-app-development-company-hero-img.webp')]">
-              <HeroSectionForAllPages
-                heading="Online Pharmacy App Development Company"
-                ptag="Take your pharmacy business online with our custom pharmacy app development solutions. We build secure, easy-to-use, and HIPAA-compliant medicine delivery apps designed to boost your sales and offer quick doorstep delivery. Scale your digital pharmacy with powerful features and seamless user experience.
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Online Pharmacy App Development Company"
+          ptag="Take your pharmacy business online with our custom pharmacy app development solutions. We build secure, easy-to-use, and HIPAA-compliant medicine delivery apps designed to boost your sales and offer quick doorstep delivery. Scale your digital pharmacy with powerful features and seamless user experience.
                 Looking for a Reliable and Innovative Pharmacy App Development Services"
-                ptag1=""
-                li="100% secure & compliant ePharmacy apps"
-                li1="Real-time order tracking & smart delivery"
-                li2="Custom features to fit your business needs"
-                li3="Experienced pharmacy app developers"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+          ptag1=""
+          li="100% secure & compliant ePharmacy apps"
+          li1="Real-time order tracking & smart delivery"
+          li2="Custom features to fit your business needs"
+          li3="Experienced pharmacy app developers"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/pharmacy-app-development-company-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Why Invest in On-Demand Pharmacy Apps?"
@@ -469,7 +445,7 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
-          <section className="lg:py-16 py-10 bg-[#fff]">
+        <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
@@ -495,13 +471,7 @@ export default function ClinicalApp(props: any) {
               </div>
             </div>
           </div>
-        </section> 
-
-        {/* <SolutionSec
-          heading="Add-on Features You able to Update In a writeable Custom pharmacy app"
-          subheading="Add-on features that the app can update in the custom pharmacy app. Comfygen provides many add-on features to make your pharmacy app better and give a better user experience."
-          techData={technologyData}
-        /> */}
+        </section>
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -524,150 +494,12 @@ export default function ClinicalApp(props: any) {
           ]}
         />
 
-
-
         <ClientTestimonials
           heading="What Our Clients Say About"
           testimonials={JSON_DATA.customTestimonials}
         />
 
-
         <Faq faqData={Frequently} />
-
-
-
-
-
-        {/* <section className=" lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="space-y-4 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="flex flex-col justify-center text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Develop a Pharmacy App Similar to
-              </h2>
-              <p className="text-base text-slate-800">
-                Do you want to develop a pharmacy app? Look no further than Comfygen!  We are experts in custom healthcare app development solutions that compete with industry leaders like NetMeds, Practo, 1Mg, PharmaEasy, Walgreens, and Medscape. We provide on-demand pharmacy app development solutions.  Partnering with our pharmacy app development services can help you launch your healthcare business swiftly and effectively.</p>
-            </div>
-            <div className="grid gap-10 py-10 text-left lg:grid-cols-3  xl:gap-16">
-              {TecnologisStack.map((omaha) => {
-                return (
-                  <div key={omaha.num} className="bg-white rounded-[20px] shadow p-6 border border-[#5556D1]">
-                    <div className="bg-[#5556D1] w-20 h-20 rounded-lg p-4 flex justify-center items-center">
-                      <Image
-                        className="rounded-md"
-                        alt={omaha.title}
-                        src={omaha.img}
-                        height={48}
-                        width={48}
-                      />
-                    </div>
-                    <h3 className="text-[#212121] text-2xl font-bold mt-5">
-                      {omaha.title}
-                    </h3>
-                    <p
-                      className=""
-                      dangerouslySetInnerHTML={{ __html: omaha.stack }}
-                    ></p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section> */}
-
-        {/* <div className="bg-center bg-repeat bg-fixed" style={{ backgroundImage: `url("https://www.comfygen.com/img/grid-box-dark.svg")` }}>
-          <div className="bg-gradient-to-r from-[#272868]/90 to-[#5556D1]/90 ">
-            <section className="items-center md:flex md:space-x-10  2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py-10">
-              <div className="w-full space-y-6 text-center md:text-left">
-                <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-1">
-                  <div className="flex flex-col space-y-2">
-                    <h2 className="py-2 lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-[#fff]">
-                      How Business Can Leverage with Pharmacy Delivery App ?{" "}
-                    </h2>
-                    <Image
-                      className="rounded-lg w-full"
-                      alt="How Business Can Leverage with Pharmacy Delivery App ?"
-                      src="https://www.comfygen.com/images/how-business-can-leverage-with-pharmacy-delivery-app.webp"
-                      height={774}
-                      width={405}
-                    />
-                  </div>
-                  <div className={`${styles.TechnologyStack} grid gap-4 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[600px] overflow-auto head-scroll`}>
-                    {WhyChoosed.map((elem) => {
-                      const { title, img, num } = elem;
-                      return (
-                        <div key={num} className="group  pb-6 space-y-4 transition-all duration-200">
-                          <div className="flex items-center justify-start">
-                            <div className="flex items-center justify-center gap-3 ">
-                              <div className="w-16 h-16 flex justify-center items-center bg-white rounded-full ">
-                                <Image src={img} className="" alt="" width={40} height={40} />
-                              </div>
-                              <h3 className="text-2xl text-white font-semibold ">
-                                {title}
-                              </h3>
-                            </div>
-                          </div>
-                          <div>
-                            <p className="text-white" dangerouslySetInnerHTML={{ __html: elem.decs }}></p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div> */}
-
-
-
-        {/* <div className="py-10 lg:py-20 bg-[#F5F5F9]">
-          <section className="items-center space-y-10 lg:flex space-x-0 lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="w-full ">
-              <div className="w-full space-y-6 text-left">
-                <div className="space-y-4">
-                  <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                    Team Required to Develop Custom Pharmacy App
-                  </h2>
-                </div>
-                <p className="text-base text-black">At Comfygen, we're committed to developing innovative pharmacy app development solutions that streamline the healthcare app development industry. Our team of experienced professionals is dedicated to developing custom pharmacy apps customized to customers' specific needs.
-                </p>
-                <ul className="grid grid-cols-2 gap-6 list-disc px-6">
-                  <li>Project manager</li>
-                  <li>Business Analyst</li>
-                  <li>UX/UI Designer</li>
-                  <li>iOS Developer</li>
-                  <li>Android Developer</li>
-                  <li>Back End Developers</li>
-                  <li>FrontEnd Developers</li>
-                  <li>QA engineer</li>
-                  <li>AQA Engineers</li>
-                  <li>DevOps Engineer</li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex justify-center 2xl:justify-start w-full  pb-10 lg:pb-0">
-              <Image
-                className=""
-                alt="Team Required to Develop Custom Pharmacy App"
-                src="https://www.comfygen.com/img/online-pharmacy-app-development-company.webp"
-                height={650}
-                width={571}
-              />
-            </div>
-          </section>
-        </div> */}
-
-        {/* <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
-
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

@@ -113,6 +113,133 @@
       "desc": "The most important reason for the growing popularity of clinical applications is the benefit of legacy modernisation. One of the prominent reasons for growth of the clinical application development industry in the USA is the need for a radical transformation of existing healthcare systems and infrastructure. Clinical apps can help transform legacy systems into modern tools for healthcare that are accessible through different platforms."
     }
   ],
+
+
+    "featuresData": [
+      {
+        "id": 1,
+        "title": "Clinical Apps for Admin",
+        "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+        "img": "https://www.comfygen.com/img/Clinical-Apps-For-Admin.webp",
+        "additionalDetails": [
+          {
+            "details":  "Billing Applications.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Wearable tech applications.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details":  "Time-table scheduling apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Clinical assistance apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medical device data collection platforms.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details":  "Electronic Health Record Systems.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Drug inventory tracking apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Health management software.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Clinical Apps for Medical Professionals",
+        "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+        "img": "https://www.comfygen.com/img/clinical-apps-for-medical-professionals.webp",
+        "additionalDetails": [
+          {
+            "details":  "Healthcare practice management apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medical research apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details":  "Remote patient monitoring apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details":   "HER data aggregation and analysis apps.",
+            "emoji": "",
+            "content": ""
+          }
+          
+        ]
+      },
+      {
+        "id": 3,
+        "title":"Clinical Apps for Patients",
+        "img": "https://www.comfygen.com/comfygen-images/healthcare-app-development/admin-panel.webp",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "additionalDetails": [
+          {
+            "details": "Mental health apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Patient engagement apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details":  "Telemedicine apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Appointment scheduling apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Symptom checker apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Fitness and wellness apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medication intake tracking apps.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      }
+    ],
+
+
+
   "pageData": {
     "title": "Why Choose Comfygen for Clinical Application Development?",
     "description": "We have earned the tag of the top clinical software development company with our capabilities and experience. You can rely on our experts to develop clinical apps by making the most of the following advantages.",

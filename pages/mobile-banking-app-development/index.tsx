@@ -3,44 +3,93 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./mobilebankingappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import {
-  IconBuildingBank,
-  IconCreditCard,
-  IconLink,
-  IconDeviceMobile,
-  IconShieldLock,
-  IconTools,
-} from "@tabler/icons-react";
-import FeaturesWhite from "./components/FeaturesWhite";
-import ServicesSection from "../componentsnew/ServicesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const CardFeatures = dynamic(
+  () => import("../Newcomponet/comman/CardFeatures"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+)
+
+
 
 
 const Process = [
@@ -75,85 +124,7 @@ const Process = [
 ];
 
 
-const technologyData = [
-  {
-    img: <IconBuildingBank stroke={1.5} className="w-12 h-12" />,
-    title: "Custom Mobile Banking App Development",
-    desc: "We develop fully customized mobile banking apps tailored to your business model. Our solutions ensure secure, scalable, and seamless digital banking experiences using advanced technologies like AI, blockchain, and real-time analytics.",
-  },
-  {
-    img: <IconCreditCard stroke={1.5} className="w-12 h-12" />,
-    title: "Digital Wallet Integration",
-    desc: "From P2P transfers to NFC and QR code payments, our mobile banking apps include secure and compliant digital wallet features with encrypted data and transaction tracking.",
-  },
-  {
-    img: <IconLink stroke={1.5} className="w-12 h-12" />,
-    title: "Core Banking System Integration",
-    desc: "We integrate your mobile app with core banking systems (CBS) using high-performance APIs and middleware, enabling real-time synchronization and improved operations.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "iOS & Android App Development",
-    desc: "Our team builds high-performance native and cross-platform banking apps with intuitive UI/UX, real-time features, and responsive performance across devices.",
-  },
-  {
-    img: <IconShieldLock stroke={1.5} className="w-12 h-12" />,
-    title: "Regulatory Compliance & Security",
-    desc: "We ensure PCI-DSS, GDPR, and RBI compliance with features like end-to-end encryption, MFA, and role-based access to keep your mobile banking app secure and legal.",
-  },
-  {
-    img: <IconTools stroke={1.5} className="w-12 h-12" />,
-    title: "Maintenance & Post-Launch Support",
-    desc: "Our 24/7 post-launch services include regular updates, performance monitoring, and feature enhancements to keep your banking app optimized and secure.",
-  },
-];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
-      head: "AI-Driven Mobile Banking App",
-      name: "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
-      head: "Blockchain-Based Digital Wallet",
-      name: "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
-      head: "Core Banking System App",
-      name: "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    }
-  ]
-};
 
 
 
@@ -346,7 +317,7 @@ export default function ClinicalApp(props: any) {
       ]
     }
   ];
-  
+
 
 
 
@@ -358,7 +329,7 @@ export default function ClinicalApp(props: any) {
         <link rel="canonical" href="https://www.comfygen.com/mobile-banking-app-development" />
 
         <meta name="keywords" content="Custom Digital Banking App Development, Best Mobile Banking App Development Company, iOS & Android Banking Apps, Fintech App Development Services, AI-Based Mobile Banking App Development, Mobile Banking Software Development, Custom Mobile Banking App Development, Digital Wallet Integration, Core Banking System Integration, Paytm Payments Clone App Development, blockchain-based banking app development" />
-    
+
 
         {/* Robots */}
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
@@ -454,33 +425,33 @@ export default function ClinicalApp(props: any) {
             })
           }}
         />
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-       
+
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/mobile-banking-app-development/mobile-banking-app-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Custom Mobile Banking App Development Company for Fintech Startups & Banks"
-            ptag="Comfygen is a trusted mobile banking app development company delivering secure and scalable fintech app solutions for startups, banks, and enterprises. Our expertise in AI/ML, Blockchain, and cloud technologies enables us to build next-gen mobile banking apps with advanced security, seamless transactions, and engaging UI/UX. From digital wallets to core banking platforms, we provide custom mobile banking app services tailored to enhance customer experience, ensure compliance, and drive financial growth in the digital era."
-            li="AI-Powered Personalization "
-            li1="Advanced Security Protocols"
-            li2="Blockchain Integration "
-            li3="Seamless User Experience"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Custom Mobile Banking App Development Company for Fintech Startups & Banks"
+          ptag="Comfygen is a trusted mobile banking app development company delivering secure and scalable fintech app solutions for startups, banks, and enterprises. Our expertise in AI/ML, Blockchain, and cloud technologies enables us to build next-gen mobile banking apps with advanced security, seamless transactions, and engaging UI/UX. From digital wallets to core banking platforms, we provide custom mobile banking app services tailored to enhance customer experience, ensure compliance, and drive financial growth in the digital era."
+          li="AI-Powered Personalization "
+          li1="Advanced Security Protocols"
+          li2="Blockchain Integration "
+          li3="Seamless User Experience"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/mobile-banking-app-development/mobile-banking-app-development-hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Custom Mobile Banking App Development Company"
@@ -493,16 +464,29 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-         <ServicesSection 
-            heading="End-to-End Mobile Banking Application Development Services We Offer"
-            subtitle="Comfygen delivers custom, scalable, and secure mobile banking app development services, helping banks and fintech startups stay ahead with modern tech like AI, Blockchain, and AR/VR. From UI/UX to compliance, we cover it all."
-            servicesData={JSON_DATA.servicesData} />
 
-        <Features />
-        <ContactFromCenter />
-       
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">End-to-End Mobile Banking Application Development Services We Offer</h2>
+              <p className="text-base text-center font-normal">Comfygen delivers custom, scalable, and secure mobile banking app development services, helping banks and fintech startups stay ahead with modern tech like AI, Blockchain, and AR/VR. From UI/UX to compliance, we cover it all.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+        <CardFeatures
+          heading="AI and Blockchain-Based Mobile Banking Application Development Solutions"
+          description=" At Comfygen, we deliver AI and Blockchain-powered mobile banking app development solutions that redefine digital finance. By integrating artificial intelligence and decentralized technologies, we empower banking apps to be smarter, safer, and more efficient."
+          featuresData={JSON_DATA.featuresData1}
+          grid="2"
+        />
+
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -510,24 +494,48 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Mobile Banking Apps Portfolio"
-          description="Explore our cutting-edge mobile banking app development portfolio, showcasing secure, scalable, and feature-rich banking solutions. From AI-integrated finance apps to blockchain-backed wallets, our apps deliver seamless digital banking experiences across platforms. Partner with us to launch your next-gen mobile banking application with confidence."
-        />
-        <FeaturesWhite />
-        
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Mobile Banking Apps Portfolio"
+            description="Explore our cutting-edge mobile banking app development portfolio, showcasing secure, scalable, and feature-rich banking solutions. From AI-integrated finance apps to blockchain-backed wallets, our apps deliver seamless digital banking experiences across platforms. Partner with us to launch your next-gen mobile banking application with confidence."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading="We Develop Mobile Banking Apps With Advanced Panel Features"
+            description="At Comfygen, we specialize in creating mobile banking apps with advanced panel features designed to enhance the user experience while providing comprehensive control and management tools for administrators."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+
+
         <TrendsSection
           heading="The Emerging Technologies We Use for Mobile Banking App Development"
           subtitle="At Comfygen, a trusted mobile app development company, we integrate cutting-edge technologies to build robust, secure, and scalable digital banking solutions. Our advanced tech stack ensures seamless user experiences, real-time data processing, and future-proof app architecture that aligns with modern financial needs."
           trends={JSON_DATA.Emerging}
         />
 
-     
-          <ProcessSection  
-            title="Our Mobile Banking App Development Process" 
-            description="As a trusted mobile banking app development company, Comfygen follows a comprehensive and transparent development approach to deliver secure, scalable, and high-performing mobile banking applications. Our structured process ensures alignment with your business goals and compliance with financial industry standards." 
-            processSlides={Process}  />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Mobile Banking App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+              As a trusted mobile banking app development company, Comfygen follows a comprehensive and transparent development approach to deliver secure, scalable, and high-performing mobile banking applications. Our structured process ensures alignment with your business goals and compliance with financial industry standards.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         <TechStack
           title="Technology Stack We Use in Banking Mobile App Development"
@@ -542,7 +550,7 @@ export default function ClinicalApp(props: any) {
         <HireDeveloper
           heading="Hire Our Dedicated Mobile Banking App Developers For Your Advanced Mobile Banking App Project"
           text="In the mobile banking app development landscape, Comfygen stands out as a reliable and expert technology partner. As a top-rated mobile banking application development company, we build advanced banking apps that are secure, compliant, and highly scalable across iOS, Android, and web platforms. Our team adapts to your requirements and delivers high-performing fintech applications with precision."
-          
+
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
@@ -561,7 +569,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="" />
 
-        {/*<BlogSection initialData={initialData} />*/}
+
       </div>
     </>
   );

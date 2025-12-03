@@ -3,18 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import {
   IconBook,
   IconSchool,
@@ -27,22 +15,75 @@ import {
   IconApps
 } from "@tabler/icons-react";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
 
 
 const Process = [
@@ -125,40 +166,6 @@ const technologyData = [
   },
 
 ];
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/hero-image-on-demand-tutor-booking-app.png",
-      head: "On-Demand Tutor Booking App",
-      name: "A real-time tutor booking app development solution that connects students with qualified tutors nearby. Integrated with AI-based matching, automated scheduling, secure payments, and live video sessions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/on-demand-tutor-booking-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/hero-image-ai-powered-language-learning-app.png",
-      head: "AI-Powered Language Learning App",
-      name: "An interactive language learning app development platform with AI-driven personalized lessons, gamified exercises, speech recognition, and real-time progress tracking to help users master new languages effectively.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "/portfolio/ai-powered-language-learning-app",
-    }
-  ],
-};
-
 
 
 export default function ClinicalApp(props: any) {
@@ -402,26 +409,25 @@ export default function ClinicalApp(props: any) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Tutor App Development Company"
-            ptag="Build an innovative and user-friendly tutoring app with Comfygen, a trusted tutor app development company known for delivering high-quality custom tutoring app development services. Whether you’re an edtech startup, an institute, or an enterprise, we craft tailored tutoring app development solutions with next-gen technology to enhance learning experiences and streamline tutor-student interactions."
-            li="Engaging & Intuitive UI/UX Design"
-            li1="Expertise in AI-powered learning Solutions"
-            li2="Timely Project Delivery & Ongoing Support"
-            li3="Advanced Virtual Classroom & Collaboration Features"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Tutor App Development Company"
+          ptag="Build an innovative and user-friendly tutoring app with Comfygen, a trusted tutor app development company known for delivering high-quality custom tutoring app development services. Whether you’re an edtech startup, an institute, or an enterprise, we craft tailored tutoring app development solutions with next-gen technology to enhance learning experiences and streamline tutor-student interactions."
+          li="Engaging & Intuitive UI/UX Design"
+          li1="Expertise in AI-powered learning Solutions"
+          li2="Timely Project Delivery & Ongoing Support"
+          li3="Advanced Virtual Classroom & Collaboration Features"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Top-Rated Tutor Booking App Development Company That Builds Next-Gen Tutor Apps"
@@ -443,7 +449,8 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
+
         <SolutionSec
           heading="Start Your Business With Our Top-Tier Tutor App Development Solutions"
           subheading=""
@@ -456,12 +463,26 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="We Have Developed Tutor Apps That You Can Check Out"
-          description="At Comfygen, we take pride in delivering high-quality tutor app development solutions that transform online education. As a trusted tutor app development company, we have built feature-rich, scalable, and AI-powered education mobile app development solutions tailored to various learning needs."
-        />
-        <Features />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="We Have Developed Tutor Apps That You Can Check Out"
+            description="At Comfygen, we take pride in delivering high-quality tutor app development solutions that transform online education. As a trusted tutor app development company, we have built feature-rich, scalable, and AI-powered education mobile app development solutions tailored to various learning needs."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading="We Develop Tutor Apps With Advanced Panel Features"
+            description="At Comfygen, we integrate cutting-edge features into our tutor app development services to enhance user experience, streamline management, and optimize learning processes. Our on-demand tutor mobile app development services include advanced panels for students, tutors, and administrators, securing a seamless and efficient platform."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">

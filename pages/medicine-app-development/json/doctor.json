@@ -51,6 +51,52 @@
       "desc": "Medicine apps span a vast range, encompassing wellness, telehealth, hospital systems, etc. Our versatile teams have specialized experience engineering secure, scalable solutions across:"
     }
   ],
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "For Users",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/customer-panel-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Easy login & user profiles", "emoji": "", "content": "" },
+      { "details": "Smart search & categorization of medicines", "emoji": "", "content": "" },
+      { "details": "Prescription upload & verification", "emoji": "", "content": "" },
+      { "details": "Secure online payments", "emoji": "", "content": "" },
+      { "details": "Order tracking & delivery notifications", "emoji": "", "content": "" },
+      { "details": "Medicine refill reminders", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "For Pharmacies & Admins",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/pharmacy-panel-image-medicine-delivery-app-development.png",
+    "additionalDetails": [
+      { "details": "Inventory & stock management", "emoji": "", "content": "" },
+      { "details": "Order management system", "emoji": "", "content": "" },
+      { "details": "Customer insights & analytics", "emoji": "", "content": "" },
+      { "details": "Multi-vendor support", "emoji": "", "content": "" },
+      { "details": "Role-based access", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "For Admin Panel",
+    "img": "https://www.comfygen.com/image/admin-panel-medicine-delivery-app-development.png",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "A centralized dashboard for real-time monitoring", "emoji": "", "content": "" },
+      { "details": "Vendor & pharmacy management system", "emoji": "", "content": "" },
+      { "details": "User management & authentication controls", "emoji": "", "content": "" },
+      { "details": "Automated commission & payment tracking", "emoji": "", "content": "" },
+      { "details": "Marketing & promotions management", "emoji": "", "content": "" },
+      { "details": "Reports & analytics for business growth", "emoji": "", "content": "" },
+      { "details": "Compliance & regulatory management", "emoji": "", "content": "" }
+    ]
+  }
+ 
+],
   
   "consultancyData" :[
     {

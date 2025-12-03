@@ -3,15 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./insuranceappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import SolutionSec from "../components/SolutionSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
 import {
   IconHeartRateMonitor,
   IconCar,
@@ -26,30 +17,93 @@ import {
   IconTruckDelivery,
   IconUsersGroup
 } from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardFeatures = dynamic(() => import("../Newcomponet/comman/CardFeatures"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+
 import ProcessSection from "../componentsnew/ProcessSection";
-import AdminUserPanel from "../astrology-app-development/components/AdminUserPanel";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const Process = [
   {
@@ -154,66 +208,6 @@ const technologyData = [
   },
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-ai-life-insurance.webp",
-      head: "AI-Enabled Life Insurance App",
-      name: "We built a smart life insurance app with AI-driven underwriting, predictive risk modeling, and personalized policy suggestions. Users receive tailored life plans while insurers gain instant eligibility assessments and fraud detection automation.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-health-claim-app.webp",
-      head: "On-Demand Health Claim App",
-      name: "This app revolutionized health insurance claims with real-time AI verification, instant e-document uploads, and chatbot-guided filing. It reduces claim processing time from days to minutes—designed for both speed and compliance.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-auto-insurance-blockchain.webp",
-      head: "Blockchain-Based Auto Insurance App",
-      name: "A decentralized insurance app that uses blockchain to auto-validate accident claims through GPS and image data. Features include a secure driver record vault, dynamic premium calculations, and immutable accident logs.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/insurance-app-development/hero-section-travel-insurance-superapp.webp",
-      head: "All-in-One Travel Insurance SuperApp",
-      name: "We crafted a multi-policy travel insurance app with flight delay compensation automation, live geolocation coverage activation, and multilingual AI support. Users manage everything from trip claims to emergency contacts in one place.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
 
 
 
@@ -558,26 +552,26 @@ export default function ClinicalApp(props: any) {
         ))}
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-hero.webp')]" >
-          <HeroSectionForAllPages
-            heading="Insurance Mobile App Development Company"
-            ptag="Comfygen’s insurance Mobile app development solutions help you bring your insurance ideas to life. Whether it's a startup, broker, or enterprise, we provide secure, user-friendly, and fully compliant insurance app development services. Our insurance app development solutions are designed to meet your exact business needs, whether you need them for claims management, policy tracking, or customer engagement."
-            li="Custom Insurance App Development for Startups, Brokers & Enterprises"
-            li1="Secure, Compliant & Scalable Architecture"
-            li2="Advanced Features for Claims, Policy & Customer Management"
-            li3="AI-Powered Automation for Better Efficiency & User Experience"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Insurance Mobile App Development Company"
+          ptag="Comfygen’s insurance Mobile app development solutions help you bring your insurance ideas to life. Whether it's a startup, broker, or enterprise, we provide secure, user-friendly, and fully compliant insurance app development services. Our insurance app development solutions are designed to meet your exact business needs, whether you need them for claims management, policy tracking, or customer engagement."
+          li="Custom Insurance App Development for Startups, Brokers & Enterprises"
+          li1="Secure, Compliant & Scalable Architecture"
+          li2="Advanced Features for Claims, Policy & Customer Management"
+          li3="AI-Powered Automation for Better Efficiency & User Experience"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Leading Insurance App Development Company for Modern Insurers"
@@ -591,23 +585,47 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <ServicesSection
-          heading="Our Insurance Mobile App Development Services"
-          subtitle="Building a reliable insurance mobile app takes more than forms and payment screens. You need a smooth, trustworthy experience that makes life easier for customers and keeps your internal team in control. That’s exactly where Comfygen delivers with its end-to-end insurance mobile app development services."
-          servicesData={JSON_DATA.servicesData} />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Insurance Mobile App Development Services</h2>
+              <p className="text-base text-center font-normal">Building a reliable insurance mobile app takes more than forms and payment screens. You need a smooth, trustworthy experience that makes life easier for customers and keeps your internal team in control. That’s exactly where Comfygen delivers with its end-to-end insurance mobile app development services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <Features />
-
-        <ContactFromCenter />
 
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Insurance App Development Portfolio"
-          description="Explore our innovative insurance app development portfolio, featuring AI-powered underwriting systems, blockchain-based claim processing, and on-demand solutions for every insurance sector. From health to auto, our apps redefine digital insurance experiences with speed, security, and user-first designs. Partner with Comfygen to launch your next-gen InsurTech solution with confidence."
-        />
 
-        <AdminUserPanel />
+        <div className="py-8">
+          <CardFeatures
+            heading="Advanced Features of Insurance Mobile App Development"
+            description="At Comfygen, we specialise in providing feature-rich insurance app development services with powerful, intuitive panels for both users and administrators. Our user panels focus on convenience and transparency, while admin panels deliver total control, analytics, and automation to streamline insurance operations."
+            featuresData={JSON_DATA.featuresData1}
+            grid={2} />
+        </div>
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Insurance App Development Portfolio"
+            description="Explore our innovative insurance app development portfolio, featuring AI-powered underwriting systems, blockchain-based claim processing, and on-demand solutions for every insurance sector. From health to auto, our apps redefine digital insurance experiences with speed, security, and user-first designs. Partner with Comfygen to launch your next-gen InsurTech solution with confidence."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading=" We Develop Insurance Apps With Advanced Panel Features"
+            description=" At Comfygen, we specialize in building feature-rich insurance apps with powerful, intuitive panels for both users and administrators. Our user panels focus on convenience and transparency, while admin panels deliver total control, analytics, and automation to streamline insurance operations."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
 
         <SolutionSec
           heading="A Variety of Insurance Application Development Solutions for Every Industry"
@@ -620,10 +638,21 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        <ProcessSection
-          title="Our End-to-End insurance mobile App development process"
-          description="Our insurance mobile app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards."
-          processSlides={Process} />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End insurance mobile App development process</h2>
+              <p className="text-base font-normal mt-2">
+               Our insurance mobile app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         <TechStack
           title="Technologies We Use in Insurance Application Development"

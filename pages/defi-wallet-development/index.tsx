@@ -2,30 +2,71 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import LatestTechnology from "../componentsnew/LatestTechnology";
 import {
   IconBrain,
   IconCloud,
   IconReportSearch,
   IconSignal5g,
 } from "@tabler/icons-react";
-import TechStack from "../components/TechStack";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import Faq from "../components/Faq";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import IndustriesServe from "../components/IndustriesServe";
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+)
 
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
 
 const latesttech = [
@@ -92,39 +133,7 @@ export default function Ecommerce(props) {
   const previous = () => {
     slider.current.slickPrev();
   };
-  const settingstwo = {
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -134,10 +143,10 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  
+
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -400,28 +409,28 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/defi-wallet-development/defi_wallet_development_company_hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Best Defi wallet development company"
-            ptag="Comfygen, the Best DeFi wallet development company, builds secure, scalable, and feature-rich DeFi wallets sepecilly designed for startups, enterprises, and crypto innovators. Our DeFi wallet development solution gives you full control of your digital assets with the best security and smart contract integrations. Intuitive UX/UI designed for both beginners and advanced users, customizable features that your brand needs, and real-time transaction analytics."
-            ptag1=""
-            li="Multi-currency & cross-chain support"
-            li1="Advanced security & private key management"
-            li2="NFT & DeFi protocol integration"
-            li3="White-label solutions for rapid deployment"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Best Defi wallet development company"
+          ptag="Comfygen, the Best DeFi wallet development company, builds secure, scalable, and feature-rich DeFi wallets sepecilly designed for startups, enterprises, and crypto innovators. Our DeFi wallet development solution gives you full control of your digital assets with the best security and smart contract integrations. Intuitive UX/UI designed for both beginners and advanced users, customizable features that your brand needs, and real-time transaction analytics."
+          ptag1=""
+          li="Multi-currency & cross-chain support"
+          li1="Advanced security & private key management"
+          li2="NFT & DeFi protocol integration"
+          li3="White-label solutions for rapid deployment"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/defi-wallet-development/defi_wallet_development_company_hero.webp"
+        />
+
         <AboutSection
           heading="What is a DeFi Wallet?"
           description1="A DeFi wallet is a wallet that is specifically designed for interacting with decentralized finance (DeFi) platforms. Unlike traditional wallets or exchange-based wallets, a DeFi wallet development service gives users full control over their private keys and digital assets, allowing them to securely store, send, receive, and manage cryptocurrencies without depending on a centralized System."

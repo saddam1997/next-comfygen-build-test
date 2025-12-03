@@ -2,37 +2,78 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ELearningApp.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
 import { IconBallpen, IconBook, IconBrain, IconLock, IconSchool, IconUsers, } from '@tabler/icons-react';
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
 import Script from "next/script";
-import AdminUserPanel from "./components/AdminUserPanel";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
+import JSON_DATA from "./ELearningApp.json";
 
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 
 const Process = [
@@ -238,63 +279,6 @@ export default function ClinicalApp(props: any) {
     ]
   };
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/img/hero-book-my-tutor.webp",
-        head: "Book My Tutor",
-        name: "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors. The vision is to make quality education accessible to every student, regardless of their location or academic level. The project seeks to bridge the gap between students and tutors, creating a conducive environment for personalized learning.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
-      ,
-      {
-        img: "https://www.comfygen.com/image/ai-powered-e-learning-app.webp",
-        head: "AI-Powered E-Learning App",
-        name: "E-learning app is an innovative AI-driven education app designed for personalized learning experiences. It features interactive video lessons, real-time quizzes, and AI-based recommendations tailored to each student’s learning pace. With seamless Learning Management System (LMS) integration, it is widely used by schools and online educators for engaging and adaptive learning solutions.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/language-learning-app.webp",
-        head: "Language Learning App",
-        name: "Language app is a feature-rich language learning app that supports multiple languages with AI-powered voice recognition, real-time translations, and gamified lessons. As a custom education app development company, we integrated chat-based learning, progress tracking, and AI tutors to make language acquisition fun and efficient for learners of all ages.",
-        num: "3",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      },
-      {
-        img: "https://www.comfygen.com/image/school-and-college-management-system.webp",
-        head: "School & College Management System",
-        name: "Management app is an advanced school and college management app designed to streamline administrative operations. It offers features like attendance tracking, timetable scheduling, fee management, and student performance analytics. Built for educational institutions, this custom education app development solution enhances communication between teachers, students, and parents for a more organized learning environment.",
-        num: "4",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg"
-        ],
-      }
-    ],
-  };
 
 
   return (
@@ -365,27 +349,25 @@ export default function ClinicalApp(props: any) {
         <Script type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Custom eLearning App Development Company in India & USA"
-            ptag="Comfygen Technologies is a top eLearning app development company in India & USA offering custom EdTech solutions with AI, AR/VR, Blockchain & analytics features. Build secure, scalable online learning apps for schools, coaching, and corporate training. Hire expert eLearning app developers today!"
-            ptag1=""
-            li="Custom eLearning App Development"
-            li1="AI-powered learning & smart analytics"
-            li2="AR/VR classroom & interactive content"
-            li3="Secure & scalable online learning platforms"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Custom eLearning App Development Company in India & USA"
+          ptag="Comfygen Technologies is a top eLearning app development company in India & USA offering custom EdTech solutions with AI, AR/VR, Blockchain & analytics features. Build secure, scalable online learning apps for schools, coaching, and corporate training. Hire expert eLearning app developers today!"
+          ptag1=""
+          li="Custom eLearning App Development"
+          li1="AI-powered learning & smart analytics"
+          li2="AR/VR classroom & interactive content"
+          li3="Secure & scalable online learning platforms"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Leading eLearning app development company in India & USA"
@@ -406,27 +388,41 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <SolutionSec
           heading="E-Learning App Development Solutions We Offer"
           subheading="Elevate Learning Experiences. We transform your education business into engaging eLearning app development solutions that deliver personalized learning, empower educators, and drive impactful results"
           techData={technologyData}
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our eLearning App Development Portfolio"
-          description="At Comfygen, we are proud to have delivered innovative, user-centric eLearning solutions for clients across various industries. Our portfolio showcases the diverse range of eLearning apps we’ve developed, each offering unique features and tailored experiences for learners and educators."
-        />
-        <AdminUserPanel />
-        {/* <Features /> */}
-        
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our eLearning App Development Portfolio"
+            description="At Comfygen, we are proud to have delivered innovative, user-centric eLearning solutions for clients across various industries. Our portfolio showcases the diverse range of eLearning apps we’ve developed, each offering unique features and tailored experiences for learners and educators."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading=" We provide Advanced Panel Features for E-learning App Development"
+            description="Efficient and feature-rich panels for seamless learning and management. The User Panel enhances the student experience, while the Admin Panel provides complete control over course management and analytics."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+
+
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our eLearning App Development Process</h2>
               <p className="text-base text-center font-normal lg:w-2/4 mx-auto">As a leading E-learning software development agency in India, the USA, we follow a strategic and user-centric approach to building high-quality learning solutions. Our talented education app developers ensure a seamless experience with cutting-edge technology and innovative features.</p>
             </div>
-            <ProcessSec processSlides={ Process} />
+            <ProcessSec processSlides={Process} />
           </div>
         </section>
 

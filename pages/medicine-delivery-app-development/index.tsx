@@ -3,14 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import InfoSectionRight from "../components/InfoSectionRight";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconCode,
   IconFirstAidKit,
@@ -18,103 +10,118 @@ import {
   IconNews,
 } from "@tabler/icons-react";
 import { IconCashBanknote, IconShoppingCart } from "@tabler/icons-react";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import AdvancedPanel from "./components/AdvancedPanel";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Slider from "../components/Slider";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const FaQ = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
 );
 
-const jsonLd = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  brand: {
-    "@type": "Brand",
-    name: "Medicine Delivery App Development Company | Fastest App For Pharmacy Delivery App Development",
-  },
-  description:
-    "Comfygen stands out as a leading partner in medicine delivery app development, offering extensive expertise in creating innovative healthcare solutions. Our focus is on user-centric design, ensuring that our applications simplify the buying process for both over-the-counter and prescription medications, providing a seamless experience for customers of all ages. We understand that every business has unique requirements, which is why our team offers tailored development services suitable for local pharmacies and large healthcare providers alike. By leveraging advanced technologies such as AI, real-time tracking, and secure payment gateways, we enhance functionality while prioritizing regulatory compliance and implementing stringent security measures to protect user data. Our robust apps are designed for scalability and flexibility, allowing your business to grow and adapt to changing market needs. With continuous support and maintenance, we ensure that your app operates smoothly, freeing you to focus on expansion. Our proven track record features successful projects that have increased accessibility and convenience in the pharmacy sector, helping clients boost revenue and explore new market opportunities. Comfygen is committed to innovation, continuously integrating the latest features to enhance user satisfaction and engagement in medicine delivery, making us the ideal partner to transform your vision into reality in the evolving healthcare landscape.",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  name: "On-Demand Medicine delivery App Development Company | Comfygen",
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-      },
-      author: {
-        "@type": "Person",
-        name: "Mr. Saddam Husen",
-      },
-    },
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "4.9",
-      },
-      author: {
-        "@type": "Person",
-        name: "Mr. Saddam Husen",
-      },
-    },
-  ],
-};
 
-const LocalBusinessStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  priceRange: "$20-$55",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "@id": "https://www.comfygen.com/medicine-delivery-app-development",
-  name: "On demand Medicine Delivery App Development Company in India",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-    addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-    addressRegion: "Jaipur, Rajasthan",
-    postalCode: "302021",
-    addressCountry: "IN",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.9",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-  },
-  url: "https://www.comfygen.com/medicine-delivery-app-development",
-  telephone: "+91 9587867258, +1 5145659471",
-};
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const InfoSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import InfoSectionRight from "../components/InfoSectionRight";
+
+
+
+
 
 const technologyData = [
   {
@@ -557,30 +564,29 @@ export default function Ecommerce(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+      <Header />
+
       <div className="overflow-hidden">
-        <div className="">
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/your-partner-in-medicine-ordering-app-development-hero-img.webp')]">
-            <HeroSectionForAllPages
-              heading="Medicine Delivery App Development Company"
-              ptag="Grow your pharmacy business with Best Delivery app development Company Comfygen Technologies, which builds cutting-edge medicine delivery app development solutions for seamless medicine online ordering, real-time tracking, and secure payments. At Comfygen, we specialize in developing HIPAA-compliant, AI-powered medicine delivery apps that enhance user experience, streamline pharmacy operations, and ensure faster, more efficient medicine delivery."
-              li="Custom Medicine Delivery App Development"
-              li1="24/7 Support & Maintenance"
-              li2="Scalable & Secure Solutions"
-              li3="AI/ML & Blockchain Expertise"
-              li4="Seamless Payment Gateway Integrations"
-              ptag3=""
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-            />
-          </div>
-        </div>
+
+        <HeroSectionForAllPages
+          heading="Medicine Delivery App Development Company"
+          ptag="Grow your pharmacy business with Best Delivery app development Company Comfygen Technologies, which builds cutting-edge medicine delivery app development solutions for seamless medicine online ordering, real-time tracking, and secure payments. At Comfygen, we specialize in developing HIPAA-compliant, AI-powered medicine delivery apps that enhance user experience, streamline pharmacy operations, and ensure faster, more efficient medicine delivery."
+          li="Custom Medicine Delivery App Development"
+          li1="24/7 Support & Maintenance"
+          li2="Scalable & Secure Solutions"
+          li3="AI/ML & Blockchain Expertise"
+          li4="Seamless Payment Gateway Integrations"
+          ptag3=""
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/your-partner-in-medicine-ordering-app-development-hero-img.webp"
+        />
+
         <AboutSection
           heading="Top-Rated On-Demand Medicine Delivery App Development Company"
           description1="At Comfygen, we are globally recognized as the best online medicine delivery app development company that has successfully delivered 50+ medicine delivery app development solutions for pharmaceutical businesses, pharmacy startups, and more. We specialize in developing strong, scalable, and user-friendly on-demand medicine delivery apps, empowering pharmacies, healthcare providers, and entrepreneurs to offer seamless online medicine delivery services."
@@ -734,7 +740,7 @@ export default function Ecommerce(props) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Medicine Delivery App Development Success Stories"
             description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
@@ -742,11 +748,13 @@ export default function Ecommerce(props) {
         </section>
 
 
-
-        <AdvancedPanel />
-
-
-        {/* <Tab /> */}
+        <div className="py-8">
+          <Features
+            heading="Advanced Features of Developing Medicine Delivery Apps"
+            description="Comfygen specializes in developing feature-rich medicine delivery app solutions with advanced control panels for seamless operations. Medicine doorstep delivery app development enhances user convenience, streamlines pharmacy management, and ensures efficient deliveries."
+            featuresData={JSON_DATA.featuresData}
+            grid={4} />
+        </div>
 
 
         {/* <Providers /> */}
@@ -834,7 +842,7 @@ export default function Ecommerce(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <ContactFromCenter />
+
         <HireDeveloper
           heading="Hire Our Expert Developers for Your Medicine Delivery App Development Projects"
           text="Medicine delivery apps can change the face of healthcare with the advantages of easier and more convenient pharmacy delivery of medicines at the doorstep of patients. Our medical delivery app developer team can help you with their experience in working on different types of projects to bring you custom healthcare medicine delivery apps for pharmacy stores. With years of training and qualifications to work on mobile app development for healthcare projects, our experts can make the big difference you need to achieve success."
@@ -849,18 +857,23 @@ export default function Ecommerce(props) {
             "We also prioritize transparency and maintain integrity in our services.",
           ]}
         />
-        <InfoSectionRight
+        <InfoSection
           heading="Do You Want More Information about Medicine Delivery App Development Services?"
           description1="Reach out to our experts through the channels of your choice and make the most of our expertise in developing medicine delivery apps right now."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
           imageSrc="https://www.comfygen.com/media/images/android-app-development-landscape-img.webp"
           link="/contact-us"
           linkText="Lets Discuss"
+          imagePosition="right"
         />
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
-        <FaQ
+        <Faq
           faqData={JSON_DATA.Frequently}
         />
         {/*<BlogSection initialData={initialData} />*/}

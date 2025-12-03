@@ -3,49 +3,77 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./p2ppaymentappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -86,83 +114,6 @@ const Process = [
 ];
 
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Elementary Application Development",
-    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Freelance Tutor Marketplace Development",
-    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "K-12 Education App Development",
-    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "STEM Learning Application Development",
-    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Language Learning Application Development",
-    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Test Preparation App Development Solutions",
-    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Corporate Training & Employee Learning App Development",
-    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Special Needs & Inclusive Education App Development",
-    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness and Wellness Coaching App Development",
-    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
-  },
-];
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/p2p-money-transfer-app.webp",
-      head: "P2P Money Transfer App for Emerging Fintech Startup",
-      name: "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-mobile-wallet-crypto-integration.webp",
-      head: "P2P Mobile Wallet with Crypto Integration",
-      name: "This project involved building a cross-platform mobile wallet app that supports both fiat and cryptocurrencies. Designed for global users, the app includes features like QR code payments, crypto-to-fiat conversion, multi-language support, and blockchain-based transaction security.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/flutter-icon.svg",
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/blockchain-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
-
 
 
 export default function ClinicalApp(props: any) {
@@ -199,7 +150,7 @@ export default function ClinicalApp(props: any) {
       "postalCode": "M1G3S7",
       "telephone": "+1 579-977-4475"
     },
-    { 
+    {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Custom P2P Payment App Development Services",
@@ -220,8 +171,8 @@ export default function ClinicalApp(props: any) {
         "AI & Machine Learning Integration"
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen", 
-        "https://www.linkedin.com/company/comfygen-private-limited"    
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
       ]
     },
     {
@@ -291,15 +242,17 @@ export default function ClinicalApp(props: any) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Peer-to-Peer Payment App Development Experts | Comfygen",
-      "image":"Hero section image",
-      "description":"Build a custom P2P payment app with Comfygen. Our developers specialize in money transfer apps, mobile wallets, and secure financial platforms for modern businesses.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"150"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Peer-to-Peer Payment App Development Experts | Comfygen",
+      "image": "Hero section image",
+      "description": "Build a custom P2P payment app with Comfygen. Our developers specialize in money transfer apps, mobile wallets, and secure financial platforms for modern businesses.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      }
 
     },
     {
@@ -340,7 +293,7 @@ export default function ClinicalApp(props: any) {
         }
       ]
     }
-    
+
   ];
 
   return (
@@ -403,7 +356,7 @@ export default function ClinicalApp(props: any) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        
+
         <meta
           property="og:title"
           content="Top P2P Payment App Development Company | Comfygen"
@@ -426,7 +379,7 @@ export default function ClinicalApp(props: any) {
           content="https://www.comfygen.com/p2p-payment-app-development"
         />
 
-       
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -444,58 +397,56 @@ export default function ClinicalApp(props: any) {
 
         {/* Structured Data Schema */}
         <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                name: "Crypto Derivatives Exchange Development",
-                operatingSystem: "Web, Android, iOS",
-                applicationCategory: "FinanceApplication",
-                url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
-                description:
-                  "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
-                author: {
-                  "@type": "Organization",
-                  name: "Comfygen Private Limited"
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "Comfygen Private Limited",
-                  url: "https://www.comfygen.com"
-                },
-                image: "https://www.comfygen.com/image/crypto-derivatives-development.jpg"
-              })
-            }}
-          />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Crypto Derivatives Exchange Development",
+              operatingSystem: "Web, Android, iOS",
+              applicationCategory: "FinanceApplication",
+              url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
+              description:
+                "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
+              author: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited"
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Comfygen Private Limited",
+                url: "https://www.comfygen.com"
+              },
+              image: "https://www.comfygen.com/image/crypto-derivatives-development.jpg"
+            })
+          }}
+        />
 
-          <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="" >
-          <HeroSectionForAllPages
-            heading="P2P Payment App Development Company"
-            ptag="Comfygen is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment mobile app development solutions for fintech startups, enterprises, and banks. From real-time money transfers to mobile wallet integrations, we build custom P2P apps that empower seamless digital payments."
-            li="Custom P2P payment app development"
-            li1="End-to-end fintech compliance & data security"
-            li2="Cross-platform, cloud-native mobile solutions"
-            li3="Expertise in wallets, APIs & blockchain integration"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            bgImage="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-hero.webp"
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="P2P Payment App Development Company"
+          ptag="Comfygen is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment mobile app development solutions for fintech startups, enterprises, and banks. From real-time money transfers to mobile wallet integrations, we build custom P2P apps that empower seamless digital payments."
+          li="Custom P2P payment app development"
+          li1="End-to-end fintech compliance & data security"
+          li2="Cross-platform, cloud-native mobile solutions"
+          li3="Expertise in wallets, APIs & blockchain integration"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          bgImage="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-hero.webp"
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+        />
+
         <AboutSection
           title="About Company"
           heading="The Best Peer-to-Peer Payment App Development Company Will Help Your Business Grow"
@@ -506,14 +457,19 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-       
 
-        <ServicesSection 
-          heading="We Provide Best-in-Class Payment P2P App Development Services" 
-          subtitle="At Comfygen, we offer end-to-end P2P payment app development services tailored to meet the growing demand for secure, fast, and user-friendly digital payment solutions. Our experienced peer-to-peer payment app developers build feature-rich peer-to-peer payment apps that support seamless money transfers, wallet functionalities, and real-time processing — all with a focus on scalability, compliance, and innovation." 
-          servicesData={JSON_DATA.servicesData}/>
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Best-in-Class Payment P2P App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end P2P payment app development services tailored to meet the growing demand for secure, fast, and user-friendly digital payment solutions. Our experienced peer-to-peer payment app developers build feature-rich peer-to-peer payment apps that support seamless money transfers, wallet functionalities, and real-time processing — all with a focus on scalability, compliance, and innovation.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -522,17 +478,21 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Mobile Payment Application Development Portfolio"
-          description="Comfygen delivers innovative, user-friendly, and secure mobile payment applications tailored to meet the demands of today’s digital economy. Below are two standout projects from our portfolio that highlight our expertise in building high-performance P2P and mobile payment solutions."
-        />
-        
 
-        <CoreFeaturesSection 
-          title="Key Features of Our P2P Money Transfer Apps" 
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Mobile Payment Application Development Portfolio"
+            description="Comfygen delivers innovative, user-friendly, and secure mobile payment applications tailored to meet the demands of today’s digital economy. Below are two standout projects from our portfolio that highlight our expertise in building high-performance P2P and mobile payment solutions."
+          />
+        </section>
+
+
+
+        <CoreFeaturesSection
+          title="Key Features of Our P2P Money Transfer Apps"
           subtitle="At Comfygen, we design P2P money transfer apps with a focus on speed, security, and seamless user experience. Our money transfer app development solutions are packed with advanced features that cater to the needs of modern users and keep your money transfer app competitive in the digital payment landscape."
-          features={JSON_DATA.AIPowered} 
+          features={JSON_DATA.AIPowered}
         />
 
 
@@ -542,12 +502,18 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Build a P2P Payment App</h2>
+              <p className="text-base font-normal mt-2">
+               At Comfygen, we follow a transparent, agile, and secure development process tailored to create feature-rich, regulation-compliant P2P payment applications. Our end-to-end approach ensures your app is fast, scalable, and fully equipped for today’s digital payment landscape.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
-          <ProcessSection 
-            title="How We Build a P2P Payment App" 
-            description="At Comfygen, we follow a transparent, agile, and secure development process tailored to create feature-rich, regulation-compliant P2P payment applications. Our end-to-end approach ensures your app is fast, scalable, and fully equipped for today’s digital payment landscape." 
-            processSlides={Process} />
 
         <TechStack
           title="Tech Stack That We Use for Mobile Payment Application Development"
@@ -570,14 +536,14 @@ export default function ClinicalApp(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-          "Custom payment apps built for your needs",
-          "Strong security with KYC, AML & encryption",
-          "Scalable, cross-platform solutions",
-          "Expertise in React Native, Flutter, Node.js, and payment APIs",
-          "Agile development for quick launch",
-          "Ongoing support and updates"
-        ]}
-         
+            "Custom payment apps built for your needs",
+            "Strong security with KYC, AML & encryption",
+            "Scalable, cross-platform solutions",
+            "Expertise in React Native, Flutter, Node.js, and payment APIs",
+            "Agile development for quick launch",
+            "Ongoing support and updates"
+          ]}
+
         />
         <ClientTestimonials
           heading="Testimonials from Our Clients"

@@ -1,45 +1,88 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./nft-wallet-development.json";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import ServicesSec from "../components/ServicesSec";
-import WhyChoose from "../components/WhyChooseUs";
-import PortfolioSec from "../components/PortfolioSec";
-import SolutionSec from "../components/SolutionSec";
-import {IconBolt, IconBriefcase, IconBus, IconCash, IconDeviceMobile,  IconLayoutDashboard, IconMessageCircle, IconUsers, IconWallet } from "@tabler/icons-react";
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+import { IconBolt, IconBriefcase, IconBus, } from "@tabler/icons-react";
 import { MdManageHistory } from "react-icons/md";
 import { GiCrossedChains } from "react-icons/gi";
 import { AiOutlineSolution } from "react-icons/ai";
-import CallToAction from "../components/CallToAction";
 
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
+
 
 const Process = [
   {
@@ -207,7 +250,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -507,7 +550,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
 
 
         <ConsultancyApproach
@@ -528,11 +571,15 @@ export default function ClinicalApp(props: any) {
           imageAlt="Future of Technology"
         />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our NFT Wallet Development portfolio"
-          description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our NFT Wallet Development portfolio"
+            description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
+          />
+        </section>
+
+
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -553,7 +600,7 @@ export default function ClinicalApp(props: any) {
           subheading="Custom NFT Wallet Development Company lets businesses securely store, trade, and manage digital assets while improving user engagement. With multi-chain support, marketplace integration, and scalable, customizable features, it streamlines transactions and unlocks new revenue opportunities through NFT trading and monetization."
           techData={latesttech}
         />
-        <NewTeckStack
+        <TechStack
           title="Tech Stack We Use in NFT Wallet Development"
           description="At Comfygen, we leverage a cutting-edge technology stack to build secure, scalable, and feature-rich NFT wallets. Our NFT wallet development exports ensure seamless performance, multi-chain support, and robust security for all digital assets."
         />
@@ -581,7 +628,7 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-      
+
       </div>
     </>
   );

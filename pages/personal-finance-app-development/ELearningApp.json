@@ -1,152 +1,171 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "What is the cost of developing a personal finance app?",
-    "desc": "The average cost of developing a personal finance app ranges from $10,000 to $50,000, depending on features, platforms, and design complexity. Advanced apps with AI or third-party integrations may cost more. We offer flexible pricing tailored to your business needs."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to build a finance app?",
-    "desc": "The development time varies by app complexity. A simple finance app takes 6–8 weeks, while feature-rich apps may need 3–4 months. We ensure timely delivery with proper testing, security, and quality performance."
-  },
-  {
-    "num": "3",
-    "title": "Do you offer post-launch support?",
-    "desc": "Yes, we provide complete post-launch support including bug fixes, updates, security patches, and performance optimization. Our goal is to help your fintech app run smoothly even after it’s live, ensuring long-term success and user satisfaction."
-  },
-  {
-    "num": "4",
-    "title": "Is the app secure for financial transactions?",
-    "desc": "Absolutely! We follow industry-best security practices like AES-256 encryption, biometric authentication, and secure APIs to protect your data. Your users can safely manage and transact finances within the app without any risk."
-  }
-],
+    {
+      "num": "1",
+      "title": "What is the cost of developing a personal finance app?",
+      "desc": "The average cost of developing a personal finance app ranges from $10,000 to $50,000, depending on features, platforms, and design complexity. Advanced apps with AI or third-party integrations may cost more. We offer flexible pricing tailored to your business needs."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a finance app?",
+      "desc": "The development time varies by app complexity. A simple finance app takes 6–8 weeks, while feature-rich apps may need 3–4 months. We ensure timely delivery with proper testing, security, and quality performance."
+    },
+    {
+      "num": "3",
+      "title": "Do you offer post-launch support?",
+      "desc": "Yes, we provide complete post-launch support including bug fixes, updates, security patches, and performance optimization. Our goal is to help your fintech app run smoothly even after it’s live, ensuring long-term success and user satisfaction."
+    },
+    {
+      "num": "4",
+      "title": "Is the app secure for financial transactions?",
+      "desc": "Absolutely! We follow industry-best security practices like AES-256 encryption, biometric authentication, and secure APIs to protect your data. Your users can safely manage and transact finances within the app without any risk."
+    }
+  ],
   "servicesData": [
-  {
-    "title": "Custom Personal Finance App Development",
-    "description": "We build personalized finance apps that match your business needs. From budgeting to savings, our custom personal finance app development services help users track their expenses and manage money easily. Designed for startups and enterprises, our apps are secure, scalable, and packed with powerful financial features.",
-    "features": [
-      "Personalized budgeting, saving, and spending tools",
-      "Support for single or multi-user finance goals",
-      "Custom dashboard with real-time financial summary",
-      "Role-based access for admins or partners"
-    ]
-  },
-  {
-    "title": "UI/UX Design for Personal Finance Apps",
-    "description": "We create clean, easy-to-use interfaces for finance apps that users love. Our UI/UX design for personal finance apps focuses on simple navigation, clear visuals, and seamless user journeys to make financial tasks less stressful and more engaging for your audience.",
-    "features": [
-      "Simple and clean app interface",
-      "Easy navigation with user-first design",
-      "Personalized themes and color schemes",
-      "Interactive charts and graphs"
-    ]
-  },
-  {
-    "title": "Third-Party API Integration",
-    "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development</a> team integrates third-party APIs such as bank feeds, payment gateways, and financial tools into your personal finance app. This enables real-time data syncing, secure transactions, and a more connected money management experience for users across platforms.",
-    "features": [
-      "Bank account & card linking via Plaid/Yodlee",
-      "Integration with payment gateways (Stripe, Razorpay)",
-      "Credit score APIs & tax tools",
-      "Real-time data fetch from financial institutions"
-    ]
-  },
-  {
-    "title": "Cloud & Data Security Solutions",
-    "description": "We provide advanced cloud and data security solutions for personal finance apps. With end-to-end encryption, secure login, and data privacy protocols, we ensure your users’ sensitive financial information stays protected while complying with global data protection standards.",
-    "features": [
-      "End-to-end encryption for user data",
-      "Secure user authentication (OTP, biometrics)",
-      "Compliance with GDPR, PCI DSS, and ISO standards",
-      "Regular data backups and monitoring"
-    ]
-  },
-  {
-    "title": "AI-Based Personal Finance App Development",
-    "description": "We provide <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI-powered personal finance app development</a> that offers users personalized budgeting, real-time spending insights, and smart financial recommendations. Our AI-based personal finance app development services help users automate savings, identify patterns, and maintain financial health with minimal effort.",
-    "features": [
-      "AI-driven budget planning & savings suggestions",
-      "Smart expense categorization & tracking",
-      "Predictive financial analytics",
-      "Automated bill reminders & alerts",
-      "Personalized financial goals & insights"
-    ]
-  },
-  {
-    "title": "Cross-Platform App Development",
-    "description": "We develop cross-platform <a class='underline font-semibold' href='https://www.comfygen.com/android-app-development' >personal finance apps for Android</a>, iOS, and web using a single codebase. This approach ensures a fast, consistent, and cost-effective experience across devices, enabling you to reach a wider audience without compromising on performance or quality.",
-    "features": [
-      "Native and hybrid app support",
-      "Compatible with Android, iOS & Web",
-      "Single codebase for faster deployment",
-      "Consistent UI across all devices"
-    ]
-  },
-  {
-    "title": "Maintenance & Support",
-    "description": "Our job doesn’t end at launch. We offer reliable maintenance and support for personal finance apps to ensure smooth performance, bug fixes, feature updates, and security patches—keeping your app running efficiently and users satisfied at all times.",
-    "features": [
-      "Regular performance checks",
-      "Bug fixing and security patches",
-      "Feature upgrades and version updates",
-      "24/7 technical support"
-    ]
-  }
-]
-,
-  "servicesData1": [
-  {
-    "title": "Enhanced User Engagement",
-    "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
-    "features": []
-  },
-  {
-    "title": "Scalable and Personalized Services",
-    "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
-    "features": []
-  },
-  {
-    "title": "Real-Time Astrological Insights",
-    "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
-    "features": []
-  },
-  {
-    "title": "Global Reach and Accessibility",
-    "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
-    "features": []
-  },
-  {
-    "title": "Increased Revenue Opportunities",
-    "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
-    "features": []
-  },
-  {
-    "title": "Data-Driven Decision Making",
-    "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
-    "features": []
-  }
-]
-,
-"FutureDriven2": [
-  {
-    "title": "Rising Demand for Digital Money Management",
-    "desc": "More people now prefer mobile apps to manage their money. A personal finance app helps your business meet this demand by offering users simple tools to track expenses, budgets, and savings digitally."
-  },
-  {
-    "title": "User Engagement Through Data Visualization",
-    "desc": "Finance apps use charts and graphs to show users how they spend and save money. This visual experience keeps users engaged and helps them understand their finances more clearly and easily."
-  },
-  {
-    "title": "Increased Customer Retention with Automation",
-    "desc": "Features like automatic bill reminders, expense tracking, and budget alerts keep users coming back. Automation makes money management easier, which improves customer satisfaction and boosts app retention rates."
-  },
-  {
-    "title": "Brand Loyalty with Intuitive Financial Tools",
-    "desc": "Offering a smart, easy-to-use personal finance app builds trust. Users stick with brands that help them manage money better, increasing brand loyalty and long-term business growth."
-  }
-],
+    {
+      "title": "Custom Personal Finance App Development",
+      "description": "We build personalized finance apps that match your business needs. From budgeting to savings, our custom personal finance app development services help users track their expenses and manage money easily. Designed for startups and enterprises, our apps are secure, scalable, and packed with powerful financial features.",
+      "features": [
+        "Personalized budgeting, saving, and spending tools",
+        "Support for single or multi-user finance goals",
+        "Custom dashboard with real-time financial summary",
+        "Role-based access for admins or partners"
+      ]
+    },
+    {
+      "title": "UI/UX Design for Personal Finance Apps",
+      "description": "We create clean, easy-to-use interfaces for finance apps that users love. Our UI/UX design for personal finance apps focuses on simple navigation, clear visuals, and seamless user journeys to make financial tasks less stressful and more engaging for your audience.",
+      "features": [
+        "Simple and clean app interface",
+        "Easy navigation with user-first design",
+        "Personalized themes and color schemes",
+        "Interactive charts and graphs"
+      ]
+    },
+    {
+      "title": "Third-Party API Integration",
+      "description": "Our <a class='underline font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development</a> team integrates third-party APIs such as bank feeds, payment gateways, and financial tools into your personal finance app. This enables real-time data syncing, secure transactions, and a more connected money management experience for users across platforms.",
+      "features": [
+        "Bank account & card linking via Plaid/Yodlee",
+        "Integration with payment gateways (Stripe, Razorpay)",
+        "Credit score APIs & tax tools",
+        "Real-time data fetch from financial institutions"
+      ]
+    },
+    {
+      "title": "Cloud & Data Security Solutions",
+      "description": "We provide advanced cloud and data security solutions for personal finance apps. With end-to-end encryption, secure login, and data privacy protocols, we ensure your users’ sensitive financial information stays protected while complying with global data protection standards.",
+      "features": [
+        "End-to-end encryption for user data",
+        "Secure user authentication (OTP, biometrics)",
+        "Compliance with GDPR, PCI DSS, and ISO standards",
+        "Regular data backups and monitoring"
+      ]
+    },
+    {
+      "title": "AI-Based Personal Finance App Development",
+      "description": "We provide <a class='underline font-semibold' href='https://www.comfygen.com/ai-development' >AI-powered personal finance app development</a> that offers users personalized budgeting, real-time spending insights, and smart financial recommendations. Our AI-based personal finance app development services help users automate savings, identify patterns, and maintain financial health with minimal effort.",
+      "features": [
+        "AI-driven budget planning & savings suggestions",
+        "Smart expense categorization & tracking",
+        "Predictive financial analytics",
+        "Automated bill reminders & alerts",
+        "Personalized financial goals & insights"
+      ]
+    },
+    {
+      "title": "Cross-Platform App Development",
+      "description": "We develop cross-platform <a class='underline font-semibold' href='https://www.comfygen.com/android-app-development' >personal finance apps for Android</a>, iOS, and web using a single codebase. This approach ensures a fast, consistent, and cost-effective experience across devices, enabling you to reach a wider audience without compromising on performance or quality.",
+      "features": [
+        "Native and hybrid app support",
+        "Compatible with Android, iOS & Web",
+        "Single codebase for faster deployment",
+        "Consistent UI across all devices"
+      ]
+    },
+    {
+      "title": "Maintenance & Support",
+      "description": "Our job doesn’t end at launch. We offer reliable maintenance and support for personal finance apps to ensure smooth performance, bug fixes, feature updates, and security patches—keeping your app running efficiently and users satisfied at all times.",
+      "features": [
+        "Regular performance checks",
+        "Bug fixing and security patches",
+        "Feature upgrades and version updates",
+        "24/7 technical support"
+      ]
+    }
+  ],
 
+
+
+
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/personal-finance-app-development/p1.webp",
+      "title": "Budget & Expense Tracker App",
+      "description": "A modern personal finance app built for easy budget tracking and daily expense management. Users can set monthly limits, track spending in real time, and get smart alerts. We integrated AI-based insights and bank-level security to ensure a smooth and safe user experience.",
+      "link": "/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/personal-finance-app-development/p2.webp",
+      "title": "Smart Personal Finance Manager",
+      "description": "Money Wallet app is a cross-platform finance app that helps users plan savings, manage bills, and monitor income with ease. We added features like goal tracking, bill reminders, and multi-bank integration. The app was designed with a clean UI and personalized dashboard for better financial control.",
+      "link": "/contact-us"
+    }
+  ],
+
+
+
+
+  "servicesData1": [
+    {
+      "title": "Enhanced User Engagement",
+      "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
+      "features": []
+    },
+    {
+      "title": "Scalable and Personalized Services",
+      "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
+      "features": []
+    },
+    {
+      "title": "Real-Time Astrological Insights",
+      "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
+      "features": []
+    },
+    {
+      "title": "Global Reach and Accessibility",
+      "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
+      "features": []
+    },
+    {
+      "title": "Increased Revenue Opportunities",
+      "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
+      "features": []
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
+      "features": []
+    }
+  ],
+  "FutureDriven2": [
+    {
+      "title": "Rising Demand for Digital Money Management",
+      "desc": "More people now prefer mobile apps to manage their money. A personal finance app helps your business meet this demand by offering users simple tools to track expenses, budgets, and savings digitally."
+    },
+    {
+      "title": "User Engagement Through Data Visualization",
+      "desc": "Finance apps use charts and graphs to show users how they spend and save money. This visual experience keeps users engaged and helps them understand their finances more clearly and easily."
+    },
+    {
+      "title": "Increased Customer Retention with Automation",
+      "desc": "Features like automatic bill reminders, expense tracking, and budget alerts keep users coming back. Automation makes money management easier, which improves customer satisfaction and boosts app retention rates."
+    },
+    {
+      "title": "Brand Loyalty with Intuitive Financial Tools",
+      "desc": "Offering a smart, easy-to-use personal finance app builds trust. Users stick with brands that help them manage money better, increasing brand loyalty and long-term business growth."
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -155,39 +174,39 @@
     }
   ],
   "consultancyData": [
-  {
-    "title": "Budget Tracking",
-    "desc": "Our budget tracker app lets users create and manage monthly budgets with ease. It helps track income and expenses in real-time, allowing users to control spending and stick to their financial goals using a smart budget tracker app solution."
-  },
-  {
-    "title": "Expense Categorization",
-    "desc": "Users can automatically sort their spending into categories like groceries, bills, travel, and entertainment. This feature of our money management app provides a clear picture of where their money goes, helping them make smarter spending decisions every day."
-  },
-  {
-    "title": "Real-Time Sync",
-    "desc": "Our finance app offers real-time syncing across devices. Whether on mobile or desktop, users always have access to updated financial data, making it easier to track transactions, manage accounts, and stay in control of their finances anytime, anywhere."
-  },
-  {
-    "title": "Financial Goals & Alerts",
-    "desc": "With goal-setting tools, users can plan savings for trips, education, or emergencies. Our personal finance app sends helpful alerts and reminders to keep users motivated and on track toward their financial targets, improving long-term money management."
-  },
-  {
-    "title": "Bank Account Integration",
-    "desc": "Our personal finance apps integrate securely with multiple bank accounts and cards. Users can view balances, recent transactions, and account history in one place—making the app a complete financial dashboard for daily money management."
-  },
-  {
-    "title": "AI-Based Spending Insights",
-    "desc": "Using <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >AI-powered data analytics</a>, the finance app offers personalized insights based on spending habits. Users get smart suggestions to save money, avoid overspending, and improve their budgeting skills—making our personal finance app more intelligent and helpful."
-  },
-  {
-    "title": "Bill Reminders",
-    "desc": "Never miss a due date again. Our app includes automatic bill reminders, notifying users before payments are due. This key feature ensures users avoid late fees and stay on top of their financial responsibilities using a reliable finance tracker app."
-  },
-  {
-    "title": "Data Encryption & Security",
-    "desc": "We use advanced encryption, secure logins, and biometric authentication to protect user data. Our personal finance apps follow global security standards to ensure user information stays safe and private at all times."
-  }
-],
+    {
+      "title": "Budget Tracking",
+      "desc": "Our budget tracker app lets users create and manage monthly budgets with ease. It helps track income and expenses in real-time, allowing users to control spending and stick to their financial goals using a smart budget tracker app solution."
+    },
+    {
+      "title": "Expense Categorization",
+      "desc": "Users can automatically sort their spending into categories like groceries, bills, travel, and entertainment. This feature of our money management app provides a clear picture of where their money goes, helping them make smarter spending decisions every day."
+    },
+    {
+      "title": "Real-Time Sync",
+      "desc": "Our finance app offers real-time syncing across devices. Whether on mobile or desktop, users always have access to updated financial data, making it easier to track transactions, manage accounts, and stay in control of their finances anytime, anywhere."
+    },
+    {
+      "title": "Financial Goals & Alerts",
+      "desc": "With goal-setting tools, users can plan savings for trips, education, or emergencies. Our personal finance app sends helpful alerts and reminders to keep users motivated and on track toward their financial targets, improving long-term money management."
+    },
+    {
+      "title": "Bank Account Integration",
+      "desc": "Our personal finance apps integrate securely with multiple bank accounts and cards. Users can view balances, recent transactions, and account history in one place—making the app a complete financial dashboard for daily money management."
+    },
+    {
+      "title": "AI-Based Spending Insights",
+      "desc": "Using <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >AI-powered data analytics</a>, the finance app offers personalized insights based on spending habits. Users get smart suggestions to save money, avoid overspending, and improve their budgeting skills—making our personal finance app more intelligent and helpful."
+    },
+    {
+      "title": "Bill Reminders",
+      "desc": "Never miss a due date again. Our app includes automatic bill reminders, notifying users before payments are due. This key feature ensures users avoid late fees and stay on top of their financial responsibilities using a reliable finance tracker app."
+    },
+    {
+      "title": "Data Encryption & Security",
+      "desc": "We use advanced encryption, secure logins, and biometric authentication to protect user data. Our personal finance apps follow global security standards to ensure user information stays safe and private at all times."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen For Personal Finance App Development",
     "description": "Comfygen Technologies is a prominent <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/finance-app-development' >fintech app development agency</a>. We help businesses build the best user-friendly finance apps. We understand what users need and deliver powerful tools for smart budgeting, saving, and spending.",
@@ -230,17 +249,17 @@
     ]
   },
   "customTestimonials": [
-  {
-    "text": "We partnered with Comfygen for our personal finance app development and the results were outstanding. Their team delivered a smooth UI, secure system, and AI-powered analytics that users love.",
-    "name": "Sophia Lewis",
-    "title": "San Francisco, USA"
-  },
-  {
-    "text": "Comfygen built our finance tracking app with powerful features like expense management, goal setting, and real-time sync. Their post-launch support is also top-notch!",
-    "name": "Arjun Mehta",
-    "title": "Bengaluru, India"
-  }
-],
+    {
+      "text": "We partnered with Comfygen for our personal finance app development and the results were outstanding. Their team delivered a smooth UI, secure system, and AI-powered analytics that users love.",
+      "name": "Sophia Lewis",
+      "title": "San Francisco, USA"
+    },
+    {
+      "text": "Comfygen built our finance tracking app with powerful features like expense management, goal setting, and real-time sync. Their post-launch support is also top-notch!",
+      "name": "Arjun Mehta",
+      "title": "Bengaluru, India"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -447,8 +466,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -469,8 +486,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -492,44 +508,42 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/budgeting-app-development.webp",
-    "title": "Budgeting Apps",
-    "decs": "We develop custom budgeting apps that help users plan and manage their monthly income and expenses. These personal budgeting app solutions offer budget alerts, visual spending charts, and financial goals to improve money habits and promote smarter financial planning."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/expense-tracker-app.webp",
-    "title": "Expense Tracker Apps",
-    "decs": "Our expense tracker app development service allows users to record and categorize daily spending in real-time. These apps provide detailed reports and analytics that help users control their finances and avoid overspending."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/investment-management-app.webp",
-    "title": "Investment Management Apps",
-    "decs": "We create investment management apps that allow users to monitor their portfolio, track market trends, and make informed decisions. These apps support stock, mutual fund, and crypto tracking with real-time updates and alerts."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/bill-payment-app.webp",
-    "title": "Bill Payment Apps",
-    "decs": "Our bill payment app solutions enable users to schedule and pay bills on time. With features like auto-reminders, payment history, and secure gateways, users never miss due dates or fall behind on their financial obligations."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/credit-score-monitoring-app.webp",
-    "title": "Credit Score Monitoring Apps",
-    "decs": "We build credit monitoring apps that allow users to check and track their credit scores securely. These apps offer score improvement tips, credit history tracking, and alerts for any changes in credit reports."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/wealth-management-platform.webp",
-    "title": "Wealth Management Platforms",
-    "decs": "Our wealth management apps help users manage all aspects of personal finance—budgeting, investing, saving, and debt tracking—within a single platform. These solutions are ideal for individuals, families, and financial advisors."
-  }
-]
-  
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/budgeting-app-development.webp",
+      "title": "Budgeting Apps",
+      "decs": "We develop custom budgeting apps that help users plan and manage their monthly income and expenses. These personal budgeting app solutions offer budget alerts, visual spending charts, and financial goals to improve money habits and promote smarter financial planning."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/expense-tracker-app.webp",
+      "title": "Expense Tracker Apps",
+      "decs": "Our expense tracker app development service allows users to record and categorize daily spending in real-time. These apps provide detailed reports and analytics that help users control their finances and avoid overspending."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/investment-management-app.webp",
+      "title": "Investment Management Apps",
+      "decs": "We create investment management apps that allow users to monitor their portfolio, track market trends, and make informed decisions. These apps support stock, mutual fund, and crypto tracking with real-time updates and alerts."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/bill-payment-app.webp",
+      "title": "Bill Payment Apps",
+      "decs": "Our bill payment app solutions enable users to schedule and pay bills on time. With features like auto-reminders, payment history, and secure gateways, users never miss due dates or fall behind on their financial obligations."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/credit-score-monitoring-app.webp",
+      "title": "Credit Score Monitoring Apps",
+      "decs": "We build credit monitoring apps that allow users to check and track their credit scores securely. These apps offer score improvement tips, credit history tracking, and alerts for any changes in credit reports."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/wealth-management-platform.webp",
+      "title": "Wealth Management Platforms",
+      "decs": "Our wealth management apps help users manage all aspects of personal finance—budgeting, investing, saving, and debt tracking—within a single platform. These solutions are ideal for individuals, families, and financial advisors."
+    }
+  ]
 }

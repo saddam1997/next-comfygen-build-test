@@ -3,40 +3,85 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/healthCare.json";
-import LazyLoad from "react-lazy-load";
-import { FaDotCircle } from "react-icons/fa";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
 import { IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
 import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar } from '@tabler/icons-react';
-import ProcessSec from "../components/ProcessSec";
-import Features from "../components/Features";
-import CallToAction from "../components/CallToAction";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Milestones from "../Newcomponet/comman/Milestones";
-import Slider from "../components/Slider";
+import { FaDotCircle } from "react-icons/fa";
 
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), { loading: () => <p>Loading...</p>, });
-const FaQ = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+const Milestones = dynamic(
+  () => import("../Newcomponet/comman/Milestones"),
+  { loading: loader, ssr: true }
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 
 
@@ -420,31 +465,28 @@ export default function Mobile(props: any) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div>
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/healthcare-app-development/hero.webp')]">
-            <HeroSectionForAllPages
-              heading="Healthcare Mobile App Development Company in India"
-              ptag="Comfygen is a leading healthcare app development company in India specializing in telemedicine, ePharmacy, EHR/EMR, AI-based diagnosis, and wearable-integrated healthcare mobile apps. We deliver end-to-end digital healthcare solutions with advanced features, secure data management, and seamless user experience for hospitals, clinics, and healthcare startups."
-              li="6+ years of experience"
-              li1="70+ Medical apps launched"
-              li2="Next-Gen AI-Based Solutions"
-              li3="Blockchain-based App Solution"
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-            />
-          </div>
-        </div>
-        <div>
-          <Milestones />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Healthcare Mobile App Development Company in India"
+          ptag="Comfygen is a leading healthcare app development company in India specializing in telemedicine, ePharmacy, EHR/EMR, AI-based diagnosis, and wearable-integrated healthcare mobile apps. We deliver end-to-end digital healthcare solutions with advanced features, secure data management, and seamless user experience for hospitals, clinics, and healthcare startups."
+          li="6+ years of experience"
+          li1="70+ Medical apps launched"
+          li2="Next-Gen AI-Based Solutions"
+          li3="Blockchain-based App Solution"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/healthcare-app-development/hero.webp"
+        />
+
+        <Milestones />
+
         <AboutSection
           title="About Company"
           heading="Why Invest in Custom Healthcare Mobile App Development?"
@@ -482,7 +524,7 @@ export default function Mobile(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Heathcare Mobile Application Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
@@ -531,7 +573,7 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
-        <ContactFromCenter />
+
         <div className=" py-8">
           <div className="bg-black">
             <section className="items-center py-20  space-y-10  md:flex md:space-x-10 md:space-y-0 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -582,7 +624,7 @@ export default function Mobile(props: any) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-        
+
         <section className="py-8">
           <TechStack
             title="Technology Stack We Use in White Label Crypto Development"
@@ -616,8 +658,8 @@ export default function Mobile(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
 
-        <FaQ faqData={Frequently} title="Frequently Asked Questions" />
-      </div>
+        <Faq faqData={Frequently} title="Frequently Asked Questions" />
+      </div >
     </>
   );
 }

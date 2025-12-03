@@ -1,54 +1,80 @@
+import styles from "./styles.module.css";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./doctor-appointment-app-development/doctor.json";
-import styles from "./styles.module.css";
-import LazyLoad from "react-lazy-load";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import TechStack from "../components/TechStack";
-import PortfolioSec from "../components/PortfolioSec";
-import ProcessSec from "../components/ProcessSec";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import Faq from "../components/Faq";
-import ConsultancyApproach from "../components/ConsultancyApproach";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import SolutionSec from "../componentsnew/SolutionSec";
-import WhyChoose from "../components/WhyChooseUs";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Features from "./components/Features";
-const Tech = dynamic(() => import("./components/tech1"), {
-  loading: () => <p>Loading...</p>,
-});
+import JSON_DATA from "./doctor-appointment-app-development/doctor.json";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
 
 
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/img/doctor-appointment-portfolio-image.webp",
-      head: "Doctor Appointment App",
-      name: "At Comfygen Private Limited, we excel at innovative doctor appointment apps designed to make healthcare easier for patients and healthcare professionals. Our apps boast user-friendly interfaces, seamless appointment scheduling, and robust features such as real-time notifications, secure patient-physician communication, and integrated payment gateways We ensure that our apps not only work but also meet the highest data security standards and privacy.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
 
 
 const latesttech = [
@@ -112,7 +138,7 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -296,7 +322,7 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-       Doctor Appointment App Development Company In India & The USA
+          Doctor Appointment App Development Company In India & The USA
         </title>
 
         <meta
@@ -312,7 +338,7 @@ export default function Ecommerce(props) {
         {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/doctor-appointment-app-development" />
 
-   
+
 
         {/* <!-- Viewport a/nd Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -346,31 +372,27 @@ export default function Ecommerce(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="">
-          <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/doctor-appointment-development-app-hero-imfg.webp')]">
-              <HeroSectionForAllPages
-                heading="Doctor Appointment App Development Company in India & USA"
-                ptag="Make healthcare simple and accessible with a smart doctor appointment booking app built by Comfygen. We are a leading Doctor Appointment App Development Company in India and the USA, creating easy-to-use telemedicine and online doctor consultation apps for hospitals, clinics, and medical startups."
-                ptag1="Discover how we can elevate your brand and create impactful digital solutions for your business."
-                btnName="Talk With Expert"
-                li="AI-Powered Doctor Recommendations"
-                li1="HIPAA-compliant and blockchain-enabled solutions"
-                li2="Telemedicine & Video Consultation"
-                li3="E-Prescriptions & Medical Records"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-              />
-            </div>
-          </div>
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Doctor Appointment App Development Company in India & USA"
+          ptag="Make healthcare simple and accessible with a smart doctor appointment booking app built by Comfygen. We are a leading Doctor Appointment App Development Company in India and the USA, creating easy-to-use telemedicine and online doctor consultation apps for hospitals, clinics, and medical startups."
+          ptag1="Discover how we can elevate your brand and create impactful digital solutions for your business."
+          btnName="Talk With Expert"
+          li="AI-Powered Doctor Recommendations"
+          li1="HIPAA-compliant and blockchain-enabled solutions"
+          li2="Telemedicine & Video Consultation"
+          li3="E-Prescriptions & Medical Records"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/doctor-appointment-development-app-hero-imfg.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Why Invest in Doctor Appointment App Development?"
@@ -399,15 +421,26 @@ export default function Ecommerce(props) {
           subheading="Get instant medical attention from expert doctors with our white-label doctor appointment app development solutions. At Comfygen, we deliver personalized, secure, and scalable readymade doctor appointment app development, providing patients quick consultations while fulfilling hospitals’ and clinics’ unique operational needs efficiently."
           techData={latesttech}
         />
-        <Features/>
-        {/* <Tech /> */}
+
+
+        <div className="py-8">
+          <Features
+            heading="We Build Healthcare Apps with Powerful Patient, Doctor & Admin Panels"
+            description="At Comfygen Technologies, we design and develop doctor appointment apps with advanced and easy-to-use panels for patients, doctors, and admins. Our custom app solutions ensure seamless communication, better healthcare management, and enhanced user experience for clinics, hospitals, and startups."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
+
+
         <div className="mt-10">
-          <PortfolioSec
-            techData={techDataForPage1}
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
             heading="Our Portfolio for Doctor Appointment App Development"
             description=""
           />
         </div>
+
+
         <CallToAction
           heading="Build Your Doctor Appointment App Today!"
           text="Take your healthcare services to the next level with a custom doctor appointment app from Comfygen Technologies."

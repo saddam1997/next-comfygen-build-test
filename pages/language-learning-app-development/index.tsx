@@ -3,73 +3,71 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./languagelearningappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../components/HireDeveloper";
-import ClientTestimonials from "../components/ClientTestimonials";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-  IconBriefcase,
-  IconHeartbeat,
-  IconApps,
-} from "@tabler/icons-react";
-import Header from "../componentsnew/Header";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import Slider from "../components/Slider";
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
 const AboutSection = dynamic(
-  () => import("../components/AboutSection"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
 );
 
-// import ServicesSection from "../componentsnew/ServicesSection";
-const ServicesSection = dynamic(() => import("../componentsnew/ServicesSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import ConsultancyApproach from "../components/ConsultancyApproach";
-const ConsultancyApproach = dynamic(() => import("../components/ConsultancyApproach"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-
-// import TechStack from "../components/TechStack";
-const TechStack = dynamic(() => import("../components/TechStack"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-const CoreFeaturesSection = dynamic(() => import("../componentsnew/CoreFeaturesSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import ProcessSection from "../componentsnew/ProcessSection";
-const ProcessSection = dynamic(() => import("../componentsnew/ProcessSection"), {
-  loading: () => <p>Loading...</p>,
-});
-
-// import WhyChoose from "../components/WhyChooseUs";
-const WhyChoose = dynamic(() => import("../components/WhyChooseUs"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
 );
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -109,57 +107,6 @@ const Process = [
   },
 ];
 ;
-
-
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Elementary Application Development",
-    desc: "Comfygen is a trusted tutor app development company that creates educational and engaging mobile apps for elementary and primary schools. Our education apps feature interactive learning modules, AI-driven assessments, and gamification to make education fun and effective for young learners. Our on-demand tutor app development services make sure safe and engaging learning.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Freelance Tutor Marketplace Development",
-    desc: "Comfygen builds freelance tutor marketplace apps for independent tutors to offer their services. A profile can be created, a session can be booked, secure payments can be made, and rating systems provide quality assurance for students.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "K-12 Education App Development",
-    desc: "Comfygen’s education mobile app development company delivers K-12 education apps that provide structured learning experiences with customizable content. We make sure of seamless curriculum alignment, progress tracking, and gamified learning elements for students of all ages.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "STEM Learning Application Development",
-    desc: "Our best custom tutor booking app development company specializes in STEM learning applications, integrating AI, AR/VR, and interactive simulations to make science, technology, engineering, and mathematics more engaging. With hands-on experiments and 3D models, students grasp complex concepts easily.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Language Learning Application Development",
-    desc: "As a leader in online learning app development, we develop innovative language learning applications with AI-powered voice recognition, multilingual support, and interactive exercises. Our tutor management app development solutions help learners master new languages with ease while guaranteeing an immersive experience.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Test Preparation App Development Solutions",
-    desc: "We provide custom tutor app development services for test preparation platforms, helping students prepare for competitive exams with AI-driven mock tests, adaptive learning paths, and instant tutor assistance. Our education mobile app development company makes sure of an intuitive and user-friendly experience for aspirants.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Corporate Training & Employee Learning App Development",
-    desc: "We offer corporate training app development solutions designed for businesses to upskill employees through on-demand courses, microlearning modules, and certification programs. Our on-demand tutor app development services help organizations enhance employee productivity.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Special Needs & Inclusive Education App Development",
-    desc: "We develop inclusive education apps that cater to students with disabilities. Our best <a class='font-semibold text-blue-600' href='/e-learning-app-development'>E-learning mobile app development</a>  agency offers accessibility features such as text-to-speech, sign language support, and adaptive learning modules, ensuring equal learning opportunities for all.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness and Wellness Coaching App Development",
-    desc: "We provide fitness and wellness coaching apps that connect users with expert trainers for personalized health programs, yoga classes, and mental well-being sessions. Our on-demand tutor app development solutions ensure smooth live sessions and performance tracking",
-  },
-];
-
-
 
 
 
@@ -493,25 +440,25 @@ export default function ClinicalApp(props: any) {
         ))}
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-hero.webp')]" >
-          <HeroSectionForAllPages
-            heading="Empower Global Communication with Custom Language Learning App Development Company"
-            ptag="Looking to build a powerful, engaging language learning app? At Comfygen, we specialize in language learning app development that combines AI, gamification, and intuitive design to make learning fun and effective. Whether you're launching a new edtech platform or enhancing your existing app, we turn your vision into a scalable solution."
-            li="AI-Powered Learning Paths"
-            li1="Real-Time Progress Tracking"
-            li2="Cross-Platform App Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Empower Global Communication with Custom Language Learning App Development Company"
+          ptag="Looking to build a powerful, engaging language learning app? At Comfygen, we specialize in language learning app development that combines AI, gamification, and intuitive design to make learning fun and effective. Whether you're launching a new edtech platform or enhancing your existing app, we turn your vision into a scalable solution."
+          li="AI-Powered Learning Paths"
+          li1="Real-Time Progress Tracking"
+          li2="Cross-Platform App Development"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-hero.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="Transforming Language Learning with Custom App Solutions"
@@ -524,10 +471,22 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Language Learning App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a className='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection heading="Our Language Learning App Development Services" subtitle="At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a class='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences." servicesData={JSON_DATA.servicesData} />
 
-        <ContactFromCenter />
+
+
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -540,7 +499,7 @@ export default function ClinicalApp(props: any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Projects That Speak Volumes – Explore Our Portfolio"
             description="We create innovative, engaging, scalable, and effective language learning apps. We have built two outstanding educational platforms that showcase our expertise in developing feature-rich, user-focused educational tools."
@@ -564,8 +523,19 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
-        <section className="py-5">
-          <ProcessSection title="Our Language Learning App Development Process" description="At Comfygen, we follow a strategic, agile, and user-centric approach to language learning app development. From initial planning to post-launch optimization, our process ensures every app we deliver is engaging, scalable, and tailored to meet the diverse needs of learners and educators worldwide." processSlides={Process} />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Language Learning App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               At Comfygen, we follow a strategic, agile, and user-centric approach to language learning app development. From initial planning to post-launch optimization, our process ensures every app we deliver is engaging, scalable, and tailored to meet the diverse needs of learners and educators worldwide.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
         </section>
 
         <WhyChoose

@@ -1,32 +1,75 @@
-import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/neobankappdevelopment.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import PortfolioSecs from "../components/PortfolioSec";
-import ServicesSection from '../componentsnew/ServicesSection'
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(() => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 const Process = [
   {
     title: "Discovery & Planning",
@@ -65,55 +108,10 @@ const Process = [
   }
 ];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/ai-driven-app.webp",
-      head: "AI-Driven Mobile Banking App",
-      name: "We developed an AI-powered mobile banking app featuring smart budgeting, predictive insights, and automated assistance for personalized, real-time financial management and customer support.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/blockchain-wallet.webp",
-      head: "Blockchain-Based Digital Wallet",
-      name: "This blockchain-integrated digital wallet app ensures secure, transparent, and lightning-fast transactions with features like crypto-wallet linking, biometric login, and immutable ledger history.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/core-banking-app.webp",
-      head: "Core Banking System App",
-      name: "A robust mobile banking app integrated with core banking APIs, enabling secure fund transfers, account management, and instant notifications with PCI-DSS-compliant infrastructure.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#"
-    }
-  ]
-};
+
 
 const jsonLdData = [
- 
+
 
   {
     "@context": "https://schema.org",
@@ -125,9 +123,9 @@ const jsonLdData = [
       "@type": "ContactPoint",
       "contactType": "sales",
       "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",          
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
       "availableLanguage": "en, in"
     },
     "sameAs": [
@@ -138,7 +136,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-private-limited",
       "https://in.pinterest.com/comfygenpvt/"
     ]
-  
+
   },
 
   {
@@ -206,9 +204,9 @@ const jsonLdData = [
       "NeoBank MVP development",
       "NPCI and Bank API Integration",
       "Digital Wallet Integration"
-  
+
     ],
-   
+
     "sameAs": [
       "https://www.facebook.com/comfygen",
       "https://twitter.com/comfygentech",
@@ -216,8 +214,8 @@ const jsonLdData = [
       "https://www.youtube.com/@ComfygenBusiness",
       "https://www.linkedin.com/company/comfygen-private-limited",
       "https://in.pinterest.com/comfygenpvt/"
-  
-    ]  
+
+    ]
   },
 
   {
@@ -244,11 +242,11 @@ const jsonLdData = [
       "@type": "ContactPoint",
       "contactType": "sales",
       "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-          "email": "sales@comfygen.com",
-                  
-          "availableLanguage": "en, in"
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
+
+      "availableLanguage": "en, in"
     },
     "sameAs": [
       "https://www.facebook.com/comfygen",
@@ -259,8 +257,8 @@ const jsonLdData = [
       "https://in.pinterest.com/comfygenpvt/"
     ]
   },
-  
-  
+
+
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
@@ -307,8 +305,8 @@ const jsonLdData = [
       }
     ]
   }
-  
-  
+
+
 ];
 
 
@@ -331,8 +329,8 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-           NeoBank App Development Company | Custom NeoBank App Solutions
-         </title>
+          NeoBank App Development Company | Custom NeoBank App Solutions
+        </title>
         <meta
           name="description"
           content="Comfygen is a leading NeoBank app development company delivering secure, scalable, and AI-powered digital banking solutions for fintechs and banks."
@@ -345,8 +343,8 @@ export default function Ecommerce(props) {
           href=" https://www.comfygen.com/neo-bank-app-development"
         />
 
-        <meta 
-          name="robots" 
+        <meta
+          name="robots"
           content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
 
 
@@ -417,14 +415,14 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-og-image.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-        <meta property="og:image" content="add image URL"/>
-        <meta property="og:image:secure_url" content="Add img URL"/>
-        <meta property="og:image:alt" content="UPI App Development"/>
-        <meta property="og:url" content="https://www.comfygen.com/neo-bank-app-development"/>
-        <meta property="og:title" content="UPI Payment App Development Company"/>
-        <meta property="og:description" content="Partner with Comfygen, a top UPI payment app development company delivering secure, NPCI-compliant apps with seamless performance for fintech startups and enterprises."/>
+        <meta property="og:image" content="add image URL" />
+        <meta property="og:image:secure_url" content="Add img URL" />
+        <meta property="og:image:alt" content="UPI App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/neo-bank-app-development" />
+        <meta property="og:title" content="UPI Payment App Development Company" />
+        <meta property="og:description" content="Partner with Comfygen, a top UPI payment app development company delivering secure, NPCI-compliant apps with seamless performance for fintech startups and enterprises." />
 
-        
+
         <meta property="og:image" content="add image URL" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-og-image.webp" />
         <meta property="og:image:alt" content="NeoBanking App Development" />
@@ -439,26 +437,26 @@ export default function Ecommerce(props) {
         />
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="NeoBank App Development Company for the Future of Digital Banking"
-            ptag="Comfygen is a trusted NeoBank app development company delivering secure, AI-powered, and user-centric NeoBank applications. We empower banks, credit unions, and fintech startups with custom NeoBank solutions, open banking API integration, real-time payments, and advanced security features. With deep fintech expertise and future-ready technologies, we help financial institutions transform digital banking experiences."
-            li="Custom NeoBank App Development"
-            li1="AI & Open Banking API Integration"
-            li2="Real-time Payments & Security Compliance"
-            li3="Continuous Support & Updates"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="NeoBank App Development Company for the Future of Digital Banking"
+          ptag="Comfygen is a trusted NeoBank app development company delivering secure, AI-powered, and user-centric NeoBank applications. We empower banks, credit unions, and fintech startups with custom NeoBank solutions, open banking API integration, real-time payments, and advanced security features. With deep fintech expertise and future-ready technologies, we help financial institutions transform digital banking experiences."
+          li="Custom NeoBank App Development"
+          li1="AI & Open Banking API Integration"
+          li2="Real-time Payments & Security Compliance"
+          li3="Continuous Support & Updates"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-hero.webp"
+        />
+
         <AboutSection
           heading="Your Trusted Partner for Next-Gen NeoBank App Development"
           description1="Launching a NeoBank app offers businesses a future-ready approach to digital banking by eliminating the need for physical branches. It enables real-time transactions, personalized financial insights, automated savings, and seamless user experiences—all accessible through a smartphone. With increasing demand for digital-first financial services, NeoBank apps help attract tech-savvy users and boost customer engagement."
@@ -467,38 +465,57 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
 
-        <ServicesSection 
-          heading="We Provide Secure and Scalable NeoBank App Development Services"
-          subtitle="As a premier NeoBank app development company, we specialize in creating secure, scalable, and feature-rich banking solutions that redefine digital finance. Our team leverages advanced technologies such as AI/ML, Blockchain, and open banking APIs to craft apps that ensure seamless user experiences and strong security."
-          servicesData={JSON_DATA.servicesData} />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Secure and Scalable NeoBank App Development Services</h2>
+              <p className="text-base text-center font-normal">As a premier NeoBank app development company, we specialize in creating secure, scalable, and feature-rich banking solutions that redefine digital finance. Our team leverages advanced technologies such as AI/ML, Blockchain, and open banking APIs to craft apps that ensure seamless user experiences and strong security.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        
-       
-        <CoreFeaturesSection   
-          title="Our NeoBank App Development Solutions Come Packed with Powerful Features" 
-          subtitle="At Comfygen, we design NeoBank applications that offer more than just digital banking—they deliver a complete, user-centric financial experience. Our NeoBanking app development solutions are tailored to meet modern customer expectations with seamless, secure, and intuitive features." 
+
+
+        <CoreFeaturesSection
+          title="Our NeoBank App Development Solutions Come Packed with Powerful Features"
+          subtitle="At Comfygen, we design NeoBank applications that offer more than just digital banking—they deliver a complete, user-centric financial experience. Our NeoBanking app development solutions are tailored to meet modern customer expectations with seamless, secure, and intuitive features."
           features={JSON_DATA.LeadingSoftware} />
-                
 
-        <PortfolioSecs
-          techData={techDataForPage1}
-          heading="Our UPI Payment Apps Portfolio"
-          description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our UPI Payment Apps Portfolio"
+            description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
           />
-        
+        </section>
+
+
         <TrendsSection
           heading="Advanced Tech We Integrate in NeoBank Apps"
           subtitle="At Comfygen, we empower every NeoBank app with advanced technologies to deliver secure, smart, and scalable digital banking solutions. Here’s how we future-proof your app:"
           trends={JSON_DATA.FoodAppMaker}
         />
 
-        <ProcessSection
-          title="Our NeoBanking Development Process"
-          description="Our NeoBank app development process is a strategic, end-to-end approach focused on building secure, scalable, and innovative digital banking solutions tailored to your fintech vision."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our NeoBanking Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                Our NeoBank app development process is a strategic, end-to-end approach focused on building secure, scalable, and innovative digital banking solutions tailored to your fintech vision.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         <TechStack
           title="Tech Stack We Use for NeoBank App Development"

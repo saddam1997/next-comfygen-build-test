@@ -65,36 +65,32 @@
         "title": "Blockchain Mobile App Development"
       }
     ],
-
-"portfoliodata": [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
-    "title": "FinFlow - A Personal Finance Management App",
-    "description": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently. The app includes a multitude of features; such as expense tracking, budget creation, finance goal setting, etc. These features make the app more efficient.",
-    "link": "/portfolio/personal-finance-management-app"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
-    "title": "PayMaster - A Mobile Payment Solution",
-    "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
-    "link": "/portfolio/mobile-payment-app-solution"
-  },
-  {
-    "image": "https://www.comfygen.com/image/portfolio-pay-master.webp",
-    "title": "InvestSmart - A Stock Trading and Investment App",
-    "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference. The interface is user-friendly and suited for both beginners and seasoned investors. Secure logins, data encryption, and instant alerts ensure users' investments are protected. It has become a central platform for all who wish to manage personal investments with minimal effort.",
-    "link": "/portfolio/stock-trading-finance-app"
-  },
-  {
-    "image": "https://www.comfygen.com/image/hero-image-blockchain-based-fintech-app.webp",
-    "title": "Blockchain-Based FinTech Applications",
-    "description": "Our client required a secure and transparent Blockchain-based FinTech application development solution to enhance financial transactions, ensure data integrity, and improve transaction efficiency. As a top-rated custom FinTech mobile app development company, we built a decentralized and tamper-proof platform that integrates smart contracts, digital asset management, and real-time transaction processing.",
-    "link": "/portfolio/blockchain-based-fintech-app"
-  }
-],
-
-
-
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
+        "title": "FinFlow - A Personal Finance Management App",
+        "description": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently. The app includes a multitude of features; such as expense tracking, budget creation, finance goal setting, etc. These features make the app more efficient.",
+        "link": "/portfolio/personal-finance-management-app"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
+        "title": "PayMaster - A Mobile Payment Solution",
+        "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
+        "link": "/portfolio/mobile-payment-app-solution"
+      },
+      {
+        "image": "https://www.comfygen.com/image/portfolio-pay-master.webp",
+        "title": "InvestSmart - A Stock Trading and Investment App",
+        "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference. The interface is user-friendly and suited for both beginners and seasoned investors. Secure logins, data encryption, and instant alerts ensure users' investments are protected. It has become a central platform for all who wish to manage personal investments with minimal effort.",
+        "link": "/portfolio/stock-trading-finance-app"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-blockchain-based-fintech-app.webp",
+        "title": "Blockchain-Based FinTech Applications",
+        "description": "Our client required a secure and transparent Blockchain-based FinTech application development solution to enhance financial transactions, ensure data integrity, and improve transaction efficiency. As a top-rated custom FinTech mobile app development company, we built a decentralized and tamper-proof platform that integrates smart contracts, digital asset management, and real-time transaction processing.",
+        "link": "/portfolio/blockchain-based-fintech-app"
+      }
+    ],
     "pageData": {
       "title": "Why Choose Comfygen for Finance App Development?",
       "description": "We craft custom finance app development services that meet business goals and satisfy user expectations. We build fintech app development solutions that merge expert finance and banking knowledge with cutting-edge technologies. Our finance mobile app development solutions deliver competitive services that cater to every business need.",
@@ -137,7 +133,6 @@
       ]
     },
     "servicesData": [
-     
       {
         "title": "Fintech App Development Consulting",
         "description": "We provide fintech app development consulting services, which include discussing your ideologies, feasible customizations to implement, features, budgeting, time frame, etc. Also, our agenda is to disclose the possible unique functionality and advanced technology that makes your fintech software engaging and futuristic-driven.",
@@ -218,9 +213,6 @@
           "Real-time loan status updates"
         ]
       },
-
-
-
       {
         "title": "Wealth Management App Development",
         "description": "As a finance mobile App development firm, we develop wealth management platforms that enable users to manage investments, optimize portfolios, and plan financial goals effectively. Our wealth management app development services incorporate AI-driven robo-advisory, tax optimization tools, and seamless integration with mutual funds and stock markets, ensuring efficient and intelligent wealth management.",
@@ -286,6 +278,61 @@
         ]
       }
     ],
+
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/admin-panel-finance-app-development.webp",
+    "additionalDetails": [
+      { "details": "User & Role Management", "emoji": "", "content": "" },
+      { "details": "Transaction Monitoring", "emoji": "", "content": "" },
+      { "details": "KYC & Compliance Management ", "emoji": "", "content": "" },
+      { "details": "AI-Powered Analytics ", "emoji": "", "content": "" },
+      { "details": "Fraud Detection & Risk Management ", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/user-panel-finance-app-development.webp",
+    "additionalDetails": [
+      { "details": "Intuitive Dashboard ", "emoji": "", "content": "" },
+      { "details": "Secure Payment Gateways ", "emoji": "", "content": "" },
+      { "details": "Automated Expense Tracking ", "emoji": "", "content": "" },
+      { "details": "Multi-Currency Support ", "emoji": "", "content": "" },
+      { "details": "Push Notifications & Alerts ", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Agent Panel",
+    "img": "https://www.comfygen.com/image/agent-panel-finance-app-development.webp",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Loan & Credit Management ", "emoji": "", "content": "" },
+      { "details": "Investment Portfolio Management ", "emoji": "", "content": "" },
+      {
+        "details": "Instant Support & Query Management ",
+        "emoji": "",
+        "content": ""
+      },
+      { "details": "Commission & Revenue Tracking ", "emoji": "", "content": "" },
+      { "details": "Customer KYC & Verification ", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+
+
+
+
+
 
     "MobileSolution": [
       {
@@ -1251,8 +1298,6 @@
       }
     ],
     "customSliderData": [
-
-
       {
         "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
         "title": "Banking",
@@ -1283,7 +1328,6 @@
         "title": "Personal Finance",
         "description": "We create personal finance apps that simplify budgeting, expense tracking, and savings management, empowering individuals to take control of their financial well-being and achieve their goals."
       }
-
     ],
     "FoodAppMaker": [
       {

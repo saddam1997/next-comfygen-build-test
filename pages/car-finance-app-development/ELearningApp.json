@@ -22,63 +22,62 @@
     }
   ],
   "servicesData": [
-  {
-    "title": "Custom Car Finance App Development",
-    "description": "We specialize in finance app development, creating top-notch car finance mobile app solutions that simplify the entire auto loan journey. Whether you're offering car financing, leasing, or dealership-based lending, our apps are designed to deliver seamless loan processing, easy document uploads, and personalized loan options.",
-    "features": [
-      "Personalized app features for lenders and users",
-      "Real-time document verification and approval tracking",
-      "Fully branded and white-label auto loan app solutions"
-    ]
-  },
-  {
-    "title": "Car Loan EMI Calculator Integration",
-    "description": "Our best car finance applications come integrated with accurate and interactive car loan EMI calculators to help users estimate monthly repayments in seconds. This boosts transparency, increases user trust, and empowers informed decision-making before applying for an auto loan.",
-    "features": [
-      "Smart EMI and interest calculators",
-      "Loan comparison with flexible terms",
-      "User-friendly loan simulation tools"
-    ]
-  },
-  {
-    "title": "Auto Loan App with Credit Score Check",
-    "description": "We are best car finance app development company, we build auto loan apps that are integrated with credit bureaus (like CIBIL or Experian) to offer real-time credit score checks. This streamlines the loan approval process and ensures accurate risk assessments.",
-    "features": [
-      "Instant credit score integration",
-      "Secure API access to credit data",
-      "Automated eligibility checks"
-    ]
-  },
-  {
-    "title": "Car Dealership Loan App Solutions",
-    "description": "We develop high-performance car dealership loan apps that simplify financing directly at the showroom. Dealerships can offer instant loans, manage inventory-linked lending, and provide customers with a seamless application process.",
-    "features": [
-      "Custom dashboards for dealerships",
-      "Real-time inventory and loan mapping",
-      "Digital loan approvals for faster sales"
-    ]
-  },
-  {
-    "title": "AI-Based Financial Advisory for Car Buyers",
-    "description": "Our AI-based personal finance app development services include intelligent advisory tools that guide users through the best car loan options, budgeting, and repayment strategies. This ensures smarter financial decisions for buyers and more conversions for lenders.",
-    "features": [
-      "Personalized loan suggestions",
-      "Budget planning with AI insights",
-      "Predictive analysis for loan repayment"
-    ]
-  },
-  {
-    "title": "Car Finance App Maintenance & Support",
-    "description": "We offer continuous maintenance and support services to provide your car finance app stays updated, secure, and fully functional. From feature upgrades to performance monitoring, we provide reliable post-launch services.",
-    "features": [
-      "24/7 technical support",
-      "Timely upgrades and compliance updates",
-      "App performance optimization"
-    ]
-  }
-]
-,
-"servicesData1": [
+    {
+      "title": "Custom Car Finance App Development",
+      "description": "We specialize in finance app development, creating top-notch car finance mobile app solutions that simplify the entire auto loan journey. Whether you're offering car financing, leasing, or dealership-based lending, our apps are designed to deliver seamless loan processing, easy document uploads, and personalized loan options.",
+      "features": [
+        "Personalized app features for lenders and users",
+        "Real-time document verification and approval tracking",
+        "Fully branded and white-label auto loan app solutions"
+      ]
+    },
+    {
+      "title": "Car Loan EMI Calculator Integration",
+      "description": "Our best car finance applications come integrated with accurate and interactive car loan EMI calculators to help users estimate monthly repayments in seconds. This boosts transparency, increases user trust, and empowers informed decision-making before applying for an auto loan.",
+      "features": [
+        "Smart EMI and interest calculators",
+        "Loan comparison with flexible terms",
+        "User-friendly loan simulation tools"
+      ]
+    },
+    {
+      "title": "Auto Loan App with Credit Score Check",
+      "description": "We are best car finance app development company, we build auto loan apps that are integrated with credit bureaus (like CIBIL or Experian) to offer real-time credit score checks. This streamlines the loan approval process and ensures accurate risk assessments.",
+      "features": [
+        "Instant credit score integration",
+        "Secure API access to credit data",
+        "Automated eligibility checks"
+      ]
+    },
+    {
+      "title": "Car Dealership Loan App Solutions",
+      "description": "We develop high-performance car dealership loan apps that simplify financing directly at the showroom. Dealerships can offer instant loans, manage inventory-linked lending, and provide customers with a seamless application process.",
+      "features": [
+        "Custom dashboards for dealerships",
+        "Real-time inventory and loan mapping",
+        "Digital loan approvals for faster sales"
+      ]
+    },
+    {
+      "title": "AI-Based Financial Advisory for Car Buyers",
+      "description": "Our AI-based personal finance app development services include intelligent advisory tools that guide users through the best car loan options, budgeting, and repayment strategies. This ensures smarter financial decisions for buyers and more conversions for lenders.",
+      "features": [
+        "Personalized loan suggestions",
+        "Budget planning with AI insights",
+        "Predictive analysis for loan repayment"
+      ]
+    },
+    {
+      "title": "Car Finance App Maintenance & Support",
+      "description": "We offer continuous maintenance and support services to provide your car finance app stays updated, secure, and fully functional. From feature upgrades to performance monitoring, we provide reliable post-launch services.",
+      "features": [
+        "24/7 technical support",
+        "Timely upgrades and compliance updates",
+        "App performance optimization"
+      ]
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -104,8 +103,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -114,39 +112,105 @@
     }
   ],
   "consultancyData": [
+    {
+      "title": "User Registration and KYC Verification",
+      "desc": "Users can easily sign up and complete KYC verification by uploading their documents securely through the mobile app for car finance management. This ensures safe onboarding and speeds up the loan approval process for all users."
+    },
+    {
+      "title": "Car Loan Eligibility Checker",
+      "desc": "The car finance app allows users to quickly check their car loan eligibility by entering basic financial details. This helps them know whether they qualify for a loan before starting the application process."
+    },
+    {
+      "title": "EMI Calculators and Loan Simulators",
+      "desc": "Users can calculate their monthly EMI, total loan cost, and interest easily using in-app calculators. It helps them plan their budget and select the most affordable car loan option available."
+    },
+    {
+      "title": "Document Upload and Verification",
+      "desc": "With just a few taps, users can upload necessary documents like ID proof, income statements, and more. The best car finance app supports secure document submission and speeds up the verification process."
+    },
+    {
+      "title": "Loan Comparison and Selection",
+      "desc": "Users can compare various car loan options from different lenders within the app. They can review interest rates, EMIs, and benefits to select the most suitable financing option for their needs."
+    },
+    {
+      "title": "Repayment Tracker",
+      "desc": "The top auto finance app includes a repayment tracker that helps users monitor EMI due dates, payment history, and upcoming installments. It improves financial discipline and prevents missed or late payments."
+    },
+    {
+      "title": "Push Notifications and Reminders",
+      "desc": "Users receive real-time updates about loan status, EMI reminders, and special offers. Push notifications help them stay informed and manage their car loan journey with ease and confidence."
+    },
+    {
+      "title": "Dashboard for Admins and Users",
+      "desc": "A smart dashboard gives users and admins complete control over applications, loan tracking, and account management. It offers easy access to all important data in one convenient view."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/potfolio1.webp",
+      "title": "Instant Car Loan App for Dealerships",
+      "description": "Car loan app is a custom car finance app developed for a large dealership network, offering real-time loan approvals directly from the showroom floor. It includes a smart EMI calculator, automated credit check API, and loan comparison tools.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/potfolio2.webp",
+      "title": "Car Loan Management App for Fintech Startups",
+      "description": "Car Loan Management App is a full-featured auto loan app for a fintech startup offering car loan services to Tier 2 & 3 cities. The car finance app includes digital onboarding, EMI planner, multi-lender loan comparison, and a repayment tracker.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ],
+
+
+
+
+"featuresData":[
   {
-    "title": "User Registration and KYC Verification",
-    "desc": "Users can easily sign up and complete KYC verification by uploading their documents securely through the mobile app for car finance management. This ensures safe onboarding and speeds up the loan approval process for all users."
+    "id": 1,
+    "title": "User Panel",
+    "icon": "<i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/car-finance-app-development/p3.webp", 
+    "additionalDetails": [
+      { "details": "Easy Registration & KYC", "emoji": "", "content": "" },
+      { "details": "Car Loan Eligibility Checker", "emoji": "", "content": "" },
+      { "details": "EMI Calculator & Loan Simulator", "emoji": "", "content": "" },
+      { "details": "Loan Application Form", "emoji": "", "content": "" },
+      { "details": "Document Upload & Status Tracking", "emoji": "", "content": "" },
+      { "details": "Real-Time Credit Score Checker", "emoji": "", "content": "" },
+      { "details": "Loan Comparison & Selection", "emoji": "", "content": "" },
+      { "details": "EMI Reminder Notifications", "emoji": "", "content": "" },
+      { "details": "Repayment History Tracker", "emoji": "", "content": "" },
+      { "details": "Profile and Loan Dashboard", "emoji": "", "content": "" }
+    ]
   },
   {
-    "title": "Car Loan Eligibility Checker",
-    "desc": "The car finance app allows users to quickly check their car loan eligibility by entering basic financial details. This helps them know whether they qualify for a loan before starting the application process."
-  },
-  {
-    "title": "EMI Calculators and Loan Simulators",
-    "desc": "Users can calculate their monthly EMI, total loan cost, and interest easily using in-app calculators. It helps them plan their budget and select the most affordable car loan option available."
-  },
-  {
-    "title": "Document Upload and Verification",
-    "desc": "With just a few taps, users can upload necessary documents like ID proof, income statements, and more. The best car finance app supports secure document submission and speeds up the verification process."
-  },
-  {
-    "title": "Loan Comparison and Selection",
-    "desc": "Users can compare various car loan options from different lenders within the app. They can review interest rates, EMIs, and benefits to select the most suitable financing option for their needs."
-  },
-  {
-    "title": "Repayment Tracker",
-    "desc": "The top auto finance app includes a repayment tracker that helps users monitor EMI due dates, payment history, and upcoming installments. It improves financial discipline and prevents missed or late payments."
-  },
-  {
-    "title": "Push Notifications and Reminders",
-    "desc": "Users receive real-time updates about loan status, EMI reminders, and special offers. Push notifications help them stay informed and manage their car loan journey with ease and confidence."
-  },
-  {
-    "title": "Dashboard for Admins and Users",
-    "desc": "A smart dashboard gives users and admins complete control over applications, loan tracking, and account management. It offers easy access to all important data in one convenient view."
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-cogs text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/car-finance-app-development/p2.webp", 
+    "additionalDetails": [
+      { "details": "User and Loan Application Management", "emoji": "", "content": "" },
+      { "details": "Loan Product Creation & Customization", "emoji": "", "content": "" },
+      { "details": "EMI Collection and Payment Tracking", "emoji": "", "content": "" },
+      { "details": "KYC and Document Verification Tools", "emoji": "", "content": "" },
+      { "details": "Credit Score API Integration", "emoji": "", "content": "" },
+      { "details": "Push Notification Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Reporting & Analytics", "emoji": "", "content": "" },
+      { "details": "Auto-approval & Manual Review Settings", "emoji": "", "content": "" },
+      { "details": "Admin Dashboard for Data Control", "emoji": "", "content": "" },
+      { "details": "Customer Support Chat Access", "emoji": "", "content": "" }
+    ]
   }
 ],
+
+
+
+
+
+
+
+
+
+
   "pageData": {
     "title": "Why Choose Comfygen for Car Finance App Development?",
     "description": "Choosing the best <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/finance-app-development' >fintech app development firm</a> matters when building a trusted and secure car finance app. At Comfygen, we make the process easy, smart, and result-driven. Here’s why businesses trust us as their go-to car finance app development company:",
@@ -156,37 +220,37 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Expertise in Fintech and Auto Loan Apps",
-      "description": "We have years of experience in building fintech and auto loan apps. Our auto loan app development team understands how digital lending works and creates solutions that meet real-world business needs."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Custom App Solutions for Your Business",
-      "description": "We don’t use ready-made templates. We build car finance apps from scratch that match your brand, your users, and your loan process — 100% tailored to your business."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Secure Integrations for Smooth Lending",
-      "description": "From KYC to credit checks and payment gateways, we integrate everything securely. Your users enjoy a safe and fast loan journey without worry."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "User-Friendly and Scalable Interface",
-      "description": "Our finance apps are easy to use for everyone. Whether you’re a startup or a large enterprise, we build the best car finance apps that can grow with your business."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Fast Development and On-Time Delivery",
-      "description": "We respect your time. Our agile car finance management app development process ensures you get a working app fast — without cutting corners or missing deadlines."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Ongoing Support You Can Rely On",
-      "description": "Even after launch, we’re here to help. Our development support team fixes bugs, adds new features, and keeps your app updated and running smoothly."
-    }
-  ]
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expertise in Fintech and Auto Loan Apps",
+        "description": "We have years of experience in building fintech and auto loan apps. Our auto loan app development team understands how digital lending works and creates solutions that meet real-world business needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Custom App Solutions for Your Business",
+        "description": "We don’t use ready-made templates. We build car finance apps from scratch that match your brand, your users, and your loan process — 100% tailored to your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Secure Integrations for Smooth Lending",
+        "description": "From KYC to credit checks and payment gateways, we integrate everything securely. Your users enjoy a safe and fast loan journey without worry."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "User-Friendly and Scalable Interface",
+        "description": "Our finance apps are easy to use for everyone. Whether you’re a startup or a large enterprise, we build the best car finance apps that can grow with your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Fast Development and On-Time Delivery",
+        "description": "We respect your time. Our agile car finance management app development process ensures you get a working app fast — without cutting corners or missing deadlines."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Ongoing Support You Can Rely On",
+        "description": "Even after launch, we’re here to help. Our development support team fixes bugs, adds new features, and keeps your app updated and running smoothly."
+      }
+    ]
   },
   "customTestimonials": [
     {
@@ -411,8 +475,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -433,8 +495,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -456,7 +517,6 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
@@ -507,6 +567,4 @@
       "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
     }
   ]
-
-  
 }

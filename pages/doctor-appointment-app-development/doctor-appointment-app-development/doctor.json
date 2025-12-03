@@ -156,6 +156,73 @@
       "desc": "The patients can book a doctor through online doctor appointment applications and scheduling appointments with the doctor booking mobile app development services with a few taps, which save time and get things done conveniently."
     }
   ],
+
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "Patient Panel",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/patient-panel.webp",
+    "additionalDetails": [
+      { "details": "Easy Sign-Up & Secure Login", "emoji": "", "content": "" },
+      { "details": "Search & Book Doctor Appointments", "emoji": "", "content": "" },
+      { "details": "Telemedicine & Video Consultation Access", "emoji": "", "content": "" },
+      { "details": "Prescription & Medical History Management", "emoji": "", "content": "" },
+      { "details": "In-App Payments & Digital Receipts", "emoji": "", "content": "" },
+      { "details": "Ratings & Reviews for Doctors", "emoji": "", "content": "" },
+      { "details": "Real-Time Notifications & Reminders", "emoji": "", "content": "" },
+      { "details": "Lab Test & Pharmacy Booking Integration", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Doctor Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/doctor-panel.webp",
+    "additionalDetails": [
+      { "details": "Manage Availability & Appointment Slots", "emoji": "", "content": "" },
+      { "details": "Accept/Reject Booking Requests", "emoji": "", "content": "" },
+      { "details": "Video Consultation & Chat with Patients", "emoji": "", "content": "" },
+      { "details": "E-Prescriptions & Medical Records Access", "emoji": "", "content": "" },
+      { "details": "Track Earnings & Commission Reports", "emoji": "", "content": "" },
+      { "details": "Manage Patient Feedback & Ratings", "emoji": "", "content": "" },
+      { "details": "Automated Reminders & Notifications", "emoji": "", "content": "" },
+      { "details": "Analytics for Patient Consultations", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "img": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/admin-web-panel.webp",
+    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+    "additionalDetails": [
+      { "details": "Dashboard with Real-Time Metrics", "emoji": "", "content": "" },
+      { "details": "Manage Patients & Doctors Seamlessly", "emoji": "", "content": "" },
+      { "details": "Appointment & Cancellation Tracking", "emoji": "", "content": "" },
+      { "details": "Revenue & Commission Settings", "emoji": "", "content": "" },
+      { "details": "Content Management (CMS) for Promotions", "emoji": "", "content": "" },
+      { "details": "Approve/Reject Doctor Registrations", "emoji": "", "content": "" },
+      { "details": "Multi-Clinic or Hospital Branch Management", "emoji": "", "content": "" },
+      { "details": "Data Security & HIPAA Compliance Tools", "emoji": "", "content": "" }
+    ]
+  }
+],
+
+
+    "portfoliodata": [
+      {
+        "image": "https://www.comfygen.com/img/doctor-appointment-portfolio-image.webp",
+        "title": "Doctor Appointment App",
+        "description": "At Comfygen Private Limited, we excel at innovative doctor appointment apps designed to make healthcare easier for patients and healthcare professionals. Our apps boast user-friendly interfaces, seamless appointment scheduling, and robust features such as real-time notifications, secure patient-physician communication, and integrated payment gateways We ensure that our apps not only work but also meet the highest data security standards and privacy.",
+        "link": "#"
+      }
+      
+    
+    
+    ],
+
+
   "Process": [
     {
       "title": "Requirement Gathering & Research",
