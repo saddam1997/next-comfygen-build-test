@@ -30,7 +30,20 @@ export default function HeroSectionForAllPages(props: any) {
       className="relative h-full bg-[#5951cd] sm:bg-transparent py-10">
       <div className="absolute inset-0 -z-10 hidden sm:block">
         <div className="w-full h-full relative">
-          <CommonImage
+                <Image
+                  src={props.bgImage}
+                  alt="Comfygen Hero Background"
+                  fill
+                  className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
+                  priority
+                  fetchPriority="high"
+                  sizes="100vw"
+                  placeholder="blur"
+                  blurDataURL="/blur-placeholder.webp"
+                  quality={75}
+                  loading="eager"
+                />
+          {/* <CommonImage
             src={props?.bgImage}
             alt="Comfygen Hero Background"
             width={600}
@@ -38,7 +51,7 @@ export default function HeroSectionForAllPages(props: any) {
             priorityLoad={false}
             blurDataURL="/blur-placeholder.webp"
             className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
-          />
+          /> */}
         </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

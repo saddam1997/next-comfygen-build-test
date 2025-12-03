@@ -28,10 +28,10 @@ export default function CommonImage({
       height={height}
       priority={priorityLoad}
       // loading={priorityLoad ? undefined : "lazy"}
-      decoding={priorityLoad ? "sync" : "async"}
+      // decoding={priorityLoad ? "sync" : "async"}
       placeholder={placeholder}
       blurDataURL={blurDataURL}
-      onError={() => setImgSrc(fallbackSrc)}
+      // onError={() => setImgSrc(fallbackSrc)}
       sizes="100vw"
       quality={75}
     />
