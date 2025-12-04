@@ -4,16 +4,26 @@ import { useState } from 'react';
 import styles from './styles.module.css'
 import React from 'react'
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import JSON_DATA from "./book-my-tutor.json"
-import TechnologyStack from '../technology-stack/TechnologyStack';
-import LazyLoad from 'react-lazy-load';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import Features from '../components/Features';
 
-const Header = dynamic(() => import('../../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechnologyStack = dynamic(() => import("../../Newcomponet/portfolio/TechnologyStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
 
 export default function about(props: any) {
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -45,9 +55,9 @@ export default function about(props: any) {
       </Head>
 
       <div className="">
-        <LazyLoad height={80} offset={100}>
+ 
           <Header />
-        </LazyLoad>
+
       </div>
 
       <div className="overflow-hidden" >

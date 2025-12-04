@@ -1,20 +1,8 @@
+import { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../components/ClientTestimonials";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ProcessSec from "../components/ProcessSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import CardGrid from "../components/CardGrid";
 import {
   IconBrain,
   IconBrandAndroid,
@@ -39,24 +27,91 @@ import {
   IconUsersGroup,
   IconVideo,
 } from "@tabler/icons-react";
-import LatestTechnology from "../componentsnew/LatestTechnology";
-import Slider from "../components/Slider";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Features = dynamic(() => import("./components/Features"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CardGrid = dynamic(() => import("../Newcomponet/SectionCompoent/CardGrid"),
+  { loading: loader, ssr: true }
+);
+
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(() => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const LatestTechnology = dynamic(
+  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  { loading: loader, ssr: true }
+)
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 const Process = [
   {
     title: "Market Research",
@@ -297,7 +352,7 @@ const portfoliodata = [
 
 
 const jsonLdData = [
-  
+
 
   {
     "@context": "https://schema.org",
@@ -614,27 +669,26 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-
-      <LazyLoad height={80} offset={100}>
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Top-Rated Custom Dating App Development Services"
-            ptag="Build an advanced user-friendly dating app with Comfygen, a leading dating app development service provider renowned for providing top-notch, best custom dating app development services with tech entrepreneurs. Whether you're a startup or an established business, we bring your vision to life with cutting-edge, customized dating app development solutions tailored to your needs."
-            li="Rich UI/UX App Design"
-            li1="10+ years of experience as a developer"
-            li2="Punctual for commitment Delivery"
-            li3="AI/ML Enabled App"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Top-Rated Custom Dating App Development Services"
+          ptag="Build an advanced user-friendly dating app with Comfygen, a leading dating app development service provider renowned for providing top-notch, best custom dating app development services with tech entrepreneurs. Whether you're a startup or an established business, we bring your vision to life with cutting-edge, customized dating app development solutions tailored to your needs."
+          li="Rich UI/UX App Design"
+          li1="10+ years of experience as a developer"
+          li2="Punctual for commitment Delivery"
+          li3="AI/ML Enabled App"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp"
+        />
+
         <AboutSection
           heading="Best Dating App Development Services for Startups & Enterprises"
           description1="Whether you're a startup ready to launch your first dating app or an enterprise aiming to upgrade your existing systems, Comfygen is here to turn your dating business vision into reality. We specialize in delivering top custom dating app development services that are tailored to meet the unique needs of your business, ensuring your dating app stands out in the competitive dating market."
@@ -643,7 +697,7 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -663,6 +717,8 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+
         <CardGrid
           heading="Elevate Your Dating App with Our Top-Notch Dating Mobile App Development Services"
           subheading="Grow your dating app business with Comfygen. As a top dating app development company in India, we create innovative, secure, and feature-rich dating apps to help your startup business succeed in the competitive dating industry."
@@ -702,13 +758,19 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <section className="mt-10">
-          <Features />
-        </section>
+
+        <div className="py-8">
+          <Features
+            heading=" The Features of dating apps Like Bumble ensure success in the Dating Business."
+            description="Creating a successful dating application requires a blend of innovative features, user-friendly design, and robust security. Here are dating app advanced features that can help ensure the success of a dating business"
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={portfoliodata}
             heading="Our Dating Apps Portfolio"
             description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."

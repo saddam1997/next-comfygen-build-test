@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,29 +71,30 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>High-Speed Transactions:</span> Lightning-fast blockchain transactions with minimal latency.",
-                        " <span class='font-semibold text-black '>Low Transaction Fees:</span>  Cost-efficient crypto transactions compared to traditional networks.",
-                        "<span class='font-semibold text-black '>Smart Contract Functionality:</span> Enables DeFi, tokenization, and automated agreements.",
-                        "<span class='font-semibold text-black '>Secure & Decentralized:</span>  Robust cryptographic security with decentralized governance.",
-                        "<span class='font-semibold text-black '>Scalable Infrastructure:</span>  Supports high transaction volumes without compromising performance.",
-                        "<span class='font-semibold text-black '>Staking & Rewards System:</span> Encourages long-term holders with incentivized staking.",
+                        " <b>High-Speed Transactions:</b> Lightning-fast blockchain transactions with minimal latency.",
+                        " <b>Low Transaction Fees:</b>  Cost-efficient crypto transactions compared to traditional networks.",
+                        "<b>Smart Contract Functionality:</b> Enables DeFi, tokenization, and automated agreements.",
+                        "<b>Secure & Decentralized:</b>  Robust cryptographic security with decentralized governance.",
+                        "<b>Scalable Infrastructure:</b>  Supports high transaction volumes without compromising performance.",
+                        "<b>Staking & Rewards System:</b> Encourages long-term holders with incentivized staking.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-feature-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
-                        " <span class='font-semibold text-black '>Security & Fraud Prevention:</span> Ensuring a tamper-proof, secure blockchain ecosystem.",
-                        "<span class='font-semibold text-black '>Scalability:</span> Building a network that can handle high transaction loads efficiently.",
-                        "<span class='font-semibold text-black '>User Adoption & Liquidity:</span>  Encouraging market participation and exchange listings.",
-                        "<span class='font-semibold text-black '>Regulatory Compliance:</span>  Navigating evolving crypto regulations for seamless global operations.",
-                        "<span class='font-semibold text-black '>Interoperability:</span>  Enabling seamless integration with other blockchain networks and financial systems."
+                        " <b>Security & Fraud Prevention:</b> Ensuring a tamper-proof, secure blockchain ecosystem.",
+                        "<b>Scalability:</b> Building a network that can handle high transaction loads efficiently.",
+                        "<b>User Adoption & Liquidity:</b>  Encouraging market participation and exchange listings.",
+                        "<b>Regulatory Compliance:</b>  Navigating evolving crypto regulations for seamless global operations.",
+                        "<b>Interoperability:</b>  Enabling seamless integration with other blockchain networks and financial systems."
                     ]}
                     imageSrc="https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-challanges-image.webp"
+                      imagePosition = "left"
                 />
                 
-                <InfomationSecound
+                <Features
                     heading="Solution"
                     points={[
                         "Developed NASDAC Crypto Coin with an advanced blockchain architecture for enhanced performance.",
@@ -94,16 +104,17 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-solution-image..webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
-                        "<span class='font-semibold text-black '>Enhanced Security:</span>  Advanced cryptographic algorithms ensure transaction safety.",
-                        "<span class='font-semibold text-black '>Global Accessibility:</span>  Seamless cross-border payments and asset transfers.",
-                        "<span class='font-semibold text-black '>Lower Costs:</span>  Significantly reduced transaction fees compared to traditional banking.",
-                        "<span class='font-semibold text-black '>Decentralized Governance:</span>  Transparent decision-making through blockchain voting mechanisms.",
-                        "<span class='font-semibold text-black '>Revenue Opportunities:</span>  Staking, tokenization, and DeFi integration create new financial opportunities."
+                        "<b>Enhanced Security:</b>  Advanced cryptographic algorithms ensure transaction safety.",
+                        "<b>Global Accessibility:</b>  Seamless cross-border payments and asset transfers.",
+                        "<b>Lower Costs:</b>  Significantly reduced transaction fees compared to traditional banking.",
+                        "<b>Decentralized Governance:</b>  Transparent decision-making through blockchain voting mechanisms.",
+                        "<b>Revenue Opportunities:</b>  Staking, tokenization, and DeFi integration create new financial opportunities."
                     ]}
                     imageSrc="https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-benifits-image..webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -139,8 +150,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

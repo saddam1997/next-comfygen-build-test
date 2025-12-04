@@ -1,15 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
-import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 
 export default function about(props) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -302,15 +309,16 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/eange-x-features-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a Social Media App Development Company in India to create a dynamic platform with real-time content delivery, high user engagement, and secure data management. Overcoming challenges like high-traffic handling, content moderation, and seamless multimedia sharing was essential."
                     ]}
                     imageSrc="https://www.comfygen.com/image/eange-x-challenges-image.webp"
+                    imagePosition="left"
                 />
 
-                <InfomationSecound
+                <Features
                     heading="Solution"
                     points={[
                         "As the best custom social media app development company in India, we designed and developed a feature-rich social media app development services provider solution with AI-powered content suggestions, real-time chat, and cloud-based media storage. Our robust architecture ensured high-speed performance and enhanced user experience.",
@@ -318,12 +326,13 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/eange-x-solutions-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our Social Media App Development Company solution helped EangeX boost user engagement, enhance content virality, and provide a seamless networking experience. The scalable architecture supported future growth, while monetization models like in-app ads and premium subscriptions increased revenue."
                     ]}
                     imageSrc="https://www.comfygen.com/image/eange-x-business-benefits-image.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -332,35 +341,6 @@ export default function about(props) {
                     filterCategory={["crypto"]}
                 />
 
-
-                {/* <section className='bg-[#fff] lg:py py-10'>
-                    <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                        <div className='space-y-2'>
-                            <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                                What Our Client Says
-                            </h2>
-                            <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                        </div>
-
-                        <div>
-                            <div className={styles.testimonial}>
-                                <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>John Anderson – Edinburgh</h3>
-                                <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Scotland, UK</p>
-                            </div>
-                            <div className='space-y-2 mt-4'>
-                                <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                                </div>
-                                <div>
-                                    <p className='md:text-base text-sm text-black'>"Croston has set a new benchmark for decentralized cryptocurrencies. It's low fees and lightning-fast transactions have given us a major competitive edge."</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section> */}
-
-                <FormSec />
             </div>
         </div>
     )

@@ -2,29 +2,61 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/basketballlivelineapi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import BlogSection from "../components/BlogSection";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import SportsApiSupportSection from "../componentsnew/SportsApiSupportSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 
 const Process = [
   {
@@ -220,7 +252,7 @@ export default function Ecommerce(props) {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Basketball Live Line API | Real-Time Score & Stats</title>
         <meta
           name="description"
@@ -273,14 +305,14 @@ export default function Ecommerce(props) {
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="subtitle" content="Best Basketball Live Line API" />
-       
+
         <meta
           property="og:type"
           content="Basketball Live Line API Services Provider"
         />
 
         {/* Open Graph */}
-        
+
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
         <meta property="og:image:type" content="image/webp" />
@@ -343,40 +375,45 @@ export default function Ecommerce(props) {
       </Head>
 
 
+      <Header />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
+
         <HeroSectionForAllPages
           heading="Basketball Live Line API"
           ptag="Bring real-time excitement to your platform with our Basketball Live Line API solutions. At Comfygen, we offer scalable and developer-friendly basketball data APIs that deliver live scores, match stats, player updates, and game insights straight to your app or website. Whether you’re powering a sports portal, analytics dashboard, our APIs ensure ultra-low latency, high availability, and accurate basketball coverage across global leagues and events. Experience seamless Basketball Score API integration backed by expert support and flexible data customization. Start delivering real-time game action your users will love."
-          
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-hero.webp"
         />
 
-        </div>
         <AboutSection
           title="About Company"
           heading="Reliable & Real-Time Basketball API Integration for Any Platform"
-          description1="In the fast-paced world of basketball, real-time data is key. Our Basketball Live Line API is designed to deliver accurate and up-to-the-second updates including live match scores, quarter-wise stats, player performance metrics, and game schedules. Whether you're developing a sports news website, or a scoreboard widget, our API gives you full access to rich basketball data from major leagues like the NBA, EuroLeague, and college basketball. As a trusted basketball data API provider, we ensure stable performance, detailed documentation, and smooth integration tailored to your unique platform needs."   
+          description1="In the fast-paced world of basketball, real-time data is key. Our Basketball Live Line API is designed to deliver accurate and up-to-the-second updates including live match scores, quarter-wise stats, player performance metrics, and game schedules. Whether you're developing a sports news website, or a scoreboard widget, our API gives you full access to rich basketball data from major leagues like the NBA, EuroLeague, and college basketball. As a trusted basketball data API provider, we ensure stable performance, detailed documentation, and smooth integration tailored to your unique platform needs."
           imageSrc="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Unlock the Power of Top-tier Basketball Live Line API Integration & Data Feed Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Unlock the Power of Top-tier Basketball Live Line API Integration & Data Feed Services"
-          
-          servicesData={JSON_DATA.servicesData} />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -393,12 +430,21 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Our Step-by-Step API Integration Process"
-          description="At Comfygen, we follow a systematic and streamlined approach to ensure your Basketball Live Line API integration is efficient, scalable, and tailored to your platform’s unique needs. From initial consultation to post-launch support, our 7-phase process covers everything — including planning, secure API access, seamless integration, rigorous testing, and ongoing maintenance. Our dedicated development team ensures every step is optimized for performance, helping you deliver real-time basketball data with speed, accuracy, and reliability."
-          processSlides={Process}
-        />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step API Integration Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a systematic and streamlined approach to ensure your Basketball Live Line API integration is efficient, scalable, and tailored to your platform’s unique needs. From initial consultation to post-launch support, our 7-phase process covers everything — including planning, secure API access, seamless integration, rigorous testing, and ongoing maintenance. Our dedicated development team ensures every step is optimized for performance, helping you deliver real-time basketball data with speed, accuracy, and reliability.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <WhyChoose
@@ -416,15 +462,15 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "Real-time basketball data integration with minimal latency", 
-            "Secure, scalable, and optimized API infrastructure", 
-            "Continuous support and regular API updates", 
-            "Custom implementation tailored to your platform needs" 
-        ]}
-        
+          listItems={[
+            "Real-time basketball data integration with minimal latency",
+            "Secure, scalable, and optimized API infrastructure",
+            "Continuous support and regular API updates",
+            "Custom implementation tailored to your platform needs"
+          ]}
+
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq
@@ -433,7 +479,7 @@ export default function Ecommerce(props) {
         />
 
         {/*<BlogSection initialData={initialData} />*/}
-      </div>
+      </div >
     </>
   );
 }

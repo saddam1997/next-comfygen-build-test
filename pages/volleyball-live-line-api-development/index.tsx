@@ -3,30 +3,59 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/vollyballlivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 const Process = [
   {
@@ -405,12 +434,10 @@ export default function Ecommerce(props) {
         />
       </Head>
 
+      <Header />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/volleyball-live-line-api-development/volleyball-api-api-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
+
         <HeroSectionForAllPages
           heading="Volleyball Live Line API"
           ptag="Looking to integrate live volleyball data into your app, platform, or sportsbook? Our Volleyball Live Line API service offers seamless real-time score updates, detailed match insights, and lightning-fast data feeds. With over 10 years of experience in software and sports data, we deliver reliable Volleyball API solutions powering leading apps, websites, and gaming platforms worldwide. Our API provides second-by-second game updates, including odds, player stats, team data, and in-game highlights. Whether you’re building a live score portal or a sports analytics dashboard, our robust and flexible API ensures easy integration—Trust Comfygen Technologies for scalable, secure, and customizable volleyball data API solutions that keep your platform ahead."
@@ -420,27 +447,32 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/volleyball-live-line-api-development/volleyball-api-api-hero.webp"
         />
 
-        </div>
         <AboutSection
           title="About Company"
           heading="Enhance your sports experience with our volleyball live line API"
-          description1="At Comfygen, we understand the ever-evolving needs of digital sports platforms. That’s why we’ve developed a specialized Volleyball Live Line API solution tailored for apps, websites, and sports data app providers looking for real-time volleyball data. Our Volleyball API data is not only precise and timely but also built to handle high-traffic conditions, peak match times, and varied data requests efficiently."   
-          description2="From Volleyball Teams API to Volleyball stats API integration, our full-stack solutions ensure seamless, fast, and reliable access to every spike, block, set, and score. With over a decade of experience building custom sports APIs, we deliver Volleyball Livescore Widgets API that can be embedded in seconds and provide live match status, team formations, win probability, and more."   
-          description3="As a trusted Volleyball data feed API provider, we work with global clients ranging from sports broadcasters and developers to gaming companies and startups. Our mission is simple: provide clean, structured, and dynamic volleyball match data in real-time."   
-          description4="Choose us to build a platform that reflects speed, accuracy, and user engagement through the best Volleyball Detection API and Volleyball Highlights API solutions in the industry."   
+          description1="At Comfygen, we understand the ever-evolving needs of digital sports platforms. That’s why we’ve developed a specialized Volleyball Live Line API solution tailored for apps, websites, and sports data app providers looking for real-time volleyball data. Our Volleyball API data is not only precise and timely but also built to handle high-traffic conditions, peak match times, and varied data requests efficiently."
+          description2="From Volleyball Teams API to Volleyball stats API integration, our full-stack solutions ensure seamless, fast, and reliable access to every spike, block, set, and score. With over a decade of experience building custom sports APIs, we deliver Volleyball Livescore Widgets API that can be embedded in seconds and provide live match status, team formations, win probability, and more."
+          description3="As a trusted Volleyball data feed API provider, we work with global clients ranging from sports broadcasters and developers to gaming companies and startups. Our mission is simple: provide clean, structured, and dynamic volleyball match data in real-time."
+          description4="Choose us to build a platform that reflects speed, accuracy, and user engagement through the best Volleyball Detection API and Volleyball Highlights API solutions in the industry."
           imageSrc="https://www.comfygen.com/comfygen-images/volleyball-live-line-api-development/volleyball-api-api-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
-
-        <ServicesSection 
-          heading="Discover Our Volleyball API Services"
-          
-          servicesData={JSON_DATA.servicesData} />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Discover Our Volleyball API Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
 
         <ConsultancyApproach
@@ -458,12 +490,18 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Step-by-Step Volleyball Live Line API Integration Process"
-          description=""
-          processSlides={Process}
-        />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Volleyball Live Line API Integration Process</h2>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
 
         <WhyChoose
@@ -476,20 +514,20 @@ export default function Ecommerce(props) {
           heading="Hire Us – Start Building Your Volleyball Data-Powered App"
           text="Ready to bring your volleyball app or platform idea to life? At Comfygen, our experienced Volleyball API developers specialize in creating powerful, data-driven solutions tailored to your unique needs. Whether you’re launching a volleyball gaming app, a live score platform, or a gaming interface, we deliver fast, seamless Volleyball Live Line API integration that ensures real-time accuracy and smooth performance."
           text1="Our team works closely with you from concept to deployment, delivering custom backend logic, scalable infrastructure, and fully documented APIs. We prioritize your project goals and user experience while offering flexible pricing and round-the-clock support to ensure your app remains live and reliable. Choose Comfygen to harness the full potential of volleyball data feeds and transform your vision into a high-performance sports platform. Get in touch today and start building the future of volleyball technology."
-         
+
           buttonText="When you hire from Comfygen, you get:"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "Dedicated development team", 
-            "End-to-end integration with documentation", 
-            "Affordable and scalable pricing", 
-            "Security-first architecture" 
-        ]}
-        
+          listItems={[
+            "Dedicated development team",
+            "End-to-end integration with documentation",
+            "Affordable and scalable pricing",
+            "Security-first architecture"
+          ]}
+
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq

@@ -1,17 +1,28 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -304,19 +315,19 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-Powered Matchmaking:</span>  Smart algorithms suggest matches based on preferences and interactions.",
-                        " <span class='font-semibold text-black '>Swipe-Based Interactions:</span>  Engaging swipe features for easy connection-building.",
-                        "<span class='font-semibold text-black '>Real-Time Messaging & Video Chat:</span>  Secure, instant communication with multimedia sharing.",
-                        "<span class='font-semibold text-black '>Profile Verification & Safety Features:</span>  AI-driven authentication to prevent fake profiles.",
-                        "<span class='font-semibold text-black '>Social Media Integration:</span> Sign up with Facebook, Google, or Instagram for seamless onboarding.",
-                        "<span class='font-semibold text-black '>Geolocation-Based Matching:</span>  Location-based user suggestions for nearby connections.",
-                        " <span class='font-semibold text-black '>Multi-Language Support:</span> Cater to global audiences with multi-language functionality.",
-                        "<span class='font-semibold text-black '>Monetization Options:</span> Premium memberships, in-app purchases, and ad placements.",
+                        " <b>AI-Powered Matchmaking: </b>  Smart algorithms suggest matches based on preferences and interactions.",
+                        " <b>Swipe-Based Interactions: </b>  Engaging swipe features for easy connection-building.",
+                        "<b>Real-Time Messaging & Video Chat: </b>  Secure, instant communication with multimedia sharing.",
+                        "<b>Profile Verification & Safety Features: </b>  AI-driven authentication to prevent fake profiles.",
+                        "<b>Social Media Integration: </b> Sign up with Facebook, Google, or Instagram for seamless onboarding.",
+                        "<b>Geolocation-Based Matching: </b>  Location-based user suggestions for nearby connections.",
+                        " <b>Multi-Language Support: </b> Cater to global audiences with multi-language functionality.",
+                        "<b>Monetization Options: </b> Premium memberships, in-app purchases, and ad placements.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/casual-aating-app-features-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a scalable Casual Dating App Development solution with a modern UI, AI-based matchmaking, and robust security features.",
@@ -324,8 +335,9 @@ export default function about(props) {
                         "The app required seamless performance across multiple devices, ensuring smooth functionality on iOS and Android platforms.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/casual-dating-app-challenges-image.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a custom dating app development company, we developed a high-performance Casual Dating App with AI-driven matchmaking, swipe-based interactions, and social media integration.",
@@ -334,7 +346,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/casual-aating-app-solutions-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our scalable Casual Dating App Development solution improved user retention and engagement.",
@@ -343,6 +355,7 @@ export default function about(props) {
                         "The app’s seamless cross-platform functionality ensured wider market reach and increased adoption rates."
                     ]}
                     imageSrc="https://www.comfygen.com/image/dating-portfolio-page-business-benefits-image.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -378,7 +391,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

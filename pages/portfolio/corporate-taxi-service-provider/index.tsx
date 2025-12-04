@@ -1,13 +1,21 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -181,7 +189,7 @@ export default function about(props) {
                 <meta name="description" content="Discover how Comfygen built a smart Corporate Taxi App with AI-powered scheduling, real-time GPS tracking, and secure employee authentication. Our corporate ride management solutions enhance efficiency, reduce costs, and improve employee satisfaction." />
 
 
-                <meta name="keywords" content="Corporate Taxi App Development, Ride Management Solution, AI-based Taxi App Development, Corporate Taxi Booking App Development Showcase, Transportation App Development"/>
+                <meta name="keywords" content="Corporate Taxi App Development, Ride Management Solution, AI-based Taxi App Development, Corporate Taxi Booking App Development Showcase, Transportation App Development" />
 
                 {/* <!-- Canonical Tag --> */}
                 <link rel="canonical" href="https://www.comfygen.com/portfolio/corporate-taxi-service-provider" />
@@ -268,11 +276,9 @@ export default function about(props) {
 
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+                <Header />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Corporate Taxi App Development Services"
@@ -292,21 +298,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Automated Ride Scheduling: </span> Pre-booking and ride automation for employees.",
-                        "<span class='font-semibold'>Real-Time GPS Tracking: </span> Live tracking of rides to ensure safety and efficiency.",
-                        "<span class='font-semibold'>Expense Tracking & Automated Billing: </span> Seamless invoicing and cost reports for companies.",
-                        "<span class='font-semibold'>Multi-User Corporate Accounts: </span> Manage multiple employees under one account.",
-                        "<span class='font-semibold'>AI-Powered Route Optimization: </span> Reduces travel time and fuel consumption.",
-                        "<span class='font-semibold'>Ride Sharing & Pooling: </span> Cost-effective group travel solutions for employees.",
-                        "<span class='font-semibold'>Seamless Payment Integration: </span> Supports corporate wallets, UPI, and direct billing.",
-                        "<span class='font-semibold'>Secure Employee Authentication: </span> OTP-based verification and corporate ID login.",
-                        "<span class='font-semibold'>In-App Support & Feedback System: </span> 24/7 customer support and ride rating system."
+                        "<b>Automated Ride Scheduling: </b> Pre-booking and ride automation for employees.",
+                        "<b>Real-Time GPS Tracking: </b> Live tracking of rides to ensure safety and efficiency.",
+                        "<b>Expense Tracking & Automated Billing: </b> Seamless invoicing and cost reports for companies.",
+                        "<b>Multi-User Corporate Accounts: </b> Manage multiple employees under one account.",
+                        "<b>AI-Powered Route Optimization: </b> Reduces travel time and fuel consumption.",
+                        "<b>Ride Sharing & Pooling: </b> Cost-effective group travel solutions for employees.",
+                        "<b>Seamless Payment Integration: </b> Supports corporate wallets, UPI, and direct billing.",
+                        "<b>Secure Employee Authentication: </b> OTP-based verification and corporate ID login.",
+                        "<b>In-App Support & Feedback System: </b> 24/7 customer support and ride rating system."
 
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-corporate-taxi-service-provider.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a corporate taxi app development solution to streamline ride booking, automate invoicing, and ensure compliance with corporate travel policies.",
@@ -314,8 +320,9 @@ export default function about(props) {
                         "Ensuring a smooth user experience, advanced security protocols, and seamless integration with corporate systems required an innovative approach."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-corporate-taxi-service-provider.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a leading corporate taxi app development company, we designed a highly scalable and AI-powered transportation platform for seamless employee ride management.",
@@ -324,7 +331,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-corporate-taxi-service-provider.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Improved efficiency by 40% with automated scheduling and AI-based route optimization.",
@@ -334,6 +341,7 @@ export default function about(props) {
                         "Enhanced security and compliance with corporate travel policies and automated reporting."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-corporate-taxi-service-provider.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -369,7 +377,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

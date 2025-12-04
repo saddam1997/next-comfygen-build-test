@@ -2,27 +2,59 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/footballliveline.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSection from "../componentsnew/ServicesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 
 const Process = [
   {
@@ -115,8 +147,8 @@ const serviceSchema = {
     "Football Stats API (Team & Player)",
     "Football Fixtures & Results API",
     "Football Match Prediction API",
-     "Football API for Mobile App Integration"
-   
+    "Football API for Mobile App Integration"
+
   ],
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies/",
@@ -332,8 +364,8 @@ export default function Ecommerce(props) {
           content="Football Live Line API Services Provider"
         />
 
-       {/* Open Graph */}
-       <meta property="og:type" content="website" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Comfygen Private Limited" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_CA" />
@@ -357,31 +389,31 @@ export default function Ecommerce(props) {
         {/* Updated JSON-LD schema for SoftwareApplication */}
         <script type="application/ld+json">
           {JSON.stringify({
-           
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Football Live Line API",
-  "operatingSystem": "Web, Android, iOS",
-  "applicationCategory": "SportsApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0.0",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "300"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Comfygen"
-  },
-  "url": "https://www.comfygen.com/football-live-line-api",
-  "description": "Real-time Football Live Line API providing instant score updates, match stats, and player data for developers.",
-  "softwareVersion": "1.0"
-})}
+
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Football Live Line API",
+            "operatingSystem": "Web, Android, iOS",
+            "applicationCategory": "SportsApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.0",
+              "priceCurrency": "INR",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "300"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Comfygen"
+            },
+            "url": "https://www.comfygen.com/football-live-line-api",
+            "description": "Real-time Football Live Line API providing instant score updates, match stats, and player data for developers.",
+            "softwareVersion": "1.0"
+          })}
         </script>
 
         {/* Keep these structured data scripts if you've defined them in JS */}
@@ -407,11 +439,10 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden lg:pt-[40px]">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/football-live-line-api/football-live-line-api-hero.webp')]">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Football Live Line API "
           subhead="Supercharge Your Sports App with Real-Time Football Data APIs"
@@ -423,9 +454,10 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/football-live-line-api/football-live-line-api-hero.webp"
         />
 
-        </div>
+
         <AboutSection
           title="About Company"
           heading="Football Live Line API Integration?"
@@ -440,19 +472,24 @@ export default function Ecommerce(props) {
             "Football Prediction APIs",
             "Odds & Live APIs"
           ]}
-          
+
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Core Football Live Line API Integration Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Our Core Football Live Line API Integration Services"
-          servicesData={JSON_DATA.servicesData} />
-
-          
 
 
         <ConsultancyApproach
@@ -471,7 +508,18 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <ProcessSection title="Our Football API Integration Process" description=" At Comfygen, we simplify every stage of the football live line API Integration process to ensure secure, fast, and scalable integration. As a trusted football live line API service" processSlides={Process} />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Football API Integration Process</h2>
+              <p className="text-base font-normal mt-2"> At Comfygen, we simplify every stage of the football live line API Integration process to ensure secure, fast, and scalable integration. As a trusted football live line API service</p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
 
         <WhyChoose
@@ -488,10 +536,10 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          
+
         />
 
-       
+
 
         {/* <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} /> */}
 

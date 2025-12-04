@@ -1,13 +1,21 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -288,11 +296,11 @@ export default function about(props) {
 
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+               
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Eco-Friendly EV Taxi Service"
@@ -312,20 +320,20 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>EV Charging Station Locator: </span> Real-time map integration for nearby charging stations.",
-                        "<span class='font-semibold'>Eco-Friendly Ride Options: </span> Choose between electric taxis and shared rides.",
-                        "<span class='font-semibold'>Carbon Footprint Tracker: </span> Displays CO₂ savings per ride.",
-                        "<span class='font-semibold'>AI-Powered Route Optimization: </span> Ensures battery-efficient travel routes.",
-                        "<span class='font-semibold'>Seamless Booking System: </span> Quick ride-hailing with estimated fare and charging stops.",
-                        "<span class='font-semibold'>In-App Digital Wallet: </span> Supports UPI, digital payments, and corporate billing.",
-                        "<span class='font-semibold'>Driver & Vehicle Performance Monitoring: </span> Ensures efficiency and sustainability.",
-                        "<span class='font-semibold'>Ride-Sharing & Pooling: </span> Encourages shared rides to reduce emissions.",
-                        "<span class='font-semibold'>Real-Time Tracking & Safety Features: </span> GPS tracking, SOS alerts, and driver authentication."
+                        "<b>EV Charging Station Locator: </b> Real-time map integration for nearby charging stations.",
+                        "<b>Eco-Friendly Ride Options: </b> Choose between electric taxis and shared rides.",
+                        "<b>Carbon Footprint Tracker: </b> Displays CO₂ savings per ride.",
+                        "<b>AI-Powered Route Optimization: </b> Ensures battery-efficient travel routes.",
+                        "<b>Seamless Booking System: </b> Quick ride-hailing with estimated fare and charging stops.",
+                        "<b>In-App Digital Wallet: </b> Supports UPI, digital payments, and corporate billing.",
+                        "<b>Driver & Vehicle Performance Monitoring: </b> Ensures efficiency and sustainability.",
+                        "<b>Ride-Sharing & Pooling: </b> Encourages shared rides to reduce emissions.",
+                        "<b>Real-Time Tracking & Safety Features: </b> GPS tracking, SOS alerts, and driver authentication."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-ev-taxi-service.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed an Electric Vehicle taxi booking app development solution that integrates real-time EV charging station data, automated ride booking, and an eco-friendly travel calculator.",
@@ -333,8 +341,9 @@ export default function about(props) {
                         "Ensuring scalability, regulatory compliance, and a smooth user experience required an innovative approach."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-image-ev-taxi-service.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a leading EV taxi app development company, we designed a high-performance, AI-powered platform tailored for sustainable transportation.",
@@ -343,7 +352,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-ev-taxi-service.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "20% increase in eco-conscious riders due to sustainability-focused features.",
@@ -353,6 +362,7 @@ export default function about(props) {
                         "Improved driver efficiency with battery management insights and real-time tracking."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-ev-taxi-service.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -388,7 +398,7 @@ export default function about(props) {
 
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )

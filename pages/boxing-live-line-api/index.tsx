@@ -3,26 +3,62 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/boxinglivelineapi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
 
 
-const Header = dynamic(() => import("../components/Header"), {
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
 
 const Process = [
   {
@@ -383,7 +419,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
           heading="Boxing Live Line API Provider"
@@ -415,12 +451,18 @@ export default function Ecommerce(props) {
 
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Boxing API Integration Services</h2>
+              <p className="text-base text-center font-normal">Comprehensive API Services to Power Your Boxing Platform</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection
-          heading="Our Boxing API Integration Services"
-          subtitle="Comprehensive API Services to Power Your Boxing Platform"
-          servicesData={JSON_DATA.servicesData} />
 
 
         <ConsultancyApproach
@@ -431,11 +473,20 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSection
-          title="Step-by-Step Process of Our Boxing Live Line API Provider"
-          description="Our Integration process is transparent, agile, and focused on your business goals. We work with you at every stage to ensure seamless Boxing API Integration that’s reliable, real-time, and revenue-ready."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Process of Our Boxing Live Line API Provider</h2>
+              <p className="text-base font-normal mt-2">
+               Our Integration process is transparent, agile, and focused on your business goals. We work with you at every stage to ensure seamless Boxing API Integration that’s reliable, real-time, and revenue-ready.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <WhyChoose

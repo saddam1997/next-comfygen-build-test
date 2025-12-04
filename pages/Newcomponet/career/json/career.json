@@ -1,0 +1,1495 @@
+{
+  "Process": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/svg/tech/mern-stack.webp",
+      "title": "Node.js Developer",
+      "decs": "We are looking for a Node.js Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. Therefore, a basic understanding of front-end technologies is necessary as well.",
+      "modalHead": "Description",
+      "para": "We are looking for a Node.js Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. Therefore, a basic understanding of front-end technologies is necessary as well.",
+      "responsibilities": [
+        "Integration of user-facing elements developed by front-end developers with server side logic",
+        "Writing reusable, testable, and efficient code",
+        "Design and implementation of low-latency, high-availability, and performant applications",
+        "Implementation of security and data protection",
+        "Integration of data storage solutions"
+      ],
+      "skillsQualifications": [
+        "Strong proficiency with JavaScript",
+        "Knowledge of Node.js and frameworks available for it {{such as Express, StrongLoop, etc depending on your technology stack}}",
+        "Knowledge of Node.js and frameworks available for it {{such as Express, StrongLoop, etc depending on your technology stack}}",
+        "Understanding the nature of asynchronous programming and its quirks and workarounds",
+        "Good understanding of server-side templating languages {{such as Jade, EJS, etc depending on your technology stack}}",
+        "Good understanding of server-side CSS preprocessors {{such as Stylus, Less, etc depending on your technology stack}}",
+        "Basic understanding of front-end technologies, such as HTML5, and CSS3",
+        "Understanding accessibility and security compliance",
+        "User authentication and authorization between multiple systems, servers, and environments",
+        "Integration of multiple data sources and databases into one system",
+        "Understanding fundamental design principles behind a scalable application",
+        "Understanding differences between multiple delivery platforms, such as mobile vs. desktop, and optimizing output to match the specific platform",
+        "Creating database schemas that represent and support business processes",
+        "Implementing automated testing platforms and unit tests",
+        "Proficient understanding of code versioning tools, such as Git",
+        "Bachelor's degree in computer science, information science, or similar.",
+        "Experience of 1 year minimun as a Node.js developer."
+      ]
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/svg/tech/react-original.svg",
+      "title": "React.js Developer",
+      "decs": "We are seeking a dedicated React.js front-end developer to join our growing company. You will work as part of a team to design and develop high-quality software solutions for web applications and mobile apps using React.",
+      "modalHead": "Description",
+      "para": "We are seeking a dedicated React.js front-end developer to join our growing company. You will work as part of a team to design and develop high-quality software solutions for web applications and mobile apps using React.As a React.js developer, you will implement new features and maintain existing code using React and other standard tools in the React ecosystem, such as Node.js and Yarn. Your duties will include designing software solutions to meet project requirements, maintaining and refactoring existing code, writing tests, and fixing bugs.",
+      "responsibilities": [
+        "Below are some of the responsibilities a React.js developer is expected to assume in their position:",
+        "Maintain existing React systems, including fixing bugs",
+        "Design and develop new custom components to meet project requirements",
+        "Install and configure server environments for React deployments",
+        "Maintain and update project dependencies as well as fix any conflicts",
+        "Working with other JavaScript developers and software engineers to develop front-end and back-end architecture that’s well structured and flexible, along with the APIs to support it"
+      ],
+      "skillsQualifications": [
+        "Below are the qualifications expected of a React.js developer:",
+        "Bachelor’s degree in computer science, software development, engineering, or a related technical field",
+        "Proficient with the latest versions of ECMAScript (JavaScript) as well as HTML and CSS",
+        "Knowledge of React and common tools used in the wider React ecosystem, such as Node.js and npm ",
+        "Familiarity with common programming tools such as Redux, IDEs, RESTful APIs, Git repositories, TypeScript, version control software, and remote deployment tools",
+        "An understanding of common programming paradigms and fundamental React principles, such as React components, hooks, and the React lifecycle",
+        "add minimum 1 year of experience in React.js"
+      ]
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/svg/tech/mern-stack.webp",
+      "title": "Mern Stack Developer",
+      "decs": "We are seeking a skilled and experienced MERN (MongoDB, Express.js, React, Node.js) Stack Developer to join our dynamic team. As a MERN Stack Developer, you will be responsible for designing, implementing, and maintaining full-stack applications. You will collaborate with cross-functional teams to deliver high-quality software solutions.",
+      "modalHead": "Description",
+      "para": "We are seeking a skilled and experienced MERN (MongoDB, Express.js, React, Node.js) Stack Developer to join our dynamic team. As a MERN Stack Developer, you will be responsible for designing, implementing, and maintaining full-stack applications. You will collaborate with cross-functional teams to deliver high-quality software solutions.",
+      "responsibilities": [
+        "Develop and maintain robust and scalable web applications using the MERN stack.",
+        "Collaborate with front-end and back-end developers to define and implement innovative solutions.",
+        "Design and implement RESTful APIs for seamless integration between front-end and back-end systems.",
+        "Work closely with UI/UX designers to create responsive and visually appealing user interfaces.",
+        "Troubleshoot, debug, and optimize code to ensure high performance and reliability.",
+        "Implement security and data protection measures in line with industry best practices.",
+        "Stay updated on emerging trends and technologies in web development."
+      ],
+      "skillsQualifications": [
+        "Minimum 1 year of experience as a MERN Stack Developer or similar role.",
+        "In-depth knowledge of MongoDB, Express.js, React, and Node.js.",
+        " Strong proficiency in JavaScript, HTML, and CSS.",
+        " Experience with version control systems, such as Git.",
+        "Familiarity with front-end frameworks like Bootstrap, Material-UI, etc.",
+        "Solid understanding of RESTful API design and integration.",
+        "Knowledge of database design and management, including both SQL and NoSQL databases.",
+        "Excellent problem-solving and communication skills.",
+        "Ability to work collaboratively in a team-oriented environment.",
+        "Bachelor’s degree in Computer Science or a related field is preferred."
+      ]
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/svg/tech/react-original.svg",
+      "title": "React Native Developer",
+      "decs": "We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a product is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.",
+      "modalHead": "Description",
+      "para": "We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a product is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.",
+      "responsibilities": [
+        "Build pixel-perfect, buttery smooth UIs across both mobile platforms.",
+        "Leverage native APIs for deep integrations with both platforms.",
+        "Diagnose and fix bugs and performance bottlenecks for performance that feels native.",
+        "Reach out to the open source community to encourage and help implement mission-critical software fixes—React Native moves fast and often breaks things.",
+        "Maintain code and write automated tests to ensure the product is of the highest quality.",
+        "Transition existing React web apps to React Native."
+      ],
+      "skillsQualifications": [
+        "Firm grasp of the JavaScript {{and TypeScript or ClojureScript}} language and its nuances, including ES6+ syntax.",
+        "Knowledge of {{functional or object-oriented}} programming",
+        "Ability to write well-documented, clean Javascript code  .",
+        "Rock solid at working with third-party dependencies and debugging dependency conflicts",
+        "Familiarity with native build tools, like XCode, Gradle {{Android Studio, IntelliJ}}",
+        "Understanding of REST APIs, the document request model, and offline storage",
+        "Experience with automated testing suites, like {{Jest or Mocha}}"
+      ]
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/svg/tech/tailwindcss-plain.svg",
+      "title": "UI/UX Developer (with Tailwind CSS)",
+      "decs": "We are seeking a user experience designer to join our design team. Your primary role will be to research and design usable interfaces, perform usability testing, and create prototypes to validate design concepts. The ideal candidate will use this information to help us create the best user experience possible for our website and mobile applications.",
+      "modalHead": "Description",
+      "para": "We are seeking a user experience designer to join our design team. Your primary role will be to research and design usable interfaces, perform usability testing, and create prototypes to validate design concepts. The ideal candidate will use this information to help us create the best user experience possible for our website and mobile applications.",
+      "responsibilities": [
+        "Leverage a human-centered design process to deliver an easy-to-use user interface and user experience",
+        "Research customers, competitors, and products",
+        "Develop personas, scenarios, and user stories",
+        "Work with stakeholders to identify requirements",
+        "Create wireframes, prototypes, and high-fidelity mock-ups",
+        "Develop and implement usability testing",
+        "Design for accessibility standards",
+        "Create and maintain usability documentation",
+        "Work with developers to ensure product quality",
+        "Work closely with product managers and marketing to maximize customer success",
+        "Ensure products are tested with customers and validated against business goals"
+      ],
+      "skillsQualifications": [
+        "Bachelor’s degree in computer science, human-computer interaction, interaction design, or a related field",
+        "Working knowledge of UX design principles",
+        "User interface design",
+        "Graphic design tools such as Adobe Photoshop or Illustrator",
+        "Wireframing/prototyping tools such as Balsamiq or Sketch",
+        "UX design tools such as Figma, Axure, or InVision",
+        "Experience with user testing and usability analysis"
+      ]
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/svg/tech/tester.webp",
+      "title": " QA Tester",
+      "decs": "We are seeking a dedicated software QA lead to join our growing company.You will collaborate with other technical staff to create effective and reliable software updates and hotfixes to support our user base. As a software QA lead, you can put your passion for QA testing to work and help optimize our users’ experiences.",
+      "modalHead": "Description",
+      "para": "We are seeking a dedicated software QA lead to join our growing company.You will collaborate with other technical staff to create effective and reliable software updates and hotfixes to support our user base. As a software QA lead, you can put your passion for QA testing to work and help optimize our users’ experiences.",
+      "responsibilities": [
+        " Create and design application and software testing processes",
+        "  Monitor system and software functionality",
+        " Ensure offerings are entirely functional and provide quality assurance for software products",
+        " Automated testing and problem-solving of various tasks that work towards a development process",
+        "Advise best practices and optimizations throughout testing and bug-fixing processes",
+        "Collaborate with fellow software QA leads to develop test plans and new approaches for seeking out bugs and exploits in end-user-facing applications",
+        "Establish and implement rigorous reporting and automated monitoring systems",
+        " Establish creative direction for the company within brand guidelines",
+        "Manage multiple projects within design specifications and budget restrictions",
+        " Implement feedback and changes whenever possible"
+      ],
+      "skillsQualifications": [
+        "Strong personnel management skills",
+        " Minimum 1 year experience ",
+        "Strong written and verbal communication skills working with software development teams",
+        " Analytical approach to troubleshooting",
+        "Time management skills and organizational skills",
+        " Attention to detail",
+        "Knowledge of <insert code language(s)> that our organization uses to create all software products",
+        "Familiarity with company-recommended QA rubrics and software development frameworks"
+      ]
+    },
+    {
+      "num": "9",
+      "img": "https://www.comfygen.com/img/svg/app-delever.svg",
+      "title": "Business Analyst",
+      "decs": "The Business Analyst will collaborate with various departments and stakeholders to gather, document, and analyze business requirements, processes, and workflows. They will translate these requirements into functional specifications for technology teams and work closely with project managers, developers, and testers to ensure successful project delivery. The Business Analyst will also be involved in identifying areas for process improvement and recommending solutions to enhance operational efficiency and effectiveness.",
+      "modalHead": "Description",
+      "para": "The Business Analyst will collaborate with various departments and stakeholders to gather, document, and analyze business requirements, processes, and workflows. They will translate these requirements into functional specifications for technology teams and work closely with project managers, developers, and testers to ensure successful project delivery. The Business Analyst will also be involved in identifying areas for process improvement and recommending solutions to enhance operational efficiency and effectiveness.",
+      "responsibilities": [
+        "1.Requirement Elicitation and Analysis:",
+        "a. Work closely with business stakeholders to understand their needs, objectives, and challenges.",
+        "b. Elicit, document, and analyze business requirements, processes, and workflows.Translate business requirements into clear and concise functional specifications for technical teams.",
+        "2.Solution Design:",
+        "a. Collaborate with technology teams to design solutions that meet business needs.",
+        "b. Propose innovative and practical solutions to address business challenges.",
+        "c. Ensure that proposed solutions align with the organization's strategic goals and technological capabilities.",
+        "3.Stakeholder Communication:",
+        "a. Serve as a liaison between business stakeholders and technology teams.",
+        "b. Communicate complex technical concepts to non-technical stakeholders.",
+        "c. Present findings, recommendations, and project updates to various audiences.",
+        "4.Documentation:",
+        "a.Create detailed documentation including business requirements, process flows, use cases, and user stories.",
+        "b.Maintain accurate and up-to-date project documentation throughout the project lifecycle.",
+        "5. Project Management:",
+        "a. Collaborate with project managers to define project scope, objectives, and deliverables.",
+        "b. Assist in project planning, estimation, and resource allocation.",
+        "c. Monitor project progress and identify potential risks or deviations from the plan.",
+        "6.Quality Assurance:",
+        "a. Participate in system testing, user acceptance testing, and validation of implemented solutions.",
+        "b. Ensure that delivered solutions meet the specified requirements and are of high quality.",
+        "7. Process Improvement:",
+        "a. Identify areas for process optimization and efficiency enhancement.",
+        "b. Recommend process improvements and assist in their implementation."
+      ],
+      "skillsQualifications": [
+        " Bachelor's degree in Business Administration, Information Technology, or a related field (Master's degree is a plus).",
+        "Proven experience as a Business Analyst or in a related role.",
+        "Strong analytical, problem-solving, and critical-thinking skills.",
+        "Excellent communication and interpersonal abilities.",
+        "Proficiency in requirement gathering techniques, process modeling, and documentation.",
+        "Familiarity with project management methodologies and software development lifecycle.",
+        "Ability to collaborate effectively with cross-functional teams."
+      ]
+    },
+    {
+      "num": "10",
+      "img": "https://www.comfygen.com/img/svg/content-writer.webp",
+      "title": "Content Writer",
+      "decs": "We are seeking a dynamic Content Writer with 1 year of experience to join our team. The candidate will be responsible for creating engaging, high-quality content across various digital platforms. This role requires a blend of creativity, research skills, and a strong understanding of SEO principles to produce content that drives engagement and aligns with our brand voice.",
+      "modalHead": "Description",
+      "para": "We are seeking a dynamic Content Writer with 1 year of experience to join our team. The candidate will be responsible for creating engaging, high-quality content across various digital platforms. This role requires a blend of creativity, research skills, and a strong understanding of SEO principles to produce content that drives engagement and aligns with our brand voice.",
+      "responsibilities": [
+        "1.Content Creation:",
+        "a. Develop, write, and edit blog posts, articles, social media content, website copy, and email campaigns that resonate with our target audience",
+        "2.SEO and Research:",
+        "a. Conduct keyword research and implement SEO best practices in content creation to improve organic search rankings and drive traffic.",
+        "3.Collaboration",
+        "a.  Work closely with marketing, design, and product teams to ensure content aligns with business objectives and brand guidelines."
+      ],
+      "skillsQualifications": [
+        " Experience: 1 year of proven experience in content writing or a similar role.",
+        "Technical Proficiency: Familiarity with SEO principles and experience with content management systems (e.g., WordPress).",
+        "Communication: Strong writing, editing, and proofreading skills with a keen eye for detail, coupled with the ability to convey complex information clearly and effectively."
+      ]
+    },
+    {
+      "num": "11",
+      "img": "https://www.comfygen.com/img/svg/seo-exicutive.webp",
+      "title": "SEO Executive",
+      "decs": "As an SEO Executive, you will be responsible for maintaining oversight of client websites, improving traffic, and enhancing brand visibility. Your primary focus will be on off-page SEO activities, specifically link building strategies to improve website authority. You will work closely with the marketing team to achieve SEO objectives and measure the success of SEO and ROI. Familiarity with WordPress is essential, as you will be responsible for assisting in the maintenance of the website's architecture to ensure user-friendliness.",
+      "modalHead": "Description",
+      "para": "As an SEO Executive, you will be responsible for maintaining oversight of client websites, improving traffic, and enhancing brand visibility. Your primary focus will be on off-page SEO activities, specifically link building strategies to improve website authority. You will work closely with the marketing team to achieve SEO objectives and measure the success of SEO and ROI. Familiarity with WordPress is essential, as you will be responsible for assisting in the maintenance of the website's architecture to ensure user-friendliness.",
+      "responsibilities": [
+        "Conducting off-site analysis of web SEO competition.",
+        "Developing and executing off-page strategies such as link building.",
+        "Assisting with blog content.",
+        "Staying informed about the latest SEO updates and developments."
+      ],
+      "skillsQualifications": [
+        "At least 1 year of experience in SEO, specifically in link building and off-page activities.",
+        "Familiarity with WordPress and basic website maintenance.",
+        " Working knowledge of Google Analytics.",
+        "Strong analytical and copywriting skills.",
+        " Market-oriented qualifications or certifications are a plus.",
+        "To ensure the success of your SEO Executive, they should be passionate, enthusiastic, proactive, and possess a keen eye for campaign ideas and content strategies that align with predetermined targets."
+      ]
+    }
+  ],
+  "Arena": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/images/courage-and-audacity.webp",
+      "title": "Courage and Audacity",
+      "decs": "Winning in a competitive environment needs the person to be courageous enough to take bold steps. We are looking for people who are audacious and courageous enough to go ahead and take the challenges head-on and work towards getting fruitful results."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/images/illuslator/curiosity.webp",
+      "title": "Curiosity",
+      "decs": "When a person is curious, they look for things very differently. We’re looking for someone who is always curious and eager to know the logic behind anything professional happening within the organization."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/images/solidarity-and-integrity.webp",
+      "title": "Solidarity and Integrity",
+      "decs": "Many jobs require teamwork, the ability to work efficiently and in tandem with a team is a strength that is what we are looking for. We want someone who brings out the best in other team members. We’re seeking the one who takes responsibility and learns from their own mistakes to show integrity and righteous behavior."
+    }
+  ],
+  "Country": [
+    {
+      "name": "India",
+      "stdCode": "+91",
+      "code": "IN"
+    },
+    {
+      "name": "United States",
+      "stdCode": "+1",
+      "code": "US"
+    },
+    {
+      "name": "United Kingdom",
+      "stdCode": "+44",
+      "code": "GB"
+    },
+    {
+      "name": "Bangladesh",
+      "stdCode": "+880",
+      "code": "BD"
+    },
+    {
+      "name": "Afghanistan",
+      "stdCode": "+93",
+      "code": "AF"
+    },
+    {
+      "name": "Aland Islands",
+      "stdCode": "+358",
+      "code": "AX"
+    },
+    {
+      "name": "Albania",
+      "stdCode": "+355",
+      "code": "AL"
+    },
+    {
+      "name": "Algeria",
+      "stdCode": "+213",
+      "code": "DZ"
+    },
+    {
+      "name": "AmericanSamoa",
+      "stdCode": "+1684",
+      "code": "AS"
+    },
+    {
+      "name": "Andorra",
+      "stdCode": "+376",
+      "code": "AD"
+    },
+    {
+      "name": "Angola",
+      "stdCode": "+244",
+      "code": "AO"
+    },
+    {
+      "name": "Anguilla",
+      "stdCode": "+1264",
+      "code": "AI"
+    },
+    {
+      "name": "Antarctica",
+      "stdCode": "+672",
+      "code": "AQ"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "stdCode": "+1268",
+      "code": "AG"
+    },
+    {
+      "name": "Argentina",
+      "stdCode": "+54",
+      "code": "AR"
+    },
+    {
+      "name": "Armenia",
+      "stdCode": "+374",
+      "code": "AM"
+    },
+    {
+      "name": "Aruba",
+      "stdCode": "+297",
+      "code": "AW"
+    },
+    {
+      "name": "Australia",
+      "stdCode": "+61",
+      "code": "AU"
+    },
+    {
+      "name": "Austria",
+      "stdCode": "+43",
+      "code": "AT"
+    },
+    {
+      "name": "Azerbaijan",
+      "stdCode": "+994",
+      "code": "AZ"
+    },
+    {
+      "name": "Bahamas",
+      "stdCode": "+1242",
+      "code": "BS"
+    },
+    {
+      "name": "Bahrain",
+      "stdCode": "+973",
+      "code": "BH"
+    },
+    {
+      "name": "Barbados",
+      "stdCode": "+1246",
+      "code": "BB"
+    },
+    {
+      "name": "Belarus",
+      "stdCode": "+375",
+      "code": "BY"
+    },
+    {
+      "name": "Belgium",
+      "stdCode": "+32",
+      "code": "BE"
+    },
+    {
+      "name": "Belize",
+      "stdCode": "+501",
+      "code": "BZ"
+    },
+    {
+      "name": "Benin",
+      "stdCode": "+229",
+      "code": "BJ"
+    },
+    {
+      "name": "Bermuda",
+      "stdCode": "+1441",
+      "code": "BM"
+    },
+    {
+      "name": "Bhutan",
+      "stdCode": "+975",
+      "code": "BT"
+    },
+    {
+      "name": "Bolivia, Plurinational State of",
+      "stdCode": "+591",
+      "code": "BO"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "stdCode": "+387",
+      "code": "BA"
+    },
+    {
+      "name": "Botswana",
+      "stdCode": "+267",
+      "code": "BW"
+    },
+    {
+      "name": "Brazil",
+      "stdCode": "+55",
+      "code": "BR"
+    },
+    {
+      "name": "British Indian Ocean Territory",
+      "stdCode": "+246",
+      "code": "IO"
+    },
+    {
+      "name": "Brunei Darussalam",
+      "stdCode": "+673",
+      "code": "BN"
+    },
+    {
+      "name": "Bulgaria",
+      "stdCode": "+359",
+      "code": "BG"
+    },
+    {
+      "name": "Burkina Faso",
+      "stdCode": "+226",
+      "code": "BF"
+    },
+    {
+      "name": "Burundi",
+      "stdCode": "+257",
+      "code": "BI"
+    },
+    {
+      "name": "Cambodia",
+      "stdCode": "+855",
+      "code": "KH"
+    },
+    {
+      "name": "Cameroon",
+      "stdCode": "+237",
+      "code": "CM"
+    },
+    {
+      "name": "Canada",
+      "stdCode": "+1",
+      "code": "CA"
+    },
+    {
+      "name": "Cape Verde",
+      "stdCode": "+238",
+      "code": "CV"
+    },
+    {
+      "name": "Cayman Islands",
+      "stdCode": "+ 345",
+      "code": "KY"
+    },
+    {
+      "name": "Central African Republic",
+      "stdCode": "+236",
+      "code": "CF"
+    },
+    {
+      "name": "Chad",
+      "stdCode": "+235",
+      "code": "TD"
+    },
+    {
+      "name": "Chile",
+      "stdCode": "+56",
+      "code": "CL"
+    },
+    {
+      "name": "China",
+      "stdCode": "+86",
+      "code": "CN"
+    },
+    {
+      "name": "Christmas Island",
+      "stdCode": "+61",
+      "code": "CX"
+    },
+    {
+      "name": "Cocos (Keeling) Islands",
+      "stdCode": "+61",
+      "code": "CC"
+    },
+    {
+      "name": "Colombia",
+      "stdCode": "+57",
+      "code": "CO"
+    },
+    {
+      "name": "Comoros",
+      "stdCode": "+269",
+      "code": "KM"
+    },
+    {
+      "name": "Congo",
+      "stdCode": "+242",
+      "code": "CG"
+    },
+    {
+      "name": "Congo, The Democratic Republic of the Congo",
+      "stdCode": "+243",
+      "code": "CD"
+    },
+    {
+      "name": "Cook Islands",
+      "stdCode": "+682",
+      "code": "CK"
+    },
+    {
+      "name": "Costa Rica",
+      "stdCode": "+506",
+      "code": "CR"
+    },
+    {
+      "name": "Cote d'Ivoire",
+      "stdCode": "+225",
+      "code": "CI"
+    },
+    {
+      "name": "Croatia",
+      "stdCode": "+385",
+      "code": "HR"
+    },
+    {
+      "name": "Cuba",
+      "stdCode": "+53",
+      "code": "CU"
+    },
+    {
+      "name": "Cyprus",
+      "stdCode": "+357",
+      "code": "CY"
+    },
+    {
+      "name": "Czech Republic",
+      "stdCode": "+420",
+      "code": "CZ"
+    },
+    {
+      "name": "Denmark",
+      "stdCode": "+45",
+      "code": "DK"
+    },
+    {
+      "name": "Djibouti",
+      "stdCode": "+253",
+      "code": "DJ"
+    },
+    {
+      "name": "Dominica",
+      "stdCode": "+1767",
+      "code": "DM"
+    },
+    {
+      "name": "Dominican Republic",
+      "stdCode": "+1849",
+      "code": "DO"
+    },
+    {
+      "name": "Ecuador",
+      "stdCode": "+593",
+      "code": "EC"
+    },
+    {
+      "name": "Egypt",
+      "stdCode": "+20",
+      "code": "EG"
+    },
+    {
+      "name": "El Salvador",
+      "stdCode": "+503",
+      "code": "SV"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "stdCode": "+240",
+      "code": "GQ"
+    },
+    {
+      "name": "Eritrea",
+      "stdCode": "+291",
+      "code": "ER"
+    },
+    {
+      "name": "Estonia",
+      "stdCode": "+372",
+      "code": "EE"
+    },
+    {
+      "name": "Ethiopia",
+      "stdCode": "+251",
+      "code": "ET"
+    },
+    {
+      "name": "Falkland Islands (Malvinas)",
+      "stdCode": "+500",
+      "code": "FK"
+    },
+    {
+      "name": "Faroe Islands",
+      "stdCode": "+298",
+      "code": "FO"
+    },
+    {
+      "name": "Fiji",
+      "stdCode": "+679",
+      "code": "FJ"
+    },
+    {
+      "name": "Finland",
+      "stdCode": "+358",
+      "code": "FI"
+    },
+    {
+      "name": "France",
+      "stdCode": "+33",
+      "code": "FR"
+    },
+    {
+      "name": "French Guiana",
+      "stdCode": "+594",
+      "code": "GF"
+    },
+    {
+      "name": "French Polynesia",
+      "stdCode": "+689",
+      "code": "PF"
+    },
+    {
+      "name": "Gabon",
+      "stdCode": "+241",
+      "code": "GA"
+    },
+    {
+      "name": "Gambia",
+      "stdCode": "+220",
+      "code": "GM"
+    },
+    {
+      "name": "Georgia",
+      "stdCode": "+995",
+      "code": "GE"
+    },
+    {
+      "name": "Germany",
+      "stdCode": "+49",
+      "code": "DE"
+    },
+    {
+      "name": "Ghana",
+      "stdCode": "+233",
+      "code": "GH"
+    },
+    {
+      "name": "Gibraltar",
+      "stdCode": "+350",
+      "code": "GI"
+    },
+    {
+      "name": "Greece",
+      "stdCode": "+30",
+      "code": "GR"
+    },
+    {
+      "name": "Greenland",
+      "stdCode": "+299",
+      "code": "GL"
+    },
+    {
+      "name": "Grenada",
+      "stdCode": "+1473",
+      "code": "GD"
+    },
+    {
+      "name": "Guadeloupe",
+      "stdCode": "+590",
+      "code": "GP"
+    },
+    {
+      "name": "Guam",
+      "stdCode": "+1671",
+      "code": "GU"
+    },
+    {
+      "name": "Guatemala",
+      "stdCode": "+502",
+      "code": "GT"
+    },
+    {
+      "name": "Guernsey",
+      "stdCode": "+44",
+      "code": "GG"
+    },
+    {
+      "name": "Guinea",
+      "stdCode": "+224",
+      "code": "GN"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "stdCode": "+245",
+      "code": "GW"
+    },
+    {
+      "name": "Guyana",
+      "stdCode": "+595",
+      "code": "GY"
+    },
+    {
+      "name": "Haiti",
+      "stdCode": "+509",
+      "code": "HT"
+    },
+    {
+      "name": "Holy See (Vatican City State)",
+      "stdCode": "+379",
+      "code": "VA"
+    },
+    {
+      "name": "Honduras",
+      "stdCode": "+504",
+      "code": "HN"
+    },
+    {
+      "name": "Hong Kong",
+      "stdCode": "+852",
+      "code": "HK"
+    },
+    {
+      "name": "Hungary",
+      "stdCode": "+36",
+      "code": "HU"
+    },
+    {
+      "name": "Iceland",
+      "stdCode": "+354",
+      "code": "IS"
+    },
+    {
+      "name": "Indonesia",
+      "stdCode": "+62",
+      "code": "ID"
+    },
+    {
+      "name": "Iran, Islamic Republic of Persian Gulf",
+      "stdCode": "+98",
+      "code": "IR"
+    },
+    {
+      "name": "Iraq",
+      "stdCode": "+964",
+      "code": "IQ"
+    },
+    {
+      "name": "Ireland",
+      "stdCode": "+353",
+      "code": "IE"
+    },
+    {
+      "name": "Isle of Man",
+      "stdCode": "+44",
+      "code": "IM"
+    },
+    {
+      "name": "Israel",
+      "stdCode": "+972",
+      "code": "IL"
+    },
+    {
+      "name": "Italy",
+      "stdCode": "+39",
+      "code": "IT"
+    },
+    {
+      "name": "Jamaica",
+      "stdCode": "+1876",
+      "code": "JM"
+    },
+    {
+      "name": "Japan",
+      "stdCode": "+81",
+      "code": "JP"
+    },
+    {
+      "name": "Jersey",
+      "stdCode": "+44",
+      "code": "JE"
+    },
+    {
+      "name": "Jordan",
+      "stdCode": "+962",
+      "code": "JO"
+    },
+    {
+      "name": "Kazakhstan",
+      "stdCode": "+77",
+      "code": "KZ"
+    },
+    {
+      "name": "Kenya",
+      "stdCode": "+254",
+      "code": "KE"
+    },
+    {
+      "name": "Kiribati",
+      "stdCode": "+686",
+      "code": "KI"
+    },
+    {
+      "name": "Korea, Democratic People's Republic of Korea",
+      "stdCode": "+850",
+      "code": "KP"
+    },
+    {
+      "name": "Korea, Republic of South Korea",
+      "stdCode": "+82",
+      "code": "KR"
+    },
+    {
+      "name": "Kuwait",
+      "stdCode": "+965",
+      "code": "KW"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "stdCode": "+996",
+      "code": "KG"
+    },
+    {
+      "name": "Laos",
+      "stdCode": "+856",
+      "code": "LA"
+    },
+    {
+      "name": "Latvia",
+      "stdCode": "+371",
+      "code": "LV"
+    },
+    {
+      "name": "Lebanon",
+      "stdCode": "+961",
+      "code": "LB"
+    },
+    {
+      "name": "Lesotho",
+      "stdCode": "+266",
+      "code": "LS"
+    },
+    {
+      "name": "Liberia",
+      "stdCode": "+231",
+      "code": "LR"
+    },
+    {
+      "name": "Libyan Arab Jamahiriya",
+      "stdCode": "+218",
+      "code": "LY"
+    },
+    {
+      "name": "Liechtenstein",
+      "stdCode": "+423",
+      "code": "LI"
+    },
+    {
+      "name": "Lithuania",
+      "stdCode": "+370",
+      "code": "LT"
+    },
+    {
+      "name": "Luxembourg",
+      "stdCode": "+352",
+      "code": "LU"
+    },
+    {
+      "name": "Macao",
+      "stdCode": "+853",
+      "code": "MO"
+    },
+    {
+      "name": "Macedonia",
+      "stdCode": "+389",
+      "code": "MK"
+    },
+    {
+      "name": "Madagascar",
+      "stdCode": "+261",
+      "code": "MG"
+    },
+    {
+      "name": "Malawi",
+      "stdCode": "+265",
+      "code": "MW"
+    },
+    {
+      "name": "Malaysia",
+      "stdCode": "+60",
+      "code": "MY"
+    },
+    {
+      "name": "Maldives",
+      "stdCode": "+960",
+      "code": "MV"
+    },
+    {
+      "name": "Mali",
+      "stdCode": "+223",
+      "code": "ML"
+    },
+    {
+      "name": "Malta",
+      "stdCode": "+356",
+      "code": "MT"
+    },
+    {
+      "name": "Marshall Islands",
+      "stdCode": "+692",
+      "code": "MH"
+    },
+    {
+      "name": "Martinique",
+      "stdCode": "+596",
+      "code": "MQ"
+    },
+    {
+      "name": "Mauritania",
+      "stdCode": "+222",
+      "code": "MR"
+    },
+    {
+      "name": "Mauritius",
+      "stdCode": "+230",
+      "code": "MU"
+    },
+    {
+      "name": "Mayotte",
+      "stdCode": "+262",
+      "code": "YT"
+    },
+    {
+      "name": "Mexico",
+      "stdCode": "+52",
+      "code": "MX"
+    },
+    {
+      "name": "Micronesia, Federated States of Micronesia",
+      "stdCode": "+691",
+      "code": "FM"
+    },
+    {
+      "name": "Moldova",
+      "stdCode": "+373",
+      "code": "MD"
+    },
+    {
+      "name": "Monaco",
+      "stdCode": "+377",
+      "code": "MC"
+    },
+    {
+      "name": "Mongolia",
+      "stdCode": "+976",
+      "code": "MN"
+    },
+    {
+      "name": "Montenegro",
+      "stdCode": "+382",
+      "code": "ME"
+    },
+    {
+      "name": "Montserrat",
+      "stdCode": "+1664",
+      "code": "MS"
+    },
+    {
+      "name": "Morocco",
+      "stdCode": "+212",
+      "code": "MA"
+    },
+    {
+      "name": "Mozambique",
+      "stdCode": "+258",
+      "code": "MZ"
+    },
+    {
+      "name": "Myanmar",
+      "stdCode": "+95",
+      "code": "MM"
+    },
+    {
+      "name": "Namibia",
+      "stdCode": "+264",
+      "code": "NA"
+    },
+    {
+      "name": "Nauru",
+      "stdCode": "+674",
+      "code": "NR"
+    },
+    {
+      "name": "Nepal",
+      "stdCode": "+977",
+      "code": "NP"
+    },
+    {
+      "name": "Netherlands",
+      "stdCode": "+31",
+      "code": "NL"
+    },
+    {
+      "name": "Netherlands Antilles",
+      "stdCode": "+599",
+      "code": "AN"
+    },
+    {
+      "name": "New Caledonia",
+      "stdCode": "+687",
+      "code": "NC"
+    },
+    {
+      "name": "New Zealand",
+      "stdCode": "+64",
+      "code": "NZ"
+    },
+    {
+      "name": "Nicaragua",
+      "stdCode": "+505",
+      "code": "NI"
+    },
+    {
+      "name": "Niger",
+      "stdCode": "+227",
+      "code": "NE"
+    },
+    {
+      "name": "Nigeria",
+      "stdCode": "+234",
+      "code": "NG"
+    },
+    {
+      "name": "Niue",
+      "stdCode": "+683",
+      "code": "NU"
+    },
+    {
+      "name": "Norfolk Island",
+      "stdCode": "+672",
+      "code": "NF"
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "stdCode": "+1670",
+      "code": "MP"
+    },
+    {
+      "name": "Norway",
+      "stdCode": "+47",
+      "code": "NO"
+    },
+    {
+      "name": "Oman",
+      "stdCode": "+968",
+      "code": "OM"
+    },
+    {
+      "name": "Pakistan",
+      "stdCode": "+92",
+      "code": "PK"
+    },
+    {
+      "name": "Palau",
+      "stdCode": "+680",
+      "code": "PW"
+    },
+    {
+      "name": "Palestinian Territory, Occupied",
+      "stdCode": "+970",
+      "code": "PS"
+    },
+    {
+      "name": "Panama",
+      "stdCode": "+507",
+      "code": "PA"
+    },
+    {
+      "name": "Papua New Guinea",
+      "stdCode": "+675",
+      "code": "PG"
+    },
+    {
+      "name": "Paraguay",
+      "stdCode": "+595",
+      "code": "PY"
+    },
+    {
+      "name": "Peru",
+      "stdCode": "+51",
+      "code": "PE"
+    },
+    {
+      "name": "Philippines",
+      "stdCode": "+63",
+      "code": "PH"
+    },
+    {
+      "name": "Pitcairn",
+      "stdCode": "+872",
+      "code": "PN"
+    },
+    {
+      "name": "Poland",
+      "stdCode": "+48",
+      "code": "PL"
+    },
+    {
+      "name": "Portugal",
+      "stdCode": "+351",
+      "code": "PT"
+    },
+    {
+      "name": "Puerto Rico",
+      "stdCode": "+1939",
+      "code": "PR"
+    },
+    {
+      "name": "Qatar",
+      "stdCode": "+974",
+      "code": "QA"
+    },
+    {
+      "name": "Romania",
+      "stdCode": "+40",
+      "code": "RO"
+    },
+    {
+      "name": "Russia",
+      "stdCode": "+7",
+      "code": "RU"
+    },
+    {
+      "name": "Rwanda",
+      "stdCode": "+250",
+      "code": "RW"
+    },
+    {
+      "name": "Reunion",
+      "stdCode": "+262",
+      "code": "RE"
+    },
+    {
+      "name": "Saint Barthelemy",
+      "stdCode": "+590",
+      "code": "BL"
+    },
+    {
+      "name": "Saint Helena, Ascension and Tristan Da Cunha",
+      "stdCode": "+290",
+      "code": "SH"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "stdCode": "+1869",
+      "code": "KN"
+    },
+    {
+      "name": "Saint Lucia",
+      "stdCode": "+1758",
+      "code": "LC"
+    },
+    {
+      "name": "Saint Martin",
+      "stdCode": "+590",
+      "code": "MF"
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "stdCode": "+508",
+      "code": "PM"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "stdCode": "+1784",
+      "code": "VC"
+    },
+    {
+      "name": "Samoa",
+      "stdCode": "+685",
+      "code": "WS"
+    },
+    {
+      "name": "San Marino",
+      "stdCode": "+378",
+      "code": "SM"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "stdCode": "+239",
+      "code": "ST"
+    },
+    {
+      "name": "Saudi Arabia",
+      "stdCode": "+966",
+      "code": "SA"
+    },
+    {
+      "name": "Senegal",
+      "stdCode": "+221",
+      "code": "SN"
+    },
+    {
+      "name": "Serbia",
+      "stdCode": "+381",
+      "code": "RS"
+    },
+    {
+      "name": "Seychelles",
+      "stdCode": "+248",
+      "code": "SC"
+    },
+    {
+      "name": "Sierra Leone",
+      "stdCode": "+232",
+      "code": "SL"
+    },
+    {
+      "name": "Singapore",
+      "stdCode": "+65",
+      "code": "SG"
+    },
+    {
+      "name": "Slovakia",
+      "stdCode": "+421",
+      "code": "SK"
+    },
+    {
+      "name": "Slovenia",
+      "stdCode": "+386",
+      "code": "SI"
+    },
+    {
+      "name": "Solomon Islands",
+      "stdCode": "+677",
+      "code": "SB"
+    },
+    {
+      "name": "Somalia",
+      "stdCode": "+252",
+      "code": "SO"
+    },
+    {
+      "name": "South Africa",
+      "stdCode": "+27",
+      "code": "ZA"
+    },
+    {
+      "name": "South Sudan",
+      "stdCode": "+211",
+      "code": "SS"
+    },
+    {
+      "name": "South Georgia and the South Sandwich Islands",
+      "stdCode": "+500",
+      "code": "GS"
+    },
+    {
+      "name": "Spain",
+      "stdCode": "+34",
+      "code": "ES"
+    },
+    {
+      "name": "Sri Lanka",
+      "stdCode": "+94",
+      "code": "LK"
+    },
+    {
+      "name": "Sudan",
+      "stdCode": "+249",
+      "code": "SD"
+    },
+    {
+      "name": "Suriname",
+      "stdCode": "+597",
+      "code": "SR"
+    },
+    {
+      "name": "Svalbard and Jan Mayen",
+      "stdCode": "+47",
+      "code": "SJ"
+    },
+    {
+      "name": "Swaziland",
+      "stdCode": "+268",
+      "code": "SZ"
+    },
+    {
+      "name": "Sweden",
+      "stdCode": "+46",
+      "code": "SE"
+    },
+    {
+      "name": "Switzerland",
+      "stdCode": "+41",
+      "code": "CH"
+    },
+    {
+      "name": "Syrian Arab Republic",
+      "stdCode": "+963",
+      "code": "SY"
+    },
+    {
+      "name": "Taiwan",
+      "stdCode": "+886",
+      "code": "TW"
+    },
+    {
+      "name": "Tajikistan",
+      "stdCode": "+992",
+      "code": "TJ"
+    },
+    {
+      "name": "Tanzania, United Republic of Tanzania",
+      "stdCode": "+255",
+      "code": "TZ"
+    },
+    {
+      "name": "Thailand",
+      "stdCode": "+66",
+      "code": "TH"
+    },
+    {
+      "name": "Timor-Leste",
+      "stdCode": "+670",
+      "code": "TL"
+    },
+    {
+      "name": "Togo",
+      "stdCode": "+228",
+      "code": "TG"
+    },
+    {
+      "name": "Tokelau",
+      "stdCode": "+690",
+      "code": "TK"
+    },
+    {
+      "name": "Tonga",
+      "stdCode": "+676",
+      "code": "TO"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "stdCode": "+1868",
+      "code": "TT"
+    },
+    {
+      "name": "Tunisia",
+      "stdCode": "+216",
+      "code": "TN"
+    },
+    {
+      "name": "Turkey",
+      "stdCode": "+90",
+      "code": "TR"
+    },
+    {
+      "name": "Turkmenistan",
+      "stdCode": "+993",
+      "code": "TM"
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "stdCode": "+1649",
+      "code": "TC"
+    },
+    {
+      "name": "Tuvalu",
+      "stdCode": "+688",
+      "code": "TV"
+    },
+    {
+      "name": "Uganda",
+      "stdCode": "+256",
+      "code": "UG"
+    },
+    {
+      "name": "Ukraine",
+      "stdCode": "+380",
+      "code": "UA"
+    },
+    {
+      "name": "United Arab Emirates",
+      "stdCode": "+971",
+      "code": "AE"
+    },
+    {
+      "name": "Uruguay",
+      "stdCode": "+598",
+      "code": "UY"
+    },
+    {
+      "name": "Uzbekistan",
+      "stdCode": "+998",
+      "code": "UZ"
+    },
+    {
+      "name": "Vanuatu",
+      "stdCode": "+678",
+      "code": "VU"
+    },
+    {
+      "name": "Venezuela, Bolivarian Republic of Venezuela",
+      "stdCode": "+58",
+      "code": "VE"
+    },
+    {
+      "name": "Vietnam",
+      "stdCode": "+84",
+      "code": "VN"
+    },
+    {
+      "name": "Virgin Islands, British",
+      "stdCode": "+1284",
+      "code": "VG"
+    },
+    {
+      "name": "Virgin Islands, U.S.",
+      "stdCode": "+1340",
+      "code": "VI"
+    },
+    {
+      "name": "Wallis and Futuna",
+      "stdCode": "+681",
+      "code": "WF"
+    },
+    {
+      "name": "Yemen",
+      "stdCode": "+967",
+      "code": "YE"
+    },
+    {
+      "name": "Zambia",
+      "stdCode": "+260",
+      "code": "ZM"
+    },
+    {
+      "name": "Zimbabwe",
+      "stdCode": "+263",
+      "code": "ZW"
+    }
+  ]
+}

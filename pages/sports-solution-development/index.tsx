@@ -4,27 +4,60 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cricketliveline.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
-import ServicesSection from "../componentsnew/ServicesSection";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -322,7 +355,7 @@ export default function Ecommerce(props) {
         <Header />
       {/* </LazyLoad> */}
       <div className="overflow-hidden pt-16">
-        <div className="md:pt-10 lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-hero.webp')]">
+
         <HeroSectionForAllPages
           heading="Sports Solution Development"
           subhead="Empowering the Future of Sports with Tailored Technology"
@@ -333,9 +366,10 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-hero.webp"
         />
 
-        </div>
+
         <AboutSection
           title="About Company"
           heading="Your Vision. Our Technology. One Winning Team."
@@ -348,17 +382,18 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <ContactFromCenter /> 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Game-Changing Sports Software Solutions Tailored to Every Play, Team & Goal</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Game-Changing Sports Software Solutions Tailored to Every Play, Team & Goal" 
-          servicesData={JSON_DATA.servicesData} />
-
-        
-        {/* <SportsApiSupportSection 
-          heading="Beyond the Game: Our Sports Solution Development Covers Every Major Sport" 
-          description="At Comfygen, we’re not just developers—we’re true sports enthusiasts passionate about the digital transformation of the sports industry. That’s why our Sports Solution Development services go far beyond basic applications. We craft custom, scalable, and high-performance sports software solutions designed to enhance fan engagement, streamline operations, and support real-time data experiences across a wide range of sports. Whether you need a fantasy sports app, live score platform, analytics dashboard, or management system, we’ve got you covered. As a trusted sports app development company in India, our end-to-end solutions support multiple sports, including:" 
-          gameDevItems={JSON_DATA.gamedev} /> */}
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -376,10 +411,17 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <ProcessSection 
-          title="Our Step-by-Step Sports Solution Development Process" 
-          description="" 
-          processSlides={Process} />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Sports Solution Development Process</h2>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
 
         <WhyChoose

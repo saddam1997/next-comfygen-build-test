@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -38,11 +47,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+
+                <Header />
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="AI-Powered Medicine-Ordering App"
@@ -58,7 +67,7 @@ export default function about(props) {
                         imageWidth={640}
                     />
                 </div>
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "Implementing AI-driven medicine recommendations tailored to user health conditions and purchase history.",
@@ -67,23 +76,24 @@ export default function about(props) {
                         "Integrating multiple payment gateways for a hassle-free checkout process.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-ai-powered-medicine-ordering-app.webp"
+                    imagePosition="left"
                 />
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>AI-Powered Medicine Suggestions – </span> Smart recommendations based on user health conditions and past orders.",
-                        "<span class='font-semibold'>Multi-Vendor Support – </span> Users can choose from various pharmacies for better availability and pricing..",
-                        "<span class='font-semibold'>Easy Prescription Upload & Verification – </span> Secure system for doctors and pharmacists to verify orders.",
-                        "<span class='font-semibold'>Real-Time Order Tracking – </span> Live updates on medicine delivery status.",
-                        "<span class='font-semibold'>Secure Payment Integration – </span> Multiple payment options including UPI, credit/debit cards, and wallets.",
-                        "<span class='font-semibold'>Subscription & Auto-Refill –  </span>Set up automatic medicine refills for ongoing treatments.",
-                        "<span class='font-semibold'>Multi-Language Support – </span> Accessible to users in different regions with localized language options.",
-                        "<span class='font-semibold'>Dark Mode & Custom UI – </span> Enhanced readability and personalized user experience."
+                        "<b>AI-Powered Medicine Suggestions – </b> Smart recommendations based on user health conditions and past orders.",
+                        "<b>Multi-Vendor Support – </b> Users can choose from various pharmacies for better availability and pricing..",
+                        "<b>Easy Prescription Upload & Verification – </b> Secure system for doctors and pharmacists to verify orders.",
+                        "<b>Real-Time Order Tracking – </b> Live updates on medicine delivery status.",
+                        "<b>Secure Payment Integration – </b> Multiple payment options including UPI, credit/debit cards, and wallets.",
+                        "<b>Subscription & Auto-Refill –  </b>Set up automatic medicine refills for ongoing treatments.",
+                        "<b>Multi-Language Support – </b> Accessible to users in different regions with localized language options.",
+                        "<b>Dark Mode & Custom UI – </b> Enhanced readability and personalized user experience."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-ai-powered-medicine-ordering-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Solution"
                     points={[
                         "As a leading medicine delivery app development company, we built an AI-powered ordering platform that enhances user engagement and streamlines medicine purchases.",
@@ -93,8 +103,9 @@ export default function about(props) {
                         "Optimized cloud infrastructure for high scalability and real-time inventory updates.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-ai-powered-medicine-ordering-app.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Business Benefits"
                     points={[
                         "35% increase in user engagement with AI-driven medicine recommendations.",
@@ -137,8 +148,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

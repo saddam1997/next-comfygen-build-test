@@ -1,21 +1,37 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./json/about.json"
 import Link from 'next/link';
-import HeroSectionForCompany from '../components/HeroSectionForCompany';
-import LazyLoad from 'react-lazy-load';
-import { useState } from 'react';
-import AboutSection from '../components/AboutSection';
 import { MdArrowOutward } from 'react-icons/md';
-import WhycomfygenSection from './components/WhycomfygenSection';
 import { FaLinkedin } from 'react-icons/fa';
-import BlogSection from '../components/BlogSection';
-import IndustriesServe from '../components/IndustriesServe';
-const Header = dynamic(() => import('../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForCompany from '../Newcomponet/comman/HeroSectionForCompany';
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhycomfygenSection = dynamic(
+  () => import("../Newcomponet/about/WhycomfygenSection"),
+  { loading: loader, ssr: true }
+);
+
+
+
 
 const Whycomfygen = [
   {
@@ -81,10 +97,10 @@ export default function about(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[100px]">
         <div className="lg:bg-right bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/career-hero-img.webp')]">
           <HeroSectionForCompany
             heading="About Us"
@@ -227,7 +243,7 @@ export default function about(props) {
             </div>
           </div>
         </section>
-        <IndustriesServe />
+        <IndustriesServe heading="" description=""/>
       </div>
     </div>
   )

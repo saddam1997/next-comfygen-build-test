@@ -1,13 +1,21 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -38,11 +46,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="AI-Based Crypto Trading Bot Development"
@@ -72,7 +80,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-images-crypto-trading-bot-development.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenges We Overcame"
                     points={[
                         "Market Volatility – Ensuring our bot could adapt to sudden price fluctuations while maintaining profitability.",
@@ -82,9 +90,10 @@ export default function about(props) {
                         "Scalability & Performance – Ensuring the system can handle thousands of transactions per second across multiple exchanges."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-crypto-trading-bot-development.webp"
+                    imagePosition="left"
                 />
                 
-                <InfomationSecound
+                <Features
                     heading="Our Solution"
                     points={[
                         "AI & Machine Learning Integration – Enabled smarter trading decisions based on real-time market trends.",
@@ -94,7 +103,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-crypto-trading-bot-development.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits Delivered"
                     points={[
                         "Maximized Profitability – AI-driven trading automation helped traders generate higher returns with minimal effort.",
@@ -103,6 +112,7 @@ export default function about(props) {
                         "Enhanced Security & Reliability – Ensured secure API connections, encryption protocols, and real-time monitoring to safeguard assets."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-image-crypto-trading-bot-development.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -137,8 +147,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Header from "../components/Header";
+import Header from "../Newcomponet/layout/Header";
 import styles from './styles.module.css'
 export default function lifeatcompany() {
 
@@ -29,17 +29,38 @@ export default function lifeatcompany() {
   return (
     <>
       <div className="overflow-hidden">
-        <div
+        <Header />
+
+        <div className="lg:pt-[110px]">
+          <div className="w-full h-full">
+            <Image
+              src="https://www.comfygen.com/lifecomfygen/IMG-20231110-WA0013.webp"
+              alt="Comfygen Hero Background"
+              width={640}
+              height={360}
+              className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed w-full"
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+              placeholder="blur"
+              blurDataURL="/blur-placeholder.webp"
+              quality={75}
+              loading="eager"
+            />
+
+          </div>
+        </div>
+        {/* <div
           data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="bg-center bg-no-repeat bg-cover " style={{ backgroundImage: `url("https://www.comfygen.com/lifecomfygen/IMG-20231110-WA0013.webp")`, }}>
-          <Header />
+       
           <div className="h-[calc(100vh-2rem)]   bg-gradient-to-r from-blue-600/50  to-purple-500/40 md:flex items-center relative">
             <div className="flex flex-col-reverse w-11/12 py-8 mx-auto 2xl:w-4/6 xl:w-5/6 md:flex-row md:items-center">
               <div className="w-full space-y-8 text-center md:text-center" >
               </div>
             </div>
           </div>
-        </div>
-        <div className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10 relative bg-gray-50">
+        </div> */}
+        <div className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10  bg-gray-50">
           <div className="flex flex-col md:flex-row gap-2">
             <div className="flex flex-1 flex-col gap-2">
               <div className="flex flex-1 flex-col">

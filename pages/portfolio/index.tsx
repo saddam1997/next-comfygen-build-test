@@ -3,17 +3,14 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import JSON_DATA from "./portfolio.json";
 import { ImArrowUpRight2 } from "react-icons/im";
-import CompanyHeroSection from "../components/CompanyHeroSection";
-import FormSec from "../components/FormSec";
-import LazyLoad from "react-lazy-load";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header";
+import CompanyHeroSection from "../Newcomponet/portfolio/CompanyHeroSection";
+import FormSec from "../Newcomponet/portfolio/FormSec";
+
 
 export default function Portfolio(props) {
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -60,17 +57,17 @@ export default function Portfolio(props) {
     selectedCategory === "All"
       ? JSON_DATA.NativeAll
       : JSON_DATA.NativeAll.filter((item) => {
-          const categories = Array.isArray(item.category)
-            ? item.category
-            : [item.category];
-          const subcategories = Array.isArray(item.subcategories)
-            ? item.subcategories
-            : [];
-          return (
-            categories.includes(selectedCategory) ||
-            subcategories.includes(selectedCategory)
-          );
-        });
+        const categories = Array.isArray(item.category)
+          ? item.category
+          : [item.category];
+        const subcategories = Array.isArray(item.subcategories)
+          ? item.subcategories
+          : [];
+        return (
+          categories.includes(selectedCategory) ||
+          subcategories.includes(selectedCategory)
+        );
+      });
 
   const itemsPerPage = 10;
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
@@ -92,11 +89,9 @@ export default function Portfolio(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+      <Header />
 
-      <div className="lg:py-[7rem] py-[5rem] bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')] bg-cover bg-no-repeat">
+      <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')] bg-cover bg-no-repeat">
         <CompanyHeroSection
           heading="Our Portfolio"
           subhead="Work We Have Done For Some of Our Great Clients"
@@ -124,11 +119,10 @@ export default function Portfolio(props) {
           <div className="flex gap-4 justify-center mt-10 flex-wrap">
             <button
               onClick={() => setSelectedCategory("All")}
-              className={`px-4 py-2 rounded-full border ${
-                selectedCategory === "All"
+              className={`px-4 py-2 rounded-full border ${selectedCategory === "All"
                   ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
                   : ""
-              }`}
+                }`}
             >
               All
             </button>
@@ -136,11 +130,10 @@ export default function Portfolio(props) {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full border ${
-                  selectedCategory === category
+                className={`px-4 py-2 rounded-full border ${selectedCategory === category
                     ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
                     : ""
-                }`}
+                  }`}
               >
                 {category}
               </button>
@@ -199,9 +192,8 @@ export default function Portfolio(props) {
               <button
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
-                className={`px-6 py-2 border rounded bg-[#5556D1] text-white ${
-                  currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                className={`px-6 py-2 border rounded bg-[#5556D1] text-white ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
               >
                 Previous
               </button>
@@ -211,9 +203,8 @@ export default function Portfolio(props) {
               <button
                 onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                 disabled={currentPage === totalPages}
-                className={`px-6 py-2 border rounded bg-[#5556D1] text-white ${
-                  currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                className={`px-6 py-2 border rounded bg-[#5556D1] text-white ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
               >
                 Next
               </button>

@@ -4,29 +4,58 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/tennislivelineapi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 const Process = [
   {
@@ -250,7 +279,7 @@ export default function Ecommerce(props) {
 
   return (
     <>
-   <Head>
+      <Head>
         <title>Tennis Live Line API | Real-Time Tennis Score API Provider</title>
         <meta
           name="description"
@@ -385,51 +414,57 @@ export default function Ecommerce(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
         />
-         <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
-          />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
+        />
       </Head>
 
 
 
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-hero.webp')]">
         <HeroSectionForAllPages
           heading="Tennis Live Line API"
           subhead="Real-Time Tennis Live Line API for Developers and Businesses"
           ptag="Experience the power of Fast Tennis Live Line API that delivers instant score updates, player stats, and match events. At Comfygen, we specialize in developing and integrating highly efficient Tennis API Data Feeds for businesses, sports apps, and platforms looking to provide real-time tennis data."
           ptag1="Whether you're building a live score app, live tennis platform, or an analytics dashboard, our solution offers reliable, scalable, and low-latency data access. With support for API for Tennis, seamless integration, and global event coverage, our APIs can transform your digital product experience."
-          
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-hero.webp"
         />
 
-        </div>
+
         <AboutSection
           title="About Company"
           heading="What Is Tennis Live Line API and How It Works"
-          description1="Our Tennis Live Line API is a developer-centric solution that offers real-time data for major tennis events worldwide, including ATP, WTA, ITF, and more. From match scores to live events and detailed player stats, our Tennis Data Feed ensures comprehensive and fast updates."   
-          description2="We focus on providing developers and enterprises with high-quality and structured Tennis API Data Feeds that enhance the user experience of apps and websites. It’s suitable for all platforms, sports broadcasters, and news portals."   
-          description3="Experience unmatched flexibility, accuracy, and real-time coverage with our Tennis Live Live API."   
+          description1="Our Tennis Live Line API is a developer-centric solution that offers real-time data for major tennis events worldwide, including ATP, WTA, ITF, and more. From match scores to live events and detailed player stats, our Tennis Data Feed ensures comprehensive and fast updates."
+          description2="We focus on providing developers and enterprises with high-quality and structured Tennis API Data Feeds that enhance the user experience of apps and websites. It’s suitable for all platforms, sports broadcasters, and news portals."
+          description3="Experience unmatched flexibility, accuracy, and real-time coverage with our Tennis Live Live API."
           imageSrc="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Tennis API Solutions Built to Match Your Business Needs</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Tennis API Solutions Built to Match Your Business Needs"
-          servicesData={JSON_DATA.servicesData} />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -446,12 +481,22 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Our Step-by-Step API Integration Process"
-          description=""
-          processSlides={Process}
-        />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step API Integration Process</h2>
+              <p className="text-base font-normal mt-2">
+
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
 
         <WhyChoose
@@ -464,20 +509,20 @@ export default function Ecommerce(props) {
           heading="Hire Us for Tennis Live Line API"
           text="When it comes to crafting top-tier Tennis Live Line API applications, Comfygen stands as a trusted name in the industry. Our expert developers are more than just programmers—they’re problem-solvers with a deep understanding of how to build fast, reliable, and engaging sports platforms tailored to the tennis domain. With hands-on experience in Tennis API, real-time data integrations, and intuitive UI/UX design, we help you deliver an app experience that keeps users hooked from the first serve to the match point."
           text1="Whether you need a Tennis Score Updates API, Tennis Livescore API, or custom features like odds comparison or analytics, we have the skills to bring your ideas to life."
-          
+
           buttonText="When you hire from Comfygen, you get:"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "Specialized in Tennis API, delivering real-time, scalable, and secure app solutions.", 
-            "Proficient in integrating fast tennis live line APIs with a seamless user experience across devices.", 
-            "Focused on user-first design and clean code architecture that ensures app performance and reliability.", 
-            "Passionate about sports tech, offering innovative tennis app solutions for a global fan base." 
-        ]}
-        
+          listItems={[
+            "Specialized in Tennis API, delivering real-time, scalable, and secure app solutions.",
+            "Proficient in integrating fast tennis live line APIs with a seamless user experience across devices.",
+            "Focused on user-first design and clean code architecture that ensures app performance and reliability.",
+            "Passionate about sports tech, offering innovative tennis app solutions for a global fan base."
+          ]}
+
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq

@@ -1,15 +1,23 @@
+import styles from "../components/styles.module.css"
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
-import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
 
 export default function about(props) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -62,29 +70,30 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Decentralized & Transparent Tracking:<span> End-to-end visibility for all stakeholders.",
-                        "<span class='font-semibold'>Smart Contracts for Automation:<span> Automates order processing, payments, and dispute resolution.",
-                        "<span class='font-semibold'>Tamper-Proof Ledger:<span> Immutable records ensure trust and reduce fraud.",
-                        "<span class='font-semibold'>Efficient Supply Chain Management:<span> Optimized workflows for reduced delays and improved logistics.",
-                        "<span class='font-semibold'>Real-Time Monitoring:<span> Live updates on shipment status, conditions, and estimated delivery times.",
-                        "<span class='font-semibold'>Interoperability & Scalability:<span> Supports integration with existing logistics systems and third-party applications.",
+                        "<b>Decentralized & Transparent Tracking : </b>  End-to-end visibility for all stakeholders.",
+                        "<b>Smart Contracts for Automation: </b> Automates order processing, payments, and dispute resolution.",
+                        "<b>Tamper-Proof Ledger: </b> Immutable records ensure trust and reduce fraud.",
+                        "<b>Efficient Supply Chain Management: </b> Optimized workflows for reduced delays and improved logistics.",
+                        "<b>Real-Time Monitoring:</b> Live updates on shipment status, conditions, and estimated delivery times.",
+                        "<b>Interoperability & Scalability:</b> Supports integration with existing logistics systems and third-party applications.",
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-advanced-blockchain-based-logistics-software.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
-                        "<span class='font-semibold'>Lack of Supply Chain Transparency: </span> Traditional logistics often suffer from data manipulation and mismanagement.",
-                        "<span class='font-semibold'>High Costs & Inefficiencies: </span> Manual processes lead to delays and increased operational expenses.",
-                        "<span class='font-semibold'>Security & Fraud Prevention: </span> Ensuring data integrity and reducing counterfeiting risks.",
-                        "<span class='font-semibold'>Cross-Border Logistics: </span> Handling international trade complexities and compliance issues.",
-                        "<span class='font-semibold'>Data Silos & Fragmentation: </span> Bridging the gap between different logistics stakeholders and systems."
+                        "<b>Lack of Supply Chain Transparency: </b> Traditional logistics often suffer from data manipulation and mismanagement.",
+                        "<b>High Costs & Inefficiencies: </b> Manual processes lead to delays and increased operational expenses.",
+                        "<b>Security & Fraud Prevention: </b> Ensuring data integrity and reducing counterfeiting risks.",
+                        "<b>Cross-Border Logistics: </b> Handling international trade complexities and compliance issues.",
+                        "<b>Data Silos & Fragmentation: </b> Bridging the gap between different logistics stakeholders and systems."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-image-advanced-blockchain-based-logistics-software.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "Built Mezovest using a decentralized blockchain architecture to tackle logistics challenges.",
@@ -94,16 +103,17 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solutions-image-advanced-blockchain-based-logistics-software.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
-                        " <span class='font-semibold'>Enhanced Supply Chain Efficiency: </span> Optimized processes lead to cost savings and reduced delays.",
-                        " <span class='font-semibold'>Fraud Prevention & Security: </span> Blockchain ensures authenticity and eliminates data manipulation.",
-                        " <span class='font-semibold'>Automated Smart Contract Execution: </span> Reduces paperwork and manual processing, increasing efficiency.",
-                        " <span class='font-semibold'>Global Trade Facilitation: </span> Simplifies cross-border transactions with transparent, immutable records.",
-                        " <span class='font-semibold'>Real-Time Decision-Making: </span> Instant access to shipment data for proactive logistics management."
+                        " <b>Enhanced Supply Chain Efficiency: </b> Optimized processes lead to cost savings and reduced delays.",
+                        " <b>Fraud Prevention & Security: </b> Blockchain ensures authenticity and eliminates data manipulation.",
+                        " <b>Automated Smart Contract Execution: </b> Reduces paperwork and manual processing, increasing efficiency.",
+                        " <b>Global Trade Facilitation: </b> Simplifies cross-border transactions with transparent, immutable records.",
+                        " <b>Real-Time Decision-Making: </b> Instant access to shipment data for proactive logistics management."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-image-advanced-blockchain-based-logistics-software.webp"
+                     imagePosition="left"
                 />
 
                 <TechStack
@@ -139,7 +149,7 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )

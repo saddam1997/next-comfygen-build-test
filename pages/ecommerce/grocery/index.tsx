@@ -2,47 +2,108 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import AboutSection from "../../components/AboutSection";
-import HireDeveloper from "../../components/HireDeveloper";
-import Features from "./components/Features";
 
-import TechStack from "../../components/TechStack";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import ServicesSection from "../../componentsnew/ServicesSection";
-import CallToAction from "../../components/CallToAction";
-import TrendsSection from "../../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../../componentsnew/CoreFeaturesSection";
+
+
+import EcommerceNav from "../../Newcomponet/layout/ecommerce-navbar"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const AboutSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const AppcardSlider = dynamic(() => import("../../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+
+const CallToAction = dynamic(() => import("../../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(() => import("../../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const CoreFeaturesSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+)
+
+
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
 import ProcessSection from "../../componentsnew/ProcessSection";
 import AppCard from "../../componentsnew/AppCard";
 import HireDeveloperSec from "../../components/HireDeveloperSec";
-import EcommerceNav from "../../componentsnew/ecommerce-navbar";
+
 import DeliverySection from "../../components/DeliverySection";
 import Slider from "../../components/Slider";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const BlogSection = dynamic(() => import("../../components/BlogSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const CardClone = [
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card1.webp",
     title: "App Like Walmart",
     description:
@@ -50,7 +111,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card2.webp",
     title: "App Like Target",
     description:
@@ -58,7 +119,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card3.webp",
     title: "App Like Shipt",
     description:
@@ -66,7 +127,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card4.webp",
     title: "App Like Instacart",
     description:
@@ -74,7 +135,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card5.webp",
     title: "App Like Amazon Fresh",
     description:
@@ -82,7 +143,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card6.webp",
     title: "App Like Kroger",
     description:
@@ -90,7 +151,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card7.webp",
     title: "App Like Zepto",
     description:
@@ -98,7 +159,7 @@ const CardClone = [
     buttonText: "View Demo",
   },
   {
-    image:
+    imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card8.webp",
     title: "App Like Blinkit",
     description:
@@ -511,23 +572,23 @@ export default function ClinicalApp(props: any) {
       </Head>
       <EcommerceNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp')]">
-          <HeroSectionForAllPages
-            heading="Grocery Delivery App Development Company in India"
-            subhead=""
-            ptag="Comfygen Technologies is a leading custom grocery delivery app development company that helps startups, retailers, and enterprises build scalable and feature-rich grocery apps. Our tailored grocery delivery app development solutions include real-time order tracking, AI-powered personalization, secure payments, and multi-platform support for iOS, Android, and Web. We deliver next-gen grocery delivery apps like Instacart, Walmart, and Zepto with advanced technology to boost user convenience, streamline operations, and maximize business growth."
-            li="AI-Powered Grocery delivery App Development for Smart Shopping"
-            li1="Real-Time Delivery Tracking & Route Optimization"
-            li2="White-Label Grocery delivery App Development Solutions"
-            li3=""
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Grocery Delivery App Development Company in India"
+          subhead=""
+          ptag="Comfygen Technologies is a leading custom grocery delivery app development company that helps startups, retailers, and enterprises build scalable and feature-rich grocery apps. Our tailored grocery delivery app development solutions include real-time order tracking, AI-powered personalization, secure payments, and multi-platform support for iOS, Android, and Web. We deliver next-gen grocery delivery apps like Instacart, Walmart, and Zepto with advanced technology to boost user convenience, streamline operations, and maximize business growth."
+          li="AI-Powered Grocery delivery App Development for Smart Shopping"
+          li1="Real-Time Delivery Tracking & Route Optimization"
+          li2="White-Label Grocery delivery App Development Solutions"
+          li3=""
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp"
+        />
+
         <AboutSection
           title=""
           heading="Build Future-Ready Grocery Delivery Apps with Comfygen"
@@ -545,23 +606,34 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="We Provide First-Class Grocery Delivery App Development Services"
-          subtitle="At Comfygen, we offer top-notch <a href='https://www.comfygen.com/quick-commerce-app-development' class='text-blue-600 font-semibold'>quick commerce grocery delivery app development services</a> designed to help you deliver seamless and fast grocery shopping experiences. We provide customized grocery delivery app development solutions aligned with your goals and market demands. We also provide <a href='https://www.comfygen.com/white-label-mobile-app-development' class='text-blue-600 font-semibold'>white label delivery app development solution<a/> that fully support your startup business."
-          servicesData={JSON_DATA.servicesData}
-        />
 
-        <AppCard
-          title="We Offer Fully-Featured and Customizable Grocery App Development Solution "
-          subtitle="Comfygen Technologies builds robust and scalable grocery apps inspired by industry leaders. We offer ready-to-customize grocery delivery app solutions that help you launch faster and smarter than Walmart, Instacart, or Zepto. We offer modern features, real-time integrations, and customized user experiences."
-          cards={CardClone}
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide First-Class Grocery Delivery App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer top-notch <a href='https://www.comfygen.com/quick-commerce-app-development' className='text-blue-600 font-semibold'>quick commerce grocery delivery app development services</a> designed to help you deliver seamless and fast grocery shopping experiences. We provide customized grocery delivery app development solutions aligned with your goals and market demands. We also provide <a href='https://www.comfygen.com/white-label-mobile-app-development' className='text-blue-600 font-semibold'>white label delivery app development solution</a> that fully support your startup business.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
+
+        <AppcardSlider
+          heading="We Offer Fully-Featured and Customizable Grocery App Development Solution "
+          description="Comfygen Technologies builds robust and scalable grocery apps inspired by industry leaders. We offer ready-to-customize grocery delivery app solutions that help you launch faster and smarter than Walmart, Instacart, or Zepto. We offer modern features, real-time integrations, and customized user experiences."
+          sliderData={CardClone}
           openModal={openModal}
         />
 
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Grocery App Development Portfolio"
             description="Comfygen provides the best <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >e-commerce grocery app development solutions</a>, whether you are a hyperlocal retailer or a global delivery chain. Take a look at some of our standout grocery delivery apps designed to simplify and speed up grocery shopping."
@@ -578,11 +650,15 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
+        <div className="py-8">
+          <Features
+            heading="We Develop Walmart-Like Grocery Apps With Excellent Panel Features"
+            description="high-performance, user-friendly features to make sure a seamless shopping experience. The grocery shopping app development of intuitive panels for customers, vendors, and admins is integral to our supermarket app development for Walmart clones and next-generation hyperlocal grocery platforms."
+            featuresData={JSON_DATA.featuresData}
+            grid={4} />
+        </div>
 
 
-        <ContactFromCenter />
-
-        <Features />
 
         <CoreFeaturesSection
           title="Custom AI-Powered Grocery App Development Solutions"
@@ -627,11 +703,20 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <ProcessSection
-          title="Our Grocery App Development Process"
-          description="At Comfygen, we follow a transparent and agile-driven grocery delivery app development process to ensure high-quality, scalable, and user-friendly app delivery. From ideation to post-launch support, every phase is executed with precision to meet your business objectives and market demands."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Grocery App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a transparent and agile-driven grocery delivery app development process to ensure high-quality, scalable, and user-friendly app delivery. From ideation to post-launch support, every phase is executed with precision to meet your business objectives and market demands.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
         <TechStack
           title="Our Edgy Tech Stack Used for Grocery App Development"

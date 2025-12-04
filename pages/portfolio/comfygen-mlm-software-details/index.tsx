@@ -5,13 +5,18 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+import Header from '../../Newcomponet/layout/Header';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
 
-export default function about(props) {
+const TechnologyStack = dynamic(() => import("../../Newcomponet/portfolio/TechnologyStack"),
+  { loading: loader, ssr: true }
+);
+
+
+export default function about(props:any) {
   let { initialData } = props;
 
 
@@ -38,7 +43,7 @@ export default function about(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="bg-top bg-no-repeat bg-cover"
           style={{ backgroundImage: `url("https://www.comfygen.com/img/efincap-details-herosection.webp")` }}>
           <div className="">

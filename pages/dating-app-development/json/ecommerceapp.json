@@ -317,6 +317,106 @@
   ],
 
 
+ "featuresData":[
+  {
+    "id": 1,
+    "title": "User App",
+    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/dating-user-panel.webp",
+    "additionalDetails": [
+      {
+        "emoji":
+          "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "User Profile",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+        "details": "Search and Matching",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/image 48.png",
+        "details": "Multilanguage and Translations",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+        "details": "Messaging",
+        "content": ""
+      },
+
+      {
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+        "details": "Photo and Video Sharing",
+        "content": ""
+      },
+      {
+        "emoji":
+          "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Social Features",
+        "content": ""
+      },
+      {
+        "emoji":
+          "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+        "details": "Swipe Left & Right",
+        "content": ""
+      },
+      {
+        "emoji":
+          "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Safety and Security",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+    "img": "https://www.comfygen.com/image/dating-admin-panel.webp",
+
+    "additionalDetails": [
+      {
+        "emoji":
+          "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+        "details": "User Management",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+        "details": "Content Moderation",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+        "details": "Messaging System",
+        "content": ""
+      },
+      { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Payment Management ", "content": "" },
+      {
+        "emoji":
+          "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+        "details": "Analytics and Reporting",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Push Notifications",
+        "content": ""
+      },
+      {
+        "emoji":
+          "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+        "details": "Marketing Tools",
+        "content": ""
+      }
+    ]
+  }
+],
+
+
 
   
   "myList1": [

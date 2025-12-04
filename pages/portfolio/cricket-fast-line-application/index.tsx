@@ -3,10 +3,11 @@ import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
+
+
+import Header from '../../Newcomponet/layout/Header';
+const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 
@@ -37,7 +38,7 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="bg-center bg-no-repeat bg-cover"
           style={{ backgroundImage: `url("https://www.comfygen.com/img/cricket-fast-line-herosection.webp")` }}>
           <div className=" bg-[#1B1C30CC]/20">

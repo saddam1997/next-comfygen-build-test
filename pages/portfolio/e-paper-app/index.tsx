@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,20 +71,20 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>AI-Powered News Recommendations: </span> Personalized E-Paper content suggestions based on user preferences.",
-                        "<span class='font-semibold'>Multi-Edition & Multi-Language Support: </span> Access different regional and national newspaper editions.",
-                        "<span class='font-semibold'>Offline Reading Mode: </span> Download E-Paper editions for reading without internet access.",
-                        "<span class='font-semibold'>Interactive PDF & Smart Zoom: </span> High-resolution pages with pinch-to-zoom and text reflow features.",
-                        "<span class='font-semibold'>Digital Archive & Search: </span> Access past editions with an advanced keyword search.",
-                        "<span class='font-semibold'>Multimedia Integration: </span> Embed images, videos, and audio clips within articles.",
-                        "<span class='font-semibold'>Push Notifications for Breaking News: </span> Real-time updates and alerts on trending stories.",
-                        "<span class='font-semibold'>Subscription & Paywall Integration: </span> Premium content access through flexible subscription models.",
-                        "<span class='font-semibold'>E-Paper Clipping & Sharing: </span> Save, highlight, and share articles securely within the app.",
-                        "<span class='font-semibold'>Dark Mode & UI Customization: </span> Enhanced readability with adjustable themes."
+                        "<b>AI-Powered News Recommendations: </b> Personalized E-Paper content suggestions based on user preferences.",
+                        "<b>Multi-Edition & Multi-Language Support: </b> Access different regional and national newspaper editions.",
+                        "<b>Offline Reading Mode: </b> Download E-Paper editions for reading without internet access.",
+                        "<b>Interactive PDF & Smart Zoom: </b> High-resolution pages with pinch-to-zoom and text reflow features.",
+                        "<b>Digital Archive & Search: </b> Access past editions with an advanced keyword search.",
+                        "<b>Multimedia Integration: </b> Embed images, videos, and audio clips within articles.",
+                        "<b>Push Notifications for Breaking News: </b> Real-time updates and alerts on trending stories.",
+                        "<b>Subscription & Paywall Integration: </b> Premium content access through flexible subscription models.",
+                        "<b>E-Paper Clipping & Sharing: </b> Save, highlight, and share articles securely within the app.",
+                        "<b>Dark Mode & UI Customization: </b> Enhanced readability with adjustable themes."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-e-paper-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a user-friendly E-Paper app with real-time news updates, multi-edition support, and offline reading capabilities.",
@@ -84,8 +93,9 @@ export default function about(props) {
                         "Managing high traffic loads during peak hours while ensuring a smooth user experience."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-e-paper-app.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As the number one E-Paper app development company, we specialize in building scalable and secure digital newspaper platforms that deliver an exceptional reading experience.",
@@ -97,7 +107,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-e-paper-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "30% increase in digital subscriptions with a user-friendly and engaging reading experience.",
@@ -107,6 +117,7 @@ export default function about(props) {
                         "Higher revenue generation through ads, subscriptions, and in-app purchases."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-e-paper-app.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -138,7 +149,7 @@ export default function about(props) {
                         </div>
                     </div>
                 </section>
-                <FormSec />
+               
             </div>
         </div>
     )

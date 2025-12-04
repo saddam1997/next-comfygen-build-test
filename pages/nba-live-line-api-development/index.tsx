@@ -1,31 +1,62 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nbalivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -64,11 +95,6 @@ const Process = [
       "Our 24/7 support includes live monitoring, proactive error resolution, version control, and continuous performance optimization."
   }
 ];
-
-
-
-
-
 
 
 const structuredData = {
@@ -250,172 +276,167 @@ export default function Ecommerce(props) {
 
   return (
     <>
-        <Head>
-          <title>NBA Live Line API | NBA Data API Solutions by Comfygen</title>
-          <meta
-            name="description"
-            content="Get real-time NBA data with Comfygen’s NBA Live Line API. Scalable, reliable, and built for developers. and fantasy platforms."
-          />
-          <meta
-            name="keywords"
-            content="NBA Live Line API, NBA odds API, NBA data API, real-time NBA scores API, NBA data feed, NBA match stats API, NBA API integration, NBA historical odds API, NBA developer API"
-          />
-          <link
-            rel="canonical"
-            href="https://www.comfygen.com/nba-live-line-api-development"
-          />
-          <meta
-            name="robots"
-            content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-          />
-          <meta charSet="UTF-8" />
-          <meta
-            property="og:title"
-            content="NBA Live Line API | NBA Data API Solutions by Comfygen"
-          />
-          <meta
-            property="og:description"
-            content="Get real-time NBA data with Comfygen’s NBA Live Line API. Scalable, reliable, and built for developers, and fantasy platforms."
-          />
-          <meta property="schema:type" content="LocalBusiness" />
-          <meta name="copyright" content="Comfygen Private Limited" />
-          <meta name="language" content="en-us" />
-          <meta
-            name="abstract"
-            content="Top NBA Live Line API Services"
-          />
-          <meta
-            name="summary"
-            content="Comfygen provides reliable and scalable NBA Live Line API services with historical and real-time data coverage."
-          />
-          <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
-          <meta name="reply-to" content="sales@comfygen.com" />
-          <meta
-            name="owner"
-            content="Founder of NBA Live Line API services for startups and enterprises. Specializing in real-time NBA scores, stats, and data integration."
-          />
-          <meta
-            name="Best NBA Live Line API Service Provider"
-            content="Comfygen is a trusted NBA API provider worldwide."
-          />
-          <meta name="category" content="NBA Live Line API" />
-          <meta name="coverage" content="Worldwide" />
-          <meta name="distribution" content="Global" />
-          <meta name="rating" content="General" />
-          <meta name="subtitle" content="Best NBA Live Line API" />
-          <meta name="MobileOptimized" content="320" />
-          <meta name="fb:page_id" content="110909321596135" />
-          <meta name="HandheldFriendly" content="true" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="og:country-name" content="India, USA, UK, UAE" />
-          <meta name="og:latitude" content="26.912434°" />
-          <meta name="og:longitude" content="75.787271°" />
-          <meta
-            property="og:type"
-            content="NBA Live Line API Services Provider"
-          />
+      <Head>
+        <title>NBA Live Line API | NBA Data API Solutions by Comfygen</title>
+        <meta
+          name="description"
+          content="Get real-time NBA data with Comfygen’s NBA Live Line API. Scalable, reliable, and built for developers. and fantasy platforms."
+        />
+        <meta
+          name="keywords"
+          content="NBA Live Line API, NBA odds API, NBA data API, real-time NBA scores API, NBA data feed, NBA match stats API, NBA API integration, NBA historical odds API, NBA developer API"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/nba-live-line-api-development"
+        />
+        <meta
+          name="robots"
+          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
+        />
+        <meta charSet="UTF-8" />
+        <meta
+          property="og:title"
+          content="NBA Live Line API | NBA Data API Solutions by Comfygen"
+        />
+        <meta
+          property="og:description"
+          content="Get real-time NBA data with Comfygen’s NBA Live Line API. Scalable, reliable, and built for developers, and fantasy platforms."
+        />
+        <meta property="schema:type" content="LocalBusiness" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="language" content="en-us" />
+        <meta
+          name="abstract"
+          content="Top NBA Live Line API Services"
+        />
+        <meta
+          name="summary"
+          content="Comfygen provides reliable and scalable NBA Live Line API services with historical and real-time data coverage."
+        />
+        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta
+          name="owner"
+          content="Founder of NBA Live Line API services for startups and enterprises. Specializing in real-time NBA scores, stats, and data integration."
+        />
+        <meta
+          name="Best NBA Live Line API Service Provider"
+          content="Comfygen is a trusted NBA API provider worldwide."
+        />
+        <meta name="category" content="NBA Live Line API" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="subtitle" content="Best NBA Live Line API" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="og:country-name" content="India, USA, UK, UAE" />
+        <meta name="og:latitude" content="26.912434°" />
+        <meta name="og:longitude" content="75.787271°" />
+        <meta
+          property="og:type"
+          content="NBA Live Line API Services Provider"
+        />
 
-          {/* Open Graph */}
-          <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="Comfygen Private Limited" />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:locale:alternate" content="en_CA" />
-          <meta property="og:locale:alternate" content="en_GB" />
-          <meta property="og:locale:alternate" content="en_DE" />
-          <meta property="og:locale:alternate" content="en_AE" />
-          <meta property="fb:page_id" content="110909321596135" />
-          <meta property="og:email" content="sales@comfygen.com" />
-          <meta property="og:phone_number" content="+91-958-786-7258" />
-          <meta property="og:image" content="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-og-image.webp" />
-          <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-og-image.webp" />
-          <meta property="og:image:type" content="image/webp" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-          <meta property="og:image:alt" content="NBA Live Line API" />
-          <meta property="og:url" content="https://www.comfygen.com/nba-live-line-api-development" />
-          <meta property="og:title" content="NBA Live Line API Services | Real-Time NBA Data Solutions" />
-          <meta property="og:description" content="Get real-time NBA data with our NBA Live Line API. We provide scores, odds, stats, and integration services for fantasy and platforms." />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta property="fb:page_id" content="110909321596135" />
+        <meta property="og:email" content="sales@comfygen.com" />
+        <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-og-image.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-og-image.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="NBA Live Line API" />
+        <meta property="og:url" content="https://www.comfygen.com/nba-live-line-api-development" />
+        <meta property="og:title" content="NBA Live Line API Services | Real-Time NBA Data Solutions" />
+        <meta property="og:description" content="Get real-time NBA data with our NBA Live Line API. We provide scores, odds, stats, and integration services for fantasy and platforms." />
 
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="NBA Live Line API Services | Real-Time NBA Data Solutions" />
-          <meta name="twitter:description" content="Get real-time NBA data with our NBA Live Line API. We provide scores, odds, stats, and integration services for fantasy and  platforms." />
-          <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
-          <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NBA Live Line API Services | Real-Time NBA Data Solutions" />
+        <meta name="twitter:description" content="Get real-time NBA data with our NBA Live Line API. We provide scores, odds, stats, and integration services for fantasy and  platforms." />
+        <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
+        <meta name="twitter:site" content="@comfygentech" />
 
-          {/* Updated JSON-LD schema for SoftwareApplication */}
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "NBA Live Line API",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "SportsApplication",
-              offers: {
-                "@type": "Offer",
-                price: "Contact Us - 9587867258",
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock"
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "300"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen"
-              }
-            })}
-          </script>
+        {/* Updated JSON-LD schema for SoftwareApplication */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "NBA Live Line API",
+            operatingSystem: "Web, Android, iOS",
+            applicationCategory: "SportsApplication",
+            offers: {
+              "@type": "Offer",
+              price: "Contact Us - 9587867258",
+              priceCurrency: "INR",
+              availability: "https://schema.org/InStock"
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "300"
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Comfygen"
+            }
+          })}
+        </script>
 
-          {/* Structured data scripts */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-          />
+        {/* Structured data scripts */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+        />
       </Head>
 
+      <Header />
 
-
-
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="NBA Live Line API"
           ptag="Are you looking for a fast, reliable, and scalable NBA Live Line API to power real-time scores, stats, and performance insights? Comfygen specializes in custom NBA API solutions tailored for sports platforms, fantasy leagues, data aggregators, and  apps. With over 10 years of software development expertise, we deliver precision-driven NBA Data Feed APIs—including scores, stats, odds, and live updates. Our APIs offer guaranteed uptime, seamless integration, and lightning-fast performance. Whether you need a free NBA API to test or a premium plan for full coverage, Comfygen provides flexible, developer-friendly options to elevate your platform’s sports data experience."
-          
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-hero.webp"
         />
 
-        </div>
         <AboutSection
           title="About Company"
           heading="Level Up Your App with the Leading NBA Live Line API Provider"
-          description1="At Comfygen, we understand the fast-paced, data-driven demands of modern sports platforms. Our NBA Data API delivers real-time scores, team stats, historical data, and  odds in a structured, scalable format. Whether you're a startup or an enterprise, we offer flexible, high-performance solutions with easy integration. Built on a robust backend, our API supports live feeds, player performance, injury updates, and predictive analytics using NBA historical odds. Developers benefit from RESTful endpoints, full documentation, and quick setup. For fantasy platforms, our NBA Fantasy Data API provides lineup insights and live match updates. Start with our free NBA API test version and scale effortlessly with Comfygen’s intelligent NBA Data Feed API."   
+          description1="At Comfygen, we understand the fast-paced, data-driven demands of modern sports platforms. Our NBA Data API delivers real-time scores, team stats, historical data, and  odds in a structured, scalable format. Whether you're a startup or an enterprise, we offer flexible, high-performance solutions with easy integration. Built on a robust backend, our API supports live feeds, player performance, injury updates, and predictive analytics using NBA historical odds. Developers benefit from RESTful endpoints, full documentation, and quick setup. For fantasy platforms, our NBA Fantasy Data API provides lineup insights and live match updates. Start with our free NBA API test version and scale effortlessly with Comfygen’s intelligent NBA Data Feed API."
           points={[
             "Real-time NBA data",
             "Historical stats & odds",
@@ -428,12 +449,18 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">NBA Live Line API Integration Services That Redefine Real-Time Engagement</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="NBA Live Line API Integration Services That Redefine Real-Time Engagement"
-          
-          servicesData={JSON_DATA.servicesData} />
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -450,12 +477,17 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Step-by-Step API Integration Process"
-          description=""
-          processSlides={Process}
-        />
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step API Integration Process</h2>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <WhyChoose
@@ -473,15 +505,15 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "Fast and smooth integration for quick time-to-market", 
-            "Dedicated development team with hands-on sports data experience", 
-            "Custom plans for every budget to fit startups and enterprises", 
-            "Scalable and secure infrastructure built for peak traffic performance" 
-        ]}
-        
+          listItems={[
+            "Fast and smooth integration for quick time-to-market",
+            "Dedicated development team with hands-on sports data experience",
+            "Custom plans for every budget to fit startups and enterprises",
+            "Scalable and secure infrastructure built for peak traffic performance"
+          ]}
+
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq

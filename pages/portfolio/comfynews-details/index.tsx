@@ -5,13 +5,13 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
+import Header from '../../Newcomponet/layout/Header';
+const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 
-export default function about(props) {
+export default function about(props:any) {
   let { initialData } = props;
 
   return (
@@ -38,7 +38,7 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="bg-top bg-no-repeat bg-cover"
           style={{ backgroundImage: `url("https://www.comfygen.com/img/comfynews-details-herosection.webp")` }}>
           <div className=" bg-[#1B1C30CC]/20">

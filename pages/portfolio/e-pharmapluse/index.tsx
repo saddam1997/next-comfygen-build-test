@@ -1,13 +1,21 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -38,11 +46,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="E-PharmaPluse App – Advanced E-Pharmacy Solution"
@@ -58,7 +66,7 @@ export default function about(props) {
                         imageWidth={640}
                     />
                 </div>
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "Building a secure and scalable cloud-based pharmacy platform to handle high demand.",
@@ -68,40 +76,42 @@ export default function about(props) {
                         "Ensuring regulatory compliance with GDPR and pharmacy laws for data security and prescription validation."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-e-pharmapluse.webp"
+                    imagePosition="left"
                 />
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold' >Real-Time GPS Tracking – </span> Live delivery updates and estimated time of arrival.",
-                        "<span class='font-semibold' >Multi-Language Support – </span> Available in German, English, and other regional languages.",
-                        "<span class='font-semibold' >AI-Powered Medicine Recommendations – </span> Smart suggestions based on user health profiles.",
-                        "<span class='font-semibold' >Subscription-Based Medicine Delivery – </span> Monthly auto-refill and scheduled deliveries.",
-                        "<span class='font-semibold' >Secure Prescription Upload & Verification – </span> Ensuring compliance with healthcare regulations.",
-                        "<span class='font-semibold' >Multiple Payment Options – </span> Integration with PayPal, credit/debit cards, and e-wallets.",
-                        "<span class='font-semibold' >Order History & Repeat Orders – </span> Quick reordering for frequently purchased medicines.",
-                        "<span class='font-semibold' >Dark Mode & UI Customization – </span> Enhanced accessibility and user experience.",
-                        "<span class='font-semibold' >Push Notifications & Alerts – </span> Timely reminders for medicine intake and order updates."
+                        "<b>Real-Time GPS Tracking – </b> Live delivery updates and estimated time of arrival.",
+                        "<b>Multi-Language Support – </b> Available in German, English, and other regional languages.",
+                        "<b>AI-Powered Medicine Recommendations – </b> Smart suggestions based on user health profiles.",
+                        "<b>Subscription-Based Medicine Delivery – </b> Monthly auto-refill and scheduled deliveries.",
+                        "<b>Secure Prescription Upload & Verification – </b> Ensuring compliance with healthcare regulations.",
+                        "<b>Multiple Payment Options – </b> Integration with PayPal, credit/debit cards, and e-wallets.",
+                        "<b>Order History & Repeat Orders – </b> Quick reordering for frequently purchased medicines.",
+                        "<b>Dark Mode & UI Customization – </b> Enhanced accessibility and user experience.",
+                        "<b>Push Notifications & Alerts – </b> Timely reminders for medicine intake and order updates."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-e-pharmapluse.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Solution"
                     points={[
-                        "<span class='font-semibold'> At Comfygen, we focused on creating an AI- </span>powered and scalable e-pharmacy solution that enhances user engagement, ensures compliance, and streamlines operations.",
-                        "<span class='font-semibold'> AI-Powered Medicine Recommendations – </span> Integrated machine learning algorithms to suggest medicines based on user health profiles and past orders.",
-                        "<span class='font-semibold'> Cloud-Based Architecture – </span> Developed a scalable and high-performance infrastructure for seamless operations.",
-                        "<span class='font-semibold'> Real-Time GPS Tracking – </span> Enabled users to track their medicine deliveries with live updates.",
-                        "<span class='font-semibold'> Secure Prescription Upload & Verification – </span> Implemented automated AI-based prescription scanning for quick verification and fraud prevention.",
-                        "<span class='font-semibold'> Subscription-Based Refill System – </span> Introduced auto-refill and scheduled medicine delivery to improve customer convenience.",
-                        "<span class='font-semibold'> Multi-Language & Localization Support – </span> Provided German, English, and regional language support for a broader audience reach.",
-                        "<span class='font-semibold'> Smart Search & Categorization – </span> Designed an intelligent search system with filters for symptoms, brands, and categories to enhance user experience.",
-                        "<span class='font-semibold'> Secure Payment Gateway Integration – </span> Supported multiple payment methods, including credit/debit cards, e-wallets, and online banking.",
-                        "<span class='font-semibold'> Data Security & GDPR Compliance – </span> Ensured end-to-end encryption and secure authentication to protect user data."
+                        "<b> At Comfygen, we focused on creating an AI- </b>powered and scalable e-pharmacy solution that enhances user engagement, ensures compliance, and streamlines operations.",
+                        "<b> AI-Powered Medicine Recommendations – </b> Integrated machine learning algorithms to suggest medicines based on user health profiles and past orders.",
+                        "<b> Cloud-Based Architecture – </b> Developed a scalable and high-performance infrastructure for seamless operations.",
+                        "<b> Real-Time GPS Tracking – </b> Enabled users to track their medicine deliveries with live updates.",
+                        "<b> Secure Prescription Upload & Verification – </b> Implemented automated AI-based prescription scanning for quick verification and fraud prevention.",
+                        "<b> Subscription-Based Refill System – </b> Introduced auto-refill and scheduled medicine delivery to improve customer convenience.",
+                        "<b> Multi-Language & Localization Support – </b> Provided German, English, and regional language support for a broader audience reach.",
+                        "<b> Smart Search & Categorization – </b> Designed an intelligent search system with filters for symptoms, brands, and categories to enhance user experience.",
+                        "<b> Secure Payment Gateway Integration – </b> Supported multiple payment methods, including credit/debit cards, e-wallets, and online banking.",
+                        "<b> Data Security & GDPR Compliance – </b> Ensured end-to-end encryption and secure authentication to protect user data."
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-e-pharmapluse.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Business Benefits"
                     points={[
                         "45% increase in repeat orders through subscription-based medicine delivery.",
@@ -144,8 +154,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

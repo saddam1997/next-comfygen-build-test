@@ -1,13 +1,24 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -74,7 +85,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-cloud-based-crypto-trading-bot.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenges"
                     points={[
                         "High Market Volatility – Crypto markets are highly volatile, requiring real-time decision-making and risk mitigation.",
@@ -83,9 +94,10 @@ export default function about(props) {
                         "Latency Issues – Achieving ultra-fast response times to capitalize on rapid market movements."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-cloud-based-crypto-trading-bot.webp"
+                    imagePosition="left"
                 />
                 
-                <InfomationSecound
+                <Features
                     heading="Our Solution"
                     points={[
                         "Our development team tackled these challenges by:",
@@ -97,7 +109,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-cloud-based-crypto-trading-bot.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits Delivered"
                     points={[
                         "Increased Profitability – Automated bots optimize trading strategies to generate consistent profits.",
@@ -107,6 +119,7 @@ export default function about(props) {
                         "Lower Risk Exposure – Smart algorithms ensure trades are executed within predefined risk thresholds."
                     ]}
                     imageSrc="https://www.comfygen.com/image/hero-image-cloud-based-crypto-trading-bot.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -141,8 +154,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

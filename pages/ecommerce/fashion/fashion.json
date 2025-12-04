@@ -129,6 +129,61 @@
     }
   ],
 
+
+"featuresData":[
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon": "<i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fashion/fashion-portfolio1.webp",
+    "additionalDetails": [
+      { "details": "Easy Sign-Up & Login", "emoji": "", "content": "" },
+      { "details": "Personalized Product Recommendations (AI-Based)", "emoji": "", "content": "" },
+      { "details": "Smart Search & Advanced Filters", "emoji": "", "content": "" },
+      { "details": "Wishlist & Favorite Items", "emoji": "", "content": "" },
+      { "details": "Virtual Try-On (AR Integration)", "emoji": "", "content": "" },
+      { "details": "Secure Checkout & Multiple Payment Options", "emoji": "", "content": "" },
+      { "details": "Order Tracking & Return Requests", "emoji": "", "content": "" },
+      { "details": "Ratings & Reviews for Products", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Seller/Vendor Panel",
+    "icon": "<i className='fas fa-store text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fashion/fashion-portfolio6.webp",
+    "additionalDetails": [
+      { "details": "Vendor Registration & Profile Management", "emoji": "", "content": "" },
+      { "details": "Product Upload & Inventory Control", "emoji": "", "content": "" },
+      { "details": "Order Notifications & Fulfillment Tracking", "emoji": "", "content": "" },
+      { "details": "Discount & Coupon Management", "emoji": "", "content": "" },
+      { "details": "Sales Reports & Analytics Dashboard", "emoji": "", "content": "" },
+      { "details": "Earnings & Commission Tracking", "emoji": "", "content": "" },
+      { "details": "Customer Query Handling", "emoji": "", "content": "" },
+      { "details": "Multi-language & Region Settings", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/fashion/fashion-portfolio5.webp",
+    "additionalDetails": [
+      { "details": "User & Vendor Management", "emoji": "", "content": "" },
+      { "details": "Product & Category Control", "emoji": "", "content": "" },
+      { "details": "Commission, Revenue & Tax Settings", "emoji": "", "content": "" },
+      { "details": "Inventory, Logistics & Delivery Oversight", "emoji": "", "content": "" },
+      { "details": "Push Notification & Promotion Management", "emoji": "", "content": "" },
+      { "details": "Real-Time Reporting & Analytics", "emoji": "", "content": "" },
+      { "details": "Content Moderation & Review Monitoring", "emoji": "", "content": "" },
+      { "details": "Security, GDPR & Data Privacy Settings", "emoji": "", "content": "" }
+    ]
+  }  
+],
+
+
+
+
   "portfoliodata": [
     {
       "image": "https://www.comfygen.com/comfygen-images/fashion/fashion-slider1.webp",

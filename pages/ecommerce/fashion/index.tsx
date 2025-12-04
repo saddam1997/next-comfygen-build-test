@@ -3,113 +3,78 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./fashion.json";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import AboutSection from "../../components/AboutSection";
-import HireDeveloper from "../../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "./components/TeckStackFashion";
-import ClientTestimonials from "../../components/ClientTestimonials";
 
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
+import EcommerceNav from "../../Newcomponet/layout/ecommerce-navbar"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-} from "@tabler/icons-react";
-
-import ServicesSection from "../../componentsnew/ServicesSection";
-import CallToAction from "../../components/CallToAction";
-import TrendsSection from "../../componentsnew/TrendsSection";
-import ProcessSection from "../../componentsnew/ProcessSection";
-import EcommerceNav from "../../componentsnew/ecommerce-navbar";
-import Slider from "../../components/Slider";
-
-const HeroSectionForAllPages = dynamic(
-  () => import("../../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
-const CardClone = [
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card1.webp",
-    title: "App Like Walmart",
-    description:
-      "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card2.webp",
-    title: "App Like Target",
-    description:
-      "Build a modern startup grocery shopping app like Target with intuitive product discovery, rich media listings, and hybrid delivery/pickup options. Our Target clone app focuses on superior UX, real-time inventory visibility, and fast reordering features.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card3.webp",
-    title: "App Like Shipt",
-    description:
-      "Want to replicate Shipt’s same-day grocery delivery model? We develop retailers' grocery apps with fast scheduling, real-time communication with shoppers, and seamless order fulfillment workflows, giving your customers instant access to everyday essentials.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card4.webp",
-    title: "App Like Instacart",
-    description:
-      "We offer supermarket Instacart-style app development that enables users to shop from multiple stores in one go. Packed with AI-driven recommendations, shopper assignments, and real-time order tracking, it’s perfect for scaling hyperlocal grocery delivery.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card5.webp",
-    title: "App Like Amazon Fresh",
-    description:
-      "Our Amazon Fresh-inspired grocery app solution allows seamless order management, voice search, and integration with smart assistants. It’s ideal for enterprises looking to dominate the grocery eCommerce space.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card6.webp",
-    title: "App Like Kroger",
-    description:
-      "Comfygen develops supermarket grocery apps like Kroger, combining digital coupons, store navigation, pharmacy integration, and seamless loyalty points. Perfect for supermarket chains seeking digital transformation.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card7.webp",
-    title: "App Like Zepto",
-    description:
-      "Build an ultra-fast online Quick Commerce grocery delivery app like Zepto with 10-minute delivery capabilities, dark store mapping, and real-time logistics tracking. Our Zepto clone app is engineered for high-speed fulfillment and user satisfaction.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-card8.webp",
-    title: "App Like Blinkit",
-    description:
-      "We create Blinkit-style grocery apps optimized for hyperlocal deliveries, express checkout, and location-based push deals. Our Blinkit clone helps you scale fast in the Q-commerce race.",
-    buttonText: "View Demo",
-  },
-];
+
+const AboutSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(() => import("../../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
 
 const Process = [
   {
@@ -149,99 +114,7 @@ const Process = [
   },
 ];
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "StyleSeat App Clone",
-    desc: "Launch your own salon booking app like StyleSeat. Enable users to book haircuts, flawless makeup, or trendy nail services with ease. Our beauty salon mobile app development solution empowers beauty professionals and clients alike.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Booksy App Clone",
-    desc: "Get a custom salon booking app clone inspired by Booksy, designed to let your clients book self-care appointments anytime, anywhere. Deliver smooth scheduling, real-time availability updates, and authentic customer reviews—all within a single, easy-to-use platform.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Fresha App Clone",
-    desc: "Build your own beauty and wellness platform with a Fresha clone. Let users effortlessly book salon, hair, and spa appointments anytime. Our salon booking application development company crafts intuitive, feature-packed apps customized to reflect your brand’s unique style and deliver a seamless user experience.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "Yes Madam App Clone",
-    desc: "Develop India’s next top on-demand beauty services app platform with a Yes Madam clone. Offer at-home salon, spa, and wellness services with secure payments and real-time tracking.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "GlossGenius App Clone",
-    desc: "Deliver a sleek, all-in-one experience for beauty professionals with an on-demand beauty app development company that builds GlossGenius clones. Manage bookings, payments, and client communication in one powerful app. Create your GlossGenius-inspired salon app today with Comfygen!",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "MindBody App Clone",
-    desc: "Combine beauty, wellness, and fitness into one powerful platform. Our MindBody clone includes class booking, meditation sessions, and salon services. Ideal for beauty and salon booking app development projects looking to merge wellness with beauty. Build a MindBody-style beauty salon.",
-  },
-];
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
-      head: "On-Demand Beauty Booking App",
-      name: "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
-      head: "Salon Chain Management App",
-      name: "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
-      head: "Freelance Stylist Appointment App",
-      name: "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
-      head: "Beauty & Wellness Aggregator Platform",
-      name: "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "#",
-    },
-  ],
-};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -458,7 +331,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-        Fashion App Development Company | Custom Fashion Ecommerce App Solutions
+          Fashion App Development Company | Custom Fashion Ecommerce App Solutions
         </title>
         <meta
           name="description"
@@ -590,22 +463,22 @@ export default function ClinicalApp(props: any) {
       </Head>
       <EcommerceNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/fashion/fashion-hero2.webp')]">
-          <HeroSectionForAllPages
-            heading="Best Fashion App Development Company"
-            subhead=""
-            ptag="Comfygen is a leading fashion app development company offering custom mobile and web app solutions for fashion brands, clothing retailers, and D2C startups. We design feature-rich fashion shopping apps that combine elegant UI/UX, smart product filters, AR try-on, and secure payments to deliver seamless customer experiences. Whether you’re launching a new fashion store or upgrading your existing platform, our fashion app development services help you boost engagement, increase sales, and grow your online presence."
-            li="Custom Fashion Ecommerce App Development"
-            li1="AI-Powered Recommendations & AR Integration"
-            li2="Cross-Platform Apps for Android, iOS & Web"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="Best Fashion App Development Company"
+          subhead=""
+          ptag="Comfygen is a leading fashion app development company offering custom mobile and web app solutions for fashion brands, clothing retailers, and D2C startups. We design feature-rich fashion shopping apps that combine elegant UI/UX, smart product filters, AR try-on, and secure payments to deliver seamless customer experiences. Whether you’re launching a new fashion store or upgrading your existing platform, our fashion app development services help you boost engagement, increase sales, and grow your online presence."
+          li="Custom Fashion Ecommerce App Development"
+          li1="AI-Powered Recommendations & AR Integration"
+          li2="Cross-Platform Apps for Android, iOS & Web"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/fashion/fashion-hero2.webp"
+        />
+
         <AboutSection
           title="About Company"
           heading="The Booming Growth of Fashion eCommerce App Development"
@@ -617,11 +490,20 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="We Provide Top Fashion App Development Services"
-          subtitle="Providing top-notch fashion ecommerce app development services to help brands create immersive, user-friendly, and sales-driven fashion shopping experiences is what we do at Comfygen. Our fashion apps drive engagement and growth for D2C fashion startups, apparel brands, and multi-vendor fashion marketplaces."
-          servicesData={JSON_DATA.servicesData}
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Top Fashion App Development Services</h2>
+              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As Providing top-notch fashion ecommerce app development services to help brands create immersive, user-friendly, and sales-driven fashion shopping experiences is what we do at Comfygen. Our fashion apps drive engagement and growth for D2C fashion startups, apparel brands, and multi-vendor fashion marketplaces.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -633,7 +515,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Explore Our Ecommerce Fashion Web & Mobile App Development Portfolio Work"
             description="At Comfygen, we’ve built top-performing fashion ecommerce apps that deliver style, speed, and seamless shopping experiences. Our fashion app development solutions are trusted by clothing brands, fashion startups, and online retailers for their performance, design, and innovation. Check out some of our latest work"
@@ -650,9 +532,14 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-        <ContactFromCenter />
+        <div className="py-8">
+          <Features
+            heading="Fully Functional App Panels Tailored for Home Service Businesses"
+            description="At Comfygen Technologies, we develop powerful, easy-to-use home service app panels tailored to all user types. Whether you’re a customer, service provider, admin, or vendor, we create feature-rich panels to manage and grow your business smoothly."
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
-        <Features />
 
         <TrendsSection
           heading="Emerging Technologies We Leverage for Fashion App Development"
@@ -661,12 +548,19 @@ export default function ClinicalApp(props: any) {
         />
 
 
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Fashion Ecommerce App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+               As a top-rated fashion app development company, we follow a transparent, proven process to deliver high-quality ecommerce fashion web & <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development solutions</a>. Our goal is to build visually appealing, high-performing fashion apps that boost engagement, drive conversions, and reflect your brand identity.
 
-        <ProcessSection
-          title="Our Fashion Ecommerce App Development Process"
-          description="As a top-rated fashion app development company, we follow a transparent, proven process to deliver high-quality ecommerce fashion web & <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development solutions</a>. Our goal is to build visually appealing, high-performing fashion apps that boost engagement, drive conversions, and reflect your brand identity."
-          processSlides={Process}
-        />
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
         <TechStack
           title="Technology Stack We Use in Fashion Ecommerce App Development"
@@ -701,7 +595,6 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

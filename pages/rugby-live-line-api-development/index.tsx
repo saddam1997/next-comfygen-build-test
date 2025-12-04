@@ -3,28 +3,59 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rugbylivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
 
 const Process = [
   {
@@ -411,27 +442,22 @@ export default function Ecommerce(props) {
       </Head>
 
 
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Rugby Live Line API"
+          ptag="We deliver cutting-edge Rugby Live Line API services tailored for startups, enterprises, and gaming platforms. With over 10 years of experience in software development, we provide real-time, scalable, and seamlessly integrated APIs for rugby live scores, match stats, and data feeds. Whether you're building a live score app, fan platform, our Rugby APIs ensure accuracy and instant updates. From automated highlights to up-to-the-second scoreboards, our APIs simplify integration and boost user engagement. Trust Comfygen Technologies —the expert rugby API provider—to power your platform with reliable, real-time rugby data. Let’s build smarter sports experiences together."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-hero.webp"
+        />
 
 
-
-
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="Rugby Live Line API"
-            ptag="We deliver cutting-edge Rugby Live Line API services tailored for startups, enterprises, and gaming platforms. With over 10 years of experience in software development, we provide real-time, scalable, and seamlessly integrated APIs for rugby live scores, match stats, and data feeds. Whether you're building a live score app, fan platform, our Rugby APIs ensure accuracy and instant updates. From automated highlights to up-to-the-second scoreboards, our APIs simplify integration and boost user engagement. Trust Comfygen Technologies —the expert rugby API provider—to power your platform with reliable, real-time rugby data. Let’s build smarter sports experiences together."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-
-        </div>
         <AboutSection
           title="About Company"
           heading="Delivering Reliable Rugby API Solutions for Every Digital Need"
@@ -445,12 +471,19 @@ export default function Ecommerce(props) {
 
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Comprehensive Rugby Live Line API Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection
-          heading="Comprehensive Rugby Live Line API Services"
-          subtitle=""
-          servicesData={JSON_DATA.servicesData} />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -468,11 +501,15 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <ProcessSection
-          title="Our Step-by-Step Roadmap for Rugby Live Line API Integration"
-          description=""
-          processSlides={Process}
-        />
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Roadmap for Rugby Live Line API Integration</h2>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <WhyChoose

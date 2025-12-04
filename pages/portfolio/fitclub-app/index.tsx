@@ -5,11 +5,11 @@ import styles from './styles.module.css'
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import JSON_DATA from "./fitclub-app.json"
 import { BsArrowRight } from 'react-icons/bs';
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
+import Header from '../../Newcomponet/layout/Header';
+
+const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 

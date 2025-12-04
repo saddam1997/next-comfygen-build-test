@@ -3,37 +3,103 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./fmcg.json";
-import WhyChoose from "../../components/WhyChooseUs";
-import ConsultancyApproach from "../../components/ConsultancyApproach";
-import AboutSection from "../../components/AboutSection";
-import HireDeveloper from "../../components/HireDeveloper";
-import TechStack from "../../components/TechStack";
-import ClientTestimonials from "../../components/ClientTestimonials";
-import ServicesSection from "../../componentsnew/ServicesSection";
-import CallToAction from "../../components/CallToAction";
-import TrendsSection from "../../componentsnew/TrendsSection";
-import ProcessSection from "../../componentsnew/ProcessSection";
 
-import EcommerceNav from "../../componentsnew/ecommerce-navbar";
-import DeliverySection from "../../components/DeliverySection";
-import Slider from "../../components/Slider";
-import IndustriesServe from "../../components/IndustriesServe";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import EcommerceNav from "../../Newcomponet/layout/ecommerce-navbar"
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Faq = dynamic(() => import("../../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+
+const AboutSection = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
 );
+
+const ServicesSec = dynamic(() => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(() => import("../../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const Features = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+const IndustriesServe = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+)
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ClientTestimonials = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+const DeliverySection = dynamic(
+  () => import("../../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Process = [
   {
@@ -436,23 +502,22 @@ export default function ClinicalApp(props: any) {
       </Head>
       <EcommerceNav />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/fmcg/fmcg-hero.webp')]">
-          <HeroSectionForAllPages
-            heading="FMCG Delivery App Development Company"
-            subhead=""
-            ptag="Partner with industry's leading FMCG delivery app development company that has delivered top-notch FMCG apps. We offer the best FMCG delivery app development services that help brands deliver daily essentials faster and smarter. Whether you're a supermarket, D2C brand, or FMCG startup, our FMCG delivery apps are tailored to meet your specific business needs and make sure a seamless customer experience."
-            li="AI-Based Product Recommendations"
-            li1="Multi-Platform App Development"
-            li2="POS, ERP & CRM Integration"
-            li3="Smart Inventory & Order Management"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+        <HeroSectionForAllPages
+          heading="FMCG Delivery App Development Company"
+          subhead=""
+          ptag="Partner with industry's leading FMCG delivery app development company that has delivered top-notch FMCG apps. We offer the best FMCG delivery app development services that help brands deliver daily essentials faster and smarter. Whether you're a supermarket, D2C brand, or FMCG startup, our FMCG delivery apps are tailored to meet your specific business needs and make sure a seamless customer experience."
+          li="AI-Based Product Recommendations"
+          li1="Multi-Platform App Development"
+          li2="POS, ERP & CRM Integration"
+          li3="Smart Inventory & Order Management"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/fmcg/fmcg-hero.webp"
+        />
         <AboutSection
           title="About Company"
           heading="Why FMCG App Development is a Game-Changer"
@@ -467,11 +532,18 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="We Provide Top FMCG Delivery App Development Services"
-          subtitle="At Comfygen, we offer top-tier FMCG Delivery App Development Services tailored to help brands streamline supply chains, optimize deliveries, and meet customer expectations with speed and precision. Whether you're a startup or an established FMCG brand, our solutions are built to scale and succeed."
-          servicesData={JSON_DATA.servicesData}
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide Top FMCG Delivery App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer top-tier FMCG Delivery App Development Services tailored to help brands streamline supply chains, optimize deliveries, and meet customer expectations with speed and precision. Whether you're a startup or an established FMCG brand, our solutions are built to scale and succeed.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -507,7 +579,7 @@ export default function ClinicalApp(props: any) {
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our FMCG Apps Portfolio"
             description="View our FMCG app development portfolio, which demonstrates innovative, scalable, and user-centric solutions. Our FMCG apps integrate real-time tracking and AI-powered automation to streamline logistics and enhance the user experience. We build future-ready FMCG delivery platforms tailored to your business needs."
@@ -537,13 +609,21 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-        <ContactFromCenter />
 
-        <ProcessSection
-          title="Our FMCG App Development Process"
-          description="Comfygen delivers high-performing FMCG delivery app development solutions step-by-step, transparently, and scalable. It doesn't matter if you are a startup or an enterprise, our process ensures speed, quality, and innovation throughout the process."
-          processSlides={Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our FMCG App Development Process</h2>
+              <p className="text-base font-normal mt-2">
+              Comfygen delivers high-performing FMCG delivery app development solutions step-by-step, transparently, and scalable. It doesn't matter if you are a startup or an enterprise, our process ensures speed, quality, and innovation throughout the process.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
         <IndustriesServe
           heading="Industries We Serve"

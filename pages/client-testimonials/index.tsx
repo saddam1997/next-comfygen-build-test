@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import HeroSectionForCompany from "../components/HeroSectionForCompany";
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForCompany from "../Newcomponet/comman/HeroSectionForCompany";
 import LazyLoad from "react-lazy-load";
+import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+
+
+
 export default function Altcoin(props:any) {
   let { initialData } = props;
 
-  const Header = dynamic(() => import("../components/Header"), {
-    loading: () => <p>Loading...</p>,
-  });;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
@@ -86,7 +89,7 @@ export default function Altcoin(props:any) {
           />
 
         </div>
-        {/* <Testimonial /> */}
+        <ClientTestimonials />
        
       </div>
     </>

@@ -1,17 +1,29 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -76,7 +88,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-ai-powered-language-learning-app.png"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a custom language learning app with AI-based adaptive lessons, interactive gamification, and real-time speech analysis.",
@@ -84,8 +96,9 @@ export default function about(props) {
                         "The platform needed multi-language support, offline accessibility, and AI-driven personalized learning paths."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-ai-powered-language-learning-app.png"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a top-rated language learning app development company, we developed an AI-powered e-learning platform that offers personalized lessons, real-time feedback, and gamified learning experiences.",
@@ -94,7 +107,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-ai-powered-language-learning-app.png"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Improved user engagement and retention through AI-powered personalized learning.",
@@ -104,6 +117,7 @@ export default function about(props) {
                         "Real-time AI analytics for personalized feedback and user performance improvement."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-ai-powered-language-learning-app.png"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -137,7 +151,7 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
+                
             </div>
         </div>
     )

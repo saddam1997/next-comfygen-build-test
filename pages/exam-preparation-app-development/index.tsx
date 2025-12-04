@@ -66,9 +66,6 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
-
-
-
 const Process = [
   {
     title: "Requirement Analysis",
@@ -106,9 +103,6 @@ const Process = [
       "Post-launch, we offer continuous support, regular updates, and performance monitoring. Whether it’s fixing bugs, adding new features, or scaling the app, we’re with you at every step.",
   },
 ];
-
-
-
 
 
 export default function ClinicalApp(props: any) {

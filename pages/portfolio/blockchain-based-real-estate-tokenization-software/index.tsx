@@ -1,17 +1,27 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -38,9 +48,7 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+                <Header />
             </div>
             <div className="overflow-hidden">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
@@ -62,17 +70,17 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Tokenization of Assets: </span> This enabled fractional ownership of high-value properties, making real estate investment accessible to a broader audience.",
-                        "<span class='font-semibold'>Smart Contracts: </span> Automated property transactions, reducing the need for intermediaries and minimizing human error.",
-                        "<span class='font-semibold'>Decentralized Property Registry: </span> Provided a secure, tamper-proof record of property ownership and transaction history.",
-                        "<span class='font-semibold'>Investor Dashboard: </span> This offered real-time insights into property performance and investment returns.",
-                        "<span class='font-semibold'>Compliance Integration: </span> Ensured adherence to local real estate regulations through built-in compliance checks.",
-                       
+                        "<b>Tokenization of Assets: </b> This enabled fractional ownership of high-value properties, making real estate investment accessible to a broader audience.",
+                        "<b>Smart Contracts: </b> Automated property transactions, reducing the need for intermediaries and minimizing human error.",
+                        "<b>Decentralized Property Registry: </b> Provided a secure, tamper-proof record of property ownership and transaction history.",
+                        "<b>Investor Dashboard: </b> This offered real-time insights into property performance and investment returns.",
+                        "<b>Compliance Integration: </b> Ensured adherence to local real estate regulations through built-in compliance checks.",
+
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-blockchain-based-real-estate-tokenization-software.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client faced high transaction costs, lengthy paperwork, and a lack of transparency in real estate transactions.",
@@ -81,8 +89,9 @@ export default function about(props) {
                         "Required a scalable, secure, and efficient blockchain-based solution to remain competitive."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-image-blockchain-based-real-estate-tokenization-software.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "Designed and implemented a blockchain-based platform tailored to the client’s real estate needs.",
@@ -93,16 +102,17 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solutions-image-blockchain-based-real-estate-tokenization-software.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
-                        " <span class='font-semibold'>Cost Reduction: </span> Automated processes reduced transaction costs by 30%.",
-                        " <span class='font-semibold'>Increased Transparency: </span> Blockchain technology eliminates fraud and improves trust among stakeholders.",
-                        " <span class='font-semibold'>Faster Transactions: </span> Smart contracts cut transaction times from weeks to just a few days.",
-                        " <span class='font-semibold'>Broader Investor Base: </span> Fractional ownership attracted smaller investors, increasing participation by 40%.",
-                        " <span class='font-semibold'>Regulatory Compliance: </span> Built-in compliance checks ensured adherence to local real estate laws, minimizing legal risks."
+                        " <b>Cost Reduction: </b> Automated processes reduced transaction costs by 30%.",
+                        " <b>Increased Transparency: </b> Blockchain technology eliminates fraud and improves trust among stakeholders.",
+                        " <b>Faster Transactions: </b> Smart contracts cut transaction times from weeks to just a few days.",
+                        " <b>Broader Investor Base: </b> Fractional ownership attracted smaller investors, increasing participation by 40%.",
+                        " <b>Regulatory Compliance: </b> Built-in compliance checks ensured adherence to local real estate laws, minimizing legal risks."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-image-blockchain-based-real-estate-tokenization-software.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -122,23 +132,23 @@ export default function about(props) {
                         </div>
 
                         <div>
-                        <div className={styles.testimonial}>
-                            <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Faisal Al-Qahtani </h3>
-                            <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Dammam, EAS, Saudi Arabia</p>
-                        </div>
-                        <div className='space-y-2 mt-4'>
-                            <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                            <div className={styles.testimonial}>
+                                <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Faisal Al-Qahtani </h3>
+                                <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Dammam, EAS, Saudi Arabia</p>
                             </div>
-                            <div>
-                                <p className='md:text-base text-sm text-black'>"Working with Comfygen was a game-changer for our business. Their blockchain expertise transformed our real estate transaction process, making it faster, more secure, and cost-effective. The tokenization platform they built has opened up new investment opportunities and significantly improved transparency. We highly recommend their services to anyone looking to innovate in the real estate industry"</p>
+                            <div className='space-y-2 mt-4'>
+                                <div className=''>
+                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                </div>
+                                <div>
+                                    <p className='md:text-base text-sm text-black'>"Working with Comfygen was a game-changer for our business. Their blockchain expertise transformed our real estate transaction process, making it faster, more secure, and cost-effective. The tokenization platform they built has opened up new investment opportunities and significantly improved transparency. We highly recommend their services to anyone looking to innovate in the real estate industry"</p>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    
+
                     </div>
                 </section>
-                <FormSec />
+              
             </div>
         </div>
     )

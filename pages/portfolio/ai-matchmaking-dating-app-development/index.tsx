@@ -1,17 +1,25 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
+
+export default function about(props: any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -38,9 +46,9 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+
+                <Header />
+
             </div>
             <div className="overflow-hidden">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
@@ -58,7 +66,7 @@ export default function about(props) {
                         imageWidth={640}
                     />
                 </div>
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed an AI Matchmaking Dating App Development solution with precise compatibility matching.",
@@ -66,25 +74,26 @@ export default function about(props) {
                         "The app required a seamless onboarding process, scalable infrastructure, and AI-driven matchmaking to enhance user retention."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-ai-matchmaking-dating-app-development-image.png"
+                    imagePosition="left"
                 />
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-powered matchmaking:</span>  Smart compatibility algorithms for accurate partner recommendations.",
-                        " <span class='font-semibold text-black '>Real-Time Messaging & Video Calls:</span>    Secure chat options with encrypted conversations.",
-                        "<span class='font-semibold text-black '>Personality-Based Compatibility Test:</span> AI-driven questionnaires for precise matchmaking.",
-                        "<span class='font-semibold text-black '> Profile Verification & Safety Features:</span>  AI-powered identity verification and fake profile detection.",
-                        "<span class='font-semibold text-black '>Advanced Filtering Options:</span>   Search based on age, interests, location, and preferences.",
-                        "<span class='font-semibold text-black '>Social Media Integration:</span>    Seamless sign-up using Facebook, Google, and Instagram.",
-                        "<span class='font-semibold text-black '>In-App Events & Virtual Dating:</span>   Host virtual dating events and interactive sessions.",
-                        "<span class='font-semibold text-black '>Multi-Language Support: </span>  Expand reach with multiple language options.",
-                        "<span class='font-semibold text-black '>In-App Purchases & Subscription Plans:</span>  Premium features like unlimited swipes, profile boosts, and exclusive matchmaking.",
+                        " <b>AI-powered matchmaking: </b>  Smart compatibility algorithms for accurate partner recommendations.",
+                        " <b>Real-Time Messaging & Video Calls: </b>    Secure chat options with encrypted conversations.",
+                        "<b>Personality-Based Compatibility Test: </b> AI-driven questionnaires for precise matchmaking.",
+                        "<b> Profile Verification & Safety Features: </b>  AI-powered identity verification and fake profile detection.",
+                        "<b>Advanced Filtering Options: </b>   Search based on age, interests, location, and preferences.",
+                        "<b>Social Media Integration: </b>    Seamless sign-up using Facebook, Google, and Instagram.",
+                        "<b>In-App Events & Virtual Dating: </b>   Host virtual dating events and interactive sessions.",
+                        "<b>Multi-Language Support:  </b>  Expand reach with multiple language options.",
+                        "<b>In-App Purchases & Subscription Plans: </b>  Premium features like unlimited swipes, profile boosts, and exclusive matchmaking.",
 
                     ]}
                     imageSrc="https://www.comfygen.com/image/matchmaking-dating-app-portfolio-features-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Solution"
                     points={[
                         "As a custom dating app development company, we built a highly scalable matchmaking platform with AI-driven user recommendations.",
@@ -92,8 +101,9 @@ export default function about(props) {
                         "Our dating mobile app development company ensured an intuitive UI/UX design for a smooth user experience."
                     ]}
                     imageSrc="https://www.comfygen.com/image/matchmaking-dating-app-portfolio-solution-image.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Business Benefits"
                     points={[
                         "AI-driven matchmaking enhanced user engagement and retention rates.",
@@ -135,7 +145,6 @@ export default function about(props) {
                     </div>
                 </section>
 
-                <FormSec />
             </div>
         </div>
     )

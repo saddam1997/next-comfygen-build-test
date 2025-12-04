@@ -1,13 +1,22 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Header";
-import CompanyHeroSection from "../../components/CompanyHeroSection";
-import FormSec from "../../components/FormSec";
-import Features from "../components/Features";
-import InfomationFirst from "../components/InfomationFirst";
-import InfomationSecound from "../components/InfomationSecound";
-import TechStack from "../../components/TechStack";
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css";
 import { MdStar, MdStarHalf } from "react-icons/md";
 
@@ -56,11 +65,11 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+
           <Header />
-        </LazyLoad>
+
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
           <CompanyHeroSection
             heading="Croston"
@@ -80,29 +89,30 @@ export default function about(props) {
         <Features
           heading="Features:"
           points={[
-            "<span class='font-semibold'>Decentralized & Secure:</span>  No central authority, ensuring full transparency and security.",
-            "<span class='font-semibold'>Ultra-Fast Transactions:</span>  High-speed blockchain transactions with minimal latency.",
-            "<span class='font-semibold'>Low Transaction Fees:</span>  Efficient cost structures reduce overhead compared to traditional systems.",
-            "<span class='font-semibold'>Smart Contracts & Governance:</span>  Customizable contracts for DeFi applications and on-chain governance.",
-            "<span class='font-semibold'>Scalability & Interoperability:</span>  Supports high transaction volumes with seamless blockchain integrations.",
-            "<span class='font-semibold'>Staking & Yield Rewards:</span>  Encourages long-term participation with incentive-based staking.",
+            "<b>Decentralized & Secure: </b>  No central authority, ensuring full transparency and security.",
+            "<b>Ultra-Fast Transactions: </b>  High-speed blockchain transactions with minimal latency.",
+            "<b>Low Transaction Fees: </b>  Efficient cost structures reduce overhead compared to traditional systems.",
+            "<b>Smart Contracts & Governance: </b>  Customizable contracts for DeFi applications and on-chain governance.",
+            "<b>Scalability & Interoperability: </b>  Supports high transaction volumes with seamless blockchain integrations.",
+            "<b>Staking & Yield Rewards: </b>  Encourages long-term participation with incentive-based staking.",
           ]}
           imageSrc="https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-features-portfolio-image.webp"
         />
 
-        <InfomationFirst
+        <Features
           heading="Challenge"
           points={[
-            "<span class='font-semibold'> Ensuring Security & Fraud Prevention: </span> Implementing advanced cryptographic algorithms to mitigate risks.",
-            "<span class='font-semibold'> Scalability & Network Efficiency: </span> Developing a robust framework to handle increasing transaction loads.",
-            "<span class='font-semibold'> User Adoption & Market Expansion: </span> Strategizing global adoption with strong marketing and utility.",
-            "<span class='font-semibold'> Compliance & Regulatory Considerations: </span> Ensuring adherence to regional and international crypto regulations.",
-            "<span class='font-semibold'> Cross-Blockchain Compatibility: </span> Enabling integration with multiple blockchain ecosystems for wider adoption.",
+            "<b> Ensuring Security & Fraud Prevention: </b> Implementing advanced cryptographic algorithms to mitigate risks.",
+            "<b> Scalability & Network Efficiency: </b> Developing a robust framework to handle increasing transaction loads.",
+            "<b> User Adoption & Market Expansion: </b> Strategizing global adoption with strong marketing and utility.",
+            "<b> Compliance & Regulatory Considerations: </b> Ensuring adherence to regional and international crypto regulations.",
+            "<b> Cross-Blockchain Compatibility: </b> Enabling integration with multiple blockchain ecosystems for wider adoption.",
           ]}
           imageSrc="https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-challanges-portfolio-image.webp"
+          imagePosition="left"
         />
 
-        <InfomationSecound
+        <Features
           heading="Solution"
           points={[
             "Developed Croston using an advanced decentralized architecture to address key challenges.",
@@ -113,16 +123,17 @@ export default function about(props) {
           imageSrc="https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-solution-portfolio-image.webp"
         />
 
-        <InfomationFirst
+        <Features
           heading="Business Benefits"
           points={[
-            "<span class='font-semibold'>Enhanced Security: </span> Fully decentralized cryptographic security ensuring trustless transactions.",
-            "<span class='font-semibold'>Global Reach & Accessibility: </span> It facilitates international trade and financial transactions with ease.",
-            "<span class='font-semibold'>Lower Operational Costs: </span> Significantly reduced transaction and processing fees.",
-            "<span class='font-semibold'>Decentralized Decision-Making: </span> Community-driven governance model promoting transparency.",
-            "<span class='font-semibold'>New Revenue Streams: </span> Staking, DeFi integrations, and asset tokenization drive additional opportunities.",
+            "<b>Enhanced Security: </b> Fully decentralized cryptographic security ensuring trustless transactions.",
+            "<b>Global Reach & Accessibility: </b> It facilitates international trade and financial transactions with ease.",
+            "<b>Lower Operational Costs: </b> Significantly reduced transaction and processing fees.",
+            "<b>Decentralized Decision-Making: </b> Community-driven governance model promoting transparency.",
+            "<b>New Revenue Streams: </b> Staking, DeFi integrations, and asset tokenization drive additional opportunities.",
           ]}
           imageSrc="https://www.comfygen.com/image/decentralized-blockchain-based-cryptocurrency-business-benefits-portfolio-image.webp"
+          imagePosition="left"
         />
 
         <TechStack
@@ -172,7 +183,7 @@ export default function about(props) {
           </div>
         </section>
 
-        <FormSec />
+
       </div>
     </div>
   );

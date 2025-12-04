@@ -2,17 +2,16 @@ import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import React from 'react'
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
 import JSON_DATA from "./aria.json"
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+import Header from '../../Newcomponet/layout/Header';
+import TechnologyStack from '../../Newcomponet/portfolio/TechnologyStack';
 
-export default function about(props) {
+
+
+export default function about(props:any) {
   let { initialData } = props;
 
   return (

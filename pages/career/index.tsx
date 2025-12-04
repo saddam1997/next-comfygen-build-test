@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import JSON_DATA from "./json/career.json"
 import LazyLoad from "react-lazy-load";
-import HeroSectionForCompany from "../components/HeroSectionForCompany";
-import PositionSec from "./components/PositionSec";
-import CareerForm from "../components/CareerForm";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-export default function career(props) {
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForCompany from "../Newcomponet/comman/HeroSectionForCompany";
+import PositionSec from "../Newcomponet/career/PositionSec";
+
+export default function career(props:any) {
   let { initialData } = props;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -124,7 +121,7 @@ export default function career(props) {
   };
 
 
-  function handleRecaptchaChange(token) {
+  function handleRecaptchaChange(token:any) {
     setRecaptchaToken(token);
   }
 
@@ -181,7 +178,7 @@ export default function career(props) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[50px]">
         <div className="lg:bg-right bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/career-hero-img.webp')]">
           <HeroSectionForCompany
             heading="Join Our Tech Revolution"
@@ -231,7 +228,7 @@ export default function career(props) {
             </div>
           </div>
         </section>
-        <CareerForm/>
+
         
       </div >
     </>

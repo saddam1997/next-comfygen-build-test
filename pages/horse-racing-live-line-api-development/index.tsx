@@ -1,30 +1,58 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/horseracinglivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
 
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 const Process = [
   {
@@ -219,126 +247,122 @@ export default function Ecommerce(props) {
 
   return (
     <>
-  <Head>
-  <title>Horse Racing Live Line API | Horse Racing Odds & Data API Integration</title>
-  <meta
-    name="description"
-    content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites."
-  />
-  <meta
-    name="keywords"
-    content="Horse Racing Live Line API, horse racing odds API, horse racing data API, API horse racing, horse racing data feed API, horse racing data feed, Horse Racing API Integration, Horse Racing API Integration Services, Horse Racing Betting API, global horse racing database API, API for horse racing, Horse racing data analysis API, horse racing data solution API, live horse racing data API, real-time horse racing odds API, customizable horse racing API"
-  />
+      <Head>
+        <title>Horse Racing Live Line API | Horse Racing Odds & Data API Integration</title>
+        <meta
+          name="description"
+          content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites."
+        />
+        <meta
+          name="keywords"
+          content="Horse Racing Live Line API, horse racing odds API, horse racing data API, API horse racing, horse racing data feed API, horse racing data feed, Horse Racing API Integration, Horse Racing API Integration Services, Horse Racing Betting API, global horse racing database API, API for horse racing, Horse racing data analysis API, horse racing data solution API, live horse racing data API, real-time horse racing odds API, customizable horse racing API"
+        />
 
-  <link
-    rel="canonical"
-    href="https://www.comfygen.com/horse-racing-live-line-api-development"
-  />
-  <meta
-    name="robots"
-    content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-  />
-  <meta charSet="UTF-8" />
-  <meta
-    property="og:title"
-    content="Horse Racing Live Line API"
-  />
-  <meta
-    property="og:description"
-    content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites."
-  />
-  <meta property="schema:type" content="LocalBusiness" />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="language" content="en-us" />
-  <meta
-    name="abstract"
-    content="Top Horse Racing Live Line API"
-  />
-  <meta
-    name="summary"
-    content="Comfygen provides reliable and scalable Horse Racing Live Line API services with global racing coverage and enterprise-grade support."
-  />
-  <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta
-    name="owner"
-    content="Founder of Horse Racing Live Line API services for startups and enterprises. Specializing in real-time odds and race data integration."
-  />
-  <meta
-    name="Best Horse Racing Live Line API service Provider"
-    content="Comfygen is a trusted Horse Racing API provider worldwide."
-  />
-  <meta name="category" content="Horse Racing Live Line API" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="subtitle" content="Best Horse Racing Live Line API" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="fb:page_id" content="110909321596135" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="og:country-name" content="India, USA, UK, UAE" />
-  <meta name="og:latitude" content="26.912434°" />
-  <meta name="og:longitude" content="75.787271°" />
-  <meta
-    property="og:type"
-    content="Horse Racing Live Line API Services Provider"
-  />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/horse-racing-live-line-api-development"
+        />
+        <meta
+          name="robots"
+          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
+        />
+        <meta charSet="UTF-8" />
+        <meta
+          property="og:title"
+          content="Horse Racing Live Line API"
+        />
+        <meta
+          property="og:description"
+          content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites."
+        />
+        <meta property="schema:type" content="LocalBusiness" />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="language" content="en-us" />
+        <meta
+          name="abstract"
+          content="Top Horse Racing Live Line API"
+        />
+        <meta
+          name="summary"
+          content="Comfygen provides reliable and scalable Horse Racing Live Line API services with global racing coverage and enterprise-grade support."
+        />
+        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta
+          name="owner"
+          content="Founder of Horse Racing Live Line API services for startups and enterprises. Specializing in real-time odds and race data integration."
+        />
+        <meta
+          name="Best Horse Racing Live Line API service Provider"
+          content="Comfygen is a trusted Horse Racing API provider worldwide."
+        />
+        <meta name="category" content="Horse Racing Live Line API" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="subtitle" content="Best Horse Racing Live Line API" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="og:country-name" content="India, USA, UK, UAE" />
+        <meta name="og:latitude" content="26.912434°" />
+        <meta name="og:longitude" content="75.787271°" />
+        <meta
+          property="og:type"
+          content="Horse Racing Live Line API Services Provider"
+        />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Comfygen Private Limited" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="en_CA" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:locale:alternate" content="en_DE" />
-  <meta property="og:locale:alternate" content="en_AE" />
-  <meta property="fb:page_id" content="110909321596135" />
-  <meta property="og:email" content="sales@comfygen.com" />
-  <meta property="og:phone_number" content="+91-958-786-7258" />
-  <meta property="og:image" content="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-og-image.webp" />
-  <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-og-image.webp" />
-  <meta property="og:image:type" content="image/webp" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Horse Racing Live Line API" />
-  <meta property="og:url" content="https://www.comfygen.com/horse-racing-live-line-api-development" />
-  <meta property="og:title" content="Horse Racing Live Line API Services | Real-Time Horse Racing Data Solutions" />
-  <meta property="og:description" content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites." />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Comfygen Private Limited" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta property="fb:page_id" content="110909321596135" />
+        <meta property="og:email" content="sales@comfygen.com" />
+        <meta property="og:phone_number" content="+91-958-786-7258" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-og-image.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-og-image.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Horse Racing Live Line API" />
+        <meta property="og:url" content="https://www.comfygen.com/horse-racing-live-line-api-development" />
+        <meta property="og:title" content="Horse Racing Live Line API Services | Real-Time Horse Racing Data Solutions" />
+        <meta property="og:description" content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites." />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Horse Racing Live Line API Services | Real-Time Horse Racing Data Solutions" />
-  <meta name="twitter:description" content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites." />
-  <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
-  <meta name="twitter:site" content="@comfygentech" />
-
-
-  {/* Structured data scripts */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-  />
-</Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Horse Racing Live Line API Services | Real-Time Horse Racing Data Solutions" />
+        <meta name="twitter:description" content="Get real-time horse racing data with our Horse Racing Live Line API. We provide global odds, results, and integration services for cricket live Api apps, software & websites." />
+        <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
+        <meta name="twitter:site" content="@comfygentech" />
 
 
+        {/* Structured data scripts */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+        />
+      </Head>
+      <Header />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-hero.webp')]">
+      <div className="overflow-hidden lg:pt-[110px]">
+
         <HeroSectionForAllPages
           heading="Horse Racing Live Line"
           subhead="Revolutionize Your Racing Platform with Horse Racing Live Line API"
@@ -350,27 +374,34 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-hero.webp"
         />
 
-        </div>
+
         <AboutSection
           title="About Company"
           heading="Best Horse Racing Live Line API"
           subtitle="Comprehensive Data. Fast Access. Reliable Integration."
-          description1="Our Horse Racing Live Line API delivers real-time race results, horse statistics, cricket live Api odds, and performance history from domestic and international horse racing events. Whether you need an API for horse racing apps, sportsbook platforms, or data analysis dashboards, our horse racing data feed API offers unmatched flexibility and precision."   
-          description2="With the rise in digital cricket live Api and demand for accurate race data, developers and cricket live Api businesses rely on Horse Racing API Integration services to stay competitive. Our horse racing odds api ensures you get updated lines and cricket live Api trends from leading tracks worldwide."   
-          description3="From speed figures to pace breakdowns, our horse racing data solution API is suitable for developers looking for scalable and intelligent integration capabilities. Trust us for an end-to-end service—from consultation to deployment."   
+          description1="Our Horse Racing Live Line API delivers real-time race results, horse statistics, cricket live Api odds, and performance history from domestic and international horse racing events. Whether you need an API for horse racing apps, sportsbook platforms, or data analysis dashboards, our horse racing data feed API offers unmatched flexibility and precision."
+          description2="With the rise in digital cricket live Api and demand for accurate race data, developers and cricket live Api businesses rely on Horse Racing API Integration services to stay competitive. Our horse racing odds api ensures you get updated lines and cricket live Api trends from leading tracks worldwide."
+          description3="From speed figures to pace breakdowns, our horse racing data solution API is suitable for developers looking for scalable and intelligent integration capabilities. Trust us for an end-to-end service—from consultation to deployment."
           imageSrc="https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-api-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Horse Racing Live Line API Integration Services</h2>
+             
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Our Horse Racing Live Line API Integration Services"
-          
-          servicesData={JSON_DATA.servicesData} />
 
 
         <ConsultancyApproach
@@ -388,12 +419,24 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Our Step-by-Step Horse Racing Live Line API Process"
-          description="We start by gathering comprehensive information about your project, including user goals, use cases, and market expectations. This ensures the API we develop aligns perfectly with your platform's purpose and audience demands, whether for cricket live Api, analytics, or race tracking."
-          processSlides={Process}
-        />
+
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Horse Racing Live Line API Process</h2>
+              <p className="text-base font-normal mt-2">
+                We start by gathering comprehensive information about your project, including user goals, use cases, and market expectations. This ensures the API we develop aligns perfectly with your platform's purpose and audience demands, whether for cricket live Api, analytics, or race tracking.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
+  
 
 
         <WhyChoose
@@ -411,23 +454,21 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "End-to-end API integration and support", 
-            "Fully customized solutions for cricket live Api and racing apps", 
-            "Ongoing maintenance, uptime checks, and optimization", 
-            "Free consultation for new clientss" 
-        ]}
-        
+          listItems={[
+            "End-to-end API integration and support",
+            "Fully customized solutions for cricket live Api and racing apps",
+            "Ongoing maintenance, uptime checks, and optimization",
+            "Free consultation for new clientss"
+          ]}
+
         />
-         {/* <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  /> */}
+
 
 
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Horse Racing Live Line Api"
         />
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

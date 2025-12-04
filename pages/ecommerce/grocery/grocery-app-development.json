@@ -93,6 +93,71 @@
   }
 ],
 
+
+"featuresData": [
+  {
+    "id": 1,
+    "title": "Customer Panel",
+    "icon":" <i className='fas fa-user text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-customer.webp",
+    "additionalDetails": [
+      { "details": "Quick Sign-Up/Login via Mobile or Email", "emoji": "", "content": "" },
+      { "details": "Smart Search with Filters & Categories", "emoji": "", "content": "" },
+      { "details": "Real-Time Order Tracking", "emoji": "", "content": "" },
+      { "details": "Wishlist & Reorder Functionality", "emoji": "", "content": "" },
+      { "details": "In-App Chat with Delivery Agent", "emoji": "", "content": "" },
+      { "details": "Secure Multiple Payment Options", "emoji": "", "content": "" },
+      { "details": "Ratings, Reviews & Feedback", "emoji": "", "content": "" }    
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Store/Vendor Panel",
+    "icon": "<i className='fas fa-scissors text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-store.webp",
+    "additionalDetails": [
+  { "details": "Easy Product Listing & Categorization", "emoji": "", "content": "" },
+  { "details": "Real-Time Inventory & Stock Updates", "emoji": "", "content": "" },
+  { "details": "Order Alerts & Delivery Coordination", "emoji": "", "content": "" },
+  { "details": "Discounts, Offers & Coupon Management", "emoji": "", "content": "" },
+  { "details": "Sales Analytics & Reports Dashboard", "emoji": "", "content": "" },
+  { "details": "Customer Chat & Order Instructions", "emoji": "", "content": "" },
+  { "details": "Earnings Management & Withdrawals", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Driver Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-driver.webp",
+    "additionalDetails": [
+      { "details": "Easy Login with Verification", "emoji": "", "content": "" },
+      { "details": "Real-Time Delivery Alerts", "emoji": "", "content": "" },
+      { "details": "GPS Navigation & Route Optimization", "emoji": "", "content": "" },
+      { "details": "Order Pickup & Drop Confirmation", "emoji": "", "content": "" },
+      { "details": "In-App Call/Chat with Customers", "emoji": "", "content": "" },
+      { "details": "Daily Earnings Summary", "emoji": "", "content": "" },
+      { "details": "Availability Toggle (Online/Offline)", "emoji": "", "content": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-tools text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-admin.webp",
+    "additionalDetails": [
+      { "details": "Manage Users, Vendors & Delivery Staff", "emoji": "", "content": "" },
+      { "details": "Store Approvals & Inventory Control", "emoji": "", "content": "" },
+      { "details": "Order & Payment Monitoring", "emoji": "", "content": "" },
+      { "details": "Delivery Zone Configuration & Time Slots", "emoji": "", "content": "" },
+      { "details": "Loyalty Program & Promo Code Settings", "emoji": "", "content": "" },
+      { "details": "Reports, Insights & Revenue Analytics", "emoji": "", "content": "" },
+      { "details": "Data Privacy, Security & App Settings", "emoji": "", "content": "" }
+    ]
+  }
+  
+],
+
   "consultancyHead": [
     {
       "num": "1",

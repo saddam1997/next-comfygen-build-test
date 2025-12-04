@@ -2,25 +2,61 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baseballlivelineapidevelopment.json";
-import HeroSectionHomePage from "./components/HeroSectionHomePage"
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from "../componentsnew/ServicesSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
-import Header from "./components/Header";
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
 
 
 const structuredData = {
@@ -335,46 +371,22 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        {/* <Header /> */}
-        <Header/>
-      </LazyLoad>
-      
-      <div className="overflow-hidden w-full">
-          <div className=" overflow-hidden">
-            <HeroSectionHomePage
-              heading="Baseball Live Line API"
-              isHome={false}
-              Provider
-              ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
-              btnName="Let's Discuss"
-              btnLink="/contact-us"
-              imgSrc="/"
-              Width={740}
-              Height={340}
-              altTag="blockchain-technology"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-              // bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
-            bgImage="/hero2.mp4"
-            />
-          </div>
 
-
-          {/* <HeroSectionForAllPages
-            heading="Baseball Live Line API"
-            subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
-            ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
-            ptag1="From live game updates to historical MLB odds, our service empowers developers and businesses alike to create data-rich sports experiences. Need a customized Baseball data API? We’ve got you covered."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          /> */}
+      <Header />
+      <div className="overflow-hidden lg:pt-[110px]">
+        <HeroSectionForAllPages
+          heading="Baseball Live Line API"
+          subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
+          ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
+          ptag1="From live game updates to historical MLB odds, our service empowers developers and businesses alike to create data-rich sports experiences. Need a customized Baseball data API? We’ve got you covered."
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
+        />
 
         <AboutSection
           title="About Company"
@@ -394,12 +406,20 @@ export default function Ecommerce(props) {
           ]}
         />
 
-        <ContactFromCenter />
+  
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Full-Spectrum of Baseball Live Line API Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection
-          heading="Our Full-Spectrum of Baseball Live Line API Services"
-          servicesData={JSON_DATA.servicesData}
-        />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -417,11 +437,15 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <ProcessSection
-          title="Step-by-Step Integration Process Of Our Baseball Live Line API"
-          description=""
-          processSlides={JSON_DATA.Process}
-        />
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Integration Process Of Our Baseball Live Line API</h2>
+            </div>
+            <ProcessSec processSlides={JSON_DATA.Process} />
+          </div>
+        </section>
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

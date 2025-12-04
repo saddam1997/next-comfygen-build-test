@@ -2,41 +2,77 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/autoracinglivelineapidevelopment.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ServiceSection = dynamic(() => import("../components/ServiceSection"), {
-  loading: () => <p>Loading...</p>,
-});
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const HeroSectionForm = dynamic(() => import("../components/HeroSectionForm"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+import LazyLoad from "react-lazy-load";
+
+import ServicesSection from '../componentsnew/ServicesSection'
+
+import ProcessSection from "../componentsnew/ProcessSection";
+
+
 
 const Process = [
   {
@@ -80,42 +116,42 @@ const Process = [
 
 
 const structuredData = {
-  "@context": "https://schema.org/",         
-  "@type": "WebPage",         
-  "@id": "#WebPage",         
-  "url": "https://www.comfygen.com/auto-racing-live-line-api-development",          
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "@id": "#WebPage",
+  "url": "https://www.comfygen.com/auto-racing-live-line-api-development",
   "name": "Auto Racing Live Line API"
 
 };
 
 
 const organizationData = {
-  "@context": "https://schema.org/",         
-  "@type": "Organization",         
-  "@id": "#Organization",         
-  "url": "https://www.comfygen.com/",         
-  "legalName": "Comfygen Technologies",         
-  "name": "Comfygen",         
-  "description": "Comfygen is a leading app development company rendering a spectrum of tech solutions globally. Discover exceptional web and app and blockchain software development services.",         
-  "image": "https://www.comfygen.com/svg/Logo1.svg",         
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",         
-  "telephone": "9587867258",         
-  "email": "sales@comfygen.com",         
-  "address": {             
-    "@type": "PostalAddress",             
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",             
-    "addressLocality": "Ajmer Rd",             
-    "addressRegion": "Jaipur, Rajasthan",             
-    "addressCountry": "India",             
-    "postalCode": "302006"        
-  },         
-  "sameAs": [             
-    "https://www.facebook.com/comfygen",          
-    "https://www.youtube.com/@ComfygenBusiness",             
-    "https://www.instagram.com/comfygen_",             
-    "https://www.linkedin.com/company/comfygen-private-limited/",           
-    "https://x.com/comfygentech"       
-  ] 
+  "@context": "https://schema.org/",
+  "@type": "Organization",
+  "@id": "#Organization",
+  "url": "https://www.comfygen.com/",
+  "legalName": "Comfygen Technologies",
+  "name": "Comfygen",
+  "description": "Comfygen is a leading app development company rendering a spectrum of tech solutions globally. Discover exceptional web and app and blockchain software development services.",
+  "image": "https://www.comfygen.com/svg/Logo1.svg",
+  "logo": "https://www.comfygen.com/svg/Logo1.svg",
+  "telephone": "9587867258",
+  "email": "sales@comfygen.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",
+    "addressLocality": "Ajmer Rd",
+    "addressRegion": "Jaipur, Rajasthan",
+    "addressCountry": "India",
+    "postalCode": "302006"
+  },
+  "sameAs": [
+    "https://www.facebook.com/comfygen",
+    "https://www.youtube.com/@ComfygenBusiness",
+    "https://www.instagram.com/comfygen_",
+    "https://www.linkedin.com/company/comfygen-private-limited/",
+    "https://x.com/comfygentech"
+  ]
 
 };
 
@@ -137,7 +173,7 @@ const productData = {
 
 
 const serviceSchema = {
- "@context": "https://schema.org",
+  "@context": "https://schema.org",
   "@type": "Service",
   "name": "Auto Racing Live Line API",
   "provider": {
@@ -276,7 +312,7 @@ export default function Ecommerce(props) {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Auto Racing Live Line API Services | Real-Time Racing Data API by Comfygen</title>
         <meta
           name="description"
@@ -294,7 +330,7 @@ export default function Ecommerce(props) {
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
-       
+
         <meta
           property="og:title"
           content="Auto Racing Live Line API | Real-Time Racing Score & Data API Solutions"
@@ -392,11 +428,10 @@ export default function Ecommerce(props) {
       </Head>
 
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/auto-racing-live-line-api-development/auto-racing-api-hero.webp')]">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Auto Racing Live Line API "
           subhead="Accelerate Your Platform with Auto Racing Live Line API"
@@ -407,33 +442,37 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/auto-racing-live-line-api-development/auto-racing-api-hero.webp"
         />
 
-        </div>
+
         <AboutSection
           title="About Company"
           heading="The Pulse of Real-Time Motorsports Innovation"
-          description1="Auto racing is all about timing, precision, and performance—and that’s exactly how we build our APIs. At Comfygen, we specialize in creating powerful, real-time auto racing score API solutions that drive user engagement and operational efficiency. With more than a decade in software development, our team understands the technical and competitive requirements of modern racing platforms."   
-          description2="Our auto racing live line API suite supports a wide range of motorsports, including Formula 1, MotoGP, NASCAR, rally races, and more. Every API is built with performance in mind, delivering auto race odds API, lap times, driver stats, event results, and more with lightning speed. You get reliable auto racing data feed API connectivity that integrates effortlessly into mobile and web platforms."   
-          description3="We also offer dedicated services for sportsbook operators with auto racing  API integration, compliant with regulatory frameworks. Whether you need a full-scale platform or just live auto racing match API integration, Comfygen delivers both flexibility and stability."   
-          description4="Our solutions are designed for developers too. The auto racing API for developers comes with RESTful architecture, sample codes, SDKs, and detailed documentation to make integration smooth and fast."   
-          description5="When you choose Comfygen, you don’t just get another vendor—you gain a technical partner who’s as passionate about racing and performance as you are."   
-           
+          description1="Auto racing is all about timing, precision, and performance—and that’s exactly how we build our APIs. At Comfygen, we specialize in creating powerful, real-time auto racing score API solutions that drive user engagement and operational efficiency. With more than a decade in software development, our team understands the technical and competitive requirements of modern racing platforms."
+          description2="Our auto racing live line API suite supports a wide range of motorsports, including Formula 1, MotoGP, NASCAR, rally races, and more. Every API is built with performance in mind, delivering auto race odds API, lap times, driver stats, event results, and more with lightning speed. You get reliable auto racing data feed API connectivity that integrates effortlessly into mobile and web platforms."
+          description3="We also offer dedicated services for sportsbook operators with auto racing  API integration, compliant with regulatory frameworks. Whether you need a full-scale platform or just live auto racing match API integration, Comfygen delivers both flexibility and stability."
+          description4="Our solutions are designed for developers too. The auto racing API for developers comes with RESTful architecture, sample codes, SDKs, and detailed documentation to make integration smooth and fast."
+          description5="When you choose Comfygen, you don’t just get another vendor—you gain a technical partner who’s as passionate about racing and performance as you are."
+
           imageSrc="https://www.comfygen.com/comfygen-images/auto-racing-live-line-api-development/auto-racing-api-about.webp"
           link="/about-us"
           linkText="Explore More"
-          
+
         />
 
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Turbocharged Live Line API Solutions for Every Auto Racing Use Case</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection 
-          heading="Turbocharged Live Line API Solutions for Every Auto Racing Use Case"
-          subtitle=""
-          servicesData={JSON_DATA.servicesData} />
-
-
-       
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -450,12 +489,18 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
-        <ProcessSection
-          title="Step-by-Step Integration Process of Our Auto Racing Live Line API"
-          description=""
-          processSlides={Process}
-        />
+
+
+
+        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Integration Process of Our Auto Racing Live Line API</h2>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
 
 
         <WhyChoose
@@ -473,15 +518,15 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
-          listItems={[ 
-            "Free API consultation before project kickoff", 
-            "Full-cycle development and testing", 
-            "Dedicated developer support", 
-            "Budget-friendly pricing with fast turnarounds" 
-        ]}
-        
+          listItems={[
+            "Free API consultation before project kickoff",
+            "Full-cycle development and testing",
+            "Dedicated developer support",
+            "Budget-friendly pricing with fast turnarounds"
+          ]}
+
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq

@@ -3,28 +3,63 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/golflivelineapi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from '../componentsnew/ServicesSection'
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(() => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+)
+
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+)
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+)
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+)
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
+
+
+
+
+
 
 const Process = [
   {
@@ -217,7 +252,7 @@ export default function Ecommerce(props) {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Kabaddi Live Line API Company | Comfygen</title>
         <meta
           name="description"
@@ -355,11 +390,9 @@ export default function Ecommerce(props) {
       </Head>
 
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/kabaddi-live-line-api-development/kabaddi-live-line-api-hero1.webp')]">
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Kabaddi Live Line API"
           ptag="Empower your sports applications with real-time Kabaddi data feeds, including live scores, player stats, and match analytics."
@@ -372,83 +405,96 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/kabaddi-live-line-api-development/kabaddi-live-line-api-hero1.webp"
         />
 
+   
+      <AboutSection
+        title="About Company"
+        heading="Boost your Kabaddi platform with the most trusted Kabaddi Live Line API."
+        description1="Comfygen’s Kabaddi Live Line API is built for platforms that require real-time match data delivered with speed and accuracy. Our API provides structured, reliable feeds for everything from live scores and player statistics to match schedules and team performance data."
+        description2="Designed for seamless integration, the API supports all essential kabaddi metrics, including raid points, tackle stats, match progress, and team comparisons. Whether you're working on a live score website, analytics dashboard, or broadcast integration, our API delivers clean, timely data that helps users stay up to date with every second of the game."
+        description3="With minimal latency and high uptime, the Kabaddi Live Score API ensures consistent performance and reliability. All data endpoints are optimized for fast access and easy customization, making it simple for developers to integrate and scale according to their project needs."
+        description4="Choose Comfygen as your Kabaddi data API provider and get a powerful solution that delivers exactly what your platform requires—nothing more, nothing less."
+        imageSrc="https://www.comfygen.com/comfygen-images/kabaddi-live-line-api-development/kabaddi-live-line-api-about.webp"
+        link="/about-us"
+        linkText="Explore More"
+      />
+
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Kabaddi Live Line API Solutions for Real-Time Match Data</h2>
+            <p className="text-base text-center font-normal">We offer a full suite of Kabaddi Live Line API services designed to support real-time data delivery across multiple kabaddi formats and events. Our goal is to help platforms access, process, and display kabaddi match data with high accuracy and minimal delay.</p>
+          </div>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
+          </div>
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Boost your Kabaddi platform with the most trusted Kabaddi Live Line API."
-          description1="Comfygen’s Kabaddi Live Line API is built for platforms that require real-time match data delivered with speed and accuracy. Our API provides structured, reliable feeds for everything from live scores and player statistics to match schedules and team performance data."   
-          description2="Designed for seamless integration, the API supports all essential kabaddi metrics, including raid points, tackle stats, match progress, and team comparisons. Whether you're working on a live score website, analytics dashboard, or broadcast integration, our API delivers clean, timely data that helps users stay up to date with every second of the game."   
-          description3="With minimal latency and high uptime, the Kabaddi Live Score API ensures consistent performance and reliability. All data endpoints are optimized for fast access and easy customization, making it simple for developers to integrate and scale according to their project needs."   
-          description4="Choose Comfygen as your Kabaddi data API provider and get a powerful solution that delivers exactly what your platform requires—nothing more, nothing less."   
-          imageSrc="https://www.comfygen.com/comfygen-images/kabaddi-live-line-api-development/kabaddi-live-line-api-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <ContactFromCenter />
-
-        <ServicesSection 
-          heading="Kabaddi Live Line API Solutions for Real-Time Match Data"
-          subtitle="We offer a full suite of Kabaddi Live Line API services designed to support real-time data delivery across multiple kabaddi formats and events. Our goal is to help platforms access, process, and display kabaddi match data with high accuracy and minimal delay."
-          servicesData={JSON_DATA.servicesData} />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        
-        <ProcessSection
-          title="Our Step-by-Step Kabaddi Live Line API Integration Process"
-          description="At Comfygen, we follow a streamlined and collaborative approach to integrate Golf Live Line APIs into your platform. From initial consultation to long-term support, every step is designed to ensure smooth, secure, and scalable delivery of live golf data."
-          processSlides={Process}
-        />
+      </section>
 
 
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Our Kabaddi Live Line API Developers Today"
-          text="If you're looking to build a real-time sports data solution, it's time to hire expert Kabaddi Live Line API developers from Comfygen. Our team is well-versed in building and integrating kabaddi live score API, PKL Data API, and kabaddi data feeds API for various platforms with zero delays and unmatched accuracy."
-          text1="We focus on secure coding, optimized performance, and full compliance with data protocols, so your platform runs reliably 24/7. Whether you're working on a kabaddi live match API for broadcast or a kabaddi live stats API for analytics, we deliver purpose-built solutions tailored to your goals."
-          text2="Partner with a trusted kabaddi API provider and take the lead in delivering seamless live data experiences."
-          buttonText="When you hire from Comfygen, you get:"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Dedicated Kabaddi API Experts",
-            "Quick Integration Support",
-            " 100% Scalable Codebase",
-            "Zero Downtime Deployment",
-            "End-to-End Security",
-            "Transparent Communication",
-          ]}
-        />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
+      <ConsultancyApproach
+        Head={JSON_DATA.consultancyHead}
+        ItemData={JSON_DATA.consultancyData}
+        imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
+        buttonText="Let’s Discuss"
+        buttonLink="/contact-us"
+      />
+      <CallToAction
+        heading="Let’s hear what you have to say?"
+        text="Get in touch with us and discuss your needs and requirements with our experts."
+        buttonText="Get Started"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+        imageAlt="Get in touch now."
+      />
+
+      <section className="bg-[#F5F5F9] lg:py-16 py-10">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+          <div className="text-center">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Kabaddi Live Line API Integration Process</h2>
+            <p className="text-base font-normal mt-2">At Comfygen, we follow a streamlined and collaborative approach to integrate Golf Live Line APIs into your platform. From initial consultation to long-term support, every step is designed to ensure smooth, secure, and scalable delivery of live golf data.</p>
+          </div>
+          <ProcessSec processSlides={Process} />
+        </div>
+      </section>
 
 
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Kabaddi  Live Line Api"
-        />
-      </div>
+
+
+      <WhyChoose
+        title={JSON_DATA.pageData.title}
+        description={JSON_DATA.pageData.description}
+        mainCardData={JSON_DATA.pageData.mainCardData}
+        gridData={JSON_DATA.pageData.gridData}
+      />
+      <HireDeveloper
+        heading="Hire Our Kabaddi Live Line API Developers Today"
+        text="If you're looking to build a real-time sports data solution, it's time to hire expert Kabaddi Live Line API developers from Comfygen. Our team is well-versed in building and integrating kabaddi live score API, PKL Data API, and kabaddi data feeds API for various platforms with zero delays and unmatched accuracy."
+        text1="We focus on secure coding, optimized performance, and full compliance with data protocols, so your platform runs reliably 24/7. Whether you're working on a kabaddi live match API for broadcast or a kabaddi live stats API for analytics, we deliver purpose-built solutions tailored to your goals."
+        text2="Partner with a trusted kabaddi API provider and take the lead in delivering seamless live data experiences."
+        buttonText="When you hire from Comfygen, you get:"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Dedicated Kabaddi API Experts",
+          "Quick Integration Support",
+          " 100% Scalable Codebase",
+          "Zero Downtime Deployment",
+          "End-to-End Security",
+          "Transparent Communication",
+        ]}
+      />
+      <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
+
+
+      <Faq
+        faqData={JSON_DATA.Frequently}
+        title=" Kabaddi  Live Line Api"
+      />
+    </div >
     </>
   );
 }

@@ -1,13 +1,25 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,22 +74,22 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>Decentralized Finance (DeFi) Solutions:</span>  Smart contract automation for financial operations.",
-                        " <span class='font-semibold text-black '>Real-Time & Immutable Transactions:</span>   Transparent and secure transaction records on the blockchain.",
-                        "<span class='font-semibold text-black '>Multi-Signature Authentication:</span> Enhanced security for financial transactions.",
-                        "<span class='font-semibold text-black '>AI-Powered Risk Assessment: </span> Fraud detection and risk evaluation in real-time.",
-                        "<span class='font-semibold text-black '>  Cross-Border Payments:</span> Instant and low-cost international transactions using blockchain technology.",
-                        "<span class='font-semibold text-black '>Tokenization & Digital Asset Management: </span> Secure storage and transfer of digital assets.",
-                        "<span class='font-semibold text-black '>Regulatory Compliance Integration:</span>  KYC, AML, and GDPR compliance for secure transactions.",
-                        "<span class='font-semibold text-black '>Web3 Wallet Connectivity:</span> Seamless integration with cryptocurrency wallets.",
-                        "<span class='font-semibold text-black '>Secure Smart Contract Audits:</span>  Automated contract validation to prevent vulnerabilities.",
-                        "<span class='font-semibold text-black '>Multi-Layer Security Encryption:</span>  Blockchain-driven security for transaction protection.",
+                        " <b>Decentralized Finance (DeFi) Solutions:</b>  Smart contract automation for financial operations.",
+                        " <b>Real-Time & Immutable Transactions:</b>   Transparent and secure transaction records on the blockchain.",
+                        "<b>Multi-Signature Authentication:</b> Enhanced security for financial transactions.",
+                        "<b>AI-Powered Risk Assessment: </b> Fraud detection and risk evaluation in real-time.",
+                        "<b>  Cross-Border Payments:</b> Instant and low-cost international transactions using blockchain technology.",
+                        "<b>Tokenization & Digital Asset Management: </b> Secure storage and transfer of digital assets.",
+                        "<b>Regulatory Compliance Integration:</b>  KYC, AML, and GDPR compliance for secure transactions.",
+                        "<b>Web3 Wallet Connectivity:</b> Seamless integration with cryptocurrency wallets.",
+                        "<b>Secure Smart Contract Audits:</b>  Automated contract validation to prevent vulnerabilities.",
+                        "<b>Multi-Layer Security Encryption:</b>  Blockchain-driven security for transaction protection.",
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-blockchain-based-fintech-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a Blockchain-based finance app development solution capable of handling high-speed, secure transactions while ensuring scalability and regulatory compliance.",
@@ -85,8 +97,9 @@ export default function about(props) {
                         "Implementing decentralized security protocols while ensuring user accessibility and ease of use required innovative solutions."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-image-blockchain-based-fintech-app.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a leading finance app development company, we developed a decentralized Finance App Development Solutions platform using blockchain technology, smart contracts, and secure payment processing.",
@@ -95,7 +108,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-blockchain-based-fintech-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our Blockchain-based FinTech application development improved transaction transparency, eliminated intermediaries, and reduced operational costs.",
@@ -105,6 +118,7 @@ export default function about(props) {
                         "Increased compliance and fraud prevention ensured a regulatory-friendly blockchain-based financial ecosystem."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-img-blockchain-based-fintech-app.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -139,7 +153,7 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )
