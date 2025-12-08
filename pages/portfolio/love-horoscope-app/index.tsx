@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -38,11 +47,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+               
                     <Header />
-                </LazyLoad>
+             
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Love Horoscope App"
@@ -77,7 +86,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-love-horoscope-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "Accurate Horoscope Predictions – Implementing AI and astrological algorithms for precise love compatibility reports.",
@@ -88,8 +97,9 @@ export default function about(props) {
                         "User Engagement & Retention – Providing a personalized experience to keep users engaged."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-love-horoscope-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As an expert love horoscope app development company, we built a scalable and engaging astrology platform using AI, NLP, and real-time communication features.",
@@ -101,7 +111,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-love-horoscope-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "30% Increase in User Engagement – AI-driven insights improved user retention and satisfaction.",
@@ -111,6 +121,7 @@ export default function about(props) {
                         "Improved Customer Trust & Satisfaction – Secure and accurate horoscope predictions boosted credibility."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-love-horoscope-app.webp"
+                    imagePosition='left'
                 />
                 <TechStack
                     title="Technology Stack"
@@ -143,7 +154,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

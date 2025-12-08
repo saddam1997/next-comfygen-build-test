@@ -118,7 +118,7 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
       postalCode: "M1G3S7",
       telephone: "+1 579-977-4475",
     },
-        {
+    {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "Comfygen Technologies",
@@ -207,7 +207,13 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <main className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto`}>
+      <main
+        className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto `}
+
+      // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
+      //   }`}
+
+      >
         <Component {...pageProps} />
         {/* {JSON.stringify(initialData)} */}
         <BlogSection initialData={initialData} />

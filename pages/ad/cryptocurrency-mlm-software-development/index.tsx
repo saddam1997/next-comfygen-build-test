@@ -7,30 +7,24 @@ import { BsArrowRight } from "react-icons/bs";
 import { RiCustomerServiceLine } from "react-icons/ri";
 
 import Link from "next/link";
-const FaqSection = dynamic(() => import('../../components/FaqSection'), {
+const FaqSection = dynamic(() => import('../../Newcomponet/SectionCompoent/Faq'), {
   loading: () => <p>Loading...</p>,
 })
-const ModusSection = dynamic(() => import('../../components/ModusSectionNew'), {
+const ModusSection = dynamic(() => import('../../Newcomponet/ad/ModusSectionNew'), {
   loading: () => <p>Loading...</p>,
 })
-const HeroSectionForm = dynamic(() => import('../../components/HeroSectionForm'), {
-  loading: () => <p>Loading...</p>,
-})
-const Header = dynamic(() => import('../../components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
-const TalkExpert = dynamic(() => import('../../components/TalkExpert'), {
+
+
+const TalkExpert = dynamic(() => import('../../Newcomponet/ad/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
 
-const WhyChoose = dynamic(() => import('../../components/WhyChoose'), {
+const WhyChoose = dynamic(() => import('../../Newcomponet/ad/WhyChoose'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../../components/ContactFromCenter'), {
-  loading: () => <p>Loading...</p>,
-})
-const HireSection = dynamic(() => import("../../components/HireSection"), {
+
+const HireSection = dynamic(() => import("../../Newcomponet/ad/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
 
@@ -341,7 +335,7 @@ export default function Ecommerce(props) {
           </section>
         </div>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         {/* services */}
         <section className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12 py-10">
           <div className="space-y-6">

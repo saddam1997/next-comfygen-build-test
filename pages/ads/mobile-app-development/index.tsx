@@ -4,16 +4,58 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
-import HireDeveloper from "../../components/HireDeveloper";
-import IndustriesServe from "../../components/IndustriesServe";
-import TechStack from "../../components/TechStack";
-import WhyChoose from "../../components/WhyChooseUs";
-import ServicesSec from "../../components/ServicesSec";
-import ProcessSec from "./components/ProcessSec";
-import HeroSectionForAllPages from "./components/HeroSectionForAllPages";
-import Header from "./components/Header";
-// import ClientTestimonials from "../../components/ClientTestimonials";
-import Slider from "../../components/Slider";
+import dynamic from "next/dynamic";
+import Header from "../../Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+
+const ServicesSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const TechStack = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org",
@@ -68,7 +110,7 @@ const ProductSchema = {
 };
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -90,11 +132,11 @@ export default function Mobile(props: any) {
   };
 
 
-    useEffect(() => {
-      import("aos").then((AOS) => {
-        AOS.init();
-      });
-    }, []);
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init();
+    });
+  }, []);
 
   const Process = [
     {
@@ -360,29 +402,31 @@ export default function Mobile(props: any) {
         />
       </Head>
       <div className="">
-        <LazyLoad>
-          <Header />
-        </LazyLoad>
+
+        <Header />
+
       </div>
 
-      <div className="">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mobile-app-development-hero-section-img.webp')]">
-          <HeroSectionForAllPages
-            heading="Transforming Ideas into Powerful Mobile App Solutions"
-            ptag="Comfygen, a leading mobile app development company , specializes in providing cutting-edge on-demand mobile app solutions. We turn your ideas into feature-rich, custom mobile apps designed to engage your audience and elevate your brand's online presence. "
-            li="Custom mobile app development"
-            li1="24*7 support & maintenance "
-            li2="Scalable & Secure App"
-            li3="AI/ML and blockchain Expertise "
-            li4="Payment gateway integrations "
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-          />
-        </div>
+      <div className="overflow-hidden lg:pt-[110px]">
+
+        <HeroSectionForAllPages
+          heading="Transforming Ideas into Powerful Mobile App Solutions"
+          ptag="Comfygen, a leading mobile app development company , specializes in providing cutting-edge on-demand mobile app solutions. We turn your ideas into feature-rich, custom mobile apps designed to engage your audience and elevate your brand's online presence. "
+          li="Custom mobile app development"
+          li1="24*7 support & maintenance "
+          li2="Scalable & Secure App"
+          li3="AI/ML and blockchain Expertise "
+          li4="Payment gateway integrations "
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/mobile-app-development-hero-section-img.webp"
+        />
+
+
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -401,23 +445,31 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
-     
-          <ProcessSec
-          title="Our Process for Creating High-Impact Custom Mobile Apps"
-          description="As a reliable mobile application development company . Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs."
-          processSlides={Process}
-        />
 
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Process for Creating High-Impact Custom Mobile Apps
+              </h2>
+              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+                As a reliable mobile application development company . Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Medicine Delivery App Development Success Stories"
             description="Explore our innovative medicine delivery app development projects, designed to enhance accessibility, efficiency, and user convenience in the healthcare sector. Our expertise ensures secure, scalable, and feature-rich solutions tailored to business needs."
           />
         </section>
 
-   
+
 
 
         <WhyChoose
@@ -430,7 +482,7 @@ export default function Mobile(props: any) {
           title="Our Full Stack Technology for Agile Mobile App Development Projects"
           description="The full-stack technology we use encompasses the front end, back end, database, DevOps, and quality assurance to develop agile, high-performance mobile apps. Your business needs will be met by seamless, scalable, and reliable app solutions."
         />
-        <IndustriesServe />
+        <IndustriesServe heading="" description="" />
         <HireDeveloper
           heading="Hire our Mobile App Developer"
           text="Looking to develop a user-friendly mobile app? Hire mobile app developers at Comfygen and boost your business to new heights with custom mobile solutions. As an affordable mobile app development company, India, we specialize in providing high-performance, scalable, and innovative apps for both iOS and Android platforms. Whether you need on-demand mobile app development services or complex enterprise app development solutions, our team ensures your app meets the highest standards of quality and functionality."

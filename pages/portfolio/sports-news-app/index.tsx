@@ -1,17 +1,32 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -62,20 +77,20 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Live Scores & Match Updates: </span> Real-time score updates for multiple sports and leagues.",
-                        "<span class='font-semibold'>AI-Powered Personalized Feed: </span> Custom sports news based on user interests and favorite teams.",
-                        "<span class='font-semibold'>Multi-Sport Coverage: </span> News, stats, and updates for football, basketball, baseball, cricket, tennis, and more.",
-                        "<span class='font-semibold'>Video Highlights & Match Analysis </span>: Watch key moments, expert analysis, and post-game breakdowns.",
-                        "<span class='font-semibold'>Push Notifications & Alerts: </span> Instant updates for match results, injuries, and transfers.",
-                        "<span class='font-semibold'>Fantasy Sports Integration: </span> Sync with fantasy leagues for player performance insights.",
-                        "<span class='font-semibold'>Social Media Sharing: </span> Easily share news, scores, and highlights with friends.",
-                        "<span class='font-semibold'>Dark Mode & UI Customization: </span> Enhanced readability with adjustable themes.",
-                        "<span class='font-semibold'>Live Commentary & Polls: </span> Engage with expert opinions and fan discussions.",
-                        "<span class='font-semibold'>Offline Reading Mode: </span> Save articles and match reports for later viewing."
+                        "<b>Live Scores & Match Updates: </b> Real-time score updates for multiple sports and leagues.",
+                        "<b>AI-Powered Personalized Feed: </b> Custom sports news based on user interests and favorite teams.",
+                        "<b>Multi-Sport Coverage: </b> News, stats, and updates for football, basketball, baseball, cricket, tennis, and more.",
+                        "<b>Video Highlights & Match Analysis </b>: Watch key moments, expert analysis, and post-game breakdowns.",
+                        "<b>Push Notifications & Alerts: </b> Instant updates for match results, injuries, and transfers.",
+                        "<b>Fantasy Sports Integration: </b> Sync with fantasy leagues for player performance insights.",
+                        "<b>Social Media Sharing: </b> Easily share news, scores, and highlights with friends.",
+                        "<b>Dark Mode & UI Customization: </b> Enhanced readability with adjustable themes.",
+                        "<b>Live Commentary & Polls: </b> Engage with expert opinions and fan discussions.",
+                        "<b>Offline Reading Mode: </b> Save articles and match reports for later viewing."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-sports-news-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client wanted an AI-powered sports news app with real-time updates, multi-sport coverage, and interactive content.",
@@ -84,8 +99,9 @@ export default function about(props) {
                         "Managing high traffic spikes during major sporting events."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-image-sports-news-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a leading sports news app development company, we built an AI-powered, real-time sports news platform that ensures fast content delivery and an engaging user experience.",
@@ -95,7 +111,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-sports-news-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "40% increase in user engagement with AI-powered content recommendations.",
@@ -105,6 +121,7 @@ export default function about(props) {
                         "Scalable infrastructure to support high-traffic sporting events."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-image-sports-news-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -136,7 +153,6 @@ export default function about(props) {
                         </div>
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

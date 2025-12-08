@@ -1,13 +1,25 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Header";
-import CompanyHeroSection from "../../components/CompanyHeroSection";
-import FormSec from "../../components/FormSec";
-import Features from "../components/Features";
-import InfomationFirst from "../components/InfomationFirst";
-import InfomationSecound from "../components/InfomationSecound";
-import TechStack from "../../components/TechStack";
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import JSON_DATA from "./metaverse.json";
@@ -84,31 +96,32 @@ export default function about(props) {
             imageWidth={640}
           />
         </div>
-        <InfomationFirst
+        <Features
           heading="Challenge"
           points={[
-            "<span class='font-semibold'>Legal & Compliance Issues – </span> Developed a smart contract-based KYC system to meet real estate regulations.",
-            "<span class='font-semibold'>User Adoption Barriers  </span>– Designed an intuitive UI/UX to make NFT real estate marketplace usage simple for non-crypto users.",
-            "<span class='font-semibold'>High Gas Fees & Slow Transactions – </span> Integrated Layer-2 solutions like Polygon for cost-efficient transactions.",
-            "<span class='font-semibold'>Security & Trust Issues – </span> Implemented blockchain-based escrow and decentralized identity verification to eliminate fraud risks.",
+            "<b>Legal & Compliance Issues – </b> Developed a smart contract-based KYC system to meet real estate regulations.",
+            "<b>User Adoption Barriers  </b>– Designed an intuitive UI/UX to make NFT real estate marketplace usage simple for non-crypto users.",
+            "<b>High Gas Fees & Slow Transactions – </b> Integrated Layer-2 solutions like Polygon for cost-efficient transactions.",
+            "<b>Security & Trust Issues – </b> Implemented blockchain-based escrow and decentralized identity verification to eliminate fraud risks.",
           ]}
           imageSrc="https://www.comfygen.com/image/challenges-we-overcame-nft-real-estate-marketplace-development.webp"
+          imagePosition="left"
         />
         <Features
           heading="Features"
           points={[
-            "<span class='font-semibold'>Tokenized Real Estate Platform – </span> A next-gen NFT real estate marketplace for trading real-world and virtual properties.",
-            "<span class='font-semibold'>Fractional Ownership System – </span> Smart contract-powered fractional property investment.",
-            "<span class='font-semibold'>Metaverse Land Integration –  </span>Seamless buying & selling of virtual properties in Decentraland, Sandbox, and other metaverses.",
-            "<span class='font-semibold'>Automated Smart Contracts –  </span>Secure and transparent property ownership transfers.",
-            "<span class='font-semibold'>KYC & Legal Compliance – </span> Integrated identity verification for fraud prevention.",
-            "<span class='font-semibold'>NFT Auction & Rental Marketplace –  </span>Dynamic listing & bidding system for digital properties.",
-            "<span class='font-semibold'>Multi-Wallet & Payment Gateway – </span> Supports crypto and fiat transactions for wider adoption.",
+            "<b>Tokenized Real Estate Platform – </b> A next-gen NFT real estate marketplace for trading real-world and virtual properties.",
+            "<b>Fractional Ownership System – </b> Smart contract-powered fractional property investment.",
+            "<b>Metaverse Land Integration –  </b>Seamless buying & selling of virtual properties in Decentraland, Sandbox, and other metaverses.",
+            "<b>Automated Smart Contracts –  </b>Secure and transparent property ownership transfers.",
+            "<b>KYC & Legal Compliance – </b> Integrated identity verification for fraud prevention.",
+            "<b>NFT Auction & Rental Marketplace –  </b>Dynamic listing & bidding system for digital properties.",
+            "<b>Multi-Wallet & Payment Gateway – </b> Supports crypto and fiat transactions for wider adoption.",
           ]}
           imageSrc="https://www.comfygen.com/image/features-nft-real-estate-marketplace-development.webp"
         />
 
-        <InfomationFirst
+        <Features
           heading="Solution"
           points={[
             "Built a scalable NFT real estate marketplace on Ethereum, Polygon, and Solana.",
@@ -117,8 +130,9 @@ export default function about(props) {
             "Provided a low-code admin panel for real estate firms to tokenize assets easily.",
           ]}
           imageSrc="https://www.comfygen.com/image/solution-nft-real-estate-marketplace-development.webp"
+          imagePosition="left"
         />
-        <InfomationSecound
+        <Features
           heading="Business Benefits"
           points={[
             "<span class='font-semibold'>Global Real Estate Investment –  </span>Enabled borderless property transactions using blockchain.",
@@ -201,8 +215,6 @@ export default function about(props) {
             </div>
           </div>
         </section>
-
-        <FormSec />
       </div>
     </div>
   );

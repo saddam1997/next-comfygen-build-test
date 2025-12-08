@@ -5,10 +5,7 @@ import dynamic from "next/dynamic";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
-const Header = dynamic(() => import("../../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
+import Header from '../../Newcomponet/layout/Header';
 const benefitSections = [
   {
     index: 1,

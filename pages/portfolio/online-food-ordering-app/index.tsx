@@ -1,13 +1,27 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -280,11 +294,11 @@ export default function about(props) {
 
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Online Food Ordering App"
@@ -303,23 +317,24 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'> AI-Powered Personalized Food Recommendations – </span> Smart AI algorithms suggest meals based on user behavior.",
-                        "<span class='font-semibold'>Real-Time Order Tracking & Delivery Updates –</span>  Live updates on order status and estimated delivery time.",
-                        "<span class='font-semibold'>Multiple Payment Gateways – </span> Secure transactions with credit/debit cards, UPI, wallets, and COD.",
-                        "<span class='font-semibold'>Restaurant & Cuisine-Based Filtering –</span>  Advanced search options based on food preferences and dietary needs.",
-                        "<span class='font-semibold'>Push Notifications for Deals & Offers – </span> AI-driven promotions to enhance user engagement."
+                        "<b> AI-Powered Personalized Food Recommendations – </b> Smart AI algorithms suggest meals based on user behavior.",
+                        "<b>Real-Time Order Tracking & Delivery Updates –</b>  Live updates on order status and estimated delivery time.",
+                        "<b>Multiple Payment Gateways – </b> Secure transactions with credit/debit cards, UPI, wallets, and COD.",
+                        "<b>Restaurant & Cuisine-Based Filtering –</b>  Advanced search options based on food preferences and dietary needs.",
+                        "<b>Push Notifications for Deals & Offers – </b> AI-driven promotions to enhance user engagement."
                     ]}
                     imageSrc="https://www.comfygen.com/image/online-food-ordering-app-features-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a high-performing AI Recommendation Food Ordering App with advanced machine learning algorithms for precise food suggestions.",
                         "Real-time data processing, seamless restaurant partner integration, and a user-friendly interface were key challenges."
                     ]}
                     imageSrc="https://www.comfygen.com/image/online-food-ordering-app-challanges.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution"
                     points={[
                         "As the Best Food Delivery App Development Company in India, we developed a feature-rich AI Recommendation Food Ordering App using machine learning and AI-driven analytics.",
@@ -327,13 +342,14 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/online-food-ordering-app-solution-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our on-demand Food Delivery App Development Company built an AI-powered solution that increased customer retention, boosted order value, and enhanced user engagement.",
                         "The app’s intelligent recommendation system drove higher conversions, while its scalable architecture supported business growth and revenue expansion."
                     ]}
                     imageSrc="https://www.comfygen.com/image/online-food-ordering-app-business-benefits-image.webp"
+                    imagePosition='left'
                 />
                 <TechStack
                     title="Our Technology Stack for delivering best Food Delivery App Development "
@@ -366,8 +382,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

@@ -1,17 +1,29 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -63,22 +75,22 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Real-Time GPS Tracking: </span> Monitor deliveries and fleet movement with live tracking.",
-                        "<span class='font-semibold'>AI-Powered Route Optimization: </span> Reduce fuel consumption and delivery time with smart routing.",
-                        "<span class='font-semibold'>Automated Order Dispatch: </span> AI-driven task allocation for efficient driver assignment.",
-                        "<span class='font-semibold'>Fleet Management Dashboard: </span> Monitor vehicle health, fuel efficiency, and driver performance.",
-                        "<span class='font-semibold'>Digital Proof of Delivery (POD): </span> Electronic signatures, QR code scanning, and photo verification.",
-                        "<span class='font-semibold'>Multi-Stop Deliveries: </span> Optimize multiple drop-offs in a single trip.",
-                        "<span class='font-semibold'>Predictive Analytics: </span> Forecast demand, optimize warehouse stocking, and improve efficiency.",
-                        "<span class='font-semibold'>Seamless Payment Integration: </span> Support for online payments, invoicing, and cash on delivery.",
-                        "<span class='font-semibold'>Automated Notifications & Alerts: </span> Real-time updates on delivery status and estimated arrival time.",
-                        "<span class='font-semibold'>Customer & Driver App: </span> Separate user-friendly interfaces for drivers and customers."
+                        "<b>Real-Time GPS Tracking: </b> Monitor deliveries and fleet movement with live tracking.",
+                        "<b>AI-Powered Route Optimization: </b> Reduce fuel consumption and delivery time with smart routing.",
+                        "<b>Automated Order Dispatch: </b> AI-driven task allocation for efficient driver assignment.",
+                        "<b>Fleet Management Dashboard: </b> Monitor vehicle health, fuel efficiency, and driver performance.",
+                        "<b>Digital Proof of Delivery (POD): </b> Electronic signatures, QR code scanning, and photo verification.",
+                        "<b>Multi-Stop Deliveries: </b> Optimize multiple drop-offs in a single trip.",
+                        "<b>Predictive Analytics: </b> Forecast demand, optimize warehouse stocking, and improve efficiency.",
+                        "<b>Seamless Payment Integration: </b> Support for online payments, invoicing, and cash on delivery.",
+                        "<b>Automated Notifications & Alerts: </b> Real-time updates on delivery status and estimated arrival time.",
+                        "<b>Customer & Driver App: </b> Separate user-friendly interfaces for drivers and customers."
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-img-logistics-delivery-taxi-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a logistics delivery service taxi app capable of real-time order tracking, dynamic route planning, and automated dispatch management.",
@@ -86,8 +98,9 @@ export default function about(props) {
                         "The app required scalability, secure payment processing, and predictive analytics to enhance supply chain efficiency."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-img-logistics-delivery-taxi-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a custom logistics taxi app development company, we built an AI-driven logistics and delivery platform with smart route planning, fleet tracking, and predictive analytics.",
@@ -96,7 +109,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-logistics-delivery-taxi-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "50% improvement in delivery efficiency through AI-powered route optimization.",
@@ -106,6 +119,7 @@ export default function about(props) {
                         "Scalable platform allowing expansion to new delivery regions and industries."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-img-logistics-delivery-taxi-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -141,7 +155,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

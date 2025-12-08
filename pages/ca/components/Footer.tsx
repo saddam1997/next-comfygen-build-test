@@ -7,7 +7,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import JSON_DATA from "./json/footermenu.json"
 import dynamic from "next/dynamic";
 import styles from '../components/styles.module.css'
-const CompanyLink = dynamic(() => import('../components/ContactLinks'), {
+const CompanyLink = dynamic(() => import('./ContactLinks'), {
   loading: () => <p>Loading...</p>,
 })
 

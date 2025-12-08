@@ -7,12 +7,15 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./power-of-one-news.json"
 import { BsArrowRight } from 'react-icons/bs';
-import TechnologyStack from '../technology-stack/TechnologyStack';
-const Header = dynamic(() => import('../../components/Header'), {
+
+
+import Header from '../../Newcomponet/layout/Header';
+
+const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 
-export default function about(props) {
+export default function about(props:any) {
   let { initialData } = props;
   return (
     <div className='overflow-hidden'>

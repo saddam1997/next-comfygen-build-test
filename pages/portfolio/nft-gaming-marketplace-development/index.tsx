@@ -1,13 +1,24 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Header";
-import CompanyHeroSection from "../../components/CompanyHeroSection";
-import FormSec from "../../components/FormSec";
-import Features from "../components/Features";
-import InfomationFirst from "../components/InfomationFirst";
-import InfomationSecound from "../components/InfomationSecound";
-import TechStack from "../../components/TechStack";
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import JSON_DATA from "./metaverse.json";
@@ -84,7 +95,7 @@ export default function about(props) {
             imageWidth={640}
           />
         </div>
-        <InfomationFirst
+        <Features
           heading="Challenge"
           points={[
             "High Gas Fees – Integrated Layer-2 scaling (Polygon, Immutable X) to reduce costs.",
@@ -93,6 +104,7 @@ export default function about(props) {
             "Liquidity & Trading Speed – Designed a high-speed NFT trading engine with real-time order matching.",
           ]}
           imageSrc="https://www.comfygen.com/image/challenges-we-overcame-nft-gaming-marketplace-development.webp"
+          imagePosition="left"
         />
         <Features
           heading="Features"
@@ -108,7 +120,7 @@ export default function about(props) {
           imageSrc="https://www.comfygen.com/image/features-nft-gaming-marketplace-development.webp"
         />
 
-        <InfomationFirst
+        <Features
           heading="Solution"
           points={[
             "Developed a feature-rich NFT gaming marketplace from scratch and provided an NFT gaming marketplace clone script for faster deployment.",
@@ -117,8 +129,9 @@ export default function about(props) {
             "Provided an admin dashboard with game integration APIs for easy management.",
           ]}
           imageSrc="https://www.comfygen.com/image/solution-nft-gaming-marketplace-development.webp"
+          imagePosition="left"
         />
-        <InfomationSecound
+        <Features
           heading="Business Benefits"
           points={[
             "Monetization for Gamers – Enabled users to earn real income through Play-to-Earn (P2E) games.",
@@ -201,8 +214,6 @@ export default function about(props) {
             </div>
           </div>
         </section>
-
-        <FormSec />
       </div>
     </div>
   );

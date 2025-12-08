@@ -8,7 +8,16 @@ import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePa
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
 import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
-import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
+// import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
+// import Herosection from "./Newcomponet/home/Herosection";
+// import Aboutsection from "./Newcomponet/home/component/Aboutsection";
+// import Services from "./Newcomponet/home/component/Services";
+// import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
+// import Portfolios from "./Newcomponet/home/component/Portfolios";
+
+
+
+
 const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
@@ -321,7 +330,56 @@ export default function Home(props: any) {
       <div style={{ height: '80px', }}>
         <Header />
       </div>
+
+
+      {/* <div className="overflow-hidden">
+        <div>
+          <Herosection
+            heading={typedText}
+            isHome={true}
+            Provider
+            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
+            btnName="Let's Discuss"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+
+          />
+        </div>
+        <Aboutsection
+          heading="Build Future-Driven Webs and Apps that Transforms Industries"
+          description1="Comfygen is a result-oriented IT Service Provider that builds secured and scaled apps to fulfill the needs of every business in various industries; be it Finance, Blockchain, Healthcare, On-Demand, Education, Gaming, Entertainment, etc."
+          description2="We have highly experienced web and mobile app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement. Our objective is to create an intuitive digital infrastructure for clients that makes them the best in their respective industries."
+          points={[
+            "Dedicated Development Team",
+            "End-to-End Software Development Technology",
+            "Focused on the Latest Trends and Modern Solutions",
+            "High-Performing Solutions at Competitive Cost",
+            "Strategic Development Process",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/comfygen/about-us-home-page.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        <Services
+          heading="Our Custom Web & Mobile App Development Services"
+          description="Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and mobile app development services."
+          serviceskey={JSON_DATA.services}
+          servicedata={JSON_DATA.serviceContent}
+        />
+        <IndustriesWeServe
+          heading="Industries We Serve"
+          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
+
+        />
+        <Portfolios />
+      </div> */}
+
+
       <div className="overflow-hidden">
+
         <div className="relative">
           <HeroSectionHomePage
             heading={typedText}
@@ -339,12 +397,12 @@ export default function Home(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             bgImage="/landing-hero-img.webp"
-          // bgImage="https://www.comfygen.com/comfygen-images/comfygen/landing-hero-img.webp"
+
           />
         </div>
         <AboutSection
           title="About Company"
-          heading="Build Future-Driven Webs and Apps that Transforms Industries"
+          heading="Build Future-Driven Webs and Apps that Transforms Industries "
           description1="Comfygen is a result-oriented IT Service Provider that builds secured and scaled apps to fulfill the needs of every business in various industries; be it Finance, Blockchain, Healthcare, On-Demand, Education, Gaming, Entertainment, etc."
           description2="We have highly experienced web and mobile app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement. Our objective is to create an intuitive digital infrastructure for clients that makes them the best in their respective industries."
           points={[
@@ -372,7 +430,6 @@ export default function Home(props: any) {
           </div>
         </section>
 
-        {/* portfoliodata */}
         <section className="py-8">
           <Portfolio
             projects={portfoliodata}
@@ -389,7 +446,6 @@ export default function Home(props: any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-
         <IndustriesServe
           heading="Industries We Serve"
           description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
@@ -437,7 +493,7 @@ export default function Home(props: any) {
           ]}
         />
 
-                {/* <ClientStories/> */}
+
         <ClientTestimonials
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}

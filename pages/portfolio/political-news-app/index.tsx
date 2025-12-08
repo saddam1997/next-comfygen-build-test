@@ -1,17 +1,26 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -63,21 +72,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>AI-Driven Personalized News Feed:</span>  Custom political news suggestions based on user interests.",
-                        "<span class='font-semibold'> Real-Time Political Updates: </span> Instant delivery of election results, government policies, and legislative news.",
-                        "<span class='font-semibold'> Live Streaming & Video Content: </span> Integration of live debates, press conferences, and expert opinions.",
-                        "<span class='font-semibold'> Multi-Language Support: </span> Arabic, English, and other regional languages for a diverse audience.",
-                        "<span class='font-semibold'> Political Analysis & Expert Opinions: </span> Detailed insights from journalists and political analysts.",
-                        "<span class='font-semibold'> Fact-Checking & Verified News Sources: </span> AI-driven credibility checks to prevent misinformation.",
-                        "<span class='font-semibold'> Push Notifications & Alerts: </span> Breaking news and personalized updates on political events.",
-                        "<span class='font-semibold'> Customizable News Categories: </span> Users can follow specific parties, leaders, or topics.",
-                        "<span class='font-semibold'> In-App Discussion Forums: </span> Engage with political debates and discussions within the app.",
-                        "<span class='font-semibold'> Dark Mode & UI Customization: </span> Enhanced readability and a user-friendly interface."
+                        "<b>AI-Driven Personalized News Feed: </b>  Custom political news suggestions based on user interests.",
+                        "<b> Real-Time Political Updates:  </b> Instant delivery of election results, government policies, and legislative news.",
+                        "<b> Live Streaming & Video Content:  </b> Integration of live debates, press conferences, and expert opinions.",
+                        "<b> Multi-Language Support:  </b> Arabic, English, and other regional languages for a diverse audience.",
+                        "<b> Political Analysis & Expert Opinions:  </b> Detailed insights from journalists and political analysts.",
+                        "<b> Fact-Checking & Verified News Sources:  </b> AI-driven credibility checks to prevent misinformation.",
+                        "<b> Push Notifications & Alerts:  </b> Breaking news and personalized updates on political events.",
+                        "<b> Customizable News Categories:  </b> Users can follow specific parties, leaders, or topics.",
+                        "<b> In-App Discussion Forums:  </b> Engage with political debates and discussions within the app.",
+                        "<b> Dark Mode & UI Customization:  </b> Enhanced readability and a user-friendly interface."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-political-news-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a politics-focused news aggregator app with AI-driven content curation and multilingual support.",
@@ -86,8 +95,9 @@ export default function about(props) {
                         "Implementing secure data encryption to prevent misinformation and unauthorized access."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-political-news-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a leading political news app development company, we built a high-performance, AI-powered platform that delivers real-time, multi-language political news updates with a seamless user experience.",
@@ -97,7 +107,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-political-news-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "40% increase in user engagement with personalized political news recommendations",
@@ -107,6 +117,7 @@ export default function about(props) {
                         "Higher ad revenue & subscriptions through premium content access and political analysis reports."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-political-news-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -140,7 +151,6 @@ export default function about(props) {
                         </div>
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

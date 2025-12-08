@@ -1,13 +1,25 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -275,9 +287,9 @@ export default function about(props) {
 
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+
+                <Header />
+
             </div>
             <div className="overflow-hidden">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
@@ -299,20 +311,20 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-Driven Matchmaking:</span> Intelligent algorithms suggest matches based on career interests and values.",
-                        " <span class='font-semibold text-black '>Verified Professional Profiles</span>  Secure authentication via LinkedIn and manual verification.",
-                        "<span class='font-semibold text-black '>In-App Video Calls & Messaging</span>  Encrypted real-time communication for seamless interactions.",
-                        "<span class='font-semibold text-black '>Advanced Filtering:</span>  Match users based on industry, education, career goals, and values.",
-                        "<span class='font-semibold text-black '>Secure Profile Verification:</span>  AI-driven authentication to prevent fake profiles.",
-                        "<span class='font-semibold text-black '>Data Encryption & Privacy Controls:</span> Ensures user safety and confidentiality.",
-                        " <span class='font-semibold text-black '>Networking & Relationship Building:</span> Enables users to connect with professionals for both dating and meaningful interactions.",
-                        "<span class='font-semibold text-black '>Subscription-Based Monetization:</span> Premium memberships for enhanced features and access.",
-                        "<span class='font-semibold text-black '>Cross-Platform Compatibility:</span> Smooth performance on iOS, Android, and Web versions."
+                        " <b>AI-Driven Matchmaking: </b> Intelligent algorithms suggest matches based on career interests and values.",
+                        " <b>Verified Professional Profiles </b>  Secure authentication via LinkedIn and manual verification.",
+                        "<b>In-App Video Calls & Messaging </b>  Encrypted real-time communication for seamless interactions.",
+                        "<b>Advanced Filtering: </b>  Match users based on industry, education, career goals, and values.",
+                        "<b>Secure Profile Verification: </b>  AI-driven authentication to prevent fake profiles.",
+                        "<b>Data Encryption & Privacy Controls: </b> Ensures user safety and confidentiality.",
+                        " <b>Networking & Relationship Building: </b> Enables users to connect with professionals for both dating and meaningful interactions.",
+                        "<b>Subscription-Based Monetization: </b> Premium memberships for enhanced features and access.",
+                        "<b>Cross-Platform Compatibility: </b> Smooth performance on iOS, Android, and Web versions."
                     ]}
                     imageSrc="https://www.comfygen.com/image/professional-dating-app-feature-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a custom dating app development company to create a secure, niche-specific dating platform tailored for professionals.",
@@ -320,8 +332,9 @@ export default function about(props) {
                         "The app needed to offer advanced filtering options to match users based on industry, education, and career goals while maintaining a professional and engaging interface.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/professional-dating-app-challenges.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "Our custom dating app development services provided an AI-powered matchmaking system, LinkedIn-based profile authentication, and encrypted communication for enhanced security.",
@@ -330,7 +343,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/professional-dating-app-solutions.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our Professional Dating App Development solution increased user trust and engagement, leading to higher retention rates and monetization through premium memberships.",
@@ -339,6 +352,7 @@ export default function about(props) {
                         "Integrated business networking features enhanced the platform’s value beyond dating, fostering meaningful professional relationships."
                     ]}
                     imageSrc="https://www.comfygen.com/image/professional-dating-app-business-benefits.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -374,7 +388,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

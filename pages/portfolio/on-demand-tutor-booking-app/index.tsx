@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,21 +71,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>AI-Powered Tutor Matching: </span> Smart algorithms recommend the best tutors based on subjects, ratings, and availability.",
-                        "<span class='font-semibold'>Real-Time Booking & Scheduling: </span> Instant session booking with calendar synchronization and rescheduling options.",
-                        "<span class='font-semibold'>Live Video Tutoring: </span> Integrated video conferencing for seamless virtual learning",
-                        "<span class='font-semibold'>Secure Payment Gateway: </span> Multiple payment options with fraud protection",
-                        "<span class='font-semibold'>Multi-Subject Support: </span> Tutors available for academic, professional, and skill-based courses.",
-                        "<span class='font-semibold'>Interactive Whiteboard & File Sharing: </span> Enhance virtual lessons with digital tools.",
-                        "<span class='font-semibold'>Student & Tutor Ratings: </span> Trust-based system for quality assurance.",
-                        "<span class='font-semibold'>In-App Messaging & Notifications: </span> Seamless communication between students and tutors.",
-                        "<span class='font-semibold'>Subscription Plans & Pay-Per-Session Model: </span> Flexible pricing for students.",
-                        "<span class='font-semibold'> Multi-Language Support: </span> Expanding accessibility for global users."
+                        "<b>AI-Powered Tutor Matching: </b> Smart algorithms recommend the best tutors based on subjects, ratings, and availability.",
+                        "<b>Real-Time Booking & Scheduling: </b> Instant session booking with calendar synchronization and rescheduling options.",
+                        "<b>Live Video Tutoring: </b> Integrated video conferencing for seamless virtual learning",
+                        "<b>Secure Payment Gateway: </b> Multiple payment options with fraud protection",
+                        "<b>Multi-Subject Support: </b> Tutors available for academic, professional, and skill-based courses.",
+                        "<b>Interactive Whiteboard & File Sharing: </b> Enhance virtual lessons with digital tools.",
+                        "<b>Student & Tutor Ratings: </b> Trust-based system for quality assurance.",
+                        "<b>In-App Messaging & Notifications: </b> Seamless communication between students and tutors.",
+                        "<b>Subscription Plans & Pay-Per-Session Model: </b> Flexible pricing for students.",
+                        "<b> Multi-Language Support: </b> Expanding accessibility for global users."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-on-demand-tutor-booking-app.png"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed an on-demand tutor booking app with AI-based tutor matching, real-time availability tracking, and instant booking features.",
@@ -84,8 +93,9 @@ export default function about(props) {
                         "The platform required multi-subject support, personalized recommendations, and scalability for future expansion."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-on-demand-tutor-booking-app.png"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a top-rated tutor booking app development company, we built a scalable and AI-driven tutoring platform with real-time scheduling, video-based learning, and an intuitive user experience.",
@@ -94,7 +104,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-on-demand-tutor-booking-app.png"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Increased student engagement with AI-powered tutor recommendations.",
@@ -104,6 +114,7 @@ export default function about(props) {
                         "Real-time analytics for better platform performance and student success tracking."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-on-demand-tutor-booking-app.png"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -137,7 +148,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

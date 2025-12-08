@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -38,11 +47,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+              
                     <Header />
-                </LazyLoad>
+           
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="ROI-Based Smart Contract MLM Software"
@@ -58,7 +67,7 @@ export default function about(props) {
                         imageWidth={640}
                     />
                 </div>
-                <InfomationFirst
+                <Features
                     heading="Features We Built"
                     points={[
                         "ROI-based system: daily payouts (e.g., 1% to 3%) directly to users",
@@ -70,6 +79,7 @@ export default function about(props) {
                         "Intuitive UI for global users"
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-we-built-roi-based-smart-contract-mlm.webp"
+                    imagePosition='left'
                 />
                 <Features
                     heading=" Challenge"
@@ -80,14 +90,15 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/challenge-roi-based-smart-contract-mlm.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Our Solution"
                     points={[
                         "Our team at Comfygen designed and deployed a gas-optimized smart contract on Ethereum, capable of calculating and distributing daily ROI payouts. We implemented automatic referral bonuses, reinvestment rules, and withdrawal functionality — all governed entirely by the contract. A mobile-responsive dashboard with wallet integrations allowed easy access and tracking for users across the globe."
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-roi-based-smart-contract-mlm.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Attracted investors and non-networkers through passive ROI",
@@ -131,8 +142,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

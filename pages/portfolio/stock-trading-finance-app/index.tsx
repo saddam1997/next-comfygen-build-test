@@ -1,13 +1,24 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,19 +73,19 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>Live Stock Market Tracking:</span> Real-time stock price updates and performance charts.",
-                        " <span class='font-semibold text-black '>AI-Driven Market Insights:</span>  Predictive analytics for smarter investment decisions.",
-                        "<span class='font-semibold text-black '>Instant Trade Execution:</span>   High-speed buy/sell order processing.",
-                        "<span class='font-semibold text-black '>Portfolio Management:</span>   Real-time tracking of assets, gains, and losses.",
-                        "<span class='font-semibold text-black '>Secure Transactions:</span>   Encrypted payments with multi-layer authentication.",
-                        "<span class='font-semibold text-black '>Regulatory Compliance:</span>   Adherence to global stock trading regulations.",
-                        "<span class='font-semibold text-black '>Automated Trading Bots:</span>  AI-based trading strategies for passive investors.",
+                        " <b>Live Stock Market Tracking: </b> Real-time stock price updates and performance charts.",
+                        " <b>AI-Driven Market Insights: </b>  Predictive analytics for smarter investment decisions.",
+                        "<b>Instant Trade Execution: </b>   High-speed buy/sell order processing.",
+                        "<b>Portfolio Management: </b>   Real-time tracking of assets, gains, and losses.",
+                        "<b>Secure Transactions: </b>   Encrypted payments with multi-layer authentication.",
+                        "<b>Regulatory Compliance: </b>   Adherence to global stock trading regulations.",
+                        "<b>Automated Trading Bots: </b>  AI-based trading strategies for passive investors.",
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-sec-image-stock-trading-finance-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a custom trading mobile application development solution capable of handling high-frequency transactions with minimal latency.",
@@ -83,8 +94,9 @@ export default function about(props) {
                         "Providing an intuitive, user-friendly interface for traders of all levels, from beginners to professional investors, was essential."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-sec-image-stock-trading-finance-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As the best custom fintech mobile app development company in India, we built a high-performance Stock Trading App with AI-powered market analytics, automated trading, and multi-layer security.",
@@ -93,7 +105,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-sec-image-stock-trading-finance-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our Stock Trading App Development solution increased trade execution speed, improved investor decision-making, and enhanced user engagement through AI-driven insights.",
@@ -102,6 +114,7 @@ export default function about(props) {
                         "The intuitive and efficient trading platform attracted both retail and institutional investors, expanding the client’s user base."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-image-stock-trading-finance-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -137,7 +150,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

@@ -485,6 +485,25 @@ body {
   }
 }
 
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slow-left {
+  animation: scroll-left 70s linear infinite !important;
+}
+
+.slow-right {
+  animation: scroll-right 70s linear infinite !important;
+}
+
+
 .btn-fix,
 .btn_vdo {
   background-color: #fff;

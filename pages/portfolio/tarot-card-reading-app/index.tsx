@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -77,7 +86,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-image-tarot-card-reading-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "AI-Powered Tarot Predictions – Implementing machine learning to interpret card meanings accurately.",
@@ -88,8 +97,9 @@ export default function about(props) {
                         "User Retention & Engagement – Providing a seamless and personalized tarot experience."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challenges-we-overcame-tarot-card-reading-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As an expert tarot reading app development company, we created a secure, scalable, and AI-powered tarot reading platform with intuitive UI/UX and engaging features.",
@@ -101,7 +111,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-tarot-card-reading-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "35% Increase in User Engagement – AI-powered personalized readings improved retention.",
@@ -111,6 +121,7 @@ export default function about(props) {
                         "Scalable & Secure Platform – Future-ready infrastructure for new features and expansion."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-tarot-card-reading-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -146,7 +157,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

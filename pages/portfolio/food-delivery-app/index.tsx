@@ -1,13 +1,25 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+    <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+    { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+    { loading: loader, ssr: true }
+);
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -192,7 +204,7 @@ export default function about(props) {
 
                 <meta name="description" content="Explore Food 24Hr, a feature-rich food delivery app built by Comfygen. With AI-powered recommendations, real-time tracking & secure payments, we deliver top-notch food delivery app development solutions that drive growth and customer engagement." />
 
-                <meta name="keywords" content="white-label food delivery app, custom food delivery solutions, AI based food delivery development solutions, On-Demand Food Delivery App Development Showcase, Food Delivery App Development Portfolio"/>
+                <meta name="keywords" content="white-label food delivery app, custom food delivery solutions, AI based food delivery development solutions, On-Demand Food Delivery App Development Showcase, Food Delivery App Development Portfolio" />
 
 
 
@@ -287,11 +299,11 @@ export default function about(props) {
 
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+
+                <Header />
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Food Delivery App – Food 24Hr"
@@ -319,26 +331,28 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required the best custom Food Delivery App Development solution that ensures quick delivery, seamless restaurant onboarding, and secure transactions. Managing real-time demand, optimizing delivery logistics, and integrating diverse payment options were key challenges."
                     ]}
                     imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-challenges-image.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution"
                     points={[
                         "As an on-demand Food Delivery App Development Company, we built a highly scalable app with AI-based order matching, real-time GPS tracking, and an automated dispatch system. Our best custom Food Delivery App Development services ensured an intuitive user experience, strong security, and seamless integration with multiple restaurants and payment gateways.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-solutions-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our food delivery app development increased customer engagement and order frequency through personalized recommendations and real-time tracking. The scalable architecture supported business expansion, while integrated revenue models like commissions and subscription plans boosted profitability"
                     ]}
                     imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-business-benefits-image.webp"
+                    imagePosition="left"
                 />
                 <TechStack
                     title="Our Technology Stack for delivering best Food Delivery App Development "
@@ -371,8 +385,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

@@ -381,8 +381,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Salon App Development Company | Salon Booking App Solutions</title>
-        <meta name="description" content="Leading Salon App Development Company offering custom and on-demand salon booking apps for beauty salons and spas. Hire expert salon app developers. Get a free quote." />
+        <title>Salon App Development Company | Custom Beauty & Spa App Solutions</title>
+        <meta name="description" content="Looking for a top salon app development company? Comfygen builds custom salon and spa apps with online booking, CRM, payment integration, and real-time scheduling. Boost your beauty business with scalable, on-demand app solutions tailored for salons, spas, and wellness brands." />
         <link rel="canonical" href="https://www.comfygen.com/salon-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -451,8 +451,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Custom Salon App Development Company for Beauty & Wellness Brands"
-          ptag="Empower your beauty business with a high-performance salon booking app designed to simplify appointment scheduling and enhance customer experience. Comfygen is a top salon app development company specializing in salon booking app development services and custom beauty service platforms for salons, spas, and beauty professionals."
+          heading="Custom Salon App Development Services for Beauty & Wellness Brands"
+          ptag="Take your beauty business to the next level with Comfygen’s expert salon app development services. We create customized salon and spa apps designed to simplify bookings, manage appointments effortlessly, and boost customer engagement. Whether you operate a single salon or a multi-location beauty chain, our on-demand beauty app development solutions offer smooth performance, elegant UI/UX, and powerful features like real-time scheduling, CRM integration, and secure payment gateways."
           li="Seamless & Intuitive UI/UX Design"
           li1="Expertise in On-demand & Appointment-based Solutions"
           li2="Timely Delivery with Post-launch Support"

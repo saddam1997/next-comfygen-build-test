@@ -1,13 +1,24 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Header";
-import CompanyHeroSection from "../../components/CompanyHeroSection";
-import FormSec from "../../components/FormSec";
-import Features from "../components/Features";
-import InfomationFirst from "../components/InfomationFirst";
-import InfomationSecound from "../components/InfomationSecound";
-import TechStack from "../../components/TechStack";
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import JSON_DATA from "./metaverse.json";
@@ -66,11 +77,11 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+
           <Header />
-        </LazyLoad>
+
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
           <CompanyHeroSection
             heading="VKSChat – Social Metaverse Development"
@@ -86,44 +97,46 @@ export default function about(props) {
             imageWidth={640}
           />
         </div>
-        <InfomationFirst
+        <Features
           heading="Challenges We Solved"
           points={[
-            "<span class='font-semibold'>Scalability Issues – </span> Optimized Metaverse servers to handle high concurrent user traffic.",
-            "<span class='font-semibold'>Latency in VR Communication – </span> Implemented real-time voice processing for low-latency voice chat and interactions.",
-            "<span class='font-semibold'>Security & Moderation – </span> Developed AI-driven user moderation tools to prevent content violations and bot interference.",
+            "<b>Scalability Issues – </b> Optimized Metaverse servers to handle high concurrent user traffic.",
+            "<b>Latency in VR Communication – </b> Implemented real-time voice processing for low-latency voice chat and interactions.",
+            "<b>Security & Moderation – </b> Developed AI-driven user moderation tools to prevent content violations and bot interference.",
           ]}
           imageSrc="https://www.comfygen.com/image/challenges-we-overcame-social-metaverse-development.webp"
         />
         <Features
           heading="Features We Developed"
           points={[
-            "<span class='font-semibold'>Advanced Avatar Customization – </span> Users can create highly detailed 3D avatars with full-body motion tracking.",
-            "<span class='font-semibold'>Interactive Virtual Worlds – </span> Developed user-generated Metaverse spaces for social interaction and events.",
-            "<span class='font-semibold'>Real-Time Multiplayer Connectivity – </span> Designed a low-latency networking system for seamless VR-based communication.",
-            "<span class='font-semibold'>Cross-Platform Compatibility – </span> Ensured smooth integration across PC, Oculus Rift, HTC Vive, and SteamVR.",
-            "<span class='font-semibold'>AI-Powered Content Moderation – </span> Integrated smart moderation tools to detect inappropriate content and enhance community safety.",
+            "<b>Advanced Avatar Customization – </b> Users can create highly detailed 3D avatars with full-body motion tracking.",
+            "<b>Interactive Virtual Worlds – </b> Developed user-generated Metaverse spaces for social interaction and events.",
+            "<b>Real-Time Multiplayer Connectivity – </b> Designed a low-latency networking system for seamless VR-based communication.",
+            "<b>Cross-Platform Compatibility – </b> Ensured smooth integration across PC, Oculus Rift, HTC Vive, and SteamVR.",
+            "<b>AI-Powered Content Moderation – </b> Integrated smart moderation tools to detect inappropriate content and enhance community safety.",
           ]}
           imageSrc="https://www.comfygen.com/image/features-social-metaverse-development.webp"
+          imagePosition="left"
         />
 
-        <InfomationFirst
+        <Features
           heading="Our Metaverse Development Solutions"
           points={[
-            "<span class='font-semibold'>AI-Driven Virtual Avatars  </span>– Integrated gesture recognition and emotion-based animations for realistic avatar expressions.",
-            "<span class='font-semibold'>Optimized VR Networking – </span> Developed a cloud-based multiplayer framework to ensure seamless VR interactions.",
-            "<span class='font-semibold'>Customizable Virtual Spaces – </span> Built tools that allow users to create and monetize their virtual environments.",
+            "<b>AI-Driven Virtual Avatars  </b>– Integrated gesture recognition and emotion-based animations for realistic avatar expressions.",
+            "<b>Optimized VR Networking – </b> Developed a cloud-based multiplayer framework to ensure seamless VR interactions.",
+            "<b>Customizable Virtual Spaces – </b> Built tools that allow users to create and monetize their virtual environments.",
           ]}
           imageSrc="https://www.comfygen.com/image/solution-social-metaverse-development.webp"
         />
-        <InfomationSecound
+        <Features
           heading="Business Benefits"
           points={[
-            "<span class='font-semibold'>New Revenue Streams – </span> Enabled monetization through virtual events, premium assets, NFT-based avatars, and advertisements.",
-            "<span class='font-semibold'>Global Audience Engagement – </span> Enhanced social networking and user-generated content creation.",
-            "<span class='font-semibold'>Scalable VR Experiences – </span> Designed a flexible architecture to support brand activations, Metaverse commerce, and interactive digital experiences.",
+            "<b>New Revenue Streams – </b> Enabled monetization through virtual events, premium assets, NFT-based avatars, and advertisements.",
+            "<b>Global Audience Engagement – </b> Enhanced social networking and user-generated content creation.",
+            "<b>Scalable VR Experiences – </b> Designed a flexible architecture to support brand activations, Metaverse commerce, and interactive digital experiences.",
           ]}
           imageSrc="https://www.comfygen.com/image/business-benefits-social-metaverse-development.webp"
+          imagePosition="left"
         />
 
         <TechStack
@@ -201,7 +214,6 @@ export default function about(props) {
             </div>
           </div>
         </section>
-        <FormSec />
       </div>
     </div>
   );

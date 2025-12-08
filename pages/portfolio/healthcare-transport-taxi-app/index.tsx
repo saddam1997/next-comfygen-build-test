@@ -1,17 +1,27 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -38,11 +48,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Emergency Healthcare Transport Taxi Booking App"
@@ -63,21 +73,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Priority Booking System: </span> Fast-track ride requests for emergency patients.",
-                        "<span class='font-semibold'>Real-Time GPS Tracking: </span> Monitor ambulances and medical taxis in real time.",
-                        "<span class='font-semibold'>SOS Emergency Alerts: </span> One-tap emergency request notification for faster response.",
-                        "<span class='font-semibold'>AI-Based Route Optimization: </span> Smart navigation for the quickest and safest routes.",
-                        "<span class='font-semibold'>Hospital & Paramedic Integration: </span> Seamless coordination between hospitals and ambulances.",
-                        "<span class='font-semibold'>Multi-Tier Vehicle Options: </span> Choose between ambulances, wheelchair-accessible taxis, and standard healthcare transport.",
-                        "<span class='font-semibold'>Secure Digital Payments & Insurance Integration: </span> Support for online payments and medical insurance claims.",
-                        "<span class='font-semibold'>Automated Notifications & ETA Updates: </span> Real-time alerts for patients, caregivers, and hospitals.",
-                        "<span class='font-semibold'>In-App Call & Chat Support: </span> Direct communication between patients, drivers, and hospital staff.",
-                        "<span class='font-semibold'>HIPAA-Compliant Data Security: </span> Ensuring safe storage of patient transport records and medical history."
+                        "<b>Priority Booking System: </b> Fast-track ride requests for emergency patients.",
+                        "<b>Real-Time GPS Tracking: </b> Monitor ambulances and medical taxis in real time.",
+                        "<b>SOS Emergency Alerts: </b> One-tap emergency request notification for faster response.",
+                        "<b>AI-Based Route Optimization: </b> Smart navigation for the quickest and safest routes.",
+                        "<b>Hospital & Paramedic Integration: </b> Seamless coordination between hospitals and ambulances.",
+                        "<b>Multi-Tier Vehicle Options: </b> Choose between ambulances, wheelchair-accessible taxis, and standard healthcare transport.",
+                        "<b>Secure Digital Payments & Insurance Integration: </b> Support for online payments and medical insurance claims.",
+                        "<b>Automated Notifications & ETA Updates: </b> Real-time alerts for patients, caregivers, and hospitals.",
+                        "<b>In-App Call & Chat Support: </b> Direct communication between patients, drivers, and hospital staff.",
+                        "<b>HIPAA-Compliant Data Security: </b> Ensuring safe storage of patient transport records and medical history."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-healthcare-transport-taxi-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a healthcare transport taxi app that ensures quick response times, seamless patient scheduling, and real-time ambulance tracking.",
@@ -85,8 +95,9 @@ export default function about(props) {
                         "Managing high-demand situations, ensuring GPS accuracy, and maintaining HIPAA-compliant data security were key challenges."
                     ]}
                     imageSrc="https://www.comfygen.com/image/Challanges-healthcare-transport-taxi-app.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a custom taxi booking app development company, we built a scalable, AI-powered taxi booking platform that enables fast medical response, optimized routing, and real-time tracking.",
@@ -95,7 +106,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-healthcare-transport-taxi-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "40% reduction in emergency response time, improving patient survival rates.",
@@ -105,6 +116,7 @@ export default function about(props) {
                         "Scalable architecture enabling future expansion into non-emergency medical transport (NEMT) services."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-healthcare-transport-taxi-app.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -138,7 +150,7 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )

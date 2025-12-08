@@ -5,9 +5,9 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
-import TechnologyStack from '../technology-stack/TechnologyStack';
 
-const Header = dynamic(() => import('../../components/Header'), {
+import Header from '../../Newcomponet/layout/Header';
+const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 
@@ -36,7 +36,7 @@ export default function about(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div
           className=" bg-gradient-to-t to-[#ECD571] from-[#fff]">
           <div className='h-full w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/Z.svg")` }}>

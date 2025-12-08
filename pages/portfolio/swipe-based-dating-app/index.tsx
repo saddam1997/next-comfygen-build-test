@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -290,19 +299,19 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-Powered Matching :</span> Smart recommendations based on interests, behavior, and location",
-                        " <span class='font-semibold text-black '>Swipe-Based Interface :</span>  Quick and interactive matching experience with left/right swipes.",
-                        "<span class='font-semibold text-black '>Real-Time Chat & Video Calls :</span>   Secure in-app messaging and live video calls",
-                        "<span class='font-semibold text-black '>Location-Based Matching :</span>  Connect with nearby users using GPS-based suggestions",
-                        "<span class='font-semibold text-black '>Profile Verification & Security :</span>  AI-based identity verification to prevent fake profiles",
-                        "<span class='font-semibold text-black '>Social Media Integration :</span>  Seamless sign-up and profile linking with Facebook, Google, and Instagram",
-                        " <span class='font-semibold text-black '>Multi-Language Suppor :</span>  Expand user base with language customization",
-                        "<span class='font-semibold text-black '>Dark & Light Mode :</span>  Enhanced UI experience with theme customization"
+                        "<b>AI-Powered Matching : </b> Smart recommendations based on interests, behavior, and location",
+                        "<b>Swipe-Based Interface : </b>  Quick and interactive matching experience with left/right swipes.",
+                        "<b>Real-Time Chat & Video Calls : </b>   Secure in-app messaging and live video calls",
+                        "<b>Location-Based Matching : </b>  Connect with nearby users using GPS-based suggestions",
+                        "<b>Profile Verification & Security : </b>  AI-based identity verification to prevent fake profiles",
+                        "<b>Social Media Integration : </b>  Seamless sign-up and profile linking with Facebook, Google, and Instagram",
+                        "<b>Multi-Language Suppor : </b>  Expand user base with language customization",
+                        "<b>Dark & Light Mode : </b>  Enhanced UI experience with theme customization"
                     ]}
                     imageSrc="https://www.comfygen.com/image/dating-portfolio-feature-image.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required an advanced swipe dating app development solution with AI-driven matchmaking.",
@@ -311,8 +320,9 @@ export default function about(props) {
                         "The app had to be highly scalable to handle a rapidly growing user base without performance issues.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/dating-portfolio-page-challenge-image.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a custom dating app development company, we built a feature-rich dating mobile app development solution.",
@@ -323,7 +333,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/dating-portfolio-page-solution-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Improved user engagement and retention through personalized matchmaking and interactive features.",
@@ -333,6 +343,7 @@ export default function about(props) {
                         "Positioned as a top-rated dating app development company by delivering an innovative and secure platform."
                     ]}
                     imageSrc="https://www.comfygen.com/image/dating-portfolio-page-business-benefits-image.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -368,8 +379,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

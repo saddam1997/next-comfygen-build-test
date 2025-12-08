@@ -1,17 +1,26 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -39,11 +48,11 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden lg:pt-[110px]">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Global News Aggregator App"
@@ -63,21 +72,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>AI-Powered News Recommendations: </span> Personalized content based on reading history and user behavior.",
-                        "<span class='font-semibold'>Multi-Language Support: </span> AI-driven translation for a seamless global experience.",
-                        "<span class='font-semibold'>Real-Time News Updates: </span> Instant delivery of breaking news and trending topics.",
-                        "<span class='font-semibold'>Multi-Source Integration: </span> Aggregates news from verified publishers, blogs, and RSS feeds.",
-                        "<span class='font-semibold'>Customizable News Feeds: </span> Users can select categories, sources, and regions.",
-                        "<span class='font-semibold'>In-App Search & Filters: </span> Advanced search functionality with keyword-based filtering.",
-                        "<span class='font-semibold'>Text-to-Speech Feature: </span> Enables hands-free news consumption.",
-                        "<span class='font-semibold'>Offline Reading Mode: </span> Save articles to read later without an internet connection.",
-                        "<span class='font-semibold'>Push Notifications & Alerts: </span> Real-time updates on important news events.",
-                        "<span class='font-semibold'>Dark Mode & UI Customization: </span> Enhances readability and user experience."
+                        "<b>AI-Powered News Recommendations: </b> Personalized content based on reading history and user behavior.",
+                        "<b>Multi-Language Support: </b> AI-driven translation for a seamless global experience.",
+                        "<b>Real-Time News Updates: </b> Instant delivery of breaking news and trending topics.",
+                        "<b>Multi-Source Integration: </b> Aggregates news from verified publishers, blogs, and RSS feeds.",
+                        "<b>Customizable News Feeds: </b> Users can select categories, sources, and regions.",
+                        "<b>In-App Search & Filters: </b> Advanced search functionality with keyword-based filtering.",
+                        "<b>Text-to-Speech Feature: </b> Enables hands-free news consumption.",
+                        "<b>Offline Reading Mode: </b> Save articles to read later without an internet connection.",
+                        "<b>Push Notifications & Alerts: </b> Real-time updates on important news events.",
+                        "<b>Dark Mode & UI Customization: </b> Enhances readability and user experience."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-global-news-aggregator-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a smart news aggregation platform that curates content from various sources, ensuring credibility and accuracy.",
@@ -86,8 +95,9 @@ export default function about(props) {
                         "Ensuring real-time updates, push notifications, and an engaging UI for better user retention."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-global-news-aggregator-app.webp"
+                    imagePosition="left"
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "We are one of the best news app development company in India, USA, UK, and UAE, we developed a high-performance AI-powered news aggregator platform that delivers real-time, multi-language news updates with a smooth and engaging user experience.",
@@ -97,7 +107,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-global-news-aggregator-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "30% increase in user engagement due to AI-driven personalized news feeds.",
@@ -107,6 +117,7 @@ export default function about(props) {
                         "Improved content credibility with AI-based fact-checking mechanisms."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-global-news-aggregator-app.webp"
+                    imagePosition="left"
                 />
 
                 <TechStack
@@ -138,7 +149,7 @@ export default function about(props) {
                         </div>
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )

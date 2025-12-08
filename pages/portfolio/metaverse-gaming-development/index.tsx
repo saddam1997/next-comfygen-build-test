@@ -1,13 +1,26 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Header";
-import CompanyHeroSection from "../../components/CompanyHeroSection";
-import FormSec from "../../components/FormSec";
-import Features from "../components/Features";
-import InfomationFirst from "../components/InfomationFirst";
-import InfomationSecound from "../components/InfomationSecound";
-import TechStack from "../../components/TechStack";
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
 import styles from "../components/styles.module.css";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import JSON_DATA from "./metaverse.json";
@@ -63,11 +76,11 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+
           <Header />
-        </LazyLoad>
+
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
           <CompanyHeroSection
             heading="Blockchain-Based Metaverse Gaming Development"
@@ -83,43 +96,45 @@ export default function about(props) {
             imageWidth={640}
           />
         </div>
-        <InfomationFirst
+        <Features
           heading="Features We Developed"
           points={[
-            " <span class='font-semibold'>NFT-Based Asset Ownership – </span> Players can buy, sell, and upgrade NFT-based spaceships, planets, and land.",
-            " <span class='font-semibold'>Solana-Powered Play-to-Earn Economy –</span>  Seamless integration of ATLAS & POLIS tokens for in-game transactions.",
-            " <span class='font-semibold'>Decentralized DAO Governance – </span> Players gain voting rights to influence the game’s economy and policies.",
-            " <span class='font-semibold'>High-Fidelity Game Environment –</span>  Developed with Unreal Engine 5 for cinematic graphics, real-world physics, and AI-driven NPC interactions.",
-            " <span class='font-semibold'>Smart Contract-Driven Trading System – </span> Secure and transparent NFT transactions powered by Solana Blockchain."
+            " <b>NFT-Based Asset Ownership – </b> Players can buy, sell, and upgrade NFT-based spaceships, planets, and land.",
+            " <b>Solana-Powered Play-to-Earn Economy –</b>  Seamless integration of ATLAS & POLIS tokens for in-game transactions.",
+            " <b>Decentralized DAO Governance – </b> Players gain voting rights to influence the game’s economy and policies.",
+            " <b>High-Fidelity Game Environment –</b>  Developed with Unreal Engine 5 for cinematic graphics, real-world physics, and AI-driven NPC interactions.",
+            " <b>Smart Contract-Driven Trading System – </b> Secure and transparent NFT transactions powered by Solana Blockchain."
           ]}
           imageSrc="https://www.comfygen.com/image/features-metaverse-gaming-development.webp"
+          imagePosition="left"
         />
         <Features
           heading="Challenges We Solved"
           points={[
-            "<span class='font-semibold'>High-Frequency Transactions –  </span> Integrated Solana Layer-2 scaling for ultra-fast transactions with low gas fees.",
-            "<span class='font-semibold'>Security in NFT Trading – </span>  Built fraud-resistant smart contracts to ensure safe asset ownership and prevent exploits.",
-            "<span class='font-semibold'>Complex User Onboarding – </span>  Designed a user-friendly Web3 wallet system for seamless crypto transactions and NFT management.",
+            "<b>High-Frequency Transactions – </b> Integrated Solana Layer-2 scaling for ultra-fast transactions with low gas fees.",
+            "<b>Security in NFT Trading –</b>  Built fraud-resistant smart contracts to ensure safe asset ownership and prevent exploits.",
+            "<b>Complex User Onboarding –</b>  Designed a user-friendly Web3 wallet system for seamless crypto transactions and NFT management.",
             
           ]}
           imageSrc="https://www.comfygen.com/image/challenges-we-overcame-metaverse-gaming-development.webp"
         />
 
-        <InfomationFirst
+        <Features
           heading="Our Metaverse Development Solutions"
           points={[
-            "<span class='font-semibold'>Blockchain-Powered Economy – </span> Created a self-sustaining in-game economy with NFT staking & DeFi integrations.",
-            "<span class='font-semibold'>Custom Game Mechanics –</span> Developed real-time space exploration, fleet management, and combat features.",
-            "<span class='font-semibold'>Secure NFT Marketplace –</span>  Built a decentralized exchange for seamless in-game asset trading.",
+            "<b>Blockchain-Powered Economy – </b> Created a self-sustaining in-game economy with NFT staking & DeFi integrations.",
+            "<b>Custom Game Mechanics –</b> Developed real-time space exploration, fleet management, and combat features.",
+            "<b>Secure NFT Marketplace –</b>  Built a decentralized exchange for seamless in-game asset trading.",
           ]}
           imageSrc="https://www.comfygen.com/image/solution-metaverse-gaming-development.webp"
+          imagePosition="left"
         />
-        <InfomationSecound
+        <Features
           heading="Business Benefits"
           points={[
-            "<span class='font-semibold'>Revenue Generation – </span> Enabled P2E model, NFT asset sales, and in-game transactions for sustainable earnings.",
-            "<span class='font-semibold'>Decentralized Ownership – </span> Players own, trade, and monetize their assets with full blockchain transparency.",
-            "<span class='font-semibold'>High Engagement & Retention – </span> Strategic gameplay, real-world rewards, and community-driven governance enhance user retention.",
+            "<b>Revenue Generation – </b> Enabled P2E model, NFT asset sales, and in-game transactions for sustainable earnings.",
+            "<b>Decentralized Ownership – </b> Players own, trade, and monetize their assets with full blockchain transparency.",
+            "<b>High Engagement & Retention – </b> Strategic gameplay, real-world rewards, and community-driven governance enhance user retention.",
           ]}
           imageSrc="https://www.comfygen.com/image/business-benefits-metaverse-gaming-development.webp"
         />
@@ -196,7 +211,6 @@ export default function about(props) {
             </div>
           </div>
         </section>
-        <FormSec />
       </div>
     </div>
   );

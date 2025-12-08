@@ -1,13 +1,23 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -76,7 +86,7 @@ export default function about(props) {
                     imageSrc="https://www.comfygen.com/image/features-tourism-taxi-booking-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a tourism taxi service app that integrates real-time booking, guided tour packages, and dynamic pricing.",
@@ -84,8 +94,9 @@ export default function about(props) {
                         "The app needed to handle high user traffic, secure payment processing, and an engaging tourist-friendly interface."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-tourism-taxi-booking-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a custom travel taxi booking app development company, we built an AI-driven tourism taxi booking platform with intelligent routing, real-time availability tracking, and integrated tour packages.",
@@ -94,7 +105,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-tourism-taxi-booking-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "35% increase in tourist bookings with convenient and user-friendly travel options.",
@@ -104,6 +115,7 @@ export default function about(props) {
                         "Scalable platform supporting expansion to new destinations and travel categories."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-tourism-taxi-booking-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -139,7 +151,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

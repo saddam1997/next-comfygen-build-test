@@ -1,13 +1,30 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -64,21 +81,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-Powered Matchmaking:</span>  Personalized recommendations based on user preferences.",
-                        " <span class='font-semibold text-black '>Identity Verification & Privacy Protection:</span>   Secure authentication to prevent fake profiles.",
-                        "<span class='font-semibold text-black '>Real-Time Chat & Video Calling:</span>  Instant messaging with multimedia support.",
-                        "<span class='font-semibold text-black '> Location-Based Matching:</span> Suggests nearby connections with adjustable search filters.",
-                        "<span class='font-semibold text-black '>In-App Events & Community Features:</span>   Virtual meetups, group chats, and discussion forums.",
-                        "<span class='font-semibold text-black '>AI-Powered Moderation & Reporting System:</span>   Automatic detection of harmful content and behavior.",
-                        "<span class='font-semibold text-black '>Multi-Language Support:</span>   Catering to diverse users globally.",
-                        "<span class='font-semibold text-black '>Customizable Profile Preferences: </span>  Users can express their identity with pride.",
-                        "<span class='font-semibold text-black '>Social Media Integration:</span>  Easy sign-up using existing social accounts.",
-                        "<span class='font-semibold text-black '>Premium Membership & In-App Purchases:</span>   Monetization features like boosts, premium filters, and exclusive content.",
+                        " <b> AI-Powered Matchmaking:</b>  Personalized recommendations based on user preferences.",
+                        " <b> Identity Verification & Privacy Protection:</b>   Secure authentication to prevent fake profiles.",
+                        "<b> Real-Time Chat & Video Calling:</b>  Instant messaging with multimedia support.",
+                        "<b>  Location-Based Matching:</b> Suggests nearby connections with adjustable search filters.",
+                        "<b> In-App Events & Community Features:</b>   Virtual meetups, group chats, and discussion forums.",
+                        "<b> AI-Powered Moderation & Reporting System:</b>   Automatic detection of harmful content and behavior.",
+                        "<b> Multi-Language Support:</b>   Catering to diverse users globally.",
+                        "<b> Customizable Profile Preferences: </b>  Users can express their identity with pride.",
+                        "<b> Social Media Integration:</b>  Easy sign-up using existing social accounts.",
+                        "<b> Premium Membership & In-App Purchases:</b>   Monetization features like boosts, premium filters, and exclusive content.",
 
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-lgbtq-portfolio-image.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Solution"
                     points={[
                         "As a leader in custom dating app development services, Comfygen developed a feature-rich AI LGBTQ dating mobile app development solution with intelligent matchmaking, live chat, profile authentication, and location-based recommendations.",
@@ -86,6 +103,7 @@ export default function about(props) {
                         "AI-driven moderation helped create a safe, respectful, and inclusive digital environment for LGBTQ+ users."
                     ]}
                     imageSrc="https://www.comfygen.com/image/lgbtq-dating-app-solutions.webp"
+                    imagePosition='left'
                 />
 
                 <Features
@@ -96,9 +114,10 @@ export default function about(props) {
                         "The platform had to support scalability, seamless performance, and integration with social media platforms for better user engagement."
                     ]}
                     imageSrc="https://www.comfygen.com/image/lgbtq-dating-app-challenges.webp"
+                   
                 />
 
-                <InfomationSecound
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our LGBTQ dating app development services enhanced engagement through personalized AI-powered recommendations and interactive features.",
@@ -107,6 +126,7 @@ export default function about(props) {
                         "Scalable architecture allowed for business expansion, ensuring seamless growth as user numbers increased."
                     ]}
                     imageSrc="https://www.comfygen.com/image/lgbtq-dating-app-business Benefits.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -140,8 +160,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-
-                <FormSec />
             </div>
         </div>
     )

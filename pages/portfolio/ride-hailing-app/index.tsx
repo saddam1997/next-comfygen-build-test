@@ -1,13 +1,24 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,21 +73,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Real-Time Ride Matching & GPS Tracking:<span> Live ride requests and driver location updates.",
-                        "<span class='font-semibold'>Dynamic Pricing Algorithm:<span> Adjusts fares based on demand and traffic conditions.",
-                        "<span class='font-semibold'>Multi-Language Support:<span> Arabic, English, and other regional languages.",
-                        "<span class='font-semibold'>Multiple Ride Categories:<span> Economy, premium, luxury, and shared rides.",
-                        "<span class='font-semibold'>In-App Wallet & Multiple Payment Options:<span> Credit/debit card, digital wallets, and cash payments.",
-                        "<span class='font-semibold'>Driver Earnings Dashboard:<span> Real-time income tracking and automated payout system",
-                        "<span class='font-semibold'>User & Driver Ratings System:<span> Build trust through feedback and reviews.",
-                        "<span class='font-semibold'>AI-Powered Route Optimization:<span> Reduces wait time and improves ride efficiency.",
-                        "<span class='font-semibold'>Ride Scheduling & Corporate Accounts:<span> Pre-book rides and offer business travel solutions.",
-                        "<span class='font-semibold'>Emergency SOS Button & Live Support:<span> Enhanced security for riders and drivers."
+                        "<b>Real-Time Ride Matching & GPS Tracking: </b> Live ride requests and driver location updates.",
+                        "<b>Dynamic Pricing Algorithm: </b> Adjusts fares based on demand and traffic conditions.",
+                        "<b>Multi-Language Support: </b> Arabic, English, and other regional languages.",
+                        "<b>Multiple Ride Categories: </b> Economy, premium, luxury, and shared rides.",
+                        "<b>In-App Wallet & Multiple Payment Options: </b> Credit/debit card, digital wallets, and cash payments.",
+                        "<b>Driver Earnings Dashboard: </b> Real-time income tracking and automated payout system",
+                        "<b>User & Driver Ratings System: </b> Build trust through feedback and reviews.",
+                        "<b>AI-Powered Route Optimization: </b> Reduces wait time and improves ride efficiency.",
+                        "<b>Ride Scheduling & Corporate Accounts: </b> Pre-book rides and offer business travel solutions.",
+                        "<b>Emergency SOS Button & Live Support: </b> Enhanced security for riders and drivers."
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-ride-hailing-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client needed a custom ride-hailing app with fast ride matching, automated fare calculation, and multilingual support to cater to Dubai’s diverse population.",
@@ -84,8 +95,9 @@ export default function about(props) {
                         "Competing with established ride-hailing giants while offering a differentiated user experience and driver incentives."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-ride-hailing-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As a top-rated taxi booking app development company, we developed a highly scalable and feature-rich ride-hailing platform tailored for Dubai.",
@@ -94,7 +106,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-ride-hailing-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "50,000+ user sign-ups in the first 6 months, proving rapid adoption.",
@@ -104,6 +116,7 @@ export default function about(props) {
                         "Scalable architecture, allowing easy expansion to other UAE cities and global markets."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-ride-hailing-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -137,7 +150,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

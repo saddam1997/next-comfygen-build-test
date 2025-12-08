@@ -1,13 +1,27 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -18,7 +32,7 @@ export default function about(props) {
 
     let { initialData } = props;
     return (
-        <div className='overflow-hidden'>
+        <div className='overflow-hidden lg:pt-[110px]'>
             <Head>
                 <title>Decentralized Peer-to-Peer Blockchain Payment Systems | Comfygen</title>
                 <link rel="canonical" href="https://www.comfygen.com/portfolio/peer-to-peer-blockchain-based-payment-system" />
@@ -38,9 +52,9 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+
                     <Header />
-                </LazyLoad>
+
             </div>
             <div className="overflow-hidden">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
@@ -62,29 +76,30 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        "<span class='font-semibold'>Decentralized & Secure: </span> No central authority, ensuring full transparency and security.",
-                        "<span class='font-semibold'>Ultra-Fast Transactions: </span> High-speed blockchain transactions with minimal latency.",
-                        "<span class='font-semibold'>Low Transaction Fees: </span> Efficient cost structures reduce overhead compared to traditional banking systems.",
-                        "<span class='font-semibold'>Smart Contracts & Automation: </span> Enables programmable payments and escrow services.",
-                        "<span class='font-semibold'>Scalability & Interoperability: </span> Supports high transaction volumes with seamless blockchain integrations.",
-                        "<span class='font-semibold'>Cross-Border Payments: </span> Facilitates global transactions without currency conversion barriers.",
+                        "<b>Decentralized & Secure: </b> No central authority, ensuring full transparency and security.",
+                        "<b>Ultra-Fast Transactions: </b> High-speed blockchain transactions with minimal latency.",
+                        "<b>Low Transaction Fees: </b> Efficient cost structures reduce overhead compared to traditional banking systems.",
+                        "<b>Smart Contracts & Automation: </b> Enables programmable payments and escrow services.",
+                        "<b>Scalability & Interoperability: </b> Supports high transaction volumes with seamless blockchain integrations.",
+                        "<b>Cross-Border Payments: </b> Facilitates global transactions without currency conversion barriers.",
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-peer-to-peer-blockchain-based-payment-system.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
-                        " <span class='font-semibold'>Ensuring Security & Fraud Prevention: </span> Implementing advanced cryptographic algorithms to mitigate risks.",
-                        " <span class='font-semibold'>Scalability & Network Efficiency: </span> Developing a robust framework to handle increasing transaction loads.",
-                        " <span class='font-semibold'>User Adoption & Market Expansion: </span> Strategizing global adoption with strong marketing and utility.",
-                        " <span class='font-semibold'>Regulatory Compliance: </span> Ensuring adherence to regional and international financial regulations.",
-                        " <span class='font-semibold'>Seamless User Experience: </span> Providing an intuitive and easy-to-use interface for all users."
+                        " <b>Ensuring Security & Fraud Prevention: </b> Implementing advanced cryptographic algorithms to mitigate risks.",
+                        " <b>Scalability & Network Efficiency: </b> Developing a robust framework to handle increasing transaction loads.",
+                        " <b>User Adoption & Market Expansion: </b> Strategizing global adoption with strong marketing and utility.",
+                        " <b>Regulatory Compliance: </b> Ensuring adherence to regional and international financial regulations.",
+                        " <b>Seamless User Experience: </b> Providing an intuitive and easy-to-use interface for all users."
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-peer-to-peer-blockchain-based-payment-system.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "Developed YatriPay using an advanced decentralized architecture to tackle key challenges.",
@@ -94,16 +109,17 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-peer-to-peer-blockchain-based-payment-system.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
-                        "<span class='font-semibold'>Enhanced Security: </span> Fully decentralized cryptographic security ensures trustless transactions.",
-                        "<span class='font-semibold'>Global Reach & Accessibility: </span> It facilitates international payments without intermediaries.",
-                        "<span class='font-semibold'>Lower Operational Costs: </span> Eliminates banking fees and transaction delays.",
-                        "<span class='font-semibold'>Decentralized Payment Processing: </span> This removes dependency on traditional financial institutions.",
-                        "<span class='font-semibold'>New Revenue Streams: </span> Smart contract-based automated payments and microtransactions."
+                        "<b>Enhanced Security: </b> Fully decentralized cryptographic security ensures trustless transactions.",
+                        "<b>Global Reach & Accessibility: </b> It facilitates international payments without intermediaries.",
+                        "<b>Lower Operational Costs: </b> Eliminates banking fees and transaction delays.",
+                        "<b>Decentralized Payment Processing: </b> This removes dependency on traditional financial institutions.",
+                        "<b>New Revenue Streams: </b> Smart contract-based automated payments and microtransactions."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-peer-to-peer-blockchain-based-payment-system.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -139,7 +155,7 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
+
             </div>
         </div>
     )

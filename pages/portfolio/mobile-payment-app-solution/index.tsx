@@ -1,13 +1,21 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -299,21 +307,21 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>Instant Peer-to-Peer & Merchant Payments:</span>   Fast transactions for individuals and businesses.",
-                        " <span class='font-semibold text-black '>Multi-Layer Security:</span>  Encryption, biometric authentication, and secure OTP verification.",
-                        "<span class='font-semibold text-black '>AI-Powered Fraud Detection:</span>   Real-time risk assessment and fraud prevention.",
-                        "<span class='font-semibold text-black '>Real-Time Transaction Tracking:</span>  View detailed transaction history and spending insights.",
-                        "<span class='font-semibold text-black '>Bank & Digital Wallet Integration:</span>   Seamless connection with multiple banking networks.",
-                        "<span class='font-semibold text-black '>Cross-Border Payment Support:</span> Global transactions with currency conversion options.",
-                        " <span class='font-semibold text-black '>Cryptocurrency Payments: </span> Secure crypto transactions alongside traditional payment methods.",
-                        " <span class='font-semibold text-black '>Automated Bill Payments & Reminders: </span> Schedule recurring payments and receive alerts.",
-                        "<span class='font-semibold text-black '>Loyalty & Reward System: </span>  Cashback, discounts, and reward points for user engagement."
+                        " <b>Instant Peer-to-Peer & Merchant Payments:</b>  Fast transactions for individuals and businesses.",
+                        " <b>Multi-Layer Security:</b> Encryption, biometric authentication, and secure OTP verification.",
+                        "<b>AI-Powered Fraud Detection:</b>  Real-time risk assessment and fraud prevention.",
+                        "<b>Real-Time Transaction Tracking:</b> View detailed transaction history and spending insights.",
+                        "<b>Bank & Digital Wallet Integration:</b>  Seamless connection with multiple banking networks.",
+                        "<b>Cross-Border Payment Support:</b>Global transactions with currency conversion options.",
+                        " <b>Cryptocurrency Payments: </b>Secure crypto transactions alongside traditional payment methods.",
+                        " <b>Automated Bill Payments & Reminders: </b>Schedule recurring payments and receive alerts.",
+                        "<b>Loyalty & Reward System: </b> Cashback, discounts, and reward points for user engagement."
 
                     ]}
                     imageSrc="https://www.comfygen.com/image/mobile-payment-app-solution-features.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a Finance App Development Solutions platform that ensures high-speed transactions, regulatory compliance, and seamless integration with multiple payment gateways.",
@@ -321,8 +329,9 @@ export default function about(props) {
                         "The app needed to support cross-border transactions, integrating with banks, digital wallets, and cryptocurrencies while maintaining financial compliance."
                     ]}
                     imageSrc="https://www.comfygen.com/image/mobile-payment-app-solution-challanges.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As the Best Custom Finance App Development Company in India, we built a secure and scalable custom mobile payment app development platform with encrypted transactions, AI-powered risk analysis, and cross-border payment support.",
@@ -331,7 +340,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/mobile-payment-app-solution-solution.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our custom mobile payment app development services improved transaction efficiency, reduced payment processing time, and increased customer trust with advanced security measures.",
@@ -340,6 +349,7 @@ export default function about(props) {
                         "User-friendly design and AI-driven recommendations enhanced customer satisfaction and engagement."
                     ]}
                     imageSrc="https://www.comfygen.com/image/mobile-payment-app-solution-business-benefits.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -375,7 +385,6 @@ export default function about(props) {
 
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )

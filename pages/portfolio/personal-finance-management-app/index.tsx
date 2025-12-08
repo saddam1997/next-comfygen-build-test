@@ -1,13 +1,24 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Header';
-import CompanyHeroSection from '../../components/CompanyHeroSection';
-import FormSec from '../../components/FormSec';
-import Features from '../components/Features';
-import InfomationFirst from '../components/InfomationFirst';
-import InfomationSecound from '../components/InfomationSecound';
-import TechStack from '../../components/TechStack';
+
+import dynamic from 'next/dynamic';
+import Header from '../../Newcomponet/layout/Header';
+import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+  { loading: loader, ssr: true }
+);
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
@@ -62,25 +73,26 @@ export default function about(props) {
                 <Features
                     heading="Features"
                     points={[
-                        " <span class='font-semibold text-black '>AI-Powered Expense Tracking & Budgeting –:</span>  Smart categorization of expenses and AI-driven budgeting suggestions.",
-                        " <span class='font-semibold text-black '>Automated Bill Payments & Reminders –</span> Secure scheduling for utility bills, loans, and subscriptions.",
-                        "<span class='font-semibold text-black '>Real-Time Financial Insights & Reporting –</span>  AI-based analytics for better money management.",
-                        "<span class='font-semibold text-black '>Secure Bank Account Integration –</span>  Multi-layer encryption for safe financial transactions.",
-                        "<span class='font-semibold text-black '>Goal-Based Savings & Investment Tracking –</span>  AI-driven recommendations for savings and investments.",
+                        " <b>AI-Powered Expense Tracking & Budgeting –: </b>  Smart categorization of expenses and AI-driven budgeting suggestions.",
+                        " <b>Automated Bill Payments & Reminders – </b> Secure scheduling for utility bills, loans, and subscriptions.",
+                        "<b>Real-Time Financial Insights & Reporting – </b>  AI-based analytics for better money management.",
+                        "<b>Secure Bank Account Integration – </b>  Multi-layer encryption for safe financial transactions.",
+                        "<b>Goal-Based Savings & Investment Tracking – </b>  AI-driven recommendations for savings and investments.",
                        
                     ]}
                     imageSrc="https://www.comfygen.com/image/features-image-personal-finance-management-app.webp"
                 />
 
-                <InfomationFirst
+                <Features
                     heading="Challenge"
                     points={[
                         "The client required a finance management app development solution with high-level security, seamless bank integrations, and user-friendly analytics.",
                         "Handling real-time financial data, ensuring regulatory compliance, and providing AI-driven financial recommendations were key challenges.",
                     ]}
                     imageSrc="https://www.comfygen.com/image/challanges-image-personal-finance-management-app.webp"
+                    imagePosition='left'
                 />
-                <InfomationSecound
+                <Features
                     heading="Solution:"
                     points={[
                         "As the best custom finance app development company in India, we designed a scalable and secure finance app development solutions platform with:",
@@ -91,7 +103,7 @@ export default function about(props) {
                     ]}
                     imageSrc="https://www.comfygen.com/image/solution-image-personal-finance-management-app.webp"
                 />
-                <InfomationFirst
+                <Features
                     heading="Business Benefits"
                     points={[
                         "Our personal finance management app development solution enhanced financial awareness and helped users save efficiently.",
@@ -99,6 +111,7 @@ export default function about(props) {
                         "The top-rated custom FinTech mobile app development company ensured a scalable architecture to support business growth."
                     ]}
                     imageSrc="https://www.comfygen.com/image/business-benefits-personal-finance-management-app.webp"
+                    imagePosition='left'
                 />
 
                 <TechStack
@@ -134,7 +147,6 @@ export default function about(props) {
                     
                     </div>
                 </section>
-                <FormSec />
             </div>
         </div>
     )
