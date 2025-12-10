@@ -1,5 +1,5 @@
 "use client";
-import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
+
 
 import Image from "next/image";
 import { useState, useRef } from "react";
@@ -11,32 +11,32 @@ const useContinuousScroll = (
   duration = 25,
   gap = 16
 ) => {
-  const x = useMotionValue(0); 
+  // const x = useMotionValue(0); 
   const ref = useRef(null);
   const totalDuration = duration * 1000;
   const speed = 100 / (duration / 2); 
 
-  useAnimationFrame((time) => {
-    if (ref.current && !isPaused) {
-      const contentWidth = ref.current.scrollWidth / 2;
+  // useAnimationFrame((time) => {
+  //   if (ref.current && !isPaused) {
+  //     const contentWidth = ref.current.scrollWidth / 2;
       
 
-      const progress = (time % totalDuration) / totalDuration;
+  //     const progress = (time % totalDuration) / totalDuration;
 
-      let targetX = contentWidth * progress;
+  //     let targetX = contentWidth * progress;
 
-      if (direction === "left") {
-        targetX = -targetX;
-      } else {
+  //     if (direction === "left") {
+  //       targetX = -targetX;
+  //     } else {
 
-        targetX = -contentWidth + targetX;
-      }
+  //       targetX = -contentWidth + targetX;
+  //     }
 
-      x.set(targetX);
-    }
-  });
+  //     x.set(targetX);
+  //   }
+  // });
   
-  return { x, ref };
+  // return { x, ref };
 };
 
 export default function Portfolios() {
@@ -50,46 +50,36 @@ export default function Portfolios() {
     "/portfolio/Frame4.png",
   ];
 
-  const { x: xTop, ref: refTop } = useContinuousScroll(pauseTop, "left", 30); 
-  const { x: xBottom, ref: refBottom } = useContinuousScroll(pauseBottom, "right", 30);
+  // const { x: xTop, ref: refTop } = useContinuousScroll(pauseTop, "left", 30); 
+  // const { x: xBottom, ref: refBottom } = useContinuousScroll(pauseBottom, "right", 30);
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+    <div
+   
       className="bg-gray-50 py-16">
 
       {/* Header (Keep your existing Header code) */}
       <div
         className="container mx-auto mb-16 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          whileHover={{ scale: 1.03, textShadow: "0px 0px 12px rgba(0,0,0,0.15)" }}
+        <h2
+        
 
           className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
           Explore Our Web & App Development Portfolio
-        </motion.h2>
+        </h2>
         <p className="text-lg text-gray-600 mx-auto max-w-4xl">
           Explore our selection of accomplished projects that highlight our proficiency...
         </p>
       </div>
 
       {/* ---------------- TOP SLIDER (LEFT → RIGHT) ---------------- */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      <div
+       
         className="overflow-hidden w-full mb-4"
         onMouseEnter={() => setPauseTop(true)}
         onMouseLeave={() => setPauseTop(false)}
       >
-        <motion.div
-          style={{ x: xTop }} 
-          ref={refTop} 
+        <div
+         
           className="flex items-center gap-4 whitespace-nowrap w-[200%]" 
         >
           {[...images, ...images].map((src, i) => (
@@ -107,22 +97,18 @@ export default function Portfolios() {
               />
             </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {/* ---------------- BOTTOM SLIDER (RIGHT → LEFT) ---------------- */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      <div
+        
         className="overflow-hidden w-full"
         onMouseEnter={() => setPauseBottom(true)}
         onMouseLeave={() => setPauseBottom(false)}
       >
-        <motion.div
-          style={{ x: xBottom }}
-          ref={refBottom}
+        <div
+       
           className="flex items-center gap-4 whitespace-nowrap w-[200%]" 
         >
           {[...images, ...images].map((src, i) => (
@@ -140,11 +126,11 @@ export default function Portfolios() {
               />
             </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
 
-    </motion.div>
+    </div>
   );
 }
 

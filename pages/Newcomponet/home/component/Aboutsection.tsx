@@ -3,7 +3,7 @@ import React from "react";
 import { Check, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 
 export default function Aboutsection({
     heading = "",
@@ -23,12 +23,8 @@ export default function Aboutsection({
                 <div className="grid lg:grid-cols-2 md:gap-4 gap-16 items-center container mx-auto h-full">
 
                     {/* ================= LEFT SIDE (Image) ================= */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: false , amount: 0.5 }}
-                        className="relative h-full"
+                    <div
+                      
                     >
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl md:h-full lg:max-h-[820px] max-w-[650px]">
                             <Image
@@ -41,24 +37,18 @@ export default function Aboutsection({
                         </div>
 
                         {/* Stats Badge */}
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            viewport={{ once: false, amount: 0.5 }}
+                        <div
+                           
                             className="absolute -bottom-6 right-0 lg:-right-0 xl:right-10 bg-[#774099] text-white rounded-2xl p-[30px] shadow-2xl max-w-[320px] lg:max-h-[180px]"
                         >
                             <div className="text-[62px] font-poppins font-medium leading-[50px]">150+</div>
                             <div className="text-xl mt-2 font-medium">Project Delivered</div>
-                        </motion.div>
-                    </motion.div>
+                        </div>
+                    </div>
 
                     {/* ================= RIGHT SIDE (Content) ================= */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 70 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.9, ease: "easeOut" }}
-                        viewport={{ once: false, amount: 0.5 }}
+                    <div
+                       
                         className="space-y-4 max-w-[1040px] h-full lg:max-h-[767px]"
                     >
                         <div className="inline-block">
@@ -108,12 +98,8 @@ export default function Aboutsection({
                         {/* Features List */}
                         <div className="space-y-2 pt-2 ">
                             {points.map((feature, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                                    viewport={{ once: false, amount: 0.5 }}
+                                <div
+                                   
                                     className="flex items-start gap-3"
                                 >
                                     <div className="flex-shrink-0 mt-1">
@@ -122,24 +108,23 @@ export default function Aboutsection({
                                     <span className="text-[#444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins">
                                         {feature}
                                     </span>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
 
                         {/* CTA Button */}
                         {link && linkText && (
                             <Link href={link} className="pt-6">
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.97 }}
+                                <button
+
                                     className="group mt-4 bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
                                 >
                                     {linkText}
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </motion.button>
+                                </button>
                             </Link>
                         )}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>

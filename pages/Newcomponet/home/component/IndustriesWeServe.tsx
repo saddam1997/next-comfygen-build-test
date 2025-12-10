@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+
 import React, { useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -203,16 +203,13 @@ const IndustriesWeServe = ({
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: false, amount: 0.5 }}
-                        whileHover={{ scale: 1.03, textShadow: "0px 0px 12px rgba(0,0,0,0.15)" }}
+                    <h2
+                     
+                        
 
                         className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4 cursor-pointer">
                         {heading}
-                    </motion.h2>
+                    </h2>
                     <p className="text-gray-600 text-lg max-w-3xl mx-auto">
                         {description}
                     </p>
@@ -242,18 +239,11 @@ const IndustriesWeServe = ({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
                     {currentIndustries.map((industry, index) => (
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false, amount: 0.5 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
+                        <div
+                           
 
-                            whileHover={{
-                                scale: 1.02,
-                                y: -4,
-                                boxShadow: "0px 14px 35px rgba(0,0,0,0.12)",
-                            }}
-                            whileTap={{ scale: 0.98 }}
+                          
+                           
                             className='bg-white  max-w-[573px] rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'
                             onMouseEnter={() => setHoveredCard(index)}
                             onMouseLeave={() => setHoveredCard(null)}
@@ -281,10 +271,8 @@ const IndustriesWeServe = ({
                             </div>
 
 
-                            <motion.div
-                                whileHover={{ scale: 1.03 }}
-                                viewport={{ once: false, amount: 0.5 }}
-                                transition={{ duration: 0.5, ease: "easeOut" }}
+                            <div
+                             
                                 className='rounded-md p-4' >
                                 <Image
                                     width={640}
@@ -293,8 +281,8 @@ const IndustriesWeServe = ({
                                     alt={industry.title}
                                     className="rounded-[20px]"
                                 />
-                            </motion.div>
-                        </motion.div>
+                            </div>
+                        </div>
 
                     ))}
 
