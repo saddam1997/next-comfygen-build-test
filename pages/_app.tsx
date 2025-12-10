@@ -121,26 +121,138 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp",
+      "email": "sales@comfygen.com",
+      "url": "https://www.comfygen.com/",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Saddam Husen"
+        }
+      ],
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": [{
         "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
+        "telephone": "+1 579-977-4475",
+        "contactType": "sales",
+        "areaServed": "US",
+        "availableLanguage": "en"
       },
-      sameAs: [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+1 579-977-4475",
+        "contactType": "sales",
+        "areaServed": "CA",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9587867258",
+        "contactType": "sales",
+        "areaServed": "UK",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 9587867258",
+        "contactType": "sales",
+        "areaServed": "IN",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+49-1515-1402200",
+        "contactType": "sales",
+        "areaServed": "DE",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 9587867258",
+        "contactType": "sales",
+        "areaServed": "AE",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 9587867258",
+        "contactType": "sales",
+        "areaServed": "SA",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 9587867258",
+        "contactType": "sales",
+        "areaServed": "AU",
+        "availableLanguage": "en"
+      }
+      ],
+      "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies",
-      ],
+        "https://in.pinterest.com/ComfygenTechnologies/",
+        "https://www.youtube.com/@Comfygentechnologies"
+      ]
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [{
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }, {
+        "@type": "PostalAddress",
+        "streetAddress": "Rhederstraße 34, 53881 Euskirchen, Germany ",
+        "addressLocality": "Euskirchen",
+        "postalCode": "53881",
+        "addressCountry": "Germany"
+      }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://in.pinterest.com/ComfygenTechnologies/",
+        "https://www.youtube.com/@Comfygentechnologies",
+        "https://www.comfygen.com/"
+      ]
+    }
+
+
   ];
 
   return (
@@ -210,8 +322,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
       <main
         className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto `}
 
-      // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
-      //   }`}
+        // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
+        //   }`}
 
       >
         <Component {...pageProps} />

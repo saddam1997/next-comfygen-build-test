@@ -30,7 +30,19 @@ export default function HeroSectionForAllPages(props: any) {
       className="relative h-full bg-[#5951cd] sm:bg-transparent py-10">
       <div className="absolute inset-0 -z-10 hidden sm:block">
         <div className="w-full h-full relative">
-                <Image
+
+   
+                  <Image
+                    src={props.bgImage}
+                    alt="Hero Background"
+                    fill
+                    priority         // 🚀 loads instantly
+                    quality={80}
+                    className="object-cover object-center"
+                    sizes="100vw"
+                  />
+ 
+                {/* <Image
                   src={props.bgImage}
                   alt="Comfygen Hero Background"
                   fill
@@ -42,7 +54,7 @@ export default function HeroSectionForAllPages(props: any) {
                   blurDataURL="/blur-placeholder.webp"
                   quality={75}
                   loading="eager"
-                />
+                /> */}
           {/* <CommonImage
             src={props?.bgImage}
             alt="Comfygen Hero Background"

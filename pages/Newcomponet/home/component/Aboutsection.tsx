@@ -1,7 +1,9 @@
-import React from 'react';
-import { Check, ArrowRight } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import { Check, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Aboutsection({
     heading = "",
@@ -10,110 +12,134 @@ export default function Aboutsection({
     description3 = "",
     description4 = "",
     description5 = "",
-    description6 = "",
     points = [],
     imageSrc = "",
     link = "",
     linkText = "",
 }) {
-    const features = [
-        "Dedicated Development Team",
-        "End-to-End Software Development Technology",
-        "Focused on the Latest Trends and Modern Solutions",
-        "High-Performing Solutions at Competitive Cost",
-        "Strategic Development Process"
-    ];
-
     return (
         <div className="h-full bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-4">
-            <div className="container mx-auto">
-                <div className="grid lg:grid-cols-2 md:gap-4 gap-16 items-center container mx-auto">
-                    {/* Left Side - Image */}
-                    <div className="relative">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl max-h-[820px] max-w-[650px]">
+            <div className="container mx-auto h-full">
+                <div className="grid lg:grid-cols-2 md:gap-4 gap-16 items-center container mx-auto h-full">
+
+                    {/* ================= LEFT SIDE (Image) ================= */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: false , amount: 0.5 }}
+                        className="relative h-full"
+                    >
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl md:h-full lg:max-h-[820px] max-w-[650px]">
                             <Image
                                 height={640}
                                 width={340}
                                 src="/Frame 253.png"
                                 alt="Developer working on applications"
-                                className="w-full h-full "
+                                className="w-full h-full"
                             />
-                            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}
                         </div>
 
                         {/* Stats Badge */}
-                        <div className="absolute -bottom-6 right-10 bg-[#774099] text-white rounded-2xl p-[30px] shadow-2xl max-w-[320px] max-h-[180px]">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className="absolute -bottom-6 right-0 lg:-right-0 xl:right-10 bg-[#774099] text-white rounded-2xl p-[30px] shadow-2xl max-w-[320px] lg:max-h-[180px]"
+                        >
                             <div className="text-[62px] font-poppins font-medium leading-[50px]">150+</div>
                             <div className="text-xl mt-2 font-medium">Project Delivered</div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
-                    {/* Right Side - Content */}
-                    <div className="space-y-4 max-w-[1,040px] h-full lg:max-h-[767.77px]">
+                    {/* ================= RIGHT SIDE (Content) ================= */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 70 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.9, ease: "easeOut" }}
+                        viewport={{ once: false, amount: 0.5 }}
+                        className="space-y-4 max-w-[1040px] h-full lg:max-h-[767px]"
+                    >
                         <div className="inline-block">
-                            <span className="text-orange-500 font-semibold text-sm tracking-wider uppercase gap-2 flex  ">
-
-                                <span className='text-[20px] font-poppins font-medium'> About Our Company</span>
+                            <span className="text-orange-500 font-semibold text-sm tracking-wider uppercase gap-2 flex">
+                                <span className="text-[20px] font-poppins font-medium">About Our Company</span>
                                 <span className="w-12 h-1 bg-orange-500 mt-1.5"></span>
                             </span>
                         </div>
 
-                        <h2 className="text-2xl md:text-[45px] font-poppins font-semibold text-[#000000] leading-tight">
+                        <h2 className="text-sm lg:text-lg xl:text-[45px] font-poppins font-semibold text-[#000] lg:leading-tight">
                             {heading}
                         </h2>
 
-                        <p className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins" dangerouslySetInnerHTML={{ __html: description1 }}>
-
-                        </p>
-
+                        <p
+                            className="text-[#444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
+                            dangerouslySetInnerHTML={{ __html: description1 }}
+                        />
 
                         {description2 && (
-                            <p className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins" dangerouslySetInnerHTML={{ __html: description2 }}>
-                            </p>
+                            <p
+                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
+                                dangerouslySetInnerHTML={{ __html: description2 }}
+                            />
                         )}
 
                         {description3 && (
-                            <p className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins" dangerouslySetInnerHTML={{ __html: description3 }}>
-                            </p>
+                            <p
+                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
+                                dangerouslySetInnerHTML={{ __html: description3 }}
+                            />
                         )}
 
                         {description4 && (
                             <p
-                                className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins"
+                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
                                 dangerouslySetInnerHTML={{ __html: description4 }}
                             />
                         )}
+
                         {description5 && (
                             <p
-                                className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins"
+                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
                                 dangerouslySetInnerHTML={{ __html: description5 }}
                             />
                         )}
 
-
-
                         {/* Features List */}
-                        <div className="space-y-2 pt-2">
+                        <div className="space-y-2 pt-2 ">
                             {points.map((feature, index) => (
-                                <div key={index} className="flex items-start gap-3">
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                    className="flex items-start gap-3"
+                                >
                                     <div className="flex-shrink-0 mt-1">
                                         <Check className="w-5 h-5 text-orange-500" />
                                     </div>
-                                    <span className="text-[#444444] md:text-[20px] leading-relaxed font-normal font-poppins">{feature}</span>
-                                </div>
+                                    <span className="text-[#444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins">
+                                        {feature}
+                                    </span>
+                                </motion.div>
                             ))}
                         </div>
 
                         {/* CTA Button */}
                         {link && linkText && (
                             <Link href={link} className="pt-6">
-                                <button className="group mt-4 bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.97 }}
+                                    className="group mt-4 bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                                >
                                     {linkText}
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </button>
+                                </motion.button>
                             </Link>
                         )}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

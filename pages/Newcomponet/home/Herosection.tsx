@@ -48,7 +48,7 @@ export default function Herosection(props: any) {
       </div>
 
 
-      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-32 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto h-full  md:min-h-screen items-center">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-32 2xl:w-10/12 w-10/12  h-full  md:min-h-screen items-center">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
           <div className="space-y-4">
             {props.isHome ? (

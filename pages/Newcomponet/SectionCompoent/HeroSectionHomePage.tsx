@@ -8,6 +8,7 @@ const ContactFrom = dynamic(() => import("../comman/ContactFrom"), { ssr: false 
 
 export default function HeroSection(props: any) {
 
+  const { bgImage } = props;
 
   const data = props.btnLink;
   if (!data) {
@@ -21,6 +22,19 @@ export default function HeroSection(props: any) {
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
+
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkScreen = () => setIsDesktop(window.innerWidth > 1140);
+
+      checkScreen(); // run on first load
+      window.addEventListener("resize", checkScreen);
+
+      return () => window.removeEventListener("resize", checkScreen);
+    }
+  }, []);
 
   useEffect(() => {
     const word = words[currentWordIndex];
@@ -64,11 +78,26 @@ export default function HeroSection(props: any) {
     <section
       className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent sm:h-full max-h-screen`}
     // style={{
+    //   backgroundImage: isDesktop && `url(${bgImage})`,
+    // }}
+    // style={{
     //   backgroundColor: isMobile ? "#5951cd" : "transparent",
     // }}
     >
 
-      <Image
+      <div className="absolute inset-0 -z-10 hidden lg:block">
+        <Image
+          src={bgImage}
+          alt="Hero Background"
+          fill
+          priority         // 🚀 loads instantly
+          quality={80}
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+      </div>
+
+      {/* <Image
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
@@ -80,7 +109,7 @@ export default function HeroSection(props: any) {
         blurDataURL="/blur-placeholder.webp"
         quality={75}
         loading="eager"
-      />
+      /> */}
 
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

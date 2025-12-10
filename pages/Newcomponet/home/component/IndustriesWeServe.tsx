@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -82,10 +84,21 @@ const defaultSliderData = [
 
 const IndustriesWeServe = ({
     heading = "Industries We Empower with Our Digital Solutions",
-    description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.",
+    description = "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.",
     industries = defaultSliderData }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const [hoveredCard, setHoveredCard] = useState(null);
+
+    const sildeCrd = React.useRef(null);
+
+    const scrollcards = (scrollOffset = "left") => {
+       if(!sildeCrd.current) return;
+       if(scrollOffset === "left") {
+        sildeCrd.current.scrollLeft -= 300;
+       } else {
+        sildeCrd.current.scrollLeft += 300;
+       }
+    }
 
     // const industries = [
     //     {
@@ -164,7 +177,7 @@ const IndustriesWeServe = ({
     const itemsPerPage = 6;
     const totalPages = Math.ceil(industries.length / itemsPerPage);
 
-    const handlePageChange = (pageIndex) => {
+    const handlePageChange = (pageIndex:any) => {
         setCurrentPage(pageIndex);
     };
 
@@ -190,11 +203,18 @@ const IndustriesWeServe = ({
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4">
-                       {heading}
-                    </h2>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: false, amount: 0.5 }}
+                        whileHover={{ scale: 1.03, textShadow: "0px 0px 12px rgba(0,0,0,0.15)" }}
+
+                        className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4 cursor-pointer">
+                        {heading}
+                    </motion.h2>
                     <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-                     {description}
+                        {description}
                     </p>
                 </div>
 
@@ -222,7 +242,19 @@ const IndustriesWeServe = ({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
                     {currentIndustries.map((industry, index) => (
-                        <div className='bg-white  max-w-[573px] rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+
+                            whileHover={{
+                                scale: 1.02,
+                                y: -4,
+                                boxShadow: "0px 14px 35px rgba(0,0,0,0.12)",
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                            className='bg-white  max-w-[573px] rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'
                             onMouseEnter={() => setHoveredCard(index)}
                             onMouseLeave={() => setHoveredCard(null)}
                             onClick={() => handleCardClick(industry.link)}
@@ -233,10 +265,10 @@ const IndustriesWeServe = ({
                                 </h2>
                                 <Link href={industry.link || '#'}
                                     className={`bg-red-500 hover:bg-red-600 text-white rounded-full p-3 transition-all duration-300 `}
-                                    // onClick={(e) => {
-                                    //     e.stopPropagation();
-                                    //     handleCardClick(industry.link);
-                                    // }}
+                                // onClick={(e) => {
+                                //     e.stopPropagation();
+                                //     handleCardClick(industry.link);
+                                // }}
                                 >
                                     <ArrowUpRight className="w-5 h-5" />
                                 </Link>
@@ -249,7 +281,11 @@ const IndustriesWeServe = ({
                             </div>
 
 
-                            <div className='rounded-md p-4'>
+                            <motion.div
+                                whileHover={{ scale: 1.03 }}
+                                viewport={{ once: false, amount: 0.5 }}
+                                transition={{ duration: 0.5, ease: "easeOut" }}
+                                className='rounded-md p-4' >
                                 <Image
                                     width={640}
                                     height={460}
@@ -257,8 +293,8 @@ const IndustriesWeServe = ({
                                     alt={industry.title}
                                     className="rounded-[20px]"
                                 />
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
 
                     ))}
 
@@ -297,6 +333,19 @@ const IndustriesWeServe = ({
                     </button>
                 </div>
             </div>
+
+            {/* <div>
+                <div className="flex justify-end gap-4 mt-10 px-10 container mx-auto">
+                    <button onClick={()=>scrollcards("right")}>prev</button>
+                    <button onClick={()=>scrollcards("left")}>next</button>
+                </div>
+                <div className="flex gap-6 overflow-x-auto px-10 pb-4 scroll-hide scroll-smooth container mx-auto mt-20" ref={sildeCrd}>
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((__, index) => <div className="min-w-[150px] md:min-w-[180px] flex flex-col justify-center rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer bg-gray-600 h-20"></div>)}
+                </div>
+
+            </div> */}
+
+
         </section>
     );
 };

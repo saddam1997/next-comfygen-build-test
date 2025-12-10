@@ -8,12 +8,13 @@ import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePa
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
 import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
-// import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
-// import Herosection from "./Newcomponet/home/Herosection";
-// import Aboutsection from "./Newcomponet/home/component/Aboutsection";
-// import Services from "./Newcomponet/home/component/Services";
-// import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
-// import Portfolios from "./Newcomponet/home/component/Portfolios";
+import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
+import Herosection from "./Newcomponet/home/Herosection";
+import Aboutsection from "./Newcomponet/home/component/Aboutsection";
+import Services from "./Newcomponet/home/component/Services";
+import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
+import Portfolios from "./Newcomponet/home/component/Portfolios";
+import ImageSlider from "./Newcomponet/home/component/ImageSlider";
 
 
 
@@ -67,6 +68,7 @@ export default function Home(props: any) {
   let { initialData } = props;
   const [typedText] = useState("");
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+
   const websiteJsonLd = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -78,12 +80,15 @@ export default function Home(props: any) {
       "query-input": "required name=search_term_string",
     },
   };
+
   const openModal = () => {
     setTalkToExpertModal(true);
   };
+
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
   const portfoliodata = [
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup-new.webp",
@@ -291,7 +296,7 @@ export default function Home(props: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
         />
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -321,15 +326,15 @@ export default function Home(props: any) {
             }),
           }}
 
-        />
+        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
-      <div style={{ height: '80px', }}>
+     <div style={{ height: '80px', }}>
         <Header />
-      </div>
+      </div> 
 
 
       {/* <div className="overflow-hidden">
@@ -375,10 +380,11 @@ export default function Home(props: any) {
 
         />
         <Portfolios />
+
       </div> */}
 
 
-      <div className="overflow-hidden">
+   <div className="overflow-hidden">
 
         <div className="relative">
           <HeroSectionHomePage
@@ -503,7 +509,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-      </div>
+      </div> 
     </>
   );
 }

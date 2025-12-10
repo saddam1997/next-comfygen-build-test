@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
-export default function Services({ heading = "", description = "", serviceskey = [], servicedata = [] }) {
+export default function Services({ heading = "", description = "", serviceskey = [], servicedata = {} }) {
     const [activeService, setActiveService] = useState('AI Development');
 
     const activeData = servicedata?.[activeService] || {};
@@ -14,26 +14,26 @@ export default function Services({ heading = "", description = "", serviceskey =
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-[45px] font-semibold font-poppins mb-6">
+                    <h2 className="lg:text-2xl xl:text-[45px] font-semibold font-poppins mb-6">
                         <span className="bg-gradient-to-r from-[#C05FE2] via-[#DD3D98] to-[#2A39DD] text-transparent bg-clip-text">
                             {heading}
                         </span>
                     </h2>
-                    <p className="text-[#FFFFFF] md:text-[20px] font-poppins font-normal max-w-[1525px] mx-auto" dangerouslySetInnerHTML={{ __html: description }}>
+                    <p className="text-[#FFFFFF] lg:text-sm xl:text-[20px] xl:leading-loose font-poppins font-normal max-w-[1525px] mx-auto" dangerouslySetInnerHTML={{ __html: description }}>
 
                     </p>
                 </div>
 
                 {/* Main Content Container */}
-                <div className="bg-white backdrop-blur-sm rounded-3xl p-8 shadow-2xl max-w-[1760px] h-full md:h-[780px]">
-                    <div className="grid md:grid-cols-[400px,1fr] gap-8">
+                <div className="bg-white backdrop-blur-sm rounded-3xl p-8 shadow-2xl max-w-[1760px] h-full xl:h-[780px]">
+                    <div className="grid lg:grid-cols-2 xl:grid-cols-[400px,1fr] gap-8 ">
                         {/* Services Menu */}
                         <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 scroll-hide ">
                             {serviceskey.map((service) => (
                                 <button
                                     key={service}
                                     onClick={() => setActiveService(service)}
-                                    className={`w-full text-left px-6 py-4 md:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${activeService === service
+                                    className={`w-full text-left px-6 py-4 text-sm lg:text-lg xl:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${activeService === service
                                         ? 'bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white shadow-lg '
                                         : 'bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]'
                                         }`}
@@ -59,12 +59,12 @@ export default function Services({ heading = "", description = "", serviceskey =
                             </div>
 
                             <div className="relative z-10">
-                                <h2 className="text-lg md:text-[36px] font-medium font-poppins text-[#FFFFFF] mb-4">
+                                <h2 className="text-sm lg:text-xl xl:text-[36px] font-medium font-poppins text-[#FFFFFF] mb-4">
                                     {activeService}
                                 </h2>
 
                                 <p
-                                    className="md:text-[20px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-14  leading-relaxed"
+                                    className="text-sm lg:text-base xl:text-[20px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-14  leading-relaxed"
                                     dangerouslySetInnerHTML={{
                                         __html:
                                            desc.length > 300
@@ -83,7 +83,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                                             key={index}
                                             className="flex items-center text-gray-200 text-lg gap-2"
                                         >
-                                            - {""} <span className="text-sm md:text-[20px] font-medium font-poppins text-[#FFFFFF] mr-3" dangerouslySetInnerHTML={{ __html: feature }}></span>
+                                            - {""} <span className="ext-sm lg:text-base xl:text-[20px] font-medium font-poppins text-[#FFFFFF] mr-3" dangerouslySetInnerHTML={{ __html: feature }}></span>
 
                                         </div>
                                     ))}

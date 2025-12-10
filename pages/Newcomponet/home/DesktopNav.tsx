@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
+
 import {
   MdKeyboardArrowDown,
   MdMenuOpen,
@@ -1089,28 +1095,28 @@ export default function DesktopNav(props: any) {
 
 
   useEffect(() => {
-  let ticking = false;
+    let ticking = false;
 
-  const handleScroll = () => {
-    const newScrollState = window.scrollY > window.innerHeight;
+    const handleScroll = () => {
+      const newScrollState = window.scrollY > window.innerHeight;
 
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        setIsScrolled(prev => {
-          if (prev !== newScrollState) {
-            return newScrollState;
-          }
-          return prev;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(prev => {
+            if (prev !== newScrollState) {
+              return newScrollState;
+            }
+            return prev;
+          });
+          ticking = false;
         });
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
+        ticking = true;
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
 
   // useEffect(() => {
@@ -1190,20 +1196,30 @@ export default function DesktopNav(props: any) {
             }
           >
             <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
-              <div>
+              <motion.div
+
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="flex gap-10"
+              >
                 <Link href="/" passHref={true}>
                   <span className={`relative block text-[18px] font-poppins leading-none transition duration-300 border-b-2 border-transparent ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"} cursor-pointer py-9 `}>
                     Home
                   </span>
                 </Link>
-              </div>
+              </motion.div>
 
               {/* Services */}
-              <div
+              <motion.div
                 className=" group "
                 onMouseEnter={() => setActiveTab("Tab1")}
               >
-                <button
+                <motion.button
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+
                   onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
                   className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent  ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
                 >
@@ -1216,7 +1232,7 @@ export default function DesktopNav(props: any) {
                     className={` ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
                     size={22}
                   />
-                </button>
+                </motion.button>
                 <div className="z-50 relative lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl bg-transparent capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
                   {/* <div className="absolute -top-2 2xl:inset-x-[34rem] xl:inset-x-[33rem] bg-white rotate-45   w-4 h-4"></div> */}
                   <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
@@ -1567,14 +1583,17 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Solutions */}
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="group"
                 onMouseEnter={() => setActiveTab("Tab1")}
               >
-                <button
+                <motion.button
                   onClick={() => setShowNav(showNav === 2 ? 0 : 2)}
                   className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent  ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
                 >
@@ -1589,7 +1608,7 @@ export default function DesktopNav(props: any) {
                     className={` ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
                     size={22}
                   />
-                </button>
+                </motion.button>
                 <div className="z-40 lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl bg-transparent capitalize    text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap relative left-0 transform hidden group-hover:block   transition duration-200 ease-in-out origin-top  w-full ">
                   {/* <div className="absolute -top-2 2xl:inset-x-[29rem] xl:inset-x-[29rem]   bg-white rotate-45   w-4 h-4"></div> */}
                   <div className="2xl:p-10 p-5 mx-auto text-sm">
@@ -1923,10 +1942,13 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* add new section industries by madhusudan 12-11-2025*/}
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className=" group  "
                 onMouseEnter={() => setActiveTab("Tab1")}
               >
@@ -2230,10 +2252,15 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
 
-              <div className="group z-40 ">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+
+                className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 4 ? 0 : 4)}
                   className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent  ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
@@ -2349,8 +2376,12 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="group z-40 ">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+              className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
                   className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent hover:text-black/100 text-black/80 ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
@@ -2459,7 +2490,7 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
