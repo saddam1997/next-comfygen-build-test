@@ -339,13 +339,13 @@ const techDataForPage1 = {
         "https://www.comfygen.com/image/figma-portfolio-icon.png",
         "https://www.comfygen.com/image/html-portfolio-icon.svg",
       ],
-      buttonLink: "/portfolio/lgbtq-dating-app",
+      buttonLink: "/portfolio/ai-matchmaking-dating-app-development",
     },
     {
-      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
-      head: "P2P Money Transfer App",
-      name: "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
-      num: "3",
+      img: "https://www.comfygen.com/image/lgbtq-dating-app.webp",
+      head:   "LGBTQ Dating App",
+      name: "Our LGBTQ dating app development offers secure matchmaking, quick hookups, and meaningful friendships through real-time chat, location-based searches, and AI suggestions.",
+      num: "2",
       icons: [
         "https://www.comfygen.com/image/react-portfolio-icon.svg",
         "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
@@ -353,8 +353,38 @@ const techDataForPage1 = {
         "https://www.comfygen.com/image/figma-portfolio-icon.png",
         "https://www.comfygen.com/image/html-portfolio-icon.svg",
       ],
-      buttonLink: "#",
+      buttonLink: "/portfolio/lgbtq-dating-app",
+    },
+     {
+      img: "https://www.comfygen.com/image/casual-dating-app.webp",
+      head:  "Casual Dating App",
+      name: "Designed for modern dating, our casual dating app development offers instant matches, real-time chats, and location-based suggestions for users seeking fun and spontaneous connections.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/portfolio/casual-dating-app",
+    },
+    {
+      img:"https://www.comfygen.com/image/profestional-dating-app.webp",
+      head:"Professional Dating App",
+      name:"We build professional dating apps that connect like-minded professionals, integrating career-based matchmaking, private messaging, and networking features for meaningful relationships.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink:"/portfolio/professional-dating-app",
     }
+ 
+ 
    
   ],
 };
