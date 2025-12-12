@@ -31,6 +31,7 @@ import {
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import PortfolioSec from "../componentsnew/PortfolioSec";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -310,6 +311,56 @@ const latesttech = [
 ];
 
 
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/image/swipe-based-dating-app.webp",
+      head: "Swipe-Based Dating App",
+      name: "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink:  "/portfolio/swipe-based-dating-app",
+    },
+    {
+      img: "https://www.comfygen.com/image/match-making-datingapp.webp",
+      head:  "Matchmaking Dating App",
+      name: "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "/portfolio/lgbtq-dating-app",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
+      head: "P2P Money Transfer App",
+      name: "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
+      num: "3",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "#",
+    }
+   
+  ],
+};
+
+
+
 
 const portfoliodata = [
 
@@ -352,8 +403,6 @@ const portfoliodata = [
 
 
 const jsonLdData = [
-
-
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -669,7 +718,7 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
 
@@ -717,7 +766,6 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-
 
         <CardGrid
           heading="Elevate Your Dating App with Our Top-Notch Dating Mobile App Development Services"
@@ -768,14 +816,20 @@ export default function Ecommerce(props) {
         </div>
 
 
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
+          description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
+        />
 
-        <section className="py-8">
+
+        {/* <section className="py-8">
           <Portfolio
             projects={portfoliodata}
             heading="Our Dating Apps Portfolio"
             description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
           />
-        </section>
+        </section> */}
 
 
 

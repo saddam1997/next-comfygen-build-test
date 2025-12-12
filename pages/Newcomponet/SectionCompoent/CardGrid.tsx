@@ -2,6 +2,13 @@ import React from "react";
 import { MdStars } from "react-icons/md";
 
 const LatestTechnology = ({ heading, subheading, techData }) => {
+
+    const [showAll, setShowAll] = React.useState(false);
+  const safeData = Array.isArray(techData) ? techData : [];
+
+const visibleData = showAll ? safeData : safeData.slice(0, 4);
+
+
     return (
         <section className="lg:py-14 py-8">
             <div className="mx-auto 2xl:w-10/12 lg:w-11/12 lg:px-0 px-6 w-full">
@@ -10,11 +17,11 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                         {heading}
                     </h2>
                     <p className="text-base text-black text-center" dangerouslySetInnerHTML={{ __html: subheading }} />
-                    
+
                 </div>
                 <div className="grid py-10 text-left md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4">
-                    {techData &&
-                        techData.map((techItem, index) => (
+                    {visibleData &&
+                        visibleData?.map((techItem: any, index: any) => (
                             <div
                                 key={index}
                                 className="bg-[#FAFAFA] p-6 border border-[#5556D1]/10 group rounded-md space-y-4 hover:bg-[#5556D1]/10 hover:border-[#5556D1] cursor-pointer transition-all duration-200"
@@ -29,9 +36,9 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                                     <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: techItem.desc }}>
                                     </p>
                                 </div>
-                                {techItem.listItems && (
+                                {techItem?.listItems && (
                                     <ul className="mt-4 space-y-2">
-                                        {techItem.listItems.map((item, idx) => (
+                                        {techItem?.listItems?.map((item:any, idx:any) => (
                                             <li
                                                 key={idx}
                                                 className="text-base font-normal flex items-center gap-1"
@@ -43,9 +50,23 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                                 )}
                             </div>
                         ))}
+
+
+
+                </div>
+
+                <div className="text-center mt-6">
+                    {Array.isArray(techData) && techData?.length > 4 && (
+                        <button
+                            onClick={() => setShowAll(!showAll)}
+                            className="px-8 py-2 rounded-full bg-[#5556D1] text-white font-semibold hover:bg-[#4344b8] transition"
+                        >
+                            {showAll ? "See Less" : "See More"}
+                        </button>
+                    )}
                 </div>
             </div>
-            
+
         </section>
     );
 };

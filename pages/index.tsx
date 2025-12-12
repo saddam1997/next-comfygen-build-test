@@ -9,12 +9,12 @@ import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
 import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
 import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
-import Herosection from "./Newcomponet/home/Herosection";
-import Aboutsection from "./Newcomponet/home/component/Aboutsection";
-import Services from "./Newcomponet/home/component/Services";
-import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
-import Portfolios from "./Newcomponet/home/component/Portfolios";
-import ImageSlider from "./Newcomponet/home/component/ImageSlider";
+// import Herosection from "./Newcomponet/home/Herosection";
+// import Aboutsection from "./Newcomponet/home/component/Aboutsection";
+// import Services from "./Newcomponet/home/component/Services";
+// import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
+// import Portfolios from "./Newcomponet/home/component/Portfolios";
+// import ImageSlider from "./Newcomponet/home/component/ImageSlider";
 
 
 
@@ -332,12 +332,13 @@ export default function Home(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
-     <div style={{ height: '80px', }}>
+      <div style={{ height: '80px', }}>
         <Header />
-      </div> 
+      </div>
 
 
       {/* <div className="overflow-hidden">
+      
         <div>
           <Herosection
             heading={typedText}
@@ -380,11 +381,11 @@ export default function Home(props: any) {
 
         />
         <Portfolios />
-
+        <ImageSlider/>
       </div> */}
 
 
-   <div className="overflow-hidden">
+       <div className="overflow-hidden">
 
         <div className="relative">
           <HeroSectionHomePage

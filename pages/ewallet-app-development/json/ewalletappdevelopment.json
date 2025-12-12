@@ -3,110 +3,204 @@
     "title": "E-Commerce App and Web Development Company",
     "decs": "Comfygen specializes in offering unique e-commerce development services as an android ecommerce app development and mobile ecommerce app development . We are aware of how crucial it is to create scalable, highly reliable solutions in order to improve consumer interaction and spur growth for your e-commerce company. In order to understand your unique requirements and develop solutions that suit your business goals, our team of professionals will collaborate directly with you. We have the knowledge and experience to produce outstanding outcomes whether you require an e-commerce mobile app, a web-based e-commerce platform, or both. So what’s holding you bak hire us today we are the best ecommerce app and web development company in india. "
   },
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop an eWallet app?",
-    "desc": "The cost of developing an eWallet app depends on various factors including app complexity, features, supported platforms (iOS, Android, or both), and third-party integrations. Basic apps with essential functions start around $20,000, while advanced apps with features like multi-currency support, UPI, and crypto wallets require a higher budget. For a precise quote, contact us with your specific requirements."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to create an eWallet app?",
-    "desc": "Typically, the development of an eWallet app takes between 3 to 6 months. The timeline depends on factors like app complexity, number of features, UI/UX design, and integration with payment gateways. We use an agile development process to ensure efficient project management, timely delivery, and continuous updates, guaranteeing a smooth launch with high-quality standards."
-  },
-  {
-    "num": "3",
-    "title": "Can you add features like UPI or crypto wallets?",
-    "desc": "Yes, we specialize in integrating a wide range of advanced payment features including UPI, cryptocurrency wallets, NFC payments, QR code transactions, and more. These features make your eWallet app highly versatile and secure, catering to diverse user needs. Our developers ensure seamless integration with reliable third-party APIs while maintaining top-level security standards throughout the app."
-  },
-  {
-    "num": "4",
-    "title": "Is the wallet PCI-DSS compliant?",
-    "desc": "Absolutely. We prioritize the security of your users’ financial data by implementing PCI-DSS compliance protocols. Our eWallet apps include end-to-end encryption, biometric authentication, and secure payment gateways to protect sensitive information from fraud and unauthorized access. We follow industry best practices and ensure your app meets all necessary regulatory and compliance standards."
-  },
-  {
-    "num": "5",
-    "title": "Do you offer post-launch updates?",
-    "desc": "Yes, we provide comprehensive post-launch maintenance and update services. This includes regular security patches, performance enhancements, feature upgrades, and bug fixes to keep your eWallet app running smoothly. Our team ensures your app stays compatible with new OS versions and evolving market demands, helping you deliver an excellent user experience consistently."
-  }
-],
-
-
-"featuresData":[
-  {
-    "id": 1,
-    "title": "User Panel",
-    "icon": "<i className='fas fa-user text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-user-panel.webp",
-    "additionalDetails": [
-      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "User Registration & KYC", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Balance & Transaction History", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png", "details": "Fund Transfer & Requests", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "Bill Payments & Recharges", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "Bank Account Linking", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Push Notifications", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Multi-Language Support", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "Two-Factor Authentication", "content": "" }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Admin Panel",
-    "icon": "<i className='fas fa-tools text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-admin-panel.webp",
-    "additionalDetails": [
-      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "User Management", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Transaction Monitoring", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "KYC & Compliance Controls", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png", "details": "Commission & Revenue Reports", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Push Notification Management", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png", "details": "Payment Gateway Integration", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "Dispute Management", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "CMS & Content Controls", "content": "" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Merchant Panel",
-    "icon": "<i className='fas fa-store text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-merchant-panel.webp",
-    "additionalDetails": [
-      { "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png", "details": "Merchant Registration & KYC", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png", "details": "Customer Transaction Management", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png", "details": "QR Code Generator", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png", "details": "Offers & Cashback Setup", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png", "details": "Settlement Reports", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png", "details": "Product & Service Listings", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png", "details": "Customer Support Tools", "content": "" },
-      { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Multi-Device Access", "content": "" }
-    ]
-  }
-],
-
- "portfoliodata":[
+  "Frequently": [
     {
-      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
+      "num": "1",
+      "title": "How much does it cost to develop an eWallet app?",
+      "desc": "The cost of developing an eWallet app depends on various factors including app complexity, features, supported platforms (iOS, Android, or both), and third-party integrations. Basic apps with essential functions start around $20,000, while advanced apps with features like multi-currency support, UPI, and crypto wallets require a higher budget. For a precise quote, contact us with your specific requirements."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to create an eWallet app?",
+      "desc": "Typically, the development of an eWallet app takes between 3 to 6 months. The timeline depends on factors like app complexity, number of features, UI/UX design, and integration with payment gateways. We use an agile development process to ensure efficient project management, timely delivery, and continuous updates, guaranteeing a smooth launch with high-quality standards."
+    },
+    {
+      "num": "3",
+      "title": "Can you add features like UPI or crypto wallets?",
+      "desc": "Yes, we specialize in integrating a wide range of advanced payment features including UPI, cryptocurrency wallets, NFC payments, QR code transactions, and more. These features make your eWallet app highly versatile and secure, catering to diverse user needs. Our developers ensure seamless integration with reliable third-party APIs while maintaining top-level security standards throughout the app."
+    },
+    {
+      "num": "4",
+      "title": "Is the wallet PCI-DSS compliant?",
+      "desc": "Absolutely. We prioritize the security of your users’ financial data by implementing PCI-DSS compliance protocols. Our eWallet apps include end-to-end encryption, biometric authentication, and secure payment gateways to protect sensitive information from fraud and unauthorized access. We follow industry best practices and ensure your app meets all necessary regulatory and compliance standards."
+    },
+    {
+      "num": "5",
+      "title": "Do you offer post-launch updates?",
+      "desc": "Yes, we provide comprehensive post-launch maintenance and update services. This includes regular security patches, performance enhancements, feature upgrades, and bug fixes to keep your eWallet app running smoothly. Our team ensures your app stays compatible with new OS versions and evolving market demands, helping you deliver an excellent user experience consistently."
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "User Panel",
+      "icon": "<i className='fas fa-user text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-user-panel.webp",
+      "additionalDetails": [
+        {
+          "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+          "details": "User Registration & KYC",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+          "details": "Balance & Transaction History",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+          "details": "Fund Transfer & Requests",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+          "details": "Bill Payments & Recharges",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+          "details": "Bank Account Linking",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+          "details": "Push Notifications",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/image 48.png",
+          "details": "Multi-Language Support",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+          "details": "Two-Factor Authentication",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Admin Panel",
+      "icon": "<i className='fas fa-tools text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-admin-panel.webp",
+      "additionalDetails": [
+        {
+          "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+          "details": "User Management",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+          "details": "Transaction Monitoring",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+          "details": "KYC & Compliance Controls",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+          "details": "Commission & Revenue Reports",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+          "details": "Push Notification Management",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+          "details": "Payment Gateway Integration",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+          "details": "Dispute Management",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+          "details": "CMS & Content Controls",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Merchant Panel",
+      "icon": "<i className='fas fa-store text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/wallet-merchant-panel.webp",
+      "additionalDetails": [
+        {
+          "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+          "details": "Merchant Registration & KYC",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+          "details": "Customer Transaction Management",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+          "details": "QR Code Generator",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+          "details": "Offers & Cashback Setup",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+          "details": "Settlement Reports",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+          "details": "Product & Service Listings",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+          "details": "Customer Support Tools",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/image 48.png",
+          "details": "Multi-Device Access",
+          "content": ""
+        }
+      ]
+    }
+  ],
+
+
+
+
+  
+  "portfoliodata": [
+    {
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
       "title": "Retail eWallet App",
       "description": "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
       "link": "#"
     },
-
     {
-      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
       "title": "Crypto Wallet App",
       "description": "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
       "title": "P2P Money Transfer App",
       "description": "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
       "link": "#"
     }
-    
   ],
-
-  
   "myList1": [
     "Super-easy onboarding",
     "Native app",
@@ -185,199 +279,203 @@
     }
   ],
   "pageData": {
-    "title": "Why Choose Comfygen for eWallet Software Development?",
-    "description": "Comfygen is a trusted eWallet app development company, delivering secure, scalable, and feature-rich wallet solutions tailored to your business goals. From digital wallet design to seamless integrations and post-launch support, we ensure top-tier service at every stage of your eWallet development journey.",
+    "title": "Why Choose Comfygen for eWallet App Development?",
+    "description": "Comfygen Technologies is a result-oriented mobile wallet app development company, delivering secure, scalable, and feature-rich wallet solutions tailored to your business goals. From digital wallet design to seamless integrations and post-launch support, we ensure top-tier service at every stage of your eWallet development journey.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "10+ Years of Proven Experience in Fintech App Development",
-    "description": "With over a decade of experience, our team brings deep industry expertise to every project. We understand fintech intricacies and use our insights to develop secure and high-performance mobile wallet apps that match modern user expectations."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "eWallet Solutions for Every Business",
-    "description": "We deliver custom e-wallet software development services tailored to your unique business needs. Whether you're launching a payment wallet, crypto wallet, or P2P money transfer app, we design scalable solutions with seamless functionality and robust architecture."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "95% Customer Satisfaction Rate",
-    "description": "We’re proud of our high customer satisfaction score. Our clients love working with us because we listen, deliver on promises, and craft wallet apps that perform and convert."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Security-First Development Approach",
-    "description": "Security is at the core of every eWallet solution we deliver. From biometric authentication and PCI-DSS compliance to end-to-end encryption, we implement leading security standards to protect user data and financial transactions."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-    "title": "150+ Global Clients Trust Us",
-    "description": "From startups to enterprise clients, more than 200 businesses have partnered with us for mobile wallet app development. We build long-term relationships through reliability, transparency, and unmatched service quality."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-    "title": "100% Bug-Free Deployment",
-    "description": "We ensure your eWallet app is error-free and market-ready. Our QA team runs rigorous testing across devices and operating systems, ensuring seamless performance before launch."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "24/7 Technical Support & Maintenance",
-    "description": "Our job doesn’t end at deployment. We offer round-the-clock support to ensure your eWallet app operates flawlessly. From bug fixes to upgrades and version releases, we’re here whenever you need us."
-  }
-]
-
-  },
-
-
-"servicesData": [
-  {
-    "title": "Custom eWallet App Development",
-    "description": "As a top ewallet app development company, we craft tailor-made digital wallet solutions that perfectly match your business goals. Whether you want a feature-rich mobile wallet or a secure payment platform, our custom eWallet app development services ensure scalability and seamless user experience.",
-    "features": [
-      "Fully customizable interface",
-      "Robust security protocols",
-      "Scalable architecture",
-      "Multi-currency support"
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Trusted Fintech Expertise",
+        "description": "We are a reliable <a href='https://www.comfygen.com/finance-app-development' class='text-blue-600 font-semibold'>fintech app development</a> company with deep experience in building secure and innovative digital wallet apps for startups, enterprises, and financial brands."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "High-End Security & Compliance",
+        "description": "Our wallet solutions follow global fintech security standards like PCI-DSS, KYC, and data encryption to ensure trusted and fraud-free digital transactions."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Custom & Scalable eWallet Solutions",
+        "description": "We design custom digital wallet apps tailored to unique business needs with scalable architecture, so your platform grows smoothly with more users and features."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Quick Time-to-Market Delivery",
+        "description": "Our skilled eWallet app developers use agile development to deliver high-performance wallet apps faster, helping you launch your fintech business without delay."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Advanced Technology Integration",
+        "description": "We integrate the latest technologies including AI, Blockchain, NFC, and biometrics to build next-generation digital wallet apps with a seamless user experience."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "24/7 Support & Maintenance",
+        "description": "We provide continuous monitoring, upgrades, bug fixing, and technical support to keep your eWallet application running smoothly and securely at all times."
+      }
+      
     ]
   },
-  {
-    "title": "P2P Wallet App Development",
-    "description": "Our e-wallet app development services include peer-to-peer (P2P) wallet apps that allow users to send and receive money instantly. Designed for high performance and security, our P2P wallet solutions foster quick, reliable financial transactions with an intuitive user interface.",
-    "features": [
-      "Instant fund transfers",
-      "End-to-end encryption",
-      "Real-time transaction updates",
-      "User-friendly dashboard"
-    ]
-  },
-  {
-    "title": "Crypto Wallet App Development",
-    "description": "Looking to enter the blockchain world? Our digital wallet development company builds secure and compliant crypto wallet apps that support multiple cryptocurrencies, private keys management, and real-time market tracking, enabling safe and efficient digital asset management.",
-    "features": [
-      "Multi-cryptocurrency support",
-      "Private key encryption",
-      "Real-time price updates",
-      "Blockchain transaction history"
-    ]
-  },
-  {
-    "title": "UPI & Payment Gateway Integration",
-    "description": "We specialize in mobile wallet development services that integrate UPI and multiple payment gateways, making your eWallet app a versatile platform for seamless transactions and bill payments with high reliability and security standards.",
-    "features": [
-      "Support for major UPI apps",
-      "Multiple payment gateway integrations",
-      "Fast payment processing",
-      "Secure transaction handling"
-    ]
-  },
-  {
-    "title": "Utility Payment Wallet App Development",
-    "description": "Create a one-stop wallet app for all utility bill payments. Our wallet app development company builds utility payment wallets that allow users to pay electricity, water, gas, and other bills securely and conveniently, improving customer retention.",
-    "features": [
-      "Multi-utility bill support",
-      "Auto bill reminders",
-      "Secure payment gateways",
-      "Detailed transaction history"
-    ]
-  },
-  {
-    "title": "NFC Wallet App Development",
-    "description": "Stay ahead with our NFC wallet app development services, enabling contactless payments via smartphones or wearable devices. Our ewallet development solutions ensure quick, secure, and convenient tap-to-pay transactions.",
-    "features": [
-      "Contactless payment technology",
-      "Secure tokenization",
-      "Fast transaction processing",
-      "Compatibility with NFC-enabled devices"
-    ]
-  },
-  {
-    "title": "Power Wallet Development",
-    "description": "Our power wallet solutions are designed to handle high transaction volumes while providing advanced features like multi-user access, budget tracking, and loyalty rewards, making it an ideal choice for large enterprises and fintech firms.",
-    "features": [
-      "Multi-user account management",
-      "Real-time analytics",
-      "Loyalty and rewards integration",
-      "High scalability and uptime"
-    ]
-  },
-  {
-    "title": "QR Code Payment Integration",
-    "description": "We integrate QR code payment methods in your eWallet app to provide users with flexible, contactless payment options, enhancing convenience and improving transaction speed in retail and service environments.",
-    "features": [
-      "Dual payment modes (NFC & QR)",
-      "Fast and secure transactions",
-      "Offline payment support",
+  "servicesData": [
+    {
+      "title": "Custom eWallet App Development",
+      "description": "As a result-oriented eWallet app development firm, we craft tailor-made digital wallet solutions that perfectly match your business goals. Whether you want a feature-rich mobile wallet or a secure payment platform, our custom eWallet app development services ensure scalability and seamless user experience.",
+      "features": [
+        "Fully customizable interface",
+        "Robust security protocols",
+        "Scalable architecture",
+        "Multi-currency support"
+      ]
+    },
+    {
+      "title": "White-label eWallet App Development",
+      "description": "Launch your own digital wallet quickly with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label eWallet app development solutions</a> that come with complete customization and branding capabilities.",
+      "features": [
+        "Faster Time-to-Market",
+        "Fully Customizable UI/UX",
+        "Powerful Analytics Dashboard"
+      ]
+    },
+    {
+      "title": "P2P Wallet App Development",
+      "description": "Our <a href='https://www.comfygen.com/p2p-payment-app-development' class='underline font-semibold'>P2P payment wallet app development solution</a> allows users to send and receive money instantly. Designed for high performance and security, our P2P wallet development solutions foster quick, reliable financial transactions with an intuitive user interface.",
+      "features": [
+        "Instant fund transfers",
+        "End-to-end encryption",
+        "Real-time transaction updates",
+        "User-friendly dashboard"
+      ]
+    },
+    {
+      "title": "UPI & Payment Gateway Integration",
+      "description": "We specialize in <a href='https://www.comfygen.com/upi-payment-app-development' class='underline font-semibold'>UPI wallet development services</a> that integrate UPI and multiple payment gateways, making your eWallet app a versatile platform for seamless transactions and bill payments with high reliability and security standards.",
+      "features": [
+        "Support for major UPI apps",
+        "Multiple payment gateway integrations",
+        "Fast payment processing",
+        "Secure transaction handling"
+      ]
+    },
+    {
+      "title": "Utility Payment Wallet App Development",
+      "description": "Create a one-stop wallet app for all utility bill payments. Our wallet app development company builds utility payment wallets that allow users to pay electricity, water, gas, and other bills securely and conveniently, improving customer retention.",
+      "features": [
+        "Multi-utility bill support",
+        "Auto bill reminders",
+        "Secure payment gateways",
+        "Detailed transaction history"
+      ]
+    },
+    {
+      "title": "NFC Wallet App Development",
+      "description": "Stay ahead with our NFC wallet app development services, enabling contactless payments via smartphones or wearable devices. Our ewallet development solutions ensure quick, secure, and convenient tap-to-pay transactions.",
+      "features": [
+        "Contactless payment technology",
+        "Secure tokenization",
+        "Fast transaction processing",
+        "Compatibility with NFC-enabled devices"
+      ]
+    },
+    {
+      "title": "QR Code Payment Integration",
+      "description": "We integrate QR code payment methods in your eWallet app to provide users with flexible, contactless payment options, enhancing convenience and improving transaction speed in retail and service environments.",
+      "features": [
+        "Dual payment modes (NFC & QR)",
+        "Fast and secure transactions",
+        "Offline payment support",
         "Easy integration with POS systems"
-    ]
-  },
-  {
-    "title": "Cross-platform eWallet App Development",
-    "description": "Our eWallet app development company delivers cross-platform eWallet apps using Flutter and React Native, ensuring a consistent, fast, and user-friendly experience on both Android and iOS devices while reducing development costs.",
-    "features": [
-      "Single codebase for iOS & Android",
-      "Consistent UI/UX design",
-      "Faster time-to-market",
-      "Easy maintenance and updates"
-    ]
-  },
-  {
-    "title": "Blockchain-based Wallet Development",
-    "description": "Harness the power of blockchain with our wallet app development services that offer decentralized, transparent, and tamper-proof financial transactions, ensuring maximum security and trust for your users.",
-    "features": [
-      "Decentralized ledger technology",
-      "Immutable transaction records",
-      "Smart contract integration",
-      "Enhanced data privacy"
-    ]
-  },
-  {
-    "title": "Loyalty & Cashback Systems",
-    "description": "Boost user retention with integrated loyalty and cashback programs in your eWallet app. Our ewallet app development services & company provide features that reward users, increase engagement, and encourage repeat transactions.",
-    "features": [
-      "Customizable rewards programs",
-      "Cashback tracking",
-      "User-friendly dashboard",
-      "Real-time notifications"
-    ]
-  }
-],
+      ]
+    },
+    {
+      "title": "Cross-platform eWallet App Development",
+      "description": "Our mobile wallet app development services deliver cross-platform eWallet apps using Flutter and React Native, ensuring a consistent, fast, and user-friendly experience on both Android and iOS devices while reducing development costs.",
+      "features": [
+        "Single codebase for iOS & Android",
+        "Consistent UI/UX design",
+        "Faster time-to-market",
+        "Easy maintenance and updates"
+      ]
+    }
+  ],
+
+
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/amazon-pay-clone-app.webp",
+      "title": "Amazon Pay Clone Solution",
+      "description": "We develop an Amazon Pay-like digital wallet app supporting UPI payments, mobile recharges, bill payments, cashback offers, and a smooth checkout experience for online shopping and retail stores.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/google-pay.webp",
+      "title": "Google Pay Clone Solution",
+      "description": "Launch a Google Pay clone with secure UPI transfers, QR code payments, bank account linking, instant peer-to-peer transactions, and simplified contactless payment support for all users.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/apple-pay.webp",
+      "title": "Apple Pay Clone Solution",
+      "description": "Build an iOS-first Apple Pay-like app featuring Face ID authentication, NFC tap-to-pay technology, secure tokenization, and seamless checkout for Apple device users.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/payPal.webp",
+      "title": "PayPal Clone Solution",
+      "description": "Create a PayPal-style digital wallet with global payments, multi-currency support, money transfers, business invoicing, and safe balance management for worldwide transactions.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/cash-app.webp",
+      "title": "Cash App Clone Solution",
+      "description": "<a href='https://www.comfygen.com/blog/cost-to-build-a-p2p-payment-app-like-cash-app/' class='text-blue-600 font-semibold'>Develop a Cash App-like payment app</a> with instant transfers, investment features, cryptocurrency trading, and easy money management for personal and business users.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/ewallet-app-development/walmart-pay.webp",
+      "title": "Walmart Pay Clone Solution",
+      "description": "We develop a Walmart Pay-inspired in-store payment solution with QR scanning, loyalty rewards, and fast digital payments to increase retail business revenue and user convenience.",
+      "buttonText": "View Demo"
+    }
+  ],
+
 
   "LeadingSoftware": [
     {
       "num": "01",
-      "title": "Digital Wallet App like Amazon Pay",
-      "subtitle": "Want to build a wallet app similar to Amazon Pay? Our developers create Amazon Pay-like apps with features like UPI payments, mobile recharges, shopping integration, and bill payments—all in one place. Launch your own branded digital wallet with smooth checkout, cashback options, and loyalty programs."
+      "title": "Open Wallet App Development",
+      "subtitle": "We develop open wallet apps that allow users to make payments, withdraw money, and transfer funds directly to bank accounts. Perfect for large-scale payment businesses."
     },
     {
       "num": "02",
-      "title": "M Wallet App like Google Pay",
-      "subtitle": "Looking to develop a clone of Google Pay? We build mobile wallet apps like Google Pay that offer secure peer-to-peer transfers, QR scanning, contactless payments, and real-time bank linking. Empower your users with a seamless digital payment app powered by the latest UPI and NFC tech."
+      "title": "Semi-Closed Wallet App Development",
+      "subtitle": "Our semi-closed wallet apps allow users to pay selected merchants, recharge, and shop online securely. Ideal for semi-closed wallet app development for eCommerce and online service providers."
     },
     {
       "num": "03",
-      "title": "eWallet App like Apple Pay",
-      "subtitle": "Develop an iOS-first eWallet like Apple Pay with advanced features including Face ID authentication, tap-to-pay NFC technology, and secure wallet tokenization. Our Apple Pay clone app ensures a smooth, private, and high-speed checkout experience for Apple device users while meeting strict compliance standards."
+      "title": "Closed Wallet App Development",
+      "subtitle": "We create closed wallet apps designed for specific brands where users spend only within your platform. A perfect eWallet application development option for loyalty-based retail and service businesses."
     },
     {
       "num": "04",
-      "title": "Wallet App like PayPal",
-      "subtitle": "Launch your own PayPal-style app with global payment support, digital invoicing, and cross-border fund transfers. We deliver PayPal-like wallet apps built for both businesses and individuals, equipped with balance holding, instant transfer, dispute management, and multi-currency processing."
+      "title": "Crypto Wallet App Development",
+      "subtitle": "Our blockchain-powered crypto wallet app development solutions support multi-currency storage, fast coin transfers, and trading features. A secure eWallet app development choice for modern cryptocurrency platforms."
     },
     {
       "num": "05",
-      "title": "Mobile Payment App like Cash App",
-      "subtitle": "Want to develop a fast-growing peer-to-peer payment app like Cash App? Our custom Cash App clone features include instant money transfers, Bitcoin trading, investment options, and direct deposit services. Ideal for fintech startups aiming to disrupt the mobile payment space."
+      "title": "Banking Wallet App Development",
+      "subtitle": "We develop advanced banking wallet apps with balance check, KYC verification, bill payments, and card management, ensuring high-level security for trusted mobile wallet app development services."
     },
     {
       "num": "06",
-      "title": "Custom Payment App like Walmart Pay",
-      "subtitle": "Build a custom payment solution like Walmart Pay tailored to your retail business. We develop in-store wallet solutions that support QR code scanning, loyalty rewards, and seamless in-app payments—designed to enhance user convenience while increasing brand loyalty and sales."
+      "title": "Prepaid Wallet App Development",
+      "subtitle": "Our prepaid wallet apps let users add, store, and spend funds easily. A smart digital wallet app development solution for gift cards, employee benefits, and online purchase systems."
     }
   ],
+
 
 
   "myList4": [
@@ -389,16 +487,14 @@
     "On Time Delivery",
     "Professionals Who Have Worked With All Industry Verticals"
   ],
-
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Unique Features of a Blockchain-Based Dating App",
       "desc": "We offer <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain-based dating app development</a>  to ensure security, privacy, and a scam-free dating experience."
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Decentralized Identity & Profile Verification",
       "desc": "Blockchain verifies user identities securely, preventing fake profiles and bots. This ensures only real people can join the platform, making dating safer."
@@ -420,8 +516,6 @@
       "desc": "Blockchain’s fraud detection and smart contract security help prevent scams, catfishing, and identity theft, making dating safer for everyone."
     }
   ],
-
-
   "WhyChoosed": [
     {
       "num": "1",
@@ -670,7 +764,6 @@
       "desc": "Our marketing efforts increase customers' dating app's clarity and downloads. We use social media, paid advertising, and other channels to effectively attract and keep users to operate growth and engagement."
     }
   ],
-
   "WhyChooseDating": [
     {
       "num": "1",
@@ -765,69 +858,67 @@
       "decs": "Comfygen has used Web3 tech to create augmented 3D graphics that help create a more humane and real life experience for users, giving the dating app an advantage over other apps in the virtual communication ecosystem.  "
     }
   ],
- "FoodAppMaker": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "AI/ML (Artificial Intelligence & Machine Learning)",
-    "decs": "We use AI and ML to implement intelligent fraud detection, user behavior prediction, and personalized transaction suggestions. These smart systems improve user engagement and security in eWallets with automated learning and real-time insights."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain Integration",
-    "decs": "Blockchain ensures unmatched security, transparency, and decentralization in your digital wallet app. Our team builds blockchain-based eWallets that facilitate secure crypto transactions, immutable records, and smart contract execution for complete trust."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/5g-technology.webp",
-    "title": "NFC (Near Field Communication)",
-    "decs": "NFC allows seamless contactless payments through smartphones and wearables. We integrate NFC to enhance user convenience by enabling tap-to-pay transactions that are fast, secure, and widely accepted at modern POS terminals."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-    "title": "Biometric Authentication",
-    "decs": "We boost app security with fingerprint scanning, facial recognition, and iris detection. Biometric authentication offers a frictionless yet highly secure login experience—preventing unauthorized access while adding a personal touch."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "Cloud Integration",
-    "decs": "Comfygen ensures your wallet apps are scalable and accessible from any device with secure cloud infrastructure. Cloud integration allows fast syncing, real-time backup, and smooth deployment for uninterrupted wallet usage."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-qr-code-technology.svg",
-    "title": "QR Code Technology",
-    "decs": "Enable users to scan and pay instantly using dynamic or static QR codes. Our QR solutions streamline in-store payments, P2P transfers, and merchant billing with fast, error-free transactions."
-  },
-  {
-    "num": "7",
-    "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-voice-activated-commands.svg",
-    "title": "Voice-Activated Commands",
-    "decs": "We add voice functionality to enable hands-free operations in digital wallets. From checking balances to initiating transfers, users can perform key actions using secure voice recognition systems."
-  }
-],
-
- "customTestimonials": [
-  {
-    "text": "Comfygen delivered a seamless digital wallet app for our fintech startup. The user interface is intuitive, and the security features are rock-solid. Their team truly understands the U.S. market.",
-    "name": "Emily Rogers",
-    "title": "California"
-  },
-  {
-    "text": "We hired Comfygen to build a custom digital wallet for our retail business, and the results were outstanding. They delivered a high-performance solution that works flawlessly across devices.",
-    "name": "Olivia Martinez",
-    "title": "USA"
-  },
-  {
-    "text": "From planning to deployment, the Comfygen team showed great attention to detail. Their developers built a powerful eWallet app with all the features we needed. Highly recommended!",
-    "name": "Rohan Sharma",
-    "title": "India"
-  }
-],
-
+  "FoodAppMaker": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "AI (Artificial Intelligence) Integrates",
+      "decs": "We provide <a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI-powered eWallet app development</a> to improve fraud detection, offer smart spending insights, enable personalised rewards, and make payment experiences faster, safer, and more convenient for users."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Integration for Secure Wallet Transactions",
+      "decs": "Our <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>blockchain-enabled eWallet app development</a> ensures transparency, decentralized data storage, and tamper-proof transactions. Perfect for crypto wallet apps and high-security payment solutions."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "title": "NFC (Near Field Communication) for Contactless Payments",
+      "decs": "We integrate NFC technology in eWallet apps for tap-to-pay contactless transactions. Users can make fast and secure in-store payments by simply tapping their smartphones on NFC-enabled devices."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "title": "Biometric Authentication for Strong Security",
+      "decs": "Biometric authentication strengthens security in mobile wallet apps using Face ID and fingerprint login. It protects sensitive financial data and ensures only verified users can access payment features."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Cloud Integration for Scalable Wallet Apps",
+      "decs": "Cloud integration boosts the performance of eWallet applications with real-time data sync, secure storage, faster processing, and easy scalability. It helps businesses manage more users without performance issues."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-qr-code-technology.svg",
+      "title": "QR Code Technology for Easy Payments",
+      "decs": "QR code integration allows users to scan and pay within seconds. It supports secure transactions in shops, online delivery, and P2P payments without the need for cards or cash."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-voice-activated-commands.svg",
+      "title": "Voice-Activated Commands for Hands-Free Payments",
+      "decs": "Voice command features let users perform actions like checking their balance or sending money using voice assistants. It brings hands-free digital payments and better accessibility to wallet apps."
+    }
+  ],
+  "customTestimonials": [
+    {
+      "text": "Comfygen delivered a seamless digital wallet app for our fintech startup. The user interface is intuitive, and the security features are rock-solid. Their team truly understands the U.S. market.",
+      "name": "Emily Rogers",
+      "title": "California"
+    },
+    {
+      "text": "We hired Comfygen to build a custom digital wallet for our retail business, and the results were outstanding. They delivered a high-performance solution that works flawlessly across devices.",
+      "name": "Olivia Martinez",
+      "title": "USA"
+    },
+    {
+      "text": "From planning to deployment, the Comfygen team showed great attention to detail. Their developers built a powerful eWallet app with all the features we needed. Highly recommended!",
+      "name": "Rohan Sharma",
+      "title": "India"
+    }
+  ],
   "Chartacterstics": [
     {
       "num": "1",

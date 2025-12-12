@@ -449,25 +449,30 @@ const Finance = [
 const Finance1 = [
 
   {
-    num: "8",
+    num: "9",
     name: "Credit Scoring App Development",
     url: "/credit-scoring-app-development",
   },
   {
-    num: "9",
+    num: "10",
     name: "P2P Payment App Development",
     url: "/p2p-payment-app-development",
   },
   {
-    num: "10",
+    num: "11",
     name: "Car Finance App Development",
     url: "/car-finance-app-development",
   },
   {
-    num: "11",
+    num: "12",
     name: "Truck Finance App Development",
     url: "/truck-finance-app-development",
   },
+   {
+    num: "13",
+    name: "eWallet App Development",
+    url: "/ewallet-app-development",
+  }
 ]
 
 
@@ -827,8 +832,6 @@ const Sports1 = [
 
 ];
 
-
-
 const Sports2 = [
 
   {
@@ -1063,11 +1066,7 @@ const cryptoDevelopment1 = [
     name: "Blockchain Wallet Development",
     url: "/blockchain-wallet-development",
   },
-  {
-    num: "26",
-    name: "eWallet App Development",
-    url: "/ewallet-app-development",
-  },
+
 
 
 ];

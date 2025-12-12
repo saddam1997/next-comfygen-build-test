@@ -83,7 +83,7 @@ const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
       </div>
 
       <div className="flex justify-center mt-4 space-x-2">
-        {slides.map((_, index) => (
+        {slides?.map((_, index) => (
           <span
             key={index}
             className={`w-8 h-8 flex justify-center items-center rounded-full text-white cursor-pointer transition-colors duration-300 

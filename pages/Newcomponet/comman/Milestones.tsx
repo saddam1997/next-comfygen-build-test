@@ -27,7 +27,7 @@ const Milestones = () => {
             name: "Clutch",
             rating: 4.8,
             logo: "https://www.comfygen.com/comfygen-images/food-delivery-app-development/clutch.svg",
-            link: "https://clutch.co/profile/comfygen"
+            link: "https://clutch.co/profile/comfygen-technologies"
         },
         {
             name: "D",

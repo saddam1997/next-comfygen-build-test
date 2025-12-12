@@ -20,7 +20,7 @@
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="space-y-4 text-center">
             <div className="flex flex-col justify-center text-center mx-auto">
-              <h2 className="py-2 text-2xl md:text-4xl font-semibold md:font-bold md:leading-[3rem] text-white capitalize lg:w-3/4 mx-auto">
+              <h2 className="py-2 text-2xl md:text-4xl font-semibold md:font-bold md:leading-[3rem] text-white  lg:w-3/4 mx-auto">
                 {heading}
               </h2>
               {/* Conditionally render subtitle */}

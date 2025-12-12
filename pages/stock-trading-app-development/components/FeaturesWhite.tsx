@@ -105,7 +105,7 @@ const AdvanceFunction: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 p-2 w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 border-2 rounded-full border-[#5556D1]/10">
-        {featuresData.map((feature) => (
+        {featuresData?.map((feature) => (
           <div
           onClick={() => handleButtonClick(feature)}
             key={feature.id}
@@ -126,12 +126,12 @@ const AdvanceFunction: React.FC = () => {
 
       {openedFeature && (
         <div className="items-center  mt-6 lg:w-[80%] w-full mx-auto p-4 grid grid-cols-1 lg:grid-cols-2">
-          {openedFeature.img && (
+          {openedFeature?.img && (
             <div className="my-4">
               <Image
                 className="mx-auto md:w-[80%]"
-                src={openedFeature.img}
-                alt={openedFeature.title}
+                src={openedFeature?.img}
+                alt={openedFeature?.title}
                 height={640}
                 width={373}
               />
@@ -139,7 +139,7 @@ const AdvanceFunction: React.FC = () => {
           )}
 
           <div className="mt-2 py-2 mx-4">
-            {openedFeature.additionalDetails.map((detail, index) => (
+            {openedFeature?.additionalDetails?.map((detail, index) => (
               <ul className="max-w-xl" key={index}>
                 <li className="py-4 border-b border-green-200 flex justify-start items-center gap-8">
                   {detail.emoji.startsWith("http") ? (

@@ -71,7 +71,7 @@ const ClientTestimonials = dynamic(() => import("../Newcomponet/SectionCompoent/
   ssr: true,
 });
 
-const Faq = dynamic(() => import( "../Newcomponet/SectionCompoent/Faq"), {
+const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
@@ -526,7 +526,7 @@ export default function ClinicalApp(props: any) {
                 Our Fuel Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-               Comfygen Technologies, a top-rated delivery app development company, our fuel delivery app development services crafted to help startups, enterprises, and fuel station owners digitise operations, boost customer convenience, and streamline delivery. With deep domain expertise and innovative tech, we create secure, scalable, and visually engaging on-demand fuel delivery apps tailored to the energy and logistics industry.
+                Comfygen Technologies, a top-rated delivery app development company, our fuel delivery app development services crafted to help startups, enterprises, and fuel station owners digitise operations, boost customer convenience, and streamline delivery. With deep domain expertise and innovative tech, we create secure, scalable, and visually engaging on-demand fuel delivery apps tailored to the energy and logistics industry.
               </p>
             </div>
             <div className="">
@@ -540,7 +540,7 @@ export default function ClinicalApp(props: any) {
 
 
         {/* <ContactFromCenter /> */}
-           <CallToAction
+        <CallToAction
           heading="Ready to Build Your Fuel Delivery App?"
           text="At Comfygen, we build simple and custom delivery apps for startups, small shops, and big businesses. From idea to launch, we take care of everything for you."
           buttonText="Get Started"
@@ -577,7 +577,7 @@ export default function ClinicalApp(props: any) {
 
 
         {/* <NewPanel /> */}
-     
+
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -628,7 +628,7 @@ export default function ClinicalApp(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our End-to-End Fuel Ordering App Development Process
+                Our End-to-End Fuel Ordering App Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
                 Comfygen Technologies is a result-oriented fuel delivery <a href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">mobile app development company</a>. Our custom fuel delivery app solutions are built using a structured and transparent process. We make sure that all our fuel delivery apps are high-performing, scalable, and user-friendly from concept to launch. Here’s how we develop your next AI fuel ordering app.

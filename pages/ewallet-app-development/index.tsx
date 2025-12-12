@@ -19,6 +19,9 @@ import {
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
+
+import PortfolioSec from "../componentsnew/PortfolioSec";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -107,9 +110,6 @@ const LatestTechnology = dynamic(
   { loading: loader, ssr: true }
 )
 
-
-
-
 const Process = [
   {
     title: "Discovery & Planning",
@@ -139,7 +139,7 @@ const Process = [
   {
     title: "Security & Compliance Implementation",
     description:
-      "We implement advanced security measures including encryption, biometric login, and PCI DSS compliance to ensure all transactions and user data remain secure.",
+      "We implement advanced security measures, including encryption, biometric login, and PCI DSS compliance to ensure all transactions and user data remain secure.",
   },
   {
     title: "Performance Optimization",
@@ -147,7 +147,6 @@ const Process = [
       "We continuously monitor and optimize the app to ensure fast loading times, smooth user experiences, and high scalability for growing user bases.",
   },
 ];
-
 
 const CardGridData = [
   {
@@ -224,6 +223,55 @@ const latesttech = [
     desc: "For fintech startups and enterprises, we offer centralized wallet development that ensures high performance, admin control, and fast transaction speeds—ideal for businesses handling large volumes of user transactions.",
   },
 ];
+
+
+const techDataForPage1 = {
+  All: [
+    {
+      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
+      head: "Retail eWallet App",
+      name: "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
+      num: "1",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "#",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
+      head:  "Crypto Wallet App",
+      name: "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
+      num: "2",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "#",
+    },
+    {
+      img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
+      head: "P2P Money Transfer App",
+      name: "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
+      num: "3",
+      icons: [
+        "https://www.comfygen.com/image/react-portfolio-icon.svg",
+        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
+        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
+        "https://www.comfygen.com/image/figma-portfolio-icon.png",
+        "https://www.comfygen.com/image/html-portfolio-icon.svg",
+      ],
+      buttonLink: "#",
+    }
+   
+  ],
+};
 
 
 
@@ -434,11 +482,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          eWallet App Development Company | Secure Digital Wallet Solutions
+          Top eWallet App Development Company in India
         </title>
         <meta
           name="description"
-          content="Launch a next-gen eWallet app with Comfygen, a leading digital wallet app development company. We build mobile eWallet solutions with UPI, NFC, blockchain, and biometric authentication to boost your fintech business growth."
+          content="Comfygen is a leading eWallet app development company offering secure, scalable digital wallet solutions. Build custom mobile wallets with advanced features, AI, NFC, and blockchain integration."
         />
         <link
           rel="canonical"
@@ -563,26 +611,26 @@ export default function Ecommerce(props) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-          <HeroSectionForAllPages
-            heading="Custom eWallet App Development Company for Startups & Enterprises"
-            ptag="Comfygen is a trusted eWallet app development company delivering secure, scalable, and future-ready digital wallet solutions. From mobile wallets and UPI apps to contactless payment solutions, we help startups, banks, and enterprises launch user-friendly eWallet apps with PCI-DSS compliance, AI-driven security, and seamless payment integrations."
-            li="SAdvanced Security & Compliance"
-            li1="Seamless Payment Integrations"
-            li2="Scalable & Custom Solutions"
-            li3="AI & Blockchain Powered"
-            li4=""
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-hero.webp"
-          />
+        <HeroSectionForAllPages
+          heading="Top eWallet App Development Company"
+          ptag="Build secure, fast, and user-friendly digital wallet apps with Comfygen. We are a trusted eWallet app development company in India delivering modern mobile wallet solutions for startups, enterprises, and fintech brands. From seamless payments to advanced security, we design smart eWallet apps that make digital transactions easier for everyone."
+          li="Advanced Security & Compliance"
+          li1="Seamless Payment Integrations"
+          li2="Scalable & Custom Solutions"
+          li3="AI & Blockchain Powered"
+          li4=""
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-hero.webp"
+        />
         <AboutSection
-          heading="Leading eWallet App Development Company for Startups & Enterprises"
-          description1="Whether you’re a startup ready to launch a cutting-edge digital wallet or an established enterprise looking to modernize your payment systems, Comfygen is your trusted partner for bespoke eWallet app development. We understand the dynamic fintech landscape and create custom eWallet solutions designed to meet your business’s unique requirements, helping you stay competitive and grow."
-          description2="Our experienced team of developers and fintech specialists focuses on delivering secure, scalable, and feature-rich eWallet apps. By leveraging the latest technologies such as biometric authentication, real-time transaction tracking, and seamless payment gateway integrations, we ensure a smooth and trustworthy user experience. At Comfygen, innovation meets functionality to power your digital wallet with secure transactions, enhanced user engagement, and effortless financial management."
+          heading="How Your eWallet App Can Make Money"
+          description1="Digital wallets earn revenue through multiple smart monetization models. They charge transaction fees on payments and money transfers. Many apps also partner with brands to offer promotions, earning commissions on cashback deals. Partner with the industry's leading eWallet app development company to help businesses add smart earning features that boost profits while improving user experience."
+          description2="Subscription plans, featured merchant listings, and bill payment charges help increase profits. Some eWallet apps even generate revenue through loans, interest on stored balances, and secure payment gateway services."
           imageSrc="https:/www.comfygen.com/comfygen-images/ewallet-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -593,10 +641,10 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Cutting-Edge eWallet App Development Services By Comfygen
+                Revolutionizing the Fintech Industry with Our Cutting-Edge eWallet App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Looking to build a secure, feature-rich, and scalable digital wallet? As a trusted eWallet app development company, Comfygen delivers tailor-made wallet solutions built for seamless transactions, advanced security, and user convenience. Explore our range of expert services below:
+                Looking to build a secure digital wallet? As a top-rated custom eWallet app development company, Comfygen delivers tailor-made eWallet app development services for seamless transactions, advanced security, and user convenience. Explore our range of expert services below:
               </p>
             </div>
             <div className="">
@@ -605,69 +653,76 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
+
+
+        <AppcardSlider
+          heading="eWallet App Clone Solutions We Provide"
+          description="Our expert fintech eWallet app developers specialize in creating powerful, feature-rich wallet clones of today’s most successful digital payment apps. Whether you want a mobile wallet clone, we deliver scalable and secure digital wallet solutions tailored to your business model."
+          sliderData={JSON_DATA.IndustriesServe}
+          openModal={openModal}
+        />
+
+        <div className="py-10">
+          <SolutionsFeature title="Types of eWallet Apps We Develop" subtitle="At Comfygen, we build different types of eWallet application development solutions to support every business model. Our digital wallet apps make sure secure transactions, seamless payments, and complete control for both users and merchants." data={JSON_DATA.LeadingSoftware} />
+        </div>
+
+
+        <PortfolioSec
+          techData={techDataForPage1}
+          heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
+          description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
+        />
+
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='3'
+            heading='What Makes Our Digital Wallet App Solutions Smarter?'
+            description='We design digital wallet apps that are easy to use, fully secure, and business-friendly. Each panel comes with the right tools to improve user experience and smooth daily operations.'
+            featuresData={JSON_DATA.featuresData}
+          />
+        </section>
+
+        <CallToAction
+          heading="Create a Next-Gen eWallet App With Comfygen"
+          text="Get scalable, secure, and fully customized eWallet development tailored to your business."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
         <CardGrid
           heading="Key Features of Our eWallet Apps"
           subheading="At Comfygen, we build high-performance digital wallet solutions that enhance convenience, security, and functionality. As a trusted eWallet app development company, we integrate top features to provide seamless financial services for your users."
           techData={CardGridData}
         />
 
-        <SolutionsFeature title="eWallet App Clone Solutions We Provide" subtitle="Our expert eWallet app developers specialize in creating powerful, feature-rich wallet clones of today’s most successful digital payment apps. Whether you want a clone of Google Pay, Amazon Pay, or Cash App, we deliver scalable and secure solutions tailored to your business model." data={JSON_DATA.LeadingSoftware} />
-
-
-        <section className=" lg:py-10 py-10">
-          <Features
-            grid='3'
-            heading=' Essential Features for Your Digital Wallet App Panel'
-            description='Creating a successful digital wallet app requires a robust set of features tailored for every user type—users, admins, and merchants. At Comfygen, we design each panel with functionality, security, and performance in mind to ensure the smooth operation and growth of your eWallet app development business.' 
-            featuresData={JSON_DATA.featuresData}
-            />
-        </section>
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our eWallet App Work"
-            description="Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
-          />
-        </section>
+        <TrendsSection
+          heading="Trending Technologies We Leverage for eWallet App Development Solution"
+          subtitle="At Comfygen, we combine innovation and security to build advanced eWallet app development solutions. By using the latest fintech technologies, we ensure safe transactions, seamless user experiences, and future-ready digital wallet systems for global businesses."
+          trends={JSON_DATA.FoodAppMaker}
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-             Our Complete Mobile Wallet Development Process
+                Our Complete Mobile Wallet App Development Process
               </h2>
               <p className="text-base text-center lg:w-2/3 mx-auto w-full">
                 Our mobile wallet app development process is built on innovation, precision, and performance, ensuring you receive a secure and user-centric eWallet app tailored to your business goals.
-
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
-
-
-
-
-        <LatestTechnology
-          heading="We Develop Many Types of Mobile Wallet Apps for Your Business Needs"
-          subheading="A successful mobile wallet app must be secure, fast, and tailored to your industry. At Comfygen, we deliver next-gen wallet app development solutions powered by the latest technologies to help businesses stay ahead in the digital payments space."
-          techData={latesttech}
-        />
-
-        <TrendsSection
-          heading="Emerging Technologies We Leverage for eWallet Application Development"
-          subtitle="At Comfygen, we harness the potential of cutting-edge technologies to build visually stunning, functionally sound, and high-performing eWallet applications. Our goal is to deliver wallet apps that are secure, scalable, and future-ready—tailored to meet the evolving expectations of your users."
-          trends={JSON_DATA.FoodAppMaker}
-        />
-
         <TechStack
           title="Technology Stack We Use for E-Wallet App Development"
           description="At Comfygen, we build powerful and future-ready digital wallet apps using robust and modern technologies. Our tech stack is carefully selected to ensure your mobile wallet app is secure, scalable, and high-performing across all platforms."
         />
-        <WhyChoose
+
+       <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
@@ -675,7 +730,7 @@ export default function Ecommerce(props) {
         />
         <HireDeveloper
           heading="Hire Mobile Wallet App Developers"
-          text="Looking to build a secure and scalable mobile wallet app? Hire dedicated eWallet app developers from Comfygen to turn your fintech vision into reality. Our experts specialize in delivering robust, feature-rich wallet solutions customized to your business needs. From P2P transfers to blockchain wallets—we've got you covered."
+          text="Looking to build a secure and scalable mobile wallet app? Hire dedicated <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>eWallet app developers</a> from Comfygen to turn your fintech vision into reality. Our experts specialize in delivering robust, feature-rich wallet solutions customized to your business needs. From P2P transfers to blockchain wallets—we've got you covered."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
@@ -684,10 +739,13 @@ export default function Ecommerce(props) {
             "10+ Years of Fintech Experience",
             "Flexible Hiring Models",
             "NDA & Source Code Ownership",
-            "Agile Development Approach",
+            "Agile Development Approach"
 
           ]}
         />
+
+
+ 
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
