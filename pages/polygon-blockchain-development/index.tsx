@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./polygonblockchain.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
@@ -87,6 +87,7 @@ import {
   IconUsers,
   IconUsersGroup,
 } from "@tabler/icons-react";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const technologyData = [
@@ -253,7 +254,7 @@ export default function Polygon(props) {
         />
       </Head>
 
-      <BlockchainNav/>
+      <BlockChainHeader/>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Polygon Blockchain Development Company"

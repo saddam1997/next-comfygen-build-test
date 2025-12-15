@@ -11,8 +11,8 @@ import {
   IconNetwork,
   IconTrendingUp,
 } from "@tabler/icons-react";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const AboutSection = dynamic(
@@ -894,7 +894,7 @@ export default function Blockchain(props) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[50px]">
         <HeroSectionForAllPages
           heading="Blockchain App Development Company"

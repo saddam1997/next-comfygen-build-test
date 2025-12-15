@@ -81,6 +81,7 @@ const Faq = dynamic(
 
 
 import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const technologyData = [
   {
@@ -466,7 +467,7 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
       
         <HeroSectionForAllPages

@@ -13,6 +13,7 @@ import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
 import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
 import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 import Faq from "../Newcomponet/SectionCompoent/Faq"
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const Process = [
   {
@@ -171,7 +172,7 @@ export default function MultiChain(props) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[115px]">
         <HeroSectionForAllPages
           heading="DeFi Smart Contract Development services"

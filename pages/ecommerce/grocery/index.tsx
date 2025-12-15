@@ -98,6 +98,7 @@ import HireDeveloperSec from "../../components/HireDeveloperSec";
 
 import DeliverySection from "../../components/DeliverySection";
 import Slider from "../../components/Slider";
+import EcommerceHeader from "../../Newcomponet/layout/EcommerceHeader";
 
 
 
@@ -570,7 +571,7 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceNav />
+      <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Grocery Delivery App Development Company in India"

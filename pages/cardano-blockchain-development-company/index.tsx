@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cardano.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const AboutSection = dynamic(
@@ -365,7 +366,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Best Cardano Blockchain Development Company"

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/substrate.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
@@ -84,6 +84,7 @@ import {
   IconStar,
   IconUsers,
 } from "@tabler/icons-react";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const Process = [
   {
@@ -345,7 +346,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
 
         <HeroSectionForAllPages

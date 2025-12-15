@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const loader = () => (
@@ -951,7 +952,7 @@ export default function rummy(props:any) {
         />
       </Head>
       <div className="">
-        <BlockchainNav />
+        <BlockChainHeader />
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages

@@ -7,6 +7,7 @@ import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -623,7 +624,7 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="POW Blockchain Development Company"

@@ -7,6 +7,7 @@ import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionFo
 
 
 import dynamic from "next/dynamic";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const AboutSection = dynamic(
   () => import("../Newcomponet/SectionCompoent/AboutSection"),
@@ -315,7 +316,7 @@ export default function Blockchain(props: any) {
       </Head>
 
       <div className="">
-        <BlockchainNav />
+        <BlockChainHeader />
       </div>
 
       <div className="overflow-hidden lg:pt-[100px]">

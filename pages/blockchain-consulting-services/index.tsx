@@ -16,8 +16,9 @@ import {
   IconChartBar,
 } from "@tabler/icons-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const AboutSection = dynamic(
   () => import("../Newcomponet/SectionCompoent/AboutSection"),
@@ -490,7 +491,7 @@ export default function rummy(props) {
         />
       </Head>
       <div className="">
-        <BlockchainNav />
+        <BlockChainHeader />
       </div>
 
       <div className="overflow-hidden lg:pt-[100px]">

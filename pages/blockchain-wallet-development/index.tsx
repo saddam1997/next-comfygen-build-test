@@ -4,8 +4,9 @@ import Head from "next/head";
 import JSON_DATA from "./json/blockchain.json";
 import dynamic from "next/dynamic";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers, IconWallet } from "@tabler/icons-react";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar"
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -551,7 +552,7 @@ export default function Blockchain(props) {
       </Head>
 
       <div className="">
-        <BlockchainNav />
+        <BlockChainHeader />
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages

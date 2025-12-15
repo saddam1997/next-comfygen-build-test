@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stellar.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const AboutSection = dynamic(
@@ -524,7 +525,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Stellar Blockchain Development Company"

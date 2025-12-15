@@ -3,8 +3,9 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import JSON_DATA from "./ecommerce.json";
-import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar";
+// import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import EcommerceHeader from "../Newcomponet/layout/EcommerceHeader";
 
 const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -460,7 +461,7 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceNav />
+      <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
             heading="eCommerce Development Company"

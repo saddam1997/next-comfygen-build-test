@@ -78,6 +78,7 @@ const Faq = dynamic(
 
 import { IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
 import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 
@@ -712,7 +713,7 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages

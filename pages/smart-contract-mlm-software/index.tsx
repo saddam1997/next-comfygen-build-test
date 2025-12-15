@@ -14,8 +14,9 @@ import {
   IconDeviceMobile,
   IconLanguage,
 } from "@tabler/icons-react";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -385,7 +386,7 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
 

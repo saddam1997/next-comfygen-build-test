@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractdev.json";
 import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const loader = () => (
@@ -505,7 +506,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages

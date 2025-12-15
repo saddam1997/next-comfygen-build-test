@@ -73,6 +73,7 @@ const Faq = dynamic(
 
 
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -188,11 +189,6 @@ export default function MultiChain(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-
-
-
-
-
 
   const jsonLdData = [
     {
@@ -526,7 +522,7 @@ export default function MultiChain(props) {
         />
 
       </Head>
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
           heading="Best MultiChain Blockchain Development Company"

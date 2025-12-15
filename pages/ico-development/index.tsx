@@ -2,8 +2,9 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/icodevelopment.json";
 import { useState } from "react";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 const loader = () => (
@@ -482,7 +483,7 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[115px]">
 
 

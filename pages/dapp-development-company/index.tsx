@@ -4,7 +4,7 @@ import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
 
@@ -93,6 +93,7 @@ import {
   IconSettings,
   IconBell,
 } from "@tabler/icons-react";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 
@@ -523,7 +524,7 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp')]">
           <HeroSectionForAllPages

@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 
 import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import EcommerceHeader from "../Newcomponet/layout/EcommerceHeader";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -328,7 +329,7 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      <EcommerceNav />
+      <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Affordable Custom E-commerce App Development Services in India"

@@ -85,6 +85,7 @@ const Faq = dynamic(
 // import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 // import Faq from "../Newcomponet/SectionCompoent/Faq";
 import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 
 
 
@@ -613,7 +614,7 @@ export default function Blockchain(props: any) {
         />
 
       </Head>
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Hyperledger Blockchain Development Service "

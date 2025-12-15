@@ -7,6 +7,7 @@ import JSON_DATA from "./fmcg.json";
 
 import EcommerceNav from "../../Newcomponet/layout/ecommerce-navbar"
 import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import EcommerceHeader from "../../Newcomponet/layout/EcommerceHeader";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -500,7 +501,7 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceNav />
+      <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="FMCG Delivery App Development Company"
