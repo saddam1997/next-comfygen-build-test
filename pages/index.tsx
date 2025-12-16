@@ -7,15 +7,6 @@ import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
-import Portfolio from "./Newcomponet/SectionCompoent/Portfolio";
-import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
-// import Herosection from "./Newcomponet/home/Herosection";
-// import Aboutsection from "./Newcomponet/home/component/Aboutsection";
-// import Services from "./Newcomponet/home/component/Services";
-// import IndustriesWeServe from "./Newcomponet/home/component/IndustriesWeServe";
-// import Portfolios from "./Newcomponet/home/component/Portfolios";
-// import ImageSlider from "./Newcomponet/home/component/ImageSlider";
-
 
 
 
@@ -43,10 +34,18 @@ const TechStack = dynamic(() => import("./Newcomponet/SectionCompoent/TechStack"
   ssr: true,
 });
 
+const Portfolio = dynamic(() => import("./Newcomponet/SectionCompoent/Portfolio"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
 const WhyChoose = dynamic(() => import("./Newcomponet/SectionCompoent/WhyChooseUs"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
+
+
 
 const HireDeveloper = dynamic(() => import("./Newcomponet/SectionCompoent/HireDeveloper"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
@@ -105,7 +104,7 @@ export default function Home(props: any) {
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
       "title": "Great Wallet Application",
-      "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money. Embrace a cashless lifestyle with confidence and convenience. Your financial future, simplified.",
+      "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money.",
       "link": "#"
     },
     {
@@ -332,7 +331,7 @@ export default function Home(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
-      <div style={{ height: '80px', }}>
+      <div >
         <Header />
       </div>
 
@@ -385,8 +384,7 @@ export default function Home(props: any) {
       </div> */}
 
 
-       <div className="overflow-hidden">
-
+       <div className="overflow-hidden lg:pt-[120px]">
         <div className="relative">
           <HeroSectionHomePage
             heading={typedText}

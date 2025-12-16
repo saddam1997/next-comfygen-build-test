@@ -90,7 +90,7 @@ export default function HeroSection(props: any) {
           src={bgImage}
           alt="Hero Background"
           fill
-          priority         // 🚀 loads instantly
+          priority        
           quality={80}
           className="object-cover object-center"
           sizes="100vw"

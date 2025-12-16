@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 
 
-import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar"
+// import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import EcommerceHeader from "../Newcomponet/layout/EcommerceHeader";
 

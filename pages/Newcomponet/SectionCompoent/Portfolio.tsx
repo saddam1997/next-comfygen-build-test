@@ -8,6 +8,8 @@ import React from 'react';
 
 function Portfolio({ projects, heading, description }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % projects.length);
@@ -17,11 +19,13 @@ function Portfolio({ projects, heading, description }) {
     setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
   };
 
+
   // ✅ Stable interval
   useEffect(() => {
+    if (isHovered) return;
     const slideInterval = setInterval(nextSlide, 3000);
     return () => clearInterval(slideInterval);
-  }, [projects.length]);
+  }, [projects.length, isHovered]);
 
   return (
     <div className="bg-[#F5F5F9] py-12 px-4">
@@ -41,7 +45,11 @@ function Portfolio({ projects, heading, description }) {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {projects?.map((project: any, index: any) => (
-                <div key={index} className="w-full flex-shrink-0 py-5">
+                <div
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  key={index}
+                  className="w-full flex-shrink-0 py-5 cursor-pointer">
                   <div className="border rounded-3xl shadow-xl md:p-12 mx-4">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div>
@@ -112,8 +120,8 @@ function Portfolio({ projects, heading, description }) {
               >
                 <span
                   className={`block w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
-                      ? 'bg-indigo-600 w-8' // active indicator larger
-                      : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-indigo-600 w-8' // active indicator larger
+                    : 'bg-gray-300 hover:bg-gray-400'
                     }`}
                 />
               </button>
