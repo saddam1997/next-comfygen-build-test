@@ -902,8 +902,8 @@ export default function ClinicalApp(props: any) {
         />
 
         <IndustriesServe
-          heading="Industries We Serve with Web3 Wallet Development"
-          description="Comfygen’s Web3 wallet development services allow businesses across multiple industries to adopt decentralized technologies and improve digital asset management, transparency, and user engagement. Our expertise in blockchain and Web3 integration helps enterprises build customized wallet solutions tailored to their industry-specific needs."
+          heading="Ecommerce App Development for Different Industries"
+          description="Every industry has its own workflows, customer behavior, and operational challenges. That’s why our ecommerce app development services are tailored to meet the specific needs of different business verticals, not forced into a one-size-fits-all solution."
           sliderData={JSON_DATA.IndustriesServe}
         />
 

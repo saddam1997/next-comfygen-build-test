@@ -430,12 +430,12 @@ export default function Ecommerce(props: any) {
       <Head>
 
         <title>
-          Cryptocurrency Wallet Development Company | Crypto wallet development solution
+        Crypto wallet development company | Secure Cryptocurrency Wallet Solutions
         </title>
 
         <meta
           name="description"
-          content="Develop AI-powered cryptocurrency wallet with Comfygen. Our Blockchain development experts team develop secure, scalable, and intelligent crypto wallets with real-time analytics, and advanced encryption."
+          content="Comfygen crypto wallet development services enhanced with AI. Our experienced blockchain developers build secure, scalable, and smart wallets featuring real-time analytics and enterprise-level encryption."
         />
         {/* keywords */}
         <meta name="keywords" content="AI Crypto Wallet Development, Cryptocurrency Wallet Development, Crypto Wallet Development, Smart Wallet Analytics, Fraud Detection with AI, Custom AI Crypto Wallet Solutions, Blockchain Wallet Security Solutions, DeFi Wallet Integration, Multi-Chain Crypto Wallets, AI-Driven Transaction Monitoring, Biometric Authentication Wallets, Predictive Analytics for Crypto Wallets, Crypto Wallet App Development, AI in Blockchain Security, White-Label Crypto Wallet Solutions, Crypto Wallet for Fintech Startups, AI-Based Cold Wallet Solutions, AI-Based Hot Wallet Solutions" />
@@ -532,12 +532,12 @@ export default function Ecommerce(props: any) {
         {/* hero section */}
         <HeroSectionForAllPages
           heading="AI-Powered Cryptocurrency Wallet Development Company"
-          ptag="Build secure, intelligent, and scalable crypto wallets with Comfygen. Comfygen’s crypto wallet development experts integrate AI, Blockchain, and Web3 technology to create crypto wallets that analyze trends, detect fraud, and enhance user experience in real time."
+          ptag="Empower your users with next-generation crypto wallet development services that combine advanced blockchain security, seamless user experience, and multi-chain support. Whether you need a custom crypto wallet app, DeFi wallet, or NFT-compatible digital wallet, our blockchain development experts deliver tailor-made crypto wallet development solutions for startups and enterprises alike."
           ptag1=""
-          li="AI-Powered Security"
-          li1="Multi-Chain Compatibility"
-          li2="Smart Analytics"
-          li3="Seamless User Experience"
+          li="Enterprise-Grade Security"
+          li1="Multi-Currency & Multi-Chain Support"
+          li2="White-Label Crypto Wallet Development"
+          li3="AI-Driven Fraud Detection & Analytics"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -548,15 +548,16 @@ export default function Ecommerce(props: any) {
         />
 
         <AboutSection
-          heading="Global Growth of the Crypto Wallet Market"
-          description1="The global crypto wallet market is growing rapidly, expected to exceed USD 45 billion by 2030 with a CAGR of over 25%. This growth is fueled by the rising adoption of cryptocurrencies, DeFi, NFTs, and Web3 applications. Modern crypto wallets now go beyond asset storage, offering multi-currency management, DeFi integration, and advanced security features — meeting the global demand for secure, scalable, and user-friendly digital asset solutions."
-          description2="Comfygen top-rate <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-600'>wallet development company</a> , built crypto wallets according to growing global demand. We design secure, scalable, and customizable wallets that feature multi-signature authorization, MPC (multi-party computation), cold storage integration, and next-generation encryption standards. Whether you’re building a DeFi platform, exchange, or NFT marketplace, our wallet infrastructure ensures your users enjoy unmatched security, smooth transactions, and effortless scalability — empowering your business to stay ahead in the fast-moving digital asset landscape."
+          heading="Why Your Business Needs a Cryptocurrency Wallet"
+          description1="In today’s digital world, <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-600 font-semibold'>wallet development</a> is essential for every type of business because wallets are not only used for storing cryptocurrency but also a gateway to the decentralized world of finance. Whether you run a fintech startup, an e-commerce platform, or a blockchain-based business, a custom cryptocurrency wallet development service helps your business securely manage digital transactions, increase transparency, and build trust among users."
+          description2=""
           description3=""
           points={[
-            "Smarter Security",
-            "Predictive Insights ",
-            "Personalized Experience",
-            "Automated Management"
+            "Secure Digital Asset Management",
+            "Faster & Borderless Payments",
+            "Integration with DeFi & Web3 Ecosystems",
+            "Brand Credibility & Innovation",
+            "New Revenue Opportunities"
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about.webp"
           link="/about-us"
