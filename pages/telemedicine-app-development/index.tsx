@@ -14,6 +14,8 @@ import { IconCashBanknote, } from "@tabler/icons-react";
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -25,6 +27,10 @@ const AboutSection = dynamic(
 );
 
 const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const BusinessSolustion = dynamic(() => import("../Newcomponet/SectionCompoent/BusinessSolustion"),
   { loading: loader, ssr: true }
 );
 
@@ -117,39 +123,39 @@ const technologyData = [
 ];
 const Process = [
   {
-    title: "Requirement Collection",
+    title: "Requirement Analysis & Project Planning",
     description:
-      "We begin every telemedicine app development project by collecting information about the app's requirements. Some of the essential aspects we focus on in this phase include telemedicine app features, development of product ideas, and establishing the software and compliance requirements."
+      "We start the <a href='https://www.comfygen.com/blog/telemedicine-app-development-benefits-process-features-and-cost' class='text-blue-600 font-semibold'>telemedicine app development process</a> by understanding your business model, target users, and healthcare requirements. Our experts analyze features, compliance needs, and app goals to create a clear development roadmap that reduces risk and ensures smooth execution."
   },
   {
-    title: "Project Planning",
+    title: "UI/UX Design for User-Friendly Experience",
     description:
-      "The project planning stage helps us create the foundation on which we would build your telemedicine app project. We specialize in custom telemedicine app development with the help of comprehensive project planning that involves identification of the project scope, KPI planning, budget planning, and risk assessment."
+      "Our design team creates simple, intuitive, and engaging <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX for a telemedicine mobile app solution</a>. We focus on easy navigation, quick access to consultations, and a smooth user journey for patients, doctors, and administrators across all devices."
   },
   {
-    title: "UX/UI Design",
+    title: "Backend & Frontend Telemedicine App Development",
     description:
-      "We aim to develop telemedicine apps that can cater to the preferences of the end user in different scenarios. Our success in projects to develop telemedicine apps stems from our expertise in UI prototyping and design. On top of that, we also visualize the core functionalities of telehealth applications, map user journeys, and identify important user scenarios for UX design."
+      "In this stage, our qualified and talented telehealth application developers build a strong backend and responsive frontend for your telemedicine app. We ensure fast performance, secure data handling, and seamless real-time communication using modern technologies for reliable telehealth app development."
   },
   {
-    title: "Development and Deployment",
+    title: "API & Third-Party Integration",
     description:
-      "The core element in the process to create a telemedicine app emphasizes development and deployment. In this stage, we create the server and user-facing components of the app with backend and frontend coding. Furthermore, we implement comprehensive testing to verify compliance, usability, security, and functional behavior of the app. In addition, we will implement a pilot roll-out for focus groups to implement improvements before the launch."
+      "We integrate essential APIs and third-party tools such as video calling, payment gateways, EHR systems, and e-prescriptions. These integrations enhance app functionality and enable smooth, connected, and feature-rich telemedicine software development."
   },
   {
-    title: "Integration of Advanced Features",
+    title: "Security Testing & Healthcare Compliance",
     description:
-      "To enhance the functionality of your telemedicine app, we incorporate advanced features such as AI-powered chatbots for virtual assistance, real-time video consultations, and secure payment gateways. This ensures a user-friendly and feature-rich app experience."
+      "Security is a priority in your telemedicine apps. We perform rigorous testing to ensure HIPAA, GDPR, and healthcare compliance. Here, we have qualified telemedicine app developers. Our team checks data encryption, access control, and system vulnerabilities to protect sensitive patient information."
   },
   {
-    title: "Performance Monitoring and Optimization",
+    title: "Telemedicine App Deployment",
     description:
-      "Post-deployment, we monitor the app’s performance to analyze user feedback and system efficiency. By tracking key metrics, we continuously optimize the app to deliver seamless functionality, scalability, and responsiveness, ensuring its long-term success."
+      "Once development and testing are complete, we deploy your telemedicine application on secure cloud servers or app stores. Our first-class telemedicine app development company for startups ensures smooth launch, proper configuration, high performance, and readiness for real-world healthcare operations."
   },
   {
-    title: "Support and Maintenance",
+    title: "Ongoing Support & Maintenance",
     description:
-      "We also emphasize continuous support and maintenance services in our process of developing telemedicine apps. It helps us ensure seamless evolution of your telemedicine app according to emerging trends and security risks. Our experts implement software security audits and roll out new features in regular maintenance routines to keep your app updated."
+      "Our custom mobile app development services include continuous support after launch. We provide regular updates, bug fixes, security improvements, and feature enhancements to keep your telehealth app scalable, compliant, and aligned with changing healthcare and business needs."
   }
 ];
 
@@ -414,10 +420,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Telemedicine App Development Company | HIPAA-Compliant Telehealth Solutions </title>
+        <title>Telemedicine App Development Company in India | Custom Telehealth Apps</title>
         <meta
           name="description"
-          content="Comfygen is a leading telemedicine app development company offering secure, HIPAA-compliant telehealth solutions for hospitals, clinics, and startups. Build your custom healthcare app today! "
+          content="Looking for a telemedicine app development company in India? We build secure, HIPAA-compliant telehealth apps with video consultation, AI features, and scalable solutions. Get started today."
         />
         <meta
           name="keywords"
@@ -513,7 +519,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Telemedicine App Development Company "
-          ptag="Comfygen helps doctors, clinics, and hospitals build easy-to-use telemedicine apps that connect them to patients anywhere. Our telemedicine app development company creates custom solutions that are safe, simple, and feature modern functionalities such as video calls, appointment booking, and online prescription management. We offer world-class telemedicine mobile app development services that are compliant with healthcare laws, including HIPAA, helping providers and patients work more efficiently."
+          ptag="Telemedicine app development helps healthcare providers deliver secure online consultations through mobile and web platforms. As a trusted telemedicine app development company, Comfygen offers custom telehealth app development services for hospitals, clinics, and startups. Our HIPAA-compliant telemedicine app development solutions include video consultations, chat, e-prescriptions, and remote monitoring, enabling scalable, user-friendly, and secure digital healthcare growth."
           li="AI-Powered Features for Better Care"
           li1="Safe & HIPAA-Compliant"
           li2="Easy-to-Use Design for Everyone"
@@ -530,10 +536,15 @@ export default function Ecommerce(props) {
         />
 
         <AboutSection
-          heading="Most Trusted Telemedicine App Development Company"
-          description1="Comfygen has always strived to serve as a valuable companion on your journey to achieve digital transformation. With our experience in telehealth app development, we are prepared to take on any new challenge that comes our way. We have strengthened our reputation as a trusted app development company with more than 300 successfully completed projects and over 250+ happy clients. Our expertise in telemedicine software development revolves around the 15+ years of professional experience of our app developers."
-          description2="We stand out as the first choice to create a telemedicine app and embrace the benefits of technology in healthcare at cost-effective prices with the assurance of distinctive advantages over your competitors."
-
+          heading="What Is a Telemedicine App?"
+          description1="A telemedicine app is a digital healthcare platform that enables online doctor consultations using video calls, voice calls, chat, and e-prescriptions. These apps help patients consult doctors remotely, book appointments, receive prescriptions, and access medical reports without visiting hospitals. Telemedicine app development plays a vital role in modern digital healthcare systems by improving access, speed, and care quality."
+          description2="Telemedicine Market Stats & Insights"
+          points={[
+            "Over 70% of patients prefer online doctor consultations for non-emergency healthcare needs.",
+            "The global telemedicine market is growing at 20%+ CAGR, driven by digital healthcare adoption.",
+            "60% of healthcare providers use telemedicine software to improve patient engagement.",
+            "Remote consultations can reduce hospital visits by up to 40%, saving time and costs."
+          ]}
           imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-about.webp"
           link="/about-us"
           linkText="Explore More"
@@ -542,7 +553,7 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Comprehensive Telemedicine App Development Services
+                We Provide Affordable Telemedicine App Development Services
               </h2>
               <p className="text-base text-center font-normal">
                 We offer a complete range of telemedicine app development services to meet the diverse needs of healthcare providers and patients. Our innovative telemedicine mobile app development solutions are designed to enhance patient care, improve workflows, and ensure compliance with the latest healthcare regulations.
@@ -554,60 +565,43 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-
-        <CryptoTradingList
-          heading="Best-in-Class Custom Telemedicine App Development Solutions"
-          subtitle="Comfygen has been the beacon of excellence as one of the top telemedicine app development solution providers with proven experience in this domain. We want to reinvent the wheel in the field of telemedicine with our innovative apps tailored to perfection according to your requirements. Our collection of custom telehealth app development solutions can establish the foundations for new experiences for all users in healthcare."
-          trends={JSON_DATA.LeadingSoftware}
-        />
-
-        <div className="py-8">
-          <Features
-            heading="Features We Implement in Your Telemedicine Mobile App to Make it Stand Out"
-            description="Our telemedicine app development company focuses on creating apps that deliver seamless experiences for patients, doctors, and administrators. Here’s a look at the key features we include in your telemedicine app development solutions to ensure they stand out:"
-            featuresData={JSON_DATA.featuresData}
-            grid={3} />
-        </div>
+        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/aI-Powered-telemedicine-app-development-solution.webp"/>
 
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Telemedicine App Work"
-            description="Explore our advanced telemedicine app development portfolio, featuring secure and user-friendly solutions for healthcare providers and patients. Partner with us to launch digital health solutions that deliver exceptional care and efficiency."
+            heading="Check Out Our Telemedicine App Project That We Delivered To Our Client"
+            description="Discover our portfolio of advanced telemedicine apps, designed for healthcare providers and patients alike. Partner with the industry's leading enterprise telemedicine app development company that has developed digital health solutions that provide the best care and efficiency."
           />
         </section>
 
-        <TechStack
-          title="Technology Stack We Use for Telemedicine App Development"
-          description="Our telemedicine app development company uses a modern, robust technology stack to build high-performing, secure, and feature-rich healthcare applications. Here’s a glimpse of the core tools we rely on:"
-          filterCategory={["crypto"]}
-        />
+        <div className="py-8">
+          <Features
+            heading="Essential Features Every Telemedicine App Must Have for Better Patient Care"
+            description="At our top-rated telemedicine app development agency in India, we specialize in creating cutting-edge apps that provide seamless interactions for patients, doctors, and administrators. Our telemedicine solutions are designed to enhance efficiency, accessibility, and user experience. Below are the essential features we implement to ensure your app stands out in the market"
+            featuresData={JSON_DATA.featuresData}
+            grid={3} />
+        </div>
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-feature.webp"
-          buttonText="Let’s Discuss"
+        <CallToAction
+          heading="Start Your Telemedicine App Development Project Today"
+          text="Looking to build a secure and scalable telemedicine app? Comfygen is your trusted partner for custom telemedicine app development services."
+          buttonText="Get Started"
           buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
         />
-
-        {/* <PointsCardBg
-          heading="Diverse Functionalities in Telemedicine Apps for Everyone"
-          description=""
-          items={JSON_DATA.WhyChooseUs}
-          buttonText="Explore More"
-          buttonLink="/contact-us"
-        /> */}
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+              <div className="flex flex-col justify-center text-center lg:container mx-auto space-y-2">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Choose Your Desired Engagement Models for Our Services
+                  How We Ensure Data Privacy & Security in Telemedicine App Development
                 </h2>
                 <p>
-                  Comfygen offers the flexibility to choose any engagement model that fits your needs and taps into the potential of our telehealth development services. You can pick any engagement model for telemedicine app development with us by your side.
+                  Security and privacy are essential in <a href='https://www.comfygen.com/blog/telemedicine-app-development-guide/' className="text-blue-600 font-semibold">Telemedicine App Development</a> as healthcare apps handle sensitive patient data. At Comfygen, we build secure, HIPAA-compliant telemedicine apps that protect medical information, prevent data breaches, and ensure safe doctor–patient communication.
+
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
@@ -630,41 +624,78 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Emerging Technologies Powering Advanced Telemedicine App Development Solutions
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  At Comfygen, we use the latest emerging technologies to build secure, intelligent, and scalable <a href="https://www.comfygen.com/blog/guide-to-telehealth-app-development/" className="underline font-semibold">telehealth app development solutions</a>. By integrating advanced digital technologies, we help healthcare providers deliver smarter virtual care, improve patient engagement, and ensure long-term system reliability.
+                </p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem: any) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+
+                        <h3 className="sm:text-2xl text-xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p className="break-all text-white text-sm sm:text-base" dangerouslySetInnerHTML={{ __html: decs }}>
+
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Methodology for Telemedicine App Development
+                HIPAA-Compliant Telemedicine App Development Process We Follow
               </h2>
               <p className="text-base font-normal mt-2">
-                We follow a strategic approach in our methodology to create telemedicine applications that cater to the needs of our clients. Our telemedicine app development services have always contributed to the success of our customers with new advantages. The trusted methodology allows us to fulfill every client requirement while creating an efficient, productive, and feature-rich telemedicine app
+                Our Brilliant <a href='https://www.comfygen.com/healthcare-app-development' className="text-blue-600 font-semibold">healthcare app development company</a> that builds next-gen telemedicine apps. Our telemedicine app development process is designed to deliver secure, scalable, and high-performing telehealth solutions. We follow a structured and transparent approach to ensure your telemedicine app meets healthcare standards, business goals, and user expectations.
+
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
+        <div className="py-8">
+          <TechStack
+            title="Technology Stack We Use for Telemedicine App Development"
+            description="Our telemedicine app development company uses a modern, robust technology stack to build high-performing, secure, and feature-rich healthcare applications. Here’s a glimpse of the core tools we rely on:"
+            filterCategory={["crypto"]}
+          />
+        </div>
 
-        <SolutionSec
-          heading="Emerging Technologies We Leverage for Telemedicine Application Development"
-          subheading="We harness the power of emerging technologies to create innovative and secure telemedicine apps. Our telemedicine app development company integrates cutting-edge solutions like:"
-          techData={technologyData}
-        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <CryptoTradingList
-          heading="Why Invest in a Telemedicine App?"
-          subtitle="In today’s digital age, investing in a telemedicine app is one of the smartest ways to grow your healthcare business. These apps not only help you reach more patients but also provide fast and convenient healthcare services. If you want to expand your practice and confidently meet the demands of modern healthcare, investing in a telemedicine app is essential."
-          trends={JSON_DATA.LeadingSoftware2}
-        />
 
         <HireDeveloper
-          heading="Hire Telemedicine App Developers"
-          text="Looking to build a cutting-edge telemedicine app for your business? Our experienced telemedicine <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> are here to bring your vision to life! At Comfygen, we offer flexible hiring models so you can easily hire dedicated telemedicine app developers who understand healthcare technology and patient-centric design."
+          heading="Hire Qualified and Talented Telemedicine App Developers in India"
+          text="Looking to build a cutting-edge telemedicine app for your business? Our experienced <a href='https://www.comfygen.com/hire-mobile-app-developer' class='font-semibold underline'>telemedicine mobile app developers</a> are here to bring your vision to life! At Comfygen, we offer flexible hiring models so you can easily hire dedicated telemedicine application developers who understand healthcare technology and patient-centric design."
           text1="Whether you need full-time developers, part-time experts, or a dedicated team for your project, we ensure:"
           buttonText="Hire Developer"
           buttonLink="/contact-us"

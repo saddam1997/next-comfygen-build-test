@@ -384,7 +384,7 @@ export default function Home(props: any) {
       </div> */}
 
 
-       <div className="overflow-hidden lg:pt-[120px]">
+       <div className="overflow-hidden lg:pt-[120px] pt-16">
         <div className="relative">
           <HeroSectionHomePage
             heading={typedText}

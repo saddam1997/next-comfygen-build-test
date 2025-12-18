@@ -3,15 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./mobilebankingappdevelopment.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import Features from "./components/Features";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
-import PortfolioSec from "../componentsnew/PortfolioSec";
+
 import {
   IconBuildingBank,
   IconCreditCard,
@@ -20,30 +12,83 @@ import {
   IconShieldLock,
   IconTools,
 } from "@tabler/icons-react";
-import FeaturesWhite from "./components/FeaturesWhite";
-import ServicesSection from "../componentsnew/ServicesSection";
-import TrendsSection from "../componentsnew/TrendsSection";
-import ProcessSection from "../componentsnew/ProcessSection";
 
-const HeroSectionForAllPages = dynamic(
-  () => import("../components/HeroSectionForAllPages"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const Features = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Features"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const TeckStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
+
+
+
 
 const Process = [
   {
@@ -192,7 +237,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-   {
+    {
       "@context": "https://schema.org",
       "@type": "Service",
       name: "Custom Stock Trading App Development Services",
@@ -504,10 +549,10 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-app-hero1.webp')]">
           <HeroSectionForAllPages
             heading="Stock Trading App Development Company"
@@ -535,15 +580,32 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <ServicesSection
-          heading="Take Your Business to The Next Level With Our Custom Stock Trading App Development Services"
-          subtitle="Comfygen delivers top-grade stock trading app development services, helping fintech startups, brokers, and financial institutions launch next-gen trading platforms."
-          servicesData={JSON_DATA.servicesData}
-        />
 
-        <Features />
-        <ContactFromCenter />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Take Your Business to The Next Level With Our Custom Stock Trading App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen delivers top-grade stock trading app development services, helping fintech startups, brokers, and financial institutions launch next-gen trading platforms.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
+        <div className="py-8">
+          <Features
+            heading="AI & Blockchain-Based Trading App Development Solutions"
+            description="At Comfygen, we harness the power of artificial intelligence and blockchain to revolutionize trading experiences. Our next-gen AI & Blockchain-Based stock trading app development solutions bring real-time decision-making, unmatched security, and intelligent automation to today’s dynamic stock markets."
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+        {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -551,12 +613,26 @@ export default function ClinicalApp(props: any) {
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
         />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Mobile Trading Apps Portfolio"
-          description="Explore our innovative stock trading app development portfolio, featuring secure, scalable, and AI-powered solutions for stock trading. From real-time analytics to crypto integration, our trading apps deliver next-gen investment experiences."
-        />
-        <FeaturesWhite />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Mobile Trading Apps Portfolio"
+            description="Explore our innovative stock trading app development portfolio, featuring secure, scalable, and AI-powered solutions for stock trading. From real-time analytics to crypto integration, our trading apps deliver next-gen investment experiences."
+          />
+        </section>
+
+
+        <div className="py-8">
+          <Features
+            heading=" We Deliver Advanced Feature Panels in Your Stock Trading App"
+            description="We offer 4 robust feature panels to ensure your stock trading app delivers a seamless, secure, and high-performance experience for all user types—Traders, Admins, Brokers, and Analysts."
+            featuresData={JSON_DATA.featuresData1}
+            grid={4} />
+        </div>
+
+
 
         <TrendsSection
           heading="Top Features of Our Stock Trading Apps"
@@ -564,16 +640,26 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         />
 
-        <ProcessSection
-          title="Our Stock Trading App Development Process"
-          description="Our proven stock trading application development process ensures that every trading solution we deliver is market-ready, compliant, and tailored to your business goals."
-          processSlides={Process}
-        />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Stock Trading App Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+               Our proven stock trading application development process ensures that every trading solution we deliver is market-ready, compliant, and tailored to your business goals.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
 
-        <TechStack
+        <TeckStack
           title="Tech Stack We Use in Stock Trading App Development"
           description="At Comfygen, we use a future-ready tech stack to build secure, scalable, and real-time stock trading applications. Our technologies ensure top-tier performance, data protection, and seamless trading experiences."
         />
+
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

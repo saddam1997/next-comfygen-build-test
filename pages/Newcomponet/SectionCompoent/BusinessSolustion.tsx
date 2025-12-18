@@ -2,7 +2,7 @@ import React from 'react';
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import Image from "next/image";
 
-const BusinessSolustion = ({BusinessSolustion}) => {
+const BusinessSolustion = ({BusinessSolustion, imageSrc="https://www.comfygen.com/comfygen-images/delivery-app-development/transdelivery-delivery-app-development-app-solutions.webp"}) => {
 
 
     const getIcon = (iconType: string) => {
@@ -29,7 +29,7 @@ const BusinessSolustion = ({BusinessSolustion}) => {
                         <div className="w-full max-w-[970px] p-2">
                             <div className="overflow-hidden ">
                                 <Image
-                                    src="https://www.comfygen.com/comfygen-images/delivery-app-development/transdelivery-delivery-app-development-app-solutions.webp"
+                                    src={imageSrc}
                                     alt="delivery-app-development"
                                     width={970}
                                     height={940}
@@ -48,11 +48,9 @@ const BusinessSolustion = ({BusinessSolustion}) => {
                                 <div key={feature.id} className="p-3">
                                     <div className="flex items-start">
                                         <div className="flex-1">
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-2 leading-tight">
-                                                {feature?.title}
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-2 leading-tight" dangerouslySetInnerHTML={{ __html: feature?.title }} >
                                             </h3>
-                                            <p className="text-gray-600 leading-relaxed">
-                                                {feature?.description}
+                                            <p className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: feature?.description }}>
                                             </p>
                                         </div>
                                     </div>

@@ -1,102 +1,180 @@
 {
-"Frequently": [
-  {
-    "num": "1",
-    "title": "What is Quick Commerce?",
-    "desc": "Quick Commerce, or Q-commerce, refers to the ultra-fast delivery model where products are delivered within 10 to 20 minutes of ordering. It’s an evolution of eCommerce, powered by hyperlocal logistics and real-time inventory management. At Comfygen Technologies, we specialize in quick commerce app development that supports instant delivery for groceries, medicines, food, and more—designed for speed, efficiency, and convenience."
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is Quick Commerce?",
+      "desc": "Quick Commerce, or Q-commerce, refers to the ultra-fast delivery model where products are delivered within 10 to 20 minutes of ordering. It’s an evolution of eCommerce, powered by hyperlocal logistics and real-time inventory management. At Comfygen Technologies, we specialize in quick commerce app development that supports instant delivery for groceries, medicines, food, and more—designed for speed, efficiency, and convenience."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a Q-commerce app?",
+      "desc": "The development timeline for a Q-commerce app depends on features, platforms, and complexity. On average, it can take 8 to 16 weeks to build a fully functional and scalable quick commerce application. At Comfygen Technologies, we accelerate timelines using agile processes to deliver your Qcommerce app development project on time without compromising quality or performance."
+    },
+    {
+      "num": "3",
+      "title": "Can I integrate my existing POS system?",
+      "desc": "Yes, absolutely. As a leading quick Commerce app development company, Comfygen Technologies offers seamless POS system integration with your app. Whether you're using custom POS, Shopify, or enterprise software, we ensure real-time inventory sync, smooth order flow, and accurate sales tracking. Our quick commerce application development process includes full API integration to align with your current retail infrastructure."
+    },
+    {
+      "num": "4",
+      "title": "What’s the cost of a quick commerce app?",
+      "desc": "The cost to develop a quick commerce app varies based on app complexity, features, platforms (iOS, Android, Web), and custom integrations. Typically, a basic Q-commerce app starts around $10,000–$25,000, while full-featured apps with AI, live tracking, and real-time inventory may range higher. Contact Comfygen Technologies for an exact quote tailored to your Qcommerce app development needs."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Quick Commerce App Development",
+      "description": "We provide fully customized Quick commerce app development services that align with your brand vision and operational goals. From product catalog design to seamless user journeys and backend automation, we create purpose-built applications for industries like grocery, food, pharma, and more.",
+      "features": [
+        "Brand-Aligned UI/UX",
+        "Location-Based Service Models",
+        "API Integrations with POS/ERP"
+      ]
+    },
+    {
+      "title": "White Label Qcommerce App Solutions",
+      "description": "Looking for a faster launch? We offer fully branded, ready-to-deploy white label quick commerce <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >mobile app development solutions</a> that reduce time-to-market without compromising on features. Perfect for startups and fast-scaling ventures.",
+      "features": [
+        "Pre-Built Features & Modules",
+        "Easily Customizable UI Themes",
+        "Scalable Codebase for Future Enhancements"
+      ]
+    },
+    {
+      "title": "Geo-Intelligent Order Routing",
+      "description": "Smart logistics starts here. Our apps use location-aware technology to auto-assign delivery agents, optimize routes, and provide live ETAs to users. Built-in geofencing and status tracking ensure total transparency from warehouse to doorstep.",
+      "features": [
+        "GPS & Mapping APIs",
+        "Auto-Assignment Logic",
+        "Real-Time Delivery Tracking"
+      ]
+    },
+    {
+      "title": "Grocery & FMCG App Development",
+      "description": "Launch a grocery delivery app like Zepto or Blinkit with features like real-time stock display, smart carts, and 10-minute workflows. We build quick commerce app development solutions that handle thousands of SKUs and multiple vendors with ease.",
+      "features": [
+        "Scheduled or Instant Delivery Options",
+        "Multi-Warehouse Support",
+        "Smart Reordering & Recommendations"
+      ]
+    },
+    {
+      "title": "Pharmacy & Healthcare Delivery App Development",
+      "description": "<a class='underline font-semibold' href='https://www.comfygen.com/medicine-delivery-app-development' >Create a medicine delivery app</a> like 1mg or Pharmeasy with prescription uploads, e-consultation modules, and dosage tracking. Our Qcommerce app development solutions meet healthcare compliance standards and make sure patient trust.",
+      "features": [
+        "HIPAA/GDPR-Ready Infrastructure",
+        "Verified Medicine Listings",
+        "eRx & Prescription Uploads"
+      ]
+    },
+    {
+      "title": "Food & Beverage Q-Commerce App Development",
+      "description": "We <a class='underline font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >develop Q-commerce food delivery apps</a> like Swiggy Instamart and Zomato’s Instant feature, allowing users to order meals, snacks, or beverages in under 30 minutes.",
+      "features": [
+        "Menu Management & Combo Offers",
+        "AI-Based Dish Suggestions",
+        "Restaurant/Vendor Panel with Dashboard"
+      ]
+    },
+    {
+      "title": "Courier & Logistics Delivery App Development",
+      "description": "Build on-demand logistics platforms with features like real-time shipment tracking, route optimization, and delivery verification. Ideal for businesses looking to automate last-mile operations.",
+      "features": [
+        "Driver App & Task Management",
+        "Delivery Proof (Photo/Signature Upload)",
+        "Route Planning & ETA Calculation"
+      ]
+    },
+    {
+      "title": "Multi-Platform Support (iOS, Android, Web)",
+      "description": "With our expert Qcommerce app developers, we build high-performance Qcommerce apps that work flawlessly across all platforms—iOS, Android, and web. Provide consistent experiences and scale your business without platform limits.",
+      "features": [
+        "Cross-Platform Codebase",
+        "PWA & Native App Support",
+        "Optimized for Speed & Scalability"
+      ]
+    }
+  ],
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c1.webp",
+      "title": "Zepto Clone App",
+      "description": "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zepto/' >Build a grocery delivery app like Zepto</a> with ultra-fast order fulfillment, real-time tracking, and dark store integration. We offer clone app development for businesses aiming to replicate Zepto's 10-minute delivery success in the Q-commerce space.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c2.webp",
+      "title": "GoPuff Clone App",
+      "description": "Launch a Qcommerce app like GoPuff with a micro-fulfillment model. Our developers create a GoPuff-style platform that streamlines inventory, delivery, and checkout, making it a perfect alternative for the instant FMCG delivery market.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c3.webp",
+      "title": "JioMart Express Clone App",
+      "description": "Build a grocery delivery app similar to JioMart Express with multilingual support, inventory sync, and location-based delivery. We provide a clone app similar to JioMart to help you compete in India's growing quick commerce sector.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c4.webp",
+      "title": "Zomato Clone App",
+      "description": "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zomato/' >Develop a food delivery platform like Zomato </a> with real-time tracking, contactless delivery, and personalized recommendations. Our Zomato clone app development replicates Zomato’s powerful ordering and restaurant aggregator features with a custom Qcommerce twist.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c5.webp",
+      "title": "Swiggy Clone App",
+      "description": "Get a food & beverage Qcommerce app like Swiggy Instamart to deliver snacks, meals, and groceries in minutes. We develop clone apps that offer fast checkouts, route optimization, and seamless order management.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c6.webp",
+      "title": "PillPack Clone App",
+      "description": "Create a medicine delivery app like PillPack with automatic prescription refills, secure packaging, and seamless logistics. Our clone app development ensures compliance, privacy, and rapid delivery across your healthcare supply chain.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c6.webp",
+      "title": "PillPack Clone App",
+      "description": "Create a medicine delivery app like PillPack with automatic prescription refills, secure packaging, and seamless logistics. Our clone app development ensures compliance, privacy, and rapid delivery across your healthcare supply chain.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c7.webp",
+      "title": "1mg Clone App",
+      "description": "Build a Qcommerce healthcare solution with a Tata 1mg clone app. We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/build-medicine-delivery-app-like-1mg/' >develop medicine delivery apps similar to 1mg</a> with features like online prescriptions, doctor consultations, and same-day pharma delivery.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c8.webp",
+      "title": "ZocDoc Clone App",
+      "description": "Launch a healthcare appointment and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-of-building-a-doctor-appointment-app-like-zocdoc/' >delivery app like ZocDoc</a> with telehealth support, doctor bookings, and nearby pharmacy integration. A perfect quick commerce app for on-demand medical consultations and service bookings.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c9.webp",
+      "title": "XpressBees Clone App",
+      "description": "Develop a logistics Qcommerce app like XpressBees with smart shipment tracking, multi-location delivery, and real-time status updates. A reliable solution for last-mile logistics and express courier needs.",
+      "buttonText": "View Demo"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c10.webp",
+      "title": "Lalamove Clone App",
+      "description": "Start a courier & delivery service with a clone app similar to Lalamove. Offer real-time driver tracking, instant quotes, and package scheduling with a custom-built Qcommerce platform for local and intercity logistics.",
+      "buttonText": "View Demo"
+    },
+      {
+    "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c11.webp",
+    "title": "Nykaa Clone App",
+    "description": "Launch a beauty e-commerce platform with a clone app like Nykaa. Enable ultra-fast delivery of skincare, cosmetics, and grooming items through a robust and stylish Qcommerce solution tailored to your brand.",
+    "buttonText": "View Demo"
   },
   {
-    "num": "2",
-    "title": "How long does it take to build a Q-commerce app?",
-    "desc": "The development timeline for a Q-commerce app depends on features, platforms, and complexity. On average, it can take 8 to 16 weeks to build a fully functional and scalable quick commerce application. At Comfygen Technologies, we accelerate timelines using agile processes to deliver your Qcommerce app development project on time without compromising quality or performance."
-  },
-  {
-    "num": "3",
-    "title": "Can I integrate my existing POS system?",
-    "desc": "Yes, absolutely. As a leading quick Commerce app development company, Comfygen Technologies offers seamless POS system integration with your app. Whether you're using custom POS, Shopify, or enterprise software, we ensure real-time inventory sync, smooth order flow, and accurate sales tracking. Our quick commerce application development process includes full API integration to align with your current retail infrastructure."
-  },
-  {
-    "num": "4",
-    "title": "What’s the cost of a quick commerce app?",
-    "desc": "The cost to develop a quick commerce app varies based on app complexity, features, platforms (iOS, Android, Web), and custom integrations. Typically, a basic Q-commerce app starts around $10,000–$25,000, while full-featured apps with AI, live tracking, and real-time inventory may range higher. Contact Comfygen Technologies for an exact quote tailored to your Qcommerce app development needs."
+    "imgSrc": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c12.webp",
+    "title": "Purplle Clone App",
+    "description": "Build a beauty product delivery website like Purplle with AI-powered suggestions, fast cart checkout, and hyperlocal delivery. We provide quick commerce app development that delivers beauty products with speed and convenience.",
+    "buttonText": "View Demo"
   }
-],
-"servicesData": [
-  {
-    "title": "Custom Quick Commerce App Development",
-    "description": "We provide fully customized Quick commerce app development services that align with your brand vision and operational goals. From product catalog design to seamless user journeys and backend automation, we create purpose-built applications for industries like grocery, food, pharma, and more.",
-    "features": [
-      "Brand-Aligned UI/UX",
-      "Location-Based Service Models",
-      "API Integrations with POS/ERP"
-    ]
-  },
-  {
-    "title": "White Label Qcommerce App Solutions",
-    "description": "Looking for a faster launch? We offer fully branded, ready-to-deploy white label quick commerce <a class='underline font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >mobile app development solutions</a> that reduce time-to-market without compromising on features. Perfect for startups and fast-scaling ventures.",
-    "features": [
-      "Pre-Built Features & Modules",
-      "Easily Customizable UI Themes",
-      "Scalable Codebase for Future Enhancements"
-    ]
-  },
-  {
-    "title": "Geo-Intelligent Order Routing",
-    "description": "Smart logistics starts here. Our apps use location-aware technology to auto-assign delivery agents, optimize routes, and provide live ETAs to users. Built-in geofencing and status tracking ensure total transparency from warehouse to doorstep.",
-    "features": [
-      "GPS & Mapping APIs",
-      "Auto-Assignment Logic",
-      "Real-Time Delivery Tracking"
-    ]
-  },
-  {
-    "title": "Grocery & FMCG App Development",
-    "description": "Launch a grocery delivery app like Zepto or Blinkit with features like real-time stock display, smart carts, and 10-minute workflows. We build quick commerce app development solutions that handle thousands of SKUs and multiple vendors with ease.",
-    "features": [
-      "Scheduled or Instant Delivery Options",
-      "Multi-Warehouse Support",
-      "Smart Reordering & Recommendations"
-    ]
-  },
-  {
-    "title": "Pharmacy & Healthcare Delivery App Development",
-    "description": "<a class='underline font-semibold' href='https://www.comfygen.com/medicine-delivery-app-development' >Create a medicine delivery app</a> like 1mg or Pharmeasy with prescription uploads, e-consultation modules, and dosage tracking. Our Qcommerce app development solutions meet healthcare compliance standards and make sure patient trust.",
-    "features": [
-      "HIPAA/GDPR-Ready Infrastructure",
-      "Verified Medicine Listings",
-      "eRx & Prescription Uploads"
-    ]
-  },
-  {
-    "title": "Food & Beverage Q-Commerce App Development",
-    "description": "We <a class='underline font-semibold' href='https://www.comfygen.com/food-delivery-app-development' >develop Q-commerce food delivery apps</a> like Swiggy Instamart and Zomato’s Instant feature, allowing users to order meals, snacks, or beverages in under 30 minutes.",
-    "features": [
-      "Menu Management & Combo Offers",
-      "AI-Based Dish Suggestions",
-      "Restaurant/Vendor Panel with Dashboard"
-    ]
-  },
-  {
-    "title": "Courier & Logistics Delivery App Development",
-    "description": "Build on-demand logistics platforms with features like real-time shipment tracking, route optimization, and delivery verification. Ideal for businesses looking to automate last-mile operations.",
-    "features": [
-      "Driver App & Task Management",
-      "Delivery Proof (Photo/Signature Upload)",
-      "Route Planning & ETA Calculation"
-    ]
-  },
-  {
-    "title": "Multi-Platform Support (iOS, Android, Web)",
-    "description": "With our expert Qcommerce app developers, we build high-performance Qcommerce apps that work flawlessly across all platforms—iOS, Android, and web. Provide consistent experiences and scale your business without platform limits.",
-    "features": [
-      "Cross-Platform Codebase",
-      "PWA & Native App Support",
-      "Optimized for Speed & Scalability"
-    ]
-  }
-],
-
-
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -133,8 +211,7 @@
       "title": "Ratings & Feedback That Build Trust",
       "desc": "Happy users, honest feedback. Our in-app rating and review features help customers feel heard, while giving you the insights needed to grow, improve, and wow them every time."
     }
-],
-
+  ],
   "portfoliodata": [
     {
       "image": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-panel1.webp",
@@ -154,8 +231,7 @@
       "description": "Snack delivery Q-commerce app built for snack bars and cloud kitchens. Customers can place and track instant orders for packaged or ready-made meals. The platform supports GPS-powered delivery, peak-time order batching, and CRM-integrated promotions—maximizing speed, satisfaction, and repeat orders.",
       "link": "#"
     }
-],
-
+  ],
   "pageData": {
     "title": "Why Choose Comfygen Technologies for Q-Commerce App Development?",
     "description": "At Comfygen Technologies, we don’t just build apps—we build a dream Q-commerce app for your customers can trust. With deep industry experience and a tech-first mindset, we empower brands to deliver better, faster, and smarter.",
@@ -164,66 +240,61 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
- "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Agile Development & Fast Delivery",
-    "description": "We follow agile methodologies to accelerate delivery timelines without compromising quality. Whether you're launching a grocery delivery app or a pharmacy Q-commerce solution, we get you to market quickly—with continuous improvements."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Agile Development & Fast Delivery",
+        "description": "We follow agile methodologies to accelerate delivery timelines without compromising quality. Whether you're launching a grocery delivery app or a pharmacy Q-commerce solution, we get you to market quickly—with continuous improvements."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Custom UI/UX for Ultra-Speed Navigation",
+        "description": "User experience is everything in Q-commerce. Our design team crafts smooth, intuitive interfaces that reduce friction, boost conversions, and help users find and order products in seconds."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Real-Time System Performance Optimization",
+        "description": "We build performance-first platforms. From load balancing to instant inventory sync and smart routing—your app will operate smoothly even during peak hours, ensuring every order is delivered right on time."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Post-Launch Maintenance & Support",
+        "description": "Your journey doesn’t end at launch—and neither does ours. We provide ongoing support, performance monitoring, version updates, and new feature rollouts to help you stay ahead in the competitive quick commerce space."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "100% NDA & Data Security",
+        "description": "Your idea is safe with us. We sign full NDAs, use end-to-end encryption, and follow strict data protection protocols to safeguard your business data and user information at every stage."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable Architecture for Future Growth",
+        "description": "As your business grows, your app should too. We build cloud-native, modular systems that support multi-location expansion, high transaction volumes, and future tech integrations—ensuring your app evolves with your market."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Custom UI/UX for Ultra-Speed Navigation",
-    "description": "User experience is everything in Q-commerce. Our design team crafts smooth, intuitive interfaces that reduce friction, boost conversions, and help users find and order products in seconds."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Real-Time System Performance Optimization",
-    "description": "We build performance-first platforms. From load balancing to instant inventory sync and smart routing—your app will operate smoothly even during peak hours, ensuring every order is delivered right on time."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Post-Launch Maintenance & Support",
-    "description": "Your journey doesn’t end at launch—and neither does ours. We provide ongoing support, performance monitoring, version updates, and new feature rollouts to help you stay ahead in the competitive quick commerce space."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "100% NDA & Data Security",
-    "description": "Your idea is safe with us. We sign full NDAs, use end-to-end encryption, and follow strict data protection protocols to safeguard your business data and user information at every stage."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Scalable Architecture for Future Growth",
-    "description": "As your business grows, your app should too. We build cloud-native, modular systems that support multi-location expansion, high transaction volumes, and future tech integrations—ensuring your app evolves with your market."
-  }
-]
-  },
-
-
-"customTestimonials": [
-  {
-    "text": "Comfygen Technologies brought our instant grocery delivery vision to life with a sleek and lightning-fast app. The team really understands the Q-commerce space and delivered a solution that can scale as we grow.",
-    "name": "Ananya Verma",
-    "title": "India"
-  },
-  {
-    "text": "We hired Comfygen Technologies to develop a 10-minute medicine delivery app, and the results were phenomenal. Their developers were responsive, skilled, and worked like true partners. Our users love the real-time tracking and easy UI.",
-    "name": "Daniel Brooks",
-    "title": "UK"
-  },
-  {
-    "text": "From planning to deployment, Comfygen Technologies handled everything with professionalism. The app they built for our hyperlocal food delivery service is stable, smart, and user-friendly. It’s already helping us increase daily orders.",
-    "name": "Karan Patel",
-    "title": "India"
-  },
-  {
-    "text": "What impressed us most was Comfygen Technologies’s deep technical knowledge of Q-commerce architecture. The logistics and express delivery app they built for us has real-time routing and load balancing that actually works. Great team!",
-    "name": "Nora Kim",
-    "title": "Singapore"
-  }
-],
-
-
-
+  "customTestimonials": [
+    {
+      "text": "Comfygen Technologies brought our instant grocery delivery vision to life with a sleek and lightning-fast app. The team really understands the Q-commerce space and delivered a solution that can scale as we grow.",
+      "name": "Ananya Verma",
+      "title": "India"
+    },
+    {
+      "text": "We hired Comfygen Technologies to develop a 10-minute medicine delivery app, and the results were phenomenal. Their developers were responsive, skilled, and worked like true partners. Our users love the real-time tracking and easy UI.",
+      "name": "Daniel Brooks",
+      "title": "UK"
+    },
+    {
+      "text": "From planning to deployment, Comfygen Technologies handled everything with professionalism. The app they built for our hyperlocal food delivery service is stable, smart, and user-friendly. It’s already helping us increase daily orders.",
+      "name": "Karan Patel",
+      "title": "India"
+    },
+    {
+      "text": "What impressed us most was Comfygen Technologies’s deep technical knowledge of Q-commerce architecture. The logistics and express delivery app they built for us has real-time routing and load balancing that actually works. Great team!",
+      "name": "Nora Kim",
+      "title": "Singapore"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -430,91 +501,86 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
-"AIPowered": [
-  {
-    "num": "01",
-    "title": "AI-Based Product Recommendations",
-    "decs": "Deliver a more personalized shopping experience with intelligent suggestions based on user behavior, past orders, and trending products. Perfect for upselling in grocery, food, and pharmacy delivery apps."
-  },
-  {
-    "num": "02",
-    "title": "AI Chatbots & Virtual Assistants",
-    "decs": "Handle customer queries 24/7 with intelligent, natural-language chatbots. From order tracking to complaints, AI improves customer support and reduces human effort."
-  },
-  {
-    "num": "03",
-    "title": "Predictive Delivery Routing",
-    "decs": "Leverage AI-powered route optimization to minimize delivery time, reduce fuel costs, and manage multiple deliveries in real time."
-  },
-  {
-    "num": "04",
-    "title": "Customer Behavior Analysis",
-    "decs": "Understand user preferences, buying habits, and churn risks with AI-driven analytics. Use these insights to optimize promotions and boost retention."
-  },
-  {
-    "num": "05",
-    "title": "Inventory Demand Forecasting",
-    "decs": "AI models analyze trends and sales data to predict product demand—helping you avoid stockouts or overstocking."
-  },
-  {
-    "num": "06",
-    "title": "Fraud Detection & Secure Payments",
-    "decs": "AI monitors transactions and user patterns to detect suspicious activities, ensuring secure checkouts and protecting sensitive customer data."
-  }
-],
-
-
- "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
-    "decs": "We <a class='underline font-semibold'  href='https://www.comfygen.com/ai-development' >build AI and ML-based quick commerce apps</a> to create personalized shopping experiences with features like dynamic product recommendations, demand forecasting, smart inventory replenishment, and customer behavior analysis. AI chatbots handle real-time queries, streamline order support, and improve customer satisfaction."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/5g-technology.webp",
-    "title": "AI-Based Product Recommendation Engine",
-    "decs": "Our Q-commerce platforms include intelligent recommendation engines that analyze browsing history, location, and order behavior to suggest relevant products—boosting cart value, conversions, and repeat orders."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-    "title": "IoT Integration for Real-Time Delivery Tracking",
-    "decs": "We <a class='underline font-semibold'  href='https://www.comfygen.com/iot-development-company' >integrate IoT</a> into quick commerce apps to enable real-time vehicle tracking, smart warehousing, and automated alerts. This helps reduce delivery time, optimize routes, and ensure transparency from warehouse to doorstep."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "Cloud Computing & Microservices Architecture",
-    "decs": "Our Q-commerce mobile apps are built on robust cloud infrastructure with a microservices-based architecture that ensures scalability, real-time syncing of inventory, and seamless multi-location operations. This helps manage high volumes with uninterrupted service."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain for Secure Transactions & Logistics",
-    "decs": "We <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >develop blockchain-based quick commerce apps</a> to secure payments, loyalty points, and digital contracts between vendors, delivery partners, and customers. It ensures transparent operations, fraud prevention, and tamper-proof delivery and payment records."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/emotional-ai.webp",
-    "title": "Big Data & Predictive Analytics",
-    "decs": "Our Q-commerce apps leverage big data to monitor user trends, forecast demand spikes, and optimize inventory levels in real-time. These insights empower business owners to make smarter decisions and run more efficient, profitable operations."
-  },
-  {
-    "num": "7",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "RPA (Robotic Process Automation)",
-    "decs": "We deploy RPA bots to automate repetitive backend tasks like order assignment, stock updates, and customer notifications. This reduces manual errors and speeds up operational workflows in high-demand environments."
-  },
-  {
-    "num": "8",
-    "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-    "title": "Augmented Reality (AR) for Product Visualization",
-    "decs": "We integrate AR into Q-commerce apps to enable users to virtually try products like cosmetics, accessories, or furniture before purchase. This enhances customer confidence, reduces return rates, and offers a highly engaging, immersive shopping experience."
-  }
-]
-
+  "AIPowered": [
+    {
+      "num": "01",
+      "title": "AI-Based Product Recommendations",
+      "decs": "Deliver a more personalized shopping experience with intelligent suggestions based on user behavior, past orders, and trending products. Perfect for upselling in grocery, food, and pharmacy delivery apps."
+    },
+    {
+      "num": "02",
+      "title": "AI Chatbots & Virtual Assistants",
+      "decs": "Handle customer queries 24/7 with intelligent, natural-language chatbots. From order tracking to complaints, AI improves customer support and reduces human effort."
+    },
+    {
+      "num": "03",
+      "title": "Predictive Delivery Routing",
+      "decs": "Leverage AI-powered route optimization to minimize delivery time, reduce fuel costs, and manage multiple deliveries in real time."
+    },
+    {
+      "num": "04",
+      "title": "Customer Behavior Analysis",
+      "decs": "Understand user preferences, buying habits, and churn risks with AI-driven analytics. Use these insights to optimize promotions and boost retention."
+    },
+    {
+      "num": "05",
+      "title": "Inventory Demand Forecasting",
+      "decs": "AI models analyze trends and sales data to predict product demand—helping you avoid stockouts or overstocking."
+    },
+    {
+      "num": "06",
+      "title": "Fraud Detection & Secure Payments",
+      "decs": "AI monitors transactions and user patterns to detect suspicious activities, ensuring secure checkouts and protecting sensitive customer data."
+    }
+  ],
+  "Emerging": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
+      "decs": "We <a class='underline font-semibold'  href='https://www.comfygen.com/ai-development' >build AI and ML-based quick commerce apps</a> to create personalized shopping experiences with features like dynamic product recommendations, demand forecasting, smart inventory replenishment, and customer behavior analysis. AI chatbots handle real-time queries, streamline order support, and improve customer satisfaction."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "title": "AI-Based Product Recommendation Engine",
+      "decs": "Our Q-commerce platforms include intelligent recommendation engines that analyze browsing history, location, and order behavior to suggest relevant products—boosting cart value, conversions, and repeat orders."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      "title": "IoT Integration for Real-Time Delivery Tracking",
+      "decs": "We <a class='underline font-semibold'  href='https://www.comfygen.com/iot-development-company' >integrate IoT</a> into quick commerce apps to enable real-time vehicle tracking, smart warehousing, and automated alerts. This helps reduce delivery time, optimize routes, and ensure transparency from warehouse to doorstep."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Cloud Computing & Microservices Architecture",
+      "decs": "Our Q-commerce mobile apps are built on robust cloud infrastructure with a microservices-based architecture that ensures scalability, real-time syncing of inventory, and seamless multi-location operations. This helps manage high volumes with uninterrupted service."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain for Secure Transactions & Logistics",
+      "decs": "We <a class='underline font-semibold' href='https://www.comfygen.com/blockchain-development' >develop blockchain-based quick commerce apps</a> to secure payments, loyalty points, and digital contracts between vendors, delivery partners, and customers. It ensures transparent operations, fraud prevention, and tamper-proof delivery and payment records."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/emotional-ai.webp",
+      "title": "Big Data & Predictive Analytics",
+      "decs": "Our Q-commerce apps leverage big data to monitor user trends, forecast demand spikes, and optimize inventory levels in real-time. These insights empower business owners to make smarter decisions and run more efficient, profitable operations."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "RPA (Robotic Process Automation)",
+      "decs": "We deploy RPA bots to automate repetitive backend tasks like order assignment, stock updates, and customer notifications. This reduces manual errors and speeds up operational workflows in high-demand environments."
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      "title": "Augmented Reality (AR) for Product Visualization",
+      "decs": "We integrate AR into Q-commerce apps to enable users to virtually try products like cosmetics, accessories, or furniture before purchase. This enhances customer confidence, reduces return rates, and offers a highly engaging, immersive shopping experience."
+    }
+  ]
 }

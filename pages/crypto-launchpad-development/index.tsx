@@ -85,22 +85,6 @@ const Faq = dynamic(
 
 
 
-
-
-
-
-
-
-
-import LazyLoad from "react-lazy-load";
-import PortfolioSec from "../componentsnew/PortfolioSec";
-
-
-import ServicesSection from "../componentsnew/ServicesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-
-
-
 const Process = [
   {
     title: "Discovery & Project Planning",

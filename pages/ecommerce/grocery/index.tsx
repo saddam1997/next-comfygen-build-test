@@ -5,7 +5,7 @@ import JSON_DATA from "./grocery-app-development.json";
 
 
 
-import EcommerceNav from "../../Newcomponet/layout/ecommerce-navbar"
+import EcommerceHeader from "../../Newcomponet/layout/EcommerceHeader";
 import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -82,23 +82,24 @@ const CoreFeaturesSection = dynamic(
 )
 
 
-const Faq = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Faq"),
+const HireDeveloperSec = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 )
 
 
 
+const DeliverySection = dynamic(
+  () => import("../../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+)
 
 
+const Faq = dynamic(
+  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+)
 
-import ProcessSection from "../../componentsnew/ProcessSection";
-import AppCard from "../../componentsnew/AppCard";
-import HireDeveloperSec from "../../components/HireDeveloperSec";
-
-import DeliverySection from "../../components/DeliverySection";
-import Slider from "../../components/Slider";
-import EcommerceHeader from "../../Newcomponet/layout/EcommerceHeader";
 
 
 
@@ -732,15 +733,7 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <HireDeveloperSec
-          heading="Cost to Develop a Grocery Delivery App"
-          dec="The  <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zepto/' >cost to build a grocery delivery app</a> typically ranges from $10,000 to $50,000+, depending on several factors like feature set, technology stack, app complexity, number of user panels (user, admin, delivery), and the platforms (Android, iOS, or both). "
-          dec1="Basic grocery apps with essential features (product listings, cart, payment) are more affordable, while advanced solutions with AI, real-time tracking, and custom integrations can increase development costs. Want to know the exact cost for your idea? "
-          buttonText="Request a Custom Quote"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hire.webp"
-          imageAlt="hire-developer"
-        />
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

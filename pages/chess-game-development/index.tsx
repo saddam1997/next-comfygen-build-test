@@ -3,13 +3,6 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/chess.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import NewSection from "../components/NewSection";
-import AboutSection from "../componentsnew/AboutSection";
-import ServicesSection from "../componentsnew/ServicesSection";
-import SolutionSec from "../components/SolutionSec";
 import {
   IconApps,
   IconAtom,
@@ -21,20 +14,68 @@ import {
   IconLanguage,
   IconSchool,
 } from "@tabler/icons-react";
-import ConsultancyApproach from "../componentsnew/ConsultancyApproach";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TechStack from "../componentsnew/TechStack";
-import Faq from "../componentsnew/Faq";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+);
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
+
 
 const Processs = [
   {
@@ -562,11 +603,11 @@ export default function Altcoin(props) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+
+        <Header />
+
       </div>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden lg:pt-[120px]">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/chess-game-development-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Chess Game Development Company"
@@ -582,7 +623,6 @@ export default function Altcoin(props) {
         </div>
 
         <NewSection NewSection={JSON_DATA.NewSections} />
-
         <AboutSection
           title=""
           heading="Comfygen An Online Chess Game Development Company: Crafting Winning Moves in the Gaming World"
@@ -593,12 +633,24 @@ export default function Altcoin(props) {
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
-        <ServicesSection
-          heading="Top Chess Game Development Services By Comfygen"
-          subtitle="Comfygen offers A1 Chess Game Development Services, providing a seamless and engaging gaming experience for chess enthusiasts. With a talented team of Programmers and a focus on innovation, Comfygen ensures the creation of high-quality chess game development services with exceptional features and functionalities."
-          servicesData={JSON_DATA.servicesData}
-        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Top Chess Game Development Services By Comfygen
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen offers A1 Chess Game Development Services, providing a seamless and engaging gaming experience for chess enthusiasts. With a talented team of Programmers and a focus on innovation, Comfygen ensures the creation of high-quality chess game development services with exceptional features and functionalities.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <SolutionSec
           heading="Other Games Developed By Us: Beyond Chess Game Development Discover a World of Gaming Beyond Chess with Comfygen"
@@ -614,54 +666,65 @@ export default function Altcoin(props) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSection
-          title="Unveiling Our Chess Game Development Process: A Game Development Journey"
-          description="Embark on a journey through the meticulous Chess Game Development process at ComfyGen, an esteemed Chess Game Development Company in India. Our approach is a step-by-step roadmap that brings your gaming dreams to life, leveraging the expertise of Chess Game App Developers, Chess Game Developers, and Chess Software Providers."
-          processSlides={Processs}
-        />
 
-         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-                  <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-                    <div className="space-y-4 text-center">
-                      <div className="flex flex-col justify-center text-center  mx-auto">
-                        <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                          Overview of the Technologies and Frameworks used for Chess Game development
-                        </h2>
-                        <p className="text-center text-white lg:w-1/2 mx-auto">Comfygen, a distinguished chess <a className="underline font-semibold" href="https://www.comfygen.com/game-development-company" >game development company</a> in India, stands as a beacon of innovation and expertise in the realm of game development. Our chess game app developers employ an array of cutting-edge technologies and tools to bring the timeless game of chess to life on digital platforms.</p>
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+               Unveiling Our Chess Game Development Process: A Game Development Journey
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+              Embark on a journey through the meticulous Chess Game Development process at ComfyGen, an esteemed Chess Game Development Company in India. Our approach is a step-by-step roadmap that brings your gaming dreams to life, leveraging the expertise of Chess Game App Developers, Chess Game Developers, and Chess Software Providers.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
+
+
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Overview of the Technologies and Frameworks used for Chess Game development
+                </h2>
+                <p className="text-center text-white lg:w-1/2 mx-auto">Comfygen, a distinguished chess <a className="underline font-semibold" href="https://www.comfygen.com/game-development-company" >game development company</a> in India, stands as a beacon of innovation and expertise in the realm of game development. Our chess game app developers employ an array of cutting-edge technologies and tools to bring the timeless game of chess to life on digital platforms.</p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        <Image
+                          src={img}
+                          className="object-cover"
+                          width={35}
+                          height={50}
+                          alt={title}
+                        />
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
                       </div>
-                      <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                        {JSON_DATA.Emerging.map((elem) => {
-                          const { img, title, decs } = elem;
-                          return (
-                            <div className={` relative`}>
-                              <div
-                                className={` flex justify-start gap-2 place-items-center relative`}
-                              >
-                                <Image
-                                  src={img}
-                                  className="object-cover"
-                                  width={35}
-                                  height={50}
-                                  alt={title}
-                                />
-                                <h3 className="text-2xl font-bold text-[#fff] text-start">
-                                  {title}
-                                </h3>
-                              </div>
-        
-                              <div className="mt-3">
-                                <p className="break-all text-white text-start ">
-                                  {decs}
-                                </p>
-                              </div>
-                            </div>
-                          );
-                        })}
+
+                      <div className="mt-3">
+                        <p className="break-all text-white text-start ">
+                          {decs}
+                        </p>
                       </div>
-        
                     </div>
-                  </div>
-                </section>
+                  );
+                })}
+              </div>
+
+            </div>
+          </div>
+        </section>
 
         <TechStack
           title="Tech Stack We Use in Chess Game Development"
@@ -675,9 +738,9 @@ export default function Altcoin(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        
+
         <Faq faqData={Frequently} title="" />
-        
+
       </div>
     </>
   );

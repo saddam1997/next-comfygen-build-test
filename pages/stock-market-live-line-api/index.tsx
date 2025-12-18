@@ -3,29 +3,61 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stockmarketliveline.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CallToAction from "../components/CallToAction";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ServicesSection from "../componentsnew/ServicesSection";
-import OtherGameDevelopment from "../componentsnew/OtherGameDevelopment";
-import ProcessSection from "../componentsnew/ProcessSection";
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const OtherGameDevelopment = dynamic(
+  () => import("../Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
 
 const Process = [
   {
@@ -102,16 +134,16 @@ const organizationData = {
 
 const productData = {
   "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen",
-      "name": "Stock Market Live Line API Development Company - Real-Time Stock Market API Service",
-      "image": "https://www.comfygen.com/img/stock-market-api-service.webp",
-      "description": "Comfygen Private Limited is a leading provider of Stock Market Live Line API solutions. We deliver fast, secure, and scalable stock data API services for web and mobile applications.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1125"
-      }
+  "@type": "Product",
+  "brand": "Comfygen",
+  "name": "Stock Market Live Line API Development Company - Real-Time Stock Market API Service",
+  "image": "https://www.comfygen.com/img/stock-market-api-service.webp",
+  "description": "Comfygen Private Limited is a leading provider of Stock Market Live Line API solutions. We deliver fast, secure, and scalable stock data API services for web and mobile applications.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1125"
+  }
 
 };
 
@@ -172,7 +204,7 @@ const faqPageSchema = {
 };
 
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const [showContent, setShowContent] = useState(false);
 
@@ -192,8 +224,8 @@ export default function Ecommerce(props:any) {
           name="description"
           content="Integrate our Stock Market Live Line API for accurate, real-time stock data in your app or platform. Fast, secure, and scalable solution for traders and investors."
         />
-        <meta name="keywords" 
-        content="Stock Market Live Line API, 
+        <meta name="keywords"
+          content="Stock Market Live Line API, 
         Live Stock Market API, 
         Real-Time Stock Market API, Stock Price Live API,
         Stock Data API Provider,
@@ -220,7 +252,7 @@ export default function Ecommerce(props:any) {
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
         <meta charSet="UTF-8" />
-        
+
         <meta
           property="og:title"
           content="Stock Market Live Line API | Real-Time Stock Data for Traders and Platforms"
@@ -233,7 +265,7 @@ export default function Ecommerce(props:any) {
         <meta property="og:url" content="https://www.comfygen.com/stock-market-live-line-api" />
         <meta property="og:image" content="https://www.comfygen.com/media/svg/comfygen-logo.svg" />
 
-        
+
         <meta
           name="twitter:title"
           content="Stock Market Live Line API | Real-Time Data for Trading Apps"
@@ -245,7 +277,7 @@ export default function Ecommerce(props:any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://www.comfygen.com/media/svg/comfygen-logo.svg" />
 
-        
+
         <meta name="copyright" content="Comfygen Private Limited" />
         <meta name="language" content="en-us" />
         <meta name="abstract" content="Best Stock Market API Development Industry" />
@@ -265,7 +297,7 @@ export default function Ecommerce(props:any) {
         <meta name="og:latitude" content="26.912434°" />
         <meta name="og:longitude" content="75.787271°" />
 
-      
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -284,23 +316,23 @@ export default function Ecommerce(props:any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/stock-market-live-line-api/stock-market-live-line-api-hero.webp')]">
-        <HeroSectionForAllPages
-          heading="Stock Market Live Line API Development Company"
-          subhead="Your Trusted Stock Market Live Line App Development Company for Real-Time Financial Data Solutions."
-          ptag="Stock trading isn’t just a business—it’s a real-time decision game. Comfygen brings you advanced stock market live line API development to deliver up-to-the-second market updates. Our live stock API software provides real-time stock prices, indices, and financial stats for a seamless data experience across platforms. The system supports fast integration of live financial data APIs into any trading or stock analysis app."
-          ptag1="Connect with our skilled Fintech app developers to build a robust, data-driven stock market application with smooth UI and real-time streaming capabilities. "
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-        />
+          <HeroSectionForAllPages
+            heading="Stock Market Live Line API Development Company"
+            subhead="Your Trusted Stock Market Live Line App Development Company for Real-Time Financial Data Solutions."
+            ptag="Stock trading isn’t just a business—it’s a real-time decision game. Comfygen brings you advanced stock market live line API development to deliver up-to-the-second market updates. Our live stock API software provides real-time stock prices, indices, and financial stats for a seamless data experience across platforms. The system supports fast integration of live financial data APIs into any trading or stock analysis app."
+            ptag1="Connect with our skilled Fintech app developers to build a robust, data-driven stock market application with smooth UI and real-time streaming capabilities. "
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+          />
         </div>
 
         <AboutSection
@@ -314,13 +346,25 @@ export default function Ecommerce(props:any) {
           linkText="Explore More"
         />
 
-        <ContactFromCenter />
-       
+        {/* <ContactFromCenter /> */}
 
-        <ServicesSection 
-          heading="Benefits of Using Our Stock Market API Services"
-          subtitle="Choosing the right stock market API service provider can make all the difference. Here’s what you get with us:"
-          servicesData={JSON_DATA.servicesData} />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Benefits of Using Our Stock Market API Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Choosing the right stock market API service provider can make all the difference. Here’s what you get with us:
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
 
         <ConsultancyApproach
@@ -338,12 +382,22 @@ export default function Ecommerce(props:any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
 
-        <ProcessSection 
-          title="How Our Stock Market Live Line API Development Process Works"
-          description="We understand the importance of a reliable and seamless stock market live line API integration, and we’re here to support you at every stage of the development process. As Comfygen is a trusted stock market API service provider, our goal is to make stock market API implementation smooth, fast, and developer-friendly. Follow this step-by-step guide to start delivering real-time stock market data in your apps and platforms."
-          processSlides={Process} />
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                How Our Stock Market Live Line API Development Process Works
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+                We understand the importance of a reliable and seamless stock market live line API integration, and we’re here to support you at every stage of the development process. As Comfygen is a trusted stock market API service provider, our goal is to make stock market API implementation smooth, fast, and developer-friendly. Follow this step-by-step guide to start delivering real-time stock market data in your apps and platforms.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -365,12 +419,12 @@ export default function Ecommerce(props:any) {
             "Financial analytics tools.",
             "Mobile and desktop apps with real-time stock feeds"
           ]}
-          
+
         />
 
-        <OtherGameDevelopment 
-            heading="We Develops Other Games"
-            gameCards={JSON_DATA.GameCardData} />
+        <OtherGameDevelopment
+          heading="We Develops Other Games"
+          gameCards={JSON_DATA.GameCardData} />
 
         <Faq
           faqData={JSON_DATA.Frequently}

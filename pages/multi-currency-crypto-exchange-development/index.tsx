@@ -1,40 +1,90 @@
+import { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multicurrencycryptoexchangedevelopment.json";
-import { useState } from "react";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import Faq from "../components/Faq";
-import TechStack from "../components/TechStack";
-import HireDeveloper from "../components/HireDeveloper";
-
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import PortfolioSec from "../components/PortfolioSec";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
-import ClientTestimonials from "../components/ClientTestimonials";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import TrendsSection from "../componentsnew/TrendsSection";
 
 
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
 
-
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const NewSection = dynamic(() => import("../components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  { loading: loader, ssr: true }
+);
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const NewSection = dynamic(
+  () => import("../Newcomponet/comman/NewSection"),
+  { loading: loader, ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
+
 const Processs = [
   {
     title: "Requirement Gathering & Planning",
@@ -117,8 +167,8 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    
-    { 
+
+    {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Multi-Currency Crypto Exchange Development Company",
@@ -138,9 +188,9 @@ export default function Ecommerce(props) {
         "Multi-Currency Crypto Trading Platform Development",
         "Multi-Currency Crypto Wallet Integration"
       ],
-    
+
       "sameAs": [
-        "https://www.facebook.com/comfygen.technologies/", 
+        "https://www.facebook.com/comfygen.technologies/",
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
 
@@ -212,15 +262,17 @@ export default function Ecommerce(props) {
       ]
     },
     {
-      "@context":"http://www.schema.org",
-      "@type":"Product",
-      "brand":"Comfygen Private Limited",
-      "Name":"Multi-Currency Crypto Exchange Development Company",
-      "image":"Hero section image",
-      "description":"Build secure, AI-powered multi-currency crypto exchanges with Comfygen. Support multiple coins, real-time conversion & global transactions. Get a free quote!.",
-      "aggregateRating":{"@type":"AggregateRating",
-      "ratingValue":"4.9",
-      "reviewCount":"1748"}
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "Name": "Multi-Currency Crypto Exchange Development Company",
+      "image": "Hero section image",
+      "description": "Build secure, AI-powered multi-currency crypto exchanges with Comfygen. Support multiple coins, real-time conversion & global transactions. Get a free quote!.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
 
 
     },
@@ -294,12 +346,12 @@ export default function Ecommerce(props) {
         }
       ]
     }
-    
-    
+
+
   ];
   return (
     <>
-     <Head>
+      <Head>
         <title>Multi-Currency Crypto Exchange Development Company</title>
         <meta
           name="description"
@@ -426,22 +478,21 @@ export default function Ecommerce(props) {
           }}
         />
 
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
+
+      <Header />
+
       <div className="overflow-hidden pt-16">
-        
         <HeroSectionForAllPages
           heading="Multi-Currency Crypto Exchange Development Company"
           ptag="Build a powerful, scalable multi-currency crypto exchange platform supporting top cryptocurrencies and fiat currencies. As a leading crypto exchange development company, we help businesses launch secure, feature-rich, and seamless multi-coin trading platforms."
-          
+
           li="Scalable multi-currency crypto exchange platforms"
           li1="Support for top crypto and fiat currencies"
           li2="Seamless multi-coin and fiat-to-crypto trading"
@@ -458,10 +509,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/multi-currency-crypto-exchange-development/multi-currency-crypto-exchange-development-hero.webp"
         />
-
-
         <NewSection NewSection={JSON_DATA.NewSections} />
-
         <AboutSection
           title=""
           heading="Best Multi-Currency Crypto Exchange Development for Startups, Exchanges & Enterprises"
@@ -476,41 +524,66 @@ export default function Ecommerce(props) {
             "Compliance-ready with global regulatory standards",
             "Dedicated support and maintenance services"
           ]}
-          
+
           imageSrc="https://www.comfygen.com/comfygen-images/multi-currency-crypto-exchange-development/multi-currency-crypto-exchange-development-about1.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
-        
 
-        <ServicesSection 
-          heading="Our Multi-Currency Exchange Development Solutions"
-          subtitle="We deliver cutting-edge multi-currency <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/what-is-a-p2p-crypto-exchange-how-peer-to-peer-trading-works/'>crypto exchange development</a> solutions, empowering businesses in the rapidly evolving digital asset ecosystem. Our platforms offer unmatched scalability, security, and user experience, enabling seamless trading across diverse cryptocurrencies and fiat currencies."
-          servicesData={JSON_DATA.servicesData}  
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Multi-Currency Exchange Development Solutions
+              </h2>
+              <p className="text-base text-center font-normal">
+                We deliver cutting-edge multi-currency <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/what-is-a-p2p-crypto-exchange-how-peer-to-peer-trading-works/'>crypto exchange development</a> solutions, empowering businesses in the rapidly evolving digital asset ecosystem. Our platforms offer unmatched scalability, security, and user experience, enabling seamless trading across diverse cryptocurrencies and fiat currencies.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        <CoreFeaturesSection
+          title="Types of Multi-Currency Crypto Exchange Platforms We Develop"
+          subtitle="We offer tailored multi-currency crypto exchange platforms supporting a wide range of cryptocurrencies and fiat pairs, ensuring secure, scalable, and high-performing environments:"
+          features={JSON_DATA.LeadingSoftware}
         />
 
-        <CoreFeaturesSection 
-          title="Types of Multi-Currency Crypto Exchange Platforms We Develop" 
-          subtitle="We offer tailored multi-currency crypto exchange platforms supporting a wide range of cryptocurrencies and fiat pairs, ensuring secure, scalable, and high-performing environments:"
-          features={JSON_DATA.LeadingSoftware} />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Multi-Currency Crypto Exchange Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+                At Comfygen, we follow a streamlined and secure development process to build reliable and scalable multi-currency crypto exchange platforms tailored for startups, <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases/'>enterprises</a>, and global markets.
+              </p>
+            </div>
+            <ProcessSec processSlides={Processs} />
+          </div>
+        </section>
 
 
-        <ProcessSection 
-          title="Our Multi-Currency Crypto Exchange Development Process" 
-          description="At Comfygen, we follow a streamlined and secure development process to build reliable and scalable multi-currency crypto exchange platforms tailored for startups, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases/'>enterprises</a>, and global markets." 
-          processSlides={Processs} />
+
 
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Our Portfolio: Multi-Currency Crypto Exchange Development"
-          description="At Comfygen, we take pride in delivering cutting-edge multi-currency <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/centralized-crypto-exchange-development-in-2025-trends-tech-stack-market-outlook/'>crypto exchange solutions</a> tailored to diverse business needs. Our portfolio showcases a range of successful projects, including centralized, decentralized, and <a class='text-blue-500 font-semibold' href='/hybrid-crypto-exchange-development'>hybrid exchange</a> platforms with seamless support for multiple cryptocurrencies and fiat currencies."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Portfolio: Multi-Currency Crypto Exchange Development"
+            description="At Comfygen, we take pride in delivering cutting-edge multi-currency <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/centralized-crypto-exchange-development-in-2025-trends-tech-stack-market-outlook/'>crypto exchange solutions</a> tailored to diverse business needs. Our portfolio showcases a range of successful projects, including centralized, decentralized, and <a class='text-blue-500 font-semibold' href='/hybrid-crypto-exchange-development'>hybrid exchange</a> platforms with seamless support for multiple cryptocurrencies and fiat currencies."
+          />
+        </section>
 
-        <TrendsSection 
-          heading="Key Benefits of Our Multi-Currency Exchange Development Services" 
+
+
+        <TrendsSection
+          heading="Key Benefits of Our Multi-Currency Exchange Development Services"
           subtitle="Partnering with us for your multi-currency exchange development ensures you get a robust, scalable, and secure platform tailored to your business goals. Our expertise delivers a seamless trading experience for users across diverse cryptocurrencies and fiat currencies."
           trends={JSON_DATA.Emerging} />
 
@@ -539,7 +612,7 @@ export default function Ecommerce(props) {
             "Flexible Hiring Models",
             "Post-Deployment Support & Upgrades"
           ]}
-          
+
         />
 
 

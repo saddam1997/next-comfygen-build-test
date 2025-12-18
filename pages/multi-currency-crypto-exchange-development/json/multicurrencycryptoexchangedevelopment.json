@@ -11,42 +11,40 @@
       "title": "Trusted by Global Brands",
       "description": "Top traders and exchanges trust Comfygen for secure, fast, and efficient crypto trading bot development solutions. "
     },
-   "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "9+ Years of Proven Blockchain Development Experience",
-    "description": "With over eight years in the blockchain industry, we have mastered the art of developing high-performance, regulation-compliant <a href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' class='text-blue-500 font-semibold'>crypto exchange</a> platforms tailored to diverse business needs."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "9+ Years of Proven Blockchain Development Experience",
+        "description": "With over eight years in the blockchain industry, we have mastered the art of developing high-performance, regulation-compliant <a href='https://www.comfygen.com/blog/best-crypto-exchanges-australia-2025/' class='text-blue-500 font-semibold'>crypto exchange</a> platforms tailored to diverse business needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "80% In-House Blockchain Experts",
+        "description": "Our team comprises 80% dedicated <a href='/blockchain-development' class='text-blue-500 font-semibold'>blockchain professionals</a>, including developers, architects, and security analysts, ensuring your platform is engineered with the highest technical precision and industry standards."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "505+ Successful Projects Delivered",
+        "description": "From startups to enterprises, we’ve successfully delivered over 500 blockchain projects worldwide, demonstrating our capability to handle complex exchange systems with ease and confidence."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "121+ Satisfied Clients Across the Globe",
+        "description": "Our client-first approach, transparent communication, and commitment to excellence have earned us the trust of over 120 clients from across the globe — many of whom return for long-term collaboration."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "24×7 Dedicated Support & Maintenance",
+        "description": "We provide round-the-clock technical support, proactive monitoring, and real-time issue resolution to ensure your exchange operates smoothly and remains competitive at all times."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "100% Error-Free & Secure Deployments",
+        "description": "Our rigorous QA processes, multi-level testing, and security-first approach ensure fully functional, bug-free, and hack-resistant exchanges that meet global compliance standards."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "80% In-House Blockchain Experts",
-    "description": "Our team comprises 80% dedicated <a href='/blockchain-development' class='text-blue-500 font-semibold'>blockchain professionals</a>, including developers, architects, and security analysts, ensuring your platform is engineered with the highest technical precision and industry standards."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "505+ Successful Projects Delivered",
-    "description": "From startups to enterprises, we’ve successfully delivered over 500 blockchain projects worldwide, demonstrating our capability to handle complex exchange systems with ease and confidence."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "121+ Satisfied Clients Across the Globe",
-    "description": "Our client-first approach, transparent communication, and commitment to excellence have earned us the trust of over 120 clients from across the globe — many of whom return for long-term collaboration."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "24×7 Dedicated Support & Maintenance",
-    "description": "We provide round-the-clock technical support, proactive monitoring, and real-time issue resolution to ensure your exchange operates smoothly and remains competitive at all times."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "100% Error-Free & Secure Deployments",
-    "description": "Our rigorous QA processes, multi-level testing, and security-first approach ensure fully functional, bug-free, and hack-resistant exchanges that meet global compliance standards."
-  }
-]
-
-  },
-
- "servicesData": [
+  "servicesData": [
     {
       "title": "Custom Crypto Exchange Development",
       "description": "We build fully customized cryptocurrency exchange platforms to support complex trading workflows, multi-asset transactions, and high-frequency trading. These platforms are optimized for speed, scalability, and seamless user experience, complete with advanced trading modules and admin control.",
@@ -118,43 +116,55 @@
       ]
     }
   ],
-  
-  
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "<a href='/centralized-crypto-exchange-development' class='font-semibold text-blue-500'>Centralized Multi-Currency Exchanges</a>",
+      "decs": "Admin-controlled exchanges with fast transactions, fiat support, and KYC/AML compliance are ideal for high-volume global operations."
+    },
+    {
+      "num": "02",
+      "title": "Decentralized Multi-Currency Exchanges",
+      "decs": "Wallet-to-wallet trading via smart contracts for a secure, transparent, non-custodial experience."
+    },
+    {
+      "num": "03",
+      "title": "<a href='https://www.comfygen.com/hybrid-crypto-exchange-development' class='font-semibold text-blue-500'>Hybrid Multi-Currency Exchange Platforms</a>",
+      "decs": "Combining CEX speed with DEX privacy for balanced performance."
+    },
+    {
+      "num": "04",
+      "title": "<a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='font-semibold text-blue-500'>White-Label Multi-Currency Exchange Solutions</a>",
+      "decs": "Quickly launch customizable platforms with pre-built engines and wallets."
+    },
+    {
+      "num": "05",
+      "title": "Peer-to-Peer <a href='/p2p-crypto-exchange-development' class='font-semibold text-blue-500'>(P2P)</a> Multi-Currency Exchange Platforms",
+      "decs": "Direct user trades with escrow and multi-payment options are great for underbanked regions."
+    },
+    {
+      "num": "06",
+      "title": "OTC (Over-the-Counter) Multi-Currency Exchange Platforms",
+      "decs": "Secure bulk transactions with liquidity <a href='/otc-crypto-exchange-development' class='font-semibold text-blue-500'>OTC crypto exchange</a>  tools for high-value trades."
+    }
+  ],
 
-    "LeadingSoftware": [
-      {
-        "num": "01",
-        "title": "<a href='/centralized-crypto-exchange-development' class='font-semibold text-blue-500'>Centralized Multi-Currency Exchanges</a>",
-        "decs": "Admin-controlled exchanges with fast transactions, fiat support, and KYC/AML compliance are ideal for high-volume global operations."
-      },
-      {
-        "num": "02",
-        "title": "Decentralized Multi-Currency Exchanges",
-        "decs": "Wallet-to-wallet trading via smart contracts for a secure, transparent, non-custodial experience."
-      },
-      {
-        "num": "03",
-        "title": "<a href='https://www.comfygen.com/hybrid-crypto-exchange-development' class='font-semibold text-blue-500'>Hybrid Multi-Currency Exchange Platforms</a>",
-        "decs": "Combining CEX speed with DEX privacy for balanced performance."
-      },
-      {
-        "num": "04",
-        "title": "<a href='https://www.comfygen.com/white-label-crypto-exchange-development' class='font-semibold text-blue-500'>White-Label Multi-Currency Exchange Solutions</a>",
-        "decs": "Quickly launch customizable platforms with pre-built engines and wallets."
-      },
-      {
-        "num": "05",
-        "title": "Peer-to-Peer <a href='/p2p-crypto-exchange-development' class='font-semibold text-blue-500'>(P2P)</a> Multi-Currency Exchange Platforms",
-        "decs": "Direct user trades with escrow and multi-payment options are great for underbanked regions."
-      },
-      {
-        "num": "06",
-        "title": "OTC (Over-the-Counter) Multi-Currency Exchange Platforms",
-        "decs": "Secure bulk transactions with liquidity <a href='/otc-crypto-exchange-development' class='font-semibold text-blue-500'>OTC crypto exchange</a>  tools for high-value trades."
-      }
-    ],
-  
-  
+  "portfoliodata": [
+    {
+      "image":"https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/centralized-crypto-exchange-platform-dev.webp",
+      "title": "Centralized Crypto Exchange Platform Development",
+      "description": "Comfygen developed a Crypto Exchange Platform, a powerful and secure centralized cryptocurrency exchange designed for high-volume trading. Our client envisioned a platform where users could trade multiple cryptocurrencies with advanced trading tools, real-time data, and enterprise-grade security.With the growing demand for secure and scalable exchange solutions, the client partnered with us to launch a robust trading infrastructure that supports spot, margin, and futures trading with a seamless user experience.",
+      "link": "/portfolio/centralized-crypto-exchange-development"
+    },
+    {
+      "image":"https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
+      "title": "ExchangeX OTC – P2P & OTC Crypto Exchange Platform Development",
+      "description": "Comfygen partnered with a fintech startup to build ExchangeX OTC, a hybrid crypto exchange platform supporting P2P and Over-the-Counter (OTC) trading functionalities. The goal was to create a decentralized yet secure environment where users can trade directly, bypassing traditional intermediaries.This custom-built platform empowers users with privacy, transparency, and control over crypto transactions, with fiat payment integrations across regions like the UAE, India, and Nigeria.",
+      "link":  "/portfolio/p2p-crypto-exchange-development"
+    }
+    
+  ],
+
 
   "IndustryApplications": [
     {
@@ -177,52 +187,49 @@
       "title": " Hedge Funds & Institutional Traders",
       "decs": "Institutional clients and hedge funds rely on our AI-powered crypto trading bots to implement high-frequency trading (HFT), arbitrage, and predictive algorithms. These bots are capable of executing thousands of trades per second, optimizing for speed, accuracy, and maximum ROI."
     }
-
-
   ],
- "CryptoTrading": [
-  {
-    "num": "01",
-    "title": "Cross-Border Remittances",
-    "decs": "Multi-currency crypto exchanges streamline international money transfers by enabling fast, low-cost transactions across countries. Users can send money in crypto and have it converted into local fiat in real-time, bypassing traditional banking delays."
-  },
-  {
-    "num": "02",
-    "title": "E-commerce & Online Payments",
-    "decs": "Retailers and online marketplaces integrate with multi-currency crypto exchanges to accept various cryptocurrencies and automatically convert them into fiat. This improves checkout flexibility and reduces payment friction for global customers."
-  },
-  {
-    "num": "03",
-    "title": "Digital Banking & Neobanks",
-    "decs": "Modern banks are embedding <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchange</a> functionalities into their platforms, offering users access to trading, storing, and converting digital assets without leaving their banking app."
-  },
-  {
-    "num": "04",
-    "title": "Institutional Crypto Trading",
-    "decs": "Institutions use multi-currency exchanges for high-volume trading, asset diversification, and liquidity management across crypto and fiat pairs, backed by robust security and compliance."
-  },
-  {
-    "num": "05",
-    "title": "Decentralized Finance (DeFi) Integration",
-    "decs": "DeFi apps connect to centralized multi-currency exchanges to access liquidity, enable token swaps, and support cross-chain transactions between various assets."
-  },
-  {
-    "num": "06",
-    "title": "Crypto ATMs & POS Systems",
-    "decs": "By integrating with multi-currency exchanges, crypto ATMs and point-of-sale (POS) devices allow real-time conversion of crypto into local fiat, enabling in-store purchases and cash withdrawals."
-  },
-  {
-    "num": "07",
-    "title": "NFT Marketplaces & GameFi Platforms",
-    "decs": "NFT and gaming ecosystems use multi-currency exchanges to offer seamless purchases, reward conversions, and token swaps, powering the economic layer of the metaverse and play-to-earn games."
-  },
-  {
-    "num": "08",
-    "title": "Token Launch & Fundraising (IEO/IDO)",
-    "decs": "Startups and crypto projects use multi-currency exchanges to conduct Initial Exchange Offerings (IEOs) or IDOs, giving investors access to a wide range of trading pairs right after the launch."
-  }
-],
-
+  "CryptoTrading": [
+    {
+      "num": "01",
+      "title": "Cross-Border Remittances",
+      "decs": "Multi-currency crypto exchanges streamline international money transfers by enabling fast, low-cost transactions across countries. Users can send money in crypto and have it converted into local fiat in real-time, bypassing traditional banking delays."
+    },
+    {
+      "num": "02",
+      "title": "E-commerce & Online Payments",
+      "decs": "Retailers and online marketplaces integrate with multi-currency crypto exchanges to accept various cryptocurrencies and automatically convert them into fiat. This improves checkout flexibility and reduces payment friction for global customers."
+    },
+    {
+      "num": "03",
+      "title": "Digital Banking & Neobanks",
+      "decs": "Modern banks are embedding <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchange</a> functionalities into their platforms, offering users access to trading, storing, and converting digital assets without leaving their banking app."
+    },
+    {
+      "num": "04",
+      "title": "Institutional Crypto Trading",
+      "decs": "Institutions use multi-currency exchanges for high-volume trading, asset diversification, and liquidity management across crypto and fiat pairs, backed by robust security and compliance."
+    },
+    {
+      "num": "05",
+      "title": "Decentralized Finance (DeFi) Integration",
+      "decs": "DeFi apps connect to centralized multi-currency exchanges to access liquidity, enable token swaps, and support cross-chain transactions between various assets."
+    },
+    {
+      "num": "06",
+      "title": "Crypto ATMs & POS Systems",
+      "decs": "By integrating with multi-currency exchanges, crypto ATMs and point-of-sale (POS) devices allow real-time conversion of crypto into local fiat, enabling in-store purchases and cash withdrawals."
+    },
+    {
+      "num": "07",
+      "title": "NFT Marketplaces & GameFi Platforms",
+      "decs": "NFT and gaming ecosystems use multi-currency exchanges to offer seamless purchases, reward conversions, and token swaps, powering the economic layer of the metaverse and play-to-earn games."
+    },
+    {
+      "num": "08",
+      "title": "Token Launch & Fundraising (IEO/IDO)",
+      "decs": "Startups and crypto projects use multi-currency exchanges to conduct Initial Exchange Offerings (IEOs) or IDOs, giving investors access to a wide range of trading pairs right after the launch."
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -230,41 +237,40 @@
       "desc": "Multi-currency crypto exchanges are empowering a wide range of industries with seamless crypto-fiat conversions and multi-token trading capabilities. Here are the top 8 real-world applications in 2025:"
     }
   ],
-"consultancyData": [
-  {
-    "title": "Cross-Border Remittances",
-    "desc": "Multi-currency crypto exchanges streamline international money transfers by enabling fast, low-cost transactions across countries. Users can send money in crypto and have it converted into local fiat in real-time, bypassing traditional banking delays."
-  },
-  {
-    "title": "E-commerce & Online Payments",
-    "desc": "Retailers and online marketplaces integrate with multi-currency crypto exchanges to accept various cryptocurrencies and automatically convert them into fiat. This improves checkout flexibility and reduces payment friction for global customers."
-  },
-  {
-    "title": "Digital Banking & Neobanks",
-    "desc": "Modern banks are embedding <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchange</a> functionalities into their platforms, offering users access to trading, storing, and converting digital assets without leaving their banking app."
-  },
-  {
-    "title": "Institutional Crypto Trading",
-    "desc": "Institutions use multi-currency exchanges for high-volume trading, asset diversification, and liquidity management across crypto and fiat pairs, backed by robust security and compliance."
-  },
-  {
-    "title": "Decentralized Finance (DeFi) Integration",
-    "desc": "DeFi apps connect to centralized multi-currency exchanges to access liquidity, enable token swaps, and support cross-chain transactions between various assets."
-  },
-  {
-    "title": "Crypto ATMs & POS Systems",
-    "desc": "By integrating with multi-currency exchanges, crypto ATMs and point-of-sale (POS) devices allow real-time conversion of crypto into local fiat, enabling in-store purchases and cash withdrawals."
-  },
-  {
-    "title": "NFT Marketplaces & GameFi Platforms",
-    "desc": "NFT and gaming ecosystems use multi-currency exchanges to offer seamless purchases, reward conversions, and token swaps, powering the economic layer of the metaverse and play-to-earn games."
-  },
-  {
-    "title": "Token Launch & Fundraising (IEO/IDO)",
-    "desc": "Startups and crypto projects use multi-currency exchanges to conduct Initial Exchange Offerings (IEOs) or IDOs, giving investors access to a wide range of trading pairs right after the launch."
-  }
-],
-
+  "consultancyData": [
+    {
+      "title": "Cross-Border Remittances",
+      "desc": "Multi-currency crypto exchanges streamline international money transfers by enabling fast, low-cost transactions across countries. Users can send money in crypto and have it converted into local fiat in real-time, bypassing traditional banking delays."
+    },
+    {
+      "title": "E-commerce & Online Payments",
+      "desc": "Retailers and online marketplaces integrate with multi-currency crypto exchanges to accept various cryptocurrencies and automatically convert them into fiat. This improves checkout flexibility and reduces payment friction for global customers."
+    },
+    {
+      "title": "Digital Banking & Neobanks",
+      "desc": "Modern banks are embedding <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchange</a> functionalities into their platforms, offering users access to trading, storing, and converting digital assets without leaving their banking app."
+    },
+    {
+      "title": "Institutional Crypto Trading",
+      "desc": "Institutions use multi-currency exchanges for high-volume trading, asset diversification, and liquidity management across crypto and fiat pairs, backed by robust security and compliance."
+    },
+    {
+      "title": "Decentralized Finance (DeFi) Integration",
+      "desc": "DeFi apps connect to centralized multi-currency exchanges to access liquidity, enable token swaps, and support cross-chain transactions between various assets."
+    },
+    {
+      "title": "Crypto ATMs & POS Systems",
+      "desc": "By integrating with multi-currency exchanges, crypto ATMs and point-of-sale (POS) devices allow real-time conversion of crypto into local fiat, enabling in-store purchases and cash withdrawals."
+    },
+    {
+      "title": "NFT Marketplaces & GameFi Platforms",
+      "desc": "NFT and gaming ecosystems use multi-currency exchanges to offer seamless purchases, reward conversions, and token swaps, powering the economic layer of the metaverse and play-to-earn games."
+    },
+    {
+      "title": "Token Launch & Fundraising (IEO/IDO)",
+      "desc": "Startups and crypto projects use multi-currency exchanges to conduct Initial Exchange Offerings (IEOs) or IDOs, giving investors access to a wide range of trading pairs right after the launch."
+    }
+  ],
   "cardData": [
     {
       "num": "1",
@@ -368,95 +374,92 @@
       "decs": "Business growth is a priority for Comfygen. Offering cutting-edge solutions is one of our top priorities and we are passionate about blockchain technology. With our team s blockchain technology expertise, we can design and build a platform that meets the needs of your business. Due to our knowledge and experience, we can assist you in growing your cryptocurrency business"
     }
   ],
-"Frequently": [
-  {
-    "num": "1",
-    "title": "What is a multi-currency crypto exchange?",
-    "desc": "A multi-currency crypto exchange is a digital trading platform that supports multiple cryptocurrencies and fiat currencies. It allows users to trade, swap, and convert different currencies seamlessly in real time, making global transactions more efficient."
-  },
-  {
-    "num": "2",
-    "title": "Why should I build a multi-currency crypto exchange?",
-    "desc": "Building a multi-currency exchange helps you tap into global markets by offering users the flexibility to trade across various currencies. It also enhances user experience, increases liquidity, and attracts a broader audience, including institutional investors."
-  },
-  {
-    "num": "3",
-    "title": "What features should a multi-currency crypto exchange include?",
-    "desc": "Essential features include:\n- Multi-wallet and multi-chain support\n- Real-time currency conversion\n- AI-based risk and fraud detection\n- Advanced trading engine\n- KYC/AML compliance\n- Multi-language and multi-payment gateway integration"
-  },
-  {
-    "num": "4",
-    "title": "How secure is a multi-currency crypto exchange developed by Comfygen?",
-    "desc": "At Comfygen, we prioritize enterprise-grade security. Our multi-currency exchanges come with biometric authentication, AI-driven fraud detection, encrypted wallets, multi-factor authentication, and DDoS protection to ensure the highest level of security."
-  },
-  {
-    "num": "5",
-    "title": "Can I customize the currency pairs and trading modules?",
-    "desc": "Absolutely. Our multi-currency crypto exchange solutions are fully customizable. You can define your own currency pairs, trading fees, modules, and third-party integrations based on your business needs."
-  },
-  {
-    "num": "6",
-    "title": "How much does it cost to develop a multi-currency crypto exchange?",
-    "desc": "The development cost depends on your platform complexity, features, number of currencies supported, and security requirements. On average, it ranges from $25,000 to $100,000 for a custom solution. Contact us for a personalized quote."
-  },
-  {
-    "num": "7",
-    "title": "Do you offer post-launch support and maintenance?",
-    "desc": "Yes. We offer full post-launch support, including regular updates, performance optimization, bug fixes, and feature enhancements to ensure smooth and secure operations."
-  },
-  {
-    "num": "8",
-    "title": "How long does it take to develop a multi-currency crypto exchange platform?",
-    "desc": "The development timeline typically ranges from 8 to 16 weeks, depending on the scope, integrations, and features required. We follow an agile development process to speed up delivery without compromising on quality."
-  }
-],
-
-
-"testimonials": [
-  {
-    "text": "“Comfygen built a multi-currency crypto exchange for us that seamlessly supports fiat and 100+ cryptocurrencies. The speed, scalability, and real-time conversion features exceeded our expectations.”",
-    "name": "Ananya Desai",
-    "title": "India",
-    "rating": "★★★★★",
-    "stars": 5
-  },
-  {
-    "text": "“The team at Comfygen delivered a fully customized exchange with integrated multi-wallet support and robust compliance tools. Cross-border transactions are now smoother than ever.”",
-    "name": "Julien Moreau",
-    "title": "France",
-    "rating": "★★★★★",
-    "stars": 5
-  },
-  {
-    "text": "“We needed a multi-currency crypto platform with multilingual, multi-payment, and multi-chain support. Comfygen delivered on all fronts and helped us go live in record time.”",
-    "name": "Lewis",
-    "title": "Australia",
-    "rating": "★★★★★",
-    "stars": 5
-  },
-  {
-    "text": "“Comfygen’s developers helped us build a global-ready exchange with dynamic currency pairs and AI-powered price prediction. Our user engagement has doubled since launch.”",
-    "name": "Daniel Romero",
-    "title": "Mexico",
-    "rating": "★★★★★",
-    "stars": 5
-  },
-  {
-    "text": "“Our corporate treasury needed a secure, multi-currency crypto exchange with instant settlements and FX integration. Comfygen’s solution was fast, secure, and regulation-ready.”",
-    "name": "Natalie Carter",
-    "title": "UK",
-    "rating": "★★★★★",
-    "stars": 5
-  },
-  {
-    "text": "“Thanks to Comfygen, our multi-currency exchange now supports auto-conversion, localized payment gateways, and real-time portfolio balancing. Exceptional work by a talented team.”",
-    "name": "Mikhail Ivanov",
-    "title": "Russia",
-    "rating": "★★★★★",
-    "stars": 5
-  }
-],
-
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is a multi-currency crypto exchange?",
+      "desc": "A multi-currency crypto exchange is a digital trading platform that supports multiple cryptocurrencies and fiat currencies. It allows users to trade, swap, and convert different currencies seamlessly in real time, making global transactions more efficient."
+    },
+    {
+      "num": "2",
+      "title": "Why should I build a multi-currency crypto exchange?",
+      "desc": "Building a multi-currency exchange helps you tap into global markets by offering users the flexibility to trade across various currencies. It also enhances user experience, increases liquidity, and attracts a broader audience, including institutional investors."
+    },
+    {
+      "num": "3",
+      "title": "What features should a multi-currency crypto exchange include?",
+      "desc": "Essential features include:\n- Multi-wallet and multi-chain support\n- Real-time currency conversion\n- AI-based risk and fraud detection\n- Advanced trading engine\n- KYC/AML compliance\n- Multi-language and multi-payment gateway integration"
+    },
+    {
+      "num": "4",
+      "title": "How secure is a multi-currency crypto exchange developed by Comfygen?",
+      "desc": "At Comfygen, we prioritize enterprise-grade security. Our multi-currency exchanges come with biometric authentication, AI-driven fraud detection, encrypted wallets, multi-factor authentication, and DDoS protection to ensure the highest level of security."
+    },
+    {
+      "num": "5",
+      "title": "Can I customize the currency pairs and trading modules?",
+      "desc": "Absolutely. Our multi-currency crypto exchange solutions are fully customizable. You can define your own currency pairs, trading fees, modules, and third-party integrations based on your business needs."
+    },
+    {
+      "num": "6",
+      "title": "How much does it cost to develop a multi-currency crypto exchange?",
+      "desc": "The development cost depends on your platform complexity, features, number of currencies supported, and security requirements. On average, it ranges from $25,000 to $100,000 for a custom solution. Contact us for a personalized quote."
+    },
+    {
+      "num": "7",
+      "title": "Do you offer post-launch support and maintenance?",
+      "desc": "Yes. We offer full post-launch support, including regular updates, performance optimization, bug fixes, and feature enhancements to ensure smooth and secure operations."
+    },
+    {
+      "num": "8",
+      "title": "How long does it take to develop a multi-currency crypto exchange platform?",
+      "desc": "The development timeline typically ranges from 8 to 16 weeks, depending on the scope, integrations, and features required. We follow an agile development process to speed up delivery without compromising on quality."
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "“Comfygen built a multi-currency crypto exchange for us that seamlessly supports fiat and 100+ cryptocurrencies. The speed, scalability, and real-time conversion features exceeded our expectations.”",
+      "name": "Ananya Desai",
+      "title": "India",
+      "rating": "★★★★★",
+      "stars": 5
+    },
+    {
+      "text": "“The team at Comfygen delivered a fully customized exchange with integrated multi-wallet support and robust compliance tools. Cross-border transactions are now smoother than ever.”",
+      "name": "Julien Moreau",
+      "title": "France",
+      "rating": "★★★★★",
+      "stars": 5
+    },
+    {
+      "text": "“We needed a multi-currency crypto platform with multilingual, multi-payment, and multi-chain support. Comfygen delivered on all fronts and helped us go live in record time.”",
+      "name": "Lewis",
+      "title": "Australia",
+      "rating": "★★★★★",
+      "stars": 5
+    },
+    {
+      "text": "“Comfygen’s developers helped us build a global-ready exchange with dynamic currency pairs and AI-powered price prediction. Our user engagement has doubled since launch.”",
+      "name": "Daniel Romero",
+      "title": "Mexico",
+      "rating": "★★★★★",
+      "stars": 5
+    },
+    {
+      "text": "“Our corporate treasury needed a secure, multi-currency crypto exchange with instant settlements and FX integration. Comfygen’s solution was fast, secure, and regulation-ready.”",
+      "name": "Natalie Carter",
+      "title": "UK",
+      "rating": "★★★★★",
+      "stars": 5
+    },
+    {
+      "text": "“Thanks to Comfygen, our multi-currency exchange now supports auto-conversion, localized payment gateways, and real-time portfolio balancing. Exceptional work by a talented team.”",
+      "name": "Mikhail Ivanov",
+      "title": "Russia",
+      "rating": "★★★★★",
+      "stars": 5
+    }
+  ],
   "Develop": [
     {
       "num": "1",
@@ -534,39 +537,38 @@
       "decs": "Planning"
     }
   ],
-"Emerging": [
-  {
-    "num": "1",
-    "title": "Seamless Multi-Currency Trading",
-    "decs": "Support for a wide range of cryptocurrencies and fiat currencies in a single platform, enabling users to easily trade across global markets."
-  },
-  {
-    "num": "2",
-    "title": "Integrated Crypto-Fiat Swap Functionality",
-    "decs": "Allow instant conversion between crypto and fiat, enhancing liquidity and user convenience while supporting mainstream adoption."
-  },
-  {
-    "num": "3",
-    "title": "Advanced Wallet Integration",
-    "decs": "Secure, multi-currency wallets with real-time balance updates, hot & cold storage, and support for asset management and portfolio tracking."
-  },
-  {
-    "num": "4",
-    "title": "Robust Security Framework",
-    "decs": "End-to-end encryption, 2FA, anti-phishing layers, DDoS protection, and secure smart contracts to safeguard user funds and data."
-  },
-  {
-    "num": "5",
-    "title": "Customizable White-Label Solutions",
-    "decs": "Launch faster with our ready-to-deploy white-label platforms or opt for full customization with from-scratch development based on your brand vision."
-  },
-  {
-    "num": "6",
-    "title": "Cross-Platform Accessibility",
-    "decs": "Fully responsive web platform and mobile app support for Android & iOS — providing seamless access and trading on the go."
-  }
-],
-
+  "Emerging": [
+    {
+      "num": "1",
+      "title": "Seamless Multi-Currency Trading",
+      "decs": "Support for a wide range of cryptocurrencies and fiat currencies in a single platform, enabling users to easily trade across global markets."
+    },
+    {
+      "num": "2",
+      "title": "Integrated Crypto-Fiat Swap Functionality",
+      "decs": "Allow instant conversion between crypto and fiat, enhancing liquidity and user convenience while supporting mainstream adoption."
+    },
+    {
+      "num": "3",
+      "title": "Advanced Wallet Integration",
+      "decs": "Secure, multi-currency wallets with real-time balance updates, hot & cold storage, and support for asset management and portfolio tracking."
+    },
+    {
+      "num": "4",
+      "title": "Robust Security Framework",
+      "decs": "End-to-end encryption, 2FA, anti-phishing layers, DDoS protection, and secure smart contracts to safeguard user funds and data."
+    },
+    {
+      "num": "5",
+      "title": "Customizable White-Label Solutions",
+      "decs": "Launch faster with our ready-to-deploy white-label platforms or opt for full customization with from-scratch development based on your brand vision."
+    },
+    {
+      "num": "6",
+      "title": "Cross-Platform Accessibility",
+      "decs": "Fully responsive web platform and mobile app support for Android & iOS — providing seamless access and trading on the go."
+    }
+  ],
   "Qa": [
     {
       "num": "1",
@@ -574,37 +576,36 @@
       "desc": "Our multi-currency <a class='text-white font-semibold underline' href='https://www.comfygen.com/blog/otc-crypto-exchange-development-benefits-features-process-costs/' >crypto exchange</a> platform is packed with advanced features designed to offer a seamless, secure, and scalable trading experience for users worldwide."
     }
   ],
- "Whycomfygen": [
-  {
-    "num": "1",
-    "title": "Support for 100+ Crypto and Fiat Currencies",
-    "desc": "Trade a vast range of popular cryptocurrencies and fiat currencies with seamless wallet integrations, enabling diverse asset management."
-  },
-  {
-    "num": "2",
-    "title": "Secure KYC/AML Compliance",
-    "desc": "Built-in KYC/AML procedures to verify user identities and ensure regulatory compliance, boosting platform trust and security."
-  },
-  {
-    "num": "3",
-    "title": "Liquidity Management Tools",
-    "desc": "Robust liquidity solutions to maintain market depth, facilitate large transactions, and reduce slippage for better trading outcomes."
-  },
-  {
-    "num": "4",
-    "title": "Cross-Chain Compatibility",
-    "desc": "Support for multiple blockchain networks to enable cross-chain asset swaps and widen trading opportunities."
-  },
-  {
-    "num": "5",
-    "title": "Multilingual & Multi-Region Support",
-    "desc": "Cater to a global user base with multilingual interfaces and region-specific customizations for an inclusive user experience."
-  },
-  {
-    "num": "6",
-    "title": "Admin & User Dashboards",
-    "desc": "Comprehensive dashboards offer real-time insights, trading analytics, and easy management for both admins and users."
-  }
-]
-
+  "Whycomfygen": [
+    {
+      "num": "1",
+      "title": "Support for 100+ Crypto and Fiat Currencies",
+      "desc": "Trade a vast range of popular cryptocurrencies and fiat currencies with seamless wallet integrations, enabling diverse asset management."
+    },
+    {
+      "num": "2",
+      "title": "Secure KYC/AML Compliance",
+      "desc": "Built-in KYC/AML procedures to verify user identities and ensure regulatory compliance, boosting platform trust and security."
+    },
+    {
+      "num": "3",
+      "title": "Liquidity Management Tools",
+      "desc": "Robust liquidity solutions to maintain market depth, facilitate large transactions, and reduce slippage for better trading outcomes."
+    },
+    {
+      "num": "4",
+      "title": "Cross-Chain Compatibility",
+      "desc": "Support for multiple blockchain networks to enable cross-chain asset swaps and widen trading opportunities."
+    },
+    {
+      "num": "5",
+      "title": "Multilingual & Multi-Region Support",
+      "desc": "Cater to a global user base with multilingual interfaces and region-specific customizations for an inclusive user experience."
+    },
+    {
+      "num": "6",
+      "title": "Admin & User Dashboards",
+      "desc": "Comprehensive dashboards offer real-time insights, trading analytics, and easy management for both admins and users."
+    }
+  ]
 }

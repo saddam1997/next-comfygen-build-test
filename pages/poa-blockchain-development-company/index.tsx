@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./poa.json";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import BlockchainNav from "../componentsnew/blockchain-navbar";
+import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
@@ -49,14 +49,6 @@ const Faq = dynamic(
 
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const Ser = [
   {
@@ -249,7 +241,7 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
         />
       </Head>
-      <BlockchainNav />
+      <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="POA Blockchain Development Company"

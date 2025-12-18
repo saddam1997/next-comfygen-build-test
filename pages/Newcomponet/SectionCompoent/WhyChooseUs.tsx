@@ -37,7 +37,7 @@ const WhyChoose = ({
           style={{ backgroundImage: `url(${mainCardData?.imageUrl})` }}
         >
           <div>
-            <h5 className="xl:text-xl text-xl text-[#fff] font-semibold">{mainCardData.title}</h5>
+            <span className="xl:text-xl text-xl text-[#fff] font-semibold">{mainCardData.title}</span>
             {mainCardData.description && (
               <p 
                 className="text-base font-normal text-white" 

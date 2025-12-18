@@ -57,10 +57,6 @@ const InfoSection = dynamic(() => import("../Newcomponet/SectionCompoent/InfoSec
   ssr: true,
 });
 
-const ContactFromCenter = dynamic(() => import('../componentsnew/ContactFromCenter'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
 
 
 const Milestones = dynamic(() => import("../Newcomponet/comman/Milestones"), {
@@ -472,7 +468,7 @@ export default function Mobile(props) {
           imageAlt="Future of Technology"
         />
 
-        <ContactFromCenter />
+
 
         <LatestTechnology
           heading="End-to-End IOS App Development for Diverse Business Domains"

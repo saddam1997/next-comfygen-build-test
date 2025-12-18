@@ -1,103 +1,208 @@
 {
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a stock trading app?",
-    "desc": "The cost of developing a stock trading app varies depending on features, platforms (iOS/Android/Web), tech stack, and third-party integrations. On average, it ranges from $25,000 to $150,000+. At Comfygen, we offer custom quotes based on your requirements, ensuring you get the best ROI with secure, scalable, and high-performance trading solutions."
-  },
-  {
-    "num": "2",
-    "title": "Is it legal to build a stock trading platform?",
-    "desc": "Yes, it’s legal to build a stock trading platform, provided you comply with regulatory requirements like SEC, FINRA (USA), or SEBI (India). You may also need licenses or partnerships with registered brokerage firms. Our team ensures full legal compliance by integrating robust KYC/AML processes, secure APIs, and transaction tracking."
-  },
-  {
-    "num": "3",
-    "title": "Can you integrate with brokerage APIs like Alpaca or TD Ameritrade?",
-    "desc": "Absolutely. Comfygen specializes in integrating brokerage APIs such as Alpaca, TD Ameritrade, E*TRADE, and more. We enable seamless market data access, trade execution, portfolio syncing, and account management using secure and scalable APIs to ensure a smooth trading experience for your users."
-  },
-  {
-    "num": "4",
-    "title": "What services do you offer for stock trading app development?",
-    "desc": "We offer end-to-end stock trading app development services, including UI/UX design, backend development, real-time data integration, trading bot integration, API integration, multi-asset support, testing, deployment, and post-launch maintenance. Whether it’s a crypto exchange or equity trading app, we build scalable, compliant, and high-performance platforms."
-  }
-],
-
-
-"servicesData": [
-  {
-    "title": "Custom Stock Trading App Development",
-    "description": "We are one of the best stock trading software development companies. Comfygen offers fully customized trading app solutions tailored to your unique business model. We build secure, fast, and feature-rich apps for Android, iOS, and web, enabling investors to manage their trades with ease. Our share market apps support both individual investors and institutional platforms with advanced trading features and compliance standards.",
-    "features": [
-      "Built for Your Trading Needs",
-      "High-Speed Order Execution",
-      "Seamless User Experiences"
-    ]
-  },
-  {
-    "title": "Stock Trading App Consulting Services",
-    "description": "Looking to plan your digital trading journey? Our experienced consultants at Comfygen guide you through every stage—from idea validation to technical architecture. As a leading trading app development agency, we help define your roadmap with clarity and precision.",
-    "features": [
-      "MVP Strategy & Tech Stack Guidance",
-      "Market-Ready Product Planning",
-      "Regulatory & Compliance Consulting"
-    ]
-  },
-  {
-    "title": "Stock Trading Web Application Development",
-    "description": "As a top-tier stock trading <a class='underline font-semibold' href='https://www.comfygen.com/web-development' >web app development agency</a>, Comfygen also provides responsive web-based trading platforms. We deliver high-security architecture, real-time charting, and seamless data sync to provide users with a trading experience that rivals native apps—accessible from any browser.",
-    "features": [
-      "Responsive Website Development",
-      "Secure WebSocket Integration",
-      "Cloud-Based Deployment"
-    ]
-  },
-  {
-    "title": "Custom Trading Software Development Services",
-    "description": "As a trusted stock trading app development firm in India and the USA, Comfygen builds end-to-end trading software with real-time data, custom dashboards, and smart trading logic. Our tailored platforms are designed to help businesses streamline trade execution and portfolio management across markets.",
-    "features": [
-      "Tailored Platform Architecture",
-      "Real-Time Order Execution",
-      "Custom Feature & Workflow Development"
-    ]
-  },
-  {
-    "title": "Multi-Asset Class Support (Stocks, Crypto, Forex)",
-    "description": "Our stock trading mobile application development services extend beyond equities. We develop trading apps that support trading across asset classes like stocks, cryptocurrencies, ETFs, and forex—offering users a comprehensive trading experience.",
-    "features": [
-      "Unified Multi-Asset Dashboard",
-      "Real-Time FX & Crypto Feeds",
-      "Seamless Order Management"
-    ]
-  },
-  {
-    "title": "OTC (Over-The-Counter) Trading Platform Development",
-    "description": "Comfygen designs OTC trading platforms for high-volume and private asset deals. Our secure and compliant OTC trading apps support smart contracts, multi-asset exchanges, and institutional-level trade privacy—all backed by our trading app development services.",
-    "features": [
-      "Private Trade Matching Engines",
-      "Custom Pricing Models",
-      "Regulatory Reporting & KYC Integration"
-    ]
-  },
-  {
-    "title": "New York Stock Exchange (NYSE) Integration",
-    "description": "Our expert developers build platforms integrated with NYSE APIs for real-time equities trading. As a global stock trading app development company, we provide enterprise-grade tools for traders targeting U.S. markets.",
-    "features": [
-      "Real-Time NYSE Data Feeds",
-      "SEC-Compliant Infrastructure",
-      "U.S. Stock Asset Support"
-    ]
-  },
-  {
-    "title": "London Stock Exchange (LSE) Integration",
-    "description": "We offer trading app development services with seamless LSE integration to serve UK and European markets. Get live stock data, compliance support, and multi-currency trading features in one powerful app.",
-    "features": [
-      "FCA-Aligned App Development",
-      "Multi-Currency Trading",
-      "Live LSE Market Access"
-    ]
-  }
-],
-
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a stock trading app?",
+      "desc": "The cost of developing a stock trading app varies depending on features, platforms (iOS/Android/Web), tech stack, and third-party integrations. On average, it ranges from $25,000 to $150,000+. At Comfygen, we offer custom quotes based on your requirements, ensuring you get the best ROI with secure, scalable, and high-performance trading solutions."
+    },
+    {
+      "num": "2",
+      "title": "Is it legal to build a stock trading platform?",
+      "desc": "Yes, it’s legal to build a stock trading platform, provided you comply with regulatory requirements like SEC, FINRA (USA), or SEBI (India). You may also need licenses or partnerships with registered brokerage firms. Our team ensures full legal compliance by integrating robust KYC/AML processes, secure APIs, and transaction tracking."
+    },
+    {
+      "num": "3",
+      "title": "Can you integrate with brokerage APIs like Alpaca or TD Ameritrade?",
+      "desc": "Absolutely. Comfygen specializes in integrating brokerage APIs such as Alpaca, TD Ameritrade, E*TRADE, and more. We enable seamless market data access, trade execution, portfolio syncing, and account management using secure and scalable APIs to ensure a smooth trading experience for your users."
+    },
+    {
+      "num": "4",
+      "title": "What services do you offer for stock trading app development?",
+      "desc": "We offer end-to-end stock trading app development services, including UI/UX design, backend development, real-time data integration, trading bot integration, API integration, multi-asset support, testing, deployment, and post-launch maintenance. Whether it’s a crypto exchange or equity trading app, we build scalable, compliant, and high-performance platforms."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Stock Trading App Development",
+      "description": "We are one of the best stock trading software development companies. Comfygen offers fully customized trading app solutions tailored to your unique business model. We build secure, fast, and feature-rich apps for Android, iOS, and web, enabling investors to manage their trades with ease. Our share market apps support both individual investors and institutional platforms with advanced trading features and compliance standards.",
+      "features": [
+        "Built for Your Trading Needs",
+        "High-Speed Order Execution",
+        "Seamless User Experiences"
+      ]
+    },
+    {
+      "title": "Stock Trading App Consulting Services",
+      "description": "Looking to plan your digital trading journey? Our experienced consultants at Comfygen guide you through every stage—from idea validation to technical architecture. As a leading trading app development agency, we help define your roadmap with clarity and precision.",
+      "features": [
+        "MVP Strategy & Tech Stack Guidance",
+        "Market-Ready Product Planning",
+        "Regulatory & Compliance Consulting"
+      ]
+    },
+    {
+      "title": "Stock Trading Web Application Development",
+      "description": "As a top-tier stock trading <a class='underline font-semibold' href='https://www.comfygen.com/web-development' >web app development agency</a>, Comfygen also provides responsive web-based trading platforms. We deliver high-security architecture, real-time charting, and seamless data sync to provide users with a trading experience that rivals native apps—accessible from any browser.",
+      "features": [
+        "Responsive Website Development",
+        "Secure WebSocket Integration",
+        "Cloud-Based Deployment"
+      ]
+    },
+    {
+      "title": "Custom Trading Software Development Services",
+      "description": "As a trusted stock trading app development firm in India and the USA, Comfygen builds end-to-end trading software with real-time data, custom dashboards, and smart trading logic. Our tailored platforms are designed to help businesses streamline trade execution and portfolio management across markets.",
+      "features": [
+        "Tailored Platform Architecture",
+        "Real-Time Order Execution",
+        "Custom Feature & Workflow Development"
+      ]
+    },
+    {
+      "title": "Multi-Asset Class Support (Stocks, Crypto, Forex)",
+      "description": "Our stock trading mobile application development services extend beyond equities. We develop trading apps that support trading across asset classes like stocks, cryptocurrencies, ETFs, and forex—offering users a comprehensive trading experience.",
+      "features": [
+        "Unified Multi-Asset Dashboard",
+        "Real-Time FX & Crypto Feeds",
+        "Seamless Order Management"
+      ]
+    },
+    {
+      "title": "OTC (Over-The-Counter) Trading Platform Development",
+      "description": "Comfygen designs OTC trading platforms for high-volume and private asset deals. Our secure and compliant OTC trading apps support smart contracts, multi-asset exchanges, and institutional-level trade privacy—all backed by our trading app development services.",
+      "features": [
+        "Private Trade Matching Engines",
+        "Custom Pricing Models",
+        "Regulatory Reporting & KYC Integration"
+      ]
+    },
+    {
+      "title": "New York Stock Exchange (NYSE) Integration",
+      "description": "Our expert developers build platforms integrated with NYSE APIs for real-time equities trading. As a global stock trading app development company, we provide enterprise-grade tools for traders targeting U.S. markets.",
+      "features": [
+        "Real-Time NYSE Data Feeds",
+        "SEC-Compliant Infrastructure",
+        "U.S. Stock Asset Support"
+      ]
+    },
+    {
+      "title": "London Stock Exchange (LSE) Integration",
+      "description": "We offer trading app development services with seamless LSE integration to serve UK and European markets. Get live stock data, compliance support, and multi-currency trading features in one powerful app.",
+      "features": [
+        "FCA-Aligned App Development",
+        "Multi-Currency Trading",
+        "Live LSE Market Access"
+      ]
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "AI-Powered Trading App Development",
+      "icon": "<i className='fas fa-robot text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/ai-powered-trading-app-development.webp",
+      "additionalDetails": [
+        {
+          "details": "Predictive Trading Insights",
+          "emoji": "",
+          "content": "AI models analyze historical and real-time market data to predict stock trends, helping users make smarter, more informed investment decisions with minimal guesswork."
+        },
+        {
+          "details": "Behavior-Based Portfolio Optimization",
+          "emoji": "",
+          "content": "Our <a class='text-blue-500 font-semibold' href='/ai-development'>AI-based stock trading app development</a> studies individual user behavior, risk tolerance, and investment patterns to auto-suggest personalized portfolio strategies tailored for better returns."
+        },
+        {
+          "details": "AI-Driven Sentiment Analysis",
+          "emoji": "",
+          "content": "We leverage NLP algorithms to scan news, tweets, and market chatter, delivering real-time sentiment analysis to help traders react faster to market-moving events."
+        },
+        {
+          "details": "Dynamic Risk Assessment Engine",
+          "emoji": "",
+          "content": "Our smart engine calculates user-specific risk in real-time, flagging risky trades and optimizing asset allocations based on current volatility levels."
+        },
+        {
+          "details": "Adaptive Learning Algorithms",
+          "emoji": "",
+          "content": "Machine learning models continuously evolve based on user behavior and market changes, ensuring the app’s trading logic improves over time."
+        },
+        {
+          "details": "Automated Trading Bot",
+          "emoji": "",
+          "content": "Our <a class='text-blue-500 font-semibold' href='/crypto-trading-bot-development' >crypto trading bot development</a>  executes buy/sell orders automatically based on predefined user rules, market patterns, and predictive analytics to capitalize on profitable opportunities."
+        },
+        {
+          "details": "Voice-Controlled Trade Commands",
+          "emoji": "",
+          "content": "Enable hands-free trading through secure voice recognition that lets users place trades, check stock prices, or request portfolio updates effortlessly."
+        },
+        {
+          "details": "Emotion-Aware Trading Alerts",
+          "emoji": "",
+          "content": "AI detects emotional trading patterns and alerts users to take a step back when making impulsive decisions, encouraging better trading discipline."
+        },
+        {
+          "details": "User Behavior Anomaly Detection",
+          "emoji": "",
+          "content": "Detects irregular trading activity or login behavior using AI models to flag suspicious actions and prevent unauthorized access or errors."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Blockchain-Based Trading App Development",
+      "icon": "<i className='fas fa-link text-4xl'></i>",
+      "img":  "https://www.comfygen.com/comfygen-images/stock-trading-app-development/blockchain-based-trading-app-development.webp",
+      "additionalDetails": [
+        {
+          "details": "Decentralized Trade Settlement",
+          "emoji": "",
+          "content": "Using <a href='/blockchain-development' class='text-blue-500 font-semibold'>blockchain development</a>, trades are settled in near real-time without relying on central intermediaries, improving speed, transparency, and reducing operational costs."
+        },
+        {
+          "details": "Tokenized Asset Support",
+          "emoji": "",
+          "content": "Support for tokenized stocks and commodities enables fractional ownership and 24/7 trading, making financial markets more inclusive and liquid."
+        },
+        {
+          "details": "Zero-Knowledge Proof Authentication",
+          "emoji": "",
+          "content": "Privacy-focused authentication ensures identity verification without revealing sensitive data, delivering enhanced privacy without compromising security."
+        },
+        {
+          "details": "Blockchain-Based Audit Trails",
+          "emoji": "",
+          "content": "Immutable, timestamped records of every transaction provide end-to-end transparency for compliance, dispute resolution, and investor confidence."
+        },
+        {
+          "details": "Smart Compliance Automation",
+          "emoji": "",
+          "content": "<a href='/smart-contract-development' class='text-blue-500 font-semibold'>Smart contracts</a> automatically enforce compliance rules, such as KYC and AML checks, reducing regulatory overhead and manual reviews."
+        },
+        {
+          "details": "Cross-Border Blockchain Payments",
+          "emoji": "",
+          "content": "Enable low-fee, real-time international transfers for investors using crypto or fiat, reducing time and costs associated with traditional banking systems."
+        },
+        {
+          "details": "Decentralized Identity Management (DID)",
+          "emoji": "",
+          "content": "Give users full control over their identity with blockchain-based digital IDs, reducing fraud and simplifying onboarding across platforms."
+        },
+        {
+          "details": "Blockchain-Powered Voting Rights",
+          "emoji": "",
+          "content": "Empower shareholders with blockchain-based voting systems that are tamper-proof, transparent, and instantly verifiable—ideal for managing equity and governance securely."
+        },
+        {
+          "details": "Smart Escrow for Trade Settlements",
+          "emoji": "",
+          "content": "Use blockchain-based smart escrow systems to automate asset delivery only upon fulfillment of contract terms, ensuring secure peer-to-peer trading."
+        }
+      ]
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -105,38 +210,137 @@
       "desc": "We are the best trading app development company that has built custom clones of some of the world's most popular stock and cryptocurrency trading platforms. Whether you’re entering the market or scaling an investment platform, our stock trading clone app development solutions offer the fastest path to success in the fintech world."
     }
   ],
-"consultancyData": [
+  "consultancyData": [
+    {
+      "title": "Coinbase Clone App",
+      "desc": "Our Coinbase clone app supports a full-featured <a href=\"/cryptocurrency-exchange-development\" class=\"text-blue-500 font-semibold\">cryptocurrency exchange</a> that allows users to buy, sell, store, trade, and stake crypto securely. Equipped with KYC/AML compliance, multi-coin wallet support, and real-time price charts, it’s ideal for startups in crypto finance looking for a reliable share market trading app development."
+    },
+    {
+      "title": "Crypto.com Clone App",
+      "desc": "Trade BTC, ETH, SOL, CRO, XRP, ADA, and more with our feature-rich Crypto.com clone app. Built by the NO. 1 investment app development company, this clone enables instant trade execution, <a href='/defi-development-company' class='text-blue-500 font-semibold'>DeFi wallet integration</a>, and secure multi-factor authentication, offering a seamless and secure crypto trading experience."
+    },
+    {
+      "title": "Groww Clone App",
+      "desc": "Launch a simplified share market trading app development experience with our Groww clone. It offers mutual funds, SIPs, stocks, and ETF trading with modern UI/UX, smart onboarding, and secure payment integrations. From real-time portfolio tracking to easy withdrawals, it’s everything an investor needs in one app."
+    },
+    {
+      "title": "Angel One Clone App",
+      "desc": "Our Angel One clone app replicates top features such as smart recommendations, real-time stock charts, IPO investment, and multi-segment trading. It is fully customizable and built using cutting-edge technologies to help businesses establish themselves in the competitive trading app ecosystem."
+    },
+    {
+      "title": "Upstox Clone App",
+      "desc": "This high-performance Upstox clone app comes packed with charting tools, price alerts, options chain, and order tracking functionalities. With advanced APIs and a secure backend, it’s tailored for startups seeking scalable share market trading app development."
+    },
+    {
+      "title": "Zerodha Kite Clone App",
+      "desc": "Designed for precision trading, our Zerodha Kite clone app delivers live market depth, intuitive UI, seamless order execution, and advanced charting tools. It's ideal for businesses looking to build the next top-tier stock trading app development platform."
+    },
+    {
+      "title": "Dhan Clone App",
+      "desc": "Designed for precision trading, our Zerodha Kite clone app delivers live market depth, intuitive UI, seamless order execution, and advanced charting tools. It's ideal for businesses looking to build the next top-tier stock trading app development platform."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/stock-trading-ai-stock-app.webp",
+      "title": "AI-Powered Stock Trading App",
+      "description": "We developed an AI-integrated trading app with real-time analytics, automated buy/sell execution, and predictive investment suggestions, empowering users with smarter and faster decision-making in volatile markets.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-multi-asset-platform.webp",
+      "title": "Multi-Asset Trading Platform",
+      "description": "This cross-platform mobile app enables trading in stocks, crypto, and forex with live data feeds, smart portfolio management, and secure payment gateway integration for seamless transactions.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-investment-app.webp",
+      "title": "Beginner-Friendly Investment App",
+      "description": "Built for new investors, this intuitive app offers educational content, curated portfolios, and SIP planning tools—making investment easy, transparent, and engaging across all devices.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-crypto-stock-wallet.webp",
+      "title": "Secure Crypto & Stock Wallet App",
+      "description": "We created a mobile wallet that supports both cryptocurrencies and stocks, featuring biometric login, encrypted storage, and integrated trading tools for instant asset conversion and investment.",
+      "link": "#"
+    }
+  ],
+
+
+ "featuresData1":[
   {
-    "title": "Coinbase Clone App",
-    "desc": "Our Coinbase clone app supports a full-featured <a href=\"/cryptocurrency-exchange-development\" class=\"text-blue-500 font-semibold\">cryptocurrency exchange</a> that allows users to buy, sell, store, trade, and stake crypto securely. Equipped with KYC/AML compliance, multi-coin wallet support, and real-time price charts, it’s ideal for startups in crypto finance looking for a reliable share market trading app development."
+    "id": 1,
+    "title": "Trader Panel",
+    "icon": "<i className='fas fa-chart-line text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-trader-panel.webp",
+    "additionalDetails": [
+      { "emoji": "📈", "details": "Real-time stock, forex, and crypto market data", "content": "" },
+      { "emoji": "🛒", "details": "One-click buy/sell order execution", "content": "" },
+      { "emoji": "🤖", "details": "AI-based trading suggestions and signals", "content": "" },
+      { "emoji": "⭐", "details": "Personalized watchlist and portfolio management", "content": "" },
+      { "emoji": "🔔", "details": "Push notifications for market alerts and news", "content": "" },
+      { "emoji": "🔐", "details": "Secure biometric and two-factor authentication", "content": "" },
+      { "emoji": "💳", "details": "Seamless fund deposit and withdrawal options", "content": "" },
+      { "emoji": "📊", "details": "Trade history and performance analytics dashboard", "content": "" },
+      { "emoji": "💬", "details": "In-app chat and ticket-based support system", "content": "" }
+    ]
   },
   {
-    "title": "Crypto.com Clone App",
-    "desc": "Trade BTC, ETH, SOL, CRO, XRP, ADA, and more with our feature-rich Crypto.com clone app. Built by the NO. 1 investment app development company, this clone enables instant trade execution, <a href='/defi-development-company' class='text-blue-500 font-semibold'>DeFi wallet integration</a>, and secure multi-factor authentication, offering a seamless and secure crypto trading experience."
+    "id": 2,
+    "title": "Admin Panel",
+    "icon": "<i className='fas fa-user-shield text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-admin-panel.webp",
+    "additionalDetails": [
+      { "emoji": "👥", "details": "Centralized user and account management", "content": "" },
+      { "emoji": "📡", "details": "Live monitoring of trades and transactions", "content": "" },
+      { "emoji": "🧾", "details": "Automated KYC and AML verification tools", "content": "" },
+      { "emoji": "💰", "details": "Customizable fee and commission settings", "content": "" },
+      { "emoji": "📣", "details": "Platform-wide notifications and announcements", "content": "" },
+      { "emoji": "🛡️", "details": "Real-time fraud detection and reporting system", "content": "" },
+      { "emoji": "📈", "details": "Detailed revenue, tax, and earnings reports", "content": "" },
+      { "emoji": "🖼️", "details": "CMS for updating banners, FAQs, and news", "content": "" },
+      { "emoji": "📝", "details": "Audit logs and admin activity tracking", "content": "" }
+    ]
   },
   {
-    "title": "Groww Clone App",
-    "desc": "Launch a simplified share market trading app development experience with our Groww clone. It offers mutual funds, SIPs, stocks, and ETF trading with modern UI/UX, smart onboarding, and secure payment integrations. From real-time portfolio tracking to easy withdrawals, it’s everything an investor needs in one app."
+    "id": 3,
+    "title": "Broker Panel",
+    "icon": "<i className='fas fa-briefcase text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-broker-panel.webp",
+    "additionalDetails": [
+      { "emoji": "📊", "details": "Multi-client portfolio tracking and management", "content": "" },
+      { "emoji": "⚙️", "details": "Manual and auto trade execution tools", "content": "" },
+      { "emoji": "📉", "details": "Commission and brokerage performance dashboard", "content": "" },
+      { "emoji": "📞", "details": "Private client communication (chat/call/email)", "content": "" },
+      { "emoji": "🚨", "details": "Alerts for client order triggers and stop loss", "content": "" },
+      { "emoji": "🔍", "details": "Access to market insights and analytics tools", "content": "" },
+      { "emoji": "⭐", "details": "Custom asset watchlists per client", "content": "" },
+      { "emoji": "🧾", "details": "Report generation for transactions and earnings", "content": "" },
+      { "emoji": "✅", "details": "Compliance tools for trade validation and audit", "content": "" }
+    ]
   },
   {
-    "title": "Angel One Clone App",
-    "desc": "Our Angel One clone app replicates top features such as smart recommendations, real-time stock charts, IPO investment, and multi-segment trading. It is fully customizable and built using cutting-edge technologies to help businesses establish themselves in the competitive trading app ecosystem."
-  },
-  {
-    "title": "Upstox Clone App",
-    "desc": "This high-performance Upstox clone app comes packed with charting tools, price alerts, options chain, and order tracking functionalities. With advanced APIs and a secure backend, it’s tailored for startups seeking scalable share market trading app development."
-  },
-  {
-    "title": "Zerodha Kite Clone App",
-    "desc": "Designed for precision trading, our Zerodha Kite clone app delivers live market depth, intuitive UI, seamless order execution, and advanced charting tools. It's ideal for businesses looking to build the next top-tier stock trading app development platform."
-  },
-  {
-    "title": "Dhan Clone App",
-    "desc": "Designed for precision trading, our Zerodha Kite clone app delivers live market depth, intuitive UI, seamless order execution, and advanced charting tools. It's ideal for businesses looking to build the next top-tier stock trading app development platform."
+    "id": 4,
+    "title": "Analyst Panel",
+    "icon": "<i className='fas fa-chart-pie text-4xl'></i>",
+    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-analyst-panel1.webp",
+    "additionalDetails": [
+      { "emoji": "📈", "details": "Live technical and fundamental analysis tools", "content": "" },
+      { "emoji": "📊", "details": "Customizable multi-chart view with indicators", "content": "" },
+      { "emoji": "📉", "details": "Sentiment and volatility analysis dashboard", "content": "" },
+      { "emoji": "🤖", "details": "AI-based trend forecasting models", "content": "" },
+      { "emoji": "📚", "details": "Historical data for stock backtesting", "content": "" },
+      { "emoji": "📝", "details": "Trade and research reports", "content": "" },
+      { "emoji": "📈", "details": "Comparative stock and asset evaluation", "content": "" },
+      { "emoji": "🗓️", "details": "Economic calendar", "content": "" },
+      { "emoji": "🔔", "details": "Watchlist tracking with predictive alert system", "content": "" }
+    ]
   }
 ],
 
-  
+
+
   "pageData": {
     "title": "Why Choose Comfygen as Your Stock Trading App Development Company?",
     "description": "We’re not just developers—we’re fintech problem-solvers. At Comfygen, we blend deep industry experience with modern technologies to deliver trading platforms that are secure, scalable, and future-ready. Here's why startups and brokerages around the world trust us:",
@@ -146,66 +350,60 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "10+ Years of Fintech App Expertise",
-      "description": "With over a decade of experience, our team understands financial markets deeply. We build smart, secure trading apps that deliver real-time performance and reliable functionality for every kind of investor."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Custom-Built Trading Platforms",
-      "description": "We don’t do one-size-fits-all. As a custom trading app development company, we create platforms tailored exactly to your business goals, trading logic, and user expectations."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Complete Development & Support",
-      "description": "From design to launch and beyond, we handle everything. Our trading app development services include consulting, coding, integration, testing, and full post-launch maintenance."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Powered by AI, Blockchain & Live Data",
-      "description": "We use AI for smart insights, blockchain for secure transactions, and real-time APIs for up-to-the-minute market updates—giving your users the best trading experience possible."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Regulatory Compliant Solutions",
-      "description": "We build apps that meet global standards like SEC, FINRA, and GDPR. Your users’ data is safe, and your business stays compliant with financial regulations."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "24/7 Help & Support",
-      "description": "We’re always here when you need us. Our trading app development support team is available round the clock to solve issues, push updates, or help you scale as you grow."
-    }
-  ]
-
-  },
-
-
-    "customTestimonials": [
       {
-        "text": "Working with Comfygen was a seamless experience. They developed our stock trading app with real-time updates and intuitive UI. The team was responsive, professional, and always delivered on time. Highly recommended!",
-        "name": "Rahul Mehta",
-        "title": "India"
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "10+ Years of Fintech App Expertise",
+        "description": "With over a decade of experience, our team understands financial markets deeply. We build smart, secure trading apps that deliver real-time performance and reliable functionality for every kind of investor."
       },
       {
-        "text": "Comfygen built us a fully functional trading platform with advanced charting tools and secured payment integration. Their developers truly understood our vision and translated it into a world-class app.",
-        "name": "Jessica Carter",
-        "title": "USA"
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Custom-Built Trading Platforms",
+        "description": "We don’t do one-size-fits-all. As a custom trading app development company, we create platforms tailored exactly to your business goals, trading logic, and user expectations."
       },
       {
-        "text": "We hired Comfygen for our crypto and stock trading app, and the result exceeded our expectations. Their AI integration and user experience design were top-notch. Excellent communication throughout the project!",
-        "name": "Ahmed Al-Saleh",
-        "title": "UAE"
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Complete Development & Support",
+        "description": "From design to launch and beyond, we handle everything. Our trading app development services include consulting, coding, integration, testing, and full post-launch maintenance."
       },
       {
-        "text": "From initial consultation to post-launch support, Comfygen delivered excellence. Their expertise in stock trading app development is unmatched, and the app's performance has been flawless since launch.",
-        "name": "David Wilson",
-        "title": "UK"
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Powered by AI, Blockchain & Live Data",
+        "description": "We use AI for smart insights, blockchain for secure transactions, and real-time APIs for up-to-the-minute market updates—giving your users the best trading experience possible."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Regulatory Compliant Solutions",
+        "description": "We build apps that meet global standards like SEC, FINRA, and GDPR. Your users’ data is safe, and your business stays compliant with financial regulations."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "24/7 Help & Support",
+        "description": "We’re always here when you need us. Our trading app development support team is available round the clock to solve issues, push updates, or help you scale as you grow."
       }
-    ],
-  
-  
-
+    ]
+  },
+  "customTestimonials": [
+    {
+      "text": "Working with Comfygen was a seamless experience. They developed our stock trading app with real-time updates and intuitive UI. The team was responsive, professional, and always delivered on time. Highly recommended!",
+      "name": "Rahul Mehta",
+      "title": "India"
+    },
+    {
+      "text": "Comfygen built us a fully functional trading platform with advanced charting tools and secured payment integration. Their developers truly understood our vision and translated it into a world-class app.",
+      "name": "Jessica Carter",
+      "title": "USA"
+    },
+    {
+      "text": "We hired Comfygen for our crypto and stock trading app, and the result exceeded our expectations. Their AI integration and user experience design were top-notch. Excellent communication throughout the project!",
+      "name": "Ahmed Al-Saleh",
+      "title": "UAE"
+    },
+    {
+      "text": "From initial consultation to post-launch support, Comfygen delivered excellence. Their expertise in stock trading app development is unmatched, and the app's performance has been flawless since launch.",
+      "name": "David Wilson",
+      "title": "UK"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -412,8 +610,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -434,8 +630,7 @@
       "num": "04",
       "title": "Personalized Learning Paths",
       "decs": "Comfygen’s education mobile app development solutions incorporate AI-driven personalized learning paths that adapt to each student's progress, strengths, and weaknesses. This feature ensures a tailored approach to education, offering customized course suggestions and adaptive difficulty levels to maximize learning efficiency."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "Smart Performance Analytics",
@@ -462,56 +657,54 @@
       "decs": "Our on-demand tutor app development solutions use deep learning algorithms to provide advanced skill assessment tools that evaluate students' strengths, weaknesses, and learning capabilities. This AI-driven feature helps personalize learning plans and prepares students for real-world challenges."
     }
   ],
-
- "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/real-time-market-updates.svg",
-    "title": "Real-Time Market Updates",
-    "decs": "Our trading apps deliver real-time stock prices, indices, and market news with lightning-fast updates. Stay ahead of the curve with live feeds and price changes, helping users make quick, informed, and strategic investment decisions instantly."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/advanced-charting-tools.svg",
-    "title": "Advanced Charting Tools",
-    "decs": "Enable investors to perform technical analysis using customizable, interactive charts. Access candlestick patterns, indicators, timeframes, and comparison tools to make data-backed decisions with precision. Perfect for day traders, analysts, and long-term investors alike."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/in-app-alerts-notifications.svg",
-    "title": "In-App Notifications & Alerts",
-    "decs": "Users receive smart push notifications for stock price movements, portfolio updates, order status, and market events. Alerts are fully customizable and ensure users never miss critical trading opportunities or important financial milestones."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/secure-authentication.svg",
-    "title": "Secure Authentication (Biometrics, 2FA)",
-    "decs": "We integrate biometric login, fingerprint scanning, face recognition, and two-factor authentication (2FA) for added protection. These multi-layered security features ensure user accounts and financial data remain safe from unauthorized access or fraudulent activity."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/crypto-trading-platforms.svg",
-    "title": "Crypto Trading Platforms",
-    "decs": "Our expert trading mobile app developers build crypto exchanges and wallets with blockchain integration, KYC/AML compliance, and secure transaction processing for modern, DeFi-enabled crypto platforms."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/api-integration-finance.svg",
-    "title": "API Integration (e.g., Yahoo Finance, IEX Cloud)",
-    "decs": "Our apps support seamless integration with top-tier financial data APIs like TradingView, Yahoo Finance, and IEX Cloud. This ensures up-to-date market data, automated trading, and accurate portfolio syncing for a robust trading experience."
-  },
-  {
-    "num": "7",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/watchlists-order-management.svg",
-    "title": "Watchlists & Order Management",
-    "decs": "Users can track their favorite stocks using personalized watchlists and execute orders in real time. From placing market and limit orders to managing order history, everything is designed for maximum ease and efficiency."
-  },
-  {
-    "num": "8",
-    "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/robo-advisory-platforms.svg",
-    "title": "Robo-Advisory Platforms",
-    "decs": "We build automated investment platforms with AI-driven portfolio recommendations, rebalancing, and predictive analytics to power next-gen trading application development for digital wealth management. Learn more about our <a href='/mobile-app-development' class='text-white font-semibold underline'>mobile app developers</a>."
-  }
-]
-
+  "Emerging": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/real-time-market-updates.svg",
+      "title": "Real-Time Market Updates",
+      "decs": "Our trading apps deliver real-time stock prices, indices, and market news with lightning-fast updates. Stay ahead of the curve with live feeds and price changes, helping users make quick, informed, and strategic investment decisions instantly."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/advanced-charting-tools.svg",
+      "title": "Advanced Charting Tools",
+      "decs": "Enable investors to perform technical analysis using customizable, interactive charts. Access candlestick patterns, indicators, timeframes, and comparison tools to make data-backed decisions with precision. Perfect for day traders, analysts, and long-term investors alike."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/in-app-alerts-notifications.svg",
+      "title": "In-App Notifications & Alerts",
+      "decs": "Users receive smart push notifications for stock price movements, portfolio updates, order status, and market events. Alerts are fully customizable and ensure users never miss critical trading opportunities or important financial milestones."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/secure-authentication.svg",
+      "title": "Secure Authentication (Biometrics, 2FA)",
+      "decs": "We integrate biometric login, fingerprint scanning, face recognition, and two-factor authentication (2FA) for added protection. These multi-layered security features ensure user accounts and financial data remain safe from unauthorized access or fraudulent activity."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/crypto-trading-platforms.svg",
+      "title": "Crypto Trading Platforms",
+      "decs": "Our expert trading mobile app developers build crypto exchanges and wallets with blockchain integration, KYC/AML compliance, and secure transaction processing for modern, DeFi-enabled crypto platforms."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/api-integration-finance.svg",
+      "title": "API Integration (e.g., Yahoo Finance, IEX Cloud)",
+      "decs": "Our apps support seamless integration with top-tier financial data APIs like TradingView, Yahoo Finance, and IEX Cloud. This ensures up-to-date market data, automated trading, and accurate portfolio syncing for a robust trading experience."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/watchlists-order-management.svg",
+      "title": "Watchlists & Order Management",
+      "decs": "Users can track their favorite stocks using personalized watchlists and execute orders in real time. From placing market and limit orders to managing order history, everything is designed for maximum ease and efficiency."
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/comfygen-images/stock-trading-app-development/robo-advisory-platforms.svg",
+      "title": "Robo-Advisory Platforms",
+      "decs": "We build automated investment platforms with AI-driven portfolio recommendations, rebalancing, and predictive analytics to power next-gen trading application development for digital wealth management. Learn more about our <a href='/mobile-app-development' class='text-white font-semibold underline'>mobile app developers</a>."
+    }
+  ]
 }

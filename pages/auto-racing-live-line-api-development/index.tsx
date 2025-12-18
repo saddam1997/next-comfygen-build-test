@@ -55,25 +55,6 @@ const Faq = dynamic(
 )
 
 
-
-
-
-
-
-
-
-
-
-
-
-import LazyLoad from "react-lazy-load";
-
-import ServicesSection from '../componentsnew/ServicesSection'
-
-import ProcessSection from "../componentsnew/ProcessSection";
-
-
-
 const Process = [
   {
     title: "Step 1 – Requirement Analysis",

@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/flutter.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../componentsnew/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,

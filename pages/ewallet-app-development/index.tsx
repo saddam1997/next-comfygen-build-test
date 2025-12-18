@@ -21,7 +21,7 @@ import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
 
-import PortfolioSec from "../componentsnew/PortfolioSec";
+
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -37,10 +37,6 @@ const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/Service
   { loading: loader, ssr: true }
 );
 
-const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
 
 const ProcessSec = dynamic(
   () => import("../Newcomponet/SectionCompoent/ProcessSec"),
@@ -103,6 +99,11 @@ const Features = dynamic(
   () => import("../Newcomponet/SectionCompoent/Features"),
   { loading: loader, ssr: true }
 )
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
 
 
 const LatestTechnology = dynamic(
@@ -243,7 +244,7 @@ const techDataForPage1 = {
     },
     {
       img: "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
-      head:  "Crypto Wallet App",
+      head: "Crypto Wallet App",
       name: "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
       num: "2",
       icons: [
@@ -269,7 +270,7 @@ const techDataForPage1 = {
       ],
       buttonLink: "#",
     }
-   
+
   ],
 };
 
@@ -667,11 +668,16 @@ export default function Ecommerce(props) {
         </div>
 
 
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
-          description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
-        />
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
+            description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
+          />
+        </section>
+
+
+
 
         <section className=" lg:py-10 py-10">
           <Features
@@ -722,7 +728,7 @@ export default function Ecommerce(props) {
           description="At Comfygen, we build powerful and future-ready digital wallet apps using robust and modern technologies. Our tech stack is carefully selected to ensure your mobile wallet app is secure, scalable, and high-performing across all platforms."
         />
 
-       <WhyChoose
+        <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
@@ -745,7 +751,7 @@ export default function Ecommerce(props) {
         />
 
 
- 
+
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}

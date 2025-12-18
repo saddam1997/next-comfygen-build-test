@@ -3,13 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./quick-commerce-app-development.json";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import HireDeveloper from "../components/HireDeveloper";
-import TechStack from "../components/TechStack";
-import ClientTestimonials from "../components/ClientTestimonials";
 import {
   IconBook,
   IconSchool,
@@ -18,30 +11,92 @@ import {
   IconLanguage,
   IconClipboardCheck,
 } from "@tabler/icons-react";
-import ServicesSection from "../componentsnew/ServicesSection";
-import CallToAction from "../components/CallToAction";
-import TrendsSection from "../componentsnew/TrendsSection";
-import CoreFeaturesSection from "../componentsnew/CoreFeaturesSection";
-import ProcessSection from "../componentsnew/ProcessSection";
-import AppCard from "../componentsnew/AppCard";
-import DeliverySection from "../components/DeliverySection";
-import Slider from "../components/Slider";
 
-const HeroSectionForAllPages = dynamic(() => import("../components/HeroSectionForAllPages"), {
-  loading: () => <p>Loading...</p>,
-});
-const Faq = dynamic(() => import("../components/Faq"), {
-  loading: () => <p>Loading...</p>,
-});
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
 );
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const AppcardSlider = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const DeliverySection = dynamic(
+  () => import("../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+);
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
 
 const CardClone = [
   {
@@ -527,11 +582,9 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
+      <Header />
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hiddenlg:pt-[90px]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-hero.webp')]">
           <HeroSectionForAllPages
             heading="Quick Commerce App Development Company for 10-Min Delivery Services"
@@ -563,39 +616,51 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Quick Commerce App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                A Comfygen Technologies Qcommerce app developer builds robust and scalable Qcommerce apps for today's fast-moving delivery market. Our development solutions streamline the entire order-to-delivery cycle, enhance customer experiences, and support rapid business growth, regardless of your business size. We are one of the leading quick commerce <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development agency</a>. We focus on performance, usability, and real-time functionality.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
-        <ServicesSection
-          heading="Our Quick Commerce App Development Services"
-          subtitle="A Comfygen Technologies Qcommerce app developer builds robust and scalable Qcommerce apps for today's fast-moving delivery market. Our development solutions streamline the entire order-to-delivery cycle, enhance customer experiences, and support rapid business growth, regardless of your business size. We are one of the leading quick commerce <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development agency</a>. We focus on performance, usability, and real-time functionality."
-          servicesData={JSON_DATA.servicesData} />
-
-        <AppCard
-          title="We Have Already Developed Clones of Popular Instant Delivery Apps"
-          subtitle="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
-          cards={CardClone} openModal={openModal} />
+        <AppcardSlider
+          heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
+          description="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
+          sliderData={JSON_DATA.IndustriesServe}
+          openModal={openModal}
+        />
 
 
 
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Quick Commerce App Development Portfolio"
             description="At Comfygen Technologies, we’ve delivered high-performance quick commerce apps tailored to diverse industries—from groceries to healthcare. Each project is built with speed, scalability, and seamless UX at its core, helping our clients lead in the 10-minute delivery market."
           />
         </section>
 
- 
-
         <CallToAction
           heading="Ready to Launch Your Own 10-Minute Delivery App?"
           text="Build a blazing-fast Q-commerce app with Comfygen—trusted experts in real-time delivery app development."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-launch.webp"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
 
-        <ContactFromCenter />
+
+
+        {/* <ContactFromCenter /> */}
 
 
         <CoreFeaturesSection
@@ -618,10 +683,22 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <ProcessSection
-          title="Our Quick Commerce Application Development Process"
-          description="At Comfygen Technologies, we follow a streamlined, collaborative, and transparent process to bring your Q-commerce vision to life. From idea to launch, every phase is focused on speed, scalability, and seamless user experience—because in quick commerce, every second counts."
-          processSlides={Process} />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+               Our Quick Commerce Application Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+                At Comfygen Technologies, we follow a streamlined, collaborative, and transparent process to bring your Q-commerce vision to life. From idea to launch, every phase is focused on speed, scalability, and seamless user experience—because in quick commerce, every second counts.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+ 
 
         <TechStack
           title="Tech Stack We Use in Q-Commerce Application Development"

@@ -3,21 +3,94 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Ourgames from "../../components/ourgames";
 import JSON_DATA from "./json/game.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
-import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import WhyChoose from "../components/WhyChooseUs";
-import ClientTestimonials from "../components/ClientTestimonials";
-import Slider from "../components/Slider";
 
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const AppcardSlider = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const NewTeckStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+);
+
+const DeliverySection = dynamic(
+  () => import("../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+);
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
+
 
 const ContactFromCenter = dynamic(
   () => import("../components/ContactFromCenter"),
@@ -450,10 +523,10 @@ export default function MultiChain(props) {
 
         {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} /> */}
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/game-development/game_hero.webp')]">
           <HeroSectionForAllPages
             heading="Top Game Development Company"
@@ -497,7 +570,7 @@ export default function MultiChain(props) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Game Development Portfolio"
             description="Explore our game development portfolio, showcasing advanced, feature-rich, and engaging gaming solutions built for diverse audiences. From casual mobile games to blockchain-based play-to-earn platforms, Comfygen ensures smooth gameplay, rich graphics, and immersive user experiences—partner with us to create next-gen games that stand out in the competitive market."

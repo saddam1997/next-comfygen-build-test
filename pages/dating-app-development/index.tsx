@@ -31,7 +31,7 @@ import {
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import PortfolioSec from "../componentsnew/PortfolioSec";
+// import PortfolioSec from "../1111componentsnew/PortfolioSec";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -846,20 +846,20 @@ export default function Ecommerce(props) {
         </div>
 
 
-        <PortfolioSec
+        {/* <PortfolioSec
           techData={techDataForPage1}
           heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
           description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
-        />
+        /> */}
 
 
-        {/* <section className="py-8">
+       <section className="py-8">
           <Portfolio
             projects={portfoliodata}
             heading="Our Dating Apps Portfolio"
             description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
           />
-        </section> */}
+        </section> 
 
 
 

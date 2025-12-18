@@ -1,17 +1,101 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./desktop-wallet-development/taxi.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import HireDeveloper from "../components/HireDeveloper";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import ProcessSec from "../components/ProcessSec";
+
+
+import Header from "../Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+
+const loader = () => (
+  <div className="h-96 bg-gray-100 animate-pulse" />
+);
+
+const AboutSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  { loading: loader, ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  { loading: loader, ssr: true }
+);
+
+const AppcardSlider = dynamic(
+  () => import("../Newcomponet/SectionCompoent/AppcardSlider"),
+  { loading: loader, ssr: true }
+);
+
+
+const Portfolio = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  { loading: loader, ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
+const CoreFeaturesSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  { loading: loader, ssr: true }
+);
+
+const TrendsSection = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TrendsSection"),
+  { loading: loader, ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  { loading: loader, ssr: true }
+);
+const ConsultancyApproach = dynamic(
+  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  { loading: loader, ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: loader, ssr: true }
+);
+
+
+const HireDeveloper = dynamic(
+  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  { loading: loader, ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Solution"),
+  { loading: loader, ssr: true }
+);
+
+const DeliverySection = dynamic(
+  () => import("../Newcomponet/comman/DeliverySection"),
+  { loading: loader, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  { loading: loader, ssr: true }
+);
+
+
+
+const Faq = dynamic(
+  () => import("../Newcomponet/SectionCompoent/Faq"),
+  { loading: loader, ssr: true }
+);
+
+
 
 import {
   IconBike,
@@ -23,23 +107,10 @@ import {
   IconPlane,
   IconShip,
 } from "@tabler/icons-react";
-import SolutionSec from "../componentsnew/SolutionSec";
-// import PortfolioSec from "../componentsnew/PortfolioSec";
-import NewTeckStack from "../componentsnew/NewTeckStack";
-import Slider from "../components/Slider";
-import IndustriesServe from "../components/IndustriesServe";
-const Header = dynamic(() => import("../components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
 
-const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
-export default function Ecommerce(props:any) {
+
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -135,7 +206,7 @@ export default function Ecommerce(props:any) {
   ];
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -413,10 +484,9 @@ export default function Ecommerce(props:any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="overflow-hidden ">
+      <Header />
+
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp')]">
             <HeroSectionForAllPages
@@ -448,7 +518,7 @@ export default function Ecommerce(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -477,7 +547,7 @@ export default function Ecommerce(props:any) {
 
         {/* portfoliodata */}
         <section className="py-8">
-          <Slider
+          <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Portfolio of Mobile Crypto Wallet Development Services"
             description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
@@ -513,7 +583,7 @@ export default function Ecommerce(props:any) {
           subheading="<b>Web & Desktop Crypto Wallet</b> Development offers numerous advantages for businesses, traders, and enterprises seeking secure and scalable solutions for digital asset management."
           techData={latesttech}
         />
-        <NewTeckStack
+        <TechStack
           title="Tech Stack We Use to develop a crypto desktop wallet development"
           description="At Comfygen, we leverage a strong and modern tech stack to build secure, scalable, and high-performance Web & Crypto  Desktop Wallet development. Our choice of technologies ensures seamless multi-platform functionality, enterprise-grade security, and smooth user experiences."
         />

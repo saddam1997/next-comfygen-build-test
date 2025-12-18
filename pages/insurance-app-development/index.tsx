@@ -94,17 +94,6 @@ const Faq = dynamic(
 
 
 
-
-
-
-
-
-
-import ProcessSection from "../componentsnew/ProcessSection";
-
-
-
-
 const Process = [
   {
     title: "Requirement Analysis & Strategy Planning",
