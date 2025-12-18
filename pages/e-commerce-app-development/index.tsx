@@ -465,7 +465,7 @@ export default function Ecommerce(props) {
 
 
         <AppcardSlider
-          heading="Build an Ecommerce App Like Top Marketplaces"
+          heading="Build an E-commerce App Like Top Marketplaces"
           description="Looking to launch an ecommerce app like Amazon, Lazada, or Shopee? Our clone eCommerce app clone solutions let you replicate the features, functionality, and user experience of leading marketplaces while customizing them for your brand."
           sliderData={JSON_DATA.IndustriesServe}
           openModal={openModal}
@@ -482,7 +482,7 @@ export default function Ecommerce(props) {
         />
 
         <SolutionSec
-          heading="Custom Ecommerce App Development Solutions"
+          heading="Custom E-commerce App Development Solutions"
           subheading="We provide custom <a href='https://www.comfygen.com/blog/best-ecommerce-app-development-company/' class='text-blue-600 font-semibold'>ecommerce app development</a> solutions tailored to meet the unique needs of every business, from startups to large enterprises. Our approach ensures that your ecommerce application aligns with your business model, supports growth, and delivers a seamless user experience."
           techData={technologyData1}
         />
@@ -492,7 +492,7 @@ export default function Ecommerce(props) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Discover our eCommerce development expertise through recent standout projects."
+            heading="Discover our E-Commerce development expertise through recent standout projects."
             description="At Comfygen, we craft robust, scalable custom eCommerce app development solutions tailored for diverse industries. Explore how we're powering global brands with seamless digital commerce experiences that drive growth and engagement."
           />
         </section>
@@ -553,7 +553,7 @@ export default function Ecommerce(props) {
 
 
         <TechStack
-          title="Ecommerce App Development Technology Stack"
+          title="E-commerce App Development Technology Stack"
           description="Our ecommerce app development technology stack is selected around your business goals, expected growth, and required integrations. What this really means is a reliable app that performs well from day one and grows with you, without constant rework."
         />
 
