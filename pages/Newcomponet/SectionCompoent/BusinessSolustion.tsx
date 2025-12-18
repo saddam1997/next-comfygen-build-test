@@ -23,7 +23,7 @@ const BusinessSolustion = ({BusinessSolustion, imageSrc="https://www.comfygen.co
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 items-center gap-6 mt-10">
+                <div className="grid lg:grid-cols-2 items-center gap-6 mt-1">
                     {/* left side */}
                     <div className="w-full flex justify-center lg:justify-end">
                         <div className="w-full max-w-[970px] p-2">

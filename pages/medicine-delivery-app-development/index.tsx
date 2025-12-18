@@ -93,36 +93,6 @@ const ConsultancyApproach = dynamic(
 )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import InfoSectionRight from "../components/InfoSectionRight";
-
-
-
-
-
 const technologyData = [
   {
     img: <IconCode stroke={1.5} className="w-12 h-12" />,
@@ -567,7 +537,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
           heading="Medicine Delivery App Development Company"
