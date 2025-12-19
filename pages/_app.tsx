@@ -351,7 +351,7 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
             <div>
 
 
-              <div className="fixed lg:bottom-10 bottom-[6rem] z-40 left-0">
+              <div className="hidden lg:block fixed lg:bottom-10 bottom-[6rem] z-40 left-0">
                 <Image
                   src="/offer gif_1.gif"
                   alt="Special Offer"
