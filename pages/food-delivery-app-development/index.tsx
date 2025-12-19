@@ -5,6 +5,7 @@ import JSON_DATA from "./json/ecommerceapp.json";
 import NEW_JSON_DATA from "./json/fooddel.json";
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../Newcomponet/SectionCompoent/ClientStories";
 
 
 const Milestones = dynamic(
@@ -114,12 +115,12 @@ const Process = [
   {
     title: " Discovery and Ideation",
     description:
-      "We begin with detailed research and brainstorming to define goals, target audience, and features—ensuring your food delivery app development aligns perfectly with your business vision.",
+      "We begin with detailed research and brainstorming to define goals, target audience, and features—ensuring your <a href='https://www.comfygen.com/blog/why-invest-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>food delivery application development</a> aligns perfectly with your business vision.",
   },
   {
     title: "Design and Prototyping",
     description:
-      "Our expert <a href='https://www.comfygen.com/web-design' class='text-blue-500'>UI/UX designers</a> create engaging prototypes and user-friendly interfaces for a seamless experience. Every design enhances brand identity and boosts user satisfaction.",
+      "Our expert <a href='https://www.comfygen.com/web-design' class='text-blue-500 font-semibold'>UI/UX designers</a> create engaging prototypes and user-friendly interfaces for a seamless experience. Every design enhances brand identity and boosts user satisfaction.",
   },
   {
     title: "Development",
@@ -378,11 +379,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Best Food Delivery App Development Company in India
+          Food Delivery App Development Company in India | Custom AI-Powered Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading food delivery app development company in India for startups, restaurants, and aggregators. We build custom food delivery apps like Zomato, UberEats & DoorDash with AI-driven personalization, real-time tracking & secure payments."
+          content="Looking for a food delivery app development company in India? Comfygen builds custom, scalable, and AI-powered food delivery apps for startups, restaurants, food vendors and cloud kitchens with real-time tracking and secure payments."
         />
         <link
           rel="canonical"
@@ -494,12 +495,11 @@ export default function Ecommerce(props) {
         <div className=" ">
           <HeroSectionForAllPages
             heading="Custom Food Delivery App Development Company in India"
-            ptag="Comfygen Technologies is a top food delivery app development company in India, offering advanced and AI-powered food delivery app solutions for startups, restaurants, cloud kitchens, and enterprise brands. We build scalable and user-friendly online food ordering apps with AI-based food recommendations, real-time order tracking, secure payments, and blockchain-enabled data protection. Launch your own food delivery app like Zomato, Swiggy, UberEats, or DoorDash to boost revenue and enhance customer experience."
+            ptag="Comfygen Technologies is a trusted food delivery app development company in India, delivering AI-powered, secure, and scalable food delivery app solutions for startups, restaurants, cloud kitchens, and enterprise businesses. We build high-performance online food ordering apps with AI-driven recommendations, real-time order tracking, secure payment integration, and advanced data protection—helping you launch a profitable food delivery app like leading platforms in the market."
             li="Real-Time Order & Delivery Tracking"
             li1="AI-Based Personalized Food Recommendations"
-            li2="Customizable Food Delivery App Solutions"
-            li3="User-Friendly Interface"
-            li4="User-Friendly Interface & Seamless UX"
+            li2="Custom Food Delivery App Solutions"
+            li3="Seamless & User-Friendly UX"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -535,9 +535,9 @@ export default function Ecommerce(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer Top Food Delivery App Development Services for Startups, Restaurants & Aggregators
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Next-Gen Food Delivery App Development Services for Food Business Startup
               </h2>
-              <p className="text-base text-center font-normal">Comfygen is a leading food ordering mobile app development company in India, delivering scalable and high-performance food delivery app development services for startups, restaurants, cloud kitchens, and large enterprises.</p>
+              <p className="text-base text-center font-normal">Comfygen is a leading food ordering mobile app development company in India, delivering scalable and high-performance on-demand food delivery app development services for startups, restaurants, cloud kitchens, and large enterprises.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -548,8 +548,8 @@ export default function Ecommerce(props) {
 
 
         <AppcardSlider
-          heading="Food Delivery App Clone Solutions We Provide"
-          description="Looking to build a successful food delivery app like the industry leaders? At Comfygen, we provide ready-made food delivery app development solutions that are fully customizable and ready to launch. Our food ordering clone apps replicate the functionality of popular platforms, incorporating advanced features that help startups and enterprises save time and reduce costs as they enter the competitive food delivery market."
+          heading="Pre-Developed Food Delivery App Clone Solutions for Instant Market Entry"
+          description="Looking to <a href='https://www.comfygen.com/blog/create-a-food-delivery-app/' class='text-blue-600 font-semibold'>build a food delivery apps</a> like Zomato and DoorDash? At Comfygen, we provide ready-made food delivery app solutions that are fully customizable and proven food delivery app clones that help you go live faster. Our food ordering clone apps replicate the functionality of popular platforms, incorporating advanced features that help startups and enterprises save time and reduce costs as they enter the competitive food delivery market."
           sliderData={JSON_DATA.IndustriesServe}
           openModal={openModal}
         />
@@ -560,8 +560,8 @@ export default function Ecommerce(props) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Food Ordering App Development Portfolio"
-            description="Explore our diverse portfolio of food delivery app development projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations. Partner with us to build a food delivery app that’s fast, reliable, and scalable."
+            heading="Custom Food Delivery App Development Case Studies & Portfolio with Real-World Business Results"
+            description="Explore our diverse portfolio of food delivery application solution projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations."
           />
         </section>
 
@@ -579,7 +579,7 @@ export default function Ecommerce(props) {
 
         <div className="py-8">
           <Features
-            heading="We Develop Food Delivery Apps With Advanced Panel Features"
+            heading="Essential Features We Integrate as an Enterprise Food Delivery App Development Company"
             description=" At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform."
             featuresData={JSON_DATA.featuresData}
             grid={4} />
@@ -592,10 +592,10 @@ export default function Ecommerce(props) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto sm:py-8 p-2">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Advanced Tech We Integrate in Food Delivery App Development
+                  Advanced Technologies We Use for Scalable Food Delivery App Development
                 </h2>
                 <p className="text-center text-white lg:w-10/12 mx-auto">
-                  At Comfygen, we integrate cutting-edge technologies to build high-performance, scalable, and feature-rich food delivery apps. Our advanced tech makes sure seamless user experience, high-speed performance, and top-notch security for your restaurant app application.
+                  At Comfygen, we use next-generation technologies to build robust, scalable, and secure food delivery apps. Our technology-driven approach delivers smooth user experiences, lightning-fast performance, and reliable data protection for restaurants and food businesses
                 </p>
               </div>
               <div className="grid gap-[1px]  text-left lg:grid-cols-2 md:grid-cols-2  bg-white">
@@ -632,8 +632,8 @@ export default function Ecommerce(props) {
         </section>
 
         <CoreFeaturesSection
-          title="AI-Powered Food Delivery App Development Solutions"
-          subtitle="At Comfygen, we leverage AI technology to take your food delivery app to the next level. Our AI-powered food delivery apps are designed to enhance user experience, optimize operations, and boost business efficiency."
+          title="Future-Proof Your Food Delivery App With an Advanced AI Solution"
+          subtitle="At Comfygen, we leverage AI technology to take your food delivery app to the next level. Our <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>AI-powered food delivery apps</a> are designed to enhance user experience, optimize operations, and boost business efficiency."
           features={JSON_DATA.AIPowered}
         />
 
@@ -646,9 +646,9 @@ export default function Ecommerce(props) {
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Food Delivery App Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Develop Food Delivery Apps</h2>
               <p className="text-base font-normal mt-2">
-                Comfygen Technologies is a top-rated food delivery app development agency. We follow a structured, step-by-step process to deliver on-demand food delivery app development solutions that are scalable, user-friendly, and market-ready. From initial concept to post-launch support, we ensure your food delivery <a className='text-blue-600' href='https://www.comfygen.com/mobile-app-development'>mobile app development</a> journey is seamless and results-driven.
+                Comfygen Technologies is a top-rated food delivery app development agency in India. We follow a structured, step-by-step process to deliver on-demand food delivery app solutions that are scalable, user-friendly, and market-ready. From initial concept to post-launch support, we ensure your food delivery <a href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">mobile app development</a> journey is seamless and results-driven.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -657,7 +657,7 @@ export default function Ecommerce(props) {
 
 
         <TechStack
-          title="Our Edgy Tech Stacks for Food Delivery Mobile App Development"
+          title="Modern Stacks for Online Food Ordering Mobile App Development"
           description="At Comfygen, we believe that a great food delivery app isn’t just about functionality but reliability, scalability, and a seamless experience for users and businesses alike. We leverage cutting-edge tech stacks that ensure top performance and security to achieve this." />
 
 
@@ -667,6 +667,10 @@ export default function Ecommerce(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <div className="py-10">
+          <ClientStories/>
+        </div>
 
         <DeliverySection hideUrl="food-delivery-app-development" />
 
