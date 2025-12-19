@@ -221,7 +221,7 @@ class ContactFrom extends Component<{}, any> {
               </h2>
               <p className="text-base ">
                 Comfygen is a result-oriented IT Service Provider that builds
-                secured
+                secured 
               </p>
             </div>
           </div>

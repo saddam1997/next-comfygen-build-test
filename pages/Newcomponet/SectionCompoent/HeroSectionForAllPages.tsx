@@ -179,8 +179,8 @@ export default function HeroSectionForAllPages(props: any) {
                   <div className="modal-overlay fixed inset-0 bg-black opacity-50"></div>
                   <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
                     <div className="modal-content">
-                      <div className="flex justify-center ">
-                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/image/modal-form-img.webp')]">
+                      <div className="flex justify-center lg:h-[600px]">
+                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/comfygen-images/from/from.webp')]">
                           <div className="space-y-3 ">
                             <div>
                               <Image
@@ -199,7 +199,19 @@ export default function HeroSectionForAllPages(props: any) {
                             <div className="flex gap-3 items-center">
                               <a
                                 target="_blank"
-                                href="https://www.facebook.com/comfygen"
+                                href="https://api.whatsapp.com/send?phone=919587867258"
+                                aria-label="Chat with Comfygen on WhatsApp"
+                              >
+                                <Image
+                                  alt="WhatsApp Icon"
+                                  src="https://www.comfygen.com/image/whatsapp-form-icon.svg"
+                                  height={40}
+                                  width={40}
+                                />
+                              </a>
+                              <a
+                                target="_blank"
+                                href="https://www.facebook.com/comfygen.technologies"
                                 aria-label="Visit Comfygen Facebook Page"
                               >
                                 <Image
@@ -223,7 +235,8 @@ export default function HeroSectionForAllPages(props: any) {
                                 />
                               </a>
 
-                              <a
+
+                              {/* <a
                                 target="_blank"
                                 href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
                                 aria-label="Join Comfygen on Teams"
@@ -234,25 +247,12 @@ export default function HeroSectionForAllPages(props: any) {
                                   height={40}
                                   width={40}
                                 />
-                              </a>
+                              </a> */}
 
 
                               <a
                                 target="_blank"
-                                href="https://api.whatsapp.com/send?phone=919587867258"
-                                aria-label="Chat with Comfygen on WhatsApp"
-                              >
-                                <Image
-                                  alt="WhatsApp Icon"
-                                  src="https://www.comfygen.com/image/whatsapp-form-icon.svg"
-                                  height={40}
-                                  width={40}
-                                />
-                              </a>
-
-                              <a
-                                target="_blank"
-                                href="https://twitter.com/comfygentech"
+                                href="https://x.com/Comfygen_Tech"
                                 aria-label="Follow Comfygen on Twitter"
                               >
                                 <Image

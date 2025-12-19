@@ -6,6 +6,7 @@ import JSON_DATA from "./index.json";
 import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
+import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
 
 
 
@@ -384,7 +385,7 @@ export default function Home(props: any) {
       </div> */}
 
 
-       <div className="overflow-hidden lg:pt-[120px] pt-16">
+      <div className="overflow-hidden lg:pt-[120px] pt-16">
         <div className="relative">
           <HeroSectionHomePage
             heading={typedText}
@@ -484,6 +485,10 @@ export default function Home(props: any) {
           />
         </Suspense>
 
+        <div className="py-5">
+          <ClientStories />
+        </div>
+
         <HireDeveloper
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
@@ -508,7 +513,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-      </div> 
+      </div>
     </>
   );
 }

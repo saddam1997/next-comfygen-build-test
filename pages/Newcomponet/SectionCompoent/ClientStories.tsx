@@ -25,44 +25,36 @@ export default function ClientStories() {
   const videoRef = useRef(null);
   const controlsTimeoutRef = useRef(null);
 
-  const isYoutube = (url) =>
+  const isYoutube = (url:any) =>
     url.includes("youtube.com") || url.includes("youtu.be");
 
   const benefits = [
-    "Dedicated, accountable resources",
-    "Save up to 60% for your development cost",
-    "Quick team ramp-up & no contract lock-ins",
-    "Quickly increase or decrease your team size",
-    "Fixed cost, hourly or monthly engagements",
-    "97%+ client retention rate",
-    "Strict non-disclosure agreement",
-    "Clear, concise and consistent communication",
+    "Dedicated and accountable development resources",
+    "Cost-efficient development with flexible pricing models",
+    "Fast team onboarding with no long-term contract lock-ins",
+    "Easy team scaling based on project needs",
+    "High client retention through consistent delivery",
+    "Strict NDA and data security compliance",
+    "Clear, reliable communication at every stage"
   ];
 
   const testimonials = [
     {
       videoUrl:
-        "https://www.youtube.com/watch?v=qaW5v7VwgeQ", // YouTube works now
-      thumbnail: "https://img.youtube.com/vi/qaW5v7VwgeQ/maxresdefault.jpg",
-      clientName: "Tech Startup CEO",
-      company: "TechVision Inc.",
+        "https://www.youtube.com/watch?v=kedGnt6T-DI", 
+      thumbnail: "https://www.comfygen.com/comfygen-images/thumbnail/bookmytuterappreviewthumbnail.webp",
+      clientName: "Nitesh Rajput",
+      company: "Book My Tuter",
     },
     {
       videoUrl:
-        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "https://www.youtube.com/watch?v=yn2dsJOjfQQ",
       thumbnail:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop",
-      clientName: "E-commerce Director",
-      company: "ShopFlow Global",
-    },
-    {
-      videoUrl:
-        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-      thumbnail:
-        "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&h=600&fit=crop",
-      clientName: "Product Manager",
-      company: "InnovateLabs",
-    },
+        "https://www.comfygen.com/comfygen-images/thumbnail/forgeflexrreviewthambnail.webp",
+      clientName: "Sayead Shadab Arif",
+      company: "Froge Flex",
+    }
+    
   ];
 
   // MP4 Events
@@ -176,7 +168,7 @@ export default function ClientStories() {
     }
   };
 
-  const formatTime = (seconds) => {
+  const formatTime = (seconds:any) => {
     if (!seconds) return "0:00";
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
@@ -184,14 +176,14 @@ export default function ClientStories() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
-      <div className="max-w-7xl w-full bg-white rounded-3xl shadow-2xl p-12 md:p-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center lg:p-8 p-2">
+      <div className="lg:max-w-7xl w-full bg-white rounded-3xl shadow-2xl p-4 md:p-16">
+        <div className="grid md:grid-cols-2 gap-12 ">
           {/* Left Column */}
-          <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Stories from Our Happy Clients
-            </h1>
+          <div className="space-y-8 mt-5">
+            <h2 className="text-2xl md:text-2xl font-bold text-gray-900 ">
+             Stories from Our Happy Clients
+            </h2>
 
             <div className="space-y-3">
               {benefits.map((benefit, i) => (
@@ -212,7 +204,7 @@ export default function ClientStories() {
                 <div className="relative cursor-pointer" onClick={handlePlayVideo}>
                   <img
                     src={testimonials[currentTestimonial].thumbnail}
-                    className="w-full h-[400px] object-cover"
+                    className="md:w-full lg:h-[400px]  object-contain min-w-full"
                     alt="thumbnail"
                   />
 

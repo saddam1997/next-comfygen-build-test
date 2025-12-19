@@ -10,6 +10,7 @@ import EcommerceFooter from "./Newcomponet/layout/EcommerceFooter/ecommerce-Foot
 import footerConfig from "../pageRoute/pagedataroute.json"
 import { Poppins } from 'next/font/google';
 import Head from "next/head";
+import Image from "next/image";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -322,8 +323,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
       <main
         className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto `}
 
-        // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
-        //   }`}
+      // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
+      //   }`}
 
       >
         <Component {...pageProps} />
@@ -348,6 +349,21 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
             <GoogleTagManagerNoScript />
             <ContactLinks />
             <div>
+
+
+              <div className="fixed lg:bottom-10 bottom-[6rem] z-40 left-0">
+                <Image
+                  src="/offer gif_1.gif"
+                  alt="Special Offer"
+                  width={300}
+                  height={300}
+                  className="w-[470px] object-contain"
+                  unoptimized // IMPORTANT for GIF animation
+                />
+              </div>
+
+
+
               {isVisible && (
                 <div className="fixed lg:bottom-10 bottom-[6rem] z-40 left-10">
                   <button
@@ -357,6 +373,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
                   >
                     <FaChevronUp className="text-[1.3rem]" />
                   </button>
+
+
                 </div>
               )}
             </div>
