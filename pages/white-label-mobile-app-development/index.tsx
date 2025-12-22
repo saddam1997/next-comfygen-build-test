@@ -522,7 +522,7 @@ export default function Mobile(props: any) {
 
       </div>
 
-      <div className="">
+      <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="White Label Mobile App Development Company"
           ptag="Comfygen is a top-rated white label mobile app development company offering ready-to-use and fully customizable mobile app development solutions according to your business. Our white label mobile app development services help many startups, agencies, and enterprises to launch feature-rich mobile apps under their own brand quickly, affordably, and without the need to build from scratch."

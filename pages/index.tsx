@@ -6,7 +6,7 @@ import JSON_DATA from "./index.json";
 import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
-import ClientStories from "./Newcomponet/SectionCompoent/ClientStories";
+
 
 
 
@@ -62,6 +62,17 @@ const Faq = dynamic(() => import("./Newcomponet/SectionCompoent/Faq"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
+
+
+const ClientStories = dynamic(() => import("./Newcomponet/SectionCompoent/ClientStories"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
+
+
+
+
 
 export default function Home(props: any) {
 
@@ -335,55 +346,6 @@ export default function Home(props: any) {
       <div >
         <Header />
       </div>
-
-
-      {/* <div className="overflow-hidden">
-      
-        <div>
-          <Herosection
-            heading={typedText}
-            isHome={true}
-            Provider
-            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
-            btnName="Let's Discuss"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-
-          />
-        </div>
-        <Aboutsection
-          heading="Build Future-Driven Webs and Apps that Transforms Industries"
-          description1="Comfygen is a result-oriented IT Service Provider that builds secured and scaled apps to fulfill the needs of every business in various industries; be it Finance, Blockchain, Healthcare, On-Demand, Education, Gaming, Entertainment, etc."
-          description2="We have highly experienced web and mobile app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement. Our objective is to create an intuitive digital infrastructure for clients that makes them the best in their respective industries."
-          points={[
-            "Dedicated Development Team",
-            "End-to-End Software Development Technology",
-            "Focused on the Latest Trends and Modern Solutions",
-            "High-Performing Solutions at Competitive Cost",
-            "Strategic Development Process",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/comfygen/about-us-home-page.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <Services
-          heading="Our Custom Web & Mobile App Development Services"
-          description="Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and mobile app development services."
-          serviceskey={JSON_DATA.services}
-          servicedata={JSON_DATA.serviceContent}
-        />
-        <IndustriesWeServe
-          heading="Industries We Serve"
-          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
-
-        />
-        <Portfolios />
-        <ImageSlider/>
-      </div> */}
-
 
       <div className="overflow-hidden lg:pt-[120px] pt-16">
         <div className="relative">
