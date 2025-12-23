@@ -18,8 +18,7 @@ const BusinessSolustion = ({BusinessSolustion, imageSrc="https://www.comfygen.co
                     <h2 className="text-3xl px-1 mt-6 text-center font-bold mb-6 max-w-8xl">
                         {BusinessSolustion?.title}
                     </h2>
-                    <p className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto text-base text-center font-normal">
-                        {BusinessSolustion?.subtitle}
+                    <p className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto text-base text-center font-normal" dangerouslySetInnerHTML={{ __html: BusinessSolustion?.subtitle }}>
                     </p>
                 </div>
 

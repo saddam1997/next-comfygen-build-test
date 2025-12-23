@@ -38,8 +38,8 @@ function Portfolio({ projects, heading, description }) {
           />
         </div>
 
-        <div className="py-8">
-          <div className="overflow-hidden h-full">
+        <div className="py-8 relative">
+          <div className="overflow-hidden h-full ">
             <div
               className="flex transition-transform duration-500 ease-in-out will-change-transform"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -93,24 +93,26 @@ function Portfolio({ projects, heading, description }) {
                 </div>
               ))}
             </div>
+
+            <div className="flex justify-center gap-4 mt-10">
+              <button aria-label="prev Slide" onClick={prevSlide} className="w-12 h-12 absolute top-[40%] -left-28 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button aria-label="next Slide" onClick={nextSlide} className="w-12 h-12 absolute top-[40%] -right-28 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-center gap-4 mt-10">
-            <button aria-label="prev Slide" onClick={prevSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button aria-label="next Slide" onClick={nextSlide} className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
+
 
           {/* Dots */}
-          <div className="flex justify-center gap-2 mt-6">
+          {/* <div className="flex justify-center gap-2 mt-6">
             {projects?.map((_: any, index: number) => (
               <button
                 key={index}
@@ -126,7 +128,7 @@ function Portfolio({ projects, heading, description }) {
                 />
               </button>
             ))}
-          </div>
+          </div> */}
 
         </div>
       </div>

@@ -90,14 +90,14 @@ export default function AppcardSlider({
     <section className="lg:py-16 py-10 bg-[#F5F5F9] mt-8 lg:p-0 p-4 overflow-hidden">
       <div className="container mb-8 mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-between">
-          <div className="space-y-2 p-2">
-            <h2 className="xl:text-4xl text-2xl text-black font-bold">{heading}</h2>
-            <p className="text-black font-normal text-sm" dangerouslySetInnerHTML={{ __html: description }}></p>
+        <div className="flex items-center justify-center mx-auto">
+          <div className="space-y-2 p-2 text-center">
+            <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">{heading}</h2>
+            <p className="text-base font-normal mt-2 mx-auto w-full" dangerouslySetInnerHTML={{ __html: description }}></p>
           </div>
 
           {/* Controls */}
-          <div className="flex justify-end gap-4 mt-10 px-10 ">
+          {/* <div className="flex justify-end gap-4 mt-10 px-10 ">
             <div className="md:flex hidden items-center gap-4 px-4">
 
               <button
@@ -123,11 +123,11 @@ export default function AppcardSlider({
             </div>
 
 
-          </div>
+          </div> */}
         </div>
       </div>
-      <div>
-        <div className="flex gap-6 overflow-x-auto px-10 pb-4 scroll-hide scroll-smooth container mx-auto mt-20" ref={slideCrd}>
+      <div className="relative">
+        <div className="flex gap-6 overflow-x-auto px-10 pb-4 scroll-hide scroll-smooth container mx-auto mt-5" ref={slideCrd}>
           {
             sliderData?.map((item: any, index: number) => (
               <div
@@ -167,6 +167,36 @@ export default function AppcardSlider({
                 </div>
               </div>
             ))}
+        </div>
+
+        <div
+        // className="flex justify-end gap-4 mt-10 px-10 "
+        >
+          <div className="md:flex hidden items-center gap-4 px-8">
+
+            <button
+              title="left"
+              disabled={!showLeftArrow}
+              onClick={() => scrollcards("left")}
+              className={`group absolute top-1/2 left-0 w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border border-[#212121] bg-white rounded-full hover:bg-[#5556D1] hover:border-[#5556D1] transition-all duration-200 cursor-pointer ${!showLeftArrow ? 'opacity-50 cursor-not-allowed' : ''}`}
+            >
+              <BiChevronLeft size={35} />
+
+            </button>
+
+
+            <button
+              title="Next"
+              disabled={!showRightArrow}
+              onClick={() => scrollcards("right")}
+              className={`group w-10 absolute top-1/2  right-0 h-10 flex justify-center items-center hover:text-white text-[#212121] border border-[#212121] bg-white rounded-full hover:bg-[#5556D1] hover:border-[#5556D1] transition-all duration-200 cursor-pointer ${!showRightArrow ? 'opacity-50 cursor-not-allowed' : ''}`}
+            >
+              <BiChevronRight size={35} />
+            </button>
+
+          </div>
+
+
         </div>
 
       </div>
