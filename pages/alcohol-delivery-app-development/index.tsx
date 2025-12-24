@@ -6,6 +6,9 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./delivery-app-development.json";
 import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
+import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
+import Milestones from "../Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(() => import("../Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -71,6 +74,34 @@ const Faq = dynamic(() => import("../Newcomponet/SectionCompoent/Faq"), {
   ssr: true,
 });
 
+
+
+const WhoCanStartCards = [
+  {
+    heading: "Liquor Delivery Services",
+    description:"We build powered liquor delivery apps according to your business needs. These apps allow customers to browse products, place orders easily, verify age, and track deliveries in real time, helping you increase daily orders and customer satisfaction.",
+  },
+  {
+    heading: "Bars & Pubs",
+    description:"Our alcohol delivery app solutions for bars and pubs help you reach more customers beyond physical locations. Offer takeaway and delivery services with scheduled orders, secure payments, and real-time delivery updates to boost revenue and brand visibility.",
+  },
+  {
+    heading: "Wine Shops",
+    description:"For wine sellers, we create wine delivery apps with advanced filters, product descriptions, and subscription options. This helps wine shops provide a premium buying experience while increasing repeat purchases and customer loyalty.",
+  },
+  {
+    heading: "Liquor Chain & Multi-Vendor",
+    description:"We develop scalable alcohol delivery apps for liquor chains and vendors that support multiple outlets. Manage inventory, pricing, and orders across locations from a <a href='https://www.comfygen.com/blog/admin-dashboard-development-for-grocery-delivery/' class='underline font-semibold'>single admin dashboard for better control and business growth</a>.",
+  },
+  {
+    heading: "Brewery & Distillery",
+    description:"Our brewery and distillery delivery apps help you sell directly to customers. Showcase your products, manage limited editions, and ensure age verification while offering fast and secure doorstep delivery.",
+  },
+   {
+    heading: "Liquor Aggregator Platforms",
+    description:"Our team provides liquor aggregator app development solutions that connect multiple liquor stores, brands, and delivery partners on one platform. These apps include vendor management, commission control, real-time analytics, and GPS tracking to run a successful multi-vendor liquor marketplace.",
+  }
+];
 
 
 
@@ -274,11 +305,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title> Best Alcohol Delivery App Development Company | Comfygen
+        <title> Alcohol Delivery App Development Company | Liquor Delivery App Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a on-demand alcohol delivery app development company offering custom, white-label, and wine app development solutions with AI-powered, blockchain-based, scalable features."
+          content="Comfygen is a top alcohol delivery app development company. We offer AI-powered liquor delivery app solutions for startups, stores & enterprises."
         />
         <link
           rel="canonical"
@@ -340,12 +371,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Alcohol Delivery App Development Services"
-            ptag="Boost your liquor business with Comfygen’s custom alcohol delivery app development services. We build secure and scalable wine on-demand delivery apps designed to simplify ordering, ensure age verification, and provide real-time delivery tracking. Whether you run a single liquor store or a multi-location alcohol chain, our white-label and On-demand alcohol delivery app development solutions deliver seamless performance, elegant UI/UX, and compliance-ready features like ID verification, secure payments, and order management."
-            li="Seamless & User-friendly UI/UX Design"
-            li1="Expertise in On-demand & Subscription-based Solutions"
-            li2="Compliance with Liquor Laws & Age Verification"
-            li3="Secure Payments, Real-time Tracking & Analytics"
+            heading="Alcohol Delivery App Development Company"
+            ptag="Do you want to build an advanced alcohol delivery app to grow your alcohol business faster? Comfygen is a trusted alcohol delivery app development company offering ready-made and custom liquor delivery app solutions for startups, liquor stores, and enterprises. We have the best liquor delivery app developers who build AI-powered alcohol delivery apps with smooth ordering and real-time delivery tracking."
+            li="Custom alcohol & liquor delivery app development"
+            li1="On-demand alcohol delivery app for Android & iOS"
+            li2="Secure payments with built-in age verification"
+            li3="Admin panel, vendor app & delivery partner app"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -355,31 +386,30 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/alcohol-delivery-app-development-hero.webp"
           />
         </div>
+
+           <Milestones/>
         <AboutSection
           title="About Company"
-          heading="Why Do You Need an Alcohol Delivery App for Your Business?"
-          description1="The global online alcohol delivery market is growing rapidly, fueled by changing customer preferences for doorstep liquor purchases and contactless delivery services. With the market expected to surpass $173 billion by 2032, investing in an alcohol delivery app development solution is no longer a luxury; it’s a necessity for wine stores, bars, and distributors looking to stay competitive."
-          description2="Whether you own a standalone liquor shop, manage a multi-chain alcohol business, or run a startup in the beverage industry, a <a href='https://www.comfygen.com/delivery-app-development' class='text-blue-600 font-semibold'>delivery app development solution</a> can revolutionize your business with automated ordering, compliance-ready ID verification, and real-time delivery tracking."
-          description3="With Comfygen’s advanced On-demand liquor delivery app development services, we help you streamline operations, ensure legal compliance, and deliver unmatched customer convenience."
+          heading="Why On-Demand Liquor Delivery Apps Are a Smart Business Investment"
+          description1="The online alcohol delivery market is rapidly expanding, with projections showing it could reach over $70 billion by 2030 as more customers choose doorstep liquor delivery for convenience and safety. This rising demand makes now the perfect time to invest in on-demand liquor delivery app development and grow your alcohol business online."
+          description2="An advanced alcohol delivery app helps liquor stores, bars, and startups reach more customers, streamline orders, and manage deliveries efficiently. With features like real-time delivery tracking, secure age verification, and easy payments, you can deliver a seamless shopping experience that boosts customer satisfaction and repeat purchases."
+          description3="Comfygen offers on-demand alcohol delivery app development services that are scalable, custom, and legally compliant. We help you create an alcohol delivery app that strengthens operations and increases profits, from inventory management and GPS tracking to automated order processing."
           imageSrc="https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
-          points={[
-            "Automates Liquor Orders & Delivery Scheduling",
-            "Enhances Customer Convenience & Repeat Purchases",
-            "Simplifies Compliance with Liquor Laws & Age Verification",
-            "Real-Time Notifications, Delivery Tracking & Order Management",
-          ]}
+          points={[]}
         />
+
+     
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-            We Offer Alcohol Delivery App Development Services
+                We Offer Result-Driven On-Demand Alcohol Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-              Comfygen best delivery app development company. Our affordable alcohol delivery app development services are designed to help liquor businesses digitize operations, expand customer reach, and boost sales with ease. Whether you run a single liquor store, a multi-chain retail outlet, or an on-demand wine delivery startup, our expert alcohol app developers create secure, scalable, and compliance-ready mobile app development solutions according to your business needs.
+                Comfygen's team offers high-class alcohol delivery app development services to help liquor businesses go digital and scale quickly. Our apps offer customers a seamless ordering and delivery experience that is secure and compliant.
               </p>
             </div>
             <div className="">
@@ -387,8 +417,34 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+
+        <AppcardSlider
+          heading="Alcohol Delivery App Clone Solutions We Provide"
+          description="Looking to build an alcohol delivery app like the industry’s leading platforms? At Comfygen, we develop feature-rich alcohol delivery apps inspired by popular liquor delivery apps, customized to match your business goals and customer needs."
+          sliderData={JSON_DATA.IndustriesServe}
+          openModal={openModal}
+        />
+
+        {/* who cane start */}
+        <WhoCanStart
+          title="We Provide The Best Alcohol Delivery App Development Solutions for Every Business Model"
+          description="At Comfygen, we provide alcohol delivery app development solutions designed to support different liquor-related businesses. Whether you run a single store or a large platform, our apps help you manage orders, deliveries, and customers smoothly while staying compliant with alcohol regulations."
+          cards={WhoCanStartCards}
+        />
+
+        {/* portfoliodata */}
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Explore Our Liquor Delivery App Development Portfolio"
+            description="At Comfygen Technologies, we proudly showcase our successful alcohol delivery app projects that help liquor businesses digitize sales, streamline operations, and reach more customers. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are designed to drive real business growth.
+"
+          />
+        </section>
+
         {/* <ContactFromCenter /> */}
-                <CallToAction
+        <CallToAction
           heading="Ready to Launch Your Alcohol Delivery App?"
           text="Partner with Comfygen Technologies, a trusted custom liquor delivery app development agency, to build an AI-powered and custom alcohol delivery solution."
           buttonText="Get Started"
@@ -397,30 +453,13 @@ export default function ClinicalApp(props: any) {
           imageAlt="Future of Technology"
         />
 
-        <AppCard
-          title="Clone script of a popular Alcohol Delivery app"
-          subtitle="Looking to build an alcohol delivery app like the industry’s leading platforms? At Comfygen, we develop feature-rich alcohol delivery app development solutions inspired by popular liquor delivery apps, customized to match your business goals and customer needs."
-          cards={JSON_DATA.CardClone}
-          openModal={openModal}
-        />
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our On-Demand Liquor Delivery App Development Portfolio"
-            description="At Comfygen Technologies, we’re proud to showcase some of our successful alcohol delivery app development projects that help liquor businesses digitize sales, streamline operations, and expand customer reach. From single liquor stores to large beverage chains, our on-demand alcohol delivery solutions are built to make a real business impact."
-          />
-        </section>
-
         <div className="py-8">
           <Features
-            heading="Advanced Features Alcohol Delivery Apps development"
-            description="As a leading on-demand liquor delivery app development company, Comfygen builds feature-rich alcohol delivery apps that deliver seamless experiences for customers, liquor store owners, delivery partners, and administrators."
+            heading="Top Alcohol Delivery App Development Features"
+            description="We are among the best alcohol delivery app development company. Our team builds feature-rich alcohol delivery apps that deliver seamless experiences for customers, liquor store owners, delivery partners, and administrators."
             featuresData={JSON_DATA.featuresData}
             grid={4} />
         </div>
-
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
@@ -467,30 +506,32 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Alcohol Delivery Mobile App Development Process
+               Alcohol Delivery App Development Process: Step-by-Step Guide
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-               At Comfygen, a best delivery app development company, we follow a structured process to deliver custom alcohol delivery app development solutions that are scalable, secure, and compliant. Our alcohol delivery app development services ensure your liquor business gets the perfect digital solution.
+               At Comfygen, we follow a structured alcohol delivery app development process to ensure your liquor business thrives digitally. Our step-by-step approach builds trust, ensures compliance, and delivers a seamless experience for users.
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
+
         <TeckStack
           title="Technology Stack We Use in Wine on-Demand App Development"
           description="As a top alcohol delivery mobile app development company, we use advanced technologies to build result-oriented alcohol delivery app development solutions. Our tech stack make sure faster performance, seamless integration, and long-term growth for your liquor business."
         />
-
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
 
         <DeliverySection hideUrl="https://www.comfygen.com/alcohol-delivery-app-development" />
 

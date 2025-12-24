@@ -48,7 +48,7 @@ export default function ClientStories() {
     },
     {
       videoUrl:
-        "https://www.youtube.com/watch?v=yn2dsJOjfQQ",
+        "https://www.youtube.com/watch?v=-AkHiORQTjA",
       thumbnail:
         "https://www.comfygen.com/comfygen-images/thumbnail/forgeflexrreviewthambnail.webp",
       clientName: "Sayead Shadab Arif",

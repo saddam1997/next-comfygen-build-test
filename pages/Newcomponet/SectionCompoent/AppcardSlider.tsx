@@ -131,7 +131,7 @@ export default function AppcardSlider({
           {
             sliderData?.map((item: any, index: number) => (
               <div
-                className="min-w-[390px] text-center h-[540px] flex flex-col justify-center border rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer"
+                className="min-w-[390px] text-center h-hull flex flex-col justify-center border rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer"
                 onMouseEnter={() => (isPaused.current = true)}
                 onMouseLeave={() => (isPaused.current = false)}
                 key={index}
