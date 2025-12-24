@@ -81,20 +81,6 @@ const ClientTestimonials = dynamic(
 );
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-
 export default function rummy(props) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);

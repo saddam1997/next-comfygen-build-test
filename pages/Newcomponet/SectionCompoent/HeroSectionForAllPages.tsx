@@ -27,34 +27,34 @@ export default function HeroSectionForAllPages(props: any) {
 
   return (
     <section
-      className="relative h-full bg-[#5951cd] sm:bg-transparent py-10">
+      className="relative lg:h-full h-screen flex flex-col justify-center overflow-hidden bg-[#5951cd] sm:bg-transparent py-10">
       <div className="absolute inset-0 -z-10 hidden sm:block">
         <div className="w-full h-full relative">
 
-   
-                  <Image
-                    src={props.bgImage}
-                    alt="Hero Background"
-                    fill
-                    priority         // 🚀 loads instantly
-                    quality={80}
-                    className="object-cover object-center"
-                    sizes="100vw"
-                  />
- 
-                {/* <Image
-                  src={props.bgImage}
-                  alt="Comfygen Hero Background"
-                  fill
-                  className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
-                  priority
-                  fetchPriority="high"
-                  sizes="100vw"
-                  placeholder="blur"
-                  blurDataURL="/blur-placeholder.webp"
-                  quality={75}
-                  loading="eager"
-                /> */}
+
+          {/* <Image
+            src={props.bgImage}
+            alt="Hero Background"
+            fill
+            priority         // 🚀 loads instantly
+            quality={80}
+            className="object-cover object-center"
+            sizes="100vw"
+          /> */}
+
+          <Image
+            src={props.bgImage}
+            alt="Comfygen Hero Background"
+            fill
+            className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            placeholder="blur"
+            blurDataURL="/blur-placeholder.webp"
+            quality={75}
+            loading="eager"
+          />
           {/* <CommonImage
             src={props?.bgImage}
             alt="Comfygen Hero Background"
