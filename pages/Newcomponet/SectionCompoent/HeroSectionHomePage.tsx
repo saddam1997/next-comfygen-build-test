@@ -76,7 +76,7 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent sm:h-full max-h-screen`}
+      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full `}
     // style={{
     //   backgroundImage: isDesktop && `url(${bgImage})`,
     // }}
@@ -85,7 +85,7 @@ export default function HeroSection(props: any) {
     // }}
     >
 
-      <div className="absolute inset-0 -z-10 hidden lg:block">
+      {/* <div className="absolute inset-0 -z-10 hidden lg:block">
         <Image
           src={bgImage}
           alt="Hero Background"
@@ -95,9 +95,9 @@ export default function HeroSection(props: any) {
           className="object-cover object-center"
           sizes="100vw"
         />
-      </div>
+      </div> */}
 
-      {/* <Image
+       <Image
         src={props.bgImage}
         alt="Comfygen Hero Background"
         fill
@@ -109,7 +109,7 @@ export default function HeroSection(props: any) {
         blurDataURL="/blur-placeholder.webp"
         quality={75}
         loading="eager"
-      /> */}
+      /> 
 
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
