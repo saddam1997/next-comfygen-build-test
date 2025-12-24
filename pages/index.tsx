@@ -352,7 +352,7 @@ export default function Home(props: any) {
           <HeroSectionHomePage
             heading={typedText}
             isHome={true}
-            Provider
+
             ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
             btnName="Let's Discuss"
             btnLink="/contact-us"
