@@ -1,5 +1,6 @@
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
+import DesktopNavnew from "./DesktopNavnew"
 
 
 export default function Header(props: any) {
@@ -7,6 +8,7 @@ export default function Header(props: any) {
     <header>
       <div className="hidden lg:block">
        <DesktopNav />
+       {/* <DesktopNavnew/> */}
       </div>
       <div className="block lg:hidden">
        <MobileNav />

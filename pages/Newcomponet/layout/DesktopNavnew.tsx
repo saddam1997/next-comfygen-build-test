@@ -1719,41 +1719,30 @@ export default function DesktopNav(props: any) {
                           <MenuItem
                             elem={{
                               img: "https://www.comfygen.com/image/on-demand-mobile-header-icon.svg",
-                              name: " Healthcare App Development",
-                              description: "Transforming Healthcare with Smart Apps"
+                              name: "Healthcare App Development",
+                              description: " Transforming Healthcare with Smart Apps"
                             }}
                             activeTab={activeTab}
                             tabKey="Tab1"
                             handleTabClick={handleTabClick}
                           />
 
-                          <Link
-                            href="/blockchain-development"
-                            onClick={() => handleTabClick("Tab2")}
-                            className={`flex items-start gap-2 ${activeTab === "Tab2" ? "bg-[#5556D1]/10" : "hover:bg-[#5556D1]/10"
-                              } p-2 py-3 rounded-md cursor-pointer transition-colors duration-150`}
-                          >
-                            <Image
-                              src="https://www.comfygen.com/image/blockchain-app-dev-header-icon.svg"
-                              alt="Blockchain Solution"
-                              height={40}
-                              width={40}
-                              loading="lazy"
-                            />
-                            <div className="space-y-2 cursor-pointer">
-                              <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">
-                                Blockchain Solution
-                              </p>
-                              <span className="text-[#212121]/80 text-sm font-normal">
-                                Secure Your Digital Future
-                              </span>
-                            </div>
-                          </Link>
 
                           <MenuItem
                             elem={{
                               img: "https://www.comfygen.com/image/mobile-app-solutions-header-icon.svg",
-                              name: "Mobile App Solutions",
+                              name: "Finance App Development",
+                              description: "Transforming Financial Ideas into Apps"
+                            }}
+                            activeTab={activeTab}
+                            tabKey="Tab2"
+                            handleTabClick={handleTabClick}
+                          />
+
+                          <MenuItem
+                            elem={{
+                              img: "https://www.comfygen.com/comfygen-images/navbar/education-app-development.svg",
+                              name: "Education App Development",
                               description: "Customized Applications for Every Industry"
                             }}
                             activeTab={activeTab}
@@ -1763,32 +1752,50 @@ export default function DesktopNav(props: any) {
 
                           <MenuItem
                             elem={{
-                              img: "https://www.comfygen.com/image/web3-deve-header-icon.svg",
-                              name: "Web3 Development",
-                              description: "Building the Future with Web3"
+                              img: "https://www.comfygen.com/comfygen-images/navbar/ecommerce-development.svg",
+                              name: "Ecommerce Development",
+                              description: "Empowering Seamless Online Shopping"
                             }}
                             activeTab={activeTab}
                             tabKey="Tab4"
                             handleTabClick={handleTabClick}
                           />
 
-                          <MenuItem
-                            elem={{
-                              img: "https://www.comfygen.com/comfygen-images/navbar-img/crypto-development1.svg",
-                              name: "Crypto Development",
-                              description: "Innovate Your Crypto Vision"
-                            }}
-                            activeTab={activeTab}
-                            tabKey="Tab5"
-                            handleTabClick={handleTabClick}
-                          />
+
+                          <Link
+                            onClick={() => handleTabClick("Tab5")}
+
+                            href="/dating-app-development"
+                            className={
+                              activeTab === "Tab5"
+                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                            }
+                          >
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/navbar/dating-app-development.svg"
+                              alt="dating-app-development"
+                              height={40}
+                              width={40}
+                            />
+                            <div className="space-y-4 cursor-pointer">
+                              <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+                                Dating App Development
+                              </p>
+                              <span className="text-[#212121]/80 text-sm font-normal">
+                                Smart Solutions for Digital Romance
+                              </span>
+                            </div>
+                          </Link>
+
+
                         </ul>
                       </div>
                       <div className="space-y-10">
                         <div>
                           {activeTab === "Tab1" && (
                             <MenuSection
-                              items={Blockchain}
+                              items={Healthcare}
                               activeTab={activeTab}
                               setShowNav={setShowNav}
                               showNavId={2}
@@ -1797,7 +1804,7 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab2" && (
                             <MenuSection
-                              items={Other}
+                              items={Finance}
                               activeTab={activeTab}
                               setShowNav={setShowNav}
                               showNavId={2}
@@ -1806,7 +1813,7 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab3" && (
                             <MenuSection
-                              items={Token}
+                              items={EducationApp}
                               activeTab={activeTab}
                               setShowNav={setShowNav}
                               showNavId={2}
@@ -1815,59 +1822,31 @@ export default function DesktopNav(props: any) {
 
                           {activeTab === "Tab4" && (
                             <MenuSection
-                              items={Metaverse}
+                              items={EcommerceApp}
                               activeTab={activeTab}
                               setShowNav={setShowNav}
                               showNavId={2}
                             />
                           )}
 
-                          {activeTab === "Tab5" && (
-                            <MenuSection
-                              items={cryptoDevelopment}
-                              activeTab={activeTab}
-                              setShowNav={setShowNav}
-                              showNavId={2}
-                            />
-                          )}
+                          
                         </div>
                       </div>
 
-                      <div className={activeTab === "Tab5" ? "" : "hidden"}>
-                        {activeTab === "Tab5" && (
-                          <MenuSection
-                            items={cryptoDevelopment1}
-                            activeTab={activeTab}
-                            setShowNav={setShowNav}
-                            showNavId={2}
-                          />
-                        )}
-                      </div>
-
-                      <div className={activeTab === "Tab1" ? "" : "hidden"}>
-                        {activeTab === "Tab1" && (
-                          <MenuSection
-                            items={Blockchain1}
-                            activeTab={activeTab}
-                            setShowNav={setShowNav}
-                            showNavId={2}
-                          />
-                        )}
-                      </div>
-
-                      <div className={`${activeTab === "Tab5" || activeTab === "Tab1" ? "hidden" : ""}`}>
+                      <div>
                         <a href="/contact-us" className="relative block">
                           <Image
-                            src="https://www.comfygen.com/image/solutions-header-img.webp"
+                            src="https://www.comfygen.com/image/mobile-app-development-services-img.webp"
                             alt=""
-                            height={486}
-                            width={511}
+                            height={475}
+                            width={452}
+                            className="w-full"
                             loading="lazy"
                             placeholder="blur"
-                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTExIiBoZWlnaHQ9IjQ4NiIgdmlld0JveD0iMCAwIDUxMSA0ODYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUxMSIgaGVpZ2h0PSI0ODYiIGZpbGw9IiNlNWU1ZTUiLz48L3N2Zz4="
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUyIiBoZWlnaHQ9IjQ3NSIgdmlld0JveD0iMCAwIDQ1MiA0NzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQ1MiIgaGVpZ2h0PSI0NzUiIGZpbGw9IiNlNWU1ZTUiLz48L3N2Zz4="
                           />
-                          <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
-                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white transition-colors duration-150 hover:bg-[#5556D1]/90">
+                          <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
+                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-base text-white transition-colors duration-150 hover:bg-[#5556D1]/90">
                               Connect to expert
                               <Image
                                 src="https://www.comfygen.com/image/button-arrow.svg"
@@ -1888,23 +1867,24 @@ export default function DesktopNav(props: any) {
               {/* Rest of the code follows the same pattern... */}
               {/* Due to character limit, I'll show the pattern for one section */}
 
-              {/* Get a Quote Button */}
-              <div className="xl:block hidden">
-                <Link href="/contact-us" passHref={true} prefetch={false}>
-                  <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white cursor-pointer transition duration-300 relative flex gap-3 items-center transition-colors duration-150">
-                    Get a Quote
-                    <Image
-                      src="https://www.comfygen.com/image/button-arrow.svg"
-                      alt="button-arrow"
-                      height={24}
-                      width={24}
-                      loading="lazy"
-                    />
-                  </span>
-                </Link>
-              </div>
+
             </div>
           </div>
+        </div>
+        {/* Get a Quote Button */}
+        <div className="xl:block hidden">
+          <Link href="/contact-us" passHref={true} prefetch={false}>
+            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white cursor-pointer transition duration-300 relative flex gap-3 items-center transition-colors duration-150">
+              Get a Quote
+              <Image
+                src="https://www.comfygen.com/image/button-arrow.svg"
+                alt="button-arrow"
+                height={24}
+                width={24}
+                loading="lazy"
+              />
+            </span>
+          </Link>
         </div>
       </nav>
     </div>
