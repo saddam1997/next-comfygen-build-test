@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const DeliverySection = (props) => {
-
-    const { hideUrl } = props;
-
-    const [visibleCount, setVisibleCount] = useState(8);
-
-    const apps = [
+    const appsadata = [
 
         {
             title: "Fuel Delivery App Development",
@@ -173,6 +166,18 @@ const DeliverySection = (props) => {
 
     ];
 
+const DeliverySection = ({
+    title="We Provide Custom Delivery App Development Services in Diverse Sectors",
+    description="The Comfygen team creates powerful and easy-to-use delivery apps for a variety of industries. Whether you run a startup, small business, or large enterprise, our custom delivery app development services are made to fit your business needs.",
+    hideUrl="",
+    apps = appsadata
+}) => {
+
+
+    const [visibleCount, setVisibleCount] = useState(8);
+
+
+
     const filterData = hideUrl
         ? apps.filter((app) => app.link !== hideUrl)
         : apps;
@@ -195,11 +200,11 @@ const DeliverySection = (props) => {
             <div className="relative z-10 2xl:w-10/12 w-11/12 lg:w-11/12 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
-                        We Provide Custom Delivery App Development Services in Diverse Sectors
+                        {title}
                     </h2>
 
-                    <p className="text-base font-normal mt-2 lg:w-2/3 mx-auto w-full">
-                        The Comfygen team creates powerful and easy-to-use delivery apps for a variety of industries. Whether you run a startup, small business, or large enterprise, our custom delivery app development services are made to fit your business needs.
+                    <p className="text-base font-normal mt-2 lg:w-2/3 mx-auto w-full"  dangerouslySetInnerHTML={{ __html: description }}>
+                        
                     </p>
                 </div>
 

@@ -533,7 +533,7 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <DeliverySection hideUrl="https://www.comfygen.com/alcohol-delivery-app-development" />
+        <DeliverySection  hideUrl="https://www.comfygen.com/alcohol-delivery-app-development" />
 
         <HireDeveloper
           heading="Hire Alcohol Delivery App Developer"
