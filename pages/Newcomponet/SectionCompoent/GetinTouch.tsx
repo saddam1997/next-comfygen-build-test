@@ -46,7 +46,7 @@ const Form = () => (
       <div className="max-w-7xl mx-auto p-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="lg:text-4xl text-3xl font-semibold text-white mb-8">
+          <h2 className="lg:text-4xl text-xl font-semibold text-white mb-8">
             Contact Us Anytime For Quick Assistance
           </h2>
 
@@ -183,11 +183,11 @@ const Form = () => (
           {/* Left Side - Location Cards */}
           <div className="space-y-10 h-full">
             {locations.map((location, index) => (
-              <div key={index} className="bg-white/10 flex gap-8 py-6 items-center  backdrop-blur-md rounded-2xl p-6 text-white border border-white/20">
+              <div key={index} className="bg-white/10 lg:flex flex-cols gap-8 py-6 items-center  backdrop-blur-md rounded-2xl p-6 text-white border border-white/20">
                 <div className="flex-col items-start ">
 
-                  <h3 className="text-[24px] font-[275] text-[#FFFFFF]">{location.country}</h3>
-                  <div className="text-4xl">
+                  <h3 className="lg:text-[24px] text-base font-semibold text-[#FFFFFF]">{location.country}</h3>
+                  <div className="text-4xl hidden lg:block ">
                     <div className="">
                       <Image
                         src={location.img}
@@ -207,16 +207,16 @@ const Form = () => (
                     <div className="flex items-start gap-3">
                       <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="text-white lg:text-lg text-base font-semibold">Phone Number</p>
-                        <p className="text-white lg:text-lg text-base font-semibold"><a href={location.number}>{location.phone}</a></p>
+                        <p className="text-white lg:text-lg text-sm font-semibold">Phone Number</p>
+                        <p className="text-white lg:text-lg text-sm font-semibold"><a href={location.number}>{location.phone}</a></p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                     <MapPin className="w-8 h-8 mt-1 flex-shrink-0" />
+                     <MapPin className="lg:w-8 lg:h-8 h-5 w-5 mt-1 flex-shrink-0" />
                        <a href={location.loction}>
-                        <p className="text-white lg:text-lg text-base font-semibold opacity-80">Office Location</p>
-                        <p className="text-[16px]">{location.address}</p>
+                        <p className="text-white lg:text-lg text-sm font-semibold opacity-80">Office Location</p>
+                        <p className="lg:text-[16px] text-sm">{location.address}</p>
                       </a>
                     </div>
                   </div>
