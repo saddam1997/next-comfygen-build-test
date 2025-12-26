@@ -162,6 +162,11 @@ const WhoCanStartCards = [
     description:
       "Expand your <a class=' underline text-black font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> offerings by adding milk delivery as a recurring service. Our milk delivery mobile app development solutions help streamline inventory, track customer orders, and boost sales through automated scheduling and doorstep delivery.",
   },
+  {
+    heading: "Dairy Farms & Local Milk Vendors",
+    description:
+      "Take your local dairy business online with our custom milk delivery app development solutions. anage daily subscriptions, flexible quantities, digital payments, and doorstep delivery while reducing manual work and increasing repeat customers.",
+  },
 ];
 
 export default function ClinicalApp(props: any) {
