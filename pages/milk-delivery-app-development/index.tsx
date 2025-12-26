@@ -160,7 +160,7 @@ const WhoCanStartCards = [
   {
     heading: "FMCG Businesses",
     description:
-      "Expand your <a class=' underline text-black font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> offerings by adding milk delivery as a recurring service. Our milk delivery mobile app development solutions help streamline inventory, track customer orders, and boost sales through automated scheduling and doorstep delivery.",
+      "Expand your <a class='underline font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> offerings by adding milk delivery as a recurring service. Our milk delivery mobile app development solutions help streamline inventory, track customer orders, and boost sales through automated scheduling and doorstep delivery.",
   },
   {
     heading: "Dairy Farms & Local Milk Vendors",
@@ -532,7 +532,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-  
+
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
@@ -603,7 +603,7 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-      
+
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
@@ -612,11 +612,11 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
-        <Features 
-        heading="Key Features of Our Milk Delivery App"
-        description=" At Comfygen, we integrate Using Comfygen Technologies, a top-rated dairy milk delivery app development company, you will get robust milk delivery apps for customers, delivery agents, and admins. The panels are thoughtfully designed to ensure a smooth ordering, delivery, and management process."
-        featuresData={JSON_DATA.featuresData}
-        grid="3"
+        <Features
+          heading="Key Features of Our Milk Delivery App"
+          description=" At Comfygen, we integrate Using Comfygen Technologies, a top-rated dairy milk delivery app development company, you will get robust milk delivery apps for customers, delivery agents, and admins. The panels are thoughtfully designed to ensure a smooth ordering, delivery, and management process."
+          featuresData={JSON_DATA.featuresData}
+          grid="3"
         />
 
         <section className="bg-white lg:py-16 py-10">

@@ -5,6 +5,9 @@ import Header from "../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
+import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
+import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
+import ClientStories from "../Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -76,39 +79,39 @@ const Faq = dynamic(
 
 const Process = [
   {
-    title: "Discovery & Requirement Analysis",
+    title: "Requirement Analysis & Business Consultation",
     description:
-      "We analyze business goals, logistics workflows, and feature needs to create a strategic roadmap for custom logistics app development, ensuring scalable, efficient transport and supply chain performance.",
+      "Understand your logistics workflows, pain points, and goals to define clear project requirements.",
   },
   {
-    title: "UI/UX Designing",
+    title: "UI/UX Design & Prototyping",
     description:
-      "We design intuitive, user-friendly interfaces for customers, drivers, and admins, ensuring seamless navigation and enhanced usability for high-performing logistics app solutions across transport and delivery operations.",
+      "Create intuitive, user-friendly designs and interactive prototypes for admin, driver, and customer apps.",
   },
   {
     title: "App Development & API Integration",
     description:
-      "Our expert logistics app developers build secure, scalable solutions with GPS tracking, automated dispatch, ERP/CRM integration, and real-time delivery management to improve fleet coordination and operational accuracy.",
+      "Build web and mobile apps with robust backend systems and integrate necessary APIs for tracking, payments, and ERP/CRM.",
   },
   {
-    title: "Testing & Quality Assurance",
+    title: "Quality Testing & Security Checks",
     description:
-      "We conduct thorough quality testing to ensure flawless real-time tracking, secure data handling, and smooth logistics workflows, delivering reliable transportation app development results across all platforms.",
+      "Conduct functional, performance, and security testing to ensure your app is reliable and secure.",
   },
   {
-    title: " Deployment & App Launch",
+    title: "Deployment & Store Submission",
     description:
-      "We deploy your logistics application across Android, iOS, and web platforms with optimized performance, cloud setup, and secure configurations for a smooth launch without operational interruptions.",
+      "Publish apps on iOS and Android platforms, ensuring compliance with store guidelines.",
   },
   {
-    title: "Support & Maintenance",
+    title: "Ongoing Support & Maintenance",
     description:
-      "We provide continuous maintenance, performance monitoring, and feature upgrades for long-term logistics app development solutions, ensuring reliability, reduced downtime, and improvement in delivery speed and efficiency.",
+      "Provide continuous support, bug fixes, updates, and feature enhancements to keep your app running smoothly.",
   },
   {
-    title: "App Scaling & Future Enhancements",
+    title: "Post-Launch Optimization & Analytics",
     description:
-      "We scale your logistics app with AI dispatching, predictive analytics, IoT fleet tracking, and automated route planning for faster deliveries and optimized supply chain performance.",
+      "Monitor app performance, user engagement, and operational metrics. Use analytics to optimize routes, improve delivery efficiency, and guide future app enhancements.",
   },
 ];
 
@@ -396,10 +399,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Custom Logistics App Development Company | Transport & Supply Chain Solutions</title>
+        <title> Logistics App Development Company comfygen</title>
         <meta
           name="description"
-          content="Comfygen is a leading logistics app development company offering custom transport, fleet, and delivery management solutions with real-time tracking, route optimisation, and automation."
+          content="A leading on-demand logistics app development company in India, we provide real-time tracking, route optimization, and automation to streamline logistics services."
         />
         <link
           rel="canonical"
@@ -517,13 +520,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top-Rated Logistics App Development Company"
-            ptag="Comfygen is a leading custom logistics app development company in India delivering high-performance mobility solutions for transportation, delivery, and supply chain businesses. We delivered scalable and secure logistics mobile app development solutions integrated with real-time tracking, smart route planning, fleet management, automation, and advanced analytics to maximise operational efficiency and reduce delivery costs."
-            li="Real-Time GPS & Shipment Tracking"
-            li1="Route & Delivery Optimization"
-            li2="Fleet & Driver Management"
-            li3="Scalable Multi-Platform Solutions"
-            li4="Transportation app development"
+            heading="Logistics App Development Company"
+            ptag="We are a transport and logistics app development company specializing in custom logistics app development for transportation and supply chain businesses, delivering mobile and web logistics solutions such as fleet management apps, real-time shipment tracking, route optimization, and last-mile delivery platforms, built for scalability, system integration, and high-volume logistics operations."
+            li="Proven experience in logistics and transportation app development"
+            li1="Successfully delivered multiple logistics and delivery platforms"
+            li2="Serving global clients across transportation, supply chain, and on-demand delivery"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -535,37 +536,25 @@ export default function ClinicalApp(props: any) {
         </div>
         <AboutSection
           title="About Company"
-          heading="Why Your Logistics Business Needs a Mobile App"
-          description1="The logistics industry is undergoing a rapid digital shift, with mobile apps transforming how goods are tracked, fleets are managed, and customers stay informed. Businesses that adopt logistics app development services are experiencing tangible operational benefits and enhanced customer trust."
-          description2="<a class='text-blue-500 font-semibold' >Comfygen Technologies</a> is a trusted logistics app development agency, delivering end-to-end digital solutions tailored to the needs of logistics startups, enterprises, freight operators, and 3PL providers. Our first-class logistics apps help streamline the entire delivery lifecycle — from route planning and vehicle tracking to automated dispatch and customer notifications."
+          heading="Why Logistics Businesses Must Invest in Logistics App Development"
+          description1="Logistics is no longer about moving goods from point A to point B. It’s about speed, visibility, cost control, and customer trust. Manual processes, phone-based coordination, and fragmented systems simply don’t scale your logistics business in fast fast-growing world."
+          description2="Develop a logistics app that gives business owners real-time control over fleet movement, deliveries, drivers, and inventory. With a centralized logistics platform, you reduce delivery delays, cut fuel and operational costs, improve route planning, and respond faster to customer demands."
+          description3="A custom logistics app also brings transparency across the supply chain. Logistics business owners can track shipments live, monitor driver performance, automate dispatching, and generate data-driven insights that directly impact profitability. As order volumes grow and customer expectations rise, a scalable logistics app becomes a growth enabler, not just a technology upgrade."
+          description4="For logistics companies looking to stay competitive, improve margins, and expand operations efficiently, investing in logistics app development is no longer optional; it’s a strategic business decision."
           imageSrc="https://www.comfygen.com/comfygen-images/logistics-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
-          points={[
-            "75% of logistics businesses improve delivery timelines with mobile solutions",
-            "Up to 35% savings in fleet and administrative costs through automation",
-            "Enhances Inventory & Route Management",
-            "Real-time tracking & alerts enhance customer satisfaction and service transparency",
-            "Custom <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >analytics dashboards</a> support data-driven decisions across operations",
-          ]}
-        />
-
-        <WhoCanStart
-          title="Logistics App Development Solutions for Every Business Type"
-          description="Our scalable and customizable logistics app development services cater to diverse logistics and transportation segments. Whether you need a ready-made platform or a fully custom-built enterprise solution, Comfygen delivers results that support growth and automation."
-          cards={WhoCanStartCards}
+          points={[]}
         />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide the Greatest Logistics App Development Services for your Business
-
+                Our Logistics App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen Technologies offers robust logistics app development services designed for transportation companies, courier agencies, freight service providers, supply chain management, and last-mile delivery businesses. From freight tracking to real-time delivery management, our solutions are designed for efficiency, automation, and business growth.
-
+                Comfygen offers logistics app development services designed to solve real operational challenges faced by transportation, supply chain, courier agencies, freight service providers, and delivery businesses. Our app development solution is custom-built to match your business needs, scale with demand, and integrate with existing systems.
               </p>
             </div>
             <div className="">
@@ -573,52 +562,75 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
-        {/* <ContactFromCenter /> */}
 
-        <AppCard
-          title="We Have Already Developed Clones of Popular Transport and Logistics Apps"
-          subtitle="Comfygen specializes in building high-performance logistics <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development solutions</a> inspired by globally recognized platforms. As a leading transport and logistics app development company , we deliver white-label and custom-built alternatives to popular transportation and freight management apps, designed to meet your unique business needs and launch timeline."
-          cards={CardClone}
+        <CallToAction
+          heading="Ready to Build Your Logistics App?"
+          text="Partner with a leading logistics app development company and launch your custom app faster with Comfygen’s expert."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+
+        <AppcardSlider
+          heading="Top Logistics App Clones Ready for Development"
+          description="Kickstart your logistics business with <a href='https://www.comfygen.com/white-label-mobile-app-development' class='text-blue-600 font-semibold'>White-label logistics apps</a> like Uber Freight, DHL, Delhivery, Convoy, Shiprocket, and BlackBuck clones. Streamline fleet management, order tracking, and warehouse operations with our expert logistics app development solutions."
+          sliderData={JSON_DATA.IndustriesServe}
           openModal={openModal}
         />
 
+        <section className=" lg:py-10 py-10">
+          <Features
+            grid='4'
+            heading='We Develop Logistics Apps With Advanced Panel Features'
+            description='Comfygen is a logistics app development company delivering feature-rich apps for managers, drivers, and customers. With real-time tracking, automated dispatch, route optimization, and analytics, our solutions streamline operations, cut costs, and improve delivery efficiency.'
+            featuresData={JSON_DATA.featuresData}
+          />
+        </section>
 
         {/* portfoliodata */}
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Portfolio – Logistics and Transportation App Development Projects"
-            description="Explore how Comfygen helps logistics companies, transport aggregators, and freight startups with intelligent, scalable logistics app development services. From real-time shipment tracking to automated fleet management, our logistics mobile apps deliver seamless user experiences and operational efficiency."
+            heading="Showcasing Our Expertise in Logistics & Transportation App Development"
+            description="Comfygen builds custom apps for logistics companies, transport aggregators, and freight startups, offering real-time tracking, automated fleet management, and smart dispatch systems to streamline operations and enhance efficiency."
           />
         </section>
 
-        <section className=" lg:py-10 py-10">
-          <Features
-            grid='4'
-            heading='We Develop Ice Cream Delivery Apps With Advanced Panel Features'
-            description='Comfygen is among the best ice cream delivery mobile app development firm. We craft feature-rich Ice Cream Delivery Apps that deliver a seamless experience for customers, ice cream shop owners, delivery agents, and administrators. With AI-powered personalization, blockchain-secured payments, and real-time tracking, our apps are designed to transform the ice cream delivery experience.' 
-            featuresData={JSON_DATA.featuresData}
-            />
+        <CallToAction
+          heading="Build Smarter Logistics Solutions"
+          text="Collaborate with Comfygen to design a logistics app that enhances operational efficiency, delivery accuracy, and customer experience."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+        <section className="bg-white lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center space-y-4">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Logistics App Development Process
+              </h2>
+              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+                We follow a structured, end-to-end logistics app development process that is efficient, scalable, and aligned with business goals. Our methodology reduces risk, accelerates development, and ensures high-quality delivery.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
         </section>
-
-
 
         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Emerging Technologies We Use to Build Smart Transport and
-                  Logistics Apps
+                  Advanced Technologies for Next-Generation Logistics App Development
                 </h2>
                 <p className="text-center text-white lg:w-10/12 mx-auto">
-                  Comfygen Technologies develops intelligent, secure, and
-                  scalable transportation and logistics applications utilizing
-                  next-generation technologies. Using these technologies enables
-                  supply chains to be transparent, reduce delivery costs, and be
-                  controlled in real time. <br /> Explore the innovative
-                  technologies that power our logistics mobile app development
-                  services.
+                  Building the next-generation logistics and delivery apps requires cutting-edge technologies to ensure speed, efficiency, and scalability. Key technologies we use include:
                 </p>
               </div>
               <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
@@ -655,24 +667,11 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Streamlined Logistics App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                At Comfygen, we follow a structured and result-driven logistics app development process that ensures high performance, scalability, and seamless delivery operations. Our expert logistics app developers design and build powerful digital logistics solutions tailored to your business needs.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
         <TeckStack
-          title="Tech Stack We Use in Transportation App Development"
-          description="Comfygen builds high-performance, secure, and scalable mobile apps for transport and logistics. Our team carefully selects the ideal tech stack based on your business objectives, operational workflows, and real-time logistics tracking requirements. All devices and platforms benefit from optimal performance, user experience, and system reliability."
+          title="Logistics App Development Technology Stack"
+          description="We use an advanced technology stack to build high-performance, secure, and scalable logistics apps for businesses of all sizes. Our technology choices ensure your app can handle real-time tracking, large fleets, and complex supply chain operations efficiently."
         />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -680,20 +679,24 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
+        <ClientStories />
+
+
         <HireDeveloper
           heading="Hire Logistics App Developers"
-          text="Want to build a scalable and intelligent logistics app? Hire talented logistics <a class='underline font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> from Comfygen Technologies to transform your idea into a fully functional digital logistics platform. We develop the best logistics applications for transport management, shipment tracking, warehouse coordination, and last-mile delivery—backed by industry expertise and end-to-end support."
+          text="Hire skilled logistics app developers from Comfygen to build scalable mobile and web apps. We specialize in fleet management, shipment tracking, warehouse systems, and last-mile delivery, delivering reliable solutions with ongoing support."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "Experienced in custom logistics app development",
-            "10+ years of transport and mobility app expertise",
-            "Skilled in fleet, freight, and warehouse app development solutions",
-            "On-time delivery with ongoing support & maintenance",
+            "Expertise in custom logistics and transportation app development",
+            "Strong experience with fleet, freight, and warehouse management systems",
+            "Skilled in real-time tracking, route optimization, and system integrations",
+            "Agile development with timely delivery and long-term support",
           ]}
         />
+
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}

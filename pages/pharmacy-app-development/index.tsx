@@ -287,11 +287,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Online Pharmacy App Development Company in India | ePharmacy App Solutions
+         Pharmacy App Development Company in India | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading pharmacy app development company in India. We deliver ePharmacy apps for medicine delivery, digital prescriptions, and HIPAA-compliant pharmacy solutions."
+          content=" Comfygen is a top pharmacy app development company in India, offering AI-powered pharmacy apps with online medicine ordering, prescription uploads, and real-time delivery tracking."
         />
 
         <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development "></meta>
