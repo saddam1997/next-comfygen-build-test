@@ -20,17 +20,17 @@
   "servicesData": [
     {
       "title": "Custom Pharmacy App Development",
-      "description": "We create 100% custom pharmacy applications designed to match your business needs. Our apps help pharmacies manage orders, stock, and deliveries smoothly while improving customer experience and business performance with advanced digital features.",
+      "description": "We create user-friendly pharmacy applications designed to match your startup pharmacy business needs. Our developed pharmacy apps help pharmacies manage orders, stock, and deliveries smoothly while improving customer experience and business performance with advanced digital features.",
       "features": [
         "Custom features & branding",
-        "Secure prescription upload",
+        "Secure prescription upload application",
         "Easy medicine search system",
         "Expert Pharmacy App Builders"
       ]
     },
     {
-      "title": "On-demand Medicine Delivery App Development",
-      "description": "Launch your own medicine delivery business with our on-demand pharmacy app development services. Offer users fast ordering, doorstep delivery, and subscription refills to improve convenience and increase repeat purchases.",
+      "title": "White-label Pharmacy App Development",
+      "description": "Comfygen is a top-rated pharmacy app development company in India with over 7 years of experience. We provide <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label pharmacy app development</a> to start your online pharmacy business instantly. Quickly customize design and features to match your brand without long development time or high investment.",
       "features": [
         "Real-time delivery tracking",
         "Multiple payment options",
@@ -39,18 +39,8 @@
       ]
     },
     {
-      "title": "White-label Pharmacy Mobile App Development",
-      "description": "Comfygen Technologies is the best online pharmacy app development company specializing in healthcare app development solutions. We provide <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label pharmacy app development</a> to start your online pharmacy business instantly. Quickly customize design and features to match your brand without long development time or high investment.",
-      "features": [
-        "Ready-made ePharmacy platform",
-        "Affordable & scalable",
-        "Quick deployments",
-        "Branding customization"
-      ]
-    },
-    {
       "title": "E-Pharmacy App Development for Retailers",
-      "description": "Support local pharmacy stores by taking their business online with secure ePharmacy app development solutions. Retailers can manage prescriptions, deliveries, and customers through ",
+      "description": "Take your local pharmacy business online with secure and efficient drug delivery app development. Our pharmacy app helps retailers manage prescriptions, deliveries, and customers seamlessly through a centralized mobile app platform.",
       "features": [
         "Inventory & stock tracking",
         "Order and delivery management",
@@ -86,46 +76,6 @@
         "Commission-based revenue",
         "Pharmacy inventory sync",
         "Smart search for medicines"
-      ]
-    },
-    {
-      "title": "Telemedicine Integrated Pharmacy Delivery App",
-      "description": "We create advanced ePharmacy apps combined with <a href='https://www.comfygen.com/telemedicine-app-development' class='underline font-semibold'>telemedicine</a> features to offer doctor consultation and <a href='https://www.comfygen.com/quick-commerce-app-development' class='underline font-semibold'>instant medicine orders</a> in one platform. Patients can consult doctors online and get prescribed medicines delivered quickly.",
-      "features": [
-        "In-app video consultation",
-        "Digital prescriptions",
-        "Quick medicine purchase",
-        "<a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='underline font-semibold'>HIPAA-compliant app system</a>"
-      ]
-    },
-    {
-      "title": "Inventory & Supply Chain Solutions",
-      "description": "Manage your pharmacy supply chain with smart tools for stock monitoring, order management, and expiry alerts. Our pharmacy inventory solutions help reduce waste and improve delivery efficiency with real-time updates.",
-      "features": [
-        "Smart stock tracking",
-        "Vendor & delivery coordination",
-        "Analytics & reporting",
-        "Barcode scanning support"
-      ]
-    },
-    {
-      "title": "Specialty Pharmacy Delivery App",
-      "description": "We build powerful speciality pharmacy apps for medicines that require special care like cold storage and fast handling. Ensure safe and compliant delivery for patients with critical medical needs.",
-      "features": [
-        "Temperature-controlled tracking",
-        "Priority delivery support",
-        "Special medicine category",
-        "Insurance verification"
-      ]
-    },
-    {
-      "title": "B2C Pharmacy App Development Solution",
-      "description": "Grow your online medicine selling business with our B2C pharmacy app solutions. Connect directly with consumers, increase sales, and provide easy home delivery with a seamless digital experience.",
-      "features": [
-        "Direct pharmacy-to-customer orders",
-        "Discount & offers management",
-        "Repeat ordering features",
-        "Secure payment gateway"
       ]
     }
   ],
@@ -423,20 +373,20 @@
     {
       "num": "1",
       "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "AI-Based Pharmacy App Development",
+      "title": "Artificial Intelligence (AI)",
       "decs": "We provide <a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI-powered pharmacy app development</a> to automate medicine recommendations, detect prescription errors, enable chatbots, and make your pharmacy app development smarter with personalized ordering and improved user convenience."
     },
     {
       "num": "2",
       "img": "https://www.comfygen.com/img/5g-technology.webp",
-      "title": "Blockchain-Powered ePharmacy App Solution",
-      "decs": "<a herf='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain technology</a> can be used to secure patient data, ensure transparency in medicine supply problems, and to prevent counterfeit medicines"
+      "title": "Blockchain Technology",
+      "decs": "<a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain technology</a> ensures secure and transparent handling of prescriptions and transactions. It helps prevent data tampering, improves trust, and supports compliance with healthcare data protection standards."
     },
     {
       "num": "3",
       "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
       "title": "Data Science Solutions",
-      "decs": "<a herf='https://www.comfygen.com/data/hire-data-scientist' class='underline font-semibold'>Data Science</a> helps your online pharmacy app analyze user behavior, stock data, and order trends to improve decision-making, inventory control, and sales growth with accurate insights."
+      "decs": "<a href='https://www.comfygen.com/data' class='underline font-semibold'>Data Science</a> helps your online pharmacy app analyze user behavior, stock data, and order trends to improve decision-making, inventory control, and sales growth with accurate insights."
     },
     {
       "num": "4",
@@ -454,7 +404,7 @@
       "num": "6",
       "img": "https://www.comfygen.com/img/emotional-ai.webp",
       "title": "HIPAA & GDPR Compliance",
-      "decs": "Our E-pharmacy software development team follow strict HIPAA and GDPR standards to protect patient information, ensure secure data usage, and maintain full legal compliance for healthcare businesses."
+      "decs": "Our E-pharmacy software development team follows strict <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='underline font-semibold'>HIPAA</a> and GDPR standards to protect patient information, ensure secure data usage, and maintain full legal compliance for healthcare businesses."
     }
   ],
 
@@ -498,8 +448,8 @@
     }
   ],
   "pageData": {
-    "title": "Why Choose Comfygen for On-Demand Pharmacy App Development",
-    "description": "Comfygen Technologies is a top-notch digital pharmacy app development company in India delivering secure, scalable apps for online medicine ordering and delivery. We help startups, retail pharmacies, and healthcare brands grow digitally with innovative solutions.",
+    "title": "Why Choose Comfygen for Pharmacy App Development",
+    "description": "Comfygen Technologies is a top-notch digital pharmacy app development company delivering secure, scalable apps for online medicine ordering and delivery. We help startups, retail pharmacies, and healthcare brands grow digitally with innovative solutions.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -508,33 +458,33 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Expert Developers",
-        "description": "We have experienced pharmacy app developers for e-pharmacy businesses who build secure and high-performance apps with advanced technology and a smooth user experience."
+        "title": "Experienced Healthcare App Developers",
+        "description": "Our team has years of experience in building pharmacy and healthcare apps, ensuring apps are reliable, user-friendly, and fully compliant with industry standards."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Custom Solutions",
-        "description": "We deliver custom ePharmacy app solutions tailored to your unique business model — single store, chain pharmacy, or marketplace."
+        "title": "Custom & Scalable Solutions",
+        "description": "We provide tailor-made digital pharmacy apps that grow with your business. Whether you run a small pharmacy or a large online platform, our solutions adapt to your needs."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Top-Level Security",
-        "description": "Our powerful pharmacy apps follow HIPAA & GDPR compliance for safe handling of patient data and secure transactions."
+        "title": "Fast Development Time",
+        "description": "Get your pharmacy app launched quickly without compromising on quality. We follow efficient development processes to save your time and resources."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Latest Technology",
+        "title": "100% Data Security",
+        "description": "Your customer and business data are fully protected with advanced security measures, ensuring privacy and regulatory compliance."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Use Latest Technology",
         "description": "We integrate AI, Blockchain, Cloud, and other smart tools to enhance online drug store app development with future-ready features."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Affordable & Fast Delivery",
-        "description": "Our scalable, cost-effective pharmacy app solutions help you go live faster and achieve rapid market growth."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Dedicated Support",
-        "description": "We offer continuous upgrades, app monitoring, and dedicated support to keep your ePharmacy app always running smoothly."
+        "title": "Ongoing Support & Maintenance",
+        "description": "We offer continuous support and updates to keep your app running smoothly and meet evolving business demands."
       }
     ]
   },
@@ -758,18 +708,18 @@
   "High1": [
     {
       "num": "01",
-      "title": "Project-Based Development",
-      "decs": "We provide project-based development. We follow a structured approach with fixed scope and timelines and cost, ensuring predictable deliverables and costs."
+      "title": "Startups & Small Pharmacies",
+      "decs": "Our pharmacy app solutions help small pharmacies and startups manage inventory, accept online orders, and provide timely deliveries. Grow your reach without complexity."
     },
     {
       "num": "02",
-      "title": "Hourly",
-      "decs": "If you need an hourly developer, you can hire dedicated developers on an hourly basis. we can provide one based on our dedicated team's availability."
+      "title": "Chain Pharmacies & Retail Networks",
+      "decs": "Manage multiple outlets efficiently with centralized stock control, real-time analytics, and secure payment integration. Perfect for pharmacy chains aiming for seamless operations."
     },
     {
       "num": "03",
-      "title": "Dedicated Team",
-      "decs": "You can hire our recommended skilled, dedicated team based on your scope of work. we provide you with a skilled team that is committed to your project. our dedicated team will work seamlessly and make sure you 100% ownership. "
+      "title": "Online Medicine Platforms",
+      "decs": "Create a scalable online pharmacy platform with advanced features like real-time delivery tracking, subscription management, and AI-driven customer support. Stay competitive in the growing digital pharmacy market."
     }
   ]
 }

@@ -6,6 +6,8 @@ import JSON_DATA from "./pharmacyApp.json";
 
 import Header from "../Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../Newcomponet/SectionCompoent/ClientStories";
+import Milestones from "../Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -88,15 +90,15 @@ export default function ClinicalApp(props: any) {
   const Process = [
     {
       title: "Business Analysis",
-      description: "We understand your pharmacy business needs, target customers, and required features to plan the best pharmacy app development strategy for smooth success."
+      description: "We first understand your pharmacy business goals, customers, and app needs. Our medical store app development team reviews required features, safety rules, and market trends to plan a clear and smooth development path."
     },
     {
       title: "UX/UI Designing",
-      description: "Our <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX design</a> team creates a simple, attractive, and user-friendly interface for a seamless online medicine ordering experience."
+      description: "Our <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX designers</a> create clean and easy-to-use app designs for customers, pharmacy owners, and admins. The focus is on smooth navigation, fast ordering, and a user-friendly experience across all devices."
     },
     {
       title: "App Development",
-      description: "We build powerful pharmacy <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app solutions</a> with secure technology, advanced APIs, and custom features to support on-demand deliveries."
+      description: "Our experienced developers provide custom <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development solutions</a> using modern technologies. We ensure secure login, prescription upload, payment integration, and real-time order tracking."
     },
     {
       title: "Third-party Integrations",
@@ -330,14 +332,13 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Online Pharmacy App Development Company"
-          ptag="Take your pharmacy business online with our custom pharmacy app development solutions. We build secure, easy-to-use, and HIPAA-compliant medicine delivery apps designed to boost your sales and offer quick doorstep delivery. Scale your digital pharmacy with powerful features and seamless user experience.
-                Looking for a Reliable and Innovative Pharmacy App Development Services"
+          heading="Pharmacy App Development Company in India"
+          ptag="Comfygen is a trusted pharmacy app development company that helps medical stores, pharmacy chains, and startups launch powerful online pharmacy apps. Our pharmacy app solutions support prescription uploads, secure payments, real-time order tracking, and smooth app performance on Android, iOS, and web platforms."
           ptag1=""
-          li="100% secure & compliant ePharmacy apps"
-          li1="Real-time order tracking & smart delivery"
-          li2="Custom features to fit your business needs"
-          li3="Experienced pharmacy app developers"
+          li="Online medicine ordering & delivery"
+          li1="Prescription upload app & verification"
+          li2="Secure payment & order tracking"
+          li3="Scalable & compliance-ready apps"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -346,22 +347,17 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/pharmacy-app-development-company-hero-img.webp"
         />
+        <Milestones/>
 
         <AboutSection
           title="About Company"
-          heading="Why Invest in On-Demand Pharmacy Apps?"
-          description1="On-demand pharmacy apps are becoming the future of healthcare. Customers today prefer easy and fast ways to order medicines from home. With a <a href='https://www.comfygen.com/medicine-delivery-app-development' class='text-blue-600 font-semibold'>medicine delivery app development solution</a>, pharmacies can serve more customers and run operations smoothly without delays."
-          description2="Investing in a on-demand pharmacy app development company like Comfygen helps you improve business growth, reduce manual work, and increase customer satisfaction. You also get secure prescription management, real-time delivery tracking, and multiple payment options to enhance user convenience."
-          description3="Digital transformation in pharmacy services opens new revenue opportunities and helps you stay ahead of competitors in the ePharmacy market."
-          description4="<strong>Benefits of On-Demand Pharmacy Apps</strong>"
-          points={[
-            "Boost sales with 24/7 online medicine orders",
-            "Better medicine stock and delivery management",
-            "Offer subscription-based medicine refills",
-            "Safe & quick doorstep medicine delivery",
-            "Build strong customer trust with a reliable app"
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          heading="Why Should You Build a Pharmacy App?"
+          description1="The global digital pharmacy market is skyrocketing. Reports show that the online pharmacy market is expected to cross USD 180+ billion by 2030, driven by increasing smartphone users and demand for home medicine delivery. A pharmacy app helps businesses meet this growing demand and stay competitive in the healthcare industry."
+          description2="More than 70% of customers now prefer ordering medicines online because it saves time and avoids travel. The online pharmacy app lets users upload prescriptions as well as order medicines anytime and track deliveries in real time. Pharmacy owners benefit from improved customer service and repeat orders."
+          description3="Pharmacy apps also improve business efficiency by up to 40–50% through automation. Digital inventory management, online payments, and order tracking reduce manual work, minimize errors, and help pharmacy owners manage sales, stock, and reports from one platform."
+          description4="Start your online pharmacy journey with a secure and scalable mobile app. Talk to our experts to get a free consultation, feature list, and cost estimate tailored to your business needs."
+          points={[]}
+          imageSrc="https://www.comfygen.com/comfygen-images/pharmacy-app-development/medicine-delivery-about-section-image.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -370,10 +366,10 @@ export default function ClinicalApp(props: any) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Tailor-Cut & Result-Oriented Pharmacy App Development Services</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide Result-Oriented Pharmacy App Development Services</h2>
 
               <p className="text-base text-center font-normal">
-                Comfygen offers custom pharmacy app development services to help retailers and healthcare businesses build secure and fast online medicine delivery platforms. We create user-friendly ePharmacy apps with powerful features to automate orders, delivery, and inventory management.
+               Comfygen offers the best custom pharmacy app development services to help retailers and pharmacy businesses build secure and fast online pharmacy delivery platforms.
               </p>
             </div>
             <div className="">
@@ -399,11 +395,11 @@ export default function ClinicalApp(props: any) {
         </section>
 
         <CallToAction
-          heading="Launch Your Medicine Delivery App with Cutting-Edge Features Today!"
-          text="Transform your business with our expert medicine delivery app development services and stay ahead in the healthcare industry"
+          heading="Ready to Launch Your Pharmacy App?"
+          text="Talk to our experts and get a free consultation with clear pricing and feature guidance."
           buttonText="Get Started Project"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/medicine-delivery-app-call-to-action-image.webp"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
 
@@ -411,8 +407,8 @@ export default function ClinicalApp(props: any) {
 
         <div className="py-8">
           <Features
-            heading="Key Features of Our Pharmacy App Solutions"
-            description="Our advanced panel features enable smooth interactions between customers, pharmacy owners, delivery agents, and administrators. We develop pharmacy apps that simplify operations, increase sales, and improve digital healthcare access."
+            heading="Features for Pharmacy Mobile App Development"
+            description="Our pharmacy app is designed to make online medicine ordering simple for users while giving pharmacy owners and admins full control. Each panel includes powerful features to improve efficiency, security, and business growth."
             featuresData={JSON_DATA.featuresData}
             grid={4} />
         </div>
@@ -420,7 +416,7 @@ export default function ClinicalApp(props: any) {
         <section className="py-8">
           <TrendsSection
             heading="The Emerging Technologies We Use for Pharmacy App Development"
-            subtitle="We offer advanced and customizable pharmacy app development solutions powered by the latest technologies to improve performance, security, and user experience. Add these powerful features to make your ePharmacy app stand out."
+            subtitle="Our pharmacy app development team uses modern technologies to build high-performance pharmacy apps. These technologies help improve user experience, data security, and overall business efficiency."
             trends={JSON_DATA.Emerging}
           />
         </section>
@@ -428,9 +424,9 @@ export default function ClinicalApp(props: any) {
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Online Pharmacy Application Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Pharmacy App Development Process</h2>
               <p className="text-base font-normal mt-2">
-                As a trusted on-demand pharmacy app development company in India, we follow a clear and result-driven process to build secure and scalable online medicine delivery apps that match your business goals.
+               We use a clear and step-by-step pharmacy app development process to build secure and reliable apps. Our approach helps avoid risks, saves development time, and ensures the app fits your pharmacy business needs perfectly..
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -450,8 +446,9 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Our Development Module
+                 Pharmacy App Solutions for Every Business Type
                 </h2>
+                <p className="text-base font-normal mt-2">Comfygen offers tailor-made pharmacy app development solutions that fit every type of business model. Whether you run a small local pharmacy, a large chain, or an online medicine platform, our apps are designed to streamline operations and boost sales.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
                 {JSON_DATA.High1.map((elem) => {
@@ -479,6 +476,10 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <div className="py-8">
+          <ClientStories/>
+        </div>
 
         <HireDeveloper
           heading="Hire Dedicated Online Pharmacy App Developers"
