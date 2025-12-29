@@ -20,6 +20,11 @@ import {
 
 import Header from "../../Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../Newcomponet/comman/Milestones";
+import WhoCanStart from "../../Newcomponet/SectionCompoent/WhoCanStart";
+import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
+import ClientStories from "../../Newcomponet/SectionCompoent/ClientStories";
+import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
 
 const AboutSection = dynamic(() => import("../../Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -71,58 +76,151 @@ const Faq = dynamic(() => import("../../Newcomponet/SectionCompoent/Faq"), {
   ssr: true,
 });
 
+const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
 
-const BreadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Books",
-      item: "https://example.com/books",
+
+
+
+const WhoCanStartCards = [
+  {
+    heading: "MIdea-Stage Startup App Development",
+    description: "At the idea stage, we help startups turn concepts into clear app strategies. Our team supports idea validation, feature planning, and UI/UX wireframes to ensure your product is market-ready. This approach reduces risk and sets a strong foundation for successful startup app development.",
+  },
+  {
+    heading: "MVP & Prototype Development",
+    description: "Our startup MVP app development focuses on building core features with fast development and lower cost. We help startups launch quickly, test real user feedback, and refine the product before full-scale investment, ensuring smart and cost-effective growth.",
+  },
+  {
+    heading: "Growth-Stage App Scaling",
+    description:
+      "As your startup gains users, we provide scalable app development solutions to handle higher traffic and performance needs. Our team optimizes app speed, adds advanced features, and improves security to support smooth growth and better user experience.",
+  },
+  {
+    heading: "Enterprise-Ready Startup Solutions",
+    description: "For mature startups, we deliver enterprise-ready application development with advanced security, cloud scalability, and system integrations. These solutions support large user bases, complex workflows, and long-term business expansion.",
+  },
+];
+
+const jsonLdData = [
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Startup App Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/"
     },
-  ],
-};
-const ldJson = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Top Mobile App Development Company In India | Comfygen",
-  url: "https://www.comfygen.com/",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "{search_term_string}",
-    "query-input": "required name=search_term_string",
+    "description": "Launch scalable mobile & web apps with Comfygen. We provide startup app development, MVP solutions, SaaS apps & dedicated developers.",
+    "url": "https://www.comfygen.com/ca/startup-app-development",
+    "mainEntityOfPage": "https://www.comfygen.com/ca/startup-app-development",
+    "areaServed": "Global",
+    "serviceType": [
+      "Startup Business App Development",
+      "MVP App Development for Startups",
+      "Product Development for Startups",
+      "Startup Software Development",
+      "Startup Web App Development",
+      "MVP App Development for Startups",
+      "Custom Application Development for Startups",
+      "SaaS Product Development for Startups",
+      "UI/UX Design for Startup Apps"
+
+    ],
+
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+
+    ]
   },
-};
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
-const ProductSchema = {
-  "@context": "http://www.schema.org",
-  "@type": "product",
-  brand: "Comfygen",
-  name: "Mobile App Development Agency - Mobile Application Development Company",
-  image:
-    "https://comfygen.com/img/explore-success-with-our-mobile-app-development-agency.webp",
-  description:
-    "Comfygen is a top mobile application development company. We provide the best Mobile application development services and custom mobile app development services to enterprises & startups worldwide.",
-  aggregateRating: {
-    "@type": "aggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1124",
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": "Comfygen Technologies",
+    "Name": "Top Startup App Development Company",
+    "image": "https://www.comfygen.com/comfygen-images/startup-app-development/about.webp",
+    "description": "Comfygen delivers end-to-end startup app development services including MVP, SaaS, mobile & web apps for fast growth.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "480"
+    }
   },
-};
+  {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.comfygen.com"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Startup App Development",
+      "item": "https://www.comfygen.com/ca/startup-app-development"
+
+    }]
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How much does startup app development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost of startup app development depends on app features, platform (Android, iOS, web), design complexity, and technology used. A basic MVP app may cost less, while a full-featured startup app costs more. We offer flexible pricing to fit startup budgets."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How long does it take to build a startup app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The development timeline varies based on app complexity. A simple MVP can take 8–12 weeks, while a fully custom startup app may take 3–6 months. We follow an agile approach to ensure faster delivery."
+      }
+
+    }, {
+      "@type": "Question",
+      "name": "Do you provide MVP development for startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we specialize in MVP app development for startups. Our MVP solutions focus on core features to help startups validate ideas, launch quickly, and collect real user feedback with minimal investment."
+      }
+
+    }, {
+      "@type": "Question",
+      "name": "Can you scale the app after launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We build apps with scalable architecture, allowing easy upgrades, new features, and performance optimization as your startup grows. Post-launch support and scaling services are also available."
+      }
+
+    }, {
+      "@type": "Question",
+      "name": "Do you provide post-launch support and maintenance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer complete post-launch support, including app updates, performance monitoring, security improvements, and feature enhancements to ensure long-term success."
+      }
+
+    }]
+  }
+
+
+
+
+
+
+
+];
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -146,39 +244,39 @@ export default function Mobile(props) {
 
   const Process = [
     {
-      title: "Discovery and Planning",
+      title: "Idea Validation & Requirement Analysis",
       description:
-        "In the exploration stage, we set clear objectives and utilize market analysis to confirm the viability of the app concept. To streamline the development process in a productive manner, this involves pinpointing the intended audience, studying competitors, and creating a detailed project roadmap with set timelines and key achievements.",
+        "We analyze your startup idea, target users, and business goals to define clear app requirements.",
     },
     {
-      title: "Design",
+      title: "Market Research & Feature Planning",
       description:
-        "We concentrate on developing a smooth user experience (UX) and an aesthetically pleasing user interface (UI). We map out the app's flow and functionality using wireframing and prototyping to make sure the design represents the brand identity and increases user engagement.",
+        "Our team studies competitors and market trends to plan features that deliver real value.",
     },
     {
-      title: "Development",
+      title: "UI/UX Design & Wireframing",
       description:
-        "Using the selected technologies, we construct the app's front end and back end throughout the development process. In order to guarantee that the app's functioning is reliable and scalable, this entails converting the design into code, adding features, and connecting required APIs and databases.",
+        "We design intuitive UI/UX layouts and wireframes to ensure smooth navigation and better user experience.",
     },
     {
-      title: "Testing",
+      title: "MVP or Full App Development",
       description:
-        "Testing is a critical phase where we ensure the app works flawlessly. We do usability testing to get user input, functional testing to confirm all features, and performance testing to maximize stability and speed. This guarantees that the program satisfies quality requirements and provides a satisfying user experience.",
+        "Our developers build Minimal Viable Product (MVP) or full apps using scalable architecture and modern startup app development technologies.",
     },
     {
-      title: "Deployment",
+      title: "Backend Development & API Integration",
       description:
-        "After conducting comprehensive testing on the application, we proceed with preparing it for release on various app stores. This process includes adhering to the guidelines set by the app stores, optimizing metadata, and determining the most suitable deployment approach, be it a phased rollout or beta testing. We ensure a smooth launch process to reach users effectively.",
+        "We create secure backend systems and integrate APIs for smooth performance and data management.",
     },
     {
-      title: "Launch and Marketing",
+      title: "Quality Testing & App Deployment",
       description:
-        "After the app is launched, we implement a thorough marketing strategy to promote it. This involves issuing press releases, running social media campaigns, and employing user acquisition tactics like optimizing the app store and paid advertising. Our main goal is to increase user engagement and adoption in order to achieve maximum success in the market.",
+        "We test apps for performance, security, and usability before deploying them on app stores.",
     },
     {
-      title: "Ongoing Support and Scaling",
+      title: "Post-Launch Support & App Scaling",
       description:
-        "Post-launch, we offer continuous maintenance and updates to ensure app functionality and security. We also assist in scaling the app with advanced features and adjustments based on user feedback and market demands.",
+        "We provide ongoing support, updates, and scaling solutions to support your startup’s growth.",
     },
   ];
 
@@ -249,225 +347,45 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Startup App Development Company in India and the USA | Comfygen
+          Startup App Development Company | Hire Startup App Developers
         </title>
         <meta
           name="description"
-          content="Take your business to the next level with a reliable startup app development company in India and the USA. We can turn your vision into a successful reality with our expert front-end and back-end development skills. Contact us today for a free consultation."
+          content="Comfygen is a trusted startup app development company offering custom mobile, web, MVP, and SaaS app solutions to scale startup businesses globally."
         />
+
+        <meta name="keywords" content="startup business app development, startup app development, mvp app development for startups, product development for startups, startup software development, startup web app development, custom application development for startups, saas product development for startups, ui ux design for startup apps"/>
+
         <link
           rel="canonical"
           href="https://www.comfygen.com/ca/startup-app-development"
         />
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:facebook_title"
-          content="Top-notch Startup App Development Agency In India"
-        />
-        <meta
-          property="og:facebook_description"
-          content="Our specialty lies in crafting mobile apps for startups in the USA. With our expert front-end and back-end development skills, we can transform your vision into a thriving reality, bringing your app to life with precision and finesse."
-        />
-        <meta
-          property="og:twitter_title"
-          content="Best App Development Company For Startups in the USA"
-        />
-        <meta
-          property="og:twitter_description"
-          content="Elevate your business with a reliable startup app development company. Our seasoned developers will bring your vision to life, providing the expertise needed to turn your ideas into a successful reality. Find Top Talent Globally & Launch Your Project Today!"
-        />
-        <meta property="schema:type" content="Website, Article" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="language" content="En_US" />
-        {/* <meta name=”robots” content=”imageindex, INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1”/> */}
-        <meta
-          name="abstract"
-          content="Startup mobile App development company | Startup mobile App development service provider | Comfygen"
-        />
-        <meta
-          name="summary"
-          content="Empower your business with the support of a trusted startup app development company. Our team of experienced developers is dedicated to translating your vision into a reality, leveraging their expertise to create innovative and impactful solutions tailored to your specific business needs."
-        />
-        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta
-          name="owner"
-          content="A Founder is one of the individuals who helped establish a comprehensive Custom Startup mobile App development Services & Solutions startup, or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement."
-        />
-        <meta
-          name="A Top Custom Startup mobile App development Company in India and the USA"
-          content="Are you looking to hire the best leading Best App Development Company For Startups for your project? We provide skilled Mobile App developers and programmers for hire."
-        />
-        <meta
-          name="category"
-          content="Transform your business trajectory with a reputable startup app development company. Our seasoned developers are poised to actualize your vision, orchestrating a harmonious blend of creativity and technical proficiency to propel your ideas into a successful and distinctive reality."
-        />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta
-          name="subtitle"
-          content="Craft a unique and seamless user experience with a trusted startup app development company. Our seasoned developers are dedicated to materializing your vision, harmonizing creativity and technical expertise to bring your ideas to life in a user-friendly and distinctive manner."
-        />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no"
-        />
-        {/* <meta name='og:country-name' content="US","CA","DE"/> */}
-        <meta name="og:latitude" content="43.781269°" />
-        <meta name="og:longitude" content="-79.230759" />
-        <meta
-          property="og:type"
-          content="Hire Best Startup mobile App development agency In India | dedicated startup app developers"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ProductSchema) }}
-        />
-        <script
-          type="application/ld+json"
+
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Startup App Development Services for Startups & Entrepreneurs" />
+        <meta name="twitter:description" content=" Build scalable mobile and web apps with Comfygen. We offer startup app development, MVP, SaaS solutions & dedicated developers." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/startup-app-development/Startup-App-Development.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/startup-app-development/Startup-App-Development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/startup-app-development/Startup-App-Development.webp" />
+        <meta property="og:image:alt" content="Startup App Development" />
+        <meta property="og:url" content="https://www.comfygen.com/ca/startup-app-development" />
+        <meta property="og:title" content="Custom Startup App Development Company" />
+        <meta property="og:description" content="Comfygen helps startups build secure, scalable apps. Get mobile apps, web apps, MVP development & post-launch support." />
+
+
+
+
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "WebSite",
-              name: "Top Mobile App Development Company in India | Comfygen",
-              url: "https://www.comfygen.com/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "{search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
+            __html: JSON.stringify(jsonLdData),
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen",
-              legalName: "Comfygen Pvt. Ltd.",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-              foundingDate: "2019",
-              founders: [
-                {
-                  "@type": "Person",
-                  name: "Saddam Husen",
-                },
-                {
-                  "@type": "Person",
-                  name: "Saddam Husen",
-                },
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-                addressLocality: "Vaishali Nagar",
-                addressRegion: "Jaipur, Rajasthan, India",
-                postalCode: "302021",
-                addressCountry: "India",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-              },
-              areaServed: [
-                "US",
-                "CA",
-                "GB",
-                "AD",
-                "AU",
-                "AT",
-                "BS",
-                "BH",
-                "IO",
-                "KM",
-                "CU",
-                "AR",
-                "CW",
-                "CY",
-                "DK",
-                "DM",
-                "EG",
-                "FK",
-                "FI",
-                "FR",
-                "DE",
-                "GR",
-                "GL",
-                "HK",
-                "IS",
-                "IN",
-                "ID",
-                "IT",
-                "JP",
-                "JE",
-                "JO",
-                "KW",
-                "KG",
-                "KR",
-                "MX",
-                "FM",
-                "NZ",
-                "NI",
-                "OM",
-                "PE",
-                "PH",
-                "PL",
-                "PT",
-                "QA",
-                "RO",
-                "RU",
-                "SA",
-                "SG",
-                "SE",
-                "SZ",
-                "CH",
-                "TH",
-                "TR",
-                "TN",
-                "UA",
-                "UM",
-                "AE",
-                "039",
-                "155",
-                "154",
-                "151",
-                "150",
-              ],
-              sameAs: [
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-                "https://www.facebook.com/comfygen",
-              ],
-            }),
-          }}
-        />
+
       </Head>
       <div className="">
         <LazyLoad height={80} offset={100}>
@@ -476,12 +394,11 @@ export default function Mobile(props) {
       </div>
       <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
-          heading="Leading Startup Mobile App Development Company: Innovative & Scalable Solutions"
-          ptag="Comfygen is a leading startup mobile app development company in India, creating scalable, revenue-generating apps with cutting-edge technologies like AR/VR, Blockchain, and Metaverse. Our expert developers deliver innovative, high-performing mobile apps designed to target audiences, drive traction, and outpace competitors. Partner with us to transform your startup ideas into successful digital solutions."
-          li="Transforming Ideas into Scalable Apps"
-          li1="Boosting Startups with Smart App Solutions"
-          li2="10+ Yr Expert developers"
-          li3="Secure your Idea and data"
+          heading="Startup App Development Company"
+          ptag="We are a trusted startup app development company helping startups turn ideas into powerful digital products. Our expert team delivers custom app development for startups, including mobile apps, web applications, and MVP solutions that are secure, scalable, and market-ready. From idea validation to launch and growth, we support startups at every stage with cost-effective and future-ready app development services."
+          li="Boosting Startups with Smart App Solutions"
+          li1="10+ Yr Expert developers"
+          li2="Secure your Idea and data"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -490,12 +407,21 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/startup-mobile-app-dev-hero-img.webp"
         />
+        <Milestones />
         <AboutSection
           title="About Company"
-          heading="Transform The Startup Ideas into Monetized App Solutions"
-          description1="Comfygen excels in delivering tailored mobile app solutions for startups, leveraging a team of expert developers who thrive in a tech-savvy environment. We use cutting-edge technologies to create engaging, innovative, and market-ready applications that help startups establish a strong presence and grow their businesses."
-          description2="Our experienced team has successfully provided mobile app consultancy and development for startups, turning ideas into impactful solutions that drive audience engagement. Let us help you create a high-performing app that meets market demands and boosts your startup's recognition and success."
-          imageSrc="https://www.comfygen.com/gallery/about-images/startup-app-development-about-img.webp"
+          heading="Transform Startup Business Ideas into Monetized App Solutions"
+          description1="In today’s digital-first world, mobile apps have become a key growth driver for startups. The global mobile app market is expanding rapidly, with app downloads expected to cross 255 billion by 2025, showing strong user demand and engagement. "
+          description2="With over 78% of the global population using smartphones and users spending 5+ hours daily on apps, startups have a massive opportunity to grow digitally."
+          description3='Mobile app development benefits startup businesses in the following ways:'
+          points={[
+            "Reach customers anytime, anywhere through smartphones",
+            "Deliver smooth user experiences that build trust and loyalty",
+            "Generate revenue via subscriptions, ads, and in-app purchases",
+            "Collect user data to improve products and business decisions"
+          ]}
+          description6="Startups need mobile apps to succeed in today's tech-first market - they're monetizable solutions that help them compete and grow. By transforming your business idea into a high-quality app, you can unlock recurring income, attract investors, and establish a strong presence in a digitally driven economy."
+          imageSrc="https://www.comfygen.com/comfygen-images/startup-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -503,14 +429,9 @@ export default function Mobile(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Startup App Development Services
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Custom Startup App Development Services We Offer
               </h2>
-              <p className="text-base text-center font-normal">We are a renowned mobile app development company for startups to
-                convert your ideology concepts into realistic revenue-generating
-                app solutions. Be it the application to resolve any problem,
-                serve end-users with services, create innovative apps for
-                engagement - We won’t fail delivering end-to-end impeccable app
-                solutions.</p>
+              <p className="text-base text-center font-normal">As a top-rated app development company for startups, we help startups build scalable, secure, and revenue-ready digital products. Our best app development services for startups & entrepreneurs cover mobile apps, web applications, MVPs, and SaaS product solutions designed to validate ideas, attract users, and support long-term business growth.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -518,69 +439,165 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
+        <WhoCanStart
+          title="App Development Solutions for Every Startup Stage"
+          description="As an experienced startup app development agency, we provide flexible app development solutions tailored to each stage of your startup journey. Whether you are validating an idea, launching an MVP, scaling your app, or building an enterprise-ready product, our app development for startups ensures long-term growth, performance, and scalability."
+          cards={WhoCanStartCards}
         />
-
 
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our StartUp Mobile App Development Portfolio"
-            description="Explore our innovative mobile app projects tailored for startups, showcasing our expertise in delivering cutting-edge solutions. Each project reflects our commitment to creativity, excellence, and helping startups achieve their business goals with impactful app development."
+            heading="Our Startup App Development Portfolio"
+            description="We have successfully delivered the best app development solutions for startups across multiple industries. Our portfolio highlights scalable mobile and web apps designed to solve real business challenges, improve user engagement, and drive revenue growth."
           />
         </section>
-
-        <LatestTechnology
-          heading="Technologies We Use for Startup App Development Modern Tech Trends We Use"
-          subheading="First and foremost, our team of professionals creates excellent apps for startups and makes sure they run incredibly effectively. We ensure perfection at every stage by utilizing the newest tools and techniques."
-          techData={technologyData}
+        <CallToAction
+          heading="Launch Your Startup App with Experts"
+          text="Turn your startup idea into a scalable, secure, and market-ready app with expert developers."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
         />
+        <section className="py-10 lg:py-20 bg-[#5556D1] mt-8">
+          <div className="2xl:w-10/12 w-full lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto sm:py-8 p-2">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Advanced Technologies We Use for Startup Business App Development
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  As a trusted startup app development company, we use advanced and future-ready technologies to build scalable, secure, and high-performance applications. Our startup business app development solutions enable startups to innovate faster, enhance user experience, and gain a competitive edge in the market.
+                </p>
+              </div>
+              <div className="grid gap-[1px]  text-left lg:grid-cols-2 md:grid-cols-2  bg-white">
+                {JSON_DATA.LeadingSoftware.map((elem) => {
+                  const { title, decs } = elem;
+                  return (
+                    <div key={title} className={`bg-[#5556D1] transition-all cursor-pointer duration-300 hover:bg-[#0f0f0f] relative p-4`}>
+                      <div
+                        className={`flex sm:justify-start justify-center text-center gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                  src={img}
+                                  className="object-cover"
+                                  width={35}
+                                  height={50}
+                                  alt={title}
+                                /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] sm:text-start text-center">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p className="break-all text-white text-start " dangerouslySetInnerHTML={{ __html: decs }}>
+
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Mobile App Development For StartUp Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Startup App Development Process</h2>
               <p className="text-base font-normal mt-2">
-               Our startup-focused mobile app development process is treamlined to deliver custom solutions that meet unique business needs. From ideation to deployment, we ensure every step is aligned with your goals, offering a seamless experience and impactful results.
+                We are a reliable startup mobile and web app development company that follows a simple and transparent app development process to help startups launch quickly, reduce risks, and scale confidently.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
-        <IndustriesServe heading='' description=''/>
+        <section className="">
+          <TechStack
+            title="Technology Stack We Use in White Label Crypto Development"
+            description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
+          />
+        </section>
+
+        <IndustriesServe
+          heading="Scalable Startups and Entrepreneurs App Development for Every Industry"
+          description="We provide startup-friendly mobile app development services across multiple industries, helping businesses transform ideas into powerful digital solutions. Our apps are scalable, secure, and tailored to meet specific industry needs."
+          sliderData={JSON_DATA.IndustriesServe}
+        />
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+        <ClientStories />
 
         <HireDeveloper
-          heading="Hire Startup Mobile App Developers"
-          text="Building a startup mobile application needs brainstorming and a well-strategic planning to step ahead for the development. Comfygen has the talents to do that. We have got the most innovative and sharp developers of different industries, who have the ideas and experience with cutting-edge technologies to build some flexible and scalable applications. You can trust us being a reliable startup mobile app development company, because our experts have worked on innovative and creative solutions to engage the end-users exceptionally."
+          heading="Hire Our Dedicated App Developers for Your Advanced Startup Business Project"
+          text="Looking to build a scalable and high-performing app for your startup? Hire dedicated <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>startup mobile app developers</a> from Comfygen to turn your startup idea into a powerful digital product. Our experienced developers specialize in startup software development, delivering secure, custom, and growth-ready mobile and web applications tailored to your business goals."
+          text1="We help startups accelerate development, reduce costs, and launch faster with full-time, skilled developers who work as an extension of your team."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "We have more than 10 years of experienced developers",
-            "We use robust security methods for development",
-            "Developers are dedicated to their projects until clients are satisfied",
-            "Customer support is available for 24*7",
+            "Proven expertise in startup app development services",
+            "Skilled in mobile, web, MVP, and SaaS app development",
+            "Strong focus on scalability, security, and performance",
+            "Flexible hiring models with dedicated technical support",
           ]}
         />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text=" Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
+
+        <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
         />
+
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" About Blockchain Technology"
+          title="Frequently Asked Questions"
         />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        /> */}
+
+        {/* <LatestTechnology
+          heading="Technologies We Use for Startup App Development Modern Tech Trends We Use"
+          subheading="First and foremost, our team of professionals creates excellent apps for startups and makes sure they run incredibly effectively. We ensure perfection at every stage by utilizing the newest tools and techniques."
+          techData={technologyData}
+        /> */}
+
         {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>

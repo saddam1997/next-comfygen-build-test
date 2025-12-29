@@ -92,73 +92,69 @@
   ],
   "servicesData": [
     {
-      "title": "Idea Consultancy Services",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We help startups refine their app ideas, offering expert guidance on feasibility, market research, and innovative features to ensure a solid foundation for their mobile applications",
+      "title": "Mobile App Development for Startups",
+      "subtitle": "",
+      "description": "We provide end-to-end <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development</a> for startup businesses using modern technologies. Our team builds high-performance Android and iOS apps that are user-friendly, scalable, and optimized for growth, helping startups launch faster and compete effectively in the market.",
       "features": [
-        "Improving Ideas",
-        "Expert Advice",
-        "Market Research",
-        "Creative Features",
-        "Solid Foundation"
+        "<a href='https://www.comfygen.com/android-app-development' class='underline font-semibold'>Android</a> and <a href='https://www.comfygen.com/ios-app-development' class='underline font-semibold'>iOS app development</a> with scalable architecture",
+        "User-friendly design for better engagement and retention",
+        "Secure app development with data protection standards",
+        "Fast development to help startups launch quickly"
       ]
     },
     {
-      "title": "Product Discovery",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Through in-depth analysis and market research, we assist startups in identifying market gaps and user needs, helping them conceptualize and shape their app ideas into viable products.",
+      "title": "Startup Web App Development",
+      "subtitle": "",
+      "description": "Our <a href='https://www.comfygen.com/web-development' class='underline font-semibold'>startup web application development agency</a> creates secure and scalable web applications tailored to the needs of startups. From dashboards to customer-facing platforms, we build responsive web applications that support high traffic, smooth performance, and future expansion.",
       "features": [
-        "Market Research",
-        "Identify Needs",
-        "Idea Shaping",
-        "In-Depth Analysis",
-        "Viable Solutions"
+        "Responsive web applications for all devices",
+        "Scalable backend to handle growing users and traffic",
+        "Secure web app development with modern frameworks",
+        "Custom features aligned with startup business goals"
       ]
     },
     {
-      "title": "MVP Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We focus on creating Minimum Viable Products (MVPs) as part of our MVP development strategy. These MVPs allow for quick and cost-effective validation of business concepts, with the flexibility to make adjustments based on user input.",
+      "title": "MVP App Development for Startups",
+      "subtitle": "",
+      "description": "We specialize in MVP app development for startups to validate ideas quickly and cost-effectively. Our MVP solutions focus on core features, fast launch, and real user feedback, helping startups test the market before investing in full-scale development.",
       "features": [
-        "Quick Launch",
-        "Cost-Effective",
-        "User Feedback",
-        "Flexible Development",
-        "Validating Ideas"
+        "Core feature-focused MVP for quick market entry",
+        "Cost-effective development for idea validation",
+        "Faster launch to gather real user feedback",
+        "Easy scalability from MVP to full product"
       ]
     },
     {
-      "title": "Prototyping and UI/UX Design",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our UI/UX design and prototyping services result in aesthetically pleasing and simple-to-use interfaces that create seamless user experiences that draw in and hold onto clients right away.",
+      "title": "Custom Application Development for Startups",
+      "subtitle": "",
+      "description": "Our custom application development for startups delivers tailored solutions that match unique business goals. We design and develop apps with flexible architecture, custom features, and strong security to support startup innovation and long-term scalability.",
       "features": [
-        "Attractive Designs",
-        "Smooth User Experience",
-        "Engaging Interfaces",
-        "Prototyping",
-        "User-Centered Design"
+        "Fully customized solutions based on startup needs",
+        "Flexible architecture for future upgrades",
+        "Secure and high-performance application development",
+        "Seamless integration with third-party tools and APIs"
       ]
     },
     {
-      "title": "Web App Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We provide web app development services in addition to mobile app development, helping entrepreneurs to reach people on several platforms and devices and so broadening their market reach and accessibility.",
+      "title": "SaaS Product Development for Startups",
+      "subtitle": "",
+      "description": "We help startups build scalable SaaS products with cloud-based architecture and subscription models. From idea to launch, our <a href='https://www.comfygen.com/blog/hire-creative-saas-software-developers/' class='underline font-semibold'>SaaS development services</a> ensure secure data handling, smooth user experience, and easy product upgrades as your startup grows.",
       "features": [
-        "Reach More People",
-        "Works on All Devices",
-        "Web & Mobile Integration",
-        "Expand Your Market"
+        "Cloud-based SaaS application development",
+        "Subscription and recurring revenue model support",
+        "Scalable infrastructure for growing users",
+        "Secure data management and regular updates"
       ]
     },
     {
-      "title": "Custom Startup App Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our personalized app development services, which are tailored to the particular requirements of each startup, provide scalable, reliable solutions that support corporate goals and guarantee long-term success and expansion.",
+      "title": "UI/UX Design for Startup Apps",
+      "subtitle": "",
+      "description": "Great design drives user engagement. Our <a href='https://www.comfygen.com/web-design' class='underline font-semibold'>UI/UX design services</a> for startup apps focus on intuitive layouts, smooth navigation, and visually appealing interfaces that improve user retention and create strong first impressions.",
       "features": [
-        "Custom Solutions",
-        "Grow with Your Business",
-        "Reliable Performance",
-        "Supports Your Goals"
+        "Clean and intuitive app interface design",
+        "Smooth navigation for better user experience",
+        "Conversion-focused layouts to boost engagement",
+        "Consistent design across mobile and web apps"
       ]
     }
   ],
@@ -169,22 +165,310 @@
       "desc": "Comfygen specializes in helping startups bring their mobile app ideas to life. With our expertise in mobile app development, we guide startups through every stage of the process, from ideation to deployment, ensuring a seamless and successful journey to market."
     }
   ],
-
   "portfoliodata": [
     {
-      "image": "https://www.comfygen.com/img/footer-fitclub-img.webp",
-      "title": "Fitclub",
-      "description": "Our team developed Fitclub, a revolutionary fitness app that integrates personalized workout plans with real-time health tracking. Users can set fitness goals, track progress, and receive custom workout recommendations based on their fitness level and preferences. Fitclub has garnered over 100,000 downloads within its first year, receiving rave reviews for its user-friendly interface and effective fitness algorithms.",
+      "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-fashion.webp",
+      "title": "On-Demand Fashion Shopping App",
+      "description": "A sleek and fast-loading fashion eCommerce app developed for a leading apparel brand. Features include AI-based style recommendations, virtual try-on, wishlist, secure payments, and influencer integration to boost engagement and conversions.",
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/img/ichef-portfolio.webp",
-      "title": "iChef",
-      "description": "iChef is a cutting-edge culinary app designed to simplify meal planning and cooking for busy professionals. Our developers crafted iChef to include intuitive recipe browsing, automated grocery list generation, and personalized meal recommendations based on dietary preferences. Since its launch, iChef has been featured in top tech publications and has gained a loyal user base of food enthusiasts worldwide.",
+      "image": "https://www.comfygen.com/img/e-commerce-portfolio-img.webp",
+      "title": "E-Commerce",
+      "description": "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products.",
+      "link": "https://www.comfygen.com/portfolio/e-commerce"
+    },
+    {
+      "image": "https://www.comfygen.com/image/telemedicine.png",
+      "title": "Telemedicine Platform for Virtual Consultations",
+      "description": "We developed a comprehensive telemedicine platform, enabling healthcare providers to offer virtual consultations. The software is HIPAA-compliant, and secure, and ensures high-quality video and audio communication between doctors and patients, promoting better healthcare access.",
       "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/Portfolio.png",
+      "title": "Hospital Management System (HMS) for Streamlined Operations",
+      "description": "Our Hospital Management System (HMS) is designed to digitize and automate hospital workflows. From patient registration to discharge, the software provides a centralized platform for hospitals to efficiently manage operations and enhance patient care.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/img/hero-book-my-tutor.webp",
+      "title": "Book My Tutor",
+      "description": "Book My Tutor aims to revolutionize the education sector in India by providing a seamless platform for students to connect with experienced and qualified tutors.",
+      "link": "https://www.comfygen.com/portfolio/book-my-tutor"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-ai-powered-language-learning-app.png",
+      "title": "AI-Powered Language Learning App",
+      "description": "An interactive language learning app development platform with AI-driven personalized lessons, gamified exercises, speech recognition, and real-time progress tracking to help users master new languages effectively.",
+      "link": "https://www.comfygen.com/portfolio/ai-powered-language-learning-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
+      "title": "Eco-Friendly EV Taxi Service",
+      "description": "Our client sought a custom EV taxi app development solution to promote sustainable transportation while ensuring a seamless ride-booking experience. ",
+      "link": "https://www.comfygen.com/portfolio/ev-taxi-service"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
+      "title": "Logistics & Delivery Service",
+      "description": "Our client, a leading logistics company, required a custom logistics delivery taxi app development solution to enhance last-mile delivery and fleet management.",
+      "link": "https://www.comfygen.com/portfolio/logistics-delivery-taxi-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/eangex-social-media-app-portfolio.webp",
+      "title": "EangeX A social media platform",
+      "description": "EngageX is a dynamic web application that allows users to chat, share reels, and celebrate special moments with friends and family. A platform designed for real-time interaction and seamless content sharing.",
+      "link": "/portfolio/eange-x"
+    },
+    {
+      "image": "https://www.comfygen.com/image/fankeyz-portfolio.webp",
+      "title": "Fankeyz",
+      "description": "Fankeyz is a dynamic social media mobile app designed to foster authentic connections. Share moments, join vibrant communities, and make meaningful friendships—all in one seamless platform.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/personal-finance-management-app.webp",
+      "title": "FinFlow - A Personal Finance Management App",
+      "description": "FinFlow is a personal finance management app, that tracks and manages the user’s finances very conveniently.",
+      "link": "/portfolio/personal-finance-management-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
+      "title": "PayMaster - A Mobile Payment Solution",
+      "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. ",
+      "link": "/portfolio/mobile-payment-app-solution"
+    },
+    {
+      "image": "https://www.comfygen.com/image/swipe-based-dating-app.webp",
+      "title": "Swipe-Based Dating App",
+      "description": "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
+      "link": "/portfolio/swipe-based-dating-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/match-making-datingapp.webp",
+      "title": "Matchmaking Dating App",
+      "description": "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
+      "link": "/portfolio/ai-matchmaking-dating-app-development"
+    },
+    {
+      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
+      "title": "Food Delivery App – Food 24Hr",
+      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
+      "link": "/portfolio/food-delivery-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development2.webp",
+      "title": "Online Food Ordering App",
+      "description": "This robust online food ordering app was created to streamline the ordering process for multi-restaurant platforms. It supports advanced search filters, restaurant listings, order scheduling, and delivery tracking—delivering a comprehensive food delivery experience tailored for both single vendors and aggregators.",
+      "link": "/portfolio/online-food-ordering-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
+      "title": "Love Horoscope App",
+      "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. ",
+      "link": "/portfolio/love-horoscope-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
+      "title": "Global News Aggregator App",
+      "description": "We developed a news aggregator app with AI-driven recommendations, multi-language support, and real-time updates. Achieved 200K+ downloads, 60% engagement growth, and higher revenue through a hybrid monetization model.",
+      "link": "/portfolio/global-news-aggregator-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/portfolio-pay-master.webp",
+      "title": "InvestSmart - A Stock Trading and Investment App",
+      "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference.",
+      "link": "/portfolio/stock-trading-finance-app"
+    },
+    {
+      "image": "https://www.comfygen.com/image/e-pharmapluse-hero-image.webp",
+      "title": "E-PharmaPluse App – A Complete E-Pharmacy Solution",
+      "description": "E-PharmaPluse is a cloud-based medicine delivery app developed for an enterprise client. The app features real-time GPS tracking, multi-language support, and a subscription model for monthly medicine deliveries, ensuring enhanced accessibility and efficiency.",
+      "link": "/portfolio/e-pharmapluse"
+    },
+    {
+      "image": "https://www.comfygen.com/image/hero-image-ai-powered-medicine-ordering-app.webp",
+      "title": "AI-Powered Medicine Ordering",
+      "description": "The Medicine Ordering App combines AI and ML to suggest medicines based on users' health conditions. With a simple UI, seamless payment integration, and multi-vendor support, this app has helped thousands of users conveniently access medicines.",
+      "link": "/portfolio/ai-powered-medicine-ordering-app"
     }
-   
-    
+  ],
+  "LeadingSoftware": [
+    {
+      "num": "01",
+      "title": "Artificial Intelligence (AI)",
+      "decs": "Our team provides <a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI-powered app development</a> to help startups automate processes, personalize user experiences, and make smart decisions. AI features, such as chatbots, recommendation engines, and predictive analytics, enhance efficiency and user engagement."
+    },
+    {
+      "num": "02",
+      "title": "Blockchain",
+      "decs": "Our <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>blockchain app development</a> for startups ensures secure, transparent, and tamper-proof transactions. Blockchain technology is ideal for fintech, healthcare, and supply-chain startups that need data security, trust, and decentralized systems."
+    },
+    {
+      "num": "03",
+      "title": "Internet of Things (IoT)",
+      "decs": "With <a href='https://www.comfygen.com/iot-development-company' class='underline font-semibold'>IoT app development</a>, we connect mobile apps with smart devices for real-time data monitoring and control. This technology supports startups in building startup software solutions for healthcare, logistics, smart homes, and industrial automation."
+    },
+    {
+      "num": "04",
+      "title": "AR/VR",
+      "decs": "We use AR/VR app development to create immersive and interactive user experiences. Startups can leverage AR and VR for gaming, real estate, education, training, and product visualization to boost user engagement."
+    },
+    {
+      "num": "05",
+      "title": "Cloud Computing",
+      "decs": "Our cloud-based app development services help startups build scalable and cost-effective applications. Cloud computing ensures high performance, secure data storage, and easy scaling as your startup grows."
+    },
+    {
+      "num": "06",
+      "title": "Big Data & Analytics",
+      "decs": "We implement big data and <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>analytics solutions</a> to help startups analyze user behavior, track performance, and make data-driven decisions. This improves product planning, marketing strategies, and business growth."
+    }
+  ],
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
+      "title": "E-Commerce",
+      "description": "Fast, secure, and feature-rich shopping apps for startups and online stores.",
+      "link": "/e-commerce-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
+      "title": "Healthcare",
+      "description": "<a href='https://www.comfygen.com/telemedicine-app-development' class='text-blue-600 font-semibold'>Telemedicine</a>, <a href='https://www.comfygen.com/doctor-appointment-app-development' class='text-blue-600 font-semibold'>appointment booking</a>, and health monitoring apps for modern healthcare startups.",
+      "link": "/healthcare-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
+      "title": "Education",
+      "description": "E-learning and interactive education apps for students and institutions.",
+      "link": "/ca/education-app-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
+      "title": "Logistics",
+      "description": "<a href='https://www.comfygen.com/delivery-app-development' class='text-blue-600 font-semibold'>On-demand delivery</a>, tracking, and fleet management apps for logistics startups.",
+      "link":"https://www.comfygen.com/logistics-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
+      "title": "Construction",
+      "description": "Project management and site monitoring apps for construction startups."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
+      "title": "Game",
+      "description": "Engaging mobile and web gaming apps with high performance and immersive UX.",
+      "link": "/game-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
+      "title": "Entertainment",
+      "description": "Streaming, media, and content apps for entertainment startups."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/social-media-app-industries-img.webp",
+      "title": "Social Networking",
+      "description": "Apps connecting people with social features, messaging, and communities.",
+      "link": "/social-media-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
+      "title": "Blockchain",
+      "description": "Transforming industries with secure, transparent, and decentralized blockchain app development solutions.",
+      "link": "/blockchain-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
+      "title": "Finance",
+      "description": "FinTech apps for payments, banking, investments, and financial management.",
+      "link": "/finance-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
+      "title": "Dating",
+      "description": "Safe and user-friendly dating apps with smart matching and chat features.",
+      "link": "/dating-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
+      "title": "Restaurant",
+      "description": "Food ordering, delivery, and restaurant <a href='https://www.comfygen.com/blog/cloud-kitchen-management-software-development/' class='text-blue-600'>management</a> apps for food startups.",
+      "link": "/food-delivery-app-development"
+    }
+  ],
+  "pageData": {
+    "title": "Why Choose Comfygen for Your Startup App Development Project?",
+    "description": "Comfygen is a reliable mobile app development company for startups and entrepreneurs that understands the challenges and goals of early-stage and growing startups. We focus on building apps that are scalable, secure, and ready for the market.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "OExperienced App Developers",
+        "description": "Our skilled startup app developers have hands-on experience building mobile and web apps for different startup models and industries."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Cost-Effective Development for Startups",
+        "description": "We offer affordable app development for startups, helping you launch high-quality apps without exceeding your budget."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Agile & MVP-Focused Approach",
+        "description": "Our Minimal Viable Product (MVP) application development for startups helps you launch faster, test ideas quickly, and reduce development risks."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable & Future-Ready Architecture",
+        "description": "We design apps with scalable architecture, so your product grows smoothly as users and business demands increase."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Secure Development with IP Protection",
+        "description": "Your idea is safe with us. We ensure strong security practices and provide 100% IP protection for your startup app."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
+        "title": "App Development Services for Startup ",
+        "description": "From idea validation and design to development, launch, and support, we deliver complete startup app development services."
+      }
+    ]
+  },
+  "customTestimonials": [
+    {
+      "text": "Comfygen helped us turn our startup idea into a fully functional mobile app. Their startup app development team understood our requirements clearly and delivered the project on time with great quality.",
+      "name": "Rahul Mehta",
+      "title": "India"
+    },
+    {
+      "text": "We hired Comfygen for startup app development, and the experience was smooth and transparent. The team provided excellent support from MVP to final launch.",
+      "name": "Ananya Sharma",
+      "title": "India"
+    },
+    {
+      "text": "Comfygen’s dedicated app developers built a scalable SaaS platform for our startup. Their technical expertise and communication were outstanding throughout the project",
+      "name": "Michael Johnson",
+      "title": "California, USA"
+    },
+    {
+      "text": "We partnered with Comfygen for healthcare app development. Their startup-focused approach and secure development practices exceeded our expectations.",
+      "name": "Emily Carter",
+      "title": "New York, USA"
+    },
+    {
+      "text": "Comfygen delivered a secure and high-performance fintech app for our startup. Their understanding of advanced technologies and compliance was impressive.",
+      "name": "Ahmed Al Mansoori",
+      "title": "Dubai, UAE"
+    },
+    {
+      "text": "Comfygen helped us launch our social networking app quickly. Their startup app development services are reliable, cost-effective, and highly professional.",
+      "name": "Sophie Brown",
+      "title": "Manchester, UK"
+    }
   ],
   "consultancyData": [
     {
@@ -423,53 +707,28 @@
   "Frequently": [
     {
       "num": "1",
-      "title": "How long does it take to develop a mobile app for my startup?",
-      "desc": "The complexity, features, and platform of a mobile application all affect how long it takes to build. It normally takes a few weeks to several months. Our staff puts forth a lot of effort to provide top-notch apps in fair amounts of time."
+      "title": "How much does startup app development cost?",
+      "desc": "The cost of startup app development depends on app features, platform (Android, iOS, web), design complexity, and technology used. A basic MVP app may cost less, while a full-featured startup app costs more. We offer flexible pricing to fit startup budgets."
     },
     {
       "num": "2",
-      "title": "What factors determine the cost of mobile app development?",
-      "desc": "The cost of app development is influenced by factors like features, design complexity, platform(s), and development time. We offer transparent pricing and work closely with startups to optimize costs while delivering a quality product that meets their needs."
+      "title": "How long does it take to build a startup app?",
+      "desc": "The development timeline varies based on app complexity. A simple MVP can take 8–12 weeks, while a fully custom startup app may take 3–6 months. We follow an agile approach to ensure faster delivery."
     },
     {
       "num": "3",
-      "title": "Can you help with app marketing and user acquisition?",
-      "desc": "Yes, we provide user acquisition and app marketing services to assist companies in effectively reaching their target audience and promoting their products. Our tactics range from social media advertising to app store optimization (ASO) to increase exposure and encourage downloads."
+      "title": "Do you provide MVP development for startups?",
+      "desc": "Yes, we specialize in MVP app development for startups. Our MVP solutions focus on core features to help startups validate ideas, launch quickly, and collect real user feedback with minimal investment."
     },
     {
       "num": "4",
-      "title": "Do you provide ongoing support after the app is launched? ",
-      "desc": "Absolutely! We provide ongoing support and maintenance services post-launch, including updates, bug fixes, and performance enhancements. Our goal is to ensure your app remains optimized and competitive in the ever-evolving market landscape."
+      "title": "Can you scale the app after launch?",
+      "desc": "Absolutely. We build apps with scalable architecture, allowing easy upgrades, new features, and performance optimization as your startup grows. Post-launch support and scaling services are also available."
     },
     {
       "num": "5",
-      "title": "How do you ensure the security of my app and user data? ",
-      "desc": "Safeguarding the security of your app and user data is our top priority here at our company. We take extra steps to ensure your information is well-protected by employing cutting-edge security measures such as data encryption, secure authentication, and conducting frequent security audits. You can have peace of mind knowing that your valuable information is shielded from any possible threats."
-    },
-    {
-      "num": "6",
-      "title": "Can you develop both iOS and Android apps for my startup?",
-      "desc": "Looking for exceptional iOS and Android applications? Look no further! Our team is dedicated to crafting cutting-edge apps that work seamlessly across various platforms. Whether you need a native app tailored for a specific platform or a versatile cross-platform solution, we've got you covered. Trust us to deliver excellence in every line of code."
-    },
-    {
-      "num": "7",
-      "title": "Will I own the source code of the app after development?",
-      "desc": "Absolutely! After the app is created, you will have complete ownership of the source code. We believe in transparency and provide all required documentation and resources to give you ultimate control over your app."
-    },
-    {
-      "num": "8",
-      "title": "How do you handle feedback and revisions during the development process?",
-      "desc": "We appreciate input and open contact throughout the development process. Our staff collaborates with startups to include feedback and adjustments, ensuring that the end result fulfills their expectations and needs."
-    },
-    {
-      "num": "9",
-      "title": "Can you help with app monetization strategies?",
-      "desc": "Let us assist you in developing personalized app monetization plans that are tailored to your startup's goals and audience. Our expert advice will empower you to increase your revenue while maintaining user satisfaction. You can explore different avenues like in-app purchases, subscriptions, advertisements, and beyond to achieve this."
-    },
-    {
-      "num": "10",
-      "title": "What sets your startup app development company apart from others?",
-      "desc": "SOur startup app development firm values customized service, openness, and a commitment to excellence. With an emphasis on offering unique solutions that create results, we work directly with startups to turn their app ideas into profitable businesses."
+      "title": "Do you provide post-launch support and maintenance?",
+      "desc": "Yes, we offer complete post-launch support, including app updates, performance monitoring, security improvements, and feature enhancements to ensure long-term success."
     }
   ],
   "AppService": [
