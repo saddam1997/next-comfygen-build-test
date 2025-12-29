@@ -320,110 +320,47 @@ export default function Ecommerce(props) {
       "@type": "FAQPage",
       "mainEntity": [{
         "@type": "Question",
-        "name": "Do you Build an MVP for Healthcare medicine delivery apps?",
+        "name": "How Much Does It Cost to Build a Medicine Delivery App?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we build MVP for medicine delivery apps. You can come to our medicine delivery app development company which is located in India and USA, and get the best results with an effective MVP UI design. The MVP helps us find out how your medicine delivery app would be perceived by your target audience. It shows us the features that would have the maximum impact on the success of your app."
+          "text": "The cost to build a medicine delivery app typically ranges from $8,000 to $25,000, depending on features, platforms (Android/iOS/Web), design complexity, and integrations."
         }
       }, {
         "@type": "Question",
-        "name": "How much time do you need to build medicine delivery apps?",
+        "name": "How long does it take to build a medicine delivery app?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The time required to develop medicine delivery apps depends on the scale of the project and the complexity of the features. These factors influence the time required for prototyping, development, testing, and security of the delivery app for medicine before deployment."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which technologies would influence the future of medicine delivery apps?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The technologies that are likely to influence the future of medicine delivery apps include blockchain development services, and AI development services. For example, Gen. AI can offer personalized recommendations for ordering medications, and IoT Development Services , can enable real-time health monitoring to order medications at the right time."
+          "text": "A basic medicine delivery app takes around 8–12 weeks. Advanced features like AI, multi-vendor support, or integrations may take 3–5 months."
         }
 
       }, {
         "@type": "Question",
-        "name": "What is the cost of developing pharmacy delivery apps?",
+        "name": "Is online medicine delivery legal in India?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The cost of developing pharmacy delivery apps depends on different factors, such as the complexity of features, UI/UX design, app platform, technology stack, and third-party integrations."
+          "text": "Yes, online medicine delivery is legal in India if the app follows drug laws, prescription validation, and data privacy regulations like HIPAA and local guidelines."
         }
 
       }, {
         "@type": "Question",
-        "name": "Do you offer quality assurance services for medicine delivery apps?",
+        "name": "Can I build an app like 1mg or PharmEasy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our medicine delivery app developer team also offers quality assurance or QA services for medicine delivery apps. Our QA services involve comprehensive functionality and security testing on the apps before deploying them on different platforms."
+          "text": "Yes, you can build an app like 1mg or PharmEasy with similar features, custom design, scalability, and compliance using a trusted medicine delivery app development firm in India."
         }
 
       }, {
         "@type": "Question",
-        "name": "What are the benefits of creating medicine delivery apps?",
+        "name": "Do you provide post-launch support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Medicine delivery apps provide a wide range of benefits for pharmacy business owners and patients. Convenience, security, and privacy are the top benefits of medicine delivery apps. Most important of all, medicine delivery apps have the potential to transform the healthcare sector with unique value advantages."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Is an MVP important before starting the development process?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, an MVP is important before the development process as it helps find the features that would offer the best results according to your goals. The MVP is an ideal tool to measure customer sentiment and make adjustments before the development process."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can you work on cross-platform app development projects?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we work on cross-platform app development projects as our medicine delivery app development company gives you the assurance of specialization in a powerful technology stack. Our experts can create apps for Android and iOS to ensure that it reaches more users."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Do you provide continuous improvements in the medicine delivery apps?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our experts offer continuous support and maintenance that helps you enjoy peace of mind as we implement new improvements. Based on the feedback of clients, we identify potential areas for improvement in the app and make the necessary adjustments."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "How can you choose the engagement model for your development project?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can choose the engagement model for your on-demand medicine delivery app development project by considering your requirements. It is important to understand why you need the pharmacy delivery app and the scale of the project to choose the ideal engagement model."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Boost Your Business With Our Whitelabel App For Instant Medicine Delivery",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Get your Pharmacy business to the next level and provide an outstanding customer experience by taking advantage of this opportunity. At Comfygen, we specialize in providing cutting-edge medicine delivery app development services & solutions that empower pharmacies to elevate their medicine delivery app development services and reach a wider customer base. The mobile apps for healthcare that we provide to pharmacies - prescription delivery apps enable them to offer seamless access to quality apps for instant medicine delivery and enhance patient safety, thereby revolutionizing how pharmacies serve their patients. To get started on your online medicine order app development project, contact the medicine delivery app development company today.  We offer a white label medicine delivery app that includes the following:  User-Friendly Interface Real-Time Prescription Fulfillment Secure Payment Gateway Inventory Management Customizable Branding Multi-Platform Compatibility"
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Why Who Should Go for Our Medicine Delivery App Development Solutions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Using the strong tech stacks, we deliver high-performing and engaging online pharmacy app development services. Our experience and expertise in the domain make us India’s #No1 healthcare app development company.  Industry Expertise: With years of experience in developing healthcare and medicine delivery apps, we understand the regulatory landscape, user needs, and technological trends that are critical for your app’s success.  Custom Solutions Tailored to Your Business Whether you're a startup or an established enterprise, we design apps that are our Business"
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Who Should Go for Our Medicine Delivery App Development Solutions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We Develop Medicine Delivery Apps for a Variety of Clients. We have become a top medicine delivery app development company in India and the USA with our development skills and capabilities to offer different medical mobile app and web solutions.  Our medical app developers build many healthcare applications for mobile and web to become experts to make us a powerful and quick medicine delivery app development with the resources required to stand out in the continuously evolving Healthcare industry. We have adapted our Pharmacy delivery app development services to fit within the scope of requirements for different types of clients.  At Comfygen, you can find the finest mobile app development company for different types of Industry, including standalone pharmacy stores, pharmacy marketplaces, pharmacy store chains, and e-pharmacy startups. Our mobile app development for healthcare services aim to create innovative medicine delivery apps that can address your business goals alongside delivering seamless services to users.  Solutions for Standalone Pharmacy Stores Owners of standalone pharmacy stores can explore new ways to gain more customers with our productive medicine delivery app development services through the mobile app for healthcare apps. You can come to us to build mobile apps for medicine delivery app development services and get a custom pharmacy store application. With the help of a wide range of accessible apps to order medicine features, your customers will get their desired medications at their doorstep with help of medicine doorstep delivery app development services. Your pharmacy store could become more popular among your target audience and offer new opportunities for growth with user-friendly medicine delivery mobile app development solutions.  Pharmacy Marketplace Delivery Apps Do you know that Uber does not own any of the vehicles that you can rent through the taxi application ? You should try the same business model to create your own pharmacy marketplace or aggregator application. Our medicine delivery app developer team can help you come up with a simple and powerful pharmacy marketplace app. We have the resources and skills required to build an effective pharmacy delivery app with the assurance of seamless performance. Stay ahead of the competition and achieve exponential growth for your pharmacy app development marketplace with our experts.  E-Pharmacy Startup Delivery Apps The journey of an e-pharmacy startup is always challenging, especially for the ones beginning from scratch. It is completely different to get your pharmacy business running without prior experience in the healthcare industry. Our medicine delivery app development services and solutions can have a huge impact on the ways you build your own e-pharmacy startup applications. We ensure that you get your own pharmacy delivery app customized to your business goals to set up strong foundations for the growth of your startup.  Pharmacy Store Chain Apps Through innovative apps, we also assist pharmacy store chains in expanding their services. To turn your pharmacy store chain into a readily accessible destination for medicines, our app developers can develop unique ideas. You can manage your pharmacies directly from your smartphones, whether they are Android or iOS. Our solutions for pharmacy store chains include POS software and delivery apps that can redefine the accessibility of medicines and user experiences with pharmacy store chains."
+          "text": "Yes, we offer complete post-launch support, including bug fixes, updates, security patches, and performance optimization to keep your app running smoothly."
         }
 
 
       }]
     }
+
 
 
 
@@ -638,10 +575,10 @@ export default function Ecommerce(props) {
                 </p>
               </div>
               <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.FoodAppMaker.map((elem) => {
+                {JSON_DATA.FoodAppMaker.map((elem, index) => {
                   const { img, title, decs } = elem;
                   return (
-                    <div className={` relative`}>
+                    <div key={index} className={` relative`}>
                       <div
                         className={` flex justify-start  place-items-center relative`}
                       >
@@ -717,180 +654,6 @@ export default function Ecommerce(props) {
         <Faq
           faqData={JSON_DATA.Frequently}
         />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* 
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Our Medicine Delivery App Development Solutions
-                </h2>
-                <p>
-                  We are a leading online medicine delivery mobile app development agency in India with a specialization in developing medicine delivery apps to transform medicine deliveries. Our mission revolves around transforming one of the most crucial areas of the healthcare sector by creating custom medicine delivery applications. In addition, we also offer different types of proven and tested delivery app development solutions to help you manage the operations of your custom medicine delivery apps.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* 
-        <section className=" bg-[#F5F5F9] lg:py-16 py-10 ">
-          <div className=" mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <h2 className="text-center xl:text-4xl text-3xl text-[#212121]  font-bold ">
-              We Develop Tailored Solutions for Various Pharmaceutical Delivery
-              Business Models
-            </h2>
-            <p className="text-lg text-center font-normal pb-6">
-              Comfygen offers different online pharmacy app development
-              solutions based on business objectives. On-demand medicine
-              delivery applications developed by our team are tailored to your
-              needs and establish standard pharmacy chains that meet your
-              standards.
-            </p>
-            <div className=" mx-auto px-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border ">
-                  <Image
-                    src="https://www.comfygen.com/image/imgpsh_fullsize_anim (12).png"
-                    alt="Startups"
-                    className="w-full h-48 object-cover"
-                    height={1380}
-                    width={773}
-                    unoptimized={true}
-                  />
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-4">
-                      Stand-Alone Pharmacy Store{" "}
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      It is a dedicated online pharmacy store built for one
-                      specific pharma store or another e-pharmacy startups. Any
-                      business can build their dedicated online medicine
-                      delivery application with the similar features like
-                      implemented in other online pharmacy software models.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border">
-                  <Image
-                    src="https://www.comfygen.com/image/multi-chain.png"
-                    alt="Small Businesses"
-                    className="w-full h-48 object-cover"
-                    height={1380}
-                    width={773}
-                    unoptimized={true}
-                  />
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-4">
-                      Multi-Chain Pharmacy Store / Aggregator Model
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      It’s an aggregator or multi-chain pharmacy store; which
-                      partners with multitude pharmacy stores to list their
-                      drugs for selling. People browse medicines and order them
-                      from dedicated store through a single platform.
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden border">
-                  <Image
-                    src="https://www.comfygen.com/image/modal_pharma.jpeg"
-                    alt="Enterprises"
-                    className="w-full h-48 object-cover"
-                    height={1380}
-                    width={773}
-                    unoptimized={true}
-                  />
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-4">
-                      Franchise Online Pharmacy Model
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      With the franchise on-demand medicine delivery
-                      application, it partners with other pharmacy chains to
-                      build a branded online outlets. Each pharmacy chain has
-                      its dedicated digital solution, that enable users to order
-                      medicines for doorstep delivery from their preferred
-                      chains.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* <Providers /> */}
-        {/* <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/investing-in-online-medicine-delivery-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
-
-
-
-        {/* <Features />  */}
-        {/* <SolutionSec
-          heading="Why Should Pharmacy Businesses Utilize Online Medicine Delivery App Development?"
-          subheading="Every business in the pharmacy industry must look for new Every business in the pharmacy industry must look for new opportunities to stay relevant in the market. Comfygen is among the top medicine delivery app development firm based in USA and India, gives the perfect option to all types of pharmacy businesses to improve their efficiency, customer experience, productivity, and resource utilization. Any business that wants to make a mark in the domain of pharmacy delivery can capitalize on diverse advantages."
-          techData={technologyData}
-        /> */}
-
-
-
-        {/* <InfoSection
-          heading="Do You Want More Information about Medicine Delivery App Development Services?"
-          description1="Reach out to our experts through the channels of your choice and make the most of our expertise in developing medicine delivery apps right now."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/android-app-development-landscape-img.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-          imagePosition="right"
-        />
-  */}
 
       </div>
     </>
