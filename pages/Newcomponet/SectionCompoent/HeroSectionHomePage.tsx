@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
 import dynamic from "next/dynamic";
 
@@ -13,7 +13,7 @@ export default function HeroSection(props: any) {
   if (!data) {
     return <div>Loading...</div>;
   }
-
+  
   const [words, setWords] = useState([
     "Blockchain Development",
     "AI Development",
@@ -23,17 +23,6 @@ export default function HeroSection(props: any) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isDesktop, setIsDesktop] = useState(false);
-
-  const [showBgImage, setShowBgImage] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const imageRef = useRef<HTMLImageElement>(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowBgImage(true)
-    }, 2000)
-    return () => clearTimeout(timer);
-  }, [])
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -49,14 +38,14 @@ export default function HeroSection(props: any) {
     const timeout = setTimeout(() => {
       setTypedText(word.substring(0, typedText.length + 1));
     }, 100);
-
+    
     if (typedText === word) {
       setTimeout(() => {
         setCurrentWordIndex((currentWordIndex + 1) % words.length);
         setTypedText("");
       }, 1000);
     }
-
+    
     return () => clearTimeout(timeout);
   }, [currentWordIndex, typedText, words]);
 
@@ -81,37 +70,14 @@ export default function HeroSection(props: any) {
     },
   ];
 
-  // Handle image load
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <section
-      className={`relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd]  ${imageLoaded ? "sm:bg-transparent" : "bg-[#5951cd]"} h-screen flex flex-col justify-center items-center lg:h-full`}
+      className="relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full"
       itemScope
       itemType="https://schema.org/WebPage"
     >
       {/* Background Image with proper props */}
-      {showBgImage && (
-        <Image
-          ref={imageRef}
-          src={props.bgImage || "/landing-hero-img.webp"}
-          alt="Comfygen - Top Web & Mobile App Development Company"
-          fill
-          className={`
-                  object-cover object-center -z-10 hidden sm:block
-                  transition-opacity duration-500 ease-in-out
-                  ${imageLoaded ? 'bg-[#5951cd]' : 'bg-[#5951cd]'}
-                `}
-          priority
-          sizes="100vw"
-          quality={85}
-          loading="eager"
-          onLoad={handleImageLoad}
-        />
-      )}
-      {/* <Image
+      <Image
         src={props.bgImage || "/landing-hero-img.webp"}
         alt="Comfygen - Top Web & Mobile App Development Company"
         fill
@@ -119,7 +85,7 @@ export default function HeroSection(props: any) {
         priority
         sizes="100vw"
         quality={85}
-      /> */}
+      />
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
@@ -161,7 +127,7 @@ export default function HeroSection(props: any) {
                 6+ Year's Experience
               </p>
             </div>
-
+            
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
               <div className="h-8 w-8 relative">
                 <Image
@@ -177,7 +143,7 @@ export default function HeroSection(props: any) {
                 250+ Project Delivered
               </p>
             </div>
-
+            
             <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] gap-2">
               <div className=" relative">
                 <Image
@@ -495,7 +461,7 @@ export default function HeroSection(props: any) {
 //         blurDataURL="/blur-placeholder.webp"
 //         quality={75}
 //         loading="eager"
-//       />
+//       /> 
 
 
 //       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
