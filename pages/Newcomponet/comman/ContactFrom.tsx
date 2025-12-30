@@ -3,11 +3,18 @@ import JSON_DATA from "./json/country.json";
 import Image from "next/image";
 import Router from "next/router";
 // import "react-phone-input-2/lib/style.css";
-import Select from "react-select";
+const ReactSelect = dynamic(() => import('react-select'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-28 h-10 bg-gray-200 animate-pulse rounded" />
+  ),
+});
+
 import { redirect } from "next/dist/server/api-utils";
+import dynamic from "next/dynamic";
 
 class ContactFrom extends Component<{}, any> {
-  constructor(props) {
+  constructor(props:any) {
     super(props);
     this.state = {
       isLoading: "idle",
@@ -23,7 +30,7 @@ class ContactFrom extends Component<{}, any> {
     this.fetchUserIP();
   }
 
-  inputChange = (e: any) => {
+  inputChange = (e:any) => {
     console.log("e________________________", e.target.value, e.target.name);
     e.preventDefault();
     let { name, value } = e.target;
@@ -43,7 +50,7 @@ class ContactFrom extends Component<{}, any> {
     this.setState({ fieldsContactUs, errorsContactUs });
   };
 
-  createContactUs = (e: any) => {
+  createContactUs = (e:any) => {
     e.preventDefault();
     if (this.handleValidationContactUs()) {
       let data = {
@@ -95,7 +102,7 @@ class ContactFrom extends Component<{}, any> {
     }
   };
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState:any) {
     if (
       this.state.successMessage &&
       prevState.successMessage !== this.state.successMessage
@@ -171,7 +178,7 @@ class ContactFrom extends Component<{}, any> {
     }, 2000);
   };
 
-  handleCountryChange = (event) => {
+  handleCountryChange = (event:any) => {
     let errorsContactUs = {};
     if (event.target.value != "SELECTED") {
       this.setState({ stdCode: event.target.value });
@@ -286,7 +293,7 @@ class ContactFrom extends Component<{}, any> {
               <label htmlFor="mobNo">Enter Number</label>
               <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7]">
                 {/* Country Code Dropdown */}
-                <Select
+                <ReactSelect
                   inputId="mobNo"
                   aria-label="Country Code"
                   options={JSON_DATA.Country?.map((ele) => ({
@@ -303,15 +310,15 @@ class ContactFrom extends Component<{}, any> {
                       })).find((ele) => ele.value === this.state.stdCode)
                       : null
                   }
-                  onChange={(selectedOption) => {
+                  onChange={(selectedOption:any) => {
                     this.setState({ stdCode: selectedOption.value });
                     // clear error if any
-                    this.setState((prevState) => ({
+                    this.setState((prevState:any) => ({
                       errorsContactUs: { ...prevState.errorsContactUs, stdCode: "" },
                     }));
                   }}
-                  className="text-sm w-28 bg-transparent"
-                  getOptionValue={(option) => option.name}
+                  className="text-xs w-32 bg-transparent "
+                  getOptionValue={(option:any) => option.name}
                   components={{
                     DropdownIndicator: () => null,
                     IndicatorSeparator: () => null,
@@ -323,6 +330,7 @@ class ContactFrom extends Component<{}, any> {
                       backgroundColor: "transparent",
                       boxShadow: state.isFocused ? "none" : base.boxShadow,
                       cursor: "pointer",
+                      display:"flex"
                     }),
                     placeholder: (base) => ({
                       ...base,

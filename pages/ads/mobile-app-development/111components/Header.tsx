@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
-import $ from "jquery";
+// import $ from "jquery";
 
 const MobileApp = [
   { num: "1", name: "Mobile App Development", url: "/mobile-app-development" },

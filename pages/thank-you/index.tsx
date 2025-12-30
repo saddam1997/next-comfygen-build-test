@@ -6,10 +6,10 @@ import styles from "./styles.module.css";
 import Tech from "./components/tech";
 import SocialTab from "./components/SocialTab";
 import ConnectWithExpertButton from "../components/button/ConnectWithExpertButton";
-import { Calendar, momentLocalizer } from "react-big-calendar";
+// import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import { useState } from "react";
-import "react-big-calendar/lib/css/react-big-calendar.css";
+// import "react-big-calendar/lib/css/react-big-calendar.css";
 
 type ValuePiece = Date | null;
 
@@ -24,7 +24,7 @@ export default function Ecommerce() {
 
   
 
-  const localizer = momentLocalizer(moment);
+  // const localizer = momentLocalizer(moment);
 
   const [events, setEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
