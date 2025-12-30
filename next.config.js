@@ -1,31 +1,7 @@
-// const withBundleAnalyzer = require('@next/bundle-analyzer')
-//   ({
-//     enabled: false,
-//     openAnalyzer: false,
-//   })
-
-// module.exports = withBundleAnalyzer({
-//   "env": {
-//     "URL": "https://www.comfygen.com",
-//     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
-//   },
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'www.comfygen.com',
-//         port: '', // Leave empty if no specific port is needed
-//         pathname: '/**', // Match all paths under this domain
-//       },
-//     ],
-//   },
-//   compress: true,
-// })
 const redirects = require('./redirects');
-
-
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: false, // set to true only when analyzing bundles
+  // enabled: false, // set to true only when analyzing bundles
+    enabled: process.env.ANALYZE === 'true',
   openAnalyzer: false,
 });
 
@@ -72,6 +48,45 @@ const nextConfig = {
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const withBundleAnalyzer = require('@next/bundle-analyzer')
+//   ({
+//     enabled: false,
+//     openAnalyzer: false,
+//   })
+
+// module.exports = withBundleAnalyzer({
+//   "env": {
+//     "URL": "https://www.comfygen.com",
+//     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
+//   },
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'www.comfygen.com',
+//         port: '', // Leave empty if no specific port is needed
+//         pathname: '/**', // Match all paths under this domain
+//       },
+//     ],
+//   },
+//   compress: true,
+// })
+
 
 // const withBundleAnalyzer = require('@next/bundle-analyzer')
 //   ({

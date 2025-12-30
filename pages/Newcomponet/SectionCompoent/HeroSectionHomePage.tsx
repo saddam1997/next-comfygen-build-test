@@ -13,7 +13,7 @@ export default function HeroSection(props: any) {
   if (!data) {
     return <div>Loading...</div>;
   }
-  
+
   const [words, setWords] = useState([
     "Blockchain Development",
     "AI Development",
@@ -38,14 +38,14 @@ export default function HeroSection(props: any) {
     const timeout = setTimeout(() => {
       setTypedText(word.substring(0, typedText.length + 1));
     }, 100);
-    
+
     if (typedText === word) {
       setTimeout(() => {
         setCurrentWordIndex((currentWordIndex + 1) % words.length);
         setTypedText("");
       }, 1000);
     }
-    
+
     return () => clearTimeout(timeout);
   }, [currentWordIndex, typedText, words]);
 
@@ -81,11 +81,24 @@ export default function HeroSection(props: any) {
         src={props.bgImage || "/landing-hero-img.webp"}
         alt="Comfygen - Top Web & Mobile App Development Company"
         fill
+        priority={true}
+        quality={75}
         className="object-cover object-center -z-10 hidden sm:block"
-        priority
+        sizes="(max-width: 640px) 100vw,
+         (max-width: 768px) 95vw,
+         (max-width: 1024px) 90vw,
+         1514px"
+      />
+      {/* <Image
+        src={props.bgImage || "/landing-hero-img.webp"}
+        alt="Comfygen - Top Web & Mobile App Development Company"
+        fill
+loading="eager"
+        className="object-cover object-center -z-10 hidden sm:block"
+        priority={true}
         sizes="100vw"
         quality={85}
-      />
+      /> */}
 
       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
@@ -127,7 +140,7 @@ export default function HeroSection(props: any) {
                 6+ Year's Experience
               </p>
             </div>
-            
+
             <div className="bg-[#FFFFFF] w-full py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
               <div className="h-8 w-8 relative">
                 <Image
@@ -143,7 +156,7 @@ export default function HeroSection(props: any) {
                 250+ Project Delivered
               </p>
             </div>
-            
+
             <div className="bg-[#fff] py-4 w-full px-6 rounded-[14px] gap-2">
               <div className=" relative">
                 <Image
@@ -461,7 +474,7 @@ export default function HeroSection(props: any) {
 //         blurDataURL="/blur-placeholder.webp"
 //         quality={75}
 //         loading="eager"
-//       /> 
+//       />
 
 
 //       <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
