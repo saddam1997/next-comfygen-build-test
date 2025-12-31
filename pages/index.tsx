@@ -5,16 +5,17 @@ import JSON_DATA from "./index.json";
 // Lazy load all major components
 import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
+import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
-const AboutSection = dynamic(() => import("./Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, // keep SSR for SEO
-});
+
+
+
 
 const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
 });
+
 
 const CallToAction = dynamic(() => import("./Newcomponet/SectionCompoent/CallToAction"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
