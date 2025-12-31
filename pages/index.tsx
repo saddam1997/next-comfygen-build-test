@@ -5,17 +5,16 @@ import JSON_DATA from "./index.json";
 // Lazy load all major components
 import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
-import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
 
-
-
-
+const AboutSection = dynamic(() => import("./Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true, // keep SSR for SEO
+});
 
 const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
   ssr: true, // keep SSR for SEO
 });
-
 
 const CallToAction = dynamic(() => import("./Newcomponet/SectionCompoent/CallToAction"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
@@ -352,7 +351,6 @@ export default function Home(props: any) {
           <HeroSectionHomePage
             heading={typedText}
             isHome={true}
-
             ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
             btnName="Let's Discuss"
             btnLink="/contact-us"
