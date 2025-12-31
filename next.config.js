@@ -1,7 +1,7 @@
 const redirects = require('./redirects');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   // enabled: false, // set to true only when analyzing bundles
-    enabled: process.env.ANALYZE === 'true',
+  enabled: process.env.ANALYZE === 'true',
   openAnalyzer: false,
 });
 
@@ -31,9 +31,9 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000, // cache 1 year
-    deviceSizes: [320, 480, 768, 1024, 1280],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1514, 1920],
     qualities: [50, 70, 75, 80, 85, 90, 100],
-    imageSizes: [16, 32, 64, 128, 256, 384],
+    imageSizes: [16, 32, 64, 48, 96, 128, 256, 384],
   },
 
   compress: true,

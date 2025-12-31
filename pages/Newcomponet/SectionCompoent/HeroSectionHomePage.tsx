@@ -87,7 +87,7 @@ export default function HeroSection(props: any) {
         sizes="(max-width: 640px) 100vw,
          (max-width: 768px) 95vw,
          (max-width: 1024px) 90vw,
-         1514px"
+         1080px"
       />
       {/* <Image
         src={props.bgImage || "/landing-hero-img.webp"}
