@@ -38,11 +38,11 @@ User-agent: Baiduspider-news
 User-agent: Baiduspider-favo
 User-agent: Baiduspider-cpro
 User-agent: Baiduspider-plus
-Disallow: /
+
 
 
 # ---------------------------------------
 # Bots Singapur
 # ---------------------------------------
 User-agent: PetalBot
-Disallow: /
+
