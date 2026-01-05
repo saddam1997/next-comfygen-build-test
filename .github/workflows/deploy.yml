@@ -41,6 +41,9 @@ jobs:
             git fetch --all
             git reset --hard origin/newdesign
 
+            # Package Install 
+            npm i
+
             # Build with extended memory
             export NODE_OPTIONS="--max-old-space-size=3072"
             npm ci
