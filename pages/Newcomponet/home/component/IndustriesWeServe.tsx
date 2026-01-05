@@ -153,10 +153,10 @@ const IndustriesWeServe = ({
     );
 
     return (
-        <section className=" bg-gradient-to-br from-pink-100 via-rose-50 to-pink-100 py-20 px-4 sm:px-6 lg:px-8">
+        <section className=" bg-gradient-to-br from-pink-100 via-rose-50 to-pink-100 py-8 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
                 {/* Header */}
-                <div className="text-center mb-16">
+                <div className="text-center lg:mb-16 mb-2">
                     <h2
                         className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4 cursor-pointer">
                         {heading}
@@ -167,7 +167,7 @@ const IndustriesWeServe = ({
                 </div>
 
                 {/* Navigation Arrows for Mobile/Tablet */}
-                <div className="flex justify-between items-center mb-8 lg:hidden">
+                {/* <div className="flex justify-between items-center mb-8 lg:hidden">
 
 
                     <button
@@ -187,13 +187,13 @@ const IndustriesWeServe = ({
                     >
                         <ChevronRight className="w-6 h-6 text-gray-800" />
                     </button>
-                </div>
+                </div> */}
 
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
                     {currentIndustries.map((industry, index) => (
                         <div
-                            
+
                             className='bg-white  max-w-[573px] rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'
                             onMouseEnter={() => setHoveredCard(index)}
                             onMouseLeave={() => setHoveredCard(null)}
@@ -203,14 +203,11 @@ const IndustriesWeServe = ({
                                 <h2 className="md:text-[24px] font-poppins  text-[#000000] font-Medium">
                                     {industry.title}
                                 </h2>
-                                <Link href={industry.link || '#'}
-                                    className={`bg-red-500 hover:bg-red-600 text-white rounded-full p-3 transition-all duration-300 `}
-                                // onClick={(e) => {
-                                //     e.stopPropagation();
-                                //     handleCardClick(industry.link);
-                                // }}
+                                <Link
+                                    href={industry.link || "#"}
+                                    className="bg-red-500 hover:bg-red-600 text-white rounded-full p-3 transition-all duration-300 group"
                                 >
-                                    <ArrowUpRight className="w-5 h-5" />
+                                    <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:rotate-45" />
                                 </Link>
                             </div>
 
@@ -239,7 +236,7 @@ const IndustriesWeServe = ({
                 </div>
 
                 {/* Pagination Dots */}
-                <div className="flex justify-center mt-12 gap-3">
+                <div className="flex justify-center mt-5 gap-3">
                     {[...Array(totalPages)].map((_, index) => (
                         <button
                             key={index}
@@ -254,7 +251,7 @@ const IndustriesWeServe = ({
                 </div>
 
                 {/* Desktop Navigation Arrows */}
-                <div className="hidden lg:flex justify-center mt-8 gap-4">
+                {/* <div className="hidden lg:flex justify-center mt-8 gap-4">
                     <button
                         onClick={handlePrev}
                         className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -269,7 +266,7 @@ const IndustriesWeServe = ({
                     >
                         <ChevronRight className="w-6 h-6 text-gray-800" />
                     </button>
-                </div>
+                </div> */}
             </div>
 
 

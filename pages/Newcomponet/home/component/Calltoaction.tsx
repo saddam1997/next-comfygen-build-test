@@ -27,7 +27,7 @@ const Calltoaction = () => {
         
         </h2>
 
-        <p className="mt-6 w-[1520px] mx-auto text-base md:text-[24px] font-normal text-gray-200 leading-relaxed">
+        <p className="mt-6 w-full lg:w-[1520px] lg:mx-auto text-sm md:text-[24px] font-normal text-gray-200 leading-relaxed">
           At Comfygen, we use creativity and teamwork to shape the direction of
           technology. Our innovative solutions help organizations stay ahead
           of the times in a world that is changing quickly. Together, let's

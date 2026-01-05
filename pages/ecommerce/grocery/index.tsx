@@ -654,13 +654,13 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Grocery Delivery App Development Company"
-          subhead=""
-          ptag="Comfygen is a trusted grocery delivery app development company that helps startups, supermarkets, and large businesses build fast, secure, and scalable grocery delivery apps. Our talented app developers create custom grocery delivery applications for Android, iOS, and web platforms with features like real-time order tracking, smart inventory management, safe online payments, and quick on-demand delivery."
-          ptag1="Whether you want a single-store grocery app or a multi-vendor grocery marketplace, we deliver solutions that help you compete with popular platforms like Instacart, BigBasket, and Amazon Fresh—perfectly tailored to your local or global business needs."
-          li="High-performance apps built to handle peak traffic"
-          li1="Business-first planning aligned with your revenue and delivery model"
-          li2="Optimized product catalogs that scale to thousands of SKUs"
-          li3="Built-in retention features like subscriptions and quick reorders"
+          subhead="Fast, Secure, and Scalable Grocery Delivery App Development Solutions"
+          ptag="Ready to launch a grocery delivery app that stands out? Whether you’re a startup or a large supermarket chain, our grocery app development services build custom cross-platform apps that deliver smooth, on-demand experiences. With real-time order tracking, secure payments, and smart inventory management, we help your business scale and compete with leading grocery delivery platforms."
+          ptag1=""
+          li="Custom Grocery App Development"
+          li1="On-Demand Grocery Delivery App Development"
+          li2="Multi-Vendor Grocery App Development"
+          li3="Scalable Grocery Delivery App Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

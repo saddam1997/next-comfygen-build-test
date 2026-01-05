@@ -26,7 +26,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                 </div>
 
                 {/* Main Content Container */}
-                <div className="bg-white backdrop-blur-sm rounded-3xl p-8 shadow-2xl max-w-[1760px] h-full xl:h-[780px]">
+                <div className="hidden lg:block bg-white backdrop-blur-sm rounded-3xl p-8 shadow-2xl max-w-[1760px] h-full xl:h-[780px]">
                     <div className="grid lg:grid-cols-2 xl:grid-cols-[400px,1fr] gap-8 ">
                         {/* Services Menu */}
                         <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 scroll-hide ">
@@ -68,7 +68,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                                     className="text-sm lg:text-base xl:text-[20px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-14  leading-relaxed"
                                     dangerouslySetInnerHTML={{
                                         __html:
-                                           desc.length > 300
+                                            desc.length > 300
                                                 ? desc.slice(0, 300) + "...."
                                                 : desc,
                                     }}
@@ -103,7 +103,70 @@ export default function Services({ heading = "", description = "", serviceskey =
                         </div>
                     </div>
                 </div>
+
+                <div className="lg:hidden space-y-3 lg:h-[700px] lg:overflow-y-auto pr-2 scroll-hide">
+                    {serviceskey.map((service) => {
+                        const isActive = activeService === service;
+                        const data = servicedata?.[service] || {};
+
+                        return (
+                            <div key={service}>
+                                <button
+                                    onClick={() =>
+                                        setActiveService(isActive ? "" : service)
+                                    }
+                                    className={`w-full text-left px-6 py-4 text-sm lg:text-lg xl:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${isActive ? "bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white" : "bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]"}`}
+                                >
+                                    {service}
+                                </button>
+
+                                {/* 🔽 MOBILE DETAILS */}
+                                {isActive && (
+                                    <div className="lg:hidden">
+                                        <ServiceDetails
+                                            title={service}
+                                            desc={data.description || ""}
+                                            features={data.features || []}
+                                        />
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </div>
+
             </div>
         </div>
     );
 }
+
+
+const ServiceDetails = ({ title, desc, features }: any) => {
+    return (
+        <div className="bg-[#000823] rounded-xl p-5 mt-4 text-white">
+            <h3 className="text-lg font-semibold mb-3">{title}</h3>
+
+            <p
+                className="text-sm mb-4 leading-relaxed"
+                dangerouslySetInnerHTML={{
+                    __html: desc.length > 200 ? desc.slice(0, 200) + "..." : desc,
+                }}
+            />
+
+            <div className="space-y-2 mb-4">
+                {features?.map((feature: any, i: number) => (
+                    <div
+                        key={i}
+                        className="text-sm flex items-start gap-2"
+                        dangerouslySetInnerHTML={{ __html: `• ${feature}` }}
+                    />
+                ))}
+            </div>
+
+            <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                Connect Experts
+                <ArrowRight size={20} />
+            </button>
+        </div>
+    );
+};

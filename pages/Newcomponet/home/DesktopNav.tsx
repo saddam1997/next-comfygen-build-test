@@ -4,8 +4,6 @@ import Link from "next/link";
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 
-import { motion } from "framer-motion";
-
 
 import {
   MdKeyboardArrowDown,
@@ -182,11 +180,6 @@ const BlockchainSer = [
     url: "/ethereum-blockchain-development-company",
   },
 ];
-
-
-
-
-
 
 const coin = [
   {
@@ -2377,10 +2370,7 @@ export default function DesktopNav(props: any) {
                   </div>
                 </div>
               </div>
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+              <div
                 className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
@@ -2490,7 +2480,7 @@ export default function DesktopNav(props: any) {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
