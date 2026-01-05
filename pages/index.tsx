@@ -3,9 +3,11 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 // Lazy load all major components
-import Header from "./Newcomponet/layout/Header";
+// import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
+import Header from "./Newcomponet/layout/Header";
+
 
 
 
@@ -344,8 +346,10 @@ export default function Home(props: any) {
         />
       </Head>
       <div >
+
         <Header />
       </div>
+
 
       <div className="overflow-hidden lg:pt-[120px] pt-5">
         <div className="relative">
@@ -474,12 +478,10 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-      </div>
+      </div> 
     </>
   );
 }
-
-
 
 export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");

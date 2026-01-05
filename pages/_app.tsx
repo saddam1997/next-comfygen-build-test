@@ -11,6 +11,7 @@ import footerConfig from "../pageRoute/pagedataroute.json"
 import { Poppins } from 'next/font/google';
 import Head from "next/head";
 import Image from "next/image";
+import BreadCume from "./Newcomponet/home/component/BreadCume";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -321,12 +322,13 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
         />
       </Head>
       <main
-        className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto `}
+        // className={`${poppins.className} overflow-hidden max-w-[1600px] mx-auto `}
 
-      // className={`${poppins.className} overflow-hidden ${router.pathname === "/" ? "w-full" : "max-w-[1600px] mx-auto"
-      //   }`}
+      className={`${poppins.className} overflow-hidden ${router.pathname === "/comfy-test-page" ? "w-full" : "max-w-[1600px] mx-auto"
+        }`}
 
       >
+
         <Component {...pageProps} />
         {/* {JSON.stringify(initialData)} */}
         <BlogSection initialData={initialData} />
