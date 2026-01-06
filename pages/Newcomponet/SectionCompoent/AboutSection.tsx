@@ -3,11 +3,12 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import CommonImage from "../comman/CommonImage";
 
-const CommonImage = dynamic(() => import("../comman/CommonImage"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+// const CommonImage = dynamic(() => import("../comman/CommonImage"), {
+//   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+//   ssr: true,
+// });
 
 const AboutSection = (props: any) => {
   const {
@@ -38,21 +39,6 @@ const AboutSection = (props: any) => {
                 blurDataURL="/blur-placeholder.webp"
                 className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
               />
-
-            {/* <Image
-              src={imageSrc}
-              alt={heading}
-              width={600}
-              height={360}
-              loading="lazy"          // 👈 Lazy load
-              decoding="async"        // 👈 Decode asynchronously
-              quality={70}            // 👈 Slight compression for smaller size
-              sizes="(max-width: 768px) 100vw, 600px" // 👈 Responsive optimization
-              style={{ width: "100%", height: "auto" }}
-              unoptimized={false}     // 👈 Keep Next.js optimization (unless using external CDN)
-              priority={false}        // 👈 Don’t preload
-            /> */}
-
 
           </div>
           <div>

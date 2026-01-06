@@ -2,9 +2,16 @@ import React from 'react'
 import { IoMdMail } from "react-icons/io";
 import { MdAddCall } from "react-icons/md";
 
-const BreadCume = () => {
+const BreadCume = ({ isScrolled }) => {
+
+    const headerClasses = isScrolled
+        ? " w-full bg-white z-50 py-2  mx-auto "
+        : " w-full bg-black/40 hidden  lg:block py-2 text-white z-50  mx-auto ";
     return (
-        <div className='py-2 items-center  bg-black/40 hidden lg:block'>
+        <div
+            className={headerClasses}
+        //  className='py-2 items-center  bg-black/40 hidden lg:block'
+        >
             <div className='flex justify-between  2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto px-2'>
                 <div>
                     <p className="hidden lg:block">

@@ -161,7 +161,7 @@ const IndustriesWeServe = ({
                         className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4 cursor-pointer">
                         {heading}
                     </h2>
-                    <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                    <p className="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto">
                         {description}
                     </p>
                 </div>
@@ -188,9 +188,50 @@ const IndustriesWeServe = ({
                         <ChevronRight className="w-6 h-6 text-gray-800" />
                     </button>
                 </div> */}
+                {/* MOBILE ONLY – HORIZONTAL SLIDER */}
+                <div className="md:hidden overflow-x-auto scroll-hide">
+                    <div className="flex flex-nowrap gap-4 w-full py-6">
+                        {industries.map((industry, index) => (
+                            <div
+                                key={index}
+                                className="w-[320px] shrink-0 bg-white rounded-[24px] shadow-lg cursor-pointer"
+                                onClick={() => industry.link && handleCardClick(industry.link)}
+                            >
+                                <div className="p-4 flex items-center justify-between border-b">
+                                    <h2 className="text-[18px] font-poppins font-medium">
+                                        {industry.title}
+                                    </h2>
+
+                                    <Link
+                                        href={industry.link || "#"}
+                                        className="bg-red-500 text-white rounded-full p-2 group"
+                                    >
+                                        <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
+                                    </Link>
+                                </div>
+
+                                <div className="px-4 py-2 h-16 overflow-hidden">
+                                    <p className="text-sm text-[#616161]">
+                                        {industry.description.slice(0, 70)}...
+                                    </p>
+                                </div>
+
+                                <div className="p-4">
+                                    <Image
+                                        width={400}
+                                        height={280}
+                                        src={industry.imgSrc}
+                                        alt={industry.title}
+                                        className="rounded-[18px]"
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
+                <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
                     {currentIndustries.map((industry, index) => (
                         <div
 

@@ -1140,7 +1140,7 @@ export default function DesktopNav(props: any) {
 
   return (
     <div className={headerClasses}>
-      <BreadCume />
+      <BreadCume isScrolled={isScrolled} />
       {/* <div className="flex gap-6 justify-end mx-10">
         <p className="hidden lg:block">
           <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">

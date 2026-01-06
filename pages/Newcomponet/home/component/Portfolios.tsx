@@ -20,37 +20,62 @@ export default function Portfolios({ heading, description }: any) {
   const bottomRef = useInfiniteScroll(0.6, "right", pauseBottom);
 
   const renderImages = () =>
-    [...images, ...images].map((src, i) => (
-      <div
-        key={i}
-        className={`h-[400px] shrink-0 ${
-          src.includes("Frame") ? "min-w-[197px]" : "min-w-[667px]"
-        }`}
-      >
-        <Image
-          src={src}
-          width={700}
-          height={400}
-          alt=""
-          className="w-full h-full object-cover rounded-2xl"
-        />
-      </div>
-    ));
+  [...images, ...images].map((src, i) => (
+    <div
+      key={i}
+      className={`
+        shrink-0
+        h-[120px] md:h-[400px]
+        ${
+          src.includes("Frame")
+            ? "min-w-[140px] md:min-w-[197px]"
+            : "min-w-[260px] md:min-w-[667px]"
+        }
+      `}
+    >
+      <Image
+        src={src}
+        width={700}
+        height={400}
+        alt=""
+        className="w-full h-full object-cover rounded-xl md:rounded-2xl"
+      />
+    </div>
+  ));
+
+
+  // const renderImages = () =>
+  //   [...images, ...images].map((src, i) => (
+  //     <div
+  //       key={i}
+  //       className={`h-[400px] shrink-0 ${
+  //         src.includes("Frame") ? "min-w-[197px]" : "min-w-[667px]"
+  //       }`}
+  //     >
+  //       <Image
+  //         src={src}
+  //         width={700}
+  //         height={400}
+  //         alt=""
+  //         className="w-full h-full object-cover rounded-2xl"
+  //       />
+  //     </div>
+  //   ));
 
   return (
-    <section className="bg-gray-50 py-16 overflow-hidden">
+    <section className="bg-gray-50 py-2 md:py-16 overflow-hidden">
       {/* Header */}
-      <div className="container mx-auto text-center mb-14">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">{heading}</h2>
+      <div className="container mx-auto text-center mb-2 md:mb-14">
+        <h2 className="text-lg md:text-5xl font-bold mb-4">{heading}</h2>
         <p
-          className="text-lg text-gray-600 max-w-4xl mx-auto"
+          className="text-sm md:text-lg text-gray-600 max-w-4xl mx-auto"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
 
       {/* TOP → LEFT */}
       <div
-        className="overflow-hidden mb-6"
+        className="overflow-hidden mb-2 md:mb-6"
         onMouseEnter={() => setPauseTop(true)}
         onMouseLeave={() => setPauseTop(false)}
       >

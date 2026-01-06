@@ -176,7 +176,7 @@ export default function ClientStories() {
     };
 
     return (
-        <section className="relative  bg-[#F0F0FB] py-8 overflow-hidden h-full md:h-[732px] flex flex-col items-center justify-center">
+        <section className="relative  bg-[#F0F0FB] py-2 overflow-hidden h-full md:h-[600px] flex flex-col items-center justify-center">
             {/* World map background */}
             <div className="absolute inset-0 bg-[url('/Explore-Portfolio.png')] bg-cover bg-no-repeat opacity-80" />
             <div className="relative z-10 lg:container w-full  p-4 md:p-16">

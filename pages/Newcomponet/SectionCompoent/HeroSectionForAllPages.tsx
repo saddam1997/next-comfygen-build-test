@@ -30,19 +30,21 @@ export default function HeroSectionForAllPages(props: any) {
       className="relative lg:h-full h-screen flex flex-col justify-center overflow-hidden bg-[#5951cd] sm:bg-transparent py-10">
       <div className="absolute inset-0 -z-10 hidden sm:block">
         <div className="w-full h-full relative">
-
-
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src={props.bgImage}
+              alt="Comfygen Hero Background"
+              fill
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className="object-cover object-center"
+              placeholder="blur"
+              blurDataURL="/blur-placeholder.webp"
+              quality={75}
+            />
+          </div>
           {/* <Image
-            src={props.bgImage}
-            alt="Hero Background"
-            fill
-            priority         // 🚀 loads instantly
-            quality={80}
-            className="object-cover object-center"
-            sizes="100vw"
-          /> */}
-
-          <Image
             src={props.bgImage}
             alt="Comfygen Hero Background"
             fill
@@ -54,16 +56,8 @@ export default function HeroSectionForAllPages(props: any) {
             blurDataURL="/blur-placeholder.webp"
             quality={75}
             loading="eager"
-          />
-          {/* <CommonImage
-            src={props?.bgImage}
-            alt="Comfygen Hero Background"
-            width={600}
-            height={400}
-            priorityLoad={false}
-            blurDataURL="/blur-placeholder.webp"
-            className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
           /> */}
+
         </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

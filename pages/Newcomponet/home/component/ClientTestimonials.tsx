@@ -98,7 +98,7 @@ export default function ClientTestimonials({
               {extended.map((item, index) => (
                 <div
                   key={index}
-                  className="px-4 flex-shrink-0"
+                  className="px-4 p-2 flex-shrink-0"
                   style={{ width: `${100 / slidesToShow}%` }}
                 >
                   {/* CARD */}
