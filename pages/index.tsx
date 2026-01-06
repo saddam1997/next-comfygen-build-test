@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 
+
 /* ======================
    CRITICAL (Above-the-fold)
 ====================== */
@@ -77,7 +78,9 @@ const Faq = dynamic(
   { ssr: false }
 );
 
-
+const BlogSection = dynamic(() => import("./Newcomponet/SectionCompoent/BlogSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+});
 
 
 
@@ -236,16 +239,11 @@ export default function Home(props: any) {
           name="description"
           content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
         />
-
-
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
         <link rel="canonical" href="https://www.comfygen.com" />
-
-
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
@@ -253,7 +251,6 @@ export default function Home(props: any) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Web And App Development Company" />
-
         <meta
           name="robots"
           content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
@@ -301,12 +298,7 @@ export default function Home(props: any) {
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
       {/* ✅ LCP IMAGE PRELOAD */}
-        <link
-          rel="preload"
-          as="image"
-          href="/landing-hero.jpg"
-        
-        />
+     
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
@@ -481,9 +473,26 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
+         <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
+
+}
+
+
+
+export async function getStaticProps() {
+  console.log("process.env.URL", process.env.URL)
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }
 
 // export async function getServerSideProps({ res }) {
