@@ -5,11 +5,16 @@ import JSON_DATA from "./index.json";
 // Lazy load all major components
 // import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
-import AboutSection from "./Newcomponet/SectionCompoent/AboutSection";
+
 import Header from "./Newcomponet/layout/Header";
 
 
 
+
+const AboutSection = dynamic(() => import("./Newcomponet/SectionCompoent/AboutSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true, // keep SSR for SEO
+});
 
 
 
@@ -297,8 +302,8 @@ export default function Home(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
         <link
           rel="preload"
-          href="/gif/blockchain-development-company.webp"
           as="image"
+          href="/landing-hero.jpg"
         />
         <script
           type="application/ld+json"
@@ -477,25 +482,25 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-      </div> 
+      </div>
     </>
   );
 }
 
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  if (!resData.ok) {
-    // console.error("API Request failed:", await resData);
-    return { props: { initialData: [] } };
-  }
-  // console.log(resData)
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
-}
+// export async function getServerSideProps({ res }) {
+//   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+//   if (!resData.ok) {
+//     // console.error("API Request failed:", await resData);
+//     return { props: { initialData: [] } };
+//   }
+//   // console.log(resData)
+//   const data = await resData.json();
+//   res.setHeader(
+//     "Cache-Control",
+//     "public, s-maxage=10, stale-while-revalidate=59"
+//   );
+//   return { props: { initialData: data } };
+// }
 
 
 

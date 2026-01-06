@@ -276,6 +276,8 @@ export default function MyApp({ Component, pageProps }: AppProps, props: any) {
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Comfygen Technologies" />
 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
         {/* Author & Ownership Meta */}
         <meta name="author" content="Comfygen Technologies" />
         <meta name="web-author" content="Comfygen Technologies" />
