@@ -245,7 +245,6 @@ export default function Home(props: any) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
         <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Web And App Development Company" />
@@ -367,7 +366,7 @@ export default function Home(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="/landing-hero-img.webp"
+            bgImage="/landing-hero.jpg"
 
           />
         </div>
