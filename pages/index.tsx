@@ -2,80 +2,80 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-// Lazy load all major components
-// import Header from "./Newcomponet/layout/Header";
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
 
-import Header from "./Newcomponet/layout/Header";
-
-
-
-
-const AboutSection = dynamic(() => import("./Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, // keep SSR for SEO
+/* ======================
+   CRITICAL (Above-the-fold)
+====================== */
+const Header = dynamic(() => import("./Newcomponet/layout/Header"), {
+  ssr: false,
 });
 
+/* ======================
+   SEO IMPORTANT (SSR)
+====================== */
+const AboutSection = dynamic(
+  () => import("./Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
+);
 
+const ServicesSec = dynamic(
+  () => import("./Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
 
-const ServicesSec = dynamic(() => import("./Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true, // keep SSR for SEO
-});
+/* ======================
+   BELOW THE FOLD (No SSR)
+====================== */
+const Portfolio = dynamic(
+  () => import("./Newcomponet/SectionCompoent/Portfolio"),
+  { ssr: false }
+);
 
+const CallToAction = dynamic(
+  () => import("./Newcomponet/SectionCompoent/CallToAction"),
+  { ssr: false }
+);
 
-const CallToAction = dynamic(() => import("./Newcomponet/SectionCompoent/CallToAction"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-});
-const IndustriesServe = dynamic(() => import("./Newcomponet/SectionCompoent/IndustriesServe"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const IndustriesServe = dynamic(
+  () => import("./Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: false }
+);
 
-const ProcessSec = dynamic(() => import("./Newcomponet/SectionCompoent/ProcessSec"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProcessSec = dynamic(
+  () => import("./Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: false }
+);
 
-const TechStack = dynamic(() => import("./Newcomponet/SectionCompoent/TechStack"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const TechStack = dynamic(
+  () => import("./Newcomponet/SectionCompoent/TechStack"),
+  { ssr: false }
+);
 
-const Portfolio = dynamic(() => import("./Newcomponet/SectionCompoent/Portfolio"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("./Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: false }
+);
 
+const ClientStories = dynamic(
+  () => import("./Newcomponet/SectionCompoent/ClientStories"),
+  { ssr: false }
+);
 
-const WhyChoose = dynamic(() => import("./Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("./Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: false }
+);
 
+const ClientTestimonials = dynamic(
+  () => import("./Newcomponet/SectionCompoent/ClientTestimonials"),
+  { ssr: false }
+);
 
-
-const HireDeveloper = dynamic(() => import("./Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-const ClientTestimonials = dynamic(() => import("./Newcomponet/SectionCompoent/ClientTestimonials"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-const Faq = dynamic(() => import("./Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-
-const ClientStories = dynamic(() => import("./Newcomponet/SectionCompoent/ClientStories"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
+const Faq = dynamic(
+  () => import("./Newcomponet/SectionCompoent/Faq"),
+  { ssr: false }
+);
 
 
 
@@ -300,10 +300,12 @@ export default function Home(props: any) {
         <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+      {/* ✅ LCP IMAGE PRELOAD */}
         <link
           rel="preload"
           as="image"
           href="/landing-hero.jpg"
+        
         />
         <script
           type="application/ld+json"
@@ -363,9 +365,6 @@ export default function Home(props: any) {
             ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
             btnName="Let's Discuss"
             btnLink="/contact-us"
-            imgSrc="/"
-            Width={740}
-            Height={340}
             altTag="blockchain-technology"
             openModal={openModal}
             talkToExpertModal={talkToExpertModal}

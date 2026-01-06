@@ -7,7 +7,6 @@ import dynamic from "next/dynamic";
 const ContactFrom = dynamic(() => import("../comman/ContactFrom"), { ssr: false });
 
 export default function HeroSection(props: any) {
-  const { bgImage } = props;
 
   const data = props.btnLink;
   if (!data) {
@@ -83,7 +82,6 @@ export default function HeroSection(props: any) {
         priority
         fetchPriority="high"
         sizes="100vw"
-        quality={75}
         className="object-cover object-center -z-10"
       />
 
