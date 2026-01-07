@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse w-full"></div>
@@ -11,79 +11,79 @@ const loader = () => (
 
 // About Section
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 // Who Can Start
 const WhoCanStart = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhoCanStart"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhoCanStart"),
   { loading: loader, ssr: true }
 );
 
 // Services Section
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 // Consultancy Approach
 const ConsultancyApproach = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
 // Portfolio
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 // Features Section
 const Features = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Features"),
+  () => import("../../components/Newcomponet/SectionCompoent/Features"),
   { loading: loader, ssr: true }
 );
 
 // Process Section
 const ProcessSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 );
 
 // Tech Stack
 const TeckStack = dynamic(
-  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
 
 // Why Choose Us
 const WhyChoose = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 );
 
 // Delivery Section
 const DeliverySection = dynamic(
-  () => import("../Newcomponet/comman/DeliverySection"),
+  () => import("../../components/Newcomponet/comman/DeliverySection"),
   { loading: loader, ssr: true }
 );
 
 // Hire Developer
 const HireDeveloper = dynamic(
-  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 );
 
 // Client Testimonials
 const ClientTestimonials = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: loader, ssr: true }
 );
 
 // Faq Section
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 

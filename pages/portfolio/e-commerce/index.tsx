@@ -7,8 +7,8 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
 
-import Header from '../../Newcomponet/layout/Header';
-const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
+import Header from '../../../components/Newcomponet/layout/Header';
+const TechnologyStack = dynamic(() => import('../../../components/Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
 export default function about(props:any) {

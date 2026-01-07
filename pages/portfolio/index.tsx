@@ -7,9 +7,9 @@ import Link from "next/link";
 import JSON_DATA from "./portfolio.json";
 import { ImArrowUpRight2 } from "react-icons/im";
 
-import Header from "../Newcomponet/layout/Header";
-import CompanyHeroSection from "../Newcomponet/portfolio/CompanyHeroSection";
-import FormSec from "../Newcomponet/portfolio/FormSec";
+import Header from "../../components/Newcomponet/layout/Header";
+import CompanyHeroSection from "../../components/Newcomponet/portfolio/CompanyHeroSection";
+import FormSec from "../../components/Newcomponet/portfolio/FormSec";
 
 
 export default function Portfolio(props) {

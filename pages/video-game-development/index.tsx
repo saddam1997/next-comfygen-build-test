@@ -3,28 +3,28 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/video.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import Faq from "../components/Faq";
-import CallToAction from "../components/CallToAction";
-import AboutSection from "../components/AboutSection";
-import CardItem from "../components/CardItem";
-import ProcessSec from "../components/ProcessSec";
-import WhyChoose from "../components/WhyChooseUs";
-import ServicesSec from "../components/ServicesSec";
-import SolutionSec from "../components/SolutionSec";
+import Faq from "../../components/old/components/Faq";
+import CallToAction from "../../components/old/components/CallToAction";
+import AboutSection from "../../components/old/components/AboutSection";
+import CardItem from "../../components/old/components/CardItem";
+import ProcessSec from "../../components/old/components/ProcessSec";
+import WhyChoose from "../../components/old/components/WhyChooseUs";
+import ServicesSec from "../../components/old/components/ServicesSec";
+import SolutionSec from "../../components/old/components/SolutionSec";
 import { IconBolt, IconBook, IconGhost, IconMap, IconPhotoVideo, IconPlayFootball, IconShieldCheck, IconSword, IconVideo, IconWorld, } from '@tabler/icons-react';
 import { IconHeart, } from '@tabler/icons-react';
-import PortfolioSec from "../components/PortfolioSec";
-import ModelsSec from "../components/ModelsSec";
+import PortfolioSec from "../../components/old/components/PortfolioSec";
+import ModelsSec from "../../components/old/components/ModelsSec";
 
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }

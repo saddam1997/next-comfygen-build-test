@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
-import Header from '../../Newcomponet/layout/Header';
-import CompanyHeroSection from '../../Newcomponet/portfolio/CompanyHeroSection';
+import Header from '../../../components/Newcomponet/layout/Header';
+import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
-const Features = dynamic(() => import("../../Newcomponet/portfolio/Features"),
+const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
   { loading: loader, ssr: true }
 );
-const TechStack = dynamic(() => import("../../Newcomponet/SectionCompoent/TechStack"),
+const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
 

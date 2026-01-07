@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react'
-import Header from "../Newcomponet/layout/Header"
-import GetinTouch from '../Newcomponet/SectionCompoent/GetinTouch';
+import Header from "../../components/Newcomponet/layout/Header"
+import GetinTouch from '../../components/Newcomponet/SectionCompoent/GetinTouch';
 import LazyLoad from 'react-lazy-load';
 
 export default function Contact(props:any) {

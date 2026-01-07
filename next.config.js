@@ -1,25 +1,25 @@
 const redirects = require('./redirects');
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  // enabled: false, // set to true only when analyzing bundles
   enabled: process.env.ANALYZE === 'true',
   openAnalyzer: false,
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  env: {
-    URL: "https://www.comfygen.com",
-    NEXT_PUBLIC_MEASUREMENT_ID: "UA-228613134-1",
-  },
-
   reactStrictMode: true,
   compress: true,
+
+  env: {
+    URL: 'https://www.comfygen.com',
+    NEXT_PUBLIC_MEASUREMENT_ID: 'UA-228613134-1',
+  },
+
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'www.comfygen.com',
-        port: '',
         pathname: '/**',
       },
       {
@@ -30,164 +30,28 @@ const nextConfig = {
       },
     ],
     formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 31536000, // cache 1 year
-    deviceSizes: [640, 750, 828, 1080, 1200, 1514, 1920, 1200],
+    minimumCacheTTL: 31536000, // 1 year
+    deviceSizes: [640, 750, 828, 1080, 1200, 1514, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     qualities: [50, 70, 75, 80, 85, 90, 100],
-    imageSizes: [16, 32, 64, 48, 96, 128, 256, 384],
   },
 
-  compress: true,
+  // experimental: {
+  //   optimizeCss: true, // requires "critters" (installed ✔)
+  //   optimizePackageImports: [
+  //     'react-icons',
+  //     'lucide-react',
+  //     '@tabler/icons-react',
+  //   ],
+  // },
 
-  // ✅ Add your redirects here
-
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 
   async redirects() {
-    return redirects; // 👈 clean and maintainable
+    return redirects;
   },
-
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const withBundleAnalyzer = require('@next/bundle-analyzer')
-//   ({
-//     enabled: false,
-//     openAnalyzer: false,
-//   })
-
-// module.exports = withBundleAnalyzer({
-//   "env": {
-//     "URL": "https://www.comfygen.com",
-//     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
-//   },
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'www.comfygen.com',
-//         port: '', // Leave empty if no specific port is needed
-//         pathname: '/**', // Match all paths under this domain
-//       },
-//     ],
-//   },
-//   compress: true,
-// })
-
-
-// const withBundleAnalyzer = require('@next/bundle-analyzer')
-//   ({
-//     enabled: false,
-//     openAnalyzer: false,
-//   })
-
-// module.exports = withBundleAnalyzer({
-//   "env": {
-//     "URL": "https://www.comfygen.com",
-//     "NEXT_PUBLIC_MEASUREMENT_ID": "UA-228613134-1",
-//   },
-//   reactStrictMode: true,
-
-//   images: {
-//     // domains: ['http://localhost:1225'],
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'www.comfygen.com',
-//         port: '', // Leave empty if no specific port is needed
-//         pathname: '/**', // Match all paths under this domain
-//       },
-//       {
-//         protocol: "http",
-//         hostname: "localhost",
-//         port: "1225", // Ensure this matches your local server port
-//         pathname: "/**",
-//       },
-//     ],
-//     formats: ["image/avif", "image/webp"], // enables automatic WebP/AVIF conversion
-//     minimumCacheTTL: 31536000, // ✅ cache for 1 year (in seconds)
-//     qualities: [50, 70, 75, 80, 85, 90, 100],
-//     deviceSizes: [320, 480, 768, 1024, 1280], // responsive breakpoints
-//     imageSizes: [16, 32, 64, 128, 256, 384],
-//   },
-//   compress: true,
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const withBundleAnalyzer = require('@next/bundle-analyzer')({
-//   enabled: false,
-//   openAnalyzer: false,
-// })
-
-// module.exports = withBundleAnalyzer({
-//   env: {
-//     URL: "https://www.comfygen.com",
-//     NEXT_PUBLIC_MEASUREMENT_ID: "UA-228613134-1",
-//   },
-//   reactStrictMode: true,
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'www.comfygen.com',
-//         port: '',
-//         pathname: '/**',
-//       },
-//       {
-//         protocol: 'http',
-//         hostname: 'localhost',
-//         port: '1225',
-//         pathname: '/**',
-//       },
-//     ],
-//   },
-//   compress: true,
-
-//   // 🔥 Add global redirect rule here
-//   async redirects() {
-//     return [
-//       {
-//         source: '/:path*',   // Match all routes
-//         destination: '/',    // Redirect to home
-//         permanent: true,     // 301 redirect
-//       },
-//     ]
-//   },
-// })
-

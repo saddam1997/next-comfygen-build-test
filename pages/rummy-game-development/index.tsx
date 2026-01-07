@@ -3,27 +3,27 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rummy.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import InfoSectionRight from "../components/InfoSectionRight";
-import CallToAction from "../components/CallToAction";
-import CardItem from "../components/CardItem";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
-import SolutionSec from "../components/SolutionSec";
+import WhyChoose from "../../components/old/components/WhyChooseUs";
+import AboutSection from "../../components/old/components/AboutSection";
+import ServicesSec from "../../components/old/components/ServicesSec";
+import Faq from "../../components/old/components/Faq";
+import HireDeveloper from "../../components/old/components/HireDeveloper";
+import InfoSectionRight from "../../components/old/components/InfoSectionRight";
+import CallToAction from "../../components/old/components/CallToAction";
+import CardItem from "../../components/old/components/CardItem";
+import ProcessSec from "../../components/old/components/ProcessSec";
+import ModelsSec from "../../components/old/components/ModelsSec";
+import SolutionSec from "../../components/old/components/SolutionSec";
 import { IconAdjustmentsStar, IconBubbleText, IconClock, IconDeviceGamepad2, IconLock, IconMoneybag, IconShare, IconShieldCheck, IconTrophy, IconUserCircle } from '@tabler/icons-react';
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }

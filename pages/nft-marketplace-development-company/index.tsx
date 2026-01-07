@@ -12,8 +12,8 @@ import {
   IconWallet,
 } from "@tabler/icons-react";
 
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -21,52 +21,52 @@ const loader = () => (
 
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const InfoSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
   { loading: loader, ssr: true }
 );
 
 const SolutionSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Solution"),
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
   { loading: loader, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const ModelsSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ModelsSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
   { loading: loader, ssr: true }
 );
 
 const CardItem = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
   { loading: loader, ssr: true }
 );
 
 const Guidance = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Guidance"),
+  () => import("../../components/Newcomponet/SectionCompoent/Guidance"),
   { loading: loader, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 

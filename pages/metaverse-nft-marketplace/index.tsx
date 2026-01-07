@@ -6,26 +6,26 @@ import JSON_DATA from "./json/metaverse.json"
 import Link from "next/link";
 import styles from './styles.module.css'
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-const HeroSectionForm = dynamic(() => import('../components/HeroSectionForm'), {
+const HeroSectionForm = dynamic(() => import('../../components/old/components/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
 const TechnoStack = dynamic(() => import('./components/TechnoStack'), {
   loading: () => <p>Loading...</p>,
 })
-const Header = dynamic(() => import('../components/Header'), {
+const Header = dynamic(() => import('../../components/old/components/Header'), {
   loading: () => <p>Loading...</p>,
 })
 
-const AdviceSection = dynamic(() => import('../components/Advice'), {
+const AdviceSection = dynamic(() => import('../../components/old/components/Advice'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../components/ContactFromCenter'), {
+const ContactFromCenter = dynamic(() => import('../../components/old/components/ContactFromCenter'), {
   loading: () => <p>Loading...</p>,
 })
-const FaqSection = dynamic(() => import('../components/FaqSection'), {
+const FaqSection = dynamic(() => import('../../components/old/components/FaqSection'), {
   loading: () => <p>Loading...</p>,
 })
-const HireSection = dynamic(() => import('../components/HireSection'), {
+const HireSection = dynamic(() => import('../../components/old/components/HireSection'), {
   loading: () => <p>Loading...</p>,
 })
 export default function Ecommerce(props) {

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import ContactFrom from "../comman/ContactFrom";
+import ContactFrom from "./ContactFrom";
 import SearchCareer from "../about/SearchCareer";
 import { useRouter } from "next/router";
 import { MdArrowOutward } from "react-icons/md";

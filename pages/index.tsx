@@ -2,13 +2,13 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
+import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 
 
 /* ======================
    CRITICAL (Above-the-fold)
 ====================== */
-const Header = dynamic(() => import("./Newcomponet/layout/Header"), {
+const Header = dynamic(() => import("../components/Newcomponet/layout/Header"), {
   ssr: true,
 });
 
@@ -16,12 +16,12 @@ const Header = dynamic(() => import("./Newcomponet/layout/Header"), {
    SEO IMPORTANT (SSR)
 ====================== */
 const AboutSection = dynamic(
-  () => import("./Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../components/Newcomponet/SectionCompoent/AboutSection"),
   { ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("./Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../components/Newcomponet/SectionCompoent/ServicesSec"),
   { ssr: true }
 );
 
@@ -29,56 +29,56 @@ const ServicesSec = dynamic(
    BELOW THE FOLD (No SSR)
 ====================== */
 const Portfolio = dynamic(
-  () => import("./Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../components/Newcomponet/SectionCompoent/Portfolio"),
   { ssr: false }
 );
 
 const CallToAction = dynamic(
-  () => import("./Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../components/Newcomponet/SectionCompoent/CallToAction"),
   { ssr: false }
 );
 
 const IndustriesServe = dynamic(
-  () => import("./Newcomponet/SectionCompoent/IndustriesServe"),
+  () => import("../components/Newcomponet/SectionCompoent/IndustriesServe"),
   { ssr: false }
 );
 
 const ProcessSec = dynamic(
-  () => import("./Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../components/Newcomponet/SectionCompoent/ProcessSec"),
   { ssr: false }
 );
 
 const TechStack = dynamic(
-  () => import("./Newcomponet/SectionCompoent/TechStack"),
+  () => import("../components/Newcomponet/SectionCompoent/TechStack"),
   { ssr: false }
 );
 
 const WhyChoose = dynamic(
-  () => import("./Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { ssr: false }
 );
 
 const ClientStories = dynamic(
-  () => import("./Newcomponet/SectionCompoent/ClientStories"),
+  () => import("../components/Newcomponet/SectionCompoent/ClientStories"),
   { ssr: false }
 );
 
 const HireDeveloper = dynamic(
-  () => import("./Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { ssr: false }
 );
 
 const ClientTestimonials = dynamic(
-  () => import("./Newcomponet/SectionCompoent/ClientTestimonials"),
+  () => import("../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { ssr: false }
 );
 
 const Faq = dynamic(
-  () => import("./Newcomponet/SectionCompoent/Faq"),
+  () => import("../components/Newcomponet/SectionCompoent/Faq"),
   { ssr: false }
 );
 
-const BlogSection = dynamic(() => import("./Newcomponet/SectionCompoent/BlogSection"), {
+const BlogSection = dynamic(() => import("../components/Newcomponet/SectionCompoent/BlogSection"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
 });
 

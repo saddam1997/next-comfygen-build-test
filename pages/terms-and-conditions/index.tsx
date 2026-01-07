@@ -3,10 +3,10 @@ import React from 'react'
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-const HeroSectiondesign2 = dynamic(() => import('../components/HeroSectiondesign2'), {
+const HeroSectiondesign2 = dynamic(() => import('../../components/old/components/HeroSectiondesign2'), {
   loading: () => <p>Loading...</p>,
 })
-const Header = dynamic(() => import('../components/Header'), {
+const Header = dynamic(() => import('../../components/old/components/Header'), {
   loading: () => <p>Loading...</p>,
 })
 export default function TermsAndConditions() {

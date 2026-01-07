@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { BiChevronDown, BiTime } from 'react-icons/bi';
 import Head from 'next/head';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
-import CustomImage from '../components/CustomImage';
+import CustomImage from '../../components/old/components/CustomImage';
 import useSWRInfinite from "swr/infinite";
 
 const fetcher = (url: string) => fetch(url,).then((res) => res.json()).then((res) => res?.data)

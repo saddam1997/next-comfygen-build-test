@@ -3,8 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowhitepaper.json";
 
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -12,50 +12,50 @@ const loader = () => (
 
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
-const ServicesSec = dynamic(() => import("../Newcomponet/SectionCompoent/ServicesSec"),
+const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
-const CallToAction = dynamic(() => import("../Newcomponet/SectionCompoent/CallToAction"),
+const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 )
 
 const TechStack = dynamic(
-  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 )
 
 
 
 const WhyChoose = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 )
 
 const HireDeveloper = dynamic(
-  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 )
 
 
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 )
 
@@ -69,7 +69,7 @@ const Faq = dynamic(
 
 
 
-import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
+import ConsultancyApproach from "../../components/Newcomponet/SectionCompoent/ConsultancyApproach"
 
 
 

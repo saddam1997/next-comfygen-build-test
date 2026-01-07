@@ -6,12 +6,12 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 
-import Header from '../../Newcomponet/layout/Header';
+import Header from '../../../components/Newcomponet/layout/Header';
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
-const TechnologyStack = dynamic(() => import("../../Newcomponet/portfolio/TechnologyStack"),
+const TechnologyStack = dynamic(() => import("../../../components/Newcomponet/portfolio/TechnologyStack"),
   { loading: loader, ssr: true }
 );
 

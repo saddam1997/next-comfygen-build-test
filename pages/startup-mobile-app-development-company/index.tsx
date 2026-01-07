@@ -7,16 +7,16 @@ import dynamic from 'next/dynamic';
 import styles from './styles.module.css'
 import JSON_DATA from "./json/mobile.json"
 import LazyLoad from 'react-lazy-load';
-import ContactUsButton from '../components/ContactUsButton';
+import ContactUsButton from '../../components/old/components/ContactUsButton';
 
-const HeroSectionForm = dynamic(() => import('../components/HeroSectionForm'), {
+const HeroSectionForm = dynamic(() => import('../../components/old/components/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
-const Header = dynamic(() => import('../components/Header'), {
+const Header = dynamic(() => import('../../components/old/components/Header'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
-const TalkExpert = dynamic(() => import('../components/TalkExpert'), {
+const TalkExpert = dynamic(() => import('../../components/old/components/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
@@ -27,10 +27,10 @@ const FaqMobile = dynamic(() => import('./components/FaqMobile'), {
 const HireSection = dynamic(() => import('./components/HireSection'), {
   loading: () => <p>Loading...</p>,
 })
-const AdviceSection = dynamic(() => import('../components/Advice'), {
+const AdviceSection = dynamic(() => import('../../components/old/components/Advice'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../components/ContactFromCenter'), {
+const ContactFromCenter = dynamic(() => import('../../components/old/components/ContactFromCenter'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })

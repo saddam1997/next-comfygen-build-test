@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ContactFrom from "./ContactFrom";
-import SearchCareer from "../../components/SearchCareer";
+import SearchCareer from "../../SearchCareer";
 import { useRouter } from "next/router";
 import { MdArrowOutward } from "react-icons/md";
 

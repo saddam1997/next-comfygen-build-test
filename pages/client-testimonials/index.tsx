@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Head from "next/head";
 
 
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForCompany from "../Newcomponet/comman/HeroSectionForCompany";
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForCompany from "../../components/Newcomponet/comman/HeroSectionForCompany";
 import LazyLoad from "react-lazy-load";
-import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
+import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
 
 
 

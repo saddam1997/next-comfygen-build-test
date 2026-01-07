@@ -21,7 +21,7 @@ function Slider({ projects, heading, description }) {
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, 3000);
     return () => clearInterval(slideInterval);
-  }, [projects.length]);
+  }, [projects]);
 
   return (
     <div className="bg-[#F5F5F9] py-12 px-4">
@@ -40,7 +40,7 @@ function Slider({ projects, heading, description }) {
               className="flex transition-transform duration-500 ease-in-out will-change-transform"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {projects?.map((project: any, index: any) => (
+              {Array.isArray(projects) && projects.length > 0 && projects?.map((project: any, index: any) => (
                 <div key={index} className="w-full flex-shrink-0 py-5">
                   <div className="border rounded-3xl shadow-xl md:p-12 mx-4">
                     <div className="grid md:grid-cols-2 gap-8 items-center">

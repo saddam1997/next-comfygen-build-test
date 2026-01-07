@@ -4,46 +4,46 @@ import Head from 'next/head';
 import JSON_DATA from "./json/ios.json"
 import LazyLoad from 'react-lazy-load';
 import dynamic from "next/dynamic";
-import HeroSectionForAllPages from '../Newcomponet/SectionCompoent/HeroSectionForAllPages';
-import Header from '../Newcomponet/layout/Header';
+import HeroSectionForAllPages from '../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages';
+import Header from '../../components/Newcomponet/layout/Header';
 
 
-const AboutSection = dynamic(() => import('../Newcomponet/SectionCompoent/AboutSection'), {
+const AboutSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/AboutSection'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const ServicesSec = dynamic(() => import('../Newcomponet/SectionCompoent/ServicesSec'), {
+const ServicesSec = dynamic(() => import('../../components/Newcomponet/SectionCompoent/ServicesSec'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const TechStack = dynamic(() => import('../Newcomponet/SectionCompoent/TechStack'), {
+const TechStack = dynamic(() => import('../../components/Newcomponet/SectionCompoent/TechStack'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const ProcessSec = dynamic(() => import('../Newcomponet/SectionCompoent/ProcessSec'), {
+const ProcessSec = dynamic(() => import('../../components/Newcomponet/SectionCompoent/ProcessSec'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const IndustriesServe = dynamic(() => import('../Newcomponet/SectionCompoent/IndustriesServe'), {
+const IndustriesServe = dynamic(() => import('../../components/Newcomponet/SectionCompoent/IndustriesServe'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const WhyChoose = dynamic(() => import('../Newcomponet/SectionCompoent/WhyChooseUs'), {
+const WhyChoose = dynamic(() => import('../../components/Newcomponet/SectionCompoent/WhyChooseUs'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const HireDeveloper = dynamic(() => import('../Newcomponet/SectionCompoent/HireDeveloper'), {
+const HireDeveloper = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HireDeveloper'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
 
-const Faq = dynamic(() => import('../Newcomponet/SectionCompoent/Faq'), {
+const Faq = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Faq'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
