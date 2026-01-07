@@ -25,7 +25,7 @@ function Portfolio({ projects, heading, description }) {
     if (isHovered) return;
     const slideInterval = setInterval(nextSlide, 3000);
     return () => clearInterval(slideInterval);
-  }, [projects.length, isHovered]);
+  }, [projects, isHovered]);
 
   return (
     <div className="bg-[#F5F5F9] py-12 px-4">
@@ -44,7 +44,7 @@ function Portfolio({ projects, heading, description }) {
               className="flex transition-transform duration-500 ease-in-out will-change-transform"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {projects?.map((project: any, index: any) => (
+              {Array.isArray(projects) && projects.length > 0 && projects?.map((project: any, index: any) => (
                 <div
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
