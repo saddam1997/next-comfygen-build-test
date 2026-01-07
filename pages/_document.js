@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 const isProduction = process.env.NODE_ENV === "production";
 export default function Document() {
@@ -204,6 +205,12 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+
+        
+        <Script
+          src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+          strategy="lazyOnload"
+        />
       </body>
     </Html>
   );

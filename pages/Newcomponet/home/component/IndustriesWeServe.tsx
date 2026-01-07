@@ -233,7 +233,7 @@ const IndustriesWeServe = ({
                 <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-8">
                     {currentIndustries.map((industry, index) => (
                         <div
-
+                            key={index}
                             className='bg-white  max-w-[573px] rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'
                             onMouseEnter={() => setHoveredCard(index)}
                             onMouseLeave={() => setHoveredCard(null)}

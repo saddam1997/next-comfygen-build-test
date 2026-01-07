@@ -8,57 +8,29 @@ const ContactFrom = dynamic(() => import("../comman/ContactFrom"), { ssr: false 
 
 export default function HeroSection(props: any) {
 
-  const data = props.btnLink;
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+  // const data = props.btnLink;
+  // if (!data) {
+  //   return <div>Loading...</div>;
+  // }
 
-  const [words, setWords] = useState([
-    "Blockchain Development",
-    "AI Development",
-    "Custom Web & Apps",
-  ]);
+  // const [words, setWords] = useState([
+  //   "Blockchain Development",
+  //   "AI Development",
+  //   "Custom Web & Apps",
+  // ]);
 
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [typedText, setTypedText] = useState("");
-  const [isDesktop, setIsDesktop] = useState(false);
+  // const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  // const [typedText, setTypedText] = useState("");
+  // const [isDesktop, setIsDesktop] = useState(false);
 
-
-  const [startTyping, setStartTyping] = useState(false);
-
-  useEffect(() => {
-    const id = setTimeout(() => setStartTyping(true), 1500);
-    return () => clearTimeout(id);
-  }, []);
-
-  useEffect(() => {
-    if (!startTyping) return;
-
-    const word = words[currentWordIndex];
-    const timeout = setTimeout(() => {
-      setTypedText(word.substring(0, typedText.length + 1));
-    }, 100);
-
-    if (typedText === word) {
-      setTimeout(() => {
-        setCurrentWordIndex((currentWordIndex + 1) % words.length);
-        setTypedText("");
-      }, 1000);
-    }
-
-    return () => clearTimeout(timeout);
-  }, [startTyping, currentWordIndex, typedText]);
-
-
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const checkScreen = () => setIsDesktop(window.innerWidth > 1140);
-      checkScreen();
-      window.addEventListener("resize", checkScreen);
-      return () => window.removeEventListener("resize", checkScreen);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const checkScreen = () => setIsDesktop(window.innerWidth > 1140);
+  //     checkScreen();
+  //     window.addEventListener("resize", checkScreen);
+  //     return () => window.removeEventListener("resize", checkScreen);
+  //   }
+  // }, []);
 
   // useEffect(() => {
   //   const word = words[currentWordIndex];
@@ -99,23 +71,11 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className="relative min-h-[100vh] lg:min-h-[720px] flex flex-col justify-center items-center"
-      // className="relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full"
+      className="relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full"
       itemScope
       itemType="https://schema.org/WebPage"
     >
-      <div className="absolute inset-0 h-[100vh] lg:h-[720px]">
-        <Image
-          src={props.bgImage || "/landing-hero-img.webp"}
-          alt="Comfygen Hero Section"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
-      {/* <Image
+      <Image
         src={props.bgImage || "/landing-hero-img.webp"}
         alt="Comfygen - Web & Mobile App Development Company"
         fill
@@ -123,15 +83,15 @@ export default function HeroSection(props: any) {
         fetchPriority="high"
         sizes="100vw"
         className="object-cover object-center -z-10"
-      /> */}
+      />
 
-      <div className="flex z-10 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
           <div className="space-y-4">
             {props.isHome ? (
               <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
                 <span className="xl:text-4xl md:text-2xl text-2xl font-medium">
-                  {startTyping ? typedText : "Blockchain Development"}
+                  {"Blockchain Development"}
                 </span>
                 <br />
                 <b className="font-bold text-white">
