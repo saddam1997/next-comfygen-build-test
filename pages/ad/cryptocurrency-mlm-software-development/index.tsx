@@ -7,24 +7,24 @@ import { BsArrowRight } from "react-icons/bs";
 import { RiCustomerServiceLine } from "react-icons/ri";
 
 import Link from "next/link";
-const FaqSection = dynamic(() => import('../../Newcomponet/SectionCompoent/Faq'), {
+const FaqSection = dynamic(() => import('../../../components/Newcomponet/SectionCompoent/Faq'), {
   loading: () => <p>Loading...</p>,
 })
-const ModusSection = dynamic(() => import('../../Newcomponet/ad/ModusSectionNew'), {
+const ModusSection = dynamic(() => import('../../../components/Newcomponet/ad/ModusSectionNew'), {
   loading: () => <p>Loading...</p>,
 })
 
 
-const TalkExpert = dynamic(() => import('../../Newcomponet/ad/TalkExpert'), {
+const TalkExpert = dynamic(() => import('../../../components/Newcomponet/ad/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
 
-const WhyChoose = dynamic(() => import('../../Newcomponet/ad/WhyChoose'), {
+const WhyChoose = dynamic(() => import('../../../components/Newcomponet/ad/WhyChoose'), {
   loading: () => <p>Loading...</p>,
 })
 
-const HireSection = dynamic(() => import("../../Newcomponet/ad/HireSection"), {
+const HireSection = dynamic(() => import("../../../components/Newcomponet/ad/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
 

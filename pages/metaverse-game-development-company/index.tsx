@@ -4,23 +4,23 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 import Link from "next/link";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import ProcessSec from "../components/ProcessSec";
+import WhyChoose from "../../components/old/components/WhyChooseUs";
+import AboutSection from "../../components/old/components/AboutSection";
+import ServicesSec from "../../components/old/components/ServicesSec";
+import Faq from "../../components/old/components/Faq";
+import HireDeveloper from "../../components/old/components/HireDeveloper";
+import ProcessSec from "../../components/old/components/ProcessSec";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import InfoSectionLeft from "../components/InfoSectionLeft";
-import CardItem from "../components/CardItem";
+import InfoSectionLeft from "../../components/old/components/InfoSectionLeft";
+import CardItem from "../../components/old/components/CardItem";
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }

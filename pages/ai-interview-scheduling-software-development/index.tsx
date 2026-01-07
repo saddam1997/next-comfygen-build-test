@@ -5,71 +5,71 @@ import JSON_DATA from "./json/aiinterviewschedulingsoftwaredevelopment.json";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
 
-import Header from "../Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Header from "../../components/Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const CardItem = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CardItem"),
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const CallToAction = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const CoreFeaturesSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const TechStack = dynamic(
-  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const LatestTechnology = dynamic(
-  () => import("../Newcomponet/SectionCompoent/LatestTechnology"),
+  () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const WhyChoose = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const ClientTestimonials = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const HireDeveloper = dynamic(
-  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 

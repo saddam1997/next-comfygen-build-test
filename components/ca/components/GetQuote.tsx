@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import React from 'react'
 
 import { MdOutlineClose } from 'react-icons/md';
-import ContactFrom from '../../components/ContactFrom';
+import ContactFrom from '../../old/components/ContactFrom';
 
 export default function Contact() {
   const [modalOpen, setModalOpen] = useState(false);

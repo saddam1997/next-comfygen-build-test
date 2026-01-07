@@ -5,7 +5,7 @@ import JSON_DATA from "./json/taxi.json";
 import styles from "./styles.module.css";
 import Tech from "./components/tech";
 import SocialTab from "./components/SocialTab";
-import ConnectWithExpertButton from "../components/button/ConnectWithExpertButton";
+import ConnectWithExpertButton from "../../components/old/components/button/ConnectWithExpertButton";
 // import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import { useState } from "react";

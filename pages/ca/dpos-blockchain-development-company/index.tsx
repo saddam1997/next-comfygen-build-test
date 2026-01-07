@@ -4,8 +4,8 @@ import { IconCode, IconCoin, IconEscalator, IconEye, IconHierarchy, IconLink, Ic
 import { IconHeart, } from '@tabler/icons-react';
 import Head from "next/head";
 import JSON_DATA from "./json/dpos.json";
-import BlockchainNav from "../../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockchainNav from "../../../components/Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
 
@@ -14,62 +14,62 @@ const loader = () => (
 );
 
 const AboutSection = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const SolutionSec = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Solution"),
+  () => import("../../../components/Newcomponet/SectionCompoent/Solution"),
   { loading: loader, ssr: true }
 );
 
 const InfoSection = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/InfoSection"),
+  () => import("../../../components/Newcomponet/SectionCompoent/InfoSection"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const Features = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Features"),
+  () => import("../../../components/Newcomponet/SectionCompoent/Features"),
   { loading: loader, ssr: true }
 );
 
 const TechStack = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 );
 
 const ConsultancyApproach = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () => import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
 const WhyChoose = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 );
 
 const HireDeveloper = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 

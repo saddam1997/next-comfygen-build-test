@@ -18,49 +18,49 @@ const poppins = Poppins({
 
 /* Non-blocking scripts */
 const GoogleAnalytics = dynamic(
-  () => import("./Newcomponet/GoogleComponent/GoogleAnalytics"),
-  { ssr: false }
+  () => import("../components/Newcomponet/GoogleComponent/GoogleAnalytics"),
+  { ssr: true }
 );
 
 const GoogleTagManager = dynamic(
-  () => import("./Newcomponet/GoogleComponent/GoogleTagManagerScript"),
-  { ssr: false }
+  () => import("../components/Newcomponet/GoogleComponent/GoogleTagManagerScript"),
+  { ssr: true }
 );
 
 const GoogleTagManagerNoScript = dynamic(
-  () => import("./Newcomponet/GoogleComponent/GoogleTagManagerNoScript"),
-  { ssr: false }
+  () => import("../components/Newcomponet/GoogleComponent/GoogleTagManagerNoScript"),
+  { ssr: true }
 );
 
 const Talkchat = dynamic(
-  () => import("./Newcomponet/layout/Talkchat"),
-  { ssr: false }
+  () => import("../components/Newcomponet/layout/Talkchat"),
+  { ssr: true }
 );
 
 const ContactLinks = dynamic(
-  () => import("./Newcomponet/comman/ContactLinks"),
-  { ssr: false }
+  () => import("../components/Newcomponet/comman/ContactLinks"),
+  { ssr: true }
 );
 
 const GetinTouch = dynamic(
-  () => import("./Newcomponet/SectionCompoent/GetinTouch"),
-  { ssr: false }
+  () => import("../components/Newcomponet/SectionCompoent/GetinTouch"),
+  { ssr: true }
 );
 
 
 const Footer = dynamic(
-  () => import("./Newcomponet/layout/Footer"),
-  { ssr: false }
+  () => import("../components/Newcomponet/layout/Footer"),
+  { ssr: true }
 );
 
 const BlockchainFooter = dynamic(
-  () => import("./Newcomponet/layout/BlockchainFooter/blockchain-Footer"),
-  { ssr: false }
+  () => import("../components/Newcomponet/layout/BlockchainFooter/blockchain-Footer"),
+  { ssr: true }
 );
 
 const EcommerceFooter = dynamic(
-  () => import("./Newcomponet/layout/EcommerceFooter/ecommerce-Footer"),
-  { ssr: false }
+  () => import("../components/Newcomponet/layout/EcommerceFooter/ecommerce-Footer"),
+  { ssr: true }
 );
 
 

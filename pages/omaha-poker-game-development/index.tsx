@@ -10,39 +10,39 @@ import { MdAdd, MdDesktopMac, MdRemove } from "react-icons/md";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import styles from "./styles.module.css";
 import JSON_DATA from "./omaha.json";
-import WhiteNavButton from "../components/button/WhiteNavButton";
-import ConnectWithExpertButton from "../components/button/ConnectWithExpertButton";
-import ConnectWithExpertButtonHoverEffect from "../components/button/ConnectWithExpertButtonHoverEffect";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import WhiteNavButton from "../../components/old/components/button/WhiteNavButton";
+import ConnectWithExpertButton from "../../components/old/components/button/ConnectWithExpertButton";
+import ConnectWithExpertButtonHoverEffect from "../../components/old/components/button/ConnectWithExpertButtonHoverEffect";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import WhyChoosee from "../components/WhyChooseUs";
+import WhyChoosee from "../../components/old/components/WhyChooseUs";
 
 const OmahaServices = dynamic(() => import("./components/OmahaServices"), {
   loading: () => <p>Loading...</p>,
 });
-const HireSection = dynamic(() => import("../components/HireSection"), {
+const HireSection = dynamic(() => import("../../components/old/components/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
-const FaqSection = dynamic(() => import("../components/FaqSection"), {
+const FaqSection = dynamic(() => import("../../components/old/components/FaqSection"), {
   loading: () => <p>Loading...</p>,
 });
-const AdviceSection = dynamic(() => import("../components/Advice"), {
+const AdviceSection = dynamic(() => import("../../components/old/components/Advice"), {
   loading: () => <p>Loading...</p>,
 });
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../components/TalkExpert"), {
+const TalkExpert = dynamic(() => import("../../components/old/components/TalkExpert"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const WhyChoose = dynamic(() => import("../components/WhyChoose"), {
+const WhyChoose = dynamic(() => import("../../components/old/components/WhyChoose"), {
   loading: () => <p>Loading...</p>,
 });
 

@@ -2,18 +2,18 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/defismart.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-import NewSection from "../Newcomponet/comman/NewSection"
-import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
-import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-import Faq from "../Newcomponet/SectionCompoent/Faq"
-import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
+import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../components/Newcomponet/SectionCompoent/AboutSection";
+import NewSection from "../../components/Newcomponet/comman/NewSection"
+import ServicesSec from "../../components/Newcomponet/SectionCompoent/ServicesSec";
+import ModelsSec from "../../components/Newcomponet/SectionCompoent/ModelsSec";
+import ProcessSec from "../../components/Newcomponet/SectionCompoent/ProcessSec";
+import Portfolio from "../../components/Newcomponet/SectionCompoent/Portfolio";
+import WhyChoosee from "../../components/Newcomponet/SectionCompoent/WhyChooseUs";
+import CallToAction from "../../components/Newcomponet/SectionCompoent/CallToAction";
+import Faq from "../../components/Newcomponet/SectionCompoent/Faq"
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 const Process = [
   {

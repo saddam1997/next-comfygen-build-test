@@ -1,5 +1,5 @@
 
-import MobileNav from "../../components/MobileNav";
+import MobileNav from "../../../components/old/components/MobileNav";
 import DesktopNav from "./DesktopNav";
 
 export default function Header(props: any) {

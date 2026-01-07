@@ -4,8 +4,8 @@ import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
-import Header from "../../Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Header from "../../../components/Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -13,38 +13,38 @@ const loader = () => (
 
 
 const ServicesSec = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 
 const TechStack = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 );
 
 const IndustriesServe = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/IndustriesServe"),
+  () => import("../../../components/Newcomponet/SectionCompoent/IndustriesServe"),
   { loading: loader, ssr: true }
 );
 
 const WhyChoose = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 );
 
 const HireDeveloper = dynamic(
-  () => import("../../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 );
 

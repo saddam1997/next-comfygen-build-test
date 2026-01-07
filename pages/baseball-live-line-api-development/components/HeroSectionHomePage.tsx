@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
-import ContactFrom from "../../components/ContactFrom";
+import ContactFrom from "../../../components/old/components/ContactFrom";
 
 
 export default function HeroSection(props: any) {

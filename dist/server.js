@@ -25,7 +25,7 @@ const http_1 = require("http");
 const url_1 = require("url");
 const next_1 = __importDefault(require("next"));
 const compression_1 = __importDefault(require("compression"));
-const port = parseInt(process.env.PORT || '3050', 10);
+const port = parseInt(process.env.PORT || '3000', 10);
 const dev = process.env.NODE_ENV !== 'production';
 const app = (0, next_1.default)({ dev });
 const handle = app.getRequestHandler();

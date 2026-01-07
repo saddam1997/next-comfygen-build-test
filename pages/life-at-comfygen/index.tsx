@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Header from "../Newcomponet/layout/Header";
+import Header from "../../components/Newcomponet/layout/Header";
 import styles from './styles.module.css'
 export default function lifeatcompany() {
 

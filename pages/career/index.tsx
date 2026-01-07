@@ -4,9 +4,9 @@ import Head from "next/head";
 import JSON_DATA from "./json/career.json"
 import LazyLoad from "react-lazy-load";
 
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForCompany from "../Newcomponet/comman/HeroSectionForCompany";
-import PositionSec from "../Newcomponet/career/PositionSec";
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForCompany from "../../components/Newcomponet/comman/HeroSectionForCompany";
+import PositionSec from "../../components/Newcomponet/career/PositionSec";
 
 export default function career(props:any) {
   let { initialData } = props;

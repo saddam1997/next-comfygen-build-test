@@ -4,7 +4,7 @@ import Head from "next/head";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
-import Header from '../../Newcomponet/layout/Header';
+import Header from '../../../components/Newcomponet/layout/Header';
 const benefitSections = [
   {
     index: 1,

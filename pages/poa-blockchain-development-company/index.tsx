@@ -4,8 +4,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./poa.json";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
 const loader = () => (
@@ -13,37 +13,37 @@ const loader = () => (
 );
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 const InfoSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
   { loading: loader, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const CallToAction = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
 const WhyChoose = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 

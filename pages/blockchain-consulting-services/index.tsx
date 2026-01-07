@@ -17,56 +17,56 @@ import {
 } from "@tabler/icons-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const ProcessSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ProcessSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const SolutionSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Solution"),
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const CallToAction = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const IndustriesServe = dynamic(
-  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const HireDeveloper = dynamic(
-  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const InfoSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
@@ -76,7 +76,7 @@ const GuidSectionBlockchain = dynamic(
 );
 
 const ClientTestimonials = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ClientTestimonials"),
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 

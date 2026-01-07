@@ -5,8 +5,8 @@ import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import AboutSection from "../../components/Newcomponet/SectionCompoent/AboutSection";
 
 
 const loader = () => (
@@ -14,52 +14,52 @@ const loader = () => (
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const SolutionSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Solution"),
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
   { loading: loader, ssr: true }
 );
 
 const ConsultancyApproach = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
 const TechStack = dynamic(
-  () => import("../Newcomponet/SectionCompoent/TechStack"),
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const IndustriesServe = dynamic(
-  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
   { loading: loader, ssr: true }
 );
 
 const WhyChoose = dynamic(
-  () => import("../Newcomponet/SectionCompoent/WhyChooseUs"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
 );
 
 const HireDeveloper = dynamic(
-  () => import("../Newcomponet/SectionCompoent/HireDeveloper"),
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
 );
 
 const CallToAction = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 
@@ -93,14 +93,14 @@ import {
   IconSettings,
   IconBell,
 } from "@tabler/icons-react";
-import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 
 
 
 
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }

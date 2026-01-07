@@ -3,25 +3,25 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
-import Faq from "../components/Faq";
-import HireDeveloper from "../components/HireDeveloper";
-import CardItem from "../components/CardItem";
-import IndustriesServe from "../components/IndustriesServe";
-import ProcessSec from "../components/ProcessSec";
-import ModelsSec from "../components/ModelsSec";
-import ConsultancyApproach from "../components/ConsultancyApproach";
-import AboutSection from "../components/AboutSection";
-import ServicesSec from "../components/ServicesSec";
-const Header = dynamic(() => import("../components/Header"), {
+import WhyChoose from "../../components/old/components/WhyChooseUs";
+import Faq from "../../components/old/components/Faq";
+import HireDeveloper from "../../components/old/components/HireDeveloper";
+import CardItem from "../../components/old/components/CardItem";
+import IndustriesServe from "../../components/old/components/IndustriesServe";
+import ProcessSec from "../../components/old/components/ProcessSec";
+import ModelsSec from "../../components/old/components/ModelsSec";
+import ConsultancyApproach from "../../components/old/components/ConsultancyApproach";
+import AboutSection from "../../components/old/components/AboutSection";
+import ServicesSec from "../../components/old/components/ServicesSec";
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
 
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }

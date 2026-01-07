@@ -8,25 +8,25 @@ import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 
-import Header from "../Newcomponet/layout/Header"
-import HeroSectionForCompany from '../Newcomponet/comman/HeroSectionForCompany';
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionForCompany from '../../components/Newcomponet/comman/HeroSectionForCompany';
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 const IndustriesServe = dynamic(
-  () => import("../Newcomponet/SectionCompoent/IndustriesServe"),
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
   { loading: loader, ssr: true }
 );
 
 const WhycomfygenSection = dynamic(
-  () => import("../Newcomponet/about/WhycomfygenSection"),
+  () => import("../../components/Newcomponet/about/WhycomfygenSection"),
   { loading: loader, ssr: true }
 );
 

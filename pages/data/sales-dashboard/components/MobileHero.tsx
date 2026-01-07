@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import ContactFrom from "../../../components/ContactFrom";
+import ContactFrom from "../../../../components/old/components/ContactFrom";
 import { BsMicrosoftTeams } from "react-icons/bs";
 
 export default function MobileHero(props: any) {

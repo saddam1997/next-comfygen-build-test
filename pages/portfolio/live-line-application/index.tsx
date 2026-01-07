@@ -9,8 +9,8 @@ import JSON_DATA from "./live-line-application.json"
 import { BsArrowRight } from 'react-icons/bs';
 
 
-import Header from '../../Newcomponet/layout/Header';
-const TechnologyStack = dynamic(() => import('../../Newcomponet/portfolio/TechnologyStack'), {
+import Header from '../../../components/Newcomponet/layout/Header';
+const TechnologyStack = dynamic(() => import('../../../components/Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 });
 

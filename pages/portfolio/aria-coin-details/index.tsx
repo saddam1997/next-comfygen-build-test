@@ -6,8 +6,8 @@ import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
 import JSON_DATA from "./aria.json"
 
-import Header from '../../Newcomponet/layout/Header';
-import TechnologyStack from '../../Newcomponet/portfolio/TechnologyStack';
+import Header from '../../../components/Newcomponet/layout/Header';
+import TechnologyStack from '../../../components/Newcomponet/portfolio/TechnologyStack';
 
 
 

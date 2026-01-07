@@ -3,10 +3,10 @@ import dynamic from 'next/dynamic';
 
 // Dynamic imports for components
 const componentsMap: { [key: string]: any } = {
-  AdviceSection: dynamic(() => import('../components/Advice')),
-  ConnectWithExpertButtonHoverEffect: dynamic(() => import('../components/button/ConnectWithExpertButtonHoverEffect')),
-  TalkExpert: dynamic(() => import('../components/TalkExpert')),
-  WhyChoosee: dynamic(() => import('../components/WhyChooseUs')),
+  AdviceSection: dynamic(() => import('../../components/old/components/Advice')),
+  ConnectWithExpertButtonHoverEffect: dynamic(() => import('../../components/old/components/button/ConnectWithExpertButtonHoverEffect')),
+  TalkExpert: dynamic(() => import('../../components/old/components/TalkExpert')),
+  WhyChoosee: dynamic(() => import('../../components/old/components/WhyChooseUs')),
 };
 
 const Post = ({ newsDetails, dynamicComponents }: any) => {

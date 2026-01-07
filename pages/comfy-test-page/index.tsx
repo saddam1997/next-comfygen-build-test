@@ -2,19 +2,19 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import Header from "../Newcomponet/home/Header";
-import Herosection from "../Newcomponet/home/Herosection";
-import Aboutsection from "../Newcomponet/home/component/Aboutsection";
-import Services from "../Newcomponet/home/component/Services";
-import Portfolios from "../Newcomponet/home/component/Portfolios";
-import IndustriesWeServe from "../Newcomponet/home/component/IndustriesWeServe";
-import Calltoaction from "../Newcomponet/home/component/Calltoaction";
-import DevelopmentProcess from "../Newcomponet/home/component/DevelopmentProcess";
-import TechStacks from "../Newcomponet/home/component/TechStacks";
-import WhyChooseUs from "../Newcomponet/home/component/WhyChooseUs";
-import ClientStories from "../Newcomponet/home/component/ClientStories";
-import HireDeveloper from "../Newcomponet/home/component/HireDeveloper";
-import ClientTestimonials from "../Newcomponet/home/component/ClientTestimonials";
+import Header from "../../components/Newcomponet/home/Header";
+import Herosection from "../../components/Newcomponet/home/Herosection";
+import Aboutsection from "../../components/Newcomponet/home/component/Aboutsection";
+import Services from "../../components/Newcomponet/home/component/Services";
+import Portfolios from "../../components/Newcomponet/home/component/Portfolios";
+import IndustriesWeServe from "../../components/Newcomponet/home/component/IndustriesWeServe";
+import Calltoaction from "../../components/Newcomponet/home/component/Calltoaction";
+import DevelopmentProcess from "../../components/Newcomponet/home/component/DevelopmentProcess";
+import TechStacks from "../../components/Newcomponet/home/component/TechStacks";
+import WhyChooseUs from "../../components/Newcomponet/home/component/WhyChooseUs";
+import ClientStories from "../../components/Newcomponet/home/component/ClientStories";
+import HireDeveloper from "../../components/Newcomponet/home/component/HireDeveloper";
+import ClientTestimonials from "../../components/Newcomponet/home/component/ClientTestimonials";
 
 
 

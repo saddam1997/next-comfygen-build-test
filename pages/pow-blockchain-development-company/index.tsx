@@ -3,53 +3,53 @@ import React, { useState } from "react";
 import Head from "next/head";
 import { IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode, IconSettings, } from '@tabler/icons-react';
 import JSON_DATA from "./json/pow.json";
-import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
-import BlockChainHeader from "../Newcomponet/layout/BlockChainHeader";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
 const AboutSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/AboutSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
 const InfoSection = dynamic(
-  () => import("../Newcomponet/SectionCompoent/InfoSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
   { loading: loader, ssr: true }
 );
 
 const ServicesSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ServicesSec"),
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
 const SolutionSec = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Solution"),
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
   { loading: loader, ssr: true }
 );
 
 const Portfolio = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Portfolio"),
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
 
 const ConsultancyApproach = dynamic(
-  () => import("../Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
 const CallToAction = dynamic(
-  () => import("../Newcomponet/SectionCompoent/CallToAction"),
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
 const Faq = dynamic(
-  () => import("../Newcomponet/SectionCompoent/Faq"),
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
 

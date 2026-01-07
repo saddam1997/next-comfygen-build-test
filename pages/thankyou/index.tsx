@@ -7,7 +7,7 @@ import Image from "next/image";
 import { BsArrowRight } from 'react-icons/bs';
 import { MdOutlineArrowForwardIos, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-const Header = dynamic(() => import('../components/Header'), {
+const Header = dynamic(() => import('../../components/old/components/Header'), {
   loading: () => <p>Loading...</p>,
 })
 

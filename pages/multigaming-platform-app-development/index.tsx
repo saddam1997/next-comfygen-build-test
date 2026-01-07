@@ -7,28 +7,28 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import JSON_DATA from "./json/multigaming.json";
 import styles from "./styles.module.css";
-import HeroSectionForAllPages from "../components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../components/WhyChooseUs";
+import WhyChoose from "../../components/old/components/WhyChooseUs";
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
-const Advice = dynamic(() => import("../components/Advice"), {
+const Advice = dynamic(() => import("../../components/old/components/Advice"), {
   loading: () => <p>Loading...</p>,
 });
 
 const WhycomfygenSection = dynamic(
-  () => import("../components/WhycomfygenSection"),
+  () => import("../../components/old/components/WhycomfygenSection"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../components/HireSection"), {
+const HireSection = dynamic(() => import("../../components/old/components/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
-  () => import("../components/ContactFromCenter"),
+  () => import("../../components/old/components/ContactFromCenter"),
   {
     loading: () => <p>Loading...</p>,
   }
