@@ -5,9 +5,8 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
-import Footer from "./Newcomponet/layout/Footer";
-import BlockchainFooter from "./Newcomponet/layout/BlockchainFooter/blockchain-Footer";
-import EcommerceFooter from "./Newcomponet/layout/EcommerceFooter/ecommerce-Footer";
+
+
 import footerConfig from "../pageRoute/pagedataroute.json";
 import { FaChevronUp } from "react-icons/fa6";
 
@@ -47,6 +46,25 @@ const GetinTouch = dynamic(
   () => import("./Newcomponet/SectionCompoent/GetinTouch"),
   { ssr: false }
 );
+
+
+const Footer = dynamic(
+  () => import("./Newcomponet/layout/Footer"),
+  { ssr: false }
+);
+
+const BlockchainFooter = dynamic(
+  () => import("./Newcomponet/layout/BlockchainFooter/blockchain-Footer"),
+  { ssr: false }
+);
+
+const EcommerceFooter = dynamic(
+  () => import("./Newcomponet/layout/EcommerceFooter/ecommerce-Footer"),
+  { ssr: false }
+);
+
+
+
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

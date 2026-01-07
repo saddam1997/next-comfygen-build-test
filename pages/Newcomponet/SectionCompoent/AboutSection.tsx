@@ -30,15 +30,17 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="relative">
-              <CommonImage
-                src={imageSrc}
-                alt={heading}
-                width={600}
-                height={340}
-                priorityLoad={false}
-                blurDataURL="/blur-placeholder.webp"
-                className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
-              />
+
+            <Image
+              src={imageSrc}
+              alt="about"
+              width={600}
+              height={340}
+              fetchPriority="high"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="object-contain w-full h-full object-center bg-no-repeat"
+            />
 
           </div>
           <div>

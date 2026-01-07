@@ -307,37 +307,7 @@ export default function Home(props: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
         />
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Comfygen Technologies",
-              "url": "https://www.comfygen.com/",
-              "logo": "https://www.comfygen.com/svg/Logo1.svg",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Sales",
-                "contactOption": "TollFree",
-                "telephone": "+91-9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": [
-                  "IN", "US", "CA", "GB"],
-                "availableLanguage": ["English", "Hindi"]
-              },
-              "sameAs": [
-                "https://www.facebook.com/comfygen.technologies/",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies/",
-                "https://youtube.com/@comfygentechnologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-              ]
 
-            }),
-          }}
-
-        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -361,7 +331,7 @@ export default function Home(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="/landing-hero.jpg"
+            bgImage="/landing-hero-img.webp"
 
           />
         </div>

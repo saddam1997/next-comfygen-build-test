@@ -71,7 +71,8 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className="relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full"
+    className="relative min-h-[100svh] lg:min-h-[650px] flex items-center sm:bg-center sm:bg-transparent bg-[#5951cd]"
+      // className="relative bg-no-repeat bg-cover bg-left sm:bg-center bg-[#5951cd] sm:bg-transparent h-screen flex flex-col justify-center items-center lg:h-full"
       itemScope
       itemType="https://schema.org/WebPage"
     >
@@ -81,11 +82,11 @@ export default function HeroSection(props: any) {
         fill
         priority
         fetchPriority="high"
-        sizes="100vw"
-        className="object-cover object-center -z-10"
+        quality={80}
+        sizes="(max-width: 768px) 100vw, 1200px"
+        className="object-cover object-center opacity-0 md:opacity-100"
       />
-
-      <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+      <div className="flex z-10 flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="xl:w-[58%] lg:w-[65%] w-full">
           <div className="space-y-4">
             {props.isHome ? (
