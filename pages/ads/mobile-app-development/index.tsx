@@ -1,5 +1,4 @@
 
-import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
@@ -132,11 +131,6 @@ export default function Mobile(props: any) {
   };
 
 
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init();
-    });
-  }, []);
 
   const Process = [
     {

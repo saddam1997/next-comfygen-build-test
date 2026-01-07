@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import { useEffect } from "react";
 import React from 'react'
 import moment from 'moment';
@@ -33,13 +32,7 @@ export default function Category() {
   const isLoadingInitialData = !data && !error;
   const isLoadingMore =
     isLoadingInitialData ||
-    (size > 0 && data && typeof data[size - 1] === "undefined");
-
-
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
+    (size > 0 && data && typeof data[size - 1] === "undefined")
   return (
     // <>
     <div className='overflow-hidden'>
