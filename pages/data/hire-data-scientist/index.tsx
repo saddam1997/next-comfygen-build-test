@@ -55,10 +55,10 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const Features = dynamic(
-  () => import("./components/NewFeatures"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+// const Features = dynamic(
+//   () => import("./components/NewFeatures"),
+//   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+// );
 
 
 
@@ -543,7 +543,7 @@ export default function Mobile(props: any) {
         />
 
 
-        <Features />
+        {/* <Features /> */}
 
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

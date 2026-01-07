@@ -2,19 +2,16 @@ import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
+
 import HeroSectionHomePage from "./Newcomponet/SectionCompoent/HeroSectionHomePage";
+import Header from "./Newcomponet/layout/Header";
 
 
-/* ======================
-   CRITICAL (Above-the-fold)
-====================== */
-const Header = dynamic(() => import("./Newcomponet/layout/Header"), {
-  ssr: false,
-});
 
 /* ======================
-   SEO IMPORTANT (SSR)
+   BELOW THE FOLD (No SSR)
 ====================== */
+
 const AboutSection = dynamic(
   () => import("./Newcomponet/SectionCompoent/AboutSection"),
   { ssr: true }
@@ -25,62 +22,63 @@ const ServicesSec = dynamic(
   { ssr: true }
 );
 
-/* ======================
-   BELOW THE FOLD (No SSR)
-====================== */
+
+
 const Portfolio = dynamic(
   () => import("./Newcomponet/SectionCompoent/Portfolio"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const CallToAction = dynamic(
   () => import("./Newcomponet/SectionCompoent/CallToAction"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const IndustriesServe = dynamic(
   () => import("./Newcomponet/SectionCompoent/IndustriesServe"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const ProcessSec = dynamic(
   () => import("./Newcomponet/SectionCompoent/ProcessSec"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("./Newcomponet/SectionCompoent/TechStack"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const WhyChoose = dynamic(
   () => import("./Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const ClientStories = dynamic(
   () => import("./Newcomponet/SectionCompoent/ClientStories"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const HireDeveloper = dynamic(
   () => import("./Newcomponet/SectionCompoent/HireDeveloper"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const ClientTestimonials = dynamic(
   () => import("./Newcomponet/SectionCompoent/ClientTestimonials"),
-  { ssr: false }
+  { ssr: true }
 );
 
 const Faq = dynamic(
   () => import("./Newcomponet/SectionCompoent/Faq"),
-  { ssr: false }
+  { ssr: true }
+);
+const BlogSection = dynamic(
+  () => import("./Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
 );
 
-const BlogSection = dynamic(() => import("./Newcomponet/SectionCompoent/BlogSection"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-});
+
 
 
 
@@ -362,7 +360,7 @@ export default function Home(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="/landing-hero.jpg"
+            bgImage="/landing-hero-img.webp"
 
           />
         </div>
@@ -484,7 +482,6 @@ export default function Home(props: any) {
 
 
 export async function getStaticProps() {
-  console.log("process.env.URL", process.env.URL)
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
 

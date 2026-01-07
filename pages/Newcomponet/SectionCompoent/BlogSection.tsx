@@ -29,15 +29,11 @@ export default function BlogSection(props:any) {
                       <div className="object-cover w-full overflow-hidden">
                         <CustomImage
                           className="rounded-xl"
-                          width={1280}
-                          height={720}
                           src={
                             element.og_image
                               ? element.og_image
                               : "https://www.comfygen.com/images/defaultImage.png"
                           }
-                          loader={uploadcareLoader}
-                          unoptimized={true}
                           alt="imgs"
                         />
                       </div>
