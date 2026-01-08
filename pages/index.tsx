@@ -236,9 +236,6 @@ export default function Home(props: any) {
 
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="canonical" href="https://www.comfygen.com" />
-
-
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />

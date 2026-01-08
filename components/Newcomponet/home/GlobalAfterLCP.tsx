@@ -15,11 +15,12 @@ import footerConfig from "../../../pageRoute/pagedataroute.json";
 
 
 
-
 const GetinTouch = dynamic(
-    () => import("../../ca/components/Getintouch"),
+    () => import("../SectionCompoent/GetinTouch"),
     { ssr: false }
 );
+
+
 
 const Footer = dynamic(
     () => import("../layout/Footer"),

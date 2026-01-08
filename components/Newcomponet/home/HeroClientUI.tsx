@@ -37,12 +37,14 @@ export default function HeroClientUI(props: any) {
             loading="lazy"
           />
 
-          <div className="absolute inset-0 bg-black/20" />
+          {/* <div className="absolute inset-0 bg-black/90" /> */}
         </>
       )}
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div
+        className="absolute inset-0 bg-black/60 z-10 pointer-events-none"
+        aria-hidden="true"
+      />
 
       {/* CTA */}
       <div className="absolute flex items-center px-8 z-20 top-[65%] left-[8%] bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E]
