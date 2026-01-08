@@ -38,7 +38,9 @@ export default function Portfolios({ heading, description }: any) {
         width={700}
         height={400}
         alt=""
-        className="w-full h-full object-cover rounded-xl md:rounded-2xl"
+        pointer-events-none
+        className="w-full h-full object-cover rounded-xl md:rounded-2xl pointer-events-none"
+        loading="lazy"
       />
     </div>
   ));

@@ -12,8 +12,8 @@ const Calltoaction = () => {
         src="/call-to-action.png"
         alt="Call to Action Background"
         fill
-        priority
         className="h-full w-full object-cover"
+        loading="lazy"
       />
 
       {/* Dark Overlay */}

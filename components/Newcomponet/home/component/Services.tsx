@@ -55,7 +55,8 @@ export default function Services({ heading = "", description = "", serviceskey =
                                     height={340}
                                     src="/imageservices.png"
                                     alt=""
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain pointer-events-none"
+                                    loading="lazy"
                                 />
                             </div>
 

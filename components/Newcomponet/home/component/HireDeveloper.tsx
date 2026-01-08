@@ -18,8 +18,8 @@ const HireDeveloper = ({ heading, description, points }: HireDeveloper) => {
                 src="/hire-developer.png"
                 alt="Call to Action Background"
                 fill
-                priority
                 className="h-full w-full object-cover"
+                loading="lazy"
             />
 
             {/* Dark Overlay */}

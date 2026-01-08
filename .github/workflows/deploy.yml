@@ -22,24 +22,6 @@ jobs:
           port:  ${{ secrets.GENLINUX19092023_PORT }}
           script: |
 
-
-
-            # ----------------------------
-            # Load NVM explicitly
-            # ----------------------------
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-            echo "NVM version:"
-            nvm --version
-
-            # ----------------------------
-            # Use Node.js v20
-            # ----------------------------
-            nvm install 20
-            nvm use 20
-            nvm alias default 20
-
             echo "Node version:"
             node -v
             echo "NPM version:"
@@ -49,9 +31,6 @@ jobs:
             sudo chmod 600 /swapfile2
             sudo mkswap /swapfile2
             sudo swapon /swapfile2
-
-            # Use absolute path to Node.js v18
-            export PATH="/root/.nvm/versions/node/v18.19.0/bin:$PATH"
             
             # Verify Node.js version
             echo "Using Node.js version: $(node -v)"
@@ -64,12 +43,7 @@ jobs:
             git fetch --all
             git reset --hard origin/newdesign
 
-            # Package Install 
-            # npm i
-
             # Build with extended memory
-            #export NODE_OPTIONS="--max-old-space-size=3072"
-            # npm ci
             NODE_OPTIONS=--max-old-space-size=3072 
             npm run build
 

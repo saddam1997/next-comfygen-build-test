@@ -77,7 +77,7 @@ export default function TechStacks({
                 className="bg-[#050C3A] rounded-xl p-6 flex flex-col items-center justify-center hover:scale-105 transition"
               >
                 <div className="w-14 h-14 mb-4 relative">
-                  <Image src={item.img} alt={item.name} fill className="object-contain" />
+                  <Image loading="lazy" src={item.img} alt={item.name} fill className="object-contain" />
                 </div>
                 <p className="text-white text-sm font-medium">{item.name}</p>
               </div>

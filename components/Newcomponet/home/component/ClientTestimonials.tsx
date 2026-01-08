@@ -103,7 +103,7 @@ export default function ClientTestimonials({
                 >
                   {/* CARD */}
                   <div className="h-full bg-white rounded-xl border border-gray-100 shadow-md p-6 hover:shadow-lg transition">
-                 <Image src="/Vector.png" alt="vector" width={80} height={40} className="object-contain w-6 h-6"/>
+                 <Image loading="lazy" src="/Vector.png" alt="vector" width={80} height={40} className="object-contain w-6 h-6"/>
 
                     {/* STARS */}
                     <div className="flex gap-1 my-1">

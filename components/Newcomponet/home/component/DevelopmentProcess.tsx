@@ -54,7 +54,7 @@ export default function DevelopmentProcess({ heading, description,
               <li className="text-[20px] font-poppins font-medium">Development</li>
               <li className="text-[20px] font-poppins font-medium">Prototype</li>
             </ul>
-            <Image className="h-full w-full bg-contain" src={"/Dev-Process.svg"} alt="" width={640} height={460} />
+            <Image loading="lazy" className="h-full w-full bg-contain" src={"/Dev-Process.svg"} alt="" width={640} height={460} />
             <ul className="flex justify-between container mx-auto  py-2">
 
               <li className="text-[20px] font-poppins font-medium">Requirement Gathering</li>

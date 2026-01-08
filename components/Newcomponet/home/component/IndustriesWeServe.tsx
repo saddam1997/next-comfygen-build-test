@@ -222,6 +222,7 @@ const IndustriesWeServe = ({
                                         src={industry.imgSrc}
                                         alt={industry.title}
                                         className="rounded-[18px]"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

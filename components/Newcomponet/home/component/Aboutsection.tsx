@@ -31,7 +31,8 @@ export default function Aboutsection({
                                 width={340}
                                 src="/Frame 253.png"
                                 alt="Developer working on applications"
-                                className="w-full h-full"
+                                className="w-full h-full pointer-events-none"
+                                loading="lazy"
                             />
                         </div>
 

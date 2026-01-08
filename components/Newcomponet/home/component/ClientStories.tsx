@@ -208,6 +208,7 @@ export default function ClientStories() {
                                         src={testimonials[currentTestimonial].thumbnail}
                                         className="md:w-full lg:h-[400px]  object-contain min-w-full"
                                         alt="thumbnail"
+                                        loading="lazy"
                                     />
 
                                     <div className="absolute inset-0 flex items-center justify-center">
@@ -222,6 +223,7 @@ export default function ClientStories() {
                                         }?autoplay=1`}
                                     className="w-full h-[400px]"
                                     allow="autoplay"
+                                    loading="lazy"
                                 ></iframe>
                             ) : (
                                 <div className="relative">
@@ -272,15 +274,15 @@ export default function ClientStories() {
                                 </div>
                             )}
                         </div>
-                        
-                          <div
+
+                        <div
                             className="absolute -left-8 bottom-16 h-24 w-24 bg-yellow-400/70 rounded-full text-white text-3xl"
-                            // onClick={() => {
-                            //     setOpenModal(false);
-                            //     setModalPlay(false);
-                            // }}
+                        // onClick={() => {
+                        //     setOpenModal(false);
+                        //     setModalPlay(false);
+                        // }}
                         >
-                           
+
                         </div>
                         {/* Navigation */}
                         <div className="flex justify-center gap-4 mt-6">
@@ -333,7 +335,7 @@ export default function ClientStories() {
                             ✕
                         </button>
 
-                      
+
 
 
 
