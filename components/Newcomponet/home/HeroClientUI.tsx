@@ -24,14 +24,14 @@ export default function HeroClientUI(props: any) {
 
   return (
     <>
-      {/* ✅ BACKGROUND IMAGE */}
-    {/* ✅ IMAGE ONLY AFTER LCP */}
+
       {showImage && (
         <>
           <Image
             src={props.bgImage}
             alt=""
             fill
+            sizes="(max-width: 768px) 100vw, 1200px"
             className="object-cover"
             priority={false}
             loading="lazy"
@@ -45,7 +45,7 @@ export default function HeroClientUI(props: any) {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* CTA */}
-      <div className="absolute flex items-center px-8 z-20 top-[65%] left-[10%] bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E]
+      <div className="absolute flex items-center px-8 z-20 top-[65%] left-[8%] bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E]
           text-white rounded-full shadow-lg gap-4">
         <button
           onClick={props.openModal}
