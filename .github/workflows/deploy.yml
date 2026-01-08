@@ -47,6 +47,7 @@ jobs:
             # Build with extended memory
             #export NODE_OPTIONS="--max-old-space-size=3072"
             # npm ci
+            nvm i v20
             NODE_OPTIONS=--max-old-space-size=3072 
             npm run build
 
