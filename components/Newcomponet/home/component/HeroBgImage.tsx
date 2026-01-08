@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroBgImage() {
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-10">
       <Image
         src="/Rectangle 331.png"
         alt=""

@@ -5,9 +5,15 @@ import JSON_DATA from "./index.json";
 
 
 // ✅ ABOVE THE FOLD – SSR (LCP & SEO)
-import Header from "../components/Newcomponet/home/Header";
 import Herosection from "../components/Newcomponet/home/Herosection";
 import LCPGate from "../components/Newcomponet/home/LCPGate";
+
+
+const Header = dynamic(
+  () => import("../components/Newcomponet/home/Header"),
+  { ssr: true }
+);
+
 
 // ❌ BELOW THE FOLD – LAZY LOAD
 const Aboutsection = dynamic(
@@ -361,7 +367,7 @@ export default function Home(props: any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="/landing-hero-img.webp"
+          bgImage="/Rectangle 331.png"
         />
 
 

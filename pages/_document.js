@@ -172,10 +172,7 @@ export default function Document() {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+  
         <meta name="msvalidate.01" content="88C9F762357EB27E860762AE43E1BDF7" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
@@ -205,12 +202,10 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-
-        
-        <Script
+        {/* <Script
           src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
           strategy="lazyOnload"
-        />
+        /> */}
       </body>
     </Html>
   );
