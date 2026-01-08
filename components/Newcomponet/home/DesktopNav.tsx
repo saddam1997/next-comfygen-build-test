@@ -1173,6 +1173,7 @@ export default function DesktopNav(props: any) {
               alt="comfygen-logo"
               width={244}
               height={51}
+              loading="lazy"
 
             />
           </Link> :
@@ -1188,6 +1189,7 @@ export default function DesktopNav(props: any) {
                 alt="comfygen-logo"
                 width={244}
                 height={51}
+                loading="lazy"
 
               />
             </Link>
@@ -1255,6 +1257,7 @@ export default function DesktopNav(props: any) {
                               alt="mobile-app-development-header-icon"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-2">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1278,6 +1281,7 @@ export default function DesktopNav(props: any) {
                               alt="AI Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1303,6 +1307,7 @@ export default function DesktopNav(props: any) {
                               alt="blockchain-app-dev-header-icon.svg"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1333,6 +1338,7 @@ export default function DesktopNav(props: any) {
                               alt="Coin And Tokens Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1358,6 +1364,7 @@ export default function DesktopNav(props: any) {
                               alt="Full Stack Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1382,6 +1389,7 @@ export default function DesktopNav(props: any) {
                               alt="Hire Dedicated Developers"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1569,6 +1577,7 @@ export default function DesktopNav(props: any) {
                             height={475}
                             width={452}
                             className="w-full"
+                            loading="lazy"
                           />
                           <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
                             <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-base text-white">
@@ -1578,6 +1587,7 @@ export default function DesktopNav(props: any) {
                                 alt=""
                                 height={22}
                                 width={22}
+                                loading="lazy"
                               />
                             </button>
                           </span>
@@ -1628,6 +1638,7 @@ export default function DesktopNav(props: any) {
                               alt="On Demand Mobile App"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-3 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1652,6 +1663,7 @@ export default function DesktopNav(props: any) {
                               alt="Blockchain Solution"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1681,6 +1693,7 @@ export default function DesktopNav(props: any) {
                               alt="Mobile App Solutions"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1704,6 +1717,7 @@ export default function DesktopNav(props: any) {
                               alt="Web3 Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1727,6 +1741,7 @@ export default function DesktopNav(props: any) {
                               alt="Web3 Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -1933,6 +1948,7 @@ export default function DesktopNav(props: any) {
                                 alt=""
                                 height={22}
                                 width={22}
+                                loading="lazy"
                               />
                             </button>
                           </span>
@@ -1984,6 +2000,7 @@ export default function DesktopNav(props: any) {
                               alt="Healthcare App Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-3 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2007,6 +2024,7 @@ export default function DesktopNav(props: any) {
                               alt="Web3 Development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2032,6 +2050,7 @@ export default function DesktopNav(props: any) {
                               alt="education-app-development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2056,6 +2075,7 @@ export default function DesktopNav(props: any) {
                               alt="ecommerce-development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2082,6 +2102,7 @@ export default function DesktopNav(props: any) {
                               alt="dating-app-development"
                               height={40}
                               width={40}
+                              loading="lazy"
                             />
                             <div className="space-y-4 cursor-pointer">
                               <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2231,6 +2252,7 @@ export default function DesktopNav(props: any) {
                             alt=""
                             height={486}
                             width={511}
+                            loading="lazy"
                           />
                           <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
                             <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
@@ -2240,6 +2262,7 @@ export default function DesktopNav(props: any) {
                                 alt=""
                                 height={22}
                                 width={22}
+                                loading="lazy"
                               />
                             </button>
                           </span>
@@ -2291,6 +2314,7 @@ export default function DesktopNav(props: any) {
                                       alt={name}
                                       height={40}
                                       width={40}
+                                      loading="lazy"
                                     />
                                     <div className="space-y-4 cursor-pointer">
                                       <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2322,6 +2346,7 @@ export default function DesktopNav(props: any) {
                                   alt={name}
                                   height={40}
                                   width={40}
+                                  loading="lazy"
                                 />
                                 <div className="space-y-4 cursor-pointer">
                                   <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2352,6 +2377,7 @@ export default function DesktopNav(props: any) {
                                   alt={name}
                                   height={40}
                                   width={40}
+                                  loading="lazy"
                                 />
                                 <div className="space-y-4 cursor-pointer">
                                   <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2410,6 +2436,7 @@ export default function DesktopNav(props: any) {
                                     alt={name}
                                     height={40}
                                     width={40}
+                                    loading="lazy"
                                   />
                                   <div className="space-y-4 cursor-pointer">
                                     <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2441,6 +2468,7 @@ export default function DesktopNav(props: any) {
                                     alt={name}
                                     height={40}
                                     width={40}
+                                    loading="lazy"
                                   />
                                   <div className="space-y-4 cursor-pointer">
                                     <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -2463,6 +2491,7 @@ export default function DesktopNav(props: any) {
                             alt=""
                             height={486}
                             width={511}
+                            loading="lazy"
                           />
                           <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
                             <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
@@ -2472,6 +2501,7 @@ export default function DesktopNav(props: any) {
                                 alt=""
                                 height={22}
                                 width={22}
+                                loading="lazy"
                               />
                             </button>
                           </span>
@@ -2493,6 +2523,7 @@ export default function DesktopNav(props: any) {
                 alt="button-arrow"
                 height={24}
                 width={24}
+                loading="lazy"
               />
             </span>
           </Link>

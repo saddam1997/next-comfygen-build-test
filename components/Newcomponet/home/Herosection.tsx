@@ -1,89 +1,45 @@
 "use client";
 
-import Header from "./Header";
 import Link from "next/link";
-import Image from "next/image";
 import dynamic from "next/dynamic";
-import { useState, useEffect } from "react";
 import { TbX } from "react-icons/tb";
 
 const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
   ssr: false,
 });
 
+const HeroBgImage = dynamic(
+  () => import("./component/HeroBgImage"),
+  { ssr: false }
+);
+
 export default function Herosection(props: any) {
-  // const words = [
-  //   "Blockchain Development",
-  //   "AI Development",
-  //   "Custom Web & Apps",
-  // ];
-
-  // const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  // const [typedText, setTypedText] = useState("");
-  // const [mounted, setMounted] = useState(false);
-
-  /* Mount check for LCP-safe animation */
-  // useEffect(() => {
-  //   setMounted(true);
-  // }, []);
-
-  // /* Typing animation AFTER first paint */
-  // useEffect(() => {
-  //   if (!mounted) return;
-
-  //   const word = words[currentWordIndex];
-  //   const timeout = setTimeout(() => {
-  //     setTypedText(word.substring(0, typedText.length + 1));
-  //   }, 100);
-
-  //   if (typedText === word) {
-  //     setTimeout(() => {
-  //       setCurrentWordIndex((prev) => (prev + 1) % words.length);
-  //       setTypedText("");
-  //     }, 1000);
-  //   }
-
-  //   return () => clearTimeout(timeout);
-  // }, [typedText, currentWordIndex, mounted]);
-
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* ✅ Optimized Hero Background (LCP FIX) */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/Rectangle 331.png"
-          alt="Hero Background"
-          fill
-          sizes="100vw"
-          className="object-cover  pointer-events-none"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
-
+   <section className="relative min-h-screen overflow-hidden bg-black">
+      {/* ❌ NOT PART OF LCP (Client-only background image) */}
+      <HeroBgImage />
       {/* Header */}
-      <div className="absolute top-0 left-0 right-0 z-20">
+      {/* <div className="absolute top-0 left-0 right-0 z-20">
         <Header />
-      </div>
+      </div> */}
 
-      {/* Hero Content */}
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center min-h-screen py-32 w-10/12 2xl:w-10/12">
+      {/* ✅ HERO CONTENT — THIS IS LCP */}
+      <div className="container mx-auto flex items-center min-h-screen py-32 w-10/12 2xl:w-10/12 relative z-10">
         <div className="xl:w-[58%] lg:w-[65%] w-full space-y-4">
           <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
             <span className="xl:text-4xl md:text-2xl text-2xl font-medium block">
-              {/* {mounted ? typedText : "Blockchain Development"} */}
-              {'Blockchain Development'}
+              Blockchain Development
             </span>
             <span className="block font-bold">
               Solution & Service Provider
             </span>
           </h1>
 
-          <p className="text-sm lg:text-base 2xl:text-lg text-white">
+          <p className="text-sm lg:text-base 2xl:text-lg text-white/90">
             {props.ptag}
           </p>
 
-          <Link href="#" passHref>
+          <Link href="#">
             <button
               onClick={props.openModal}
               className="mt-4 bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E]
@@ -109,7 +65,9 @@ export default function Herosection(props: any) {
         </div>
       </div>
 
-      {/* ✅ Lazy Loaded Modal */}
+    
+
+      {/* Modal */}
       {props.talkToExpertModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
           <div className="bg-white rounded-xl w-11/12 lg:w-8/12 relative">

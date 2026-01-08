@@ -62,6 +62,7 @@ const Form = () => (
                   alt=""
                   height={56}
                   width={55}
+                   loading="lazy"
                 />
                 <div>
                   <span className="text-white text-base flex justify-start">Phone Number</span>
@@ -82,6 +83,7 @@ const Form = () => (
                   alt=""
                   height={56}
                   width={55}
+                   loading="lazy"
                 />
                 <div>
                   <span className="text-white text-base flex justify-start">Email Address</span>
@@ -102,6 +104,7 @@ const Form = () => (
                   alt="site-form"
                   height={56}
                   width={55}
+                   loading="lazy"
                 />
                 <div>
                   <span className="text-white text-base flex justify-start">Site Address</span>
@@ -127,6 +130,7 @@ const Form = () => (
                   alt="Facebook Logo"
                   height={51}
                   width={50}
+                   loading="lazy"
                 />
               </a>
             </button>
@@ -142,6 +146,7 @@ const Form = () => (
                   alt="Instagram Logo"
                   height={51}
                   width={50}
+                   loading="lazy"
                 />
               </a>
             </button>
@@ -157,6 +162,7 @@ const Form = () => (
                   alt="Twitter Logo"
                   height={51}
                   width={50}
+                   loading="lazy"
                 />
               </a>
             </button>
@@ -172,6 +178,7 @@ const Form = () => (
                   alt="LinkedIn Logo"
                   height={51}
                   width={50}
+                   loading="lazy"
                 />
               </a>
             </button>
@@ -195,8 +202,9 @@ const Form = () => (
                         width={50}
                         height={50}
                         quality={50}
-                        priority
+                      
                         className="bg-contain w-28"
+                         loading="lazy"
                       />
                     </div>
                   </div>

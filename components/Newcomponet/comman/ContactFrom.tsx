@@ -426,6 +426,7 @@ class ContactFrom extends Component<{}, any> {
                   alt=""
                   height={24}
                   width={24}
+                   loading="lazy"
                 />
               </button>
             )}

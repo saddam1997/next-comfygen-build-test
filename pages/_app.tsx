@@ -9,6 +9,7 @@ import Head from "next/head";
 
 import footerConfig from "../pageRoute/pagedataroute.json";
 import { FaChevronUp } from "react-icons/fa6";
+import LCPGate from "../components/Newcomponet/home/LCPGate";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -101,41 +102,43 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <main
-        className={`${poppins.className} overflow-hidden ${
-          router.pathname === "/"
+        className={`${poppins.className} overflow-hidden ${router.pathname === "/"
             ? "w-full"
             : "max-w-[1600px] mx-auto"
-        }`}
+          }`}
       >
         <Component {...pageProps} />
 
-        <GetinTouch />
+        <LCPGate>
 
-        {showBlockchainFooter ? (
-          <BlockchainFooter />
-        ) : showEcommerceFooter ? (
-          <EcommerceFooter />
-        ) : !isExcluded ? (
-          <Footer />
-        ) : null}
+          <GetinTouch />
 
-        {/* Scripts */}
-        <GoogleAnalytics />
-        <GoogleTagManager />
-        <GoogleTagManagerNoScript />
-        {!router.asPath.includes("/career") && <Talkchat />}
-        <ContactLinks />
+          {showBlockchainFooter ? (
+            <BlockchainFooter />
+          ) : showEcommerceFooter ? (
+            <EcommerceFooter />
+          ) : !isExcluded ? (
+            <Footer />
+          ) : null}
 
-        {/* Scroll to top */}
-        {showTop && (
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            aria-label="Back to top"
-            className="fixed lg:bottom-10 bottom-[6rem] left-10 z-40 bg-[#5556D1] text-white rounded-full p-3"
-          >
-            <FaChevronUp />
-          </button>
-        )}
+          {/* Scripts */}
+          <GoogleAnalytics />
+          <GoogleTagManager />
+          <GoogleTagManagerNoScript />
+          {!router.asPath.includes("/career") && <Talkchat />}
+          <ContactLinks />
+
+          {/* Scroll to top */}
+          {showTop && (
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              aria-label="Back to top"
+              className="fixed lg:bottom-10 bottom-[6rem] left-10 z-40 bg-[#5556D1] text-white rounded-full p-3"
+            >
+              <FaChevronUp />
+            </button>
+          )}
+        </LCPGate>
       </main>
     </>
   );
