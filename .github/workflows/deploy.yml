@@ -21,6 +21,29 @@ jobs:
           key: ${{ secrets.GENLINUX19092023_SSH_PRIVATE_KEY }}
           port:  ${{ secrets.GENLINUX19092023_PORT }}
           script: |
+
+
+
+            # ----------------------------
+            # Load NVM explicitly
+            # ----------------------------
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+            echo "NVM version:"
+            nvm --version
+
+            # ----------------------------
+            # Use Node.js v20
+            # ----------------------------
+            nvm install 20
+            nvm use 20
+            nvm alias default 20
+
+            echo "Node version:"
+            node -v
+            echo "NPM version:"
+            npm -v
             # Create temporary swap
             sudo fallocate -l 2G /swapfile2
             sudo chmod 600 /swapfile2
@@ -47,7 +70,6 @@ jobs:
             # Build with extended memory
             #export NODE_OPTIONS="--max-old-space-size=3072"
             # npm ci
-            nvm i v20
             NODE_OPTIONS=--max-old-space-size=3072 
             npm run build
 
