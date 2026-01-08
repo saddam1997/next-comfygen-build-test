@@ -80,7 +80,6 @@ export default function GlobalAfterLCP() {
     return (
         <>
             <GetinTouch />
-
             {showBlockchainFooter ? (
                 <BlockchainFooter />
             ) : showEcommerceFooter ? (

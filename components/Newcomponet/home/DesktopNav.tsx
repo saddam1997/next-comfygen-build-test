@@ -2400,7 +2400,7 @@ export default function DesktopNav(props: any) {
                 className="group z-40 ">
                 <button
                   onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
-                  className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent hover:text-black/100 text-black/80 ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
+                  className={`inline-flex items-center py-8 text-[18px] font-poppins border-b-2 border-transparent  text-black/80 ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
                 >
                   <span
                     className={
@@ -2410,7 +2410,7 @@ export default function DesktopNav(props: any) {
                     Company
                   </span>
                   <MdKeyboardArrowDown
-                    className={` ${isScrolled ? "hover:text-black/100 text-black/80" : "text-white"}`}
+                    className={` ${isScrolled ? " text-black/80" : "text-white"}`}
                     size={22}
                   />
                 </button>

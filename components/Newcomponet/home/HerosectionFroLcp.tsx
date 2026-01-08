@@ -14,7 +14,7 @@ export default function HerosectionFroLcp({ ptag, children }: HeroProps) {
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="container mx-auto w-10/12 py-32">
 
-          <h1 className="text-white xl:text-5xl sm:text-3xl font-bold leading-tight">
+          <h1 className="text-white xl:text-5xl sm:text-3xl font-bold leading-tight space-y-4">
             <span className="block text-xl font-medium">
               Blockchain Development
             </span>

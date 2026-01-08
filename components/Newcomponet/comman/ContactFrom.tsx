@@ -14,7 +14,7 @@ import { redirect } from "next/dist/server/api-utils";
 import dynamic from "next/dynamic";
 
 class ContactFrom extends Component<{}, any> {
-  constructor(props:any) {
+  constructor(props: any) {
     super(props);
     this.state = {
       isLoading: "idle",
@@ -30,7 +30,7 @@ class ContactFrom extends Component<{}, any> {
     this.fetchUserIP();
   }
 
-  inputChange = (e:any) => {
+  inputChange = (e: any) => {
     console.log("e________________________", e.target.value, e.target.name);
     e.preventDefault();
     let { name, value } = e.target;
@@ -50,7 +50,7 @@ class ContactFrom extends Component<{}, any> {
     this.setState({ fieldsContactUs, errorsContactUs });
   };
 
-  createContactUs = (e:any) => {
+  createContactUs = (e: any) => {
     e.preventDefault();
     if (this.handleValidationContactUs()) {
       let data = {
@@ -102,7 +102,7 @@ class ContactFrom extends Component<{}, any> {
     }
   };
 
-  componentDidUpdate(prevProps, prevState:any) {
+  componentDidUpdate(prevProps, prevState: any) {
     if (
       this.state.successMessage &&
       prevState.successMessage !== this.state.successMessage
@@ -178,7 +178,7 @@ class ContactFrom extends Component<{}, any> {
     }, 2000);
   };
 
-  handleCountryChange = (event:any) => {
+  handleCountryChange = (event: any) => {
     let errorsContactUs = {};
     if (event.target.value != "SELECTED") {
       this.setState({ stdCode: event.target.value });
@@ -228,7 +228,7 @@ class ContactFrom extends Component<{}, any> {
               </h2>
               <p className="text-base ">
                 Comfygen is a result-oriented IT Service Provider that builds
-                secured 
+                secured
               </p>
             </div>
           </div>
@@ -310,15 +310,15 @@ class ContactFrom extends Component<{}, any> {
                       })).find((ele) => ele.value === this.state.stdCode)
                       : null
                   }
-                  onChange={(selectedOption:any) => {
+                  onChange={(selectedOption: any) => {
                     this.setState({ stdCode: selectedOption.value });
                     // clear error if any
-                    this.setState((prevState:any) => ({
+                    this.setState((prevState: any) => ({
                       errorsContactUs: { ...prevState.errorsContactUs, stdCode: "" },
                     }));
                   }}
                   className="text-xs w-32 bg-transparent "
-                  getOptionValue={(option:any) => option.name}
+                  getOptionValue={(option: any) => option.name}
                   components={{
                     DropdownIndicator: () => null,
                     IndicatorSeparator: () => null,
@@ -330,7 +330,7 @@ class ContactFrom extends Component<{}, any> {
                       backgroundColor: "transparent",
                       boxShadow: state.isFocused ? "none" : base.boxShadow,
                       cursor: "pointer",
-                      display:"flex"
+                      display: "flex"
                     }),
                     placeholder: (base) => ({
                       ...base,
@@ -426,7 +426,7 @@ class ContactFrom extends Component<{}, any> {
                   alt=""
                   height={24}
                   width={24}
-                   loading="lazy"
+                  loading="lazy"
                 />
               </button>
             )}

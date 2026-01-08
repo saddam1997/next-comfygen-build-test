@@ -176,11 +176,8 @@ export default function Document() {
         <meta name="msvalidate.01" content="88C9F762357EB27E860762AE43E1BDF7" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
-
-
-
         {/* Viewport & Mobile Meta */}
-     
+
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />

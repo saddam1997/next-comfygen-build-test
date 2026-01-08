@@ -228,7 +228,8 @@ export default function Home(props: any) {
           name="description"
           content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
         />
-
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.comfygen.com/" />
 
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
@@ -281,9 +282,6 @@ export default function Home(props: any) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
 
-        {/* ✅ ✅ ✅ NOINDEX TAG ADDED (IMPORTANT) */}
-        <meta name="robots" content="noindex, nofollow" />
-        {/* ✅ ✅ ✅ NOINDEX TAG ADDED (IMPORTANT) */}
 
         {/* OPTIONAL: for extra safety (Google header style) */}
         <meta name="googlebot" content="noindex, nofollow" />
@@ -369,7 +367,6 @@ export default function Home(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/home/heroimage.webp"
         />
-
 
         <LCPGate>
           <Aboutsection
