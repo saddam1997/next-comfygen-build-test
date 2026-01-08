@@ -26,14 +26,17 @@ export default function Aboutsection({
                         className="relative h-full"
                     >
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl md:h-full lg:max-h-[820px] max-w-[650px]">
-                            <Image
-                                height={640}
-                                width={340}
-                                src="/Frame 253.png"
-                                alt="Developer working on applications"
-                                className="w-full h-full pointer-events-none"
-                                loading="lazy"
-                            />
+                            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-[650px]">
+                                <Image
+                                    src={imageSrc}
+                                    alt="Developer working on applications"
+                                    width={650}
+                                    height={860} // real image ratio
+                                    className="w-full h-auto"
+                                    sizes="(max-width: 768px) 100vw, 650px"
+                                    loading="lazy"
+                                />
+                            </div>
                         </div>
 
                         {/* Stats Badge */}

@@ -367,7 +367,7 @@ export default function Home(props: any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="/Rectangle 331.png"
+          bgImage="https://www.comfygen.com/comfygen-images/home/heroimage.webp"
         />
 
 
@@ -383,7 +383,7 @@ export default function Home(props: any) {
               "High-Performing Solutions at Competitive Cost",
               "Strategic Development Process",
             ]}
-            imageSrc="https://www.comfygen.com/comfygen-images/comfygen/about-us-home-page.webp"
+            imageSrc="https://www.comfygen.com/comfygen-images/home/About.webp"
             link="/about-us"
             linkText="Explore More"
           />

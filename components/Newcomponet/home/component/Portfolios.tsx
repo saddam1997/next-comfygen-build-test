@@ -9,10 +9,10 @@ export default function Portfolios({ heading, description }: any) {
   const [pauseBottom, setPauseBottom] = useState(false);
 
   const images = [
-    "/portfolio/image1.png",
-    "/portfolio/Frame2.png",
-    "/portfolio/image3.png",
-    "/portfolio/Frame4.png",
+    "https://www.comfygen.com/comfygen-images/home/Frame2.webp",
+    "https://www.comfygen.com/comfygen-images/home/Frame4.webp",
+    "https://www.comfygen.com/comfygen-images/home/image1.webp",
+    "https://www.comfygen.com/comfygen-images/home/image3.webp",
   ];
 
   // ✅ opposite directions

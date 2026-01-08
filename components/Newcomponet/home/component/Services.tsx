@@ -46,14 +46,14 @@ export default function Services({ heading = "", description = "", serviceskey =
 
 
                         {/* Service Details */}
-                        <div className="bg-[#000823]/95 max-w-[1258px] rounded-2xl p-8 py-16 relative overflow-hidden " style={{ backgroundImage: "url('/response-automation.png')" }}>
+                        <div className="bg-[#000823]/95 max-w-[1258px] rounded-2xl p-8 py-16 relative overflow-hidden " style={{ backgroundImage: "url('https://www.comfygen.com/comfygen-images/home/service-bg.webp')" }}>
                             {/* <div className="absolute inset-0 bg-[#000823]/70"></div> */}
                             {/* Background Decoration */}
                             <div className="absolute -right-2 -bottom-4 w-96 h-96 ">
                                 <Image
                                     width={640}
                                     height={340}
-                                    src="/imageservices.png"
+                                    src="https://www.comfygen.com/comfygen-images/home/services-containt.webp"
                                     alt=""
                                     className="w-full h-full object-contain pointer-events-none"
                                     loading="lazy"

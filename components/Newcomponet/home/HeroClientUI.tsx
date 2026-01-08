@@ -16,8 +16,9 @@ export default function HeroClientUI(props: any) {
         src={props.bgImage}
         alt=""
         fill
-        priority
+        // priority
         className="object-cover"
+        loading="lazy"
       />
 
       {/* Overlay */}
