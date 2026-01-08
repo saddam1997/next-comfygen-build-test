@@ -12,39 +12,39 @@ const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
 });
 
 export default function Herosection(props: any) {
-  const words = [
-    "Blockchain Development",
-    "AI Development",
-    "Custom Web & Apps",
-  ];
+  // const words = [
+  //   "Blockchain Development",
+  //   "AI Development",
+  //   "Custom Web & Apps",
+  // ];
 
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [typedText, setTypedText] = useState("");
-  const [mounted, setMounted] = useState(false);
+  // const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  // const [typedText, setTypedText] = useState("");
+  // const [mounted, setMounted] = useState(false);
 
   /* Mount check for LCP-safe animation */
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  /* Typing animation AFTER first paint */
-  useEffect(() => {
-    if (!mounted) return;
+  // /* Typing animation AFTER first paint */
+  // useEffect(() => {
+  //   if (!mounted) return;
 
-    const word = words[currentWordIndex];
-    const timeout = setTimeout(() => {
-      setTypedText(word.substring(0, typedText.length + 1));
-    }, 100);
+  //   const word = words[currentWordIndex];
+  //   const timeout = setTimeout(() => {
+  //     setTypedText(word.substring(0, typedText.length + 1));
+  //   }, 100);
 
-    if (typedText === word) {
-      setTimeout(() => {
-        setCurrentWordIndex((prev) => (prev + 1) % words.length);
-        setTypedText("");
-      }, 1000);
-    }
+  //   if (typedText === word) {
+  //     setTimeout(() => {
+  //       setCurrentWordIndex((prev) => (prev + 1) % words.length);
+  //       setTypedText("");
+  //     }, 1000);
+  //   }
 
-    return () => clearTimeout(timeout);
-  }, [typedText, currentWordIndex, mounted]);
+  //   return () => clearTimeout(timeout);
+  // }, [typedText, currentWordIndex, mounted]);
 
   return (
     <section className="relative min-h-screen overflow-hidden">
@@ -54,9 +54,9 @@ export default function Herosection(props: any) {
           src="/Rectangle 331.png"
           alt="Hero Background"
           fill
-          priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover  pointer-events-none"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>
@@ -71,7 +71,8 @@ export default function Herosection(props: any) {
         <div className="xl:w-[58%] lg:w-[65%] w-full space-y-4">
           <h1 className="text-white xl:text-5xl sm:text-3xl text-3xl font-bold xl:leading-[4rem] sm:leading-[3rem]">
             <span className="xl:text-4xl md:text-2xl text-2xl font-medium block">
-              {mounted ? typedText : "Blockchain Development"}
+              {/* {mounted ? typedText : "Blockchain Development"} */}
+              {'Blockchain Development'}
             </span>
             <span className="block font-bold">
               Solution & Service Provider

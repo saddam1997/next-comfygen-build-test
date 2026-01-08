@@ -18,14 +18,6 @@ import ClientTestimonials from "../../components/Newcomponet/home/component/Clie
 
 
 
-
-
-
-
-
-
-
-
 export default function Home(props: any) {
 
     let { initialData } = props;

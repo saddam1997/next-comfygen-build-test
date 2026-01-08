@@ -102,7 +102,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       <main
         className={`${poppins.className} overflow-hidden ${
-          router.pathname === "/comfy-test-page"
+          router.pathname === "/"
             ? "w-full"
             : "max-w-[1600px] mx-auto"
         }`}
