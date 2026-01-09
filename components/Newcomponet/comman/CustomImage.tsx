@@ -26,7 +26,8 @@ export default function CustomImage({
       alt={alt}
       width={1280}
       height={720}
-      priority={priority} // ✅ ONLY true for hero image
+      loading="lazy"
+   // ✅ ONLY true for hero image
       sizes={sizes}       // ✅ responsive image loading
       quality={70}        // ✅ optimal balance
       placeholder="empty" // ✅ remove heavy blur

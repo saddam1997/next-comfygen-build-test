@@ -1,6 +1,8 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 type Feature = {
   title: string;
@@ -26,12 +28,12 @@ export default function WhyChooseUs({
   }
 
   return (
-    <section className="bg-[#eef8ff] py-20">
+    <section className="bg-gradient-to-br from-[#E2F3FF] to-[#FFFBEF] py-20">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading */}
         <div className="flex justify-start max-w-2xl">
-          <div>
-            <h2 className="text-3xl md:text-2xl font-bold text-gray-800">
+          <div className="space-y-4">
+            <h2 className="text-xl flex justify-start md:text-[45px] font-semibold text-gray-800">
               {heading}
             </h2>
 
@@ -41,41 +43,44 @@ export default function WhyChooseUs({
             />
 
             <div className="mt-3 flex justify-start">
-              <button className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">
+              <Link href="/contact-us" aria-label="Connect Experts" className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">
                 Connect to Experts <ArrowRight size={18} />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Cards */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((item, index) => (
             <div
               key={index}
               className="bg-white border border-purple-200 rounded-xl p-6 text-left shadow-sm hover:shadow-md transition"
             >
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center text-2xl">
-                  {item.icon}
+              <div className="flex gap-4">
+                <div className="h-[84px] w-[84px] rounded-full">
+                  <Image width={140} loading="lazy" height={70} src={item.icon} alt={item.title} className="h-[84px] w-[84px] object-contain " />
                 </div>
-                <h3 className="font-semibold text-gray-800 text-lg">
-                  {item.title}
-                </h3>
-              </div>
+                <div className="w-full">
 
-              <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                {item.desc}
-              </p>
+                  <h3 className="text-sm text-gray-800 ">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-1 text-xs text-gray-600" dangerouslySetInnerHTML={{ __html: item.desc }}>
+                  </p>
+
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
         {/* Bottom Button */}
         <div className="mt-14">
-          <button className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">
+          <Link href="/contact-us" aria-label="Get in Touch" className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">
             Get in Touch <ArrowRight size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

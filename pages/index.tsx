@@ -7,6 +7,7 @@ import JSON_DATA from "./index.json";
 // ✅ ABOVE THE FOLD – SSR (LCP & SEO)
 import Herosection from "../components/Newcomponet/home/Herosection";
 import LCPGate from "../components/Newcomponet/home/LCPGate";
+import FaqSection from "../components/Newcomponet/SectionCompoent/Faq";
 
 
 const Header = dynamic(
@@ -15,7 +16,8 @@ const Header = dynamic(
 );
 
 
-// ❌ BELOW THE FOLD – LAZY LOAD
+
+
 const Aboutsection = dynamic(
   () => import("../components/Newcomponet/home/component/Aboutsection"),
   { ssr: true }
@@ -70,6 +72,14 @@ const ClientTestimonials = dynamic(
   () => import("../components/Newcomponet/home/component/ClientTestimonials"),
   { ssr: false }
 );
+const BlogSection = dynamic(() => import("../components/Newcomponet/SectionCompoent/BlogSection"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+});
+
+const Faq = dynamic(
+  () => import("../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: false }
+)
 
 
 
@@ -304,7 +314,7 @@ export default function Home(props: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
         />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -335,7 +345,7 @@ export default function Home(props: any) {
           <Aboutsection
             heading="Build Future-Driven Webs and Apps that Transforms Industries "
             description1="Comfygen is a result-oriented IT Service Provider that builds secured and scaled apps to fulfill the needs of every business in various industries; be it Finance, Blockchain, Healthcare, On-Demand, Education, Gaming, Entertainment, etc."
-            description2="We have highly experienced web and mobile app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement. Our objective is to create an intuitive digital infrastructure for clients that makes them the best in their respective industries."
+            description2="We have highly experienced app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement."
             points={[
               "Dedicated Development Team",
               "End-to-End Software Development Technology",
@@ -356,14 +366,19 @@ export default function Home(props: any) {
           <Portfolios
             heading="Explore Our Web & App Development Portfolio"
             description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+            portfolioData={JSON_DATA.portfolioData}
           />
           <IndustriesWeServe
 
             heading="Industries We Serve"
             description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
-          // industries={JSON_DATA.IndustriesServe}
+            industries={JSON_DATA.defaultSliderData}
           />
-          <Calltoaction />
+          <Calltoaction
+            heading="Let’s Build the"
+            heading2="Future of Technology Together"
+            description="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organizations stay ahead of the times in a world that is changing quickly. Together, let'sdevelop the technologies of the future."
+          />
           <DevelopmentProcess
             heading="Our Development Process: From Idea to Execution"
             description=" To deliver custom mobile app development services, our web and
@@ -373,9 +388,7 @@ export default function Home(props: any) {
           />
           <TechStacks
             heading="Our Edgy Tech-Stacks Use for Development"
-            description="The only focus is not the engagement, but building a highly-secured
-          and robust web or application. For strong development, some edgy tech
-          stacks are being used."
+            description="The only focus is not the engagement, but building a highly-secured  and robust web or application. For strong development, some edgy tech stacks are being used."
             TABS={JSON_DATA.TABS}
             STACKS={JSON_DATA.STACKS}
           />
@@ -387,18 +400,27 @@ export default function Home(props: any) {
           <ClientStories />
 
           <HireDeveloper
-            heading={`Let’s Build the Future of Technology Together`}
-            description="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+            heading={`Hire Expert Developers`}
+            description="Hire skilled <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>app developers</a> from Comfygen for mobile, web, blockchain, and AI projects. Our flexible teams deliver high-quality solutions, seamless collaboration, and on-time results to help your business grow."
             points={[
-              "Experienced developers for every project",
-              "Custom solutions tailored to your needs",
-              "Cutting-edge technologies to ensure success"
+              "Dedicated, experienced developers",
+              "Flexible engagement models (full-time, part-time, project-based)",
+              "Agile development and transparent communication",
+              "Scalable teams for short-term or long-term projects",
             ]}
           />
           <ClientTestimonials
             heading="Client Testimonial"
             testimonials={JSON_DATA.customTestimonials}
           />
+     
+          <Faq
+            faqData={JSON_DATA.Frequently}
+            title="White Label Crypto Exchange"
+          />
+
+          <BlogSection initialData={initialData} />
+
         </LCPGate>
 
       </div>

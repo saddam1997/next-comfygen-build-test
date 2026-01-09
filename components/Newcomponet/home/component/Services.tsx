@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Services({ heading = "", description = "", serviceskey = [], servicedata = {} }) {
     const [activeService, setActiveService] = useState('AI Development');
@@ -31,7 +32,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                         {/* Services Menu */}
                         <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 scroll-hide ">
                             {serviceskey.map((service) => (
-                                <button
+                                <ul
                                     key={service}
                                     onClick={() => setActiveService(service)}
                                     className={`w-full text-left px-6 py-4 text-sm lg:text-lg xl:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${activeService === service
@@ -39,8 +40,8 @@ export default function Services({ heading = "", description = "", serviceskey =
                                         : 'bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]'
                                         }`}
                                 >
-                                    {service}
-                                </button>
+                                    <li>{service}</li>
+                                </ul>
                             ))}
                         </div>
 
@@ -61,18 +62,13 @@ export default function Services({ heading = "", description = "", serviceskey =
                             </div>
 
                             <div className="relative z-10">
-                                <h2 className="text-sm lg:text-xl xl:text-[36px] font-medium font-poppins text-[#FFFFFF] mb-4">
+                                <h3 className="text-sm lg:text-xl xl:text-[36px] font-medium font-poppins text-[#FFFFFF] mb-2">
                                     {activeService}
-                                </h2>
+                                </h3>
 
                                 <p
-                                    className="text-sm lg:text-base xl:text-[20px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-14  leading-relaxed"
-                                    dangerouslySetInnerHTML={{
-                                        __html:
-                                            desc.length > 300
-                                                ? desc.slice(0, 300) + "...."
-                                                : desc,
-                                    }}
+                                    className="text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-8 "
+                                    dangerouslySetInnerHTML={{ __html: desc }}
                                 ></p>
 
                                 {/* <p className="text-[20px] font-medium font-poppins text-[#FFFFFF] mb-14 leading-relaxed" dangerouslySetInnerHTML={{ __html: servicedata[activeService].description?.slice(0, 300) + "...." }}>
@@ -81,20 +77,21 @@ export default function Services({ heading = "", description = "", serviceskey =
 
                                 <div className="space-y-3 md:mb-10">
                                     {features?.map((feature: any, index: any) => (
-                                        <div
+                                        <li
                                             key={index}
-                                            className="flex items-center text-gray-200 text-lg gap-2"
-                                        >
-                                            - {""} <span className="ext-sm lg:text-base xl:text-[20px] font-medium font-poppins text-[#FFFFFF] mr-3" dangerouslySetInnerHTML={{ __html: feature }}></span>
+                                            className="flex items-center gap-2 text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3"
+                                       >
+                                         - {""} <span className="text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3"  dangerouslySetInnerHTML={{ __html: feature }}></span> 
 
-                                        </div>
+                                        </li>
                                     ))}
                                 </div>
-
-                                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                    Connect Experts
-                                    <ArrowRight size={20} />
-                                </button>
+                                <Link href="/contact-us">
+                                    <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                        Connect Experts
+                                        <ArrowRight size={20} />
+                                    </button>
+                                </Link>
                             </div>
 
                             {/* Decorative Robot Hand Image Placeholder */}
@@ -112,32 +109,37 @@ export default function Services({ heading = "", description = "", serviceskey =
 
                         return (
                             <div key={service}>
-                                <button
+
+
+                                <ul
                                     onClick={() =>
                                         setActiveService(isActive ? "" : service)
                                     }
                                     className={`w-full text-left px-6 py-4 text-sm lg:text-lg xl:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${isActive ? "bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white" : "bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]"}`}
                                 >
-                                    {service}
-                                </button>
+                                    <li>{service}</li>
+                                </ul>
+
 
                                 {/* 🔽 MOBILE DETAILS */}
-                                {isActive && (
-                                    <div className="lg:hidden">
-                                        <ServiceDetails
-                                            title={service}
-                                            desc={data.description || ""}
-                                            features={data.features || []}
-                                        />
-                                    </div>
-                                )}
+                                {
+                                    isActive && (
+                                        <div className="lg:hidden">
+                                            <ServiceDetails
+                                                title={service}
+                                                desc={data.description || ""}
+                                                features={data.features || []}
+                                            />
+                                        </div>
+                                    )
+                                }
                             </div>
                         );
                     })}
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 }
 
@@ -145,29 +147,28 @@ export default function Services({ heading = "", description = "", serviceskey =
 const ServiceDetails = ({ title, desc, features }: any) => {
     return (
         <div className="bg-[#000823] rounded-xl p-5 mt-4 text-white">
-            <h3 className="text-lg font-semibold mb-3">{title}</h3>
+            <h2 className="text-lg font-semibold mb-3">{title}</h2>
 
             <p
                 className="text-sm mb-4 leading-relaxed"
-                dangerouslySetInnerHTML={{
-                    __html: desc.length > 200 ? desc.slice(0, 200) + "..." : desc,
-                }}
+                dangerouslySetInnerHTML={{ __html: desc }}
             />
 
             <div className="space-y-2 mb-4">
                 {features?.map((feature: any, i: number) => (
-                    <div
+                    <li
                         key={i}
                         className="text-sm flex items-start gap-2"
                         dangerouslySetInnerHTML={{ __html: `• ${feature}` }}
                     />
                 ))}
             </div>
-
-            <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                Connect Experts
-                <ArrowRight size={20} />
-            </button>
+            <Link href="/contact-us">
+                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Connect Experts
+                    <ArrowRight size={20} />
+                </button>
+            </Link>
         </div>
     );
 };

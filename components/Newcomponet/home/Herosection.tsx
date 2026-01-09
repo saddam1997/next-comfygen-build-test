@@ -7,7 +7,7 @@ const HeroClientUI = dynamic(() => import("./HeroClientUI"), {
 
 export default function Herosection(props: any) {
   return (
-    <HerosectionFroLcp ptag={props.ptag}>
+    <HerosectionFroLcp  openModal={props.openModal} ptag={props.ptag}>
       <HeroClientUI
         bgImage={props.bgImage}
         openModal={props.openModal}

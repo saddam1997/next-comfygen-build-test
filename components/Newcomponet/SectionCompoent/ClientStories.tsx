@@ -274,6 +274,7 @@ export default function ClientStories() {
             {/* Navigation */}
             <div className="flex justify-center gap-4 mt-6">
               <button
+                aria-label="Previous testimonial"
                 onClick={prevTestimonial}
                 className="w-12 h-12 border-2 border-red-600 rounded-full flex items-center justify-center"
               >
@@ -281,6 +282,7 @@ export default function ClientStories() {
               </button>
 
               <button
+                aria-label="Next testimonial"
                 onClick={nextTestimonial}
                 className="w-12 h-12 border-2 border-red-600 rounded-full flex items-center justify-center"
               >
@@ -292,6 +294,7 @@ export default function ClientStories() {
             <div className="flex justify-center gap-2 mt-4">
               {testimonials.map((_, i) => (
                 <button
+                  aria-label="Video State"
                   key={i}
                   onClick={() => {
                     setCurrentTestimonial(i);
@@ -313,6 +316,7 @@ export default function ClientStories() {
 
             {/* Close Button */}
             <button
+             aria-label="Open Modal"
               className="absolute -top-10 right-0 text-white text-3xl"
               onClick={() => {
                 setOpenModal(false);

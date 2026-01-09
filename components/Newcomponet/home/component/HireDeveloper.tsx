@@ -3,72 +3,113 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface HireDeveloper {
-    heading: string;
-    description: string
-    points: any
+interface HireDeveloperProps {
+  heading: string;
+  description: string;
+  points: string[];
 }
 
-const HireDeveloper = ({ heading, description, points }: HireDeveloper) => {
-    return (
-        <section className="relative h-full md:h-[400.77px] w-full overflow-hidden bg-[#3E1966] p-4 px-4 md:p-0 md:px-0 ">
+const HireDeveloper = ({ heading, description, points }: HireDeveloperProps) => {
+  return (
+    <section className="relative w-full overflow-hidden bg-[#3E1966]">
 
-            {/* Background Image */}
-            <Image
-                src="/hire-developer.png"
-                alt="Call to Action Background"
-                fill
-                className="h-full w-full object-cover"
-                loading="lazy"
-            />
+      {/* Background Image */}
+      <Image
+        src="/hire-developer.png"
+        alt="Hire Developer Background"
+        fill
+        className="object-cover"
+        loading="lazy"
+      />
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-[#3E1966]/10 opacity-5 z-10" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#3E1966]/60" />
+   {/* // min-h-[420px] sm:min-h-[480px] lg:min-h-[520px] */}
+      {/* Content */}
+      <div
+        className="
+          relative z-10
+          flex items-center
+       
+          px-4 sm:px-6 lg:px-10
+          py-10
+        "
+      >
+        <div className="container mx-auto lg:px-12">
 
-            {/* Content */}
-            <div className="relative z-20 flex h-full md:h-[400.77px] flex-col items-center justify-center">
-                <div className="flex justify-start container mx-auto">
-                    <div>
-                        <h2 className="text-sm md:text-[45px] lg:text-[45px] font-semibold font-poppins text-white leading-tight">
-                            {heading}
+          {/* Heading */}
+          <h2
+            className="
+              text-white font-semibold font-poppins
+              text-lg md:text-[40px]
+              leading-snug
+            "
+          >
+            {heading}
+          </h2>
 
-                        </h2>
+          {/* Description */}
+          <p
+            className="
+              mt-4
+              max-w-5xl
+              text-gray-200
+              text-sm sm:text-base md:text-lg lg:text-xl
+              leading-relaxed
+            "
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
 
-                        <p className="mt-2 w-full md:w-[1520px] mx-auto text-sm md:text-[20px] font-normal text-gray-200 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }}>
-                        </p>
+          {/* Points + CTA */}
+          <div
+            className="
+              mt-6
+              flex flex-col
+              lg:flex-row
+              lg:items-start
+              lg:justify-between
+              gap-6
+            "
+          >
+            {/* Bullet Points */}
+            {points?.length > 0 && (
+              <ul className="space-y-3 max-w-3xl">
+                {points.map((point, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full border border-white shrink-0" />
+                    <span
+                      className="text-sm sm:text-base text-white leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: point }}
+                    />
+                  </li>
+                ))}
+              </ul>
+            )}
 
-                        <div className="mt-4 md:mt-10 w-full">
-                            <div className="flex-cols md:flex justify-between items-center">
-                                <div>
+            {/* CTA */}
+            <Link
+              href="/contact-us" aria-label="Hire Developer"
+              className="
+                inline-flex items-center justify-center gap-2
+                self-start lg:self-center
+                rounded-lg
+                bg-gradient-to-r from-orange-500 to-red-500
+                px-6 py-3 sm:px-8 sm:py-4
+                text-sm sm:text-base font-semibold
+                text-white
+                shadow-lg
+                transition-transform duration-300
+                hover:scale-105 hover:shadow-xl
+              "
+            >
+              Hire Developer <span className="text-lg">→</span>
+            </Link>
+          </div>
 
-                                    {points && points.length > 0 && (
-                                        <ul className="space-y-2">
-                                            {points.map((point: any, index: any) => (
-                                                <li key={index} className="flex items-start gap-2">
-                                                    <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-white rounded-full mt-1.5"></div>
-                                                    <span
-                                                        className="xl:text-base text-sm text-white"
-                                                        dangerouslySetInnerHTML={{ __html: point }}
-                                                    />
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-
-                                </div>
-                                <Link
-                                    href="#get-started"
-                                    className="inline-flex items-center mt-2 md:mt-0 gap-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-2 py-1 md:px-8 md:py-4 text-white font-semibold shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-                                >
-                                    Hire Developer <span className="text-xl">→</span>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default HireDeveloper;

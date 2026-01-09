@@ -51,7 +51,7 @@ const Form = () => (
           </h2>
 
           {/* Top Contact Info */}
-          <div className="grid sm:grid-cols-3 justify-center sm:gap-8 md:gap-16 mb-8 sm:px-36 gap-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-3 justify-center sm:gap-8 md:gap-16 mb-8 sm:px-36 gap-4 ">
             <div className="flex items-center gap-3 text-white ">
               <a
                 href="tel:9587867258"

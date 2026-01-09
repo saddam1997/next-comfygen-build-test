@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import Script from 'next/script';
+// import Script from 'next/script';
 
-const isProduction = process.env.NODE_ENV === "production";
+// const isProduction = process.env.NODE_ENV === "production";
 export default function Document() {
 
   const jsonLdData = [
@@ -172,7 +172,7 @@ export default function Document() {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-  
+
         <meta name="msvalidate.01" content="88C9F762357EB27E860762AE43E1BDF7" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
@@ -195,14 +195,38 @@ export default function Document() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
+
+
+{/* <!-- Google Tag Manager --> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-M6QT7LCW');
+            `,
+          }}
+        />
       </Head>
       <body>
+
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M6QT7LCW"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Main />
         <NextScript />
-        {/* <Script
-          src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-          strategy="lazyOnload"
-        /> */}
+
       </body>
     </Html>
   );

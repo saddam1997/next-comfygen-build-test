@@ -176,11 +176,11 @@ export default function ClientStories() {
     };
 
     return (
-        <section className="relative  bg-[#F0F0FB] py-2 overflow-hidden h-full md:h-[600px] flex flex-col items-center justify-center">
+        <section className="relative  bg-[#F0F0FB] py-2 overflow-hidden  flex flex-col items-center justify-center">
             {/* World map background */}
-            <div className="absolute inset-0 bg-[url('/Explore-Portfolio.png')] bg-cover bg-no-repeat opacity-80" />
+            <div className="absolute  inset-0 bg-[url('/Explore-Portfolio.png')] bg-cover bg-no-repeat opacity-80" />
             <div className="relative z-10 lg:container w-full  p-4 md:p-16">
-                <div className="grid md:grid-cols-2 gap-4 ">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
                     {/* Left Column */}
                     <div className="space-y-8 mt-5">
                         <h2 className="text-2xl md:text-2xl font-bold text-gray-900 ">
@@ -287,6 +287,7 @@ export default function ClientStories() {
                         {/* Navigation */}
                         <div className="flex justify-center gap-4 mt-6">
                             <button
+                                aria-label="Previous testimonial"
                                 onClick={prevTestimonial}
                                 className="w-12 h-12 border-2 border-red-600 rounded-full flex items-center justify-center"
                             >
@@ -294,6 +295,7 @@ export default function ClientStories() {
                             </button>
 
                             <button
+                                aria-label="Next testimonial"
                                 onClick={nextTestimonial}
                                 className="w-12 h-12 border-2 border-red-600 rounded-full flex items-center justify-center"
                             >
@@ -305,12 +307,13 @@ export default function ClientStories() {
                         <div className="flex justify-center gap-2 mt-4">
                             {testimonials.map((_, i) => (
                                 <button
+                                    aria-label="Dots testimonial"
                                     key={i}
                                     onClick={() => {
                                         setCurrentTestimonial(i);
                                         resetVideoState();
                                     }}
-                                    className={`h-2 rounded-full ${i === currentTestimonial ? "w-8 bg-red-600" : "w-2 bg-gray-300"
+                                    className={`h-2 rounded-full ${i === currentTestimonial ? "w-2 bg-red-600" : "w-2 bg-gray-300"
                                         }`}
                                 />
                             ))}
@@ -326,6 +329,7 @@ export default function ClientStories() {
 
                         {/* Close Button */}
                         <button
+                          aria-label="Open Modal"
                             className="absolute -top-10 right-0 text-white text-3xl"
                             onClick={() => {
                                 setOpenModal(false);
@@ -360,6 +364,8 @@ export default function ClientStories() {
                 </div>
             )}
             {/* ===================== END MODAL ====================== */}
+
+           
 
         </section>
     );
