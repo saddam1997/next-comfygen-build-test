@@ -42,82 +42,57 @@ const XIcon = () => (
 
 const Form = () => (
   <section>
-    <div className="h-full bg-gradient-to-br py-8 from-indigo-900 via-indigo-800 to-purple-900 px-4 ">
-      <div className="max-w-7xl mx-auto p-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="lg:text-4xl text-xl font-semibold text-white mb-8">
-            Contact Us Anytime For Quick Assistance
-          </h2>
+  <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto">
 
-          {/* Top Contact Info */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 justify-center sm:gap-8 md:gap-16 mb-8 sm:px-36 gap-4 ">
-            <div className="flex items-center gap-3 text-white ">
-              <a
-                href="tel:9587867258"
-                className="flex items-center gap-3 cursor-pointer"
-              >
-                <Image
-                  src="https://www.comfygen.com/image/call-form-icon.svg"
-                  alt=""
-                  height={56}
-                  width={55}
-                   loading="lazy"
-                />
-                <div>
-                  <span className="text-white text-base flex justify-start">Phone Number</span>
-                  <p className="text-white lg:text-lg text-base font-semibold">
-                    +91 9587867258
-                  </p>
-                </div>
-              </a>
+      {/* Header */}
+      <div className="text-center mb-10 sm:mb-12">
+        <h2 className="lg:text-4xl text-xl font-semibold text-white mb-8">
+          Contact Us Anytime For Quick Assistance
+        </h2>
+
+        {/* Top Contact Info */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">
+          
+          {/* Phone */}
+          <a
+            href="tel:9587867258"
+            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+          >
+            <Image src="https://www.comfygen.com/image/call-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
+            <div className="text-left">
+              <span className="text-base block">Phone Number</span>
+              <p className="lg:text-lg text-base font-semibold">+91 9587867258</p>
             </div>
+          </a>
 
-            <div className="flex items-center gap-3 text-white">
-              <a
-                href="mailto:sales@comfygen.com"
-                className="flex items-center gap-3 cursor-pointer"
-              >
-                <Image
-                  src="https://www.comfygen.com/image/mail-form-icon.svg"
-                  alt=""
-                  height={56}
-                  width={55}
-                   loading="lazy"
-                />
-                <div>
-                  <span className="text-white text-base flex justify-start">Email Address</span>
-                  <p className="text-white text-lg font-semibold">
-                    sales@comfygen.com
-                  </p>
-                </div>
-              </a>
+          {/* Email */}
+          <a
+            href="mailto:sales@comfygen.com"
+            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+          >
+            <Image src="https://www.comfygen.com/image/mail-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
+            <div className="text-left">
+              <span className="text-base block">Email Address</span>
+              <p className="text-lg font-semibold">sales@comfygen.com</p>
             </div>
+          </a>
 
-            <div className="flex items-center gap-3 text-white">
-              <a
-                href="https://www.comfygen.com"
-                className="flex items-center gap-3 cursor-pointer"
-              >
-                <Image
-                  src="https://www.comfygen.com/image/site-form-icon.svg"
-                  alt="site-form"
-                  height={56}
-                  width={55}
-                   loading="lazy"
-                />
-                <div>
-                  <span className="text-white text-base flex justify-start">Site Address</span>
-                  <p className="text-white text-lg font-semibold">
-                    www.comfygen.com
-                  </p>
-                </div>
-              </a>
+          {/* Website */}
+          <a
+            href="https://www.comfygen.com"
+            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+          >
+            <Image src="https://www.comfygen.com/image/site-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
+            <div className="text-left">
+              <span className="text-base block">Site Address</span>
+              <p className="text-lg font-semibold">www.comfygen.com</p>
             </div>
-          </div>
+          </a>
+        </div>
 
-          {/* Social Icons */}
-          <div className="flex justify-center gap-4">
+        {/* Social Icons */}
+         <div className="flex justify-center gap-4">
             <button className=" rounded-full backdrop-blur-sm hover:bg-white/20 transition text-white">
               <a
                 target="_blank"
@@ -130,7 +105,7 @@ const Form = () => (
                   alt="Facebook Logo"
                   height={51}
                   width={50}
-                   loading="lazy"
+                  loading="lazy"
                 />
               </a>
             </button>
@@ -146,7 +121,7 @@ const Form = () => (
                   alt="Instagram Logo"
                   height={51}
                   width={50}
-                   loading="lazy"
+                  loading="lazy"
                 />
               </a>
             </button>
@@ -162,7 +137,7 @@ const Form = () => (
                   alt="Twitter Logo"
                   height={51}
                   width={50}
-                   loading="lazy"
+                  loading="lazy"
                 />
               </a>
             </button>
@@ -178,71 +153,77 @@ const Form = () => (
                   alt="LinkedIn Logo"
                   height={51}
                   width={50}
-                   loading="lazy"
+                  loading="lazy"
                 />
               </a>
             </button>
           </div>
-        </div>
+      </div>
 
-        {/* Main Content Grid */}
-        <div className="grid items-center sm:grid-cols-2 justify-center  gap-8">
-          {/* Left Side - Location Cards */}
-          <div className="space-y-10 h-full">
-            {locations.map((location, index) => (
-              <div key={index} className="bg-white/10 lg:flex flex-cols gap-8 py-6 items-center  backdrop-blur-md rounded-2xl p-6 text-white border border-white/20">
-                <div className="flex-col items-start ">
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 
-                  <h3 className="lg:text-[24px] text-base font-semibold text-[#FFFFFF]">{location.country}</h3>
-                  <div className="text-4xl hidden lg:block ">
-                    <div className="">
-                      <Image
-                        src={location.img}
-                        alt={location.country}
-                        width={50}
-                        height={50}
-                        quality={50}
-                      
-                        className="bg-contain w-28"
-                         loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
+        {/* Locations */}
+        <div className="space-y-6">
+          {locations.map((location, index) => (
+            <div
+              key={index}
+              className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-5 sm:p-6 text-white flex flex-col sm:flex-row gap-6"
+            >
+              {/* Country */}
+              <div className="flex sm:flex-col gap-4 items-center sm:items-start">
+                <h3 className="lg:text-[24px] text-base font-semibold">
+                  {location.country}
+                </h3>
 
-                <div className="">
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
-                      <div>
-                        <p className="text-white lg:text-lg text-sm font-semibold">Phone Number</p>
-                        <p className="text-white lg:text-lg text-sm font-semibold"><a href={location.number}>{location.phone}</a></p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                     <MapPin className="lg:w-8 lg:h-8 h-5 w-5 mt-1 flex-shrink-0" />
-                       <a href={location.loction}>
-                        <p className="text-white lg:text-lg text-sm font-semibold opacity-80">Office Location</p>
-                        <p className="lg:text-[16px] text-sm">{location.address}</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src={location.img}
+                  alt={location.country}
+                  width={50}
+                  height={50}
+                  className="w-20 sm:w-24"
+                  loading="lazy"
+                />
               </div>
-            ))}
-          </div>
 
-          {/* Right Side - Contact Form */}
-          <div className="h-full bg-white rounded-2xl shadow-2xl ">
-            <div className=" ">
-              <ContactFrom />
+              {/* Details */}
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <Phone className="w-5 h-5 mt-1 shrink-0" />
+                  <div>
+                    <p className="lg:text-lg text-sm font-semibold">Phone Number</p>
+                    <a href={location.number} className="lg:text-lg text-sm font-semibold">
+                      {location.phone}
+                    </a>
+                  </div>
+                </div>
+
+                <a href={location.loction} className="flex gap-3">
+                  <MapPin className="w-5 h-5 mt-1 shrink-0" />
+                  <div>
+                    <p className="lg:text-lg text-sm font-semibold opacity-80">
+                      Office Location
+                    </p>
+                    <p className="lg:text-[16px] text-sm">
+                      {location.address}
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
+
+        {/* Contact Form */}
+        <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 h-full">
+          <ContactFrom />
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 );
 
 export default Form;

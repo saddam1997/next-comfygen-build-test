@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import React, { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { Poppins } from "next/font/google";
 import Head from "next/head";

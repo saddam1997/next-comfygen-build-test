@@ -14,9 +14,9 @@ const nextConfig = {
     URL: 'https://www.comfygen.com',
     NEXT_PUBLIC_MEASUREMENT_ID: 'UA-228613134-1',
   },
-  experimental: {
-    legacyBrowsers: false,
-  },
+  // experimental: {
+  //   legacyBrowsers: false,
+  // },
   images: {
     remotePatterns: [
       {
