@@ -13,11 +13,11 @@ const CallToAction = ({
     imageAlt
 }) => {
     return (
-        <section className="lg:py-16 py-10 bg-[#fff]">
+        <section className="lg:py-16 h-full  bg-[#fff]">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 action-sec relative bg-[#0C0F18] rounded-[24px]">
-                <div className="lg:py-12 py-6 lg:px-14 px-8 lg:flex gap-8 items-center">
+                <div className="lg:py-12 py-16 lg:px-14 px-8 lg:flex gap-8 items-center">
                     <div className="space-y-3 lg:w-[70%] w-full">
-                        <h2 className="xl:text-4xl text-3xl text-[#fff] mt-3 font-semibold">
+                        <h2 className="md:text-2xl text-sm text-[#fff] mt-3 font-semibold">
                             {heading}
                         </h2>
                         <p className="text-base text-white" dangerouslySetInnerHTML={{__html: text}}>

@@ -9,38 +9,38 @@ import { useAfterLCP } from "../utils/useAfterLCP";
 
 const GetinTouch = dynamic(
   () => import("../../SectionCompoent/GetinTouch"),
-  { ssr: true }
+  { ssr: false }
 );
 
 const Footer = dynamic(
   () => import("../../layout/Footer"),
-  { ssr: true }
+  { ssr: false }
 );
 
 const BlockchainFooter = dynamic(
   () => import("../../layout/BlockchainFooter/blockchain-Footer"),
-  { ssr: true }
+  { ssr: false }
 );
 
 const EcommerceFooter = dynamic(
   () => import("../../layout/EcommerceFooter/ecommerce-Footer"),
-  { ssr: true }
+  { ssr: false }
 );
 
 const Talkchat = dynamic(
   () => import("../../layout/Talkchat"),
-  { ssr: true }
+  { ssr: false }
 );
 
 
 const GoogleAnalytics = dynamic(
   () => import("../../GoogleComponent/GoogleAnalytics"),
-  { ssr: true }
+  { ssr: false }
 );
 
 const GoogleTagManagerNoScript = dynamic(
   () => import("../../GoogleComponent/GoogleTagManagerNoScript"),
-  { ssr: true }
+  { ssr: false }
 );
 
 

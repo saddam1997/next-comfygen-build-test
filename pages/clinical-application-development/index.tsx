@@ -290,7 +290,7 @@ export default function ClinicalApp(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden pt-16 lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Clinical Application Development Company"
           ptag="If you're a doctor looking to digitize your clinic, Comfygen is the ideal partner. We specialize in creating innovative, secure, and user-friendly clinical apps that improve patient outcomes, automate workflows, and ensure data security. With over 15 years of experience, our team delivers top-notch clinical software solutions that enhance the experience for patients, doctors, and healthcare providers, helping you grow your business 10x."
@@ -340,7 +340,7 @@ export default function ClinicalApp(props) {
           text1="We have also helped transform pharmacies, prescription systems, EHR mechanisms, and medical delivery app development systems with the value of customisation. Our clinical mobile app development services and solutions can help you create the following types of clinical application development services."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/img/who-can-take-our-clinical-apps-developement-solution.webp"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
 

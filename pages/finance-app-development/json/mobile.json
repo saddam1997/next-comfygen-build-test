@@ -83,13 +83,8 @@
         "title": "InvestSmart - A Stock Trading and Investment App",
         "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference. The interface is user-friendly and suited for both beginners and seasoned investors. Secure logins, data encryption, and instant alerts ensure users' investments are protected. It has become a central platform for all who wish to manage personal investments with minimal effort.",
         "link": "/portfolio/stock-trading-finance-app"
-      },
-      {
-        "image": "https://www.comfygen.com/image/hero-image-blockchain-based-fintech-app.webp",
-        "title": "Blockchain-Based FinTech Applications",
-        "description": "Our client required a secure and transparent Blockchain-based FinTech application development solution to enhance financial transactions, ensure data integrity, and improve transaction efficiency. As a top-rated custom FinTech mobile app development company, we built a decentralized and tamper-proof platform that integrates smart contracts, digital asset management, and real-time transaction processing.",
-        "link": "/portfolio/blockchain-based-fintech-app"
       }
+     
     ],
     "pageData": {
       "title": "Why Choose Comfygen for Finance App Development?",

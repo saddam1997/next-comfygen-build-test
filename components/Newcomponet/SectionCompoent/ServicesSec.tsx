@@ -79,7 +79,7 @@ const ServiceContent = ({ service }) => (
                 key={index}
                 className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links"
               >
-                <span className="w-3 h-3 bg-transparent border border-white rounded-full"></span>
+                <span className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></span>
                 <span dangerouslySetInnerHTML={{ __html: feature }} />
               </li>
             ))}

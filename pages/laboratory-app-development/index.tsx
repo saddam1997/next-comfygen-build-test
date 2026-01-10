@@ -249,7 +249,7 @@ export default function ClinicalApp(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden pt-10 lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Laboratory App Development Company "
           ptag="Comfygen offers impeccable, cost-efficient laboratory app software for seamless management of business and patient operations. Using cutting-edge technologies and industry compliance, we create user-friendly Laboratory Information Management Software (LIMS) solutions with exceptional user experiences. As a trusted laboratory app development company, we’ve helped many labs build interactive LIMS solutions."

@@ -75,7 +75,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                                 <div className="space-y-3 md:mb-10">
                                     {features?.map((feature: any, index: any) => (
 
-                                        <div className='flex items-center'>
+                                        <div key={index} className='flex items-center'>
                                             <span className="flex items-center gap-2 text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3">-</span>
                                             <FeatureList items={[feature]} color="#FFFFFF" key={index} />
                                         </div>
@@ -105,8 +105,6 @@ export default function Services({ heading = "", description = "", serviceskey =
 
                         return (
                             <div key={service}>
-
-
                                 <ul
                                     onClick={() =>
                                         setActiveService(isActive ? "" : service)

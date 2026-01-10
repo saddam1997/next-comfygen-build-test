@@ -30,7 +30,7 @@ export default function WhyChooseUs({
   }
 
   return (
-    <section className="bg-gradient-to-br from-[#E2F3FF] to-[#FFFBEF] py-20">
+    <section className="bg-gradient-to-br from-[#E2F3FF] to-[#FFFBEF] md:py-20 py-4">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading */}
         <div className="flex justify-start max-w-2xl">
@@ -74,7 +74,7 @@ export default function WhyChooseUs({
         </div>
 
         {/* Bottom Button */}
-        <div className="mt-14">
+        <div className="md:mt-14 md:py-0 py-4">
           <Link href="/contact-us" aria-label="Get in Touch" className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">
             Get in Touch <ArrowRight size={18} />
           </Link>

@@ -627,8 +627,8 @@ export default function Mobile(props: any) {
 
         <section className="py-8">
           <TechStack
-            title="Technology Stack We Use in White Label Crypto Development"
-            description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
+            title="Tech Stack We Use in Medical App Development"
+            description="At Comfygen Technologies, we leverage a robust and modern healthcare app development tech stack to build high-performance health applications. Our technology choices ensure your custom healthcare mobile app delivers seamless functionality, top-notch security, and compliance with global healthcare standards like HIPAA and GDPR."
           />
         </section>
 

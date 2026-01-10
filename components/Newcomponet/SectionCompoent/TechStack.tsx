@@ -70,7 +70,7 @@ export default function Tech({
 
           <div>
             <div className="py-4">
-              <h2 className="font-bold 2xl:text-4xl xl:text-3xl text-2xl text-white">{title}</h2>
+              <h2 className="font-bold md:text-2xl text-lg text-white">{title}</h2>
               <p className="text-lg mt-2 text-white" dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="mt-4">

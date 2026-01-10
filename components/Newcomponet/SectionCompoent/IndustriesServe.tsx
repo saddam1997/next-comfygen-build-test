@@ -78,7 +78,7 @@ const defaultSliderData = [
 ];
 
 function IndustriesServe({
-  heading ,
+  heading,
   description,
   sliderData = defaultSliderData
 }) {
@@ -165,12 +165,12 @@ function IndustriesServe({
         </div>
 
         <div
-          className="overflow-hidden"
+          className="overflow-hidden h-full "
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out items-stretch"
             style={{
               transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`
             }}
@@ -178,13 +178,15 @@ function IndustriesServe({
             {sliderData.map((item, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 px-3 p-2 "
+                className="flex-shrink-0 px-3 p-2  "
                 style={{ width: `${100 / slidesToShow}%` }}
               >
                 {item.link ? (
-                  <a href={item.link} className="block h-full cursor-pointer">
-                    <div className="bg-white border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
-                      <div className="relative w-full h-48 overflow-hidden rounded-lg">
+                  <a href={item.link} className="block overflow-hidden cursor-pointer min-h-[400px]">
+                    <div className="bg-white border border-[#E8E8E8] rounded-lg p-4
+                h-full flex flex-col
+                hover:shadow-lg transition-shadow duration-500">
+                      <div className="relative w-full   rounded-lg">
                         <CommonImage
                           src={item.imgSrc}
                           alt={item.title}
@@ -192,7 +194,7 @@ function IndustriesServe({
                           height={360}
                           priorityLoad={false}
                           blurDataURL="/blur-placeholder.webp"
-                          className="w-full h-full object-cover "
+                          className="w-full  object-cover "
                         />
 
                       </div>
@@ -206,8 +208,8 @@ function IndustriesServe({
                     </div>
                   </a>
                 ) : (
-                  <div className="bg-white cursor-pointer border border-[#E8E8E8] rounded-lg p-4 space-y-4 h-[360px] hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
-                    <div className="relative w-full h-48 overflow-hidden rounded-lg">
+                  <div className="bg-white cursor-pointer border overflow-hidden min-h-[410px] border-[#E8E8E8] rounded-lg p-4 space-y-4 hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
+                    <div className="relative w-full min-h-fit overflow-hidden rounded-lg">
                       <CommonImage
                         src={item.imgSrc}
                         alt={item.title}

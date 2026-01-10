@@ -2,11 +2,11 @@ import { useState } from "react";
 import { LiaQuestionSolid } from "react-icons/lia";
 
 interface FaqData {
-  num: string; // added num field to match Arena structure
+  num: string;
   title: string;
-  img: string; // added img field to match Arena structure
-  decs: string; // corrected desc to decs to match Arena structure
-  url?: string; // made url optional as not all objects have it
+  img: string;
+  decs: string;
+  url?: string;
 }
 
 interface WildSolutionProps {
@@ -15,40 +15,51 @@ interface WildSolutionProps {
 }
 
 const WildSolution: React.FC<WildSolutionProps> = ({ faqData }) => {
-  const [currentCount, setCurrentCount] = useState("");
-  const data = faqData;
+  const [currentCount, setCurrentCount] = useState<any>(null);
 
   if (!faqData) {
     return <div>Loading...</div>;
   }
 
   return (
-    <section className=" relative">
-      <div className="mt-6">
-        <div className="md:space-y-10 space-y-6 w-full">
-          <div className="w-full  relative  z-40 grid grid-cols-1 md:grid-cols-2 gap-4">
-            {faqData.map((elem: any, index: any) => {
-              const { title, desc, decs, dec1, faqList } = elem;
+    <section className="relative w-full">
+      <div className="mt-6 px-2 sm:px-4">
+        <div className="space-y-6 md:space-y-10 w-full">
+          <div className="relative z-40 grid lg:grid-cols-2 gap-4 md:gap-6">
+            {faqData.map((elem: any, index: number) => {
+              const { title, desc, decs, dec1 } = elem;
+
               return (
                 <div
                   key={index}
-                  className=" cursor-pointer w-full relative"
+                  className="w-full relative"
                   onClick={() =>
-                    setCurrentCount(currentCount === index ? false : index)
+                    setCurrentCount(currentCount === index ? null : index)
                   }
-                 >
-                  <div className={`flex items-start gap-4 justify-between w-full px-4 py-4   text-base font-medium text-left md:items-center md:px-6 text-slate-800 md:text-lg  ${currentCount === index ? "bg-[#5556D1] text-white" : "bg-[#5556D1]/20"}`} >
-                    <div className="flex items-center gap-1">
-                      <h3 className="w-full text-[14px] font-semibold md:text-lg">
-                        {title}
-                      </h3>
-                    </div>
+                >
+                  {/* HEADER */}
+                  <div
+                    className={`flex items-start md:items-center justify-between gap-3
+                    w-full px-4 py-3 md:px-6 md:py-4
+                    text-left font-medium
+                    transition-colors duration-200
+                    ${
+                      currentCount === index
+                        ? "bg-[#5556D1] text-white"
+                        : "bg-[#5556D1]/20 text-slate-800"
+                    }`}
+                  >
+                    <h3 className="text-[14px] md:text-lg font-semibold leading-snug break-words">
+                      {title}
+                    </h3>
+
+                    {/* ICON */}
                     {currentCount === index ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="transition-all duration-200 bg-white p-1 rounded-full"
-                        width="30"
-                        height="30"
+                        className="shrink-0 bg-white p-1 rounded-full"
+                        width="28"
+                        height="28"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="#0E1F51"
@@ -56,15 +67,14 @@ const WildSolution: React.FC<WildSolutionProps> = ({ faqData }) => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <line x1="5" y1="12" x2="19" y2="12" />
                       </svg>
                     ) : (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="transition-all duration-200  p-1 rounded-full "
-                        width="30"
-                        height="30"
+                        className="shrink-0 p-1 rounded-full"
+                        width="28"
+                        height="28"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="#2c3e50"
@@ -72,22 +82,26 @@ const WildSolution: React.FC<WildSolutionProps> = ({ faqData }) => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="12" y1="5" x2="12" y2="19" />
                       </svg>
                     )}
                   </div>
+
+                  {/* BODY */}
                   <div
-                    className={
+                    className={`overflow-hidden transition-all duration-300 ease-in-out
+                    ${
                       currentCount === index
-                        ? "py-2 px-6 text-black space-y-3 text-sm md:text-base transition-height duration-200 min-h-20  bg-[#26314F14] rounded-b-lg"
-                        : "pt-0 px-6 text-black space-y-3 text-sm md:text-base transition-height duration-200 min-h-0 h-0 overflow-hidden bg-[#26314F14]"
-                    }
+                        ? "max-h-[500px] px-4 md:px-6 py-3 md:py-4 bg-[#26314F14] rounded-b-lg"
+                        : "max-h-0 px-4 md:px-6 bg-[#26314F14]"
+                    }`}
                   >
-                    <p>{desc}</p>
-                    <p>{decs}</p>
-                    <p>{dec1}</p>
+                    <div className="space-y-2 text-sm md:text-base text-black leading-relaxed">
+                      <p>{desc}</p>
+                      <p>{decs}</p>
+                      <p>{dec1}</p>
+                    </div>
                   </div>
                 </div>
               );
@@ -99,4 +113,4 @@ const WildSolution: React.FC<WildSolutionProps> = ({ faqData }) => {
   );
 };
 
-export default WildSolution
+export default WildSolution;

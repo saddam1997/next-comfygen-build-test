@@ -378,25 +378,27 @@ export default function Mobile(props) {
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
       {/* </LazyLoad> */}
-      <div className="pt-16">
+      <div className=" overflow-hidden">
 
-        <HeroSectionForAllPages
-          heading="Best Custom Finance App Development Company in India"
-          subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
-          ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
-          li="15+ Trusted Fintech Developers"
-          li1="Customized Fintech Solutions Delivered"
-          li2="06+ years of experience in Development"
-          li3="Cutting-edge technologies used"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp"
-        />
+        <div className="lg:pt-[110px]">
+          <HeroSectionForAllPages
+            heading="Best Custom Finance App Development Company in India"
+            subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
+            ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
+            li="15+ Trusted Fintech Developers"
+            li1="Customized Fintech Solutions Delivered"
+            li2="06+ years of experience in Development"
+            li3="Cutting-edge technologies used"
+            btnName="Talk With Expert"
+            btnLink="/contact-us"
+            openModal={openModal}
+            talkToExpertModal={talkToExpertModal}
+            setTalkToExpertModal={setTalkToExpertModal}
+            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp"
+          />
 
+        </div>
 
         <AboutSection
           title=""

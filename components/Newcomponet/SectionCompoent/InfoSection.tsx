@@ -41,14 +41,14 @@ const InfoSection = ({
                     <p className="xl:text-base text-sm text-black">{description2}</p>
                     <p className="xl:text-base text-sm text-black">{description3}</p>
                     <ul className="space-y-2">
-                      {points?.map((point:any, index:any) => (
-                        <li key={index} className="flex items-center gap-2">
-                          <div className="w-[10px] h-[10px] bg-[#5556D1] rounded-full"></div>
-                          {point}
+                      {points?.map((point: any, index: any) => (
+                        <li key={index} className="flex items-center lg:gap-2 gap-1">
+                          <div className="md:w-[10px] md:h-[10px] bg-[#5556D1] rounded-full hidden md:block"></div>
+                          <span className="text-sm md:text-sm">{point}</span>
                         </li>
                       ))}
                     </ul>
-                      <p className="xl:text-base text-sm text-black">{dec}</p>
+                    <p className="xl:text-base text-sm text-black">{dec}</p>
                   </div>
                 </div>
 
@@ -79,14 +79,14 @@ const InfoSection = ({
                     <p className="xl:text-base text-sm text-black">{description2}</p>
                     <p className="xl:text-base text-sm text-black">{description3}</p>
                     <ul className="space-y-2">
-                      {points?.map((point:any, index:any) => (
-                        <li key={index} className="flex items-center gap-2">
-                          <div className="w-[10px] h-[10px] bg-[#5556D1] rounded-full"></div>
-                          {point}
+                      {points?.map((point: any, index: any) => (
+                        <li key={index} className="flex items-center lg:gap-2 gap-1">
+                          <div className="w-2 h-2 bg-[#5556D1] rounded-full hidden md:block"></div>
+                          <span className="text-sm ">{point}</span>
                         </li>
                       ))}
                     </ul>
-                     <p className="xl:text-base text-sm text-black">{dec}</p>
+                    <p className="md:text-base text-sm text-black">{dec}</p>
                   </div>
                 </div>
 
@@ -109,14 +109,14 @@ const InfoSection = ({
 
 
 InfoSection.defaultProps = {
-    heading: "",
-    description1: "",
-    description2: "",
-    description3: "",
-    points: [],
-    imageSrc: "",
-    link: "#",
-    linkText: "Learn More",
+  heading: "",
+  description1: "",
+  description2: "",
+  description3: "",
+  points: [],
+  imageSrc: "",
+  link: "#",
+  linkText: "Learn More",
 };
 
 export default InfoSection;

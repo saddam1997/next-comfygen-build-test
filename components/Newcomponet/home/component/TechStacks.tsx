@@ -77,27 +77,25 @@ export default function TechStacks({
             {STACKS[activeTab].map((item: any, index) => (
               <div
                 key={index}
-                className="bg-[#050C3A] cursor-pointer hover:border hover:border-red-400 rounded-xl p-6 flex flex-col items-center justify-center hover:scale-105 transition"
+                className="bg-[#050C3A] overflow-hidden cursor-pointer hover:border hover:border-red-400 rounded-xl p-6 flex flex-col items-center justify-center hover:scale-105 transition"
               >
-
-
                 {item.link ? (
                   <Link
                     href={item.link}
                     aria-label={`Go to ${item.name}`}
                   >
-                    <div className="w-14 h-14 mb-4 relative">
+                    <div className="w-14 h-14 mb-4 relative overflow-hidden">
                       <Image loading="lazy" src={item.img} alt={item.name} fill className="object-contain" />
                     </div>
-                    <p className="text-white text-sm font-medium">{item.name}</p>
+                    <p className="text-white text-sm font-medium">{item?.name}</p>
                   </Link>
                 ) : (
                   <div
                   >
-                    <div className="w-14 h-14 mb-4 relative">
+                    <div className="w-14 h-14 mb-4 relative overflow-hidden">
                       <Image loading="lazy" src={item.img} alt={item.name} fill className="object-contain" />
                     </div>
-                    <p className="text-white text-sm font-medium">{item.name}</p>
+                    <p className="text-white text-sm text-center font-medium">{item.name}</p>
                   </div>
                 )}
 
