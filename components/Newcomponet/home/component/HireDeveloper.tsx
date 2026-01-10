@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
 
 interface HireDeveloperProps {
   heading: string;
@@ -36,20 +38,11 @@ const HireDeveloper = ({ heading, description, points }: HireDeveloperProps) => 
         "
       >
         <div className="container mx-auto lg:px-12">
-
-          {/* Heading */}
-          <h2
-            className="
-              text-white font-semibold font-poppins
-              text-lg md:text-[40px]
-              leading-snug
-            "
-          >
-            {heading}
-          </h2>
-
+          <Heading text={heading} align="left" color="#FFFFFF" />
+         
+          <Paragraph html={description} color="#FFFFFF" align="left" />
           {/* Description */}
-          <p
+          {/* <p
             className="
               mt-4
               max-w-5xl
@@ -58,7 +51,7 @@ const HireDeveloper = ({ heading, description, points }: HireDeveloperProps) => 
               leading-relaxed
             "
             dangerouslySetInnerHTML={{ __html: description }}
-          />
+          /> */}
 
           {/* Points + CTA */}
           <div

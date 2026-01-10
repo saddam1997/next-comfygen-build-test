@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import useInfiniteScroll from "../../../../hooks/useInfiniteScroll";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
 
 export default function Portfolios({
   heading,
@@ -51,11 +53,8 @@ export default function Portfolios({
     <section className="bg-gray-50 py-6 md:py-16 overflow-hidden">
       {/* Header */}
       <div className="container mx-auto text-center mb-6 md:mb-14 px-4">
-        <h2 className="text-lg md:text-5xl font-bold mb-4">{heading}</h2>
-        <p
-          className="text-sm md:text-lg text-gray-600 max-w-4xl mx-auto"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <Heading text={heading} align="center" />
+       <Paragraph html={description} align="center" />
       </div>
 
       {/* TOP → LEFT */}

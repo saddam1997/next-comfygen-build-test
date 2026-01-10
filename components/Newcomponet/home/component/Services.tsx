@@ -2,9 +2,13 @@ import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Heading } from '../ui/Heading';
+import { Paragraph } from '../ui/Paragraph';
+import { FeatureList } from '../ui/FeatureList';
+import { SubHeading } from '../ui/SubHeading';
 
-export default function Services({ heading = "", description = "", serviceskey = [], servicedata = {} }) {
-    const [activeService, setActiveService] = useState('AI Development');
+export default function Services({ heading = "", description = "", serviceskey = [], servicedata = {}, defaultActiveService = "" }: any) {
+    const [activeService, setActiveService] = useState(defaultActiveService || serviceskey?.[0] || "");
 
     const activeData = servicedata?.[activeService] || {};
 
@@ -16,14 +20,15 @@ export default function Services({ heading = "", description = "", serviceskey =
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="lg:text-2xl xl:text-[45px] font-semibold font-poppins mb-6">
-                        <span className="bg-gradient-to-r from-[#C05FE2] via-[#DD3D98] to-[#2A39DD] text-transparent bg-clip-text">
-                            {heading}
-                        </span>
-                    </h2>
-                    <p className="text-[#FFFFFF] lg:text-sm xl:text-[20px] xl:leading-loose font-poppins font-normal max-w-[1525px] mx-auto" dangerouslySetInnerHTML={{ __html: description }}>
-
-                    </p>
+                    <Heading text={heading}
+                        gradient={{
+                            from: "#C05FE2",
+                            via: "#DD3D98",
+                            to: "#2A39DD",
+                        }}
+                        align="center"
+                    />
+                    <Paragraph html={description} align="center" color="#FFFFFF" />
                 </div>
 
                 {/* Main Content Container */}
@@ -31,7 +36,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                     <div className="grid lg:grid-cols-2 xl:grid-cols-[400px,1fr] gap-8 ">
                         {/* Services Menu */}
                         <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 scroll-hide ">
-                            {serviceskey.map((service) => (
+                            {serviceskey.map((service: any) => (
                                 <ul
                                     key={service}
                                     onClick={() => setActiveService(service)}
@@ -40,7 +45,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                                         : 'bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]'
                                         }`}
                                 >
-                                    <li>{service}</li>
+                                    <SubHeading text={service} color={activeService === service ? "#FFFFFF" : "#000000"} />
                                 </ul>
                             ))}
                         </div>
@@ -48,8 +53,7 @@ export default function Services({ heading = "", description = "", serviceskey =
 
                         {/* Service Details */}
                         <div className="bg-[#000823]/95 max-w-[1258px] rounded-2xl p-8 py-16 relative overflow-hidden " style={{ backgroundImage: "url('https://www.comfygen.com/comfygen-images/home/service-bg.webp')" }}>
-                            {/* <div className="absolute inset-0 bg-[#000823]/70"></div> */}
-                            {/* Background Decoration */}
+
                             <div className="absolute -right-2 -bottom-4 w-96 h-96 ">
                                 <Image
                                     width={640}
@@ -62,28 +66,20 @@ export default function Services({ heading = "", description = "", serviceskey =
                             </div>
 
                             <div className="relative z-10">
-                                <h3 className="text-sm lg:text-xl xl:text-[36px] font-medium font-poppins text-[#FFFFFF] mb-2">
-                                    {activeService}
-                                </h3>
+                                <SubHeading text={activeService} color="#FFFFFF" />
+                                <div className='mt-4 mb-4'>
+                                    <Paragraph html={desc} color="#FFFFFF" align="left" />
+                                </div>
 
-                                <p
-                                    className="text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mb-8 md:mb-8 "
-                                    dangerouslySetInnerHTML={{ __html: desc }}
-                                ></p>
-
-                                {/* <p className="text-[20px] font-medium font-poppins text-[#FFFFFF] mb-14 leading-relaxed" dangerouslySetInnerHTML={{ __html: servicedata[activeService].description?.slice(0, 300) + "...." }}>
-                                    
-                                </p> */}
 
                                 <div className="space-y-3 md:mb-10">
                                     {features?.map((feature: any, index: any) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-center gap-2 text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3"
-                                       >
-                                         - {""} <span className="text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3"  dangerouslySetInnerHTML={{ __html: feature }}></span> 
 
-                                        </li>
+                                        <div className='flex items-center'>
+                                            <span className="flex items-center gap-2 text-sm lg:text-base xl:text-[16px] font-medium font-poppins text-[#FFFFFF] mr-3">-</span>
+                                            <FeatureList items={[feature]} color="#FFFFFF" key={index} />
+                                        </div>
+
                                     ))}
                                 </div>
                                 <Link href="/contact-us">
@@ -103,7 +99,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                 </div>
 
                 <div className="lg:hidden space-y-3 lg:h-[700px] lg:overflow-y-auto pr-2 scroll-hide">
-                    {serviceskey.map((service) => {
+                    {serviceskey.map((service: any) => {
                         const isActive = activeService === service;
                         const data = servicedata?.[service] || {};
 
@@ -117,7 +113,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                                     }
                                     className={`w-full text-left px-6 py-4 text-sm lg:text-lg xl:text-[22px] font-poppins rounded-xl font-medium transition-all duration-300 ${isActive ? "bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] text-white" : "bg-gradient-to-r from-[#EDF1FD] to-[#DBE0FD]"}`}
                                 >
-                                    <li>{service}</li>
+                                    <SubHeading text={service} color={activeService === service ? "#FFFFFF" : "#000000"} />
                                 </ul>
 
 
@@ -147,20 +143,12 @@ export default function Services({ heading = "", description = "", serviceskey =
 const ServiceDetails = ({ title, desc, features }: any) => {
     return (
         <div className="bg-[#000823] rounded-xl p-5 mt-4 text-white">
-            <h2 className="text-lg font-semibold mb-3">{title}</h2>
-
-            <p
-                className="text-sm mb-4 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: desc }}
-            />
-
-            <div className="space-y-2 mb-4">
+            <SubHeading text={title} color="#FFFFFF" />
+            <Paragraph html={desc} color="#FFFFFF" align="left" />
+          
+            <div className="space-y-2 mb-4 mt-4">
                 {features?.map((feature: any, i: number) => (
-                    <li
-                        key={i}
-                        className="text-sm flex items-start gap-2"
-                        dangerouslySetInnerHTML={{ __html: `• ${feature}` }}
-                    />
+                    <FeatureList items={[feature]} color="#FFFFFF" key={i} />
                 ))}
             </div>
             <Link href="/contact-us">

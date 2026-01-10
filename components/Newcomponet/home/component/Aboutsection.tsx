@@ -3,6 +3,9 @@ import React from "react";
 import { Check, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
+import { FeatureList } from "../ui/FeatureList";
 
 export default function Aboutsection({
     heading = "",
@@ -60,41 +63,25 @@ export default function Aboutsection({
                             </span>
                         </div>
 
-                        <h2 className="text-sm lg:text-lg xl:text-[45px] font-poppins font-semibold text-[#000] lg:leading-tight">
-                            {heading}
-                        </h2>
+                        <Heading text={heading} />
 
-                        <p
-                            className="text-[#444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
-                            dangerouslySetInnerHTML={{ __html: description1 }}
-                        />
+                        <Paragraph html={description1} />
 
                         {description2 && (
-                            <p
-                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
-                                dangerouslySetInnerHTML={{ __html: description2 }}
-                            />
+                            <Paragraph html={description2} />
                         )}
 
                         {description3 && (
-                            <p
-                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
-                                dangerouslySetInnerHTML={{ __html: description3 }}
-                            />
+                            <Paragraph html={description3} />
+
                         )}
 
                         {description4 && (
-                            <p
-                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
-                                dangerouslySetInnerHTML={{ __html: description4 }}
-                            />
+                            <Paragraph html={description4} />
                         )}
 
                         {description5 && (
-                            <p
-                                className="text-[#444444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins"
-                                dangerouslySetInnerHTML={{ __html: description5 }}
-                            />
+                            <Paragraph html={description4} />
                         )}
 
                         {/* Features List */}
@@ -108,9 +95,7 @@ export default function Aboutsection({
                                     <div className="flex-shrink-0 mt-1">
                                         <Check className="w-5 h-5 text-orange-500" />
                                     </div>
-                                    <span className="text-[#444] text-sm lg:text-sm xl:text-[20px] lg:leading-relaxed font-normal font-poppins">
-                                        {feature}
-                                    </span>
+                                   <FeatureList items={[feature]} />
                                 </div>
                             ))}
                         </div>

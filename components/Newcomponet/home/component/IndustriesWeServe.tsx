@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Heading } from '../ui/Heading';
+import { Paragraph } from '../ui/Paragraph';
+import { SubHeading } from '../ui/SubHeading';
 
 
 
@@ -155,13 +158,10 @@ const IndustriesWeServe = ({
         <section className=" bg-gradient-to-br from-pink-100 via-rose-50 to-pink-100 py-8 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
                 {/* Header */}
-                <div className="text-center lg:mb-16 mb-2">
-                    <h2
-                        className="text-4xl md:text-[45px] font-poppins  text-[#000000] font-SemiBold mb-4 ">
-                        {heading}
-                    </h2>
-                    <p className="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: description }}>
-                    </p>
+                <div className="text-center lg:mb-4 mb-2">
+                    <Heading text={heading} align="center" />
+                    <Paragraph html={description} align="center" />
+                   
                 </div>
 
                 {/* MOBILE ONLY – HORIZONTAL SLIDER */}
@@ -174,10 +174,7 @@ const IndustriesWeServe = ({
                             //  onClick={() => industry.link && handleCardClick(industry.link)}
                             >
                                 <div className="p-4 flex items-center justify-between border-b">
-                                    <h3 className="text-[18px] font-poppins font-medium">
-                                        {industry.title}
-                                    </h3>
-
+                                    <SubHeading text={industry.title} />
                                     <Link
                                         href={industry.link || "#"}
                                         className="bg-red-500 text-white rounded-full p-2 group"
@@ -187,9 +184,7 @@ const IndustriesWeServe = ({
                                 </div>
 
                                 <div className="px-4 py-2 h-16 overflow-hidden">
-                                    <p className="text-sm text-[#616161]">
-                                        {industry.description.slice(0, 70)}...
-                                    </p>
+                                    <Paragraph html={industry.description} />
                                 </div>
 
                                 <div className="p-4">

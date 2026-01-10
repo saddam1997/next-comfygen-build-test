@@ -3,6 +3,8 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
 
 type Feature = {
   title: string;
@@ -33,14 +35,9 @@ export default function WhyChooseUs({
         {/* Heading */}
         <div className="flex justify-start max-w-2xl">
           <div className="space-y-4">
-            <h2 className="text-xl flex justify-start md:text-[45px] font-semibold text-gray-800">
-              {heading}
-            </h2>
+            <Heading text={heading} align="left" color="#000000" />
+            <Paragraph html={description} color="#555555" align="left" />
 
-            <p
-              className="mt-3 text-start text-gray-600 text-sm md:text-base"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
 
             <div className="mt-3 flex justify-start">
               <Link href="/contact-us" aria-label="Connect Experts" className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-white font-medium">

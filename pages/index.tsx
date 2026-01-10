@@ -1,10 +1,10 @@
-import React, { Suspense, useState } from "react";
+import React, {  useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./index.json"
-// ✅ ABOVE THE FOLD – SSR (LCP & SEO)
+import JSON_DATA from "../DATA/home/index.json"
 import Herosection from "../components/Newcomponet/home/Herosection";
-import FaqWithImage from "../components/Newcomponet/home/FaqWithImage";
+import { useModal } from "../hooks/useModal";
+import { fetchSSR } from "../lib/server/fetchSSR";
 
 
 const Header = dynamic(
@@ -66,23 +66,25 @@ const ClientTestimonials = dynamic(
   () => import("../components/Newcomponet/home/component/ClientTestimonials"),
   { ssr: true }
 );
+
+
+const FaqWithImage = dynamic(
+  () => import("../components/Newcomponet/home/FaqWithImage"),
+  { ssr: true }
+);
+
+
+
 const BlogSection = dynamic(() => import("../components/Newcomponet/SectionCompoent/BlogSection"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
 });
 
-// const Faq = dynamic(
-//   () => import("../components/Newcomponet/SectionCompoent/Faq"),
-//   { ssr: false }
-// )
 
 
 
 export default function Home(props: any) {
-
+  const {typedText,  openModal, closeModal, setTalkToExpertModal, talkToExpertModal } = useModal();
   let { initialData } = props;
-  const [typedText] = useState("");
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-
   const websiteJsonLd = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -94,70 +96,6 @@ export default function Home(props: any) {
       "query-input": "required name=search_term_string",
     },
   };
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const portfoliodata = [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup-new.webp",
-      "title": "Urban Ride-Hailing Startup",
-      "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
-      "link": "/portfolio/ride-hailing-app"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio-new.webp",
-      "title": "Fitclub Mobile App",
-      "description": "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-      "link": "https://www.comfygen.com/portfolio/fitclub-app"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
-      "title": "Great Wallet Application",
-      "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development-new.webp",
-      "title": "Food Delivery App – Food 24Hr",
-      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-      "link": "/portfolio/food-delivery-app"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/love-horoscope.webp",
-      "title": "Love Horoscope App",
-      "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
-      "link": "/portfolio/love-horoscope-app"
-    },
-  ]
-
-  const Process = [
-    { title: "UI/UX Design", description: "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction." },
-    { title: "Development", description: "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
-    { title: "Prototype", description: "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process." },
-    {
-      title: "Requirement Gathering",
-      description: "Our developers use advanced tools and technologies to create a robust backend and a seamless front end, ensuring high performance and easy navigation for your application."
-    },
-    {
-      title: "Prototype",
-      description: "Through rigorous manual and automated testing, we identify and resolve bugs, ensuring the application meets the highest standards for functionality, reliability, and performance."
-    },
-    {
-      title: "Quality Assurance",
-      description: "Once tested, we launch your app on the preferred platform, ensuring compliance with all requirements to make it accessible and ready for your target audience."
-    },
-    {
-      title: "Support & Maintenance",
-      description: "Post-launch, we provide ongoing support and maintenance, monitoring performance, updating features, and keeping your app aligned with market trends."
-    },
-
-  ];
 
   const LocalBusiness = {
     "@context": "https://schema.org",
@@ -356,6 +294,7 @@ export default function Home(props: any) {
           description="Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and mobile app development services."
           serviceskey={JSON_DATA.serviceskey}
           servicedata={JSON_DATA.servicesData1}
+           defaultActiveService="Mobile App Development"
         />
         <Portfolios
           heading="Explore Our Web & App Development Portfolio"
@@ -378,7 +317,7 @@ export default function Home(props: any) {
           description=" To deliver custom mobile app development services, our web and
             mobile app development company incorporates a streamlined
             development lifecycle to meet the business needs."
-          processSlides={Process}
+          processSlides={JSON_DATA.Process}
         />
         <TechStacks
           heading="Our Edgy Tech-Stacks Use for Development"
@@ -407,43 +346,32 @@ export default function Home(props: any) {
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}
         />
-
-        {/* <Faq
-            faqData={JSON_DATA.Frequently}
-            title="White Label Crypto Exchange "
-          /> */}
-
         <FaqWithImage
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions?"
         />
-
         <BlogSection initialData={initialData} />
-
-
       </div>
-
-
     </>
   );
 }
 
 
+export async function getServerSideProps(ctx: any) {
+  const data = await fetchSSR({
+    ctx,
+    endpoint: "/api/v1/posts?per_page=3",
+  });
 
-export async function getServerSideProps({ res }) {
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  if (!resData.ok) {
-    // console.error("API Request failed:", await resData);
-    return { props: { initialData: [] } };
-  }
-  // console.log(resData)
-  const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
+  return {
+    props: {
+      initialData: data ?? [],
+    },
+  };
 }
+
+
+
 
 
 

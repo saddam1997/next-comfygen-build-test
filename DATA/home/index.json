@@ -400,7 +400,36 @@
     "title": "Modus Operandi Of Our Service",
     "decs": "In order to ensure that our clients get their software solutions on time, our blockchain development team follows proven and crucial strategies. Take a look at our model of the development process"
   },
+
   "Process": [
+    { "title": "UI/UX Design", "description": "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction." },
+    { "title": "Development", "description": "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
+    { "title": "Prototype", "description": "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process." },
+    {
+      "title": "Requirement Gathering",
+      "description": "Our developers use advanced tools and technologies to create a robust backend and a seamless front end, ensuring high performance and easy navigation for your application."
+    },
+    {
+      "title": "Prototype",
+      "description": "Through rigorous manual and automated testing, we identify and resolve bugs, ensuring the application meets the highest standards for functionality, reliability, and performance."
+    },
+    {
+      "title": "Quality Assurance",
+      "description": "Once tested, we launch your app on the preferred platform, ensuring compliance with all requirements to make it accessible and ready for your target audience."
+    },
+    {
+      "title": "Support & Maintenance",
+      "description": "Post-launch, we provide ongoing support and maintenance, monitoring performance, updating features, and keeping your app aligned with market trends."
+    }
+
+  ],
+
+
+
+
+
+
+  "Process1": [
     {
       "num": "0",
       "icon": "BiMobileVibration",

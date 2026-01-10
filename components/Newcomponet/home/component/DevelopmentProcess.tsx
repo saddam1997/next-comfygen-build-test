@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import ProcessSlider from "../../comman/ProcessSlider";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
 
 
 
@@ -36,13 +38,8 @@ export default function DevelopmentProcess({ heading, description,
       <div className="relative z-10 container mx-auto px-6  ">
         {/* Heading */}
         <div className="text-center container mx-auto">
-          <h2 className="text-lg md:text-4xl font-bold text-pink-600">
-            {heading}
-
-          </h2>
-          <p className="mt-4 text-sm text-center font-medium text-gray-600" dangerouslySetInnerHTML={{ __html: description }}>
-
-          </p>
+          <Heading text={heading} align="center" color="#FF383C" />
+          <Paragraph html={description} align="center" />
         </div>
 
         <div className="hidden md:block">

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Heading } from "../ui/Heading";
+import { Paragraph } from "../ui/Paragraph";
 
 type StackItem = {
   img: string;
@@ -42,14 +44,15 @@ export default function TechStacks({
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#0A1A5E,transparent_60%)]" />
 
       <div className="relative container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#F16024] via-[#B92A6C] to-[#EE363E] bg-clip-text text-transparent">
-          {heading}
-        </h2>
 
-        <p
-          className="mt-4 max-w-3xl mx-auto text-gray-300"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <Heading text={heading} align="center" gradient={{
+          from: "#F16024",
+          via: "#B92A6C",
+          to: "#EE363E",
+        }} />
+
+        <Paragraph html={description} align="center" color="#CCCCCC" />
+
 
         {/* Tabs */}
         <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -71,7 +74,7 @@ export default function TechStacks({
         {/* Cards */}
         <div className="mt-10 bg-[#0B1445] rounded-2xl p-6 md:p-10 max-w-6xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
-            {STACKS[activeTab].map((item:any, index) => (
+            {STACKS[activeTab].map((item: any, index) => (
               <div
                 key={index}
                 className="bg-[#050C3A] cursor-pointer hover:border hover:border-red-400 rounded-xl p-6 flex flex-col items-center justify-center hover:scale-105 transition"
@@ -89,7 +92,7 @@ export default function TechStacks({
                     <p className="text-white text-sm font-medium">{item.name}</p>
                   </Link>
                 ) : (
-                 <div
+                  <div
                   >
                     <div className="w-14 h-14 mb-4 relative">
                       <Image loading="lazy" src={item.img} alt={item.name} fill className="object-contain" />
