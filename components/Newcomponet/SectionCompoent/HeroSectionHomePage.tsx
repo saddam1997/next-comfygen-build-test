@@ -61,7 +61,7 @@ export default function HeroSection(props: any) {
                 style={{ contain: "layout paint" }}
               >
                 <span className="block text-2xl md:text-2xl xl:text-4xl font-medium">
-                  Blockchain Development
+                  Web & Mobile App Development
                 </span>
                 <b className="block">Solution & Service Provider</b>
               </h1>

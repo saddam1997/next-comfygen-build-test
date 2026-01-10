@@ -366,6 +366,20 @@ export default function Home(props: any) {
 
           />
         </div>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Custom Web & Mobile App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and mobile app development services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+        
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries "
@@ -383,18 +397,7 @@ export default function Home(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Custom Web & Mobile App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">Get a scalable web or mobile app for your business with modern systems and futuristic technologies implemented. Open the gateways for better growth opportunities with prominent web and mobile app development services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
 
         <section className="py-8">
           <Portfolio
