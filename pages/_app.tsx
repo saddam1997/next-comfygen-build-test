@@ -1,5 +1,5 @@
-import "../styles/globals.css";
-import React, { useEffect, useState } from "react";
+import "../styles/globals.css";//8888 8888 // Need to make very short css file. 
+import React, { useEffect, useState } from "react"; //8888 8888 // Unusual import
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { Poppins } from "next/font/google";
@@ -10,10 +10,6 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
-
-
-
-
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
