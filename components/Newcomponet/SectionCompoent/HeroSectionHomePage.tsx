@@ -26,7 +26,11 @@ export default function HeroSection(props: any) {
 
   return (
     <section
-      className="relative min-h-screen lg:min-h-[650px] flex items-center bg-[#5951cd]"
+      className="relative pt-20 pb-6 
+             sm:pt-20 sm:pb-10 
+             lg:pt-[70px] lg:pb-[70px]
+             h-full flex flex-col justify-center 
+             overflow-hidden bg-[#5951cd] lg:bg-transparent"
       itemScope
       itemType="https://schema.org/WebPage"
     >
@@ -39,7 +43,7 @@ export default function HeroSection(props: any) {
           fill
           sizes="100vw"
           quality={75}
-          className="object-cover object-center pointer-events-none"
+          className="object-cover object-center -z-10 hidden md:block  bg-no-repeat bg-fixed"
         />
       )}
 
