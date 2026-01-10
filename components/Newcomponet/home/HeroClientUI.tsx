@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { TbX } from "react-icons/tb";
-import { useEffect, useState } from "react";
+// import { TbX } from "react-icons/tb";
+// import { useEffect, useState } from "react";
 
 const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
   ssr: false,
@@ -11,21 +11,30 @@ const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
 
 export default function HeroClientUI(props: any) {
 
-  const [showImage, setShowImage] = useState(false);
+  // const [showImage, setShowImage] = useState(false);
 
-  useEffect(() => {
-    // 🔑 This guarantees image is NOT part of LCP
-    if ("requestIdleCallback" in window) {
-      (window as any).requestIdleCallback(() => setShowImage(true));
-    } else {
-      setTimeout(() => setShowImage(true), 2500);
-    }
-  }, []);
+  // useEffect(() => {
+  //   // 🔑 This guarantees image is NOT part of LCP
+  //   if ("requestIdleCallback" in window) {
+  //     (window as any).requestIdleCallback(() => setShowImage(true));
+  //   } else {
+  //     setTimeout(() => setShowImage(true), 2500);
+  //   }
+  // }, []);
 
   return (
     <>
 
-      {showImage && (
+      <Image
+        src={props.bgImage}
+        alt=""
+        fill
+        sizes="(max-width: 768px) 100vw, 1200px"
+        className="object-cover"
+        priority={false}
+        loading="lazy"
+      />
+      {/* {showImage && (
         <>
           <Image
             src={props.bgImage}
@@ -37,9 +46,9 @@ export default function HeroClientUI(props: any) {
             loading="lazy"
           />
 
-          {/* <div className="absolute inset-0 bg-black/90" /> */}
+         
         </>
-      )}
+      )} */}
 
       <div
         className="absolute inset-0 bg-black/60 z-10 pointer-events-none"
