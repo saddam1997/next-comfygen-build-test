@@ -2,7 +2,7 @@ import HerosectionFroLcp from "./HerosectionFroLcp";
 import dynamic from "next/dynamic";
 
 const HeroClientUI = dynamic(() => import("./HeroClientUI"), {
-  ssr: false,
+  ssr: true,
 });
 
 export default function Herosection(props: any) {
