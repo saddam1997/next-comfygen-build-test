@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "../DATA/home/index.json";
+import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 
 

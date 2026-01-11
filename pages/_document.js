@@ -177,7 +177,6 @@ export default function Document() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
         {/* Viewport & Mobile Meta */}
-
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
@@ -186,8 +185,6 @@ export default function Document() {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Comfygen Technologies" />
-
-
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
 

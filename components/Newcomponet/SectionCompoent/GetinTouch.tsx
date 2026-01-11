@@ -52,12 +52,12 @@ const Form = () => (
         </h2>
 
         {/* Top Contact Info */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
           
           {/* Phone */}
           <a
             href="tel:9587867258"
-            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+            className="flex items-center gap-4 text-white md:justify-center justify-start"
           >
             <Image src="https://www.comfygen.com/image/call-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
             <div className="text-left">
@@ -69,7 +69,7 @@ const Form = () => (
           {/* Email */}
           <a
             href="mailto:sales@comfygen.com"
-            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+            className="flex items-center gap-4 text-white md:justify-center justify-start"
           >
             <Image src="https://www.comfygen.com/image/mail-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
             <div className="text-left">
@@ -81,7 +81,7 @@ const Form = () => (
           {/* Website */}
           <a
             href="https://www.comfygen.com"
-            className="flex items-center gap-4 text-white justify-center sm:justify-start"
+            className="flex items-center gap-4 text-white md:justify-center justify-start"
           >
             <Image src="https://www.comfygen.com/image/site-form-icon.svg" alt="" height={56} width={55} loading="lazy" />
             <div className="text-left">
@@ -92,8 +92,9 @@ const Form = () => (
         </div>
 
         {/* Social Icons */}
-         <div className="flex justify-center gap-4">
-            <button className=" rounded-full backdrop-blur-sm hover:bg-white/20 transition text-white">
+         <div className="flex justify-start md:justify-center  gap-4">
+           <div className="flex items-center gap-8 ">
+             <button className="rounded-full backdrop-blur-sm hover:bg-white/20 transition text-white">
               <a
                 target="_blank"
                 href="https://www.facebook.com/comfygen.technologies"
@@ -157,6 +158,7 @@ const Form = () => (
                 />
               </a>
             </button>
+           </div>
           </div>
       </div>
 

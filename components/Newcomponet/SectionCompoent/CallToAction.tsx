@@ -23,7 +23,7 @@ const CallToAction = ({
                         <p className="text-base text-white" dangerouslySetInnerHTML={{__html: text}}>
                         </p>
                         <div className="mt-7 z-10 relative">
-                            <Link href={buttonLink || "#"} passHref>
+                            <Link href={buttonLink || "#"}>
                                 <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] bg-[#0C0F18] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
                                     {buttonText} <MdOutlineArrowOutward />
                                 </button>
@@ -35,7 +35,7 @@ const CallToAction = ({
                             <Image
                                 className="action-img hidden sm:block"
                                 src={imageSrc}
-                                alt={imageAlt || "Call to Action"}
+                                alt={"call to action"}
                                 width={640}
                                 height={360}
                                 priority

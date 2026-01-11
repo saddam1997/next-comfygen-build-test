@@ -147,142 +147,154 @@
   "servicesData": [
     {
       "title": "Astrology Consultation App Development",
-      "description": "Comfygen provides astrology consultation app development services, allowing users to connect with expert astrologers through live chat, video calls, and voice consultations. We integrate AI-powered predictions, real-time horoscope analysis, and secure payment gateways to enhance the user experience. Our Astrology apps support multi-language options, astrologer ratings, and appointment scheduling for a seamless and personalized astrology consultation platform.",
+      "description": "Comfygen is a prominent astrology & horoscope app development company. We specialize in creating feature-rich astrology consultation apps that connect users with professional astrologers through chat, audio, and video calls, ensuring real-time guidance, secure payments, and a smooth user experience across platforms.",
       "features": [
-        "Live chat, voice, and video consultations",
-        "AI-driven horoscope and predictions",
-        "Secure booking and payment integration"
+        "Live astrologer chat & video call",
+        "Pay-per-minute consultation",
+        "Secure payment gateway",
+        "Rating & review system"
       ]
     },
     {
       "title": "Custom Astrology App Development",
-      "description": "We specialize in custom astrology app development, crafting scalable, feature-rich, and user-friendly Astrology apps tailored to your business needs. Whether you need daily horoscope updates, Kundli matching, or numerology insights, we provide personalized astrology app development solutions that  integrated with AI/ML, AR/VR, and blockchain security to deliver an innovative and immersive experience for users worldwide.",
+      "description": "Our Custom Astrology App Development services help businesses create fully personalized astrology apps with unique features, branding, and scalable architecture to match specific business goals and target audiences.",
       "features": [
-        "Customizable astrology features",
-        "AI-driven astrological predictions",
-        "Secure and scalable app infrastructure"
+        "Custom UI/UX design",
+        "Scalable app architecture",
+        "API & third-party integration",
+        "Android, iOS & web support"
       ]
     },
     {
       "title": "Horoscope App Development",
-      "description": "Comfygen develops horoscope apps that provide daily, weekly, monthly, and yearly horoscope predictions powered by AI-based astrology algorithms. Our apps feature zodiac compatibility analysis, birth chart readings, and real-time astrological insights, ensuring users receive accurate and engaging astrology content. With multi-device support, users can access their horoscopes anytime, anywhere.",
+      "description": "We offer Horoscope App Development solutions that deliver daily, weekly, and yearly horoscope predictions with accurate insights, push notifications, and personalized content for better user engagement and retention.",
       "features": [
-        "AI-powered daily horoscope updates",
-        "Zodiac compatibility and birth chart analysis",
-        "Multi-language and multi-device support"
+        "Daily horoscope updates",
+        "Personalized zodiac predictions",
+        "Push notifications",
+        "Multi-language support"
       ]
     },
     {
       "title": "Kundli Matchmaking App Development",
-      "description": "We offer Kundli app development solutions that generate accurate birth charts, detailed astrological reports, and Kundli matchmaking features. Our astrology apps use advanced Vedic astrology algorithms to analyze planetary positions and provide users with insights into their future. Integrated live astrologer consultations and AI-based remedies enhance the Kundli experience.",
+      "description": "Our Kundli Matchmaking App Development services enable users to match horoscopes, analyze doshas, and check compatibility for marriage using accurate astrological algorithms and easy-to-understand reports.",
       "features": [
-        "AI-powered Kundli and horoscope generation",
-        "Marriage compatibility and matchmaking analysis",
-        "Integrated astrologer consultations"
+        "Kundli generation & matching",
+        "Guna Milan & dosha analysis",
+        "Detailed compatibility reports",
+        "Secure user profiles"
       ]
     },
     {
       "title": "Numerology App Development",
-      "description": "Comfygen’s numerology app development solution provide users with name numerology, life path numbers, lucky numbers, and numerology-based predictions. Our apps integrate AI-driven calculations, interactive numerology charts, and personalized reports, making it easy for users to explore their destiny, career path, and personal growth through numbers.",
+      "description": "We are one of the top-rated astrology app development company in India. Here, we have industry's most qualified and talented astrology application developers providing smart Numerology App Development solutions that provide name and date-based numerology predictions, life path analysis, and personalized insights with simple dashboards and automated calculation systems.",
       "features": [
-        "AI-based numerology calculations",
-        "Personalized numerology reports",
-        "Interactive charts and destiny analysis"
+        "Name & date numerology",
+        "Life path number analysis",
+        "Personalized predictions",
+        "Easy-to-use interface"
       ]
     },
     {
       "title": "Palmistry App Development",
-      "description": "Our palmistry app development services include AI-powered palm reading solutions that analyze hand lines, mounts, and shapes to predict personality traits, fortune, and life events. Users can scan their palms using their smartphone cameras, and the app will generate detailed palm readings with accurate insights based on ancient palmistry principles.",
+      "description": "Our Palmistry app development services help businesses launch apps that analyze palm images and provide detailed predictions using advanced image processing and astrology logic for accurate and engaging results.",
       "features": [
-        "AI-based palm reading and analysis",
-        "Hand scan for accurate predictions",
-        "Personalized fortune and personality insights"
+        "Palm image upload",
+        "AI-based palm analysis",
+        "Detailed prediction reports",
+        "Secure data handling"
       ]
     },
     {
       "title": "Astrology Dating App Development",
-      "description": "Our astrology <a href='https://www.comfygen.com/dating-app-development' class='underline font-semibold'>dating app development services</a> use zodiac compatibility algorithms to match users based on their birth charts, planetary positions, and astrological profiles. Our apps include real-time matchmaking, horoscope-based dating suggestions, and interactive chat features, ensuring users find partners who align with their cosmic energies.",
+      "description": "Our team presents <a href='https://www.comfygen.com/dating-app-development' class='underline font-semibols'>astrology dating app development</a> that match users based on zodiac signs, birth charts, and compatibility scores, creating meaningful connections through astrology-based matchmaking algorithms and modern social features.",
       "features": [
-        "AI-powered zodiac compatibility analysis",
-        "Horoscope-based matchmaking and dating suggestions",
-        "Interactive chat and real-time matching"
+        "Zodiac-based matching",
+        "Compatibility score system",
+        "Chat & profile matching",
+        "Privacy & security controls"
       ]
     },
     {
       "title": "Health & Wealth Astrology App Development",
-      "description": "Our health & wealth astrology apps provide users with astrological insights on health, career growth, and financial stability. We integrate AI-powered astrology reports, wellness predictions, and career guidance, allowing users to understand how planetary influences impact their well-being and wealth prospects.",
+      "description": "Our health & wealth astrology app development solutions provide personalized predictions related to career, finance, and well-being, helping users make better life decisions through astrological insights and reports.",
       "features": [
-        "Personalized health and wealth astrology reports",
-        "Career and financial astrology insights",
-        "AI-driven remedial solutions"
+        "Health & finance predictions",
+        "Personalized astrology reports",
+        "Daily guidance alerts",
+        "Subscription-based access"
       ]
     },
     {
       "title": "Astrologer Booking App Development",
-      "description": "Comfygen develops astrologer booking apps that allow users to schedule consultations with expert astrologers via live chat, video calls, and voice sessions. Our apps feature appointment scheduling, astrologer ratings, and secure payment gateways, ensuring seamless bookings and user-friendly interactions.",
+      "description": "We design astrologer booking apps that allow users to find, book, and consult astrologers instantly with real-time availability, scheduling features, and seamless payment systems.",
       "features": [
-        "Instant astrologer booking and consultation",
-        "Secure payment and appointment scheduling",
-        "Astrologer reviews and rating system"
+        "Astrologer search & booking",
+        "Real-time availability",
+        "Appointment scheduling",
+        "Secure online payments"
       ]
     },
     {
       "title": "Astrology Ecommerce App Development",
-      "description": "We build astrology eCommerce apps that allow businesses to sell astrological products like gemstones, tarot cards, astrology books, and spiritual items. Our solutions include AI-powered product recommendations, secure payment integration, and user-friendly shopping experiences to drive sales and engagement.",
+      "description": "Our astrology <a href='https://www.comfygen.com/e-commerce-app-development' class='underline font-semibold'>Ecommerce app development services</a> help businesses sell astrology products like gemstones, yantras, and reports through secure online stores integrated within astrology mobile applications.",
       "features": [
-        "AI-based palm reading and analysis",
-        "Secure payment gateways and order tracking",
-        "Multi-category astrology product marketplace"
+        "Astrology product listings",
+        "In-app purchases",
+        "Order & delivery tracking",
+        "Secure payment gateway"
       ]
     },
     {
       "title": "White-Label Astrology App Development",
-      "description": "Comfygen offers white-label astrology app development, allowing businesses to launch their own branded astrology platform with features like horoscope generation, Kundli matching, live astrologer consultations, and AI-driven predictions. Our solutions are fully customizable, scalable, and ready for deployment.",
+      "description": "We provide <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label astrology app development solutions</a> that allow quick market entry with ready-made, customizable astrology apps branded with your business identity and scalable features.",
       "features": [
-        "Fully customizable white-label solution",
-        "AI-driven astrology insights",
-        "Ready-to-deploy astrology platform"
+        "Ready-to-launch solution",
+        "Full branding control",
+        "Cost-effective development",
+        "Quick deployment"
       ]
     },
     {
       "title": "Astrology App Maintenance and Support Services",
-      "description": "We provide comprehensive maintenance and support services for astrology apps, ensuring they remain updated, secure, and fully optimized. Our services include performance monitoring, bug fixes, security updates, and feature enhancements, ensuring a seamless experience for users.",
+      "description": "Our astrology app maintenance and support services make sure your app runs smoothly with regular updates, security patches, performance optimization, and technical support for long-term success.",
       "features": [
-        "24/7 technical support and maintenance",
-        "Regular updates and performance optimization",
-        "Security patches and bug fixes"
+        "Regular app updates",
+        "Security & bug fixes",
+        "Performance monitoring",
+        "24/7 technical support"
       ]
     }
   ],
   "servicesData1": [
     {
-      "title": "Enhanced User Engagement",
-      "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
+      "title": "Reach a Global Audience",
+      "description": "Astrology apps let your business connect with users worldwide. People can access horoscopes, predictions, and consultations anytime, anywhere, increasing your app’s reach and engagement.",
       "features": []
     },
     {
-      "title": "Scalable and Personalized Services",
-      "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
+      "title": "Multiple Revenue Opportunities",
+      "description": "<a href='https://www.comfygen.com/blog/how-astrology-apps-make-money' class='underline text-blue-600'>Monetize your astrology app</a> with subscriptions, pay-per-minute consultations, in-app purchases, and premium astrology services, creating steady income streams.",
       "features": []
     },
     {
-      "title": "Real-Time Astrological Insights",
-      "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
+      "title": "Personalized User Experience",
+      "description": "<a href='https://www.comfygen.com/blog/ai-astrology-apps-features-types-cost-to-develop-in-2025/' class='text-blue-600 fonte-semibols'>AI-powered astrology apps</a> offer daily horoscopes, personalized predictions, and recommendations, keeping users engaged and coming back to the app regularly.",
       "features": []
     },
     {
-      "title": "Global Reach and Accessibility",
-      "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
+      "title": "Build Brand Authority",
+      "description": "A well-designed astrology app positions your brand as a trusted astrology solution, attracting more users and building credibility in the market.",
       "features": []
     },
     {
-      "title": "Increased Revenue Opportunities",
-      "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
+      "title": "Real-Time Astrology Insights",
+      "description": "Users get instant predictions, kundli matching, and compatibility reports, making your app a reliable and handy tool for astrology guidance.",
       "features": []
     },
     {
       "title": "Data-Driven Decision Making",
-      "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
+      "description": "With built-in <a href='https://www.comfygen.com/data/analytics-service-provider' class='text-blue-600 underline'>analytics</a> and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
       "features": []
     }
   ],
@@ -363,7 +375,7 @@
   ],
   "pageData": {
     "title": "Why Choose Comfygen for Astrology App Development?",
-    "description": "Comfygen is a prominent astrology app development company, offering custom astrology app solutions that empower astrologers, businesses, and startups with advanced, scalable, and AI-driven technologies. Our expertise in astrology <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development</a> ensures a seamless, engaging, and feature-rich astrological experience.",
+    "description": "Comfygen is a prominent AI-powered astrology app development company, offering custom astrology app solutions that empower astrologers, businesses, and startups with advanced, scalable, and AI-driven technologies. Our expertise in astrology <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development</a> ensures a seamless, engaging, and feature-rich astrological experience.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -372,33 +384,33 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Expertise in Astrology App Development",
-        "description": "With years of experience, Comfygen specializes in astrology app development, delivering feature-rich, intuitive, and scalable solutions. Our expert team understands the astrology industry, ensuring high-performing apps tailored for astrologers, users, and astrology businesses."
+        "title": "Expertise in App Development",
+        "description": "With years of experience, Comfygen specializes in custom astrology app development, delivering feature-rich, intuitive, and scalable solutions. Our expert horoscope matching app development team understands the astrology industry, ensuring high-performing apps tailored for astrologers, users, and astrology businesses."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
         "title": "AI-Powered Smart Astrology Solutions",
-        "description": "We integrate AI-driven astrology features such as automated horoscope generation, personalized astrology readings, and real-time astrology consultations. Our intelligent AI/ML-based astrology apps enhance accuracy, engagement, and user satisfaction."
+        "description": "We integrate AI-driven features such as automated horoscope generation, personalized astrology readings, and real-time astrology consultations. Our intelligent AI/ML-based astrology apps enhance accuracy, engagement, and user satisfaction."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
         "title": "Customizable & Scalable Solutions",
-        "description": "As a trusted astrology app development company, we offer highly customizable apps with a modular architecture. Whether you need a personal astrology consultation app or a large astrology marketplace, our solutions adapt and grow with your business needs."
+        "description": "As an affordable astrology app development company for startups, we offer highly customizable apps with a modular architecture. Whether you need a personal astrology consultation app or a large astrology marketplace, our solutions adapt and grow with your business needs."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
         "title": "Cross-Platform Compatibility",
-        "description": "We develop astrology mobile apps that are compatible with Android, iOS, and web platforms. Our cross-platform solutions ensure seamless astrology consultations, horoscope generation, and Kundli matchmaking across multiple devices."
+        "description": "We develop the best astrology mobile apps that are compatible with Android, iOS, and web platforms. Our cross-platform astrology prediction app development solutions ensure seamless astrology consultations, horoscope generation, and Kundli matchmaking across multiple devices."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
         "title": "Secure & Robust App Infrastructure",
-        "description": "Security is our priority. We implement blockchain security, encrypted payments, and GDPR-compliant data protection in our astrology app development services, ensuring safe transactions, data privacy, and a secure platform for astrologers and users."
+        "description": "Security is our priority. We implement blockchain security, encrypted payments, and GDPR-compliant data protection in our online astrology app development services, ensuring safe transactions, data privacy, and a secure platform for astrologers and users."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
         "title": "End-to-End Support & Maintenance",
-        "description": "From concept to post-launch, we provide continuous maintenance, regular updates, and 24/7 technical support. Our astrology app development team make sure your app stays updated with the latest astrology trends and emerging technologies."
+        "description": "From concept to post-launch, we provide continuous maintenance, regular updates, and 24/7 technical support. Our daily horoscope app development team make sure your app stays updated with the latest astrology trends and emerging technologies."
       }
     ]
   },
@@ -623,43 +635,43 @@
   "AIPowered": [
     {
       "num": "01",
-      "title": " AI-Based Astrology Predictions",
-      "decs": "Our AI-driven astrology prediction system analyzes planetary positions and user data to deliver highly accurate, real-time horoscope readings. This feature enhances astrology app development by offering personalized insights, career guidance, and relationship compatibility analysis based on deep learning models."
+      "title": "AI-Based Astrology Predictions",
+      "decs": "We develop AI-based astrology systems that analyze birth details, planetary movements, and user behavior to deliver accurate and real-time horoscope predictions for better decision-making."
     },
     {
       "num": "02",
-      "title": " AI-Powered Kundli Generation",
-      "decs": "Our AI-powered Kundli generation system creates detailed birth charts, planetary reports, and Vedic astrology insights with unmatched accuracy. This ensures users receive precise astrological predictions, marriage compatibility analysis, and remedial solutions tailored to their life path."
+      "title": "AI-Powered Kundli Generation",
+      "decs": "Our AI-powered kundli generation feature instantly creates detailed birth charts with dosha analysis, planetary positions, and personalized reports, saving time while improving prediction accuracy."
     },
     {
       "num": "03",
       "title": "AI-Based Numerology Analysis",
-      "decs": "Comfygen’s AI-driven numerology solutions analyze name numbers, life path numbers, and lucky numbers to provide personalized numerology-based predictions. This feature enhances user engagement by offering automated numerology reports, lucky dates, and career guidance."
+      "decs": "With AI-based numerology analysis, astrology apps can generate life path numbers, name analysis, and future insights automatically, providing users with easy-to-understand and accurate numerology reports."
     },
     {
       "num": "04",
-      "title": " Chatbot-Powered Astrology Consultation",
-      "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
+      "title": "Chatbot-Powered Astrology Consultation",
+      "decs": "We integrate an AI chatbot-powered astrology consultation to offer instant guidance, answer common user questions, and provide basic predictions before connecting users with live astrologers."
     },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
-      "decs": "Our astrology app solutions integrate AI-based compatibility analysis, helping users find zodiac-compatible partners, business partners, and friendships. By using deep learning algorithms, we provide detailed love compatibility, relationship forecasts, and Vedic astrology matchmaking."
+      "decs": "Our AI-driven compatibility analysis helps users check relationship, marriage, and friendship compatibility by comparing zodiac signs, kundli data, and behavioral patterns for more reliable matching results."
     },
     {
       "num": "06",
-      "title": " Personalized Daily Horoscope",
-      "decs": "Our AI-powered horoscope generator provides daily, weekly, and monthly horoscope updates based on real-time planetary movements. This ensures users receive highly accurate and personalized astrology insights tailored to their birth charts."
+      "title": "Personalized Daily Horoscope",
+      "decs": "We build personalized daily horoscope features that use AI to study user preferences and astrology data, delivering customized daily, weekly, and monthly predictions directly to users."
     },
     {
       "num": "07",
       "title": "Voice & Image Recognition for Palmistry",
-      "decs": "We integrate AI-driven voice and image recognition for palm reading, allowing users to scan their palms for accurate fortune-telling insights. Our machine-learning algorithms analyze hand lines, mounts, and shapes to deliver detailed palmistry reports in real time."
+      "decs": "Using AI voice and image recognition, our palmistry apps analyze palm images and voice inputs to provide detailed palm reading results with higher accuracy and an interactive user experience."
     },
     {
       "num": "08",
       "title": "AI-Powered Astrological Remedies",
-      "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
+      "decs": "Our AI-powered astrological remedies feature suggests personalized solutions such as gemstones, mantras, and rituals based on user problems, planetary positions, and prediction outcomes."
     }
   ],
   "Emerging": [
