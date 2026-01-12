@@ -120,7 +120,6 @@ export default function Tech({
                       width={50}
                       height={50}
                       quality={50}
-                      priority
 
                     />
                   </div>

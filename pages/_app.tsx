@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
+import Script from "next/script";
 
 
 import footerConfig from "../pageRoute/pagedataroute.json";
@@ -22,10 +23,7 @@ const GoogleAnalytics = dynamic(
   { ssr: false }
 );
 
-const GoogleTagManager = dynamic(
-  () => import("../components/Newcomponet/GoogleComponent/GoogleTagManagerScript"),
-  { ssr: false }
-);
+
 
 const GoogleTagManagerNoScript = dynamic(
   () => import("../components/Newcomponet/GoogleComponent/GoogleTagManagerNoScript"),
@@ -91,6 +89,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const showEcommerceFooter = matchesAny(footerConfig.ecommerce);
   const isExcluded = matchesAny(footerConfig.excluded);
 
+
+
+
+
+
   return (
     <>
       {/* 🔹 Minimal global head */}
@@ -99,6 +102,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
       </Head>
+
+
+  
+      
 
       <main
         className={`${poppins.className} overflow-hidden ${router.pathname === "/comfy-test-page"
@@ -120,7 +127,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
         {/* Scripts */}
         <GoogleAnalytics />
-        <GoogleTagManager />
         <GoogleTagManagerNoScript />
         {!router.asPath.includes("/career") && <Talkchat />}
         <ContactLinks />
