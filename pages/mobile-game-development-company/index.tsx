@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -106,14 +107,14 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-        <title>Best Mobile Game Development Company In India & The USA</title>
+        <title>Mobile Game Development Company in India | Mobile Game Developers</title>
         <meta
           property="og:title"
           content="Best Mobile Game Development Company In India & The USA | Comfygen"
         />
         <meta
           name="description"
-          content="Do you want to hire a mobile game development company in India or the USA? Discover industry leaders known for cutting-edge technology and creativity. Develop your mobile game vision across iOS, Android, and web platforms with our expert developers"
+          content="Looking for a reliable mobile game development company in India? Comfygen offers custom Android and iOS game development services with engaging gameplay, high performance, and scalable solutions for businesses."
         />
         <link
           rel="canonical"
@@ -180,12 +181,12 @@ export default function Mobile(props) {
 
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mobile-game-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Mobile Game Development Company"
-            ptag="Mobile games are a popular pastime for millions of smartphone users worldwide, and businesses can leverage this trend to engage their target audience. Comfygen, a leading mobile game development company in India & the USA, offers innovative game development services that create new revenue channels for your business. With over 10+ years of expertise, we ensure the development of high-quality, custom mobile games tailored to your specific needs and specifications."
-            li="Innovative Mobile Game Development"
-            li1="Engaging Games for Business"
-            li2="Revenue-Boosting Game Solutions"
-            li3="Expert Game Development Services"
+            heading="Top Mobile Game Development Company in India"
+            ptag="Comfygen is a trusted mobile game development company in India delivering engaging, high-performance games for startups and enterprises. Our expert game developers build custom Android and iOS mobile games with stunning graphics, smooth gameplay, and scalable architecture to help businesses grow, engage users, and boost revenue."
+            li="Custom Mobile Game Development"
+            li1="High-Quality Graphics & Smooth Gameplay"
+            li2="Scalable & Secure Architecture"
+            li3="End-to-End Game Development Support"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -194,6 +195,18 @@ export default function Mobile(props) {
             closeModal={closeModal}
           />
         </div>
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Offered</h2>
+              <p className="text-center text-base">We are a trusted platform for mobile game development services specializing in creating high-fidelity games for different mobile platforms. Our developers have honed their skills in working with different game development technologies and frameworks to offer a comprehensive collection of game development services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Overview of Comfygen: Your Mobile Game Development Partner"
@@ -216,17 +229,7 @@ export default function Mobile(props) {
           linkText="Lets Discuss"
           imagePosition="right"
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Offered</h2>
-              <p className="text-center text-base">We are a trusted platform for mobile game development services specializing in creating high-fidelity games for different mobile platforms. Our developers have honed their skills in working with different game development technologies and frameworks to offer a comprehensive collection of game development services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
 
         <TechStack
           customTechData={null}

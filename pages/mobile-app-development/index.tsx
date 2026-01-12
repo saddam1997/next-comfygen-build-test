@@ -29,80 +29,118 @@ import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Sponser from "../../components/Newcomponet/comman/Sponser";
 
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Solution = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Solution = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
+const LatestTechnology = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const LatestTechnology = dynamic(() => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Portfolio = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Portfolio = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Portfolio"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ProcessSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProcessSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const TechStack = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TechStack"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const IndustriesServe = dynamic(() => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ClientTestimonials = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ClientTestimonials = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
- 
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});  
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Milestones = dynamic(() => import("../../components/Newcomponet/comman/Milestones"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});  
+const Milestones = dynamic(
+  () => import("../../components/Newcomponet/comman/Milestones"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});  
-
-
-
-
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 const BreadcrumbSchema = {
   "@context": "https://schema.org/",
@@ -182,7 +220,8 @@ const ProductSchema = {
   "@type": "Product",
   brand: "Comfygen Technologies",
   Name: "Top-Rated Mobile Application Development Company",
-  image: "https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp",
+  image:
+    "https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp",
   description:
     "Comfygen offers mobile application development services to help you launch fast, user-friendly, and secure mobile apps. Get custom solutions for iOS, Android, and cross-platform from expert developers.",
   aggregateRating: {
@@ -240,7 +279,7 @@ const faqSchema = {
 };
 
 export default function Mobile(props: any) {
-  let { } = JSON_DATA;
+  let {} = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -438,19 +477,19 @@ export default function Mobile(props: any) {
       img: <IconShield stroke={1.5} className="w-12 h-12" />,
       title: "Taxi Booking Mobile App",
       desc: "Build a ride-hailing <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking app</a> like Uber and Ola with GPS navigation, fare calculation, driver tracking, wallet payments, and instant ride booking for reliable on-demand transportation services.",
-    }
+    },
   ];
 
   return (
     <>
       <Head>
         <title>
-          Best Mobile App Development Company in Jaipur, India
+          Best Mobile App Development Company in Jaipur, India | Comfygen
         </title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is a leading mobile app development company in Jaipur, India. We provide custom mobile app development services for Android, iOS platforms to startups and enterprise-level companies."
+          content="Comfygen Technologies is the best mobile app development company in Jaipur, India. We provide custom mobile app development services and solutions for Android, iOS platforms to startups and enterprise-level companies."
         />
 
         <meta
@@ -633,10 +672,10 @@ export default function Mobile(props: any) {
           <HeroSectionForAllPages
             heading="Leading Mobile App Development Company in Jaipur"
             ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app solutions that enhance customer experience and drive business success. We turn your ideas into high-quality apps with seamless functionality and beautiful design."
-            li=""
-            li1=""
-            li2=""
-            li3=""
+            li="Custom Android & iOS App Development"
+            li1="Cross-Platform & Scalable Mobile Solutions"
+            li2="Secure, High-Performance App Architecture"
+            li3="Business-Focused UI/UX Design"
             bgImage="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-hero.webp"
             btnName="Talk With Expert"
             btnLink="/contact-us"
@@ -648,7 +687,25 @@ export default function Mobile(props: any) {
         </div>
         {/* <Sponser /> */}
         <Milestones />
-
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Professional Mobile App Development Services in Jaipur, India
+              </h2>
+              <p className="text-base text-center font-normal">
+                We offer a full suite of custom mobile app development services
+                in Jaipur tailored to your business goals. Whether you're
+                building a new product or upgrading an existing one, our mobile
+                app development expert team delivers high-quality mobile
+                application solutions for every platform.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title=""
           heading="Future Ready Mobile App Development Solutions for Global Businesses"
@@ -660,21 +717,6 @@ export default function Mobile(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Professional Mobile App Development Services in Jaipur, India
-
-              </h2>
-              <p className="text-base text-center font-normal">We offer a full suite of custom mobile app development services in Jaipur tailored to your business goals. Whether you're building a new product or upgrading an existing one, our mobile app development expert team delivers high-quality mobile application solutions for every platform.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
@@ -682,7 +724,6 @@ export default function Mobile(props: any) {
             description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
           />
         </section>
-
 
         <CallToAction
           heading="Have an App Idea in Mind?"
@@ -699,8 +740,6 @@ export default function Mobile(props: any) {
           techData={technologyData}
         />
 
-
-
         <LatestTechnology
           heading="Emerging Technologies We Leverage For Mobile Application Development"
           subheading=""
@@ -710,9 +749,14 @@ export default function Mobile(props: any) {
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End Mobile App Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                End-to-End Mobile App Development Process
+              </h2>
               <p className="text-base font-normal mt-2">
-                As a reliable mobile application development company in Jaipur. Our mobile app development process is a structured approach focused on delivering innovative and high-performing custom mobile app solutions customized to user business needs.
+                As a reliable mobile application development company in Jaipur.
+                Our mobile app development process is a structured approach
+                focused on delivering innovative and high-performing custom
+                mobile app solutions customized to user business needs.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -725,11 +769,7 @@ export default function Mobile(props: any) {
           description="The full-stack technology we use encompasses the front end, back end, database, DevOps, and quality assurance to develop agile, high-performance mobile apps. Your business needs will be met by seamless, scalable, and reliable app solutions."
         />
 
-        <IndustriesServe
-          heading={null}
-          description={null}
-        />
-
+        <IndustriesServe heading={null} description={null} />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -763,7 +803,6 @@ export default function Mobile(props: any) {
   );
 }
 
-
 export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
@@ -773,4 +812,3 @@ export async function getServerSideProps({ res }) {
   );
   return { props: { initialData: data } };
 }
-

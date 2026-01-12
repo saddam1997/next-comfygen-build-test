@@ -50,7 +50,7 @@ export default function HeroSectionForAllPages(props: any) {
 
         </div>
       </div>
-      <div className="flex md:py-8 py-2 sm:-mb-[45px] flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+      <div className="flex md:py-8 py-2 sm:-mb-[45px] lg:mt-[7rem] mt-[3rem] flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="w-full ">
           <div className="space-y-4 lg:pt-0">
             <div>

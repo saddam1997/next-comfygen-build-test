@@ -77,6 +77,7 @@ const Faq = dynamic(
 
 
 import { IconBulb, IconCalendarEvent, IconHistory, IconLivePhoto, IconNews, IconTrendingUp, } from '@tabler/icons-react';
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const technologyData = [
@@ -392,11 +393,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Live Line Cricket Mobile App Development Comfygen
+          Fast Live Line Cricket App Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Experience the best Live Line cricket mobile app development with rich features like real-time score, live chat, match stats, live commentary."
+          content="Comfygen offers fast live line cricket app development services with real-time ball-by-ball updates, instant alerts, live scores, commentary, and scalable cricket mobile app solutions."
         />
         <link
           rel="canonical"
@@ -436,12 +437,12 @@ export default function Ecommerce(props) {
         {/* hero section */}
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/live-line-cricket-mobile-app-development-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Cricket Fast Live Line Mobile App Development Company"
-            ptag="If you want to build a cricket live line app that delivers real-time scores faster than TV, you’re in the right place. We are the best live cricket score app development company. We create high-speed cricket live line mobile apps with every minute-by-minute updates, instant alerts, and an interface that fans can follow without missing a moment. Our Mobile app development team has deep experience in cricket score mobile app development, real-time data APIs, and scalable sports platforms built for massive match-day traffic."
-            li="Real-Time Cricket Updates"
-            li1="Engaging Cricket App Solutions"
-            li2="Live Scores & Stats"
-            li3="Customized Cricket App Development"
+            heading="Fast Live Line Cricket Mobile App Development Company"
+            ptag=" fast live line cricket mobile app with Comfygen. We are a trusted fast live line cricket mobile app development company delivering real-time ball-by-ball scores faster than TV. Our apps feature instant match alerts, live commentary, accurate stats, and a smooth UI to keep cricket fans engaged without delays, even during high-traffic matches."
+            li="Ultra-Fast Ball-by-Ball Live Line Updates"
+            li1="Instant Match Alerts & Push Notifications"
+            li2="Live Scores, Commentary & Match Statistics"
+            li3="Custom Live Line Cricket App Development"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -450,6 +451,18 @@ export default function Ecommerce(props) {
             closeModal={closeModal}
           />
         </div>
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Make the most popular Live Line Cricket Mobile App Development</h2>
+              <p>Launch your cricket live line application before the season begins and capture the audience early. As the Best Live Line Cricket Mobile App Development Company, we will provide features in the app like real-time scores, instant alerts, match odds, player stats, and fast updates to boost downloads, retention, and engagement as major cricket tournaments pick up pace.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Why Businesses Are Investing in Cricket Score Mobile App Development"
@@ -461,17 +474,7 @@ Live Line Cricket Mobile App Development Service because they deliver what fans 
           link="/about-us"
           linkText="Explore More"
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Make the most popular Live Line Cricket Mobile App Development</h2>
-              <p>Launch your cricket live line application before the season begins and capture the audience early. As the Best Live Line Cricket Mobile App Development Company, we will provide features in the app like real-time scores, instant alerts, match odds, player stats, and fast updates to boost downloads, retention, and engagement as major cricket tournaments pick up pace.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
         <InfoSection
           heading="Develop the Most Downloaded Mobile Cricket score app"
           description1="If you want your cricket score app to rise to the top, focus on what fans care about most: speed, accuracy, and excitement. Our IPL live line mobile app development service gives users the same rush they feel inside a stadium, but right on their phones."

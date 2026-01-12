@@ -5,6 +5,7 @@ import { useState } from "react";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -397,10 +398,10 @@ export default function Ecommerce(props:any) {
   return (
     <>
       <Head>
-        <title>ICO Development Company | End-to-End ICO Services | Comfygen</title>
+        <title>ICO Development Company | Secure & Scalable ICO Solutions</title>
         <meta
           name="description"
-          content="Launch your ICO with Comfygen, a leading ICO development company. We offer comprehensive ICO development services, including token creation, smart contracts, blockchain integration, and post-ICO support. Secure, scalable, and compliant solutions."
+          content="Comfygen is an ICO development company providing secure, end-to-end ICO solutions including token creation, smart contracts, and dashboards."
         />
         <link rel="canonical" href="https://www.comfygen.com/ico-development" />
 
@@ -488,12 +489,12 @@ export default function Ecommerce(props:any) {
 
 
         <HeroSectionForAllPages
-          heading="ICO Development Company"
-          ptag="Comfygen is a leading ICO development company offering secure, scalable, and fully customized ICO solutions. From token creation to smart contracts and investor dashboards, we help you launch your fundraising campaign with confidence."
-          li="End-to-end ICO development services"
-          li1="Secure and audited smart contract development"
-          li2="Custom token creation"
-          li3="Whitepaper drafting and tokenomics support"
+          heading="Secure, Scalable & End-to-End ICO Launch Solutions"
+          ptag="Comfygen is a trusted ICO development company delivering secure, scalable, and fully customized Initial Coin Offering (ICO) solutions for startups and enterprises. We provide end-to-end ICO development services, including token creation, smart contract development, investor dashboards, and launch support. Our experts ensure audited smart contracts, compliant tokenomics, and seamless fundraising execution—helping you launch your ICO with confidence and transparency."
+          li="End-to-End ICO Development Services"
+          li1="Secure & Audited Smart Contract Development"
+          li2="Custom Token Creation & Deployment"
+          li3="Whitepaper Drafting & Tokenomics Support"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -503,6 +504,21 @@ export default function Ecommerce(props:any) {
           bgImage="https://www.comfygen.com/comfygen-images/ico-development/ico-development-hero1.webp"
         />
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Over End-to-End ICO Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At <a className='text-blue-500' href='/'>comfygen</a> , we specialize in delivering end-to-end ICO development services to help startups and enterprises launch successful ICO campaigns. Our services cover every step of the process, from initial planning to post-ICO support, ensuring that your ICO is secure, compliant, and primed for success. Here's a breakdown of the services we offer</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -523,18 +539,7 @@ export default function Ecommerce(props:any) {
         />
         {/* <ContactFromCenter /> */}
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Over End-to-End ICO Development Services
-              </h2>
-              <p className="text-base text-center font-normal">At <a className='text-blue-500' href='/'>comfygen</a> , we specialize in delivering end-to-end ICO development services to help startups and enterprises launch successful ICO campaigns. Our services cover every step of the process, from initial planning to post-ICO support, ensuring that your ICO is secure, compliant, and primed for success. Here's a breakdown of the services we offer</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
 
 
 

@@ -17,62 +17,93 @@ import {
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+const SolutionSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const InfoSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/InfoSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const InfoSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const CardItem = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CardItem"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const CardItem = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ProcessSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProcessSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Portfolio = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Portfolio"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Portfolio = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 const Arena = [
   {
@@ -185,7 +216,6 @@ export default function Ecommerce(props) {
   let { initialData } = props;
   let { SmartContractFeatures } = JSON_DATA;
 
-
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
     setTalkToExpertModal(true);
@@ -193,9 +223,6 @@ export default function Ecommerce(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-
-
-
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -287,12 +314,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>
-          Smart Contract MLM Software Development Company | Comfygen
-        </title>
+        <title>Smart Contract MLM Software Development Company</title>
         <meta
           name="description"
-          content="Looking for a reliable smart contract MLM software development company? Comfygen builds secure, scalable, and decentralized MLM platforms on Ethereum, Tron, BNB, Solana & more."
+          content="Comfygen offers smart contract MLM software development services to build secure, decentralized MLM platforms with real-time payouts."
         />
         <link
           rel="canonical"
@@ -362,10 +387,19 @@ export default function Ecommerce(props) {
           name="Twitter:description"
           content=" Looking for a reliable smart contract MLM software development company? Comfygen builds secure, scalable, and decentralized MLM platforms on Ethereum, Tron, BNB, Solana & more."
         />
-        <meta name="Twitter:image" content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp" />
+        <meta
+          name="Twitter:image"
+          content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp"
+        />
         <meta name="Twitter:site" content="@comfygentech" />
-        <meta property="og:image" content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/image/smart-contract-mlm-software-og-image.webp"
+        />
         <meta property="og:image:alt" content="Smart Contract MLM Software" />
         <meta
           property="og:url"
@@ -383,7 +417,6 @@ export default function Ecommerce(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-
       </Head>
 
       <BlockChainHeader />
@@ -393,13 +426,11 @@ export default function Ecommerce(props) {
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/smart-contract-mlm-software-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Smart Contract MLM Software Development Company"
-            ptag="Comfygen is a trusted name in smart contract MLM software development, offering cutting-edge solutions for businesses looking to build secure, transparent, and decentralized MLM platforms. Our team combines blockchain expertise with in-depth knowledge of multi-level marketing models to create scalable, automated systems powered by smart contracts. As a professional MLM software development company, we focus on delivering tamper-proof solutions that eliminate manual errors and third-party interference. Whether you're starting a binary, matrix, or uni-level MLM project, our customized platforms are built to align with your goals and ensure long-term growth."
-            ptag1="By leveraging blockchain networks like Ethereum, Tron, BNB Chain, and Polygon, we help businesses launch high-performance smart contract-based MLM software that ensures trust, transparency, and instant transactions."
-            li="Expert smart contract developers"
-            li1="100% decentralized architecture"
-            li2="Real-time payouts and transaction records"
-            li3="Customizable MLM plan integration"
-            li4="Scalable and secure blockchain solutions"
+            ptag="Comfygen is the best smart contract MLM software development company, helping businesses build transparent, tamper-proof, and fully decentralized MLM platforms. We develop custom blockchain-based MLM solutions using Ethereum, Tron, BNB Chain, and Polygon to enable real-time payouts, automated commissions, and secure transactions. Whether you’re launching a binary, matrix, or uni-level MLM model, our scalable smart contract solutions ensure accuracy, trust, and long-term growth."
+            li="100% Decentralized MLM Architecture"
+            li1="Real-Time Payouts & Transparent Transactions"
+            li2="Custom MLM Plan Integration"
+            li3="Scalable & Secure Blockchain Solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -408,21 +439,8 @@ export default function Ecommerce(props) {
             closeModal={closeModal}
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Smart Contract MLM Software Development"
-          description1="Comfygen offers advanced smart contract MLM software development to help businesses build secure, automated, and decentralized MLM platforms. Our blockchain-powered systems handle everything from referrals to commission payouts—without any manual effort or admin control."
-          description2="We develop smart contract MLM software on Ethereum, Tron, BNB Chain, and Polygon, enabling fast, transparent, and tamper-proof transactions. Whether it’s a binary, matrix, or custom plan, we deliver reliable solutions tailored to your goals."
-          points={[
-            "Auto-executed commissions",
-            "Crypto wallet integration",
-            "Transparent genealogy tracking",
-            "Custom MLM plan support",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -443,6 +461,22 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Smart Contract MLM Software Development"
+          description1="Comfygen offers advanced smart contract MLM software development to help businesses build secure, automated, and decentralized MLM platforms. Our blockchain-powered systems handle everything from referrals to commission payouts—without any manual effort or admin control."
+          description2="We develop smart contract MLM software on Ethereum, Tron, BNB Chain, and Polygon, enabling fast, transparent, and tamper-proof transactions. Whether it’s a binary, matrix, or custom plan, we deliver reliable solutions tailored to your goals."
+          points={[
+            "Auto-executed commissions",
+            "Crypto wallet integration",
+            "Transparent genealogy tracking",
+            "Custom MLM plan support",
+          ]}
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
 
         <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -500,9 +534,9 @@ export default function Ecommerce(props) {
         <InfoSection
           heading="Key Benefits of a Smart Contract MLM Software Development"
           description1="Smart Contract MLM Software offers a decentralized, secure, and automated solution that transforms how MLM platforms operate. By leveraging blockchain, it eliminates third-party control, increases trust, and ensures faster, tamper-proof transactions."
-          description2=''
-          description3=''
-          dec=''
+          description2=""
+          description3=""
+          dec=""
           points={[
             "A decentralized structure eliminates the need for admin control",
             "Transparent operations with publicly verifiable blockchain records",
@@ -561,9 +595,9 @@ export default function Ecommerce(props) {
         <InfoSection
           heading="White Label Smart Contract MLM Software"
           description1="Looking to launch your own MLM platform instantly without building from scratch? Our White Label Smart Contract MLM Software offers a ready-made, customizable solution designed to help businesses enter the crypto MLM space faster and more efficiently. Built on decentralized blockchain architecture, it ensures transparency, automation, and security — tailored under your brand name."
-          description2=''
-          description3=''
-          dec=''
+          description2=""
+          description3=""
+          dec=""
           points={[
             "Faster Time to Market - Get your platform up and running in days, not months.",
             "Custom Branding Options - Fully rebrand the platform with your logo, domain, colors, and UI elements.",
@@ -609,7 +643,6 @@ export default function Ecommerce(props) {
           />
         </section>
 
-
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -650,4 +683,3 @@ export default function Ecommerce(props) {
     </>
   );
 }
-

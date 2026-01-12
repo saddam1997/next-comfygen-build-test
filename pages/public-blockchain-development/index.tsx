@@ -6,6 +6,7 @@ import JSON_DATA from "./json/blockchainconsulting.json";
 import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -583,12 +584,11 @@ export default function rummy(props) {
     <>
       <Head>
         <title>
-          Public Blockchain Development – dApps, DeFi, NFTs & Smart Contracts
+          Public Blockchain Development Company | Secure & Scalable
         </title>
         <meta
           name="description"
-          content="Comfygen, the best Public Blockchain development company, delivers a secure, scalable solution. From DeFi platforms and NFT marketplaces to smart contracts and 
-          cross-chain dApps."
+          content="Comfygen is a public blockchain development company delivering secure, scalable, and transparent solutions for DApps, tokens, and open networks."
         />
         <meta
           name="keywords"
@@ -710,11 +710,11 @@ export default function rummy(props) {
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
           heading="Public blockchain development company"
-          ptag="A Public blockchain was built for transparency, decentralization, and trust. It's open to everyone—perfect for projects that require global collaboration, sustainability, and public verifiability. At Comfygen, we build scalable and secure Public Blockchain Development solutions. Whether you're building a decentralized app, launching a token, or creating a system that can be publicly leveraged—we give you full power of open and paramilitary networks, without any bias, and with complete transparency and security."
-          li="Open Architecture Expertise"
-          li1="End-to-End Development"
-          li2="Security-First Approach"
-          li3="Community-Driven Deployments"
+          ptag="Comfygen is a trusted public blockchain development company building transparent, decentralized, and secure blockchain networks open to global participation. We deliver scalable public blockchain solutions for decentralized applications, token launches, and open digital ecosystems that require public verifiability and trust. Our expert developers design security-first, community-driven blockchain architectures that empower innovation while ensuring transparency, sustainability, and long-term network reliability."
+          li="Open & Permissionless Blockchain Architecture"
+          li1="End-to-End Public Blockchain Development"
+          li2="Security-First & Transparent Network Design"
+          li3="Community-Driven & Globally Accessible Deployments"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -723,25 +723,8 @@ export default function rummy(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/public-blockchain-development/hero.webp"
         />
-        <AboutSection
-          title="About Company"
-          heading="What is Public Blockchain Development?"
-          description1="Public <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blockchain-development'>blockchain development</a> means building systems, tools, and protocols that run on open and arbitrary blockchain networks—like Aithairium, Bitcoin, or Solan. Anyone can participate in these networks without any approval. They are completely transparent, meaning every transaction and activity is public and verifiable by everyone."
-          description2="Public Blockchain Development includes smart contracts, tokens, decentralized apps (dapps), and systems that take advantage of decentralization, security, and global access."
-          description3="Key features of public blockchain development:"
-          points={[
-            "Completely decentralized and traversable",
-            "Open participation",
-            "Transparent and Immutable",
-            "Perfect for dapps and token launch",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/public-blockchain-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -760,6 +743,25 @@ export default function rummy(props) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="What is Public Blockchain Development?"
+          description1="Public <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blockchain-development'>blockchain development</a> means building systems, tools, and protocols that run on open and arbitrary blockchain networks—like Aithairium, Bitcoin, or Solan. Anyone can participate in these networks without any approval. They are completely transparent, meaning every transaction and activity is public and verifiable by everyone."
+          description2="Public Blockchain Development includes smart contracts, tokens, decentralized apps (dapps), and systems that take advantage of decentralization, security, and global access."
+          description3="Key features of public blockchain development:"
+          points={[
+            "Completely decentralized and traversable",
+            "Open participation",
+            "Transparent and Immutable",
+            "Perfect for dapps and token launch",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/public-blockchain-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+        
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

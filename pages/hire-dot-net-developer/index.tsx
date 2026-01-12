@@ -1,48 +1,66 @@
-
 import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/hireDotNet.json";
 import dynamic from "next/dynamic";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-
+import Header from "../../components/Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const ModelsSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const CardItem = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const CallToAction = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
 );
-
-
 
 // import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
 // import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
@@ -51,7 +69,6 @@ const Faq = dynamic(
 // import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 // import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 // import Faq from "../Newcomponet/SectionCompoent/Faq";
-
 
 export default function Mobile(props) {
   let { initialData } = props;
@@ -67,11 +84,11 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Hire .Net Developer | ASP.NET Developers In India & The USA | Comfygen
+          Hire Dedicated .NET Developers in India | ASP.NET & .NET Core Experts
         </title>
         <meta
           name="description"
-          content="Looking to hire skilled .NET or ASP.NET developers for software development In India & The USA? Trust Comfygen to complete your project on time. Explore cost-effective ASP.NET development by hiring us."
+          content="Looking to hire .NET developers in India? Comfygen provides skilled ASP.NET and .NET Core developers for secure, high-performance business applications."
         />
         <link
           rel="canonical"
@@ -150,21 +167,41 @@ export default function Mobile(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hire Best .Net Developer India"
-          ptag="Secure your business by integrating blockchain technology into your existing digital solutions. Hire skilled blockchain developers at Comfygen to build effective decentralized applications for protocols like Ethereum, Polkadot, Tezos, Hyperledger, Stellar, Neo, and more. Our full-stack blockchain developers specialize in creating smart contracts tailored to your organization's needs."
-          ptag1="Comfygen is here to help you secure your business and streamline transactional flows. Let’s consult and find the perfect solution for you."
-          li="Expert Blockchain Developers"
-          li1="Full-Stack Blockchain Solutions"
-          li2="Smart Contract Development"
-          li3="Secure & Scalable Solutions"
+          heading="Hire Best .NET Developers in India"
+          ptag="Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs."
+          ptag1="From custom .NET application development to system integration and modernization, our full-stack .NET developers deliver robust solutions using ASP.NET, .NET Core, MVC, and cloud-based architectures. Partner with Comfygen to streamline workflows, enhance security, and drive long-term growth."
+          li="Expert .NET Developers for Hire"
+          li1="Full-Stack .NET Application Development"
+          li2="Secure, Scalable & Business-Ready Solutions"
+          li3="Custom Development Aligned to Your Goals"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage='https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp'
+          bgImage="https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp"
         />
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                .Net Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                We are able to provide a wide range of .NET development services
+                in the .NET Domain because of our technical proficiency and use
+                of the agile development technique. We provide the following
+                tactful solutions when you work with our .NET programmers:
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Us"
@@ -176,17 +213,7 @@ export default function Mobile(props) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >.Net Development Services</h2>
-              <p className="text-base text-center font-normal">We are able to provide a wide range of .NET development services in the .NET Domain because of our technical proficiency and use of the agile development technique. We provide the following tactful solutions when you work with our .NET programmers:</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
         <CardItem
           heading="How to Connect With Our ASP .Net Developers?"
@@ -208,12 +235,8 @@ export default function Mobile(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
+        <Faq faqData={JSON_DATA.Frequently} title="" />
       </div>
     </>
   );
 }
-

@@ -419,8 +419,8 @@
   "consultancyHead": [
     {
       "num": "1",
-      "title": "Why Investing in Online Medicine Delivery App Development is a Game-Changer for Startups & Enterprises",
-      "desc": "The global online pharmacy market size was worth USD 18.5 Billion in 2022 and is anticipated to cross USD 38.2 Billion by 2030. With a growing CAGR of 9.5%, the investment in on-demand medicine delivery app development is proven revenue-generating. Besides the market analysis, certain listed reasons also claim the investment is beneficial."
+      "title": "Industries We Serve",
+      "desc": "As a trusted Medicine Delivery App Development Company, we deliver tailored digital solutions for a wide range of healthcare businesses. Our scalable and secure medicine delivery app development services are designed to meet the unique needs of different healthcare sectors."
     }
   ],
   "LeadingSoftware": [
@@ -472,52 +472,44 @@
   ],
   "consultancyData": [
     {
-      "title": "Increased Healthcare Access",
-      "desc": "Having a medicine ordering app allows organizations and patients to get doorstep medicine deliveries. It’s a breakthrough for the healthcare industry; where medication is accessible to everyone."
+      "title": "Online Pharmacies",
+      "desc": "We build scalable online pharmacy apps that enable digital prescriptions, secure payments, real-time order tracking, and seamless doorstep medicine delivery for better customer engagement."
     },
     {
-      "title": "Scalability and Growth Potential",
-      "desc": "With the surging demand from patients for online medicine deliveries; startups can break through in the market with their new launches. Engage the targeted audience with some robust app launches; that lead towards potential growth."
+      "title": "Hospital and Clinic Networks",
+      "desc": "Our medicine delivery app solutions help hospitals and clinics manage prescriptions, automate medicine orders, integrate telemedicine services, and ensure timely delivery to patients."
     },
     {
-      "title": "Emerging Technologies Driving Innovation",
-      "desc": "The integration of AI, machine learning, and blockchain in online medicine delivery apps is revolutionizing the industry. These technologies streamline operations, improve inventory management, and enhance customer service, making healthcare more efficient and secure."
+      "title": "Healthcare Startups",
+      "desc": "We support healthcare startups with custom, on-demand medicine delivery app development, enabling fast market entry, scalable architecture, and innovative features to compete in the digital healthcare space."
     },
     {
-      "title": "Government Initiatives and Favorable Regulations",
-      "desc": "Supportive government initiatives and regulatory frameworks are paving the way for the growth of online medicine delivery services. With policies promoting telehealth and e-pharmacy, businesses can thrive in a conducive environment, ensuring compliance and fostering trust among consumers."
+      "title": "Retail Pharmacy Chains",
+      "desc": "Our solutions empower retail pharmacy chains to expand online, manage multi-store inventory, optimize deliveries, and provide a unified digital experience across multiple locations."
     },
     {
-      "title": "Rapid Business Growth",
-      "desc": "61% of buyers are buying drugs online, therefore the market is continuously launching new updated on-demand medicine delivery applications. So building a new medicine ordering application with some unique strategies enables the entrepreneur to grow massively."
-    },
-    {
-      "title": "Recurring Revenue Model",
-      "desc": "Investing in online medicine delivery apps enables startups and enterprises to create a recurring revenue model through subscription services or delivery fees. This predictable income stream ensures financial stability, allowing businesses to reinvest in technology and marketing, ultimately enhancing user experience and fostering customer loyalty."
-    },
-    {
-      "title": "Diversified Revenue Streams",
-      "desc": "By offering additional services like telemedicine, health consultations, and personalized medication management, online pharmacies can tap into various revenue streams. This diversification not only boosts profitability but also strengthens customer relationships by providing comprehensive healthcare solutions."
+      "title": "Hyperlocal Medicine Delivery Platforms",
+      "desc": "We develop hyperlocal medicine delivery apps with real-time tracking, nearby pharmacy integration, and instant delivery models, including 10-minute medicine delivery solutions."
     }
   ],
   "customTestimonials": [
     {
-      "text": "“Comfygen developed a top-notch medicine delivery app for our pharmacy chain. Their expertise in AI and secure payment integration made our platform user-friendly and highly efficient”",
+      "text": "Comfygen developed a top-notch medicine delivery app for our pharmacy chain. Their expertise in AI and secure payment integration made our platform user-friendly and highly efficient",
       "name": "Emma Watson",
       "title": "London, UK"
     },
     {
-      "text": "“We partnered with Comfygen for our on-demand medicine delivery startup, and their Flutter-based solution streamlined operations and improved customer experience. Highly recommend their development team!”",
+      "text": "We partnered with Comfygen for our on-demand medicine delivery startup, and their Flutter-based solution streamlined operations and improved customer experience. Highly recommend their development team!",
       "name": "Rahul Sharma",
       "title": "Jaipur, India"
     },
     {
-      "text": "“Thanks to Comfygen’s AI-powered medicine ordering app, our customers receive personalized recommendations and seamless order processing. Their team delivered a scalable and secure solution beyond our expectations.",
+      "text": "Thanks to Comfygen’s AI-powered medicine ordering app, our customers receive personalized recommendations and seamless order processing. Their team delivered a scalable and secure solution beyond our expectations.",
       "name": "David Brown",
       "title": "Sydney, Australia"
     },
     {
-      "text": "“Comfygen built our e-pharmacy app with real-time tracking and multi-language support. Their commitment to quality and innovation helped us expand our business successfully.”",
+      "text": "Comfygen built our e-pharmacy app with real-time tracking and multi-language support. Their commitment to quality and innovation helped us expand our business successfully.",
       "name": "Amit Verma",
       "title": " Mumbai, India"
     }
@@ -539,7 +531,7 @@
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
         "title": "Regulatory Compliance (HIPAA, GDPR, etc.)",
-        "description": "We develop online medicine delivery apps that follow <a herf='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>healthcare regulations like HIPAA</a>, GDPR, and PCI-DSS. This ensures secure data handling, patient privacy, and safe online medicine transactions."
+        "description": "We develop online medicine delivery apps that follow <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>healthcare regulations like HIPAA</a>, GDPR, and PCI-DSS. This ensures secure data handling, patient privacy, and safe online medicine transactions."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",

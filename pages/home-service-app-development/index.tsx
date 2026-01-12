@@ -5,6 +5,7 @@ import JSON_DATA from "./home-service-app-development.json";
 
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
@@ -349,10 +350,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Home Services App Development Company | Comfygen</title>
+        <title>Top On-Demand Home Services App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="The best home services app development company, Comfygen Technologies, offers On-demand home services app development services, white-label home services app solutions with real-time booking and tracking features for Android & iOS."
+          content="Looking for a top on-demand home services app development company? Comfygen delivers custom and white-label home services app development services with real-time booking, tracking, and secure payments for Android & iOS."
         />
         <meta
           name="keywords"
@@ -472,12 +473,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Home Services App Development Company"
-            ptag="Comfygen Technologies is an on-demand home services app development company offering innovative and scalable home services app development services. We provide value-driven and future-ready home services app development solutions for startups and enterprises to launch powerful home services mobile apps to manage bookings, service providers, and payments seamlessly."
-            li="Real-Time Service Booking & Tracking"
-            li1="Customizable Multi-Vendor Support"
-            li2="Secure Payment Gateway Integration"
-            li3="Powerful Admin & Analytics Panel"
+            heading="On-Demand Home Services App Development Company"
+            ptag="Comfygen Technologies is a trusted on-demand home services app development company helping startups and enterprises build high-performing home service booking apps. We deliver custom, white-label home services app development services with real-time booking, live service tracking, secure payments, and scalable admin control—designed to increase customer engagement and business revenue."
+            li="Real-time booking, tracking & notifications"
+            li1="Multi-service & multi-vendor app architecture"
+            li2="Secure payment gateway integration"
+            li3="Smart admin dashboard with analytics"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -487,6 +488,23 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/home-services-app-development/hero.webp"
           />
         </div>
+        <Milestones/>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+             We offer on-demand Home Services App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+               Comfygen Technologies offers advanced and scalable on-demand home services app development services to startups, entrepreneurs, and enterprise businesses. We create feature-rich, user-friendly apps that help service providers grow faster and deliver better customer experiences.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         <AboutSection
           title="About Company"
           heading="Why Businesses Are Embracing on demand Home Service Apps for Success"
@@ -508,21 +526,7 @@ export default function ClinicalApp(props: any) {
           cards={WhoCanStartCards}
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-             We offer on-demand Home Services App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-               Comfygen Technologies offers advanced and scalable on-demand home services app development services to startups, entrepreneurs, and enterprise businesses. We create feature-rich, user-friendly apps that help service providers grow faster and deliver better customer experiences.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
         {/* <ContactFromCenter /> */}
 
         <CardItem

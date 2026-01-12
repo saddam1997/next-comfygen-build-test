@@ -478,10 +478,10 @@ export default function Ecommerce(props) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Taxi Booking App Development Company | Hire Taxi App Developers</title>
+        <title>Leading Taxi Booking App Development Company | Comfygen Technology</title>
         <meta
           name="description"
-          content="Want to develop a taxi booking app. Looking for a taxi booking app development company? Comfygen provides customized taxi app development solutions."
+          content="Top-notch taxi booking app development services with Comfygen Technology. We create scalable, secure, and user-friendly ride-hailing platforms for all. Elevate your business with real-time tracking and smart ride management today!"
         />
         <link
           rel="canonical"

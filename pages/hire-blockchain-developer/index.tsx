@@ -58,6 +58,7 @@ const Faq = dynamic(
 );
 import { IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
 import { IconChartBar } from '@tabler/icons-react';
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -178,7 +179,7 @@ export default function Mobile(props:any) {
     <>
       <Head>
         <title>
-          Hire Blockchain Developers in India | Hire blockchain developers from India
+          Hire Dedicated Blockchain Developers in India | DeFi & dApp Development
         </title>
         <meta
           property="og:title"
@@ -186,7 +187,7 @@ export default function Mobile(props:any) {
         />
         <meta
           name="description"
-          content="Looking to hire blockchain developers in India? Get expert blockchain developers for building dApps, crypto wallets, and enterprise solutions on Solana, Hyperledger, and Polygon."
+          content="Looking to hire blockchain developers in India? Comfygen offers full-stack blockchain experts for Ethereum, Hyperledger, Polygon, and enterprise-grade solutions."
         />
         <link
           rel="canonical"
@@ -265,12 +266,13 @@ export default function Mobile(props:any) {
       <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Hire Blockchain Developers in india"
-            ptag="Looking to develop a cutting-edge blockchain solution? Hire blockchain developers in India from Comfygen and get expert assistance in smart contract development, dApps, DeFi, and enterprise blockchain solutions. Our skilled developers deliver secure, scalable, and customized solutions tailored to your business needs. With deep expertise in Ethereum, Hyperledger, and Polygon, we ensure seamless integration and high performance. Hire blockchain developers from India today and take your blockchain project to the next level!"
-            li="Expert Blockchain Developers"
-            li1="Full-Stack Blockchain Solutions"
-            li2="Smart Contract Development"
-            li3="Secure & Scalable Solutions"
+            heading="Hire Expert Blockchain Developers in India, USA | Canada"
+            ptag="Strengthen your digital infrastructure by hiring experienced blockchain developers from Comfygen. We help businesses integrate secure, scalable blockchain solutions into existing systems using leading platforms such as Ethereum, Polkadot, Hyperledger, Stellar, Tezos, Neo, and more."
+            ptag1="Our full-stack blockchain developers specialize in building custom smart contracts, decentralized applications (dApps), and enterprise-grade blockchain solutions that improve security, transparency, and transaction efficiency. Partner with Comfygen to streamline operations and future-proof your business with trusted blockchain technology."
+            li="Skilled Blockchain Developers for Hire"
+            li1="Full-Stack Blockchain & dApp Development"
+            li2="Custom Smart Contract Solutions"
+            li3="Secure, Scalable & Business-Ready Architecture"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -280,6 +282,19 @@ export default function Mobile(props:any) {
             bgImage='https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp'
           />
         </div>
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Blockchain Platforms Our Developers Work On</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide expert blockchain developers in India who specialize in building secure and scalable solutions across various blockchain platforms. Whether you need to hire a blockchain developer company for smart contracts, DeFi solutions, or NFT marketplaces, we have the expertise to deliver.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Us"
           heading="Why Choose Our Blockchain Developers? "
@@ -299,18 +314,7 @@ export default function Mobile(props:any) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Blockchain Platforms Our Developers Work On</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we provide expert blockchain developers in India who specialize in building secure and scalable solutions across various blockchain platforms. Whether you need to hire a blockchain developer company for smart contracts, DeFi solutions, or NFT marketplaces, we have the expertise to deliver.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
         <OurGames />
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 

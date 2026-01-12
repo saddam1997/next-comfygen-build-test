@@ -538,10 +538,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Grocery Delivery App Development Company - Comfygen</title>
+        <title>Top Grocery Delivery App Development Company for Custom Solutions</title>
         <meta
           name="description"
-          content="Comfygen is the best delivery app development company. Get grocery delivery app development solutions provided by our expert grocery delivery app developers."
+          content="Looking for a reliable grocery delivery app development company? Our expert team creates tailored, cross-platform apps with real-time tracking and secure payments. Launch your standout grocery delivery service today!"
         />
 
         <meta

@@ -305,8 +305,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title> Alcohol Delivery App Development Company | Liquor Delivery App Solutions
-        </title>
+        <title> Best Alcohol Delivery App Development Company</title>
         <meta
           name="description"
           content="Comfygen is a top alcohol delivery app development company. We offer AI-powered liquor delivery app solutions for startups, stores & enterprises."

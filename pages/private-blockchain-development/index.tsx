@@ -5,6 +5,7 @@ import JSON_DATA from "./json/blockchainconsulting.json";
 import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -834,10 +835,10 @@ export default function rummy(props:any) {
   return (
     <>
       <Head>
-        <title>Private Blockchain Development Company</title>
+        <title>Private Blockchain Development Company | Enterprise Solutions</title>
         <meta
           name="description"
-          content="ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire."
+          content="Comfygen is a private blockchain development company delivering secure, scalable permissioned blockchain solutions using Hyperledger, Quorum, and Corda."
         />
         <meta
           name="keywords"
@@ -956,8 +957,12 @@ export default function rummy(props:any) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Private Blockchain Development Company"
-          ptag="ComfyGen Technologies is a trusted private blockchain development company delivering secure, scalable, and customized blockchain solutions. Our expert private blockchain developers for hire specialize in creating permissioned networks for industries like finance, logistics, and healthcare. From smart contract development to enterprise-grade app deployment, we offer full-cycle private blockchain application development using Hyperledger, Quorum, and Corda. Partner with ComfyGen to build robust, compliant, and future-ready private blockchain development solutions that empower your business."
+          heading="Secure, Scalable & Permissioned Blockchain Solutions for Enterprises"
+          ptag="Comfygen Technologies is a trusted private blockchain development company delivering secure, scalable, and fully customized permissioned blockchain solutions. Our expert private blockchain developers build enterprise-grade networks using Hyperledger, Quorum, and Corda to support industries like finance, healthcare, and logistics. From smart contract development to end-to-end private blockchain application deployment, we help businesses create compliant, future-ready blockchain ecosystems that enhance transparency, security, and operational efficiency."
+          li="Permissioned & Enterprise-Grade Blockchain Networks"
+          li1="Hyperledger, Quorum & Corda Expertise"
+          li2="Secure Smart Contract & App Development"
+          li3=" Scalable, Compliant & Future-Ready Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -966,25 +971,8 @@ export default function rummy(props:any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/private-blockchain-development/hero.webp"
         />
-        <AboutSection
-          title="About Company"
-          heading="Why Do You Need a Private Blockchain for Your Business?"
-          description1="A private blockchain helps your business manage data, permissions, and transactions in a secure, centralized platform. It makes your operations faster, more transparent, and tamper-proof—without exposing sensitive information to the public. Whether you’re an enterprise, government body, or financial institution, this app streamlines workflows and builds trust across your network."
-          description2="With real-time access, smart contract automation, and permissioned controls, you can reduce fraud, cut delays, and enhance data integrity like never before."
-          description3="Partner with ComfyGen to transform your operations through trusted, enterprise-grade private blockchain development."
-          points={[
-            "Easily manage access and permissions",
-            "Track transactions securely in real time.",
-            "Store sensitive data with encryption",
-            "Automate processes with smart contracts",
-            "Get alerts for changes and validations",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/private-blockchain-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -1005,6 +993,25 @@ export default function rummy(props:any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Do You Need a Private Blockchain for Your Business?"
+          description1="A private blockchain helps your business manage data, permissions, and transactions in a secure, centralized platform. It makes your operations faster, more transparent, and tamper-proof—without exposing sensitive information to the public. Whether you’re an enterprise, government body, or financial institution, this app streamlines workflows and builds trust across your network."
+          description2="With real-time access, smart contract automation, and permissioned controls, you can reduce fraud, cut delays, and enhance data integrity like never before."
+          description3="Partner with ComfyGen to transform your operations through trusted, enterprise-grade private blockchain development."
+          points={[
+            "Easily manage access and permissions",
+            "Track transactions securely in real time.",
+            "Store sensitive data with encryption",
+            "Automate processes with smart contracts",
+            "Get alerts for changes and validations",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/private-blockchain-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+        
         <CoreFeatureBlockchain
           heading="Core Features of Private Blockchain Development That Make It Enterprise -Ready"
           description="Private blockchain development offers the ideal foundation for enterprises seeking secure, scalable, and permissioned blockchain solutions. With fine-tuned access control, high performance, and built-in compliance, these features empower businesses to maintain trust, integrity, and efficiency across critical operations. Explore the key features that make private blockchains a perfect fit for enterprise-grade applications."

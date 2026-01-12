@@ -6,6 +6,7 @@ import JSON_DATA from "./json/blockchainconsulting.json";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -705,8 +706,8 @@ export default function rummy(props: any) {
     <>
       <>
         <Head>
-          <title>Enterprise Blockchain Development Company | Custom Blockchain Services</title>
-          <meta name="description" content="Comfygen Technologies is a leading enterprise blockchain development company offering secure and scalable blockchain development services and solutions tailored for modern business needs." />
+          <title>Enterprise Blockchain Development Company | Secure Solutions</title>
+          <meta name="description" content="Comfygen is an enterprise blockchain development company delivering secure, scalable blockchain solutions including private networks and DApps." />
 
           <meta name="keywords" content="enterprise blockchain development services, enterprise blockchain app development company, enterprise blockchain development company, enterprise blockchain development, enterprise blockchain services, enterprise blockchain consulting company USA, enterprise blockchain consulting, blockchain for enterprise, enterprise blockchain solutions, custom enterprise blockchain development, enterprise blockchain consulting company" />
 
@@ -784,8 +785,12 @@ export default function rummy(props: any) {
         <BlockChainHeader />
         <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Enterprise Blockchain Development Company"
-            ptag="Transform your business operations with Comfygen Technologies, a trusted enterprise blockchain development company delivering secure, scalable, and customized blockchain solutions. We specialize in building enterprise-grade blockchain systems that streamline workflows, enhance data integrity, and ensure operational transparency. Whether you're looking for private blockchain networks or full-scale DApp development, our expert team is here to help. Partner with us to experience cutting-edge enterprise blockchain development that drives innovation, reduces costs, and gives your organization a competitive edge."
+            heading="Secure, Scalable & Custom Blockchain Solutions for Enterprises"
+            ptag="Comfygen Technologies is a trusted enterprise blockchain development company delivering secure, scalable, and customized blockchain solutions for modern businesses. We build enterprise-grade blockchain systems that streamline workflows, enhance data integrity, and ensure complete operational transparency. From private blockchain networks to full-scale DApp development, our expert team helps organizations adopt future-ready blockchain technology that drives innovation, reduces costs, and strengthens competitive advantage."
+            li="Enterprise-Grade Blockchain Architecture"
+            li1="Private & Permissioned Blockchain Solutions"
+            li2="Secure Smart Contracts & DApp Development"
+            li3="Scalable, Compliant & Cost-Effective Systems"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -793,6 +798,22 @@ export default function rummy(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             bgImage="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/hero.webp" />
+            <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+            <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+              <div className="space-y-2">
+                <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                  Empower Your Business with Our Enterprise Blockchain Development Services
+                </h2>
+                <p className="text-base text-center font-normal">
+                  At Comfygen Technologies, we offer future-ready services as a trusted enterprise blockchain development company. Our tailored enterprise blockchain services help organizations streamline operations, enhance data security, and drive innovation through scalable and secure blockchain architectures.
+                </p>
+              </div>
+              <div className="">
+                <ServicesSec servicesData={JSON_DATA.servicesData} />
+              </div>
+            </div>
+          </section>
           <AboutSection
             title="About Company"
             heading="How Enterprise Blockchain Can Improve Your Business Infrastructure"
@@ -808,21 +829,7 @@ export default function rummy(props: any) {
             link="/about-us"
             linkText="Explore More" />
           {/* <ContactFromCenter /> */}
-          <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-            <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-              <div className="space-y-2">
-                <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                  Empower Your Business with Our Enterprise Blockchain Development Services
-                </h2>
-                <p className="text-base text-center font-normal">
-                  At Comfygen Technologies, we offer future-ready services as a trusted enterprise blockchain development company. Our tailored enterprise blockchain services help organizations streamline operations, enhance data security, and drive innovation through scalable and secure blockchain architectures.
-                </p>
-              </div>
-              <div className="">
-                <ServicesSec servicesData={JSON_DATA.servicesData} />
-              </div>
-            </div>
-          </section>
+          
           <CoreFeatureBlockchain
             heading="Key Features of Our Enterprise Blockchain Development Solutions"
             description="We deliver powerful and high-quality enterprise blockchain solutions designed to meet the growing needs of modern businesses. Our expert team builds secure, scalable, and feature-rich blockchain systems that support data integrity, performance, and compliance. We ensure every solution is optimized to help your business stay competitive in today’s digital-first landscape."
