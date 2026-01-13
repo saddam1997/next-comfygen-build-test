@@ -36,7 +36,7 @@ const AboutSection = (props: any) => {
               alt="about"
               width={600}
               height={340}
-              fetchPriority="high"
+            
               quality={80}
               sizes="(max-width: 768px) 100vw, 1200px"
               className="object-contain w-full h-full object-center bg-no-repeat"

@@ -75,6 +75,7 @@ const Milestones = () => {
                                         alt={stat.label}
                                         width={80}
                                         height={80}
+                                        loading='lazy'
                                         className="rounded-full w-16 h-16  object-contain bg-center"
                                     />
                                     <div className='flex items-center gap-2'>

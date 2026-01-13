@@ -6,75 +6,119 @@ import JSON_DATA from "./ecommerce.json";
 // import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Portfolio = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Portfolio"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Portfolio = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Features = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Features"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Features = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Features"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ConsultancyApproach = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const TrendsSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TrendsSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const TrendsSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ProductCard = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProductCard"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProductCard = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProductCard"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ProcessSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProcessSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const TechStack = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TechStack"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-const ClientTestimonials = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+const ClientTestimonials = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 const Process = [
   {
@@ -192,7 +236,6 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -379,12 +422,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Top eCommerce Development Company | Custom eCommerce Website & Mobile
-          Solutions
+          Custom eCommerce Development Services | Online Store Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading eCommerce development company offering custom eCommerce website and app development services. We build best eCommerce apps and websites using Shopify, Magento, WooCommerce, and more. Hire top-rated ecommerce developers!"
+          content="Looking for an eCommerce development company? Comfygen builds high-performance online stores, eCommerce apps, and web solutions tailored to your business growth."
         />
 
         <meta
@@ -413,9 +455,6 @@ export default function ClinicalApp(props: any) {
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="My App" />
-
-
-
 
         <meta
           property="og:image"
@@ -463,21 +502,45 @@ export default function ClinicalApp(props: any) {
       </Head>
       <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-          <HeroSectionForAllPages
-            heading="eCommerce Development Company"
-            ptag="Partner with a top eCommerce development company to launch powerful and scalable online shopping solutions. We build high-performance e-commerce apps, websites, and web applications tailored to your brand, utilizing the latest technologies for seamless customer experiences."
-            li="Custom eCommerce App Development"
-            li1="Shopify, Magento & WooCommerce Experts"
-            li2="AI-Driven Shopping & Recommendations"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-hero.webp"
-          />
-      
+        <HeroSectionForAllPages
+          heading="eCommerce Development Company for Scalable Online Stores"
+          ptag="Comfygen is a trusted eCommerce development company helping businesses build secure, scalable, and high-performing online stores. We design and develop custom eCommerce websites, mobile apps, and web applications that deliver seamless shopping experiences and drive higher conversions."
+          ptag1="Our expert eCommerce developers work with leading platforms like Shopify, Magento, and WooCommerce, integrating modern technologies such as AI-driven recommendations, advanced analytics, and secure payment systems to help your brand grow in competitive digital markets."
+          li="Custom eCommerce Website & App Development"
+          li1="Shopify, Magento & WooCommerce Expertise"
+          li2="Scalable, Secure & Conversion-Focused Solutions"
+          li3="AI-Powered Shopping Experiences & Recommendations"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-hero.webp"
+        />
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Revolutionizing the e-commerce Industry with Our Cutting-Edge
+                eCommerce Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we deliver powerful and professional eCommerce
+                development services for SMBs and Enterprises to help you create
+                seamless online shopping experiences. Whether you're launching a
+                startup, scaling an existing online store, or upgrading to a
+                next-gen platform, we offer fully customized eCommerce
+                development solutions aligned with your goals.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         <AboutSection
           title="About Company"
           heading="Why eCommerce Development is a Global Game-Changer"
@@ -490,19 +553,6 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Revolutionizing the e-commerce Industry with Our Cutting-Edge eCommerce Development Services
-              </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we deliver powerful and professional eCommerce development services for SMBs and Enterprises to help you create seamless online shopping experiences. Whether you're launching a startup, scaling an existing online store, or upgrading to a next-gen platform, we offer fully customized eCommerce development solutions aligned with your goals.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -554,7 +604,8 @@ export default function ClinicalApp(props: any) {
             customers, vendors, admins, delivery agents, inventory managers, and
             marketing teams."
             featuresData={JSON_DATA.Feature}
-            grid={4} />
+            grid={4}
+          />
         </div>
 
         <ConsultancyApproach
@@ -574,7 +625,6 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         />
 
-
         <TrendsSection
           heading="The Emerging Technologies We Use for Enterprise eCommerce Development"
           subtitle="At Comfygen, we future-proof your business by integrating the latest technologies into our enterprise eCommerce development services. From intelligent automation to immersive customer experiences, we use cutting-edge tools that make your eCommerce platform faster, smarter, and more competitive."
@@ -590,15 +640,26 @@ export default function ClinicalApp(props: any) {
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Enterprise eCommerce Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Enterprise eCommerce Development Process
+              </h2>
               <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a transparent and agile development process to ensure smooth collaboration and successful project delivery. From strategy to support, we build enterprise-grade eCommerce app and <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website solutions</a> that are scalable, secure, and user-focused.
+                At Comfygen, we follow a transparent and agile development
+                process to ensure smooth collaboration and successful project
+                delivery. From strategy to support, we build enterprise-grade
+                eCommerce app and{" "}
+                <a
+                  className="text-blue-500 font-semibold"
+                  href="https://www.comfygen.com/web-development"
+                >
+                  website solutions
+                </a>{" "}
+                that are scalable, secure, and user-focused.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-
 
         <TechStack
           title="Technology Stack We Use in eCommerce Solutions"
@@ -629,8 +690,6 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-
-
       </div>
     </>
   );

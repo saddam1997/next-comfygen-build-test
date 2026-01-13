@@ -38,7 +38,6 @@ const CallToAction = ({
                                 alt={"call to action"}
                                 width={640}
                                 height={360}
-                                priority
                             />
                         </LazyLoad>
                     </div>

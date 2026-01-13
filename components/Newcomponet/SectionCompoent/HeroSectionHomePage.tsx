@@ -43,6 +43,7 @@ export default function HeroSection(props: any) {
           fill
           sizes="100vw"
           quality={75}
+          priority
           className="object-cover object-center -z-10 hidden md:block  bg-no-repeat bg-fixed"
         />
       )}

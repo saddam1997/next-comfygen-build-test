@@ -60,7 +60,6 @@ function Portfolio({ projects, heading, description }) {
                           width={297}
                           height={192}
                           quality={50}
-                          priority
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
                         />
                       </div>

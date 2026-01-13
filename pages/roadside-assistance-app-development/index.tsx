@@ -4,63 +4,96 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const CardItem = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CardItem"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const CardItem = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Portfolio = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Portfolio"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Portfolio = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Features = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Features"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const Features = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Features"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ProcessSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProcessSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const TechStack = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TechStack"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ClientTestimonials = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ClientTestimonials = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 const Process = [
   {
@@ -100,8 +133,6 @@ const Process = [
   },
 ];
 
-
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
@@ -117,7 +148,6 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -309,7 +339,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-       Roadside Assistance App Development Company | Towing App Solutions
+          Roadside Assistance App Development Company | Towing App Solutions
         </title>
         <meta
           name="description"
@@ -427,9 +457,10 @@ export default function ClinicalApp(props: any) {
           <HeroSectionForAllPages
             heading="Roadside Assistance App Development Company"
             ptag="Launch a powerful towing vehicle service app with Comfygen. We provide secure, real-time tracking-enabled, on-demand roadside assistance app development services for towing businesses, auto service providers, and startups. Boost your customer experience with fast emergency response features, GPS tracking, digital payments, and 24/7 support."
-            li="100% Custom & Scalable Solutions"
-            li1="AI & GPS Powered Roadside Assistance Apps"
-           
+            li="Custom On-Demand Roadside Assistance App Development"
+            li1="Real-Time GPS Tracking & Smart Dispatch"
+            li2="Secure Payments & 24/7 Emergency Support"
+            li3="Scalable, AI-Enabled & Cloud-Ready Solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -439,16 +470,8 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Next-Gen Roadside Assistance App Development for Quick Vehicle Help"
-          description1="Getting roadside help has never been easier. With roadside assistance app development, users can request help anytime, anywhere. Real-time GPS tracking, SOS buttons, and instant alerts connect drivers to the nearest towing or repair service quickly. Whether it’s a flat tire, battery issue, or engine problem, help arrives fast."
-          description2="Comfygen Technologies is a top <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>towing mobile app development company</a>, builds custom, user-friendly mobile apps for towing and roadside services. Our solutions enable businesses to provide 24/7 support, track services live, process secure payments, and grow efficiently. Drive digital transformation in the vehicle emergency services industry with our cutting-edge roadside assistance app development services."
-          imageSrc="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones/>
+<section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -465,6 +488,16 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Next-Gen Roadside Assistance App Development for Quick Vehicle Help"
+          description1="Getting roadside help has never been easier. With roadside assistance app development, users can request help anytime, anywhere. Real-time GPS tracking, SOS buttons, and instant alerts connect drivers to the nearest towing or repair service quickly. Whether it’s a flat tire, battery issue, or engine problem, help arrives fast."
+          description2="Comfygen Technologies is a top <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>towing mobile app development company</a>, builds custom, user-friendly mobile apps for towing and roadside services. Our solutions enable businesses to provide 24/7 support, track services live, process secure payments, and grow efficiently. Drive digital transformation in the vehicle emergency services industry with our cutting-edge roadside assistance app development services."
+          imageSrc="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        
 
         {/* <ContactFromCenter /> */}
         <CardItem
@@ -486,9 +519,9 @@ export default function ClinicalApp(props: any) {
             heading=" Roadside Assistance App Panels We Develop"
             description="Comfygen creates on-demand roadside assistance apps for customers, service providers, and administrators. These panels help ensure fast service delivery, smooth communication, real-time tracking, and efficient business operations."
             featuresData={JSON_DATA.Feature}
-            grid={3} />
+            grid={3}
+          />
         </div>
-
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">

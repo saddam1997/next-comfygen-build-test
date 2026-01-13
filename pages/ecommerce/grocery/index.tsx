@@ -3,39 +3,36 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
 
-
-
 import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHeader";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import GroceryAppScreens from "../../../components/Newcomponet/SectionCompoent/GroceryAppScreens";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
+const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
-const ServicesSec = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
+const ServicesSec = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
-const AppcardSlider = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/AppcardSlider"),
+const AppcardSlider = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/AppcardSlider"),
   { loading: loader, ssr: true }
 );
 
-
-const CallToAction = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/CallToAction"),
+const CallToAction = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
-const TrendsSection = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TrendsSection"),
+const TrendsSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/TrendsSection"),
   { loading: loader, ssr: true }
 );
 
@@ -43,7 +40,6 @@ const Portfolio = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
-
 
 const Features = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/Features"),
@@ -53,190 +49,208 @@ const Features = dynamic(
 const ProcessSec = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
-)
+);
 
 const TechStack = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
-)
+);
 
 const ConsultancyApproach = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () =>
+    import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
 const WhyChoose = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
-)
+);
 
 const HireDeveloper = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
-)
+);
 
 const ClientTestimonials = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  () =>
+    import("../../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: loader, ssr: true }
-)
+);
 
 const CoreFeaturesSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
+  () =>
+    import("../../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
   { loading: loader, ssr: true }
-)
-
+);
 
 const HireDeveloperSec = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
-)
-
-
+);
 
 const DeliverySection = dynamic(
   () => import("../../../components/Newcomponet/comman/DeliverySection"),
   { loading: loader, ssr: true }
-)
-
+);
 
 const Faq = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
-)
-
-
-
+);
 
 const CardClone = [
   {
     imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery/App Like Peapod.webp",
     title: "App Like Peapod",
-    description: "<a href='https://www.comfygen.com/blog/develop-a-grocery-delivery-app-like-peapod/' class='text-blue-600 font-semibold'>Create a grocery delivery app like Peapod</a> with online grocery ordering, scheduled delivery, real-time inventory updates, and a smooth checkout experience for supermarkets and grocery retailers.",
+    description:
+      "<a href='https://www.comfygen.com/blog/develop-a-grocery-delivery-app-like-peapod/' class='text-blue-600 font-semibold'>Create a grocery delivery app like Peapod</a> with online grocery ordering, scheduled delivery, real-time inventory updates, and a smooth checkout experience for supermarkets and grocery retailers.",
     buttonText: "View Demo",
   },
   {
-    imgSrc:
-      "https://www.comfygen.com/comfygen-images/grocery/GoPuff.webp",
+    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/GoPuff.webp",
     title: "App like GoPuff",
-    description: "<a href='https://www.comfygen.com/blog/build-an-app-like-doordash-uber-eats-gopuff/' class='text-blue-600 font-semibold'>Develop a grocery app similar to GoPuff</a> with ultra-fast grocery delivery, real-time inventory sync, smart order routing, and a backend optimized for quick commerce and peak demand.",
+    description:
+      "<a href='https://www.comfygen.com/blog/build-an-app-like-doordash-uber-eats-gopuff/' class='text-blue-600 font-semibold'>Develop a grocery app similar to GoPuff</a> with ultra-fast grocery delivery, real-time inventory sync, smart order routing, and a backend optimized for quick commerce and peak demand.",
     buttonText: "View Demo",
   },
   {
-    imgSrc:
-      "https://www.comfygen.com/comfygen-images/grocery/Sainsbury’s.webp",
+    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Sainsbury’s.webp",
     title: "App like Sainsbury’s",
-    description: "Launch a Sainsbury’s clone with online grocery shopping, digital coupons, loyalty rewards, subscription ordering, and a smooth checkout experience for supermarket chains.",
+    description:
+      "Launch a Sainsbury’s clone with online grocery shopping, digital coupons, loyalty rewards, subscription ordering, and a smooth checkout experience for supermarket chains.",
     buttonText: "View Demo",
   },
   {
-    imgSrc:
-      "https://www.comfygen.com/comfygen-images/grocery/Ocado.webp",
+    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Ocado.webp",
     title: "App Like Ocado",
-    description: "Build an app like Ocado with automated inventory management, real-time stock updates, smart fulfillment workflows, and a high-performance grocery delivery system designed for large-scale operations.",
+    description:
+      "Build an app like Ocado with automated inventory management, real-time stock updates, smart fulfillment workflows, and a high-performance grocery delivery system designed for large-scale operations.",
     buttonText: "View Demo",
   },
   {
     imgSrc:
       "https://www.comfygen.com/comfygen-images/grocery/Asda Groceries.webp",
     title: "App like App Like Asda",
-    description: "Build an app like Asda Groceries with online grocery ordering, flexible delivery slots, in-store pickup, digital offers, and a smooth shopping experience for large supermarket networks.",
+    description:
+      "Build an app like Asda Groceries with online grocery ordering, flexible delivery slots, in-store pickup, digital offers, and a smooth shopping experience for large supermarket networks.",
     buttonText: "View Demo",
   },
   {
-    imgSrc:
-      "https://www.comfygen.com/comfygen-images/grocery/Zapp.webp",
+    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Zapp.webp",
     title: "App like Zapp",
-    description: "Build a Zapp-like app with ultra-fast grocery delivery, location-based ordering, real-time inventory updates, and a system optimized for quick commerce and on-demand fulfillment.",
+    description:
+      "Build a Zapp-like app with ultra-fast grocery delivery, location-based ordering, real-time inventory updates, and a system optimized for quick commerce and on-demand fulfillment.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Coles.webp",
     title: "App like Coles",
-    description: "Build an app like Coles with online grocery shopping, scheduled delivery, click-and-collect, personalized offers, and a smooth checkout experience for large retail grocery chains.",
+    description:
+      "Build an app like Coles with online grocery shopping, scheduled delivery, click-and-collect, personalized offers, and a smooth checkout experience for large retail grocery chains.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Edeka.webp",
     title: "App like Edeka",
-    description: "Build an app like Edeka with online grocery ordering, local store integration, real-time inventory visibility, and flexible delivery or pickup options for supermarket networks.",
+    description:
+      "Build an app like Edeka with online grocery ordering, local store integration, real-time inventory visibility, and flexible delivery or pickup options for supermarket networks.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Flink.webp",
     title: "App like Flink",
-    description: "Build an app like Flink used across Germany, France, and other European countries, designed for ultra-fast grocery delivery with a quick commerce and hyperlocal fulfillment model.",
+    description:
+      "Build an app like Flink used across Germany, France, and other European countries, designed for ultra-fast grocery delivery with a quick commerce and hyperlocal fulfillment model.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/InstaShop.webp",
     title: "App like InstaShop",
-    description: "Build an app like InstaShop widely used in the UAE, Saudi Arabia, and other Middle East countries, enabling online grocery ordering, local store partnerships, and fast doorstep delivery.",
+    description:
+      "Build an app like InstaShop widely used in the UAE, Saudi Arabia, and other Middle East countries, enabling online grocery ordering, local store partnerships, and fast doorstep delivery.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Carrefour UAE Delivery.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/Carrefour UAE Delivery.webp",
     title: "App like Carrefour",
-    description: "Build an app like Carrefour widely used in the UAE and other global markets, offering online grocery shopping, scheduled delivery, store pickup, digital offers, and a seamless checkout experience.",
+    description:
+      "Build an app like Carrefour widely used in the UAE and other global markets, offering online grocery shopping, scheduled delivery, store pickup, digital offers, and a seamless checkout experience.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Tesco.webp",
     title: "App like Tesco",
-    description: "Build an app like Tesco widely used in the UK and other international markets, offering online grocery ordering, flexible delivery slots, click-and-collect, loyalty rewards, and a smooth shopping experience.",
+    description:
+      "Build an app like Tesco widely used in the UK and other international markets, offering online grocery ordering, flexible delivery slots, click-and-collect, loyalty rewards, and a smooth shopping experience.",
     buttonText: "View Demo",
   },
   {
     imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Tesco.webp",
     title: "App Like Walmart",
-    description: "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
+    description:
+      "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
     buttonText: "View Demo",
   },
 
-
-
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikewalmart.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikewalmart.webp",
     title: "App Like Walmart",
-    description: "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
+    description:
+      "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/appliketarget.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/appliketarget.webp",
     title: "App Like Target",
-    description: "Build a modern startup grocery shopping app like Target with intuitive product discovery, rich media listings, and hybrid delivery/pickup options. Our Target clone app focuses on superior UX, real-time inventory visibility, and fast reordering features.",
+    description:
+      "Build a modern startup grocery shopping app like Target with intuitive product discovery, rich media listings, and hybrid delivery/pickup options. Our Target clone app focuses on superior UX, real-time inventory visibility, and fast reordering features.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikeshipt.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikeshipt.webp",
     title: "App Like Shipt",
-    description: "Want to replicate Shipt’s same-day grocery delivery model? We develop retailers' grocery apps with fast scheduling, real-time communication with shoppers, and seamless order fulfillment workflows, giving your customers instant access to everyday essentials.",
+    description:
+      "Want to replicate Shipt’s same-day grocery delivery model? We develop retailers' grocery apps with fast scheduling, real-time communication with shoppers, and seamless order fulfillment workflows, giving your customers instant access to everyday essentials.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikeamazonfresh.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikeamazonfresh.webp",
     title: "App Like Amazon Fresh",
-    description: "Our Amazon Fresh-inspired grocery app solution allows seamless order management, voice search, and integration with smart assistants. It’s ideal for enterprises looking to dominate the grocery eCommerce space.",
+    description:
+      "Our Amazon Fresh-inspired grocery app solution allows seamless order management, voice search, and integration with smart assistants. It’s ideal for enterprises looking to dominate the grocery eCommerce space.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikekroger.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikekroger.webp",
     title: "App Like Kroger",
-    description: "Comfygen develops supermarket grocery apps like Kroger, combining digital coupons, store navigation, pharmacy integration, and seamless loyalty points. Perfect for supermarket chains seeking digital transformation.",
+    description:
+      "Comfygen develops supermarket grocery apps like Kroger, combining digital coupons, store navigation, pharmacy integration, and seamless loyalty points. Perfect for supermarket chains seeking digital transformation.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikezepto.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikezepto.webp",
     title: "App Like Zepto",
-    description: "Build an ultra-fast online Quick Commerce grocery delivery app like Zepto with 10-minute delivery capabilities, dark store mapping, and real-time logistics tracking. Our Zepto clone app is engineered for high-speed fulfillment and user satisfaction.",
+    description:
+      "Build an ultra-fast online Quick Commerce grocery delivery app like Zepto with 10-minute delivery capabilities, dark store mapping, and real-time logistics tracking. Our Zepto clone app is engineered for high-speed fulfillment and user satisfaction.",
     buttonText: "View Demo",
   },
   {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/applikeblinkit.webp",
+    imgSrc:
+      "https://www.comfygen.com/comfygen-images/grocery/applikeblinkit.webp",
     title: "App Like Blinkit",
-    description: "We create Blinkit-style grocery apps optimized for hyperlocal deliveries, express checkout, and location-based push deals. Our Blinkit clone helps you scale fast in the Q-commerce race.",
+    description:
+      "We create Blinkit-style grocery apps optimized for hyperlocal deliveries, express checkout, and location-based push deals. Our Blinkit clone helps you scale fast in the Q-commerce race.",
     buttonText: "View Demo",
-  }
+  },
 ];
 
 const Process = [
@@ -445,100 +459,105 @@ export default function ClinicalApp(props: any) {
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Ecommerce Development",
-        "item": "https://www.comfygen.com/ecommerce"
-      }, {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Grocery App Development",
-        "item": "https://www.comfygen.com/ecommerce/grocery"
-      }]
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.comfygen.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Ecommerce Development",
+          item: "https://www.comfygen.com/ecommerce",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Grocery App Development",
+          item: "https://www.comfygen.com/ecommerce/grocery",
+        },
+      ],
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
+      mainEntity: [
         {
           "@type": "Question",
-          "name": "Why is now the right time to invest in a grocery delivery app?",
-          "acceptedAnswer": {
+          name: "Why is now the right time to invest in a grocery delivery app?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "The online grocery delivery market is growing rapidly. By 2030, it’s projected to reach $645 billion globally, with hundreds of millions of users relying on apps for their grocery needs. Early investment lets you capture a loyal customer base and secure a strong market position."
-          }
+            text: "The online grocery delivery market is growing rapidly. By 2030, it’s projected to reach $645 billion globally, with hundreds of millions of users relying on apps for their grocery needs. Early investment lets you capture a loyal customer base and secure a strong market position.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What revenue streams can a grocery delivery app generate?",
-          "acceptedAnswer": {
+          name: "What revenue streams can a grocery delivery app generate?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "A grocery delivery app can earn through multiple channels: delivery fees, commissions from partner stores, subscription models, advertisements, and premium services. This diversified revenue model ensures steady income."
-          }
+            text: "A grocery delivery app can earn through multiple channels: delivery fees, commissions from partner stores, subscription models, advertisements, and premium services. This diversified revenue model ensures steady income.",
+          },
         },
         {
           "@type": "Question",
-          "name": "How scalable is a grocery delivery business?",
-          "acceptedAnswer": {
+          name: "How scalable is a grocery delivery business?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Once the app is established in one city or region, it can easily expand to other locations or even globally. The platform can support multiple vendors, logistics partners, and customer segments, making scaling relatively smooth."
-          }
+            text: "Once the app is established in one city or region, it can easily expand to other locations or even globally. The platform can support multiple vendors, logistics partners, and customer segments, making scaling relatively smooth.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What features should a grocery delivery app include?",
-          "acceptedAnswer": {
+          name: "What features should a grocery delivery app include?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Key features include: user-friendly search and catalog browsing, secure online payment options, real-time order tracking, ratings and reviews, personalized offers and push notifications, and vendor and delivery partner dashboards."
-          }
+            text: "Key features include: user-friendly search and catalog browsing, secure online payment options, real-time order tracking, ratings and reviews, personalized offers and push notifications, and vendor and delivery partner dashboards.",
+          },
         },
         {
           "@type": "Question",
-          "name": "How profitable is investing in a grocery delivery app?",
-          "acceptedAnswer": {
+          name: "How profitable is investing in a grocery delivery app?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "With the market expected to grow at a double-digit CAGR and increasing adoption in emerging markets, grocery delivery apps can generate strong profit margins through multiple income streams while building long-term brand loyalty."
-          }
+            text: "With the market expected to grow at a double-digit CAGR and increasing adoption in emerging markets, grocery delivery apps can generate strong profit margins through multiple income streams while building long-term brand loyalty.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Can a grocery delivery app survive market competition?",
-          "acceptedAnswer": {
+          name: "Can a grocery delivery app survive market competition?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "Yes. Differentiation through unique features, faster delivery, better UI/UX, and strong vendor partnerships can help your app stand out. Early entry into growing markets provides a significant competitive advantage."
-          }
+            text: "Yes. Differentiation through unique features, faster delivery, better UI/UX, and strong vendor partnerships can help your app stand out. Early entry into growing markets provides a significant competitive advantage.",
+          },
         },
         {
           "@type": "Question",
-          "name": "How does technology impact the success of a grocery delivery app?",
-          "acceptedAnswer": {
+          name: "How does technology impact the success of a grocery delivery app?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "The right tech stack ensures scalability, speed, and security. Incorporating AI for personalized recommendations, real-time logistics tracking, and analytics for business insights can significantly boost performance and customer satisfaction."
-          }
+            text: "The right tech stack ensures scalability, speed, and security. Incorporating AI for personalized recommendations, real-time logistics tracking, and analytics for business insights can significantly boost performance and customer satisfaction.",
+          },
         },
         {
           "@type": "Question",
-          "name": "What is the long-term growth potential for investors?",
-          "acceptedAnswer": {
+          name: "What is the long-term growth potential for investors?",
+          acceptedAnswer: {
             "@type": "Answer",
-            "text": "With increasing online adoption, changing consumer habits, and the convenience factor, the online grocery delivery sector is expected to see exponential growth over the next decade, providing excellent returns for early investors."
-          }
-        }
-      ]
-    }
-    ,
+            text: "With increasing online adoption, changing consumer habits, and the convenience factor, the online grocery delivery sector is expected to see exponential growth over the next decade, providing excellent returns for early investors.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
     <>
       <Head>
-        <title>Top Grocery Delivery App Development Company for Custom Solutions</title>
+        <title>
+          Top Grocery Delivery App Development Company for Custom Solutions
+        </title>
         <meta
           name="description"
           content="Looking for a reliable grocery delivery app development company? Our expert team creates tailored, cross-platform apps with real-time tracking and secure payments. Launch your standout grocery delivery service today!"
@@ -671,7 +690,32 @@ export default function ClinicalApp(props: any) {
         />
 
         <Milestones />
-
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Grocery Delivery App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                We offer end-to-end grocery delivery app development services
+                designed to support different business models, delivery
+                workflows, and growth stages. Whether you’re launching a new
+                platform or upgrading an existing one, our{" "}
+                <a
+                  href="https://www.comfygen.com/quick-commerce-app-development"
+                  className="text-blue-600 font-semibold"
+                >
+                  quick commerce
+                </a>{" "}
+                team develops solutions that are practical, scalable, and ready
+                for real users.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title=""
           heading="Why Invest in a Grocery Delivery App"
@@ -687,18 +731,6 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Grocery Delivery App Development Services</h2>
-              <p className="text-base text-center font-normal">We offer end-to-end grocery delivery app development services designed to support different business models, delivery workflows, and growth stages. Whether you’re launching a new platform or upgrading an existing one, our <a href='https://www.comfygen.com/quick-commerce-app-development' className="text-blue-600 font-semibold">quick commerce</a> team develops solutions that are practical, scalable, and ready for real users.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
         <CallToAction
           heading="Ready to Build Your Grocery Delivery App?"
@@ -721,7 +753,8 @@ export default function ClinicalApp(props: any) {
             heading="Grocery Delivery Apps with Intuitive Dashboard Features"
             description="We develop advanced grocery delivery apps with all the important features to run a smooth, scalable, and high-performing platform. Each module is tailored to meet the needs of users, vendors, delivery partners, and administrators for maximum efficiency."
             featuresData={JSON_DATA.featuresData}
-            grid={4} />
+            grid={4}
+          />
         </div>
 
         <GroceryAppScreens />
@@ -742,7 +775,15 @@ export default function ClinicalApp(props: any) {
                   AI Features in Grocery Delivery App Development
                 </h2>
                 <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                  Our <a href='https://www.comfygen.com/ai-development' className="text-blue-600 font-semibold">AI-driven Grocery delivery app development solutions</a> enhance user experience, optimize operations, and help your business grow.
+                  Our{" "}
+                  <a
+                    href="https://www.comfygen.com/ai-development"
+                    className="text-blue-600 font-semibold"
+                  >
+                    AI-driven Grocery delivery app development solutions
+                  </a>{" "}
+                  enhance user experience, optimize operations, and help your
+                  business grow.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
@@ -774,9 +815,14 @@ export default function ClinicalApp(props: any) {
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Grocery App Development Process</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Grocery App Development Process
+              </h2>
               <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a clear, step-by-step process to build grocery delivery apps. From the first idea to post-launch support, we make sure every stage meets your business goals and helps you serve your customers better.
+                At Comfygen, we follow a clear, step-by-step process to build
+                grocery delivery apps. From the first idea to post-launch
+                support, we make sure every stage meets your business goals and
+                helps you serve your customers better.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -802,7 +848,7 @@ export default function ClinicalApp(props: any) {
 
         <ClientStories />
 
-        <DeliverySection hideUrl={'grocery-app-development'} />
+        <DeliverySection hideUrl={"grocery-app-development"} />
 
         <HireDeveloper
           heading="Hire Expert Grocery Delivery App Developers"
@@ -824,35 +870,13 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
 
-
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         {/* <CoreFeaturesSection
           title="Custom AI-Powered Grocery App Development Solutions"
           subtitle="Comfygen provides next-generation AI-powered grocery app development solutions to automate and optimize grocery shopping and delivery. With our AI-driven grocery app development services, businesses can enhance customer satisfaction, streamline operations, and increase revenue."
           features={JSON_DATA.AIPowered}
         /> */}
-
-
 
         {/* <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -862,14 +886,6 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
  */}
-
-
-
-
-
-
-
-
 
         {/*<BlogSection initialData={initialData} />*/}
       </div>

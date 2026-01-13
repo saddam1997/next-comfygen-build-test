@@ -612,6 +612,21 @@ export default function Ecommerce(props) {
         />
 
         <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Taxi Booking App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Our Taxi Booking App Development Services cover everything needed to build a seamless, scalable, and customer-focused ride-hailing platform. From concept to launch and beyond, we deliver solutions that help you grow your transportation business efficiently.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           heading="Why Invest in Customizable Taxi App Development?"
@@ -630,21 +645,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Taxi Booking App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Our Taxi Booking App Development Services cover everything needed to build a seamless, scalable, and customer-focused ride-hailing platform. From concept to launch and beyond, we deliver solutions that help you grow your transportation business efficiently.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+        
 
         <CallToAction
           heading="Get Started with Your Taxi Booking App"

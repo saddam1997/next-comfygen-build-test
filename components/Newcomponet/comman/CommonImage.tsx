@@ -26,12 +26,6 @@ export default function CommonImage({
       alt={alt}
       width={width}
       height={height}
-      priority={priorityLoad}
-      // loading={priorityLoad ? undefined : "lazy"}
-      // decoding={priorityLoad ? "sync" : "async"}
-      placeholder={placeholder}
-      blurDataURL={blurDataURL}
-      // onError={() => setImgSrc(fallbackSrc)}
       sizes="100vw"
       quality={75}
     />

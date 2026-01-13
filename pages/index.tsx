@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
+import Milestonessec from "../components/Newcomponet/comman/Milestonessec"
+import Script from "next/script";
 
 /* ======================
    CRITICAL (Above-the-fold)
@@ -194,9 +196,153 @@ export default function Home(props: any) {
     },
   ];
 
-  
+  const jsonLdData = [
 
-  
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Comfygen Technologies",
+      image: "https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp",
+      email: "sales@comfygen.com",
+      url: "https://www.comfygen.com/",
+      founders: [
+        {
+          "@type": "Person",
+          name: "Saddam Husen"
+        }
+      ],
+      logo: "https://www.comfygen.com/svg/Logo1.svg",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+1 579-977-4475",
+          contactType: "sales",
+          areaServed: "US",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+1 579-977-4475",
+          contactType: "sales",
+          areaServed: "CA",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+91-9587867258",
+          contactType: "sales",
+          areaServed: "UK",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+91 9587867258",
+          contactType: "sales",
+          areaServed: "IN",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+49-1515-1402200",
+          contactType: "sales",
+          areaServed: "DE",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91 9587867258",
+          contactType: "sales",
+          areaServed: "AE",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+91 9587867258",
+          contactType: "sales",
+          areaServed: "SA",
+          availableLanguage: "en"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+91 9587867258",
+          contactType: "sales",
+          areaServed: "AU",
+          availableLanguage: "en"
+        }
+      ],
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://in.pinterest.com/ComfygenTechnologies/",
+        "https://www.youtube.com/@Comfygentechnologies"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Comfygen Technologies",
+      image: "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      url: "https://www.comfygen.com/",
+      telephone: "+91-958-786-7258",
+      priceRange: "$",
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+          addressLocality: "Jaipur",
+          postalCode: "302006",
+          addressCountry: "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+          addressLocality: "Toronto",
+          postalCode: "M1G3S7",
+          addressCountry: "Canada"
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Rhederstraße 34, 53881 Euskirchen, Germany ",
+          addressLocality: "Euskirchen",
+          postalCode: "53881",
+          addressCountry: "Germany"
+        }
+      ],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        opens: "00:00",
+        closes: "23:59"
+      },
+      sameAs: [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://in.pinterest.com/ComfygenTechnologies/",
+        "https://www.youtube.com/@Comfygentechnologies",
+        "https://www.comfygen.com/"
+      ]
+    }
+
+
+
+  ];
+
+
+
+
 
   // const Webpage = {
   //   "@context": "https://schema.org",
@@ -281,8 +427,7 @@ export default function Home(props: any) {
     <>
       <Head>
         <title>
-          Custom Blockchain & Mobile App Development Company - Comfygen
-          Technologies
+          Web And Mobile App Development with AI & Blockchain | Comfygen
         </title>
         <meta
           name="title"
@@ -290,7 +435,7 @@ export default function Home(props: any) {
         />
         <meta
           name="description"
-          content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
+          content="Looking for web and mobile app development services? Comfygen provides web and mobile app development solutions in India, UAE and the USA for startups and enterprises."
         />
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta
@@ -376,61 +521,50 @@ export default function Home(props: any) {
         />
         {/* ✅ LCP IMAGE PRELOAD */}
 
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
-        
-
-        
-{/* 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(Webpage) }}
         /> */}
 
-        <script
+
+
+
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ) }}
-        />
-
-
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Comfygen Technologies",
-              "url": "https://www.comfygen.com/",
-              "logo": "https://www.comfygen.com/svg/Logo1.svg",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Sales",
-                "contactOption": "TollFree",
-                "telephone": "+91-9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": [
-                  "IN", "US", "CA", "GB"],
-                "availableLanguage": ["English", "Hindi"]
-              },
-              "sameAs": [
-                "https://www.facebook.com/comfygen.technologies/",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies/",
-                "https://youtube.com/@comfygentechnologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-              ]
-
-            }),
-          }}
-
         /> */}
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        /> */}
+
+
+
       </Head>
+
+      <Script
+        id="WebSite-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteJsonLd),
+        }}
+      />
+
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(FAQ),
+        }}
+      />
+
+      <Script
+        id="Organization-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdData),
+        }}
+      />
+
       <div>
         <Header />
       </div>
@@ -448,10 +582,12 @@ export default function Home(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="/landing-hero.jpg"
+            bgImage="https://www.comfygen.com/comfygen-images/home/home.webp"
           />
         </div>
-        <Milestones/>
+        <Milestones />
+        <Milestonessec/>
+        
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

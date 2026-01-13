@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -7,55 +6,73 @@ import JSON_DATA from "./json/flutter.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const AboutSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/AboutSection'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HeadingSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/headingSec"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HeadingSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/headingSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const InfoSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/InfoSection"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const InfoSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-
-
-
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 // import ContactFromCenter from "../componentsnew/ContactFromCenter";
-
-
-
 
 export default function MultiChain(props: any) {
   let { initialData } = props;
@@ -76,11 +93,11 @@ export default function MultiChain(props: any) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <title>
-          Flutter Development Company in Jaipur, India | Hire Best Cross-Platform App Developers
+          Flutter App Development Company in India | Hire Flutter Developers
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Flutter Development Company in Jaipur, India that creates customized cross-platform apps for businesses. Get in touch with Comfygen expert flutter app developers to build your next cross-platform app today."
+          content="Comfygen is a leading Flutter app development company in India delivering scalable, secure cross-platform apps for Android and iOS with expert Flutter developers."
         />
         <link
           rel="canonical"
@@ -122,12 +139,12 @@ export default function MultiChain(props: any) {
       </LazyLoad>
       <div className="overflow-hidden">
         <HeroSectionForAllPages
-          heading="Flutter App Development for Next-Gen Mobile Experiences"
-          ptag="As the leading Flutter app development company in India, we’re your ideal partner for building cross-platform, user-friendly applications. Our expert Flutter developers work across industries to help clients achieve business goals, whether for startups or large enterprises. We deliver tailored Flutter solutions that elevate brands and meet specific business needs on every digital platform."
-          li="10+ Yr Expert Flutter Team"
-          li1="End-to-End Flutter Solutions"
-          li2="Apps That Scale Fast"
-          li3="Cross-Platform Excellence"
+          heading="Flutter App Development Company in India for Scalable Mobile Apps"
+          ptag="Comfygen is a trusted Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market."
+          ptag1="We focus on custom Flutter app development that supports long-term growth, smooth UI/UX, and seamless performance across devices. From MVPs to enterprise-grade applications, our Flutter solutions are designed to meet your business goals and evolving digital needs."
+          li="Custom Cross-Platform App Development Services"
+          li1="Scalable, Secure & High-Performance Flutter Apps"
+          li2="End-to-End Flutter Development & Support"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -136,6 +153,24 @@ export default function MultiChain(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/flutter-app-dev-hero-img.webp"
         />
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Flutter Development Service
+              </h2>
+              <p className="text-base text-center font-normal">
+                We Provide end-to-end Flutter app development services,
+                including business idea generation, development, deployment, and
+                support.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title=""
           heading="Unlock New Business Potential with Cutting-Edge Flutter Solutions"
@@ -144,21 +179,6 @@ export default function MultiChain(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Flutter Development Service
-              </h2>
-              <p className="text-base text-center font-normal">We Provide end-to-end Flutter app development services, including business idea generation, development, deployment, and support.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
 
         <HeadingSec
           title="Why We're India's Premier Flutter App Development Company"
@@ -231,9 +251,7 @@ export default function MultiChain(props: any) {
           faqData={JSON_DATA.Frequently}
           title="Flutter App Development Services"
         />
-
       </div>
     </>
   );
 }
-

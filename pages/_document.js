@@ -4,149 +4,6 @@ import { Html, Head, Main, NextScript } from 'next/document';
 // const isProduction = process.env.NODE_ENV === "production";
 export default function Document() {
 
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp",
-      email: "sales@comfygen.com",
-      url: "https://www.comfygen.com/",
-      founders: [
-        {
-          "@type": "Person",
-          name: "Saddam Husen"
-        }
-      ],
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+1 579-977-4475",
-          contactType: "sales",
-          areaServed: "US",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+1 579-977-4475",
-          contactType: "sales",
-          areaServed: "CA",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91-9587867258",
-          contactType: "sales",
-          areaServed: "UK",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "IN",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+49-1515-1402200",
-          contactType: "sales",
-          areaServed: "DE",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "+91 9587867258",
-          contactType: "sales",
-          areaServed: "AE",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "SA",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "AU",
-          availableLanguage: "en"
-        }
-      ],
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://in.pinterest.com/ComfygenTechnologies/",
-        "https://www.youtube.com/@Comfygentechnologies"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada"
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Rhederstraße 34, 53881 Euskirchen, Germany ",
-          addressLocality: "Euskirchen",
-          postalCode: "53881",
-          addressCountry: "Germany"
-        }
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        opens: "00:00",
-        closes: "23:59"
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://in.pinterest.com/ComfygenTechnologies/",
-        "https://www.youtube.com/@Comfygentechnologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-
-
-
-  ];
 
   return (
     <Html lang='en'>
@@ -154,12 +11,7 @@ export default function Document() {
         {/* Charset & compatibility */}
         <meta charSet="utf-8" />
         {/* Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+
 
         <meta name="msvalidate.01" content="88C9F762357EB27E860762AE43E1BDF7" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -176,10 +28,10 @@ export default function Document() {
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
 
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-        />
+        /> */}
 
 
         {/* <!-- Google Tag Manager --> */}
@@ -198,17 +50,11 @@ export default function Document() {
           }}
         />
       </Head>
-      <body>
 
-        {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M6QT7LCW"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+
+
+
+      <body>
         <Main />
         <NextScript />
 
