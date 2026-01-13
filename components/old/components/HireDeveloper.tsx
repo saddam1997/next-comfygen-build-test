@@ -63,7 +63,7 @@ const HireDeveloper = ({
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
                                 placeholder="blur"
-                                blurDataURL="/blur-placeholder.webp"
+                                // blurDataURL="/blur-placeholder.webp"
                             // width={700}
                             // height={549}
                             // unoptimized
