@@ -85,6 +85,7 @@ import {
   IconUsers,
 } from "@tabler/icons-react";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const Process = [
   {
@@ -238,12 +239,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Your Trusted Substrate Blockchain Development Company in India |
-          Premium Substrate Development Services
+           Substrate Blockchain Development Services | Comfygen
         </title>
         <meta
           property="og:title"
-          content="Your Trusted Substrate Blockchain Development Company in India | Premium Substrate Development Services"
+          content="Substrate blockchain development services for custom blockchains, dApps, Polkadot integration, and Rust-based substrate blockchain solutions."
         />
         <meta
           name="description"
@@ -350,8 +350,14 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[100px]">
 
         <HeroSectionForAllPages
-          heading=" Substrate Blockchain Development Services to Power Your Next-Gen Projects"
-          ptag="No matter how complex your Substrate blockchain requirements are, our Substrate Blockchain Development Company is ready to deliver seamless solutions tailored to your needs. We leverage the Substrate SDK framework's flexibility, modularity, and interoperability, powered by Rust, to build scalable, customized, and future-ready decentralized apps and blockchains. With a proven track record of over 200 digital solutions and 50 blockchain projects, our Expert brings the expertise you need to succeed in the blockchain space & Blockchain Consulting."
+          heading="Substrate Blockchain Development Services"
+          ptag="Our Substrate blockchain development team builds scalable, custom blockchain solutions using the Substrate SDK and Rust. We create secure, future-ready dApps and blockchain networks tailored to complex business needs. With 200+ digital solutions and 50+ blockchain projects delivered, Comfygen brings proven Substrate and blockchain consulting expertise."
+          li='Custom Substrate Blockchain Development'
+          li1='Runtime & Pallet Development'
+          li2='Runtime & Pallet Development'
+          li3='Polkadot & Cross-Chain Integration'
+          li4='Rust-Based Smart Contracts'
+          li5='Substrate Consulting & Support'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -360,15 +366,8 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/substrate-development-company.webp"
         />
-        <AboutSection
-          title="About Company"
-          heading="Our Expertise in Substrate Blockchain Development is Unmatched!"
-          description1="At Comfygen, we take pride in our expertise in Substrate Blockchain Development in India. Using the power of the Substrate framework, we craft blockchain solutions that are not only robust but also scalable. The flexibility of this toolkit allows us to efficiently build essential components, ensuring that your network and application’s consensus function smoothly. We focus on security, adaptability, and making sure everything is customized to fit your specific business needs. Our solutions are designed to be future-ready, helping you stay competitive in the fast-moving world of <a class='text-blue-600' href='/blockchain-development'>Custom Blockchain Software Development</a>. "
-          imageSrc="https://www.comfygen.com/gallery/about-images/substrate-development-company-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+        <Milestones/>
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -381,6 +380,16 @@ export default function Ecommerce(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Our Expertise in Substrate Blockchain Development is Unmatched!"
+          description1="At Comfygen, we take pride in our expertise in Substrate Blockchain Development in India. Using the power of the Substrate framework, we craft blockchain solutions that are not only robust but also scalable. The flexibility of this toolkit allows us to efficiently build essential components, ensuring that your network and application’s consensus function smoothly. We focus on security, adaptability, and making sure everything is customized to fit your specific business needs. Our solutions are designed to be future-ready, helping you stay competitive in the fast-moving world of <a class='text-blue-600' href='/blockchain-development'>Custom Blockchain Software Development</a>. "
+          imageSrc="https://www.comfygen.com/gallery/about-images/substrate-development-company-about-img.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

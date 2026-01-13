@@ -340,25 +340,6 @@ export default function Home(props: any) {
   ];
 
 
-
-
-
-  // const Webpage = {
-  //   "@context": "https://schema.org",
-  //   "@type": "WebPage",
-  //   "@id": "https://www.comfygen.com/#webpage",
-  //   url: "https://www.comfygen.com/",
-  //   inLanguage: "en-US",
-  //   name: "Custom Blockchain & Mobile App Development Company",
-  //   isPartOf: {
-  //     "@id": "https://www.comfygen.com/#website",
-  //   },
-  //   datePublished: "2020-07-08T00:09:36-08:00",
-  //   dateModified: "2024-04-06T00:19:05-08:00",
-  //   description:
-  //     "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally.",
-  // };
-
   const FAQ = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -406,21 +387,7 @@ export default function Home(props: any) {
     ],
   };
 
-  // const jsonLd = {
-  //   "@context": "https://schema.org",
-  //   "@type": "WebPage",
-  //   "@id": "https://www.comfygen.com/#webpage",
-  //   url: "https://www.comfygen.com/",
-  //   inLanguage: "en-US",
-  //   name: "Custom Blockchain & Mobile App Development Company",
-  //   isPartOf: {
-  //     "@id": "https://www.comfygen.com/#website",
-  //   },
-  //   datePublished: "2020-07-08T00:09:36-08:00",
-  //   dateModified: "2024-04-06T00:19:05-08:00",
-  //   description:
-  //     "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally.",
-  // };
+
 
   return (
     <>
@@ -565,11 +532,11 @@ export default function Home(props: any) {
         }}
       />
 
-      <div>
+      <div className="lg:h-[110px]">
         <Header />
       </div>
 
-      <div className="overflow-hidden lg:pt-[120px] pt-5">
+      <div className="overflow-hidden">
         <div className="relative">
           <HeroSectionHomePage
             heading={typedText}

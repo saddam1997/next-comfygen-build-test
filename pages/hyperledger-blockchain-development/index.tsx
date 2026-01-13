@@ -84,8 +84,9 @@ const Faq = dynamic(
 // import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
 // import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 // import Faq from "../Newcomponet/SectionCompoent/Faq";
-import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
+import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters, IconWindmill, IconWiper, } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -516,12 +517,12 @@ export default function Blockchain(props: any) {
   return (
     <>
       <Head>
-        <title>Hyperledger Blockchain Development Services | AI-Powered Enterprise Solutions – Comfygen
+        <title>Hyperledger Blockchain Development Services | Enterprise Solutions
         </title>
 
         <meta
           name="description"
-          content="Build secure, scalable, and AI-powered enterprise Hyperledger blockchain solutions with Comfygen. From consulting to deployment, we deliver customized frameworks for finance, healthcare, and more."
+          content=" Hyperledger blockchain development services for secure, permissioned enterprise networks with AI integration and scalability Hyperledger blockchain development solution."
         />
 
         <link
@@ -617,12 +618,12 @@ export default function Blockchain(props: any) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hyperledger Blockchain Development Service "
-          ptag="Comfygen specializes in delivering secure, scalable, and AI-powered Hyperledger blockchain development services designed for enterprises across industries. Our Blockchain Development team takes advantage of frameworks like Hyperledger Fabric, Sawtooth, and Indy to design permissioned networks that ensure privacy, transparency, and trust. By integrating artificial intelligence (AI), we enhance automation, predictive analytics, and fraud detection for smarter decision-making."
-          li="Secure, Trusted FrameworkSecure, permissioned Hyperledger frameworks for enterprise use."
-          li1="AI integration for predictive analytics and intelligent automation."
-          li2="End-to-end blockchain consulting, development, and deployment."
-          li3="Scalable solutions tailored for finance, healthcare, supply chain, and more."
+          heading="Hyperledger Blockchain Development Company"
+          ptag="Comfygen delivers secure, scalable, and AI-enabled Hyperledger blockchain development services built for enterprise use. Our blockchain development team works with Hyperledger Fabric, Sawtooth, and Indy to create permissioned networks that prioritize privacy, transparency, and trust. By integrating AI capabilities, we help businesses improve automation, enable predictive insights, and strengthen fraud detection for smarter, data-driven decisions."
+          li="Secure, permissioned Hyperledger frameworks for enterprises"
+          li1="AI integration for intelligent automation and predictive analytics"
+          li2="End-to-end blockchain consulting, development, and deployment"
+          li3="Scalable solutions for finance, healthcare, supply chain, and more"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -631,6 +632,20 @@ export default function Blockchain(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/hyperledger-blockchain-development-hero-img.webp"
         />
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Hyperledger Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide end-to-end Hyperledger blockchain development services developed for enterprises' needs, secure, scalable, and AI-powered solutions. Our expertise spans multiple Hyperledger frameworks, ensuring that your business gets the right blockchain architecture for maximum efficiency.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -649,18 +664,7 @@ export default function Blockchain(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Hyperledger Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we provide end-to-end Hyperledger blockchain development services developed for enterprises' needs, secure, scalable, and AI-powered solutions. Our expertise spans multiple Hyperledger frameworks, ensuring that your business gets the right blockchain architecture for maximum efficiency.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
 

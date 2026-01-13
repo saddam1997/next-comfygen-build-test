@@ -88,6 +88,7 @@ import {
   IconUsersGroup,
 } from "@tabler/icons-react";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const technologyData = [
@@ -153,11 +154,12 @@ export default function Polygon(props) {
     <>
       <Head>
         <title>
-          Hire the Best Polygon Blockchain Development Company in INDIA
+          Polygon Blockchain Development Company | NFT & Web3 Experts
+
         </title>
         <meta
           name="description"
-          content="Comfygen, a leading Polygon Blockchain Development Company in India, offers scalable, secure, and cost-effective Polygon blockchain development services. Contact us today!"
+          content="Polygon blockchain development company delivering scalable Web3 apps, NFT marketplaces, and eco-friendly Layer-2 blockchain development solutions."
         />
         <link
           rel="canonical"
@@ -258,11 +260,11 @@ export default function Polygon(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Polygon Blockchain Development Company"
-          ptag="Polygon Blockchain is a powerful force in Web3 and decentralized technology. As a leading Polygon Blockchain development company in India & USA, we help businesses unlock the full potential of scalable and best Polygon blockchain solutions. Whether your goal is to launch an NFT marketplace or utilize Polygon Blockchain for branding, our expertise ensures you benefit from enhanced scalability, interoperability, and cross-chain compatibility. With Polygon, you can achieve these advantages while staying eco-friendly and future-ready."
-          li="Eco-Friendly Polygon Blockchain Development "
-          li1="Custom Polygon Blockchain Services"
-          li2="NFT Marketplace Expertise"
-          li3="Cross-Chain Compatibility"
+          ptag="Polygon is a key player in the Web3 and decentralized ecosystem, known for its scalability and low-cost transactions. As a Polygon blockchain development company serving India and the USA, Comfygen helps businesses build high-performance blockchain solutions on Polygon. From launching NFT marketplaces to using Polygon for brand-driven Web3 experiences, we deliver solutions that offer strong scalability, seamless interoperability, and cross-chain compatibility. Polygon also enables eco-friendly blockchain adoption, making your projects future-ready without compromising performance."
+          li="Eco-Friendly Polygon Blockchain Development"
+          li1="Custom Polygon Blockchain Solutions"
+          li2="NFT Marketplace Development on Polygon"
+          li3="Cross-Chain & Layer 2 Compatibility"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -271,18 +273,9 @@ export default function Polygon(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/polygon-blockchain-development-hero-img.webp"
         />
+        <Milestones/>
 
-        <AboutSection
-          title="About Company"
-          heading="Build the Future with Polygon Blockchain Development"
-          description1="Polygon has become a game-changer in tackling scalability challenges in blockchain and Web3. Stepping into this space can feel overwhelming, but as a trusted Polygon Blockchain Development Company in India & USA, we're here to simplify the journey. Whether you need expert support and the best Polygon blockchain development services or just want guidance to navigate the ecosystem, you can count on us."
-          description2="We’ll help you break down barriers and make the process seamless."
-          imageSrc="https://www.comfygen.com/gallery/about-images/polygon-blockchain-development-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -300,6 +293,18 @@ export default function Polygon(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Build the Future with Polygon Blockchain Development"
+          description1="Polygon has become a game-changer in tackling scalability challenges in blockchain and Web3. Stepping into this space can feel overwhelming, but as a trusted Polygon Blockchain Development Company in India & USA, we're here to simplify the journey. Whether you need expert support and the best Polygon blockchain development services or just want guidance to navigate the ecosystem, you can count on us."
+          description2="We’ll help you break down barriers and make the process seamless."
+          imageSrc="https://www.comfygen.com/gallery/about-images/polygon-blockchain-development-about-img.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <HireDeveloper
           heading="Hire Polygon Blockchain Developer"
           text="You can hire Polygon blockchain developer and they are trained in the best practices and technologies for developing blockchain and web3 solutions on Polygon. We can help in creating blockchains based on Polygon alongside wallets, NFT marketplaces, DeFi solutions, and dApps. Choose the ideal developer for your project with essential skills for addressing your project objectives."

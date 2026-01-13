@@ -13,6 +13,7 @@ import {
 } from "@tabler/icons-react";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -788,11 +789,12 @@ export default function Blockchain(props) {
     <div className="overflow-hidden">
       <Head>
         <title>
-          Blockchain App Development Company | Blockchain App Development
+          Enterprise Blockchain App Development Company | Web3 Solutions
+
         </title>
         <meta
           name="description"
-          content="Explore leading blockchain development services tailored to your business goals. Get expert solutions from a trusted blockchain development company."
+          content="Comgygen Blockchain app development service delivered secure dApps, smart contracts, NFT marketplaces, DeFi platforms, and custom blockchain solutions."
         />
         <link
           rel="canonical"
@@ -897,8 +899,9 @@ export default function Blockchain(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[50px]">
         <HeroSectionForAllPages
-          heading="Blockchain App Development Company"
-          ptag="Comfygen is a leading blockchain app development company specializing in creating secure, scalable, and enterprise-grade decentralized applications (dApps). Our team of expert blockchain developers delivers custom blockchain software solutions for startups, SMEs, and large enterprises, helping them leverage distributed ledger technology to enhance transparency, automation, and data security. Whether you need blockchain wallet development, smart contract development, NFT marketplace solutions, or DeFi platform development, Comfygen provides end-to-end blockchain development services according to your business goals. "
+          heading="Blockchain Development Service"
+          subhead='Looking for a blockchain app development service. '
+          ptag="Comfygen is a trusted blockchain app development company focused on building secure, scalable, and production-ready decentralized applications. Our experienced blockchain developers design custom solutions for startups, growing businesses, and enterprises that want to use blockchain for better transparency, automation, and data protection. From blockchain wallet and smart contract development to NFT marketplaces and DeFi platforms, we deliver complete blockchain solutions aligned with your business objectives."
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -907,6 +910,21 @@ export default function Blockchain(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/blockchain-development-new/hero.webp"
         />
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Blockchain App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide end-to-end blockchain development services designed to help startups, enterprises, and innovators build secure, scalable, and decentralized digital ecosystems.
+                Our blockchain development expertise covers every layer of blockchain technology from architecture design to <a href='https://www.comfygen.com/smart-contract-wallet-development' className="text-blue-600">smart contract deployment</a>, ensuring that your business gains a powerful competitive edge in the digital economy. </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title=""
@@ -999,7 +1017,7 @@ export default function Blockchain(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Blockchain App Development Process</h2>
               <p className="text-base font-normal mt-2">
-                At Comfygen, we follow an agile, strategic approach to turn your vision into a high-performance, decentralized solution with transparency and innovation at every step. 
+                At Comfygen, we follow an agile, strategic approach to turn your vision into a high-performance, decentralized solution with transparency and innovation at every step.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
