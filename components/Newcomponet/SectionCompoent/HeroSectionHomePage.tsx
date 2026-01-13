@@ -10,7 +10,7 @@ const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
   ssr: false,
 });
 
-export default function HeroSection(props: any) {
+export default function npHeroSection(props: any) {
   const [loadImages, setLoadImages] = useState(false);
 
   // ✅ Images load AFTER first paint (LCP safe)

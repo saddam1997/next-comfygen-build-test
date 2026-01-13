@@ -28,21 +28,5 @@ Disallow: /blog/tag/*
 # Block sensitive/admin/system areas
 Disallow: /cgi-bin/
 
-# ---------------------------------------
-# Bots China 
-# ---------------------------------------
-User-agent: Baiduspider
-User-agent: Baiduspider-image
-User-agent: Baiduspider-video
-User-agent: Baiduspider-news
-User-agent: Baiduspider-favo
-User-agent: Baiduspider-cpro
-User-agent: Baiduspider-plus
 
-
-
-# ---------------------------------------
-# Bots Singapur
-# ---------------------------------------
-User-agent: PetalBot
 

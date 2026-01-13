@@ -1,55 +1,76 @@
-import React, { useState } from 'react'
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import JSON_DATA from "./json/hybrid.json"
-import LazyLoad from 'react-lazy-load';
-import Header from '../../components/Newcomponet/layout/Header';
-import HeroSectionForAllPages from '../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages';
+import React, { useState } from "react";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import JSON_DATA from "./json/hybrid.json";
+import LazyLoad from "react-lazy-load";
+import Header from "../../components/Newcomponet/layout/Header";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const AboutSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/AboutSection'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ServicesSec = dynamic(() => import('../../components/Newcomponet/SectionCompoent/ServicesSec'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const HireDeveloper = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HireDeveloper'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const ConsultancyApproach = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const ConsultancyApproach = dynamic(() => import('../../components/Newcomponet/SectionCompoent/ConsultancyApproach'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const InfoSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const InfoSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/InfoSection'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
+const WhyChooseUs = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
-const WhyChooseUs = dynamic(() => import('../../components/Newcomponet/SectionCompoent/WhyChooseUs'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-const IndustriesServe = dynamic(() => import('../../components/Newcomponet/SectionCompoent/IndustriesServe'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-const CallToAction = dynamic(() => import('../../components/Newcomponet/SectionCompoent/CallToAction'), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
-
-
-
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
 
 export default function Mobile(props: any) {
   let { initialData } = props;
@@ -63,47 +84,99 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Hybrid Mobile App Development Company | Hire Hybrid App Developers – Comfygen</title>
-        <meta property="og:title" content="Best Hybrid Mobile App Development Company in jaipur, India | Get Best Solutions" />
-        <meta name='description' content='Comfygen is a leading hybrid mobile app development company in India and the USA, delivering secure, scalable, and cost-effective cross-platform app solutions with expert developers.' />
-        <meta name='og:description' content='Comfygen, the premier hybrid mobile app development company in Jaipur India, offers top-notch hybrid mobile app development services to bring your app vision to life. Contact us today!' />
-        <link rel='canonical' href='https://www.comfygen.com/hybrid-mobile-app-development' />
-        <meta name='robots' content='INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1' />
+        <title>
+          Hybrid Mobile App Development Company | Hire Hybrid App Developers – Comfygen
+        </title>
+        <meta
+          property="og:title"
+          content="Best Hybrid Mobile App Development Company in jaipur, India | Get Best Solutions"
+        />
+        <meta
+          name="description"
+          content="Comfygen is a leading hybrid mobile app development company in India and the USA, delivering secure, scalable, and cost-effective cross-platform app solutions with expert developers."
+        />
+        <meta
+          name="og:description"
+          content="Comfygen, the premier hybrid mobile app development company in Jaipur India, offers top-notch hybrid mobile app development services to bring your app vision to life. Contact us today!"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/hybrid-mobile-app-development"
+        />
+        <meta
+          name="robots"
+          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
+        />
         <meta charSet="UTF-8" />
-        <meta property="og:facebook_title" content="Are you looking for best Hybrid App Development Company | Hire Hybrid App Developers" />
-        <meta property="og:facebook_description" content="Looking for a reliable Hybrid mobile app development Industry? Our expert Hire Hybrid App Developers provide end-to-end Hybrid mobile app development services that meet your business needs." />
-        <meta property="og:twitter_title" content="Top Hybrid Mobile App Developers Company India & USA | Hybrid App Development Services | Comfygen" />
-        <meta property="og:twitter_description" content="Comfygen, the Best Hybrid mobile application development company in India, UK, UAE & USA. Our hybrid mobile app developers can create mobile apps that employ native capabilities while also utilizing the power of HTML5." />
+        <meta
+          property="og:facebook_title"
+          content="Are you looking for best Hybrid App Development Company | Hire Hybrid App Developers"
+        />
+        <meta
+          property="og:facebook_description"
+          content="Looking for a reliable Hybrid mobile app development Industry? Our expert Hire Hybrid App Developers provide end-to-end Hybrid mobile app development services that meet your business needs."
+        />
+        <meta
+          property="og:twitter_title"
+          content="Top Hybrid Mobile App Developers Company India & USA | Hybrid App Development Services | Comfygen"
+        />
+        <meta
+          property="og:twitter_description"
+          content="Comfygen, the Best Hybrid mobile application development company in India, UK, UAE & USA. Our hybrid mobile app developers can create mobile apps that employ native capabilities while also utilizing the power of HTML5."
+        />
         <meta property="schema:type" content="LocalBusiness" />
-        <meta name='copyright' content='Comfygen Private Limited' />
-        <meta name='language' content='en-us' />
-        <meta name='abstract' content='Hybrid Mobile App Development Company in  India' />
-        <meta name='summary' content='Comfygen is the No 1 Hybrid mobile app development Industry in India, USA.' />
-        <meta name='author' content='Mr. Dilip khan, sales@comfygen.com' />
-        <meta name='reply-to' content='sales@comfygen.com' />
-        <meta name='owner' content='A Founder is one of the individuals who helped establish a company, startup or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement.' />
-        <meta name='Hybrid Mobile App Development Company in  India' content='Comfygen is a leading Hybrid Mobile app development company in jaipur, India. Our hybrid mobile app developers can create mobile apps that employ native capabilities while also utilizing the power of HTML5.' />
-        <meta name='category' content='Hybrid Mobile App Development Company in  India' />
-        <meta name='coverage' content='Worldwide' />
-        <meta name='distribution' content='Global' />
-        <meta name='rating' content='General' />
-        <meta name='subtitle' content='Hybrid Mobile Application Development Organization' />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="language" content="en-us" />
+        <meta
+          name="abstract"
+          content="Hybrid Mobile App Development Company in  India"
+        />
+        <meta
+          name="summary"
+          content="Comfygen is the No 1 Hybrid mobile app development Industry in India, USA."
+        />
+        <meta name="author" content="Mr. Dilip khan, sales@comfygen.com" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta
+          name="owner"
+          content="A Founder is one of the individuals who helped establish a company, startup or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement."
+        />
+        <meta
+          name="Hybrid Mobile App Development Company in  India"
+          content="Comfygen is a leading Hybrid Mobile app development company in jaipur, India. Our hybrid mobile app developers can create mobile apps that employ native capabilities while also utilizing the power of HTML5."
+        />
+        <meta
+          name="category"
+          content="Hybrid Mobile App Development Company in  India"
+        />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta
+          name="subtitle"
+          content="Hybrid Mobile Application Development Organization"
+        />
         <meta name="MobileOptimized" content="320" />
-        <meta name='fb:page_id' content='110909321596135' />
+        <meta name="fb:page_id" content="110909321596135" />
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name='og:country-name' content='India, USA, UK, UAE' />
-        <meta name='og:latitude' content='26.912434°' />
-        <meta name='og:longitude' content='75.787271°' />
-        <meta property='og:type' content='Hybrid Mobile App Development Company in  India' />
-        <meta name="google-site-verification" content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg" />
+        <meta name="og:country-name" content="India, USA, UK, UAE" />
+        <meta name="og:latitude" content="26.912434°" />
+        <meta name="og:longitude" content="75.787271°" />
+        <meta
+          property="og:type"
+          content="Hybrid Mobile App Development Company in  India"
+        />
+        <meta
+          name="google-site-verification"
+          content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
+        />
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
       <HeroSectionForAllPages
-        heading="Best Hybrid Mobile App Development Company"
-        subhead='Looking for a Hybrid Mobile App Development Service?'
+        heading="Looking for a Hybrid Mobile App Development Service?"
         ptag="Comfygen is a trusted hybrid mobile app development company in India and the USA, delivering high-quality, cost-effective app solutions for businesses of all sizes. Our experienced hybrid app developers help you choose the right frameworks and technologies to build scalable, secure, and performance-driven applications."
         ptag1="With over 5+ years of industry expertise, we develop custom hybrid apps that ensure faster time-to-market, seamless user experience, and cross-platform compatibility—without compromising quality or security."
         li="5+ Years of Hybrid App Development Experience"
@@ -118,6 +191,28 @@ export default function Mobile(props: any) {
         setTalkToExpertModal={setTalkToExpertModal}
         closeModal={closeModal}
       />
+      <Milestones/>
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+              Our Hybrid App Development Services
+            </h2>
+            <p className="text-base text-center font-normal">
+              Accelerate your digital transformation with our cutting-edge
+              hybrid app development services. Harnessing the power of
+              cross-platform compatibility, cost-effectiveness, and seamless
+              user experiences, our team delivers high-performing, feature-rich
+              apps that cater to diverse business needs. Partner with us to
+              unlock the full potential of hybrid app development companies in
+              Jaipur and elevate your business to new heights
+            </p>
+          </div>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
+          </div>
+        </div>
+      </section>
       <AboutSection
         title="About Company"
         heading="Best Hybrid App Development Service Provider in India"
@@ -128,18 +223,7 @@ export default function Mobile(props: any) {
         linkText="Explore More"
       />
 
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Hybrid App Development Services
-            </h2>
-            <p className="text-base text-center font-normal">Accelerate your digital transformation with our cutting-edge hybrid app development services. Harnessing the power of cross-platform compatibility, cost-effectiveness, and seamless user experiences, our team delivers high-performing, feature-rich apps that cater to diverse business needs. Partner with us to unlock the full potential of hybrid app development companies in Jaipur and elevate your business to new heights</p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
+      
 
       <HireDeveloper
         heading="Hire Hybrid App Developers"
@@ -152,7 +236,7 @@ export default function Mobile(props: any) {
           "Determine project requirements.",
           "Look for hybrid app development experience.",
           "Evaluate technical skills.",
-          "Consider communication skills ."
+          "Consider communication skills .",
         ]}
       />
       {/* <ContactFromCenter /> */}
@@ -193,8 +277,6 @@ export default function Mobile(props: any) {
   );
 }
 
-
-
 export async function getServerSideProps({ res }) {
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
   const data = await resData.json();
@@ -204,4 +286,3 @@ export async function getServerSideProps({ res }) {
   );
   return { props: { initialData: data } };
 }
-

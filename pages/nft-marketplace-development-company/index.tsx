@@ -12,13 +12,11 @@ import {
   IconWallet,
 } from "@tabler/icons-react";
 
-import Header from "../../components/Newcomponet/layout/Header"
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
+const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -69,12 +67,6 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
-
-
-
-
-
-
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -158,107 +150,102 @@ export default function Ecommerce(props) {
     },
   ];
 
-
-
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
+    mainEntity: [
       {
         "@type": "Question",
-        "name": "What is NFT Marketplace Development?",
-        "acceptedAnswer": {
+        name: "What is NFT Marketplace Development?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "NFT marketplace development is the process of building a platform where users can create, buy, sell, and trade NFTs (Non-Fungible Tokens). These marketplaces are powered by blockchain technology, ensuring transparency, security, and ownership authenticity."
-        }
+          text: "NFT marketplace development is the process of building a platform where users can create, buy, sell, and trade NFTs (Non-Fungible Tokens). These marketplaces are powered by blockchain technology, ensuring transparency, security, and ownership authenticity.",
+        },
       },
       {
         "@type": "Question",
-        "name": "How much will NFT marketplace development cost in 2025?",
-        "acceptedAnswer": {
+        name: "How much will NFT marketplace development cost in 2025?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "The cost of NFT marketplace development in 2025 depends on factors such as blockchain integration, features, and security. A basic NFT marketplace may start at $25,000 - $50,000, while high-end custom platforms can range from $80,000 to $200,000+."
-        }
+          text: "The cost of NFT marketplace development in 2025 depends on factors such as blockchain integration, features, and security. A basic NFT marketplace may start at $25,000 - $50,000, while high-end custom platforms can range from $80,000 to $200,000+.",
+        },
       },
       {
         "@type": "Question",
-        "name": "What is the objective of the NFT marketplace?",
-        "acceptedAnswer": {
+        name: "What is the objective of the NFT marketplace?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "The main objective of an NFT marketplace is to provide a secure and decentralized platform where users can mint, buy, sell, and trade NFTs with verified ownership and smart contract automation."
-        }
+          text: "The main objective of an NFT marketplace is to provide a secure and decentralized platform where users can mint, buy, sell, and trade NFTs with verified ownership and smart contract automation.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Is the NFT marketplace profitable?",
-        "acceptedAnswer": {
+        name: "Is the NFT marketplace profitable?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Yes, NFT marketplaces can be highly profitable through transaction fees, listing fees, premium memberships, advertisements, and auction commissions. Leading NFT marketplaces generate millions in monthly revenue."
-        }
+          text: "Yes, NFT marketplaces can be highly profitable through transaction fees, listing fees, premium memberships, advertisements, and auction commissions. Leading NFT marketplaces generate millions in monthly revenue.",
+        },
       },
       {
         "@type": "Question",
-        "name": "What is the structure of the NFT marketplace?",
-        "acceptedAnswer": {
+        name: "What is the structure of the NFT marketplace?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "An NFT marketplace typically consists of a frontend interface, smart contracts, database & storage, crypto wallet integration, an auction & bidding system, and an admin panel for user and transaction management."
-        }
+          text: "An NFT marketplace typically consists of a frontend interface, smart contracts, database & storage, crypto wallet integration, an auction & bidding system, and an admin panel for user and transaction management.",
+        },
       },
       {
         "@type": "Question",
-        "name": "How much does it cost to create an NFT?",
-        "acceptedAnswer": {
+        name: "How much does it cost to create an NFT?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "The cost to create an NFT depends on blockchain gas fees and platform charges. Ethereum NFTs may cost $30 - $150 per NFT, while Polygon & Solana offer low-cost minting at $0.01 - $5 per NFT."
-        }
+          text: "The cost to create an NFT depends on blockchain gas fees and platform charges. Ethereum NFTs may cost $30 - $150 per NFT, while Polygon & Solana offer low-cost minting at $0.01 - $5 per NFT.",
+        },
       },
       {
         "@type": "Question",
-        "name": "What is the NFT marketplace?",
-        "acceptedAnswer": {
+        name: "What is the NFT marketplace?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "An NFT marketplace is a digital platform where users can buy, sell, and trade NFTs securely on a blockchain. Popular examples include OpenSea, Rarible, and Blur."
-        }
+          text: "An NFT marketplace is a digital platform where users can buy, sell, and trade NFTs securely on a blockchain. Popular examples include OpenSea, Rarible, and Blur.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Is NFT legal in India?",
-        "acceptedAnswer": {
+        name: "Is NFT legal in India?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Yes, NFTs are legal in India but not regulated by the government. Taxation policies apply, and income from NFT sales may be subject to capital gains tax."
-        }
+          text: "Yes, NFTs are legal in India but not regulated by the government. Taxation policies apply, and income from NFT sales may be subject to capital gains tax.",
+        },
       },
       {
         "@type": "Question",
-        "name": "What exactly does NFT do?",
-        "acceptedAnswer": {
+        name: "What exactly does NFT do?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "NFTs represent unique digital assets on the blockchain. They are used for digital art, gaming assets, virtual real estate, music, videos, and tokenized real-world assets."
-        }
+          text: "NFTs represent unique digital assets on the blockchain. They are used for digital art, gaming assets, virtual real estate, music, videos, and tokenized real-world assets.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Who is the biggest NFT marketplace in 2025?",
-        "acceptedAnswer": {
+        name: "Who is the biggest NFT marketplace in 2025?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "As of 2025, leading NFT marketplaces include Blur, OpenSea, Magic Eden, and LooksRare, with Blur dominating NFT trading volume."
-        }
-      }
-    ]
+          text: "As of 2025, leading NFT marketplaces include Blur, OpenSea, Magic Eden, and LooksRare, with Blur dominating NFT trading volume.",
+        },
+      },
+    ],
   };
-
-
 
   return (
     <>
       <Head>
         <title>
-          NFT Marketplace Development Company | NFT Software Development Services
+          Best NFT Marketplace Development Company in India | NFT App Developers
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading NFT Marketplace Development Company, delivering top-tier NFT Marketplace Development Services & Solutions to help you create a custom NFT marketplace with cutting-edge features and blockchain security."
+          content="Comfygen is the top NFT marketplace development company in India, delivering secure, scalable, and custom NFT marketplace solutions with blockchain expertise."
         />
         <link
           rel="canonical"
@@ -347,8 +334,10 @@ export default function Ecommerce(props) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
       </Head>
 
       <Header />
@@ -356,8 +345,8 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-[40px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="NFT Marketplace Development Company"
-          ptag1="Unlock the potential of NFTs with Comfygen, a leading NFT marketplace development company. We provide custom NFT marketplace development services, including white-label solutions, multi-chain support, and secure smart contracts to help you launch a scalable and profitable NFT platform."
+          heading="Top-Notch NFT Marketplace Development Company in India"
+          ptag1="Comfygen is a trusted NFT marketplace development company in India helping startups, creators, and enterprises launch secure, scalable, and feature-rich NFT marketplaces. We deliver custom and white-label NFT marketplace solutions with multi-chain blockchain support, smart contract security, and seamless wallet integration to help you build a profitable NFT trading platform with global reach."
           li="Custom & White-Label Solutions – Launch from scratch or use a ready-made NFT marketplace platform."
           li1="Multi-Chain Support – Ethereum, Polygon, Solana, Binance Smart Chain & more."
           li2="Smart Contract Integration – Secure, automated, and trustless transactions."
@@ -373,26 +362,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/nft-marketplace-development-company-hero-img.webp"
         />
-
-        <AboutSection
-          title="About Company"
-          heading="NFT Marketplace Development"
-          description1="An NFT marketplace is a blockchain-based platform that enables users to create, buy, sell, and trade digital assets such as artwork, music, virtual real estate, and gaming items. These platforms operate using smart contracts, ensuring security, transparency, and automation in transactions. At Comfygen, we provide end-to-end NFT marketplace development solutions, catering to businesses, artists, and game developers looking to launch a scalable and user-friendly NFT marketplace. "
-          points={[
-            "Decentralized Ownership & Trading ",
-            "Multi-Blockchain Compatibility ",
-            "NFT Minting & Smart Contracts ",
-            "User-Friendly Interface ",
-            "Wallet Integration ",
-            "Multiple Revenue Models ",
-            "White Label NFT Marketplace Development ",
-            "Scalable Architecture ",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+        <Milestones />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -412,6 +382,26 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="NFT Marketplace Development"
+          description1="An NFT marketplace is a blockchain-based platform that enables users to create, buy, sell, and trade digital assets such as artwork, music, virtual real estate, and gaming items. These platforms operate using smart contracts, ensuring security, transparency, and automation in transactions. At Comfygen, we provide end-to-end NFT marketplace development solutions, catering to businesses, artists, and game developers looking to launch a scalable and user-friendly NFT marketplace. "
+          points={[
+            "Decentralized Ownership & Trading ",
+            "Multi-Blockchain Compatibility ",
+            "NFT Minting & Smart Contracts ",
+            "User-Friendly Interface ",
+            "Wallet Integration ",
+            "Multiple Revenue Models ",
+            "White Label NFT Marketplace Development ",
+            "Scalable Architecture ",
+          ]}
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <InfoSection
           heading="White Label NFT Marketplace Development"
           description1="At Comfygen, we offer white-label NFT marketplace development solutions that enable businesses to launch a fully functional, customizable, and scalable NFT marketplace in no time. Whether you want to create an NFT platform for art, gaming, real estate, or collectibles, our pre-built solution is tailored to meet your needs."
@@ -433,7 +423,6 @@ export default function Ecommerce(props) {
           linkText="LET'S CONNECT "
         />
 
-
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
@@ -441,8 +430,6 @@ export default function Ecommerce(props) {
             description="At Comfygen, we have successfully developed custom NFT marketplace solutions that empower businesses to tokenize digital assets seamlessly. Our expertise spans secure smart contract integration, multi-chain compatibility, and advanced trading features, ensuring a scalable and high-performance NFT marketplace. With a focus on user-friendly design, high-speed transactions, and enhanced security, we have delivered NFT marketplaces for real estate, gaming, art, collectibles, and more. Whether you're looking for a custom-built solution or a white-label NFT marketplace, our team ensures a seamless development process from ideation to deployment."
           />
         </section>
-
-
 
         <SolutionSec
           heading="Features of Our NFT Marketplace Development"

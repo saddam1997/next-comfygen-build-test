@@ -522,18 +522,6 @@ export default function Ecommerce(props) {
         />
 
         <Milestones />
-
-        <AboutSection
-          heading="Why Invest in Medicine Delivery App Development?"
-          description1="A medicine delivery app is no longer optional. It helps pharmacies and startups deliver medicines faster, manage prescriptions online, and serve customers 24/7. With rising digital healthcare demand, online pharmacy apps improve convenience, trust, and repeat orders."
-
-          description2="The global e-pharmacy market is growing at over 15% CAGR, and studies show that 60%+ users prefer ordering medicines online for regular and emergency needs. Investing in medicine delivery app development make sure long-term growth, scalability, and higher customer retention."
-
-          description3="Comfygen is a top-notch medicine delivery app development agency. We are the perfect choice for startups, entrepreneurs, and small businesses looking to establish their pharmacy business venture."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -554,6 +542,15 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+        <AboutSection
+          heading="Why Invest in Medicine Delivery App development"
+          description1="Investing in Medicine Delivery App Development helps pharmacies, startups, and healthcare enterprises deliver medicines faster, manage prescriptions digitally, and offer 24/7 services. An online medicine delivery app improves customer convenience, boosts repeat orders, and ensures secure payments with real-time order tracking."
+          description2="India’s online pharmacy and medicine delivery market is experiencing rapid growth, with strong revenue potential expected to reach US$418 million to over US$1 billion in the coming years. This expansion is driven by increasing internet adoption, rising demand for convenient healthcare services, seamless telemedicine integration, and growing health awareness among consumers. Leading platforms such as Tata 1mg and PharmEasy continue to dominate this fast-evolving and highly competitive sector."
+          description3="By choosing custom and on-demand medicine delivery app development, businesses gain scalability, long-term growth, and a competitive edge in the digital healthcare ecosystem."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
 
         <AboutSection
           heading="Why Invest in Medicine Delivery App Development?"

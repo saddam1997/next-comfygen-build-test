@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
-
+import Milestonessec from "../components/Newcomponet/comman/Milestonessec"
+import Script from "next/script";
 
 /* ======================
    CRITICAL (Above-the-fold)
@@ -263,8 +264,7 @@ export default function Home(props: any) {
     <>
       <Head>
         <title>
-          Custom Blockchain & Mobile App Development Company - Comfygen
-          Technologies
+          Web And Mobile App Development with AI & Blockchain | Comfygen
         </title>
         <meta
           name="title"
@@ -272,7 +272,7 @@ export default function Home(props: any) {
         />
         <meta
           name="description"
-          content="Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
+          content="Looking for web and mobile app development services? Comfygen provides web and mobile app development solutions in India, UAE and the USA for startups and enterprises."
         />
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta
@@ -415,7 +415,9 @@ export default function Home(props: any) {
           />
         </div>
         <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9] lg:mt-8">
+        <Milestonessec/>
+        
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
