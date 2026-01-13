@@ -63,22 +63,10 @@ const Faq = dynamic(
 );
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../components/IndustriesServe";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
 import { IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
 import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -613,11 +601,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Solana Blockchain Development Company | AI-Powered Solana DApps & DeFi Solutions
+          Solana Blockchain Development Company | DApps, NFT & DeFi Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen Solana Blockchain Development Company offering AI-powered Solana DApps, NFT marketplaces, DeFi platforms, and crypto wallets. Get scalable, secure, and high-performance blockchain solutions."
+          content="Comfygen is a leading Solana blockchain development company delivering secure, scalable DApps, NFT marketplaces, DeFi platforms, and AI-powered crypto wallet solutions.
+"
         />
 
         {/* keywords */}
@@ -717,12 +706,12 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Best Solana Blockchain Development Company "
-          ptag="Comfygen is a trusted Solana blockchain development company, delivering cutting-edge Solana Blockchain Development solutions for businesses and startups worldwide. Harness the power of Solana’s high-speed, low-cost blockchain to develop decentralized applications (DApps), NFT marketplaces, DeFi platforms, and crypto wallets with unmatched scalability and security."
+          heading="Solana Blockchain Development Company"
+          ptag="Comfygen is a trusted Solana blockchain development company providing advanced solutions for businesses and startups globally. Leveraging Solana’s high-speed, low-cost blockchain, we build scalable and secure decentralized applications (DApps), NFT marketplaces, DeFi platforms, and crypto wallets. Our AI-powered blockchain solutions ensure optimized performance, intelligent analytics, and seamless user experiences."
           ptag1=""
           li="Expert Solana DApp Development"
           li1="NFT & Token Solutions"
-          li2="DeFi & Crypto Wallet Development"
+          li2="DeFi Platforms & Crypto Wallet Development"
           li3="AI-Powered Blockchain Optimization"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -732,6 +721,23 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/solana-blockchain-development-hero-img.webp"
         />
+
+        <Milestones/>
+
+         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Solana Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <AboutSection
           title="About Company"
           heading="AI-Powered Blockchain Solutions on Solana"
@@ -748,19 +754,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Solana Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
+       
 
         <SolutionSec
           heading="Why Are Businesses Adopting Solana Blockchain Development Solutions?"

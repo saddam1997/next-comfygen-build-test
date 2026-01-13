@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -527,6 +528,10 @@ export default function Mobile(props) {
             "Adaptability to new industry trends and emerging requirements."
           ]}
         />
+        {/* <ClientTestimonials
+          heading="Client Testimonial"
+          testimonials={JSON_DATA.customTestimonials}
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -113,8 +114,8 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-      <title>AWS Analytics Services | Real-Time Data Insights with Comfygen</title>
-        <meta name="description" content="AWS Analytics Services turn raw data into visual insights. From Redshift to Glue and Kinesis, we build custom, scalable solutions for real-time data performance." />
+      <title>AWS Analytics Services | Data Engineering & AI/ML Solutions – Comfygen</title>
+        <meta name="description" content="Comfygen provides AWS analytics services, offering secure, scalable, and cost-efficient data pipelines, real-time analytics, AI/ML integration, and cloud-native solutions to drive smarter business decisions." />
 
         <meta name="keywords" content="Data Engineering on AWS, Real-Time Analytics, Cloud Data Warehousing, BI Dashboard Development, ETL Pipeline Automation"/>
 
@@ -357,10 +358,10 @@ export default function Mobile(props) {
       <div className="pt-16">
         <HeroSectionForAllPages
           heading="AWS Analytics Services"
-          ptag="At Comfygen Technologies, we help businesses turn data into actionable insights with scalable, secure, and cost-efficient AWS Analytics Services. Whether you're a startup optimizing operations or an enterprise building advanced data pipelines, our AWS-certified experts design cloud-native solutions that help you make smarter decisions faster."
+          ptag="At Comfygen Technologies, we help businesses transform data into actionable insights with secure, scalable, and cost-efficient AWS Analytics services. Our AWS-certified experts design cloud-native solutions, from advanced data pipelines to real-time analytics, enabling startups and enterprises to make smarter, faster business decisions."
           li="End-to-End AWS Data Analytics & Engineering Solutions"
           li1="Real-Time Analytics for Smarter Decisions"
-          li2="Serverless & Scalable Architecture"
+          li2="Serverless & Scalable Cloud Architecture"
           li3="AI & ML Integration with Amazon SageMaker"
           li4="Secure, Compliant, and Governed Data Infrastructure"
           btnName="Talk With Expert"
@@ -371,16 +372,7 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/aws-analytics-services/hero1.webp"
         />
-        <AboutSection
-          title=""
-          heading="Why Your Business Needs AWS Analytics Services"
-          description1="In today's digital world, businesses are growing fast and taking smart and fast decisions by data analytic services. Outdated spreadsheets or isolated systems can put your business at a major disadvantage. No matter you're in retail, finance, healthcare, logistics, or manufacturing, data is your most valuable factor. AWS Analytics Services empower your organization to convert raw, unstructured data into clear, actionable intelligence."
-          description2="With Comfygen’s AWS <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data' >Data service</a> approach, we help you build a future-ready data platform that centralizes your data by the help of cloud-based data analytics and data science, delivers real-time insights, and enhances decision-making — all while improving operational efficiency and driving business growth."
-          imageSrc="https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -397,6 +389,19 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Why Your Business Needs AWS Analytics Services"
+          description1="In today's digital world, businesses are growing fast and taking smart and fast decisions by data analytic services. Outdated spreadsheets or isolated systems can put your business at a major disadvantage. No matter you're in retail, finance, healthcare, logistics, or manufacturing, data is your most valuable factor. AWS Analytics Services empower your organization to convert raw, unstructured data into clear, actionable intelligence."
+          description2="With Comfygen’s AWS <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data' >Data service</a> approach, we help you build a future-ready data platform that centralizes your data by the help of cloud-based data analytics and data science, delivers real-time insights, and enhances decision-making — all while improving operational efficiency and driving business growth."
+          imageSrc="https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
 
 

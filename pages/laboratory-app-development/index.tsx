@@ -11,6 +11,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -170,11 +171,11 @@ export default function ClinicalApp(props) {
     <>
       <Head>
         <title>
-          Laboratory Mobile App Development Company In India & The USA
+          Best Laboratory App Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Providing cost-effective healthcare laboratory app development for laboratories via developing mobile applications and websites, Comfgen is India's best laboratory application development company."
+          content="Comfygen Technologies delivers secure and scalable laboratory app development solutions for diagnostic labs with test management and digital reporting."
         />
         <link
           rel="canonical"
@@ -251,12 +252,12 @@ export default function ClinicalApp(props) {
 
       <div className="overflow-hidden pt-10 lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Laboratory App Development Company "
-          ptag="Comfygen offers impeccable, cost-efficient laboratory app software for seamless management of business and patient operations. Using cutting-edge technologies and industry compliance, we create user-friendly Laboratory Information Management Software (LIMS) solutions with exceptional user experiences. As a trusted laboratory app development company, we’ve helped many labs build interactive LIMS solutions."
-          li="Cost-Effective LIMS Solutions"
-          li1="Advanced Tech & Compliance Standards"
-          li2="Exceptional User Experience"
-          ptag3="Contact us for laboratory app development consultancy."
+          heading="Laboratory App Development Company"
+          ptag="A reliable Laboratory App Development Company delivering secure, scalable, and efficient digital solutions for diagnostic labs, pathology centers, and healthcare organizations. Comfygen Technologies specializes in building advanced laboratory applications that streamline test management, sample tracking, report generation, and patient data handling. Our expert developers focus on compliance, data security, and intuitive UI/UX to create high-performance lab apps that improve operational efficiency, enhance patient experiences, and support long-term business growth."
+          li="Test & Sample Management"
+          li1="Digital Report Generation & Sharing"
+          li2="Appointment Booking & Status Updates"
+          ptag3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -265,17 +266,8 @@ export default function ClinicalApp(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/laboratory-app-development-company-hero-img.webp"
         />
+        <Milestones />
 
-        <AboutSection
-          title="About Company"
-          heading="Build Laboratory Apps for Scalable Businesses and Management"
-          description1="Comfygen is your go-to-platform to discuss ideas on laboratory app development. We have years of experience, knowledge, talent, and skills to create robust lab-related mobile applications. Our expert development team adheres to the efficient technologies and works on user-experience to build an interactive laboratory application."
-          description2="We have dedicated, as well as innovative laboratory app developers; who knows what the market demands, knows what attracts potential users, and how to make the app sustainable in the marketplace. Also, our laboratory mobile app development services don’t charge greedily. We have the best laboratory app development solutions at the right and competitive cost. So make your labs secure, reliable, and easily manageable with our app solutions."
-          description3="We promise to make the labs operate easily, aligning the tasks management, helping patients simply take lab services, and allowing the dedicated end-users to gain engaging & fulfilling experience."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -287,6 +279,18 @@ export default function ClinicalApp(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Build Laboratory Apps for Scalable Businesses and Management"
+          description1="Comfygen is your go-to-platform to discuss ideas on laboratory app development. We have years of experience, knowledge, talent, and skills to create robust lab-related mobile applications. Our expert development team adheres to the efficient technologies and works on user-experience to build an interactive laboratory application."
+          description2="We have dedicated, as well as innovative laboratory app developers; who knows what the market demands, knows what attracts potential users, and how to make the app sustainable in the marketplace. Also, our laboratory mobile app development services don’t charge greedily. We have the best laboratory app development solutions at the right and competitive cost. So make your labs secure, reliable, and easily manageable with our app solutions."
+          description3="We promise to make the labs operate easily, aligning the tasks management, helping patients simply take lab services, and allowing the dedicated end-users to gain engaging & fulfilling experience."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">

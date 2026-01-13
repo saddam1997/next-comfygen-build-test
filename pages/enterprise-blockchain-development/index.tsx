@@ -785,7 +785,8 @@ export default function rummy(props: any) {
         <BlockChainHeader />
         <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Secure, Scalable & Custom Blockchain Solutions for Enterprises"
+            heading="Enterprise Blockchain Development Service"
+            subhead='Secure, Scalable & Custom Blockchain Solutions for Enterprises'
             ptag="Comfygen Technologies is a trusted enterprise blockchain development company delivering secure, scalable, and customized blockchain solutions for modern businesses. We build enterprise-grade blockchain systems that streamline workflows, enhance data integrity, and ensure complete operational transparency. From private blockchain networks to full-scale DApp development, our expert team helps organizations adopt future-ready blockchain technology that drives innovation, reduces costs, and strengthens competitive advantage."
             li="Enterprise-Grade Blockchain Architecture"
             li1="Private & Permissioned Blockchain Solutions"

@@ -67,24 +67,7 @@ const Faq = dynamic(
 );
 
 
-
-
-
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-// import Solutions from "../Newcomponet/SectionCompoent/Solution";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters, IconWindmill, IconWiper, } from '@tabler/icons-react';
+import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 

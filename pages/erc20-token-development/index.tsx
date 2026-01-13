@@ -75,6 +75,7 @@ const Faq = dynamic(
 
 import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKey, } from '@tabler/icons-react';
 import Script from "next/script";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -323,10 +324,10 @@ export default function Ecommerce(props: any) {
   return (
     <>
       <Head>
-        <title>ERC20 Token Development Company| ERC20 Token Development Services</title>
+        <title>ERC20 Token Development Company | Ethereum Smart Contract Solutions</title>
         <meta
           name="description"
-          content="Discover secure and scalable ERC20 token development services tailored to your business needs. Partner with a leading ERC20 token development company for custom blockchain solutions, smart contract integration, and seamless token deployment on the Ethereum network."
+          content="Comfygen is a leading ERC20 token development company offering secure, scalable Ethereum-based token creation, smart contract integration, and customizable solutions for ICOs and DeFi projects."
         />
         <link
           rel="canonical"
@@ -365,12 +366,12 @@ export default function Ecommerce(props: any) {
         <HeroSectionForAllPages
           HeroSectionForAllPages
           heading="ERC20 Token Development Company"
-          ptag="At Comfygen, a leading ERC20 Token Development Company, we deliver secure and scalable ERC20 token development services tailored to your business needs. Our expert developers in India and the USA design high-performance tokens on the Ethereum network, ensuring seamless smart contract functionality and compliance with the ERC-20 standard. Whether you’re planning an ICO, a DeFi project, or a custom blockchain solution, our team provides end-to-end support for ERC20 token creation, deployment, and smart contract integration. Launch your Ethereum-based token with our trusted and cost-effective ERC20 token development services."
+          ptag="Comfygen is the best ERC20 token development company delivering secure, scalable, and customizable token development solutions on the Ethereum network. Our expert developers create high-performance ERC20 tokens with seamless smart contract integration and full compliance with the ERC-20 standard. "
           ptag1="Why Choose Comfygen?"
-          li="Industry-leading ERC20 Token Development Company"
-          li1="Secure Smart Contract Integration on Ethereum"
-          li2="Customizable Token Solutions for ICOs and DeFi Projects"
-          li3="Dedicated Teams in India & USA"
+          li="Industry-Leading ERC20 Token Development Services"
+          li1="Secure Ethereum Smart Contract Integration"
+          li2="Customizable Token Solutions for ICOs & DeFi Projects"
+          li3="Dedicated Development Teams in India & USA"
           li4="Fast Deployment with Proven Security Standards"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -380,18 +381,8 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/erc-20-token-development-company-hero-img.webp"
         />
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title=""
-          heading="Empower Your Blockchain Vision with ERC20 Token Development Company"
-          description1="At Comfygen, we are a trusted ERC20 token development company, enabling businesses to launch secure and scalable ERC-20 tokens on the <a class='text-blue-600' href='/ethereum-blockchain-development-company'>Ethereum blockchain</a> . Our expert team creates robust ERC20 tokens with advanced functionalities, designed to support DeFi platforms, ICOs, NFTs, and more. We implement 50+ advanced security measures to ensure your token is secure, efficient, and fully compliant. Partner with us to strengthen your blockchain ecosystem and confidently participate in the growing crypto economy with a custom ERC20 token tailored to your business needs."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -404,6 +395,19 @@ export default function Ecommerce(props: any) {
             </div>
           </div>
         </section>
+
+
+        <AboutSection
+          title=""
+          heading="Empower Your Blockchain Vision with ERC20 Token Development Company"
+          description1="At Comfygen, we are a trusted ERC20 token development company, enabling businesses to launch secure and scalable ERC-20 tokens on the <a class='text-blue-600' href='/ethereum-blockchain-development-company'>Ethereum blockchain</a> . Our expert team creates robust ERC20 tokens with advanced functionalities, designed to support DeFi platforms, ICOs, NFTs, and more. We implement 50+ advanced security measures to ensure your token is secure, efficient, and fully compliant. Partner with us to strengthen your blockchain ecosystem and confidently participate in the growing crypto economy with a custom ERC20 token tailored to your business needs."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+
 
 
         <SolutionSec

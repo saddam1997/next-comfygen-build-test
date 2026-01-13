@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -369,10 +369,12 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Best Medicine Delivery App Development Company in India</title>
+        <title>
+          Best Medicine Delivery App Development Company in India
+        </title>
         <meta
           name="description"
-          content=" Looking for a medicine delivery app development company in India? We build AI-based pharmacy apps like 1mg & PharmEasy with AI features. Get a free quote today."
+          content="Comfygen Technologies is a trusted medicine delivery app development company offering secure, scalable apps with prescription upload, tracking, and payments."
         />
 
         <meta
@@ -504,11 +506,11 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Medicine Delivery App Development Company"
-          ptag="Comfygen Technologies is a leading Medicine Delivery App Development Company delivering secure, scalable, and high-performance on-demand solutions for pharmacies, healthcare startups, and enterprises. We specialize in custom medicine delivery app development that enables online medicine ordering, doorstep delivery, real-time tracking, and fast fulfillment — including a medicine delivery app in 10 minute models."
-          ptag1="Our expert medicine app developers build feature-rich platforms using the latest technologies to help you launch a powerful online medicine delivery app tailored to your business needs. From white label medicine delivery app development to fully customized solutions, we ensure compliance, performance, and seamless user experience."
-          li="Secure & High-Performance Medicine Delivery Solutions"
-          li1="On-Demand & 10-Minute Medicine Delivery Capabilities"
-          li2="Custom & White-Label App Development by Expert Developers"
+          ptag="We are a trusted medicine delivery app development company helping startups, pharmacies, and healthcare businesses launch secure and scalable online medicine delivery apps. Our brilliant team builds custom medicine delivery apps like 1mg, PharmEasy, and Netmeds with a user-friendly design and high performance."
+          ptag1="Our medicine delivery app development services include prescription upload, real-time order tracking, secure online payments, and full compliance with healthcare standards like HIPAA. We ensure fast development, strong security, and future-ready technology to grow your business smoothly."
+          li="HIPAA-compliant medicine delivery apps"
+          li1="Encrypted data & secure payment gateways"
+          li2="Scalable architecture for business growth"
           ptag3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -522,10 +524,12 @@ export default function Ecommerce(props) {
         <Milestones />
 
         <AboutSection
-          heading="Why Invest in Medicine Delivery App development"
-          description1="Investing in Medicine Delivery App Development helps pharmacies, startups, and healthcare enterprises deliver medicines faster, manage prescriptions digitally, and offer 24/7 services. An online medicine delivery app improves customer convenience, boosts repeat orders, and ensures secure payments with real-time order tracking."
-          description2="India’s online pharmacy and medicine delivery market is experiencing rapid growth, with strong revenue potential expected to reach US$418 million to over US$1 billion in the coming years. This expansion is driven by increasing internet adoption, rising demand for convenient healthcare services, seamless telemedicine integration, and growing health awareness among consumers. Leading platforms such as Tata 1mg and PharmEasy continue to dominate this fast-evolving and highly competitive sector."
-          description3="By choosing custom and on-demand medicine delivery app development, businesses gain scalability, long-term growth, and a competitive edge in the digital healthcare ecosystem."
+          heading="Why Invest in Medicine Delivery App Development?"
+          description1="A medicine delivery app is no longer optional. It helps pharmacies and startups deliver medicines faster, manage prescriptions online, and serve customers 24/7. With rising digital healthcare demand, online pharmacy apps improve convenience, trust, and repeat orders."
+
+          description2="The global e-pharmacy market is growing at over 15% CAGR, and studies show that 60%+ users prefer ordering medicines online for regular and emergency needs. Investing in medicine delivery app development make sure long-term growth, scalability, and higher customer retention."
+
+          description3="Comfygen is a top-notch medicine delivery app development agency. We are the perfect choice for startups, entrepreneurs, and small businesses looking to establish their pharmacy business venture."
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -550,6 +554,19 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          heading="Why Invest in Medicine Delivery App Development?"
+          description1="A medicine delivery app is no longer optional. It helps pharmacies and startups deliver medicines faster, manage prescriptions online, and serve customers 24/7. With rising digital healthcare demand, online pharmacy apps improve convenience, trust, and repeat orders."
+
+          description2="The global e-pharmacy market is growing at over 15% CAGR, and studies show that 60%+ users prefer ordering medicines online for regular and emergency needs. Investing in medicine delivery app development make sure long-term growth, scalability, and higher customer retention."
+
+          description3="Comfygen is a top-notch medicine delivery app development agency. We are the perfect choice for startups, entrepreneurs, and small businesses looking to establish their pharmacy business venture."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         <BusinessSolustion
           imageSrc="https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/aI-powered-medicine-delivery-app-development.webp"

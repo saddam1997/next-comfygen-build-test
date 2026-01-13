@@ -374,8 +374,8 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title> Healthcare Mobile App Development Company in India </title>
-        <meta name="description" content="Comfygen is a leading healthcare mobile app development company in India delivering secure, scalable, HIPAA-compliant telemedicine, ePharmacy & hospital management app solutions." />
+        <title>Healthcare Mobile App Development Company in India | Comfygen</title>
+        <meta name="description" content="Comfygen Technologies is a leading healthcare mobile app development company in India, delivering secure, scalable telemedicine, EHR, and AI healthcare solutions." />
 
         <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development" />
 
@@ -470,12 +470,12 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Healthcare Mobile App Development Company in India"
-          ptag="Comfygen is a leading healthcare app development company in India specializing in telemedicine, ePharmacy, EHR/EMR, AI-based diagnosis, and wearable-integrated healthcare mobile apps. We deliver end-to-end digital healthcare solutions with advanced features, secure data management, and seamless user experience for hospitals, clinics, and healthcare startups."
-          li="6+ years of experience"
-          li1="70+ Medical apps launched"
-          li2="Next-Gen AI-Based Solutions"
-          li3="Blockchain-based App Solution"
+          heading="Healthcare Mobile App Development Company"
+          ptag="Comfygen Technologies is a trusted Healthcare Mobile App Development Company in India, delivering secure, scalable, and innovative digital healthcare solutions. We specialize in building advanced healthcare mobile apps including telemedicine platforms, ePharmacy apps, EHR/EMR systems, AI-powered diagnostics, and wearable-integrated applications. Our expert team develops end-to-end healthcare solutions with robust data security, regulatory compliance, and seamless user experiences for hospitals, clinics, doctors, and healthcare startups. With cutting-edge technologies and industry best practices, we help healthcare businesses accelerate digital transformation and improve patient care outcomes."
+          li="Custom Healthcare App Development"
+          li1="Advanced Digital Health Solutions"
+          li2="Secure & Compliant Architecture"
+          li3="Scalable & User-Centric Experience"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -486,6 +486,17 @@ export default function Mobile(props: any) {
         />
 
         <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable Custom Healthcare App Development Services for Your Startup</h2>
+              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -503,17 +514,7 @@ export default function Mobile(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable Custom Healthcare App Development Services for Your Startup</h2>
-              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <SolutionSec
           heading="Our Custom Healthcare Mobile App Development Solutions"

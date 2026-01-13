@@ -8,6 +8,7 @@ import BlockchainNav from "../../../components/Newcomponet/layout/blockchain-nav
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -272,11 +273,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          DPoS Blockchain Development Company In India & The USA | Comfygen
+          DPoS Blockchain Development Company for Enterprises | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen provide Readymade or custumzation DPOS Blockchain Development services In India & The USA. Contact us today for Hire expert DPoS blockchain"
+          content="Comfygen offers DPoS blockchain development services to build secure, scalable, and high-performance blockchain solutions for enterprises."
         />
         <link
           rel="canonical"
@@ -348,12 +349,13 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="DPOS Blockchain Development Service"
-          ptag="Enhance data security and efficiency with Comfygen’s Delegated Proof of Stake (DPoS) blockchain development services. Designed to meet the needs of fast-growing businesses, our DPoS solutions provide robust scalability, precision, and security. Our expert team delivers seamless blockchain solutions for enterprise applications, ensuring optimal performance in a distributed environment. Trust Comfygen to safeguard sensitive data with cutting-edge DPoS technology."
+          heading="DPoS Blockchain Development Company"
+          subhead='Secure, Scalable & High-Performance Blockchain DPoS Development Solutions'
+          ptag="Comfygen offers expert Delegated Proof of Stake (DPoS) blockchain development services to help businesses build fast, secure, and scalable decentralized systems. Our DPoS solutions are designed for enterprise-grade applications, delivering efficient consensus, high transaction throughput, and strong data security. With optimized performance and reliable network governance, we help you deploy future-ready blockchain solutions that scale with your business needs."
           li="Robust Data Security"
-          li1="Scalable Enterprise Solutions"
-          li2="Efficient Consensus Mechanism"
-          li3="Expert DPoS Development"
+          li1=" Scalable Enterprise-Grade Architecture"
+          li2="Efficient DPoS Consensus Mechanism"
+          li3="Expert Blockchain Development Team"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -362,16 +364,8 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage='https://www.comfygen.com/herosection/dpos-blockchain-dev-hero-img.webp'
         />
+        <Milestones />
 
-        <AboutSection
-          title="About Company"
-          heading="Best DPoS Blockchain Development Company"
-          description1="Comfygen stands out as a prominent DPOS blockchain development company that is recognized for innovative solutions and prioritizing a client-centric approach. Our developer team specializes in Delegated Proof of Stake – DPOS consensus mechanisms. Our service excels in creating scalable and highly secure blockchain ecosystems. We offer tailor-fit solutions to diverse business sectors. Our developer team of blockchain DPoS development combines deep technical expertise with a thorough understanding of blockchain strategies to offer robust solutions. Our commitment to excellence is evident in our track record of successful implementations of our DPOS solutions across various industries."
-          description3="Our service ensures efficiency, transparency, and decentralization. Whether it is creating custom DPOS blockchain networks, optimizing existing infrastructures, or providing comprehensive blockchain consulting services, we consistently meet expectations. Our company stands as a trusted partner in the rapidly evolving blockchain landscape."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -383,6 +377,17 @@ export default function Ecommerce(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Best DPoS Blockchain Development Company"
+          description1="Comfygen stands out as a prominent DPOS blockchain development company that is recognized for innovative solutions and prioritizing a client-centric approach. Our developer team specializes in Delegated Proof of Stake – DPOS consensus mechanisms. Our service excels in creating scalable and highly secure blockchain ecosystems. We offer tailor-fit solutions to diverse business sectors. Our developer team of blockchain DPoS development combines deep technical expertise with a thorough understanding of blockchain strategies to offer robust solutions. Our commitment to excellence is evident in our track record of successful implementations of our DPOS solutions across various industries."
+          description3="Our service ensures efficiency, transparency, and decentralization. Whether it is creating custom DPOS blockchain networks, optimizing existing infrastructures, or providing comprehensive blockchain consulting services, we consistently meet expectations. Our company stands as a trusted partner in the rapidly evolving blockchain landscape."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
         {/* <ContactFromCenter /> */}
         <SolutionSec
           heading="Our Proven Custom DPOS Blockchain Development Solutions"

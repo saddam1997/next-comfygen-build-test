@@ -99,6 +99,7 @@ const Faq = dynamic(
 
 import { IconAdjustments, IconAutomation, IconDatabase, IconExchange, IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
 import Script from "next/script";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const ContactFromCenter = dynamic(
@@ -317,11 +318,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Solana Token Development Company | Create Token On Solana
+           Solana Token Development Company | Custom Tokens & Smart Contracts – Comfygen
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a trusted Solana token development company delivering custom crypto token creation and blockchain solutions. Launch secure, scalable Solana tokens with our expert development services."
+          content="Comfygen offers secure, scalable Solana token development services, including custom token creation, NFT development, smart contract integration, and high-performance solutions for DeFi and dApps."
         />
         <link
           rel="canonical"
@@ -390,12 +392,13 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Solana Token Development Company"
-          ptag="At Comfygen, we offer top-tier Solana token development services that help you create secure, scalable, and high-performance tokens on the Solana blockchain. As an industry leader in Solana token creation, we enable businesses to leverage the speed, low-cost transactions, and scalability of Solana for a variety of applications including DeFi, NFTs, and decentralized platforms. Our team of expert developers delivers tailored solutions to meet the specific needs of your token project while ensuring seamless integration across decentralized applications (dApps)."
+          heading="Solana Token Development Service"
+          subhead='Looking for top solana token development company?'
+          ptag="Comfygen provides premium Solana token development services to create secure, scalable, and high-performance tokens on the Solana blockchain. As a trusted Solana token development company, we help businesses leverage Solana’s speed, low-cost transactions, and scalability for DeFi platforms, NFTs, and decentralized applications. Our expert developers deliver customized token solutions, smart contract integration, and seamless deployment to meet the unique requirements of your project."
           li="Custom Solana Token Creation"
           li1="Solana Smart Contract Development"
           li2="NFT Token Development on Solana"
-          li3="Scalable Token Solutions"
+          li3="Scalable and High-Performance Token Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -404,6 +407,22 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/solana-token-development-company-hero-img.webp"
         />
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Solana Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">s a leading Solana Token Development Company, we offer comprehensive and custom-tailored Solana token development services to help businesses and startups launch secure, scalable, and high-performance tokens. Whether you aim to power your DeFi platforms, NFT marketplaces, or Web3 projects, our expert Solana blockchain developers deliver cutting-edge solutions optimized for speed, security, and interoperability.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <AboutSection
           title="About Company"
           heading="Trusted Solana Token Development"
@@ -439,18 +458,7 @@ export default function Ecommerce(props) {
           imagePosition='right'
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Solana Token Development Services
-              </h2>
-              <p className="text-base text-center font-normal">s a leading Solana Token Development Company, we offer comprehensive and custom-tailored Solana token development services to help businesses and startups launch secure, scalable, and high-performance tokens. Whether you aim to power your DeFi platforms, NFT marketplaces, or Web3 projects, our expert Solana blockchain developers deliver cutting-edge solutions optimized for speed, security, and interoperability.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         <SolutionSec

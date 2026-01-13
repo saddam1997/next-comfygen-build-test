@@ -14,6 +14,7 @@ import WhyChoosee from "../../components/Newcomponet/SectionCompoent/WhyChooseUs
 import CallToAction from "../../components/Newcomponet/SectionCompoent/CallToAction";
 import Faq from "../../components/Newcomponet/SectionCompoent/Faq"
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const Process = [
   {
@@ -175,12 +176,12 @@ export default function MultiChain(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[115px]">
         <HeroSectionForAllPages
-          heading="DeFi Smart Contract Development services"
-          ptag="Comfygen is a leading DeFi Smart Contract Development company in India & USA, offering cutting-edge solutions that revolutionize traditional business processes. Our expert team helps you eliminate cumbersome paperwork by adopting faster, more transparent, and more secure methods of conducting business. Transform your operations with our innovative DeFi smart contract development services and trusted DeFi smart contract auditing services."
-          li="Cutting-Edge Smart Contracts"
-          li1="Faster, Transparent Solutions"
-          li2="Secure, Efficient Transactions"
-          li3="Expertise in DeFi Innovation"
+          heading="DeFi Smart Contract Development Company"
+          ptag="Comfygen is a leading DeFi smart contract development company in India and the USA, delivering secure, transparent, and automation-driven blockchain solutions. We design and deploy high-performance DeFi smart contracts that streamline business operations, eliminate manual processes, and ensure trustless execution. Our services include custom smart contract development, optimization, and auditing to safeguard transactions, reduce risks, and enhance efficiency across DeFi platforms, DEXs, lending protocols, and Web3 applications."
+          li="Cutting-Edge DeFi Smart Contract Development"
+          li1="Faster & Transparent Blockchain Execution"
+          li2="Secure and Efficient Transaction Automation"
+          li3="Expert DeFi Smart Contract Auditing & Innovation"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -189,8 +190,21 @@ export default function MultiChain(props) {
           closeModal={closeModal}
           bgImage='https://www.comfygen.com/herosection/defi-smart-contract-dev-hero-img.webp'
         />
+        <Milestones/>
 
-        <NewSection NewSection={JSON_DATA.NewSections} />
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Smart Contract Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we provide cutting-edge DeFi-based smart contract development services designed to meet the needs of various industries. Our team of experienced DeFi smart contract developers ensures that each contract is secure, efficient, and optimized for your specific business requirements. </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -203,17 +217,7 @@ export default function MultiChain(props) {
         />
         {/* <ContactFromCenter /> */}
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Smart Contract Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we provide cutting-edge DeFi-based smart contract development services designed to meet the needs of various industries. Our team of experienced DeFi smart contract developers ensures that each contract is secure, efficient, and optimized for your specific business requirements. </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

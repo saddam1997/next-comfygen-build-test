@@ -94,6 +94,7 @@ import {
   IconBell,
 } from "@tabler/icons-react";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -164,7 +165,7 @@ const technologyData = [
   },
 ];
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -176,7 +177,7 @@ export default function Ecommerce(props:any) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -425,16 +426,16 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-         DApp Development company Comfygen Decentralized App Solutions
+        Enterprise DApp Development Company | Blockchain Solutions
 
         </title>
 
         {/* Primary Meta */}
         <meta
           name="description"
-          content="Comfygen, DApp development services, building secure, scalable, and user-friendly decentralized applications for DeFi, NFT marketplaces, the metaverse, and enterprise solutions."
+          content="Build secure and scalable decentralized applications with our expert DApp development services for Web3, DeFi, NFT marketplaces, and enterprises."
         />
-       <meta name="keywords" content="dApp Development Services, Decentralized Application Development, Custom dApp Development, Best dApp Development Company, DeFi Platform Development, NFT Marketplace Development, Web3 Application Development, Ethereum dApp Development, Solana dApp Development, Polygon dApp Development, BNB Chain dApp Development, Smart Contract Development, Blockchain App Development"/>
+        <meta name="keywords" content="dApp Development Services, Decentralized Application Development, Custom dApp Development, Best dApp Development Company, DeFi Platform Development, NFT Marketplace Development, Web3 Application Development, Ethereum dApp Development, Solana dApp Development, Polygon dApp Development, BNB Chain dApp Development, Smart Contract Development, Blockchain App Development" />
 
 
         {/* Canonical Tag */}
@@ -480,8 +481,8 @@ export default function Ecommerce(props:any) {
           href="https://www.comfygen.com/dapp-development-company"
         />
 
-    
-      
+
+
 
 
         {/* Extra OG for Facebook */}
@@ -528,12 +529,12 @@ export default function Ecommerce(props:any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Best DApp Development company"
-            ptag="Grow your business with our DApp development services. Comfygen is a leading DApp development company. We specialize in building secure, scalable, and user-friendly blockchain-powered apps designed for DeFi, NFT marketplaces, metaverse, gaming, and enterprise solutions. Our blockchain development expert delivers high-performance smart contracts and seamless Web3 integration to ensure reliability and innovation."
-            li="End-to-end custom DApp development services"
-            li1="Secure and scalable blockchain integration"
-            li2="Expertise in DeFi, NFT, and Web3 solutions"
-            li3="Cross-platform decentralized app development"
+            heading="Blockchain DApp Development Company"
+            ptag="Grow your business with Comfygen’s expert DApp development services. As a leading decentralized application development company, we build secure, scalable, and user-friendly blockchain applications for DeFi platforms, NFT marketplaces, metaverse projects, gaming, and enterprise use cases. Our blockchain experts deliver high-performance smart contracts and seamless Web3 integration to ensure reliability, scalability, and future-ready innovation."
+            li="End-to-End Custom DApp Development"
+            li1="Secure & Scalable Blockchain Integration"
+            li2=" Expertise in DeFi, NFT & Web3 Solutions"
+            li3="Cross-Platform Decentralized App Development"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -542,15 +543,9 @@ export default function Ecommerce(props:any) {
             closeModal={closeModal}
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Experience Unmatched dApp Development Services with Our Expertise!"
-          description1="We are one of the pioneers in delivering dApp development services with a client-centric approach. Our experience in creating backend code for dApps and intuitive, user-friendly interfaces enhances the quality of our dApp development solutions. We also leverage our business acumen to provide custom dApp development services that help your business grow. You can rely on our decentralized application development expertise to translate your ideas into ready-to-use dApps with seamless user experiences."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <ContactFromCenter />
+        <Milestones />
+
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -574,6 +569,16 @@ export default function Ecommerce(props:any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Experience Unmatched dApp Development Services with Our Expertise!"
+          description1="We are one of the pioneers in delivering dApp development services with a client-centric approach. Our experience in creating backend code for dApps and intuitive, user-friendly interfaces enhances the quality of our dApp development solutions. We also leverage our business acumen to provide custom dApp development services that help your business grow. You can rely on our decentralized application development expertise to translate your ideas into ready-to-use dApps with seamless user experiences."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        <ContactFromCenter />
+
         <SolutionSec
           heading="Advantages of Choosing Our dApp Development Services"
           subheading="When you choose Comfygen for your decentralized application (dApp) development, you're tapping into a team that delivers tailored solutions with the latest technology. Here’s why partnering with us can make a real difference for your business"

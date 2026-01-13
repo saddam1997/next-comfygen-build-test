@@ -39,14 +39,14 @@ export default function Category() {
       <Head>
         <title>Blog Comfygen | Altcoin Development | Tech Info</title>
         <link rel="canonical" href="https://www.comfygen.com/blog/" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Home - Blog Comfygen | Altcoin Development | Tech Info" />
-        <meta property="og:description" content="Our Blogs Read out latest articles and posts on latest technology , App and web development and design and blockchain , Alt coin and load more. All Post Tech Blockchain &ndash; Functioning and Advantages and Expert of cryptocurrency August 24, 2022/No Comments A distributed database or ledger which is shared among the nodes of a &hellip; Home Read More &raquo;" />
-        <meta property="og:url" content="https://www.comfygen.com/blog/" />
-        <meta property="og:site_name" content="Blog Comfygen | Altcoin Development | Tech Info" />
-        <meta property="article:modified_time" content="2022-09-24T07:18:10+00:00" />
-        <meta property="og:image" content="http://localhost:4548/_next/image?url=%2Fimages%2Fkindpng7.webp&w=640&q=75?size=1024" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:type" content="website" />
+        <meta name="og:title" content="Home - Blog Comfygen | Altcoin Development | Tech Info" />
+        <meta name="og:description" content="Our Blogs Read out latest articles and posts on latest technology , App and web development and design and blockchain , Alt coin and load more. All Post Tech Blockchain &ndash; Functioning and Advantages and Expert of cryptocurrency August 24, 2022/No Comments A distributed database or ledger which is shared among the nodes of a &hellip; Home Read More &raquo;" />
+        <meta name="og:url" content="https://www.comfygen.com/blog/" />
+        <meta name="og:site_name" content="Blog Comfygen | Altcoin Development | Tech Info" />
+        <meta name="article:modified_time" content="2022-09-24T07:18:10+00:00" />
+        <meta name="og:image" content="http://localhost:4548/_next/image?url=%2Fimages%2Fkindpng7.webp&w=640&q=75?size=1024" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="3 minutes" />

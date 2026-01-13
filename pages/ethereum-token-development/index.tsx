@@ -78,6 +78,7 @@ import {
   IconTrophy,
   IconBuildingBridge2,
 } from '@tabler/icons-react';
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -241,11 +242,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Ethereum Token Development Company | Ethereum Token Development Services
+          Ethereum Token Development Services | Comfygen
         </title>
         <meta
           name="description"
-          content=" Comfygen is a leading Ethereum token development company offering comprehensive Ethereum token development services for ERC standards like ERC20, ERC721, and more. Hire our expert Ethereum token developers to create secure, scalable tokens and smart contracts tailored to your project needs."
+          content="Comfygen provides secure and scalable Ethereum token development services, including ERC20, ERC721, ERC1155 tokens, smart contract integration, ICO & DeFi token launches, and wallet support."
         />
         <link
           rel="canonical"
@@ -311,11 +312,11 @@ export default function Ecommerce(props: any) {
 
         <HeroSectionForAllPages
           heading="Ethereum Token Development Services"
-          ptag="Comfygen is a trusted Ethereum token development company in India, specializing in creating secure, scalable, and custom tokens on the Ethereum blockchain. We offer complete <a class='font-semibold' href='/crypto-token-development-company'>crypto token development services </a>, including ERC20, ERC721, and ERC1155 tokens for DeFi, NFT platforms, ICOs, and more. Our blockchain experts ensure smart contract integration, token security, and seamless deployment. Whether you need a utility token, NFT, or a multi-token solution, we deliver future-ready assets designed for high performance and compliance."
-          li="ERC20, ERC721, ERC1155 Token Development"
-          li1="Smart Contract Development & Auditing"
-          li2="ICO & DeFi Token Launch"
-          li3="Wallet Integration and Support"
+          ptag="Comfygen is a leading Ethereum token development company, specializing in creating secure, scalable, and fully customized tokens on the Ethereum blockchain. We offer complete token development solutions, including ERC20, ERC721, and ERC1155 tokens, ideal for DeFi platforms, NFTs, ICOs, and other blockchain projects. Our team ensures robust smart contract integration, token security, and smooth deployment. From utility tokens to NFTs and multi-token ecosystems, we deliver high-performance, compliant Ethereum tokens designed to meet your business goals."
+          li="Development of ERC20, ERC721, and ERC1155 Tokens"
+          li1="Smart Contract Creation & Security Audits"
+          li2="ICO and DeFi Token Launch Services"
+          li3="Wallet Integration and Technical Support"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -325,18 +326,7 @@ export default function Ecommerce(props: any) {
           bgImage="https://www.comfygen.com/herosection/ethereum-token-development-company-hero-img.webp"
         />
 
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title="About Company"
-          heading="Trusted Ethereum Token Development Company in India"
-          description1="<a class='text-blue-600' href='https://www.comfygen.com' >Comfygen </a> is recognized as a trusted Ethereum token development company in India. We offer secure and scalable token solutions for businesses, startups, and enterprises. Our expertise includes developing custom ERC20, ERC721, and ERC1155 tokens tailored for DeFi platforms, NFT marketplaces, and fundraising projects like ICOs and STOs."
-          description2="As a reliable Ethereum token development agency, we ensure seamless smart contract integration, wallet compatibility, and exchange listings. With a focus on security, compliance, and innovation, Comfygen helps you launch blockchain tokens that drive growth in the evolving Web3 ecosystem."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -350,6 +340,21 @@ export default function Ecommerce(props: any) {
             </div>
           </div>
         </section>
+
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <AboutSection
+          title="About Company"
+          heading="Trusted Ethereum Token Development Company in India"
+          description1="<a class='text-blue-600' href='https://www.comfygen.com' >Comfygen </a> is recognized as a trusted Ethereum token development company in India. We offer secure and scalable token solutions for businesses, startups, and enterprises. Our expertise includes developing custom ERC20, ERC721, and ERC1155 tokens tailored for DeFi platforms, NFT marketplaces, and fundraising projects like ICOs and STOs."
+          description2="As a reliable Ethereum token development agency, we ensure seamless smart contract integration, wallet compatibility, and exchange listings. With a focus on security, compliance, and innovation, Comfygen helps you launch blockchain tokens that drive growth in the evolving Web3 ecosystem."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+
+
 
         <InfoSection
           heading="Ethereum – An Overview"

@@ -74,6 +74,7 @@ const Faq = dynamic(
 
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const Header = dynamic(() => import("../../components/old/components/Header"), {
@@ -426,11 +427,11 @@ export default function MultiChain(props) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <title>
-          Best MultiChain Blockchain Development Company | AI-Powered Solutions
+        MultiChain Blockchain Development Company | AI-Powered Enterprise Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen offers secure, scalable MultiChain blockchain development with AI integration. Build private networks, smart contracts & tokenization for enterprise growth."
+          content="Comfygen is a leading MultiChain blockchain development company delivering secure, scalable networks, smart contracts, tokenization, and AI-driven analytics for enterprises."
         />
         <link
           rel="canonical"
@@ -525,12 +526,12 @@ export default function MultiChain(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Best MultiChain Blockchain Development Company"
-          ptag="Comfygen is the leading MultiChain Blockchain Development Company delivering AI-driven blockchain solutions for enterprises. We specialize in developing safe, secure, scalable, and high-performance MultiChain networks, smart contracts, tokenization, and automated workflows. Our AI-powered analytics enable predictive insights, intelligent transaction monitoring, and data-driven decision-making on the blockchain."
-          li="Custom MultiChain Development"
-          li1="AI-Driven Analytics"
-          li2="Secure & Scalable Networks"
-          li3="Smart Contracts & Automation"
+          heading="MultiChain Blockchain Development Company"
+          ptag="Comfygen is the best MultiChain blockchain development company delivering AI-powered blockchain solutions for enterprises. We specialize in building secure, scalable, and high-performance MultiChain networks, smart contracts, tokenization systems, and automated workflows. Our AI-driven analytics provide predictive insights, intelligent transaction monitoring, and data-driven decision-making to maximize blockchain efficiency."
+          li="Custom MultiChain Blockchain Development"
+          li1="AI-Driven Analytics & Insights"
+          li2="Secure, Scalable, Enterprise-Grade Networks"
+          li3="Smart Contracts & Automated Workflows"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -539,6 +540,22 @@ export default function MultiChain(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/multichain-blockchain-bevelopment-hero-img.webp"
         />
+        <Milestones />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our MultiChain & AI Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen offers top-tier MultiChain Blockchain Development Services, combining the power of MultiChain and AI to deliver secure, scalable, and high-performance blockchain solutions. We specialize in building private and permissioned blockchain development solutions tailored for enterprises, enabling seamless integration, real-time transaction processing, and intelligent automation. Our AI-enhanced approach ensures predictive analytics, smart contract optimization, and data-driven decision-making to help businesses innovate and stay ahead in the competitive market.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         <AboutSection
           title="About Company"
           heading="Why You Need MultiChain Blockchain Development Solutions"
@@ -556,18 +573,7 @@ export default function MultiChain(props) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our MultiChain & AI Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen offers top-tier MultiChain Blockchain Development Services, combining the power of MultiChain and AI to deliver secure, scalable, and high-performance blockchain solutions. We specialize in building private and permissioned blockchain development solutions tailored for enterprises, enabling seamless integration, real-time transaction processing, and intelligent automation. Our AI-enhanced approach ensures predictive analytics, smart contract optimization, and data-driven decision-making to help businesses innovate and stay ahead in the competitive market.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         {/* <ContactFromCenter /> */}

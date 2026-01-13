@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -492,11 +493,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Delivery app development company | Service Comfygen
+        <title>Custom Delivery App Development Company in India
         </title>
         <meta
           name="description"
-          content="Trusted delivery app development company in India specializing in scalable, AI & blockchain-integrated apps for food, grocery, medicine, logistics, and courier services. Real-time tracking, secure & cost-effective solutions."
+          content="Comfygen is a trusted custom delivery app development company offering AI-powered, secure, and scalable delivery apps for food, grocery, courier, logistics, and medicine businesses with real-time tracking."
         />
         <link
           rel="canonical"
@@ -614,12 +615,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Delivery App Development Company in India"
-            ptag="Comfygen Technologies is a custom delivery app development company in India, trusted by startups and enterprises for scalable and AI-powered delivery app development solutions. We design and develop tailor-made delivery apps for food, grocery, medicine, logistics, courier, and more. With advanced blockchain integration, AI-based features, and real-time tracking, we help businesses streamline operations and boost customer satisfaction."
-            li="Custom Delivery App Development Solutions"
-            li1="AI & Blockchain-Integrated Delivery Apps"
-            li2="Seamless Real-Time Order & Delivery Tracking "
-            li3="Cost-Effective, Secure & Scalable App Architecture"
+            heading="Custom Delivery App Development Company in India"
+            ptag="Comfygen Technologies is a reliable custom delivery app development company in India, helping businesses launch fast, secure, and scalable delivery applications quickly and efficiently. We build on-demand delivery apps for food, groceries, medicine, courier services, logistics, and multi-service platforms."
+            ptag1='Our delivery apps come with AI-powered features, live tracking, and strong security to manage orders smoothly and deliver faster. We build cost-effective delivery apps for startups and enterprises, designed to match your business needs.'
+            li="AI-Powered Features & Smart Automation"
+            li1="Live Order, Driver & Delivery Tracking"
+            li2="Secure, Scalable & Cost-Efficient App Solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -629,20 +630,8 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/delivery-app-development/hero_section.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Your Business Needs a Delivery App"
-          description1="The global delivery app market hit about USD 73.65 billion in 2024 and is projected to shoot up to USD 225.77 billion by 2035 with a 10.72% CAGR. In the US alone, more than 65% of people are expected to use food delivery services by 2025. Businesses that adopt delivery app development solution see an average 42% revenue boost in the first year, and online orders typically bring in 32% more value than dine-in. Usage is especially strong among younger consumers, with 63% of those aged 18–29 depending on these apps."
-          imageSrc="https://www.comfygen.com/comfygen-images/delivery-app-development/about2.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Automates Orders, Inventory & Delivery Scheduling",
-            "Increases Customer Satisfaction & Repeat Business",
-            "Optimizes Routes & Lowers Delivery Costs",
-            "Real-time Notifications, Tracking & Secure Payments",
-          ]}
-        />
+<Milestones/>
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -664,6 +653,21 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Your Business Needs a Delivery App"
+          description1="The global delivery app market hit about USD 73.65 billion in 2024 and is projected to shoot up to USD 225.77 billion by 2035 with a 10.72% CAGR. In the US alone, more than 65% of people are expected to use food delivery services by 2025. Businesses that adopt delivery app development solution see an average 42% revenue boost in the first year, and online orders typically bring in 32% more value than dine-in. Usage is especially strong among younger consumers, with 63% of those aged 18–29 depending on these apps."
+          imageSrc="https://www.comfygen.com/comfygen-images/delivery-app-development/about2.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[
+            "Automates Orders, Inventory & Delivery Scheduling",
+            "Increases Customer Satisfaction & Repeat Business",
+            "Optimizes Routes & Lowers Delivery Costs",
+            "Real-time Notifications, Tracking & Secure Payments",
+          ]}
+        />
+
 
 
         <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />

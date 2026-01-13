@@ -8,6 +8,7 @@ import JSON_DATA from "./ELearningApp.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -338,12 +339,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Truck Finance App Development Company | Custom Truck Loan App
-          Solutions
+         Custom Truck Finance App Development Company | Comfygen Technologies
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a trusted truck finance app development company offering custom truck loan app solutions for fleet owners, NBFCs, and transport businesses. We build the best truck finance app with EMI tracking and real-time loan management."
+          content="Truck finance app development company offering secure, scalable solutions for truck loans, EMI tracking, KYC integration, and digital lending for fleet businesses."
         />
         <link
           rel="canonical"
@@ -458,11 +459,11 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Truck Finance App Development Company"
-            ptag="Build a powerful and easy-to-use truck finance app with Comfygen. As a trusted truck finance app development company, we help transport businesses, fleet owners, and finance providers create secure and scalable apps for loan processing, EMI tracking, and vehicle financing. Our custom truck loan mobile app development solutions are designed to simplify operations, improve transparency, and boost customer satisfaction."
-            li="Simple & Intuitive User Interface"
-            li1="Seamless Truck Loan & EMI Management"
-            li2="Secure KYC, Bank & Document Integration"
-            li3="Scalable Architecture for Growing Businesses"
+            ptag="Build a secure, scalable, and user-friendly truck finance app with Comfygen Technologies. As a trusted truck finance app development company, we help lenders, fleet owners, and transport businesses digitize truck loans with seamless EMI management, real-time tracking, and secure KYC integrations. Our custom truck finance app solutions are designed to simplify loan processing, improve transparency, and accelerate business growth."
+            li="Secure KYC, Banking & Document Integration"
+            li1="Custom Truck Loan & Vehicle Finance App Development"
+            li2="Seamless EMI, Repayment & Loan Lifecycle Management"
+            li3="Scalable Fintech Architecture for Growing Fleet Businesses"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -472,22 +473,8 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/truck-finance-app-development/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Do You Need a Truck Finance App for Your Business?"
-          description1="A truck finance app helps your business manage loans, EMI payments, and documents in one place. It makes the loan process faster, easier, and more transparent for both you and your customers. Whether you’re a truck dealer, transport company, or finance provider, this app saves time and improves service."
-          description2="With smart features and real-time updates, you can avoid delays, reduce paperwork, and offer a better loan experience to your users."
-          points={[
-            "Easily approve and manage truck loans",
-            "Track EMI payments on time",
-            "Upload and verify KYC documents",
-            "Get alerts for payments and due dates",
-            "Keep all finance records safe and organized",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/truck-finance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -507,6 +494,23 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Do You Need a Truck Finance App for Your Business?"
+          description1="A truck finance app helps your business manage loans, EMI payments, and documents in one place. It makes the loan process faster, easier, and more transparent for both you and your customers. Whether you’re a truck dealer, transport company, or finance provider, this app saves time and improves service."
+          description2="With smart features and real-time updates, you can avoid delays, reduce paperwork, and offer a better loan experience to your users."
+          points={[
+            "Easily approve and manage truck loans",
+            "Track EMI payments on time",
+            "Upload and verify KYC documents",
+            "Get alerts for payments and due dates",
+            "Keep all finance records safe and organized",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/truck-finance-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
 
 

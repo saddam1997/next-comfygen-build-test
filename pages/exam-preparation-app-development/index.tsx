@@ -7,6 +7,7 @@ import JSON_DATA from "./exampreparationappdevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -294,11 +295,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Exam Preparation App Development Company
+         Best Exam Preparation App Development Company
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading exam preparation app development company, delivering custom test prep apps for NEET, JEE, UPSC, and competitive exams. Get AI-powered learning, mock tests, live classes & analytics. "
+          content="Comfygen Technologies delivers exam preparation app development services with smart assessments, analytics, and scalable digital learning solutions."
         />
 
         <meta name="keywords" content="Exam Preparation App Development, Custom Test Prep App, NEET App Development, JEE Coaching App, UPSC Exam App, AI Learning App, Mock Test App, EdTech App Development, Live Class App, Student Performance Tracking App" />
@@ -387,12 +388,12 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top-Notch Exam Preparation App Development Company"
-          ptag="Transform learning outcomes with Comfygen’s advanced exam preparation app development services. We build AI-driven test prep apps that enhance productivity, boost exam success, and deliver an engaging digital learning experience. Our scalable and secure solutions support multi-exam goals including NEET, JEE, UPSC, Government exams, and more."
-          li="AI-powered adaptive learning"
-          li1="Smart analytics & progress tracking"
-          li2="Interactive mock tests and quizzes"
-          li3="Live classes, doubt-solving & content management"
+          heading="Top Exam Preparation App Development Company"
+          ptag="Comfygen Technologies specializes in building modern and engaging exam preparation applications that help students prepare effectively for exams. Our exam prep app development services focus on interactive learning, smart assessments, and performance-driven insights. From test series apps to full-featured exam preparation platforms, we deliver secure, scalable solutions tailored to EdTech startups, institutes, and enterprises seeking digital learning excellence."
+          li="Cross-platform mobile & web app solutions"
+          li1="Interactive learning with analytics & insights"
+          li2="Feature-rich exam preparation app development"
+          li3="Test series, quizzes & question bank management"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -401,16 +402,7 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-hero.webp"
         />
-
-        <AboutSection
-          title="About Company"
-          heading="Exam Preparation App Development to Empower Modern Learning"
-          description1="Partner with industry's leading <a class='text-blue-500 font-semibold' href='/e-learning-app-development' >e-learning app development company</a> that has delivered top-notch test preparation apps. We specialize in developing robust and scalable exam preparation apps tailored for students preparing for competitive exams like NEET, JEE, UPSC, SSC, and more. Our custom-built solutions come packed with advanced features such as AI-based test recommendations, performance analytics, and engaging mock tests to enhance user experience and boost learning outcomes."
-          description2="Whether you're an edtech startup or an established institution, our team ensures end-to-end development support—from ideation and UI/UX design to deployment and maintenance. We focus on creating intuitive, interactive, and adaptive learning platforms that help learners succeed in today’s competitive landscape."
-          imageSrc="https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -423,6 +415,18 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Exam Preparation App Development to Empower Modern Learning"
+          description1="Partner with industry's leading <a class='text-blue-500 font-semibold' href='/e-learning-app-development' >e-learning app development company</a> that has delivered top-notch test preparation apps. We specialize in developing robust and scalable exam preparation apps tailored for students preparing for competitive exams like NEET, JEE, UPSC, SSC, and more. Our custom-built solutions come packed with advanced features such as AI-based test recommendations, performance analytics, and engaging mock tests to enhance user experience and boost learning outcomes."
+          description2="Whether you're an edtech startup or an established institution, our team ensures end-to-end development support—from ideation and UI/UX design to deployment and maintenance. We focus on creating intuitive, interactive, and adaptive learning platforms that help learners succeed in today’s competitive landscape."
+          imageSrc="https://www.comfygen.com/comfygen-images/exam-prep-app/exam-prep-app-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
         <ConsultancyApproach
@@ -457,7 +461,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Online Exam App Development Process</h2>
               <p className="text-base font-normal mt-2">
-              At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance.
+                At Comfygen, we follow a structured, agile-driven development process to deliver scalable, secure, and user-friendly online exam apps. From ideation to post-launch support, we ensure each phase is focused on quality, innovation, and performance.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

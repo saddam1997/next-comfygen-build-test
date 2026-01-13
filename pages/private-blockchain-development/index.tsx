@@ -957,7 +957,8 @@ export default function rummy(props:any) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Secure, Scalable & Permissioned Blockchain Solutions for Enterprises"
+          heading="Private Blockchain Development Service"
+          subhead='Secure, Scalable & Permissioned Blockchain Solutions for Enterprises'
           ptag="Comfygen Technologies is a trusted private blockchain development company delivering secure, scalable, and fully customized permissioned blockchain solutions. Our expert private blockchain developers build enterprise-grade networks using Hyperledger, Quorum, and Corda to support industries like finance, healthcare, and logistics. From smart contract development to end-to-end private blockchain application deployment, we help businesses create compliant, future-ready blockchain ecosystems that enhance transparency, security, and operational efficiency."
           li="Permissioned & Enterprise-Grade Blockchain Networks"
           li1="Hyperledger, Quorum & Corda Expertise"

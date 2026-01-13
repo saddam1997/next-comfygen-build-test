@@ -15,6 +15,7 @@ import { IconCashBanknote, } from "@tabler/icons-react";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import CallToAction from "../../components/Newcomponet/SectionCompoent/CallToAction";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -420,10 +421,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Telemedicine App Development Company in India | Custom Telehealth Apps</title>
+        <title>Telemedicine App Development Company in India | Comfygen</title>
         <meta
           name="description"
-          content="Looking for a telemedicine app development company in India? We build secure, HIPAA-compliant telehealth apps with video consultation, AI features, and scalable solutions. Get started today."
+          content="Comfygen Technologies is a leading telemedicine app development company in India, offering secure, scalable apps with video consultations and e-prescriptions."
         />
         <meta
           name="keywords"
@@ -518,12 +519,12 @@ export default function Ecommerce(props) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Telemedicine App Development Company "
-          ptag="Telemedicine app development helps healthcare providers deliver secure online consultations through mobile and web platforms. As a trusted telemedicine app development company, Comfygen offers custom telehealth app development services for hospitals, clinics, and startups. Our HIPAA-compliant telemedicine app development solutions include video consultations, chat, e-prescriptions, and remote monitoring, enabling scalable, user-friendly, and secure digital healthcare growth."
-          li="AI-Powered Features for Better Care"
-          li1="Safe & HIPAA-Compliant"
-          li2="Easy-to-Use Design for Everyone"
-          li3="Cloud Integration for Smooth Workflows"
+          heading="Telemedicine App Development Company in India"
+          ptag="A trusted Telemedicine App Development Company in India focused on delivering secure, scalable, and user-centric digital healthcare solutions. Comfygen Technologies specializes in building advanced telemedicine apps that enable virtual consultations, appointment scheduling, real-time video calls, e-prescriptions, and secure patient data management. Our expert team develops compliant, high-performance telemedicine platforms with intuitive UI/UX and seamless integrations, helping hospitals, clinics, and healthcare startups expand access to quality care while accelerating digital transformation."
+          li="Virtual Doctor Consultations"
+          li1="Appointment Scheduling & Management"
+          li2="HIPAA-Compliant Data Security"
+          li3="Scalable & User-Friendly Platform"
           li4="Connect to Your Existing Systems"
           ptag3=""
           btnName="Talk With Expert"
@@ -534,21 +535,8 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-hero1.webp"
         />
+        <Milestones />
 
-        <AboutSection
-          heading="What Is a Telemedicine App?"
-          description1="A telemedicine app is a digital healthcare platform that enables online doctor consultations using video calls, voice calls, chat, and e-prescriptions. These apps help patients consult doctors remotely, book appointments, receive prescriptions, and access medical reports without visiting hospitals. Telemedicine app development plays a vital role in modern digital healthcare systems by improving access, speed, and care quality."
-          description2="Telemedicine Market Stats & Insights"
-          points={[
-            "Over 70% of patients prefer online doctor consultations for non-emergency healthcare needs.",
-            "The global telemedicine market is growing at 20%+ CAGR, driven by digital healthcare adoption.",
-            "60% of healthcare providers use telemedicine software to improve patient engagement.",
-            "Remote consultations can reduce hospital visits by up to 40%, saving time and costs."
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -565,7 +553,23 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
-        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/aI-Powered-telemedicine-app-development-solution.webp"/>
+        <AboutSection
+          heading="What Is a Telemedicine App?"
+          description1="A telemedicine app is a digital healthcare platform that enables online doctor consultations using video calls, voice calls, chat, and e-prescriptions. These apps help patients consult doctors remotely, book appointments, receive prescriptions, and access medical reports without visiting hospitals. Telemedicine app development plays a vital role in modern digital healthcare systems by improving access, speed, and care quality."
+          description2="Telemedicine Market Stats & Insights"
+          points={[
+            "Over 70% of patients prefer online doctor consultations for non-emergency healthcare needs.",
+            "The global telemedicine market is growing at 20%+ CAGR, driven by digital healthcare adoption.",
+            "60% of healthcare providers use telemedicine software to improve patient engagement.",
+            "Remote consultations can reduce hospital visits by up to 40%, saving time and costs."
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+        <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} imageSrc="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/aI-Powered-telemedicine-app-development-solution.webp" />
 
         <section className="py-8">
           <Portfolio

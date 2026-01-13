@@ -91,26 +91,6 @@ const Faq = dynamic(
 
 
 
-
-
-
-// import Milestones from "../Newcomponet/comman/Milestones";
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection"
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
-// import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import DeliverySection from "../Newcomponet/comman/DeliverySection";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
 const Process = [
   {
     title: " Discovery and Ideation",
@@ -379,11 +359,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Food Delivery App Development Company in India | Custom AI-Powered Solutions
+         Food Delivery App Development Company in India | Custom On-Demand Solutions
+
         </title>
         <meta
           name="description"
-          content="Looking for a food delivery app development company in India? Comfygen builds custom, scalable, and AI-powered food delivery apps for startups, restaurants, food vendors and cloud kitchens with real-time tracking and secure payments."
+          content="Comfygen is a trusted food delivery app development company in India offering custom, AI-powered, and scalable food delivery apps for restaurants, cloud kitchens, and startups with real-time tracking and secure payments"
         />
         <link
           rel="canonical"
@@ -495,11 +476,12 @@ export default function Ecommerce(props) {
         <div className=" ">
           <HeroSectionForAllPages
             heading="Custom Food Delivery App Development Company in India"
-            ptag="Comfygen Technologies is a trusted food delivery app development company in India, delivering AI-powered, secure, and scalable food delivery app solutions for startups, restaurants, cloud kitchens, and enterprise businesses. We build high-performance online food ordering apps with AI-driven recommendations, real-time order tracking, secure payment integration, and advanced data protection—helping you launch a profitable food delivery app like leading platforms in the market."
-            li="Real-Time Order & Delivery Tracking"
-            li1="AI-Based Personalized Food Recommendations"
-            li2="Custom Food Delivery App Solutions"
-            li3="Seamless & User-Friendly UX"
+            ptag="Comfygen Technologies is a top-rated food delivery app development company in India, helping startups, restaurants, cloud kitchens, and enterprises build powerful on-demand food delivery apps. We deliver custom, AI-powered, and scalable food delivery solutions that improve customer experience, speed up order processing, and increase business revenue."
+            ptag1='Our food delivery apps come with real-time order tracking, smart food recommendations, secure payment gateways, and smooth UI/UX, enabling you to launch a market-ready app like leading food delivery platforms.'
+            li="Custom On-Demand Food Delivery App Development"
+            li1="AI-Based Food Recommendations & Smart Ordering"
+            li2="Live Order & Delivery Tracking System"
+            li3="Secure, Scalable & User-Friendly App Design"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -514,6 +496,18 @@ export default function Ecommerce(props) {
         <div>
           <Milestones />
         </div>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Next-Gen Food Delivery App Development Services for Food Business Startup
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen is a leading food ordering mobile app development company in India, delivering scalable and high-performance on-demand food delivery app development services for startups, restaurants, cloud kitchens, and large enterprises.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           heading="Why Invest in Food Delivery App Development for Your Business Growth?"
           description1="The global food delivery market is expanding rapidly as customers prefer faster, smarter, and contactless ways to order meals. By 2030, the industry is expected to surpass hundreds of billions in revenue, making a food delivery app an essential tool for restaurants, startups, and cloud kitchens to remain competitive."
@@ -532,18 +526,7 @@ export default function Ecommerce(props) {
 
         {/* <ContactFromCenter /> */}
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Next-Gen Food Delivery App Development Services for Food Business Startup
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen is a leading food ordering mobile app development company in India, delivering scalable and high-performance on-demand food delivery app development services for startups, restaurants, cloud kitchens, and large enterprises.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
 
@@ -669,7 +652,7 @@ export default function Ecommerce(props) {
         />
 
         <div className="py-10">
-          <ClientStories/>
+          <ClientStories />
         </div>
 
         <DeliverySection hideUrl="food-delivery-app-development" />

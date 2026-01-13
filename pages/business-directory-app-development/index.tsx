@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -330,10 +331,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Business Directory App Development Company</title>
+        <title>Top Best Business Directory App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Looking to develop a business directory app like IndiaMart, JustDial, and Yelp? Comfygen Technologies is a top business directory app development company offering custom directory app development services, white-label, and scalable business listing app solutions for Android, iOS, and web platforms."
+          content="Comfygen is a top-rated business directory app development company. Build a business directory app & website like Clutch, IndiaMart, JustDial, and Yelp with smart listings, reviews, and location-based search."
         />
 
         <meta
@@ -407,8 +408,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Business Directory App Development Company"
-            ptag="Looking to build a powerful online listing platform? Our business directory app development company helps you create location-based business listing directory apps like Yelp, JustDial or IndianMart for your startups and enterprises. We offer world-class business directory app development services that connect users with local businesses and services in real time."
+            heading="Best Business Directory App Development Company"
+            ptag="Looking to build a powerful online listing platform? Our top-rated business directory app development company helps you create location-based business listing directory apps like Yelp, JustDial or IndianMart for your startups and enterprises. We offer world-class business directory app development services that connect users with local businesses and services in real time."
             li="Smart Business Listings with Filters"
             li1="Location-Based Search Integration"
             li2="Ratings, Reviews & Contact Info"
@@ -423,23 +424,10 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/business-directory-app-development/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="How Business Listing Sites Boost Your Online Visibility"
-          description1="In the digital-first era, being discoverable online is critical for business growth. A business listing app helps your brand get found quickly by potential customers searching locally or by category."
-          description2="It not only increases online presence but also improves your ranking in search engines, maps, and mobile searches."
-          description3="With a feature-rich business directory app, you unlock higher visibility and more leads — all while managing listings from a centralized platform."
-          points={[
-            "Improves Local SEO & Search Engine Rankings",
-            "Increases Organic Traffic to Business Profiles",
-            "Boosts Brand Trust via Reviews & Ratings",
-            "Allows Instant Discovery on Maps & Mobile",
-            "Helps Target Niche Audiences with Filters & Tags",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
+        <Milestones/>
+
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -460,6 +448,25 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="How Business Listing Sites Boost Your Online Visibility"
+          description1="In the digital-first era, being discoverable online is critical for business growth. A business listing app helps your brand get found quickly by potential customers searching locally or by category."
+          description2="It not only increases online presence but also improves your ranking in search engines, maps, and mobile searches."
+          description3="With a feature-rich business directory app, you unlock higher visibility and more leads — all while managing listings from a centralized platform."
+          points={[
+            "Improves Local SEO & Search Engine Rankings",
+            "Increases Organic Traffic to Business Profiles",
+            "Boosts Brand Trust via Reviews & Ratings",
+            "Allows Instant Discovery on Maps & Mobile",
+            "Helps Target Niche Audiences with Filters & Tags",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         
         {/* <ContactFromCenter /> */}

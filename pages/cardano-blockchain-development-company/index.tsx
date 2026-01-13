@@ -5,6 +5,7 @@ import JSON_DATA from "./json/cardano.json";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -69,19 +70,6 @@ const Faq = dynamic(
 
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 
@@ -329,11 +317,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Cardano Blockchain Development Company | Comfygen
+         Cardano Blockchain Development Company | DApps, NFT & DeFi Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Cardano Blockchain Development Company offering DApps, smart contracts, DeFi platforms, NFT marketplaces, and token solutions."
+          content="Comfygen is a leading Cardano blockchain development company delivering secure, scalable DApps, smart contracts, NFT marketplaces, and DeFi platforms for enterprises and startups worldwide."
         />
         <link rel="canonical" href="https://www.comfygen.com/cardano-blockchain-development-company" />
 
@@ -369,12 +357,12 @@ export default function Ecommerce(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Best Cardano Blockchain Development Company"
-          ptag="Comfygen, Cardano Blockchain Development Company, delivers secure, scalable, and customized Cardano blockchain development solutions for enterprises and startups worldwide. Our blockchain development expert specializes in building Cardano DApps, smart contracts, DeFi platforms, and NFT marketplaces, ensuring high performance, seamless integration, and future-ready applications. Partner with a trusted Cardano Blockchain Development Company to leverage advanced blockchain technology, accelerate your digital transformation, and enhance transparency, security, and efficiency in your business operations."
-          li="End-to-end Cardano blockchain development solutions"
-          li1="Certified developers with proven expertise"
-          li2="Scalable, secure, and high-performance decentralized applications"
-          li3="Seamless integration with enterprise systems"
+          heading="Cardano Blockchain Development Company"
+          ptag="Comfygen is a leading Cardano blockchain development company providing secure, scalable, and tailored blockchain solutions for startups and enterprises worldwide. Our experts specialize in developing Cardano DApps, smart contracts, NFT marketplaces, and DeFi platforms, delivering high-performance, future-ready applications. Partner with Comfygen to leverage advanced Cardano technology, enhance transparency, boost security, and streamline your business operations."
+          li="End-to-End Cardano Blockchain Development Solutions"
+          li1="Certified Developers with Proven Expertise"
+          li2="Scalable, Secure, High-Performance Decentralized Applications"
+          li3="Seamless Enterprise System Integration"
           ptag3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -384,6 +372,22 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/cardano-blockchain-development-hero-img.webp"
         />
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Cardano Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">{`AComfygen, a Leading Cardano Blockchain Development Company, provides end-to-end blockchain solutions specially designed for startups and enterprises. Our expert developers leverage Cardano’s proof-of-stake (PoS) protocol to deliver secure, scalable, and high-performance applications that drive business innovation.`}</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <AboutSection
           title="About Company"
           heading="What is a Cardano Blockchain Development Company?"
@@ -400,18 +404,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Cardano Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">{`AComfygen, a Leading Cardano Blockchain Development Company, provides end-to-end blockchain solutions specially designed for startups and enterprises. Our expert developers leverage Cardano’s proof-of-stake (PoS) protocol to deliver secure, scalable, and high-performance applications that drive business innovation.`}</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         {/* <ContactFromCenter /> */}
         <ConsultancyApproach

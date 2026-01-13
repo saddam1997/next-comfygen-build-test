@@ -28,7 +28,7 @@ function Portfolio({ projects, heading, description }) {
   }, [projects, isHovered]);
 
   return (
-    <div className="bg-[#F5F5F9] py-12 px-4">
+    <div className="bg-[#F5F5F9] md:py-12 py-6 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">{heading}</h2>
@@ -54,7 +54,7 @@ function Portfolio({ projects, heading, description }) {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div>
                         <Image
-                          className="bg-center bg-contain h-[160] md:h-[400px] w-full"
+                          className="bg-center bg-contain h-full md:h-[400px] w-full"
                           src={project?.image}
                           alt={project?.title}
                           width={297}

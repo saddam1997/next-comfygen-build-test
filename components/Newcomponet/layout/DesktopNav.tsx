@@ -80,12 +80,11 @@ export default function DesktopNav(props: any) {
             className="relative flex items-center flex-shrink-0 text-white"
           >
             <Image
-              // src="https://www.comfygen.com/media/svg/comfygen-logo.svg"
               src="/svg/Logo1.svg"
               alt="comfygen-logo"
               width={244}
               height={51}
-
+              priority
             />
           </Link>
         </div>

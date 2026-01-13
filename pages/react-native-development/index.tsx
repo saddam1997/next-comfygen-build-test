@@ -103,10 +103,10 @@ export default function Altcoin(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div>
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
+      </div>
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="React Native Development Services for Mobile Apps"
           ptag="Comfygen offers top-tier React Native app development services, creating highly functional and user-friendly cross-platform applications. Our experts deliver end-to-end solutions with exceptional coding standards, interactive UI/UX designs, and enhanced productivity for your business. Partner with us for superior React Native app development to build scalable, efficient apps that drive success."

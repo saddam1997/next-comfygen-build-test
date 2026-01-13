@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mernstack.json";
 import dynamic from "next/dynamic";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -56,11 +57,12 @@ export default function Stack(props:any) {
     <>
       <Head>
         <title>
-          Best MEAN Stack Development Company in Jaipur, India
+         MERN Stack Development Company in Jaipur, India 
+
         </title>
         <meta
           name="description"
-          content="Our MEAN Stack development company in Jaipur, India offers modern web development services. Make your next web application with us. Call us at +91-958-786-7258!"
+          content=" Comfygen is a MERN Stack development company in Jaipur, India, building scalable and high-performance web applications for businesses."
         />
         <link
           rel="canonical"
@@ -108,12 +110,12 @@ export default function Stack(props:any) {
           <div>
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mern-stack-development-company-heri-img.webp')]">
               <HeroSectionForAllPages
-                heading="Affordable MERN Stack Development Company in Jaipur, India"
-                ptag="As a premier MERN Stack development company in Jaipur, India, we specialize in creating high-performance, scalable web applications tailored to your unique business requirements. Whether you need an e-commerce platform, a healthcare portal, or an advanced fintech solution, we’ve got you covered."
-                li="6+ years of experience as an expert team "
-                li1="Use the latest MERN Stack technologies."
-                li2="Create an innovative and user-friendly app."
-                li3="High Performance & Scalability"
+                heading="MERN Stack Development Company"
+                ptag="Comfygen is a reliable MERN Stack development company in Jaipur, India, specializing in building secure, scalable, and high-performing web applications for startups and enterprises. Our experienced MERN developers use modern technologies—MongoDB, Express.js, React, and Node.js—to deliver powerful solutions for eCommerce, healthcare platforms, fintech applications, and more. We focus on performance, usability, and long-term scalability to help businesses grow faster in the digital space."
+                li="Experienced MERN Stack Development Team"
+                li1="Latest MERN Technologies & Modern Frameworks"
+                li2="User-Centric, Innovative Application Development"
+                li3="Scalable Architecture with High Performance"
                 btnName="Talk With Expert"
                 btnLink="/contact-us"
                 openModal={openModal}
@@ -124,15 +126,7 @@ export default function Stack(props:any) {
             </div>
           </div>
         </div>
-        <AboutSection
-          title="We are Mern Stack Development Company"
-          heading="Best MERN Stack Development Company in Jaipur"
-          description1="Comfygen provides the best MERN Stack development services in India, helping businesses keep up with the digital world. As a web development team with decades of experience in MongoDB, Express.js, React, and Node.js, our team in Jaipur, India, specializes in building scalable, performant, and scalable web applications."
-          description2="We provide robust, flexible, and innovative solutions tailored to your unique business needs. The MERN Stack development services we provide in Jaipur, India come with years of experience and a proven track record. Top companies across industries depend on us to build secure, scalable, and high-performing web applications."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -145,6 +139,18 @@ export default function Stack(props:any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="We are Mern Stack Development Company"
+          heading="Best MERN Stack Development Company in Jaipur"
+          description1="Comfygen provides the best MERN Stack development services in India, helping businesses keep up with the digital world. As a web development team with decades of experience in MongoDB, Express.js, React, and Node.js, our team in Jaipur, India, specializes in building scalable, performant, and scalable web applications."
+          description2="We provide robust, flexible, and innovative solutions tailored to your unique business needs. The MERN Stack development services we provide in Jaipur, India come with years of experience and a proven track record. Top companies across industries depend on us to build secure, scalable, and high-performing web applications."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">

@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
-import Script from "next/script";
+
 
 /* ======================
    CRITICAL (Above-the-fold)
@@ -195,199 +195,69 @@ export default function Home(props: any) {
     },
   ];
 
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp",
-      email: "sales@comfygen.com",
-      url: "https://www.comfygen.com/",
-      founders: [
-        {
-          "@type": "Person",
-          name: "Saddam Husen"
-        }
-      ],
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+1 579-977-4475",
-          contactType: "sales",
-          areaServed: "US",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+1 579-977-4475",
-          contactType: "sales",
-          areaServed: "CA",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91-9587867258",
-          contactType: "sales",
-          areaServed: "UK",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "IN",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+49-1515-1402200",
-          contactType: "sales",
-          areaServed: "DE",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "+91 9587867258",
-          contactType: "sales",
-          areaServed: "AE",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "SA",
-          availableLanguage: "en"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91 9587867258",
-          contactType: "sales",
-          areaServed: "AU",
-          availableLanguage: "en"
-        }
-      ],
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://in.pinterest.com/ComfygenTechnologies/",
-        "https://www.youtube.com/@Comfygentechnologies"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada"
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Rhederstraße 34, 53881 Euskirchen, Germany ",
-          addressLocality: "Euskirchen",
-          postalCode: "53881",
-          addressCountry: "Germany"
-        }
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        opens: "00:00",
-        closes: "23:59"
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://in.pinterest.com/ComfygenTechnologies/",
-        "https://www.youtube.com/@Comfygentechnologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-
-
-
-  ];
-
-
-  const FAQ = {
+  const LocalBusiness = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
+    "@type": "LocalBusiness",
+    "name": "Comfygen Technologies",
+    "image": "https://www.comfygen.com/svg/Logo1.svg",
+    "@id": "https://www.comfygen.com/",
+    "url": "https://www.comfygen.com/",
+    "telephone": "+91-958-786-7258",
+    "priceRange": "$",
+    "address": [
       {
-        "@type": "Question",
-        name: "How much does it cost to build a mobile app?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "App development costs range from $5,000 to $50,000, depending on complexity, features, platform, custom designs, integrations, and enterprise-level requirements.",
-        },
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+        "addressLocality": "Jaipur",
+        "postalCode": "302021",
+        "addressCountry": "IN"
       },
       {
-        "@type": "Question",
-        name: "How long does it take to build a mobile application?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Simple apps take 6–8 weeks, while complex solutions like delivery or dating platforms require 4–6 months, factoring in testing, integrations, and design iterations.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Comfygen provide custom software development?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, we deliver fully customized solutions including mobile apps, web apps, enterprise software, and industry-specific platforms tailored to business goals and workflows.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can you develop a dating app like Tinder or Bumble?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, we create scalable dating apps with matching algorithms, chat, video calls, location tracking, notifications, premium features, subscriptions, and analytics dashboards.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can you develop a delivery app like Uber Eats or Instamart?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, we develop complete delivery solutions with order management, tracking, payments, admin dashboards, ratings, loyalty programs, and analytics for restaurants, couriers, and users.",
-        },
-      },
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "CA"
+      }
     ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies/",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies/",
+      "https://www.youtube.com/@ComfygenTechnologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+    ]
+
   };
 
-
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.comfygen.com/#webpage",
+    "url": "https://www.comfygen.com/",
+    "inLanguage": "en-US",
+    "name": "Custom Blockchain & Mobile App Development Company",
+    "isPartOf": {
+      "@id": "https://www.comfygen.com/#website"
+    },
+    "datePublished": "2020-07-08T00:09:36-08:00",
+    "dateModified": "2024-04-06T00:19:05-08:00",
+    "description": "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
+  };
 
   return (
     <>
@@ -431,31 +301,31 @@ export default function Home(props: any) {
           content="Comfygen Technologies, software development, app development, blockchain development, IT company, custom software solutions"
         />
 
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:type" content="website" />
         <meta
-          property="og:title"
+          name="og:title"
           content="Comfygen Technologies – App & Software Development Experts"
         />
         <meta
-          property="og:description"
+          name="og:description"
           content="Explore top-tier software, app, and blockchain development services by Comfygen Technologies."
         />
         <meta property="og:url" content="https://www.comfygen.com" />
         <meta
-          property="og:site_name"
+          name="og:site_name"
           content="Custom Blockchain & Mobile App Development Company"
         />
         <meta
-          property="article:publisher"
+          name="article:publisher"
           content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/"
         />
         <meta
-          property="article:modified_time"
+          name="article:modified_time"
           content="2022-12-06T08:49:10+00:00"
         />
         <meta
-          property="og:image"
+          name="og:image"
           content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
         />
         <meta name="twitter:card" content="summary_large_image" />
@@ -474,70 +344,62 @@ export default function Home(props: any) {
 
         {/* Twitter Card  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Comfygen Technologies – Digital Transformation Partner"
-        />
-        <meta
-          name="twitter:description"
-          content="Join hands with Comfygen for robust software and mobile solutions that scale."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
-        />
-        {/* ✅ LCP IMAGE PRELOAD */}
-
-        {/* <script
+        <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
+        <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
+        <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+      {/* ✅ LCP IMAGE PRELOAD */}
+     
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        /> */}
-
-
-
-
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
+        />
         {/* <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Comfygen Technologies",
+              "url": "https://www.comfygen.com/",
+              "logo": "https://www.comfygen.com/svg/Logo1.svg",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Sales",
+                "contactOption": "TollFree",
+                "telephone": "+91-9587867258",
+                "email": "sales@comfygen.com",
+                "areaServed": [
+                  "IN", "US", "CA", "GB"],
+                "availableLanguage": ["English", "Hindi"]
+              },
+              "sameAs": [
+                "https://www.facebook.com/comfygen.technologies/",
+                "https://x.com/Comfygen_Tech",
+                "https://www.instagram.com/comfygen_technologies/",
+                "https://youtube.com/@comfygentechnologies",
+                "https://www.linkedin.com/company/comfygen-technologies"
+              ]
+
+            }),
+          }}
+
         /> */}
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </Head>
+      <div >
 
-      <Script
-        id="WebSite-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteJsonLd),
-        }}
-      />
-
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(FAQ),
-        }}
-      />
-
-      <Script
-        id="Organization-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLdData),
-        }}
-      />
-
-      <div className="lg:h-[110px]">
         <Header />
       </div>
 
-      <div className="overflow-hidden">
-        <div className="relative">
+      <div className="overflow-hidden lg:pt-[110px]">
+        <div className="relative ">
           <HeroSectionHomePage
             heading={typedText}
             isHome={true}
@@ -553,7 +415,7 @@ export default function Home(props: any) {
           />
         </div>
         <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9] lg:mt-8">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -572,6 +434,7 @@ export default function Home(props: any) {
           </div>
         </section>
 
+        
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries "
@@ -588,6 +451,8 @@ export default function Home(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
+
+        
 
         <section className="py-8">
           <Portfolio
@@ -670,7 +535,8 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-        <BlogSection initialData={initialData} />
+         <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

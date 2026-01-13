@@ -60,10 +60,7 @@ const TechStack = dynamic(
   { loading: loader, ssr: true }
 )
 
-const ConsultancyApproach = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+
 
 const WhyChoose = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
@@ -80,16 +77,6 @@ const ClientTestimonials = dynamic(
   { loading: loader, ssr: true }
 )
 
-const CoreFeaturesSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
-  { loading: loader, ssr: true }
-)
-
-
-const HireDeveloperSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
 
 
 
@@ -596,21 +583,21 @@ export default function ClinicalApp(props: any) {
 
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
+        {/* <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_CA" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" />
+        <meta property="og:locale:alternate" content="en_AE" /> */}
         <meta name="fb:page_id" content="110909321596135" />
         <meta name="og:email" content="sales@comfygen.com" />
         <meta name="og:phone_number" content="+91-958-786-7258" />
 
-        <meta
+        {/* <meta
           property="og:image:type"
           content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp"
         />
         <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:height" content="630" /> */}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -627,7 +614,7 @@ export default function ClinicalApp(props: any) {
         />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        <meta property="og:image" content="add image URL" />
+        {/* <meta property="og:image" content="add image URL" />
         <meta property="og:image:secure_url" content="Add img URL" />
         <meta property="og:image:alt" content="Grocery App Development" />
         <meta
@@ -641,7 +628,7 @@ export default function ClinicalApp(props: any) {
         <meta
           property="og:description"
           content="Comfygen Technologies is a top grocery delivery app development company that specializes in creating cost-effective apps similar to Walmart, Target, Instacart and Zepto."
-        />
+        /> */}
 
         <script
           type="application/ld+json"
@@ -827,51 +814,6 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <CoreFeaturesSection
-          title="Custom AI-Powered Grocery App Development Solutions"
-          subtitle="Comfygen provides next-generation AI-powered grocery app development solutions to automate and optimize grocery shopping and delivery. With our AI-driven grocery app development services, businesses can enhance customer satisfaction, streamline operations, and increase revenue."
-          features={JSON_DATA.AIPowered}
-        /> */}
-
-
-
-        {/* <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
- */}
-
-
-
-
-
-
-
-
-
-        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   );

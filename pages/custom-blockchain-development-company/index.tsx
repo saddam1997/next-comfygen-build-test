@@ -8,6 +8,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 
 import dynamic from "next/dynamic";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -282,12 +283,11 @@ export default function Blockchain(props: any) {
   return (
     <>
       <Head>
-        <title> Custom Blockchain Development Company | Enterprise Blockchain Solutions </title>
+        <title>Custom Blockchain Software Development for Enterprises & Startups</title>
         <meta
           name="description"
-          content="Comfygen custom blockchain development company offering secure, scalable, and enterprise-level blockchain solutions. Build private, public, and hybrid blockchain networks."
+          content="Custom blockchain development company offering enterprise blockchain applications, smart contracts, dApps, and scalable blockchain solutions."
         />
-
         <meta
           name="keywords"
           content="Custom Blockchain Development, Custom Blockchain Development company, Enterprise Blockchain Solutions, DeFi and NFT Blockchain Solutions, Private and Public Blockchain Development, Hybrid Blockchain Network Development, Blockchain Consulting Services, Blockchain Security Auditing, Supply Chain Blockchain Solutions, Blockchain for Finance and Banking, Blockchain Integration Services, Crypto Exchange and Wallet Development, Blockchain-Based Identity Management Systems"
@@ -321,12 +321,12 @@ export default function Blockchain(props: any) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Custom Blockchain Development Company"
-          ptag="As a leading custom blockchain development company, Confygen delivers specially designed, scalable, and transparent blockchain ecosystems that empower businesses to innovate with confidence. Our custom blockchain solutions are designed to meet diverse business goals—whether it’s building enterprise blockchain applications for financial transparency or developing decentralized apps (DApps) for secure digital transactions."
-          li="Custom Blockchain Solutions"
-          li1="Enterprise Blockchain Development"
-          li2="Smart Contract Integration"
-          li3="Blockchain Software Development Services"
+          heading="Custom Blockchain App Development Company"
+          ptag="As a trusted custom blockchain development company, Comfygen builds and design scalable, and transparent blockchain ecosystems that help businesses move faster and innovate securely. Our custom blockchain development solutions are crafted around real business needs, from enterprise-level blockchain applications that improve financial transparency to decentralized applications that enable safe and reliable digital transactions."
+          li="Custom Blockchain Solution Development"
+          li1="Enterprise Blockchain Application Development"
+          li2="Smart Contract Design and Integration"
+          li3="End-to-End Blockchain Software Development Services"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -335,6 +335,20 @@ export default function Blockchain(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/blockchain-development-hero-img.webp"
         />
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Custom Blockchain Development Services
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen, a <a className=' text-blue-500' href='https://www.comfygen.com/blockchain-development'>Blockchain development company</a>  specializes in providing custom blockchain development services that empower businesses to harness the full potential of decentralized technology. Our blockchain developer team builds secure, scalable, and tailored blockchain applications for startups, enterprises, and global brands.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title=""
           heading="Why Businesses Choose Custom Blockchain Solutions"
@@ -351,18 +365,7 @@ export default function Blockchain(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Custom Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen, a <a className=' text-blue-500' href='https://www.comfygen.com/blockchain-development'>Blockchain development company</a>  specializes in providing custom blockchain development services that empower businesses to harness the full potential of decentralized technology. Our blockchain developer team builds secure, scalable, and tailored blockchain applications for startups, enterprises, and global brands.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <CallToAction
           heading="Ready to Launch Your Custom Blockchain Project?"
@@ -379,7 +382,7 @@ export default function Blockchain(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Custom Blockchain Development Process</h2>
               <p className="text-base font-normal mt-2">
-               Comfygen, a leading custom blockchain development company, follows a strategic and agile process to deliver innovative custom blockchain development solutions tailored to your business needs. Here’s how we do it
+                Comfygen, a leading custom blockchain development company, follows a strategic and agile process to deliver innovative custom blockchain development solutions tailored to your business needs. Here’s how we do it
               </p>
             </div>
             <ProcessSec processSlides={Process} />

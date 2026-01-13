@@ -65,23 +65,10 @@ const Faq = dynamic(
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
-
 
 import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const technologyData = [
   {
@@ -370,11 +357,12 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          Ethereum Blockchain Development Company | Comfygen
+         Ethereum Blockchain Development Company | DApps, Smart Contracts & NFTs
+
         </title>
         <meta
           name="description"
-          content="Comfygen best Ethereum Blockchain Development Company offering custom DApp, DeFi, NFT, and smart contract solutions. build secure and scalable blockchain apps according to business needs."
+          content="Comfygen is a top Ethereum blockchain development company delivering secure, scalable DApps, smart contracts, NFT marketplaces, and enterprise-grade Ethereum solutions for modern businesses."
         />
 
         <link rel="canonical" href="https://www.comfygen.com/ethereum-blockchain-development-company" />
@@ -471,13 +459,13 @@ export default function Ecommerce(props:any) {
       <div className="overflow-hidden lg:pt-[100px]">
       
         <HeroSectionForAllPages
-          heading="Top Ethereum Blockchain Development Company "
-          ptag="Comfygen, the Best Ethereum Blockchain Development Company, specializes in powerful, secure, and scalable Ethereum blockchain Development solutions for modern businesses. From smart contracts to enterprise-level dApps, our Ethereum blockchain development expert delivers future-ready blockchain applications that drive innovation, transparency, and growth. Partner with us to transform your business with decentralized technology and unlock new opportunities in the digital economy."
-          li="Custom Ethereum dApp Development"
-          li1="Secure Smart Contract Development & Audit"
+          heading="Ethereum Blockchain Development Company"
+          ptag="Comfygen is a leading Ethereum blockchain development company delivering secure, scalable, and high-performance ethereum blockchain solutions for modern businesses. Our blockchain experts specialize in custom Ethereum DApps, smart contracts, NFT marketplaces, and enterprise-grade integrations, building future-ready applications that drive transparency, innovation, and business growth."
+          li="Custom Ethereum DApp Development"
+          li1="Secure Smart Contract Development & Audits"
           li2="Token & NFT Marketplace Solutions"
           li3="Enterprise-Grade Ethereum Integration"
-          ptag3="Transform your vision with our Ethereum expertise."
+          ptag3="Transform your business with Ethereum expertise"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -486,6 +474,21 @@ export default function Ecommerce(props:any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/ethereum-blockchain-development-company-hero-img.webp"
         />
+        <Milestones/>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Ethereum for Blockchain Development Services We Offer
+              </h2>
+              <p className="text-base text-center font-normal">Comfygen Ethereum for Blockchain Development Company delivered secure and scalable Ethereum blockchain services. From DeFi platforms and NFT marketplaces to ERC-20 tokens and custom dApps, our experts harness Ethereum’s smart contract capabilities to build future-ready decentralized solutions.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         <AboutSection
           title="About Company"
           heading="Why Choose Ethereum for Blockchain Development?"
@@ -502,18 +505,6 @@ export default function Ecommerce(props:any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Ethereum for Blockchain Development Services We Offer
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen Ethereum for Blockchain Development Company delivered secure and scalable Ethereum blockchain services. From DeFi platforms and NFT marketplaces to ERC-20 tokens and custom dApps, our experts harness Ethereum’s smart contract capabilities to build future-ready decentralized solutions.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
 
         <SolutionSec

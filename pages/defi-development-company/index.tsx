@@ -18,6 +18,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 
 import dynamic from "next/dynamic";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -361,13 +362,13 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Top DeFi Development Company | Decentralized Finance Services
+          DeFi Development Company | Secure & Scalable DeFi Solutions
         </title>
 
         {/* Primary SEO */}
         <meta
           name="description"
-          content="Comfygen is a leading DeFi Development Company delivering secure, scalable, and custom DeFi solutions including lending platforms, staking, yield farming, and DEX development."
+          content="Comfygen is a DeFi development company building secure, scalable solutions including DEXs, DeFi tokens, lending platforms, and wallets."
         />
         <meta
           name="keywords"
@@ -427,14 +428,12 @@ export default function Ecommerce(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Defi Development Company"
-          ptag="Comfygen DeFi development company delivering innovative, secure, and scalable decentralized finance solutions. We are experts in building decentralized exchanges, DeFi tokens, and borrowing platform solutions. Our DeFi developer expert team ensures robust smart contract security, seamless blockchain integration, and future-ready architecture. Whether for startups or enterprises, we provide end-to-end DeFi development services that eliminate intermediaries, lower transaction costs, and empower users with full control over their assets, driving sustainable growth in the DeFi ecosystem."
-          li="Defi Token Development"
-          li1="Defi Lending & Borrowing Platform"
-          li2=" <a class='font-semibold' href='/decentralized-exchange-development'>Decentralized Exchange (DEX) Development</a> "
-          li3="Yield Farming & Staking Development"
-          li4="Defi Wallet Development"
-          li5="Smart Contract Development & Auditing"
+          heading="Best DeFi Development Service"
+          ptag="Comfygen is a leading DeFi development company delivering secure, scalable, and high-performance decentralized finance solutions for startups and enterprises. We specialize in building DeFi platforms including decentralized exchanges (DEXs), DeFi tokens, lending and borrowing protocols, and yield-based ecosystems. Our expert DeFi developers ensure robust smart contract security, seamless blockchain integration, and optimized architecture that removes intermediaries, reduces transaction costs, and gives users full control."
+          li="DeFi Lending & Borrowing Platform Development"
+          li1="Decentralized Exchange (DEX) Development"
+          li2="Yield Farming & Staking Solutions"
+          li3="Smart Contract Development & Auditing"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -444,25 +443,10 @@ export default function Ecommerce(props) {
           bgImage='https://www.comfygen.com/herosection/defi-development-company-hero-img.webp'
         />
 
-        <AboutSection
-          title="About Company"
-          heading="Defi Development Expertise at Comfygen"
-          description1="At Comfygen, we bring years of hands-on experience and blockchain innovation to deliver world-class DeFi development services. Our team of skilled developers, architects, and blockchain experts specialize in creating custom DeFi platforms that are secure, transparent, and future-ready."
-          description2="From developing smart contracts to launching full-scale DeFi ecosystems, we combine technical excellence with deep industry knowledge. Our solutions are tailored to meet the diverse needs of fintech startups, crypto entrepreneurs, and enterprises aiming to embrace decentralized finance."
-          points={[
-            "Custom DeFi Platform Development",
-            "Blockchain Integration & Architecture",
-            "Defi Smart Contract Development",
-            "Cross-Chain Compatibility Solutions",
-            "UI/UX Design for DeFi Applications",
-            "Full-Stack DeFi Application Development",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones/>
+
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -487,6 +471,26 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Defi Development Expertise at Comfygen"
+          description1="At Comfygen, we bring years of hands-on experience and blockchain innovation to deliver world-class DeFi development services. Our team of skilled developers, architects, and blockchain experts specialize in creating custom DeFi platforms that are secure, transparent, and future-ready."
+          description2="From developing smart contracts to launching full-scale DeFi ecosystems, we combine technical excellence with deep industry knowledge. Our solutions are tailored to meet the diverse needs of fintech startups, crypto entrepreneurs, and enterprises aiming to embrace decentralized finance."
+          points={[
+            "Custom DeFi Platform Development",
+            "Blockchain Integration & Architecture",
+            "Defi Smart Contract Development",
+            "Cross-Chain Compatibility Solutions",
+            "UI/UX Design for DeFi Applications",
+            "Full-Stack DeFi Application Development",
+          ]}
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <SolutionSec
           heading="Key Benefits of DeFi Development for Modern Financial Solutions"
           subheading="DeFi (Decentralized Finance) development empowers individuals and businesses to reimagine traditional finance by building decentralized, permissionless, and transparent ecosystems. With smart contracts, secure blockchain networks, and global accessibility, DeFi eliminates the need for centralized institutions and introduces a more efficient, inclusive, and cost-effective financial infrastructure."

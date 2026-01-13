@@ -353,11 +353,12 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Best Education App Development Company in Canada | Comfygen
+         Best Education App Development Company in India & USA
+
         </title>
         <meta
           name="description"
-          content="Looking for a top education app development company in Canada? Comfygen builds AI-powerd, engaging, scalable learning apps for schools, colleges & EdTech startups."
+          content="Education app development company in India & USA offering custom eLearning, LMS, and digital education solutions to build secure, scalable, and engaging learning apps."
         />
         <link
           rel="canonical"
@@ -466,12 +467,12 @@ export default function Mobile(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/education-app-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Top Education App Development Company in Canada"
-            ptag="Comfygen is a leading education app development company in Canada, creating innovative and engaging apps for schools, colleges, and EdTech startups. Our expert developers deliver high-performance, user-friendly learning apps tailored to your needs, helping you engage students, streamline learning, and grow your EdTech business."
-            li="Custom Learning App Solutions"
-            li1="Expert EdTech App Development"
-            li2="Engaging & Interactive Design"
-            li3="Scalable, High-Performance Apps"
+            heading="Education App Development Company in India & USA"
+            ptag="Comfygen Technologies is a leading education app development company in India & USA, delivering innovative and scalable digital learning solutions for schools, universities, and EdTech startups. We design and develop feature-rich education apps including eLearning platforms, LMS solutions, virtual classrooms, and online assessment systems. Our expert developers leverage modern technologies, interactive UI/UX, and secure cloud infrastructure to enhance learner engagement and simplify teaching workflows. With a focus on performance, security, and scalability, Comfygen Technologies helps organizations transform traditional education into impactful digital learning experiences."
+            li="Custom eLearning & Education App Development"
+            li1="AI-Powered Learning & Smart Analytics"
+            li2="Secure LMS, Virtual Classrooms & Assessments"
+            li3="Scalable Apps for Schools, EdTech & Enterprises"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -480,7 +481,8 @@ export default function Mobile(props) {
             closeModal={closeModal}
           />
         </div>
-        <Milestones />
+        <Milestones/>
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -499,10 +501,11 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
         <AboutSection
           title="About Company"
-          heading="Best Custom Educational App Development Company in Canada"
-          description1="Comfygen is Canada leading custom educational app development company, offering expert solutions for edtech projects. With a proven track record of successfully delivering 200+ apps, our dedicated team specializes in rapid and customized educational app development."
+          heading="Best Custom Educational App Development Company in India"
+          description1="Comfygen is India's leading custom educational app development company, offering expert solutions for edtech projects. With a proven track record of successfully delivering 200+ apps, our dedicated team specializes in rapid and customized educational app development."
           description2="We focus on creating innovative and impactful eLearning apps tailored to clients' needs. Our developed education apps enhance knowledge flow, making learning more engaging and efficient. By leveraging cutting-edge technology, we develop scalable solutions that transform education."
           description3="Partnering with Comfygen ensures a cost-effective and systematic development process. Our iterative feedback approach guarantees continuous improvements, resulting in a high-quality product. Get in touch today and turn your vision into a powerful educational app that reaches and benefits countless learners."
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"

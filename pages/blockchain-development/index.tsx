@@ -82,22 +82,6 @@ const CallToAction = dynamic(
 );
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import BlockchainIcon from "../Newcomponet/SectionCompoent/BlockchainIcon";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-
-
 const GuidSectionBlockchain = dynamic(
   () => import("./components/GuidSectionBlockchain"),
   {
@@ -789,8 +773,7 @@ export default function Blockchain(props) {
     <div className="overflow-hidden">
       <Head>
         <title>
-          Enterprise Blockchain App Development Company | Web3 Solutions
-
+         Enterprise Blockchain App Development Company | Web3 Solutions
         </title>
         <meta
           name="description"
@@ -897,10 +880,10 @@ export default function Blockchain(props) {
       </Head>
 
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[50px]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Blockchain Development Service"
-          subhead='Looking for a blockchain app development service. '
+          subhead='Looking for a blockchain app development service.'
           ptag="Comfygen is a trusted blockchain app development company focused on building secure, scalable, and production-ready decentralized applications. Our experienced blockchain developers design custom solutions for startups, growing businesses, and enterprises that want to use blockchain for better transparency, automation, and data protection. From blockchain wallet and smart contract development to NFT marketplaces and DeFi platforms, we deliver complete blockchain solutions aligned with your business objectives."
           btnName="Talk With Expert"
           btnLink="/contact-us"

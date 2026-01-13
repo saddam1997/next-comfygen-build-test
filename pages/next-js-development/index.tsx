@@ -13,6 +13,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -186,11 +187,12 @@ export default function Altcoin(props) {
     <>
       <Head>
         <title>
-          Best NextJS Development Company In Jaipur, India | Hire NextJS Developers
+         Next.js Development Company | Hire Expert Next.js Developers – Comfygen
+
         </title>
         <meta
           name="description"
-          content="Hire Best NextJS Development company In Jaipur India. We are providing user friendly website and app in NextJS to boost your sells and services. "
+          content="Comfygen is a trusted Next.js development company delivering fast, scalable, and SEO-friendly web applications with expert developers and server-side rendering solutions."
         />
         <link
           rel="canonical"
@@ -238,11 +240,12 @@ export default function Altcoin(props) {
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/next-js-development-company-hero-img.webp')]">
               <HeroSectionForAllPages
                 heading="Next.js Development Company"
-                ptag="Get exceptional, reliable solutions with Next.js technologies at Comfygen. Our skilled Next.js developers leverage this fast JavaScript framework to deliver server-rendered solutions with high performance and quality. We create high-speed, customized web and app solutions enriched with features and user-friendly navigation, perfect for scaling your business."
-                li="High-Speed, Custom Web & App Solutions"
-                li1="Server-Rendered Performance"
-                li2="User-Friendly Navigation"
-                li3="Expert Next.js Development Team"
+                ptag="Build fast, scalable, and SEO-friendly web applications with Comfygen, a trusted Next.js development company. Our experienced Next.js developers leverage server-side rendering and modern JavaScript architecture to deliver high-performance, secure, and business-ready web solutions."
+                ptag1='From custom web applications to enterprise-grade platforms, we create Next.js solutions with seamless navigation, optimized performance, and future-ready scalability to help your business grow.'
+                li="High-Performance Server-Rendered Applications"
+                li1="Custom Next.js Web & App Development"
+                li2="SEO-Optimized, User-Friendly Interfaces"
+                li3="Expert Next.js Developers for Scalable Solutions"
                 btnName="Talk With Expert"
                 btnLink="/contact-us"
                 openModal={openModal}
@@ -253,17 +256,9 @@ export default function Altcoin(props) {
             </div>
           </div>
         </div>
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title="About Company"
-          heading="Next.JS Development Services in India"
-          description1="Comfygen provides fast and scalable server-side application development services using Next.js, one of the fastest JavaScript frameworks. Using Next.js, our developers build applications that are feature-rich, high-speed, and customized for your business. The main goal of our company is to create interactive, innovative, and bespoke applications for your business. The entire development process at Comfygen is designed to be smooth, high-performing, and scalable. Hot reloading, reusable elements, pre-rendering, and other features of Next.js are utilized. Get a robust business solution for your business with Comfygen's Next.js development service. Comfygen offers a variety of engagement models depending on your budget and requirements. You can get the best solutions from us irrespective of the domain or industry you're in."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
+        <Milestones/>
+
+                <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Next.JS Development Services</h2>
@@ -274,6 +269,17 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <AboutSection
+          title="About Company"
+          heading="Next.JS Development Services in India"
+          description1="Comfygen provides fast and scalable server-side application development services using Next.js, one of the fastest JavaScript frameworks. Using Next.js, our developers build applications that are feature-rich, high-speed, and customized for your business. The main goal of our company is to create interactive, innovative, and bespoke applications for your business. The entire development process at Comfygen is designed to be smooth, high-performing, and scalable. Hot reloading, reusable elements, pre-rendering, and other features of Next.js are utilized. Get a robust business solution for your business with Comfygen's Next.js development service. Comfygen offers a variety of engagement models depending on your budget and requirements. You can get the best solutions from us irrespective of the domain or industry you're in."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <SolutionSec
           heading="Our Top Next.JS Development Services"
           subheading="By creating a tailored user experience focused on targeted users, Next JS increases conversion rates and enhances sales. In addition, it has other advantages."

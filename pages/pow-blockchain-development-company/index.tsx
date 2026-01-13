@@ -8,6 +8,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 
 import dynamic from "next/dynamic";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -528,7 +529,7 @@ export default function Ecommerce(props) {
         </title>
         <meta
           name="description"
-          content="Comfygen is Leading POW Blockchain Development Company In India & The USA. Hire our best POW blockchain developers who are well-versed in the modularity of the POW SDK framework, and build secure, robust, and future-ready Decentralized App Development (dApps) and Blockchain Development. Contact us today!"
+          content="Comfygen offers PoW blockchain development services to build secure, decentralized Web3 apps, dApps, DeFi, NFTs, and DAOs with transparency."
         />
         <link
           rel="canonical"
@@ -627,12 +628,13 @@ export default function Ecommerce(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="POW Blockchain Development Company"
-          ptag="Comfygen offers expert POW Blockchain development services, helping businesses leverage the power of decentralized technology. Our solutions support web3 applications like dApps, NFTs, DeFi, DAOs, and web3 games, ensuring immutability, cryptographic security, and transparency. By eliminating intermediaries, our POW blockchain technology ensures efficiency and scalability. Trust us to create secure, interoperable blockchain solutions that help you stay ahead in the rapidly evolving web3 landscape."
-          li="Decentralized Blockchain Solutions"
-          li1="Secure, Scalable Web3 Apps"
-          li2="Immutability and Transparency"
-          li3="Efficient Blockchain Development"
+          heading="PoW Blockchain Development Service"
+          subhead='Secure & Decentralized Blockchain Solutions for Web3'
+          ptag="Comfygen provides Proof-of-Work (PoW) blockchain development services to help businesses build reliable and transparent Web3 platforms. We develop secure PoW blockchain solutions for dApps, NFTs, DeFi applications, DAOs, and Web3 games with strong cryptographic security, immutable ledgers, and decentralized architecture. Our PoW-based systems eliminate intermediaries and ensure scalability, trust, and long-term network stability."
+          li="Decentralized Blockchain Development"
+          li1="Secure & Scalable Web3 Applications"
+          li2="Immutable and Transparent Ledgers"
+          li3="Enterprise-Grade PoW Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -641,6 +643,19 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp"
         />
+        <Milestones/>
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >POW Blockchain Development Services</h2>
+              <p className="text-center text-base">We are a trusted platform for mobile game development services specializing in creating high-fidelity games for different mobile platforms. Our developers have honed their skills in working with different game development technologies and frameworks to offer a comprehensive collection of game development services.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -668,17 +683,7 @@ export default function Ecommerce(props) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >POW Blockchain Development Services</h2>
-              <p className="text-center text-base">We are a trusted platform for mobile game development services specializing in creating high-fidelity games for different mobile platforms. Our developers have honed their skills in working with different game development technologies and frameworks to offer a comprehensive collection of game development services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         {/* <ContactFromCenter /> */}

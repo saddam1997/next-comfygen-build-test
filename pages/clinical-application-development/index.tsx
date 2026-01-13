@@ -193,11 +193,12 @@ export default function ClinicalApp(props) {
     <>
       <Head>
         <title>
-          Best Clinical Application Development Company in India | Comfygen
+         Clinical Application Development Company in India | Comfygen
+
         </title>
         <meta
           name="description"
-          content="I founded Comfygen, one of the best clinical application development company In India & The USA, that uses innovative technology to transform healthcare Industry. Let's work together to shape healthcare delivery's future."
+          content="Comfygen Technologies delivers secure and scalable clinical application development services for clinics, doctors, and healthcare providers."
         />
         <link
           rel="canonical"
@@ -293,12 +294,11 @@ export default function ClinicalApp(props) {
       <div className="overflow-hidden pt-16 lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Clinical Application Development Company"
-          ptag="If you're a doctor looking to digitize your clinic, Comfygen is the ideal partner. We specialize in creating innovative, secure, and user-friendly clinical apps that improve patient outcomes, automate workflows, and ensure data security. With over 15 years of experience, our team delivers top-notch clinical software solutions that enhance the experience for patients, doctors, and healthcare providers, helping you grow your business 10x."
-          li="Innovative & Secure Clinical Apps"
-          li1="Automated Workflows for Efficiency"
-          li2="Enhanced User Experience"
-          li3="Expert Team with 15+ Years of Experience"
-          li4="Business Growth-Focused Solutions"
+          ptag="A reliable Clinical Application Development Company focused on transforming healthcare operations through secure, innovative, and user-friendly digital solutions. Comfygen Technologies specializes in building advanced clinical applications that automate workflows, improve patient outcomes, and ensure data security and regulatory compliance. Our expert developers create scalable, high-performance clinical apps with seamless integrations and intuitive UI/UX, empowering doctors, clinics, and healthcare providers to deliver better care while driving sustainable business growth."
+          li="Intuitive UI/UX for Healthcare Users"
+          li1="Scalable & Future-Ready Technology"
+          li2="Secure & Compliant Solutions"
+          li3="Custom Clinical Application Development"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -307,16 +307,8 @@ export default function ClinicalApp(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/clinical-application-development-company-hero-img.webp"
         />
-
-        <AboutSection
-          title="About Company"
-          heading="Best Clinical Application Development Company"
-          description1="Comfygen is the only best option if you are looking for a India base reputable clinical app development company in India, and the USA. We are a renowned mobile software and application development company with 300+ projects delivered, 280 satisfied clients and have a team of 15+ years of experienced app and web programmers. We help in clinical application and software development services and make it a viable solution to bring your healthcare app development services closer to patients where they need them."
-          description2="By working with Comfygen Private Limited, you can get the advantages of getting top-notch clinical application development services and most cost effective mobile app development services as compared to your competitors and this is what makes you stand out in your healthcare app development industry."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        
+<Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -328,6 +320,17 @@ export default function ClinicalApp(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Best Clinical Application Development Company"
+          description1="Comfygen is the only best option if you are looking for a India base reputable clinical app development company in India, and the USA. We are a renowned mobile software and application development company with 300+ projects delivered, 280 satisfied clients and have a team of 15+ years of experienced app and web programmers. We help in clinical application and software development services and make it a viable solution to bring your healthcare app development services closer to patients where they need them."
+          description2="By working with Comfygen Private Limited, you can get the advantages of getting top-notch clinical application development services and most cost effective mobile app development services as compared to your competitors and this is what makes you stand out in your healthcare app development industry."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         <SolutionSec
           heading="Our Top-Notch Custom Clinical Application Development Solutions"

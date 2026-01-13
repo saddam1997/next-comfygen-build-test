@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./water-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -75,21 +76,6 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import DeliverySection from "../Newcomponet/comman/DeliverySection";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 
@@ -367,10 +353,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Water Delivery App Development Company</title>
+        <title>Water Delivery App Development Services</title>
         <meta
           name="description"
-          content="Comfygen is a leading water delivery app development company offering the best custom water delivery app development services. From subscription management to GPS tracking & secure payments, we build an AI-based water delivery app for startups & enterprises."
+          content="Comfygen offers professional water delivery app development services in India for startups and enterprises. Build custom water delivery apps with subscription management and live tracking for bottled, mineral, and packaged water delivery."
         />
         <link
           rel="canonical"
@@ -492,12 +478,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top Water Delivery App Development Company"
-            ptag="Comfygen Technologies is a trusted water delivery app development company to startups and enterprises. We build modern Water Delivery Apps for Startups that are fast, secure, and user-friendly with all the essential features your customers need. We also provide high-quality water delivery app development services to help businesses deliver bottled, mineral, and packaged water with ease."
-            li="Quick water ordering & scheduling"
-            li1="Live delivery tracking"
-            li2="Safe and secure online payments"
-            li3="Flexible daily, weekly & monthly plans"
+            heading="Water Delivery App Development Services"
+            ptag="Comfygen provides reliable Custom Water Delivery App Development Services for startups and enterprises. As a trusted water delivery app development company, we build fast, secure, and user-friendly apps that simplify bottled, mineral, and packaged water delivery. Our water delivery app development solutions help businesses manage orders, deliveries, and payments smoothly while improving customer experience and growth."
+            li="Quick water ordering & smart scheduling"
+            li1="Real-time delivery tracking"
+            li2="Safe and secure online payment integration"
+            li3="Flexible daily, weekly & monthly subscription plans"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -507,22 +493,7 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/water-delivery-app-development/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Your Business Needs a Water Delivery App"
-          description1="In today’s busy lifestyle, people prefer quick and reliable solutions — and a water delivery app is the perfect way to meet daily water needs with ease. Whether you are a startup, bottled water supplier, or large-scale distributor, investing in a water delivery app helps streamline operations, automate scheduling, and build strong customer loyalty."
-          description2="With Comfygen’s water delivery app development services, we create future-ready platforms that ensure hassle-free logistics, real-time tracking, and an enhanced customer experience — while boosting your business growth and revenue."
-          description3="Automates subscription & daily water delivery scheduling"
-          imageSrc="https://www.comfygen.com/comfygen-images/water-delivery-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Increases customer convenience & retention",
-            "Improves inventory & delivery route management",
-            "Provides real-time order tracking & updates",
-            "Supports secure digital payments & invoice generation",
-          ]}
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -544,6 +515,24 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Your Business Needs a Water Delivery App"
+          description1="In today’s busy lifestyle, people prefer quick and reliable solutions — and a water delivery app is the perfect way to meet daily water needs with ease. Whether you are a startup, bottled water supplier, or large-scale distributor, investing in a water delivery app helps streamline operations, automate scheduling, and build strong customer loyalty."
+          description2="With Comfygen’s water delivery app development services, we create future-ready platforms that ensure hassle-free logistics, real-time tracking, and an enhanced customer experience — while boosting your business growth and revenue."
+          description3="Automates subscription & daily water delivery scheduling"
+          imageSrc="https://www.comfygen.com/comfygen-images/water-delivery-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[
+            "Increases customer convenience & retention",
+            "Improves inventory & delivery route management",
+            "Provides real-time order tracking & updates",
+            "Supports secure digital payments & invoice generation",
+          ]}
+        />
+
+
         {/* <ContactFromCenter /> */}
 
         <ConsultancyApproach

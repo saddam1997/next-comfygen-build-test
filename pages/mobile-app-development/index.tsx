@@ -279,7 +279,7 @@ const faqSchema = {
 };
 
 export default function Mobile(props: any) {
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
@@ -661,13 +661,15 @@ export default function Mobile(props: any) {
         />
       </Head>
 
-      <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+
+
+      <div className="h-full">
+        <Header />
       </div>
 
-      <div className="overflow-hidden lg:pt-[50px]">
+
+
+      <div className="overflow-hidden lg:pt-[110px] ">
         <div className="">
           <HeroSectionForAllPages
             heading="Leading Mobile App Development Company in Jaipur"

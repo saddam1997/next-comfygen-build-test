@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nodejs.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -92,11 +93,12 @@ export default function Altcoin(props:any) {
     <>
       <Head>
         <title>
-        Best Node JS Development Company in Jaipur, India
+        Node.js Development Company in Jaipur, India | Experts
+
         </title>
         <meta
           name="description"
-          content="Our company is the #1 NodeJS development company in Jaipur, India. Our NodeJS development services help you build secure, scalable, user-friendly, and faster web applications."
+          content="Comfygen is a Node.js development company in Jaipur, India delivering scalable, high-performance web and app solutions for businesses."
         />
         <link
           rel="canonical"
@@ -144,12 +146,12 @@ export default function Altcoin(props:any) {
           <div>
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/node-js-development-company-hero-img.webp')]">
               <HeroSectionForAllPages
-                heading="Top-rated Node.js development company in Jaipur, India for innovative solutions"
-                ptag="Comfygen is a Node.js development company based in Jaipur, India that specializes in developing high-performance, scalable, and reliable real-time web applications. Connect with our expert Node.js developers today to accelerate your business growth. Our Node.js technology-powered custom web and app solutions are designed to meet your business requirements efficiently and accurately at Comfygen."
-                li="Expert Node.js Development"
-                li1="Reliable, Scalable Solutions"
-                li2="Custom Web & App Functionality"
-                li3="Strategic Business Execution"
+                heading="Node.js Development Company in Jaipur, India"
+                ptag="Comfygen is a trusted Node.js development company in Jaipur, India, delivering fast, scalable, and reliable web and application solutions. Our experienced Node.js developers build real-time, performance-driven applications tailored to your business needs. Using modern Node.js frameworks and best practices, we create custom web and app solutions that enhance efficiency, support scalability, and drive measurable business growth."
+                li="Skilled Node.js Development Specialists"
+                li1="Secure, Scalable & High-Performance Solutions"
+                li2="Custom Web & Application Development"
+                li3=" Business-Focused & Strategic Execution"
                 btnName="Talk With Expert"
                 btnLink="/contact-us"
                 openModal={openModal}
@@ -160,14 +162,7 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </div>
-        <AboutSection
-          title="Node.Js development Company"
-          heading="Top Node.js Development Company in Jaipur, India"
-          description1="Comfygen is a top Node.js development company in Jaipur, India, offering custom mobile app and web development solutions. Our skilled Node.js developers specialize in building high-performance, scalable applications, from server-side solutions to powerful APIs. Whether you need to create a new app or migrate your existing backend to Node.js, Comfygen provides efficient and feature-rich solutions tailored to your needs. Trust us to deliver robust, scalable applications that drive business growth and enhance user experience."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+<Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -180,6 +175,17 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="Node.Js development Company"
+          heading="Top Node.js Development Company in Jaipur, India"
+          description1="Comfygen is a top Node.js development company in Jaipur, India, offering custom mobile app and web development solutions. Our skilled Node.js developers specialize in building high-performance, scalable applications, from server-side solutions to powerful APIs. Whether you need to create a new app or migrate your existing backend to Node.js, Comfygen provides efficient and feature-rich solutions tailored to your needs. Trust us to deliver robust, scalable applications that drive business growth and enhance user experience."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">

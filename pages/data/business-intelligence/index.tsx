@@ -6,6 +6,7 @@ import Header from "../../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 
 import dynamic from "next/dynamic";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -53,17 +54,6 @@ const Faq = dynamic(
 );
 
 
-
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq"
 
 
 
@@ -336,11 +326,11 @@ export default function ClinicalApp(props: any) {
       <Head>
         {/* Primary Meta Tags */}
         <title>
-          Business Intelligence and Analytics Services | Comfygen Experts
+          Business Intelligence & Analytics Services | Data-Driven Insights – Comfygen
         </title>
         <meta
           name="description"
-          content="Turn business data into smart decisions with Comfygen’s BI and analytics services. From dashboards to forecasting, we help you move faster, with clarity."
+          content="Comfygen provides business intelligence and analytics services to turn raw data into actionable insights, analyze trends, optimize operations, and enable smarter, proactive business decisions."
         />
         <link
           rel="canonical"
@@ -404,8 +394,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[120px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Business Intelligence and Business Analytics Services"
-            ptag="Business Intelligence and Business Analytics services are the backbone of business. They turn raw data into real-time, actionable insights, helping organizations to not only understand what has happened but also identify the reasons behind it and determine the best course of action. By analyzing patterns, market trends, and performance metrics, these services support smarter decision-making, enhance operational efficiency, and future planning. They empower businesses to be proactive rather than reactive, ensuring continuous improvement and long-term success in an increasingly data-driven world."
+            heading="Business Intelligence & Business Analytics Services"
+            ptag="Business Intelligence (BI) and Business Analytics services transform raw data into actionable insights, enabling organizations to understand past performance, uncover underlying trends, and make informed decisions. By analyzing patterns, market trends, and performance metrics, these services drive smarter decision-making, enhance operational efficiency, and support future planning. With BI and analytics, businesses can move from reactive responses to proactive strategies, ensuring continuous improvement and long-term success in a data-driven world."
+            li='Real-Time Data Insights for Smarter Decisions'
+            li1='Performance Metrics & Trend Analysis'
+            li2='Operational Efficiency & Process Optimization'
+            l13='Data-Driven Future Planning & Strategy'
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -415,23 +409,7 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/business-intelligence/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Your Business Needs BI & Analytics Services"
-          description1="Data is not a problem. The Problem is not arranged perfectly. Metrics are not aligned, reports are slow, and decisions are taken on the basis of this. BI and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Analytics services</a> fix this problem. They gather all the data and show you what’s going on, and help you act in real time—not after the damage is done."
-          description2="With the help Business intelligence service, you are not dependent on spreadsheets or guessing, you will get clear, actionable insights that help to improve performance in all sectors like:- Marketing, sales, finance and etc."
-          description3="And when you work with Comfygen, you’re not just buying dashboards. You will get a business intelligence expert team that builds a dashboard according to your goals, your data, and the way your business actually runs."
-          imageSrc="https://www.comfygen.com/comfygen-images/business-intelligence/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Automates Subscription & Daily Delivery Scheduling",
-            "Increases Customer Convenience & Retention",
-            "Enhances Inventory & Route Management",
-            "Offers Real-Time Order Tracking & Notifications",
-            "Supports Digital Payments & Invoice Generation",
-          ]}
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -452,6 +430,26 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Why Your Business Needs BI & Analytics Services"
+          description1="Data is not a problem. The Problem is not arranged perfectly. Metrics are not aligned, reports are slow, and decisions are taken on the basis of this. BI and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Analytics services</a> fix this problem. They gather all the data and show you what’s going on, and help you act in real time—not after the damage is done."
+          description2="With the help Business intelligence service, you are not dependent on spreadsheets or guessing, you will get clear, actionable insights that help to improve performance in all sectors like:- Marketing, sales, finance and etc."
+          description3="And when you work with Comfygen, you’re not just buying dashboards. You will get a business intelligence expert team that builds a dashboard according to your goals, your data, and the way your business actually runs."
+          imageSrc="https://www.comfygen.com/comfygen-images/business-intelligence/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[
+            "Automates Subscription & Daily Delivery Scheduling",
+            "Increases Customer Convenience & Retention",
+            "Enhances Inventory & Route Management",
+            "Offers Real-Time Order Tracking & Notifications",
+            "Supports Digital Payments & Invoice Generation",
+          ]}
+        />
+
+
 
         {/* <ContactFromCenter /> */}
         <ConsultancyApproach

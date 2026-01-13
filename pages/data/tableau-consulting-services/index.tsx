@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -51,16 +52,6 @@ const Faq = dynamic(
 );
 
 
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
-// import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const FutureDriven2 = [
   {
@@ -173,10 +164,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Tableau Consulting Services | Comfygen Data Experts</title>
+        <title>Tableau Consulting Services | Dashboard Development & Analytics – Comfygen</title>
         <meta
           name="description"
-          content="Comfygen delivers Tableau consulting services from custom dashboards and data integration to reporting and analytics. Build clarity, speed, and smarter decisions into your data."
+          content=" Comfygen provides comprehensive Tableau consulting services, including custom dashboards, data integration, reporting, real-time KPIs, and analytics solutions to drive smarter business decisions."
         />
 
         <link
@@ -469,11 +460,11 @@ export default function Mobile(props: any) {
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages
-          heading="Comprehensive Tableau Consulting Services for Smarter Analytics"
-          ptag="Comfygen offers end-to-end tableau consulting services to help businesses utilise the full power of data Services. Our certified Tableau experts specialise in custom Tableau dashboard development, data integration, Tableau reporting and analytics, server setup, and performance optimisation. Tableau dashboards improve business decisions by ensuring every aspect of your Tableau solution is built for clarity and better decision making. From simplifying complex datasets to enabling real-time reporting and visualisation, we configure Tableau to serve your unique business needs and deliver meaningful insights from data."
+          heading="Tableau Consulting Service Provider"
+          ptag="Comfygen provides end-to-end Tableau consulting services to help businesses unlock the full potential of their data. Our certified Tableau experts specialize in custom dashboard development, data integration, reporting and analytics, server setup, and performance optimization. By creating interactive, real-time dashboards, we simplify complex datasets and deliver actionable insights that empower smarter, faster business decisions."
           li="Tailored Dashboards That Drive Action"
           li1="Interactive Visuals That Simplify Data"
-          li2="Real-Time KPIs At a Glance"
+          li2="Real-Time KPIs & Analytics at a Glance"
           li3="Faster, Smarter Decision-Making"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -483,17 +474,8 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/tableau-consulting-services/hero2.webp"
         />
-        <AboutSection
-          title=""
-          heading="Hire Tableau Experts to Transform Raw Data into Strategic Insights"
-          description1="Tableau is a powerful platform, but to fully utilise its potential, you need more than a software installation. At Comfygen, our tableau consulting services are designed to help businesses turn raw, scattered data into meaningful, real-time insights that fuel <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' >smarter decisions</a> and measurable results."
-          description2="Whether you’re struggling with disconnected data sources, manual reporting processes, or a lack of visibility into key metrics, our Tableau experts are here to help. We specialise in designing intuitive, industry-specific dashboards, integrating real-time data streams, and facilitating seamless data exploration and analysis"
-          description3="With <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/'>Comfygen</a>, Tableau becomes more than just a data visualisation tool; it becomes a catalyst for smarter business decisions. We turn fragmented data into unified, interactive dashboards that deliver real-time data insights you can act on. Our goal is to help you cut through the noise, make data-backed decisions, and achieve measurable business success."
-          imageSrc="https://www.comfygen.com/comfygen-images/tableau-consulting-services/about1.webp"
-          link="/about-us"
-          linkText="Talk to our expert"
-        />
-        {/* <ContactFromCenter /> */}
+
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -507,6 +489,19 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title=""
+          heading="Hire Tableau Experts to Transform Raw Data into Strategic Insights"
+          description1="Tableau is a powerful platform, but to fully utilise its potential, you need more than a software installation. At Comfygen, our tableau consulting services are designed to help businesses turn raw, scattered data into meaningful, real-time insights that fuel <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' >smarter decisions</a> and measurable results."
+          description2="Whether you’re struggling with disconnected data sources, manual reporting processes, or a lack of visibility into key metrics, our Tableau experts are here to help. We specialise in designing intuitive, industry-specific dashboards, integrating real-time data streams, and facilitating seamless data exploration and analysis"
+          description3="With <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/'>Comfygen</a>, Tableau becomes more than just a data visualisation tool; it becomes a catalyst for smarter business decisions. We turn fragmented data into unified, interactive dashboards that deliver real-time data insights you can act on. Our goal is to help you cut through the noise, make data-backed decisions, and achieve measurable business success."
+          imageSrc="https://www.comfygen.com/comfygen-images/tableau-consulting-services/about1.webp"
+          link="/about-us"
+          linkText="Talk to our expert"
+        />
+        {/* <ContactFromCenter /> */}
+
+
 
 
         <IndustriesServe

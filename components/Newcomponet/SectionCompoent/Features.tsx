@@ -99,7 +99,6 @@ const Features = ({ featuresData, grid, heading, description }) => {
                         width={640}
                         height={360}
                         className="rounded-md w-full h-auto"
-                        priority
                       />
                     </div>
                   )}
@@ -125,7 +124,6 @@ const Features = ({ featuresData, grid, heading, description }) => {
                   width={640}
                   height={360}
                   className="rounded-lg border border-gray-200"
-                  priority
                 />
               </div>
             )}

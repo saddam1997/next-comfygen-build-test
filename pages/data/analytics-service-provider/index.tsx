@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -57,17 +58,6 @@ const Faq = dynamic(
 );
 
 
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
-// import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const FutureDriven2 = [
   {
@@ -223,14 +213,14 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-        <title>Best Data Analytics Service Company</title>
+        <title>Enterprise Data Analytics Services | BI, AI & Cloud Solutions – Comfygen</title>
         <meta
           property="og:title"
           content="Best Data Analytics Service Company"
         />
         <meta
           name="description"
-          content="Comfygen Technologies, the best data analytics company, delivers end-to-end data analytics services including BI dashboards, data warehousing, AI analytics & consulting to boost data-driven business growth."
+          content="Comfygen provides end-to-end enterprise data analytics services, including BI dashboards, AI-driven analytics, data management, and cloud solutions to transform data into actionable business insights."
         />
         <meta
           name="og:description"
@@ -548,13 +538,14 @@ export default function Mobile(props) {
       </LazyLoad>
       <div className="">
         <HeroSectionForAllPages
-          heading="Enterprises Data Analytics Services Provider"
+          heading="Enterprise Data Analytics Service Provider"
           ptag="Next-Gen AI Solutions for Next-Level Success."
-          ptag1="At Comfygen, we help businesses transform raw data into actionable business intelligence through our comprehensive end-to-end data analytics services. As a trusted data analytics service company, we provide a full spectrum of offerings, including data management, warehousing, data governance, data quality management, BI dashboard development, AI-driven analytics, and more. We leverage tools like Power BI, Tableau, and Python, as well as cloud-native platforms such as Snowflake and BigQuery, to extract meaningful insights from your data. Our experts analyze structured and unstructured datasets to help you uncover opportunities, improve performance, and drive business growth. "
-          li="100% Business Growth"
-          li1="Business Loop Pool Finding & Handle"
-          li2="Actionable Insights Finding"
-          li3="Attractive & Easy dashbord"
+          ptag1="Comfygen helps businesses transform raw data into actionable insights through end-to-end data analytics services. As a trusted data analytics service provider, we offer data management, warehousing, governance, quality management, BI dashboard development, and AI-driven analytics. Using tools like Power BI, Tableau, Python, and cloud platforms such as Snowflake and BigQuery, we analyze structured and unstructured data to uncover opportunities, improve performance, and drive business growth."
+          li="Actionable Insights for Better Decision-Making"
+          li1="Advanced BI Dashboard Development"
+          li2="Data Governance, Management & Quality Solutions"
+          li3="AI-Driven Analytics & Predictive Modeling"
+          li4='Expert Guidance for Business Growth'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -563,17 +554,7 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/analytics/analytics-hero.webp"
         />
-        <AboutSection
-          title=""
-          heading="Why Hire Data Analytics Expert "
-          description1="In the dynamic and complex world of business, a robust data infrastructure is crucial for helping companies convert raw data into valuable insights. Without skilled engineers to manage data storage, integration, and security, businesses may miss valuable opportunities inherent within their data."
-          description2="Our data analytics experts, with their deep expertise, build scalable, secure, and efficient data environments tailored to your unique needs. From handling complex data migrations to designing seamless integration pipelines, they ensure that your analytics foundation supports rapid and reliable decision-making."
-          description3="With data becoming the driving force behind innovation and growth, now is the time to hire data analytics expert who can help you harness the power of your data, reduce costs, and accelerate your path to building future-ready data ecosystems "
-          imageSrc="https://www.comfygen.com/comfygen-images/analytics/analytics-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+<Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -587,6 +568,21 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+
+        <AboutSection
+          title=""
+          heading="Why Hire Data Analytics Expert "
+          description1="In the dynamic and complex world of business, a robust data infrastructure is crucial for helping companies convert raw data into valuable insights. Without skilled engineers to manage data storage, integration, and security, businesses may miss valuable opportunities inherent within their data."
+          description2="Our data analytics experts, with their deep expertise, build scalable, secure, and efficient data environments tailored to your unique needs. From handling complex data migrations to designing seamless integration pipelines, they ensure that your analytics foundation supports rapid and reliable decision-making."
+          description3="With data becoming the driving force behind innovation and growth, now is the time to hire data analytics expert who can help you harness the power of your data, reduce costs, and accelerate your path to building future-ready data ecosystems "
+          imageSrc="https://www.comfygen.com/comfygen-images/analytics/analytics-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+
 
 
 

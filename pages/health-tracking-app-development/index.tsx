@@ -539,10 +539,10 @@ export default function ClinicalApp(props: any) {
 
         <HeroSectionForAllPages
           heading="Best Health Tracking App Development Company"
-          ptag="Comfygen is a top-rated health tracking app development company offering innovative and custom-built mobile health solutions for fitness brands, wellness startups, and healthcare organizations. Our expert health tracking app developers specialize in building feature-rich apps that track vital signs, physical activity, sleep, nutrition, and more—empowering users to manage their health in real time. From wearable integration to secure data storage and HIPAA compliance, we deliver scalable health tracking app development services tailored to your goals."
-          li="Empowering Digital Health with Smart Tracking Solutions"
-          li1="Transforming Wellness with Custom Health Apps"
-          li2="10+ Years of Expertise in mHealth App Development"
+          ptag="An experienced Health Tracking App Development Company focused on building intelligent, data-driven wellness applications. Comfygen Technologies combines AI, IoT, and wearable integrations to create advanced health tracking apps that monitor vital signs, fitness metrics, and lifestyle patterns. We ensure high performance, data privacy, and future-ready scalability to support long-term digital health growth."
+          li="AI-Powered Health Insights"
+          li1="Wearable & IoT Device Integration"
+          li2="Real-Time Health & Fitness Tracking"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -552,22 +552,8 @@ export default function ClinicalApp(props: any) {
           bgImage="https://www.comfygen.com/comfygen-images/health-tracking-app-development/hero1.webp"
         />
 
-        <AboutSection
-          title=""
-          heading="Why Should You Invest in Health Tracking App Development?"
-          description1="A health tracking app helps users monitor physical activity, nutrition, heart rate, sleep, and other vital signs in real time—all from a single platform. These apps are increasingly popular as people prioritize preventive care and digital health tools. Whether you're a fitness startup, wellness brand, or healthcare provider, investing in health tracking app development opens doors to better user engagement, retention, and ROI."
-          description2="With growing demand and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/wearable-health-technology-integration/' >wearable technology integration</a>, now is the right time to launch your custom health app and lead the wellness revolution."
-          points={[
-            "Promote proactive and preventive healthcare",
-            "Offer real-time health insights and goal tracking",
-            "Integrate with wearables like Fitbit, Apple Watch, and Google Fit",
-            "Build user loyalty with personalized fitness plans",
-            "Capitalize on the $150B+ digital health tech market",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/health-tracking-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones/>
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -587,6 +573,24 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Why Should You Invest in Health Tracking App Development?"
+          description1="A health tracking app helps users monitor physical activity, nutrition, heart rate, sleep, and other vital signs in real time—all from a single platform. These apps are increasingly popular as people prioritize preventive care and digital health tools. Whether you're a fitness startup, wellness brand, or healthcare provider, investing in health tracking app development opens doors to better user engagement, retention, and ROI."
+          description2="With growing demand and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/wearable-health-technology-integration/' >wearable technology integration</a>, now is the right time to launch your custom health app and lead the wellness revolution."
+          points={[
+            "Promote proactive and preventive healthcare",
+            "Offer real-time health insights and goal tracking",
+            "Integrate with wearables like Fitbit, Apple Watch, and Google Fit",
+            "Build user loyalty with personalized fitness plans",
+            "Capitalize on the $150B+ digital health tech market",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/health-tracking-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

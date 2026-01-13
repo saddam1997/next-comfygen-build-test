@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/altcoin.json";
 import Header from '../../components/Newcomponet/layout/Header'
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const NewSection = dynamic(
@@ -166,12 +167,12 @@ export default function Altcoin(props: any) {
     <>
       <Head>
         <title>
-          Altcoin Creation | Altcoin Development Services | Altcoin Development
-          Company
+          Altcoin Creation & Development Services | Comfygen
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Altcoin Development Company in India offering custom cryptocurrency and token development services. From altcoin creation to exchange integration, we deliver secure, scalable blockchain solutions tailored for startups and enterprises worldwide.."
+          content="Comfygen is a top altcoin development company, offering custom cryptocurrency and token development, altcoin creation, and exchange integration. We deliver secure, scalable blockchain development solutions."
         />
         <link
           rel="canonical"
@@ -239,7 +240,8 @@ export default function Altcoin(props: any) {
       </div>
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Best Altcoin Development Company"
+          heading="Best Altcoin Development Service"
+          subhead='Looking for an Altcoin development company?'
           ptag="Our altcoin creation services are designed to enhance the value and trading efficiency of your virtual currency. If you're passionate about cryptocurrencies, we specialize in integrating advanced blockchain technologies with robust security measures to provide a seamless and secure trading experience."
           li="Custom Altcoin Creation Solutions"
           li1="Enhanced Trading Efficiency"
@@ -253,17 +255,7 @@ export default function Altcoin(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/best-altcoin-development-company-hero-img.webp"
         />
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title="Altcoin development Company"
-          heading="Blockchain Networks we support"
-          description1="As one of the leading altcoin development companies with extensive experience in blockchain technology, Comfygen has built an unmatched reputation in offering independent altcoin development services for every business, from start-ups to entrepreneurs. By using cutting-edge technology, we create advanced crypto coins and altcoins that keep you ahead of the competition.Providing unique digital currencies to your business will add value to your business due to our understanding of your business requirements. We are a full-service blockchain development company with expertise in new technologies."
-          description2="Our Altcoin Development Services can help you create a cryptocurrency that you can trade with your users as a utility or security token. Hire Altcoin developers for the best services for your business."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -280,6 +272,19 @@ export default function Altcoin(props: any) {
             </div>
           </div>
         </section>
+
+
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <AboutSection
+          title="Altcoin development Company"
+          heading="Blockchain Networks we support"
+          description1="As one of the leading altcoin development companies with extensive experience in blockchain technology, Comfygen has built an unmatched reputation in offering independent altcoin development services for every business, from start-ups to entrepreneurs. By using cutting-edge technology, we create advanced crypto coins and altcoins that keep you ahead of the competition.Providing unique digital currencies to your business will add value to your business due to our understanding of your business requirements. We are a full-service blockchain development company with expertise in new technologies."
+          description2="Our Altcoin Development Services can help you create a cryptocurrency that you can trade with your users as a utility or security token. Hire Altcoin developers for the best services for your business."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
 
 

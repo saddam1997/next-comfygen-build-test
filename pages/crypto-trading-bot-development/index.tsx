@@ -127,6 +127,7 @@ import {
   IconShieldCheck,
   IconArrowsExchange2,
 } from "@tabler/icons-react";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -489,10 +490,11 @@ export default function Ecommerce(props: any) {
       <Head>
         <title>
           AI-Based Crypto Trading Bot Development Company | Comfygen
+
         </title>
         <meta
           name="description"
-          content="Comfygen’s AI-based crypto trading bots development solution automates trades, analyzes real-time market data, manages risks, and trades Bitcoin, Ethereum, and altcoins across multiple exchanges efficiently."
+          content="Comfygen develops crypto trading bots with real-time market analysis, predictive algorithms, multi-exchange support, and advanced risk management to maximize trading efficiency and profitability."
         />
         <link
           rel="canonical"
@@ -602,9 +604,9 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden xl:pt-16">
         <HeroSectionForAllPages
-          heading="AI-Based Crypto Trading Bot Development Company"
-          ptag="Comfygen specializes in developing next-gen AI-based crypto trading bots that give trading efficiency, accuracy, and profitability. In today’s volatile cryptocurrency market, using an AI-powered crypto trading bot is key to staying ahead. Our AI-based crypto trading bot development service takes advantage of machine learning algorithms, predictive analytics, and real-time market data to execute trades with precision, minimizing risks and maximizing returns. Whether you’re a startup crypto exchange, a professional trader, or an enterprise investor, our custom AI crypto trading bot development solutions are built to adapt, scale, and deliver a competitive edge."
-          ptag1=""
+          heading="Crypto Trading Bot Development Company"
+          ptag="Comfygen specializes in AI-powered crypto trading bot development, delivering precision, efficiency, and profitability in volatile cryptocurrency markets. Our custom trading bot development solutions leverage machine learning, predictive analytics, and real-time market data to execute trades accurately, minimize risks, and maximize returns."
+          ptag1="Whether you are a startup crypto exchange, professional trader, or enterprise investor, our AI trading bots are designed to scale, adapt, and provide a competitive edge."
           li="Real-Time Market Data Analysis & Prediction"
           li1="Advanced Risk Management & Security Protocols"
           li2="Multi-Currency & Multi-Exchange Support"
@@ -617,8 +619,24 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-hero1.webp"
         />
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
+        <Milestones/>
+        
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Crypto Trading Bot Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we offer custom crypto trading bot development services designed to enhance trading efficiency, minimize risks, and maximize profits. Our AI-powered crypto trading bot development solutions cater to individual traders, crypto startups, and exchanges, enabling automated high-frequency trading.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
         <AboutSection
           title=""
           heading="How Our Developed AI-Based Crypto Trading Bots Can Benefit Your Business?"
@@ -637,21 +655,7 @@ export default function Ecommerce(props: any) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Crypto Trading Bot Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we offer custom crypto trading bot development services designed to enhance trading efficiency, minimize risks, and maximize profits. Our AI-powered crypto trading bot development solutions cater to individual traders, crypto startups, and exchanges, enabling automated high-frequency trading.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <SolutionSec
           heading="Cryptocurrency Trading Bot Development Solutions"

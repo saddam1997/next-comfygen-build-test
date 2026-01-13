@@ -6,6 +6,7 @@ import JSON_DATA from "./ecommerce.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -58,26 +59,6 @@ const Faq = dynamic(
 );
 
 
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
-// const ContactFromCenter = dynamic(
-//   () => import("../components/ContactFromCenter"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
 
 const Process = [
   {
@@ -297,10 +278,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Top Data Services Company | AI, BI & Data Solutions</title>
+        <title>Data Services Company | Analytics, AI/ML & Big Data Solutions – Comfygen</title>
         <meta
           name="description"
-          content="Comfygen Technologies is best data services company that offers custom data analytics, AI/ML, BI dashboards, and big data solutions for startups and enterprises. Hire expert data engineers to turn your raw data into actionable insights."
+          content="Comfygen provides comprehensive data services including analytics, AI/ML integration, big data engineering, and real-time dashboards to deliver secure, scalable, and business-tailored solutions."
         />
         <meta
           name="keywords"
@@ -353,11 +334,11 @@ export default function ClinicalApp(props: any) {
       </LazyLoad>
       <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
-          heading="Comprehensive Data Services Tailored to Your Business Needs"
-          ptag="Unlock the true value of your business data with Comfygen Technologies. We are a trusted data services company offering end-to-end solutions in data analytics, engineering, visualization, AI/ML, and big data. Whether you’re a startup, enterprise, or government body, we deliver future-ready data solutions tailored to your unique needs"
+          heading="Comprehensive Data Services According to Your Business"
+          ptag="Unlock the full potential of your business data with Comfygen Technologies. As a trusted data services company, we provide end-to-end solutions in data analytics, engineering, visualization, AI/ML, and big data. Whether you are a startup, enterprise, or government organization, we deliver secure, scalable, and future-ready data solutions customized to your needs."
           li="Custom Data Analytics & Engineering Solutions"
-          li1="Expertise in AI & Machine Learning Integration"
-          li2="Secure, Scalable, and Cloud-Based Data Infrastructure"
+          li1="AI & Machine Learning Integration"
+          li2="Secure, Scalable, Cloud-Based Data Infrastructure"
           li3="Real-Time Dashboards & Business Intelligence Reporting"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -367,6 +348,20 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/data/data-hero.webp"
         />
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Complete Suite of Data Services Provides
+              </h2>
+              <p className="text-base text-center font-normal">We offer a full spectrum of data services tailored to help businesses turn raw data into measurable business outcomes. From data analytics and engineering to AI/ML and big data solutions, we build future-ready systems for growth, innovation, and operational intelligence.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title=""
@@ -381,18 +376,7 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Complete Suite of Data Services Provides
-              </h2>
-              <p className="text-base text-center font-normal">We offer a full spectrum of data services tailored to help businesses turn raw data into measurable business outcomes. From data analytics and engineering to AI/ML and big data solutions, we build future-ready systems for growth, innovation, and operational intelligence.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -453,7 +437,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Data Services Process</h2>
               <p className="text-base font-normal mt-2">
-               We follow a structured, transparent, and result-driven approach to deliver intelligent data solutions. From planning to deployment, every step is designed to align with your business goals and provide measurable outcomes.
+                We follow a structured, transparent, and result-driven approach to deliver intelligent data solutions. From planning to deployment, every step is designed to align with your business goals and provide measurable outcomes.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

@@ -14,6 +14,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -407,11 +408,12 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Islamic Banking App Development Company
+         Custom Islamic Banking App Development Company
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Islamic banking app development company offering Shariah-compliant mobile and web banking solutions. Develop custom Islamic Banking apps with Murabaha, Zakat, Takaful, and halal finance features."
+          content="Build secure and Shariah-compliant Islamic banking apps with ethical, interest-free financial models, advanced security, and scalable digital banking solutions."
         />
         <meta
           name="keywords"
@@ -537,12 +539,11 @@ export default function Mobile(props) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Islamic Banking App Development"
-          ptag="Build a Shariah-compliant digital banking app with Comfygen Technologies, a trusted Islamic banking app development company specializing in interest-free and ethical finance solutions. From Islamic fintech startups to established banks, we deliver secure, customized Islamic banking app development services aligned with global Shariah standards."
+          heading="Islamic Banking App Development Company"
+          ptag="As a trusted Islamic banking app development partner, Comfygen Technologies designs and develops compliant digital banking platforms for Islamic financial institutions. Our apps support ethical banking, transparent transactions, and interest-free financial models, ensuring alignment with Shariah guidelines and modern digital banking standards."
           li="Shariah-Compliant Finance & Investment Modules"
           li1="Secure & Scalable Digital Banking Architecture"
           li2="1Guided by Islamic Finance Experts & Advisors"
-          li3="Custom Features for Zakat, Takaful, Murabaha & More"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -551,16 +552,7 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-hero.webp"
         />
-        <AboutSection
-          title=""
-          heading="Top Islamic Banking App Development Company Delivering Shariah-Compliant Fintech Solutions"
-          description1="Comfygen is a leading Islamic banking app development company, offering innovative and scalable digital banking solutions aligned with Islamic finance principles. We specialize in building secure, interest-free, and ethically driven banking apps for Islamic financial institutions, fintech startups, and enterprises across the globe."
-          description2="Our solutions include Shariah-compliant transaction modules, halal investment management, zakat calculators, Takaful integration, and Murabaha financing features, ensuring your platform meets both modern user needs and religious compliance. With expertise in financial technologies and Islamic jurisprudence, we deliver user-centric, high-performing apps tailored for global Muslim communities."
-          description3="By combining advanced technologies with a deep understanding of Islamic banking rules, Comfygen helps institutions transform traditional banking into next-gen digital experiences rooted in trust and ethics. Choose us to build a future-ready Islamic banking solution that empowers users and promotes financial inclusion in the halal way."
-          imageSrc="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -573,6 +565,19 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Top Islamic Banking App Development Company Delivering Shariah-Compliant Fintech Solutions"
+          description1="Comfygen is a leading Islamic banking app development company, offering innovative and scalable digital banking solutions aligned with Islamic finance principles. We specialize in building secure, interest-free, and ethically driven banking apps for Islamic financial institutions, fintech startups, and enterprises across the globe."
+          description2="Our solutions include Shariah-compliant transaction modules, halal investment management, zakat calculators, Takaful integration, and Murabaha financing features, ensuring your platform meets both modern user needs and religious compliance. With expertise in financial technologies and Islamic jurisprudence, we deliver user-centric, high-performing apps tailored for global Muslim communities."
+          description3="By combining advanced technologies with a deep understanding of Islamic banking rules, Comfygen helps institutions transform traditional banking into next-gen digital experiences rooted in trust and ethics. Choose us to build a future-ready Islamic banking solution that empowers users and promotes financial inclusion in the halal way."
+          imageSrc="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
         <ConsultancyApproach
@@ -603,7 +608,7 @@ export default function Mobile(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Islamic Banking Mobile App Development Approach</h2>
               <p className="text-base font-normal mt-2">
-               At Comfygen, we follow a structured and Shariah-compliant mobile app development process to build ethical, secure, and scalable Islamic banking solutions. From initial consultation to post-launch support, our approach ensures every product meets Islamic finance principles and modern digital banking standards.
+                At Comfygen, we follow a structured and Shariah-compliant mobile app development process to build ethical, secure, and scalable Islamic banking solutions. From initial consultation to post-launch support, our approach ensures every product meets Islamic finance principles and modern digital banking standards.
 
               </p>
             </div>

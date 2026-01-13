@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -61,18 +62,6 @@ const Faq = dynamic(
 // );
 
 
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq";
-// import Features from "./components/NewFeatures";
 
 
 const Process = [
@@ -160,11 +149,12 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Hire Data Scientist and Data Science developer from Comfygen
+        Hire Data Scientist | AI, ML & Data Engineering Experts – Comfygen
+
         </title>
         <meta
           name="description"
-          content="Hire data scientist and data science developer for your next project. Comfygen helps you develop a future-ready, data-driven team. Hire now!"
+          content="Hire expert data scientists, ML engineers, AI developers, and Python developers from Comfygen to unlock actionable insights, build predictive models, and drive smarter business decisions across industries."
         />
         <meta
           name="keywords"
@@ -486,10 +476,10 @@ export default function Mobile(props: any) {
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages
-          heading="Hire Data Scientist"
-          ptag="At Comfygen, we help you hire expert data scientists, machine learning engineers, AI developers, data engineers, and Python developers to unlock insights from complex data and drive more intelligent decisions. Whether you're looking for freelance or remote professionals, our talent pool brings deep expertise in statistical modelling, data mining, feature engineering, and exploratory data analysis. From cleaning and structuring raw data to building ML models and generating actionable insights, we provide technically skilled professionals who turn data into a powerful business asset across various industries, including healthcare, fintech, retail, SaaS, and more."
+          heading="Hire Expert Data Scientists"
+          ptag="At Comfygen, we help businesses hire skilled data scientists, machine learning engineers, AI developers, data engineers, and Python developers to extract insights from complex data and drive smarter decisions. Our talent pool offers expertise in statistical modeling, data mining, feature engineering, and exploratory data analysis. From data cleaning and structuring to building ML models and delivering actionable insights, our professionals turn data into a powerful business asset across industries like healthcare, fintech, retail, SaaS, and more."
           li="Flexible Contracts & Transparent Pricing"
-          li1="Adherence to data security practices"
+          li1="Adherence to Data Security Practices"
           li2="Time Zone & Language Alignment"
           li3="Seamless Remote Hiring Models"
           btnName="Talk With Expert"
@@ -500,18 +490,8 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/hire-data-scientist/hero.webp"
         />
-        <AboutSection
-          title=""
-          heading="Hire Data Scientist to Unlock the Potential of Your Business Data"
-          description1="Want to turn complex data into smart business moves? The first step is to hire data scientist."
-          description2="Whether you're looking to hire data scientist, machine learning engineer, or <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/python-development' >Python developer</a> for data science, the goal remains the same: uncover insights, automate workflows, and stay ahead of the curve. At Comfygen, we connect you with domain-focused professionals who bring technical skills and industry awareness - whether in fintech, healthcare, E-commerce, and more."
-          description3="From full-time to freelance, on-site or remote, our global hiring network ensures you can access affordable data science developers without compromising on quality. Whether you need to build intelligent systems or optimise decision-making through analytics, we make hiring seamless, strategic, and scalable. "
-          imageSrc="https://www.comfygen.com/comfygen-images/hire-data-scientist/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
 
+<Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -524,6 +504,20 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Hire Data Scientist to Unlock the Potential of Your Business Data"
+          description1="Want to turn complex data into smart business moves? The first step is to hire data scientist."
+          description2="Whether you're looking to hire data scientist, machine learning engineer, or <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/python-development' >Python developer</a> for data science, the goal remains the same: uncover insights, automate workflows, and stay ahead of the curve. At Comfygen, we connect you with domain-focused professionals who bring technical skills and industry awareness - whether in fintech, healthcare, E-commerce, and more."
+          description3="From full-time to freelance, on-site or remote, our global hiring network ensures you can access affordable data science developers without compromising on quality. Whether you need to build intelligent systems or optimise decision-making through analytics, we make hiring seamless, strategic, and scalable. "
+          imageSrc="https://www.comfygen.com/comfygen-images/hire-data-scientist/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+
 
         <section className="py-8">
           <Portfolio

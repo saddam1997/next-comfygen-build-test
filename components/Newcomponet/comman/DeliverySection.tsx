@@ -218,9 +218,8 @@ const DeliverySection = ({
                                     height={740}
                                     width={1240}
                                     className="object-contain transition-transform duration-500 group-hover:scale-110"
-                                    priority={true}
                                     quality={75}
-                                    unoptimized
+                                   
                                 />
                             </div>
 

@@ -106,6 +106,7 @@ const CardGrid = dynamic(
 // import CryptoTradingList from "../Newcomponet/SectionCompoent/CryptoTradingSection";
 // import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
 import Faq from "../../components/Newcomponet/SectionCompoent/Faq";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const Processs = [
   {
@@ -325,11 +326,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Best P2P Crypto Exchange Development Company | Trusted by Innovators
+          P2P Crypto Exchange Development Company | Comfygen
+
         </title>
         <meta
           name="description"
-          content="Build a feature-rich, secure, and scalable P2P crypto exchange with Comfygen. Expert custom solutions, fast deployment, and 24/7 support. Start today!"
+          content="Comfygen provides secure, scalable P2P crypto exchange development services, including multi-currency trading, escrow systems, KYC/AML integration, and custom or white-label platforms for startups and enterprises."
         />
         <link
           rel="canonical"
@@ -438,14 +440,14 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="P2P Crypto Exchange Development Company"
-          ptag="Comfygen is a trusted P2P crypto exchange development company offering cutting-edge, decentralized solutions tailored to modern trading needs. Our experts empower startups, enterprises, and crypto businesses to launch robust platforms where users can trade cryptocurrencies directly, without intermediaries."
-          ptag1="As blockchain specialists, we design feature-rich P2P exchange platforms that ensure high liquidity, advanced security protocols, and a seamless user experience. Whether you need a custom-built solution or a white-label P2P exchange, we deliver end-to-end services, from development to deployment."
-          li="Custom P2P architecture built on scalable <a class='font-semibold underline' href='https://www.comfygen.com/blockchain-development'>blockchain</a> frameworks"
-          li1="Advanced escrow systems and dispute management"
-          li2="Support for multi-currency crypto trading"
-          li3="Real-time chat, multi-sig wallets, & KYC/AML integration"
-          li4="Rapid deployment with full technical support"
+          heading="P2P Crypto Exchange Development Service"
+          subhead='Looking for the best P2P crypto exchange development company?'
+          ptag="Comfygen is a leading P2P crypto exchange development company, delivering secure, decentralized platforms tailored for modern trading. We help startups, enterprises, and crypto businesses launch feature-rich exchanges where users can trade cryptocurrencies directly, without intermediaries."
+          ptag1="Our blockchain experts build scalable P2P architectures with high liquidity, advanced security, and seamless user experiences. Whether you need a custom solution or a white-label platform, we provide end-to-end development and deployment services."
+          li="Custom P2P Architecture on Scalable Blockchain Frameworks"
+          li1="Advanced Escrow Systems & Dispute Management"
+          li2="Multi-Currency Crypto Trading Support"
+          li3="Real-Time Chat, Multi-Sig Wallets & KYC/AML Integration"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -454,8 +456,20 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/image/hero-section-p2p-crypto-exchange-development.webp"
         />
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
+        <Milestones/>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Core P2P Crypto Exchange Development Services
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer a suite of advanced P2P crypto exchange development services tailored to meet the needs of modern businesses. From building secure architectures to deploying scalable solutions, we bring innovation to every layer of your exchange.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
         <AboutSection
           title="About Company"
           heading="How Custom P2P Crypto Exchange Development Can Accelerate Your Business Growth"
@@ -473,18 +487,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Core P2P Crypto Exchange Development Services
-              </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we offer a suite of advanced P2P crypto exchange development services tailored to meet the needs of modern businesses. From building secure architectures to deploying scalable solutions, we bring innovation to every layer of your exchange.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
 

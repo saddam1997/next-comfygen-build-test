@@ -6,6 +6,7 @@ import LazyLoad from "react-lazy-load";
 import Script from "next/script";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -59,17 +60,6 @@ const Faq = dynamic(
 );
 
 
-
-
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 
@@ -169,12 +159,12 @@ export default function Mobile(props) {
         <meta name="geo.region" content="AE" />
         <meta name="geo.region" content="DE" />
         <title>
-          Best Custom Generative AI software development company in India |
-          Service Provider
+          Generative AI Development Company | Custom AI Solutions India
+
         </title>
         <meta
           name="description"
-          content="Want to hire top Generative AI software development company in Jaipur, India. Comfygen offers end-to-end custom generative AI application development services for startups and enterprises. Your business growth is next-level."
+          content="Comfygen is a leading Generative AI development company in India, delivering custom AI models, automation tools, AI-powered applications, and scalable enterprise AI solutions to drive innovation and growth."
         />
         <meta
           name="keywords"
@@ -373,10 +363,13 @@ export default function Mobile(props) {
       </LazyLoad>
       <div className="">
         <HeroSectionForAllPages
-          heading="Top-Notch Generative AI Development Service Provider Company"
-          ptag="“Revolutionizing Innovation with Custom Generative AI Development Solutions!”"
-          ptag1="As a leading Generative AI software development company in Jaipur, India, Comfygen harnesses cutting-edge AI technologies to build Generative Artificial intelligence software solutions that drive business innovation. Our expertise in generative artificial intelligence enables us to develop custom Gen AI models, automation tools, and AI-powered applications tailored to your unique business needs."
-          ptag2="From Gen AI-driven content creation to predictive analytics and automation, we deliver scalable and future-ready custom generative AI application development solutions that enhance efficiency, boost creativity, and fuel business growth. Partner with us to unlock the full potential of AI in your enterprise business."
+          heading="Generative AI Development Company"
+          ptag="Comfygen is a leading Generative AI development company, delivering custom AI software development solutions that drive innovation. We specialize in building Gen AI models, automation tools, and AI-powered applications tailored to your business needs."
+          ptag1="From AI-driven content creation to predictive analytics and process automation, we provide scalable, future-ready generative AI development solutions that enhance efficiency, boost creativity, and fuel growth. Partner with us to unlock the full potential of AI in your enterprise."
+          li='Custom Generative AI Model Development'
+          li1='AI-Powered Automation & Applications'
+          li2='AI-Driven Content Creation & Predictive Analytics'
+          li3='Scalable, Enterprise-Ready AI Solutions'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -385,16 +378,8 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/image/ai-development-hero-section-image.webp"
         />
-        <AboutSection
-          title=""
-          heading="Best Generative AI Software Development Company in India"
-          description1="Comfygen is a top-notch <a class='text-blue-600' href='/ai-development'>Custom enterprise AI ML mobile app development company</a>  in India that transforms businesses with cutting-edge AI enterprise software development. Our team of gen AI software experts, data scientists, and software developers specializes in building custom AI-powered mobile applications, machine learning models, and automation solutions tailored to various industries' unique needs."
-          description2="With years of experience in artificial intelligence research and development, we leverage advanced AI models such as GPT-4, DALL·E, Stable Diffusion, and BERT to create intelligent automation systems, AI chatbots, AI-generated content solutions, and deep learning applications."
-          imageSrc="https://www.comfygen.com/image/best-ai-development-company.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -415,6 +400,19 @@ export default function Mobile(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Best Generative AI Software Development Company in India"
+          description1="Comfygen is a top-notch <a class='text-blue-600' href='/ai-development'>Custom enterprise AI ML mobile app development company</a>  in India that transforms businesses with cutting-edge AI enterprise software development. Our team of gen AI software experts, data scientists, and software developers specializes in building custom AI-powered mobile applications, machine learning models, and automation solutions tailored to various industries' unique needs."
+          description2="With years of experience in artificial intelligence research and development, we leverage advanced AI models such as GPT-4, DALL·E, Stable Diffusion, and BERT to create intelligent automation systems, AI chatbots, AI-generated content solutions, and deep learning applications."
+          imageSrc="https://www.comfygen.com/image/best-ai-development-company.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
+
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
@@ -480,8 +478,8 @@ export default function Mobile(props) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-          heading="Our Artificial Intelligence Success Stories"
-          description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+            heading="Our Artificial Intelligence Success Stories"
+            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
           />
         </section>
 

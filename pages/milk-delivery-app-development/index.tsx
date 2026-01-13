@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse w-full"></div>
@@ -418,10 +419,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Milk Delivery App Development Company</title>
+        <title>Milk Delivery App Development Company | Service Provider</title>
         <meta
           name="description"
-          content="Comfygen is a leading milk delivery app development company offering custom, white-label, and on-demand milk delivery app solutions for dairies & startups."
+          content="Comfygen is a top milk delivery app development company offering custom, white-label, and on-demand milk delivery app solutions with subscriptions, real-time tracking, and secure payments for dairies, startups, and enterprises."
         />
         <link
           rel="canonical"
@@ -538,12 +539,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Milk Delivery App Development Company"
-            ptag="Comfygen is a best milk delivery app development company, delivers top-notch milk delivery app development services, offering custom, white-label, and on-demand dairy delivery solutions. Our expert milk delivery app developers create feature-rich apps with subscription models, real-time tracking, and secure payments—perfect for dairies, milk distributors, and startups."
-            li="User-Friendly Milk Ordering App"
-            li1="Real-Time Tracking & Route Optimization"
-            li2="Smart Subscription & Inventory Management"
-            li3="Custom & White-label Milk Delivery App Solutions"
+            heading="Milk Delivery App Development Company for Dairies, Startups & Enterprises"
+            ptag="Comfygen is a top-notch milk delivery app development company helping dairies, startups, FMCG brands, and enterprises go digital. We design and develop custom milk delivery app solutions with subscription management, real-time delivery tracking, secure payments, and advanced admin control—built to scale your daily milk delivery business faster and smarter."
+            li="Seamless Milk Ordering & Subscription Management"
+            li1="Real-Time Delivery Tracking & Route Optimization"
+            li2="Secure Payments & Smart Inventory Control"
+            li3="Custom & White-Label Milk Delivery App Solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -553,6 +554,25 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/hero.webp"
           />
         </div>
+        <Milestones/>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Milk Delivery App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen provides top-notch milk delivery app development
+                services to dairy companies, milk distributors, and startups.
+                Real-time features enhance customer satisfaction with our
+                advanced milk delivery app development services.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Why Your Dairy Business Needs a Milk Delivery App"
@@ -576,24 +596,7 @@ export default function ClinicalApp(props: any) {
           cards={WhoCanStartCards}
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Milk Delivery App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen provides top-notch milk delivery app development
-                services to dairy companies, milk distributors, and startups.
-                Real-time features enhance customer satisfaction with our
-                advanced milk delivery app development services.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
         {/* <ContactFromCenter /> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

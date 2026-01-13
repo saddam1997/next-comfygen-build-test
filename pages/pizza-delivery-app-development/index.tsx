@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./pizza-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 // About Section
@@ -396,10 +397,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Pizza Delivery App Development Company</title>
+        <title>Top Pizza Delivery App Development Company</title>
         <meta
           name="description"
-          content="Comfygen is a trusted pizza delivery app development company specializing in custom pizza ordering apps with AI-powered recommendations and blockchain."
+          content="Comfygen is a top-rated pizza delivery app development company that builds custom AI pizza delivery apps with real-time tracking, secure payments, and smooth UI for restaurants and pizza startups."
         />
         <link
           rel="canonical"
@@ -522,11 +523,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Pizza Delivery App Development Company"
-            ptag="Comfygen is a trusted pizza delivery app development company delivering best pizza delivery apps for restaurants, pizzerias, and startups. Our on-demand pizza delivery development solutions include real-time order tracking, secure payments, and intuitive design—helping you boost customer satisfaction and scale your business seamlessly."
-            li="White-label & On-demand Solutions"
-            li1="Real-time Order Tracking & Analytics"
-            li2="iOS & Android App Development"
+            heading="Best Pizza Delivery App Development Company"
+            ptag="Comfygen is a trusted pizza delivery app development company helping restaurants and pizzerias launch fast, secure, and easy-to-use pizza ordering apps. We build custom on-demand pizza delivery solutions with real-time order tracking, secure payments, and smooth user experience to increase online orders and business growth."
+            li="Custom & White-Label Pizza Delivery Apps"
+            li1="Live Order Tracking & Analytics"
+            li2="Pizza Delivery App Development for iOS & Android"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -536,22 +537,7 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="The Rising Demand: Why Your Pizza Business Needs a Delivery App"
-          description1="The global online food delivery market is expected to surpass $500 billion by 2030, with pizza being one of the most-ordered food categories worldwide. As more customers rely on mobile-based ordering, having a pizza delivery app is no longer optional — it’s crucial to stay competitive and boost revenue."
-          description2="Whether you own a local pizzeria, manage a franchise chain, or run a cloud kitchen, a pizza delivery app can transform your business with automation, real-time tracking, secure payments, and personalized customer experiences."
-          description3="We help restaurants and startups digitally transform operations, improve delivery efficiency, and increase customer retention at Comfygen Technologies, a trusted pizza ordering app development company."
-          imageSrc="https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Streamlines Online Pizza Orders & Delivery Scheduling",
-            "Enhances Customer Convenience & Loyalty",
-            "Optimizes Delivery Routes & Inventory Management",
-            "Provides Real-Time Notifications, Order Tracking & Updates",
-          ]}
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -573,6 +559,25 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="The Rising Demand: Why Your Pizza Business Needs a Delivery App"
+          description1="The global online food delivery market is expected to surpass $500 billion by 2030, with pizza being one of the most-ordered food categories worldwide. As more customers rely on mobile-based ordering, having a pizza delivery app is no longer optional — it’s crucial to stay competitive and boost revenue."
+          description2="Whether you own a local pizzeria, manage a franchise chain, or run a cloud kitchen, a pizza delivery app can transform your business with automation, real-time tracking, secure payments, and personalized customer experiences."
+          description3="We help restaurants and startups digitally transform operations, improve delivery efficiency, and increase customer retention at Comfygen Technologies, a trusted pizza ordering app development company."
+          imageSrc="https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[
+            "Streamlines Online Pizza Orders & Delivery Scheduling",
+            "Enhances Customer Convenience & Loyalty",
+            "Optimizes Delivery Routes & Inventory Management",
+            "Provides Real-Time Notifications, Order Tracking & Updates",
+          ]}
+        />
+
+
         {/* <ContactFromCenter /> */}
 
         <WhoCanStart

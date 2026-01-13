@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ELearningApp.json";
+import JSON_DATA from "./PersonalFinance.json";
 
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -540,11 +541,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
           heading="Personal Finance App Development Company"
-          ptag="Build a smart and user-friendly personal finance app with Comfygen. We are a trusted personal finance app development company that helps businesses create apps for budgeting, expense tracking, and money management. Whether you're a startup or a financial company, we deliver secure, scalable, and custom personal finance apps that meet your goals."
-          li="Simple and Attractive UI/UX Design"
+          ptag="Build a smart and user-friendly personal finance app with Comfygen Technologies. We are a trusted personal finance app development company that helps startups and financial businesses create powerful solutions for budgeting, expense tracking, savings, and money management. Whether you are a fintech startup or an established financial company, we deliver secure, scalable, and custom personal finance applications designed to improve user engagement and financial control. Our apps are built with modern technologies to ensure smooth performance, strong security, and an intuitive user experience."
+          li="Simple and intuitive UI/UX design"
           li1="Secure Bank & Wallet Integrations"
-          li2="Real-Time Expense Tracking & Budgeting"
-          li3="Smart Reports with AI-Powered Insights"
+          li2="Real-time expense tracking and budgeting"
+          li3="Smart reports with AI-powered insights"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -553,23 +554,8 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/personal-finance-app-development/hero.webp"
         />
+        <Milestones />
 
-        <AboutSection
-          title="About Company"
-          heading="What is the Purpose of a Personal Finance App for Users?"
-          description1="A personal finance app helps users manage their money easily. It allows them to track daily spending, set a monthly budget, save money, and plan for future goals. Everything is available in one app on their phone."
-          description2="With helpful alerts and spending insights, users can avoid overspending, pay bills on time, and improve their financial habits. It works like a smart money manager that helps users stay in control of their finances anytime, anywhere."
-          points={[
-            "Track where money is spent every day",
-            "Create and manage a simple budget",
-            "Get alerts for bill payments",
-            "Set saving goals and follow progress",
-            "Keep all financial data safe and private",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/personal-finance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -591,6 +577,24 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+
+        <AboutSection
+          title="About Company"
+          heading="What is the Purpose of a Personal Finance App for Users?"
+          description1="A personal finance app helps users manage their money easily. It allows them to track daily spending, set a monthly budget, save money, and plan for future goals. Everything is available in one app on their phone."
+          description2="With helpful alerts and spending insights, users can avoid overspending, pay bills on time, and improve their financial habits. It works like a smart money manager that helps users stay in control of their finances anytime, anywhere."
+          points={[
+            "Track where money is spent every day",
+            "Create and manage a simple budget",
+            "Get alerts for bill payments",
+            "Set saving goals and follow progress",
+            "Keep all financial data safe and private",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/personal-finance-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

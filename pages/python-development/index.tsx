@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/python.json"
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -85,7 +86,7 @@ const Services = [
     decs: 'High-quality Django-based web development in Python includes scientific computation, statistical analysis, and data science capabilities.  '
   },
 ]
-export default function Altcoin(props:any) {
+export default function Altcoin(props: any) {
 
   let { initialData } = props;
   let { NewSections, Hire, myList, Frequently } = JSON_DATA
@@ -101,12 +102,12 @@ export default function Altcoin(props:any) {
   return (
     <>
       <Head>
-        <title>Python Development Company In Jaipur, India | Hire Python Developers</title>
+        <title>Python Development Company in India & USA | Hire Python Developers – Comfygen</title>
         <meta
           property="og:title"
           content="Python Development Company In Jaipur, India | Hire Python Developers"
         />
-        <meta name="description" content="Looking for a reliable Python Development Company In Jaipur, Rajsthan India? Comfygen team of expert Python developers can help you build custom web applications, AI solutions, and more. Contact us now." />
+        <meta name="description" content="Comfygen is a leading Python development company in India and the USA, delivering secure, scalable, and high-performance web and mobile applications with expert Python developers." />
         <link rel="canonical" href="https://www.comfygen.com/python-development" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
@@ -123,7 +124,7 @@ export default function Altcoin(props:any) {
         <meta name='language' content='en-us' />
       </Head>
 
-        <Header />
+      <Header />
 
       <div className='overflow-hidden lg:pt-[100px]'>
         <div className="">
@@ -131,11 +132,12 @@ export default function Altcoin(props:any) {
             <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/python-development-company-hero-img.webp')]">
               <HeroSectionForAllPages
                 heading='Python Development Company'
-                ptag="As a top-tier Python Development Company in India & the USA, Comfygen delivers next-level mobile and web applications. Our talented Python developers craft high-performing, robust, and flexible solutions tailored to client needs. With our expertise, you gain exceptional, top-notch web and app experiences that drive success."
-                li="High-Performing Apps & Webs"
-                li1="Expert Python Development Team"
-                li2="Robust, Flexible Solutions"
-                li3="Success-Oriented Results"
+                ptag="Comfygen is a trusted Python development company in India and the USA, delivering scalable, secure, and high-performance web and mobile applications. Our experienced Python developers build custom solutions using modern frameworks to meet diverse business requirements across industries."
+                ptag1='From startups to enterprises, we create robust and flexible Python-based applications that ensure smooth performance, seamless integration, and long-term scalability—helping your business achieve measurable growth.'
+                li="Custom Python Web & App Development"
+                li1="Skilled Python Developers for Hire"
+                li2="Secure, Scalable & Flexible Solutions"
+                li3="Business-Focused, Result-Driven Development"
                 btnName="Talk With Expert"
                 btnLink="/contact-us"
                 openModal={openModal}
@@ -146,16 +148,7 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </div>
-        <NewSection NewSection={NewSections} />
-        <AboutSection
-          title="We are Python Development Company"
-          heading="Best python web development company"
-          description1="We are one of the top Python development companies that deliver cutting-edge websites, mobile apps, and web apps using advanced Python frameworks, tools, and programming languages. We ensure error-free product development with innovative project management tools and collaborative tools. You will get seamless integration with APIs and other codes from our development team because we strictly follow international coding standards. Comfygen offers top-notch Python development services for next-generation mobile and web apps. Our solutions are highly scalable, customizable, and responsive due to the use of best-in-class libraries, frameworks, and technologies."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+        <Milestones />
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -167,6 +160,17 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </section>
+        {/* <NewSection NewSection={NewSections} /> */}
+        <AboutSection
+          title="We are Python Development Company"
+          heading="Best python web development company"
+          description1="We are one of the top Python development companies that deliver cutting-edge websites, mobile apps, and web apps using advanced Python frameworks, tools, and programming languages. We ensure error-free product development with innovative project management tools and collaborative tools. You will get seamless integration with APIs and other codes from our development team because we strictly follow international coding standards. Comfygen offers top-notch Python development services for next-generation mobile and web apps. Our solutions are highly scalable, customizable, and responsive due to the use of best-in-class libraries, frameworks, and technologies."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <InfoSection
           heading="Python App Development company"
           description1="With over a decade of experience delivering Python solutions, Comfygen has delivered everything from dynamic websites to sophisticated, avant-garde web apps. You can get your dream web or app development project done with Python, an open-source, clear, and powerful object-oriented programming language.By leveraging advanced Python development frameworks, programming languages, and front-end tools, Comfygen delivers high-quality websites, web apps, and mobile applications. We have developers who are proficient in Python web development frameworks such as Django. There are similar frameworks for Python web apps such as Flask, Zope, and Pyramid, among others."

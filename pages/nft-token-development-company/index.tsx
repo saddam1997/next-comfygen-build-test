@@ -67,6 +67,7 @@ const Faq = dynamic(
 
 
 import { BsFillStarFill } from "react-icons/bs";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const Processs = [
@@ -233,11 +234,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          NFT Token Development Company | NFT Token Development services
+           NFT Token Development Company | Marketplace, Smart Contracts & Cross-Chain – Comfygen
+
         </title>
         <meta
           name="description"
-          content="Looking for a reliable NFT Token Development Company? Comfygen provides end-to-end NFT token development services, including smart contract development, NFT marketplace creation, and asset tokenization for global businesses."
+          content="Comfygen is a leading NFT token development company delivering secure, scalable NFTs, smart contracts, NFT marketplaces, wallet integration, and cross-chain solutions on Ethereum, Polygon, Solana, and BSC."
         />
         <link
           rel="canonical"
@@ -328,8 +330,8 @@ export default function Ecommerce(props) {
 
         <HeroSectionForAllPages
           heading="NFT Token Development Company"
-          ptag="As a premier NFT Token Development Company, we specialize in building secure, scalable, and feature-rich non-fungible tokens (NFTs) that empower businesses, creators, and entrepreneurs worldwide. Whether you aim to tokenize digital art, virtual real estate, collectibles, or in-game assets, our customized NFT token development services provide the perfect solution. Comfygen leverages cutting-edge blockchain technologies to create unique, verifiable, and easily transferable NFT tokens. Our NFT development company in India and the USA delivers world-class solutions for the gaming, art, music, fashion, and real estate industries."
-          ptag1="We offer NFT token development services that focus on transparency, security, and seamless functionality. Our skilled blockchain developers craft NFT tokens that align with your business model and meet global standards. "
+          ptag="Comfygen is a leading NFT token development company, delivering secure, scalable, and feature-rich NFTs for businesses, creators, and entrepreneurs worldwide. We specialize in tokenizing digital art, virtual real estate, collectibles, in-game assets, and more. Using advanced blockchain technologies, our NFT solutions are unique, verifiable, and easily transferable."
+          ptag1="Our NFT development teams in India and the USA provide end-to-end services for gaming, art, music, fashion, and real estate industries, focusing on transparency, security, and seamless functionality."
           li="Custom NFT Token Development"
           li1="NFT Smart Contract Development"
           li2="NFT Marketplace Development"
@@ -343,24 +345,8 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/nft-token-development-company-hero-img.webp"
         />
-        <AboutSection
-          title="About Company"
-          heading="Kickstart Your NFT Token Development Project Today"
-          description1="Looking to launch your NFTs and enter the booming digital asset space? At Comfygen, we offer comprehensive NFT token development services that help businesses, creators, and entrepreneurs build and deploy custom NFTs across secure and scalable blockchain platforms."
-          description2="As a leading NFT token development company, we specialize in delivering tailored NFT token development solutions for various industries, including art, gaming, real estate, music, and more. Our team of skilled blockchain developers ensures that every NFT we create is unique, transparent, and fully secure, adhering to the latest industry standards."
-          points={[
-            "Custom NFT Token Development",
-            "Multi-Chain NFT Solutions (Ethereum, Polygon, Solana, BSC)",
-            "Secure and Transparent Smart Contracts",
-            "End-to-End NFT Development Services",
-            "Cross-Industry NFT Applications",
-            "Global Delivery (India, USA, Europe, UAE)",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
 
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -387,6 +373,28 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+
+        <AboutSection
+          title="About Company"
+          heading="Kickstart Your NFT Token Development Project Today"
+          description1="Looking to launch your NFTs and enter the booming digital asset space? At Comfygen, we offer comprehensive NFT token development services that help businesses, creators, and entrepreneurs build and deploy custom NFTs across secure and scalable blockchain platforms."
+          description2="As a leading NFT token development company, we specialize in delivering tailored NFT token development solutions for various industries, including art, gaming, real estate, music, and more. Our team of skilled blockchain developers ensures that every NFT we create is unique, transparent, and fully secure, adhering to the latest industry standards."
+          points={[
+            "Custom NFT Token Development",
+            "Multi-Chain NFT Solutions (Ethereum, Polygon, Solana, BSC)",
+            "Secure and Transparent Smart Contracts",
+            "End-to-End NFT Development Services",
+            "Cross-Industry NFT Applications",
+            "Global Delivery (India, USA, Europe, UAE)",
+          ]}
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
 
 

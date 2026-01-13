@@ -6,6 +6,7 @@ import JSON_DATA from "./json/upipaymentappdevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -336,11 +337,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Best UPI Payment App Development Company | Comfygen
+          Best UPI Payment App Development Company
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading UPI payment app development company, offering secure, scalable, and NPCI-compliant solutions with seamless UI/UX, advanced security, and fast transactions for fintech businesses."
+          content="Comfygen Technologies is a trusted UPI payment app development company delivering secure, scalable, and NPCI-compliant payment solutions."
         />
         <meta name="keywords" content="Custom UPI App Development, UPI Payment Gateway Integration, White Label UPI Payment Solutions, Android & iOS UPI App Development, QR Code and Scan & Pay Integration, Backend Admin Dashboard Development, NPCI and Bank API Integration, Digital Wallet Integration, UPI payment app development, Develop UPI app, UPI wallet app development" />
 
@@ -434,12 +435,13 @@ export default function Ecommerce(props) {
 
       </Head>
 
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="UPI Payment App Development Company"
-          ptag="Comfygen is a trusted UPI payment app development company, delivering secure, scalable, and NPCI-compliant payment solutions tailored for fintech startups, banks, and enterprises. Our expert developers build high-performing UPI payment apps with seamless UI/UX, bank-level security, and lightning-fast transactions to enhance user trust and drive digital transformation. Partner with us to build next-gen UPI apps that set new standards in fintech innovation."
+          ptag="Comfygen Technologies is a trusted UPI payment app development company delivering secure, scalable, and NPCI-compliant digital payment solutions for fintech startups, banks, and enterprises. We specialize in building high-performance UPI payment applications with seamless UI/UX, fast transaction processing, and bank-grade security."
+          ptag1='Our expert fintech developers leverage modern technologies to create reliable UPI apps that support real-time payments, QR code integration, and smooth user journeys. Partner with Comfygen Technologies to launch next-generation UPI payment solutions that enhance user trust, improve payment efficiency, and drive digital transformation in the fintech ecosystem.'
           li="Transforming Payments into Seamless UPI Solutions"
           li1="Boosting Fintech with Custom UPI Apps"
           li2="10+ Yr Expert Fintech Developers"
@@ -451,16 +453,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-hero.webp"
         />
-
-        <AboutSection
-          heading="Best UPI payment app development company for Startups & Enterprises"
-          description1="With the rising demand for secure, real-time digital payments, UPI payment app development has become essential for businesses aiming to lead in fintech. As a top-tier custom UPI payment app development company, Comfygen specializes in building scalable, user-centric solutions for startups and enterprises. "
-          description2="Our expert <a class='text-blue-500 font-semibold' href='/finance-app-development'>Fintech app development</a> team has successfully delivered multiple UPI app development projects using advanced technologies like Blockchain, AI/ML, and AR/VR. Whether you're looking to develop a UPI app from scratch or integrate UPI into your existing platform, we provide end-to-end services that drive success in the fast-evolving digital payment ecosystem."
-          imageSrc="https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -473,6 +466,18 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          heading="Best UPI payment app development company for Startups & Enterprises"
+          description1="With the rising demand for secure, real-time digital payments, UPI payment app development has become essential for businesses aiming to lead in fintech. As a top-tier custom UPI payment app development company, Comfygen specializes in building scalable, user-centric solutions for startups and enterprises. "
+          description2="Our expert <a class='text-blue-500 font-semibold' href='/finance-app-development'>Fintech app development</a> team has successfully delivered multiple UPI app development projects using advanced technologies like Blockchain, AI/ML, and AR/VR. Whether you're looking to develop a UPI app from scratch or integrate UPI into your existing platform, we provide end-to-end services that drive success in the fast-evolving digital payment ecosystem."
+          imageSrc="https://www.comfygen.com/comfygen-images/upi-payment-app-development/upi-payment-app-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
         <CoreFeaturesSection title="Core Features of Our UPI Payment Apps" subtitle="Our advanced UPI payment app development solutions are packed with powerful features that enhance security, convenience, and user engagement. Whether you're a startup or an enterprise, our apps are designed to deliver a seamless, secure, and fast digital payment experience." features={JSON_DATA?.LeadingSoftware || []} />
 

@@ -7,6 +7,7 @@ import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, Ico
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -479,10 +480,10 @@ export default function Blockchain(props) {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>Blockchain Wallet Development Company | Secure Wallet Solutions</title>
+        <title>Blockchain Wallet Development Company | Secure Crypto Wallets</title>
         <meta
           name="description"
-          content="Blockchain wallet development company Build a secure, scalable, and custom blockchain wallet with our expert development team. Support multi-crypto, DeFi, NFTs, and advanced security features."
+          content="Comfygen is a blockchain wallet development company building secure, multi-chain crypto wallets with advanced encryption for web and mobile."
         />
         <link
           rel="canonical"
@@ -556,12 +557,13 @@ export default function Blockchain(props) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Blockchain Wallet development Company"
-          ptag="If you’re planning to launch a secure Blockchain Wallet, here’s the thing users expect security, speed, and a clean interface that doesn’t make them think. Comfygen blockchain wallet development solutions with true multi-chain support, airtight encryption, and a smooth experience across mobile and web. From non-custodial wallets to advanced enterprise-grade blockchain setups."
-          li="Unmatched Security & Privacy"
-          li1="Cross-Platform Compatibility"
-          li2="Advanced Technology Integration"
-          li3="White-Label wallet development Solutions"
+          heading="Blockchain Wallet Development Company"
+          subhead='Secure, Multi-Chain & User-Friendly Blockchain Wallet Solutions'
+          ptag="Comfygen is a trusted blockchain wallet development company helping businesses launch secure, high-performance crypto wallets with seamless user experiences. We build non-custodial and enterprise-grade blockchain wallets with true multi-chain support, advanced encryption, and intuitive interfaces across mobile and web platforms. From white-label wallet development solutions to fully customized blockchain wallet development, our solutions are designed to meet modern security, speed, and scalability requirements."
+          li="Unmatched Security & User Privacy"
+          li1="Cross-Platform Wallet Development (Web & Mobile)"
+          li2="Multi-Chain & Advanced Blockchain Integration"
+          li3=" White-Label & Custom Wallet Development Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -570,6 +572,24 @@ export default function Blockchain(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/blockchain-wallet-development/hero.webp"
         />
+        <Milestones/>
+
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Blockchain Wallet Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title=""
@@ -586,21 +606,7 @@ export default function Blockchain(props) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Blockchain Wallet Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         {/* <ContactFromCenter /> */}

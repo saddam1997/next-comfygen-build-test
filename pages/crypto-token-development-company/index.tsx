@@ -5,6 +5,7 @@ import JSON_DATA from "./json/cryptotoken.json";
 import { useState } from "react";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -180,7 +181,7 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    
+
 
     {
       "@context": "https://schema.org",
@@ -343,11 +344,11 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Token Development Company | Crypto Token Development India, USA, UAE
-</title>
+        <title>Crypto Token Development Company | Ethereum, BSC & Polygon – Comfygen
+        </title>
         <meta
           name="description"
-          content="Comfygen offers professional token development services in India, the USA, and the UAE for startups and enterprises. Create custom blockchain tokens with full security, scalability, and exchange-ready integration."
+          content=" Comfygen is a leading crypto token development company delivering custom token design, multi-blockchain deployment, secure and compliant solutions, and end-to-end support for businesses and startups."
         />
 
         <meta name="keywords" content="Crypto Token Development, Utility Token Development, Security Token Development, DeFi Token Development, Custom Blockchain Token Solutions, Blockchain Token Development Company, Token Creation Services, Cryptocurrency Token Development, Tokenomics Development, Smart Contract Token Development, ERC20 Token Development, BEP20 Token Development" />
@@ -387,13 +388,14 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden pt-20">
         <HeroSectionForAllPages
-          heading="Crypto Token Development Company"
-          ptag="Looking for a Crypto token development Service? and searching top-notch crypto token development company to develop your own token for your businesses and startups? Our expert blockchain developers help you design, deploy, and scale your token on top blockchain networks like Ethereum, Binance Smart Chain, Polygon, and more."
-          li1="Custom Token Solutions"
+          heading="Crypto Token Development Service"
+          subhead='Looking for best Token Development Company?'
+          ptag="Comfygen is a leading crypto token development company that helps businesses and startups design, deploy, and scale tokens across top blockchain networks including Ethereum, Binance Smart Chain, Polygon, and more."
+          li1="Custom Token Design & Deployment"
           li2="Multi-Blockchain Expertise"
-          li3="Security & Compliance"
-          li4="End-to-End Support"
-          li5="  Global Delivery (India | USA | UAE)"
+          li3="Security & Compliance Focused Solutions"
+          li4="End-to-End Token Development Support"
+          li5="Global Delivery: India | USA | UAE"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -402,6 +404,22 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-hero.webp"
         />
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Token Development Services
+              </h2>
+              <p className="text-base text-center font-normal">{`Exploring the token development service for businesses & startups. Comfygen, a top-rated token development service provider, provides its services to cryptocurrency investors worldwide.  Whether you’re launching a new cryptocurrency, powering a DeFi ecosystem, or creating NFT-based assets.`}</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
 
         <AboutSection
@@ -481,7 +499,7 @@ export default function Ecommerce(props) {
           />
         </section>
 
-        
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">

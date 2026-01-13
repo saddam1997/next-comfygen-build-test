@@ -166,11 +166,12 @@ export default function Webdevelopment(props) {
     <>
       <Head>
         <title>
-          Web Development Company in Jaipur | Custom Website App Solutions
+         Web Development Company in Jaipur | Custom Website Experts
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a top web development company in Jaipur offering custom website and web application development. Hire expert web developers for responsive and SEO-friendly web solutions that grow your business."
+          content="Comfygen is a web development company in Jaipur offering custom, responsive, and SEO-friendly websites to help businesses grow online."
         />
         <link rel="canonical" href="https://www.comfygen.com/web-development" />
         <meta property="og:locale" content="en_US" />
@@ -286,12 +287,12 @@ export default function Webdevelopment(props) {
         <div className="">
           <HeroSectionForAllPages
             heading="Web Development Company in Jaipur"
-            ptag="Comfygen is a top web development company in Jaipur. We create easy-to-use, responsive, and SEO-friendly websites that help your business reach more customers and increase sales. Whether you need a small business site or a large web application, we deliver solutions that work."
+            ptag="Comfygen is a trusted web development company in Jaipur delivering modern, easy-to-use, and performance-driven websites for businesses of all sizes. We build responsive, SEO-optimized websites and scalable web applications that help you attract more customers, improve engagement, and increase conversions. Whether you need a business website, eCommerce platform, or custom web development solution, our team delivers results that support your growth goals."
             ptag1=""
-            li="Custom Website Solutions"
-            li1="Tech-Driven, Trend-Focused Designs"
-            li2="Affordable and Transparent Pricing"
-            li3="Dedicated to Your Business Success"
+            li="Custom Website & Web App Development"
+            li1="Responsive, Mobile-First Design"
+            li2="SEO-Optimized & Fast-Loading Websites"
+            li3=" Affordable Pricing & Dedicated Support"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -302,6 +303,18 @@ export default function Webdevelopment(props) {
           />
         </div>
         <Milestones />
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Professional Website Development Services in Jaipur</h2>
+              <p className="text-base text-center font-normal">Comfygen gives the best website development services and solutions that leave an indelible mark on site visitors. Our custom web development solutions are designed to provide an engaging user experience while also promoting corporate growth and profitability. With a focus on creativity and functionality, we ensure that our web development services are in line with your objectives and industry trends.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -320,17 +333,7 @@ export default function Webdevelopment(props) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Professional Website Development Services in Jaipur</h2>
-              <p className="text-base text-center font-normal">Comfygen gives the best website development services and solutions that leave an indelible mark on site visitors. Our custom web development solutions are designed to provide an engaging user experience while also promoting corporate growth and profitability. With a focus on creativity and functionality, we ensure that our web development services are in line with your objectives and industry trends.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}

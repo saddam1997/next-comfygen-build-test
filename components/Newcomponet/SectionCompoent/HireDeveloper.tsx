@@ -61,12 +61,6 @@ const HireDeveloper = ({
                                 height={762}
                                 quality={85}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
-                              
-                            // width={700}
-                            // height={549}
-                            // unoptimized
-                            // priority={true}
-                            // quality={75}
                             />
                         </LazyLoad>
                     </div>

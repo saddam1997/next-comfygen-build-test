@@ -377,8 +377,8 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>eCommerce App Development Services | Custom AI-app development Solutions</title>
-        <meta name="description" content="With 10+ years of experience, Comfygen provides a secure, scalable ecommerce app development solution for web and mobile, offering seamless payments, intuitive UI/UX, and solutions for B2B, B2C, and enterprises." />
+        <title>Custom Ecommerce App Development Services | Comfygen</title>
+        <meta name="description" content="Build high-performance ecommerce apps with Comfygen Technologies offering secure payments, order management, and scalable mobile commerce solutions." />
         <link rel="canonical" href="https://www.comfygen.com/e-commerce-app-development" />
 
         <meta name="keywords" content="Custom Ecommerce App Development, Shopping App Development, White-label Ecommerce App Solutions, eCommerce Website Development, Multivendor Ecommerce App Development, B2B & B2C Ecommerce App Development, Marketplace Ecommerce Development, Fashion eCommerce App Development, Data Analytics for Ecommerce" />
@@ -420,12 +420,11 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Ecommerce App Development Company"
-          ptag="Comfygen develop secure, scalable ecommerce mobile and web applications that help businesses sell more and grow faster. As the best ecommerce app development company, we deliver custom ecommerce app development services especially for startups, brands, and enterprises."
-          li="Custom ecommerce mobile app development for iOS & Android"
-          li1="Mobile and web ecommerce application development"
-          li2="Secure payment gateway and checkout integration"
-          li3="User-focused UI/UX for higher conversions"
-          li4="Scalable ecommerce solutions for B2B, B2C & enterprise needs"
+          ptag="As a leading ecommerce app development company, Comfygen Technologies helps businesses build powerful mobile shopping applications tailored to their brand and audience. Our ecommerce apps support smooth navigation, real-time order tracking, secure transactions, and personalized shopping experiences. With a focus on performance, security, and scalability, we deliver ecommerce solutions that enhance customer satisfaction and maximize online revenue."
+          li="Secure payments, carts & order tracking"
+          li1="Cross-platform ecommerce app solutions"
+          li2="Personalized shopping & user engagement features"
+          li3="Custom ecommerce and mCommerce app development"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -436,6 +435,17 @@ export default function Ecommerce(props) {
         />
 
         <Milestones />
+               <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our On-Demand eCommerce App Development Services</h2>
+              <p className="text-base text-center font-normal">We offer complete ecommerce app development services designed to help businesses launch, scale, and optimize high-performing digital commerce platforms. From strategy and design to development and ongoing support, our solutions cover the entire ecommerce lifecycle.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title=""
@@ -448,17 +458,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our On-Demand eCommerce App Development Services</h2>
-              <p className="text-base text-center font-normal">We offer complete ecommerce app development services designed to help businesses launch, scale, and optimize high-performing digital commerce platforms. From strategy and design to development and ongoing support, our solutions cover the entire ecommerce lifecycle.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+ 
 
 
 

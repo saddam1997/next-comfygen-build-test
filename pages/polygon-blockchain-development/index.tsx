@@ -155,7 +155,6 @@ export default function Polygon(props) {
       <Head>
         <title>
           Polygon Blockchain Development Company | NFT & Web3 Experts
-
         </title>
         <meta
           name="description"

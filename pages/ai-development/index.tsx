@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -63,20 +64,6 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import NumberCard from "../Newcomponet/SectionCompoent/NumberCard";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 const data = [
   {
     num: "01",
@@ -142,7 +129,7 @@ const Process = [
 ];
 
 
-export default function Mobile(props:any) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   let { LeadingSoftware } = JSON_DATA;
 
@@ -158,8 +145,7 @@ export default function Mobile(props:any) {
     <>
       <Head>
         <title>
-          Custom Enterprise AI ML Mobile App Development Company In India | Get
-          Best Services
+          AI & ML Mobile App Development Company | Custom AI Solutions India
         </title>
         <meta
           property="og:title"
@@ -167,7 +153,7 @@ export default function Mobile(props:any) {
         />
         <meta
           name="description"
-          content="Looking for AI-based Enterprise to SME mobile app development company to boost your business. Comfygen custom AI ML development services in Jaipur, India help you to achieve your goal."
+          content="Comfygen offers custom AI and ML mobile app development in India, delivering intelligent apps, machine learning models, and AI-powered solutions to automate processes and drive business growth."
         />
         <meta
           name="keywords"
@@ -422,9 +408,13 @@ export default function Mobile(props:any) {
       </LazyLoad>
       <div className="">
         <HeroSectionForAllPages
-          heading="Enterprise to SEM AI ML Mobile App Development Services In India"
+          heading="AI & ML Mobile App Development Services in India"
           ptag="Next-Gen AI Solutions for Next-Level Success."
-          ptag1="Comfygen delivers cutting-edge custom AI ML Mobile App development services in Jaipur, India to meet your business's requirements. With the best custom AI ML software development service solutions to machine learning models and AI-powered mobile apps, our best AI ML developers in India help businesses unlock innovation, streamline operations, and drive growth of all over the world. Whether you're looking to automate processes, enhance decision-making, or create intelligent mobile applications, Software, and other solutions to automate your work process. Our expert AI ML Developers team of AI specialists is here to turn your vision into reality. Explore our AI development solutions or get a free consultation today to see how we can transform your business with the power of artificial intelligence."
+          ptag1="Comfygen offers custom AI and ML mobile app development services in Jaipur, India. Our expert developers build intelligent mobile apps, machine learning models, and AI-powered software to help businesses innovate, automate processes, and drive growth. Turn your vision into reality with our AI/ML solutions—request a free consultation today."
+          li='Custom AI & ML Mobile App Development'
+          li1='Intelligent Software & Automation Solutions'
+          li2='Machine Learning Model Development'
+          li3='AI-Powered Business Process Optimization'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -433,15 +423,7 @@ export default function Mobile(props:any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/ai-solutions-for-smarter-businesses.webp"
         />
-        <AboutSection
-          title=""
-          heading="Hire Best Custom AI ML App & web Development Company In India for Startups to Enterprise"
-          description1="Comfygen is a leading AI ML-based mobile app development company in India dedicated to helping businesses harness the power of artificial intelligence. We deliver custom AI ML app & software development solutions tailored to your unique needs, leveraging advanced technologies like machine learning, natural language processing (NLP), and computer vision. Whether you're looking to automate processes, enhance customer experiences, or gain data-driven insights, our best-experience AI software developers in India are here to design and deploy innovative AI-powered mobile app solutions and services that drive growth and efficiency—partner with us to transform your business with cutting-edge custom AI ML software development services."
-          imageSrc="https://www.comfygen.com/image/best-ai-development-company.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
+        <Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -461,6 +443,16 @@ export default function Mobile(props:any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title=""
+          heading="Hire Best Custom AI ML App & web Development Company In India for Startups to Enterprise"
+          description1="Comfygen is a leading AI ML-based mobile app development company in India dedicated to helping businesses harness the power of artificial intelligence. We deliver custom AI ML app & software development solutions tailored to your unique needs, leveraging advanced technologies like machine learning, natural language processing (NLP), and computer vision. Whether you're looking to automate processes, enhance customer experiences, or gain data-driven insights, our best-experience AI software developers in India are here to design and deploy innovative AI-powered mobile app solutions and services that drive growth and efficiency—partner with us to transform your business with cutting-edge custom AI ML software development services."
+          imageSrc="https://www.comfygen.com/image/best-ai-development-company.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
         <NumberCard

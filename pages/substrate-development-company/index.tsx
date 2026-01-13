@@ -63,17 +63,6 @@ const Faq = dynamic(
 );
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import LatestTechnology from "../Newcomponet/SectionCompoent/LatestTechnology";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 import {
   IconBriefcase,
   IconCode,
@@ -239,7 +228,8 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-           Substrate Blockchain Development Services | Comfygen
+        Substrate Blockchain Development Services | Comfygen
+
         </title>
         <meta
           property="og:title"
@@ -247,7 +237,7 @@ export default function Ecommerce(props: any) {
         />
         <meta
           name="description"
-          content="Partner with a top Substrate Blockchain Development Company offering custom, result-driven Substrate development services tailored to meet the unique needs of your business."
+          content="Substrate blockchain development services for custom blockchains, dApps, Polkadot integration, and Rust-based substrate blockchain solutions."
         />
         <meta
           property="og:description"
@@ -354,10 +344,9 @@ export default function Ecommerce(props: any) {
           ptag="Our Substrate blockchain development team builds scalable, custom blockchain solutions using the Substrate SDK and Rust. We create secure, future-ready dApps and blockchain networks tailored to complex business needs. With 200+ digital solutions and 50+ blockchain projects delivered, Comfygen brings proven Substrate and blockchain consulting expertise."
           li='Custom Substrate Blockchain Development'
           li1='Runtime & Pallet Development'
-          li2='Runtime & Pallet Development'
-          li3='Polkadot & Cross-Chain Integration'
-          li4='Rust-Based Smart Contracts'
-          li5='Substrate Consulting & Support'
+          li2='Polkadot & Cross-Chain Integration'
+          li3='Rust-Based Smart Contracts'
+          li4='Substrate Consulting & Support'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

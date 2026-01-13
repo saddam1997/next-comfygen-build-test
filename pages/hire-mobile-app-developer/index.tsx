@@ -73,6 +73,7 @@ import {
   IconMessageCircle,
   IconShoppingCartDiscount
 } from '@tabler/icons-react';
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const Process = [
@@ -450,7 +451,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Hire Mobile App Developers | Offshore App Programmers | Comfygen
+          Hire Dedicated Mobile App Developers in India | Comfygen
         </title>
 
         <meta
@@ -459,7 +460,7 @@ export default function Mobile(props: any) {
         />
         <meta
           name="description"
-          content="Hire dedicated mobile app developers / programmers from India for creating secure, scalable mobile applications for all devices. Hire App Programmers for your project. Contact us today to get started!"
+          content="Looking to hire mobile app developers in India? Comfygen offers expert developers to build high-performance, future-ready mobile apps tailored to your business."
         />
         <link
           rel="canonical"
@@ -557,13 +558,13 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hire Top Mobile App Developers In India"
-          ptag="Comfygen’s top-tier mobile app development engineers In India bring 15+ years of experience to create futuristic applications with advanced technologies. Our mission is clear: to deliver robust apps that satisfy clients and retain users with exceptional experiences."
-          ptag1="Hire our creative, knowledgeable developers and experience mobile app development that meets all your tailored business needs."
-          li="15+ Years of Expertise"
-          li1="Futuristic, Client-Centric Solutions"
-          li2="Robust & User-Retaining Apps"
-          li3="Tailored to Your Business Needs"
+          heading="Hire Top Mobile App Developers in India"
+          ptag="Partner with Comfygen to hire expert mobile app developers in India with over 10 years of industry experience. Our skilled engineers build high-quality, future-ready mobile applications using the latest technologies to ensure performance, scalability, and user engagement."
+          ptag1="We focus on delivering custom mobile app solutions that align perfectly with your business goals while providing seamless user experiences that drive long-term retention and growth."
+          li="10+ Years of Mobile App Development Experience"
+          li1="Innovative, Business-Focused App Solutions"
+          li2="Secure, Scalable & User-Centric Applications"
+          li3="Custom Development Tailored to Your Needs"
           ptag3="Discuss your project with us today!"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -573,18 +574,8 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage='https://www.comfygen.com/herosection/hire-mobile-app-developers-hero-img.webp'
         />
+        <Milestones/>
 
-
-        <AboutSection
-          title="About Us"
-          heading="App Developers to Build Interactive Mobile Apps"
-          description1="Every mobile app developer at Comfygen is certified, and worked with many mobile app development projects in various domains. You do not have to think twice after we get your project in hand, because we keep complete transparency with agile mobile application development services offering. Our agenda is clear and ensures to deliver the highest quality application, which can rule in the marketplace with other competitors."
-          description2="Our engineers breakthrough very smartly into the latest technologies, and build mobile applications really demanding and needy to users. We compose our agile development process and strategize apps in a way to make it seamlessly navigational to users. Comfygen is very dedicated to its app development services, solutions process for creating a powerful boost to your business and transforming into a brand."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -596,6 +587,17 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Us"
+          heading="App Developers to Build Interactive Mobile Apps"
+          description1="Every mobile app developer at Comfygen is certified, and worked with many mobile app development projects in various domains. You do not have to think twice after we get your project in hand, because we keep complete transparency with agile mobile application development services offering. Our agenda is clear and ensures to deliver the highest quality application, which can rule in the marketplace with other competitors."
+          description2="Our engineers breakthrough very smartly into the latest technologies, and build mobile applications really demanding and needy to users. We compose our agile development process and strategize apps in a way to make it seamlessly navigational to users. Comfygen is very dedicated to its app development services, solutions process for creating a powerful boost to your business and transforming into a brand."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={Whycomfygen} />
         <SolutionSec
           heading="Why Do Businesses Need Mobile Applications?"

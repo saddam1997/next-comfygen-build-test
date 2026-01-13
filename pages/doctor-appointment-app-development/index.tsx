@@ -7,6 +7,7 @@ import JSON_DATA from "./doctor-appointment-app-development/doctor.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -322,12 +323,13 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Doctor Appointment App Development Company In India & The USA
+         Doctor Appointment App Development Company | India & USA
+
         </title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is a top doctor appointment app development company in India offering AI-powered telemedicine and online doctor booking app solutions for hospitals, clinics, and startups"
+          content="Comfygen Technologies is a trusted doctor appointment app development company in India & USA, delivering secure telemedicine and booking apps."
         />
 
 
@@ -378,13 +380,12 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Doctor Appointment App Development Company in India & USA"
-          ptag="Make healthcare simple and accessible with a smart doctor appointment booking app built by Comfygen. We are a leading Doctor Appointment App Development Company in India and the USA, creating easy-to-use telemedicine and online doctor consultation apps for hospitals, clinics, and medical startups."
-          ptag1="Discover how we can elevate your brand and create impactful digital solutions for your business."
+          ptag="Comfygen Technologies is a leading doctor appointment app development company in India and the USA, delivering secure, scalable, and user-friendly healthcare solutions. We specialize in building smart doctor appointment booking apps, telemedicine platforms, and online consultation systems for hospitals, clinics, and healthcare startups."
+          ptag1="Our custom healthcare apps are designed to simplify patient scheduling, enable real-time doctor consultations, manage e-prescriptions, and ensure HIPAA-compliant data security. With advanced technologies like AI, blockchain, and cloud integration, Comfygen Technologies helps healthcare businesses improve patient experience, streamline operations, and grow digitally with confidence."
           btnName="Talk With Expert"
-          li="AI-Powered Doctor Recommendations"
-          li1="HIPAA-compliant and blockchain-enabled solutions"
+          li="AI-powered doctor search & smart appointment scheduling"
+          li1="HIPAA-compliant, scalable healthcare app architecture"
           li2="Telemedicine & Video Consultation"
-          li3="E-Prescriptions & Medical Records"
           btnLink="/contact-us"
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
@@ -392,6 +393,19 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/doctor-appointment-development-app-hero-imfg.webp"
         />
+
+<Milestones/>
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable On-Demand Doctor Appointment App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer a comprehensive suite of doctor At Comfygen, we offer a comprehensive suite of doctor appointment app development services designed to enhance the healthcare experience for patients, doctors, and healthcare providers. Our best doctor appointment app development solutions are customized, secure, and scalable, ensuring smooth medical appointment management and virtual consultations.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -404,17 +418,7 @@ export default function Ecommerce(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable On-Demand Doctor Appointment App Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we offer a comprehensive suite of doctor At Comfygen, we offer a comprehensive suite of doctor appointment app development services designed to enhance the healthcare experience for patients, doctors, and healthcare providers. Our best doctor appointment app development solutions are customized, secure, and scalable, ensuring smooth medical appointment management and virtual consultations.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <SolutionSec
           heading="We Offer White-label Doctor Appointment App Development Solutions"

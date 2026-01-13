@@ -489,7 +489,8 @@ export default function Ecommerce(props:any) {
 
 
         <HeroSectionForAllPages
-          heading="Secure, Scalable & End-to-End ICO Launch Solutions"
+          heading="ICO Development Service "
+          subhead='Secure, Scalable & End-to-End ICO Launch Solutions'
           ptag="Comfygen is a trusted ICO development company delivering secure, scalable, and fully customized Initial Coin Offering (ICO) solutions for startups and enterprises. We provide end-to-end ICO development services, including token creation, smart contract development, investor dashboards, and launch support. Our experts ensure audited smart contracts, compliant tokenomics, and seamless fundraising execution—helping you launch your ICO with confidence and transparency."
           li="End-to-End ICO Development Services"
           li1="Secure & Audited Smart Contract Development"

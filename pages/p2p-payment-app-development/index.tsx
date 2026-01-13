@@ -7,6 +7,7 @@ import JSON_DATA from "./p2ppaymentappdevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -299,10 +300,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Top P2P Payment App Development Company | Comfygen</title>
+        <title>Best P2P Payment App Development Company in India </title>
         <meta
           name="description"
-          content="Comfygen is a leading P2P payment app development company offering secure, scalable, and custom peer-to-peer payment apps for fintech startups, banks, and enterprises."
+          content="Best P2P payment app development company in India offering secure, scalable, and real-time peer-to-peer payment solutions for fintech startups and businesses."
         />
         <meta
           name="keywords"
@@ -433,10 +434,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="P2P Payment App Development Company"
-          ptag="Comfygen is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment mobile app development solutions for fintech startups, enterprises, and banks. From real-time money transfers to mobile wallet integrations, we build custom P2P apps that empower seamless digital payments."
+          ptag="Comfygen Technologies is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment solutions for fintech startups, enterprises, and banks. We design and develop advanced P2P payment applications that enable real-time money transfers, mobile wallet integration, and seamless digital transactions."
+          ptag1='Our fintech experts leverage modern technologies, robust APIs, and high-level security standards to build reliable P2P payment apps that enhance user experience, ensure compliance, and support business growth in the digital payments ecosystem.'
           li="Custom P2P payment app development"
-          li1="End-to-end fintech compliance & data security"
-          li2="Cross-platform, cloud-native mobile solutions"
+          li1="Cross-platform, cloud-native mobile solutions"
+          li2="End-to-end fintech compliance & data security"
           li3="Expertise in wallets, APIs & blockchain integration"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -446,6 +448,19 @@ export default function ClinicalApp(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
         />
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Best-in-Class Payment P2P App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end P2P payment app development services tailored to meet the growing demand for secure, fast, and user-friendly digital payment solutions. Our experienced peer-to-peer payment app developers build feature-rich peer-to-peer payment apps that support seamless money transfers, wallet functionalities, and real-time processing — all with a focus on scalability, compliance, and innovation.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -459,17 +474,7 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Best-in-Class Payment P2P App Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end P2P payment app development services tailored to meet the growing demand for secure, fast, and user-friendly digital payment solutions. Our experienced peer-to-peer payment app developers build feature-rich peer-to-peer payment apps that support seamless money transfers, wallet functionalities, and real-time processing — all with a focus on scalability, compliance, and innovation.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -507,7 +512,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Build a P2P Payment App</h2>
               <p className="text-base font-normal mt-2">
-               At Comfygen, we follow a transparent, agile, and secure development process tailored to create feature-rich, regulation-compliant P2P payment applications. Our end-to-end approach ensures your app is fast, scalable, and fully equipped for today’s digital payment landscape.
+                At Comfygen, we follow a transparent, agile, and secure development process tailored to create feature-rich, regulation-compliant P2P payment applications. Our end-to-end approach ensures your app is fast, scalable, and fully equipped for today’s digital payment landscape.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

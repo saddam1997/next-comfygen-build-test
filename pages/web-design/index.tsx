@@ -6,6 +6,7 @@ import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -431,12 +432,12 @@ export default function Mobile(props: any) {
 
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Web Design Company in Jaipur, India"
-            ptag="Comfygen is a leading web design company in Jaipur, India, crafting visually stunning, responsive, and user-friendly websites for startups, brands, and enterprises. Our creative web designers blend innovation with strategy to deliver designs that engage users and drive results. From idea to execution, we transform your vision into an impactful digital experience."
-            li=""
-            li1=""
-            li2=""
-            li3=""
+            heading="Web Design Company in Jaipur, India | Creative Web Designers"
+            ptag="Comfygen is a web design company in Jaipur, India offering creative, responsive, and user-friendly website design services for businesses. "
+            li="Custom & Creative Website Design Solutions"
+            li1="Responsive, Mobile-First & User-Friendly Designs"
+            li2="UI/UX-Focused for Better Engagement & Conversions"
+            li3="End-to-End Design Support from Idea to Launch"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -447,6 +448,20 @@ export default function Mobile(props: any) {
           />
         </div>
         {/* <ContactFromCenter /> */}
+
+<Milestones/>
+
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer Affordable Website Design Services In Jaipur</h2>
+              <p className="text-base text-center font-normal">Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title=""
@@ -461,17 +476,7 @@ export default function Mobile(props: any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer Affordable Website Design Services In Jaipur</h2>
-              <p className="text-base text-center font-normal">Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+  
 
         <section className="py-8">
           <Portfolio

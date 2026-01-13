@@ -388,11 +388,11 @@ export default function Mobile(props) {
 
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+       
           <Header />
-        </LazyLoad>
+       
       </div>
-      <div className="overflow-hidden lg:pt-[30px]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Startup App Development Company"
           ptag="We are a trusted startup app development company helping startups turn ideas into powerful digital products. Our expert team delivers custom app development for startups, including mobile apps, web applications, and MVP solutions that are secure, scalable, and market-ready. From idea validation to launch and growth, we support startups at every stage with cost-effective and future-ready app development services."

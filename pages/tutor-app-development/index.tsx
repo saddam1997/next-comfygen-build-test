@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ELearningApp.json";
+import JSON_DATA from "./TutorDevelopment.json";
 import {
   IconBook,
   IconSchool,
@@ -19,6 +19,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -345,8 +346,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Tutor App Development Company</title>
-        <meta name="description" content="Comfygen is among the top tutor app development company, offering custom tutor app development services with AI tutor app solutions for edtech startups, institutes & enterprises." />
+        <title>Tutor App Development Company for Online Learning</title>
+        <meta name="description" content="Comfygen Technologies delivers tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
         <link rel="canonical" href="https://www.comfygen.com/tutor-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -414,11 +415,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Tutor App Development Company"
-          ptag="Build an innovative and user-friendly tutoring app with Comfygen, a trusted tutor app development company known for delivering high-quality custom tutoring app development services. Whether you’re an edtech startup, an institute, or an enterprise, we craft tailored tutoring app development solutions with next-gen technology to enhance learning experiences and streamline tutor-student interactions."
-          li="Engaging & Intuitive UI/UX Design"
-          li1="Expertise in AI-powered learning Solutions"
-          li2="Timely Project Delivery & Ongoing Support"
-          li3="Advanced Virtual Classroom & Collaboration Features"
+          ptag="Comfygen Technologies is a reliable tutor app development company delivering smart, scalable, and user-friendly tutoring solutions for EdTech startups, institutes, and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our expert developers focus on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms, Comfygen Technologies helps businesses transform traditional education into interactive digital learning."
+          li="Custom tutor app development for web & mobile"
+          li1="Live video classes and real-time chat integration"
+          li2="Tutor scheduling, session booking & management"
+          li3="Secure payments, ratings & review systems"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -427,17 +428,9 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
         />
+        <Milestones />
 
-        <AboutSection
-          title="About Company"
-          heading="Top-Rated Tutor Booking App Development Company That Builds Next-Gen Tutor Apps"
-          description1="Comfygen is a trusted on-demand tutor app development company, delivering innovative and scalable custom tutoring app development services for EdTech businesses, startups, and institutions. With expertise in AI-driven learning solutions, we build intuitive and feature-rich tutor apps that connect students and educators seamlessly. "
-          description2="Our solutions include real-time video classes, AI-powered tutor matching, virtual whiteboards, and secure payment integration, ensuring a smooth and interactive learning experience. We focus on user-friendly designs, robust backend development, and cutting-edge technologies to create tailored tutoring platforms that drive engagement and efficiency."
-          description3="With a strong focus on online learning app development, we help EdTech startups and businesses revolutionize education through innovative technology. Choose Comfygen for a cutting-edge tutor booking app development solution designed for success."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -449,6 +442,18 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Top-Rated Tutor Booking App Development Company That Builds Next-Gen Tutor Apps"
+          description1="Comfygen is a trusted on-demand tutor app development company, delivering innovative and scalable custom tutoring app development services for EdTech businesses, startups, and institutions. With expertise in AI-driven learning solutions, we build intuitive and feature-rich tutor apps that connect students and educators seamlessly. "
+          description2="Our solutions include real-time video classes, AI-powered tutor matching, virtual whiteboards, and secure payment integration, ensuring a smooth and interactive learning experience. We focus on user-friendly designs, robust backend development, and cutting-edge technologies to create tailored tutoring platforms that drive engagement and efficiency."
+          description3="With a strong focus on online learning app development, we help EdTech startups and businesses revolutionize education through innovative technology. Choose Comfygen for a cutting-edge tutor booking app development solution designed for success."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
 
         <SolutionSec

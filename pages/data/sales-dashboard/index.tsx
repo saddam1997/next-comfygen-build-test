@@ -12,6 +12,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 
 
 import dynamic from "next/dynamic";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -287,11 +288,11 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Power BI Sales Dashboards | Real-Time Sales Insights</title>
+        <title> Sales Performance Dashboards | Microsoft Power BI Analytics – Comfygen</title>
 
         <meta
           name="description"
-          content="Boost your sales performance with Microsoft Power BI Sales Dashboards. Track sales KPIs, monitor performance, uncover insights, and make faster, smarter sales decisions."
+          content="Comfygen delivers Microsoft Power BI sales dashboards to track KPIs, monitor the sales funnel, analyze trends, and enable data-driven decisions that boost revenue and growth."
         />
         <meta
           name="keywords"
@@ -406,8 +407,12 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[120px]">
         <HeroSectionForAllPages
-          heading="Sales Performance Dashboards"
-          ptag="Microsoft Power BI Sales Dashboards authorize teams to monitor every stage of the sales funnel, from lead generation to revenue conversion. Get instant access to sales performance analytics, spot trends, track KPIs, and make data-driven decisions that accelerate growth."
+          heading="Sales Performance Dashboards with Microsoft Power BI"
+          ptag="Microsoft Power BI sales dashboards empower teams to monitor every stage of the sales funnel—from lead generation to revenue conversion. Gain instant insights into sales performance, track KPIs, identify trends, and make data-driven decisions to accelerate business growth."
+          li='Real-Time Sales Analytics'
+          li1='KPI Tracking & Trend Analysis'
+          li2='Funnel Performance Monitoring'
+          li3='Data-Driven Sales Decisions'
           bgImage="https://www.comfygen.com/comfygen-images/sales-dashboard/hero-img.webp"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -416,6 +421,23 @@ export default function Mobile(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
         />
+
+<Milestones/>
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">What Makes a Power BI Sales Dashboard Powerful?
+              </h2>
+              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end white label mobile app development services that cover everything from app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application solutions are tailored to meet your business goals quickly and affordably.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
         {/* <ContactFromCenter /> */}
         <AboutSection
           title=""
@@ -474,18 +496,7 @@ export default function Mobile(props: any) {
 
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">What Makes a Power BI Sales Dashboard Powerful?
-              </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end white label mobile app development services that cover everything from app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application solutions are tailored to meet your business goals quickly and affordably.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <section className="py-8">
           <Portfolio

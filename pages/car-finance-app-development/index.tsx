@@ -325,10 +325,11 @@ export default function ClinicalApp(props: any) {
       <Head>
         <title>
           Car Finance App Development Company | Auto Loan App Solutions
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading car finance app development company offering custom auto loan apps with EMI calculators, credit score checks, and secure integrations. Hire experts to build high-performing car finance mobile apps for banks, NBFCs, and dealerships."
+          content="Build smart car finance apps with advanced auto loan management, credit integrations, and secure digital lending solutions tailored for fintech businesses."
         />
         <link
           rel="canonical"
@@ -391,10 +392,10 @@ export default function ClinicalApp(props: any) {
 
         <HeroSectionForAllPages
           heading="Car Finance App Development Company"
-          ptag="Comfygen is a leading car finance app development company, delivering secure, scalable, and user-centric auto loan solutions for fintech startups, car dealerships, and financial institutions. Our expert car finance app developers create high-performing car finance apps with intuitive UI/UX, real-time loan processing, and credit integrations to streamline financing and enhance user experience. Partner with us to build future-ready car finance apps that simplify lending and accelerate digital growth."
-          li="Empowering Car Finance with Smart Digital Solutions"
-          li1="Driving Auto Lending with Custom Finance Apps"
-          li2="10+ Year Expert Fintech App Developers"
+          ptag="Build powerful and user-centric car finance applications designed to simplify auto lending and loan management. Our car finance app development services help fintech startups, auto dealers, and lenders launch secure, scalable, and feature-rich digital lending platforms. From loan origination and EMI calculators to real-time credit checks and payment tracking, we create custom car finance apps that enhance borrower experience and streamline operations. With advanced security, seamless integrations, and modern UI/UX, our solutions enable faster approvals, transparent financing, and smarter auto loan management."
+          li="Custom car finance & auto loan app development"
+          li1="Secure digital lending with KYC & credit integrations"
+          li2="EMI calculators, loan tracking & repayment management"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -403,16 +404,8 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/car-finance-app-development/hero1.webp"
         />
+        <Milestones />
 
-        <AboutSection
-          title="About Company"
-          heading="Building Smart Car Finance Apps That Simplify Auto Lending"
-          description1="Partner with a trusted car finance mobile app development company that empowers dealerships, lenders, and fintech startups with modern, secure, and feature-rich finance solutions. At <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/' >Comfygen Technologies</a>, we build end-to-end car finance applications that streamline the loan process—from eligibility checks and EMI calculators to credit score integration and real-time approvals."
-          description2="Our team of fintech developers, designers, and analysts works closely with clients across the auto and finance industries to craft tailored finance app development solutions that improve user engagement and operational efficiency. Whether you're a startup looking to launch a digital car loan app or an enterprise aiming to digitize your financing services, we help you achieve faster, smarter lending."
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -433,6 +426,17 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="Building Smart Car Finance Apps That Simplify Auto Lending"
+          description1="Partner with a trusted car finance mobile app development company that empowers dealerships, lenders, and fintech startups with modern, secure, and feature-rich finance solutions. At <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/' >Comfygen Technologies</a>, we build end-to-end car finance applications that streamline the loan process—from eligibility checks and EMI calculators to credit score integration and real-time approvals."
+          description2="Our team of fintech developers, designers, and analysts works closely with clients across the auto and finance industries to craft tailored finance app development solutions that improve user engagement and operational efficiency. Whether you're a startup looking to launch a digital car loan app or an enterprise aiming to digitize your financing services, we help you achieve faster, smarter lending."
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

@@ -20,6 +20,7 @@ import {
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AppcardSlider from "../../components/Newcomponet/SectionCompoent/AppcardSlider";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 
@@ -483,11 +484,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Top eWallet App Development Company in India
+          Custom eWallet App Development Company | Secure Digital Wallet Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading eWallet app development company offering secure, scalable digital wallet solutions. Build custom mobile wallets with advanced features, AI, NFC, and blockchain integration."
+          content="Custom eWallet app development services delivering secure, scalable digital wallet solutions with instant payments, wallet top-ups, API integration, and seamless user experience."
         />
         <link
           rel="canonical"
@@ -613,12 +614,12 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top eWallet App Development Company"
-          ptag="Build secure, fast, and user-friendly digital wallet apps with Comfygen. We are a trusted eWallet app development company in India delivering modern mobile wallet solutions for startups, enterprises, and fintech brands. From seamless payments to advanced security, we design smart eWallet apps that make digital transactions easier for everyone."
-          li="Advanced Security & Compliance"
-          li1="Seamless Payment Integrations"
-          li2="Scalable & Custom Solutions"
-          li3="AI & Blockchain Powered"
+          heading="Custom eWallet App Development Company"
+          ptag="Comfygen Technologies offers end-to-end custom eWallet app development services for fintech startups, businesses, and financial institutions. We design and develop secure eWallet applications with features like instant payments, wallet top-ups, transaction history, and multi-platform compatibility. Our team combines advanced encryption, seamless API integrations, and intuitive design to deliver reliable digital wallet solutions. Build a future-ready eWallet app with us to enhance user experience and streamline cashless transactions."
+          li="Secure Digital Wallets with Advanced Encryption"
+          li1="Seamless API, Banking & Payment Gateway Integration"
+          li2="Instant Payments, Wallet Top-Ups & Transaction History"
+          li3="Custom eWallet App Development for Fintech & Enterprises"
           li4=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -628,16 +629,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-hero.webp"
         />
-        <AboutSection
-          heading="How Your eWallet App Can Make Money"
-          description1="Digital wallets earn revenue through multiple smart monetization models. They charge transaction fees on payments and money transfers. Many apps also partner with brands to offer promotions, earning commissions on cashback deals. Partner with the industry's leading eWallet app development company to help businesses add smart earning features that boost profits while improving user experience."
-          description2="Subscription plans, featured merchant listings, and bill payment charges help increase profits. Some eWallet apps even generate revenue through loans, interest on stored balances, and secure payment gateway services."
-          imageSrc="https:/www.comfygen.com/comfygen-images/ewallet-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
+        <Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -653,6 +645,18 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          heading="How Your eWallet App Can Make Money"
+          description1="Digital wallets earn revenue through multiple smart monetization models. They charge transaction fees on payments and money transfers. Many apps also partner with brands to offer promotions, earning commissions on cashback deals. Partner with the industry's leading eWallet app development company to help businesses add smart earning features that boost profits while improving user experience."
+          description2="Subscription plans, featured merchant listings, and bill payment charges help increase profits. Some eWallet apps even generate revenue through loans, interest on stored balances, and secure payment gateway services."
+          imageSrc="https:/www.comfygen.com/comfygen-images/ewallet-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
 
 

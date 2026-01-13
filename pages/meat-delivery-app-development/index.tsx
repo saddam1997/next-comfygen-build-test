@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./meat-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -356,10 +357,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Meat Delivery App Development Company</title>
+        <title>Meat Delivery App Development Company | On-Demand Solutions</title>
         <meta
           name="description"
-          content="Comfygen is a top Meat Delivery App Development Company delivering custom, white-label, and on-demand meat ordering apps with tracking, payment & subscription features."
+          content="Comfygen is a leading meat delivery app development company building custom, on-demand meat ordering apps with tracking, subscriptions & secure payments."
         />
         <link
           rel="canonical"
@@ -457,15 +458,15 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden lg:pt-[10px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Meat Delivery App Development Company"
-            ptag="Comfygen is a top-rated meat delivery app development company offering custom meat delivery app development solutions for startups, butcher shops, and enterprises. Our expert meat delivery app developers build a feature-rich on-demand meat delivery app with AI-based, blockchain, real-time tracking and seamless payments to transform your meat business into a profitable online marketplace."
-            li="Custom Meat Ordering Solutions"
-            li1="Seamless User Experience"
-            li2="Real-Time Tracking"
-            li3="Scalable & Secure"
+            heading="Meat Delivery App Development Company"
+            ptag="Build a powerful on-demand meat delivery app with Comfygen, a trusted meat delivery app development company for startups, butcher shops, and enterprises. We create fast, secure, and scalable meat ordering apps with real-time tracking, subscription management, multi-vendor support, and seamless online payments—helping you deliver fresh meat faster and grow your business online."
+            li="Custom Meat Ordering Apps"
+            li1="Real-Time Order Tracking"
+            li2="Subscription & Multi-Vendor Support"
+            li3="Secure & Scalable Architecture"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -475,6 +476,24 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/meat-delivery-app-development/best_meat_delivery_app_development_company_hero.webp"
           />
         </div>
+        <Milestones />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Meat Delivery App Development Services Offering
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen provides top-notch meat delivery app development services for butcher shops, meat distributors, seafood suppliers, and startups. With real-time features, secure payments, and AI-driven logistics, our advanced meat delivery app development solutions help you deliver fresh meat and seafood seamlessly while enhancing customer satisfaction and business growth.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Why Your Meat Business Needs a Meat Delivery App"
@@ -492,21 +511,7 @@ export default function ClinicalApp(props: any) {
             "Secures Payments & Invoice Generation"
           ]}
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Meat Delivery App Development Services Offering
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen provides top-notch meat delivery app development services for butcher shops, meat distributors, seafood suppliers, and startups. With real-time features, secure payments, and AI-driven logistics, our advanced meat delivery app development solutions help you deliver fresh meat and seafood seamlessly while enhancing customer satisfaction and business growth.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         {/* portfoliodata */}

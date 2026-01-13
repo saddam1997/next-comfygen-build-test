@@ -325,7 +325,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>Custom Mobile Banking App Development Company</title>
-        <meta name="description" content="Comfygen is a leading mobile banking app development company in India offering secure, AI/ML & Blockchain-powered mobile banking app development services for startups, banks & enterprises." />
+        <meta name="description" content="Comfygen Technologies is a custom mobile banking app development company delivering secure, scalable, and compliant fintech solutions for banks and startups." />
         <link rel="canonical" href="https://www.comfygen.com/mobile-banking-app-development" />
 
         <meta name="keywords" content="Custom Digital Banking App Development, Best Mobile Banking App Development Company, iOS & Android Banking Apps, Fintech App Development Services, AI-Based Mobile Banking App Development, Mobile Banking Software Development, Custom Mobile Banking App Development, Digital Wallet Integration, Core Banking System Integration, Paytm Payments Clone App Development, blockchain-based banking app development" />
@@ -437,11 +437,12 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Custom Mobile Banking App Development Company for Fintech Startups & Banks"
-          ptag="Comfygen is a trusted mobile banking app development company delivering secure and scalable fintech app solutions for startups, banks, and enterprises. Our expertise in AI/ML, Blockchain, and cloud technologies enables us to build next-gen mobile banking apps with advanced security, seamless transactions, and engaging UI/UX. From digital wallets to core banking platforms, we provide custom mobile banking app services tailored to enhance customer experience, ensure compliance, and drive financial growth in the digital era."
-          li="AI-Powered Personalization "
+          heading="Custom Mobile Banking App Development Company"
+          ptag="Comfygen Technologies is a trusted custom mobile banking app development company delivering secure, scalable, and innovative banking solutions for fintech startups, banks, and financial institutions. We build advanced mobile banking applications with seamless transactions, strong data security, and intuitive UI/UX to enhance customer experience."
+          ptag1='Our expert fintech developers leverage cutting-edge technologies such as AI, blockchain, and cloud computing to create next-generation mobile banking apps that ensure compliance, improve operational efficiency, and support business growth. From digital wallets to full-scale core banking solutions, Comfygen Technologies provides reliable mobile banking app development services tailored to modern financial needs.'
+          li="AI-Powered Personalization"
           li1="Advanced Security Protocols"
-          li2="Blockchain Integration "
+          li2="Blockchain Integration"
           li3="Seamless User Experience"
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -451,6 +452,21 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/mobile-banking-app-development/mobile-banking-app-development-hero.webp"
         />
+
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">End-to-End Mobile Banking Application Development Services We Offer</h2>
+              <p className="text-base text-center font-normal">Comfygen delivers custom, scalable, and secure mobile banking app development services, helping banks and fintech startups stay ahead with modern tech like AI, Blockchain, and AR/VR. From UI/UX to compliance, we cover it all.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
 
         <AboutSection
           title="About Company"
@@ -466,17 +482,6 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">End-to-End Mobile Banking Application Development Services We Offer</h2>
-              <p className="text-base text-center font-normal">Comfygen delivers custom, scalable, and secure mobile banking app development services, helping banks and fintech startups stay ahead with modern tech like AI, Blockchain, and AR/VR. From UI/UX to compliance, we cover it all.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
 
         <CardFeatures
@@ -527,7 +532,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Mobile Banking App Development Process</h2>
               <p className="text-base font-normal mt-2">
-              As a trusted mobile banking app development company, Comfygen follows a comprehensive and transparent development approach to deliver secure, scalable, and high-performing mobile banking applications. Our structured process ensures alignment with your business goals and compliance with financial industry standards.
+                As a trusted mobile banking app development company, Comfygen follows a comprehensive and transparent development approach to deliver secure, scalable, and high-performing mobile banking applications. Our structured process ensures alignment with your business goals and compliance with financial industry standards.
 
               </p>
             </div>

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./salonappdevelopment.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -71,20 +72,6 @@ const Faq = dynamic(
 );
 
 
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import DeliverySection from "../Newcomponet/comman/DeliverySection";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq"
 
 
 const Process = [
@@ -326,9 +313,9 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Ice Cream Delivery App Development Company
+        <title>Ice Cream Delivery App Development Company | AI Solutions
         </title>
-        <meta name="description" content="Comfygen is the best ice cream delivery app development company offering AI-powered ice cream delivery app development services, secure, and custom solutions with GPS tracking & subscription features." />
+        <meta name="description" content="Looking to build an ice cream delivery app? Comfygen offers AI-powered ice cream delivery app development with GPS tracking, subscriptions, and secure payments." />
 
         <meta name="keywords" content="Ice Cream Delivery App Development, On-demand Ice Cream Delivery App Development, White-label Ice Cream Delivery App Development, AI Ice Cream Delivery App Development, On-demand Dessert Delivery App" />
 
@@ -424,8 +411,8 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Best Ice Cream Delivery App Development Company"
-          ptag="Comfygen is a leading Ice Cream Delivery App Development Company delivering AI-powered Ice Cream Delivery App Development solutions for startups, ice cream shops, and enterprises. Our expert developers integrate AI-based features like smart flavor recommendations, real-time delivery tracking, and personalized offers. With blockchain-powered security and scalable architecture, we build custom ice cream delivery apps that ensure reliability, growth, and customer satisfaction."
+          heading="Ice Cream Delivery App Development Company"
+          ptag="Build a fast, secure, and scalable Ice Cream Delivery App with Comfygen. We are a trusted Ice Cream Delivery App Development Company delivering AI-powered, on-demand, and subscription-based solutions for ice cream shops, startups, and enterprises. Our apps come with real-time GPS tracking, smart recommendations, and secure payments to help you grow online orders and customer loyalty."
           li="AI-Powered Personalization"
           li1="Real-Time Order Tracking"
           li2="Blockchain Security"
@@ -438,6 +425,21 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/ice-cream-delivery-app-development_hero.webp"
         />
+        <Milestones />
+
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Ice Cream Delivery App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">We offer affordable online Ice cream delivery app development services tailored for ice cream parlors, cafes, dessert startups, and large enterprises. With AI-powered Ice cream delivery app solutions, we help businesses improve operations, drive customer engagement, and streamline order management. Our custom ice cream delivery apps are designed to meet all business needs with innovative, scalable, and visually stunning products.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           title="About Company"
@@ -457,18 +459,7 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Ice Cream Delivery App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">We offer affordable online Ice cream delivery app development services tailored for ice cream parlors, cafes, dessert startups, and large enterprises. With AI-powered Ice cream delivery app solutions, we help businesses improve operations, drive customer engagement, and streamline order management. Our custom ice cream delivery apps are designed to meet all business needs with innovative, scalable, and visually stunning products.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
@@ -518,9 +509,9 @@ export default function ClinicalApp(props: any) {
           <Features
             grid='4'
             heading='We Develop Ice Cream Delivery Apps With Advanced Panel Features'
-            description='Comfygen is among the best ice cream delivery mobile app development firm. We craft feature-rich Ice Cream Delivery Apps that deliver a seamless experience for customers, ice cream shop owners, delivery agents, and administrators. With AI-powered personalization, blockchain-secured payments, and real-time tracking, our apps are designed to transform the ice cream delivery experience.' 
+            description='Comfygen is among the best ice cream delivery mobile app development firm. We craft feature-rich Ice Cream Delivery Apps that deliver a seamless experience for customers, ice cream shop owners, delivery agents, and administrators. With AI-powered personalization, blockchain-secured payments, and real-time tracking, our apps are designed to transform the ice cream delivery experience.'
             featuresData={JSON_DATA.featuresData}
-            />
+          />
         </section>
 
 
@@ -536,7 +527,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End Ice Cream Delivery App Development Process</h2>
               <p className="text-base font-normal mt-2">
-               Comfygen Technologies is one of the best AI ice cream delivery app development company in India, USA, UK, and UAE. We follow a structured process to deliver high-quality and scalable ice cream delivery app development solutions. From idea to launch, our team ensures smooth execution, advanced features, and reliable performance.
+                Comfygen Technologies is one of the best AI ice cream delivery app development company in India, USA, UK, and UAE. We follow a structured process to deliver high-quality and scalable ice cream delivery app development solutions. From idea to launch, our team ensures smooth execution, advanced features, and reliable performance.
               </p>
             </div>
             <ProcessSec processSlides={Process} />

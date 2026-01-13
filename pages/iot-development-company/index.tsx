@@ -6,6 +6,7 @@ import JSON_DATA from "./json/iot.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -166,10 +167,10 @@ export default function Altcoin(props:any) {
   return (
     <>
       <Head>
-        <title>Best Custom IoT App Development Company in India</title>
+        <title>Top Rated IoT Development Company in India | IoT App Development</title>
         <meta
           name="description"
-          content="Comfygen is a leading custom IoT App development company in India, offering cutting-edge IoT app & software development services to build smart, secure, and scalable IoT solutions for enterprise businesses."
+          content="Comfygen is a world-class IoT development company in India offering custom IoT app and software development services. We build secure, scalable, and smart IoT solutions for startups and enterprises."
         />
         <link
           rel="canonical"
@@ -273,13 +274,13 @@ export default function Altcoin(props:any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/iot-development-company-hero-img.webp')]">
           <HeroSectionForAllPages
-            heading="Best Custom IoT App Development Company in India"
-            ptag="Looking to build scalable and secure IoT solutions for your business? Comfygen, a trusted custom IoT app development company in India, delivers high-performance IoT applications tailored to your business needs. With 6+ years of expertise, we specialize in end-to-end IoT development, helping businesses achieve seamless digital transformation."
-            ptag1='Partner with us to harness the full potential of IoT, optimize operations, and drive innovation in your industry.'
-            li="Scalable IoT Solutions"
-            li1="Expert IoT Development"
-            li2="Innovative IoT Applications"
-            li3="Optimized Business Operations"
+            heading="Top Rated IoT Development Company in India"
+            ptag="Comfygen is a top rated IoT development company in India helping businesses build smart, secure, and scalable IoT solutions. We offer custom IoT app and software development services including device integration, cloud connectivity, real-time monitoring, and data analytics."
+            ptag1='Our expert IoT developers create reliable solutions that improve automation, efficiency, and decision-making for startups and enterprises across multiple industries.'
+            li=""
+            li1=""
+            li2=""
+            li3=""
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -288,15 +289,10 @@ export default function Altcoin(props:any) {
             closeModal={closeModal}
           />
         </div>
-        <AboutSection 
-          heading="Reliable IoT App Development Company in India"
-          description1="At Comfygen, we specialize in custom IoT development services in India, delivering innovative, scalable, and secure IoT mobile app development solutions tailored to diverse industries. Our expert IoT app developers design smart, connected ecosystems that enhance automation, efficiency, and data-driven decision-making. From IoT app development to hardware integration, cloud computing, and AI-powered analytics, we offer end-to-end custom IoT app development solutions."
-          description2="As a leading IoT app development agency in India, we help businesses transform operations with smart devices, real-time monitoring, and advanced connectivity. Partner with us to build cutting-edge IoT software solutions that drive growth and innovation. Get in touch today!"
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones/>
+
+
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Explore Our Cutting-Edge IoT Development Services for Smart Solutions</h2>
@@ -307,6 +303,15 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </section>
+        <AboutSection 
+          heading="Reliable IoT App Development Company in India"
+          description1="At Comfygen, we specialize in custom IoT development services in India, delivering innovative, scalable, and secure IoT mobile app development solutions tailored to diverse industries. Our expert IoT app developers design smart, connected ecosystems that enhance automation, efficiency, and data-driven decision-making. From IoT app development to hardware integration, cloud computing, and AI-powered analytics, we offer end-to-end custom IoT app development solutions."
+          description2="As a leading IoT app development agency in India, we help businesses transform operations with smart devices, real-time monitoring, and advanced connectivity. Partner with us to build cutting-edge IoT software solutions that drive growth and innovation. Get in touch today!"
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
         {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

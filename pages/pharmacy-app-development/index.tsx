@@ -287,11 +287,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-         Pharmacy App Development Company in India | Comfygen
+        Pharmacy App Development Company in India | Comfygen
+
         </title>
         <meta
           name="description"
-          content=" Comfygen is a top pharmacy app development company in India, offering AI-powered pharmacy apps with online medicine ordering, prescription uploads, and real-time delivery tracking."
+          content="Comfygen Technologies delivers secure, scalable pharmacy app development services with prescription uploads, order tracking, payments & cross-platform performance."
         />
 
         <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development "></meta>
@@ -333,12 +334,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Pharmacy App Development Company in India"
-          ptag="Comfygen is a trusted pharmacy app development company that helps medical stores, pharmacy chains, and startups launch powerful online pharmacy apps. Our pharmacy app solutions support prescription uploads, secure payments, real-time order tracking, and smooth app performance on Android, iOS, and web platforms."
+          ptag="A leading Pharmacy App Development Co	mpany in India delivering secure, scalable, and feature-rich digital solutions for medical stores, pharmacy chains, and healthcare startups. Comfygen Technologies specializes in building powerful online pharmacy apps with prescription upload and verification, secure payment integration, real-time order tracking, and seamless performance across Android, iOS, and web platforms. Our expert developers focus on compliance, data security, and intuitive user experiences to help pharmacy businesses streamline operations, expand reach, and accelerate digital growth."
           ptag1=""
-          li="Online medicine ordering & delivery"
-          li1="Prescription upload app & verification"
-          li2="Secure payment & order tracking"
-          li3="Scalable & compliance-ready apps"
+          li="Advanced Analytics & Reporting"
+          li1="User-Friendly Pharmacy App Interface"
+          li2="AI-Powered Medicine Suggestions"
+          li3="Regulatory Compliance & Security"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -348,7 +349,20 @@ export default function ClinicalApp(props: any) {
           bgImage="https://www.comfygen.com/herosection/pharmacy-app-development-company-hero-img.webp"
         />
         <Milestones/>
+       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide Result-Oriented Pharmacy App Development Services</h2>
 
+              <p className="text-base text-center font-normal">
+               Comfygen offers the best custom pharmacy app development services to help retailers and pharmacy businesses build secure and fast online pharmacy delivery platforms.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Why Should You Build a Pharmacy App?"
@@ -363,20 +377,7 @@ export default function ClinicalApp(props: any) {
         />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide Result-Oriented Pharmacy App Development Services</h2>
-
-              <p className="text-base text-center font-normal">
-               Comfygen offers the best custom pharmacy app development services to help retailers and pharmacy businesses build secure and fast online pharmacy delivery platforms.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+ 
 
         <AppcardSlider
           heading="Pharmacy App Clone Solutions We Provide"

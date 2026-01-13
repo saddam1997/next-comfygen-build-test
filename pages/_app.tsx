@@ -1,5 +1,5 @@
-import "../styles/globals.css";//8888 8888 // Need to make very short css file. 
-import React, { useEffect, useState } from "react"; //8888 8888 // Unusual import
+import "../styles/globals.css";
+import React, { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
@@ -66,21 +66,21 @@ const EcommerceFooter = dynamic(
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const [showTop, setShowTop] = useState(false);
+  // const [showTop, setShowTop] = useState(false);
 
-  /* Optimized scroll handler */
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 500) {
-        setShowTop(true);
-      } else {
-        setShowTop(false);
-      }
-    };
+  // /* Optimized scroll handler */
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     if (window.scrollY > 500) {
+  //       setShowTop(true);
+  //     } else {
+  //       setShowTop(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  //   window.addEventListener("scroll", onScroll, { passive: true });
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   const matchesAny = (routes: string[]) =>
     routes.some((r) => router.asPath.includes(r));
@@ -89,11 +89,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const showEcommerceFooter = matchesAny(footerConfig.ecommerce);
   const isExcluded = matchesAny(footerConfig.excluded);
 
-
-
-
-
-
   return (
     <>
       {/* 🔹 Minimal global head */}
@@ -101,16 +96,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
+        {/* <!-- Google Tag Manager --> */}
       </Head>
-
-
-  
-      
 
       <main
         className={`${poppins.className} overflow-hidden ${router.pathname === "/comfy-test-page"
-            ? "w-full"
-            : "max-w-[1600px] mx-auto"
+          ? "w-full"
+          : "max-w-[1600px] mx-auto"
           }`}
       >
         <Component {...pageProps} />
@@ -131,8 +123,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         {!router.asPath.includes("/career") && <Talkchat />}
         <ContactLinks />
 
+        <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            aria-label="Back to top"
+            className="fixed lg:bottom-10 bottom-[6rem] left-10 z-40 bg-[#5556D1] text-white rounded-full p-3"
+          >
+            <FaChevronUp />
+          </button>
+
         {/* Scroll to top */}
-        {showTop && (
+        {/* {showTop && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             aria-label="Back to top"
@@ -140,7 +140,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           >
             <FaChevronUp />
           </button>
-        )}
+        )} */}
       </main>
     </>
   );

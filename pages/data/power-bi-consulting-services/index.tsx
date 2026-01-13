@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
 import Header from "../../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
 
 const AboutSection = dynamic(
@@ -68,19 +69,6 @@ const Faq = dynamic(
 );
 
 
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import IndustriesServe from "../../Newcomponet/SectionCompoent/IndustriesServe";
-// import SolutionSec from "../../Newcomponet/SectionCompoent/Solution";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq"
 
 const Process = [
   {
@@ -387,11 +375,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Microsoft Power BI Consulting Services | Comfygen BI Experts
+          Microsoft Power BI Consulting Services | Data-Driven Insights – Comfygen
         </title>
         <meta
           name="description"
-          content="Struggling with fragmented data and slow reporting? Comfygen’s Microsoft Power BI Consultants centralize your data and deliver real-time, actionable insights for smarter decisions."
+          content="Comfygen provides Microsoft Power BI consulting services to centralize data, deliver real-time analytics, actionable insights, and enable smarter, outcome-driven business decisions."
         />
         <link
           rel="canonical"
@@ -454,12 +442,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Transform Data into Actionable Insights with Microsoft Power BI Consulting Services"
-            ptag="Enterprises' biggest challenge is accurate decision-making due to fragmented data, delayed reporting, and a lack of real-time data observations. Microsoft Power BI Consulting Services fills the gap by centralizing scattered data, providing real-time insights, aligning business strategies, and delivering actionable intelligence."
-            ptag1="Comfygen has a team of expert Microsoft Power BI Consultants to unlock the full potential of data-driven and outcome-oriented decisions."
-            li="Actionable Insights"
-            li1="Data-Oriented Decisions"
-            li2="Centralized Data Visibility"
+            heading="Microsoft Power BI Consulting Services"
+            ptag="Enterprises often struggle with fragmented data, delayed reporting, and limited real-time insights, which hampers accurate decision-making. Comfygen’s Microsoft Power BI consulting services centralize your data, provide real-time analytics, and deliver actionable intelligence to align strategies and drive better business outcomes."
+            ptag1="Our team of expert Microsoft Power BI consultants helps you unlock the full potential of data-driven, outcome-oriented decisions."
+            li="Actionable Insights for Smarter Decisions"
+            li1="Data-Oriented, Outcome-Focused Analytics"
+            li2="Centralized Data Visibility Across Systems"
             li3="Real-Time Business Monitoring"
             btnName="Talk With Expert"
             btnLink="/contact-us"
@@ -470,17 +458,7 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/hero.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="How Power BI Consulting Services Transforming Modern Business Decision-Making?"
-          description1="Enterprises and SMEs generate massive data volumes from CRMs, ERPs, marketing tools, customer interactions, and operations. This data remains fragmented and underutilised without centralized and intelligent <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >analytical solutions</a>."
-          description2="Microsoft Power BI Consulting Services solves this challenge by unifying scattered data sources, cleaning and modeling them into actionable dashboards. Businesses gain real-time visibility into performance, discover cost inefficiencies, forecast trends, and make accurate, data-backed decisions across departments from finance to operations."
-          description3="The demand for precise implementation and domain-aligned customization is higher than ever, with industry leaders turning to <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/business-intelligence' >Business intelligence</a> for strategic clarity, agility, and competitive edge."
-          description4="This is where <a href='https://www.comfygen.com' class='text-blue-500 font-semibold'>Comfygen</a> steps in, helping businesses design, implement, and optimize their Power BI ecosystem to extract true business value from their data."
-          imageSrc="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/power-bi-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -501,6 +479,21 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
+
+        <AboutSection
+          title="About Company"
+          heading="How Power BI Consulting Services Transforming Modern Business Decision-Making?"
+          description1="Enterprises and SMEs generate massive data volumes from CRMs, ERPs, marketing tools, customer interactions, and operations. This data remains fragmented and underutilised without centralized and intelligent <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >analytical solutions</a>."
+          description2="Microsoft Power BI Consulting Services solves this challenge by unifying scattered data sources, cleaning and modeling them into actionable dashboards. Businesses gain real-time visibility into performance, discover cost inefficiencies, forecast trends, and make accurate, data-backed decisions across departments from finance to operations."
+          description3="The demand for precise implementation and domain-aligned customization is higher than ever, with industry leaders turning to <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/business-intelligence' >Business intelligence</a> for strategic clarity, agility, and competitive edge."
+          description4="This is where <a href='https://www.comfygen.com' class='text-blue-500 font-semibold'>Comfygen</a> steps in, helping businesses design, implement, and optimize their Power BI ecosystem to extract true business value from their data."
+          imageSrc="https://www.comfygen.com/comfygen-images/power-bi-consulting-services/power-bi-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
         {/* <ContactFromCenter /> */}
         <ConsultancyApproach

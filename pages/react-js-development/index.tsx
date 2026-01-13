@@ -62,6 +62,7 @@ const ProcessSec = dynamic(
 
 
 import { IconCode, IconFileText, IconFolderOpen, IconRecycle, IconRosetteDiscountCheck, IconUsers, } from '@tabler/icons-react';
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const technologyData = [
@@ -159,11 +160,12 @@ export default function ReactJS(props) {
     <>
       <Head>
         <title>
-          Best React Native APP Development Company in Jaipur, India
+         Top React Native App Development Company in Jaipur, India | Comfygen
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a top React Native app development company in Jaipur, India, specializing in building business apps for startups. Hire expert developers for global success"
+          content="Comfygen is a leading React Native app development company in Jaipur, India, delivering scalable iOS and Android apps with expert developers, agile process, and cost-effective solutions."
         />
         <link
           rel="canonical"
@@ -209,12 +211,13 @@ export default function ReactJS(props) {
           <div>
             <div className="">
               <HeroSectionForAllPages
-                heading="Top React Native App Development Company in Jaipur, India"
-                ptag="Searching for top-notch React Native developers? You've come to the right place! Comfygen, the leading React Native development company in Jaipur, India, specializes in creating cutting-edge mobile apps for iOS and Android. Our skilled developers expertly utilize mobile app’s JavaScript framework, React Native, to deliver innovative and high-performing solutions tailored to your needs."
-                li="10+ Year Expert React Native Team"
-                li1="Apps & web That Scale Fast"
-                li2="iOS and Android App Development"
-                li3="Agile & Transparent Development"
+                heading="Top React Native App Development Company"
+                ptag="Build high-performance, scalable mobile applications with Comfygen, a trusted React Native app development company in Jaipur, India. Our expert React Native developers create secure, cross-platform iOS and Android apps using a single codebase—helping you reduce development time, control costs, and launch faster."
+                ptag1='From startups to enterprises, we deliver custom React Native solutions with smooth UI, seamless API integration, and future-ready architecture tailored to your business goals.'
+                li="Cross-Platform iOS & Android App Development"
+                li1="10+ Years of React Native Expertise"
+                li2="Scalable, Secure & High-Performance Apps"
+                li3="Agile, Transparent Development Process"
                 btnName="Talk With Expert"
                 btnLink="/contact-us"
                 openModal={openModal}
@@ -226,16 +229,9 @@ export default function ReactJS(props) {
             </div>
           </div>
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Best React Native Mobile App Development Company"
-          description1="Our company offers scalable and flexible solutions for Android, iOS, Web, and UWP applications through our React Native app development company in Jaipur, India. By combining native development with React, we create cross-platform apps that deliver exceptional user experiences."
-          description2="Whether your project involves a news aggregator, ride-sharing service, or any other mobile app, React Native allows us to create customized solutions that boost user engagement and market your product more efficiently. Experience the future of app development with React Native by choosing us for your next mobile app project."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+        <Milestones />
+
+
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -247,6 +243,17 @@ export default function ReactJS(props) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Best React Native Mobile App Development Company"
+          description1="Our company offers scalable and flexible solutions for Android, iOS, Web, and UWP applications through our React Native app development company in Jaipur, India. By combining native development with React, we create cross-platform apps that deliver exceptional user experiences."
+          description2="Whether your project involves a news aggregator, ride-sharing service, or any other mobile app, React Native allows us to create customized solutions that boost user engagement and market your product more efficiently. Experience the future of app development with React Native by choosing us for your next mobile app project."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+        {/* <ContactFromCenter /> */}
+
         <SolutionSec
           heading="Benefits of React Native App Developmen"
           subheading=""
@@ -263,7 +270,7 @@ export default function ReactJS(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <IndustriesServe heading="" description=""/>
+        <IndustriesServe heading="" description="" />
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

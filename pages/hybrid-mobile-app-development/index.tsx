@@ -63,9 +63,9 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Best Hybrid Mobile App Development Company in jaipur, India | Get Best Solutions</title>
+        <title>Hybrid Mobile App Development Company | Hire Hybrid App Developers – Comfygen</title>
         <meta property="og:title" content="Best Hybrid Mobile App Development Company in jaipur, India | Get Best Solutions" />
-        <meta name='description' content='Comfygen, the premier hybrid mobile app development company in Jaipur India, offers top-notch hybrid mobile app development services to bring your app vision to life. Contact us today!' />
+        <meta name='description' content='Comfygen is a leading hybrid mobile app development company in India and the USA, delivering secure, scalable, and cost-effective cross-platform app solutions with expert developers.' />
         <meta name='og:description' content='Comfygen, the premier hybrid mobile app development company in Jaipur India, offers top-notch hybrid mobile app development services to bring your app vision to life. Contact us today!' />
         <link rel='canonical' href='https://www.comfygen.com/hybrid-mobile-app-development' />
         <meta name='robots' content='INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1' />
@@ -103,11 +103,13 @@ export default function Mobile(props: any) {
       </LazyLoad>
       <HeroSectionForAllPages
         heading="Best Hybrid Mobile App Development Company"
-        ptag="Providing all your software development needs in India and USA, Comfygen is a leading Hybrid App Development Service, Solution Company. We offer expert advice on selecting the most appropriate hybrid development tools and incorporating advanced technologies to develop custom business applications that meet your requirements seamlessly."
-        li="Experts with 15+ Years of Experience"
-        li1="Security & IP Protection"
-        li2="Flexible Engagement Models"
-        li3="On-Time Project Delivery"
+        subhead='Looking for a Hybrid Mobile App Development Service?'
+        ptag="Comfygen is a trusted hybrid mobile app development company in India and the USA, delivering high-quality, cost-effective app solutions for businesses of all sizes. Our experienced hybrid app developers help you choose the right frameworks and technologies to build scalable, secure, and performance-driven applications."
+        ptag1="With over 5+ years of industry expertise, we develop custom hybrid apps that ensure faster time-to-market, seamless user experience, and cross-platform compatibility—without compromising quality or security."
+        li="5+ Years of Hybrid App Development Experience"
+        li1="Secure Applications with IP Protection"
+        li2="Flexible Hiring & Engagement Models"
+        li3="Timely Delivery with Guaranteed Quality"
         bgImage="https://www.comfygen.com/herosection/mobile-app-development-hero-section-img.webp"
         btnName="Talk With Expert"
         btnLink="/contact-us"

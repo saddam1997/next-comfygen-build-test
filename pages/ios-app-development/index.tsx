@@ -413,9 +413,11 @@ export default function Mobile(props) {
 
       </Head>
 
-        <Header />
+      <div className="">
+          <Header />
+      </div>
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="IOS App Development Company"
           ptag="Build a high-performance IOS app for Mobile and MAC."

@@ -6,6 +6,7 @@ import JSON_DATA from "./json/neobankappdevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -329,11 +330,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          NeoBank App Development Company | Custom NeoBank App Solutions
+          Custom NeoBank App Development Company | Digital Banking
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading NeoBank app development company delivering secure, scalable, and AI-powered digital banking solutions for fintechs and banks."
+          content="Comfygen Technologies is a custom NeoBank app development company delivering secure, scalable digital banking solutions for fintech startups and banks."
         />
 
         <meta name="keywords" content="NeoBank app development, NeoBank software development, Digital banking app development, Fintech app development, Custom NeoBank app solutions, NeoBank MVP development, NPCI and Bank API Integration, Digital Wallet Integration" />
@@ -442,8 +443,9 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="NeoBank App Development Company for the Future of Digital Banking"
-          ptag="Comfygen is a trusted NeoBank app development company delivering secure, AI-powered, and user-centric NeoBank applications. We empower banks, credit unions, and fintech startups with custom NeoBank solutions, open banking API integration, real-time payments, and advanced security features. With deep fintech expertise and future-ready technologies, we help financial institutions transform digital banking experiences."
+          heading="Custom NeoBank App Development Company for Digital Banking"
+          ptag="Comfygen Technologies is a trusted custom NeoBank app development company for digital banking, helping fintech startups, banks, and financial institutions build secure, scalable, and user-centric NeoBank solutions. We design and develop modern NeoBank applications with features such as digital onboarding, open banking API integration, real-time payments, and advanced security compliance."
+          ptag1='Our experienced fintech developers leverage AI-driven technologies and future-ready architectures to deliver high-performance NeoBank platforms that enhance customer experience, ensure regulatory adherence, and support seamless digital banking transformation.'
           li="Custom NeoBank App Development"
           li1="AI & Open Banking API Integration"
           li2="Real-time Payments & Security Compliance"
@@ -456,15 +458,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-hero.webp"
         />
-
-        <AboutSection
-          heading="Your Trusted Partner for Next-Gen NeoBank App Development"
-          description1="Launching a NeoBank app offers businesses a future-ready approach to digital banking by eliminating the need for physical branches. It enables real-time transactions, personalized financial insights, automated savings, and seamless user experiences—all accessible through a smartphone. With increasing demand for digital-first financial services, NeoBank apps help attract tech-savvy users and boost customer engagement."
-          description2="Comfygen is a leading <a class='text-blue-500 font-semibold' href='/finance-app-development'>Fintech app development company</a> specializing in NeoBanking App Development Services. Leveraging advanced technologies like AI/ML, Blockchain, and robust API integrations, we build secure, scalable, and intuitive NeoBank solutions. Our expert team transforms your fintech vision into a high-performance mobile app tailored to meet modern user expectations and industry compliance."
-          imageSrc="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -477,6 +471,17 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          heading="Your Trusted Partner for Next-Gen NeoBank App Development"
+          description1="Launching a NeoBank app offers businesses a future-ready approach to digital banking by eliminating the need for physical branches. It enables real-time transactions, personalized financial insights, automated savings, and seamless user experiences—all accessible through a smartphone. With increasing demand for digital-first financial services, NeoBank apps help attract tech-savvy users and boost customer engagement."
+          description2="Comfygen is a leading <a class='text-blue-500 font-semibold' href='/finance-app-development'>Fintech app development company</a> specializing in NeoBanking App Development Services. Leveraging advanced technologies like AI/ML, Blockchain, and robust API integrations, we build secure, scalable, and intuitive NeoBank solutions. Our expert team transforms your fintech vision into a high-performance mobile app tailored to meet modern user expectations and industry compliance."
+          imageSrc="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
 

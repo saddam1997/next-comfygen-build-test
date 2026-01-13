@@ -7,6 +7,7 @@ import JSON_DATA from "./languagelearningappdevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -327,11 +328,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Language Learning App Development Company | Custom Language App Solutions
+         Language Learning App Development Services | Custom Solutions
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading language learning app development company that builds feature-rich language learning apps. The products we develop are gamified, AI-powered, and scalable language apps for edtech startups, schools, and businesses."
+          content="Build interactive language learning apps with Comfygen Technologies offering secure, scalable, and AI-driven EdTech development services."
         />
         <meta
           name="keywords"
@@ -445,11 +447,12 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Empower Global Communication with Custom Language Learning App Development Company"
-          ptag="Looking to build a powerful, engaging language learning app? At Comfygen, we specialize in language learning app development that combines AI, gamification, and intuitive design to make learning fun and effective. Whether you're launching a new edtech platform or enhancing your existing app, we turn your vision into a scalable solution."
-          li="AI-Powered Learning Paths"
-          li1="Real-Time Progress Tracking"
-          li2="Cross-Platform App Development"
+          heading="Custom Language Learning App Development Company"
+          ptag="As a leading custom language learning app development company, Comfygen Technologies helps EdTech startups and education businesses create innovative apps for learning new languages. Our language learning apps support interactive lessons, audio-video content, vocabulary building, and real-time learner analytics. With a strong focus on performance, security, and usability, we deliver language learning solutions that adapt to individual learning styles and support global users."
+          li="Interactive language learning & vocabulary apps"
+          li1="Audio-video lessons with pronunciation support"
+          li2="AI-driven personalization and learner analytics"
+          LI3='Secure and scalable EdTech app architecture'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -458,6 +461,21 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/language-learning-app/language-learning-app-hero.webp"
         />
+        <Milestones/>
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Language Learning App Development Services</h2>
+              <p className="text-base text-center font-normal">At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a className='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences.</p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
+
+
 
         <AboutSection
           title="About Company"
@@ -471,17 +489,6 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Language Learning App Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we create innovative and user-friendly language learning apps that empower users to unlock new languages and cultures with ease. Our <a className='text-blue-500 font-sewmibold' href='https://www.comfygen.com/ca/education-app-development-company' >education mobile app development</a> expert team combines creativity, cutting-edge technology, and educational best practices to deliver apps that truly transform language learning experiences.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
 
 

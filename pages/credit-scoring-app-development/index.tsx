@@ -429,11 +429,12 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Credit Scoring App Development Company | AI-Driven Fintech Solutions
+          AI Credit Scoring App Development Company
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a top credit scoring app development company delivering secure, AI-powered fintech solutions. We build scalable credit scoring apps with real-time analytics, data security, and 10+ years of expertise."
+          content="Launch AI-driven credit scoring applications with Comfygen Technologies to enable accurate credit risk analysis, real-time scoring, and smarter, data-driven lending decisions."
         />
         <meta name="keywords"
           content="Credit Scoring App Development Services, Credit Analysis App Development, Credit Management App Development, Blockchain-Based Credit Scoring App Development, AI & Machine Learning Integration"
@@ -524,12 +525,13 @@ export default function Mobile(props: any) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Credit Scoring App Development"
-          ptag="Comfygen is a leading credit scoring app development company, offering innovative and secure solutions tailored to your business needs. Our expert finance app developers use advanced AI, data analytics, and cutting-edge technologies to build scalable apps that deliver accurate credit assessments."
-          li="Transforming Financial Insights into Actionable Solutions"
-          li1="Empowering Businesses with Secure, Scalable Credit Scoring Apps"
-          li2="10+ Years of Expertise in Fintech App Development"
-          li3="Secure, Real-Time Credit Scoring Solutions"
+          heading="Credit Scoring App Development Company"
+          ptag="Comfygen Technologies is a trusted credit scoring app development company delivering intelligent, secure, and data-driven fintech solutions for lenders, financial institutions, and startups. We build advanced credit scoring applications using AI, machine learning, and data analytics to assess creditworthiness with high accuracy."
+          ptag1='Our solutions enable real-time credit evaluation, risk analysis, and compliance with financial regulations. With scalable architecture and robust security, Comfygen Technologies helps businesses improve lending decisions, reduce risk, and enhance financial transparency.'
+          li="Accurate credit risk analysis and borrower profiling"
+          li1="AI-powered credit scoring and risk assessment solutions"
+          li2="Empowering Businesses with Secure, Scalable Credit Scoring Apps"
+      
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -538,15 +540,7 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-hero.webp"
         />
-        <AboutSection
-          title=""
-          heading="Best Credit Scoring App Development Company"
-          description1="At Comfygen, we are a leading credit scoring app development company specializing in building secure, scalable, and data-driven apps. With over a decade of experience in fintech and financial app development, we provide innovative solutions that help businesses assess creditworthiness more accurately and efficiently."
-          description2="Our team of experts leverages cutting-edge technologies like AI, machine learning, and real-time data integration to create user-friendly, reliable credit scoring apps. Whether you're a fintech startup or an established financial institution, Comfygen delivers customized solutions tailored to your specific needs, empowering your business to make data-driven decisions."
-          imageSrc="https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+<Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -559,6 +553,18 @@ export default function Mobile(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Best Credit Scoring App Development Company"
+          description1="At Comfygen, we are a leading credit scoring app development company specializing in building secure, scalable, and data-driven apps. With over a decade of experience in fintech and financial app development, we provide innovative solutions that help businesses assess creditworthiness more accurately and efficiently."
+          description2="Our team of experts leverages cutting-edge technologies like AI, machine learning, and real-time data integration to create user-friendly, reliable credit scoring apps. Whether you're a fintech startup or an established financial institution, Comfygen delivers customized solutions tailored to your specific needs, empowering your business to make data-driven decisions."
+          imageSrc="https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
 
