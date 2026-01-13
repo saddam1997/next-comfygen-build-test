@@ -539,7 +539,7 @@ export default function Mobile(props) {
       <div className="">
         <HeroSectionForAllPages
           heading="Enterprise Data Analytics Service Provider"
-          ptag="Next-Gen AI Solutions for Next-Level Success."
+          ptag=""
           ptag1="Comfygen helps businesses transform raw data into actionable insights through end-to-end data analytics services. As a trusted data analytics service provider, we offer data management, warehousing, governance, quality management, BI dashboard development, and AI-driven analytics. Using tools like Power BI, Tableau, Python, and cloud platforms such as Snowflake and BigQuery, we analyze structured and unstructured data to uncover opportunities, improve performance, and drive business growth."
           li="Actionable Insights for Better Decision-Making"
           li1="Advanced BI Dashboard Development"

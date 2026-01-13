@@ -176,7 +176,6 @@
       "title": "Reporting & Analytics",
       "desc": "Reporting and analytics features provide real-time financial reports such as profit and loss statements, balance sheets, and cash-flow analysis. Custom dashboards offer clear visual insights, while AI-driven analytics enable predictive forecasting and anomaly detection to support faster, data-driven financial decision-making."
     },
-
     {
       "title": "Security & Data Management",
       "desc": "Security and data management in accounting software ensure role-based access control, advanced data encryption, regular backups, and reliable disaster recovery. Built-in fraud detection mechanisms help prevent unauthorized activities, protect sensitive financial information, and maintain system integrity while ensuring compliance with data protection standards."
@@ -185,7 +184,6 @@
       "title": "Integration & Scalability",
       "desc": "User experience and automation features ensure a clean, intuitive interface that simplifies navigation for finance teams while automating routine accounting workflows. With seamless web and mobile accessibility, users can manage financial tasks, approvals, and reporting anytime, anywhere, improving productivity and operational efficiency."
     }
-   
   ],
   "pageData": {
     "title": "Why Choose Us as Your Accounting Software Development Company",

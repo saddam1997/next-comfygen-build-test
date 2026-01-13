@@ -367,7 +367,7 @@ export default function Ecommerce(props: any) {
           HeroSectionForAllPages
           heading="ERC20 Token Development Company"
           ptag="Comfygen is the best ERC20 token development company delivering secure, scalable, and customizable token development solutions on the Ethereum network. Our expert developers create high-performance ERC20 tokens with seamless smart contract integration and full compliance with the ERC-20 standard. "
-          ptag1="Why Choose Comfygen?"
+          ptag1=""
           li="Industry-Leading ERC20 Token Development Services"
           li1="Secure Ethereum Smart Contract Integration"
           li2="Customizable Token Solutions for ICOs & DeFi Projects"

@@ -6,6 +6,7 @@ import { TbX } from "react-icons/tb";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
+
 const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
   ssr: false,
 });

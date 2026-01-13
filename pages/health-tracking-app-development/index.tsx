@@ -416,12 +416,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Best Health Tracking App Development Company | Mobile Health App
-          Solutions
+      Best Health Tracking App Development Company | Comfygen
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a top-rated health tracking app development company offering custom health tracking app development services with wearable integration, real-time monitoring, and HIPAA compliance. Hire expert developers to build AI-based health tracking app solutions for fitness, wellness, and healthcare businesses."
+          content="Comfygen Technologies is a leading health tracking app development company delivering secure, scalable apps with AI insights and wearable integration."
         />
         <meta name="keywords" content="Custom Health Tracker App Development, Fitness & Activity Tracking App Development, Nutrition & Calorie Counter App Development, Mental Wellness App Solutions, Wearable Device Integration" />
         <link

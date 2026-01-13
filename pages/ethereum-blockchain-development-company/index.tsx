@@ -465,7 +465,7 @@ export default function Ecommerce(props:any) {
           li1="Secure Smart Contract Development & Audits"
           li2="Token & NFT Marketplace Solutions"
           li3="Enterprise-Grade Ethereum Integration"
-          ptag3="Transform your business with Ethereum expertise"
+          li4="Transform your business with Ethereum expertise"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

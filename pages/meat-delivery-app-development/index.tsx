@@ -458,7 +458,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[10px]">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
             heading="Meat Delivery App Development Company"

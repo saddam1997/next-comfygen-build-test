@@ -4,8 +4,10 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
-import Milestonessec from "../components/Newcomponet/comman/Milestonessec"
+
 import Script from "next/script";
+import WallOfFame from "../components/Newcomponet/SectionCompoent/WallOfFame";
+import Milestonessec from "../components/Newcomponet/SectionCompoent/Milestonessec";
 
 /* ======================
    CRITICAL (Above-the-fold)
@@ -196,54 +198,7 @@ export default function Home(props: any) {
     },
   ];
 
-  const LocalBusiness = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen Technologies",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "https://www.comfygen.com/",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302021",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "CA"
-      }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies/",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies/",
-      "https://www.youtube.com/@ComfygenTechnologies",
-      "https://www.linkedin.com/company/comfygen-technologies"
-    ]
 
-  };
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -347,47 +302,13 @@ export default function Home(props: any) {
         <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
-      {/* ✅ LCP IMAGE PRELOAD */}
-     
+        {/* ✅ LCP IMAGE PRELOAD */}
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
-        />
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Comfygen Technologies",
-              "url": "https://www.comfygen.com/",
-              "logo": "https://www.comfygen.com/svg/Logo1.svg",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Sales",
-                "contactOption": "TollFree",
-                "telephone": "+91-9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": [
-                  "IN", "US", "CA", "GB"],
-                "availableLanguage": ["English", "Hindi"]
-              },
-              "sameAs": [
-                "https://www.facebook.com/comfygen.technologies/",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies/",
-                "https://youtube.com/@comfygentechnologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-              ]
 
-            }),
-          }}
-
-        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -415,8 +336,12 @@ export default function Home(props: any) {
           />
         </div>
         <Milestones />
-        <Milestonessec/>
-        
+        {/* <Milestonessec/>*/}
+        <Milestonessec /> 
+
+
+
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -436,7 +361,9 @@ export default function Home(props: any) {
           </div>
         </section>
 
-        
+        {/* <WallOfFame /> */}
+
+
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries "
@@ -454,7 +381,7 @@ export default function Home(props: any) {
           linkText="Explore More"
         />
 
-        
+
 
         <section className="py-8">
           <Portfolio
@@ -537,7 +464,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

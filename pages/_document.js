@@ -1,5 +1,57 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-// import Script from 'next/script';
+import Script from 'next/script';
+
+
+
+
+const LocalBusiness = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Comfygen Technologies",
+  "image": "https://www.comfygen.com/svg/Logo1.svg",
+  "@id": "https://www.comfygen.com/",
+  "url": "https://www.comfygen.com/",
+  "telephone": "+91-958-786-7258",
+  "priceRange": "$",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      "addressLocality": "Jaipur",
+      "postalCode": "302021",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+      "addressLocality": "Toronto",
+      "postalCode": "M1G3S7",
+      "addressCountry": "CA"
+    }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/comfygen.technologies/",
+    "https://x.com/Comfygen_Tech",
+    "https://www.instagram.com/comfygen_technologies/",
+    "https://www.youtube.com/@ComfygenTechnologies",
+    "https://www.linkedin.com/company/comfygen-technologies"
+  ]
+
+};
 
 // const isProduction = process.env.NODE_ENV === "production";
 export default function Document() {
@@ -12,7 +64,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         {/* Fonts */}
 
-
+        {/* // 8888 */}
         <meta name="msvalidate.01" content="88C9F762357EB27E860762AE43E1BDF7" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
@@ -28,31 +80,33 @@ export default function Document() {
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
 
-        {/* <script
+        {/* // 8888 */}
+        <Script
+          id="gtm-init"
+          strategy="lazyOnload"
+        >
+          {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];
+          w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;
+          j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-M6QT7LCW');
+        `}
+        </Script>
+
+
+        <Script
+          id="LocalBusiness-schema"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-        /> */}
-
-
-        {/* <!-- Google Tag Manager --> */}
-        <script
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];
-              w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-              var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-              j.async=true;
-              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-              f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-M6QT7LCW');
-            `,
+            __html: JSON.stringify(LocalBusiness),
           }}
         />
       </Head>
-
-
-
 
       <body>
         <Main />

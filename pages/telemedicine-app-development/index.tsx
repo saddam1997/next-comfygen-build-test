@@ -525,7 +525,7 @@ export default function Ecommerce(props) {
           li1="Appointment Scheduling & Management"
           li2="HIPAA-Compliant Data Security"
           li3="Scalable & User-Friendly Platform"
-          li4="Connect to Your Existing Systems"
+          li4=""
           ptag3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"

@@ -57,7 +57,7 @@ const Milestones = () => {
     ];
 
     return (
-        <div className="w-full h-full bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-800 py-2 px-4 sm:px-6 lg:px-8 mt-8 sm:rounded-full">
+        <div className="hidden md:block w-full h-full bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-800 py-2 px-4 sm:px-6 lg:px-8 mt-8 sm:rounded-full">
             <div className="w-full px-4">
                 {/* Content Container */}
                 <div className="grid sm:grid-cols-2 gap-4 items-center">

@@ -489,7 +489,7 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          AI-Based Crypto Trading Bot Development Company | Comfygen
+         AI-Based Crypto Trading Bot Development Company | Comfygen
 
         </title>
         <meta
@@ -610,7 +610,7 @@ export default function Ecommerce(props: any) {
           li="Real-Time Market Data Analysis & Prediction"
           li1="Advanced Risk Management & Security Protocols"
           li2="Multi-Currency & Multi-Exchange Support"
-          li3=" AI-Powred Strategies"
+          li3="AI-Powered Trading Strategies"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
