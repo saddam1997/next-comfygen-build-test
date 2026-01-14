@@ -15,9 +15,6 @@ const nextConfig = {
     NEXT_PUBLIC_SITE_URL: 'https://www.comfygen.com',
     NEXT_PUBLIC_MEASUREMENT_ID: 'UA-228613134-1',
   },
-  // experimental: {
-  //   legacyBrowsers: false,
-  // },
   images: {
     remotePatterns: [
       {
@@ -38,16 +35,6 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     qualities: [50, 70, 75, 80, 85, 90, 100],
   },
-
-  // experimental: {
-  //   optimizeCss: true, // requires "critters" (installed ✔)
-  //   optimizePackageImports: [
-  //     'react-icons',
-  //     'lucide-react',
-  //     '@tabler/icons-react',
-  //   ],
-  // },
-
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },

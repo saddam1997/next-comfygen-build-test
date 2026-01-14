@@ -25,7 +25,7 @@ export default function Footer() {
               <Link
                 href="/contact-us"
                 className="hover:text-[#5556D1] mt-6 hover:bg-[#fff] text-[#fff]
-             border border-[#fff] px-10 py-2 text-lg font-semibold
+             border border-[#fff] w-64 px-10 py-2 text-lg font-semibold
              rounded-full capitalize flex items-center gap-1"
               >
                 Get Started <MdOutlineArrowOutward />
