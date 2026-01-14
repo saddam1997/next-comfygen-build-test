@@ -77,7 +77,7 @@ export default function HeroSection(props: any) {
         fetchPriority="high"
         sizes="100vw"
         placeholder="blur"
-        // blurDataURL="/blur-placeholder.webp"
+        blurDataURL="/blur-placeholder.webp"
         quality={75}
         loading="eager"
       />

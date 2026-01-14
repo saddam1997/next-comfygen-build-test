@@ -193,7 +193,7 @@ function IndustriesServe({
                           width={640}
                           height={360}
                           priorityLoad={false}
-                          // blurDataURL="/blur-placeholder.webp"
+                          blurDataURL="/blur-placeholder.webp"
                           className="w-full  object-cover "
                         />
 
@@ -216,7 +216,7 @@ function IndustriesServe({
                         width={640}
                         height={360}
                         priorityLoad={false}
-                        // blurDataURL="/blur-placeholder.webp"
+                        blurDataURL="/blur-placeholder.webp"
                         className="w-full h-full object-cover "
                       />
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/whitelabelmobileappdevelopment.json";
-import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
 import {
   IconApps,

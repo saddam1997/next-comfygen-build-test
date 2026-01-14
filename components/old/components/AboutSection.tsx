@@ -35,7 +35,7 @@ const AboutSection = (props: any) => {
                 width={600}
                 height={340}
                 priorityLoad={false}
-                // blurDataURL="/blur-placeholder.webp"
+                blurDataURL="/blur-placeholder.webp"
                 className="object-cover w-full h-full object-center bg-no-repeat bg-fixed"
               />
 

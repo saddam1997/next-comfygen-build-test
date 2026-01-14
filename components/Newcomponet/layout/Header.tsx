@@ -1,7 +1,7 @@
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import DesktopNavnew from "./DesktopNavnew"
-import BreadCume from "../home/component/BreadCume";
+// import DesktopNavnew from "./DesktopNavnew"
+// import BreadCume from "../home/component/BreadCume";
 
 
 export default function Header(props: any) {

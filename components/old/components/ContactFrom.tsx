@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
 import Image from "next/image";
-import Router from "next/router";
-// import "react-phone-input-2/lib/style.css";
 import Select from "react-select";
-import { redirect } from "next/dist/server/api-utils";
 
 class ContactFrom extends Component<{}, any> {
   constructor(props) {
