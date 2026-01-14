@@ -3,6 +3,14 @@ import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import MainLayout from "./MainLayout";
 // import GoogleAnalytics from "./GoogleAnalytics";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // only what you use
+  display: "swap",
+  preload: true,
+});
 
 const Talkchat = dynamic(
   () => import("../components/Newcomponet/layout/Talkchat"),
@@ -14,15 +22,14 @@ const ContactLinks = dynamic(
   { ssr: false }
 );
 
-const GoogleTagManager = dynamic(
-  () => import("./GoogleTagManager"),
-  { ssr: false }
-);
+/* Analytics only (lightweight, idle-loaded internally) */
+// const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
+//   ssr: false,
+// });
 
-const GoogleAnalytics = dynamic(
-  () => import("./GoogleAnalytics"),
-  { ssr: false }
-);
+// const GoogleAnalytics = dynamic(() => import("./GoogleAnalytics"), {
+//   ssr: false,
+// });
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -33,16 +40,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </MainLayout>
 
       {/* non-blocking */}
-      <GoogleTagManager />
-      <GoogleAnalytics />
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-M6QT7LCW"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        />
-      </noscript>
+      {/* <GoogleTagManager /> */}
+      {/* <GoogleAnalytics /> */}
       <ContactLinks />
       <Talkchat />
     </>
