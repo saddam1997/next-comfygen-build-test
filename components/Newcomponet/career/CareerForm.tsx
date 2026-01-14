@@ -171,41 +171,6 @@ const Form = () => {
                 <h2 className="text-white font-semibold lg:text-xl md:text-lg text-base">
                   Social Links
                 </h2>
-                {/* <div className=" flex justify-start gap-4 mt-2">
-                  <a target="_blank" href="https://www.facebook.com/comfygen" className="flex items-center gap-3 cursor-pointer" >
-                    <Image
-                      src="https://www.comfygen.com/image/facebook-form-icon.svg"
-                      alt=""
-                      height={51}
-                      width={50}
-                    />
-                  </a>
-                  <a target="_blank" href="https://www.instagram.com/comfygen_/?hl=en" className="flex items-center gap-3 cursor-pointer" >
-                    <Image
-                      src="https://www.comfygen.com/image/insta-form-icon.svg"
-                      alt=""
-                      height={51}
-                      width={50}
-                    />
-                  </a>
-                  <a target="_blank" href="https://twitter.com/comfygentech" className="flex items-center gap-3 cursor-pointer" >
-                    <Image
-                      src="https://www.comfygen.com/image/x-form-icon-img.svg"
-                      alt=""
-                      height={51}
-                      width={50}
-                    />
-                  </a>
-                  <a target="_blank" href="https://www.linkedin.com/company/comfygen-private-limited" className="flex items-center gap-3 cursor-pointer" >
-                    <Image
-                      src="https://www.comfygen.com/image/linkedin-form-icon-img.svg"
-                      alt=""
-                      height={51}
-                      width={50}
-                    />
-                  </a>
-                </div> */}
-
                 <div className="flex justify-start gap-4 mt-2">
                   <a
                     target="_blank"

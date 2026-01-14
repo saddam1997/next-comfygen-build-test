@@ -73,7 +73,7 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
-    
+
         <Script
           id="LocalBusiness-schema"
           type="application/ld+json"
@@ -84,10 +84,17 @@ export default function Document() {
         />
       </Head>
       <body>
-        <main className="max-w-[1600px] mx-auto overflow-y-auto">
-          <Main />
-        </main>
+        <Main />
         <NextScript />
+        {/* GTM noscript */}
+        {/* <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M6QT7LCW"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript> */}
       </body>
     </Html>
   );

@@ -337,48 +337,7 @@ export default function Tech() {
                     business in various industries
                   </p>
                 </div>
-                {/* <div className="flex gap-3 items-center">
-                  <a target="_blank" href="https://www.facebook.com/comfygen">
-                    <Image
-                      alt="COMFYGEN LIMITED"
-                      src="https://www.comfygen.com/image/fb-form-icon.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
-                  <a target="_blank" href="https://www.linkedin.com/company/comfygen-private-limited">
-                    <Image
-                      alt="COMFYGEN LIMITED"
-                      src="https://www.comfygen.com/image/linkedin-form-icon.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
-                  <a target="_blank" href="https://join.skype.com/invite/njrEJpEDtSRy">
-                    <Image
-                      alt="COMFYGEN LIMITED"
-                      src="https://www.comfygen.com/image/skype-form-icon.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=919587867258">
-                    <Image
-                      alt="COMFYGEN LIMITED"
-                      src="https://www.comfygen.com/image/whatsapp-form-icon.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
-                  <a target="_blank" href="https://twitter.com/comfygentech">
-                    <Image
-                      alt="COMFYGEN LIMITED"
-                      src="https://www.comfygen.com/image/x-form-icon.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
-                </div> */}
+                
                 <div className="flex gap-3 items-center">
                   <a
                     target="_blank"
