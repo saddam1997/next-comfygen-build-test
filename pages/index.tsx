@@ -1,12 +1,12 @@
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
 
-import Script from "next/script";
-import WallOfFame from "../components/Newcomponet/SectionCompoent/WallOfFame";
+// import Script from "next/script";
+// import WallOfFame from "../components/Newcomponet/SectionCompoent/WallOfFame";
 import Milestonessec from "../components/Newcomponet/SectionCompoent/Milestonessec";
 
 /* ======================
@@ -337,7 +337,7 @@ export default function Home(props: any) {
         </div>
         <Milestones />
         {/* <Milestonessec/>*/}
-        <Milestonessec /> 
+        <Milestonessec />
 
 
 
@@ -427,14 +427,14 @@ export default function Home(props: any) {
           description="The only focus is not the engagement, but building a highly-secured and robust web or application. For strong development, some edgy tech stacks are being used."
         />
 
-        <Suspense fallback={<p>Loading...</p>}>
-          <WhyChoose
-            title={JSON_DATA.pageData.title}
-            description={JSON_DATA.pageData.description}
-            mainCardData={JSON_DATA.pageData.mainCardData}
-            gridData={JSON_DATA.pageData.gridData}
-          />
-        </Suspense>
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
 
         <div className="py-5">
           <ClientStories />

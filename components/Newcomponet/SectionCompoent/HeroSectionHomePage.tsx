@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { TbX } from "react-icons/tb";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 

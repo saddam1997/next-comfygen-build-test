@@ -1,53 +1,65 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-import { useRouter } from 'next/router';
-import Script from 'next/script';
-import { useEffect } from 'react';
-const GA_TRACKING_ID = 'UA-228613134-1';
+const GA_ID = "G-YNT54R0V73";
 
-// @ts-ignore
-const addPageView = (url) => {
-  // @ts-ignore
-  window.gtag('config', GA_TRACKING_ID, {
-    page_path: url,
-  });
-};
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
 
-const GoogleAnalytics = () => {
+export default function GoogleAnalytics() {
   const router = useRouter();
 
+  /* ===============================
+     Lazy-load GA after page idle
+  =============================== */
   useEffect(() => {
-    const handleRouteChange = (url: any) => {
-      setTimeout(() => {
-        addPageView(url);
-      }, 3000);
-    };
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
-  return (
-    <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=UA-228613134-1`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-228613134-1', {
-        page_path: window.location.pathname,
-      });
-    `,
-        }}
-      />
-    </>
-  );
-};
+    const loadGA = () => {
+      if (document.getElementById("ga-script")) return;
 
-export default GoogleAnalytics;
+      // Init dataLayer
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+
+      window.gtag("js", new Date());
+
+      const script = document.createElement("script");
+      script.id = "ga-script";
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      document.head.appendChild(script);
+
+      window.gtag("config", GA_ID, {
+        send_page_view: false, // SPA handled manually
+      });
+    };
+
+    if ("requestIdleCallback" in window) {
+      (window as any).requestIdleCallback(loadGA);
+    } else {
+      setTimeout(loadGA, 3000);
+    }
+  }, []);
+
+  /* ===============================
+     SPA Pageview Tracking
+  =============================== */
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      window.gtag?.("event", "page_view", {
+        page_path: url,
+      });
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () =>
+      router.events.off("routeChangeComplete", handleRouteChange);
+  }, [router.events]);
+
+  return null;
+}
