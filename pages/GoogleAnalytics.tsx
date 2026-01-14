@@ -1,18 +1,51 @@
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
   }
 }
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import Script from "next/script";
 
 const GA_ID = "G-YNT54R0V73";
 
 export default function GoogleAnalytics() {
   const router = useRouter();
+  const isLoaded = useRef(false);
 
+  // 1️⃣ Load GA only after interaction
+  useEffect(() => {
+    const loadGA = () => {
+      if (isLoaded.current) return;
+      isLoaded.current = true;
+
+      // gtag.js
+      const script = document.createElement("script");
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      // gtag init
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer!.push(arguments);
+      };
+
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID, { send_page_view: false });
+    };
+
+    window.addEventListener("scroll", loadGA, { once: true });
+    window.addEventListener("click", loadGA, { once: true });
+
+    return () => {
+      window.removeEventListener("scroll", loadGA);
+      window.removeEventListener("click", loadGA);
+    };
+  }, []);
+
+  // 2️⃣ SPA Pageview Tracking (same as your code)
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       if (!window.gtag) return;
@@ -27,23 +60,5 @@ export default function GoogleAnalytics() {
       router.events.off("routeChangeComplete", handleRouteChange);
   }, [router.events]);
 
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="lazyOnload"
-      />
-
-      <Script id="ga-init" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-
-          gtag('js', new Date());
-          gtag('config', '${GA_ID}', { send_page_view: false });
-        `}
-      </Script>
-    </>
-  );
+  return null;
 }
