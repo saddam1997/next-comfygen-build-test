@@ -43,12 +43,12 @@ export default function IndustriesServe({
 }) {
   const scrollRef = useRef(null);
 
-  const scroll = (direction) => {
-    const container = scrollRef.current;
-    const scrollAmount = container.offsetWidth * 0.8; // scroll by ~1 card width
-    if (direction === "left") container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    else container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  };
+  // const scroll = (direction) => {
+  //   const container = scrollRef.current;
+  //   const scrollAmount = container.offsetWidth * 0.8; // scroll by ~1 card width
+  //   if (direction === "left") container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  //   else container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  // };
 
   return (
     <section className="lg:py-16 py-10">
@@ -60,7 +60,7 @@ export default function IndustriesServe({
             <p className="xl:text-lg text-base text-[#212121] font-normal">{description}</p>
           </div>
 
-          <div className="md:flex hidden items-center gap-4 px-4">
+          {/* <div className="md:flex hidden items-center gap-4 px-4">
             <button
               onClick={() => scroll("left")}
               className="group w-10 h-10 flex justify-center items-center text-[#212121] border border-[#212121] bg-white rounded-full hover:bg-[#5556D1] hover:text-white transition"
@@ -73,7 +73,7 @@ export default function IndustriesServe({
             >
               <BiChevronRight size={35} />
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Slider */}

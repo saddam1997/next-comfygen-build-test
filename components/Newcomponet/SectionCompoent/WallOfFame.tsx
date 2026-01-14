@@ -77,15 +77,15 @@ const WallOfFame = () => {
   }, []);
 
   // Desktop scroll handling
-  const handleScroll = () => {
-    if (scrollContainerRef.current && window.innerWidth >= 768) {
-      const container = scrollContainerRef.current;
-      const cardWidth = container.offsetWidth / 6;
-      const scrollPosition = container.scrollLeft;
-      const newSlide = Math.round(scrollPosition / cardWidth);
-      setCurrentSlide(newSlide);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (scrollContainerRef.current && window.innerWidth >= 768) {
+  //     const container = scrollContainerRef.current;
+  //     const cardWidth = container.offsetWidth / 6;
+  //     const scrollPosition = container.scrollLeft;
+  //     const newSlide = Math.round(scrollPosition / cardWidth);
+  //     setCurrentSlide(newSlide);
+  //   }
+  // };
 
   // Mouse drag handling for desktop
   const handleMouseDown = (e) => {
@@ -128,13 +128,13 @@ const WallOfFame = () => {
     }
   };
 
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.addEventListener('scroll', handleScroll, { passive: true });
-      return () => container.removeEventListener('scroll', handleScroll);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const container = scrollContainerRef.current;
+  //   if (container) {
+  //     container.addEventListener('scroll', handleScroll, { passive: true });
+  //     return () => container.removeEventListener('scroll', handleScroll);
+  //   }
+  // }, []);
 
   const totalSlides = Math.ceil(awards.length / 6);
 
