@@ -1,57 +1,23 @@
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-
-const GA_ID = "G-YNT54R0V73";
-
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
+    gtag?: (...args: any[]) => void;
   }
 }
+
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import Script from "next/script";
+
+const GA_ID = "G-YNT54R0V73";
 
 export default function GoogleAnalytics() {
   const router = useRouter();
 
-  /* ===============================
-     Lazy-load GA after page idle
-  =============================== */
-  useEffect(() => {
-    const loadGA = () => {
-      if (document.getElementById("ga-script")) return;
-
-      // Init dataLayer
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        window.dataLayer.push(arguments);
-      };
-
-      window.gtag("js", new Date());
-
-      const script = document.createElement("script");
-      script.id = "ga-script";
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-      document.head.appendChild(script);
-
-      window.gtag("config", GA_ID, {
-        send_page_view: false, // SPA handled manually
-      });
-    };
-
-    if ("requestIdleCallback" in window) {
-      (window as any).requestIdleCallback(loadGA);
-    } else {
-      setTimeout(loadGA, 3000);
-    }
-  }, []);
-
-  /* ===============================
-     SPA Pageview Tracking
-  =============================== */
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      window.gtag?.("event", "page_view", {
+      if (!window.gtag) return;
+
+      window.gtag("event", "page_view", {
         page_path: url,
       });
     };
@@ -61,5 +27,23 @@ export default function GoogleAnalytics() {
       router.events.off("routeChangeComplete", handleRouteChange);
   }, [router.events]);
 
-  return null;
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="lazyOnload"
+      />
+
+      <Script id="ga-init" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', { send_page_view: false });
+        `}
+      </Script>
+    </>
+  );
 }
