@@ -120,6 +120,12 @@ const Faq = dynamic(
   }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 const Process = [
   {
     title: "Requirement Analysis & Market Research",
@@ -690,7 +696,22 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  console.log("process.env.URL", process.env.URL);
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }

@@ -465,7 +465,6 @@ export default function Home(props: any) {
         />
 
         <BlogSection initialData={initialData} />
-
       </div>
     </>
   );
@@ -482,18 +481,3 @@ export async function getStaticProps() {
     revalidate: 86400, // 24 hours
   };
 }
-
-// export async function getServerSideProps({ res }) {
-//   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-//   if (!resData.ok) {
-//     // console.error("API Request failed:", await resData);
-//     return { props: { initialData: [] } };
-//   }
-//   // console.log(resData)
-//   const data = await resData.json();
-//   res.setHeader(
-//     "Cache-Control",
-//     "public, s-maxage=10, stale-while-revalidate=59"
-//   );
-//   return { props: { initialData: data } };
-// }

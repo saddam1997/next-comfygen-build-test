@@ -82,6 +82,13 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
 });
 
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
 
 
 const WhoCanStartCards = [
@@ -564,41 +571,7 @@ export default function Mobile(props) {
           title="Frequently Asked Questions"
         />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        /> */}
-
-        {/* <LatestTechnology
-          heading="Technologies We Use for Startup App Development Modern Tech Trends We Use"
-          subheading="First and foremost, our team of professionals creates excellent apps for startups and makes sure they run incredibly effectively. We ensure perfection at every stage by utilizing the newest tools and techniques."
-          techData={technologyData}
-        /> */}
-
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -68,6 +68,10 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 const Process = [
@@ -565,25 +569,25 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
 
 
-export async function getServerSideProps({ res }) {
+export async function getStaticProps() {
+  console.log("process.env.URL", process.env.URL);
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  if (!resData.ok) {
-    // console.error("API Request failed:", await resData);
-    return { props: { initialData: [] } };
-  }
-  // console.log(resData)
   const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }
+
 
 

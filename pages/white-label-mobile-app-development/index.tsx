@@ -83,6 +83,12 @@ const Milestones = dynamic(() => import("../../components/Newcomponet/comman/Mil
   ssr: true,
 });
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 
 const BreadcrumbSchema = {
@@ -650,7 +656,7 @@ export default function Mobile(props: any) {
         />
 
         <Faq faqData={JSON_DATA.Frequently} title=" " />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

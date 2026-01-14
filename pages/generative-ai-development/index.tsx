@@ -60,6 +60,10 @@ const Faq = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -518,8 +522,21 @@ export default function Mobile(props) {
           title=" About Blockchain Technology"
         />
 
+         <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
 }
 
+export async function getStaticProps() {
+  console.log("process.env.URL", process.env.URL);
+  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
+  const data = await resData.json();
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
+}

@@ -55,14 +55,11 @@ const Faq = dynamic(
 );
 
 
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../../Newcomponet/SectionCompoent/CallToAction";
-// import LatestTechnology from "../../Newcomponet/SectionCompoent/LatestTechnology";
-// import ClientTestimonials from "../../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq";
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 
 
 const jsonLdData = [
@@ -223,9 +220,10 @@ const jsonLdData = [
 ];
 
 export default function Mobile(props: any) {
+    let { initialData } = props;
   let { } = JSON_DATA;
 
-  let { initialData } = props;
+ 
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -536,24 +534,26 @@ export default function Mobile(props: any) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
 
 
-
-export async function getServerSideProps({ res }) {
+export async function getStaticProps() {
+  console.log("process.env.URL", process.env.URL);
   const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  if (!resData.ok) {
-    // console.error("API Request failed:", await resData);
-    return { props: { initialData: [] } };
-  }
-  // console.log(resData)
   const data = await resData.json();
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-  return { props: { initialData: data } };
+
+  return {
+    props: { initialData: data },
+    // revalidate: 10, // Revalidate data every 10 seconds
+    revalidate: 86400, // 24 hours
+  };
 }
+
+
+
+
