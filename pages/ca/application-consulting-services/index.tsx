@@ -315,13 +315,25 @@ export default function Mobile(props) {
 
 
 export async function getStaticProps() {
-  console.log("process.env.URL", process.env.URL);
-  const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-  const data = await resData.json();
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
 
-  return {
-    props: { initialData: data },
-    // revalidate: 10, // Revalidate data every 10 seconds
-    revalidate: 86400, // 24 hours
-  };
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

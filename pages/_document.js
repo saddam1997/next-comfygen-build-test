@@ -86,15 +86,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        {/* GTM noscript */}
-        {/* <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M6QT7LCW"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript> */}
       </body>
     </Html>
   );

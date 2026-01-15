@@ -27,10 +27,6 @@ const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
   ssr: false,
 });
 
-const GoogleAnalytics = dynamic(() => import("./GoogleAnalytics"), {
-  ssr: false,
-});
-
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -38,10 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
-
-      {/* non-blocking */}
       <GoogleTagManager />
-      <GoogleAnalytics />
       <ContactLinks />
       <Talkchat />
     </>

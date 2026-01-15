@@ -155,12 +155,26 @@ export default function about(props:any) {
         </div>
     )
 }
-export async function getServerSideProps({ req, res }) {
-    const resData = await fetch(process.env.URL + "/api/v1/posts?per_page=3");
-    const data = await resData.json();
-    res.setHeader(
-        "Cache-Control",
-        "public, s-maxage=10, stale-while-revalidate=59"
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
     );
-    return { props: { initialData: data } };
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }
