@@ -508,7 +508,7 @@ body {
 }
 
 
-.btn-fix,
+/* .btn-fix,
 .btn_vdo {
   background-color: #fff;
   color: #000;
@@ -558,7 +558,7 @@ body {
   50% {
     transform: translate(-5px, 0px)
   }
-}
+}  */
 
 .social-btn {
   display: flex;

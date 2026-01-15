@@ -8,6 +8,7 @@ import Milestones from "../components/Newcomponet/comman/Milestones";
 // import Script from "next/script";
 // import WallOfFame from "../components/Newcomponet/SectionCompoent/WallOfFame";
 import Milestonessec from "../components/Newcomponet/SectionCompoent/Milestonessec";
+import HeroSection from "../components/HeroSection";
 
 /* ======================
    CRITICAL (Above-the-fold)
@@ -321,7 +322,7 @@ export default function Home(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="relative ">
-          <HeroSectionHomePage
+          <HeroSection
             heading={typedText}
             isHome={true}
             ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
