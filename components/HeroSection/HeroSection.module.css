@@ -1,0 +1,54 @@
+
+
+.btnFix,
+.btnVdo {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.06);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.8s ease;
+  height: 55px;
+  padding: 5px 60px 5px 25px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+.btnFix svg {
+  background: #5556d1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  transition: all 0.5s ease;
+  animation: move 1s ease infinite;
+}
+
+
+.btnFix:hover svg {
+  right: calc(100% - 50px);
+}
+
+.btnFix:hover {
+  background: #fff;
+  padding: 5px 25px 5px 60px;
+  color: #000;
+}
+
+
+@keyframes move {
+  0% {}
+  50% {
+    transform: translate(-5px, 0);
+  }
+}

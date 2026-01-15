@@ -1,0 +1,106 @@
+"use client";
+import styles from "./HeroSection.module.css";
+import Image from "next/image";
+import TalkToExpertModal from "../modals/TalkToExpertModal";
+import Heading from "../ui/Heading";
+import Paragraph from "../ui/Paragraph";
+import HeroLoader from "./HeroLoader";
+
+export default function HeroSection(props: any) {
+
+  /* ================= LOADER ================= */
+  if (props.isLoading) {
+    return <HeroLoader />;
+  }
+
+    return (
+        <section className="relative flex  min-h-[50vh] sm:min-h-[50vh] lg:min-h-[50vh] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
+            itemScope
+            itemType="https://schema.org/WebPage"
+        >
+            {/* ================= LCP IMAGE ================= */}
+            <Image
+                src={props.bgImage || "/landing-hero-img.webp"}
+                alt="Comfygen Web & Mobile App Development"
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                quality={75}
+                className=" object-cover object-center hidden md:block"
+            />
+
+            {/* ================= CONTENT ================= */}
+            <div className=" relative z-10  w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
+            >
+                <div className=" w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
+                >
+                    {/* ================= HEADING ================= */}
+                    {props.isHome ? (
+                        <h1 className=" text-white font-bold text-[26px] leading-tight sm:text-[32px] md:text [36px]  xl:text-[48px] xl:leading-[3.6rem]">
+                            <span className=" block font-medium text-[20px] sm:text-[22px] md:text-[26px] xl:text[34px]"
+                            >
+                                Web & Mobile App Development
+                            </span>
+                            <b className="block">
+                                Solution & Service Provider
+                            </b>
+                        </h1>
+                    ) : (
+                        <>
+                            <Heading as={1} className="text-white">
+                                {props.heading}
+                            </Heading>
+
+                        </>
+                    )}
+
+                    {/* ================= DESCRIPTION ================= */}
+
+                    <Paragraph size="sm" className="text-white">
+                        {props.ptag}
+                    </Paragraph>
+
+
+                    {/* ================= CTA ================= */}
+                    <div className="pt-3 sm:pt-4">
+                        <button
+                            onClick={props.openModal}
+                            aria-label="Talk to an expert"
+                            className={`${styles.btnFix} text-sm sm:text-base`}
+                        >
+                            Talk to an expert!
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="12"
+                                viewBox="0 0 24.231 11.738"
+                                className="text-black"
+                            >
+                                <path
+                                    d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                    transform="translate(-521.511 -1346.214)"
+                                    fill="#fff"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* ================= MODAL ================= */}
+            {props.talkToExpertModal && (
+                <div
+                    className="fixed inset-0 z-50 overflow-y-auto bg-black/60"
+                    role="dialog"
+                    aria-modal="true"
+                >
+                    <TalkToExpertModal isOpen={props.talkToExpertModal}
+                        onClose={props.closeModal} />
+                </div>
+            )}
+        </section>
+    );
+}
