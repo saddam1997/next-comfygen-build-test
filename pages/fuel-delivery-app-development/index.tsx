@@ -77,7 +77,10 @@ const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/F
   ssr: true,
 });
 
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -677,6 +680,8 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

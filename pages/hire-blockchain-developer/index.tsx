@@ -56,6 +56,14 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
+
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
 import { IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
 import { IconChartBar } from '@tabler/icons-react';
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -386,6 +394,8 @@ export default function Mobile(props:any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

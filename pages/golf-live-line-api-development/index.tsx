@@ -3,246 +3,242 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/golflivelineapi.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
 );
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   { loading: loader, ssr: true }
 );
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
   { loading: loader, ssr: true }
 );
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+const ConsultancyApproach = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
-
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
-)
-
+);
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
-)
+);
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
   { loading: loader, ssr: true }
-)
+);
 
 const OtherGameDevelopment = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/OtherGameDevelopment"),
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/OtherGameDevelopment"),
   { loading: loader, ssr: true }
-)
+);
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
-)
+);
 
-
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 const Process = [
   {
     title: "Step 1 – Discovery & Consultation",
     description:
-      "We begin by understanding your business goals, platform structure, and user expectations. Our team will help you define the right golf data features based on your app type—whether it’s a fantasy sports platform, betting solution, or analytics dashboard."
+      "We begin by understanding your business goals, platform structure, and user expectations. Our team will help you define the right golf data features based on your app type—whether it’s a fantasy sports platform, betting solution, or analytics dashboard.",
   },
   {
     title: "Step 2 – API Source Selection",
     description:
-      "Based on your requirements, we help you select the most suitable API provider or develop custom API solutions. We evaluate data depth, tournament coverage, frequency of updates, and licensing terms to ensure full alignment with your goals."
+      "Based on your requirements, we help you select the most suitable API provider or develop custom API solutions. We evaluate data depth, tournament coverage, frequency of updates, and licensing terms to ensure full alignment with your goals.",
   },
   {
     title: "Step 3 – API Key Provision & Access Setup",
     description:
-      "Once the source is finalized, we securely generate and deliver API keys and access credentials. Our team sets up authentication protocols to enable safe and efficient integration with your platform."
+      "Once the source is finalized, we securely generate and deliver API keys and access credentials. Our team sets up authentication protocols to enable safe and efficient integration with your platform.",
   },
   {
     title: "Step 4 – Development & API Integration",
     description:
-      "Our experienced developers begin integrating the Golf Live Line API using industry-best practices. We handle everything from endpoint mapping and real-time data syncing to backend logic and scalable data flow architecture."
+      "Our experienced developers begin integrating the Golf Live Line API using industry-best practices. We handle everything from endpoint mapping and real-time data syncing to backend logic and scalable data flow architecture.",
   },
   {
     title: "Step 5 – Front-End Integration & UX Enhancement",
     description:
-      "We ensure that the live golf data is presented in a clean, engaging, and responsive format across all devices. Our design team collaborates to create intuitive scoreboards, stat panels, and dynamic visualizations that elevate user experience."
+      "We ensure that the live golf data is presented in a clean, engaging, and responsive format across all devices. Our design team collaborates to create intuitive scoreboards, stat panels, and dynamic visualizations that elevate user experience.",
   },
   {
     title: "Step 6 – Testing, QA & Optimization",
     description:
-      "We conduct thorough testing, including live tournament simulations, performance checks, and error handling. This ensures your application handles high data loads, fluctuating scores, and traffic spikes without glitches."
+      "We conduct thorough testing, including live tournament simulations, performance checks, and error handling. This ensures your application handles high data loads, fluctuating scores, and traffic spikes without glitches.",
   },
   {
     title: "Step 7 – Deployment & Ongoing Support",
     description:
-      "After successful integration and testing, we assist with full-scale deployment. Our work doesn't end there—we provide ongoing support, real-time API updates, version migrations, and technical maintenance to keep your platform future-proof."
-  }
+      "After successful integration and testing, we assist with full-scale deployment. Our work doesn't end there—we provide ongoing support, real-time API updates, version migrations, and technical maintenance to keep your platform future-proof.",
+  },
 ];
-
-
-
 
 const structuredData = {
   "@context": "https://schema.org/",
   "@type": "WebSite",
-  "name": "Golf Live Line Api Provider",
-  "url": "https://www.comfygen.com/golf-live-line-api",
-  "potentialAction": {
+  name: "Golf Live Line Api Provider",
+  url: "https://www.comfygen.com/golf-live-line-api",
+  potentialAction: {
     "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+    target: "https://www.comfygen.com/search?query={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
 };
-
 
 const organizationData = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Comfygen - Best Golf Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "sameAs": [
+  name: "Comfygen - Best Golf Live Line API Service Provider",
+  url: "https://www.comfygen.com/",
+  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
+  sameAs: [
     "https://twitter.com/comfygentech",
     "https://www.instagram.com/comfygen_/?hl=en",
     "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen"
-  ]
+    "https://www.facebook.com/comfygen",
+  ],
 };
-
-
 
 const productData = {
   "@context": "http://www.schema.org",
   "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Golf Live Line API Provider – Real-Time Scores & Tournament Data",
-  "image": "https://www.comfygen.com/comfygen-images/golf-live-line-api/golf-live-line-api-hero.webp",
-  "description": "Access real-time golf scores, player statistics, tournament schedules, and live betting odds with Comfygen’s Golf Live Line API. Trusted by platforms worldwide with 6000+ integrations and 99.9% uptime.",
-  "aggregateRating": {
+  brand: "Comfygen",
+  name: "Golf Live Line API Provider – Real-Time Scores & Tournament Data",
+  image:
+    "https://www.comfygen.com/comfygen-images/golf-live-line-api/golf-live-line-api-hero.webp",
+  description:
+    "Access real-time golf scores, player statistics, tournament schedules, and live betting odds with Comfygen’s Golf Live Line API. Trusted by platforms worldwide with 6000+ integrations and 99.9% uptime.",
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
+    ratingValue: "4.9",
+    reviewCount: "1125",
+  },
 };
 
 const ServicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Golf Live Line API ",
-  "provider": {
+  name: "Golf Live Line API ",
+  provider: {
     "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com"
+    name: "Comfygen",
+    url: "https://www.comfygen.com",
   },
-  "description": "Elevate your sports platform with Comfygen’s Golf Live Line API services. Integrate live scores, player stats, and real-time tournament data with scalable, secure APIs tailored for fantasy apps, betting platforms, and golf trackers.",
-  "url": "https://www.comfygen.com/golf-live-line-api-development",
-  "mainEntityOfPage": {
+  description:
+    "Elevate your sports platform with Comfygen’s Golf Live Line API services. Integrate live scores, player stats, and real-time tournament data with scalable, secure APIs tailored for fantasy apps, betting platforms, and golf trackers.",
+  url: "https://www.comfygen.com/golf-live-line-api-development",
+  mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://www.comfygen.com/golf-live-line-api-development"
+    "@id": "https://www.comfygen.com/golf-live-line-api-development",
   },
-  "areaServed": {
+  areaServed: {
     "@type": "Place",
-    "name": "Global"
+    name: "Global",
   },
-  "sameAs": [
+  sameAs: [
     "https://www.facebook.com/comfygen.technologies/",
     "https://www.instagram.com/comfygen_technologies/",
     "https://www.linkedin.com/company/comfygen-technologies",
     "https://x.com/Comfygen_Tech",
-    "https://www.youtube.com/@Comfygentechnologies"
-  ]
+    "https://www.youtube.com/@Comfygentechnologies",
+  ],
 };
-
 
 const faqPageSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
+  mainEntity: [
     {
       "@type": "Question",
-      "name": "What is a Golf Live Line API?",
-      "acceptedAnswer": {
+      name: "What is a Golf Live Line API?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers."
-      }
+        text: "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers.",
+      },
     },
     {
       "@type": "Question",
-      "name": "How accurate is the data from your Golf API?",
-      "acceptedAnswer": {
+      name: "How accurate is the data from your Golf API?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time."
-      }
+        text: "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Can I use this API for fantasy golf platforms?",
-      "acceptedAnswer": {
+      name: "Can I use this API for fantasy golf platforms?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed."
-      }
+        text: "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Do you offer custom Golf API solutions?",
-      "acceptedAnswer": {
+      name: "Do you offer custom Golf API solutions?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals."
-      }
+        text: "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Is your API suitable for betting applications?",
-      "acceptedAnswer": {
+      name: "Is your API suitable for betting applications?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms."
-      }
+        text: "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms.",
+      },
     },
     {
       "@type": "Question",
-      "name": "How long does it take to integrate the API?",
-      "acceptedAnswer": {
+      name: "How long does it take to integrate the API?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment."
-      }
+        text: "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Will I get post-deployment support?",
-      "acceptedAnswer": {
+      name: "Will I get post-deployment support?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance."
-      }
+        text: "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Do you support multi-sport API integration?",
-      "acceptedAnswer": {
+      name: "Do you support multi-sport API integration?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs."
-      }
-    }
-  ]
+        text: "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs.",
+      },
+    },
+  ],
 };
-
-
-
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -261,7 +257,7 @@ export default function Ecommerce(props) {
 
   return (
     <>
-     <Head>
+      <Head>
         <title> Golf Live Line API | Real-Time Golf Data Solutions</title>
         <meta
           name="description"
@@ -271,7 +267,6 @@ export default function Ecommerce(props) {
           name="keywords"
           content="Golf Live Line API, Golf API , Real-Time Golf Data API, Golf Score API Integration, Live Golf Stats API, Golf Tournament Data API, Golf Fantasy API, Golf Betting API Integration, Golf Scoreboard API, Golf API Provider"
         />
-
         <link
           rel="canonical"
           href="https://www.comfygen.com/golf-live-line-api-development "
@@ -281,10 +276,7 @@ export default function Ecommerce(props) {
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
         <meta charSet="UTF-8" />
-        <meta
-          property="og:title"
-          content="Golf Live Line API "
-        />
+        <meta property="og:title" content="Golf Live Line API " />
         <meta
           property="og:description"
           content="Elevate your sports platform with Comfygen’s Golf Live Line API services. Integrate live scores, player stats, and real-time tournament data with scalable, secure APIs tailored for fantasy apps, betting platforms, and golf trackers."
@@ -300,10 +292,7 @@ export default function Ecommerce(props) {
         <meta property="schema:type" content="LocalBusiness" />
         <meta name="copyright" content="Comfygen Private Limited" />
         <meta name="language" content="en-us" />
-        <meta
-          name="abstract"
-          content="Top Golf Live Line API "
-        />
+        <meta name="abstract" content="Top Golf Live Line API " />
         <meta
           name="summary"
           content="Comfygen provides reliable and scalable Golf Live Line API services with global coverage and enterprise-grade support."
@@ -322,10 +311,7 @@ export default function Ecommerce(props) {
         <meta name="coverage" content="Worldwide" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
-        <meta
-          name="subtitle"
-          content="Best Golf Live Line API "
-        />
+        <meta name="subtitle" content="Best Golf Live Line API " />
         <meta name="MobileOptimized" content="320" />
         <meta name="fb:page_id" content="110909321596135" />
         <meta name="HandheldFriendly" content="true" />
@@ -336,10 +322,8 @@ export default function Ecommerce(props) {
         <meta
           property="og:type"
           content="Golf Live Line API Services Provider"
-        />\
-
-         {/* Open Graph */}
-       
+        />
+        \{/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Comfygen Private Limited" />
         <meta property="og:locale" content="en_US" />
@@ -350,24 +334,44 @@ export default function Ecommerce(props) {
         <meta property="fb:page_id" content="110909321596135" />
         <meta property="og:email" content="sales@comfygen.com" />
         <meta property="og:phone_number" content="+91-958-786-7258" />
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp"
+        />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Golf Live Line API " />
-        <meta property="og:url" content="https://www.comfygen.com/golf-live-line-api-development" />
-        <meta property="og:title" content="Golf Live Line API Services | Real-Time Golf Data Solutions" />
-        <meta property="og:description" content="Deliver real-time golf scores, shot-by-shot updates, and tournament insights with our Golf Live Line API. Ideal for fantasy apps, betting platforms, and score tracking solutions." />
-
-
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/golf-live-line-api-development"
+        />
+        <meta
+          property="og:title"
+          content="Golf Live Line API Services | Real-Time Golf Data Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Deliver real-time golf scores, shot-by-shot updates, and tournament insights with our Golf Live Line API. Ideal for fantasy apps, betting platforms, and score tracking solutions."
+        />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Golf Live Line API Services | Real-Time Golf Data Solutions" />
-        <meta name="twitter:description" content="Deliver real-time golf scores, shot-by-shot updates, and tournament insights with our Golf Live Line API. Ideal for fantasy apps, betting platforms, and score tracking solutions." />
-        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp" />
+        <meta
+          name="twitter:title"
+          content="Golf Live Line API Services | Real-Time Golf Data Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Deliver real-time golf scores, shot-by-shot updates, and tournament insights with our Golf Live Line API. Ideal for fantasy apps, betting platforms, and score tracking solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp"
+        />
         <meta name="twitter:site" content="@comfygentech" />
-
-
         {/* Updated JSON-LD schema for SoftwareApplication */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -377,7 +381,7 @@ export default function Ecommerce(props) {
             operatingSystem: "Web, Android, iOS",
             applicationCategory: "SportsApplication",
             offers: {
-              "@type": "Offer", 
+              "@type": "Offer",
               price: "Contact Us - 9587867258",
               priceCurrency: "INR",
               availability: "https://schema.org/InStock",
@@ -393,7 +397,6 @@ export default function Ecommerce(props) {
             },
           })}
         </script>
-
         {/* Structured data scripts */}
         <script
           type="application/ld+json"
@@ -411,19 +414,15 @@ export default function Ecommerce(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
         />
-        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
         />
       </Head>
 
+      <Header />
 
-        <Header />
- 
       <div className="overflow-hidden lg:pt-[110px]">
-
-          
         <HeroSectionForAllPages
           heading="Golf Live Line API"
           ptag="Welcome to Comfygen – your trusted partner for Golf Live Line API services. We deliver scalable, real-time, and developer-friendly golf data integration solutions designed for startups, enterprises, and tech-driven platforms aiming to elevate their sports offerings."
@@ -434,16 +433,15 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-           bgImage="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-live-line-api-hero.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-live-line-api-hero.webp"
         />
 
-    
         <AboutSection
           title="About Company"
           heading="What is Golf Live Line API Integration?"
-          description1="Golf Live Line API Integration is the process of embedding structured, real-time golf data, such as live scores, player statistics, tournament schedules, and hole-by-hole updates, directly into your web or mobile platform using modern APIs. These APIs are engineered to deliver highly accurate, real-time golf information with minimal latency and maximum reliability."   
-          description2="At Comfygen, we specialize in integrating golf APIs that power sports apps, fantasy platforms, betting systems, and analytics dashboards. Our development approach ensures seamless data updates, consistent performance, and visually engaging data representation—managed by professionals who understand both golf as a sport and API technology as a craft."   
-          description3="We offer integration for a variety of Golf APIs, including:"   
+          description1="Golf Live Line API Integration is the process of embedding structured, real-time golf data, such as live scores, player statistics, tournament schedules, and hole-by-hole updates, directly into your web or mobile platform using modern APIs. These APIs are engineered to deliver highly accurate, real-time golf information with minimal latency and maximum reliability."
+          description2="At Comfygen, we specialize in integrating golf APIs that power sports apps, fantasy platforms, betting systems, and analytics dashboards. Our development approach ensures seamless data updates, consistent performance, and visually engaging data representation—managed by professionals who understand both golf as a sport and API technology as a craft."
+          description3="We offer integration for a variety of Golf APIs, including:"
           points={[
             "Golf Live Score APIs",
             "Player Statistics APIs.",
@@ -458,7 +456,9 @@ export default function Ecommerce(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Core Golf Live Line API Integration Services</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Core Golf Live Line API Integration Services
+              </h2>
               <p className="text-base text-center font-normal"></p>
             </div>
             <div className="">
@@ -466,11 +466,6 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-
-
-
-
-       
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
@@ -487,18 +482,24 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        
+
         <section className="bg-[#F5F5F9] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Golf Live Line API Integration Process</h2>
-              <p className="text-base font-normal mt-2">At Comfygen, we follow a streamlined and collaborative approach to integrate Golf Live Line APIs into your platform. From initial consultation to long-term support, every step is designed to ensure smooth, secure, and scalable delivery of live golf data.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Step-by-Step Golf Live Line API Integration Process
+              </h2>
+              <p className="text-base font-normal mt-2">
+                At Comfygen, we follow a streamlined and collaborative approach
+                to integrate Golf Live Line APIs into your platform. From
+                initial consultation to long-term support, every step is
+                designed to ensure smooth, secure, and scalable delivery of live
+                golf data.
+              </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-
-
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -521,16 +522,37 @@ export default function Ecommerce(props) {
             "Transparent communication, agile execution, and 100% code ownership",
           ]}
         />
-         <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  />
-
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Golf Live Line Api"
+        <OtherGameDevelopment
+          heading="We Develops Other Games"
+          gameCards={JSON_DATA.GameCardData}
         />
 
-        
+        <Faq faqData={JSON_DATA.Frequently} title=" Golf Live Line Api" />
+
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(`${process.env.URL}/api/v1/posts?per_page=3`);
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

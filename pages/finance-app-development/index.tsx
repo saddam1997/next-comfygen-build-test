@@ -108,7 +108,7 @@ const Process = [
 
 
 
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
