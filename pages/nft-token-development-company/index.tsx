@@ -52,7 +52,10 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 // import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
 // import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
@@ -108,7 +111,7 @@ const Processs = [
   },
 ];
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -635,6 +638,8 @@ export default function Ecommerce(props) {
           ]}
         />
         <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

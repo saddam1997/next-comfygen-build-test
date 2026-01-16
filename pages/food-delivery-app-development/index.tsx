@@ -90,6 +90,10 @@ const Faq = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 const Process = [
@@ -696,6 +700,8 @@ export default function Ecommerce(props) {
         />
 
         <Faq faqData={JSON_DATA.Frequently} title="" />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

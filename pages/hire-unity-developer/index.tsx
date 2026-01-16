@@ -22,7 +22,10 @@ const ContactFromCenter = dynamic(() => import('../../components/old/components/
 const FaqSection = dynamic(() => import('../../components/old/components/FaqSection'), {
   loading: () => <p>Loading...</p>,
 })
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 export default function Unity(props) {
   let { initialData } = props;
@@ -102,7 +105,7 @@ export default function Unity(props) {
                     const { title, img, decs, num } = elem;
                     return (
                       <div key={num} className=" w-full">
-                        <div className={`${styles.weffwfasd} bg-black/70 h-full w-full rounded-xl  text-gray-50 rounded-xl p-8 space-y-7`} >
+                        <div className={`${styles.weffwfasd} bg-black/70 h-full w-full text-gray-50 rounded-xl p-8 space-y-7`} >
                           <div className="w-28 h-28 bg-[#ffffff] shadow rounded-[17px] flex justify-center items-center">
                             <Image src={img} alt="Casino Game Development Company in India" width={100} height={100} />
                           </div>
@@ -247,7 +250,34 @@ export default function Unity(props) {
           faqData={JSON_DATA.Frequently}
           title="  Metaverse Game Development "
         />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

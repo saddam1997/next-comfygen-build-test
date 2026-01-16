@@ -72,6 +72,10 @@ const Faq = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 const Process = [
@@ -572,6 +576,7 @@ export default function ClinicalApp(props: any) {
         {/* <ContactFromCenter /> */}
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
+  <BlogSection initialData={initialData} />
 
       </div>
     </>
