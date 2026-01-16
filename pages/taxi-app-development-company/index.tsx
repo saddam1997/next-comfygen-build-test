@@ -22,6 +22,8 @@ import CardFeatures from "../../components/Newcomponet/comman/CardFeatures";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
+import Link from "next/link";
+import ComparisonSection from "../../components/Newcomponet/SectionCompoent/ComparisonSection";
 
 
 const loader = () => (
@@ -595,13 +597,14 @@ export default function Ecommerce(props) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top On-Demand Taxi Booking App Development Company"
-          ptag="Looking for a taxi booking app development service to build a scalable, secure, and reliable ride-hailing platform?"
-          ptag1="Comfygen Technology delivers custom taxi booking app development solutions for startups, taxi operators, and enterprises, enabling efficient ride management, real-time tracking, and providing seamless cross-platform user experience using MEAN stack technology."
-          li="Custom taxi booking apps for Android, iOS, and web"
-          li2="Real-time GPS tracking and smart ride management"
-          li3="Secure payment integration and fare calculation"
-          li4="Scalable admin dashboard for complete business control"
+          heading="Taxi Booking App Development Service"
+          subhead='Looking for the best taxi app development company? Your search ends here.'
+          ptag="At Comfygen, we deliver end-to-end taxi booking app development services customised for startups, taxi operators, fleet owners, and enterprises. We create scalable, high-performance ride-hailing solutions designed for real-world operations and long-term growth."
+          ptag1="Taxi booking apps are engineered with real-time GPS tracking, smart ride matching, secure payments, and powerful admin control panels, ensuring smooth experiences for riders, drivers, and operators alike. Our taxi app development solution is fully customizable, giving you complete control over branding, pricing models, commissions, and fleet operations."
+          li="Custom Taxi Booking App Development"
+          li2="White-Label Ride-Hailing Solutions"
+          li3="Driver, Rider & Admin Panel Development"
+          li4="Advanced Analytics & Reporting"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -616,10 +619,11 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Taxi Booking App Development Services
+                Our Custom Taxi Booking App Development Offerings
               </h2>
               <p className="text-base text-center font-normal">
-                Our Taxi Booking App Development Services cover everything needed to build a seamless, scalable, and customer-focused ride-hailing platform. From concept to launch and beyond, we deliver solutions that help you grow your transportation business efficiently.
+                Our custom taxi <Link href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">app development services</Link> are designed to meet the unique business needs and project requirements of companies across industries. We deliver high-performance taxi app development solutions that help you launch, scale, and succeed in today’s competitive mobility landscape.
+
               </p>
             </div>
             <div className="">
@@ -629,23 +633,18 @@ export default function Ecommerce(props) {
         </section>
 
         <AboutSection
-          heading="Why Invest in Customizable Taxi App Development?"
-          description1="Investing in a Custom taxi app development can completely transform the way your transportation business operates. Taxi business no longer just about connecting drivers with passengers; it's about creating a smart, data-driven platform that strengthens your brand, enhances customer loyalty, and increases operational efficiency. Here’s why it’s a smart investment"
-          description2=""
+          heading="What Is a Taxi Booking App and How Does It Work?"
+          description1="A taxi booking app is a mobile application that connects passengers with nearby drivers, providing a fast, convenient, and cashless way to hail rides. By leveraging GPS technology, real-time data, and <a href='https://www.comfygen.com/ewallet-app-development' class='text-blue-600 font-semibold'>secure payment gateways</a>, these apps simplify transportation for users while enhancing efficiency for drivers and service providers."
+          description2="The app ecosystem typically includes three key components: a passenger app, a driver app, and an <a href='https://www.comfygen.com/blog/admin-dashboard-development-for-grocery-delivery/' class='text-blue-600 font-semibold'>admin dashboard</a>. Passengers request rides by entering their pickup and drop-off locations, and the system matches them with the closest available driver through GPS tracking. Once a driver accepts the ride, the passenger can monitor the vehicle’s real-time location until arrival. Payments are processed via multiple integrated options such as credit cards, digital wallets, or cash. Additional <a href='https://www.comfygen.com/blog/ev-taxi-booking-app-development-cost-features/' class='text-blue-600 font-semibold'>EV taxi app development features</a> often include ride scheduling, fare estimation, driver and passenger ratings, and in-app communication, all designed to ensure a seamless and user-friendly experience."
           description3=""
           description4=""
-          points={[
-            "<b>Designed According to Business Model</b> – Unlike generic apps, an on-demand taxi app development solution adapts to your unique requirements, whether it’s ride types, pricing, or service areas.",
-            "<b>Enhanced User Experience</b> – Custom features like tracking, multiple payment options, and loyalty programs make rides more convenient, boosting customer satisfaction and retention rates.",
-            "<b>Competitive Advantage </b> – A branded, feature-rich app sets you apart from competitors, attracting more riders and drivers while increasing market presence.",
-            "<b>Data-Driven Decisions</b> – With analytics built into your taxi app, you gain insights into user behavior, peak hours, and operational efficiency to optimize performance."
-          ]}
+          points={[]}
           imageSrc="https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp"
           link="/about-us"
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        
+
 
         <CallToAction
           heading="Get Started with Your Taxi Booking App"
@@ -684,6 +683,10 @@ export default function Ecommerce(props) {
           featuresData={JSON_DATA.featuresData1}
           grid="2"
         />
+
+
+        <ComparisonSection data={JSON_DATA.BookingComparison} />
+
         <CallToAction
           heading="Looking for a Dedicated Development Partner?"
           text="Comfygen Technologies offers expert guidance to help businesses build scalable, high-performance taxi booking apps. Connect with our team to discuss your idea and plan your project."
@@ -699,7 +702,7 @@ export default function Ecommerce(props) {
                 Our End-to-End Taxi App Development Process
               </h2>
               <p className="text-base font-normal mt-2">
-                We follow a structured approach to deliver efficient, secure, and scalable taxi booking apps. From concept to post-launch support, each step is designed to optimize user experience, streamline operations, and provide administrators full control over fleet management while ensuring timely delivery and business-ready solutions.
+                We follow a structured development approach to build efficient, secure, and scalable <Link href={"https://www.comfygen.com/blog/ai-taxi-app-development/"} className="text-blue-600 font-semibold">AI-powered taxi booking apps</Link>. From initial concept to post-launch support, Our process ensures timely delivery and results in business-ready taxi app development solutions designed for long-term success.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
