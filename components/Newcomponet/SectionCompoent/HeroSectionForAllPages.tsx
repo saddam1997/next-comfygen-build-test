@@ -96,7 +96,7 @@ export default function HeroSectionForAllPages(props: any) {
           </div>
           <div className="md:py-6 py-4">
             <button
-              className="flex items-center gap-4 bg-white text-black font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition"
+              className="flex btn btn-fix items-center gap-4 bg-white text-black font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition"
               onClick={props.openModal}
             >
               {props.btnName}{" "}

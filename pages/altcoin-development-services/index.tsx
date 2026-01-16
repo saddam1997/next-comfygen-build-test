@@ -9,10 +9,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
-const NewSection = dynamic(
-  () => import("../../components/Newcomponet/comman/NewSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -54,16 +51,10 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-
-// import NewSection from "../Newcomponet/comman/NewSection"
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 export default function Altcoin(props: any) {
@@ -403,6 +394,8 @@ export default function Altcoin(props: any) {
         <Faq
           faqData={JSON_DATA.Frequently}
         />
+        <BlogSection initialData={initialData} />
+
       </div>
     </>
   );

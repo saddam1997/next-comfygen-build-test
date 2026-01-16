@@ -650,7 +650,7 @@ body {
 }
 
 
-
+/* 
 .services-sec::after {
   content: "";
   background: #26314F url(https://www.comfygen.com/image/services-bg.webp);
@@ -662,9 +662,9 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   right: -100%;
-}
+} */
 
-.action-sec::after {
+/* .action-sec::after {
   content: "";
   position: absolute;
   background-image: url(https://www.comfygen.com/image/call-action-after-img.svg);
@@ -675,7 +675,7 @@ body {
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 70% auto;
-}
+} */
 
 
 .ripple-effect-button {

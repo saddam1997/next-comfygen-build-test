@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/basketballlivelineapi.json";
-
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSection from "../../components/HeroSection";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -54,6 +53,10 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -238,17 +241,9 @@ const faqPageSchema = {
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -379,16 +374,11 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
 
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Basketball Live Line API"
           ptag="Bring real-time excitement to your platform with our Basketball Live Line API solutions. At Comfygen, we offer scalable and developer-friendly basketball data APIs that deliver live scores, match stats, player updates, and game insights straight to your app or website. Whether you’re powering a sports portal, analytics dashboard, our APIs ensure ultra-low latency, high availability, and accurate basketball coverage across global leagues and events. Experience seamless Basketball Score API integration backed by expert support and flexible data customization. Start delivering real-time game action your users will love."
-
           btnName="Talk With Expert"
           btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-hero.webp"
         />
 
@@ -478,8 +468,33 @@ export default function Ecommerce(props) {
           title=" Basketball Live Line Api"
         />
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div >
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

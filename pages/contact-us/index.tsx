@@ -39,7 +39,8 @@ export default function Contact() {
         </div>
        </section>
 
-        <GetinTouch />
+        {/* <GetinTouch /> */}
+        {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
   )

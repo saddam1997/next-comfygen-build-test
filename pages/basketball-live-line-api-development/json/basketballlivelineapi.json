@@ -52,10 +52,6 @@
   }
 ],
 
-
-
-
-
 "servicesData": [
   {
     "title": "Real-Time Basketball Match Scores API",
@@ -119,10 +115,6 @@
   }
 ],
 
-
-
-
-
 "consultancyHead" :[
   {
     "num": "1",
@@ -157,7 +149,6 @@
     "desc": "Our basketball API is built for flexibility. Customize endpoints, filter data feeds, and scale across platforms like apps, websites, or scoreboards with ease."
   }
 ],
-
 
 
   "pageData": {

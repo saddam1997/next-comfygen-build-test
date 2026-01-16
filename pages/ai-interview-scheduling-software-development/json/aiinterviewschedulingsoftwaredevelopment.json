@@ -870,5 +870,239 @@
       "title": "Event-based Dating App Development",
       "decs": "As a mobile dating app development company, we are experts at creating different types of dating apps, including event-based dating apps. You can easily opt to create an event-based dating app that can help people meet in real life at social events and group events that are very social and fun for the audience."
     }
-  ]
+  ],
+   "jsonLdData":[
+  {
+    "@context": "https://schema.org",
+    "@type": "PostalAddress",
+    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+    "addressLocality": "Jaipur, Rajasthan",
+    "addressRegion": "India",
+    "postalCode": "302006",
+    "telephone": "+91-958-786-7258"
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "PostalAddress",
+    "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+    "addressLocality": "Toronto",
+    "addressRegion": "Canada",
+    "postalCode": "M1G3S7",
+    "telephone": "+1 579-977-4475"
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Comfygen",
+    "url": "https://www.comfygen.com/",
+    "logo": "https://www.comfygen.com/svg/Logo1.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "contactOption": "WhatsApp",
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
+      "availableLanguage": "en, in"
+    },
+    "sameAs": [
+      "https://www.facebook.com/comfygen",
+      "https://twitter.com/comfygentech",
+      "https://www.instagram.com/comfygen_/?hl=en",
+      "https://youtube.com/@comfygenbusiness",
+      "https://www.linkedin.com/company/comfygen-private-limited",
+      "https://in.pinterest.com/comfygenpvt/"
+    ]
+
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Comfygen",
+    "image": "https://www.comfygen.com/svg/Logo1.svg",
+    "@id": "Comfygen",
+    "url": "https://www.comfygen.com/",
+    "telephone": "+91-958-786-7258",
+    "priceRange": "$",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+        "addressLocality": "Jaipur",
+        "postalCode": "302006",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+        "addressLocality": "Toronto",
+        "postalCode": "M1G3S7",
+        "addressCountry": "Canada"
+      }
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://www.facebook.com/comfygen",
+      "https://twitter.com/comfygentech",
+      "https://www.instagram.com/comfygen_/?hl=en",
+      "https://www.youtube.com/@ComfygenBusiness",
+      "https://www.linkedin.com/company/comfygen-private-limited",
+      "https://in.pinterest.com/comfygenpvt/"
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Custom AI Interview Scheduling App Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/"
+    },
+    "description": "Boost recruitment efficiency with our custom AI interview scheduling app development. Automate interview bookings, candidate notifications, and smart job recommendations with our advanced interview scheduling software.",
+    "url": "https://www.comfygen.com/ai-interview-scheduling-software-development",
+    "mainEntityOfPage": "https://www.comfygen.com/ai-interview-scheduling-software-development",
+    "areaServed": "Global",
+    "serviceType": [
+      "smart job recommendation",
+      "Smart Interview Scheduling Tools for HR",
+      "Smart Interview Scheduling Tools for HR"
+
+    ],
+
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+
+    ]
+  },
+
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": "Comfygen Technologies",
+    "Name": "Automated Interview Management Solutions",
+    "image": "Hero section image",
+    "description": "Streamline your hiring with AI interview scheduler software development. Automate interview scheduling, candidate communication, and workflow optimization with our customizable and secure solutions.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "169"
+    }
+
+
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Comfygen",
+    "url": "https://www.comfygen.com/",
+    "logo": "https://www.comfygen.com/svg/Logo1.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "contactOption": "WhatsApp",
+      "telephone": "+91 9587867258",
+      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+      "email": "sales@comfygen.com",
+
+      "availableLanguage": "en, in"
+    },
+    "sameAs": [
+      "https://www.facebook.com/comfygen",
+      "https://twitter.com/comfygentech",
+      "https://www.instagram.com/comfygen_/?hl=en",
+      "https://youtube.com/@comfygenbusiness",
+      "https://www.linkedin.com/company/comfygen-private-limited",
+      "https://in.pinterest.com/comfygenpvt/"
+    ]
+  },
+
+  {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is AI-powered interview scheduling software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI-powered interview scheduling software automates the hiring process by using artificial intelligence to match candidate availability, generate interview questions from CVs, and send automatic notifications. It reduces manual work, improves scheduling efficiency, and enhances the overall candidate experience with features like self-rescheduling, smart reminders, and personalized interview workflows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can your software integrate with our existing ATS or HRMS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our AI interview scheduler seamlessly integrates with leading Applicant Tracking Systems (ATS) and HRMS platforms like SAP, Workday, Oracle, and more. This ensures smooth data flow, centralized operations, and zero disruption to your current hiring workflow while boosting recruitment efficiency with intelligent automation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of interviews can your software schedule?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our software supports various interview formats including virtual, in-person, hybrid, group, 1-on-1, and round-robin interviews. It also includes video proctoring and live interview capabilities, making it a flexible solution for modern recruitment across industries and roles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the interview scheduling software mobile-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We develop responsive web and mobile apps for Android and iOS. Candidates and recruiters can manage interviews on the go with real-time notifications, calendar sync, and self-scheduling features that make mobile access easy and efficient."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AI improve the hiring workflow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI analyzes millions of data points to recommend workflow improvements, detect bottlenecks, and automate repetitive tasks. It streamlines interview scheduling, candidate shortlisting, and question generation—resulting in faster, more accurate, and data-driven hiring decisions that reduce time-to-hire and increase candidate satisfaction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is your solution secure and compliant with regulations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our AI-powered interview scheduling software is built with enterprise-grade security. It complies with global standards like GDPR, SOC 2, and HIPAA. All data is encrypted, access is controlled, and systems are regularly audited to ensure maximum compliance and data protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop an AI-powered interview scheduling software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost to develop AI-powered interview scheduling software typically ranges from $20,000 to $100,000+, depending on features, platform complexity, AI integration, and third-party integrations. Customization, scalability, and compliance requirements also impact pricing. We provide tailored quotes based on your specific needs and business goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build an AI Interview Scheduling App?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Development timelines usually range between 10 to 24 weeks, based on the project scope, platform (web/mobile), AI functionality, and integrations. Simple versions may take less time, while enterprise-grade solutions with ATS/HRMS integrations and custom AI features require longer development and testing cycles for best performance and security."
+        }
+      }
+    ]
+
+  }
+
+]
 }
