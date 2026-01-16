@@ -17,11 +17,11 @@ export default function BlogSection(props:any) {
           </div>
         </div>
         <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2 xl:gap-14 cursor-pointer mt-8">
-          {props.initialData && props.initialData.length > 0
-            ? props.initialData.map((element: any, index: any) => (
+          {props?.initialData && props?.initialData?.length > 0
+            ? props?.initialData?.map((element: any, index: any) => (
                 element ? (
                   <a 
-                    href={element.link} 
+                    href={element?.link} 
                    key={index}
                     className="block"
                   >
@@ -30,8 +30,8 @@ export default function BlogSection(props:any) {
                         <CustomImage
                           className="rounded-xl"
                           src={
-                            element.og_image
-                              ? element.og_image
+                            element?.og_image
+                              ? element?.og_image
                               : "https://www.comfygen.com/images/defaultImage.png"
                           }
                           alt="imgs"
@@ -48,12 +48,12 @@ export default function BlogSection(props:any) {
                       <div className="flex flex-col justify-between space-y-3">
                         <h3
                           className="line-clamp-2 group-hover:text-[#5556D1] font-semibold text-black text-xl"
-                          dangerouslySetInnerHTML={{ __html: element.title }}
+                          dangerouslySetInnerHTML={{ __html: element?.title }}
                         ></h3>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center space-x-4">
                             <p className="text-base text-black line-clamp-3">
-                              {element.description ? element.description : null}
+                              {element?.description ? element?.description : null}
                             </p>
                           </div>
                         </div>

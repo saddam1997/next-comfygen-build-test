@@ -85,7 +85,7 @@ const BlogSection = dynamic(
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
   let { Hire, myList, WhyChoosed } = JSON_DATA;
