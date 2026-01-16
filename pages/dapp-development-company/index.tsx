@@ -8,10 +8,7 @@ import JSON_DATA from "./json/dapp.json";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AboutSection from "../../components/Newcomponet/SectionCompoent/AboutSection";
 
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
@@ -24,7 +21,8 @@ const SolutionSec = dynamic(
 );
 
 const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
 
@@ -62,11 +60,10 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
-
-
-
-
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 // import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
 // import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
@@ -78,7 +75,6 @@ const Faq = dynamic(
 // import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
 // import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
 // import Faq from "../Newcomponet/SectionCompoent/Faq";
-
 
 import {
   IconUsers,
@@ -95,10 +91,6 @@ import {
 } from "@tabler/icons-react";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
-
-
-
-
 
 const ContactFromCenter = dynamic(
   () => import("../../components/old/components/ContactFromCenter"),
@@ -177,7 +169,6 @@ export default function Ecommerce(props: any) {
   };
 
   const jsonLdData = [
-
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -254,17 +245,18 @@ export default function Ecommerce(props: any) {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Best dApp Development Company",
-      "provider": {
+      name: "Best dApp Development Company",
+      provider: {
         "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com "
+        name: "Comfygen Technologies",
+        url: "https://www.comfygen.com ",
       },
-      "description": "Comfygen, the best dApp development company, designs and develops secure, scalable decentralized applications (dApps) with unmatched user experience. From DeFi platforms to NFT marketplaces, we bring your blockchain vision to life on Ethereum, Solana, Polygon, BNB Chain, and more.",
-      "url": "https://www.comfygen.com/dapp-development-company",
-      "mainEntityOfPage": "https://www.comfygen.com/dapp-development-company  ",
-      "areaServed": "Global",
-      "serviceType": [
+      description:
+        "Comfygen, the best dApp development company, designs and develops secure, scalable decentralized applications (dApps) with unmatched user experience. From DeFi platforms to NFT marketplaces, we bring your blockchain vision to life on Ethereum, Solana, Polygon, BNB Chain, and more.",
+      url: "https://www.comfygen.com/dapp-development-company",
+      mainEntityOfPage: "https://www.comfygen.com/dapp-development-company  ",
+      areaServed: "Global",
+      serviceType: [
         "dApp Development Services",
         "Decentralized Application Development",
         "Custom dApp Development",
@@ -277,17 +269,15 @@ export default function Ecommerce(props: any) {
         "Polygon dApp Development",
         "BNB Chain dApp Development",
         "Smart Contract Development",
-        "Blockchain App Development"
+        "Blockchain App Development",
       ],
-      "sameAs": [
+      sameAs: [
         "https://www.facebook.com/comfygen.technologies ",
         "https://x.com/Comfygen_Tech ",
         "https://www.instagram.com/comfygen_technologies ",
-        "https://www.linkedin.com/company/comfygen-technologies "
-      ]
-    }
-
-    ,
+        "https://www.linkedin.com/company/comfygen-technologies ",
+      ],
+    },
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -301,16 +291,15 @@ export default function Ecommerce(props: any) {
         telephone: "+91 9587867258",
         email: "sales@comfygen.com",
         areaServed: ["IN", "US", "CA", "GB"],
-        availableLanguage: ["en", "hi"]
+        availableLanguage: ["en", "hi"],
       },
       sameAs: [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
+        "https://www.linkedin.com/company/comfygen-technologies",
+      ],
     },
-
 
     {
       "@context": "https://schema.org",
@@ -322,13 +311,13 @@ export default function Ecommerce(props: any) {
       brand: {
         "@type": "Organization",
         name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/"
+        url: "https://www.comfygen.com/",
       },
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.9",
-        reviewCount: "115"
-      }
+        reviewCount: "115",
+      },
     },
 
     {
@@ -340,21 +329,21 @@ export default function Ecommerce(props: any) {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.comfygen.com/"
+          item: "https://www.comfygen.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Blockchain Development",
-          item: "https://www.comfygen.com/blockchain-development"
+          item: "https://www.comfygen.com/blockchain-development",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "dApp Development Company",
-          item: "https://www.comfygen.com/dapp-development-company"
-        }
-      ]
+          item: "https://www.comfygen.com/dapp-development-company",
+        },
+      ],
     },
     {
       "@context": "https://schema.org",
@@ -420,14 +409,11 @@ export default function Ecommerce(props: any) {
     },
   ];
 
-
-
   return (
     <>
       <Head>
         <title>
-        Enterprise DApp Development Company | Blockchain Solutions
-
+          Enterprise DApp Development Company | Blockchain Solutions
         </title>
 
         {/* Primary Meta */}
@@ -435,14 +421,22 @@ export default function Ecommerce(props: any) {
           name="description"
           content="Build secure and scalable decentralized applications with our expert DApp development services for Web3, DeFi, NFT marketplaces, and enterprises."
         />
-        <meta name="keywords" content="dApp Development Services, Decentralized Application Development, Custom dApp Development, Best dApp Development Company, DeFi Platform Development, NFT Marketplace Development, Web3 Application Development, Ethereum dApp Development, Solana dApp Development, Polygon dApp Development, BNB Chain dApp Development, Smart Contract Development, Blockchain App Development" />
-
+        <meta
+          name="keywords"
+          content="dApp Development Services, Decentralized Application Development, Custom dApp Development, Best dApp Development Company, DeFi Platform Development, NFT Marketplace Development, Web3 Application Development, Ethereum dApp Development, Solana dApp Development, Polygon dApp Development, BNB Chain dApp Development, Smart Contract Development, Blockchain App Development"
+        />
 
         {/* Canonical Tag */}
 
-        <link rel="canonical" href="https://www.comfygen.com/dapp-development-company "></link>
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/dapp-development-company "
+        ></link>
         {/* Viewport + Mobile */}
-        <meta name="apple-mobile-web-app-title" content="dApp Development Company" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="dApp Development Company"
+        />
         <meta
           name="owner"
           content="A Founder is one of the individuals who helped establish a dApp Development Company in India, the USA, startup, or organization."
@@ -481,10 +475,6 @@ export default function Ecommerce(props: any) {
           href="https://www.comfygen.com/dapp-development-company"
         />
 
-
-
-
-
         {/* Extra OG for Facebook */}
         <meta
           property="og:facebook_title"
@@ -501,28 +491,44 @@ export default function Ecommerce(props: any) {
           name="twitter:title"
           content="dApp Development Company | Custom Blockchain Solutions"
         />
-        <meta name="twitter:description" content="Comfygen is a top dApp development company delivering secure and scalable decentralized applications on Ethereum, Solana, Polygon, BNB Chain, and more." />
-        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp" />
+        <meta
+          name="twitter:description"
+          content="Comfygen is a top dApp development company delivering secure and scalable decentralized applications on Ethereum, Solana, Polygon, BNB Chain, and more."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp"
+        />
         <meta name="twitter:site" content="@Comfygen_Tech" />
-
-
-
-
 
         {/* Facebook Meta  */}
 
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp" />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.comfygen.com/comfygen-images/dapp-development-company/dApp-development-company.webp"
+        />
         <meta property="og:image:alt" content="dApp Development" />
-        <meta property="og:url" content="https://www.comfygen.com/dapp-development-company " />
-        <meta property="og:title" content="dApp Development Company | DeFi & NFT Solutions – Comfygen" />
-        <meta property="og:description" content=" Comfygen builds secure, scalable dApps for DeFi, NFT marketplaces, and more. Launch your blockchain project on Ethereum, Solana, Polygon, and BNB Chain with our expert team." />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/dapp-development-company "
+        />
+        <meta
+          property="og:title"
+          content="dApp Development Company | DeFi & NFT Solutions – Comfygen"
+        />
+        <meta
+          property="og:description"
+          content=" Comfygen builds secure, scalable dApps for DeFi, NFT marketplaces, and more. Launch your blockchain project on Ethereum, Solana, Polygon, and BNB Chain with our expert team."
+        />
 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-
       </Head>
 
       <BlockChainHeader />
@@ -544,7 +550,6 @@ export default function Ecommerce(props: any) {
           />
         </div>
         <Milestones />
-
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -636,8 +641,6 @@ export default function Ecommerce(props: any) {
         />
         <TechStack title="Technology Stack" description="" />
 
-
-
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
@@ -645,8 +648,6 @@ export default function Ecommerce(props: any) {
             description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
           />
         </section>
-
-
 
         <section className="bg-gradient-to-r from-[#272868] to-[#5556D1] lg:py-16 py-10">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -762,8 +763,30 @@ export default function Ecommerce(props: any) {
           imageAlt="Get in touch now."
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
 
+export async function getStaticProps() {
+  try {
+    const res = await fetch(`${process.env.URL}/api/v1/posts?per_page=3`);
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
+}

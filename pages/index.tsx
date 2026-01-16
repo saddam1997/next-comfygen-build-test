@@ -325,7 +325,7 @@ export default function Home(props: any) {
         </div>
         <Milestones />
         {/* <Milestonessec/>*/}
-        <Milestonessec />
+        {/* <Milestonessec /> */}
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

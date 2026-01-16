@@ -16,7 +16,7 @@ const TechnologyStack = dynamic(() => import("../../../components/Newcomponet/po
 );
 
 
-export default function about(props:any) {
+export default function about(props: any) {
   let { initialData } = props;
 
 

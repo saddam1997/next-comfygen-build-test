@@ -82,6 +82,7 @@ const AppcardSlider = dynamic(() => import("../../components/Newcomponet/Section
 
 const BlogSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/BlogSection"), {
   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
+  ssr: true,
 });
 
 

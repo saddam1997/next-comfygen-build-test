@@ -95,6 +95,10 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 import {
@@ -621,6 +625,7 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title="ReactJS Development Technology"
         />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>
