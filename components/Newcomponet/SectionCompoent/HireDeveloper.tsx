@@ -32,16 +32,18 @@ const HireDeveloper = ({
                                 <p className="text-base text-white" dangerouslySetInnerHTML={{ __html: text2 }} />
                             </div>
 
-                            {listItems.length > 0 && (
-                                <ul className="mt-5 space-y-2">
-                                    {listItems.map((item, index) => (
-                                        <li key={index} className="flex items-start  gap-2 text-white">
-                                            <span className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1"></span>
-                                            <span dangerouslySetInnerHTML={{ __html: item }} />
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
+                            <ul className="mt-5 space-y-2">
+                                {(listItems ?? []).map((item, index) => (
+                                    <li
+                                        key={index}
+                                        className="flex items-start gap-2 text-white"
+                                    >
+                                        <span className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1" />
+                                        <span dangerouslySetInnerHTML={{ __html: item }} />
+                                    </li>
+                                ))}
+                            </ul>
+
                         </div>
                         <div className="mt-8">
                             <Link href={buttonLink} passHref>

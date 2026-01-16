@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baseballlivelineapidevelopment.json";
-
-
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSection from "../../components/HeroSection";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -56,184 +54,18 @@ const Faq = dynamic(
 )
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Horse Racing Live Line Api",
-  url: "https://www.comfygen.com/horse-racing-live-line-api-development",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen - Best Horse Racing Live Line API Service Provider",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  brand: "Comfygen",
-  name: "Horse Racing Live Line API Provider – Real-Time Odds & Race Data",
-  image:
-    "https://www.comfygen.com/comfygen-images/horse-racing-live-line-api-development/horse-racing-live-line-api-hero.webp",
-  description:
-    "Integrate live horse racing odds, results, and race updates with our Horse Racing Live Line API. Enhance your  or sports platform with real-time, reliable data feeds.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1125",
-  },
-};
-
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Baseball Live Line API",
-  provider: {
-    "@type": "Organization",
-    name: "Comfygen Technologies",
-    url: "https://www.comfygen.com/",
-  },
-  description:
-    "Get powerful Baseball Live Line API services. Access real-time MLB stats, scores, and odds. Custom APIs for sports apps.",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/baseball-live-line-api-development",
-  },
-  areaServed: {
-    "@type": "Place",
-    name: "Global",
-  },
-  serviceType: [
-    "Real-Time Game Updates",
-    "Live Streaming Compatibility",
-    "Advanced Player & Team Stats",
-    "Historical MLB Odds Access",
-    "Developer-Friendly Free MLB APIs",
-    "Betting-Specific API Integration",
-  ],
-  sameAs: [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies",
-  ],
-};
-
-const faqPageSchema = {
-  "@context": "https://schema.org/",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: " Do you provide a Baseball Live Line API for MLB games?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: " Yes, we offer MLB-specific APIs that include live scores, team stats, and play-by-play updates.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I access historical MLB odds data via your API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. Our MLB historical odds database provides years of past odds and game outcomes.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is your Baseball Data API available for free testing?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, we offer a limited version of the free MLB API for and sandbox testing.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How accurate is your Baseball Stats API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We use official league sources and high-frequency updates for best-in-class accuracy.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you support fantasy app integration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Baseball Live Sports Data API is fantasy-ready and supports custom features.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What formats are supported in your MLB API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We support JSON and XML output formats for seamless integration.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I get real-time  data",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our BASEBALL BETTING API includes live odds across multiple markets.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What’s the latency on your API endpoints?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Less than 3 seconds for major games and under 5 seconds during peak times.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you provide player-level analytics too?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our baseball stats API offers deep data on player performance and match impact.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I start with Baseball Live Line API integration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Simply contact us for a free MLB API consultation, and our team will guide your implementation.",
-      },
-    },
-  ],
-};
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
+
 
   return (
     <>
@@ -351,40 +183,36 @@ export default function Ecommerce(props) {
         {/* Structured data scripts */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.structuredData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.organizationData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.productData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.serviceSchema) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqPageSchema) }}
         />
       </Head>
 
 
       <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+      <div className="overflow-hidden  lg:pt-[110px]">
+        <HeroSection
           heading="Baseball Live Line API"
           subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
           ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
           ptag1="From live game updates to historical MLB odds, our service empowers developers and businesses alike to create data-rich sports experiences. Need a customized Baseball data API? We’ve got you covered."
           btnName="Talk With Expert"
           btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/baseball-live-line-api-development/baseball-api-hero.webp"
         />
 
@@ -479,8 +307,33 @@ export default function Ecommerce(props) {
           title="Baseball Live Line Api"
         />
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

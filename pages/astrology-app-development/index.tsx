@@ -18,10 +18,6 @@ const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCo
 });
 
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-  ssr: true,
-});
 
 
 const Features = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Features"), {
@@ -89,7 +85,7 @@ const BlogSection = dynamic(() => import("../../components/Newcomponet/SectionCo
 
 
 
-export default function ClinicalApp(props: any) {
+export default function ClinicalApp(props:any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
 

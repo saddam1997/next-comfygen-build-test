@@ -5,13 +5,29 @@ import TalkToExpertModal from "../modals/TalkToExpertModal";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import HeroLoader from "./HeroLoader";
+import { useState } from "react";
 
 export default function HeroSection(props: any) {
 
-  /* ================= LOADER ================= */
-  if (props.isLoading) {
-    return <HeroLoader />;
-  }
+
+    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+
+    const openModal = () => {
+        setTalkToExpertModal(true);
+    };
+
+    const closeModal = () => {
+        setTalkToExpertModal(false);
+    };
+
+
+
+
+
+    /* ================= LOADER ================= */
+    if (props.isLoading) {
+        return <HeroLoader />;
+    }
 
     return (
         <section className="relative flex  min-h-[50vh] sm:min-h-[50vh] lg:min-h-[50vh] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
@@ -65,7 +81,7 @@ export default function HeroSection(props: any) {
                     {/* ================= CTA ================= */}
                     <div className="pt-3 sm:pt-4">
                         <button
-                            onClick={props.openModal}
+                            onClick={openModal}
                             aria-label="Talk to an expert"
                             className={`${styles.btnFix} text-sm sm:text-base`}
                         >
@@ -91,14 +107,14 @@ export default function HeroSection(props: any) {
             </div>
 
             {/* ================= MODAL ================= */}
-            {props.talkToExpertModal && (
+            {talkToExpertModal && (
                 <div
                     className="fixed inset-0 z-50 overflow-y-auto bg-black/60"
                     role="dialog"
                     aria-modal="true"
                 >
-                    <TalkToExpertModal isOpen={props.talkToExpertModal}
-                        onClose={props.closeModal} />
+                    <TalkToExpertModal isOpen={talkToExpertModal}
+                        onClose={closeModal} />
                 </div>
             )}
         </section>
