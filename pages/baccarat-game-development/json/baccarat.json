@@ -141,5 +141,72 @@
       "title": "How Much Does Baccarat Game App Development Cost ?",
       "desc": "Connect with our expert to know ballpark estimation. Besides, we provide game development services at pocket-friendly rates."
     }
-  ]
+  ],
+
+ "Process":[
+  {
+    "title": "Business Consultation",
+    "description": "Convenient and featured-rich dashboard with detailed content and insights."
+  },
+  {
+    "title": "Wireframe",
+    "description": "User-friendly interface lets you manage player’s stats and much more."
+  },
+  {
+    "title": "Game Development",
+    "description": "Introduce new or bring modification in existing rules easily. Make poker games more immersive."
+  },
+  {
+    "title": "Whitepaper",
+    "description": "Bringing developers and other associates for poker game app development."
+  },
+  {
+    "title": "Game Deployment",
+    "description": "Copywriter producing whitepaper for your business simultaneously."
+  },
+  {
+    "title": "Integration of Advanced Features",
+    "description": "To enhance user experience and gameplay, we integrate advanced features like AI-powered analytics, real-time multiplayer modes, and blockchain-based secure transactions."
+  },
+  {
+    "title": "Marketing And Maintenance",
+    "description": "We also help in marketing and improving your baccarat game app."
+  }
+
+],
+
+
+ "technologyData": [
+  {
+    "img": "<IconDeviceGamepad2 stroke={1.5} className='w-12 h-12' />",
+    "title": "Single Player",
+    "desc": "Packed with advanced algorithm characteristics that produce random numbers."
+  },
+  {
+    "img": "<IconTrophy stroke={1.5} className='w-12 h-12' />",
+    "title": "Tournament Hosting",
+    "desc": "This mode helps creating and managing tournaments for baccarat with advanced features."
+  },
+  {
+    "img": "<IconShieldCheck stroke={1.5} className='w-12 h-12' />",
+    "title": "Anti Fraud System",
+    "desc": "We use anti-cheats and fraudulent systems that could detect cheats and malware to keep baccarat games clean."
+  },
+  {
+    "img": "<IconGift stroke={1.5} className='w-12 h-12' />",
+    "title": "Reward & Loyalty",
+    "desc": "Allows admin to deploy custom campaigns for rewards and loyalty programs to sustain engagement."
+  },
+  {
+    "img": "<IconCertificate stroke={1.5} className='w-12 h-12' />",
+    "title": "RNG Certified Games",
+    "desc": "Our baccarat game development services are RNG certified and offer transparent gaming experience."
+  },
+  {
+    "img": "<IconUserOff stroke={1.5} className='w-12 h-12' />",
+    "title": "Play As Guest",
+    "desc": "Through guest mode, players could experience baccarat games without logging in and aware of its rules."
+  }
+]
+
 }

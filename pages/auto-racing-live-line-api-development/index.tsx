@@ -54,229 +54,11 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-const Process = [
-  {
-    title: "Step 1 – Requirement Analysis",
-    description:
-      "We begin by understanding your platform type, target audience, and specific data needs. This helps us define a clear roadmap for your racing API solution."
-  },
-  {
-    title: "Step 2 – Wireframing & Planning",
-    description:
-      "A detailed architecture is planned, mapping out data flow, endpoints, and integrations. This ensures smooth development and alignment with your business goals."
-  },
-  {
-    title: "Step 3 – API Development",
-    description:
-      "Our developers build secure, scalable, and fast endpoints tailored to your auto racing data needs. Every function is crafted to ensure real-time accuracy and performance."
-  },
-  {
-    title: "Step 4 – Integration Testing",
-    description:
-      "We simulate real-race scenarios to ensure zero-latency data delivery and flawless integration. All endpoints are tested rigorously for reliability and consistency."
-  },
-  {
-    title: "Step 5 – Client-Side Integration",
-    description:
-      "Our team assists you in smoothly connecting the API to your mobile or web frontend. We make sure data renders in real-time with full responsiveness."
-  },
-  {
-    title: "Step 6 – Monitoring & Analytics",
-    description:
-      "Once live, we set up monitoring tools to track performance, usage, and uptime. You’ll always know how your API is behaving in real-world conditions."
-  },
-  {
-    title: "Step 7 – Ongoing Maintenance",
-    description:
-      "We provide regular updates, new features, and security patches post-launch. Our team ensures your API evolves with your platform’s growth."
-  }
-];
-
-
-
-
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebPage",
-  "@id": "#WebPage",
-  "url": "https://www.comfygen.com/auto-racing-live-line-api-development",
-  "name": "Auto Racing Live Line API"
-
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org/",
-  "@type": "Organization",
-  "@id": "#Organization",
-  "url": "https://www.comfygen.com/",
-  "legalName": "Comfygen Technologies",
-  "name": "Comfygen",
-  "description": "Comfygen is a leading app development company rendering a spectrum of tech solutions globally. Discover exceptional web and app and blockchain software development services.",
-  "image": "https://www.comfygen.com/svg/Logo1.svg",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "telephone": "9587867258",
-  "email": "sales@comfygen.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",
-    "addressLocality": "Ajmer Rd",
-    "addressRegion": "Jaipur, Rajasthan",
-    "addressCountry": "India",
-    "postalCode": "302006"
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen",
-    "https://www.youtube.com/@ComfygenBusiness",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited/",
-    "https://x.com/comfygentech"
-  ]
-
-};
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Auto Racing Live Line API Provider – Real-Time Scores, Odds & Race Data",
-  "image": "https://www.comfygen.com/comfygen-images/auto-racing-live-line-api-development/auto-racing-live-line-api-hero.webp",
-  "description": "Integrate real-time auto racing scores, race positions, lap times, and live odds with Comfygen’s Auto Racing Live Line API. and real-time analytics systems.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
-
-
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Auto Racing Live Line API",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Get real-time racing scores, odds, and stats with Comfygen’s Auto Racing Live Line API services. Custom APIs for, stats, and mobile/web integration.",
-  "url": "https://www.comfygen.com/auto-racing-live-line-api-development",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/auto-racing-live-line-api-development"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Global"
-  },
-  "serviceType": [
-    "Custom Auto Racing API ",
-    "Live Auto Racing Score API",
-    "Auto Racing League Data API",
-    "Auto Race Highlights API",
-    "Auto Racing API for Sportsbook",
-    "Auto Racing API for Developers"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies"
-  ]
-
-};
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is an Auto Racing Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An Auto Racing Live Line API provides real-time race data such as scores, odds, and stats for integration into mobile apps, websites, and sportsbook platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use the API for  platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer Auto Racing  API integration specifically designed for sportsbooks, including both in-play and pre-race data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer custom racing data feeds?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. We specialize in building custom auto racing data feed APIs tailored to your application’s exact business requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What formats are supported?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our APIs are compatible with JSON and XML formats and come with RESTful endpoints for easy integration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is real-time data available?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our system is designed to deliver millisecond-level updates during live races, ensuring your app stays in sync with live events."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How secure are the APIs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We implement encrypted connections, token-based authentication, and IP whitelisting to ensure your API usage is secure and protected."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What racing leagues do you support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We cover a wide range of motorsports, including Formula 1, NASCAR, MotoGP, and other major international racing leagues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer post-launch support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Comfygen offers 24/7 technical support and ongoing API maintenance to ensure everything runs smoothly post-deployment."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer highlight generation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our Auto Race Highlights API provides automated video clips, key moments, and summaries from each race."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How fast is the integration process?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most API integrations are completed in 5–7 days with full documentation, SDKs, and tech support included."
-      }
-    }
-  ]
-};
 
 
 export default function Ecommerce(props) {
@@ -388,23 +170,23 @@ export default function Ecommerce(props) {
         {/* Structured data scripts */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.structuredData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.organizationData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.productData) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.serviceSchema) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqPageSchema) }}
         />
       </Head>
 
@@ -478,7 +260,7 @@ export default function Ecommerce(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Integration Process of Our Auto Racing Live Line API</h2>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
@@ -515,8 +297,34 @@ export default function Ecommerce(props) {
           title="Auto Racing Live Line Api"
         />
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
+}
+

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baccarat.json";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import Faq from "../../components/old/components/Faq";
@@ -13,12 +12,11 @@ import InfoSectionLeft from "../../components/old/components/InfoSectionLeft";
 import ProcessSec from "../../components/old/components/ProcessSec";
 import HireDeveloper from "../../components/old/components/HireDeveloper";
 import CardItem from "../../components/old/components/CardItem";
-import SolutionSec from "../../components/old/components/SolutionSec";
-import {  IconCertificate, IconDeviceGamepad2,IconGift, IconShieldCheck, IconTrophy, IconUserOff} from '@tabler/icons-react';
+import SolutionSec from "../../components/old/components/SolutionSec"
+import Header from "../../components/Newcomponet/layout/Header"
+import HeroSection from "../../components/HeroSection";
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 const NewSection = dynamic(() => import("../../components/old/components/NewSection"), {
   loading: () => <p>Loading...</p>,
@@ -30,69 +28,12 @@ const ContactFromCenter = dynamic(
   }
 );
 
-const Process = [
-  {
-    title: "Business Consultation",
-    description: "Convenient and featured-rich dashboard with detailed content and insights."
-  },
-  {
-    title: "Wireframe",
-    description: "User-friendly interface lets you manage player’s stats and much more."
-  },
-  {
-    title: "Game Development",
-    description: "Introduce new or bring modification in existing rules easily. Make poker games more immersive."
-  },
-  {
-    title: "Whitepaper",
-    description: "Bringing developers and other associates for poker game app development."
-  },
-  {
-    title: "Game Deployment",
-    description: "Copywriter producing whitepaper for your business simultaneously."
-  },
-  {
-    title: "Integration of Advanced Features",
-    description: "To enhance user experience and gameplay, we integrate advanced features like AI-powered analytics, real-time multiplayer modes, and blockchain-based secure transactions."
-  },
-  {
-    title: "Marketing And Maintenance",
-    description: "We also help in marketing and improving your baccarat game app."
-  }
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-];
-const technologyData = [
-  {
-    img: <IconDeviceGamepad2 stroke={1.5} className="w-12 h-12" />,
-    title: "Single Player",
-    desc: "Packed with advanced algorithm characteristics that produce random numbers."
-  },
-  {
-    img: <IconTrophy stroke={1.5} className="w-12 h-12" />,
-    title: "Tournament Hosting",
-    desc: "This mode helps creating and managing tournaments for baccarat with advanced features."
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Anti Fraud System",
-    desc: "We use anti-cheats and fraudulent systems that could detect cheats and malware to keep baccarat games clean."
-  },
-  {
-    img: <IconGift stroke={1.5} className="w-12 h-12" />,
-    title: "Reward & Loyalty",
-    desc: "Allows admin to deploy custom campaigns for rewards and loyalty programs to sustain engagement."
-  },
-  {
-    img: <IconCertificate stroke={1.5} className="w-12 h-12" />,
-    title: "RNG Certified Games",
-    desc: "Our baccarat game development services are RNG certified and offer transparent gaming experience."
-  },
-  {
-    img: <IconUserOff stroke={1.5} className="w-12 h-12" />,
-    title: "Play As Guest",
-    desc: "Through guest mode, players could experience baccarat games without logging in and aware of its rules."
-  }
-];
+
 
 
 
@@ -100,13 +41,7 @@ export default function Altcoin(props) {
   let { initialData } = props;
 
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   return (
     <>
@@ -160,16 +95,13 @@ export default function Altcoin(props) {
         </LazyLoad>
       </div>
       <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/baccarat-game-development-hero-img.webp')]">
-          <HeroSectionForAllPages
+        <div className="">
+          <HeroSection
             heading="Baccarat Game Development Company"
             ptag="We are Canada's top game developer of Baccarat games and focus on producing feature-rich Baccarat game development services for PCs, mobile devices, and the web. In the well-liked card game of baccarat, played in casinos, players and bankers wager on which of two dealt hands will be worth more. Our talented team of professionals is quite knowledgeable about the complexities and details of the Baccarat game development services."
             btnName="Talk With Expert"
             btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/baccarat-game-development-hero-img.webp"
           />
         </div>
         <NewSection NewSection={JSON_DATA.NewSections} />
@@ -205,9 +137,9 @@ export default function Altcoin(props) {
         <SolutionSec
           heading="Online Baccarat Game App Features"
           subheading=""
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
-       
+
         <HireDeveloper
           heading="Hire Baccarat Game Developers in India"
           text="You could hire baccarat game developers in India at the lowest cost from us. We have in-house game developers that are versatile and experienced in a myriad of game development genres. Whether its 2D game design or 3D rich graphic interface development, our developers possess great skills and programming to make it real for you."
@@ -235,7 +167,7 @@ export default function Altcoin(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Online Baccarat Game Development Steps</h2>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
@@ -262,8 +194,33 @@ export default function Altcoin(props) {
           faqData={JSON_DATA.Frequently}
           title=" Rummy Game Development Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

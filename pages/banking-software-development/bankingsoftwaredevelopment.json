@@ -552,6 +552,230 @@
     "title": "DevOps & CI/CD Pipelines",
     "decs": "We follow DevOps practices and implement continuous integration and delivery (CI/CD) pipelines for faster, more reliable software releases. This approach ensures efficient collaboration, quicker bug fixes, and consistent updates to your banking and financial software."
   }
-]
+],
+
+
+ "faqSchema":{
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is banking software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Banking software is a comprehensive suite of tools designed to streamline financial operations. It helps banks manage transactions, customer accounts, loans, and more. Banking & financial software development allows financial institutions to automate processes and enhance customer service, ensuring efficiency and compliance with regulatory standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can AI improve customer experience in banking software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI enhances customer experience by providing personalized banking services, improving customer support with AI chatbots, and automating routine tasks. AI-based features like fraud detection and predictive analytics allow banks to offer a more efficient, tailored experience, which is critical for online banking software development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is core banking software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core banking software is the backbone of banking operations, managing all financial transactions and customer information in real-time. It includes services like account management, transactions, loans, and more. It helps banks enhance their operations by providing an efficient bank management system for all banking branches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is your solution compliant with PCI DSS or GDPR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we ensure that all our custom banking software development solutions comply with industry standards like PCI DSS and GDPR. We implement robust security measures such as encryption and multi-factor authentication to protect sensitive data and maintain legal compliance across banking systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does banking software development cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of banking software development varies based on project complexity, features, and scale. A custom banking software development company can provide an estimate after understanding your specific requirements. Typically, factors like technology stack, integration needs, and security requirements affect pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does development take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The timeline for banking software development services depends on the scope of the project. On average, mobile banking software development can take 3-6 months, while more complex solutions like bank account management systems may require longer due to rigorous security, compliance, and feature requirements."
+        }
+      }
+    ]
+  },
+
+ "structuredData":[
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+      "addressLocality": "Jaipur, Rajasthan",
+      "addressRegion": "India",
+      "postalCode": "302006",
+      "telephone": "+91-958-786-7258"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+      "addressLocality": "Toronto",
+      "addressRegion": "Canada",
+      "postalCode": "M1G3S7",
+      "telephone": "+1 579-977-4475"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Online Astrology App Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a leading astrology app development service provider in the USA, building feature-rich astrology apps with horoscope reports, love horoscopes, daily tips, and more. Get your custom astrology app today!",
+      "url": "https://www.comfygen.com/astrology-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Astrology App Development",
+        "Love Horoscope App Development Services",
+        "Develop Astrology App like Astrotalk",
+        "Horoscope App Development Services",
+        "Health & Wealth Astrology App Development Service",
+        "Astrologer Booking App Development Services",
+        "Astrology Ecommerce App Development Service",
+        "Panchang App Development Services",
+        "Numerology App Development Services",
+        "Tarot Card Reading App Development",
+        "Cosmobiology App Development",
+        "Vedic Astrology App Development",
+        "Astrology Dating App Development Services"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+          "addressLocality": "Jaipur",
+          "postalCode": "302006",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
+          "addressLocality": "Toronto",
+          "postalCode": "M1G3S7",
+          "addressCountry": "Canada"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://www.youtube.com/@ComfygenBusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://www.comfygen.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "description": "Comfygen delivers custom banking software development for startups, banks, and financial organizations. Our fintech experts craft powerful digital banking apps with AI, ML, and end-to-end support.",
+      "mainEntityOfPage": "https://www.comfygen.com/banking-software-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Core Banking Solutions",
+        "Mobile Banking App Development",
+        "Digital Wallet & Payment Gateway Integration",
+        "Loan & Credit Management Software Development",
+        "Bank Management Software Development",
+        "Banking CRM Software Development",
+        "Custom ATM Software Development",
+        "Custom EMV Software Development Services",
+        "AI-powered banking software development",
+        "Blockchain Based Banking Software Development",
+        "Online banking management system"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
+
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": ["IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://twitter.com/comfygentech",
+        "https://www.instagram.com/comfygen_/?hl=en",
+        "https://youtube.com/@comfygenbusiness",
+        "https://www.linkedin.com/company/comfygen-private-limited",
+        "https://in.pinterest.com/comfygenpvt/"
+      ]
+    },
+
+
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "name": "Banking Software Development Services",
+      "image": "Hero section image",
+      "description": "Partner with Comfygen for expert banking software development services. We build secure, scalable, and cloud-native fintech solutions including AI, blockchain, and mobile banking apps for modern financial institutions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1748"
+      }
+    }
+
+  ]
+
 
 }

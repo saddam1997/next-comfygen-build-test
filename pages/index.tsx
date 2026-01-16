@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import HeroSectionHomePage from "../components/Newcomponet/SectionCompoent/HeroSectionHomePage";
 import Milestones from "../components/Newcomponet/comman/Milestones";
 
 // import Script from "next/script";
@@ -95,8 +94,8 @@ const BlogSection = dynamic(
 
 export default function Home(props: any) {
   let { initialData } = props;
-  const [typedText] = useState("");
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+
+ 
 
   const websiteJsonLd = {
     "@context": "https://schema.org/",
@@ -110,13 +109,7 @@ export default function Home(props: any) {
     },
   };
 
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
 
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   const portfoliodata = [
     {
@@ -323,16 +316,12 @@ export default function Home(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="relative ">
           <HeroSection
-            heading={typedText}
+            heading=""
             isHome={true}
             ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
             btnName="Let's Discuss"
             btnLink="/contact-us"
             altTag="blockchain-technology"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
             bgImage="https://www.comfygen.com/comfygen-images/home/home.webp"
           />
         </div>

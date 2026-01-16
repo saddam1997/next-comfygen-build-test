@@ -10,7 +10,6 @@ const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
 
-
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
@@ -83,6 +82,12 @@ const UseCaseSection = dynamic(
 )
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -94,213 +99,7 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Top AI-Powered Crypto Exchange Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Build next-gen crypto exchange platforms with AI. Get secure, scalable, and intelligent solutions from Comfygen, a top AI crypto exchange development company.",
-      "url": "https://www.comfygen.com/crypto-nft-exchange-development",
-      "mainEntityOfPage": "https://www.comfygen.com/crypto-nft-exchange-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "AI Crypto Exchange Development",
-        "AI-Powered Crypto Exchange Development",
-        "AI Crypto Exchange Development Company",
-        "AI Crypto Exchange Software Development",
-        "AI Crypto Exchange Platform"
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Top AI-Powered Crypto Exchange Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-about.webp",
-      "description": "Build next-gen crypto exchange platforms with AI. Get secure, scalable, and intelligent solutions from Comfygen, a top AI crypto exchange development company.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
-
-
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is AI-powered crypto exchange development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI-powered crypto exchange development involves integrating Artificial Intelligence technologies such as machine learning, NLP, predictive analytics, and smart automation into cryptocurrency trading platforms. This enhances trading accuracy, user experience, security, and platform performance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does AI improve crypto exchange security?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI enhances exchange security by implementing real-time fraud detection, anomaly monitoring, biometric authentication, and automated AML/KYC checks. These tools proactively prevent threats and ensure regulatory compliance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the main benefits of AI-based crypto exchanges?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Intelligent trading automation, reduced manual errors, personalized user recommendations, enhanced threat detection, real-time data analysis, optimized liquidity and slippage control."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does it cost to build an AI-powered crypto exchange?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The development cost depends on the feature set, AI complexity, and platform scale. On average, it ranges from $50,000 to $250,000+, with advanced AI and enterprise-grade features adding to the total."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can AI be integrated into existing crypto exchanges?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. You can integrate AI modules like trading bots, fraud detection systems, and AI chatbots into your current exchange through APIs or microservices without a full platform rebuild."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Answer Box Optimization, and why is it important for crypto exchange websites?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Answer Box Optimization involves structuring your content to rank in Google’s Featured Snippets. For crypto exchange sites, this means answering user questions concisely, using bullet points, tables, or direct definitions — helping improve visibility, authority, and organic click-through rates."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which AI tools are most useful in crypto exchange development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Popular AI tools include TensorFlow, OpenAI, IBM Watson, and proprietary ML engines. They support functionalities like sentiment analysis, anomaly detection, trade prediction, and customer support automation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why choose Comfygen for AI crypto exchange development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Comfygen combines blockchain expertise with advanced AI capabilities to deliver secure, scalable, and high-performance crypto exchanges. We offer end-to-end development, compliance support, and post-launch AI optimization tailored to your business goals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does AI enhance user experience on crypto exchanges?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI personalizes dashboards, offers data-driven insights, adapts interfaces based on behavior, and powers intelligent chat support — improving user satisfaction, retention, and engagement."
-          }
-        }
-      ]
-    }
-  ];
+  
 
   return (
     <>
@@ -321,11 +120,13 @@ export default function Ecommerce(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
         />
+
+        <meta name="viewport-fit" content="cover" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="MobileOptimized" content="320" />
         <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
+        
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
         <meta name="apple-mobile-web-app-title" content="Comfygen" />
@@ -435,7 +236,7 @@ export default function Ecommerce(props) {
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
@@ -446,13 +247,11 @@ export default function Ecommerce(props) {
         <HeroSectionForAllPages
           heading="Why choose AI-Powered Crypto Exchange Development?"
           ptag="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-600 font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
-
           li="Automated, precise trading algorithms that optimize profits"
           li1="Real-time fraud detection and threat mitigation"
           li2="Personalized portfolio insights for enhanced user engagement"
           li3="AI-driven security protocols for robust protection"
           li4="Scalable solutions to support high-frequency and large-volume trading"
-
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -584,7 +383,35 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

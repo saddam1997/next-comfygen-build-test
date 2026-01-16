@@ -40,7 +40,7 @@ export default function Contact(props:any) {
         </div>
        </section>
 
-        <GetinTouch />
+        {/* <GetinTouch /> */}
         {/*<BlogSection initialData={initialData} />*/}
       </div>
     </>
