@@ -6,6 +6,7 @@ import JSON_DATA from "./Astrology.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../components/HeroSection";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -405,7 +406,7 @@ export default function ClinicalApp(props:any) {
 
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Top Astrology App Development Company in India"
           ptag="We are a leading astrology app development company in India delivering custom, scalable, and user-friendly astrology mobile apps. From horoscope, kundli, tarot, and live astrologer apps to AI-based prediction platforms, we build solutions that engage users and grow your business."
           ptag1="The astrology app development team at our agency creates secure, real-time chat, video calling, and multilingual astrology apps, which are perfect for startups and large enterprises alike."
@@ -415,10 +416,6 @@ export default function ClinicalApp(props:any) {
           li3="Secure Payments & Multi-Language Support"
           btnName="Talk With Expert"
           btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
           bgImage="https://www.comfygen.com/image/hero-imageastrology-app-development.webp"
         />
 
