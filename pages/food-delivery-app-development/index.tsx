@@ -89,6 +89,12 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 
 
@@ -631,7 +637,7 @@ export default function Ecommerce(props) {
           text="The <a href='https://www.comfygen.com/blog/food-delivery-app-development-cost/' class=' underline font-semibold'>food delivery app development cost</a> in India depends on features, platform (Android, iOS, Web), design complexity, and integrations."
           buttonText="Request Food Delivery App Cost Estimate"
           buttonLink="/contact-us"
-          imageSrc=""
+          imageSrc="https://www.comfygen.com/comfygen-images/food-delivery-app-development/food App Development Cost.webp"
           imageAlt=""
           listheading="Estimated cost range:"
           listItems={[
@@ -696,6 +702,7 @@ export default function Ecommerce(props) {
         />
 
         <Faq faqData={JSON_DATA.Frequently} title="" />
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

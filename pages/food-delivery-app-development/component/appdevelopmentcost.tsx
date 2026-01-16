@@ -76,7 +76,18 @@ const Appdevelopmentcost = ({
             </div>
           </div>
           <div className="lg:w-[40%] w-full mx-auto flex justify-center items-end lg:mt-0 mt-5">
-            {imageSrc ? (
+
+            <Image
+              className="w-full hidden sm:block"
+              src={imageSrc}
+              alt={imageAlt}
+              width={907}
+              height={762}
+              quality={85}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+            />
+
+            {/* {imageSrc ? (
               <Image
                 className="w-full hidden sm:block"
                 src={imageSrc}
@@ -86,7 +97,7 @@ const Appdevelopmentcost = ({
                 quality={85}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
               />
-            ) : null}
+            ) : null} */}
           </div>
         </div>
       </div>

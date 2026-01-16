@@ -73,6 +73,11 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 
 const Process = [
   {
@@ -202,8 +207,8 @@ export default function ClinicalApp(props: any) {
 
   const jsonLdData = [
 
-    
-   
+
+
 
     {
       "@context": "https://schema.org",
@@ -629,6 +634,11 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
+
+
+
+
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

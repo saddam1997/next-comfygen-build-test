@@ -61,18 +61,11 @@ const Faq = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 
@@ -549,7 +542,39 @@ Live Line Cricket Mobile App Development Service because they deliver what fans 
           faqData={JSON_DATA.Frequently}
           title=" "
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+
+
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }
