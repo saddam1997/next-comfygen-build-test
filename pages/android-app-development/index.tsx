@@ -108,7 +108,7 @@ const ldJson = {
   telephone: "+91 9587867258",
 };
 
-export default function Mobile(props) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {

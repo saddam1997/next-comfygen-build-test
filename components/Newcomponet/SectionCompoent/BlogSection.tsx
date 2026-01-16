@@ -17,8 +17,8 @@ export default function BlogSection(props:any) {
           </div>
         </div>
         <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2 xl:gap-14 cursor-pointer mt-8">
-          {props.initialData && props.initialData.length > 0
-            ? props.initialData.map((element: any, index: any) => (
+          {props?.initialData && props?.initialData.length > 0
+            ? props?.initialData.map((element: any, index: any) => (
                 element ? (
                   <a 
                     href={element.link} 

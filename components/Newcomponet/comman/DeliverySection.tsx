@@ -225,15 +225,15 @@ const DeliverySection = ({
 
                             <div className="absolute inset-0 bg-white translate-y-[80%] group-hover:translate-y-0 group-hover:py-2 transition-transform duration-500 ease-out flex flex-col px-2">
                                 <h3 className="text-lg font-semibold text-gray-900 mb-2 transform translate-y-4 group-hover:text-blue-500 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                                       {app.title}
+                                       
                                     
-                                    {/* {app.link ? (
+                                    {app.link ? (
                                         <Link href={app.link}>
                                             {app.title}
                                         </Link>
                                     ) : (
                                         <span>{app.title}</span>
-                                    )} */}
+                                    )}
 
                                 </h3>
                                 <p

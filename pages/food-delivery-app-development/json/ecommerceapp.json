@@ -249,7 +249,7 @@
   "servicesData": [
     {
       "title": "Custom Food Delivery App Development",
-      "description": "Our custom food delivery app development services in India allow you to build a tailor-made online food ordering app aligned with your brand and business model. We create robust, scalable, and customer-centric food apps that increase online orders and retention rates.",
+      "description": "Our custom food delivery app development in India allow you to build a tailor-made online food ordering application aligned with your brand and business model. We create robust, scalable, and customer-centric food apps that increase online orders and retention rates.",
       "features": [
         "Personalized UI/UX for branding",
         "Multiple payment gateway integrations",
@@ -259,7 +259,7 @@
     },
     {
       "title": "White-label Food Delivery App Development",
-      "description": "Launch your food delivery business quickly with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label food delivery app development solutions</a>, designed to reduce time-to-market and cost while maintaining full customization options.",
+      "description": "Launch your food delivery business quickly with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>ready-made food delivery app solution </a>, designed to reduce time-to-market and cost while maintaining full customization options.",
       "features": [
         "Ready-to-launch app templates & admin panels",
         "Easy branding & theme customization",
@@ -269,7 +269,7 @@
     },
     {
       "title": "On-Demand Food Delivery App Development",
-      "description": "We develop on-demand mobile food delivery apps that connect customers with restaurants instantly. Packed with real-time order tracking and delivery management, these apps are perfect for today’s fast-paced digital economy.",
+      "description": "Leverage Comfygen’s on-demand food delivery app development expertise develop a food delivery app that connects customers with restaurants instantly. Packed with real-time order tracking and delivery management, these food ordering apps are perfect for today’s fast-paced digital economy.",
       "features": [
         "One-tap ordering system",
         "GPS-enabled live delivery tracking",
@@ -283,13 +283,13 @@
       "features": [
         "Restaurant onboarding & dashboard",
         "Menu, pricing & inventory management",
-        "Order assignment & delivery logistics",
+        "Order assignment & delivery <a href='https://www.comfygen.com/logistics-app-development' class='underline font-semibold'>logistics</a>",
         "Commission & payout management"
       ]
     },
     {
-      "title": "Online Food Ordering App Development for Startups",
-      "description": "We develop scalable and cost-efficient online food ordering mobile apps tailored for startups wanting to enter the competitive delivery market quickly and affordably.",
+      "title": "Online Food Ordering App Development",
+      "description": "We develop scalable and cost-efficient online food ordering mobile apps tailored for SMEs wanting to enter the competitive delivery market quickly and affordably.",
       "features": [
         "Budget-friendly development packages",
         "Fast deployment & launch",
@@ -299,7 +299,7 @@
     },
     {
       "title": "Cloud Kitchen App Development",
-      "description": "We provide cloud kitchen app development solutions tailored for virtual restaurants and delivery-only kitchens. These apps enable seamless online ordering, delivery management, and customer engagement.",
+      "description": "We provide cloud kitchen app development services tailored for virtual restaurants and delivery-only kitchens. These cloud kitchen apps enable seamless online ordering, delivery management, and customer engagement.",
       "features": [
         "Multiple brands in one backend platform",
         "Real-time kitchen & delivery coordination",
@@ -308,23 +308,14 @@
       ]
     },
     {
-      "title": "Grocery Delivery App Development",
-      "description": "We also offer <a href='https://www.comfygen.com/ecommerce/grocery' class='underline font-semibold'>grocery delivery app development services</a> for supermarkets, hyperlocal delivery stores, and startups looking to <a href='https://www.comfygen.com/blog/build-quick-commerce-app-like-blinkit-zepto-instamart/' class='underline fornt-semibold'>build an instant delivery app like Blinkit</a> or BigBasket. Designed for efficiency, these apps simplify customer shopping experiences.",
-      "features": [
-        "Product search, filters & smart recommendations",
-        "Subscription & repeat order options",
-        "Multi-payment integration & wallet support",
-        "Real-time delivery tracking & scheduling"
-      ]
-    },
-    {
       "title": "Food Delivery Website Development",
-      "description": "Comfygen offers professional <a href='https://www.comfygen.com/web-development' class='underline font-semibold'>food delivery website development services</a> to help businesses build a powerful online presence and manage food orders through a web-based platform. We develop responsive and SEO-friendly food ordering websites integrated with secure payments, real-time tracking, and user-friendly navigation to improve customer ordering experience and business efficiency.",
+      "description": "Comfygen’s team provides reliable food delivery <a class='underline' href='https://www.comfygen.com/web-development'>website development</a> services to help restaurants, cloud kitchens, and startups manage online food orders smoothly. We build responsive and SEO-friendly food ordering websites that work perfectly on all devices and deliver a fast, secure, and simple ordering experience for customers.",
       "features": [
-        "Custom & responsive website design",
-        "Online ordering & order status tracking",
+        "Custom and fully responsive website design",
+        "Easy online food ordering with live order status tracking",
         "Secure payment gateway integration",
-        "SEO-friendly architecture & fast performance"
+        "SEO-optimized structure for better search rankings",
+        "Fast loading performance and smooth navigation"
       ]
     },
     {
@@ -421,8 +412,8 @@
     }
   ],
   "pageData": {
-    "title": "Why Comfygen Is Your Ideal Food Delivery App Development Company",
-    "description": "Comfygen Technologies is a top-rated food delivery app development company that builds next-gen food ordering apps. We help restaurants, startups, and multi-restaurant platforms deliver a seamless ordering experience that delights customers and drives business growth.",
+    "title": "Why Choose Comfygen For Food Delivery App Development?",
+    "description": "Comfygen Technologies is a brilliant food delivery app development company in India that builds next-gen food ordering apps. We help restaurants, startups, and multi-restaurant platforms deliver a seamless ordering experience that delights customers and drives business growth.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",

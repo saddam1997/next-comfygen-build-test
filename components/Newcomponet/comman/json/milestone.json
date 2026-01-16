@@ -1,0 +1,45 @@
+{
+ "seo": {
+   "heading": "Company Milestones and Global Presence",
+   "countries": [
+     "India",
+     "USA",
+     "Canada",
+     "UK",
+     "Australia",
+     "Germany",
+     "Netherlands",
+     "Switzerland",
+     "UAE",
+     "Mexico",
+     "Argentina",
+     "South Africa",
+     "New Zealand",
+     "Oman",
+     "Denmark",
+     "Austria"
+   ]
+ },
+ "stats": [
+   {
+     "id": "experience",
+     "value": "8+",
+     "label": "Years of Experience"
+   },
+   {
+     "id": "projects",
+     "value": "550+",
+     "label": "Projects Delivered"
+   },
+   {
+     "id": "clients",
+     "value": "400+",
+     "label": "Happy Clients"
+   },
+   {
+     "id": "countries",
+     "value": "30+",
+     "label": "Countries Served"
+   }
+ ]
+}

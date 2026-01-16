@@ -125,7 +125,6 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
 const Process = [
   {
     title: "Requirement Analysis & Market Research",

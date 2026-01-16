@@ -338,7 +338,7 @@ export default function Home(props: any) {
         </div>
         <Milestones />
         {/* <Milestonessec/>*/}
-        <Milestonessec />
+        {/* <Milestonessec /> */}
 
 
 

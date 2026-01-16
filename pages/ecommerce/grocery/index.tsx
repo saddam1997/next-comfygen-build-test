@@ -99,7 +99,10 @@ const Faq = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
-
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 const CardClone = [
   {
     imgSrc:
@@ -917,7 +920,7 @@ export default function ClinicalApp(props: any) {
 
 
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

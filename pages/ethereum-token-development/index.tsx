@@ -55,7 +55,10 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 // import NewSection from "../Newcomponet/comman/NewSection"
@@ -513,6 +516,7 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
+  <BlogSection initialData={initialData} />
 
       </div>
     </>

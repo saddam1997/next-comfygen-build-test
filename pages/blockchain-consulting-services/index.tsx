@@ -82,7 +82,7 @@ const ClientTestimonials = dynamic(
 );
 
 
-export default function rummy(props) {
+export default function rummy(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
