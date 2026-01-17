@@ -85,7 +85,7 @@ export default function Document() {
             __html: JSON.stringify(LocalBusiness),
           }}
         />
-        <Script
+        {/* <Script
           id="gtm-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -100,7 +100,7 @@ export default function Document() {
                   })(window,document,'script','dataLayer','${GTM_ID}');
                 `,
           }}
-        />
+        /> */}
         {/* <GoogleTagManager /> */}
       </Head>
       <body>

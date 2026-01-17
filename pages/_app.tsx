@@ -23,9 +23,9 @@ const ContactLinks = dynamic(
 );
 
 /* Analytics only (lightweight, idle-loaded internally) */
-// const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
-//   ssr: false,
-// });
+const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
+  ssr: false,
+});
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
-      {/* <GoogleTagManager /> */}
+      <GoogleTagManager />
       <ContactLinks />
       <Talkchat />
     </>
