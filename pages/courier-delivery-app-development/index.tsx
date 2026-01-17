@@ -75,22 +75,10 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
-
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import DeliverySection from "../Newcomponet/comman/DeliverySection";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import BusinessSolustion from "../Newcomponet/SectionCompoent/BusinessSolustion";
-// import Faq from "../Newcomponet/SectionCompoent/Faq"
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -547,7 +535,7 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
-
+ <BlogSection initialData={initialData} />
       </div>
     </>
   );

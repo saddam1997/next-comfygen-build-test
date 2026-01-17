@@ -86,7 +86,10 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
-
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -668,7 +671,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

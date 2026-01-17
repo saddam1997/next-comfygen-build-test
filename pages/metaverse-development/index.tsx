@@ -70,19 +70,11 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 const ContactFromCenter = dynamic(
   () => import("../../components/old/components/ContactFromCenter"),
@@ -777,8 +769,35 @@ export default function Ecommerce(props) {
           linkText="LET'S CONNECT "
         />
         <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

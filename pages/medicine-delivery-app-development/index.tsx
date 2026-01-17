@@ -94,6 +94,14 @@ const ConsultancyApproach = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 const technologyData = [
   {
     img: <IconCode stroke={1.5} className="w-12 h-12" />,
@@ -701,6 +709,8 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

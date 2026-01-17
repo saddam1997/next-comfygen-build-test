@@ -82,7 +82,10 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 const technologyData = [
@@ -660,6 +663,8 @@ export default function Mobile(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
+  <BlogSection initialData={initialData} />
+
       </div >
     </>
   );

@@ -63,7 +63,10 @@ const Faq = dynamic(
 );
 
 
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
@@ -578,9 +581,33 @@ export default function Ecommerce(props:any) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
+  <BlogSection initialData={initialData} />
        
       </div>
     </>
   );
 }
 
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
+}

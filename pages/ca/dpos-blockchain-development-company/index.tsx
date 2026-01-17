@@ -75,21 +75,12 @@ const Faq = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-
-// import AboutSection from "../../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../../Newcomponet/SectionCompoent/Solution";
-// import InfoSection from "../../Newcomponet/SectionCompoent/InfoSection";
-// import Portfolio from "../../Newcomponet/SectionCompoent/Portfolio";
-// import Features from "../../Newcomponet/SectionCompoent/Features";
-// import TechStack from "../../Newcomponet/SectionCompoent/TechStack";
-// import ProcessSec from "../../Newcomponet/SectionCompoent/ProcessSec";
-// import ConsultancyApproach from "../../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import WhyChoose from "../../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../../Newcomponet/SectionCompoent/Faq";
 
 const Arena = [
   {
@@ -514,7 +505,7 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -9,6 +9,17 @@ import { useState } from "react";
 
 export default function HeroSection(props: any) {
 
+    const listItems = [
+        props.li,
+        props.li1,
+        props.li2,
+        props.li3,
+        props.li4,
+        props.li5,
+        props.li6,
+    ].filter(Boolean);
+
+
 
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
@@ -76,6 +87,42 @@ export default function HeroSection(props: any) {
                     <Paragraph size="sm" className="text-white">
                         {props.ptag}
                     </Paragraph>
+
+
+                    {props.ptag1 && (
+                        <Paragraph size="sm" className="text-white">
+                            {props.ptag1}
+                        </Paragraph>
+                    )}
+
+
+                    {props.ptag3 && (
+                        <Paragraph size="sm" className="text-white">
+                            {props.ptag3}
+                        </Paragraph>
+                    )}
+
+
+
+
+
+
+                    {listItems.length > 0 && (
+                        <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal">
+                            {listItems.map((item, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                    <span
+                                        aria-hidden="true"
+                                        className="w-3 h-3 rounded-full border border-white mt-1.5 flex-shrink-0"
+                                    />
+                                    <span
+                                        dangerouslySetInnerHTML={{ __html: item as string }}
+                                    />
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
 
 
                     {/* ================= CTA ================= */}

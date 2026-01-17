@@ -88,6 +88,14 @@ const GuidSectionBlockchain = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
+
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
 const Process = [
   {
     title: "Requirement Gathering & Consultation",
@@ -1067,7 +1075,7 @@ export default function Blockchain(props) {
           title=" About Blockchain Technology"
         />
 
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </div>
   );

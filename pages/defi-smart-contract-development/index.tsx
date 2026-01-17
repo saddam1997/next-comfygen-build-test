@@ -16,6 +16,11 @@ import Faq from "../../components/Newcomponet/SectionCompoent/Faq"
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 const Process = [
   {
     title: " Requirements Analysis",
@@ -47,6 +52,8 @@ const Process = [
   },
 
 ];
+
+
 export default function MultiChain(props) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -291,7 +298,32 @@ export default function MultiChain(props) {
           faqData={JSON_DATA.Frequently}
           title=" DeFi Development"
         />
+        <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
+}
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

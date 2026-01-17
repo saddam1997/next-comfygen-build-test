@@ -68,7 +68,12 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
-export default function Ecommerce(props) {
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -471,7 +476,34 @@ export default function Ecommerce(props) {
         />
         <Guidance />
         <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
+  <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

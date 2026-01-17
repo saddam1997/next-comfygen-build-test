@@ -82,6 +82,11 @@ const ConsultancyApproach = dynamic(
 )
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 const Processs = [
   {
     title: "Requirement Analysis & Planning",
@@ -569,7 +574,7 @@ export default function Ecommerce(props) {
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

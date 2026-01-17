@@ -91,7 +91,10 @@ const Faq = dynamic(
 )
 
 
-
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 const technologyData = [
   {
@@ -513,6 +516,8 @@ export default function ClinicalApp(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
+
+         <BlogSection initialData={initialData} />
 
       </div>
     </>

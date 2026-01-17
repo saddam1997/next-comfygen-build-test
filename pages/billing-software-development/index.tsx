@@ -98,6 +98,11 @@ const TechStack = dynamic(
   { loading: loader, ssr: true }
 )
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 const technologyData = [
   {
     img: null,
@@ -782,59 +787,33 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* who cane start */}
-        {/* <WhoCanStart
-          title="Who Can Start a Milk Delivery App Business?"
-          description="Comfygen’s milk delivery app development solutions are ideal for a wide range of businesses. Whether you're just starting out or already established, our scalable and customizable apps help you grow fast in the digital dairy market."
-          cards={WhoCanStartCards}
-        /> */}
-
-
-        {/* <ContactFromCenter /> */}
-
-
-
-
-        {/* <Features
-          heading="Key Features of Our Milk Delivery App"
-          description=" At Comfygen, we integrate Using Comfygen Technologies, a top-rated dairy milk delivery app development company, you will get robust milk delivery apps for customers, delivery agents, and admins. The panels are thoughtfully designed to ensure a smooth ordering, delivery, and management process."
-          featuresData={JSON_DATA.featuresData}
-          grid="3"
-        />
-
-
-
-        <TeckStack
-          title="Tech Stack We Use to Build Scalable Milk Delivery Apps"
-          description="The Comfygen team leverages the most cutting-edge and reliable technologies for building scalable, secure, and high-performing milk delivery applications. With our tech stack, you can create white-label milk delivery apps, custom solutions, or milk ordering apps for startups."
-        />
-
- */}
-
-
-
-
-        {/*<BlogSection initialData={initialData} />*/}
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

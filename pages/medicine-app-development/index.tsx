@@ -84,6 +84,14 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 
 
 
@@ -600,6 +608,8 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           description="Find answers to common queries about medicine app development. Get insights to make informed decisions for your pharmacy business."
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

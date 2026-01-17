@@ -97,6 +97,12 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 const Process = [
   {
     title: "Requirement Analysis",
@@ -861,6 +867,8 @@ export default function Mobile(props) {
           title="Application Consulting Services"
         /> */}
         <Faq faqData={JSON_DATA.Frequently} title="" />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

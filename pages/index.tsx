@@ -4,8 +4,6 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import Milestones from "../components/Newcomponet/comman/Milestones";
 
-// import Script from "next/script";
-// import WallOfFame from "../components/Newcomponet/SectionCompoent/WallOfFame";
 import Milestonessec from "../components/Newcomponet/SectionCompoent/Milestonessec";
 import HeroSection from "../components/HeroSection";
 
@@ -327,10 +325,7 @@ export default function Home(props: any) {
         </div>
         <Milestones />
         {/* <Milestonessec/>*/}
-        <Milestonessec />
-
-
-
+        {/* <Milestonessec /> */}
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

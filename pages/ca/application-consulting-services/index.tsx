@@ -87,7 +87,7 @@ const BlogSection = dynamic(
 );
 
 
-export default function Mobile(props) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [loaded, setLoaded] = useState(false);
 

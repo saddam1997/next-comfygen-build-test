@@ -10,7 +10,14 @@ const HeroSectiondesign2 = dynamic(() => import('../../components/old/components
 const Header = dynamic(() => import('../../components/old/components/Header'), {
   loading: () => <p>Loading...</p>,
 })
-export default function TermsAndConditions() {
+
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+export default function TermsAndConditions(props: any) {
+  let { initialData } = props;
   const [tech, setTech] = useState(0);
 
 
@@ -256,7 +263,34 @@ export default function TermsAndConditions() {
         </div>
 
 
+        <BlogSection initialData={initialData} />
+
+
+
       </div>
     </>
   )
+}
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

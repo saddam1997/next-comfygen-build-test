@@ -87,6 +87,13 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 const technologyData = [
   {
     img: <IconBook stroke={1.5} className="w-12 h-12" />, // Magazine app
@@ -590,7 +597,7 @@ export default function News(props: any) {
 
         <Faq faqData={JSON_DATA.Frequently} title=" " />
         {/* <FaqSection faqData={JSON_DATA.Frequently} title="" /> */}
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

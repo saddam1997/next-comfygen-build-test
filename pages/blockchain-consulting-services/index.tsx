@@ -81,8 +81,13 @@ const ClientTestimonials = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-export default function rummy(props) {
+
+export default function rummy(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -719,11 +724,13 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+      
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
+
+          <BlogSection initialData={initialData} />
       </div>
     </>
   );
