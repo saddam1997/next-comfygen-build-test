@@ -86,22 +86,16 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import DeliverySection from "../Newcomponet/comman/DeliverySection";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import Faq from "../Newcomponet/SectionCompoent/Faq"
+
+
 
 
 
@@ -702,7 +696,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -54,27 +54,13 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 const Arena = [
@@ -786,6 +772,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -69,30 +69,12 @@ const HireDeveloper = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import Script from "next/script";
-// import Milestones from "../Newcomponet/comman/Milestones";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-
-
-// const ContactFromCenter = dynamic(
-//   () => import("../components/ContactFromCenter"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
 
 
 const Processs = [
@@ -414,20 +396,12 @@ export default function Webdevelopment(props) {
 
           ]}
         />
-
-
-        {/* <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

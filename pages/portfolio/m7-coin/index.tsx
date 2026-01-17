@@ -12,6 +12,15 @@ import Header from '../../../components/Newcomponet/layout/Header';
 const TechnologyStack = dynamic(() => import('../../../components/Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
+
+
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
 export default function about(props:any) {
 
   let { initialData } = props;
@@ -154,6 +163,7 @@ export default function about(props:any) {
 
         <TechnologyStack />
       </div>
+       <BlogSection initialData={initialData} />
     </div>
   )
 }

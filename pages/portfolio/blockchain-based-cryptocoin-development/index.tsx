@@ -16,11 +16,22 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
 
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -151,6 +162,7 @@ export default function about(props) {
                     </div>
                 </section>
             </div>
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

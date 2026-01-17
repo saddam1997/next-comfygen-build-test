@@ -18,6 +18,12 @@ const TechnologyStack = dynamic(() => import("../../../components/Newcomponet/po
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 
 
@@ -178,6 +184,8 @@ export default function about(props: any) {
 
         <TechnologyStack />
       </div>
+
+       <BlogSection initialData={initialData} />
     </div>
   )
 }

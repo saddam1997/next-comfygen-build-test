@@ -47,6 +47,15 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
 
 
 
@@ -414,6 +423,8 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );

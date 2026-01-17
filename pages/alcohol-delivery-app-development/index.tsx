@@ -74,6 +74,11 @@ const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/F
   ssr: true,
 });
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 
 
 const WhoCanStartCards = [
@@ -558,11 +563,21 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-
+ <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 export async function getStaticProps() {
   try {

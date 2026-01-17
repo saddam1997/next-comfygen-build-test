@@ -48,15 +48,13 @@ const ProcessSec = dynamic(
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
+
+
 
 
 
@@ -294,7 +292,7 @@ export default function ReactJS(props) {
         <Faq
           faqData={JSON_DATA.Frequently}
           title="" />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

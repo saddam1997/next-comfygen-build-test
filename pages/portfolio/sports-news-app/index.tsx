@@ -16,6 +16,12 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 
 
@@ -154,6 +160,7 @@ export default function about(props:any) {
                     </div>
                 </section>
             </div>
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

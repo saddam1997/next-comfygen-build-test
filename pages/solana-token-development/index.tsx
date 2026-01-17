@@ -77,25 +77,20 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import PointsCardBg from "../Newcomponet/SectionCompoent/PointsCardBg";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+
+
 
 import { IconAdjustments, IconAutomation, IconDatabase, IconExchange, IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
 import Script from "next/script";
@@ -653,7 +648,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Solana Token Development Company"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

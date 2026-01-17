@@ -15,6 +15,12 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
     { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 
 
@@ -23,7 +29,7 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -292,7 +298,7 @@ export default function about(props) {
 
             </div>
             <div className="overflow-hidden">
-                <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
+                <div className="lg:py-[7rem] lg:pt-[110px] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
                     <CompanyHeroSection
                         heading="Professional Dating App"
                         subhead=""
@@ -389,6 +395,7 @@ export default function about(props) {
                     </div>
                 </section>
             </div>
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

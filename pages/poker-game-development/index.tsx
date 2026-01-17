@@ -10,7 +10,6 @@ import HeroSectionForAllPages from "../../components/old/components/HeroSectionF
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import Faq from "../../components/old/components/Faq";
-import BlogSection from "../../components/old/components/BlogSection";
 import AboutSection from "../../components/old/components/AboutSection";
 import ProcessSec from "../../components/old/components/ProcessSec";
 import HireDeveloper from "../../components/old/components/HireDeveloper";
@@ -38,6 +37,12 @@ const ContactFromCenter = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
+
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
 
 
 
@@ -646,7 +651,37 @@ export default function PokerGame(props) {
           faqData={JSON_DATA.Frequently}
           title="Poker Game Development Technology"
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

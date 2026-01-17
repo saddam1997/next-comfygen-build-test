@@ -14,7 +14,13 @@ const Features = dynamic(() => import("../../../components/Newcomponet/portfolio
 const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 );
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
+
+ 
 
 
 
@@ -157,6 +163,7 @@ export default function about(props) {
                 </section>
 
             </div>
+            <BlogSection initialData={initialData} />
         </div>
     )
 }

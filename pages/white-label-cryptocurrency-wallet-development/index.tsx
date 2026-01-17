@@ -87,6 +87,10 @@ const ConsultancyApproach = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: loader, ssr: true }
 );
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
@@ -656,6 +660,8 @@ export default function Ecommerce(props) {
 
 
 
+
+ <BlogSection initialData={initialData} />
 
       </div>
     </>

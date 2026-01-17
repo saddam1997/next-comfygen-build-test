@@ -65,20 +65,12 @@ const ConsultancyApproach = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import WhyChoosee from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach"
 
 
 const Process = [
@@ -670,7 +662,38 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title=" DeFi Development"
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
+}
+
+
+
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }
