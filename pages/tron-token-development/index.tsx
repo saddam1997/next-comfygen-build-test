@@ -69,26 +69,13 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
-
-
-
-
-
-// import NewSection from '../Newcomponet/comman/NewSection'
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 import {
   IconArrowsExchange,
@@ -671,7 +658,7 @@ export default function Tron(props) {
           imageAlt="Get in touch now."
         />
         <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

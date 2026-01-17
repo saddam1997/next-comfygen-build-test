@@ -6,14 +6,21 @@ import dynamic from 'next/dynamic';
 import Header from '../../../components/Newcomponet/layout/Header';
 import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
 const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
+    <div className="h-96 bg-gray-100 animate-pulse" />
 );
 const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-  { loading: loader, ssr: true }
+    { loading: loader, ssr: true }
 );
 const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
+    { loading: loader, ssr: true }
 );
+
+const BlogSection = dynamic(
+    () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+    { ssr: true }
+);
+
+
 
 
 
@@ -342,29 +349,32 @@ export default function about(props) {
                 />
 
             </div>
+
+
+            <BlogSection initialData={initialData} />
         </div>
     )
 }
 export async function getStaticProps() {
-  try {
-    const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
-    );
+    try {
+        const res = await fetch(
+            `${process.env.URL}/api/v1/posts?per_page=3`
+        );
 
-    if (!res.ok) throw new Error("API failed");
+        if (!res.ok) throw new Error("API failed");
 
-    const data = await res.json();
+        const data = await res.json();
 
-    return {
-      props: { initialData: data },
-      revalidate: 86400, // 24 hours
-    };
-  } catch (error) {
-    console.error("getStaticProps error:", error);
+        return {
+            props: { initialData: data },
+            revalidate: 86400, // 24 hours
+        };
+    } catch (error) {
+        console.error("getStaticProps error:", error);
 
-    return {
-      props: { initialData: [] },
-      revalidate: 3600, // retry in 1 hour
-    };
-  }
+        return {
+            props: { initialData: [] },
+            revalidate: 3600, // retry in 1 hour
+        };
+    }
 }

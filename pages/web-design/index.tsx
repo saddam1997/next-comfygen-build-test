@@ -53,17 +53,15 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
 
 
 
@@ -575,10 +573,19 @@ export default function Mobile(props: any) {
           ]}
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
+
+
+
+
+
+
+
+
 
 export async function getStaticProps() {
   try {

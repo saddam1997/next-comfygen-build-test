@@ -63,18 +63,16 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import WhoCanStart from "../Newcomponet/SectionCompoent/WhoCanStart";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import IndustriesBlockchain from "../Newcomponet/SectionCompoent/IndustriesBlockchain";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
+
+
+
 
 
 
@@ -836,6 +834,34 @@ export default function rummy(props) {
           title="Frequently Asked Questions (FAQs)"
         />
       </div>
+       <BlogSection initialData={initialData} />
     </>
   );
+}
+
+
+
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
+
+    if (!res.ok) throw new Error("API failed");
+
+    const data = await res.json();
+
+    return {
+      props: { initialData: data },
+      revalidate: 86400, // 24 hours
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
+
+    return {
+      props: { initialData: [] },
+      revalidate: 3600, // retry in 1 hour
+    };
+  }
 }

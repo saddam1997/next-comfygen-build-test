@@ -92,19 +92,16 @@ const CardGrid = dynamic(
 
 
 
-// import NewSection from "../Newcomponet/comman/NewSection"
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import CoreFeaturesSection from "../Newcomponet/SectionCompoent/CoreFeaturesSection";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import CryptoTradingList from "../Newcomponet/SectionCompoent/CryptoTradingSection";
-// import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
 import Faq from "../../components/Newcomponet/SectionCompoent/Faq";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
@@ -637,7 +634,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-        {/*<BlogSection initialData={initialData} />*/}
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

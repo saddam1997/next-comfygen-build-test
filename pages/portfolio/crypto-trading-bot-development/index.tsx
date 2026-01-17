@@ -14,6 +14,14 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 
 
 import styles from "../components/styles.module.css"
@@ -148,6 +156,7 @@ export default function about(props) {
                     </div>
                 </section>
             </div>
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

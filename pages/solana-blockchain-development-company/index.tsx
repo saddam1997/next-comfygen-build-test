@@ -62,6 +62,12 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
 
 import { IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
 import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
@@ -853,10 +859,20 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
 }
+
+
+
+
+
+ 
+
+
+
 
 
 export async function getStaticProps() {

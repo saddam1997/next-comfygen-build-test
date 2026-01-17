@@ -18,13 +18,26 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
 );
 
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
 
 export default function about(props: any) {
+        let { initialData } = props;
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
 
-    let { initialData } = props;
+
     return (
         <div className='overflow-hidden'>
             <Head>
@@ -146,6 +159,8 @@ export default function about(props: any) {
                 </section>
 
             </div>
+
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

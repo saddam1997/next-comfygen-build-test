@@ -5,9 +5,18 @@ import Head from 'next/head';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
 import JSON_DATA from "./aria.json"
-
+import dynamic from 'next/dynamic';
 import Header from '../../../components/Newcomponet/layout/Header';
 import TechnologyStack from '../../../components/Newcomponet/portfolio/TechnologyStack';
+
+
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
 
 
 
@@ -170,6 +179,8 @@ export default function about(props:any) {
       </div>
 
       <TechnologyStack />
+
+       <BlogSection initialData={initialData} />
     </div>
   )
 }

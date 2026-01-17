@@ -5,6 +5,17 @@ import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
 import Header from '../../../components/Newcomponet/layout/Header';
+import dynamic from "next/dynamic";
+
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
 const benefitSections = [
   {
     index: 1,
@@ -247,6 +258,7 @@ export default function about(props) {
           ))}
         </div>
       </div>
+       <BlogSection initialData={initialData} />
     </div>
   );
 }

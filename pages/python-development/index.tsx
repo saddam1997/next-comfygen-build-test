@@ -46,6 +46,14 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 
 
 const Services = [
@@ -246,6 +254,8 @@ export default function Altcoin(props: any) {
           faqData={JSON_DATA.Frequently}
           title=" Node.JS Development Solutions"
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   )

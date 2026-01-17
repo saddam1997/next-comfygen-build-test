@@ -15,6 +15,14 @@ const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionC
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
@@ -400,6 +408,8 @@ export default function about(props) {
                 </section>
 
             </div>
+
+             <BlogSection initialData={initialData} />
         </div>
     )
 }

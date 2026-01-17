@@ -95,22 +95,18 @@ const AppcardSlider = dynamic(
   { loading: loader, ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TeckStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-// import AppcardSlider from "../Newcomponet/SectionCompoent/AppcardSlider";
+
+
+
+
+
 
 
 
@@ -748,6 +744,8 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title="ReactJS Development Technology"
         />
+
+         <BlogSection initialData={initialData} />
       </div>
     </>
   );
