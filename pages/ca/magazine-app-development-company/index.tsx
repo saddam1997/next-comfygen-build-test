@@ -486,7 +486,7 @@ export default function News(props: any) {
 
         <section className=" lg:py-10 py-10">
           <Features
-            grid="3"
+            grid={3}
             heading="Features You Should Look For in Magazine Apps!"
             description="When developing Magazine Mobile App Development, we prioritize features such as interactive content for engagement, seamless navigation, offline access for convenience, personalization options to tailor content, social sharing for connectivity, and robust search functionality. Our service supports frequent updates, multimedia integration, subscription management, and analytics for a comprehensive reading and user experience."
             featuresData={JSON_DATA.featuresData}

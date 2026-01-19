@@ -1,21 +1,8 @@
-import { useState } from "react";
-import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ios.json";
-import {
-  IconBook,
-  IconClock,
-  IconGlobe,
-  IconHeartbeat,
-  IconMusic,
-  IconShoppingCart,
-  IconUsers,
-  IconWallet,
-} from "@tabler/icons-react";
 import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
+import HeroSection from "../../components/HeroSection";
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   {
@@ -23,7 +10,6 @@ const AboutSection = dynamic(
     ssr: true,
   }
 );
-
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   {
@@ -31,7 +17,6 @@ const ServicesSec = dynamic(
     ssr: true,
   }
 );
-
 const LatestTechnology = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
   {
@@ -119,323 +104,8 @@ const BlogSection = dynamic(
 
 
 
-
-const schema = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  brand: {
-    "@type": "Brand",
-    name: "iOS App Development Company | ios mobile app development company",
-  },
-  description:
-    "Comfygen is your dependable partner for the creation of a top iOS app development company in UK, USA and UAE, providing first-class iOS Application Development Services to help your online swift app development services for ventures to reach new heights.",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  name: "Custom iPhone App Development Company | Comfygen",
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "4.9",
-      },
-      author: {
-        "@type": "Person",
-        name: "Mr. Saddam Husen",
-      },
-    },
-  ],
-  offers: {
-    "@type": "Offer",
-    url: "https://www.comfygen.com/ios-app-development",
-    priceCurrency: "USD",
-    seller: {
-      "@type": "Organization",
-      name: "Comfygen Private Limited",
-    },
-  },
-};
-
-const ldJson = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  priceRange: "$20-$55",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "@id": "https://www.comfygen.com/ios-app-development",
-  name: "Best iOS App Development Company India, USA, UAE, Germany",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar,",
-    addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-    addressRegion: "Jaipur, Rajasthan",
-    postalCode: "302021",
-    addressCountry: "IN",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.9",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Saddam husen",
-    },
-  },
-  url: "https://www.comfygen.com/ios-app-development",
-  telephone: "+91 9587867258",
-};
-const Process = [
-  {
-    title: "Ideation and Conceptualization",
-    description:
-      "First, we collaborate with users to understand your vision, define the strategy, and choose the right tech stack for the iOS app.",
-  },
-  {
-    title: "App Design",
-    description:
-      "Our skilled designers team creates intuitive UI/UX designs and prototypes, ensuring a visually appealing and user-friendly experience.",
-  },
-  {
-    title: "Development",
-    description:
-      "Using the latest tools and frameworks, we build high-performance, scalable iOS apps that provide a seamless user experience.",
-  },
-  {
-    title: "Testing and Quality Assurance",
-    description:
-      "Our QA team tests for flawless performance, security, and compatibility to deliver a bug-free, reliable product.",
-  },
-  {
-    title: "Deployment to the App Store",
-    description:
-      "We manage the App Store submission process, ensuring the user’s app meets guidelines for smooth approval and launch.",
-  },
-  {
-    title: "Post-Launch Support",
-    description:
-      "We offer continuous support, resolving issues and adding updates to maintain app performance and keep it competitive.",
-  },
-  {
-    title: "Support & Maintenance",
-    description:
-      "We provide ongoing monitoring, optimization, and scaling to adapt to user feedback, market trends, and evolving iOS versions.",
-  },
-];
-
-const technologyData = [
-  {
-    title: "On-Demand Service Apps",
-    desc: "We develop on-demand iOS apps for services like food delivery, taxi booking, and home services, ensuring real-time tracking and secure payment options. We provide On-demand iOS app development solutions for startups.",
-    img: <IconClock stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Social Networking Apps",
-    desc: "We develop social networking apps with messaging, video calls, and content-sharing features customized for enhanced user engagement.",
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Healthcare Apps",
-    desc: "As a reliable iOS app development company we create HIPAA-compliant healthcare apps for appointment booking, telemedicine, and health monitoring, offering secure and user-friendly app solutions.",
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "E-Commerce Apps",
-    desc: "E-Commerce Apps",
-    img: <IconShoppingCart stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Finance and Banking Apps",
-    desc: "Create feature-packed financial apps with real-time updates, secure transactions, and user-friendly dashboards for effortless financial management.",
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Education Apps",
-    desc: "Develop interactive learning apps with virtual classrooms, live video sessions, and progress tracking for enhanced learning experiences.",
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Travel and Tourism Apps",
-    desc: "Build travel apps with GPS navigation, itinerary management, and personalized recommendations to make every journey seamless.",
-    img: <IconGlobe stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Entertainment and Media Apps",
-    desc: "We specialize in creating apps for streaming, gaming, and content delivery, incorporating the latest AR/VR technology for immersive experiences.",
-    img: <IconMusic stroke={1.5} className="w-12 h-12" />,
-  },
-];
-
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "iOS App Development Services",
-      provider: {
-        "@type": "Organisation",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Comfygen Technologies delivers custom iOS app development services for startups and enterprises. We build secure, scalable, and high-performance iPhone and iPad applications using Swift, SwiftUI, and the latest Apple frameworks.",
-      url: "https://www.comfygen.com/ios-app-development ",
-      mainEntityOfPage: "https://www.comfygen.com/ios-app-development ",
-      areaServed: "Global",
-      serviceType: [
-        "iOS App Development",
-        "iPhone App Development",
-        "iPad App Development",
-        "Custom iOS Application Development",
-        "Swift and SwiftUI App Development",
-        "iOS UI/UX Design",
-        "App Store Deployment Services",
-        "iOS App Maintenance & Support",
-      ],
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "https://www.comfygen.com/ios-app-development ",
-      url: "https://www.comfygen.com/ios-app-development ",
-      telephone: "+91-958-786-7258",
-      priceRange: "$$",
-      description:
-        "Comfygen Technologies offers professional iOS app development services, including custom iPhone and iPad app development, Swift and SwiftUI development, UI/UX design, App Store deployment, and post-launch support.",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "CA",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      name: "iOS App Development Services | Custom iPhone & iPad Applications",
-      image:
-        "https://www.comfygen.com/gallery/about-images/ios-app-development-about-us-image.webp",
-      description:
-        "Comfygen offers custom iOS app development services for startups and enterprises. We build high-performance iPhone and iPad applications using Swift, SwiftUI, and the latest Apple frameworks.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "515",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is the time required for building an iOS app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The time required to build an iOS app depends on the project’s complexity, features, and functionality. Simple apps may take a few weeks, while feature-rich or custom applications can take several months. A professional iOS development company can provide a more accurate timeline based on your specific requirements.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the cost of developing an iOS app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The cost of developing an iOS app varies based on factors such as app complexity, required features, UI/UX design, and the expertise of the development team. A reliable iOS app development service provider can give a precise estimate and help you understand the expected ROI.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Which technologies are the ideal choices for iOS app development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "iOS app development commonly uses technologies such as Xcode, Swift, SwiftUI, Objective-C, and sometimes React Native for cross-platform projects. Developers also use the latest Apple libraries and frameworks to ensure security, scalability, and smooth performance.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I get started with Comfygen for iOS app development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "To get started, simply contact Comfygen with your project requirements. Our team will walk you through the process, discuss your goals, and outline the best development approach for your iOS app.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -491,14 +161,14 @@ export default function Mobile(props) {
         {/* Structured Data Scripts */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="IOS App Development Company"
           ptag="Create powerful, secure, and high-performance iOS applications with Comfygen, a trusted iOS app development company. We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards."
           ptag1="From intuitive UI/UX design to scalable architecture and App Store deployment, our iOS developers deliver seamless user experiences, optimized performance, and long-term app reliability tailored to your business goals."
@@ -508,10 +178,7 @@ export default function Mobile(props) {
           li3="End-to-End iOS App Development & App Store Launch"
           btnName="Talk With Expert"
           btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
+
           bgImage="https://www.comfygen.com/herosection/ios-app-dev-hero-img.webp"
         />
 
@@ -556,7 +223,7 @@ export default function Mobile(props) {
         <LatestTechnology
           heading="End-to-End IOS App Development for Diverse Business Domains"
           subheading="As a top IOS app development company in India, we specialize in providing cutting-edge IOS app development services across various industries. Whether you're looking to build on-demand IOS apps or create a niche application, we ensure innovation and seamless functionality."
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
 
         <InfoSection
@@ -591,7 +258,7 @@ export default function Mobile(props) {
                 scale without headaches.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 

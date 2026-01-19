@@ -25,68 +25,63 @@
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
       "title": "E-Commerce",
-      "description": "Building secure, scalable eCommerce solutions that deliver seamless shopping and higher customer conversions.",
+      "description": "We develop scalable eCommerce websites and <a href='https://www.comfygen.com/e-commerce-app-development' class='text-blue-600 font-semibold'>marketplace app development solutions</a> with secure payment gateways, inventory management, omnichannel selling, and conversion-optimized user experiences.",
       "link": "/e-commerce-app-development"
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-healthcare.webp",
       "title": "Healthcare",
-      "description": "Developing secure, patient-centric healthcare apps that improve care delivery and data management."
+      "description": "We deliver secure and compliant <a href='https://www.comfygen.com/healthcare-app-development'>healthcare mobile apps</a> and <a href='https://www.comfygen.com/medicine-app-development' class='text-blue-600 font-semibold'>medical software development solutions</a> including telemedicine apps, EHR systems, fitness apps, and patient management platforms."
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-blockchain.webp",
       "title": "Blockchain",
-      "description": "Creating secure, transparent blockchain solutions for decentralized, future-ready digital ecosystems."
+      "description": "We deliver secure, transparent, and decentralized <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>blockchain app development solutions<a/> including smart contracts, dApps, crypto wallets, NFT marketplaces, and enterprise blockchain platforms for future-ready digital ecosystems."
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-education.webp",
       "title": "Education",
-      "description": "Delivering interactive and scalable education platforms for modern digital learning experiences.",
+      "description": "We build interactive and scalable <a href='https://www.comfygen.com/ca/education-app-development-company' class='text-blue-600 font-semibold'>education apps<a/> and <a href='https://www.comfygen.com/e-learning-app-development' class='text-blue-600 font-semibold'>eLearning app development</a> solutions such as LMS systems, virtual classrooms, <a href='https://www.comfygen.com/tutor-app-development' class='text-blue-600 font-semibold'>Tutor apps</a>, and AI-powered digital education platforms.",
       "link": "/ca/education-app-development-company"
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-logestic.webp",
-      "title": "Transportation",
-      "description": "Developing smart transportation solutions for efficient mobility, logistics, and real-time tracking."
+      "title": "Transportation & Logistics",
+      "description": "We specialize in <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi app development</a> and <a href='https://www.comfygen.com/logistics-app-development' class='text-blue-600 font-semibold'>logistics app solutions</a> such as Uber-like taxi booking apps, fleet and driver management systems, GPS tracking, and real-time ride monitoring  for modern mobility businesses."
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-new.webp",
-      "title": "Construction",
-      "description": "Building intelligent construction management solutions for streamlined planning and project execution."
+      "title": "Real Estate",
+      "description": "We deliver <a href='https://www.comfygen.com/smart-contract-development' class='text-blue-600 font-semibold'>real estate smart contract development</a> solutions designed to streamline project planning, resource management, workflow automation, and team collaboration through intelligent, scalable technologies."
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-new.webp",
-      "title": "Game",
-      "description": "Creating immersive, high-performance gaming apps with engaging gameplay and real-time interactions.",
+      "title": "Gaming & Sports",
+      "description": "We build immersive and scalable <a href='https://www.comfygen.com/game-development-company' class='text-blue-600 font-semibold'>game app development</a> solutions including mobile games, multiplayer gaming platforms, real-time gaming apps, and cloud-based gaming solutions.",
       "link": "/game-development-company"
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/entertainment-industries.webp",
-      "title": "Entertainment",
-      "description": "Building innovative entertainment platforms with personalized content and seamless digital experiences."
+      "title": "Entertainment & Media",
+      "description": "We develop innovative entertainment and <a href='https://www.comfygen.com/social-media-app-development' class='text-blue-600 font-semibold'>social media app development solutions</a> such as OTT platforms, video streaming apps, music apps, and content distribution systems."
     },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/social-media-app-industries.webp",
-      "title": "Social Media App",
-      "description": "Developing feature-rich social media apps that connect users and drive meaningful engagement.",
-      "link": "/social-media-app-development"
-    },
+    
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/finance-industries-img.webp",
-      "title": "Finance",
-      "description": "Delivering secure, scalable financial applications for seamless transactions and smart money management.",
+      "title": "Finance & FinTech",
+      "description": "We deliver secure and compliant <a href='https://www.comfygen.com/finance-app-development' class='text-blue-600 font-semibold'>fintech app development solutions</a> including digital wallets, payment gateways, banking apps, financial analytics platforms, and <a href='https://www.comfygen.com/portfolio/blockchain-based-fintech-app' class='text-blue-600 font-semibold'>blockchain-based finance systems</a>.",
       "link": "/finance-app-development"
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/dating-industries-img.webp",
       "title": "Dating",
-      "description": "Designing intuitive dating platforms that foster meaningful connections and real-time interactions.",
+      "description": "We design secure and user-friendly matrimonial and <a href='https://www.comfygen.com/dating-app-development' class='text-blue-600 font-semibold'>dating app development solutions</a> with matchmaking algorithms, real-time messaging, and profile verification features.",
       "link": "/dating-app-development"
     },
     {
       "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/restaurant-industries.webp",
-      "title": "Restaurant industries",
-      "description": "Developing smart restaurant solutions for ordering, management, and enhanced customer experiences.",
+      "title": "Restaurant & FoodTech",
+      "description": "We build smart restaurant management and <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery app development solutions</a> including online ordering systems, <a href='https://www.comfygen.com/billing-software-development' class='text-blue-600 font-semibold'>POS integration</a>, table reservation apps, and customer loyalty platforms.",
       "link": "/food-delivery-app-development"
     }
   ],
@@ -162,8 +157,6 @@
       "link": "https://www.comfygen.com/food-delivery-app-development"
     }
   ],
-
-
   "Frequently": [
     {
       "title": "How much does it cost to build a mobile app?",
@@ -186,8 +179,6 @@
       "desc": "Yes, we develop complete delivery solutions with order management, tracking, payments, admin dashboards, ratings, loyalty programs, and analytics for restaurants, couriers, and users."
     }
   ],
-
-
   "CryptoAltcoin": [
     {
       "img": "https://www.comfygen.com/img/crypto-token=-development.webp",
@@ -398,11 +389,19 @@
     "title": "Modus Operandi Of Our Service",
     "decs": "In order to ensure that our clients get their software solutions on time, our blockchain development team follows proven and crucial strategies. Take a look at our model of the development process"
   },
-
-  "Process": [
-    { "title": "UI/UX Design", "description": "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction." },
-    { "title": "Development", "description": "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience." },
-    { "title": "Prototype", "description": "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process." },
+  "Process1": [
+    {
+      "title": "UI/UX Design",
+      "description": "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction."
+    },
+    {
+      "title": "Development",
+      "description": "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience."
+    },
+    {
+      "title": "Prototype",
+      "description": "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process."
+    },
     {
       "title": "Requirement Gathering",
       "description": "Our developers use advanced tools and technologies to create a robust backend and a seamless front end, ensuring high performance and easy navigation for your application."
@@ -419,14 +418,7 @@
       "title": "Support & Maintenance",
       "description": "Post-launch, we provide ongoing support and maintenance, monitoring performance, updating features, and keeping your app aligned with market trends."
     }
-
   ],
-
-
-
-
-
-
   "Process1": [
     {
       "num": "0",
@@ -764,7 +756,7 @@
       ]
     }
   },
-  "portfolioData": [
+  "portfolioData1": [
     {
       "image": "https://www.comfygen.com/comfygen-images/home/eco-friendly-ev-taxi-service.webp",
       "alt": "Eco Friendly EV Taxi Service",
@@ -806,18 +798,41 @@
       "link": "https://www.comfygen.com/portfolio/ai-powered-language-learning-app"
     }
   ],
-  "servicesData": [
+  "portfoliodata": [
     {
-      "title": "AI Development",
-      "subtitle": "",
-      "description": "At Comfygen, we build intelligent AI solutions that automate processes, improve decision-making, and unlock new growth opportunities. Our AI developers create systems that learn, adapt, and deliver real business value through automation, predictive insights, and smarter user experiences.",
-      "features": [
-        "<a href='https://www.comfygen.com/ai-development' class='underline'>Ai Development</a>",
-        "<a href='https://www.comfygen.com/generative-ai-development' class='underline'>Generative AI Development</a>",
-        "<a href='https://www.comfygen.com/ai-interview-scheduling-software-development' class='underline'>AI Interview Scheduling Software Development</a>"
-      ]
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup-new.webp",
+      "title": "Urban Ride-Hailing Startup",
+      "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
+      "link": "/portfolio/ride-hailing-app"
     },
     {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio-new.webp",
+      "title": "Fitclub Mobile App",
+      "description": "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
+      "link": "https://www.comfygen.com/portfolio/fitclub-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
+      "title": "Great Wallet Application",
+      "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development-new.webp",
+      "title": "Food Delivery App – Food 24Hr",
+      "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
+      "link": "/portfolio/food-delivery-app"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/comfygen/love-horoscope.webp",
+      "title": "Love Horoscope App",
+      "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
+      "link": "/portfolio/love-horoscope-app"
+    }
+  ],
+  "servicesData": [
+
+{
       "title": "Mobile App Development",
       "subtitle": "",
       "description": "We have skilled Android and iOS developers who build intuitive, responsive mobile apps tailored to real business needs. From idea to launch, our custom <a href='https://www.comfygen.com/mobile-app-development' class='underline'>mobile app development</a> solutions focus on smooth navigation, strong performance, and scalability. Whether it’s a startup MVP or a full-scale enterprise app, we design experiences users actually enjoy and businesses can grow with.",
@@ -844,10 +859,21 @@
         "<a href='https://www.comfygen.com/health-tracking-app-development' class='underline'>Health Tracking App Development</a>"
       ]
     },
-    {
-      "title": "Blockchain Development",
+
+     {
+      "title": "AI App Development",
       "subtitle": "",
-      "description": " We have expertise in custom <a href='https://www.comfygen.com/blockchain-development' class='underline'>blockchain app development</a> solutions using Ethereum, Solana, Hyperledger, Stellar, and more. From smart contracts and decentralized applications to crypto wallets, exchanges, and token platforms, we focus on security, transparency, and real-world usability. The result is blockchain systems that are reliable, scalable, and aligned with clear business outcomes.",
+      "description": "At Comfygen, we provide intelligent AI app development solutions that automate processes, improve decision-making, and unlock new growth opportunities. Our AI app developers create systems that learn, adapt, and deliver real business value through automation, predictive insights, and smarter user experiences.",
+      "features": [
+        "<a href='https://www.comfygen.com/ai-development' class='underline'>AI Development</a>",
+        "<a href='https://www.comfygen.com/generative-ai-development' class='underline'>Generative AI Development</a>",
+        "<a href='https://www.comfygen.com/ai-interview-scheduling-software-development' class='underline'>AI Interview Scheduling Software Development</a>"
+      ]
+    },
+    {
+      "title": "Blockchain App Development",
+      "subtitle": "",
+      "description": "We have expertise in custom <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>blockchain app development</a> solutions using Ethereum, Solana, Hyperledger, Stellar, and more. From smart contracts and decentralized applications to crypto wallets, exchanges, and token platforms, we focus on security, transparency, and real-world usability. The result is blockchain systems that are reliable, scalable, and aligned with clear business outcomes.",
       "features": [
         "<a href='https://www.comfygen.com/custom-blockchain-development-company' class='underline'>Custom Blockchain Development</a>",
         "<a href='https://www.comfygen.com/polygon-blockchain-development' class='underline'>Polygon Blockchain Development</a>",
@@ -859,9 +885,9 @@
       ]
     },
     {
-      "title": "NFT Marketplace",
+      "title": "NFT Marketplace Development",
       "subtitle": "",
-      "description": "We build secure and scalable NFT marketplace platforms for minting, buying, selling, and trading digital assets. Our solutions support multiple wallets, smart contracts, and smooth user flows to help you launch and grow with confidence.",
+      "description": "We build secure and scalable NFT marketplace platforms for minting, buying, selling, and trading digital assets. Our NFT marketplace development solutions support multiple wallets, smart contracts, and smooth user flows to help you launch and grow with confidence.",
       "features": [
         "NFT Smart Contract Development",
         "<a href='https://www.comfygen.com/nft-marketplace-development-company' class='underline'>NFT Marketplace Development Company</a>",
@@ -869,34 +895,36 @@
         "<a href='https://www.comfygen.com/nft-token-development-company' class='underline'>NFT Token Development Company</a>",
         "<a href='https://www.comfygen.com/nft-game-development-company' class='underline'>NFT Game Development Company</a>",
         "<a href='https://www.comfygen.com/nft-wallet-development' class='underline'>NFT Wallet Development Company</a>"
+        
       ]
     },
     {
-      "title": "Ecommerce Development",
+      "title": "Ecommerce Web And App Development",
       "subtitle": "",
-      "description": "We build secure and engaging eCommerce web and mobile apps that support smooth shopping, fast payments, and easy order management. Our <a href='https://www.comfygen.com/ecommerce' class='underline'>ecommerce development</a> solutions are designed to scale as your online business grows.",
+      "description": "We are a top-rated IT solutions company providing secure and engaging eCommerce web and mobile app development that support smooth shopping, fast payments, and easy order management. Our ecommerce app development solutions are designed to scale as your online business grows.",
       "features": [
         "<a href='https://www.comfygen.com/quick-commerce-app-development' class='underline'>Quick Ecommerce Development</a>",
         "<a href='https://www.comfygen.com/food-delivery-app-development' class='underline'>Food Delivery App Development</a>",
         "<a href='https://www.comfygen.com/ecommerce/grocery' class='underline'>Grocery App Development</a>",
         "<a href='https://www.comfygen.com/ecommerce/fmcg' class='underline'>FMCG App Development</a>",
         "<a href='https://www.comfygen.com/ecommerce/fashion' class='underline'>Fashion App Development</a>"
-        
       ]
     },
     {
-      "title": "Web Development",
+      "title": "Website  Development Service",
       "subtitle": "",
-      "description": "We build intuitive, high-performing websites that create real value for users and businesses. Our focus is on clean design, easy navigation, and reliable technology to deliver engaging experiences that scale as your business grows.",
+      "description": "We build intuitive, high-performing websites that create real value for users and businesses. Our <a href='https://www.comfygen.com/web-development' class='underline font-semibold'>website development solutions</a> focus on clean, modern design, seamless navigation, and reliable, scalable technologies to create engaging digital experiences that grow alongside your business.",
       "features": [
         "Custom Website Development",
-        "<a href='https://www.comfygen.com/web-development' class='underline'>Web Development</a>",
+        "<a href='https://www.comfygen.com/web-development' class='underline font-semibold'>Web Development</a>",
         "CMS Development",
         "eCommerce Website Development",
         "SaaS & Enterprise Web Solutions"
-
+        
       ]
     },
+  
+   
     {
       "title": "Crypto Token & Coin Development",
       "subtitle": "",
@@ -912,9 +940,9 @@
       ]
     },
     {
-      "title": "Game Development",
+      "title": "Mobile Game App Development",
       "subtitle": "",
-      "description": "Comfygen develops engaging, high-quality games with innovative gameplay, stunning graphics, and seamless experiences for mobile, PC, and console platforms. Our team focuses on immersive storytelling, interactive features, and smooth performance to keep players entertained and coming back for more.",
+      "description": "Comfygen develops engaging, high-quality games with innovative gameplay, stunning graphics, and seamless experiences for mobile, PC, and console platforms. Our game development team focuses on immersive storytelling, interactive features, and smooth performance to keep players entertained and coming back for more.",
       "features": [
         "<a href='https://www.comfygen.com/mobile-game-development-company' class='underline'>Mobile Game Development<a/>",
         "<a href='https://www.comfygen.com/board-game-development' class='underline'>Board Game Development Company<a/>",
@@ -954,8 +982,8 @@
     }
   ],
   "pageData": {
-    "title": "Why Choose Us?",
-    "description": "Being the proficient IT Company, we promise to deliver innovative and custom IT Solutions. Know about our USPs that turn ideations into perfectly tailored solutions.",
+    "title": "Why Choose Us For Mobile App and Web Development Project?",
+    "description": "Comfygen specialize in developing high-quality web and mobile applications that drive business growth. We leverage advanced technologies, intuitive design, and strategic development to create secure, scalable, and user-friendly digital solutions that deliver measurable results.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -964,33 +992,33 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Optimum Outcome Focused",
-        "description": "Our developers are focused to bring optimum outcomes through our competitive web and app development services. We create innovative IT Solutions that stand out of the crowd."
+        "title": "Expertise in Modern Technologies ",
+        "description": "We leverage a cutting-edge tech stack to deliver secure, scalable, and high-performance web and mobile applications."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Experienced Techies",
-        "description": "Our experienced techies are the reason why we deliver the prominent IT services to clients across various industries. Every team member is 10+ years experienced, mastered their domain and developed impeccable solutions."
+        "title": "Focus on Security & Reliability",
+        "description": "Every project is built with robust architecture and advanced security measures to ensure your data and users are protected."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Cutting Edge Technologies",
-        "description": "We are the leading web and mobile app development company that use aced technologies to build the software and apps. We are more attentive in building highly performing, secured, and robust solutions that cater to the needs of businesses."
+        "title": "Scalable & Future-Ready Solutions",
+        "description": "Our applications are designed to grow with your business, handling increasing users and complex functionality effortlessly."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Cost-Effective & Deadline Oriented",
-        "description": "Our approach is to build the best software under competitive cost. Our company quotes affordable web & app development costs with high quality maintenance. Along cost-efficiency, our agenda is to meet the defined deadline for project completion."
+        "title": "User-Centric Approach",
+        "description": "We prioritize intuitive design and smooth user experiences to maximize engagement and satisfaction."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Transparency with Clients",
-        "description": "We prioritize transparency with clients. Whatever the status of development, everything is informed to the clients in real time. Most importantly, our customer support is available 24*7 for the clients to resolve their queries immediately."
+        "title": "Proven Track Record",
+        "description": "With a portfolio of successful projects across industries, we consistently deliver solutions that meet business objectives."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
-        "title": "Modern IT Services",
-        "description": "We look towards building modern IT solutions that cater to every demand of concurrent market standards. The developers use the latest tech trends and innovative approaches to create futuristic software that fulfills the needs and engages the targeted audience."
+        "title": "End-to-End Support",
+        "description": "From concept to deployment and maintenance, we provide continuous support to ensure your digital product succeeds."
       }
     ]
   },
@@ -1201,5 +1229,63 @@
       "desc": "We look towards building modern IT solutions that cater to every demand of concurrent market standards. The developers use the latest tech trends and innovative approaches to create futuristic software that fulfills needs and engages the targeted audience.",
       "icon": "https://www.comfygen.com/comfygen-images/home/modern-it-services.webp"
     }
-  ]
+  ],
+  "Process": [
+    {
+      "title": "Requirement Gathering & Analysis",
+      "description": "We analyze your business goals, audience, and requirements, defining scope, cost, timelines, and milestones for a clear development roadmap."
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Our expert <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX designers</a> create intuitive and visually engaging UI/UX designs focused on usability and performance. By combining creativity with user-centered design principles."
+    },
+    {
+      "title": "Prototype",
+      "description": "We develop interactive application prototypes that simulate real user journeys and workflows. This allows early validation of design and functionality, helping eliminate issues before full-scale development begins."
+    },
+    {
+      "title": "Application Development",
+      "description": "Our skilled mobile app developers build secure and scalable web and mobile applications using modern technologies. We focus on developing a robust backend and frontend to ensure high performance and easy navigation."
+    },
+    {
+      "title": "Quality Assurance & Testing",
+      "description": "Through comprehensive manual and automated testing, we ensure your application meets the highest standards of functionality, security, reliability, and performance across devices and platforms."
+    },
+    {
+      "title": "Deployment & Launch",
+      "description": "After successful testing, we deploy your application on the desired platform while ensuring full compliance with technical and marketplace requirements for a smooth and successful launch."
+    },
+    {
+      "title": "Support & Maintenance",
+      "description": "Post-launch, we provide <a href='https://www.comfygen.com/blog/mobile-app-maintenance-cost/' class='text-blue-600 font-semibold'>mobile app maintenance services</a>, including performance monitoring, feature updates, security enhancements, and scalability improvements to keep your application future-ready."
+    }
+  ],
+
+    "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.comfygen.com/#webpage",
+    "url": "https://www.comfygen.com/",
+    "inLanguage": "en-US",
+    "name": "Custom Blockchain & Mobile App Development Company",
+    "isPartOf": {
+      "@id": "https://www.comfygen.com/#website"
+    },
+    "datePublished": "2020-07-08T00:09:36-08:00",
+    "dateModified": "2024-04-06T00:19:05-08:00",
+    "description": "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
+  },
+
+   "websiteJsonLd": {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Custom Blockchain & Mobile App Development Company",
+    "url": "https://www.comfygen.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+
 }

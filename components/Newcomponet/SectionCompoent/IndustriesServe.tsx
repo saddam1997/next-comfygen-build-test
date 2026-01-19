@@ -77,173 +77,220 @@ const defaultSliderData = [
   }
 ];
 
+
+
+
+
 function IndustriesServe({
   heading,
   description,
-  sliderData = defaultSliderData
+  sliderData = [],
 }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(4);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  /* ================= REFS ================= */
+  const containerRef = useRef(null);
+  const trackRef = useRef(null);
+
+  const isDragging = useRef(false);
+  const isInteracting = useRef(false);
+
+  const startX = useRef(0);
+  const prevTranslate = useRef(0);
+  const currentTranslate = useRef(0);
+
   const autoPlayRef = useRef(null);
 
-  // Responsive slides calculation
+  /* ================= RESPONSIVE ================= */
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 680) {
-        setSlidesToShow(1);
-      } else if (window.innerWidth < 1024) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(4);
-      }
+    const resize = () => {
+      if (window.innerWidth < 680) setSlidesToShow(1);
+      else if (window.innerWidth < 1024) setSlidesToShow(2);
+      else setSlidesToShow(4);
     };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
   }, []);
 
-  // Auto-play functionality
+  /* ================= SYNC POSITION ================= */
   useEffect(() => {
-    if (isAutoPlaying) {
-      autoPlayRef.current = setInterval(() => {
-        next();
-      }, 4000);
+    if (!containerRef.current || !trackRef.current) return;
+
+    const slideWidth = containerRef.current.offsetWidth / slidesToShow;
+    prevTranslate.current = -current * slideWidth;
+    currentTranslate.current = prevTranslate.current;
+
+    trackRef.current.style.transition = "transform 0.45s ease";
+    trackRef.current.style.transform = `translate3d(${prevTranslate.current}px,0,0)`;
+  }, [current, slidesToShow]);
+
+  /* ================= AUTOPLAY ================= */
+  const startAutoPlay = () => {
+    if (autoPlayRef.current) return;
+    autoPlayRef.current = setInterval(() => {
+      if (isInteracting.current) return;
+      next();
+    }, 4000);
+  };
+
+  const stopAutoPlay = () => {
+    if (autoPlayRef.current) {
+      clearInterval(autoPlayRef.current);
+      autoPlayRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    startAutoPlay();
+    return () => stopAutoPlay();
+  }, []);
+
+  /* ================= NAV ================= */
+  const next = () => {
+    setCurrent((p) => {
+      const max = sliderData.length - slidesToShow;
+      return p >= max ? 0 : p + 1;
+    });
+  };
+
+  const prev = () => {
+    setCurrent((p) => {
+      const max = sliderData.length - slidesToShow;
+      return p <= 0 ? max : p - 1;
+    });
+  };
+
+  /* ================= SNAP ================= */
+  const snap = () => {
+    const slideWidth = containerRef.current.offsetWidth / slidesToShow;
+    const moved = currentTranslate.current - prevTranslate.current;
+    const threshold = slideWidth * 0.25;
+
+    if (moved < -threshold) next();
+    else if (moved > threshold) prev();
+    else {
+      trackRef.current.style.transition = "transform 0.45s ease";
+      trackRef.current.style.transform = `translate3d(${prevTranslate.current}px,0,0)`;
     }
 
-    return () => {
-      if (autoPlayRef.current) {
-        clearInterval(autoPlayRef.current);
-      }
-    };
-  }, [currentIndex, isAutoPlaying, slidesToShow]);
-
-  const next = () => {
-    setCurrentIndex((prev) => {
-      const maxIndex = sliderData.length - slidesToShow;
-      return prev >= maxIndex ? 0 : prev + 1;
-    });
+    isInteracting.current = false;
+    startAutoPlay();
   };
 
-  const previous = () => {
-    setCurrentIndex((prev) => {
-      const maxIndex = sliderData.length - slidesToShow;
-      return prev <= 0 ? maxIndex : prev - 1;
-    });
+  /* ================= DESKTOP DRAG ================= */
+  const onMouseDown = (e) => {
+    isDragging.current = true;
+    isInteracting.current = true;
+    stopAutoPlay();
+
+    startX.current = e.clientX;
+    trackRef.current.style.transition = "none";
   };
 
-  const handleMouseEnter = () => setIsAutoPlaying(false);
-  const handleMouseLeave = () => setIsAutoPlaying(true);
+  const onMouseMove = (e) => {
+    if (!isDragging.current) return;
+    const diff = e.clientX - startX.current;
+    currentTranslate.current = prevTranslate.current + diff;
+    trackRef.current.style.transform = `translate3d(${currentTranslate.current}px,0,0)`;
+  };
 
+  const onMouseUp = () => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+    snap();
+  };
+
+  /* ================= TOUCH ================= */
+  const onTouchStart = (e) => {
+    isInteracting.current = true;
+    stopAutoPlay();
+    startX.current = e.touches[0].clientX;
+    trackRef.current.style.transition = "none";
+  };
+
+  const onTouchMove = (e) => {
+    const diff = e.touches[0].clientX - startX.current;
+    currentTranslate.current = prevTranslate.current + diff;
+    trackRef.current.style.transform = `translate3d(${currentTranslate.current}px,0,0)`;
+  };
+
+  const onTouchEnd = () => snap();
+
+  /* ================= RENDER ================= */
   return (
     <section className="lg:py-5 py-10">
       <div className="mx-auto max-w-[1440px] xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
-        <div className="flex items-start justify-between mb-6 gap-4">
-          <div className="space-y-2 flex-1">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">{heading || "Industries We Empower with Our Digital Solutions"}</h2>
-            <p className="xl:text-lg text-base text-[#212121] font-normal">{description || "We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."}</p>
+
+        {/* HEADER */}
+        <div className="flex justify-between gap-4 mb-6">
+          <div className="space-y-2">
+            <h2 className="text-3xl xl:text-4xl font-bold text-[#212121]">
+              {heading}
+            </h2>
+            <p className="text-base xl:text-lg text-[#212121]">
+              {description}
+            </p>
           </div>
-          <div className="md:flex hidden items-center gap-4 flex-shrink-0">
-            <button
-              type="button"
-              aria-label="Previous slide"
-              onClick={previous}
-              className="w-12 h-12 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border-2 transition-all duration-200 bg-white rounded-full hover:bg-[#5556D1] hover:border-[#5556D1] cursor-pointer shadow-sm"
-            >
-              <ChevronLeft size={28} strokeWidth={2.5} />
+
+          <div className="hidden md:flex gap-4">
+            <button onClick={prev} aria-label="Previous">
+              <ChevronLeft />
             </button>
-            <button
-              type="button"
-              aria-label="Next slide"
-              onClick={next}
-              className="w-12 h-12 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border-2 transition-all duration-200 bg-white rounded-full hover:bg-[#5556D1] hover:border-[#5556D1] cursor-pointer shadow-sm"
-            >
-              <ChevronRight size={28} strokeWidth={2.5} />
+            <button onClick={next} aria-label="Next">
+              <ChevronRight />
             </button>
           </div>
         </div>
 
+        {/* SLIDER */}
         <div
-          className="overflow-hidden h-full "
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          ref={containerRef}
+          className="overflow-hidden cursor-grab active:cursor-grabbing select-none"
+          onMouseDown={onMouseDown}
+          onMouseMove={onMouseMove}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
         >
-          <div
-            className="flex transition-transform duration-500 ease-in-out items-stretch"
-            style={{
-              transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`
-            }}
-          >
-            {sliderData.map((item, index) => (
+          <div ref={trackRef} className="flex items-stretch will-change-transform">
+            {sliderData.map((item, i) => (
               <div
-                key={index}
-                className="flex-shrink-0 px-3 p-2  "
+                key={i}
+                className="px-3 flex-shrink-0"
                 style={{ width: `${100 / slidesToShow}%` }}
               >
-                {item.link ? (
-                  <a href={item.link} className="block overflow-hidden cursor-pointer min-h-[400px]">
-                    <div className="bg-white border border-[#E8E8E8] rounded-lg p-4
-                h-full flex flex-col
-                hover:shadow-lg transition-shadow duration-500">
-                      <div className="relative w-full   rounded-lg">
-                        <CommonImage
-                          src={item.imgSrc}
-                          alt={item.title}
-                          width={640}
-                          height={360}
-                          priorityLoad={false}
-                          blurDataURL="/blur-placeholder.webp"
-                          className="w-full  object-cover "
-                        />
-
-                      </div>
-                      <div>
-                        <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>
-                        <p
-                          className="text-[#212121] text-sm"
-                          dangerouslySetInnerHTML={{ __html: item.description }}
-                        />
-                      </div>
-                    </div>
-                  </a>
-                ) : (
-                  <div className="bg-white cursor-pointer border overflow-hidden min-h-[410px] border-[#E8E8E8] rounded-lg p-4 space-y-4 hover:shadow-lg transition-shadow  duration-500 group-hover:scale-150">
-                    <div className="relative w-full min-h-fit overflow-hidden rounded-lg">
-                      <CommonImage
-                        src={item.imgSrc}
-                        alt={item.title}
-                        width={640}
-                        height={360}
-                        priorityLoad={false}
-                        blurDataURL="/blur-placeholder.webp"
-                        className="w-full h-full object-cover "
-                      />
-
-                    </div>
-                    <div>
-                      <h3 className="text-[#212121] text-lg font-semibold mb-2">{item.title}</h3>
-                      <p
-                        className="text-[#212121] text-sm"
-                        dangerouslySetInnerHTML={{ __html: item.description }}
-                      />
-                    </div>
-                  </div>
-                )}
+                <div className="h-full min-h-[420px] bg-white border rounded-lg p-4 flex flex-col hover:shadow-lg transition-shadow">
+                  <CommonImage
+                    src={item.imgSrc}
+                    alt={item.title}
+                    width={640}
+                    height={360}
+                    className="rounded-lg object-cover"
+                  />
+                  <h3 className="mt-4 font-semibold text-lg">{item.title}</h3>
+                  <div
+                    className="text-sm text-[#212121] mt-2"
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                  />
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Mobile Navigation Dots */}
-        <div className="flex  justify-center gap-2 mt-6">
-          {Array.from({ length: Math.ceil(sliderData.length) }).map((_, index) => (
+        {/* DOTS */}
+        <div className="flex justify-center gap-2 mt-6">
+          {Array.from({ length: sliderData.length }).map((_, i) => (
             <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index ? 'bg-[#5556D1] w-6' : 'bg-gray-300'
-                }`}
-              aria-label={`Go to slide ${index + 1}`}
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`h-2 rounded-full transition-all ${
+                current === i ? "w-6 bg-[#5556D1]" : "w-2 bg-gray-300"
+              }`}
             />
           ))}
         </div>

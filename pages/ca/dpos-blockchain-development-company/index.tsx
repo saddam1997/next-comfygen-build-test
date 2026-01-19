@@ -411,7 +411,7 @@ export default function Ecommerce(props: any) {
           heading='Features in DPOS blockchain apps you should look for!'
           description='Comfygen is a DPOS blockchain development company in the USA that specializes in Blockchain DPOS development for its clients. The development company can act as a trusted partner in the most advanced development project for DPOS blockchain apps. We suggest the best features for some advanced functions in a blockchain-enabled application.'
           featuresData={JSON_DATA.featuresData}
-          grid='3'
+          grid={3}
         />
 
 

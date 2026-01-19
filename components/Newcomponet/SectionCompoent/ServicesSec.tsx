@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import router from "next/router";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const ServicesSec = ({ servicesData = [] }) => {
   const [selectedService, setSelectedService] = useState(
@@ -26,11 +26,10 @@ const ServicesSec = ({ servicesData = [] }) => {
             <div key={index}>
               <button
                 onClick={() => setSelectedService(service)}
-                className={`${
-                  isSelected
+                className={`${isSelected
                     ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10 services-tab"
                     : " text-black border-[#00000018] bg-white "
-                } xl:text-lg text-sm flex items-center border text-start font-semibold px-4 gap-2 py-3 lg:rounded-[4px] w-full  relative `}
+                  } xl:text-lg text-sm flex items-center border text-start font-semibold px-4 gap-2 py-3 lg:rounded-[4px] w-full  relative `}
                 dangerouslySetInnerHTML={{ __html: service.title }}
               />
 
@@ -43,9 +42,24 @@ const ServicesSec = ({ servicesData = [] }) => {
           );
         })}
       </div>
-      <div className="hidden lg:block w-[70%] h-[34rem] overflow-hidden service-bg relative bg-gradient-to-r from-[#272868] to-[#5556D1]">
+
+      <div className="hidden lg:block w-[70%] h-[34rem] overflow-hidden relative bg-gradient-to-r from-[#272868] to-[#5556D1]">
+
+        {/* Decorative Image (SEO + LCP safe) */}
+        <Image
+          src="https://www.comfygen.com/image/services-after-img.svg"
+          alt=""
+          width={200}
+          height={200}
+          loading="lazy"
+          className="absolute bottom-0 right-0 pointer-events-none"
+        />
+
         <ServiceContent service={selectedService} />
       </div>
+      {/* <div className="hidden lg:block w-[70%] h-[34rem] overflow-hidden service-bg relative bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <ServiceContent service={selectedService} />
+      </div> */}
     </div>
   );
 };
@@ -74,10 +88,10 @@ const ServiceContent = ({ service }) => (
       {service.features && service.features.length > 0 && (
         <div className="flex items-center justify-start">
           <ul className="space-y-2 text-white">
-            {service.features.map((feature:any, index:any) => (
+            {service.features.map((feature: any, index: any) => (
               <li
                 key={index}
-                className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links"
+                className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] "
               >
                 <span className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></span>
                 <span dangerouslySetInnerHTML={{ __html: feature }} />
@@ -86,16 +100,7 @@ const ServiceContent = ({ service }) => (
           </ul>
         </div>
       )}
-      {/* to navigate with same page  */}
-      {/* <div>
-          <button 
-          onClick={() => router.push('/contact-us')} // Use router to navigate
-          className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-8 py-2.5 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-            Connect Experts <MdOutlineArrowOutward />
-          </button>
-      </div> */}
 
-      {/* to navigate with new page */}
       <div>
         <button
           onClick={(e) => {

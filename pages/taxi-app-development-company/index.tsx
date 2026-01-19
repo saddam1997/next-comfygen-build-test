@@ -50,15 +50,7 @@ const Features = dynamic(
   { loading: loader, ssr: true }
 );
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: loader, ssr: true }
-);
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
 
 const CallToAction = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
@@ -99,18 +91,6 @@ const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

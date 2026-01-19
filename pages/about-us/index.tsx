@@ -101,23 +101,43 @@ export default function about(props) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[100px]">
-        <div className="lg:bg-right bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/career-hero-img.webp')]">
-          <HeroSectionForCompany
-            heading="About Us"
-            ptag="Stay with Comfygen to Upgrade Your Business With Modern Technologies!"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            img={{
-              src: "https://www.comfygen.com/image/about-hero-image.webp",
-              width: 786,
-              height: 304
-            }}
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
+
+        <div className="relative overflow-hidden">
+
+          {/* LCP background image */}
+          <Image
+            src="https://www.comfygen.com/image/career-hero-img.webp"
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover object-right"
+            aria-hidden="true"
           />
+
+          <div className="relative z-10">
+            <HeroSectionForCompany
+              heading="About Us"
+              ptag="Stay with Comfygen to Upgrade Your Business With Modern Technologies!"
+              btnName="Talk With Expert"
+              btnLink="/contact-us"
+              img={{
+                src: "https://www.comfygen.com/image/about-hero-image.webp",
+                width: 786,
+                height: 304
+              }}
+              openModal={openModal}
+              talkToExpertModal={talkToExpertModal}
+              setTalkToExpertModal={setTalkToExpertModal}
+              closeModal={closeModal}
+
+
+            />
+          </div>
+
         </div>
+       
         <AboutSection
           title="About Company"
           heading="Build Future-Driven Webs and Apps that Transforms Industries"
@@ -177,12 +197,29 @@ export default function about(props) {
               {JSON_DATA.CompanyInfo1.map((elem) => {
                 const { title, num, img, decs } = elem;
                 return (
-                  <div key={num} className="space-y-4 career-card-item relative overflow-hidden text-left border text-white rounded-md bg-gradient-to-r from-[#272868] to-[#5556d1] duration-200 transition cursor-pointer">
-                    <div className='space-y-2 md:p-10 p-5'>
-                      <h3 className="lg:text-3xl md:text-2xl text-xl font-semibold text-white">{title}</h3>
-                      <p className="text-white text-base ">{decs}</p>
+                  <>
+                    <div className="career-card-item relative overflow-hidden text-left border text-white rounded-md bg-gradient-to-r from-[#272868] to-[#5556d1] duration-200 transition cursor-pointer">
+
+                      {/* decorative image */}
+                      <Image
+                        src="https://www.comfygen.com/image/career-card-item-after-img.webp"
+                        alt=""
+                        width={80}
+                        height={80}
+                        loading="lazy"
+                        className="absolute bottom-0 right-0"
+                        aria-hidden="true"
+                      />
+
+                      <div className="relative z-10 md:p-10 p-5">
+                       <div className='space-y-2 md:p-10 p-5'>
+                     <h3 className="lg:text-3xl md:text-2xl text-xl font-semibold text-white">{title}</h3>
+                       <p className="text-white text-base ">{decs}</p>
+                     </div>
+                      </div>
                     </div>
-                  </div>
+                  </>
+
                 );
               })}
             </div>
@@ -203,9 +240,20 @@ export default function about(props) {
             </div>
           </div>
         </section>
-        <section className="bg-cover bg-no-repeat lg:py-16 py-10 w-full"
-          style={{ backgroundImage: `url('https://www.comfygen.com/image/why-choose-bg-img.webp')` }}>
-          <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto'>
+  
+        <section className="relative overflow-hidden lg:py-16 py-10 bg-cover bg-no-repeat">
+          <Image
+            src="https://www.comfygen.com/image/why-choose-bg-img.webp"
+            alt=""
+            fill
+            loading="lazy"
+            sizes="100vw"
+            className="object-cover"
+            aria-hidden="true"
+          />
+
+          <div className="relative z-10">
+            <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto'>
             <div>
               <div>
                 <h2 className="text-2xl font-semibold lg:text-start text-center text-[#212121] lg:text-4xl">Our Visionary Leader</h2>
@@ -242,8 +290,9 @@ export default function about(props) {
               </div>
             </div>
           </div>
+          </div>
         </section>
-        <IndustriesServe heading="" description=""/>
+        <IndustriesServe heading="" description="" />
       </div>
     </div>
   )
