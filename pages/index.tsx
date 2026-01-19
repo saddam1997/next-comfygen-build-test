@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import Milestones from "../components/Newcomponet/comman/Milestones";
 
-import Milestonessec from "../components/Newcomponet/SectionCompoent/Milestonessec";
+
 import HeroSection from "../components/HeroSection";
 
 /* ======================
@@ -93,125 +93,13 @@ const BlogSection = dynamic(
 export default function Home(props: any) {
   let { initialData } = props;
 
- 
 
-  const websiteJsonLd = {
-    "@context": "https://schema.org/",
-    "@type": "WebSite",
-    name: "Custom Blockchain & Mobile App Development Company",
-    url: "https://www.comfygen.com/",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "{search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
-  };
-
-
-
-  const portfoliodata = [
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/comfygen/urban-ride-hailing-startup-new.webp",
-      title: "Urban Ride-Hailing Startup",
-      description:
-        "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support. The app gained 50,000+ users in 6 months, with a 30% increase in driver sign-ups.",
-      link: "/portfolio/ride-hailing-app",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/comfygen/fitclub-app-portfolio-new.webp",
-      title: "Fitclub Mobile App",
-      description:
-        "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-      link: "https://www.comfygen.com/portfolio/fitclub-app",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
-      title: "Great Wallet Application",
-      description:
-        "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. With cutting-edge security measures, intuitive design, and insightful analytics, our app transforms the way you handle money.",
-      link: "#",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/comfygen/food-delivery-app-development-new.webp",
-      title: "Food Delivery App – Food 24Hr",
-      description:
-        "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations, and a smooth user interface for both customers and delivery partners.",
-      link: "/portfolio/food-delivery-app",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/comfygen/love-horoscope.webp",
-      title: "Love Horoscope App",
-      description:
-        "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
-      link: "/portfolio/love-horoscope-app",
-    },
-  ];
-
-  const Process = [
-    {
-      title: "Requirement Gathering",
-      description:
-        "We start with a detailed discussion to understand your needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and defining project milestones for a clear direction.",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Our designers craft intuitive, visually engaging interfaces tailored to your users. By focusing on creativity and functionality, we ensure user-friendly designs that enhance the overall experience.",
-    },
-    {
-      title: "Prototype",
-      description:
-        "We develop a prototype to simulate user interaction and workflows, allowing you to review and address design or functionality issues early in the development process.",
-    },
-    {
-      title: "Development",
-      description:
-        "Our developers use advanced tools and technologies to create a robust backend and a seamless front end, ensuring high performance and easy navigation for your application.",
-    },
-    {
-      title: "Quality Assurance",
-      description:
-        "Through rigorous manual and automated testing, we identify and resolve bugs, ensuring the application meets the highest standards for functionality, reliability, and performance.",
-    },
-    {
-      title: "Deployment",
-      description:
-        "Once tested, we launch your app on the preferred platform, ensuring compliance with all requirements to make it accessible and ready for your target audience.",
-    },
-    {
-      title: "Support & Maintenance",
-      description:
-        "Post-launch, we provide ongoing support and maintenance, monitoring performance, updating features, and keeping your app aligned with market trends.",
-    },
-  ];
-
-
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/#webpage",
-    "url": "https://www.comfygen.com/",
-    "inLanguage": "en-US",
-    "name": "Custom Blockchain & Mobile App Development Company",
-    "isPartOf": {
-      "@id": "https://www.comfygen.com/#website"
-    },
-    "datePublished": "2020-07-08T00:09:36-08:00",
-    "dateModified": "2024-04-06T00:19:05-08:00",
-    "description": "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally."
-  };
 
   return (
     <>
       <Head>
         <title>
-          Web And Mobile App Development with AI & Blockchain | Comfygen
+          Top Mobile App & Web Development Company | Comfygen Technologies
         </title>
         <meta
           name="title"
@@ -219,7 +107,7 @@ export default function Home(props: any) {
         />
         <meta
           name="description"
-          content="Looking for web and mobile app development services? Comfygen provides web and mobile app development solutions in India, UAE and the USA for startups and enterprises."
+          content="Meta Descriptio: Comfygen is a leading mobile app and web development company. We build best custom mobile apps with AI solution for startups and enterprises."
         />
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta
@@ -298,12 +186,12 @@ export default function Home(props: any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.websiteJsonLd) }}
         />
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLd) }}
         />
       </Head>
       <div >
@@ -314,9 +202,9 @@ export default function Home(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="relative ">
           <HeroSection
-            heading=""
+            heading="AI-Based Mobile App and Web Development Company"
             isHome={true}
-            ptag="Excel in business growth with modern digital transformation. We are a top-tier web & mobile app development company that designs cutting-edge IT Solutions tailored to unique needs and conquers all market challenges. Our webs and apps propel toward streamlined operations and vast engagement empowering businesses across various industries."
+            ptag="Are you looking to build powerful mobile application? Comfygen is a trusted mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses."
             btnName="Let's Discuss"
             btnLink="/contact-us"
             altTag="blockchain-technology"
@@ -331,13 +219,10 @@ export default function Home(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Custom Web & Mobile App Development Services
+               Our Custom Mobile App and Web Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Get a scalable web or mobile app for your business with modern
-                systems and futuristic technologies implemented. Open the
-                gateways for better growth opportunities with prominent web and
-                mobile app development services.
+             Our expert Mobile app developers create enterprise-grade AI-Powered web and mobile applications using modern frameworks and scalable architectures. We help businesses adopt futuristic technologies to improve performance, user experience, and market competitiveness.
               </p>
             </div>
             <div className="">
@@ -351,17 +236,11 @@ export default function Home(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="Build Future-Driven Webs and Apps that Transforms Industries "
-          description1="Comfygen is a result-oriented IT Service Provider that builds secured and scaled apps to fulfill the needs of every business in various industries; be it Finance, Blockchain, Healthcare, On-Demand, Education, Gaming, Entertainment, etc."
-          description2="We have highly experienced web and mobile app developers using cutting-edge technologies to redefine IT Solutions. The tech engineers are more attentive to the latest tech trends to optimize the business and obtain huge engagement. Our objective is to create an intuitive digital infrastructure for clients that makes them the best in their respective industries."
-          points={[
-            "Dedicated Development Team",
-            "End-to-End Software Development Technology",
-            "Focused on the Latest Trends and Modern Solutions",
-            "High-Performing Solutions at Competitive Cost",
-            "Strategic Development Process",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/comfygen/about-us-home-page.webp"
+          heading="Powering Businesses with Scalable Mobile App and Web Development"
+          description1="Comfygen is a trusted web and mobile app development company delivering secure, scalable, and future-ready digital solutions for businesses worldwide. We help startups, enterprises, and fast-growing companies turn ideas into powerful digital products that drive efficiency, engagement, and long-term growth."
+          description2="Our experienced custom mobile app development team utilizes modern frameworks, cloud-native architectures, and emerging technologies to build high-performing websites and mobile applications across industries such as fintech, healthcare, blockchain, on-demand, education, gaming, and enterprise solutions. With a strong focus on usability, performance, and scalability, we ensure every solution is built to evolve with your business needs."
+          points={[]}
+          imageSrc="https://www.comfygen.com/comfygen-images/home/comfygen about.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -370,9 +249,9 @@ export default function Home(props: any) {
 
         <section className="py-8">
           <Portfolio
-            projects={portfoliodata}
-            heading="Explore Our Web & App Development Portfolio"
-            description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
+            projects={JSON_DATA?.portfoliodata}
+            heading="Explore Our Mobile App and Web Development Portfolio"
+            description="Explore our collection of proven web and mobile app development projects built for startups, SMEs, and enterprises. From intuitive user experiences to scalable architectures, every solution demonstrates our focus on quality, creativity, and client success."
           />
         </section>
 
@@ -385,8 +264,8 @@ export default function Home(props: any) {
           imageAlt="Future of Technology"
         />
         <IndustriesServe
-          heading="Industries We Serve"
-          description="We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
+          heading="Industries We Serve As Best Mobile App Development Company"
+          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
           sliderData={JSON_DATA.IndustriesServe}
         />
 
@@ -394,22 +273,21 @@ export default function Home(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Development Process: From Idea to Execution
+               Our Mobile App and Website Development Process
+
               </h2>
               <p className="text-base font-normal mt-2">
-                To deliver custom mobile app development services, our web and
-                mobile app development company incorporates a streamlined
-                development lifecycle to meet the business needs.
+               As a trusted Mobile App and Web Development company, we follow a structured and agile website and application development process to deliver custom, scalable, and high-quality digital solutions.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA?.Process} />
           </div>
         </section>
 
         <TechStack
           customTechData={null}
-          title="Our Edgy Tech-Stacks Use for Development"
-          description="The only focus is not the engagement, but building a highly-secured and robust web or application. For strong development, some edgy tech stacks are being used."
+          title="Our Advanced Tech Stack for Mobile App and Web Development"
+          description="We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth."
         />
 
 
@@ -426,17 +304,18 @@ export default function Home(props: any) {
         </div>
 
         <HireDeveloper
-          heading="Hire Expert Developers"
-          text="Hire skilled developers from Comfygen for mobile, web, blockchain, and AI projects. Our flexible teams deliver high-quality solutions, seamless collaboration, and on-time results to help your business grow."
+          heading="Hire Expert Web And App Developers"
+          text="Hire skilled developers from Comfygen for mobile, web, blockchain, and AI projects. Our mobile app development teams deliver high-quality solutions, seamless collaboration, and on-time results to help your business grow."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "Dedicated, experienced developers",
-            "Flexible engagement models (full-time, part-time, project-based)",
+            "Hire dedicated mobile app developers",
+            "Hire Dedicated Website Developers",
+            "Flexible engagement models",
             "Agile development and transparent communication",
-            "Scalable teams for short-term or long-term projects",
+            "Scalable teams for short-term or long-term projects"
           ]}
         />
 

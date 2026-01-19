@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/applicationConsulting.json";
-import LazyLoad from "react-lazy-load";
-import {
-  IconApps,
-  IconBrain,
-  IconCloud,
-  IconCurrencyBitcoin,
-} from "@tabler/icons-react";
 import Header from "../../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../../components/HeroSection";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -89,55 +82,11 @@ const BlogSection = dynamic(
 
 export default function Mobile(props: any) {
   let { initialData } = props;
-  const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 6000);
-    return () => clearTimeout(timer);
-  }, []);
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
-  const technologyData = [
-    {
-      img: <IconCloud stroke={1.5} className="w-12 h-12" />,
-      title: "Cloud Computing",
-      desc: "A fundamental component of contemporary applications, cloud computing provides scalability, cost-efficiency, and remote access. Comfygen excels in recommending the most suitable cloud platform (such as AWS, Azure, GCP) tailored to meet your specific requirements.",
-    },
-    {
-      img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-      title: "AI/Machine Learning (AI/ML)",
-      desc: "Unlock the potential of cutting-edge technologies with Comfygen's expertise in AI and Machine Learning. By incorporating advanced features into your applications, you can stay ahead of the competition and provide users with a more interactive and personalized experience. Let Comfygen help you harness the full capabilities of AI to take your products to the next level.",
-    },
-    {
-      img: <IconCurrencyBitcoin stroke={1.5} className="w-12 h-12" />,
-      title: "Blockchain",
-      desc: "By leveraging the power of blockchain, businesses can streamline their operations, increase trust among stakeholders, and ensure the integrity of their data. Comfygen's expertise in blockchain technology can help organizations navigate the complexities of implementation and maximize the advantages it offers. Whether it's optimizing supply chain processes, ensuring secure financial transactions, or maintaining immutable records, blockchain has the potential to transform the way businesses operate.",
-    },
-    {
-      img: <IconCurrencyBitcoin stroke={1.5} className="w-12 h-12" />,
-      title: "Mobile Development Technologies",
-      desc: "At Comfygen, we specialize in utilizing cutting-edge mobile development technologies such as Kotlin for Android and Swift for iOS to craft high-quality native mobile applications. Additionally, we are well-versed in cross-platform frameworks like React Native, enabling us to reach a broader audience with our innovative mobile solutions. Trust Comfygen to deliver top-notch mobile development services tailored to your specific needs and requirements.",
-    },
-    {
-      img: <IconApps stroke={1.5} className="w-12 h-12" />,
-      title: "Web Development Technologies",
-      desc: "Web development technologies are crucial for creating dynamic and interactive web applications. HTML, CSS, and Javascript are the building blocks of these applications, providing the necessary foundation for functionality and design. Comfygen specializes in recommending the best frameworks, such as Angular and React, to develop robust and user-friendly web interfaces that meet the needs of modern users. Trust Comfygen to guide you in utilizing the latest technologies to enhance your online presence and user experience.",
-    },
-    {
-      img: <IconApps stroke={1.5} className="w-12 h-12" />,
-      title: "Other Cutting-Edge Technologies",
-      desc: "Explore the latest advancements in technology with Comfygen, as they delve into cutting-edge fields such as Quantum Computing and the Internet of Things (IoT). By partnering with Comfygen, you can receive expert guidance on seamlessly incorporating these innovative technologies into your applications to ensure they remain relevant and efficient for years to come.",
-    },
-  ];
+
+
 
   return (
     <>
@@ -222,12 +171,10 @@ export default function Mobile(props: any) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+        <Header />
       </div>
-      <div className="overflow-hidden ">
-        <HeroSectionForAllPages
+      <div className="overflow-hidden lg:pt-[90px] ">
+        <HeroSection
           heading="Application Consulting Services"
           ptag="Comfygen provides expert mobile application consulting services to help businesses define the right strategy, reduce risks, and build successful digital products. As an experienced mobile app development consulting company, we analyze your business goals, market opportunities, and user expectations to create a clear, result-driven app roadmap."
           ptag1="Our app consultants and market research experts guide you through ideation, technology selection, feature planning, and scalability strategies—ensuring your mobile application stands out in competitive markets and delivers long-term value."
@@ -237,10 +184,7 @@ export default function Mobile(props: any) {
           bgImage="https://www.comfygen.com/herosection/application-consulting-services-hero-img.webp"
           btnName="Talk With Expert"
           btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
+
         />
         <Milestones />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
@@ -294,7 +238,7 @@ export default function Mobile(props: any) {
         <LatestTechnology
           heading="Adopting the Latest Technology Trends in App Development"
           subheading="Comfygen is widely known for its extensive knowledge of various technologies essential for application consulting services. Let's delve into a detailed analysis, highlighting crucial aspects:"
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}

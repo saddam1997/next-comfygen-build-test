@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hybrid.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../components/HeroSection";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -80,13 +80,7 @@ const BlogSection = dynamic(
 
 export default function Mobile(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
   return (
     <>
       <Head>
@@ -181,7 +175,7 @@ export default function Mobile(props: any) {
       <LazyLoad height={80} offset={100}>
         <Header />
       </LazyLoad>
-      <HeroSectionForAllPages
+      <HeroSection
         heading="Looking for a Hybrid Mobile App Development Service?"
         ptag="Comfygen is a trusted hybrid mobile app development company in India and the USA, delivering high-quality, cost-effective app solutions for businesses of all sizes. Our experienced hybrid app developers help you choose the right frameworks and technologies to build scalable, secure, and performance-driven applications."
         ptag1="With over 5+ years of industry expertise, we develop custom hybrid apps that ensure faster time-to-market, seamless user experience, and cross-platform compatibility—without compromising quality or security."
@@ -192,10 +186,7 @@ export default function Mobile(props: any) {
         bgImage="https://www.comfygen.com/herosection/mobile-app-development-hero-section-img.webp"
         btnName="Talk With Expert"
         btnLink="/contact-us"
-        openModal={openModal}
-        talkToExpertModal={talkToExpertModal}
-        setTalkToExpertModal={setTalkToExpertModal}
-        closeModal={closeModal}
+
       />
       <Milestones/>
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">

@@ -63,11 +63,11 @@ export default function HeroSection(props: any) {
                 <div className=" w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
                 >
                     {/* ================= HEADING ================= */}
-                    {props.isHome ? (
+                    {/* {props.isHome ? (
                         <h1 className=" text-white font-bold text-[26px] leading-tight sm:text-[32px] md:text [36px]  xl:text-[48px] xl:leading-[3.6rem]">
                             <span className=" block font-medium text-[20px] sm:text-[22px] md:text-[26px] xl:text[34px]"
                             >
-                                Web & Mobile App Development
+                               AI-Based Mobile App and Web Development Company
                             </span>
                             <b className="block">
                                 Solution & Service Provider
@@ -80,7 +80,12 @@ export default function HeroSection(props: any) {
                             </Heading>
 
                         </>
-                    )}
+                    )} */}
+
+                       <Heading as={1} className="text-white">
+                                {props.heading}
+                            </Heading>
+
 
                     {/* ================= DESCRIPTION ================= */}
 
