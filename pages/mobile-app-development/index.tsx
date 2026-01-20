@@ -423,7 +423,7 @@ export default function Mobile(props: any) {
 
         <HireDeveloper
           heading="Hire our Dedicated Mobile App Developer in Jaipur"
-          text="Looking to develop a user-friendly mobile app? <a class='font-semibold underline' href='https://www.comfygen.com/hire-mobile-app-developer' >Hire mobile app developers</a> at Comfygen and boost your business to new heights with custom mobile solutions. As an affordable mobile app development company in Jaipur, India, we specialize in providing high-performance, scalable, and innovative apps for both iOS and Android platforms. Whether you need on-demand mobile app development services or complex enterprise app development solutions, our team ensures your app meets the highest standards of quality and functionality."
+          text="Looking to develop a user-friendly mobile app? <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>Hire mobile app developers</a>  at Comfygen and take your business to the next level with custom mobile app development solutions. As a trusted and affordable mobile app development company in Jaipur, India, we specialize in delivering high-performance, scalable, and innovative applications for both iOS and Android platforms. Whether you need on-demand mobile app development services or complex enterprise-level solutions, our expert team ensures your app meets the highest standards of quality, functionality, and performance."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"

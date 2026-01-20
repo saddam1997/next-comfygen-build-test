@@ -835,7 +835,7 @@
   ],
   "pageData": {
     "title": "Why Choose Comfygen for Your Custom Mobile App Development Needs?",
-    "description": "Comfygen is a trusted Web application development company in Jaipur, India, offering on-demand mobile app development services customized to your business needs. As an AI-based mobile app development services provider, we specialize in building innovative, results-driven apps for iOS and Android.",
+    "description": "Comfygen is a trusted mobile application development company based in Jaipur, India, delivering on-demand mobile app development services according to your business requirements. Also providing an AI-driven mobile app development service, we specialize in creating innovative, scalable, and results-oriented applications for both iOS and Android platforms.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -1058,7 +1058,7 @@
     {
       "img": "<IconShield stroke={1.5} className='w-12 h-12'/>",
       "title": "Alcohol Delivery App Solutions",
-      "desc": "Develop legal and secure alcohol delivery apps with age verification, digital catalog, in-app offers, and real-time tracking. Our on-demand app development company in Jaipur enables smooth doorstep delivery experiences."
+      "desc": "Develop legal and secure alcohol delivery apps with age verification, digital catalog, in-app offers, and real-time tracking. Our <a href='https://www.comfygen.com/alcohol-delivery-app-development' class='text-blue-600 font-semibold'>on-demand Alcohol delivery app development company</a> in Jaipur enables smooth doorstep delivery experiences."
     },
     {
       "img": "<IconShield stroke={1.5} className='w-12 h-12'/>",

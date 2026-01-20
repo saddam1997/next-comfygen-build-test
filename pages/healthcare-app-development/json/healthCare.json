@@ -90,7 +90,7 @@
       {
         "title": "Custom Healthcare App Development",
         "subtitle": "",
-        "description": "We provide <a href='https://www.comfygen.com/blog/guide-to-healthcare-app-development/'>custom healthcare mobile app development services<a/> tailored for hospitals, clinics, startups, and enterprises. Our secure and scalable healthcare apps are designed to improve patient care, streamline operations, and ensure HIPAA compliance across platforms.",
+        "description": "We provide <a class='underline font-semibold' href='https://www.comfygen.com/blog/guide-to-healthcare-app-development/'>custom healthcare mobile app development services<a/> tailored for hospitals, clinics, startups, and enterprises. Our secure and scalable healthcare apps are designed to improve patient care, streamline operations, and ensure HIPAA compliance across platforms.",
         "features": [
           "HIPAA-compliant app architecture",
           "Real-time patient data access",
@@ -156,7 +156,7 @@
       {
         "title": "EHR & EMR App Development",
         "subtitle": "",
-        "description": "Our EHR & EMR <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development</a> solutions allow secure access to patient records anytime, anywhere. We ensure seamless data management, interoperability, and ",
+        "description": "Our EHR & EMR <a class='underline font-semibold' href='https://www.comfygen.com/mobile-app-development'>mobile app development</a> solutions allow secure access to patient records anytime, anywhere. We ensure seamless data management, interoperability, and compliance with healthcare regulations.",
         "features": [
           "Digital record management",
           "Data encryption and HIPAA compliance",

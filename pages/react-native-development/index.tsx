@@ -65,7 +65,7 @@ const Faq = dynamic(
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 
@@ -88,7 +88,7 @@ export default function Altcoin(props: any) {
 
 
   const jsonLdData = [
-   
+
 
     {
       "@context": "https://schema.org",
@@ -192,7 +192,7 @@ export default function Altcoin(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
 
-     <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
@@ -247,12 +247,16 @@ export default function Altcoin(props: any) {
           linkText="Explore More"
         />
 
-       <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
+          <CallToAction
+          heading="Kickstart Your Dream Project With Us"
+          text="We have worked with some of the best innovative ideas and brands in the world across industries."
+          buttonText="Initiate a Partnership"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
         />
+
+
 
         {/* <ServicesSec
           servicesData={JSON_DATA.servicesData}
@@ -294,7 +298,24 @@ export default function Altcoin(props: any) {
           linkText="LET'S CONNECT "
         />
         {/* <ContactFromCenter /> */}
-        <HireDeveloper
+       
+        <ConsultingSec
+          title="React Native Consulting Services"
+          description="Build cross-platform applications with a native look and feel by hiring React Native consultants. We’ll guide you through a detailed process after understanding your business requirements."
+          image="https://www.comfygen.com/images/react-native-consulting-services.webp"
+          contactNumber="9587867258"
+          ctaText="Get Instant Professional Advice"
+        />
+      
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+         <HireDeveloper
           heading="Hire React Native App Developer India"
           text="With your thoughtfulness, we'll create the best native React Native based mobile apps using the React Native language for reasonable charges."
           buttonText="Hire Developer"
@@ -308,21 +329,7 @@ export default function Altcoin(props: any) {
             "Hire a dedicated React Native developer",
           ]}
         />
-        <ConsultingSec
-          title="React Native Consulting Services"
-          description="Build cross-platform applications with a native look and feel by hiring React Native consultants. We’ll guide you through a detailed process after understanding your business requirements."
-          image="https://www.comfygen.com/images/react-native-consulting-services.webp"
-          contactNumber="9587867258"
-          ctaText="Get Instant Professional Advice"
-        />
-        <CallToAction
-          heading="Kickstart Your Dream Project With Us"
-          text="We have worked with some of the best innovative ideas and brands in the world across industries."
-          buttonText="Initiate a Partnership"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title="React Native App Development Services"

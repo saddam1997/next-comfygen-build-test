@@ -104,7 +104,7 @@ const BlogSection = dynamic(
 
 
 
-export default function Mobile(props:any) {
+export default function Mobile(props: any) {
   let { initialData } = props;
 
   return (
@@ -187,10 +187,10 @@ export default function Mobile(props:any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our IOS App Development Services
+                Our IOS App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-               As a trusted <a href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">mobile app development company</a>, we deliver high-performance, secure, and scalable iOS applications tailored to your business goals. Our expert iOS developers leverage the latest Apple technologies to build intuitive, feature-rich apps that deliver seamless user experiences across iPhone, iPad, Apple Watch, and Apple TV.
+                As a trusted <a href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">mobile app development company</a>, we deliver high-performance, secure, and scalable iOS applications tailored to your business goals. Our expert iOS developers leverage the latest Apple technologies to build intuitive, feature-rich apps that deliver seamless user experiences across iPhone, iPad, Apple Watch, and Apple TV.
               </p>
             </div>
             <div className="">
@@ -224,7 +224,7 @@ export default function Mobile(props:any) {
           techData={JSON_DATA.technologyData}
         />
 
-  <IndustriesServe heading="" description="" />
+        <IndustriesServe heading="" description="" />
 
         <InfoSection
           heading="Market Overview & IOS App Development Demand"
@@ -262,7 +262,7 @@ export default function Mobile(props:any) {
           </div>
         </section>
 
-      
+
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -287,7 +287,7 @@ export default function Mobile(props:any) {
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
 
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
