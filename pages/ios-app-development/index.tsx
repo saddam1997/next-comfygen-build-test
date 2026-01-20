@@ -169,7 +169,7 @@ export default function Mobile(props:any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSection
-          heading="IOS App Development Company"
+          heading="IOS App Development Company "
           ptag="Create powerful, secure, and high-performance iOS applications with Comfygen, a trusted iOS app development company. We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards."
           ptag1="From intuitive UI/UX design to scalable architecture and App Store deployment, our iOS developers deliver seamless user experiences, optimized performance, and long-term app reliability tailored to your business goals."
           li="Custom iOS App Development for Startups & Enterprises"
@@ -187,12 +187,10 @@ export default function Mobile(props:any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our IOS App Development Services
+               Our IOS App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Best IOS app development company in India, elevate your business
-                with our expert IOS app development services, providing custom,
-                high-performance IOS apps for iPhone, iPad, and WatchOS.
+               As a trusted <a href='https://www.comfygen.com/mobile-app-development' className="text-blue-600 font-semibold">mobile app development company</a>, we deliver high-performance, secure, and scalable iOS applications tailored to your business goals. Our expert iOS developers leverage the latest Apple technologies to build intuitive, feature-rich apps that deliver seamless user experiences across iPhone, iPad, Apple Watch, and Apple TV.
               </p>
             </div>
             <div className="">
@@ -225,6 +223,8 @@ export default function Mobile(props:any) {
           subheading="As a top IOS app development company in India, we specialize in providing cutting-edge IOS app development services across various industries. Whether you're looking to build on-demand IOS apps or create a niche application, we ensure innovation and seamless functionality."
           techData={JSON_DATA.technologyData}
         />
+
+  <IndustriesServe heading="" description="" />
 
         <InfoSection
           heading="Market Overview & IOS App Development Demand"
@@ -262,7 +262,7 @@ export default function Mobile(props:any) {
           </div>
         </section>
 
-        <IndustriesServe heading="" description="" />
+      
 
         <WhyChoose
           title={JSON_DATA.pageData.title}

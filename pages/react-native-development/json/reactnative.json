@@ -6,56 +6,116 @@
   "servicesData" :[
     {
       "title": "Development of React Native applications",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Using our improved methodologies and out-of-the-box approach using React Native, we turn your business needs into highly productive and profitable mobile app ecosystems.",
       "features": ["Expert React Native App Development", "Innovative Methodologies", "Creative Approach" ,"Business Solutions" , "Boost Profitability"]
     },
     {
       "title": "Apps built with React Native for iOS and Android",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Optimize your mobile development processes using React Native to build native apps for Android and iOS. Our hybrid apps can deliver exceptional UI and feature-rich functionality that many hybrid apps cannot",
       "features": ["Cross-Platform Apps", "Efficient Development", "Exceptional UI" , "Feature-Rich Apps"]
     },
     {
       "title": "Services for integration and migration",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our experts have hands-on experience with both integration and migration. Our team uses React Native to build a wide range of applications. Additionally, we are adept at migrating apps from other platforms without losing data.",
       "features": ["Integration Services", "Migration Expertise", "Diverse App Development" , "Experienced Team" , "Data Security"]
     },
     {
       "title": "Consulting on React Native",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "From product concept to rollout, our experts help you develop a product concept that meets your requirements.To achieve your corporate goals, we carefully examine the information provided by clients.",
       "features": ["Expert Guidance", "custom Solutions", "In-Depth Analysis" , "Goal-Oriented Approach" , "End-to-End Support"]
     },
     {
       "title": "UI/UX",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "With Comfygen, you will get the most engaging and creative user experience with the React Native library. To ensure UI/UX gaps are filled, we strive to deliver a real-time experience across multiple devices.",
       "features": ["Engaging Designs", "Smooth Interfaces", "Real-Time Performance" , "Works on All Devices" , "Better Usability"]
     } ,
     {
       "title": "Support and Maintenance Services",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "The need for care and control after the release of a product cannot be overstated. In order to ensure that your product functions as expected after launch, we provide post-launch support and maintenance.",
       "features": ["After-Launch Help", "Ongoing Support", "Regular Updates" , "Quick Fixes" , "Trusted Service" ]
     }
   ],
+
+  "pageData": {
+    "title": "Why Choose Comfygen For Your React Native App Development?",
+    "description": "Comfygen is a leading React Native App Development Company, leveraging the latest technologies to build high-performance, scalable, and cross-platform mobile applications. We focus on delivering reliable, innovative, and user-centric solutions that empower your business digitally.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Cross-Platform Expertise",
+        "description": "Build apps for iOS and Android using a single React Native codebase, reducing development time and cost while maintaining consistent performance and functionality across all devices."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Experienced React Native Developers",
+        "description": "Our skilled professionals have hands-on experience delivering high-quality apps across multiple industries, ensuring robust, scalable, and reliable solutions tailored to your business needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Custom & Scalable Solutions",
+        "description": "We create tailor-made applications designed to grow with your business. Our apps are built for scalability, capable of handling increased traffic, expanding features, and evolving user requirements."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Fast Time-to-Market",
+        "description": "Using agile methodologies and efficient development workflows, we ensure your React Native app is delivered quickly without compromising quality, helping you stay ahead of competitors."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Seamless UI/UX Design ",
+        "description": "We design engaging, intuitive, and visually appealing interfaces that provide smooth user experiences, drive higher retention, and keep your audience delighted across all devices."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Reliable Support & Maintenance",
+        "description": "We provide ongoing app maintenance, performance monitoring, bug fixes, and technical support to ensure your app remains secure, updated, and future-ready."
+      }
+    ]
+  },
+
+
+
   "Frequently": [
     {
       "num": "01",
-      "title": "1.HOW TO PREPARE FOR AN ESTIMATE?",
-      "desc": "An idea is the beginning of everything. It's time to take action once you have it! Defining your idea is the first step to getting an estimate. Try to be as precise as possible when describing your vision. Create a short statement describing your hopes and ideas later. The next step is specs. You can leave the details to the specialists, if you don't want to get too technical. The budget and deadline should also be considered. Make sure you understand the scope and goals of the project."
+      "title": "1.What is a React Native App Development Company?",
+      "desc": "A React Native App Development Company specializes in building cross-platform mobile applications using the React Native framework. They provide services like app design, development, testing, deployment, and maintenance for both Android and iOS platforms."
     },
     {
       "num": "02",
-      "title": "2. How does my project s cost vary?",
-      "desc": "A software development project's total cost is determined by the number of people who have worked on it over a given period and their hourly rates. Front-end, back-end, and full-stack software developers, UX/UI managers, project managers, and testers can all be part of the software development team. A variety of specialists may be required for your project, depending on its scope. You decide who you want to hire."
+      "title": "2. Why choose React Native for mobile app development?",
+      "desc": "React Native enables faster development, a single codebase for multiple platforms, rich user interfaces, and cost efficiency. Partnering with a React Native App Development Company ensures high-quality, scalable apps with native-like performance."
     },
     {
       "num": "03",
-      "title": "3. WHAT CAN I DO TO SECURE MY IDEA?",
-      "desc": "To ensure the safety of your project, it's a good idea to sign a Non-Disclosure Agreement. It's important to specify what information is confidential and assess its value when creating an NDA. It is a standard procedure to sign an NDA even when estimating a simple idea and can minimise the risk of your original idea being stolen."
+      "title": "3. How long does it take to develop a React Native app?",
+      "desc": "Development time depends on the app’s complexity, features, and integrations. A professional React Native App Development Company provides a detailed project timeline after understanding your requirements, ensuring timely delivery."
+    },
+     {
+      "num": "04",
+      "title": "4. Can a React Native app work on both Android and iOS?",
+      "desc": "Yes! React Native allows building cross-platform apps from a single codebase, meaning your app will function seamlessly on both Android and iOS devices, saving time and development costs."
+    },
+     {
+      "num": "05",
+      "title": "5. Do React Native App Development Companies offer post-launch support?",
+      "desc": "Absolutely. Most companies provide ongoing maintenance and support, including bug fixes, updates, feature enhancements, and performance optimization to ensure your app runs smoothly."
+    },
+    {
+      "num": "06",
+      "title": "6. How much does it cost to develop a React Native app?",
+      "desc": "Costs vary based on app complexity, design, and features. A trusted React Native App Development Company will provide a clear estimate tailored to your project requirements."
     }
   ],
   "Hire": [

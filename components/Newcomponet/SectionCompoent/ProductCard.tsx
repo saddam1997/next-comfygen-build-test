@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface CardProps {
@@ -21,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title,subtitle , cards = [] }
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {cards.map((card, index) => (
-          <div key={index} className="border pt-4 w-5/5 rounded-lg">
+          <Link href={card.link} key={index} className="border pt-4 w-5/5 rounded-lg">
             <div className="relative flex justify-center ">
               <img
                 src={card.image}
@@ -34,7 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title,subtitle , cards = [] }
                 {card.heading}
               </h2>
             </a>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

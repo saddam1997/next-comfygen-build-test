@@ -63,6 +63,11 @@ const Faq = dynamic(
   }
 );
 
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  {  ssr: true }
+)
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -80,6 +85,66 @@ export default function Altcoin(props: any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
+
+  const jsonLdData = [
+   
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does it cost to develop a pizza delivery app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The cost of pizza delivery app development typically ranges from $5,000 to $15,000, depending on features, design complexity, and technology stack. As a trusted pizza delivery app development company, Comfygen offers cost-effective and scalable solutions tailored to startups and enterprises, ensuring your pizza delivery app is feature-rich, secure, and user-friendly.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to build a pizza delivery app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The timeline for pizza delivery app development varies based on custom features and integrations. On average, it may take 4–6 weeks for a full-fledged app. At Comfygen, we ensure quick delivery without compromising quality, using agile methods for faster pizza delivery mobile app development.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you build a custom white-label pizza delivery app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! We specialize in white-label pizza delivery app development solutions that allow businesses to launch quickly with their own branding. Comfygen’s white-label apps come with core features like GPS tracking, secure payments, loyalty programs, and scalability to match your pizza business needs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What features should be included in a pizza delivery app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A high-performance pizza delivery app should include real-time GPS tracking, AI-powered recommendations, a secure payment gateway, push notifications, discounts, loyalty programs, and an easy-to-use interface. Comfygen integrates advanced technologies to ensure your pizza delivery mobile app stands out with a smooth and engaging user experience.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you provide post-launch support & maintenance?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, as a trusted pizza delivery app development company, Comfygen provides complete post-launch support, regular updates, and technical maintenance. Our mobile app developers provide bug fixing, feature upgrades, and app monitoring so your pizza delivery business runs smoothly and continues to scale successfully after launch.",
+          },
+        },
+      ],
+    },
+  ];
+
+
+
+
+
+
+
+
   return (
     <>
       <Head>
@@ -126,6 +191,13 @@ export default function Altcoin(props: any) {
         <meta name="twitter:site" content="@comfygentech" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
+
+     <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+
+
       </Head>
       <div>
         <Header />
@@ -146,8 +218,8 @@ export default function Altcoin(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/react-native-dev-hero-img.webp"
         />
-        <Milestones/>
- <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -175,7 +247,12 @@ export default function Altcoin(props: any) {
           linkText="Explore More"
         />
 
-       
+       <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
 
         {/* <ServicesSec
           servicesData={JSON_DATA.servicesData}
@@ -251,7 +328,7 @@ export default function Altcoin(props: any) {
           title="React Native App Development Services"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

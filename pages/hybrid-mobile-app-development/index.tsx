@@ -176,7 +176,8 @@ export default function Mobile(props: any) {
         <Header />
       </LazyLoad>
       <HeroSection
-        heading="Looking for a Hybrid Mobile App Development Service?"
+        heading="Best Hybrid Mobile App Development Company"
+        subhead="Looking for a Hybrid Mobile App Development Service?"
         ptag="Comfygen is a trusted hybrid mobile app development company in India and the USA, delivering high-quality, cost-effective app solutions for businesses of all sizes. Our experienced hybrid app developers help you choose the right frameworks and technologies to build scalable, secure, and performance-driven applications."
         ptag1="With over 5+ years of industry expertise, we develop custom hybrid apps that ensure faster time-to-market, seamless user experience, and cross-platform compatibility—without compromising quality or security."
         li="5+ Years of Hybrid App Development Experience"
@@ -188,7 +189,7 @@ export default function Mobile(props: any) {
         btnLink="/contact-us"
 
       />
-      <Milestones/>
+      <Milestones />
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="space-y-2">
@@ -219,23 +220,18 @@ export default function Mobile(props: any) {
         link="/about-us"
         linkText="Explore More"
       />
-
-      
-
-      <HireDeveloper
-        heading="Hire Hybrid App Developers"
-        text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Hybrid Mobile App Developers. They can focus on your project entirely and deliver you faster results."
-        buttonText="Hire Developer"
+      <CallToAction
+        heading="Let’s Build the Future of Technology Together"
+        text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+        buttonText="Get Started"
         buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Determine project requirements.",
-          "Look for hybrid app development experience.",
-          "Evaluate technical skills.",
-          "Consider communication skills .",
-        ]}
+        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+        imageAlt="Future of Technology"
       />
+
+
+
+
       {/* <ContactFromCenter /> */}
       <ConsultancyApproach
         Head={JSON_DATA.consultancyHead}
@@ -261,18 +257,25 @@ export default function Mobile(props: any) {
         mainCardData={JSON_DATA.pageData.mainCardData}
         gridData={JSON_DATA.pageData.gridData}
       />
-      <IndustriesServe heading="" description="" />
-      <CallToAction
-        heading="Let’s Build the Future of Technology Together"
-        text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-        buttonText="Get Started"
+
+      <HireDeveloper
+        heading="Hire Hybrid App Developers"
+        text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Hybrid Mobile App Developers. They can focus on your project entirely and deliver you faster results."
+        buttonText="Hire Developer"
         buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Future of Technology"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Determine project requirements.",
+          "Look for hybrid app development experience.",
+          "Evaluate technical skills.",
+          "Consider communication skills .",
+        ]}
       />
+      <IndustriesServe />
 
 
-  <BlogSection initialData={initialData} />
+      <BlogSection initialData={initialData} />
 
     </>
   );

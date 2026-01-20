@@ -2,7 +2,7 @@
   "servicesData": [
     {
       "title": "Improve the App Business Idea",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Before the app development begins, it’s very necessary to analyze & evaluate the business idea thoroughly initially. Every service and product is available digitally; therefore when you build an app, it has to be unique and engaging. It is advisable to evaluate and understand the loopholes in your app development ideas for the optimum growth of your business.",
       "features": [
         "Refine your app concept for better business growth.",
@@ -12,7 +12,7 @@
     },
     {
       "title": "Evaluate the Market and Competition",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "The mobile app development will be progressive only if you have a better understanding of what to develop. To know what sort of app needs to be developed and some extra features to implement, the best way to do this is to evaluate the market and established competition. Understanding the market needs and knowing the strategies used by the competitors enable the clients to learn what they should do during business application development for their success.",
       "features": [
         "Analyze market trends to guide app development choices",
@@ -22,7 +22,7 @@
     },
     {
       "title": "Risk Mitigation and Cost Assessment",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "For robust mobile app development, it is necessary to evaluate the possible risks that can happen to take precautions before in mobile application development consulting services. The mobile app developers will acknowledge all the possible risks to find out the optimum solutions for all to create a strong mobile application that engages end users' needs. Additionally, also analyses the mobile app development cost meanwhile and thoroughly studies it for cost reductions. Evaluating the cost of mobile app development will help reduce it certainly.",
       "features": [
         "Identify potential risks early for smoother app development.",
@@ -32,7 +32,7 @@
     },
     {
       "title": "Mobile App Design Strategy",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "A strong mobile app design strategy ensures your app is user-friendly, visually appealing, and aligned with your brand. It involves understanding user needs, creating intuitive navigation, and incorporating the latest design trends to enhance user experience. This service helps in laying a solid foundation for an app that not only looks great but also functions seamlessly.",
       "features": [
         "Create engaging, brand-aligned designs for easy app navigation",
@@ -42,7 +42,7 @@
     },
     {
       "title": "Mobile App Audit and Optimization",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Mobile app audit and optimization involve analyzing your existing app to identify performance bottlenecks, security vulnerabilities, and user experience issues. This service helps in fine-tuning your app to run faster, more securely, and more efficiently, ultimately improving user satisfaction and app rankings in app stores.",
       "features": [
         "Identify and resolve app performance and security issues.",
@@ -52,7 +52,7 @@
     },
     {
       "title": "Mobile App Development Ideas",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Innovative mobile app development ideas are crucial for staying ahead in the competitive app market. This service offers creative and practical concepts tailored to your business needs, ensuring that your app stands out with unique features, user-friendly interfaces, and a clear value proposition that resonates with your target audience.",
       "features": [
         "Creative ideas to make your app stand out.",
@@ -62,7 +62,7 @@
     },
     {
       "title": "Application Modernisation and Futuristic Approaches",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Application modernization and futuristic approaches involve upgrading your existing app to meet current and future technological standards. This service includes integrating cutting-edge technologies, such as AI, IoT, and cloud computing, ensuring your app remains relevant, scalable, and ready to leverage future tech advancements.",
       "features": [
         "Upgrade apps with the latest tech for future relevance",
@@ -72,7 +72,7 @@
     },
     {
       "title": "App Marketing and its Vast Attention",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "App marketing is essential for gaining visibility in a crowded market. This service focuses on creating effective marketing strategies, including ASO (App Store Optimization), social media campaigns, and user engagement tactics, to attract and retain users. The goal is to ensure your app gains the vast attention it deserves, driving downloads and user loyalty.",
       "features": [
         "Improve app visibility and marketing strategies.",
@@ -108,6 +108,69 @@
       "num": "1",
       "title": "Our Consultancy Approach",
       "desc": "At Comfygen, we believe in fostering a collaborative environment where your vision is our roadmap. Here's a deeper dive into our proven approach that gets you involved every step of the way"
+    }
+  ],
+  "IndustriesServe": [
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-ecommerce-new.webp",
+      "title": "E-Commerce",
+      "description": "We develop scalable eCommerce websites and <a href='https://www.comfygen.com/e-commerce-app-development' class='text-blue-600 font-semibold'>marketplace app development solutions</a> with secure payment gateways, inventory management, omnichannel selling, and conversion-optimized user experiences.",
+      "link": "/e-commerce-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-healthcare.webp",
+      "title": "Healthcare",
+      "description": "We deliver secure and compliant <a href='https://www.comfygen.com/healthcare-app-development'>healthcare mobile apps</a> and <a href='https://www.comfygen.com/medicine-app-development' class='text-blue-600 font-semibold'>medical software development solutions</a> including telemedicine apps, EHR systems, fitness apps, and patient management platforms."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-blockchain.webp",
+      "title": "Blockchain",
+      "description": "We deliver secure, transparent, and decentralized <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>blockchain app development solutions<a/> including smart contracts, dApps, crypto wallets, NFT marketplaces, and enterprise blockchain platforms for future-ready digital ecosystems."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-education.webp",
+      "title": "Education",
+      "description": "We build interactive and scalable <a href='https://www.comfygen.com/ca/education-app-development-company' class='text-blue-600 font-semibold'>education apps<a/> and <a href='https://www.comfygen.com/e-learning-app-development' class='text-blue-600 font-semibold'>eLearning app development</a> solutions such as LMS systems, virtual classrooms, <a href='https://www.comfygen.com/tutor-app-development' class='text-blue-600 font-semibold'>Tutor apps</a>, and AI-powered digital education platforms.",
+      "link": "/ca/education-app-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/industries-logestic.webp",
+      "title": "Transportation & Logistics",
+      "description": "We specialize in <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi app development</a> and <a href='https://www.comfygen.com/logistics-app-development' class='text-blue-600 font-semibold'>logistics app solutions</a> such as Uber-like taxi booking apps, fleet and driver management systems, GPS tracking, and real-time ride monitoring  for modern mobility businesses."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/construction-industries-new.webp",
+      "title": "Real Estate",
+      "description": "We deliver <a href='https://www.comfygen.com/smart-contract-development' class='text-blue-600 font-semibold'>real estate smart contract development</a> solutions designed to streamline project planning, resource management, workflow automation, and team collaboration through intelligent, scalable technologies."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/game-industries-new.webp",
+      "title": "Gaming & Sports",
+      "description": "We build immersive and scalable <a href='https://www.comfygen.com/game-development-company' class='text-blue-600 font-semibold'>game app development</a> solutions including mobile games, multiplayer gaming platforms, real-time gaming apps, and cloud-based gaming solutions.",
+      "link": "/game-development-company"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/entertainment-industries.webp",
+      "title": "Entertainment & Media",
+      "description": "We develop innovative entertainment and <a href='https://www.comfygen.com/social-media-app-development' class='text-blue-600 font-semibold'>social media app development solutions</a> such as OTT platforms, video streaming apps, music apps, and content distribution systems."
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/finance-industries-img.webp",
+      "title": "Finance & FinTech",
+      "description": "We deliver secure and compliant <a href='https://www.comfygen.com/finance-app-development' class='text-blue-600 font-semibold'>fintech app development solutions</a> including digital wallets, payment gateways, banking apps, financial analytics platforms, and <a href='https://www.comfygen.com/portfolio/blockchain-based-fintech-app' class='text-blue-600 font-semibold'>blockchain-based finance systems</a>.",
+      "link": "/finance-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/dating-industries-img.webp",
+      "title": "Dating",
+      "description": "We design secure and user-friendly matrimonial and <a href='https://www.comfygen.com/dating-app-development' class='text-blue-600 font-semibold'>dating app development solutions</a> with matchmaking algorithms, real-time messaging, and profile verification features.",
+      "link": "/dating-app-development"
+    },
+    {
+      "imgSrc": "https://www.comfygen.com/comfygen-images/comfygen/restaurant-industries.webp",
+      "title": "Restaurant & FoodTech",
+      "description": "We build smart restaurant management and <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery app development solutions</a> including online ordering systems, <a href='https://www.comfygen.com/billing-software-development' class='text-blue-600 font-semibold'>POS integration</a>, table reservation apps, and customer loyalty platforms.",
+      "link": "/food-delivery-app-development"
     }
   ],
   "Solution": [
@@ -212,28 +275,33 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Our Expertise and Experience",
-        "description": "At Comfygen, our team is committed to remaining updated with the latest technologies as well as best practices for developing applications. We prioritize being ahead of the curve since we recognize that technology is always changing. We can provide our clients with state-of-the-art solutions that are at the forefront of the industry because we keep up with the newest developments and trends."
+        "title": "On-Time Delivery",
+        "description": "Our mobile app development consulting services follow an agile, structured approach to ensure timely delivery of high-quality, custom mobile app solutions."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Innovative and Tailored Solutions",
-        "description": "We not only offer innovative ideas for your application, but we also provide continuous support and upkeep. We are aware that investing in technology is a continual process that calls for regular updates and monitoring in order to maintain peak performance. Our staff is dedicated to offering the upkeep and support required to keep your application operating effectively."
+        "title": "Proven Consulting Expertise",
+        "description": "With a strong track record of successful projects, our App development consultants have guided businesses in building high-performance and market-ready mobile applications."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Client-Centric Approach",
-        "description": "Transparent communication and project management are values that we at Comfygen uphold. We recognize how critical it is to keep our clients updated and involved at every stage of the development process. We make sure you are continually informed about the status of your project by offering frequent updates, progress reports, and open channels of communication. We appreciate your feedback and work hard to involve you in every stage of the process"
+        "title": "Agile & Strategic Development Approach",
+        "description": "Our agile consulting process ensures flexibility, faster decision-making, and seamless adaptation to changing business needs."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Commitment to Quality and Excellence",
-        "description": "We have a long record of happy clients and have successfully completed several projects. Our proficiency and commitment to quality are demonstrated by our ability to deliver outcomes. We are dedicated to going above and above for our clients, and we take pride in the work we do."
+        "title": "Scalable & Future-Ready Solutions",
+        "description": "As a leading mobile app development consulting company, we design app architectures with scalability in mind,ensuring your application can evolve and expand as your business grows."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Our Vision for the Future",
-        "description": "You know you are in good hands when you contact Comfygen for your application consulting requirements. We approach each assignment with skill, knowledge, and dedication to your success. We take seriously our obligation to provide outstanding outcomes since we recognize how important your application is to your company. You may rest easy knowing that Comfygen will provide the best possible quality and attention to your application consulting needs."
+        "title": "Experienced Mobile App Consultants",
+        "description": "Our team of certified mobile app consultants and developers brings deep technical expertise in iOS and Android app development."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Client-Centric Consulting Model",
+        "description": "We prioritize your business objectives at every stage of the consulting process. By understanding your vision, challenges, and target audience, we deliver customized mobile app consulting solutions."
       }
     ]
   },
@@ -700,8 +768,7 @@
       "decs": "You know you are in good hands when you contact Comfygen for your application consulting requirements. We approach each assignment with skill, knowledge, and dedication to your success. We take seriously our obligation to provide outstanding outcomes since we recognize how important your application is to your company. You may rest easy knowing that Comfygen will provide the best possible quality and attention to your application consulting needs."
     }
   ],
-
-    "technologyData": [
+  "technologyData": [
     {
       "img": "<IconCloud stroke={1.5} className='w-12 h-12'/>",
       "title": "Cloud Computing",
@@ -733,5 +800,4 @@
       "desc": "Explore the latest advancements in technology with Comfygen, as they delve into cutting-edge fields such as Quantum Computing and the Internet of Things (IoT). By partnering with Comfygen, you can receive expert guidance on seamlessly incorporating these innovative technologies into your applications to ensure they remain relevant and efficient for years to come."
     }
   ]
-
 }
