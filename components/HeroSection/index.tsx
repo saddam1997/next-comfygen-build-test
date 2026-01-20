@@ -39,7 +39,7 @@ export default function HeroSection(props: any) {
 
 
     return (
-        <section className="relative flex  min-h-[50vh] sm:min-h-[50vh] lg:min-h-[50vh] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
+        <section className="relative flex  min-h-[740px] sm:min-h-[50vh] lg:min-h-[740px] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
             itemScope
             itemType="https://schema.org/WebPage"
         >

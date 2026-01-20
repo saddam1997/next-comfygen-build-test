@@ -333,7 +333,7 @@
   "technologyData": [
     {
       "title": "On-Demand Service Apps",
-      "desc": "We develop robust on-demand iOS apps for <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery, taxi booking</a>, and home services, featuring real-time tracking, secure payment gateways, and seamless user experiences—ideal for startups and growing businesses.",
+      "desc": "We develop robust on-demand iOS apps for <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery</>, <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking</a>, and <a href='https://www.comfygen.com/home-service-app-development' class='text-blue-600 font-semibold'>home services</a>, featuring real-time tracking, secure payment gateways, and seamless user experiences—ideal for startups and growing businesses.",
       "img": "<IconClock stroke={1.5} className='w-12 h-12'/>"
     },
     {
