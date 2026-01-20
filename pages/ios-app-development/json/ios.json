@@ -10,7 +10,7 @@
   "servicesData": [
     {
       "title": "iOS App Design and Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We provide visually stunning and custom iOS app designs customized to your business needs. As a prominent iOS app development company in Jaipur, India, we provide the best custom iOS app development services.",
       "features": [
         "Stunning, user-friendly designs customized to your business.",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Native iOS App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Build high-performance native iOS applications with Comfygen. Known as a top-notch iOS app development services provider in Jaipur, we ensure seamless functionality and Apple-compliant standards.",
       "features": [
         "High-performance native iOS apps.",
@@ -30,7 +30,7 @@
     },
     {
       "title": "Custom iOS App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our mobile app development team excels in creating custom iOS app solutions for enterprises and small businesses. As a reliable custom iOS app development company in Jaipur, India we ensure personalized, scalable iOS mobile apps for your success.",
       "features": [
         "Customized apps to meet business goals.",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Swift App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Use the expertise of our skilled developers for Swift app development. We craft efficient, secure, and scalable iOS applications using Apple’s latest programming standards.",
       "features": [
         "Efficient, scalable apps built with Swift.",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Cross-Platform App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Expand your mobile app’s reach with our cross-platform app development services. We create applications that perform perfectly across multiple platforms while maintaining the iOS experience.",
       "features": [
         "Apps compatible with iOS and other platforms.",
@@ -60,7 +60,7 @@
     },
     {
       "title": "iPad App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Partner with us for cutting-edge iPad app development. Our iOS apps are optimized for larger screens, providing attractive and user-friendly experiences for your audience.",
       "features": [
         "Optimized for larger screens and multitasking",
@@ -70,7 +70,7 @@
     },
     {
       "title": "ARKit App Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Step into the future with Comfygen’s ARKit app development services. We deliver immersive augmented reality apps that enhance user engagement and showcase your brand’s innovation.",
       "features": [
         "Immersive augmented reality apps.",
@@ -80,7 +80,7 @@
     },
     {
       "title": "App Testing and Quality Assurance",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "At Comfygen, we perform thorough app testing across devices, ensuring bug-free performance, security, usability, and Apple compliance for seamless approval.",
       "features": [
         "Perform security, performance, and usability checks.",
@@ -90,7 +90,7 @@
     },
     {
       "title": "Integration and Migration",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "We offer perfect integration of APIs, payment gateways, and cloud services, ensuring smooth transitions and customized migration strategies for businesses.",
       "features": [
         "Integrate third-party APIs and services.",
@@ -333,44 +333,35 @@
   "technologyData": [
     {
       "title": "On-Demand Service Apps",
-      "desc": "We develop on-demand iOS apps for services like food delivery, taxi booking, and home services, ensuring real-time tracking and secure payment options. We provide On-demand iOS app development solutions for startups.",
+      "desc": "We develop robust on-demand iOS apps for <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery, taxi booking</a>, and home services, featuring real-time tracking, secure payment gateways, and seamless user experiences—ideal for startups and growing businesses.",
       "img": "<IconClock stroke={1.5} className='w-12 h-12'/>"
     },
     {
       "title": "Social Networking Apps",
-      "desc": "We develop social networking apps with messaging, video calls, and content-sharing features customized for enhanced user engagement.",
+      "desc": "Our team builds engaging social networking iOS apps with features such as instant messaging, video calls, and content sharing to drive user interaction and community growth.",
       "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>"
     },
     {
       "title": "Healthcare Apps",
-      "desc": "As a reliable iOS app development company we create HIPAA-compliant healthcare apps for appointment booking, telemedicine, and health monitoring, offering secure and user-friendly app solutions.",
+      "desc": "As a trusted iOS app development company, we create secure, <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>HIPAA-compliant</a> healthcare applications for appointment scheduling, telemedicine, and health monitoring with a strong focus on data privacy and usability.",
       "img": "<IconHeartbeat stroke={1.5} className='w-12 h-12' />"
     },
     {
       "title": "E-Commerce Apps",
-      "desc": "E-Commerce Apps",
+      "desc": "We design feature-rich <a href='https://www.comfygen.com/e-commerce-app-development' class='text-blue-600 font-semibold'>eCommerce iOS apps</a> with intuitive navigation, secure payments, product management, and seamless checkout experiences to boost online sales.",
       "img": "<IconShoppingCart stroke={1.5} className='w-12 h-12' />"
     },
     {
       "title": "Finance and Banking Apps",
-      "desc": "Create feature-packed financial apps with real-time updates, secure transactions, and user-friendly dashboards for effortless financial management.",
+      "desc": "We develop secure and scalable finance and banking apps with real-time updates, encrypted transactions, and user-friendly dashboards for smooth and reliable financial management.",
       "img": "<IconWallet stroke={1.5} className='w-12 h-12' />"
     },
     {
       "title": "Education Apps",
-      "desc": "Develop interactive learning apps with virtual classrooms, live video sessions, and progress tracking for enhanced learning experiences.",
+      "desc": "Our interactive <a href='https://www.comfygen.com/ca/education-app-development-company' class='text-blue-600 font-semibold'>education apps</a> include virtual classrooms, live video sessions, progress tracking, and engaging learning tools to enhance digital education experiences.",
       "img": "<IconBook stroke={1.5} className='w-12 h-12'/>"
-    },
-    {
-      "title": "Travel and Tourism Apps",
-      "desc": "Build travel apps with GPS navigation, itinerary management, and personalized recommendations to make every journey seamless.",
-      "img": "<IconGlobe stroke={1.5} className='w-12 h-12'/>"
-    },
-    {
-      "title": "Entertainment and Media Apps",
-      "desc": "We specialize in creating apps for streaming, gaming, and content delivery, incorporating the latest AR/VR technology for immersive experiences.",
-      "img": "<IconMusic stroke={1.5} className='w-12 h-12' />"
     }
+    
   ],
  "jsonLdData": [
     {

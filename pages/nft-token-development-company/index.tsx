@@ -396,11 +396,6 @@ export default function Ecommerce(props:any) {
           linkText="Explore More"
         />
 
-
-
-
-
-
         <InfoSection
           heading="What are NFTs?"
           description1="NFTs, or Non-Fungible Tokens, are unique digital assets secured by blockchain technology. Unlike cryptocurrencies that are interchangeable, NFTs represent ownership of one-of-a-kind digital or physical assets—such as digital artwork, music files, virtual real estate, and gaming collectibles. Each NFT contains distinct metadata and proof of ownership, making it impossible to duplicate or forge. This uniqueness has made NFTs popular in industries like art, gaming, real estate, and entertainment."

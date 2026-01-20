@@ -36,9 +36,7 @@ export default function HeroSection(props: any) {
 
 
     /* ================= LOADER ================= */
-    if (props.isLoading) {
-        return <HeroLoader />;
-    }
+
 
     return (
         <section className="relative flex  min-h-[50vh] sm:min-h-[50vh] lg:min-h-[50vh] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
@@ -54,7 +52,7 @@ export default function HeroSection(props: any) {
                 fetchPriority="high"
                 sizes="100vw"
                 quality={75}
-                className=" object-cover object-center hidden md:block"
+                className=" object-cover object-center hidden lg:block"
             />
 
             {/* ================= CONTENT ================= */}
@@ -63,28 +61,29 @@ export default function HeroSection(props: any) {
                 <div className=" w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
                 >
                     {/* ================= HEADING ================= */}
-                    {/* {props.isHome ? (
-                        <h1 className=" text-white font-bold text-[26px] leading-tight sm:text-[32px] md:text [36px]  xl:text-[48px] xl:leading-[3.6rem]">
-                            <span className=" block font-medium text-[20px] sm:text-[22px] md:text-[26px] xl:text[34px]"
-                            >
-                               AI-Based Mobile App and Web Development Company
-                            </span>
-                            <b className="block">
-                                Solution & Service Provider
-                            </b>
+                    {props.isHome ? (
+                        <h1 className="text-white text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
+                             <b className="block">AI-Based Mobile App & Web </b>
+                            <span className="block text-2xl xl:text-4xl font-medium">
+                                 Development Company
+                            </span> 
                         </h1>
                     ) : (
                         <>
-                            <Heading as={1} className="text-white">
+                            <Heading as={1} className="text-white ">
                                 {props.heading}
                             </Heading>
 
                         </>
-                    )} */}
+                    )}
 
-                       <Heading as={1} className="text-white">
-                                {props.heading}
-                            </Heading>
+                    {props?.subhead && (
+                        <Paragraph size="sm" className="text-white">
+                           <span className="font-semibold"> {props.subhead}</span>
+                        </Paragraph>
+                    )}
+
+
 
 
                     {/* ================= DESCRIPTION ================= */}

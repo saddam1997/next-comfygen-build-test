@@ -74,31 +74,31 @@
   "servicesData" :[
     {
       "title": "Hybrid Application Planning and Idealization",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Getting familiar with your project idea and objectives is the first step of our mobile app development process. Before creating a design for each page we will refine the plan and prepare a detailed insight.",
       "features": ["Understand the app's goals and objectives.", "Refine the idea for better clarity and focus.", "Plan the app with steps and timelines" ]
     },
     {
       "title": "Hybrid Application Design",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Designing the app is the next step. An app's visual appeal is achieved by adding graphics, icons, and features during this phase. During this stage, we will also implement server-side elements and add the required functions to the app.",
       "features": ["Use Figma and Photoshop to create eye-catching images and graphics", "Design interactive elements that enhance user experience", "Add necessary functions and backend support"]
     },
     {
       "title": "Hybrid Application Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "The development phase starts with developing the app for multiple platforms. We ensure smooth cross-platform functionality and seamless integration of features.",
       "features": ["Develop the app for all platforms", "Add features for smooth functionality", "Test and optimize for performance" ]
     },
     {
       "title": "Hybrid Application Testing",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "The testing team identifies and fixes issues to ensure the app performs well. Once the problems are resolved, the app receives its final touch-ups for optimal performance.",
       "features": ["Find and fix any issues", "Test for smooth functionality", "Make final improvements for better performance" ]
     },
     {
       "title": "Hybrid Application Deployment",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "After successful testing, we deploy the app to the Google Play Store, making it accessible to users. With the app live, you can begin earning revenue and generating a return on investment.",
       "features": ["Deploy app to Google Play Store", "Make it available to users", "Start earning revenue and see a return on investment" ]
     } 
@@ -131,7 +131,7 @@
 ,
   "pageData": {
     "title": "Why Choose Comfygen For Your Hybrid App Development Services?",
-    "description": "With the most advanced technologies, Comfygen strives to provide innovative and better results. Count on us for dependability, trust, and reliability. Keeping up with the latest trends and anticipating changes, we ensure that it is enforced in a way that empowers you digitally.",
+    "description": "Powered by advanced technologies, Comfygen delivers reliable and innovative hybrid app solutions. By staying ahead of industry trends, we build future-ready applications that drive results and empower your business.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -140,23 +140,33 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Transparency at 100%",
-        "description": "During the entire development cycle, we provide our clients with full visibility into the progress of the project."
+        "title": "On-Time Delivery",
+        "description": " Our agile hybrid app development consulting process ensures timely delivery of high-quality, custom cross-platform applications while maintaining performance, security, and reliability."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Support for technical issues",
-        "description": "Our technical support team gives you a seamless experience by answering all of your questions and doubts."
+        "title": "Proven Hybrid App Consulting Expertise",
+        "description": "With hands-on experience across multiple industries, our consultants help businesses build scalable, high-performing hybrid apps that align with their objectives and market demands."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Experience of more than six years",
-        "description": "Having a team of experienced Hybrid app developers who are familiar with Hybrid development frameworks, we are one of the top Hybrid app development companies in India, the USA, and the UAE."
+        "title": "Agile & Strategic Hybrid Development Approach",
+        "description": "We adopt an agile, strategy-driven approach that enables faster iterations, continuous improvements, and seamless adaptation to evolving business and technical requirements."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Commitment to Quality and Excellence",
-        "description": "We have a long record of happy clients and have successfully completed several projects. Our proficiency and commitment to quality are demonstrated by our ability to deliver outcomes. We are dedicated to going above and above for our clients, and we take pride in the work we do."
+        "title": "Scalable & Future-Ready Hybrid Solutions",
+        "description": "Our hybrid app architectures are built with scalability in mind, allowing easy upgrades, third-party integrations, and long-term growth as your business expands."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Experienced Hybrid App Consultants",
+        "description": "Our certified hybrid app consultants are experts in Flutter, React Native, and Ionic, delivering secure, intuitive, and high-performance applications across platforms."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Client-Centric Hybrid Consulting Model",
+        "description": " We focus on your business goals, users, and challenges to deliver customized hybrid app consulting solutions that enhance engagement, reduce development costs, and ensure sustainable success."
       }
     ]
   },

@@ -95,181 +95,8 @@ const BlogSection = dynamic(
 
 
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Comfygen",
-  image: "https://www.comfygen.com/svg/Logo1.svg",
-  "@id": "Comfygen",
-  url: "https://www.comfygen.com/",
-  telephone: "+91-958-786-7258",
-  priceRange: "$",
-  address: [
-    {
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur",
-      postalCode: "302006",
-      addressCountry: "IN",
-    },
-    {
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-      addressLocality: "Toronto",
-      postalCode: "M1G3S7",
-      addressCountry: "Canada",
-    },
-  ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    opens: "00:00",
-    closes: "23:59",
-  },
-  sameAs: [
-    "https://www.facebook.com/comfygen",
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.youtube.com/@ComfygenBusiness",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://in.pinterest.com/comfygenpvt/",
-  ],
-};
 
-const serviceData = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Online Medicine Delivery App Development Company",
-  provider: {
-    "@type": "Organization",
-    name: "Comfygen",
-    url: "https://www.comfygen.com/",
-  },
-  description:
-    "Comfygen is a leading medicine ordering app development company specializing in secure, scalable, and user-friendly pharmacy delivery solutions.",
-  url: "https://www.comfygen.com/medicine-app-development",
-  areaServed: "Global",
-  serviceType: [
-    "On Demand Medicine App Development",
-    "Medicine Doorstep Ordering App Development",
-    "Develop Medicine Ordering App like TATA 1MG",
-    "Pharmacy Chain Solutions",
-  ],
-  sameAs: [
-    "https://www.facebook.com/comfygen",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-  ],
-};
 
-const faqSchema = {
-  "@context": "https://schema.org/",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does it cost to build a medicine ordering app?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Building a basic medicine ordering app costs around $45,000 to $60,000. More complex apps with advanced features can cost $100,000 to $150,000+. Cost depends on the custom features and complexity.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What features should a telehealth app have?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Key features in a telehealth app include video visits, appointment scheduling, EHR integration, e-prescribing, messaging, symptom trackers, and insurance/billing tools. These help connect patients and doctors remotely.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does medicine app development and testing take?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "For a simple app, development and testing take 3 to 5 months. More complex apps can take 6 to 12 months. We use agile processes for faster results and add features iteratively.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What technologies do you use to build medicine apps?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "At Comfygen, we use Java, Swift, React Native, and other modern tools. Our backend technologies include MySQL, Node.js, and Firebase. We also follow healthcare standards like HL7 and FHIR.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How can I get an estimate for my custom medicine app idea?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Share your needs with us via email or phone or by filling out a request form. We will analyze your app needs to provide a personalized estimate and plan for medicine app development.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are your medicine app services HIPAA compliant?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Comfygen never fails in adhering to privacy and security measures. We strongly follow security measures and data privacy to develop and deliver the best medicine app services without compromising the security and privacy of the users. We keep our application HIPAA-compliant to ensure users' security.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Will Comfygen believe in post-deployment services?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We believe that deployment is not the last stage of app development services. Once the medicine app is developed, later we deploy and cross-verify how the application is responding to the marketplace. If there is any prevention, elimination, add-ons, maintenance, and support required; the developers will support it accordingly to make it a competitive medicine app.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can developers customize the eMed app?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Why not? Yes, we are open to retaining any challenge and following the best possible tech practices to customize the app according to requirements. The medicine app isn’t just about delivering the medicines, however, you can add other features such as consultation, testing, pharma consultation, etc.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Will you provide the MVP of the medicine app?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We acknowledge the query and definitely will provide you with MVPs to have a clear picture of the upcoming results from the app development ideology. This MVP will help in understanding how things will go on, and what other alterations are required.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What to consider before developing a medicine application?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "You need to cross-verify and consider multiple factors; which helps you to know how to develop a robust medicine application; such as targeted audience, cost, mobile app development company, features, competitors analysis, etc.",
-      },
-    },
-  ],
-};
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  brand: "Comfygen Private Limited",
-  name: "On-Demand Medicine App Development Services",
-  image: "https://www.comfygen.com/svg/Logo1.svg",
-  description:
-    "Get on-demand medicine app development services with Comfygen. We build secure, scalable, and feature-rich apps with real-time tracking, AI-driven recommendations, and multi-vendor support to enhance pharmacy operations and improve patient care.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "659",
-  },
-};
 const technologyData = [
   {
     title: "PharmEasy Clone Development",
@@ -307,6 +134,169 @@ export default function Ecommerce(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
+
+  const jsonLdData = [
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "On-Demand Medicine Ordering App Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get custom Medicine Ordering app development solutions with live tracking, secure payments & scalability. Hire expert medicine ordering app developers from the best medicine ordering app development company.",
+      "url": "https://www.comfygen.com/medicine-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/medicine-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Medicine App Consulting Service",
+        "Medicine App Designing Service",
+        "Medicine Ordering App Development Service",
+        "Supply Chain Management Solutions",
+        "Pharmacy Chain Solutions",
+        "On-Demand Medicine Ordering App Development",
+        "Medicine Delivery App Development",
+        "Medicine Doorstep Ordering App Development",
+        "Develop Medicine Ordering App like TATA 1MG",
+        "Medicine Ordering App Development Company"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Medicine Ordering App Development Company | Comfygen",
+      "image": "https://www.comfygen.com/image/about-us-image.webp",
+      "description": "Comfygen Technologies is a leading medicine ordering app development company delivering secure, scalable, and feature-rich solutions for pharmacies and healthcare startups.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "560"
+      }
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Medicine Ordering App Development",
+          "item": "https://www.comfygen.com/medicine-app-development"
+        }
+      ]
+    },
+
+
+
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to build a medicine ordering app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Building a basic medicine ordering app costs around $45,000 to $60,000. More complex apps with advanced features can cost $100,000 to $150,000+. Codepen cost depends on the custom features and complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What features should a telehealth app have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key features in a telehealth app include video visits, appointment scheduling, EHR integration, e-prescribing, messaging, symptom trackers, and insurance/billing tools. These help connect patients and doctors remotely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does medicine app development and testing take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a simple app, development and testing take 3 to 5 months. More complex apps can take 6 to 12 months. We use agile processes for faster results and add features iteratively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies do you use to build medicine apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Comfygen, we use Java, Swift, React Native, and other modern tools. Our backend technologies include MySQL, Node.js, and Firebase. We also follow healthcare standards like HL7 and FHIR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get an estimate for my custom medicine app idea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share your needs with us via email or phone or by filling out a request form. We will analyze your app needs to provide a personalized estimate and plan for medicine app development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your medicine app services HIPAA compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen never fails in adhering to privacy and security measures. We strongly follow security measures and data privacy to develop and deliver the best medicine app services without compromising the security and privacy of the users. We keep our application HIPAA-compliant to ensure users' security."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will Comfygen believe in post-deployment services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We believe that deployment is not the last stage of app development services. Once the medicine app is developed, later we deploy and cross-verify how the application is responding to the marketplace. If there is any prevention, elimination, add-ons, maintenance, and support required; the developers will support it accordingly to make it a competitive medicine app."
+          },
+
+        },
+        {
+          "@type": "Question",
+          "name": "Can developers customize the eMed app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Why not? Yes, we are open to retaining any challenge and following the best possible tech practices to customize the app according to requirements. The medicine app isn’t just about delivering the medicines, however, you can add other features such as consultation, testing, pharma consultation, etc."
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Will you provide the MVP of the medicine app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We acknowledge the query and definitely will provide you with MVPs to have a clear picture of the upcoming results from the app development ideology. This MVP will help in understanding how things will go on, and what other alterations are required."
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What to consider before developing a medicine application?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need to cross-verify and consider multiple factors; which helps you to know how to develop a robust medicine application; such as targeted audience, cost, mobile app development company, features, competitors analyzation, etc."
+          }
+        }
+      ]
+    }
+
+  ];
+
+
+
   return (
     <>
       <Head>
@@ -412,31 +402,10 @@ export default function Ecommerce(props) {
           property="og:description"
           content="Looking for an on-demand medicine ordering app development company? Comfygen builds secure, scalable, and user-friendly apps with real-time tracking, AI recommendations, and multi-vendor support to streamline pharmacy operations and enhance patient care. "
         />
-        <Script
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
 
-        <Script
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(serviceData),
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(productData),
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
       <Header />
@@ -456,7 +425,7 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/medicine-ordering-app-development-company-hero-img.webp"
         />
-        <Milestones/>
+        <Milestones />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -609,7 +578,7 @@ export default function Ecommerce(props) {
           description="Find answers to common queries about medicine app development. Get insights to make informed decisions for your pharmacy business."
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -287,68 +287,7 @@ export default function Mobile(props) {
     },
   ];
 
-  const technologyData = [
-    {
-      title: "AI and Machine Learning",
-      desc: "Utilize AI and machine learning algorithms to provide automation, predictive analytics, and tailored experiences for users within your app.",
-      img: <IconRobot stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Blockchain Integration",
-      desc: "Enhance decentralization, security, and transparency with blockchain technology; this is especially advantageous for applications in the healthcare, supply chain, and finance sectors.",
-      img: <IconLock stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Internet of Things (IoT) Connectivity",
-      desc: "To enable automation, data monitoring, and remote control, connect your app to smart devices through the Internet of Things (IoT). This is ideal for health tracking, home automation, and industrial applications.",
-      img: <IconWifi stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Progressive Web Apps (PWAs)",
-      desc: "Create PWAs to provide web browser users with app-like experiences like push notifications, offline capability, and faster loading times.",
-      img: <IconWorldWww stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "AR and VR Integration",
-      desc: "Incorporate augmented reality (AR) or virtual reality (VR) features to create immersive experiences, enhance product visualization, and drive user engagement.",
-      img: <IconDeviceImacPause stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Voice User Interfaces (VUI)",
-      desc: "Integrate voice recognition technology to enable hands-free interaction with your app, providing convenience and accessibility, especially for IoT devices and virtual assistants.",
-      img: <IconRecordMail stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Edge Computing",
-      desc: "Implement edge computing to process data closer to the source, reducing latency and improving performance, crucial for real-time applications and IoT devices.",
-      img: <IconCloud stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Low-Code/No-Code Development",
-      desc: "Utilize low-code or no-code platforms to accelerate development, allowing non-technical users to build and customize apps with minimal coding knowledge.",
-      img: <IconCode stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Containerization and Microservices",
-      desc: "Incorporate microservices design and containerization to make your app more flexible, scalable, and easier to deploy and maintain.",
-      img: <IconBox stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Cybersecurity Measures",
-      desc: "Make cybersecurity a top priority by implementing strong authentication, encryption, and security measures to preserve user information and fend against online attacks.",
-      img: <IconShield stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "DevOps Practices",
-      desc: "Our team integrates DevOps methodologies for continuous integration and deployment, ensuring faster delivery, improved collaboration, and a streamlined development lifecycle.",
-      img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Cloud-Native Solutions",
-      desc: "We leverage cloud-native technologies to build scalable and resilient apps, enabling startups to manage resources efficiently and accommodate growing user demands.",
-      img: <IconCloudComputing stroke={1.5} className="w-12 h-12" />,
-    },
-  ];
+
 
   return (
     <>
@@ -525,8 +464,8 @@ export default function Mobile(props) {
 
         <section className="">
           <TechStack
-            title="Technology Stack We Use in White Label Crypto Development"
-            description="At Comfygen, we build our white label cryptocurrency wallets on a powerful, secure, and scalable tech stack. By combining advanced blockchain platforms, enterprise-grade security, and modern frameworks, we ensure your wallet is future-ready and reliable."
+            title="Tech Stack We Use for Startup App Development"
+            description="At Comfygen, we build scalable, secure, and high-performance mobile and web apps using a modern tech stack. Leveraging cutting-edge technologies and innovative frameworks, we ensure your apps are future-ready, efficient, and growth-oriented."
           />
         </section>
 

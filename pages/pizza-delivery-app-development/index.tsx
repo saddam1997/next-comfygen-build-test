@@ -91,7 +91,10 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { ssr: true }
+);
 
 
 
@@ -108,17 +111,22 @@ const Process = [
   {
     title: "UI/UX Wireframing",
     description:
-      "Our expert <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designers</a> create intuitive wireframes and user flows to ensure a smooth ordering experience. From selecting toppings to tracking delivery, every screen is designed for simplicity and engagement.",
+      "Our expert <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX designers</a> create intuitive wireframes and user flows to ensure a smooth ordering experience. From selecting toppings to tracking delivery, every screen is designed for simplicity and engagement.",
   },
   {
-    title: "Feature Integration & Development",
+    title: "App Development",
     description:
-      "Using modern tech stacks, we build your pizza ordering app with essential features like GPS tracking, multiple payment options, order scheduling, loyalty programs, and AI-based recommendations.",
+      "Our delivery app developers start building your pizza delivery app using modern technologies. We make sure the app runs fast, works smoothly, and supports future business growth.",
   },
   {
-    title: "Quality Testing & QA",
+    title: "Feature & Payment Integration",
     description:
-      "Every app undergoes rigorous testing to guarantee performance. We check UI consistency, payment gateway security, API integration, and speed optimization to ensure flawless delivery on all devices.",
+      "We add important features like online payments, GPS tracking, push notifications, and third-party tools to make your on-demand pizza ordering app more powerful and user-friendly.",
+  },
+  {
+    title: "Testing & Quality Check",
+    description:
+      "Before launch, we test the app on different devices to remove bugs and ensure security, performance, and smooth user experience.",
   },
   {
     title: "App Store Deployment",
@@ -126,14 +134,9 @@ const Process = [
       "We launch your pizza delivery mobile app on iOS and Android platforms. Our restaurant delivery app development team ensures smooth submission, compliance with app store guidelines, and a successful live rollout.",
   },
   {
-    title: "Real-Time Monitoring & Feedback Loop",
+    title: "Support & Maintenance",
     description:
-      "Post-launch, we track user interactions, order patterns, and delivery performance. Customer feedback helps us fine-tune your app and boost engagement with data-driven improvements.",
-  },
-  {
-    title: "Support & Upgrades",
-    description:
-      "As your best pizza delivery app development partner, we provide ongoing support, bug fixes, and feature enhancements. Whether it’s blockchain integration or advanced analytics, we ensure your app stays future-ready.",
+      "As your best pizza delivery app development partner, we provide regular updates, bug fixes, and technical support to keep your pizza delivery app running smoothly.",
   },
 ];
 
@@ -141,22 +144,22 @@ const WhoCanStartCards = [
   {
     heading: "Single Pizza Outlet App",
     description:
-      "Ideal for independent pizza shops, this app enables customers to browse menus, place quick orders, and track deliveries in real-time. Perfect for small businesses wanting to build a digital presence.",
+      "Ideal for independent pizza restaurants, this app allows customers to browse menus, place quick orders, and track deliveries in real-time. It helps small pizza businesses establish a strong digital presence and increase direct online orders without third-party dependency.",
   },
   {
     heading: "Multi-restaurant Aggregator App",
     description:
-      "For startups aiming to build a pizza delivery app like Domino's, Uber Eats, and Pizza Hut, we develop pizza aggregator apps that connect multiple restaurants with customers.",
+      "For startups looking to build a pizza delivery app like Domino’s, Uber Eats, or Pizza Hut, we develop multi-restaurant pizza aggregator apps that connect multiple vendors with customers, offering centralized order management, secure payments, and real-time delivery tracking.",
   },
   {
     heading: "Cloud Kitchen Pizza Delivery App",
     description:
-      "Designed for delivery-only kitchens, our cloud kitchen pizza apps streamline orders from multiple brands without dine-in facilities.",
+      "Designed for delivery-only brands, our cloud kitchen pizza delivery apps streamline order management for multiple virtual brands from a single backend. These apps reduce operational costs while ensuring faster delivery and better customer engagement.",
   },
   {
     heading: "Franchise Pizza Chain Delivery App",
     description:
-      "For large pizza chains and franchises, we build apps that manage multiple outlets with centralized control while offering location-based services to customers.",
+      "For large pizza chains and franchises, we develop scalable apps that manage multiple outlets with centralized admin control. Customers receive location-based services, personalized offers, and a consistent brand experience across all franchise locations.",
   },
 ];
 
@@ -394,7 +397,7 @@ export default function ClinicalApp(props: any) {
         <title>Top Pizza Delivery App Development Company</title>
         <meta
           name="description"
-          content="Comfygen is a top-rated pizza delivery app development company that builds custom AI pizza delivery apps with real-time tracking, secure payments, and smooth UI for restaurants and pizza startups."
+          content="Comfygen is a leading pizza delivery app development company offering pizza delivery app development services with AI recommendations, live tracking and smooth UX to boost your business."
         />
         <link
           rel="canonical"
@@ -517,8 +520,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Pizza Delivery App Development Company"
-            ptag="Comfygen is a trusted pizza delivery app development company helping restaurants and pizzerias launch fast, secure, and easy-to-use pizza ordering apps. We build custom on-demand pizza delivery solutions with real-time order tracking, secure payments, and smooth user experience to increase online orders and business growth."
+            heading="Top Pizza Delivery App Development Company"
+            ptag="Comfygen is a trusted pizza delivery app development company helping restaurants and pizzerias launch fast, secure, and easy-to-use pizza ordering apps. We provide custom on-demand pizza delivery development services with an AI solution, real-time order tracking, secure payments, and smooth user experience to increase online orders and business growth."
             li="Custom & White-Label Pizza Delivery Apps"
             li1="Live Order Tracking & Analytics"
             li2="Pizza Delivery App Development for iOS & Android"
@@ -531,21 +534,16 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/pizza-delivery-app-development/hero.webp"
           />
         </div>
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Pizza Delivery App Development Services
+                We Offer Best Pizza Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                We provide end-to-end pizza delivery app development services
-                tailored to your business needs. From designing user-friendly
-                interfaces to integrating advanced features like GPS tracking,
-                payment gateways, and AI-driven recommendations, we ensure your
-                food delivery app delivers a smooth experience for customers,
-                restaurants, and delivery agents.
+                We provide end-to-end pizza delivery app development services tailored to your business needs. We build high-performance pizza delivery apps that deliver a smooth experience for customers, restaurants, and delivery partners.
               </p>
             </div>
             <div className="">
@@ -556,7 +554,7 @@ export default function ClinicalApp(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="The Rising Demand: Why Your Pizza Business Needs a Delivery App"
+          heading="Why Invest in Pizza Delivery App Development?"
           description1="The global online food delivery market is expected to surpass $500 billion by 2030, with pizza being one of the most-ordered food categories worldwide. As more customers rely on mobile-based ordering, having a pizza delivery app is no longer optional — it’s crucial to stay competitive and boost revenue."
           description2="Whether you own a local pizzeria, manage a franchise chain, or run a cloud kitchen, a pizza delivery app can transform your business with automation, real-time tracking, secure payments, and personalized customer experiences."
           description3="We help restaurants and startups digitally transform operations, improve delivery efficiency, and increase customer retention at Comfygen Technologies, a trusted pizza ordering app development company."
@@ -575,8 +573,8 @@ export default function ClinicalApp(props: any) {
         {/* <ContactFromCenter /> */}
 
         <WhoCanStart
-          title="Business Models We Support in Pizza Delivery App Development"
-          description="At Comfygen Technologies, we design flexible pizza delivery app development solutions to fit every business model. Whether you’re a local pizzeria, a franchise, or an aggregator startup, our custom pizza delivery app development to scale and deliver seamless customer experiences."
+          title="Pizza Delivery App Development Solutions for Every Business Model"
+          description="At Comfygen Technologies, we develop flexible pizza delivery app solutions tailored to different business models. Whether you’re a local pizzeria, a franchise, or an aggregator startup, our custom pizza delivery app development to scale and deliver seamless customer experiences."
           cards={WhoCanStartCards}
         />
 
@@ -586,15 +584,22 @@ export default function ClinicalApp(props: any) {
           <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Pizza Delivery App Development Portfolio"
-            description="Comfygen creates high-quality pizza delivery apps that help restaurants, franchises, and startups enhance their online ordering experience. We develop feature-rich, scalable, and user-friendly pizza delivery apps."
+            description="We have successfully delivered high-performing pizza delivery app development solutions for restaurants, startups, and food brands worldwide. Our portfolio reflects our expertise in building scalable, secure, and user-friendly pizza ordering and delivery applications."
           />
         </section>
-
+        <CallToAction
+          heading="Ready to Launch Your Pizza Delivery App?"
+          text="Partner with Comfygen to build a fast, secure, and custom pizza delivery app. Get real-time tracking, seamless payments, and a smooth user experience. "
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now."
+        />
 
         <div className="py-8">
           <Features
-            heading="We Build Healthcare Apps with Powerful Patient, Doctor & Admin Panels"
-            description="Comfygen Technologies delivers next-gen healthcare app development solutions equipped with powerful admin, doctor, and patient panels. Our advanced panels ensure smooth communication, secure data access, and efficient management for a seamless healthcare experience."
+            heading="Features We Implement in Your Pizza Delivery App to Make It Stand Out"
+            description="At Comfygen, we develop feature-rich pizza delivery applications that simplify ordering, streamline restaurant operations, and ensure faster deliveries. Each app panel is thoughtfully designed with advanced features to deliver a seamless experience for customers, restaurants, delivery partners, and administrators."
             featuresData={JSON_DATA.featuresData}
             grid={4} />
         </div>
@@ -605,12 +610,10 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Advanced Technologies We Use in Pizza Delivery App Development
+                Advanced Technologies We Use in Pizza Delivery App Development
                 </h2>
                 <p className="text-center text-white lg:w-10/12 mx-auto">
-                  At Comfygen, we integrate the latest technologies into our
-                  end-to-end pizza delivery app development solutions to ensure
-                  speed, security, and customer satisfaction.
+                 At Comfygen, we integrate advanced and reliable technologies into our end-to-end pizza delivery app development solutions to ensure high performance, data security, scalability, and exceptional customer satisfaction.
                 </p>
               </div>
               <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
@@ -651,13 +654,10 @@ export default function ClinicalApp(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Pizza Delivery App Development Process
+               Our Pizza Delivery App Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Comfygen doesn't just build apps—we craft powerful pizza
-                delivery app development solutions for restaurants, pizzerias,
-                and startups. We follow a proven 7-step process to turn your
-                idea into the best pizza delivery mobile app.
+                At Comfygen, we follow a simple and clear pizza delivery app development process to build fast, secure, and easy-to-use applications. Each step is planned to give you the best results and smooth project delivery.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -675,7 +675,7 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <DeliverySection hideUrl="flower-delivery-app-development" />
+        
 
         <HireDeveloper
           heading="Hire Pizza Delivery App Developer"
@@ -691,6 +691,7 @@ export default function ClinicalApp(props: any) {
             "Quick development with full-time technical support & maintenance",
           ]}
         />
+        <DeliverySection hideUrl="flower-delivery-app-development" />
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}

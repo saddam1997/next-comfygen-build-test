@@ -164,12 +164,10 @@ export default function MultiChain(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Flutter Development Service
+               Flutter app development services
               </h2>
               <p className="text-base text-center font-normal">
-                We Provide end-to-end Flutter app development services,
-                including business idea generation, development, deployment, and
-                support.
+                We provide end-to-end Flutter app development services, covering business idea validation, development, deployment, and ongoing support. Our solutions help businesses create high-performance, cross-platform apps with a seamless user experience.
               </p>
             </div>
             <div className="">
@@ -179,11 +177,21 @@ export default function MultiChain(props: any) {
         </section>
         <AboutSection
           title=""
-          heading="Unlock New Business Potential with Cutting-Edge Flutter Solutions"
-          description1="We Provide end-to-end Flutter app development services, including business idea generation, development, deployment, and support. Also we provide complete UI/UX design, programming, testing, and maintenance services for Flutter apps. Our team of skilled Flutter developers has experience building cross-platform digital experiences that work flawlessly on a variety of devices. Whether you require a Flutter online application or a Flutter mobile application, our developers can provide custom solutions to satisfy your needs. Hire one of our talented Flutter programmers to realize your vision for a digital product and deliver top-notch user experiences."
+          heading="Unlock New Business Potential with Advanced Flutter Solutions"
+          description1="We offer end-to-end Flutter app development services, covering everything from business idea consultation and app design to development, deployment, and ongoing support. Our comprehensive flutter app development services include UI/UX design, programming, testing, and maintenance to ensure your Flutter app performs flawlessly across platforms."
+          description2="Our team of expert Flutter developers specializes in building cross-platform applications that deliver seamless user experiences on both web and mobile devices. Whether you need a Flutter mobile app or a Flutter web application, we create custom solutions tailored to your business goals."
           imageSrc="https://www.comfygen.com/gallery/about-images/flutter-development-company-about-us-img.webp"
           link="/about-us"
           linkText="Explore More"
+        />
+
+           <CallToAction
+          heading="Let’s Build the Future of Technology Together"
+          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
         />
 
         <HeadingSec
@@ -245,14 +253,7 @@ export default function MultiChain(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+     
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Flutter App Development Services"

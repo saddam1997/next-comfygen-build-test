@@ -44,7 +44,7 @@ const InfoSection = ({
                       {points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="md:w-[10px] md:h-[10px] bg-[#5556D1] rounded-full hidden md:block"></div>
-                          <span className="text-sm md:text-sm">{point}</span>
+                          <span className="text-sm md:text-sm" dangerouslySetInnerHTML={{ __html: point }}></span>
                         </li>
                       ))}
                     </ul>
@@ -82,7 +82,7 @@ const InfoSection = ({
                       {points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="w-2 h-2 bg-[#5556D1] rounded-full hidden md:block"></div>
-                          <span className="text-sm ">{point}</span>
+                          <span className="text-sm " dangerouslySetInnerHTML={{ __html: point }}></span>
                         </li>
                       ))}
                     </ul>

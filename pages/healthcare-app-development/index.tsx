@@ -10,6 +10,7 @@ import { FaDotCircle } from "react-icons/fa";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Link from "next/link";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -309,48 +310,75 @@ const jsonLdData = [
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How much does it cost to build a healthcare app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The <a href='https://www.comfygen.com/blog/healthcare-app-development-costs/'>healthcare app development</a> cost depends on the app’s complexity, features, and platform (iOS, Android, or both). On average, a basic healthcare app may cost between $25,000 to $80,000, while advanced apps with telemedicine, AI, or IoT integrations can range from $100,000 to $250,000. Comfygen offers affordable and scalable healthcare app development services tailored to your business goals."
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of healthcare apps do you develop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We develop a wide range of healthcare apps including telemedicine apps, patient monitoring apps, medical appointment booking apps, wearable healthcare apps, EHR/EMR apps, and AI-powered diagnostic apps tailored to hospitals, clinics, and healthcare startups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies do you use in healthcare app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our healthcare mobile app developers leverage modern tech stacks such as Node.js, Python, Django, Next.js, React, blockchain integration, and IoT solutions to create secure, scalable, and HIPAA-compliant apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop a healthcare app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of healthcare app development depends on app complexity, features, platform (iOS, Android, or cross-platform), and third-party integrations. At Comfygen, we provide customized quotes to fit your project requirements and budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop a healthcare app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Healthcare mobile app development timelines vary depending on features, integrations, and complexity. Typically, a standard app takes 12–20 weeks, while complex AI-powered or telemedicine apps may require 24+ weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you integrate telemedicine and AI-based features?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we integrate telemedicine functionalities such as video consultations, chat, and e-prescriptions, along with AI-powered features like predictive analytics, diagnostic support, and personalized healthcare recommendations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle updates and maintenance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer ongoing app support, updates, and optimization, including bug fixes, security patches, and feature enhancements to ensure your healthcare app remains secure, HIPAA-compliant, and up-to-date with industry standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you integrate third-party APIs and devices into the app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we integrate third-party APIs, wearable devices, and medical IoT sensors to provide real-time monitoring, seamless data sharing, and enhanced patient engagement across your healthcare ecosystem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide customization options for healthcare apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our custom healthcare app development services allow tailored solutions to meet your unique workflows, branding, patient care processes, and compliance requirements."
+        }
       }
-    }, {
-      "@type": "Question",
-      "name": "How long does it take to develop a healthcare app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The medical mobile application development timeline varies depending on the project scope. A simple app may take 2–3 months, while feature-rich healthcare solutions with integrations and compliance testing can take 4–8 months. At Comfygen Technologies, we follow an Agile development approach to deliver faster results without compromising quality or compliance."
-      }
-
-    }, {
-      "@type": "Question",
-      "name": "How does Comfygen ensure compliance in medical app development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We strictly follow global healthcare standards such as HIPAA, GDPR, and HL7 to ensure your medical app meets all regulatory and data privacy requirements. Our team implements advanced encryption protocols, secure authentication, and data access control measures to guarantee complete patient data protection."
-      }
-
-    }, {
-      "@type": "Question",
-      "name": "Can you integrate telemedicine features?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, absolutely! Our expert healthcare app developers can integrate advanced telemedicine features such as secure video consultations, real-time chat, e-prescriptions, and digital health records. These <a href='https://www.comfygen.com/blog/features-in-healthcare-apps/'>features in healthcare apps</a> make remote healthcare delivery seamless, accessible, and fully compliant with global regulations."
-      }
-
-    }, {
-      "@type": "Question",
-      "name": "Can you integrate AI-based features in medical apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we specialize in AI-powered healthcare app development. Our team can implement AI-driven chatbots, predictive analytics, diagnostic tools, patient behavior insights, and virtual health assistants to enhance care delivery, automation, and patient engagement within your app."
-      }
-
-
-    }]
+    ]
   }
+
+
 
 ];
 
@@ -474,11 +502,12 @@ export default function Mobile(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Healthcare Mobile App Development Company"
-          ptag="Comfygen Technologies is a trusted Healthcare Mobile App Development Company in India, delivering secure, scalable, and innovative digital healthcare solutions. We specialize in building advanced healthcare mobile apps including telemedicine platforms, ePharmacy apps, EHR/EMR systems, AI-powered diagnostics, and wearable-integrated applications. Our expert team develops end-to-end healthcare solutions with robust data security, regulatory compliance, and seamless user experiences for hospitals, clinics, doctors, and healthcare startups. With cutting-edge technologies and industry best practices, we help healthcare businesses accelerate digital transformation and improve patient care outcomes."
-          li="Custom Healthcare App Development"
-          li1="Advanced Digital Health Solutions"
-          li2="Secure & Compliant Architecture"
-          li3="Scalable & User-Centric Experience"
+          ptag="A trusted healthcare mobile app development company delivering secure, HIPAA-compliant, and scalable digital healthcare solutions for hospitals, clinics, startups, and enterprises worldwide."
+          ptag1='We specialize in custom healthcare mobile app development using advanced technologies like AI, IoT, and cloud to improve patient care, streamline clinical workflows, and ensure data security. Our expert healthcare app developers build future-ready solutions tailored to your business needs.'
+          li="Custom Healthcare App Development Services for Android & iOS"
+          li1="Secure & HIPAA-compliant Medical App Development Solutions"
+          li2="Scalable Healthcare Software Development with AI & IoT integration"
+          li3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -504,12 +533,11 @@ export default function Mobile(props: any) {
         <AboutSection
           title="About Company"
           heading="Why Invest in Custom Healthcare Mobile App Development?"
-          description1="According to Grand View Research, the global healthcare mobile app market is projected to soar from USD 114.17 billion in 2024 to USD 1,070.58 billion by 2030, growing at a CAGR of 45.2%. Investing in custom healthcare app development enables hospitals and startups to enhance care quality, streamline operations, and boost revenue."
-          description2=""
+          description1="According to Grand View Research, the global healthcare mobile app market is expected to grow from USD 114.17 billion in 2024 to USD 1,070.58 billion by 2030, registering a strong CAGR of 45.2%. This rapid growth highlights the increasing demand for custom healthcare mobile app development among hospitals, clinics, and healthcare startups."
+          description2="Investing in custom healthcare app development services enables organizations to improve patient care quality, streamline clinical operations, and unlock new revenue opportunities through scalable, secure, and HIPAA-compliant digital healthcare solutions."
           points={[
-            "Real-time patient monitoring",
-            "Secure data management (HIPAA compliant)",
             "24/7 virtual consultations",
+            "Real-time patient monitoring",
             "Improved patient engagement",
             "Automated workflows & analytics",
           ]}
@@ -587,14 +615,15 @@ export default function Mobile(props: any) {
                     <Image
                       className="rounded-lg bg-contain"
                       alt="Our Secured and Compliance-Friendly mHealth Applications Meeting Industry Standards"
-                      src="https://www.comfygen.com/images/our-secured-and-compliance-friendly.webp"
+                      src="https://www.comfygen.com/comfygen-images/healthcare-app-development/Next Gen Healthcare App.webp"
                       width={640}
                       height={360}
                     />
                     <h2 className="py-2 lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-white">
                       Next-Gen Healthcare App Development Company for Diverse Medical Sectors
                     </h2>
-                    <p className="text-base text-white">FAt <a href='https://www.comfygen.com/' className="underline">Comfygen Technologies</a>, we specialize in custom healthcare app development solutions tailored for every sector in the healthcare ecosystem. From patient care and clinical management to telemedicine and AI-powered diagnostics, our expert healthcare app developers create scalable, secure, and high-performing applications that enhance healthcare delivery, improve efficiency, and drive business growth.</p>
+                    <p className="text-base text-white">At <Link href='https://www.comfygen.com' className="underline font-semibold">Comfygen Technologies</Link>, we are a next-gen healthcare app development company delivering custom, secure, and scalable healthcare app solutions for diverse medical sectors. Our expertise covers patient care management, clinical workflows, telemedicine platforms, and AI-powered healthcare applications, enabling hospitals, clinics, startups, and enterprises to enhance care delivery, streamline operations, ensure HIPAA compliance, and drive sustainable digital healthcare transformation.
+                    </p>
 
                   </div>
                   <div className="grid gap-4 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[650px] overflow-auto head-scroll">
@@ -631,8 +660,8 @@ export default function Mobile(props: any) {
 
         <section className="py-8">
           <TechStack
-            title="Tech Stack We Use in Medical App Development"
-            description="At Comfygen Technologies, we leverage a robust and modern healthcare app development tech stack to build high-performance health applications. Our technology choices ensure your custom healthcare mobile app delivers seamless functionality, top-notch security, and compliance with global healthcare standards like HIPAA and GDPR."
+            title="Modern Technology Stack for Secure Healthcare App Development"
+            description="At Comfygen Technologies, we use a robust and future-ready healthcare app development technology stack to build high-performance, secure, and scalable medical applications. Our backend and frontend frameworks, combined with modern databases and APIs, ensure seamless functionality, data security, and full compliance with healthcare regulations such as HIPAA and GDPR, delivering reliable digital healthcare solutions for hospitals, startups, and enterprises."
           />
         </section>
 
@@ -663,7 +692,7 @@ export default function Mobile(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div >
     </>

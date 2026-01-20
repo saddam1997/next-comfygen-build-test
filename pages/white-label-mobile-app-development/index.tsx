@@ -529,7 +529,7 @@ export default function Mobile(props: any) {
 
       <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="White Label Mobile App Development Company"
+          heading="white-label mobile app development company"
           ptag="Comfygen is a top-rated white label mobile app development company offering ready-to-use and fully customizable mobile app development solutions according to your business. Our white label mobile app development services help many startups, agencies, and enterprises to launch feature-rich mobile apps under their own brand quickly, affordably, and without the need to build from scratch."
           li="Customizable Apps for iOS & Android"
           li1="Fast Time-to-Market with Pre-Built Architecture"
@@ -563,9 +563,9 @@ export default function Mobile(props: any) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our White Label Mobile App Development Services
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Explore Our Portfolio of Successful Mobile App Development Projects
               </h2>
-              <p className="text-base text-center font-normal">Comfygen Best white label mobile app development service provider that covers everything from mobile app design to deployment. Whether you're launching your own app or reselling under your brand, our white label mobile application development solutions are tailored to meet your business goals quickly and affordably.</p>
+              <p className="text-base text-center font-normal">A great white-label mobile app development company delivers solutions that don’t feel generic. they feel tailor-made for your business. That’s why our portfolio showcases a wide range of ready-to-launch white-label mobile app development solutions you can customize, scale, and brand as your own. Each product is battle-tested, performance-driven, and designed to go live faster than building from scratch.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -590,8 +590,8 @@ export default function Mobile(props: any) {
         </section>
 
         <CallToAction
-          heading="Ready to Launch Your Own Branded Mobile App?"
-          text="Let us build a white label app tailored to your business goals."
+          heading="Scale Your Business Fast with Our White Label Solutions!"
+          text="Focus on growth while we handle the technical side. From app design to deployment, our white label solution has you covered."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
@@ -612,8 +612,8 @@ export default function Mobile(props: any) {
 
         <TechStack
           customTechData={null}
-          title="Full Stack Technology for Scalable White Label App Development"
-          description="We follow a full-stack development approach to build flexible, scalable white label mobile apps. From UI to backend, DevOps to QA, we deliver rebrandable, high-performance apps tailored to your industry and business goals. Our solutions are secure, fast, and built to meet today’s and tomorrow’s digital demands."
+          title="Full-Stack Technology for Scalable White Label App Development"
+          description="We follow a comprehensive full-stack development approach to create flexible, scalable, and rebrandable white label mobile apps. From UI/UX design to backend infrastructure, DevOps, and QA, we ensure every app is high-performance, secure, and tailored to your business goals."
         />
 
 

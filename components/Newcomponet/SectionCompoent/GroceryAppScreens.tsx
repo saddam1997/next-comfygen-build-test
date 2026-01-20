@@ -167,7 +167,7 @@ export default function AppShowcaseSlider() {
                     height: CARD_HEIGHT,
                     transform: `scale(${scale})`,
                     opacity: isCenter ? 1 : opacity,
-                    zIndex: isCenter ? 50 : zIndex,
+                    zIndex: isCenter ? 30 : zIndex,
                     filter: isCenter ? 'none' : 'blur(2px)',
                   }}
                 >

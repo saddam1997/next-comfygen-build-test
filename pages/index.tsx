@@ -2,7 +2,14 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import Milestones from "../components/Newcomponet/comman/Milestones";
+
+
+const Milestones = dynamic(
+  () => import("../components/Newcomponet/comman/Milestones"),
+  {
+    ssr: true,
+  }
+);
 
 
 import HeroSection from "../components/HeroSection";
@@ -37,6 +44,7 @@ const Portfolio = dynamic(
   () => import("../components/Newcomponet/SectionCompoent/Portfolio"),
   { ssr: true }
 );
+
 
 const CallToAction = dynamic(
   () => import("../components/Newcomponet/SectionCompoent/CallToAction"),
@@ -99,7 +107,7 @@ export default function Home(props: any) {
     <>
       <Head>
         <title>
-          Top Mobile App & Web Development Company | Comfygen Technologies
+          AI-Based Mobile App and Web Development Company
         </title>
         <meta
           name="title"
@@ -107,7 +115,7 @@ export default function Home(props: any) {
         />
         <meta
           name="description"
-          content="Meta Descriptio: Comfygen is a leading mobile app and web development company. We build best custom mobile apps with AI solution for startups and enterprises."
+          content="Comfygen is AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
         />
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta
@@ -184,15 +192,11 @@ export default function Home(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
         {/* ✅ LCP IMAGE PRELOAD */}
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.websiteJsonLd) }}
-        />
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLd) }}
-        />
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
+        /> 
       </Head>
       <div >
 
@@ -208,21 +212,20 @@ export default function Home(props: any) {
             btnName="Let's Discuss"
             btnLink="/contact-us"
             altTag="blockchain-technology"
-            bgImage="https://www.comfygen.com/comfygen-images/home/home.webp"
+            bgImage="https://www.comfygen.com/comfygen-images/home/web development company home.webp"
           />
         </div>
         <Milestones />
-        {/* <Milestonessec/>*/}
-        {/* <Milestonessec /> */}
+
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Custom Mobile App and Web Development Services
+                Our Custom Mobile App and Web Development Services
               </h2>
               <p className="text-base text-center font-normal">
-             Our expert Mobile app developers create enterprise-grade AI-Powered web and mobile applications using modern frameworks and scalable architectures. We help businesses adopt futuristic technologies to improve performance, user experience, and market competitiveness.
+                Our expert Mobile app developers create enterprise-grade AI-Powered web and mobile applications using modern frameworks and scalable architectures. We help businesses adopt futuristic technologies to improve performance, user experience, and market competitiveness.
               </p>
             </div>
             <div className="">
@@ -240,7 +243,7 @@ export default function Home(props: any) {
           description1="Comfygen is a trusted web and mobile app development company delivering secure, scalable, and future-ready digital solutions for businesses worldwide. We help startups, enterprises, and fast-growing companies turn ideas into powerful digital products that drive efficiency, engagement, and long-term growth."
           description2="Our experienced custom mobile app development team utilizes modern frameworks, cloud-native architectures, and emerging technologies to build high-performing websites and mobile applications across industries such as fintech, healthcare, blockchain, on-demand, education, gaming, and enterprise solutions. With a strong focus on usability, performance, and scalability, we ensure every solution is built to evolve with your business needs."
           points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/home/comfygen about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/home/mobile app and web development about.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -263,21 +266,23 @@ export default function Home(props: any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
+
+         
         <IndustriesServe
           heading="Industries We Serve As Best Mobile App Development Company"
           description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
           sliderData={JSON_DATA.IndustriesServe}
-        />
+        /> 
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Mobile App and Website Development Process
+                Our Mobile App and Website Development Process
 
               </h2>
               <p className="text-base font-normal mt-2">
-               As a trusted Mobile App and Web Development company, we follow a structured and agile website and application development process to deliver custom, scalable, and high-quality digital solutions.
+                As a trusted Mobile App and Web Development company, we follow a structured and agile website and application development process to deliver custom, scalable, and high-quality digital solutions.
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA?.Process} />
@@ -323,6 +328,8 @@ export default function Home(props: any) {
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}
         />
+
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"

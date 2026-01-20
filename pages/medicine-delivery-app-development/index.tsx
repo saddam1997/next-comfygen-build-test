@@ -514,8 +514,8 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Medicine Delivery App Development Company"
-          ptag="Comfygen Technologies is a leading Medicine Delivery App Development Company delivering secure, scalable, and high-performance on-demand solutions for pharmacies, healthcare startups, and enterprises. We specialize in custom medicine delivery app development that enables online medicine ordering, doorstep delivery, real-time tracking, and fast fulfillment — including a medicine delivery app in 10 minute models."
-          ptag1="Our expert medicine app developers build feature-rich platforms using the latest technologies to help you launch a powerful online medicine delivery app tailored to your business needs. From white label medicine delivery app development to fully customized solutions, we ensure compliance, performance, and seamless user experience."
+          ptag="Comfygen Technologies is a trusted Medicine Delivery App Development Company providing top-notch Medicine Delivery App Development Services. We build custom, secure, and user-friendly medicine delivery apps that simplify ordering, tracking, and delivery. Our solutions help businesses enhance customer satisfaction, improve efficiency, and stay ahead in the fast-growing healthcare delivery market."
+          ptag1=""
           li="Secure & High-Performance Medicine Delivery Solutions"
           li1="On-Demand & 10-Minute Medicine Delivery Capabilities"
           li2="Custom & White-Label App Development by Expert Developers"

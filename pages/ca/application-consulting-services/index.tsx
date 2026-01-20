@@ -175,8 +175,8 @@ export default function Mobile(props: any) {
       </div>
       <div className="overflow-hidden lg:pt-[90px] ">
         <HeroSection
-          heading="Application Consulting Services"
-          ptag="Comfygen provides expert mobile application consulting services to help businesses define the right strategy, reduce risks, and build successful digital products. As an experienced mobile app development consulting company, we analyze your business goals, market opportunities, and user expectations to create a clear, result-driven app roadmap."
+          heading="Application Development Consulting Services"
+          ptag="Comfygen provides expert Mobile Application Development Consulting Services to help businesses define the right strategy, reduce risks, and build successful digital products. As an experienced mobile app development consulting company, we analyze your business goals, market opportunities, and user expectations to create a clear, result-driven app roadmap."
           ptag1="Our app consultants and market research experts guide you through ideation, technology selection, feature planning, and scalability strategies—ensuring your mobile application stands out in competitive markets and delivers long-term value."
           li="Expert Mobile App Development Consulting"
           li1="Business & User-Centric App Strategy"
@@ -208,16 +208,20 @@ export default function Mobile(props: any) {
         <AboutSection
           title=""
           heading="Leading Mobile App Consultancy for a Futuristic Market"
-          description1="Comfygen is an 8+ years experienced IT firm that has acquired the talents of 10 to 15+ years of experienced developers, researchers, and analysts. This company is more focused on delivering quality over quantity. We cater mobile app consulting services to clients with optimum innovative approaches to development, deployment, and even post-deployment support & maintenance. Our mobile app developers are attentive to cutting-edge technologies and trending techs to build robust mobile applications that carry the potential to engage users in the long run."
+          description1="Comfygen is an 8+ years experienced application development firm that has acquired the talents of 10 to 15+ years of experienced developers, researchers, and analysts. This company is more focused on delivering quality over quantity. We cater <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile application development</a> consulting services to clients with optimum innovative approaches to development, deployment, and even post-deployment support & maintenance. Our mobile app developers are attentive to cutting-edge technologies and trending techs to build robust mobile applications that carry the potential to engage users in the long run."
           description2="Not only the expertise we have, but our team of IT engineers also understands every domain, niche, and industrial type. Every industry is revolutionized by technological advancements and unique ideations. Our app development consultants are well-versed in the current revolutions and possible futuristic changes. Therefore, they can comment better on the clientele’s app development idea and suggest bright application consultancy to build a potent mobile application that fulfills every need with vast engagement."
-          description3="Book your application consulting services today to take the business forward and grow in the market with advanced methods and technologies."
+          description3=""
           imageSrc="https://www.comfygen.com/gallery/about-images/application-consulting-services-about-us-img.webp"
           link="/about-us"
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
 
-        <IndustriesServe heading="" description="" />
+        <IndustriesServe
+          heading="Industries We Serve As Best Mobile App Development Company"
+          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+          sliderData={JSON_DATA.IndustriesServe}
+        />
 
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}

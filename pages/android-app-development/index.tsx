@@ -209,17 +209,15 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/android-app-dev-hero-img.webp"
         />
-        <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Comprehensive Android App Development Services
+               Our Comprehensive Android App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                As the best Android app development company in Jaipur, India, We
-                provide the top Android app development services for
-                entrepreneurs and startups in India. What services, We offer
+                As a leading Android app development company. Comfygen delivers end-to-end Android app development services tailored for startups, entrepreneurs, and enterprises across India. We combine innovative technology, user-focused design, and scalable architecture to build high-performing Android applications that drive business growth.
               </p>
             </div>
             <div className="">
@@ -230,16 +228,15 @@ export default function Mobile(props: any) {
         <AboutSection
           title=""
           heading="Why Comfygen is Your Trusted Android App Development Partner in India"
-          description1="As a Trusted Android application development company, We provide custom Android app solutions, we are committed to building innovative, high-performance Android mobile apps that perfectly align with your mobile app development business goals. "
-          description2="As expert Android app developers providing custom Android app solutions for startups and small businesses. We specialize in creating custom mobile apps for B2B, and B2C models, including domains like gaming, AR/VR, IoT, news, entertainment, multimedia, utility, chat, shopping, ticket booking, and more. "
-          description3="We provide expert Android app development services in Jaipur, creating secure, scalable, and user-friendly mobile apps for businesses. From enterprise solutions to consumer apps, we deliver seamless functionality and long-term value. We provide custom Android app development solutions that are agile, flexible, and future-proof, allowing your Android mobile app to scale as your <a href='/mobile-app-development' class='text-blue-700 font-semibold'>mobile app development</a> business evolves. "
-          description4="Our Android app development approach ensures optimized user experiences and business outcomes, making us a leading app development company in Jaipur for e-commerce and beyond. With a focus on performance, security, and innovation, we transform your vision into a powerful mobile app that drives success."
+          description1="As a trusted Android application development company, we deliver custom <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>Mobile app development solutions</a> focused on innovation, performance, and alignment with your business goals. Our expert Android app developers specialize in building scalable mobile applications for startups, small businesses, and enterprises across B2B and B2C models, covering domains such as gaming, AR/VR, IoT, <a href='https://www.comfygen.com/ecommerce' class='text-blue-600 font-semibold'>eCommerce</a>, entertainment, news, utilities, chat, ticket booking, and more."
+          description2="We provide secure, user-friendly, and future-ready Android app development services—from enterprise-grade solutions to consumer-focused applications. With an agile and flexible development approach, we ensure seamless functionality, optimized user experiences, and long-term value, transforming your vision into a powerful Android app that drives business success."
+         
           imageSrc="https://www.comfygen.com/gallery/about-images/android-app-development-about-us-img.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        
+
 
         <TechStack
           title=" Our Cutting-Edge Technology Stack for Android App Development"
@@ -250,11 +247,11 @@ export default function Mobile(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Step-by-Step Android App Development Process
+               Step-by-Step Android App Development Process
               </h2>
               <p className="text-base font-normal mt-2">
-                As a trusted Android app development company in Jaipur, India,
-                we create secure, scalable, and future-proof Android apps.
+             As a trusted Android app development company, we build secure, scalable, and future-ready Android applications that align perfectly with your business goals. Our structured development process ensures transparency, quality, and faster time-to-market.
+
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
@@ -285,7 +282,7 @@ export default function Mobile(props: any) {
           ]}
         />
         <Faq faqData={JSON_DATA.Frequently} title=" " />
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

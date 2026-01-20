@@ -53,15 +53,19 @@ function Portfolio({ projects, heading, description }) {
                   <div className="border rounded-3xl shadow-xl md:p-12 mx-4">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div>
-                        <Image
-                          className="bg-center bg-contain h-full md:h-[400px] w-full"
-                          src={project?.image}
-                          alt={project?.title}
-                          width={297}
-                          height={192}
-                          quality={50}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
-                        />
+
+                        {project?.image && (
+                          <Image
+                            className="bg-center bg-contain h-full md:h-[400px] w-full"
+                            src={project?.image}
+                            alt={project?.title}
+                            width={297}
+                            height={192}
+                            quality={50}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+                          />
+                        )}
+
                       </div>
                       <div className="p-2 sm:p-0">
                         <h3 className="sm:text-4xl text-center sm:text-start text-sm font-bold text-gray-900">

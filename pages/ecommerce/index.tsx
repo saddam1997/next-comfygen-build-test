@@ -167,19 +167,19 @@ const productCard = [
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c1.svg",
-    link: "",
+    link: "https://www.comfygen.com/ecommerce/fashion",
     heading: "Fashion & Apparel",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c2.svg",
-    link: "/ecommerce/grocery",
+    link: "https://www.comfygen.com/ecommerce/grocery",
     heading: "Grocery ",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c3.svg",
-    link: "/ecommerce/fmcg",
+    link: "https://www.comfygen.com/ecommerce/fmcg",
     heading: "FMCG",
   },
   {
@@ -191,37 +191,37 @@ const productCard = [
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c5.svg",
-    link: "",
+    link: "https://www.comfygen.com/ecommerce",
     heading: "Electronics",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c6.svg",
-    link: "",
+    link: "https://www.comfygen.com/home-service-app-development",
     heading: "Furniture & Home Decor",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c7.svg",
-    link: "",
+    link: "https://www.comfygen.com/ecommerce",
     heading: "B2B & Wholesale",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c8.svg",
-    link: "",
+    link: "https://www.comfygen.com/salon-app-development",
     heading: "Beauty & Personal Care",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c9.svg",
-    link: "",
+    link: "https://www.comfygen.com/healthcare-app-development",
     heading: "Healthcare & Medicine",
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c10.svg",
-    link: "",
+    link: "https://www.comfygen.com/portfolio/e-commerce",
     heading: "Jewelry",
   },
 ];
@@ -637,7 +637,7 @@ export default function ClinicalApp(props: any) {
         />
 
         <ProductCard
-          title="Explore Diverse Product Lines"
+          title="Transforming Businesses with Industry-Specific eCommerce Solutions"
           subtitle="We build tailored eCommerce solutions to meet the unique needs of various industries and markets."
           cards={productCard}
         />

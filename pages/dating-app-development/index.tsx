@@ -31,6 +31,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 // import PortfolioSec from "../1111componentsnew/PortfolioSec";
 
 const loader = () => (
@@ -314,83 +315,7 @@ const latesttech = [
 ];
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/swipe-based-dating-app.webp",
-      head: "Swipe-Based Dating App",
-      name: "Our swipe-based dating app development offers an intuitive user experience with AI-driven matchmaking, real-time chat, and seamless profile swiping to enhance engagement and connections.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink:  "/portfolio/swipe-based-dating-app",
-    },
-    {
-      img: "https://www.comfygen.com/image/match-making-datingapp.webp",
-      head:  "Matchmaking Dating App",
-      name: "We develop AI-powered matchmaking apps with personality-based matching algorithms, ensuring users find meaningful relationships through smart recommendations and compatibility analysis.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/ai-matchmaking-dating-app-development",
-    },
-    {
-      img: "https://www.comfygen.com/image/lgbtq-dating-app.webp",
-      head:   "LGBTQ Dating App",
-      name: "Our LGBTQ dating app development offers secure matchmaking, quick hookups, and meaningful friendships through real-time chat, location-based searches, and AI suggestions.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/lgbtq-dating-app",
-    },
-     {
-      img: "https://www.comfygen.com/image/casual-dating-app.webp",
-      head:  "Casual Dating App",
-      name: "Designed for modern dating, our casual dating app development offers instant matches, real-time chats, and location-based suggestions for users seeking fun and spontaneous connections.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink: "/portfolio/casual-dating-app",
-    },
-    {
-      img:"https://www.comfygen.com/image/profestional-dating-app.webp",
-      head:"Professional Dating App",
-      name:"We build professional dating apps that connect like-minded professionals, integrating career-based matchmaking, private messaging, and networking features for meaningful relationships.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg",
-      ],
-      buttonLink:"/portfolio/professional-dating-app",
-    }
- 
- 
-   
-  ],
-};
+
 
 
 
@@ -712,8 +637,8 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Best Custom Dating App Development Services in India | Comfygen</title>
-        <meta name="description" content="Looking for the best custom dating app development company in India? Get custom, secure, and feature-rich dating app solutions & services with 24/7 support. Build your perfect dating app today!" />
+        <title>Best Custom Dating App Development Company in India & USA | Comfygen</title>
+        <meta name="description" content=" Comfygen is a top dating app development company in India offering custom, secure, and AI-powered dating app development services for startups and enterprises." />
         <link rel="canonical" href="https://www.comfygen.com/dating-app-development" />
 
         <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development"></meta>
@@ -756,12 +681,12 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Top-Rated Custom Dating App Development Services"
-          ptag="Build an advanced user-friendly dating app with Comfygen, a leading dating app development service provider renowned for providing top-notch, best custom dating app development services with tech entrepreneurs. Whether you're a startup or an established business, we bring your vision to life with cutting-edge, customized dating app development solutions tailored to your needs."
-          li="Rich UI/UX App Design"
-          li1="10+ years of experience as a developer"
-          li2="Punctual for commitment Delivery"
-          li3="AI/ML Enabled App"
+          heading="Best Custom Dating App Development Company in India"
+          ptag="Looking to build a high-performance dating app like Tinder, Bumble, or Hinge? Comfygen is a trusted dating app development company delivering secure, scalable, and feature-rich dating applications for startups, SMEs, and enterprises worldwide. With 8+ years of experience, we specialize in custom dating app development services, powered by AI/ML, modern UI/UX, and robust backend architecture to help you launch market-ready dating platforms faster."
+          li="8+ Years of Dating App Development Expertise"
+          li1="Custom & Scalable Dating App Solutions"
+          li2="AI-Based Matchmaking & Real-Time Chat"
+          li3="Secure Architecture & Timely Delivery"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -770,6 +695,24 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp"
         />
+
+        <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Elevate Your Dating App with Our Top-Notch Dating Mobile App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Grow your dating app business with Comfygen. As a top dating app development company in India, we create innovative, secure, and feature-rich dating apps to help your startup business succeed in the competitive dating industry.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           heading="Best Dating App Development Services for Startups & Enterprises"
@@ -780,25 +723,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Take your Business to the next level with our Custom Dating
-                Application Development Solutions
-              </h2>
-              <p className="text-base text-center font-normal">
-                Looking to take your dating app business to the next level? As a
-                reliable custom dating app development company, we provide
-                custom dating app development solutions that are customized to
-                your specific needs.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
         <CardGrid
           heading="Elevate Your Dating App with Our Top-Notch Dating Mobile App Development Services"
@@ -856,13 +781,13 @@ export default function Ecommerce(props) {
         /> */}
 
 
-       <section className="py-8">
+        <section className="py-8">
           <Portfolio
             projects={portfoliodata}
             heading="Our Dating Apps Portfolio"
             description="Explore our advanced dating app development portfolio, showcasing innovative and feature-rich solutions tailored to diverse user needs. From  <a class='text-blue-600' href='https://www.comfygen.com/blog/ai-dating-app-development'>AI-powered dating app development</a>  to real-time chat and video calls, our dating apps ensure seamless user engagement. Partner with us to build a top-tier dating platform that stands out in the industry."
           />
-        </section> 
+        </section>
 
 
 

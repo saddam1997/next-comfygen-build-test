@@ -42,7 +42,7 @@ const XIcon = () => (
 
 const Form = () => (
   <section>
-  <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 px-4 sm:px-6 lg:px-8 py-8">
+  <div className="h-full bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 px-4 sm:px-6 lg:px-8 py-8">
     <div className="max-w-7xl mx-auto">
 
       {/* Header */}

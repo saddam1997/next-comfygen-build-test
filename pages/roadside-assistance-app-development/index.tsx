@@ -475,17 +475,15 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/hero.webp"
           />
         </div>
-        <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Top-Notch Roadside App Development Services
+               Our Top-Notch Roadside App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                We provide result-oriented towing/roadside assistance mobile app
-                development services tailored for towing companies, fleets, and
-                on-demand auto service startups.
+                We build mobile apps for towing and roadside assistance, helping companies streamline service requests, track vehicles in real time, and provide fast, reliable support. Key features include emergency towing, on-demand bookings, and management dashboards for seamless customer service.
               </p>
             </div>
             <div className="">
@@ -502,7 +500,7 @@ export default function ClinicalApp(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        
+
 
         {/* <ContactFromCenter /> */}
         <CardItem

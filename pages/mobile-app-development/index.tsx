@@ -325,7 +325,7 @@ export default function Mobile(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-hero.webp"
             btnName="Talk With Expert"
             btnLink="/contact-us"
-            
+
           />
         </div>
         {/* <Sponser /> */}
@@ -352,8 +352,8 @@ export default function Mobile(props: any) {
         <AboutSection
           title=""
           heading="Future Ready Mobile App Development Solutions for Global Businesses"
-          description1="Comfygen Technologies is a trusted mobile app development company in Jaipur, India, delivering high-performing mobile apps for startups and enterprises. Based in Jaipur, we build feature-rich Android, iOS, and cross-platform apps for Healthcare, Fintech, Blockchain, Education, Gaming, On-Demand, and Entertainment industries."
-          description2="With a skilled team of mobile app developers in Jaipur and 250+ successful projects, we offer end-to-end app development services using the latest technologies. Whether you need AI-powered apps, intuitive UI UX design, or high-quality gaming app development, we bring your idea to life with innovation and excellence."
+          description1="Future Ready Mobile App Development Solutions for Global Businesses Comfygen Technologies is a trusted mobile app development company in Jaipur, India, delivering high-performing mobile apps for startups and enterprises. Based in Jaipur, we build feature-rich Android, iOS, and cross-platform apps for Healthcare, Fintech, Blockchain, Education, Gaming, On-Demand, and Entertainment industries."
+          description2="With a skilled team of mobile app developers and 255+ successful projects, we offer end-to-end app development services using the latest technologies. Whether you need AI-powered apps, intuitive UI UX design, or high-quality gaming app development, we bring your idea to life with innovation and excellence."
           description3=""
           imageSrc="https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp"
           link="/about-us"
@@ -412,7 +412,7 @@ export default function Mobile(props: any) {
           description="The full-stack technology we use encompasses the front end, back end, database, DevOps, and quality assurance to develop agile, high-performance mobile apps. Your business needs will be met by seamless, scalable, and reliable app solutions."
         />
 
-        <IndustriesServe heading={null} description={null} />
+        <IndustriesServe />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
