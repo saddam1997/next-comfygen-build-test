@@ -32,8 +32,7 @@
         "text": "“The fraud detection system developed by Comfygen has been a lifesaver for our business. We’ve seen a 25% reduction in fraud cases, and our customers feel more secure. Their solutions are top-notch and delivered on time.”",
         "name": "Michael",
         "title": "CEO"
-      }
-      ,
+      },
       {
         "text": "“Comfygen’s predictive maintenance solution transformed our operations. We’ve reduced downtime by 40% and saved 20% in maintenance costs. Their team is highly skilled and a pleasure to work with.”",
         "name": "Robert",
@@ -190,48 +189,47 @@
       }
     ],
     "Frequently": [
-  {
-    "num": "1",
-    "title": "What are AWS analytics services, and how can they help my business?",
-    "desc": "AWS offers a wide range of analytics tools that help you collect, store, process, and analyze data at scale. These services can help you make faster decisions, improve operations, and unlock insights from structured and unstructured data."
-  },
-  {
-    "num": "2",
-    "title": "Which AWS analytics tools do you use?",
-    "desc": "We use a tailored mix based on your needs — including Amazon Redshift, AWS Glue, Athena, Kinesis, QuickSight, EMR, and Lake Formation. We design the right stack for your performance, security, and cost requirements."
-  },
-  {
-    "num": "3",
-    "title": "Can AWS analytics services work with my existing systems?",
-    "desc": "Yes. AWS integrates with most CRMs, ERPs, databases (like MySQL, PostgreSQL, SQL Server), APIs, flat files, and even on-premise systems. We handle the full data integration process."
-  },
-  {
-    "num": "4",
-    "title": "How long does it take to implement an AWS analytics solution?",
-    "desc": "That depends on the scope, but most MVP setups take 3 to 6 weeks. Complex, enterprise-grade solutions with multiple data sources can take 2–3 months. We provide a clear timeline upfront."
-  },
-  {
-    "num": "5",
-    "title": "Is my data secure in AWS?",
-    "desc": "Absolutely. AWS is built with strong security features, including encryption, IAM, VPC, and compliance with standards like GDPR, HIPAA, and SOC 2. We also add custom security layers and access controls for extra protection."
-  },
-  {
-    "num": "6",
-    "title": "How do you handle ongoing support and optimization?",
-    "desc": "We offer post-launch support, performance tuning, cost optimization, and can scale your system as your data grows. You can choose between a fixed support package or on-demand hours."
-  },
-  {
-    "num": "7",
-    "title": "Do I need in-house data experts to use AWS analytics services?",
-    "desc": "Not necessarily. We build systems that are easy to manage, and we offer training for your team. We can also handle everything end-to-end if you want a fully managed solution."
-  },
-  {
-    "num": "8",
-    "title": "How much do AWS analytics services cost?",
-    "desc": "There’s no fixed price — AWS follows a pay-as-you-go model. We help you choose cost-effective services and optimize usage to avoid waste. We also set up budget alerts and forecasting tools."
-  }
-],
-    
+      {
+        "num": "1",
+        "title": "What are AWS analytics services, and how can they help my business?",
+        "desc": "AWS offers a wide range of analytics tools that help you collect, store, process, and analyze data at scale. These services can help you make faster decisions, improve operations, and unlock insights from structured and unstructured data."
+      },
+      {
+        "num": "2",
+        "title": "Which AWS analytics tools do you use?",
+        "desc": "We use a tailored mix based on your needs — including Amazon Redshift, AWS Glue, Athena, Kinesis, QuickSight, EMR, and Lake Formation. We design the right stack for your performance, security, and cost requirements."
+      },
+      {
+        "num": "3",
+        "title": "Can AWS analytics services work with my existing systems?",
+        "desc": "Yes. AWS integrates with most CRMs, ERPs, databases (like MySQL, PostgreSQL, SQL Server), APIs, flat files, and even on-premise systems. We handle the full data integration process."
+      },
+      {
+        "num": "4",
+        "title": "How long does it take to implement an AWS analytics solution?",
+        "desc": "That depends on the scope, but most MVP setups take 3 to 6 weeks. Complex, enterprise-grade solutions with multiple data sources can take 2–3 months. We provide a clear timeline upfront."
+      },
+      {
+        "num": "5",
+        "title": "Is my data secure in AWS?",
+        "desc": "Absolutely. AWS is built with strong security features, including encryption, IAM, VPC, and compliance with standards like GDPR, HIPAA, and SOC 2. We also add custom security layers and access controls for extra protection."
+      },
+      {
+        "num": "6",
+        "title": "How do you handle ongoing support and optimization?",
+        "desc": "We offer post-launch support, performance tuning, cost optimization, and can scale your system as your data grows. You can choose between a fixed support package or on-demand hours."
+      },
+      {
+        "num": "7",
+        "title": "Do I need in-house data experts to use AWS analytics services?",
+        "desc": "Not necessarily. We build systems that are easy to manage, and we offer training for your team. We can also handle everything end-to-end if you want a fully managed solution."
+      },
+      {
+        "num": "8",
+        "title": "How much do AWS analytics services cost?",
+        "desc": "There’s no fixed price — AWS follows a pay-as-you-go model. We help you choose cost-effective services and optimize usage to avoid waste. We also set up budget alerts and forecasting tools."
+      }
+    ],
     "consultancyHead": [
       {
         "num": "1",
@@ -283,33 +281,32 @@
         "desc": "We leverage 5G technology to enhance app performance, enabling faster loading times, smoother streaming, and a more responsive user experience"
       }
     ],
-  "consultancyData": [
-  {
-    "title": "Scalability on Demand",
-    "desc": "Easily scale up and scale down your data infrastructure with AWS. Whether you're working with terabytes or petabytes, AWS helps you to manage large data volumes without changing your setup or losing performance."
-  },
-  {
-    "title": "Real-Time Analytics",
-    "desc": "Get real-time insights from your data streams with AWS. Tools like Amazon Kinesis and AWS Lambda help you make fast, data-driven decisions exactly when they’re needed."
-  },
-  {
-    "title": "Cost Optimization",
-    "desc": "Maximize ROI with AWS’s pay-as-you-go pricing model. Cut costs using serverless computing, auto-scaling, and spot instances—without compromising performance."
-  },
-  {
-    "title": "Security & Compliance",
-    "desc": "Protect data with AWS’s advanced security features including encryption, IAM (Identity and Access Management), and audit logs. Stay compliant with standards like HIPAA, GDPR, and ISO effortlessly."
-  },
-  {
-    "title": "AI & ML Ready",
-    "desc": "Easily connect with AWS <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >Artificial Intelligence/Machine Learning</a> tools like Amazon SageMaker, Forecast, and Comprehend to gain predictive insights, automate decisions, and improve customer experiences."
-  },
-  {
-    "title": "Global Reach",
-    "desc": "Deploy analytics solutions globally with AWS. Enjoy low-latency access, cross-region replication, and multi-AZ backups to ensure high availability and performance anywhere in the world."
-  }
-]
-,
+    "consultancyData": [
+      {
+        "title": "Scalability on Demand",
+        "desc": "Easily scale up and scale down your data infrastructure with AWS. Whether you're working with terabytes or petabytes, AWS helps you to manage large data volumes without changing your setup or losing performance."
+      },
+      {
+        "title": "Real-Time Analytics",
+        "desc": "Get real-time insights from your data streams with AWS. Tools like Amazon Kinesis and AWS Lambda help you make fast, data-driven decisions exactly when they’re needed."
+      },
+      {
+        "title": "Cost Optimization",
+        "desc": "Maximize ROI with AWS’s pay-as-you-go pricing model. Cut costs using serverless computing, auto-scaling, and spot instances—without compromising performance."
+      },
+      {
+        "title": "Security & Compliance",
+        "desc": "Protect data with AWS’s advanced security features including encryption, IAM (Identity and Access Management), and audit logs. Stay compliant with standards like HIPAA, GDPR, and ISO effortlessly."
+      },
+      {
+        "title": "AI & ML Ready",
+        "desc": "Easily connect with AWS <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >Artificial Intelligence/Machine Learning</a> tools like Amazon SageMaker, Forecast, and Comprehend to gain predictive insights, automate decisions, and improve customer experiences."
+      },
+      {
+        "title": "Global Reach",
+        "desc": "Deploy analytics solutions globally with AWS. Enjoy low-latency access, cross-region replication, and multi-AZ backups to ensure high availability and performance anywhere in the world."
+      }
+    ],
     "pageData": {
       "title": "Why Choose Comfygen for AWS Data Analytics Services ?",
       "description": "Choosing the right AWS analytics Service partner is critical for achieving meaningful, scalable, and secure data outcomes. At Comfygen, we bring deep AWS data analytics expertise, a strategic mindset, and a client-first approach to help you unlock the full potential of your business data.",
@@ -319,113 +316,110 @@
         "description": "outcomes—whether you're building a data lake, migrating to a cloud data warehouse, or setting up real-time analytics pipelines."
       },
       "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Technical Excellence",
-    "description": "Our team has hands-on experience with AWS analytics services like Amazon Redshift, Glue, Athena, QuickSight, EMR, and Kinesis. We architect solutions that are optimized for speed, scalability, and cost-efficiency, aligned with your business goals."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Dedicated Analytics Team",
-    "description": "We assign a dedicated team of AWS data analytics professionals to your project. From strategy to implementation, they stay involved to ensure transparency, accountability, and high-quality delivery at every stage."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Flexible Engagement Model",
-    "description": "Our teams are available across global time zones and can work during your preferred hours. Whether you're a startup or a global enterprise, we ensure seamless collaboration and timely progress."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "End-to-End AWS Services",
-    "description": "We offer full-cycle AWS analytics services—from initial assessment and architecture to deployment and continuous monitoring. This end-to-end approach simplifies your operations and ensures consistent results."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-    "title": "Smooth Migration & Integration",
-    "description": "Whether you're moving from on-premise systems, Excel, or third-party BI tools, we handle the migration to AWS analytics service with minimal disruption. We make sure data integrity, compliance, and compatibility across the platform."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
-    "title": "Enterprise-Grade Security",
-    "description": "With robust security practices, including IAM policies, encryption, and NDAs, we ensure your data remains private and secure. Our solutions also help you stay compliant with HIPAA, GDPR, and other regulatory standards."
-  }
-]
-
+        {
+          "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+          "title": "Technical Excellence",
+          "description": "Our team has hands-on experience with AWS analytics services like Amazon Redshift, Glue, Athena, QuickSight, EMR, and Kinesis. We architect solutions that are optimized for speed, scalability, and cost-efficiency, aligned with your business goals."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+          "title": "Dedicated Analytics Team",
+          "description": "We assign a dedicated team of AWS data analytics professionals to your project. From strategy to implementation, they stay involved to ensure transparency, accountability, and high-quality delivery at every stage."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+          "title": "Flexible Engagement Model",
+          "description": "Our teams are available across global time zones and can work during your preferred hours. Whether you're a startup or a global enterprise, we ensure seamless collaboration and timely progress."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+          "title": "End-to-End AWS Services",
+          "description": "We offer full-cycle AWS analytics services—from initial assessment and architecture to deployment and continuous monitoring. This end-to-end approach simplifies your operations and ensures consistent results."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+          "title": "Smooth Migration & Integration",
+          "description": "Whether you're moving from on-premise systems, Excel, or third-party BI tools, we handle the migration to AWS analytics service with minimal disruption. We make sure data integrity, compliance, and compatibility across the platform."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
+          "title": "Enterprise-Grade Security",
+          "description": "With robust security practices, including IAM policies, encryption, and NDAs, we ensure your data remains private and secure. Our solutions also help you stay compliant with HIPAA, GDPR, and other regulatory standards."
+        }
+      ]
     },
-
-"servicesData": [
-  {
-    "title": "Amazon Athena",
-    "subtitle": "",
-    "description": "Amazon Athena is a powerful, serverless query service from AWS that enables you to analyze vast amounts of data directly in Amazon S3 using standard SQL. With no infrastructure to manage, Athena allows data analysts, data scientists, and engineers to query structured, semi-structured, and unstructured data quickly and cost-effectively.",
-    "features": [
-      "No infrastructure to manage.",
-      "Pay-per-query model – cost-effective for ad-hoc analysis.",
-      "Supports a wide range of file formats (CSV, JSON, ORC, Parquet)."
-    ]
-  },
-  {
-    "title": "Amazon Redshift",
-    "subtitle": "",
-    "description": "Amazon Redshift is a fully managed, cloud-based data warehouse that helps you to run complex analytical queries on large datasets quickly and efficiently. Designed for high-performance data analytics at scale, Redshift empowers businesses to derive meaningful insights from petabytes of structured and semi-structured data.",
-    "features": [
-      "Machine learning–based query optimization.",
-      "Integrates with AWS Data Lake and BI tools like QuickSight and Tableau.",
-      "Columnar storage and massively parallel processing (MPP) for performance."
-    ]
-  },
-  {
-    "title": "Amazon QuickSight",
-    "subtitle": "",
-    "description": "Amazon QuickSight is a fast, cloud-powered Business Intelligence (BI) service that enables you to create and publish interactive dashboards, perform ad-hoc analysis, and gain real-time insights at scale. As a fully managed BI tool, QuickSight delivers AI-powered analytics without the complexity of traditional on-premise BI solutions.",
-    "features": [
-      "Supports ML-powered insights and anomaly detection.",
-      "“Q” natural language querying for non-technical users.",
-      "Scales automatically with user demand."
-    ]
-  },
-  {
-    "title": "AWS Glue",
-    "subtitle": "",
-    "description": "AWS Glue is a fully managed serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development. Whether you're processing structured or unstructured data, AWS Glue provides a fast, cost-effective, and scalable way to build data pipelines and transform raw data into valuable insights.",
-    "features": [
-      "Auto-generates ETL code using Python or Scala.",
-      "Integrated data catalog for easy discovery and management.",
-      "Serverless architecture simplifies data integration."
-    ]
-  },
-  {
-    "title": "Amazon Kinesis",
-    "subtitle": "",
-    "description": "Amazon Kinesis is a fully managed, scalable, and real-time data streaming service that allows you to collect, process, and analyze streaming data such as logs, IoT sensor data, application telemetry, and clickstreams. It enables organizations to react to new information in milliseconds and make data-driven decisions faster.",
-    "features": [
-      "Supports processing of gigabytes of data per second.",
-      "Real-time analytics on data such as logs, events, and sensor input.",
-      "Integration with AWS Lambda, Redshift, and Elasticsearch."
-    ]
-  },
-  {
-    "title": "Amazon EMR (Elastic MapReduce)",
-    "subtitle": "",
-    "description": "Amazon EMR is a cloud-native big data platform that enables fast, cost-effective processing of massive amounts of data using open-source tools like Apache Hadoop, Apache Spark, Presto, Hive, and more. It simplifies running big data frameworks at scale and eliminates the need to manage complex infrastructure.",
-    "features": [
-      "Quickly scale clusters up/down to reduce costs.",
-      "Supports custom workloads like machine learning, genomics, and financial modeling.",
-      "Deep integration with S3, DynamoDB, and AWS Glue."
-    ]
-  },
-  {
-    "title": "Amazon OpenSearch Service",
-    "subtitle": "",
-    "description": "Amazon OpenSearch Service (formerly Elasticsearch) is a fully managed service that makes it easy to deploy, operate, and scale OpenSearch and Elasticsearch clusters on AWS. Designed for real-time search, log analytics, and observability, it enables organizations to ingest, analyze, and visualize data from various sources with high performance and minimal operational overhead.",
-    "features": [
-      "Powerful Kibana-based dashboards.",
-      "Scalable architecture with near real-time indexing and querying.",
-      "Ideal for observability: metrics, logs, traces."
-    ]
-  }
-],
-
+    "servicesData": [
+      {
+        "title": "Amazon Athena",
+        "subtitle": "",
+        "description": "Amazon Athena is a powerful, serverless query service from AWS that enables you to analyze vast amounts of data directly in Amazon S3 using standard SQL. With no infrastructure to manage, Athena allows data analysts, data scientists, and engineers to query structured, semi-structured, and unstructured data quickly and cost-effectively.",
+        "features": [
+          "No infrastructure to manage.",
+          "Pay-per-query model – cost-effective for ad-hoc analysis.",
+          "Supports a wide range of file formats (CSV, JSON, ORC, Parquet)."
+        ]
+      },
+      {
+        "title": "Amazon Redshift",
+        "subtitle": "",
+        "description": "Amazon Redshift is a fully managed, cloud-based data warehouse that helps you to run complex analytical queries on large datasets quickly and efficiently. Designed for high-performance data analytics at scale, Redshift empowers businesses to derive meaningful insights from petabytes of structured and semi-structured data.",
+        "features": [
+          "Machine learning–based query optimization.",
+          "Integrates with AWS Data Lake and BI tools like QuickSight and Tableau.",
+          "Columnar storage and massively parallel processing (MPP) for performance."
+        ]
+      },
+      {
+        "title": "Amazon QuickSight",
+        "subtitle": "",
+        "description": "Amazon QuickSight is a fast, cloud-powered Business Intelligence (BI) service that enables you to create and publish interactive dashboards, perform ad-hoc analysis, and gain real-time insights at scale. As a fully managed BI tool, QuickSight delivers AI-powered analytics without the complexity of traditional on-premise BI solutions.",
+        "features": [
+          "Supports ML-powered insights and anomaly detection.",
+          "“Q” natural language querying for non-technical users.",
+          "Scales automatically with user demand."
+        ]
+      },
+      {
+        "title": "AWS Glue",
+        "subtitle": "",
+        "description": "AWS Glue is a fully managed serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development. Whether you're processing structured or unstructured data, AWS Glue provides a fast, cost-effective, and scalable way to build data pipelines and transform raw data into valuable insights.",
+        "features": [
+          "Auto-generates ETL code using Python or Scala.",
+          "Integrated data catalog for easy discovery and management.",
+          "Serverless architecture simplifies data integration."
+        ]
+      },
+      {
+        "title": "Amazon Kinesis",
+        "subtitle": "",
+        "description": "Amazon Kinesis is a fully managed, scalable, and real-time data streaming service that allows you to collect, process, and analyze streaming data such as logs, IoT sensor data, application telemetry, and clickstreams. It enables organizations to react to new information in milliseconds and make data-driven decisions faster.",
+        "features": [
+          "Supports processing of gigabytes of data per second.",
+          "Real-time analytics on data such as logs, events, and sensor input.",
+          "Integration with AWS Lambda, Redshift, and Elasticsearch."
+        ]
+      },
+      {
+        "title": "Amazon EMR (Elastic MapReduce)",
+        "subtitle": "",
+        "description": "Amazon EMR is a cloud-native big data platform that enables fast, cost-effective processing of massive amounts of data using open-source tools like Apache Hadoop, Apache Spark, Presto, Hive, and more. It simplifies running big data frameworks at scale and eliminates the need to manage complex infrastructure.",
+        "features": [
+          "Quickly scale clusters up/down to reduce costs.",
+          "Supports custom workloads like machine learning, genomics, and financial modeling.",
+          "Deep integration with S3, DynamoDB, and AWS Glue."
+        ]
+      },
+      {
+        "title": "Amazon OpenSearch Service",
+        "subtitle": "",
+        "description": "Amazon OpenSearch Service (formerly Elasticsearch) is a fully managed service that makes it easy to deploy, operate, and scale OpenSearch and Elasticsearch clusters on AWS. Designed for real-time search, log analytics, and observability, it enables organizations to ingest, analyze, and visualize data from various sources with high performance and minimal operational overhead.",
+        "features": [
+          "Powerful Kibana-based dashboards.",
+          "Scalable architecture with near real-time indexing and querying.",
+          "Ideal for observability: metrics, logs, traces."
+        ]
+      }
+    ],
     "AppService": [
       {
         "num": "01",
@@ -551,37 +545,67 @@
         "num": "01",
         "title": "Robotic Process Automation",
         "decs": "We offer robotic process automation (RPA) services that streamline repetitive tasks and reduce manual errors. By integrating AI with RPA, we help businesses automate complex workflows, increase productivity, and reduce operational costs, freeing up valuable resources for higher-value work.",
-        "list": ["Automates repetitive and rule-based tasks.", "Reduces manual errors and enhances efficiency.", "Seamless AI integration for intelligent automation" , "Lowers operational costs and improves productivity."]
+        "list": [
+          "Automates repetitive and rule-based tasks.",
+          "Reduces manual errors and enhances efficiency.",
+          "Seamless AI integration for intelligent automation",
+          "Lowers operational costs and improves productivity."
+        ]
       },
       {
         "num": "02",
         "title": "Deep Learning",
         "decs": "Our AI engineers specialize in deep learning solutions that unlock the potential of advanced neural networks to solve complex business challenges. By leveraging cutting-edge deep learning techniques, we help businesses analyze vast datasets, make accurate predictions, and enhance decision-making processes for long-term success.",
-        "list": ["Advanced neural network-based AI solutions.", "Accurate data-driven predictions and insights.", "Scalable deep learning models for various industries." , "Enhanced pattern recognition and decision-making."]
+        "list": [
+          "Advanced neural network-based AI solutions.",
+          "Accurate data-driven predictions and insights.",
+          "Scalable deep learning models for various industries.",
+          "Enhanced pattern recognition and decision-making."
+        ]
       },
       {
         "num": "03",
         "title": "Digital Virtual Assistants",
         "decs": "As a leading AI application development company in India, we design and develop AI-powered digital virtual assistants to enhance customer support and improve operational efficiency. Our intelligent virtual assistants efficiently handle tasks such as answering queries and processing requests, ensuring seamless interactions and an enhanced user experience.",
-        "list": ["AI-powered assistants for customer support.", "Automated query handling and request processing.", "Seamless multi-platform integration." , "Personalized and human-like interactions."]
+        "list": [
+          "AI-powered assistants for customer support.",
+          "Automated query handling and request processing.",
+          "Seamless multi-platform integration.",
+          "Personalized and human-like interactions."
+        ]
       },
       {
         "num": "04",
         "title": "Computer Vision Development",
         "decs": "Unlock the potential of visual data with our AI computer vision development service solutions. We create Artificial intelligence application systems that can analyze and interpret images and videos for applications like facial recognition, object detection, and quality control. Our best AI development services solutions help you automate visual tasks and gain deeper insights from your data.",
-        "list": ["AI-based facial recognition and object detection.", "Automated image and video analysis.", "Quality control and defect detection systems." , "Real-time monitoring and surveillance solutions."]
+        "list": [
+          "AI-based facial recognition and object detection.",
+          "Automated image and video analysis.",
+          "Quality control and defect detection systems.",
+          "Real-time monitoring and surveillance solutions."
+        ]
       },
       {
         "num": "05",
         "title": "Natural Language Processing (NLP) Solutions",
         "decs": "Our NLP development solutions will transform the way you interact with data and customers. The purpose of our work is to build artificial intelligence systems that can understand, analyze, and generate human language. Your customer engagement can be improved with AI chatbots, sentiment analysis, and language translation.",
-        "list": ["AI-powered chatbot development for seamless customer interaction.", "Sentiment analysis and language understanding.", "Automated text summarization and keyword extraction." , "Language translation for global reach."]
+        "list": [
+          "AI-powered chatbot development for seamless customer interaction.",
+          "Sentiment analysis and language understanding.",
+          "Automated text summarization and keyword extraction.",
+          "Language translation for global reach."
+        ]
       },
       {
         "num": "06",
         "title": "Machine Learning Development",
         "decs": "Leverage the power of machine learning to solve complex business challenges. We build and train custom Machine Learning models that analyze data, uncover patterns, and deliver actionable insights. From recommendation engines to fraud detection systems, our custom ML software development service solutions empower your enterprise business to make smarter decisions.",
-        "list": ["Custom machine learning model development.", "Data-driven insights for smarter decision-making.", "Fraud detection and anomaly recognition." , "Automated pattern recognition and trend analysis."]
+        "list": [
+          "Custom machine learning model development.",
+          "Data-driven insights for smarter decision-making.",
+          "Fraud detection and anomaly recognition.",
+          "Automated pattern recognition and trend analysis."
+        ]
       }
     ],
     "Process": [
@@ -646,6 +670,118 @@
         "num": "03",
         "title": "Time-Bound Contracts",
         "decs": "The time-bound contracts for hiring our social media app developer team can help you use our expertise for working on long-term projects with excellence in services."
+      }
+    ],
+    "jsonLdData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AWS Analytics Services",
+        "provider": {
+          "@type": "Organization",
+          "name": "Comfygen Technologies",
+          "url": "https://www.comfygen.com/"
+        },
+        "description": "Custom AWS analytics solutions using Redshift, Glue, Kinesis, Athena, QuickSight, and more. Real-time, secure, and scalable.",
+        "url": "https://www.comfygen.com/data/aws-analytics-services",
+        "mainEntityOfPage": "https://www.comfygen.com/data/aws-analytics-services",
+        "areaServed": "Global",
+        "serviceType": [
+          "Data Engineering on AWS",
+          "Real-Time Analytics",
+          "Cloud Data Warehousing",
+          "BI Dashboard Development",
+          "ETL Pipeline Automation"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/comfygen.technologies",
+          "https://x.com/Comfygen_Tech",
+          "https://www.instagram.com/comfygen_technologies",
+          "https://www.linkedin.com/company/comfygen-technologies"
+        ]
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Product",
+        "brand": "Comfygen Technologies",
+        "Name": "AWS Analytics Services | Real-Time Data Insights with Comfygen",
+        "image": "https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp",
+        "description": "Unlock actionable insights with AWS Analytics Services. From Redshift to Glue and Kinesis, we build custom, scalable solutions for real-time data performance.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "115"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are AWS analytics services, and how can they help my business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AWS offers a wide range of analytics tools that help you collect, store, process, and analyze data at scale. These services can help you make faster decisions, improve operations, and unlock insights from structured and unstructured data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which AWS analytics tools do you use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We use a tailored mix based on your needs — including Amazon Redshift, AWS Glue, Athena, Kinesis, QuickSight, EMR, and Lake Formation. We design the right stack for your performance, security, and cost requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AWS analytics services work with my existing systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. AWS integrates with most CRMs, ERPs, databases (like MySQL, PostgreSQL, SQL Server), APIs, flat files, and even on-premise systems. We handle the full data integration process."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to implement an AWS analytics solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That depends on the scope, but most MVP setups take 3 to 6 weeks. Complex, enterprise-grade solutions with multiple data sources can take 2–3 months. We provide a clear timeline upfront."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data secure in AWS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. AWS is built with strong security features, including encryption, IAM, VPC, and compliance with standards like GDPR, HIPAA, and SOC 2. We also add custom security layers and access controls for extra protection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle ongoing support and optimization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer post-launch support, performance tuning, cost optimization, and can scale your system as your data grows. You can choose between a fixed support package or on-demand hours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need in-house data experts to use AWS analytics services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. We build systems that are easy to manage, and we offer training for your team. We can also handle everything end-to-end if you want a fully managed solution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do AWS analytics services cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There’s no fixed price — AWS follows a pay-as-you-go model. We help you choose cost-effective services and optimize usage to avoid waste. We also set up budget alerts and forecasting tools."
+            }
+          }
+        ]
       }
     ]
   }

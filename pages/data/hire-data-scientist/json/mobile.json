@@ -32,8 +32,7 @@
         "text": "“The fraud detection system developed by Comfygen has been a lifesaver for our business. We’ve seen a 25% reduction in fraud cases, and our customers feel more secure. Their solutions are top-notch and delivered on time.”",
         "name": "Michael",
         "title": "CEO"
-      }
-      ,
+      },
       {
         "text": "“Comfygen’s predictive maintenance solution transformed our operations. We’ve reduced downtime by 40% and saved 20% in maintenance costs. Their team is highly skilled and a pleasure to work with.”",
         "name": "Robert",
@@ -189,62 +188,224 @@
         "desc": "Our social media app developer team also pays attention to integration of privacy controls in your social apps. The privacy controls involve stronger authentication mechanisms and additional layers of security to ensure safety of users. We understand the importance of privacy and security for enhancing the popularity of social media apps and follow the best practices for safeguarding users."
       }
     ],
-
-
- "TechData" :{
-    "Data Storage": [
-      { "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg", "alt": "Hadoop", "name": "Hadoop", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg", "alt": "Amazon S3 ", "name": "Amazon S3 ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg", "alt": "Microsoft Azure Data Lake", "name": "Microsoft Azure Data Lake ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "4" }
+    "TechData": {
+      "Data Storage": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg",
+          "alt": "Amazon S3 ",
+          "name": "Amazon S3 ",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg",
+          "alt": "Microsoft Azure Data Lake",
+          "name": "Microsoft Azure Data Lake ",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg",
+          "alt": "Google BigQuery",
+          "name": "Google BigQuery",
+          "num": "4"
+        }
+      ],
+      "Data Processing": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg",
+          "alt": "Apache Spark",
+          "name": "Apache Spark ",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg",
+          "alt": "Talend",
+          "name": "Talend ",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg",
+          "alt": "Informatica PowerCenter",
+          "name": "Informatica PowerCenter ",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg",
+          "alt": "Apache NiFi",
+          "name": " Apache NiFi",
+          "num": "4"
+        }
+      ],
+      "Machine Learning/AI": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg",
+          "alt": "TenserFlow",
+          "name": "TenserFlow ",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg",
+          "alt": "Scikit-Learn",
+          "name": "Scikit-Learn ",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg",
+          "alt": "PyTorch",
+          "name": "PyTorch ",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg",
+          "alt": "Microsoft Azure Machine Learning",
+          "name": "Microsoft Azure Machine Learning",
+          "num": "4"
+        }
+      ],
+      "Visualization Tools ": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg",
+          "alt": "Tableau",
+          "name": "Tableau",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg",
+          "alt": "Power BI",
+          "name": "Power BI",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg",
+          "alt": "Looker",
+          "name": "Looker ",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg",
+          "alt": "QlikView",
+          "name": "QlikView",
+          "num": "4"
+        }
+      ],
+      "Database Management": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg",
+          "alt": "Oracle Database",
+          "name": "Oracle Database",
+          "num": "4"
+        }
+      ],
+      "Data Warehousing": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg",
+          "alt": "Amazon Redshift",
+          "name": "Amazon Redshift",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg",
+          "alt": "Snowflake",
+          "name": "Snowflake",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg",
+          "alt": "Google BigQuery",
+          "name": "Google BigQuery",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg",
+          "alt": "Microsoft Azure Synapse Analytics",
+          "name": "Microsoft Azure Synapse Analytics",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg",
+          "alt": "SAS",
+          "name": "SAS",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg",
+          "alt": "MATLAB",
+          "name": "MATLAB",
+          "num": "6"
+        }
+      ],
+      "Cloud Platforms": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg",
+          "alt": "Amazon Web Services (AWS)",
+          "name": "Amazon Web Services (AWS)",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg",
+          "alt": "Google Cloud Platform (GCP)",
+          "name": "Google Cloud Platform (GCP)",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg",
+          "alt": "IBM Cloud",
+          "name": "IBM Cloud ",
+          "num": "4"
+        }
+      ]
+    },
+    "defaultTestimonials": [
+      {
+        "text": "Hiring data scientists from Comfygen transformed the way we make decisions. Their team helped us analyze complex sales and inventory data, uncovering insights that increased our operational efficiency by 25%.",
+        "name": "Jessica Moore",
+        "title": "Texas, USA"
+      },
+      {
+        "text": "Comfygen’s data science services helped us leverage patient data for better forecasting and operational planning. Their insights improved resource allocation and patient care outcomes significantly.",
+        "name": "Michael Chen",
+        "title": "California, USA"
+      },
+      {
+        "text": "The Comfygen data science team was instrumental in building predictive models for customer behavior. Their expertise allowed us to launch personalized campaigns that drove revenue growth and improved customer retention.",
+        "name": "Sarah Johnson",
+        "title": "New York, USA"
+      },
+      {
+        "text": "Working with Comfygen’s data scientists was seamless. They turned messy, unstructured data into actionable reports and dashboards, helping us optimize our marketing spend and target the right audience.",
+        "name": "David Williams",
+        "title": "Florida, USA"
+      }
     ],
-    "Data Processing": [
-      { "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg", "alt": "Apache Spark", "name": "Apache Spark ", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg", "alt": "Talend", "name": "Talend ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg", "alt": "Informatica PowerCenter", "name": "Informatica PowerCenter ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg", "alt": "Apache NiFi", "name": " Apache NiFi", "num": "4" }
-    ],
-    "Machine Learning/AI": [
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg", "alt": "TenserFlow", "name": "TenserFlow ", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg", "alt": "Scikit-Learn", "name": "Scikit-Learn ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg", "alt": "PyTorch", "name": "PyTorch ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg", "alt": "Microsoft Azure Machine Learning", "name": "Microsoft Azure Machine Learning", "num": "4" }
-    ],
-    "Visualization Tools ": [
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg", "alt": "Tableau", "name": "Tableau", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg", "alt": "Power BI", "name": "Power BI", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg", "alt": "Looker", "name": "Looker ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg", "alt": "QlikView", "name": "QlikView", "num": "4" }
-    ],
-    "Database Management":[
-      { "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg", "alt": "MySQL", "name": "MySQL", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg", "alt": "PostgreSQL", "name": "PostgreSQL", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg", "alt": "MongoDB", "name": "MongoDB", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg", "alt": "Oracle Database", "name": "Oracle Database", "num": "4" }
-    ],
-    "Data Warehousing":[
-      { "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg", "alt": "Amazon Redshift", "name": "Amazon Redshift", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg", "alt": "Snowflake", "name": "Snowflake", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg", "alt": "Microsoft Azure Synapse Analytics", "name": "Microsoft Azure Synapse Analytics", "num": "4" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg", "alt": "SAS", "name": "SAS", "num": "5" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg", "alt": "MATLAB", "name": "MATLAB", "num": "6" }
-    ],
-    "Cloud Platforms":[
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg", "alt": "Amazon Web Services (AWS)", "name": "Amazon Web Services (AWS)", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg", "alt": "Microsoft Azure", "name": "Microsoft Azure", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg", "alt": "Google Cloud Platform (GCP)", "name": "Google Cloud Platform (GCP)", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg", "alt": "IBM Cloud", "name": "IBM Cloud ", "num": "4" }
-    ]
-  },
- 
-
-
-
-
-
-
-
     "Frequently": [
       {
         "num": "1",
@@ -292,7 +453,6 @@
         "desc": "Yes. This is a smart move for companies that need insights without full-time commitment. Part-time consultants can build models, review data strategies, or optimize analytics in focused sprints."
       }
     ],
-    
     "consultancyHead": [
       {
         "num": "1",
@@ -345,39 +505,39 @@
       }
     ],
     "consultancyData": [
-    {
-      "title": "Machine Learning Algorithms",
-      "desc": "Our experts prepare structured data and apply algorithms, including decision trees, random forests, support vector machines, linear and logistic regression, and KNN, to build reliable machine learning models. Whether you're looking to hire data science machine learning engineer for customer segmentation or fraud detection, we tailor the approach to your unique requirements."
-    },
-    {
-      "title": "Deep Learning",
-      "desc": "From image classification to speech recognition, our data scientists use neural networks, CNNs, RNNs, and other deep learning techniques to find complex patterns in data. Businesses hire <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >AI developers</a> from us to solve high-impact problems using deep learning in areas like medical diagnostics, recommendation engines, and autonomous systems."
-    },
-    {
-      "title": "Supervised Learning",
-      "desc": "We train ML models using labelled datasets to predict outcomes and classify inputs with high accuracy. Our team focuses on selecting the right model architecture, optimizing loss functions, applying effective training strategies, and using robust validation techniques to ensure accurate and generalizable learning outcomes."
-    },
-    {
-      "title": "Unsupervised Learning",
-      "desc": "Our data science developers use unsupervised learning to find patterns and groupings in unlabeled data. By applying clustering and dimensionality reduction techniques, we turn complex data into actionable insights without relying on predefined labels."
-    },
-    {
-      "title": "Transfer Learning",
-      "desc": "We leverage transfer learning to accelerate model training by applying knowledge from pre-trained models to new, domain-specific tasks. This approach enhances accuracy, reduces data requirements, and accelerates deployment, particularly in applications such as image recognition, NLP, and predictive analytics."
-    },
-    {
-      "title": "Reinforcement Learning",
-      "desc": "Reinforcement learning is a feedback-based training method in which models learn optimal actions through the combination of rewards and penalties. Our data science developers implement algorithms like Q-learning and policy gradients to build systems that adapt and improve with continuous interaction."
-    },
-    {
-      "title": "Natural Language Processing (NLP)",
-      "desc": "NLP enables machines to understand, interpret, and generate human language. Our data scientists build language models, perform text classification, sentiment analysis, and entity recognition using advanced techniques such as tokenisation, vector embeddings, etc., transforming unstructured text data into valuable business insights."
-    },
-    {
-      "title": "Computer Vision",
-      "desc": "Our data scientists apply advanced computer vision techniques such as convolutional neural networks (CNNs), image augmentation, etc., to extract meaningful patterns from visual data. We focus on optimising model architectures, tuning training pipelines, and ensuring high accuracy in image-based learning tasks."
-    }
-  ],
+      {
+        "title": "Machine Learning Algorithms",
+        "desc": "Our experts prepare structured data and apply algorithms, including decision trees, random forests, support vector machines, linear and logistic regression, and KNN, to build reliable machine learning models. Whether you're looking to hire data science machine learning engineer for customer segmentation or fraud detection, we tailor the approach to your unique requirements."
+      },
+      {
+        "title": "Deep Learning",
+        "desc": "From image classification to speech recognition, our data scientists use neural networks, CNNs, RNNs, and other deep learning techniques to find complex patterns in data. Businesses hire <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >AI developers</a> from us to solve high-impact problems using deep learning in areas like medical diagnostics, recommendation engines, and autonomous systems."
+      },
+      {
+        "title": "Supervised Learning",
+        "desc": "We train ML models using labelled datasets to predict outcomes and classify inputs with high accuracy. Our team focuses on selecting the right model architecture, optimizing loss functions, applying effective training strategies, and using robust validation techniques to ensure accurate and generalizable learning outcomes."
+      },
+      {
+        "title": "Unsupervised Learning",
+        "desc": "Our data science developers use unsupervised learning to find patterns and groupings in unlabeled data. By applying clustering and dimensionality reduction techniques, we turn complex data into actionable insights without relying on predefined labels."
+      },
+      {
+        "title": "Transfer Learning",
+        "desc": "We leverage transfer learning to accelerate model training by applying knowledge from pre-trained models to new, domain-specific tasks. This approach enhances accuracy, reduces data requirements, and accelerates deployment, particularly in applications such as image recognition, NLP, and predictive analytics."
+      },
+      {
+        "title": "Reinforcement Learning",
+        "desc": "Reinforcement learning is a feedback-based training method in which models learn optimal actions through the combination of rewards and penalties. Our data science developers implement algorithms like Q-learning and policy gradients to build systems that adapt and improve with continuous interaction."
+      },
+      {
+        "title": "Natural Language Processing (NLP)",
+        "desc": "NLP enables machines to understand, interpret, and generate human language. Our data scientists build language models, perform text classification, sentiment analysis, and entity recognition using advanced techniques such as tokenisation, vector embeddings, etc., transforming unstructured text data into valuable business insights."
+      },
+      {
+        "title": "Computer Vision",
+        "desc": "Our data scientists apply advanced computer vision techniques such as convolutional neural networks (CNNs), image augmentation, etc., to extract meaningful patterns from visual data. We focus on optimising model architectures, tuning training pipelines, and ensuring high accuracy in image-based learning tasks."
+      }
+    ],
     "pageData": {
       "title": "Reasons to Hire Data Scientist from Comfygen",
       "description": "Looking for reliable, skilled, and scalable data science and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >data analytic</a> s talent? Hire data science developer from Comfygen. AT Comfygen, we combine technical excellence with transparent processes to deliver measurable results on time and within budget. Here is why you should work with us:",
@@ -419,55 +579,53 @@
         }
       ]
     },
-
     "servicesData": [
-  {
-    "title": "Data Architecture Consulting",
-    "subtitle": "",
-    "description": "We help you assess and redesign your existing data architecture to make it scalable, secure, and analytics-ready. From selecting the right platform to optimising your data flow, our goal is to lay a strong foundation for your analytics and AI efforts. Whether you're looking to hire data scientist or hire freelance data science developer, our team ensures you are prepared for success from day one."
-  },
-  {
-    "title": "Data Collection and Aggregation",
-    "subtitle": "",
-    "description": "We collect data from multiple sources, including databases, APIs, third-party platforms, and raw files, and aggregate it into a centralised, well-structured format. Our data scientists ensure the accuracy, consistency, and completeness of the data, making it usable for further processing. This unified dataset forms the basis for reliable insights, enabling teams to make informed, data-driven decisions."
-  },
-  {
-    "title": "Data Preparation",
-    "subtitle": "",
-    "description": "We validate, clean, and transform raw data to ensure it meets quality and consistency standards. Our data scientists handle tasks such as imputing missing values, detecting outliers, and normalising data. We also perform feature extraction and engineering to enrich the dataset. This rigorous process reduces errors and makes future analysis more reliable."
-  },
-  {
-    "title": "Data Annotation",
-    "subtitle": "",
-    "description": "We label and tag raw data, such as images, text, or videos, to make it understandable for machine learning models. Our team ensures each data point is accurately annotated based on project-specific requirements. This step is crucial for training supervised learning models and improving prediction accuracy."
-  },
-  {
-    "title": "Data Modelling",
-    "subtitle": "",
-    "description": "We build machine learning and statistical models to uncover patterns, predict outcomes, and support intelligent decision-making. From solving classification and regression problems to uncovering trends through clustering, our data scientists tailor each model to your unique business needs. Hire a data scientist to develop scalable, production-ready models using industry-standard tools and techniques."
-  },
-  {
-    "title": "Data Warehousing",
-    "subtitle": "",
-    "description": "Our Data Science Developer helps you build and manage reliable data warehousing systems that centralise information from diverse sources into a unified, query-optimised environment. From designing data schemas to supporting ETL processes, they ensure your warehouse data storage is efficient and has high-speed performance. Hire data scientist to turn your fragmented datasets into a secure, structured, and analytics-ready repository."
-  },
-  {
-    "title": "Machine Learning Model Development",
-    "subtitle": "",
-    "description": "Hire a Data Science Developer to develop robust machine learning models from the ground up. They handle the entire lifecycle - from data pre-processing and feature engineering to algorithm selection, model training, tuning, and validation. Whether you're building predictive models, recommendation engines, or risk assessment tools, we deliver well-documented, production-ready solutions tailored to your business objectives."
-  },
-  {
-    "title": "ML Model Evaluation and Optimisation",
-    "subtitle": "",
-    "description": "Our expert data scientists rigorously evaluate machine learning models using industry-standard metrics to assess performance, detect bias, and identify weaknesses. Through iterative tuning, hyperparameter optimisation, and error analysis, we enhance model accuracy, stability, and generalisation. Whether you're refining an existing solution or scaling it for production, we ensure your models deliver actionable and reliable results."
-  },
-  {
-    "title": "Statistical Modelling and Insights",
-    "subtitle": "",
-    "description": "Our data scientists utilise advanced statistical models to uncover patterns, relationships, and trends that are hidden in your data. From hypothesis testing to regression analysis, we turn complex datasets into actionable business insights. By hiring a data science expert, you gain the ability to make accurate decisions grounded in quantitative evidence and predictive accuracy."
-  }
-],
-
+      {
+        "title": "Data Architecture Consulting",
+        "subtitle": "",
+        "description": "We help you assess and redesign your existing data architecture to make it scalable, secure, and analytics-ready. From selecting the right platform to optimising your data flow, our goal is to lay a strong foundation for your analytics and AI efforts. Whether you're looking to hire data scientist or hire freelance data science developer, our team ensures you are prepared for success from day one."
+      },
+      {
+        "title": "Data Collection and Aggregation",
+        "subtitle": "",
+        "description": "We collect data from multiple sources, including databases, APIs, third-party platforms, and raw files, and aggregate it into a centralised, well-structured format. Our data scientists ensure the accuracy, consistency, and completeness of the data, making it usable for further processing. This unified dataset forms the basis for reliable insights, enabling teams to make informed, data-driven decisions."
+      },
+      {
+        "title": "Data Preparation",
+        "subtitle": "",
+        "description": "We validate, clean, and transform raw data to ensure it meets quality and consistency standards. Our data scientists handle tasks such as imputing missing values, detecting outliers, and normalising data. We also perform feature extraction and engineering to enrich the dataset. This rigorous process reduces errors and makes future analysis more reliable."
+      },
+      {
+        "title": "Data Annotation",
+        "subtitle": "",
+        "description": "We label and tag raw data, such as images, text, or videos, to make it understandable for machine learning models. Our team ensures each data point is accurately annotated based on project-specific requirements. This step is crucial for training supervised learning models and improving prediction accuracy."
+      },
+      {
+        "title": "Data Modelling",
+        "subtitle": "",
+        "description": "We build machine learning and statistical models to uncover patterns, predict outcomes, and support intelligent decision-making. From solving classification and regression problems to uncovering trends through clustering, our data scientists tailor each model to your unique business needs. Hire a data scientist to develop scalable, production-ready models using industry-standard tools and techniques."
+      },
+      {
+        "title": "Data Warehousing",
+        "subtitle": "",
+        "description": "Our Data Science Developer helps you build and manage reliable data warehousing systems that centralise information from diverse sources into a unified, query-optimised environment. From designing data schemas to supporting ETL processes, they ensure your warehouse data storage is efficient and has high-speed performance. Hire data scientist to turn your fragmented datasets into a secure, structured, and analytics-ready repository."
+      },
+      {
+        "title": "Machine Learning Model Development",
+        "subtitle": "",
+        "description": "Hire a Data Science Developer to develop robust machine learning models from the ground up. They handle the entire lifecycle - from data pre-processing and feature engineering to algorithm selection, model training, tuning, and validation. Whether you're building predictive models, recommendation engines, or risk assessment tools, we deliver well-documented, production-ready solutions tailored to your business objectives."
+      },
+      {
+        "title": "ML Model Evaluation and Optimisation",
+        "subtitle": "",
+        "description": "Our expert data scientists rigorously evaluate machine learning models using industry-standard metrics to assess performance, detect bias, and identify weaknesses. Through iterative tuning, hyperparameter optimisation, and error analysis, we enhance model accuracy, stability, and generalisation. Whether you're refining an existing solution or scaling it for production, we ensure your models deliver actionable and reliable results."
+      },
+      {
+        "title": "Statistical Modelling and Insights",
+        "subtitle": "",
+        "description": "Our data scientists utilise advanced statistical models to uncover patterns, relationships, and trends that are hidden in your data. From hypothesis testing to regression analysis, we turn complex datasets into actionable business insights. By hiring a data science expert, you gain the ability to make accurate decisions grounded in quantitative evidence and predictive accuracy."
+      }
+    ],
     "AppService": [
       {
         "num": "01",
@@ -593,37 +751,67 @@
         "num": "01",
         "title": "Robotic Process Automation",
         "decs": "We offer robotic process automation (RPA) services that streamline repetitive tasks and reduce manual errors. By integrating AI with RPA, we help businesses automate complex workflows, increase productivity, and reduce operational costs, freeing up valuable resources for higher-value work.",
-        "list": ["Automates repetitive and rule-based tasks.", "Reduces manual errors and enhances efficiency.", "Seamless AI integration for intelligent automation" , "Lowers operational costs and improves productivity."]
+        "list": [
+          "Automates repetitive and rule-based tasks.",
+          "Reduces manual errors and enhances efficiency.",
+          "Seamless AI integration for intelligent automation",
+          "Lowers operational costs and improves productivity."
+        ]
       },
       {
         "num": "02",
         "title": "Deep Learning",
         "decs": "Our AI engineers specialize in deep learning solutions that unlock the potential of advanced neural networks to solve complex business challenges. By leveraging cutting-edge deep learning techniques, we help businesses analyze vast datasets, make accurate predictions, and enhance decision-making processes for long-term success.",
-        "list": ["Advanced neural network-based AI solutions.", "Accurate data-driven predictions and insights.", "Scalable deep learning models for various industries." , "Enhanced pattern recognition and decision-making."]
+        "list": [
+          "Advanced neural network-based AI solutions.",
+          "Accurate data-driven predictions and insights.",
+          "Scalable deep learning models for various industries.",
+          "Enhanced pattern recognition and decision-making."
+        ]
       },
       {
         "num": "03",
         "title": "Digital Virtual Assistants",
         "decs": "As a leading AI application development company in India, we design and develop AI-powered digital virtual assistants to enhance customer support and improve operational efficiency. Our intelligent virtual assistants efficiently handle tasks such as answering queries and processing requests, ensuring seamless interactions and an enhanced user experience.",
-        "list": ["AI-powered assistants for customer support.", "Automated query handling and request processing.", "Seamless multi-platform integration." , "Personalized and human-like interactions."]
+        "list": [
+          "AI-powered assistants for customer support.",
+          "Automated query handling and request processing.",
+          "Seamless multi-platform integration.",
+          "Personalized and human-like interactions."
+        ]
       },
       {
         "num": "04",
         "title": "Computer Vision Development",
         "decs": "Unlock the potential of visual data with our AI computer vision development service solutions. We create Artificial intelligence application systems that can analyze and interpret images and videos for applications like facial recognition, object detection, and quality control. Our best AI development services solutions help you automate visual tasks and gain deeper insights from your data.",
-        "list": ["AI-based facial recognition and object detection.", "Automated image and video analysis.", "Quality control and defect detection systems." , "Real-time monitoring and surveillance solutions."]
+        "list": [
+          "AI-based facial recognition and object detection.",
+          "Automated image and video analysis.",
+          "Quality control and defect detection systems.",
+          "Real-time monitoring and surveillance solutions."
+        ]
       },
       {
         "num": "05",
         "title": "Natural Language Processing (NLP) Solutions",
         "decs": "Our NLP development solutions will transform the way you interact with data and customers. The purpose of our work is to build artificial intelligence systems that can understand, analyze, and generate human language. Your customer engagement can be improved with AI chatbots, sentiment analysis, and language translation.",
-        "list": ["AI-powered chatbot development for seamless customer interaction.", "Sentiment analysis and language understanding.", "Automated text summarization and keyword extraction." , "Language translation for global reach."]
+        "list": [
+          "AI-powered chatbot development for seamless customer interaction.",
+          "Sentiment analysis and language understanding.",
+          "Automated text summarization and keyword extraction.",
+          "Language translation for global reach."
+        ]
       },
       {
         "num": "06",
         "title": "Machine Learning Development",
         "decs": "Leverage the power of machine learning to solve complex business challenges. We build and train custom Machine Learning models that analyze data, uncover patterns, and deliver actionable insights. From recommendation engines to fraud detection systems, our custom ML software development service solutions empower your enterprise business to make smarter decisions.",
-        "list": ["Custom machine learning model development.", "Data-driven insights for smarter decision-making.", "Fraud detection and anomaly recognition." , "Automated pattern recognition and trend analysis."]
+        "list": [
+          "Custom machine learning model development.",
+          "Data-driven insights for smarter decision-making.",
+          "Fraud detection and anomaly recognition.",
+          "Automated pattern recognition and trend analysis."
+        ]
       }
     ],
     "Process": [
@@ -688,6 +876,158 @@
         "num": "03",
         "title": "Time-Bound Contracts",
         "decs": "The time-bound contracts for hiring our social media app developer team can help you use our expertise for working on long-term projects with excellence in services."
+      }
+    ],
+    "jsonLdData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Hire data scientist",
+        "provider": {
+          "@type": "Organization",
+          "name": "Comfygen Technologies",
+          "url": "https://www.comfygen.com/"
+        },
+        "description": "Hire data scientist and data science developer for your next project. Comfygen helps you develop a future-ready, data-driven team. Hire now!",
+        "url": "https://www.comfygen.com/data/hire-data-scientist",
+        "mainEntityOfPage": "https://www.comfygen.com/data/hire-data-scientist",
+        "areaServed": "Global",
+        "serviceType": [
+          "Hire Data Science Developer",
+          "Hire Data Scientist",
+          "Hire Machine Learning Engineer",
+          "Hire AI Developer",
+          "Hire Data Engineer",
+          "Hire Python Developer for Data Science",
+          "Hire Freelance Data Scientist",
+          "Hire Remote Data Scientist",
+          "Data Science Developer for Hire",
+          "Affordable Data Science Hiring in India and Europe",
+          "Hire Data Scientist for FinTech",
+          "Healthcare Data Science Developer for Hire",
+          "E-commerce Machine Learning Expert"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/comfygen.technologies",
+          "https://x.com/Comfygen_Tech",
+          "https://www.instagram.com/comfygen_technologies",
+          "https://www.linkedin.com/company/comfygen-technologies"
+        ]
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Product",
+        "brand": "Comfygen Technologies",
+        "Name": "Microsoft Power BI Sales Dashboards | Real-Time Sales Insights",
+        "image": "https://www.comfygen.com/comfygen-images/hire-data-scientist/about.webp",
+        "description": "Track KPIs, analyze performance, and forecast revenue with Comfygen’s Microsoft Power BI Sales Dashboards. Designed for real-time decision-making and sales optimization.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "115"
+        }
+      },
+      {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.comfygen.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Data science",
+            "item": "https://www.comfygen.com/data"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hire data scientist",
+            "item": "https://www.comfygen.com/data/hire-data-scientist"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I hire a skilled data science developer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can hire experienced data science developers through specialized firms like Comfygen, or platforms like Toptal, Upwork, and Hired. For vetted talent and end-to-end support, working with a consulting company often delivers faster results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the best platform to hire data scientists?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For freelance roles, Upwork, Toptal, and Freelancer work well. For full-time or project-based hiring, LinkedIn, AngelList (for startups), and AI-focused consultancies like Comfygen are great options."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I hire a freelance machine learning engineer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with a clear project scope, define the ML problems you need solved, and post it on freelance platforms. Look for candidates with solid GitHub portfolios, Kaggle rankings, or past project outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What’s the cost to hire a data science developer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It varies. Freelancers may charge $30–$150/hour depending on experience. Full-time developers typically range from $80,000 to $150,000/year. For startups, part-time consultants can offer high value with lower overhead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I hire an experienced AI/ML developer for my startup?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many startups work with freelance or contract-based AI/ML developers to build MVPs, train models, or set up analytics pipelines. It's flexible, cost-effective, and lets you scale as needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the top companies to hire data science talent from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look for candidates with experience at firms like IBM, Google AI, Amazon, or boutique analytics firms. You can also hire directly from agencies like Comfygen, which supply project-ready teams."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I hire a data scientist for predictive analytics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hire someone with hands-on experience in time-series forecasting, regression models, or classification techniques. Use case knowledge in your domain (finance, healthcare, retail, etc.) is a big plus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I hire a remote data science team?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Many businesses now hire fully remote data science teams. You get flexibility, global talent, and cost savings. Just ensure strong communication workflows and clear project KPIs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it possible to hire a part-time data science consultant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. This is a smart move for companies that need insights without full-time commitment. Part-time consultants can build models, review data strategies, or optimize analytics in focused sprints."
+            }
+          }
+        ]
       }
     ]
   }

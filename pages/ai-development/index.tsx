@@ -19,10 +19,10 @@ const ServicesSec = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const NumberCard = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/NumberCard"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+// const NumberCard = dynamic(
+//   () => import("../../components/Newcomponet/SectionCompoent/NumberCard"),
+//   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+// );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
@@ -231,184 +231,16 @@ export default function Mobile(props: any) {
           property="og:description"
           content="Our AI Based App development experts create custom AI Development Service for startups, ensuring fast, affordable, and efficient project completion. Build your AI system today!"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/svg/Logo1.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "sales",
-                contactOption: "WhatsApp",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-                areaServed: ["IN", "US", "CA", "GB"],
-                availableLanguage: "en, in",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen",
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://youtube.com/@comfygenbusiness",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-                "https://in.pinterest.com/comfygenpvt/",
-              ],
-            }),
-          }}
-        />
+
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Comfygen",
-              image:
-                "https://www.comfygen.com/herosection/ai-development-company.webp",
-              "@id": "Comfygen",
-              url: "https://www.comfygen.com/",
-              telephone: "+91-958-786-7258",
-              priceRange: "$",
-              address: [
-                {
-                  "@type": "PostalAddress",
-                  streetAddress:
-                    "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-                  addressLocality: "Jaipur",
-                  postalCode: "302006",
-                  addressCountry: "IN",
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-                  addressLocality: "Toronto",
-                  postalCode: "M1G3S7",
-                  addressCountry: "CA",
-                },
-              ],
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "00:00",
-                closes: "23:59",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen",
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://www.youtube.com/@ComfygenBusiness",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: "AI Development Services - Artificial Intelligence Development Company",
-              provider: {
-                "@type": "Organization",
-                name: "Comfygen",
-                url: "https://www.comfygen.com/ai-development",
-              },
-              description:
-                "Empower your business with Comfygen's AI development services. We deliver cost-effective, custom AI solutions with expert AI engineers for automation and efficiency.",
-              url: "https://www.comfygen.com/",
-              mainEntityOfPage: "https://www.comfygen.com/ai-development",
-              areaServed: "Global",
-              serviceType: [
-                "Generative AI",
-                "Smart AI Assistants and Chatbot",
-                "AI Software Development",
-                "AI Development Consulting",
-                "AI Product Development",
-              ],
-              sameAs: [
-                "https://www.facebook.com/comfygen",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-              ],
-            }),
-          }}
-        />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What industries do you serve?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "We serve a wide range of industries, including healthcare, finance, retail, manufacturing, logistics, education, and more.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How long does it take to develop a custom AI solution?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "The timeline varies based on project complexity. It can take anywhere from a few weeks to several months.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Do you provide ongoing support and maintenance?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, we offer comprehensive ongoing support and maintenance services for AI solutions.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "http://schema.org",
-              "@type": "Product",
-              name: "Artificial Intelligence Development Services | AI App Development Company",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                worstRating: "3",
-                bestRating: "5",
-                reviewCount: "46",
-              },
-              description:
-                "We offer complete AI development services, including defining a viable AI implementation strategy, deploying, scaling, and scalability.",
-              image: "https://www.comfygen.com/svg/Logo1.svg",
-              brand: {
-                "@type": "Organization",
-                name: "Comfygen",
-                logo: "https://www.comfygen.com/svg/Logo1.svg",
-              },
-            }),
-          }}
-        />
+
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -430,20 +262,13 @@ export default function Mobile(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/ai-solutions-for-smarter-businesses.webp"
         />
-        <Milestones/>
+        <Milestones />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer The Best Artificial Intelligence Software Development
-                Services For Startups
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Offer The Best AI App Mobile App Development Services For Startups
               </h2>
-              <p className="text-base text-center font-normal">Data is used to drive business results through custom AI and
-                machine learning software development solutions. As one of the
-                leading custom AI mobile app development solution companies, we
-                transform raw data into actionable insights, facilitating
-                operational efficiency and enhanced decision-making. We offer
-                reliable AI enterprise software development services that can
-                make your vision a reality.</p>
+              <p className="text-base text-center font-normal">Data is used to drive business results through custom AI and machine learning Mobile App Development solutions. As one of the leading custom AI mobile app development solution companies, we transform raw data into actionable insights, facilitating operational efficiency and enhanced decision-making. We offer reliable AI enterprise software development services that can make your vision a reality.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -462,27 +287,24 @@ export default function Mobile(props: any) {
 
 
 
-        <NumberCard
+        {/* <NumberCard
           heading="Our Technology Stack Use to Develop Best AI Services"
           description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
           data={data}
-        />
+        /> */}
         <TechStack
-          title="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          title="Tech Stack Use to Develop Best AI Mobile App Development Services"
+          description="At Comfygen, we use cutting-edge tools and technologies to build scalable, secure, and innovative AI-powered mobile apps for enterprises and SMEs. Our AI and ML expertise across modern platforms and cloud services ensures high-performance solutions tailored to your business goals."
           customTechData={JSON_DATA.customTechData}
         />
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our AI Software Development Roadmap
+               Our AI Mobile App Development Process 
               </h2>
               <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a structured and collaborative approach
-                to deliver AI solutions that align with your business goals. Our
-                proven process ensures transparency, efficiency, and
-                high-quality results at every stage. Here’s how we work
+                At Comfygen, we follow a structured, transparent, and collaborative approach to deliver AI development solutions that align perfectly with your business objectives. Our proven development process ensures efficiency, seamless communication, and high-quality outcomes at every stage.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -508,18 +330,18 @@ export default function Mobile(props: any) {
         <IndustriesServe
           heading="Get your industry to the next level with our custom AI Development services"
           description="Our Artificial Intelligence (AI) engineers specialize in integrating the highest quality AI services into your business offerings, processes, and growth strategies."
-          sliderData={JSON_DATA.customSliderData}
+        
         />
         <HireDeveloper
-          heading="Hire Our Dedicated AI Application Developers"
-          text="Are you looking to enhance your company’s technical capabilities? Why not hire expert AI software developers from Comfygen? Our artificial intelligence specialists have deep expertise in Machine Learning, Neural Networks, Deep Learning, Computer Vision, Data Mining, Analytics, and AI-powered Visualization. They can build user-centric, data-driven AI application development solutions customized to your business needs."
-          text1="By hiring our best artificial intelligence engineer in India, you gain access to cutting-edge AI development solutions that drive business growth and efficiency. Ready to take your AI capabilities to the next level?"
+          heading="Hire Our Dedicated AI Mobile Application Developers"
+          text="Hire expert AI software developers from Comfygen with deep expertise in Machine Learning, Deep Learning, Neural Networks, and Computer Vision. Our AI engineers build secure, scalable, and data-driven solutions tailored to your business needs—helping you improve efficiency, drive innovation, and accelerate growth."
+          text1=""
           listItems={[
-            "Experience in developing 80+ AI products across industries.",
-            "Constantly ranked as a Top AI Development Company in Toronto, Canada on DesignRush.",
-            "A Project Consultant and AI development Solution Architect assigned to your project.",
-            "Strict NDA policies to protect your business data.",
-            "Subject matter experts to understand and align AI software development solutions with your goals.",
+            "80+ AI products successfully delivered across industries",
+            "Recognized as a Top AI Development Company in Toronto by DesignRush",
+            "Dedicated AI Solution Architect and Project Consultant",
+            "Strict NDA and data security compliance",
+            "Expert-driven solutions aligned with your business goals",
           ]}
           buttonText="Hire Developer"
           buttonLink="/contact-us"

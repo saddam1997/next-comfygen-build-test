@@ -186,7 +186,7 @@ export default function Ecommerce(props:any) {
       <div className="overflow-hidden lg:pt-[10px]">
 
         <HeroSectionForAllPages
-          heading="AI Interview Scheduler Software Development Company"
+          heading="AI interview scheduling software development company"
           ptag="Comfygen is a leading AI interview scheduling software development company delivering intelligent, scalable, and fully customized solutions to optimize recruitment workflows. Our AI-powered software brings speed, accuracy, and automation to talent acquisition for startups and enterprises alike."
           li="Modern UI/UX for Seamless Scheduling"
           li1="10+ Years of Custom Software Development Experience"
@@ -206,9 +206,9 @@ export default function Ecommerce(props:any) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >All-in-One AI Interview Scheduling Software Development Services by Comfygen
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >All-in-One AI Interview Scheduling Software Development Services
               </h2>
-              <p className="text-base text-center font-normal">Our AI-powered interview scheduling software development services are tailored to meet the unique needs of startups, staffing agencies, and large enterprises, helping you transform how you hire.</p>
+              <p className="text-base text-center font-normal">As a leading AI Interview Scheduling Software Development Company delivers AI-powered interview software development services tailored to the unique needs of startups, staffing agencies, and large enterprises, helping you automate interview coordination and transform how you hire.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -218,8 +218,8 @@ export default function Ecommerce(props:any) {
 
         <AboutSection
           heading="AI Interview Scheduler Software Development Tailored to Your Hiring Needs"
-          description1="At Comfygen, we specialize in AI-powered interview scheduler software development that transforms the way enterprises manage interviews. Our intelligent platforms eliminate manual coordination, enabling HR teams to focus on what truly matters—finding the right talent."
-          description2="Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ai-development' >AI development solutions</a> include automated interview scheduling tools with self-rescheduling features, personalized communication, and smart calendar syncing. Designed for modern recruitment, our automated interview scheduling software integrates seamlessly with your existing ATS and hiring workflows."
+          description1="Comfygen  is an AI interview scheduling software development company specialises in transforming the way enterprises manage interviews. Our intelligent platforms eliminate manual coordination, enabling HR teams to focus on what truly matters—finding the right talent."
+          description2="Our <a href='https://www.comfygen.com/ai-development' class='text-blue-600 font-semibold'>AI development solutions</a> include automated interview scheduling tools with self-rescheduling features, personalized communication, and smart calendar syncing. Designed for modern recruitment, our automated interview scheduling software integrates seamlessly with your existing ATS and hiring workflows."
           description3="With our custom AI interview scheduling mobile app development services, you gain access to real-time analytics, branded candidate experiences, and smart job recommendations, helping your business optimize hiring efficiency and scale recruitment effortlessly."
           imageSrc="https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-about.webp"
           link="/about-us"

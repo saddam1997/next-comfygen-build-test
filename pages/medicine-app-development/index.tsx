@@ -412,7 +412,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Medicine Ordering App Development Company"
-          ptag="Comfygen Technologies is a reliable Medicine Ordering App Development Company delivering secure, scalable, and user-friendly digital solutions for pharmacies, healthcare providers, and startups. We specialize in building feature-rich medicine ordering apps with prescription upload and verification, real-time order tracking, AI-driven recommendations, and multi-vendor pharmacy management. Our expert developers ensure seamless integrations, regulatory compliance, and high-performance architecture to streamline pharmacy operations, enhance patient convenience, and drive long-term business growth."
+          ptag="Comfygen Technologies stands out as a professional Medicine Ordering App Development Company delivering robust, secure, and user-centric solutions. With our expert Medicine Ordering App Development Service, pharmacies can launch on-demand medicine ordering apps featuring prescription verification, real-time tracking, and smooth third-party integrations to ensure efficient healthcare service delivery."
           li="Real-Time Order Tracking"
           li1="AI-Driven Medicine Recommendations"
           li2="Multi-Vendor & Pharmacy Management"
@@ -430,13 +430,11 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Cutting-Edge Medicine Ordering App Development Services by
-                Comfygen
+               We Provide Medicine Ordering App Development Services
+
               </h2>
               <p className="text-base text-center font-normal">
-                At Comfygen, we offer a wide range of medicine ordering app
-                development services tailored to meet the needs of pharmacies,
-                healthcare providers, and startups. Our expertise includes:
+               We deliver end-to-end medicine ordering app development services, including custom app design, on-demand medicine delivery solutions, pharmacy management systems, and secure integrations to help healthcare businesses scale efficiently and improve customer experience.
               </p>
             </div>
             <div className="">
@@ -447,9 +445,17 @@ export default function Ecommerce(props) {
 
         <AboutSection
           title="About Company"
-          heading="Your Trusted Medicine Ordering App Development Company"
-          description1="Comfygen empowers the healthcare industry with cutting-edge medicine ordering app development services, enabling seamless, secure, and efficient online pharmacy solutions. We specialize in developing scalable and user-friendly mobile apps that bridge the gap between patients, pharmacies, and healthcare providers. Our medicine app development solutions are designed to enhance patient care, reduce operational costs, and keep businesses ahead in the evolving healthcare landscape."
-          description2="Whether you need an app for telemedicine, prescription delivery, or an online pharmacy marketplace, we offer custom medicine ordering app development solutions for iOS and Android. With expertise in building apps like Medscape and Netmeds, we deliver innovative platforms that revolutionize healthcare services. partner with Comfygen to create a medicine ordering app that enhances accessibility and transforms patient care."
+          heading="Why Should You Invest in Medicine Ordering App Development?"
+          description1="Investing in medicine ordering app development is a strategic startup move in a booming digital healthcare ecosystem. The global online pharmacy market is projected to surpass $200 billion by mid-decade, driven by user demand for convenience, discounts, and on-demand delivery. Medicine ordering apps offer significant reach beyond local geography, recurring revenue through subscriptions, and streamlined operations with AI automation and real-time tracking."
+          description2="With growing user preference for app-based medicine ordering, strong CAGR, and rapid adoption in markets like India and North America, on-demand medicine ordering app development promises strong growth, loyal customers, and scalable profits for investors."
+
+          points={[
+            "Rising User Preference",
+            "Recurring Revenue Model",
+            "High-Growth Market Opportunity",
+            "Scalable & Future-Ready Business",
+            "Operational Efficiency & Automation"
+          ]}
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -499,8 +505,8 @@ export default function Ecommerce(props) {
 
         <div className="py-8">
           <Features
-            heading="Features We Implement in Your Medicine Ordering App to Make it Stand Out"
-            description="At Comfygen, we develop user-friendly and scalable medicine ordering apps with advanced features that cater to both customers and pharmacy administrators. Our app ensures a seamless medicine ordering experience, streamlined management, and compliance with industry regulations."
+            heading="We Develop Medicine Ordering Apps With Advanced Panel Features"
+            description="At Comfygen Technologies, we develop feature-rich medicine ordering apps with advanced user, pharmacy, and admin panels, enabling secure prescription management, real-time order tracking, regulatory compliance, and efficient operations for customers, pharmacies, and administrators globally scalable."
             featuresData={JSON_DATA.featuresData}
             grid={3} />
         </div>

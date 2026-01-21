@@ -40,6 +40,10 @@ const Portfolio = dynamic(
   { loading: loader, ssr: true }
 );
 
+const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
 // Features Section
 const Features = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Features"),
@@ -543,15 +547,15 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/milk-delivery-app-development/hero.webp"
           />
         </div>
-        <Milestones/>
+        <Milestones />
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our Best Milk Delivery App Development Services For Dairy Businesses
+                Our Best Milk Delivery App Development Services For Dairy Businesses
               </h2>
               <p className="text-base text-center font-normal">
-               At Comfygen, we offer comprehensive milk delivery app development services designed to help dairies, milk distributors, and startups deliver fresh dairy products efficiently. Our best dairy milk delivery app & management system is scalable, secure, and tailored to your business needs.
+                At Comfygen, we offer comprehensive milk delivery app development services designed to help dairies, milk distributors, and startups deliver fresh dairy products efficiently. Our best dairy milk delivery app & management system is scalable, secure, and tailored to your business needs.
 
 
               </p>
@@ -603,6 +607,15 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
+        
+        <CallToAction
+          heading="Take Your Dairy Business to the Next Level"
+          text="Start today and transform your dairy business with our custom milk delivery app development services designed for growth, efficiency, and customer satisfaction."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now." />
+
         <Features
           heading="Take Your Dairy Business to the Next Level"
           description=" Start today and transform your dairy business with our custom milk delivery app development services designed for growth, efficiency, and customer satisfaction."
@@ -610,57 +623,57 @@ export default function ClinicalApp(props: any) {
           grid="3"
         />
 
-                <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-                  <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-                    <div className="space-y-4 text-center">
-                      <div className="flex flex-col justify-center text-center  mx-auto">
-                        <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                          Emerging Technologies We Use for Milk Delivery App Development
-                        </h2>
-                        <p className="text-center text-white lg:w-10/12 mx-auto">
-                          At Comfygen, we use the latest technologies to create fast, secure, and scalable milk delivery apps. Our milk delivery application development solutions help dairy businesses improve efficiency, serve customers better, and stay ahead in the market.
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Emerging Technologies We Use for Milk Delivery App Development
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  At Comfygen, we use the latest technologies to create fast, secure, and scalable milk delivery apps. Our milk delivery application development solutions help dairy businesses improve efficiency, serve customers better, and stay ahead in the market.
 
-                        </p>
-                      </div>
-                      <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                        {JSON_DATA.Emerging.map((elem) => {
-                          const { img, title, decs } = elem;
-                          return (
-                            <div key={title} className={` relative`}>
-                              <div
-                                className={` flex justify-start gap-2 place-items-center relative`}
-                              >
-                                {/* <Image
+                </p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
                                           src={img}
                                           className="object-cover"
                                           width={35}
                                           height={50}
                                           alt={title}
                                         /> */}
-                                <h3 className="text-2xl font-bold text-[#fff] text-start">
-                                  {title}
-                                </h3>
-                              </div>
-        
-                              <div className="mt-3">
-                                <p
-                                  className="break-all text-white text-start "
-                                  dangerouslySetInnerHTML={{ __html: decs }}
-                                ></p>
-                              </div>
-                            </div>
-                          );
-                        })}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
                       </div>
                     </div>
-                  </div>
-                </section>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              End-To-End Milk Delivery App Development Process
+                End-To-End Milk Delivery App Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
                 At Comfygen, we follow a clear and well-planned milk delivery app development process to deliver high-quality, scalable, and user-friendly solutions for dairy businesses.

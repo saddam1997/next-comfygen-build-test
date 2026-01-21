@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./json/mobile.json";
+import JSON_DATA from "./json/finance.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -68,6 +69,11 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
@@ -80,15 +86,15 @@ const Process = [
   },
   {
     title: "Design and MVP",
-    description: "We focus on UI/UX design, wireframing, and prototyping to create a visually appealing and intuitive interface. Our best fintech app development company builds an MVP (Minimum Viable Product) to test core features and gather user feedback."
+    description: "We focus on <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX design</a>, wireframing, and prototyping to create a visually appealing and intuitive interface. Our best fintech app development company builds an MVP (Minimum Viable Product) to test core features and gather user feedback."
   },
   {
     title: "Development",
-    description: "During development, we implement secure backend and frontend architectures, ensuring the app meets industry compliance. Our Finance App Development Company integrates data encryption, authentication protocols, and regulatory standards to enhance security."
+    description: "During development, we implement secure backend and frontend architectures, ensuring the app meets industry compliance. Our AI finance application development company integrates data encryption, authentication protocols, and regulatory standards to enhance security."
   },
   {
     title: "Advanced Integration Features",
-    description: "We are one of the best custom finance app development agency in the USA, we incorporate AI-powered analytics, blockchain technology, and automated customer support to enhance security, trust, and transparency in financial transactions."
+    description: "We are one of the best custom finance app development agency in India. We incorporate AI-powered analytics, blockchain technology, and automated customer support to enhance security, trust, and transparency in financial transactions."
   },
   {
     title: "Scalability and Future-Readiness",
@@ -97,7 +103,7 @@ const Process = [
 
   {
     title: "Testing and Deployment",
-    description: "Our top-rated fintech app development agency in India makes sure rigorous testing for performance, security, and usability before deployment on iOS and Android platforms, providing a seamless experience for users."
+    description: "Our top-rated fintech <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development</a> agency in India makes sure rigorous testing for performance, security, and usability before deployment on iOS and Android platforms, providing a seamless experience for users."
   },
   {
     title: "Support & Maintenance",
@@ -108,7 +114,7 @@ const Process = [
 
 
 
-export default function Mobile(props:any) {
+export default function Mobile(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
@@ -119,202 +125,17 @@ export default function Mobile(props:any) {
     setTalkToExpertModal(false);
   };
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur, Rajasthan",
-        "addressRegion": "India",
-        "postalCode": "302006",
-        "telephone": "+91-958-786-7258"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-        "addressLocality": "Toronto",
-        "addressRegion": "Canada",
-        "postalCode": "M1G3S7",
-        "telephone": "+1 579-977-4475"
-      },
-      {
-        "@type": "Service",
-        "name": "Finance App Development Company",
-        "provider": {
-          "@type": "Organization",
-          "name": "Comfygen",
-          "url": "https://www.comfygen.com/"
-        },
-        "description": "Comfygen is a top-rated Finance App Development Company specializing in secure, AI-powered finance solutions, including lending apps, digital payments, and credit management systems.",
-        "url": "https://www.comfygen.com/finance-app-development",
-        "areaServed": "Global",
-        "serviceType": [
-          "Custom Fintech App Development",
-          "Stock Trading App Development",
-          "Digital Wallet Development",
-          "Expense Tracker App Development",
-          "Personal Finance App Development",
-          "AI Fintech App Development",
-          "Loan Management App Development",
-          "Wealth Management App Development",
-          "Cryptocurrency Wallet App Development",
-          "Mobile Banking App Development",
-          "Fintech Blockchain Development",
-          "Insurance App Development",
-          "Finance App Development Services"
-        ],
-        "sameAs": [
-          "https://www.facebook.com/comfygen",
-          "https://www.linkedin.com/company/comfygen-private-limited"
-        ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "name": "Comfygen",
-        "image": "https://www.comfygen.com/svg/Logo1.svg",
-        "@id": "Comfygen",
-        "url": "https://www.comfygen.com/",
-        "telephone": "+91-958-786-7258",
-        "priceRange": "$",
-        "address": [
-          {
-            "@type": "PostalAddress",
-            "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-            "addressLocality": "Jaipur",
-            "postalCode": "302006",
-            "addressCountry": "IN"
-          },
-          {
-            "@type": "PostalAddress",
-            "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-            "addressLocality": "Toronto",
-            "postalCode": "M1G3S7",
-            "addressCountry": "Canada"
-          }
-        ],
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "sameAs": [
-          "https://www.facebook.com/comfygen",
-          "https://twitter.com/comfygentech",
-          "https://www.instagram.com/comfygen_/?hl=en",
-          "https://www.youtube.com/@ComfygenBusiness",
-          "https://www.linkedin.com/company/comfygen-private-limited",
-          "https://www.comfygen.com/"
-        ]
-      },
-      {
-        "@type": "Organization",
-        "name": "Comfygen",
-        "url": "https://www.comfygen.com/",
-        "logo": "https://www.comfygen.com/svg/Logo1.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "contactOption": "WhatsApp",
-          "telephone": "+91 9587867258",
-          "areaServed": ["IN", "US", "CA", "GB", "AU"],
-          "email": "sales@comfygen.com",
-          "availableLanguage": ["en", "in"]
-        },
-        "sameAs": [
-          "https://www.facebook.com/comfygen",
-          "https://twitter.com/comfygentech",
-          "https://www.instagram.com/comfygen_/?hl=en",
-          "https://youtube.com/@comfygenbusiness",
-          "https://www.linkedin.com/company/comfygen-private-limited",
-          "https://in.pinterest.com/comfygenpvt/"
-        ]
-      },
-      {
-        "@type": "Product",
-        "brand": "Comfygen Private Limited",
-        "name": "Custom Finance App Development Services",
-        "image": "https://www.comfygen.com/image/finance-app-development-og-image.webp",
-        "description": "Get top-notch custom finance app development services with Comfygen. We build AI-powered, secure, and scalable financial apps tailored to your business needs.",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "765"
-        }
-      },
-      {
-        "@context": "https://schema.org/",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.comfygen.com"
-        }, {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Mobile App Development",
-          "item": "https://www.comfygen.com/finance-app-development"
-        }]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How Much Does It Cost To Create A Fintech App?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost of developing a fintech app depends on various factors such as features, complexity, platform, and security measures. A basic fintech app may start from $20,000 - $40,000, while a feature-rich app can range between $50,000 - $150,000 or more."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What Are the Advantages of a Fintech App Solution for My Business?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A fintech app enhances financial services by offering automation, security, and user convenience. It enables seamless digital transactions, AI-powered insights, real-time analytics, and fraud detection."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What services do you offer for lending and credit institutions?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We build loan management systems, credit scoring solutions, and AI-powered lending apps to streamline the loan origination, approval, and disbursement process."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the importance of AI in finance app development?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AI improves credit risk assessment, fraud detection, and automated loan processing. It enhances real-time analytics, personalized financial recommendations, and transaction security."
-            }
-          }
-        ]
-      }
-    ]
-  };
+
 
   return (
     <>
       <Head>
         <title>
-          Best Custom Finance App Development Company in India
+          Best Finance App Development Company in India | Custom FinTech Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a top finance app development company in India. We offer custom finance app development services, from mobile banking to investment apps, with secure and high-performance FinTech solutions."
+          content="Looking for a reliable finance app development company in India? Comfygen delivers secure, scalable, and custom FinTech app development services."
         />
         <link
           rel="canonical"
@@ -377,7 +198,7 @@ export default function Mobile(props:any) {
         <meta property="og:description" content="We’re a premier fintech app development company offering cutting-edge, secure, and scalable financial solutions tailored to your business needs. Get expert fintech app development today!" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
@@ -387,9 +208,9 @@ export default function Mobile(props:any) {
 
         <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Best Custom Finance App Development Company in India"
+            heading="BTop-Rated Finance App Development Company in India"
             subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
-            ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
+            ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use the latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
             li="15+ Trusted Fintech Developers"
             li1="Customized Fintech Solutions Delivered"
             li2="06+ years of experience in Development"
@@ -405,26 +226,30 @@ export default function Mobile(props:any) {
 
         </div>
 
-        <AboutSection
-          title=""
-          heading="Top-Rated Finance App Development Company That Builds Next-Gen FinTech Apps for Startups & Enterprises"
-          description1="Comfygen is a reliable financial app development company in India, specializing in innovative and secure fintech solutions. We offer custom FinTech app development services tailored to meet the unique needs of banks, financial institutions, and fintech startups. "
-          description2="Our FinTech app developers make sure seamless integration of cutting-edge technologies like AI, blockchain, and cloud computing to create scalable, high-performance finance mobile apps. We offer secure, user-friendly solutions that enhance financial operations, from mobile banking to investment platforms. We can help you build a fintech application that drives success."
-          imageSrc="https://www.comfygen.com/image/finance-app-development-company-about-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+        <Milestones />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Finance App Development Services Are Tailored to Meet Your Specific Business Requirements.</h2>
-              <p className="text-center text-base">Comfygen offers the highest quality fintech app development services to banks, fintech companies, and startups. Our dedicated fintech mobile app developers craft secure, scalable, and AI-driven financial app development solutions that streamline operations and enhance user experiences.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Finance App Development Services Are Tailored to Meet Your Specific Business Requirements</h2>
+              <p className="text-center text-base">Comfygen offers the highest quality fintech app development services to banks, fintech companies, and startups. Our dedicated fintech mobile app developers craft secure, scalable, and AI-powered financial app development solutions that streamline operations and enhance user experiences.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title=""
+          heading="Best Custom Finance App Development Company That Builds Next-Gen FinTech Apps for Startups & Enterprises"
+          description1="Comfygen is a reliable financial app development company in India, specializing in innovative and secure fintech solutions. We offer custom FinTech app development services tailored to meet the unique needs of banks, financial institutions, and fintech startups."
+          description2="Our FinTech app developers in India make sure seamless integration of cutting-edge technologies like AI, blockchain, and cloud computing to create scalable, high-performance finance mobile apps. We offer secure, user-friendly solutions that enhance financial operations, from mobile banking to investment platforms. We can help you build a fintech application that drives success."
+          imageSrc="https://www.comfygen.com/image/finance-app-development-company-about-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
 
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py10">
           <div className="flex flex-col justify-center text-center  mx-auto">
@@ -442,10 +267,20 @@ export default function Mobile(props:any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Fintech Apps Portfolio"
-            description="Our team is brilliant at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
+            heading="Our FinTech App Development Portfolio"
+            description="Take a look at our successfully delivered FinTech applications built for banks, fintech startups, and enterprises. Our finance app development portfolio highlights secure, scalable, and user-friendly finance apps, including mobile banking, digital wallets, trading platforms, and blockchain-based solutions."
           />
         </section>
+
+
+        <CallToAction
+          heading="Looking for a Reliable Finance App Development Partner?"
+          text="Work with experienced fintech app developers who understand compliance, security, and scalability. Let’s build a finance app your users can trust."
+          buttonText="Start Your FinTech Project"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
         <div className="py-8">
           <Features
@@ -496,7 +331,7 @@ export default function Mobile(props:any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Finance App Development Approach</h2>
               <p className="text-base font-normal mt-2">
-                Hire Fintech Developers from Comfygen who follow the agile methodologies and strategic process to build secured Fintech apps. Our finance app development process will fulfill business purposes and lead to an intuitive user interface.
+               Hire Fintech Developers from Comfygen who follow the agile methodologies and strategic process to build secured Fintech apps. Our finance app development process will fulfill business purposes and lead to an intuitive user interface.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -519,7 +354,7 @@ export default function Mobile(props:any) {
         />
         <HireDeveloper
           heading="Hire Our Fintech App Developers For Your Project"
-          text="You can find the opportunity to work with the best fintech app developers with us at Comfygen. Our developers utilise the latest technologies for powering FinTech apps and stay updated with recent trends in fintech that can offer a competitive advantage to your business."
+          text="You can find the opportunity to work with the best <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>fintech mobile app developers</a> with us at Comfygen. Our developers utilise the latest technologies for powering FinTech apps and stay updated with recent trends in fintech that can offer a competitive advantage to your business."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
@@ -540,7 +375,7 @@ export default function Mobile(props:any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

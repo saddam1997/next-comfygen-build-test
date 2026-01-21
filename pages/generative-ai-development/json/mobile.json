@@ -36,7 +36,6 @@
         "description": "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
         "link": "#"
       },
-
       {
         "image": "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
         "title": "AI-Powered Manufacturing Solutions",
@@ -828,6 +827,43 @@
         "num": "03",
         "title": "Time-Bound Contracts",
         "decs": "The time-bound contracts for hiring our social media app developer team can help you use our expertise for working on long-term projects with excellence in services."
+      }
+    ],
+    "jsonLdData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+            "name": "Custom GenAI Development Services - Generative AI Development Company",
+            "provider": {
+          "@type": "Organization",
+              "name": "Comfygen",
+              "url": "https://www.comfygen.com/"
+        },
+            "description": "Comfygen offers custom Generative AI development services, delivering AI-powered solutions for automation, content creation, chatbots, and business intelligence. Transform your business with cutting-edge AI technology.",
+            "url": "https://www.comfygen.com/generative-ai-development",
+            "mainEntityOfPage": "https://www.comfygen.com/generative-ai-development",
+            "areaServed": "Global",
+            "serviceType": [
+          "Generative AI Development Services",
+          "Smart AI Assistants and Chatbot",
+          "AI Software Development",
+          "Generative AI Consulting Services",
+          "Data Engineering for Generative AI",
+          "Machine Learning Integration for Generative AI",
+          "Generative AI Model Development",
+          "Natural Language Processing (NLP) Solutions",
+          "Machine Learning Development",
+          "Generative AI for Healthcare",
+          "Generative AI for Education",
+          "Generative AI Security",
+          "Generative AI Design",
+          "Generative AI-Powered Automation Solutions",
+          "Generative AI mobile App Development"
+        ],
+            "sameAs": [
+          "https://www.facebook.com/comfygen",
+          "https://www.linkedin.com/company/comfygen-private-limited"
+        ]
       }
     ]
   }
