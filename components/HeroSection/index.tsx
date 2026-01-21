@@ -32,9 +32,6 @@ export default function HeroSection(props: any) {
     };
 
 
-
-
-
     /* ================= LOADER ================= */
 
 
