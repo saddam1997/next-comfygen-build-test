@@ -115,7 +115,7 @@ export default function Home(props: any) {
         />
         <meta
           name="description"
-          content="Comfygen is AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
+          content="Comfygen is a AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
         />
         {/* <!-- Viewport and/ Mobile Optimization → */}
         <meta
@@ -208,7 +208,7 @@ export default function Home(props: any) {
           <HeroSection
             heading="AI-Based Mobile App and Web Development Company"
             isHome={true}
-            ptag="Are you looking to build powerful mobile application? Comfygen is a trusted mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses."
+            ptag="Are you looking to build powerful mobile application? Comfygen is a trusted AI-based mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses."
             btnName="Let's Discuss"
             btnLink="/contact-us"
             altTag="blockchain-technology"
