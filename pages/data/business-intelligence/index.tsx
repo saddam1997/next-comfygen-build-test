@@ -43,6 +43,11 @@ const HireDeveloper = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const SolutionsFeature = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/astrology/SolutionsFeature"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+
 const ClientTestimonials = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
@@ -120,222 +125,18 @@ export default function ClinicalApp(props: any) {
     setTalkToExpertModal(false);
   };
 
-  const jsonLdData = [
 
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Business Intelligence and Business Analytics Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Comfygen offers Business Intelligence and Analytics services to help businesses turn raw data into real-time decisions, predictive insights, and strategic growth. Our services include custom dashboards, KPI tracking, data visualization, forecasting, and advanced analytics solutions.",
-      url: "https://www.comfygen.com/data/business-intelligence",
-      mainEntityOfPage: "https://www.comfygen.com/data/business-intelligence",
-      areaServed: "Global",
-      serviceType: [
-        "Business Intelligence service",
-        "Business Analytics Service",
-        "BI Services",
-        "Data Visualization Service",
-        "KPI & Performance Tracking",
-        "Marketing Analytics",
-        "Predictive Analytics",
-        "Data Dashboard Development",
-        "Data Integration & Warehousing",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Microsoft Power BI Sales Dashboards | Real-Time Sales Insights",
-      image: "https://www.comfygen.com/comfygen-images/business-intelligence/about.webp",
-      description:
-        "Track KPIs, analyze performance, and forecast revenue with Comfygen’s Microsoft Power BI Sales Dashboards. Designed for real-time decision-making and sales optimization.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "115",
-      },
-    },
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Data science",
-          item: "https://www.comfygen.com/data",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Business Intelligence & Analytics Services",
-          item: "https://www.comfygen.com/data/business-intelligence",
-        },
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is Business Intelligence (BI) and Business Analytics (BA)?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Business Intelligence focuses on collecting and visualizing historical performance—think dashboards, reports, and KPIs. Business Analytics goes further, using statistical models and predictive forecasting to answer not only what happened—but what might happen next and why.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What business problems can BI & Analytics actually solve?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BI helps answer questions like, “Where are your sales outperforming or lagging?” or “Which marketing campaign is actually driving revenue?” Business Analytics tackles deeper questions like, “Why has customer retention changed year over year?” or “Which product segment will grow next quarter?” Answers lead to action.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I know if my business really needs BI and Analytics?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "If your data lives in silos across multiple tools, if your spreadsheets take too long to compile, or if decisions are based on guesses—we’ll call it: you need BI & Analytics. These services bring clarity, boost efficiency, and enable real-time decisions from accurate data.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do businesses get started with BI & Analytics?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Begin with a data discovery workshop: map where data lives, what problems you want to solve, and define your key business questions. Then we build targeted dashboards, integrations, and models aligned to those goals.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is BI & Analytics secure and compliant?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Modern BI platforms enforce enterprise-grade security like SOC 2 Type II, ISO 27001, GDPR compliance, role-based access, and encryption. Your data stays safe while relevant stakeholders get just the insight they need.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What challenges should I expect in BI & Analytics projects?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Common issues include: poor data quality, lack of leadership buy-in, integration bottlenecks, and not defining business goals clearly. Overcoming these requires strategy, collaboration, and expert execution.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
       <Head>
         {/* Primary Meta Tags */}
         <title>
-          Business Intelligence & Analytics Services | Data-Driven Insights – Comfygen
+          Business Intelligence & Analytics Services | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen provides business intelligence and analytics services to turn raw data into actionable insights, analyze trends, optimize operations, and enable smarter, proactive business decisions."
+          content="Comfygen delivers end-to-end Business Intelligence and Analytics services that convert complex data into actionable insights through advanced dashboards, data warehousing, and predictive analytics."
         />
         <link
           rel="canonical"
@@ -389,7 +190,7 @@ export default function ClinicalApp(props: any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
@@ -400,7 +201,7 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Business Intelligence & Business Analytics Services"
-            ptag="Business Intelligence (BI) and Business Analytics services transform raw data into actionable insights, enabling organizations to understand past performance, uncover underlying trends, and make informed decisions. By analyzing patterns, market trends, and performance metrics, these services drive smarter decision-making, enhance operational efficiency, and support future planning. With BI and analytics, businesses can move from reactive responses to proactive strategies, ensuring continuous improvement and long-term success in a data-driven world."
+            ptag="Business Intelligence & Business Analytics services transform raw data into actionable insights, enabling organizations to understand past performance, uncover underlying trends, and make informed decisions. By analyzing patterns, market trends, and performance metrics, these services drive smarter decision-making, enhance operational efficiency, and support future planning. With BI and analytics, businesses can move from reactive responses to proactive strategies, ensuring continuous improvement and long-term success in a data-driven world."
             li='Real-Time Data Insights for Smarter Decisions'
             li1='Performance Metrics & Trend Analysis'
             li2='Operational Efficiency & Process Optimization'
@@ -414,20 +215,17 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/business-intelligence/hero.webp"
           />
         </div>
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Benefits of Business Intelligence & Business Analytics Services
+                Business Intelligence & Analytics Services We Provide
               </h2>
               <p className="text-base text-center font-normal">
-                In the digital world, with the help of BI Implementation,
-                Businesses stay ahead of their competition by making better
-                decisions based on data, enabling smarter decisions, improved
-                efficiency, and sustainable growth. Here are some of the main
-                benefits BI and BA can bring to your organization:
+                We provide comprehensive Business Intelligence and Analytics services, giving you the insights and tools you need when you partner with Comfygen. Our solutions are designed to transform your data into clear, actionable results.
+
               </p>
             </div>
             <div className="">
@@ -438,7 +236,7 @@ export default function ClinicalApp(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="Why Your Business Needs BI & Analytics Services"
+          heading="Why Your Business Needs Business Intelligence & Analytics Services"
           description1="Data is not a problem. The Problem is not arranged perfectly. Metrics are not aligned, reports are slow, and decisions are taken on the basis of this. BI and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Analytics services</a> fix this problem. They gather all the data and show you what’s going on, and help you act in real time—not after the damage is done."
           description2="With the help Business intelligence service, you are not dependent on spreadsheets or guessing, you will get clear, actionable insights that help to improve performance in all sectors like:- Marketing, sales, finance and etc."
           description3="And when you work with Comfygen, you’re not just buying dashboards. You will get a business intelligence expert team that builds a dashboard according to your goals, your data, and the way your business actually runs."
@@ -453,6 +251,13 @@ export default function ClinicalApp(props: any) {
             "Supports Digital Payments & Invoice Generation",
           ]}
         />
+
+        <section className="py-8">
+          <SolutionsFeature title="Why Your Business Needs Business Intelligence & Analytics Services"
+            subtitle="In the digital world, with the help of BI Implementation, Businesses stay ahead of their competition by making better decisions based on data, enabling smarter decisions, improved efficiency, and sustainable growth. Here are some of the main benefits BI and BA can bring to your organization"
+            data={JSON_DATA.servicesData1}
+          />
+        </section>
 
 
 
@@ -476,8 +281,8 @@ export default function ClinicalApp(props: any) {
 
 
         <TechStack
-          title="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          title="Our Technology Stack for Business Intelligence & Analytics Services"
+          description="At Comfygen, we leverage modern tools and platforms to build robust, scalable, and insightful Business Intelligence and Analytics solutions. Our expertise spans data integration, warehousing, visualization, and advanced analytics, ensuring your business turns raw data into actionable intelligence. Here’s a snapshot of the technologies we use"
           customTechData={JSON_DATA.TechData}
         />
 

@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import Link from "next/link";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -167,10 +168,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Tableau Consulting Services | Dashboard Development & Analytics – Comfygen</title>
+        <title>Tableau Consulting Service Provider | Tableau Dashboard & Analytics Experts</title>
         <meta
           name="description"
-          content=" Comfygen provides comprehensive Tableau consulting services, including custom dashboards, data integration, reporting, real-time KPIs, and analytics solutions to drive smarter business decisions."
+          content="Looking for a trusted Tableau Consulting Service Provider? Comfygen delivers custom Tableau dashboards, data integration, reporting, and analytics to turn complex data into actionable business insights."
         />
 
         <link
@@ -231,232 +232,13 @@ export default function Mobile(props: any) {
           content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen Technologies",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/svg/Logo1.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "sales",
-                contactOption: "WhatsApp",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-                areaServed: ["IN", "US", "CA", "GB"],
-
-                availableLanguage: "en, in",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-              ],
-            }),
-          }}
-        />
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Comfygen Technologies",
-              image: "https://www.comfygen.com/svg/Logo1.svg",
-              "@id": "Comfygen Technologies",
-              url: "https://www.comfygen.com/",
-              telephone: "+91-958-786-7258",
-              priceRange: "$",
-              address: [
-                {
-                  "@type": "PostalAddress",
-                  streetAddress:
-                    "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-                  addressLocality: "Jaipur",
-                  postalCode: "302006",
-                  addressCountry: "IN",
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-                  addressLocality: "Toronto",
-                  postalCode: "M1G3S7",
-                  addressCountry: "Canada",
-                },
-              ],
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "00:00",
-                closes: "23:59",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-                "https://www.comfygen.com/",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: "Tableau Consulting Services",
-              provider: {
-                "@type": "Organization",
-                name: "Comfygen Technologies",
-                url: "https://www.comfygen.com/",
-              },
-              description:
-                "Comfygen Technologies offers expert Tableau consulting services to transform raw data into actionable insights. We provide scalable, secure, and customized data analytics, AI, and big data solutions for businesses worldwide.",
-              url: "https://www.comfygen.com/data/tableau-consulting-services",
-              mainEntityOfPage:
-                "https://www.comfygen.com/data/tableau-consulting-services",
-              areaServed: "Global",
-
-              serviceType: [
-                "Tableau Dashboard Development",
-                "Tableau Consulting Services",
-                "Data Visualization",
-                "Business Intelligence Services",
-                "Predictive Analytics",
-                "Data Strategy & Architecture",
-                "Big Data Solutions",
-                "AI & Machine Learning Consulting",
-                "Data Engineering",
-              ],
-
-              sameAs: [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-              ],
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What are the benefits of Tableau Consulting Services?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Benefits of Tableau consulting services:\nFaster Time to Insight: Consultants help you quickly build intuitive dashboards, reducing reporting time and improving decision-making speed.\nTailored Visualizations: You get customized dashboards aligned to your KPIs, business logic, and workflows.\nScalability: Expert consultants design solutions that grow with your data and user base.\nData Accuracy & Consistency: A Professional setup ensures clean, governed, and unified data sources.\nCost Efficiency: Avoid costly trial-and-error by leveraging proven best practices and reusable templates.\nUpskilling: Consultants often provide training sessions, empowering your team to work confidently with Tableau.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How can Tableau consulting services help optimize data visualization?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Tableau consulting services enhance data visualization by:\nDesigning Interactive Dashboards: Consultants use Tableau’s full potential—filters, drill-downs, and calculated fields—to create user-friendly, interactive experiences.\nApplying UX/UI Best Practices: Experts apply design principles for color, layout, and flow to ensure dashboards are intuitive and actionable.\nPerformance Tuning: They optimize dashboard load times and improve responsiveness with best-practice data modeling.\nStorytelling with Data: Consultants craft visual narratives that make complex data easy to understand for business users.\nAdvanced Charting Techniques: They utilize Tableau's advanced features (like parameters, animations, and dynamic visuals) for deeper insights.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "What are the key features of Tableau Consulting Services?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Key features of Tableau consulting services:\nRequirement Analysis & KPI Mapping\nCustom Dashboard Development\nData Preparation & ETL (Extract, Transform, Load)\nData Source Integration\nDashboard Optimization & Performance Tuning\nTableau Server or Tableau Cloud Setup\nSecurity & Access Control Configuration\nTraining & Enablement for Business Users\nOngoing Support & Maintenance",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Can Tableau integrate with my existing data sources?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Tableau integrates with your existing data sources. It can connect through:\nRelational Databases (e.g., MySQL, SQL Server, Oracle, PostgreSQL)\nCloud Platforms (e.g., AWS Redshift, Google BigQuery, Azure Synapse)\nExcel & CSV files\nERP & CRM Systems (e.g., Salesforce, SAP, NetSuite)\nAPIs & Web Connectors for custom integrations",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How can Tableau consulting services transform my current data strategy?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Tableau consulting services elevate your data strategy by:\nCentralizing Data Access: Break silos by creating unified dashboards from multiple sources.\nImproving Decision-Making: Enable stakeholders with real-time insights and self-service analytics.\nData Governance & Compliance: Implement security protocols, role-based access, and audit-ready reporting.\nIncreasing Adoption: Through user-centric dashboards and training, consultants boost data literacy across teams.\nFuture-Proofing Your Analytics: Consultants align Tableau capabilities with long-term business goals, scalability, and predictive analytics readiness.",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "http://www.schema.org",
-              "@type": "Product",
-              brand: "Comfygen Technologies",
-              Name: "Tableau Consulting Services | Comfygen Technologies",
-              image:
-                "https://www.comfygen.com/comfygen-images/tableau-consulting-services/about1.webp",
-              description:
-                "Comfygen Technologies offers expert Tableau consulting services to help businesses build interactive dashboards, optimize analytics workflows, and turn raw data into actionable insights.",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "115",
-              },
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Home",
-                  item: "https://www.comfygen.com/",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "Data Services",
-                  item: "https://www.comfygen.com/data",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 3,
-                  name: "Tableau Consulting Services",
-                  item: "https://www.comfygen.com/data/tableau-consulting-services",
-                },
-              ],
-            }),
-          }}
-        />
+      
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
@@ -464,7 +246,7 @@ export default function Mobile(props: any) {
       <div className="pt-16">
         <HeroSectionForAllPages
           heading="Tableau Consulting Service Provider"
-          ptag="Comfygen provides end-to-end Tableau consulting services to help businesses unlock the full potential of their data. Our certified Tableau experts specialize in custom dashboard development, data integration, reporting and analytics, server setup, and performance optimization. By creating interactive, real-time dashboards, we simplify complex datasets and deliver actionable insights that empower smarter, faster business decisions."
+          ptag="Comfygen is a leading Tableau Consulting Service Provider helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions."
           li="Tailored Dashboards That Drive Action"
           li1="Interactive Visuals That Simplify Data"
           li2="Real-Time KPIs & Analytics at a Glance"
@@ -478,14 +260,14 @@ export default function Mobile(props: any) {
           bgImage="https://www.comfygen.com/comfygen-images/tableau-consulting-services/hero2.webp"
         />
 
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Tableau Consulting Services
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Provided by the Best Tableau Consulting Service Provider
               </h2>
-              <p className="text-base text-center font-normal">We simplify your data journey with tailored Tableau solutions built for speed, clarity, and impact. From integration to visualisation, our Tableau experts turn complex data into business intelligence. Explore our tableau consulting services</p>
+              <p className="text-base text-center font-normal">As a trusted Tableau Consulting Service Provider, our experts handle everything from data integration and preparation to advanced visualization and analytics. We turn complex datasets into clear business intelligence that helps teams track performance, uncover trends, and make informed decisions. Explore our Tableau consulting services to see how we help businesses get more value from their data.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -494,7 +276,7 @@ export default function Mobile(props: any) {
         </section>
         <AboutSection
           title=""
-          heading="Hire Tableau Experts to Transform Raw Data into Strategic Insights"
+          heading="Why Hire Tableau Experts From Best Tableau Consulting Service Provider?"
           description1="Tableau is a powerful platform, but to fully utilise its potential, you need more than a software installation. At Comfygen, our tableau consulting services are designed to help businesses turn raw, scattered data into meaningful, real-time insights that fuel <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' >smarter decisions</a> and measurable results."
           description2="Whether you’re struggling with disconnected data sources, manual reporting processes, or a lack of visibility into key metrics, our Tableau experts are here to help. We specialise in designing intuitive, industry-specific dashboards, integrating real-time data streams, and facilitating seamless data exploration and analysis"
           description3="With <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/'>Comfygen</a>, Tableau becomes more than just a data visualisation tool; it becomes a catalyst for smarter business decisions. We turn fragmented data into unified, interactive dashboards that deliver real-time data insights you can act on. Our goal is to help you cut through the noise, make data-backed decisions, and achieve measurable business success."
@@ -517,19 +299,11 @@ export default function Mobile(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Approach to Tableau Consulting Services
+               Our Approach to Tableau Consulting Services
               </h2>
               <p className="text-base font-normal mt-2">
-                We follow a structured yet flexible approach to ensure your{" "}
-                <a
-                  className="text-blue-500 font-semibold"
-                  href="https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/"
-                >
-                  Tableau dashboard
-                </a>{" "}
-                setup meets real business needs. Every step, from assessment to
-                optimisation, is focused on building a solution that performs,
-                scales, and delivers value.
+               As a trusted Tableau Consulting Service Provider, we follow a structured yet flexible approach to deliver <Link href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' className="text-blue-600 font-semibold">Tableau solutions</Link> aligned with real business goals. From data assessment and dashboard design to deployment and performance optimisation, every step is focused on building scalable, high-performing Tableau dashboards that deliver consistent business value.
+
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -541,14 +315,10 @@ export default function Mobile(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Our Capabilities
+                 Our Capabilities As Leading Tableau Consulting Service Provider
                 </h2>
                 <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                  At Comfygen, we empower businesses to unlock the full value of
-                  their data through tailored Tableau solutions. Our certified
-                  Tableau consultants work across the entire suite - Tableau
-                  Next, Cloud, Server, and Desktop - helping you build a more
-                  intelligent, faster, and more connected data environment.
+                 At Comfygen, we empower businesses to unlock the full value of their data through tailored Tableau solutions. Our certified Tableau consultants work across the entire suite - Tableau Next, Cloud, Server, and Desktop - helping you build a more intelligent, faster, and more connected data environment.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
@@ -609,7 +379,7 @@ export default function Mobile(props: any) {
           title="Frequently Asked Questions"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

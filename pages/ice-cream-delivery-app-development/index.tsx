@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./salonappdevelopment.json";
+import JSON_DATA from "./ice-cream.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -71,6 +71,14 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -81,27 +89,27 @@ const BlogSection = dynamic(
 const Process = [
   {
     title: "Requirement Analysis",
-    description: "We begin with requirement gathering and market research to understand your business model. Our experts analyze competitor apps and design a unique ice cream delivery app solution tailored to your goals."
+    description: "We start with detailed requirement gathering and market research to understand your business model. Our experts analyze competitor apps and design a custom ice cream delivery app solution tailored to your goals."
   },
   {
     title: "UI/UX Design & Wireframing",
-    description: "Our design team creates intuitive UI/UX for ice cream apps with smooth navigation, attractive visuals, and engaging user flows, ensuring an enjoyable ordering experience."
+    description: "Our <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX design</a> team creates intuitive UI/UX for ice cream apps with smooth navigation, attractive visuals, and engaging user flows, ensuring an enjoyable ordering experience."
   },
   {
     title: "Custom App Development",
-    description: "Using modern frameworks, we develop on-demand ice cream delivery apps with real-time tracking, multiple payment options, and AI-based personalization features."
+    description: "Using modern frameworks, we develop on-demand ice cream delivery apps with real-time tracking, multiple payment options, and AI-powered personalization features."
   },
   {
     title: "API Integration & Payment Gateway",
     description: "We integrate secure payment gateways, GPS tracking APIs, and third-party delivery tools to provide seamless ordering and delivery management."
   },
   {
-    title: " Quality Testing & Performance Check",
+    title: "Quality Testing & Performance Check",
     description: "Our QA team performs end-to-end app testing to ensure bug-free performance, fast loading speed, and secure transactions across Android and iOS platforms."
   },
   {
     title: "Deployment & App Store Launch",
-    description: "We deploy your ice cream delivery app on Google Play Store and Apple App Store with complete compliance and optimized performance."
+    description: "We deploy your app on Google Play Store and Apple App Store, ensuring full compliance and optimized performance for maximum visibility and downloads"
   },
   {
     title: "Post-Launch Support & Maintenance",
@@ -127,199 +135,16 @@ export default function ClinicalApp(props: any) {
 
 
 
-  const jsonLdData = [
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Best Ice Cream Delivery App Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Launch your own ice cream delivery app with Comfygen Technologies. We deliver AI-based delivery app development, scalable, and white-label app development solutions for ice cream shops & startups.",
-      "url": "https://www.comfygen.com/ice-cream-delivery-app-development",
-      "mainEntityOfPage": "https://www.comfygen.com/ice-cream-delivery-app-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "Ice Cream Delivery App Development",
-        "On-demand Ice Cream Delivery App Development",
-        "White-label Ice Cream Delivery App Development",
-        "AI Ice Cream Delivery App Development",
-        "On-demand Dessert Delivery App"
-
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Ice Cream Ordering & Delivery App Development Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/ice-cream-delivery-app-development-about.webp",
-      "description": "Comfygen Technologies provides end-to-end ice cream ordering & delivery app development with AI, GPS, and blockchain features to grow your brand digitally.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "200"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Ice Cream Delivery App Development",
-        "item": "https://www.comfygen.com/ice-cream-delivery-app-development"
-
-      }]
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How much does it cost to build an ice cream delivery app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of ice cream delivery app development depends on features, design, platform (iOS, Android, or both), and technology stack. On average, a basic app may cost less, while an AI-powered, feature-rich solution with GPS tracking and subscriptions will cost more."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What features should an ice cream delivery app have?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A good ice cream delivery app should include user registration, menu browsing, real-time GPS tracking, multiple payment options, subscription plans, order scheduling, reviews & ratings, and AI-based personalization for better customer experience."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Do you provide white-label ice cream delivery app solutions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, at Comfygen, we offer white-label ice cream delivery app solutions that can be quickly customized with your branding, features, and design. This helps you launch your delivery business faster without building from scratch."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can startups launch an online ice cream delivery app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! We help startups and small businesses launch their own ice cream delivery apps with affordable, scalable, and secure solutions. Our apps are designed to grow with your business, from local deliveries to multi-city expansions."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Do you provide post-launch support and maintenance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we provide complete post-launch support, updates, and maintenance to ensure your ice cream delivery app runs smoothly. Our team fixes bugs, adds new features, and keeps your app up to date with the latest technologies."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to develop an ice cream delivery app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The development time depends on your app’s complexity. A simple app may take 4–6 weeks, while a feature-rich app with AI and blockchain integration can take 3–6 months. We provide a clear timeline after analyzing your requirements."
-        }
-
-
-      }]
-    }
-  ];
 
 
 
   return (
     <>
       <Head>
-        <title>Ice Cream Delivery App Development Company | AI Solutions
+        <title>Ice Cream Delivery App Development Company | Comfygen
         </title>
-        <meta name="description" content="Looking to build an ice cream delivery app? Comfygen offers AI-powered ice cream delivery app development with GPS tracking, subscriptions, and secure payments." />
+        <meta name="description" content="Comfygen is a trusted ice cream delivery app development company offering AI-powered, secure, and scalable app solutions for startups and enterprises." />
 
         <meta name="keywords" content="Ice Cream Delivery App Development, On-demand Ice Cream Delivery App Development, White-label Ice Cream Delivery App Development, AI Ice Cream Delivery App Development, On-demand Dessert Delivery App" />
 
@@ -406,7 +231,7 @@ export default function ClinicalApp(props: any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData)
+            __html: JSON.stringify(JSON_DATA.jsonLdData)
           }}
         />
       </Head>
@@ -415,12 +240,12 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Ice Cream Delivery App Development Company"
-          ptag="Build a fast, secure, and scalable Ice Cream Delivery App with Comfygen. We are a trusted Ice Cream Delivery App Development Company delivering AI-powered, on-demand, and subscription-based solutions for ice cream shops, startups, and enterprises. Our apps come with real-time GPS tracking, smart recommendations, and secure payments to help you grow online orders and customer loyalty."
+          heading="Best Ice Cream Delivery App Development Company"
+          ptag="Launch a powerful ice cream delivery app with Comfygen and take your business online with confidence. We are a leading Ice cream delivery app development company offering advanced Ice cream delivery app development services, including AI-powered, on-demand, and subscription-based solutions for ice cream shops, startups, and enterprises."
           li="AI-Powered Personalization"
-          li1="Real-Time Order Tracking"
-          li2="Blockchain Security"
-          li3="Scalable & Customizable Solutions"
+          li1="Real-Time Order & Delivery Tracking"
+          li2="Enterprise-Grade Security"
+          li3="Scalable & Fully Custom App Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -447,8 +272,8 @@ export default function ClinicalApp(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="Why Your Business Needs an Ice Cream Delivery App in 2025"
-          description1="The global ice cream market is projected to reach $114.7 billion by 2030, with a growing share driven by online ice cream delivery services. Customers today expect convenience, real-time tracking, and personalized offers, making an Ice Cream Delivery App Development solution a necessity rather than a luxury for ice cream brands, cafes, and dessert startups."
+          heading="Why Your Business Needs an Ice Cream Delivery App"
+          description1="The global ice cream market is projected to reach $114.7 billion by 2030, with a growing share driven by online ice cream delivery services. Customers today expect convenience, real-time tracking, and personalized offers, making an Ice cream delivery app development solution a necessity rather than a luxury for ice cream brands, cafes, and dessert startups."
           description2="Whether you operate a standalone ice cream shop, run a multi-chain parlor, or launch a frozen dessert startup, a mobile app can boost your business with AI-powered personalization, subscription-based deliveries, blockchain-secure transactions, and instant notifications."
           description3="The AI-powered Ice cream delivery app development services provided by Comfygen help businesses to increase reach, streamline orders, and maximize customer satisfaction with future-ready digital solutions."
           points={[
@@ -508,6 +333,16 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
+        <CallToAction
+          heading="Launch Your Ice Cream Delivery App Today"
+          text="Take your ice cream business online with a fast, secure, and feature-rich app. Delight your customers with easy ordering, real-time tracking, and seamless payments while boosting sales and loyalty."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
+
+
 
         <section className=" lg:py-10 py-10">
           <Features
@@ -520,8 +355,8 @@ export default function ClinicalApp(props: any) {
 
 
         <TrendsSection
-          heading="Technologies We Use to Build Smart Ice Cream Delivery Apps"
-          subtitle="Comfygen is a top-notch ice cream delivery mobile app development agency. We leverage the latest technologies to build innovative and scalable ice cream delivery app solutions. Our advanced tech stack ensures real-time order tracking, secure payments, and seamless customer experiences for ice cream shops, delivery startups, and enterprises."
+          heading="Technologies We Utilize for Ice Cream Delivery App Development"
+          subtitle="Comfygen is a top-notch ice cream delivery mobile app development agency. We leverage the latest technologies to build innovative and scalable ice cream delivery app solutions."
           trends={JSON_DATA.Emerging}
         />
 
@@ -531,7 +366,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">End-to-End Ice Cream Delivery App Development Process</h2>
               <p className="text-base font-normal mt-2">
-                Comfygen Technologies is one of the best AI ice cream delivery app development company in India, USA, UK, and UAE. We follow a structured process to deliver high-quality and scalable ice cream delivery app development solutions. From idea to launch, our team ensures smooth execution, advanced features, and reliable performance.
+               Comfygen Technologies is one of the best AI ice cream delivery app development company in India, USA, UK, and UAE. We follow a structured process to deliver high-quality and scalable ice cream delivery app development solutions. From idea to launch, our team ensures smooth execution, advanced features, and reliable performance.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -555,7 +390,7 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Ice Cream Delivery App Developers"
-          text="Want to start your own ice cream delivery business? Hire skilled ice cream delivery app developers from Comfygen to build a safe, fast, and user-friendly mobile app for your brand. We create custom ice cream ordering apps with smart AI suggestions, live GPS tracking, easy subscription plans, and secure blockchain payments."
+          text="Want to start your own ice cream delivery business? Hire skilled ice cream delivery <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>mobile app developers</a> from Comfygen to build a safe, fast, and user-friendly mobile app for your brand. We create custom ice cream ordering apps with smart AI suggestions, live GPS tracking, easy subscription plans, and secure blockchain payments."
           text1=""
           buttonText="Hire Developer"
           buttonLink="/contact-us"
@@ -576,7 +411,7 @@ export default function ClinicalApp(props: any) {
         {/* <ContactFromCenter /> */}
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

@@ -79,37 +79,37 @@
     {
       "img": "<IconRobot stroke={1.5} className='w-12 h-12'/>",
       "title": "AI-Based Smart Scheduling",
-      "desc": "Our AI-powered interview scheduling software uses intelligent algorithms to automatically match interviewers and candidates based on availability, priority, and role fit. This eliminates manual coordination and reduces time-to-hire. Ensure faster and smarter scheduling with AI that adapts to real-time changes and ensures maximum efficiency across your hiring process.",
+      "desc": "Our AI interview scheduling software automatically matches candidates and interviewers based on availability, role fit, and priority—eliminating manual coordination and reducing time-to-hire.",
       "listItems": []
     },
     {
       "img": " <IconRefresh stroke={1.5} className='w-12 h-12'/>",
-      "title": "Self-Rescheduling Options for Candidates",
-      "desc": "Give candidates the flexibility they expect with self-rescheduling interview software features. Our platform allows applicants to independently modify their interview slots based on real-time availability, reducing back-and-forth communication. This seamless, automated rescheduling improves candidate experience while freeing up recruiters to focus on evaluating talent, not managing calendars.",
+      "title": "Self-Rescheduling for Candidates",
+      "desc": "Enable candidates to reschedule interviews on their own using real-time availability, minimizing back-and-forth communication and improving candidate experience.",
       "listItems": []
     },
     {
       "img": "<IconBrain stroke={1.5} className='w-12 h-12'/>",
       "title": "Smart Job Recommendations",
-      "desc": "Enhance your recruitment strategy with AI-driven smart job recommendation systems built into the scheduling app. By analyzing candidate skills, past roles, and job descriptions, our platform automatically suggests the most relevant positions, increasing the likelihood of successful matches and improving both candidate engagement and recruiter efficiency.",
+      "desc": "AI-driven job recommendations match candidates to the most relevant roles by analyzing skills, experience, and job requirements for better hiring outcomes.",
       "listItems": []
     },
     {
       "img": "<IconMail stroke={1.5} className='w-12 h-12'/>",
-      "title": "Automated Email & SMS Notifications",
-      "desc": "Keep your interview process on track with automated email and SMS notifications. Our AI interview scheduling software sends branded, personalized reminders to candidates and interviewers, reducing no-shows and improving communication. Stay consistent, timely, and professional with every interaction through automation that enhances engagement and trust.",
+      "title": "Automated Email & SMS Alerts",
+      "desc": "Send branded, automated email and SMS reminders to reduce no-shows and keep candidates and interviewers informed at every stage.",
       "listItems": []
     },
     {
       "img": "<IconTools stroke={1.5} className='w-12 h-12'/>",
-      "title": "Interview Kits & Task Automation",
-      "desc": "Empower hiring teams with customizable interview kits and task automation tools. Interviewers receive role-specific documents, questions, and evaluation criteria automatically, ensuring a consistent and structured interview experience. Combine this with automated post-interview tasks like feedback collection to streamline every step of the recruitment process.",
+      "title": "Interview Kits & Automation",
+      "desc": "Provide interviewers with role-specific kits, questions, and automated feedback workflows to ensure structured and consistent interviews.",
       "listItems": []
     },
     {
       "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>",
-      "title": "Support for All Interview Types",
-      "desc": "Our platform supports various interview types including virtual, in-person, hybrid, round-robin, and panel interviews. Easily schedule and manage complex formats with built-in tools that adapt to your organization's unique needs. Whether you're scaling remote hiring or managing on-site interviews, we provide the flexibility modern teams demand.",
+      "title": "All Interview Types Supported",
+      "desc": "Easily manage virtual, in-person, hybrid, panel, and round-robin interviews with a flexible AI-powered scheduling platform.",
       "listItems": []
     }
   ],

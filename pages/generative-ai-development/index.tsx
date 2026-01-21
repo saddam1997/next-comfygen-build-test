@@ -230,137 +230,14 @@ export default function Mobile(props) {
           content="Looking for the best Generative AI software development company in India? We offer cutting-edge AI development solutions, including custom GenAI models, automation, and AI-powered applications for enterprise businesses."
         />
 
-        <Script
-          type="application/ld+json"
-          id="jsonld-address"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            streetAddress:
-              "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-            addressLocality: "Jaipur, Rajasthan",
-            addressRegion: "India",
-            postalCode: "302006",
-            telephone: "+91-958-786-7258",
-          })}
-        </Script>
 
-        <Script
+        <script
           type="application/ld+json"
-          id="jsonld-address-canada"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            streetAddress: "40 Tuxedo Ct, Toronto, ON",
-            addressLocality: "Toronto",
-            addressRegion: "Canada",
-            postalCode: "M1G3S7",
-            telephone: "+1 579-977-4475",
-          })}
-        </Script>
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
+        />
 
-        <Script
-          type="application/ld+json"
-          id="jsonld-service"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Custom GenAI Development Services - Generative AI Development Company",
-            provider: {
-              "@type": "Organization",
-              name: "Comfygen",
-              url: "https://www.comfygen.com/",
-            },
-            description:
-              "Comfygen offers custom Generative AI development services, delivering AI-powered solutions for automation, content creation, chatbots, and business intelligence. Transform your business with cutting-edge AI technology.",
-            url: "https://www.comfygen.com/generative-ai-development",
-            mainEntityOfPage:
-              "https://www.comfygen.com/generative-ai-development",
-            areaServed: "Global",
-            serviceType: [
-              "Generative AI Development Services",
-              "Smart AI Assistants and Chatbot",
-              "AI Software Development",
-              "Generative AI Consulting Services",
-              "Data Engineering for Generative AI",
-              "Machine Learning Integration for Generative AI",
-              "Generative AI Model Development",
-              "Natural Language Processing (NLP) Solutions",
-              "Machine Learning Development",
-              "Generative AI for Healthcare",
-              "Generative AI for Education",
-              "Generative AI Security",
-              "Generative AI Design",
-              "Generative AI-Powered Automation Solutions",
-              "Generative AI mobile App Development",
-            ],
-            sameAs: [
-              "https://www.facebook.com/comfygen",
-              "https://www.linkedin.com/company/comfygen-private-limited",
-            ],
-          })}
-        </Script>
 
-        <Script
-          type="application/ld+json"
-          id="jsonld-business"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Comfygen",
-            image: "https://www.comfygen.com/svg/Logo1.svg",
-            url: "https://www.comfygen.com/",
-            telephone: "+91-958-786-7258",
-            priceRange: "$",
-            address: [
-              {
-                "@type": "PostalAddress",
-                streetAddress:
-                  "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-                addressLocality: "Jaipur",
-                postalCode: "302006",
-                addressCountry: "IN",
-              },
-              {
-                "@type": "PostalAddress",
-                streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-                addressLocality: "Toronto",
-                postalCode: "M1G3S7",
-                addressCountry: "Canada",
-              },
-            ],
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday",
-              ],
-              opens: "00:00",
-              closes: "23:59",
-            },
-            sameAs: [
-              "https://www.facebook.com/comfygen",
-              "https://twitter.com/comfygentech",
-              "https://www.instagram.com/comfygen_/?hl=en",
-              "https://www.youtube.com/@ComfygenBusiness",
-              "https://www.linkedin.com/company/comfygen-private-limited",
-              "https://www.comfygen.com/",
-            ],
-          })}
-        </Script>
+
       </Head>
       <LazyLoad height={80} offset={100}>
         <Header />
@@ -388,16 +265,9 @@ export default function Mobile(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Offer The Best Artificial Intelligence Software Development
-                Services For Startups
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Offer the Best Generative AI Software Development Services
               </h2>
-              <p className="text-base text-center font-normal">Data is used to drive business results through custom AI and
-                machine learning software development solutions. As one of the
-                leading custom AI mobile app development solution companies, we
-                transform raw data into actionable insights, facilitating
-                operational efficiency and enhanced decision-making. We offer
-                reliable AI enterprise software development services that can
-                make your vision a reality.</p>
+              <p className="text-base text-center font-normal">We leverage data-driven Generative AI solutions to help startups innovate and scale faster. Our custom AI models and intelligent automation transform raw data into actionable insights, delivering secure, scalable, and future-ready Generative AI software solutions.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -457,8 +327,8 @@ export default function Mobile(props) {
         </section>
 
         <TechStack
-          title="AI Technology Stack Used in Our Generative AI App Development"
-          description=""
+          title="Tech Stack Used in Our Generative AI App Development"
+          description="Our generative AI apps are built using a reliable technology stack that includes OpenAI GPT models, Hugging Face Transformers, spaCy, and NLTK. This setup helps us create AI solutions that understand and generate language accurately while scaling smoothly for real business use."
           customTechData={JSON_DATA.customTechData}
         />
 
@@ -467,12 +337,10 @@ export default function Mobile(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Generative AI Software Development Roadmap
+                Our Generative AI Development process
               </h2>
               <p className="text-base font-normal mt-2">
-                Comfygen adheres to a structured process that ensures the
-                success of any Gen AI development project. Our comprehensive
-                approach consists of 7 main components Processes:
+                Comfygen follows a well-defined and proven process to ensure the success of every Generative AI development project. Our comprehensive approach is built around a set of 
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -482,8 +350,8 @@ export default function Mobile(props) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Artificial Intelligence Success Stories"
-            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+            heading="Our Generative AI Development Project Success Stories"
+            description="At Comfygen, we deliver powerful Generative AI solutions that drive measurable business results. Our GenAI expertise helps organizations automate workflows, improve decision-making, and build scalable, intelligent systems that accelerate innovation and operational efficiency."
           />
         </section>
 
@@ -494,9 +362,9 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
         <IndustriesServe
-          heading="Generative AI Use Cases – Revolutionizing Industries with Intelligent Automation"
-          description="Generative AI is transforming industries across the globe by creating innovative solutions that drive efficiency, creativity, and business growth. At Comfygen, we leverage generative AI to provide custom solutions tailored to specific business needs. Below are some of the key use cases where our AI-powered applications have made a significant impact:"
-          sliderData={JSON_DATA.customSliderData}
+          heading=""
+          description=""
+         
         />
         <HireDeveloper
           heading="Hire Generative AI Developers to Build Intelligent & Scalable AI Solutions"
@@ -522,7 +390,7 @@ export default function Mobile(props) {
           title=" About Blockchain Technology"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

@@ -119,10 +119,10 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-      <title>AWS Analytics Services | Data Engineering & AI/ML Solutions – Comfygen</title>
+        <title>AWS Analytics Services | Data Engineering & AI/ML Solutions – Comfygen</title>
         <meta name="description" content="Comfygen provides AWS analytics services, offering secure, scalable, and cost-efficient data pipelines, real-time analytics, AI/ML integration, and cloud-native solutions to drive smarter business decisions." />
 
-        <meta name="keywords" content="Data Engineering on AWS, Real-Time Analytics, Cloud Data Warehousing, BI Dashboard Development, ETL Pipeline Automation"/>
+        <meta name="keywords" content="Data Engineering on AWS, Real-Time Analytics, Cloud Data Warehousing, BI Dashboard Development, ETL Pipeline Automation" />
 
         <link rel="canonical" href="https://www.comfygen.com/data/aws-analytics-services" />
 
@@ -144,220 +144,15 @@ export default function Mobile(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/aws-analytics-services/og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen Technologies",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/svg/Logo1.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "sales",
-                contactOption: "WhatsApp",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-                areaServed: ["IN", "US", "CA", "GB"],
-
-                availableLanguage: "en, in",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-              ],
-            }),
-          }}
-        />
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Comfygen Technologies",
-              image: "https://www.comfygen.com/svg/Logo1.svg",
-              "@id": "Comfygen Technologies",
-              url: "https://www.comfygen.com/",
-              telephone: "+91-958-786-7258",
-              priceRange: "$",
-              address: [
-                {
-                  "@type": "PostalAddress",
-                  streetAddress:
-                    "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-                  addressLocality: "Jaipur",
-                  postalCode: "302006",
-                  addressCountry: "IN",
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-                  addressLocality: "Toronto",
-                  postalCode: "M1G3S7",
-                  addressCountry: "Canada",
-                },
-              ],
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "00:00",
-                closes: "23:59",
-              },
-              sameAs: [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-                "https://www.comfygen.com/",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "AWS Analytics Services",
-              "provider": {
-                "@type": "Organization",
-                "name": "Comfygen Technologies",
-                "url": "https://www.comfygen.com/"
-              },
-              "description": "Custom AWS analytics solutions using Redshift, Glue, Kinesis, Athena, QuickSight, and more. Real-time, secure, and scalable.",
-              "url": "https://www.comfygen.com/data/aws-analytics-services",
-              "mainEntityOfPage": "https://www.comfygen.com/data/aws-analytics-services",
-              "areaServed": "Global",
-              "serviceType": [
-            "Data Engineering on AWS",
-                "Real-Time Analytics",
-                "Cloud Data Warehousing",
-                "BI Dashboard Development",
-                "ETL Pipeline Automation"
-            
-              ],
-             
-              "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-                
-              ]
-            }
-            ),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What are AWS analytics services, and how can they help my business?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "AWS offers a wide range of analytics tools that help you collect, store, process, and analyze data at scale. These services can help you make faster decisions, improve operations, and unlock insights from structured and unstructured data."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "Which AWS analytics tools do you use?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "We use a tailored mix based on your needs — including Amazon Redshift, AWS Glue, Athena, Kinesis, QuickSight, EMR, and Lake Formation. We design the right stack for your performance, security, and cost requirements."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "Can AWS analytics services work with my existing systems?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes. AWS integrates with most CRMs, ERPs, databases (like MySQL, PostgreSQL, SQL Server), APIs, flat files, and even on-premise systems. We handle the full data integration process."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "How long does it take to implement an AWS analytics solution?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "That depends on the scope, but most MVP setups take 3 to 6 weeks. Complex, enterprise-grade solutions with multiple data sources can take 2–3 months. We provide a clear timeline upfront."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "Is my data secure in AWS?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Absolutely. AWS is built with strong security features, including encryption, IAM, VPC, and compliance with standards like GDPR, HIPAA, and SOC 2. We also add custom security layers and access controls for extra protection."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "How do you handle ongoing support and optimization?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "We offer post-launch support, performance tuning, cost optimization, and can scale your system as your data grows. You can choose between a fixed support package or on-demand hours."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "Do I need in-house data experts to use AWS analytics services?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Not necessarily. We build systems that are easy to manage, and we offer training for your team. We can also handle everything end-to-end if you want a fully managed solution."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  name: "How much do AWS analytics services cost?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "There’s no fixed price — AWS follows a pay-as-you-go model. We help you choose cost-effective services and optimize usage to avoid waste. We also set up budget alerts and forecasting tools."
-                  }
-                }
-              ],
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({"@context":"http://www.schema.org",
-              "@type":"Product",
-              "brand":"Comfygen Technologies",
-              "Name":"AWS Analytics Services | Real-Time Data Insights with Comfygen",
-              "image":"https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp",
-              "description":"Unlock actionable insights with AWS Analytics Services. From Redshift to Glue and Kinesis, we build custom, scalable solutions for real-time data performance.",
-              "aggregateRating":{"@type":"AggregateRating",
-              "ratingValue":"4.9",
-              "reviewCount":"115"}}
-              ),
-          }}
-        />
 
       </Head>
- 
+
       <Header />
 
       <div className="pt-16">
@@ -377,16 +172,16 @@ export default function Mobile(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/aws-analytics-services/hero1.webp"
         />
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               AWS Analytics Services We Offer
+                AWS Analytics Services We Offer
               </h2>
               <p className="text-base text-center font-normal">
-               At Comfygen, we offer AWS <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Data Analytics Services</a> designed for startups, enterprises, and data-driven organizations. Our cloud-native solutions help you harness the full power of data analytics and data science using AWS tools.
+                At Comfygen, we offer AWS <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Data Analytics Services</a> designed for startups, enterprises, and data-driven organizations. Our cloud-native solutions help you harness the full power of data analytics and data science using AWS tools.
               </p>
             </div>
             <div className="">
@@ -428,8 +223,8 @@ export default function Mobile(props) {
         />
 
         <TechStack
-          title="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          title="Our Technology Stack Used for AWS Analytics Services"
+          description="At Comfygen, we leverage advanced AWS tools and cloud technologies to build robust, scalable, and data-driven analytics solutions for businesses of all sizes. Our AWS analytics expertise spans data storage, processing, and visualization, ensuring actionable insights that drive smarter business decisions. Here’s a glimpse of the AWS technologies our team uses:"
         />
 
         <section className="bg-[#fff] lg:py-16 py-10">
