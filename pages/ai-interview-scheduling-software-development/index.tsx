@@ -225,16 +225,6 @@ export default function Ecommerce(props:any) {
           link="/about-us"
           linkText="Explore More"
         />
-        {/* <ContactFromCenter /> */}
-
-
-
-
-        <CardItem
-          heading="Unlock Seamless Hiring with Our AI Interview Scheduling Software Features"
-          subheading="Empower your recruitment process with Comfygen’s feature-rich AI interview scheduler software development services. Our AI interview scheduling app development solutions are designed to automate, optimize, and scale your hiring workflow using intelligent features tailored for modern HR teams and enterprises."
-          techData={JSON_DATA.CardGridData}
-        />
         <CallToAction
           heading="Transform Your Hiring Process with AI Innovation"
           text="Partner with Comfygen to build AI-powered interview scheduling software that streamlines hiring, enhances candidate experience, and boosts recruitment efficiency. Let’s innovate together!"
@@ -244,12 +234,11 @@ export default function Ecommerce(props:any) {
           imageAlt="Future of Technology"
         />
 
-        <CoreFeaturesSection
-          title="Advanced AI Capabilities That Redefine Recruitment"
-          subtitle="Our AI interview scheduler software development services come packed with next-level intelligence to help you hire faster, smarter, and bias-free. Explore the powerful features our platform delivers right out of the box:"
-          features={JSON_DATA.LeadingSoftware}
+        <CardItem
+          heading="Unlock Seamless Hiring with Our AI Interview Scheduling Software Features"
+          subheading="Empower your recruitment process with Comfygen’s feature-rich AI interview scheduler software development services. Our AI interview scheduling app development solutions are designed to automate, optimize, and scale your hiring workflow using intelligent features tailored for modern HR teams and enterprises."
+          techData={JSON_DATA.CardGridData}
         />
-
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
@@ -257,6 +246,13 @@ export default function Ecommerce(props:any) {
             description="Explore our portfolio of advanced AI interview scheduler software development solutions, built for modern enterprises and hiring teams. Platforms are designed to be user-centric, automated, and seamlessly integrated."
           />
         </section>
+
+        <CoreFeaturesSection
+          title="Advanced AI Capabilities That Redefine Recruitment"
+          subtitle="Our AI interview scheduler software development services come packed with next-level intelligence to help you hire faster, smarter, and bias-free. Explore the powerful features our platform delivers right out of the box:"
+          features={JSON_DATA.LeadingSoftware}
+        />
+
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -270,20 +266,18 @@ export default function Ecommerce(props:any) {
           </div>
         </section>
 
-
-
-
+        <LatestTechnology
+          heading="Boost Team Productivity with Our Collaborative Interview Scheduling Tools"
+          subheading="As a top AI-powered interview scheduling software development company, we go beyond automation to enable seamless collaboration and candidate experience management. Our advanced tools empower hiring teams to manage interviews, review responses, and communicate efficiently across all stages of the hiring lifecycle."
+          techData={JSON_DATA.latesttech}
+        />
 
         <TechStack
           title="Cutting-Edge Tech Stacks We Use for AI Interview Scheduler Software Development"
           description="Our team builds smart interview scheduling apps as well as secure, scalable, and high-performance solutions. A top-notch AI-powered interview scheduling software development company for enterprises, we make use of modern technologies for real-time automation, AI integration, and enterprise-grade reliability."
         />
 
-        <LatestTechnology
-          heading="Boost Team Productivity with Our Collaborative Interview Scheduling Tools"
-          subheading="As a top AI-powered interview scheduling software development company, we go beyond automation to enable seamless collaboration and candidate experience management. Our advanced tools empower hiring teams to manage interviews, review responses, and communicate efficiently across all stages of the hiring lifecycle."
-          techData={JSON_DATA.latesttech}
-        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}

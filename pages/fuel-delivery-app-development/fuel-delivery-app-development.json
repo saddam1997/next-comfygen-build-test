@@ -28,57 +28,48 @@
   ],
   "servicesData": [
     {
-      "title": "On-demand Fuel Delivery App Development",
-      "description": "We specialize in on-demand fuel delivery app development that enables businesses to provide doorstep petrol, diesel, and gas delivery. From user-friendly <a href='https://www.comfygen.com/web-design' class='underline'>UI/UX design</a> to advanced GPS navigation, we deliver on-demand fuel delivery apps that enhance customer experience and maximize efficiency.",
+      "title": "On-Demand Fuel Delivery App Development",
+      "description": "We build powerful on-demand fuel delivery apps that enable doorstep delivery of petrol, diesel, and gas. From intuitive <a href='https://www.comfygen.com/web-design'>UI/UX</a> to real-time tracking, our solutions help businesses manage orders, drivers, and deliveries seamlessly while improving customer satisfaction.",
       "features": [
-        "Real-Time Fuel Tracking",
-        "Seamless Payment Integration",
-        "User & Driver Dashboards"
+        "Real-time fuel delivery tracking",
+        "GPS-based route optimization",
+        "Secure online payment systems"
       ]
     },
     {
-      "title": "Petrol Delivery App Development",
-      "description": "Our expert petrol delivery app development team builds robust and reliable petrol delivery apps for businesses looking to simplify operations and offer contactless fuel delivery services. Customers can easily book fuel, track deliveries, and pay securely within the app.",
+      "title": "White-Label Fuel Delivery App Development",
+      "description": "Launch your own branded fuel delivery app quickly with our ready-to-deploy <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label fuel delivery app development solutions</a>. Ideal for startups and enterprises, these apps are fully customizable, scalable, and designed for rapid market entry.",
       "features": [
-        "nstant Fuel Booking",
-        "GPS-based Navigation",
-        "Secure Digital Payments"
-      ]
-    },
-    {
-      "title": "Diesel Delivery App Development",
-      "description": "We develop high-performance diesel delivery mobile apps designed for logistics companies, transporters, and enterprises needing reliable diesel supply. With automation and analytics, businesses can cut costs and improve fuel distribution.",
-      "features": [
-        "Order Scheduling & Automation",
-        "Fuel Consumption Analytics",
-        "Push Notifications & Alerts"
-      ]
-    },
-    {
-      "title": "Gas Delivery App Development",
-      "description": "Comfygen is a trusted gas delivery app development company that provides gas delivery app solutions to empower businesses to deliver LPG, CNG, and other gases directly to customers with safety and compliance features.",
-      "features": [
-        "Safety & Compliance Features",
-        "In-App Order Management",
-        "Real-Time Notifications"
-      ]
-    },
-    {
-      "title": "White-label Fuel Delivery App Solutions",
-      "description": "Launch your own branded fuel delivery app quickly with our customizable <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline'>white-label fuel delivery app development solutions</a>. Designed for startups and enterprises, our ready-to-deploy platforms come with powerful features and scalability.",
-      "features": [
-        "Fully Branded Experience",
-        "Scalable Backend Architecture",
-        "Multi-Platform Support"
+        "100% brand customization",
+        "Scalable backend architecture",
+        "Android & iOS compatibility"
       ]
     },
     {
       "title": "Custom Fuel Delivery Mobile App Development",
-      "description": "We build tailor-made fuel delivery apps that match your business model and growth strategy. Whether for single stations or large-scale enterprises, our apps offer flexible integrations and enhanced performance.",
+      "description": "We provide tailor-made custom fuel delivery mobile app development services based on your unique business model. Whether you operate a single fuel station or a multi-city network, our custom gas delivery app solutions ensure flexibility, performance, and future scalability.",
       "features": [
         "Custom UI/UX Design",
         "API & CRM Integration",
         "Advanced Reporting Tools"
+      ]
+    },
+    {
+      "title": "Fleet Fuel Management App Development",
+      "description": "Our fleet fuel management app development solutions help logistics companies and enterprises monitor fuel consumption, control costs, and optimize refueling operations through real-time insights and automation.",
+      "features": [
+        "Fleet Tracking & Monitoring",
+        "Fuel Usage Reports",
+        "Automated Refueling & Alerts"
+      ]
+    },
+    {
+      "title": "Fuel Delivery Marketplace App Development",
+      "description": "As a top-rated fuel delivery app development company, we build scalable fuel delivery marketplace apps that connect multiple fuel vendors with customers on a single platform. These apps support vendor onboarding, commission management, and multi-role dashboards.",
+      "features": [
+        "Multi-vendor Management System",
+        "Commission & Revenue Models",
+        "Customer & Vendor Dashboards"
       ]
     },
     {
@@ -89,25 +80,10 @@
         "Real-time Fuel Price Updates",
         "Map Integration & Directions"
       ]
-    },
-    {
-      "title": "Fleet Fuel Management App Development",
-      "description": "Our fleet fuel management app solutions are designed for logistics companies and enterprises to monitor and optimize fuel usage. With real-time analytics and digital controls, businesses can cut operational costs.",
-      "features": [
-        "Fleet Tracking & Monitoring",
-        "Fuel Usage Reports",
-        "Automated Refueling & Alerts"
-      ]
-    },
-    {
-      "title": "Fuel Delivery Marketplace App Development",
-      "description": "As a top-rated fuel delivery app development company, we build marketplace platforms that connect multiple fuel providers with customers under one app. These fuel delivery marketplace apps make sure vendor management, commission models, and scalable business opportunities.",
-      "features": [
-        "Multi-vendor Management",
-        "Commission & Revenue Model",
-        "Customer & Vendor Dashboards"
-      ]
     }
+    
+    
+    
   ],
   "BusinessSolustion": {
     "title": "Next-Gen Fuel Delivery App Development with AI Innovation",

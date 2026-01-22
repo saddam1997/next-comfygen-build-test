@@ -284,24 +284,19 @@ export default function Mobile(props: any) {
           linkText="Explore More"
         />
 
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Artificial Intelligence Success Stories"
+            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
+          />
+        </section>
 
-
-
-        {/* <NumberCard
-          heading="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
-          data={data}
-        /> */}
-        <TechStack
-          title="Tech Stack Use to Develop Best AI Mobile App Development Services"
-          description="At Comfygen, we use cutting-edge tools and technologies to build scalable, secure, and innovative AI-powered mobile apps for enterprises and SMEs. Our AI and ML expertise across modern platforms and cloud services ensures high-performance solutions tailored to your business goals."
-          customTechData={JSON_DATA.customTechData}
-        />
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our AI Mobile App Development Process 
+                Our AI Mobile App Development Process
               </h2>
               <p className="text-base font-normal mt-2">
                 At Comfygen, we follow a structured, transparent, and collaborative approach to deliver AI development solutions that align perfectly with your business objectives. Our proven development process ensures efficiency, seamless communication, and high-quality outcomes at every stage.
@@ -311,15 +306,17 @@ export default function Mobile(props: any) {
           </div>
         </section>
 
+        <IndustriesServe
+          heading="Get your industry to the next level with our custom AI Development services"
+          description="Our Artificial Intelligence (AI) engineers specialize in integrating the highest quality AI services into your business offerings, processes, and growth strategies."
 
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Artificial Intelligence Success Stories"
-            description="At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals"
-          />
-        </section>
+        />
+
+        <TechStack
+          title="Tech Stack Use to Develop Best AI Mobile App Development Services"
+          description="At Comfygen, we use cutting-edge tools and technologies to build scalable, secure, and innovative AI-powered mobile apps for enterprises and SMEs. Our AI and ML expertise across modern platforms and cloud services ensures high-performance solutions tailored to your business goals."
+          customTechData={JSON_DATA.customTechData}
+        />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -327,11 +324,11 @@ export default function Mobile(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <IndustriesServe
-          heading="Get your industry to the next level with our custom AI Development services"
-          description="Our Artificial Intelligence (AI) engineers specialize in integrating the highest quality AI services into your business offerings, processes, and growth strategies."
-        
-        />
+
+
+
+
+
         <HireDeveloper
           heading="Hire Our Dedicated AI Mobile Application Developers"
           text="Hire expert AI software developers from Comfygen with deep expertise in Machine Learning, Deep Learning, Neural Networks, and Computer Vision. Our AI engineers build secure, scalable, and data-driven solutions tailored to your business needs—helping you improve efficiency, drive innovation, and accelerate growth."
@@ -348,6 +345,23 @@ export default function Mobile(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
+
+
+        {/* <NumberCard
+          heading="Our Technology Stack Use to Develop Best AI Services"
+          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+          data={data}
+        /> */}
+
+
+
+
+        {/* portfoliodata */}
+
+
+
+
+
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}

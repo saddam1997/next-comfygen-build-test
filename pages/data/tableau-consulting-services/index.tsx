@@ -238,7 +238,7 @@ export default function Mobile(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
-      
+
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
       <Header />
@@ -285,40 +285,22 @@ export default function Mobile(props: any) {
           linkText="Talk to our expert"
         />
         {/* <ContactFromCenter /> */}
-
-
-
-
-        <IndustriesServe
-          heading="Industries We Serve"
-          description="Comfygen's tableau consulting services are designed to bring clarity, efficiency, and insight to data-heavy industries. We recognize the unique challenges of your industry and develop customized tableau solutions that redefine the way your business analyzes and leverages data."
-        />
-
-
-        <section className="bg-[#fff] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Approach to Tableau Consulting Services
-              </h2>
-              <p className="text-base font-normal mt-2">
-               As a trusted Tableau Consulting Service Provider, we follow a structured yet flexible approach to deliver <Link href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' className="text-blue-600 font-semibold">Tableau solutions</Link> aligned with real business goals. From data assessment and dashboard design to deployment and performance optimisation, every step is focused on building scalable, high-performing Tableau dashboards that deliver consistent business value.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
+        <section className="py-8">
+          <Portfolio
+            projects={portfolioData}
+            heading="Portfolio of Our Tableau Consulting Projects"
+            description="At Comfygen Technologies, we specialize in crafting Tableau dashboards that deliver real-time visibility, actionable insights, and measurable impact. Our Tableau services portfolio showcases our experience across multiple industries, helping businesses harness the power of data visualization for smarter decision-making."
+          />
         </section>
-
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+              <div className="flex flex-col  mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                 Our Capabilities As Leading Tableau Consulting Service Provider
+                  Our Capabilities As Leading Tableau Consulting Service Provider
                 </h2>
                 <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                 At Comfygen, we empower businesses to unlock the full value of their data through tailored Tableau solutions. Our certified Tableau consultants work across the entire suite - Tableau Next, Cloud, Server, and Desktop - helping you build a more intelligent, faster, and more connected data environment.
+                  At Comfygen, we empower businesses to unlock the full value of their data through tailored Tableau solutions. Our certified Tableau consultants work across the entire suite - Tableau Next, Cloud, Server, and Desktop - helping you build a more intelligent, faster, and more connected data environment.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
@@ -345,22 +327,33 @@ export default function Mobile(props: any) {
           </div>
         </section>
 
+
+        <section className="bg-[#fff] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Approach to Tableau Consulting Services
+              </h2>
+              <p className="text-base font-normal mt-2">
+                As a trusted Tableau Consulting Service Provider, we follow a structured yet flexible approach to deliver <Link href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' className="text-blue-600 font-semibold">Tableau solutions</Link> aligned with real business goals. From data assessment and dashboard design to deployment and performance optimisation, every step is focused on building scalable, high-performing Tableau dashboards that deliver consistent business value.
+
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <IndustriesServe
+          heading="Industries We Serve"
+          description="Comfygen's tableau consulting services are designed to bring clarity, efficiency, and insight to data-heavy industries. We recognize the unique challenges of your industry and develop customized tableau solutions that redefine the way your business analyzes and leverages data."
+        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={portfolioData}
-            heading="Portfolio of Our Tableau Consulting Projects"
-            description="At Comfygen Technologies, we specialize in crafting Tableau dashboards that deliver real-time visibility, actionable insights, and measurable impact. Our Tableau services portfolio showcases our experience across multiple industries, helping businesses harness the power of data visualization for smarter decision-making."
-          />
-        </section>
 
         <HireDeveloper
           heading="Unlock the Power of Data with Comfygen's Tableau Consulting Services"

@@ -122,11 +122,7 @@ const technologyData = [
     title: "Remote Patient Monitoring Apps",
     desc: "We develop remote patient monitoring applications that allow clinicians to track patient health data remotely, detect early health risks, and deliver continuous care using connected devices and secure clinical data platforms."
   },
-  {
-    img: <IconTools stroke={1.5} className="w-12 h-12" />,
-    title: "Clinical Product Development",
-    desc: "We can help you come up with new healthcare products based on unique business ideas. Our experts have hands-on experience in the development of simple and complex healthcare products, such as IoT Development-powered smart devices , drug discovery apps, and development apps. You can leverage our innovative healthcare products to improve the quality of patient care."
-  },
+  
   {
     img: <IconClipboard stroke={1.5} className="w-12 h-12" />,
     title: "Clinical CRM Solution Development",
@@ -156,7 +152,7 @@ const Process = [
   },
   {
     title: "UI/UX Design & Prototyping",
-    description: "Our designers create intuitive clinical app <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX Design</> and interactive prototypes focused on usability, accessibility, and seamless navigation, ensuring efficient workflows for patients, clinicians, and healthcare staff."
+    description: "Our designers create intuitive clinical app <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX Design</a> and interactive prototypes focused on usability, accessibility, and seamless navigation, ensuring efficient workflows for patients, clinicians, and healthcare staff."
   },
   {
     title: "Custom Clinical App Development",
