@@ -14,6 +14,8 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Milestones from "../../components/Newcomponet/comman/Milestones";
+import Link from "next/link";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -103,81 +105,7 @@ const BlogSection = dynamic(
 
 
 
-const CardClone = [
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c1.webp",
-    title: "Zepto Clone App",
-    description: "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zepto/' >Build a grocery delivery app like Zepto</a> with ultra-fast order fulfillment, real-time tracking, and dark store integration. We offer clone app development for businesses aiming to replicate Zepto's 10-minute delivery success in the Q-commerce space.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c2.webp",
-    title: "GoPuff Clone App",
-    description: "Launch a Qcommerce app like GoPuff with a micro-fulfillment model. Our developers create a GoPuff-style platform that streamlines inventory, delivery, and checkout, making it a perfect alternative for the instant FMCG delivery market.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c3.webp",
-    title: "JioMart Express Clone App",
-    description: "Build a grocery delivery app similar to JioMart Express with multilingual support, inventory sync, and location-based delivery. We provide a clone app similar to JioMart to help you compete in India's growing quick commerce sector.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c4.webp",
-    title: "Zomato Clone App",
-    description: "<a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-to-develop-an-app-like-zomato/' >Develop a food delivery platform like Zomato </a> with real-time tracking, contactless delivery, and personalized recommendations. Our Zomato clone app development replicates Zomato’s powerful ordering and restaurant aggregator features with a custom Qcommerce twist.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c5.webp",
-    title: "Swiggy Clone App",
-    description: "Get a food & beverage Qcommerce app like Swiggy Instamart to deliver snacks, meals, and groceries in minutes. We develop clone apps that offer fast checkouts, route optimization, and seamless order management.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c6.webp",
-    title: "PillPack Clone App",
-    description: "Create a medicine delivery app like PillPack with automatic prescription refills, secure packaging, and seamless logistics. Our clone app development ensures compliance, privacy, and rapid delivery across your healthcare supply chain.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c7.webp",
-    title: "1mg Clone App",
-    description: "Build a Qcommerce healthcare solution with a Tata 1mg clone app. We <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/build-medicine-delivery-app-like-1mg/' >develop medicine delivery apps similar to 1mg</a> with features like online prescriptions, doctor consultations, and same-day pharma delivery.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c8.webp",
-    title: "ZocDoc Clone App",
-    description: "Launch a healthcare appointment and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/cost-of-building-a-doctor-appointment-app-like-zocdoc/' >delivery app like ZocDoc</a> with telehealth support, doctor bookings, and nearby pharmacy integration. A perfect quick commerce app for on-demand medical consultations and service bookings.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c9.webp",
-    title: "XpressBees Clone App",
-    description: "Develop a logistics Qcommerce app like XpressBees with smart shipment tracking, multi-location delivery, and real-time status updates. A reliable solution for last-mile logistics and express courier needs.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c10.webp",
-    title: "Lalamove Clone App",
-    description: "Start a courier & delivery service with a clone app similar to Lalamove. Offer real-time driver tracking, instant quotes, and package scheduling with a custom-built Qcommerce platform for local and intercity logistics.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c11.webp",
-    title: "Nykaa Clone App",
-    description: "Launch a beauty e-commerce platform with a clone app like Nykaa. Enable ultra-fast delivery of skincare, cosmetics, and grooming items through a robust and stylish Qcommerce solution tailored to your brand.",
-    buttonText: "View Demo",
-  },
-  {
-    image: "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-c12.webp",
-    title: "Purplle Clone App",
-    description: "Build a beauty product delivery website like Purplle with AI-powered suggestions, fast cart checkout, and hyperlocal delivery. We provide quick commerce app development that delivers beauty products with speed and convenience.",
-    buttonText: "View Demo",
-  },
 
-];
 
 const Process = [
   {
@@ -210,101 +138,9 @@ const Process = [
   }
 ];
 
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "StyleSeat App Clone",
-    desc: "Launch your own salon booking app like StyleSeat. Enable users to book haircuts, flawless makeup, or trendy nail services with ease. Our beauty salon mobile app development solution empowers beauty professionals and clients alike."
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Booksy App Clone",
-    desc: "Get a custom salon booking app clone inspired by Booksy, designed to let your clients book self-care appointments anytime, anywhere. Deliver smooth scheduling, real-time availability updates, and authentic customer reviews—all within a single, easy-to-use platform."
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Fresha App Clone",
-    desc: "Build your own beauty and wellness platform with a Fresha clone. Let users effortlessly book salon, hair, and spa appointments anytime. Our salon booking application development company crafts intuitive, feature-packed apps customized to reflect your brand’s unique style and deliver a seamless user experience."
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "Yes Madam App Clone",
-    desc: "Develop India’s next top on-demand beauty services app platform with a Yes Madam clone. Offer at-home salon, spa, and wellness services with secure payments and real-time tracking."
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "GlossGenius App Clone",
-    desc: "Deliver a sleek, all-in-one experience for beauty professionals with an on-demand beauty app development company that builds GlossGenius clones. Manage bookings, payments, and client communication in one powerful app. Create your GlossGenius-inspired salon app today with Comfygen!"
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "MindBody App Clone",
-    desc: "Combine beauty, wellness, and fitness into one powerful platform. Our MindBody clone includes class booking, meditation sessions, and salon services. Ideal for beauty and salon booking app development projects looking to merge wellness with beauty. Build a MindBody-style beauty salon."
-  }
-];
 
 
 
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-on-demand-beauty-booking-app.webp",
-      head: "On-Demand Beauty Booking App",
-      name: "A user-friendly app that connects customers with beauty professionals for at-home services. Features include service browsing, real-time booking, live location tracking, and secure payment. Designed for convenience and seamless user experience.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/comfygen/salon-development-salon-chain-management-app.webp",
-      head: "Salon Chain Management App",
-      name: "Developed for a national beauty brand with multiple outlets, this app enables centralized appointment management, staff coordination, and client tracking. It also includes loyalty programs and detailed analytics for business growth.",
-      num: "2",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-freelance-stylist-appointment-app.webp",
-      head: "Freelance Stylist Appointment App",
-      name: "Built specifically for solo beauty professionals, this mobile app includes personal branding tools, service listings, availability management, and a smooth booking experience. Clients can leave reviews, upload inspiration photos, and make direct payments.",
-      num: "3",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    },
-    {
-      img: "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-beauty-wellness-aggregator-app.webp",
-      head: "Beauty & Wellness Aggregator Platform",
-      name: "This platform brings together multiple salons and service providers under one umbrella. It includes vendor dashboards, customer profiles, service filters, and review systems. The app supports multiple languages and offers wallet integration for fast checkouts.",
-      num: "4",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-      buttonLink: "#",
-    }
-  ],
-};
 
 
 
@@ -326,24 +162,7 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+   
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -419,31 +238,7 @@ export default function ClinicalApp(props: any) {
         "https://www.comfygen.com/"
       ]
     }
-    ,
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        // "areaServed": "US, IN",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
 
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    }
     ,
 
     {
@@ -451,7 +246,7 @@ export default function ClinicalApp(props: any) {
       "@type": "Product",
       "brand": "Comfygen Technologies",
       "Name": "Q-Commerce App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-about.webp",
+      "image": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/About1.webp",
       "description": "Get custom Q-commerce app development services for grocery, food, pharmacy & more. Comfygen builds real-time, on-demand delivery apps like Zepto and Swiggy Instamart with live tracking, smart routing & integrated payments.",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -522,8 +317,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Quick Commerce App Development Company | 10 Minute Delivery App Solutions</title>
-        <meta name="description" content="Build your 10-minute delivery app with Comfygen, a leading quick commerce app development company. We create instant delivery apps like Zepto, Blinkit and Instamart with real-time tracking, smart routing and reliable performance." />
+        <title>Quick Commerce App Development Company | Instant Delivery App Solutions</title>
+        <meta name="description" content=" Build a 10-minute delivery app with Comfygen, a top quick commerce app development company. Launch instant delivery apps like Zepto & Blinkit with AI-powered routing, real-time tracking, and seamless performance." />
         <link rel="canonical" href="https://www.comfygen.com/quick-commerce-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -590,11 +385,11 @@ export default function ClinicalApp(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-hero.webp')]">
+        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development1.webp')]">
           <HeroSectionForAllPages
-            heading="Quick Commerce App Development Company for 10-Min Delivery Services"
-            ptag="Give your delivery business the power of speed and convenience with Comfygen Technologies. We are a trusted quick commerce app development company helping brands deliver groceries, medicines, food, and daily essentials within minutes. Our expert team builds high-performance Q-commerce apps that enable real-time order tracking, smart delivery routing, and smooth user experiences."
-            ptag1='Whether you want to launch an app like Zepto, Blinkit, Instamart or create your own ultra-fast delivery service, we design solutions that grow with your business and delight your customers.'
+            heading="Top Quick Commerce App Development Company "
+            ptag="Build ultra-fast delivery platforms with Comfygen, a leading Quick Commerce App Development Company delivering high-performance Q-commerce solutions for startups and enterprises. We specialize in Quick Commerce App Development for grocery, pharmacy, food, and daily-need brands, enabling 10–30 minute deliveries with real-time operations."
+            ptag1='From apps like Zepto, Blinkit, Dunzo, and Tata 1mg, we design scalable, on-demand quick commerce app solutions that ensure faster order processing, smart inventory control, and seamless customer experiences across iOS, Android, and web platforms.'
             // li="Real-Time Order Tracking & Route Optimization"
             // li1="Seamless UI/UX for Instant Checkout & Engagement"
             // li2="Advanced Inventory, Delivery & Fleet Management"
@@ -608,27 +403,17 @@ export default function ClinicalApp(props: any) {
             closeModal={closeModal}
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Quick Commerce is the Future"
-          description1="Quick commerce is reshaping the way people shop by bringing everyday essentials—like groceries, medicines, and food—right to their doorstep within minutes. In today’s fast-paced world, customers no longer want to wait hours or days for deliveries. They expect speed, accuracy, and convenience."
-          description2="With the rise of 10-minute delivery apps and mobile-first habits, quick commerce app development has become essential for businesses looking to stay relevant. Whether you're in retail, healthcare, or food services, Q-commerce offers a powerful way to meet evolving customer expectations."
-          description3="In the USA, the quick commerce market is projected to surpass $40B by 2027, driven by consumer demand for ultra-fast grocery and essential deliveries."
-          description4="In India, the Q-commerce sector is expanding at 15x growth, led by apps like Blinkit and Zepto—especially across Tier 1 & Tier 2 cities."
-          description5="Whether you're in the US or India, now is the perfect time to invest in Quick Commerce App Development and ride the wave of instant delivery success."
-          imageSrc="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Quick Commerce App Development Services
+               Our Best Quick Commerce App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                A Comfygen Technologies Qcommerce app developer builds robust and scalable Qcommerce apps for today's fast-moving delivery market. Our development solutions streamline the entire order-to-delivery cycle, enhance customer experiences, and support rapid business growth, regardless of your business size. We are one of the leading quick commerce <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development agency</a>. We focus on performance, usability, and real-time functionality.
+               A Comfygen Technologies quick commerce app developer builds robust and scalable Q-commerce apps for today's fast-moving delivery market. Our Q-commerce app development solutions streamline the entire order-to-delivery cycle, enhance customer experiences, and support rapid business growth, regardless of your business size. We are one of the leading quick commerce <Link className="text-blue-600 font-semibold" href='https://www.comfygen.com/mobile-app-development'>mobile app development agency</Link>. We focus on performance, usability, and real-time functionality.
               </p>
             </div>
             <div className="">
@@ -636,6 +421,20 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Quick Commerce is the Future"
+          description1="Quick commerce is transforming the way people shop by delivering essentials—groceries, medicines, and food—within minutes. Today’s consumers demand speed, convenience, and real-time tracking, making Q-commerce a must-have for retail, healthcare, and food brands."
+          description2="The global quick commerce market is expected to reach $162 billion by 2026, with India leading the growth curve, driven by apps like Zepto, Blinkit, and Dunzo, especially in Tier 1 & Tier 2 cities. Rapid smartphone adoption, AI-powered logistics, and micro-fulfillment centers are fueling this surge."
+          description3="Investing in Quick Commerce App Development now lets businesses capitalize on the booming demand for instant delivery, enhanced customer experiences, and scalable hyperlocal operations."
+          description4=""
+          description5=""
+          imageSrc="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/About1.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
         <AppcardSlider
           heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
@@ -669,8 +468,8 @@ export default function ClinicalApp(props: any) {
 
 
         <CoreFeaturesSection
-          title="AI-Powered Features For Every Quick Commerce Business Mobile App Needs"
-          subtitle="At Comfygen, we integrate cutting-edge AI technologies into our Q-commerce app development to give your business a competitive edge. From smart automation to personalized user journeys, these features streamline delivery workflows, boost efficiency, and improve customer satisfaction."
+          title="AI-Powered Quick Commerce App Development Solution"
+          subtitle="At Comfygen, we integrate cutting-edge AI solutions into our Q-commerce app development to give your business a competitive edge. From smart automation to personalized user journeys, these features streamline delivery workflows, boost efficiency, and improve customer satisfaction."
           features={JSON_DATA.AIPowered}
         />
 
@@ -693,7 +492,7 @@ export default function ClinicalApp(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Quick Commerce Application Development Process
+                Our Quick Commerce Application Development Process
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
                 At Comfygen Technologies, we follow a streamlined, collaborative, and transparent process to bring your Q-commerce vision to life. From idea to launch, every phase is focused on speed, scalability, and seamless user experience—because in quick commerce, every second counts.
@@ -703,7 +502,7 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
- 
+
 
         <TechStack
           title="Tech Stack We Use in Q-Commerce Application Development"
@@ -736,7 +535,7 @@ export default function ClinicalApp(props: any) {
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

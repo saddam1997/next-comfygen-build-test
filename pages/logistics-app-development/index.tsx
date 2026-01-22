@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import CallToAction from "../../components/Newcomponet/SectionCompoent/CallToAction";
 import AppcardSlider from "../../components/Newcomponet/SectionCompoent/AppcardSlider";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -466,18 +467,7 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/logistics-app-development/hero1.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Logistics Businesses Must Invest in Logistics App Development"
-          description1="Logistics is no longer about moving goods from point A to point B. It’s about speed, visibility, cost control, and customer trust. Manual processes, phone-based coordination, and fragmented systems simply don’t scale your logistics business in fast fast-growing world."
-          description2="Develop a logistics app that gives business owners real-time control over fleet movement, deliveries, drivers, and inventory. With a centralized logistics platform, you reduce delivery delays, cut fuel and operational costs, improve route planning, and respond faster to customer demands."
-          description3="A custom logistics app also brings transparency across the supply chain. Logistics business owners can track shipments live, monitor driver performance, automate dispatching, and generate data-driven insights that directly impact profitability. As order volumes grow and customer expectations rise, a scalable logistics app becomes a growth enabler, not just a technology upgrade."
-          description4="For logistics companies looking to stay competitive, improve margins, and expand operations efficiently, investing in logistics app development is no longer optional; it’s a strategic business decision."
-          imageSrc="https://www.comfygen.com/comfygen-images/logistics-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[]}
-        />
+        <Milestones/>
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -494,6 +484,20 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Why Logistics Businesses Must Invest in Logistics App Development"
+          description1="Logistics is no longer about moving goods from point A to point B. It’s about speed, visibility, cost control, and customer trust. Manual processes, phone-based coordination, and fragmented systems simply don’t scale your logistics business in fast fast-growing world."
+          description2="Develop a logistics app that gives business owners real-time control over fleet movement, deliveries, drivers, and inventory. With a centralized logistics platform, you reduce delivery delays, cut fuel and operational costs, improve route planning, and respond faster to customer demands."
+          description3="A custom logistics app also brings transparency across the supply chain. Logistics business owners can track shipments live, monitor driver performance, automate dispatching, and generate data-driven insights that directly impact profitability. As order volumes grow and customer expectations rise, a scalable logistics app becomes a growth enabler, not just a technology upgrade."
+          description4="For logistics companies looking to stay competitive, improve margins, and expand operations efficiently, investing in logistics app development is no longer optional; it’s a strategic business decision."
+          imageSrc="https://www.comfygen.com/comfygen-images/logistics-app-development/about.webp"
+          link="/about-us"
+          linkText="Explore More"
+          points={[]}
+        />
+
+
 
         <CallToAction
           heading="Ready to Build Your Logistics App?"
