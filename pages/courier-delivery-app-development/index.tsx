@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
 const loader = () => (
@@ -318,11 +319,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Courier Delivery App Development Company in India
+        <title> No. 1 Courier Delivery App Development Company in India
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a leading courier delivery app development company. We provide parcel delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
+          content="Comfygen Technologies is a leading courier delivery app development company. We provide courier delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
         />
 
         <meta name="keywords" content="On-demand Courier Delivery App Development, Parcel Delivery App Development, Last-mile Delivery App Development, Courier Dispatch & Tracking App Development, White-label Courier App Development Solutions, Courier App Development for Carriers, Haulage Courier App Development, Freight Forwarding Courier App Development, Courier Marketplace App Development, Courier App Development for Delivery Chains" />
@@ -362,8 +363,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Courier Delivery App Development Company"
-            ptag="Comfygen is a leading courier delivery app development company specializing in scalable, secure, and user-friendly parcel delivery solutions. We offer an AI-powered courier delivery app development solution with real-time tracking, automated dispatch, and AI-driven features to streamline logistics. Whether you’re a startup or enterprise, our experts deliver on-demand courier delivery app development services tailored to your business growth."
+            heading="Top Courier Delivery App Development Company"
+            ptag="Comfygen is a top-rated courier delivery app development company, creating secure, scalable, and feature-rich parcel delivery solutions. We build AI-powered courier apps with real-time tracking, automated dispatch, route optimization, and secure payment integration. From startups to enterprises, our experts deliver custom on-demand courier delivery app development services that drive business growth."
             li="Real-Time Parcel Tracking"
             li1="AI Courier Delivery App Solution"
             li2="Automated Dispatch & Route Optimization"
@@ -377,6 +378,24 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/courier-delivery-app-development-hero.webp"
           />
         </div>
+
+   <Milestones />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                We Offer Top-Notch Courier Delivery App Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen Technologies delivers top-notch courier delivery app development services for startups, courier agencies, logistics firms, and enterprises. With real-time tracking, secure payments, and AI-driven dispatch, our advanced courier and parcel delivery app solutions help you streamline deliveries, improve efficiency, and enhance customer satisfaction while boosting business growth.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Boost Your Business with Our Custom Courier Delivery App Development"
@@ -393,21 +412,7 @@ export default function ClinicalApp(props: any) {
             "<b>Insightful Reports</b> – Analyze performance and improve operations.",
           ]}
         />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Offer Top-Notch Courier Delivery App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen Technologies delivers top-notch courier delivery app development services for startups, courier agencies, logistics firms, and enterprises. With real-time tracking, secure payments, and AI-driven dispatch, our advanced courier and parcel delivery app solutions help you streamline deliveries, improve efficiency, and enhance customer satisfaction while boosting business growth.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
         <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
@@ -416,18 +421,18 @@ export default function ClinicalApp(props: any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Courier Delivery App Portfolio"
-            description="Comfygen Technologies delivers innovative courier delivery app development solutions tailored to the unique needs of diverse businesses. Here’s a glimpse of our successful on demand courier app development projects"
+            heading="Our Courier Delivery App Development Portfolio"
+            description="Comfygen Technologies delivers innovative courier delivery app development solutions tailored to the unique needs of diverse businesses. Here’s a glimpse of our successful on-demand courier app development projects"
           />
         </section>
 
 
         <CallToAction
-          heading="Ready to Launch Your Courier Delivery App?"
-          text="Get custom courier delivery app solutions designed for growth."
+          heading="Ready to Launch Your On-Demand Courier App?"
+          text="Get a secure, AI-powered courier app with real-time tracking, automated dispatch, and seamless payments. Let Comfygen turn your delivery idea into reality."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/call-courier.webp"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
 
@@ -535,7 +540,7 @@ export default function ClinicalApp(props: any) {
         />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
- <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

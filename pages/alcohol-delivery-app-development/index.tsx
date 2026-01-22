@@ -545,7 +545,7 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Alcohol Delivery App Developer"
-          text="Looking to launch your own liquor delivery business? At Comfygen, you can <a href='https://www.comfygen.com/hire-blockchain-developer' class='underline font-semibold'>hire an expert blockchain developer</a> for a secure liquor delivery app development who specializes in creating secure, scalable, and feature-packed apps for breweries, wine stores, and liquor delivery startups."
+          text="Looking to launch your own liquor delivery business? At Comfygen, you can hire an expert <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>liquor delivery app developer</a> for a secure liquor delivery app development who specializes in creating secure, scalable, and feature-packed apps for breweries, wine stores, and liquor delivery startups."
           buttonText="Why Hire Our Delivery App Builder?"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
