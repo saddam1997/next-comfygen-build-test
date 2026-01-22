@@ -200,31 +200,12 @@ export default function Mobile(props) {
           linkText="Explore More"
         />
 
-
-
-
-
-
-
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
           imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
           buttonText="Let’s Discuss"
           buttonLink="/contact-us"
-        />
-        {/* <Features /> */}
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <TechStack
-          title="Our Technology Stack Used for AWS Analytics Services"
-          description="At Comfygen, we leverage advanced AWS tools and cloud technologies to build robust, scalable, and data-driven analytics solutions for businesses of all sizes. Our AWS analytics expertise spans data storage, processing, and visualization, ensuring actionable insights that drive smarter business decisions. Here’s a glimpse of the AWS technologies our team uses:"
         />
 
         <section className="bg-[#fff] lg:py-16 py-10">
@@ -246,7 +227,17 @@ export default function Mobile(props) {
           </div>
         </section>
 
+        <TechStack
+          title="Our Technology Stack Used for AWS Analytics Services"
+          description="At Comfygen, we leverage advanced AWS tools and cloud technologies to build robust, scalable, and data-driven analytics solutions for businesses of all sizes. Our AWS analytics expertise spans data storage, processing, and visualization, ensuring actionable insights that drive smarter business decisions. Here’s a glimpse of the AWS technologies our team uses:"
+        />
 
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
 
         <HireDeveloper
           heading="Hire AWS Data Analytics Experts"

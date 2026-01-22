@@ -284,15 +284,22 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
+
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Generative AI Development Project Success Stories"
+            description="At Comfygen, we deliver powerful Generative AI solutions that drive measurable business results. Our GenAI expertise helps organizations automate workflows, improve decision-making, and build scalable, intelligent systems that accelerate innovation and operational efficiency."
+          />
+        </section>
         {/* <ContactFromCenter /> */}
-
-
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+              <div className="flex flex-col mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
                   We Specialize in a Variety of AI Models – Tailored Gen AI
                   Development Solutions for Every Business Need
@@ -326,13 +333,6 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <TechStack
-          title="Tech Stack Used in Our Generative AI App Development"
-          description="Our generative AI apps are built using a reliable technology stack that includes OpenAI GPT models, Hugging Face Transformers, spaCy, and NLTK. This setup helps us create AI solutions that understand and generate language accurately while scaling smoothly for real business use."
-          customTechData={JSON_DATA.customTechData}
-        />
-
-
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -340,20 +340,25 @@ export default function Mobile(props) {
                 Our Generative AI Development process
               </h2>
               <p className="text-base font-normal mt-2">
-                Comfygen follows a well-defined and proven process to ensure the success of every Generative AI development project. Our comprehensive approach is built around a set of 
+                Comfygen follows a well-defined and proven process to ensure the success of every Generative AI development project. Our comprehensive approach is built around a set of core development stages designed to deliver efficiency, accuracy, and measurable business value.
+
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Generative AI Development Project Success Stories"
-            description="At Comfygen, we deliver powerful Generative AI solutions that drive measurable business results. Our GenAI expertise helps organizations automate workflows, improve decision-making, and build scalable, intelligent systems that accelerate innovation and operational efficiency."
-          />
-        </section>
+        <IndustriesServe
+          heading=""
+          description=""
+
+        />
+
+        <TechStack
+          title="Tech Stack Used in Our Generative AI App Development"
+          description="Our generative AI apps are built using a reliable technology stack that includes OpenAI GPT models, Hugging Face Transformers, spaCy, and NLTK. This setup helps us create AI solutions that understand and generate language accurately while scaling smoothly for real business use."
+          customTechData={JSON_DATA.customTechData}
+        />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -361,11 +366,7 @@ export default function Mobile(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <IndustriesServe
-          heading=""
-          description=""
-         
-        />
+
         <HireDeveloper
           heading="Hire Generative AI Developers to Build Intelligent & Scalable AI Solutions"
           text="Looking to integrate cutting-edge Generative AI into your business? Hire expert Generative AI developers from Comfygen to build custom AI models, automation tools, and intelligent applications tailored to your business needs. Our skilled developers specialize in AI-driven content generation, NLP, deep learning, and machine learning to deliver high-performance AI solutions."

@@ -389,10 +389,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Fuel Delivery App Development Company | AI Fuel Delivery App Solution</title>
+        <title>Fuel Delivery App Development Company | On-Demand Solutions</title>
         <meta
           name="description"
-          content="Comfygen is a top fuel delivery app development company offering custom, white-label, and AI-powered on-demand fuel delivery app solutions for petrol, diesel, and gas businesses."
+          content="Comfygen is a leading fuel delivery app development company offering AI-powered, on-demand fuel delivery app development services with tracking, payments, and scalable solutions."
         />
 
         {/* keywords */}
@@ -491,13 +491,13 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Fuel Delivery App Development Company"
-            ptag="Comfygen is a trusted fuel delivery app development company helping startups and enterprises launch secure, AI-powered fuel delivery apps for petrol, diesel, and gas. We build Uber-like fuel delivery solutions with real-time order tracking, smart dispatching, GPS navigation, and seamless payments—designed to streamline operations, reduce delivery delays, and grow your fuel business faster."
+            heading="Top Fuel Delivery App Development Company"
+            ptag="Comfygen is a leading fuel delivery app development company helping startups and enterprises launch secure, scalable, and high-performance on-demand fuel delivery solutions. Our result-driven AI-powered fuel delivery app development services are designed to streamline fuel ordering, dispatch, and delivery with advanced automation, real-time tracking, and seamless digital payments for a smooth customer experience."
             ptag1=""
-            li="100% Custom & White-Label Fuel Delivery App Solutions"
-            li1="AI-Powered Automation & Smart Route Optimization"
-            li2="Real-Time Tracking, Secure Payments & Fleet Control"
-            li3="End-to-End Fuel Delivery App Development & Support"
+            li="100% Customizable Fuel Delivery App"
+            li1="White-label & Business-ready Apps"
+            li2="AI-powered Features & Automation"
+            li3="End-to-End Development & Support"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -513,10 +513,10 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Fuel Delivery App Development Services
+               We Offer Comprehensive Fuel Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen Technologies, a top-rated delivery app development company, our fuel delivery app development services crafted to help startups, enterprises, and fuel station owners digitise operations, boost customer convenience, and streamline delivery. With deep domain expertise and innovative tech, we create secure, scalable, and visually engaging on-demand fuel delivery apps tailored to the energy and logistics industry.
+                Comfygen Technologies, a top-rated on-demand fuel delivery mobile app development company, offers end-to-end fuel delivery app development services tailored to help startups, enterprises, and fuel station owners digitize operations, improve delivery efficiency, and enhance customer convenience. Our Uber-like fuel delivery solutions are secure, scalable, and tailored for the evolving energy and logistics industry.
               </p>
             </div>
             <div className="">
@@ -527,18 +527,18 @@ export default function ClinicalApp(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="Why Invest in Fuel Delivery App Development?"
-          description1="The global on-demand fuel delivery market is expanding rapidly, driven by increasing demand for doorstep delivery of petrol, diesel, and gas. With increasing adoption of delivery services in the energy sector, investing in a fuel delivery app development is no longer optional; it’s a smart move for fuel stations in India, logistics providers, and startups that want to stay competitive."
-          description2="Comfygen Technologies will help you deliver unmatched customer convenience and streamline fuel supply with innovative fuel delivery mobile app development solutions. We are the leading on-demand fuel delivery app development company."
+          heading="Why Fuel Delivery Apps Are a Smart Business Investment"
+          description1="Fuel delivery apps help businesses meet the growing global demand for fast, on-demand fuel supply. By digitizing fuel ordering and delivery, companies can improve efficiency, reduce manual operations, and offer greater convenience to customers across regions."
+          description2="Investing in a fuel delivery app enables fuel providers, startups, and logistics companies to scale operations, increase revenue, and stay competitive in a technology-driven energy market."
           description3=""
           imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/fuel-delivery-app-development-about.webp"
           link="/about-us"
           linkText="Explore More"
           points={[
-            "Automates Fuel Orders & Delivery Scheduling",
-            "Enhances Customer Convenience with Doorstep Delivery",
-            "Secures Transactions with Digital Payments & GPS Tracking",
-            "Boosts Revenue with Smarter Fuel Management & Insights",
+            "Faster fuel ordering and delivery management",
+            "Wider market reach with on-demand access",
+            "Improved efficiency through automation",
+            " Better customer trust with real-time tracking",
           ]}
         />
 

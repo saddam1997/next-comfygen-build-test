@@ -28,7 +28,7 @@ function Portfolio({ projects, heading, description }) {
   }, [projects, isHovered]);
 
   return (
-    <div className="bg-[#F5F5F9] md:py-12 py-6 px-4">
+    <div className="h-full bg-[#F5F5F9] md:py-12 py-6 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">{heading}</h2>

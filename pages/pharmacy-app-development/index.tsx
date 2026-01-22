@@ -341,7 +341,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Pharmacy App Development Company in India"
-          ptag="A leading Pharmacy App Development Co	mpany in India delivering secure, scalable, and feature-rich digital solutions for medical stores, pharmacy chains, and healthcare startups. Comfygen Technologies specializes in building powerful online pharmacy apps with prescription upload and verification, secure payment integration, real-time order tracking, and seamless performance across Android, iOS, and web platforms. Our expert developers focus on compliance, data security, and intuitive user experiences to help pharmacy businesses streamline operations, expand reach, and accelerate digital growth."
+          ptag="A leading Pharmacy App Development Company in India delivering secure, scalable, and feature-rich digital solutions for medical stores, pharmacy chains, and healthcare startups. Comfygen Technologies specializes in building powerful online pharmacy apps with prescription upload and verification, secure payment integration, real-time order tracking, and seamless performance across Android, iOS, and web platforms. Our expert developers focus on compliance, data security, and intuitive user experiences to help pharmacy businesses streamline operations, expand reach, and accelerate digital growth."
           ptag1=""
           li="Advanced Analytics & Reporting"
           li1="User-Friendly Pharmacy App Interface"

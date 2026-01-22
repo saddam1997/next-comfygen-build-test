@@ -208,20 +208,20 @@ export default function Mobile(props: any) {
 
         <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="BTop-Rated Finance App Development Company in India"
-            subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
+            heading="Top-Rated Finance App Development Company in India"
+            subhead=""
             ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use the latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
-            li="15+ Trusted Fintech Developers"
-            li1="Customized Fintech Solutions Delivered"
-            li2="06+ years of experience in Development"
-            li3="Cutting-edge technologies used"
+            li=""
+            li1=""
+            li2=""
+            li3=""
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/hero.webp"
+            bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/finance-app-development.webp"
           />
 
         </div>

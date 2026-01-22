@@ -286,9 +286,9 @@ export default function Mobile(props) {
         />
 
 
-   
 
-    
+
+
 
       </Head>
       <LazyLoad height={80} offset={100}>
@@ -319,7 +319,7 @@ export default function Mobile(props) {
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Data Analytics Services to Better Management of Every Business
               </h2>
-              <p className="text-base text-center font-normal">As a leading data analytics service company in India & USA, Comfygen is a leading Data Analytics Service Provider offering end-to-end analytics solutions that enable businesses to extract real value from their data. From analytics strategy to scalable implementation, we support enterprises with reliable, growth-focused data analytics services.</p>
+              <p className="text-base text-center font-normal">Comfygen is a leading Data Analytics Service Provider offering end-to-end analytics solutions that enable businesses to extract real value from their data. From analytics strategy to scalable implementation, we support enterprises with reliable, growth-focused data analytics services.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -340,20 +340,66 @@ export default function Mobile(props) {
         />
         {/* <ContactFromCenter /> */}
 
+        <section className="py-8">
+          <Portfolio
+            projects={portfolioData}
+            heading="Portfolio of Our Data Analytics Projects"
+            description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
+          />
+        </section>
 
+        <section className="bg-[#fff] lg:py-16 py-10">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="text-center">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+                Our Data Analytics Process
+              </h2>
+              <p className="text-base font-normal mt-2">
+                As a trusted Data Analytics Service Provider, we follow a structured, quality-focused approach to transform raw data into actionable insights. Each step is designed to ensure accuracy, scalability, and alignment with real business goals—delivering results that are reliable, relevant, and ready for informed decision-making.
+              </p>
+            </div>
+            <ProcessSec processSlides={Process} />
+          </div>
+        </section>
+
+        <IndustriesServe
+          heading="Delivering Data Analytics Services Across Industries "
+          description="At Comfygen, we recognize that every industry has distinct data challenges, and that one-size-fits-all solutions often fall short. To address this, we offer tailored data analytics services designed to meet the unique needs of specific sectors. Here's how various industries are leveraging data to drive measurable impact:"
+        />
+
+        <TechStack
+          title="Our Technology Stack Use to Develop Best AI Services"
+          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
+        />
+
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
+        />
+
+        <HireDeveloper
+          heading="Hire Data Analytics Experts for business growth "
+          text="Looking to turn complex data into clear, actionable insights? You’re in the right place - Comfygen offers expert data analytics services backed by skilled professionals and real-world experience. Partner with Comfygen to transform raw data into real business value. "
+          buttonText="Hire Data Analytics Expert "
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+        />
 
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="container mx-auto ">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+              <div className="flex flex-col container mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                 Business Intelligence & Reporting Solutions
+                  Business Intelligence & Reporting Solutions
 
                 </h2>
                 <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                 We help businesses make sense of their <Link href='https://www.comfygen.com/data' className='text-blue-600 font-semibold'>data</Link> through clear, accurate reports and interactive dashboards. By unifying data from multiple sources and defining the right KPIs, our BI solutions give decision-makers a reliable view of performance, trends, and opportunities, so teams can act faster and with confidence.
+                  We help businesses make sense of their <Link href='https://www.comfygen.com/data' className='text-blue-600 font-semibold'>data</Link> through clear, accurate reports and interactive dashboards. By unifying data from multiple sources and defining the right KPIs, our BI solutions give decision-makers a reliable view of performance, trends, and opportunities, so teams can act faster and with confidence.
 
                 </p>
               </div>
@@ -381,54 +427,7 @@ export default function Mobile(props) {
           </div>
         </section>
 
-        <section className="py-8">
-          <Portfolio
-            projects={portfolioData}
-            heading="Portfolio of Our Data Analytics Projects"
-            description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
-          />
-        </section>
 
-
-        <section className="bg-[#fff] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Data Analytics Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                As a trusted Data Analytics Service Provider, we follow a structured, quality-focused approach to transform raw data into actionable insights. Each step is designed to ensure accuracy, scalability, and alignment with real business goals—delivering results that are reliable, relevant, and ready for informed decision-making.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
-        />
-
-        <IndustriesServe
-          heading="Delivering Data Analytics Services Across Industries "
-          description="At Comfygen, we recognize that every industry has distinct data challenges, and that one-size-fits-all solutions often fall short. To address this, we offer tailored data analytics services designed to meet the unique needs of specific sectors. Here's how various industries are leveraging data to drive measurable impact:"
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Data Analytics Experts for business growth "
-          text="Looking to turn complex data into clear, actionable insights? You’re in the right place - Comfygen offers expert data analytics services backed by skilled professionals and real-world experience. Partner with Comfygen to transform raw data into real business value. "
-          buttonText="Hire Data Analytics Expert "
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-        />
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}

@@ -406,74 +406,9 @@ const portfoliodata = [
 
 
 const jsonLdData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",
-      "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
 
-  },
 
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.youtube.com/@ComfygenBusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
+
 
   {
     "@context": "https://schema.org",
@@ -531,31 +466,7 @@ const jsonLdData = [
 
   },
 
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",
 
-      "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
 
   {
     "@context": "https://schema.org/",
@@ -682,7 +593,7 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Best Custom Dating App Development Company in India & USA | Comfygen</title>
+        <title>Best Custom Dating App Development Company in India | Comfygen</title>
         <meta name="description" content="Comfygen is a top dating app development company in India offering custom, secure, and AI-powered dating app development services for startups and enterprises." />
         <link rel="canonical" href="https://www.comfygen.com/dating-app-development" />
 
@@ -810,22 +721,6 @@ export default function Ecommerce(props) {
         </section>
 
 
-        <div className="py-8">
-          <Features
-            heading=" The Features of dating apps Like Bumble ensure success in the Dating Business."
-            description="Creating a successful dating application requires a blend of innovative features, user-friendly design, and robust security. Here are dating app advanced features that can help ensure the success of a dating business"
-            featuresData={JSON_DATA.featuresData}
-            grid={2} />
-        </div>
-
-
-        {/* <PortfolioSec
-          techData={techDataForPage1}
-          heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
-          description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
-        /> */}
-
-
         <section className="py-8">
           <Portfolio
             projects={portfoliodata}
@@ -842,6 +737,24 @@ export default function Ecommerce(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
+        <div className="py-8">
+          <Features
+            heading=" The Features of dating apps Like Bumble ensure success in the Dating Business."
+            description="Creating a successful dating application requires a blend of innovative features, user-friendly design, and robust security. Here are dating app advanced features that can help ensure the success of a dating business"
+            featuresData={JSON_DATA.featuresData}
+            grid={2} />
+        </div>
+
+
+
+        {/* <PortfolioSec
+          techData={techDataForPage1}
+          heading="Explore Our Recent Work to Know Our eWallet App Development Expertise"
+          description="Take a look at our high-performing Digital Wallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs."
+        /> */}
+
+
+
 
 
         <section className="bg-white lg:py-16 py-10">
@@ -859,6 +772,11 @@ export default function Ecommerce(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
+
+        <TechStack
+          title="Our Advanced Tech Stack for Dating App Development"
+          description="At Comfygen, we focus not only on user engagement but also on building highly secure, scalable, and robust dating applications. We use modern and proven <a href='https://www.comfygen.com/blog/tech-stack-for-dating-apps/' class='underline font-semibold'>tech stacks for a dating app</a> to make sure high performance, data security, and seamless user experiences across web and mobile platforms."
+        />
 
         <LatestTechnology
           heading="We Develop Next-Gen Dating Apps to Take Your Dating Business to the Next Level"
@@ -900,14 +818,14 @@ export default function Ecommerce(props) {
                           height={50}
                           alt={title}
                         />
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start" dangerouslySetInnerHTML={{ __html: title }}>
+                         
                         </h3>
                       </div>
 
                       <div className="mt-3">
-                        <p className="break-all text-white text-start ">
-                          {decs}
+                        <p className="break-all text-white text-start " dangerouslySetInnerHTML={{ __html: decs }}>
+                     
                         </p>
                       </div>
                     </div>
@@ -917,10 +835,7 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
-        <TechStack
-          title="Our Advanced Tech Stack for Dating App Development"
-          description="At Comfygen, we focus not only on user engagement but also on building highly secure, scalable, and robust dating applications. We use modern and proven <a href='https://www.comfygen.com/blog/tech-stack-for-dating-apps/' class='underline font-semibold'>tech stacks for a dating app</a> to make sure high performance, data security, and seamless user experiences across web and mobile platforms."
-        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
