@@ -61,11 +61,10 @@ const HireDeveloper = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
-
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
@@ -84,6 +83,11 @@ const ClientTestimonials = dynamic(
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 
@@ -513,8 +517,7 @@ export default function rummy(props: any) {
                 Our Blockchain Consulting Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen, Best Blockchain Consulting provides a full spectrum of blockchain consulting services developed to help you innovate, optimize, and scale. Our experienced Blockchain consultants assist you throughout the entire blockchain technology adoption journey—from defining strategy to deploying secure and scalable solutions. As a trusted blockchain development company, we focus on delivering Blockchain Consulting solutions that are not only technically strong but also aligned with your long-term business goals.
-
+                Comfygen offers end-to-end blockchain consulting services to help businesses innovate, optimize, and scale. Our experienced consultants guide you from strategy to deployment, delivering secure, scalable, and business-aligned blockchain development solutions.
               </p>
             </div>
             <div className="">
@@ -526,13 +529,16 @@ export default function rummy(props: any) {
         <AboutSection
           title="About Company"
           heading="Why Choose Blockchain Consulting Service?"
-          description1="Adopting blockchain technology can unlock powerful new opportunities, but without the right strategy, it’s easy to waste time and resources. Expert blockchain consulting services help businesses identify the best use cases, create a clear roadmap, and implement <a href='https://www.comfygen.com/blockchain-development' class='text-blue-500'>blockchain development</a> solutions that actually deliver results. Here’s why it matters."
-          description2="<b>Right Use Cases</b> – Identify where blockchain adds real value, from DeFi apps to supply chain and enterprise solutions."
-          description3="<b>Lower Costs & Risks</b> – Avoid costly mistakes with expert blockchain strategy consulting and compliance guidance."
-          description4="<b>Faster Time-to-Market</b> – Get a clear roadmap for launching crypto wallets, NFT platforms, or blockchain integrations quickly."
-          description5="<b>Scalable Solutions</b> – Build with smart contract advisory and tokenomics planning for long-term growth."
+          description1="Adopting blockchain technology can unlock powerful new opportunities, but without the clear strategy, businesses risk wasting time and resources. Expert blockchain consulting services help businesses identify the best use cases, create a clear roadmap, and implement <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>blockchain app development</a> solutions that actually deliver results."
+          description2=""
+          description3=""
+          description4=""
+          description5=""
           points={[
-
+            "<b>Right Use Cases</b> – Identify where blockchain adds real value, from DeFi apps to supply chain and enterprise solutions.",
+            "<b>Lower Costs & Risks</b> – Avoid costly mistakes with expert blockchain strategy consulting and compliance guidance.",
+            "<b>Faster Time-to-Market</b> – Get a clear roadmap for launching crypto wallets, NFT platforms, or blockchain integrations quickly.",
+            "<b>Scalable Solutions</b> – Build with smart contract advisory and tokenomics planning for long-term growth."
           ]}
           imageSrc="https://www.comfygen.com/gallery/about-images/blockchain-consulting-services-about-image.webp"
           link="/about-us"
@@ -541,45 +547,35 @@ export default function rummy(props: any) {
         {/* <ContactFromCenter /> */}
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Custom Blockchain Solutions We Develop
-                </h2>
-                <p>
-                  At{" "}
-                  <a className="text-blue-600" href="/">
-                    Comfygen
-                  </a>{" "}
-                  , we design and deliver{" "}
-                  <a href="/custom-blockchain-development-company">
-                    custom blockchain solutions
-                  </a>
-                  solutions that align with your business objectives, regulatory landscape, and tech scalability requirements. From enterprise-grade platforms to Web3-native products, our blockchain development expertise helps you unlock secure, decentralized, and future-proof digital transformation.
+        <CallToAction
+          heading="Ready to Transform Your Business with Blockchain?"
+          text="Get expert blockchain consulting to unlock secure, scalable, and innovative solutions for your business."
+          buttonText="Let's Talk"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+        <SolutionSec
+          heading="Why Blockchain Consulting Service Is a Game Changer for Your Business"
+          subheading="Unlock the potential of blockchain with our expert blockchain consulting services. We help businesses implement secure, scalable, and innovative blockchain development solutions that drive efficiency, enhance transparency, and prepare your organization for the digital future."
+          techData={technologyData}
+        />
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Our Blockchain Consulting Service Portfolio"
+            description="Our blockchain consulting services help businesses across industries achieve real results. From custom blockchain solutions to DeFi integrations and tokenization, we deliver innovative projects that drive growth, efficiency, and measurable value."
+          />
         </section>
+
+
+        <IndustriesServe
+          heading="Industries We Serve as a Blockchain Consulting Service Expert"
+          description="At Comfygen, we provide blockchain consulting across industries—finance, healthcare, supply chain, and real estate—delivering tailored solutions that drive digital transformation, boost efficiency, and unlock new business opportunities."
+        
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -595,28 +591,21 @@ export default function rummy(props: any) {
           </div>
         </section>
 
-        <SolutionSec
-          heading="Why Blockchain Consulting Is a Game Changer for Your Business"
-          subheading="Blockchain consulting isn’t just about technology implementation—it's about revolutionizing your business for the digital future. Here’s how our blockchain consulting services can add unparalleled value to your organization:"
-          techData={technologyData}
+        <TechStack
+          title="Our Technology Stack"
+          description="At Comfygen, we leverage a robust and versatile tech stack to deliver scalable, secure, and cutting-edge solutions. Our expertise spans multiple layers of development, including:"
+
+          customTechData={JSON_DATA.techData}
         />
 
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Let's Talk"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
+        <WhyChoose
+          title={JSON_DATA.pageData.title}
+          description={JSON_DATA.pageData.description}
+          mainCardData={JSON_DATA.pageData.mainCardData}
+          gridData={JSON_DATA.pageData.gridData}
         />
 
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Blockchain Consulting Portfolio: Proven Success Across Industries"
-            description="At Comfygen, we take pride in our successful blockchain consulting projects that have helped businesses across various industries achieve remarkable outcomes. From custom blockchain solutions to tokenization and DeFi integrations, our portfolio showcases the diverse applications of blockchain technology that drive innovation and deliver measurable value. Each project reflects our commitment to excellence, client satisfaction, and transformational impact."
-          />
-        </section>
+
 
 
         <section
@@ -687,11 +676,7 @@ export default function rummy(props: any) {
             </div>
           </div>
         </section>
-        <IndustriesServe
-          heading="Industries We Serve as a Blockchain Consulting Service Expert "
-          description="At Comfygen, we leverage blockchain expertise across a diverse range of industries, facilitating digital transformation and driving business success. Our blockchain consulting services cater to diverse sectors, from finance and healthcare to supply chain management and real estate. By tailoring blockchain development solutions to meet the unique challenges of each industry, we help our clients unlock new opportunities, enhance operational efficiency, and stay ahead in an increasingly digital world."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
+
         <HireDeveloper
           heading="Hire Blockchain Consultants at Comfygen"
           text="Unlock the potential of blockchain technology with our expert blockchain consultants. At Comfygen, we offer tailored consulting services to help you navigate the complexities of blockchain adoption. Our consultants bring years of industry experience and in-depth knowledge to design custom solutions that align with your business goals. Whether you're looking to implement smart contracts, develop decentralized applications, or integrate blockchain into your existing infrastructure, our team is here to guide you through every step of the process. <a class='font-semibold' href='/hire-blockchain-developer'>Hire blockchain consultants</a>  from Comfygen and transform your business today."
@@ -708,29 +693,19 @@ export default function rummy(props: any) {
             "Scalable Solutions",
           ]}
         />
-        <InfoSection
-          heading="How Comfygen Can Help with Blockchain Consulting?"
-          description1="Blockchain and crypto app development bring unmatched security and transparency to businesses. However, leveraging this technology requires professional expertise due to its complexity. At Comfygen, a leading Blockchain Consulting Company in India, our experienced Blockchain Consultants and Developers combine technical knowledge with innovative thinking to deliver extraordinary Blockchain Consulting Services."
-          description2="Whether you're an SME or a large-scale enterprise, our tailored strategies elevate your business to the next level. We take time to understand your unique requirements and goals, crafting customized blockchain Consulting solutions that meet your needs. Trust Comfygen to ensure secure, efficient, and results-driven outcomes."
-          description3=""
-          dec=""
-          imageSrc="https://www.comfygen.com/media/images/how-comfygen-can-help-in-blockchain-consulting.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          points={[]}
-        />
+
         <GuidSectionBlockchain />
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-      
+
         <ClientTestimonials
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
 
-          <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

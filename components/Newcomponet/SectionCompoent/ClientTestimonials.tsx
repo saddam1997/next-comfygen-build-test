@@ -191,7 +191,7 @@ const ClientTestimonials = ({
                 <div className="h-full p-6 bg-white border rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <p className="text-gray-700 mb-4">{item.text}</p>
                   <p className="font-semibold text-gray-900" dangerouslySetInnerHTML={{ __html: item.name }}></p>
-                  <p className="text-blue-600 text-sm" >({item.title})</p>
+                  <p className="text-blue-600 text-sm" >{item.title}</p>
                 </div>
               </div>
             ))}

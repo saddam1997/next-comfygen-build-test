@@ -89,6 +89,14 @@ const HireDeveloperSec = dynamic(
 )
 
 
+const ProductCard = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/ProductCard"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  }
+);
+
 
 const DeliverySection = dynamic(
   () => import("../../../components/Newcomponet/comman/DeliverySection"),
@@ -191,13 +199,7 @@ const CardClone = [
       "Build an app like Tesco widely used in the UK and other international markets, offering online grocery ordering, flexible delivery slots, click-and-collect, loyalty rewards, and a smooth shopping experience.",
     buttonText: "View Demo",
   },
-  {
-    imgSrc: "https://www.comfygen.com/comfygen-images/grocery/Tesco.webp",
-    title: "App Like Walmart",
-    description:
-      "Launch a feature-rich supermarket grocery app like Walmart with personalized offers, barcode scanning, multi-department inventory, and a seamless omnichannel shopping experience. We deliver a Walmart-style app that connects physical stores and digital users in one powerful platform.",
-    buttonText: "View Demo",
-  },
+ 
 
   {
     imgSrc:
@@ -293,6 +295,67 @@ const Process = [
     description:
       "Provide updates, new features, bug fixes, and ongoing technical support for growth.",
   },
+];
+
+
+const productCard = [
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Product Search.webp",
+    link: "",
+    heading: "Product Search",
+    description:"Find exactly what customers are looking for in seconds. Smart search with filters lets users discover products by name, brand, category, or keywords without friction."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Add to Cart.webp",
+    link: "",
+    heading: "Add to Cart ",
+     description:"Users can add products to their cart with a single tap. Quantities can be updated instantly, making the checkout flow smooth and interruption-free."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Order Products.webp",
+    link: "",
+    heading: "Order Products",
+     description:"Browsing and ordering feel effortless. Customers can explore products by category, view details, compare options, and place orders without confusion."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Recommended Products.webp",
+    link: "",
+    heading: "Recommended Products",
+     description:"The app suggests relevant products based on browsing behavior and past purchases. This helps users discover items they actually want while increasing repeat orders."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Schedule Delivery Time.webp",
+    link: "",
+    heading: "Schedule Delivery Time",
+     description:"Customers choose when they want their groceries delivered. Flexible time slots ensure convenience and reduce missed deliveries."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Online Payment.webp",
+    link: "",
+    heading: "Online Payment",
+     description:"Multiple secure payment options are supported, including UPI, debit cards, credit cards, net banking, and cash on delivery, giving users complete flexibility."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Track Item.webp",
+    link: "",
+    heading: "Track Item",
+     description:"Real-time order tracking keeps customers informed from checkout to doorstep. Users can see order status and delivery progress at every stage."
+  },
+  {
+    image:
+      "https://www.comfygen.com/comfygen-images/grocery/Push Notifications.webp",
+    link: "",
+    heading: "Push Notifications",
+     description:"Timely alerts for order updates, delivery status, offers, and reminders keep users engaged and informed without opening the app."
+  }
+ 
 ];
 
 export default function ClinicalApp(props: any) {
@@ -560,11 +623,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Top Grocery Delivery App Development Company for Custom Solutions
+          Grocery Delivery App Development Company. Readymade Grocery app provider
         </title>
         <meta
           name="description"
-          content="Looking for a reliable grocery delivery app development company? Our expert team creates tailored, cross-platform apps with real-time tracking and secure payments. Launch your standout grocery delivery service today!"
+          content="leading on-demand grocery delivery app development company, Get readymade grocery delivery app source code for crossplatform developed by dedicated developers."
         />
 
         <meta
@@ -677,13 +740,14 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Grocery Delivery App Development Company"
-          subhead="Fast, Secure, and Scalable Grocery Delivery App Development Solutions"
-          ptag="Ready to launch a grocery delivery app that stands out? Whether you’re a startup or a large supermarket chain, our grocery app development services build custom cross-platform apps that deliver smooth, on-demand experiences. With real-time order tracking, secure payments, and smart inventory management, we help your business scale and compete with leading grocery delivery platforms."
+          subhead="Looking for a grocery delivery app development solution?"
+          ptag="Comfygen Technologies is the best Grocery delivery app development company that provides readymade grocery delivery apps that are customized according to your business requirements. With our grocery delivery app development solution you will get admin dashboard, driver penal, Store penal, and Customer app, all designed to work seamlessly together."
           ptag1=""
-          li="Custom Grocery App Development"
-          li1="On-Demand Grocery Delivery App Development"
-          li2="Multi-Vendor Grocery App Development"
-          li3="Scalable Grocery Delivery App Solutions"
+          li="Real-time order tracking for customers and admins"
+          li1="Secure online payment integrations"
+          li2="Smart inventory and order management system"
+          li3="Push notifications for order updates and promotions"
+          li4='Advanced analytics and reports to track performance and growth'
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -701,18 +765,8 @@ export default function ClinicalApp(props: any) {
                 Our Grocery Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                We offer end-to-end grocery delivery app development services
-                designed to support different business models, delivery
-                workflows, and growth stages. Whether you’re launching a new
-                platform or upgrading an existing one, our{" "}
-                <a
-                  href="https://www.comfygen.com/quick-commerce-app-development"
-                  className="text-blue-600 font-semibold"
-                >
-                  quick commerce
-                </a>{" "}
-                team develops solutions that are practical, scalable, and ready
-                for real users.
+                Comfygen is a top-notch grocery delivery app development company, offering end-to-end grocery delivery app development services designed to align with diverse business models, delivery workflows, and growth stages. Whether you are developing a grocery delivery app from scratch or using a readymade grocery delivery app development solution, we deliver scalable and market-ready applications tailored to your needs.
+
               </p>
             </div>
             <div className="">
@@ -723,38 +777,43 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title=""
           heading="Why Invest in a Grocery Delivery App"
-          description1="The online grocery delivery market is booming worldwide. More consumers are shifting to digital platforms for their grocery needs, driven by convenience, time savings, and a seamless shopping experience. By 2030, a significant majority of people are expected to order groceries through online delivery apps, making this sector one of the fastest-growing in e-commerce. The global online grocery delivery market is projected to reach <b>$645 billion by 2030</b>, up from <b>$434 billion in 2025</b>, with hundreds of millions of users globally."
+          description1="The grocery shopping market is booming. Consumers are shifting to digital platforms for their grocery needs. The global online grocery delivery market is projected to reach $645 billion by 2030, up from $434 billion in 2026, with hundreds of millions of users globally."
           description2=""
           points={[
-            "<b>High Growth Potential</b>: The global online grocery market is projected to grow exponentially over the next decade, reaching hundreds of billions of dollars, offering massive revenue opportunities.",
-            "<b>Brand Visibility and Loyalty</b>: Early investment allows you to capture a loyal customer base in a market that’s still expanding. By 2030, online grocery users are expected to hit around <b>367 million globally</b>, providing a solid foundation for repeat business.",
-            "<b>Scalable Business Model</b>: Once your platform is established, it’s easy to expand into multiple cities, regions, or even countries, increasing market reach and revenue potential.",
-            "<b>Future-Proof Investment</b>: As consumer habits shift toward online shopping, your grocery delivery app becomes a critical service that people rely on daily. Rapid adoption in markets like India and other emerging economies shows this trend will continue for years.",
+            "<b>High Growth Potential</b>: The global grocery delivery market is projected to grow exponentially over the next decade, reaching hundreds of billions of dollars, offering massive revenue opportunities.",
+            "<b>Scalable Business Model</b>:  Once your platform is established, it’s easy to expand into multiple cities, regions, or even countries, increasing market reach and revenue potential.",
+            "<b>Future-Proof Investment:</b>: As consumer habits shift toward online shopping, your grocery delivery app becomes a critical service that people rely on daily. Rapid adoption in markets like India and other emerging economies shows this trend will continue for years.",
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/grocery/Build-future-Ready-Grocery-Delivery-Apps.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <CallToAction
+        <ProductCard
+          title="Key Features of Our ReadyMade Grocery delivery App"
+          subtitle=""
+          cards={productCard}
+        />
+
+        {/* <CallToAction
           heading="Ready to Build Your Grocery Delivery App?"
           text="Partner with the top grocery delivery app development company and launch your custom app faster with Comfygen’s expert solutions."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
-        />
+        /> */}
 
-        <AppcardSlider
+         <AppcardSlider
           heading="Grocery Delivery App Clone Development Solutions"
           description="Launch your own grocery delivery digital platform quickly with our grocery delivery app clone development solutions. As the best <a href='https://www.comfygen.com/delivery-app-development' class='text-blue-600 font-semibold'>delivery app development company</a>, we provide ready-to-use, fully customizable apps modeled after popular grocery delivery platforms, helping you save development time and cost while maintaining scalability and performance."
           sliderData={CardClone}
           openModal={openModal}
-        />
+        /> 
 
         <div className="py-8">
           <Features
-            heading="Grocery Delivery Apps with Intuitive Dashboard Features"
+            heading="Grocery Delivery Apps with Dashboard Features"
             description="We develop advanced grocery delivery apps with all the important features to run a smooth, scalable, and high-performing platform. Each module is tailored to meet the needs of users, vendors, delivery partners, and administrators for maximum efficiency."
             featuresData={JSON_DATA.featuresData}
             grid={4}
@@ -856,16 +915,16 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Expert Grocery Delivery App Developers"
-          text="Comfygen Technologies gives you the opportunity to hire highly skilled grocery delivery app developers ready to turn your vision into a reality. Our team specializes in building scalable, feature-rich grocery delivery apps tailored to your business needs, delivering seamless user experiences, robust performance, and innovative features that make your app stand out in the competitive online grocery market."
-          text1="Whether you require end-to-end grocery app development or want to hire developers for a specific project phase, Comfygen ensures flexibility, quality, and timely delivery. We focus on modern technologies, intuitive app design, and powerful backend systems to ensure your grocery delivery app exceeds customer expectations and drives long-term business growth."
+          text="Comfygen Technologies offers skilled grocery delivery app developers to turn your ideas into powerful, scalable applications. Our experts build feature-rich grocery delivery apps tailored to your business model, ensuring seamless user experiences, high performance, and innovative functionality."
+          text1=""
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
             "Custom grocery app development tailored to your business model",
-            "Expertise in building apps like Walmart, Instacart, Blinkit, and more",
-            "Proficiency in top tech stacks (Flutter, React Native, Node.js, etc.)",
+            "Experience building apps like Walmart, Instacart, and Blinkit",
+            "Expertise in Flutter, React Native, Node.js, and more",
           ]}
         />
 
