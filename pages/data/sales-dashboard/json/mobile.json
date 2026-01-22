@@ -90,7 +90,6 @@
       "title": "Food Delivery App Development"
     }
   ],
-
   "consultancyHead": [
     {
       "num": "1",
@@ -98,7 +97,6 @@
       "desc": "Build custom mobile apps with Comfygen and make your business easier. As a reliable mobile app developer, we specialize in developing custom apps across various sectors that make sure your business meets its unique demands and challenges."
     }
   ],
-
   "MobileSolution": {
     "num": "1",
     "head": " Mobile App Solution For Diffrent Industries",
@@ -274,8 +272,7 @@
       "title": "Lite App Development"
     }
   ],
-
-"customTestimonials": [
+  "customTestimonials": [
     {
       "text": "Comfygen helped us unify our sales data and visualize performance like never before. Now we track KPIs daily instead of monthly.",
       "name": "Arun G.",
@@ -292,7 +289,6 @@
       "title": "BI Analyst, Retail Group"
     }
   ],
-
   "Frequently": [
     {
       "num": "1",
@@ -539,43 +535,100 @@
       "decs": "You might have noticed nowadays that whoever is upgrading is leading the market. Same goes in all the domains / industries. If you want to lead, you have to upgrade to something new. We have the power, and grant the leverages to clients to meet current unique and latest tech-trends. Our super efficient minds are not only innovative, but adaptable to new things; which we imply in our projects to build great applications."
     }
   ],
- 
-  "portfoliodata": [],
-
-
+ "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/data/data-p1.webp",
+      "title": "Retail Analytics Dashboard for eCommerce Brand",
+      "description": "We developed a custom Power BI dashboard for an eCommerce client to track real-time sales, customer behavior, and inventory levels. The data solution improved forecasting accuracy by 35% and helped personalize marketing strategies across multiple regions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/data/data-p2.webp",
+      "title": "Predictive Model for Healthcare Risk Scoring",
+      "description": "Using Python and machine learning, we built a prediction engine that helped a healthcare provider identify high-risk patients early. This solution improved treatment planning and reduced emergency visits by over 20% within the first quarter.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/data/data-p3.webp",
+      "title": "Big Data Platform for Logistics Automation",
+      "description": "We implemented a scalable big data architecture using Apache Spark and Hadoop for a logistics firm. The system enabled real-time fleet tracking, reduced delivery delays by 25%, and optimized route planning across 5 major cities.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/data/data-p4.webp",
+      "title": "Student Performance Analytics for EdTech App",
+      "description": "Our team designed an AI-powered performance tracking system for an EdTech platform. It analyzed test scores, engagement rates, and course progress to generate personalized learning recommendations, boosting student retention by 30% in just two months.",
+      "link": "#"
+    }
+  ],
   "servicesData": [
     {
-      "title": "Sales Funnel with Conversion Rates",
+      "title": "Dashboard Design & Development",
       "subtitle": "",
-      "description": "Visualize each stage of your sales funnel—from lead to close—and understand where deals are stalling or succeeding."
+      "description": "We create custom, interactive dashboards that visualize your sales performance in real time. Each dashboard is designed for clarity, usability, and actionability.",
+      "features": [
+        "Interactive charts, graphs, and visualizations",
+        "Role-specific dashboards for managers, executives, and teams",
+        "Intuitive design for faster data interpretation",
+        "Mobile-friendly and accessible anywhere"
+      ]
     },
     {
-      "title": "Progress Meters vs Targets/Goals",
+      "title": "Data Integration",
       "subtitle": "",
-      "description": "Track how your sales reps and teams are performing against set targets, with real-time updates and visual cues."
+      "description": "Seamlessly connect Power BI with your CRM, ERP, Excel, and cloud data sources. We ensure all your sales data is centralized and ready for analysis.",
+      "features": [
+        "Consolidate data from multiple sources",
+        "Automate data refresh and reduce manual reporting",
+        "Ensure accuracy and consistency across reports",
+        "Secure and compliant data handling"
+      ]
     },
     {
-      "title": "Geographical Sales Breakdown",
+      "title": "KPI & Metrics Setup",
       "subtitle": "",
-      "description": "Use interactive maps to identify which regions are underperforming or driving the most revenue."
+      "description": "Identify the critical performance indicators that matter most to your business. Track metrics that truly drive growth.",
+      "features": [
+        "Revenue, leads, and conversion rates",
+        "Sales cycle efficiency and pipeline health",
+        "Team and individual performance tracking",
+        "Custom KPIs aligned with business goals"
+      ]
     },
     {
-      "title": "Sales Rep Performance",
+      "title": "Predictive Analytics & Forecasting",
       "subtitle": "",
-      "description": "Compare individual and team metrics like revenue, win rates, and average deal size to identify top performers and coaching opportunities."
+      "description": "Move beyond static reporting with AI-powered forecasting. Anticipate trends and make proactive decisions.",
+      "features": [
+        "Predict sales trends and market shifts",
+        "Identify opportunities and risks early",
+        "Scenario analysis for smarter planning",
+        "Data-driven recommendations for growth"
+      ]
     },
     {
-      "title": "Reasons for Won/Lost Deals",
+      "title": "Training & Support",
       "subtitle": "",
-      "description": "Analyze trends behind deal outcomes to improve your pitch, pricing strategy, or value proposition."
+      "description": "Empower your team to fully leverage dashboards and insights. We provide hands-on training and ongoing support.",
+       "features": [
+        "Onboarding and best practices for teams",
+        "Interactive training sessions and documentation",
+        "Real-time troubleshooting and guidance",
+        "Enable self-sufficient dashboard usage"
+      ]
     },
     {
-      "title": "Sales Cycle Duration Analysis",
+      "title": "Maintenance & Upgrades",
       "subtitle": "",
-      "description": "Measure average deal timelines and spot bottlenecks that slow down your sales cycle."
+      "description": "Keep your dashboards relevant with continuous updates and enhancements. Adapt to evolving sales processes.",
+      "features": [
+        "Regular dashboard updates and performance optimization",
+        "Integration of new data sources or KPIs",
+        "Bug fixes and feature improvements",
+        "Continuous alignment with business objectives"
+      ]
     }
-],
-
+  ],
   "pageData": {
     "title": "Why Partner with Comfygen for Microsoft Power BI Dashboards?",
     "description": "Choosing the right team to handle your business intelligence needs can make or break your data strategy. At Comfygen, we don’t just build dashboards—we deliver Microsoft Power BI solutions that transform raw data into clear, actionable insights that drive real business growth.",
@@ -585,36 +638,36 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Work with Power BI Experts",
-      "description": "Our Power BI consultants and developers bring deep technical expertise and business understanding. We specialize in building tailored dashboards that give decision-makers the clarity they need to act faster and smarter."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Trusted by Global Businesses",
-      "description": "From startups to enterprise clients, our Power BI services have powered intelligent reporting across industries in the US, UK, India, and beyond. Wherever you are, we help you uncover the value hidden in your data."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "End-to-End BI Solutions",
-      "description": "We handle everything—from data preparation and modeling to dashboard development, integration, and post-deployment support. With Comfygen, you get a one-stop solution for all your Power BI consulting needs."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Commitment to Satisfaction",
-      "description": "Your success is our priority. We take the time to understand your business, KPIs, and data workflows to ensure every dashboard we build is relevant, user-friendly, and impactful."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-      "title": "Data Security You Can Trust",
-      "description": "We follow strict security protocols to ensure your data remains safe and compliant with modern standards. From access control to cloud-based governance, we’ve got it covered."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
-      "title": "Experienced Development Team",
-      "description": "Our team of Power BI professionals brings over a decade of experience in BI tools, <a class='text-blue-500 href='https://www.comfygen.com/data/analytics-service-provider' font-semibold' >data analytics</a>, and enterprise reporting. We combine technical precision with creative data storytelling."
-    }
-  ]
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Work with Power BI Experts",
+        "description": "Our Power BI consultants and developers bring deep technical expertise and business understanding. We specialize in building tailored dashboards that give decision-makers the clarity they need to act faster and smarter."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Trusted by Global Businesses",
+        "description": "From startups to enterprise clients, our Power BI services have powered intelligent reporting across industries in the US, UK, India, and beyond. Wherever you are, we help you uncover the value hidden in your data."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "End-to-End BI Solutions",
+        "description": "We handle everything—from data preparation and modeling to dashboard development, integration, and post-deployment support. With Comfygen, you get a one-stop solution for all your Power BI consulting needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Commitment to Satisfaction",
+        "description": "Your success is our priority. We take the time to understand your business, KPIs, and data workflows to ensure every dashboard we build is relevant, user-friendly, and impactful."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Data Security You Can Trust",
+        "description": "We follow strict security protocols to ensure your data remains safe and compliant with modern standards. From access control to cloud-based governance, we’ve got it covered."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
+        "title": "Experienced Development Team",
+        "description": "Our team of Power BI professionals brings over a decade of experience in BI tools, <a class='text-blue-500 href='https://www.comfygen.com/data/analytics-service-provider' font-semibold' >data analytics</a>, and enterprise reporting. We combine technical precision with creative data storytelling."
+      }
+    ]
   }
 }

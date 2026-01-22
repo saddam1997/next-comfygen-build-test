@@ -233,7 +233,7 @@ export default function Mobile(props: any) {
         <HireDeveloper
           heading="Hire App Development Consulting to success"
           text="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
-          text1="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
+          text1=" "
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-consulting-img.webp"

@@ -190,7 +190,7 @@
       "id": 2,
       "title": "Driver App",
       "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/taxi-app-development-driver-panel-image.webp",
+      "img": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/Driver App penal.webp",
       "additionalDetails": [
         {
           "details": "<b>Trip Requests</b> – Accept or reject rides instantly.",
@@ -219,10 +219,12 @@
         }
       ]
     },
+
+  
     {
       "id": 3,
       "title": "Admin Panel",
-      "img": "https://www.comfygen.com/image/taxi-app-development-admin-panel.webp",
+      "img": "https://www.comfygen.com/image/taxi-app-development-driver-panel-image.webp",
       "icon": " <i className='fas fa-wallet text-4xl'></i>",
       "additionalDetails": [
         {

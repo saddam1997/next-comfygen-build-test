@@ -205,83 +205,61 @@ export default function ClinicalApp(props: any) {
 
       }]
     },
+   {
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Does the Whitelabel pharmacy delivery app support multiple payment gateways?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, most white-label pharmacy delivery apps support multiple payment gateways. This feature allows users to choose their preferred payment method, like credit cards, debit cards, digital wallets, net banking, or cash on delivery."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to develop a custom pharmacy app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The development time for a custom pharmacy app can vary from 4 to 6 months. Factors like complexity, design, team size, and system integrations influence the timeline. It's important to work with a reputable pharmacy app development company for correct estimates."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can you able to enhance AI/ML and blockchain-based features in the existing pharmacy system?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Comfygen is able to enhance AI/ML and blockchain-based features in the existing pharmacy System These technologies offer benefits like personalized recommendations, optimized inventory, secure data storage, and transparent supply chains."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Is it UI/UX Uper friendly, If yes then How?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Comfygen's pharmacy apps are highly user-friendly. We give priority to intuitive design, clear navigation, accessibility features, and ongoing testing to ensure a seamless and enjoyable experience for users."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Is it developed for both Android and iOS?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Comfygen's pharmacy apps are developed for both Android and iOS platforms. This ensures that your pharmacy app can reach a wider audience and be accessible to users with different devices and preferences"
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Is Whitelabel and custom pharmacy App ASO friendly?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, both white-label and custom pharmacy apps can be ASO-friendly. By optimizing keywords, app store metadata, and using ASO tools, you can improve your pharmacy app's visibility and attract more downloads."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "How much does On-Demand Pharmacy App Development cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost to develop an online pharmacy app depends on features, design, complexity, and the platform you choose. A basic medicine delivery app development solution may range from $10,000 to $35,000, while a fully advanced on-demand pharmacy app with AI automation, real-time tracking, and subscription features can cost $40,000 to $1,00,000+.  Our pharmacy delivery app development cost includes UI/UX, secure backend, API integrations, payment gateway setup, and app launch support. At Comfygen, we deliver budget-friendly and scalable ePharmacy app development solutions tailored to your business goals."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "How Business Can Leverage a Pharmacy Delivery App?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Single Medical Store or Hospital For single medical stores or hospitals, a custom pharmacy app can be a game-changer. By offering features like prescription upload, automatic refills, and home delivery, you can significantly expand your reach and improve patient satisfaction. Comfygen is the user's trusted partner in developing cutting-edge pharmacy apps. Our expertise will help streamline operations, reduce stock-related issues, and drive business growth. Enterprises By developing custom pharmacy delivery apps, enterprises can create a healthier, more productive workplace. These apps streamline prescription management, reduce administrative burdens, and ensure compliance with healthcare regulations. Partner with the best pharmacy app development company Our cutting-edge mobile app development technology and expert developers can help you optimize workflows, enhance employee satisfaction, make data-driven decisions, and develop custom pharmacy apps customized to customer-specific needs.  Wholesales or Startups Wholesalers and startups can leverage pharmacy delivery apps to expand their market reach, explore new revenue streams, and optimize logistics. By offering a wider range of products and services, you can attract new customers and increase sales. Our cutting-edge technology can help you streamline delivery operations, reduce costs, and improve efficiency, enhancing customer satisfaction."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Benefits of the Online Pharmacy Delivery App We Developed",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "High Performance Our white-label pharmacy app is developed with high-performance standards, ensuring quick load times and easy navigation. Hybrid Functionality With hybrid functionality, our white-label app is compatible with multiple platforms, allowing users to access services on both iOS and Android devices. Well-Tested Product Our well-testing ensures a bug-free app, providing a smooth user experience and increasing trust. Data Security We give priority to data security, implementing robust encryption methods, and conformity with healthcare regulations. On-Time and Reliable Delivery Our app includes advanced logistics features that ensure on-time and reliable medicine delivery. Intuitive Designs Our white-label app's user-friendly interface makes it easy to navigate, order medications, and access health information."
-        }
-
-
-      }]
+      "@type": "Question",
+      "name": "How can my business benefit from a pharmacy app development service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pharmacy app helps expand market reach, automate inventory, provide on-demand medicine delivery, improve customer loyalty, and create new revenue streams for pharmacies and medical stores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to develop a custom pharmacy app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The development timeline depends on app complexity and features. White-label apps can be deployed quickly, while custom pharmacy app solutions may take 8–20 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide customization in pharmacy app development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer full customization including UI/UX design, features like subscription plans, prescription upload, delivery tracking, payment integration, and branding to match your pharmacy business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to develop a pharmacy app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost varies based on app complexity, platform (iOS, Android, or cross-platform), and custom features. White-label solutions are more affordable, while custom apps offer complete scalability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I create a pharmacy app from scratch for my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Our team develops pharmacy apps from scratch, providing fully tailored solutions for startups, retail pharmacies, and healthcare enterprises with all modern features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment methods are accepted for pharmacy app development services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept multiple payment methods, including bank transfers, online payments, and milestone-based payments, ensuring flexibility and security for clients investing in pharmacy app development."
+      }
     }
+  ]
+}
+
 
 
 
@@ -362,7 +340,7 @@ export default function ClinicalApp(props: any) {
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">We Provide Result-Oriented Pharmacy App Development Services</h2>
 
               <p className="text-base text-center font-normal">
-               Comfygen offers the best custom pharmacy app development services to help retailers and pharmacy businesses build secure and fast online pharmacy delivery platforms.
+              We offer end-to-end pharmacy app development services, helping pharmacies, startups, and healthcare enterprises build secure, scalable, and feature-rich pharmacy mobile app solutions for seamless online medicine ordering and delivery.
               </p>
             </div>
             <div className="">
@@ -372,12 +350,17 @@ export default function ClinicalApp(props: any) {
         </section>
         <AboutSection
           title="About Company"
-          heading="Why Should You Build a Pharmacy App?"
-          description1="The global digital pharmacy market is skyrocketing. Reports show that the online pharmacy market is expected to cross USD 180+ billion by 2030, driven by increasing smartphone users and demand for home medicine delivery. A pharmacy app helps businesses meet this growing demand and stay competitive in the healthcare industry."
-          description2="More than 70% of customers now prefer ordering medicines online because it saves time and avoids travel. The online pharmacy app lets users upload prescriptions as well as order medicines anytime and track deliveries in real time. Pharmacy owners benefit from improved customer service and repeat orders."
-          description3="Pharmacy apps also improve business efficiency by up to 40–50% through automation. Digital inventory management, online payments, and order tracking reduce manual work, minimize errors, and help pharmacy owners manage sales, stock, and reports from one platform."
-          description4="Start your online pharmacy journey with a secure and scalable mobile app. Talk to our experts to get a free consultation, feature list, and cost estimate tailored to your business needs."
-          points={[]}
+          heading="Why Should You Invest in Pharmacy App Development?"
+          description1="Investing in pharmacy app development allows businesses to capitalize on the rapidly growing online pharmacy market, projected to exceed USD 88 billion by 2026. With digital pharmacy services growing at a CAGR of 42%, pharmacies can offer on-demand medicine delivery, automated inventory management, and telepharmacy solutions. This boosts operational efficiency, increases customer loyalty through personalized experiences, and creates new revenue streams, making it a smart investment for startups and enterprises in the modern healthcare ecosystem."
+          description2=""
+          description3=""
+          description4=""
+          points={[
+            "Expand Market Reach",
+            "Increase Customer Loyalty",
+            "Boost Operational Efficiency",
+            "Generate New Revenue Streams"
+          ]}
           imageSrc="https://www.comfygen.com/comfygen-images/pharmacy-app-development/medicine-delivery-about-section-image.webp"
           link="/about-us"
           linkText="Explore More"

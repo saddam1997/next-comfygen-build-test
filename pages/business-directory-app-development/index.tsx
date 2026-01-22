@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -67,6 +67,10 @@ const Portfolio = dynamic(
   { loading: loader, ssr: true }
 );
 
+const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -321,10 +325,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Top Best Business Directory App Development Company | Comfygen</title>
+        <title>Business Directory App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Comfygen is a top-rated business directory app development company. Build a business directory app & website like Clutch, IndiaMart, JustDial, and Yelp with smart listings, reviews, and location-based search."
+          content="Comfygen is a trusted business directory app development company offering custom business listing app solutions with smart search, maps, reviews, and scalable features."
         />
 
         <meta
@@ -398,13 +402,13 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Business Directory App Development Company"
-            ptag="Looking to build a powerful online listing platform? Our top-rated business directory app development company helps you create location-based business listing directory apps like Yelp, JustDial or IndianMart for your startups and enterprises. We offer world-class business directory app development services that connect users with local businesses and services in real time."
-            li="Smart Business Listings with Filters"
-            li1="Location-Based Search Integration"
-            li2="Ratings, Reviews & Contact Info"
-            li3="Easy-to-Use Admin Dashboard"
-            li4="IT-based Listing App Development Solution"
+            heading="Top Business Directory App Development Company"
+            ptag="Build a scalable and high-performance business listing app that helps users discover nearby businesses effortlessly. As a trusted business directory app development company, we create custom location-based directory apps for startups and enterprises, inspired by platforms like Yelp, Justdial, and IndiaMART. Our directory app development solutions are secure, feature-rich, and designed to drive real user engagement and business growth."
+            li="Smart business listings with advanced filters"
+            li1="Location-based search & map integration"
+            li2="Ratings, reviews, and instant contact options"
+            li3="Powerful admin panel for full control"
+            li4="Scalable IT-driven directory app solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -415,22 +419,17 @@ export default function ClinicalApp(props: any) {
           />
         </div>
 
-        <Milestones/>
+        <Milestones />
 
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide the Best Business Directory App Development Services
+                We Provide Result-Driven Business Directory App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen offers the most reliable business listing directory app
-                development services tailored for startups, enterprises, and
-                niche platforms. Our scalable and secure solutions empower you
-                to launch your own listing app with advanced features like
-                search filters, map integration, reviews, and admin control —
-                all backed by a dedicated development team.
+                As a leading directory app development company, Comfygen delivers secure, scalable, and fully customized business listing app development services for startups, enterprises, and niche marketplaces. Our directory app solutions are designed to improve business visibility, user engagement, and platform monetization with advanced features and modern technologies.
               </p>
             </div>
             <div className="">
@@ -441,41 +440,39 @@ export default function ClinicalApp(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="How Business Listing Sites Boost Your Online Visibility"
-          description1="In the digital-first era, being discoverable online is critical for business growth. A business listing app helps your brand get found quickly by potential customers searching locally or by category."
-          description2="It not only increases online presence but also improves your ranking in search engines, maps, and mobile searches."
-          description3="With a feature-rich business directory app, you unlock higher visibility and more leads — all while managing listings from a centralized platform."
+          heading="Invest in Business Directory App Development to Grow Your Brand"
+          description1="In today’s competitive digital market, investing in a business directory app is a smart way to boost your brand’s visibility and revenue. A well-built directory app helps businesses reach local and global audiences, generate leads, and improve customer engagement—all from a single platform."
+          description2="By investing in a feature-rich business listing app, you not only increase your online presence but also gain a scalable solution that grows with your business. Whether it’s local listings, niche industries, or multi-location platforms, a directory app maximizes discoverability and monetization opportunities."
+          description3=""
           points={[
-            "Improves Local SEO & Search Engine Rankings",
-            "Increases Organic Traffic to Business Profiles",
-            "Boosts Brand Trust via Reviews & Ratings",
-            "Allows Instant Discovery on Maps & Mobile",
-            "Helps Target Niche Audiences with Filters & Tags",
+            "Unlock higher ROI with a scalable business directory app",
+            "Increase online visibility and lead generation",
+            "Monetize your platform via subscriptions, ads, and featured listings",
+            "Build credibility and trust with verified reviews & ratings",
+            "Target specific audiences with advanced filters, categories, and location-based search",
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-
-        
-        {/* <ContactFromCenter /> */}
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Portfolio – Enterprise Directory App and Website Development Projects"
+            heading="Business Directory App and Website Development Portfolio"
             description="Explore how Comfygen helps businesses across industries with powerful and scalable business directory app and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development solutions</a>. From local listing platforms to niche-specific B2B directories, our projects showcase advanced search features, seamless user experience, and fully customizable interfaces tailored to client goals."
           />
         </section>
+
+
+        <CallToAction
+          heading="Launch Your Startup App with Experts"
+          text="Turn your startup idea into a scalable, secure, and market-ready app with expert developers."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
         <div className="py-8">
           <Features
@@ -488,6 +485,63 @@ export default function ClinicalApp(props: any) {
             featuresData={JSON_DATA.featuresData}
             grid={3} />
         </div>
+
+        {/* <ContactFromCenter /> */}
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
+
+
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                Emerging Technologies We Use to Build a Business Directory App
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  At Comfygen Technologies, we focus on using the right technology to create business directory apps that are fast, reliable, and easy to use. Our development approach combines modern tools with practical innovation, ensuring your directory platform delivers a smooth experience for users while remaining scalable for future growth.
+                </p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                  src={img}
+                                  className="object-cover"
+                                  width={35}
+                                  height={50}
+                                  alt={title}
+                                /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
 
 
 

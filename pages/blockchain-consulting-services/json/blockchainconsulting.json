@@ -425,38 +425,87 @@
       "decs": "We are one among the top blockchain app development consulting companies, which believes in showcasing the visualized results before the project takes into the under-development stage. Our Blockchain Minimum Viable Product (MVP) development Process will give you a clear picture to transform your business next-level. It is the right of clients to know the return on investment to integrate the blockchain app development solution into the system. "
     }
   ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Finance App Development ",
-      "decs": "Blockchain assistance and service integration in the Blockchain <a href='/finance-app-development' class='font-bold hover:underline'>finance App Development</a> sector will build security, transparency, and record-keeping. "
+
+ "techData": {
+    "backend": [
+      { "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", "alt": "Nodejs", "name": "Nodejs", "num": "1" },
+      { "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg", "alt": "Javascript", "name": "Javascript", "num": "2" },
+      { "img": "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", "alt": "Express js", "name": "Express js", "num": "3" },
+      { "img": "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", "alt": "Sails js", "name": "Sails js", "num": "4" },
+      { "img": "https://www.comfygen.com/image/next-js-icon.svg", "alt": "Next js", "name": "Next js", "num": "5" },
+      { "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg", "alt": "Django", "name": "Django", "num": "6" },
+      { "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg", "alt": "Python", "name": "Python", "num": "7" },
+      { "img": "https://www.comfygen.com/media/svg/tech/php-icon.svg", "alt": "PHP", "name": "PHP", "num": "8" }
+    ],
+    "frontend": [
+      { "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg", "alt": "Html5", "name": "Html5", "num": "1" },
+      { "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg", "alt": "Css3", "name": "Css3", "num": "2" },
+      { "img": "https://www.comfygen.com/image/next-js-icon.svg", "alt": "Nextjs", "name": "nextjs", "num": "3" },
+      { "img": "https://www.comfygen.com/media/svg/tech/react-original.svg", "alt": "React", "name": "React js", "num": "4" },
+      { "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", "alt": "Tailwindcss", "name": "Tailwindcss", "num": "5" },
+      { "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", "alt": "Angularjs", "name": "Angular js", "num": "6" },
+      { "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg", "alt": "Javascript", "name": "Javascript", "num": "7" },
+      { "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg", "alt": "Typescript", "name": "Typescript", "num": "8" },
+      { "img": "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", "alt": "Bootstrap", "name": "Bootstrap", "num": "9" }
+    ],
+
+
+    "Blockchain Platforms ": [
+      { "img": "/svg/tech/aws-logo.svg", "alt": "Ethereum", "name": "Ethereum", "num": "1" },
+      { "img": "/svg/tech/googlecloud-original.svg", "alt": "Polygon", "name": "Polygon", "num": "2" },
+      { "img": "https://www.comfygen.com/img/stackimg/solona.svg", "alt": "Solana", "name": "Solana", "num": "3" },
+      { "img": "https://www.comfygen.com/img/stackimg/cardano.svg", "alt": "Cardano", "name": "Cardano", "num": "4" },
+      { "img": "https://www.comfygen.com/img/stackimg/eos.svg", "alt": "EOS", "name": "EOS", "num": "5" }
+    ],
+    "Wallets": [
+      { "img": "https://www.comfygen.com/img/stackimg/binance.svg", "alt": "Binance", "name": "Binance", "num": "1" },
+      { "img": "/svg/tech/aws-logo.svg", "alt": "Coinbase", "name": "Coinbase", "num": "2" },
+      { "img": "https://www.comfygen.com/img/stackimg/cardano.svg", "alt": "trust wallet", "name": "trust wallet", "num": "3" },
+      { "img": "/svg/tech/azure-original.svg", "alt": "Walletconnwect", "name": "Walletconnwect", "num": "4" }
+    ]
+  },
+
+   "pageData": {
+    "title": "Why Choose Comfygen for Blockchain Consulting Services",
+    "description": "Blockchain consulting isn’t about selling you a chain, a token, or a trend. It’s about helping you make the right technical and business decisions before real money is on the line. That’s exactly how we work at Comfygen.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-    {
-      "num": "02",
-      "title": "Telecommunication",
-      "decs": "In Telecom, Blockchain Technologies can help with roaming settlement, security, SLA monitoring, and data immutability. "
-    },
-    {
-      "num": "03",
-      "title": "Start-Ups",
-      "decs": "With the help of blockchain products, the start-ups can access the fundraising opportunities, exploring new marketplaces, and agile project development."
-    },
-    {
-      "num": "04",
-      "title": "Manufacturing",
-      "decs": "If the blockchain solutions are integrated into the manufacturing process, then it leads to ensure quality control and safety protocols."
-    },
-    {
-      "num": "05",
-      "title": "Supply-Chain",
-      "decs": " Smart Contracts into supply chain enforce automations, security, transparency, and improvement in supply chain operations."
-    },
-    {
-      "num": "06",
-      "title": "HealthCare",
-      "decs": "Blockchain app development services solutions in the <a href='/healthcare-app-development' class='font-bold hover:underline'>healthcare app development industry </a> will ensure informative transparency and ensure high security of medical data and reduce insurance fraud."
-    }
-  ],
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Business-First Blockchain Strategy",
+        "description": " We focus on solving real business problems, not forcing blockchain where it doesn’t belong. Every recommendation is tied to measurable outcomes."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Proven Blockchain Expertise",
+        "description": " Our consultants bring hands-on experience across public, private, and permissioned blockchains, with solutions designed for real-world performance."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Technology-Neutral Guidance",
+        "description": " We recommend the right platform based on your needs, not preferences. The result is a future-ready solution that scales with your business."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Security-Centric Consulting",
+        "description": " Security is built into every decision, from architecture design to smart contract logic, ensuring your blockchain solution is resilient and trustworthy"
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Clear Roadmaps & Cost Transparency",
+        "description": " You get a structured plan covering scope, timelines, risks, and investment, so there are no surprises later."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "End-to-End Support Capability",
+        "description": " From strategy to execution, our consulting aligns seamlessly with development to ensure faster delivery and smoother implementation."
+      }
+    ]
+  },
   "Hire": [
     {
       "num": "1",

@@ -1,180 +1,316 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a business directory app?",
-    "desc": "The cost of business directory app development depends on features, platform, and complexity. A basic app may start around $5,000–$10,000, while a fully-featured, custom solution can range higher. We provide flexible pricing based on your project requirements and budget."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to build the app?",
-    "desc": "B2B directory app development time depends on the scope and features. A simple business directory app takes 4–6 weeks, while complex projects with custom integrations may take 8–12 weeks. We follow agile development to ensure faster delivery without compromising quality."
-  },
-  {
-    "num": "3",
-    "title": "Can I customize the app as per my niche?",
-    "desc": "Yes, we offer custom business directory website development tailored to your specific niche — whether it's healthcare, real estate, local services, or B2B. You can choose custom features, branding, layouts, and functionality based on your business needs."
-  },
-  {
-    "num": "4",
-    "title": "Do you provide post-launch support?",
-    "desc": "Absolutely! As a trusted review website development company, we offer complete post-launch support, including bug fixes, updates, security patches, and feature enhancements to ensure your app runs smoothly and scales with your business."
-  },
-  {
-    "num": "5",
-    "title": "Is the business listing app available for both Android and iOS?",
-    "desc": "Yes, we build business directory apps for both Android and iOS using Flutter, React Native, and native technologies. You get a consistent and optimized experience across all devices, increasing your reach and user engagement."
-  }
-],
-
-
-
-"featuresData": [
-  {
-    "id": 1,
-    "title": "Customer App",
-    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/customer.webp",
-    "additionalDetails": [
-      { "details": "Easy Sign-up & Location-Based Search", "emoji": "", "content": "" },
-      { "details": "Advanced Category & Filter Options", "emoji": "", "content": "" },
-      { "details": "Business Profile Viewing with Ratings/Reviews", "emoji": "", "content": "" },
-      { "details": "Map Integration for Nearby Results", "emoji": "", "content": "" },
-      { "details": "Direct Call, Chat, or Inquiry Options", "emoji": "", "content": "" },
-      { "details": "Bookmarking & Favorite Listings", "emoji": "", "content": "" },
-      { "details": "Instant Push Notifications", "emoji": "", "content": "" },
-      { "details": "Review & Feedback Submission", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Business/Vendor Panel",
-    "icon":" <i className='fas fa-store text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/vendor.webp",
-    "additionalDetails": [
-      { "details": "Easy Profile Setup & Service Listing", "emoji": "", "content": "" },
-      { "details": "Add Photos, Descriptions & Contact Details", "emoji": "", "content": "" },
-      { "details": "Real-time Inquiry Management", "emoji": "", "content": "" },
-      { "details": "View Customer Ratings & Feedback", "emoji": "", "content": "" },
-      { "details": "Business Performance Dashboard", "emoji": "", "content": "" },
-      { "details": "Premium Listing & Ad Promotion Options", "emoji": "", "content": "" },
-      { "details": "Update Availability & Location Info", "emoji": "", "content": "" },
-      { "details": "Notification & Alert Center", "emoji": "", "content": "" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Admin Panel",
-    "icon":" <i className='fas fa-user-shield text-4xl'></i>,",
-    "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/admin.webp",
-    "additionalDetails": [
-      { "details": "User & Vendor Management Console", "emoji": "", "content": "" },
-      { "details": "Listing Approval & Moderation", "emoji": "", "content": "" },
-      { "details": "Manage Categories, Tags & Filters", "emoji": "", "content": "" },
-      { "details": "Analytics Dashboard & Reporting Tools", "emoji": "", "content": "" },
-      { "details": "Advertisement & Monetization Control", "emoji": "", "content": "" },
-      { "details": "CMS Integration for Content Updates", "emoji": "", "content": "" },
-      { "details": "Spam Control & Review Monitoring", "emoji": "", "content": "" },
-      { "details": "Multi-role Access Permissions", "emoji": "", "content": "" }
-    ]
-  }
-],
-
-
-"portfoliodata": [
-  {
-    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio1.webp",
-    "title": "Local Business Directory App",
-    "description": "A feature-rich business directory app built for a metro city startup to list local vendors and service providers. It supports map-based discovery, customer reviews, and direct contact through calls or chat.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-
-  {
-    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio2.webp",
-    "title": "Niche Industry Services Directory",
-    "description": "Developed for a healthcare startup to connect patients with verified doctors, clinics, and labs. Includes multi-level search filters, ratings, and online appointment booking with real-time availability.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio3.webp",
-    "title": "Franchise Directory App",
-    "description": "Built for a multi-brand business franchise to showcase outlets and manage operations across cities. The app allows users to find nearby locations, view services, and contact individual branches.",
-    "link": "https://www.comfygen.com/contact-us"
-  },
-  {
-    "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio4.webp",
-    "title": "B2B Business Listing Web Portal",
-    "description": "An enterprise-grade B2B platform designed to list suppliers, distributors, and manufacturers in one place. It includes profile verification, lead generation, product showcase, and inquiry management.",
-    "link": "https://www.comfygen.com/contact-us"
-  }
-  
-]
-,
-"servicesData": [
-  {
-    "title": "Custom Local Business Directory App/Website Development",
-    "description": "We build custom local business directory apps and websites that help users discover nearby services and businesses with ease. Our B2B directory app development solutions include geo-location, real-time search, and map-based listings, making them ideal for city-based or community-specific platforms.",
-    "features": [
-      "Location-based search and discovery",
-      "Admin control with CMS integration",
-      "Interactive maps and navigation",
-      "User ratings and reviews system"
-    ]
-  },
-  {
-    "title": "Niche Industry Business Directory App Development",
-    "description": "Target a specific industry with our niche directory app development services. Whether it’s healthcare, legal, automotive, or real estate, we develop apps tailored to your sector with advanced search filters and profile customizations.",
-    "features": [
-      "Industry-specific listing features",
-      "Custom categories & tags",
-      "Advanced filtering and sorting",
-      "Secure vendor-user communication"
-    ]
-  },
-  {
-    "title": "B2B/B2C Business Listing Platforms",
-    "description": "Launch a robust B2B or B2C business listing platform that connects service providers with buyers or end-users. We integrate advanced search, lead generation, and CRM tools to help businesses grow through visibility and interaction.",
-    "features": [
-      "Buyer-seller interaction tools",
-      "Business profile management",
-      "Lead capture and conversion tracking",
-      "Real-time inquiries and responses"
-    ]
-  },
-  {
-    "title": "Franchise Directory App Development",
-    "description": "Comfygen Technologies is a top-notch business listing app development company. We offer franchise directory app development services that help you manage multi-brand or franchise listings efficiently. Enable customers to find the nearest location, view franchise info, and even book appointments or services from within the app.",
-    "features": [
-      "Multi-franchise location management",
-      "Integrated booking and inquiry system",
-      "Interactive map views for each outlet",
-      "Franchise performance tracking dashboard"
-    ]
-  },
-  {
-    "title": "Multi-location Directory App Development",
-    "description": "Build a centralized platform to manage businesses across multiple regions with our multi-location business directory app development services. Designed for scalability, these apps come with user segmentation and zone-based listing features.",
-    "features": [
-      "Zone-based listing and filters",
-      "Admin control by region or branch",
-      "Local SEO tools per location",
-      "Multi-user admin and vendor panels"
-    ]
-  },
-  {
-    "title": "White-label Business Directory App Solutions",
-    "description": "Speed up your launch with our white-label business directory app solutions. Fully customizable and ready-to-deploy apps designed to suit any niche or region, complete with branding, monetization, and core directory features.",
-    "features": [
-      "100% white-label with your branding",
-      "Fast deployment and customization",
-      "Monetization options (ads, subscriptions)",
-      "Multi-language and currency support"
-    ]
-  }
-]
-
-,
-"servicesData1": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a business directory app?",
+      "desc": "The cost of business directory app development depends on features, platform, and complexity. A basic app may start around $5,000–$10,000, while a fully-featured, custom solution can range higher. We provide flexible pricing based on your project requirements and budget."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build the app?",
+      "desc": "B2B directory app development time depends on the scope and features. A simple business directory app takes 4–6 weeks, while complex projects with custom integrations may take 8–12 weeks. We follow agile development to ensure faster delivery without compromising quality."
+    },
+    {
+      "num": "3",
+      "title": "Can I customize the app as per my niche?",
+      "desc": "Yes, we offer custom business directory website development tailored to your specific niche — whether it's healthcare, real estate, local services, or B2B. You can choose custom features, branding, layouts, and functionality based on your business needs."
+    },
+    {
+      "num": "4",
+      "title": "Do you provide post-launch support?",
+      "desc": "Absolutely! As a trusted review website development company, we offer complete post-launch support, including bug fixes, updates, security patches, and feature enhancements to ensure your app runs smoothly and scales with your business."
+    },
+    {
+      "num": "5",
+      "title": "Is the business listing app available for both Android and iOS?",
+      "desc": "Yes, we build business directory apps for both Android and iOS using Flutter, React Native, and native technologies. You get a consistent and optimized experience across all devices, increasing your reach and user engagement."
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "title": "Customer App",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/customer.webp",
+      "additionalDetails": [
+        {
+          "details": "Easy Sign-up & Location-Based Search",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Advanced Category & Filter Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Business Profile Viewing with Ratings/Reviews",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Map Integration for Nearby Results",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Direct Call, Chat, or Inquiry Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Bookmarking & Favorite Listings",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Instant Push Notifications",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Review & Feedback Submission",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Business/Vendor Panel",
+      "icon": " <i className='fas fa-store text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/vendor.webp",
+      "additionalDetails": [
+        {
+          "details": "Easy Profile Setup & Service Listing",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Add Photos, Descriptions & Contact Details",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Real-time Inquiry Management",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "View Customer Ratings & Feedback",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Business Performance Dashboard",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Premium Listing & Ad Promotion Options",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Update Availability & Location Info",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Notification & Alert Center",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Admin Panel",
+      "icon": " <i className='fas fa-user-shield text-4xl'></i>,",
+      "img": "https://www.comfygen.com/comfygen-images/business-directory-app-development/admin.webp",
+      "additionalDetails": [
+        {
+          "details": "User & Vendor Management Console",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Listing Approval & Moderation",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Manage Categories, Tags & Filters",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Analytics Dashboard & Reporting Tools",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Advertisement & Monetization Control",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "CMS Integration for Content Updates",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Spam Control & Review Monitoring",
+          "emoji": "",
+          "content": ""
+        },
+        {
+          "details": "Multi-role Access Permissions",
+          "emoji": "",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio1.webp",
+      "title": "Local Business Directory App",
+      "description": "A feature-rich business directory app built for a metro city startup to list local vendors and service providers. It supports map-based discovery, customer reviews, and direct contact through calls or chat.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio2.webp",
+      "title": "Niche Industry Services Directory",
+      "description": "Developed for a healthcare startup to connect patients with verified doctors, clinics, and labs. Includes multi-level search filters, ratings, and online appointment booking with real-time availability.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio3.webp",
+      "title": "Franchise Directory App",
+      "description": "Built for a multi-brand business franchise to showcase outlets and manage operations across cities. The app allows users to find nearby locations, view services, and contact individual branches.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/portfolio4.webp",
+      "title": "B2B Business Listing Web Portal",
+      "description": "An enterprise-grade B2B platform designed to list suppliers, distributors, and manufacturers in one place. It includes profile verification, lead generation, product showcase, and inquiry management.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Custom Business Directory Website And App Development",
+      "description": "Build fully customized business directory apps tailored to your idea and business model. We focus on user-friendly design, robust backend, and advanced features to make your platform scalable and competitive.",
+      "features": [
+        "Personalized listings & profiles",
+        "Smart search & filters",
+        "Multi-language & multi-currency support",
+        "Secure admin dashboard"
+      ]
+    },
+    {
+      "title": "Local Business Listing App Development",
+      "description": "Enable users to discover nearby businesses with real-time location-based search and interactive maps. Our local business directory app development solutions are perfect for city-based or community-specific platforms.",
+      "features": [
+        "Location-based search & GPS integration",
+        "Ratings, reviews & business verification",
+        "Map-based navigation & directions",
+        "Admin control with CMS"
+      ]
+    },
+    {
+      "title": "Niche Industry Business Directory App Development",
+      "description": "Target a specific industry with our niche directory app development services. Whether it’s healthcare, legal, automotive, or real estate, we develop apps tailored to your sector with advanced search filters and profile customizations.",
+      "features": [
+        "Industry-specific listing features",
+        "Custom categories & tags",
+        "Advanced filtering and sorting",
+        "Secure vendor-user communication"
+      ]
+    },
+    {
+      "title": "B2B & B2C Business Listing App Development",
+      "description": "Launch a high-performance B2B or B2C business directory app that connects buyers with service providers seamlessly. Our business listing platform development integrates lead generation tools, CRM systems, and real-time communication to drive conversions and growth.",
+      "features": [
+        "Buyer-seller interaction tools",
+        "Business profile & service management",
+        "Lead capture and conversion tracking",
+        "Real-time inquiries and responses"
+      ]
+    },
+    {
+      "title": "Franchise Directory App Development",
+      "description": "Comfygen Technologies is a top-notch business listing app development company. We offer franchise directory app development services that help you manage multi-brand or franchise listings efficiently. Enable customers to find the nearest location, view franchise info, and even book appointments or services from within the app.",
+      "features": [
+        "Multi-franchise location management",
+        "Integrated booking and inquiry system",
+        "Interactive map views for each outlet",
+        "Franchise performance tracking dashboard"
+      ]
+    },
+    {
+      "title": "Multi-location Directory App Development",
+      "description": "Our multi-location business directory app development services enable you to manage listings across different cities or regions from a centralized system. These apps are designed for high scalability and regional control.",
+      "features": [
+        "Zone-based business listing and filters",
+        "Region-wise admin control",
+        "Local SEO optimization tools",
+        "Multi-vendor & admin panels"
+      ]
+    },
+    {
+      "title": "White-label Business Directory App Solutions",
+      "description": "Accelerate your launch with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label business directory app development solutions</a>. These ready-to-deploy platforms are fully customizable, scalable, and branded to match your business goals.",
+      "features": [
+        "100% white-label with your branding",
+        "Fast deployment and customization",
+        "Monetization options (ads, subscriptions)",
+        "Multi-language and currency support"
+      ]
+    },
+    {
+      "title": "Professional Directory App Development",
+      "description": "We develop feature-rich professional directory apps for doctors, lawyers, consultants, architects, and other specialists. These business directory app solutions help professionals showcase their expertise, build trust through reviews, and attract qualified leads via structured profiles and smart discovery tools.",
+      "features": [
+        "Verified profiles for doctors, lawyers, consultants, and experts",
+        "Appointment booking and inquiry functionality",
+        "Reviews and ratings to build user trust",
+        "Secure communication between users and professionals"
+      ]
+    },
+    {
+      "title": "Classified & Marketplace Directory App Development",
+      "description": "Our classified and marketplace directory app development services enable users to post, browse, and manage listings across multiple categories. These business directory apps are built for high traffic, easy moderation, and multiple monetization opportunities, making them ideal for scalable digital marketplaces.",
+      "features": [
+        "Multi-category classified listings and marketplace support",
+        "Featured ads and premium listing options",
+        "User-to-user messaging and inquiry system",
+        "Admin moderation and listing control"
+      ]
+    },
+    {
+      "title": "API & Third-Party Integration Services",
+      "description": "Enhance functionality by integrating payment gateways, CRM, maps, and other third-party services into your business directory app. Our mobile app developers ensure smooth and secure API connectivity.",
+      "features": [
+        "Payment & subscription integration",
+        "CRM & marketing tool integration",
+        "Maps & navigation APIs",
+        "Real-time data synchronization"
+      ]
+    },
+     {
+      "title": "Maintenance & Support Services",
+      "description": "We provide ongoing support and <a href='https://www.comfygen.com/blog/mobile-app-maintenance-cost/' class='underline font-semibold'>app maintenance</a> to keep your business directory app secure, up-to-date, and optimized for performance. Our team ensures your platform runs smoothly and evolves with business needs.",
+      "features": [
+        "Regular updates & bug fixes",
+        "Security monitoring",
+        "Performance optimization",
+        "24/7 technical support"
+      ]
+    }
+  ],
+  "servicesData1": [
     {
       "title": "Simplifies the Loan Process",
       "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
@@ -200,8 +336,7 @@
       "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
       "features": []
     }
-  ]
-,
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -209,29 +344,28 @@
       "desc": "Building a business directory app is a smart move for modern entrepreneurs, local aggregators, and niche platforms. It not only simplifies business discovery for users but also opens multiple revenue and engagement channels. Whether you're targeting local services or global listings, a directory app boosts visibility, retention, and revenue."
     }
   ],
- "consultancyData": [
-  {
-    "title": "Enhance Local Discovery",
-    "desc": "A business directory app makes it easier for users to find nearby services or businesses using smart search filters and location-based listings. This improves local visibility and helps customers quickly connect with relevant providers in their area."
-  },
-  {
-    "title": "Scalable Revenue Model",
-    "desc": "Monetize your business directory app through various channels like premium listings, paid ads, and subscription plans. This creates a steady revenue stream while offering more exposure to businesses willing to pay for better visibility and reach."
-  },
-  {
-    "title": "Boost Customer Engagement",
-    "desc": "Let users interact through reviews, ratings, favorites, and direct messaging. These features encourage more time spent on your app and improve trust and user experience, keeping your platform active and engaging at all times."
-  },
-  {
-    "title": "Easy Business Management",
-    "desc": "Give vendors the tools to manage their listings, offers, and communication easily via a powerful backend panel. This streamlines operations for businesses and ensures accurate, up-to-date information is always available to users."
-  },
-  {
-    "title": "Cross-platform Accessibility",
-    "desc": "Reach a wider audience by launching your business directory app across Android, iOS, and web platforms. Make sure to have a consistent and smooth user experience on all devices with responsive design and high-speed performance."
-  }
-]
-,
+  "consultancyData": [
+    {
+      "title": "Enhance Local Discovery",
+      "desc": "A business directory app makes it easier for users to find nearby services or businesses using smart search filters and location-based listings. This improves local visibility and helps customers quickly connect with relevant providers in their area."
+    },
+    {
+      "title": "Scalable Revenue Model",
+      "desc": "Monetize your business directory app through various channels like premium listings, paid ads, and subscription plans. This creates a steady revenue stream while offering more exposure to businesses willing to pay for better visibility and reach."
+    },
+    {
+      "title": "Boost Customer Engagement",
+      "desc": "Let users interact through reviews, ratings, favorites, and direct messaging. These features encourage more time spent on your app and improve trust and user experience, keeping your platform active and engaging at all times."
+    },
+    {
+      "title": "Easy Business Management",
+      "desc": "Give vendors the tools to manage their listings, offers, and communication easily via a powerful backend panel. This streamlines operations for businesses and ensures accurate, up-to-date information is always available to users."
+    },
+    {
+      "title": "Cross-platform Accessibility",
+      "desc": "Reach a wider audience by launching your business directory app across Android, iOS, and web platforms. Make sure to have a consistent and smooth user experience on all devices with responsive design and high-speed performance."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen Technologies for Business Directory App Development?",
     "description": "Choosing the right business directory app development agency is key to launching a high-performing, secure, and scalable listing platform. Comfygen Technologies delivers powerful directory solutions that meet real-world business needs and user expectations using experience, innovation, and precision. Here's why we're the preferred business directory <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/mobile-app-development' >mobile app development company</a> for startups and enterprises:",
@@ -240,58 +374,56 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-  "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "10+ Years of Industry Experience",
-    "description": "With over a decade of experience, we’ve delivered custom review website development solutions across multiple industries. Our in-depth knowledge helps us craft successful, scalable, and feature-rich business directory application development services tailored to your goals."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Agile Development Methodology",
-    "description": "We follow agile practices to deliver your enterprise business directory mobile app development project more quickly and efficiently. This ensures continuous updates, better collaboration, and a flexible workflow for evolving needs."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Dedicated App Developers",
-    "description": "Our talented team of business listing app development experts provides both <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/android-app-development' >Android-based </a>. and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ios-app-development' >iOS-based business listing app development services</a> We bring deep technical know-how and creativity to build powerful platforms that users love to explore and businesses trust."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Scalable & Secure Codebase",
-    "description": "Every custom business directory app we build is future-ready, with a secure and scalable backend that can handle growing traffic, multiple listings, and location-based services with ease."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "White-label & Multi-platform Solutions",
-    "description": "We offer ready-to-launch <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label business directory app</a> options, along with support for multi-location business directory software development — perfect for franchises and enterprise-level needs."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Post-launch Maintenance Support",
-    "description": "As a full-service location-based directory app development company, we offer long-term support. From performance tuning to adding new features, we help your app stay updated, secure, and competitive."
-  }
-]
-
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "10+ Years of Industry Experience",
+        "description": "With over a decade of experience, we’ve delivered custom review website development solutions across multiple industries. Our in-depth knowledge helps us craft successful, scalable, and feature-rich business directory application development services tailored to your goals."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Agile Development Methodology",
+        "description": "We follow agile practices to deliver your enterprise business directory mobile app development project more quickly and efficiently. This ensures continuous updates, better collaboration, and a flexible workflow for evolving needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Dedicated App Developers",
+        "description": "Our talented team of business listing app development experts provides both <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/android-app-development' >Android-based </a>. and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ios-app-development' >iOS-based business listing app development services</a> We bring deep technical know-how and creativity to build powerful platforms that users love to explore and businesses trust."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable & Secure Codebase",
+        "description": "Every custom business directory app we build is future-ready, with a secure and scalable backend that can handle growing traffic, multiple listings, and location-based services with ease."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "White-label & Multi-platform Solutions",
+        "description": "We offer ready-to-launch <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label business directory app</a> options, along with support for multi-location business directory software development — perfect for franchises and enterprise-level needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Post-launch Maintenance Support",
+        "description": "As a full-service location-based directory app development company, we offer long-term support. From performance tuning to adding new features, we help your app stay updated, secure, and competitive."
+      }
+    ]
   },
   "customTestimonials": [
-  {
-    "text": "Comfygen delivered exactly what we envisioned. Their team built our local business directory app with powerful search and map integration. The app runs smoothly, and our user engagement has tripled since launch. Highly recommended!",
-    "name": "Raj Mehta",
-    "title": "Mumbai, India"
-  },
-  {
-    "text": "Working with Comfygen was a seamless experience. Their developers understood our business model and created a robust B2B listing platform that’s user-friendly and scalable. The admin panel makes management incredibly easy!",
-    "name": "Sarah Thompson",
-    "title": "New York, USA"
-  },
-  {
-    "text": "We needed a white-label directory app for our franchise network, and Comfygen delivered it on time with all the required features. Their support even after launch is impressive. A reliable and skilled development partner.",
-    "name": "Ahmed Al-Farsi",
-    "title": "Dubai, UAE"
-  }
-]
-,
+    {
+      "text": "Comfygen delivered exactly what we envisioned. Their team built our local business directory app with powerful search and map integration. The app runs smoothly, and our user engagement has tripled since launch. Highly recommended!",
+      "name": "Raj Mehta",
+      "title": "Mumbai, India"
+    },
+    {
+      "text": "Working with Comfygen was a seamless experience. Their developers understood our business model and created a robust B2B listing platform that’s user-friendly and scalable. The admin panel makes management incredibly easy!",
+      "name": "Sarah Thompson",
+      "title": "New York, USA"
+    },
+    {
+      "text": "We needed a white-label directory app for our franchise network, and Comfygen delivered it on time with all the required features. Their support even after launch is impressive. A reliable and skilled development partner.",
+      "name": "Ahmed Al-Farsi",
+      "title": "Dubai, UAE"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -498,8 +630,6 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
   "AIPowered": [
     {
       "num": "01",
@@ -520,8 +650,7 @@
       "num": "04",
       "title": " Chatbot-Powered Astrology Consultation",
       "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    }
-    ,
+    },
     {
       "num": "05",
       "title": "AI-Driven Compatibility Analysis",
@@ -543,57 +672,43 @@
       "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
     }
   ],
-
   "Emerging": [
     {
       "num": "1",
       "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
-      "decs": "Our <a class='font-semibold' href='/ai-development'> AI-powered astrology app development solutions </a> use machine learning algorithms to generate personalized horoscope predictions, AI-driven Kundli analysis, and real-time compatibility insights. AI enhances astrology consultation by offering automated astrological readings, predictive analytics, and personalized user experiences."
+      "title": "Artificial Intelligence",
+      "decs": "We integrate <a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI technologies</a> into business directory apps to enable smart business recommendations, personalized search results, and behavior-based listing suggestions. AI also helps improve search accuracy, ranking logic, and user engagement across directory platforms."
     },
     {
       "num": "2",
       "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "Augmented Reality (AR) & Virtual Reality (VR)",
-      "decs": "We integrate AR/VR technology into astrology apps to create immersive astrological experiences. Users can visualize planetary movements, explore 3D zodiac constellations, and interact with virtual astrology consultations, enhancing engagement and spiritual exploration."
+      "title": "Internet of Things (IoT)",
+      "decs": "Our <a href='https://www.comfygen.com/iot-development-company' class='underline font-semibold'>IoT-powered directory app solutions</a> help businesses manage connected services, real-time availability, and location-based data. IoT integration enhances automation and improves service discovery for logistics, service providers, and multi-location business directories."
     },
     {
       "num": "3",
       "img": "https://www.comfygen.com/img/5g-technology.webp",
-      "title": "Blockchain-Based Astrology App Development",
-      "decs": "Our <a class='font-semibold' href='https://www.comfygen.com/blockchain-development'> blockchain-powered astrology app development solutions </a> ensure secure transactions, astrologer verification, and encrypted astrological data storage. By leveraging smart contracts and decentralized networks, we provide tamper-proof digital horoscopes, transparent payment processing, and secure astrologer-user interactions."
+      "title": "Blockchain Technology",
+      "decs": "<a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain</a> adds an extra layer of security and trust. It helps protect data, ensure transparent transactions, and support verified business profiles. This technology is ideal for platforms that rely on subscriptions, payments, or premium listings."
     },
     {
       "num": "4",
       "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "Cloud Computing for Astrology Apps",
-      "decs": "We build cloud-based astrology apps that allow seamless scalability, remote access, and secure data storage. Users can access their astrological readings, live consultations, and past horoscope reports anytime, from any device, ensuring a smooth and uninterrupted experience."
+      "title": "Cloud Computing",
+      "decs": "Cloud technology keeps directory apps stable and responsive, even as traffic grows. It enables real-time data updates, secure storage, and easy scalability, ensuring your platform performs smoothly across web and mobile devices."
     },
     {
       "num": "5",
       "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-      "title": "Internet of Things (IoT) for Astrology Services",
-      "decs": "Our <a class='font-semibold' href='/iot-development-company'> IoT-powered astrology app development services </a> connect users with smart wearable devices, astrology gadgets, and real-time celestial tracking tools. This enables personalized astrology alerts, moon phase notifications, and live planetary event tracking, providing a next-level astrological experience."
+      "title": "GPS & Geolocation Technology",
+      "decs": "With advanced GPS and geolocation integration, your business listing apps allow users to discover nearby businesses instantly. This technology improves local search results, map-based navigation, and real-time business discovery."
     },
     {
       "num": "6",
       "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-      "title": "Big Data & Predictive Analytics",
-      "decs": "We use big data analytics to process vast amounts of astrological data and provide accurate predictions based on historical planetary alignments. Predictive analytics analyzes user behavior, refines horoscope accuracy, and personalizes astrology recommendations, enhancing user engagement."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Wearable App Integration for Astrology",
-      "decs": "Our astrology app development includes wearable technology integration, enabling users to receive astrology alerts, daily horoscope updates, and meditation reminders on their smartwatches and fitness bands. This keeps astrology insights easily accessible."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Location-Based Astrology Services",
-      "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
+      "title": "Data Analytics & Insights",
+      "decs": "We implement big data and <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>analytics solutions</a> to track user behavior, listing performance, and platform growth. Data-driven insights help optimize business listings, improve decision-making, and increase ROI from your business directory app development investment."
     }
+    
   ]
-
-  
 }

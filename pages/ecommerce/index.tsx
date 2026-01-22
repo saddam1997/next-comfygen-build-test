@@ -169,60 +169,70 @@ const productCard = [
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c1.svg",
     link: "https://www.comfygen.com/ecommerce/fashion",
     heading: "Fashion & Apparel",
+    description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c2.svg",
     link: "https://www.comfygen.com/ecommerce/grocery",
     heading: "Grocery ",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c3.svg",
     link: "https://www.comfygen.com/ecommerce/fmcg",
     heading: "FMCG",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c11.svg",
     link: "https://www.comfygen.com/food-delivery-app-development",
     heading: "Food Ordering",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c5.svg",
     link: "https://www.comfygen.com/ecommerce",
     heading: "Electronics",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c6.svg",
     link: "https://www.comfygen.com/home-service-app-development",
     heading: "Furniture & Home Decor",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c7.svg",
     link: "https://www.comfygen.com/ecommerce",
     heading: "B2B & Wholesale",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c8.svg",
     link: "https://www.comfygen.com/salon-app-development",
     heading: "Beauty & Personal Care",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c9.svg",
     link: "https://www.comfygen.com/healthcare-app-development",
     heading: "Healthcare & Medicine",
+     description:null
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-c10.svg",
     link: "https://www.comfygen.com/portfolio/e-commerce",
     heading: "Jewelry",
+     description:null
   },
 ];
 

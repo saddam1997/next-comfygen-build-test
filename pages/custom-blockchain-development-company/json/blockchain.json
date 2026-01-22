@@ -38,7 +38,7 @@
     },
     {
       "title": "Crypto Wallet Development",
-      "description": "At Comfygen, we provide custom <a class='underline href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development services</>designed to offer secure, scalable, and user-friendly solutions for managing digital assets. Whether you need hot wallets, cold wallets, or NFT wallets, our blockchain developers create feature-rich applications that ensure seamless transactions, advanced encryption, and multi-platform support. From startups to enterprises, we deliver crypto wallet solutions that empower users with complete control over their digital assets.",
+      "description": "At Comfygen, we provide custom crypto wallet development services designed to offer secure, scalable, and user-friendly solutions for managing digital assets. Whether you need hot wallets, cold wallets, or NFT wallets, our blockchain developers create feature-rich applications that ensure seamless transactions, advanced encryption, and multi-platform support. From startups to enterprises, we deliver crypto wallet solutions that empower users with complete control over their digital assets.",
       "features": [
         "Multi-Currency Support ",
         "Enterprise-Grade Security",
@@ -393,8 +393,8 @@
     }
   ],
   "pageData": {
-    "title": "Why Choose Comfygen for Custom Blockchain Development?",
-    "description": "At Comfygen, we understand that every business has unique needs, which is why we offer tailored, custom blockchain development services designed to deliver scalable, secure, and high-performance solutions. As a leading custom blockchain development company, we focus on building decentralized applications, smart contracts, and blockchain networks that drive innovation and efficiency.",
+    "title": "Why Choose Comfygen for Custom Blockchain App Development Project?",
+    "description": "Comfygen’s custom blockchain app development services developed according to your business needs, secure, scalable, and high-performance blockchain solutions. As a leading custom blockchain app development company, we specialize in dApps, smart contracts, and blockchain networks that drive innovation and efficiency.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -565,6 +565,26 @@
       "description": "On-going monitoring and maintaining the deployed blockchain solution will help you to stay connected with the marketplace and engage a vast audience for longer. With the help of blockchain post-deployment services, our developers will keep updating and upgrading the existing solutions to enhance the scalability and scope. "
     }
   ],
+
+    "customTestimonials": [
+      {
+        "text": "Comfygen delivered a secure and scalable blockchain solution exactly as promised. Their technical expertise and transparent communication made the entire development process seamless.",
+        "name": "Alex Johnson ",
+        "title": null
+      },
+      {
+        "text": "The Comfygen team demonstrated deep blockchain knowledge and built a high-performance dApp tailored to our business needs. Highly reliable and professional.",
+        "name": "Priya Mehta",
+        "title": null
+      },
+      {
+        "text": "From smart contracts to deployment, Comfygen handled everything with precision. Their blockchain developers helped us launch faster and scale confidently.",
+        "name": "Michael Chen",
+        "title": null
+      }
+      
+    ],
+
   "Frequently": [
     {
       "num": "1",

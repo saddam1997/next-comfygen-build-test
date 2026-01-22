@@ -41,6 +41,11 @@ const Portfolio = dynamic(
 );
 
 
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: loader, ssr: true }
+)
+
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
@@ -61,7 +66,11 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 )
 
-
+const ConsultancyApproach = dynamic(
+  () =>
+    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
@@ -171,6 +180,129 @@ export default function ClinicalApp(props) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
+
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Laboratory App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen Technologies offers custom laboratory app development services to build secure, scalable, and cloud-based lab management, pathology, and diagnostic software solutions.",
+      "url": "https://www.comfygen.com/laboratory-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/laboratory-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Laboratory App Development",
+        "Laboratory Information System (LIS) Development",
+        "Pathology Lab App Development",
+        "Diagnostic Lab App Development",
+        "Cloud-Based Laboratory Software Development",
+        "Laboratory App Development Company"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+  "@context": "http://www.schema.org",
+  "@type": "Product",
+  "brand": "Comfygen Technologies",
+  "name": "Laboratory App Development Solutions",
+  "image": "https://www.comfygen.com/image/about-us-image.webp",
+  "description": "Build advanced laboratory app development solutions with Comfygen Technologies. Our apps help diagnostic and pathology labs manage samples, workflows, reports, compliance, and secure data efficiently.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1500"
+  }
+},
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.comfygen.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Laboratory App Development",
+      "item": "https://www.comfygen.com/laboratory-app-development"
+    }
+  ]
+},
+{
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a laboratory app and how does it benefit diagnostic labs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A laboratory app helps diagnostic and pathology labs manage sample tracking, test processing, reports, billing, and workflows digitally, improving efficiency, accuracy, and patient experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of laboratory apps does Comfygen Technologies develop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Comfygen develops custom laboratory apps including LIS software, pathology lab apps, diagnostic lab management systems, sample tracking apps, inventory management solutions, and mobile lab applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms do you support for laboratory app development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We develop laboratory apps for Android, iOS, and web platforms, ensuring seamless performance across devices with cloud-based, scalable, and secure laboratory software solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you ensure data security and compliance in laboratory apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We follow HIPAA-compliant architecture, encrypted data storage, role-based access, and secure APIs to protect sensitive laboratory and patient data while meeting healthcare regulatory standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a custom laboratory app based on our workflow needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide custom laboratory app development tailored to your specific diagnostic workflows, lab processes, reporting requirements, and integration needs."
+  }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer post-launch support and maintenance services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Comfygen provides end-to-end post-deployment support including performance optimization, updates, security monitoring, bug fixes, and feature enhancements for long-term reliability."
+      }
+    }
+  ]
+}
+
+
+
+
+  ];
+
+
+
   return (
     <>
       <Head>
@@ -250,6 +382,12 @@ export default function ClinicalApp(props) {
           name="google-site-verification"
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
+
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
       </Head>
 
       <Header />
@@ -275,8 +413,8 @@ export default function ClinicalApp(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Laboratory App Development Services We Deliver</h2>
-              <p className="text-base text-center font-normal">We can provide you with streamlined and efficient laboratory app development services, where everything goes flawlessly. Your apps will work in the market with competence for growth</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Laboratory App Development Services</h2>
+              <p className="text-base text-center font-normal">We offer end-to-end laboratory app development services, delivering secure, scalable, and cloud-based lab management, pathology, and diagnostic software solutions for healthcare providers and laboratories.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -286,10 +424,16 @@ export default function ClinicalApp(props) {
 
         <AboutSection
           title="About Company"
-          heading="Build Laboratory Apps for Scalable Businesses and Management"
-          description1="Comfygen is your go-to-platform to discuss ideas on laboratory app development. We have years of experience, knowledge, talent, and skills to create robust lab-related mobile applications. Our expert development team adheres to the efficient technologies and works on user-experience to build an interactive laboratory application."
-          description2="We have dedicated, as well as innovative laboratory app developers; who knows what the market demands, knows what attracts potential users, and how to make the app sustainable in the marketplace. Also, our laboratory mobile app development services don’t charge greedily. We have the best laboratory app development solutions at the right and competitive cost. So make your labs secure, reliable, and easily manageable with our app solutions."
-          description3="We promise to make the labs operate easily, aligning the tasks management, helping patients simply take lab services, and allowing the dedicated end-users to gain engaging & fulfilling experience."
+          heading="Why Your Diagnostic Lab Needs Laboratory App Development Solutions"
+          description1="Investing in laboratory app development solutions is a profitable move for diagnostic labs seeking scalability, automation, and long-term growth. Modern laboratory management software reduces operational costs, eliminates manual errors, improves data accuracy, and enhances patient experience through real-time test tracking, digital reports, and secure data management."
+          description2="From an investor’s perspective, the laboratory app development market is rapidly expanding, driven by digital transformation, AI-powered diagnostics, cloud-based LIMS solutions, and rising demand for efficient healthcare services. With the global laboratory informatics and automation market projected to reach multi-billion-dollar valuations by 2030, investing in diagnostic lab app development offers high ROI, recurring revenue opportunities, and strong market sustainability."
+          description3=""
+          points={[
+            "Scalability & Competitive Advantage",
+            "Strong Market Growth & High ROI Potential",
+            "Higher Operational Efficiency & Cost Reduction",
+            "Improved Data Security & Regulatory Compliance"
+          ]}
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
@@ -300,9 +444,9 @@ export default function ClinicalApp(props) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Laboratory App Development Services We Deliver
+                  Our Laboratory App Development Solutions
                 </h2>
-                <p>We can provide you streamlined and efficient laboratory app development services, where everything goes flawlessly. Your apps will work in the market with competence for growth</p>
+                <p>We deliver secure, scalable laboratory app development solutions that automate workflows, enhance data accuracy, support compliance, and improve diagnostic efficiency for pathology and diagnostic laboratories.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-2">
                 {JSON_DATA.TecnologisStack.map((elem) => {
@@ -325,141 +469,40 @@ export default function ClinicalApp(props) {
           </div>
         </section>
 
-        <section className="bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="lg:py-16 py-10 space-y-6 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="flex flex-col justify-center text-center">
-              <h2 className=" py-4 text-[#fff] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                Laboratory App Solutions We Build{" "}
-              </h2>
-              <p className="text-base text-white">
-                Comfygen has in-depth knowledge of laboratory businesses, and
-                our expert developers know how to build different types of
-                laboratory app solutions to sort multiple tasks among the
-                operations. Learn about our solutions and know which one’s is
-                your current need:{" "}
-              </p>
-            </div>
-            <div className="grid gap-16 lg:grid-cols-3 py-10 md:grid-cols-2 xl:gap-12">
-              {JSON_DATA.Services.map((elem) => {
-                const { title, img, decs, num } = elem;
-                return (
-                  <div
-                    key={num}
-                    className="p-6 space-y-4 bg-gradient-to-br from-blue-500/10 to-purple-500/20 border  rounded-[40px] transition-all duration-300 hover:translate-y-2 group  group "
-                  >
-                    <div className="flex items-center justify-center w-16 h-16 p-2 text-xl font-semibold ">
-                      <Image
-                        width={140}
-                        height={140}
-                        src={img}
-                        alt={title}
-                        title={title}
-                        className="w-20"
-                      />
-                    </div>
-                    <h3 className="text-lg font-extrabold text-[#fff] transition-all duration-200 text-left">
-                      {title}
-                    </h3>
-                    <p
-                      className="font-medium text-left text-white break-all transition duration-200 ease-in-out"
-                      dangerouslySetInnerHTML={{ __html: elem.decs }}
-                    ></p>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="flex justify-center items-center mt-5">
-              <a href="/quote" className="mt-5">
-                <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                  LET'S CONNECT <MdOutlineArrowOutward />
-                </button>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <SolutionSec
-          heading="Modern Tech-Trends in Laboratory App Development for Industrial Evolutions"
-          subheading="Modern technologies are changing the way of digitization. These tech-trends are evolving laboratory industries via easing the operations and automating the processes"
-          techData={technologyData}
-        />
 
 
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Portfolio"
-            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+            heading="Our Laboratory App Development Portfolio"
+            description="Showcasing our laboratory app development portfolio, featuring innovative, secure, and scalable biomedical and diagnostic lab solutions that streamline workflows, enhance data management, and improve efficiency for healthcare and research laboratories."
           />
         </section>
 
-
-
-        <div
-          className="bg-center bg-repeat bg-fixed  "
-          style={{ backgroundImage: `url("https://www.comfygen.com/img/grid-box-dark.svg")` }}
-        >
-          <div className=" bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95">
-            <section className="items-center w-11/12 py-20  space-y-10  2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto md:flex md:space-x-10 md:space-y-0">
-              <div className="w-full space-y-6 text-center md:text-left">
-                <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-1">
-                  <div className="flex flex-col space-y-2">
-                    <div className="py-2">
-                      <h2 className=" lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-[#fff]">
-                        Laboratory App Features To Include
-                      </h2>
-                      <p className="text-white">
-                        Features must add in laboratory apps during development to
-                        make them more engaging and problem resolving. Let’s
-                        figure it out:
-                      </p>
-                    </div>
-                    <Image
-                      className="rounded-lg"
-                      alt="Laboratory App Features To Include"
-                      src="https://www.comfygen.com/img/laboratory-aapp-features-to-include.webp"
-                      width={640}
-                      height={358}
-                    />
-
-                  </div>
-                  <div
-                    className={`${styles.TechnologyStack} grid gap-10 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[600px] overflow-auto `}
-                  >
-                    {JSON_DATA.WhyChoosed.map((elem) => {
-                      const { title, img, decs, num } = elem;
-                      return (
-                        <div
-                          key={num}
-                          className="group border-b-4 border-[#fff] pb-6 space-y-4 transition-all duration-200  cursor-pointer  "
-                        >
-                          <div className="flex items-center justify-start">
-                            <div className="flex items-center justify-center gap-3 ">
-                              <Image src={img} alt="" width={40} height={40} />
-                              <h3 className="text-2xl text-white font-semibold ">
-                                {title}
-                              </h3>
-                            </div>
-                          </div>
-                          <div>
-                            <p
-                              className="text-white"
-                              dangerouslySetInnerHTML={{ __html: elem.decs }}
-                            ></p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <TechStack
-          title="Technologies to Use for Laboratory App Development"
-          description="Comfygen is known as the best laboratory app development company, so apparently we believe in using cutting edge technologies to build laboratory mobile applications. The technologies will create a worthy app with competitive nature:"
+        <CallToAction
+          heading="Let’s Build Your Smart Laboratory App"
+          text="Connect with Comfygen Technologies to discuss your laboratory app development requirements."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
         />
+
+        {/* <SolutionSec
+          heading="Modern Tech-Trends in Laboratory App Development for Industrial Evolutions"
+          subheading="Modern technologies are changing the way of digitization. These tech-trends are evolving laboratory industries via easing the operations and automating the processes"
+          techData={technologyData}
+        /> */}
+
+
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -471,6 +514,56 @@ export default function ClinicalApp(props) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-4 text-center">
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Latest Technology Trends in Laboratory App Development
+                </h2>
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  Latest technology trends in laboratory app development include AI-powered diagnostics, cloud-based LIMS, IoT-enabled lab automation, advanced data analytics, and secure mobile laboratory solutions improving efficiency, accuracy, scalability, and regulatory compliance.
+                </p>
+              </div>
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
+                  return (
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                    src={img}
+                                    className="object-cover"
+                                    width={35}
+                                    height={50}
+                                    alt={title}
+                                  /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
+                      </div>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <TechStack
+          title="Technologies to Use for Laboratory App Development"
+          description="Comfygen is known as the best laboratory app development company, so apparently we believe in using cutting edge technologies to build laboratory mobile applications. The technologies will create a worthy app with competitive nature:"
+        />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -494,20 +587,19 @@ export default function ClinicalApp(props) {
             "Available to work dedicatedly on your project"
           ]}
         />
+
+   <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
 
-         <BlogSection initialData={initialData} />
+
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
