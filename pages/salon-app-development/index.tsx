@@ -214,82 +214,6 @@ export default function ClinicalApp(props: any) {
       ]
 
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": [
-          "IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR",
-          "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS",
-          "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM",
-          "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH",
-          "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"
-        ],
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
 
     {
       "@context": "http://www.schema.org",
@@ -444,8 +368,9 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Custom Salon App Development Services for Beauty & Wellness Brands"
-          ptag="Take your beauty business to the next level with Comfygen’s expert salon app development services. We create customized salon and spa apps designed to simplify bookings, manage appointments effortlessly, and boost customer engagement. Whether you operate a single salon or a multi-location beauty chain, our on-demand beauty app development solutions offer smooth performance, elegant UI/UX, and powerful features like real-time scheduling, CRM integration, and secure payment gateways."
+          heading="Best Salon App Development Company"
+          ptag="As a trusted salon app development company, Comfygen delivers salons, spas, and beauty & wellness brands with custom salon app development solutions designed to simplify operations and elevate customer experiences. We build intuitive, scalable, and feature-rich mobile apps tailored to your business needs."
+          ptag2="Whether you’re a salon owner, spa operator, or beauty professional, our custom salon booking app solutions are built to strengthen customer engagement, streamline workflows, and drive long-term business growth."
           li="Seamless & Intuitive UI/UX Design"
           li1="Expertise in On-demand & Appointment-based Solutions"
           li2="Timely Delivery with Post-launch Support"

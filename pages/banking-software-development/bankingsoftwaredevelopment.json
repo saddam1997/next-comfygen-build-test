@@ -1,176 +1,163 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "What is banking software?",
-    "desc": "Banking software is a comprehensive suite of tools designed to streamline financial operations. It helps banks manage transactions, customer accounts, loans, and more. Banking & financial software development allows financial institutions to automate processes and enhance customer service, ensuring efficiency and compliance with regulatory standards."
-  },
-  {
-    "num": "2",
-    "title": "How can AI improve customer experience in banking software?",
-    "desc": "AI enhances customer experience by providing personalized banking services, improving customer support with AI chatbots, and automating routine tasks. AI-based features like fraud detection and predictive analytics allow banks to offer a more efficient, tailored experience, which is critical for online banking software development."
-  },
-  {
-    "num": "3",
-    "title": "What is core banking software?",
-    "desc": "Core banking software is the backbone of banking operations, managing all financial transactions and customer information in real-time. It includes services like account management, transactions, loans, and more. It helps banks enhance their operations by providing an efficient bank management system for all banking branches."
-  },
-  {
-    "num": "4",
-    "title": "Is your solution compliant with PCI DSS or GDPR?",
-    "desc": "Yes, we ensure that all our custom banking software development solutions comply with industry standards like PCI DSS and GDPR. We implement robust security measures such as encryption and multi-factor authentication to protect sensitive data and maintain legal compliance across banking systems."
-  },
-  {
-    "num": "5",
-    "title": "How much does banking software development cost?",
-    "desc": "The cost of banking software development varies based on project complexity, features, and scale. A custom banking software development company can provide an estimate after understanding your specific requirements. Typically, factors like technology stack, integration needs, and security requirements affect pricing."
-  },
-  {
-    "num": "6",
-    "title": "How long does development take?",
-    "desc": "The timeline for banking software development services depends on the scope of the project. On average, mobile banking software development can take 3–6 months, while more complex solutions like bank account management systems may require longer due to rigorous security, compliance, and feature requirements."
-  }
-],
-
-"Process":[
-  {
-    "title": "Discovery & Requirement Gathering",
-    "description":
-      "We start by understanding your business model, goals, compliance needs, and user expectations. This helps us shape a clear roadmap backed by industry research."
-  },
-  {
-    "title": "UI/UX Design",
-    "description":
-      "Our designers create simple, intuitive interfaces with smooth navigation and responsive layouts to deliver a modern digital banking experience."
-  },
-  {
-    "title": "Backend & Frontend Development",
-    "description":
-      "We build secure, scalable systems using modern tech stacks. Both backend and frontend components are optimized to handle complex financial workflows."
-  },
-  {
-    "title": "Integration with Legacy Systems",
-    "description":
-      "We connect your new solution with existing core banking systems and third-party APIs while keeping operations stable and compliant."
-  },
-  {
-    "title": "QA & Security Testing",
-    "description":
-      "Every feature goes through strict testing for performance, usability, and security. We follow banking-grade standards to keep data and transactions safe."
-  },
-  {
-    "title": "Deployment & Launch",
-    "description":
-      "After testing, we deploy your software with careful configuration and smooth rollout across platforms."
-  },
-  {
-    "title": "Maintenance & Support",
-    "description":
-      "We stay involved post-launch with updates, monitoring, optimizations, and new feature enhancements to keep your system strong as your user base grows."
-  }
-],
-
-    "portfoliodata": [
-      {
-        "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
-        "title": "Digital Wallet App for Payment Providers",
-        "description": "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
-        "link": "#"
-      },
-      {
-        "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
-        "title": "AI-Powered Loan Management Platform",
-        "description": "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
-        "link": "#"
-      }
-      
-    ],
-
-
+    {
+      "num": "1",
+      "title": "What is banking software?",
+      "desc": "Banking software is a comprehensive suite of tools designed to streamline financial operations. It helps banks manage transactions, customer accounts, loans, and more. Banking & financial software development allows financial institutions to automate processes and enhance customer service, ensuring efficiency and compliance with regulatory standards."
+    },
+    {
+      "num": "2",
+      "title": "How can AI improve customer experience in banking software?",
+      "desc": "AI enhances customer experience by providing personalized banking services, improving customer support with AI chatbots, and automating routine tasks. AI-based features like fraud detection and predictive analytics allow banks to offer a more efficient, tailored experience, which is critical for online banking software development."
+    },
+    {
+      "num": "3",
+      "title": "What is core banking software?",
+      "desc": "Core banking software is the backbone of banking operations, managing all financial transactions and customer information in real-time. It includes services like account management, transactions, loans, and more. It helps banks enhance their operations by providing an efficient bank management system for all banking branches."
+    },
+    {
+      "num": "4",
+      "title": "Is your solution compliant with PCI DSS or GDPR?",
+      "desc": "Yes, we ensure that all our custom banking software development solutions comply with industry standards like PCI DSS and GDPR. We implement robust security measures such as encryption and multi-factor authentication to protect sensitive data and maintain legal compliance across banking systems."
+    },
+    {
+      "num": "5",
+      "title": "How much does banking software development cost?",
+      "desc": "The cost of banking software development varies based on project complexity, features, and scale. A custom banking software development company can provide an estimate after understanding your specific requirements. Typically, factors like technology stack, integration needs, and security requirements affect pricing."
+    },
+    {
+      "num": "6",
+      "title": "How long does development take?",
+      "desc": "The timeline for banking software development services depends on the scope of the project. On average, mobile banking software development can take 3–6 months, while more complex solutions like bank account management systems may require longer due to rigorous security, compliance, and feature requirements."
+    }
+  ],
+  "Process": [
+    {
+      "title": "Discovery & Requirement Gathering",
+      "description": "We start by understanding your business model, goals, compliance needs, and user expectations. This helps us shape a clear roadmap backed by industry research."
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Our designers create simple, intuitive interfaces with smooth navigation and responsive layouts to deliver a modern digital banking experience."
+    },
+    {
+      "title": "Backend & Frontend Development",
+      "description": "We build secure, scalable systems using modern tech stacks. Both backend and frontend components are optimized to handle complex financial workflows."
+    },
+    {
+      "title": "Integration with Legacy Systems",
+      "description": "We connect your new solution with existing core banking systems and third-party APIs while keeping operations stable and compliant."
+    },
+    {
+      "title": "QA & Security Testing",
+      "description": "Every feature goes through strict testing for performance, usability, and security. We follow banking-grade standards to keep data and transactions safe."
+    },
+    {
+      "title": "Deployment & Launch",
+      "description": "After testing, we deploy your software with careful configuration and smooth rollout across platforms."
+    },
+    {
+      "title": "Maintenance & Support",
+      "description": "We stay involved post-launch with updates, monitoring, optimizations, and new feature enhancements to keep your system strong as your user base grows."
+    }
+  ],
+  "portfoliodata": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-digital-wallet-app.webp",
+      "title": "Digital Wallet App for Payment Providers",
+      "description": "A comprehensive digital wallet app that allows users to securely store and transfer funds, pay bills, and make online purchases. Integrated with multiple payment gateways, AI-driven fraud detection, and real-time transaction alerts, this app ensures a fast and secure financial experience.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/banking-software-development/hero-section-ai-loan-platform.webp",
+      "title": "AI-Powered Loan Management Platform",
+      "description": "An advanced loan management platform leveraging AI to assess credit risk, automate loan approvals, and streamline the loan disbursement process. This platform improves efficiency, reduces default rates, and offers seamless customer service, making it a valuable tool for lending institutions.",
+      "link": "#"
+    }
+  ],
   "servicesData": [
-  {
-    "title": "Custom Core Banking Solutions",
-    "description": "Our custom core banking solutions enable banks and financial institutions to modernize their operations and provide seamless services to their customers. We specialize in designing flexible, secure, and robust core banking systems that ensure efficient transaction processing, real-time data access, and regulatory compliance.",
-    "features": [
-      "Scalable architecture for growing financial institutions",
-      "Real-time transaction processing and account management",
-      "Seamless integration with third-party services"
-    ]
-  },
-  {
-    "title": "Mobile Banking App Development",
-    "description": "With the rise of digital-first banking, Comfygen offers expert mobile banking app development to help financial institutions deliver superior mobile experiences. We create custom mobile apps that are secure, user-friendly, and feature-rich, empowering users to manage their finances on the go.",
-    "features": [
-      "Secure login with biometric authentication",
-      "Real-time account updates and transaction alerts",
-      "AI-powered personal finance management tools"
-    ]
-  },
-  {
-    "title": "Digital Wallet & Payment Gateway Integration",
-    "description": "Comfygen provides seamless digital wallet and payment gateway integration services to ensure secure, efficient, and fast transactions. Whether you're developing a wallet app or need to integrate multiple payment gateways, we offer end-to-end solutions that enable smooth and secure digital payments.",
-    "features": [
-      "Multi-currency support and cross-border payments",
-      "Secure payment processing and encryption",
-      "Integration with existing banking and payment systems"
-    ]
-  },
-  {
-    "title": "Loan & Credit Management Software",
-    "description": "Our custom loan and credit management software enables banks to streamline their loan origination, processing, and servicing. We develop systems that simplify credit risk assessment, automate approval workflows, and improve the overall loan management experience.",
-    "features": [
-      "Automated credit scoring and approval processes",
-      "Real-time loan status tracking and notifications",
-      "Secure, paperless loan management systems"
-    ]
-  },
-  {
-    "title": "Bank Management Software Development",
-    "description": "Comfygen is a leading banking software development company specializing in Bank Management Software Development. We provide solutions that automate administrative tasks, manage customer relationships, and enhance decision-making processes, helping banks increase operational efficiency and reduce costs.",
-    "features": [
-      "Custom dashboards for business insights and analytics",
-      "Secure, centralized customer data management",
-      "Integration with core banking systems and third-party services"
-    ]
-  },
-  {
-    "title": "Banking CRM Software",
-    "description": "Our custom Banking CRM software development helps financial institutions build strong relationships with customers by offering personalized services and seamless communication channels. We develop CRM systems that allow banks to manage customer interactions, track sales, and analyze customer behavior for better decision-making.",
-    "features": [
-      "AI-driven customer insights and personalized services",
-      "Integration with mobile banking apps and marketing platforms",
-      "Real-time tracking of customer queries and requests"
-    ]
-  },
-  {
-    "title": "Custom ATM Software Development Solution",
-    "description": "Comfygen specializes in custom ATM software development, delivering secure and highly functional solutions for banks and financial institutions. We ensure ATM networks are optimized for high availability, user-friendliness, and compliance with security standards.",
-    "features": [
-      "Real-time transaction processing and monitoring",
-      "Multi-currency support and secure cash withdrawals",
-      "Compliance with financial regulations and standards"
-    ]
-  },
-  {
-    "title": "Custom EMV Software Development Solution",
-    "description": "Our custom EMV software development services provide robust, secure solutions for EMV-enabled payment systems. We develop software that ensures secure credit and debit card transactions, protecting banks and customers from fraud while ensuring compliance with global EMV standards.",
-    "features": [
-      "EMV chip card transaction support",
-      "Secure, encrypted payment processing",
-      "Real-time fraud detection and prevention"
-    ]
-  },
-  {
-    "title": "KYC/AML Compliance Software",
-    "description": "Compliance with KYC and AML regulations is crucial for financial institutions. Comfygen provides tailored KYC/AML compliance software that automates identity verification, risk assessment, and regulatory reporting, ensuring your institution stays compliant with ever-evolving financial regulations.",
-    "features": [
-      "Automated identity verification and document checking",
-      "Real-time risk assessment and transaction monitoring",
-      "Regulatory reporting and audit trail management"
-    ]
-  }
-],
-
+    {
+      "title": "Custom Core Banking Solutions",
+      "description": "Our custom core banking solutions enable banks and financial institutions to modernize their operations and provide seamless services to their customers. We specialize in designing flexible, secure, and robust core banking systems that ensure efficient transaction processing, real-time data access, and regulatory compliance.",
+      "features": [
+        "Scalable architecture for growing financial institutions",
+        "Real-time transaction processing and account management",
+        "Seamless integration with third-party services"
+      ]
+    },
+    {
+      "title": "Mobile Banking App Development",
+      "description": "The rise of digital-first banking, Comfygen offers expert <a href='https://www.comfygen.com/mobile-banking-app-development' class='underline font-semibold'>mobile banking app development</a> to help financial institutions deliver superior mobile experiences. We create custom mobile apps that are secure, user-friendly, and feature-rich, empowering users to manage their finances on the go.",
+      "features": [
+        "Secure login with biometric authentication",
+        "Real-time account updates and transaction alerts",
+        "AI-powered personal finance management tools"
+      ]
+    },
+    {
+      "title": "Digital Wallet & Payment Gateway Integration",
+      "description": "Comfygen provides seamless digital wallet and payment gateway integration services to ensure secure, efficient, and fast transactions. if you're developing a <a href='https://www.comfygen.com/ewallet-app-development' class='underline font-semibold'>wallet app</a> or need to integrate multiple payment gateways, we offer end-to-end solutions that enable smooth and secure digital payments.",
+      "features": [
+        "Multi-currency support and cross-border payments",
+        "Secure payment processing and encryption",
+        "Integration with existing banking and payment systems"
+      ]
+    },
+    {
+      "title": "Loan & Credit Management Software",
+      "description": "Our custom loan and credit management software enables banks to streamline their loan origination, processing, and servicing. We develop systems that simplify credit risk assessment, automate approval workflows, and improve the overall loan management experience.",
+      "features": [
+        "Automated credit scoring and approval processes",
+        "Real-time loan status tracking and notifications",
+        "Secure, paperless loan management systems"
+      ]
+    },
+    {
+      "title": "Bank Management Software Development",
+      "description": "Comfygen is a leading banking software development company specializing in Bank Management Software Development. We provide solutions that automate administrative tasks, manage customer relationships, and enhance decision-making processes, helping banks increase operational efficiency and reduce costs.",
+      "features": [
+        "Custom dashboards for business insights and analytics",
+        "Secure, centralized customer data management",
+        "Integration with core banking systems and third-party services"
+      ]
+    },
+    {
+      "title": "Banking CRM Software",
+      "description": "Our custom <a href='https://www.comfygen.com/blog/cost-to-develop-a-banking-crm-software' class='underline font-semibold'>Banking CRM software development</a> helps financial institutions build strong relationships with customers by offering personalized services and seamless communication channels. We develop CRM systems that allow banks to manage customer interactions, track sales, and analyze customer behavior for better decision-making.",
+      "features": [
+        "AI-driven customer insights and personalized services",
+        "Integration with mobile banking apps and marketing platforms",
+        "Real-time tracking of customer queries and requests"
+      ]
+    },
+    {
+      "title": "Custom ATM Software Development Solution",
+      "description": "Comfygen specializes in custom ATM software development, delivering secure and highly functional solutions for banks and financial institutions. We ensure ATM networks are optimized for high availability, user-friendliness, and compliance with security standards.",
+      "features": [
+        "Real-time transaction processing and monitoring",
+        "Multi-currency support and secure cash withdrawals",
+        "Compliance with financial regulations and standards"
+      ]
+    },
+    {
+      "title": "Custom EMV Software Development Solution",
+      "description": "Our custom EMV software development services provide robust, secure solutions for EMV-enabled payment systems. We develop software that ensures secure credit and debit card transactions, protecting banks and customers from fraud while ensuring compliance with global EMV standards.",
+      "features": [
+        "EMV chip card transaction support",
+        "Secure, encrypted payment processing",
+        "Real-time fraud detection and prevention"
+      ]
+    },
+    {
+      "title": "KYC/AML Compliance Software",
+      "description": "Compliance with KYC and AML regulations is crucial for financial institutions. Comfygen provides tailored KYC/AML compliance software that automates identity verification, risk assessment, and regulatory reporting, ensuring your institution stays compliant with ever-evolving financial regulations.",
+      "features": [
+        "Automated identity verification and document checking",
+        "Real-time risk assessment and transaction monitoring",
+        "Regulatory reporting and audit trail management"
+      ]
+    }
+  ],
   "consultancyHead": [
     {
       "num": "1",
@@ -178,33 +165,32 @@
       "desc": "At Comfygen, we specialize in providing cutting-edge banking software development services for a wide range of industries in the financial sector. Our tailored online banking software development solutions help institutions of all types streamline their operations, enhance customer experiences, and stay competitive in an ever-evolving digital landscape."
     }
   ],
- "consultancyData": [
-  {
-    "title": "Retail Banking",
-    "desc": "We empower retail banks with innovative software solutions designed to enhance customer engagement, improve operational efficiency, and offer seamless banking experiences. From mobile banking apps to core banking systems, we build solutions that cater to the diverse needs of retail banking customers."
-  },
-  {
-    "title": "Corporate & Investment Banking",
-    "desc": "For corporate and investment banks, Comfygen delivers robust, scalable solutions to support complex financial operations, enhance trading platforms, and ensure seamless investment management. We specialize in creating secure, high-performance banking software for the corporate sector."
-  },
-  {
-    "title": "Credit Unions",
-    "desc": "Comfygen provides banking software development services tailored for credit unions, enabling them to offer a wide range of financial services to their members. We develop secure, user-friendly solutions to streamline operations, improve member experience, and comply with regulations."
-  },
-  {
-    "title": "Microfinance Institutions",
-    "desc": "Our solutions for microfinance institutions (MFIs) are designed to support financial inclusion by offering easy-to-use platforms for small loans, savings, and financial services. We build scalable and secure software that helps MFIs manage and grow their client base effectively."
-  },
-  {
-    "title": "Neobanks & Digital-Only Banks",
-    "desc": "As the financial sector embraces digital transformation, Comfygen helps neobanks and digital-only banks create seamless, secure, and innovative banking experiences. Our finance app development solutions allow you to offer 24/7 digital banking services without the need for physical branches."
-  },
-  {
-    "title": "Payment Service Providers",
-    "desc": "Comfygen works with payment service providers (PSPs) to develop high-performing, secure payment systems. Our custom solutions ensure seamless transactions across multiple platforms, making it easier for PSPs to serve their clients efficiently and securely."
-  }
-],
-
+  "consultancyData": [
+    {
+      "title": "Retail Banking",
+      "desc": "We empower retail banks with innovative software solutions designed to enhance customer engagement, improve operational efficiency, and offer seamless banking experiences. From mobile banking apps to core banking systems, we build solutions that cater to the diverse needs of retail banking customers."
+    },
+    {
+      "title": "Corporate & Investment Banking",
+      "desc": "For corporate and investment banks, Comfygen delivers robust, scalable solutions to support complex financial operations, enhance trading platforms, and ensure seamless investment management. We specialize in creating secure, high-performance banking software for the corporate sector."
+    },
+    {
+      "title": "Credit Unions",
+      "desc": "Comfygen provides banking software development services tailored for credit unions, enabling them to offer a wide range of financial services to their members. We develop secure, user-friendly solutions to streamline operations, improve member experience, and comply with regulations."
+    },
+    {
+      "title": "Microfinance Institutions",
+      "desc": "Our solutions for microfinance institutions (MFIs) are designed to support financial inclusion by offering easy-to-use platforms for small loans, savings, and financial services. We build scalable and secure software that helps MFIs manage and grow their client base effectively."
+    },
+    {
+      "title": "Neobanks & Digital-Only Banks",
+      "desc": "As the financial sector embraces digital transformation, Comfygen helps neobanks and digital-only banks create seamless, secure, and innovative banking experiences. Our finance app development solutions allow you to offer 24/7 digital banking services without the need for physical branches."
+    },
+    {
+      "title": "Payment Service Providers",
+      "desc": "Comfygen works with payment service providers (PSPs) to develop high-performing, secure payment systems. Our custom solutions ensure seamless transactions across multiple platforms, making it easier for PSPs to serve their clients efficiently and securely."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Banking Software Development?",
     "description": "Comfygen is among the top bank software development firm specializing in creating custom banking solutions that are secure, scalable, and built to transform the digital banking experience. With years of expertise in fintech, we provide end-to-end services that deliver high-performing applications tailored to your business needs.",
@@ -214,52 +200,50 @@
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
     "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "10+ Years of Fintech Experience",
-    "description": "With over a decade of experience in banking software development, Comfygen has successfully delivered complex, innovative solutions for financial institutions, fintech startups, and enterprises. Our team has extensive knowledge of the financial industry, ensuring a deep understanding of your needs."
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "10+ Years of Fintech Experience",
+        "description": "With over a decade of experience in banking software development, Comfygen has successfully delivered complex, innovative solutions for financial institutions, fintech startups, and enterprises. Our team has extensive knowledge of the financial industry, ensuring a deep understanding of your needs."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Certified Developers & Fintech Experts",
+        "description": "Our best banking software developers are highly skilled and certified in the latest technologies, ensuring quality and compliance with industry standards. Our team consists of experts in financial regulations, security, and software engineering, capable of delivering tailored solutions that meet your unique requirements."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "End-to-End Custom Solutions",
+        "description": "From ideation to deployment and beyond, we provide end-to-end custom banking software development services. Whether you need mobile banking apps, core banking solutions, or secure payment systems, we deliver solutions that are flexible, scalable, and designed to meet your business goals."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "High-Security Architecture",
+        "description": "Security is paramount in banking applications. We implement robust security measures, including AES encryption, blockchain for transaction security, and multi-factor authentication, ensuring your banking software is highly secure and compliant with financial regulations."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Scalable and Cloud-Native Apps",
+        "description": "Our banking & financial software development solutions are built to scale with your business. By using cloud-native technologies like AWS, Azure, and GCP, we ensure that your banking software can handle high volumes of transactions and traffic while maintaining peak performance, availability, and scalability."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Ongoing Support & Maintenance",
+        "description": "We provide continuous support and maintenance to keep your banking software updated with the latest security patches, feature enhancements, and regulatory compliance changes. Our dedicated team ensures that your application runs smoothly and securely long after launch."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Certified Developers & Fintech Experts",
-    "description": "Our best banking software developers are highly skilled and certified in the latest technologies, ensuring quality and compliance with industry standards. Our team consists of experts in financial regulations, security, and software engineering, capable of delivering tailored solutions that meet your unique requirements."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "End-to-End Custom Solutions",
-    "description": "From ideation to deployment and beyond, we provide end-to-end custom banking software development services. Whether you need mobile banking apps, core banking solutions, or secure payment systems, we deliver solutions that are flexible, scalable, and designed to meet your business goals."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "High-Security Architecture",
-    "description": "Security is paramount in banking applications. We implement robust security measures, including AES encryption, blockchain for transaction security, and multi-factor authentication, ensuring your banking software is highly secure and compliant with financial regulations."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Scalable and Cloud-Native Apps",
-    "description": "Our banking & financial software development solutions are built to scale with your business. By using cloud-native technologies like AWS, Azure, and GCP, we ensure that your banking software can handle high volumes of transactions and traffic while maintaining peak performance, availability, and scalability."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Ongoing Support & Maintenance",
-    "description": "We provide continuous support and maintenance to keep your banking software updated with the latest security patches, feature enhancements, and regulatory compliance changes. Our dedicated team ensures that your application runs smoothly and securely long after launch."
-  }
-]
-
-  },
- "customTestimonials": [
-  {
-    "text": "Comfygen’s team exceeded our expectations with their professionalism and expertise in banking software development. They built a secure, scalable mobile banking app for our customers, and the solution has significantly improved our digital offerings. We highly recommend Comfygen to anyone looking for a reliable fintech development partner.",
-    "name": "John Mitchell",
-    "title": "USA"
-  },
-  {
-    "text": "Working with Comfygen was a fantastic experience. Their team understood our needs and delivered a top-notch banking platform that meets industry standards. Their commitment to security and innovation made the entire process smooth, and we couldn't be happier with the results.",
-    "name": "Rajesh Kumar",
-    "title": "India"
-  }
-],
-
+  "customTestimonials": [
+    {
+      "text": "Comfygen’s team exceeded our expectations with their professionalism and expertise in banking software development. They built a secure, scalable mobile banking app for our customers, and the solution has significantly improved our digital offerings. We highly recommend Comfygen to anyone looking for a reliable fintech development partner.",
+      "name": "John Mitchell",
+      "title": "USA"
+    },
+    {
+      "text": "Working with Comfygen was a fantastic experience. Their team understood our needs and delivered a top-notch banking platform that meets industry standards. Their commitment to security and innovation made the entire process smooth, and we couldn't be happier with the results.",
+      "name": "Rajesh Kumar",
+      "title": "India"
+    }
+  ],
   "Solution": [
     {
       "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
@@ -466,96 +450,89 @@
       "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
     }
   ],
-
-
- "AIPowered": [
-  {
-    "num": "01",
-    "title": "Predictive Analytics",
-    "decs": "We use AI-driven predictive models to forecast customer behavior, credit risks, and market trends. Banks get clearer insights, fewer defaults, and the ability to offer personalized financial products at the right time."
-  },
-  {
-    "num": "02",
-    "title": "AI Chatbots & Virtual Assistants",
-    "decs": "Our smart chatbots handle queries, guide users, and support banking tasks around the clock. They cut support costs, boost engagement, and deliver fast responses across mobile and web."
-  },
-  {
-    "num": "03",
-    "title": "AI Fraud Detection",
-    "decs": "Real-time AI monitoring spots unusual patterns and suspicious transactions before they cause damage. This strengthens security and reduces financial losses."
-  },
-  {
-    "num": "04",
-    "title": "AI-Based Risk Management",
-    "decs": "We build systems that analyze credit, market, and operational risks. They help banks take preventive actions and adapt quickly to changing conditions."
-  },
-  {
-    "num": "05",
-    "title": "Personalized Financial Insights",
-    "decs": "Machine learning helps users understand their spending, plan budgets, and get tailored financial advice. It improves satisfaction and keeps customers more engaged.."
-  },
-  {
-    "num": "06",
-    "title": "AI-Powered Credit Scoring",
-    "decs": "Our advanced scoring engines evaluate wider datasets—behavior, history, and alternative data—to deliver quicker and more accurate credit decisions, especially for thin-file customers."
-  }
-  
-],
-
-
+  "AIPowered": [
+    {
+      "num": "01",
+      "title": "Predictive Analytics",
+      "decs": "We use AI-driven predictive models to forecast customer behavior, credit risks, and market trends. Banks get clearer insights, fewer defaults, and the ability to offer personalized financial products at the right time."
+    },
+    {
+      "num": "02",
+      "title": "AI Chatbots & Virtual Assistants",
+      "decs": "Our smart chatbots handle queries, guide users, and support banking tasks around the clock. They cut support costs, boost engagement, and deliver fast responses across mobile and web."
+    },
+    {
+      "num": "03",
+      "title": "AI Fraud Detection",
+      "decs": "Real-time AI monitoring spots unusual patterns and suspicious transactions before they cause damage. This strengthens security and reduces financial losses."
+    },
+    {
+      "num": "04",
+      "title": "AI-Based Risk Management",
+      "decs": "We build systems that analyze credit, market, and operational risks. They help banks take preventive actions and adapt quickly to changing conditions."
+    },
+    {
+      "num": "05",
+      "title": "Personalized Financial Insights",
+      "decs": "Machine learning helps users understand their spending, plan budgets, and get tailored financial advice. It improves satisfaction and keeps customers more engaged.."
+    },
+    {
+      "num": "06",
+      "title": "AI-Powered Credit Scoring",
+      "decs": "Our advanced scoring engines evaluate wider datasets—behavior, history, and alternative data—to deliver quicker and more accurate credit decisions, especially for thin-file customers."
+    }
+  ],
   "Emerging": [
-  {
-    "num": "1",
-    "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-    "title": "Blockchain Technology",
-    "decs": "We leverage  <a class='font-semibold'  href='/blockchain-development'>blockchain technology</a>  to create transparent, secure, and tamper-proof systems for banking. From smart contracts to  <a class='font-semibold decoration-underline' href='/defi-development-company'>DeFi development solutions</a> and digital identity verification, blockchain strengthens trust, minimizes fraud, and enables real-time, secure transactions across financial platforms."
-  },
-  {
-    "num": "2",
-    "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-    "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
-    "decs": "Our AI and ML banking software development solutions empower banks with intelligent automation, fraud prevention, and personalized services. By analyzing user behavior and financial trends, we help institutions deliver tailored insights, optimize customer engagement, and improve risk detection in real time."
-  },
-  {
-    "num": "3",
-    "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-    "title": "Cloud Computing",
-    "decs": "We leverage cloud platforms such as AWS, Azure, and Google Cloud to develop scalable and resilient banking applications. Cloud infrastructure ensures seamless data storage, faster deployment, real-time updates, and improved disaster recovery for uninterrupted financial service delivery."
-  },
-  {
-    "num": "4",
-    "img": "https://www.comfygen.com/img/iot-integration.webp",
-    "title": "Robotic Process Automation (RPA)",
-    "decs": "RPA enables us to automate repetitive, rule-based tasks like data entry, compliance checks, and loan processing. This helps financial institutions increase efficiency, minimize operational costs, and reduce manual errors, allowing staff to focus on high-value customer services."
-  },
-  {
-    "num": "5",
-    "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-    "title": "Cybersecurity & End-to-End Encryption",
-    "decs": "Our banking solutions are designed with advanced cybersecurity measures, including multi-factor authentication, firewalls, and end-to-end encryption. These features protect sensitive data, ensure compliance with banking regulations, and safeguard user privacy from cyber threats and unauthorized access."
-  },
-  {
-    "num": "6",
-    "img": "https://www.comfygen.com/img/emotional-ai.webp",
-    "title": "Big Data & Real-Time Analytics",
-    "decs": "We use big data tools to process massive volumes of financial data, enabling real-time analytics for smarter decision-making. Banks can use this data to personalize services, identify trends, assess risks, and enhance customer satisfaction through data-driven insights."
-  },
-  {
-    "num": "7",
-    "img": "https://www.comfygen.com/img/5g-technology.webp",
-    "title": "Internet of Things (IoT)",
-    "decs": "<a class='font-semibold'  href='/iot-development-company'>IoT development</a>  is used to enable smart banking environments with connected devices like ATMs, payment terminals, and cardless cash dispensers. This technology improves operational efficiency, real-time monitoring, and customer convenience through remote accessibility and device communication."
-  },
-  {
-    "num": "8",
-    "img": "https://www.comfygen.com/comfygen-images/banking-software-development/ci-cd.svg",
-    "title": "DevOps & CI/CD Pipelines",
-    "decs": "We follow DevOps practices and implement continuous integration and delivery (CI/CD) pipelines for faster, more reliable software releases. This approach ensures efficient collaboration, quicker bug fixes, and consistent updates to your banking and financial software."
-  }
-],
-
-
- "faqSchema":{
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Technology",
+      "decs": "We leverage  <a class='font-semibold'  href='/blockchain-development'>blockchain technology</a>  to create transparent, secure, and tamper-proof systems for banking. From smart contracts to  <a class='font-semibold decoration-underline' href='/defi-development-company'>DeFi development solutions</a> and digital identity verification, blockchain strengthens trust, minimizes fraud, and enables real-time, secure transactions across financial platforms."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
+      "decs": "Our AI and ML banking software development solutions empower banks with intelligent automation, fraud prevention, and personalized services. By analyzing user behavior and financial trends, we help institutions deliver tailored insights, optimize customer engagement, and improve risk detection in real time."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      "title": "Cloud Computing",
+      "decs": "We leverage cloud platforms such as AWS, Azure, and Google Cloud to develop scalable and resilient banking applications. Cloud infrastructure ensures seamless data storage, faster deployment, real-time updates, and improved disaster recovery for uninterrupted financial service delivery."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Robotic Process Automation (RPA)",
+      "decs": "RPA enables us to automate repetitive, rule-based tasks like data entry, compliance checks, and loan processing. This helps financial institutions increase efficiency, minimize operational costs, and reduce manual errors, allowing staff to focus on high-value customer services."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "title": "Cybersecurity & End-to-End Encryption",
+      "decs": "Our banking solutions are designed with advanced cybersecurity measures, including multi-factor authentication, firewalls, and end-to-end encryption. These features protect sensitive data, ensure compliance with banking regulations, and safeguard user privacy from cyber threats and unauthorized access."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/emotional-ai.webp",
+      "title": "Big Data & Real-Time Analytics",
+      "decs": "We use big data tools to process massive volumes of financial data, enabling real-time analytics for smarter decision-making. Banks can use this data to personalize services, identify trends, assess risks, and enhance customer satisfaction through data-driven insights."
+    },
+    {
+      "num": "7",
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "title": "Internet of Things (IoT)",
+      "decs": "<a class='font-semibold'  href='/iot-development-company'>IoT development</a>  is used to enable smart banking environments with connected devices like ATMs, payment terminals, and cardless cash dispensers. This technology improves operational efficiency, real-time monitoring, and customer convenience through remote accessibility and device communication."
+    },
+    {
+      "num": "8",
+      "img": "https://www.comfygen.com/comfygen-images/banking-software-development/ci-cd.svg",
+      "title": "DevOps & CI/CD Pipelines",
+      "decs": "We follow DevOps practices and implement continuous integration and delivery (CI/CD) pipelines for faster, more reliable software releases. This approach ensures efficient collaboration, quicker bug fixes, and consistent updates to your banking and financial software."
+    }
+  ],
+  "faqSchema": {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     "mainEntity": [
@@ -609,112 +586,18 @@
       }
     ]
   },
-
- "structuredData":[
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+  "structuredData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Online Astrology App Development Company",
+      "name": "Banking Software Development Company",
       "provider": {
         "@type": "Organization",
-        "name": "Comfygen",
+        "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description": "Comfygen is a leading astrology app development service provider in the USA, building feature-rich astrology apps with horoscope reports, love horoscopes, daily tips, and more. Get your custom astrology app today!",
-      "url": "https://www.comfygen.com/astrology-app-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "Custom Astrology App Development",
-        "Love Horoscope App Development Services",
-        "Develop Astrology App like Astrotalk",
-        "Horoscope App Development Services",
-        "Health & Wealth Astrology App Development Service",
-        "Astrologer Booking App Development Services",
-        "Astrology Ecommerce App Development Service",
-        "Panchang App Development Services",
-        "Numerology App Development Services",
-        "Tarot Card Reading App Development",
-        "Cosmobiology App Development",
-        "Vedic Astrology App Development",
-        "Astrology Dating App Development Services"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://www.comfygen.com/"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "description": "Comfygen delivers custom banking software development for startups, banks, and financial organizations. Our fintech experts craft powerful digital banking apps with AI, ML, and end-to-end support.",
-      "mainEntityOfPage": "https://www.comfygen.com/banking-software-development",
+      "description": "A leading custom banking software development company. We deliver secure fintech solutions including core banking systems, AI-driven mobile apps and blockchain for banks, credit unions, and fintech startups.",
+      "url": "https://www.comfygen.com/banking-software-development",
       "areaServed": "Global",
       "serviceType": [
         "Custom Core Banking Solutions",
@@ -727,40 +610,15 @@
         "Custom EMV Software Development Services",
         "AI-powered banking software development",
         "Blockchain Based Banking Software Development",
-        "Online banking management system"
+        "Online Banking Management System"
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -773,9 +631,24 @@
         "ratingValue": "4.9",
         "reviewCount": "1748"
       }
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Banking Software Development",
+          "item": "https://www.comfygen.com/banking-software-development"
+        }
+      ]
     }
-
   ]
-
-
 }

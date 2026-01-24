@@ -188,11 +188,11 @@ export default function AppcardSlider({
                 key={i}
                 className="slide-card flex-shrink-0 bg-white rounded-2xl shadow hover:shadow-xl transition border"
                 style={{
-                  width: isMobile ? "90%" : "380px",
+                  width: isMobile ? "90%" : "340px",
                   scrollSnapAlign: "center",
                 }}
               >
-                <div className="h-52 flex items-center justify-center bg-gray-50 p-4">
+                <div className="h-52 flex items-center justify-center bg-gray-50">
                   <Image
                     src={item.imgSrc}
                     alt={item.title}
@@ -208,7 +208,7 @@ export default function AppcardSlider({
                 <div className="p-6 text-center space-y-4 select-none">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <div
-                    className="text-gray-600 text-sm line-clamp-3"
+                    className="text-gray-600 text-sm" // remove this class line-clamp-3 - resion to change because containt is not show complete
                     dangerouslySetInnerHTML={{ __html: item.description }}
                   />
                   <button

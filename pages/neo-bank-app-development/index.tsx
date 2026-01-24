@@ -115,77 +115,6 @@ const Process = [
 
 
 const jsonLdData = [
-
-
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",
-      "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-
-  },
-
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.youtube.com/@ComfygenBusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
-
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -235,34 +164,24 @@ const jsonLdData = [
       "reviewCount": "1928"
     }
   },
-
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",
-
-      "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "NeoBank App Development",
+        "item": "https://www.comfygen.com/neo-bank-app-development"
+      }
     ]
   },
-
-
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
@@ -315,7 +234,7 @@ const jsonLdData = [
 
 
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
   let { Hire, myList, WhyChoosed } = JSON_DATA;
@@ -446,13 +365,12 @@ export default function Ecommerce(props:any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Custom NeoBank App Development Company for Digital Banking"
-          ptag="Comfygen Technologies is a trusted custom NeoBank app development company for digital banking, helping fintech startups, banks, and financial institutions build secure, scalable, and user-centric NeoBank solutions. We design and develop modern NeoBank applications with features such as digital onboarding, open banking API integration, real-time payments, and advanced security compliance."
-          ptag1='Our experienced fintech developers leverage AI-driven technologies and future-ready architectures to deliver high-performance NeoBank platforms that enhance customer experience, ensure regulatory adherence, and support seamless digital banking transformation.'
-          li="Custom NeoBank App Development"
-          li1="AI & Open Banking API Integration"
-          li2="Real-time Payments & Security Compliance"
-          li3="Continuous Support & Updates"
+          heading="NeoBank App Development Company"
+          ptag="Comfygen Technologies is a trusted NeoBank app development company delivering secure, scalable, and user-centric digital banking solutions. We specialize in NeoBank app development, fintech software engineering, and custom NeoBank app solutions with seamless API, NPCI, and digital wallet integrations to help startups and enterprises launch future-ready digital banking platforms faster."
+          li="MVP to Enterprise Launch"
+          li1="Custom NeoBank Solutions"
+          li2="NPCI & Bank API Integration"
+          li3="Secure & Scalable Architecture"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -476,17 +394,18 @@ export default function Ecommerce(props:any) {
         </section>
 
         <AboutSection
-          heading="Your Trusted Partner for Next-Gen NeoBank App Development"
-          description1="Launching a NeoBank app offers businesses a future-ready approach to digital banking by eliminating the need for physical branches. It enables real-time transactions, personalized financial insights, automated savings, and seamless user experiences—all accessible through a smartphone. With increasing demand for digital-first financial services, NeoBank apps help attract tech-savvy users and boost customer engagement."
-          description2="Comfygen is a leading <a class='text-blue-500 font-semibold' href='/finance-app-development'>Fintech app development company</a> specializing in NeoBanking App Development Services. Leveraging advanced technologies like AI/ML, Blockchain, and robust API integrations, we build secure, scalable, and intuitive NeoBank solutions. Our expert team transforms your fintech vision into a high-performance mobile app tailored to meet modern user expectations and industry compliance."
+          heading="Why Invest in Custom NeoBank App Development?"
+          description1="Investing in custom NeoBank app development presents a powerful growth opportunity as the global neobank market is expected to expand from USD 261.4 billion in 2026 to over USD 1.77 trillion by 2030, growing at a remarkable 46%+ CAGR. This surge is driven by rising demand for digital-first banking, personalized financial experiences, and branchless banking models. A custom NeoBank app reduces operational costs, enables rapid scalability, unlocks diverse revenue streams, and strengthens customer retention—making it a future-ready, high-ROI investment."
           imageSrc="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-about.webp"
           link="/about-us"
           linkText="Explore More"
+          points={[
+            "Lower Costs, Higher ROI",
+            "Digital-First Banking Demand",
+            "High-Growth Market Opportunity",
+            "Scalable & Revenue-Driven Model",
+          ]}
         />
-
-
-
-
 
         <CoreFeaturesSection
           title="Our NeoBank App Development Solutions Come Packed with Powerful Features"
@@ -497,8 +416,8 @@ export default function Ecommerce(props:any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our UPI Payment Apps Portfolio"
-            description="Explore Comfygen’s portfolio of UPI payment apps, designed for startups and enterprises. Our secure, scalable solutions offer real-time transactions, multi-banking, QR payments, and AI-based fraud detection—redefining digital finance with seamless user experiences and next-gen fintech innovation."
+            heading="Our NeoBank Apps Portfolio"
+            description="Explore Comfygen’s NeoBank app portfolio showcasing secure, scalable NeoBank app development solutions. Our digital banking and fintech applications feature API integration, real-time payments, and compliance-ready architecture to power modern, customer-centric, branchless banking platforms."
           />
         </section>
 

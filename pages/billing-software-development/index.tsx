@@ -171,12 +171,13 @@ export default function ClinicalApp(props: any) {
           <HeroSectionForAllPages
             heading="Billing Software Development Company"
             subhead='Custom, Cloud & GST-Compliant Billing Software Solutions for Modern Businesses'
-            ptag="Comfygen Technologies is a trusted billing software development company delivering secure, scalable, and fully customizable billing solutions for startups, SMEs, and enterprises. We specialize in custom billing software development, helping businesses automate invoicing, tax calculations, payments, and financial reporting with precision."
-            ptag1='Our expert billing software developers build cloud-based, GST-compliant, and industry-specific billing software that improves billing accuracy, ensures tax compliance, accelerates cash flow, and simplifies end-to-end financial operations. Whether you need a custom billing system, SaaS billing platform, or enterprise-grade solution, we deliver reliable and future-ready billing software tailored to your business needs.'
-            li="Custom Billing Software Development for scalable business growth"
-            li1="Automated Invoicing & GST Tax Compliance solutions"
-            li2="Secure Payment Gateway Integration with multiple payment modes"
-            li3=""
+            ptag="Comfygen Technologies is a trusted billing software development company delivering secure, scalable, and customizable billing solutions for startups, SMEs, and enterprises. We specialize in custom billing software development to automate invoicing, tax calculations, payments, and financial reporting. Our cloud-based, GST-compliant billing software improves accuracy, ensures compliance, accelerates cash flow, and streamlines end-to-end financial operations across industries."
+            
+            li="Automated Invoicing process"
+            li1="GST Tax Compliance solutions"
+            li2="Custom Billing Software Development"
+            li3="Secure Payment Gateway Integration"
+            
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}

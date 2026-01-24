@@ -289,7 +289,6 @@ export default function Ecommerce(props) {
           ]}
 
         />
-        <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData} />
 
 
         <Faq

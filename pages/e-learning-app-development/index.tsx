@@ -230,67 +230,118 @@ export default function ClinicalApp(props: any) {
     },
   };
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    brand: "Comfygen Private Limited",
-    name: "Best Custom eLearning App Development Company in India & USA",
-    image: "https://www.comfygen.com/img/education-for-students-img.svg",
-    description:
-      "Looking for a custom eLearning app development company in India & the USA? Comfygen delivers custom edtech solutions with AI, AR/VR, and blockchain integration to enhance learning experiences. Build future-proof eLearning apps today!",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "1928",
+  const jsonLdData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Custom eLearning App Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a trusted custom eLearning app development company delivering scalable, mobile-first, and gamified EdTech solutions for enterprises, startups, and educational institutions to achieve higher engagement and ROI.",
+      "url": "https://www.comfygen.com/elearning-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/e-learning-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom eLearning App Development",
+        "EdTech App Development",
+        "Language Learning App Development",
+        "On-Demand eLearning App Development",
+        "Online Training App Development",
+        "Tutoring App Development",
+        "Kids Educational Games App Development",
+        "School App Development",
+        "E2C eLearning App Development"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
     },
-  };
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "name": "Custom eLearning App Development Services",
+      "image": "https://www.comfygen.com/image/og-image-e-learning-app-development.webp",
+      "description": "Build scalable, mobile-first, and engaging eLearning applications with Comfygen. Our custom eLearning app development services deliver gamified learning, performance analytics, and ROI-driven EdTech solutions for businesses and institutions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1928"
+      }
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "eLearning App Development",
+          "item": "https://www.comfygen.com/e-learning-app-development"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of e-learning apps can you develop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in developing a wide range of e-learning applications, including online training apps, school apps, corporate training platforms, exam preparation apps, language learning apps, and mobile learning platforms tailored to diverse educational needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the eLearning app development cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of eLearning app development varies widely, typically ranging from $20,000 to $250,000 or more. Factors influencing the price include app complexity, features, platform (iOS, Android, or both), design requirements, and integration needs. Basic apps with essential features cost less, while sophisticated platforms with AI, AR, or VR capabilities are more expensive. Custom content creation, if required, also impacts the overall cost. Always request a detailed quote for accurate pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time does it take to build an educational mobile application?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Developing an education mobile application usually takes between 3 to 9 months. The timeline depends on the app's complexity, features, and scope. A basic app with standard features might be ready in 3-4 months, while a complex, feature-rich platform could take 6-9 months or longer. Factors affecting development time include design complexity, number of platforms (iOS/Android), integration requirements, and testing phases. Proper planning and an experienced development team can help optimize the timeline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the e-learning app be compatible with all devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our apps are designed to be cross-platform compatible, ensuring they work seamlessly across different devices, including iOS, Android, and web platforms. This ensures that your users can access learning material from any device of their choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you customize the app for specific learning needs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Definitely! We specialize in custom e-learning app development that is specifically designed to address your unique learning goals, whether for schools, corporate training, or niche educational programs."
+          }
+        }
+      ]
+    }
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What types of e-learning apps can you develop?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "We specialize in creating various types of e-learning apps, including online training apps, school apps, corporate training apps, exam preparation apps, language learning apps, mobile learning platforms, and AR/VR educational apps.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the eLearning app development cost?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost of eLearning app development varies widely, typically ranging from $20,000 to $250,000 or more depending on features and complexity.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much time does it take to build an educational mobile application?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Developing an education mobile application usually takes between 3 to 9 months, depending on complexity, features, and platforms (iOS, Android, Web).",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Will the e-learning app be compatible with all devices?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Our apps are designed to be cross-platform compatible, ensuring they work seamlessly across different devices, including iOS, Android, and web platforms.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can you customize the app for specific learning needs?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Definitely! We specialize in custom e-learning app development that is specifically designed to address your unique learning goals, whether for schools, corporate training, or niche educational programs.",
-        },
-      },
-    ],
-  };
+
+
+
+  ];
 
   return (
     <>
@@ -355,7 +406,8 @@ export default function ClinicalApp(props: any) {
           name="og:url"
           content="https://www.comfygen.com/e-learning-app-development"
         />
-        <meta name="og:image" content="og img url" />
+        <meta name="og:image" content="https://www.comfygen.com/media/og-images/e-Learning-app-development-og.webp" />
+        <meta name="og:image:secure_url" content="https://www.comfygen.com/media/og-images/e-Learning-app-development-og.webp" />
         <meta name="og:site_name" content="Comfygen Private Limited" />
         <meta
           name="og:description"
@@ -378,20 +430,9 @@ export default function ClinicalApp(props: any) {
         />
         <meta
           name="twitter:image"
-          content="https://www.yourwebsite.com/path-to-image.jpg"
+          content="https://www.comfygen.com/media/og-images/e-Learning-app-development-og.webp"
         />
         <meta name="twitter:site" content="@comfygentech" />
-        <meta property="og:image" content="add image URL" />
-        <meta property="og:image:secure_url" content="Add img URL" />
-        <meta property="og:image:alt" content="eLearning app development" />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/e-learning-app-development"
-        />
-        <meta
-          property="og:title"
-          content="Leading eLearning App Development Company | Build Future-Ready EdTech Apps"
-        />
         <meta
           property="og:description"
           content="Comfygen, a trusted eLearning app development company, creates high-performance EdTech solutions integrating AI, AR/VR, and Blockchain. Transform digital learning with personalized, engaging, and scalable apps."
@@ -410,15 +451,10 @@ export default function ClinicalApp(props: any) {
             __html: JSON.stringify(organizationSchema),
           }}
         />
-        <Script
+
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-        />
-        <Script
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
       <Header />
@@ -439,8 +475,8 @@ export default function ClinicalApp(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
         />
-        <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -459,17 +495,19 @@ export default function ClinicalApp(props: any) {
         </section>
         <AboutSection
           title="About Company"
-          heading="Leading eLearning app development company in India & USA"
-          description1="Comfygen is a leading eLearning app and website development company in India, renowned for providing innovative and reliable on-demand eLearning app development services to clients globally. With over 10+ years of talented education app developers provide the best eLearning app development services in India and the USA. We have successfully delivered 50+ projects annually, making us one of the top custom E-learning mobile app development companies in the region. Our skilled m-learning developers is proficient in creating custom e-learning apps that are scalable, user-friendly, and equipped with advanced features."
-          description2="As a prominent eLearning app development company in India, we specialize in developing customized education app solutions that enhance the learning experience, whether for schools, online training platforms, or corporate training apps. We are considered the best eLearning app development services provider in India, USA, UK, and globally because we focus on delivering top-quality mobile apps that align with our client's business goals. Partner with Comfygen to develop a cutting-edge eLearning mobile app and grow your startup E-learning app business with innovative solutions."
+          heading="Why Invest in Custom eLearning App Development?"
+          description1="Investing in custom eLearning app development delivers high-growth opportunities as the global eLearning market is projected to surpass $450 billion by 2026, growing at over 10% CAGR. Custom, mobile-first eLearning solutions offer scalable training, higher learner engagement, and strong ROI through gamification, data-driven analytics, and cost-effective long-term digital education platforms tailored to business and institutional needs."
+          points={[
+            "High ROI Potential",
+            "Rapid Market Growth",
+            "Scalable Digital Learning",
+            "Gamified User Engagement",
+            "Mobile-First Education Platforms"
+          ]}
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
         />
-        
-
-
-
 
         <SolutionSec
           heading="E-Learning App Development Solutions We Offer"
@@ -517,34 +555,43 @@ export default function ClinicalApp(props: any) {
           description="At Comfygen, we leverage the latest and most reliable technologies to build high-performing, scalable, and secure eLearning apps. Our team uses cutting-edge tools and frameworks to ensure a seamless learning experience for users across the globe."
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1] mt-8">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Advanced Technologies We Integrate in e-learning Mobile Apps
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Latest Technology Trends in Laboratory App Development
                 </h2>
-                <p>
-                  Using the advanced latest technologies; we are building a
-                  futuristic e-learning application that is making teaching
-                  convenient and learning more engaging.
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  Latest technology trends in laboratory app development include AI-powered diagnostics, cloud-based LIMS, IoT-enabled lab automation, advanced data analytics, and secure mobile laboratory solutions improving efficiency, accuracy, scalability, and regulatory compliance.
                 </p>
               </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num } = elem;
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px]  flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                            src={img}
+                                            className="object-cover"
+                                            width={35}
+                                            height={50}
+                                            alt={title}
+                                          /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
                       </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p
-                        className=""
-                        dangerouslySetInnerHTML={{ __html: decs }}
-                      ></p>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
+                      </div>
                     </div>
                   );
                 })}
@@ -552,6 +599,7 @@ export default function ClinicalApp(props: any) {
             </div>
           </div>
         </section>
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -560,7 +608,7 @@ export default function ClinicalApp(props: any) {
         />
         <HireDeveloper
           heading="Hire our eLearning app developer"
-          text="When you hire our e-learning app developer, you are partnering with experts 100% Satisfaction Guaranteed, and Confidentiality developers that Assured who specialize in creating personalized, high-performance educational apps. Whether you're developing an online training app, a school app, or a mobile learning platform, our top eLearning mobile app development team provides solutions customized to meet your unique educational goals."
+          text="When you hire our e-learning app <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>developer</a>, you are partnering with experts 100% Satisfaction Guaranteed, and Confidentiality developers that Assured who specialize in creating personalized, high-performance educational apps. Whether you're developing an online training app, a school app, or a mobile learning platform, our top eLearning mobile app development team provides solutions customized to meet your unique educational goals."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"

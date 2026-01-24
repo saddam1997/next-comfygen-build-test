@@ -76,37 +76,37 @@
   ],
   "IndustriesServe": [
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/shopify-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-like-Amazone.webp",
       "title": "App Like Amazon",
       "description": "Feature-rich marketplace with multi-vendor support, advanced search, and personalized recommendations.",
       "buttonText": "View Demo"
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/eBay-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-like-Lazada.webp",
       "title": "App Like Lazada",
       "description": "User-friendly ecommerce platform optimized for mobile shopping and smooth checkout.",
       "buttonText": "View Demo"
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/amazon-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-like-Shopee.webp",
       "title": "App Like Shopee",
       "description": "Engaging marketplace with flash sales, gamified promotions, and secure payment integration.",
       "buttonText": "View Demo"
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/flipkart-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Mercado-Libre.webp",
       "title": "App Like Mercado Libre",
       "description": "Large-scale marketplace supporting multiple product categories and seamless logistics.",
       "buttonText": "View Demo"
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/shopClues-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Vinted.webp",
       "title": "App Like Vinted",
       "description": "Social commerce platform for second-hand and peer-to-peer selling with community features.",
       "buttonText": "View Demo"
     },
     {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/e-commerce-app-development/snapdeal-app-clone.webp",
+      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Nasty-Gal.webp",
       "title": "App Like Nasty Gal",
       "description": "Fashion-focused ecommerce app with curated catalogs, trend-driven recommendations, and smooth browsing experience.",
       "buttonText": "View Demo"
@@ -155,7 +155,6 @@
         "Smooth, intuitive user experience for better engagement",
         "Secure payment gateway and fast checkout",
         "Real-time inventory, order tracking, and notifications"
-       
       ],
       "cta": {
         "label": "Go mobile",
@@ -179,7 +178,6 @@
       }
     }
   ],
-
   "consultancyHead": [
     {
       "num": "1",
@@ -212,7 +210,7 @@
       "title": "Multi-Language & Multi-Currency Support",
       "desc": "Cater to a global audience with localized content, pricing, and payment options."
     },
-     {
+    {
       "title": "Analytics & Reporting",
       "desc": "Gain insights into customer behavior, sales trends, and app performance for informed business decisions."
     },
@@ -221,9 +219,6 @@
       "desc": "Integrate with CRM, ERP, logistics, and marketing tools to create a connected ecosystem for your ecommerce operations."
     }
   ],
-
-
-
   "featuresData": [
     {
       "id": 1,
@@ -703,6 +698,23 @@
       "num": "10",
       "title": "What sets Comfygen apart from other eCommerce app development companies?",
       "desc": "Our dedication to innovation, expertise in emerging technologies, personalized client approach, and proven track record of successful projects distinguish us in delivering exceptional eCommerce solutions tailored to your business needs."
+    }
+  ],
+  "customTestimonials": [
+    {
+      "text": "We partnered with Comfygen Technologies for ecommerce app development, and the results were outstanding. The app is secure, user-friendly, and has significantly improved customer engagement and conversions.",
+      "name": "Neha Patel",
+      "title": "(India)"
+    },
+    {
+      "text": "Comfygen Technologies delivered a powerful ecommerce app with smooth performance and excellent UI. Their team understood our requirements clearly and helped us scale our online sales faster than expected.",
+      "name": "Amit Verma",
+      "title": "(India)"
+    },
+    {
+      "text": "Comfygen Technologies proved to be a reliable ecommerce app development company. Their technical expertise, timely delivery, and post-launch support helped our business grow digitally.",
+      "name": "Jessica Miller",
+      "title": "(USA)"
     }
   ]
 }

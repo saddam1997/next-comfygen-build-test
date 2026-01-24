@@ -44,11 +44,6 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 );
 
-const OtherGameDevelopment = dynamic(
-  () =>
-    import("../../components/Newcomponet/SectionCompoent/OtherGameDevelopment"),
-  { loading: loader, ssr: true }
-);
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
@@ -522,11 +517,6 @@ export default function Ecommerce(props) {
             "Transparent communication, agile execution, and 100% code ownership",
           ]}
         />
-        <OtherGameDevelopment
-          heading="We Develops Other Games"
-          gameCards={JSON_DATA.GameCardData}
-        />
-
         <Faq faqData={JSON_DATA.Frequently} title=" Golf Live Line Api" />
 
         <BlogSection initialData={initialData} />
