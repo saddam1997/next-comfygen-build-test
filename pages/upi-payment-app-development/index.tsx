@@ -166,72 +166,6 @@ const jsonLdData = [
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.youtube.com/@ComfygenBusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-      "email": "sales@comfygen.com",
-      "availableLanguage": ["en", "in"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
-  {
     "@context": "http://www.schema.org",
     "@type": "Product",
     "brand": "Comfygen Private Limited",
@@ -244,34 +178,24 @@ const jsonLdData = [
       "reviewCount": "1928"
     }
   },
-
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "WhatsApp",
-      "telephone": "+91 9587867258",
-      "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-      "email": "sales@comfygen.com",
-
-      "availableLanguage": "en, in"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "UPI Payment App Development",
+        "item": "https://www.comfygen.com/upi-payment-app-development"
+      }
     ]
   },
-
-
   {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
@@ -444,11 +368,11 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="UPI Payment App Development Company"
-          ptag="Comfygen Technologies is a trusted UPI payment app development company delivering secure, scalable, and NPCI-compliant digital payment solutions for fintech startups, banks, and enterprises. We specialize in building high-performance UPI payment applications with seamless UI/UX, fast transaction processing, and bank-grade security."
-          ptag1='Our expert fintech developers leverage modern technologies to create reliable UPI apps that support real-time payments, QR code integration, and smooth user journeys. Partner with Comfygen Technologies to launch next-generation UPI payment solutions that enhance user trust, improve payment efficiency, and drive digital transformation in the fintech ecosystem.'
-          li="Transforming Payments into Seamless UPI Solutions"
-          li1="Boosting Fintech with Custom UPI Apps"
-          li2="10+ Yr Expert Fintech Developers"
+          ptag="Comfygen Technologies is a reliable UPI payment app development company helping businesses launch secure, easy-to-use digital payment solutions. Our UPI payment app development services focus on smooth transactions, intuitive design, and strong backend management. We create scalable apps that support QR code payments, bank integrations, and real-time processing, ensuring a seamless user experience for customers, merchants, and growing fintech platforms."
+          li="Secure & Fast UPI Transactions"
+          li1="Easy Scan & Pay Experience"
+          li2="Smart Admin Dashboard Control"
+          li3="Scalable Fintech-Ready Solutions"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

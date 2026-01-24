@@ -202,9 +202,6 @@ export default function Ecommerce(props) {
       ]
     },
 
-
-
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -375,16 +372,16 @@ export default function Ecommerce(props) {
         />
         <meta
           name="twitter:image"
-          content="https://www.yourwebsite.com/path-to-image.jpg"
+          content="https://www.comfygen.com/media/og-images/medicine-ordering-app-development-og.webp"
         />
         <meta name="twitter:site" content="@comfygentech" />
         <meta
           property="og:image"
-          content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
+          content="https://www.comfygen.com/media/og-images/medicine-ordering-app-development-og.webp"
         />
         <meta
           property="og:image:secure_url"
-          content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp"
+          content="https://www.comfygen.com/media/og-images/medicine-ordering-app-development-og.webp"
         />
         <meta
           property="og:image:alt"

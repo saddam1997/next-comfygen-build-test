@@ -223,100 +223,100 @@
       "link": "#"
     }
   ],
-
-
-"featuresData": [
+  "featuresData": [
     {
-    "id": 1,
-    "title": "User Panel",
-    "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-    "img": "https://www.comfygen.com/image/e-learning-user-panel.webp",
-    "additionalDetails": [
+      "id": 1,
+      "title": "User Panel",
+      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+      "img": "https://www.comfygen.com/image/e-learning-user-panel.webp",
+      "additionalDetails": [
         {
-        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
-        "details": "Personalized Dashboard",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+          "details": "Personalized Dashboard",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
-        "details": "AI-Based Course Recommendations",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
+          "details": "AI-Based Course Recommendations",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/image 48.png",
-        "details": "Live Classes & Video Lectures",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/image 48.png",
+          "details": "Live Classes & Video Lectures",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
-        "details": "Performance Tracking & Reports",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
+          "details": "Performance Tracking & Reports",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
-        "details": "Gamification & Rewards",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
+          "details": "Gamification & Rewards",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
-        "details": "Offline Learning Mode",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+          "details": "Offline Learning Mode",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
-        "details": "Discussion Forums & Chat Support",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+          "details": "Discussion Forums & Chat Support",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
-        "details": "Secure Payment & Subscription Management",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/7038099_chart_marketing_graph_business_profit_icon 1.png",
+          "details": "Secure Payment & Subscription Management",
+          "content": ""
         }
       ]
     },
     {
-    "id": 2,
-    "title": "Admin Panel",
-    "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-    "img": "https://www.comfygen.com/image/e-learning-admin-panel.webp",
-
-    "additionalDetails": [
+      "id": 2,
+      "title": "Admin Panel",
+      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/image/e-learning-admin-panel.webp",
+      "additionalDetails": [
         {
-        "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
-        "details": "Dashboard & Analytics",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
+          "details": "Dashboard & Analytics",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
-        "details": "Course Management",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
+          "details": "Course Management",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
-        "details": "User Role Management",
-        "content": ""
-        },
-        { "emoji": "https://www.comfygen.com/image/image 48.png", "details": "Live Class Scheduling & Notifications ", "content": ""
+          "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
+          "details": "User Role Management",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
-        "details": "AI-Powered Performance Insights",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/image 48.png",
+          "details": "Live Class Scheduling & Notifications ",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
-        "details": "Monetization & Payment Processing",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
+          "details": "AI-Powered Performance Insights",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
-        "details": "Content Moderation & Compliance",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+          "details": "Monetization & Payment Processing",
+          "content": ""
         },
         {
-        "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
-        "details": "Multi-Language & Accessibility Support",
-        "content": ""
+          "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+          "details": "Content Moderation & Compliance",
+          "content": ""
+        },
+        {
+          "emoji": "https://www.comfygen.com/image/2921813_badge_banner_emblem_guarantee_premium_icon 1.png",
+          "details": "Multi-Language & Accessibility Support",
+          "content": ""
         }
       ]
     }
@@ -362,6 +362,44 @@
       }
     ]
   },
+  "Emerging": [
+    {
+      "num": "1",
+      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
+      "title": "Artificial Intelligence (AI) and Machine Learning",
+      "decs": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt to content difficulty and suggest tailored resources. <a href='/ai-development' class='font-bold underline'>AI-powered eLearning app development services</a> provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
+    },
+    {
+      "num": "2",
+      "img": "https://www.comfygen.com/img/ar-vr-technology.webp",
+      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
+      "decs": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
+    },
+    {
+      "num": "3",
+      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      "title": "Blockchain Integration in E-learning App",
+      "decs": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. <a href='/blockchain-development' class='font-bold underline'>Blockchain development</a> ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
+    },
+    {
+      "num": "4",
+      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "title": "Internet of Things (IoT)",
+      "decs": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
+    },
+    {
+      "num": "5",
+      "img": "https://www.comfygen.com/img/big-data-analytics.webp",
+      "title": "Big Data Analytics",
+      "decs": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
+    },
+    {
+      "num": "6",
+      "img": "https://www.comfygen.com/img/nlp-technology.webp",
+      "title": "Natural Language Processing (NLP)",
+      "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
+    }
+  ],
   "customTestimonials": [
     {
       "text": "Comfygen's eLearning app development services were a game-changer for our corporate training platform. Their team's ability to integrate AI-powered features and create a user-friendly experience was exceptional. Our employees now engage more effectively with the training material, and we’ve seen a significant improvement in skill development.",

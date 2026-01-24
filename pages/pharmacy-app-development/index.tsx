@@ -293,14 +293,14 @@ export default function ClinicalApp(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top Online Pharmacy App Development Company in India & USA | Comfygen" />
         <meta name="twitter:description" content=" Build a secure and scalable online pharmacy app with Comfygen, a leading pharmacy app development company in India and USA. Get feature-rich ePharmacy solutions for medicine delivery, digital prescriptions, and subscriptions." />
-        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/pharmacy-app-development/pharmacy-app-development.webp" />
+        <meta name="twitter:image" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
 
         {/* <!-- Facebook Meta --> */}
 
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/pharmacy-app-development/pharmacy-app-development.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/pharmacy-app-development/pharmacy-app-development.webp" />
+        <meta property="og:image" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta property="og:image:alt" content="Custom Pharmacy App Development" />
         <meta property="og:url" content="https://www.comfygen.com/pharmacy-app-development" />
         <meta property="og:title" content="Custom Online Pharmacy App Development Company | India & USA" />

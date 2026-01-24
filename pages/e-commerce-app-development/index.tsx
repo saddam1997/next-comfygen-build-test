@@ -93,6 +93,11 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import EcommerceOptions from "../../components/Newcomponet/comman/EcommerceOptions";
 
@@ -376,8 +381,6 @@ export default function Ecommerce(props) {
 
       }]
     }
-
-
   ];
 
   return (
@@ -441,7 +444,7 @@ export default function Ecommerce(props) {
         />
 
         <Milestones />
-               <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our On-Demand eCommerce App Development Services</h2>
@@ -464,12 +467,6 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
- 
-
-
-
-
-
         <AppcardSlider
           heading="Build an E-commerce App Like Top Marketplaces"
           description="Looking to launch an ecommerce app like Amazon, Lazada, or Shopee? Our clone eCommerce app clone solutions let you replicate the features, functionality, and user experience of leading marketplaces while customizing them for your brand."
@@ -479,8 +476,8 @@ export default function Ecommerce(props) {
 
 
         <CallToAction
-          heading="Build a Luxury Fashion Shopping App"
-          text="Create a premium ecommerce experience with AR try-ons, personalized AI features, and a sleek UI—only with Comfygen."
+          heading="Build Your High-Performance Ecommerce App Today"
+          text="Comfygen Technologies creates high-performance ecommerce apps to increase conversions and sales."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
@@ -585,11 +582,17 @@ export default function Ecommerce(props) {
             "Clean code, clear communication, and on-time delivery"
           ]}
         />
+
+        <ClientTestimonials
+          heading="What Our Clients Say"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"
         />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

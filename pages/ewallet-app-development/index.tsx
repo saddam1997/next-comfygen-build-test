@@ -340,72 +340,6 @@ export default function Ecommerce(props) {
 
     },
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
       "@context": "http://www.schema.org",
       "@type": "Product",
       "brand": "Comfygen Technologies",
@@ -618,7 +552,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Custom eWallet App Development Company"
-          ptag="Comfygen Technologies offers end-to-end custom eWallet app development services for fintech startups, businesses, and financial institutions. We design and develop secure eWallet applications with features like instant payments, wallet top-ups, transaction history, and multi-platform compatibility. Our team combines advanced encryption, seamless API integrations, and intuitive design to deliver reliable digital wallet solutions. Build a future-ready eWallet app with us to enhance user experience and streamline cashless transactions."
+          ptag="Comfygen Technologies is a trusted eWallet app development company delivering secure, scalable, and feature-rich digital wallet solutions. Our eWallet app development services include custom wallets, P2P payments, UPI and payment gateway integration, crypto wallets, and NFC-based transactions for Android, iOS, and cross-platform applications."
           li="Secure Digital Wallets with Advanced Encryption"
           li1="Seamless API, Banking & Payment Gateway Integration"
           li2="Instant Payments, Wallet Top-Ups & Transaction History"
@@ -637,10 +571,10 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Revolutionizing the Fintech Industry with Our Cutting-Edge eWallet App Development Services
+                Our Custom eWallet App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Looking to build a secure digital wallet? As a top-rated custom eWallet app development company, Comfygen delivers tailor-made eWallet app development services for seamless transactions, advanced security, and user convenience. Explore our range of expert services below:
+                Our custom eWallet app development services deliver secure, scalable, and feature-rich digital wallet solutions. We build tailored wallet apps with UPI integration, P2P transfers, multi-currency support, and advanced security for Android, iOS, and cross-platform platforms.
               </p>
             </div>
             <div className="">

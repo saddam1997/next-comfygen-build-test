@@ -176,26 +176,21 @@
       ]
     }
   ],
-
-
-
-
-  
   "portfoliodata": [
     {
-      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/retail-eWallet-app.webp",
       "title": "Retail eWallet App",
       "description": "Take a look at our high-performing eWallet app projects, each built with advanced technology, secure systems, and user-focused designs tailored to specific business needs.",
       "link": "#"
     },
     {
-      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/crypto-wallet-app.webp",
       "title": "Crypto Wallet App",
       "description": "A secure, multi-currency crypto wallet with real-time tracking, biometric login, and blockchain integration for easy buying, selling, and storing of digital assets.",
       "link": "#"
     },
     {
-      "img": "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/ewallet-app-development/p2p-money-transfer-app.webp",
       "title": "P2P Money Transfer App",
       "description": "A fast peer-to-peer wallet app with UPI integration, bank linking, and instant transfers—perfect for users seeking quick, simple, and secure money movement.",
       "link": "#"

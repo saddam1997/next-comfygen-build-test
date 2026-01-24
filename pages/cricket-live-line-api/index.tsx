@@ -6,6 +6,7 @@ import JSON_DATA from "./json/cricketliveline.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -45,10 +46,6 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 )
 
-const OtherGameDevelopment = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/OtherGameDevelopment"),
-  { loading: loader, ssr: true }
-)
 
 const SportsApiSupportSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/SportsApiSupportSection"),
@@ -406,7 +403,7 @@ export default function Ecommerce(props) {
           bgImage="https://www.comfygen.com/herosection/fantasy-cricket-app-development-hero-img.webp"
         />
 
-
+        <Milestones />
         <AboutSection
           title="About Company"
           heading="Skyrocket your Experience with Best Cricket Live Line API"
@@ -491,12 +488,6 @@ export default function Ecommerce(props) {
           ]}
           
         />
-
-        <OtherGameDevelopment 
-          heading="We Develops Other Games"
-          gameCards={JSON_DATA.GameCardData} />
-
-
 
         <Faq
           faqData={JSON_DATA.Frequently}

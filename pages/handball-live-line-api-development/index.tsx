@@ -44,10 +44,6 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 )
 
-const OtherGameDevelopment = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/OtherGameDevelopment"),
-  { loading: loader, ssr: true }
-)
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
@@ -544,7 +540,6 @@ export default function Ecommerce(props: any) {
             "Trusted Handball data API provider for global sport brands"
           ]}
         />
-        {/* <OtherGameDevelopment heading="We Develops Other Games" gameCards={JSON_DATA.GameCardData}  /> */}
 
 
         <Faq

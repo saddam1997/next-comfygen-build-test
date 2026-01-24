@@ -81,11 +81,6 @@ export default function ClinicalApp(props: any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
 
-
- 
-
-
-
   return (
     <>
       <Head>
@@ -208,7 +203,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSection
           heading="Banking Software Development Company"
-          ptag="Comfygen is a top software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
+          ptag="Comfygen Technologies is a top banking software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
           li="Custom Core Banking Software"
           li1="Secure, Cloud-Native & Scalable Platforms"
           li2="AI, ML & Blockchain Banking Solutions"
@@ -252,8 +247,8 @@ export default function ClinicalApp(props: any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Take a look at some of the banking software solutions we have developed"
-            description="Comfygen delivers innovative and secure banking software solutions designed to meet the needs of financial institutions. We have designed two notable banking projects that offer seamless and feature-rich services."
+            heading="Our Banking Software Development Portfolio"
+            description="Our Banking Software Development Portfolio showcases secure, scalable, and user-centric banking solutions, including mobile banking apps, core banking systems, digital payment platforms, and fintech software tailored for modern financial institutions."
           />
         </section>
 
