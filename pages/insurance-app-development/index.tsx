@@ -21,6 +21,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -48,6 +49,11 @@ const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { loading: loader, ssr: true }
 );
+
+const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { loading: loader, ssr: true }
+);
+
 
 
 const Features = dynamic(
@@ -95,6 +101,18 @@ const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
+
+
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
+);
+
+const ClientStories = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientStories"),
+  { ssr: true }
+);
+
 
 
 
@@ -331,11 +349,11 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Insurance App Development Company | Custom Solutions</title>
+        <title>Insurance Mobile App Development Company | Comfygen</title>
 
         <meta
           name="description"
-          content="Looking for a trusted insurance app development company? Comfygen delivers secure, custom insurance apps with AI, blockchain, and cloud integration. We help brokers, startups, and insurers thrive with user-focused, compliant mobile solutions."
+          content="Comfygen is a leading insurance mobile app development company delivering AI-powered underwriting, blockchain claims, and on-demand digital insurance apps."
         />
         <meta
           name="keywords"
@@ -433,7 +451,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Insurance Mobile App Development Company"
-          ptag="Comfygen’s insurance Mobile app development solutions help you bring your insurance ideas to life. Whether it's a startup, broker, or enterprise, we provide secure, user-friendly, and fully compliant insurance app development services. Our insurance app development solutions are designed to meet your exact business needs, whether you need them for claims management, policy tracking, or customer engagement."
+          ptag="Comfygen is a top-ranking insurance Mobile application development Company that assists in realizing your insurance ideas. We provide secure, easy-to-use, and non-compliant insurance mobile application development services to startups, brokers, and enterprises. We also provide solutions to address your business requirements, such as claims management, policy tracking, and customer engagement, and make sure that the experience of your users is flawless."
           li="Custom Insurance App Development for Startups, Brokers & Enterprises"
           li1="Secure, Compliant & Scalable Architecture"
           li2="Advanced Features for Claims, Policy & Customer Management"
@@ -447,24 +465,13 @@ export default function ClinicalApp(props: any) {
           bgImage="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-hero.webp"
         />
 
-        <AboutSection
-          title="About Company"
-          heading="Leading Insurance App Development Company for Modern Insurers"
-          description1="In today’s digital world, insurance businesses need modern and intuitive insurance mobile app development solutions to stay ahead. At Comfygen, we specialise in insurance app development services that cater to insurers, brokers, and agencies of all sizes. From policy management and claims processing to AI-driven risk analysis and customer engagement, our App development team builds secure, scalable, and user-friendly mobile app development solutions that transform traditional insurance services into seamless digital experiences."
-          description2="10 years back, FinTech app development and InsurTech, we leveraged advanced technologies such as AI/ML, blockchain, and cloud computing to deliver a feature-rich, regulation-compliant insurance mobile app development solution. Our dedicated insurance app developers work closely with you to ensure your digital insurance solution aligns with your unique needs and future goals."
-          description3=""
-
-          imageSrc="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Insurance Mobile App Development Services</h2>
-              <p className="text-base text-center font-normal">Building a reliable insurance mobile app takes more than forms and payment screens. You need a smooth, trustworthy experience that makes life easier for customers and keeps your internal team in control. That’s exactly where Comfygen delivers with its end-to-end insurance mobile app development services.</p>
+              <p className="text-base text-center font-normal">Creating an insurance mobile app that can be trusted requires more than forms and payment screens. You require a steady and reliable journey allowing you to make life easier to the customers and retain your internal team. Comfygen being a leading insurance Mobile app development Company offers precisely the same with its end to end insurance mobile app development services.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -472,34 +479,67 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
+        <AboutSection
+          title="About Company"
+          heading="Why Invest in Insurance App Development?"
+          description1="The global insurance app market is rapidly growing, expected to reach $10–12 billion by 2027, driven by digital adoption, smartphone penetration, and the rising demand for online insurance services. Mobile apps are transforming how customers purchase, manage, and claim insurance policies."
+          description2="10 years back, FinTech app development and InsurTech, we leveraged advanced technologies such as AI/ML, blockchain, and cloud computing to deliver a feature-rich, regulation-compliant insurance mobile app development solution. Our dedicated insurance app developers work closely with you to ensure your digital insurance solution aligns with your unique needs and future goals."
+          description3=""
+          points={[
+            "<b>Digital-first customers</b>:  More than 60% of users prefer managing insurance via apps.",
+            "<b>Embedded insurance growth</b>: Integration with e-commerce, travel, and fintech platforms is creating new revenue streams.",
+            "<b>Operational efficiency</b>: Apps reduce manual work and speed up claims, enhancing customer satisfaction.",
+            "<b>Lemonade (US/Europe)</b>: AI-powered policies and instant claims.",
+            "<b>GEICO Mobile (US):</b>Popular for policy management and quotes.",
+            "<b>Allianz Mobile (Global)</b>: Combines policy, health, and travel services.",
+            "<b>AXA Insurance App (Global)</b>: Customer-centric digital tools."
+          ]}
 
-
-
-        <div className="py-8">
-          <CardFeatures
-            heading="Advanced Features of Insurance Mobile App Development"
-            description="At Comfygen, we specialise in providing feature-rich insurance app development services with powerful, intuitive panels for both users and administrators. Our user panels focus on convenience and transparency, while admin panels deliver total control, analytics, and automation to streamline insurance operations."
-            featuresData={JSON_DATA.featuresData1}
-            grid={2} />
-        </div>
+          imageSrc="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
 
 
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Our Insurance App Development Portfolio"
-            description="Explore our innovative insurance app development portfolio, featuring AI-powered underwriting systems, blockchain-based claim processing, and on-demand solutions for every insurance sector. From health to auto, our apps redefine digital insurance experiences with speed, security, and user-first designs. Partner with Comfygen to launch your next-gen InsurTech solution with confidence."
+            heading="Our Insurance Mobile App Development Portfolio"
+            description="We are a top insurance mobile app development firm that deals with development of advanced insurance apps to facilitate easy operations, improve customer experience and propel business. The following is a demonstration of our new projects and our experience in various insurance industries and technologies."
           />
         </section>
 
+        <div className="py-8">
+          <CardFeatures
+            heading="Advanced Features of Insurance Mobile App Development"
+            description="Comfygen is a leading insurance Mobile app development Company specializing in creating feature-rich insurance apps. Our solutions include user-friendly and transparent panels for customers, along with high-performance admin panels that provide complete control, advanced analytics, and automation to streamline your insurance business operations."
+            featuresData={JSON_DATA.featuresData1}
+            grid={2} />
+        </div>
+
+
+        <CallToAction
+          heading="Transform Your Insurance Business with Comfygen"
+          text="Partner with Comfygen to get a secure, scalable, and user-friendly insurance app for iOS, Android, and web. Our expert developers deliver solutions tailored to your business goals."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Get in touch now." />
 
         <div className="py-8">
           <Features
-            heading=" We Develop Insurance Apps With Advanced Panel Features"
-            description=" At Comfygen, we specialize in building feature-rich insurance apps with powerful, intuitive panels for both users and administrators. Our user panels focus on convenience and transparency, while admin panels deliver total control, analytics, and automation to streamline insurance operations."
+            heading="We Develop Insurance Apps with Advanced Panel Features"
+            description="At Comfygen, we are a leading insurance mobile app development company, creating feature-rich apps with intuitive dashboards for users and administrators. Our apps streamline policy management, claims processing, and customer engagement, while ensuring security, scalability, and ease of use."
             featuresData={JSON_DATA.featuresData}
             grid={2} />
         </div>
+
+
+        <IndustriesServe
+          heading="Industries We Serve As Best Insurance App Development Company"
+          description="Comfygen provides Insurance mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+
+        />
 
 
         <SolutionSec
@@ -519,7 +559,7 @@ export default function ClinicalApp(props: any) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End insurance mobile App development process</h2>
               <p className="text-base font-normal mt-2">
-               Our insurance mobile app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards.
+                Our insurance mobile app development services follow a structured and transparent approach to ensure that we develop secure, scalable, and user-centric insurance apps. Using cutting-edge technologies and industry best practices, we provide innovative digital insurance solutions that meet regulatory standards.
 
               </p>
             </div>
@@ -534,15 +574,21 @@ export default function ClinicalApp(props: any) {
           description="At Comfygen, we utilize an advanced and robust technology stack to deliver cutting-edge insurance application development solutions."
           filterCategory={["crypto"]}
         />
+
+        
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+        <div className="py-5">
+          <ClientStories />
+        </div>
+
         <HireDeveloper
-          heading="Hire Our Dedicated Insurance App Developers"
-          text="At Comfygen, we stand as a leading <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development company</a>, offering expert services that cater to your specific insurance app needs. With our deep industry expertise, we craft insurance apps that are secure, compliant, and optimized for a seamless user experience across iOS, Android, and web platforms. We take pride in building advanced, scalable solutions that drive business growth and meet evolving customer demands."
+          heading="Hire Expert Insurance App Developers"
+          text="At Comfygen, we are a leading insurance mobile app development company dedicated to delivering secure, scalable, and intuitive applications across iOS, Android, and web platforms. Our team of certified developers specializes in building solutions tailored to meet your business objectives while ensuring a seamless user experience."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
@@ -560,7 +606,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="Insurance App Development" />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>
