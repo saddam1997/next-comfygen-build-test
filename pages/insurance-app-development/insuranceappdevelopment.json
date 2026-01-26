@@ -141,32 +141,42 @@
     "additionalDetails": [
       {
         "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
-        "details": "Quick Policy Search & Comparison",
+        "details": "Browse and compare multiple insurance policies.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/8333833_content_marketing_management_seo_icon 1.png",
-        "details": "Smart Claim Submission",
+        "details": "Calculate premiums and get personalized quotes.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/image 48.png",
-        "details": "In-App Chat & Virtual Assistant",
+        "details": "Track claims and policy status in real-time.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
-        "details": "Premium Payment & Auto-Renewal",
+        "details": "Receive instant notifications for renewals, payments, and updates",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
-        "details": "Policy Document Vault",
+        "details": "Renew or update policies with a few taps.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
-        "details": "Real-Time Claim Status Tracking",
+        "details": "Secure payment gateway for premium payments.",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Interactive dashboard for easy overview of policies and claims.",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "details": "Reward and loyalty program tracking.",
         "content": ""
       }
     ]
@@ -181,32 +191,47 @@
     "additionalDetails": [
       {
         "emoji": "https://www.comfygen.com/image/5737120_business_filled_line_management_profile_icon 1.png",
-        "details": "Policy & User Management",
+        "details": "Manage policies, claims, and user accounts efficiently.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/9004811_search_find_magnifier_zoom_icon 1.png",
-        "details": "AI-Driven Risk & Claim Analytics",
+        "details": "Monitor analytics and generate performance reports.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/897244_courses_language_learn_speak_icon 1.png",
-        "details": "Agent/Broker Management Tools",
+        "details": "Automate workflows to speed up operations.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/image 48.png",
-        "details": "Claims Processing Workflow Automation",
+        "details": "Approve or reject claims seamlessly.",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
-        "details": "Reports & Compliance Dashboard",
+        "details": "Track agent and customer activity",
         "content": ""
       },
       {
         "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
-        "details": "Blockchain-Based Activity Logs",
+        "details": "Configure premium plans and insurance offerings.",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Generate detailed reports for audits and compliance.",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Integrate AI for underwriting and risk assessment.",
+        "content": ""
+      },
+      {
+        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "details": "Manage user feedback and improve service quality.",
         "content": ""
       }
     ]

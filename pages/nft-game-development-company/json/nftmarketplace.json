@@ -41,7 +41,7 @@
 "servicesData": [
   {
     "title": "Action Game",
-  "subtitle": "All Service And Solutions At One Place",
+  "subtitle": "",
     "description": "In the gaming industry, action games have become popular worldwide. NFTs offer endless possibilities in this realm, allowing us to transform your gaming resources into extraordinary digital assets. We can bring your characters to life, unleash their unique powers, and immortalize them as NFTs. Additionally, we can convert your hardware and tickets into NFTs, creating opportunities for a wide audience to explore and enjoy. Join us on this exciting journey as we revolutionize the gaming industry.",
     "features": [
       "Tokenization of Characters and Powers",
@@ -51,7 +51,7 @@
   },
   {
     "title": "Adventure Game",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Adventure games like Minecraft and The Walking Dead allow you to explore immersive virtual environments. Tickets, costumes, upgrades, and maps are among the gaming materials available in our marketplace to help you improve your gameplay. With our exclusive assortment, you can take your gaming experience to the next level. Our marketplace provides everything you need for an outstanding gaming experience, whether you're exploring enormous landscapes or combating the undead.",
     "features": [
       "NFT Marketplaces for Exclusive In-Game Items",
@@ -61,7 +61,7 @@
   },
   {
     "title": "PVP Battles Game",
-  "subtitle": "All Service And Solutions At One Place",
+  "subtitle": "",
     "description": "Play intense PvP games on dynamic platforms, acquire upgrades, customize your character, master unique powers, and wield a powerful array of weaponry. Tokenize your virtual resources for exclusive deals and possibilities by converting them into valuable NFTs. Step into the ring and enjoy the amazing possibilities that lie ahead.",
     "features": [
       "NFT-Based Upgrades and Collectibles",
@@ -71,7 +71,7 @@
   },
   {
     "title": "Arcade Game",
-   "subtitle": "All Service And Solutions At One Place",
+   "subtitle": "",
     "description": "Arcade games are a fascinating addition to gaming that brings joy to a large number of gamers. Our company goes a step further by embedding NFTs into your gaming experience, transforming your game into a world of one-of-a-kind digital items. Our team provides a smooth transition, transforming your game into a refuge for NFT fans. NFTs will help you advance in your gaming sector!",
     "features": [
       "NFT Tokenization of Rewards and Achievements",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Board Game",
-   "subtitle": "All Service And Solutions At One Place",
+   "subtitle": "",
     "description": "Looking for a fun and interesting activity to do with your friends and family? Take a look at the online table and board games! You may have a local area gaming experience from the comfort of your own home with options like ludo. Furthermore, each player is allowed to develop their own distinct personality, providing an extra dimension of fun and excitement to the game. With the possibility to use custom NFTs within the game, you can completely personalize it. So, why delay? Gather your loved ones and begin playing right now.",
     "features": [
       "Custom NFT Creation for Players and Assets",
@@ -90,18 +90,8 @@
     ]
   },
   {
-    "title": "Casino Game",
-   "subtitle": "All Service And Solutions At One Place",
-    "description": "Join us today for an unforgettable gaming experience and immerse yourself in the hottest NFT trend on our platform. Use NFTs as a payment method and become the proud owner of digital assets while playing club games like Casino. Within our virtual clubs, you can enjoy exclusive benefits and bonuses. Don't pass up this chance to have a gaming experience like no other!",
-    "features": [
-      "NFT-Powered Payment Systems",
-      "Ownership of In-Game Assets Like Chips and Tables",
-      "Exclusive Benefits for NFT Holders"
-    ]
-  },
-  {
     "title": "Card Game",
-   "subtitle": "All Service And Solutions At One Place",
+   "subtitle": "",
     "description": "Our platform blends online gaming with NFTs, providing gamers with a one-of-a-kind possibility to profit while playing the game. With a vast selection of NFT trading cards available on our marketplace, it's the ideal location to start developing your collection. Join us today for a fresh take on conventional gaming.",
     "features": [
       "Extensive NFT Trading Card Collections",
@@ -111,7 +101,7 @@
   },
   {
     "title": "Fantasy Game",
-  "subtitle": "All Service And Solutions At One Place",
+  "subtitle": "",
     "description": "Are you a fan of dream sports events such as Dream 11? Do you like the financial independence that comes with picking your own squad and players and playing for pay? We have some great news to share with you! We've created a system that will take your fantasy sports experience to the next level. We can now convert your players and teams to NFTs, which will improve your gaming experience while also providing you with extra awards. So, what are you holding out for? Join us and reach new heights in your ideal sports journey!",
     "features": [
       "Tokenized Player and Team Assets",
@@ -121,7 +111,7 @@
   },
   {
     "title": "Racing Game",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Looking for a thrilling gaming experience that appeals to players of all ages? Take a look at racing games! These exhilarating games have the potential to captivate a large audience, and we have something unique to offer. Introducing our exclusive line of NFTs, which includes high-quality automobiles and bicycles, as well as their expertly created accessories. Each item is custom-made to your specific preferences and to improve your game performance. Prepare to be immersed in a world of high-speed exhilaration like never before!",
     "features": [
       "High-Quality NFTs for Vehicles and Equipment",
