@@ -7,6 +7,7 @@ import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -30,6 +31,11 @@ const HeadingSec = dynamic(
     loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
     ssr: true,
   }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
 );
 
 const InfoSection = dynamic(
@@ -145,7 +151,7 @@ export default function MultiChain(props: any) {
       </LazyLoad>
       <div className="overflow-hidden">
         <HeroSectionForAllPages
-          heading="Flutter App Development Company in India for Scalable Mobile Apps"
+          heading="Flutter App Development Company in India "
           ptag="Comfygen is a trusted Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market."
           ptag1="We focus on custom Flutter app development that supports long-term growth, smooth UI/UX, and seamless performance across devices. From MVPs to enterprise-grade applications, our Flutter solutions are designed to meet your business goals and evolving digital needs."
           li="Custom Cross-Platform App Development Services"
@@ -164,7 +170,7 @@ export default function MultiChain(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Flutter app development services
+                Flutter app development services
               </h2>
               <p className="text-base text-center font-normal">
                 We provide end-to-end Flutter app development services, covering business idea validation, development, deployment, and ongoing support. Our solutions help businesses create high-performance, cross-platform apps with a seamless user experience.
@@ -185,13 +191,19 @@ export default function MultiChain(props: any) {
           linkText="Explore More"
         />
 
-           <CallToAction
+        <CallToAction
           heading="Let’s Build the Future of Technology Together"
           text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
+        />
+
+        <IndustriesServe
+          heading="Industries We Serve As Best Flutter App Development Company"
+          description="Comfygen provides flutter app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+
         />
 
         <HeadingSec
@@ -253,13 +265,15 @@ export default function MultiChain(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-     
+
+        <ClientStories/>
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Flutter App Development Services"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

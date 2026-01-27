@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ios.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSection from "../../components/HeroSection";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   {
@@ -270,6 +271,9 @@ export default function Mobile(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories />
+
         <HireDeveloper
           heading="Hire Our iOS App Developers"
           text="Need fast, budget-friendly IOS app development without compromising quality? Hire skilled IOS app developers from Comfygen and get clean code, smooth performance, and on-time delivery."

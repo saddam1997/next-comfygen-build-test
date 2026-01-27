@@ -7,6 +7,7 @@ import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -459,6 +460,8 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <HireDeveloper
           heading="Hire Dedicated Data Experts for Your Business"
           text="Looking to turn your raw data into actionable insights? Hire dedicated data experts from Comfygen to develop scalable, secure, and intelligent data solutions tailored to your business goals. From architecture to deployment, our team handles it all with precision."

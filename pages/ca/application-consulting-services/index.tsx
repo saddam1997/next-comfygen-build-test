@@ -5,6 +5,7 @@ import JSON_DATA from "./json/applicationConsulting.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import HeroSection from "../../../components/HeroSection";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -250,6 +251,8 @@ export default function Mobile(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" About Blockchain Technology"

@@ -7,6 +7,7 @@ import JSON_DATA from "./ecommerce.json";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -437,7 +438,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Custom eCommerce Development Services | Online Store Solutions
+           Custom eCommerce Development Company | Online Store Solutions
         </title>
         <meta
           name="description"
@@ -518,7 +519,7 @@ export default function ClinicalApp(props: any) {
       <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="eCommerce Development Company for Scalable Online Stores"
+          heading="Top-rated eCommerce development company for small businesses"
           ptag="Comfygen is a trusted eCommerce development company helping businesses build secure, scalable, and high-performing online stores. We design and develop custom eCommerce websites, mobile apps, and web applications that deliver seamless shopping experiences and drive higher conversions."
           ptag1="Our expert eCommerce developers work with leading platforms like Shopify, Magento, and WooCommerce, integrating modern technologies such as AI-driven recommendations, advanced analytics, and secure payment systems to help your brand grow in competitive digital markets."
           li="Custom eCommerce Website & App Development"
@@ -538,16 +539,11 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Revolutionizing the e-commerce Industry with Our Cutting-Edge
-                eCommerce Development Services
+                Our End-to-End eCommerce Development Services
+
               </h2>
               <p className="text-base text-center font-normal">
-                At Comfygen, we deliver powerful and professional eCommerce
-                development services for SMBs and Enterprises to help you create
-                seamless online shopping experiences. Whether you're launching a
-                startup, scaling an existing online store, or upgrading to a
-                next-gen platform, we offer fully customized eCommerce
-                development solutions aligned with your goals.
+                Comfygen is the best eCommerce development company Provide powerful and professional eCommerce development services for SMBs and Enterprises to help you create seamless online shopping experiences. Whether you're launching a startup, scaling an existing online store, or upgrading to a next-gen platform, we offer fully customized eCommerce development solutions aligned with your goals.
               </p>
             </div>
             <div className="">
@@ -574,15 +570,11 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Take your Business to New Heights with our Top-Notch eCommerce
-                  Development Solutions
+                  Take your Business to New Heights with our Top-Notch eCommerce Development Solutions
+
                 </h2>
                 <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                  At Comfygen, we offer versatile eCommerce development
-                  solutions to serve every business model—whether you're a
-                  startup, large enterprise, or government body. Our team builds
-                  secure, scalable, and future-ready platforms designed to
-                  accelerate your digital commerce journey.
+                  As a leading eCommerce development company, we craft innovative, user-focused apps with precision and creativity, reflecting our commitment to excellence and client satisfaction.
                 </p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
@@ -631,14 +623,14 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        <CallToAction
+        {/* <CallToAction
           heading="Get The Best Ecommerce Development Services at The Most Affordable Price"
           text="Ecommerce development solutions tailored to your business needs."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-call.webp"
           imageAlt="Get in touch now."
-        />
+        /> */}
 
         <TrendsSection
           heading="The Emerging Technologies We Use for Enterprise eCommerce Development"
@@ -686,6 +678,8 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <HireDeveloper
           heading="Hire Top-Rated eCommerce Developers"
           text="Looking to launch a feature-rich, scalable, and secure online store? Hire dedicated eCommerce developers from Comfygen to turn your vision into a high-performing digital commerce platform. From startup MVPs to enterprise-grade solutions, we deliver full-cycle eCommerce development tailored to your business goals."

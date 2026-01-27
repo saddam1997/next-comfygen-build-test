@@ -6,6 +6,7 @@ import JSON_DATA from "./json/hybridcryptoexchangedevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -516,7 +517,7 @@ export default function Ecommerce(props) {
                 Our Hybrid Crypto Exchange Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                As the best cryptocurrency exchange development company, Comfygen offers end-to-end hybrid crypto exchange development services. Developing a hybrid exchange isn’t just about mixing a CEX and a DEX. It’s about creating a platform that feels fast, safe, and effortless for the user while giving you the flexibility to scale. Comfygen handles every layer of that process for you.
+                As the best Hybrid Crypto Exchange Development Company, Comfygen offers end-to-end hybrid crypto exchange development services. Developing a hybrid exchange isn’t just about mixing a CEX and a DEX. It’s about creating a platform that feels fast, safe, and effortless for the user while giving you the flexibility to scale. Comfygen handles every layer of that process for you.
               </p>
 
             </div>
@@ -600,6 +601,8 @@ export default function Ecommerce(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <HireDeveloper
           heading="Hire Our Hybrid Crypto Exchange Developer"
           text="Looking to build a high-performance hybrid cryptocurrency exchange? Hire our expert developers with hands-on experience in blockchain, DeFi, and secure exchange architecture. We offer end-to-end development, from custom trading engines to secure wallet integration and smart contract automation."

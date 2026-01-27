@@ -349,8 +349,8 @@ export default function Mobile(props) {
         </section>
 
         <IndustriesServe
-          heading=""
-          description=""
+          heading="Industries We Serve As Best Generative AI Development Company"
+          description="Comfygen provides generative ai development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
 
         />
 

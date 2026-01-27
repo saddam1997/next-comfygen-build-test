@@ -8,6 +8,10 @@ import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Script from "next/script";
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { ssr: true }
+);
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -382,7 +386,7 @@ export default function Webdevelopment(props) {
         />
 
         <HireDeveloper
-          heading="Hire DeFi Developers"
+          heading="Hire Expert Web Developers"
           text="Looking to build a custom website or web application? Hire expert web developers from Comfygen in Jaipur to create secure, scalable, and high-performing web solutions tailored to your business needs. Our skilled web developers specialize in building responsive websites, web apps, and enterprise solutions that drive growth and enhance user experience."
 
           buttonText="Hire Developer"
@@ -396,6 +400,11 @@ export default function Webdevelopment(props) {
 
           ]}
         />
+
+          <ClientTestimonials
+                  heading="Client Testimonial"
+                  testimonials={JSON_DATA.customTestimonials}
+                />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

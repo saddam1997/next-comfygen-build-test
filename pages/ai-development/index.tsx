@@ -6,6 +6,7 @@ import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 
@@ -326,7 +327,7 @@ export default function Mobile(props: any) {
         />
 
 
-
+        <ClientStories />
 
 
         <HireDeveloper
