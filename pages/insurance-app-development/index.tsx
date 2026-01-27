@@ -482,17 +482,14 @@ export default function ClinicalApp(props: any) {
         <AboutSection
           title="About Company"
           heading="Why Invest in Insurance App Development?"
-          description1="The global insurance app market is rapidly growing, expected to reach $10–12 billion by 2027, driven by digital adoption, smartphone penetration, and the rising demand for online insurance services. Mobile apps are transforming how customers purchase, manage, and claim insurance policies."
-          description2="10 years back, FinTech app development and InsurTech, we leveraged advanced technologies such as AI/ML, blockchain, and cloud computing to deliver a feature-rich, regulation-compliant insurance mobile app development solution. Our dedicated insurance app developers work closely with you to ensure your digital insurance solution aligns with your unique needs and future goals."
+          description1="The global insurance market is experiencing rapid growth and is projected to reach $10–12 billion by 2027, driven by increasing digital adoption, smartphone penetration, and the growing demand for online insurance app development services. Mobile apps are transforming the way customers purchase, manage, and claim insurance policies, making interactions faster, simpler, and more transparent."
+          description2="The shift toward digital-first solutions presents immense opportunities for insurers:"
           description3=""
           points={[
-            "<b>Digital-first customers</b>:  More than 60% of users prefer managing insurance via apps.",
-            "<b>Embedded insurance growth</b>: Integration with e-commerce, travel, and fintech platforms is creating new revenue streams.",
-            "<b>Operational efficiency</b>: Apps reduce manual work and speed up claims, enhancing customer satisfaction.",
-            "<b>Lemonade (US/Europe)</b>: AI-powered policies and instant claims.",
-            "<b>GEICO Mobile (US):</b>Popular for policy management and quotes.",
-            "<b>Allianz Mobile (Global)</b>: Combines policy, health, and travel services.",
-            "<b>AXA Insurance App (Global)</b>: Customer-centric digital tools."
+            "<b>Digital-first customers</b>: Over 60% of users now prefer managing their insurance policies through insurance mobile apps, emphasizing the need for convenient, on-the-go access.",
+            "<b>Embedded insurance growth</b>: Integration with e-commerce, travel, and fintech platforms is creating new revenue streams and expanding market reach.",
+            "<b>Operational efficiency</b>:  Insurance mobile apps streamline processes, reduce manual tasks, and accelerate claims handling, improving both efficiency and customer satisfaction"
+           
           ]}
 
           imageSrc="https://www.comfygen.com/comfygen-images/insurance-app-development/insurance-app-devlopment-about.webp"

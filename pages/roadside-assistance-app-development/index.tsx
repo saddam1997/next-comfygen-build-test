@@ -5,6 +5,7 @@ import JSON_DATA from "./ELearningApp.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -554,7 +555,7 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-
+<ClientStories/>
         <HireDeveloper
           heading="Hire Our Experienced Roadside Assistance App Developer"
           text="Looking to build a powerful, real-time roadside assistance or towing app? Hire expert developers from Comfygen to turn your vision into a fully functional on-demand mobile app. Our developers have deep experience in crafting location-based solutions that deliver quick, reliable, and scalable performance."

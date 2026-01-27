@@ -8,6 +8,7 @@ import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -284,6 +285,8 @@ export default function Ecommerce(props:any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <HireDeveloper
           heading="Hire Our Skilled AI Interview Scheduling App Developers"
           text="Looking to build a powerful, intelligent interview automation platform? At Comfygen, our experienced AI-powered interview scheduling app developers specialize in creating scalable, secure, and fully customized hiring solutions. With deep expertise in HRTech and AI integrations, we help you streamline recruitment, reduce manual tasks, and boost hiring efficiency with smart automation."

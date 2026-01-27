@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Header from "../../components/Newcomponet/layout/Header";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -267,6 +268,8 @@ export default function Mobile(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
         <HireDeveloper
           heading="Hire Android Application Developers"
           text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Android Developers. They can focus on your project entirely and deliver you faster results."

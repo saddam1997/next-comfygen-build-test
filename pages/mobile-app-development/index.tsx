@@ -4,6 +4,7 @@ import JSON_DATA from "./json/mobile.json";
 import dynamic from "next/dynamic";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSection from "../../components/HeroSection";
+import Link from "next/link";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -316,7 +317,7 @@ export default function Mobile(props: any) {
       <div className="overflow-hidden lg:pt-[110px] ">
         <div className="">
           <HeroSection
-            heading="Leading Mobile App Development Company in Jaipur"
+            heading="Best Mobile App Development Company in Jaipur"
             ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app solutions that enhance customer experience and drive business success. We turn your ideas into high-quality apps with seamless functionality and beautiful design."
             li="Custom Android & iOS App Development"
             li1="Cross-Platform & Scalable Mobile Solutions"
@@ -334,14 +335,10 @@ export default function Mobile(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Professional Mobile App Development Services in Jaipur, India
+                Professional Mobile App Development Services in Jaipur
               </h2>
               <p className="text-base text-center font-normal">
-                We offer a full suite of custom mobile app development services
-                in Jaipur tailored to your business goals. Whether you're
-                building a new product or upgrading an existing one, our mobile
-                app development expert team delivers high-quality mobile
-                application solutions for every platform.
+                We provide professional mobile app development services in Jaipur, including custom Android, iOS, and cross-platform apps, UI/UX design, MEAN stack development, and <Link href='https://www.comfygen.com/blog/mobile-app-maintenance-cost/' className="text-blue-600 font-semibold">app maintenance</Link>, delivering high-quality, scalable solutions for businesses.
               </p>
             </div>
             <div className="">
@@ -363,8 +360,8 @@ export default function Mobile(props: any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Portfolio of Successful Mobile App Projects"
-            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
+            heading="Explore Our Portfolio of Successful Mobile App Development Projects"
+            description="Explore our portfolio of successful mobile app development projects in Jaipur. Showcasing innovative, user-focused mobile apps crafted with precision and creativity, each project reflects our expertise in Android, iOS, and cross-platform mobile app development and commitment to client satisfaction."
           />
         </section>
 

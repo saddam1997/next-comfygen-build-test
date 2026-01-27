@@ -12,6 +12,7 @@ import {
 } from "@tabler/icons-react";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -633,6 +634,8 @@ export default function Mobile(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
 
         <HireDeveloper
           heading="Hire the Best White Label Mobile App developer"

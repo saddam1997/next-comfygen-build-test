@@ -18,6 +18,7 @@ import {
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -57,6 +58,11 @@ const CardItem = dynamic(
     ssr: true,
   }
 );
+
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  { ssr: true }
+)
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
@@ -107,6 +113,17 @@ const Faq = dynamic(
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  { ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
+);
+
+
+const ConsultancyApproach = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { ssr: true }
 );
 
@@ -173,49 +190,31 @@ const Arena = [
 const technologyData = [
   {
     img: <IconNetwork stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Architecture",
-    desc: "Say goodbye to intermediaries. Our platform is built on a fully decentralized framework where all transactions and logic are executed through self-executing smart contracts, ensuring transparency and fairness.",
+    title: "Decentralized Multi-level marketing (MLM) Network Management.",
+    desc: "Our Smart Contract MLM solutions are built on a fully decentralized blockchain architecture, eliminating central control over MLM operations. This ensures transparency, data integrity, and trust among participants while reducing dependency on intermediaries for a secure and reliable MLM ecosystem.",
   },
   {
     img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Automated Payouts",
-    desc: "Streamline reward distribution with auto-executed smart contracts. This feature ensures that commissions and earnings are directly sent to users’ wallets instantly without human intervention.",
+    title: "Multi-Level Compensation Plan.",
+    desc: "We support all major MLM compensation plans, including Binary, Matrix, Uni-Level, Board, and Hybrid models. Each plan is fully automated through secure smart contracts, ensuring accurate calculations and seamless execution without any human intervention.",
   },
   {
     img: <IconLockCode stroke={1.5} className="w-12 h-12" />,
-    title: "Immutable Smart Contracts",
-    desc: "Once deployed, our smart contracts are tamper-proof. This immutability guarantees that rules and logic remain unchanged, offering maximum trust and security to users..",
+    title: "Real-Time Payout Automation",
+    desc: "Smart contracts automatically trigger commission payouts as soon as transactions occur. This enables instant, error-free payments, improves participant satisfaction, and eliminates delays commonly found in traditional MLM systems.",
   },
   {
     img: <IconHierarchy3 stroke={1.5} className="w-12 h-12" />,
-    title: "Multiple MLM Plan Support",
-    desc: "Whether your strategy is Binary, Matrix, Unilevel, Board, or a custom structure, our software can be customized to fit and evolve with your business model.",
+    title: "Multi-Currency Product (Crypto + Fiat)",
+    desc: "Our Smart Contract MLM software enables global participation by supporting multiple cryptocurrencies and fiat payment gateways. Users can seamlessly earn, withdraw, and track commissions across different currencies and wallets without any inconvenience.",
   },
   {
     img: <IconCurrencyBitcoin stroke={1.5} className="w-12 h-12" />,
-    title: "Cross-Blockchain Compatibility",
-    desc: "Enjoy the flexibility of deploying your MLM platform on the blockchain network of your choice, such as Ethereum, BNB Chain, Tron, Solana, or Polygon, depending on your project's goals.",
-  },
-  {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Integration",
-    desc: "Ensure easy access for your users with integration support for popular crypto wallets like MetaMask, Trust Wallet, TronLink, and Phantom, offering secure and smooth onboarding.",
-  },
-  {
-    img: <IconUsersGroup stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Income & Team Tracking",
-    desc: "Empower users with a dynamic dashboard where they can track their income, referral growth, downline structure, and real-time updates on team performance.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Mobile-Friendly Interface",
-    desc: "Our platform is fully responsive and optimized for both desktop and mobile devices, making your MLM network accessible anytime, anywhere.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Language & Multi-Currency Support",
-    desc: "Expand globally with ease. Our platform supports multiple languages and currencies to cater to international users and markets.",
-  },
+    title: "Smart Contract Audits: Security & Compliance.",
+    desc: "Security is our top priority. Every smart contract undergoes rigorous testing, auditing, and compliance checks to prevent vulnerabilities, fraud, and unauthorized access—ensuring a safe and reliable MLM ecosystem.",
+  }
+
+
 ];
 
 export default function Ecommerce(props) {
@@ -432,11 +431,11 @@ export default function Ecommerce(props) {
         <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/smart-contract-mlm-software-hero-img.webp')]">
           <HeroSectionForAllPages
             heading="Smart Contract MLM Software Development Company"
-            ptag="Comfygen is the best smart contract MLM software development company, helping businesses build transparent, tamper-proof, and fully decentralized MLM platforms. We develop custom blockchain-based MLM solutions using Ethereum, Tron, BNB Chain, and Polygon to enable real-time payouts, automated commissions, and secure transactions. Whether you’re launching a binary, matrix, or uni-level MLM model, our scalable smart contract solutions ensure accuracy, trust, and long-term growth."
-            li="100% Decentralized MLM Architecture"
-            li1="Real-Time Payouts & Transparent Transactions"
-            li2="Custom MLM Plan Integration"
-            li3="Scalable & Secure Blockchain Solutions"
+            ptag="As a trusted Smart Contract MLM Software Development Company, we help you take your multi-level marketing business to the next level. Our blockchain-powered MLM software ensures secure, transparent transactions, automates commission management, and empowers you to scale globally."
+            li="Hassle-free multi-level commission automation"
+            li1="Tamper-proof, secure blockchain transactions"
+            li2="Real-time network tracking and reporting"
+            li3="Seamless global expansion with smart solutions"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -452,14 +451,10 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Smart Contract MLM Software Development Services We Offer
+                Our Smart Contract MLM Software Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                At Comfygen, we specialize in delivering blockchain-powered MLM
-                development services tailored to your business model. Whether
-                you're launching a crypto-based MLM platform or building on
-                Ethereum, BSC, or Tron, we’ve got you covered with cutting-edge
-                technology and fully automated smart contracts.
+                At Comfygen, we specialize in developing secure, scalable, and fully automated Smart Contract MLM solutions. Our MLM software development services empower businesses to run multi-level marketing operations seamlessly on blockchain networks, ensuring transparency, trust, and efficiency at every level.
               </p>
             </div>
             <div className="">
@@ -470,126 +465,73 @@ export default function Ecommerce(props) {
 
         <AboutSection
           title="About Company"
-          heading="Smart Contract MLM Software Development"
-          description1="Comfygen offers advanced smart contract MLM software development to help businesses build secure, automated, and decentralized MLM platforms. Our blockchain-powered systems handle everything from referrals to commission payouts—without any manual effort or admin control."
-          description2="We develop smart contract MLM software on Ethereum, Tron, BNB Chain, and Polygon, enabling fast, transparent, and tamper-proof transactions. Whether it’s a binary, matrix, or custom plan, we deliver reliable solutions tailored to your goals."
+          heading="Why Invest in Smart Contract MLM Software Development?"
+          description1="Investing in smart contract-based MLM software Development is no longer optional—it’s the future of multi-level marketing. By leveraging blockchain technology, businesses can automate operations, build trust with participants, and scale globally without the risks of traditional MLM systems."
+          description2=""
           points={[
-            "Auto-executed commissions",
-            "Crypto wallet integration",
-            "Transparent genealogy tracking",
-            "Custom MLM plan support",
+            "<b>Eliminate Manual Errors</b>: Automate commission calculations, payouts, and network tracking for accurate, reliable results",
+            "<b>Ensure Transparency & Trust</b>: All transactions are recorded on the blockchain, building credibility and verifiable records.",
+            "<b>Reduce Costs & Prevent Fraud</b>: Remove intermediaries and manual processes to cut costs and prevent manipulation.",
+            "<b>Scale Globally</b>: Support global users and complex commission structures with fast, secure, and reliable blockchain performance.",
           ]}
           imageSrc="https://www.comfygen.com/image/about-us-image.webp"
           link="/about-us"
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4">
-              <div className="flex flex-col justify-center text-center ">
-                <h2 className="py-4 lg:text-4xl text-3xl font-bold leading-[3rem] text-[#fff]">
-                  Build Smart Contract Based MLM Software Development on
-                  Different Blockchain Network
-                </h2>
-                <p className="text-base text-white ">
-                  Smart Contract Based MLM Software is an excellent
-                  decentralized solution, which is an instant multi-level
-                  marketing strategy empowered by Blockchain Smart Contracts
-                  built on various blockchain networks; such as Ethereum, TRON,
-                  EOS, and more. Mostly, the Ethereum Smart Contract Based MLM
-                  Business is widely known, but now TRON Smart Contract MLM
-                  Software is also getting into use often.
-                </p>
-                <p className="text-base text-white ">
-                  Comfygen, a Smart Contract Based MLM Software Development
-                  Company, provides innovative blockchain solutions to enhance
-                  security, transparency, and automation in MLM businesses.
-                </p>
-              </div>
-              <div className="grid gap-10 py-10 text-left lg:grid-cols-2 md:grid-cols-2 xl:gap-10">
-                {Arena.map((elem) => {
-                  const { title, icon, decs, num } = elem;
-                  return (
-                    <div
-                      key={num}
-                      className="p-8 space-y-4 bg-gradient-to-br from-blue-500/10 to-purple-500/20 border rounded-2xl transition-all duration-300 hover:translate-y-2 group"
-                    >
-                      <div className="w-20 h-20 bg-[#ffffff] shadow rounded-[17px] flex justify-center items-center">
-                        <span>{icon}</span>
-                      </div>
-                      <h3 className="text-lg font-extrabold text-[#fff] transition-all duration-200">
-                        {title}
-                      </h3>
-                      <p className="text-white transition duration-200 ease-in-out">
-                        {decs}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+
+        <section className="py-8">
+          <Portfolio
+            projects={JSON_DATA.portfoliodata}
+            heading="Proven Smart Contract MLM Solutions That Drive Growth"
+            description="At Comfygen, we have successfully delivered blockchain-powered MLM software solutions for startups, enterprises, and global MLM businesses. Our portfolio reflects our expertise in building secure, transparent, and scalable smart contract-based MLM platforms across multiple blockchain networks."
+          />
         </section>
+
         <SolutionSec
-          heading="Features of Smart Contract MLM Software Development"
-          subheading="Smart Contract MLM Software revolutionizes the way multi-level marketing platforms operate by integrating the power of blockchain technology. With decentralization, automation, and transparency at its core, our smart contract MLM solutions offer unmatched efficiency, trust, and scalability. Each feature is designed to empower your network marketing platform with advanced security, seamless user experience, and rapid growth potential."
+          heading="Powerful Blockchain-Based Solutions Designed for Modern MLM Businesses"
+          subheading="At Comfygen, we provide full-fledged Smart Contract MLM systems that remove manual operations, introduce transparency and provide a secure and automated operation. Our MLM systems that use blockchain are meant to facilitate fast growth coupled with trust and compliance in all levels of the network."
           techData={technologyData}
         />
 
-        <InfoSection
-          heading="Key Benefits of a Smart Contract MLM Software Development"
-          description1="Smart Contract MLM Software offers a decentralized, secure, and automated solution that transforms how MLM platforms operate. By leveraging blockchain, it eliminates third-party control, increases trust, and ensures faster, tamper-proof transactions."
-          description2=""
-          description3=""
-          dec=""
-          points={[
-            "A decentralized structure eliminates the need for admin control",
-            "Transparent operations with publicly verifiable blockchain records",
-            "Instant wallet-to-wallet payouts via automated smart contracts",
-            "Immutable code prevents tampering and fraud",
-            "Lower operational costs by removing intermediaries",
-            "Global accessibility with just a crypto wallet",
-            "Easy integration of multiple MLM plan types",
-            "24/7 uptime without server dependencies",
-            "Full user ownership of earnings and data",
-          ]}
-          imageSrc="https://www.comfygen.com/image/key-benefits-of-a-smart-contract.png"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition="right"
-        />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Crypto Wallets Supported by Our Metaverse Casino Software
+              <div className="flex flex-col justify-center text-center  mx-auto">
+                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                  Build Smart Contract-Based MLM Software on Different Blockchain Networks
                 </h2>
-                <p>
-                  To ensure a frictionless and secure experience within
-                  blockchain-based gaming environments, our Metaverse casino
-                  platforms come integrated with a wide array of decentralized
-                  crypto wallets. These wallets empower users to access, store,
-                  and transact digital assets in real time while maintaining
-                  full ownership and privacy. Whether your casino runs on
-                  Ethereum, BNB Chain, Tron, or Solana — we’ve got you covered
-                  with wallet integrations that are fast, scalable, and
-                  user-friendly.
+                <p className="text-center text-white lg:w-10/12 mx-auto">
+                  We develop Smart Contract MLM software across multiple blockchain networks, allowing businesses to choose the platform that best fits their scalability, speed, security, and cost requirements. Our blockchain-agnostic approach ensures flexibility, performance, and long-term growth.
                 </p>
               </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num } = elem;
+              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+                {JSON_DATA.Emerging.map((elem) => {
+                  const { img, title, decs } = elem;
                   return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
+                    <div key={title} className={` relative`}>
+                      <div
+                        className={` flex justify-start gap-2 place-items-center relative`}
+                      >
+                        {/* <Image
+                                          src={img}
+                                          className="object-cover"
+                                          width={35}
+                                          height={50}
+                                          alt={title}
+                                        /> */}
+                        <h3 className="text-2xl font-bold text-[#fff] text-start">
+                          {title}
+                        </h3>
                       </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
+
+                      <div className="mt-3">
+                        <p
+                          className="break-all text-white text-start "
+                          dangerouslySetInnerHTML={{ __html: decs }}
+                        ></p>
+                      </div>
                     </div>
                   );
                 })}
@@ -598,56 +540,54 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/image/exclusive-features-image.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
         <InfoSection
-          heading="White Label Smart Contract MLM Software"
-          description1="Looking to launch your own MLM platform instantly without building from scratch? Our White Label Smart Contract MLM Software offers a ready-made, customizable solution designed to help businesses enter the crypto MLM space faster and more efficiently. Built on decentralized blockchain architecture, it ensures transparency, automation, and security — tailored under your brand name."
-          description2=""
-          description3=""
+          heading="Launch Your MLM Business Instantly with White Label Solutions"
+          description1="Our White Label Smart Contract MLM software enables you to launch your MLM business quickly without building the system from scratch. The solution comes pre-developed with robust smart contracts, automated commission structures, and blockchain security—allowing faster go-to-market with reduced development costs."
+          description2="With complete branding and customization flexibility, you can personalize the platform with your logo, business rules, MLM compensation plans, and preferred blockchain network. This ensures your MLM platform reflects your brand identity while maintaining high performance, transparency, and security."
+          description3="Our white label solution is ideal for startups and enterprises looking for a ready-to-deploy, scalable, and secure MLM ecosystem powered by blockchain and smart contracts."
           dec=""
           points={[
-            "Faster Time to Market - Get your platform up and running in days, not months.",
-            "Custom Branding Options - Fully rebrand the platform with your logo, domain, colors, and UI elements.",
-            "Multi-Plan Compatibility - Supports Binary, Matrix, Unilevel, Board, and custom MLM structures.",
-            "Decentralized & Tamper-Proof - Powered by immutable smart contracts on Ethereum, BNB Chain, Tron, and more.",
-            "Crypto Wallet Integration - Seamlessly connect wallets like MetaMask, Trust Wallet, TronLink, etc.",
-            "Scalable Architecture - Easily upgrade as your network grows — no performance bottlenecks.",
-            "Multi-language & Multi-Currency Ready - Reach global audiences with localization and crypto support.",
-            "Cost-Efficient - Save development time and costs with our pre-built solution.",
+
           ]}
           imageSrc="https://www.comfygen.com/image/white-label-smart-contract-mlm-software.png"
           link="/contact-us"
           linkText="LET'S CONNECT "
         />
-        <CardItem
-          heading="Latest Tech-Trends Included in Smart Contract based MLM Software"
-          subheading=""
-          techData={JSON_DATA.cardData}
+
+
+        <IndustriesServe
+          heading="Industries We Serve as Best MLM Software Development Company"
+          description="At Comfygen, our Smart Contract MLM Software Development solutions cater to a wide range of industries. Our platforms are fully scalable and customizable, helping businesses implement automated MLM operations efficiently"
+
         />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
+
+        <section className=" lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                The Development Process Behind Smart Contract MLM Software
-                Solutions
+                Our Smart Contract MLM Software Development Process
+
               </h2>
               <p className="text-base font-normal mt-2">
-                Do you want to get one dedicated custom Smart Contract MLM
-                Software Development Company to handle the process for your
-                business? Know its Smart Contract MLM Software Development
-                Solutions process.
+                We follow a structured and transparent development approach to deliver secure, scalable, and high-performance Smart Contract MLM Software Development solutions tailored to your business needs. As a trusted Smart Contract MLM Software Development company, we ensure reliability, automation, and long-term scalability at every stage of development.
+
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Processs} />
           </div>
         </section>
 
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Smart Contract MLM Based Portfolio"
-            description="Showcasing our expertise through innovative design and development projects. A testament to our commitment to creativity, excellence, and impactful solutions."
-          />
-        </section>
+        <TechStack
+          title="Our Advanced Technology Stack for Smart Contract MLM Software Development"
+          description="We leverage a modern and reliable technology stack to build secure, scalable, and high-performance Smart Contract MLM solutions. As a leading Smart Contract MLM Software Development company, we carefully choose technologies that ensure automation, transparency, and seamless user experience."
+        />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -655,38 +595,43 @@ export default function Ecommerce(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+        <div className="py-5">
+          <ClientStories />
+        </div>
+
         <HireDeveloper
-          heading="Why Hire Smart Contract Developers from Comfygen?"
-          text="Hiring smart contract developers from Comfygen ensures you get industry-experienced professionals who deliver secure, scalable, and blockchain-optimized smart contract solutions. Whether you're launching a smart contract MLM platform or a DeFi dApp, our team brings the technical expertise and reliability you need."
+          heading="Hire Smart Contract Developers"
+          text="Hiring skilled Smart Contract developers is essential for building secure, scalable, and high-performing MLM platforms on blockchain. When you hire Smart Contract developers from Comfygen, you gain access to experts who understand both blockchain technology and complex MLM compensation models."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
           listItems={[
-            "Expertise in Ethereum, BSC, Tron, Solana & Polygon",
-            "Specialized in Smart Contract MLM Platform Development",
-            "Clean, Gas-Optimized & Auditable Code",
-            "Proven Experience with Projects like Forsage & DoubleWay",
-            "Flexible Hiring Models (Full-Time, Part-Time, Dedicated)",
-            "Fast Turnaround & On-Time Delivery",
-            "Post-Launch Maintenance & Technical Support",
-            "End-to-End Blockchain Development Support",
+            "Blockchain & MLM Expertise",
+            "Secure & Error-Free Development",
+            "Fully Automated MLM Operations",
+            "Faster Deployment & Time-to-Market",
+            "Compliance & Scalability Assurance",
           ]}
         />
-        <CallToAction
+
+        <Faq
+          faqData={JSON_DATA.Frequently}
+          title="Frequently Asked Questions (FAQ)"
+        />
+
+        <BlogSection initialData={initialData} />
+
+
+        {/* <CallToAction
           heading="Let’s hear what you have to say?"
           text="Get in touch with us and discuss your needs and requirements with our experts."
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Smart Contract Based MLM Software"
-        />
+        /> */}
 
-         <BlogSection initialData={initialData} />
       </div>
     </>
   );

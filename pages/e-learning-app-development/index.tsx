@@ -560,10 +560,12 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Latest Technology Trends in Laboratory App Development
+                 Advanced Technologies We Integrate in e-learning Mobile Apps
+
                 </h2>
                 <p className="text-center text-white lg:w-10/12 mx-auto">
-                  Latest technology trends in laboratory app development include AI-powered diagnostics, cloud-based LIMS, IoT-enabled lab automation, advanced data analytics, and secure mobile laboratory solutions improving efficiency, accuracy, scalability, and regulatory compliance.
+                  Using the latest technologies, we are building a futuristic e-learning application that is making teaching convenient and learning more engaging.
+
                 </p>
               </div>
               <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
