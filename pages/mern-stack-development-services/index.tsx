@@ -38,10 +38,15 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { ssr: true }
+);
 
 
 
-export default function Stack(props:any) {
+
+export default function Stack(props: any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -55,7 +60,7 @@ export default function Stack(props:any) {
     <>
       <Head>
         <title>
-         MERN Stack Development Company in Jaipur, India 
+          MERN Stack Development Company in Jaipur, India
 
         </title>
         <meta
@@ -100,7 +105,7 @@ export default function Stack(props:any) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
 
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
 
@@ -124,7 +129,7 @@ export default function Stack(props:any) {
             </div>
           </div>
         </div>
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -201,12 +206,18 @@ export default function Stack(props:any) {
             "Ensure alignment with your business needs"
           ]}
         />
+
+        <ClientTestimonials
+          heading="Client Testimonial"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
-        
- <BlogSection initialData={initialData} />
+
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

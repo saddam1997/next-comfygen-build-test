@@ -1,6 +1,20 @@
 {
 
 
+    "customTestimonials": [
+    {
+      "text": "We partnered with Comfygen for MERN stack development, and the results exceeded expectations. Their team delivered a robust full-stack solution with excellent backend architecture and smooth frontend performance.",
+      "name": "Michael Anderson",
+      "title": "USA"
+    },
+    {
+      "text": "Comfygen provided end-to-end MERN stack development with a strong focus on scalability and performance. Their professionalism, communication, and delivery timelines were outstanding.",
+      "name": "Ahmed Al Mansoori",
+      "title": "UAE"
+    }
+   
+  ],
+
   "servicesData" :[
     {
       "title": "React.js Implementation for Web Applications",

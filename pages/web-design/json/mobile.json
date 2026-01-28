@@ -282,90 +282,19 @@
 
   "customTestimonials": [
     {
-      "text": "We hired Comfygen to build our eCommerce app. The design, performance, and support exceeded expectations. They’re a reliable partner for any serious brand looking to scale digitally.",
-      "name": "Jessica Moore",
-      "title": "Texas, USA"
+      "text": "Comfygen delivered a modern, responsive website that perfectly represents our brand. Their UI/UX approach significantly improved our user engagement and inquiries.",
+      "name": "Rahul Mehta",
+      "title": "India"
     },
     {
-      "text": "We needed a healthcare app for our hospital. Comfygen built a user-friendly, secure app that integrates with our systems. Excellent work from planning to deployment.",
-      "name": "Ravi Deshmukh",
-      "title": "Pune, India"
-    },
-    {
-      "text": "Our food delivery startup needed a cross-platform solution. Comfygen delivered a robust app with smooth functionality. We’ve gained over 10,000 downloads in the first month. Grateful for their work!",
-      "name": "Elena García",
-      "title": "Madrid, Spain"
-    },
-    {
-      "text": "We worked with Comfygen on a fintech wallet project. They handled security features perfectly and offered full post-launch support. Would definitely collaborate again.",
-      "name": "Daniel Johnson",
-      "title": "London, UK"
-    },
-    {
-      "text": "Our education app now has over 50,000 users, thanks to Comfygen’s performance-focused development. Their understanding of user behavior and design is top-notch.",
-      "name": "Mihir Patel",
-      "title": "Ahmedabad, India"
-    },
-    {
-      "text": "I’m impressed with how Comfygen translated our startup idea into a working iOS app. The communication was seamless, and the app works exactly as we envisioned.",
-      "name": "Laura Nguyen",
-      "title": "Melbourne, Australia"
-    },
-    {
-      "text": "They built our travel booking app from scratch. Smooth performance, clean UX, and fast delivery. Comfygen is a team that actually listens and delivers on promises.",
-      "name": "Omar Fahim",
-      "title": "Dubai, UAE"
-    },
-    {
-      "text": "Working with a local team like Comfygen made a huge difference. They understood our business needs and delivered a mobile app that’s scalable and visually appealing.",
-      "name": "Sandeep Rathi",
-      "title": "Jaipur, India"
-    },
-    {
-      "text": "Our messaging app project turned out better than expected. Great performance, minimal bugs, and an intuitive user experience. Would recommend Comfygen to anyone serious about mobile development.",
-      "name": "Emily Chen",
-      "title": "Toronto, Canada"
-    },
-    {
-      "text": "From day one, Comfygen’s process was transparent and smooth. Their Flutter team delivered a polished app on time, and even helped us improve the original idea.",
-      "name": "Nikhil Mehra",
-      "title": "Bengaluru, India"
-    },
-    {
-      "text": "I needed a secure insurance app with custom features. Comfygen handled everything professionally and kept us updated at every step. Very happy with the final product.",
-      "name": "Sophia Reyes",
-      "title": "New York, USA"
-    },
-    {
-      "text": "I approached Comfygen for a dating app. Their design team nailed the user flow and aesthetics. It’s now live with great engagement metrics. Great team to work with.",
-      "name": "Harsh Sharma",
-      "title": "Chandigarh, India"
-    },
-    {
-      "text": "We wanted a news app with real-time push notifications. Comfygen’s team was efficient, creative, and understood the vision. Happy with the results and post-launch support.",
-      "name": "Andre Costa",
-      "title": "São Paulo, Brazil"
-    },
-    {
-      "text": "The team at Comfygen was amazing. They developed a robust mobile banking app with smooth onboarding and secure login. Very satisfied with their expertise and responsiveness.",
-      "name": "Pooja Malhotra",
-      "title": "Mumbai, India"
-    },
-    {
-      "text": "We hired Comfygen to develop a mobile billing system for our retail chain. The app works perfectly, and their team provided great support even after deployment. Very responsive and professional.",
-      "name": "Fatima Al Zaabi",
-      "title": "Abu Dhabi, UAE"
-    },
-    {
-      "text": "Comfygen helped us launch a healthcare app for patient appointments and reports. The UI is clean, and everything runs smoothly. Their development team exceeded expectations on both speed and quality.",
-      "name": "Zayd Khalid",
-      "title": "Sharjah, UAE"
-    },
-    {
-      "text": "Our logistics app needed custom features and real-time tracking. Comfygen handled everything from UI to backend integration. The results were outstanding. Great communication and solid technical skills from the team.",
-      "name": "Hassan Al Nuaimi",
-      "title": "Dubai, UAE"
+      "text": "The team at Comfygen truly understands creative web design. From concept to launch, the process was smooth, transparent, and results-driven.",
+      "name": "Anjali Sharma",
+      "title": "India"
     }
+
+
+
+   
   ],
 
   "Frequently": [

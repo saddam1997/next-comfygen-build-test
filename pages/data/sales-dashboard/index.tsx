@@ -60,6 +60,21 @@ const ProcessSec = dynamic(
 );
 
 
+const HireDeveloper = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: true }
+);
+
+const TechStack = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
+  { ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
+);
+
 const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
@@ -288,42 +303,42 @@ export default function Mobile(props: any) {
   ];
 
   const Process = [
-  {
-    title: "Requirement Discovery & Goal Alignment",
-    description:
-      "We begin by understanding your sales objectives, KPIs, data sources, and reporting needs to define a clear Power BI dashboard strategy.",
-  },
-  {
-    title: "Demo or Template Selection",
-    description:
-      "Explore our ready-to-use Power BI sales dashboard templates or request a live demo to see how Power BI fits into your existing sales workflow.",
-  },
-  {
-    title: "Data Source Integration",
-    description:
-      "We securely connect your sales data from Excel, SQL databases, cloud platforms, and CRMs like Salesforce, HubSpot, and Microsoft Dynamics.",
-  },
-  {
-    title: "Data Cleaning & Transformation",
-    description:
-      "Raw sales data is cleaned, validated, and transformed to ensure accuracy, consistency, and reliable analytics within Power BI.",
-  },
-  {
-    title: "KPI-Based Dashboard Customization",
-    description:
-      "We design Sales Performance Dashboards with Microsoft Power BI tailored to your KPIs—lead conversion, revenue trends, pipeline velocity, and quota attainment.",
-  },
-  {
-    title: "Testing, Validation & Optimization",
-    description:
-      "Dashboards are tested for performance, accuracy, and usability, ensuring fast load times and dependable real-time insights.",
-  },
-  {
-    title: "Deployment, Sharing & Ongoing Support",
-    description:
-      "Once live, dashboards are securely shared across teams with role-based access. We provide training, optimization, and ongoing support to maximize value.",
-  },
-];
+    {
+      title: "Requirement Discovery & Goal Alignment",
+      description:
+        "We begin by understanding your sales objectives, KPIs, data sources, and reporting needs to define a clear Power BI dashboard strategy.",
+    },
+    {
+      title: "Demo or Template Selection",
+      description:
+        "Explore our ready-to-use Power BI sales dashboard templates or request a live demo to see how Power BI fits into your existing sales workflow.",
+    },
+    {
+      title: "Data Source Integration",
+      description:
+        "We securely connect your sales data from Excel, SQL databases, cloud platforms, and CRMs like Salesforce, HubSpot, and Microsoft Dynamics.",
+    },
+    {
+      title: "Data Cleaning & Transformation",
+      description:
+        "Raw sales data is cleaned, validated, and transformed to ensure accuracy, consistency, and reliable analytics within Power BI.",
+    },
+    {
+      title: "KPI-Based Dashboard Customization",
+      description:
+        "We design Sales Performance Dashboards with Microsoft Power BI tailored to your KPIs—lead conversion, revenue trends, pipeline velocity, and quota attainment.",
+    },
+    {
+      title: "Testing, Validation & Optimization",
+      description:
+        "Dashboards are tested for performance, accuracy, and usability, ensuring fast load times and dependable real-time insights.",
+    },
+    {
+      title: "Deployment, Sharing & Ongoing Support",
+      description:
+        "Once live, dashboards are securely shared across teams with role-based access. We provide training, optimization, and ongoing support to maximize value.",
+    },
+  ];
 
 
   const latesttech = [
@@ -564,10 +579,22 @@ export default function Mobile(props: any) {
         <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
-            heading="Explore our Portfolio of Power BI Services "
-            description=""
+            heading="Explore Our Portfolio of Power BI & Big Data Solutions"
+            description="Our portfolio showcases innovative Power BI dashboards, big data platforms, and analytics solutions that help businesses optimize operations, improve decision-making, and drive growth."
           />
         </section>
+
+        <IndustriesServe
+          heading="Industries We Serve As Best Sales Performance Dashboards Creator"
+          description="Comfygen provides Sales Performance Dashboards Creator Service across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+
+        />
+
+        <TechStack
+          customTechData={null}
+          title="Our Technology Stack to Build Sales Performance Dashboards"
+          description="At Comfygen, we leverage advanced tools and technologies to build insightful, scalable, and interactive sales performance dashboards. Our expertise spans across Microsoft Power BI, data integration, and cloud services, ensuring actionable analytics for businesses of all sizes. Here’s a glimpse of the technologies we use:"
+        />
 
         <CallToAction
           heading="Let’s Transform Your Sales Data into Actionable Insights"
@@ -582,10 +609,10 @@ export default function Mobile(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Get Started with Your Power BI Sales Dashboard
+                Get Started with Your Power BI Sales Dashboard
               </h2>
               <p className="text-base font-normal mt-2">
-               Creating a real-time Power BI Sales Dashboard with Comfygen is straightforward and fully aligned with your business goals. Here’s our proven process—from data setup to actionable insights:
+                Creating a real-time Power BI Sales Dashboard with Comfygen is straightforward and fully aligned with your business goals. Here’s our proven process—from data setup to actionable insights:
 
 
               </p>
@@ -601,8 +628,22 @@ export default function Mobile(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-
-{/* 
+        <HireDeveloper
+          heading="Hire Sales Performance Dashboards Expert"
+          text="Your sales data with a Sales Performance Dashboards Expert. Our professionals specialize in designing, developing, and optimizing interactive dashboards that provide actionable insights, helping your sales team drive revenue and make informed decisions"
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Hire dedicated mobile app developers",
+            "Hire Dedicated Website Developers",
+            "Flexible engagement models",
+            "Agile development and transparent communication",
+            "Scalable teams for short-term or long-term projects"
+          ]}
+        />
+        {/* 
         <LatestTechnology
           heading="Get Started with Your Power BI Sales Dashboard in 4 Simple Steps"
           subheading="Implementing a powerful, real-time Power BI Sales Dashboard with Comfygen is simple, efficient, and fully tailored to your business needs. Here's a closer look at the journey from raw data to actionable insights:"

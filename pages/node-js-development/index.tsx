@@ -57,12 +57,18 @@ const BlogSection = dynamic(
 
 
 const Process = [
-  { title: "Requirement Gathering and Analysis", 
-    description: "Our development process begins with a thorough understanding of your business objectives. We analyze your requirements to design a custom Node.js solution that meets your specific needs and supports long-term growth." },
-  { title: "Detailed Project Planning", 
-    description: "We create a roadmap that outlines project goals, timelines, and milestones. This plan ensures transparency and keeps the project on track, so you can anticipate key deliverables and their expected outcomes throughout the development process." },
-  { title: "Design and Prototyping",
-     description: "Our team develops an intuitive user interface (UI) and experience (UX) design. Through prototyping, we ensure that your application’s look and feel align with your business goals, offering seamless interaction and enhanced usability." },
+  {
+    title: "Requirement Gathering and Analysis",
+    description: "Our development process begins with a thorough understanding of your business objectives. We analyze your requirements to design a custom Node.js solution that meets your specific needs and supports long-term growth."
+  },
+  {
+    title: "Detailed Project Planning",
+    description: "We create a roadmap that outlines project goals, timelines, and milestones. This plan ensures transparency and keeps the project on track, so you can anticipate key deliverables and their expected outcomes throughout the development process."
+  },
+  {
+    title: "Design and Prototyping",
+    description: "Our team develops an intuitive user interface (UI) and experience (UX) design. Through prototyping, we ensure that your application’s look and feel align with your business goals, offering seamless interaction and enhanced usability."
+  },
   {
     title: "Development and Coding",
     description: "Once the design is approved, our developers begin building the solution using the latest Node.js technologies. We ensure clean, maintainable code, following best practices to ensure scalability, performance, and future-proof capabilities."
@@ -82,7 +88,7 @@ const Process = [
 
 ];
 
-export default function Altcoin(props:any) {
+export default function Altcoin(props: any) {
   let { initialData } = props;
 
 
@@ -97,7 +103,7 @@ export default function Altcoin(props:any) {
     <>
       <Head>
         <title>
-        Node.js Development Company in Jaipur, India | Experts
+          Node.js Development Company in Jaipur, India | Experts
 
         </title>
         <meta
@@ -142,7 +148,7 @@ export default function Altcoin(props:any) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
 
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
 
@@ -166,7 +172,7 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </div>
-<Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -198,24 +204,7 @@ export default function Altcoin(props:any) {
             <ProcessSec processSlides={Process} />
           </div>
         </section>
-        <HireDeveloper
-          heading="Hire Node.Js Application Developers"
-          text="Get the best Node.js developers to help your business grow. They will organize, scale, and change your web apps using the best Node.js development services. You can trust our skills to build a strong, safe, and working Node.js online and mobile app"
-         text1="What skills are required of Node.js developers?"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Understanding design thinking.",
-            "It is necessary to be proficient in JavaScript",
-            "Node.js expertise.",
-            "The ability to program functionally, asynchronously, and parallelly is required.",
-            "Mobile and web delivery platforms must be thoroughly understood.",
-            "Expertise in front-end technologies.",
-            "Debugging existing bugs and integrating modules are essential skills."
-          ]}
-        />
+
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -229,6 +218,25 @@ export default function Altcoin(props:any) {
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
+        />
+
+        <HireDeveloper
+          heading="Hire Node.Js Application Developers"
+          text="Get the best Node.js developers to help your business grow. They will organize, scale, and change your web apps using the best Node.js development services. You can trust our skills to build a strong, safe, and working Node.js online and mobile app"
+          text1="What skills are required of Node.js developers?"
+          buttonText="Hire Developer"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+          imageAlt="hire-developer"
+          listItems={[
+            "Understanding design thinking.",
+            "It is necessary to be proficient in JavaScript",
+            "Node.js expertise.",
+            "The ability to program functionally, asynchronously, and parallelly is required.",
+            "Mobile and web delivery platforms must be thoroughly understood.",
+            "Expertise in front-end technologies.",
+            "Debugging existing bugs and integrating modules are essential skills."
+          ]}
         />
         <Faq
           faqData={JSON_DATA.Frequently}
