@@ -21,7 +21,7 @@ const CardItem = ({ heading, subheading, techData = [] }) => {
 
           <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
             {visibleItems.map((item, index) => {
-              const { title, desc, desc1, desc2, listItems = [] } = item;
+              const { title, decs, desc1, desc2, listItems = [] } = item;
               return (
                 <div
                   key={index}
@@ -32,7 +32,7 @@ const CardItem = ({ heading, subheading, techData = [] }) => {
                   </h3>
                   <p
                     className="text-base font-normal mt-2"
-                    dangerouslySetInnerHTML={{ __html: desc }}
+                    dangerouslySetInnerHTML={{ __html: decs }}
                   />
                   <p className="text-base font-normal mt-2">{desc1}</p>
                   <p className="text-base font-normal mt-2">{desc2}</p>

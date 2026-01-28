@@ -7,6 +7,7 @@ import Script from "next/script";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const AboutSection = dynamic(
@@ -366,6 +367,7 @@ export default function Mobile(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+        <ClientStories/>
 
         <HireDeveloper
           heading="Hire Generative AI Developers to Build Intelligent & Scalable AI Solutions"
