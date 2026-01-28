@@ -623,14 +623,14 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
 
-        {/* <CallToAction
+         <CallToAction
           heading="Get The Best Ecommerce Development Services at The Most Affordable Price"
           text="Ecommerce development solutions tailored to your business needs."
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-call.webp"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
-        /> */}
+        /> 
 
         <TrendsSection
           heading="The Emerging Technologies We Use for Enterprise eCommerce Development"

@@ -530,7 +530,7 @@ export default function Ecommerce(props) {
 
         <CardItem
           heading="Hybrid Crypto Exchange Development Solutions"
-          subheading="At Comfygen, we deliver cutting-edge hybrid cryptocurrency centralized exchanges solutions tailored for scalability, decentralization, and compliance, all while ensuring the fast, user-centric performance that today’s traders expect."
+          subheading="At Comfygen, we deliver cutting-edge hybrid crypto exchange development solutions tailored for scalability, decentralization, and compliance, all while ensuring the fast, user-centric performance that today’s traders expect."
           techData={JSON_DATA.LeadingSoftware}
         />
 

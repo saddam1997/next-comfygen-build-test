@@ -452,11 +452,7 @@
   </url>
 
 
-  <url>
-    <loc>https://www.comfygen.com/ethereum-token-development</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+ 
 
   <url>
     <loc>https://www.comfygen.com/solana-blockchain-development-company</loc>
@@ -1039,11 +1035,7 @@
     <priority>0.80</priority>
   </url>
 
-  <url>
-    <loc>https://www.comfygen.com/ethereum-blockchain-development-company</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+
 
   <url>
     <loc>https://www.comfygen.com/web3-wallet-development</loc>
@@ -1063,10 +1055,96 @@
     <priority>0.80</priority>
   </url>
 
+ <url>
+    <loc>https://www.comfygen.com/personal-finance-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+ <url>
+    <loc>https://www.comfygen.com/islamic-bank-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+ <url>
+    <loc>https://www.comfygen.com/credit-scoring-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
 
 
+ <url>
+    <loc>https://www.comfygen.com/e-learning-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
 
-  
+  <url>
+    <loc>https://www.comfygen.com/language-learning-app-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
    
+  <url>
+    <loc>http://comfygen.com/defi-smart-contract-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>http://comfygen.com/hybrid-crypto-exchange-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>https://www.comfygen.com/decentralized-wallet-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>https://www.comfygen.com/multi-currency-wallet-development-company</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+ <url>
+    <loc>https://www.comfygen.com/defi-wallet-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>https://www.comfygen.com/smart-contract-wallet-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.comfygen.com/ca/application-consulting-services</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>https://www.comfygen.com/ai-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+   <url>
+    <loc>https://www.comfygen.com/generative-ai-development</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>http://comfygen.com/hire-dot-net-developer </loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 
 </urlset>

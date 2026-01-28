@@ -156,22 +156,12 @@
       },
       {
         "emoji": "https://www.comfygen.com/image/299107_money_icon 1.png",
-        "details": "Receive instant notifications for renewals, payments, and updates",
-        "content": ""
-      },
-      {
-        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
         "details": "Renew or update policies with a few taps.",
         "content": ""
       },
       {
-        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
+        "emoji": "https://www.comfygen.com/image/5027845_analytics_graph_online_statistics_icon 1.png",
         "details": "Secure payment gateway for premium payments.",
-        "content": ""
-      },
-      {
-        "emoji": "https://www.comfygen.com/image/3993856_alert_bell_notice_notifications_notify_icon 1.png",
-        "details": "Interactive dashboard for easy overview of policies and claims.",
         "content": ""
       },
       {
@@ -179,6 +169,7 @@
         "details": "Reward and loyalty program tracking.",
         "content": ""
       }
+
     ]
     
   },
@@ -206,21 +197,11 @@
       },
       {
         "emoji": "https://www.comfygen.com/image/image 48.png",
-        "details": "Approve or reject claims seamlessly.",
-        "content": ""
-      },
-      {
-        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
-        "details": "Track agent and customer activity",
-        "content": ""
-      },
-      {
-        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
         "details": "Configure premium plans and insurance offerings.",
         "content": ""
       },
       {
-        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
+        "emoji": "https://www.comfygen.com/image/5978650_corona_coronavirus_covid_germs_people_icon 1.png",
         "details": "Generate detailed reports for audits and compliance.",
         "content": ""
       },
@@ -228,12 +209,8 @@
         "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
         "details": "Integrate AI for underwriting and risk assessment.",
         "content": ""
-      },
-      {
-        "emoji": "https://www.comfygen.com/image/3377041_logo_media_slack_social_icon 1.png",
-        "details": "Manage user feedback and improve service quality.",
-        "content": ""
       }
+      
     ]
     
   }

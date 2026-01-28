@@ -218,12 +218,12 @@
     {
       "num": "02",
       "title": "AI-Powered Trade Engine",
-      "decs": "Our AI engines enable smart order matching, trade suggestions, and market predictions. They boost user engagement through automation and intelligent analytics."
+      "decs": " Our AI engines enable smart order matching, trade suggestions, and market predictions. They boost user engagement through automation and intelligent analytics."
     },
     {
       "num": "03",
       "title": "Cross-Chain Compatibility",
-      "decs": "We integrate multi-chain support and liquidity bridges for seamless asset trading. Your exchange accesses deep liquidity and minimizes price slippage."
+      "decs": " We integrate multi-chain support and liquidity bridges for seamless asset trading. Your exchange access deep liquidity and minimizes price slippage."
     },
     {
       "num": "04",
@@ -233,12 +233,12 @@
     {
       "num": "05",
       "title": "ZK-Rollup Integration for Layer-2 Scalability",
-      "decs": "We use ZK-rollups to increase TPS, reduce fees, and preserve user privacy. Ideal for high-volume, secure, and scalable hybrid exchanges."
+      "decs": "We use zk-rollups to increase TPS, reduce fees, and preserve user privacy. Ideal for high-volume, secure, and scalable hybrid exchanges."
     },
     {
       "num": "06",
       "title": "Institutional-Grade Security",
-      "decs": "Ensure platform safety with MPC wallets, fraud detection, and AML/KYC tools. Our solutions meet global regulatory standards for secure operations."
+      "decs": " Ensure platform safety with MPC wallets, fraud detection, and AML/KYC tools. Our solutions meet global regulatory standards for secure operations."
     }
   ],
   "IndustryApplications": [
