@@ -5,6 +5,7 @@ import JSON_DATA from "./json/mobile.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -154,7 +155,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-         Hire Data Scientists | Comfygen Data Science & Analytics Services
+          Hire Data Scientists | Comfygen Data Science & Analytics Services
 
         </title>
         <meta
@@ -296,10 +297,10 @@ export default function Mobile(props: any) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Process To Hire Data Scientist With Us
+                Process To Hire Data Scientist With Us
               </h2>
               <p className="text-base font-normal mt-2">
-              We make hiring simple, fast, and tailored to your specific business needs. From initial consultation to seamless onboarding, we guide you through every step of the process.
+                We make hiring simple, fast, and tailored to your specific business needs. From initial consultation to seamless onboarding, we guide you through every step of the process.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
@@ -319,6 +320,7 @@ export default function Mobile(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
+        <ClientStories />
 
         <HireDeveloper
           heading="Hire Data Scientist to Transform Data into Business Decisions"
@@ -332,7 +334,7 @@ export default function Mobile(props: any) {
 
 
 
-        <ClientTestimonials testimonials={JSON_DATA.defaultTestimonials}/>
+        <ClientTestimonials testimonials={JSON_DATA.defaultTestimonials} />
 
         <Faq
           faqData={JSON_DATA.Frequently}

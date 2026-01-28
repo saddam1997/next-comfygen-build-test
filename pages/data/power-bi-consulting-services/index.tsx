@@ -6,6 +6,7 @@ import JSON_DATA from "./ELearningApp.json";
 import Header from "../../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const AboutSection = dynamic(
@@ -508,8 +509,8 @@ export default function ClinicalApp(props: any) {
           buttonLink="/contact-us"
         />
         <IndustriesServe
-          heading="Microsoft Power BI Consulting Services Across Industries"
-          description="Microsoft Power BI adapts to the unique demands of industries, helping businesses make faster, smarter decisions across every sector."
+          heading="Industries We Serve As Best Microsoft Power BI Consulting"
+          description="Comfygen provides Microsoft Power BI Consulting Service across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
         />
 
         <SolutionSec
@@ -555,6 +556,8 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <ClientStories/>
 
         <HireDeveloper
           heading="Hire Microsoft Power BI Consulting Experts to Drive Business Growth"

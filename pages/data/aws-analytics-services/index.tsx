@@ -6,6 +6,7 @@ import JSON_DATA from "./json/mobile.json";
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 
@@ -49,6 +50,11 @@ const ServicesSec = dynamic(
 const ConsultancyApproach = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
 );
 
 
@@ -208,6 +214,12 @@ export default function Mobile(props) {
           buttonLink="/contact-us"
         />
 
+        <IndustriesServe
+          heading="Industries We Serve As Best Mobile App Development Company"
+          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+
+        />
+
         <section className="bg-[#fff] lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
@@ -238,6 +250,9 @@ export default function Mobile(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+
+        <ClientStories />
 
         <HireDeveloper
           heading="Hire AWS Data Analytics Experts"

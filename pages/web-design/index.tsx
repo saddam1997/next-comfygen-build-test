@@ -53,6 +53,11 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { ssr: true }
+);
+
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
@@ -572,6 +577,11 @@ export default function Mobile(props: any) {
             "Timely Delivery",
           ]}
         />
+        <ClientTestimonials
+          heading="Client Testimonial"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+
         <Faq faqData={JSON_DATA.Frequently} title=" " />
          <BlogSection initialData={initialData} />
       </div>

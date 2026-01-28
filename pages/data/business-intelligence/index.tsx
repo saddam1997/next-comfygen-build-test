@@ -221,7 +221,7 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Business Intelligence & Analytics Services We Provide
+               Business Intelligence & Business Analytics Services
               </h2>
               <p className="text-base text-center font-normal">
                 We provide comprehensive Business Intelligence and Analytics services, giving you the insights and tools you need when you partner with Comfygen. Our solutions are designed to transform your data into clear, actionable results.
@@ -274,8 +274,8 @@ export default function ClinicalApp(props: any) {
         <section className="py-8">
           <Portfolio
             projects={portfolioData}
-            heading="Portfolio of Our Data Analytics Projects"
-            description="At ComfyGen, we take pride in delivering data analytics solutions that create measurable business value. Our portfolio spans diverse industries and use cases—each project tailored to meet specific client objectives, improve decision-making, and drive operational excellence. Here's a glimpse of how we've helped organizations transform their data into strategic assets"
+            heading="Portfolio of Our Business Intelligence & Business Analytics Projects"
+            description="At Comfygen, we specialize in delivering Business Intelligence (BI) and Analytics solutions that turn complex data into actionable insights. Our projects span multiple industries, helping organizations make data-driven decisions, optimize operations, and uncover strategic opportunities. Each solution is tailored to harness the power of analytics, transforming raw data into a competitive advantage."
           />
         </section>
 
