@@ -585,7 +585,7 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Expert Insurance App Developers"
-          text="At Comfygen, we are a leading insurance mobile app development company dedicated to delivering secure, scalable, and intuitive applications across iOS, Android, and web platforms. Our team of certified developers specializes in building solutions tailored to meet your business objectives while ensuring a seamless user experience."
+          text="At Comfygen, we are a leading insurance <a href='https://www.comfygen.com/mobile-app-development' class='text-semibold underline'>mobile app development company</a> dedicated to delivering secure, scalable, and intuitive applications across iOS, Android, and web platforms. Our team of certified developers specializes in building solutions tailored to meet your business objectives while ensuring a seamless user experience."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"

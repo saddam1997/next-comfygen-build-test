@@ -215,8 +215,8 @@ export default function Mobile(props) {
         />
 
         <IndustriesServe
-          heading="Industries We Serve As Best Mobile App Development Company"
-          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
+          heading="Industries We Serve As Best AWS Data Analytics Service Provider"
+          description="Comfygen provides AWS Data Analytics Service across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
 
         />
 

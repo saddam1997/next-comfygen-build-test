@@ -1,5 +1,4 @@
 {
-
   "pageData": {
     "title": "Why Choose Us for Your Node.Js Development Service? ",
     "description": "Comfygen strives to provide innovative and better results with the most advanced technologies. Count on us for dependability, trust, and reliability. Keeping up with the latest trends and anticipating changes, we ensure that it is enforced in a way that empowers you digitally.",
@@ -41,56 +40,102 @@
       }
     ]
   },
-  "servicesData" :[
+  "servicesData": [
     {
       "title": "Custom Node.js Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Comfygen provides custom Node.js development to create scalable, high-performance, and secure business applications. The Node.js programming solutions we provide are tailored to meet your specific business requirements, ensuring seamless functionality and a great user experience.",
-      "features": ["Custom-Built Solutions", "Scalable Architecture for Future Growth", "Robust Security Measures" , "User-Centric Design and Functionality" , "Optimized Performance for Business Success" ]
+      "features": [
+        "Custom-Built Solutions",
+        "Scalable Architecture for Future Growth",
+        "Robust Security Measures",
+        "User-Centric Design and Functionality",
+        "Optimized Performance for Business Success"
+      ]
     },
     {
       "title": "Node.js Development for Startups",
       "subtitle": "All Service And Solutions At One Place",
       "description": "At Comfygen, we help bring your startup vision to life with our expert mobile app development services. Our team specializes in crafting scalable, secure, and user-friendly applications tailored to your startup’s needs. From idea to launch, we ensure your app supports your business goals, driving growth and success.",
-      "features": ["Custom Node js development Solutions for Startup Needs", "Scalable and Secure Application Architecture", "User-Friendly Interface Design" , "Cross-Platform Compatibility for Wider Reach" , "Agile Development Process for Faster Delivery" ]
+      "features": [
+        "Custom Node js development Solutions for Startup Needs",
+        "Scalable and Secure Application Architecture",
+        "User-Friendly Interface Design",
+        "Cross-Platform Compatibility for Wider Reach",
+        "Agile Development Process for Faster Delivery"
+      ]
     },
     {
       "title": "Node.js IoT App Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Leverage the power of Node.js to build innovative and high-performance IoT applications. At Comfygen, we specialize in developing scalable, secure, and efficient IoT development solutions tailored to your business needs. From smart devices to advanced analytics, we create robust ecosystems that enable seamless connectivity and real-time data exchange.",
-      "features": ["Custom IoT development Solutions for Unique Needs", "Real-Time Connectivity and Data Processing", "IoT Dashboard Development for Better Control" , "Cost-Effective IoT Application Development" ]
+      "features": [
+        "Custom IoT development Solutions for Unique Needs",
+        "Real-Time Connectivity and Data Processing",
+        "IoT Dashboard Development for Better Control",
+        "Cost-Effective IoT Application Development"
+      ]
     },
     {
       "title": "Node.js Mobile Application Migration",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Effortlessly upgrade your mobile applications with our Flutter migration services. Our experts ensure a smooth transition to Flutter development, unlocking its cross-platform efficiency, rich UI capabilities, and superior performance for your app. Whether it's modernizing legacy apps or enhancing current functionalities, we provide a secure and efficient migration process.",
-      "features": ["Seamless Migration from Legacy Frameworks", "Enhanced App Performance and Scalability", "Optimized for Mobile Devices" , "Cost-Effective and Timely Migration Process" , "Post-Migration Support for Smooth Operation" ]
+      "features": [
+        "Seamless Migration from Legacy Frameworks",
+        "Enhanced App Performance and Scalability",
+        "Optimized for Mobile Devices",
+        "Cost-Effective and Timely Migration Process",
+        "Post-Migration Support for Smooth Operation"
+      ]
     },
     {
       "title": "Node.js Development Consulting",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our Node.js Consulting Services provide efficient, cost-effective solutions that align with your business needs. From optimizing your existing infrastructure to exploring new growth opportunities, our consultants ensure your application is scalable, secure, and high-performing.",
-      "features": ["Tailored Node.js Strategies", "Optimization and Performance Enhancements" , "Scalable Infrastructure Recommendations" , "Cost-Effective Solutions for Global Projects" , "Expert Guidance on Best Practices"]
-    } ,
+      "features": [
+        "Tailored Node.js Strategies",
+        "Optimization and Performance Enhancements",
+        "Scalable Infrastructure Recommendations",
+        "Cost-Effective Solutions for Global Projects",
+        "Expert Guidance on Best Practices"
+      ]
+    },
     {
       "title": "Node.js CMS Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our Full-Stack Node.js development experts specialize in building scalable and secure custom and headless CMS solutions. We follow industry best practices to speed development, enhance performance, and offer continuous support and updates for seamless operations.",
-      "features": ["Custom and Headless CMS Solutions", "Scalable and Secure Development", "Industry Best Practices for Faster Development" , "Continuous Support and Updates" , "Optimized Performance for Efficiency"]
+      "features": [
+        "Custom and Headless CMS Solutions",
+        "Scalable and Secure Development",
+        "Industry Best Practices for Faster Development",
+        "Continuous Support and Updates",
+        "Optimized Performance for Efficiency"
+      ]
     },
     {
       "title": "Node.js API Integration and Development",
       "subtitle": "All Service And Solutions At One Place",
       "description": "Our premier Node.js developers offer API-based solutions that are scalable, secure, and efficient. We ensure smooth third-party service integrations and robust API development to elevate your application's performance.",
-      "features": ["Scalable and Secure API Solutions", "Seamless Third-Party Integrations", "Optimized Performance for High Traffic" , "RESTful and GraphQL API Development" , "Reliable and Robust API Architecture"]
+      "features": [
+        "Scalable and Secure API Solutions",
+        "Seamless Third-Party Integrations",
+        "Optimized Performance for High Traffic",
+        "RESTful and GraphQL API Development",
+        "Reliable and Robust API Architecture"
+      ]
     },
     {
       "title": "Node.js Maintenance and Support",
       "subtitle": "All Service And Solutions At One Place",
       "description": "We as an outsource Node.js Development Company provide complete support and maintenance services to make sure your Node.js applications are regularly updated, scalable, and performing well.",
-      "features": ["Regular Application Updates and Patches", "Performance Monitoring and Optimization", "24/7 Technical Support and Troubleshooting" , "Scalable Solutions for Growing Needs" , "Proactive Maintenance for Security and Reliability"]
+      "features": [
+        "Regular Application Updates and Patches",
+        "Performance Monitoring and Optimization",
+        "24/7 Technical Support and Troubleshooting",
+        "Scalable Solutions for Growing Needs",
+        "Proactive Maintenance for Security and Reliability"
+      ]
     }
-  
   ],
   "Frequently": [
     {
@@ -112,6 +157,18 @@
       "num": "4",
       "title": "What process do you follow to develop a Node.js project?",
       "desc": "As a leading Node.js development company, our procedures are quite standard. Depending on the custom Node.js web development requirements, we assign a tailor-made team for the project which includes UI/UX designers, Node.js developers, Project manager, and quality analysts who will make sure superior results have been met. For the implementation, we generally follow Agile implementation."
+    }
+  ],
+  "customTestimonials": [
+    {
+      "text": "Comfygen’s Node.js development team built a fast, secure, and scalable backend for our application. Their expertise in APIs and real-time solutions helped us launch on time.",
+      "name": "Rohit Malhotra",
+      "title": "India"
+    },
+    {
+      "text": "We chose Comfygen for Node.js development, and they delivered a high-performance server-side solution. Their clean coding practices and strong architecture made a big difference.",
+      "name": "Jessica Brown",
+      "title": "USA"
     }
   ]
 }

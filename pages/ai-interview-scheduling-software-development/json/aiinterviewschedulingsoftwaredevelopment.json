@@ -79,37 +79,37 @@
     {
       "img": "<IconRobot stroke={1.5} className='w-12 h-12'/>",
       "title": "AI-Based Smart Scheduling",
-      "desc": "Our AI interview scheduling software automatically matches candidates and interviewers based on availability, role fit, and priority—eliminating manual coordination and reducing time-to-hire.",
+      "desc2": "Our AI interview scheduling software automatically matches candidates and interviewers based on availability, role fit, and priority—eliminating manual coordination and reducing time-to-hire.",
       "listItems": []
     },
     {
       "img": " <IconRefresh stroke={1.5} className='w-12 h-12'/>",
       "title": "Self-Rescheduling for Candidates",
-      "desc": "Enable candidates to reschedule interviews on their own using real-time availability, minimizing back-and-forth communication and improving candidate experience.",
+      "desc2": "Enable candidates to reschedule interviews on their own using real-time availability, minimizing back-and-forth communication and improving candidate experience.",
       "listItems": []
     },
     {
       "img": "<IconBrain stroke={1.5} className='w-12 h-12'/>",
       "title": "Smart Job Recommendations",
-      "desc": "AI-driven job recommendations match candidates to the most relevant roles by analyzing skills, experience, and job requirements for better hiring outcomes.",
+      "desc2": "AI-driven job recommendations match candidates to the most relevant roles by analyzing skills, experience, and job requirements for better hiring outcomes.",
       "listItems": []
     },
     {
       "img": "<IconMail stroke={1.5} className='w-12 h-12'/>",
       "title": "Automated Email & SMS Alerts",
-      "desc": "Send branded, automated email and SMS reminders to reduce no-shows and keep candidates and interviewers informed at every stage.",
+      "desc2": "Send branded, automated email and SMS reminders to reduce no-shows and keep candidates and interviewers informed at every stage.",
       "listItems": []
     },
     {
       "img": "<IconTools stroke={1.5} className='w-12 h-12'/>",
       "title": "Interview Kits & Automation",
-      "desc": "Provide interviewers with role-specific kits, questions, and automated feedback workflows to ensure structured and consistent interviews.",
+      "desc2": "Provide interviewers with role-specific kits, questions, and automated feedback workflows to ensure structured and consistent interviews.",
       "listItems": []
     },
     {
       "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>",
       "title": "All Interview Types Supported",
-      "desc": "Easily manage virtual, in-person, hybrid, panel, and round-robin interviews with a flexible AI-powered scheduling platform.",
+      "desc2": "Easily manage virtual, in-person, hybrid, panel, and round-robin interviews with a flexible AI-powered scheduling platform.",
       "listItems": []
     }
   ],

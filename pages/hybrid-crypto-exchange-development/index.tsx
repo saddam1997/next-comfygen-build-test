@@ -593,7 +593,7 @@ export default function Ecommerce(props) {
 
         <TechStack
           title="Our Hybrid Exchange Development Tech Stack"
-          description=""
+          description="We leverage a robust and modern tech stack to build scalable, secure, and high-performance hybrid exchange platforms. Our technology ensures seamless integration between centralized and decentralized exchange functionalities, delivering a fast, reliable, and user-friendly trading experience."
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}

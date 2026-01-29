@@ -7,6 +7,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 
 import dynamic from "next/dynamic";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -292,6 +293,10 @@ export default function ClinicalApp(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+
+        <div className="mt-6">
+          <ClientStories />
+        </div>
 
         <HireDeveloper
           heading="Hire Expert Business Intelligence & Analytics experts"

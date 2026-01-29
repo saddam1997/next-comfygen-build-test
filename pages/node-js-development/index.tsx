@@ -5,6 +5,7 @@ import JSON_DATA from "./json/nodejs.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const AboutSection = dynamic(
@@ -45,6 +46,11 @@ const Faq = dynamic(
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
+);
+
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
 // import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
@@ -195,6 +201,14 @@ export default function Altcoin(props: any) {
           linkText="Explore More"
         />
 
+        <CallToAction
+          heading="Let’s hear what you have to say?"
+          text="Get in touch with us and discuss your needs and requirements with our experts."
+          buttonText="Get Started"
+          buttonLink="/contact-us"
+          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+          imageAlt="Future of Technology"
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -211,14 +225,9 @@ export default function Altcoin(props: any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+
+
+        <ClientStories />
 
         <HireDeveloper
           heading="Hire Node.Js Application Developers"
@@ -238,6 +247,12 @@ export default function Altcoin(props: any) {
             "Debugging existing bugs and integrating modules are essential skills."
           ]}
         />
+
+        <ClientTestimonials
+          heading="Testimonials from Our Clients"
+          testimonials={JSON_DATA.customTestimonials}
+        />
+
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" Node.JS Development Solutions"
