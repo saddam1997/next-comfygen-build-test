@@ -3,23 +3,11 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import {
-  IconBadgeVr,
   IconBook,
-  IconBookUpload,
-  IconBrandAsana,
-  IconBriefcase,
-  IconCalendarEvent,
-  IconCode,
-  IconCrop11,
+
   IconDevices,
-  IconDevicesQuestion,
-  IconFirstAidKit,
-  IconLanguage,
-  IconMath,
-  IconMoodKid,
-  IconSchool,
+
   IconVideo,
-  IconWorldDollar,
   IconWorldWww,
 } from "@tabler/icons-react";
 

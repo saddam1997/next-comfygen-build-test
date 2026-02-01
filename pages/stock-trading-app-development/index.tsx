@@ -23,7 +23,6 @@ const loader = () => (
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
 );
 
 const ServicesSec = dynamic(
@@ -556,7 +555,7 @@ export default function ClinicalApp(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-app-hero1.webp')]">
+
           <HeroSectionForAllPages
             heading="Stock Trading App Development Company"
             ptag="Looking to launch your own stock trading app? Comfygen is a leading stock trading app development company offering custom-built, secure, and easy-to-use trading platforms. Our expert team delivers smart stock trading app development services that help you stay ahead—whether you're a startup or a large brokerage."
@@ -571,8 +570,9 @@ export default function ClinicalApp(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/stock-trading-app-development/stock-trading-app-hero1.webp"
           />
-        </div>
+
         <AboutSection
           title="About Company"
           heading="Hire the No.1 Stock Trading Mobile App Development Company for Startups"

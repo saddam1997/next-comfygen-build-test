@@ -6,7 +6,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./poker.json";
 import Link from "next/link";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import Faq from "../../components/old/components/Faq";
@@ -25,9 +25,10 @@ import {
   IconShieldCheck,
   IconUsers,
 } from "@tabler/icons-react";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
+const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
   loading: () => <p>Loading...</p>,
 });
 
@@ -444,12 +445,14 @@ export default function PokerGame(props) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+     <div>
+         <Header />
+     </div>
+  
 
       <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/poker-game-development-hero-img.webp')]">
+        <div className="lg:pt-[90px]">
           <HeroSectionForAllPages
             heading="No. 1 Poker Game Development Company"
             ptag="Comfygen is the leading poker game development company in India and the USA, catering to excellent and user-friendly app solutions with a seamless navigational experience. We have been developing super-fantastic games for years and delivering robust and engaging apps. Our talented and skilled game developers are renowned to build authentic applications with ground-breaking designs. We provide seamless poker game development services with advancements and next level techniques."
@@ -459,6 +462,7 @@ export default function PokerGame(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/poker-game-development-hero-img.webp"
           />
         </div>
 
