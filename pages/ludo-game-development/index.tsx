@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ludo.json";
 import Link from "next/link";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoosee from "../../components/old/components/WhyChooseUs";
 import AboutSection from "../../components/old/components/AboutSection";
@@ -23,8 +23,10 @@ import {
   IconCpu,
   IconLock,
 } from "@tabler/icons-react";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
+
+const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
   loading: () => <p>Loading...</p>,
 });
 const ContactFromCenter = dynamic(
@@ -106,7 +108,7 @@ const CardGridData = [
 ];
 
 const serviceSchema = {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
   "@type": "Service",
   "name": "Ludo Game App Development Services",
   "provider": {
@@ -124,43 +126,45 @@ const serviceSchema = {
     "AI & Bots Integration"
 
   ],
- 
+
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies",
     "https://x.com/Comfygen_Tech",
     "https://www.instagram.com/comfygen_technologies",
     "https://www.linkedin.com/company/comfygen-technologies"
-    
+
   ]
 
 }
 
 const ldJsonData = {
-  "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Ludo Game Development Services",
-"image":"Hero section image",
-"description":"Comfygen offers custom Ludo game app development services, delivering fully branded and feature-rich Ludo games for Android, iOS, and web platforms. Our real-money gameplay and multiplayer support ensure maximum player engagement and retention.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"469"}
+  "@context": "http://www.schema.org",
+  "@type": "Product",
+  "brand": "Comfygen Technologies",
+  "Name": "Ludo Game Development Services",
+  "image": "Hero section image",
+  "description": "Comfygen offers custom Ludo game app development services, delivering fully branded and feature-rich Ludo games for Android, iOS, and web platforms. Our real-money gameplay and multiplayer support ensure maximum player engagement and retention.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "469"
+  }
 
 };
 
 const BreadcrumbList = {
-   "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
   "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
+    "@type": "ListItem",
+    "position": 1,
     "name": "Home",
-    "item": "https://www.comfygen.com"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
+    "item": "https://www.comfygen.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
     "name": "Game Development",
-    "item": "https://www.comfygen.com/ludo-game-development"  
+    "item": "https://www.comfygen.com/ludo-game-development"
   }]
 
 }
@@ -315,102 +319,104 @@ export default function LudoGame(props) {
   return (
     <div className="overflow-hidden">
       <Head>
-  <title>Top Ludo Game Development Company in India & USA | Comfygen</title>
-  <meta
-    name="description"
-    content="Comfygen is a leading Ludo game development company in India and the USA. We build advanced, feature-rich Ludo apps with real-money play, multiplayer, and secure systems. Hire top Ludo game developers today!"
-  />
-  <link
-    rel="canonical"
-    href="https://www.comfygen.com/ludo-game-development"
-  />
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-  />
-  <meta charSet="UTF-8" />
-  <meta
-    property="og:title"
-    content="Top Ludo Game Development Company in India & USA | Comfygen"
-  />
-  <meta
-    property="og:description"
-    content="Get high-quality, custom Ludo game development services with Comfygen. We specialize in real-money Ludo apps, 3D gameplay, AI/ML, and multiplayer features."
-  />
-  <meta
-    property="og:url"
-    content="https://www.comfygen.com/ludo-game-development"
-  />
-  <meta
-    property="og:type"
-    content="website"
-  />
-  <meta
-    property="og:image"
-    content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-portfolio.webp"
-  />
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  />
-  <meta
-    name="twitter:title"
-    content="Top Ludo Game Development Company in India & USA | Comfygen"
-  />
-  <meta
-    name="twitter:description"
-    content="Build secure, engaging Ludo game apps with Comfygen – the trusted Ludo game development company in India & the USA."
-  />
-  <meta
-    name="twitter:image"
-    content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-portfolio.webp"
-  />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="language" content="en-us" />
-  <meta name="abstract" content="Ludo game app developer India USA" />
-  <meta name="summary" content="Best Ludo game app development services by Comfygen" />
-  <meta name="author" content="Comfygen Private Limited" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta name="owner" content="Comfygen Private Limited" />
-  <meta name="category" content="Ludo Game Development Company" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="subtitle" content="Ludo game app development in India and the USA" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="business:contact_data:country_name" content="India" />
-  <meta property="business:contact_data:locality" content="Jaipur" />
-  <meta name="og:latitude" content="26.912434" />
-  <meta name="og:longitude" content="75.787271" />
-  <meta name="fb:page_id" content="110909321596135" />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData1) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbList) }}
-  />
-</Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/ludo-game-development-hero-img.webp')]">
+        <title>Top Ludo Game Development Company in India & USA | Comfygen</title>
+        <meta
+          name="description"
+          content="Comfygen is a leading Ludo game development company in India and the USA. We build advanced, feature-rich Ludo apps with real-money play, multiplayer, and secure systems. Hire top Ludo game developers today!"
+        />
+        <link
+          rel="canonical"
+          href="https://www.comfygen.com/ludo-game-development"
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta charSet="UTF-8" />
+        <meta
+          property="og:title"
+          content="Top Ludo Game Development Company in India & USA | Comfygen"
+        />
+        <meta
+          property="og:description"
+          content="Get high-quality, custom Ludo game development services with Comfygen. We specialize in real-money Ludo apps, 3D gameplay, AI/ML, and multiplayer features."
+        />
+        <meta
+          property="og:url"
+          content="https://www.comfygen.com/ludo-game-development"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:image"
+          content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-portfolio.webp"
+        />
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+        <meta
+          name="twitter:title"
+          content="Top Ludo Game Development Company in India & USA | Comfygen"
+        />
+        <meta
+          name="twitter:description"
+          content="Build secure, engaging Ludo game apps with Comfygen – the trusted Ludo game development company in India & the USA."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-portfolio.webp"
+        />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="language" content="en-us" />
+        <meta name="abstract" content="Ludo game app developer India USA" />
+        <meta name="summary" content="Best Ludo game app development services by Comfygen" />
+        <meta name="author" content="Comfygen Private Limited" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="owner" content="Comfygen Private Limited" />
+        <meta name="category" content="Ludo Game Development Company" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="subtitle" content="Ludo game app development in India and the USA" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="business:contact_data:country_name" content="India" />
+        <meta property="business:contact_data:locality" content="Jaipur" />
+        <meta name="og:latitude" content="26.912434" />
+        <meta name="og:longitude" content="75.787271" />
+        <meta name="fb:page_id" content="110909321596135" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData1) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbList) }}
+        />
+      </Head>
+
+    <div>
+          <Header />
+    </div>
+  
+      <div className="lg:pt-[110px] ">
         <HeroSectionForAllPages
           heading="Best Ludo Game Development Company"
           ptag="Make your ludo gaming application more interesting with the assistance from Comfygen Technologies. We are one leading ludo game app development company In India & The USA, embark with the latest feature and tech trends integration. Our top-notch Ludo game app developers can bring exciting and innovative alterations in the applications for crafting unforgettable user’s experience. Our ultimate goal is to make Ludo game development services and solutions more appealing to gather a global audience. Our belief is to create applications with fun and challenging elements ensuring reliability, user-friendliness, security and vast engagement."
@@ -421,6 +427,7 @@ export default function LudoGame(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/ludo-game-development-hero-img.webp"
         />
       </div>
       <AboutSection
@@ -512,9 +519,7 @@ export default function LudoGame(props) {
 
       <section
         className="w-full bg-end bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: `url("https://www.comfygen.com/img/hire-ludo.webp")`,
-        }}
+       
       >
         <div className="w-full lg:py-16 py-10 bg-gradient-to-r from-[#272868]/90 to-[#5556D1]/90 ">
           <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
@@ -743,7 +748,7 @@ export default function LudoGame(props) {
         title="Ludo Game Development Technology"
       />
 
-       <BlogSection initialData={initialData} />
+      <BlogSection initialData={initialData} />
     </div>
   );
 }

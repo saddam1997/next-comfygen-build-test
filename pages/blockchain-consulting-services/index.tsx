@@ -609,10 +609,8 @@ export default function rummy(props: any) {
 
 
         <section
-          className="bg-center bg-cover  bg-fixed "
-          style={{
-            backgroundImage: `url("https://www.comfygen.com/img/different-blockchain-platforms-where-we-work.webp")`,
-          }}
+          className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95"
+         
         >
           <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95">
             <div className="space-y-4 bg-gradient-to-r from-[#272868] to-[#5556D1] p-8 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto rounded-xl">
