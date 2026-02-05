@@ -241,8 +241,8 @@ function IndustriesServe({
           <h2 className="text-3xl xl:text-4xl font-bold text-[#212121]">
             {finalHeading}
           </h2>
-          <p className="text-base xl:text-lg text-[#212121]">
-            {finalDescription}
+          <p className="text-base xl:text-lg text-[#212121]"  dangerouslySetInnerHTML={{ __html: finalDescription }}>
+            {/* {finalDescription} */}
           </p>
         </div>
       </section>
@@ -260,8 +260,8 @@ function IndustriesServe({
             <h2 className="text-3xl xl:text-4xl font-bold text-[#212121]">
               {finalHeading}
             </h2>
-            <p className="text-base xl:text-lg text-[#212121]">
-              {finalDescription}
+            <p className="text-base xl:text-lg text-[#212121]" dangerouslySetInnerHTML={{ __html: finalDescription }}>
+              
             </p>
           </div>
 

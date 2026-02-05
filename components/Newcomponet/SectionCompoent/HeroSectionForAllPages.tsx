@@ -11,7 +11,7 @@ export default function HeroSectionForAllPages(props: any) {
         <div className="w-full h-full relative">
           <Image
             src={props.bgImage}
-            alt="Comfygen Hero Background"
+            alt={props.alt || "Comfygen Hero Background"}
             fill
             className="object-cover object-center -z-10 hidden md:block  bg-no-repeat bg-fixed"
             priority
