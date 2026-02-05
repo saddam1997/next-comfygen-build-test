@@ -441,11 +441,11 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Medicine Delivery App Development Company"
-          ptag="Comfygen Technologies is a trusted Medicine Delivery App Development Company providing top-notch Medicine Delivery App Development Services. We build custom, secure, and user-friendly medicine delivery apps that simplify ordering, tracking, and delivery. Our solutions help businesses enhance customer satisfaction, improve efficiency, and stay ahead in the fast-growing healthcare delivery market."
+          ptag="Comfygen Technologies is a leading medicine delivery app development company offering custom, secure, and scalable online medicine delivery app development solutions. We build on-demand medicine delivery apps that simplify prescription uploads, enable real-time order tracking, and ensure fast doorstep delivery—helping healthcare businesses enhance customer experience and scale efficiently in the digital healthcare market."
           ptag1=""
-          li="Secure & High-Performance Medicine Delivery Solutions"
+          li="Secure & High-Performance Medicine Delivery App Solutions"
           li1="On-Demand & 10-Minute Medicine Delivery Capabilities"
-          li2="Custom & White-Label App Development by Expert Developers"
+          li2="Custom & White-Label Medicine Delivery App Development"
           ptag3=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
@@ -461,15 +461,15 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Custom Medicine Delivery App Development Services
+              Custom Medicine Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                We offer end-to-end medicine delivery app development services
+               {` We offer end-to-end medicine delivery app development services
                 for startups, pharmacies, and healthcare businesses. Our
                 qualified healthcare app developers have years of experience in
                 the pharmacy industry and build high-quality medicine delivery
                 apps. These solutions are designed to meet real customer needs
-                while fully complying with healthcare regulations and standards.
+                while fully complying with healthcare regulations and standards.`}
               </p>
             </div>
             <div className="">
