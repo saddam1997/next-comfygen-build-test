@@ -173,7 +173,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSection
+        <HeroSectionForAllPages
           heading="Astrology App Development Company in India"
           ptag="Partner with a trusted astrology app development company in India to build top-notch astrology applications. At Comfygen, we deliver advanced astrology app development services using AI/ML, blockchain, and modern frameworks to create accurate, engaging, and high-performance astrology apps. Our expert astrology app developers transform your idea into a future-ready digital astrology solution tailored to your business goals."
           ptag1=""
@@ -184,6 +184,9 @@ export default function ClinicalApp(props: any) {
           li4="24/7 Support & Maintenance"
           btnName="Talk With Expert"
           btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+           closeModal={closeModal}
           bgImage="https://www.comfygen.com/image/hero-imageastrology-app-development.webp"
         />
 
@@ -254,10 +257,10 @@ export default function ClinicalApp(props: any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                 Next-Gen AI-Powered Astrology App Development Solution
+                  Next-Gen AI-Powered Astrology App Development Solution
                 </h2>
                 <p>
-                 Comfygen is a trusted astrology app development company offering <Link className="text-blue-600 font-semibold" href='https://www.comfygen.com/ai-development'>AI-based astrology app development services</Link>. Our developers use AI to create astrology apps that provide accurate horoscopes, personalized predictions, and online consultations.
+                  Comfygen is a trusted astrology app development company offering <Link className="text-blue-600 font-semibold" href='https://www.comfygen.com/ai-development'>AI-based astrology app development services</Link>. Our developers use AI to create astrology apps that provide accurate horoscopes, personalized predictions, and online consultations.
 
                 </p>
               </div>
@@ -293,7 +296,7 @@ export default function ClinicalApp(props: any) {
                   The Emerging Technologies We Use for Astrology App Development
                 </h2>
                 <p className="text-center text-white lg:w-10/12 mx-auto">
-                 Comfygen Technologies is a top astrology mobile app development agency. We create high-level astrology apps using the latest technology. Our horoscope app development services combine innovation with precision, delivering personalized user experiences and accurate predictions.
+                  Comfygen Technologies is a top astrology mobile app development agency. We create high-level astrology apps using the latest technology. Our horoscope app development services combine innovation with precision, delivering personalized user experiences and accurate predictions.
                 </p>
               </div>
               <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">

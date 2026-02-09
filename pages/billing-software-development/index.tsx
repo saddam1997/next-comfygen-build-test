@@ -213,7 +213,7 @@ export default function ClinicalApp(props: any) {
                Our Billing Software Development Services
               </h2>
               <p className="text-base text-center font-normal">
-              We deliver end-to-end billing software development services to help businesses automate invoicing, simplify payments, and optimize financial workflows. As a trusted <Link href='https://www.comfygen.com/blog/billing-software-development-companies-in-india/' className="text-blue-600 font-semibold">billing software development company</Link>, Comfygen Technologies builds secure, scalable, and business-specific billing solutions tailored to diverse industry needs.
+              We deliver end-to-end billing software development services to help businesses automate invoicing, simplify payments, and optimize financial workflows. As a trusted <Link href='https://www.comfygen.com/blog/billing-software-development-companies-in-india' className="text-blue-600 font-semibold">billing software development company</Link>, Comfygen Technologies builds secure, scalable, and business-specific billing solutions tailored to diverse industry needs.
               </p>
             </div>
             <div className="">

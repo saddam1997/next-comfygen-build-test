@@ -97,171 +97,162 @@ const Process = [
 ];
 
 
+const jsonLdData = [
 
-
-
-
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Tennis Live Line Api Provider",
-  "url": "https://www.comfygen.com/tennis-live-line-api-development",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen - Best Tennis  Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "sameAs": [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen"
-  ]
-};
-
-const ServicesSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Tennis Live Line API | Real-Time Tennis Score API Provider",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Tennis Live Line API Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/"
+    },
+    "description": "Comfygen provides high-performance Tennis Live Line API development services offering real-time scores, live odds, match statistics, point-by-point updates, and seamless integration for sports betting, fantasy sports, and live score applications.",
+    "url": "https://www.comfygen.com/tennis-live-line-api-development ",
+    "mainEntityOfPage": "https://www.comfygen.com/tennis-live-line-api-development ",
+    "areaServed": "Global",
+    "serviceType": [
+      "Tennis Live Line API Development",
+      "Real-Time Tennis Score API",
+      "Live Tennis Odds API",
+      "Sports Betting API Integration",
+      "Fantasy Sports API Development",
+      "Live Match Statistics API",
+      "White Label Sports API Solutions"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+    ]
   },
-  "description": "Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform.",
-  "url": "https://www.comfygen.com/tennis-live-line-api-development",
-  "mainEntityOfPage": "https://www.comfygen.com/tennis-live-line-api-development",
-  "areaServed": "Global",
-  "serviceType": [
-    "Custom Tennis API",
-    "Real-Time Tennis Score Updates",
-    "Gaming Platform Integration",
-    "Tennis Odds &  API Support",
-    "Tennis Analytics API Solutions",
-    "Table Tennis & Extended Sports Feeds"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies"
-  ]
 
-
-};
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Tennis Live Line API Provider – Real-Time Scores & Tournament Data",
-  "image": "https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-hero.webp",
-  "description": "Integrate live Tennis scores, stats, and match updates with our Tennis Live Line API. Enhance your sports platform with real-time, reliable data feeds.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What does your Tennis Live Line API include?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our API provides real-time scores, player stats, match data, tennis odds, and analytics for ATP, WTA, and other tournaments."
-      }
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": {
+      "@type": "Brand",
+      "name": "Comfygen Technologies"
     },
-    {
-      "@type": "Question",
-      "name": "Who can use your Tennis Score Updates API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Any platform that requires live tennis data—sports apps or news sites—can integrate our API."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you support Table Tennis Data Feed as well?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer extended support for table tennis events, scores, and match analytics."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is the Fast Tennis Live Line API different?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It delivers instant score updates with ultra-low latency, perfect for real-time engagement platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is historical match data included in the API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you get access to historical stats and match data for analytics and research."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can the API be customized as per business requirements?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely, we provide customizable endpoints and flexible data output formats."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the formats supported by your Tennis Data Feed API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer data in JSON and XML formats compatible with all major platforms."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer support for Tennis  API  platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our API supports live odds and market insights tailored for  applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How secure is your API for Tennis applications?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We use encrypted access and secure protocols to ensure data integrity and protection."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What’s the onboarding time for your Tennis API Data Feeds?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most clients are fully integrated within 2-5 business days, depending on customization needs."
-      }
+    "name": "Tennis Live Line API Development Services | Real-Time Scores & Odds",
+    "image": " About Section Image URL ",
+    "description": "Comfygen offers advanced Tennis Live Line API development services providing real-time live scores, odds, point-by-point match updates, player statistics, and seamless integration for sports betting, fantasy tennis, and live score applications.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "435"
     }
-  ]
-};
+  },
+
+  {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.comfygen.com/"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tennis Live Line API Development",
+      "item": "https://www.comfygen.com/tennis-live-line-api-development"
+    }]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does your Tennis Live Line API include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Tennis Live Line API provides real-time scores, player statistics, match data, live tennis odds, and advanced analytics for ATP, WTA, and other international tournaments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can use your Tennis Score Updates API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Any platform that requires live tennis data—such as sports apps, news websites, analytics platforms, and digital media portals—can integrate our Tennis Score Updates API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you support Table Tennis Data Feed as well?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer extended support for table tennis data feeds, including live events, real-time scores, and detailed match analytics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the Fast Tennis Live Line API different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Fast Tennis Live Line API delivers ultra-low latency score updates, making it ideal for platforms that require instant real-time engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is historical match data included in the API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the API includes access to historical tennis match data and statistics for in-depth analytics, reporting, and research purposes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the API be customized as per business requirements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We provide customizable API endpoints and flexible data output options tailored to specific business and platform requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What formats are supported by your Tennis Data Feed API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Tennis Data Feed API supports JSON and XML formats, ensuring seamless compatibility with all major web and mobile platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer support for Tennis Odds API platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we support live tennis odds and market insights designed specifically for betting, analytics, and sports data platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How secure is your API for Tennis applications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Tennis API uses encrypted access, secure authentication, and modern security protocols to ensure complete data integrity and protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the onboarding time for your Tennis API Data Feeds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most clients complete onboarding and integration within 2–5 business days, depending on customization and data requirements."
+        }
+      }
+    ]
+  }
 
 
+
+
+];
 
 
 
@@ -286,138 +277,97 @@ export default function Ecommerce(props) {
           name="description"
           content="Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform."
         />
-        <meta
-          name="keywords"
-          content="Fast Tennis Live Line API, Tennis Live Line API Provider, Tennis Live Line API, Tennis API Provider, Tennis API, Tennis Score Updates API, Tennis API for app Integration, Tennis Data API, API Tennis, Tennis Data Feed API, Tennis Odds API, Tennis Livescore API, Tennis Data Feed, Table Tennis Data Feed, Live Tennis API, Global Tennis Network API, API for Tennis, Tennis Analytics API, Tennis Live Score API, Tennis API Data Feeds"
-        />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/tennis-live-line-api-development"
-        />
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:title"
-          content="Tennis Live Line API | Real-Time Tennis Score API Provider"
-        />
-        <meta
-          property="og:description"
-          content="Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform."
-        />
-        <meta property="schema:type" content="LocalBusiness" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="language" content="en-us" />
-        <meta
-          name="abstract"
-          content="Top Tennis Live Line API"
-        />
-        <meta
-          name="summary"
-          content="Comfygen provides reliable and scalable Tennis Live Line API services with global coverage and enterprise-grade support."
-        />
-        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+        <meta name="keywords" content="Tennis Live Line API Development, Real-Time Tennis Score API, Live Tennis Odds API, Sports Betting API Integration, Fantasy Sports API Development, Live Match Statistics API, White Label Sports API Solutions" />
+
+        {/* <!-- Canonical Tag --> */}
+
+        <link rel="canonical" href="https://www.comfygen.com/tennis-live-line-api-development" />
+
+
+        {/* <!-- Robots → */}
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Tennis live line API" />
+
+        {/* <!-- New in iOS6 -->
+<!-- Author and Company Information --> */}
+
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta
-          name="owner"
-          content="Founder of Tennis Live Line API services for startups and enterprises. Specializing in live data streaming and match analytics."
-        />
-        <meta
-          name="Best Tennis Live Line API service Provider"
-          content="Comfygen is a trusted Tennis API provider worldwide."
-        />
-        <meta name="category" content="Tennis Live Line API" />
-        <meta name="coverage" content="Worldwide" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies"></meta>
+
+        {/* <!-- SEO Meta --> */}
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
-        <meta name="subtitle" content="Best Tennis Live Line API" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:country-name" content="India, USA, UK, UAE" />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
-        <meta
-          property="og:type"
-          content="Tennis Live Line API Services Provider"
-        />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Comfygen Private Limited" />
+        {/* <!-- Geo Location Meta --> */}
+
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_CA" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_DE" />
         <meta property="og:locale:alternate" content="en_AE" />
-        <meta property="fb:page_id" content="110909321596135" />
-        <meta property="og:email" content="sales@comfygen.com" />
-        <meta property="og:phone_number" content="+91-958-786-7258" />
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-og-image.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-og-image.webp" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Tennis Live Line API" />
-        <meta property="og:url" content="https://www.comfygen.com/tennis-live-line-api-development" />
-        <meta property="og:title" content="Tennis Live Line API Services | Real-Time Tennis Data Solutions" />
-        <meta property="og:description" content="Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform." />
 
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Tennis Live Line API Services | Real-Time Tennis Data Solutions" />
-        <meta name="twitter:description" content="Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform." />
-        <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
-        <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:title" content="Tennis live line API Development" />
+        <meta name="twitter:description" content=" Get real-time tennis live scores, odds, match statistics, and point-by-point updates with our Tennis Live Line API. Build fast, secure, and scalable sports betting and fantasy apps with Comfygen " />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-og-image.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        {/* Updated JSON-LD schema for SoftwareApplication */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Tennis Live Line API",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "SportsApplication",
-            offers: {
-              "@type": "Offer",
-              price: "Contact Us - 9587867258",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock"
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "300"
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen"
-            }
-          })}
-        </script>
+
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-og-image.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/tennis-live-line-api-development/tennis-api-og-image.webp" />
+        <meta property="og:image:alt" content="Tennis Live Line API Development" />
+        <meta property="og:url" content="https://www.comfygen.com/tennis-live-line-api-development  " />
+        <meta property="og:title" content="Tennis Live Line API Development Services | Comfygen" />
+        <meta property="og:description" content="Access real-time tennis live scores, odds, match stats, and point-by-point updates with Comfygen’s Tennis Live Line API. Build fast, secure, and scalable sports betting and fantasy tennis applications." />
+
+
+
 
         {/* Structured data scripts */}
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
 
@@ -529,7 +479,7 @@ export default function Ecommerce(props) {
           faqData={JSON_DATA.Frequently}
           title=" Tennis  Live Line Api"
         />
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

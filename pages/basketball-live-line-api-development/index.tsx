@@ -99,146 +99,175 @@ const Process = [
 
 
 
+const jsonLdData = [
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Basketball Live Line Api",
-  "url": "https://www.comfygen.com/kabaddi-live-line-api",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
-
-
-const organizationData = {
+ {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen - Best Basketball Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
+  "@type": "Service",
+ "name": "Basketball Live Line API Development Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "Comfygen Technologies",
+    "url": "https://www.comfygen.com/"
+  },
+ "description": "Comfygen provides high-performance Basketball Live Line API development services offering real-time basketball scores, live odds, play-by-play updates, and seamless integration for sports betting, fantasy basketball, and live score applications.",
+  "url": "https://www.comfygen.com/basketball-live-line-api-development ",
+  "mainEntityOfPage": "https://www.comfygen.com/basketball-live-line-api-development",
+  "areaServed": "Global",
+  "serviceType":[
+    "Basketball Live Line API Development",
+    "Real-Time Basketball Score API",
+    "Live Basketball Odds API",
+    "Sports Betting API Integration",
+    "Fantasy Basketball API Development",
+    "Live Match Statistics API",
+    "White Label Sports API Solutions"
+  ],
   "sameAs": [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen"
+    "https://www.facebook.com/comfygen.technologies",
+    "https://x.com/Comfygen_Tech",
+    "https://www.instagram.com/comfygen_technologies",
+    "https://www.linkedin.com/company/comfygen-technologies"
   ]
-};
-
-
-
-const productData = {
+},
+{
   "@context": "http://www.schema.org",
   "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Basketball Live Line API Provider – Real-Time Scores & Tournament Data",
-  "image": "https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-live-line-api-hero.webp",
-  "description": "Integrate live Basketball scores, stats, and match updates with our Basketball Live Line API. Enhance your sports platform with real-time, reliable data feeds.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Comfygen Technologies"
+  },
+  "name": "Basketball Live Line API Development Services | Real-Time Scores & Odds",
+  "image": " About Section Image URL ",
+ "description": "Comfygen offers advanced Basketball Live Line API development services providing real-time basketball scores, live odds, play-by-play updates, team and player statistics, and seamless integration for sports betting, fantasy basketball, and live score applications.",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
+    "ratingValue": "4.7",
+    "reviewCount": "295"
   }
-};
+},
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "https://www.comfygen.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Basketball Live Line API Development",
+    "item": "https://www.comfygen.com/basketball-live-line-api-development"  
+  }]
+},
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+   {
+     "@type": "Question",
+     "name": "What is a Basketball Live Line API?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A Basketball Live Line API provides real-time basketball data such as live scores, team stats, player information, and match updates that can be integrated into websites or apps."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Who can use your Basketball API services?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Our Basketball API solutions are perfect for sports platforms, score websites, data tracking systems, and businesses looking to offer live basketball scores and analytics."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "How accurate is your basketball live score API?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Our basketball live score API delivers fast and highly accurate real-time data, updated instantly during ongoing matches."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Do you offer custom Basketball data API integration?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, we provide custom integration services to ensure the Basketball Live Line API fits perfectly into your existing platform or system."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Is your API suitable for sports  websites?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Absolutely! Our Basketball Live Stats API and Basketball Odds API are ideal for  needing reliable and real-time updates."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "What data formats does the API support?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Our API supports industry-standard formats like JSON and XML to ensure smooth integration and easy parsing of data."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Can I track NBA live scores using this API?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, our NBA Live Line API includes complete coverage of NBA games, scores, player stats, and more."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Is your Basketball Data Feed API scalable?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, our Basketball Data Feed API is designed to scale with your traffic—whether you're serving hundreds or millions of users."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "How do I start with the integration?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Simply contact our team, and we’ll provide access credentials, documentation, and full support for smooth Basketball API integration."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Do you offer post-launch support?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, we offer ongoing support, performance monitoring, and updates to keep your live basketball API functioning flawlessly."
+     }
+   }
+ ]
+}
 
 
 
 
 
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Basketball Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Basketball Live Line API provides real-time basketball data such as live scores, team stats, player information, and match updates that can be integrated into websites or apps."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who can use your Basketball API services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Basketball API solutions are perfect for sports platforms, score websites, data tracking systems, and businesses looking to offer live basketball scores and analytics."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How accurate is your basketball live score API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our basketball live score API delivers fast and highly accurate real-time data, updated instantly during ongoing matches."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer custom Basketball data API integration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide custom integration services to ensure the Basketball Live Line API fits perfectly into your existing platform or system."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is your API suitable for sports  websites?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! Our Basketball Live Stats API and Basketball Odds API are ideal for  needing reliable and real-time updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What data formats does the API support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our API supports industry-standard formats like JSON and XML to ensure smooth integration and easy parsing of data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I track NBA live scores using this API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our NBA Live Line API includes complete coverage of NBA games, scores, player stats, and more."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is your Basketball Data Feed API scalable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our Basketball Data Feed API is designed to scale with your traffic—whether you're serving hundreds or millions of users."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I start with the integration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Simply contact our team, and we’ll provide access credentials, documentation, and full support for smooth Basketball API integration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer post-launch support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer ongoing support, performance monitoring, and updates to keep your live basketball API functioning flawlessly."
-      }
-    }
-  ]
-};
+
+
+
+];
 
 
 
 
 
-export default function Ecommerce(props:any) {
+
+
+
+
+
+
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
 
@@ -254,115 +283,100 @@ export default function Ecommerce(props:any) {
           name="keywords"
           content="Basketball Live Line API, Real-time basketball stats API, Basketball live score integration, Basketball API provider, Basketball match data feed, NBA live score API, Basketball data API, Basketball player stats API, Basketball odds API, Live basketball score API, Basketball stats API integration, Basketball software solutions API, Custom basketball API, Basketball data feeds API, Live basketball game API, Basketball API, Real-time basketball data API"
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/basketball-live-line-api-development"
-        />
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:title"
-          content="Basketball Live Line API"
-        />
-        <meta
-          property="og:description"
-          content="Deliver real-time basketball scores, player stats, and match updates with our Basketball Live Line API. Ideal for fantasy apps platforms, and live score trackers."
-        />
-        <meta property="schema:type" content="LocalBusiness" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta name="language" content="en-us" />
-        <meta
-          name="abstract"
-          content="Top Basketball Live Line API"
-        />
-        <meta
-          name="summary"
-          content="Comfygen provides reliable and scalable Basketball Live Line API services with NBA and regional coverage and enterprise-grade support."
-        />
-        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+
+        {/* <!-- Canonical Tag --> */}
+
+        <link rel="canonical" href="https://www.comfygen.com/basketball-live-line-api-development " />
+
+        {/* <!-- Robots → */}
+
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Basketball live line API" />
+
+        {/* <!-- New in iOS6 -->
+<!-- Author and Company Information --> */}
+
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta
-          name="owner"
-          content="Founder of Basketball Live Line API services for startups and enterprises. Specializing in live data streaming and match analytics."
-        />
-        <meta
-          name="Best Basketball Live Line API service Provider"
-          content="Comfygen is a trusted Basketball API provider worldwide."
-        />
-        <meta name="category" content="Basketball Live Line API" />
-        <meta name="coverage" content="Worldwide" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+
+        {/* <!-- SEO Meta --> */}
+
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
-        <meta name="subtitle" content="Best Basketball Live Line API" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
 
-        <meta
-          property="og:type"
-          content="Basketball Live Line API Services Provider"
-        />
+        {/* <!-- Geo Location Meta --> */}
 
-        {/* Open Graph */}
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
 
-        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
-        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
+
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Basketball Live Line API" />
-        <meta property="og:url" content="https://www.comfygen.com/basketball-live-line-api-development" />
-        <meta property="og:title" content="Basketball Live Line API Services | Real-Time Basketball Data Solutions" />
-        <meta property="og:description" content="Deliver real-time basketball scores, player stats, and match updates with our Basketball Live Line API. Ideal for fantasy apps and live score trackers." />
 
+
+        {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Basketball Live Line API Services | Real-Time Basketball Data Solutions" />
-        <meta name="twitter:description" content="Deliver real-time basketball scores, player stats, and match updates with our Basketball Live Line API. Ideal for fantasy apps, and live score trackers." />
-        <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
-        <meta name="twitter:site" content="@comfygentech" />
+        <meta name="twitter:title" content="Basketball Live Line API Development" />
+        <meta name="twitter:description" content="Access real-time basketball live scores, odds, play-by-play updates, and detailed match statistics with our Basketball Live Line API. Build fast, secure, and scalable sports betting and fantasy basketball apps with Comfygen." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        {/* Updated JSON-LD schema for SoftwareApplication */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Basketball Live Line API",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "SportsApplication",
-            offers: {
-              "@type": "Offer",
-              price: "Contact Us - 9587867258",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock"
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "300"
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen"
-            }
-          })}
-        </script>
 
-        {/* Structured data scripts */}
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-og-image.webp" />
+        <meta property="og:image:alt" content="Basketball Live Line API Development" />
+        <meta property="og:url" content=" https://www.comfygen.com/basketball-live-line-api-development " />
+        <meta property="og:title" content="Football Live Line API Development Services | Comfygen" />
+        <meta property="og:description" content="Get real-time basketball live scores, odds, play-by-play updates, and detailed match statistics with Comfygen’s Basketball Live Line API. Build fast, secure, and scalable sports betting and fantasy basketball applications" />
+
+
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
 

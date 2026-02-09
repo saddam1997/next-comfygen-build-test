@@ -11,12 +11,12 @@ import ClientStories from "../../../components/Newcomponet/SectionCompoent/Clien
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  { ssr: true }
 );
 
 const ServicesSec = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const Portfolio = dynamic(
@@ -292,10 +292,10 @@ export default function Mobile(props) {
 
 
       </Head>
-      <LazyLoad height={80} offset={100}>
+    
         <Header />
-      </LazyLoad>
-      <div className="">
+
+      <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Enterprise Data Analytics Service Provider"
           ptag=""

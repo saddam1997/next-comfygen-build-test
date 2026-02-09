@@ -137,7 +137,7 @@ const CardClone = [
       "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/CAFU Clone App.webp",
     title: "CAFU Clone App",
     description:
-      "Build an <a href='https://www.comfygen.com/cost-to-develop-fule-delivery-app-like-cafu' class='text-blue-600 font-semibold'>on-demand fuel delivery app like CAFU</a> that enables doorstep fuel delivery with GPS navigation and smooth payment flows. Ideal for startups and enterprises looking to serve customers anytime, anywhere.",
+      "Build an <a href='https://www.comfygen.com/blog/cost-to-develop-fuel-delivery-app-like-cafu/' class='text-blue-600 font-semibold'>on-demand fuel delivery app like CAFU</a> that enables doorstep fuel delivery with GPS navigation and smooth payment flows. Ideal for startups and enterprises looking to serve customers anytime, anywhere.",
     buttonText: "Contact Us",
   },
   {

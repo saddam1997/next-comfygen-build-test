@@ -338,7 +338,6 @@ const latesttech = [
   },
 ];
 
-
 const CardClone = [
   {
     image:

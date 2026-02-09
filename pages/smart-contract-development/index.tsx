@@ -393,7 +393,7 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Smart Contract Development Company | Secure Blockchain Apps
+          Smart Contract Development Company
         </title>
         <meta
           name="description"
@@ -503,7 +503,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Secure, Scalable & Business-Ready Blockchain Automation"
+          heading="smart contract development company"
           ptag="Comfygen is a leading smart contract development company. We help enterprises build secure, reliable, and high-performance smart contracts that automate complex processes on the blockchain. Our expert blockchain developers design custom smart contract development solutions with a strong focus on precision, security, and scalability. developing NFT ecosystems, or automating enterprise workflows. Each smart contract is engineered to reduce risk, ensure transparency, and align seamlessly with your business objectives."
           li="Expert Blockchain & Smart Contract Developers"
           li1="Custom-Tailored Smart Contract Solutions"
