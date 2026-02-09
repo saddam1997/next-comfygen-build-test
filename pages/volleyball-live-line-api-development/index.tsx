@@ -112,7 +112,7 @@ const organizationData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Comfygen - Best Vollyball Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
+  "url": "https://www.comfygen.com/volleyball-live-line-api-development",
   "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
   "sameAs": [
     "https://twitter.com/comfygentech",

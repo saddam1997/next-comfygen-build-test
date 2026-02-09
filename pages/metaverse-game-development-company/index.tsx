@@ -248,7 +248,7 @@ export default function Ecommerce(props) {
         />
         <link
           rel="canonical"
-          href="https://www.comfygen.com/media/metaverse-game-development-company"
+          href="https://www.comfygen.com/metaverse-game-development-company"
         />
         <meta
           name="robots"

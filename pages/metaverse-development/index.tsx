@@ -190,38 +190,7 @@ export default function Ecommerce(props) {
     },
   ];
 
-  const techDataForPage1 = {
-    All: [
-      {
-        img: "https://www.comfygen.com/image/hero-section-metaverse-gaming-development.webp",
-        head: "Blockchain-Based Metaverse Gaming Development",
-        name: "At Comfygen, a leading Metaverse Development Company, we developed a futuristic, decentralized gaming Metaverse with a blockchain-powered economy, NFT-based assets, and Play-to-Earn (P2E) mechanisms. Our team integrated Solana smart contracts, DeFi mechanics, and an NFT marketplace to enhance the gaming experience, allowing players to own, trade, and explore digital assets in a fully immersive space economy.",
-        num: "1",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/metaverse-gaming-development",
-      },
-      {
-        img: "https://www.comfygen.com/image/hero-section-social-metaverse-development.webp",
-        head: "VKSChat – Social Metaverse Development",
-        name: "Comfygen played a pivotal role in enhancing VKSChat, a leading Social Metaverse where users interact in customizable virtual worlds using 3D avatars and VR technology. Our team implemented AI-powered avatars, VR networking solutions, and real-time multiplayer experiences to create an engaging and interactive digital environment.",
-        num: "2",
-        icons: [
-          "https://www.comfygen.com/image/react-portfolio-icon.svg",
-          "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-          "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-          "https://www.comfygen.com/image/figma-portfolio-icon.png",
-          "https://www.comfygen.com/image/html-portfolio-icon.svg",
-        ],
-        buttonLink: "/portfolio/social-metaverse-development",
-      },
-    ],
-  };
+
 
   const metaTags = countryNames.map((country, index) => (
     <meta key={index} name="og:country-name" content={country} />
@@ -414,7 +383,7 @@ export default function Ecommerce(props) {
         />
         <link
           rel="canonical"
-          href="https://www.comfygen.com/media/metaverse-development"
+          href="https://www.comfygen.com/metaverse-development"
         />
         <meta
           name="robots"

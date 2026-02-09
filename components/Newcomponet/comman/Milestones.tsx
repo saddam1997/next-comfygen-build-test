@@ -76,24 +76,24 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
       // className=" bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-800 py-6 mt-3 px-6"
       >
         {/* SEO HEADING */}
-        <h2 id="milestones-heading" className="sr-only">
+        {/* <h2 id="milestones-heading" className="sr-only">
           {milestone?.heading}
-        </h2>
+        </h2> */}
 
 
         {/* ===== SEO ONLY: Hidden Countries (FROM JSON) ===== */}
-        <ul className="sr-only">
+        {/* <ul className="sr-only">
           {milestone?.countries.map((country, index) => (
             <li key={country}>{country}</li>
           ))}
-        </ul>
+        </ul> */}
 
 
         <div className="container mx-auto space-y-4 lg:p-0 p-4">
           {/* ===== CARDS GRID ===== */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {stats?.map((item: any, index: any) => (
-              <article
+              <div
                 key={index}
                 className={cardClass}
                 itemScope
@@ -111,7 +111,7 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
                 >
                   {item.label}
                 </p>
-              </article>
+              </div>
             ))}
           </div>
         </div>

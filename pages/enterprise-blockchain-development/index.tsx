@@ -70,26 +70,6 @@ const BlogSection = dynamic(
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import CoreFeatureBlockchain from "../Newcomponet/SectionCompoent/CoreFeatureBlockchain";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import BenifitBlockchain from "../Newcomponet/SectionCompoent/BenifitBlockchain";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import IndustriesBlockchain from "../Newcomponet/SectionCompoent/IndustriesBlockchain";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -587,35 +567,28 @@ export default function rummy(props: any) {
         },
       ],
     },
+
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://www.comfygen.com/enterprise-blockchain-development/#breadcrumb ",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://www.comfygen.com/ "
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Blockchain Development",
-              "item": "https://www.comfygen.com/blockchain-development/ "
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Enterprise Blockchain Development",
-              "item": "https://www.comfygen.com/enterprise-blockchain-development/ "
-            }
-          ]
-        }
-      ]
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blockchain App Development",
+        "item": "https://www.comfygen.com/blockchain-development"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Enterprise Blockchain Development",
+        "item": "https://www.comfygen.com/enterprise-blockchain-development"
+      }]
     },
+
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -802,8 +775,8 @@ export default function rummy(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             bgImage="https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/hero.webp" />
-            <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <Milestones />
+          <section className="lg:py-16 py-10 bg-[#F5F5F9]">
             <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
               <div className="space-y-2">
                 <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -833,7 +806,7 @@ export default function rummy(props: any) {
             link="/about-us"
             linkText="Explore More" />
           {/* <ContactFromCenter /> */}
-          
+
           <CoreFeatureBlockchain
             heading="Key Features of Our Enterprise Blockchain Development Solutions"
             description="We deliver powerful and high-quality enterprise blockchain solutions designed to meet the growing needs of modern businesses. Our expert team builds secure, scalable, and feature-rich blockchain systems that support data integrity, performance, and compliance. We ensure every solution is optimized to help your business stay competitive in today’s digital-first landscape."
@@ -892,7 +865,7 @@ export default function rummy(props: any) {
           <Faq
             faqData={JSON_DATA.Frequently}
             title="Frequently Asked Questions (FAQs)" />
-  <BlogSection initialData={initialData} />
+          <BlogSection initialData={initialData} />
 
         </div></>
     </>
