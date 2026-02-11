@@ -115,8 +115,21 @@ const Appdevelopmentcost = ({
                 <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
                   <div className="modal-content">
                     <div className="flex justify-center lg:h-[600px]">
-                      <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/comfygen-images/home/contect-form.webp')]">
-                        <div className="space-y-3 ">
+                      <div className="w-[40%] hidden relative bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
+
+                        <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+                          <Image
+                            src="https://www.comfygen.com/comfygen-images/home/contect-form.webp"
+                            alt="Contact Background"
+                            width={700}
+                            height={400}
+                            sizes=""
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+
+
+                        <div className="space-y-3 absolute  bottom-4 left-4">
                           <div>
                             <Image
                               alt="COMFYGEN LIMITED Logo"
@@ -125,9 +138,10 @@ const Appdevelopmentcost = ({
                               width={186}
                             />
                             <p className="text-white text-base">
-                              Comfygen is a result-oriented IT Service Provider
-                              that builds secured and scaled apps to fulfill the
-                              needs of every business in various industries
+                              Comfygen is a result-oriented IT Service
+                              Provider that builds secured and scaled apps to
+                              fulfill the needs of every business in various
+                              industries
                             </p>
                           </div>
                           <div className="flex gap-3 items-center">
@@ -169,18 +183,20 @@ const Appdevelopmentcost = ({
                               />
                             </a>
 
+
                             {/* <a
-                                      target="_blank"
-                                      href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
-                                      aria-label="Join Comfygen on Teams"
-                                    >
-                                      <Image
-                                        alt="Teams Icon"
-                                        src="https://www.comfygen.com/image/join-comfygen-on-teams.svg"
-                                        height={40}
-                                        width={40}
-                                      />
-                                    </a> */}
+                                                     target="_blank"
+                                                     href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
+                                                     aria-label="Join Comfygen on Teams"
+                                                   >
+                                                     <Image
+                                                       alt="Teams Icon"
+                                                       src="https://www.comfygen.com/image/join-comfygen-on-teams.svg"
+                                                       height={40}
+                                                       width={40}
+                                                     />
+                                                   </a> */}
+
 
                             <a
                               target="_blank"

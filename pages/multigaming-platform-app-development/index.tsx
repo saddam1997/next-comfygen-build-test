@@ -7,9 +7,10 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import JSON_DATA from "./json/multigaming.json";
 import styles from "./styles.module.css";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -151,11 +152,11 @@ export default function rummy(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div className="lg:h-[90px]">
         <Header />
-      </LazyLoad>
+      </div>
       <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/multigaming-platform-app-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Multigaming Platform App Development Company"
             ptag="At comfygen, the ideal multigaming platform app development company In Canada & The USA improvement business enterprise. With an ardor for gaming and a dedication to innovation, we focus on creating wonderful multigaming apps that bring immersive and tasty studies to gamers worldwide. Our proficient team of specialists combines cutting-edge generation, seamless consumer experiences, and a deep knowledge of the gaming industry to deliver top-notch game development services & solutions tailored to your unique gaming imaginative and prescient. Be a part of us as we unlock the countless capability of multigaming and redefine the manner players join, compete, and discover in the virtual gaming realm."
@@ -165,6 +166,7 @@ export default function rummy(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/multigaming-platform-app-development-hero-img.webp"
           />
         </div>
 

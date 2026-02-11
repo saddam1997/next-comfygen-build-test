@@ -173,11 +173,11 @@ export default function Ecommerce(props:any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div className="lg:pt-[90px]">
         <Header />
-      </LazyLoad>
+      </div>
       {/* hero section */}
-      <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/nft-game-development-company-hero-img.webp')]">
+      <div className="">
         <HeroSectionForAllPages
           heading="NFT Game Development Company"
           ptag1="What’s left to wait now? Call us, and discuss about the ideas and plans striking your head. Consult about the decentralized gaming ideologies with experienced IT Experts; who can suggest for the best NFT Game Development Services & solutions resulting profitability in your software."
@@ -188,6 +188,7 @@ export default function Ecommerce(props:any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/nft-game-development-company-hero-img.webp"
         />
       </div>
       <AboutSection

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rummy.json";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import AboutSection from "../../components/old/components/AboutSection";
@@ -17,6 +17,7 @@ import ProcessSec from "../../components/old/components/ProcessSec";
 import ModelsSec from "../../components/old/components/ModelsSec";
 import SolutionSec from "../../components/old/components/SolutionSec";
 import { IconAdjustmentsStar, IconBubbleText, IconClock, IconDeviceGamepad2, IconLock, IconMoneybag, IconShare, IconShieldCheck, IconTrophy, IconUserCircle } from '@tabler/icons-react';
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -488,11 +489,11 @@ export default function rummy(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div className="lg:pt-[100px]">
         <Header />
-      </LazyLoad>
+      </div>
       <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/rummy-game-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Rummy Game Development Company  "
             ptag="Meet the expertised online game app developers to build agile rummy game applications. Comfygen is specialized in building realistic rummy game applications  with the integrations of some latest advancements and tech trends. The clientele base will receive a range of gaming development solutions; such as Point Rummy, Pool Rummy, or Deal Rummy. Being the one best leading rummy game app development company In Canada & The USA; we believe in elevating one’s experience during their gameplay with some exciting stages. Be ready to be the dominated competitor to other gaming development platforms, and accelerate with your application in the marketplace."
@@ -502,6 +503,7 @@ export default function rummy(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/rummy-game-development-hero-img.webp"
           />
         </div>
 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import Faq from "../../components/old/components/Faq";
@@ -15,6 +15,7 @@ import ModelsSec from "../../components/old/components/ModelsSec";
 import ConsultancyApproach from "../../components/old/components/ConsultancyApproach";
 import AboutSection from "../../components/old/components/AboutSection";
 import ServicesSec from "../../components/old/components/ServicesSec";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -362,7 +363,7 @@ export default function Ecommerce(props) {
           <Header />
         </LazyLoad>
       </div>
-      <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/board-game-development-hero-img.webp')]">
+      <div className="lg:pt-[80px]">
         <HeroSectionForAllPages
           heading="Board Game Development Company"
           ptag="Are you looking for quality board game development services ? Comfygen is right here to provide you with nice board game development solutions with the support of a modern and nicely skilled group of game designers, testers, and developers. We are one of the main board game development company In India & The USA, giving you a nice roadmap to increase your board game."
@@ -372,6 +373,7 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage='https://www.comfygen.com/herosection/board-game-development-hero-img.webp'
         />
       </div>
       <AboutSection

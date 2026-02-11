@@ -66,7 +66,7 @@ const BlogSection = dynamic(
 
 
 
-export default function Altcoin(props:any) {
+export default function Altcoin(props: any) {
   let { initialData } = props;
 
   let { Modus } = JSON_DATA;
@@ -271,12 +271,12 @@ export default function Altcoin(props:any) {
           property="og:type"
           content="Hire Best IOT App development Company In India | offshore Iot App developer or Programmers"
         />
-         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
 
-        <Header/>
+      <Header />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/iot-development-company-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Top Rated IoT Development Company in India"
             ptag="Comfygen is a top rated IoT development company in India helping businesses build smart, secure, and scalable IoT solutions. We offer custom IoT app and software development services including device integration, cloud connectivity, real-time monitoring, and data analytics."
@@ -291,12 +291,13 @@ export default function Altcoin(props:any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/iot-development-company-hero-img.webp"
           />
         </div>
-        <Milestones/>
+        <Milestones />
 
 
-                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Explore Our Cutting-Edge IoT Development Services for Smart Solutions</h2>
@@ -307,7 +308,7 @@ export default function Altcoin(props:any) {
             </div>
           </div>
         </section>
-        <AboutSection 
+        <AboutSection
           heading="Reliable IoT App Development Company in India"
           description1="At Comfygen, we specialize in custom IoT development services in India, delivering innovative, scalable, and secure IoT mobile app development solutions tailored to diverse industries. Our expert IoT app developers design smart, connected ecosystems that enhance automation, efficiency, and data-driven decision-making. From IoT app development to hardware integration, cloud computing, and AI-powered analytics, we offer end-to-end custom IoT app development solutions."
           description2="As a leading IoT app development agency in India, we help businesses transform operations with smart devices, real-time monitoring, and advanced connectivity. Partner with us to build cutting-edge IoT software solutions that drive growth and innovation. Get in touch today!"
@@ -343,8 +344,8 @@ export default function Altcoin(props:any) {
               </div>
             </div>
           </div>
-        </section> 
-        
+        </section>
+
 
         <section className="py-8">
           <Portfolio
@@ -372,7 +373,7 @@ export default function Altcoin(props:any) {
         <section className=" 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py-10">
           <div className="flex flex-col justify-center text-center">
             <h2 className=" text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem] capitalize">
-            Check Out Our Different IoT Models For Business
+              Check Out Our Different IoT Models For Business
             </h2>
             <p>At Comfygen, we offer solutions for different IoT models for different business types for easier access. We offer highly flexible engagement models based on the client's needs.</p>
           </div>
@@ -432,7 +433,7 @@ export default function Altcoin(props:any) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

@@ -533,7 +533,7 @@ export default function Ecommerce(props: any) {
 
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Blockchain DApp Development Company"
             ptag="Grow your business with Comfygen’s expert DApp development services. As a leading decentralized application development company, we build secure, scalable, and user-friendly blockchain applications for DeFi platforms, NFT marketplaces, metaverse projects, gaming, and enterprise use cases. Our blockchain experts deliver high-performance smart contracts and seamless Web3 integration to ensure reliability, scalability, and future-ready innovation."
@@ -547,6 +547,7 @@ export default function Ecommerce(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp"
           />
         </div>
         <Milestones />

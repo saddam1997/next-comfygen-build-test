@@ -520,9 +520,9 @@ export default function Ecommerce(props) {
       </Head>
 
         <Header />
-      <div className="overflow-hidden lg:pt-[90px]">
+      <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cener-center bg-left bg-[url('https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_hero.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Best Multicurrency wallet development company"
             ptag="Comfygen, Best Multicurrency wallet development company specializes in creating multicurrency crypto wallets that allow individuals and enterprises to store, send, and receive multiple cryptocurrencies on a single platform. Designed for both startups and established businesses, our wallets ensure global accessibility, seamless transactions, and maximum protection of digital assets."
@@ -537,6 +537,7 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_hero.webp"
           />
         </div>
         <AboutSection

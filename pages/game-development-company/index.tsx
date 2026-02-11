@@ -530,7 +530,7 @@ export default function MultiChain(props) {
         <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/game-development/game_hero.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Top Game Development Company"
             ptag="Comfygen is a leading game development company specializing in mobile, 2D/3D, AR/VR, blockchain, and metaverse game development. We deliver high-performance, engaging, and scalable gaming solutions tailored for startups, enterprises, and global brands. Transform your game idea into reality with our expert developers."
@@ -540,11 +540,11 @@ export default function MultiChain(props) {
             li1="Next-Gen Technologies"
             li2="Custom & Scalable Solutions"
             li3="End-to-End Development"
-
             openModal={openModal}
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/game-development/game_hero.webp"
           />
         </div>
         <AboutSection

@@ -96,8 +96,8 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
               <div
                 key={index}
                 className={cardClass}
-                itemScope
-                itemType="https://schema.org/QuantitativeValue"
+                // itemScope
+                // itemType="https://schema.org/QuantitativeValue"
               >
                 <h3
                   className="text-[27px] font-bold tabular-nums min-h-[34px]"

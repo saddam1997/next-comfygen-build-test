@@ -173,6 +173,7 @@ const DeliverySection = ({
     apps = appsadata
 }) => {
 
+   console.log("hideUrl", hideUrl);
 
     const [visibleCount, setVisibleCount] = useState(8);
 
@@ -227,15 +228,15 @@ const DeliverySection = ({
                                 <h3 className="text-lg font-semibold text-gray-900 mb-2 transform translate-y-4 group-hover:text-blue-500 group-hover:translate-y-0 transition-transform duration-500 delay-100">
 
 
-                                    <span>{app.title}</span>
+                                    {/* <span>{app.title}</span> */}
 
-                                    {/* {app.link ? (
+                                    {app.link ? (
                                         <Link href={app.link}>
                                             {app.title}
                                         </Link>
                                     ) : (
                                         <span>{app.title}</span>
-                                    )} */}
+                                    )}
 
                                 </h3>
                                 <p

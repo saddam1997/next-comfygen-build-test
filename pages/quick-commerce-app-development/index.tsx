@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./quick-commerce-app-development.json";
-import {
-  IconBook,
-  IconSchool,
-  IconBrain,
-  IconAtom,
-  IconLanguage,
-  IconClipboardCheck,
-} from "@tabler/icons-react";
+
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
@@ -385,7 +378,7 @@ export default function ClinicalApp(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development1.webp')]">
+
           <HeroSectionForAllPages
             heading="Top Quick Commerce App Development Company "
             ptag="Build ultra-fast delivery platforms with Comfygen, a leading Quick Commerce App Development Company delivering high-performance Q-commerce solutions for startups and enterprises. We specialize in Quick Commerce App Development for grocery, pharmacy, food, and daily-need brands, enabling 10–30 minute deliveries with real-time operations."
@@ -401,8 +394,9 @@ export default function ClinicalApp(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development1.webp"
           />
-        </div>
+   
 
         <Milestones />
 

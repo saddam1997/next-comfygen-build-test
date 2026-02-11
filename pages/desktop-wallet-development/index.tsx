@@ -492,7 +492,7 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
-          <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp')]">
+          <div className="">
             <HeroSectionForAllPages
               heading="Crypto Desktop Wallet Development Service"
               ptag="Comfygen specializes in Crypto Desktop Wallet Development that helps businesses, traders, and enterprises with secure, scalable, and user-friendly multi-platform crypto wallets. Our crypto web & desktop wallet development solutions combine enterprise-level security with seamless accessibility across web browsers and desktop applications, ensuring users can manage, trade, and store digital assets without compromise."
@@ -507,6 +507,7 @@ export default function Ecommerce(props: any) {
               talkToExpertModal={talkToExpertModal}
               setTalkToExpertModal={setTalkToExpertModal}
               closeModal={closeModal}
+              bgImage="https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp"
             />
           </div>
         </div>

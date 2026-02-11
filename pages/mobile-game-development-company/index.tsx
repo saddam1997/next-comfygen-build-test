@@ -185,7 +185,7 @@ export default function Mobile(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
 
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mobile-game-development-company-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Top Mobile Game Development Company in India"
             ptag="Comfygen is a trusted mobile game development company in India delivering engaging, high-performance games for startups and enterprises. Our expert game developers build custom Android and iOS mobile games with stunning graphics, smooth gameplay, and scalable architecture to help businesses grow, engage users, and boost revenue."
@@ -199,6 +199,7 @@ export default function Mobile(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/mobile-game-development-company-hero-img.webp"
           />
         </div>
         <Milestones/>

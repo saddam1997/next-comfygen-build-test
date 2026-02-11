@@ -414,7 +414,7 @@ export default function Mobile(props) {
         <Header />
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/education-app-development-company-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Top Education App Development Company in Canada"
             ptag="Comfygen is a leading education app development company in Canada, creating innovative and engaging apps for schools, colleges, and EdTech startups. Our expert developers deliver high-performance, user-friendly learning apps tailored to your needs, helping you engage students, streamline learning, and grow your EdTech business."
@@ -429,6 +429,7 @@ export default function Mobile(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/education-app-development-company-hero-img.webp"
           />
         </div>
         <Milestones />

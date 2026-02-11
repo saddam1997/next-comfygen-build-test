@@ -389,7 +389,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
 
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/smart-contract-mlm-software-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Smart Contract MLM Software Development Company"
             ptag="As a trusted Smart Contract MLM Software Development Company, we help you take your multi-level marketing business to the next level. Our blockchain-powered MLM software ensures secure, transparent transactions, automates commission management, and empowers you to scale globally."
@@ -403,6 +403,7 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/smart-contract-mlm-software-hero-img.webp"
           />
         </div>
 
