@@ -139,8 +139,21 @@ export default function HeroSectionForAllPages(props: any) {
                   <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
                     <div className="modal-content">
                       <div className="flex justify-center lg:h-[600px]">
-                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/comfygen-images/home/contect-form.webp')]">
-                          <div className="space-y-3 ">
+                        <div className="w-[40%] hidden relative bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
+
+                          <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+                            <Image
+                              src="https://www.comfygen.com/comfygen-images/home/contect-form.webp"
+                              alt="Contact Background"
+                              width={700}
+                              height={400}
+                              sizes=""
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+
+
+                          <div className="space-y-3 absolute  bottom-4 left-4">
                             <div>
                               <Image
                                 alt="COMFYGEN LIMITED Logo"
@@ -224,7 +237,7 @@ export default function HeroSectionForAllPages(props: any) {
                             </div>
                           </div>
                         </div>
-                        <div className="lg:w-[60%] w-full mt-8">
+                        <div className="lg:w-[60%] w-full z-20">
                           <div className="modal-header border-b-0 flex justify-end items-center p-4">
                             <button
                               type="button"
