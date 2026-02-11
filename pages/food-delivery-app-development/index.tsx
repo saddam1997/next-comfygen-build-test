@@ -677,7 +677,7 @@ export default function Ecommerce(props) {
           <ClientStories />
         </div>
 
-        <DeliverySection  hideUrl="https://www.comfygen.com/delivery-app-development" />
+        <DeliverySection  hideUrl="https://www.comfygen.com/food-delivery-app-development"  />
 
         <HireDeveloper
           heading="Hire Food Delivery App Developers in India"

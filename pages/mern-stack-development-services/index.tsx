@@ -111,7 +111,7 @@ export default function Stack(props: any) {
 
         <div className="">
           <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/mern-stack-development-company-heri-img.webp')]">
+            <div className="">
               <HeroSectionForAllPages
                 heading="MERN Stack Development Company"
                 ptag="Comfygen is a reliable MERN Stack development company in Jaipur, India, specializing in building secure, scalable, and high-performing web applications for startups and enterprises. Our experienced MERN developers use modern technologies—MongoDB, Express.js, React, and Node.js—to deliver powerful solutions for eCommerce, healthcare platforms, fintech applications, and more. We focus on performance, usability, and long-term scalability to help businesses grow faster in the digital space."
@@ -125,6 +125,7 @@ export default function Stack(props: any) {
                 talkToExpertModal={talkToExpertModal}
                 setTalkToExpertModal={setTalkToExpertModal}
                 closeModal={closeModal}
+                bgImage="https://www.comfygen.com/herosection/mern-stack-development-company-heri-img.webp"
               />
             </div>
           </div>

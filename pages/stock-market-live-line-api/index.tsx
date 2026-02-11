@@ -322,7 +322,7 @@ export default function Ecommerce(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/comfygen-images/stock-market-live-line-api/stock-market-live-line-api-hero.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Stock Market Live Line API Development Company"
             subhead="Your Trusted Stock Market Live Line App Development Company for Real-Time Financial Data Solutions."
@@ -334,6 +334,7 @@ export default function Ecommerce(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/comfygen-images/stock-market-live-line-api/stock-market-live-line-api-hero.webp"
           />
         </div>
 

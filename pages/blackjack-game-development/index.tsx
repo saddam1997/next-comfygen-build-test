@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blackjack.json";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import Faq from "../../components/old/components/Faq";
@@ -14,6 +14,7 @@ import ServicesSec from "../../components/old/components/ServicesSec";
 import SolutionSec from "../../components/old/components/SolutionSec";
 import { IconDevices, IconLayoutDashboard, IconLayoutGridAdd, IconLivePhoto, IconMessageCircle, IconShieldCheck, IconUsers } from '@tabler/icons-react';
 import { IconShoppingCart, } from '@tabler/icons-react';
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
 });
@@ -197,12 +198,12 @@ export default function Altcoin(props) {
         />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+        <div >
           <Header />
-        </LazyLoad>
+        </div>
       </div>
       <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/blackjack-game-development-hero-img.webp')]">
+        <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
             heading="Blackjack Game Development Company"
             ptag="Hit the Jackpot with the Ultimate Blackjack Game Development Company In India & The USA - Comfygen is one of the best mobile and game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them."
@@ -212,6 +213,7 @@ export default function Altcoin(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/blackjack-game-development-hero-img.webp"
           />
         </div>
         <AboutSection

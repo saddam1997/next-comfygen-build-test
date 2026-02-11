@@ -612,7 +612,7 @@ export default function Altcoin(props) {
 
       </div>
       <div className="overflow-hidden lg:pt-[120px]">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/chess-game-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Chess Game Development Company"
             ptag="Welcome to Comfygen - Your Ultimate Chess Game Development Partner"
@@ -623,6 +623,7 @@ export default function Altcoin(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/chess-game-development-hero-img.webp"
           />
         </div>
 

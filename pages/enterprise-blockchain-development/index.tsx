@@ -442,37 +442,7 @@ export default function rummy(props: any) {
         "@id": "https://www.comfygen.com/enterprise-blockchain-development"
       }
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "https://maps.app.goo.gl/WRvQs16yDQ624dda6",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-9587867258",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd",
-        "addressLocality": "Jaipur",
-        "postalCode": "302019",
-        "addressCountry": "IN",
-        "addressRegion": "IN"
-      },
-      "priceRange": "Contact Us",
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://www.instagram.com/comfygen_technologies/",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.threads.com/@comfygen_technologies"
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Friday", "Thursday", "Wednesday", "Tuesday", "Monday"], "opens": "09:00", "closes": "19:30"
-        }]
-    }
-    ,
+
 
     {
       "@context": "https://schema.org",
@@ -497,8 +467,7 @@ export default function rummy(props: any) {
           "areaServed": [
             "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"], "availableLanguage": ["en", "hi"]
         }]
-    }
-    ,
+    },
 
     {
       "@context": "https://schema.org",
@@ -517,56 +486,7 @@ export default function rummy(props: any) {
         "reviewCount": "1124"
       }
     },
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.comfygen.com/private-blockchain-development/",
-          url: "https://www.comfygen.com/private-blockchain-development/",
-          name: "Private Blockchain Development Company",
-          isPartOf: {
-            "@id": "https://www.comfygen.com/#website",
-          },
-          primaryImageOfPage: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          },
-          image: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          },
-          thumbnailUrl:
-            "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp",
-          description:
-            "ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire.",
-          breadcrumb: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#breadcrumb",
-          },
-          inLanguage: "en-US",
-          potentialAction: [
-            {
-              "@type": "ReadAction",
-              target: [
-                "https://www.comfygen.com/private-blockchain-development/",
-              ],
-            },
-          ],
-        },
-        {
-          "@type": "ImageObject",
-          "@id":
-            "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          inLanguage: "en-US",
-          url: "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp",
-          contentUrl:
-            "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp",
-          width: 1080,
-          height: 600,
-        },
-      ],
-    },
+ 
 
     {
       "@context": "https://schema.org/",
@@ -755,9 +675,8 @@ export default function rummy(props: any) {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(jsonLdData),
             }} />
-        </Head><div className="">
+        </Head>
 
-        </div>
         <BlockChainHeader />
         <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages

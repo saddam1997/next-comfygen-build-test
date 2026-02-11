@@ -158,10 +158,7 @@ export default function PortfolioCarousel({ portfolio, heading }: any) {
                 />
 
                 <Link
-                  href={item.link}
-                  onClick={(e) => {
-                    if (preventClick.current) e.preventDefault();
-                  }}
+                 href={item.link}
                 >
                   <span className="inline-flex items-center mt-4 gap-2 border border-[#6C63FF]
                     text-[#6C63FF] px-6 py-2 rounded-full
@@ -227,20 +224,14 @@ export default function PortfolioCarousel({ portfolio, heading }: any) {
         <button
           onClick={prev}
           aria-label="Previous slide"
-          className="w-10 h-10 rounded-full border border-gray-300
-      flex items-center justify-center
-      hover:bg-black hover:text-white transition"
-        >
+          className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition">
           ←
         </button>
 
         <button
           onClick={next}
           aria-label="Next slide"
-          className="w-10 h-10 rounded-full border border-gray-300
-      flex items-center justify-center
-      hover:bg-black hover:text-white transition"
-        >
+          className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition">
           →
         </button>
       </div>

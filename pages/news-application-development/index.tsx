@@ -180,7 +180,7 @@ export default function News(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/news-application-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Top-rated News App Development Company in India & USA"
             ptag="Empower your media business with next-gen digital news solutions built for speed, security, and seamless user experience. Comfygen is a top news app development company in India & USA, specializing in custom news mobile apps and news portal development for publishers, broadcasters, and digital media startups. We build feature-rich news apps that deliver real-time updates, personalized feeds, and powerful monetization tools."
@@ -194,6 +194,7 @@ export default function News(props: any) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/news-application-development-hero-img.webp"
           />
         </div>
         <AboutSection

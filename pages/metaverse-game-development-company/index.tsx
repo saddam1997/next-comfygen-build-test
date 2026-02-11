@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 import Link from "next/link";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+;
 import LazyLoad from "react-lazy-load";
 import WhyChoose from "../../components/old/components/WhyChooseUs";
 import AboutSection from "../../components/old/components/AboutSection";
@@ -15,6 +15,7 @@ import ProcessSec from "../../components/old/components/ProcessSec";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import InfoSectionLeft from "../../components/old/components/InfoSectionLeft";
 import CardItem from "../../components/old/components/CardItem";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const Header = dynamic(() => import("../../components/old/components/Header"), {
   loading: () => <p>Loading...</p>,
@@ -134,97 +135,15 @@ const metaTags = countryNames.map((country, index) => (
   <meta key={index} name="og:country-name" content={country} />
 ));
 
-const ldJson = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Top Rated Metaverse Game Development Company | Comfygen",
-  url: "https://www.comfygen.com/media/metaverse-game-development-company",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "{search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
-const productschema = {
-  "@context": "http://www.schema.org",
-  "@type": "product",
-  brand: "Comfygen",
-  name: "Metaverse Game App Development Agency - Metaverse Game Application Development Company",
-  image:
-    "https://comfygen.com/img/explore-success-with-our-mobile-app-development-agency.webp",
-  description:
-    "Comfygen is a top-rated Metaverse Game Development Company. We provide the best Metaverse Blockchain Game Development services and custom metaverse game app development services to enterprises & startups worldwide.",
-  aggregateRating: {
-    "@type": "aggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1124",
-  },
-};
-const websiteSchema = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Top Metaverse Game Development Company | Comfygen",
-  url: "https://www.comfygen.com/media/metaverse-game-development-company",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "{search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  legalName: "Comfygen Pvt. Ltd.",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  foundingDate: "2019",
-  founders: [
-    {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-    {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-    addressLocality: "Vaishali Nagar",
-    addressRegion: "Jaipur, Rajasthan, India",
-    postalCode: "302021",
-    addressCountry: "India",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "customer support",
-    telephone: "+91 9587867258",
-    email: "sales@comfygen.com",
-  },
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
-export default function Ecommerce(props) {
+
+
+
+
+
+
+
+export default function Ecommerce(props:any) {
   const [showContent, setShowContent] = useState(false);
   let { initialData } = props;
 
@@ -246,90 +165,107 @@ export default function Ecommerce(props) {
           name="description"
           content="Comfygen is a best Metaverse Game development company In India & The USA that helps to create a game with high-end technologies. Comfygen offers a very unique 3D virtual gaming platform on any decentralized network. Contact us today!"
         />
-        <link
-          rel="canonical"
-          href="https://www.comfygen.com/metaverse-game-development-company"
-        />
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:facebook_title"
-          content="Metaverse Game Development Company | Metaverse Game Development Services | Metaverse Game App Development Services"
-        />
-        <meta
-          property="og:facebook_description"
-          content="Our certified metaverse game developers at Comfygen are the best metaverse game app programmers in the industry. Metaverse Game Development Services with end-to-end expertise. With metaverse game app development, turn ideas into reality!"
-        />
-        <meta
-          property="og:twitter_title"
-          content="Metaverse Development Company in the United States"
-        />
-        <meta
-          property="og:twitter_description"
-          content="Metaverse game development company in the United States, Comfygen provide you top notch services of metaverse game application development with any game platform services and solutions with bets metaverse game development Programmers."
-        />
-        <meta property="schema:type" content="Website" />
-        <meta name="copyright" content="Comfygen Private Limited" />
-        <meta property="schema:type" content="LocalBusiness" />
-        <meta name="language" content="en-us" />
-        <meta
-          name="abstract"
-          content="Top rated Metaverse Game Development Agency"
-        />
-        <meta
-          name="summary"
-          content="Leading Metaverse Game Development Firm"
-        />
-        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+
+        <meta name="keywords" content="Metaverse Game App Development, AR VR Game Development, Blockchain Metaverse Development, NFT Game Development, Play-to-Earn Metaverse Games, Multiplayer Virtual World Development, Web3 Game Development Solutions"/>
+
+        {/* <!-- Canonical Tag --> */}
+
+        <link rel="canonical" href="https://www.comfygen.com/metaverse-game-development-company " />
+        {/* <!-- Robots → */}
+
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+
+        {/* <!-- Compatibility Meta → */}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        {/* <!-- Viewport and Mobile Optimization → */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport-fit" content="cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
+        <meta name="apple-mobile-web-app-title" content="Metaverse Game Development Company" />
+
+        {/* <!-- New in iOS6 -->
+<!-- Author and Company Information --> */}
+
+        <meta name="author" content="Comfygen Technologies" />
+        <meta name="web-author" content="Comfygen Technologies" />
         <meta name="reply-to" content="sales@comfygen.com" />
-        <meta
-          name="owner"
-          content="A Founder is one of the individuals who helped establish a comprehensive Metaverse Game Development Company in India, the USA, the UK startup, or organization. They typically share the vision, passion, and responsibility for the success of the venture with other Founders. Founders can have varying levels of involvement."
-        />
-        <meta name="Best Metaverse Game Development Company' content='Empowering businesses with cutting-edge Metaverse game Development Services and solutions and Comfygen's experts metverse blockchain dApp game development services to drive innovation and sustainable growth in the digital economy." />
-        <meta
-          name="category"
-          content="Metaverse Game Development Company, Services - Metaverse blockchain dApp game development"
-        />
-        <meta name="coverage" content="Worldwide" />
+        <meta name="rights" content="Copyright Comfygen Technologies" />
+        <meta name="copyright" content="Comfygen Technologies" />
+
+
+        {/* <!-- SEO Meta --> */}
+
+        <meta name="googlebot" content="all" />
+        <meta name="revisit-after" content="3 days" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
-        <meta
-          name="subtitle"
-          content="Best Metaverse Game Development Company - Metaverse Game Development Solution Firm in India, The USA, UK"
-        />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="fb:page_id" content="110909321596135" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:latitude" content="26.912434°" />
-        <meta name="og:longitude" content="75.787271°" />
-        <meta
-          property="og:type"
-          content="Metaverse Game Development Service Provider"
-        />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="language" content="English" />
+
+        {/* <!-- Geo Location Meta --> */}
+
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="GB" />
+        <meta name="geo.region" content="AE" />
+        <meta name="geo.region" content="DE" />
+
+
+        {/* <!-- Open Graph (OG) Tag --> */}
+
+        <meta name='og:type' content='website' />
+        <meta name='og:site_name' content='Comfygen Technologies' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_CA" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_DE" />
+        <meta property="og:locale:alternate" content="en_AE" />
+        <meta name='fb:page_id' content='110909321596135' />
+        <meta name='og:email' content='sales@comfygen.com' />
+        <meta name='og:phone_number' content='+91-958-786-7258' />
+
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+
+
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Metverse Game App Development " />
+        <meta name="twitter:description" content="Build immersive Metaverse game apps with Comfygen. We develop AR/VR-powered, blockchain-enabled, multiplayer Metaverse games with NFTs, virtual economies, and real-time interactions for next-gen gaming experiences." />
+        <meta name="twitter:image" content=" OG Image link " />
+        <meta name="twitter:site" content="@Comfygen_Tech" />
+
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="add image URL" />
+        <meta property="og:image:secure_url" content="Add img URL" />
+        <meta property="og:image:alt" content="Metaverse Game App Development" />
+        <meta property="og:url" content=" https://www.comfygen.com/metaverse-game-development-company" />
+        <meta property="og:title" content="Football Live Line API Development Services | Comfygen" />
+        <meta property="og:description" content="Build immersive Metaverse game applications with Comfygen. We specialize in AR/VR game development, blockchain-based Metaverse platforms, NFT integration, multiplayer virtual worlds, and scalable Web3 gaming solutions." />
+
+
         {metaTags}
-        <script type="application/ld+json">{JSON.stringify(ldJson)}</script>
-        <script type="application/ld+json">
-          {JSON.stringify(organizationData)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(productschema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(websiteSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(organizationSchema)}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(JSON_DATA?.jsonLdData),
+          }} />
       </Head>
-      <LazyLoad height={80} offset={100}>
+
         <Header />
-      </LazyLoad>
-      <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/metaverse-game-development-hero-img.webp')]">
+
+      <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Metaverse Game Development Services"
           ptag1="Comfygen is a leading Metaverse game development company in India & the USA, specializing in the creation of immersive 3D Metaverse worlds. Our team of highly skilled game developers brings your imaginative game ideas to life by integrating cutting-edge technologies. Whether you're looking for unique worlds, innovative gameplay, or engaging virtual environments, we have the expertise to craft custom Metaverse game development solutions tailored to your needs."
@@ -342,6 +278,7 @@ export default function Ecommerce(props) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/metaverse-game-development-hero-img.webp"
         />
       </div>
       <AboutSection
@@ -557,7 +494,7 @@ export default function Ecommerce(props) {
       />
       <Faq
         faqData={JSON_DATA.Frequently}
-        title="Metaverse Game Development"
+        title="Frequently Asked Questions"
       />
       <BlogSection initialData={initialData} />
     </>

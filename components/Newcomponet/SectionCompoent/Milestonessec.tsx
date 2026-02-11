@@ -119,10 +119,10 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
 
         {/* ===== TOP ROW ===== */}
         <div className="grid grid-cols-2 gap-4">
-          <article
+          <div
             className={cardClass}
             itemScope
-            itemType="https://schema.org/QuantitativeValue"
+            // itemType="https://schema.org/QuantitativeValue"
           >
             <h3
               className="text-[27px] font-bold tabular-nums min-h-[34px]"
@@ -133,12 +133,12 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
             <p className="text-[18px]" itemProp="description">
               Years of Experience
             </p>
-          </article>
+          </div>
 
-          <article
+          <div
             className={cardClass}
             itemScope
-            itemType="https://schema.org/QuantitativeValue"
+            // itemType="https://schema.org/QuantitativeValue"
           >
             <h3
               className="text-[27px] font-bold tabular-nums min-h-[34px]"
@@ -149,15 +149,15 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
             <p className="text-[18px]" itemProp="description">
               Projects Delivered
             </p>
-          </article>
+          </div>
         </div>
 
         {/* ===== BOTTOM ROW ===== */}
         <div className="grid grid-cols-2 gap-4">
-          <article
+          <div
             className={cardClass}
             itemScope
-            itemType="https://schema.org/QuantitativeValue"
+            // itemType="https://schema.org/QuantitativeValue"
           >
             <h3
               className="text-[27px] font-bold tabular-nums min-h-[34px]"
@@ -168,15 +168,15 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
             <p className="text-[18px]" itemProp="description">
               Happy Clients
             </p>
-          </article>
+          </div>
 
-          <article className={cardClass}>
+          <div className={cardClass}>
             <h3 className="text-[24px] font-bold min-h-[32px] min-w-[140px] inline-block">
               {countryText}
               <span className="animate-pulse">|</span>
             </h3>
             <p className="text-[18px]">Countries Served</p>
-          </article>
+          </div>
         </div>
 
       </div>

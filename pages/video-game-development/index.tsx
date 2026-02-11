@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/video.json";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import Faq from "../../components/old/components/Faq";
 import CallToAction from "../../components/old/components/CallToAction";
@@ -17,6 +17,7 @@ import { IconBolt, IconBook, IconGhost, IconMap, IconPhotoVideo, IconPlayFootbal
 import { IconHeart, } from '@tabler/icons-react';
 import PortfolioSec from "../../components/old/components/PortfolioSec";
 import ModelsSec from "../../components/old/components/ModelsSec";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
 const Header = dynamic(() => import("../../components/old/components/Header"), {
@@ -267,11 +268,11 @@ export default function rummy(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div className="lg:pt-[100px]">
         <Header />
-      </LazyLoad>
+      </div>
       <div className="overflow-hidden">
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/video-game-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Best Video Game Development Service"
             ptag="Our video game development service is dedicated to creating immersive, high-quality gaming experiences that captivate players and stand out in the competitive market. We combine innovative design, advanced technologies, and a passion for gaming to deliver games that are both engaging and visually stunning. Whether it’s a mobile game, console game, or VR experience, we offer end-to-end development to bring your vision to life."
@@ -286,6 +287,7 @@ export default function rummy(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/video-game-development-hero-img.webp"
           />
         </div>
         <AboutSection

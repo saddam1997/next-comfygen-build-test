@@ -160,7 +160,7 @@ export default function Altcoin(props: any) {
 
         <div className="">
           <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/node-js-development-company-hero-img.webp')]">
+            <div className="">
               <HeroSectionForAllPages
                 heading="Node.js Development Company in Jaipur, India"
                 ptag="Comfygen is a trusted Node.js development company in Jaipur, India, delivering fast, scalable, and reliable web and application solutions. Our experienced Node.js developers build real-time, performance-driven applications tailored to your business needs. Using modern Node.js frameworks and best practices, we create custom web and app solutions that enhance efficiency, support scalability, and drive measurable business growth."
@@ -174,6 +174,7 @@ export default function Altcoin(props: any) {
                 talkToExpertModal={talkToExpertModal}
                 setTalkToExpertModal={setTalkToExpertModal}
                 closeModal={closeModal}
+                bgImage="https://www.comfygen.com/herosection/node-js-development-company-hero-img.webp"
               />
             </div>
           </div>

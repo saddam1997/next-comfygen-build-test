@@ -13,9 +13,10 @@ import JSON_DATA from "./omaha.json";
 import WhiteNavButton from "../../components/old/components/button/WhiteNavButton";
 import ConnectWithExpertButton from "../../components/old/components/button/ConnectWithExpertButton";
 import ConnectWithExpertButtonHoverEffect from "../../components/old/components/button/ConnectWithExpertButtonHoverEffect";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import LazyLoad from "react-lazy-load";
 import WhyChoosee from "../../components/old/components/WhyChooseUs";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const OmahaServices = dynamic(() => import("./components/OmahaServices"), {
   loading: () => <p>Loading...</p>,
@@ -253,11 +254,11 @@ export default function Altcoin(props) {
           content="Omaha Poker Game Development Software"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
+      <div className="">
         <Header />
-      </LazyLoad>
+      </div>
       <div className="overflow-hidden ">
-        <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/omaha-poker-game-development-hero-img.webp')]">
+        <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
             heading="Omaha Poker Game Development Company"
             ptag="At the forefront of the Omaha Poker game development industry, Comfygen emerged as a prominent and accomplished company. Specializing in Omaha Poker game software development, we are your reliable providers of top-notch solutions. With an array of services ranging from crafting enticing Omaha Poker game websites to offering the option to hire dedicated Omaha Poker game developers, we cater to your every need. "
@@ -267,6 +268,7 @@ export default function Altcoin(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/omaha-poker-game-development-hero-img.webp"
           />
         </div>
 

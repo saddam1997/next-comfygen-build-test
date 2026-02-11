@@ -137,7 +137,7 @@ export default function Altcoin(props: any) {
       <div className='overflow-hidden lg:pt-[100px]'>
         <div className="">
           <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/python-development-company-hero-img.webp')]">
+            <div className="">
               <HeroSectionForAllPages
                 heading='Python Development Company'
                 ptag="Comfygen is a trusted Python development company in India and the USA, delivering scalable, secure, and high-performance web and mobile applications. Our experienced Python developers build custom solutions using modern frameworks to meet diverse business requirements across industries."
@@ -152,6 +152,7 @@ export default function Altcoin(props: any) {
                 talkToExpertModal={talkToExpertModal}
                 setTalkToExpertModal={setTalkToExpertModal}
                 closeModal={closeModal}
+                bgImage="https://www.comfygen.com/herosection/python-development-company-hero-img.webp"
               />
             </div>
           </div>

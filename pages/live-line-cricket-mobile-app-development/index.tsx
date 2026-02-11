@@ -428,7 +428,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         {/* hero section */}
-        <div className="lg:bg-center  bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/live-line-cricket-mobile-app-development-hero-img.webp')]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Fast Live Line Cricket Mobile App Development Company"
             ptag=" fast live line cricket mobile app with Comfygen. We are a trusted fast live line cricket mobile app development company delivering real-time ball-by-ball scores faster than TV. Our apps feature instant match alerts, live commentary, accurate stats, and a smooth UI to keep cricket fans engaged without delays, even during high-traffic matches."
@@ -442,6 +442,7 @@ export default function Ecommerce(props) {
             talkToExpertModal={talkToExpertModal}
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
+            bgImage="https://www.comfygen.com/herosection/live-line-cricket-mobile-app-development-hero-img.webp"
           />
         </div>
         <Milestones/>

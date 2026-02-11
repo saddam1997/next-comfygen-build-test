@@ -240,7 +240,7 @@ export default function Altcoin(props:any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <div>
-            <div className="lg:bg-center bg-no-repeat bg-cover bg-left bg-[url('https://www.comfygen.com/herosection/next-js-development-company-hero-img.webp')]">
+            <div className="">
               <HeroSectionForAllPages
                 heading="Next.js Development Company"
                 ptag="Build fast, scalable, and SEO-friendly web applications with Comfygen, a trusted Next.js development company. Our experienced Next.js developers leverage server-side rendering and modern JavaScript architecture to deliver high-performance, secure, and business-ready web solutions."
@@ -255,6 +255,7 @@ export default function Altcoin(props:any) {
                 talkToExpertModal={talkToExpertModal}
                 setTalkToExpertModal={setTalkToExpertModal}
                 closeModal={closeModal}
+                bgImage="https://www.comfygen.com/herosection/next-js-development-company-hero-img.webp"
               />
             </div>
           </div>
