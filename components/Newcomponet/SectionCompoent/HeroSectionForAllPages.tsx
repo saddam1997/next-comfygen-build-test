@@ -1,6 +1,8 @@
 
 import Image from "next/image";
 import ContactFrom from "../comman/ContactFrom";
+
+import style from "../Button/button.module.css"
 export default function HeroSectionForAllPages(props: any) {
 
 
@@ -96,7 +98,7 @@ export default function HeroSectionForAllPages(props: any) {
           </div>
           <div className="md:py-6 py-4">
             <button
-              className="flex btn btn-fix items-center gap-4 bg-white text-black font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition"
+              className={`${style.btnfix} flex items-center gap-2 text-base font-semibold  px-6 py-2.5 text-white border border-white rounded-full hover:bg-white hover:text-[#5556D1] transition-colors duration-300`}
               onClick={props.openModal}
             >
               {props.btnName}{" "}

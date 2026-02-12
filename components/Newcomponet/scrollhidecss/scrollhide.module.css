@@ -1,0 +1,15 @@
+.headScroll::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #F5F5F5;
+}
+
+.headScroll::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+
+.headScroll::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}

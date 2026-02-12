@@ -37,7 +37,7 @@ const AboutSection = (props: any) => {
               width={600}
               height={340}
               quality={80}
-              sizes="(max-width: 768px) 100vw, 1200px"
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-contain w-full h-full object-center bg-no-repeat"
             />
 

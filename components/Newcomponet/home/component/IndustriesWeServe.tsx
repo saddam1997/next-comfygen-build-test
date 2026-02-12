@@ -165,7 +165,7 @@ const IndustriesWeServe = ({
                 </div>
 
                 {/* MOBILE ONLY – HORIZONTAL SLIDER */}
-                <div className="lg:hidden overflow-x-auto scroll-hide">
+                <div className="lg:hidden overflow-x-auto ">
                     <div className="flex flex-nowrap gap-4 w-full py-6">
                         {industries.map((industry, index) => (
                             <div

@@ -314,7 +314,7 @@ export default function Mobile(props: any) {
         <Header />
       </div>
 
-      <div className="overflow-hidden lg:pt-[110px] ">
+      <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSection
             heading="Best Mobile App Development Company in Jaipur"
