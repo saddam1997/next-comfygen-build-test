@@ -42,12 +42,11 @@ export default function HeroSection(props: any) {
         >
             {/* ================= LCP IMAGE ================= */}
             <Image
-                src={props.bgImage || "/landing-hero-img.webp"}
+                src={props.bgImage}
                 alt="Comfygen Web & Mobile App Development"
                 fill
-                priority
-                fetchPriority="high"
-                sizes="100vw"
+
+                sizes="(max-width: 1024px) 0px, 100vw"
                 quality={75}
                 className=" object-cover object-center hidden lg:block"
             />
@@ -157,7 +156,7 @@ export default function HeroSection(props: any) {
             {/* ================= MODAL ================= */}
             {talkToExpertModal && (
                 <div
-                    className="fixed inset-0 z-50 overflow-y-auto bg-black/60"
+                    className="fixed inset-0  z-50 overflow-y-auto bg-black/60"
                     role="dialog"
                     aria-modal="true"
                 >

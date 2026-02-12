@@ -179,7 +179,10 @@ export default function career(props:any) {
         <Header />
       </LazyLoad>
       <div className="overflow-hidden lg:pt-[50px]">
-        <div className="lg:bg-right bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/career-hero-img.webp')]">
+        <div className="bg-gradient-to-r 
+                from-blue-100/70 
+                via-blue-200/40 
+                to-transparent ">
           <HeroSectionForCompany
             heading="Join Our Tech Revolution"
             ptag="Empowering Innovators to Shape the Future of IT."

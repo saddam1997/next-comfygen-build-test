@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
 import Image from "next/image";
-import Select from "react-select";
+import dynamic from "next/dynamic";
+// import Select from "react-select";
+
+const Select = dynamic(() => import("react-select"), {
+  ssr: false,
+});
 
 class ContactFrom extends Component<{}, any> {
   constructor(props) {
@@ -300,7 +305,7 @@ class ContactFrom extends Component<{}, any> {
                       })).find((ele) => ele.value === this.state.stdCode)
                       : null
                   }
-                  onChange={(selectedOption) => {
+                  onChange={(selectedOption: any) => {
                     this.setState({ stdCode: selectedOption.value });
                     // clear error if any
                     this.setState((prevState) => ({
@@ -308,7 +313,7 @@ class ContactFrom extends Component<{}, any> {
                     }));
                   }}
                   className="text-sm w-28 bg-transparent"
-                  getOptionValue={(option) => option.name}
+                  getOptionValue={(option: any) => option.name}
                   components={{
                     DropdownIndicator: () => null,
                     IndicatorSeparator: () => null,

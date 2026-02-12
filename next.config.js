@@ -39,6 +39,13 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
+  experimental: {
+    optimizePackageImports: [
+      'react-icons',
+      'lucide-react',
+      '@tabler/icons-react'
+    ],
+  },
   async redirects() {
     return redirects;
   },

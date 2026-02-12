@@ -4,23 +4,25 @@ import Image from "next/image";
 import ContactFrom from "../../../../components/old/components/ContactFrom";
 import { BsMicrosoftTeams } from "react-icons/bs";
 
+
+
 export default function MobileHero(props: any) {
- 
+
 
 
 
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-  
+
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 640); 
+      setIsMobile(window.innerWidth < 640);
     };
 
-   
+
     checkScreenSize();
 
-    
+
     window.addEventListener('resize', checkScreenSize);
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
@@ -33,14 +35,14 @@ export default function MobileHero(props: any) {
   return (
     <section
       className="lg:bg-center bg-no-repeat bg-cover bg-left md:pt-10 "
-    
+
 
       style={
         isMobile
           ? { backgroundColor: '#5951cd' }
           : { backgroundImage: `url(${props.bgImage})` }
       }
-      >
+    >
       <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="w-full 2xl:py-20 xl:py-16 py-10">
           <div className="space-y-4 ">
@@ -56,7 +58,7 @@ export default function MobileHero(props: any) {
               <p className="w-full mx-auto text-sm font-light text-white lg:text-base mt-2" dangerouslySetInnerHTML={{ __html: props.ptag1 }}>
               </p>
               <p className="w-full mx-auto text-sm font-light text-white lg:text-base mt-2" dangerouslySetInnerHTML={{ __html: props.ptag2 }}>
-                
+
               </p>
             </div>
 
@@ -112,29 +114,29 @@ export default function MobileHero(props: any) {
           </div>
 
           <div className="grid lg:grid-cols-2 sm:grid-cols-2 gap-4 py-6">
-                    <div className="bg-[#FFFFFF] py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
-                      <Image
-                        alt="COMFYGEN LIMITED Logo"
-                        src="https://www.comfygen.com/image/heroproject-delivered-icon.svg"
-                        height={60}
-                        width={61}
-                      />
-                      <p className="font-semibold text-[#000] text-base">
-                        250+ Project Delivered
-                      </p>
-                    </div>
-                    <div className="bg-[#fff] py-4 px-6 rounded-[14px] space-y-2 ">
-                      <Image
-                        alt="COMFYGEN LIMITED Logo"
-                        src="https://www.comfygen.com/image/happy-client-hero-icon.svg"
-                        height={60}
-                        width={61}
-                      />
-                      <p className="font-semibold text-[#000] text-base">
-                        100+ Total Happy Client
-                      </p>
-                    </div>
-                  </div>
+            <div className="bg-[#FFFFFF] py-4 px-4 rounded-[14px] flex lg:justify-center items-center gap-2">
+              <Image
+                alt="COMFYGEN LIMITED Logo"
+                src="https://www.comfygen.com/image/heroproject-delivered-icon.svg"
+                height={60}
+                width={61}
+              />
+              <p className="font-semibold text-[#000] text-base">
+                250+ Project Delivered
+              </p>
+            </div>
+            <div className="bg-[#fff] py-4 px-6 rounded-[14px] space-y-2 ">
+              <Image
+                alt="COMFYGEN LIMITED Logo"
+                src="https://www.comfygen.com/image/happy-client-hero-icon.svg"
+                height={60}
+                width={61}
+              />
+              <p className="font-semibold text-[#000] text-base">
+                100+ Total Happy Client
+              </p>
+            </div>
+          </div>
           <div className="md:py-6   ">
             <button
               className="btn btn-fix lazyloaded"
@@ -160,7 +162,7 @@ export default function MobileHero(props: any) {
           </div>
         </div>
 
-        
+
         <div className="w-full lg:flex justify-end items-end hidden">
           <Image
             src={props.img}
@@ -170,7 +172,7 @@ export default function MobileHero(props: any) {
           />
         </div>
 
-              
+
 
         <div>
           {props.talkToExpertModal && (
@@ -185,8 +187,20 @@ export default function MobileHero(props: any) {
                   <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
                     <div className="modal-content">
                       <div className="flex justify-center ">
-                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/image/modal-form-img.webp')]">
-                          <div className="space-y-3 ">
+                        <div className="w-[40%] hidden relative bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
+
+
+                          <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+                            <Image
+                              src="https://www.comfygen.com/image/modal-form-img.webp"
+                              alt="Contact Background"
+                              width={700}
+                              height={400}
+                              sizes=""
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div className="space-y-3 absolute  bottom-4 left-4">
                             <div>
                               <Image
                                 alt="COMFYGEN LIMITED Logo"
@@ -230,7 +244,7 @@ export default function MobileHero(props: any) {
 
                               <a
                                 target="_blank"
-                               href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
+                                href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
                                 aria-label="Join Comfygen on Teams"
                               >
                                 <Image
@@ -240,7 +254,7 @@ export default function MobileHero(props: any) {
                                   width={40}
                                 />
                               </a>
-                              
+
 
                               <a
                                 target="_blank"
@@ -290,13 +304,13 @@ export default function MobileHero(props: any) {
                 </div>
               </div>
 
-              
+
             </>
-            
+
           )}
-          
+
         </div>
-        
+
       </div>
 
     </section>

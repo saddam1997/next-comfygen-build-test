@@ -55,12 +55,12 @@ export default function about(props) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
+               
                     <Header />
-                </LazyLoad>
+                
             </div>
             <div className="overflow-hidden">
-                <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
+                <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
                     <CompanyHeroSection
                         heading="On-Demand Tutor Booking App"
                         subhead=""
