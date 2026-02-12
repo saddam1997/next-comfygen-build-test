@@ -91,7 +91,7 @@ export default function Portfolio(props) {
 
       <Header />
 
-      <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')] bg-cover bg-no-repeat">
+      <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
         <CompanyHeroSection
           heading="Our Portfolio"
           subhead="Work We Have Done For Some of Our Great Clients"

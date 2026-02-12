@@ -74,7 +74,7 @@ export default function BlogSection(props: any) {
                     {/* CONTENT */}
                     <div className="space-y-3">
                       <h3
-                        className="line-clamp-2 font-semibold text-xl text-black hover:text-[#5556D1]"
+                        className=" font-semibold text-xl text-black hover:text-[#5556D1]"
                         dangerouslySetInnerHTML={{ __html: element?.title }}
                       />
                       {element?.description && (

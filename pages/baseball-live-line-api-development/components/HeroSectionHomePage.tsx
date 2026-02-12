@@ -5,6 +5,8 @@ import { TbX } from "react-icons/tb";
 import ContactFrom from "../../../components/old/components/ContactFrom";
 
 
+
+
 export default function HeroSection(props: any) {
   const data = props.btnLink;
   if (!data) {
@@ -200,8 +202,21 @@ export default function HeroSection(props: any) {
                   <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 relative">
                     <div className="modal-content">
                       <div className="flex justify-center ">
-                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/image/modal-form-img.webp')]">
-                          <div className="space-y-4 ">
+                        <div className="w-[40%] hidden relative  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
+
+
+                          <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+                            <Image
+                              src="https://www.comfygen.com/image/modal-form-img.webp"
+                              alt="Contact Background"
+                              width={700}
+                              height={400}
+                              sizes=""
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+
+                          <div className="space-y-4 absolute  bottom-4 left-4">
                             <div className="space-y-4">
                               <Image
                                 alt="COMFYGEN LIMITED Logo"

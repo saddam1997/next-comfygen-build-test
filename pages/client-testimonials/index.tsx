@@ -447,7 +447,10 @@ export default function Altcoin(props: any) {
         <Header />
  
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="lg:bg-right bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/career-hero-img.webp')]">
+        <div className="lg:bg-right bg-no-repeat bg-cover bg-gradient-to-br 
+                from-blue-500/40 
+                via-blue-300/40
+                ">
           <HeroSectionForCompany
             heading="Client Testimonials"
             ptag="At Comfygen, our clients’ satisfaction is our greatest reward. Here’s what some of our valued clients have to say about working with us:"

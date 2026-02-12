@@ -29,10 +29,10 @@ export default function HeroSectionForAllPages(props: any) {
   }, []);
 
 
-    const ref = useRef(null);
+  const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -58,15 +58,15 @@ export default function HeroSectionForAllPages(props: any) {
         ? { backgroundColor: '#5951cd' }
         : { backgroundImage: `url(${props.bgImage})`, }
     }>
-    {/* {isMobile ? "TRUE ":"FALSE"} */}
+      {/* {isMobile ? "TRUE ":"FALSE"} */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto pt-10">
         <div className="w-full 2xl:py-20 xl:py-16 py-10">
           <div className="space-y-4">
             <div>
               <h1 className="text-white xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  " dangerouslySetInnerHTML={{ __html: props.heading }}>
-               
+
               </h1>
-               {/* {props.heading} */}
+              {/* {props.heading} */}
               <p className="w-full mx-auto text-2xl font-bold text-white lg:text-base mt-2">
                 {props.subhead}
               </p>
@@ -172,8 +172,24 @@ export default function HeroSectionForAllPages(props: any) {
                   <div className="modal-dialog modal-dialog-centered bg-white  rounded-xl shadow-lg z-[999] mx-auto 2xl:w-[50%] xl:w-5/6 lg:w-11/12">
                     <div className="modal-content">
                       <div className="flex justify-center ">
-                        <div className="w-[40%] hidden  bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 bg-[url('https://www.comfygen.com/image/modal-form-img.webp')]">
-                          <div className="space-y-3 ">
+                        <div className="w-[40%] hidden relative bg-center bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
+
+
+                          <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+                            <Image
+                              src="https://www.comfygen.com/image/modal-form-img.webp"
+                              alt="Contact Background"
+                              width={700}
+                              height={400}
+                              sizes=""
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+
+
+
+
+                          <div className="space-y-3 absolute bottom-4 left-4">
                             <div>
                               <Image
                                 alt="COMFYGEN LIMITED Logo"
@@ -257,7 +273,7 @@ export default function HeroSectionForAllPages(props: any) {
                                 />
                               </a>
 
-                      
+
 
                               <a
                                 target="_blank"

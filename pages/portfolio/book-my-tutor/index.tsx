@@ -67,7 +67,7 @@ export default function about(props: any) {
       </div>
 
       <div className="overflow-hidden" >
-        <div className="lg:py-[7rem] py-[5rem]  bg-no-repeat bg-cover bg-[url('https://www.comfygen.com/image/portfolio-hero-bg-img.webp')]">
+        <div className="lg:py-[1rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
           <CompanyHeroSection
             heading=" Book My Tutor - A Smart Tutor Booking App"
             subhead=""
