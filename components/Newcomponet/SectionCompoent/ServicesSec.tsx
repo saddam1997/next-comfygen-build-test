@@ -4,6 +4,8 @@ import router from "next/router";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
+import style from "../scrollhidecss/scrollhide.module.css"
+
 const ServicesSec = ({ servicesData = [] }) => {
   const [selectedService, setSelectedService] = useState(
     servicesData.length > 0 ? servicesData[0] : {}
@@ -19,7 +21,7 @@ const ServicesSec = ({ servicesData = [] }) => {
 
   return (
     <div className="flex flex-col lg:flex-row pt-10 lg:space-x-6 relative items-stretch">
-      <div className="md:space-y-4 space-y-2 w-full lg:pr-6 lg:h-[34rem] lg:overflow-y-auto overflow-hidden head-scroll lg:w-[30%]">
+      <div className={`${style.headScroll} md:space-y-4 space-y-2 w-full lg:pr-6 lg:h-[34rem] lg:overflow-y-auto overflow-hidden lg:w-[30%]`}>
         {servicesData.map((service, index) => {
           const isSelected = service.title === selectedService.title;
           return (

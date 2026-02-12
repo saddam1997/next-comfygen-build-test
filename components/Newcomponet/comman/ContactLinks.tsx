@@ -2,18 +2,20 @@ import { useState } from "react";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { FaTelegram } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
+import styles from "../Button/button.module.css";
+
 export default function ContactLinks() {
   const [show, setshow] = useState(true);
   return (
     <>
       <div className=" fixed z-40 lg:top-[350px]  bottom-4 right-0 lg:space-y-8 space-y-0 lg:space-x-0 space-x-4 lg:bg-transparent bg-slate-800 lg:p-0 p-3 rounded-lg lg:block hidden flex justify-center items-center">
-        <div className="social">
+        <div className={`${styles.social}`}>
           <a
             href="https://api.whatsapp.com/send?phone=919587867258"
             target="_blank"
             className="curser-pointer"
           >
-            <div className="social-btn bg-white">
+            <div className={`${styles.socialbtn} bg-white`}>
               <span>
                 <MdOutlineWhatsapp className="text-[#03A84E]" size={38} />
               </span>
@@ -27,7 +29,7 @@ export default function ContactLinks() {
             target="_blank"
             className="curser-pointer"
           >
-            <div className="social-btn bg-white">
+            <div className={`${styles.socialbtn} bg-white`}>
               <span>
                 <BsMicrosoftTeams className="text-[#0E72CF]" size={38} />
               </span>
@@ -41,7 +43,7 @@ export default function ContactLinks() {
             target="_blank"
             className="curser-pointer"
           >
-            <div className="social-btn bg-white">
+            <div className={`${styles.socialbtn} bg-white`}>
               <span>
                 <FaTelegram size={38} className="text-[#33A8DA]" />
               </span>

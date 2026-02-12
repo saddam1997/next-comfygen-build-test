@@ -35,7 +35,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                 <div className="hidden lg:block bg-white backdrop-blur-sm rounded-3xl p-8 shadow-2xl max-w-[1760px] h-full xl:h-[780px]">
                     <div className="grid lg:grid-cols-2 xl:grid-cols-[400px,1fr] gap-8 ">
                         {/* Services Menu */}
-                        <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 scroll-hide ">
+                        <div className="space-y-3 overflow-y-auto overflow-x-hidden h-[700px] pr-2 ">
                             {serviceskey.map((service: any) => (
                                 <ul
                                     key={service}
@@ -98,7 +98,7 @@ export default function Services({ heading = "", description = "", serviceskey =
                     </div>
                 </div>
 
-                <div className="lg:hidden space-y-3 lg:h-[700px] lg:overflow-y-auto pr-2 scroll-hide">
+                <div className="lg:hidden space-y-3 lg:h-[700px] lg:overflow-y-auto pr-2 ">
                     {serviceskey.map((service: any) => {
                         const isActive = activeService === service;
                         const data = servicedata?.[service] || {};
