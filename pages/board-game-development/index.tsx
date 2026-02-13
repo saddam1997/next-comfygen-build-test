@@ -4,28 +4,57 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../../components/old/components/WhyChooseUs";
-import Faq from "../../components/old/components/Faq";
-import HireDeveloper from "../../components/old/components/HireDeveloper";
-import CardItem from "../../components/old/components/CardItem";
-import IndustriesServe from "../../components/old/components/IndustriesServe";
-import ProcessSec from "../../components/old/components/ProcessSec";
-import ModelsSec from "../../components/old/components/ModelsSec";
-import ConsultancyApproach from "../../components/old/components/ConsultancyApproach";
-import AboutSection from "../../components/old/components/AboutSection";
-import ServicesSec from "../../components/old/components/ServicesSec";
+import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-const Header = dynamic(() => import("../../components/old/components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
+
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
+);
+
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
+
+const ConsultancyApproach = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: true }
+);
+
+const IndustriesServe = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+  { ssr: true }
+);
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const ModelsSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
+  { ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
+  { ssr: true }
+);
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: true }
 );
 
 
@@ -66,79 +95,6 @@ const Process = [
   },
 
 ];
-
-
-const countryNames = [
-  "US",
-  "CA",
-  "GB",
-  "AD",
-  "AU",
-  "AT",
-  "BS",
-  "BH",
-  "IO",
-  "KM",
-  "CU",
-  "AR",
-  "CW",
-  "CY",
-  "DK",
-  "DM",
-  "EG",
-  "FK",
-  "FI",
-  "FR",
-  "DE",
-  "GR",
-  "GL",
-  "HK",
-  "IS",
-  "IN",
-  "ID",
-  "IT",
-  "JP",
-  "JE",
-  "JO",
-  "KW",
-  "KG",
-  "KR",
-  "MX",
-  "FM",
-  "NZ",
-  "NI",
-  "OM",
-  "PE",
-  "PH",
-  "PL",
-  "PT",
-  "QA",
-  "RO",
-  "RU",
-  "SA",
-  "SG",
-  "SE",
-  "SZ",
-  "CH",
-  "TH",
-  "TR",
-  "TN",
-  "UA",
-  "UM",
-  "AE",
-  "039",
-  "155",
-  "154",
-  "151",
-  "150",
-];
-
-// const metaTags = countryNames.map((country, index) => (
-//   <meta key={index} name="og:country-name" content={country} />
-// ));
-
-
-
 
 
 
@@ -359,9 +315,9 @@ export default function Ecommerce(props) {
 
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+       
           <Header />
-        </LazyLoad>
+      
       </div>
       <div className="lg:pt-[80px]">
         <HeroSectionForAllPages
@@ -385,7 +341,7 @@ export default function Ecommerce(props) {
         link="/about-us"
         linkText="Explore More"
       />
-      <ContactFromCenter />
+      {/* <ContactFromCenter /> */}
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="space-y-2">

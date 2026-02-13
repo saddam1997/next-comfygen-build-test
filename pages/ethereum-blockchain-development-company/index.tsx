@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -69,82 +69,13 @@ const BlogSection = dynamic(
 );
 
 
-import { IconBrandSpeedtest, IconCloudSearch, IconDatabase, IconJewishStar, IconLink, IconLockOpen, } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const technologyData = [
-  {
-    num: "1",
-    title: "Highly Transparent",
-    desc: "An Ethereum Blockchain Development Company delivers transparency through decentralized databases, allowing stakeholders to track every process in real time. This eliminates data discrepancies, reduces conflicts, and ensures reliable and consistent development outcomes.",
-    img: <IconCloudSearch stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    num: "2",
-    title: "Trustless Transactions",
-    desc: "Ethereum development services enable trustless transactions, where two parties can interact securely without intermediaries. By removing the need for third-party verification, businesses save valuable time and money while ensuring efficient operations.",
-    img: <IconLockOpen stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "3",
-    title: "Seamless Interoperability",
-    desc: "A professional Ethereum Blockchain Development Company ensures interoperability across Ethereum and EVM-compatible networks. This allows businesses to exchange tokens, assets, and data seamlessly, enabling innovative multi-chain solutions that drive growth",
-    img: <IconLink stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "4",
-    title: "Better Decision Making",
-    desc: "With decentralization at its core, Ethereum solutions empower inclusive decision-making where no single entity controls outcomes. Businesses can involve stakeholders effectively, making governance and project development more democratic and efficient.",
-    img: <IconJewishStar stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "5",
-    title: "Efficient Data Coordination",
-    desc: "Ethereum development services streamline data coordination by automatically updating information across all nodes. This feature enhances accuracy, simplifies operations across departments, and ensures businesses scale without complexity.",
-    img: <IconDatabase stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-  {
-    num: "6",
-    title: "High Scalability & Performance",
-    desc: "An Ethereum Blockchain Development Company provides scalable solutions that grow with your business. From DeFi platforms to enterprise-grade apps, Ethereum ensures high performance and productivity with advanced scalability mechanisms.",
-    img: <IconBrandSpeedtest stroke={1.5} className="w-12 h-12" />, // Replace with suitable icon
-  },
-
-];
 
 
-const Process = [
-  {
-    title: "Requirement Analysis & Consultation",
-    description: "We begin by understanding your business goals and identifying how Ethereum solutions can add value. Our blockchain experts provide in-depth consultation to shape the project roadmap."
-  },
-  {
-    title: "Architecture & Smart Contract Design",
-    description: " Our Ethereum developers create a robust architecture and design smart contracts tailored to your use case, ensuring security, efficiency, and reliability."
-  },
-  {
-    title: "Development & Integration",
-    description: " Using Solidity, Web3.js, and other advanced tools, we develop custom DApps, tokens, or DeFi/NFT platforms while integrating them seamlessly with existing systems."
-  },
-  {
-    title: "Optimization & Security Enhancements",
-    description: " Before moving to full testing, we fine-tune performance, optimize gas fees, and apply additional security layers. This step ensures your Ethereum application runs efficiently while safeguarding it against potential risks."
-  },
-  {
-    title: "Testing & Auditing",
-    description: " Every solution undergoes rigorous testing and smart contract auditing to eliminate vulnerabilities, guaranteeing flawless and secure performance."
-  },
-  {
-    title: "Deployment & Launch",
-    description: " Once optimized, we deploy your Ethereum application on the blockchain, ensuring smooth launch and readiness for end-users."
-  },
-  {
-    title: "Ongoing Maintenance & Support",
-    description: " Our partnership doesn’t end at launch. We provide continuous monitoring, upgrades, and support to keep your Ethereum solution secure and scalable as your business grows."
-  },
 
-];
+
 
 
 
@@ -158,203 +89,6 @@ export default function Ecommerce(props:any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What makes Comfygen a top Ethereum blockchain development service provider?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Comfygen is a leading Ethereum blockchain development service provider, offering secure, scalable, and innovative blockchain solutions. Our expert developers specialize in building smart contracts, dApps, token development, and NFT marketplaces to meet diverse business needs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why should I hire a dedicated Ethereum developer from Comfygen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hiring a dedicated Ethereum developer from Comfygen ensures that you get a skilled professional who can create customized blockchain solutions tailored to your project. Our developers have extensive experience in smart contract development, DeFi applications, and Ethereum infrastructure."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What Ethereum blockchain development services does Comfygen offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Comfygen provides a wide range of Ethereum blockchain development services, including smart contract development, dApps creation, DeFi solutions, NFT marketplace development, and tokenization. Our team ensures secure and high-performance blockchain solutions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to develop an Ethereum-based application?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The development timeline for an Ethereum-based application depends on the project scope, features, and complexity. Typically, a simple dApp can take a few weeks, while more complex solutions like NFT marketplaces or DeFi applications may take several months."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries can benefit from Ethereum blockchain development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ethereum blockchain development benefits industries such as finance, healthcare, real estate, gaming, supply chain, and more. Businesses use Ethereum to enhance security, transparency, and efficiency in decentralized applications and smart contracts."
-        }
-      }
-    ]
-  };
-
-
-
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Ethereum Blockchain Development Service",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Comfygen is a leading Ethereum Blockchain Development Company offering DApp, DeFi, NFT, and smart contract solutions. Hire certified Ethereum developers to build secure, scalable, and future-ready blockchain applications.",
-      "url": "https://www.comfygen.com/ethereum-blockchain-development-company",
-      "mainEntityOfPage": "https://www.comfygen.com/ethereum-blockchain-development-company",
-      "areaServed": "Global",
-      "serviceType": [
-        "Ethereum DApp Development",
-        "Smart Contract Development",
-        "Ethereum Token Development",
-        "DeFi Development Solutions",
-        "NFT Marketplace Development",
-        "Ethereum Wallet & Exchange Development",
-        "Enterprise Ethereum Solutions"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    }
-    ,
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-    ,
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Ethereum Blockchain Development Company | Secure & Scalable Ethereum Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/ethereum-blockchain-development-company-about-img.webp",
-      "description": "Comfygen is a leading Ethereum Blockchain Development Company offering secure, scalable, and custom Ethereum solutions including DApps, DeFi platforms, NFTs, and smart contracts.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "245"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.comfygen.com/ "
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blockchain Development",
-          "item": "https://www.comfygen.com/blockchain-development"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Ethereum Blockchain Development",
-          "item": "https://www.comfygen.com/ethereum-blockchain-development-company"
-        }
-      ]
-    },
-
-
-
-    
-
-  ];
-
 
   return (
     <>
@@ -452,7 +186,7 @@ export default function Ecommerce(props:any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
 
@@ -513,7 +247,7 @@ export default function Ecommerce(props:any) {
         <SolutionSec
           heading="Our Ethereum Blockchain Development Solutions"
           subheading="Businesses choose a Custom Ethereum Blockchain Development Company for its ability to deliver secure, scalable, and future-ready solutions. With Ethereum’s smart contracts and decentralized infrastructure, companies can streamline operations, enhance transparency, and drive innovation in the evolving blockchain landscape."
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
         <TechStack
           title="Tech Stack we used for Ethereum Blockchain Development."
@@ -525,7 +259,7 @@ export default function Ecommerce(props:any) {
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Ethereum Blockchain Development Process</h2>
               <p className="text-base font-normal mt-2">At Comfygen, as a leading Ethereum Blockchain Development Company, we follow a proven and transparent process to deliver secure and scalable blockchain solutions. Our Ethereum blockchain development services are designed to align with your unique requirements while ensuring faster go-to-market and long-term success.</p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 

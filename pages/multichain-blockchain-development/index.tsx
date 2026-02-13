@@ -3,7 +3,8 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multichainblockchain.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
@@ -65,20 +66,8 @@ const BlogSection = dynamic(
 
 
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 const technologyData = [
   {
     img: <IconCode stroke={1.5} className="w-12 h-12" />,

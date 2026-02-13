@@ -95,12 +95,6 @@ const BlogSection = dynamic(
 );
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
 
 const Process = [
   {
@@ -557,7 +551,7 @@ export default function MultiChain(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

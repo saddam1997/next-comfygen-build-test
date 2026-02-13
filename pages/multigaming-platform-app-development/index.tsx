@@ -8,32 +8,34 @@ import Link from "next/link";
 import JSON_DATA from "./json/multigaming.json";
 import styles from "./styles.module.css";
 
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../../components/old/components/WhyChooseUs";
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const Advice = dynamic(() => import("../../components/old/components/Advice"), {
+const Advice = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Advice"), {
   loading: () => <p>Loading...</p>,
 });
 
+
+
+
+
+
+
+import WhyChoose from "../omaha-poker-game-development/components/WhyChooseUs";
+
+
+
+
 const WhycomfygenSection = dynamic(
-  () => import("../../components/old/components/WhycomfygenSection"),
+  () => import("../../components/Newcomponet/SectionCompoent/WhycomfygenSection"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const HireSection = dynamic(() => import("../../components/old/components/HireSection"), {
+const HireSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -212,7 +214,7 @@ export default function rummy(props) {
               </div>
             </section>
           </div>
-          <ContactFromCenter />
+
           <div className="md:py-10">
             <section className="items-center w-11/12 space-y-10 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto lg:flex  lg:space-x-10 md:space-y-0">
               <div className="w-full space-y-4  md:text-left">

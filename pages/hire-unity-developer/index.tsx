@@ -6,20 +6,19 @@ import Link from "next/link";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import LazyLoad from "react-lazy-load";
 import styles from './styles.module.css'
-const HeroSectionForm = dynamic(() => import('../../components/old/components/HeroSectionForm'), {
-  loading: () => <p>Loading...</p>,
-})
-const Header = dynamic(() => import('../../components/old/components/Header'), {
+import Header from "../../components/Newcomponet/layout/Header";
+
+
+const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
 
-const AdviceSection = dynamic(() => import('../../components/old/components/Advice'), {
+
+const AdviceSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Advice'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../../components/old/components/ContactFromCenter'), {
-  loading: () => <p>Loading...</p>,
-})
-const FaqSection = dynamic(() => import('../../components/old/components/FaqSection'), {
+
+const FaqSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Faq'), {
   loading: () => <p>Loading...</p>,
 })
 const BlogSection = dynamic(
@@ -89,9 +88,6 @@ export default function Unity(props) {
             imgW={550}
             imgH={500}
             altTag='Scale Up Your Team with Dedicated Unity Developers' />
-          <LazyLoad className="">
-            <ContactFromCenter />
-          </LazyLoad>
 
 
           <section className="overflow-hidden bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/unity-service-bg.webp")` }}>
@@ -110,22 +106,22 @@ export default function Unity(props) {
                             <Image src={img} alt="Casino Game Development Company in India" width={100} height={100} />
                           </div>
                           <div>
-                          <div className="text-2xl font-extrabold text-white">{title}</div>
-                          <p className="leading-snug text-white text-base mt-2 ">{decs}</p>
+                            <div className="text-2xl font-extrabold text-white">{title}</div>
+                            <p className="leading-snug text-white text-base mt-2 ">{decs}</p>
                           </div>
-                         
+
                         </div>
                       </div>
                     );
                   })}
                 </div>
                 <div>
-              <Link href="/contact-us" passHref={true}>
-                <button className="block text-base font-medium w-40 mx-auto active text-white  bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] rounded px-6 lg:py-3 py-2 text-center hover:text-white   lg:mt-0  cursor-pointer transition duration-300 relative">
-                  Contact Now
-                </button>
-              </Link>
-            </div>
+                  <Link href="/contact-us" passHref={true}>
+                    <button className="block text-base font-medium w-40 mx-auto active text-white  bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] rounded px-6 lg:py-3 py-2 text-center hover:text-white   lg:mt-0  cursor-pointer transition duration-300 relative">
+                      Contact Now
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -133,33 +129,33 @@ export default function Unity(props) {
           <section >
 
           </section>
-        
+
           <section className="bg-[#F3F4F6]" >
             <div className="py-20 w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
-            <div className="space-y-4 text-center ">
-              <h2 className="text-4xl font-bold text-[#000] ">Powerful Features We Use With Unity 2D/3D Game Development</h2>
-            </div>
-            <div className="grid gap-16 pt-10 lg:grid-cols-3 md:grid-cols-2 xl:gap-12">
-              {JSON_DATA.ProcessNFT.map((elem) => {
-                const { title, img, num, items } = elem;
-                return (
-                  <div key={num} className="p-6 bg-[#201325] border rounded-xl group hover:bg-white transition-all duration-200 space-y-2">
-                    <div className="flex items-center justify-center w-16 h-16 p-2 text-xl font-semibold bg-white group-hover:bg-[#201325] rounded-full bg-gradient-to-t">
-                      <Image width={100} height={100} src={img} alt={title} title={title} className="w-16" />
+              <div className="space-y-4 text-center ">
+                <h2 className="text-4xl font-bold text-[#000] ">Powerful Features We Use With Unity 2D/3D Game Development</h2>
+              </div>
+              <div className="grid gap-16 pt-10 lg:grid-cols-3 md:grid-cols-2 xl:gap-12">
+                {JSON_DATA.ProcessNFT.map((elem) => {
+                  const { title, img, num, items } = elem;
+                  return (
+                    <div key={num} className="p-6 bg-[#201325] border rounded-xl group hover:bg-white transition-all duration-200 space-y-2">
+                      <div className="flex items-center justify-center w-16 h-16 p-2 text-xl font-semibold bg-white group-hover:bg-[#201325] rounded-full bg-gradient-to-t">
+                        <Image width={100} height={100} src={img} alt={title} title={title} className="w-16" />
+                      </div>
+                      <h3 className="text-xl font-extrabold group-hover:text-[#0E1F51] transition-all duration-200 text-left text-white">{title}</h3>
+                      <ul className=" text-white space-y-2 p-0">
+                        {items.map((item, index) => (
+                          <li className="font-medium text-left text-white group-hover:text-black gap-2 text-base flex  transition duration-200 ease-in-out" key={index}>
+                            <span>➤ </span>{item}</li>
+                        ))}
+                      </ul>
                     </div>
-                    <h3 className="text-xl font-extrabold group-hover:text-[#0E1F51] transition-all duration-200 text-left text-white">{title}</h3>
-                    <ul className=" text-white space-y-2 p-0">
-                      {items.map((item, index) => (
-                        <li className="font-medium text-left text-white group-hover:text-black gap-2 text-base flex  transition duration-200 ease-in-out" key={index}>
-                          <span>➤ </span>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-            </div>
-            
+
           </section>
           <section className=" py-10  w-11/12  space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto">
             <div className="flex flex-col justify-center text-center">
@@ -179,8 +175,8 @@ export default function Unity(props) {
               }
             </div>
           </section>
-        
-          <section  className="overflow-hidden bg-no-repeat bg-cover py-10 lg:py-20" style={{ backgroundImage: `url("https://www.comfygen.com/img/why-choose-img.webp")` }}  >
+
+          <section className="overflow-hidden bg-no-repeat bg-cover py-10 lg:py-20" style={{ backgroundImage: `url("https://www.comfygen.com/img/why-choose-img.webp")` }}  >
             <div className="flex flex-col justify-center text-center">
               <h2 className="py-4 text-[#ffffff] xl:text-4xl text-3xl font-bold xl:leading-[3rem] capitalize">Why Choose Confygen's Unity Developers India?</h2>
             </div>
@@ -215,42 +211,42 @@ export default function Unity(props) {
           </section>
           <section className=" lg:py-20 py-10 bg-[#D4F0FF]">
             <div className="2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto w-11/12">
-            <div className="flex flex-wrap">
-              <div className="mb-12 w-full shrink-0 grow-0 xl:mb-0 xl:w-5/12">
-                <div className="flex xl:py-12">
-                  <Image src="https://www.comfygen.com/media/metaverse/do-you-have-more-questions-on-metaverse-game-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" loader={uploadcareLoader}
-                    unoptimized={true} className="w-full rounded-lg shadow-lg dark:shadow-black/20 xl:ml-[50px] z-[10]" alt=" Do You Have More Questions on Metaverse Game Development Services?" />
+              <div className="flex flex-wrap">
+                <div className="mb-12 w-full shrink-0 grow-0 xl:mb-0 xl:w-5/12">
+                  <div className="flex xl:py-12">
+                    <Image src="https://www.comfygen.com/media/metaverse/do-you-have-more-questions-on-metaverse-game-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" loader={uploadcareLoader}
+                      unoptimized={true} className="w-full rounded-lg shadow-lg dark:shadow-black/20 xl:ml-[50px] z-[10]" alt=" Do You Have More Questions on Metaverse Game Development Services?" />
+                  </div>
                 </div>
-              </div>
-              <div className="w-full shrink-0 grow-0 xl:w-7/12">
-                <div className="flex h-full items-center rounded-lg bg-[#0E1F51]/80 p-6 text-center text-white xl:pl-12 xl:text-left">
-                  <div className="xl:pl-12 space-y-2">
-                    <h2 className="mb-6 text-3xl font-bold">
-                      Schedule a Meeting With Our Dedicated Unity Developers!
-                    </h2>
-                    <p className="">It is time to take your gaming endeavor to a higher level! At Comfygen, we would be glad to hear from you so we can find you the right Unity developers in India. Our team can help you create a game that keeps your audiences glued and forever remembers you in the gaming world. </p>
-                    <div className="pt-8">
-                      <Link href="/contact-us" passHref={true}>
-                        <button type="button"
-                          className="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-900 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                          data-te-ripple-init data-te-ripple-color="light">
-                          Get in touch now.
-                        </button>
-                      </Link>
+                <div className="w-full shrink-0 grow-0 xl:w-7/12">
+                  <div className="flex h-full items-center rounded-lg bg-[#0E1F51]/80 p-6 text-center text-white xl:pl-12 xl:text-left">
+                    <div className="xl:pl-12 space-y-2">
+                      <h2 className="mb-6 text-3xl font-bold">
+                        Schedule a Meeting With Our Dedicated Unity Developers!
+                      </h2>
+                      <p className="">It is time to take your gaming endeavor to a higher level! At Comfygen, we would be glad to hear from you so we can find you the right Unity developers in India. Our team can help you create a game that keeps your audiences glued and forever remembers you in the gaming world. </p>
+                      <div className="pt-8">
+                        <Link href="/contact-us" passHref={true}>
+                          <button type="button"
+                            className="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-900 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            Get in touch now.
+                          </button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-          
+
           </section>
         </div>
         <FaqSection
           faqData={JSON_DATA.Frequently}
           title="  Metaverse Game Development "
         />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

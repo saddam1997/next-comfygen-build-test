@@ -76,12 +76,7 @@ const BlogSection = dynamic(
 );
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 export default function Ecommerce(props) {
   const [showContent, setShowContent] = useState(false);

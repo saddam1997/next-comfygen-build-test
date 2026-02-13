@@ -110,16 +110,16 @@
 "Variations":[
   {
     "title": "Punto Banco",
-    "desc": "This mode explains that each player’s moves are forced by the cards the player is dealt."
+    "decs": "This mode explains that each player’s moves are forced by the cards the player is dealt."
   },
   {
     "title": "Baccarat Chemin De Fer",
-    "desc": "In this mode, players bet one at a time against each other instead of against the house."
+    "decs": "In this mode, players bet one at a time against each other instead of against the house."
 
   },
   {
     "title": "Anti Fraud System",
-    "desc": "Played similarly as chemin de fer with additional rules for drawing extra cards."
+    "decs": "Played similarly as chemin de fer with additional rules for drawing extra cards."
   }
 ],
 

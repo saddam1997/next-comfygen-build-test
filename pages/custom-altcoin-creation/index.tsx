@@ -3,13 +3,15 @@ import React from 'react'
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { BiChevronDown, BiChevronRight } from 'react-icons/bi';
+import Header from '../../components/Newcomponet/layout/Header';
 
-const HeroSectiondesign2 = dynamic(() => import('../../components/old/components/HeroSectiondesign2'), {
+const HeroSectiondesign2 = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectiondesign2'), {
   loading: () => <p>Loading...</p>,
 })
-const Header = dynamic(() => import('../../components/old/components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+
+
+
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),

@@ -5,41 +5,102 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ludo.json";
 import Link from "next/link";
 
-import LazyLoad from "react-lazy-load";
-import WhyChoosee from "../../components/old/components/WhyChooseUs";
-import AboutSection from "../../components/old/components/AboutSection";
-import ModelsSec from "../../components/old/components/ModelsSec";
-import ProcessSec from "../../components/old/components/ProcessSec";
-import TechStack from "../../components/old/components/TechStack";
-import CallToAction from "../../components/old/components/CallToAction";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import HireDeveloper from "../../components/old/components/HireDeveloper";
-import Faq from "../../components/old/components/Faq";
-import ServicesSec from "../../components/old/components/ServicesSec";
-import CardGrid from "../../components/old/components/CardGrid";
-import {
-  Icon3dCubeSphere,
-  IconBrain,
-  IconCpu,
-  IconLock,
-} from "@tabler/icons-react";
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
+);
 
-const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
+  { ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: true }
+);
+
+
+const TechStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  { ssr: true }
+);
+
+const CardGrid = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardGrid"),
+  { ssr: true }
+);
+const WhyChoosee = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: true }
 );
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
+
+const Milestones = dynamic(
+  () => import("../../components/Newcomponet/comman/Milestones"),
+  {
+    ssr: true,
+  }
+);
+
+
+import { MdOutlineArrowOutward } from "react-icons/md";
+
+import {
+  Icon3dCubeSphere,
+  IconBrain,
+  IconCpu,
+  IconLock,
+} from "@tabler/icons-react";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const Process = [
@@ -412,10 +473,10 @@ export default function LudoGame(props) {
         />
       </Head>
 
-    <div>
-          <Header />
-    </div>
-  
+      <div>
+        <Header />
+      </div>
+
       <div className="lg:pt-[110px] ">
         <HeroSectionForAllPages
           heading="Best Ludo Game Development Company"
@@ -430,14 +491,9 @@ export default function LudoGame(props) {
           bgImage="https://www.comfygen.com/herosection/ludo-game-development-hero-img.webp"
         />
       </div>
-      <AboutSection
-        title="About Company"
-        heading="Top-Notch Ludo Game App Development Company in India & USA"
-        description1="We specialize in offering complete Ludo game services as a top Ludo game development company in India and the USA. Our group of talented programmers is experienced in producing engrossing Ludo games for numerous platforms. Whether you require cross-platform development or a Ludo game for mobile devices, we have the know-how to provide simple and engaging gameplay. We provide expert Ludo game development services and the option to engage committed Ludo game app programmers because we have a solid track record of developing Ludo game applications. We are dedicated to providing high-quality Ludo game development solutions that are suited to your particular needs, from design to execution."
-        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
+
+      <Milestones />
+
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="space-y-2">
@@ -458,6 +514,16 @@ export default function LudoGame(props) {
           </div>
         </div>
       </section>
+
+      <AboutSection
+        title="About Company"
+        heading="Top-Notch Ludo Game App Development Company in India & USA"
+        description1="We specialize in offering complete Ludo game services as a top Ludo game development company in India and the USA. Our group of talented programmers is experienced in producing engrossing Ludo games for numerous platforms. Whether you require cross-platform development or a Ludo game for mobile devices, we have the know-how to provide simple and engaging gameplay. We provide expert Ludo game development services and the option to engage committed Ludo game app programmers because we have a solid track record of developing Ludo game applications. We are dedicated to providing high-quality Ludo game development solutions that are suited to your particular needs, from design to execution."
+        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+        link="/about-us"
+        linkText="Explore More"
+      />
+
 
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -495,7 +561,7 @@ export default function LudoGame(props) {
         </div>
       </section>
 
-      <ContactFromCenter />
+      {/* <ContactFromCenter /> */}
       <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
 
 
@@ -519,7 +585,7 @@ export default function LudoGame(props) {
 
       <section
         className="w-full bg-end bg-no-repeat bg-cover"
-       
+
       >
         <div className="w-full lg:py-16 py-10 bg-gradient-to-r from-[#272868]/90 to-[#5556D1]/90 ">
           <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">

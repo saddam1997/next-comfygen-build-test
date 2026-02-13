@@ -88,28 +88,28 @@
 "Variations":[
   {
     "title": "Point Rummy",
-    "desc": "There are 13 cards played in point rummy, and 2-6 players can play with a single or double card deck."
+    "decs": "There are 13 cards played in point rummy, and 2-6 players can play with a single or double card deck."
   },
   {
     "title": "Pool Rummy",
-    "desc": "In the Pool Rummy Game, the gaming software offers 101 & 201 pool games."
+    "decs": "In the Pool Rummy Game, the gaming software offers 101 & 201 pool games."
 
   },
   {
     "title": "Deal Rummy",
-    "desc": "The Deal Rummy game is configured with multiple deals with different entry fees."
+    "decs": "The Deal Rummy game is configured with multiple deals with different entry fees."
   },
   {
     "title": "Canasta",
-    "desc": "It means basket and is a Spanish kind of game that has different variations and is played in a group."
+    "decs": "It means basket and is a Spanish kind of game that has different variations and is played in a group."
   },
   {
     "title": "13 Rummy Card",
-    "desc": "It is a game of 2 to 6 players in which each player is dealt 13 cards."
+    "decs": "It is a game of 2 to 6 players in which each player is dealt 13 cards."
   },
   {
     "title": "Rummikub",
-    "desc": "It is very popular in Europe and America for 2-4 players with tiles instead of cards."
+    "decs": "It is very popular in Europe and America for 2-4 players with tiles instead of cards."
   }
 ],
 "cardData": [

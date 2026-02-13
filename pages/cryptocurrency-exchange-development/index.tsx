@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptoexchange.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />

@@ -72,3 +72,20 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.head-button {
+  position: relative;
+  background-color: #5556D1;
+}
+
+.head-button:after {
+  content: '';
+  top: 0;
+  transform: translateX(100%);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  animation: 2s infinite slide;
+  background: linear-gradient(to right, rgba(64, 235, 241, 0) 0, rgb(255 254 253/56%) 50%, rgb(255 254 253/28%) 99%, rgba(64, 235, 241, 0) 100%);
+}

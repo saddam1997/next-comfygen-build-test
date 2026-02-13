@@ -23,61 +23,61 @@ import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const SolutionSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const CallToAction = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const IndustriesServe = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const GuidSectionBlockchain = dynamic(
   () => import("./components/GuidSectionBlockchain"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const BlogSection = dynamic(
@@ -87,7 +87,7 @@ const BlogSection = dynamic(
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 

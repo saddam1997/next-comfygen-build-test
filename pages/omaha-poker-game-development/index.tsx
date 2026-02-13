@@ -10,40 +10,52 @@ import { MdAdd, MdDesktopMac, MdRemove } from "react-icons/md";
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import styles from "./styles.module.css";
 import JSON_DATA from "./omaha.json";
-import WhiteNavButton from "../../components/old/components/button/WhiteNavButton";
-import ConnectWithExpertButton from "../../components/old/components/button/ConnectWithExpertButton";
-import ConnectWithExpertButtonHoverEffect from "../../components/old/components/button/ConnectWithExpertButtonHoverEffect";
-
-import LazyLoad from "react-lazy-load";
-import WhyChoosee from "../../components/old/components/WhyChooseUs";
+const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
+  ssr: true
+});
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
+const AdviceSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Advice"), {
+   ssr: true
+});
+
+const WhiteNavButton = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhiteNavButton"), {
+   ssr: true
+});
+
+const ConnectWithExpertButton = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConnectWithExpertButton"), {
+   ssr: true
+});
+
+
+const ConnectWithExpertButtonHoverEffect = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConnectWithExpertButtonHoverEffect"), {
+   ssr: true
+});
+
+import WhyChoosee from "./components/WhyChooseUs";
 
 const OmahaServices = dynamic(() => import("./components/OmahaServices"), {
   loading: () => <p>Loading...</p>,
 });
-const HireSection = dynamic(() => import("../../components/old/components/HireSection"), {
+const HireSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireSection"), {
   loading: () => <p>Loading...</p>,
 });
-const FaqSection = dynamic(() => import("../../components/old/components/FaqSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const AdviceSection = dynamic(() => import("../../components/old/components/Advice"), {
+const FaqSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
   loading: () => <p>Loading...</p>,
 });
 
-const Header = dynamic(() => import("../../components/old/components/Header"), {
+
+
+const TalkExpert = dynamic(() => import("./components/TalkExpert"), {
   loading: () => <p>Loading...</p>,
 });
-const TalkExpert = dynamic(() => import("../../components/old/components/TalkExpert"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
-const WhyChoose = dynamic(() => import("../../components/old/components/WhyChoose"), {
+// const ContactFromCenter = dynamic(
+//   () => import("../../components/old/components/ContactFromCenter"),
+//   {
+//     loading: () => <p>Loading...</p>,
+//   }
+// );
+const WhyChoose = dynamic(() => import("./components/WhyChoose"), {
   loading: () => <p>Loading...</p>,
 });
 
@@ -102,7 +114,7 @@ export default function Altcoin(props) {
 
   let { initialData } = props;
   let {
-  
+
     myList,
     myList4,
     Shaping,
@@ -295,7 +307,7 @@ export default function Altcoin(props) {
           </div>
         </section>
 
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
 
         <section className="py-20 bg-white">
           <div className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12">
@@ -376,6 +388,9 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
+
+
+
         <OmahaServices />
 
         <AdviceSection

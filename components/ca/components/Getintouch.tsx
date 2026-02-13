@@ -1,7 +1,7 @@
 import React from "react";
 import { HiMapPin } from "react-icons/hi2";
 import { MdEmail, MdPhoneInTalk } from "react-icons/md";
-import ContactFrom from "../../old/components/ContactFrom";
+import ContactFrom from "../../Newcomponet/comman/ContactFrom";
 export default function GetinTouch() {
   return (
     <div className="bg-slate-100 py-20">

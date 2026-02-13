@@ -6,15 +6,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./poker.json";
 import Link from "next/link";
-
-import LazyLoad from "react-lazy-load";
-import WhyChoose from "../../components/old/components/WhyChooseUs";
-import Faq from "../../components/old/components/Faq";
-import AboutSection from "../../components/old/components/AboutSection";
-import ProcessSec from "../../components/old/components/ProcessSec";
-import HireDeveloper from "../../components/old/components/HireDeveloper";
-import ServicesSec from "../../components/old/components/ServicesSec";
-import SolutionSec from "../../components/old/components/SolutionSec";
 import {
   IconChartLine,
   IconCpu,
@@ -25,26 +16,49 @@ import {
   IconShieldCheck,
   IconUsers,
 } from "@tabler/icons-react";
+
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
-
-const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
 );
+
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
+  { ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: true }
+);
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
 
 
 const Processs = [
@@ -476,7 +490,7 @@ export default function PokerGame(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+        {/* <ContactFromCenter /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
