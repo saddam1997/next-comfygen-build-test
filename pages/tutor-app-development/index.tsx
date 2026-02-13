@@ -350,8 +350,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Tutor App Development Company for Online Learning</title>
-        <meta name="description" content="Comfygen Technologies delivers tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
+        <title>Best Tutor App Development Company</title>
+        <meta name="description" content="Comfygen Technologies is a top-rated tutor app development company delivering tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
         <link rel="canonical" href="https://www.comfygen.com/tutor-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

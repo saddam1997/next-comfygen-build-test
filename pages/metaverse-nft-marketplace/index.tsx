@@ -6,26 +6,25 @@ import JSON_DATA from "./json/metaverse.json"
 import Link from "next/link";
 import styles from './styles.module.css'
 import { uploadcareLoader } from "@uploadcare/nextjs-loader";
-const HeroSectionForm = dynamic(() => import('../../components/old/components/HeroSectionForm'), {
-  loading: () => <p>Loading...</p>,
-})
-const TechnoStack = dynamic(() => import('./components/TechnoStack'), {
-  loading: () => <p>Loading...</p>,
-})
-const Header = dynamic(() => import('../../components/old/components/Header'), {
+import Header from "../../components/Newcomponet/layout/Header";
+const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
 
-const AdviceSection = dynamic(() => import('../../components/old/components/Advice'), {
+
+const TechnoStack = dynamic(() => import('./components/TechnoStack'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../../components/old/components/ContactFromCenter'), {
+
+
+const AdviceSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Advice'), {
   loading: () => <p>Loading...</p>,
 })
-const FaqSection = dynamic(() => import('../../components/old/components/FaqSection'), {
+
+const FaqSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Faq'), {
   loading: () => <p>Loading...</p>,
 })
-const HireSection = dynamic(() => import('../../components/old/components/HireSection'), {
+const HireSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HireSection'), {
   loading: () => <p>Loading...</p>,
 })
 
@@ -232,7 +231,7 @@ export default function Ecommerce(props:any) {
             imgW={550}
             imgH={500}
             altTag='Tap in to world of Metaverse Development Company' />
-          <ContactFromCenter />
+        
           {/* services */}
           <section className="py-4 lg:py-10 bg-[#000]/40">
             <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">

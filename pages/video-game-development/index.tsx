@@ -3,41 +3,68 @@ import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/video.json";
-
-import LazyLoad from "react-lazy-load";
-import Faq from "../../components/old/components/Faq";
-import CallToAction from "../../components/old/components/CallToAction";
-import AboutSection from "../../components/old/components/AboutSection";
-import CardItem from "../../components/old/components/CardItem";
-import ProcessSec from "../../components/old/components/ProcessSec";
-import WhyChoose from "../../components/old/components/WhyChooseUs";
-import ServicesSec from "../../components/old/components/ServicesSec";
-import SolutionSec from "../../components/old/components/SolutionSec";
 import { IconBolt, IconBook, IconGhost, IconMap, IconPhotoVideo, IconPlayFootball, IconShieldCheck, IconSword, IconVideo, IconWorld, } from '@tabler/icons-react';
 import { IconHeart, } from '@tabler/icons-react';
-import PortfolioSec from "../../components/old/components/PortfolioSec";
-import ModelsSec from "../../components/old/components/ModelsSec";
+
+import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-
-const Header = dynamic(() => import("../../components/old/components/Header"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
 );
+
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
+
+const SolutionSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
+  { ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: true }
+);
+
+const PortfolioSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/PortfolioSec"),
+  { ssr: true }
+);
+
+const ModelsSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
+  { ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
+  { ssr: true }
+);
+
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { ssr: true }
+);
+
+
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: true }
+);
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
 const Processs = [
   {
     title: "Conceptualization and Idea Generation",
@@ -300,7 +327,7 @@ export default function rummy(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

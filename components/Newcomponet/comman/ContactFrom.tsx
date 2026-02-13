@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
 import Image from "next/image";
-import Router from "next/router";
-// import "react-phone-input-2/lib/style.css";
-const ReactSelect = dynamic(() => import('react-select'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-28 h-10 bg-gray-200 animate-pulse rounded" />
-  ),
-});
-
-import { redirect } from "next/dist/server/api-utils";
 import dynamic from "next/dynamic";
+
+const ReactSelect = dynamic(
+  () => import("react-select").then((mod) => mod.default),
+  { ssr: false }
+);
+
+
+// const ReactSelect = dynamic(() => import('react-select'), {
+//   ssr: false,
+//   loading: () => (
+//     <div className="w-28 h-10 bg-gray-200 animate-pulse rounded" />
+//   ),
+// });
+
+
+
 
 class ContactFrom extends Component<{}, any> {
   constructor(props: any) {
@@ -293,6 +299,9 @@ class ContactFrom extends Component<{}, any> {
               <label htmlFor="mobNo">Enter Number</label>
               <div className="flex items-center border w-full rounded-lg font-light focus:outline-none bg-[#F7F7F7]">
                 {/* Country Code Dropdown */}
+
+
+                
                 <ReactSelect
                   inputId="mobNo"
                   aria-label="Country Code"

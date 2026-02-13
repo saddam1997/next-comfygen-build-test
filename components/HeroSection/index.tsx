@@ -1,4 +1,4 @@
-"use client";
+
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
 import TalkToExpertModal from "../modals/TalkToExpertModal";
@@ -36,20 +36,43 @@ export default function HeroSection(props: any) {
 
 
     return (
-        <section className="relative flex  min-h-[740px] sm:min-h-[50vh] lg:min-h-[740px] items-centeroverflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
+        <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
             itemScope
             itemType="https://schema.org/WebPage"
         >
+
+
             {/* ================= LCP IMAGE ================= */}
-            <Image
+
+            <div className="hidden lg:block absolute inset-0 ">
+                <Image
+                    src={props.bgImage}
+                    alt="Comfygen Web & Mobile App Development"
+                    fill
+                    sizes="(max-width: 1024px) 0px, 100vw"
+                    quality={75}
+                    className="object-cover object-center"
+                />
+            </div>
+            {/* <Image
+                src={props.bgImage}
+                alt="Comfygen Web & Mobile App Development"
+                fill
+                priority
+                sizes="(max-width: 1024px) 0px, 100vw"
+                quality={75}
+                className=" object-cover object-center hidden lg:block"
+            /> */}
+
+            {/* <Image
                 src={props.bgImage}
                 alt="Comfygen Web & Mobile App Development"
                 fill
 
-                sizes="(max-width: 1024px) 0px, 100vw"
+                sizes="100vw"
                 quality={75}
-                className=" object-cover object-center hidden lg:block"
-            />
+                className="object-cover"
+            /> */}
 
             {/* ================= CONTENT ================= */}
             <div className=" relative z-10  w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
@@ -59,10 +82,10 @@ export default function HeroSection(props: any) {
                     {/* ================= HEADING ================= */}
                     {props.isHome ? (
                         <h1 className="text-white text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
-                             <b className="block">AI-Based Mobile App & Web </b>
+                            <b className="block">AI-Based Mobile App & Web </b>
                             <span className="block text-2xl xl:text-4xl font-medium">
-                                 Development Company
-                            </span> 
+                                Development Company
+                            </span>
                         </h1>
                     ) : (
                         <>
@@ -75,7 +98,7 @@ export default function HeroSection(props: any) {
 
                     {props?.subhead && (
                         <Paragraph size="sm" className="text-white">
-                           <span className="font-semibold"> {props.subhead}</span>
+                            <span className="font-semibold"> {props.subhead}</span>
                         </Paragraph>
                     )}
 

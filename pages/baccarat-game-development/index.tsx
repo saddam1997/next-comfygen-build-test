@@ -3,30 +3,68 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/baccarat.json";
 import LazyLoad from "react-lazy-load";
-import WhyChoose from "../../components/old/components/WhyChooseUs";
-import Faq from "../../components/old/components/Faq";
-import CallToAction from "../../components/old/components/CallToAction";
-import AboutSection from "../../components/old/components/AboutSection";
-import ServicesSec from "../../components/old/components/ServicesSec";
-import InfoSectionLeft from "../../components/old/components/InfoSectionLeft";
-import ProcessSec from "../../components/old/components/ProcessSec";
-import HireDeveloper from "../../components/old/components/HireDeveloper";
-import CardItem from "../../components/old/components/CardItem";
-import SolutionSec from "../../components/old/components/SolutionSec"
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSection from "../../components/HeroSection";
 
 
-
-const NewSection = dynamic(() => import("../../components/old/components/NewSection"), {
-  loading: () => <p>Loading...</p>,
-});
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
+const AboutSection = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+  { ssr: true }
 );
+
+
+const ServicesSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
+  { ssr: true }
+);
+
+const InfoSectionLeft = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/InfoSectionLeft"),
+  { ssr: true }
+);
+
+
+const SolutionSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
+  { ssr: true }
+);
+
+const HireDeveloper = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
+  { ssr: true }
+);
+
+const ProcessSec = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
+  { ssr: true }
+);
+
+const CardItem = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
+  { ssr: true }
+);
+
+const WhyChoose = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+  { ssr: true }
+);
+
+const Faq = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
+  { ssr: true }
+);
+
+
+const CallToAction = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
+  { ssr: true }
+);
+
+
+
+
+
+
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -90,9 +128,9 @@ export default function Altcoin(props) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
+
           <Header />
-        </LazyLoad>
+
       </div>
       <div className="overflow-hidden">
         <div className="">
@@ -104,7 +142,7 @@ export default function Altcoin(props) {
             bgImage="https://www.comfygen.com/herosection/baccarat-game-development-hero-img.webp"
           />
         </div>
-        <NewSection NewSection={JSON_DATA.NewSections} />
+
         <AboutSection
           title="We are Baccarat Game Development Company"
           heading="Baccarat Game App Development Company"
@@ -114,7 +152,7 @@ export default function Altcoin(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+    
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -126,6 +164,8 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
+
+
         <InfoSectionLeft
           heading="Baccarat Game Development Services"
           description1="Though it’s an old-age card game and was mostly played in the Asian continents, people are still fond of this game. In the age of technological advances, you may have noticed people playing this game from their mobile devices or computer."

@@ -55,7 +55,7 @@ const TeckStack = dynamic(
 );
 
 const WhyChoose = dynamic(
-  () => import("../../components/old/components/WhyChooseUs"),
+  () => import("../omaha-poker-game-development/components/WhyChooseUs"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 

@@ -1,4 +1,4 @@
-import WhiteNavButton from "./button/WhiteNavButton";
+import WhiteNavButton from "../../Newcomponet/SectionCompoent/WhiteNavButton";
 
 export default function DreamProject() {
   return (

@@ -65,16 +65,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 import {
   IconUsers,
@@ -92,12 +83,7 @@ import {
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const technologyData = [
   {
@@ -583,7 +569,7 @@ export default function Ecommerce(props: any) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+
 
         <SolutionSec
           heading="Advantages of Choosing Our dApp Development Services"

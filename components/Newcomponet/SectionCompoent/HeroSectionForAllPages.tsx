@@ -1,31 +1,30 @@
 
 import Image from "next/image";
-import ContactFrom from "../comman/ContactFrom";
+import dynamic from "next/dynamic";
+
+const ContactFrom = dynamic(
+  () => import("../comman/ContactFrom"),
+  { ssr: false }
+);
 
 import style from "../Button/button.module.css"
+
 export default function HeroSectionForAllPages(props: any) {
 
 
   return (
     <section
       className="relative pt-10 pb-6 sm:pt-20 sm:pb-10 lg:pt-[10px] lg:pb-[70px] h-full flex flex-col justify-center  overflow-hidden bg-[#5951cd] lg:bg-transparent">
-      <div className="absolute inset-0 -z-10 hidden md:block">
-        <div className="w-full h-full relative">
-          <Image
-            src={props.bgImage}
-            alt={props.alt || "Comfygen Hero Background"}
-            fill
-            className="object-cover object-center -z-10 hidden md:block  bg-no-repeat bg-fixed"
-            priority
-            fetchPriority="high"
-            sizes="100vw"
-            placeholder="blur"
-            blurDataURL="/blur-placeholder.webp"
-            quality={75}
-            loading="eager"
-          />
-
-        </div>
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={props.bgImage}
+          alt={props.alt || "Comfygen Hero Background"}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+          quality={75}
+        />
       </div>
       <div className="flex md:py-8 py-2 sm:-mb-[45px] lg:mt-[2rem] mt-[3rem] flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="w-full ">

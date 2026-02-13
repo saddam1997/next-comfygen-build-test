@@ -26,8 +26,8 @@ const visibleData = showAll ? safeData : safeData.slice(0, 4);
                                 key={index}
                                 className="bg-[#FAFAFA] p-6 border border-[#5556D1]/10 group rounded-md space-y-4 hover:bg-[#5556D1]/10 hover:border-[#5556D1] cursor-pointer transition-all duration-200"
                             >
-                                <div className="relative rounded-md border w-fit text-[#5556D1] p-2">
-                                    {techItem.img}
+                                <div className="relative rounded-md border w-fit text-[#5556D1] p-2" dangerouslySetInnerHTML={{ __html: techItem.img }}>
+                                   
                                 </div>
                                 <div className="space-y-2">
                                     <h2 className="2xl:text-2xl text-xl text-[#212121] font-semibold">

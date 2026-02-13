@@ -29,9 +29,8 @@ const AboutSection = (props: any) => {
     <section className="bg-white lg:py-16 py-10">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
-          <div className="relative">
-
-            <Image
+          <div className="">
+            {/* <Image
               src={imageSrc}
               alt="about"
               width={600}
@@ -39,8 +38,17 @@ const AboutSection = (props: any) => {
               quality={80}
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-contain w-full h-full object-center bg-no-repeat"
-            />
+            /> */}
 
+            <Image
+              src={imageSrc}
+              alt="about"
+              width={600}
+              height={340}
+              quality={70}
+              sizes="(max-width: 1024px) 90vw, 45vw"
+              className="w-full h-auto object-contain"
+            />
           </div>
           <div>
             <div className="space-y-4">

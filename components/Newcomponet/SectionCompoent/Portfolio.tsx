@@ -1,143 +1,247 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { MdOutlineArrowOutward } from 'react-icons/md';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef, useState, useMemo } from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
-function Portfolio({ projects, heading, description }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
+const CARD_WIDTH = 900;
+const GAP = 20;
+const SWIPE_THRESHOLD = CARD_WIDTH * 0.15;
+const DRAG_START_THRESHOLD = 6;
 
+export default function Portfolio({ projects, heading, description }: any) {
+  /* ---------- refs ---------- */
+  const startX = useRef(0);
+  const deltaX = useRef(0);
+  const isDragging = useRef(false);
+  const hasMoved = useRef(false);
+  const preventClick = useRef(false);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % projects.length);
-  };
+  /* ---------- state ---------- */
+  const [index, setIndex] = useState(1);
+  const [enableTransition, setEnableTransition] = useState(true);
+  const [dragOffset, setDragOffset] = useState(0);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
-  };
+  /* ---------- slides (memoized) ---------- */
+  const slides = useMemo(() => {
+    if (!projects || projects.length === 0) return [];
+    return [
+      projects[projects.length - 1],
+      ...projects,
+      projects[0],
+    ];
+  }, [projects]);
 
+  /* ---------- navigation ---------- */
+  const next = () => setIndex((i) => i + 1);
+  const prev = () => setIndex((i) => i - 1);
 
-  // ✅ Stable interval
+  /* ---------- infinite loop ---------- */
   useEffect(() => {
-    if (isHovered) return;
-    const slideInterval = setInterval(nextSlide, 3000);
-    return () => clearInterval(slideInterval);
-  }, [projects, isHovered]);
+    if (!projects?.length) return;
+
+    if (index === 0) {
+      setTimeout(() => {
+        setEnableTransition(false);
+        setIndex(projects.length);
+      }, 600);
+    }
+
+    if (index === slides.length - 1) {
+      setTimeout(() => {
+        setEnableTransition(false);
+        setIndex(1);
+      }, 600);
+    }
+
+    const t = setTimeout(() => setEnableTransition(true), 650);
+    return () => clearTimeout(t);
+  }, [index, projects, slides.length]);
+
+  /* ---------- pointer events ---------- */
+  const onPointerDown = (e: React.PointerEvent) => {
+    startX.current = e.clientX;
+    deltaX.current = 0;
+    hasMoved.current = false;
+    preventClick.current = false;
+    isDragging.current = true;
+
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    setEnableTransition(false);
+  };
+
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (!isDragging.current) return;
+
+    const movement = e.clientX - startX.current;
+
+    if (Math.abs(movement) > DRAG_START_THRESHOLD) {
+      hasMoved.current = true;
+      preventClick.current = true;
+    }
+
+    if (!hasMoved.current) return;
+
+    deltaX.current = startX.current - e.clientX;
+    setDragOffset(-deltaX.current);
+  };
+
+  const onPointerUp = (e: React.PointerEvent) => {
+    if (!isDragging.current) return;
+
+    (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
+
+    setEnableTransition(true);
+
+    if (hasMoved.current) {
+      if (deltaX.current > SWIPE_THRESHOLD) next();
+      else if (deltaX.current < -SWIPE_THRESHOLD) prev();
+    }
+
+    isDragging.current = false;
+    deltaX.current = 0;
+    setDragOffset(0);
+  };
+
+  const truncateText = (text: string, limit = 200) =>
+    !text ? "" : text.length > limit ? text.slice(0, limit) + "..." : text;
 
   return (
-    <div className="h-full bg-[#F5F5F9] md:py-12 py-6 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center">
-          <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">{heading}</h2>
-          <p
-            className="text-base font-normal mt-2 mx-auto w-full"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-        </div>
+    <section className="relative w-full overflow-hidden py-8 bg-gray-50">
+      
+      {/* Heading */}
+      <div className="text-center mx-auto max-w-7xl space-y-3 py-8">
+        <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
+          {heading}
+        </h2>
 
-        <div className="py-8 relative">
-          <div className="overflow-hidden h-full ">
+        <p
+          className="text-base font-normal "
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      </div>
+
+      {/* ================= DESKTOP ================= */}
+      <div
+        className="hidden md:flex cursor-grab active:cursor-grabbing select-none"
+        style={{
+          transform: `translateX(calc(50% - ${
+            index * (CARD_WIDTH + GAP) + CARD_WIDTH / 2
+          }px + ${dragOffset}px))`,
+          transition: enableTransition
+            ? "transform 0.6s cubic-bezier(0.4,0,0.2,1)"
+            : "none",
+          touchAction: "pan-y",
+        }}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerUp}
+        onPointerLeave={onPointerUp}
+      >
+        {slides.map((item: any, i: number) => (
+          <div
+            key={i}
+            className="shrink-0 flex justify-center"
+            style={{ width: CARD_WIDTH + GAP }}
+          >
             <div
-              className="flex transition-transform duration-500 ease-in-out will-change-transform"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              style={{ width: CARD_WIDTH }}
+              className={`h-[390px] rounded-3xl bg-white shadow-xl p-5
+              flex items-center gap-10 transition-all duration-500
+              ${i === index ? "scale-100 opacity-100" : "scale-95 opacity-60"}`}
             >
-              {Array.isArray(projects) && projects.length > 0 && projects?.map((project: any, index: any) => (
-                <div
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                  key={index}
-                  className="w-full flex-shrink-0 py-5 cursor-pointer">
-                  <div className="border rounded-3xl shadow-xl md:p-12 mx-4">
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
-                      <div>
+              <div className="flex-1 space-y-6">
+                <h3 className="text-3xl font-semibold">{item.title}</h3>
 
-                        {project?.image && (
-                          <Image
-                            className="bg-center bg-contain h-full md:h-[400px] w-full"
-                            src={project?.image}
-                            alt={project?.title}
-                            width={297}
-                            height={192}
-                            quality={50}
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
-                          />
-                        )}
+                <p
+                  className="text-gray-700 text-sm leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
 
-                      </div>
-                      <div className="p-2 sm:p-0">
-                        <h3 className="sm:text-4xl text-center sm:text-start text-sm font-bold text-gray-900">
-                          {project?.title}
-                        </h3>
-                        <p
-                          className="text-black py-3 text-base block md:hidden sm:text-4xl text-center"
-                          dangerouslySetInnerHTML={{
-                            __html: project?.description.slice(0, 80) + '...',
-                          }}
-                        />
-                        <p
-                          className="text-black py-3 text-base hidden md:block"
-                          dangerouslySetInnerHTML={{
-                            __html: project?.description,
-                          }}
-                        />
-                        <div className='flex justify-center sm:justify-start'>
-                          <Link href={project?.link} passHref>
-                            <button aria-label="Explore Now" className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-3 sm:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                              Explore Now <MdOutlineArrowOutward />
-                            </button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                <Link href={item.link}>
+                  <span className="inline-flex items-center mt-4 gap-2 border border-[#6C63FF]
+                    text-[#6C63FF] px-6 py-2 rounded-full
+                    hover:bg-[#6C63FF] hover:text-white transition">
+                    View Case Study <MdOutlineArrowOutward />
+                  </span>
+                </Link>
+              </div>
 
-            <div className="flex justify-center gap-4 mt-10">
-              <button aria-label="prev Slide" onClick={prevSlide} className="w-12 h-12 absolute top-[40%] -left-28 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button aria-label="next Slide" onClick={nextSlide} className="w-12 h-12 absolute top-[40%] -right-28 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-indigo-600 hover:text-indigo-600 transition-all duration-300">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={460}
+                height={360}
+                draggable={false}
+                priority={i === 1}   /* 🔥 LCP FIX */
+                sizes="(min-width: 768px) 460px"
+                className="h-[360px] w-[460px] object-contain"
+              />
             </div>
           </div>
-
-          {/* Navigation */}
-
-
-          {/* Dots */}
-          {/* <div className="flex justify-center gap-2 mt-6">
-            {projects?.map((_: any, index: number) => (
-              <button
-                key={index}
-                aria-label={`Go to slide ${index + 1}`}
-                onClick={() => setCurrentSlide(index)}
-                className="flex items-center justify-center w-4 h-4" // <-- larger tap area (32×32 px)
-              >
-                <span
-                  className={`block w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
-                    ? 'bg-indigo-600 w-8' // active indicator larger
-                    : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                />
-              </button>
-            ))}
-          </div> */}
-
-        </div>
+        ))}
       </div>
-    </div>
+
+      {/* ================= MOBILE ================= */}
+      <div className="md:hidden flex gap-6 overflow-x-auto px-4 snap-x snap-mandatory scrollbar-hide">
+        {slides.map((item: any, i: number) => (
+          <div key={i} className="shrink-0 w-[90vw] max-w-sm snap-center">
+            <div className="rounded-3xl bg-gray-100 shadow-xl p-4 flex flex-col gap-5">
+              
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  draggable={false}
+                  priority={i === 1}   /* 🔥 LCP FIX */
+                  sizes="(max-width: 768px) 90vw"
+                  className="object-contain"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold">{item.title}</h3>
+
+              <p className="text-xs text-gray-700">
+                {truncateText(
+                  item.description.replace(/<[^>]*>?/gm, ""),
+                  200
+                )}
+              </p>
+
+              <Link href={item.link}>
+                <span className="inline-flex items-center gap-2 border border-[#6C63FF]
+                  text-[#6C63FF] px-4 py-2 rounded-full text-xs
+                  hover:bg-[#6C63FF] hover:text-white transition">
+                  View Case Study <MdOutlineArrowOutward />
+                </span>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Controls */}
+      <div className="hidden md:flex justify-center gap-4 mt-8">
+        <button
+          onClick={prev}
+          aria-label="Previous slide"
+          className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition">
+          ←
+        </button>
+
+        <button
+          onClick={next}
+          aria-label="Next slide"
+          className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition">
+          →
+        </button>
+      </div>
+
+    </section>
   );
 }
 
-export default React.memo(Portfolio);
+
 

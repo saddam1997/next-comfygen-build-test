@@ -3,7 +3,7 @@ import React from 'react'
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-const HeroSectiondesign2 = dynamic(() => import('../../components/old/components/HeroSectiondesign2'), {
+const HeroSectiondesign2 = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectiondesign2'), {
   loading: () => <p>Loading...</p>,
 })
 const Header = dynamic(() => import('../../components/old/components/Header'), {

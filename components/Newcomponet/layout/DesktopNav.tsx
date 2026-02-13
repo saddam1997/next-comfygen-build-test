@@ -91,13 +91,13 @@ export default function DesktopNav(props: any) {
         <div>
           <div
             onClick={() => toggleSlideover()}
-            className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden"
+            className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 lg:hidden"
           >
             {menu ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
           </div>
           <div
             className={
-              "xl:flex hidden xl:w-auto w-full items-center text-white px-6 "
+              "lg:flex hidden xl:w-auto w-full items-center text-white px-6 "
             }
           >
             <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
@@ -1376,9 +1376,9 @@ export default function DesktopNav(props: any) {
             </div>
           </div>
         </div>
-        <div className="xl:block hidden">
+        <div className="hidden xl:block ">
           <Link href="/contact-us" passHref={true}>
-            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white   cursor-pointer transition duration-300 relative flex gap-3 items-center ">
+            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white  cursor-pointer transition duration-300 relative flex gap-3 items-center ">
               Get a Quote
               <Image
                 src="https://www.comfygen.com/image/button-arrow.svg"

@@ -75,12 +75,7 @@ const BlogSection = dynamic(
 );
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const Process = [
   {
