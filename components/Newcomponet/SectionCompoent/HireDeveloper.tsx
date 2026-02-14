@@ -75,6 +75,7 @@ const HireDeveloper = ({
                 width={907}
                 height={762}
                 quality={85}
+                loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
               />
             ) : null}

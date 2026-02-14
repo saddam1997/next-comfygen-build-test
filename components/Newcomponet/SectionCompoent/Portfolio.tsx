@@ -174,7 +174,8 @@ export default function Portfolio({ projects, heading, description }: any) {
                 width={460}
                 height={360}
                 draggable={false}
-                priority={i === 1}   /* 🔥 LCP FIX */
+                // priority={i === 1}   /* 🔥 LCP FIX */
+                loading="lazy"
                 sizes="(min-width: 768px) 460px"
                 className="h-[360px] w-[460px] object-contain"
               />
@@ -195,7 +196,8 @@ export default function Portfolio({ projects, heading, description }: any) {
                   alt={item.title}
                   fill
                   draggable={false}
-                  priority={i === 1}   /* 🔥 LCP FIX */
+                  // priority={i === 1}   /* 🔥 LCP FIX */
+                  loading="lazy"
                   sizes="(max-width: 768px) 90vw"
                   className="object-contain"
                 />

@@ -47,10 +47,12 @@ export default function HeroSection(props: any) {
             <div className="hidden lg:block absolute inset-0 ">
                 <Image
                     src={props.bgImage}
-                    alt="Comfygen Web & Mobile App Development"
+                    alt={props.heading || "Comfygen Hero Background"}
                     fill
-                    sizes="(max-width: 1024px) 0px, 100vw"
-                    quality={75}
+                    priority
+                    fetchPriority="high"
+                    sizes="(max-width: 768px) 0px, 80vw"
+                    quality={60}
                     className="object-cover object-center"
                 />
             </div>

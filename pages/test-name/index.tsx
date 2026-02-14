@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 const componentsMap: { [key: string]: any } = {
   AdviceSection: dynamic(() => import('../../components/Newcomponet/SectionCompoent/Advice')),
   ConnectWithExpertButtonHoverEffect: dynamic(() => import('../../components/Newcomponet/SectionCompoent/ConnectWithExpertButtonHoverEffect')),
-  TalkExpert: dynamic(() => import('../omaha-poker-game-development/components/TalkExpert')),
+  TalkExpert: dynamic(() => import('../../components/Newcomponet/SectionCompoent/TalkExpert')),
   WhyChoosee: dynamic(() => import('../omaha-poker-game-development/components/WhyChooseUs')),
 };
 

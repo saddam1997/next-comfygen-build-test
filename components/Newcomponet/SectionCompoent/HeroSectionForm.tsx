@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import ContactFromHeader from "../../old/components/ContactFromHeader";
+import ContactFromHeader from "./ContactFromHeader";
 import { MdOutlineControlPointDuplicate } from "react-icons/md";
 
 export default function HeroSectionForm(props: any) {

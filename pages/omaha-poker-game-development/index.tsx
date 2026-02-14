@@ -46,15 +46,10 @@ const FaqSection = dynamic(() => import("../../components/Newcomponet/SectionCom
 
 
 
-const TalkExpert = dynamic(() => import("./components/TalkExpert"), {
+const TalkExpert = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TalkExpert"), {
   loading: () => <p>Loading...</p>,
 });
-// const ContactFromCenter = dynamic(
-//   () => import("../../components/old/components/ContactFromCenter"),
-//   {
-//     loading: () => <p>Loading...</p>,
-//   }
-// );
+
 const WhyChoose = dynamic(() => import("./components/WhyChoose"), {
   loading: () => <p>Loading...</p>,
 });

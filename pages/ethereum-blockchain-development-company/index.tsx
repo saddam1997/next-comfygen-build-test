@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 
