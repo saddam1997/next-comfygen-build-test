@@ -15,7 +15,28 @@ export default function HeroSectionForAllPages(props: any) {
   return (
     <section
       className="relative pt-10 pb-6 sm:pt-20 sm:pb-10 lg:pt-[10px] lg:pb-[70px] h-full flex flex-col justify-center  overflow-hidden bg-[#5951cd] lg:bg-transparent">
-      <div className="absolute inset-0 -z-10">
+
+      <div className="hidden lg:block absolute inset-0 -z-10">
+        <Image
+          src={props.bgImage}
+          alt={props.heading || "Comfygen Hero Background"}
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 0px, 80vw"
+          quality={60}
+          className="object-cover object-center"
+        />
+        {/* <Image
+          src={props.bgImage}
+          alt={props.alt || "Comfygen Hero Background"}
+          fill
+          sizes="(max-width: 1024px) 0px, 100vw"
+          quality={70}
+          className="object-cover object-center hidden lg:block"
+        /> */}
+      </div>
+      {/* <div className="absolute inset-0 -z-10">
         <Image
           src={props.bgImage}
           alt={props.alt || "Comfygen Hero Background"}
@@ -25,7 +46,7 @@ export default function HeroSectionForAllPages(props: any) {
           className="object-cover object-center"
           quality={75}
         />
-      </div>
+      </div> */}
       <div className="flex md:py-8 py-2 sm:-mb-[45px] lg:mt-[2rem] mt-[3rem] flex-col lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="w-full ">
           <div className="space-y-4 lg:pt-0">
@@ -264,12 +285,6 @@ export default function HeroSectionForAllPages(props: any) {
     </section>
   );
 }
-
-
-
-
-
-
 
 
 

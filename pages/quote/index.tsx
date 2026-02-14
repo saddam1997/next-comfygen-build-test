@@ -1,9 +1,8 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';;
 import React from 'react'
-const Header = dynamic(() => import('../../components/old/components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
+import Header from '../../components/Newcomponet/layout/Header';
+
 export default function Contact() {
   return (
     <>

@@ -3,14 +3,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
-import {
-  Icon3dCubeSphere,
-  IconCpu,
-  IconEyeOff,
-  IconLeaf,
-  IconNetwork,
-  IconTrendingUp,
-} from "@tabler/icons-react";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -96,675 +89,23 @@ const BlogSection = dynamic(
 
 
 
-const Process = [
-  {
-    title: "Requirement Gathering & Consultation",
-    description:
-      "We analyze your goals, users, and blockchain needs to create a clear project roadmap.",
-  },
-  {
-    title: "Blockchain Architecture Design",
-    description:
-      "We design a scalable, secure blockchain framework with the right network, consensus, and smart contract logic. ",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Our designers create intuitive, user-friendly interfaces that ensure seamless experience and compliance. ",
-  },
-  {
-    title: "Development & Integration",
-    description:
-      "Using Ethereum, Polygon, Solana, and Hyperledger, we build smart contracts and APIs for a fully functional app",
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description:
-      "Rigorous security, performance, and functionality testing ensure a stable, hack-proof app",
-  },
-  {
-    title: "Deployment & Launch",
-    description:
-      "We manage smooth deployment on main net or enterprise environments with version control.",
-  },
-  {
-    title: "Support & Maintenance",
-    description:
-      "Ongoing monitoring, support, and upgrades keep your blockchain app performing at its best.",
-  },
-];
 
-const technologyData = [
-  {
-    title: "AI-Driven Smart Contract Automation",
-    desc: "We develop intelligent smart contracts powered by AI and blockchain to streamline operations, reduce human error, and boost performance in real-time decentralized applications (dApps).",
-    img: <IconCpu stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title:
-      "<a class='' href='/multichain-blockchain-development'>Multi-Chain Blockchain Solutions </a> ",
-    desc: "Our developers build interoperable blockchain solutions, enabling secure and seamless transactions across Ethereum, Polygon, Solana, BNB Chain, and more — ensuring frictionless asset mobility.",
-    img: <IconNetwork stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Eco-Friendly Blockchain Architecture",
-    desc: "We focus on sustainable blockchain development by using energy-efficient consensus mechanisms and green protocols that align with enterprise ESG standards.",
-    img: <IconLeaf stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Next-Gen DeFi App Development",
-    desc: "From  <a class='text-blue-500 font-semibold ' href='/decentralized-exchange-development'>decentralized exchanges</a> (DEXs) to staking and yield farming, we build robust DeFi applications that redefine finance through automation, liquidity, and borderless access.",
-    img: <IconTrendingUp stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Metaverse & Web3 Integration",
-    desc: "We merge blockchain with immersive experiences by developing NFT-based assets, virtual worlds, and metaverse-ready infrastructure for gaming, real estate, and eCommerce.",
-    img: <Icon3dCubeSphere stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Zero-Knowledge & Privacy-Preserving Protocols",
-    desc: "We integrate ZKP, zk-SNARKs, and other privacy-focused technologies to ensure confidential, secure transactions — essential for sectors like healthcare, finance, and legal tech.",
-    img: <IconEyeOff stroke={1.5} className="w-12 h-12" />,
-  },
-];
 
-const Blockchaincards = [
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b1.svg",
-    name: "Solana Blockchain Development",
-    desc: "An open-source platform known for lightning-fast performance and minimal fees. Solana is ideal for large-scale apps, DeFi protocols, and NFT marketplaces that require high throughput and low latency.",
-    url: "https://www.comfygen.com/solana-blockchain-development-company",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b9.svg",
-    name: "Ethereum Blockchain Development",
-    desc: "The most widely adopted smart contract platform, Ethereum powers decentralized applications, tokens, and DeFi ecosystems. Its vast developer community and tooling make it the go-to choice for Web3 innovation.",
-    url: "https://www.comfygen.com/ethereum-blockchain-development-company",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b12.svg",
-    name: "Hyperledger Blockchain Development",
-    desc: "An enterprise-grade framework for building permissioned networks. Hyperledger offers modular tools and strong privacy controls for industries like supply chain and healthcare.",
-    url: "https://www.comfygen.com/hyperledger-blockchain-development",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b11.svg",
-    name: "Polygon Blockchain Development",
-    desc: "A Layer 2 scaling solution that brings faster, cheaper transactions to Ethereum-compatible applications. Polygon is perfect for building user-friendly dApps at scale.",
-    url: "https://www.comfygen.com/polygon-blockchain-development",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b2.svg",
-    name: "Avalanche Blockchain Development",
-    desc: "A highly flexible platform designed for rapid transactions and custom networks. Avalanche offers sub-second finality and seamless Ethereum compatibility, making it perfect for scalable dApps.",
-    url: "/",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b3.svg",
-    name: "Cardano Blockchain Development",
-    desc: "Built on peer-reviewed research and a layered architecture, Cardano supports secure, energy-efficient applications. It’s excellent for smart contracts and sustainable blockchain solutions.",
-    url: "https://www.comfygen.com/cardano-blockchain-development-company",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b16.svg",
-    name: "Stellar Blockchain Development",
-    desc: "Focused on global payments and asset transfers, Stellar offers fast, affordable transactions across borders. It’s widely used for remittances and token issuance.",
-    url: "https://www.comfygen.com/stellar-blockchain-development-company",
-  },
-  {
-    icon: "https://www.comfygen.com/comfygen-images/blockchain-development-new/b4.svg",
-    name: "Polkadot Blockchain Development",
-    desc: "An ecosystem that connects multiple blockchains to share data securely. Polkadot enables scalable, interoperable networks with shared security and cross-chain compatibility.",
-    url: "/",
-  },
 
-];
 
-const website = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Top Blockchain App Development Company | Comfygen",
-  url: "https://www.comfygen.com/",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "{search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
-const organization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen Technologies",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  alternateName: "Comfygen Technologies",
-  sameAs: [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.threads.com/@comfygen_technologies",
-  ],
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: "+91-9587867258",
-      contactType: "sales",
-      email: "sales@comfygen.com",
-      areaServed: [
-        "US",
-        "CA",
-        "GB",
-        "AD",
-        "AU",
-        "AT",
-        "BS",
-        "BH",
-        "IO",
-        "KM",
-        "CU",
-        "AR",
-        "CW",
-        "CY",
-        "DK",
-        "DM",
-        "EG",
-        "FK",
-        "FI",
-        "FR",
-        "DE",
-        "GR",
-        "GL",
-        "HK",
-        "IS",
-        "IN",
-        "ID",
-        "IT",
-        "JP",
-        "JE",
-        "JO",
-        "KW",
-        "KG",
-        "KR",
-        "MX",
-        "FM",
-        "NZ",
-        "NI",
-        "OM",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "QA",
-        "RO",
-        "RU",
-        "SA",
-        "SG",
-        "SE",
-        "SZ",
-        "CH",
-        "TH",
-        "TR",
-        "TN",
-        "UA",
-        "UM",
-        "AE",
-        "039",
-        "155",
-        "154",
-        "151",
-        "150",
-      ],
-      availableLanguage: ["en", "hi"],
-    },
-  ],
-};
-const testimonialData = [
-  {
-    text: "Working with Comfygen Technologies was a game changer for our blockchain project. Their team guided us through every step, from architecture to deployment, delivering a secure, scalable solution that exceeded our expectations. We couldn’t have asked for a better technology partner.",
-    name: "Sarah Mitchell",
-    title: "USA",
-  },
-  {
-    text: "Comfygen Technologies brought deep expertise and clear communication to our decentralized application development. They helped us launch a robust platform on time and within budget. Their commitment to quality and innovation truly sets them apart in the blockchain space.",
-    name: "David Lee",
-    title: "USA",
-  },
-  {
-    text: "We trusted Comfygen Technologies to build our custom blockchain network, and they delivered flawlessly. Their team combined technical excellence with a clear understanding of our business goals, resulting in a solution that’s reliable, efficient, and ready to scale.",
-    name: "Priyank Kumar",
-    title: "India",
-  },
-];
 
-const product = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Best Blockchain Development Company in India | Comfygen Technologies",
-  image: "https://www.comfygen.com/assets/images/blockchain-development.jpg",
-  description:
-    "Looking for the best blockchain development company in India? Comfygen delivers custom blockchain development solutions, smart contract development, and blockchain app development services.",
-  brand: {
-    "@type": "Organization",
-    name: "Comfygen Technologies",
-    url: "https://www.comfygen.com",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1124",
-  },
-};
 
-const additionalOrganization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  legalName: "Comfygen Pvt. Ltd.",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  foundingDate: "2019",
-  founders: [
-    {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-    {
-      "@type": "Person",
-      name: "Saddam Husen",
-    },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-    addressLocality: "Vaishali Nagar",
-    addressRegion: "Jaipur, Rajasthan, India",
-    postalCode: "302021",
-    addressCountry: "India",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "customer support",
-    telephone: "[+91 9587867258]",
-    email: "sales@comfygen.com",
-  },
-  areaServed: [
-    "US",
-    "CA",
-    "GB",
-    "AD",
-    "AU",
-    "AT",
-    "BS",
-    "BH",
-    "IO",
-    "KM",
-    "CU",
-    "AR",
-    "CW",
-    "CY",
-    "DK",
-    "DM",
-    "EG",
-    "FK",
-    "FI",
-    "FR",
-    "DE",
-    "GR",
-    "GL",
-    "HK",
-    "IS",
-    "IN",
-    "ID",
-    "IT",
-    "JP",
-    "JE",
-    "JO",
-    "KW",
-    "KG",
-    "KR",
-    "MX",
-    "FM",
-    "NZ",
-    "NI",
-    "OM",
-    "PE",
-    "PH",
-    "PL",
-    "PT",
-    "QA",
-    "RO",
-    "RU",
-    "SA",
-    "SG",
-    "SE",
-    "SZ",
-    "CH",
-    "TH",
-    "TR",
-    "TN",
-    "UA",
-    "UM",
-    "AE",
-    "039",
-    "155",
-    "154",
-    "151",
-    "150",
-  ],
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
 
-const LocalBusiness = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Comfygen Technologies",
-  image: "https://www.comfygen.com/svg/Logo1.svg",
-  "@id": "https://maps.app.goo.gl/WRvQs16yDQ624dda6",
-  url: "https://www.comfygen.com/",
-  telephone: "+91-9587867258",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd",
-    addressLocality: "Jaipur",
-    postalCode: "302019",
-    addressCountry: "IN",
-    addressRegion: "IN",
-  },
-  priceRange: "Contact Us",
-  sameAs: [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.threads.com/@comfygen_technologies",
-  ],
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Friday", "Thursday", "Wednesday", "Tuesday", "Monday"],
-      opens: "09:00",
-      closes: "19:30",
-    },
-  ],
-};
 
-const jsonLdData = [
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://www.comfygen.com/blockchain-development/",
-        url: "https://www.comfygen.com/blockchain-development/",
-        name: "Blockchain Development Company | Blockchain App Development",
-        isPartOf: {
-          "@id": "https://www.comfygen.com/#website",
-        },
-        primaryImageOfPage: {
-          "@id":
-            "https://www.comfygen.com/blockchain-development/#primaryimage",
-        },
-        image: {
-          "@id":
-            "https://www.comfygen.com/blockchain-development/#primaryimage",
-        },
-        thumbnailUrl:
-          "https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp",
-        description:
-          "Explore leading blockchain development services tailored to your business goals. Get expert solutions from a trusted blockchain development company.",
-        breadcrumb: {
-          "@id": "https://www.comfygen.com/blockchain-development/#breadcrumb",
-        },
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "ReadAction",
-            target: ["https://www.comfygen.com/blockchain-development/"],
-          },
-        ],
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https://www.comfygen.com/blockchain-development/#primaryimage",
-        inLanguage: "en-US",
-        url: "https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp",
-        contentUrl:
-          "https://www.comfygen.com/comfygen-images/blockchain-development-new/og.webp",
-        width: 1080,
-        height: 600,
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.comfygen.com/blockchain-development/#breadcrumb",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https://www.comfygen.com/",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Blockchain Development",
-            item: "https://www.comfygen.com/blockchain-development/",
-          },
-        ],
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.comfygen.com/#website",
-        url: "https://www.comfygen.com/",
-        name: "Blockchain Technology, Mobility, AI and IoT Development Company",
-        description: "Trusted Blockchain AI IoT Development Company",
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "SearchAction",
-            target: {
-              "@type": "EntryPoint",
-              urlTemplate: "https://www.comfygen.com/?s={search_term_string}",
-            },
-            "query-input": {
-              "@type": "PropertyValueSpecification",
-              valueRequired: true,
-              valueName: "search_term_string",
-            },
-          },
-        ],
-      },
-    ],
-  },
-];
 
-const service = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Best Blockchain Development Company in India",
-  url: "https://www.comfygen.com/blockchain-development",
-  description:
-    "Looking for the best blockchain development company in India? Comfygen delivers custom blockchain development solutions, smart contract development, and blockchain app development services.",
-  provider: {
-    "@type": "Organization",
-    name: "Comfygen Technologies",
-    url: "https://www.comfygen.com/",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.comfygen.com/assets/images/logo.png",
-    },
-  },
-  areaServed: {
-    "@type": "Place",
-    name: "Global",
-  },
-  serviceType: "Blockchain Development Services",
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Blockchain Development Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Custom Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Private Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Public Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Enterprise Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Consortium Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Hybrid Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Blockchain Wallet Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Layer 2 Blockchain Development",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "POC Blockchain Development",
-        },
-      },
-    ],
-  },
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/blockchain-development",
-  },
-};
 
-const schemaFaq = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How much does it cost to build blockchain software development services?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "<p>There is no bar restricted when it comes to building blockchain software development services. You can consider the average cost for blockchain development services is but the cost can fluctuate if the demands extend to integrate more features, implement some latest tech trends, work on advanced technologies, and so on</p>",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I Ask for Custom Blockchain Development Services?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: " Yes, we do work on personalized blockchain development solutions. Our blockchain development agency works on customized blockchain development services, solutions based on client’s perspectives. We fully cooperate with our respective clients and understand their ideology, and also our experts share some unique and latest technologies to eventually build a super-functioning decentralized solution.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the Future of Blockchain Development?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Blockchain Development Company based in Jaipur, India is transforming various industries, and majorly the future lies in the Cybersecurity industry. Blockchain Development is an open source and distributed network; which keeps the data fully secured and verified. Blockchain Development Organizations do need such technology in future for optimum security and scalability features in it.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How Do I Choose the Best Blockchain Development Company in Jaipur, Rajasthan India?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "If you are looking for best blockchain development company in the In India then here are a few things you must consider to find the righteous and suitable best blockchain app development service company- Experience of the Blockchain Development Company, Skilled and Qualified Blockchain Developers, Use of Latest Trends and Advanced Technology with High Security Features, Evaluate the Pricing Model, Vision of Blockchain Development Project, Blockchain Development Service Offers Blockchain Consultation Services",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What are the Benefits of Hiring the Blockchain Development Company in India?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Hiring Blockchain Development Company in India, Blockchain Development Services improves trust, transactional security, transparency and incur in appropriate data sharing across the entire business development network. The decentralized services are experienced and skilled in blockchain development. Companies have professional trained blockchain experts qualified to provide seamless and secured decentralized solutions.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What are Smart Contracts on Blockchain?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Smart Contracts are the simple programs stored on the blockchain app development services, solutions, which run when anything predetermined circumstances and conditions occur. These contracts are used to automate the execution of agreements, so that the participants can immediately get certain outcomes",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How Does Blockchain Improve Security?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Blockchain technology development ensures to improvise the data structures and security qualities, because the blockchain technology is based on cryptography, consensus and decentralization solutions. Even so, it improves the accuracy, reliability of data claiming, and reduction in fraudulent activities and manipulations.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How Does Blockchain Improve Transparency?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The decentralized technology helps improve the global supply chain efficiently, and also allows companies to complete the trading transactions directly with no third parties involvement.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How Does Blockchain Improve Efficiency?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Blockchain technology reduces the overhead and transactional cost by efficiently lessening the paperwork and errors. Also the decentralized solutions reduce the third party involvements and middleman to verify the transactions.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What are the Challenges of Implementing Blockchain?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Implementing the blockchain technology raise numbers of challenges; such as:- Inefficient Technology Desig, Low Scalabilit, Security Problem, Lack of Privac, Higher Energy Consumption",
-      },
-    },
-  ],
-};
+
+
+
+
+
+
+
 
 export default function Blockchain(props) {
   let { initialData } = props;
@@ -845,46 +186,18 @@ export default function Blockchain(props) {
           content="https://www.comfygen.com/comfygen-images/blockchain-development-new/blockchain-development.webp"
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
-        />
+
+
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(service),
+            __html: JSON.stringify(JSON_DATA.jsonLdData),
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(LocalBusiness),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(additionalOrganization),
-          }}
-        />
+
+
+
       </Head>
 
       <BlockChainHeader />
@@ -946,7 +259,7 @@ export default function Blockchain(props) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                 Customized Blockchain Solutions to Drive Business Excellence
+                  Customized Blockchain Solutions to Drive Business Excellence
                 </h2>
                 <p>
                   Explore our suite of cutting-edge blockchain App development solutions and services crafted to accelerate digital transformation, enhance trust, and unlock new revenue streams. At Comfygen, we tailor blockchain tech innovations that align with your unique industry needs and future goals.
@@ -977,7 +290,7 @@ export default function Blockchain(props) {
         <BlockchainIcon
           heading="Scalable Blockchain Development Services Across Leading Platforms"
           desc="At Comfygen, we help businesses build blockchain applications on the most suitable blockchain app development platforms to match their goals, industry needs, and growth plans. Our expert blockchain app development team designs secure, scalable, and customized blockchain app development solutions that reduce operational risk, improve transparency, and accelerate time-to-market. From DeFi products to enterprise-grade systems, we transform your ideas into production-ready blockchain applications that deliver long-term value and support sustainable business growth."
-          cards={Blockchaincards}
+          cards={JSON_DATA.Blockchaincards}
         />
 
         <ConsultancyApproach
@@ -993,10 +306,10 @@ export default function Blockchain(props) {
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Blockchain App Development Service Process</h2>
               <p className="text-base font-normal mt-2">
-               At Comfygen, we follow a transparent and agile blockchain app development process that keeps you informed and in control at every stage. We work closely with you to understand your vision, reduce risks early, and deliver a secure, high-performance blockchain development solution that aligns with your business goals—ensuring faster delivery, flexibility, and long-term success.
+                At Comfygen, we follow a transparent and agile blockchain app development process that keeps you informed and in control at every stage. We work closely with you to understand your vision, reduce risks early, and deliver a secure, high-performance blockchain development solution that aligns with your business goals—ensuring faster delivery, flexibility, and long-term success.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
@@ -1009,11 +322,7 @@ export default function Blockchain(props) {
           />
         </section>
 
-        {/* <LatestTechnology
-          heading="Blockchain Development Trends We Follow"
-          subheading="At Comfygen, we integrate cutting-edge blockchain trends to deliver future-ready digital solutions. As a top blockchain development company, we combine innovation with strategy to build decentralized, secure, and scalable ecosystems for businesses worldwide."
-          techData={technologyData}
-        /> */}
+
 
         <IndustriesServe
           heading="Our Blockchain Development Services for Diverse Industries"
@@ -1052,7 +361,7 @@ From smart contracts and dApp development to enterprise blockchain integration, 
         />
 
         <ClientTestimonials
-          testimonials={testimonialData}
+          testimonials={JSON_DATA.testimonialData}
           heading="What Our Clients Say"
         />
 

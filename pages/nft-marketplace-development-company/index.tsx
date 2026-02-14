@@ -13,8 +13,9 @@ import {
 } from "@tabler/icons-react";
 
 import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/old/components/HeroSectionForAllPages";
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
@@ -347,7 +348,7 @@ export default function Ecommerce(props:any) {
 
       <Header />
 
-      <div className="overflow-hidden pt-[40px]">
+      <div className="overflow-hidden pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
           heading="Top-Notch NFT Marketplace Development Company in India"

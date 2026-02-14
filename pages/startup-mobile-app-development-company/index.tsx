@@ -7,16 +7,12 @@ import dynamic from 'next/dynamic';
 import styles from './styles.module.css'
 import JSON_DATA from "./json/mobile.json"
 import LazyLoad from 'react-lazy-load';
-import ContactUsButton from '../../components/old/components/ContactUsButton';
 
-const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
-  loading: () => <p>Loading...</p>,
-})
-const Header = dynamic(() => import('../../components/old/components/Header'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-})
-const TalkExpert = dynamic(() => import('../omaha-poker-game-development/components/TalkExpert'), {
+import HeroSectionForm from '../../components/Newcomponet/SectionCompoent/HeroSectionForm';
+import Header from '../../components/Newcomponet/layout/Header';
+import ContactUsButton from '../../components/Newcomponet/SectionCompoent/ContactUsButton';
+
+const TalkExpert = dynamic(() => import('../../components/Newcomponet/SectionCompoent/TalkExpert'), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 })
@@ -24,16 +20,15 @@ const TalkExpert = dynamic(() => import('../omaha-poker-game-development/compone
 const FaqMobile = dynamic(() => import('./components/FaqMobile'), {
   loading: () => <p>Loading...</p>,
 })
+
 const HireSection = dynamic(() => import('./components/HireSection'), {
   loading: () => <p>Loading...</p>,
 })
+
 const AdviceSection = dynamic(() => import('../../components/Newcomponet/SectionCompoent/Advice'), {
   loading: () => <p>Loading...</p>,
 })
-const ContactFromCenter = dynamic(() => import('../../components/old/components/ContactFromCenter'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-})
+
 const TechnoStack = dynamic(() => import('./components/TechnoStack'), {
   loading: () => <p>Loading...</p>,
 })
@@ -192,22 +187,20 @@ export default function Mobile(props) {
         }} />
       </Head>
       <div className="">
-        <section className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
-          <div className="bg-[#1B1C30CC]">
-            <LazyLoad height={60} offset={100}>
-              <Header />
-            </LazyLoad>
-            <div className="md:py-28 py-5">
-              <HeroSectionForm
-                heading='StartUp Mobile App Development Company'
-                ptag='Build an innovative and revenue generating mobile app for startup with Comfygen. We are the top-notch startup mobile app development company in India leveraging the emerging businesses to build scalable mobile apps for their startups using cutting edge technologies and modern new practices. Our mobile app developers are evolving with time, and using trending technologies, such as AR/VR, Blockchain, Cyber Security, Gamifications, Metaverse for seamless user experience and vast traction. '
-                ptag1="We promise the startup mobile app development to pitch targeted audiences and beat the competitors. Consult now to generate innovative ideas and transform them in real."
-                btnName="Discuss Now"
-                btnLink='/contact-us'
-              />
-            </div>
-          </div>
-        </section>
+        <Header />
+
+
+        <div className="lg:pt-[130px] py-5 bg-gradient-to-br from-[#4A63D9] to-[#4F46E5]">
+          <HeroSectionForm
+            heading='StartUp Mobile App Development Company'
+            ptag='Build an innovative and revenue generating mobile app for startup with Comfygen. We are the top-notch startup mobile app development company in India leveraging the emerging businesses to build scalable mobile apps for their startups using cutting edge technologies and modern new practices. Our mobile app developers are evolving with time, and using trending technologies, such as AR/VR, Blockchain, Cyber Security, Gamifications, Metaverse for seamless user experience and vast traction. '
+            ptag1="We promise the startup mobile app development to pitch targeted audiences and beat the competitors. Consult now to generate innovative ideas and transform them in real."
+            btnName="Discuss Now"
+            btnLink='/contact-us'
+          />
+        </div>
+
+
 
         <AdviceSection
           heading='Transform the Startup Ideas into Monetized App Solutions'
@@ -221,7 +214,7 @@ export default function Mobile(props) {
           altTag='Explore Success with Our Mobile App Development Agency'
         />
         {/* {loaded && <> */}
-        <ContactFromCenter />
+
 
         <div className='bg-[#162d42]'>
           <section className="w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 py-16">
@@ -402,7 +395,7 @@ export default function Mobile(props) {
         <FaqMobile />
 
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

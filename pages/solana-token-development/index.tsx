@@ -83,26 +83,12 @@ const BlogSection = dynamic(
 );
 
 
-
-
-
-
-
-
-
-
-
 import { IconAdjustments, IconAutomation, IconDatabase, IconExchange, IconHierarchy, IconLock, IconRefresh, IconServer, IconShieldLock, IconTimeline } from '@tabler/icons-react';
 import Script from "next/script";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 const technologyData = [
   {

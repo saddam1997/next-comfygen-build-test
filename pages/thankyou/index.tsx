@@ -6,10 +6,8 @@ import Link from 'next/link';
 import Image from "next/image";
 import { BsArrowRight } from 'react-icons/bs';
 import { MdOutlineArrowForwardIos, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import Header from '../../components/Newcomponet/layout/Header';
 
-const Header = dynamic(() => import('../../components/old/components/Header'), {
-  loading: () => <p>Loading...</p>,
-})
 
 export default function Custom404() {
 

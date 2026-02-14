@@ -103,13 +103,7 @@ import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/Cli
 
 
 
-const ContactFromCenter = dynamic(
-  () => import("../../components/old/components/ContactFromCenter"),
-  {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-  }
-);
+
 
 
 
@@ -363,7 +357,7 @@ export default function Mobile(props) {
           link="/about-us"
           linkText="Explore More"
         />
-        <ContactFromCenter />
+    
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
