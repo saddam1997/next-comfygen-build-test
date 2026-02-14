@@ -1,20 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/taxi.json";
-import {
-  IconBike,
-  IconBolt,
-  IconBriefcase,
-  IconBuildingSkyscraper,
-  IconBus,
-  IconCar,
-  IconHelicopter,
-  IconPackage,
-  IconPlane,
-  IconShip,
-  IconTruck,
-  IconUsers,
-} from "@tabler/icons-react";
+
 import dynamic from "next/dynamic";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
@@ -147,68 +134,46 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: "Custom Taxi Booking App Development Services",
-      provider: {
+      "name": "Taxi App Development Company",
+      "provider": {
         "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com"
       },
-      description:
-        "Comfygen offers custom taxi booking app development services with advanced features, AI integration, and scalable solutions to help you launch your own ride-hailing business.",
-      url: "https://www.comfygen.com/taxi-app-development-company",
-      mainEntityOfPage: "https://www.comfygen.com/taxi-app-development-company",
-      areaServed: "Global",
-      serviceType: [
-        "White-Label Taxi App Development",
-        "Custom Taxi Booking App Development",
-        "Cab Booking App Development",
-        "Uber Ride Booking App Development",
-        "Car Rental App Development",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
+      "url": "https://www.comfygen.com/taxi-app-development-company ",
+      "description": "End-to-end taxi app development services including ride-hailing apps, taxi booking solutions, fleet management systems, and white-label taxi app solutions for startups and enterprises.",
+      "areaServed": "Worldwide",
+      "serviceType": [
+        "Taxi Booking App Development",
+        "Ride-Hailing App Development",
+        "Uber-Like App Development",
+        "Fleet Management Software",
+        "On-Demand Taxi App Solutions",
+        "White Label Taxi App Development"
+      ]
     },
-
     {
-      "@context": "http://www.schema.org",
+      "@context": "https://schema.org",
       "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Taxi Booking Mobile App Development Solution | Comfygen Technologies",
-      image: "https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp",
-      description:
-        "Comfygen Technologies delivers cutting-edge taxi booking mobile app development solutions with AI features, real-time tracking, and secure payments for startups and enterprises.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "655",
+      "name": "Best Taxi App Development Company | Comfygen Technologies",
+      "image": " About Section Image ",
+      "description": "Looking for the best taxi app development company? Comfygen delivers custom taxi booking app solutions, ride-hailing app development, and scalable mobility solutions for startups and enterprises.",
+      "brand": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com"
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "824"
+      }
     },
 
     {
@@ -320,10 +285,10 @@ export default function Ecommerce(props) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Taxi App Development Company | Hire Taxi App Developers</title>
+        <title>Taxi App Development Company | Custom Ride-Hailing Apps</title>
         <meta
           name="description"
-          content="Leading taxi booking app development company offering ready-made taxi app development solution with GPS tracking, secure payments, and automated dispatch."
+          content="Looking for a taxi app development company? We build scalable, feature-rich ride-hailing apps for startups and enterprises. Get a free consultation today.."
         />
         <link
           rel="canonical"
@@ -343,91 +308,22 @@ export default function Ecommerce(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
         />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="viewport-fit" content="cover" />
-        <meta name="apple-touch-fullscreen" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5556D1" />
-        <meta name="apple-mobile-web-app-title" content="Comfygen Taxi App" />
-
-        {/* Author & Rights */}
-        <meta name="author" content="Comfygen Technologies" />
-        <meta name="web-author" content="Comfygen Technologies" />
-        <meta name="reply-to" content="sales@comfygen.com" />
-        <meta name="rights" content="Copyright Comfygen Technologies" />
-        <meta name="copyright" content="Comfygen Technologies" />
-
-        {/* SEO */}
-        <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="language" content="English" />
-
-        {/* Geo Tags */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
-
-        {/* Open Graph (Facebook) */}
-        <meta property="og:type" content="article" />
+        {/* <!-- ================= OPEN GRAPH ================= --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Taxi App Development Company | Comfygen" />
+        <meta property="og:description" content="Build scalable taxi booking and ride-hailing apps with Comfygen. We develop secure, feature-rich, and user-friendly taxi solutions for startups and enterprises." />
+        <meta property="og:url" content="https://www.comfygen.com/taxi-app-development-company" />
         <meta property="og:site_name" content="Comfygen Technologies" />
-        <meta property="og:locale" content="en_US" />
-        <meta
-          property="og:title"
-          content="Taxi Booking App Development Company in India | Comfygen"
-        />
-        <meta
-          property="og:description"
-          content="Build your Uber-like taxi booking app with Comfygen, India’s trusted taxi booking app development company. Get AI-powered, secure, and custom solutions tailored to your business."
-        />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/taxi-app-development-company"
-        />
-        <meta
-          property="og:image"
-          content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"
-        />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="Taxi Booking App Development" />
-        <meta
-          property="article:publisher"
-          content="https://www.facebook.com/people/Comfygen-Private-Limited/100083835361397/"
-        />
-        <meta
-          property="article:modified_time"
-          content="2022-10-13T10:13:21+00:00"
-        />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"></meta>
 
-        {/* Twitter Card */}
+
+        {/* <!-- ================= TWITT/ER CARD ================= --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@comfygentech" />
-        <meta
-          name="twitter:title"
-          content="Top Taxi App Development Company for Ride-Hailing Solutions"
-        />
-        <meta
-          name="twitter:description"
-          content="Build a high-performance ride-hailing app like Uber or Lyft with Comfygen. Our taxi app development services deliver scalable, secure, and user-friendly solutions."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"
-        />
+        <meta name="twitter:title" content="Taxi App Development Company | Comfygen" />
+        <meta name="twitter:description" content="Launch scalable taxi booking and ride-hailing apps with Comfygen. Secure, feature-rich, and enterprise-ready taxi app development solutions." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
+
 
         <script
           type="application/ld+json"
@@ -437,22 +333,22 @@ export default function Ecommerce(props) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Taxi App Development Company"
-          subhead='Looking for the best taxi app development company? Your search ends here.'
-          ptag="Comfygen is a top taxi app development company delivering end-to-end, customizable and readymade taxi app development solutions for startups, fleet owners, and enterprises. Our taxi apps feature real-time GPS tracking, smart ride matching, secure payments, and powerful admin panels, ensuring smooth operations and complete control over branding, pricing, and fleet management."
-          li="Custom Taxi Booking App Development"
-          li2="White-Label Ride-Hailing Solutions"
-          li3="Driver, Rider & Admin Panel Development"
-          li4="cab booking app development"
-          alt="taxi app development company hero background"
-          title="taxi app development company"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
+          heading={JSON_DATA.Herosection.heading}
+          subhead={JSON_DATA.Herosection.subhead}
+          ptag={JSON_DATA.Herosection.ptag}
+          li={JSON_DATA.Herosection.li}
+          li2={JSON_DATA.Herosection.li2}
+          li3={JSON_DATA.Herosection.li3}
+          li4={JSON_DATA.Herosection.li4}
+          alt={JSON_DATA.Herosection.alt}
+          title={JSON_DATA.Herosection.title}
+          btnName={JSON_DATA.Herosection.btnName}
+          btnLink={JSON_DATA.Herosection.btnLink}
           openModal={openModal}
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp"
+          bgImage={JSON_DATA.Herosection.bgImage}
         />
 
         <Milestones />
@@ -460,69 +356,68 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our Custom Taxi App Development Services
+                {JSON_DATA.ServicesData.heading}
               </h2>
-              <p className="text-base text-center font-normal">
-              As the best taxi app development company we provide end-to-end taxi booking app development services with a strong focus on <Link href={"https://www.comfygen.com/portfolio/ride-hailing-app"} className="text-blue-600 font-semibold">ride-hailing app development</Link> that are designed according to your business needs and project requirements of companies across industries.
+              <p className="text-base text-center font-normal" dangerouslySetInnerHTML={{ __html: JSON_DATA.ServicesData.description }}>
+
               </p>
             </div>
             <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
+              <ServicesSec servicesData={JSON_DATA.ServicesData.services} />
             </div>
           </div>
         </section>
 
         <AboutSection
-          heading="What Is a Taxi Booking App and How Does It Work?"
-          description1="A taxi booking app is a mobile application that connects passengers with nearby drivers, providing a fast, convenient, and cashless way to hail rides. By leveraging GPS technology, real-time data, and <a href='https://www.comfygen.com/ewallet-app-development' class='text-blue-600 font-semibold'>secure payment gateways</a>, these on-demand taxi booking systems simplify transportation for users while enhancing efficiency for drivers and service providers."
-          description2="The app ecosystem typically includes three key components: a passenger app, a driver app, and an <a href='https://www.comfygen.com/blog/admin-dashboard-development-for-grocery-delivery/' class='text-blue-600 font-semibold'>admin dashboard</a>. Passengers request rides by entering their pickup and drop-off locations, and the system matches them with the closest available driver through GPS tracking. Once a driver accepts the ride, the passenger can monitor the vehicle’s real-time location until arrival. Payments are processed via multiple integrated options such as credit cards, digital wallets, or cash. Additional <a href='https://www.comfygen.com/blog/ev-taxi-booking-app-development-cost-features/' class='text-blue-600 font-semibold'>EV taxi app development features</a> often include ride scheduling, fare estimation, driver and passenger ratings, and in-app communication, all designed to ensure a seamless and user-friendly experience."
-          description3=""
-          description4=""
-           alt="taxi app development company about section image"
-          points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp"
-          link="/about-us"
-          linkText="Explore More"
+          heading={JSON_DATA.AboutSection.heading}
+          description1={JSON_DATA.AboutSection.description1}
+          description2={JSON_DATA.AboutSection.description2}
+          description3={JSON_DATA.AboutSection.description3}
+          alt={JSON_DATA.AboutSection.alt}
+          points={JSON_DATA.AboutSection.points}
+          imageSrc={JSON_DATA.AboutSection.imageSrc}
+          link={JSON_DATA.AboutSection.link}
+          linkText={JSON_DATA.AboutSection.linkText}
         />
         {/* <ContactFromCenter /> */}
 
 
         <CallToAction
-          heading="Get Started with Your Taxi Booking App"
-          text="Have an idea for a taxi booking app? Comfygen can help turn it into a scalable, reliable solution tailored to your business needs."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-          
+          heading={JSON_DATA.CallToAction.heading}
+          text={JSON_DATA.CallToAction.text}
+          buttonText={JSON_DATA.CallToAction.buttonText}
+          buttonLink={JSON_DATA.CallToAction.buttonLink}
+          imageSrc={JSON_DATA.CallToAction.imageSrc}
+          imageAlt={JSON_DATA.CallToAction.imageAlt}
+
         />
 
         <AppcardSlider
-          heading="Taxi App Clone Development Solutions"
-          description="Comfygen Technologies, a leading taxi app development company, provides readymade taxi app development source code for businesses looking to launch quickly with a proven model. Our clone taxi app development services provide ready-to-use frameworks that can be fully customized to fit your unique business requirements and branding."
-          sliderData={JSON_DATA.IndustriesServe}
+          heading={JSON_DATA.Industries.heading}
+          description={JSON_DATA.Industries.description}
+          sliderData={JSON_DATA.Industries.IndustriesServe}
           openModal={openModal}
         />
         <div className="py-8">
           <Features
-            heading="Core Features of Taxi App Development Solution"
-            description="Comfygen’s taxi app development solution makes carefully designed <a href='https://www.comfygen.com/blog/top-ai-features-next-gen-taxi-apps/' class='text-blue-600 font-semibold'>AI-based taxi app features</a> and advanced cab booking app features for usability, control, and scalability. Each component ensures a smooth experience for passengers, drivers, and administrators."
-            featuresData={JSON_DATA.featuresData}
+            heading={JSON_DATA.featuresData.heading}
+            description={JSON_DATA.featuresData.description}
+            featuresData={JSON_DATA.featuresData.features}
             grid={3} />
         </div>
 
         <section className="py-8">
           <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Experience in On-Demand Taxi Booking App Development"
-            description="As a leading on-demand taxi app development company, we leverage our taxi app development expertise to deliver reliable mobility solutions for businesses across multiple regions. With a team of skilled ride-hailing app developers over the past 7+ years, we have developed 50+ taxi booking apps for clients in 10+ countries, ensuring scalable, secure, and user-friendly platforms for passengers and drivers alike."
+            projects={JSON_DATA.Portfoliodata.portfolio}
+            heading={JSON_DATA.Portfoliodata.heading}
+            description={JSON_DATA.Portfoliodata.description}
           />
         </section>
 
         <CardFeatures
-          heading="AI and Blockchain-Based Taxi App Development Solutions"
-          description="At Comfygen, we deliver AI and blockchain-powered taxi app development solutions that transform urban mobility. By combining artificial intelligence with decentralized technologies, our apps become smarter, safer, and more efficient for both riders and drivers."
-          featuresData={JSON_DATA.featuresData1}
+          heading={JSON_DATA.featuresData1.heading}
+          description={JSON_DATA.featuresData1.description}
+          featuresData={JSON_DATA.featuresData1.features}
           grid="2"
         />
 
@@ -591,7 +486,7 @@ export default function Ecommerce(props) {
           title="ReactJS Development Technology"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

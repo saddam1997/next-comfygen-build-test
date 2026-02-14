@@ -1,4 +1,18 @@
 {
+  "Herosection": {
+    "heading": "Top Taxi App Development Company",
+    "subhead": "Looking for the best taxi app development company to expand your taxi business ?",
+    "ptag": "Comfygen is a leading taxi booking app development company. We provide customizable and ready-made taxi app development solutions for startups, fleet owners, and enterprises. Our develop taxi apps come with real-time GPS tracking, smart ride matching, secure payments, and a powerful admin panel. You get complete control over branding, pricing, and fleet management, ensuring smooth operations and a reliable ride experience.",
+    "li": "Custom Taxi Booking App Development",
+    "li2": "White-Label Ride-Hailing Solutions",
+    "li3": "Driver, Rider & Admin Panel Development",
+    "li4": "cab booking app development",
+    "alt": "taxi app development company hero background",
+    "title": "taxi app development company",
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp"
+  },
   "Qa": [
     {
       "num": "1",
@@ -31,40 +45,42 @@
       "description": "Transform your car rental business with a smart booking system that offers flexible rental options, automated billing, and real-time vehicle tracking for both short-term and long-term leasing services."
     }
   ],
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/uberEats-clone-app.webp",
-      "title": "Uber Clone App",
-      "description": "Build and launch a powerful Uber-like taxi booking app tailored to your business needs. <a href='http://www.comfygen.com/blog/cost-to-develop-an-app-like-uber' class='text-blue-600 font-semibold'>Uber-like app development</a> solution comes with smart ride scheduling, real-time GPS tracking, instant driver matching, and secure multiple payment options.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/ola-clone-app.webp",
-      "title": "Ola Clone App",
-      "description": "Build a taxi booking platform like Ola that supports multiple ride categories, including mini, prime, auto, and rental. Give users flexible travel choices with fast booking, live route tracking, and affordable pricing options.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/rapido-clone-app.webp",
-      "title": "Rapido Clone App",
-      "description": "Develop a bike taxi platform like Rapido with quick ride booking, real-time navigation, and secure digital payments. Perfect for cities with high traffic, offering fast, economical, and hassle-free travel solutions.",
-       "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/careem-clone-app.webp",
-      "title": "Careem Clone App",
-      "description": "<a href='https://www.comfygen.com/blog/develop-a-taxi-booking-app-like-careem/' class='text-blue-600 font-semibold'>Create a Careem-like app</a> featuring multi-service options including taxi booking, car rentals, and corporate rides. Includes in-app chatting, trip scheduling, and wallet payment integration for a premium ride experience.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/lyft-clone-app.webp",
-      "title": "Lyft Clone App",
-      "description": "Build a Lyft-style ride-sharing app with driver rating systems, instant ride matching, and real-time trip tracking. Enhance rider safety with emergency alerts and secure payment gateways to deliver trustworthy and smooth rides.",
-      "buttonText": "View Demo"
-    }
-  ],
-
-  
+  "Industries": {
+    "heading": "Taxi App Clone Development Solutions",
+    "description": "Comfygen Technologies is a leading taxi app development company offering ready-made taxi app source code for businesses that want to launch quickly with a proven and scalable model. Our clone taxi app solutions come with a fully functional, market-ready framework that can be customized to match your branding, features, pricing structure, and business requirements, helping you go to market faster while maintaining complete control and flexibility.",
+    "IndustriesServe": [
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/uberEats-clone-app.webp",
+        "title": "Uber Clone App",
+        "description": "Build and launch a powerful Uber-like taxi booking app tailored to your business needs. <a href='http://www.comfygen.com/blog/cost-to-develop-an-app-like-uber' class='text-blue-600 font-semibold'>Uber-like app development</a> solution comes with smart ride scheduling, real-time GPS tracking, instant driver matching, and secure multiple payment options.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/ola-clone-app.webp",
+        "title": "Ola Clone App",
+        "description": "Build a taxi booking platform like Ola that supports multiple ride categories, including mini, prime, auto, and rental. Give users flexible travel choices with fast booking, live route tracking, and affordable pricing options.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/rapido-clone-app.webp",
+        "title": "Rapido Clone App",
+        "description": "Develop a bike taxi platform like Rapido with quick ride booking, real-time navigation, and secure digital payments. Perfect for cities with high traffic, offering fast, economical, and hassle-free travel solutions.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/careem-clone-app.webp",
+        "title": "Careem Clone App",
+        "description": "<a href='https://www.comfygen.com/blog/develop-a-taxi-booking-app-like-careem/' class='text-blue-600 font-semibold'>Create a Careem-like app</a> featuring multi-service options including taxi booking, car rentals, and corporate rides. Includes in-app chatting, trip scheduling, and wallet payment integration for a premium ride experience.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/lyft-clone-app.webp",
+        "title": "Lyft Clone App",
+        "description": "Build a Lyft-style ride-sharing app with driver rating systems, instant ride matching, and real-time trip tracking. Enhance rider safety with emergency alerts and secure payment gateways to deliver trustworthy and smooth rides.",
+        "buttonText": "View Demo"
+      }
+    ]
+  },
   "BookingComparison": {
     "heading": "Custom Taxi App Development vs. ReadyMade Taxi App Development Solutions",
     "description": "Choosing between a custom taxi booking app and a white-label taxi app development solution is a critical decision that impacts your control, scalability, and long-term ROI. Here’s a clear comparison to help you decide what works best for your business goals.",
@@ -96,44 +112,48 @@
       "desc": "Looking to launch a high-performing taxi booking app that can compete with industry leaders? At Comfygen, we specialize in developing cutting-edge Taxi App Clones inspired by the most successful ride-hailing platforms. Our ready-made yet fully customizable solutions help you enter the market quickly while offering a seamless user experience."
     }
   ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
-      "title": "Urban Ride-Hailing Startup",
-      "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
-      "link": "/portfolio/ride-hailing-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
-      "title": "Corporate Taxi Service Provider",
-      "description": "Challenge: A corporate taxi service needed a streamlined solution for employee transportation.",
-      "link": "/portfolio/corporate-taxi-service-provider"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
-      "title": "Eco-Friendly EV Taxi Service",
-      "description": "Challenge: A client wanted to launch an EV-based taxi service to promote sustainability.",
-      "link": "/portfolio/ev-taxi-service"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
-      "title": "Tourism Taxi Service",
-      "description": "Challenge: A tourism company needed a platform for seamless sightseeing and intercity travel.",
-      "link": "/portfolio/tourism-taxi-booking-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
-      "title": "Logistics & Delivery Service",
-      "description": "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
-      "link": "/portfolio/logistics-delivery-taxi-app"
-    },
-    {
-      "image": "https://www.comfygen.com/image/emergency-healthcare-transport.webp",
-      "title": "Emergency Healthcare Transport",
-      "description": "Challenge: A healthcare provider needed a reliable app for patient and emergency transport.",
-      "link": "/portfolio/healthcare-transport-taxi-app"
-    }
-  ],
+  "Portfoliodata": {
+    "heading": "Our Experience in On-Demand Taxi Booking App Development",
+    "description": "As a leading on-demand taxi app development company, we leverage our taxi app development expertise to deliver reliable mobility solutions for businesses across multiple regions. With a team of skilled ride-hailing app developers over the past 7+ years, we have developed 50+ taxi booking apps for clients in 10+ countries, ensuring scalable, secure, and user-friendly platforms for passengers and drivers alike.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "title": "Urban Ride-Hailing Startup",
+        "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering.",
+        "link": "/portfolio/ride-hailing-app"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-corporate-taxi-service-provider.webp",
+        "title": "Corporate Taxi Service Provider",
+        "description": "Challenge: A corporate taxi service needed a streamlined solution for employee transportation.",
+        "link": "/portfolio/corporate-taxi-service-provider"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-section-image-ev-taxi-service.webp",
+        "title": "Eco-Friendly EV Taxi Service",
+        "description": "Challenge: A client wanted to launch an EV-based taxi service to promote sustainability.",
+        "link": "/portfolio/ev-taxi-service"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
+        "title": "Tourism Taxi Service",
+        "description": "Challenge: A tourism company needed a platform for seamless sightseeing and intercity travel.",
+        "link": "/portfolio/tourism-taxi-booking-app"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
+        "title": "Logistics & Delivery Service",
+        "description": "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
+        "link": "/portfolio/logistics-delivery-taxi-app"
+      },
+      {
+        "image": "https://www.comfygen.com/image/emergency-healthcare-transport.webp",
+        "title": "Emergency Healthcare Transport",
+        "description": "Challenge: A healthcare provider needed a reliable app for patient and emergency transport.",
+        "link": "/portfolio/healthcare-transport-taxi-app"
+      }
+    ]
+  },
   "consultancyData": [
     {
       "title": "Careem-Like Taxi App Clone",
@@ -152,177 +172,183 @@
       "desc": "Step into the ride-hailing industry with our advanced Ola/Uber Clone App. Enjoy features like dynamic pricing, multiple vehicle options, surge pricing, and an intuitive interface to keep your users engaged."
     }
   ],
-  "featuresData": [
-    {
-      "id": 1,
-      "title": " Passenger App",
-      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/taxi-app-development-customer-or-passenger-app.webp",
-      "additionalDetails": [
-        {
-          "details": "<b>Instant Booking</b> – Book rides in seconds with live driver tracking.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Multiple Payment Options</b> – Pay via card, wallet, or cash.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Ride History & Ratings</b> – View past trips and rate drivers.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Notifications</b> – Receive updates on ride status, driver arrival, and promotions.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Safety Features</b> – SOS button and share ride details with contacts.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Driver App",
-      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/Driver App penal.webp",
-      "additionalDetails": [
-        {
-          "details": "<b>Trip Requests</b> – Accept or reject rides instantly.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Navigation & Route Optimization</b> – Integrated GPS for faster, efficient trips.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Earnings & Reports</b> – Track daily, weekly, and monthly income.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Driver Profile & Ratings</b> – Manage profile, update availability, and view passenger feedback.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Alerts & Notifications</b> – Receive ride assignments, cancellations, and important updates.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-
-  
-    {
-      "id": 3,
-      "title": "Admin Panel",
-      "img": "https://www.comfygen.com/image/taxi-app-development-driver-panel-image.webp",
-      "icon": " <i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "<b>Real-Time Fleet Monitoring</b> – Track all active drivers and rides on a live map.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Trip & Driver Management</b> – Monitor performance, and manage driver availability.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Analytics & Reporting</b> – Generate detailed reports on revenue, trip trends, and peak hours.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Payments & Commissions</b> – Manage fare settlements and commission structures.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "<b>Notifications & Alerts</b> – Get instant alerts for cancellations, complaints, or emergencies.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    }
-  ],
-  "featuresData1": [
-    {
-      "id": 1,
-      "title": "AI-Powered Taxi App Features",
-      "icon": "<i className='fas fa-robot text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/ai-banking-app.webp",
-      "additionalDetails": [
-        {
-          "details": "AI-Powered Ride Matching & Dispatch",
-          "emoji": "",
-          "content": "<a href='https://www.comfygen.com/ai-development' class='text-blue-600 font-semibold'>AI-powered taxi booking apps</a> connect passengers with the nearest available drivers, reducing wait times and optimizing routes."
-        },
-        {
-          "details": "Personalized Rider & Driver Insights",
-          "emoji": "",
-          "content": "AI analyzes ride history and preferences to recommend optimal routes, pricing, and loyalty rewards."
-        },
-        {
-          "details": "Smart Fraud & Safety Monitoring",
-          "emoji": "",
-          "content": "Real-time monitoring identifies fraudulent behavior and unsafe driving patterns, ensuring safer rides."
-        },
-        {
-          "details": "Dynamic Pricing & Demand Prediction",
-          "emoji": "",
-          "content": "AI forecasts demand patterns to optimize pricing and driver availability, boosting revenue and user satisfaction."
-        },
-        {
-          "details": "Voice & Biometric Ride Access",
-          "emoji": "",
-          "content": "Riders and drivers can securely access the app using voice commands, facial recognition, or fingerprint authentication."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Blockchain-Based Taxi App Features",
-      "icon": "<i className='fas fa-link text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/blockchain-banking-app.webp",
-      "additionalDetails": [
-        {
-          "details": "Transparent Payment & Transaction Records",
-          "emoji": "",
-          "content": "Every ride and payment is securely recorded on the blockchain, eliminating disputes and enhancing trust."
-        },
-        {
-          "details": "Decentralized Ride Verification",
-          "emoji": "",
-          "content": "Smart contracts automatically confirm ride completion, payments, and driver payouts without intermediaries."
-        },
-        {
-          "details": "Enhanced Security & Data Privacy",
-          "emoji": "",
-          "content": "Passenger and driver data is encrypted and stored on a decentralized network, reducing the risk of breaches."
-        },
-        {
-          "details": "Token-Based Loyalty & Incentives",
-          "emoji": "",
-          "content": "Riders and drivers can earn tokens for frequent rides or referrals, which can be redeemed for discounts or rewards."
-        },
-        {
-          "details": "Immutable Ride History & Ratings",
-          "emoji": "",
-          "content": "All ride details and feedback are permanently recorded on the blockchain, ensuring transparent driver and rider ratings."
-        }
-      ]
-    }
-  ],
+  "featuresData": {
+    "heading": "Core Features of Taxi App Development Solution",
+    "description": "Comfygen’s taxi app development solution makes carefully designed <a href='https://www.comfygen.com/blog/top-ai-features-next-gen-taxi-apps/' class='text-blue-600 font-semibold'>AI-based taxi app features</a> and advanced cab booking app features for usability, control, and scalability. Each component ensures a smooth experience for passengers, drivers, and administrators.",
+    "features": [
+      {
+        "id": 1,
+        "title": " Passenger App",
+        "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/taxi-app-development-customer-or-passenger-app.webp",
+        "additionalDetails": [
+          {
+            "details": "<b>Instant Booking</b> – Book rides in seconds with live driver tracking.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Multiple Payment Options</b> – Pay via card, wallet, or cash.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Ride History & Ratings</b> – View past trips and rate drivers.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Notifications</b> – Receive updates on ride status, driver arrival, and promotions.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Safety Features</b> – SOS button and share ride details with contacts.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Driver App",
+        "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/Driver App penal.webp",
+        "additionalDetails": [
+          {
+            "details": "<b>Trip Requests</b> – Accept or reject rides instantly.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Navigation & Route Optimization</b> – Integrated GPS for faster, efficient trips.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Earnings & Reports</b> – Track daily, weekly, and monthly income.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Driver Profile & Ratings</b> – Manage profile, update availability, and view passenger feedback.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Alerts & Notifications</b> – Receive ride assignments, cancellations, and important updates.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Admin Panel",
+        "img": "https://www.comfygen.com/image/taxi-app-development-driver-panel-image.webp",
+        "icon": " <i className='fas fa-wallet text-4xl'></i>",
+        "additionalDetails": [
+          {
+            "details": "<b>Real-Time Fleet Monitoring</b> – Track all active drivers and rides on a live map.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Trip & Driver Management</b> – Monitor performance, and manage driver availability.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Analytics & Reporting</b> – Generate detailed reports on revenue, trip trends, and peak hours.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Payments & Commissions</b> – Manage fare settlements and commission structures.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "<b>Notifications & Alerts</b> – Get instant alerts for cancellations, complaints, or emergencies.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  "featuresData1": {
+    "heading": "AI and Blockchain-Based Taxi App Development Solutions",
+    "description": "At Comfygen, we deliver AI and blockchain-powered taxi app development solutions that transform urban mobility. By combining artificial intelligence with decentralized technologies, our apps become smarter, safer, and more efficient for both riders and drivers.",
+    "features": [
+      {
+        "id": 1,
+        "title": "AI-Powered Taxi App Features",
+        "icon": "<i className='fas fa-robot text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/ai-banking-app.webp",
+        "additionalDetails": [
+          {
+            "details": "AI-Powered Ride Matching & Dispatch",
+            "emoji": "",
+            "content": "<a href='https://www.comfygen.com/ai-development' class='text-blue-600 font-semibold'>AI-powered taxi booking apps</a> connect passengers with the nearest available drivers, reducing wait times and optimizing routes."
+          },
+          {
+            "details": "Personalized Rider & Driver Insights",
+            "emoji": "",
+            "content": "AI analyzes ride history and preferences to recommend optimal routes, pricing, and loyalty rewards."
+          },
+          {
+            "details": "Smart Fraud & Safety Monitoring",
+            "emoji": "",
+            "content": "Real-time monitoring identifies fraudulent behavior and unsafe driving patterns, ensuring safer rides."
+          },
+          {
+            "details": "Dynamic Pricing & Demand Prediction",
+            "emoji": "",
+            "content": "AI forecasts demand patterns to optimize pricing and driver availability, boosting revenue and user satisfaction."
+          },
+          {
+            "details": "Voice & Biometric Ride Access",
+            "emoji": "",
+            "content": "Riders and drivers can securely access the app using voice commands, facial recognition, or fingerprint authentication."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Blockchain-Based Taxi App Features",
+        "icon": "<i className='fas fa-link text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/blockchain-banking-app.webp",
+        "additionalDetails": [
+          {
+            "details": "Transparent Payment & Transaction Records",
+            "emoji": "",
+            "content": "Every ride and payment is securely recorded on the blockchain, eliminating disputes and enhancing trust."
+          },
+          {
+            "details": "Decentralized Ride Verification",
+            "emoji": "",
+            "content": "Smart contracts automatically confirm ride completion, payments, and driver payouts without intermediaries."
+          },
+          {
+            "details": "Enhanced Security & Data Privacy",
+            "emoji": "",
+            "content": "Passenger and driver data is encrypted and stored on a decentralized network, reducing the risk of breaches."
+          },
+          {
+            "details": "Token-Based Loyalty & Incentives",
+            "emoji": "",
+            "content": "Riders and drivers can earn tokens for frequent rides or referrals, which can be redeemed for discounts or rewards."
+          },
+          {
+            "details": "Immutable Ride History & Ratings",
+            "emoji": "",
+            "content": "All ride details and feedback are permanently recorded on the blockchain, ensuring transparent driver and rider ratings."
+          }
+        ]
+      }
+    ]
+  },
   "pageData": {
     "title": "Why Choose Comfygen for Taxi App Development",
     "description": "Choosing the right <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development partner</a> is key to building a successful Taxi app. At Comfygen, we combine experience, technology, and innovation to deliver apps that drive growth and customer satisfaction.",
@@ -391,114 +417,123 @@
       "title": "San Francisco USA"
     }
   ],
-  "servicesData": [
-    {
-      "title": "Ride Booking App",
-      "subtitle": "",
-      "description": "As a trusted taxi app development company, Comfygen’s ride booking app development service launched a smart on-demand ride booking app that enables users to book, track, and manage rides effortlessly. Our cab booking app development solution focuses on smooth navigation, real-time updates, and optimized workflows for both passengers and drivers.",
-      "features": [
-        "Intuitive booking interface for quick ride requests",
-        "Integrated multiple payment options for convenience",
-        "Real-time GPS tracking and route optimization",
-        "In-app communication between driver and passenger",
-        "Automated fare calculation with surge pricing support"
-      ]
-    },
-    {
-      "title": "Shared Mobility / Carpool App",
-      "subtitle": "",
-      "description": "Our carpool app development and shared mobility app development solutions power intelligent ride-sharing app development platforms that connect users traveling in the same direction. Our carpooling apps promote affordability, sustainability, and convenience while ensuring secure and efficient ride matching.",
-      "features": [
-        "Smart matching algorithms to connect riders with similar routes",
-        "Cost-sharing features to reduce individual travel expenses",
-        "Eco-friendly transportation options to reduce carbon footprint",
-        "Flexible scheduling and cancellation policies"
-      ]
-    },
-    {
-      "title": "Vehicle Rental App",
-      "subtitle": "",
-      "description": "Modern vehicle rental application development service that allows customers to browse, book, and manage rental vehicles with ease. Through expert car rental app development, we provide self-drive car rental app solutions that help businesses improve fleet utilization, streamline operations, and increase customer retention.",
-      "features": [
-        "Comprehensive vehicle catalog with filtering and search options",
-        "Easy booking and flexible rental durations",
-        "Rental history and invoice generation for transparency",
-        "Maintenance alerts and vehicle availability management"
-      ]
-    },
-    {
-      "title": "Luxury Chauffeur & Limousine App",
-      "subtitle": "",
-      "description": "We Provide a premium and luxury taxi booking app development service for luxury transportation. Our limousine and chauffeur booking apps are crafted to deliver sophistication, reliability, and premium customer engagement.",
-      "features": [
-        "Personalized chauffeur profiles and service options",
-        "Premium vehicle selection and customization features",
-        "Priority booking and premium customer support",
-        "Real-time tracking and discreet communication options",
-        "Integration with special event management and corporate accounts"
-      ]
-    },
-    {
-      "title": "Enterprise & Corporate Transport App",
-      "subtitle": "",
-      "description": "We develop a taxi app for corporate travel including employee transport management app. Our <a href='https://www.comfygen.com/portfolio/corporate-taxi-service-provider' class='underline font-semibold'>corporate taxi app development services</a> help businesses manage trips, control costs, and ensure reliable travel experiences.",
-      "features": [
-        "Employee ride scheduling and approval workflows",
-        "Centralized billing and expense reporting",
-        "Customized travel policies and access controls",
-        "Analytics dashboard for travel insights and cost optimization",
-        "Integration with enterprise resource planning (ERP) systems"
-      ]
-    },
-    {
-      "title": "Fleet Operations & Management App",
-      "subtitle": "",
-      "description": "Our fleet management app development solutions provide complete control over your operations through driver fleet management system. These tools help you track vehicles in real time, monitor performance, manage drivers, and make data-driven decisions through advanced analytics.",
-      "features": [
-        "Live vehicle tracking with geofencing alerts",
-        "Driver performance and behavior monitoring",
-        "Automated maintenance scheduling and notifications",
-        "Fuel consumption tracking and route efficiency analysis",
-        "Reporting tools for operational insights and compliance"
-      ]
-    },
-    {
-      "title": "Air Mobility & Flying Taxi App",
-      "subtitle": "",
-      "description": "Enter the future of transportation with an innovative air mobility booking platform. Our flying taxi apps are designed to support emerging futuristic transportation services with advanced scheduling and user-centric features.",
-      "features": [
-        "Booking and scheduling for aerial rides with safety protocols",
-        "Real-time flight tracking and estimated arrival times",
-        "Integration with ground transportation for last-mile connectivity",
-        "Advanced user verification and compliance with aviation regulations",
-        "Customizable user experience tailored to premium travelers"
-      ]
-    },
-    {
-      "title": "Hospitality & Travel Taxi App",
-      "subtitle": "",
-      "description": "Enhance guest convenience with a dedicated taxi booking solution for hotels and tourism businesses. Offer seamless local tourism transportation app while extending your taxi service experience beyond your premises.",
-      "features": [
-        "In-app concierge service integration for easy ride requests",
-        "Multi-language and multi-currency support for international guests",
-        "Personalized offers and loyalty rewards for frequent travelers",
-        "Integration with hotel booking systems and travel itineraries",
-        "Real-time ride status updates and estimated pickup times"
-      ]
-    },
-    {
-      "title": "On-Demand Driver App",
-      "subtitle": "",
-      "description": "Our on-demand driver app development solutions provide a driver hiring app that allows users to book professional drivers instantly through a seamless personal driver booking app experience.",
-      "features": [
-        "Instant driver availability and assignment system",
-        "Driver background checks and certification verification",
-        "Custom pricing models for special events and premium services",
-        "In-app driver navigation and support tools",
-        "Ratings, feedback, and driver incentive programs"
-      ]
-    }
-  ],
+  "ServicesData": {
+    "heading": "Our Custom Taxi Booking App Development Services",
+    "description": "As the best taxi app development company we provide end-to-end taxi booking app development services with a strong focus on <a href='https://www.comfygen.com/portfolio/ride-hailing-app' class='text-blue-600 font-semibold'>ride-hailing app development</a> that are designed according to your business needs and project requirements of companies across industries.",
+    "services": [
+      {
+        "title": "Ride Booking App",
+        "subtitle": "",
+        "description": "Comfygen’s ride booking app development service launched a smart on-demand ride booking app that enables users to book, track, and manage rides effortlessly. Our cab booking app development solution focuses on smooth navigation, real-time updates, and optimized workflows for both passengers and drivers.",
+        "features": [
+          "Intuitive booking interface for quick ride requests",
+          "Integrated multiple payment options for convenience",
+          "Real-time GPS tracking and route optimization",
+          "In-app communication between driver and passenger"
+        ]
+      },
+      {
+        "title": "Carpool App",
+        "subtitle": "",
+        "description": "Our carpool app development service powers intelligent ride-sharing platforms that connect users traveling in the same direction. Our carpooling apps promote affordability, sustainability, and convenience while ensuring secure and efficient ride matching.",
+        "features": [
+          "Smart matching algorithms to connect riders with similar routes",
+          "Cost-sharing features to reduce individual travel expenses",
+          "Eco-friendly transportation options to reduce carbon footprint"
+        ]
+      },
+      {
+        "title": "Vehicle Rental App",
+        "subtitle": "",
+        "description": "Modern vehicle rental application development service that allows customers to browse, book, and manage rental vehicles with ease. We provide self-drive car rental app development solutions that help businesses improve fleet utilization, streamline operations, and increase customer retention.",
+        "features": [
+          "Comprehensive vehicle catalog with filtering and search options",
+          "Easy booking and flexible rental durations",
+          "Rental history and invoice generation for transparency",
+          "Maintenance alerts and vehicle availability management"
+        ]
+      },
+      {
+        "title": "Luxury Chauffeur & Limousine App",
+        "subtitle": "",
+        "description": "We Provide a premium and luxury taxi booking app development service for luxury transportation. Our develop limousine and chauffeur booking apps are crafted to deliver sophistication, reliability, and premium customer engagement.",
+        "features": [
+          "Personalized chauffeur profiles and service options",
+          "Premium vehicle selection and customization features",
+          "Priority booking and premium customer support",
+          "Real-time tracking and discreet communication options",
+          "Integration with special event management and corporate accounts"
+        ]
+      },
+      {
+        "title": "Enterprise & Corporate Transport App",
+        "subtitle": "",
+        "description": "We develop a taxi app for corporate travel including employee transport management app. Our <a href='https://www.comfygen.com/portfolio/corporate-taxi-service-provider' class='underline font-semibold'>corporate taxi app development services</a> help businesses manage trips, control costs, and ensure reliable travel experiences..",
+        "features": [
+          "Employee ride scheduling and approval workflows",
+          "Centralized billing and expense reporting",
+          "Customized travel policies and access controls",
+          "Analytics dashboard for travel insights and cost optimization",
+          "Integration with enterprise resource planning (ERP) systems"
+        ]
+      },
+      {
+        "title": "Air Mobility & Flying Taxi App",
+        "subtitle": "",
+        "description": "We offer Air Mobility and Flying Taxi App Development services tailored for next-generation urban transport. Our solutions include real-time flight tracking, smart booking systems, route optimization, passenger management, and advanced admin controls. Built for safety, scalability, and seamless operations, our apps help you launch and manage modern air taxi services with complete control and efficiency.",
+        "features": [
+          "Booking and scheduling for aerial rides with safety protocols",
+          "Real-time flight tracking and estimated arrival times",
+          "Advanced user verification and compliance with aviation regulations",
+          "Customizable user experience tailored to premium travelers"
+        ]
+      },
+      {
+        "title": "Hospitality & Travel Taxi App",
+        "subtitle": "",
+        "description": "Our Hospitality and Travel Taxi App Development service enables hotels and travel businesses to offer easy ride booking with real-time tracking, scheduled pickups, secure payments, and full admin control — all designed to improve guest experience and simplify transport management.",
+        "features": [
+          "In-app concierge service integration for easy ride requests",
+          "Multi-language and multi-currency support for international guests",
+          "Personalized offers and loyalty rewards for frequent travelers",
+          "Integration with hotel booking systems and travel itineraries",
+          "Real-time ride status updates and estimated pickup times"
+        ]
+      },
+      {
+        "title": "On-Demand Driver App",
+        "subtitle": "",
+        "description": "Our on-demand driver app development solutions provide a driver hiring app that allows users to book professional drivers instantly through a seamless personal driver booking app experience.",
+        "features": [
+          "Instant driver availability and assignment system",
+          "Driver background checks and certification verification",
+          "Custom pricing models for special events and premium services",
+          "In-app driver navigation and support tools",
+          "Ratings, feedback, and driver incentive programs"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "heading": "Why Invest in Taxi App Development Services?",
+    "description1": "The global ride-hailing and taxi app market is already worth over $145 billion in 2025 and is projected to expand toward nearly <a rel='nofollow' href='https://www.businessresearchinsights.com/market-reports/ride-hailing-app-market-118351' class='text-blue-600 font-semibold'>$800 billion by 2035</a>, driven by smartphone penetration and rising demand for on-demand transport solutions. Urbanization and cashless payments are major factors pushing more users toward app-based taxi booking. ",
+    "description2": "Investing in taxi app development services allows you to enter this expanding market with a scalable, tech-enabled business model. You can generate revenue through ride commissions, surge pricing, driver subscriptions, and premium services.",
+    "description3": "Beyond revenue, you gain full control over branding, pricing strategies, fleet management, and customer data. Automation features like real-time GPS tracking, smart ride matching, and secure digital payments improve operational efficiency while reducing manual workload.In simple terms, a taxi app positions your business for long-term growth, stronger customer retention, and higher profitability in a rapidly digitizing transport industry.",
+    "description4": "",
+    "alt": "taxi app development company about section image",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "CallToAction": {
+    "heading": "Get Started with Your Taxi Booking App",
+    "text": "Have an idea for a taxi booking app? Comfygen can help turn it into a scalable, reliable solution tailored to your business needs.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+  },
   "Whycomfygen": [
     {
       "num": "1",

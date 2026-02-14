@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./json/mobile.json";
+import JSON_DATA from "./json/Aidevelopment.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
@@ -20,10 +20,6 @@ const ServicesSec = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-// const NumberCard = dynamic(
-//   () => import("../../components/Newcomponet/SectionCompoent/NumberCard"),
-//   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-// );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
@@ -72,69 +68,8 @@ const BlogSection = dynamic(
 );
 
 
-const data = [
-  {
-    num: "01",
-    title: "Programming Languages",
-    decs: "We utilize the most powerful programming languages to develop AI apps.",
-    list: ["Python", "JavaScript", "R", "Java"],
-  },
-  {
-    num: "02",
-    title: "Frameworks",
-    decs: "Our team uses advanced frameworks for seamless development.",
-    list: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
-  },
-  {
-    num: "03",
-    title: "Cloud Platforms",
-    decs: "We deploy AI solutions on robust and scalable cloud platforms.",
-    list: ["AWS", "Google Cloud", "Azure", "IBM Cloud"],
-  },
-  {
-    num: "04",
-    title: "Data Processing",
-    decs: "Efficient tools to manage and analyze data.",
-    list: ["Apache Spark", "Pandas", "NumPy"],
-  },
-];
-const Process = [
-  {
-    title: "Discovery",
-    description:
-      "We begin by understanding your business needs, challenges, and objectives. Through workshops and consultations, we gather requirements and define the scope of the project to ensure a clear roadmap.",
-  },
-  {
-    title: "AI Design",
-    description:
-      "Our team designs a tailored AI solution architecture that aligns with your goals. We create detailed technical specifications, select the right tools and technologies, and plan the development process for optimal results.",
-  },
-  {
-    title: "AI Development",
-    description:
-      "Using state-of-the-art tools and frameworks, we build and train AI models tailored to your requirements. Our development process includes rigorous testing and validation to ensure accuracy and reliability.",
-  },
-  {
-    title: "Deployment",
-    description:
-      "We seamlessly implement and integrate the AI solution into your existing systems. Our team ensures smooth deployment, providing training and documentation to help your team adapt to the new technology.",
-  },
-  {
-    title: "Support & Maintenance",
-    description:
-      "Our commitment doesn’t end with deployment. We provide ongoing maintenance, updates, and support to make sure your AI solution continues to perform at its best and evolves with your business needs.",
-  },
-  {
-    title: "Performance Monitoring & Optimization",
-    description:
-      "We continuously monitor AI model performance, fine-tune algorithms, and optimize efficiency to maintain high accuracy and effectiveness over time.",
-  },
-  {
-    title: "Scalability & Future Enhancements",
-    description:
-      "As your business grows, we help scale and enhance your AI solution with new features and improvements, ensuring it remains competitive and aligned with future industry trends.",
-  },
-];
+
+
 
 
 export default function Mobile(props: any) {
@@ -303,7 +238,7 @@ export default function Mobile(props: any) {
                 At Comfygen, we follow a structured, transparent, and collaborative approach to deliver AI development solutions that align perfectly with your business objectives. Our proven development process ensures efficiency, seamless communication, and high-quality outcomes at every stage.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA?.Process} />
           </div>
         </section>
 
@@ -346,22 +281,6 @@ export default function Mobile(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
-
-
-        {/* <NumberCard
-          heading="Our Technology Stack Use to Develop Best AI Services"
-          description="At Comfygen, we leverage cutting-edge tools and technologies to build robust, scalable, and innovative AI enterprise to SME mobile app development solutions. Our best AI and ML app development expertise spans a wide range of platforms, frameworks, and cloud services, ensuring that we deliver the best results for your startup business. Here’s a glimpse of the technologies we use"
-          data={data}
-        /> */}
-
-
-
-
-        {/* portfoliodata */}
-
-
-
-
 
         <ClientTestimonials
           heading="What Our Clients Say"

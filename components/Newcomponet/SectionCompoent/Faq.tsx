@@ -1,142 +1,173 @@
+
+
 import { useState } from "react";
 import { MdStars } from "react-icons/md";
 
-export default function FaqSection({
-  title = "",
-  description = "Some answers to the common queries during web and mobile app development.",
-  faqData,
-}) {
-  const [currentCount, setCurrentCount] = useState(null);
+interface CardItem {
+  CardItem?: string;
+  CardDec?: string;
+  items?: string[];
+}
 
-  if (!faqData || faqData.length === 0) {
-    return <div>Loading...</div>;
+interface FaqItem {
+  id?: string; // ✅ stable key support
+  title?: string;
+  desc?: string;
+  decs?: string;
+  dec1?: string;
+  dec2?: string;
+  dec3?: string;
+  li1?: string;
+  li2?: string;
+  li3?: string;
+  li4?: string;
+  li5?: string;
+  li6?: string;
+  li7?: string;
+  cards?: CardItem[];
+}
+
+interface FaqSectionProps {
+  title?: string;
+  description?: string;
+  faqData?: FaqItem[];
+}
+
+export default function FaqSection({
+  title = "Frequently Asked Questions",
+  description = "",
+  faqData = [],
+}: FaqSectionProps) {
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
+  // 🛡 Safe fallback
+  if (!Array.isArray(faqData) || faqData.length === 0) {
+    return null;
   }
 
   return (
     <section className="bg-white lg:py-16 py-10">
-      <div className="mx-auto 2xl:max-w-4xl w-full xl:w-5/6 xl:px-0 px-10">
-        <div className="md:space-y-10 space-y-6 w-full">
-          <div>
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-            Frequently Asked Questions
+      <div className="mx-auto 2xl:max-w-4xl w-full xl:w-5/6 xl:px-0 px-6">
+        <div className="space-y-8">
+
+          {/* Heading */}
+          <div className="text-center space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              {title}
             </h2>
-            {/* <p className="text-base text-[#212121] font-normal mt-2 w-full text-center">
-              {description}
-            </p> */}
+            {description && (
+              <p className="text-gray-600 text-sm md:text-base">
+                {description}
+              </p>
+            )}
           </div>
-          <div className="w-full py-4 space-y-4 relative">
-            {faqData.map((item:any, index:any) => {
-              const {
-                title: itemTitle,
-                desc,
-                decs,
-                dec1,
-                dec2,
-                dec3,
-                li1,
-                li2,
-                li3,
-                li4,
-                li5,
-                li6,
-                li7,
-                cards,
-              } = item;
+
+          {/* FAQ Items */}
+          <div className="space-y-4">
+            {faqData.map((item, index) => {
+              const isOpen = currentIndex === index;
 
               return (
                 <div
-                  key={index}
-                  className="bg-white border cursor-pointer w-full rounded-[14px]"
-                  onClick={() =>
-                    setCurrentCount(currentCount === index ? null : index)
-                  }
+                  key={item.id ?? item.title ?? index} // ✅ stable key
+                  className="border rounded-[14px] overflow-hidden"
                 >
-                  <div
-                    className={`flex items-start gap-4 justify-between w-full px-4 py-4 rounded-tr-[14px] rounded-tl-[14px] text-base font-medium text-left md:items-center md:px-6 md:text-lg ${
-                      currentCount === index
+                  {/* Header */}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setCurrentIndex(isOpen ? null : index)
+                    }
+                    className={`flex items-center justify-between w-full px-5 py-4 text-left font-medium transition-colors duration-200 ${
+                      isOpen
                         ? "bg-[#5556D1]/10 text-[#212121]"
-                        : "text-[#212121]"
+                        : "bg-white text-[#212121]"
                     }`}
                   >
-                    <h3 className="w-full text-[14px] font-semibold md:text-lg">
-                      {itemTitle}
-                    </h3>
-                    {currentCount === index ? (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="transition-all duration-200 rounded-full"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                      </svg>
-                    ) : (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="transition-all duration-200 rounded-full"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                      </svg>
-                    )}
-                  </div>
+                    <span className="text-sm md:text-lg font-semibold">
+                      {item.title}
+                    </span>
+
+                    {/* Icon */}
+                    <span
+                      className={`transition-transform duration-300 ${
+                        isOpen ? "rotate-45" : ""
+                      }`}
+                    >
+                      +
+                    </span>
+                  </button>
+
+                  {/* Content */}
                   <div
-                    className={`${
-                      currentCount === index
-                        ? "py-2 px-6 text-black space-y-3 text-sm md:text-base transition-height duration-200 min-h-20"
-                        : "pt-0 px-6 text-black space-y-3 text-sm md:text-base transition-height duration-200 min-h-0 h-0 overflow-hidden"
+                    className={`transition-all duration-300 ease-in-out ${
+                      isOpen
+                        ? "max-h-[1000px] opacity-100 px-5 pb-5"
+                        : "max-h-0 opacity-0 overflow-hidden px-5"
                     }`}
                   >
-                    <p dangerouslySetInnerHTML={{ __html: desc }}></p>
-                    <p>{decs}</p>
-                    <p>{dec1}</p>
-                    <p>{dec2}</p>
-                    <p>{dec3}</p>
-                    <ul className="px-3">
-                      {li1 && <li>{li1}</li>}
-                      {li2 && <li>{li2}</li>}
-                      {li3 && <li>{li3}</li>}
-                      {li4 && <li>{li4}</li>}
-                      {li5 && <li>{li5}</li>}
-                      {li6 && <li>{li6}</li>}
-                      {li7 && <li>{li7}</li>}
-                    </ul>
-                    {cards && cards.length > 0 && (
-                      <div className="space-y-3">
-                        {cards.map((card, i) => (
-                          <div key={i}>
-                            <h4 className="font-bold">{card.CardItem}</h4>
-                            <p>{card.CardDec}</p>
-                            {card.items && card.items.length > 0 && (
-                              <ul>
-                                {card.items.map((item, j) => (
-                                  <li className="flex gap-1 items-start " key={j}>
-                                    {" "}
-                                    <MdStars className="mt-1" /> {item}
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                    <div className="space-y-3 text-sm md:text-base text-gray-800">
+                      {item.desc && (
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: item.desc,
+                          }}
+                        />
+                      )}
+
+                      {item.decs && <p>{item.decs}</p>}
+                      {item.dec1 && <p>{item.dec1}</p>}
+                      {item.dec2 && <p>{item.dec2}</p>}
+                      {item.dec3 && <p>{item.dec3}</p>}
+
+                      {(item.li1 ||
+                        item.li2 ||
+                        item.li3 ||
+                        item.li4 ||
+                        item.li5 ||
+                        item.li6 ||
+                        item.li7) && (
+                        <ul className="list-disc pl-5 space-y-1">
+                          {item.li1 && <li>{item.li1}</li>}
+                          {item.li2 && <li>{item.li2}</li>}
+                          {item.li3 && <li>{item.li3}</li>}
+                          {item.li4 && <li>{item.li4}</li>}
+                          {item.li5 && <li>{item.li5}</li>}
+                          {item.li6 && <li>{item.li6}</li>}
+                          {item.li7 && <li>{item.li7}</li>}
+                        </ul>
+                      )}
+
+                      {/* Nested Cards */}
+                      {item.cards?.length ? (
+                        <div className="space-y-4">
+                          {item.cards.map((card, i) => (
+                            <div key={i} className="space-y-2">
+                              {card.CardItem && (
+                                <h4 className="font-semibold">
+                                  {card.CardItem}
+                                </h4>
+                              )}
+                              {card.CardDec && <p>{card.CardDec}</p>}
+
+                              {card.items?.length && (
+                                <ul className="space-y-1">
+                                  {card.items.map((li, j) => (
+                                    <li
+                                      key={j}
+                                      className="flex gap-2 items-start"
+                                    >
+                                      <MdStars className="mt-1 text-[#5556D1]" />
+                                      {li}
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                 </div>
               );
@@ -147,4 +178,3 @@ export default function FaqSection({
     </section>
   );
 }
-
