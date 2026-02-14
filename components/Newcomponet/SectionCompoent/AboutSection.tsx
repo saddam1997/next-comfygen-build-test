@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
-
+import dynamic from "next/dynamic";
+import CommonImage from "../comman/CommonImage";
 
 // const CommonImage = dynamic(() => import("../comman/CommonImage"), {
 //   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
@@ -47,7 +48,6 @@ const AboutSection = (props: any) => {
               quality={70}
               sizes="(max-width: 1024px) 90vw, 45vw"
               className="w-full h-auto object-contain"
-              loading="lazy"
             />
           </div>
           <div>

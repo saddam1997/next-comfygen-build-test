@@ -3,11 +3,6 @@ import Script from 'next/script';
 // import GoogleTagManager from "./GoogleTagManager";
 // import GoogleTagManagerNoScript from "./GoogleTagManagerNoScript";
 
-
-
-
-
-
 const jsonLdData = [
 
   {

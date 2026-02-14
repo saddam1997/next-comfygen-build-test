@@ -196,23 +196,22 @@ export default function Home(props: any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
-        /> 
+        />
       </Head>
-      <div >
-
+      <div>
         <Header />
       </div>
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="relative ">
           <HeroSection
-            heading="AI-Based Mobile App and Web Development Company"
+            heading={JSON_DATA.Herosection.heading}
             isHome={true}
-            ptag="Are you looking to build powerful mobile application? Comfygen is a trusted AI-based mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses."
+            ptag={JSON_DATA.Herosection.ptag}
             btnName="Let's Discuss"
             btnLink="/contact-us"
             altTag="blockchain-technology"
-            bgImage="https://www.comfygen.com/comfygen-images/home/web development company home.webp"
+            bgImage={JSON_DATA.Herosection.bgImage}
           />
         </div>
         <Milestones />
@@ -222,14 +221,14 @@ export default function Home(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Custom Mobile App and Web Development Services
+                {JSON_DATA.ServicesData.heading}
               </h2>
               <p className="text-base text-center font-normal">
-                Our expert Mobile app developers create enterprise-grade AI-Powered web and mobile applications using modern frameworks and scalable architectures. We help businesses adopt futuristic technologies to improve performance, user experience, and market competitiveness.
+                {JSON_DATA.ServicesData.description}
               </p>
             </div>
             <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
+              <ServicesSec servicesData={JSON_DATA.ServicesData.services} />
             </div>
           </div>
         </section>
@@ -239,60 +238,58 @@ export default function Home(props: any) {
 
         <AboutSection
           title="About Company"
-          heading="Powering Businesses with Scalable Mobile App and Web Development"
-          description1="Comfygen is a trusted web and mobile app development company delivering secure, scalable, and future-ready digital solutions for businesses worldwide. We help startups, enterprises, and fast-growing companies turn ideas into powerful digital products that drive efficiency, engagement, and long-term growth."
-          description2="Our experienced custom mobile app development team utilizes modern frameworks, cloud-native architectures, and emerging technologies to build high-performing websites and mobile applications across industries such as fintech, healthcare, blockchain, on-demand, education, gaming, and enterprise solutions. With a strong focus on usability, performance, and scalability, we ensure every solution is built to evolve with your business needs."
+          heading={JSON_DATA.AboutSection.heading}
+          description1={JSON_DATA.AboutSection.description1}
+          description2={JSON_DATA.AboutSection.description2}
           points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/home/mobile app and web development about.webp"
-          link="/about-us"
-          linkText="Explore More"
+          imageSrc={JSON_DATA.AboutSection.imageSrc}
+          link={JSON_DATA.AboutSection.link}
+          linkText={JSON_DATA.AboutSection.linkText}
         />
-
-
 
         <section className="py-8">
           <Portfolio
-            projects={JSON_DATA?.portfoliodata}
-            heading="Explore Our Mobile App and Web Development Portfolio"
-            description="Explore our collection of proven web and mobile app development projects built for startups, SMEs, and enterprises. From intuitive user experiences to scalable architectures, every solution demonstrates our focus on quality, creativity, and client success."
+            projects={JSON_DATA?.Portfoliodata.portfolio}
+            heading={JSON_DATA?.Portfoliodata.heading}
+            description={JSON_DATA?.Portfoliodata.description}
           />
         </section>
 
         <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
+          heading={JSON_DATA.CallToAction.heading}
+          text={JSON_DATA.CallToAction.text}
           buttonText="Get Started"
           buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
+          imageSrc={JSON_DATA.CallToAction.imageSrc}
+          imageAlt={JSON_DATA.CallToAction.imageAlt}
         />
 
-         
+
         <IndustriesServe
-          heading="Industries We Serve As Best Mobile App Development Company"
-          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
-          sliderData={JSON_DATA.IndustriesServe}
-        /> 
+          heading={JSON_DATA.Industries.heading}
+          description={JSON_DATA.Industries.description}
+          sliderData={JSON_DATA.Industries.IndustriesServe}
+        />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Mobile App and Website Development Process
 
+                {JSON_DATA?.ProcessData.heading}
               </h2>
               <p className="text-base font-normal mt-2">
-                As a trusted Mobile App and Web Development company, we follow a structured and agile website and application development process to deliver custom, scalable, and high-quality digital solutions.
+                {JSON_DATA?.ProcessData.description}
               </p>
             </div>
-            <ProcessSec processSlides={JSON_DATA?.Process} />
+            <ProcessSec processSlides={JSON_DATA?.ProcessData.Process} />
           </div>
         </section>
 
         <TechStack
           customTechData={null}
-          title="Our Advanced Tech Stack for Mobile App and Web Development"
-          description="We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth."
+          title={JSON_DATA.TechStack.title}
+          description={JSON_DATA.TechStack.description}
         />
 
 
@@ -309,19 +306,13 @@ export default function Home(props: any) {
         </div>
 
         <HireDeveloper
-          heading="Hire Expert Web And App Developers"
-          text="Hire skilled developers from Comfygen for mobile, web, blockchain, and AI projects. Our mobile app development teams deliver high-quality solutions, seamless collaboration, and on-time results to help your business grow."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Hire dedicated mobile app developers",
-            "Hire Dedicated Website Developers",
-            "Flexible engagement models",
-            "Agile development and transparent communication",
-            "Scalable teams for short-term or long-term projects"
-          ]}
+          heading={JSON_DATA.HireDeveloper.heading}
+          text={JSON_DATA.HireDeveloper.text}
+          buttonText={JSON_DATA.HireDeveloper.buttonText}
+          buttonLink={JSON_DATA.HireDeveloper.buttonLink}
+          imageSrc={JSON_DATA.HireDeveloper.imageSrc}
+          imageAlt={JSON_DATA.HireDeveloper.imageAlt}
+          listItems={JSON_DATA.HireDeveloper.listItems}
         />
 
         <ClientTestimonials

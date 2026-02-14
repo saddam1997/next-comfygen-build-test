@@ -47,7 +47,7 @@ export default function HeroSection(props: any) {
             <div className="hidden lg:block absolute inset-0 ">
                 <Image
                     src={props.bgImage}
-                    alt={props.heading || "Comfygen Hero Background"}
+                    alt="Comfygen Hero Background"
                     fill
                     priority
                     fetchPriority="high"
