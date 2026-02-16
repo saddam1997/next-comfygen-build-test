@@ -47,8 +47,8 @@ export default function about(props:any) {
       </Head>
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="bg-top bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url("https://www.comfygen.com/img/comfynews-details-herosection.webp")` }}>
+        <div className="bg-gradient-to-r from-[#5E63C7] via-[#7C80D8] to-[#B6B8DD]"
+      >
           <div className=" bg-[#1B1C30CC]/20">
             <Header />
             <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center md:space-x-20 lg:py-16 py-5">
@@ -72,7 +72,7 @@ export default function about(props:any) {
                   </Link>
                 </div>
               </div>
-              <div className="w-full md:flex justify-center md:py-0 py-10">
+              <div className="hidden w-full md:flex justify-center md:py-0 py-10">
                 <Image className="object-cover " src="https://www.comfygen.com/img/comfynews-application .webp" width={760} height={484} alt='Comfynews Application' loading="eager" priority />
               </div>
 

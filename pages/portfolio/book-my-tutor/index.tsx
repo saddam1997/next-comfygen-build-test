@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import { useState } from 'react';
-import styles from './styles.module.css'
+
 import React from 'react'
 import Head from 'next/head';
 
@@ -99,7 +99,7 @@ export default function about(props: any) {
         />
 
 
-        <div className={`${styles.featuresbg} `}>
+        <div className="bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
           <div className=' md:py-10 py-6 '>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
               <div className="w-full space-y-4 text-center md:text-left">
@@ -153,7 +153,7 @@ export default function about(props: any) {
           </div>
         </section>
 
-        <div className={`${styles.herobg} `}>
+        <div className="bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
           <div className=' py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

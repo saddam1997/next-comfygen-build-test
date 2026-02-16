@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
-import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
@@ -50,8 +48,8 @@ export default function about(props:any) {
       </Head>
       <div className="overflow-hidden" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className="bg-gradient-to-r from-[#D9A174] via-[#D39A6C] to-[#C8895B]" >
+          <div className='w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#E09B67]/90">
               <Header />
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
@@ -98,7 +96,7 @@ export default function about(props:any) {
           </section>
         </div>
 
-        <div className={`${styles.featuresbg} `}>
+        <div className="bg-gradient-to-r from-[#AD852B] via-[#C89A5B] to-[#D9A174]">
           <div className='bg-[#AD852B]/70 md:py-10 py-6 '>
             <section className=" w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className="w-full space-y-4 text-center md:text-left">
@@ -135,7 +133,7 @@ export default function about(props:any) {
           </div>
         </section>
 
-        <div className={`${styles.toolstechbg} `}>
+        <div className="bg-gradient-to-r from-[#AD852B] via-[#C89A5B] to-[#D9A174]">
           <div className=' py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

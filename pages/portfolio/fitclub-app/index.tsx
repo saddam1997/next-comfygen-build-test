@@ -48,8 +48,8 @@ export default function about(props) {
       </Head>
       <div className="overflow-hidden" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className={`bg-gradient-to-br from-[#b7b86a] via-[#d8b9a4] to-[#c9c4d3]`} >
+          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#1B1C30CC]/20">
               <Header />
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
@@ -70,7 +70,7 @@ export default function about(props) {
                     </div>
                   </div>
                 </div>
-                <div className="w-full flex justify-center md:py-0 ">
+                <div className="hidden w-full md:flex justify-center md:py-0 ">
                   <Image className="object-cover " src="https://www.comfygen.com/img/fit-club-hero-img.webp" width={600} height={300} alt=' Efincap MLM Software' loading="eager" priority />
                 </div>
               </div>

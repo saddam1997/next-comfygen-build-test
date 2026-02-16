@@ -703,21 +703,21 @@
     {
       "title": "General Billing Software Development",
       "description": "Simplifies invoice creation, payment tracking, and basic financial reporting, helping small businesses and freelancers manage their transactions efficiently with minimal manual effort.",
-      "link": "https://www.comfygen.com/general-billing-software-development",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/General-Billing-Software-Development.webp",
       "gradient": "from-violet-500 to-purple-500"
     },
     {
       "title": "Recurring Billing Software Development",
       "description": "Automates subscription-based billing, managing renewals, payment reminders, and failure retries to ensure consistent revenue for membership services and SaaS businesses.",
-      "link": "https://www.comfygen.com/delivery-app-development",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Recurring-Billing-Software-Development.webp",
       "gradient": "from-orange-500 to-red-500"
     },
     {
       "title": "Cloud-Based Billing Software Development",
       "description": "Offers online access to billing, invoicing, and reporting from anywhere, enabling collaboration, real-time updates, and secure cloud storage for businesses of all sizes.",
-      "link": "https://www.comfygen.com/food-delivery-app-development",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Cloud-Based-Billing-Software-Development.webp",
       "gradient": "from-green-500 to-teal-500",
       "key": "food-delivery-app-development"
@@ -725,7 +725,7 @@
     {
       "title": "Enterprise Billing Software Development",
       "description": "Robust systems for large organizations, supporting complex workflows, multi-currency transactions, advanced reporting, and automated billing processes across departments.",
-      "link": "https://www.comfygen.com/ecommerce/grocery",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Enterprise-Billing-Software-Development.webp",
       "gradient": "from-blue-500 to-cyan-500",
       "key": "grocery-app-development"
@@ -733,14 +733,14 @@
     {
       "title": "Point-of-Sale (POS) Billing Software Development",
       "description": "Facilitates real-time retail transactions, inventory updates, sales tracking, and receipt generation, ideal for stores, restaurants, and service outlets.",
-      "link": "https://www.comfygen.com/medicine-delivery-app-development",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Point-of-Sale-Billing-Software-Development.webp",
       "gradient": "from-sky-500 to-blue-500"
     },
     {
       "title": "Utility Billing Software Development",
       "description": "Automates billing for electricity, water, gas, and other utilities, including meter reading integration, consumption tracking, and invoice generation.",
-      "link": "https://www.comfygen.com/blog/build-a-utility-billing-software-features-cost/",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Utility-Billing-Software-Development.webp",
       "gradient": "from-indigo-500 to-purple-500"
     },
@@ -755,7 +755,7 @@
     {
       "title": "Wholesale & Distribution Billing Software Development",
       "description": "Handles bulk orders, multi-tier pricing, inventory management, and customer accounts, streamlining operations for wholesalers and distributors.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Wholesale-Distribution-Billing-Software.webp",
       "gradient": "from-purple-500 to-pink-500",
       "key": "milk-delivery-app-development"
@@ -763,7 +763,7 @@
     {
       "title": "Telecom Billing Software Development",
       "description": "Manages complex telecom billing, including usage-based, prepaid/postpaid plans, rating, and subscription management for telecom and ISP providers.",
-      "link": "https://www.comfygen.com/blog/telecom-billing-software-development/",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Telecom-Billing-Software-Development.webp",
       "gradient": "from-yellow-500 to-orange-500",
       "key": "Telecom Billing Software Development."
@@ -771,7 +771,7 @@
     {
       "title": "Automated Billing Software Development",
       "description": "Streamlines billing workflows through automation, reducing errors, managing large transaction volumes, and integrating with ERP or CRM systems.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Automated-Billing-Software-Development.webp",
       "gradient": "from-teal-500 to-cyan-500",
       "key": "Automated Billing Software Development"
@@ -779,7 +779,7 @@
     {
       "title": "Adventure Activity Billing Software Development",
       "description": "Covers activity bookings, equipment charges, and session-based billing for outdoor adventure providers like trekking, rafting, and ziplining companies.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Adventure-Activity-Billing-Software-Development.webp",
       "gradient": "from-red-500 to-pink-500",
       "key": "Automated Billing Software Development"
@@ -787,7 +787,7 @@
     {
       "title": "Gym Billing Software Development",
       "description": "Manages memberships, session billing, subscription plans, and trainer fees efficiently for gyms, fitness centers, and health clubs.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Gym-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Gym Billing Software Development"
@@ -795,7 +795,7 @@
     {
       "title": "Medical Billing Software Development",
       "description": "Simplifies patient billing, insurance claims, and revenue cycle management for hospitals, clinics, and diagnostic centers.",
-      "link": "https://www.comfygen.com/blog/top-10-medical-billing-software-for-small-businesses-and-startups",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Medical-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Medical Billing Software Development"
@@ -803,7 +803,7 @@
     {
       "title": "School Billing Software Development",
       "description": "Automates tuition fees, transport charges, and activity payments while maintaining student records and parent billing notifications.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/School-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "School Billing Software Development"
@@ -811,7 +811,7 @@
     {
       "title": "Buggy Station Billing Software Development",
       "description": "Handles hourly or per-ride billing, booking management, and maintenance costs for recreational buggy and off-road stations.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Buggy-Station-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Buggy Station Billing Software Development"
@@ -819,7 +819,7 @@
     {
       "title": "Trekking & Hiking Billing Software Development",
       "description": "Manages trekking packages, guide charges, permits, and group billing for adventure tour operators.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Trekking-Hiking-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Trekking & Hiking Billing Software Development"
@@ -827,7 +827,7 @@
     {
       "title": "Rock Climbing & Abseiling Billing Software Development",
       "description": "Supports session-based billing, equipment rental, and instructor charges for climbing and adventure activity centers.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Rock-Climbing-&-Abseiling-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Rock Climbing & Abseiling Billing Software Development"
@@ -859,7 +859,7 @@
     {
       "title": "Archaeological Dig Billing Software Development",
       "description": "Manages project-based billing, labor costs, equipment usage, and permits for archaeological and field research activities.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Archaeological-Dig-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Archaeological Dig Billing Software Development"
@@ -867,7 +867,7 @@
     {
       "title": "Camping & Adventure Camp Billing Software Development",
       "description": "Covers accommodation, activity bundles, food packages, and group billing for camping and adventure camps.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Camping-&-Adventure-Camp-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Camping & Adventure Camp Billing Software Development"
@@ -875,7 +875,7 @@
     {
       "title": "Canoeing & Kayaking Billing Software Development",
       "description": "Handles session charges, rental fees, guide services, and group bookings for canoeing and kayaking centers.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Buggy-Station-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Canoeing & Kayaking Billing Software Development"
@@ -883,7 +883,7 @@
     {
       "title": "Scuba Diving & Snorkeling Billing Software Development",
       "description": "Manages dive session fees, equipment rental, instructor charges, and certification costs for underwater activity providers.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Scuba-Diving-&-Snorkeling-Billing-Software.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Scuba Diving & Snorkeling Billing Software Development"
@@ -891,7 +891,7 @@
     {
       "title": "Swimming & Watersports Billing Software Development",
       "description": "Handles pool passes, water activity session fees, equipment charges, and seasonal memberships for swimming and water sports facilities.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Swimming-&-Watersports-Billing Software.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Swimming & Watersports Billing Software Development"
@@ -899,7 +899,7 @@
     {
       "title": "Sailing & Marine Activity Billing Software Development",
       "description": "Manages boat rental fees, crew charges, trip durations, safety equipment, and group bookings for sailing and marine adventure services.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Sailing-&-Marine-Activity-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Sailing & Marine Activity Billing Software Development"
@@ -907,7 +907,7 @@
     {
       "title": "Skydiving Billing Software Development",
       "description": "Handles tandem jumps, video/photo add-ons, insurance fees, and session packages for skydiving operators.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Skydiving-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Skydiving Billing Software Development"
@@ -915,7 +915,7 @@
     {
       "title": "Paragliding Billing Software Development",
       "description": "Manages flight session billing, tandem ride pricing, equipment rental, and instructor fees for paragliding services.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Paragliding-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Paragliding Billing Software Development"
@@ -923,7 +923,7 @@
     {
       "title": "Hot-Air Ballooning Billing Software Development",
       "description": "Covers ride packages, premium pricing, group bookings, and seasonal adjustments for ballooning experiences.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Hot-Air-Ballooning-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Hot-Air Ballooning Billing Software Development"
@@ -931,7 +931,7 @@
     {
       "title": "Zero-Gravity Experience Billing Software Development",
       "description": "Handles simulator session fees, training modules, group bookings, and optional premium experiences for zero-gravity or flight simulation centers.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Zero-Gravity-Experience-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Zero-Gravity Experience Billing Software Development"
@@ -939,7 +939,7 @@
     {
       "title": "Ziplining Billing Software Development",
       "description": "Manages ride pricing, package deals, safety equipment rental, and group billing for zipline adventures.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Ziplining-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Ziplining Billing Software Development"
@@ -947,7 +947,7 @@
     {
       "title": "Rappelling Billing Software Development",
       "description": "Handles session billing, equipment charges, instructor fees, and group packages for rappelling and climbing activities.",
-      "link": "#",
+      "link": "",
       "image": "https://www.comfygen.com/comfygen-images/billing-software-development/Rappelling-Billing-Software-Development.webp",
       "gradient": "from-emerald-500 to-green-500",
       "key": "Rappelling Billing Software Development"

@@ -47,8 +47,8 @@ export default function about(props) {
       </Head>
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="bg-center bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url("https://www.comfygen.com/img/cricket-fast-line-herosection.webp")` }}>
+        <div className="bg-center bg-no-repeat bg-cover bg-gradient-to-br from-[#c77757] via-[#d88a68] to-[#f3c1a6]"
+        >
           <div className=" bg-[#1B1C30CC]/20">
             <Header />
             <div className="flex flex-col justify-center items-center w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20 lg:py-16 py-5">
@@ -62,13 +62,13 @@ export default function about(props) {
                   </p>
                 </div>
               </div>
-              <div className="w-full flex justify-center md:py-0 py-10">
+              <div className="hidden w-full md:flex justify-center md:py-0 py-10">
                 <Image className="object-cover " src="https://www.comfygen.com/img/cricket-fast-line-application-details.webp" width={760} height={484} alt=' Efincap MLM Software' loading="eager" priority />
               </div>
             </div>
           </div>
         </div>
-        <div className='py-10' style={{ backgroundImage: `url("https://www.comfygen.com/img/cricket-fast-line-screen-bg.png")` }}>
+        <div className='py-10'>
           <section className="w-11/12 mx-auto space-y-0 2xl:w-4/6 xl:w-5/6 lg:space-y-10">
             <div className="items-center space-y-10 md:flex md:space-y-0 md:space-x-10 ">
               <div className="flex justify-center items-center w-full ">
