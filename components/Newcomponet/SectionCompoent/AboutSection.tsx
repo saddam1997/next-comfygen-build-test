@@ -46,7 +46,7 @@ const AboutSection = (props: any) => {
               width={600}
               height={340}
               quality={70}
-              sizes="(max-width: 1024px) 90vw, 45vw"
+               sizes="(max-width: 768px) 0px, 80vw"
               className="w-full h-auto object-contain"
             />
           </div>

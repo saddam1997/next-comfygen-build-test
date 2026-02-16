@@ -51,11 +51,11 @@ export default function about(props: any) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="bg-top bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url("https://www.comfygen.com/img/efincap-details-herosection.webp")` }}>
+        <div className="bg-top bg-no-repeat bg-cover bg-gradient-to-r from-[#5E63C7] via-[#7C80D8] to-[#B6B8DD]"
+         >
           <div className="">
             <Header />
-            <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center md:space-x-20 lg:py-16 py-5">
+            <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center md:space-x-20 lg:py-16 py-5 pt-20">
               <div className="w-full">
                 <div className="space-y-6">
                   <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]  ">
@@ -75,14 +75,14 @@ export default function about(props: any) {
                   </Link>
                 </div>
               </div>
-              <div className="w-full md:flex justify-center md:py-0 py-10">
+              <div className="hidden w-full md:flex justify-center md:py-0 py-10">
                 <Image className="object-cover " src="https://www.comfygen.com/img/comfygen-mlm-software-detail.webp" width={760} height={484} alt=' Efincap MLM Software' loading="eager" priority />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="py-10  bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: `url("https://www.comfygen.com/img/efincap-screens-bg.webp")` }}>
+        <div className="py-10  bg-no-repeat bg-cover bg-bottom bg-gradient-to-br from-indigo-50 via-indigo-100 to-slate-100" >
           <section className="w-11/12 mx-auto space-y-0 2xl:w-4/6 xl:w-5/6 lg:space-y-10">
             <div className="items-center py-4 space-y-10 md:flex md:space-y-0 md:space-x-10 lg:py-10">
               <div className="flex justify-center md:w-[60%] w-full md:justify-start ">

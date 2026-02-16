@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
-import React from 'react'
+
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./great-crypto-network.json"
@@ -49,8 +48,8 @@ export default function about(props) {
       </Head>
       <div className="overflow-hidden lg:pt-[50px]" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className="" >
+          <div className='w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#ffaf0445]">
               <Header />
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
@@ -72,7 +71,7 @@ export default function about(props) {
                     </div>
                   </div>
                 </div>
-                <div className="w-full flex justify-center md:py-0 ">
+                <div className="hidden w-full md:flex justify-center md:py-0 ">
                   <Image className="object-cover " src="https://www.comfygen.com/img/hero-great-wallet.webp" width={600} height={300} alt=' hero great wallet' loading="eager" priority />
                 </div>
               </div>
@@ -140,7 +139,7 @@ export default function about(props) {
           </div>
         </section>
 
-        <div className={`${styles.herobg} `}>
+        <div className="">
           <div className='bg-[#fffacd69] py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

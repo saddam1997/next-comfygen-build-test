@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -22,7 +21,7 @@ const BlogSection = dynamic(
 
 
 
-export default function about(props) {
+export default function about(props:any) {
   let { initialData } = props;
   return (
     <div className='overflow-hidden'>
@@ -48,8 +47,8 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
       <div className="overflow-hidden" >
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className="bg-gradient-to-r from-[#8B0E0E] via-[#A70D0D] to-[#990C0C]" >
+          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#770706]/90">
               <Header />
               <div className="flex justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  pt-8">
@@ -95,7 +94,7 @@ export default function about(props) {
             </div>
           </section>
         </div>
-        <div className={`${styles.featuresbg} `}>
+        <div className="bg-gradient-to-r from-[#770706] via-[#8B0E0E] to-[#990C0C]">
           <div className='bg-[#770706]/70 md:py-10 py-6 '>
             <section className=" w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className="w-full space-y-4 text-center md:text-left">
@@ -134,7 +133,7 @@ export default function about(props) {
             <p className='text-base text-slate-800'>Live Line Application successfully addressed the challenge by developing a feature-rich application that offers an immersive cricket experience. The platform leverages advanced technologies to provide real-time updates, analytical insights, and personalized features. The user interface is designed for ease of navigation, ensuring that cricket fans can access all the information they need seamlessly.</p>
           </div>
         </section>
-        <div className={`${styles.toolstechbg} `}>
+        <div className="bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722]">
           <div className=' py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

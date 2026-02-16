@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
-import React from 'react'
+
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./great-wallet.json"
@@ -50,17 +49,17 @@ export default function about(props) {
       </Head>
       <div className="overflow-hidden lg:pt-[50px]" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
-            <div className=" bg-[#1B1C30CC]/20">
+        <div className="bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722]">
+          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
+            <div className=" bg-[#1B1C30CC]/20 pt-20">
               <Header />
-              <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
+              <div className="flex  justify-center items-center w-full space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8 px-4">
                 <div className="w-full">
                   <div className="space-y-6 text-start">
-                    <h1 className="text-white xl:text-5xl text-3xl font-extrabold xl:leading-[4rem] leading-[3rem]  ">
+                    <h1 className="text-white xl:text-5xl text-lg font-extrabold xl:leading-[4rem] ">
                       Great Wallet Application
                     </h1>
-                    <p className="text-white text-base">Great Wallet is an innovative IOS wallet designed to seamlessly integrate with the Great Crypto Network (GREAT Blockchain). As part of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain model is tailored to facilitate the digital transformation of global economic governance and operations in the era of the fourth industrial revolution. The vision is to establish a large-scale economic blockchain ecosystem infused with machine learning and artificial intelligence, implementing macroeconomic theories to drive sustainable, equitable, and transparent economic growth worldwide.
+                    <p className="text-white text-sm lg:text-base">Great Wallet is an innovative IOS wallet designed to seamlessly integrate with the Great Crypto Network (GREAT Blockchain). As part of the Global Real Economic Asset Transformation Crypto Network, this decentralized blockchain model is tailored to facilitate the digital transformation of global economic governance and operations in the era of the fourth industrial revolution. The vision is to establish a large-scale economic blockchain ecosystem infused with machine learning and artificial intelligence, implementing macroeconomic theories to drive sustainable, equitable, and transparent economic growth worldwide.
                     </p>
                     <div className="py-4">
                       <Link href="/contact-us" passHref={true}>
@@ -73,7 +72,7 @@ export default function about(props) {
                     </div>
                   </div>
                 </div>
-                <div className="w-full flex justify-center md:py-0 ">
+                <div className="hidden w-full lg:flex justify-center md:py-0 ">
                   <Image className="object-cover " src="https://www.comfygen.com/img/hero-great-wallet.webp" width={600} height={300} alt=' hero great wallet' loading="eager" priority />
                 </div>
               </div>
@@ -96,7 +95,7 @@ export default function about(props) {
             </div>
           </section>
         </div>
-        <div className={`${styles.herobg} , md:py-10 py-6`} >
+        <div className={`bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722] md:py-10 py-6`} >
 
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full lg:justify-start pt-10 lg:pt-0">
@@ -158,7 +157,7 @@ export default function about(props) {
           </div>
         </section>
 
-        <div className={`${styles.herobg} , py-20`}>
+        <div className={`bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722] py-20`}>
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full ">
               <Image src="https://www.comfygen.com/img/tools-technologies-great-wallet.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />

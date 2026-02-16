@@ -36,11 +36,11 @@ export default function Portfolio(props) {
   }, [selectedCategory]);
 
   // Scroll to top of portfolio section on page change
-  useEffect(() => {
-    if (portfolioRef.current) {
-      portfolioRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [currentPage]);
+  // useEffect(() => {
+  //   if (portfolioRef.current) {
+  //     portfolioRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  //   }
+  // }, [currentPage]);
 
   const openModal = () => setTalkToExpertModal(true);
   const closeModal = () => setTalkToExpertModal(false);
@@ -120,19 +120,19 @@ export default function Portfolio(props) {
             <button
               onClick={() => setSelectedCategory("All")}
               className={`px-4 py-2 rounded-full border ${selectedCategory === "All"
-                  ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
-                  : ""
+                ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
+                : ""
                 }`}
             >
               All
             </button>
-            {categories.map((category) => (
+            {categories.map((category, index) => (
               <button
-                key={category}
+                key={index}
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full border ${selectedCategory === category
-                    ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
-                    : ""
+                  ? "border border-[#5556D1] hover:bg-[#5556D1] hover:text-white transition-all duration-200 text-[#5556D1] text-lg font-semibold"
+                  : ""
                   }`}
               >
                 {category}
@@ -153,14 +153,14 @@ export default function Portfolio(props) {
                 >
                   <div className="flex justify-center w-full md:justify-start">
                     <Image
-                      className="rounded-md w-full"
+                      className="rounded-md w-full h-auto"
                       title={portfolio.head}
                       alt={portfolio.head}
                       src={portfolio.img}
-                      height={600}
                       width={600}
-                      loader={uploadcareLoader}
-                      unoptimized={true}
+                      height={600}
+                      quality={70}
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   <div className="w-full text-left">

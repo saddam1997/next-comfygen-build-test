@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
+
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -49,8 +49,8 @@ export default function about(props:any) {
 
       <div className="overflow-hidden lg:pt-[110px]" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className="" >
+          <div className='w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#424151]/70">
               <Header />
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-10">
@@ -98,7 +98,7 @@ export default function about(props:any) {
           </section>
         </div>
 
-        <div className={`${styles.featuresbg} `}>
+        <div className="bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
           <div className='bg-[#121212e3] md:py-10 py-6 '>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className="w-full space-y-4 text-center md:text-left">
@@ -144,7 +144,7 @@ export default function about(props:any) {
           </div>
         </section>
 
-        <div className={`${styles.herobg} `}>
+        <div className="bg-gradient-to-r from-[#e381a4] via-[#de7c9e] to-[#d46b8e]">
           <div className='bg-[#F6498B]/60 py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

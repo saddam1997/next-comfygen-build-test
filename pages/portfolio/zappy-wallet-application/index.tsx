@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Link from 'next/link';
-import styles from './styles.module.css'
-import React from 'react'
+
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./zappy-wallet-application.json"
@@ -50,8 +49,8 @@ export default function about(props) {
       </Head>
       <div className="overflow-hidden lg:pt-[110px]" >
 
-        <div className={`${styles.herobg} `} >
-          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/B.svg")` }}>
+        <div className="">
+          <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#770706]/90">
               <Header />
               <div className="flex items-center justify-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
@@ -98,7 +97,7 @@ export default function about(props) {
             </div>
           </section>
         </div>
-        <div className={`${styles.featuresbg} `}>
+        <div className={`bg-gradient-to-br from-[#8F0C0C] via-[#A60E0E] to-[#7E0A0A]`}>
           <div className='bg-[#770706]/70 md:py-10 py-6 '>
             <section className=" w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className="w-full space-y-4 text-center md:text-left">
@@ -137,7 +136,7 @@ export default function about(props) {
             <p className="text-[#fff] text-white-800"><span className='text-lg	 font-bold'>Agile Development: </span>  Embracing an agile development methodology to adapt to evolving requirements and deliver a feature-rich mobile payment app within the specified timeline.</p>
           </div>
         </section>
-        <div className={`${styles.toolstechbg} `}>
+        <div className={`bg-gradient-to-br from-[#8F0C0C] via-[#A60E0E] to-[#7E0A0A]`}>
           <div className=' py-20'>
             <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0 ">
               <div className='space-y-2 w-full'>

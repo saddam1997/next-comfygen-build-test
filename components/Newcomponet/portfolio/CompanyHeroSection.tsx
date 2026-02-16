@@ -86,7 +86,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             )}
           </div>
-          <div>
+          <div className="hidden lg:block relative w-full h-[260px] sm:h-[320px] md:h-[369px]">
+            <Image
+              src={imageSrc}
+              alt={heading}
+              fill
+              priority
+              sizes="(max-width: 640px) 100vw,
+           (max-width: 1024px) 50vw,
+           640px"
+              className="object-contain"
+            />
+          </div>
+          {/* <div>
             <Image
               src={imageSrc}
               alt={heading}
@@ -94,7 +106,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               width={imageWidth}
               className="mx-auto"
             />
-          </div>
+          </div> */}
         </div>
       </div>
 
