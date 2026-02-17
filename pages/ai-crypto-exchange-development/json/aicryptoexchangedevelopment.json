@@ -40,6 +40,66 @@
       }
     ]
   },
+
+
+
+  "consultancyHead": [
+    {
+      "num": "1",
+      "title": "Key Features of AI Crypto Exchange Development ",
+      "desc": "Our <a class='text-blue-600 font-semibold underline' href='https://www.comfygen.com/blog/best-crypto-exchange-in-india-compare-trade-grow-in-2025/'>AI-powered crypto exchange</a> software is engineered with cutting-edge features to deliver unparalleled performance, robust security, and an exceptional user experience. These features empower your platform to operate with maximum efficiency, scalability, and reliability in today’s fast-evolving digital asset market."
+    }
+  ],
+  "consultancyData": [
+  {
+      "num": "1",
+      "title": "Advanced AI Trading Algorithms",
+      "desc": "Implement intelligent, automated trading strategies that optimize trade execution and enhance profitability through continuous learning and adaptation."
+    },
+    {
+      "num": "2",
+      "title": "Real-Time Fraud Detection and Prevention",
+      "desc": "Employ sophisticated AI models to monitor transactions and user activity, instantly identifying and mitigating fraudulent behavior to protect your exchange and users."
+    },
+    {
+      "num": "3",
+      "title": "Predictive Market Analytics",
+      "desc": "Utilize machine learning-driven predictive analytics to anticipate market trends and inform strategic trading decisions with high accuracy."
+    },
+    {
+      "num": "4",
+      "title": "NLP-Enabled Customer Support",
+      "desc": "Integrate natural language processing-powered chatbots to provide seamless, 24/7 customer service, resolving queries promptly and efficiently."
+    },
+    {
+      "num": "5",
+      "title": "Multi-Layered Security Framework",
+      "desc": "Incorporate biometric authentication and anomaly detection systems to fortify platform security and ensure user trust."
+    },
+    {
+      "num": "6",
+      "title": "Highly Scalable Infrastructure",
+      "desc": "Design a robust, scalable architecture capable of supporting increased user demand and high-frequency trading without compromising performance."
+    },
+    {
+      "num": "7",
+      "title": "Multi-Asset and Cross-Chain Compatibility",
+      "desc": "Support a wide range of cryptocurrencies across multiple blockchain networks to offer diverse trading options."
+    },
+    {
+      "num": "8",
+      "title": "Comprehensive Administrative Dashboard",
+      "desc": "Provide real-time monitoring, analytics, and management tools to enable efficient platform oversight and operational control."
+    }
+  ],
+
+
+
+
+
+
+
+
   "servicesData": [
     {
       "title": "AI-Based Trading Engine Integration",
@@ -59,16 +119,6 @@
         "Automated trading and user management",
         "Scalable infrastructure for high-volume transactions",
         "Seamless integration with existing systems"
-      ]
-    },
-    {
-      "title": "AI-Based Trading Engine Integration",
-      "description": "Our intelligent trading engines utilize advanced AI algorithms to execute trades automatically based on real-time market data and predictive analytics. This reduces latency and enhances profitability.",
-      "features": [
-        "Predictive trading algorithms",
-        "High-frequency and <a class='text-white underline font-semibold' href='/crypto-trading-bot-development' >algorithmic trading support</a>",
-        "Real-time market data analysis",
-        "Reduced manual intervention and errors"
       ]
     },
     {
@@ -356,55 +406,7 @@
       "decs": "Implement AI-powered chatbots and virtual assistants for continuous user engagement and issue resolution."
     }
   ],
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Key Features of AI Crypto Exchange Development ",
-      "desc": "Our <a class='text-white font-semibold underline' href='https://www.comfygen.com/blog/best-crypto-exchange-in-india-compare-trade-grow-in-2025/'>AI-powered crypto exchange</a> software is engineered with cutting-edge features to deliver unparalleled performance, robust security, and an exceptional user experience. These features empower your platform to operate with maximum efficiency, scalability, and reliability in today’s fast-evolving digital asset market."
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "1",
-      "title": "Advanced AI Trading Algorithms",
-      "desc": "Implement intelligent, automated trading strategies that optimize trade execution and enhance profitability through continuous learning and adaptation."
-    },
-    {
-      "num": "2",
-      "title": "Real-Time Fraud Detection and Prevention",
-      "desc": "Employ sophisticated AI models to monitor transactions and user activity, instantly identifying and mitigating fraudulent behavior to protect your exchange and users."
-    },
-    {
-      "num": "3",
-      "title": "Predictive Market Analytics",
-      "desc": "Utilize machine learning-driven predictive analytics to anticipate market trends and inform strategic trading decisions with high accuracy."
-    },
-    {
-      "num": "4",
-      "title": "NLP-Enabled Customer Support",
-      "desc": "Integrate natural language processing-powered chatbots to provide seamless, 24/7 customer service, resolving queries promptly and efficiently."
-    },
-    {
-      "num": "5",
-      "title": "Multi-Layered Security Framework",
-      "desc": "Incorporate biometric authentication and anomaly detection systems to fortify platform security and ensure user trust."
-    },
-    {
-      "num": "6",
-      "title": "Highly Scalable Infrastructure",
-      "desc": "Design a robust, scalable architecture capable of supporting increased user demand and high-frequency trading without compromising performance."
-    },
-    {
-      "num": "7",
-      "title": "Multi-Asset and Cross-Chain Compatibility",
-      "desc": "Support a wide range of cryptocurrencies across multiple blockchain networks to offer diverse trading options."
-    },
-    {
-      "num": "8",
-      "title": "Comprehensive Administrative Dashboard",
-      "desc": "Provide real-time monitoring, analytics, and management tools to enable efficient platform oversight and operational control."
-    }
-  ],
+ 
   "jsonLdData": [
     {
       "@context": "https://schema.org",

@@ -419,12 +419,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-      Best Health Tracking App Development Company | Comfygen
+    Top Health Tracking App Development Company | Comfygen
 
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a leading health tracking app development company delivering secure, scalable apps with AI insights and wearable integration."
+          content="Comfygen is a leading health tracking app development company offering intelligent health tracking app development services with AI insights, wearable integration, and HIPAA-compliant features."
         />
         <meta name="keywords" content="Custom Health Tracker App Development, Fitness & Activity Tracking App Development, Nutrition & Calorie Counter App Development, Mental Wellness App Solutions, Wearable Device Integration" />
         <link
@@ -542,10 +542,10 @@ export default function ClinicalApp(props: any) {
 
         <HeroSectionForAllPages
           heading="Best Health Tracking App Development Company"
-          ptag="An experienced Health Tracking App Development Company focused on building intelligent, data-driven wellness applications. Comfygen Technologies combines AI, IoT, and wearable integrations to create advanced health tracking apps that monitor vital signs, fitness metrics, and lifestyle patterns. We ensure high performance, data privacy, and future-ready scalability to support long-term digital health growth."
-          li="AI-Powered Health Insights"
-          li1="Wearable & IoT Device Integration"
-          li2="Real-Time Health & Fitness Tracking"
+          ptag="Comfygen is a leading health tracking app development company delivering next-generation digital wellness solutions for healthcare providers, fitness brands, and wellness startups. Our expert health tracking app developers specialize in building feature-rich health tracking apps that track vital signs, physical activity, sleep, nutrition, and more—empowering users to manage their health in real time. From wearable integration to secure data storage and HIPAA compliance, we deliver scalable health tracking app development services tailored to your goals."
+          li="Digital Health Powered by Innovation, Intelligence & Security"
+          li1="Smarter Wellness Starts with a Smarter App"
+          li2="Top-Tier mHealth App Developers With 10+ Years of Expertise"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -561,14 +561,10 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Health Tracking App Development Services
+               End-to-End Health Tracking App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen offers top-notch health tracking app development
-                services tailored for fitness brands, healthcare startups, and
-                wellness enterprises. With smart features and cross-platform
-                support, we deliver health apps that empower users to take
-                control of their physical, mental, and nutritional well-being.
+                Comfygen delivers high-quality health tracking app development services designed for fitness brands, wellness startups, and healthcare organizations. With advanced features, smooth performance, and cross-platform compatibility, we create fitness health tracking apps that help users manage their physical, mental, and nutritional well-being effortlessly.
               </p>
             </div>
             <div className="">

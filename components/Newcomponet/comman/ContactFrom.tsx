@@ -229,10 +229,10 @@ class ContactFrom extends Component<{}, any> {
         >
           <div className=" ">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-xl text-black text-start font-semibold">
+              <h2 className="xl:text-4xl text-base text-black text-start font-semibold">
                 Get In Touch
               </h2>
-              <p className="text-base ">
+              <p className="md:text-base text-xs">
                 Comfygen is a result-oriented IT Service Provider that builds
                 secured
               </p>
@@ -427,7 +427,7 @@ class ContactFrom extends Component<{}, any> {
               <button
                 type="button"
                 onClick={this.createContactUs}
-                className=" text-white bg-[#5556D1] px-8 py-2.5 text-lg gap-2  rounded-full justify-center items-center space-x-1  overflow-hidden relative inline-flex group cursor-pointer font-semibold"
+                className=" text-white bg-[#5556D1] lg:px-8 px-2 py-2.5 text-lg gap-2  rounded-full justify-center items-center space-x-1  overflow-hidden relative inline-flex group cursor-pointer font-semibold"
               >
                 Send Message
                 <Image

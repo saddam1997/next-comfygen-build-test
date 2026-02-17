@@ -40,7 +40,7 @@ export default function TalkToExpertModal({
 
   return (
     <div
-      className="fixed inset-0  z-50 flex items-center justify-center px-4"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 "
       role="dialog"
       aria-modal="true"
     >
@@ -51,7 +51,7 @@ export default function TalkToExpertModal({
       />
 
       {/* Modal Container */}
-      <div className="relative z-10  w-[1179px] bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div className="relative z-10  max-h-[90vh] w-[1179px] bg-white rounded-2xl shadow-2xl overflow-y-auto">
         <div className="flex flex-col lg:flex-row lg:h-[600px]">
 
           {/* ================= LEFT IMAGE SECTION ================= */}
@@ -67,7 +67,7 @@ export default function TalkToExpertModal({
 
             {/* Dark Overlay Content */}
             <div className="relative z-10 flex flex-col justify-end p-8 w-full  text-white">
-              <div className="space-y-4">
+              <div className="lg:space-y-4">
                 <Image
                   alt="Comfygen Technologies Logo"
                   src="https://www.comfygen.com/image/comfygen-form-logo.svg"
@@ -75,7 +75,7 @@ export default function TalkToExpertModal({
                   width={186}
                 />
 
-                <p className="text-sm leading-relaxed">
+                <p className="lg:text-sm text-xs leading-relaxed">
                   Comfygen is a result-oriented IT service provider that builds
                   secure and scalable applications for businesses worldwide.
                 </p>
@@ -110,7 +110,7 @@ export default function TalkToExpertModal({
           <div className="w-full lg:w-[60%] flex flex-col bg-white">
 
             {/* Close Button */}
-            <div className="flex justify-end p-4">
+            <div className=" absolute z-20 right-0 flex justify-end p-4">
               <button
                 onClick={onClose}
                 aria-label="Close modal"
@@ -121,7 +121,7 @@ export default function TalkToExpertModal({
             </div>
 
             {/* Form Scroll Area */}
-            <div className="px-4 pb-6 lg:px-8 overflow-y-auto">
+            <div className="px-4 pb-6 lg:px-8 lg:py-8 overflow-y-auto">
               <ContactFrom />
             </div>
           </div>

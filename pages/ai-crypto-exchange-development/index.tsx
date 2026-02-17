@@ -5,6 +5,7 @@ import JSON_DATA from "./json/aicryptoexchangedevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -28,6 +29,17 @@ const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
   { loading: loader, ssr: true }
 )
+
+const IndustriesServe = dynamic(() => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+  ssr: true,
+});
+const ConsultancyApproach = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+  { loading: loader, ssr: true }
+);
+
+
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
@@ -245,13 +257,13 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
-          heading="Why choose AI-Powered Crypto Exchange Development?"
-          ptag="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='underline font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
-          li="Automated, precise trading algorithms that optimize profits"
-          li1="Real-time fraud detection and threat mitigation"
-          li2="Personalized portfolio insights for enhanced user engagement"
-          li3="AI-driven security protocols for robust protection"
-          li4="Scalable solutions to support high-frequency and large-volume trading"
+          heading="AI-Powered Crypto Exchange Development"
+          ptag="Comfygen best AI-powered crypto exchange development Company that combines Artificial intelligence, predictive analytics, and real-time trading insights. Our AI-powered crypto exchange development solution offers high-speed order matching, multi-asset support, advanced security, and risk management tools, enabling smarter trading decisions and seamless user experiences. Fully customizable and scalable, our AI-driven exchanges help startups and enterprises optimize liquidity, enhance performance, and stay ahead of market trends."
+          li="AI-driven trading insights & predictive analytics"
+          li1="High-speed order matching & multi-asset support"
+          li2="Advanced security & risk management"
+          li3="Scalable, customizable architecture with 24/7 support"
+
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -261,21 +273,8 @@ export default function Ecommerce(props) {
           bgImage="https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-hero.webp"
         />
 
-        <AboutSection
-          title=""
-          heading="Why choose AI-Powered Crypto Exchange Development?"
-          description1="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-600 font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
-          points={[
-            "Automated, precise trading algorithms that optimize profits",
-            "Real-time fraud detection and threat mitigation",
-            "Personalized portfolio insights for enhanced user engagement",
-            "AI-driven security protocols for robust protection",
-            "Scalable solutions to support high-frequency and large-volume trading"
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -293,6 +292,23 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
+        <AboutSection
+          title=""
+          heading="Why choose AI-Powered Crypto Exchange Development?"
+          description1="Integrating AI into crypto exchange development brings smarter automation, faster trade execution, and stronger security. <a href='https://www.comfygen.com/crypto-trading-bot-development' class='text-blue-600 font-semibold'>AI-Based crypto trading</a> Platform reduces human errors, detects fraud in real time, and provides personalized insights based on market trends and user behavior. This leads to better risk management, enhanced user experience, and scalable performance, helping your exchange stay competitive in the fast-evolving crypto landscape."
+          points={[
+            "Automated, precise trading algorithms that optimize profits",
+            "Real-time fraud detection and threat mitigation",
+            "Personalized portfolio insights for enhanced user engagement",
+            "AI-driven security protocols for robust protection",
+            "Scalable solutions to support high-frequency and large-volume trading"
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/ai-crypto-exchange-development/ai-crypto-exchange-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
 
 
 
@@ -305,12 +321,17 @@ export default function Ecommerce(props) {
           imageAlt="Get in touch now."
         />
 
-        <SolutionsFeature
+        <IndustriesServe
+          heading="AI-Powered Crypto Exchange Industry"
+          description="We help crypto startups, blockchain enterprises, and fintech firms build intelligent AI-powered exchange platforms. By integrating advanced automation, real-time analytics, and enhanced security, we enable scalable, high-performance trading ecosystems that drive innovation and long-term digital growth."
+        />
+
+        {/* <SolutionsFeature
           title="Used cases of our AI-Powered Crypto Exchange Development Solution"
           subtitle="AI-powered crypto exchange development opens up multiple high-impact use cases for businesses, traders, and institutions looking to build smarter, safer, and more profitable trading systems. By combining machine learning, predictive analytics, and automation with a strong exchange core, the AI-Powered Crypto Exchange Development solution helps you deliver differentiated value across the entire trading lifecycle."
           data={JSON_DATA.LeadingSoftware}
 
-        />
+        /> */}
 
 
 
@@ -329,9 +350,15 @@ export default function Ecommerce(props) {
           </div>
         </section>
 
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
+        />
 
-
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
+        {/* <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} /> */}
 
         {/* portfoliodata */}
         <section className="py-8">
@@ -375,10 +402,7 @@ export default function Ecommerce(props) {
             "Flexible Hiring Models"
           ]}
         />
-        <UseCaseSection
-          heading="Industry Use Cases of AI-Powered Crypto Exchanges"
-          description="AI-powered crypto exchanges are revolutionizing how various industries interact with digital assets."
-          data={JSON_DATA.IndustryApplications} />
+      
 
         <ClientTestimonials
           heading="What Our Clients Say"

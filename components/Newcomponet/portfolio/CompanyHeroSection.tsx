@@ -42,7 +42,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="lg:grid-cols-2 grid md:items-center lg:space-x-20 lg:space-y-0 space-y-6 mx-auto ">
           <div>
             <div className="space-y-2">
-              <h1 className="text-white xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem] text-start">
+              <h1 className="text-white xl:text-4xl text-xl font-extrabold xl:leading-[3rem]  text-start">
                 {heading}
               </h1>
               <h2 className="w-full mx-auto xl:text-3xl text-xl font-normal text-white text-start">
