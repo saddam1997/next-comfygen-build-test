@@ -67,6 +67,13 @@ export default function Portfolio({ projects, heading, description }: any) {
     preventClick.current = false;
     isDragging.current = true;
 
+     const target = e.target as HTMLElement;
+
+  // 🚀 If clicking on link or button → DO NOT START DRAG
+  if (target.closest("a, button")) {
+    return;
+  }
+
     (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
     setEnableTransition(false);
   };
@@ -159,7 +166,7 @@ export default function Portfolio({ projects, heading, description }: any) {
                   dangerouslySetInnerHTML={{ __html: item.description }}
                 />
 
-                <Link href={item.link}>
+                <Link href={item.link} aria-label={`View ${item.title} Case Study`}>
                   <span className="inline-flex items-center mt-4 gap-2 border border-[#453de3]
                     text-[#453ecf] px-6 py-2 rounded-full
                     hover:bg-[#6C63FF] hover:text-white transition">
@@ -205,16 +212,17 @@ export default function Portfolio({ projects, heading, description }: any) {
 
               <h3 className="text-sm font-semibold">{item.title}</h3>
 
-              <p className="text-xs text-gray-700">
+              <p className="text-xs font-medium text-gray-900">
                 {truncateText(
                   item.description.replace(/<[^>]*>?/gm, ""),
                   200
                 )}
               </p>
 
-              <Link href={item.link}>
-                <span className="inline-flex items-center gap-2 border border-[#6C63FF]
-                  text-[#6C63FF] px-4 py-2 rounded-full text-xs
+              <Link href={item.link} aria-label={`View ${item.title} Case Study`}>
+                
+                <span className="inline-flex items-center gap-2 border border-[#2821a8]
+                  text-[#322bbd] px-4 py-2 rounded-full text-xs
                   hover:bg-[#6C63FF] hover:text-white transition">
                   View Case Study <MdOutlineArrowOutward />
                 </span>
