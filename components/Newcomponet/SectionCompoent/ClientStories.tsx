@@ -376,10 +376,10 @@ export default function ClientStories() {
                     setCurrentTestimonial(i);
                     resetVideoState();
                   }}
-                  className={`h-2 rounded-full transition-all ${
+                  className={`w-10 h-10 rounded-full transition-all ${
                     i === currentTestimonial 
-                      ? "w-6 sm:w-8 bg-red-600" 
-                      : "w-2 bg-gray-300 hover:bg-gray-400"
+                      ? "w-4 h-4 sm:w-8 bg-red-600" 
+                      : "w-4 h-4 bg-gray-300 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />

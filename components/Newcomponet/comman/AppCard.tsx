@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 const AppCard = ({ title, cards, subtitle, openModal }) => {
@@ -18,17 +19,20 @@ const AppCard = ({ title, cards, subtitle, openModal }) => {
       ></p>
 
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 m-6 lg:m-0">
-        {cards?.slice(0, visibleCount).map((card:any, index:any) => (
+        {cards?.slice(0, visibleCount).map((card: any, index: any) => (
           <div
             key={index}
             className="flex flex-col items-center max-w-8xl 2xl:flex-row bg-white rounded-3xl border-2 border-gray-300 overflow-hidden min-h-[360px]"
           >
             {/* Image Section */}
             <div className="w-full 2xl:w-1/2 p-4 flex justify-center">
-              <img
+              <Image
                 src={card.image}
                 alt={card.title}
-                className="w-full h-auto max-w-md object-cover rounded-xl"
+                width={722}
+                height={687}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full max-w-md object-cover rounded-xl"
               />
             </div>
 
@@ -47,7 +51,7 @@ const AppCard = ({ title, cards, subtitle, openModal }) => {
                 className="mt-4 inline-block border  hover:bg-white transition text-white bg-[#5556D1] hover:border-[#5556D1] hover:text-[#5556D1]  border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full"
               >
                 {card.buttonText}
-              </a>                                       
+              </a>
             </div>
           </div>
         ))}

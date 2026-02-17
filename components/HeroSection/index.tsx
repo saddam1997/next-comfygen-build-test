@@ -37,10 +37,9 @@ export default function HeroSection(props: any) {
 
     return (
         <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
-            itemScope
-            itemType="https://schema.org/WebPage"
+            // itemScope
+            // itemType="https://schema.org/WebPage"
         >
-
 
             {/* ================= LCP IMAGE ================= */}
 
@@ -51,7 +50,7 @@ export default function HeroSection(props: any) {
                     fill
                     priority
                     fetchPriority="high"
-                    sizes="(max-width: 768px) 0px, 80vw"
+                    sizes="(max-width: 768px) 0px"
                     quality={60}
                     className="object-cover object-center"
                 />
@@ -162,28 +161,14 @@ export default function HeroSection(props: any) {
                         >
                             Talk to an expert!
 
-                            <span  className="bg-transparent hrt">
-                               <Image src="/unnamed.webp"
-                                alt="heart"
-                                width={20}
-                                height={20}
-                                className=""
-                               />
-                            </span>
-
-                            {/* <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="12"
-                                viewBox="0 0 24.231 11.738"
-                                className="text-black"
-                            >
-                                <path
-                                    d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                                    transform="translate(-521.511 -1346.214)"
-                                    fill="#fff"
+                            <span className="bg-transparent hrt">
+                                <Image src="/unnamed.webp"
+                                    alt="heart"
+                                    width={20}
+                                    height={20}
+                                    className=""
                                 />
-                            </svg> */}
+                            </span>
                         </button>
                     </div>
 

@@ -149,19 +149,19 @@ export default function Portfolio({ projects, heading, description }: any) {
               style={{ width: CARD_WIDTH }}
               className={`h-[390px] rounded-3xl bg-white shadow-xl p-5
               flex items-center gap-10 transition-all duration-500
-              ${i === index ? "scale-100 opacity-100" : "scale-95 opacity-60"}`}
+              ${i === index ? "scale-100 opacity-100" : "scale-95 opacity-100"}`}
             >
               <div className="flex-1 space-y-6">
                 <h3 className="text-3xl font-semibold">{item.title}</h3>
 
                 <p
-                  className="text-gray-700 text-sm leading-relaxed"
+                  className="text-gray-800 font-medium text-sm leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: item.description }}
                 />
 
                 <Link href={item.link}>
-                  <span className="inline-flex items-center mt-4 gap-2 border border-[#6C63FF]
-                    text-[#6C63FF] px-6 py-2 rounded-full
+                  <span className="inline-flex items-center mt-4 gap-2 border border-[#453de3]
+                    text-[#453ecf] px-6 py-2 rounded-full
                     hover:bg-[#6C63FF] hover:text-white transition">
                     View Case Study <MdOutlineArrowOutward />
                   </span>

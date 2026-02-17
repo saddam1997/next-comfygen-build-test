@@ -112,7 +112,7 @@ const ServiceContent = ({ service }) => (
               router.push("/contact-us");
             }
           }}
-          className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-8 py-2.5 text-lg font-semibold rounded-full capitalize flex items-center gap-1"
+          className="text-white  border border-white px-8 py-2.5 text-lg font-semibold rounded-full capitalize flex items-center gap-1"
         >
           Connect Experts <MdOutlineArrowOutward />
         </button>

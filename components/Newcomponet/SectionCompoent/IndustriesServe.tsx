@@ -266,8 +266,8 @@ function IndustriesServe({
           </div>
 
           <div className="hidden md:flex gap-4">
-            <button onClick={prev}><ChevronLeft /></button>
-            <button onClick={next}><ChevronRight /></button>
+            <button  aria-label="Previous slide" onClick={prev}><ChevronLeft /></button>
+            <button  aria-label="Next slide" onClick={next}><ChevronRight /></button>
           </div>
         </div>
 
