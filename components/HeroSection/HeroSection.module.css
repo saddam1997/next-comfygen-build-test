@@ -22,7 +22,7 @@
 }
 
 
-.btnFix svg {
+.btnFix span {
   background: #5556d1;
   height: 40px;
   width: 40px;
@@ -35,7 +35,7 @@
 }
 
 
-.btnFix:hover svg {
+.btnFix:hover span {
   right: calc(100% - 50px);
 }
 

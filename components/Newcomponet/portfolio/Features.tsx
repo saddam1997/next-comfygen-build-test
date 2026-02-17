@@ -40,25 +40,29 @@ const Features = ({
                             </div>
                         </div>
 
-                        <div>
+                        <div className="relative w-full">
                             <Image
-                                width={907}
-                                height={762}
-                                className="rounded-2xl"
                                 src={imageSrc}
                                 alt="About Us"
+                                width={800}
+                                height={650}
+                                sizes="(max-width: 1024px) 0px, 50vw"
+                                className="rounded-2xl w-full h-auto"
+                                quality={70}
                             />
                         </div>
                     </div>
                 ) : (
                     <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
-                        <div>
+                        <div className="relative w-full">
                             <Image
-                                width={907}
-                                height={762}
-                                className="rounded-2xl"
                                 src={imageSrc}
                                 alt="About Us"
+                                width={800}
+                                height={650}
+                                sizes="(max-width: 1024px) 0px, 50vw"
+                                className="rounded-2xl w-full h-auto"
+                                quality={70}
                             />
                         </div>
 

@@ -212,7 +212,10 @@ export default function Home(props: any) {
             btnLink="/contact-us"
             altTag="blockchain-technology"
             bgImage={JSON_DATA.Herosection.bgImage}
+            // mobileBgImage="https://www.comfygen.com/comfygen-images/home/mobileHrom.webp"
           />
+
+        
         </div>
         <Milestones />
 

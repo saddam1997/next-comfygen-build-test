@@ -56,25 +56,28 @@ export default function HeroSection(props: any) {
                     className="object-cover object-center"
                 />
             </div>
-            {/* <Image
-                src={props.bgImage}
-                alt="Comfygen Web & Mobile App Development"
-                fill
-                priority
-                sizes="(max-width: 1024px) 0px, 100vw"
-                quality={75}
-                className=" object-cover object-center hidden lg:block"
-            /> */}
+            {/* mobile */}
 
-            {/* <Image
-                src={props.bgImage}
-                alt="Comfygen Web & Mobile App Development"
-                fill
 
-                sizes="100vw"
-                quality={75}
-                className="object-cover"
-            /> */}
+
+            {props.mobileBgImage && (
+                <div className="lg:hidden absolute inset-0 ">
+                    <Image
+                        src={props.mobileBgImage}
+                        alt="Comfygen Hero Background"
+                        fill
+                        priority
+                        fetchPriority="high"
+                        sizes="(max-width: 768px) 100vw, 80vw"
+                        quality={60}
+                        className="object-cover object-center"
+                    />
+
+                    <div className="absolute inset-0 bg-black/50 z-10"></div>
+                </div>
+            )}
+
+
 
             {/* ================= CONTENT ================= */}
             <div className=" relative z-10  w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
@@ -83,9 +86,9 @@ export default function HeroSection(props: any) {
                 >
                     {/* ================= HEADING ================= */}
                     {props.isHome ? (
-                        <h1 className="text-white text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
-                            <b className="block">AI-Based Mobile App & Web </b>
-                            <span className="block text-2xl xl:text-4xl font-medium">
+                        <h1 className="text-white text-2xl lg:text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
+                            <b className="block ">AI-Based Mobile App & Web </b>
+                            <span className="block text-xl xl:text-4xl font-medium">
                                 Development Company
                             </span>
                         </h1>
@@ -159,7 +162,16 @@ export default function HeroSection(props: any) {
                         >
                             Talk to an expert!
 
-                            <svg
+                            <span  className="bg-transparent hrt">
+                               <Image src="/unnamed.webp"
+                                alt="heart"
+                                width={20}
+                                height={20}
+                                className=""
+                               />
+                            </span>
+
+                            {/* <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="12"
@@ -171,7 +183,7 @@ export default function HeroSection(props: any) {
                                     transform="translate(-521.511 -1346.214)"
                                     fill="#fff"
                                 />
-                            </svg>
+                            </svg> */}
                         </button>
                     </div>
 
@@ -181,7 +193,7 @@ export default function HeroSection(props: any) {
             {/* ================= MODAL ================= */}
             {talkToExpertModal && (
                 <div
-                    className="fixed inset-0  z-50 overflow-y-auto bg-black/60"
+                    className="fixed inset-0 z-50 overflow-y-auto bg-black/60"
                     role="dialog"
                     aria-modal="true"
                 >
