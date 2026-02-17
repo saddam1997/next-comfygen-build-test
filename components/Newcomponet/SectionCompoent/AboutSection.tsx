@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import CommonImage from "../comman/CommonImage";
+
 
 // const CommonImage = dynamic(() => import("../comman/CommonImage"), {
 //   loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
@@ -30,23 +29,13 @@ const AboutSection = (props: any) => {
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="">
-            {/* <Image
-              src={imageSrc}
-              alt="about"
-              width={600}
-              height={340}
-              quality={80}
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-contain w-full h-full object-center bg-no-repeat"
-            /> */}
-
             <Image
               src={imageSrc}
-              alt="about"
-              width={600}
-              height={340}
-              quality={70}
-               sizes="(max-width: 768px) 0px, 80vw"
+              alt={heading || "about image"}
+              width={907}
+              height={762}
+              quality={75}
+              sizes="(max-width: 1024px) 0px, 20vw"
               className="w-full h-auto object-contain"
             />
           </div>

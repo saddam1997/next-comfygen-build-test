@@ -199,18 +199,24 @@ const ClientTestimonials = ({
         </div>
 
         {/* DOTS */}
-        <div className="flex justify-center gap-2 mt-6">
+        <div className="flex justify-center gap-3 mt-6">
           {testimonials.map((_, i) => (
             <button
               key={i}
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => setCurrent(i)}
-              className={`h-2 rounded-full transition-all ${
-                current === i ? "w-8 bg-purple-600" : "w-2 bg-gray-300"
-              }`}
-            />
+              className="w-4 h-4 flex items-center justify-center"
+            >
+              <span
+                className={`block rounded-full transition-all ${current === i
+                  ? "w-4 h-4 bg-purple-600"
+                  : "w-4 h-4 bg-gray-300"
+                  }`}
+              />
+            </button>
           ))}
         </div>
+
       </div>
     </section>
   );

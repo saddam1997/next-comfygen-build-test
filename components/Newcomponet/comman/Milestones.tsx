@@ -1,29 +1,5 @@
 
 
-
-
-
- const milestone = {
-   "heading": "Company Milestones and Global Presence",
-   "countries": [
-     "India",
-     "USA",
-     "Canada",
-     "UK",
-     "Australia",
-     "Germany",
-     "Netherlands",
-     "Switzerland",
-     "UAE",
-     "Mexico",
-     "Argentina",
-     "South Africa",
-     "New Zealand",
-     "Oman",
-     "Denmark",
-     "Austria"
-   ]
- }
  const stats= [
    {
      "id": "experience",
@@ -49,15 +25,7 @@
 
 
 
-
-
-
-
-
-
 const Milestones = () => {
-
-
 
   const cardClass = `
 relative overflow-hidden py-8 text-center rounded-[8px] text-white
@@ -72,21 +40,9 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
 
       <section
         aria-labelledby="milestones-heading"
-        className="py-6  "
-      // className=" bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-800 py-6 mt-3 px-6"
+        className="py-6"
       >
-        {/* SEO HEADING */}
-        {/* <h2 id="milestones-heading" className="sr-only">
-          {milestone?.heading}
-        </h2> */}
-
-
-        {/* ===== SEO ONLY: Hidden Countries (FROM JSON) ===== */}
-        {/* <ul className="sr-only">
-          {milestone?.countries.map((country, index) => (
-            <li key={country}>{country}</li>
-          ))}
-        </ul> */}
+  
 
 
         <div className="container mx-auto space-y-4 lg:p-0 p-4">
@@ -96,15 +52,13 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
               <div
                 key={index}
                 className={cardClass}
-                // itemScope
-                // itemType="https://schema.org/QuantitativeValue"
               >
-                <h3
+                <p
                   className="text-[27px] font-bold tabular-nums min-h-[34px]"
                   itemProp="value"
                 >
                   {item.value}
-                </h3>
+                </p>
                 <p
                   className="text-[18px] px-1"
                   itemProp="description"

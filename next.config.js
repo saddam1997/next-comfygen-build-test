@@ -33,7 +33,7 @@ const nextConfig = {
     minimumCacheTTL: 31536000, // 1 year
     deviceSizes: [640, 750, 828, 1080, 1200, 1514, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    qualities: [50, 70, 75, 80, 85, 90, 100],
+    qualities: [50,60, 70, 75, 80, 85, 90, 100],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',

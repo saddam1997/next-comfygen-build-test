@@ -81,28 +81,6 @@ import {
 } from "@tabler/icons-react";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Process = [
   {
     title: "Conceptualization",
@@ -364,7 +342,7 @@ const ldJsonData1 = {
   url: "https://www.comfygen.com/ios-app-development",
   telephone: "+91 9587867258, +1 5145659471",
 };
-export default function LudoGame(props) {
+export default function LudoGame(props:any) {
   let { initialData } = props;
   const [admin, setAdmin] = useState(0);
   const [showContent, setShowContent] = useState(false);
@@ -542,10 +520,10 @@ export default function LudoGame(props) {
               </p>
             </div>
             <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-              {JSON_DATA.LeadingSoftware.map((elem) => {
+              {JSON_DATA.LeadingSoftware.map((elem, i) => {
                 const { title, decs, num } = elem;
                 return (
-                  <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
+                  <div key={i} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
                     <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
                       {num}
                     </div>
@@ -716,10 +694,10 @@ export default function LudoGame(props) {
             </h2>
           </div>
           <div className="grid gap-4 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-6 ">
-            {JSON_DATA.GameCardData.slice(0, 6).map((elem) => {
+            {JSON_DATA.GameCardData.slice(0, 6).map((elem, i) => {
               const { title, url, img } = elem;
               return (
-                <div className="w-full ">
+                <div key={i} className="w-full ">
                   <Link href={url} passHref={true}>
                     <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                       <Image
@@ -744,10 +722,10 @@ export default function LudoGame(props) {
 
             {showContent ? (
               <>
-                {JSON_DATA.GameCardData.slice(6, 17).map((elem) => {
+                {JSON_DATA.GameCardData.slice(6, 17).map((elem, i) => {
                   const { title, url, img } = elem;
                   return (
-                    <div className="w-full ">
+                    <div key={i} className="w-full ">
                       <Link href={url} passHref={true}>
                         <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                           <Image

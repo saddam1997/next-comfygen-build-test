@@ -28,9 +28,7 @@ const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionC
   {  ssr: true }
 );
 
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  {  ssr: true }
-);
+
 
 const AppCard = dynamic(() => import("../../components/Newcomponet/comman/AppCard"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
