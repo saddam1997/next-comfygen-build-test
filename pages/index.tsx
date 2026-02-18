@@ -20,7 +20,7 @@ import HeroSection from "../components/HeroSection";
 const Header = dynamic(
   () => import("../components/Newcomponet/layout/Header"),
   {
-    ssr: false,
+    ssr: true,
   }
 );
 

@@ -43,7 +43,7 @@ export default function HeroSection(props: any) {
 
             {/* ================= LCP IMAGE ================= */}
 
-            <div className="hidden lg:block absolute inset-0 ">
+            <div className="absolute inset-0 ">
                 <Image
                     src={props.bgImage}
                     alt={imageAlt}
@@ -59,22 +59,7 @@ export default function HeroSection(props: any) {
 
 
 
-            {props.mobileBgImage && (
-                <div className="lg:hidden absolute inset-0 ">
-                    <Image
-                        src={props.mobileBgImage}
-                        alt="Comfygen Hero Background"
-                        fill
-                        priority
-                        fetchPriority="high"
-                        sizes="(max-width: 768px) 100vw, 80vw"
-                        quality={60}
-                        className="object-cover object-center"
-                    />
-
-                    <div className="absolute inset-0 bg-black/50 z-10"></div>
-                </div>
-            )}
+          
 
 
 
