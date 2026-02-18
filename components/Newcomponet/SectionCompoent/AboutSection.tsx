@@ -24,18 +24,21 @@ const AboutSection = (props: any) => {
     linkText = "",
   } = props;
 
+
+   const imageAlt = props?.altTag || props?.heading || "About image";
+
   return (
-    <section className="bg-white lg:py-16 py-10">
+    <section className="bg-white lg:py-16 py-4">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="">
             <Image
               src={imageSrc}
-              alt={heading || "about image"}
+              alt={imageAlt}
               width={907}
               height={762}
-              quality={75}
-              sizes="(max-width: 1024px) 0px, 20vw"
+              quality={50}
+              sizes="(max-width: 1024px) 0px, 40vw"
               className="w-full h-auto object-contain"
             />
           </div>

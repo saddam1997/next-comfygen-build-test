@@ -20,7 +20,7 @@ import HeroSection from "../components/HeroSection";
 const Header = dynamic(
   () => import("../components/Newcomponet/layout/Header"),
   {
-    ssr: true,
+    ssr: false,
   }
 );
 
@@ -210,7 +210,7 @@ export default function Home(props: any) {
             ptag={JSON_DATA.Herosection.ptag}
             btnName="Let's Discuss"
             btnLink="/contact-us"
-            altTag="blockchain-technology"
+            altTag="AI-Based Mobile App & Web Development Solustion"
             bgImage={JSON_DATA.Herosection.bgImage}
           />
 
@@ -219,7 +219,7 @@ export default function Home(props: any) {
         <Milestones />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -235,11 +235,11 @@ export default function Home(props: any) {
           </div>
         </section>
 
-        {/* <WallOfFame /> */}
 
 
         <AboutSection
           title="About Company"
+          altTag="Scalable Mobile App and Web Development"
           heading={JSON_DATA.AboutSection.heading}
           description1={JSON_DATA.AboutSection.description1}
           description2={JSON_DATA.AboutSection.description2}
@@ -328,7 +328,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-        <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} /> 
       </div>
     </>
   );
