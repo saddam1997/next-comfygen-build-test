@@ -3,19 +3,16 @@
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
 
-
 class ContactFrom extends Component<{}, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      isLoading: "idle",
       fieldsContactUs: {},
       errorsContactUs: {},
       ipInfo: {},
       submitted: false,
       stdCode: "",
       errorMessage: "",
-      successMessage: "",
     };
   }
 
@@ -24,18 +21,16 @@ class ContactFrom extends Component<{}, any> {
   }
 
   inputChange = (e: any) => {
-    let { name, value } = e.target;
+    const { name, value } = e.target;
 
-    if (name === "mobNo") {
-      if (!/^[0-9\s]*$/.test(value)) {
-        this.setState({
-          errorsContactUs: {
-            ...this.state.errorsContactUs,
-            mobNo: "Please enter a valid number.",
-          },
-        });
-        return;
-      }
+    if (name === "mobNo" && !/^[0-9\s]*$/.test(value)) {
+      this.setState({
+        errorsContactUs: {
+          ...this.state.errorsContactUs,
+          mobNo: "Please enter a valid number.",
+        },
+      });
+      return;
     }
 
     this.setState((prevState: any) => ({
@@ -53,22 +48,13 @@ class ContactFrom extends Component<{}, any> {
   handleCountryChange = (e: any) => {
     const value = e.target.value;
 
-    if (value !== "") {
-      this.setState((prevState: any) => ({
-        stdCode: value,
-        errorsContactUs: {
-          ...prevState.errorsContactUs,
-          stdCode: "",
-        },
-      }));
-    } else {
-      this.setState({
-        errorsContactUs: {
-          ...this.state.errorsContactUs,
-          stdCode: "Please select Std Code!",
-        },
-      });
-    }
+    this.setState((prevState: any) => ({
+      stdCode: value,
+      errorsContactUs: {
+        ...prevState.errorsContactUs,
+        stdCode: value ? "" : "Please select Std Code!",
+      },
+    }));
   };
 
   handleValidationContactUs = () => {
@@ -114,8 +100,7 @@ class ContactFrom extends Component<{}, any> {
       email: this.state.fieldsContactUs.email,
       mobNo: this.state.fieldsContactUs.mobNo,
       stdCode: this.state.stdCode,
-      subject:
-        "HEADER CONTACT Form | " + window.location.href,
+      subject: "HEADER CONTACT Form | " + window.location.href,
       msg: this.state.fieldsContactUs.msg,
       ipInfo: this.state.ipInfo,
     };
@@ -189,10 +174,11 @@ class ContactFrom extends Component<{}, any> {
 
             {/* Name */}
             <div className="space-y-2">
-              <label>Full Name</label>
+              <label htmlFor="name">Full Name</label>
               <input
-                type="text"
+                id="name"
                 name="name"
+                type="text"
                 value={this.state.fieldsContactUs.name || ""}
                 onChange={this.inputChange}
                 className="w-full p-2 border rounded bg-[#F7F7F7]"
@@ -206,10 +192,11 @@ class ContactFrom extends Component<{}, any> {
 
             {/* Email */}
             <div className="space-y-2">
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
-                type="text"
+                id="email"
                 name="email"
+                type="email"
                 value={this.state.fieldsContactUs.email || ""}
                 onChange={this.inputChange}
                 className="w-full p-2 border rounded bg-[#F7F7F7]"
@@ -223,11 +210,11 @@ class ContactFrom extends Component<{}, any> {
 
             {/* Phone */}
             <div className="space-y-2">
-              <label>Enter Number</label>
+              <label htmlFor="mobNo">Enter Number</label>
               <div className="flex items-center border rounded bg-[#F7F7F7]">
-
-                {/* Country Code */}
                 <select
+                  id="stdCode"
+                  name="stdCode"
                   value={this.state.stdCode}
                   onChange={this.handleCountryChange}
                   className="w-28 p-2 bg-transparent focus:outline-none"
@@ -240,10 +227,10 @@ class ContactFrom extends Component<{}, any> {
                   ))}
                 </select>
 
-                {/* Mobile */}
                 <input
-                  type="text"
+                  id="mobNo"
                   name="mobNo"
+                  type="text"
                   value={this.state.fieldsContactUs.mobNo || ""}
                   onChange={this.inputChange}
                   className="p-2 w-full bg-transparent border-l"
@@ -264,10 +251,11 @@ class ContactFrom extends Component<{}, any> {
 
             {/* Subject */}
             <div className="space-y-2">
-              <label>Subject</label>
+              <label htmlFor="subject">Subject</label>
               <input
-                type="text"
+                id="subject"
                 name="subject"
+                type="text"
                 value={this.state.fieldsContactUs.subject || ""}
                 onChange={this.inputChange}
                 className="w-full p-2 border rounded bg-[#F7F7F7]"
@@ -276,8 +264,9 @@ class ContactFrom extends Component<{}, any> {
 
             {/* Message */}
             <div className="lg:col-span-2 space-y-2">
-              <label>Message</label>
+              <label htmlFor="msg">Message</label>
               <textarea
+                id="msg"
                 name="msg"
                 rows={4}
                 value={this.state.fieldsContactUs.msg || ""}
