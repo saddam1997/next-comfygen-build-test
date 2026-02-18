@@ -8,18 +8,11 @@ import {
 } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 
-import dynamic from "next/dynamic";
-
-const ServicesMnue = dynamic(() => import("./NavbarMnu/ServicesMnue"),
-  { ssr: false });
-const SolutionsMnue = dynamic(() => import("./NavbarMnu/SolutionsMnue"),
-  { ssr: false });
-const IndustriesMnue = dynamic(() => import("./NavbarMnu/IndustriesMnue"),
-  { ssr: false });
-const SportsMnue = dynamic(() => import("./NavbarMnu/SportsMnue"),
-  { ssr: false });
-const CompanyMnue = dynamic(() => import("./NavbarMnu/CompanyMnue"),
-  { ssr: false });
+import ServicesMnue from "./NavbarMnu/ServicesMnue";
+import SolutionsMnue from "./NavbarMnu/SolutionsMnue"
+import IndustriesMnue from "./NavbarMnu/IndustriesMnue";
+import SportsMnue from "./NavbarMnu/SportsMnue";
+import CompanyMnue from "./NavbarMnu/CompanyMnue";
 
 
 export default function DesktopNav(props: any) {
