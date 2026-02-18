@@ -10,7 +10,7 @@ const ContactFrom = dynamic(
 import style from "../Button/button.module.css"
 
 export default function HeroSectionForAllPages(props: any) {
-
+  const imageAlt = props?.altTag || props?.heading || "Hero background image";
 
   return (
     <section
@@ -19,7 +19,7 @@ export default function HeroSectionForAllPages(props: any) {
       <div className=" absolute inset-0 -z-10">
         <Image
           src={props.bgImage}
-          alt={props.heading || "Comfygen Hero Background"}
+          alt={imageAlt}
           fill
           priority
           fetchPriority="high"

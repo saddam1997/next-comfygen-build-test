@@ -82,23 +82,23 @@ export default function Footer() {
         <p>© 2026 Comfygen Pvt Ltd.</p>
 
         <div className="flex items-center space-x-4">
-          <Link   className="px-4 py-3 text-sm sm:text-base hover:underline" href="/about-us">About Us</Link>
-          <Link   className="px-4 py-3 text-sm sm:text-base hover:underline" href="/career">Career</Link>
+          <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/about-us">About Us</Link>
+          <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/career">Career</Link>
           <a
             href="https://www.comfygen.com/blog/"
             target="_blank"
             rel="noopener noreferrer"
-              className="px-4 py-3 text-sm sm:text-base hover:underline"
+              className="px-2 py-3 text-sm sm:text-base hover:underline"
           >
             Our Blog
           </a>
-          <Link   className="px-4 py-3 text-sm sm:text-base hover:underline" href="/disclaimer">Disclaimer</Link>
+          <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/disclaimer">Disclaimer</Link>
         </div>
 
         <p>
           All Rights Reserved{" "}
-          <Link   className="px-4 py-3 text-sm sm:text-base hover:underline" href="/terms-and-conditions">Terms & Conditions</Link> ~{" "}
-          <Link   className="px-4 py-3 text-sm sm:text-base hover:underline" href="/privacy-policy">Privacy Policy</Link>
+          <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/terms-and-conditions">Terms & Conditions</Link> ~{" "}
+          <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/privacy-policy">Privacy Policy</Link>
         </p>
       </div>
     </footer>

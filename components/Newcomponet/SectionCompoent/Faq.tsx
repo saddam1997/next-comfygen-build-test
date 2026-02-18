@@ -56,7 +56,7 @@ export default function FaqSection({
               {title}
             </h2>
             {description && (
-              <p className="text-gray-600 text-sm md:text-base">
+              <p className="text-gray-600 text-sm md:text-base" >
                 {description}
               </p>
             )}

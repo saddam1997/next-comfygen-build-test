@@ -19,7 +19,7 @@ export default function HeroSection(props: any) {
         props.li6,
     ].filter(Boolean);
 
-
+    const imageAlt = props?.altTag || props?.heading || "Hero background image";
 
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
@@ -37,8 +37,8 @@ export default function HeroSection(props: any) {
 
     return (
         <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
-            // itemScope
-            // itemType="https://schema.org/WebPage"
+        // itemScope
+        // itemType="https://schema.org/WebPage"
         >
 
             {/* ================= LCP IMAGE ================= */}
@@ -46,7 +46,7 @@ export default function HeroSection(props: any) {
             <div className="hidden lg:block absolute inset-0 ">
                 <Image
                     src={props.bgImage}
-                    alt="Comfygen Hero Background"
+                    alt={imageAlt}
                     fill
                     priority
                     fetchPriority="high"
@@ -178,7 +178,7 @@ export default function HeroSection(props: any) {
             {/* ================= MODAL ================= */}
             {talkToExpertModal && (
                 <div
-                    className="fixed inset-0 z-50 overflow-y-auto bg-black/60"
+                    className="fixed w-full inset-0 z-50 overflow-hidden bg-black/60"
                     role="dialog"
                     aria-modal="true"
                 >
