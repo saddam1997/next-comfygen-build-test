@@ -1,4 +1,4 @@
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import Image from "next/image";
 import { RiCustomerServiceLine } from "react-icons/ri";
 export default function AdviceSection(props: any) {
@@ -12,7 +12,6 @@ export default function AdviceSection(props: any) {
             src={props.imgSrc}
             width={props.imgW}
             height={props.imgH}
-            loader={uploadcareLoader}
             loading="eager"
             priority
             unoptimized={true}

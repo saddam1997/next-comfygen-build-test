@@ -91,9 +91,6 @@ const BlogSection = dynamic(
 );
 
 
-
-
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
@@ -134,7 +131,6 @@ export default function ClinicalApp(props: any) {
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
 
   const openModal = () => {
     setTalkToExpertModal(true);
@@ -210,50 +206,50 @@ export default function ClinicalApp(props: any) {
 
       }]
     },
- {
-        "@context": "https://schema.org/", 
-        "@type": "FAQPage", 
-        "mainEntity": [{
-          "@type": "Question", 
-          "name": "How long does it take to build a pharmacy app?",
-          "acceptedAnswer": { 
-            "@type": "Answer",
-            "text": "We provide the best pharmacy mobile app development service with a ready-to-use base system that includes Android & iOS customer apps, an admin dashboard, and a pharmacist panel. If you need only branding changes, the app can be launched quickly within 2–3 weeks. For extra features, custom design, or third-party integrations, the timeline may extend based on your requirements.  For an exact estimate, you can contact our team anytime—we’ll guide you with the best development plan."
-          } 
-        },{
-          "@type": "Question", 
-          "name": "Are pharmacy apps legally compliant?",
-          "acceptedAnswer": { 
-            "@type": "Answer",
-            "text": "Yes. We build pharmacy apps that follow all required healthcare rules like HIPAA, GDPR, and e-prescription compliance to keep user data safe and secure."
-          }  
-       
-},{
-"@type": "Question",
-"name": "What features are necessary for an online pharmacy app?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Must-have features for online pharmacy app development include medicine search, prescription upload, secure payments, order tracking, delivery management, user profiles, and push notifications."
-}
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How long does it take to build a pharmacy app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide the best pharmacy mobile app development service with a ready-to-use base system that includes Android & iOS customer apps, an admin dashboard, and a pharmacist panel. If you need only branding changes, the app can be launched quickly within 2–3 weeks. For extra features, custom design, or third-party integrations, the timeline may extend based on your requirements.  For an exact estimate, you can contact our team anytime—we’ll guide you with the best development plan."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are pharmacy apps legally compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build pharmacy apps that follow all required healthcare rules like HIPAA, GDPR, and e-prescription compliance to keep user data safe and secure."
+        }
 
-},{
-"@type": "Question",
-"name": "How much does pharmacy app development cost?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "The online pharmacy app development costs usually range from $5,000 to $50,000, depending on features, complexity, design, and platform (Android/iOS)."
-}
+      }, {
+        "@type": "Question",
+        "name": "What features are necessary for an online pharmacy app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Must-have features for online pharmacy app development include medicine search, prescription upload, secure payments, order tracking, delivery management, user profiles, and push notifications."
+        }
 
-},{
-"@type": "Question",
-"name": "How can my business benefit from a pharmacy app development service?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "By using the best pharmacy mobile app development service, your business can reach more customers, increase sales, automate daily operations, reduce manual errors, offer faster medicine delivery, improve customer loyalty, and grow your pharmacy store online with ease."
-}
+      }, {
+        "@type": "Question",
+        "name": "How much does pharmacy app development cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The online pharmacy app development costs usually range from $5,000 to $50,000, depending on features, complexity, design, and platform (Android/iOS)."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "How can my business benefit from a pharmacy app development service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By using the best pharmacy mobile app development service, your business can reach more customers, increase sales, automate daily operations, reduce manual errors, offer faster medicine delivery, improve customer loyalty, and grow your pharmacy store online with ease."
+        }
 
 
-        }]
+      }]
     }
 
 
@@ -269,16 +265,14 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-        Best Pharmacy App Development Company | Online Medicine App Solutions
-
+         Top Pharmacy App Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Get top-rated online pharmacy app development services for your store. We build secure, fast, and custom medicine delivery apps with advanced features to grow your pharmacy business."
+          content="Get top-rated Pharmacy App Development Services from a leading Pharmacy App Development Company. We build secure, fast, and custom medicine delivery apps to grow your pharmacy business."
         />
-
-        <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development "></meta>
-
+        <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development ">
+        </meta>
 
         <link
           rel="canonical"
@@ -288,20 +282,17 @@ export default function ClinicalApp(props: any) {
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Online Pharmacy App Development Company in India & USA | Comfygen" />
-        <meta name="twitter:description" content=" Build a secure and scalable online pharmacy app with Comfygen, a leading pharmacy app development company in India and USA. Get feature-rich ePharmacy solutions for medicine delivery, digital prescriptions, and subscriptions." />
+        <meta name="twitter:title" content="Top Online Pharmacy App Development Company | Comfygen" />
+        <meta name="twitter:description" content=" Build a secure and scalable online pharmacy app with Comfygen, a leading pharmacy app development company in India. Get feature-rich ePharmacy solutions for medicine delivery, digital prescriptions, and subscriptions." />
         <meta name="twitter:image" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
-
-
         {/* <!-- Facebook Meta --> */}
-
         <meta property="og:image" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta property="og:image:alt" content="Custom Pharmacy App Development" />
         <meta property="og:url" content="https://www.comfygen.com/pharmacy-app-development" />
-        <meta property="og:title" content="Custom Online Pharmacy App Development Company | India & USA" />
-        <meta property="og:description" content="Looking for a custom pharmacy app development company? Comfygen creates on-demand pharmacy apps for India and USA with real-time tracking, prescription management, and secure, HIPAA-compliant solutions." />
+        <meta property="og:title" content="Online Pharmacy App Development Company" />
+        <meta property="og:description" content="Looking for a custom pharmacy app development company? Comfygen offer on-demand pharmacy app development solution with real-time tracking, prescription management, and secure, HIPAA-compliant solutions." />
 
         {/* Structured Data Scripts */}
         <script
@@ -316,7 +307,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Premier Pharmacy App Development Company"
-          ptag="Grow your digital pharmacy with a trusted pharmacy app development company offering top-rated online pharmacy app development services. We build best-in-class online medicine ordering apps and websites that help customers order medicines online, upload prescriptions instantly, track deliveries in real-time, and make safe payments without hassle."
+          ptag="Grow your digital pharmacy with a trusted pharmacy app development company in India offering top-rated online pharmacy app development services. We build best-in-class online medicine ordering apps and websites that help customers order medicines online, upload prescriptions instantly, track deliveries in real-time, and make safe payments without hassle."
           ptag1="Our top expert pharmaceutical software development team creates the best pharmacy apps like PharmEasy and Apollo that improve your business operations, increase customer satisfaction, and ensure complete data security and compliance."
           li="Secure online medicine ordering"
           li1="AI-based medicine suggestions"
@@ -363,22 +354,12 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-
-
         <AppCard
           title="Best Pharmacy App Clones We Can Develop For You"
           subtitle="Get powerful and fully customizable pharmacy app clone solutions built with advanced features, fast performance, and a user-friendly interface. As a top-notch pharmacy software development company, we create high-quality clone apps inspired by leading brands to help you launch your online pharmacy business quickly, affordably, and with complete flexibility."
           cards={JSON_DATA.IndustriesServe}
           openModal={openModal}
         />
-
-        {/* <AppcardSlider
-          heading="Best Pharmacy App Clones We Can Develop For You"
-          description="Get powerful and fully customizable pharmacy app clone solutions built with advanced features, fast performance, and a user-friendly interface. As a top-notch pharmacy software development company, we create high-quality clone apps inspired by leading brands to help you launch your online pharmacy business quickly, affordably, and with complete flexibility."
-          sliderData={JSON_DATA.IndustriesServe}
-          openModal={openModal}
-        /> */}
-
 
         <section className="py-4">
           <Portfolio
@@ -396,8 +377,6 @@ export default function ClinicalApp(props: any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Future of Technology"
         />
-
-
 
         <div className="py-8">
           <Features
@@ -431,7 +410,6 @@ export default function ClinicalApp(props: any) {
           <TechStack
             title="Tech Stack We Use in On-Demand Pharmacy App Development Solution"
             description="We leverage the latest and most secure technologies to <a href='https://www.comfygen.com/medicine-app-development' class='underline font-semibold'>develop high-performance online medicine ordering apps</a> for startups. Our advanced tech stack ensures seamless ordering, secure data management, and efficient real-time delivery operations."
-
           />
         </section>
 

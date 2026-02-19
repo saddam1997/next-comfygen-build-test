@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -84,7 +84,7 @@ export default function about(props:any) {
           <section className="w-11/12 mx-auto space-y-0 2xl:w-4/6 xl:w-5/6 lg:space-y-10">
             <div className="items-center py-4 space-y-10 md:flex md:space-y-0 md:space-x-10 lg:py-10">
               <div className="flex justify-center w-full md:justify-start ">
-                <Image src="https://www.comfygen.com/img/comfygen-news-app.webp" alt="comfygen news app" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+                <Image src="https://www.comfygen.com/img/comfygen-news-app.webp" alt="comfygen news app" className="rounded-lg "  unoptimized={true} width={800} height={600} />
               </div>
               <div className="w-full space-y-6 text-center md:text-left">
                 <div className="space-y-3">

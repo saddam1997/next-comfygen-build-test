@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import Head from "next/head";
 import Link from "next/link";
 import JSON_DATA from "./portfolio.json";

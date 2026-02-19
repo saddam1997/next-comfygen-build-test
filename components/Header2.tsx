@@ -1,52 +1,40 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { MdGeneratingTokens } from "react-icons/md";
-import { GrReactjs } from "react-icons/gr";
-import { BiShapePolygon } from "react-icons/bi";
 import { SiHiveBlockchain } from "react-icons/si";
-import { FaNodeJs, FaPython } from "react-icons/fa";
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import {
   RiGroupFill,
   RiFilePaperLine,
-  RiFlutterFill,
   RiBitCoinLine,
   RiBriefcaseLine,
   RiBuilding4Line,
   RiCoinLine,
-  RiCompasses2Line,
   RiCopperCoinLine,
   RiCustomerService2Line,
   RiExchangeCnyFill,
   RiFileList3Line,
   RiGitMergeLine,
   RiPhoneLockLine,
-  RiStackFill,
-  RiStore2Line,
   RiWallet3Line,
-  RiWindowFill,
 } from "react-icons/ri";
-import { TbCoin, TbBrandAndroid } from "react-icons/tb";
+import { TbCoin } from "react-icons/tb";
 import {
   GiInvertedDice4,
-  GiRadioTower,
   GiCardJoker,
   GiCartwheel,
   GiCricketBat,
   GiTabletopPlayers,
 } from "react-icons/gi";
-import { SiEthereum, SiDogecoin } from "react-icons/si";
-import { BiMobileAlt, BiMobileVibration } from "react-icons/bi";
+import { SiEthereum,  } from "react-icons/si";
 import { ImCoinPound } from "react-icons/im";
 import {
   IoIosAddCircleOutline,
-  IoIosRemoveCircle,
   IoIosRemoveCircleOutline,
 } from "react-icons/io";
-import { VscChromeClose, VscGroupByRefType } from "react-icons/vsc";
+import { VscChromeClose, } from "react-icons/vsc";
 export default function Header(props) {
   const [showNav, setShowNav] = useState(0);
   const [menu] = useState(false);

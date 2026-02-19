@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import dynamic from 'next/dynamic';
 import styles from './styles.module.css'
 import JSON_DATA from "./json/mobile.json"
@@ -252,7 +252,7 @@ export default function Mobile(props) {
                   <a href={url} title={tittle}>
                     <div className="flex items-center justify-start px-4 py-3 space-x-3  bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC]" >
                       <div className="flex items-center justify-center h-14 w-14 bg-white rounded shadow-md">
-                        <Image className="rounded-md" alt={tittle} src={img} height={512} width={512} loader={uploadcareLoader} unoptimized={true} />
+                        <Image className="rounded-md" alt={tittle} src={img} height={512} width={512}  unoptimized={true} />
                       </div>
                       <h3 className="text-lg font-semibold text-white">
                         {tittle}

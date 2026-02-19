@@ -49,7 +49,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
               })}
             </div>
             <div className="w-full space-y-4">
-              {Whycomfygen.map((elem, index) => {
+              {Whycomfygen.map((elem:any, index:any) => {
                 const { title, num, desc } = elem;
                 return (
                   <div

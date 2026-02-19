@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/unitydeveloper.json"
 import Link from "next/link";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import LazyLoad from "react-lazy-load";
 import styles from './styles.module.css'
 import Header from "../../components/Newcomponet/layout/Header";
@@ -189,7 +188,7 @@ export default function Unity(props) {
                   src="https://www.comfygen.com/media/metaverse/our-process-for-developing-immersive-metaverse-games.webp"
                   height={450}
                   width={800}
-                  loader={uploadcareLoader}
+
                   unoptimized={true}
                 />
               </div>
@@ -214,7 +213,7 @@ export default function Unity(props) {
               <div className="flex flex-wrap">
                 <div className="mb-12 w-full shrink-0 grow-0 xl:mb-0 xl:w-5/12">
                   <div className="flex xl:py-12">
-                    <Image src="https://www.comfygen.com/media/metaverse/do-you-have-more-questions-on-metaverse-game-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" loader={uploadcareLoader}
+                    <Image src="https://www.comfygen.com/media/metaverse/do-you-have-more-questions-on-metaverse-game-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" 
                       unoptimized={true} className="w-full rounded-lg shadow-lg dark:shadow-black/20 xl:ml-[50px] z-[10]" alt=" Do You Have More Questions on Metaverse Game Development Services?" />
                   </div>
                 </div>

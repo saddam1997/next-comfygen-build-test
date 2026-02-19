@@ -1,4 +1,4 @@
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+;
 import { useState } from 'react';
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ export default function Industries() {
             src="https://www.comfygen.com/img/we-introduce-board-g.webp"
             height={450}
             width={650}
-            loader={uploadcareLoader}
+
             unoptimized={true}
           />
         </div>

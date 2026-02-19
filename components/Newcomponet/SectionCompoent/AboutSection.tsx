@@ -25,7 +25,7 @@ const AboutSection = (props: any) => {
   } = props;
 
 
-   const imageAlt = props?.altTag || props?.heading || "About image";
+  const imageAlt = props?.altTag || props?.heading || "About image";
 
   return (
     <section className="bg-white lg:py-16 py-4">
@@ -35,10 +35,11 @@ const AboutSection = (props: any) => {
             <Image
               src={imageSrc}
               alt={imageAlt}
-              width={907}
-              height={762}
-              quality={50}
-              sizes="(max-width: 1024px) 0px, 40vw"
+              width={600}
+              height={500}
+              quality={60}
+              loading="lazy"
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto object-contain"
             />
           </div>

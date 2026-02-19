@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -90,7 +90,7 @@ export default function about(props:any) {
                 <p><span className='text-lg	 font-bold'>Increased Adoption:</span> By offering a reliable and feature-rich web wallet, the project aims to contribute to the broader adoption of M7Coin by providing a convenient and trustworthy platform for users to manage their digital assets.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-m7-coin.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
+                <Image src="https://www.comfygen.com/img/business-benefits-m7-coin.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
               </div>
             </div>
           </section>
@@ -145,7 +145,7 @@ export default function about(props:any) {
                 <p className="text-[#fff] text-white-800"><span className='text-lg font-bold'>Smart Contracts:</span>Ethereum-based smart contracts facilitated secure and automated transactions within the M7Coin ecosystem.</p>
               </div>
               <div className="flex justify-center w-full ">
-                <Image src="https://www.comfygen.com/img/tools-and-Tec-m7-coin.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+                <Image src="https://www.comfygen.com/img/tools-and-Tec-m7-coin.webp" alt="Tools Technologies" className="rounded-lg "  unoptimized={true} width={800} height={600} />
               </div>
             </section>
           </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 
 import Head from 'next/head';
@@ -92,7 +92,7 @@ export default function about(props) {
                 <p><span className='text-lg	 font-bold'>Collaborative Advantage:</span> Partnering with Comfygen, the digital wallet app development company behind Zappy Wallet, provides a strategic edge in creating a feature-rich and competitive payment solution.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-m7-coin.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
+                <Image src="https://www.comfygen.com/img/business-benefits-m7-coin.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
               </div>
             </div>
           </section>
@@ -145,7 +145,7 @@ export default function about(props) {
               </div>
 
               <div className="flex justify-center w-full ">
-                <Image src="https://www.comfygen.com/img/tools-and-Tec-m7-coin.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+                <Image src="https://www.comfygen.com/img/tools-and-Tec-m7-coin.webp" alt="Tools Technologies" className="rounded-lg "  unoptimized={true} width={800} height={600} />
               </div>
             </section>
           </div>

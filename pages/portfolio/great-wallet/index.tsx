@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 
 import Head from 'next/head';
@@ -90,7 +90,7 @@ export default function about(props) {
                 <p><span className='text-lg	 font-bold'>MSecure and User-Friendly: </span> Great Wallet prioritizes security while delivering a user-friendly experience, making it accessible to a wide range of users.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/Business-Benefits-great-wallet.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
+                <Image src="https://www.comfygen.com/img/Business-Benefits-great-wallet.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
               </div>
             </div>
           </section>
@@ -160,7 +160,7 @@ export default function about(props) {
         <div className={`bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722] py-20`}>
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full ">
-              <Image src="https://www.comfygen.com/img/tools-technologies-great-wallet.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+              <Image src="https://www.comfygen.com/img/tools-technologies-great-wallet.webp" alt="Tools Technologies" className="rounded-lg "  unoptimized={true} width={800} height={600} />
             </div>
             <div className='space-y-2 w-full'>
               <h3 className='text-4xl font-bold text-white' >Tools & Technologies</h3>

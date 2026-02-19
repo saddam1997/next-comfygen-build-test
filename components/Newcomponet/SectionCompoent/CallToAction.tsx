@@ -22,20 +22,6 @@ export default function CallToAction({
   return (
     <section className="lg:py-16 bg-white">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#0C0F18] rounded-[24px] overflow-hidden">
-
-        {/* ===== Decorative Background Image (replaces ::after) ===== */}
-        {/* <Image
-          src="https://www.comfygen.com/comfygen-images/Calltoaction/callaction.webp"
-          alt=""
-          width={257}
-          height={245}
-          loading="lazy"
-          aria-hidden="true"
-          className="absolute bottom-0 left-0 pointer-events-none"
-        /> */}
-
-
-
         {/* ===== Main Content ===== */}
         <div className="relative z-10 lg:py-12 py-16 lg:px-14 px-8 lg:flex gap-8 items-center">
 
@@ -71,10 +57,10 @@ export default function CallToAction({
             <Image
               src={imageSrc}
               alt={imageAlt}
-              width={640}
-              height={360}
+              width={400}
+              height={225}
               loading="lazy"
-              sizes="(max-width: 768px) 100vw, 640px"
+              sizes="(max-width: 768px) 100vw,"
               className="hidden sm:block"
             />
           </div>

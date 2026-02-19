@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 import { RiLinkedinFill, RiTwitterXFill } from "react-icons/ri";
 import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import JSON_DATA from "../json/blockchain-footermenu.json"
 import dynamic from "next/dynamic";
 import styles from '../styles.module.css'
-import { url } from "inspector";
 import { MdOutlineArrowOutward } from "react-icons/md";
 const CompanyLink = dynamic(() => import('../comman/CompanyLink'), {
   loading: () => <p>Loading...</p>,

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import {
   IconBook,
 

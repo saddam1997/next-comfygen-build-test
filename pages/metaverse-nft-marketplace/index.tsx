@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaverse.json"
 import Link from "next/link";
 import styles from './styles.module.css'
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import Header from "../../components/Newcomponet/layout/Header";
 const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
@@ -504,7 +504,7 @@ export default function Ecommerce(props:any) {
               <div className="flex flex-wrap">
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto xl:mb-0 xl:w-5/12">
                   <div className="flex xl:py-12">
-                    <Image src="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" loader={uploadcareLoader}
+                    <Image src="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp" width={800} height={521} blurDataURL="URL" placeholder="blur" 
                       unoptimized={true} className="w-full rounded-lg shadow-lg dark:shadow-black/20 xl:ml-[50px] xl:mt-[50px] z-[10]" alt="  Is There Any Other Information We Can Help You With?" />
                   </div>
                 </div>
