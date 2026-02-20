@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -98,7 +98,7 @@ export default function about(props) {
                 </div>
               </div>
               <div className="flex justify-center w-full md:w-[60%] md:justify-start items-end ">
-                <Image src="https://www.comfygen.com/img/zappy-dashboard-screen.webp.webp" alt="Zappy Application Screens" className=" drop-shadow-lg " loader={uploadcareLoader} unoptimized={true} width={700} height={600} />
+                <Image src="https://www.comfygen.com/img/zappy-dashboard-screen.webp.webp" alt="Zappy Application Screens" className=" drop-shadow-lg "  unoptimized={true} width={700} height={600} />
               </div>
             </div>
           </section>

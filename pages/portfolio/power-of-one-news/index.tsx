@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 
 import Head from 'next/head';
@@ -90,7 +90,7 @@ export default function about(props:any) {
                 <p><span className='text-lg	 font-bold'>Trustworthy Source: </span> The platform prioritizes accuracy and reliability, establishing itself as a trustworthy source of information in the digital landscape.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-power-of-one-news.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits" />
+                <Image src="https://www.comfygen.com/img/business-benefits-power-of-one-news.webp" className="rounded-lg" unoptimized={true} width={800} height={800} alt="Business Benefits" />
               </div>
             </div>
           </section>
@@ -138,7 +138,7 @@ export default function about(props:any) {
         <div className={`bg-gradient-to-r from-[#1E3358] via-[#2B3E74] to-[#251F55]  py-20`}>
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full ">
-              <Image src="https://www.comfygen.com/img/tools-power-of-one-news.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+              <Image src="https://www.comfygen.com/img/tools-power-of-one-news.webp" alt="Tools Technologies" className="rounded-lg " unoptimized={true} width={800} height={600} />
             </div>
             <div className='space-y-2 w-full'>
               <h3 className='text-4xl font-bold text-white' >Tools & Technologies</h3>

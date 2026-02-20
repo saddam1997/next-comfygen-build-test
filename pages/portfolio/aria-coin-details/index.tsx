@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import React from 'react'
 import Head from 'next/head';
 import { BsArrowRight } from 'react-icons/bs';
@@ -158,7 +158,7 @@ export default function about(props:any) {
         <div className="py-20  bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: `url("https://www.comfygen.com/img/aria-coin-scren-bg.png")` }}>
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full ">
-              <Image src="https://www.comfygen.com/img/tools-technologies-aria-coin.webp" alt="Tools-Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+              <Image src="https://www.comfygen.com/img/tools-technologies-aria-coin.webp" alt="Tools-Technologies" className="rounded-lg " unoptimized={true} width={800} height={600} />
             </div>
             <div className='space-y-2 w-full'>
               <h3 className='text-4xl font-bold'>Tools & Technologies</h3>

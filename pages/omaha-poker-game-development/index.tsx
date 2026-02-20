@@ -7,7 +7,7 @@ import { BsTabletFill } from "react-icons/bs";
 import { BiAccessibility, BiSupport } from "react-icons/bi";
 import { AiFillMobile, AiOutlineCheck } from "react-icons/ai";
 import { MdAdd, MdDesktopMac, MdRemove } from "react-icons/md";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
+
 import styles from "./styles.module.css";
 import JSON_DATA from "./omaha.json";
 const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
@@ -479,7 +479,7 @@ export default function Altcoin(props) {
                           height={100}
                           blurDataURL="URL"
                           placeholder="blur"
-                          loader={uploadcareLoader}
+
                           unoptimized={true}
                         />
                         <p className="text-xl font-semibold">{omaha.title}</p>
@@ -668,7 +668,7 @@ export default function Altcoin(props) {
                     height={521}
                     blurDataURL="URL"
                     placeholder="blur"
-                    loader={uploadcareLoader}
+
                     unoptimized={true}
                     className="w-full rounded-lg shadow-lg dark:shadow-black/20 xl:ml-[50px] z-[10]"
                     alt=" Let's Craft Your Omaha Poker Gaming Experience"
@@ -791,7 +791,6 @@ export default function Altcoin(props) {
                         src={omaha.img}
                         height={512}
                         width={512}
-                        loader={uploadcareLoader}
                         unoptimized={true}
                       />
                     </div>
@@ -857,7 +856,6 @@ export default function Altcoin(props) {
                 src="https://www.comfygen.com/img/experience-the-difference-your-omaha-poker-awaits.webp"
                 height={600}
                 width={600}
-                loader={uploadcareLoader}
                 unoptimized={true}
                 blurDataURL="URL"
                 placeholder="blur"

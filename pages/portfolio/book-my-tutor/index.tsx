@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import { useState } from 'react';
 
 import React from 'react'
@@ -168,7 +167,7 @@ export default function about(props: any) {
                 <p className="text-[#fff] text-white-800"><span className='text-lg font-bold'>Version Control: </span> Git, GitHub</p>
               </div>
               <div className="flex justify-center w-full ">
-                <Image src="https://www.comfygen.com/img/tools-and-Tec-bbok-my-tutor.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={456} height={395} />
+                <Image src="https://www.comfygen.com/img/tools-and-Tec-bbok-my-tutor.webp" alt="Tools Technologies" className="rounded-lg " unoptimized={true} width={456} height={395} />
               </div>
             </section>
           </div>

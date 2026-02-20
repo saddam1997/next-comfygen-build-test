@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { uploadcareLoader } from "@uploadcare/nextjs-loader";
 
 
 export default function Tech() {
@@ -105,7 +104,7 @@ export default function Tech() {
                     src={section.imageSrc}
                     height={400}
                     width={400}
-                    loader={uploadcareLoader}
+
                     unoptimized={true}
                   />
                 </div>

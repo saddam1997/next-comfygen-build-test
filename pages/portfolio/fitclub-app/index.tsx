@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 import styles from './styles.module.css'
 import React from 'react'
@@ -89,7 +89,7 @@ export default function about(props) {
                 <p><span className='text-lg	font-bold'>Efficiency:</span> Streamline fitness routines by easily managing activities, classes, and resources through the application.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-fitclub.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="fitclub" />
+                <Image src="https://www.comfygen.com/img/business-benefits-fitclub.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="fitclub" />
               </div>
             </div>
           </section>
@@ -159,7 +159,7 @@ export default function about(props) {
         <div className="py-20 bg-gradient-to-br to-[#C9E404]/60 from-[#fff]/40">
           <section className="items-center w-11/12 space-y-6 2xl:w-9/12 xl:w-5/6 lg:w-11/12 mx-auto flex flex-col-reverse lg:flex-row  md:space-x-10 md:space-y-0">
             <div className="flex justify-center w-full ">
-              <Image src="https://www.comfygen.com/img/tools-technologies-fitclub.webp" alt="comfygen news app" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+              <Image src="https://www.comfygen.com/img/tools-technologies-fitclub.webp" alt="comfygen news app" className="rounded-lg " unoptimized={true} width={800} height={600} />
             </div>
             <div className='space-y-2 w-full'>
               <h3 className='text-4xl font-bold'>Tools & Technologies</h3>

@@ -1,6 +1,7 @@
 
+import Image from "next/image";
 import React from "react";
-import CustomImage from "../comman/CustomImage";
+
 import { MdOutlineNavigateNext } from "react-icons/md";
 
 export default function BlogSection(props: any) {
@@ -49,17 +50,22 @@ export default function BlogSection(props: any) {
                   "
                 >
                   <article className="p-6 space-y-4 bg-white border border-black/10 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 h-full">
-                    
+
                     {/* IMAGE */}
                     <div className="overflow-hidden rounded-xl">
-                      <CustomImage
-                        className="rounded-xl object-cover"
-                        src={
-                          element?.og_image
-                            ? element?.og_image
-                            : "https://www.comfygen.com/images/defaultImage.png"
-                        }
-                        alt={element?.title || "Blog image"}
+
+
+                      <Image
+                        {...props}
+                        src={element?.og_image}
+                        alt={element?.title}
+                        width={1280}
+                        height={720}
+                        loading="lazy"
+
+                        quality={70}        // ✅ optimal balance
+                        placeholder="empty" // ✅ remove heavy blur
+                       
                       />
                     </div>
 

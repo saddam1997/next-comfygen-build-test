@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import JSON_DATA from "./json/about.json"
@@ -180,7 +179,7 @@ export default function about(props) {
                 src="https://www.comfygen.com/image/who-we-are-about-img.webp"
                 height={450}
                 width={650}
-                loader={uploadcareLoader}
+
                 unoptimized={true}
               />
             </div>

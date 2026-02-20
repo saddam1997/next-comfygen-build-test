@@ -7,7 +7,7 @@ import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // only what you use
+  weight: ["400", "500", "600", "700"], 
   display: "swap",
   preload: true,
 });
@@ -31,12 +31,22 @@ const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <MainLayout>
+
+      <div className={poppins.className}>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+
+        <GoogleTagManager />
+        <ContactLinks />
+        <Talkchat />
+      </div>
+      {/* <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
       <GoogleTagManager />
       <ContactLinks />
-      <Talkchat />
+      <Talkchat /> */}
     </>
   );
 }

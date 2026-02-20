@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 
 import React from 'react'
@@ -92,7 +92,7 @@ export default function about(props:any) {
                 <p><span className='text-lg	 font-bold'>Data-Driven Decision Making:</span> Implementing analytics tools will enable the business to gather valuable insights into customer behavior and preferences, aiding strategic decision-making.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/business-benefits-e-commerce.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
+                <Image src="https://www.comfygen.com/img/business-benefits-e-commerce.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
               </div>
             </div>
           </section>
@@ -156,7 +156,7 @@ export default function about(props:any) {
                 <p className="text-[#fff] text-white-800">Through the effective utilization of these tools and technologies, our E-Commerce project is poised to revolutionize online shopping, offering a secure, user-friendly, and feature-rich platform.</p>
               </div>
               <div className="flex justify-center w-full ">
-                <Image src="https://www.comfygen.com/img/tools-e-commerce.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+                <Image src="https://www.comfygen.com/img/tools-e-commerce.webp" alt="Tools Technologies" className="rounded-lg "  unoptimized={true} width={800} height={600} />
               </div>
             </section>
           </div>

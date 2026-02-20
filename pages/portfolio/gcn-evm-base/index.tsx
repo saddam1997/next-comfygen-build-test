@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { uploadcareLoader } from '@uploadcare/nextjs-loader';
+
 import Link from 'next/link';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -89,7 +89,7 @@ export default function about(props) {
                 <p><span className='text-lg	 font-bold'>Efficient Transaction Processing: </span> Leveraging the capabilities of EVM facilitates faster and more cost-effective transactions, contributing to an improved overall user experience.</p>
               </div>
               <div className="flex justify-center items-end w-full md:justify-end ">
-                <Image src="https://www.comfygen.com/img/Business-Benefits-great-wallet.webp" className="rounded-lg" loader={uploadcareLoader} unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
+                <Image src="https://www.comfygen.com/img/Business-Benefits-great-wallet.webp" className="rounded-lg"  unoptimized={true} width={800} height={800} alt="Business Benefits great wallet" />
               </div>
             </div>
           </section>
@@ -146,7 +146,7 @@ export default function about(props) {
                 <p className="text-[#fff] text-white-800"><span className='text-lg	 font-bold'>IPFS (InterPlanetary File System):  </span> Employed for decentralized and secure storage of certain data to enhance privacy and security.</p>
               </div>
               <div className="flex justify-center w-full ">
-                <Image src="https://www.comfygen.com/img/tools-technologies-great-wallet.webp" alt="Tools Technologies" className="rounded-lg " loader={uploadcareLoader} unoptimized={true} width={800} height={600} />
+                <Image src="https://www.comfygen.com/img/tools-technologies-great-wallet.webp" alt="Tools Technologies" className="rounded-lg "  unoptimized={true} width={800} height={600} />
               </div>
             </section>
           </div>
