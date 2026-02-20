@@ -390,11 +390,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Best Food Delivery App Development Company in India
+          Best Food Delivery App Development Company | Readymade Delivery App Solution
         </title>
         <meta
           name="description"
-          content="Looking for a food delivery app development company in India? We build scalable food ordering apps like Zomato or Swiggy for startups & restaurants. Get free consultation."
+          content="Best on-demand food delivery app development company in India offering readymade food delivery app solutions with Android & iOS source code to launch your app fast."
         />
         <link
           rel="canonical"
