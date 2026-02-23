@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSection from "../../components/HeroSection";
 import Link from "next/link";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -129,16 +130,138 @@ const BlogSection = dynamic(
 export default function Mobile(props: any) {
 
   let { initialData } = props;
+
+
+
+  const jsonLdData = [
+
+   {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mobile App Development Company In India",
+        "item": "https://www.comfygen.com/mobile-app-development"
+      }
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Mobile App Development Services for Startups & Enterprises",
+    "provider": {
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/"
+    },
+    "description": "Comfygen provides secure, scalable mobile app development services for startups, SMEs, and enterprises. Get custom solutions for Android, iOS, and hybrid platforms tailored to your business goals.",
+    "url": "https://www.comfygen.com/mobile-app-development",
+    "mainEntityOfPage": "https://www.comfygen.com/mobile-app-development",
+    "areaServed": "Global",
+    "serviceType": [
+      "Android App Development",
+      "iOS App Development",
+      "Cross-Platform App Development",
+      "React Native App Development",
+      "Flutter App Development",
+      "On-Demand Mobile App Development",
+      "Hybrid Mobile App Development"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+    ]
+  },
+
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Product",
+    "brand": "Comfygen Technologies",
+    "Name": "Top-Rated Mobile Application Development Company",
+    "image": "https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp",
+    "description": "Comfygen offers mobile application development services to help you launch fast, user-friendly, and secure mobile apps. Get custom solutions for iOS, Android, and cross-platform from expert developers.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1895"
+    }
+  },
+
+   {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which platform should I choose for app development – iOS or Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The platform choice depends on your target audience and business needs. If you're targeting a global audience, Android may offer wider reach, while iOS is preferred for high-value markets and better user engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop a mobile app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The development timeline varies depending on the app’s complexity, features, and design. On average, it may take 2 to 6 months for a standard mobile app to be developed, while complex apps might require more time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop a mobile app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of mobile app development can vary widely depending on the app's features, complexity, platform, and the development team’s location. Estimated mobile app development cost $5,000 - $10,000. A more complex mobile application cost can be $50,000 - $75,000 and reach $300,000+."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you develop custom features for my app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! We specialize in custom mobile app development and can incorporate features customized to your specific business requirements, ensuring your custom mobile app meets your goals and stands out in the market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get started with my mobile app project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To get started, simply reach out to our team for a consultation. We’ll discuss your ideas, understand your goals, and provide a customized plan for developing your mobile app, from concept to launch."
+        }
+      }
+    ]
+  }
+
+
+   
+  ];
+
   return (
     <>
       <Head>
         <title>
           Best Mobile App Development Company in Jaipur, India | Comfygen
+
+
+
         </title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is the best mobile app development company in Jaipur, India. We provide custom mobile app development services and solutions for Android, iOS platforms to startups and enterprise-level companies."
+          content="Comfygen Technologies is the best mobile app development company in Jaipur. We provide custom mobile app development services for cross platforms to startups and enterprise-level companies."
         />
 
         <meta
@@ -244,70 +367,18 @@ export default function Mobile(props: any) {
         />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        <script
+     
+ 
+       
+  
+
+
+            <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.BreadcrumbSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.ServiceSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.ldJson) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.ProductSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen",
-              legalName: "Comfygen Pvt. Ltd.",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-              foundingDate: "2019",
-              founders: [
-                { "@type": "Person", name: "Saddam Husen" },
-                { "@type": "Person", name: "Saddam Husen" },
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-                addressLocality: "Vaishali Nagar",
-                addressRegion: "Jaipur, Rajasthan, India",
-                postalCode: "302021",
-                addressCountry: "India",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-              },
-              areaServed: ["IN", "US", "CA", "GB", "AE", "DE"],
-              sameAs: [
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-                "https://www.facebook.com/comfygen",
-              ],
-            }),
-          }}
-        />
+      
       </Head>
 
       <div className="h-full">
@@ -318,7 +389,7 @@ export default function Mobile(props: any) {
         <div className="">
           <HeroSection
             heading="Best Mobile App Development Company in Jaipur"
-            ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app solutions that enhance customer experience and drive business success. We turn your ideas into high-quality apps with seamless functionality and beautiful design."
+            ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app development solutions that enhance customer experience and drive business success. We turn your ideas into high-quality Mobile apps with seamless functionality and beautiful design."
             li="Custom Android & iOS App Development"
             li1="Cross-Platform & Scalable Mobile Solutions"
             li2="Secure, High-Performance App Architecture"
@@ -338,7 +409,7 @@ export default function Mobile(props: any) {
                 Professional Mobile App Development Services in Jaipur
               </h2>
               <p className="text-base text-center font-normal">
-                We provide professional mobile app development services in Jaipur, including custom Android, iOS, and cross-platform apps, UI/UX design, MEAN stack development, and <Link href='https://www.comfygen.com/blog/mobile-app-maintenance-cost/' className="text-blue-600 font-semibold">app maintenance</Link>, delivering high-quality, scalable solutions for businesses.
+                We provide expert mobile app development services in Jaipur, specializing in custom Android, iOS, and cross-platform solutions. Our mobile app development team delivers high-quality, scalable apps tailored to your business needs, including UI/UX design, MEAN stack development, and ongoing <a href='https://www.comfygen.com/blog/mobile-app-maintenance-cost' className="text-blue-600 font-semibold">app maintenance.</a> Partner with the top Mobile app development company in Jaipur for reliable, innovative, and future-ready mobile applications.
               </p>
             </div>
             <div className="">
@@ -432,6 +503,7 @@ export default function Mobile(props: any) {
             "Scalable and Secure Apps",
           ]}
         />
+        <ClientStories />
         <ClientTestimonials
           heading="Client Testimonial"
           testimonials={JSON_DATA.customTestimonials}

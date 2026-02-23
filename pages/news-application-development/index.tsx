@@ -6,6 +6,8 @@ import JSON_DATA from "./json/newsapp.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -171,10 +173,16 @@ export default function News(props: any) {
         />
         <meta
           property="og:image"
-          content="https://www.comfygen.com/images/illuslator/banner_vector.webp?size=1024"
+          content="https://www.comfygen.com/comfygen-images/news-application-development/Best News App Development Company.webp"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
+
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
+        />
       </Head>
 
       <Header />
@@ -183,7 +191,7 @@ export default function News(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Top-rated News App Development Company in India & USA"
-            ptag="Empower your media business with next-gen digital news solutions built for speed, security, and seamless user experience. Comfygen is a top news app development company in India & USA, specializing in custom news mobile apps and news portal development for publishers, broadcasters, and digital media startups. We build feature-rich news apps that deliver real-time updates, personalized feeds, and powerful monetization tools."
+            ptag="Empower your media business with next-gen digital news solutions built for speed, security, and seamless user experience. Comfygen is a top news app development company in India & USA, specializing in developing custom news mobile apps and news portal development for publishers, broadcasters, and digital media startups. We build feature-rich news apps that deliver real-time updates, personalized feeds, and powerful monetization tools."
             li="Innovative News App Solutions"
             li1="Expert Full-Stack Developers"
             li2="Customized News App Development"
@@ -197,15 +205,9 @@ export default function News(props: any) {
             bgImage="https://www.comfygen.com/herosection/news-application-development-hero-img.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="The Best News App Development Company for Digital Media Platforms"
-          description1="Comfygen is a trusted mobile news app development company in India & USA, helping media brands, publishers, and startups build powerful digital news platforms. As a trusted newspaper app development company, we create fast, secure, and feature-rich news applications designed to deliver real-time updates and an engaging reading experience."
-          description2="We don’t just build apps—we offer complete support, maintenance, and timely updates so your news platform always runs smoothly and grows with your audience. With expert developers, on-time delivery, and customized solutions, we are your reliable partner for news application & <a href='https://www.comfygen.com/web-development' class='text-blue-600 font-semibold'>website development services</a>."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+
+        <Milestones />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -217,6 +219,17 @@ export default function News(props: any) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          title="About Company"
+          heading="The Best News App Development Company for Digital Media Platforms"
+          description1="Comfygen is a trusted mobile news app development company in India & USA, helping media brands, publishers, and startups build powerful digital news platforms. As a trusted newspaper app development company, we create fast, secure, and feature-rich news applications designed to deliver real-time updates and an engaging reading experience."
+          description2="We don’t just build apps—we offer complete support, maintenance, and timely updates so your news platform always runs smoothly and grows with your audience. With expert developers, on-time delivery, and customized solutions, we are your reliable partner for news application & <a href='https://www.comfygen.com/web-development' class='text-blue-600 font-semibold'>website development services</a>."
+          imageSrc="https://www.comfygen.com/comfygen-images/news-application-development/news-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
         {/* <ContactFromCenter /> */}
 
 
@@ -360,6 +373,20 @@ export default function News(props: any) {
         </section>
 
 
+        <InfoSection
+          heading="Do you want any more information about our news app development services?"
+          description1="Talk to our news app development team today and learn more about our news app development services and how we can help you. We are the best team to create the best news application according to your project brief. Reach out to us now to hire us today."
+          description2=""
+          description3=""
+          dec=""
+          points={[]}
+          imageSrc="https://www.comfygen.com/img/do-you-want-any-more-information-about-our-news-app-development-services.webp"
+          link="/contact-us"
+          linkText="Lets Discuss"
+          imagePosition="right"
+        />
+
+
         <TechStack
           title="Our Technology Stack for News App development"
           description="The news app development process needs a technology stack that
@@ -436,18 +463,8 @@ export default function News(props: any) {
 
           ]}
         />
-        <InfoSection
-          heading="Do you want any more information about our news app development services?"
-          description1="Talk to our news app development team today and learn more about our news app development services and how we can help you. We are the best team to create the best news application according to your project brief. Reach out to us now to hire us today."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/do-you-want-any-more-information-about-our-news-app-development-services.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-          imagePosition="right"
-        />
+
+        <ClientStories />
 
         <ClientTestimonials
           heading="What Our Clients Say"

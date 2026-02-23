@@ -644,13 +644,13 @@
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/mobile-payment-solution.webp",
       "title": "PayMaster - A Mobile Payment Solution",
-      "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. Protects identity and security by way of biometric verification and end-to-end encryption for secure payments. PayMaster is set to cater to individuals and businesses that require reliable digital payment facilities.",
+      "description": "PayMaster is a fast and very secure app for mobile payments. It allows bill splitting, peer-to-peer transfers, and contactless payments. The app works in conjunction with bank accounts and digital wallets so that people can perform their transactions with a few taps. It has an effective design to match the use of every kind of user. ",
       "link": "/portfolio/mobile-payment-app-solution"
     },
     {
       "image": "https://www.comfygen.com/image/portfolio-pay-master.webp",
       "title": "InvestSmart - A Stock Trading and Investment App",
-      "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference. The interface is user-friendly and suited for both beginners and seasoned investors. Secure logins, data encryption, and instant alerts ensure users' investments are protected. It has become a central platform for all who wish to manage personal investments with minimal effort.",
+      "description": "InvestSmart is a fully-fledged stock trading and investment management platform that allows users to monitor, trade, and manage portfolios in real time. It also provides advanced analytics, news updates, and relevant recommendations to users by preference.",
       "link": "/portfolio/stock-trading-finance-app"
     }
   ],
@@ -659,7 +659,12 @@
       "title": "Custom Mobile App Development",
       "subtitle": "",
       "description": "Comfygen Technologies is a trusted application development agency in Jaipur offering custom app solutions designed to match your unique business goals. Our expert team builds secure and scalable mobile applications that deliver top performance and exceptional user experiences.",
-      "features": []
+      "features": [
+        "Tailored Solutions for Android, iOS, and cross-platform apps.",
+        "Intuitive UI/UX Design for seamless user experiences.",
+        "Scalable & Secure apps to support your business growth.",
+        "End-to-End Services from development to maintenance."
+      ]
     },
     {
       "title": "Android App Development",
@@ -936,64 +941,6 @@
       "desc": "We build smart, connected apps that integrate seamlessly with <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/iot-development-company' >IoT</a> devices to deliver real-time insights and automation. Our mobile app development team combines innovation with the latest technologies to create intelligent solutions that elevate both user experience and business performance."
     }
   ],
-  "BreadcrumbSchema": {
-    "@context": "https://schema.org/",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Mobile App Development Company In India",
-        "item": "https://www.comfygen.com/mobile-app-development"
-      }
-    ]
-  },
-  "ServiceSchema": {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Mobile App Development Services for Startups & Enterprises",
-    "provider": {
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/"
-    },
-    "description": "Comfygen provides secure, scalable mobile app development services for startups, SMEs, and enterprises. Get custom solutions for Android, iOS, and hybrid platforms tailored to your business goals.",
-    "url": "https://www.comfygen.com/mobile-app-development",
-    "mainEntityOfPage": "https://www.comfygen.com/mobile-app-development",
-    "areaServed": "Global",
-    "serviceType": [
-      "Android App Development",
-      "iOS App Development",
-      "Cross-Platform App Development",
-      "React Native App Development",
-      "Flutter App Development",
-      "On-Demand Mobile App Development",
-      "Hybrid Mobile App Development"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies"
-    ]
-  },
-  "ldJson": {
-    "@context": "https://schema.org/",
-    "@type": "WebSite",
-    "name": "Top Mobile App Development Company In India | Comfygen",
-    "url": "https://www.comfygen.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  },
   "technologyData": [
     {
       "img": " <IconCode stroke={1.5} className='w-12 h-12' />",
@@ -1070,78 +1017,6 @@
       "title": "Taxi Booking Mobile App",
       "desc": "Build a ride-hailing <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking app</a> like Uber and Ola with GPS navigation, fare calculation, driver tracking, wallet payments, and instant ride booking for reliable on-demand transportation services."
     }
-  ],
-  "structuredData": {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-    "sameAs": [
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://www.facebook.com/comfygen"
-    ]
-  },
-  "ProductSchema": {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": "Comfygen Technologies",
-    "Name": "Top-Rated Mobile Application Development Company",
-    "image": "https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp",
-    "description": "Comfygen offers mobile application development services to help you launch fast, user-friendly, and secure mobile apps. Get custom solutions for iOS, Android, and cross-platform from expert developers.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1895"
-    }
-  },
-
-  "faqSchema" :{
-  "@context": "https://schema.org/",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which platform should I choose for app development – iOS or Android?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The platform choice depends on your target audience and business needs. If you're targeting a global audience, Android may offer wider reach, while iOS is preferred for high-value markets and better user engagement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to develop a mobile app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The development timeline varies depending on the app’s complexity, features, and design. On average, it may take 2 to 6 months for a standard mobile app to be developed, while complex apps might require more time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does it cost to develop a mobile app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost of mobile app development can vary widely depending on the app's features, complexity, platform, and the development team’s location. Estimated mobile app development cost $5,000 - $10,000. A more complex mobile application cost can be $50,000 - $75,000 and reach $300,000+."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you develop custom features for my app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! We specialize in custom mobile app development and can incorporate features customized to your specific business requirements, ensuring your custom mobile app meets your goals and stands out in the market."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I get started with my mobile app project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "To get started, simply reach out to our team for a consultation. We’ll discuss your ideas, understand your goals, and provide a customized plan for developing your mobile app, from concept to launch."
-      }
-    }
   ]
-}
+
 }

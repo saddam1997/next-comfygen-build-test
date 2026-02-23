@@ -207,7 +207,7 @@ export default function Home(props: any) {
       </div>
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="relative ">
+        <div className=" ">
           <HeroSection
             heading={JSON_DATA.Herosection.heading}
             isHome={true}

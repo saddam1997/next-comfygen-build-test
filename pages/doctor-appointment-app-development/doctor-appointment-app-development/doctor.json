@@ -214,11 +214,23 @@
       {
         "image": "https://www.comfygen.com/img/doctor-appointment-portfolio-image.webp",
         "title": "Doctor Appointment App",
-        "description": "At Comfygen Private Limited, we excel at innovative doctor appointment apps designed to make healthcare easier for patients and healthcare professionals. Our apps boast user-friendly interfaces, seamless appointment scheduling, and robust features such as real-time notifications, secure patient-physician communication, and integrated payment gateways We ensure that our apps not only work but also meet the highest data security standards and privacy.",
+        "description": "At Comfygen Private Limited, we excel at innovative doctor appointment apps designed to make healthcare easier for patients and healthcare professionals. Our apps boast user-friendly interfaces, seamless appointment scheduling, and robust features such as real-time notifications",
         "link": "#"
+      },
+
+      {
+        "image": "https://www.comfygen.com/image/challanges-pharmacy-chain-app.webp",
+        "title": "Pharmacy Chain App",
+        "description": "Our client, a leading pharmacy chain, required a medicine delivery app development solution to streamline online ordering, prescription verification, and real-time delivery tracking. As an experienced on-demand medicine delivery app development company, we built a feature-rich platform that enhances customer convenience",
+        "link": "https://www.comfygen.com/portfolio/pharmacy-chain-app"
+      },
+       {
+        "image": "https://www.comfygen.com/image/challanges-Jaipur-pharmago.webp",
+        "title": "Jaipur Pharmago – On-Demand Medicine Delivery App",
+        "description": "Our Jaipur-based client, a startup in the healthcare sector, needed an on-demand medicine delivery app development solution to provide quick and hassle-free access to medicines. As a top medicine delivery app development company",
+        "link": "https://www.comfygen.com/portfolio/pharmacy-chain-app"
       }
       
-    
     
     ],
 
