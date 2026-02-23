@@ -6,6 +6,7 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import HeroLoader from "./HeroLoader";
 import { useState } from "react";
+import HeroClientCTA from "./HeroClientCTA";
 
 export default function HeroSection(props: any) {
 
@@ -21,15 +22,15 @@ export default function HeroSection(props: any) {
 
     const imageAlt = props?.altTag || props?.heading || "Hero background image";
 
-    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+    // const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
-    const openModal = () => {
-        setTalkToExpertModal(true);
-    };
+    // const openModal = () => {
+    //     setTalkToExpertModal(true);
+    // };
 
-    const closeModal = () => {
-        setTalkToExpertModal(false);
-    };
+    // const closeModal = () => {
+    //     setTalkToExpertModal(false);
+    // };
 
 
     /* ================= LOADER ================= */
@@ -59,14 +60,14 @@ export default function HeroSection(props: any) {
 
 
 
-          
+
 
 
 
             {/* ================= CONTENT ================= */}
-            <div className=" relative z-10  w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
+            <div className=" relative   w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
             >
-                <div className=" w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
+                <div className="w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
                 >
                     {/* ================= HEADING ================= */}
                     {props.isHome ? (
@@ -135,10 +136,10 @@ export default function HeroSection(props: any) {
                         </ul>
                     )}
 
-
+                    <HeroClientCTA />
 
                     {/* ================= CTA ================= */}
-                    <div className="pt-3 sm:pt-4">
+                    {/* <div className="pt-3 sm:pt-4">
                         <button
                             onClick={openModal}
                             aria-label="Talk to an expert"
@@ -155,13 +156,13 @@ export default function HeroSection(props: any) {
                                 />
                             </span>
                         </button>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
 
             {/* ================= MODAL ================= */}
-            {talkToExpertModal && (
+            {/* {talkToExpertModal && (
                 <div
                     className="fixed w-full inset-0 z-50 overflow-hidden bg-black/60"
                     role="dialog"
@@ -170,7 +171,7 @@ export default function HeroSection(props: any) {
                     <TalkToExpertModal isOpen={talkToExpertModal}
                         onClose={closeModal} />
                 </div>
-            )}
+            )} */}
         </section>
     );
 }

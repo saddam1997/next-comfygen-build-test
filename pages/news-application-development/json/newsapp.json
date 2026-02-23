@@ -10,17 +10,14 @@
     "Local news applications",
     "Multimedia news applications"
   ],
-
-
-  "consultancyHead" :[
+  "consultancyHead": [
     {
       "num": "1",
       "title": "Why is News App development a good idea for businesses?",
-      "desc": "Businesses that are looking to extend their services and enter new areas can think about going for news app development with Comfygen. Our services are available to help startups, established media houses, and emerging businesses. News applications are a great idea because they are wide-ranging and have a wider audience. You should use our News app development services for the following benefits-"
+      "desc": "As the digital world continues to evolve, developing a news app presents businesses with a powerful way to grow their online presence and reach a wider audience. With more consumers turning to mobile devices for news, investing in a dedicated app helps businesses stay relevant, engage users directly, and explore new growth opportunities in a competitive market."
     }
   ],
-  
-  "consultancyData" :[
+  "consultancyData": [
     {
       "title": "Increased reach and engagement",
       "desc": "In today’s world, to reach the audience, you have to create apps that they can use from their personal devices. User engagement and reach will skyrocket when you create an app that they can tap into at any time and get news at their fingertips."
@@ -41,10 +38,7 @@
       "title": "Competitive advantage",
       "desc": "An excellent news app created with an experienced team like Comfygen creates a scaffold for brand building and offers a competitive advantage to your company over other brands that might not have a news app yet."
     }
-    
-  
   ],
-
   "customTestimonials": [
     {
       "text": "“Comfygen delivered a top-notch news app with AI-driven personalization and real-time updates. Our user engagement skyrocketed, and ad revenue increased by 50%. Highly recommended!”",
@@ -60,15 +54,14 @@
       "text": "“With Comfygen’s live streaming and video integration, our audience retention improved by 70%. Their expertise in news app development is unmatched!”",
       "name": "Sophia",
       "title": "Germany"
-    }
-    ,
+    },
     {
       "text": "“Comfygen built a scalable, multilingual news app for us. AI-powered recommendations improved user engagement by 60%, making us one of the fastest-growing news platforms. Truly a game-changer!”",
       "name": "James",
       "title": "Singapore"
     }
   ],
-  "servicesData" :[ 
+  "servicesData": [
     {
       "title": "News Application Development Services",
       "description": "Our news application development team develops news applications seamlessly and efficiently. Developing newspaper apps is our specialty, and we create all types of news applications.",
@@ -127,38 +120,36 @@
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
         "title": "Targeted and result-oriented",
-        "description": "Our services are highly targeted and result-oriented. We aim to help our clients get the digital app that they have envisioned so that their concept becomes successful. Our result-oriented approach makes us a favorite among clients because clients want to see the best output from development processes. With our result-oriented approach, you can create a beautiful news application that is appreciated by a large audience."
+        "description": "We focus on delivering results by working closely with you to bring your vision to life. Our approach ensures the success of your app, creating a product that resonates with a wide audience."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Custom news app development services",
-        "description": "If you are searching for a company that offers custom news app development services, then Comfygen is the best address to knock at. We have a team of professional developers, designers, and testers who take care of every aspect of development for your app concept and hand over the application to you."
+        "title": "Custom News App Development",
+        "description": "Our skilled team handles every aspect of news app development, from concept to deployment, ensuring your app meets all requirements and is ready for launch."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
         "title": "Dedicated approach",
-        "description": "The simple development and deployment process we follow is another reason why you should hire Comfygen's team over others. We are very dedicated to the work we do, and we create unique News apps for our clients with a transparent feedback loop for clearer communication."
+        "description": "We prioritize clear communication and a transparent feedback loop to ensure your news app is developed efficiently with continuous client involvement."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
         "title": "Client-centric",
-        "description": "If you want a team that is all hands on deck and takes client feedback seriously, you should choose Comfygen's team for your next project. Our smooth working feedback loop and timely delivery of the application is why our News app development team is an excellent choice for any kind of news app development project in the future."
+        "description": "We value client feedback and focus on delivering your app on time while meeting your specific needs, ensuring a smooth and successful development process."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
         "title": "Timely delivery",
-        "description": "At Comfygen, we attach a lot of importance to punctuality and time-bound services. We offer our services with the promise of timely delivery. Our team is very passionate about the projects they work on and makes sure that the application is ready before the deadline for our clients."
+        "description": "We understand the importance of deadlines and ensure your news app is delivered on time without compromising quality."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
         "title": "Experienced staff",
-        "description": "Whether you are going for a project-based model or team extension, you will get to interact with our team as we maintain a level of transparency with our clients. Our team is highly experienced and experts at news app development. As an expert team for news app development, we commit to helping our clients completely so they can tap into app deployment and profits easily."
+        "description": "Our team of experienced professionals is dedicated to building high-quality news apps, providing you with transparency and collaboration throughout the process."
       }
     ]
   },
-
-
-  "portfoliodata":[
+  "portfoliodata": [
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       "title": "Global News Aggregator App",
@@ -168,29 +159,28 @@
     {
       "image": "https://www.comfygen.com/comfygen-images/comfygen/news-aggregator-app.webp",
       "title": "Political News App",
-      "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. As a top-rated news app development company, we built a feature-rich, secure, and scalable platform that provides users with verified political news, live updates, and expert opinions in multiple languages.",
-      "link":  "/portfolio/political-news-app"
+      "description": "Our UAE-based client, a leading media company, required a custom political news app development solution to deliver real-time political updates, in-depth analysis, and AI-powered personalized news feeds. ",
+      "link": "/portfolio/political-news-app"
     },
     {
       "image": "https://www.comfygen.com/image/hero-image-e-paper-app.webp",
       "title": "E-Paper App Development",
-      "description": "Our India-based client, a leading media and publishing house, needed a custom E-Paper app development solution to digitize their newspaper and provide a seamless online reading experience. As a top-rated E-Paper app development company, we built a feature-rich, scalable platform that delivers high-quality digital newspapers, interactive content, and AI-powered recommendations for an enhanced reader experience.",
-      "link":  "/portfolio/e-paper-app"
+      "description": "Our India-based client, a leading media and publishing house, needed a custom E-Paper app development solution to digitize their newspaper and provide a seamless online reading experience. ",
+      "link": "/portfolio/e-paper-app"
     },
     {
       "image": "https://www.comfygen.com/image/live-streaming-and-video-news-platform.webp",
       "title": "All Sports News App",
-      "description": "Our USA-based client, a leading sports media company, required a custom sports news app development solution to provide real-time sports updates, match analysis, and AI-driven content recommendations. As a top-rated news app development company, we built a feature-rich, scalable platform that delivers live scores, breaking news, player stats, and personalized sports content for fans worldwide",
+      "description": "Our USA-based client, a leading sports media company, required a custom sports news app development solution to provide real-time sports updates, match analysis, and AI-driven content recommendations. ",
       "link": "/portfolio/sports-news-app"
     }
   ],
-
-    "featuresData": [
+  "featuresData": [
     {
       "id": 1,
       "title": "For general public",
       "icon": " <i className='fas fa-shopping-bag text-4xl'></i>",
-      "img": "https://www.comfygen.com/img/for-general-public.webp",
+      "img": "https://www.comfygen.com/comfygen-images/news-application-development/news-public.webp",
       "additionalDetails": [
         {
           "details": "User profile and customization options ",
@@ -213,18 +203,17 @@
           "content": ""
         },
         {
-          "details":"Embedded video and audio player",
+          "details": "Embedded video and audio player",
           "emoji": "",
           "content": ""
         }
-        
       ]
     },
     {
       "id": 2,
       "title": "For Media Professionals ",
       "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/img/for-media-professionals.webp",
+      "img": "https://www.comfygen.com/comfygen-images/news-application-development/media.webp",
       "additionalDetails": [
         {
           "details": "Social media sharing buttons",
@@ -251,13 +240,12 @@
           "emoji": "",
           "content": ""
         }
-        
       ]
     },
     {
       "id": 3,
       "title": "For students",
-      "img": "https://www.comfygen.com/img/for-students.webp",
+      "img": "https://www.comfygen.com/comfygen-images/news-application-development/student.webp",
       "icon": " <i className='fas fa-wallet text-4xl'></i>",
       "additionalDetails": [
         {
@@ -276,7 +264,7 @@
           "content": ""
         },
         {
-          "details":  "Interactive charts and photo gallery ",
+          "details": "Interactive charts and photo gallery ",
           "emoji": "",
           "content": ""
         },
@@ -285,13 +273,9 @@
           "emoji": "",
           "content": ""
         }
-        
       ]
     }
-
   ],
-
-
   "Streamline": [
     {
       "num": "1",
@@ -665,6 +649,53 @@
       "img": "https://www.comfygen.com/img/team-extension-icon.webp",
       "title": "AI-Based News Apps (Smart News Curation & Analytics)",
       "decs": "AI-powered news apps utilize advanced algorithms to curate and analyze news content, offering a highly personalized reading experience. These apps analyze user preferences, detect trending topics, and provide real-time insights using artificial intelligence and machine learning. Our best news app development company specializes in building AI-driven platforms that enhance user engagement through smart content recommendations, sentiment analysis, and automated news curation."
+    }
+  ],
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "News App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get custom news app development from Comfygen – a trusted news app development company. We create scalable, feature-rich mobile apps for news and media organizations, with real-time news updates, push notifications, personalized content, subscription management, and advanced analytics to enhance your news business.",
+      "url": "https://www.comfygen.com/news-application-development ",
+      "mainEntityOfPage": "https://www.comfygen.com/news-application-development ",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom News App Development",
+        "News Aggregator App Development",
+        "Breaking News App Development",
+        "Online News Portal App Development",
+        "Mobile News App Development",
+        "On-Demand News App Development",
+        "iOS News App Development",
+        "Android News App Development",
+        "Push Notification Integration for News Apps",
+        "Personalized News App Development",
+        "Subscription Management for News Apps",
+        "Real-Time News App Development"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen",
+        "https://www.linkedin.com/company/comfygen-private-limited"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Private Limited",
+      "name": "News App Development Services",
+      "image": " About Section Image URL ",
+      "description": "Enhance your news platform with our custom news app development services. Comfygen creates feature-rich, user-friendly mobile apps for news organizations, with real-time updates, push notifications, personalized content, and subscription management to elevate your news business.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "585"
+      }
     }
   ]
 }

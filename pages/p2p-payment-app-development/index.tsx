@@ -8,6 +8,7 @@ import JSON_DATA from "./p2ppaymentappdevelopment.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -140,23 +141,19 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
+
     {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Peer-to-Peer Payment App Development Experts | Comfygen",
+      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-about.webp",
+      "description": "Build a custom P2P payment app with Comfygen. Our developers specialize in money transfer apps, mobile wallets, and secure financial platforms for modern businesses.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "350"
+      }
     },
     {
       "@context": "https://schema.org",
@@ -164,7 +161,7 @@ export default function ClinicalApp(props: any) {
       "name": "Custom P2P Payment App Development Services",
       "provider": {
         "@type": "Organization",
-        "name": "Comfygen",
+        "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
       "description": "Get secure and scalable peer-to-peer payment apps from Comfygen. We build custom P2P payment solutions for startups and enterprises with wallet, crypto, and real-time features.",
@@ -179,138 +176,27 @@ export default function ClinicalApp(props: any) {
         "AI & Machine Learning Integration"
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Peer-to-Peer Payment App Development Experts | Comfygen",
-      "image": "Hero section image",
-      "description": "Build a custom P2P payment app with Comfygen. Our developers specialize in money transfer apps, mobile wallets, and secure financial platforms for modern businesses.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "150"
-      }
-
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does it cost to build a P2P payment app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The cost to create a money transfer app depends on features, platform, security needs, and integrations. Basic apps start lower, but advanced P2P payment apps with real-time transfers, KYC, and fraud detection require more investment. At Comfygen, we tailor solutions to your budget while ensuring scalable, secure mobile payment app development."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to develop a mobile payment app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The timeline to create a money transfer app varies based on complexity and features. Typically, development takes 3 to 6 months, including design, backend, security, and testing. Comfygen’s experienced team follows agile processes to deliver efficient, high-quality mobile payment app development that meets your business goals on schedule."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What’s the difference between a mobile wallet and a P2P app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A mobile wallet stores payment methods digitally for purchases, while a P2P app focuses on person-to-person money transfers. To develop a money transfer app, features like instant fund transfers and request payments are essential. Many apps now combine both for a seamless user experience, and Comfygen specializes in developing secure, multifunctional payment solutions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I integrate crypto payments?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, you can create a money transfer app with integrated cryptocurrency payments. Comfygen offers crypto integration services that enable users to send, receive, and store digital currencies securely within your P2P payment app. Adding crypto support enhances your app’s flexibility and attracts a broader user base, aligning with modern fintech trends."
-          }
-        }
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
       ]
     }
+
+
+
+
+
 
   ];
 
   return (
     <>
       <Head>
-        <title>Best P2P Payment App Development Company in India </title>
+        <title>Best P2P Payment App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Best P2P payment app development company in India offering secure, scalable, and real-time peer-to-peer payment solutions for fintech startups and businesses."
+          content="Best P2P payment app development company in India offering secure, scalable, and real-time peer-to-peer payment app development solutions for fintech startups and businesses."
         />
         <meta
           name="keywords"
@@ -404,31 +290,7 @@ export default function ClinicalApp(props: any) {
         <meta name="twitter:site" content="@comfygentech" />
 
         {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Crypto Derivatives Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
-              description:
-                "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image: "https://www.comfygen.com/image/crypto-derivatives-development.jpg"
-            })
-          }}
-        />
+
 
         <script
           type="application/ld+json"
@@ -441,8 +303,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="P2P Payment App Development Company"
-          ptag="Comfygen Technologies is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment solutions for fintech startups, enterprises, and banks. We design and develop advanced P2P payment applications that enable real-time money transfers, mobile wallet integration, and seamless digital transactions."
-          ptag1='Our fintech experts leverage modern technologies, robust APIs, and high-level security standards to build reliable P2P payment apps that enhance user experience, ensure compliance, and support business growth in the digital payments ecosystem.'
+          ptag="Comfygen Technologies is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment app development solutions for fintech startups, enterprises, and banks. We design and develop advanced P2P payment applications that enable real-time money transfers, mobile wallet integration, and seamless digital transactions."
+          ptag1='Our fintech experts utilize cutting-edge technologies, secure APIs, and industry-leading security standards to develop reliable P2P payment apps. These apps are designed to enhance user experience, ensure regulatory compliance, and drive business growth within the digital payments ecosystem.'
           li="Custom P2P payment app development"
           li1="Cross-platform, cloud-native mobile solutions"
           li2="End-to-end fintech compliance & data security"
@@ -483,13 +345,7 @@ export default function ClinicalApp(props: any) {
 
 
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-consultancy.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
+
 
         <section className="py-8">
           <Portfolio
@@ -505,6 +361,14 @@ export default function ClinicalApp(props: any) {
           title="Key Features of Our P2P Money Transfer Apps"
           subtitle="At Comfygen, we design P2P money transfer apps with a focus on speed, security, and seamless user experience. Our money transfer app development solutions are packed with advanced features that cater to the needs of modern users and keep your money transfer app competitive in the digital payment landscape."
           features={JSON_DATA.AIPowered}
+        />
+
+        <ConsultancyApproach
+          Head={JSON_DATA.consultancyHead}
+          ItemData={JSON_DATA.consultancyData}
+          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-consultancy.webp"
+          buttonText="Let’s Discuss"
+          buttonLink="/contact-us"
         />
 
 
@@ -557,13 +421,15 @@ export default function ClinicalApp(props: any) {
           ]}
 
         />
+        <ClientStories />
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
+
         <Faq faqData={Frequently} title="" />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

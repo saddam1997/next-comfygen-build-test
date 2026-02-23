@@ -20,6 +20,7 @@ import {
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -191,31 +192,14 @@ export default function ClinicalApp(props: any) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Tutor App Development Company",
       "provider": {
         "@type": "Organization",
-        "name": "Comfygen",
+        "name": "Comfygen Technologies ",
         "url": "https://www.comfygen.com/"
       },
       "description": "Comfygen is a top tutor app development company, offering custom tutoring app development services with AI-driven features, live classes, secure payments & seamless booking.",
@@ -238,89 +222,28 @@ export default function ClinicalApp(props: any) {
         "Tutoring App Development"
       ],
       "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
+
+
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
       "brand": "Comfygen Private Limited",
       "name": "On-Demand Tutor App Development Services",
-      "image": "Hero section image",
+      "image": "https://www.comfygen.com/comfygen-images/news-application-development/about.webp",
       "description": "Get top-notch on-demand tutor app development services with Comfygen. We build AI-powered tutoring apps with live classes, seamless booking, secure payments & interactive learning.",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "1928"
+        "reviewCount": "928"
       }
     },
+
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -350,8 +273,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Tutor App Development Company</title>
-        <meta name="description" content="Comfygen Technologies is a top-rated tutor app development company delivering tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
+        <title>Best Tutor App Development Company | Comfygen</title>
+        <meta name="description" content="Comfygen Technologies is the best tutor app development company delivering tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
         <link rel="canonical" href="https://www.comfygen.com/tutor-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -387,8 +310,8 @@ export default function ClinicalApp(props: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name='og:title' content='Top-Rated On-Demand Tutor App Development Company' />
         <meta name='og:type' content='website' />
-        <meta name='og:url' content='https://www.comfygen.com/tutor-app-development' />
-        <meta name='og:image' content='https://www.comfygen.com/image/og-image-tutor-app.webp' />
+      
+      
         <meta name='og:site_name' content='Comfygen Private Limited' />
         <meta name='og:description' content='Comfygen is a top-rated on-demand tutor app development company, offering custom tutor booking app development solutions with AI, AR/VR, and blockchain integration to enhance learning experiences.' />
         <meta name='fb:page_id' content='110909321596135' />
@@ -418,8 +341,8 @@ export default function ClinicalApp(props: any) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Tutor App Development Company"
-          ptag="Comfygen Technologies is a reliable tutor app development company delivering smart, scalable, and user-friendly tutoring solutions for EdTech startups, institutes, and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our expert developers focus on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms, Comfygen Technologies helps businesses transform traditional education into interactive digital learning."
+          heading="Tutor app development company"
+          ptag="Comfygen Technologies is a reliable tutor app development company delivering smart, scalable, and user-friendly tutor app development solutions for EdTech startups, institutes, and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our expert developers focus on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms."
           li="Custom tutor app development for web & mobile"
           li1="Live video classes and real-time chat integration"
           li2="Tutor scheduling, session booking & management"
@@ -453,7 +376,7 @@ export default function ClinicalApp(props: any) {
           description1="Comfygen is a trusted on-demand tutor app development company, delivering innovative and scalable custom tutoring app development services for EdTech businesses, startups, and institutions. With expertise in AI-driven learning solutions, we build intuitive and feature-rich tutor apps that connect students and educators seamlessly. "
           description2="Our solutions include real-time video classes, AI-powered tutor matching, virtual whiteboards, and secure payment integration, ensuring a smooth and interactive learning experience. We focus on user-friendly designs, robust backend development, and cutting-edge technologies to create tailored tutoring platforms that drive engagement and efficiency."
           description3="With a strong focus on online learning app development, we help EdTech startups and businesses revolutionize education through innovative technology. Choose Comfygen for a cutting-edge tutor booking app development solution designed for success."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/news-application-development/about.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -574,8 +497,8 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
         <TechStack
-          title="Technology Stack We Use"
-          description="At Comfygen, we leverage cutting-edge technologies to develop high-performance, scalable, and secure tutor app solutions that enhance the learning experience."
+          title="Technology Stack We Use develop Tutor App"
+          description="At Comfygen, we harness cutting-edge technologies to build high-performance, scalable, and secure tutor app solutions that elevate the learning experience. Our solutions are designed to ensure seamless interactions, personalized learning, and reliable performance, empowering educators and learners to connect, collaborate, and achieve better outcomes."
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -599,6 +522,8 @@ export default function ClinicalApp(props: any) {
             "Dedicated Support & Maintenance – Continuous improvements & bug fixes"
           ]}
         />
+
+        <ClientStories />
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials} />
