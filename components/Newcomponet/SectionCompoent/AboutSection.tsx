@@ -35,8 +35,8 @@ const AboutSection = (props: any) => {
             <Image
               src={imageSrc}
               alt={imageAlt}
-              width={600}
-              height={500}
+              width={907}
+              height={762}
               quality={60}
               loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"

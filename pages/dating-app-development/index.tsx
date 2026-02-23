@@ -12,20 +12,20 @@ import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const CardGrid = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CardGrid"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 
 const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 
@@ -37,13 +37,13 @@ const AppCard = dynamic(() => import("../../components/Newcomponet/comman/AppCar
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 
 const Features = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Features"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const BusinessSolustion = dynamic(() => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"), {
@@ -53,34 +53,34 @@ const BusinessSolustion = dynamic(() => import("../../components/Newcomponet/Sec
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 
 const ConsultancyApproach = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  {  ssr: true }
+  { ssr: true }
 )
 
 const BlogSection = dynamic(
@@ -90,13 +90,13 @@ const BlogSection = dynamic(
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {  ssr: true }
+  { ssr: true }
 )
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
- 
+
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
   const [show, setshow] = useState(true);
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -114,7 +114,7 @@ export default function Ecommerce(props:any) {
         <meta name="description" content="Comfygen is a top dating app development company in India offering custom, secure, and AI-powered dating app development services for startups and enterprises." />
         <link rel="canonical" href="https://www.comfygen.com/dating-app-development" />
 
-       <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development"/>
+        <meta name="keywords" content="Matchmaking Dating Apps Development, Niche Dating App Development, Social Dating App Development, Video Dating App Development, Casual Dating App Development, Astrology Dating App Development, Community-Based Dating App Development, Android Dating App Development, iOS Dating App Development, Dating Website Development, Tinder Clone Development, AI-Based Matchmaking, AI-based Dating App Development, Blockchain-based Dating App Development" />
 
 
         <meta property="og:type" content="article" />
@@ -166,7 +166,7 @@ export default function Ecommerce(props:any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/dating-app-dev-hero-img.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-dev-hero-img-optimized.webp"
         />
 
         <Milestones />
@@ -191,7 +191,8 @@ export default function Ecommerce(props:any) {
           heading="Award-Winning Dating App Development Company for Scalable & Secure Solutions"
           description1="Comfygen is a top professional dating app development company in India offering end-to-end dating app development solutions for startups, SMEs, and enterprises. We design and build high-performance dating apps that combine intuitive UI/UX, AI-powered matchmaking, secure payments, and real-time chat features."
           description2="As an experienced dating app development company, our expert dating mobile app developers focus on building scalable, user-centric platforms that drive engagement and long-term growth. From idea validation to app launch and post-deployment support, our custom dating app development services ensure your product stays competitive in the evolving online dating market."
-          imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-about.webp"
+      
           link="/about-us"
           linkText="Explore More"
         />
@@ -231,7 +232,7 @@ export default function Ecommerce(props:any) {
             grid={2} />
         </div>
 
-        <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/ai powered dating app development.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
+        <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/ai-dating.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
 
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -266,7 +267,7 @@ export default function Ecommerce(props:any) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto">
                 <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                 Emerging Technologies Powering Our Mobile Dating App Development
+                  Emerging Technologies Powering Our Mobile Dating App Development
 
                 </h2>
                 <p className="text-white text-base font-normal">As an experienced custom dating mobile app development firm, we leverage emerging technologies to build secure, scalable, and future-ready matchmaking dating apps and websites.
