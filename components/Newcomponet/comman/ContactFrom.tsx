@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
+import Image from "next/image";
 
 class ContactFrom extends Component<{}, any> {
   constructor(props: any) {
@@ -168,6 +169,8 @@ class ContactFrom extends Component<{}, any> {
             <p className="md:text-base text-xs">
               Comfygen is a result-oriented IT Service Provider
             </p>
+
+
           </div>
 
           <div className="grid lg:grid-cols-2 gap-4">

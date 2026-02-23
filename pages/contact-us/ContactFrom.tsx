@@ -151,7 +151,7 @@ class ContactFrom extends Component<{}, any> {
       }
 
       this.setState({ ipInfo: data });
-    } catch (error) {}
+    } catch (error) { }
   };
 
   render() {
@@ -159,7 +159,7 @@ class ContactFrom extends Component<{}, any> {
 
     return (
       <div className="h-full overflow-hidden">
-        <form className="rounded-xl lg:px-8 md:px-6 p-2 px-4 space-y-4 w-full">
+        <form className="rounded-xl lg:px-8 md:px-6 p-2 px-4 space-y-4 h-full w-full">
 
           <div className="space-y-2">
             <h2 className="xl:text-4xl text-base font-semibold">
@@ -170,7 +170,7 @@ class ContactFrom extends Component<{}, any> {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-4">
+          <div className="grid lg:grid-cols-2 gap-4 h-full">
 
             {/* Name */}
             <div className="space-y-2">
@@ -217,11 +217,11 @@ class ContactFrom extends Component<{}, any> {
                   name="stdCode"
                   value={this.state.stdCode}
                   onChange={this.handleCountryChange}
-                  className="w-28 p-2 bg-transparent focus:outline-none"
+                  className="w-28 p-2 focus:outline-none bg-transparent overflow-hidden"
                 >
-                  <option value="">Code</option>
+                  <option className="text-black " value="">Code</option>
                   {JSON_DATA.Country?.map((ele) => (
-                    <option key={ele.code} value={ele.stdCode}>
+                    <option className="text-black" key={ele.code} value={ele.stdCode}>
                       {ele.flag} {ele.stdCode}
                     </option>
                   ))}

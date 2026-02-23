@@ -177,35 +177,8 @@ export default function ClinicalApp(props: any) {
 
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Best ePharmacy App Development Company",
-      "image": "https://www.comfygen.com/image/about-us-image.webp",
-      "description": "Comfygen is a trusted ePharmacy app development company offering online medicine delivery apps with advanced features, subscription services, and secure HIPAA-compliant architecture for pharmacies in India and USA.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1200"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Pharmacy App Development",
-        "item": "https://www.comfygen.com/pharmacy-app-development"
 
-      }]
-    },
+    
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -519,4 +492,3 @@ export async function getStaticProps() {
     };
   }
 }
-
