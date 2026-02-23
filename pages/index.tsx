@@ -11,6 +11,8 @@ const Milestones = dynamic(
   }
 );
 
+// import PremiumCaseSlider from "../components/Newcomponet/PremiumCaseSlider"
+
 
 import HeroSection from "../components/HeroSection";
 
@@ -23,6 +25,8 @@ const Header = dynamic(
     ssr: true,
   }
 );
+
+// import PremiumCaseSlider from "../components/Newcomponet/PremiumCaseSlider"
 
 /* ======================
    SEO IMPORTANT (SSR)
@@ -214,12 +218,12 @@ export default function Home(props: any) {
             bgImage={JSON_DATA.Herosection.bgImage}
           />
 
-        
+
         </div>
         <Milestones />
 
 
-       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -235,7 +239,7 @@ export default function Home(props: any) {
           </div>
         </section>
 
-
+        {/* <PremiumCaseSlider /> */}
 
         <AboutSection
           title="About Company"
@@ -328,7 +332,7 @@ export default function Home(props: any) {
           title=" About Blockchain Technology"
         />
 
-        <BlogSection initialData={initialData} /> 
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );
