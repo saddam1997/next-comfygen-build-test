@@ -628,7 +628,7 @@ export default function Ecommerce(props) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="White Label Crypto Exchange"
+          title=""
         />
 
          <BlogSection initialData={initialData} />

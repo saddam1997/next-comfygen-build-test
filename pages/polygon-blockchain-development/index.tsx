@@ -389,7 +389,7 @@ export default function Polygon(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" Polygon Blockchain Development"
+          title=""
         />
         <BlogSection initialData={initialData} />
       </div>

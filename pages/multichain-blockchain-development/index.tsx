@@ -658,7 +658,7 @@ export default function MultiChain(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="MultiChain Blockchain Development"
+          title=""
         />
         <BlogSection initialData={initialData} />
       </div>

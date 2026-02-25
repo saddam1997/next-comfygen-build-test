@@ -64,85 +64,76 @@ const jsonLdData = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.comfygen.com//#organization",
     "name": "Comfygen Technologies",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "email": "sales@comfygen.com",
     "url": "https://www.comfygen.com/",
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Saddam Husen"
-      }
-    ],
     "logo": "https://www.comfygen.com/svg/Logo1.svg",
+    "sameAs": [
+      "https://www.instagram.com/comfygen_technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.linkedin.com/company/comfygen-technologies",
+      "https://www.facebook.com/comfygen.technologies"
+    ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+1 579-977-4475",
-        "contactType": "sales",
-        "areaServed": "US",
-        "availableLanguage": "en"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+1 579-977-4475",
-        "contactType": "sales",
+        "telephone": "+1-579-977-4475",
+        "contactType": "customer service",
         "areaServed": "CA",
-        "availableLanguage": "en"
+        "availableLanguage": "en-CA"
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+91-9587867258",
-        "contactType": "sales",
-        "areaServed": "UK",
-        "availableLanguage": "en"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+91 9587867258",
-        "contactType": "sales",
+        "telephone": "+91-958-786-7258",
+        "contactType": "customer service",
         "areaServed": "IN",
-        "availableLanguage": "en"
+        "availableLanguage": "en-IN"
       },
       {
         "@type": "ContactPoint",
         "telephone": "+49-1515-1402200",
-        "contactType": "sales",
+        "contactType": "customer service",
         "areaServed": "DE",
-        "availableLanguage": "en"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+91 9587867258",
-        "contactType": "sales",
-        "areaServed": "AE",
-        "availableLanguage": "en"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+91 9587867258",
-        "contactType": "sales",
-        "areaServed": "SA",
-        "availableLanguage": "en"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+91 9587867258",
-        "contactType": "sales",
-        "areaServed": "AU",
-        "availableLanguage": "en"
+        "availableLanguage": "en-DE"
       }
     ],
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies",
-      "https://in.pinterest.com/ComfygenTechnologies/",
-      "https://www.youtube.com/@Comfygentechnologies"
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "40 Tuxedo Ct",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M1G 3S7",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "CA"
+        }
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar, Nirmohi Nagar",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "postalCode": "302019",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "IN"
+        }
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Rhederstraße 34",
+        "addressLocality": "Euskirchen",
+        "addressRegion": "North Rhine-Westphalia",
+        "postalCode": "53881",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "DE"
+
+        }
+      }
     ]
   }
-
 
 
 

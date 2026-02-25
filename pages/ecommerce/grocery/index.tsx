@@ -199,7 +199,7 @@ const CardClone = [
       "Build an app like Tesco widely used in the UK and other international markets, offering online grocery ordering, flexible delivery slots, click-and-collect, loyalty rewards, and a smooth shopping experience.",
     buttonText: "View Demo",
   },
- 
+
 
   {
     imgSrc:
@@ -304,59 +304,94 @@ const productCard = [
       "https://www.comfygen.com/comfygen-images/grocery/Product Search.webp",
     link: "",
     heading: "Product Search",
-    description:"Find exactly what customers are looking for in seconds. Smart search with filters lets users discover products by name, brand, category, or keywords without friction."
+    description: "Find exactly what customers are looking for in seconds. Smart search with filters lets users discover products by name, brand, category, or keywords without friction."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Add to Cart.webp",
     link: "",
     heading: "Add to Cart ",
-     description:"Users can add products to their cart with a single tap. Quantities can be updated instantly, making the checkout flow smooth and interruption-free."
+    description: "Users can add products to their cart with a single tap. Quantities can be updated instantly, making the checkout flow smooth and interruption-free."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Order Products.webp",
     link: "",
     heading: "Order Products",
-     description:"Browsing and ordering feel effortless. Customers can explore products by category, view details, compare options, and place orders without confusion."
+    description: "Browsing and ordering feel effortless. Customers can explore products by category, view details, compare options, and place orders without confusion."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Recommended Products.webp",
     link: "",
     heading: "Recommended Products",
-     description:"The app suggests relevant products based on browsing behavior and past purchases. This helps users discover items they actually want while increasing repeat orders."
+    description: "The app suggests relevant products based on browsing behavior and past purchases. This helps users discover items they actually want while increasing repeat orders."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Schedule Delivery Time.webp",
     link: "",
     heading: "Schedule Delivery Time",
-     description:"Customers choose when they want their groceries delivered. Flexible time slots ensure convenience and reduce missed deliveries."
+    description: "Customers choose when they want their groceries delivered. Flexible time slots ensure convenience and reduce missed deliveries."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Online Payment.webp",
     link: "",
     heading: "Online Payment",
-     description:"Multiple secure payment options are supported, including UPI, debit cards, credit cards, net banking, and cash on delivery, giving users complete flexibility."
+    description: "Multiple secure payment options are supported, including UPI, debit cards, credit cards, net banking, and cash on delivery, giving users complete flexibility."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Track Item.webp",
     link: "",
     heading: "Track Item",
-     description:"Real-time order tracking keeps customers informed from checkout to doorstep. Users can see order status and delivery progress at every stage."
+    description: "Real-time order tracking keeps customers informed from checkout to doorstep. Users can see order status and delivery progress at every stage."
   },
   {
     image:
       "https://www.comfygen.com/comfygen-images/grocery/Push Notifications.webp",
     link: "",
     heading: "Push Notifications",
-     description:"Timely alerts for order updates, delivery status, offers, and reminders keep users engaged and informed without opening the app."
+    description: "Timely alerts for order updates, delivery status, offers, and reminders keep users engaged and informed without opening the app."
   }
- 
+
 ];
+
+
+const customTechData = {
+    "backend": [
+      { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
+      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
+      { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
+      { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
+      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
+      { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
+      { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
+      { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
+    ],
+    "frontend": [
+      { img: "https://www.comfygen.com/media/svg/tech/html5-original.svg", alt: 'Html5', name: "Html5", num: "1" },
+      { img: "https://www.comfygen.com/media/svg/tech/css3-original.svg", alt: 'Css3', name: "Css3", num: "2" },
+      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Nextjs', name: "nextjs", num: "3" },
+      { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React js", num: "4" },
+      { img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", alt: 'Tailwindcss', name: "Tailwindcss", num: "5" },
+      { img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", alt: 'Angularjs', name: "Angular js", num: "6" },
+      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "7" },
+      { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
+      { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
+    ],
+
+
+    "Blockchain network ": [
+      { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
+      { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
+      { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
+      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
+      { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
+    ]
+   
+  };
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -373,24 +408,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -435,78 +453,8 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies",
       ],
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar  ",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        // "areaServed": "US, IN",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
+   
+  
 
     {
       "@context": "http://www.schema.org",
@@ -682,52 +630,25 @@ export default function ClinicalApp(props: any) {
 
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
-        {/* <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="en_CA" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_DE" />
-        <meta property="og:locale:alternate" content="en_AE" /> */}
         <meta name="fb:page_id" content="110909321596135" />
         <meta name="og:email" content="sales@comfygen.com" />
         <meta name="og:phone_number" content="+91-958-786-7258" />
 
-        {/* <meta
-          property="og:image:type"
-          content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" /> */}
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Custom Grocery App Development Company | On-Demand Solutions"
-        />
-        <meta
-          name="twitter:description"
-          content=" Get custom on-demand grocery delivery app development services from industry experts. Comfygen offers top-notch grocery apps with smart inventory, delivery tracking & payment integration."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp"
-        />
+        {/* <!-- Twitter Card Tags -->  */}
+        <meta name="twitter:card" content="Best Grocery Delivery App Development Company" />
+        <meta name="twitter:title" content="Grocery Delivery App Development Company" />
+        <meta name="twitter:description" content="Build a powerful grocery delivery app with Comfygen. We develop scalable, feature-rich grocery apps with real-time tracking, secure payments, and seamless user experience for modern retail businesses." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        {/* <meta property="og:image" content="add image URL" />
-        <meta property="og:image:secure_url" content="Add img URL" />
-        <meta property="og:image:alt" content="Grocery App Development" />
-        <meta
-          property="og:url"
-          content="https://www.comfygen.com/ecommerce/grocery"
-        />
-        <meta
-          property="og:title"
-          content="Best Grocery App Development Company | White-Label Solutions"
-        />
-        <meta
-          property="og:description"
-          content="Comfygen Technologies is a top grocery delivery app development company that specializes in creating cost-effective apps similar to Walmart, Target, Instacart and Zepto."
-        /> */}
+        {/* <!-- Facebook Meta --> */}
+
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp" />
+        <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp" />
+        <meta property="og:image:alt" content="Grocery Delivery App Development Company" />
+        <meta property="og:url" content="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-og.webp" />
+        <meta property="og:title" content="Readymade Grocery Delivery App Development Company" />
+        <meta name="og:description" content="Build a powerful grocery delivery app with Comfygen. We develop scalable, feature-rich grocery apps with real-time tracking, secure payments, and seamless user experience for modern retail businesses." />
 
         <script
           type="application/ld+json"
@@ -740,12 +661,11 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Grocery Delivery App Development Company"
-          subhead="Looking for a grocery delivery app development solution?"
-          ptag="Comfygen Technologies is the best Grocery delivery app development company that provides readymade grocery delivery apps that are customized according to your business requirements. With our grocery delivery app development solution you will get admin dashboard, driver penal, Store penal, and Customer app, all designed to work seamlessly together."
-          ptag1=""
+          subhead="Build a Scalable, High-Performance Grocery Delivery Platform"
+          ptag="At Comfygen, we build powerful, scalable, and revenue-driven grocery delivery app development solutions for startups, supermarkets, and enterprise retailers. If you're planning to enter the online grocery market or upgrade your existing system, our expert team delivers secure, high-performance platforms designed for long-term growth."
+          ptag1="As a trusted grocery delivery app development company, Comfygen focuses on building custom grocery applications that streamline operations, manage vendors efficiently, and provide customers with a seamless shopping experience from browsing to doorstep delivery."
           li="Real-time order tracking for customers and admins"
-          li1="Secure online payment integrations"
-          li2="Smart inventory and order management system"
+          li1="Smart inventory and order management system"
           li3="Push notifications for order updates and promotions"
           li4='Advanced analytics and reports to track performance and growth'
           btnName="Talk With Expert"
@@ -765,7 +685,7 @@ export default function ClinicalApp(props: any) {
                 Our Grocery Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen is a top-notch grocery delivery app development company, offering end-to-end grocery delivery app development services designed to align with diverse business models, delivery workflows, and growth stages. Whether you are developing a grocery delivery app from scratch or using a readymade grocery delivery app development solution, we deliver scalable and market-ready applications tailored to your needs.
+                At Comfygen, we provide complete, end-to-end grocery delivery app development services tailored to startups, retail chains, supermarkets, and enterprise businesses. Whether you need a marketplace platform or a single-store solution, our team delivers scalable and secure applications built for long-term growth.
 
               </p>
             </div>
@@ -790,8 +710,8 @@ export default function ClinicalApp(props: any) {
         />
 
         <ProductCard
-          title="Key Features of Our ReadyMade Grocery delivery App"
-          subtitle=""
+          title="Basic Features of Our Readymade Grocery App Development Solutions"
+          subtitle="As a trusted grocery app development provider, we build Readymade Grocery App Development solutions that simplify online grocery shopping while giving store owners full operational control."
           cards={productCard}
         />
 
@@ -804,17 +724,17 @@ export default function ClinicalApp(props: any) {
           imageAlt="Get in touch now."
         /> */}
 
-         <AppcardSlider
-          heading="Grocery Delivery App Clone Development Solutions"
-          description="Launch your own grocery delivery digital platform quickly with our grocery delivery app clone development solutions. As the best <a href='https://www.comfygen.com/delivery-app-development' class='text-blue-600 font-semibold'>delivery app development company</a>, we provide ready-to-use, fully customizable apps modeled after popular grocery delivery platforms, helping you save development time and cost while maintaining scalability and performance."
+        <AppcardSlider
+          heading="Grocery Delivery Clone App Development Solutions"
+          description="Launch your own grocery delivery digital platform quickly with our grocery delivery clone app  development solutions. As the best <a href='https://www.comfygen.com/delivery-app-development' class='text-blue-600 font-semibold'>delivery app development company</a>, we provide ready-to-use, fully customizable grocery delivery apps that reduce development time and cost while ensuring scalability and high performance."
           sliderData={CardClone}
           openModal={openModal}
-        /> 
+        />
 
         <div className="py-8">
           <Features
-            heading="Grocery Delivery Apps with Dashboard Features"
-            description="We develop advanced grocery delivery apps with all the important features to run a smooth, scalable, and high-performing platform. Each module is tailored to meet the needs of users, vendors, delivery partners, and administrators for maximum efficiency."
+            heading="Must-Have Features in Grocery Delivery App Development"
+            description="In competitive markets, features decide whether your platform grows or struggles. A well-planned grocery delivery app development strategy focuses on building a smooth experience for customers, vendors, and delivery partners while keeping operations fully controlled from a central dashboard. As an experienced grocery delivery app development company, we structure every platform around performance, usability, and scalability."
             featuresData={JSON_DATA.featuresData}
             grid={4}
           />
@@ -826,7 +746,7 @@ export default function ClinicalApp(props: any) {
           <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Grocery Delivery App Development Portfolio"
-            description="Our grocery delivery app solutions are designed for fast, reliable, and scalable online grocery shopping. From single-store apps to multi-vendor marketplaces, including ready-made and clone grocery app development solutions, our delivery apps help retailers streamline operations, boost sales, and deliver a seamless shopping experience."
+            description="Real performance matters more than promises. As a results-driven grocery delivery app development company, we focus on building platforms that generate measurable growth, operational efficiency, and long-term scalability."
           />
         </section>
 
@@ -882,25 +802,23 @@ export default function ClinicalApp(props: any) {
                 Our Grocery App Development Process
               </h2>
               <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a clear, step-by-step process to build
-                grocery delivery apps. From the first idea to post-launch
-                support, we make sure every stage meets your business goals and
-                helps you serve your customers better.
+                Our grocery delivery app development process is built around strategy, scalability, and performance. As a trusted grocery delivery app development company, we handle planning, design, development, testing, and deployment to deliver a secure and growth-ready grocery delivery app development solution tailored to your business needs.
               </p>
             </div>
             <ProcessSec processSlides={Process} />
           </div>
         </section>
 
-        <TrendsSection
+        {/* <TrendsSection
           heading="Advanced Technology in Next-Gen Grocery Delivery App Development"
           subtitle="Our next-generation grocery delivery apps leverage advanced technologies to deliver faster, smarter, and more efficient solutions. By integrating modern tools and frameworks, we create apps that scale, perform, and adapt to future market demands."
           trends={JSON_DATA.Emerging}
-        />
+        /> */}
 
         <TechStack
           title="Technology Stack for Grocery Delivery App Development"
-          description="At Comfygen, we use a robust and modern tech stack to build scalable, high-performance grocery delivery apps. Our technology choices ensure smooth operations, fast performance, and a seamless experience for users, vendors, and delivery partners."
+          description="The success of any grocery delivery app development project depends heavily on the technology stack behind it. A strong stack ensures speed, scalability, security, and seamless real-time operations. As a reliable grocery delivery app development company, we select technologies based on performance requirements, traffic expectations, and long-term growth plans."
+          customTechData={customTechData}
         />
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -915,7 +833,7 @@ export default function ClinicalApp(props: any) {
 
         <HireDeveloper
           heading="Hire Expert Grocery Delivery App Developers"
-          text="Comfygen Technologies offers skilled grocery delivery app developers to turn your ideas into powerful, scalable applications. Our experts build feature-rich grocery delivery apps tailored to your business model, ensuring seamless user experiences, high performance, and innovative functionality."
+          text="Comfygen Technologies provides experienced grocery delivery app developers who transform your vision into scalable, high-performance digital platforms. Our team builds fully customized grocery delivery applications aligned with your business model, integrating advanced features, smooth navigation, and reliable architecture."
           text1=""
           buttonText="Hire Developer"
           buttonLink="/contact-us"

@@ -743,7 +743,7 @@ export default function Ecommerce(props) {
           buttonLink="/contact-us"
         />
 
-        <Faq faqData={JSON_DATA.Frequently} title="White Paper Development" />
+        <Faq faqData={JSON_DATA.Frequently} title="" />
         <BlogSection initialData={initialData} />
 
 

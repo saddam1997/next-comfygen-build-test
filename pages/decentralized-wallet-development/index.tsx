@@ -551,7 +551,7 @@ export default function ClinicalApp(props: any) {
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
         />
-        <Faq faqData={Frequently} title="Frequently Asked Questions (FAQ): Decentralized Wallet Development" />
+        <Faq faqData={Frequently} title="" />
         <BlogSection initialData={initialData} />
       </div>
     </>

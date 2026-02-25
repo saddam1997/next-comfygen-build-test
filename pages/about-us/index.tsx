@@ -29,9 +29,6 @@ const WhycomfygenSection = dynamic(
   { loading: loader, ssr: true }
 );
 
-
-
-
 const Whycomfygen = [
   {
     num: "1",

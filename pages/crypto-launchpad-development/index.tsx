@@ -617,7 +617,7 @@ export default function Ecommerce(props) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="  Crypto Launchpad Development"
+          title=""
         />
          <BlogSection initialData={initialData} />
 

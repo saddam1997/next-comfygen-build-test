@@ -334,7 +334,7 @@ export default function Altcoin(props: any) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="React Native App Development Services"
+          title=""
         />
 
         <BlogSection initialData={initialData} />

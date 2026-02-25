@@ -475,7 +475,7 @@ export default function Ecommerce(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" About Blockchain Technology"
+          title=""
         />
 
          <BlogSection initialData={initialData} />
