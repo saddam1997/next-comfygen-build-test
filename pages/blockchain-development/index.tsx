@@ -368,7 +368,7 @@ From smart contracts and dApp development to enterprise blockchain integration, 
         <GuidSectionBlockchain />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" About Blockchain Technology"
+          title=""
         />
 
         <BlogSection initialData={initialData} />

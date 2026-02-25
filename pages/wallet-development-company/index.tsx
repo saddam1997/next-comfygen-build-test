@@ -651,11 +651,11 @@ export default function Ecommerce(props: any) {
           testimonials={testimonialData}
           heading="What Our Clients Say"
         />
-                <Faq
+        <Faq
           faqData={JSON_DATA.Frequently}
-          title=" Cryptocurrency Wallet Development"
+          title=""
         />
- <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

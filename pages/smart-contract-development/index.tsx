@@ -660,7 +660,7 @@ export default function Ecommerce(props: any) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" DeFi Development"
+          title=""
         />
 
          <BlogSection initialData={initialData} />

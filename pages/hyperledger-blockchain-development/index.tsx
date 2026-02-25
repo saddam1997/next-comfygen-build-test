@@ -727,7 +727,7 @@ export default function Blockchain(props: any) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Hyperledger Blockchain Development"
+          title=""
         />
   <BlogSection initialData={initialData} />
 

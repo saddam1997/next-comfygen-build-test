@@ -93,108 +93,25 @@ const TrendsSection = dynamic(
   { loading: loader, ssr: true }
 );
 
+const Milestones = dynamic(
+  () => import("../../components/Newcomponet/comman/Milestones"),
+  { ssr: true }
+);
+const ClientTestimonials = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+  { ssr: true }
+);
+
+const ClientStories = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/ClientStories"),
+  { ssr: true }
+);
 
 
 
-
-import { IconBook, IconChartLine, IconDeviceGamepad2, IconHeart, IconMessageCircle, IconNetwork, IconTrophy, IconUsers, IconVideo, } from '@tabler/icons-react';
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
-
-
-
-
-
-
-
-
-const Process = [
-  {
-    title: "Planning and Ideation",
-    description: "Our social media app development team collaborates to define your app's objectives, target market, platform, and essential features, ensuring your app aligns with your goals."
-  },
-  {
-    title: "Design",
-    description: "We focus on creating an intuitive user interface (UI) and appealing visual design, using wireframes and prototypes to test functionality for a seamless user experience."
-  },
-  {
-    title: "Development",
-    description: "Our qualified social media app developers develop both frontend and backend functionality, integrating APIs and programming languages for key features like user authentication and social sharing."
-  },
-  {
-    title: "Monetization Integration",
-    description: "We implement monetization strategies such as in-app ads, premium subscriptions, and e-commerce features to drive engagement and generate revenue"
-  },
-  {
-    title: "Testing",
-    description: "Our dedicated QA team conducts rigorous testing to ensure flawless app performance, providing a seamless, bug-free experience before launch."
-  },
-  {
-    title: "Deployment and Launch",
-    description: "We deploy your best social network app on chosen platforms, releasing a beta version to test design functionality, and making adjustments before the final launch."
-  },
-  {
-    title: "Maintenance and Support",
-    description: "After launch, we provide ongoing maintenance and support, ensuring your app stays up-to-date with platform upgrades and continues to meet user needs."
-  },
-];
-
-const technologyData = [
-  {
-    img: <IconNetwork stroke={1.5} className="w-12 h-12" />,
-    title: "Custom Social Networking Apps",
-    desc: "We develop custom social networking apps tailored to your niche requirements, including community platforms, professional networks, and content-sharing apps. Our social media app development services focus on secure user profiles, friend connections, activity feeds, and scalable backend architecture."
-  },
-  {
-    img: <IconChartLine stroke={1.5} className="w-12 h-12" />,
-    title: "Social Media Analytics Solutions",
-    desc: "Our social media <a href='https://www.comfygen.com/data/analytics-service-provider' class='text-blue-600 font-semibold'>analytics</a> app solutions help track user behavior, engagement metrics, and content performance. Using data-driven insights, we build dashboards that empower businesses to optimize campaigns, improve user experience, and scale their social networking platforms effectively."
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Messaging App Development",
-    desc: "We offer secure and scalable messaging app development services with real-time chat, voice calls, media sharing, and end-to-end encryption. Our custom social networking app development services ensure high-performance communication apps similar to WhatsApp and Telegram."
-  },
-  {
-    img: <IconVideo stroke={1.5} className="w-12 h-12" />,
-    title: "Video-Based Social Media Apps",
-    desc: "Our team specializes in video-based social media app development, including short-video platforms and live-streaming apps. We integrate AI-powered recommendations, real-time streaming, and cloud-based storage to deliver engaging and high-performance social media applications."
-  },
-  {
-    img: <IconDeviceGamepad2 stroke={1.5} className="w-12 h-12" />,
-    title: "Social Gaming App Development",
-    desc: "We create interactive social gaming applications that combine engaging gameplay, leaderboards, real-time chat, rewards, and community features to enhance user retention and foster long-term engagement within social networks."
-  },
-  {
-    img: <IconHeart stroke={1.5} className="w-12 h-12" />,
-    title: "Dating & Matrimony App Development",
-    desc: "Our dating and <a href='https://www.comfygen.com/dating-app-development' class='text-blue-600 font-semibold'>matrimony app development</a> solutions include intelligent matchmaking, AI-powered recommendations, real-time chat, and strong privacy controls to enable secure, meaningful connections on modern social platforms."
-  },
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Educational Social Media Apps",
-    desc: "We develop educational social media apps that promote collaborative learning, content sharing, and student engagement. Our Android and <a href='https://www.comfygen.com/ios-app-development' class='text-blue-600 font-semibold'>iOS social media app development</a> solutions support virtual classrooms, discussion forums, and knowledge-sharing communities."
-  },
-  {
-    img: <IconTrophy stroke={1.5} className="w-12 h-12" />,
-    title: "Contest & Reward-Based Apps",
-    desc: "Our contest app development solutions help brands increase engagement through challenges, rewards, and gamified experiences. We integrate leaderboards, task completion systems, and secure reward mechanisms to turn users into active brand advocates."
-  },
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Community-Based Social Media Apps",
-    desc: "We create scalable community-based social media apps for creators, businesses, and organizations. Our custom IOS and <a href='https://www.comfygen.com/android-app-development' class='text-blue-600 font-semibold'>Android social networking app development</a> services focus on content monetization, subscription models, and community engagement tools tailored to your audience."
-  }
-];
-
-
-
-
-export default function Mobile(props) {
+export default function Mobile(props:any) {
   let { initialData } = props;
-  let {
-    LeadingSoftware,
-  } = JSON_DATA;
+
 
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -209,7 +126,7 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Custom Social Media App Development Company | Comfygen
+          Top Social Media App Development Company - Comfygen
         </title>
         <meta
           property="og:title"
@@ -217,7 +134,7 @@ export default function Mobile(props) {
         />
         <meta
           name="description"
-          content="Comfygen is a trusted Social Media App Development Company delivering advanced Social Media App Development Services with scalable architecture, real-time features, secure solutions, and engaging digital experiences for modern businesses."
+          content=" Comfygen offers custom Social media app development services, building scalable and feature-rich apps like Instagram and Reddit for Android, iOS, and web platforms."
         />
 
 
@@ -265,13 +182,7 @@ export default function Mobile(props) {
         <meta name="language" content="English" />
 
 
-        {/* <!-- Geo Location Meta --> */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+      
 
         {/* <!-- Open Graph (OG) Tag --> */}
 
@@ -319,11 +230,12 @@ export default function Mobile(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Custom Social Media App Development Company in India"
-            ptag="As a leading social media app development company in India, Comfygen Technologies specializes in custom social media apps designed for scalability, security, and high engagement. Our expertise in mobile social app development enables startups and enterprises to build their own social media app with real-time chat, content sharing, live streaming, and intuitive UI/UX. We deliver robust social networking platform development solutions that empower brands to launch feature-rich communities and grow active digital audiences with confidence."
-            li="Real-Time Chat & Messaging"
-            li1="Live Streaming & Content Sharing"
-            li2="Advanced Privacy & Security Controls"
+            heading="Leading Social Media App Development Company in India"
+            ptag="Hiring a social media app development company  is a crucial decision for anyone looking to build a powerful social media platform. Comfygen is a top-notch social media app development company in India that delivers the best social networking app solutions to help businesses create world-class social networking applications. With a proven track record of delivering high-quality projects on time and within budget, Comfygen is the ideal partner for anyone looking to develop a social media app that stands out in a highly competitive market."
+            li="AI-powered personalization & content feeds"
+            li1="Real-time chat, video sharing & live streaming"
+            li2="High-performance & privacy-first architecture"
+            li3="Scalable solutions for startups & global enterprises"
             bgImage="https://www.comfygen.com/herosection/social-media-app-development-hero-img.webp"
             btnName="Talk With Expert"
             btnLink="/contact-us"
@@ -338,8 +250,8 @@ export default function Mobile(props) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Best Social Media App Development Services for Startups & Enterprises</h2>
-              <p className="text-base text-center font-normal">Comfygen is a top rated social media app development company in India, delivering end-to-end custom social networking app development services to turn your unique idea into a powerful digital platform. Our experienced mobile app developers build feature-rich, scalable, and high-performing social media apps that work seamlessly across all devices, from custom social media app development to long-term support and maintenance.</p>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Offer Advanced Social Media App Development Services for Startups & Enterprises</h2>
+              <p className="text-base text-center font-normal">Comfygen is a top-rated custom social media app development company in India, delivering end-to-end custom social networking app development services to turn your unique idea into a powerful digital platform. Our experienced social networking app developers develop high-performing social media platforms that work seamlessly across all devices, from modern social media app development to long-term support and maintenance.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -353,11 +265,11 @@ export default function Mobile(props) {
           description1="Investing in social media app development is a smart, future-ready business move for investors seeking high growth and long-term profitability. A custom social media app strengthens brand visibility, boosts user engagement, and opens scalable monetization opportunities through advertising, subscriptions, and in-app purchases. It also enables businesses to build niche communities and gain valuable user data for data-driven decisions."
           description2="The global social media app market presents massive investment potential, valued at around USD 49–50 billion in 2022 and expected to surpass USD 310 billion by 2030, growing at a 26.2% CAGR. Platforms like Facebook, Instagram, WhatsApp, and Messenger dominate with over one billion users each. Growth is driven by mobile adoption, 5G expansion, and advertising, generating 64–78% of total revenue, offering investors scalable profit opportunities."
           description3=""
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/social-media-app-development/social-about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-    
+
 
 
         <section className="lg:py-16 py-10 bg-[#fff]">
@@ -365,9 +277,9 @@ export default function Mobile(props) {
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
                 <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Our Expertise in Developing Popular Social Media App Clones
+                  Best Custom Social Application Development Solutions
                 </h2>
-                <p>As an experienced social media app development company, we provide Social media app clone scripts that replicate and enhance the core functionality of leading platforms. Our clone app solutions are built with advanced social networking platform features, robust social media app backend development, and scalable architecture—helping startups and enterprises launch faster with confidence.</p>
+                <p>As an experienced social media app development company, we provide social media app clone scripts that replicate and enhance the core functionality of leading platforms. Our social media clone app development solutions are built with advanced social networking platform features, robust social media app backend development, and scalable architecture—helping startups and enterprises launch faster with confidence.</p>
               </div>
               <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-2">
                 {JSON_DATA.LeadingSoftware.map((elem) => {
@@ -400,8 +312,8 @@ export default function Mobile(props) {
         </section>
 
         <CallToAction
-          heading="Do You Have Any Questions About Our Social Media App Development Expertise?"
-          text="Hire a trusted social media app development company to build scalable, secure social platforms with expert social app development services."
+          heading="Build a modern social platform backed by advanced technology and engineered for measurable results."
+          text=""
           buttonText="Get Started"
           buttonLink="/contact-us"
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
@@ -411,7 +323,7 @@ export default function Mobile(props) {
         <section className=" lg:py-10 py-10">
           <Features
             grid='3'
-            heading='Powerful Features to Build a Successful Social Media App'
+            heading='Top Social Networking App Development Features'
             description='Comfygen builds powerful social media apps with advanced features like real-time communication, content sharing, smart personalization, and secure admin controls, enabling businesses to deliver scalable, high-performing, and engaging social networking experiences.'
             featuresData={JSON_DATA.featuresData}
           />,
@@ -420,74 +332,40 @@ export default function Mobile(props) {
 
 
 
-        <SolutionSec
-          heading="Tailor-Made Social Media App Development Solutions for Unique Experiences"
-          subheading="We deliver tailor-made social media app development solutions designed to meet modern user expectations and evolving business needs. Our expertise spans AI-powered social media apps, cloud-based social app solutions, and enterprise social networking apps that help brands create immersive, scalable, and secure digital communities."
-          techData={technologyData}
-        />
-
-
 
         <TrendsSection
-          heading="Powerful Technologies We Use to Build Scalable Social Media Apps"
-          subtitle="As a best social media app development company in India, Comfygen leverages advanced technologies to build secure, scalable, and high-performance social media platforms. We integrate AI, cloud computing, blockchain, and data analytics to deliver feature-rich social media applications that enhance user engagement, personalization, and long-term scalability."
+          heading="Emerging Technologies For Social Media Platform Development"
+          subtitle="As the best social media app development company in India, Comfygen leverages modern technologies to transform how social media platforms are built, scaled, and personalized. These emerging innovations enhance user experiences, boost engagement, improve security, and enable businesses to create smarter, more connected, and future-ready digital ecosystems."
           trends={JSON_DATA.Emerging}
         />
 
 
 
 
+        {/* 
+        <IndustriesServe heading="Industries We Serve As a Best Social Media App Development Company" description="Comfygen provides custom Social media web and <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development solutions</a> across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success." /> */}
 
-        <IndustriesServe heading="Industries We Serve As a Best Social Media App Development Company" description="Comfygen provides custom Social media web and <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development solutions</a> across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success." />
+
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Proven Process for Social Media App Development Success</h2>
+              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Social Media App Development Process</h2>
               <p className="text-base font-normal mt-2">
                 As a leading social media software development company in India, Comfygen follows a structured and transparent process to deliver high-quality solutions. Our custom social networking software development services focus on strategic planning, intuitive design, scalable development, and rigorous testing to build secure, high-performance social media applications that meet business goals and user expectations.
 
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
 
         <TechStack
-          title="Technology Stack We Use for Social Media App Development Services"
-          description="Our technology stack supports React Native social app development, native iOS and Android social apps, and AI-powered social media apps. We integrate AR/VR social media apps and cloud-based social app solutions to ensure scalability, security, and high-performance digital social platforms."
+          title="Technology Stack We Use for Social Media Platform Development"
+          description="We use a future-ready technology stack to build scalable, secure, and high-performance social media applications. Our tech ecosystem enables seamless user experiences, fast performance, and reliable architecture to support millions of users worldwide."
         />
 
-
-        {/* <section className="lg:py-16 py-10 bg-[#F3F4F6]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Make the Most of Our Best Social Network App Development Services with Flexible Engagement Models
-                </h2>
-                <p>You can avail of our social network app development services with different types of engagement models. We offer three different engagement models tailored to the preferences and requirements of clients with varied expectations.</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.EngagementModels.map((elem) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px]  flex justify-center items-center text-[40px] font-bold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p
-                        className=""
-                        dangerouslySetInnerHTML={{ __html: decs }}
-                      ></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section> */}
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -495,13 +373,21 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
         <HireDeveloper
-          heading="Hire Expert Social Media App Developers in India for Scalable Digital Growth"
-          text="Hire social media app developers in India from a trusted custom mobile app development company to build secure, scalable, and high-performance social media platforms. Our team delivers end-to-end social app development services, including on-demand social app development, tailored UI/UX, and robust backend solutions. Partner with experienced developers to accelerate innovation, enhance user engagement, and achieve long-term digital growth."
+          heading="Hire Social Media App Developers"
+          text="Get expert Social Media App Developers to build fast, secure, and scalable social platforms tailored to your business goals. Our <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>social networking app developers</a> deliver modern features, smooth performance, and on-time project execution."
           buttonText="Hire Developer"
           buttonLink="/contact-us"
+          listItems={[
+            "Skilled in custom social media app development",
+            "Fast delivery with high-quality code",
+            "Flexible hiring models (hourly, weekly, monthly)",
+            "Scalable, secure, and future-ready solutions"
+          ]}
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
+
+        <ClientStories />
 
         <ClientTestimonials
           heading="Testimonials from Our Clients"
@@ -510,7 +396,7 @@ export default function Mobile(props) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Frequently Asked Questions (FAQs)"
+          title="Frequently Asked Questions "
         />
 
         <BlogSection initialData={initialData} />

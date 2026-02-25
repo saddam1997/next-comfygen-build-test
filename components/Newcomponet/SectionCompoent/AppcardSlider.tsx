@@ -34,13 +34,7 @@ export default function AppcardSlider({
     return () => window.removeEventListener("resize", resize);
   }, []);
 
-  /* ---------- SCROLL STATE ---------- */
-  // const checkScroll = () => {
-  //   if (!sliderRef.current) return;
-  //   const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
-  //   setCanLeft(scrollLeft > 5);
-  //   setCanRight(scrollLeft + clientWidth < scrollWidth - 5);
-  // };
+ 
 
   const checkScroll = () => {
     if (!sliderRef.current) return;
@@ -62,26 +56,7 @@ export default function AppcardSlider({
   };
 
 
-  /* ---------- AUTO SLIDE (DESKTOP ONLY) ---------- */
-  // useEffect(() => {
-  //   if (isMobile) return;
 
-  //   autoRef.current = setInterval(() => {
-  //     if (!sliderRef.current || isPaused.current || isDown.current) return;
-
-  //     const slider = sliderRef.current;
-  //     const card = slider.querySelector(".slide-card") as HTMLElement;
-  //     const cardWidth = card?.offsetWidth || 380;
-
-  //     if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
-  //       slider.scrollTo({ left: 0, behavior: "smooth" });
-  //     } else {
-  //       slider.scrollBy({ left: cardWidth, behavior: "smooth" });
-  //     }
-  //   }, 3500);
-
-  //   return () => autoRef.current && clearInterval(autoRef.current);
-  // }, [isMobile]);
 
   useEffect(() => {
     if (!sliderRef.current) return;
@@ -226,6 +201,7 @@ export default function AppcardSlider({
             <>
               <button
                 onClick={() => move("left")}
+                aria-label="Previous slide"
                 disabled={!canLeft}
                 className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-[#5556D1] hover:text-white transition ${!canLeft && "opacity-40 cursor-not-allowed"
                   }`}
@@ -235,6 +211,7 @@ export default function AppcardSlider({
 
               <button
                 onClick={() => move("right")}
+                 aria-label="Next slide"
                 disabled={!canRight}
                 className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-[#5556D1] hover:text-white transition ${!canRight && "opacity-40 cursor-not-allowed"
                   }`}
@@ -249,6 +226,7 @@ export default function AppcardSlider({
               <button
                 key={index}
                 aria-label={`Go to slide ${index + 1}`}
+                aria-controls="appcard-slider"
                 onClick={() => {
                   if (!sliderRef.current) return;
 
@@ -262,7 +240,7 @@ export default function AppcardSlider({
                     behavior: "smooth",
                   });
                 }}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${activeIndex === index
+                className={`w-4 h-4 rounded-full transition-all duration-300 ${activeIndex === index
                     ? "bg-[#5556D1] scale-110"
                     : "bg-gray-300 hover:bg-gray-400"
                   }`}

@@ -30,14 +30,27 @@ const HireDeveloper = ({
                   className="text-base text-white"
                   dangerouslySetInnerHTML={{ __html: text }}
                 />
-                <p
-                  className="text-base text-white"
-                  dangerouslySetInnerHTML={{ __html: text1 }}
-                />
-                <p
-                  className="text-base text-white"
-                  dangerouslySetInnerHTML={{ __html: text2 }}
-                />
+
+                {
+                  text1 && (
+                    <p
+                      className="text-base text-white"
+                      dangerouslySetInnerHTML={{ __html: text1 }}
+                    />
+                  )
+                }
+
+                {
+                  text2 && (
+                    <p
+                      className="text-base text-white"
+                      dangerouslySetInnerHTML={{ __html: text2 }}
+                    />
+                  )
+                }
+
+
+
               </div>
 
               <div className="text-semibold text- text-white">
@@ -51,8 +64,8 @@ const HireDeveloper = ({
                       key={index}
                       className="flex items-start  gap-2 text-white"
                     >
-                      <span className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1"></span>
-                      <span dangerouslySetInnerHTML={{ __html: item }} />
+                      <div className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1"></div>
+                      <p dangerouslySetInnerHTML={{ __html: item }} />
                     </li>
                   ))}
                 </ul>

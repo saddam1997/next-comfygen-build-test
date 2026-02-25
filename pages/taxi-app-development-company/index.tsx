@@ -13,6 +13,7 @@ import Link from "next/link";
 import ComparisonSection from "../../components/Newcomponet/SectionCompoent/ComparisonSection";
 
 
+
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
@@ -351,6 +352,9 @@ export default function Ecommerce(props) {
           bgImage={JSON_DATA.Herosection.bgImage}
         />
 
+
+
+
         <Milestones />
         <section className="lg:py-16 py-10 bg-[#F3F4F6]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -483,7 +487,7 @@ export default function Ecommerce(props) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="ReactJS Development Technology"
+          title=""
         />
 
         <BlogSection initialData={initialData} />

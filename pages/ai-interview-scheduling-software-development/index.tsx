@@ -306,7 +306,7 @@ export default function Ecommerce(props:any) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="ReactJS Development Technology"
+          title=""
         />
         <BlogSection initialData={initialData} />
       </div>

@@ -43,13 +43,33 @@
   ],
   "servicesData": [
     {
-      "title": "Custom Grocery App Development",
-      "description": "At Comfygen Technologies, we specialize in custom grocery mobile app development tailored to your business needs. Our grocery mobility development solutions are designed to deliver seamless user experiences, high scalability, operational efficiency, and a competitive edge in the fast-growing on-demand grocery market.",
+      "title": "Custom Grocery Delivery App Development ",
+      "description": "We build fully customized grocery delivery platforms aligned with your business model. From UI/UX design to backend architecture, every element is designed to support smooth ordering, vendor management, real-time tracking, and secure payments.",
       "features": [
         "Scalable architecture to support business growth",
         "Clean, intuitive UI for faster product discovery",
         "Secure checkout and payment integrations",
         "Performance optimization for high user traffic"
+      ]
+    },
+    {
+      "title": "Multi-Vendor Grocery Marketplace Development",
+      "description": "Planning to launch an Instacart-style platform? Our grocery delivery app development company builds multi-vendor systems that allow multiple sellers to manage inventory, pricing, commissions, and orders from a centralized admin panel.",
+      "features": [
+        "Multi-Vendor Store Management",
+        "Advanced Admin Dashboard",
+        "Real-Time Order & Delivery Tracking",
+        "Flexible Commission & Revenue Models"
+      ]
+    },
+    {
+      "title": "Grocery Delivery Mobile App Development",
+      "description": "At Comfygen, we <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>build high-performance mobile applications</a> for Android and iOS that combine speed, stability, and intuitive design. Our grocery delivery app development service focuses on real-time functionality, smooth navigation, and reliable performance to ensure effortless ordering for customers, efficient management for vendors, and streamlined operations for delivery partners.",
+      "features": [
+        "Customer App",
+        "Delivery Partner App",
+        "Vendor App",
+        "<a href='https://www.comfygen.com/blog/admin-dashboard-development-for-grocery-delivery/' class='underline font-semibold'>Admin Dashboard for grocery app</a>"
       ]
     },
     {
@@ -63,7 +83,7 @@
     },
     {
       "title": "Single-Store Grocery App Development",
-      "description": "Our grocery app development services provide dedicated mobile apps for grocery stores, enabling customers to easily browse products, place orders, and schedule deliveries. These feature-rich Single-Store Grocery App Development also empower store owners to manage inventory, process orders, and handle deliveries efficiently—ensuring a seamless experience for both customers and businesses",
+      "description": "Our grocery app development services deliver dedicated mobile apps for grocery stores, allowing customers to browse products, place orders, and schedule deliveries with ease. These single-store grocery apps also help owners manage inventory, process orders, and streamline deliveries efficiently for a smooth experience on both sides.",
       "features": [
         "Easy Product Browsing & Smart Search",
         "Smooth Order & Delivery Management",
@@ -72,40 +92,8 @@
       ]
     },
     {
-      "title": "Multi-Vendor Grocery Marketplace Development",
-      "description": "We develop multi-vendor grocery delivery marketplace apps that connect multiple grocery stores with customers through a single platform. These digital grocery marketplaces allow vendors to independently manage their stores, products, and orders, while app owners and administrators maintain full control over platform operations, commission structures, payments, and delivery management.",
-      "features": [
-        "Multi-Vendor Store Management",
-        "Advanced Admin Dashboard",
-        "Real-Time Order & Delivery Tracking",
-        "Flexible Commission & Revenue Models"
-      ]
-    },
-    {
-      "title": "Grocery Delivery App Development",
-      "description": "Our grocery app developers develop GPS-enabled grocery delivery apps equipped with real-time order tracking, AI-powered route optimization, and secure payment gateway integration. Advanced grocery delivery app development solutions simplify delivery operations for delivery partners, enhance customers experience, and significantly improve efficiency and scalability for your online grocery delivery business.",
-      "features": [
-        "AI-Powered Route Optimization",
-        "Secure Payment Gateway Integration",
-        "Delivery Partner App Panel",
-        "Enhanced Customer Experience",
-        "Scalable & Efficient Operations"
-      ]
-    },
-    {
-      "title": "Grocery eCommerce Web App Development",
-      "description": "As a leading <a href='https://www.comfygen.com/e-commerce-app-development' class='underline font-semibold'>eCommerce app development company</a>, our team builds high-performance online grocery shopping that runs seamlessly across all major browsers and devices. Our app delivery development solutions deliver superior convenience, accessibility, and an enhanced grocery shopping experience for your customers.",
-      "features": [
-        "Responsive & Cross-Browser Compatibility",
-        "Easy Product Browsing & Smart Search",
-        "Secure Checkout & Payment Integration",
-        "Real-Time Order Management",
-        "Inventory & Stock Management"
-      ]
-    },
-    {
-      "title": "Grocery App UI/UX Design",
-      "description": "Our <a href='https://www.comfygen.com/web-design' class='underline font-semibold'>UI/UX Design development Service</a> provides user-friendly grocery app designs that make shopping seamless and enjoyable. Our focus is on clean layouts, fast navigation, and smooth checkout experiences to help users find products quickly and complete orders effortlessly.",
+      "title": "UI/UX Design for Grocery Apps",
+      "description": "User experience directly impacts conversion rates. Our design team creates clean, easy-to-navigate interfaces that make product discovery, checkout, and order tracking simple and friction-free.",
       "features": [
         "Clean, modern, and responsive layouts",
         "Intuitive navigation for faster product discovery",
@@ -114,18 +102,24 @@
       ]
     },
     {
-      "title": "Payment Gateway & Third-Party Integrations",
+      "title": "Grocery App Upgrade & Modernization",
+      "description": "Already have a grocery platform but facing scalability or performance issues? We upgrade legacy systems, optimize databases, enhance UI, and integrate advanced features to improve speed and efficiency.",
+      "features": []
+    },
+    {
+      "title": "Third-Party API & Payment Integration",
       "description": "We integrate secure payment gateways and essential third-party tools to ensure your grocery app runs smoothly. From notifications to analytics, our integrations keep your ecosystem connected and efficient.",
       "features": [
-        "SMS and email notifications for users and delivery partners",
-        "Maps and GPS for accurate delivery tracking",
-        "Analytics and reporting tools for business insights",
-        "Marketing platform integrations for promotions and campaigns"
+        "Secure payment gateways",
+        "Real-time map tracking",
+        "Inventory management systems",
+        "CRM & ERP solutions",
+        "Analytics tools"
       ]
     },
     {
-      "title": "Grocery App Support & Maintenance Services",
-      "description": "We offer comprehensive post-launch support to keep your grocery app running smoothly and efficiently. Our app testing and maintenance services include performance optimization, feature upgrades, security updates, and scalability enhancements to handle growing users and orders.",
+      "title": "Maintenance & Post-Launch Support",
+      "description": "Our partnership doesn’t end at launch. Comfygen provides ongoing maintenance, security updates, performance monitoring, and feature enhancements to keep your grocery delivery app development platform competitive.",
       "features": [
         "Rigorous app testing for bug-free performance",
         "Regular updates with new features and improvements",
@@ -405,7 +399,7 @@
   ],
   "pageData": {
     "title": "Why Choose Comfygen for Grocery Delivery App Development",
-    "description": "Choosing the right <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development partner</a> is key to building a successful grocery delivery app. At Comfygen, we combine experience, technology, and innovation to deliver apps that drive growth and customer satisfaction.",
+    "description": "Choosing the right grocery delivery app development company isn’t just about building an app. It’s about building a scalable digital business. At Comfygen, we focus on performance, revenue growth, and long-term sustainability, not just code delivery.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",

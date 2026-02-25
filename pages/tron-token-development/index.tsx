@@ -657,7 +657,7 @@ export default function Tron(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
-        <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
+        <Faq faqData={JSON_DATA.Frequently} title="" />
         <BlogSection initialData={initialData} />
       </div>
     </>

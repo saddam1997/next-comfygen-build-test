@@ -632,7 +632,7 @@ export default function Ecommerce(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Solana Token Development Company"
+          title=""
         />
         <BlogSection initialData={initialData} />
       </div>

@@ -24,7 +24,7 @@ const CardWrapper: React.FC<{
 }> = ({ link, children }) => {
   if (!link) {
     return (
-      <div className="border pt-4 rounded-lg cursor-default">
+      <div className="border pt-4 rounded-lg cursor-default py-4">
         {children}
       </div>
     );
@@ -33,7 +33,7 @@ const CardWrapper: React.FC<{
   return (
     <Link
       href={link}
-      className="border pt-4 rounded-lg block hover:shadow-md transition"
+      className="border pt-4 rounded-lg block hover:shadow-md transition py-4"
     >
       {children}
     </Link>
@@ -50,10 +50,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="p-4 my-10 lg:p-0">
-      <h3 className="max-w-8xl text-5xl font-semibold mb-4">{title}</h3>
-      <h3 className="max-w-8xl text-xl mb-6">{subtitle}</h3>
+      <div className="max-w-7xl mx-auto flex justify-center">
+       <div>
+         <h3 className="max-w-8xl text-3xl text-center font-semibold mb-4">{title}</h3>
+        <h3 className="max-w-8xl text-xl mb-6 text-center">{subtitle}</h3>
+       </div>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:py-2">
         {cards.map((card, index) => (
           <CardWrapper key={index} link={card.link}>
             <div className="relative flex justify-center">

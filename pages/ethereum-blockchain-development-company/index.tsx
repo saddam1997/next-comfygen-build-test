@@ -209,7 +209,7 @@ export default function Ecommerce(props:any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/ethereum-blockchain-development-company-hero-img.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/ethereum-blockchain-development-company/ethereum-blockchain-development-company.webp"
         />
         <Milestones/>
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
@@ -236,12 +236,10 @@ export default function Ecommerce(props:any) {
             "EVM compatibility for cross-chain development",
             "Strong global developer community & ecosystem",
           ]}
-          imageSrc="https://www.comfygen.com/gallery/about-images/ethereum-blockchain-development-company-about-img.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/ethereum-blockchain-development-company/ethereum_about.webp"
           link="/about-us"
           linkText="Explore More"
         />
-
-
 
 
         <SolutionSec
@@ -313,7 +311,7 @@ export default function Ecommerce(props:any) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" About Blockchain Technology"
+          title=""
         />
   <BlogSection initialData={initialData} />
        

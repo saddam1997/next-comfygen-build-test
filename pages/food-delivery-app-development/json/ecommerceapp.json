@@ -340,33 +340,33 @@
   "LeadingSoftware": [
     {
       "num": "01",
-      "title": "Custom AI Development",
-      "decs": "We provide <a href='/ai-development' class='underline'> AI-powered food delivery app development</a>  optimize menu recommendations, demand forecasting, and dynamic pricing, helping food businesses maximize profits while enhancing the overall user experience with data-driven insights."
+      "title": "AI (Artificial Intelligence)",
+      "decs": "<a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI-powered food delivery app development solution</a> helps improve food recommendations, automate order management, predict delivery time, and enhance customer experience with intelligent features."
     },
     {
       "num": "02",
-      "title": "Blockchain Integration",
-      "decs": "By implementing <a href='/blockchain-development' class='underline'>blockchain technology</a>, we ensure transparent transactions, secure user authentication, and tamper-proof order tracking, enhancing trust and security for both customers and restaurant owners."
+      "title": "Blockchain",
+      "decs": "<a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain</a> ensures secure transactions, transparent order tracking, and safe data storage—ideal for building trust in online food delivery platforms."
     },
     {
       "num": "03",
-      "title": "AI Chatbot",
-      "decs": "Our AI-powered chatbots enhance customer support by handling order inquiries, tracking updates, and personalized recommendations, ensuring instant responses and improved user engagement for food delivery apps."
+      "title": "IoT (Internet of Things)",
+      "decs": "<a href='https://www.comfygen.com/iot-development-company' class='underline font-semibold'>IoT</a> enables real-time kitchen monitoring, smart inventory control, and live delivery tracking to improve accuracy and efficiency."
     },
     {
       "num": "04",
-      "title": "IoT Integration",
-      "decs": "Our <a href='/iot-development-company' class='underline'>IoT-powered food delivery app development</a>   solutions enable real-time order tracking, smart kitchen automation, and temperature monitoring, ensuring fresh food delivery, operational efficiency, and enhanced customer experience for restaurants and food businesses. "
+      "title": "Data Analytics",
+      "decs": "<a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>Data analytics</a> helps you understand user behavior, track sales, plan delivery routes, and make smarter business decisions."
     },
     {
       "num": "05",
-      "title": "Crypto Wallet",
-      "decs": "Our apps support <a href='/crypto-wallet-development' class='underline'>crypto wallet integration</a> , enabling secure and decentralized transactions, offering customers alternative payment options like Bitcoin, Ethereum, and other cryptocurrencies for seamless food ordering experiences."
+      "title": "Cloud Technology",
+      "decs": "Cloud solutions make your food delivery app scalable, fast, and secure with high uptime and flexible data management."
     },
     {
       "num": "06",
-      "title": "Cloud Computing",
-      "decs": "We leverage cloud computing solutions to provide scalable and secure infrastructure, enabling real-time order management, seamless data synchronization, and optimized app performance for food businesses of all sizes."
+      "title": "AR (Augmented Reality)",
+      "decs": "AR enhances the user experience with interactive menu previews, virtual food displays, and improved customer engagement."
     }
   ],
   "AIPowered": [

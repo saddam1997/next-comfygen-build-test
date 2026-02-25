@@ -663,7 +663,7 @@ export default function Mobile(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Islamic Bank  App Develoment"
+          title=""
         />
         <BlogSection initialData={initialData} />
       </div>

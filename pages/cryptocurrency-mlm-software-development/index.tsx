@@ -701,7 +701,7 @@ export default function Ecommerce(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Crypto MLM Software Development Services"
+          title=""
         />
 
         <ClientTestimonials

@@ -390,7 +390,7 @@ export default function Mobile(props) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title=" About Blockchain Technology"
+          title=""
         />
 
         <BlogSection initialData={initialData} />

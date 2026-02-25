@@ -105,7 +105,8 @@ export default function AppShowcaseSlider() {
           </div> */}
           
           <h2 className="text-xl md:text-5xl font-bold text-white  tracking-tight py-3">
-            Our Grocery Delivery App Screens
+          Grocery App Development UI & User Experience
+
             {/* Grocery Delivery <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-300">App Screens</span> */}
           </h2>
           <div className="w-28 bg-red-600 mx-auto h-1.5 "></div>

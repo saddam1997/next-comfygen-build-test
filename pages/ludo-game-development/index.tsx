@@ -312,36 +312,7 @@ const faqPageSchema = {
 
 };
 
-const ldJsonData1 = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  priceRange: "$20-$550",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "@id": "https://www.comfygen.com/ludo-game-development",
-  name: "No. 1 Ludo game development company in the USA, UK and India",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar,",
-    addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-    addressRegion: "Jaipur, Rajasthan",
-    postalCode: "302021",
-    addressCountry: "IN",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.9",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Saddam husen",
-    },
-  },
-  url: "https://www.comfygen.com/ios-app-development",
-  telephone: "+91 9587867258, +1 5145659471",
-};
+
 export default function LudoGame(props:any) {
   let { initialData } = props;
   const [admin, setAdmin] = useState(0);
@@ -429,10 +400,7 @@ export default function LudoGame(props:any) {
         <meta name="og:latitude" content="26.912434" />
         <meta name="og:longitude" content="75.787271" />
         <meta name="fb:page_id" content="110909321596135" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData1) }}
-        />
+  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData) }}
@@ -606,11 +574,11 @@ export default function LudoGame(props:any) {
                 {admin === 0 ? (
                   <>
                     <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 md:grid-cols-3 py-10">
-                      {JSON_DATA.FeaturesLudo.slice(0, 12).map((elem) => {
+                      {JSON_DATA.FeaturesLudo.slice(0, 12).map((elem, index) => {
                         const { title, img, num } = elem;
                         return (
                           <div
-                            key={num}
+                            key={index}
                             className="flex flex-col items-center space-y-2"
                           >
                             <Image
@@ -630,11 +598,11 @@ export default function LudoGame(props:any) {
                 {admin === 1 ? (
                   <>
                     <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 md:grid-cols-3 py-10">
-                      {JSON_DATA.FeaturesLudo.slice(12, 18).map((elem) => {
+                      {JSON_DATA.FeaturesLudo.slice(12, 18).map((elem, index) => {
                         const { title, img, num } = elem;
                         return (
                           <div
-                            key={num}
+                            key={index}
                             className="flex flex-col items-center space-y-2"
                           >
                             <Image

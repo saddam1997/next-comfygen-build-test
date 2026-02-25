@@ -538,7 +538,7 @@ export default function Ecommerce(props:any) {
         />
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Centralized crypto exchange"
+          title=""
         />
 
          <BlogSection initialData={initialData} />

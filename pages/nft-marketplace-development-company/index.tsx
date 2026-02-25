@@ -476,7 +476,7 @@ export default function Ecommerce(props:any) {
           linkText="LET'S CONNECT "
         />
         <Guidance />
-        <Faq faqData={JSON_DATA.Frequently} title="Metaverse Development" />
+        <Faq faqData={JSON_DATA.Frequently} title="" />
   <BlogSection initialData={initialData} />
 
       </div>

@@ -602,7 +602,7 @@ export default function ClinicalApp(props: any) {
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
-        <Faq faqData={Frequently} title="Insurance App Development" />
+        <Faq faqData={Frequently} title="" />
         <BlogSection initialData={initialData} />
 
       </div>

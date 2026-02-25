@@ -3,17 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import {
-  IconBulb,
-  IconPigMoney,
-  IconSettingsAutomation,
-  IconRocket,
-  IconLockAccess,
-  IconScaleOutline,
-  IconUserStar,
-  IconTrendingUp,
-  IconChartBar,
-} from "@tabler/icons-react";
+
 import { MdOutlineArrowOutward } from "react-icons/md";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
@@ -100,348 +90,14 @@ export default function rummy(props: any) {
     setTalkToExpertModal(false);
   };
 
-  const Process = [
-    {
-      title: "Research and Analysis",
-      description:
-        "We analyze your business model, goals, and industry landscape to identify where blockchain can add real value. This sets the foundation for a successful blockchain strategy.",
-    },
-    {
-      title: "Assessment",
-      description:
-        "We evaluate your existing systems and workflows for blockchain readiness, ensuring feasibility, performance potential, and ROI before development begins.",
-    },
-    {
-      title: "Project Definition",
-      description:
-        "Clear goals, timelines, and technical frameworks are defined to align stakeholders and ensure a focused, efficient execution process.",
-    },
-    {
-      title: "Proof of Concept (PoC)",
-      description:
-        "We develop a working PoC or MVP to test your blockchain idea in a real-world scenario and validate its effectiveness before full-scale implementation.",
-    },
-    {
-      title: "Integration",
-      description:
-        "We ensure seamless integration of blockchain with your existing tech stack, APIs, databases, and enterprise tools—while maintaining security and compliance.",
-    },
-    {
-      title: "Agile Development",
-      description:
-        "Using agile methods, we build your blockchain solution in sprints—ensuring speed, flexibility, and collaboration throughout the process.",
-    },
-    {
-      title: "Post-Implementation Support",
-      description:
-        "We provide continuous monitoring, updates, and optimization to keep your blockchain solution secure, scalable, and aligned with evolving needs.",
-    },
-  ];
-  const technologyData = [
-    {
-      img: <IconBulb stroke={1.5} className="w-12 h-12" />,
-      title: "Strategic Planning for Sustainable Growth",
-      desc: "Blockchain consultants at Comfygen work with you to develop a comprehensive roadmap that aligns blockchain adoption with your long-term business vision. We focus on maximizing ROI while preparing your business for future scalability and evolving market demands. The result? A clear, actionable plan to succeed in the blockchain-driven economy.",
-    },
-    {
-      img: <IconPigMoney stroke={1.5} className="w-12 h-12" />,
-      title: "Cost Efficiency with Expert Guidance",
-      desc: "Our consultants identify the most efficient blockchain solutions tailored to your business, ensuring cost-effective investments. By leveraging cutting-edge technologies and avoiding common pitfalls, we help you streamline operations and minimize unnecessary expenses, allowing you to focus resources where they truly matter.",
-    },
-    {
-      img: <IconSettingsAutomation stroke={1.5} className="w-12 h-12" />,
-      title: "Enhance Operational Efficiency",
-      desc: "Integrating blockchain automates workflows, reduces manual errors, and enhances productivity across your organization. Our team ensures that your business achieves significant time savings, improved data integrity, and increased transparency—all leading to more efficient operations and a more resilient business model.",
-    },
-    {
-      img: <IconRocket stroke={1.5} className="w-12 h-12" />,
-      title: "Unlock Innovative Revenue Streams",
-      desc: "Blockchain consulting opens up new business models, such as tokenization and decentralized finance (DeFi) solutions, which can create fresh sources of income. We guide you in capitalizing on emerging opportunities, ensuring your business is poised to thrive with blockchain-powered innovations that drive sustainable growth.",
-    },
-    {
-      img: <IconScaleOutline stroke={1.5} className="w-12 h-12" />,
-      title: "Ensure Full Regulatory Compliance",
-      desc: "Navigating the complex regulatory landscape of blockchain is tricky, but with expert consulting, you can rest assured that your solutions comply with all necessary legal requirements. We make sure your blockchain system adheres to industry regulations, reducing risks, penalties, and potential compliance issues.",
-    },
-    {
-      img: <IconUserStar stroke={1.5} className="w-12 h-12" />,
-      title: "Deliver Exceptional Customer Experiences",
-      desc: "Blockchain's transparency and security enhance the overall user experience, providing your customers with greater trust and reliability. Our consultants help you create seamless, user-friendly solutions that improve customer loyalty, satisfaction, and engagement, elevating your brand’s reputation in the market.",
-    },
-    {
-      img: <IconTrendingUp stroke={1.5} className="w-12 h-12" />,
-      title: "Scalability & Future-Readiness",
-      desc: "We ensure your blockchain solutions are built for the future, with scalability and adaptability at the core. As your business grows, your blockchain infrastructure will evolve with flexible solutions that can handle increased transaction volume, more complex operations, and changing market conditions.",
-    },
-    {
-      img: <IconLockAccess stroke={1.5} className="w-12 h-12" />,
-      title: "Empower Data Ownership & Security",
-      desc: "Blockchain gives businesses more control over their data by offering immutable records and decentralized storage. Our consulting services help design systems that prioritize data security, privacy, and ownership, allowing your organization to safeguard sensitive information while maintaining transparency.",
-    },
-    {
-      img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-      title: "Accelerate Decision-Making with Blockchain",
-      desc: "By implementing transparent and efficient blockchain systems, we eliminate bottlenecks in your operations. With real-time data access and verified transactions, decision-making becomes faster, more informed, and more reliable, giving you a competitive edge in your industry.",
-    },
-  ];
-
-  const testimonialData = [
-    {
-      text: "“Comfygen’s blockchain consulting services were instrumental in helping us define a clear roadmap for our decentralized finance platform. Their strategic insights and market expertise gave us a strong foundation for growth.”",
-      name: "Liam O’Connor",
-      title: "Ireland",
-    },
-    {
-      text: "“We approached Comfygen for blockchain consulting and were impressed by their deep technical knowledge and business-focused approach. Their team helped us identify the right blockchain model and architecture for our retail ecosystem.”",
-      name: "Sneha Kulkarni",
-      title: "India",
-    },
-    {
-      text: "“Thanks to Comfygen's consulting services, we successfully transitioned from a centralized system to a hybrid blockchain model. Their guidance was clear, actionable, and perfectly aligned with our goals.”",
-      name: "Carlos Méndez",
-      title: "Spain",
-    },
-    {
-      text: "“Comfygen’s expert consulting helped us avoid costly mistakes in the early stages of our blockchain startup. Their strategic guidance on tokenomics and compliance made a real difference.”",
-      name: "Emma Tanaka",
-      title: "Japan",
-    },
-    {
-      text: "“Their blockchain consultants gave us clarity on integrating distributed ledger technology into our banking processes. The sessions were insightful, and their team was highly professional throughout.”",
-      name: "Rajeev Menon",
-      title: "Nepal",
-    },
-  ];
 
 
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
 
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Blockchain Consultancy Company",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com ",
-      },
-      description:
-        "Comfygen provides expert blockchain consultancy services to help businesses plan, develop, and scale blockchain solutions. From strategic planning and feasibility analysis to architecture design and deployment, our team delivers secure, scalable, and future-ready blockchain solutions using Ethereum, Polygon, Solana, Hyperledger, and more.",
-      url: "https://www.comfygen.com/blockchain-consulting",
-      mainEntityOfPage:
-        "https://www.comfygen.com/blockchain-consulting-services  ",
-      areaServed: "Global",
-      serviceType: [
-        "Blockchain Consultancy Company",
-        "Blockchain Consultancy Services",
-        "Blockchain Strategy Consulting",
-        "Enterprise Blockchain Solutions",
-        "Custom Blockchain Development",
-        "DeFi Consulting",
-        "NFT Project Consulting",
-        "Smart Contract Consulting",
-        "Ethereum Consulting",
-        "Polygon Consulting",
-        "Solana Consulting",
-        "Hyperledger Consulting",
-        "Blockchain Architecture Design",
-        "Blockchain Implementation Support",
-      ],
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies ",
-        "https://x.com/Comfygen_Tech ",
-        "https://www.instagram.com/comfygen_technologies ",
-        "https://www.linkedin.com/company/comfygen-technologies ",
-      ],
-    },
-
-    {
-      "@context": "http://www.schema.org ",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      name: "Blockchain Consulting Company | Expert Blockchain Consulting Services",
-      image: "Hero section image",
-      description:
-        "Comfygen is a leading Blockchain Consulting Company helping enterprises and startups build secure, scalable, and future-ready blockchain solutions. From dApps and DeFi to NFTs and smart contracts, our consulting services cover the full spectrum of blockchain innovation.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "135",
-      },
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com ",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Blockchain Development",
-          item: "https://www.comfygen.com/blockchain-development ",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Public Blockchain Development",
-          item: "https://www.comfygen.com/public-blockchain-development ",
-        },
-      ],
-    },
-  ];
-
-  const faqData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is Blockchain Consulting?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Blockchain consulting is like having a tech-savvy advisor for your business who helps you use cutting-edge blockchain app development technology. We analyze your business thoroughly and provide services for various blockchain developments, like NFT blockchain app development, bridges blockchain app development, DEX blockchain app development, metaverse blockchain app development, blockchain tokens app development, and dApps blockchain app development. Our experts are versatile, using different blockchain technologies such as Ethereum blockchain app development, Hyperledger blockchain app development, EVM blockchain app development, Solidity blockchain app development, Cosmos blockchain app development, or Substrate blockchain app development. With our guidance, you can create a customized blockchain app development protocol that suits your business needs. Our Blockchain consultant not only makes your business operations smoother but also ensures top-notch security and a boost in return on investment (ROI).",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What Are the Responsibilities of Blockchain Consultants?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Imagine having a guide to enhance your business using decentralized ledger technology. That's what a blockchain consultant does. They assess your current operations, explore how blockchain can benefit you, and guide you toward a system that adds value to your company. At Comfygen, our blockchain consulting process involves project ideation, feasibility checks, proof-of-concept execution, workflow outlining, documentation, and development stages once there's a mutual agreement.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Which is the Right Blockchain Platform for My Decentralized Solutions?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Choosing the right blockchain app development platform is crucial before building a solution for your business. Only an experienced blockchain expert can help you make the ideal choice. They consider factors like the privacy level needed, scalability requirements, the type of blockchain app development (public blockchain app development, private blockchain app development, or permission), consensus algorithm, and smart contract blockchain app development functionality.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How Does Blockchain Help in Business?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Blockchain benefits various industries such as supply chains blockchain app development, healthcare blockchain app development, government blockchain app development, and financial blockchain app development services. Startups and big companies are exploring ways to use blockchain app development to transform traditional business models. Our blockchain app development consulting team can show you how blockchain app development brings transparency, traceability, security, and efficiency to your business.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is a Blockchain App Development Consultation Company?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "When a group of blockchain-savvy experts, including blockchain developers, technical architects, and blockchain app development insights, come together to provide feasible solutions for your blockchain app development needs, they are known as a blockchain app development consulting company.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do We Offer Blockchain App Development Consulting for Different Industries?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Absolutely! As a top-notch blockchain app development consulting company, Comfygen provides consulting and development services for various industries like finance blockchain app development, healthcare blockchain app development, retail blockchain app development, supply chain blockchain app development, real estate blockchain app development, energy blockchain app development, and even the government blockchain app development sector. Contact our team to learn more about our blockchain app development services.",
-        },
-      },
-    ],
-  };
+ 
 
   return (
     <>
@@ -477,12 +133,10 @@ export default function rummy(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-        <script type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
-        />
+     
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
       <div className="">
@@ -539,7 +193,7 @@ export default function rummy(props: any) {
             "<b>Faster Time-to-Market</b> – Get a clear roadmap for launching crypto wallets, NFT platforms, or blockchain integrations quickly.",
             "<b>Scalable Solutions</b> – Build with smart contract advisory and tokenomics planning for long-term growth."
           ]}
-          imageSrc="https://www.comfygen.com/gallery/about-images/blockchain-consulting-services-about-image.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/blockchain-consulting.webp"
           link="/about-us"
           linkText="Explore More"
         />
@@ -558,7 +212,7 @@ export default function rummy(props: any) {
         <SolutionSec
           heading="Why Blockchain Consulting Service Is a Game Changer for Your Business"
           subheading="Unlock the potential of blockchain with our expert blockchain consulting services. We help businesses implement secure, scalable, and innovative blockchain development solutions that drive efficiency, enhance transparency, and prepare your organization for the digital future."
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
 
         <section className="py-8">
@@ -586,7 +240,7 @@ export default function rummy(props: any) {
                 Our blockchain consultation journey follows a structured roadmap—from discovery to deployment—designed to deliver measurable business impact. With a focus on innovation, scalability, and technical precision, we guide you through every stage of blockchain adoption, ensuring a seamless transformation from concept to execution. At Comfygen, success isn’t just about building solutions—it’s about creating long-term value through strategic blockchain integration.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
@@ -698,7 +352,7 @@ export default function rummy(props: any) {
         />
 
         <ClientTestimonials
-          testimonials={testimonialData}
+          testimonials={JSON_DATA.testimonialData}
           heading="What Our Clients Say"
         />
 

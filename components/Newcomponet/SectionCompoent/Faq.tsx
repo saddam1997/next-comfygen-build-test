@@ -53,7 +53,9 @@ export default function FaqSection({
           {/* Heading */}
           <div className="text-center space-y-2">
             <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              {title}
+              {title && title.trim() !== ""
+                ? title
+                : "Frequently Asked Questions"}
             </h2>
             {description && (
               <p className="text-gray-600 text-sm md:text-base" >
@@ -78,11 +80,10 @@ export default function FaqSection({
                     onClick={() =>
                       setCurrentIndex(isOpen ? null : index)
                     }
-                    className={`flex items-center justify-between w-full px-5 py-4 text-left font-medium transition-colors duration-200 ${
-                      isOpen
+                    className={`flex items-center justify-between w-full px-5 py-4 text-left font-medium transition-colors duration-200 ${isOpen
                         ? "bg-[#5556D1]/10 text-[#212121]"
                         : "bg-white text-[#212121]"
-                    }`}
+                      }`}
                   >
                     <span className="text-sm md:text-lg font-semibold">
                       {item.title}
@@ -90,9 +91,8 @@ export default function FaqSection({
 
                     {/* Icon */}
                     <span
-                      className={`transition-transform duration-300 ${
-                        isOpen ? "rotate-45" : ""
-                      }`}
+                      className={`transition-transform duration-300 ${isOpen ? "rotate-45" : ""
+                        }`}
                     >
                       +
                     </span>
@@ -100,11 +100,10 @@ export default function FaqSection({
 
                   {/* Content */}
                   <div
-                    className={`transition-all duration-300 ease-in-out ${
-                      isOpen
+                    className={`transition-all duration-300 ease-in-out ${isOpen
                         ? "max-h-[1000px] opacity-100 px-5 pb-5"
                         : "max-h-0 opacity-0 overflow-hidden px-5"
-                    }`}
+                      }`}
                   >
                     <div className="space-y-3 text-sm md:text-base text-gray-800">
                       {item.desc && (
@@ -127,16 +126,16 @@ export default function FaqSection({
                         item.li5 ||
                         item.li6 ||
                         item.li7) && (
-                        <ul className="list-disc pl-5 space-y-1">
-                          {item.li1 && <li>{item.li1}</li>}
-                          {item.li2 && <li>{item.li2}</li>}
-                          {item.li3 && <li>{item.li3}</li>}
-                          {item.li4 && <li>{item.li4}</li>}
-                          {item.li5 && <li>{item.li5}</li>}
-                          {item.li6 && <li>{item.li6}</li>}
-                          {item.li7 && <li>{item.li7}</li>}
-                        </ul>
-                      )}
+                          <ul className="list-disc pl-5 space-y-1">
+                            {item.li1 && <li>{item.li1}</li>}
+                            {item.li2 && <li>{item.li2}</li>}
+                            {item.li3 && <li>{item.li3}</li>}
+                            {item.li4 && <li>{item.li4}</li>}
+                            {item.li5 && <li>{item.li5}</li>}
+                            {item.li6 && <li>{item.li6}</li>}
+                            {item.li7 && <li>{item.li7}</li>}
+                          </ul>
+                        )}
 
                       {/* Nested Cards */}
                       {item.cards?.length ? (

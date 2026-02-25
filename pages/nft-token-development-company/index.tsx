@@ -632,7 +632,7 @@ export default function Ecommerce(props:any) {
             "Post-Launch NFT Maintenance & Technical Support",
           ]}
         />
-        <Faq faqData={JSON_DATA.Frequently} title="Token Development Company" />
+        <Faq faqData={JSON_DATA.Frequently} title="" />
   <BlogSection initialData={initialData} />
 
       </div>

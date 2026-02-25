@@ -270,7 +270,7 @@ export default function MultiChain(props: any) {
 
         <Faq
           faqData={JSON_DATA.Frequently}
-          title="Flutter App Development Services"
+          title=""
         />
 
         <BlogSection initialData={initialData} />
