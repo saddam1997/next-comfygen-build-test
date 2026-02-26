@@ -184,18 +184,6 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "Rhederstraße 34",
-      "addressLocality": "Euskirchen",
-      "postalCode": "53881",
-      "addressCountry": "Germany"
-    },
-
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -216,85 +204,6 @@ export default function Ecommerce(props) {
         "DeFi Token Development",
         "Custom Blockchain Token Solutions"
       ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Rhederstraße 34",
-        "addressLocality": "Euskirchen",
-        "postalCode": "53881",
-        "addressCountry": "Germany"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB", "GER"],
-
-        "availableLanguage": "en, in"
-      },
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
@@ -392,13 +301,13 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-20">
         <HeroSectionForAllPages
           heading="Crypto Token Development Service"
-          subhead='Looking for best Token Development Company?'
-          ptag="Comfygen is a leading crypto token development company that helps businesses and startups design, deploy, and scale tokens across top blockchain networks including Ethereum, Binance Smart Chain, Polygon, and more."
+          subhead=''
+          ptag="Comfygen is a trusted crypto token development company offering end-to-end cryptocurrency token development services for blockchain startups, enterprises, and businesses worldwide. Our token development service fully compliant crypto tokens across multiple blockchain networks, including Ethereum, Binance Smart Chain, Solana, Polygon, and more."
+          ptag1="Comfygen’s blockchain development team designed and developed custom tokens according to your business goal, Either you're building utility tokens, security tokens, NFTs, governance tokens, or DeFi tokens. Our crypto token development service includes smart contract development, tokenomics design, security audits, and exchange listing support."
           li1="Custom Token Design & Deployment"
           li2="Multi-Blockchain Expertise"
           li3="Security & Compliance Focused Solutions"
           li4="End-to-End Token Development Support"
-          li5="Global Delivery: India | USA | UAE"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

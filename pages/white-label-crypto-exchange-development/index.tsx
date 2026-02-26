@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -178,24 +179,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -227,73 +211,7 @@ export default function Ecommerce(props) {
       ]
 
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["US", "IN", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
 
-    },
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -464,30 +382,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:site" content="@comfygentech" />
 
         {/* Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Mobile Banking App Development",
-              "operatingSystem": "ANDROID, iOS",
-              "applicationCategory": "FinanceApplication",
-              "url": "https://www.comfygen.com/mobile-banking-app-development",
-              "description": "Top-rated mobile banking app development company building AI and blockchain-powered apps with core banking integration.",
-              "author": {
-                "@type": "Organization",
-                "name": "Comfygen Private Limited"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Comfygen Private Limited",
-                "url": "https://www.comfygen.com"
-              },
-              "image": "https://www.comfygen.com/image/og-image-mobile-banking-app.webp"
-            })
-          }}
-        />
+
 
         <script
           type="application/ld+json"
@@ -502,12 +397,13 @@ export default function Ecommerce(props) {
       </LazyLoad>
       <div className="overflow-hidden lg:pt-[20px]">
         <HeroSectionForAllPages
-          heading="Best White Label Crypto Exchange Development Company"
-          ptag="Comfygen Top-notch White Label Crypto Exchange Development Services provide scalable, feature-rich platforms that support multi-currency trading, advanced security protocols, and seamless user experiences. Whether you’re a startup or an enterprise, our customizable exchange software helps you enter the market faster and stay ahead of the competition."
-          li="100% customizable white label solutions"
-          li1="Multi-currency and multi-chain support"
-          li2="Bank-grade security and compliance"
-          li3="Fast deployment with 24/7 technical support"
+          heading="Top White Label Crypto Exchange Development Company"
+          ptag="Comfygen is a leading white label crypto exchange development company delivering turnkey cryptocurrency trading platforms for entrepreneurs, startups, and enterprises worldwide. Our ready-to-deploy crypto exchange development solutions let you launch a fully-customisable according to your brand, secure, and feature-rich crypto exchange without the complexity of building from scratch."
+          ptag1='With over 8+ years of experience in blockchain technology and cryptocurrency exchange development. Our white label crypto exchange development solutions combine advanced technology, robust security infrastructure, and unbeatable user experience to give you a competitive edge in the rapidly growing crypto market.'
+          li="Faster Time-to-Market"
+          li1="100% Customizable "
+          li2="Bank-Grade Security"
+          li3="Cost-Effective"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -622,16 +518,15 @@ export default function Ecommerce(props) {
 
           ]}
         />
-
+        <ClientStories />
 
         <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
-
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

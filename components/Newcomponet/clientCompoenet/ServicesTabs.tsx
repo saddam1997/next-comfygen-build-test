@@ -23,7 +23,7 @@ export default function ServicesTabs({ servicesData = [] }) {
         <button
           key={index}
           onClick={() => setActive(index)}
-          className={`border px-4 py-3 w-full text-left ${
+          className={`border px-4 py-3 w-full text-left font-medium ${
             index === active
               ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
               : "text-black border-[#00000018] bg-white"

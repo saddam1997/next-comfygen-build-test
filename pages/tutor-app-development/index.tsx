@@ -273,8 +273,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Tutor App Development Company | Comfygen</title>
-        <meta name="description" content="Comfygen Technologies is the best tutor app development company delivering tutor app development services with live video tutoring, smart scheduling, and scalable online learning solutions." />
+        <title> Best Tutor App Development Company | Comfygen</title>
+        <meta name="description" content="Comfygen Technologies is a top tutor app development company delivering live tutoring, smart scheduling, and scalable solutions to digitize education." />
         <link rel="canonical" href="https://www.comfygen.com/tutor-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -342,7 +342,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Tutor app development company"
-          ptag="Comfygen Technologies is a reliable tutor app development company delivering smart, scalable, and user-friendly tutor app development solutions for EdTech startups, institutes, and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our expert developers focus on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms."
+          ptag="Comfygen is a trusted tutor app development company providing advanced featured reach and scalable tutor app development solutions for the digital education industry that  include EdTech startups, institutes, teachers and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our best tutor mobile app development expert focuses on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms."
           li="Custom tutor app development for web & mobile"
           li1="Live video classes and real-time chat integration"
           li2="Tutor scheduling, session booking & management"

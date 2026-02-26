@@ -257,24 +257,7 @@ export default function Ecommerce(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -308,79 +291,8 @@ export default function Ecommerce(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies",
       ],
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        areaServed: ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        email: "sales@comfygen.com",
-        availableLanguage: ["en", "in"],
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/",
-      ],
-    },
+ 
+  
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -493,12 +405,12 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          AI-Based Crypto Trading Bot Development Company | Comfygen
+         AI-Powered Crypto Trading Bot Development Services
 
         </title>
         <meta
           name="description"
-          content="Comfygen develops crypto trading bots with real-time market analysis, predictive algorithms, multi-exchange support, and advanced risk management to maximize trading efficiency and profitability."
+          content="Automate crypto trading with Comfygen’s AI-powered trading bot development services. We build AI crypto trading bots with real-time market analysis, risk management."
         />
         <link
           rel="canonical"
@@ -609,8 +521,9 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden xl:pt-16">
         <HeroSectionForAllPages
           heading="Crypto Trading Bot Development Company"
-          ptag="Comfygen specializes in AI-powered crypto trading bot development, delivering precision, efficiency, and profitability in volatile cryptocurrency markets. Our custom crypto trading bot development solutions leverage machine learning, predictive analytics, and real-time market data to execute trades accurately, minimize risks, and maximize returns."
-          ptag1="Whether you are a startup crypto exchange, professional trader, or enterprise investor, our AI crypto trading bots are designed to scale, adapt, and provide a competitive edge."
+          subhead="Automate Your Crypto Trading with AI-Powered Trading Bot"
+          ptag="Comfygen is a trusted AI crypto trading bot development company specializing in developing AI integrated crypto trading bot development solutions that deliver precision, efficiency, and consistent profitability in volatile cryptocurrency markets. Comfygen’s custom crypto trading bot development services leverage advanced machine learning algorithms, predictive analytics, and real-time market data to execute high-frequency trades with accuracy while minimizing risks and maximizing returns."
+          ptag1="Our AI-powered cryptocurrency trading bots development solution helps startup crypto exchanges, day traders, institutional investors, or enterprise-level trading firms  to scale dynamically, adapt to market conditions, and provide you with a decisive competitive edge in the digital asset trading landscape."
           li="Real-Time Market Data Analysis & Prediction"
           li1="Advanced Risk Management & Security Protocols"
           li2="Multi-Currency & Multi-Exchange Support"

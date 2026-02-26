@@ -3,11 +3,16 @@
     "heading": "AI-Based Mobile App and Web Development Company",
     "isHome": true,
     "ptag": "Are you looking to build powerful mobile application? Comfygen is a trusted AI-based mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses.",
+    "ptag1": "",
+    "listItems" :[
+    ],
     "btnName": "Let's Discuss",
     "btnLink": "/contact-us",
-    "altTag": "blockchain-technology",
+    "altTag": "AI-Based Mobile App & Web Development Solustion",
     "bgImage": "https://www.comfygen.com/comfygen-images/home/web development company home.webp"
   },
+
+
   "AboutSection": {
     "title": "About Company",
     "heading": "Powering Businesses with Scalable Mobile App and Web Development",

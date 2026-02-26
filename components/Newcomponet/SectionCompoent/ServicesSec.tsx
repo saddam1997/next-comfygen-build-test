@@ -1,6 +1,6 @@
 // ServicesSec.tsx
 
-import ServicesTabsClient from "./ServicesTabs";
+import ServicesTabsClient from "../clientCompoenet/ServicesTabs";
 import Image from "next/image";
 
 export default function ServicesSec({ servicesData = [] }) {
@@ -56,7 +56,8 @@ function ServiceContent({ service }) {
         {service.features?.length > 0 && (
           <ul className="space-y-2">
             {service.features.map((feature:any, index:any) => (
-              <li key={index}>
+              <li key={index} className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links">
+                   <div className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></div>
                 <p dangerouslySetInnerHTML={{ __html: feature }} />
               </li>
             ))}
