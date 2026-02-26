@@ -69,148 +69,17 @@ const BlogSection = dynamic(
 
 
 
-import { IconBooks, IconChartPie, IconDatabase, IconMessage2Code, IconSettings, IconShieldCheck, IconTool } from '@tabler/icons-react';
+import {  IconChartPie,  IconSettings, IconShieldCheck, } from '@tabler/icons-react';
 import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 
 
 
-const Arena = [
-  {
-    num: "01",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-consulting.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Consulting",
-    url: "blockchain-consulting-services",
-    decs: "Our Solana blockchain consulting services would help you understand why you might need Solana blockchain app development services and how it can benefit you!.",
-  },
-  {
-    num: "02",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/cardano-smart-contract-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain dApp Development",
-    decs: "We have a team of proficient experts to help you build & launch high-performance dApps over the Solana blockchain development related to payments, stablecoins, etc.",
-  },
-  {
-    num: "03",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-nft-marketplace-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain NFT Marketplace Development",
-    decs: "If you ever dreamt of having a dedicated Solana Blockchain NFT marketplace, we will help you create one over the Solana blockchain development services.",
-  },
-  {
-    num: "04",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-spl-token-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain SPL Token Development",
-    decs: "Our experts will help the clients tokenize their current assets with the help of Solana blockchain Solana Program Library tokens. It can be further seamlessly exchanged in any white-label DEX platform which improves security and high throughput.",
-  },
-  {
-    num: "05",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-wallet-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Wallet Development",
-    decs: "One of the biggest USPs of Comfygen is to provide you with your preferred blockchain mobile application development or web wallet development services for handling the Solana dApps or other associated blockchain development projects. This development will make your transaction much more secure and encrypted. ",
-  },
-  {
-    num: "06",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-smart-contract-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Smart Contract Development",
-    decs: "Our experts craft powerful and highly efficient smart contracts using Solana blockchain development. In case you have any project related to NFT Development Services, Web3 Development Services, and DeFi Development services, we provide you with the best auditing and Solana smart contract development solutions. ",
-  },
-  {
-    num: "07",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-defi-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Defi Development",
-    decs: "For you to leverage the benefits of DeFi development technology or to enthrall lenders and borrowers, we will be helping you build a diverse range of DeFi loan app development platforms or other such systems over the Solana blockchain development Services provider will help you out. ",
-  },
-  {
-    num: "08",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-node-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Node Development",
-    decs: "We can assist you in connecting with the Solana blockchain development network to create various blockchain development services or secure the network using our solana blockchain node development services.  With this, we will offer security configurations to restrict unauthorized access to the nodes.",
-  },
-  {
-    num: "09",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-game-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Game Development",
-    decs: "We have the proficiency to help you launch NFT-based game development to promote an ecosystem of interactive gaming. This development solution brings both transparency and immutability to gaming assets. ",
-  },
-  {
-    num: "10",
-    icon: (
-      <Image
-        src="https://www.comfygen.com/img/solana-blockchain-infrastructure-and-utility-development.webp"
-        alt="Casino Game Development Company in India"
-        width={60}
-        height={60}
-      />
-    ),
-    title: "Solana Blockchain Infrastructure & Utility Development",
-    decs: "By implementing the Solana blockchain development solutions, we can help you develop Web3 development solution infrastructure and utility as well . We have a multidisciplinary team of Solana developers who are experts in enterprise-grade development to offer a delightful user experience",
-  },
-];
+
 const Process = [
   {
     title: "Workshop discovery",
@@ -277,68 +146,13 @@ const technologyData = [
   }
 ];
 
-const LeadingSoftware = [
-  {
-    num: "01",
-    icon: <IconMessage2Code stroke={1.5} className="w-12 h-12 text-[#5556D1]" />,
-    title: "Programming Languages",
-    decs:
-      "Gain insight into the programming languages that our experts are proficient with for approaching your Solana blockchain development needs:",
-    pList: ["Rust", "C and C++", "ReactJS", "Vue.js", "MongoDB", "NextJS"],
-  },
-  {
-    num: "02",
-    icon: <IconBooks stroke={1.5} className="w-12 h-12 text-[#5556D1]" />, // Replace with appropriate icon
-    title: "Frameworks and Libraries",
-    decs:
-      "Our Solana blockchain developers are proficient with using diverse libraries and frameworks for creating dedicated applications that interact with the Solana blockchain development platform for manipulating data:",
-    pList: [
-      "Anchor",
-      "Solana Program Library (SPL)",
-      "Solana CLI",
-      "Solana JSON RPC API",
-    ],
-  },
-  {
-    num: "03",
-    icon: <IconTool stroke={1.5} className="w-12 h-12 text-[#5556D1]" />, // Replace with appropriate icon
-    title: "Testing and Deployment Tools",
-    decs:
-      "Once our Solana blockchain development approach is complete, we then take the next step towards testing and deploying the Solana blockchain development solution, for which we proactively use the below-specified tools:",
-    pList: [
-      "Jest",
-      "Mocha",
-      "Ganache",
-      "Solana Testnet",
-      "Solana Wallet Adapter",
-    ],
-  },
-  {
-    num: "04",
-    icon: <IconDatabase stroke={1.5} className="w-12 h-12 text-[#5556D1]" />, // Replace with appropriate icon
-    title: "Additional Tools and Technologies",
-    decs:
-      "These are the additional blockchain development technologies and tools that we have been using to help scale functionalities and ease the Solana blockchain development process:",
-    pList: [
-      "Phantom Wallet",
-      "Metaplex",
-      "Arweave",
-      "Alchemy",
-      "DigitalOcean Spaces",
-    ],
-  },
-];
+
 
 
 
 export default function Ecommerce(props) {
   let { initialData } = props;
   let {
-    Hire,
-    myList,
-    LatestTechno,
-    myList3,
-    TecnologisStack,
     ChooseComfy,
   } = JSON_DATA;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -351,26 +165,7 @@ export default function Ecommerce(props) {
 
  
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -402,77 +197,8 @@ export default function Ecommerce(props) {
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
-    }
-    ,
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-    ,
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
     },
+
 
     {
       "@context": "http://www.schema.org",
@@ -607,16 +333,16 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Solana Blockchain Development Company | DApps, NFT & DeFi Solutions
+       Top-Rated Solana Blockchain Development Service | Comfyen
+
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Solana blockchain development company delivering secure, scalable DApps, NFT marketplaces, DeFi platforms, and AI-powered crypto wallet solutions.
-"
+          content=" Comfygen is a leading Solana blockchain development company providing Solana blockchain development service for DApps, NFT marketplaces, DeFi platforms. "
         />
 
         {/* keywords */}
-        <meta name="keywords" content="Solana Blockchain Development, AI-Powered Solana DApps, NFT Marketplace Development on Solana, DeFi Platform Development on Solana, Smart Contract Development, Solana Token Development, Solana Wallet Development, Enterprise Solana Solutions, Solana Blockchain Consulting, Custom Blockchain Solutions" />
+        <meta name="keywords" content="Comfygen is a leading Solana blockchain development company providing Solana blockchain development service for DApps, NFT marketplaces, DeFi platforms. " />
 
 
         {/* canonical */}
@@ -713,7 +439,7 @@ export default function Ecommerce(props) {
 
         <HeroSectionForAllPages
           heading="Solana Blockchain Development Company"
-          ptag="Comfygen is a trusted Solana blockchain development company providing advanced solutions for businesses and startups globally. Leveraging Solana’s high-speed, low-cost blockchain, we build scalable and secure decentralized applications (DApps), NFT marketplaces, DeFi platforms, and crypto wallets. Our AI-powered blockchain solutions ensure optimized performance, intelligent analytics, and seamless user experiences."
+          ptag="Comfygen is the best Solana blockchain development company, specializing in providing blockchain app development solutions for businesses worldwide. We leverage Solana's high-speed, low-cost infrastructure to deliver scalable, secure, and innovative blockchain applications designed according to your business requirements. With proven expertise in Solana blockchain development, we help organizations take advantage of the fastest blockchain networks. Our team has experienced blockchain developers that combines technical expertise with industry best practices to create ana blockchain solutions that drive real business value."
           ptag1=""
           li="Expert Solana DApp Development"
           li1="NFT & Token Solutions"
@@ -855,6 +581,8 @@ export default function Ecommerce(props) {
             "Available to attend to the queries or questions of clients"
           ]}
         />
+
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

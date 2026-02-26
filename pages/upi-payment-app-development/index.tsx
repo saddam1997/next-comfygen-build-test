@@ -7,6 +7,7 @@ import JSON_DATA from "./json/upipaymentappdevelopment.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -115,24 +116,7 @@ const Process = [
 ];
 
 const jsonLdData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-    "addressLocality": "Jaipur, Rajasthan",
-    "addressRegion": "India",
-    "postalCode": "302006",
-    "telephone": "+91-958-786-7258"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-    "addressLocality": "Toronto",
-    "addressRegion": "Canada",
-    "postalCode": "M1G3S7",
-    "telephone": "+1 579-977-4475"
-  },
+  
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -368,7 +352,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="UPI Payment App Development Company"
-          ptag="Comfygen Technologies is a reliable UPI payment app development company helping businesses launch secure, easy-to-use digital payment solutions. Our UPI payment app development services focus on smooth transactions, intuitive design, and strong backend management. We create scalable apps that support QR code payments, bank integrations, and real-time processing, ensuring a seamless user experience for customers, merchants, and growing fintech platforms."
+          ptag="Comfygen Technologies is a trusted and reliable UPI payment app development company that helps businesses to launch secure digital payment solutions. Our developed UPI payment applications support QR code payments, multi-bank integrations, instant fund transfers, and real-time transaction processing. Even if you're a startup fintech company, established financial institution, or merchant platform, our UPI payment app development solutions are designed to meet the evolving needs of customers, businesses, and digital payment ecosystems."
           li="Secure & Fast UPI Transactions"
           li1="Easy Scan & Pay Experience"
           li2="Smart Admin Dashboard Control"
@@ -467,6 +451,7 @@ export default function Ecommerce(props) {
             "Flexible Hiring Models",
           ]}
         />
+        <ClientStories/>
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}

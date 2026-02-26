@@ -138,11 +138,11 @@ export default function News(props: any) {
     <>
       <Head>
         <title>
-          Best News App Development Company in India and USA
+       Best News App Development Company in India and USA | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen is a top news app development company in India & USA, delivering custom news applications, eNewspaper apps, and digital media solutions with real-time updates, advanced features, and 24/7 support."
+          content="Comfygen is a top news app development company, delivering custom news applications, News Website,  eNewspaper apps, and digital media solutions with real-time updates, advanced features."
         />
         <link
           rel="canonical"
@@ -190,8 +190,8 @@ export default function News(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top-rated News App Development Company in India & USA"
-            ptag="Empower your media business with next-gen digital news solutions built for speed, security, and seamless user experience. Comfygen is a top news app development company in India & USA, specializing in developing custom news mobile apps and news portal development for publishers, broadcasters, and digital media startups. We build feature-rich news apps that deliver real-time updates, personalized feeds, and powerful monetization tools."
+            heading="Top-Rated News App Development Company in India & USA"
+            ptag="Empower your media business with next-gen digital news solutions built for speed, security, and seamless user experience. Comfygen is a top news app development company in India & USA, specializing in developing custom news mobile apps and news website development for publishers, broadcasters, and digital media startups. We build feature-rich news apps and website that deliver real-time updates, personalized feeds, and powerful monetization tools. and also includes news reporter platform and admin platform."
             li="Innovative News App Solutions"
             li1="Expert Full-Stack Developers"
             li2="Customized News App Development"

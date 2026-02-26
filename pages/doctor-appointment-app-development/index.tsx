@@ -147,112 +147,6 @@ export default function Ecommerce(props) {
   const jsonLdData = [
 
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Doctor Appointment App Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Build custom doctor appointment apps with Comfygen Technologies. Feature-rich solutions include telemedicine, AI recommendations, online booking, and patient management for healthcare providers.",
-      "url": "https://www.comfygen.com/doctor-appointment-app-development",
-      "mainEntityOfPage": "https://www.comfygen.com/doctor-appointment-app-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "On-demand Doctor Appointment App Development",
-        "Telemedicine App Development",
-        "Hospital/Clinic Appointment App Development",
-        "Doctor Marketplace App Development",
-        "Doctor Consultation App Development",
-        "Doctor Consultation App Development",
-        "AI-Powered Doctor Appointment App Development",
-        "Blockchain Integration in Doctor Appointment App",
-        "IoT Integration in Doctor Appointment App"
-
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-
-      ]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB", "UAE"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-
-    {
       "@context": "http://www.schema.org",
       "@type": "Product",
       "brand": "Comfygen Technologies",
@@ -326,13 +220,13 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Doctor Appointment App Development Company | India & USA
+       Doctor Appointment App Development service for healthcare professionals
 
         </title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is a trusted doctor appointment app development company in India & USA, delivering secure telemedicine and booking apps."
+          content="Comfygen is a trusted doctor appointment app development company offering secure, scalable telemedicine and online Appointment solutions for the healthcare industry."
         />
 
 
@@ -383,8 +277,8 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Doctor Appointment App Development Company"
-          ptag="Comfygen Technologies is a trusted Doctor Appointment App Development Company in India and the USA, delivering secure and scalable healthcare app solutions. We specialize in doctor appointment app development, telemedicine app development, and online consultation app development for hospitals, clinics, and healthcare startups."
-          ptag1="Our custom doctor appointment booking apps simplify patient scheduling, enable real-time video consultations, support e-prescriptions, and ensure HIPAA-compliant data security. With AI, blockchain, and cloud integration, we help healthcare businesses enhance patient experience and streamline operations."
+          ptag="Comfygen Technologies is a reliable and top-rated doctor appointment app development company, delivering online appointment app development solutions for the healthcare industry."
+          ptag1="Comfyen’s custom doctor appointment app development service simplifies patient scheduling, allows real-time video consultations, provides e-prescriptions, and secures data. With AI, blockchain, and cloud integration, we help the healthcare industry to enhance patient experience and streamline operations. "
           btnName="Talk With Expert"
           li="AI-powered doctor search & smart appointment scheduling"
           li1="HIPAA-compliant, scalable healthcare app architecture"

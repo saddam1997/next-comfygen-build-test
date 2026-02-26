@@ -661,9 +661,9 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Grocery Delivery App Development Company"
-          subhead="Build a Scalable, High-Performance Grocery Delivery Platform"
-          ptag="At Comfygen, we build powerful, scalable, and revenue-driven grocery delivery app development solutions for startups, supermarkets, and enterprise retailers. If you're planning to enter the online grocery market or upgrade your existing system, our expert team delivers secure, high-performance platforms designed for long-term growth."
-          ptag1="As a trusted grocery delivery app development company, Comfygen focuses on building custom grocery applications that streamline operations, manage vendors efficiently, and provide customers with a seamless shopping experience from browsing to doorstep delivery."
+          subhead=""
+          ptag="Comfygen is a leading grocery delivery app development company specializing in providing powerful, scalable, and revenue-driven grocery app development solutions for startups, supermarkets, and enterprise retailers. Whether you're starting a new online grocery business or expanding your costume base of an existing grocery delivery business , our grocery delivery app development expert creates secure, high-performance grocery applications designed for sustainable growth and profitability."
+          ptag1="Our developed the best grocery delivery app provides top-notch features like streamline order management, optimize vendor coordination, and deliver seamless shopping experiences from product browsing to doorstep delivery."
           li="Real-time order tracking for customers and admins"
           li1="Smart inventory and order management system"
           li3="Push notifications for order updates and promotions"
