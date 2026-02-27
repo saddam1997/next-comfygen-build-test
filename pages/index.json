@@ -4,8 +4,7 @@
     "isHome": true,
     "ptag": "Are you looking to build powerful mobile application? Comfygen is a trusted AI-based mobile app & web development company. We design and build mobile apps and websites with AI-powered solutions tailored for startups, enterprises, and global businesses.",
     "ptag1": "",
-    "listItems" :[
-    ],
+    "listItems": [],
     "btnName": "Let's Discuss",
     "btnLink": "/contact-us",
     "altTag": "AI-Based Mobile App & Web Development Solustion",
@@ -23,6 +22,8 @@
     "link": "/about-us",
     "linkText": "Explore More"
   },
+
+  
   "customTestimonials": [
     {
       "text": "We hired Comfygen to build our eCommerce app. The design, performance, and support exceeded expectations. They’re a reliable partner for any serious brand looking to scale digitally.",
@@ -134,6 +135,8 @@
       "desc": "Yes, we develop complete delivery solutions with order management, tracking, payments, admin dashboards, ratings, loyalty programs, and analytics for restaurants, couriers, and users."
     }
   ],
+
+  
   "Portfoliodata": {
     "heading": "Explore Our Mobile App and Web Development Portfolio",
     "description": "Explore our collection of proven web and mobile app development projects built for startups, SMEs, and enterprises. From intuitive user experiences to scalable architectures, every solution demonstrates our focus on quality, creativity, and client success.",
@@ -319,6 +322,7 @@
       }
     ]
   },
+
   "CallToAction": {
     "heading": "Let’s Build the Future of Technology Together",
     "text": "At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future.",

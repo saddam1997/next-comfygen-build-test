@@ -10,7 +10,7 @@ interface CardItem {
 }
 
 interface FaqItem {
-  id?: string; // ✅ stable key support
+  id?: string; 
   title?: string;
   desc?: string;
   decs?: string;

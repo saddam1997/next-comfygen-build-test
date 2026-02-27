@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import style from "../scrollhidecss/scrollhide.module.css";
+import style from "./scrollhide.module.css";
 
 export default function ServicesTabs({ servicesData = [] }) {
   const [active, setActive] = useState(0);
@@ -17,12 +17,12 @@ export default function ServicesTabs({ servicesData = [] }) {
     });
 
     // ✅ Mobile smooth scroll
-    if (window.innerWidth < 1024 && tabRefs.current[active]) {
-      tabRefs.current[active].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    // if (window.innerWidth < 1024 && tabRefs.current[active]) {
+    //   tabRefs.current[active].scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start",
+    //   });
+    // }
 
   }, [active, servicesData]);
 
@@ -73,7 +73,7 @@ function MobileServiceContent({ service }) {
 
       {service.features?.length > 0 && (
         <ul className="space-y-2 mt-4">
-          {service.features.map((feature, index) => (
+          {service.features.map((feature:any, index:any) => (
             <li key={index}>
               <p dangerouslySetInnerHTML={{ __html: feature }} />
             </li>

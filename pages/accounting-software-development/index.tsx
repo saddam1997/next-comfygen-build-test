@@ -3,93 +3,95 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./accounting.json";
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+import ServicesComponet from "../../components/ServicesSection/ServicesComponet";
+import AboutComponent from "../../components/Abouts/AboutComponent";
 
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse w-full"></div>
-);
 
 // About Section
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 
 // Services Section
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 // Consultancy Approach
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+// const ConsultancyApproach = dynamic(
+//   () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
+//   { ssr: true }
+// );
+
+import ConsultancyApproach from "../../components/ConsultancyApproach"
+
+
 
 // Portfolio
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 
 // Process Section
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
-
+import ProcesSection from "../../components/ProcesSection"
 
 // Why Choose Us
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 // Delivery Section
 const DeliverySection = dynamic(
   () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 // Hire Developer
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 // Client Testimonials
 const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 // Faq Section
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 )
 
 
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 )
 
 
@@ -125,7 +127,7 @@ export default function ClinicalApp(props: any) {
         <link rel="canonical" href="https://www.comfygen.com/accounting-software-development" />
 
 
-       <meta name="keywords" content="Accounting Software Development, Accounting Software Development Company, Accounting Software Development Services, Custom Accounting Software Development, Accounting Software Developers, Accounting Software Development Solutions, Online Accounting Software Development, Cloud-Based Accounting Software Development, Accounting Software Development Company in India, Accounting Software Development India, Best Accounting Software Development Company, Accounting Software Development Agency" />
+        <meta name="keywords" content="Accounting Software Development, Accounting Software Development Company, Accounting Software Development Services, Custom Accounting Software Development, Accounting Software Developers, Accounting Software Development Solutions, Online Accounting Software Development, Cloud-Based Accounting Software Development, Accounting Software Development Company in India, Accounting Software Development India, Best Accounting Software Development Company, Accounting Software Development Agency" />
 
 
 
@@ -158,73 +160,14 @@ export default function ClinicalApp(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Custom Accounting Software Development Company in India"
-            ptag="Comfygen Technologies is a trusted accounting software development company in India delivering secure, scalable, and custom accounting solutions for startups, SMEs, and enterprises. Our expert financial software developers create cloud-based accounting software that automates financial operations, enhances accuracy, ensures GST compliance, and simplifies real-time reporting. Using modern technologies and industry best practices, we build accounting systems tailored to your unique business requirements."
-            li="Custom Accounting Solutions"
-            li1="Cloud-Based & Secure"
-            li2="GST-Compliant Systems"
-            li3="Automated Financial Management"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/accounting-software-development/Custom-Accounting-Software-Development-Company.webp"
-          />
-        </div>
-
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
-        <AboutSection
-          title="About Company"
-          heading="Why Your Business Needs Accounting Software?"
-          description1="Managing business finances manually takes time and often leads to errors. Today, most businesses are moving to accounting software to automate daily tasks like billing, expense tracking, and financial reporting. Studies show that businesses using accounting software save up to 40–50% time on accounting work compared to manual methods."
-          description2="The demand for accounting software is growing fast because companies want better control over their finances. More than 70% of small and medium businesses now use digital accounting systems to improve accuracy and make faster financial decisions. Real-time reports help business owners clearly understand profits, losses, and cash flow."
-          description3="With custom accounting software development, your business can reduce errors, stay tax-compliant, and manage finances from anywhere. It helps you work smarter, scale faster, and focus more on growth instead of manual calculations."
-          imageSrc="https://www.comfygen.com/comfygen-images/accounting-software-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[]}
-        />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <ConsultancyApproach Consultancy={JSON_DATA.consultancy} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide The Best Accounting Software Development Services For Businesses
-              </h2>
-              <p className="text-base text-center font-normal">
-                Our enterprise accounting management software development services deliver custom web, mobile, and cloud-based solutions that automate invoicing, payroll, taxation, and reporting. We ensure GST/VAT compliance, secure API integrations, AI-driven insights, continuous maintenance, and seamless system scalability for efficient financial management.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Accounting Software Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Our accounting software development process follows a structured, agile methodology to deliver secure, scalable, and efficient financial solutions. From planning and design to deployment and maintenance, we ensure high-quality custom software that meets your business requirements and supports seamless financial operations.
-              </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
 
         <section className="py-8">
           <Portfolio

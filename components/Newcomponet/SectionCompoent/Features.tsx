@@ -14,11 +14,11 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
 
       {/* HEADER */}
       <div className="text-center space-y-2 max-w-6xl mx-auto px-4">
-        <h2 className="xl:text-4xl text-3xl font-bold text-black">
+        <h2 className="xl:text-4xl text-xl font-bold text-black">
           {heading}
         </h2>
         <p
-          className="text-black"
+          className="text-black lg:tsxt-lg text-sm"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
@@ -27,16 +27,16 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
       <div className="block lg:hidden">
 
         {/* BUTTON ROW */}
-        <div className="mt-8 px-4 overflow-hidden w-full">
-          <div className="flex gap-3 p-4 overflow-x-auto scrollbar-hide">
+        <div className="mt-8 px-1 overflow-hidden w-full">
+          <div className="grid grid-cols-3 gap-4 overflow-x-auto scrollbar-hide">
             {featuresData.map((item: any) => (
               <button
                 key={item.id}
                 onClick={() => setActive(item)}
-                className={`w-full py-2.5 rounded-full border text-xs font-medium transition
+                className={`w-full py-1 rounded-full border text-xs font-medium transition
                   ${active?.id === item.id
                     ? "bg-[#5556D1] text-white border-[#5556D1]"
-                    : "bg-white border-gray-300"
+                    : "bg-white border-gray-300 py-1 p-1"
                   }`}
               >
                 {item.title}
@@ -47,7 +47,34 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
 
         {/* CONTENT */}
 
-        <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
+        {active && (
+          <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
+            <div className="grid grid-cols-1 gap-8 items-center">
+
+              <Image
+                src={active.img}
+                alt={active.title}
+                width={640}
+                height={360}
+                loading="lazy"
+                sizes="100vw"
+                className="rounded-lg border"
+              />
+
+              <div className="space-y-4">
+                {active.additionalDetails?.map((d: any, i: number) => (
+                  <div key={i} className="flex gap-3 text-black">
+                    <ImArrowRight className="text-[#5556D1] mt-1" />
+                    <span dangerouslySetInnerHTML={{ __html: d.details }} />
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </div>
+        )}
+
+        {/* <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
           {featuresData.map((item: any) => (
             <div
               key={item.id}
@@ -74,7 +101,7 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* {active && (
           <div className="mt-8 px-3 space-y-6">
@@ -129,34 +156,33 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
 
         {/* DETAIL SECTION */}
         <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
-  {featuresData.map((item: any) => (
-    <div
-      key={item.id}
-      className={`${
-        active?.id === item.id ? "grid" : "hidden"
-      } grid-cols-2 gap-8 items-center`}
-    >
-      <Image
-        src={item.img}
-        alt={item.title}
-        width={640}
-        height={360}
-        loading="lazy"
-        sizes="50vw"
-        className="rounded-lg border"
-      />
+          {featuresData.map((item: any) => (
+            <div
+              key={item.id}
+              className={`${active?.id === item.id ? "grid" : "hidden"
+                } grid-cols-2 gap-8 items-center`}
+            >
+              <Image
+                src={item.img}
+                alt={item.title}
+                width={640}
+                height={360}
+                loading="lazy"
+                sizes="50vw"
+                className="rounded-lg border"
+              />
 
-      <div className="space-y-4">
-        {item.additionalDetails?.map((d: any, i: number) => (
-          <div key={i} className="flex gap-3 text-black">
-            <ImArrowRight className="text-[#5556D1] mt-1" />
-            <span dangerouslySetInnerHTML={{ __html: d.details }} />
-          </div>
-        ))}
-      </div>
-    </div>
-  ))}
-</div>
+              <div className="space-y-4">
+                {item.additionalDetails?.map((d: any, i: number) => (
+                  <div key={i} className="flex gap-3 text-black">
+                    <ImArrowRight className="text-[#5556D1] mt-1" />
+                    <span dangerouslySetInnerHTML={{ __html: d.details }} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
         {/* {active && (
           <div className="mt-12 grid grid-cols-2 gap-8 items-center mx-auto 2xl:w-10/12 w-11/12">
             <Image

@@ -2,76 +2,54 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-
+const Header = dynamic(
+  () => import("../components/Newcomponet/layout/Header"),
+  { ssr: true }
+);
+import HeroSectionforHome from "../components/HeroSectionforHome"
 
 const Milestones = dynamic(
   () => import("../components/Newcomponet/comman/Milestones"),
-  {
-    ssr: true,
-  }
-);
-
-// import PremiumCaseSlider from "../components/Newcomponet/PremiumCaseSlider"
-
-
-import HeroSection from "../components/HeroSection";
-
-/* ======================
-   CRITICAL (Above-the-fold)
-====================== */
-const Header = dynamic(
-  () => import("../components/Newcomponet/layout/Header"),
-  {
-    ssr: true,
-  }
-);
-
-// import PremiumCaseSlider from "../components/Newcomponet/PremiumCaseSlider"
-
-/* ======================
-   SEO IMPORTANT (SSR)
-====================== */
-const AboutSection = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/AboutSection"),
   { ssr: true }
 );
-
-const ServicesSec = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true }
-);
-
-/* ======================
-   BELOW THE FOLD (No SSR)
-====================== */
-const Portfolio = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/Portfolio"),
+const ServicesComponet = dynamic(
+  () => import("../components/ServicesSection/ServicesComponet"),
   { ssr: true }
 );
 
 
-const CallToAction = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/CallToAction"),
+const AboutComponent = dynamic(
+  () => import("../components/Abouts/AboutComponent"),
   { ssr: true }
 );
 
-const IndustriesServe = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/IndustriesServe"),
+const PortfolioSection = dynamic(
+  () => import("../components/PortfolioSection"),
   { ssr: true }
 );
 
-const ProcessSec = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/ProcessSec"),
+const CallToActionSection = dynamic(
+  () => import("../components/CallToActionSection"),
   { ssr: true }
 );
 
-const TechStack = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/TechStack"),
+const IndustriesSection = dynamic(
+  () => import("../components/IndustriesSection"),
   { ssr: true }
 );
 
-const WhyChoose = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/WhyChooseUs"),
+const ProcesSection = dynamic(
+  () => import("../components/ProcesSection"),
+  { ssr: true }
+);
+
+const TechSection = dynamic(
+  () => import("../components/TechSection"),
+  { ssr: true }
+);
+
+const WhyChooseSection = dynamic(
+  () => import("../components/WhyChooseSection"),
   { ssr: true }
 );
 
@@ -80,32 +58,31 @@ const ClientStories = dynamic(
   { ssr: true }
 );
 
-const HireDeveloper = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/HireDeveloper"),
+const HireSection = dynamic(
+  () => import("../components/HireSection"),
   { ssr: true }
 );
 
-const ClientTestimonials = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+const TestimonialSection = dynamic(
+  () => import("../components/TestimonialSection"),
   { ssr: true }
 );
 
-const Faq = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/Faq"),
+const FaqSection = dynamic(
+  () => import("../components/FaqSection"),
   { ssr: true }
 );
+
+
 
 const BlogSection = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/BlogSection"),
-  {
-    loading: () => <div className="h-64 bg-gray-100 animate-pulse" />,
-  }
+  () => import("../components/BlogSection"),
+  {ssr: true}
 );
+
 
 export default function Home(props: any) {
   let { initialData } = props;
-
-
 
   return (
     <>
@@ -207,131 +184,20 @@ export default function Home(props: any) {
       </div>
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className=" ">
-          <HeroSection
-            heading={JSON_DATA.Herosection.heading}
-            isHome={true}
-            ptag={JSON_DATA.Herosection.ptag}
-            btnName="Let's Discuss"
-            btnLink="/contact-us"
-            altTag="AI-Based Mobile App & Web Development Solustion"
-            bgImage={JSON_DATA.Herosection.bgImage}
-          />
-
-
-        </div>
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
-
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                {JSON_DATA.ServicesData.heading}
-              </h2>
-              <p className="text-base text-center font-normal">
-                {JSON_DATA.ServicesData.description}
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.ServicesData.services} />
-            </div>
-          </div>
-        </section>
-
-        {/* <PremiumCaseSlider /> */}
-
-        <AboutSection
-          title="About Company"
-          altTag="Scalable Mobile App and Web Development"
-          heading={JSON_DATA.AboutSection.heading}
-          description1={JSON_DATA.AboutSection.description1}
-          description2={JSON_DATA.AboutSection.description2}
-          points={[]}
-          imageSrc={JSON_DATA.AboutSection.imageSrc}
-          link={JSON_DATA.AboutSection.link}
-          linkText={JSON_DATA.AboutSection.linkText}
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA?.Portfoliodata.portfolio}
-            heading={JSON_DATA?.Portfoliodata.heading}
-            description={JSON_DATA?.Portfoliodata.description}
-          />
-        </section>
-
-        <CallToAction
-          heading={JSON_DATA.CallToAction.heading}
-          text={JSON_DATA.CallToAction.text}
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc={JSON_DATA.CallToAction.imageSrc}
-          imageAlt={JSON_DATA.CallToAction.imageAlt}
-        />
-
-
-        <IndustriesServe
-          heading={JSON_DATA.Industries.heading}
-          description={JSON_DATA.Industries.description}
-          sliderData={JSON_DATA.Industries.IndustriesServe}
-        />
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-
-                {JSON_DATA?.ProcessData.heading}
-              </h2>
-              <p className="text-base font-normal mt-2">
-                {JSON_DATA?.ProcessData.description}
-              </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA?.ProcessData.Process} />
-          </div>
-        </section>
-
-        <TechStack
-          customTechData={null}
-          title={JSON_DATA.TechStack.title}
-          description={JSON_DATA.TechStack.description}
-        />
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-
-        <div className="py-5">
-          <ClientStories />
-        </div>
-
-        <HireDeveloper
-          heading={JSON_DATA.HireDeveloper.heading}
-          text={JSON_DATA.HireDeveloper.text}
-          buttonText={JSON_DATA.HireDeveloper.buttonText}
-          buttonLink={JSON_DATA.HireDeveloper.buttonLink}
-          imageSrc={JSON_DATA.HireDeveloper.imageSrc}
-          imageAlt={JSON_DATA.HireDeveloper.imageAlt}
-          listItems={JSON_DATA.HireDeveloper.listItems}
-        />
-
-        <ClientTestimonials
-          heading="Client Testimonial"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <IndustriesSection Industries={JSON_DATA.Industries} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <TechSection TechStack={JSON_DATA.TechStack} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <ClientStories />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
       </div>
     </>

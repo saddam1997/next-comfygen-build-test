@@ -32,7 +32,7 @@ const DeliverySectionClient = ({ title, description, apps }:any) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
-          {apps.map((app, index) => (
+          {apps.map((app:any, index:any) => (
             <div
               key={index}
               className={`group relative bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition-all duration-500 hover:-translate-y-2 border border-gray-100
@@ -50,7 +50,7 @@ const DeliverySectionClient = ({ title, description, apps }:any) => {
               </div>
 
               <div className="absolute inset-0 bg-white translate-y-[80%] group-hover:translate-y-0 group-hover:py-2 transition-transform duration-500 ease-out flex flex-col px-2">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">
                   {app.link ? (
                     <Link href={app.link}>{app.title}</Link>
                   ) : (
@@ -59,7 +59,7 @@ const DeliverySectionClient = ({ title, description, apps }:any) => {
                 </h3>
 
                 <p
-                  className="text-gray-600 text-sm leading-relaxed"
+                  className="text-gray-600 pt-8 text-sm leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: app.description }}
                 />
               </div>

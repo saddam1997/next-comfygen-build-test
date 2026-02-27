@@ -46,7 +46,7 @@ export default function HeroSection({ herosection }: any) {
             {/* ================= CONTENT ================= */}
             <div className=" relative   w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
             >
-                <div className="w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6"
+                <div className="w-full max-w-full lg:max-w-[65%]  xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-2"
                 >
                     {/* ================= HEADING ================= */}
                     {herosection.isHome ? (
@@ -62,16 +62,18 @@ export default function HeroSection({ herosection }: any) {
                                 {herosection.heading}
                             </Heading>
 
+
+
+
                         </>
                     )}
+
 
                     {herosection?.subhead && (
                         <Paragraph size="sm" className="text-white">
                             <span className="font-semibold"> {herosection.subhead}</span>
                         </Paragraph>
                     )}
-
-
 
 
                     {/* ================= DESCRIPTION ================= */}
@@ -113,7 +115,7 @@ export default function HeroSection({ herosection }: any) {
                     <HeroClientCTA />
                 </div>
             </div>
-           
+
         </section>
     );
 }
