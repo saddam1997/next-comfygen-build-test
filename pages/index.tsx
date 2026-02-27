@@ -8,6 +8,7 @@ const Header = dynamic(
 );
 import HeroSectionforHome from "../components/HeroSectionforHome"
 
+
 const Milestones = dynamic(
   () => import("../components/Newcomponet/comman/Milestones"),
   { ssr: true }
@@ -184,6 +185,9 @@ export default function Home(props: any) {
       </div>
 
       <div className="overflow-hidden lg:pt-[110px]">
+
+
+
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

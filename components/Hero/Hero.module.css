@@ -1,0 +1,77 @@
+.clip_triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* ===== Smooth Float ===== */
+@keyframes floatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ===== Slow Rotate ===== */
+@keyframes rotateSlow {
+from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== Wave Drift ===== */
+@keyframes waveDrift {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(40px); }
+  100% { transform: translateX(0px); }
+}
+
+/* ===== Fade Up ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.float_slow { animation: floatSlow 6s ease-in-out infinite; }
+.rotate_slow {  animation: rotateSlow 18s linear infinite; }
+.wave_drift { animation: waveDrift 14s ease-in-out infinite; }
+.fade_up { animation: fadeUp 1s ease forwards; }
+
+
+
+/* app/globals.css */
+
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes waveDrift {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(40px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.animate_floatSlow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate_rotateSlow {
+  animation: rotateSlow 18s linear infinite;
+}
+
+.animate_waveDrift {
+  animation: waveDrift 14s ease-in-out infinite;
+}
+
+.animate_fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
