@@ -28,18 +28,21 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
 
         {/* BUTTON ROW */}
         <div className="mt-8 px-1 overflow-hidden w-full">
-          <div className="grid grid-cols-3 gap-4 overflow-x-auto scrollbar-hide">
+          <div className={`grid grid-cols-${Math.min(
+            grid,
+            4
+          )} gap-2 overflow-x-auto scrollbar-hide`}>
             {featuresData.map((item: any) => (
               <button
                 key={item.id}
                 onClick={() => setActive(item)}
-                className={`w-full py-1 rounded-full border text-xs font-medium transition
+                className={`w-full py-2 rounded-full border text-xs font-medium transition
                   ${active?.id === item.id
                     ? "bg-[#5556D1] text-white border-[#5556D1]"
                     : "bg-white border-gray-300 py-1 p-1"
                   }`}
               >
-                {item.title}
+                {item.title?.split(" ")[0]}
               </button>
             ))}
           </div>

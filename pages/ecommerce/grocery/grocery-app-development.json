@@ -189,7 +189,7 @@
     },
     {
       "id": 2,
-      "title": "Store/Vendor Panel",
+      "title": "Store / Vendor Panel",
       "icon": "<i className='fas fa-scissors text-4xl'></i>",
       "img": "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-store.webp",
       "additionalDetails": [

@@ -4,26 +4,25 @@ import { useState, useEffect, useRef } from "react";
 import style from "../scrollhidecss/scrollhide.module.css";
 
 export default function ServicesTabs({ servicesData = [] }) {
-  const [active, setActive] = useState(0);
-  const tabRefs = useRef<any>([]);
 
+  const [active, setActive] = useState<number | null>(null);
+  const tabRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // ✅ Detect desktop on mount
   useEffect(() => {
-    // Desktop toggle
+    if (window.innerWidth >= 1024) {
+      setActive(0); // desktop default open
+    }
+  }, []);
+
+  // Desktop toggle
+  useEffect(() => {
     servicesData.forEach((_, index) => {
       const el = document.getElementById(`service-content-${index}`);
       if (el) {
         el.style.display = index === active ? "block" : "none";
       }
     });
-
-    // ✅ Mobile smooth scroll
-    if (window.innerWidth < 1024 && tabRefs.current[active]) {
-      tabRefs.current[active].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-
   }, [active, servicesData]);
 
   return (
@@ -38,11 +37,14 @@ export default function ServicesTabs({ servicesData = [] }) {
           }}
         >
           <button
-            onClick={() => setActive(index)}
-            className={`border px-4 py-3 w-full font-medium text-left ${index === active
-              ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
-              : "text-black border-[#00000018] bg-white"
-              }`}
+            onClick={() =>
+              setActive(active === index ? null : index) // mobile toggle
+            }
+            className={`border px-4 py-3 w-full font-medium text-left ${
+              index === active
+                ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
+                : "text-black border-[#00000018] bg-white"
+            }`}
             dangerouslySetInnerHTML={{ __html: service.title }}
           />
 
