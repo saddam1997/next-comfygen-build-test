@@ -17,7 +17,7 @@ export default function HeroSection({ herosection }: any) {
 
 
     return (
-        <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
+        <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-8 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
 
         >
 

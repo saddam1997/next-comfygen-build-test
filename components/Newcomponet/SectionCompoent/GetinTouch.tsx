@@ -2,7 +2,12 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 
 import { MapPin, Phone } from "lucide-react";
-const ContactFrom = dynamic(() => import("../comman/ContactFrom"), { ssr: false });
+const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
+    ssr: false,
+    loading: () => (
+      <div className="min-h-[500px] w-full" />
+    ),
+  });
 
 const locations = [
   {

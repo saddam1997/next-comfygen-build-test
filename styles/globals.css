@@ -18,6 +18,14 @@ body {
   vertical-align: middle;
 }
 
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 
 
 @keyframes move {

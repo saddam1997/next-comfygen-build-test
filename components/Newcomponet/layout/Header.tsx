@@ -6,16 +6,23 @@ import MobileNav from "./MobileNav";
 
 export default function Header(props: any) {
   return (
-    <header>
-      <div className="hidden lg:block">
-    
-       <DesktopNav />
-       {/* <DesktopNavnew/> */}
-      </div>
-      <div className="block lg:hidden">
-       <MobileNav />
-      </div>
-    </header>
+    <>
+
+      <>
+        <header className=" w-full">
+          <div className="hidden lg:block">
+            <DesktopNav />
+          </div>
+          <div className="block lg:hidden">
+            <MobileNav />
+          </div>
+        </header>
+
+        {/* Spacer */}
+        <div className=" lg:h-[110px]" />
+      </>
+     
+    </>
   );
 }
 

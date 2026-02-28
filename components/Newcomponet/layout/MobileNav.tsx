@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
 import { RiBitCoinLine, RiPhoneLockLine } from "react-icons/ri";
@@ -716,6 +716,25 @@ export default function MobileNav(props: any) {
     setShowNava(false);
   }, []);
 
+
+  useEffect(() => {
+  if (showNava) {
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+  } else {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  };
+}, [showNava]);
+
+  
+
   // ✅ Memoized list item renderer for better performance
   const renderListItems = useCallback((items: any[], navIndex: number) => {
     return items.map((elem: any) => (
@@ -739,12 +758,12 @@ export default function MobileNav(props: any) {
   }, [handleNavToggle, handleLinkClick]);
 
   // ✅ Navigation section component for better code organization
-  const NavSection = useCallback(({ 
-    title, 
-    icon: Icon, 
-    navIndex, 
-    children 
-  }: { 
+  const NavSection = useCallback(({
+    title,
+    icon: Icon,
+    navIndex,
+    children
+  }: {
     title: string;
     icon: any;
     navIndex: number;
@@ -753,9 +772,8 @@ export default function MobileNav(props: any) {
     <div>
       <div
         onClick={() => handleNavToggle(navIndex)}
-        className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${
-          showNav === navIndex ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
-        }`}
+        className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${showNav === navIndex ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
+          }`}
       >
         <div className="flex items-center space-x-2">
           <Icon className="text-[#212121]" size={22} />
@@ -763,15 +781,13 @@ export default function MobileNav(props: any) {
         </div>
         <MdKeyboardArrowDown
           size={30}
-          className={`transition-transform duration-300 ${
-            showNav === navIndex ? "rotate-180" : "rotate-0"
-          }`}
+          className={`transition-transform duration-300 ${showNav === navIndex ? "rotate-180" : "rotate-0"
+            }`}
         />
       </div>
       <div
-        className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${
-          showNav === navIndex ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === navIndex ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         {children}
       </div>
@@ -779,258 +795,254 @@ export default function MobileNav(props: any) {
   ), [showNav, handleNavToggle]);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-      <nav className="z-20 flex items-center justify-between py-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-        <div className="flex items-center flex-shrink-0 text-[#212121]">
-          <Link href="/" passHref className="relative">
-            <Image
-              src="/svg/Logo1.svg"
-              alt="Comfygen - Mobile App Development Company"
-              width={180}
-              height={51}
-              priority
-              className="object-contain"
-            />
-          </Link>
-        </div>
-        
-        {/* Menu Button */}
-        <button
-          onClick={toggleSlideover}
-          className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden hover:bg-slate-200 transition-colors duration-200"
-          aria-label={showNava ? "Close menu" : "Open menu"}
-        >
-          {showNava ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
-        </button>
-        
-        {/* Slideover Menu */}
-        <div
-          className={`fixed inset-0 w-full h-full transition-opacity duration-300 ${
-            showNava 
-              ? "visible opacity-100" 
-              : "invisible opacity-0"
-          }`}
-        >
-          {/* Backdrop */}
-          <div
+    <>
+      <div className="h-[70px]" />
+      <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+        <nav className="z-20 flex items-center justify-between py-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="flex items-center flex-shrink-0 text-[#212121]">
+            <Link href="/" passHref className="relative">
+              <Image
+                src="/svg/Logo1.svg"
+                alt="Comfygen - Mobile App Development Company"
+                width={180}
+                height={51}
+                priority
+                className="object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* Menu Button */}
+          <button
             onClick={toggleSlideover}
-            className={`absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 ${
-              showNava ? "opacity-50" : "opacity-0"
-            }`}
-          />
-          
-          {/* Slideover Panel */}
-          <div
-            className={`md:w-96 w-80 bg-white h-full absolute right-0 transition-transform duration-300 ease-out overflow-y-auto ${
-              showNava ? "translate-x-0" : "translate-x-full"
-            }`}
+            className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 xl:hidden hover:bg-slate-200 transition-colors duration-200"
+            aria-label={showNava ? "Close menu" : "Open menu"}
           >
-            {/* Header */}
-            <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-3 bg-white border-b border-gray-100 shadow-sm">
-              <div className="text-[#212121] text-lg font-semibold">Menu</div>
-              <button
-                onClick={toggleSlideover}
-                className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 transition-colors duration-200"
-                aria-label="Close menu"
-              >
-                <VscChromeClose size={24} className="text-[#212121]" />
-              </button>
-            </div>
-            
-            {/* Navigation Content */}
-            <div className="font-medium text-[#212121] divide-y divide-gray-100">
-              {/* Home Link */}
-              <div>
-                <Link href="/" passHref onClick={handleLinkClick}>
-                  <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-gray-50 cursor-pointer transition-colors duration-200">
-                    <FiHome className="text-[#212121]" size={22} />
-                    <span>Home</span>
-                  </div>
-                </Link>
+            {showNava ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
+          </button>
+
+          {/* Slideover Menu */}
+          <div
+            className={`fixed inset-0 w-full h-full transition-opacity duration-300 ${showNava
+                ? "visible opacity-100"
+                : "invisible opacity-0"
+              }`}
+          >
+            {/* Backdrop */}
+            <div
+              onClick={toggleSlideover}
+              className={`absolute inset-0 w-full h-full transition-all duration-500 ease-out bg-gray-900 ${showNava ? "opacity-50" : "opacity-0"
+                }`}
+            />
+
+            {/* Slideover Panel */}
+            <div
+              className={`md:w-96 w-80 bg-white h-full absolute right-0 transition-transform duration-300 ease-out overflow-y-auto ${showNava ? "translate-x-0" : "translate-x-full"
+                }`}
+            >
+              {/* Header */}
+              <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-3 bg-white border-b border-gray-100 shadow-sm">
+                <div className="text-[#212121] text-lg font-semibold">Menu</div>
+                <button
+                  onClick={toggleSlideover}
+                  className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 transition-colors duration-200"
+                  aria-label="Close menu"
+                >
+                  <VscChromeClose size={24} className="text-[#212121]" />
+                </button>
               </div>
 
-              {/* Development Section */}
-              <NavSection title="Development" icon={RiPhoneLockLine} navIndex={1}>
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Mobile App Development
-                    </p>
-                    <div className="p-2 space-y-2 text-sm font-medium">
-                      {renderListItems(MobileApp, 1)}
+              {/* Navigation Content */}
+              <div className="font-medium text-[#212121] divide-y divide-gray-100">
+                {/* Home Link */}
+                <div>
+                  <Link href="/" passHref onClick={handleLinkClick}>
+                    <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-gray-50 cursor-pointer transition-colors duration-200">
+                      <FiHome className="text-[#212121]" size={22} />
+                      <span>Home</span>
                     </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Web Development
-                    </p>
-                    <div className="space-y-2 text-sm font-medium">
-                      {renderListItems(WebApp, 1)}
-                    </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Stack Development
-                    </p>
-                    <div className="space-y-2 text-sm font-medium">
-                      {renderListItems(Stack, 1)}
-                    </div>
-                  </div>
-                </ul>
-              </NavSection>
-
-              {/* Blockchain Section */}
-              <NavSection title="Blockchain" icon={RiBitCoinLine} navIndex={2}>
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Blockchain Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(Blockchain, 2)}
-                    </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Token Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(Token, 2)}
-                    </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Other Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(Other, 2)}
-                    </div>
-                  </div>
-                </ul>
-              </NavSection>
-
-              {/* Industries Section */}
-              <NavSection title="Industries" icon={LiaIndustrySolid} navIndex={6}>
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Ecommerce Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(EcommerceApp, 6)}
-                    </div>
-                  </div>
-                </ul>
-              </NavSection>
-
-              {/* AI Development Section */}
-              <NavSection title="AI Development" icon={FaLaptopCode} navIndex={5}>
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <div className="p-3 space-y-2 text-sm font-medium">
-                    {renderListItems(Ai, 5)}
-                  </div>
-                </ul>
-              </NavSection>
-
-              {/* Games Section */}
-              <NavSection title="Games" icon={BiGame} navIndex={3}>
-                <ul className="grid grid-cols-1 gap-2 p-4">
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Game Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(Game, 3)}
-                    </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Sports App Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(Betting, 3)}
-                    </div>
-                  </div>
-                  <div>
-                    <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                      <BsDot className="text-[#212121] mr-1" size={22} />
-                      Game API Development
-                    </p>
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {renderListItems(GameApi, 3)}
-                    </div>
-                  </div>
-                </ul>
-              </NavSection>
-
-              {/* Company Section */}
-              <div>
-                <div
-                  onClick={() => handleNavToggle(4)}
-                  className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${
-                    showNav === 4 ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
-                  }`}
-                >
-                  <div className="flex items-center space-x-2">
-                    <HiOutlineOfficeBuilding className="text-[#212121]" size={22} />
-                    <span>Our Company</span>
-                  </div>
-                  <MdKeyboardArrowDown
-                    size={30}
-                    className={`transition-transform duration-300 ${
-                      showNav === 4 ? "rotate-180" : "rotate-0"
-                    }`}
-                  />
+                  </Link>
                 </div>
-                <div
-                  className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${
-                    showNav === 4 ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
-                  }`}
-                >
+
+                {/* Development Section */}
+                <NavSection title="Development" icon={RiPhoneLockLine} navIndex={1}>
                   <ul className="grid grid-cols-1 gap-2 p-4">
-                    <div className="p-3 space-y-2 text-sm font-medium">
-                      {Company.map((elem: any) => (
-                        <li
-                          key={elem.num}
-                          className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
-                        >
-                          <Link
-                            onClick={handleLinkClick}
-                            href={elem.url}
-                            passHref
-                            className="block"
-                          >
-                            {elem.name}
-                          </Link>
-                        </li>
-                      ))}
-                      <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4">
-                        <a
-                          href="https://www.comfygen.com/blog/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={handleLinkClick}
-                          className="block"
-                        >
-                          Our Blog
-                        </a>
-                      </li>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Mobile App Development
+                      </p>
+                      <div className="p-2 space-y-2 text-sm font-medium">
+                        {renderListItems(MobileApp, 1)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Web Development
+                      </p>
+                      <div className="space-y-2 text-sm font-medium">
+                        {renderListItems(WebApp, 1)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Stack Development
+                      </p>
+                      <div className="space-y-2 text-sm font-medium">
+                        {renderListItems(Stack, 1)}
+                      </div>
                     </div>
                   </ul>
-                </div>
-              </div>
+                </NavSection>
 
-              {/* Get Quote Button */}
-              {/* <div className="flex items-center justify-center py-8 px-8 w-full">
+                {/* Blockchain Section */}
+                <NavSection title="Blockchain" icon={RiBitCoinLine} navIndex={2}>
+                  <ul className="grid grid-cols-1 gap-2 p-4">
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Blockchain Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(Blockchain, 2)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Token Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(Token, 2)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Other Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(Other, 2)}
+                      </div>
+                    </div>
+                  </ul>
+                </NavSection>
+
+                {/* Industries Section */}
+                <NavSection title="Industries" icon={LiaIndustrySolid} navIndex={6}>
+                  <ul className="grid grid-cols-1 gap-2 p-4">
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Ecommerce Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(EcommerceApp, 6)}
+                      </div>
+                    </div>
+                  </ul>
+                </NavSection>
+
+                {/* AI Development Section */}
+                <NavSection title="AI Development" icon={FaLaptopCode} navIndex={5}>
+                  <ul className="grid grid-cols-1 gap-2 p-4">
+                    <div className="p-3 space-y-2 text-sm font-medium">
+                      {renderListItems(Ai, 5)}
+                    </div>
+                  </ul>
+                </NavSection>
+
+                {/* Games Section */}
+                <NavSection title="Games" icon={BiGame} navIndex={3}>
+                  <ul className="grid grid-cols-1 gap-2 p-4">
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Game Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(Game, 3)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Sports App Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(Betting, 3)}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
+                        <BsDot className="text-[#212121] mr-1" size={22} />
+                        Game API Development
+                      </p>
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {renderListItems(GameApi, 3)}
+                      </div>
+                    </div>
+                  </ul>
+                </NavSection>
+
+                {/* Company Section */}
+                <div>
+                  <div
+                    onClick={() => handleNavToggle(4)}
+                    className={`flex justify-between p-3 items-center px-6 cursor-pointer transition-colors duration-200 ${showNav === 4 ? "bg-gray-100" : "bg-transparent hover:bg-gray-50"
+                      }`}
+                  >
+                    <div className="flex items-center space-x-2">
+                      <HiOutlineOfficeBuilding className="text-[#212121]" size={22} />
+                      <span>Our Company</span>
+                    </div>
+                    <MdKeyboardArrowDown
+                      size={30}
+                      className={`transition-transform duration-300 ${showNav === 4 ? "rotate-180" : "rotate-0"
+                        }`}
+                    />
+                  </div>
+                  <div
+                    className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === 4 ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                      }`}
+                  >
+                    <ul className="grid grid-cols-1 gap-2 p-4">
+                      <div className="p-3 space-y-2 text-sm font-medium">
+                        {Company.map((elem: any) => (
+                          <li
+                            key={elem.num}
+                            className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
+                          >
+                            <Link
+                              onClick={handleLinkClick}
+                              href={elem.url}
+                              passHref
+                              className="block"
+                            >
+                              {elem.name}
+                            </Link>
+                          </li>
+                        ))}
+                        <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4">
+                          <a
+                            href="https://www.comfygen.com/blog/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={handleLinkClick}
+                            className="block"
+                          >
+                            Our Blog
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Get Quote Button */}
+                {/* <div className="flex items-center justify-center py-8 px-8 w-full">
                 <Link
                   href="/contact-us"
                   passHref
@@ -1042,11 +1054,14 @@ export default function MobileNav(props: any) {
                   </div>
                 </Link>
               </div> */}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+
+    </>
+
   );
 }
 
