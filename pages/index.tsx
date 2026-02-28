@@ -182,14 +182,14 @@ export default function Home(props: any) {
       </Head>
       <div>
         <Header />
-      </div>
+      </div> 
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
 
 
 
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <Milestones />
+         <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
@@ -202,7 +202,7 @@ export default function Home(props: any) {
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
         <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} /> 
       </div>
     </>
   );
