@@ -18,8 +18,6 @@ export default function Header(props: any) {
           </div>
         </header>
 
-        {/* Spacer */}
-        <div className=" lg:h-[110px]" />
       </>
      
     </>
