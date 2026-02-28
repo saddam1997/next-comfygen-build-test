@@ -185,9 +185,6 @@ export default function Home(props: any) {
       </div> 
 
       <div className="overflow-hidden ">
-
-
-
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
          <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
