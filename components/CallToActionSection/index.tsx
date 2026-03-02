@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 
 export default function CallToAction({ CallToAction }:any) {
@@ -13,15 +15,10 @@ export default function CallToAction({ CallToAction }:any) {
 
                     {/* ===== Text Section ===== */}
                     <div className="space-y-3 lg:w-[70%] w-full">
-                        <h2 className="md:text-2xl text-sm text-white font-semibold">
-                            {CallToAction?.heading}
-                        </h2>
 
-                        {/* Trusted CMS content */}
-                        <p
-                            className="text-base text-white"
-                            dangerouslySetInnerHTML={{ __html: CallToAction?.text }}
-                        />
+                        <HeadingTwo color={"white"} text={CallToAction?.heading} />
+                        <ParagraphText color={"white"} text={CallToAction?.text} />
+                    
 
                         <div className="mt-7">
                             <Link

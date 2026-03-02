@@ -3,6 +3,8 @@ import Image from "next/image";
 import React from "react";
 
 import { MdOutlineNavigateNext } from "react-icons/md";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 export default function BlogSection(props: any) {
   return (
@@ -11,15 +13,14 @@ export default function BlogSection(props: any) {
 
         {/* ================= HEADING ================= */}
         <div className="flex items-center justify-center">
-          <div className="space-y-3 max-w-3xl">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our Latest Blog
-            </h2>
-            <p className="text-base text-[#212121] font-normal text-center">
-              We have the knowledge and skills to work on diverse niches with
+          <div className="space-y-3 max-w-3xl text-center">
+
+             <HeadingTwo color={"black"} text="Our Latest Blog" />
+               <ParagraphText color={"black"} text="We have the knowledge and skills to work on diverse niches with
               high-performing solutions. Get insights about the tech revolutions
-              and their significance through our updated blogs.
-            </p>
+              and their significance through our updated blogs." />
+       
+           
           </div>
         </div>
 
