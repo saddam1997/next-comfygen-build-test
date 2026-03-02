@@ -1,4 +1,8 @@
+"use client";
+
+
 import Link from "next/link";
+
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdMenuOpen, MdMenu } from "react-icons/md";
@@ -227,63 +231,7 @@ const MobileApp = [
     url: "/delivery-app-development",
   },
 ];
-const Ai = [
-  {
-    num: "1",
-    name: "Ai Development",
-    url: "/ai-development",
-  },
-  {
-    num: "2",
-    name: "Generative AI Development",
-    url: "/generative-ai-development",
-  },
-  {
-    num: "3",
-    name: "AI Interview Scheduling Software Development",
-    url: "/ai-interview-scheduling-software-development",
-  },
-  {
-    num: "4",
-    name: "Data Service",
-    url: "/data",
-  },
-  {
-    num: "5",
-    name: "Data Analytics",
-    url: "/data/analytics-service-provider",
-  },
-  {
-    num: "6",
-    name: "Tableau Consulting Services",
-    url: "/data/tableau-consulting-services",
-  },
-  {
-    num: "7",
-    name: "Hire Data Scientist",
-    url: "/data/hire-data-scientist",
-  },
-  {
-    num: "8",
-    name: "AWS Analytics Service",
-    url: "/data/aws-analytics-services",
-  },
-  {
-    num: "9",
-    name: "Business Intelligence",
-    url: "/data/business-intelligence",
-  },
-  {
-    num: "10",
-    name: "Power BI Consulting Services",
-    url: "/data/power-bi-consulting-services",
-  },
-  {
-    num: "11",
-    name: "Sales Performance Dashboard",
-    url: "/data/sales-dashboard",
-  },
-];
+
 const WebApp = [
   { num: "1", name: "Website Development", url: "/web-development" },
   { num: "2", name: "Website Design", url: "/web-design" },
@@ -292,41 +240,7 @@ const WebApp = [
   { num: "5", name: "React JS Development", url: "/react-js-development" },
   { num: "6", name: "Next JS Development", url: "/next-js-development" },
 ];
-const Stack = [
-  {
-    num: "1",
-    name: "React Native Development",
-    url: "/react-native-development",
-  },
-  { num: "2", name: "Python Development", url: "/python-development" },
-  { num: "3", name: "IoT Development", url: "/iot-development-company" },
-  {
-    num: "4",
-    name: "Hire Mobile App Developer",
-    url: "/hire-mobile-app-developer",
-  },
-  {
-    num: "5",
-    name: "Social Media App Development",
-    url: "/social-media-app-development",
-  },
-  {
-    num: "6",
-    name: "Finance   App Developer",
-    url: "/finance-app-development",
-  },
-  {
-    num: "7",
-    name: "Healthcare App Development",
-    url: "/healthcare-app-development",
-  },
-  {
-    num: "8",
-    name: "Mobile game Development",
-    url: "/mobile-game-development-company",
-  },
-  { num: "9", name: "Hire .Net Developer", url: "/hire-dot-net-developer" },
-];
+
 const Blockchain = [
   {
     num: "1",
@@ -425,6 +339,104 @@ const Blockchain = [
     url: "/blockchain-wallet-development",
   },
 ];
+
+
+
+
+const Ai = [
+  {
+    num: "1",
+    name: "Ai Development",
+    url: "/ai-development",
+  },
+  {
+    num: "2",
+    name: "Generative AI Development",
+    url: "/generative-ai-development",
+  },
+  {
+    num: "3",
+    name: "AI Interview Scheduling Software Development",
+    url: "/ai-interview-scheduling-software-development",
+  },
+  {
+    num: "4",
+    name: "Data Service",
+    url: "/data",
+  },
+  {
+    num: "5",
+    name: "Data Analytics",
+    url: "/data/analytics-service-provider",
+  },
+  {
+    num: "6",
+    name: "Tableau Consulting Services",
+    url: "/data/tableau-consulting-services",
+  },
+  {
+    num: "7",
+    name: "Hire Data Scientist",
+    url: "/data/hire-data-scientist",
+  },
+  {
+    num: "8",
+    name: "AWS Analytics Service",
+    url: "/data/aws-analytics-services",
+  },
+  {
+    num: "9",
+    name: "Business Intelligence",
+    url: "/data/business-intelligence",
+  },
+  {
+    num: "10",
+    name: "Power BI Consulting Services",
+    url: "/data/power-bi-consulting-services",
+  },
+  {
+    num: "11",
+    name: "Sales Performance Dashboard",
+    url: "/data/sales-dashboard",
+  },
+];
+
+const Stack = [
+  {
+    num: "1",
+    name: "React Native Development",
+    url: "/react-native-development",
+  },
+  { num: "2", name: "Python Development", url: "/python-development" },
+  { num: "3", name: "IoT Development", url: "/iot-development-company" },
+  {
+    num: "4",
+    name: "Hire Mobile App Developer",
+    url: "/hire-mobile-app-developer",
+  },
+  {
+    num: "5",
+    name: "Social Media App Development",
+    url: "/social-media-app-development",
+  },
+  {
+    num: "6",
+    name: "Finance   App Developer",
+    url: "/finance-app-development",
+  },
+  {
+    num: "7",
+    name: "Healthcare App Development",
+    url: "/healthcare-app-development",
+  },
+  {
+    num: "8",
+    name: "Mobile game Development",
+    url: "/mobile-game-development-company",
+  },
+  { num: "9", name: "Hire .Net Developer", url: "/hire-dot-net-developer" },
+];
+
 const Token = [
   {
     num: "1",
@@ -589,55 +601,14 @@ const Game = [
   },
 ];
 const GameApi = [
-  { num: "1", name: "Cricket live line API", url: "/cricket-live-line-api" },
-  // {
-  //   num: "2",
-  //   name: "Live Casino API Integration",
-  //   url: "/live-casino-game-api-integration",
-  // },
+  {
+    num: "1",
+    name: "Cricket live line API",
+    url: "/cricket-live-line-api"
+  },
+
 ];
-const Betting = [
-  // {
-  //   num: "1",
-  //   name: "sports Betting App Development",
-  //   url: "/sports-betting-app-development",
-  // },
-  // {
-  //   num: "2",
-  //   name: "Sports Betting Software Development",
-  //   url: "/sports-betting-software-development",
-  // },
-  // {
-  //   num: "3",
-  //   name: "Sports Betting Website Development",
-  //   url: "/sports-betting-website-development",
-  // },
-  // {
-  //   num: "4",
-  //   name: "Cricket Betting Software Development",
-  //   url: "/cricket-betting-software-development",
-  // },
-  // {
-  //   num: "5",
-  //   name: "Satta Matka App Development company",
-  //   url: "/satta-matka-game-app-development-company",
-  // },
-  // {
-  //   num: "6",
-  //   name: "Fantasy Sports App Development",
-  //   url: "/fantasy-sports-app-development",
-  // },
-  // {
-  //   num: "7",
-  //   name: "Fantasy Sports Website Development",
-  //   url: "/fantasy-sports-website-development",
-  // },
-  // {
-  //   num: "8",
-  //   name: "Fantasy Cricket App Development",
-  //   url: "/fantasy-cricket-app-development",
-  // },
-];
+
 const Company = [
   { num: "1", name: "About us", url: "/about-us" },
   { num: "2", name: "Our Portfolio", url: "/portfolio" },
@@ -716,24 +687,41 @@ export default function MobileNav(props: any) {
     setShowNava(false);
   }, []);
 
-
   useEffect(() => {
-  if (showNava) {
-    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-    document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = `${scrollBarWidth}px`;
-  } else {
-    document.body.style.overflow = "";
-    document.body.style.paddingRight = "";
-  }
+    if (typeof window === "undefined") return;
 
-  return () => {
-    document.body.style.overflow = "";
-    document.body.style.paddingRight = "";
-  };
-}, [showNava]);
+    const body = document.body;
 
-  
+    if (showNava) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "";
+    }
+
+    return () => {
+      body.style.overflow = "";
+    };
+  }, [showNava]);
+
+
+  // useEffect(() => {
+  //   if (showNava) {
+  //     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+  //     document.body.style.overflow = "hidden";
+  //     document.body.style.paddingRight = `${scrollBarWidth}px`;
+  //   } else {
+  //     document.body.style.overflow = "";
+  //     document.body.style.paddingRight = "";
+  //   }
+
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //     document.body.style.paddingRight = "";
+  //   };
+  // }, [showNava]);
+
+
 
   // ✅ Memoized list item renderer for better performance
   const renderListItems = useCallback((items: any[], navIndex: number) => {
@@ -786,7 +774,7 @@ export default function MobileNav(props: any) {
         />
       </div>
       <div
-        className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === navIndex ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+        className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === navIndex ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
       >
         {children}
@@ -796,8 +784,8 @@ export default function MobileNav(props: any) {
 
   return (
     <>
-      <div className="h-[70px]" />
-      <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+      <div className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+
         <nav className="z-20 flex items-center justify-between py-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="flex items-center flex-shrink-0 text-[#212121]">
             <Link href="/" passHref className="relative">
@@ -824,8 +812,8 @@ export default function MobileNav(props: any) {
           {/* Slideover Menu */}
           <div
             className={`fixed inset-0 w-full h-full transition-opacity duration-300 ${showNava
-                ? "visible opacity-100"
-                : "invisible opacity-0"
+              ? "visible opacity-100"
+              : "invisible opacity-0"
               }`}
           >
             {/* Backdrop */}
@@ -966,15 +954,7 @@ export default function MobileNav(props: any) {
                         {renderListItems(Game, 3)}
                       </div>
                     </div>
-                    <div>
-                      <p className="flex items-center text-base font-medium text-[#212121] mb-2">
-                        <BsDot className="text-[#212121] mr-1" size={22} />
-                        Sports App Development
-                      </p>
-                      <div className="p-3 space-y-2 text-sm font-medium">
-                        {renderListItems(Betting, 3)}
-                      </div>
-                    </div>
+
                     <div>
                       <p className="flex items-center text-base font-medium text-[#212121] mb-2">
                         <BsDot className="text-[#212121] mr-1" size={22} />
@@ -1005,7 +985,7 @@ export default function MobileNav(props: any) {
                     />
                   </div>
                   <div
-                    className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === 4 ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+                    className={`bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-all duration-300 ease-in-out ${showNav === 4 ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
                       }`}
                   >
                     <ul className="grid grid-cols-1 gap-2 p-4">

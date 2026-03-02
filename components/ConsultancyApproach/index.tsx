@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { MdAdd, MdArrowOutward, MdRemove } from "react-icons/md";
 import Image from 'next/image';
+import HeadingTwo from "../ui/HeadingTwo";
 
 const ItemDataSection = ({Consultancy}:any) => {
 
@@ -47,9 +48,9 @@ const {consultancyHead,consultancyData} = Consultancy
                                         height={210}
                                     /> */}
                                     <div className="space-y-2 ">
-                                        <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
-                                            {elem.title}
-                                        </h2>
+
+                                        <HeadingTwo color={"black"} text={elem.title} />
+                                       
                                         <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: elem.desc }}></p>
                                         <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: elem.desc1 }}></p>
                                     </div>

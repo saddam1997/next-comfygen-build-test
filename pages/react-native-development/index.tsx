@@ -150,11 +150,11 @@ export default function Altcoin(props: any) {
     <>
       <Head>
         <title>
-          React Native App Development Services | Hire React Native Developers
+          React Native App Development Services | Mobile App Development | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen offers expert React Native app development services to build scalable Android and iOS apps with a single codebase. Hire skilled React Native developers today."
+          content="Get expert React Native app development services to build secure, scalable, and high-performance mobile apps for iOS and Android with seamless cross-platform functionality."
         />
         <link
           rel="canonical"
@@ -205,7 +205,7 @@ export default function Altcoin(props: any) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="React Native App Development Services for Scalable Mobile Apps"
+          heading="React Native App Development Services For Develop Mobile Aap"
           ptag="Comfygen provides professional React Native app development services to help businesses build fast, scalable, and cost-effective cross-platform mobile applications. Our experienced React Native developers create high-performance Android and iOS apps using a single codebase, ensuring faster development, reduced costs, and consistent user experience."
           ptag1="From UI/UX design to API integration and deployment, we deliver end-to-end React Native solutions for startups and enterprises. Our focus on clean architecture, performance optimization, and future-ready scalability ensures your mobile app supports long-term business growth."
           li="Custom Cross-Platform Mobile App Solutions"

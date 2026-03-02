@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import LazyLoad from "react-lazy-load";
 import Image from "next/image";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 const HireDeveloper = ({
   heading = "",
@@ -22,9 +23,9 @@ const HireDeveloper = ({
         <div className="lg:px-14 px-8 lg:flex gap-8">
           <div className="lg:w-[60%] w-full lg:py-16 py-6">
             <div className="space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#fff] mt-3 font-semibold">
-                {heading}
-              </h2>
+
+               <HeadingTwo color={"white"} text={heading} />
+              
               <div className="space-y-2">
                 <p
                   className="text-base text-white"

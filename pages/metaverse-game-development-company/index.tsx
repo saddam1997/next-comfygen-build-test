@@ -179,11 +179,11 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          Best Metaverse Game Development Company In India & The USA | Comfygen
+          Comfygen Metaverse Game Development Company In India and USA
         </title>
         <meta
           name="description"
-          content="Comfygen is a best Metaverse Game development company In India & The USA that helps to create a game with high-end technologies. Comfygen offers a very unique 3D virtual gaming platform on any decentralized network. Contact us today!"
+          content="Comfygen is a trusted Metaverse Game development company In India & USA that helps to create a game with high-end technologies. Comfygen offers a very unique 3D virtual gaming platform on any decentralized network. Contact us today!"
         />
 
         <meta name="keywords" content="Metaverse Game App Development, AR VR Game Development, Blockchain Metaverse Development, NFT Game Development, Play-to-Earn Metaverse Games, Multiplayer Virtual World Development, Web3 Game Development Solutions"/>
@@ -288,7 +288,7 @@ export default function Ecommerce(props:any) {
       <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Metaverse Game Development Services"
-          ptag1="Comfygen is a leading Metaverse game development company in India & the USA, specializing in the creation of immersive 3D Metaverse worlds. Our team of highly skilled game developers brings your imaginative game ideas to life by integrating cutting-edge technologies. Whether you're looking for unique worlds, innovative gameplay, or engaging virtual environments, we have the expertise to craft custom Metaverse game development solutions tailored to your needs."
+          ptag1="Comfygen is a leading Metaverse game development service provide, specializing in the creation of immersive 3D Metaverse worlds. Our highly skilled Metaverse game developers team brings your imaginative game ideas to life by integrating cutting-edge technologies. Whether you're looking for unique worlds, innovative gameplay, or engaging virtual environments, we have the expertise to craft custom Metaverse game development solutions tailored to your needs."
           li="Expert Metaverse Game Development"
           li1="Blockchain Network Expertise"
           li2="Innovative Gameplay"

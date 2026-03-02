@@ -375,10 +375,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Hybrid Crypto Exchange Development Company | Comfygen</title>
+        <title>Hybrid Crypto Exchange Development servcie | Comfygen</title>
         <meta
           name="description"
-          content="Build a secure, scalable, and high-performance hybrid crypto exchange with Comfygen. Our experts deliver custom trading platforms combining centralized speed with decentralized security."
+          content="Comfygen offers hybrid crypto exchange development services to build secure, scalable, and high-performance trading platforms combining centralized speed with decentralized security."
         />
         <meta
           name="keywords"

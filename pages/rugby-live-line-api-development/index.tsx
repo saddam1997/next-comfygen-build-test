@@ -301,10 +301,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Rugby Live Line API | Real-Time Rugby Score & Data API Solutions – Comfygen</title>
+        <title>Rugby Live Line API Development Service | Real-Time Sports Data</title>
         <meta
           name="description"
-          content="Get custom Rugby Live Line API, live scores, highlights, gaming APIs & scoreboard data from Comfygen. Trusted Rugby API integration company with 10+ years’ expertise."
+          content="Get accurate, real-time match updates with our Rugby Live Line API development service. We deliver fast, scalable, and reliable sports data solutions for apps and platforms."
         />
         <meta
           name="keywords"
@@ -446,7 +446,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Rugby Live Line API"
+          heading="Rugby Live Line API Development Service"
           ptag="We deliver cutting-edge Rugby Live Line API services tailored for startups, enterprises, and gaming platforms. With over 10 years of experience in software development, we provide real-time, scalable, and seamlessly integrated APIs for rugby live scores, match stats, and data feeds. Whether you're building a live score app, fan platform, our Rugby APIs ensure accuracy and instant updates. From automated highlights to up-to-the-second scoreboards, our APIs simplify integration and boost user engagement. Trust Comfygen Technologies —the expert rugby API provider—to power your platform with reliable, real-time rugby data. Let’s build smarter sports experiences together."
           btnName="Talk With Expert"
           btnLink="/contact-us"

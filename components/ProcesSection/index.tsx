@@ -1,3 +1,4 @@
+import HeadingTwo from "../ui/HeadingTwo";
 import ProcessSlider from "./ProcessSlider";
 import styles from "./styles.module.css";
 
@@ -9,13 +10,12 @@ const ProcessComponent = ({ ProcessData }: any) => {
         <div className="mt-10">
 
 
-            <section className="bg-white lg:py-16 py-10">
+            <section className="bg-white lg:py-8 py-10">
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                     <div className="text-center">
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
 
-                            {heading}
-                        </h2>
+                        <HeadingTwo color={"black"} text= {heading} />
+                    
                         <p className="text-base font-normal mt-2">
                             {description}
                         </p>

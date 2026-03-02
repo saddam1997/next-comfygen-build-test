@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 const DeliverySectionClient = ({ title, description, apps }:any) => {
 
@@ -20,9 +21,8 @@ const DeliverySectionClient = ({ title, description, apps }:any) => {
       <div className="relative z-10 2xl:w-10/12 w-11/12 lg:w-11/12 mx-auto">
 
         <div className="text-center mb-16">
-          <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
-            {title}
-          </h2>
+          <HeadingTwo color={"black"} text={title} />
+          
 
           <p
             className="text-base font-normal mt-2 lg:w-2/3 mx-auto w-full"

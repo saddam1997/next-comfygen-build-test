@@ -454,7 +454,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Hire Dedicated Mobile App Developers in India | Comfygen
+         Hire Mobile App Developers | Expert App Development Services
         </title>
 
         <meta
@@ -463,7 +463,7 @@ export default function Mobile(props: any) {
         />
         <meta
           name="description"
-          content="Looking to hire mobile app developers in India? Comfygen offers expert developers to build high-performance, future-ready mobile apps tailored to your business."
+          content="Hire mobile app developers to build secure, scalable, and feature-rich Android and iOS apps tailored to your business needs with seamless UI/UX and advanced technology."
         />
         <link
           rel="canonical"
@@ -561,7 +561,7 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hire Top Mobile App Developers in India"
+          heading="Hire best Mobile App Developers from India"
           ptag="Partner with Comfygen to hire expert mobile app developers in India with over 10 years of industry experience. Our skilled engineers build high-quality, future-ready mobile applications using the latest technologies to ensure performance, scalability, and user engagement."
           ptag1="We focus on delivering custom mobile app solutions that align perfectly with your business goals while providing seamless user experiences that drive long-term retention and growth."
           li="10+ Years of Mobile App Development Experience"

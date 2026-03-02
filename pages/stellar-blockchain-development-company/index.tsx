@@ -419,11 +419,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Stellar Blockchain Development Company | AI-Powered DApps & Wallets
+          Stellar Blockchain Development Company | Secure Payment Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Stellar blockchain development company delivering AI-powered DApps, Stellar wallets, stablecoins, cross-border payment platforms, and enterprise blockchain solutions."
+          content="Partner with a Stellar blockchain development company to build fast, secure, and low-cost payment solutions, smart contracts, and decentralized apps for global transactions."
         />
 
         {/* keywords */}
@@ -521,7 +521,7 @@ export default function Ecommerce(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Stellar Blockchain Development Service"
+          heading="Stellar Blockchain Development Company"
           subhead='Looking for the best Stellar blockchain development company? '
           ptag="Comfygen is a leading Stellar blockchain development company helping enterprises build AI-powered decentralized applications, tokenized assets, and secure financial ecosystems. Leveraging Stellar’s fast, low-cost network, we specialize in cross-border payments, stablecoin development, and enterprise-grade blockchain integration. Our experts deliver AI-enabled Stellar wallets, DApps, and smart contracts to improve transparency, efficiency, and scalability for fintech, banking, and global business solutions."
           li="AI-Powered Stellar Blockchain App Development"

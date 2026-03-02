@@ -253,10 +253,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title> Golf Live Line API | Real-Time Golf Data Solutions</title>
+        <title>Golf Live Line API | Real-Time Golf Data Provide Company | Comfygen</title>
         <meta
           name="description"
-          content="Elevate your sports platform with Comfygen’s Golf Live Line API services. Integrate live scores, player stats, and real-time tournament data with scalable, secure APIs tailored for fantasy apps, betting platforms, and golf trackers."
+          content="Comfygen offers Golf Live Line API services to provide real-time golf scores, match updates, player stats, and analytics. Build sports apps, fantasy platforms, and websites with fast, accurate, and reliable golf data feeds for enhanced user engagement."
         />
         <meta
           name="keywords"
@@ -419,7 +419,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Golf Live Line API"
+          heading="Golf Live Line API Provide Company"
           ptag="Welcome to Comfygen – your trusted partner for Golf Live Line API services. We deliver scalable, real-time, and developer-friendly golf data integration solutions designed for startups, enterprises, and tech-driven platforms aiming to elevate their sports offerings."
           ptag1="Whether you're building a fantasy golf platform, a live scoring app, or an in-depth analytics tool, our cutting-edge Golf Live Line APIs equip your digital products with real-time scores, hole-by-hole updates, player stats, tournament insights, and more. Unlock the full potential of the fastest and most reliable golf API service trusted by industry leaders and sports innovators alike."
           btnName="Talk With Expert"

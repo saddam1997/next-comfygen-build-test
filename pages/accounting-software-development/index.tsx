@@ -159,7 +159,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden pt-[70px] lg:pt-0">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

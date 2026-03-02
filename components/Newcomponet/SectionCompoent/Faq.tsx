@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MdStars } from "react-icons/md";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 interface CardItem {
   CardItem?: string;
@@ -52,11 +53,11 @@ export default function FaqSection({
 
           {/* Heading */}
           <div className="text-center space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              {title && title.trim() !== ""
+
+            <HeadingTwo color={"black"} text={title && title.trim() !== ""
                 ? title
-                : "Frequently Asked Questions"}
-            </h2>
+                : "Frequently Asked Questions"} />
+            
             {description && (
               <p className="text-gray-600 text-sm md:text-base" >
                 {description}

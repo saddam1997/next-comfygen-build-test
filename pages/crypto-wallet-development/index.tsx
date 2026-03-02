@@ -436,12 +436,12 @@ export default function Ecommerce(props: any) {
       <Head>
 
         <title>
-        Crypto wallet development company | Secure Cryptocurrency Wallet Solutions
+        AI-Powered Crypto Wallet Development Company | Secure Wallet Solutions
         </title>
 
         <meta
           name="description"
-          content="Comfygen crypto wallet development services enhanced with AI. Our experienced blockchain developers build secure, scalable, and smart wallets featuring real-time analytics and enterprise-level encryption."
+          content="Build intelligent and secure digital wallets with our AI-powered crypto wallet development company. We deliver smart, scalable, and feature-rich wallet solutions for modern businesses."
         />
         {/* keywords */}
         <meta name="keywords" content="AI Crypto Wallet Development, Cryptocurrency Wallet Development, Crypto Wallet Development, Smart Wallet Analytics, Fraud Detection with AI, Custom AI Crypto Wallet Solutions, Blockchain Wallet Security Solutions, DeFi Wallet Integration, Multi-Chain Crypto Wallets, AI-Driven Transaction Monitoring, Biometric Authentication Wallets, Predictive Analytics for Crypto Wallets, Crypto Wallet App Development, AI in Blockchain Security, White-Label Crypto Wallet Solutions, Crypto Wallet for Fintech Startups, AI-Based Cold Wallet Solutions, AI-Based Hot Wallet Solutions" />
@@ -537,7 +537,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="AI-Powered Cryptocurrency Wallet Development Company"
+          heading="AI-Powered Crypto Wallet Development Company"
           ptag="Empower your users with next-generation crypto wallet development services that combine advanced blockchain security, seamless user experience, and multi-chain support. Whether you need a custom crypto wallet app, DeFi wallet, or NFT-compatible digital wallet, our blockchain development experts deliver tailor-made crypto wallet development solutions for startups and enterprises alike."
           ptag1=""
           li="Enterprise-Grade Security"

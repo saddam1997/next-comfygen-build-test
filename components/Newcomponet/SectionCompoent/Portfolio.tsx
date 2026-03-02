@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, useMemo } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 const CARD_WIDTH = 900;
 const GAP = 20;
@@ -119,10 +120,9 @@ export default function Portfolio({ projects, heading, description }: any) {
       
       {/* Heading */}
       <div className="text-center mx-auto max-w-7xl space-y-3 py-8">
-        <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
-          {heading}
-        </h2>
 
+          <HeadingTwo color={"#212121"} text= {heading} />
+      
         <p
           className="text-base font-normal "
           dangerouslySetInnerHTML={{ __html: description }}

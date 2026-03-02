@@ -383,11 +383,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Top FMCG Delivery App Development Company | Build Smart FMCG Apps
+         Top FMCG Delivery App Development Company | On-Demand Delivery Apps
         </title>
         <meta
           name="description"
-          content="Partner with the top FMCG delivery app development company to build AI-powered FMCG apps for D2C brands, supermarkets, and startup businesses to grow online sales."
+          content="Comfygen offers FMCG delivery app development services to build secure, fast, and user-friendly mobile apps with real-time tracking, automated orders, and smooth delivery management."
         />
         <link rel="canonical" href="https://www.comfygen.com/ecommerce/fmcg " />
         <meta

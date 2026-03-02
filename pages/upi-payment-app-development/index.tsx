@@ -249,11 +249,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Best UPI Payment App Development Company
+          Top UPI Payment App Development Company | Secure Payment Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a trusted UPI payment app development company delivering secure, scalable, and NPCI-compliant payment solutions."
+          content="Comfygen offers UPI payment app development services to build scalable, secure, and feature-rich apps with instant payments, bank integrations, and seamless digital transactions."
         />
         <meta name="keywords" content="Custom UPI App Development, UPI Payment Gateway Integration, White Label UPI Payment Solutions, Android & iOS UPI App Development, QR Code and Scan & Pay Integration, Backend Admin Dashboard Development, NPCI and Bank API Integration, Digital Wallet Integration, UPI payment app development, Develop UPI app, UPI wallet app development" />
 

@@ -286,10 +286,10 @@ export default function Ecommerce(props) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Taxi App Development Company | Custom Ride-Hailing Apps</title>
+        <title>Trusted Taxi App Development Company | Taxi App Development Experts</title>
         <meta
           name="description"
-          content="Looking for a taxi app development company? We build scalable, feature-rich ride-hailing apps for startups and enterprises. Get a free consultation today.."
+          content="Trusted taxi app development company to create custom ride-hailing apps with GPS tracking, in-app payments, driver management, and scalable architecture for your business."
         />
         <link
           rel="canonical"

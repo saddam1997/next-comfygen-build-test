@@ -365,10 +365,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Water Delivery App Development Company | Custom App Solutions</title>
+        <title>Top Water Delivery App Development Company | On-Demand Delivery Apps</title>
         <meta
           name="description"
-          content="Comfygen is a trusted water delivery app development company offering custom water delivery app development services with subscriptions, real-time tracking, and secure payments for startups and enterprises."
+          content="Comfygen is the best water delivery app development company provide fast, user-friendly, and scalable apps with real-time order tracking, automated deliveries, and smooth management."
         />
         <link
           rel="canonical"

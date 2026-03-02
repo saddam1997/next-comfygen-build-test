@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 /* ================= DATA ================= */
 const defaultTestimonials = [
@@ -165,9 +166,10 @@ const ClientTestimonials = ({
   return (
     <section className="py-10 lg:py-16 bg-white">
       <div className="mx-auto w-11/12 xl:w-5/6">
-        <h2 className="text-3xl xl:text-4xl font-bold text-center text-gray-900">
-          {heading}
-        </h2>
+     <div className="text-center">
+       <HeadingTwo color={"black"} text={heading} />
+     </div>
+       
 
         <div
           ref={containerRef}

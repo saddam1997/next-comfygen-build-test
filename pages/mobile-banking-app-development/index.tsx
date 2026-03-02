@@ -286,8 +286,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Custom Mobile Banking App Development Company</title>
-        <meta name="description" content="Comfygen Technologies is a custom mobile banking app development company delivering secure, scalable, and compliant fintech solutions for banks and startups." />
+        <title>Mobile Banking App Development Company | Secure Fintech Solutions</title>
+        <meta name="description" content="As the best mobile app development company, we build secure, scalable, and user-friendly mobile banking apps with real-time transactions and advanced security." />
         <link rel="canonical" href="https://www.comfygen.com/mobile-banking-app-development" />
 
         <meta name="keywords" content="Custom Digital Banking App Development, Best Mobile Banking App Development Company, iOS & Android Banking Apps, Fintech App Development Services, AI-Based Mobile Banking App Development, Mobile Banking Software Development, Custom Mobile Banking App Development, Digital Wallet Integration, Core Banking System Integration, Paytm Payments Clone App Development, blockchain-based banking app development" />
@@ -399,7 +399,7 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Mobile Banking App Development Company"
+          heading="Top-rated Mobile Banking App Development Company"
           ptag="Comfygen Technologies is a trusted mobile banking app development company specializing in secure and intuitive digital banking solutions. We deliver end-to-end mobile banking app development services tailored for banks and fintech businesses, enabling seamless payments, real-time transactions, and enhanced customer engagement with industry-grade security."
           li="AI-Powered Personalization"
           li1="Advanced Security Protocols"

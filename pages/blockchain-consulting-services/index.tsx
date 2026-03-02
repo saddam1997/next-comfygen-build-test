@@ -103,11 +103,11 @@ export default function rummy(props: any) {
     <>
       <Head>
         <title>
-          Blockchain Consulting Services | Enterprise & Web3 Experts
+          Blockchain Consulting Services India and USA Enterprise blockchain Solutions
         </title>
         <meta
           name="description"
-          content="Blockchain consulting services offering strategy, enterprise blockchain, smart contract, DeFi, NFT, and Web3 advisory."
+          content="Comfygen offers blockchain consulting services in India and USA to help businesses implement secure, scalable, and innovative blockchain solutions, smart contracts, and decentralized apps."
         />
         <meta name="keywords" content="Blockchain Consultancy Company, Blockchain Consultancy Services, Blockchain Strategy Consulting, Enterprise Blockchain Solutions, Custom Blockchain Development, DeFi Consulting, NFT Project Consulting, Smart Contract Consulting, Ethereum Consulting, Polygon Consulting, Solana Consulting, Hyperledger Consulting, Blockchain Architecture Design, Blockchain Implementation Support"
         />
@@ -145,7 +145,7 @@ export default function rummy(props: any) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Blockchain Consulting Service"
+          heading="Blockchain Consulting Service Provider In India and USA"
           ptag="Comfygen is a reliable blockchain consulting service provider helping startups, SMEs, and enterprises plan, validate, and scale blockchain initiatives. Our blockchain consultants work closely with businesses to define the right strategy, assess use cases, and design blockchain solutions that improve operational efficiency, lower costs, and create new revenue opportunities."
           ptag1=""
           li1="Tailored Blockchain Strategy & Roadmapping"

@@ -192,12 +192,12 @@ export default function ClinicalApp(props) {
     <>
       <Head>
         <title>
-          Clinical Application Development Company in India | Comfygen
+          Clinical Application Development Company | Healthcare App Solutions
 
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies delivers secure and scalable clinical application development services for clinics, doctors, and healthcare providers."
+          content="As a best clinical application development company we delivers scalable healthcare solutions, including EHR integration, telehealth apps, and patient management systems."
         />
         <link
           rel="canonical"
